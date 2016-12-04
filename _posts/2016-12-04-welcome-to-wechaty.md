@@ -36,7 +36,7 @@ How to run this piece of code? Easy. Wechaty has a docker image which can help y
 $ docker run -ti --rm --volume="$(pwd)":/bot zixia/wechaty mybot.js
 ```
 
-> Source code is saved to file: `mybot.js`
+> `mybot.js` contains our source code in the above example.
 
 See? death easy to use!
 
