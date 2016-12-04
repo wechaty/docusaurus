@@ -5,6 +5,9 @@ date: '2016-12-04 14:04:27 +0800'
 categories: news
 published: true
 ---
+
+![Wechaty Logo][wechaty-logo-image]
+
 Hello, ChatBot Developers!
 
 Today is a big day because Wechaty got a brand new Blog! ;-)
@@ -57,3 +60,4 @@ Huan, a ChatBot & Deep Learning Fan
 [wechaty-gh]: https://github.com/wechaty/wechaty/
 [wechaty-io]: https://www.wechaty.io/
 [wechaty-qrcode-image]: https://raw.githubusercontent.com/wechaty/wechaty/master/image/BotQrcode.png
+[wechaty-logo-image]: https://raw.githubusercontent.com/wechaty/wechaty/master/image/wechaty-logo-en.png
