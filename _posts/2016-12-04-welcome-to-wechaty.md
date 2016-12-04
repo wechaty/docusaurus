@@ -5,7 +5,7 @@ date: '2016-12-04 14:04:27 +0800'
 categories: news
 published: true
 ---
-Hello, world!
+Hello, ChatBot Developers!
 
 Today is a big day because Wechaty got a brand new Blog! ;-)
 
