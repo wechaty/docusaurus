@@ -6,11 +6,11 @@ categories: news
 published: true
 ---
 
-![Wechaty Logo][wechaty-logo-image]
+[![Wechaty Logo][wechaty-logo-image]][wechaty-gh]
 
 Hello, ChatBot Developers!
 
-Today is a big day because Wechaty got a brand new Blog! ;-)
+Today is a big day because [Wechaty][wechaty-gh] got a brand new Blog! ;-)
 
 In the past half year, Wechaty growth from version 0.0.1 to 0.6.x. Today, it has dozens of pull requests, 100+ issues, 200+ stars, 1,400+ commits and 10,000+ lines of code.
 
@@ -50,6 +50,8 @@ See? death easy to use!
 
 _secret code: `wechaty`_
 
+
+Visit Wechaty Github: <https://github.com/wechaty/wechaty/>
 
 Cheers! 
 
