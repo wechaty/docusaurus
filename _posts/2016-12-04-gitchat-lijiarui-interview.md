@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chat实录｜李佳芮：向前一步的程序媛
+title: '[转载]Chat实录｜李佳芮：向前一步的程序媛'
 date: '2016-12-04 19:04:27 +0800'
 categories: developer
 published: true
@@ -96,7 +96,7 @@ Hubot-WeChat Hubot：是一个具有真实微信号的机器人，可以自动�
  
 最后，也是我最想说的，不是只有男生才可以驾驭程序，很多工作，不分男女，只分强弱，其实创业也是一样。
 
-[Orignal Source: GitChat - Chat实录｜李佳芮：向前一步的程序媛][gitchat-url]
+原文地址：[GitChat - Chat实录｜李佳芮：向前一步的程序媛][gitchat-url]
 
 [gitchat-url]: http://mp.weixin.qq.com/s/dWHAj8XtiKG-1fIS5Og79g
 [splash-image]: http://mmbiz.qpic.cn/mmbiz_jpg/TCHicQEF6XKBjrgqhabtlNl59nJQicpqlaq8iaXkK1h8mEG5TUKiaAgYibAwtdEKfhQyP3HBTeoNHYx6n20dWHEZSgg/640?wx_fmt=jpeg&tp=webp&wxfrom=5

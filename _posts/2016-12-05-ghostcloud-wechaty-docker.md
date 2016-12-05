@@ -1,5 +1,7 @@
 ---
-title: 微信机器人框架Wechaty
+layout: post
+title: '[转载]微信机器人框架Wechaty'
+date: '2016-12-05'
 categories: developer
 published: true
 ---
@@ -33,7 +35,7 @@ Wechaty.instance() // Singleton
 Step 2: 在主机上运行命令
 
 ```shell
-$ docker run -ti --rm --volume("$(pwd)":/bot zixia/wechaty mybot.js
+$ docker run -ti --rm --volume"$(pwd)":/bot zixia/wechaty mybot.js
 ```
     
 Step 3: 拷贝二维码到浏览器
@@ -52,7 +54,7 @@ alpine是我们日常比较推荐的镜像，最小的只有4M左右。之后是
 
 ### 3 其他例子
 
-hello-world一般只是最简单的例子，这个框架真正厉害的是包含了其他一些用例，具体位于https://github.com/wechaty/wechaty/tree/master/example
+hello-world一般只是最简单的例子，这个框架真正厉害的是包含了其他一些用例，具体位于<https://github.com/wechaty/wechaty/tree/master/example>
 
 其中包含了：
 1. api-ai-bot.ts : 通过调用api.ai，进行人工智能方面的识别
@@ -97,8 +99,8 @@ docker logs -f wechaty
 
 ### 作者介绍
 
-* 本文作者：@shevyan 精灵云GhostHost创始人&CEO
-* 原文地址：http://mp.weixin.qq.com/s/o-4VMcAMz0K8yJVdNaUXow
+* 本文作者：@[shevyan](https://github.com/shevyan) 晏东，[精灵云GhostCloud](https://www.ghostcloud.cn/)创始人&CEO
+* 原文地址：<http://mp.weixin.qq.com/s/o-4VMcAMz0K8yJVdNaUXow>
 
 [ghostcloud-banner]: /download/2016/ghostcloud-banner.jpg
 [ghostcloud-log]: /download/2016/ghostcloud-log.jpg
