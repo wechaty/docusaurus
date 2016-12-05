@@ -1,9 +1,7 @@
 ---
-published: false
----
----
 title: 微信机器人框架Wechaty
 categories: developer
+published: true
 ---
 
 ![GhostCloud Banner][ghostcloud-banner]
