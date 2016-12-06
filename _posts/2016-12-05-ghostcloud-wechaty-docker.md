@@ -6,11 +6,8 @@ categories: developer
 published: true
 ---
 
-### 作者介绍
-
 * 本文作者：@[shevyan](https://github.com/shevyan) 晏东，[精灵云GhostCloud](https://www.ghostcloud.cn/)创始人&CEO
 * 原文地址：<http://mp.weixin.qq.com/s/o-4VMcAMz0K8yJVdNaUXow>
-
 
 ![GhostCloud Banner][ghostcloud-banner]
 
