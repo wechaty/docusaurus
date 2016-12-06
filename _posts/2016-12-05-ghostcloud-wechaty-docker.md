@@ -6,6 +6,12 @@ categories: developer
 published: true
 ---
 
+### 作者介绍
+
+* 本文作者：@[shevyan](https://github.com/shevyan) 晏东，[精灵云GhostCloud](https://www.ghostcloud.cn/)创始人&CEO
+* 原文地址：<http://mp.weixin.qq.com/s/o-4VMcAMz0K8yJVdNaUXow>
+
+
 ![GhostCloud Banner][ghostcloud-banner]
 
 Wechaty(https://github.com/wechaty/wechaty)是一款开源的微信SDK，它基于微信公开的API，对接口进行了一系列的封装，提供一系列简单的接口，然后开发者可以在其之上进行微信机器人的开发。在跟作者沟通试用以后，发现其中有着非常多的应用场景，比如：
@@ -96,11 +102,6 @@ docker logs -f wechaty
 ![Log][ghostcloud-log]
 
 扫描日志中的二维码或将URL地址复制到浏览器中扫描，然后正常的使用微信，可以看到终端中会有相关信息。
-
-### 作者介绍
-
-* 本文作者：@[shevyan](https://github.com/shevyan) 晏东，[精灵云GhostCloud](https://www.ghostcloud.cn/)创始人&CEO
-* 原文地址：<http://mp.weixin.qq.com/s/o-4VMcAMz0K8yJVdNaUXow>
 
 [ghostcloud-banner]: /download/2016/ghostcloud-banner.jpg
 [ghostcloud-log]: /download/2016/ghostcloud-log.jpg
