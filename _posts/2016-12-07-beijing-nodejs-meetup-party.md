@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Node Party #18 重新认识聊天机器人'
+title: '[转载]Node Party #18 重新认识聊天机器人'
 date: '2016-12-07'
 categories: event
 published: true
