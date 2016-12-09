@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Wechaty Case Study - a letter from JasLin'
+author: JasLin
 date: '2016-12-08'
 categories: case
 published: true
@@ -36,7 +37,7 @@ at the beginning, we do this job manually, it spent us much time. at last i deci
 
 before use wechaty , i used a python sdk to build the robot. but it was not stable enough,it logout often and some other problems, because the protocol base implements can not take about the details, i think the tencent company can Identify the robot behavior. and then, i thought may be i can build a chrome plugin instead of using protocol directly.:) 
 
-lucky ,after that, i found wechaty , it's what i need exactly :). i rewrite the code very javascript, and the robot works well , it's stable ,It seldom exits the program itself.
+lucky, after that, i found wechaty, it's what i need exactly :). i rewrite the code very javascript, and the robot works well, it's stable ,It seldom exits the program itself.
 
 thanks for wechaty!
 

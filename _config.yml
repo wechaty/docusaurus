@@ -23,6 +23,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.wechaty.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: WechatyDev
 github_username:  Wechaty
+author: Wechaty
 
 # Build settings
 markdown: kramdown

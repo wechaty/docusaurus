@@ -1,6 +1,7 @@
 ---
 layout: post
 title: '[转载]微信机器人框架Wechaty'
+author: shevyan
 date: '2016-12-05'
 categories: developer
 published: true
