@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Wechaty Case Study - a letter from JasLin'
-date: '2016-12-07'
+date: '2016-12-08'
 categories: case
 published: true
 ---
