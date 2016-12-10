@@ -8,7 +8,7 @@ published: true
 ![](http://mmbiz.qpic.cn/mmbiz_png/mXicr9v8bmOBNJaPr8cZfRTb6xYVU8odFLuwEbfszQOgb6tXcTpxgczV9uJ8xXkYYjuhnHKROSJ13AibpA0dgQvA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
 
 
-## 1与微信机器人的结缘
+## 与微信机器人的结缘
 我一直和我的小伙伴在业余时间拍摄舞蹈教学视频，叫“舞哩”，原创了几百个视频，近千万的播放，所以就建了微信群来和粉丝交流。
 
 当微信群超过100人以后，就必须要靠群主来手工拉人了，所以我在pad上注册了一个微信小号，让大家通过加小号进微信群，每天晚上9点，我登上这个小号，通过所有的好友请求，然后拉他们进来。有的时候会有几十个好友请求，我就先按一遍通过，然后用手机把这些新好友拍成照片，对照照片去通讯录里一个一个的找到这些好友，拉到微信群里。
@@ -24,7 +24,7 @@ published: true
 
 所以我在GitHub上找到了Wechaty，发现只要几十行代码，就可以满足我的需求。最主要的是，机械化的流水操作，机器人做的比人工要好很多。
 
-## 2一款简单的微信机器人框架介绍
+## 一款简单的微信机器人框架介绍
 GitHub上与微信机器人相关的开源项目有很多，通过JavaScript、Electron、Go、Perl、Python等等都可以实现。
 
 因为我只对JavaScript比较熟悉，所以选择了Wechaty，他是使用Typescript进行编写的Node项目，是一个专门为个人微信号搭建的bot框架，使用Wechaty的API，只需要6行Javascript代码就可以搭建一个最简单的微信机器人，支持 Linux, Windows, Darwin(OSX/Mac) 和Docker。
@@ -50,7 +50,7 @@ Wechaty基本的实现原理，是通过Chrome实时监听微信网页版的各�
 
 
 
-## 3如何安装Wechaty
+## 如何安装Wechaty
 安装Wechaty有两种方式：
 1. Docker
 1. NPM
@@ -105,7 +105,7 @@ $ node mybot.js
 Wechaty依赖的很多包都在墙外，建议使用国外的VPS，我使用的是digitalocean 如果只是跑一个机器人服务的话，建议使2GB/2 CPUs 以上的配置，一个机器人服务会占用1G内存左右，如果配上swap的话，短期使用也可以。
 
 
-## 4如何使用wechaty
+## 如何使用wechaty
 环境部署好以后下面6行代码，就可以成功的实现基础的bot功能：将微信机器人收到的所有消息打印出来：
 ```shell
 const { Wechaty } = require('wechaty')
@@ -171,7 +171,7 @@ console.log(`${url}\n[${code}] Scan QR Code in above url to login: `)
 恩，就是这样，我实现了闭着眼镜就可以拉人的美梦中。
 
 
-## 5后续
+## 后续
 当我开始使用机器人做所有的重复操作的时候，对于加群的工作，我有了进一步的思考，比如我把很多微商拉入黑名单，他们再也无法进入我的微信群；另外我写了个功能，在微信群中加入了管理员功能，这样管理员即使不是群主，也可以把用户踢出微信群；有的时候脑洞大开，还会做个恶作剧，专门收集群友撤回信息，娱乐大众......
 
 忽然想起了一句话： “People should think, Bot should work”。 当机器能够帮助我们把机械化的工作完成之后，我们才会有更多的时间，思考真正有价值的事情。
