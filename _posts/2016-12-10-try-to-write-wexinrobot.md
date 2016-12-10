@@ -1,10 +1,9 @@
 ---
-title: '一个妹子在chatbot上的初步尝试--如何用6行代码写出微信聊天机器人'
+title: '一个姑娘如何用6行代码写出微信聊天机器人'
 author: lijiarui
 published: true
 ---
 
-# 一个妹子在chatbot上的初步尝试--如何用6行代码写出微信聊天机器人
 
 ![](http://mmbiz.qpic.cn/mmbiz_png/mXicr9v8bmOBNJaPr8cZfRTb6xYVU8odFLuwEbfszQOgb6tXcTpxgczV9uJ8xXkYYjuhnHKROSJ13AibpA0dgQvA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
 
