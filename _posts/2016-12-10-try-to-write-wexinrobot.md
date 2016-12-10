@@ -1,5 +1,7 @@
 ---
-published: false
+title: '一个妹子在chatbot上的初步尝试--如何用6行代码写出微信聊天机器人'
+author: lijiarui
+published: true
 ---
 
 # 一个妹子在chatbot上的初步尝试--如何用6行代码写出微信聊天机器人
