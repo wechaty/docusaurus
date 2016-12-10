@@ -61,6 +61,7 @@ alpine是我们日常比较推荐的镜像，最小的只有4M左右。之后是
 hello-world一般只是最简单的例子，这个框架真正厉害的是包含了其他一些用例，具体位于<https://github.com/wechaty/wechaty/tree/master/example>
 
 其中包含了：
+
 1. api-ai-bot.ts : 通过调用api.ai，进行人工智能方面的识别
 1. contact-bot.ts : 列举的好友weixin id 和 name
 1. ding-dong-bot.ts : 一个自动回复例子，如果好友输入’ding’，自动回复’dong’
