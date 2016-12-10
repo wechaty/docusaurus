@@ -37,3 +37,5 @@ exclude:
 
 disqus:
   shortname: "wechaty"
+
+google_analytics: UA-88739146-1
