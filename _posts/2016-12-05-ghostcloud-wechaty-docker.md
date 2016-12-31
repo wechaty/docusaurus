@@ -2,9 +2,10 @@
 layout: post
 title: '[转载]Docker玩转微信机器人框架Wechaty'
 author: shevyan
-date: '2016-12-05'
+date: '2016-12-05 11:11:11 +0800'
 categories: developer
 published: true
+excerpt_separator: <!--more-->
 ---
 
 * 本文作者：@[shevyan](https://github.com/shevyan) 晏东，[精灵云GhostCloud](https://www.ghostcloud.cn/)创始人&CEO
@@ -19,6 +20,8 @@ Wechaty(https://github.com/wechaty/wechaty)是一款开源的微信SDK，它基�
 1. 如何处理海量的聊天组，特别是微信可以任意建组，长期以后会出现非常多的聊天组；
 1. 能否可以自动智能地进行聊天回复
 1. ……
+
+<!--more-->
 
 ### 1 快速上手
 

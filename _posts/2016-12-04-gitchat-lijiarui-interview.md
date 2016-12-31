@@ -4,6 +4,7 @@ title: '[转载]Chat实录｜李佳芮：向前一步的程序媛'
 author: gitchat
 date: '2016-12-04 19:04:27 +0800'
 categories: developer
+excerpt_separator: <!--more-->
 published: true
 ---
 
@@ -19,6 +20,8 @@ published: true
 **问：机器人是PC端监听浏览器然后调用微信Api，应用号是基于“微信OS”的“本地”app，这么解释对么？**
  
 答：机器人是在监听浏览器，但是和微信Api没有任何关系，完全是Hack进去的。机器人更像是在解决运营中的机械化重复操作，希望在Chat的过程中，提供服务。
+
+<!--more-->
  
 **问：既然是Hack到Web微信的，会不会有一天被封杀了呢？**
  

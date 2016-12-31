@@ -4,18 +4,15 @@ title: Welcome to Wechaty!
 date: '2016-12-04 14:04:27 +0800'
 categories: news
 published: true
-excerpt: <!-- jekyll.minima.excerpt -->
+excerpt_separator: <!--more-->
 ---
+![Wechaty Logo][wechaty-logo-image]
 
 Hello, ChatBot Developers!
-
-[![Wechaty Logo][wechaty-logo-image]][wechaty-gh]
 
 Today is a big day because [Wechaty][wechaty-gh] got a brand new Blog! ;-)
 
 In the past half year, Wechaty growth from version 0.0.1 to 0.6.x. Today, it has dozens of pull requests, 100+ issues, 200+ stars, 1,400+ commits and 10,000+ lines of code.
-
-<!-- jekyll.minima.excerpt -->
 
 ### The Worlds Smallest ChatBot
 
@@ -32,6 +29,8 @@ Wechaty.instance() // Singleton
 .on('message',  message => console.log(`Message: ${message}`))
 .init()
 ```
+
+<!--more-->
 
 How to run this piece of code? Easy. Wechaty has a docker image which can help you put your bot on duty in seconds:
 

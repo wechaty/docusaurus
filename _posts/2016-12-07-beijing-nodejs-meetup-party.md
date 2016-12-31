@@ -3,6 +3,7 @@ layout: post
 title: '[转载]Node Party #18 重新认识聊天机器人'
 author: Samurais
 date: '2016-12-07'
+excerpt_separator: <!--more-->
 categories: event
 published: true
 ---
@@ -51,6 +52,8 @@ published: true
 1. Vision
 1. Demo
 1. Q/A
+
+<!--more-->
 
 15:00 - 16:00 Chatbot的场景化应用
 

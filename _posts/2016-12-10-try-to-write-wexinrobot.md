@@ -1,15 +1,18 @@
 ---
+layout: post
 title: '一个姑娘如何用6行代码写出微信聊天机器人'
 author: lijiarui
 published: true
+excerpt_separator: <!--more-->
 ---
 
+我一直和我的小伙伴在业余时间拍摄舞蹈教学视频，叫“舞哩”，原创了几百个视频，近千万的播放，所以就建了微信群来和粉丝交流。
 
-![](http://mmbiz.qpic.cn/mmbiz_png/mXicr9v8bmOBNJaPr8cZfRTb6xYVU8odFLuwEbfszQOgb6tXcTpxgczV9uJ8xXkYYjuhnHKROSJ13AibpA0dgQvA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
+![RuiRui][ruirui-dance-image]
 
+<!--more-->
 
 ## 1. 与微信机器人的结缘
-我一直和我的小伙伴在业余时间拍摄舞蹈教学视频，叫“舞哩”，原创了几百个视频，近千万的播放，所以就建了微信群来和粉丝交流。
 
 当微信群超过100人以后，就必须要靠群主来手工拉人了，所以我在pad上注册了一个微信小号，让大家通过加小号进微信群，每天晚上9点，我登上这个小号，通过所有的好友请求，然后拉他们进来。有的时候会有几十个好友请求，我就先按一遍通过，然后用手机把这些新好友拍成照片，对照照片去通讯录里一个一个的找到这些好友，拉到微信群里。
 
@@ -181,3 +184,5 @@ Wechaty解放了我的一些重复性工作，我也希望能为Wechaty做点什
 如果你对Wechaty感兴趣，希望一起交流，一起分享，共同学习，可以扫码添加"桔小秘"为好友，回复wechaty加入WECHATY DEVELOPERS' HOME。也可以顺便体验下wechaty实现的小功能。
 
 ![](http://mmbiz.qpic.cn/mmbiz_png/mXicr9v8bmOBNJaPr8cZfRTb6xYVU8odF4v52eQz5hjc3LwXL7uGma7HxlM36UibXo89TKFwib51fPHQxvcxNJ4og/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
+
+[ruirui-dance-image]: /download/2016/ruirui-dance.jpg
