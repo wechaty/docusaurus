@@ -7,9 +7,9 @@ published: true
 excerpt: <!-- jekyll.minima.excerpt -->
 ---
 
-[![Wechaty Logo][wechaty-logo-image]][wechaty-gh]
-
 Hello, ChatBot Developers!
+
+[![Wechaty Logo][wechaty-logo-image]][wechaty-gh]
 
 Today is a big day because [Wechaty][wechaty-gh] got a brand new Blog! ;-)
 
