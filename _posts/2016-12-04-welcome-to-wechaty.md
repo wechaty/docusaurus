@@ -4,6 +4,7 @@ title: Welcome to Wechaty!
 date: '2016-12-04 14:04:27 +0800'
 categories: news
 published: true
+excerpt: <!-- jekyll.minima.excerpt -->
 ---
 
 [![Wechaty Logo][wechaty-logo-image]][wechaty-gh]
@@ -13,6 +14,8 @@ Hello, ChatBot Developers!
 Today is a big day because [Wechaty][wechaty-gh] got a brand new Blog! ;-)
 
 In the past half year, Wechaty growth from version 0.0.1 to 0.6.x. Today, it has dozens of pull requests, 100+ issues, 200+ stars, 1,400+ commits and 10,000+ lines of code.
+
+<!-- jekyll.minima.excerpt -->
 
 ### The Worlds Smallest ChatBot
 
