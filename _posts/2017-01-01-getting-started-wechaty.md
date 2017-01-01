@@ -9,7 +9,9 @@ excerpt_separator: <!--more-->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pF3PT6Q686c" frameborder="0" allowfullscreen></iframe>
 
-This presentation video is made by @lijiarui at Node.js Party Beijing #18, which can show you how to getting started with Wechaty through a 20 minutes live coding tutorial.
+Wechaty is super easy to use, especially when you are using Docker.
+
+In this video, @lijiarui will show you how to getting started with Wechaty through a 20 minutes live coding tutorial. (Event Node.js Party #18, Beijing)
 
 <!--more-->
 
