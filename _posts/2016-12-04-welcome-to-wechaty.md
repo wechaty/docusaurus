@@ -2,6 +2,7 @@
 layout: post
 title: Welcome to Wechaty!
 date: '2016-12-04 14:04:27 +0800'
+author: zixia
 categories: news
 published: true
 excerpt_separator: <!--more-->
