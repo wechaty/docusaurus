@@ -24,6 +24,7 @@ url: "https://blog.wechaty.io" # the base hostname & protocol for your site, e.g
 twitter_username: WechatyIO
 github_username:  Wechaty
 author: Wechaty
+excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown

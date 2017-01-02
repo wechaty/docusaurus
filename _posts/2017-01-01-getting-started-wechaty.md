@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started to Wechaty - Live Coding Tutorial by @lijiarui
-date: '2017-01-01 0:0:0 +0800'
+title: Getting Started with Wechaty - Live Coding Tutorial
+date: '2017-01-01 10:0:0 +0800'
+author: lijiarui
 categories: guide
 published: true
-excerpt_separator: <!--more-->
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MFXhd2IK4io" frameborder="0" allowfullscreen></iframe>
@@ -12,6 +12,8 @@ excerpt_separator: <!--more-->
 Wechaty is super easy to use, especially when you are using Docker.
 
 In this video, @lijiarui will show you how to getting started with Wechaty through a 20 minutes live coding tutorial. (Event Node.js Party #18, Beijing)
+
+Learn more about how to use Wechaty: https://github.com/wechaty/wechaty/wiki/GettingStarted
 
 <!--more-->
 
