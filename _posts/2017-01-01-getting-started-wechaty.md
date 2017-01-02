@@ -15,6 +15,6 @@ In this video, @lijiarui will show you how to getting started with Wechaty throu
 
 <!--more-->
 
-Learn more about how to use Wechaty: https://github.com/wechaty/wechaty/wiki/GettingStarted
+Learn more about how to use Wechaty: <https://github.com/wechaty/wechaty/wiki/GettingStarted>
 
 [ruirui-speech-nodejs-image]: /download/2017/lijiarui-speech-nodejs.jpg
