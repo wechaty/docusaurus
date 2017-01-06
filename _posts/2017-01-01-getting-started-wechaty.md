@@ -1,4 +1,3 @@
-<link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
 ---
 layout: post
 title: Getting Started with Wechaty - Live Coding Tutorial
@@ -7,6 +6,9 @@ author: lijiarui
 categories: guide
 published: true
 ---
+
+<link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
+
 
 <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/IUDuxHaV9bQ" frameborder="0" allowfullscreen></iframe></div>
 
