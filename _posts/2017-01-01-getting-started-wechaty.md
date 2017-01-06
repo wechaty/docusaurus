@@ -7,7 +7,9 @@ categories: guide
 published: true
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IUDuxHaV9bQ" frameborder="0" allowfullscreen></iframe>
+<link href="https://github.com/wechaty/blog.wechaty.io/blob/master/_layouts/vedio.css"rel="stylesheet"></link> 
+
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/IUDuxHaV9bQ" frameborder="0" allowfullscreen></iframe></div>
 
 Wechaty is super easy to use, especially when you are using Docker.
 
