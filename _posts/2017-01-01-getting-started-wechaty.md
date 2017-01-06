@@ -6,7 +6,7 @@ author: lijiarui
 categories: guide
 published: true
 ---
-```css
+``` css
 .video-container {
 	position:relative;
 	padding-bottom:56.25%;
