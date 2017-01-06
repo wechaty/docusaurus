@@ -35,9 +35,9 @@ My topic includes:
 For visiters come from China, this video is also hosted on YouKu.com & Tencent Video:
 
 * [Wechaty 101 @ YouKu](http://v.youku.com/v_show/id_XMTkyMzkzNzU4OA==.html)
-* [Wechaty 101 @ Tencent]()
+* [Wechaty 101 @ Tencent](https://v.qq.com/x/page/z0363c7cx9p.html)
 
-### Presentation Slides
+## Presentation Slides
 
 Here's the slides of _Wechaty 101_ in this talk:
 
