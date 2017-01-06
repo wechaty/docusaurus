@@ -21,6 +21,6 @@ This talk was presented at Node Party Beijing #18 Dec 2016, all about ChatBots. 
 <iframe src="https://docs.google.com/presentation/d/13oUOIEnzdLWO6KZWztD_pMuu22AQ3SIMjk2wp8f-f18/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
-_Wechaty 101_ Slides can be found at: <https://docs.google.com/presentation/d/13oUOIEnzdLWO6KZWztD_pMuu22AQ3SIMjk2wp8f-f18/edit?usp=sharing>
+_Wechaty 101_ Slides can be found at Google Slide [here](https://docs.google.com/presentation/d/13oUOIEnzdLWO6KZWztD_pMuu22AQ3SIMjk2wp8f-f18/edit?usp=sharing)
 
 Learn more about Wechaty source code at: <https://github.com/wechaty/wechaty>
