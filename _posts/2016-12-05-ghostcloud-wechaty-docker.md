@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '[转载]Docker玩转微信机器人框架Wechaty'
+title: 'Docker玩转微信机器人框架Wechaty'
 author: shevyan
 date: '2016-12-05 11:11:11 +0800'
 categories: developer
