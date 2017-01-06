@@ -32,7 +32,9 @@ My topic includes:
 
 <!--more-->
 
-### Wechaty 101 Slides
+### Presentation Slides
+
+Here's the slides of _Wechaty 101_ in this talk:
 
 <div class="video-container" style="
     position: relative;
