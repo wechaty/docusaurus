@@ -6,8 +6,20 @@ author: zixia
 categories: guide
 published: true
 ---
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cV32v-HNXhs" frameborder="0" allowfullscreen></iframe>
+<div class="video-container" style="
+    position: relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cV32v-HNXhs" frameborder="0" allowfullscreen="" style="
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+"></iframe></div>
 
 This talk was presented at [Node Party Beijing](https://github.com/rockq-org/node-party) #18 Dec 2016, all about ChatBots.
 
