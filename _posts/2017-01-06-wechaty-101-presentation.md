@@ -29,6 +29,6 @@ Learn more about Wechaty source code at: <https://github.com/wechaty/wechaty>
 
 For visiters come from China: Wechaty 101 video is also hosted on YouKu.com & Tencent Video
 
-* [Wechaty 101 @ Youku](http://v.youku.com/v_show/id_XMTkyMzkzNzU4OA==.html)
+* [Wechaty 101 @ YouKu](http://v.youku.com/v_show/id_XMTkyMzkzNzU4OA==.html)
 * [Wechaty 101 @ Tencent]()
 
