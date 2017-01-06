@@ -9,7 +9,9 @@ published: true
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cV32v-HNXhs" frameborder="0" allowfullscreen></iframe>
 
-This talk was presented at [Node Party Beijing](https://github.com/rockq-org/node-party) #18 Dec 2016, all about ChatBots. My topic includes:
+This talk was presented at [Node Party Beijing](https://github.com/rockq-org/node-party) #18 Dec 2016, all about ChatBots.
+
+My topic includes:
 
 1. WHAT is Wechaty
 1. WHY I built Wechaty
@@ -21,6 +23,12 @@ This talk was presented at [Node Party Beijing](https://github.com/rockq-org/nod
 <iframe src="https://docs.google.com/presentation/d/13oUOIEnzdLWO6KZWztD_pMuu22AQ3SIMjk2wp8f-f18/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
-_Wechaty 101_ Slides is hosted on Google Slide at [here](https://docs.google.com/presentation/d/13oUOIEnzdLWO6KZWztD_pMuu22AQ3SIMjk2wp8f-f18/edit?usp=sharing)
+_Wechaty 101_ Slides is hosted on Google Slides(Docs) at [here](https://docs.google.com/presentation/d/13oUOIEnzdLWO6KZWztD_pMuu22AQ3SIMjk2wp8f-f18/edit?usp=sharing)
 
 Learn more about Wechaty source code at: <https://github.com/wechaty/wechaty>
+
+For visiters come from China: Wechaty 101 video is also hosted on YouKu.com & Tencent Video
+
+* [Wechaty 101 @ Youku](http://v.youku.com/v_show/id_XMTkyMzkzNzU4OA==.html)
+* [Wechaty 101 @ Tencent]()
+
