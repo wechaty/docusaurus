@@ -29,11 +29,11 @@ In this video, @lijiarui will show you how to getting started with Wechaty throu
 
 <!--more-->
 
-Learn more about how to use Wechaty: <https://github.com/wechaty/wechaty/wiki/GettingStarted>
-
 For visiters come from China, this video is also hosted on YouKu.com & Tencent Video
 
 * [Getting Started with Wechaty @ YouKu](http://v.youku.com/v_show/id_XMTkyNDgzMjY5Ng==.html)
 * [Getting Started with Wechaty @ Tencent]()
+
+Learn more about how to use Wechaty: <https://github.com/wechaty/wechaty/wiki/GettingStarted>
 
 [ruirui-speech-nodejs-image]: /download/2017/lijiarui-speech-nodejs.jpg

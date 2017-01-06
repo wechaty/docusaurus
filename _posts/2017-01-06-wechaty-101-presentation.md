@@ -32,6 +32,11 @@ My topic includes:
 
 <!--more-->
 
+For visiters come from China, this video is also hosted on YouKu.com & Tencent Video:
+
+* [Wechaty 101 @ YouKu](http://v.youku.com/v_show/id_XMTkyMzkzNzU4OA==.html)
+* [Wechaty 101 @ Tencent]()
+
 ### Presentation Slides
 
 Here's the slides of _Wechaty 101_ in this talk:
@@ -54,9 +59,4 @@ Here's the slides of _Wechaty 101_ in this talk:
 _Wechaty 101_ Slides is hosted on Google Slides(Docs) at [here](https://docs.google.com/presentation/d/13oUOIEnzdLWO6KZWztD_pMuu22AQ3SIMjk2wp8f-f18/edit?usp=sharing)
 
 Learn more about Wechaty source code at: <https://github.com/wechaty/wechaty>
-
-For visiters come from China, this video is also hosted on YouKu.com & Tencent Video:
-
-* [Wechaty 101 @ YouKu](http://v.youku.com/v_show/id_XMTkyMzkzNzU4OA==.html)
-* [Wechaty 101 @ Tencent]()
 
