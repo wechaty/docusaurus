@@ -7,7 +7,7 @@ categories: guide
 published: true
 ---
 
-<link href="/_layouts/vedio.css" rel="stylesheet">
+<link href="https://github.com/wechaty/blog.wechaty.io/blob/master/_layouts/vedio.css" rel="stylesheet">
 
 
 <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/IUDuxHaV9bQ" frameborder="0" allowfullscreen></iframe></div>
