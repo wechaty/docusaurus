@@ -32,6 +32,8 @@ My topic includes:
 
 <!--more-->
 
+### Wechaty 101 Slides
+
 <iframe src="https://docs.google.com/presentation/d/13oUOIEnzdLWO6KZWztD_pMuu22AQ3SIMjk2wp8f-f18/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
@@ -39,7 +41,7 @@ _Wechaty 101_ Slides is hosted on Google Slides(Docs) at [here](https://docs.goo
 
 Learn more about Wechaty source code at: <https://github.com/wechaty/wechaty>
 
-For visiters come from China: Wechaty 101 video is also hosted on YouKu.com & Tencent Video
+For visiters come from China, this video is also hosted on YouKu.com & Tencent Video:
 
 * [Wechaty 101 @ YouKu](http://v.youku.com/v_show/id_XMTkyMzkzNzU4OA==.html)
 * [Wechaty 101 @ Tencent]()
