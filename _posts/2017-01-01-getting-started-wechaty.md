@@ -36,7 +36,7 @@ For visiters come from China, this video is also hosted on YouKu.com & Tencent V
 
 Learn more about how to use Wechaty: <https://github.com/wechaty/wechaty/wiki/GettingStarted>
 
-Code in the vedio:
+Code in the video:
 
 ```typescript
 
@@ -105,8 +105,8 @@ bot
 docker command:    
 
 ```
-docker run -ti --volume="$(pwd)":/bot --rm --name=test zixia/wechaty robot/index.ts
+docker run -ti --volume="$(pwd)":/bot --rm zixia/wechaty mybot.ts
 ```
-
+[Click here to get the repo](https://github.com/lijiarui/Getting-Started-with-Wechaty---Live-Coding-Tutorial "Click here to get the repo")
 
 [ruirui-speech-nodejs-image]: /download/2017/lijiarui-speech-nodejs.jpg
