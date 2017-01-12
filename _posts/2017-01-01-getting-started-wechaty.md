@@ -37,7 +37,9 @@ For visiters come from China, this video is also hosted on YouKu.com & Tencent V
 Learn more about how to use Wechaty: <https://github.com/wechaty/wechaty/wiki/GettingStarted>
 
 Code in the vedio:
-```ts
+
+```typescript
+
 import {Wechaty, Room} from 'wechaty'
 
 const bot = Wechaty.instance()
@@ -97,9 +99,14 @@ bot
 })
 
 .init()
+
 ```
-docker command:
+
+docker command:    
+
 ```
 docker run -ti --volume="$(pwd)":/bot --rm --name=test zixia/wechaty robot/index.ts
 ```
+
+
 [ruirui-speech-nodejs-image]: /download/2017/lijiarui-speech-nodejs.jpg
