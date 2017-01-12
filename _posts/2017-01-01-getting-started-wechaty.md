@@ -27,7 +27,7 @@ Wechaty is super easy to use, especially when you are using Docker.
 
 In this video, @lijiarui will show you how to getting started with Wechaty through a 10 minutes live coding tutorial, with Wechaty Docker Runtime. (Event Node.js Party #18, Beijing)
 
-For visiters come from China, this video is also hosted on YouKu.com & Tencent Video
+For visiters come from China who can not visit YouTube.com, this video is also hosted on YouKu.com & Tencent Video
 
 * [Getting Started with Wechaty @ YouKu](http://v.youku.com/v_show/id_XMTkyNDgzMjY5Ng==.html)
 * [Getting Started with Wechaty @ Tencent](https://v.qq.com/x/page/b0363p9kg3q.html)
