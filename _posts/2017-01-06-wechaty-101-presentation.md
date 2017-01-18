@@ -34,8 +34,8 @@ My topic includes:
 
 For visiters come from China who can not visit YouTube.com, this video is also hosted on YouKu.com & Tencent Video:
 
-* [Wechaty 101 @ YouKu](http://v.youku.com/v_show/id_XMTkyMzkzNzU4OA==.html)
-* [Wechaty 101 @ Tencent](https://v.qq.com/x/page/z0363c7cx9p.html)
+* [Wechaty 101 @ YouKu](http://v.youku.com/v_show/id_XMjQ3NjUxMjAwOA==.html)
+* [Wechaty 101 @ Tencent](https://v.qq.com/x/page/l03679h2u9s.html)
 
 <!--more-->
 
