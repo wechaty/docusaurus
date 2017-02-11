@@ -25,10 +25,10 @@ This talk was presented at [Node Party Beijing](https://github.com/rockq-org/nod
 
 My topic includes:
 
-1. WHAT is Wechaty
-1. WHY I built Wechaty
-1. HOW I built Wechaty
-1. RoadMap of Wechaty
+1. what does it do?
+1. why does it exist?
+1. how does it work?
+1. what's in it for me?
 
 >  
 
