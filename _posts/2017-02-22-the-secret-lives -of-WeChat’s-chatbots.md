@@ -6,8 +6,6 @@ published: true
 excerpt_separator: <!--more-->
 ---
 
-## The secret lives of WeChat’s chatbots
-
 Chatbots rocketed into the limelight last year, bolstered by the enthusiasm of Facebook and Microsoft, though the technology wasn’t mature yet.
 
 In China, however, the response was more muted. While Facebook was busy pushing its new Messenger app – boasting when it hit 11,000 bots – Tencent, the maker of WeChat, quietly let millions of accounts develop AI-powered bots of their own, keeping a wary eye out for abuse. Accounts like Cara, for example, are shut down, as Tencent wants to confine bots to customer service-related functions within brand accounts.
