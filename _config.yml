@@ -13,17 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Wechaty Official Blog
-email: dev@wechaty.io
+title: Chatie Official Blog
+email: dev@chatie.io
 description: > # this means to ignore newlines until "baseurl:"
   Wechaty is a Easy to Use ChatBot FrameWork 
   which can help you write The World's Smallest ChatBot 
   in JavaScript
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://blog.wechaty.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: WechatyIO
-github_username:  Wechaty
-author: Wechaty
+url: "https://blog.chatie.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ChatieIO
+github_username:  Chatie
+author: Chatie
 excerpt_separator: <!--more-->
 
 # Build settings
@@ -37,6 +37,6 @@ exclude:
   - Gemfile.lock
 
 disqus:
-  shortname: "wechaty"
+  shortname: "wechaty" # keep wechaty as the name because chatie is not availble on disqus.
 
 google_analytics: UA-88739146-1
