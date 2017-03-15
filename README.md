@@ -1,4 +1,4 @@
-# blog.wechaty.io
-Wechaty Official Blog
+# blog.chatie.io
+Chatie Official Blog
 
-Online Editor: http://prose.io/#wechaty/blog.wechaty.io/tree/master/_posts
+Online Editor: http://prose.io/#chatie/blog.chatie.io/tree/master/_posts
