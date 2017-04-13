@@ -150,4 +150,4 @@ o = "file2.wx.qq.com",
 ![ding-code][mukaiu-ding-code]
 
 
-[mukaiu-ding-code]: /download/2017/mukaiu-ding-code.gif
+[mukaiu-ding-code]: /download/2017/mukaiu-ding-code.jpg
