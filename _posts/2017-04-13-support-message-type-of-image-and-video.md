@@ -6,14 +6,20 @@ date: '2017-04-13 20:37:11 +0800'
 published: true
 ---
 
-<img src="https://avatars2.githubusercontent.com/u/7746790?v=3&s=88" style="float:left">
-作者：@[mukaiu](https://github.com/mukaiu), Wechaty Contributor
+<div>
+  <img src="https://avatars2.githubusercontent.com/u/7746790?v=3&s=88" style="float:left; margin: 20px">
+  <ul>
+    <li>作者：@[mukaiu](https://github.com/mukaiu)</li>
+    <li>Wechaty Contributor</li>
+  </ul>
+</div>
 
-# 给微信机器人添加发送图片功能
 
 公司活动，需要对入群用户进行管理和自动回复。前期在Node Party Beijing上接触到@zixia的分享，Wechaty刚好能支持该活动，支持Docker部署，是一个很棒的Bot Framework。
 
 开发过程中发现，#4 Support Message Type of Image/Video 此功能还未实现，决定完成该项特征
+
+<!--more-->
 
 ##1. 问题分析
 
