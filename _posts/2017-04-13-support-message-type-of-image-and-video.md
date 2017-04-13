@@ -3,10 +3,10 @@ layout: post
 title: '给机器人添加发送图片视频功能'
 author: mukaiu
 date: '2017-04-13 20:37:11 +0800'
-categories: developer
 published: true
 ---
 
+<img src="https://avatars2.githubusercontent.com/u/7746790?v=3&s=88" style="float:left">
 作者：@[mukaiu](https://github.com/mukaiu), Wechaty Contributor
 
 # 给微信机器人添加发送图片功能
@@ -141,4 +141,7 @@ o = "file2.wx.qq.com",
 现在Wechaty支持发送图片(bmp,jpg,png)视频(mp4)和其他文件。
 图片和视频是可以在聊天窗口直接查看的
 可以通过在ding-dong-bot里回复code来收到一张图片二维码
-![463261775.jpg](http://static.ycsw.net.cn/463261775.jpg?imageView/2/w/400)
+![ding-code](mukaiu-ding-code)
+
+
+[mukaiu-ding-code]: /download/2017/mukaiu-ding-code.gif
