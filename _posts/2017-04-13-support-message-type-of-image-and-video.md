@@ -6,7 +6,9 @@ date: '2017-04-13 20:37:11 +0800'
 published: true
 ---
 
-<img src="https://avatars2.githubusercontent.com/u/7746790?v=3&s=60" height="30" width="30">作者：@[mukaiu](https://github.com/mukaiu), Wechaty Contributor
+<img src="https://avatars2.githubusercontent.com/u/7746790?v=3&s=88">
+
+作者：@[mukaiu](https://github.com/mukaiu), [Wechaty Contributor](https://github.com/orgs/Chatie/teams/contributor)
 
 公司活动，需要对入群用户进行管理和自动回复。前期在Node Party Beijing上接触到@zixia的分享，Wechaty刚好能支持该活动，支持Docker部署，是一个很棒的Bot Framework。
 
@@ -14,9 +16,10 @@ published: true
 
 <!--more-->
 
-##1. 问题分析
+## 1. 问题分析
 
 为解Web微信是如何发送图片的，进行了数据抓包，并分析微信Web源码
+
 ```js
 onSuccess: function(e) {
    if (0 == e.BaseResponse.Ret) {
@@ -109,6 +112,7 @@ let formData = {
 MediaId就是我们需要的，直接调用createMessage,sendMessage即可发送图片了。
 
 ## 3.整合Wechaty
+
 为快速验证可行性，直接添加了Wechaty.sendMedia。后和@zixia、@lijiarui讨论，决定使用say(MediaMessage(filename))的形式发送媒体文件。
 重载
 ```js
@@ -120,7 +124,8 @@ Message.say(mediaMessage: MediaMessage)
 Room.say(mediaMessage: MediaMessage)
 ```  
 ## 4.坑
-- 测试期间发现，发送图片有时候会失败，原因是无法获取mediaId，第一感觉是，难道还有细节没有发现?对比post数据，完全一致，没有问题，那问题出在哪呢？
+
+1. 测试期间发现，发送图片有时候会失败，原因是无法获取mediaId，第一感觉是，难道还有细节没有发现?对比post数据，完全一致，没有问题，那问题出在哪呢？
 后来看源码才发现
 ```js
 var e = location.host
@@ -131,15 +136,17 @@ e.indexOf("wx2.qq.com") > -1 ? (t = "weixin.qq.com",
 o = "file2.wx.qq.com",
 ```  
 原来还有个地址是wx2.qq.com。对应的文件上传地址是file2.wx.qq.com。不仔细啊
-- 另一个坑是微信Web对视频大小有20M限制，这个也是开始没有注意的，发送大视频会失败
-- 循环依赖
+
+2. 另一个坑是微信Web对视频大小有20M限制，这个也是开始没有注意的，发送大视频会失败
+3. 循环依赖
 由于MediaMessage继承Message，Message.say(MediaMessage)又需要引用MediaMessage.OMG,循环引用,TS报错了不支持这么玩～
 所以我把MediaMessage移入了message.ts,删除了media-message.ts,无中生有了186行变更😊
 
 ## 5.End
+
 现在Wechaty支持发送图片(bmp,jpg,png)视频(mp4)和其他文件。
 图片和视频是可以在聊天窗口直接查看的
-可以通过在ding-dong-bot里回复code来收到一张图片二维码
+可以通过在ding-dong-bot里回复code来收到一张图片二维码。
 
 ![ding-code][mukaiu-ding-code]
 
