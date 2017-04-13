@@ -9,6 +9,7 @@ published: true
 <img src="https://avatars2.githubusercontent.com/u/7746790?v=3&s=88" style="float:left;">
 
 作者：@[mukaiu](https://github.com/mukaiu)
+
 Wechaty Contributor
 
 <br style="clear:both" />
