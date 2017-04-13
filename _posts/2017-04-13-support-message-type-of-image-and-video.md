@@ -6,11 +6,13 @@ date: '2017-04-13 20:37:11 +0800'
 published: true
 ---
 
-<img src="https://avatars2.githubusercontent.com/u/7746790?v=3&s=88" style="float:right;">
+<img src="https://avatars2.githubusercontent.com/u/7746790?v=3&s=88" style="float:left;">
 <ul>
   <li>作者：@[mukaiu](https://github.com/mukaiu)</li>
   <li>Wechaty Contributor</li>
 </ul>
+
+<br style="clear:both" />
 
 公司活动，需要对入群用户进行管理和自动回复。前期在Node Party Beijing上接触到@zixia的分享，Wechaty刚好能支持该活动，支持Docker部署，是一个很棒的Bot Framework。
 
