@@ -7,7 +7,9 @@ categories: developer
 published: true
 ---
 
-作者：@[Gcaufy](https://github.com/gcaufy), Tencent, Wechaty Contributor
+<img src="https://avatars3.githubusercontent.com/u/2182004?v=3&s=88">
+
+作者：@[Gcaufy](https://github.com/gcaufy), Tencent, [Wechaty Contributor](https://github.com/orgs/Chatie/teams/contributor)
 
 Wechaty解决了很多我在使用微信运营过程中的痛点问题，这里就不再一一赘述了。同时Wechaty的API设计简洁优雅，部署方便也是另外一个吸引我的地方。
 
