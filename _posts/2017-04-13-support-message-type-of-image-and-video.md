@@ -147,7 +147,8 @@ o = "file2.wx.qq.com",
 现在Wechaty支持发送图片(bmp,jpg,png)视频(mp4)和其他文件。
 图片和视频是可以在聊天窗口直接查看的
 可以通过在ding-dong-bot里回复code来收到一张图片二维码
-![ding-code](mukaiu-ding-code)
+
+![ding-code][mukaiu-ding-code]
 
 
 [mukaiu-ding-code]: /download/2017/mukaiu-ding-code.gif
