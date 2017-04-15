@@ -33,7 +33,8 @@ excerpt_separator: <!--more-->
 GitHub上与微信机器人相关的开源项目有很多，通过JavaScript、Electron、Go、Perl、Python等等都可以实现。
 
 因为我只对JavaScript比较熟悉，所以选择了Wechaty，他是使用Typescript进行编写的Node项目，是一个专门为个人微信号搭建的bot框架，使用Wechaty的API，只需要6行Javascript代码就可以搭建一个最简单的微信机器人，支持 Linux, Windows, Darwin(OSX/Mac) 和Docker。
-![](http://mmbiz.qpic.cn/mmbiz_png/mXicr9v8bmOBNJaPr8cZfRTb6xYVU8odFboa5dxduLbOnBibibevemw2rZdLUr6l8Ixq86k1Jcllttw2VPOeEBkog/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
+![wechaty-pic][wechaty-pic]
+
 
 我特别喜欢Wechaty的一点是，我不用关心任何实现逻辑，仅仅用JS写业务逻辑层面的事情，就可以了。当我把我需要做什么想清楚以后，JS实现起来，是非常简单便捷的。
 
@@ -72,10 +73,10 @@ Wechaty基本的实现原理，是通过Chrome实时监听微信网页版的各�
 `docker run -ti --rm --volume="$(pwd)":/bot zixia/wechaty run demo`
 
 首次运行以后会有如下的截图： 
-![](http://mmbiz.qpic.cn/mmbiz_jpg/0vU1ia3htaaMYJLMuHfbq5cTpDGyHuic1aFOZwB3Q8dm9icXGspLgUomkx1nhtlbT3O1UAuBse9Gfbt3jFqsOpvCA/0?tp=webp&wxfrom=5&wx_lazy=1)
+![docker-pull][docker-pull]
 
 Docker会自动的将相关的包部署到电脑里面，安装成功后，以后再运行就会是如下的截图了：
-![](http://mmbiz.qpic.cn/mmbiz_jpg/0vU1ia3htaaMYJLMuHfbq5cTpDGyHuic1arCeasncyGGJ65icjUtpeFvzzUTfEQJiagZJTuL8xNhc5nqaR7icu3tfrA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1)
+![run-ding][run-ding]
 
 Wechaty的编写者对这种特殊字体的热爱到疯狂的地步了，为了让大家了解的更清楚，我就把所有截图内容也就都放上来了。
 
@@ -185,6 +186,10 @@ Wechaty解放了我的一些重复性工作，我也希望能为Wechaty做点什
 
 如果你对Wechaty感兴趣，希望一起交流，一起分享，共同学习，可以扫码添加"桔小秘"为好友，回复wechaty加入WECHATY DEVELOPERS' HOME。也可以顺便体验下wechaty实现的小功能。
 
-![](http://mmbiz.qpic.cn/mmbiz_png/mXicr9v8bmOBNJaPr8cZfRTb6xYVU8odF4v52eQz5hjc3LwXL7uGma7HxlM36UibXo89TKFwib51fPHQxvcxNJ4og/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
+![qr-code][qr-code]
 
 [ruirui-dance-image]: /download/2016/ruirui-dance.jpg
+[wechaty-pic]: /download/2017/lijiarui-write-bot-wechaty-pic.jpeg
+[docker-pull]: /download/2017/lijiarui-write-bot-docker-pull.jpeg
+[run-ding]: /download/2017/lijiarui-write-bot-run-ding.jpeg
+[qr-code]: /download/2017/lijiarui-write-bot-qr-code.jpeg
