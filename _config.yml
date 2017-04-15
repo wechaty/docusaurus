@@ -25,6 +25,7 @@ twitter_username: ChatieIO
 github_username:  Chatie
 author: Chatie
 excerpt_separator: <!--more-->
+permalink: /:title.html
 
 # Build settings
 markdown: kramdown
