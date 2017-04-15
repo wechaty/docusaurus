@@ -13,7 +13,7 @@ Hello, ChatBot Developers!
 
 Today is a big day because [Wechaty][wechaty-gh] got a brand new Blog! ;-)
 
-In the past half year, Wechaty growth from version 0.0.1 to 0.6.x. Today, it has dozens of pull requests, 100+ issues, 200+ stars, 1,400+ commits and 10,000+ lines of code.
+In the past half year, Wechaty growth from version 0.0.1 to 0.6.32. Today, it has dozens of pull requests, 100+ issues, 200+ stars, 1,400+ commits and 10,000+ lines of code.
 
 ### The Worlds Smallest ChatBot
 
