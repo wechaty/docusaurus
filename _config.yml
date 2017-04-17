@@ -28,14 +28,6 @@ excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
-
-# Markdown Processors
-kramdown:
-  input: GFM
-  auto_ids: true
-  syntax_highlighter: rouge
-
 theme: minima
 gems:
   - jekyll-feed
