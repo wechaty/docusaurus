@@ -1,9 +1,11 @@
 # blog.chatie.io
-Chatie Official Blog
+[Chatie Official Blog](https://blog.chatie.io)
 
-Online Editor: http://prose.io/#chatie/blog.chatie.io/tree/master/_posts
+### Online Editor
 
-### minima theme
+http://prose.io/#chatie/blog.chatie.io/tree/master/_posts
 
-<https://github.com/jekyll/minima>
+### Jekyll Theme
+
+minima: <https://github.com/jekyll/minima>
 
