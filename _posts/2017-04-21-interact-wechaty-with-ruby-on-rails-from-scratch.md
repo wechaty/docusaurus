@@ -3,12 +3,15 @@ layout: post
 title: "Interact Wechaty with Ruby on Rails from scratch"
 author: WildCat
 date: '2017-04-21 16:01:53 +0100'
+headline: 'test'
 published: true
 ---
 
-> [Ruby on Rails](http://rubyonrails.org) is a extremely powerful web framework with a long history, which can simplify our development process, make it more enjoyable. As it known to all, many well-known sites are built on this framework, such as [GitHub](https://github.com), [Unsplash](https://unsplash.com), [Airbnb](http://airbnb.com), [Dribbble](https://dribbble.com) and [Product Hunt](https://www.producthunt.com)[^1]. For most developers without so much experience about Rails, setting up a development environment for this stack is not a easy task. This blog would introduce how to interact WeChaty with Rails with an example of a group message logger, trying to *Keep it simple, stupid* (the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle)).
+> [Ruby on Rails](http://rubyonrails.org) is a extremely powerful web framework with a long history, which can simplify our development process, making it more enjoyable. As it known to all, many well-known sites are built on this framework, such as [GitHub](https://github.com), [Unsplash](https://unsplash.com), [Airbnb](http://airbnb.com), [Dribbble](https://dribbble.com) and [Product Hunt](https://www.producthunt.com)[^1]. For most developers without so much experience about Rails, setting up a development environment for this stack is not a easy task. This blog would introduce how to interact WeChaty with Rails with an example of a group message logger, trying to *Keep it simple, stupid* (the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle)).
 
 > Note: This blog will mainly illustrate the tutorial on macOS. The situations can be very different on other platforms such as Windows and Linux. Due to the limitations of this author's time, these topics cannot be covered. Moreover, the final version of code has been published on GitHub: [https://github.com/imWildCat/blog-post-interact-wechaty-with-rails-from-scratch](https://github.com/imWildCat/blog-post-interact-wechaty-with-rails-from-scratch)
+
+<!--more-->
 
 ## Prerequisites
 
@@ -173,7 +176,7 @@ Running via Spring preloader in process 38447
 
 In fact, the model file `app/models/message.rb` doen't contain any code about the structrure of the database. The migration file `db/migrate/20170421115650_create_messages.rb` (in your case, the file name should be different in relation to your date & time) contains the structure:
 
-```Ruby
+```ruby
 class CreateMessages < ActiveRecord::Migration[5.1]
   def change
     create_table :messages do |t|
@@ -197,7 +200,7 @@ rails db:migrate
 
 You could see the structure of the sqlite database file `db/development.sqlite3`:
 
-![database_initial_structure](http://i.imgur.com/bTOIrk5g.png)
+![database_initial_structure][wildcat-rails-db-initial-structure]
 
 While using `rails console` to open a REPL[^3] for your Rails project, we can create a data record easily by `Message.create! topic: 'My Group Name', from_name: 'HailCat', content: 'Hiya, World!'`:
 
@@ -247,11 +250,11 @@ At present, the code base has been set up and the directories would look like:
 
 Basicially, Rails is a web framework so that the most usual way for the *communication* is by HTTP (web). We hope there can be an *architecture* like this:
 
-![architecture_1](http://i.imgur.com/0WtWorv.png)
+![architecture_1][wildcat-rails-architecture-1]
 
 Both *Rails* and *Wechaty* can be regarded as micro services, which can also be dockerized[^4] in the coming blogs. The most consierable advantage of this kind of *architecture* is that more than one Wechaty instances can share a single Rails app:
 
-![architecture_2](http://i.imgur.com/H5KTvgK.png)
+![architecture_2][wildcat-rails-architecture-2]
 
 So, let's do it.
 
@@ -406,7 +409,7 @@ Run `rails g rails_admin:install`. Then run `rails server` to start Rails develo
 
 Visit `http://localhost:3000/admin`, you can see an awesome admin pannel of this logger:
 
-![admin panel](http://i.imgur.com/6XrsWsx.png)
+![admin panel][wildcat-rails-admin-panel]
 
 ## Conclusion
 
@@ -420,3 +423,8 @@ Thanks for your reading. Feel free to drop any questions.
 [^2]: The Rails Command Line — Ruby on Rails Guides: [http://guides.rubyonrails.org/command_line.html](http://guides.rubyonrails.org/command_line.html)
 [^3]: Read–eval–print loop - Wikipedia: [https://en.wikipedia.org/wiki/Read–eval–print_loop](https://en.wikipedia.org/wiki/Read–eval–print_loop)
 [^4]: Docker (software) - Wikipedia: [https://en.wikipedia.org/wiki/Docker_(software)](https://en.wikipedia.org/wiki/Docker_(software))
+
+[wildcat-rails-db-initial-structure]: /download/2017/wildcat-rails-db-initial-structure.png
+[wildcat-rails-architecture-1]: /download/2017/wildcat-rails-architecture-1.png
+[wildcat-rails-architecture-2]: /download/2017/wildcat-rails-architecture-2.png
+[wildcat-rails-admin-panel]: /download/2017/wildcat-rails-admin-panel.png
