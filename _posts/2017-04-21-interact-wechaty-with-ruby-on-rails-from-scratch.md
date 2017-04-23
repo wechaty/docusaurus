@@ -7,6 +7,10 @@ headline: 'test'
 published: true
 ---
 
+![architecture2][wildcat-rails-architecture-2]
+
+Author: [@imWildCat](https://github.com/imWildCat), University of Portsmouth
+
 > [Ruby on Rails](http://rubyonrails.org) is a extremely powerful web framework with a long history, which can simplify our development process, making it more enjoyable. As it known to all, many well-known sites are built on this framework, such as [GitHub](https://github.com), [Unsplash](https://unsplash.com), [Airbnb](http://airbnb.com), [Dribbble](https://dribbble.com) and [Product Hunt](https://www.producthunt.com)[^1]. For most developers without so much experience about Rails, setting up a development environment for this stack is not a easy task. This blog would introduce how to interact WeChaty with Rails with an example of a group message logger, trying to *Keep it simple, stupid* (the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle)).
 
 > Note: This blog will mainly illustrate the tutorial on macOS. The situations can be very different on other platforms such as Windows and Linux. Due to the limitations of this author's time, these topics cannot be covered. Moreover, the final version of code has been published on GitHub: [https://github.com/imWildCat/blog-post-interact-wechaty-with-rails-from-scratch](https://github.com/imWildCat/blog-post-interact-wechaty-with-rails-from-scratch)
@@ -250,11 +254,11 @@ At present, the code base has been set up and the directories would look like:
 
 Basicially, Rails is a web framework so that the most usual way for the *communication* is by HTTP (web). We hope there can be an *architecture* like this:
 
-![architecture_1][wildcat-rails-architecture-1]
+![architecture1][wildcat-rails-architecture-1]
 
 Both *Rails* and *Wechaty* can be regarded as micro services, which can also be dockerized[^4] in the coming blogs. The most consierable advantage of this kind of *architecture* is that more than one Wechaty instances can share a single Rails app:
 
-![architecture_2][wildcat-rails-architecture-2]
+![architecture2][wildcat-rails-architecture-2]
 
 So, let's do it.
 
