@@ -3,6 +3,7 @@ With the development of science and technology, the progress of the society is r
 There were 7 guys came to the gathering (including me), 6 programmers, and one used to work for a technical community. We met at 7 pm and would have dinner together in a Chinese restaurant. We’d like to introduce ourselves to each other at the beginning of the meeting with a video recorded.
 
 [video]()
+
 **[Zhuohuan LI](https://github.com/zixia)** is an Angel Investor, Paragliding Pilot and Full Stack Developer. He founded serial enterprises with strong technical background and rich social network experience. He is also the organizer of the meetup.
 
 **[Hailiang WANG](https://github.com/Samurais)** is the leader of *Rockq Community* and a chatbot developer. He used to work in *IBM Innovation Center* and the *Development Labs*. Now he works for *Lingling English* and in charge of the AI Lead.
@@ -31,7 +32,7 @@ If you want a Chinese version, click [HERE]().
 
 简单介绍一下大家：
 
-[李卓桓]((https://github.com/zixia))：PreAngel 投资人。zixia BBS、叽歪网创始人，优酷网首席科学家，水木清华BBS站长。清华大学本科，中欧国际工商学院EMBA。清华企业家协会移动互联网副主席，中欧移动互联网协会发起人。
+[李卓桓](https://github.com/zixia)：PreAngel 投资人。zixia BBS、叽歪网创始人，优酷网首席科学家，水木清华BBS站长。清华大学本科，中欧国际工商学院EMBA。清华企业家协会移动互联网副主席，中欧移动互联网协会发起人。
 
 [王海良](https://github.com/Samurais)：Rockq 社区领袖，呤呤英语 AI Lead，曾就职 IBM 创新中心、研发中心，他也是 Chatbot 开发者。
 
