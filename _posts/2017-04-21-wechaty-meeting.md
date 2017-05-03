@@ -1,20 +1,20 @@
 With the development of science and technology, the progress of the society is related to create something useful. And to a certain extent,  the software developers are capable of changing the world.  Last Friday, I was lucky for gathering several coders together and we had an enjoyable conversation.
 
-There were 7 guys came to the gathering (including me), 5 programmers, and one used to work for a technical community. We met at 7 pm and would have dinner together in a Chinese restaurant. We’d like to introduce ourselves to each other at the beginning of the meeting with a video recorded.
+There were 7 guys came to the gathering (including me), 6 programmers, and one used to work for a technical community. We met at 7 pm and would have dinner together in a Chinese restaurant. We’d like to introduce ourselves to each other at the beginning of the meeting with a video recorded.
 
 [video]()
 
-**Hailiang WANG** is the leader of *Rockq Community* and a chatbot developer. He used to work in *IBM Innovation Center* and the *Development Labs*. Now he works for *Lingling English* and in charge of the AI Lead.
+**[Hailiang WANG](https://github.com/Samurais)** is the leader of *Rockq Community* and a chatbot developer. He used to work in *IBM Innovation Center* and the *Development Labs*. Now he works for *Lingling English* and in charge of the AI Lead.
 
-**Yu XIANG**, a Tech geek, employed by the *Lenovo Group* and he’s also a full- stack developer. He involved a lot of experience about *web crawler*, *3D Printing* and *front-end development* . As a *wechaty* contributor, he realized the function of sending pictures.
+**[Yu XIANG](https://github.com/mukaiu)**, a Tech geek, employed by the *Lenovo Group* and he’s also a full- stack developer. He involved a lot of experience about *web crawler*, *3D Printing* and *front-end development* . As a *wechaty* contributor, he realized the function of sending pictures.
 
-**Jiarui LI**, full-stack developer and chatbot developer, also funder of  [OrangeInteraction](http://www.orangeinteraction.com/). Fascinated with Jazz, she set up a dancing community in her spare time, and the videos are played more than 10 million times. She is a wechaty contributor too, and an organizer of the wechaty community as well.
+**[Jiarui LI](https://github.com/lijiarui)**, full-stack developer and chatbot developer, also funder of  [OrangeInteraction](http://www.batorange.com/). Fascinated with Jazz, she set up a dancing community in her spare time, and the videos are played more than 10 million times. She is a wechaty contributor too, and an organizer of the wechaty community as well.
 
-**Lianxiang LIU**, funder of [DotEngine](http://dot.cc), he is a continuous entrepreneur in the domain of *RTC*.
+**[Lianxiang LIU](https://github.com/notedit)**, funder of [DotEngine](http://dot.cc), he is a continuous entrepreneur in the domain of *RTC*.
 
-**Yang BAI**, majored in French at her university but works as a marketing specialist. She is the formal community manager and marketing specialist of *Juejin*, a technical community. At present, she works at  *tag Design*, and responsible for planning and organizing activities. 
+**[Yang BAI](https://github.com/antonia0912)**, majored in French at her university but works as a marketing specialist. She is the formal community manager and marketing specialist of *Juejin*, a technical community. At present, she works at  *tag Design*, and responsible for planning and organizing activities. 
 
-**Lei ZHAO**, born in 1996, he is still a college junior student. Doing well in *Python* and *Web Crawler*, as well as the framework of digitalized campus, he is addicted to the system of investment bank's quantitative-trading. All these influence his major for studying abroad.
+**[Lei ZHAO](https://github.com/Jolly23)**, born in 1996, he is still a college junior student. Doing well in *Python* and *Web Crawler*, as well as the framework of digitalized campus, he is addicted to the system of investment bank's quantitative-trading. All these influence his major for studying abroad.
 
 It is such an honor to meet all these guys and I really appreciate for their sharing. Hope more and more meetups will be started.
 
