@@ -1,8 +1,20 @@
+---
+layout: post
+title: "Wechaty Contributor Dinner"
+author: Yang BAI
+date: '2017-04-26 13:01:53'
+---
+
+
 With the development of science and technology, the progress of the society is related to create something useful. And to a certain extent,  the software developers are capable of changing the world.  Last Friday, I was lucky for having an enjoyable conversation with several coders together.
 
 There were 7 guys came to the gathering (including me), 6 programmers, and one used to work for a technical community. We met at 7 pm and would have dinner together in a Chinese restaurant. We’d like to introduce ourselves to each other at the beginning of the meeting with a video recorded.
 
-[video]()
+Here is the video.
+
+<a href="https://www.youtube.com/embed/3eq8wJfCAWs
+" target="_blank"><img src="http://ww4.sinaimg.cn/large/006tNbRwly1ff85w0b9hwj30m80gowgq.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 **[Zhuohuan LI](https://github.com/zixia)** is an Angel Investor, Paragliding Pilot and Full Stack Developer. He founded serial enterprises with strong technical background and rich social network experience. He is also the organizer of the meetup.
 
@@ -20,9 +32,9 @@ There were 7 guys came to the gathering (including me), 6 programmers, and one u
 
 It is such an honor to meet all these guys and I really appreciate for their sharing. Hope more and more meetups will be started.
 
-[Photo]()
+![](http://ww2.sinaimg.cn/large/006tNbRwly1ff85az86jyj30sg0lcdi2.jpg)
 
-If you want a Chinese version, click [HERE](). 
+Here is the Chinese version. 
 
 4 月 21 日，周五，在北京这个妖风四起满世界柳絮的春天，跟几个朋友一起吃了顿饭。
 
@@ -46,5 +58,5 @@ If you want a Chinese version, click [HERE]().
 
 [赵磊](https://github.com/Jolly23)：96 年大三小鲜肉，擅长 Python 网络及爬虫开发，大型数字化校园系统架构开发，钟情研究投行量化交易系统，并希望以此作为出国读研学习方向。
 
-很开心能把大家聚在一起，共同探讨技术问题并增进对彼此的了解，希望日后能多一些线下交流的机会。
+很开心大家能聚在一起，共同探讨技术问题并增进对彼此的了解，希望日后能多一些线下交流的机会。
 
