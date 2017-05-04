@@ -10,11 +10,10 @@ With the development of science and technology, the progress of the society is r
 
 There were 7 guys came to the gathering (including me), 6 programmers, and one used to work for a technical community. We met at 7 pm and would have dinner together in a Chinese restaurant. We’d like to introduce ourselves to each other at the beginning of the meeting with a video recorded.
 
-Here is the video.
-
 ![](https://blog.chatie.io/download/2017/wechat-meeting.jpg)
 
 <!--more-->
+Here is the video.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3eq8wJfCAWs" frameborder="0" allowfullscreen></iframe>
 
