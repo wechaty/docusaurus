@@ -12,9 +12,11 @@ There were 7 guys came to the gathering (including me), 6 programmers, and one u
 
 Here is the video.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3eq8wJfCAWs" frameborder="0" allowfullscreen></iframe>
+![](https://blog.chatie.io/download/2017/wechat-meeting.jpg)
 
 <!--more-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3eq8wJfCAWs" frameborder="0" allowfullscreen></iframe>
 
 **[Zhuohuan LI](https://github.com/zixia)** is an Angel Investor, Paragliding Pilot and Full Stack Developer. He founded serial enterprises with strong technical background and rich social network experience. He is also the organizer of the meetup.
 
@@ -32,7 +34,6 @@ Here is the video.
 
 It is such an honor to meet all these guys and I really appreciate for their sharing. Hope more and more meetups will be started.
 
-![](https://blog.chatie.io/download/2017/wechat-meeting.jpg)
 
 Here is the Chinese version. 
 
