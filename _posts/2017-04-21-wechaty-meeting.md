@@ -5,13 +5,13 @@ author: Yang BAI
 date: '2017-04-26 13:01:53'
 ---
 
-Author: [@antonia0912](https://github.com/antonia0912), Formal community manager at _JueJin_
+Author: [@antonia0912](https://github.com/antonia0912), formal community manager at [JueJin](https://juejin.im/)(Chinese Hacker News)
+
+![Photo](https://blog.chatie.io/download/2017/wechat-meeting.jpg)
 
 With the development of science and technology, the progress of the society is related to create something useful. And to a certain extent,  the software developers are capable of changing the world.  Last Friday, I was lucky for having an enjoyable conversation with several coders together.
 
 There were 7 guys came to the gathering (including me), 6 programmers, and one used to work for a technical community. We met at 7 pm and would have dinner together in a Chinese restaurant. We’d like to introduce ourselves to each other at the beginning of the meeting with a video recorded.
-
-![Photo](https://blog.chatie.io/download/2017/wechat-meeting.jpg)
 
 <!--more-->
 
