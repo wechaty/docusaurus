@@ -5,19 +5,17 @@ author: Yang BAI
 date: '2017-04-26 13:01:53'
 ---
 
+Author: [@antonia0912](https://github.com/antonia0912), Formal community manager at _JueJin_
 
 With the development of science and technology, the progress of the society is related to create something useful. And to a certain extent,  the software developers are capable of changing the world.  Last Friday, I was lucky for having an enjoyable conversation with several coders together.
 
 There were 7 guys came to the gathering (including me), 6 programmers, and one used to work for a technical community. We met at 7 pm and would have dinner together in a Chinese restaurant. We’d like to introduce ourselves to each other at the beginning of the meeting with a video recorded.
 
-![](https://blog.chatie.io/download/2017/wechat-meeting.jpg)
+![Photo](https://blog.chatie.io/download/2017/wechat-meeting.jpg)
 
 <!--more-->
-Here is the video.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3eq8wJfCAWs" frameborder="0" allowfullscreen></iframe>
-
-**[Zhuohuan LI](https://github.com/zixia)** is an Angel Investor, Paragliding Pilot and Full Stack Developer. He founded serial enterprises with strong technical background and rich social network experience. He is also the organizer of the meetup.
+**[Huan LI](https://github.com/zixia)** An Angel Investor, Paragliding Pilot and Full Stack Developer. He founded serial enterprises with strong technical background and rich social network experience. He is also the organizer of the meetup.
 
 **[Hailiang WANG](https://github.com/Samurais)** is the leader of *Rockq Community* and a chatbot developer. He used to work in *IBM Innovation Center* and the *Development Labs*. Now he works for *Lingling English* and in charge of the AI Lead.
 
@@ -33,6 +31,23 @@ Here is the video.
 
 It is such an honor to meet all these guys and I really appreciate for their sharing. Hope more and more meetups will be started.
 
+Here is the video.
+
+<div class="video-container" style="
+    position: relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3eq8wJfCAWs" frameborder="0" allowfullscreen="" style="
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+"></iframe>
+</div>
 
 Here is the Chinese version. 
 
@@ -59,4 +74,5 @@ Here is the Chinese version.
 [赵磊](https://github.com/Jolly23)：96 年大三小鲜肉，擅长 Python 网络及爬虫开发，大型数字化校园系统架构开发，钟情研究投行量化交易系统，并希望以此作为出国读研学习方向。
 
 很开心大家能聚在一起，共同探讨技术问题并增进对彼此的了解，希望日后能多一些线下交流的机会。
+
 
