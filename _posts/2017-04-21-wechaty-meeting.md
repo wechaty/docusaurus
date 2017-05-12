@@ -7,7 +7,7 @@ date: '2017-04-26 13:01:53'
 
 Author: [@antonia0912](https://github.com/antonia0912), formal community manager at [JueJin](https://juejin.im/)(Chinese Hacker News)
 
-![Photo](https://blog.chatie.io/download/2017/wechat-meeting.jpg)
+![Photo][antonia-video-photo]
 
 With the development of science and technology, the progress of the society is related to create something useful. And to a certain extent,  the software developers are capable of changing the world.  Last Friday, I was lucky for having an enjoyable conversation with several coders together.
 
@@ -76,3 +76,5 @@ Here is the Chinese version.
 很开心大家能聚在一起，共同探讨技术问题并增进对彼此的了解，希望日后能多一些线下交流的机会。
 
 
+[dinner-photo]: /download/2017/wechat-meeting.jpg
+[antonia-video-photo]: /download/2017/antonia0912-issue-4-seminar.jpg
