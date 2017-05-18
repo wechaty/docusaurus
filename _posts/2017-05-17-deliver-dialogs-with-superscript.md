@@ -134,7 +134,7 @@ scripts/start-docker-compose.sh
 
 ## Getting Started Repository
 
-<github.com/samurais/ss-wechaty>
+<https://github.com/samurais/ss-wechaty>
 
 # 后记
 现在是8:03分了，bye. 下期再见！
