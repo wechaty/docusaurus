@@ -132,10 +132,9 @@ scripts/start-docker-spa.sh
 scripts/start-docker-compose.sh
 ```
 
-## Getting Started Repository
-
-<https://github.com/samurais/ss-wechaty>
 
 # 后记
 现在是8:03分了，bye. 下期再见！
+
+[Click here to get the repo](https://github.com/samurais/ss-wechaty)
 
