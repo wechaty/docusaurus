@@ -1,7 +1,13 @@
 ---
-published: false
+layout: post
+title: "How to use interval in Wechaty to overcome some web-wechat API limitations"
+author: kungfu-software
+date: '2017-05-25 19:31:53'
 ---
-## How to use interval in Wechaty to overcome some web-wechat API limitations
+
+<img src="https://avatars2.githubusercontent.com/u/700550?v=3&s=88">
+
+Author: Seabook, [@kungfu-software](https://github.com/kungfu-software), Founder of [Kungfu Software](http://kungfusoftware.net)
 
 Hello, first of all, thanks for inviting me to write a knowledge sharing post in Wechaty. I am just starting to learn Wechaty and immediately fall in love with it. It's really easy to get started to make your own wechatbot. :-)
 
@@ -10,7 +16,6 @@ I am currently exploring all the examples from the Wechaty and try to customize 
 So I had a particular evil thought in my mind one day. I wanted to add a Wechaty bot to any chatrooms and sent bot a command, then somehow the bot can start to send Friend Requests to all the people in the room.
 
 Below is the code snippet
-
 
 ```javascript
 function sendFriendRequest(room, msg) {
