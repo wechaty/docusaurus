@@ -54,7 +54,7 @@ The code is simple, when the bot saying `希望和大家做朋友`, the bots wil
 
 However, it failed quickly with some exceptions in the log sometimes, or the Send Friend Request is always `False`. At this stage, the `Send Friend Request` is pretty much useless. So I created `ISSUE` in github and asked around. 
 
-The original `ISSUE` link[https://github.com/Chatie/wechaty/issues/540]
+The original `ISSUE` (link)[https://github.com/Chatie/wechaty/issues/540]
 
 Thanks for the help from @zixia and @lijiarui, which let me understand the Limitations of web-wechat and I did some research online saying web-wechat only allows to send 100 user request per day. And the api call throttle need to be steady. Obvisouly the original For-Loop is just too fast. I am wondering is there any kinda `Sleep` function in javascript? 
 
