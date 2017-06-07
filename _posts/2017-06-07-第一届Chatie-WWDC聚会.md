@@ -1,9 +1,8 @@
 ---
 published: false
 ---
-## A New Post
+## 第一届Chatie-WWDC聚会大事记
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
 
 2017年6月6日，18时，在五道口的苏轼酒楼，召开了第一届Chatie-WWDC聚会。
 
