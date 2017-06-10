@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "A Simple WeChaty Bot with Intelligence Powered by TensorFlow"
-date: 2017-06-05 23:50 +0800
-author: WildCat
+title: "第一届Chatie-WWDC聚会大事记"
+date: 2017-06-06 23:50 +0800
+author: greatgeekgrace
 comments: true
 ---
 ## 第一届Chatie-WWDC聚会大事记
