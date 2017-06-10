@@ -1,5 +1,9 @@
 ---
-published: false
+layout: post
+title: "A Simple WeChaty Bot with Intelligence Powered by TensorFlow"
+date: 2017-06-05 23:50 +0800
+author: WildCat
+comments: true
 ---
 ## 第一届Chatie-WWDC聚会大事记
 
@@ -19,4 +23,8 @@ published: false
 最后，我们还参观了位于中关村智造大街的PNP孵化器，佳芮还拿出了珍藏多年的日本酒“白洲”，喝的一手好杜康。我也有幸和书本的推荐人李老师合影。
 
 
-谁说大会只能一年办一次？我们期待下一次再聚会~~
+谁说大会只能一年办一次？我们期待下一次再聚会~~谢谢李老师的慷慨，下次一定我们请您~~
+
+大家也可以关注一下李嘉璇的这本畅销书《TensorFlow技术解析与实战》，对于建立深度学习知识体系很有帮助：http://item.jd.com/12073631.html
+
+
