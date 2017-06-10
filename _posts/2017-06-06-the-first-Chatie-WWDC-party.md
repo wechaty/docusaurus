@@ -5,15 +5,15 @@ date: 2017-06-06 18:00 +0800
 author: greatgeekgrace
 ---
 
-Author: [@greatgeekgrace](https://github.com/greatgeekgrace) Li Jiaxuan
+Author: [@greatgeekgrace](https://github.com/greatgeekgrace) Li Jiaxuan, Ex-Baidu-er, Tensorflow Expert who have just published a [ML Book](http://item.jd.com/12073631.html) recently.
 
 On June 6, 2017, at 6 PM, we held the First Chatie Worldwide Developers Conference(WWDC) Party in the Su Shi Restaurant of Wudaokou, Beijing. 
 
 ![Chatie WWDC Photo][dinner-photo]
 
-<!--more-->
-
 The Conference consists of a small group of seven people, and the theme is about ChatBot and Artificial Intelligence in all aspects. The Participants include PNP Investors Li Zhuohuan, Orange Interactive Founder Li Jiarui, and Zhou Zainan who graduated from Tsinghua University, currently works in Google Adwords, a amateur who combined chatbot and Wechat group; And Chou Daohan who majored in business and undergraduated in Europe, and will be admitted to the University of Birmingham in computer science department; and Zhou Shuai who works in the Chinese Academy of Sciences Institute in Automation, in CBSR Laboratory, and researches in face recognition and face attribute analysis; And Zhao Wenjun who is a graduate student in Beijing University of Posts and Telecommunications, studying assiduously in Machine Learning; and the author of Book "Technical Analysis And Practice in TensorFlow", TensorFlow community's Founder Li Jiaxuan. We open an interesting ChatBot Summit together.
+
+<!--more-->
 
 ### This is the greetings vedio from the above person:
 
@@ -31,6 +31,7 @@ The Conference consists of a small group of seven people, and the theme is about
     width:100%;
     height:100%;
 "></iframe></div>
+
 
 In the Conference, everyone got the newly released Wechaty Logo which Li Jiarui gave us as a gift. At the same time, Zhou Zaonan and Li Jiarui discussed with the Typescript language to optimize Chatie/angular project continuously. Li Zhuohuan([@zixia](https://github.com/zixia)) also give some useful suggestions for TensorFlow Community to help more beginners interested in Machine Learning. Jiarui and I also discussed an inovated program, hoping to make a more intelligent "brain" of the Wechaty robot, with deep learning methods, integrates the useful information together in Wechat Group. 
 
