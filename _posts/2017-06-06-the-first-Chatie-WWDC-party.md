@@ -21,7 +21,7 @@ Finally, we also visited the PNP Incubator located on Zhizao Avenue, Zhongguancu
 
 Who says the Conference can only be held once a year? We look forward the next Summit. Thanks a million for Li Zhuohuan's generosity, and the next time, it is our treat for you.
 
-You can also pay a attention for Li Jiaxuan's this book "Technical Analysis And Practice in TensorFlow", for the establishment of deep learning knowledge system for beginners: http://item.jd.com/12073631.html
+You can also pay a attention for Li Jiaxuan's this book "Technical Analysis And Practice in TensorFlow", for the establishment of deep learning knowledge system for beginners: [Book Purchase Link](http://item.jd.com/12073631.html)
 
 
 
@@ -39,4 +39,4 @@ You can also pay a attention for Li Jiaxuan's this book "Technical Analysis And 
 
 谁说大会只能一年办一次？我们期待下一次再聚会~~谢谢李老师的慷慨，下次一定由我们请您
 
-大家也可以关注一下李嘉璇的这本畅销书《TensorFlow技术解析与实战》，对于建立深度学习知识体系很有帮助：http://item.jd.com/12073631.html
+大家也可以关注一下李嘉璇的这本畅销书《TensorFlow技术解析与实战》，对于建立深度学习知识体系很有帮助：[TensorFlow技术解析与实战](http://item.jd.com/12073631.html)
