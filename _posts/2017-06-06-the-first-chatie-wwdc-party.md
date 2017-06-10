@@ -5,7 +5,7 @@ date: 2017-06-06 18:00 +0800
 author: greatgeekgrace
 ---
 
-Author: [@greatgeekgrace](https://github.com/greatgeekgrace) Li Jiaxuan, Ex-Baidu-er, Tensorflow Expert who has just published a [ML Book](http://item.jd.com/12073631.html) last month.
+> Author: [@greatgeekgrace](https://github.com/greatgeekgrace) Li Jiaxuan, Ex-Baidu-er, Tensorflow Expert who has just published a [ML Book](http://item.jd.com/12073631.html) last month.
 
 On June 6, 2017, at 6 PM, we held the First Chatie Worldwide Developers Conference(WWDC) Party in the Su Shi Restaurant of Wudaokou, Beijing. 
 
