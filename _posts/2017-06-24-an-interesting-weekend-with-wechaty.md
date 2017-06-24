@@ -6,7 +6,10 @@ author: Helen
 ---
 
 > <img src="https://avatars2.githubusercontent.com/u/14006826?v=3&s=88">
+> 
 > Author: [@Helen](https://github.com/TingYinHelen), Lenovo
+>
+> Helen is a full stack engineer living in Chengdu, familiar with D3. When not coding, she loves dancing, sings and play Erhu.
 
 Thanks for inviting me to write this article that give me a chance to share my story for each other. And Wechaty is a very awesome library that is powerful and easy to use. The most important point is that is interesting for Wechat  users and developers.
 Last week, I want to help my friend to make a chat bot. Because she is a manager of a technic community and she is also a owner of a chat group. In her daily life, many people add her to be the bunny on wechat. Then she needs add these persons into wechat group. It is a manual work, right? So I want to help her to lessen workload. So I ready to use wechaty.
@@ -16,7 +19,7 @@ Last week, I want to help my friend to make a chat bot. Because she is a manager
 Firstly, I implemented some basic features. Like below
 
 
-##### The chat bot can receive the friend request automatically
+#### The chat bot can receive the friend request automatically
 ```javascript
 const bot = Wechaty.instance({profile: 'secretary'});
 bot.on('friend', async function(contact, request){
@@ -26,7 +29,7 @@ bot.on('friend', async function(contact, request){
   }
 })
 ```
-##### Input keyword then add him/her into the chat group
+#### Input keyword then add him/her into the chat group
 ```javascript
   bot.on('message', async function(m){
     const fromContact = m.from()
