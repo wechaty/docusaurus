@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "An interesting weekend with Wechaty"
+title: An interesting weekend with Wechaty
 author: Helen
 date: '2017-06-24 19:31:53'
+published: true
 ---
 
-Author: [@Helen](https://github.com/TingYinHelen), Lenovo
+> Author: [@Helen](https://github.com/TingYinHelen), Lenovo
 
 Thanks for inviting me to write this article that give me a chance to share my story for each other. And Wechaty is a very awesome library that is powerful and easy to use. The most important point is that is interesting for Wechat  users and developers.
 Last week, I want to help my friend to make a chat bot. Because she is a manager of a technic community and she is also a owner of a chat group. In her daily life, many people add her to be the bunny on wechat. Then she needs add these persons into wechat group. It is a manual work, right? So I want to help her to lessen workload. So I ready to use wechaty. Firstly, I implemented some basic features. Like below
