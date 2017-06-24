@@ -29,7 +29,7 @@ function sendFriendRequest(room, msg) {
 
     let content = msg.content();
     if (msg && /希望和大家做朋友/.test(content)) {
-        
+
         let contacts = room? room.memberList({}) : [];
 
         for (let i = 10; i < contacts.length; i ++) {
@@ -50,13 +50,13 @@ function sendFriendRequest(room, msg) {
 
 ```
 
-The code is simple, when the bot saying `希望和大家做朋友`, the bots will get all the contacts from the room and start to send FriendRequest. 
+The code is simple, when the bot saying `希望和大家做朋友`, the bots will get all the contacts from the room and start to send FriendRequest.
 
-However, it failed quickly with some exceptions in the log sometimes, or the Send Friend Request is always `False`. At this stage, the `Send Friend Request` is pretty much useless. So I created `ISSUE` in github and asked around. 
+However, it failed quickly with some exceptions in the log sometimes, or the Send Friend Request is always `False`. At this stage, the `Send Friend Request` is pretty much useless. So I created `ISSUE` in github and asked around.
 
 The original `ISSUE` link: <https://github.com/Chatie/wechaty/issues/540>
 
-Thanks for the help from @zixia and @lijiarui, which let me understand the Limitations of web-wechat and I did some research online saying web-wechat only allows to send 100 user request per day. And the api call throttle need to be steady. Obvisouly the original For-Loop is just too fast. I am wondering is there any kinda `Sleep` function in javascript? 
+Thanks for the help from @zixia and @lijiarui, which let me understand the Limitations of web-wechat and I did some research online saying web-wechat only allows to send 100 user request per day. And the api call throttle need to be steady. Obvisouly the original For-Loop is just too fast. I am wondering is there any kinda `Sleep` function in javascript?
 
 Thanks for the help from @zixia. Turns out there is a built in `Sleep` function already. Here is how to use `Wechaty Sleep`.
 
@@ -64,7 +64,7 @@ Thanks for the help from @zixia. Turns out there is a built in `Sleep` function 
 
 async function asyncAwait() {
 
-    for (let i = 0; i < 10; i++) { 
+    for (let i = 0; i < 10; i++) {
         console.log("Knock", i);
         await Wechaty.sleep(5000);
     }
@@ -84,7 +84,7 @@ exports = module.exports = async function onMessage (msg) {
     const room      = msg.room();
     const sender    = msg.from();
     const content   = msg.content();
-    
+
     if (msg.self()) {
         sendFriendRequest(room, msg);
         return;
@@ -103,7 +103,7 @@ async function sendFriendRequest(room, msg) {
 
     let content = msg.content();
     if (msg && /希望和大家做朋友/.test(content)) {
-        
+
         let contacts = room? room.memberList({}) : [];
 
         if(!contacts || contacts.length == 0) {
