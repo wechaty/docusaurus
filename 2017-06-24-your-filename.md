@@ -7,131 +7,111 @@ date: '2017-06-24 19:31:53'
 
 Author: [@Helen](https://github.com/TingYinHelen), Lenovo
 
-Hello, first of all, thanks for inviting me to write a knowledge sharing post in Wechaty. I am just starting to learn Wechaty and immediately fall in love with it. It's really easy to get started to make your own wechatbot. :-)
-
-I am currently exploring all the examples from the Wechaty and try to customize it to make my own requirements happening. Everyday I try to think of a user case that I can use wechaty to make it happen.
-
-So I had a particular evil thought in my mind one day. I wanted to add a Wechaty bot to any chatrooms and sent bot a command, then somehow the bot can start to send Friend Requests to all the people in the room.
-
-<!--more-->
-
-Below is the code snippet
-
-```javascript
-function sendFriendRequest(room, msg) {
-
-    if (!room) {
-        console.log('Bot', 'there is no room yet');
-        return;
-    }
-
-    let content = msg.content();
-    if (msg && /希望和大家做朋友/.test(content)) {
-
-        let contacts = room? room.memberList({}) : [];
-
-        for (let i = 10; i < contacts.length; i ++) {
-            let contact = contacts[i];            
-            let request = new FriendRequest();                        
-            request.send(contact, "Hi 很高兴认识您")
-                .then( result => {
-                    console.log("Friend Request Send ", contact.name(), result);
-                })
-                .catch(e => {
-                    console.log('Bot', 'Friend Request Error: %s', e.stack);
-                })            
-
-        }
-    }
-
-}
-
+Thanks for inviting me to write this article that give me a chance to share my story for each other. And Wechaty is a very awesome library that is powerful and easy to use. The most important point is that is interesting for Wechat  users and developers.
+Last week, I want to help my friend to make a chat bot. Because she is a manager of a technic community and she is also a owner of a chat group. In her daily life, many people add her to be the bunny on wechat. Then she needs add these persons into wechat group. It is a manual work, right? So I want to help her to lessen workload. So I ready to use wechaty. Firstly, I implemented some basic features. Like below
+#####The chat bot can receive the friend request automatically
 ```
-
-The code is simple, when the bot saying `希望和大家做朋友`, the bots will get all the contacts from the room and start to send FriendRequest.
-
-However, it failed quickly with some exceptions in the log sometimes, or the Send Friend Request is always `False`. At this stage, the `Send Friend Request` is pretty much useless. So I created `ISSUE` in github and asked around.
-
-The original `ISSUE` link: <https://github.com/Chatie/wechaty/issues/540>
-
-Thanks for the help from @zixia and @lijiarui, which let me understand the Limitations of web-wechat and I did some research online saying web-wechat only allows to send 100 user request per day. And the api call throttle need to be steady. Obvisouly the original For-Loop is just too fast. I am wondering is there any kinda `Sleep` function in javascript?
-
-Thanks for the help from @zixia. Turns out there is a built in `Sleep` function already. Here is how to use `Wechaty Sleep`.
-
-```javascript
-
-async function asyncAwait() {
-
-    for (let i = 0; i < 10; i++) {
-        console.log("Knock", i);
-        await Wechaty.sleep(5000);
-    }
-}
-
-asyncAwait();
-
+const bot = Wechaty.instance({profile: 'secretary'});
+bot.on('friend', async function(contact, request){
+  if(request){
+    await request.accept()
+    await contact.say('您好，我是 FCC（freeCodeCamp成都社区）的姜姜姜，很高兴认识你*^_^*回复暗号”FCC成都社区”， 加入FCC成都社区群。直接聊天，请  随意…')
+  }
+})
 ```
-
-And I used same technics to finally make my `Send Friend Request` stable. Below is the full code. Bear in mind, I set the sleep time threshold to 2mins, which successfully send out 100 `Friend Requests` before web-wechat shut me down.  
-
-```javascript
-const { Message, Room, FriendRequest, Wechaty } = require('wechaty');
-
-exports = module.exports = async function onMessage (msg) {
-
-    const room      = msg.room();
-    const sender    = msg.from();
-    const content   = msg.content();
-
-    if (msg.self()) {
-        sendFriendRequest(room, msg);
-        return;
-    }
-
-
-}
-
-
-async function sendFriendRequest(room, msg) {
-
-    if (!room) {
-		console.log('Bot', 'there is no room yet');
-        return;
-    }
-
-    let content = msg.content();
-    if (msg && /希望和大家做朋友/.test(content)) {
-
-        let contacts = room? room.memberList({}) : [];
-
-        if(!contacts || contacts.length == 0) {
-            return;
-        }
-
-        console.log('Contacts Size:', contacts.length);
-
-        for (let i = 10; i < contacts.length; i ++) {
-            let contact = contacts[i];            
-            let request = new FriendRequest();                        
-            request.send(contact, "Hi 很高兴认识您")
-                .then( result => {
-                    console.log("Friend Request Send ", contact.name(), result);
-                })
-                .catch(e => {
-                     console.log('Bot', 'Friend Request Error: %s', e.stack);
-                })            
-            await Wechaty.sleep(1000*60*2); // 2 mins is a good threshold
-        }
-    }
-
-}
-
+#####Input keyword then add him/her into the chat group
 ```
+  bot.on('message', async function(m){
+    const fromContact = m.from()
+    const fromContent = m.content()
+    const room = m.room()
+    if(/FCC成都社区/.test(fromContent)){
+      let keyroom = await Room.find({topic: 'FreeCodeCamp-成都'});
+      if(keyroom){
+        await keyroom.add(fromContact);
+        await keyroom.say(`欢迎 @${fromContact.name()} 加入FCC(freecodecamp)成都社区*^_^*`)
+      }
+    }
+  })
+```
+The above feature has already help her lessen some work. But my friend think it is not enough to satisfy her requirement. She is a very beautiful girl, so there is someone always asked her if she has boyfriend. That makes her boyfriend a little annoyed. So she want me to implement a feature that is if someone in this chat group ask her something about her bf the chat bot can send a photo of her bf. 
+Wow I’m honoured to develop this feature. So I started to read the doc of wechaty. But I can’t get how to send a media message. I continued reading all of the issues that let me know wechaty can send a media message but I don’t know the details. Then I try to use another methods. I try to use node.js to resolve. I want to change the images to be the buffer of base64. But it didn’t work, users just receive some strange string…..Finally I ask @zixia directly. He sent me an article  (https://blog.chatie.io/2017/04/13/support-message-type-of-image-and-video.html). This article analysis the principle about how the wechat sends images. It says wechat use “MediaId” to store the information of media and blablablabla……Finally the Wechaty contributors got the “MediaId”. WoW so cool! They integrate this function in Wechaty which use `say(MediaMessage(filename))`.  If someone interested in this principle can read this article.
+In the end of the article says `ding-dong-bot.ts` has already implement it. So I found this file that use like below:
+```
+import { MediaMessage } wechaty
+await m.say(new MediaMessage(__dirname + '/../image/BotQrcode.png'))
+```
+I tried immediately, it does work. haha~perfect~
+Then I  use `api.ai`. If someone say: ‘Does  @姜姜姜 have boy friend?’ or say some synonym the chat bot will send a photo of her bf automatically. Well that was I did in last weekend. I think wechaty is an interesting library.
+
+At the end, I help the author of Wechaty add this api to the Wechaty documentation.
+
+![屏幕快照 2017-06-23 上午9.44.27.png](http://upload-images.jianshu.io/upload_images/4238751-f96cebb5cfbb0b57.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-I think it's a common pattern when we are using Wechaty to do sth in the For-Loop block. It's better to make it wait a bit.
+![852290473.jpg](http://upload-images.jianshu.io/upload_images/4238751-f4f2662ff9efdae2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-Hopefully this article helps.
+Well, the complete codes like below:
+```
+import 'babel-polyfill'
+import { Wechaty, Room, MediaMessage, log } from 'wechaty'
+import apiai from 'apiai'
 
-Thanks
-Seabook
+const app = apiai('46a33e7a9cb741fb96e0dcc3d2d03a6c');
+const bot = Wechaty.instance({profile: 'secretary'});
+
+bot.on('scan', (url, code)=>{
+  log.info(url);
+})
+.on('login', user => {
+  log.info(`${user} is login`)
+})
+.on('friend', async function(contact, request){
+  if(request){
+    await request.accept();
+    await contact.say('您好，我是 FCC（freeCodeCamp成都社区）的姜姜姜，很高兴认识你*^_^*回复暗号”FCC成都社区”， 加入FCC成都社区群。直接聊天，请随意…')
+  }
+})
+.on('message', async function(m){
+  if(m.self()){
+    return;
+  }
+  const fromContact = m.from();
+  const fromContent = m.content();
+  const room = m.room();
+  const noAtMention = fromContent.replace(/@\w+/ig, '');
+  let roomTopic;
+
+  const request = app.textRequest(noAtMention, {
+    sessionId: '1234567890'
+  });
+
+  request.on('error', function(error) {
+    log.error(error);
+  });
+
+  request.on('response', async function(response) {
+    const speech = response.result.fulfillment.speech;
+    if(/FCC成都社区/.test(fromContent)){
+      let keyroom = await Room.find({topic: 'FreeCodeCamp-成都'});
+      if(keyroom){
+        await keyroom.add(fromContact);
+        await keyroom.say(`欢迎 @${fromContact.name()} 加入FCC(freecodecamp)成都社区*^_^*`)
+      }
+    }
+    m.type() == 10000 && m.say('@Helen') // Umm.. shame on me.... If someone give out a Red packet the chat bot will @ myself
+    if(room && room.rawObj.NickName == 'FreeCodeCamp-成都'){
+      if(/jiangjiangjiang/.test(speech)){
+        await m.say(new MediaMessage('images/test.jpg'))
+      }else{
+        m.say(speech)
+      }
+    }else if(!room){
+      m.say(speech)
+    }
+  })
+  request.end();
+})
+.init()
+```
+Finally, I want to thank our teammate [@拖拉机](https://github.com/dianwuone)[@姜姜姜](https://github.com/jiangyuzhen)[@glowd](https://github.com/Glowdable) [@myself](https://github.com/TingYinHelen)
