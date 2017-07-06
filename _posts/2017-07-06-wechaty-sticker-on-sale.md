@@ -13,9 +13,9 @@ author: Huan
 
 <!--more-->
 
-![Wechaty Sticker][wechaty-sticker]
+[![Wechaty Sticker][wechaty-sticker]](https://item.jd.com/12994583384.html)
 
-![Wechaty Sticker on Mac][wechaty-sticker-mac]
+[![Wechaty Sticker on Mac][wechaty-sticker-mac]](https://item.jd.com/12994583384.html)
 
 
 [wechaty-sticker]: /download/2017/wechaty-sticker.jpg
