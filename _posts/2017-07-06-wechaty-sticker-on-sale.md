@@ -6,8 +6,10 @@ author: Huan
 ---
 [![Wechaty Sticker][wechaty-sticker-poster]](https://item.jd.com/12994583384.html)
 
-* Order from JD: <https://item.jd.com/12994583384.html>
-* Order from TMall: <https://detail.tmall.com/item.htm?id=552823238544>
+### I ❤ Wechaty
+
+* **Order from JD**: <https://item.jd.com/12994583384.html>
+* **Order from TMall**: <https://detail.tmall.com/item.htm?id=552823238544>
 
 <!--more-->
 
