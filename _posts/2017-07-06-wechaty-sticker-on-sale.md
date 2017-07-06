@@ -4,10 +4,7 @@ title: "Wechaty Sticker is ON SALE!"
 date: '2017-07-06 19:31:53'
 author: Huan
 ---
-
-![Wechaty Sticker][wechaty-sticker-poster]
-
-Wechaty Sticker is ON SALE!
+[![Wechaty Sticker][wechaty-sticker-poster]](https://item.jd.com/12994583384.html)
 
 * Order from JD: <https://item.jd.com/12994583384.html>
 * Order from TMall: <https://detail.tmall.com/item.htm?id=552823238544>
