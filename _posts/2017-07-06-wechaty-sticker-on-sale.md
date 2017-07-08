@@ -11,9 +11,9 @@ We had just made very high quality Wechaty Logo Stickers recently!
 
 If you are using Wechaty and you love Wechaty, from now you can buy our logo sticker online.
 
-### I <font color="red" size="+1">❤</font> Wechaty:
+### I <font color="red" size="+1">❤</font> Wechaty[^1]:
 
-* Order from Etsy(Worldwide[^1]): <https://www.etsy.com/listing/541157219>
+* Order from Etsy(Worldwide[^2]): <https://www.etsy.com/listing/541157219>
 * Order from JD: <https://item.jd.com/12994583384.html>
 * Order from TMall: <https://detail.tmall.com/item.htm?id=552823238544>
 
@@ -31,9 +31,8 @@ If you are using Wechaty and you love Wechaty, from now you can buy our logo sti
 
 [![Wechaty Sticker on windows][wechaty-sticker-windows]](https://www.etsy.com/listing/541157219/wechaty-stickers-freedom-decal-3m-robot)
 
-_Disclaimer: The seller is not Chatie/Wechaty but a 3rd party partner._
-
-[^1]: International shipping with PayPal/CreditCard support.
+[^1]: Disclaimer: The seller is not Chatie/Wechaty but a 3rd party partner.
+[^2]: Worldwide: International shipping with PayPal/CreditCard support.
 
 [wechaty-sticker]: /download/2017/wechaty-sticker.jpg
 [wechaty-sticker-mac]: /download/2017/wechaty-sticker-mac.jpg
