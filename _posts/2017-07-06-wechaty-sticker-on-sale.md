@@ -7,7 +7,9 @@ author: Huan
 
 [![Wechaty Sticker][wechaty-sticker-size]](https://item.jd.com/12994583384.html)
 
-Persons who is using Wecharty Project : http://github.com/chatie/wechaty, could buy our logo sticker here. Thank you for using WeChaty.
+We had just made very high quality Wechaty Logo Stickers recently!
+
+If you are using Wechaty and you love Wechaty, from now you can buy our logo sticker online.
 
 ### I <font color="red" size="+1">❤</font> Wechaty:
 
