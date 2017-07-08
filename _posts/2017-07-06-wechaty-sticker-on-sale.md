@@ -32,7 +32,7 @@ If you are using Wechaty and you love Wechaty, from now you can buy our logo sti
 [![Wechaty Sticker on windows][wechaty-sticker-windows]](https://www.etsy.com/listing/541157219/wechaty-stickers-freedom-decal-3m-robot)
 
 [^1]: Disclaimer: The seller is not Chatie/Wechaty but a 3rd party partner.
-[^2]: Worldwide: International shipping with PayPal/CreditCard support.
+[^2]: Worldwide: International shipping with PayPal/Credit Card support.
 
 [wechaty-sticker]: /download/2017/wechaty-sticker.jpg
 [wechaty-sticker-mac]: /download/2017/wechaty-sticker-mac.jpg
