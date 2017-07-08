@@ -13,7 +13,7 @@ If you are using Wechaty and you love Wechaty, from now you can buy our logo sti
 
 ### I <font color="red" size="+1">❤</font> Wechaty[^1]:
 
-* Order from Etsy(Worldwide[^2]): <https://www.etsy.com/listing/541157219>
+* Order from Etsy: <https://www.etsy.com/listing/541157219> (Worldwide[^2])
 * Order from JD: <https://item.jd.com/12994583384.html>
 * Order from TMall: <https://detail.tmall.com/item.htm?id=552823238544>
 
