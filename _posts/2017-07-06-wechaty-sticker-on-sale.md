@@ -15,6 +15,7 @@ Persons who is using Wecharty Project : http://github.com/chatie/wechaty, could 
 * Order from JD: <https://item.jd.com/12994583384.html>
 * Order from TMall: <https://detail.tmall.com/item.htm?id=552823238544>
 
+<br />
 
 <!--more-->
 
