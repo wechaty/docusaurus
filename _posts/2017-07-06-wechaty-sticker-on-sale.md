@@ -11,9 +11,10 @@ Persons who is using Wecharty Project : http://github.com/chatie/wechaty, could 
 
 ### I <font color="red" size="+1">❤</font> Wechaty:
 
+* Order from Etsy(Worldwide[^1]): <https://www.etsy.com/listing/541157219>
 * Order from JD: <https://item.jd.com/12994583384.html>
 * Order from TMall: <https://detail.tmall.com/item.htm?id=552823238544>
-* Order from Etsy[^1](Worldwide): <https://www.etsy.com/listing/541157219>
+
 
 <!--more-->
 
