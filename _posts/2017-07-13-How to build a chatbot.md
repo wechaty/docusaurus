@@ -1,11 +1,21 @@
 ---
-published: false
+layout: post
+title: '如何编写聊天机器人'
+author: IT大咖说
+date: '2017-7-14 23:04:27 +0800'
+categories: developer
+excerpt_separator: <!--more-->
+published: true
 ---
+
 ## 摘要
 Chatbot，聊天机器人，用于和人类用户聊天的电脑程序。它是场交互革命，也是一个多技术融合的平台。桔子互动创始人根据自己的经验告诉大家，该如何来编写微信聊天机器人。
 
 ## What are chatbots and why the hype
 ![]({{site.baseurl}}/download/2017/How to build a chatbot-1.jpg)
+
+<!--more-->
+
 早在80年代，大家普遍使用PC上网，所有网上交互都是通过PC客户端去实现的。随着网速变得越来越快，浏览器开始普及。
 
 智能手机出现以后，人们使用电脑的时间越来越少，手机里安装的APP则越来越多。
