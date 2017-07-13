@@ -2,14 +2,14 @@
 layout: post
 title: '如何编写聊天机器人'
 author: IT大咖说
-date: '2017-7-14 23:04:27 +0800'
+date: '2017-7-13 23:04:27 +0800'
 categories: developer
 excerpt_separator: <!--more-->
 published: true
 ---
 
-## 摘要
-Chatbot，聊天机器人，用于和人类用户聊天的电脑程序。它是场交互革命，也是一个多技术融合的平台。桔子互动创始人根据自己的经验告诉大家，该如何来编写微信聊天机器人。
+> 摘要:
+> Chatbot，聊天机器人，用于和人类用户聊天的电脑程序。它是场交互革命，也是一个多技术融合的平台。桔子互动创始人根据自己的经验告诉大家，> 该如何来编写微信聊天机器人。
 
 ## What are chatbots and why the hype
 ![]({{site.baseurl}}/download/2017/How to build a chatbot-1.jpg)
@@ -27,7 +27,9 @@ Chatbot，聊天机器人，用于和人类用户聊天的电脑程序。它是�
 因为数据、计算能力和网速都在迅速发展，在message这种消息的APP上会出现很多有意思的应用和服务，就像PC到Web，APP到chatbot这个过程的转换一样。
 
 我认为chatbot是未来，接下来的所有服务可能都是通过chatbot去实现的。
+
 ![]({{site.baseurl}}/download/2017/How to build a chatbot-2.jpg)
+
 Chatbot Magazine创始人Matt Schlicht对chatbot的定义是：“A chatbot is a service,powered by rules and sometimes artificial intelligence,that you interact with via a chat interface.”
 
 聊天机器人是一种由规则和一部分人工智能驱动的服务，通过聊天接口进行交互。
@@ -37,7 +39,9 @@ Chatbot Magazine创始人Matt Schlicht对chatbot的定义是：“A chatbot is a
 当今用户不喜欢使用APP，因为不仅用户下载的成本高，APP的开发和升级成本也非常高，而且只有极少数的APP还处于活跃状态。
 
 而bots搭建在message平台上，无需安装，甚至在网速不佳的情况下也能进入它的服务。Chatbot处于“no UI”状态。如果只是关注逻辑层面去解决一些场景上的问题，开发的成本不会很高。
+
 ## Overview of the bot ecosystem
+
 ![]({{site.baseurl}}/download/2017/How to build a chatbot-3.jpg)
 Facebook Message已经向开发者开放了，Apple ios Message APPS也在开放，Slack、Kik、Telegram和Skype都支持相关的接口。
 
@@ -50,7 +54,9 @@ Facebook Message上面有超过10万个bots，大概有10万个开发者在Faceb
 有超过200万的用户每天在和chatbot进行交互。
 
 在其它平台如Skype、Telegram上也有上千的bot。
+
 ![]({{site.baseurl}}/download/2017/How to build a chatbot-4.jpg)
+
 消费者能够真正接触到的chatbots大概分为三类：
 
 第一类是个人助理，帮助用户实现各种服务。
@@ -60,7 +66,9 @@ Facebook Message上面有超过10万个bots，大概有10万个开发者在Faceb
 第三类是提高生产力的工具，可以做一些信息的收集、分发消息等工作。
 
 Chatbot是一个很大的产业，它不是只有AI和deep learning，不一定要high tech去做，也不只有算法。而是要真正去解决一些实际问题。未来它就会像APP一样在我们身边，为我们提供非常一些简洁的服务。
+
 ![]({{site.baseurl}}/download/2017/How to build a chatbot-5.jpg)
+
 Requirement和正常软件开发相似，然后写一些需求的文档和需求说明。
 
 做软件开发或APP的时候会做一些线框图或流程图。Chatbot是一个“no UI”的体验，所以要写script，了解如何收集用户的信息、怎样理解用户，并把这些用户的话术整理出来。它就是一个和用户交流的线框图的概念。
@@ -76,8 +84,11 @@ Chatbot里做的测试和一般的APP测试不一样。在APP里可以简单暴�
 最后还要做chatbot的分析，需要知道每一个会话时长是怎样的、用户对什么最感兴趣。拿到这些数据后再去调研用户的需求，形成一个循环。
 ![]({{site.baseurl}}/download/2017/How to build a chatbot-6.jpg)
 Chatbot主要是从场景入手，更关注的是解决一些问题和创新的点，而不是底层的开发。我认为接下来各种开发者也会从APP开发者转换成chatbot开发者，只是时间问题。
+
 ## How to build a chatbot
+
 ![]({{site.baseurl}}/download/2017/How to build a chatbot-7.jpg)
+
 Wechaty是一个可以让微信变成机器人的接口，利用这个框架可以把个人微信号变成机器人，能自动回复和提供一些服务。
 
 Wechaty的实现原理主要是监听网页上的信息，把信息封装然后给开发者调用，开发者发送信息的时候让浏览器去实现这些功能。
@@ -85,8 +96,11 @@ Wechaty的实现原理主要是监听网页上的信息，把信息封装然后�
 Side project通过代码追踪的方式应对微信网页变化。
 
 Wechaty的七个基本事件分别是error、scan、login、logout、message、friend和join。
+
 ![]({{site.baseurl}}/download/2017/How to build a chatbot-8.jpg)
+
 ## Related Scene
+
 我们已经实现了微信群的CRM管理、通过各种方式邀请好友进群以及做一些多群的直播。
 
 还有一些有意思的东西想和大家分享。
