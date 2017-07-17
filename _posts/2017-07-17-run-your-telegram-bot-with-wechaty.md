@@ -64,9 +64,12 @@ this.wechaty = wechaty.Wechaty.instance(this.options.wechaty);
 
 The adaptation between node-telegram-bot-api and Wechaty falls into these parts:
 
-1. Events: When receiving an event from Wechaty, it needs to be translated as an update object as in Telegram. The update handling system is the same as the original one which supports event emission and regular expression matching. Why we do not skip the update objects and emit an event directly? The reason is that the update handling system itself is defined in Telegram Bot API and bots may pass mock updates to it (actually, it is a useful skill when developing a Telegram bot).
-2. Methods: Some methods are not supported in WeChat like message pinning and callback queries. The adaptor would support alternative behaviors. For example, pinning a message could be translated as sending a message with an "@all". Since these hacks are not standard and might be tricky, they are configurable in options. *This part is still in development. There are really a lot of work to do.*
-3. Objects: There are some differences in the structure and content of objects. For example, in Telegram, groups and private chat is differentiated by a chat object while it is a `Message.room()` call in Wechaty. So it needs some code like:
+**Events:** When receiving an event from Wechaty, it needs to be translated as an update object as in Telegram. The update handling system is the same as the original one which supports event emission and regular expression matching. Why we do not skip the update objects and emit an event directly? The reason is that the update handling system itself is defined in Telegram Bot API and bots may pass mock updates to it (actually, it is a useful skill when developing a Telegram bot).
+
+**Methods:** Some methods are not supported in WeChat like message pinning and callback queries. The adaptor would support alternative behaviors. For example, pinning a message could be translated as sending a message with an "@all". Since these hacks are not standard and might be tricky, they are configurable in options. *This part is still in development. There are really a lot of work to do.*
+
+**Objects:** There are some differences in the structure and content of objects. For example, in Telegram, groups and private chat is differentiated by a chat object while it is a `Message.room()` call in Wechaty. So it needs some code like:
+
 ```javascript
 message = {
     from: <translate message.from() as a user object>,
@@ -76,7 +79,9 @@ message = {
     ...
 }
 ```
+
 The most difficult part is managing IDs. Telegram assigns a permanent ID to each user, each group, and each message. As mentioned in [Wechaty FAQ](https://github.com/Chatie/wechaty/wiki/FAQ), an alias which contains a unique ID would be able to identify a user. The unique ID is generated based on the timestamp and ensured uniqueness by spining:
+
 ```javascript
 while (Date.now() === lastID) {
     // spin
@@ -84,8 +89,11 @@ while (Date.now() === lastID) {
 
 lastID += 1;
 ```
+
 For groups and messages, I added a fallback mechanism which keeps the ability of identification in a single session but loses it when the chatbot logs out. The implementation is as simple as remembering the latest groups and messages. The number is limited to prevent the memory leak. Besides, `Message.entities` in Telegram requires parsing the text of a message. It is still working in progress.
-4. Sessions/Polling: Wechaty is based on sessions. Currently, polling is implemented as simply start/stop the session. In the future, it will be implemented with an update object queue, so that it would support manually polling.
+
+**Sessions/Polling:** Wechaty is based on sessions. Currently, polling is implemented as simply start/stop the session. In the future, it will be implemented with an update object queue, so that it would support manually polling.
+
 ```javascript
 startPolling(options = {}) {
     if (options.restart) {
