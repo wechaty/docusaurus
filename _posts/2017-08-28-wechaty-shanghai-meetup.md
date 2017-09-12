@@ -59,3 +59,14 @@ The first WeChaty DevCon was just four of us but there are more and more 'bot m
 [@dcsan](https://github.com/dcsan) started RIKAI Labs and we build bots for other companies, as well as running our own "TeacherBot" - an AI chatbot to help Chinese students to learn English.
 
 Please get in touch if you'd like to know about the next Shanghai Wechaty WWDC and be invited!
+
+## Join Us !
+Join the group to chat with us on wechat!
+
+Wechaty is used in many ChatBot projects by hundreds of developers. If you want to talk with other developers, just scan the following QR Code in WeChat with secret code wechaty, join our Wechaty Developers' Home now.
+
+Wechaty Developers' Home
+
+![shanghai wechaty peeps]({{site.baseurl}}/download/2017/BotQrcode.png)
+
+Scan now, because other Wechaty developers want to talk with you too! (secret code: wechaty)
