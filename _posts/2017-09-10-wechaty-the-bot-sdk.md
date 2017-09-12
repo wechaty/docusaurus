@@ -58,13 +58,14 @@ There are some [fascinating ideas here for a language to compose bots](https://w
 
 
 ## Analytics for Bots
-![shanghai wechaty peeps]({{site.baseurl}}/download/2017/dcsan-dashbot.jpg)
+![Dennis and Socks]({{site.baseurl}}/download/2017/dcsan-dashbot.jpg)
 
 One of those from overseas who works with the Wechaty team is Dennis Yang from [Dashbot.io](https://www.dashbot.io/), one of the leading analytics providers purely for 'bots. The 'bot industry outside of China is at this established stage where the ecosystem is growing enough to have all types of companies from authoring to analytics to AI.
 
 Dennis is planning to support the WeChaty API to make it easy for developers to immediately get great analytics for their wechat and wechaty bots. [Ping them](https://www.dashbot.io/contact) if you would like to get advance access!
 
 Dennis gave me some natty dashbot socks to share with the WeChaty dev team :)
+
 
 ## The future of WeChaty
 Previously I've seen unofficial APIs be embraced by forward looking platforms.
@@ -73,7 +74,18 @@ For example [this blog post from Discord](https://blog.discordapp.com/the-robot-
 > ### The Robot Revolution has Unofficially Begun (Unofficial API)
 > ... a dedicated group of ballers have reverse engineered our API to create what we’re calling the official unofficial Discord API ...
 
-I believe the Telegram APi also began as a reverse engineering project, that gave inspiration to the telegram team to embrace and create their own bot platform.
+I believe the Telegram API also began as a reverse engineering project, that gave inspiration to the telegram team to embrace and create their own bot platform.
 
 Let's hope that Tencent will look to Wechaty and enable more functions for chatbot developers, or even provide a full Chatbot SDK!
 
+
+## Join Us !
+Join the group to chat with us on wechat!
+
+Wechaty is used in many ChatBot projects by hundreds of developers. If you want to talk with other developers, just scan the following QR Code in WeChat with secret code wechaty, join our Wechaty Developers' Home now.
+
+Wechaty Developers' Home
+
+![shanghai wechaty peeps]({{site.baseurl}}/download/2017/BotQrcode.png)
+
+Scan now, because other Wechaty developers want to talk with you too! (secret code: wechaty)
