@@ -86,6 +86,6 @@ Wechaty is used in many ChatBot projects by hundreds of developers. If you want 
 
 Wechaty Developers' Home
 
-![shanghai wechaty peeps]({{site.baseurl}}/download/2017/BotQrcode.png)
+![shanghai wechaty peeps](https://chatie.io/wechaty/images/bot-qr-code.png)
 
 Scan now, because other Wechaty developers want to talk with you too! (secret code: wechaty)
