@@ -60,5 +60,5 @@ Here's the slides of _Wechaty 101_ in this talk:
 
 _Wechaty 101_ Slides is hosted on Google Slides(Docs) at [here](https://docs.google.com/presentation/d/13oUOIEnzdLWO6KZWztD_pMuu22AQ3SIMjk2wp8f-f18/edit?usp=sharing)
 
-Learn more about Wechaty source code at: <https://github.com/wechaty/wechaty>
+Learn more about Wechaty source code at: <https://github.com/chatie/wechaty>
 
