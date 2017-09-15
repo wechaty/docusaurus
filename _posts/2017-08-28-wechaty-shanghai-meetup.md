@@ -3,7 +3,6 @@ layout: post
 title: "Shanghai WWDC - WeChaty Worldwide Developers Conference"
 date: 2017-08-28 18:00 +0800
 author: dcsan
-categories: developer
 excerpt_separator: <!--more-->
 ---
 
@@ -43,7 +42,7 @@ One of the things WeChaty enables is bots in groups, not just 1:1 between a sing
 
 DC built a text adventure game called "Pirates" that can be played within a group. All the users see the results of any players actions, as you are travelling as a "party". It's interesting to watch people playing. One person will try something, then maybe give up, and then someone else will take over. It's almost like passing the steering wheel to your friend to try driving for a bit! On the other hand, scoring was implemented per user.
 
-[@hczhcz](https://github.com/hczhcz) told us about bots for playing werewolf, you can read more about that [at his wechaty blog post](2017/07/17/run-your-telegram-bot-with-wechaty.html).
+[@hczhcz](https://github.com/hczhcz) told us about bots for playing werewolf, you can read more about that [at his wechaty blog post](/2017/07/17/run-your-telegram-bot-with-wechaty.html).
 
 Games have already spent a lot of time thinking about multiplayer and the chat platforms related to games do too, for example [Discord has a rich API for Guild management](https://discordapp.com/developers/docs/resources/guild)
 
