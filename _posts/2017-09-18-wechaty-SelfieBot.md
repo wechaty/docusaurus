@@ -16,7 +16,7 @@ So I build a fun application based on Wechaty, called [wechaty_selfie](https://g
 
 
 <div align=center>
-<img src=https://github.com/huyingxi/wechaty_selfie/blob/master/li.jpg width='700px' />
+<img src=/download/2017/wechaty_selfie_pear.jpg width='700px' />
 </div>
 
 Say goodbye to your choice of difficulty!
@@ -25,7 +25,7 @@ Say goodbye to your choice of difficulty!
 
 ## Screenshot of the application
 <div align=center>
-<img src=https://github.com/huyingxi/wechaty_selfie/blob/master/result.jpg width="400px" />
+<img src=/download/2017/wechaty_selfie_demo_screenshoot.jpg width="400px" />
 </div>
 
 ## Our development steps
