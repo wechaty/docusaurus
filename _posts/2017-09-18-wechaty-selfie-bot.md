@@ -7,7 +7,7 @@ author: huyingxi
 
 > Author: [@huyingxi](https://github.com/huyingxi/wechaty_selfie) enjoying ML&Wechaty at BUPT
 
-Recently I found a fun and easy to use middleware for WeChat, called [Wechaty](https://github.com/Chatie/wechaty).
+Recently I found a fun and easy middleware to use for WeChat, called [Wechaty](https://github.com/Chatie/wechaty).
 
 Wechaty can help developers quickly build applications based on Wechat, and it was born with a huge number of Potential users. 
 
@@ -28,13 +28,13 @@ Say goodbye to your choice of difficulty!
 
 Once you have a little nodejs knowledge, and a little deep learning basis, you can build it. :)
 
-1. Crawl data : The most important of this application is data. We crawled data(eg. picture URL, release time, the number of praise, the number of comments)  with 'selfie' label from instagram. 
-1. Filter data : In order to make the training data more convincing, we crawl the data with earlier release time. It is obviously that if a selfie has just been released, then it must not get enough exposure, so the number of comments and comments at this time is unstable. Considering this, we set the realease time threshold to 2000 seconds. We will filter out data which have realease time smaller than the threshold.
-1. Scoring strategy selection : We get the data(picture URL, the number of praise, the number of comments) for visual analysis， and found that most of the number of praise are between 0-10, so we simply consider the number of praise as the selfie's score.
-1. Download  pictures : We download the selfies that we will use by URL that we already have, and reshape them into 224 * 224 dimensions.
-1. Build DL model : In order to build the neural network quickly, we choose the pre-build model VGG16 in keras, and add five full connection layer on the top of it. The top of our model is a softMax layer with 10 categories.
-1. Build project & training model : Build wechaty project and the training of deep learning model.
-1. Debugging, success!
+1. **Crawl data**: The most important of this application is data. We crawled data(eg. picture URL, release time, the number of praise, the number of comments)  with 'selfie' label from instagram. 
+1. **Filter data**: In order to make the training data more convincing, we crawl the data with earlier release time. It is obviously that if a selfie has just been released, then it must not get enough exposure, so the number of comments and comments at this time is unstable. Considering this, we set the realease time threshold to 2000 seconds. We will filter out data which have realease time smaller than the threshold.
+1. **Scoring strategy selection**: We get the data(picture URL, the number of praise, the number of comments) for visual analysis， and found that most of the number of praise are between 0-10, so we simply consider the number of praise as the selfie's score.
+1. **Download  pictures**: We download the selfies that we will use by URL that we already have, and reshape them into 224 * 224 dimensions.
+1. **Build DL model**: In order to build the neural network quickly, we choose the pre-build model VGG16 in keras, and add five full connection layer on the top of it. The top of our model is a softMax layer with 10 categories.
+1. **Build project & training model**: Build wechaty project and the training of deep learning model.
+1. **Debugging, success!**
 
 ## Appendix, packages we used
 
