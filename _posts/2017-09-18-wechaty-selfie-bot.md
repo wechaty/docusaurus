@@ -62,5 +62,5 @@ I strongly recommend that you now click on the link below, there are surprises w
 * [Wechaty :)](https://github.com/Chatie/wechaty)
 * [What a Deep Neural Network thinks about your #selfie](https://karpathy.github.io/2015/10/25/selfie/)
 
-And more details about my selfie bot, you can find in [wechaty_selfie](https://github.com/huyingxi/wechaty_selfie)
+And more details about my selfie bot, you can find in my github repository at: [wechaty_selfie](https://github.com/huyingxi/wechaty_selfie)
 
