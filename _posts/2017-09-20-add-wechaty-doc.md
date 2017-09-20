@@ -5,7 +5,7 @@ date: 2017-09-20 21:00 +0800
 author: lijiarui
 ---
 
-> Author: [@lijiarui](https://github.com/lijiarui) [BotOrange](http://www.botorange.com)
+> Author: [@lijiarui](https://github.com/lijiarui) @[BotOrange](http://www.batorange.com)
 
 In order to sync the doc with the latest code, it's best to use `jsdoc` to describe the API and use `jsdoc-to-markdown` to generate markdown format documents to the docs directory.
 
@@ -89,49 +89,62 @@ For the wechaty document, I change two following dmd partials:
 * sig-link-parent.hbs
 
 # Wechaty Progress on JsDoc && jsdoc2md
-## discussion history
-* discussion
-[@Huan](https://github.com/zixia), [@ax4](https://github.com/ax4),[@hczhcz](https://github.com/hczhcz), [@William](https://github.com/kis87988) and I talked a lot about wechaty document on issues: [issue73](https://github.com/chatie/wechaty/issues/73)   [issue252](https://github.com/chatie/wechaty/issues/252)    
+## Discussion history
 
-* pr a lot
-Also, [@hczhcz](https://github.com/hczhcz) and [@ax4](https://github.com/ax4) and I contribute a lot on the document: [PR378](https://github.com/Chatie/wechaty/issues/378), [PR380](https://github.com/Chatie/wechaty/issues/380), [PR640](https://github.com/Chatie/wechaty/pull/640) [PR725](https://github.com/Chatie/wechaty/pull/725)   [PR321](https://github.com/Chatie/wechaty/pull/321)
+* Discussion
 
-## doc basic line
+[@Huan](https://github.com/zixia), [@ax4](https://github.com/ax4),[@hczhcz](https://github.com/hczhcz), [@William](https://github.com/kis87988) and I talked a lot about wechaty document on the following issues:    
+[issue73: [doc] To Embed Document in Wechaty Code for Generating Automaticly](https://github.com/chatie/wechaty/issues/73)   
+[issue252: [doc] Contribute to the doc editing[ jsdoc / jsdoc2md / typedoc ]](https://github.com/chatie/wechaty/issues/252)    
+
+* Related PR
+
+Also, [@hczhcz](https://github.com/hczhcz) and [@ax4](https://github.com/ax4) and I contribute a lot on the document:  
+[PR378:jsdoc2md may flush some pieces of the embedded doc](https://github.com/Chatie/wechaty/issues/378)   
+[PR380:fix jsdoc flush issue #378 and minor fix on the doc examples](https://github.com/Chatie/wechaty/issues/380)  
+[PR640:add documentation TODO entries](https://github.com/Chatie/wechaty/pull/640)    
+[PR725:add wechaty document](https://github.com/Chatie/wechaty/pull/725)   
+[PR321:Add JsDoc for Class Contact](https://github.com/Chatie/wechaty/pull/321)
+
+## Doc basic line
 
 For the convenience of developers, our doc guideline as follows:
 
-1. Simple and clear:
+1. Simple and clear
 2. Generate markdown for better readable version control and GitHub page hosting.
 
-## auto-doc working flow
+## Auto-doc working flow
 
-1. Dev in TypeScript
+1. Develop in TypeScript
 2. Embedded doc insert in TypeScript
 3. Compile TypeScript into JavaScript, using `npm run dist`
 4. Run jsdoc / jsdoc2md, using `npm run doc`
 5. Get the final doc, in [index.md](https://github.com/Chatie/wechaty/blob/master/docs/index.md), config it to [chatie.io/wechaty](http://chatie.io/wechaty)
 
-## wechaty doc file
+## Wechaty Jsdoc file
 We embed doc into the following file:
+- [src/wechaty.ts](https://github.com/Chatie/wechaty/blob/master/src/wechaty.ts)
 - [src/message.ts](https://github.com/Chatie/wechaty/blob/master/src/message.ts)
 - [src/room.ts](https://github.com/Chatie/wechaty/blob/master/src/room.ts)
-- [src/wechaty.ts](https://github.com/Chatie/wechaty/blob/master/src/wechaty.ts)
-- [src/friend-request.ts](https://github.com/Chatie/wechaty/blob/master/src/friend-request.ts)
 - [src/contact.ts](https://github.com/Chatie/wechaty/blob/master/src/contact.ts)
+- [src/friend-request.ts](https://github.com/Chatie/wechaty/blob/master/src/friend-request.ts)
 
-## wechaty jsdoc2md
+## Wechaty jsdoc2md progress
 
-1. using the following command can generate document easily.
-```
+### 1. Generate jsdoc2md file
+Using the following command can generate document easily.
+``` shell
 jsdoc2md dist/src/{wechaty,room,contact,friend-request,message}.js dist/src/puppet-web/friend-request.js>> docs/index.md
 ```
 
-2. Actually, the first step is enough, but I think we need insert all of the API docs into README, so I use a template by the following command:
-```
+### 2. Use template to Sync Readme with api doc
+
+Actually, the first step is enough, but I think we need insert and sync all of the API docs into README, so I use a template by the following command:
+``` shell
 jsdoc2md --template docs/partials/README.hbs dist/src/{wechaty,room,contact,friend-request,message}.js dist/src/puppet-web/friend-request.js>> README.md
 ```
 
-And add the partials as follows to show the API directory, because the full doc is too big to put in README, and it is not necessary.
+Then add the partials as follows to show the API directory, because the full doc is too big to put in README, and it is not necessary.
 ```hbs
 {{#class name="Wechaty"~}}
 {{>member-index-list~}}
@@ -160,7 +173,9 @@ And add the partials as follows to show the API directory, because the full doc 
 {{/class}}
 ```
 
-3. After the second step, I found the link jsdoc2md generate is an anchor link(`#`), it means I cannot link it to other pages(http://chatie.io/wechaty), this is very inconvenient for readers.
+3. Linkable Code References
+
+After the second step, I found the link jsdoc2md generate is an anchor link(`#`), it means I cannot link it to other pages(http://chatie.io/wechaty), this is very inconvenient for readers.
 Inspired by [jsdoc2md-issue-123](https://github.com/jsdoc2md/jsdoc-to-markdown/issues/123),[@KevinAst](https://github.com/KevinAst) using jsdoc-to-markdownb wrote a beatutiful doc: [astx-redux-util](https://astx-redux-util.js.org/1.0.0/)
 I found maybe I can created a custom partial too, Then I override the following templates in `docs/partials/overrides`, adding http://chatie.io/wechaty in the link:
 * link.hbs
