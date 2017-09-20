@@ -9,7 +9,7 @@ author: lijiarui
 
 In order to sync the doc with the latest code, it's best to use `jsdoc` to describe the API and use `jsdoc-to-markdown` to generate markdown format documents to the docs directory.
 
-![automate all the things]({{site.baseurl}}/download/2017/add-wechaty-doc-automate-all-the-things.jpg)
+![automate all the things](/download/2017/add-wechaty-doc-automate-all-the-things.jpg)
 
 Yes, we are planned to do this for nearly a year... 
 
