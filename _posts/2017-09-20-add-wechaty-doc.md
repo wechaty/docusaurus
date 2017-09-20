@@ -92,7 +92,7 @@ For the wechaty document, I change two following dmd partials:
 # Wechaty Progress on JsDoc && jsdoc2md
 ## Discussion history
 
-### Discussion
+### Related Issue
 
 [@Huan](https://github.com/zixia), [@ax4](https://github.com/ax4),[@hczhcz](https://github.com/hczhcz), [@William](https://github.com/kis87988) and I talked a lot about wechaty document on the following issues: 
 * **issue73:** [[doc] To Embed Document in Wechaty Code for Generating Automaticly](https://github.com/chatie/wechaty/issues/73)   
