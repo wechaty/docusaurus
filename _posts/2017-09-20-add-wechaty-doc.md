@@ -9,10 +9,18 @@ author: lijiarui
 
 In order to sync the doc with the latest code, it's best to use `jsdoc` to describe the API and use `jsdoc-to-markdown` to generate markdown format documents to the docs directory.
 
-Yes, we are planned to do this for nearly a year... as @Huan said in [issue 73](https://github.com/Chatie/wechaty/issues/73 "issue 73") in Nov 2016.
+![automate all the things]({{site.baseurl}}/download/2017/add-wechaty-doc-automate-all-the-things.jpg)
+
+Yes, we are planned to do this for nearly a year... 
+
+Thanks to [@Huan](https://github.com/zixia), [@ax4](https://github.com/ax4),[@hczhcz](https://github.com/hczhcz), [@William](https://github.com/kis87988), by the end of August, we finally convert all the doc to jsdoc. And I'd like to share some jsdoc experience here.
+
+<!--more-->
 
 > We need to document them better, not only the public but also the internal modules and methods. 
 > Finally we decided to use the classic [jsdoc](http://usejsdoc.org/ "jsdoc") to embed document in TypeScript, then generate document to [docs/](https://github.com/Chatie/wechaty/tree/master/docs "docs/") by [jsdoc2md](https://github.com/jsdoc2md/jsdoc-to-markdown "jsdoc2md").
+
+-- @Huan said in [issue 73](https://github.com/Chatie/wechaty/issues/73 "issue 73") in Nov 2016.
 
 At first, we write the doc in [wiki](https://github.com/Chatie/wechaty/wiki "wiki") first, and it lasts for nearly a year.....
 
@@ -28,8 +36,6 @@ I like @ax4's idea about the document guide:
  "Learn the awesome features of Wechaty" -> "See more advanced functions" -> "Reach the boundary? Help us develop Wechaty".
  
 Thanks for @ax4's suggestion and we decide to do the doc as soon as possible.
-
-But half a year passed..... And by the end of August, we finally convert all the doc to jsdoc. And I'd like to share some jsdoc experience here.
 
 # JsDoc && jsdoc2md
 
