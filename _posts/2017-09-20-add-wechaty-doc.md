@@ -11,7 +11,7 @@ In order to sync the doc with the latest code, it's best to use [jsdoc](https://
 
 ![automate all the things](/download/2017/add-wechaty-doc-automate-all-the-things.jpg)
 
-Yes, we are planned to do this for nearly a year... 
+Yes, we planned to do this for nearly a year... 
 
 Thanks to [@Huan](https://github.com/zixia), [@ax4](https://github.com/ax4),[@hczhcz](https://github.com/hczhcz), [@William](https://github.com/kis87988), by the end of August, we finally convert all the doc to jsdoc. And I'd like to share some jsdoc experience here.
 
