@@ -145,7 +145,7 @@ Actually, the first step is enough, but I think we need insert and sync all of t
 jsdoc2md --template docs/partials/README.hbs dist/src/{wechaty,room,contact,friend-request,message}.js dist/src/puppet-web/friend-request.js>> README.md
 ```
 
-Then add the partials `{{>member-index-list~}}` to show the API directory, because the full doc is too big to put in README, and it is not necessary.
+Then add the partials {{>member-index-list~}} to show the API directory, because the full doc is too big to put in README, and it is not necessary.
 
 ### 3. Linkable Code References
 
