@@ -146,7 +146,7 @@ jsdoc2md --template docs/partials/README.hbs dist/src/{wechaty,room,contact,frie
 ```
 
 Then add the partials as follows to show the API directory, because the full doc is too big to put in README, and it is not necessary.
-```hbs
+```
 {{#class name="Wechaty"~}}
 {{>member-index-list~}}
 {{/class}}
