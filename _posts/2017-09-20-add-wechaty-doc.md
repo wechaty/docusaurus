@@ -32,7 +32,7 @@ A lot of developers use wiki to learn wechaty, but the wiki's performance is not
 
 I like [@ax4](https://github.com/ax4)'s idea about the document guide:   
 
-``` flow
+```flow
 1=>operation: Learn the awesome features of Wechaty
 2=>operation: See more advanced functions
 3=>operation: Reach the boundary? Help us develop Wechaty
@@ -99,17 +99,17 @@ For the wechaty document, I change two following dmd partials:
 ### Discussion
 
 [@Huan](https://github.com/zixia), [@ax4](https://github.com/ax4),[@hczhcz](https://github.com/hczhcz), [@William](https://github.com/kis87988) and I talked a lot about wechaty document on the following issues: 
-* **issue73** [[doc] To Embed Document in Wechaty Code for Generating Automaticly](https://github.com/chatie/wechaty/issues/73)   
-* **issue252** [[doc] Contribute to the doc editing[ jsdoc / jsdoc2md / typedoc ]](https://github.com/chatie/wechaty/issues/252)    
+* **issue73:** [[doc] To Embed Document in Wechaty Code for Generating Automaticly](https://github.com/chatie/wechaty/issues/73)   
+* **issue252:** [[doc] Contribute to the doc editing[ jsdoc / jsdoc2md / typedoc ]](https://github.com/chatie/wechaty/issues/252)    
 
 ### Related PR
 
 Also, [@hczhcz](https://github.com/hczhcz) and [@ax4](https://github.com/ax4) and I contribute a lot on the document:  
-* **PR378** [jsdoc2md may flush some pieces of the embedded doc](https://github.com/Chatie/wechaty/issues/378)   
-* **PR380** [fix jsdoc flush issue #378 and minor fix on the doc examples](https://github.com/Chatie/wechaty/issues/380)  
-* **PR640** [add documentation TODO entries](https://github.com/Chatie/wechaty/pull/640)    
-* **PR725** [add wechaty document](https://github.com/Chatie/wechaty/pull/725)   
-* **PR321** [Add JsDoc for Class Contact](https://github.com/Chatie/wechaty/pull/321)
+* **PR378:** [jsdoc2md may flush some pieces of the embedded doc](https://github.com/Chatie/wechaty/issues/378)   
+* **PR380:** [fix jsdoc flush issue #378 and minor fix on the doc examples](https://github.com/Chatie/wechaty/issues/380)  
+* **PR640:** [add documentation TODO entries](https://github.com/Chatie/wechaty/pull/640)    
+* **PR725:** [add wechaty document](https://github.com/Chatie/wechaty/pull/725)   
+* **PR321:** [Add JsDoc for Class Contact](https://github.com/Chatie/wechaty/pull/321)
 
 ## Doc basic line
 
@@ -181,13 +181,13 @@ Then add the partials as follows to show the API directory, because the full doc
 ### 3. Linkable Code References
 
 After the second step, I found the link jsdoc2md generate is an anchor link(`#`), it means I cannot link it to other pages(http://chatie.io/wechaty), this is very inconvenient for readers.   
-Inspired by [[jsdoc2md-issue-123](https://github.com/jsdoc2md/jsdoc-to-markdown/issues/123)], [@KevinAst](https://github.com/KevinAst) using jsdoc-to-markdownb wrote a beatutiful doc: [astx-redux-util](https://astx-redux-util.js.org/1.0.0/).    
+Inspired by [[jsdoc2md-issue-123](https://github.com/jsdoc2md/jsdoc-to-markdown/issues/123)], [@KevinAst](https://github.com/KevinAst) using jsdoc-to-markdown wrote a beatutiful doc: [astx-redux-util](https://astx-redux-util.js.org/1.0.0/).    
 I found maybe I can created a custom partial too.   
 Then I override the following templates in `docs/partials/overrides`, adding http://chatie.io/wechaty in the link:
 * link.hbs
 * sig-link-parent.hbs
 
-This is the reason why in `package.json` I add the following script:
+This is the reason why I add the following script in `package.json` :
 ```
 jsdoc2md --partial docs/partials/overrides/*.hbs --template docs/partials/README.hbs dist/src/{wechaty,room,contact,friend-request,message}.js dist/src/puppet-web/friend-request.js>> README.md
 ```
