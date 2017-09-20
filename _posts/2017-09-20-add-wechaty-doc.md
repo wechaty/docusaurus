@@ -7,7 +7,7 @@ author: lijiarui
 
 > Author: [@lijiarui](https://github.com/lijiarui) @[BotOrange](http://www.batorange.com)
 
-In order to sync the doc with the latest code, it's best to use `jsdoc` to describe the API and use `jsdoc-to-markdown` to generate markdown format documents to the docs directory.
+In order to sync the doc with the latest code, it's best to use [jsdoc](https://github.com/jsdoc3/jsdoc) to describe the API and use [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown) to generate markdown format documents to the docs directory.
 
 ![automate all the things](/download/2017/add-wechaty-doc-automate-all-the-things.jpg)
 
@@ -20,22 +20,27 @@ Thanks to [@Huan](https://github.com/zixia), [@ax4](https://github.com/ax4),[@hc
 > We need to document them better, not only the public but also the internal modules and methods. 
 > Finally we decided to use the classic [jsdoc](http://usejsdoc.org/ "jsdoc") to embed document in TypeScript, then generate document to [docs/](https://github.com/Chatie/wechaty/tree/master/docs "docs/") by [jsdoc2md](https://github.com/jsdoc2md/jsdoc-to-markdown "jsdoc2md").
 
--- @Huan said in [issue 73](https://github.com/Chatie/wechaty/issues/73 "issue 73") in Nov 2016.
+> -- @Huan said in [issue 73](https://github.com/Chatie/wechaty/issues/73 "issue 73") in Nov 2016.
 
-At first, we write the doc in [wiki](https://github.com/Chatie/wechaty/wiki "wiki") first, and it lasts for nearly a year.....
+At first, we write the doc in [wiki](https://github.com/Chatie/wechaty/wiki "wiki"), and it lasts for nearly a year.....
 
-A lot of developers using wiki learned how to use wechaty, but the wiki's performance is not good, it cannot update automatically and doesn't base on User's most demand.
-
-In Feb 2017, [@ax4](https://github.com/ax4 "@ax4") creat an [issue](https://github.com/Chatie/wechaty/issues/252 "issue") and expressed his willingness to contribute the document.
+A lot of developers use wiki to learn wechaty, but the wiki's performance is not good, it cannot update automatically and doesn't base on user's most demand.
 
 > * some minor fix (such as the different naming [Message Class](https://github.com/wechaty/wechaty/wiki/API#message-class) & [Class Room](https://github.com/wechaty/wechaty/wiki/API#class-room)) 
 > * improvement on the formatting, e.g. the level setting of each title 
 > * maybe, add an index for better guiding
+> -- In Feb 2017, [@ax4](https://github.com/ax4) creat an [issue](https://github.com/Chatie/wechaty/issues/252 "issue") and expressed his willingness to contribute the document.
 
-I like @ax4's idea about the document guide:
- "Learn the awesome features of Wechaty" -> "See more advanced functions" -> "Reach the boundary? Help us develop Wechaty".
+I like [@ax4](https://github.com/ax4)'s idea about the document guide:   
+```flow
+1=>operation: Learn the awesome features of Wechaty
+2=>operation: See more advanced functions
+3=>operation: Reach the boundary? Help us develop Wechaty
+
+1->2->3
+```
  
-Thanks for @ax4's suggestion and we decide to do the doc as soon as possible.
+Thanks for [@ax4](https://github.com/ax4)'s suggestion and we decide to do the doc as soon as possible.
 
 # JsDoc && jsdoc2md
 
