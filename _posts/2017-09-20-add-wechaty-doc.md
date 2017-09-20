@@ -32,9 +32,9 @@ A lot of developers use wiki to learn wechaty, but the wiki's performance is not
 
 I like [@ax4](https://github.com/ax4)'s idea about the document guide:   
 
-* First: Learn the awesome features of Wechaty
-* Second: See more advanced functions
-* Third: Reach the boundary? Help us develop Wechaty
+* **First:** Learn the awesome features of Wechaty
+* **Second:** See more advanced functions
+* **Third:** Reach the boundary? Help us develop Wechaty
  
 Thanks for [@ax4](https://github.com/ax4)'s suggestion and we decide to do the doc as soon as possible.
 
