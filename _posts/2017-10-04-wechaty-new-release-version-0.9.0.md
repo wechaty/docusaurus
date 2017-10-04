@@ -2,7 +2,7 @@
 layout: post
 title: Wechaty New Version 0.9.0 Released
 date: '2017-10-04 10:0:0 +0800'
-author: huan
+author: Huan
 published: true
 ---
 > Author: [@zixia](https://github.com/zixia) Angel Investor, Full Stack Developer, Paragiding Pilot, Author of Wechaty.
@@ -13,7 +13,7 @@ The Wechaty has been updated to version 0.9.0 today. This release contains a num
 
 If you find new issues, please let us know by visiting our Github issue page and filing a bug. 
 
-Huan LI
+Huan LI  
 Chatie/Wechaty
 
 <!--more-->
