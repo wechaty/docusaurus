@@ -1,12 +1,11 @@
 ---
 layout: post
-title: 关于对微信PC版Hook的一点研究分享：
+title: 关于对微信PC版Hook的一点研究分享
 date: '2017-10-06 23:47:0 +0800'
 author: h4dex
 published: true
 ---
 > Author: [@h4dex](https://github.com/h4dex) 我是菜鸟
-
 
 
 ![Wechat Windows Impactor](/download/2017/h4dex-inject.png)
