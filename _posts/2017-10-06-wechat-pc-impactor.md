@@ -5,7 +5,7 @@ date: '2017-10-06 23:47:0 +0800'
 author: h4dex
 published: true
 ---
-> Author: [@h4dex](https://github.com/h4dex) 我是菜鸟
+> Author: [@h4dex](https://github.com/h4dex) 会使用各种计算机语言写出 Hello World 的设计师（<http://icefox.org/>）
 
 
 ![Wechat Windows Impactor](/download/2017/h4dex-inject.png)
