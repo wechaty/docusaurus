@@ -5,7 +5,7 @@ date: '2017-10-06 23:47:0 +0800'
 author: h4dex
 published: true
 ---
-> Author: [@h4dex](https://github.com/h4dex) 菜鸟
+> Author: [@h4dex](https://github.com/h4dex) 我是菜鸟
 
 
 
@@ -494,7 +494,7 @@ CALLBACK 类 因为在原代码中没有公开，是调用其他人开发的 eco
 
 ```
  
-下载 ： [Download Src](https://github.com/h4dex/blog/blob/master/download/2017/WechatWindowsImpactorSrc.rar)
+下载 ： [Download Src](/download/2017/wechat-windows-impactor-src.zip)
 
 
 完整下载地址：附带微信2.4.5.73安装包 没有微信2.4.1.79
