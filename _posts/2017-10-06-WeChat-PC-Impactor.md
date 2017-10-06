@@ -1,17 +1,28 @@
-## 关于对微信PC版Hook的一点研究分享：
+---
+layout: post
+title: 关于对微信PC版Hook的一点研究分享：
+date: '2017-10-06 23:47:0 +0800'
+author: h4dex
+published: true
+---
+> Author: [@h4dex](https://github.com/h4dex) 菜鸟
 
+## 关于对微信PC版Hook的一点研究分享
 
 
 感谢 易语言精易论坛坛友(xdssoft,恨不能遗忘,gh0st少主)分享的开源代码参考！ 
 
 因为易语言代码有的朋友们可能看起来怪怪的 如果没有接触过它，并不是那么通俗易懂。所以改成了cpp代码供审阅.  由于书写仓促 错误的部分希望大家指正，小弟在此多谢！
 
+
+
+
 > 准备工作：  
 ```
 PEid、Ollydbg、IDA pro、CheatEngine、DLL自动注入工具、微信电脑版2.4.1.37/79
 ```
 
-
+<!--more-->
 
 ### HOOK 注入类  hookinject.h
 
@@ -474,14 +485,19 @@ CALLBACK 类 因为在原代码中没有公开，是调用其他人开发的 eco
 
 所以这里我也不太清楚这个如何实现..
 
-后面等我深入研究再追加补充，欢迎大家共同研究参与 ~
+因本人能力有限，欢迎大家共同研究参与补充 ~
 
-感谢 @zixia 的邀请。
+谢谢！
 
 ```
  
 下载 ： [Download Src](https://github.com/h4dex/blog/blob/master/download/2017/WechatWindowsImpactorSrc.rar)
 
+
+完整下载地址：附带微信2.4.5.73安装包 没有微信2.4.1.79
+链接：[download full package ](http://pan.baidu.com/s/1hsEeDoC)   密码：wttk
+
+感谢@zixia 的邀请。
 
 >  h4dex  2017年10月6日
 
