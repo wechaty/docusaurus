@@ -11,11 +11,26 @@ published: true
 ![Wechat Windows Impactor](/download/2017/h4dex-inject.png)
 
 
-因为易语言代码有的朋友们可能看起来怪怪的 如果没有接触过它，并不是那么通俗易懂。所以改成了cpp代码供审阅.  由于书写仓促 错误的部分希望大家指正，小弟在此多谢！
+因为易语言代码有的朋友们可能看起来怪怪的 如果没有接触过它，并不是那么通俗易懂。所以改成了cpp代码供审阅.  由于书写仓促 错误的部分希望大家指正，小弟在此多谢！ 请打开全文后仔细阅读声明！
+ 
 
-感谢 易语言精易论坛坛友(xdssoft,恨不能遗忘,gh0st少主)分享的开源代码参考！ 
-
-> 准备工作：  
+<font color=#ff0000 size=3>
+声明： 感谢 易语言精易论坛坛友(xdssoft,恨不能遗忘,gh0st少主)分享的开源代码参考！  
+</font>
+ 
+- 准备工作
+ + 准备工具和一定的基础知识
+- 注入客户端
+ + DLL注入
+ + 如何被微信调用DLL
+ + 内存数据拦截
+   - 登录信息读取
+   - 通信录获取
+   - 即时消息获取
+ + 模拟执行功能调用
+ + 与壳通信(后记)
+ 
+> 准备工作：
 ```
 PEid、Ollydbg、IDA pro、CheatEngine、DLL自动注入工具、微信电脑版2.4.1.37/79
 ```
@@ -23,6 +38,12 @@ PEid、Ollydbg、IDA pro、CheatEngine、DLL自动注入工具、微信电脑版
 
 <!--more-->
 ## 关于对微信PC版Hook的一点研究分享
+
+<font color=#ff0000 size=3>
+10-11补充：
+    
+本文分析了微信DLL注入的工作原理，以便给大家提供自行开发思路。 有群内朋友说某个源码会被360检测到疑似键盘记录。 也有可能是误报问题(易语言DLL的通病) 。 建议在虚拟机内进行调试，  如果属实存在病毒问题，我们大家在共同研究 重构一份基于2.5.x新版客户端的完整开源版本。   
+</font>
 
 
 
@@ -38,7 +59,7 @@ version.dll是Windows NT系统以上版本检测应用程序接口相关文件�
 首先需要载入真正的 Version.dll
 
 
-```
+``` cpp
 ///
 /// TODO:安装我们伪造的 Version.Dll
 ///
@@ -144,7 +165,7 @@ class hookInject {
 ### 应用注入类          Impactor.h
 
 
-```
+``` cpp
 class Impactor{
     public:
     
@@ -223,7 +244,7 @@ class Impactor{
 
 ### 自己信息获取        GetProfile.h
 
-```
+``` cpp
 
 class GetProfile{
     CALLBACK wxAlias;
@@ -286,7 +307,7 @@ class GetProfile{
 ### 好友读取 (列表)类   GetContact.h
 
 
-```
+``` cpp
 class GetContact{
     void GetContactList(){
         
@@ -354,7 +375,7 @@ class GetContact{
 ### 注入执行类  WechatWatchDog.cpp
 
 
-```
+``` cpp
 #include "stdafx.h"  
 #include <cstdio>
 #include <iostream>  
@@ -468,7 +489,7 @@ void hook_install(){
 
 ### DLLMain.cpp
 
-```
+``` cpp
 略
 ```
 
