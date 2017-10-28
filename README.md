@@ -19,7 +19,7 @@ bundle exec jekyll serve
 ### CONTRIBUTE GUIDELINE
 
 #### 1. Add Blog Header
-All blog should has title, author, data...   
+All blog should has title, author, date...   
 Example as follows:
 ```
 ---
@@ -38,8 +38,7 @@ Example as follows:
 * Embed the photo & video before publishing, save all external file to the blog `/download/2017` directory.
 
 #### 3. Add `<!-- more -->` Section
-Add `<!-- more -->` section for your abastrac part, it will show on the blog homepage.
-If you don't add this section, blog homepage will show all your blog content, which all of us don't expect.
+Add `<!-- more -->` section for your abstract part, it will show on the blog homepage, or the blog homepage will show all your blog content.
 
 #### 4. Just Commit Related Files
 Please do not commit unrelated files.
