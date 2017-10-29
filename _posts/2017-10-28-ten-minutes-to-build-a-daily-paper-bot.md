@@ -7,13 +7,13 @@ author: leinue
 
 > Author: [@leinue](https://github.com/leinue), Developer && Designer, [ivydom](http://ivydom.com)
 
-I built a bot to deliver the daily paper about machine learning and fintech to the users.Considering the development of lowest cost, I chose wechaty.It's so awesome that it only took me **10 mintues** to make the bot work.
+I built a bot to deliver the daily paper about machine learning and fintech to the users.Considering the development of lowest cost, I chose wechaty. It's so awesome that it only took me **10 mintues** to make the bot work.
 
 ![chatbot][1]
 
-<!--more-->
+Before the bot work, I had really done a lot of work to crawl data and filter data, I won't talk about the data here, just about the Wechaty!
 
-Before the bot work, I had really done a lot of work to crawl data and filter data, I won't talk about the data here, just about the wechaty!
+<!--more-->
 
 ## Screenshot
 
