@@ -5,11 +5,13 @@ date: 2017-10-28 12:00 +0800
 author: leinue
 ---
 
-> Author: [@leinue](https://github.com/leinue)
+> Author: [@leinue](https://github.com/leinue), Developer && Designer, [ivydom](http://ivydom.com)
 
 I built a bot to deliver the daily paper about machine learning and fintech to the users.Considering the development of lowest cost, I chose wechaty.It's so awesome that it only took me **10 mintues** to make the bot work.
 
 ![chatbot][1]
+
+<!--more-->
 
 Before the bot work, I had really done a lot of work to crawl data and filter data, I won't talk about the data here, just about the wechaty!
 
@@ -37,7 +39,7 @@ I also added some functions such as automatic reply to the bot, which made our u
  2. Read the documents to know how powerful wechaty is.
 
 
-Finally, I like wechaty, thanks to all the oontributors of wechaty!
+Finally, I like wechaty, thanks to all the contributors of wechaty!
 
 
   [1]: /download/2017/leinue-bot.jpg
