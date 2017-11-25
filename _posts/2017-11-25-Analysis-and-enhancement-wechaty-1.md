@@ -8,6 +8,8 @@ excerpt_separator: <!--more-->
 
 > 作者: [@binsee](https://github.com/binsee), 野路子的修炼者
 
+![wechaty结构脑图](../download/2017/binsee-wechaty-structure.png)
+
 一个菜鸟如何通过解析webWxApp与wechaty代码，来给wechaty增加新特性的回顾。
 
 <!-- more -->
@@ -27,7 +29,7 @@ excerpt_separator: <!--more-->
 
 我接触wechaty时是在V0.8.x版本，此文提及的pr代码及对wechaty结构的理解适用于V0.8.x版本，最新的0.10.x版本的`puttet-web`进行了重构，一些地方会有不同，因此仅做参考。
 
-作为一个菜鸟，对一些知识的理解认识不足或错误的地方，希望前辈们指正。
+作为一个菜鸟，对一些知识的理解认识不足或错误的地方，希望大佬们指正。
 
 ## 计划内容
 
