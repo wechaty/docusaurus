@@ -14,7 +14,7 @@ excerpt_separator: <!--more-->
 
 ## 简述
 
-我对wechaty一开始是因为兴趣，而并非是项目需要，因此只是观望。直到看到美女`lijiarui`提出的issue[#710 Cannot send pdf file using MediaMessage](https://github.com/Chatie/wechaty/issues/710)，被赏金诱惑才尝试着手来解决这个问题(:joy:)，并陆续提交了一些pr来增强wechaty的功能(论激励的重要性:joy:)。
+我对wechaty一开始是因为兴趣，而并非是项目需要，因此只是观望。直到看到美女[lijiarui](https://github.com/lijiarui)提出的issue[#710 Cannot send pdf file using MediaMessage](https://github.com/Chatie/wechaty/issues/710)，被赏金诱惑才尝试着手来解决这个问题(:joy:)，并陆续提交了一些pr来增强wechaty的功能(论激励的重要性:joy:)。
 
 > Pull requests list:
 > [#714 send any type file](https://github.com/Chatie/wechaty/pull/714)
@@ -427,7 +427,7 @@ function glueToAngular() {
 
 ## End
 
-感谢@zixia的邀请，很抱歉拖了这么久才写了这篇文章。
+感谢[zixia](https://github.com/zixia)的邀请，很抱歉拖了这么久才写了这篇文章。
 感谢Chatie的各位贡献者，有大家的共同努力，wechaty才会愈发的好用。
 也感谢耐心看完文章的你，希望我的文章没有浪费你的时间。
 谢谢！
