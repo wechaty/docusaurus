@@ -12,7 +12,7 @@ excerpt_separator: <!--more-->
 
 一个菜鸟如何通过解析webWxApp与wechaty代码，来给wechaty增加新特性的回顾。
 
-<!-- more -->
+<!--more-->
 
 ## 简述
 
