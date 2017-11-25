@@ -107,8 +107,9 @@ puppet-web中对将功能拆分为不同模块：
 
 wechatyBro中监听webWxApp中的信息事件，然后通过websocket把事件信息发送给puppet-web。而wechaty通过puppet-web操纵webWxApp。由于websocket不能同步返回处理结果，因此需要通过浏览器驱动将js代码注入进web环境执行（调用wechatyBro中的方法来操作webWxApp），并返回Promise将操作同步化。(可见`/src/puppet-web/bridge.ts`中`proxyWechaty()`)
 
-> 例如：
+**例如：**
 wechaty中发送一条信息，会按以下顺序执行：
+
 ```javascript
 //伪代码，标记调用过程
 Message.say() -> puppetInstance.send() // 调用puppet的send()方法
@@ -286,6 +287,7 @@ rootScope.$on('message:add:success', function(event, data) {
   WechatyBro.emit('message', data)
 })
 ```
+
 `addChatMessage()`中使用`$rootScope.$broadcast("message:add:success", e)`来广播信息事件，而wechatyBro通过`rootScope.$on('message:add:success', function(event, data) {})`监听信息事件，从而获得webWxApp的信息（包含系统信息事件）。
 
 而由于`messageProcess()`中对`confFactory.MSGTYPE_RECALLED`类型的信息使用了`return`，因此wechatyBro捕捉不到`RECALLED`事件的信息，wechaty自然也就无法得知某条消息被撤消了。
