@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 
 > 作者: [@binsee](https://github.com/binsee), 野路子的修炼者
 
-![wechaty结构脑图](../download/2017/binsee-wechaty-structure.png)
+![wechaty结构脑图][1]
 
 一个菜鸟如何通过解析webWxApp与wechaty代码，来给wechaty增加新特性的回顾。
 
@@ -222,7 +222,7 @@ messageProcess: function(e) {
         "newsapp" == e.FromUserName ? t._newsMsgProcess(e) : e.AppMsgType == confFactory.APPMSGTYPE_RED_ENVELOPES ? (e.MsgType = confFactory.MSGTYPE_APP, t._appMsgProcess(e)) : e.SubMsgType == confFactory.MSGTYPE_LOCATION ? t._locationMsgProcess(e) : t._textMsgProcess(e);
         break;
       case confFactory.MSGTYPE_RECALLED:
-        return void t._recalledMsgProcess(e);
+        return void t._recalledMsgProcess(e); //注意这里是return
       case confFactory.MSGTYPE_LOCATION:
         t._locationMsgProcess(e);
         break;
@@ -435,3 +435,5 @@ function glueToAngular() {
 感谢Chatie的各位贡献者，有大家的共同努力，wechaty才会愈发的好用。
 也感谢耐心看完文章的你，希望我的文章没有浪费你的时间。
 谢谢！
+
+  [1]: /download/2017/binsee-wechaty-structure.png
