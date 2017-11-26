@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "wechaty-electron 如何让你的wechaty 变成客户端"
+title: "wechaty-electron 把你的wechaty 变成客户端"
 date: 2017-11-26 12:00 +0800
 author: 郭英旭
 ---
@@ -22,7 +22,7 @@ author: 郭英旭
     * 在wechaty－bro.js中使用ipcRenderer 来发送和接收electron 的事件和指令，
     * 新增emit方法（electron 接口中没有puppeteer 的 exposeFunction方法 ）
     * bridge.ts中增加 bindEvents方法，使用ipcMain.on(event,handler)来订阅页面回传的事件
-以上最主要的三处修改保证对原来项目改动最小化。
+以上最主要的几处修改保证对原来项目改动最小化。
 经过测试，基本功能已经可用，但是仍然有些许bug，需要后续继续修正。项目地址：[wechaty-electron](https://github.com/GuoYingxu/wechaty/tree/wechaty-electron)
 ## demo code
 ```javascript
@@ -72,5 +72,5 @@ function initbot(){
 参考 readme quick start 和  [wechaty-electron-example](https://github.com/GuoYingxu/wechaty/tree/wechaty-electron/example/electron-app) 
 
 ## 更多想法
-国内ip受限，npm puppeteer 和electron 都非常不容易。所以我单独开了一个分支，删除了puppeteer。我想如果wechaty能把 puppet 做成插件模式，需要那个安装哪个，会不会体验更好？甚至后面还会有更多的  wechaty－puppet－engine ，比如wechaty-nw for NW.js。这样，wechaty 本身只关心 微信 api，puppet 只关心与engine通信，应该是一个比较完美的结构。
+国内ip受限，npm install puppeteer 和electron 都非常不容易。所以我单独开了一个分支，删除了puppeteer。我想如果wechaty能把 puppet 做成插件模式，需要那个安装哪个，会不会体验更好？甚至后面还会有更多的  wechaty－puppet－engine ，比如wechaty-nw for NW.js。这样，wechaty 本身只关心 微信 api，puppet 只关心与engine通信，应该是一个比较完美的结构。
 微信机器人的使用会导致ip被封。暂时还无法确定使用electron 能否减少被封的概率。前面经验告诉我，如果微信被封号，换个ip是可以登录的，electron的客户端貌似因此比服务器端多了一个好处。
