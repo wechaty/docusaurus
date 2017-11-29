@@ -5,8 +5,8 @@ date: 2017-11-26 12:00 +0800
 author: 郭英旭
 ---
 > 作者: [郭英旭](https://github.com/Guoyingxu)
-<img src="https://avatars1.githubusercontent.com/u/33899027?s=88&v=3
-">
+<img src="https://avatars1.githubusercontent.com/u/33899027?s=88&v=3">
+
 ## 初识wechaty
 
 去年的这个时候，我刚到现在的公司任职，发现同事正在用微信做转播，就是把几个微信群里有价值的发言同步到其他几个群里，同时还要存入数据库以便在论坛上也能看到相关讨论。当时同事用的是chrome插件的方式，那是第一次知道微信还可以这么玩。惊奇的同时我也发现了一个很严重的问题，就是插件跑一段时间，网页就卡死了，就得重启。 于是我在网上找不同的解决方案，github 真是一个神奇的地方，很快我就找到了好几个版本的微信机器人，人气最高的当属wechaty，另外还有一个比较看好的是一个python的项目。由于本人对nodejs 对偏爱，选择了wechaty。
