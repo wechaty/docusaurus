@@ -4,8 +4,9 @@ title: "wechaty-electron 把你的wechaty 变成客户端"
 date: 2017-11-26 12:00 +0800
 author: 郭英旭
 ---
+> <img src="https://avatars1.githubusercontent.com/u/33899027?s=88&v=3">
+> 
 > 作者: [郭英旭](https://github.com/Guoyingxu)
-<img src="https://avatars1.githubusercontent.com/u/33899027?s=88&v=3">
 
 ## 初识wechaty
 
