@@ -1,19 +1,26 @@
-# blog.chatie.io
+blog.chatie.io
+--------------
 [Chatie Official Blog](https://blog.chatie.io)
 
-### Online Editor
+WRITING BLOG
+------------
+
+## Online Editor
 
 http://prose.io/#chatie/blog.chatie.io/tree/master/_posts
 
-### Jekyll Theme
-
-minima: <https://github.com/jekyll/minima>
-
-### INSTALL
+## Install
 ```
-gem install bundler
+sudo apt install ruby-bundler
+sudo apt install ruby-dev
+sudo gem install ffi -v '1.9.18'
+sudo gem install bundler
 bundle install
-bundle exec jekyll serve
+```
+
+## View
+```
+bundle exec jekyll serve --watch
 ```
 
 ### CONTRIBUTE GUIDELINE
@@ -48,3 +55,8 @@ Example
 ```
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3eq8wJfCAWs" frameborder="0" allowfullscreen></iframe>
 ```
+
+JEKYLL THEME
+------------
+
+minima: <https://github.com/jekyll/minima>
