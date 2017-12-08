@@ -44,8 +44,8 @@ Example as follows:
 * Find a good image for the blog to make it more beautiful.
 * Embed the photo & video before publishing, save all external file to the blog `/download/2017` directory.
 
-#### 3. Add `<!-- more -->` Section
-Add `<!-- more -->` section for your abstract part, it will show on the blog homepage, or the blog homepage will show all your blog content.
+#### 3. Add `<!--more-->` Section
+Add `<!--more-->` section for your abstract part, it will show on the blog homepage, or the blog homepage will show all your blog content.
 
 #### 4. Just Commit Related Files
 Please do not commit unrelated files.
