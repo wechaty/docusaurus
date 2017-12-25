@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Wechaty-Mail: An Email tool buid on Wechaty"
@@ -14,11 +13,11 @@ As soon as I learn how to use 6 lines of JavaScript to achieve a simple chatbot 
 
 <!--more-->
 
-## screenshot of the application
+## Screenshot of the Application
 
 For example, my binding email address is 346786495@qq.com
 
-<img src='../download/2017/wechaty_email_demo.jpeg' border=0 width="40%">
+![wechaty-email](/download/2017/wechaty_email_demo.jpeg)
 
 ## How to use Wechaty-Mail?
 
@@ -29,7 +28,7 @@ For example, my binding email address is 346786495@qq.com
 
 Find more details in my github repository [Wechaty-Email](https://github.com/wnbupt/wechaty_email)
 
-## Appendix, packages we used
+## Appendix: Packages We Used
 * [Wechaty](https://github.com/chatie/wechaty): A great and easy-to–use WeChat middleware.
 * [Imap](https://github.com/mscdex/node-imap): An IMAP client module for node.js.
 * [Mailparser](https://github.com/nodemailer/mailparser): An advanced email parser for Node.js.
