@@ -1,4 +1,11 @@
 
+---
+layout: post
+title: "Wechaty-Mail: An Email tool buid on Wechaty"
+date: 2017-12-25 21:00 +0800
+author: wangning
+---
+
 > Author: [@wangning](https://github.com/wnbupt/wechaty_email) is a postgraduate student at BUPT who is a frontend full stack engineer, with rich Machine Learning/NLP/Image project experiences.
 
 As soon as I learn how to use 6 lines of JavaScript to achieve a simple chatbot based on [Wechaty](https://github.com/Chatie/wechaty), I was deeply attracted and decide to develop an easy-to-use email tool based on it. [Wechaty-Mail](https://github.com/wnbupt/wechaty_email) is an application based on Wechaty which can help you get notifications in WeChat when you receive new emails.
