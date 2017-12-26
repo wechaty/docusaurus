@@ -49,7 +49,7 @@ published: true
 1. Why TypeScript
 1. Stacks
 1. DevOps
-1. What is Wechaty.IO
+1. What is Chatie.IO
 1. Vision
 1. Demo
 1. Q/A
