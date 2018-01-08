@@ -2,7 +2,7 @@
  layout: post
  title: "All-you-need-to-know-about-chatbot"
  date: 2018-01-19 04:31 +1100
- author: huyingxi
+ author: Wang Yan
 
 ---
 > Author: [@Yan Wang](https://github.com/bukaqiaqia/Datagirls) 现就读于悉尼大学商业数据分析 ,是Datagirls社区志愿者助教，两年数据分析师工作经历，拥有丰富的社科数据分析项目经验。
