@@ -1,18 +1,30 @@
 ---
-published: false
+ layout: post
+ title: "All-you-need-to-know-about-chatbot"
+ date: 2018-01-19 04:31 +1100
+ author: huyingxi
+
 ---
 > Author: [@Yan Wang](https://github.com/bukaqiaqia/Datagirls) 现就读于悉尼大学商业数据分析 ,是Datagirls社区志愿者助教，两年数据分析师工作经历，拥有丰富的社科数据分析项目经验。
 DataGirls是一个专注中国女性的有趣有料的数据分析学习社区，旨在成就更多女性成为数据驱动思考者，运用数据化决策帮助她们实现事业，家庭和个人的高度平衡，收获独立，自由和幸福的人生。www.datagirls.cn
 
 2018年已经到来，一觉醒来，各种社交媒体已经被18岁刷屏
 有这样的：
+
 ![1_](https://user-images.githubusercontent.com/20809334/34682835-42d5367a-f4f4-11e7-8fb5-f2ff229572ec.jpg)
-当然还有这样的：：
+
+当然还有这样的：
+
 ![2_](https://user-images.githubusercontent.com/20809334/34682833-426902d4-f4f4-11e7-9c5b-b50ccb786e52.jpg)
+
 已经陷入正态分布式懵逼的我决定请教我的私人助手———Siri
+
 ![3_](https://user-images.githubusercontent.com/20809334/34682832-422e60b6-f4f4-11e7-80d6-9b2ea8470fde.jpg)
+
 这让我不禁好奇起来Siri到底有多大?
+
 ![4](https://user-images.githubusercontent.com/20809334/34682459-17ed33dc-f4f3-11e7-9d42-c64ef47296bf.jpeg)
+
 好吧，女孩子是要神秘一点才美丽。那么看淡一切，不拘小节的知名佛系青年——龙泉寺的贤二总不会不告诉我吧。
 ![5](https://user-images.githubusercontent.com/20809334/34682458-17ab093a-f4f3-11e7-84d6-ece1a2b7c248.jpeg)
 
