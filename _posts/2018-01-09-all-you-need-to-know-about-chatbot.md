@@ -157,13 +157,11 @@ SmarterChild是其中最受欢迎的。开发于2000年，00后的它，现在�
 
 
 参考文献：
-1， How chatbots could change customer service over the next 5 years
-2， Customer service and virtual assistant bots will be prevalent for online businesses in many markets
-3， Conversational Interfaces: The Future of Chatbots
-4，  Burberry, Victoria’s Secret, Tommy Hilfiger: how major fashion retailers experiment with chatbots
-5，  11000个聊天机器人齐犯尴尬癌:用户对其爱不起来
-
-
+1. How chatbots could change customer service over the next 5 years
+2. Customer service and virtual assistant bots will be prevalent for online businesses in many markets
+3. Conversational Interfaces: The Future of Chatbots
+4. Burberry, Victoria’s Secret, Tommy Hilfiger: how major fashion retailers experiment with chatbots
+5. 11000个聊天机器人齐犯尴尬癌:用户对其爱不起来
 
 
 想知道更多关于聊天机器人的轶事吗？想学习如何制作聊天机器人吗？快来参加2018女生科技体验节！
