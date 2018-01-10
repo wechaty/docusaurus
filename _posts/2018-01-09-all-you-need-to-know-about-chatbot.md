@@ -3,11 +3,13 @@
  title: "all-you-need-to-know-about-chatbot"
  date: 2018-01-19 04:31 +1100
  author: Wang Yan
+ excerpt_separator: <!--more-->
 
 ---
 > Author: [@Yan Wang](https://github.com/bukaqiaqia/Datagirls) 现就读于悉尼大学商业数据分析 ,是Datagirls社区志愿者助教，两年数据分析师工作经历，拥有丰富的社科数据分析项目经验。
 DataGirls是一个专注中国女性的有趣有料的数据分析学习社区，旨在成就更多女性成为数据驱动思考者，运用数据化决策帮助她们实现事业，家庭和个人的高度平衡，收获独立，自由和幸福的人生。www.datagirls.cn
 
+<!--more-->
 
 2018年已经到来，一觉醒来，各种社交媒体已经被18岁刷屏
 有这样的：
