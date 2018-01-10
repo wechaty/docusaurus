@@ -8,6 +8,7 @@
 > Author: [@Yan Wang](https://github.com/bukaqiaqia/Datagirls) 现就读于悉尼大学商业数据分析 ,是Datagirls社区志愿者助教，两年数据分析师工作经历，拥有丰富的社科数据分析项目经验。
 DataGirls是一个专注中国女性的有趣有料的数据分析学习社区，旨在成就更多女性成为数据驱动思考者，运用数据化决策帮助她们实现事业，家庭和个人的高度平衡，收获独立，自由和幸福的人生。www.datagirls.cn
 
+
 2018年已经到来，一觉醒来，各种社交媒体已经被18岁刷屏
 有这样的：
 
@@ -164,5 +165,7 @@ SmarterChild是其中最受欢迎的。开发于2000年，00后的它，现在�
 
 想知道更多关于聊天机器人的轶事吗？想学习如何制作聊天机器人吗？快来参加2018女生科技体验节！
 新的一年给自己一个成长的机会。1.14我们在北京等着你！
+
+![all-you-need-to-know-about-chatbot-25](https://user-images.githubusercontent.com/20809334/34780375-18cc2f08-f677-11e7-879e-bfe159d27390.JPEG)
 
 活动详情及报名网址：http://www.huodongxing.com/go/techiefestival2018?utm_source=%E4%B8%BB%E9%A1%B5&amp;utm_medium=banner&amp;utm_campaign=homepage&amp;type=SITE_BANNER_AD_CLICK&amp;tag=BJ-HDX-AD-HOME
