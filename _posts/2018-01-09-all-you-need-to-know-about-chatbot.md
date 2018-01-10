@@ -1,6 +1,6 @@
 ---
  layout: post
- title: "All-you-need-to-know-about-chatbot"
+ title: "all-you-need-to-know-about-chatbot"
  date: 2018-01-19 04:31 +1100
  author: Wang Yan
 
@@ -152,7 +152,7 @@ SmarterChild是其中最受欢迎的。开发于2000年，00后的它，现在�
 现在,你很难想象一个没有Siri和其他语音助手的世界，但几年前，与你的电话交谈告诉它该做什么的想法似乎很荒谬。聊天机器人可以安排会议，告诉你天气，并提供各种支持。而这仅仅是一个开始。可以预想的是，聊天机器人在未来一定会融入生活方方面面，创造更多的惊喜。
 
 
-<!--more-->
+
 参考文献：
 1， How chatbots could change customer service over the next 5 years
 2， Customer service and virtual assistant bots will be prevalent for online businesses in many markets
@@ -160,4 +160,9 @@ SmarterChild是其中最受欢迎的。开发于2000年，00后的它，现在�
 4，  Burberry, Victoria’s Secret, Tommy Hilfiger: how major fashion retailers experiment with chatbots
 5，  11000个聊天机器人齐犯尴尬癌:用户对其爱不起来
 
+<!--more-->
 
+想知道更多关于聊天机器人的轶事吗？想学习如何制作聊天机器人吗？快来参加2018女生科技体验节！
+新的一年给自己一个成长的机会。1.14我们在北京等着你！
+
+活动详情及报名网址：http://www.huodongxing.com/go/techiefestival2018?utm_source=%E4%B8%BB%E9%A1%B5&amp;utm_medium=banner&amp;utm_campaign=homepage&amp;type=SITE_BANNER_AD_CLICK&amp;tag=BJ-HDX-AD-HOME
