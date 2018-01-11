@@ -42,7 +42,7 @@ Example as follows:
 #### 2. Writing Style
 * Keep all filenames & url as lowercase, and use `-` to connect words instead of space. e.g. `2017-10-06-wechat-pc-impactor` instead of `2017-10-06-WeChat PC Impactor`
 * Find a good image for the blog to make it more beautiful.
-* Embed the photo & video before publishing, save all external file to the blog `/download/2017` directory.
+* Embed the photo & video before publishing, save all external file to the blog `/download/2018` directory.
 
 #### 3. Add `<!--more-->` Section
 Add `<!--more-->` section for your abstract part, it will show on the blog homepage, or the blog homepage will show all your blog content.
