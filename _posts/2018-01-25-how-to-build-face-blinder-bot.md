@@ -6,9 +6,10 @@ date: '2018-1-25 23:04:27 +0800'
 published: true
 ---
 
-> Author: [@李佳芮](github.com/lijiarui) [桔子互动](botorange.com)创始人, Wechaty Author
+> Author: [@李佳芮](github.com/lijiarui), [桔子互动](botorange.com)创始人, Wechaty Author
 
-这是我在[2017 北京 谷歌开发者节](http://www.itdks.com/eventlist/detail/1627)TensorFlow 分会场的分享，本次活动是由谷歌（中国）、谷歌北京开发者社区主办，北京邮电大学协办的2017谷歌开发者节北京站在北京邮电大学圆满举办。我主要介绍了如何使用开源项目Wechaty-Blinder快速搭建一个微信脸盲机器人，迅速帮助你识别照片里的人.
+这是我在[2017 北京 谷歌开发者节](http://www.itdks.com/eventlist/detail/1627) TensorFlow 分会场的分享，本次活动是由谷歌（中国）、谷歌北京开发者社区主办，北京邮电大学协办的2017谷歌开发者节北京站在北京邮电大学圆满举办。我主要介绍了如何使用开源项目Wechaty-Blinder快速搭建一个微信脸盲机器人，迅速帮助你识别照片里的人。
+
 ![](/download/2018/wechaty-blinder-1.jpg)
 
 <!--more-->
@@ -19,7 +20,7 @@ published: true
 在分享这个开源项目之前，我先介绍一个我的先天性缺陷：
 1. 近视+散光，但是每年带眼镜的次数是个位数。
 2. 先天性记不住人样貌。
-3. 每天还要见好多人，微信有大几千好友。
+3. 每天还要见好多人，微信有大几千好友。        
 通常情况下我会和一个人在微信上聊的火热，然后在一次活动见面又聊的很开心，然后过了几个月再次见面的时候，我们双方热情打招呼后心里默默嘀咕这个人是谁。。。。       
 为了不让大家觉得我是一个高冷の女子，在我经常活动的地方，只要有人往我这看,我就热情的打招呼，也许对方也在默默嘀咕这是哪个神经病。。。。     
 对，我有脸盲。     
@@ -143,6 +144,6 @@ docker run -d --restart=always --volume=/workdir:/workdir -e WECHATY_TOKEN=TOKEN
 
 本次活动邀请到了来自海内外数十位资深工程师，除了 Google的研发专家团队，还邀请到了JetBrains团队，这也是 JetBrains 团队在中国大陆首次针对Kotlin的官方分享。另外，该活动还邀请到了国内诸多一线研发团队，滴滴、Strikingly、百度、集智社区，桔子互动等公司，带来他们近期的一线研发经验。   
 
-        
+
 DevFest 是 Google 每年秋季在全球GDG（谷歌开发者社区）推行的，针对 Google 技术开发者、爱好者所举办的技术交流活动。其主要目的在于同步 Google 相关各种先进技术，并进行推广与应用，促进本地社区成员的交流。DevFest活动除设置有吸引力的主题分享，还有互动参与环节和来自 Google 的正版周边礼物，对于 Google 技术开发者、爱好者都是不可错过的体验机会。
 
