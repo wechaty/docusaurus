@@ -5,35 +5,42 @@ author: 李佳芮
 date: '2018-1-25 23:04:27 +0800'
 published: true
 ---
+
+> Author: [@李佳芮](github.com/lijiarui) [桔子互动](botorange.com)创始人, Wechaty Author
+
+这是我在[2017 北京 谷歌开发者节](http://www.itdks.com/eventlist/detail/1627)TensorFlow 分会场的分享，本次活动是由谷歌（中国）、谷歌北京开发者社区主办，北京邮电大学协办的2017谷歌开发者节北京站在北京邮电大学圆满举办。我主要介绍了如何使用开源项目Wechaty-Blinder快速搭建一个微信脸盲机器人，迅速帮助你识别照片里的人.
 ![](/download/2018/wechaty-blinder-1.jpg)
-> 这是我在[2017 北京 谷歌开发者节](http://www.itdks.com/eventlist/detail/1627)TensorFlow 分会场的分享，本次活动是由谷歌（中国）、谷歌北京开发者社区主办，北京邮电大学协办的2017谷歌开发者节北京站在北京邮电大学圆满举办。我主要介绍了如何使用开源项目Wechaty-Blinder快速搭建一个微信脸盲机器人，迅速帮助你识别照片里的人.
 
 <!--more-->
 
 ### Who am I
 ![](/download/2018/wechaty-blinder-2.jpg)
+
 在分享这个开源项目之前，我先介绍一个我的先天性缺陷：
-1、近视+散光，但是每年带眼镜的次数是个位数。
-2、先天性记不住人样貌。
-3、每天还要见好多人，微信还有大几千好友的人来说。
-通常情况下我会和一个人在微信上聊的火热，然后在一次活动见面又聊的很开心，然后过了几个月再次见面的时候，我们双方热情打招呼后心里默默嘀咕这个人是谁。。。。 为了不让大家觉得我是一个高冷の女子，在我经常活动的地方，只要有人往我这看,我就热情的打招呼，也许对方也在默默嘀咕这是哪个神经病。。。。
-对，我有脸盲。
+1. 近视+散光，但是每年带眼镜的次数是个位数。
+2. 先天性记不住人样貌。
+3. 每天还要见好多人，微信有大几千好友。
+通常情况下我会和一个人在微信上聊的火热，然后在一次活动见面又聊的很开心，然后过了几个月再次见面的时候，我们双方热情打招呼后心里默默嘀咕这个人是谁。。。。       
+为了不让大家觉得我是一个高冷の女子，在我经常活动的地方，只要有人往我这看,我就热情的打招呼，也许对方也在默默嘀咕这是哪个神经病。。。。     
+对，我有脸盲。     
 而今天介绍的脸盲机器人，用人工智能，专门帮助我认识各种人的。
 
 ### Content
 ![](/download/2018/wechaty-blinder-3.jpg)
 
-我会从5个角度来做这场分享，首先简单的接受TensorFlow, 然后介绍下Facenet，再来介绍下我们的3个开源项目：Wechaty, Node-Facenet, Wechaty-Blinder, 最后会给大家做现场的代码演示。 之所以介绍wechaty-blinder 的项目要再介绍wechaty 和node-facenet是因为，wechaty-blinder 是基于wechaty 和 node-facenet 这两个开源项目的。
+我会从5个角度来做这场分享，首先简单的介绍下TensorFlow, 然后介绍下Google 的Facenet，再来介绍下我们的3个开源项目：Wechaty, Node-Facenet, Wechaty-Blinder, 最后会给大家做现场的代码演示。      
+之所以介绍wechaty-blinder 的项目要介绍wechaty 和node-facenet，是因为wechaty-blinder 是基于wechaty 和 node-facenet 这两个开源项目的。
 
 ### Google TensorFlow
 ![](/download/2018/wechaty-blinder-4.jpg)
 
-脸盲机器人wechaaty的底层用到了TensorFlow, 今天要介绍的wechaty-blinder 是一个基于TensorFlow 和google 的论文 Facenet 实现的node.js 开源项目，可以帮助解决人脸认证、识别和聚类等问题。
+脸盲机器人wechaty的底层用到了TensorFlow, 今天要介绍的wechaty-blinder 是一个基于TensorFlow 和google 的论文 Facenet 实现的node.js 开源项目，可以帮助解决人脸认证、识别和聚类等问题。
 
 ### Google Facenet
 ![](/download/2018/wechaty-blinder-5.jpg)
 
-Facenet 来源于Google 的论文[FaceNet: A Unified Embedding for Face Recognition and Clustering](https://arxiv.org/abs/1503.03832)，是一个用来给人脸做分类的神经网络，与其他的深度学习方法在人脸上的应用不同，FaceNet并没有用传统的softmax的方式去进行分类学习，然后抽取其中某一层作为特征，而是直接进行端对端学习一个从图像到欧式空间的编码方法，然后基于这个编码再做人脸识别、人脸验证和人脸聚类等，欧式集合距离可以直接来代表脸的相似度。
+Facenet 来源于Google 的论文[FaceNet: A Unified Embedding for Face Recognition and Clustering](https://arxiv.org/abs/1503.03832)，是一个用来给人脸做分类的神经网络。     
+与其他的深度学习方法在人脸上的应用不同，FaceNet并没有用传统的softmax的方式去进行分类学习，然后抽取其中某一层作为特征，而是直接进行端对端学习一个从图像到欧式空间的编码方法，然后基于这个编码再做人脸识别、人脸验证和人脸聚类等，欧式集合距离可以直接来代表脸的相似度。     
 FaceNet算法有2个特点：
 1. 去掉了最后的softmax，而是用元组计算距离的方式来进行模型的训练。使用这种方式学到的图像表示非常紧致，使用128位足矣。
 2. 元组的选择非常重要，选的好可以很快的收敛。
@@ -41,17 +48,18 @@ FaceNet算法有2个特点：
 ### Open Source Chatie
 ![](/download/2018/wechaty-blinder-6.jpg)
 
-Wechaty 是一个开源的针对个人号的微信机器人框架，仅仅使用6行JavaScript代码就可以实现一个简单的机器人，同时支持Linux，Windows，Darwin(OSX/Mac) 和 Docker。博客地址是 [https://blog.chatie.io](https://blog.chatie.io)
+Wechaty 是一个开源的针对个人号的微信机器人框架，仅仅使用6行JavaScript代码就可以实现一个简单的机器人，同时支持Linux，Windows，Darwin(OSX/Mac) 和 Docker。      
+博客地址是 [https://blog.chatie.io](https://blog.chatie.io)
 
 ### Open Source Chatie
 ![](/download/2018/wechaty-blinder-7.jpg)
 
-6行最小的代码在这里，也可以去我的项目[wechaty-getting-started](https://github.com/lijiarui/wechaty-getting-started.git)下快速入门wechaty。wechaty 最终运行页面就是右手边的样子。
+最简单的6行代码代码在这里，也可以去我的项目[wechaty-getting-started](https://github.com/lijiarui/wechaty-getting-started.git)下快速入门wechaty。wechaty 最终运行页面就是右手边的样子。
 
 ### Open Source Chatie
 ![](/download/2018/wechaty-blinder-8.jpg)
 
-Github, Docker, npm 相关地址在这里，wechaty有非常完善的devOps，一旦代码提交，就会自动进行自动化测试，当测试通过或，会自动打包更新docker 和npm， 所以也欢迎各位开发者来pull request。
+Github, Docker, npm 相关地址在这里，wechaty有非常完善的devOps，一旦代码提交，就会自动进行自动化测试，当测试通过后，会自动打包更新docker 和npm， 所以也欢迎各位开发者来pull request。
 
 ### Open Source Chatie
 ![](/download/2018/wechaty-blinder-9.jpg)
@@ -73,6 +81,7 @@ Wechaty 现在有非常完善的开发者社区，开发者覆盖了全球，包
 两个主要的类是：    
 1. Face, 毫无疑问代表一张脸
 2. Facenet, 代表的是一坨脸。。。
+
 三个主要的方法是:
 1. aling()， 从一张图中找出包含的所有的脸，通过先找到脸的坐标，然后生成一个Face 实例数组。换句话中，传一张图片给align，他会突出一个脸的array.
 2. embedding()， 将脸转换成一个128维向量
@@ -90,7 +99,8 @@ Wechaty 现在有非常完善的开发者社区，开发者覆盖了全球，包
 ### Open Source Node-FaceNet
 ![](/download/2018/wechaty-blinder-13.jpg)
 
-这是另外一个例子，把脸和脸之间的距离可视化。我们可以看到这个绿色的框框就是上面我说的align出来的能够框出脸的框框，1.45，1.47, 0.66 三个数字分别代表了两个脸的相似程度，可以看出，数字约小，脸约像。如果两个脸是属于一个人的，他们的距离通常是0.75。当然这只是一个经验性数字，还要具体情况具体分析。
+这是另外一个例子，把脸和脸之间的距离可视化。     
+我们可以看到这个绿色的框框就是上面我说的align出来的能够框出脸的框框，1.45，1.47, 0.66 三个数字分别代表了两个脸的相似程度，可以看出，数字约小，脸约像。如果两个脸是属于一个人的，他们的距离通常是0.75。当然这只是一个经验性数字，还要具体情况具体分析。
 
 ### Open Source Wechaty-Blinder
 ![](/download/2018/wechaty-blinder-14.jpg)
@@ -102,7 +112,7 @@ Wechaty 现在有非常完善的开发者社区，开发者覆盖了全球，包
 一旦机器人帮你记住了这张脸，你随时随地都可以为这张脸命名。他有下面3个功能：
 1. 记住群里所有好友的脸
 2. 记住通讯录里所有好友的脸
-3. 记住你发的每张照片中的脸
+3. 记住你发的每张照片中的脸           
 当然，他就可以帮助你认出你发的照片、群、和好友中哪些是同一个人啦。
 
 ### Open Source Wechaty-Blinder
@@ -130,6 +140,9 @@ docker run -d --restart=always --volume=/workdir:/workdir -e WECHATY_TOKEN=TOKEN
 
 ### 最后，感谢Google 办了这么一场有趣的活动
 ![](/download/2018/wechaty-blinder-17.jpeg)
-本次活动邀请到了来自海内外数十位资深工程师，除了 Google的研发专家团队，还邀请到了JetBrains团队，这也是 JetBrains 团队在中国大陆首次针对Kotlin的官方分享。另外，该活动还邀请到了国内诸多一线研发团队，滴滴、Strikingly、百度、集智社区，桔子互动等公司，带来他们近期的一线研发经验。       
+
+本次活动邀请到了来自海内外数十位资深工程师，除了 Google的研发专家团队，还邀请到了JetBrains团队，这也是 JetBrains 团队在中国大陆首次针对Kotlin的官方分享。另外，该活动还邀请到了国内诸多一线研发团队，滴滴、Strikingly、百度、集智社区，桔子互动等公司，带来他们近期的一线研发经验。   
+
+        
 DevFest 是 Google 每年秋季在全球GDG（谷歌开发者社区）推行的，针对 Google 技术开发者、爱好者所举办的技术交流活动。其主要目的在于同步 Google 相关各种先进技术，并进行推广与应用，促进本地社区成员的交流。DevFest活动除设置有吸引力的主题分享，还有互动参与环节和来自 Google 的正版周边礼物，对于 Google 技术开发者、爱好者都是不可错过的体验机会。
 
