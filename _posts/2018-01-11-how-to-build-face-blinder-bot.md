@@ -8,6 +8,8 @@ published: true
 ![]({{site.baseurl}}/download/2018/wechaty-binder-1.jpg)
 > 这是我在[2017 北京 谷歌开发者节](http://www.itdks.com/eventlist/detail/1627)TensorFlow 分会场的分享，本次活动是由谷歌（中国）、谷歌北京开发者社区主办，北京邮电大学协办的2017谷歌开发者节北京站在北京邮电大学圆满举办。我主要介绍了如何使用开源项目Wechaty-Blinder快速搭建一个微信脸盲机器人，迅速帮助你识别照片里的人.
 
+<!--more-->
+
 ### Who am I
 ![]({{site.baseurl}}/download/2018/wechaty-binder-2.jpg)
 在分享这个开源项目之前，我先介绍一个我的先天性缺陷：
