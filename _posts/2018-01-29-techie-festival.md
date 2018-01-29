@@ -126,11 +126,9 @@ Server酱，他是一个能从服务器推报警和日志到手机的工具，�
 
 同时我希望做一个面向女性和儿童的程序员社区，有兴趣加入的可以加我微信
 
-![helen-weixin][helen-weixin]
-
+<img src="/download/2018/helen-weixin.jpg" width = "200" />
 
 [techie-festival]: /download/2018/helen-techie-festival.jpeg
 [docker-screenshot]: /download/2018/helen-docker-screenshot.png
 [node-screenshot]: /download/2018/helen-node-screenshot.png
 [run-ding]: /download/2017/lijiarui-write-bot-run-ding.jpeg
-[helen-weixin]: /download/2018/helen-weixin.jpg
