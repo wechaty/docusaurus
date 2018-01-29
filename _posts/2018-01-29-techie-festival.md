@@ -10,6 +10,7 @@ author: Helen
 女孩子天生喜欢漂亮的衣服，衣柜里琳琅满目的首饰，化妆品。周末和闺蜜约会，逛街，喝下午茶。这似乎是众人眼中的姑娘们的标配。然而又有着这么一群女孩，她们喜欢编程，用代码改变着身边细小的事情，改变着世界。聪明，具有创造力，她们用行动诠释了新时代女性的性感。一个女孩的美丽不仅仅来自她的外表，更来自她的思想。2018年女生科技体验节，便是一道独有的风景线，讲师李佳芮带领女孩子们体验使用Wechaty制作自己的微信机器人。
 
 ![techie-festival][techie-festival]
+
 <!--more-->
 
 在2018女生科技体验节中，讲师李佳芮向大家讲解了《从0到1，搭建你的个人智能助理》，基于同学们大多没有太多编码经验，所以这篇文章做一个技术复盘，把课程中讲到的技术知识点做一个总结。
@@ -23,10 +24,8 @@ OK，时间是把杀猪刀。课程第一步做了什么呢？嗯，做了课前
 接下来讲一下docker， docker是一个简化部署的工具。为什么我们需要docker？对于初学者来说可能比较难理解，打一个比喻，集装箱！在集装箱出现之前，我们是怎么运输货物的呢，货物从工厂生产出来之后装箱，然后一箱箱的搬到卡车上，然后再一箱箱卸下来，一箱箱送上火车，运送到码头附近的火车站，再一箱箱卸下来，装上卡车，拉到货轮上，再一箱一箱的装上。可以看出在这个整个流程中，大量的时间，人力  ，物力全部浪费在了中间的装卸上。集装箱重要在它提供了一种通用的封装货物的标准规格（尺寸，外形符合统一标准）。只需要在运输前一次性封装，集装箱就可以放上火车，卡车，拉到码头，直接放在货船上这里后面还会具体介绍。理解就是，docker可以把整个开发环境中所需要应用按照一定的格式封装，开发者可以直接拉取镜像进行安装，就可以很容易的获取一套开发环境。如果把镜像比喻成面向对象中的类，容器就是一个实例。容器的实质就是一个进程。
 
 docker安装好的标志是命令行运行：`docker --version`会显示docker的版本号。
+
 ![docker-screenshot][docker-screenshot]
-
-
-
 
 好了，安装好docker之后我们要做的就是download wechaty的镜像
 
@@ -37,6 +36,7 @@ docker安装好的标志是命令行运行：`docker --version`会显示docker�
 获取镜像之后 运行 `docker run zixia/wechaty`
 
 如果看到wechaty的欢迎界面就表示已经在本地成功运行wechaty
+
 ![run-ding][run-ding]
 
 以上是环境搭建，搭好环境之后就可以编写我们想要的微信机器人了。
@@ -120,6 +120,6 @@ Server酱，他是一个能从服务器推报警和日志到手机的工具，�
 
 
 [techie-festival]: /download/2018/helen-techie-festival.jpeg
-[docker-screenshot]: /download/2018/helen-docker-screenshot.jpg
-[node-screenshot]: /download/2018/helen-node-screenshot.jpg
+[docker-screenshot]: /download/2018/helen-docker-screenshot.png
+[node-screenshot]: /download/2018/helen-node-screenshot.png
 [run-ding]: /download/2017/lijiarui-write-bot-run-ding.jpeg
