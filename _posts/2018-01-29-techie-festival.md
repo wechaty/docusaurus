@@ -1,15 +1,25 @@
+---
+layout: post
+title: "女生科技体验节，Wechaty专场技术复盘"
+date: '2018-01-29 11:32:53'
+author: Helen
+---
+
+Author: [@Helen](https://github.com/TingYinHelen), Lenovo
+
+<!--more-->
+
 在2018女生科技体验节中，讲师李佳芮向大家讲解了《从0到1，搭建你的个人智能助理》，基于同学们大多没有太多编码经验，所以这篇文章做一个技术复盘，把课程中讲到的技术知识点做一个总结。
 
 OK，时间是把杀猪刀。课程第一步做了什么呢？嗯，做了课前准备。对，就是整个课程最复杂最麻烦的一步！很多同学在就牺牲在了第一步，俗话说得好，万事开头难，开了头就可以骑着马跑~为了保证到场人数达标，活动方派出了两位助教帮助同学们装环境（于是雨鸟为100多位同学装了docker，装得手抽经）废话说太多了，下面开始讲技术。
 安装Wechaty有两种方法，Node和Docker。课前希望同学们能安装好。因为安装会花费很多时间，一个是本身软件很大，再加上wechaty镜像很大，如果全在会场来下载，会场的网络怕是扛不住的。。。
 [具体安装方法](https://www.jianshu.com/p/6ca8e4074cf6)，安装成功的标志是，在命令行中输入node --version，会显示node的版本。
-![](http://upload-images.jianshu.io/upload_images/4238751-a71fd5b8da05ed1a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+[]: /download/2018/helen-node-screenshot.jpg
 
 接下来讲一下docker， docker是一个简化部署的工具。为什么我们需要docker？对于初学者来说可能比较难理解，打一个比喻，集装箱！在集装箱出现之前，我们是怎么运输货物的呢，货物从工厂生产出来之后装箱，然后一箱箱的搬到卡车上，然后再一箱箱卸下来，一箱箱送上火车，运送到码头附近的火车站，再一箱箱卸下来，装上卡车，拉到货轮上，再一箱一箱的装上。可以看出在这个整个流程中，大量的时间，人力  ，物力全部浪费在了中间的装卸上。集装箱重要在它提供了一种通用的封装货物的标准规格（尺寸，外形符合统一标准）。只需要在运输前一次性封装，集装箱就可以放上火车，卡车，拉到码头，直接放在货船上这里后面还会具体介绍。理解就是，docker可以把整个开发环境中所需要应用按照一定的格式封装，开发者可以直接拉取镜像进行安装，就可以很容易的获取一套开发环境。如果把镜像比喻成面向对象中的类，容器就是一个实例。容器的实质就是一个进程。
 
 docker安装好的标志是命令行运行：`docker --version`会显示docker的版本号。
-![](http://upload-images.jianshu.io/upload_images/4238751-e33ecaa4e4e65500.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+[]: /download/2018/helen-docker-screenshot.jpg
 
 
 
@@ -23,9 +33,7 @@ docker安装好的标志是命令行运行：`docker --version`会显示docker�
 
 如果看到wechaty的欢迎界面就表示已经在本地成功运行wechaty
 
-![](http://upload-images.jianshu.io/upload_images/4238751-e56ec36f2fe7f689.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
+[]: /download/2017/lijiarui-write-bot-run-ding.jpeg
 
 以上是环境搭建，搭好环境之后就可以编写我们想要的微信机器人了。
 ####Wechaty
@@ -56,7 +64,7 @@ docker run的意思是创建一个新的容器，并运行一个命令，语法�
 
 具体是这段代码
 
-```
+```javascript
 .on('friend', async function (contact, request) {
 	if (request) {
 		await request.accept()
@@ -65,7 +73,7 @@ docker run的意思是创建一个新的容器，并运行一个命令，语法�
 })
 ```
 然后当接收到消息的时候，当对方说“hello”，机器人就会回应："hello how are you”。这里的代码有一个小bug，就是回应的语句中也含有“hello”这个词，所以发生的当天著名的炸群事件，群里一个劲儿的回复“hello how are you”，导致当天有同学的微信号被封了。要修改这个bug很简单，就是将回复语中的“hello”换成其他词。继续往后，当同学们输入”room”的时候，机器人会找到一个名为“test”的群，然后将该同学拉进群里，并且会说：“welcome！${同学的名字}”,
-```
+```javascript
 .on('message', async function (m) {
 		const contact = m.from()
 		const content = m.content()
@@ -81,7 +89,7 @@ docker run的意思是创建一个新的容器，并运行一个命令，语法�
 ```
 
 当同学发送“out”这个信息的时候，会把自己从“test”这个群里把自己踢出去（这个功能也是很有意思的，自己把自己踢出群）
-```
+```javascript
         if (/out/.test(content)) {
 			let keyroom = await Room.find({ topic: "test" })
 			if (keyroom) {
