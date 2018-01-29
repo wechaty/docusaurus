@@ -133,4 +133,4 @@ Server酱，他是一个能从服务器推报警和日志到手机的工具，�
 [docker-screenshot]: /download/2018/helen-docker-screenshot.png
 [node-screenshot]: /download/2018/helen-node-screenshot.png
 [run-ding]: /download/2017/lijiarui-write-bot-run-ding.jpeg
-[helen-weixin]: /download/2017/helen-weixin.jpg
+[helen-weixin]: /download/2018/helen-weixin.jpg
