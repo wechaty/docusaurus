@@ -5,7 +5,12 @@ date: '2018-01-29 11:32:53'
 author: Helen
 ---
 
-作者: [@Helen](https://github.com/TingYinHelen), Lenovo
+> <img src="https://avatars2.githubusercontent.com/u/14006826?v=3&s=88">
+>
+> 作者: [@Helen](https://github.com/TingYinHelen), 一个普通的程序员，就职于联想研究院成都分院。是这次女生科技体验节的志愿者助教。
+>
+
+
 
 女孩子天生喜欢漂亮的衣服，衣柜里琳琅满目的首饰，化妆品。周末和闺蜜约会，逛街，喝下午茶。这似乎是众人眼中的姑娘们的标配。然而又有着这么一群女孩，她们喜欢编程，用代码改变着身边细小的事情，改变着世界。聪明，具有创造力，她们用行动诠释了新时代女性的性感。一个女孩的美丽不仅仅来自她的外表，更来自她的思想。2018年女生科技体验节，便是一道独有的风景线，讲师李佳芮带领女孩子们体验使用Wechaty制作自己的微信机器人。
 
@@ -13,7 +18,7 @@ author: Helen
 
 <!--more-->
 
-在2018女生科技体验节中，讲师李佳芮向大家讲解了《从0到1，搭建你的个人智能助理》，基于同学们大多没有太多编码经验，所以这篇文章做一个技术复盘，把课程中讲到的技术知识点做一个总结。
+在2018女生科技体验节中，讲师李佳芮向大家讲解了[《从0到1，搭建你的个人智能助理》](https://mp.weixin.qq.com/s?__biz=MzI4NDkwNDA2NA==&mid=2247484233&idx=1&sn=e6e4d66c9e81ae909c8a523d70972d26&chksm=ebf51ca6dc8295b02c5b320a17e2bb69918500ecdda69bdf565fa69377dac5a2a3ee3aef3387&mpshare=1&scene=1&srcid=0129BCkHC0MAzDl6r6y10V1j&pass_ticket=KEvH2mABSfNtoFSgclVOWz9M40KevjNRkSVjxyPhWuc%3D#rd)，基于同学们大多没有太多编码经验，所以这篇文章做一个技术复盘，把课程中讲到的技术知识点做一个总结。
 
 OK，时间是把杀猪刀。课程第一步做了什么呢？嗯，做了课前准备。对，就是整个课程最复杂最麻烦的一步！很多同学在就牺牲在了第一步，俗话说得好，万事开头难，开了头就可以骑着马跑~为了保证到场人数达标，活动方派出了两位助教帮助同学们装环境（于是雨鸟为100多位同学装了docker，装得手抽经）废话说太多了，下面开始讲技术。
 安装Wechaty有两种方法，Node和Docker。课前希望同学们能安装好。因为安装会花费很多时间，一个是本身软件很大，再加上wechaty镜像很大，如果全在会场来下载，会场的网络怕是扛不住的。。。
@@ -116,10 +121,16 @@ Server酱，他是一个能从服务器推报警和日志到手机的工具，�
 这样，当我的机器人出现各种异常情况，我随时随地都可以知道，需要再扫码进入的时候，方糖这公众号就会把二维码推到我的手机上，我只要用机器人的微信扫码就可以了。
 #### UNIT
 最后，我们向大家介绍了怎么去制作智能微信机器人，使用了百度的UNIT框架。UNIT不需要有开发经验，我们需要做的是了解机器人使用在什么样的场景下，如何理解、如何回应用户。机器人是通过识别意图和词槽理解用户的。我们通过建立词槽，引入词典，配置词槽的澄清话术。配置回复文本及触发条件，配置引导话术、引导目标和触发条件，最后保存所有配置，导入语料，编辑对话模板，最后训练并生效模型。
+
 这篇文章先写到这里，后面将会对同学们在课程中遇到的问题和一些专有名词进行解释。
+
+同时我希望做一个面向女性和儿童程序员社区，有兴趣加入的可以加我微信
+
+![helen-weixin][helen-weixin]
 
 
 [techie-festival]: /download/2018/helen-techie-festival.jpeg
 [docker-screenshot]: /download/2018/helen-docker-screenshot.png
 [node-screenshot]: /download/2018/helen-node-screenshot.png
 [run-ding]: /download/2017/lijiarui-write-bot-run-ding.jpeg
+[helen-weixin]: /download/2017/helen-weixin.jpg
