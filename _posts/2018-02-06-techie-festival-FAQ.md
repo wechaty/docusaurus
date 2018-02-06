@@ -22,7 +22,7 @@ So，这篇文章主要以问答的形式来写，并且，后面遇到新的问
 
 #### 1.  Wechaty微信机器人可以用到公众号上吗？
 
-不能用于公众号，公众号本身有自动回复的功能，可以直接调用公众号的接口，具体可以查看文档，使用Wechaty制作微信机器人只能用在个人微信号上。
+不能用于公众号，公众号本身有自动回复的功能，可以直接调用公众号的接口，具体可以查看文档，使用Wechaty制作微信机器人只能用在个人微信号上。但是wechaty 有计划把公众号整合进来，详细讨论见 [issue1016](https://github.com/Chatie/wechaty/issues/1016)
 
 #### 2.  docker的镜像加速器
 
@@ -57,7 +57,8 @@ if(m.self()){
 简单的说，有一些软件必须在Linux的环境下运行，MinGW可以在Windows上提供一套Linux的运行的环境，表象的说就是可以在Windows上执行Linux的命令。但是MinGW对中文的支持很不友好。  我们在安装git的时候会自动安装MinGW。所以导致同学们发送不了中文的message。
 具体的解决方法就是：使用命令`docker-machine ssh`，ssh连接到docker镜像内部，然后再运行。ssh是一种网络协议。用户想要通过本地计算机登录到远程计算机，就要使用ssh。具体想要多了解的可以看阮一峰的这篇小白入门文章：[http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html](http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html) 。这里我们使用docker-machine ssh访问到docker镜像，因为docker内部就是linux环境，所以内部没有用到MinGW，这样就解决了系统的兼容性问题。
 但是ssh进入内部，就不能直接使用docker run -t挂载本地目录，因为现在命令的执行是直接在虚拟机内部的，操作不了宿主机的文件。解决的方法是，把本地的目录挂在到docer虚拟机内部，然后ssh连接进虚拟机，docker run -t是挂载虚拟机内部的目录。
-这里感谢我们的远程助教杉木和Fery提供的解决方案。
+
+这里感谢我们的远程助教[杉木](https://github.com/binsee)和[Fery](https://github.com/h4dex)提供的解决方案。
 
 #### 5.正则表达式
 
