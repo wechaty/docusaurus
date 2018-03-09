@@ -18,8 +18,6 @@ x = x + 5
 
 But is it really? If you are a seasoned programmer, are you willing to get your hands tied up by MS Typescript, and suffer all its drawbacks in the mean time? 
 
-Click on the blog topic to continue reading...
-
 <!--more-->
 
 ## About Pure ES6 instead of Typescript
