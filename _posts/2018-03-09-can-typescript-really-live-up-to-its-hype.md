@@ -5,7 +5,7 @@ date: '2018-03-09'
 author: suntong
 ---
 
-> 作者: [@suntong](https://github.com/suntong), Canada
+> Author: [@suntong](https://github.com/suntong), Canada
 
 
 Big companies push forward adopting of Typescript for a reason, mostly to prevent some dummies to shoot their own feet really easily -- The (almost only) advantage of Typescript is to point out, at the compile time, that the following usage is wrong:
