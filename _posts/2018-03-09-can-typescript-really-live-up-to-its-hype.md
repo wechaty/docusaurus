@@ -9,14 +9,14 @@ author: suntong
 
 ![TypeScript](/download/2018/typescript-logo.png)
 
-Big companies push forward adopting of Typescript for a reason, mostly to prevent some dummies to shoot their own feet really easily -- The (almost only) advantage of Typescript is to point out, at the compile time, that the following usage is wrong:
+Big companies or organizations push forward adopting of Typescript for a reason, mostly to prevent some dummies to shoot their own feet really easily -- The (almost only) advantage of Typescript is to point out, at the compile time, that the following usage is wrong:
 
 ```javascript
 var x = 'A';
 x = x + 5
 ```
 
-But is it really? If you are a seasoned programmer, are you willing to get your hands tied up by MS Typescript, and suffer all its drawbacks in the mean time? 
+But is it really? If you are a seasoned programmer and you are coding for yourself only, are you willing to get your hands tied up by MS Typescript, and suffer all its drawbacks in the mean time? 
 
 <!--more-->
 
@@ -59,7 +59,7 @@ JavaScript has no types, this has it advantages and disadvantages. However, IMHO
 
 But someone may say, _"if Typescript is not allowing you do that, then you must be doing something wrong"_. Well, truth is,
 
-The modern programming paradigm has advanced way over the OO era, and "**interface**" has become the new way of thinking. The loosely coupled interface has much more benefit than the tightly coupled [OO polymorphism](https://en.wikipedia.org/wiki/Object-oriented_programming#Polymorphism), which means that MS using type checking to tie peoples hands up is so nineteen-century in this twenty-century world, and will be left in the dust by most knowledgeable programmers. Interface compatibility is much more tolerant than [OO polymorphism](https://en.wikipedia.org/wiki/Object-oriented_programming#Polymorphism), than if both the two types satisfy the minimum interface requirement of the accepting parameter, than either of the two types can be used as the argument. And JavaScript, not Typescript, allows that. This is the reason why I can [write such simulation in such simple way](https://github.com/Chatie/wechaty/issues/1095#issuecomment-366595388) ust JavaScript, but not Typescript.
+The modern programming paradigm has advanced way over the OO era, and "**interface**" has become the new way of thinking. The loosely coupled interface has much more benefit than the tightly coupled [OO polymorphism](https://en.wikipedia.org/wiki/Object-oriented_programming#Polymorphism), which means that MS using type checking to tie peoples hands up is so nineteen-century in this twenty-century world, and will be left in the dust by most knowledgeable programmers. Interface compatibility is much more tolerant than [OO polymorphism](https://en.wikipedia.org/wiki/Object-oriented_programming#Polymorphism), that if both the two types satisfy the minimum interface requirement of the accepting parameter, than either of the two **unrelated** types can be used as the argument. And JavaScript, not Typescript, allows that. This is the reason why I can [write such simulation in such simple way](https://github.com/Chatie/wechaty/issues/1095#issuecomment-366595388) using JavaScript, but not Typescript.
 
 So, thank but no thanks to MS' JScript, or TypeScript, without the type restriction, the rest of the TypeScript hypes are actually come from ES6, which is what I'll stick to instead. 
 
