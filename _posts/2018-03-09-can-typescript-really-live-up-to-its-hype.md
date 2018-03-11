@@ -9,14 +9,14 @@ author: suntong
 
 ![TypeScript](/download/2018/typescript-logo.png)
 
-Big companies push forward adopting of Typescript for a reason, mostly to prevent some dummies to shoot their own feet really easily -- The (almost only) advantage of Typescript is to point out, at the compile time, that the following usage is wrong:
+Big companies or organizations push forward adopting of Typescript for a reason, mostly to prevent some dummies to shoot their own feet really easily -- The (almost only) advantage of Typescript is to point out, at the compile time, that the following usage is wrong:
 
 ```javascript
 var x = 'A';
 x = x + 5
 ```
 
-But is it really? If you are a seasoned programmer, are you willing to get your hands tied up by MS Typescript, and suffer all its drawbacks in the mean time? 
+But is it really? If you are a seasoned programmer and you are coding for yourself only, are you willing to get your hands tied up by MS Typescript, and suffer all its drawbacks in the mean time? 
 
 <!--more-->
 
@@ -53,13 +53,19 @@ From above article,
 > The old Microsoft used to take standard tools — Java for example — and add proprietary non-standard features to them — in this case resulting in J++. **Then they would try to force developers to choose between the two**.
 > TypeScript is exactly the same approach — this time for JavaScript. By the way, **this isn’t Microsoft’s first fork of JavaScript. In 1996, they forked JavaScript to create JScript**.
 
-JavaScript has no types, this has it advantages and disadvantages. However, IMHO, its disadvantages has been over-proportionally emphasized and exaggerated, and its advantages has been down-played greatly. If using Typescript, then such advantages will be completely lost, and you'll get completely restrained, that's what MS does best. Here is a little example, out of the very limited hours I've been using JavaScript -- to write a wechaty simulation driving code, it'd be impossible to [write such simulation in such simple way](https://github.com/Chatie/wechaty/issues/1095#issuecomment-366595388), had I been writing my code in TypeScript.
+JavaScript has no types, this has it advantages and disadvantages. However, IMHO, its disadvantages has been over-proportionally emphasized and exaggerated, and its advantages has been down-played greatly. If using Typescript, then such advantages will be completely lost, and you'll get completely restrained, that's what MS does best. Here is a little example, out of the very limited hours I've been using JavaScript -- to write a wechaty simulation driving code, it'd be impossible to [write such simulation in such simple way](https://github.com/Chatie/wechaty/issues/1095#issuecomment-366595388), had I been writing my code in TypeScript. 
+
+### Typescript is using the out-dated technology
+
+But someone may say, _"if Typescript is not allowing you do that, then you must be doing something wrong"_. Well, truth is,
+
+The modern programming paradigm has advanced way over the OO era, and "**interface**" has become the new way of thinking. The loosely coupled interface has much more benefit than the tightly coupled [OO polymorphism](https://en.wikipedia.org/wiki/Object-oriented_programming#Polymorphism), which means that MS using type checking to tie peoples hands up is so 19-century in this 21-century world, and will be left in the dust by most knowledgeable programmers. Interface compatibility is much more tolerant than [OO polymorphism](https://en.wikipedia.org/wiki/Object-oriented_programming#Polymorphism), that if both the two types satisfy the minimum interface requirement of the accepting parameter, than either of the two **unrelated** types can be used as the argument. And JavaScript, not Typescript, allows that. This is the reason why I can [write such simulation in such simple way](https://github.com/Chatie/wechaty/issues/1095#issuecomment-366595388) using JavaScript, but not Typescript.
 
 So, thank but no thanks to MS' JScript, or TypeScript, without the type restriction, the rest of the TypeScript hypes are actually come from ES6, which is what I'll stick to instead. 
 
 ### Typescript will be abandoned
 
-Typescript will be abandoned by Microsoft, some day. Mark my words for it. 
+Who still remember MS' JScript? Typescript will be left in the dust by most programmers, and it will be abandoned by Microsoft, eventually. Mark my words for it. 
 
 The philosophy that I resist anything that MS proposes has a long history of me, as a programmer, who was forced onto the MS band wagon for their shinny new toys, then get thrown under the bus when MS abandon them. Not many programmers start the love-hate affair with MS since DOS2.0, through DOS3.0 all they way to DOS5.0. Not many programmers have ever heard of OLE, DDE, DAO, ADO, ADO2, and the stories behind their rise and fall, yet I was the one who bite the bullet and gone through them all. Even today, I'm still living through the consequences of MS abandoning silverlight, for all these past several years. 
 
