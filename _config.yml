@@ -21,6 +21,8 @@ description: > # this means to ignore newlines until "baseurl:"
   in JavaScript
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.chatie.io" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:title:output_ext
+
 twitter_username: ChatieIO
 github_username:  Chatie
 author: Chatie

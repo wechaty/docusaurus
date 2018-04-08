@@ -60,3 +60,7 @@ JEKYLL THEME
 ------------
 
 minima: <https://github.com/jekyll/minima>
+
+# Blogging Style
+
+1. [Do not include Date in URL](https://github.com/Chatie/blog/issues/79)
