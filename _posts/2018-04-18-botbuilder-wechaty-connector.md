@@ -8,7 +8,7 @@ published: true
 
 > Author: [@zixia](https://github.com/zixia), Microsoft AI MVP & Regional Director, Author of `wechaty` & `botbuilder-wechaty-connector`
 
-![BotFramework](/downloads/2018/botframework.jpg)
+![BotFramework](/download/2018/botframework.jpg)
 
 [Microsoft BotFramework](https://dev.botframework.com/) is a powerful platform that supports almost all kinds of the instance messengers like Facebook messenger, Skype, Slack, and backed by the powerful Cognitive Services like LUIS.ai, QnAMaker.ai, Azure Machine Learning. BotBuilder is a powerful SDK provides all we need when we are developing a ChatBot. I started learning them about 18 months ago, and I love them very much.
 
