@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 published: true
 ---
 
-> Author: [@zixia](https://github.com/zixia), Microsoft AI MVP & Regional Director, Author of `wechaty` & `botbuilder-wechaty-connector`
+> Author: [@zixia](https://github.com/zixia), Microsoft AI MVP & Regional Director, Author of `wechaty`
 
 ![BotFramework](/download/2018/botframework.jpg)
 
