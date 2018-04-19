@@ -68,7 +68,12 @@ wechatyConnector.listen()
 
 > The above example is borrowed from `botbuilder-wechat-connector`.
 
+Hope you will like it and could make fun of it too, cheers!
+
+### See Also
+
 * GitHub: https://github.com/zixia/botbuilder-wechaty-connector
 * NPM: https://www.npmjs.com/package/botbuilder-wechaty-connector
-
-Hope you will like it and could make fun of it too, cheers!
+* [Create a bot with the Bot Builder SDK for Node.js](https://docs.microsoft.com/en-us/azure/bot-service/nodejs/bot-builder-nodejs-quickstart)
+* [Key concepts in the Bot Builder SDK for Node.js](https://docs.microsoft.com/en-us/azure/bot-service/nodejs/bot-builder-nodejs-concepts)
+* [VIDEO: Become a Bot Builder with Microsoft Bot Framework - James Mann speaking at dotnetsheff in April, 2017](https://pusher.com/sessions/meetup/dotnetsheff/become-a-bot-builder-with-microsoft-bot-framework)
