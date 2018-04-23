@@ -131,4 +131,4 @@ See more about this by reading the GitHub Issue: [Continious Deploy to NPM with 
 
 <script src="https://asciinema.org/a/177857.js" id="asciicast-177857" async></script>
 
-> Wechaty twins bot powered by [blessed-contrib](https://github.com/yaronn/blessed-contrib/), terminal session recorded by <https://asciinema.org/a/177857>
+> Wechaty twins bot powered by [blessed-contrib](https://github.com/yaronn/blessed-contrib/), terminal session recorded at <https://asciinema.org/a/177857>
