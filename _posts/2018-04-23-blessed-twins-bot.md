@@ -124,9 +124,7 @@ See more about this by reading the GitHub Issue: [Continious Deploy to NPM with 
 
 ## CONCLUSION
 
-**The Simplicity Behind Complexity**
-
-The complex is easy; simple is hard.
+**The Simplicity Behind Complexity**: The complex is easy; simple is hard.
 
 > Designing and developing anything of consequence is incredibly challenging. Our goal is to try to bring a calm and simplicity to what are incredibly complex problems so that you’re not aware really of the solution; you’re not aware of how hard the problem was that was eventually solved.”  
 > – Sir Jonathan (Jony) Ive
