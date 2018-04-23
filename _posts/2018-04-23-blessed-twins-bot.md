@@ -28,7 +28,7 @@ To make it work, we designed a strange pattern: clone the `Contact` class and us
 
 > Please let me know if you know any design pattern similar to it, or it's a confirmed an anti-pattern.
 
-TL;DR;
+## TL;DR;
 
 Talk is cheap, show me the code.
 
@@ -54,7 +54,7 @@ It will be straightforward to design all the class methods with a `puppet` param
 
 I write four versions of Proof of Concept Code to store and hide the `puppet`.
 
-### PoC V1: `ES6 Proxy`
+### 1. PoC V1: `ES6 Proxy`
 
 The first PoC is to use ES6 Proxy. It's very straightforward just to wrap the original class and set the puppet when it is being called.
 
@@ -66,7 +66,7 @@ But we need a new class is `instanceof` the original class, which means `Bot1Con
 
 Full ES6 Proxy PoC source code is at <https://github.com/Chatie/wechaty/issues/518#issuecomment-383319998>
 
-### PoC V2: `Class.bind({})`
+### 2. PoC V2: `Class.bind({})`
 
 The second PoC is to bind the Class to a new context object by using `Contact.bind({})`
 
@@ -80,7 +80,7 @@ However, by this technology, we can not get the right static properties inside t
 
 Full `Class.bind({})` source code is at: <https://github.com/Chatie/wechaty/issues/518#issuecomment-383357185>
 
-### PoC V3: `eval`
+### 3. PoC V3: `eval`
 
 How about creating a new class by `eval` the source code from original class?
 
@@ -94,7 +94,7 @@ However, I found that the `Bot1.Contact.prototype` could not be changed because 
 
 Full `eval` source code is at <https://github.com/Chatie/wechaty/issues/518#issuecomment-383384175>
 
-### PoC V4: `class extend`
+### 4. PoC V4: `class extend`
 
 After lots of massive research & experiment work, I decided to extend the original class to create a new one for our usage. 
 
@@ -131,14 +131,6 @@ The complex is easy; simple is hard.
 > Designing and developing anything of consequence is incredibly challenging. Our goal is to try to bring a calm and simplicity to what are incredibly complex problems so that you’re not aware really of the solution; you’re not aware of how hard the problem was that was eventually solved.”  
 > – Sir Jonathan (Jony) Ive
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <script src="https://asciinema.org/a/177857.js" id="asciicast-177857" async></script>
-</div>
+<script src="https://asciinema.org/a/177857.js" id="asciicast-177857" async></script>
 
-> Wechaty twins bot powered by [blessed-contrib](https://github.com/yaronn/blessed-contrib/)
+> Wechaty twins bot powered by [blessed-contrib](https://github.com/yaronn/blessed-contrib/), terminal session recorded by <https://asciinema.org/a/177857>
