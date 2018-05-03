@@ -34,7 +34,7 @@ For visiters come from China who can not visit YouTube.com, this video is also h
 
 <!--more-->
 
-Learn more about how to use Wechaty: <https://github.com/wechaty/wechaty/wiki/GettingStarted>
+Learn more about how to use Wechaty: <https://github.com/Chatie/wechaty/wiki/GettingStarted>
 
 Code in the video:
 
