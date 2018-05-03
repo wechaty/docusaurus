@@ -12,7 +12,7 @@ published: true
 Wechaty v0.16 is working in progress.
 
 * **Good news**: We will be able to run as many as Wechaty instances than only one singleton before!
-* **Bad news**: BREAKING CHANGES were introduced.
+* **Bad news**: ~~BREAKING CHANGES were introduced.~~ This enhancement has no BC any more!
 
 
 <!--more-->
@@ -42,7 +42,9 @@ const room2 = await bot2.Room.find('my room')
 
 That's all. Instead of `Wechaty.instance()`, we now support instanciated Wechaty directly, without any limitations.
 
-The BREAKING CHANGES is: when you want to use `Room`, `Contact`, `FriendRequest`, and `Message`, you can not call them directly anymore, because they will become the `Abstract Class` soon, which means cannot be instantiated.
+~~The BREAKING CHANGES is: when you want to use `Room`, `Contact`, `FriendRequest`, and `Message`, you can not call them directly anymore, because they will become the `Abstract Class` soon, which means cannot be instantiated.~~
+
+> Update 2018-05: We can still be able to instanciate the `bot.Message` by using [clone-class](https://www.npmjs.com/package/clone-class) NPM module
 
 Instead, use `bot.Room`, `bot.Contact`, `bot.FriendRequest`, and `bot.Message`, which `bot` is the instance of `Wechaty`.
 
