@@ -5,28 +5,28 @@ date: '2018-06-05 14:07:52 +0800'
 published: true
 ---
 
-> Author: [nbwsc](https://github。com/nbwsc)
+> Author: [nbwsc](https://github.com/nbwsc)
 
 讲讲我在微信机器人方向的探索和看法。
 
 <!--more-->
 
 
-首先，谢谢[Huan LI](https://github。com/zixia)的邀请，让我有机会写这么一篇博文。其实我做跟微信机器人相关的调研也不是很久，而且中间中断了很长时间，最早是在去年 6 月份开始，做了两个月更换了几个版本和不同方式把产品做了出来，之后就是今年 4 月份，又有这方面的需求于是又重新接触了微信机器人。下面是稍微详细的内容。
+首先，谢谢[Huan LI](https://github.com/zixia)的邀请，让我有机会写这么一篇博文。其实我做跟微信机器人相关的调研也不是很久，而且中间中断了很长时间，最早是在去年 6 月份开始，做了两个月更换了几个版本和不同方式把产品做了出来，之后就是今年 4 月份，又有这方面的需求于是又重新接触了微信机器人。下面是稍微详细的内容。
 
 ### 基于网页版微信 http api lib
 
 这种库就很多了，我们的`wechaty`核心也是这种方式，还有其他各种语言的实现:
 
-* [youfou/wxpy](https://github。com/youfou/wxpy) | 优秀的 api 包装和配套插件，微信机器人/优雅的微信个人号 API|[个人评价: 支持 python2/3 api 包装不错 文档写的满分 基于 itchat 开发，也开放了 itchat 的原始数据接口，自由度和封装美化兼顾 ]
+* [youfou/wxpy](https://github.com/youfou/wxpy) | 优秀的 api 包装和配套插件，微信机器人/优雅的微信个人号 API|[个人评价: 支持 python2/3 api 包装不错 文档写的满分 基于 itchat 开发，也开放了 itchat 的原始数据接口，自由度和封装美化兼顾 ]
 
-* [liuwons/wxBot](https://github。com/liuwons/wxBot)| 类似的基于 Python 的微信机器人 | [个人评价: 不支持 python3 utf-8 支持不好 ]
+* [liuwons/wxBot](https://github.com/liuwons/wxBot)| 类似的基于 Python 的微信机器人 | [个人评价: 不支持 python3 utf-8 支持不好 ]
 
-* [sjdy521/Mojo-Weixin](https://github。com/sjdy521/Mojo-Weixin)|使用 Perl 语言编写的微信客户端框架，可通过插件提供基于 HTTP 协议的 api 接口供其他语言调用 |[未使用]
+* [sjdy521/Mojo-Weixin](https://github.com/sjdy521/Mojo-Weixin)|使用 Perl 语言编写的微信客户端框架，可通过插件提供基于 HTTP 协议的 api 接口供其他语言调用 |[未使用]
 
-* [HanSon/vbot](https://github。com/hanson/vbot)|基于 PHP7 的微信个人号机器人，通过实现匿名函数可以方便地实现各种自定义的功能 |[未使用]
+* [HanSon/vbot](https://github.com/hanson/vbot)|基于 PHP7 的微信个人号机器人，通过实现匿名函数可以方便地实现各种自定义的功能 |[未使用]
 
-* [littlecodersh/ItChat](https://github。com/littlecodersh/ItChat)|wxpy 就是基于此开发
+* [littlecodersh/ItChat](https://github.com/littlecodersh/ItChat)|wxpy 就是基于此开发
 
 * ...
 
@@ -48,7 +48,7 @@ puppeteer 的出现， 让 phantomjs 的作者直接放弃更新了。 它一出
 
 > Xposed is a framework for modules that can change the behavior of the system and apps without touching any APKs
 
-接下去就是找找现成模块有没有能用的， 如果不够用， 就找找有没有开源， 改改代码。 实在不行也可以自己写， xposed 模块还是挺好写的。对了还有一个叫[VirtualXposed](https://github。com/android-hacker/VirtualXposed)的东西，修改微信 hook 的事情，这个足够了， 不需要 root。
+接下去就是找找现成模块有没有能用的， 如果不够用， 就找找有没有开源， 改改代码。 实在不行也可以自己写， xposed 模块还是挺好写的。对了还有一个叫[VirtualXposed](https://github.com/android-hacker/VirtualXposed)的东西，修改微信 hook 的事情，这个足够了， 不需要 root。
 iOS 下也有`Method Swizzling`之类的 hook 方式， 我还没有尝试过， 因为买几台 iPhone 放在办公室当服务器还是觉得有点~~厉害~~贵。
 
 ### 总结
