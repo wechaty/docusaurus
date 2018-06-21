@@ -41,6 +41,8 @@ Huan LI
 
 > BREAKING NEWS: Wechaty logo color was changed from green to blue!
 
+There will be a **migration guide from v0.14 to v0.16** will be published on our blog later.
+
 ### 1. BREAKING CHANGES
 
 #### 1.1 Class Removal
