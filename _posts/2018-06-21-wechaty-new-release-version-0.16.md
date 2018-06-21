@@ -9,7 +9,7 @@ published: true
 
 ![wechaty-release-0.16][wechaty-release-0.16]
 
-The Wechaty has been updated to version 0.16(BETA) today. This release is a BETA realease which had been improved with lots of huge refactoring since v0.14.
+The Wechaty has been updated to version 0.16(BETA) today. This release is a BETA release which had been improved with lots of huge refactoring since v0.14.
 
 With v0.16, we can use the branding new Puppet System to connect Wechaty API to any kinds of Puppets, for example:
 
