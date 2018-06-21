@@ -1,5 +1,5 @@
 ---
-title: "（以我粗鄙的见识）谈谈微信机器人"
+title: "我在微信机器人方向的探索和看法"
 author: nbwsc
 date: '2018-06-05 14:07:52 +0800'
 published: true
@@ -7,9 +7,7 @@ published: true
 
 > Author: [nbwsc](https://github.com/nbwsc)
 
-讲讲我在微信机器人方向的探索和看法。
-
-首先，谢谢[Huan LI](https://github.com/zixia)的邀请，让我有机会写这么一篇博文。其实我做跟微信机器人相关的调研也不是很久，而且中间中断了很长时间，最早是在去年 6 月份开始，做了两个月更换了几个版本和不同方式把产品做了出来，之后就是今年 4 月份，又有这方面的需求于是又重新接触了微信机器人。下面是稍微详细的内容。
+首先，谢谢[Huan LI](https://github.com/zixia)的邀请，让我有机会写这么一篇博文。其实我做跟微信机器人相关的调研也不是很久，而且中间中断了很长时间，最早是在去年 6 月份开始，做了两个月更换了几个版本和不同方式把产品做了出来，之后就是今年 4 月份，又有这方面的需求于是又重新接触了微信机器人。
 
 <!--more-->
 
@@ -17,17 +15,14 @@ published: true
 
 这种库就很多了，我们的`wechaty`核心也是这种方式，还有其他各种语言的实现:
 
-* [youfou/wxpy](https://github.com/youfou/wxpy) | 优秀的 api 包装和配套插件，微信机器人/优雅的微信个人号 API|[个人评价: 支持 python2/3 api 包装不错 文档写的满分 基于 itchat 开发，也开放了 itchat 的原始数据接口，自由度和封装美化兼顾 ]
-
-* [liuwons/wxBot](https://github.com/liuwons/wxBot)| 类似的基于 Python 的微信机器人 | [个人评价: 不支持 python3 utf-8 支持不好 ]
-
-* [sjdy521/Mojo-Weixin](https://github.com/sjdy521/Mojo-Weixin)|使用 Perl 语言编写的微信客户端框架，可通过插件提供基于 HTTP 协议的 api 接口供其他语言调用 |[未使用]
-
-* [HanSon/vbot](https://github.com/hanson/vbot)|基于 PHP7 的微信个人号机器人，通过实现匿名函数可以方便地实现各种自定义的功能 |[未使用]
-
-* [littlecodersh/ItChat](https://github.com/littlecodersh/ItChat)|wxpy 就是基于此开发
-
-* ...
+| Project | Intro | Comments |
+| :--- | :--- | :--- |
+| [youfou/wxpy](https://github.com/youfou/wxpy) | 优秀的 api 包装和配套插件，微信机器人/优雅的微信个人号 API | [个人评价: 支持 python2/3 api 包装不错 文档写的满分 基于 itchat 开发，也开放了 itchat 的原始数据接口，自由度和封装美化兼顾 ] |
+| [liuwons/wxBot](https://github.com/liuwons/wxBot)| 类似的基于 Python 的微信机器人 | [个人评价: 不支持 python3 utf-8 支持不好 ] |
+| [sjdy521/Mojo-Weixin](https://github.com/sjdy521/Mojo-Weixin)|使用 Perl 语言编写的微信客户端框架，可通过插件提供基于 HTTP 协议的 api 接口供其他语言调用 |[未使用] |
+| [HanSon/vbot](https://github.com/hanson/vbot)|基于 PHP7 的微信个人号机器人，通过实现匿名函数可以方便地实现各种自定义的功能 |[未使用] |
+| [littlecodersh/ItChat](https://github.com/littlecodersh/ItChat)|wxpy 就是基于此开发 |
+| ... | ... | ... |
 
 最早的需求是群发和自动回复， 我先用`python`实现了一个集中式的机器人(单例，多群管理，需要用户将机器人拉入群，python 异步瓶颈很快出现了，后来改成集中式多例， 用户自己登陆自己管理群，效果也不甚理想)。 然后尝试使用 node 来实现， 用了`wechaty`， 第一眼感觉好酷， 好全， 好牛逼， ts+docker 简直无敌， 但是我在安装的时候觉得体积有点庞大， 而且还绑定了浏览器实例(所以当时好像只能单例机器人)， 感觉有些臃肿当时就没有深入了解。 而且另一个很令人头疼的事情， 就是微信会对 hack 网页版微信的行为作出封号的惩罚， 具体的表现就是一段时间(我遇到的最短几周，最长半年多)限制登录网页版微信， 而且新注册的微信号无法登录网页版微信。 也就是说网页版微信会慢慢被淘汰掉， 显然有这个问题， 基于网页版微信做的机器人都会难以商用。 适逢当时看到谷歌团队新开的 puppeteer 项目， 于是我想会不会用浏览器模拟用户操作， 可以减少被封的概率呢(当时觉得可能所有的库都无法做得和微信的客户端一样， 稍有一个 cookie 什么的没传对就可能导致被封)，于是开始做 puppteer 的机器人。
 
