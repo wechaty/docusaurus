@@ -11,7 +11,7 @@ Wechaty 近期有了很大的升级，从0.14版本之后，开始陆续支持�
 
 本篇博客主要介绍了我是如何将业务逻辑代码，从Puppeteer 迁移到 Padchat上的。
 
-![code][/download/2018/code-migration-zh.png]
+![code](/download/2018/code-migration-zh.png)
 
 <!--more-->
 

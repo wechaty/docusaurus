@@ -11,7 +11,7 @@ Wechaty has been updated to version 0.16(BETA) these days and begin to support a
 
 This blog introduces how to porting code from wechaty puppeteer to padchat.
 
-![code][/download/2018/code-migration-en.png]
+![code](/download/2018/code-migration-en.png)
 
 <!--more-->
 
