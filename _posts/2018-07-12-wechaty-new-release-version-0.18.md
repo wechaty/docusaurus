@@ -17,7 +17,7 @@ All about Wechaty v0.18 is to: Reduce Weight!
 
 Before v0.18, we have 27,630 source line of code with 377 unit tests(you can check it out at [here](https://github.com/Chatie/wechaty/blob/01bfdf96c8023f44fa2ad2762f8f12fee875e42e/tests/README.md) if you are interested).
 
-Start from v0.18, we have 11,006 lines of code left(which means 50% off!), with 10+ related npm modules.
+Start from v0.18, we have 11,006 lines of code left(v0.16 is 250% of this!), with 10+ related npm modules.
 
 <!--more-->
 
@@ -57,6 +57,7 @@ If we count the other npm modules that split out from Wechaty before, we can als
 1. [cloneClass](https://www.npmjs.com/package/clone-class): Clone an ES6 Class as Another Class Name for Isolating Class Static Properties.
 1. [hotImport](https://www.npmjs.com/package/hot-import): Hot Module Replacement(HMR) for Node.js
 1. [Brolog](https://www.npmjs.com/package/brolog): Brolog is Logger for Angular in Browser like Npmlog.
+1. [FlashStore](https://www.npmjs.com/package/flash-store): FlashStore is a Key-Value persistent storage with easy to use ES6 Map-like API(both Async and Sync support), powered by LevelDB and TypeScript.
 1. [FileBox](https://www.npmjs.com/package/file-box): Pack a File into Box for easy move/transfer between servers no matter of where it is.(local, remote url, or cloud storage)
 1. [MemoryCard](https://www.npmjs.com/package/memory-card): Memory Card is an Easy to Use Key/Value Store Implements ES6 Map with Async API, with Swagger & Serialization Support.
 1. [RxQueue](https://www.npmjs.com/package/rx-queue): Easy to Use RxJS Queue for Throttle/Debounce/Delay/DelayExecute
@@ -69,19 +70,20 @@ So at last, as we published the v0.18, we only left 5,465 source lines of the co
 
 ### Source Lines of Code for Wechaty
 
-| Date | SLOC |
-| :--- | :--- |
-| 2016.5 | 3,000 |
-| 2017.1 | 10,000 |
-| 2018.1 | 20,000 |
-| 2018.6 | 27,630 |
-| 2018.7 | 11,006 |
+| Date | SLOC | Factor(%) |
+| :--- | :--- | ---: |
+| 2016.5 | 3,000 | 27% |
+| 2017.1 | 10,000 | 91% |
+| 2018.1 | 20,000 | 182% |
+| 2018.6 | 27,630 | 251% |
+| 2018.7 | 11,006 | 100% |
 
-From 27,630 to 11,006, we almost get the half size than before, cheers!
+From 27,630 to 11,006, we are 60% off than before, cheers!
 
 # Change Log
 
 ## [v0.18.0](https://github.com/chatie/wechaty/tree/v0.18.0) (2018-07-11)
+
 [Full Changelog](https://github.com/chatie/wechaty/compare/v0.16.0...v0.18.0)
 
 **Implemented enhancements:**
