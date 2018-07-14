@@ -42,6 +42,7 @@ So at this version (v0.18), we have the follow npm modules that splited out from
 | Beta    | padchat   | [PuppetPadchat](https://github.com/lijiarui/wechaty-puppet-padchat) | iPad Protocol | ![PuppetPadchat](https://badge.fury.io/js/wechaty-puppet-padchat.svg) |
 | Alpha   | wechat4u  | [PuppetWechat4u](https://github.com/Chatie/wechaty-puppet-wechat4u) | Web API via HTTP | ![PuppetWechat4u](https://badge.fury.io/js/wechaty-puppet-wechat4u.svg) |
 | Alpha   | ioscat    | [PuppetIoscat](https://github.com/linyimin-bupt/wechaty-puppet-ioscat) (WIP) | iPhone App Hooking | ![PuppetIoscat](https://badge.fury.io/js/wechaty-puppet-ioscat.svg) |
+| Alpha   | hostie    | [PuppetHostie]((https://github.com/Chatie/wechaty-puppet-hostie) | Chatie Cloud | ![PuppetHostie](https://badge.fury.io/js/wechaty-puppet-hostie.svg) |
 | TBW | Android | | Android Hook | 0.0.0 |
 | TBW | Win32   | | Win32 Hook   | 0.0.0 |
 
@@ -55,6 +56,7 @@ So at this version (v0.18), we have the follow npm modules that splited out from
 If we count the other npm modules that split out from Wechaty before, we can also list them as the following:
 
 1. [@chatie/angular](https://www.npmjs.com/package/@chatie/angular): Wechaty Component NgModule for Angular
+1. [@chatie/grpc](https://www.npmjs.com/package/@chatie/grpc): gRPC for Chatie
 1. [botbuilder-wechaty-connector](https://www.npmjs.com/package/botbuilder-wechaty-connector): Microsoft Bot Framework v3 Connector for Wechat PERSONAL Account
 1. [cloneClass](https://www.npmjs.com/package/clone-class): Clone an ES6 Class as Another Class Name for Isolating Class Static Properties.
 1. [finis](https://www.npmjs.com/package/finis): Node.js program finisher - run your last callback with `exit code` and `signal name` as arguments
