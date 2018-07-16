@@ -1,5 +1,5 @@
 ---
-title: "Wechaty New Release Version v0.18"
+title: "Wechaty New Release Version v0.18: SLOC from 27,630 to 7,817"
 author: zixia
 date: '2018-07-12 18:14:52 +0800'
 published: true
@@ -13,9 +13,9 @@ published: true
 
 All about Wechaty v0.18 is to: Reduce Weight!
 
-Before v0.18, we have 27,630 source line of code with 377 unit tests(you can check it out at [here](https://github.com/Chatie/wechaty/blob/01bfdf96c8023f44fa2ad2762f8f12fee875e42e/tests/README.md) if you are interested).
+With v0.17, we have 27,630 source line of code with 377 unit tests(you can check it out at [here](https://github.com/Chatie/wechaty/blob/01bfdf96c8023f44fa2ad2762f8f12fee875e42e/tests/README.md) if you are interested).
 
-Start from v0.18, we have 11,006 lines of code left(v0.16 is 250% of this!), with 10+ related npm modules.
+Start from v0.18, we have 7,817 lines of code left(v0.17 is 353% of this!), with 10+ related npm modules.
 
 <!--more-->
 
@@ -70,19 +70,19 @@ If we count the other npm modules that split out from Wechaty before, we can als
 
 Hmm... lots of them aha? So how can we keep all of them in one repository and manage them easily? It must be a nightmare!
 
-So at last, as we published the v0.18, we only left 5,465 source lines of the code in Wechaty repository(11,006 physical lines). We can see a timeline from the history:
+So at last, as we published the v0.18, we only left 3,853 source lines of the code in Wechaty repository(7,817 physical lines). We can see a timeline from the history:
 
 ### Source Lines of Code for Wechaty
 
 | Date | SLOC | Factor(%) |
 | :--- | :--- | ---: |
-| 2016.5 | 3,000 | 27% |
-| 2017.1 | 10,000 | 91% |
-| 2018.1 | 20,000 | 182% |
-| 2018.6 | 27,630 | 251% |
-| 2018.7 | 11,006 | 100% |
+| 2016.5 | 3,000 | 38% |
+| 2017.1 | 10,000 | 128% |
+| 2018.1 | 20,000 | 256% |
+| 2018.6 | 27,630 | 353% |
+| 2018.7 | 7,817 | 100% |
 
-From 27,630 to 11,006, we are 60% off than before, cheers!
+From 27,630 to 7,817, we are 72% off than before, cheers!
 
 # Change Log
 
