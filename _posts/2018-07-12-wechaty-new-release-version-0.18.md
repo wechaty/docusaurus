@@ -54,14 +54,17 @@ So at this version (v0.18), we have the follow npm modules that splited out from
 If we count the other npm modules that split out from Wechaty before, we can also list them as the following:
 
 1. [@chatie/angular](https://www.npmjs.com/package/@chatie/angular): Wechaty Component NgModule for Angular
+1. [@chatie/graphql](https://www.npmjs.com/package/@chatie/graphql): GraphQL Schema, Providers and APIs for Chatie
 1. [@chatie/grpc](https://www.npmjs.com/package/@chatie/grpc): gRPC for Chatie
+1. [auth-angular](https://www.npmjs.com/package/auth-angular): An Angular NgModule That Provide Auth0/Authing RxJS-ified Service with Lock UI
 1. [botbuilder-wechaty-connector](https://www.npmjs.com/package/botbuilder-wechaty-connector): Microsoft Bot Framework v3 Connector for Wechat PERSONAL Account
+1. [Brolog](https://www.npmjs.com/package/brolog): Brolog is Logger for Angular in Browser like Npmlog.
 1. [cloneClass](https://www.npmjs.com/package/clone-class): Clone an ES6 Class as Another Class Name for Isolating Class Static Properties.
 1. [finis](https://www.npmjs.com/package/finis): Node.js program finisher - run your last callback with `exit code` and `signal name` as arguments
-1. [hotImport](https://www.npmjs.com/package/hot-import): Hot Module Replacement(HMR) for Node.js
-1. [Brolog](https://www.npmjs.com/package/brolog): Brolog is Logger for Angular in Browser like Npmlog.
-1. [FlashStore](https://www.npmjs.com/package/flash-store): FlashStore is a Key-Value persistent storage with easy to use ES6 Map-like API(both Async and Sync support), powered by LevelDB and TypeScript.
 1. [FileBox](https://www.npmjs.com/package/file-box): Pack a File into Box for easy move/transfer between servers no matter of where it is.(local, remote url, or cloud storage)
+1. [FlashStore](https://www.npmjs.com/package/flash-store): FlashStore is a Key-Value persistent 
+1. [hotImport](https://www.npmjs.com/package/hot-import): Hot Module Replacement(HMR) for Node.js
+storage with easy to use ES6 Map-like API(both Async and Sync support), powered by LevelDB and TypeScript.
 1. [Listag](https://www.npmjs.com/package/listag): List Manager for Array Operations & Query by Tag
 1. [MemoryCard](https://www.npmjs.com/package/memory-card): Memory Card is an Easy to Use Key/Value Store Implements ES6 Map with Async API, with Swagger & Serialization Support.
 1. [RxQueue](https://www.npmjs.com/package/rx-queue): Easy to Use RxJS Queue for Throttle/Debounce/Delay/DelayExecute
