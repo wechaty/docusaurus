@@ -5,17 +5,17 @@ date: 2018-07-24 09:00 +0800
 author: kaffa
 ---
 
-> [@kaffa](https://gitbuh.com/kaffa) a life-long learner / a beginner investor / a coffee mocha lover. My blog is [https://kaffa.im/](https://kaffa.im/) 
+> [@kaffa](https://github.com/kaffa) a life-long learner / a beginner investor / a coffee mocha lover. My blog is [https://kaffa.im/](https://kaffa.im/) 
 
 ![在 Windows 10 下安装 Wechaty](/download/2018/wechaty-installation-in-windows.png)
 
 感谢 @zixia @lijiarui 让我在此分享我在 Windows 10 Home 平台安装 Wechaty 的经历，希望我对安装过程的记录和分析能帮助在此平台下安装 Wechaty 的人。
 
-<!--more-->
-
 ### 介绍
 
 [Wechaty](https://github.com/Chatie/wechaty) 是一个对话机器人软件开发包，它可以帮你用 6 行 JavaScript 代码实现一个微信个人账号。由于使用 node 技术，它支持 Linux、Windows、macOS 平台和 Docker 容器。它的安装过程和其它 node 包类似，首先 ```git clone``` 源代码，再使用 node 的 npm 命令 ```npm install & npm start``` 实现开箱即用，同时官方也提供了入门案例：Wechaty getting started。而在国内，实际安装过程中可能会因某些软件依赖的原因遇到问题，本文记录了安装过程中可能会出现的错误及解决办法，下面描述详细的步骤和说明：
+
+<!--more-->
 
 ### 概念
 
@@ -293,51 +293,71 @@ cmd: 'npm install wechaty-puppet-puppeteer@^0.4.2 ' }
 D:\code\wechaty-getting-started>
 ```
 
-3. 安装 windows-build-tools
-
-参考 windows-build-tools 官方文档，有以下两种方式：
-
-- Visual C++ Build Tools
-- Visual Studio 2017 vs Visual Studio 2015
-
-我这里由于已经安装 Visual Studio 2017 社区版，所以没有尝试其他选项。这里的关键是需要一个 VC++ 编译器来编译 Windows 本地程序。 选项1在微软官方地址已失效，不容易找到，npm 官方推荐了安装 Visual Studio 2015。
-    
-4. 使用 ``npm install node-expat`` 验证上述安装配置是否成功
-    
-5. [安装 puppeteer](https://github.com/GoogleChrome/puppeteer)
-
-由于网络原因，puppeteer 依赖的 Chromium 并不能顺利安装。此时，我们可以借助一个阿里巴巴公司提供的 cnpm 特色工具安装:
+通过阅读上述日志，分析依赖关系如下:
 ```
-npm install -g cnpm --registry=https://registry.npm.taobao.org``
-cnpm install puppeteer
+wechaty-puppet-puppeteer 
+    --> node-expat 
+        --> node-gyp 
+            --> gyp 
+                --> Python 2.7 & Windows Build Tools
 ```
-PS: 如果你遇到 Chromium revision is not downloaded. 时，在解决办法中看到的设置 PUPPETEER_SKIP_CHROMIUM_DOWNLOAD 其实是一个误导， 这个选项并不能帮助你安装 puppeteer，而是让你在更新时不必每次都下载 Chromium 二进制。
+所以，接下来要做的就是一一从依赖的最底层安装
 
-这里还有一个手动安装办法，但不推荐：可以手动下载 chromium 安装包，放在 /node_modules/puppeteer/.local-chromium/ 下，例如:
-```
-D:\code\wechaty-getting-started\node_modules\_puppeteer@1.6.0@puppeteer\.local-chromium\win64-571375
-```
+    1. 安装 Python 2.7 至 C:\Python27\python.exe
 
-这个地址在 macOS 上如下，其中的数字可能不同:
-```
-~/node_modules/puppeteer/.local-chromium/mac-526987/chrome-mac
-```
-6. .NET Framework 4.5.1 [仅 Windows Vista / 7 需要]
+    注意 node-gyp 并不支持 Python 3.x，如果你安装了 Python 3.x，错误日志如下:
+    ```
+    Can't find Python executable "C:\Python36\python.EXE", you can set the PYTHON env variable.
+    ```
+    你可能会疑惑这个本来存在的 Python 3 路径，个人认为这个不准确错误提示可以算入 npm 包的 Bug
 
-如果 Windows Vista / 7 版本，则需要手动安装 .Net Framework
+    2. 设置环境变量 ```PYTHON=C:\Python27\python.exe```
 
-7. 如果使用的是 PadChat 组件的 Wechaty，且已有相应 token 则还需要设置以下几个环境变量:
+    3. 安装 windows-build-tools
 
-```
-WECHATY_LOG=silly
-WECHATY_PUPPET=padchat
-WECHATY_PUPPET_PADCHAT_TOKEN=*YOUR-TOKEN*
-```
+    参考 windows-build-tools 官方文档，有以下两种方式：
 
-8. 至此，应该可以顺利运行起步项目:
-```
-npm install & npm start
-```
+    - Visual C++ Build Tools
+    - Visual Studio 2017 vs Visual Studio 2015
+
+    我这里由于已经安装 Visual Studio 2017 社区版，所以没有尝试其他选项。这里的关键是需要一个 VC++ 编译器来编译 Windows 本地程序。 选项1在微软官方地址已失效，不容易找到，npm 官方推荐了安装 Visual Studio 2015。
+
+    4. 使用 ``npm install node-expat`` 验证上述安装配置是否成功
+
+    5. [安装 puppeteer](https://github.com/GoogleChrome/puppeteer)
+
+    由于网络原因，puppeteer 依赖的 Chromium 并不能顺利安装。此时，我们可以借助一个阿里巴巴公司提供的 cnpm 特色工具安装:
+    ```
+    npm install -g cnpm --registry=https://registry.npm.taobao.org``
+    cnpm install puppeteer
+    ```
+    PS: 如果你遇到 Chromium revision is not downloaded. 时，在解决办法中看到的设置 PUPPETEER_SKIP_CHROMIUM_DOWNLOAD 其实是一个误导， 这个选项并不能帮助你安装 puppeteer，而是让你在更新时不必每次都下载 Chromium 二进制。
+
+    这里还有一个手动安装办法，但不推荐：可以手动下载 chromium 安装包，放在 /node_modules/puppeteer/.local-chromium/ 下，例如:
+    ```
+    D:\code\wechaty-getting-started\node_modules\_puppeteer@1.6.0@puppeteer\.local-chromium\win64-571375
+    ```
+
+    这个地址在 macOS 上如下，其中的数字可能不同:
+    ```
+    ~/node_modules/puppeteer/.local-chromium/mac-526987/chrome-mac
+    ```
+    6. .NET Framework 4.5.1 [仅 Windows Vista / 7 需要]
+
+    如果 Windows Vista / 7 版本，则需要手动安装 .Net Framework
+
+    7. 如果使用的是 PadChat 组件的 Wechaty，且已有相应 token 则还需要设置以下几个环境变量:
+
+    ```
+    WECHATY_LOG=silly
+    WECHATY_PUPPET=padchat
+    WECHATY_PUPPET_PADCHAT_TOKEN=*YOUR-TOKEN*
+    ```
+
+    8. 至此，应该可以顺利运行起步项目:
+    ```
+    npm install & npm start
+    ```
 
 ### 总结
 
