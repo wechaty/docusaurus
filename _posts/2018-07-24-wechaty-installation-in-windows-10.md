@@ -1,12 +1,11 @@
 ---
-published: false
 layout: post
 title: "在 Windows 10 Home 下安装 Wechaty"
 date: 2018-07-24 09:00 +0800
 author: kaffa
 ---
 
-> [@kaffa](https://kaffa.im/) a life-long learner / a beginner investor / a coffee mocha lover.
+> [@kaffa](https://gitbuh.com/kaffa) a life-long learner / a beginner investor / a coffee mocha lover. My blog is [https://kaffa.im/](https://kaffa.im/) 
 
 ## 在 Windows 10 下安装 Wechaty
 
@@ -22,14 +21,14 @@ author: kaffa
 
 ### 概念
 
-[Wechaty](https://github.com/Chatie/wechaty)
-	项目地址
+项目地址
+	[Wechaty](https://github.com/Chatie/wechaty)
+	
+Wechaty 起步  
+	[Wechaty Getting Started](https://github.com/Chatie/wechaty-getting-started)
     
-[Wechaty Getting Started](https://github.com/Chatie/wechaty-getting-started)
-	Wechaty 起步
-    
-[Wechaty Documents](https://chatie.io/wechaty/)
-	Wechaty 文档
+Wechaty 文档
+	[Wechaty Documents](https://chatie.io/wechaty/)
     
 [Puppet](https://github.com/Chatie/wechaty/wiki/Puppet)
 	一个包含了机器人对话逻辑的抽象类，是 Wechaty 技术架构的一部分。继承实现 Puppet 抽象类（协议）的组件，即可实现更广泛的与联系人、消息/一对一对话、群组/聊天室/多对多对话等相关逻辑。Puppet 的中文是木偶，用在这里相当传神。
