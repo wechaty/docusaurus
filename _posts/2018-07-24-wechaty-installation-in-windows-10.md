@@ -343,5 +343,5 @@ npm install & npm start
 
 由于已成功启动项目，所以我并没有在 Windows 7 系统 或 32 位机上进行配置，主要问题应该差不多。 解决办法基本上一一查阅上述出现错误的软件的文档，应该可以独立解决。
 
-当然，如果你遇到了任何其他问题，也欢迎 [我的Github](https://gitbuh.com/kaffa) 上联系我。
+当然，如果你遇到了任何其他问题，也欢迎 [我的Github](https://github.com/kaffa) 上联系我。
 
