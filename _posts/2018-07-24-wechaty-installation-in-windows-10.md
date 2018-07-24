@@ -1,10 +1,20 @@
 ---
 published: false
+layout: post
+title: "在 Windows 10 Home 下安装 Wechaty"
+date: 2018-07-24 09:00 +0800
+author: kaffa
 ---
+
+> [@kaffa](https://kaffa.im/) a life-long learner / a beginner investor / a coffee mocha lover.
+
 ## 在 Windows 10 下安装 Wechaty
 
-感觉 @zixia 让我在此分享我在 Windows 10 Home 平台安装 WeChaty 的经历，希望我对安装过程的记录和分析能帮助在此平台下安装 Wechaty 的人。
+![在 Windows 10 下安装 Wechaty](https://github.com/kaffa/blog/blob/master/download/2018/wechaty-installation-on-windows.png)
 
+感谢 @zixia @lijiarui 让我在此分享我在 Windows 10 Home 平台安装 Wechaty 的经历，希望我对安装过程的记录和分析能帮助在此平台下安装 Wechaty 的人。
+
+<!--more-->
 
 ### 介绍
 
