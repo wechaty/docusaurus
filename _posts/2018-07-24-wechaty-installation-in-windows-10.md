@@ -5,17 +5,17 @@ date: 2018-07-24 09:00 +0800
 author: kaffa
 ---
 
-> [@kaffa](https://gitbuh.com/kaffa) a life-long learner / a beginner investor / a coffee mocha lover. My blog is [https://kaffa.im/](https://kaffa.im/) 
+> [@kaffa](https://github.com/kaffa) a life-long learner / a beginner investor / a coffee mocha lover. My blog is [https://kaffa.im/](https://kaffa.im/) 
 
 ![在 Windows 10 下安装 Wechaty](/download/2018/wechaty-installation-in-windows.png)
 
 感谢 @zixia @lijiarui 让我在此分享我在 Windows 10 Home 平台安装 Wechaty 的经历，希望我对安装过程的记录和分析能帮助在此平台下安装 Wechaty 的人。
 
-<!--more-->
-
 ### 介绍
 
 [Wechaty](https://github.com/Chatie/wechaty) 是一个对话机器人软件开发包，它可以帮你用 6 行 JavaScript 代码实现一个微信个人账号。由于使用 node 技术，它支持 Linux、Windows、macOS 平台和 Docker 容器。它的安装过程和其它 node 包类似，首先 ```git clone``` 源代码，再使用 node 的 npm 命令 ```npm install & npm start``` 实现开箱即用，同时官方也提供了入门案例：Wechaty getting started。而在国内，实际安装过程中可能会因某些软件依赖的原因遇到问题，本文记录了安装过程中可能会出现的错误及解决办法，下面描述详细的步骤和说明：
+
+<!--more-->
 
 ### 概念
 
