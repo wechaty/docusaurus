@@ -9,7 +9,7 @@ author: kaffa
 
 ## 在 Windows 10 下安装 Wechaty
 
-![在 Windows 10 下安装 Wechaty](https://github.com/kaffa/blog/blob/master/download/2018/wechaty-installation-on-windows.png)
+![在 Windows 10 下安装 Wechaty](https://github.com/kaffa/blog/blob/master/download/2018/wechaty-installation-in-windows.png)
 
 感谢 @zixia @lijiarui 让我在此分享我在 Windows 10 Home 平台安装 Wechaty 的经历，希望我对安装过程的记录和分析能帮助在此平台下安装 Wechaty 的人。
 
@@ -364,5 +364,5 @@ npm install & npm start
 
 由于已成功启动项目，所以我并没有在 Windows 7 系统 或 32 位机上进行配置，主要问题应该差不多。 解决办法基本上一一查阅上述出现错误的软件的文档，应该可以独立解决。
 
-当然，如果你遇到了任何其他问题，也欢迎 我的Github 上联系我。
+当然，如果你遇到了任何其他问题，也欢迎 [我的Github](https://gitbuh.com/kaffa) 上联系我。
 
