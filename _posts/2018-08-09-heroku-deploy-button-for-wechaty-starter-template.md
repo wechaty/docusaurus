@@ -1,5 +1,5 @@
 ---
-title: "Deploying Wechaty Bot from GitHub to Heroku with a Browser"
+title: "Deploying Wechaty Bot from GitHub to Heroku in Browser"
 author: zixia
 date: '2018-08-09 18:14:52 +0800'
 published: true
@@ -15,9 +15,9 @@ Today, we’re starting to make deploying Wechaty Bot as easy as clicking a butt
 
 <!--more-->
 
-### What's the _Deploy to Heroku_ Button
+### What's the `Deploy to Heroku` Button
 
-> The _Deploy to Heroku_ button enables users to deploy apps to Heroku without leaving the web browser, and with little or no configuration. The button is ideal for customers, open-source project maintainers or add-on providers who wish to provide their customers with a quick and easy way to deploy and configure a Heroku app.
+> The `Deploy to Heroku` button enables users to deploy apps to Heroku without leaving the web browser, and with little or no configuration. The button is ideal for customers, open-source project maintainers or add-on providers who wish to provide their customers with a quick and easy way to deploy and configure a Heroku app.
 
 Learn more at: [Creating a 'Deploy to Heroku' Button](https://devcenter.heroku.com/articles/heroku-button)
 
