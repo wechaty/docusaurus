@@ -56,6 +56,31 @@ author: judaschrist
 
 ## 智能资讯问答
 
+新闻资讯的查询、播报是很多智能对话机器人技能中很重要的一环，一个经典的场景就是用户就自己感兴趣的关键词提问，机器人返回和该关键词相关的最新新闻资讯，如下图：
+
+![news-query-snapshot](/download/2018/xiaoli-1.jpeg)
+
+以上场景中我们询问了机器人关于```微信机器人```的最新消息，并且查看了其中一条新闻的详细内容。利用小桔机器人和小理的内容接口，我们可以很方便的实现以上功能。直接上代码：
+```javascript
+const bot = new Wechaty({
+    profile: config.default.DEFAULT_PROFILE,
+})
+
+bot.on('message', onMessage)
+     
+async function onMessage(msg) {
+    let msgText = msg.text()
+
+    // A super naive implementation of intent detection for news query
+    if (msgText.endsWith("最新消息") && msgText.length > 4) {
+        respText = await searchNews(msgText.substring(0, msgText.length-4))
+        await msg.say(respText)
+    }
+}
+```
+
+我们监听消息发送事件，并且对收到的消息进行意图识别。这里我们做最简单的实现：只要收到```XXX最新消息```这种模式的信息，就提取前面的```XXX```部分作为关键词，来进行新闻查询。
+
 ## 日报定时发送
 
 ## <a name="append"></a>附：如何使用小理的内容接口
