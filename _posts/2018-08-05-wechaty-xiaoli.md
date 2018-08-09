@@ -23,7 +23,7 @@ author: judaschrist
 	"token": "45d898b459b4a739474175657556249a"
 }
 ```
-通过解析返回结果，可以获得包含标题、URL、摘要等信息的最新相关新闻列表：
+以上代码中的[token](#token)用于验证用户身份。通过解析返回结果，可以获得包含标题、URL、摘要等信息的最新相关新闻列表：
 ```
 {
     "data": {
@@ -52,7 +52,7 @@ author: judaschrist
 ```
 > 嘿嘿，不小心搜出了桔子互动
 
-通过这些内容接口，开发者可以很方便的用小理智能的内容丰富自己机器人的功能(详见[下文](#append))。以下给出两个典型的应用场景：智能资讯问答以及日报定时发送。
+通过这些内容接口，开发者可以很方便的用小理智能的内容丰富自己机器人的功能。各种内容接口的具体用法看[这里](#append)。以下给出两个典型的应用场景：智能资讯问答以及日报定时发送。
 
 ## 智能资讯问答
 
@@ -73,19 +73,109 @@ async function onMessage(msg) {
 
     // A super naive implementation of intent detection for news query
     if (msgText.endsWith("最新消息") && msgText.length > 4) {
-        respText = await searchNews(msgText.substring(0, msgText.length-4))
+        respText = await searchNews(msgText.substring(0, msgText.length-4)) // call xiaoli's news API
         await msg.say(respText)
     }
 }
 ```
 
-我们监听消息发送事件，并且对收到的消息进行意图识别。这里我们做最简单的实现：只要收到```XXX最新消息```这种模式的信息，就提取前面的```XXX```部分作为关键词，来进行新闻查询。
+我们监听消息发送事件，并且对收到的消息进行意图识别。这里我们做最简单的实现：只要收到```XXX最新消息```这种模式的信息，就提取前面的```XXX```部分作为关键词，来进行新闻查询。目前一些开源或商业的解决方案，如科大讯飞等，可以实现更加准确的意图识别供开发者使用，这里不赘述。
+
+接下来的searchNews方法就非常简单了，我们只要传入消息中的关键词，调用小理的新闻搜索API，对结果进行处理后返回即可：
+
+```javascript
+const fetch = require('node-fetch')
+/**
+ * query xiaoli's api for news related to the keyword
+ * @param keyword: search keyword
+ */
+async function searchNews(keyword) {
+    let resText = null
+    try {
+        let resp = await fetch(
+            'https://api.xiaoli.ai/v1/api/search/basic',
+            {
+                method: "POST",
+                body: JSON.stringify({
+                    "keywords": [keyword],
+                    "token": "45d898b459b4a739474175657556249a"
+                }),
+            }
+        )
+        let resp_json = await resp.json()
+        if (resp.ok) {
+            // status code = 200, we got it!
+            resText = makeText(resp_json['data'])
+        } else {
+            // status code = 4XX, sth wrong with API
+            resText = 'API ERROR: ' + resp_json['msg']
+        }
+    } catch (err) {
+        resText = 'NETWORK ERROR: ' + err
+    }
+    return resText
+}
+
+/**
+ * parse the returned json for a list of news titles
+ */
+function makeText(json_obj) {
+    preNewsList = []
+    let newsList = json_obj.contents
+    if (newsList.length === 0) {
+        return "暂无相关新闻"
+    }
+    let newsText = ''
+    for (let i = 0; i < newsList.length; i++) {
+        newsText += (i+1) + '. ' + newsList[i].title + '\n'
+    }
+    newsText += "\n回复\"#+数字\"(例如\"#1\")看详情"
+    return newsText
+}
+```
+这里使用了node-fetch这个第三方库进行网络调用，将小理API返回的JSON数据解析后，提取其中的新闻标题（title字段），拼成一段字符串返回。
+
+这样我们就实现了最简单的新闻查询功能。接下来我们希望根据查询结果回复数字看某条新闻的详情，也能够通过小理的接口实现。小理对每篇新闻自动提取了摘要，我们可以将新闻的摘要存在临时变量里面，当用户输入数字的时候返回对应的结果。
+
+定义临时变量:
+```javascript
+let preNewsList = []
+```
+
+查询新闻时暂存这些新闻的摘要（news_abstract字段）:
+```javascript
+function makeText(json_obj) {
+    //...
+    for (let i = 0; i < newsList.length; i++) {
+        //...
+        preNewsList.push(newsList[i].news_abstract) // Save the news details for later queries
+    }
+    //...
+}
+```
+
+监听到数字模式，返回对应结果：
+```javascript
+async function onMessage(msg) {
+    let msgText = msg.text()
+
+    // query for news details
+    if (msgText.startsWith('#')) {
+        newsNum = parseInt((msgText.substring(1)), 10) - 1
+        if (newsNum < preNewsList.length && newsNum >= 0) {
+            await msg.say(preNewsList[newsNum])
+        }
+    }
+
+}
+```
+到此，一个简单的新闻查询机器人就大功告成啦
 
 ## 日报定时发送
 
 ## <a name="append"></a>附：如何使用小理的内容接口
 
-请开发者们参考小理的[接口文档](http://docs.xiaoli.ai)，我们的系统目前属于内测阶段，尚未开放注册，为了方便大家测试，这里为大家准备了3个测试用的token：
+请开发者们参考小理的[接口文档](http://docs.xiaoli.ai)，我们的系统目前属于内测阶段，尚未开放注册。调用接口需要使用验证token，为了方便大家测试，这里为大家准备了3个测试用的<a name="token">token</a>：
 ```
 45d898b459b4a739474175657556249a
 6d3b08ef9188c4d5c22739fb2f073b20
