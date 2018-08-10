@@ -1,18 +1,19 @@
 ---
 layout: post
-title: "用wechaty实现智能内容机器人"
+title: "用wechaty实现新闻资讯播报机器人"
 date: 2018-08-05 09:00 +0800
 author: judaschrist
 ---
 
-> Author: [@judaschrist](https://github.com/judaschrist) What's life without Code, Movies and Musicals. Co-founder of [小理智能](https://xiaoli.ai/) 
+> Author: [@judaschrist](https://github.com/judaschrist), Co-founder of [小理智能](https://xiaoli.ai/) 
 
-![用wechaty实现智能内容机器人](/download/2018/wechaty-xiaoli.png)
+![用wechaty实现智能内容机器人](/download/2018/wechaty-xiaoli.jpeg)
 
 感谢 @lijiarui 邀请我分享我们的智能内容服务，以及在wechaty上的应用场景，希望能够帮助开发者使用wechaty提供更加丰富多样的自动化服务。
 
 我们在小理智能开发了一套智能内容服务系统，能够为各个领域提供智能资讯接口，包括新闻搜索，主题订阅，日报订阅等，帮助开发者将内容服务整合到自己的系统和产品中。
-通过这些内容接口，开发者可以很方便的用小理智能的内容丰富自己机器人的功能。各种内容接口的具体用法看[这里](#append)。以下给出两个典型的应用场景：智能资讯问答以及日报定时发送。
+通过这些内容接口，开发者可以很方便的用小理智能的内容丰富自己机器人的功能（关于小理内容接口的详细介绍看[这里](#append)）。
+以下给出两个典型的应用场景：**智能资讯问答**以及**日报定时发送**。
 
 <!--more-->
 ## 智能资讯问答
@@ -21,7 +22,9 @@ author: judaschrist
 
 ![news-query-snapshot](/download/2018/xiaoli-1.jpeg)
 
-以上场景中我们询问了机器人关于```微信机器人```的最新消息，并且查看了其中一条新闻的详细内容。利用小桔机器人和小理的内容接口，我们可以很方便的实现以上功能。直接上代码：
+以上场景中我们询问了机器人关于```微信机器人```的最新消息，并且查看了其中一条新闻的详细内容。
+利用wechaty和小理的内容接口，我们可以很方便的实现以上功能。直接上代码：
+
 ```javascript
 const bot = new Wechaty({
     profile: config.default.DEFAULT_PROFILE,
@@ -62,7 +65,7 @@ async function searchNews(keyword) {
 }
 ```
 
-上面代码中，```fetchXiaoliAPI```是一个异步方法，使用了node-fetch这个第三方库进行网络调用，将小理API返回的JSON数据解析后返回具体的数据，或者错误信息：
+以上代码中，```postBody```中的[token](#token)用于验证用户身份；```fetchXiaoliAPI```是一个异步方法，使用了[node-fetch](https://www.npmjs.com/package/node-fetch)这个第三方库进行网络调用，将小理API返回的JSON数据解析后返回具体的数据，或者错误信息：
 
 ```javascript
 /**
@@ -120,9 +123,9 @@ function makeSearchResponseText(json_obj) {
 ```
 以上我们实现了最简单的新闻查询功能。
 
-接下来，我们希望用户能够回复数字看某条新闻的详情，这也能够通过小理的接口实现。小理对每篇新闻自动提取了摘要，我们可以将新闻的摘要存在临时变量里面，当用户输入数字的时候返回对应的结果。接下来，我们希望用户能够回复数字看某条新闻的详情，这也能够通过小理的接口实现。小理对每篇新闻自动提取了摘要，我们可以将新闻的摘要存在临时变量里面，当用户输入数字的时候返回对应的结果。
+接下来，我们希望用户能够回复数字看某条新闻的详情，这也能够通过小理的接口实现。小理对每篇新闻自动提取了摘要，我们可以将新闻的摘要存在临时变量里面，当用户输入数字的时候返回对应的结果。
 
-定义临时变量:
+首先定义临时变量:
 ```javascript
 let preNewsList = []
 ```
@@ -154,9 +157,77 @@ async function onMessage(msg) {
 
 }
 ```
-到此，一个简单的新闻查询机器人就大功告成啦。除了这个例子中用到的新闻标题和摘要字段，我们还提供了时间、图片、url等基本信息；我们还支持包含复杂条件组合的多关键词搜索。开发者可以用这些信息完成更加复杂的功能。
+到此，一个简单的新闻查询机器人就大功告成啦。除了这个例子中用到的新闻标题和摘要字段，接口还提供了时间、图片、url等基本信息；我们还支持包含复杂条件组合的多关键词搜索。开发者可以用这些接口完成更加复杂的功能。
 
 ## 日报定时发送
+
+微信群是目前进行兴趣交流、社群运营的一个重要工具。为了保持微信群的活跃度，群主往往需要定期在群里推送和群主题相关的聚合内容。例如，在一个人工智能交流群里，群主会定期整理人工智能相关资讯，在群里推送。
+
+利用wechaty和小理的日报接口，我们就能把这项任务完全自动化！先看效果图：
+
+![daily-snapshot](/download/2018/xiaoli-2.jpeg)
+
+小理会针对一些行业自动整理每天的相关新闻，生成一份日报，其中包含了多个主题版面，还能够通过智能分析算法自动生成新闻头条。接下来，我们就给机器人增加这个功能，让它每天定时在群里推送这样一份人工智能日报。
+首先实现```sendDaily```方法：
+
+```javascript
+async function sendDaily() {
+    const room = await bot.Room.find({topic: '小桔和小理'}) //get the room by topic
+    console.log('Sending daily to room ' + room.id)
+    let dailyText = await getDaily()
+    room.say(dailyText)
+}
+```
+我们找到需要推送的群，往里面发送文本形式的日报。```getDaily```方法通过小理接口拿到日报数据：
+
+```javascript
+/**
+ * query xiaoli's api for a daily news brief
+ */
+async function getDaily() {
+    const dailyUuid = 'e02e6f14-3212-4d44-9f3d-1d79538c38f6'
+    let dailyURL = 'https://api.xiaoli.ai/v1/api/briefing/' + dailyUuid
+    let postBody = {
+        "token": "45d898b459b4a739474175657556249a"
+    }
+    let okCallback = makeDailyResponseText
+    let resText = await fetchXiaoliAPI(dailyURL, postBody, okCallback)
+    return resText
+}
+
+
+function makeDailyResponseText(json_obj) {
+    let secList = json_obj.sections
+    let newsText = '今日' + json_obj.title + '\n\n'
+    for (let i = 0; i < Math.min(secList.length, 5); i++) {
+        newsText += secList[i].title + '\n'
+        let newsList = secList[i].contents
+        for (let j = 0; j < Math.min(newsList.length, 3); j++) {
+            newsText += (j+1) + '. ' + newsList[j].title + '\n'
+        }
+        newsText += '\n'
+    }
+    return newsText
+}
+```
+其中，```getDaily```方法中的```dailyUuid```变量是人工智能日报的唯一标识（更多日报主题看[这里](#daily)）。
+日报由多个section（版面）组成，每个section包含一个当日相关新闻的列表。
+回调函数```makeDailyResponseText```中，我们取日报中前5个section，每个section取前三个新闻，拼成字符串。
+
+接下来我们让机器人登录后定时调用```sendDaily```函数即可。这里我们用第三方模块[node-schedule](https://www.npmjs.com/package/node-schedule):
+```javascript
+const schedule = require('node-schedule')
+
+bot.on('login', onLogin)
+
+async function onLogin(user) {
+    schedule.scheduleJob('0 0 9 * * 1-5', sendDaily);
+}
+```
+
+以上代码表示机器人会在周一到周五每天9:00am准时给群里发送一份人工智能日报。
+
+到这里，这个又能查新闻，又能发日报的wechaty机器人就完成啦（完整代码看[这里](https://github.com/judaschrist/wechaty-getting-started/blob/master/examples/advanced/xiaoli-news-bot.js)）。
 
 ## <a name="append"></a>附：如何使用小理的内容接口
 
@@ -196,13 +267,29 @@ async function onMessage(msg) {
     }
 }
 ```
-> 嘿嘿，不小心搜出了桔子互动
 
+更多功能请开发者们参考小理的[接口文档](http://docs.xiaoli.ai)。
 
-更多功能请开发者们参考小理的[接口文档](http://docs.xiaoli.ai)，我们的系统目前属于内测阶段，尚未开放注册。调用接口需要使用验证token，为了方便大家测试，这里为大家准备了3个测试用的<a name="token">token</a>：
+### <a name="token"></a>测试Token
+
+我们的系统目前属于内测阶段，尚未开放注册。调用接口需要使用验证token，为了方便大家测试，这里为大家准备了3个测试用的token：
 ```
 45d898b459b4a739474175657556249a
 6d3b08ef9188c4d5c22739fb2f073b20
 ecefeb8778165cbdfb2bfaa66be42bfb
 ```
-以上token供大家测试功能使用，会有一定的频率和次数限制。如果有进一步的需求，欢迎大家通过我们的客服微信或者邮件和我们联系**todo联系方式**。
+以上token供大家测试功能使用，会有一定的频率和次数限制。
+
+### <a name="daily"></a>日报
+
+小理每天为近100个行业主题自动生成日报，并且支持用户自定义任意主题的日报。这里为大家准备了一些日报的dailyUuid供大家测试用：
+```
+互联网医疗日报: '60108efa-2a78-41d1-994d-cb53e0b66d2e'
+互联网社交娱乐日报: '07c3f2a1-9f2d-4e58-b324-54cd944adb17'
+互联网大数据日报: '6e442691-43b6-4e14-ae06-25089e53b9f6'
+云计算日报: 'bc30500e-3032-415d-9d40-c64e1f76b8e3'
+互联网金融日报: '639b5a58-1f86-463d-9358-d4369831711f'
+人工智能日报: 'e02e6f14-3212-4d44-9f3d-1d79538c38f6'
+```
+
+如果有进一步的需求，欢迎大家通过我们的客服微信或者邮件和我们联系**todo联系方式**。
