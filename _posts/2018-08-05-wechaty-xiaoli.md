@@ -42,7 +42,7 @@ async function onMessage(msg) {
 
 我们监听消息发送事件，并且对收到的消息进行意图识别。这里我们做最简单的实现：只要收到```XXX最新消息```这种模式的信息，就提取前面的```XXX```部分作为关键词，来进行新闻查询。目前一些开源或商业的解决方案，如科大讯飞等，可以实现更加准确的意图识别供开发者使用，这里不赘述。
 
-接下来的实现searchNews方法的业务逻辑。我们只要传入消息中的关键词，调用小理的新闻搜索API，对结果进行处理后返回即可：
+接下来实现searchNews方法的业务逻辑。我们只要传入消息中的关键词，调用小理的新闻搜索API，对结果进行处理后返回即可：
 
 ```javascript
 const fetch = require('node-fetch')
@@ -51,36 +51,58 @@ const fetch = require('node-fetch')
  * @param keyword: search keyword
  */
 async function searchNews(keyword) {
+    let searchURL = 'https://api.xiaoli.ai/v1/api/search/basic'
+    let postBody = {
+        "keywords": [keyword],
+        "token": "45d898b459b4a739474175657556249a"
+    }
+    let okCallback = makeSearchResponseText
+    let resText = await fetchXiaoliAPI(searchURL, postBody, okCallback);
+    return resText
+}
+```
+
+上面代码中，```fetchXiaoliAPI```是一个异步方法，使用了node-fetch这个第三方库进行网络调用，将小理API返回的JSON数据解析后返回具体的数据，或者错误信息：
+
+```javascript
+/**
+ * Fetch response from xiaoli API
+ * @param URL
+ * @param postBody
+ * @param okCallback: covert json to msg text when fetch succeeds
+ */
+async function fetchXiaoliAPI(URL, postBody, okCallback) {
     let resText = null
     try {
         let resp = await fetch(
-            'https://api.xiaoli.ai/v1/api/search/basic',
+            URL,
             {
                 method: "POST",
-                body: JSON.stringify({
-                    "keywords": [keyword],
-                    "token": "45d898b459b4a739474175657556249a"
-                }),
+                body: JSON.stringify(postBody), // put keywords and token in the body
             }
         )
         let resp_json = await resp.json()
         if (resp.ok) {
             // status code = 200, we got it!
-            resText = makeText(resp_json['data'])
+            resText = okCallback(resp_json['data'])
         } else {
-            // status code = 4XX, sth wrong with API
+            // status code = 4XX/5XX, sth wrong with API
             resText = 'API ERROR: ' + resp_json['msg']
         }
     } catch (err) {
         resText = 'NETWORK ERROR: ' + err
     }
-    return resText
+    return resText;
 }
+```
 
+成功获取数据的回调方法```makeSearchResponseText```提取返回数据中的的新闻标题（title字段），拼成一段字符串回复给用户。
+
+```javascript
 /**
  * parse the returned json for a list of news titles
  */
-function makeText(json_obj) {
+function makeSearchResponseText(json_obj) {
     preNewsList = []
     let newsList = json_obj.contents
     if (newsList.length === 0) {
@@ -89,12 +111,14 @@ function makeText(json_obj) {
     let newsText = ''
     for (let i = 0; i < newsList.length; i++) {
         newsText += (i+1) + '. ' + newsList[i].title + '\n'
+        preNewsList.push(newsList[i].news_abstract) // Save the news details for later queries
     }
     newsText += "\n回复\"#+数字\"(例如\"#1\")看详情"
     return newsText
 }
+
 ```
-这里使用了node-fetch这个第三方库进行网络调用，将小理API返回的JSON数据解析后，提取其中的新闻标题（title字段），拼成一段字符串返回，这样我们就实现了最简单的新闻查询功能。
+以上我们实现了最简单的新闻查询功能。
 
 接下来，我们希望用户能够回复数字看某条新闻的详情，这也能够通过小理的接口实现。小理对每篇新闻自动提取了摘要，我们可以将新闻的摘要存在临时变量里面，当用户输入数字的时候返回对应的结果。接下来，我们希望用户能够回复数字看某条新闻的详情，这也能够通过小理的接口实现。小理对每篇新闻自动提取了摘要，我们可以将新闻的摘要存在临时变量里面，当用户输入数字的时候返回对应的结果。
 
@@ -105,7 +129,7 @@ let preNewsList = []
 
 查询新闻时暂存这些新闻的摘要（news_abstract字段）:
 ```javascript
-function makeText(json_obj) {
+function makeSearchResponseText(json_obj) {
     //...
     for (let i = 0; i < newsList.length; i++) {
         //...
