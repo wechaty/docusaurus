@@ -5,7 +5,7 @@ date: 2018-08-13 09:00 +0800
 author: judaschrist
 ---
 
-> Author: [@judaschrist](https://github.com/judaschrist), Co-founder, CTO of [小理智能](https://xiaoli.ai/) 
+> Author: [@judaschrist](https://github.com/judaschrist), Co-founder & CTO of [小理智能](https://xiaoli.ai/) 
 
 ![用wechaty实现智能内容机器人](/download/2018/wechaty-xiaoli.jpeg)
 
