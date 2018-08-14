@@ -7,7 +7,7 @@ author: LittleStrong
 
 > Author: [@LittleStrong](https://github.com/zhoumh1988)
 
-![登录界面](/download/2018/wechaty-lightbot-1.png)
+![logo](/download/2018/wechaty-lightbot-logo.jpg)
 
 感谢 @lijiarui 邀请我分享我们的LIGHTBOT统计分析管理平台，希望能够帮助开发者使用wechaty提供更多的业务方向。
 
@@ -253,6 +253,7 @@ bot.on('message', async function (message) {
 
 ## 统计分析平台
 
+<img src="/download/2018/wechaty-lightbot-1.png" height="200" alt="登录界面">
 
 ### 架构设计
 > 渲染引擎是React
