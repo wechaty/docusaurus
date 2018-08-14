@@ -1,7 +1,7 @@
 ---
 title: "Docker Wechaty Getting Started"
 author: zixia
-date: '2018-08-14 18:14:52 +0800'
+date: '2018-08-14 8:14:52 +0800'
 published: true
 ---
 
