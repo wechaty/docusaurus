@@ -9,11 +9,12 @@ author: judaschrist
 
 ![用wechaty实现智能内容机器人](/download/2018/wechaty-xiaoli.jpeg)
 
-感谢 @lijiarui 邀请我分享我们的智能内容服务，以及在wechaty上的应用场景，希望能够帮助开发者使用wechaty提供更加丰富多样的自动化服务。
+感谢 @lijiarui 邀请我分享我们的智能内容服务，以及在wechaty上的应用场景。
 
-我们在小理智能开发了一套智能内容服务系统，能够为各个领域提供智能资讯接口，包括新闻搜索，主题订阅，日报订阅等，帮助开发者将内容服务整合到自己的系统和产品中。
-通过这些内容接口，开发者可以很方便的用小理智能的内容丰富自己机器人的功能（关于小理内容接口的详细介绍看[这里](#append)）。
-以下给出两个典型的应用场景：**智能资讯问答**以及**日报定时发送**。
+我们在小理智能开发了一套智能内容服务系统，能够为各个领域提供智能资讯接口，包括新闻搜索、主题订阅、日报订阅等，帮助开发者将内容服务整合到自己的系统和产品中（关于小理内容接口的详细介绍看[这里](#append)）。
+
+在小理内部，我们用这些接口进行社群自动化运营，比如给群里定时推送某一个主题的新闻资讯，自动维护群的活跃度，并且带来额外流量。
+以下给出两个典型的应用场景：**智能资讯问答**以及**日报定时推送**。
 
 <!--more-->
 ## 智能资讯问答
@@ -227,7 +228,7 @@ async function onLogin(user) {
 
 以上代码表示机器人会在周一到周五每天9:00am准时给群里发送一份人工智能日报。
 
-到这里，这个又能查新闻，又能发日报的wechaty机器人就完成啦（完整代码看[这里](https://github.com/judaschrist/wechaty-getting-started/blob/master/examples/advanced/xiaoli-news-bot.js)）。
+到这里，这个又能查新闻，又能发日报的wechaty机器人就完成啦（完整代码看[这里](https://github.com/Chatie/wechaty-getting-started/tree/1305ada4278e7d19932a2c824e5d7eae5eb41f0f/examples/third-party/xiaoli)）。
 
 ## <a name="append"></a>附：如何使用小理的内容接口
 
