@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 published: true
 ---
 
-> Author: [Huan LI](https://github.com/zixia), Microsoft AI MVP & RD, Author of `wechaty`.
+> Author: [Huan LI](https://github.com/zixia), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003061) & [RD](https://rd.microsoft.com/en-us/huan-li), Author of `wechaty`.
 
 ![BotFramework](/download/2018/botframework.jpg)
 
