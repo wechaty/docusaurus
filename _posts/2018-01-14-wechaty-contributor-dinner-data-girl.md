@@ -14,11 +14,11 @@ Contributors are:
 
 1. [李佳芮](https://github.com/lijiarui), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003226), Founder & CEO of [BotOrange](http://botorange.com)
 2. [王海良](https://github.com/samurais), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003060), Founder & CEO of [ChatOpera](https://www.chatopera.com/)
-3. [李卓桓](https://github.com/zixia), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003061), [Microsoft Regional Director](https://rd.microsoft.com/en-us/huan-li), Author of [Wechaty](https://github.com/chatie/wechaty)
+3. [李卓桓](https://github.com/zixia), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003061) & [Regional Director](https://rd.microsoft.com/en-us/huan-li), Author of [Wechaty](https://github.com/chatie/wechaty)
 4. [尹婷](https://github.com/TingYinHelen), [Microsoft VS MVP](https://mvp.microsoft.com), Frontend Developer in ChengDu
-5. 梁迪 [KRIS](https://www.linkedin.com/in/christina-liang-590575147/), CPM at Microsoft
+5. [梁迪](https://www.linkedin.com/in/christina-liang-590575147/), CPM at Microsoft
 6. Rainbird
-7. 令狐曦
+7. 令狐曦, Graduate Student from BUPT, Baidu UNIT Lecturer
 8. [谢扬](https://github.com/leinue), ByteDance Hacker, former CTO of Awesome Port
 9. [胡莺夕](https://github.com/huyingxi), Graduate Student from BUPT, Algrithm Intern at ByteDance.com
 10. [王宁](https://github.com/wnbupt), Graduate Sgtudent from BUPT, Frontend Intern at Alipay.com
