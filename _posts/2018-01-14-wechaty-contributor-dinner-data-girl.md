@@ -12,16 +12,16 @@ This Wechaty Contributors Dinner is sponsored by Data Girl.
 
 Contributors are:
 
-1. [李佳芮](https://github.com/lijiarui), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003226), Founder & CEO of [BotOrange.com](http://botorange.com)
+1. [李佳芮](https://github.com/lijiarui), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003226), Founder & CEO of [BotOrange](http://botorange.com)
 2. [王海良](https://github.com/samurais), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003060), Founder & CEO of [ChatOpera](https://www.chatopera.com/)
-3. [尹婷](https://github.com/TingYinHelen), [Microsoft VS MVP](https://mvp.microsoft.com), Frontend Developer in ChengDu
-4. [李卓桓](https://github.com/zixia) [Microsoft Regional Director](https://rd.microsoft.com/en-us/huan-li), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003061), Author of Wechaty
+3. [李卓桓](https://github.com/zixia), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003061), [Microsoft Regional Director](https://rd.microsoft.com/en-us/huan-li), Author of [Wechaty](https://github.com/chatie/wechaty)
+4. [尹婷](https://github.com/TingYinHelen), [Microsoft VS MVP](https://mvp.microsoft.com), Frontend Developer in ChengDu
 5. 梁迪 [KRIS](https://www.linkedin.com/in/christina-liang-590575147/), CPM at Microsoft
-1. Rainbird
-1. 令狐曦
-1. [谢扬](https://github.com/leinue), ByteDance Hacker, former CTO of Awesome Port
-1. [胡莺夕](https://github.com/huyingxi), Graduate Student from BUPT, Algrithm Intern at ByteDance.com
-1. [王宁](https://github.com/wnbupt), Graduate Sgtudent from BUPT, Frontend Intern at Alipay.com
+6. Rainbird
+7. 令狐曦
+8. [谢扬](https://github.com/leinue), ByteDance Hacker, former CTO of Awesome Port
+9. [胡莺夕](https://github.com/huyingxi), Graduate Student from BUPT, Algrithm Intern at ByteDance.com
+10. [王宁](https://github.com/wnbupt), Graduate Sgtudent from BUPT, Frontend Intern at Alipay.com
 
 <!--more-->
 
