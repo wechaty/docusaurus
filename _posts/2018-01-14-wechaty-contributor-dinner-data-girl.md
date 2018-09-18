@@ -8,9 +8,9 @@ published: true
 
 ![Wechaty Contributors][contributors-image]
 
-This Wechaty Contributors Dinner is sponsored by Data Girl.
+> This Wechaty Contributors Dinner is sponsored by Data Girl.
 
-Contributors are:
+The above contributors are:
 
 1. [李佳芮](https://github.com/lijiarui), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003226), Founder & CEO of [BotOrange](http://botorange.com)
 2. [王海良](https://github.com/samurais), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003060), Founder & CEO of [ChatOpera](https://www.chatopera.com/)
