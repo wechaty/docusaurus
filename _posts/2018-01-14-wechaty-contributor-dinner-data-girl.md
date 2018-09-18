@@ -21,7 +21,7 @@ The above contributors are:
 7. 令狐曦, Graduate Student from BUPT, Baidu AI UNIT Lecturer
 8. [谢扬](https://github.com/leinue), ByteDance Hacker, former CTO of Awesome Port
 9. [胡莺夕](https://github.com/huyingxi), Graduate Student from BUPT, NLP Algrithm Intern at Microsoft Research Aisa
-10. [王宁](https://github.com/wnbupt), Graduate Sgtudent from BUPT, Frontend Intern at Alipay
+10. [王宁](https://github.com/wnbupt), Graduate Student from BUPT, Frontend Intern at Alipay
 
 <!--more-->
 
