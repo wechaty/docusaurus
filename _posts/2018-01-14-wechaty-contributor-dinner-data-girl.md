@@ -18,10 +18,10 @@ The above contributors are:
 4. [尹婷](https://github.com/TingYinHelen), [Microsoft VS MVP](https://mvp.microsoft.com), Frontend Developer in ChengDu
 5. [梁迪](https://www.linkedin.com/in/christina-liang-590575147/), CPM at Microsoft
 6. Rainbird
-7. 令狐曦, Graduate Student from BUPT, Baidu UNIT Lecturer
+7. 令狐曦, Graduate Student from BUPT, Baidu AI UNIT Lecturer
 8. [谢扬](https://github.com/leinue), ByteDance Hacker, former CTO of Awesome Port
-9. [胡莺夕](https://github.com/huyingxi), Graduate Student from BUPT, Algrithm Intern at ByteDance.com
-10. [王宁](https://github.com/wnbupt), Graduate Sgtudent from BUPT, Frontend Intern at Alipay.com
+9. [胡莺夕](https://github.com/huyingxi), Graduate Student from BUPT, NLP Algrithm Intern at Microsoft Research Aisa
+10. [王宁](https://github.com/wnbupt), Graduate Sgtudent from BUPT, Frontend Intern at Alipay
 
 <!--more-->
 
