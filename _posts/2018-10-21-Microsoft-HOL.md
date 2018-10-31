@@ -181,15 +181,19 @@ LUIS的开发流程更像是一个教学过程：开发者是老师，LUIS App�
 
 ### 任务2-将LUIS RESTFUL API 接入wechaty
 1.安装官方的’luis-sdk’,并将获取的key 和 Application ID 填入：
+
 ![wechaty-4](/download/2018/microsoft-hol-wechaty-4.png)
 
 2.根据已有的LUIS 配置写示例代码：
+
 ![wechaty-5](/download/2018/microsoft-hol-wechaty-5.png)
 
 3.运行 npm run start：
+
 ![wechaty-6](/download/2018/microsoft-hol-wechaty-6.png)
 
 用户发送，即可得到测试回复：
+
 ![demo](/download/2018/microsoft-hol-demo.png)
 
 注意：
