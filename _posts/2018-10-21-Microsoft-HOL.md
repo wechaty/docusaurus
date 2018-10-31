@@ -7,12 +7,12 @@ date: '2018-10-21 22:57:52 +0800'
 
 > Author: [李佳芮](https://github.com/lijiarui/)，桔子互动创始人，微软AI MVP。
 
-![logo](/download/2018/microsft-hol-chatbot.jpeg)
+![logo](/download/2018/microsoft-hol-chatbot.jpeg)
 
 这是我在[2018微软技术暨生态大会](https://mp.weixin.qq.com/s/Hm2tc_V4b3EKOlBx4PxEuA) 动手实验室的分享，2018微软技术暨生态大会10月24日在上海世博中心如约而至。 作为微软最负盛名的技术峰会，此次大会将带领参会者深入领略技术精髓，感受微软黑科技的魅力，探讨在云计算、物联网、移动互联网、大数据和人工智能的发展洪流中，如何洞察新技术与新变革，聚焦解决问题与创造价值，如何开启企业数字化转型之旅。
 
  <!--more-->
- 
+
 本次实验帮助开发者从实际业务场景出发，围绕微软Luis 和 Typescript 做实践课，让开发者轻松的做一个微信聊天机器人。另外，对于希望转变为人工智能的传统产品经理或传统工程师而言，可以帮助你快速了解行业背景并快速上手，对于技术决策者，可以在此阶段清楚地了解聊天机器人的局限性和发展。
 
 ## Luis 介绍
@@ -21,7 +21,7 @@ LUIS (Language Understanding Intelligent Service，https://www.luis.ai) 是微�
 通过LUIS平台，非NLP专业的开发者可以轻松创建一个LUIS App，并通过标注所期望的输入(自然语言指令)和输出(意图和实体)来进一步“培养” 它。在整个开发过程中，开发者并不需要了解背后算法的细节，只需要清晰地定义自己需要让机器理解的用户意图和实体即可。LUIS App 可以是任何传统的应用，包括社交媒体应用，聊天机器人，实体机器人，车载以及支持语音的桌面程序应用。
 LUIS的开发流程更像是一个教学过程：开发者是老师，LUIS App是学生。老师通过不停地告知学生正确的语义解析结果来完成教学。一个好的教学过程是一个“训练+实践”的闭环：标注一定量的起始数据；训练得到语义理解模型；对模型进行必要的测试；发布模型并应用到真实用户场景；甄选应用日志中的语句；继续标注并更新模型。这个过程周而复始，通过不停地迭代开发，不停地改善理解模型，使其越来越接近人类的理解能力。
 
-![luis](/download/2018/microsft-hol-luis.png)
+![luis](/download/2018/microsoft-hol-luis.png)
 
 ## 实验目标
 
@@ -56,26 +56,26 @@ LUIS的开发流程更像是一个教学过程：开发者是老师，LUIS App�
 创建一个LUIS 模型可以分为3个步骤: 创建APP，训练模型，发布模型。下面将会进行详细的讲解：
 
 ### 任务1-创建APP
-1. 登陆 www.luis.ai  如果之前注册过就sign in, 注册过直接login 就可以了：
+1.登陆 www.luis.ai  如果之前注册过就sign in, 注册过直接login 就可以了：
 
 ![luis-1](/download/2018/microsoft-hol-luis-1.png)
 
-2. 点击左上角的“Create New App” 创建一个新的应用
+2.点击左上角的“Create New App” 创建一个新的应用
 
 ![luis-2](/download/2018/microsoft-hol-luis-2.png)
 
-3. 在弹框中，给你的LUIS模型起个名字，并设置描述，然后选一个应用环境，我们选择中文。然后点击“Done”
+3.在弹框中，给你的LUIS模型起个名字，并设置描述，然后选一个应用环境，我们选择中文。然后点击“Done”
 
 ![luis-3](/download/2018/microsoft-hol-luis-3.png)
 
-4. 然后进去LUIS 模型的主页面，接下来去训练LUIS 模型。
+4.然后进去LUIS 模型的主页面，接下来去训练LUIS 模型。
 
 ![luis-4](/download/2018/microsoft-hol-luis-4.png)
 
 ### 任务2-增加意图和实体
 接下来，我们为我们的APP增加两个意图，意图表示用户希望执行的任务。定义一组意图，对应于用户希望在APP中执行的操作。
 
-1. 点击‘Create new intent’ 创建一个 ‘BookFlight’ 的意图，并把这个意图命名为‘BookFlight’点击‘Done’
+1.点击‘Create new intent’ 创建一个 ‘BookFlight’ 的意图，并把这个意图命名为‘BookFlight’点击‘Done’
 
 ![luis-5](/download/2018/microsoft-hol-luis-5.png)
 
@@ -84,15 +84,15 @@ LUIS的开发流程更像是一个教学过程：开发者是老师，LUIS App�
 ![luis-7](/download/2018/microsoft-hol-luis-7.png)
 
 
-2. 输入一个可能的订票话术，比如“帮我订一张去上海的机票”，然后回车：
+2.输入一个可能的订票话术，比如“帮我订一张去上海的机票”，然后回车：
 
 ![luis-8](/download/2018/microsoft-hol-luis-8.png)
 
-3. 推荐最少写5个类似的话术，你会发现这些话术会自动的被标注为BookFlight 的意图。
+3.推荐最少写5个类似的话术，你会发现这些话术会自动的被标注为BookFlight 的意图。
 
 ![luis-9](/download/2018/microsoft-hol-luis-9.png)
 
-4. 回到点击‘Intent’再添加一个 ‘GetWeather’ 的意图，像刚刚一样，也至少输入5个有表示天气的话术：
+4.回到点击‘Intent’再添加一个 ‘GetWeather’ 的意图，像刚刚一样，也至少输入5个有表示天气的话术：
 
 ![luis-10](/download/2018/microsoft-hol-luis-10.png)
 ![luis-11](/download/2018/microsoft-hol-luis-11.png)
@@ -109,13 +109,13 @@ LUIS的开发流程更像是一个教学过程：开发者是老师，LUIS App�
 - Regex: 通过正则表达式识别出来的实体
 - Pattern.any: 是一种长度可变的占位符，在模板中使用，用来标出实体的起始位置和结束位置。比如搜索书籍： 谁写了{BookTitle}[?]
 
-1. 点击‘Create new entity’ 创建新的实体.
+1.点击‘Create new entity’ 创建新的实体.
 
-2. 在弹框中将实体命名为‘Location’，选择实体类别为’Hierarchical’
+2.在弹框中将实体命名为‘Location’，选择实体类别为’Hierarchical’
 
-3. 选择实体类别后，会自动跳出’Child name’,点击‘Add a child entity’增加两个Child name, 分为为’ToLocation’和 ‘FromLocation’
+3.选择实体类别后，会自动跳出’Child name’,点击‘Add a child entity’增加两个Child name, 分为为’ToLocation’和 ‘FromLocation’
 
-4. 最后，点击’Done’完成保存这个实体。
+4.最后，点击’Done’完成保存这个实体。
 
 ![luis-12](/download/2018/microsoft-hol-luis-12.png)
 
@@ -123,21 +123,20 @@ LUIS的开发流程更像是一个教学过程：开发者是老师，LUIS App�
 
 接下来，我们增加一个预定义的时间实体。 
 
-1. 点击‘Add prebuild Entity’
+1.点击‘Add prebuild Entity’
 
 ![luis-13](/download/2018/microsoft-hol-luis-13.png)
 
-2. 预定义实体现在还不支持中文，我们可以选择’number’先来感受一下。
+2.预定义实体现在还不支持中文，我们可以选择’number’先来感受一下。
 
 ![luis-14](/download/2018/microsoft-hol-luis-14.png)
 
-###任务3-训练模型
+### 任务3-训练模型
 我们定义了意图和实体以后，需要进行模型的训练。点击右上角的’Train’。当按钮由红色变为绿色以后，训练成功。为了让模型越来越好用，需要添加更多的标注好的意图和实体。
 
 ![luis-15](/download/2018/microsoft-hol-luis-15.png)
 
 点击‘Publish’可以将这个App发布出去。最后就可以整合到微信机器人中。
-
 
 ## 实验2--创建一个微信机器人
 
@@ -156,7 +155,7 @@ LUIS的开发流程更像是一个教学过程：开发者是老师，LUIS App�
 
 ###  任务2-运行代码
 
-1. 运行 npm run start
+1.运行 npm run start
 
 ![wechaty-3](/download/2018/microsoft-hol-wechaty-3.png)
 
@@ -164,31 +163,31 @@ LUIS的开发流程更像是一个教学过程：开发者是老师，LUIS App�
 
 ### 任务1-发布LUIS版本
 
-1. 点击LUIS的Publish获取APPID和KEY
+1.点击LUIS的Publish获取APPID和KEY
 
 ![integrate-1](/download/2018/microsoft-hol-integrate-1.png)
 
-2. 发布成功后，可以看到绿色的成功提示，点击Refer to the list of endpoints切换到管理页面：
+2.发布成功后，可以看到绿色的成功提示，点击Refer to the list of endpoints切换到管理页面：
 
 ![integrate-2](/download/2018/microsoft-hol-integrate-2.png)
 
-3. 获取Authoring Key:
+3.获取Authoring Key:
 
 ![integrate-3](/download/2018/microsoft-hol-integrate-3.png)
 
-4. 点击 Application Information, 获取APP ID
+4.点击 Application Information, 获取APP ID
 
 ![integrate-4](/download/2018/microsoft-hol-integrate-4.png)
 
 ### 任务2-将LUIS RESTFUL API 接入wechaty
-1. 安装官方的’luis-sdk’,并将获取的key 和 Application ID 填入：
-![wechaty-4](/download/2018/microsoft-hol-wechaty-5.png)
+1.安装官方的’luis-sdk’,并将获取的key 和 Application ID 填入：
+![wechaty-4](/download/2018/microsoft-hol-wechaty-4.png)
 
-2. 根据已有的LUIS 配置写示例代码：
-![wechaty-5](/download/2018/microsoft-hol-wechaty-6.png)
+2.根据已有的LUIS 配置写示例代码：
+![wechaty-5](/download/2018/microsoft-hol-wechaty-5.png)
 
-3. 运行 npm run start：
-![wechaty-6](/download/2018/microsoft-hol-wechaty-7.png)
+3.运行 npm run start：
+![wechaty-6](/download/2018/microsoft-hol-wechaty-6.png)
 
 用户发送，即可得到测试回复：
 ![demo](/download/2018/microsoft-hol-demo.png)
