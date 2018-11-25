@@ -2,9 +2,6 @@ blog.chatie.io
 --------------
 [Chatie Official Blog](https://blog.chatie.io)
 
-WRITING BLOG
-------------
-
 ## HOW TO POST BLOG
 
 1. Write blog in markdown
@@ -45,12 +42,10 @@ Example
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3eq8wJfCAWs" frameborder="0" allowfullscreen></iframe>
 ```
 
-JEKYLL THEME
+WRITING BLOG
 ------------
 
-minima: <https://github.com/jekyll/minima>
-
-# Blogging Style
+## Blogging Style
 
 1. [Do not include Date in URL](https://github.com/Chatie/blog/issues/79)
 
@@ -72,3 +67,8 @@ bundle install
 ```
 bundle exec jekyll serve --watch
 ```
+
+JEKYLL THEME
+------------
+
+minima: <https://github.com/jekyll/minima>
