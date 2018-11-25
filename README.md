@@ -5,23 +5,12 @@ blog.chatie.io
 WRITING BLOG
 ------------
 
-## Online Editor
+## HOW TO POST BLOG
 
-http://prose.io/#chatie/blog.chatie.io/tree/master/_posts
-
-## Install
-```
-sudo apt install ruby-bundler
-sudo apt install ruby-dev
-sudo gem install ffi -v '1.9.18'
-sudo gem install bundler
-bundle install
-```
-
-## View
-```
-bundle exec jekyll serve --watch
-```
+1. Write blog in markdown
+2. Add your blog to `_post` folder
+3. Add related image to `download` folder
+4. Pull Request
 
 ### CONTRIBUTE GUIDELINE
 
@@ -64,3 +53,22 @@ minima: <https://github.com/jekyll/minima>
 # Blogging Style
 
 1. [Do not include Date in URL](https://github.com/Chatie/blog/issues/79)
+
+
+## Online Editor
+
+http://prose.io/#chatie/blog.chatie.io/tree/master/_posts
+
+## Install
+```
+sudo apt install ruby-bundler
+sudo apt install ruby-dev
+sudo gem install ffi -v '1.9.18'
+sudo gem install bundler
+bundle install
+```
+
+## View
+```
+bundle exec jekyll serve --watch
+```
