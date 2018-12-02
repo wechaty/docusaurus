@@ -4,11 +4,16 @@ blog.chatie.io
 
 ## HOW TO POST BLOG
 
-1. Write blog in markdown
-2. Add your blog to `_post` folder
-3. Add related image to `download` folder
-4. Pull Request
-5. Done!
+1. Fork it
+2. Create your blog branch (git checkout -b your-blog)
+3. Write your blog in markdown
+4. Add your blog to `_post` folder
+5. Add related image to `download` folder
+6. Commit your changes (git commit -am 'added a blog')
+7. Push to the branch
+7. Create new Pull Request
+
+Done!~
 
 ## CONTRIBUTE GUIDELINE
 
