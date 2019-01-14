@@ -12,9 +12,14 @@ published: true
 
 [Microsoft BotFramework](https://dev.botframework.com/) is a robust platform that supports almost all kinds of the instance messengers like Facebook messenger, Skype, Slack, and backed by the powerful Cognitive Services like LUIS.ai, QnAMaker.ai, Azure Machine Learning. BotBuilder is a powerful SDK provides all we need when we are developing a ChatBot. I started learning them about 18 months ago, and I love them very much.
 
-However, it does not support Wechat **PERSONAL** Account, so I decided to make some fun on it: connect Wechat PERSONAL Account to the BotBuilder by creating a new Connector: [botbuilder-wechaty-connector](https://github.com/zixia/botbuilder-wechaty-connector).
+However, it does not support Wechat **Individual** Account, so I decided to make some fun on it: connect Wechat PERSONAL Account to the BotBuilder by creating a new Connector: [botbuilder-wechaty-connector](https://github.com/zixia/botbuilder-wechaty-connector).
 
 <!--more-->
+
+### Update
+
+- Jan 14, 2019: The [botbuilder-wechaty-adapter](https://npmjs.com/package/botbuilder-wechaty-adapter) realeased for Bot Builder V4 support.
+- Apr 18, 2018: The [botbuilder-wechaty-connecter](https://npmjs.com/package/botbuilder-wechaty-connector) realeased for Bot Builder V3 support.)
 
 The Connector is a bridge between the BotBuilder and the Instance Messenger, in our case, Wechat.
 
