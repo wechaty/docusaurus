@@ -11,8 +11,6 @@ date: '2019-04-02 17:30:52 +0800'
 微信每日说，每日自动发送微信消息给你心爱的人。
 <!--more-->
 
-## wechatBot
-微信每日说，每日自动发送微信消息给你心爱的人
 
 ## 项目介绍
 
@@ -68,7 +66,8 @@ github:[https://github.com/gengchen528/wechatBot](https://github.com/gengchen528
 index.js
 
 关于微信的登录，定时任务的创建，发送信息的获取都在这个文件里
-    
+
+```  
     /**
      * WechatBot
      *  - https://github.com/gengchen528/wechatBot
@@ -197,11 +196,12 @@ index.js
     bot.start()
     	.then(() => console.log('开始登陆微信'))
     	.catch(e => console.error(e))
-
+```
 
 
 superagent/index.js
 
+```
     const superagent = require('../config/superagent')
     const config = require('../config/index')
     const cheerio = require('cheerio')
@@ -238,35 +238,40 @@ superagent/index.js
     module.exports ={
       getOne,getWeather
     }
- 
+ ```
     
 ## 项目运行
 
 由于需要安装chromium, 所以要先配置一下镜像，注意由于wechaty的限制，最好使用node10以上版本
 
 npm
-
-    npm config set registry https://registry.npm.taobao.org
-    npm config set disturl https://npm.taobao.org/dist
-    npm config set puppeteer_download_host https://npm.taobao.org/mirrors
+```
+npm config set registry https://registry.npm.taobao.org
+npm config set disturl https://npm.taobao.org/dist
+npm config set puppeteer_download_host https://npm.taobao.org/mirrors
+```
 yarn
 
-    yarn config set registry https://registry.npm.taobao.org
-    yarn config set disturl https://npm.taobao.org/dist
-    yarn config set puppeteer_download_host https://npm.taobao.org/mirrors
+```
+yarn config set registry https://registry.npm.taobao.org
+yarn config set disturl https://npm.taobao.org/dist
+yarn config set puppeteer_download_host https://npm.taobao.org/mirrors
+```
 然后进行项目安装
 
-    git clone git@github.com:gengchen528/wechatBot.git
-    cd wechatBot
-    npm install 或 cnpm install
-   
+```
+git clone git@github.com:gengchen528/wechatBot.git
+cd wechatBot
+npm install 或 cnpm install
+``` 
 参数配置
 
 wechatBot/config/index.js
 
  ## 项目相关配置
-    config/index.js
-    
+config/index.js
+
+ ```   
     // 配置文件
     module.exports ={
       // 基础定时发送功能配置项（必填项）
@@ -292,11 +297,13 @@ wechatBot/config/index.js
       ROOMCODEURL:'http://image.bloggeng.com/qun.png',//群二维码url链接(与本地群二维码路径选填一个)
       ROOMLOCALPATH:'./static/qun.png',//本地群二维码图片路径（与群url选填一个）
     }
-
+```
 开始运行
 
-    npm run start
-    然后掏出你的手机，最好使用小号，扫描控制台的二维码即可
+```
+npm run start
+```
+然后掏出你的手机，最好使用小号，扫描控制台的二维码即可
 
 ## 待解决问题
 
@@ -304,37 +311,41 @@ wechatBot/config/index.js
 
 ## 常见问题处理
 
+
 1. 我的微信号无法登陆
+
 
     从2017年6月下旬开始，使用基于web版微信接入方案存在大概率的被限制登陆的可能性。 主要表现为：无法登陆Web 微信，但不影响手机等其他平台。 验证是否被限制登陆： https://wx.qq.com 上扫码查看是否能登陆。 更多内容详见：
 
     [Can not login with error message: 当前登录环境异常。为了你的帐号安全，暂时不能登录web微信。](https://github.com/Chatie/wechaty/issues/603)
 
-    [[谣言] 微信将会关闭网页版本](https://github.com/Chatie/wechaty/issues/990)
+    [谣言] 微信将会关闭网页版本](https://github.com/Chatie/wechaty/issues/990)
 
     [新注册的微信号无法登陆](https://github.com/Chatie/wechaty/issues/872)
 
 2. 执行npm run start时无法安装puppet-puppeteer&&Chromium
-
     * Centos7下部署出现以下问题
-        ![](/download/2019/koa-wechaty-7.jpeg)
-        
-        问题原因:[https://segmentfault.com/a/1190000011382062](https://segmentfault.com/a/1190000011382062)
-        
-        解决方案:
-        
-            #依赖库
-            yum install pango.x86_64 libXcomposite.x86_64 libXcursor.x86_64 libXdamage.x86_64 libXext.x86_64 libXi.x86_64 libXtst.x86_64 cups-libs.x86_64 libXScrnSaver.x86_64 libXrandr.x86_64 GConf2.x86_64 alsa-lib.x86_64 atk.x86_64 gtk3.x86_64 -y
-        
-            #字体
-            yum install ipa-gothic-fonts xorg-x11-fonts-100dpi xorg-x11-fonts-75dpi xorg-x11-utils xorg-x11-fonts-cyrillic xorg-x11-fonts-Type1 xorg-x11-fonts-misc -y
+
+    ![](/download/2019/koa-wechaty-7.jpeg)
+    问题原因:[https://segmentfault.com/a/1190000011382062](https://segmentfault.com/a/1190000011382062)
+
+    解决方案:
+    ```
+    #依赖库
+    yum install pango.x86_64 libXcomposite.x86_64 libXcursor.x86_64 libXdamage.x86_64 libXext.x86_64 libXi.x86_64 libXtst.x86_64 cups-libs.x86_64 libXScrnSaver.x86_64 libXrandr.x86_64 GConf2.x86_64 alsa-lib.x86_64 atk.x86_64 gtk3.x86_64 -y
+    ```
+
+    ```
+    #字体
+    yum install ipa-gothic-fonts xorg-x11-fonts-100dpi xorg-x11-fonts-75dpi xorg-x11-utils xorg-x11-fonts-cyrillic xorg-x11-fonts-Type1 xorg-x11-fonts-misc -y
+    ```
     *  windows下，下载puppeteer失败
-    
-       链接：https://pan.baidu.com/s/1YF09nELpO-4KZh3D2nAOhA 
-       提取码：0mrz 
-       
-       把下载的文件放到如下图路径，并解压到当前文件夹中即可
-       ![](/download/2019/koa-wechaty-8.jpeg)
+        
+    链接：https://pan.baidu.com/s/1YF09nELpO-4KZh3D2nAOhA 
+    提取码：0mrz 
+    把下载的文件放到如下图路径，并解压到当前文件夹中即可
+    ![](/download/2019/koa-wechaty-8.jpeg)
+
 3. 支持 红包、转账、朋友圈… 吗
 
    支付相关 - 红包、转账、收款 等都不支持

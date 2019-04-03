@@ -14,23 +14,9 @@ date: '2019-04-02 18:30:52 +0800'
 * 你是否加班到很晚，而忘记了今天和别人有约？
 * 你是不是下班还记得拿快递，到家后才发现忘记了？
 * 你是不是想学习一下如何做一个微信小秘书？
-如果以上问题你有一条符合的话，那就可以安心读下去了，因为微信小秘书可以帮你解决大部分的问题。当然没有符合的话，也可以继续读下去，因为既然来了就说明你还是有兴趣的😆。
+如果以上问题你有一条符合的话，那就可以安心读下去了，因为微信小秘书可以帮你解决大部分的问题。当然没有符合的话，也可以继续读下去，因为既然来了就说明你还是有兴趣的😆。如果小秘书不符合你要求的话[《用Node+wechaty写一个爬虫脚本每天定时给女(男)朋友发微信暖心话》](https://juejin.im/post/5c77c6bef265da2de6611cff)也可以看一下奥！
 
 <!--more-->
-
-## 前言
-开篇连连问？
-
-* 你是不是有闲置的微信号?
-* 你想不想有个小秘书定时提醒你将要做的事情？
-* 你是否为忘记一些纪念日而懊恼？
-* 你是否加班到很晚，而忘记了今天和别人有约？
-* 你是不是下班还记得拿快递，到家后才发现忘记了？
-* 你是不是想学习一下如何做一个微信小秘书？
-
-如果以上问题你有一条符合的话，那就可以安心读下去了，因为微信小秘书可以帮你解决大部分的问题。当然没有符合的话，也可以继续读下去，因为既然来了就说明你还是有兴趣的😆。
-
-当然小秘书不符合你要求的话[《用Node+wechaty写一个爬虫脚本每天定时给女(男)朋友发微信暖心话》](https://juejin.im/post/5c77c6bef265da2de6611cff)也可以看一下奥！
 
 ## 技术栈
 [node](https://nodejs.org/zh-cn/): 建议最新稳定版，由于wechaty依赖，所以至少node > 10以上版本
@@ -93,6 +79,7 @@ index.js
 
 微信登录，定时任务初始化，小秘书具体实现的主要文件。接口`getScheduleList`在每次登陆后会从数据库拉取未执行的定时任务并进行初始化，防止意外掉线后无法恢复定时任务。同时每次设置定时任务，接口`addSchedule`会直接向数据库中插入一条任务记录并把任务添加到定时任务列表中。每次任务执行完毕后，接口`updateSchedule`都会更新数据库中指定任务的状态，防止任务重复执行。
 
+```
     const { Wechaty, Friendship } = require('wechaty')
     const schedule = require('./config/schedule')
     const { FileBox } = require('file-box')
@@ -238,13 +225,14 @@ index.js
     bot.start()
         .then(() => { console.log('开始登陆微信') })
         .catch(e => console.error(e))
-    
+```  
 
 untils/index.js
 
 这里主要是输入关键词后的处理方法，在`index.js中`，我把用户输入的关键词根据空格来进行分词处理，放到一个数组中，然后传入`contentDistinguish（）`方法中。根据关键词的不同来进行处理是否是属于每日任务，当日定时任务，还是属于指定日期任。因为不同的定时任务类型，在时间格式上是有所区分的，每日任务我采用的是`Cron风格定时器`，类似`0 30 8 * * *`(每天8点30提醒)这种，而指定日期时间和当日任务我使用的是`new Date('2019-9-10 12:30:00')`来处理。
 同时为了兼容性，在日期处理上采用了全角替换半角的冒号格式，内容上为了更符合`秘书`的身份，将主语我全部替换成你，也处理了自己给自己创建定时任务与你给别人创建定时任务内容上的不同。
 
+```
     getToday = () => { // 获取今天日期
         const date = new Date()
         let year = date.getFullYear()
@@ -286,6 +274,7 @@ untils/index.js
         convertTime,
         contentDistinguish
     }
+```
 
 ### koa核心代码
 
@@ -297,7 +286,7 @@ koa服务默认使用3008端口，如果修改的话，需要在index.js中修�
 
 config/koa.js
 
-
+```
     const Koa = require("koa")
     const Router = require("koa-router")
     const bodyParser = require('koa-bodyparser')
@@ -351,14 +340,14 @@ config/koa.js
     app.listen(3008, () => {
         console.log('[demo] route-use-middleware is starting at port 3008')
     })
-    
+ ```   
     
 ### mongose核心代码
 
 mongodb/config.js
 
 这里主要是MongoDB的主要配置文件，使用了mongoose链接MongoDB数据库，默认端口27017，创建了一个名为`wechatAssitant`的库
-
+```
     const mongoose = require("mongoose")
     
     const db_url = 'mongodb://localhost:27017/wechatAssitant'
@@ -382,9 +371,10 @@ mongodb/config.js
     module.exports = mongoose
 
 mongodb/schema.js
-
+```
 在Mongoose里一切都是从Schema开始的，每一个Schema都会映射到MongoDB的一个collection上。Schema定义了collection里documents的模板（或者说是框架）,如下代码定义了定时任务的Schema：
 
+```
     const mongoose = require('./config')
     const Schema = mongoose.Schema
     
@@ -399,13 +389,13 @@ mongodb/schema.js
     })
     
     module.exports = mongoose.model('Assistant', assistant)
-
+```
 
 mongodb/model.js
 
 为了使用定义好的Schema，我们需要把Schema转换成我们可以使用的model(其实是把Schema编译成model，所以对于Schema的一切定义都要在compile之前完成)。也就是说model才是我们可以进行操作的handle，具体实现代码`mongoose.model('Assistant', assistant)`，这里我们已经在schema.js文件中直接导出，直接在model.js中引用
 
-
+```
     const Assistant = require('./schema')
     
     module.exports = {
@@ -436,7 +426,8 @@ mongodb/model.js
             })
         }
     }
-    
+ ```
+
 ## 项目运行
 
 由于需要安装chromium,所以要先配置一下镜像，注意由于wechaty的限制，必须使用node10以上版本
@@ -444,25 +435,32 @@ mongodb/model.js
 ### npm或者yarn 配置淘宝源
 
 **(很重要，防止下载chromium失败，因为下载文件在150M左右，所以在执行npm run start后需要等待下载大概一两分钟以上，请耐心等待)**
+
 npm
 
-    npm config set registry https://registry.npm.taobao.org
-    npm config set disturl https://npm.taobao.org/dist
-    npm config set puppeteer_download_host https://npm.taobao.org/mirrors
+```
+npm config set registry https://registry.npm.taobao.org
+npm config set disturl https://npm.taobao.org/dist
+npm config set puppeteer_download_host https://npm.taobao.org/mirrors
+
+```
 yarn
 
-    yarn config set registry https://registry.npm.taobao.org
-    yarn config set disturl https://npm.taobao.org/dist
-    yarn config set puppeteer_download_host https://npm.taobao.org/mirrors
+```
+yarn config set registry https://registry.npm.taobao.org
+yarn config set disturl https://npm.taobao.org/dist
+yarn config set puppeteer_download_host https://npm.taobao.org/mirrors
 
+```
 
 ### 下载项目安装依赖
 
-    git clone git@github.com:gengchen528/wechat-assistant.git
-    cd wechat-assistant.git
-    npm install
-    npm run start
-    
+```
+git clone git@github.com:gengchen528/wechat-assistant.git
+cd wechat-assistant.git
+npm install
+npm run start
+```  
 ### 扫描登录
 
 用微信扫描控制台显示的二维码，在手机上同意登录即可。使用其他微信发送指定格式文字进行添加定时任务。
