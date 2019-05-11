@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 居然有人能忘记吃饭？写个微信机器人提醒他
+title: 居然有人能忘记吃饭？写个微信机器人提醒他。
 date: 2019-05-11 13:00 +0800
 author: 犀利豆
 ---
 
 > Author: [犀利豆](https://xilidou.com/) 北邮本科，University of Leicester EE 研究生，Java后端开发，目前就职知乎。
+> 
 > [原文地址](https://xilidou.com/2019/05/07/wx-bot/#more)
 
 居然有人忘记吃饭？？？
@@ -18,7 +19,7 @@ author: 犀利豆
 
 [Github 地址](https://github.com/diaozxin007/remindEat)
 
-使用方法
+## 使用方法:
 
 ```shell
 git clone https://github.com/diaozxin007/remindEat
@@ -50,7 +51,7 @@ node remindEat.js
 
 ![](/download/2019/remind-eat-2.jpg)
 
-实现原理：
+## 实现原理：
 
 这个机器人主要使用两个库：
 
@@ -59,6 +60,6 @@ node remindEat.js
 
 其实核心的原理，就在 wechaty 登录以后，注册了一个定时任务。这个定时任务，用于在饭点的时候，注册另外一个 schedule ，同时这个 schedule 是为了实现每分钟一次的提示。
 
-当对方按照指定的话术服务短信的时候，我们只需要调用每分钟提醒一次的 schedule cancel() 方法。
+当对方按照指定的话术服务短信的时候，我们只需要调用每分钟提醒一次的 `schedule cancel()` 方法。
 
 希望每一个人都能按时吃饭，谢谢大家。
