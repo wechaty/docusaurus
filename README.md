@@ -1,37 +1,41 @@
-blog.chatie.io
---------------
+# blog.chatie.io
+
 [Chatie Official Blog](https://blog.chatie.io)
 
 ## HOW TO POST BLOG
 
 1. Fork it
-2. Create your blog branch (git checkout -b your-blog)
-3. Write your blog in markdown
-4. Add your blog to `_post` folder
-5. Add related image to `download` folder
-6. Commit your changes (git commit -am 'added a blog')
-7. Push to the branch
-7. Create new Pull Request
+1. Create your blog branch (git checkout -b your-blog)
+1. Write your blog in markdown
+1. Add your blog to `_post` folder
+1. Add related image to `download` folder
+1. Commit your changes (git commit -am 'added a blog')
+1. Push to the branch
+1. Create new Pull Request
 
 Done!~
 
 ## CONTRIBUTE GUIDELINE
 
 ### 1. Add Blog Header
-All blog should has title, author, date...   
+
+All blog should has title, author, date...
+
 Example as follows:
-```
+
+```yaml
 ---
  layout: post
  title: "'Score Your Face Photo' a ML&Wechaty practice"
  date: 2017-09-18 09:00 +0800
  author: huyingxi
  ---
- 
+
  > Author: [@huyingxi](https://github.com/huyingxi/wechaty_selfie) enjoying ML&Wechaty at BUPT
 ```
 
 ### 2. Writing Style
+
 * Keep all filenames & url as lowercase, and use `-` to connect words instead of space. e.g. `2017-10-06-wechat-pc-impactor` instead of `2017-10-06-WeChat PC Impactor`
 * Find a good image for the blog to make it more beautiful.
 * Embed the photo & video before publishing, save all external file to the blog `/download/2018` directory.
@@ -39,14 +43,18 @@ Example as follows:
 see more: [Do not include Date in URL](https://github.com/Chatie/blog/issues/79)
 
 ### 3. Add `<!--more-->` Section
+
 Add `<!--more-->` section for your abstract part, it will show on the blog homepage, or the blog homepage will show all your blog content.
 
 ### 4. Just Commit Related Files
+
 Please do not commit unrelated files.
 
 ### 5. Add Vedios
+
 Example
-```
+
+```html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3eq8wJfCAWs" frameborder="0" allowfullscreen></iframe>
 ```
 
@@ -59,16 +67,18 @@ http://prose.io/#chatie/blog.chatie.io/tree/master/_posts
 ## RUN LOCALHOST
 
 ### Install
-```
-sudo apt install ruby-bundler
-sudo apt install ruby-dev
+
+```shell
+sudo apt install -y ruby-bundler
+sudo apt install -y ruby-dev
 sudo gem install ffi -v '1.9.18'
 sudo gem install bundler
 bundle install
 ```
 
 ### View
-```
+
+```shell
 bundle exec jekyll serve --watch
 ```
 
