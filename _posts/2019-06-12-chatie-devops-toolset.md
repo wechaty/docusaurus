@@ -20,7 +20,7 @@ The powerful and easy to use Chatie DevOps Toolset:
 
 <!--more-->
 
-DevOps is king. Chatie dependends DevOps for years and it works great. We have dozens of projects with repositories hosted on GitHub, and publish them to NPM right after a commut, through the DevOps pipeline, which mainly under the control of Travis CI.
+DevOps is king. Chatie dependends DevOps for years and it works great. We have dozens of projects with repositories hosted on GitHub, and publish them to NPM right after a commit & push, through the DevOps pipeline, which mainly under the control of Travis CI.
 
 We had build lots of helper scripts to do those tasks automatically, and today, we had published most of them to NPM modules, so that we will no longer needs to copy them everywhere, and we can use NPM version to manage them very well.
 
