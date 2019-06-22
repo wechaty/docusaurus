@@ -5,7 +5,7 @@ author: Leo_chen
 date: '2019-06-20 17:40:52 +0800'
 ---
 
-> 作者: [Leo_chen](https://github.com/gengchen528/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [三步教你用Node做一个微信哄女友(基友)神器，小白可上手](https://juejin.im/post/5d09fa9f51882508bd2065f4)
+> 作者: [Leo_chen](https://github.com/gengchen528/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [三步教你用Node做一个微信哄女友(基友)神器，小白可上手](/download/2019/everyday-header.png)
 
 ![koa2](https://pic1.zhimg.com/v2-c31bb2019113dd9cde2aeeb1307ab955_1200x500.jpg)
 三步教你用Node做一个微信脱单神器，小白可上手！也可以用来哄女友，哄女(男\基)友我们程序猿(媛)是认真的
@@ -35,9 +35,9 @@ github: [https://github.com/gengchen528/wechatBot](https://github.com/gengchen52
 ## 效果预览
 在三步走教学之前，先放上效果看一下
 
-![](https://pic4.zhimg.com/80/v2-e1c2774a849a5f3965d91f882efc5f7f_hd.jpg)
+![](/download/2019/everyday-1.png)
 
-![](https://pic1.zhimg.com/80/v2-55a9ce1338e4a6be577ec453afc4e580_hd.jpg)
+![](/download/2019/everyday-2.png)
 
 可以看到在指定的时间就会收到发送的消息，包括天气信息，天气提醒，还有你们在一起多少天了。当开启机器人后，女朋友就可以和小助手对话了，不过目前开源机器人的api都不是非常的智能，匹配的语义可能不是那么准确。所以有时候女朋友生气了，千万记得不要开启机器人，不然回答的不对是会被女朋友暴打的😨！
 
@@ -61,11 +61,11 @@ node官网：[https://nodejs.org/zh-cn/](https://nodejs.org/zh-cn/)
 
 > Linux下安装node详细步骤参考 [https://www.cnblogs.com/liuqi/p/6483317.html](https://www.cnblogs.com/liuqi/p/6483317.html)
 
-![](https://pic4.zhimg.com/80/v2-4719ed12b9ced21e310774b209ca7eb7_hd.jpg)
+![](/download/2019/everyday-3.png)
 
 安装完成后，按住`键盘的shift+鼠标右键`，选择在此处打开命令窗口。在命令行执行`node -v`出现版本号说明安装成功
 
-![](https://pic4.zhimg.com/80/v2-11ed00d6c1e04ded4f387bcf20a6f2a7_hd.jpg)
+![](/download/2019/everyday-4.png)
 
 ### 二、下载代码并配置
 
@@ -74,27 +74,27 @@ node官网：[https://nodejs.org/zh-cn/](https://nodejs.org/zh-cn/)
 * 访问此地址，直接下载zip包到本地桌面，然后解压；
 
 
-![](https://pic1.zhimg.com/80/v2-168a73f960c595d05966c3e4cb829e58_hd.jpg)
+![](/download/2019/everyday-5.png)
 
 
 * 进到目录中，找到`config`目录下的`index.js`文件
 
-![](https://pic4.zhimg.com/80/v2-3274609ebb79f039964ea23682f2f54f_hd.jpg)
+![](/download/2019/everyday-6.png)
 
-![](https://pic1.zhimg.com/80/v2-0ff8416efa4bc52ab71ea3d774a791e4_hd.jpg)
+![](/download/2019/everyday-7.png)
 
 * 选中`index.js`文件，右击选择打开方式，没有安装代码编辑器的可以用记事本打开。有代码编辑器的直接用代码编辑器打开,建议非开发人员可以下载一个`notepad++`，下载链接链接:[https://pan.baidu.com/s/1mWdEOaTQ1D6kihQveN1JHw](https://pan.baidu.com/s/1mWdEOaTQ1D6kihQveN1JHw)  密码:fn9g，开发人员就各自发挥吧，相信每个人都有自己用的比较舒服的编辑器我就不推荐了
 
 
-![](https://pic3.zhimg.com/80/v2-8b698ec06a3dfbe4231a72517bd9993a_hd.jpg)
+![](/download/2019/everyday-8.png)
 
 * 配置文件中需要修改的地方，女朋友的微信备注姓名`NAME`必须要换一下，不然你发给我就不好了😂，微信昵称`NICKNAME`最好也写一下，你和女朋友的纪念日`MEMORIAL_DAY`就不用说了，也要改一下。
 * 如果要发送天气信息，女朋友所在城市`CITY`肯定也是必须修改的，地区`LOCATION`不知道怎么拼写的话，我建议可以查一下墨迹的官网[https://tianqi.moji.com/weather/china/](https://tianqi.moji.com/weather/china/)
 
-![](https://pic1.zhimg.com/80/v2-5b36f1ae9db5b0ff6aa41889ba715f8c_hd.jpg)
+![](/download/2019/everyday-9.png)
 * 在墨迹天气找到对应地区的天气后，查看一下网页地址栏，绿色标记的拼音填入`CITY`，红色标记的拼音填入`LOCATION`
 
-![](https://pic4.zhimg.com/80/v2-8466cbd09db53b37c21aa48b42fc6b07_hd.jpg)
+![](/download/2019/everyday-10.png)
 
 * 每天发送的时间`SENDDATE`，这里的规则可以参见`schedule`目录下的`index.js`文件。这里`0 06 8 * * *`代表的是每天的早上8点06分0秒，我们通常只需配置前三个就可以了。
 * 如果需要开启机器人聊天的话，需要把`AUTOREPLY`设置为`true`，这里我放弃了图灵机器人，原因上面也说了，改用了天行机器人，但是不要抱太大希望，它并不是那么智能😂。目前由于我自己账号的api次数还比较多，就在项目代码中开放给大家使用了，这里就不放出来，下载代码后只要修改一下`AUTOREPLY`就可以自动回复了。
@@ -122,20 +122,20 @@ module.exports = {
 
 配置完成好文件别忘记保存了，保存好就回到项目的主目录吧。这时候`win`系统的话就按住`键盘的shift+鼠标右键`，选择在此处打开命令窗口。
 
-![](https://pic2.zhimg.com/80/v2-349a0c22ad1f8523e089888e0d9f3c7d_hd.jpg)
+![](/download/2019/everyday-11.png)
 
 * 然后输入`npm install`。
 
-![](https://pic3.zhimg.com/80/v2-1714940b71c8e5fcd61cab522e007856_hd.jpg)
+![](/download/2019/everyday-12.png)
 
 * 等待安装完成后输入`npm run start`，这时会下载一个文件，因为比较大，所以要多等一下，等待出现二维码的时候就可以拿出手机微信扫一扫登录了。接下来就是一顿神对话了😆
 
 
 
-![](https://pic3.zhimg.com/80/v2-ed1302d1777de6803b308de0c17be88e_hd.jpg)
+![](/download/2019/everyday-13.png)
 
 
-![](https://pic4.zhimg.com/80/v2-302fc14a7943367d110c5809647ee773_hd.jpg)
+![](/download/2019/everyday-14.png)
 
 * 如果执行`npm run start`遇到失败的话，先执行`npm install wechaty-puppet-puppeteer@^0.17.14  --no-save`然后再执行`npm run start`
 
@@ -159,7 +159,7 @@ module.exports = {
 2. 执行npm run start时无法安装puppet-puppeteer&&Chromium
 
     * Centos7下部署出现以下问题
-        ![](https://pic2.zhimg.com/80/v2-09df46c023f99c8a5498cd3814d62235_hd.jpg)
+        ![](/download/2019/everyday-15.png)
         
         问题原因:[https://segmentfault.com/a/1190000011382062](https://segmentfault.com/a/1190000011382062)
         
@@ -183,10 +183,10 @@ module.exports = {
 
 如果有微信号无法登录和有技术问题需要交流，可以加我的微信小助手后发送`加群`，会自动发送交流群的二维码，同时此小号有更多高级功能等待你的发现。（注：添加好友后会在20s内自动通过）
 
-![](https://pic4.zhimg.com/80/v2-ecb44fbc79a1715f50278a9a679a1327_hd.jpg)
+![](/download/2019/everyday-16.png)
 
 赶快亲自试一试吧，相信你会挖掘出更多好玩的功能
 
 另外我的公众号已经接入微软小冰，关注后发语音会有小姐姐的声音陪你聊天，也可以和她文字聊天，有兴趣可以试试看，单身的欢迎来撩
 
-![](https://pic4.zhimg.com/80/v2-e0bf1abc3fcaaac87aa98ed45614de5b_hd.jpg)
+![](/download/2019/everyday-17.png)
