@@ -183,7 +183,8 @@ fi
 ### 3. Scripts for Installing Chatie DevOps Toolsets for Existing Project
 
 ```shell
-sudo npm i -g pkg-jq
+# package.json jq modification util
+npm install --save-dev pkg-jq
 
 
 #
@@ -218,14 +219,14 @@ npm uninstall \
 
 npm install --save-dev @chatie/eslint-config
 
-pkg-jq -i ".scripts.\"lint:es\"=\"eslint --ignore-pattern fixtures/ 'src/**/*.ts' 'tests/**/*.ts' 'scripts/**/*.ts' 'examples/**/*.ts' 'bin/**/*.ts'\""
+npx pkg-jq -i ".scripts.\"lint:es\"=\"eslint --ignore-pattern fixtures/ 'src/**/*.ts' 'tests/**/*.ts' 'scripts/**/*.ts' 'examples/**/*.ts' 'bin/**/*.ts'\""
 
 #
 # @chatie/git-scripts
 #
 
 npm uninstall git-scripts
-pkg-jq -i 'del(.git)'
+npx pkg-jq -i 'del(.git)'
 
 npm install --save-dev @chatie/git-scripts
 
@@ -240,7 +241,7 @@ npm uninstall \
 npm install --save-dev @chatie/semver
 
 #
-# pkg-jq & tstest
+# tstest
 #
 npm uninstall \
   @types/blue-tape \
@@ -250,7 +251,6 @@ npm uninstall \
   sinon-test \
 
 npm install --save-dev \
-  pkg-jq \
   tstest \
 
 #
@@ -258,6 +258,6 @@ npm install --save-dev \
 #
 
 # Set default npm publish tag to @next instead of @latest
-pkg-jq -i '.publishConfig.tag="next"'
+npx pkg-jq -i '.publishConfig.tag="next"'
 
 ```
