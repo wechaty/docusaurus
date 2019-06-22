@@ -180,7 +180,7 @@ else
 fi
 ```
 
-### 3. Install Chatie DevOps Toolsets for a Exiusting Repository
+### 3. Scripts for Installing Chatie DevOps Toolsets for Existing Project
 
 ```shell
 sudo npm i -g pkg-jq
@@ -257,6 +257,7 @@ npm install --save-dev \
 # Other Settings
 #
 
+# Set default npm publish tag to @next instead of @latest
 pkg-jq -i '.publishConfig.tag="next"'
 
 ```
