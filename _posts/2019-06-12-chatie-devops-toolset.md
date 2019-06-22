@@ -243,7 +243,7 @@ npm install --save-dev @chatie/semver
 #
 npm uninstall \
   @types/blue-tape \
-  @type/sinon \
+  @types/sinon \
   blue-tape \
   sinon \
   sinon-test \
