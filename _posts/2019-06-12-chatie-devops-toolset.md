@@ -210,13 +210,14 @@ npm install --save-dev @chatie/tsconfig
 rm -f .eslintrc.*
 
 npm uninstall \
+  @wwwouter/tslint-contrib \
   eslint \
   markdownlint-cli \
   tslint \
   tslint-config-standard \
   tslint-eslint-rules \
   tslint-jsdoc-rules \
-
+  
 npm install --save-dev @chatie/eslint-config
 
 npx pkg-jq -i ".scripts.\"lint:es\"=\"eslint --ignore-pattern fixtures/ 'src/**/*.ts' 'tests/**/*.ts' 'scripts/**/*.ts' 'examples/**/*.ts' 'bin/**/*.ts'\""
