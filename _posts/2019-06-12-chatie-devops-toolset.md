@@ -213,6 +213,7 @@ npm uninstall \
   markdownlint-cli \
   tslint \
   tslint-config-standard \
+  tslint-eslint-rules \
 
 npm install --save-dev @chatie/eslint-config
 
