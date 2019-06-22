@@ -214,6 +214,7 @@ npm uninstall \
   tslint \
   tslint-config-standard \
   tslint-eslint-rules \
+  tslint-jsdoc-rules \
 
 npm install --save-dev @chatie/eslint-config
 
