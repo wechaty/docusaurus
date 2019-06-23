@@ -5,9 +5,9 @@ author: Leo_chen
 date: '2019-06-20 17:40:52 +0800'
 ---
 
-> 作者: [Leo_chen](https://github.com/gengchen528/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [三步教你用Node做一个微信哄女友(基友)神器，小白可上手](/download/2019/everyday-header.png)
+> 作者: [Leo_chen](https://github.com/gengchen528/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [三步教你用Node做一个微信哄女友(基友)神器，小白可上手](https://juejin.im/post/5d09fa9f51882508bd2065f4)
 
-![koa2](https://pic1.zhimg.com/v2-c31bb2019113dd9cde2aeeb1307ab955_1200x500.jpg)
+![](/download/2019/everyday-header.png)
 三步教你用Node做一个微信脱单神器，小白可上手！也可以用来哄女友，哄女(男\基)友我们程序猿(媛)是认真的
 <!--more-->
 
