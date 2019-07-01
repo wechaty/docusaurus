@@ -218,7 +218,7 @@ npm uninstall \
 
 npm install --save-dev @chatie/eslint-config
 
-pkg-jq -i ".scripts.\"lint:es\"=\"eslint --ignore-pattern fixtures/ 'src/**/*.ts' 'tests/**/*.ts' 'scripts/**/*.ts' 'examples/**/*.ts' 'bin/**/*.ts'\""
+pkg-jq -i ".scripts.\"lint:es\"=\"eslint --ignore-pattern tests/fixtures/ '{bin,examples,scripts,src,tests}/**/*.ts'\""
 
 #
 # @chatie/git-scripts
