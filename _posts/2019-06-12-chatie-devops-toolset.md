@@ -40,6 +40,29 @@ npm install @chatie/tsconfig
 
 Then it will create a very nice `tsconfig.json` at the root of project for you, and you will also get the latest TypeScript & ts-node binarys installed.
 
+```json
+{
+  "extends": "@chatie/tsconfig",
+  "compilerOptions": {
+    "outDir": "dist",
+  },
+  "exclude": [
+    "node_modules/",
+    "dist/",
+    "tests/fixtures/",
+  ],
+  "include": [
+    "app/**/*.ts",
+    "bin/*.ts",
+    "bot/**/*.ts",
+    "examples/**/*.ts",
+    "scripts/**/*.ts",
+    "src/**/*.ts",
+    "tests/**/*.spec.ts",
+  ],
+}
+```
+
 After extends from @chatie/tsconfig from your tsconfig.json, you will have the chatie version of the TypeScript Configuration, it aim the following goals:
 
 1. Support the latest esnext ECMAScript
@@ -76,6 +99,16 @@ Git Hooks Integration for Chatie Projects.
 This module is a wrapper of the NPM module git-scripts, it provide following additional features:
 
 - pre-push hook had been set to run npm run lint and then npm verion patch for better code quality and version management.
+
+By adding the following json entrance to package.json:
+
+```json
+  "git": {
+    "scripts": {
+      "pre-push": "npx git-scripts-pre-push"
+    }
+  }
+```
 
 ## 4. [@chatie/semver](https://github.com/chatie/semver)
 
