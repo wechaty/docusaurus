@@ -7,7 +7,7 @@ published: true
 
 > Author: [Huan LI](https://github.com/zixia), Machine Learning Ph.D.
 
-![reduce weight](/download/2018/huan-reduce-weight.jpg)
+![reduce weight](/assets/2018/huan-reduce-weight.jpg)
 
 > Picture Credit: [Thumber.com](https://www.tumblr.com/search/the%20fastest%20way%20to%20lose%20weight)
 

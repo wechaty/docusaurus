@@ -116,7 +116,7 @@ web端:微信里的用户发言会直接发布到文字直播间，被标注为�
 ps: 这几天听闻微信网页端要封的消息，尚不知真假。不过，技术本身更加吸引我。倘若web端被封杀，肯定会涌现出新的解决方案，对技术本身而言，也不算一件坏事情。
 
 
-  [1]: /download/2017/wechaty-electron-making-your-wachaty-as-a-client-service1.jpg
-  [2]: /download/2017/wechaty-electron-making-your-wechaty-as-a-client-service2.jpg
-  [3]: /download/2017/wechaty-electron-making-your-wachaty-as-a-client-service3.jpg
-  [4]: /download/2017/wechaty-electron-making-your-wechaty-as-a-client-service4.jpg
+  [1]: /assets/2017/wechaty-electron-making-your-wachaty-as-a-client-service1.jpg
+  [2]: /assets/2017/wechaty-electron-making-your-wechaty-as-a-client-service2.jpg
+  [3]: /assets/2017/wechaty-electron-making-your-wachaty-as-a-client-service3.jpg
+  [4]: /assets/2017/wechaty-electron-making-your-wechaty-as-a-client-service4.jpg

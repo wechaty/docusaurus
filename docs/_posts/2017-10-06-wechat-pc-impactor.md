@@ -8,7 +8,7 @@ published: true
 > Author: [@h4dex](https://github.com/h4dex) 会使用各种计算机语言写出 Hello World 的设计师（<http://icefox.org/>）
 
 
-![Wechat Windows Impactor](/download/2017/h4dex-inject.png)
+![Wechat Windows Impactor](/assets/2017/h4dex-inject.png)
 
 
 因为易语言代码有的朋友们可能看起来怪怪的 如果没有接触过它，并不是那么通俗易懂。所以改成了cpp代码供审阅.  由于书写仓促 错误的部分希望大家指正，小弟在此多谢！
@@ -493,7 +493,7 @@ CALLBACK 类 因为在原代码中没有公开，是调用其他人开发的 eco
 
 ```
  
-下载 ： [Download Src](/download/2017/wechat-windows-impactor-src.zip)
+下载 ： [Download Src](/assets/2017/wechat-windows-impactor-src.zip)
 
 
 完整下载地址：附带微信2.4.5.73安装包 没有微信2.4.1.79

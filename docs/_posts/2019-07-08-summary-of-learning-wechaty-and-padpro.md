@@ -1,11 +1,10 @@
 ---
-
 title: "Summary of Learning Wechaty and Padpro"
-author: su_chang
+author: su-chang
 date: '2019-07-08 16:55:12 +0800'
 ---
 
-> 作者: [su_chang](https://github.com/su-chang)，Node.js全栈工程师
+> 作者: [Su Chang](https://github.com/su-chang)，Node.js全栈工程师
 
 总结 wechaty 的基础用法；
 介绍 wechaty 与 puppet 及 padpro 模块之间的关系、数据流向、事件监听机制等；

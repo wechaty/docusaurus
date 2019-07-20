@@ -80,7 +80,7 @@ published: true
 主办
 Rockq社区
 
-[nodeparty-banner]: /download/2016/nodeparty-banner.jpg
-[nodeparty-speaker]: /download/2016/nodeparty-speaker.jpg
-[nodeparty-speaker2]: /download/2016/nodeparty-speaker2.jpg
+[nodeparty-banner]: /assets/2016/nodeparty-banner.jpg
+[nodeparty-speaker]: /assets/2016/nodeparty-speaker.jpg
+[nodeparty-speaker2]: /assets/2016/nodeparty-speaker2.jpg
 

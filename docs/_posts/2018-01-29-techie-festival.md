@@ -133,9 +133,9 @@ Server酱，他是一个能从服务器推报警和日志到手机的工具，�
 
 文章最后还是提一下我自己的志向，我希望做一个面向女性和儿童的程序员社区，希望有更多的女性加入到编程行业，成为行业的引领者。同时大力提倡儿童编程，如果想跟我聊一聊的，下面是我的联系方式。
 
-<img src="/download/2018/helen-weixin.jpg" width = "200" />
+<img src="/assets/2018/helen-weixin.jpg" width = "200" />
 
-[techie-festival]: /download/2018/helen-techie-festival.jpeg
-[docker-screenshot]: /download/2018/helen-docker-screenshot.png
-[node-screenshot]: /download/2018/helen-node-screenshot.png
-[run-ding]: /download/2017/lijiarui-write-bot-run-ding.jpeg
+[techie-festival]: /assets/2018/helen-techie-festival.jpeg
+[docker-screenshot]: /assets/2018/helen-docker-screenshot.png
+[node-screenshot]: /assets/2018/helen-node-screenshot.png
+[run-ding]: /assets/2017/lijiarui-write-bot-run-ding.jpeg

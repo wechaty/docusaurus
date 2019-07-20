@@ -46,8 +46,8 @@ thanks for wechaty!
 
 Jas, 3/12/2016
 
-[jaslin-case]: /download/2016/jaslin-case-study.jpg
-[jaslin-record]: /download/2016/jaslin-use-case-record.jpg
-[jaslin-send]: /download/2016/jaslin-use-case-send.jpg
-[jaslin-statistics]: /download/2016/jaslin-use-case-statistics.jpg
+[jaslin-case]: /assets/2016/jaslin-case-study.jpg
+[jaslin-record]: /assets/2016/jaslin-use-case-record.jpg
+[jaslin-send]: /assets/2016/jaslin-use-case-send.jpg
+[jaslin-statistics]: /assets/2016/jaslin-use-case-statistics.jpg
 

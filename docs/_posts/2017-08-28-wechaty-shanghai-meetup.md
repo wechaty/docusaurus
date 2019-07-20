@@ -11,7 +11,7 @@ excerpt_separator: <!--more-->
 Most of the WeChaty core team are in Beijing, but there are a few of us here in Shanghai too.
 [@lijiarui](https://github.com/lijiarui) was in town for a few days and so we had a small get together!
 
-![shanghai wechaty peeps]({{site.baseurl}}/download/2017/dcsan-shanghai-meetup.jpg)
+![shanghai wechaty peeps]({{site.baseurl}}/assets/2017/dcsan-shanghai-meetup.jpg)
 
 We talked devops, chatbot games, NLP and more!
 

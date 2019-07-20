@@ -34,9 +34,9 @@ If you are using Wechaty and you love Wechaty, from now you can buy our logo sti
 [^1]: Disclaimer: The seller is not Chatie/Wechaty but a 3rd party partner.
 [^2]: Worldwide: International shipping with PayPal/Credit Card support.
 
-[wechaty-sticker]: /download/2017/wechaty-sticker.jpg
-[wechaty-sticker-mac]: /download/2017/wechaty-sticker-mac.jpg
-[wechaty-sticker-size]: /download/2017/wechaty-sticker-size.jpg
-[wechaty-sticker-mac-inside]: /download/2017/wechaty-sticker-mac-inside.jpg
-[wechaty-sticker-ipad]: /download/2017/wechaty-sticker-ipad.jpg
-[wechaty-sticker-windows]: /download/2017/wechaty-sticker-windows.jpg
+[wechaty-sticker]: /assets/2017/wechaty-sticker.jpg
+[wechaty-sticker-mac]: /assets/2017/wechaty-sticker-mac.jpg
+[wechaty-sticker-size]: /assets/2017/wechaty-sticker-size.jpg
+[wechaty-sticker-mac-inside]: /assets/2017/wechaty-sticker-mac-inside.jpg
+[wechaty-sticker-ipad]: /assets/2017/wechaty-sticker-ipad.jpg
+[wechaty-sticker-windows]: /assets/2017/wechaty-sticker-windows.jpg

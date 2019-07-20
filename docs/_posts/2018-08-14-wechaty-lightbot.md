@@ -7,7 +7,7 @@ author: LittleStrong
 
 > Author: [@LittleStrong](https://github.com/zhoumh1988), WEB Development Manager at [iTrustdata](http://itrustdata.com/), 喜欢挖坑与填坑😝
 
-![logo](/download/2018/wechaty-lightbot-logo.jpg)
+![logo](/assets/2018/wechaty-lightbot-logo.jpg)
 
 感谢 @lijiarui 邀请我分享我们的LIGHTBOT统计分析管理平台，希望能够帮助开发者使用wechaty提供更多的业务方向。
 
@@ -253,7 +253,7 @@ bot.on('message', async function (message) {
 
 ## 统计分析平台
 
-<img src="/download/2018/wechaty-lightbot-1.png" height="200" alt="登录界面">
+<img src="/assets/2018/wechaty-lightbot-1.png" height="200" alt="登录界面">
 
 ### 架构设计
 > 渲染引擎是React
@@ -278,37 +278,37 @@ bot.on('message', async function (message) {
 > 
 > 支持查询条件筛选
 
-![敏感词管理](/download/2018/wechaty-lightbot-2.png)
+![敏感词管理](/assets/2018/wechaty-lightbot-2.png)
 
 #### 敏感词管理
 > 对敏感词的管理
-![敏感词管理](/download/2018/wechaty-lightbot-3.png)
+![敏感词管理](/assets/2018/wechaty-lightbot-3.png)
 
 #### 聊天管理
 ##### 聊天记录
 > 根据群，用户角色和时间进行分页查询
 
-![聊天记录](/download/2018/wechaty-lightbot-4.png)
+![聊天记录](/assets/2018/wechaty-lightbot-4.png)
 ##### 对话模式
 > 根据群，特定用户，时间进行数据筛选
 > 
 > 过滤掉多余人员的发言，只显示筛选用户的聊天记录
 
-![聊天记录](/download/2018/wechaty-lightbot-5.png)
+![聊天记录](/assets/2018/wechaty-lightbot-5.png)
 
 #### 用户管理
 > 快速查看用户基本信息
 > 
 > 设置用户的角色（用户，水军，管理员），从而进行群活跃分析。
 
-![用户管理](/download/2018/wechaty-lightbot-6.png)
+![用户管理](/assets/2018/wechaty-lightbot-6.png)
 
 #### 群组管理
 > 查看群组信息
 > 
 > 设置责任账户（这个是为了体现运营人员水平而设置的）
 
-![用户管理](/download/2018/wechaty-lightbot-7.png)
+![用户管理](/assets/2018/wechaty-lightbot-7.png)
 
 #### 统计分析
 

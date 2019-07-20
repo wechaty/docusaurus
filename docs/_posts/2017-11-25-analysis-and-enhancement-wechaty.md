@@ -436,4 +436,4 @@ function glueToAngular() {
 也感谢耐心看完文章的你，希望我的文章没有浪费你的时间。
 谢谢！
 
-  [1]: /download/2017/binsee-wechaty-structure.png
+  [1]: /assets/2017/binsee-wechaty-structure.png

@@ -7,7 +7,7 @@ author: kaffa
 
 > [@kaffa](https://github.com/kaffa) a life-long learner / a beginner investor / a coffee mocha lover. My blog is [https://kaffa.im/](https://kaffa.im/) 
 
-![在 Windows 10 下安装 Wechaty](/download/2018/wechaty-installation-in-windows.png)
+![在 Windows 10 下安装 Wechaty](/assets/2018/wechaty-installation-in-windows.png)
 
 感谢 @zixia @lijiarui 让我在此分享我在 Windows 10 Home 平台安装 Wechaty 的经历，希望我对安装过程的记录和分析能帮助在此平台下安装 Wechaty 的人。
 

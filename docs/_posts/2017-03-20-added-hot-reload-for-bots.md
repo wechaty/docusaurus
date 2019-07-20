@@ -197,4 +197,4 @@ docker run -ti -e NODE_ENV=production --rm --volume="$(pwd)":/bot zixia/wechaty 
 
 到这里就基本介绍完了本篇文章的全部内容了，可以使用[example代码](https://github.com/Chatie/wechaty/tree/master/example/hot-reload-bot)来体验。
 
-[gcaufy-hot-reload]: /download/2017/gcaufy-hot-reload-screencast.gif
+[gcaufy-hot-reload]: /assets/2017/gcaufy-hot-reload-screencast.gif

@@ -125,5 +125,5 @@ bot.on('scan', (url, code)=>{
 ```
 Finally, I want to thank our teammate [@拖拉机](https://github.com/dianwuone) [@姜姜姜](https://github.com/jiangyuzhen) [@glowd](https://github.com/Glowdable) [@myself](https://github.com/TingYinHelen)
 
-[screenshot-test]: /download/2017/helen-screenshot-testing.jpg
-[screenshot-doc]: /download/2017/helen-screenshot-doc.png
+[screenshot-test]: /assets/2017/helen-screenshot-testing.jpg
+[screenshot-doc]: /assets/2017/helen-screenshot-doc.png

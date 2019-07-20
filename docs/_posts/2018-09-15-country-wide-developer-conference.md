@@ -55,4 +55,4 @@ Here is their sharing:
     height:100%;
 "></iframe></div>
 
-[contributors-image]: /download/2018/country-wide-developer-conference.jpg
+[contributors-image]: /assets/2018/country-wide-developer-conference.jpg

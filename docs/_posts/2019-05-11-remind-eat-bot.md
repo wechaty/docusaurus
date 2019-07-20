@@ -11,7 +11,7 @@ author: 犀利豆
 
 居然有人忘记吃饭？？？
 
-![](/download/2019/remind-eat-1.jpg)
+![](/assets/2019/remind-eat-1.jpg)
 
 为了解决这个问题，我写了一个微信机器人到点就提醒他吃饭。
 
@@ -49,7 +49,7 @@ node remindEat.js
 
 到时候对方应该不会忘记吃饭了。
 
-![](/download/2019/remind-eat-2.jpg)
+![](/assets/2019/remind-eat-2.jpg)
 
 ## 实现原理：
 
