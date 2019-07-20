@@ -29,9 +29,9 @@ header:
 2. 先天性记不住人样貌。
 3. 每天还要见好多人，微信有大几千好友。
 
-通常情况下我会和一个人在微信上聊的火热，然后在一次活动见面又聊的很开心，然后过了几个月再次见面的时候，我们双方热情打招呼后心里默默嘀咕这个人是谁。。。。       
-为了不让大家觉得我是一个高冷の女子，在我经常活动的地方，只要有人往我这看,我就热情的打招呼，也许对方也在默默嘀咕这是哪个神经病。。。。     
-对，我有脸盲。     
+通常情况下我会和一个人在微信上聊的火热，然后在一次活动见面又聊的很开心，然后过了几个月再次见面的时候，我们双方热情打招呼后心里默默嘀咕这个人是谁。。。。
+为了不让大家觉得我是一个高冷の女子，在我经常活动的地方，只要有人往我这看,我就热情的打招呼，也许对方也在默默嘀咕这是哪个神经病。。。。
+对，我有脸盲。
 而今天介绍的脸盲机器人，用人工智能，专门帮助我认识各种人的。
 
 ### Content
@@ -52,7 +52,7 @@ header:
 ![wechaty](/assets/2018/wechaty-blinder-5.jpg)
 
 Facenet 来源于Google 的论文[FaceNet: A Unified Embedding for Face Recognition and Clustering](https://arxiv.org/abs/1503.03832)，是一个用来给人脸做分类的神经网络。
-与其他的深度学习方法在人脸上的应用不同，FaceNet并没有用传统的softmax的方式去进行分类学习，然后抽取其中某一层作为特征，而是直接进行端对端学习一个从图像到欧式空间的编码方法，然后基于这个编码再做人脸识别、人脸验证和人脸聚类等，欧式集合距离可以直接来代表脸的相似度。     
+与其他的深度学习方法在人脸上的应用不同，FaceNet并没有用传统的softmax的方式去进行分类学习，然后抽取其中某一层作为特征，而是直接进行端对端学习一个从图像到欧式空间的编码方法，然后基于这个编码再做人脸识别、人脸验证和人脸聚类等，欧式集合距离可以直接来代表脸的相似度。
 FaceNet算法有2个特点：
 
 1. 去掉了最后的softmax，而是用元组计算距离的方式来进行模型的训练。使用这种方式学到的图像表示非常紧致，使用128位足矣。
@@ -62,7 +62,7 @@ FaceNet算法有2个特点：
 
 ![wechaty](/assets/2018/wechaty-blinder-6.jpg)
 
-Wechaty 是一个开源的针对个人号的微信机器人框架，仅仅使用6行JavaScript代码就可以实现一个简单的机器人，同时支持Linux，Windows，Darwin(OSX/Mac) 和 Docker。      
+Wechaty 是一个开源的针对个人号的微信机器人框架，仅仅使用6行JavaScript代码就可以实现一个简单的机器人，同时支持Linux，Windows，Darwin(OSX/Mac) 和 Docker。
 博客地址是 [https://blog.chatie.io](https://blog.chatie.io)
 
 ![wechaty](/assets/2018/wechaty-blinder-7.jpg)
@@ -89,7 +89,7 @@ Wechaty 现在有非常完善的开发者社区，开发者覆盖了全球，包
 
 ![wechaty](/assets/2018/wechaty-blinder-11.jpg)
 
-这个开源项目核心是2个类和3个方法，更多的细节可以参考我写的[文档](http://www.zixia.net/node-facenet)。   
+这个开源项目核心是2个类和3个方法，更多的细节可以参考我写的[文档](http://www.zixia.net/node-facenet)。
 两个主要的类是：
 
 1. Face, 毫无疑问代表一张脸
@@ -111,7 +111,7 @@ Wechaty 现在有非常完善的开发者社区，开发者覆盖了全球，包
 
 ![wechaty](/assets/2018/wechaty-blinder-13.jpg)
 
-这是另外一个例子，把脸和脸之间的距离可视化。     
+这是另外一个例子，把脸和脸之间的距离可视化。
 我们可以看到这个绿色的框框就是上面我说的align出来的能够框出脸的框框，1.45，1.47, 0.66 三个数字分别代表了两个脸的相似程度，可以看出，数字约小，脸约像。如果两个脸是属于一个人的，他们的距离通常是0.75。当然这只是一个经验性数字，还要具体情况具体分析。
 
 ### Open Source Wechaty-Blinder
@@ -137,8 +137,6 @@ Wechaty 现在有非常完善的开发者社区，开发者覆盖了全球，包
 1. 识别出脸
 2. 给脸起名字
 
-### Open Source Wechaty-Blinder
-
 ![wechaty](/assets/2018/wechaty-blinder-16.jpg)
 大家可以体验一下，这个是我预先为这个活动创建好的wechaty-dev-facenet 微信群，群里面有机器人，扫码进去就可以体验这个功能了。
 
@@ -150,8 +148,8 @@ docker run -d --restart=always --volume=/workdir:/workdir -e WECHATY_TOKEN=TOKEN
 
 如果你想随时在网页上控制这个机器人怎么办呢？很简单，跟着我做下面这五步：
 
-1. 打开 https://chatie.io/angular/ ，然后点击 Click to run
-2. 在输入框填入你的 WECHATY_TOKEN ，然后点击 Set Token 
+1. 打开 <https://chatie.io/angular/> ，然后点击 Click to run
+2. 在输入框填入你的 WECHATY_TOKEN ，然后点击 Set Token
 3. 等待显示登录二维码，然后用手机摄像头（微信内长按不可以）扫描登录
 4. 建立一个新群，建群后不要做任何操作，先把群名修改为任意包含 facenet 的字符串
 5. 在群里面发图片，附体在你身上的机器人就会施法了。

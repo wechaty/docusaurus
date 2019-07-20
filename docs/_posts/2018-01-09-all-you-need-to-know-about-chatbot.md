@@ -18,7 +18,6 @@ header:
 <!--more-->
 当然还有这样的：
 
-
 ![2_](/assets/2018/techiefestival-2.jpg)
 
 已经陷入正态分布式懵逼的我决定请教我的私人助手———Siri

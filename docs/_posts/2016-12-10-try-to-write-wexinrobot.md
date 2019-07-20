@@ -71,7 +71,7 @@ Wechaty基本的实现原理，是通过Chrome实时监听微信网页版的各�
 
 `docker run -ti --rm --volume="$(pwd)":/bot zixia/wechaty run demo`
 
-首次运行以后会有如下的截图： 
+首次运行以后会有如下的截图：
 ![docker-pull][docker-pull]
 
 Docker会自动的将相关的包部署到电脑里面，安装成功后，以后再运行就会是如下的截图了：
@@ -165,7 +165,7 @@ console.log(`${url}\n[${code}] Scan QR Code in above url to login: `)
 虽然机器人可以稳定的跑在VPS中，但是网页版微信会经常把用户踢下线，所以我需要知道Wechaty的各种异常情况，有一个简单的第三方工具：Server酱，他是一个能从服务器推报警和日志到手机的工具，非常简单易操作：
 
 1.用GitHub账号登入后，获得一个SCKEY（在「发送消息」页面） 按照引导，点击“微信推送”，扫码关注“方糖”后即可完成绑定
-2.在login、logout、scan、和error事件触发后，将一些关键信息往 http://sc.ftqq.com/SCKEY.send 发Get请求，我自己的微信里就收到消息了。
+2.在login、logout、scan、和error事件触发后，将一些关键信息往 <http://sc.ftqq.com/SCKEY.send> 发Get请求，我自己的微信里就收到消息了。
 
 这样，当我的机器人出现各种异常情况，我随时随地都可以知道，需要再扫码进入的时候，方糖这公众号就会把二维码推到我的手机上，我只要用机器人的微信扫码就可以了。
 

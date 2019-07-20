@@ -28,6 +28,7 @@ Wechaty解决了很多我在使用微信运营过程中的痛点问题，这里�
 >**Wechaty.instance(profile:string): Wechaty**
 >
 >profile(OPTIONAL): profile name. if a profile name is provided, wechaty will save login status to it, and automatically restored on next time of wechaty start(restart).
+>
 > * can be set by environment variable: WECHATY_PROFILE
 
 也就是说设置一个profile就可以记住登录态，避免重启时的重复扫码动作。

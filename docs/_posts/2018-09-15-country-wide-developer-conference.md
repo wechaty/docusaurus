@@ -1,8 +1,12 @@
 ---
-
 title: Wechaty Country Wide Developer Conference
 date: '2018-09-15 10:0:0 +0800'
 author: lijiarui
+categories: event
+tags:
+  - meetup
+header:
+  teaser: /assets/2018/country-wide-developer-conference.jpg
 ---
 
 > Author: [李佳芮](https://github.com/lijiarui/)，Founder of BotOrange。
@@ -12,7 +16,7 @@ author: lijiarui
 > The above contributors as follows, sort by the order of the contributor in the photo:
 
 1. [李卓桓](https://github.com/huan), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003061) & [Regional Director](https://rd.microsoft.com/en-us/huan-li).
-2. [林贻民](http://github.com/linyimin-bupt),  CS Student from BUPT, author of[wechaty-puppet-ioscat](https://github.com/linyimin-bupt/wechaty-puppet-ioscat), which is a ios plugin to help Wechaty to control the Wechat. 
+2. [林贻民](http://github.com/linyimin-bupt),  CS Student from BUPT, author of[wechaty-puppet-ioscat](https://github.com/linyimin-bupt/wechaty-puppet-ioscat), which is a ios plugin to help Wechaty to control the Wechat.
 3. [李彬彬（杉木）](https://github.com/binsee/), freelancer, author of [padchat-sdk](github.com/binsee/padchat-sdk), which is a ipad solution to control Wechat.
 4. [高原](https://github.com/windmemory), Co-founder of BotOrange. author of [wechaty-puppet-padchat](https://github.com/lijiarui/wechaty-puppet-padchat), which is a ipad plugin to help Wechaty to control the Wechat.
 5. [张灵箫](https://github.com/judaschrist), Co-founder of [小理智能](http://xiaolizhuli.com), Musical lover, Movie addict. He just integrate wechaty with their information bot.
@@ -28,6 +32,7 @@ author: lijiarui
 Thanks to [李彬彬（杉木）](https://github.com/binsee/) and [龚澄(Gcaufy)](https://github.com/gcaufy), they come to Beijing so we try to have this interesting meet-up, talking about wechaty ideas and chatbot. When [伍翀](https://github.com/iyjian) heard about [李彬彬（杉木）](https://github.com/binsee/) will come this conference, he bought an airline form Shanghai to Beijing.
 
 Here is their sharing:
+
 - [李卓桓](https://github.com/huan): talk about his ideas about wechaty and some interesting words: hostie, botie and giftie.
 - [龚澄(Gcaufy)](https://github.com/gcaufy): talk about his understanding and love for open source, also, he shared his open source project [WePY](https://github.com/tencent/wepy), which is a mini program framework and has more than 14000 stars.
 - [李彬彬（杉木）](https://github.com/binsee/): talk about ipad network protocal and related technology.

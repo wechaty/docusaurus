@@ -15,7 +15,7 @@ In order to sync the doc with the latest code, it's best to use [jsdoc](https://
 
 ![automate all the things](/assets/2017/add-wechaty-jsdoc-automate-all-the-things.jpg)
 
-Yes, we planned to do this for nearly a year... 
+Yes, we planned to do this for nearly a year...
 
 Thanks to [@Huan](https://github.com/huan), [@ax4](https://github.com/ax4),[@hczhcz](https://github.com/hczhcz), [@William](https://github.com/kis87988), by the end of August, we finally convert all the doc to jsdoc. And I'd like to share some jsdoc experience here.
 
@@ -39,13 +39,13 @@ I like [@ax4](https://github.com/ax4)'s idea about the document guide:
 * **First:** Learn the awesome features of Wechaty
 * **Second:** See more advanced functions
 * **Third:** Reach the boundary? Help us develop Wechaty
- 
+
 Thanks for [@ax4](https://github.com/ax4)'s suggestion and we decide to do the doc as soon as possible.
 
 ## JsDoc && jsdoc2md
 
-[JsDoc](http://usejsdoc.org/) is an API documentation generator for Javascript   
-[jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown) is a tool to help developers create markdown API document from jsdoc-commented 
+[JsDoc](http://usejsdoc.org/) is an API documentation generator for Javascript
+[jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown) is a tool to help developers create markdown API document from jsdoc-commented
 
 ### JsDoc
 
@@ -61,7 +61,7 @@ function foo() {
 }
 ```
 
-#### Reference 
+#### Reference
 
 * *[jsdoc Introduction](http://www.2ality.com/2011/08/jsdoc-intro.html)
 * *[jsdoc English document](http://usejsdoc.org/)
@@ -102,19 +102,19 @@ For the wechaty document, I change two following dmd partials:
 
 #### Related Issue
 
-[@Huan](https://github.com/huan), [@ax4](https://github.com/ax4),[@hczhcz](https://github.com/hczhcz), [@William](https://github.com/kis87988) and I talked a lot about wechaty document on the following issues: 
+[@Huan](https://github.com/huan), [@ax4](https://github.com/ax4),[@hczhcz](https://github.com/hczhcz), [@William](https://github.com/kis87988) and I talked a lot about wechaty document on the following issues:
 
-* **issue73:** [[doc] To Embed Document in Wechaty Code for Generating Automaticly](https://github.com/chatie/wechaty/issues/73)   
-* **issue252:** [[doc] Contribute to the doc editing[ jsdoc / jsdoc2md / typedoc ]](https://github.com/chatie/wechaty/issues/252)    
+* **issue73:** [[doc] To Embed Document in Wechaty Code for Generating Automaticly](https://github.com/chatie/wechaty/issues/73)
+* **issue252:** [[doc] Contribute to the doc editing[ jsdoc / jsdoc2md / typedoc ]](https://github.com/chatie/wechaty/issues/252)
 
 #### Related PR
 
 Also, [@hczhcz](https://github.com/hczhcz) and [@ax4](https://github.com/ax4) and I contribute a lot on the document:  
 
-* **PR378:** [jsdoc2md may flush some pieces of the embedded doc](https://github.com/Chatie/wechaty/issues/378)   
+* **PR378:** [jsdoc2md may flush some pieces of the embedded doc](https://github.com/Chatie/wechaty/issues/378)
 * **PR380:** [fix jsdoc flush issue #378 and minor fix on the doc examples](https://github.com/Chatie/wechaty/issues/380)  
-* **PR640:** [add documentation TODO entries](https://github.com/Chatie/wechaty/pull/640)    
-* **PR725:** [add wechaty document](https://github.com/Chatie/wechaty/pull/725)   
+* **PR640:** [add documentation TODO entries](https://github.com/Chatie/wechaty/pull/640)
+* **PR725:** [add wechaty document](https://github.com/Chatie/wechaty/pull/725)
 * **PR321:** [Add JsDoc for Class Contact](https://github.com/Chatie/wechaty/pull/321)
 
 ### Doc basic line
@@ -186,7 +186,7 @@ Then, all done!
 
 For other developers, I tried my best to make it easier to add doc, just the following 2 steps:
 
-#### 1. Add jsdoc in your code like the following shows.
+### 1. Add jsdoc in your code like the following shows
 
 ```ts
 /** This is a description of the foo function. */
@@ -194,7 +194,7 @@ function foo() {
 }
 ```
 
-#### 2. Run the following command
+### 2. Run the following command
 
 ```sh
 npm run doc

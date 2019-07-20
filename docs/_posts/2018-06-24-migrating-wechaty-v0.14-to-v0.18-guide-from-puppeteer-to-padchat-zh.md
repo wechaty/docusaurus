@@ -1,9 +1,16 @@
 ---
-
 title: 如何将业务代码从Puppeteer 迁移到Padchat
 date: '2018-06-30 16:0:0 +0800'
-author: Li Jiarui
+author: lijiarui
+categories: tutorial
+tags:
+  - migration
+  - code
+header:
+  teaser: /assets/2018/code-migration-zh.png
 ---
+<!-- markdownlint-disable -->
+
 > Author: [@lijiarui](https://github.com/lijiarui) Founder of BotOrange, Author of Wechaty.
 
 Wechaty 近期有了很大的升级，从0.14版本之后，开始陆续支持各类非Web 版本的解决方案。我的业务逻辑代码重度依赖于wechaty，所以自从wechaty release 了0.15 版本以后，我开始将我们的业务逻辑代码陆续从Web版本迁移到了非Web版本上来。

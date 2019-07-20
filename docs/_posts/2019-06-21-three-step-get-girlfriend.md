@@ -1,9 +1,14 @@
 ---
-
 title: "三步教你用Node做一个微信脱单神器，小白可上手"
 author: Leo_chen
 date: '2019-06-20 17:40:52 +0800'
+categories: tutorial
+tags:
+  - code
+header:
+  teaser: /assets/2019/everyday-header.png
 ---
+<!-- markdownlint-disable -->
 
 > 作者: [Leo_chen](https://github.com/gengchen528/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [三步教你用Node做一个微信哄女友(基友)神器，小白可上手](https://juejin.im/post/5d09fa9f51882508bd2065f4)
 

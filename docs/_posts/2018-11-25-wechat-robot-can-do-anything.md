@@ -1,9 +1,12 @@
 ---
-
 title: "微信机器人能够做些什么事？"
 author: zhuangbiaowei
 date: '2018-11-25 21:14:52 +0800'
+categories: tutorial
+tags:
+  - code
 ---
+<!-- markdownlint-disable -->
 
 > 作者: [庄表伟](https://github.com/zhuangbiaowei/)，[开源社](http://www.kaiyuanshe.cn/)理事/执行长。首发于简书: [微信机器人能够做些什么事？](https://www.jianshu.com/p/9698395511e0)
 

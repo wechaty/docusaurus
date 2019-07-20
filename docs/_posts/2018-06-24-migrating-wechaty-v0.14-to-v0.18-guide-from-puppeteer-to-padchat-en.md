@@ -1,9 +1,15 @@
 ---
-
 title: Migrating Wechaty v0.14 to v0.18 Guide - From Puppeteer To Padchat
 date: '2018-06-30 15:00:00 +0800'
-author: Li Jiarui
+author: lijiarui
+categories: tutorial
+tags:
+  - migration
+  - code
+header:
+  teaser: /assets/2018/code-migration-en.png
 ---
+<!-- markdownlint-disable -->
 > Author: [@lijiarui](https://github.com/lijiarui) Founder of BotOrange, Author of Wechaty.
 
 Wechaty has been updated to version 0.16(BETA) these days and begin to support all kinds of wechat solutions including web, ipad, ios, etc. My product based on wechaty has to migration from wechaty solution based on web to ipad solution.
@@ -14,7 +20,7 @@ This blog introduces how to porting code from wechaty puppeteer to padchat.
 
 <!--more-->
 
-# 1. Puppeteer VS Padchat
+## 1. Puppeteer VS Padchat
 
 **Puppet System** means to connect Wechaty API to any kinds of Puppets, including Web, iPad, Android, Windows Hook and ios. Different implements of these puppets are totally different, without the puppet, using one API to bridge all implement is very difficult, so we had Puppet System.
 
@@ -27,15 +33,16 @@ A solution based on Ipad Wechat
 
 You can find more in this blog: [Wechaty New Version 0.16(BETA, with superpower) Released](https://blog.chatie.io/wechaty-new-release-version-0.16/)
 
-# 2. How to run puppet-padchat
+## 2. How to run puppet-padchat
 
 Wechaty will start with puppeteer(web solution) by default, if you want to change to padchat, you need to set the environmental variable. 
 
 See more in wechaty wiki: [How to run a new wecahty-puppet-padchat](https://github.com/Chatie/wechaty/wiki/Puppet#2-run)
 
-## Start with Github repo
+### Start with Github repo
 
-### 1. Pull the latest code:
+#### 1. Pull the latest code:
+
 ```shell
 git pull
 rm -rf package-lock.json
@@ -43,11 +50,11 @@ rm -rf node_modules/
 npm install
 ```
 
-### 2. Get Token
+#### 2. Get Token
 
 Participate in our alpha test here: [Wechaty v0.17 Padchat Testing: Win32/iPad/Android/iOS/API Puppets Support are coming!](https://github.com/Chatie/wechaty/issues/1296) and Get `WECHATY_PUPPET_PADCHAT_TOKEN`
 
-### 3. Set environment variable and run
+#### 3. Set environment variable and run
 
 Remeber to set `WECHATY_PUPPET=padchat` to change from puppeteer to padchat
 
@@ -55,18 +62,20 @@ Remeber to set `WECHATY_PUPPET=padchat` to change from puppeteer to padchat
 WECHATY_PUPPET_PADCHAT_TOKEN=your padchat token WECHATY_PUPPET=padchat  node examples/ding-dong-bot.js
 ```
 
-## NPM
+### NPM
 
-### 1. Install
+#### 1. Install
+
 ```shell
 npm install wechaty@next
 ```
 
-### 2. Get token
+#### 2. Get token
 
 Participate in our alpha test here: [Wechaty v0.17 Padchat Testing: Win32/iPad/Android/iOS/API Puppets Support are coming!](https://github.com/Chatie/wechaty/issues/1296) and Get `WECHATY_PUPPET_PADCHAT_TOKEN`
 
-### 3. Set environment variable and run
+#### 3. Set environment variable and run
+
 Remeber to set `WECHATY_PUPPET=padchat` to change from puppeteer to padchat
 
 ```shell
@@ -74,18 +83,20 @@ WECHATY_PUPPET_PADCHAT_TOKEN=your padchat token WECHATY_PUPPET=padchat   node ex
 
 ```
 
-## Docker
+### Docker
 
-### 1. Install
+#### 1. Install
+
 ```shell
 docker pull zixia/wechaty:latest
 ```
 
-### 2. Get Token
+#### 2. Get Token
 
 Participate in our alpha test here: [Wechaty v0.17 Padchat Testing: Win32/iPad/Android/iOS/API Puppets Support are coming!](https://github.com/Chatie/wechaty/issues/1296) and Get `WECHATY_PUPPET_PADCHAT_TOKEN`
 
-### 3. Set environment variable and run
+#### 3. Set environment variable and run
+
 - Remeber to set `WECHATY_PUPPET=padchat` to change from puppeteer to padchat
 - Remove wechaty in `node_module` if exist.
 
@@ -94,13 +105,13 @@ Participate in our alpha test here: [Wechaty v0.17 Padchat Testing: Win32/iPad/A
 docker run -t -i  -e WECHATY_PUPPET="padchat" -e WECHATY_PUPPET_PADCHAT_TOKEN="your token"  --volume="$(pwd)":/bot --name=wechaty zixia/wechaty:latest examples/ding-dong-bot.ts
 ```
 
-# 3. Check Code
+## 3. Check Code
 
 Wechaty is written by typescript, all with strong typing. Since to change all wechaty code, I change my logic product to strong typing.
 
 We need tools to help us check our code errors. I use **TSLint** to help me to check typescript code and use VS CODE as my IDE.
 
-## Why we need to check code
+### Why we need to check code
 
 Maybe you think JavaScript is so flexible so it needs to be checked, but typescript has been able to check out a lot of problems when compiling. Why do we still need to check the code? 
 
@@ -118,18 +129,19 @@ TypeScript will not concern these problems, but these affect the efficiency of m
 
 In one word, though code errors are more important than the uniform code style when a project becomes bigger and more and more developers join in, the code style constraints are still very important.
 
-## Using TSLint
+### Using TSLint
 
 TSLint is an extensible static analysis tool that checks TypeScript code for readability, maintainability, and functionality errors. It is widely supported across modern editors & build systems and can be customized with your own lint rules, configurations, and formatters. Learn more in [TSLint Website](https://palantir.github.io/tslint/)
 
-### 1. Install
+#### 1. Install
 
 ```shell
 npm install --save-dev tslint
 npm install tslint-config-standard
 ```
 
-### 2. Config File
+#### 2. Config File
+
 Create config file `tslint.json` 
 
 I suggest to refer wechaty config about `tslint` and `tsconfig`
@@ -163,7 +175,7 @@ Raise error on this expression with an implied any type.
 
 see more in [official website](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
 
-### 3. Add tslint script for package.json
+#### 3. Add tslint script for package.json
 
 ```
 {
@@ -182,24 +194,25 @@ Then run `npm run lint` will check the whole code.
 Search `tslint` and install a plugin for vscode. It is enabled by default.
 
 #### 5. Sweet Tips
+
 I also recommend another plugin in vscode: `editorconfig`: EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. see more: [Official EditorConfig Website](https://editorconfig.org/)
 
 You can find wechaty editorconfig in [.editorconfig](https://github.com/Chatie/wechaty/blob/master/.editorconfig)
 
 
-# 4. BREAKING CHANGES
+## 4. BREAKING CHANGES
 
 After upgrade wechaty, see more in[blog](https://blog.chatie.io/wechaty-new-release-version-0.16/). Although we are trying to minimize API changes, there are some breaking changes. I really suggest you reading [CHANGE LOG](https://github.com/chatie/wechaty/blob/master/CHANGELOG.md). Also, I list some important changes here:
 
-## bot.init() change to  bot.start()
+### bot.init() change to  bot.start()
 
-## bot.quit() change to bot.stop()
+### bot.quit() change to bot.stop()
 
-## FriendRequest change to Friendship 
+### FriendRequest change to Friendship 
 
 `FriendRequest` class refactored.
 
-### Before (v0.14 or below)
+#### Before (v0.14 or below)
 
 ```ts
 wechaty.on('friend', (contact, request) => {
@@ -212,7 +225,7 @@ wechaty.on('friend', (contact, request) => {
 
 ```
 
-### After (v0.16 or above)
+#### After (v0.16 or above)
 
 ```ts
 wechaty.on('friendship', request => {
@@ -232,7 +245,7 @@ Related link:
 - [BREAKING CHANGE: v0.16 on('friend`) arguments changed!](https://github.com/Chatie/wechaty/issues/1196)
 - [BREAKING CHANGES v0.16: FriendRequest class will be replaced with Friendship](https://github.com/Chatie/wechaty/issues/1312)
 
-## Message.content() change to Message.text()
+### Message.content() change to Message.text()
 
 From v0.16, Message.content() will be deprecated.
 From v0.18, Message.content() will be removed.
@@ -241,7 +254,7 @@ Related Link:
 - [BREAKING CHANGE: v0.16 will replace `Message.content()` with `Message.text()`](https://github.com/Chatie/wechaty/issues/1163)
 
 
-## Remove `MediaMessage` class 
+### Remove `MediaMessage` class 
 
 
 From v0.16, MediaMessage will be deprecated.
@@ -258,7 +271,7 @@ Migration Example
 Related issue
 - [BREAKING CHANGE: v0.16 will remove `MediaMessage` class](https://github.com/Chatie/wechaty/issues/1164)
 
-### A useful tip to send the image 
+#### A useful tip to send the image 
 [FileBox](https://www.npmjs.com/package/file-box), FileBox is a virtual container for packing a file data into it for future readers, and easily transport between servers with the least payload, no mater than where it is (local path, remote URL, or cloud storage).
 
 ```ts
@@ -268,20 +281,20 @@ BOT_QR_CODE_IMAGE_FILE,
 )
 ```
 
-## Wechaty self() change to Wechaty.userSelf()
+### Wechaty self() change to Wechaty.userSelf()
 
 Related issue:
 - [BREAKING CHANGE v0.16 Wechaty.self() eprecated, use Wechaty.userSelf() instead](https://github.com/Chatie/wechaty/issues/1369)
 
-## Contact.personal() and Contact.official() change to Contact.type()
+### Contact.personal() and Contact.official() change to Contact.type()
 
-### Before
+#### Before
 ```ts
 const isPersonal = contact.personal()
 const isOfficial = contact.official()
 ```
 
-### After
+#### After
 ```ts
   /**
    * Return the type of the Contact
@@ -296,19 +309,19 @@ const isOfficial = contact.official()
 Related issue
 - [BREAKING CHANGE v0.16 Contact.personal() and Contact.official() deprecated, use Contact.type() instead](https://github.com/Chatie/wechaty/issues/1366)
 
-## Room.add() return from Promise<boolean> to Promise<void>
+### Room.add() return from Promise<boolean> to Promise<void>
 
 Related issue:
 - [BREAKING CHANGE v0.16 room.add return Promise<void> instead of return Promise<boolean>](https://github.com/Chatie/wechaty/issues/1362)
 
-## Room.topic() change from Sycn to Async
-### Before
+### Room.topic() change from Sycn to Async
+#### Before
 
 ```ts
 const topic = room.topic()
 ```
 
-### After
+#### After
 
 ```ts
 const topic = await room.topic()
@@ -317,15 +330,15 @@ const topic = await room.topic()
 Related issue:
 - [BREAKING CHANGE: v0.16 `Room.topic()` change from Sycn to Async](https://github.com/Chatie/wechaty/issues/1295)
 
-## Room.alias(contact) change from Sycn to Async
+### Room.alias(contact) change from Sycn to Async
 
-### Before
+#### Before
 
 ```ts
 const alias = room.alias(contact)
 ```
 
-### After
+#### After
 
 ```ts
 const alias = await room.alias(contact)
@@ -334,30 +347,31 @@ const alias = await room.alias(contact)
 Related issue:
 - [BREAKING CHANGE: v0.16 `Room.alias(contact)` change from Sycn to Async](https://github.com/Chatie/wechaty/issues/1293)
 
-## Room.memberList() change from Sycn to Async 
+### Room.memberList() change from Sycn to Async 
 
-### Before
+#### Before
 
 ```ts
 const memberList = room.memberList()
 ```
 
-### After
+#### After
 
 ```ts
 const memberList = await room.memberList()
 ```
+
 Related Issue:
 - [BREAKING CHANGE: v0.16 `Room.memberList()` change from Sycn to Async](https://github.com/Chatie/wechaty/issues/1290)
 
-## Room.member() from sync to async
-### Before
+### Room.member() from sync to async
+#### Before
 
 ```ts
 const contact = room.member('Huan')
 ```
 
-### After
+#### After
 
 ```diff
 - const contact = room.member('Huan')
@@ -367,7 +381,7 @@ const contact = room.member('Huan')
 Related Issue:
 - [BREAKING CHANGES: v0.16 `Room.member()` from `sync` to `async`](https://github.com/Chatie/wechaty/issues/1258)
 
-## Room.has(contact) change from Sycn to Async
+### Room.has(contact) change from Sycn to Async
 
 WARNING: This change will let us make more mistakes:
 
@@ -377,13 +391,13 @@ if (room.has(contact)) {
 }
 ```
 
-### Before
+#### Before
 
 ```ts
 const exist = room.has(contact)
 ```
 
-### After
+#### After
 
 ```ts
 const exist = await room.has(contact)
@@ -393,17 +407,17 @@ Related Link:
 - [BREAKING CHANGE: v0.16 `Room.has(contact)` change from Sycn to Async](https://github.com/Chatie/wechaty/issues/1289)
 - [Detect missing await in TypeScript](https://www.meziantou.net/2017/11/20/detect-missing-await-in-typescript)
 
-## Message.mention() change from Sync to Async
+### Message.mention() change from Sync to Async
 
 BREAKING CHANGE: v0.16 `Message.mention()` change from `sync` to `async`
 
-### Before
+#### Before
 
 ```ts
 const mentionList = message.mention()
 ```
 
-### After
+#### After
 
 ```diff
 - const mentionList = message.mention()
@@ -411,30 +425,32 @@ const mentionList = message.mention()
 ```
 
 Related issue:
+
 - [BREAKING CHANGE: v0.16 `Message.mention()` change from `sync` to `async`](https://github.com/Chatie/wechaty/issues/1259)
 
-## `scan` Event args will become different
+### `scan` Event args will become different
 
 The good news is: the old code seems will run without problem, because it will just do nothing: 
 
 `const loginUrl = url.replace(/\/qrcode\//, '/l/')`
 
-### Before
+#### Before
 
 https://github.com/Chatie/wechaty/blob/860e85ec776ac20e92751ec4b67e0d539ef40a16/examples/ding-dong-bot.ts#L74-L77
 
-### After
+#### After
 
 https://github.com/Chatie/wechaty/blob/07008dff17ccc46b347ba28b85af167984573ea0/examples/ding-dong-bot.ts#L74-L76
 
 Notice that we deleted the ~~`const loginUrl = url.replace(/\/qrcode\//, '/l/')`~~
 
 Related Issues:
+
 - [BREAKING CHANGE: v0.16 `scan` event args will be different!](https://github.com/Chatie/wechaty/issues/1262)
 
-## Class cannot be instantiated directly! 
+### Class cannot be instantiated directly
 
-### Error Message
+#### Error Message
 
 1. Error: the class cannot be instantiated directly!
 1. Error: must not use the global Message/Contact/Room. use a cloned child via clone class instead
@@ -442,10 +458,11 @@ Related Issues:
 Currently, the `Contact`, `FriendRequest`, `Message`, and `Room` classes will not be able to instantiate directly, because they must attach with a Puppet.
 
 They need to be `cloneClass()`-ed first, then attach the puppet, and at last they will be ready for use by:
+
 1. `wechaty.Contact`, or
 1. `puppet.Contact`, etc.
 
-### ~~~Do Not~~~
+#### ~~~Do Not~~~
 
 ```ts
 import { Room } from 'wechaty'
@@ -454,7 +471,7 @@ const room = await Room.create(...)
 
 The above code will throw an error.
 
-### Do
+#### Do
 
 ```diff
 - import { Room } from 'wechaty'
@@ -474,14 +491,15 @@ Related Link
 1. https://github.com/huan/node-clone-class/issues/5
 
 Related issue
-- [Error: class can not be instanciated directly! ](https://github.com/Chatie/wechaty/issues/1217)
+
+- [Error: class can not be instanciated directly!](https://github.com/Chatie/wechaty/issues/1217)
 - [BREAKING CHANGE v0.16 Contact, FriendRequest, Message, and Room classes will not be able to instantiate directly](https://github.com/Chatie/wechaty/issues/1364)
 - [Error: static puppet not found](https://github.com/Chatie/wechaty/issues/1161)
 - [Wechaty Multi-Instance Suport](https://github.com/Chatie/wechaty/issues/518)
 - NPM [clone-class](https://www.npmjs.com/package/clone-class)
 - https://github.com/huan/node-clone-class/issues/5
 
-## Message.ext() return '.ext' instead of 'ext' before
+### Message.ext() return '.ext' instead of 'ext' before
 
 According to the `ext()` methods behavior in Node/Python/C# etc, the `ext()` always return the filename extension that including the dot(`.`).
 
@@ -492,15 +510,16 @@ const ext = message.ext()
 // assume the filename is `test.txt`
 ```
 
-### Before (v0.14 or earlieer)
+#### Before (v0.14 or earlieer)
 
 `assert(ext === 'txt')`
 
-### After (v0.16 or later)
+#### After (v0.16 or later)
 
 `assert(ext === '.txt')`
 
 Related Link
+
 - [BREAKING CHANGE: v0.16 Message.ext() return '.ext' instead of 'ext' before](https://github.com/Chatie/wechaty/issues/1168)
 
 Hmmm... That's all and wish you can have a good coding experience, thanks!

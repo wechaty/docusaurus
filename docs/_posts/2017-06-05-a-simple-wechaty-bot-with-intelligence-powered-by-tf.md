@@ -24,7 +24,7 @@ Artificial Intelligence (aka. AI) is a very hot topic at present time. A big new
 
 ![from-go-to-chatbot][from-go-to-chatbot]
 
-## Model training 
+## Model training
 
 We are going to use the code written by Sir Raval to train our model: <https://github.com/llSourcell/tensorflow_chatbot>. To get rid of difficulties of fetching dataset, it is highly recommended to use my repo with the dataset ready. In addition, the details of the usage for TensorFlow will not be included in this article. Because there are too many details to write about.
 

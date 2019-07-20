@@ -21,7 +21,7 @@ Wechaty就像是连到母体的管道，当我们还在思考着是吃红药片�
 
 <!--more-->
 
-## SuperScript 
+## SuperScript
 
 SuperScript是一个开源的对话引擎。使用SuperScript定义的语法，书写脚本文件，然后使用编译工具，生成对话元数据。
 

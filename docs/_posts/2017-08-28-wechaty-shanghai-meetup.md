@@ -29,7 +29,7 @@ In WeChaty core there's much discussion on this topic, so if this is a sub proje
 
 For inter-bot communication, we talked about a few methods and ax4 shared his experience of using DNode. I'll let @ax4 explain:
 
-* Dnode is not a substitute of REST API.  REST API is essential and powerful, in all kinds of programming (cross language and cross platform). Dnode is simple and useful for Javascript stack, and only have several languages support in perl / ruby/ php/ php-sync/java (check https://github.com/substack/dnode#dnode-in-other-languages)
+* Dnode is not a substitute of REST API.  REST API is essential and powerful, in all kinds of programming (cross language and cross platform). Dnode is simple and useful for Javascript stack, and only have several languages support in perl / ruby/ php/ php-sync/java (check <https://github.com/substack/dnode#dnode-in-other-languages>)
 * Dnode is much easier and lightweight to configure in small projects, rather than heavy SOAP for RPC. However, in more complicated projects (for example. 5000 RPC interfaces, with high frequency of calling),  you have to design your own Nameservice, and especially the request handling.
 * Since Javascript programming is all about "function"s. Dnode would be helpful, for small team to skip binding their "function"s with REST, and directly deliver the "functions" as RPC to other NodeJS/Browser instance! And, bi-direction call !
 

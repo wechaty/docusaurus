@@ -1,11 +1,17 @@
 ---
-
 title: "在 Windows 10 下安装 Wechaty"
 date: 2018-07-24 09:00 +0800
 author: kaffa
+categories: tutorial
+tags:
+  - windows
+  - install
+header:
+  teaser: /assets/2018/wechaty-installation-in-windows.png
 ---
+<!-- markdownlint-disable -->
 
-> [@kaffa](https://github.com/kaffa) a life-long learner / a beginner investor / a coffee mocha lover. My blog is [https://kaffa.im/](https://kaffa.im/) 
+> [@kaffa](https://github.com/kaffa) a life-long learner / a beginner investor / a coffee mocha lover. My blog is [https://kaffa.im/](https://kaffa.im/)
 
 ![在 Windows 10 下安装 Wechaty](/assets/2018/wechaty-installation-in-windows.png)
 

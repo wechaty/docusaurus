@@ -1,10 +1,14 @@
 ---
-
 title: Wechaty New Version 0.16(BETA, with super power) Released
 date: '2018-06-21 12:0:0 +0800'
-author: Huan
+author: huan
+categories: announcement
+tags:
+  - release
+header:
+  teaser: /assets/2018/huan-wechaty-new-version-0.16.png
 ---
-> Author: [@zixia](https://github.com/huan) Coder, Author of Wechaty.
+> Author: [@huan](https://github.com/huan) Coder, Author of Wechaty.
 
 ![wechaty-release-0.16][wechaty-release-0.16]
 
@@ -12,7 +16,7 @@ The Wechaty has been updated to version 0.16(BETA) today. This release is a BETA
 
 With v0.16, we can use the branding new Puppet System to connect Wechaty API to any kinds of Puppets, for example:
 
-1.  Mocking - [PuppetMock](https://github.com/Chatie/wechaty/tree/ed72a78b61ccc352d9bd9f5a06054a218cdd1d0d/src/puppet-mock)
+1. Mocking - [PuppetMock](https://github.com/Chatie/wechaty/tree/ed72a78b61ccc352d9bd9f5a06054a218cdd1d0d/src/puppet-mock)
 1. Web API via HTTP - [PuppetWechat4U](https://github.com/Chatie/wechaty/tree/ed72a78b61ccc352d9bd9f5a06054a218cdd1d0d/src/puppet-wechat4u)
 1. Web API via Browser - [PuppetPuppeteer](https://github.com/Chatie/wechaty/tree/ed72a78b61ccc352d9bd9f5a06054a218cdd1d0d/src/puppet-puppeteer) (our classic PuppetWeb)
 1. Maybe a Official Account Puppet? [#1016](https://github.com/Chatie/wechaty/issues/1016)
@@ -50,7 +54,6 @@ There will be a **migration guide from v0.14 to v0.16** will be published on our
 - BREAKING CHANGES v0.16: FriendRequest class will be replaced with Friendship [\#1312](https://github.com/Chatie/wechaty/issues/1312)
 - BREAKING CHANGE v0.16  Contact, FriendRequest, Message, and Room classes will not be able to instantiate directly [\#1364](https://github.com/Chatie/wechaty/issues/1364)
 
-
 #### 1.2. Sync to Async
 
 - BREAKING CHANGE: v0.16 `Room.topic()` change from Sycn to Async [\#1295](https://github.com/Chatie/wechaty/issues/1295)
@@ -82,7 +85,6 @@ There will be a **migration guide from v0.14 to v0.16** will be published on our
 - Puppet padchat [\#1245](https://github.com/Chatie/wechaty/pull/1245) ([lijiarui](https://github.com/lijiarui))
 - Multi-Instance Support [\#1159](https://github.com/Chatie/wechaty/pull/1159) ([zixia](https://github.com/huan))
 
-
 ### 3. Bug Fixes
 
 - Update the peerDependencies of `rx-queue`: rxjs@6 from rxjs@5 [\#1205](https://github.com/Chatie/wechaty/issues/1205)
@@ -100,9 +102,9 @@ There will be a **migration guide from v0.14 to v0.16** will be published on our
 
 Learn more between version at:
 
-* [Full Changelog](https://github.com/Chatie/wechaty/blob/master/CHANGELOG.md)
-* [Source Code of Wechaty v0.16](https://github.com/chatie/wechaty/tree/v0.16.0) (2018-06-21)
-* [Commits Between v0.14 and v0.16](https://github.com/chatie/wechaty/compare/v0.14.0...v0.16.0)
+- [Full Changelog](https://github.com/Chatie/wechaty/blob/master/CHANGELOG.md)
+- [Source Code of Wechaty v0.16](https://github.com/chatie/wechaty/tree/v0.16.0) (2018-06-21)
+- [Commits Between v0.14 and v0.16](https://github.com/chatie/wechaty/compare/v0.14.0...v0.16.0)
 
 ## CONTRIBUTORS
 
@@ -128,6 +130,5 @@ Thank you all contributors, Wechaty could not release version 0.16 without your 
 1. @[Gcaufy](https://github.com/Gcaufy): [\#310](https://github.com/Chatie/wechaty/pull/310)
 1. @[cherry-geqi](https://github.com/cherry-geqi): [\#97](https://github.com/Chatie/wechaty/pull/97)
 1. @[lpmi-13](https://github.com/lpmi-13): [\#681](https://github.com/Chatie/wechaty/pull/681)
-
 
 [wechaty-release-0.16]: /assets/2018/huan-wechaty-new-version-0.16.png
