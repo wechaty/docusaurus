@@ -1,8 +1,11 @@
 ---
-
 title: Wechaty-As-A-Service Why and How
 author: qhduan
 date: '2019-06-13 01:20:00 +0800'
+categories: tutorial
+tags:
+  - code
+  - saas
 ---
 
 > Author: [qhduna](https://github.com/qhduan/), A Deamer.
@@ -45,7 +48,6 @@ Wechaty是对接微信的工具，这个工具在今天已经很成熟，也有�
 解决方法是Wechaty单独在一个worker线程运行，这里使用NodeJS 10及之后版本支持的`worker_threads`方法，这个方法要在10版本的NodeJS使用需要增加参数`-experimental-worker`
 
 首先`bot-worker.js`的实现代码类似这样：
-
 
 ```JavaScript
 const process = require('process')
@@ -176,7 +178,6 @@ bot
 ```
 
 主线程代码
-
 
 ```JavaScript
 const process = require('process')
@@ -329,7 +330,6 @@ app.listen(3010, '0.0.0.0', () => {
 
 ## 如何使用
 
-
 客户端的实现代码
 
 ```python
@@ -425,7 +425,6 @@ class WAAS(object):
 ```
 
 实际使用bot的代码：
-
 
 ```python
 from waas_client import WAAS

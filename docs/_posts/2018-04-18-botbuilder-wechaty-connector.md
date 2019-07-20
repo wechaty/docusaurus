@@ -27,7 +27,7 @@ However, it does not support Wechat **Individual** Account, so I decided to make
 The Connector is a bridge between the BotBuilder and the Instance Messenger, in our case, Wechat.
 
 There's some document at [Bot Builder for Node.js
-Libraries - Interface IConnector](https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iconnector.html) with two examples: `ChatConnector` and `ConsoleConnector`. However, I found the most useful example is a Wechat Official Account Connector: https://github.com/jyfcrw/botbuilder-wechat-connector whose code is concise and clean, so I decided to start from here.
+Libraries - Interface IConnector](https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iconnector.html) with two examples: `ChatConnector` and `ConsoleConnector`. However, I found the most useful example is a Wechat Official Account Connector: <https://github.com/jyfcrw/botbuilder-wechat-connector> whose code is concise and clean, so I decided to start from here.
 
 It's not very difficult for me to replace the two NPM module `wechat` & `wechat-api` to `wechaty`, and rewrite all the code to TypeScript, then add linting & testing, setup DevOps CI/CD to publish on NPM. It takes me about three hours to finish them.
 

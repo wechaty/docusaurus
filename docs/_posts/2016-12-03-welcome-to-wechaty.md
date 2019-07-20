@@ -45,8 +45,8 @@ See? death easy to use!
 
 ### Last but not least
 
-* Check out the [Wechaty IO][wechaty-io] for more info on how to get the most out of Wechaty. 
-* File all bugs/feature requests at [Wechaty’s GitHub repo][wechaty-gh]. 
+* Check out the [Wechaty IO][wechaty-io] for more info on how to get the most out of Wechaty.
+* File all bugs/feature requests at [Wechaty’s GitHub repo][wechaty-gh].
 * If you have questions, you can ask other developers in _Wechaty Developers' Home_ by scan belowing Qr Code and send the secret code: `wechaty`.
 
 ![Wechaty Developers' Home][wechaty-qrcode-image]

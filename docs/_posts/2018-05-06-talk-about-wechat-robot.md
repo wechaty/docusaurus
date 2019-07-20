@@ -2,6 +2,9 @@
 title: "我在微信机器人方向的探索和看法"
 author: nbwsc
 date: '2018-06-05 14:07:52 +0800'
+categories: article
+tags:
+  - sdk
 ---
 
 > Author: [nbwsc](https://github.com/nbwsc)

@@ -1,9 +1,14 @@
 ---
-
 title: 居然有人能忘记吃饭？写个微信机器人提醒他。
 date: 2019-05-11 13:00 +0800
 author: 犀利豆
+categories: tutorial
+tags:
+  - code
+header:
+  teaser: /assets/2019/remind-eat-1.jpg
 ---
+<!-- markdownlint-disable -->
 
 > Author: [犀利豆](https://xilidou.com/) 北邮本科，University of Leicester EE 研究生，Java后端开发，目前就职知乎。
 > 

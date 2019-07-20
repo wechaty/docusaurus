@@ -121,4 +121,4 @@ stopPolling() {
 
 I am really glad to share the story of [Wechaty Telegram Bot Adaptor](https://github.com/hczhcz/wechaty-telegram) to you. Wechaty is cool! As well, the community's blog and WeChat group benefit developers a lot.
 
-There are still a lot of work to do. If you are interested in making this adaptor work better, please feel free to submit issues/PRs. In addition, some parts of Wechaty still lack documentation. I have had some discussion with [@zixia](https://github.com/Chatie/wechaty/pull/640) and @ax4 about it. If you are interested in adding documentation to them, it would be helpful to many projects powered by Wechaty including this one.
+There are still a lot of work to do. If you are interested in making this adaptor work better, please feel free to submit issues/PRs. In addition, some parts of Wechaty still lack documentation. I have had some discussion with [@huan](https://github.com/Chatie/wechaty/pull/640) and @ax4 about it. If you are interested in adding documentation to them, it would be helpful to many projects powered by Wechaty including this one.

@@ -2,6 +2,9 @@
 title: "Docker Wechaty Getting Started"
 author: huan
 date: '2018-08-14 8:14:52 +0800'
+categories: tutorial
+tags:
+  - docker
 ---
 
 > Author: [Huan LI](https://github.com/huan), A Docker Fan
@@ -77,5 +80,5 @@ Thanks Docker, there's a official registry mirror in China, and you can use it b
 
 Learn more about the docker CN mirror at:
 
-- https://www.docker-cn.com/registry-mirror
-- https://docs.docker.com/registry/recipes/mirror/#use-case-the-china-registry-mirror
+- <https://www.docker-cn.com/registry-mirror>
+- <https://docs.docker.com/registry/recipes/mirror/#use-case-the-china-registry-mirror>

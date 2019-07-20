@@ -1,9 +1,14 @@
 ---
-
 title: "Lightbot统计分析管理平台"
 date: 2018-08-14 13:00 +0800
 author: LittleStrong
+categories: tutorial
+tags:
+  - code
+header:
+  teaser: /assets/2018/wechaty-lightbot-logo.jpg
 ---
+<!-- markdownlint-disable -->
 
 > Author: [@LittleStrong](https://github.com/zhoumh1988), WEB Development Manager at [iTrustdata](http://itrustdata.com/), 喜欢挖坑与填坑😝
 

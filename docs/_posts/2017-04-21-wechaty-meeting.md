@@ -29,7 +29,7 @@ There were 7 guys came to the gathering (including me), 6 programmers, and one u
 
 **[Lianxiang LIU](https://github.com/notedit)**, funder of [DotEngine](http://dot.cc), he is a continuous entrepreneur in the domain of *RTC*.
 
-**[Yang BAI](https://github.com/antonia0912)**, majored in French at her university but works as a marketing specialist. She is the formal community manager and marketing specialist of *Juejin*, a technical community. At present, she works at  *tag Design*, and responsible for planning and organizing activities. 
+**[Yang BAI](https://github.com/antonia0912)**, majored in French at her university but works as a marketing specialist. She is the formal community manager and marketing specialist of *Juejin*, a technical community. At present, she works at  *tag Design*, and responsible for planning and organizing activities.
 
 **[Lei ZHAO](https://github.com/Jolly23)**, born in 1996, he is still a college junior student. Doing well in *Python* and *Web Crawler*, as well as the framework of digitalized campus, he is addicted to the system of investment bank's quantitative-trading. All these influence his major for studying abroad.
 
@@ -53,7 +53,7 @@ Here is the video.
 "></iframe>
 </div>
 
-Here is the Chinese version. 
+Here is the Chinese version.
 
 4 月 21 日，周五，在北京这个妖风四起满世界柳絮的春天，跟几个朋友一起吃了顿饭。
 

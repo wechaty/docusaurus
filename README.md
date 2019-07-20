@@ -25,7 +25,7 @@ Example as follows:
 
 ```yaml
 ---
- 
+
  title: "'Score Your Face Photo' a ML&Wechaty practice"
  date: 2017-09-18 09:00 +0800
  author: huyingxi
@@ -62,7 +62,7 @@ Example
 
 ### Online Editor
 
-http://prose.io/#chatie/blog.chatie.io/tree/master/_posts
+<http://prose.io/#chatie/blog.chatie.io/tree/master/_posts>
 
 ## RUN LOCALHOST
 
@@ -96,6 +96,6 @@ minima: <https://github.com/jekyll/minima>
 
 ## COPYRIGHT & LICENSE
 
-- Code & Docs © 2019 - now Huan LI <zixia@zixia.net>
-- Code released under the Apache-2.0 License
-- Docs released under Creative Commons
+* Code & Docs © 2019 - now Huan LI <zixia@zixia.net>
+* Code released under the Apache-2.0 License
+* Docs released under Creative Commons

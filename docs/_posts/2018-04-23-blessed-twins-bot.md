@@ -2,6 +2,11 @@
 title: "New Feature: Multi-Instance Support for Wechaty v0.16(WIP)"
 author: huan
 date: '2018-04-23 18:14:52 +0800'
+categories: tutorial
+tags:
+  - code
+header:
+  teaser: /assets/2018/blessed-twins-bot.png
 ---
 
 > Author: [Huan LI](https://github.com/huan), Half machine half human boy.
@@ -13,9 +18,7 @@ Wechaty v0.16 is working in progress.
 * **Good news**: We will be able to run as many as Wechaty instances than only one singleton before!
 * **Bad news**: ~~BREAKING CHANGES were introduced.~~ This enhancement has no BC any more!
 
-
 <!--more-->
-
 
 Wechaty could only be able to instantiate once before. This comes for one reason: I'm lazy at the beginning.
 
@@ -27,7 +30,7 @@ To make it work, we designed a strange pattern: clone the `Contact` class and us
 
 > Please let me know if you know any design pattern similar to it, or it's a confirmed an anti-pattern.
 
-## TL;DR;
+## TL;DR
 
 Talk is cheap, show me the code.
 
@@ -97,7 +100,7 @@ Full `eval` source code is at <https://github.com/Chatie/wechaty/issues/518#issu
 
 ### 4. PoC V4: `class extend`
 
-After lots of massive research & experiment work, I decided to extend the original class to create a new one for our usage. 
+After lots of massive research & experiment work, I decided to extend the original class to create a new one for our usage.
 
 ```ts
 class Bot1Contact extends Contact {}

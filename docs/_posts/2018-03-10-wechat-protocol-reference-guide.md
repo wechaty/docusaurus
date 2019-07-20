@@ -165,7 +165,7 @@ GET http://wx.qlogo.cn/mmhead/Q3auHgzwzM7NR4TYFcoNjbxZpfO9aiaE7RU5lXGUw13SMicL6i
 
 > 测试服务端代码
 
-https://gist.githubusercontent.com/yongboy/9341037/raw/pong_server.c
+<https://gist.githubusercontent.com/yongboy/9341037/raw/pong_server.c>
 
 ```c
 /**
@@ -485,7 +485,6 @@ public class PingClient {
 17. 收付款功能还没研究
 18. 微信 CommandSchedule自定义协议 weixin://  手动根据功能解析 profile获取和展示、View跳转等。可手动解析实现模拟手机端.
 
-
 > 协议小结
 
 1. 发布的消息对应一个ID（只要单个方向唯一即可，服务器端可能会根ID判断重复接收），消息重传机制确保有限次的重试，重试失败给予用户提示，发送成功会反馈确认，客户端只有收到确认信息才知道发送成功。发送消息可能不会产生新SyncKey。
@@ -633,10 +632,10 @@ key是递增的，但不要求连续
 ### 传送门
 
 原版Github传送门(已修复DNS错误301问题)：
-> https://github.com/InfiniteTsukuyomi/MicroChat/
+> <https://github.com/InfiniteTsukuyomi/MicroChat/>
 
 Python版
-> https://github.com/InfiniteTsukuyomi/MicroChat/tree/master/test
+> <https://github.com/InfiniteTsukuyomi/MicroChat/tree/master/test>
 
 ### 感谢
 

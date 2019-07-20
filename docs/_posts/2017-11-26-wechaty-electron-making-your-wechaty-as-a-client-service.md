@@ -49,10 +49,11 @@ web端:微信里的用户发言会直接发布到文字直播间，被标注为�
 我常常会为自己有一些自我感觉很棒多想法而窃喜。但是鼓起勇气去写又是另一回事了。我仔细的阅读wechaty的源码和electron的api 进行对比和测试。刚有所得时，puppeteer出现了，wechaty 出现了一个较大版本的变动。puppeteer 简直太好用了，比electron的api更全面（我猜测electron也许会因此而更新版本），然而问题也来了，puppeteer 实现的接口electron做不到了！比如 获取页面的弹窗，比如class ElementHandle...
 我采用最谨慎和保守的方式对 wechaty／puppet-web 进行改写：
 
-    * 新增electron-driver.ts 实现wechaty 中用到的puppeteer的所有接口方法
-    * 在wechaty－bro.js中使用ipcRenderer 来发送和接收electron 的事件和指令，
-    * 新增emit方法（electron 接口中没有puppeteer 的 exposeFunction方法 ）
-    * bridge.ts中增加 bindEvents方法，使用ipcMain.on(event,handler)来订阅页面回传的事件
+* 新增electron-driver.ts 实现wechaty 中用到的puppeteer的所有接口方法
+* 在wechaty－bro.js中使用ipcRenderer 来发送和接收electron 的事件和指令，
+* 新增emit方法（electron 接口中没有puppeteer 的 exposeFunction方法 ）
+* bridge.ts中增加 bindEvents方法，使用ipcMain.on(event,handler)来订阅页面回传的事件
+
 以上最主要的几处修改保证对原来项目改动最小化。
 经过测试，基本功能已经可用，但是仍然有些许bug，需要后续继续修正。项目地址：[wechaty-electron](https://github.com/GuoYingxu/wechaty/tree/wechaty-electron)
 

@@ -98,9 +98,9 @@ Wechaty本身是使用的Typescript编写。我们在编写机器人的时候，
 
 有同学问，不想通过所有的好友请求，怎么办呢？
 
-这里可以参考这个示例：https://github.com/Chatie/wechaty/blob/master/example/friend-bot.ts
+这里可以参考这个示例：<https://github.com/Chatie/wechaty/blob/master/example/friend-bot.ts>
 和`friend Event` API：
-http://chatie.io/wechaty/#Wechaty+on
+<http://chatie.io/wechaty/#Wechaty+on>
 
 Wechaty提供的接口可以通过验证信息来过滤掉一部分发送请求的好友。具体的的代码：
 
@@ -119,7 +119,7 @@ Wechaty提供的接口可以通过验证信息来过滤掉一部分发送请求�
 Wechaty提供的接口可以识别机器人接收到的消息时什么类型的，因为Wechaty是基于web的，所以不能做领取红包的操作。
 
 可以参考我的这个代码:
-https://github.com/TingYinHelen/wechaty-test/blob/master/index.js
+<https://github.com/TingYinHelen/wechaty-test/blob/master/index.js>
 在49行的地方，判断message的类型，红包信息的m.type() =10000，当`m.type() == 10000`的时候，说明是红包，机器人就会@一下我自己，提醒我赶紧抢红包。
 
 #### 9.  如何防止封号
@@ -136,9 +136,9 @@ https://github.com/TingYinHelen/wechaty-test/blob/master/index.js
 
 这里建议使用Server酱。网页版微信会经常把用户踢下线，Server酱可以帮助我们知道Wechaty发生了哪些异常。 Server酱，他是一个能从服务器推报警和日志到手机的工具，非常简单易操作：
 
-1.用GitHub账号登入后，获得一个SCKEY（在「发送消息」页面）  按照引导，点击“微信推送”，扫码关注“方糖”后即可完成绑定 
+1.用GitHub账号登入后，获得一个SCKEY（在「发送消息」页面）  按照引导，点击“微信推送”，扫码关注“方糖”后即可完成绑定
 
-2.在login、logout、scan、和error事件触发后，将一些关键信息往 http://sc.ftqq.com/SCKEY.send 发Get请求，我自己的微信里就收到消息了。
+2.在login、logout、scan、和error事件触发后，将一些关键信息往 <http://sc.ftqq.com/SCKEY.send> 发Get请求，我自己的微信里就收到消息了。
 
 这样，当我的机器人出现各种异常情况，我随时随地都可以知道，需要再扫码进入的时候，方糖这公众号就会把二维码推到我的手机上，我只要用机器人的微信扫码就可以了。
 
@@ -146,7 +146,7 @@ https://github.com/TingYinHelen/wechaty-test/blob/master/index.js
 
 终止程序命令: `ctrl + c`
 
-#### 13.怎么区分群和私聊 
+#### 13.怎么区分群和私聊
 
 机器人在获取message的时候可以判断message.room()方法返回值，当返回是null，就说明是私聊，返回不是null就是群聊。null在js 中转为Boolean之后是false。所以直接看代码
 

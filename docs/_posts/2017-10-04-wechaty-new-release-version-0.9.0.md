@@ -1,20 +1,20 @@
 ---
 title: Wechaty New Version 0.9.0 Released
 date: '2017-10-04 10:0:0 +0800'
-author: Huan
+author: huan
 categories: announcement
 tags:
   - release
 header:
   teaser: /assets/2017/huan-wechaty-new-version-0.9.0.png
 ---
-> Author: [@zixia](https://github.com/huan) Angel Investor, Full Stack Developer, Paragiding Pilot, Author of Wechaty.
+> Author: [@huan](https://github.com/huan) Angel Investor, Full Stack Developer, Paragiding Pilot, Author of Wechaty.
 
 ![wechaty-release-0.9.0][wechaty-release-0.9.0]
 
 The Wechaty has been updated to version 0.9.0 today. This release contains a number of bug fixes, security updates and feature enhancements.
 
-If you find new issues, please let us know by visiting our Github issue page and filing a bug. 
+If you find new issues, please let us know by visiting our Github issue page and filing a bug.
 
 Huan LI  
 Chatie/Wechaty
@@ -91,7 +91,7 @@ Chatie/Wechaty
 - \[doc\] To Embed Document in Wechaty Code for Generating Automaticly [\#73](https://github.com/Chatie/wechaty/issues/73)
 - Promote StateMonitor to a solo NPM module: StateSwitch [\#466](https://github.com/Chatie/wechaty/issues/466)
 - Lazy to create a stream [\#470](https://github.com/Chatie/wechaty/pull/470) ([mukaiu](https://github.com/mukaiu))
-- add magic code for room.say\(\)  when `@bot ` happen [\#440](https://github.com/Chatie/wechaty/pull/440) ([lijiarui](https://github.com/lijiarui))
+- add magic code for room.say\(\)  when `@bot` happen [\#440](https://github.com/Chatie/wechaty/pull/440) ([lijiarui](https://github.com/lijiarui))
 - first item of memberList as owner is confusion [\#358](https://github.com/Chatie/wechaty/pull/358) ([JasLin](https://github.com/JasLin))
 - Add JsDoc for Class Contact [\#321](https://github.com/Chatie/wechaty/pull/321) ([lijiarui](https://github.com/lijiarui))
 - Add print nodejs version [\#280](https://github.com/Chatie/wechaty/pull/280) ([xinbenlv](https://github.com/xinbenlv))

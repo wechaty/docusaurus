@@ -29,7 +29,7 @@ onSuccess: function(e) {
         var o = this.MMSendMsg;
         o.MediaId = e.MediaId,
         s.sendMessage(o),
-        t.$apply(function() 
+        t.$apply(function()
             o.MMFileStatus = a.MM_SEND_FILE_STATUS_SUCCESS
         })
    } else

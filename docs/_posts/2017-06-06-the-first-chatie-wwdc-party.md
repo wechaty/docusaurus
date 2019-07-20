@@ -11,7 +11,7 @@ header:
 
 > Author: [@greatgeekgrace](https://github.com/greatgeekgrace) Li Jiaxuan, Ex-Baidu-er, Tensorflow Expert who has just published a [ML Book](http://item.jd.com/12073631.html) last month.
 
-On June 6, 2017, at 6 PM, we held the First Chatie Worldwide Developers Conference(WWDC) Party in the Su Shi Restaurant of Wudaokou, Beijing. 
+On June 6, 2017, at 6 PM, we held the First Chatie Worldwide Developers Conference(WWDC) Party in the Su Shi Restaurant of Wudaokou, Beijing.
 
 ![Chatie WWDC Photo][dinner-photo]
 
@@ -19,7 +19,7 @@ The Conference consists of a small group of seven people, and the theme is about
 
 <!--more-->
 
-### This is the greetings vedio from the above person:
+### This is the greetings vedio from the above person
 
 <div class="video-container" style="
     position: relative;
@@ -36,7 +36,7 @@ The Conference consists of a small group of seven people, and the theme is about
     height:100%;
 "></iframe></div>
 
-In the Conference, everyone got the newly released Wechaty Logo which Li Jiarui gave us as a gift. At the same time, Zhou Zaonan and Li Jiarui discussed with the Typescript language to optimize Chatie/angular project continuously. Li Zhuohuan([@zixia](https://github.com/huan)) also give some useful suggestions for TensorFlow Community to help more beginners interested in Machine Learning. Jiarui and I also discussed an inovated program, hoping to make a more intelligent "brain" of the Wechaty robot, with deep learning methods, integrates the useful information together in Wechat Group. 
+In the Conference, everyone got the newly released Wechaty Logo which Li Jiarui gave us as a gift. At the same time, Zhou Zaonan and Li Jiarui discussed with the Typescript language to optimize Chatie/angular project continuously. Li Zhuohuan([@huan](https://github.com/huan)) also give some useful suggestions for TensorFlow Community to help more beginners interested in Machine Learning. Jiarui and I also discussed an inovated program, hoping to make a more intelligent "brain" of the Wechaty robot, with deep learning methods, integrates the useful information together in Wechat Group.
 
 Finally, we also visited the PNP Incubator located on Zhizao Avenue, Zhongguancun. Jia Rui took out the Japanese wine "White Island", which has been treasured for many years. We had a happy drinking experience. I also have a fortunately chance to take a photo with Li ZhuoHuan, who is the great recommender of my book.
 
@@ -52,7 +52,7 @@ You can also pay a attention for Li Jiaxuan's this book "Technical Analysis And 
 
 这是各个大牛们给大家的问候~~ （视频见上）
 
-聚会上，每人都拿到了新出炉的Wechaty的Logo标志；会上“段子手”周载南和李佳芮一起讨论了用Typescript继续优化Chatie/angular项目；李老师也给TensorFlow技术社区一些能帮助到更多机器学习入门者的有用建议；我和佳芮美女也探讨了方案，希望把wechaty做成一个更加智能有“脑”的机器人，用深度学习的方法，将微信群里的有用资讯汇总起来给大家。 
+聚会上，每人都拿到了新出炉的Wechaty的Logo标志；会上“段子手”周载南和李佳芮一起讨论了用Typescript继续优化Chatie/angular项目；李老师也给TensorFlow技术社区一些能帮助到更多机器学习入门者的有用建议；我和佳芮美女也探讨了方案，希望把wechaty做成一个更加智能有“脑”的机器人，用深度学习的方法，将微信群里的有用资讯汇总起来给大家。
 
 最后，我们还参观了位于中关村智造大街的PNP孵化器，佳芮还拿出了珍藏多年的日本酒“白洲”，喝的一手好杜康。我也有幸和书本的推荐人李老师合影。
 

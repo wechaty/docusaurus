@@ -1,9 +1,14 @@
 ---
-
 title: "使用koa2+wechaty打造个人微信小秘书"
 author: Leo_chen
 date: '2019-04-02 18:30:52 +0800'
+categories: tutorial
+tags:
+  - code
+header:
+  teaser: /assets/2019/koa-wechaty.jpg
 ---
+<!-- markdownlint-disable -->
 
 > 作者: [Leo_chen](https://github.com/gengchen528/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [使用koa2+wechaty打造个人微信小秘书](https://juejin.im/post/5ca1dd846fb9a05e6c77b72f?utm_source=gold_browser_extension)
 

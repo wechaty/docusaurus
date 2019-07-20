@@ -1,9 +1,14 @@
 ---
-
 title: "用wechaty实现新闻资讯播报机器人"
 date: 2018-08-13 09:00 +0800
 author: judaschrist
+categories: tutorial
+tags:
+  - code
+header:
+  teaser: /assets/2018/wechaty-xiaoli.jpeg
 ---
+<!-- markdownlint-disable -->
 
 > Author: [@judaschrist](https://github.com/judaschrist), Co-founder & CTO of [小理智能](https://xiaoli.ai/) 
 

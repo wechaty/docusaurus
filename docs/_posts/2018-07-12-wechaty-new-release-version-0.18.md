@@ -2,6 +2,11 @@
 title: "Wechaty New Release Version v0.18: SLOC from 27,630 to 7,817"
 author: huan
 date: '2018-07-12 18:14:52 +0800'
+categories: announcement
+tags:
+  - release
+header:
+  teaser: /assets/2018/huan-reduce-weight.jpg
 ---
 
 > Author: [Huan LI](https://github.com/huan), Machine Learning Ph.D.
@@ -61,7 +66,7 @@ If we count the other npm modules that split out from Wechaty before, we can als
 1. [cloneClass](https://www.npmjs.com/package/clone-class): Clone an ES6 Class as Another Class Name for Isolating Class Static Properties.
 1. [finis](https://www.npmjs.com/package/finis): Node.js program finisher - run your last callback with `exit code` and `signal name` as arguments
 1. [FileBox](https://www.npmjs.com/package/file-box): Pack a File into Box for easy move/transfer between servers no matter of where it is.(local, remote url, or cloud storage)
-1. [FlashStore](https://www.npmjs.com/package/flash-store): FlashStore is a Key-Value persistent 
+1. [FlashStore](https://www.npmjs.com/package/flash-store): FlashStore is a Key-Value persistent
 1. [hotImport](https://www.npmjs.com/package/hot-import): Hot Module Replacement(HMR) for Node.js
 storage with easy to use ES6 Map-like API(both Async and Sync support), powered by LevelDB and TypeScript.
 1. [Listag](https://www.npmjs.com/package/listag): List Manager for Array Operations & Query by Tag
@@ -86,9 +91,9 @@ So at last, as we published the v0.18, we only left 3,853 source lines of the co
 
 From 27,630 to 7,817, we are 72% off than before, cheers!
 
-# Change Log
+## Change Log
 
-## [v0.18.0](https://github.com/chatie/wechaty/tree/v0.18.0) (2018-07-11)
+### [v0.18.0](https://github.com/chatie/wechaty/tree/v0.18.0) (2018-07-11)
 
 [Full Changelog](https://github.com/chatie/wechaty/compare/v0.16.0...v0.18.0)
 

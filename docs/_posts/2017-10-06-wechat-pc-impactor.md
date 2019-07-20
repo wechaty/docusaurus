@@ -16,7 +16,7 @@ header:
 
 因为易语言代码有的朋友们可能看起来怪怪的 如果没有接触过它，并不是那么通俗易懂。所以改成了cpp代码供审阅.  由于书写仓促 错误的部分希望大家指正，小弟在此多谢！
 
-感谢 易语言精易论坛坛友(xdssoft,恨不能遗忘,gh0st少主)分享的开源代码参考！ 
+感谢 易语言精易论坛坛友(xdssoft,恨不能遗忘,gh0st少主)分享的开源代码参考！
 
 > 准备工作：  
 
@@ -49,7 +49,7 @@ class hookInject {
     const DLL_PROCESS_DETACH = 0    //进程卸载 系统查看当前映射到进程空间中的所有DLL文件映像
     const DLL_PROCESS_ATTACH = 1    //进程映射 系统查看当前映射到进程空间中的所有DLL文件映像
     const DLL_THREAD_ATTACH = 2     //线程映射
-    const DLL_THREAD_DETACH = 3     //线程卸载 
+    const DLL_THREAD_DETACH = 3     //线程卸载
     const DLL_PROCESS_VERIFIER = 4  //进程更改 系统查看当前映射到进程空间中的所有DLL文件映像
     const WM_COPYDATA =0x4A         //
 
@@ -86,7 +86,7 @@ class hookInject {
         }
 
         //*
-        其他的函数也一样需要写..检测真正Version动态库 
+        其他的函数也一样需要写..检测真正Version动态库
         调用时 每个函数所在内存的地址.  否则可能会造成 crash !!
         FARPROC GetProcAddress(
             HMODULE hModule, // DLL模块句柄
@@ -345,7 +345,7 @@ int _tmain(int argc, _TCHAR* argv[]){
 void hook_install(){
 
     CALLBACK Hook_Get_Type_CallBack;
-    CALLBACK Sync_CallBack;         //User Msg 
+    CALLBACK Sync_CallBack;         //User Msg
     CALLBACK Collect_CallBack;      //Image
 
     Impactor::GetBaseAddress();
