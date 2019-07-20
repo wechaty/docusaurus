@@ -3,6 +3,7 @@ set -e
 
 function resize () {
   FILE=$1
+  echo "resizing $FILE ..."
   mogrify \
     -verbose \
     -quality 80 \
@@ -25,6 +26,7 @@ pushd ${DST}
 FILE_LIST=($(find . -type f -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' -o -name '*.gif'))
 
 for FILE in "${FILE_LIST[@]}"; do
+  echo "checking $FILE ..."
   WIDTH=$(identify -ping -format '%w' "$FILE")
   if [ $WIDTH -gt 1920 ]; then
     resize $FILE
