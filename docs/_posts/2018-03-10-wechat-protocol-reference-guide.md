@@ -2,10 +2,9 @@
 title: "微信App通信协议案例学习参考指南"
 author: h4dex
 date: '2018-03-11 09:18:52 +0800'
-categories: tutorial
+categories: hack
 tags:
   - hook
-  - hack
 header:
   teaser: /assets/2018/h4dex-wechatprotocol.jpeg
 ---

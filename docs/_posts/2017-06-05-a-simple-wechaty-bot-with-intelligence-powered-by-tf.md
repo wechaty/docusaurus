@@ -2,7 +2,7 @@
 title: "A Simple WeChaty Bot with Intelligence Powered by TensorFlow"
 date: 2017-06-05 23:50 +0800
 author: WildCat
-categories: tutorial
+categories: project
 tags:
   - code
   - machine learning

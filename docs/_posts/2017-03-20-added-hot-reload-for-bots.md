@@ -2,7 +2,7 @@
 title: '给微信机器人添加热重启功能'
 author: gcaufy
 date: '2017-03-20 11:11:11 +0800'
-categories: tutorial
+categories: feature
 tags:
   - code
 header:

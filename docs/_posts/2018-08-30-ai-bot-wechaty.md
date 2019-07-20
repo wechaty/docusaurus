@@ -4,7 +4,7 @@ date: 2018-08-30 09:00 +0800
 author: lirobin1998
 categories: article
 tags:
-  - ai
+  - artificial intelligence
 header:
   teaser: /assets/2018/hi-ai.jpg
 ---

@@ -2,7 +2,7 @@
 title: "用Node+wechaty写一个爬虫脚本每天定时给女(男)朋友发微信暖心话"
 author: Leo_chen
 date: '2019-04-02 17:30:52 +0800'
-categories: tutorial
+categories: project
 tags:
   - code
 header:
