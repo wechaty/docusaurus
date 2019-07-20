@@ -1,8 +1,12 @@
 ---
-
 title: "Wechaty Sticker is ON SALE!"
 date: '2017-07-06 19:31:53'
-author: Huan
+author: huan
+categories: shop
+tags:
+  - sticker
+header:
+  teaser: /assets/2017/wechaty-sticker.jpg
 ---
 
 [![Wechaty Sticker][wechaty-sticker-size]](https://item.jd.com/12994583384.html)
@@ -11,13 +15,13 @@ We had just made very high quality Wechaty Logo Stickers recently!
 
 If you are using Wechaty and you love Wechaty, from now you can buy our logo sticker online.
 
-### I <font color="red" size="+1">❤</font> Wechaty[^1]:
+<!-- markdownlint-disable MD033 -->
+
+### I <font color="red" size="+1">❤</font> Wechaty[^1]
 
 * Order from Etsy: <https://www.etsy.com/listing/541157219> (Worldwide[^2])
 * Order from JD: <https://item.jd.com/12994583384.html>
 * Order from TMall: <https://detail.tmall.com/item.htm?id=552823238544>
-
-<br />
 
 <!--more-->
 

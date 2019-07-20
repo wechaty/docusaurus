@@ -3,7 +3,6 @@
 title: Wechaty Contributor Dinner with Data Girls
 date: '2018-01-14 10:0:0 +0800'
 author: huan
-published: true
 ---
 
 ![Wechaty Contributors][contributors-image]

@@ -1,10 +1,12 @@
 ---
-
 title: "Interact Wechaty with Ruby on Rails from scratch"
 author: WildCat
 date: '2017-04-21 16:01:53 +0100'
-headline: 'test'
-published: true
+categories: tutorial
+tags:
+  - code
+header:
+  teaser: /assets/2017/wildcat-rails-db-initial-structure.png
 ---
 
 ![architecture2][wildcat-rails-architecture-2]

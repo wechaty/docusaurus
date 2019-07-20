@@ -1,8 +1,12 @@
 ---
-
 title: "Wechaty Contributor Dinner"
 author: Yang BAI
 date: '2017-04-26 13:01:53'
+categories: event
+tags:
+  - meetup
+header:
+  teaser: /assets/2017/wechat-meeting.jpg
 ---
 
 Author: [@antonia0912](https://github.com/antonia0912), formal community manager at [JueJin](https://juejin.im/)(Chinese Hacker News)
@@ -74,7 +78,6 @@ Here is the Chinese version.
 [赵磊](https://github.com/Jolly23)：96 年大三小鲜肉，擅长 Python 网络及爬虫开发，大型数字化校园系统架构开发，钟情研究投行量化交易系统，并希望以此作为出国读研学习方向。
 
 很开心大家能聚在一起，共同探讨技术问题并增进对彼此的了解，希望日后能多一些线下交流的机会。
-
 
 [dinner-photo]: /assets/2017/wechat-meeting.jpg
 [antonia-video-photo]: /assets/2017/antonia0912-issue-4-seminar.jpg

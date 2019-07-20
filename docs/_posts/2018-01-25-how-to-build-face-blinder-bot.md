@@ -3,7 +3,6 @@
 title: '构建脸盲聊天机器人--Wechaty Blinder'
 author: 李佳芮
 date: '2018-1-25 23:04:27 +0800'
-published: true
 ---
 
 > Author: [@李佳芮](github.com/lijiarui), [桔子互动](botorange.com)创始人, Wechaty Author

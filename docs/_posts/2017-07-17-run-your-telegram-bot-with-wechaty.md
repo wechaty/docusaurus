@@ -1,26 +1,31 @@
 ---
-
 title: "Run Your Telegram Bot with Wechaty"
 date: 2017-07-17 18:00 +0800
 author: hczhcz
+categories: tutorial
+tags:
+  - code
+  - telegram
+header:
+  teaser: /assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-1.png
 ---
 
 > Author: [@hczhcz](https://github.com/hczhcz), an open source coder <del>and fan of the TOAD</del>
 
 Before introducing [Wechaty Telegram Bot Adaptor](https://github.com/hczhcz/wechaty-telegram), I would like to say something about Telegram chatbots. Recent days, I have a lot of fun playing chatbots on Telegram. After lynched hundreds of tanners in [Werewolf](http://www.tgwerewolf.com/) games, I realized that a chatbot can bring so much fun to users.
 
-![]({{site.baseurl}}/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-1.png)
+![telegram]({{site.baseurl}}/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-1.png)
 
-*Playing Werewolf on Telegram*
+### Playing Werewolf on Telegram
 
 What are the differences between a chatbot and a game app? A chatbot is much more accessible. You do not need to let your friends download and install it. Instead, just say "hey, let's play Werewolf/UNO/Avalon..." and the chatbot will be ready for your friends and you. The process of playing the game and the process of chatting are actually "fused" together.
 
 <!--more-->
 In addition to games, chatbots can involve in one's daily life from many aspects. When I wake up in the morning, I can call a bot to add myself to the list of early-morning guys (even if I get up later than 10 a.m. XD). I can keep tracking the updates from GitHub via a bot. A bot can also get random XKCD comics, Konachan wallpapers or Wikipedia entries for me. There are some super funny chatbots. One of them would let you ban a user in a group for several seconds but you have a probability of 50% that gets yourself banned. Another will pair the parentheses you sent. For example, if you say something like "（逃", it will reply "） ○(￣^￣○)".
 
-![]({{site.baseurl}}/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-2.jpg)
+![telegram]({{site.baseurl}}/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-2.jpg)
 
-*A Bot Involves in Your Daily Life (via Imgur)*
+### A Bot Involves in Your Daily Life (via Imgur)
 
 Chatbots are good at encouraging user-generated contents. There are auto-reply bots in Telegram which allow users to add their own reply rules. Since auto-reply bots were added to our group, we fed a lot of interesting rules to it. Now, it looks like:
 
@@ -44,13 +49,13 @@ WeChat is a great chatting application and it may be the most functional one. It
 
 Taking [MESE bot](https://github.com/hczhcz/mese-next-telegram) as an example, it is a Telegram chatbot of a business simulation game MESE. Several months ago, I ported it to WeChat because the majority of MESE players in China do not use Telegram. The idea is creating a mock Telegram chatbot library which provides Telegram's interface but interacts with WeChat internally. It is somewhat a dirty hack. The mock library processes text message only, and the user identification still works in WeChat's way. I slightly modified the code of MESE bot so that it works as expected. Since then, by writing the code once, the new feature of MESE bot will be deployed to both Telegram and WeChat.
 
-![]({{site.baseurl}}/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-3.png)
+![telegram]({{site.baseurl}}/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-3.png)
 
-*Telegram MESE Bot*
+### Telegram MESE Bot
 
-![]({{site.baseurl}}/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-4.png)
+![telegram]({{site.baseurl}}/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-4.png)
 
-*WeChat MESE Bot*
+### WeChat MESE Bot
 
 Now, when creating a new Telegram chatbot, I would like to run it on WeChat too. Considering each chatbot has its own needs and the solution from MESE bot can not cover all of them, it requires a more general way to adapt between Telegram and WeChat. The difference here is that a "general" library should be strictly compatible (as much as it can be) with Telegram's API standard like using an integer as a user ID and providing complete message objects as defined in [Telegram Bot API](https://core.telegram.org/bots/api).
 
@@ -59,6 +64,7 @@ That is why I started the project to build a WeChat adaptor for Telegram Bot API
 ## From a Technical Perspective
 
 Let us move on to the implementation of Wechaty Telegram Bot Adaptor. The library is basically a class called `WechatyTelegramBot` just like the original `TelegramBot` in node-telegram-bot-api. It maintains a Wechaty instance internally:
+
 ```javascript
 this.wechaty = wechaty.Wechaty.instance(this.options.wechaty);
 ```
@@ -111,7 +117,7 @@ stopPolling() {
 }
 ```
 
-## Finally...
+## Finally
 
 I am really glad to share the story of [Wechaty Telegram Bot Adaptor](https://github.com/hczhcz/wechaty-telegram) to you. Wechaty is cool! As well, the community's blog and WeChat group benefit developers a lot.
 
