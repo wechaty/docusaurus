@@ -19,7 +19,7 @@ There were 7 guys came to the gathering (including me), 6 programmers, and one u
 
 <!--more-->
 
-**[Huan LI](https://github.com/zixia)** An Angel Investor, Paragliding Pilot and Full Stack Developer. He founded serial enterprises with strong technical background and rich social network experience. He is also the organizer of the meetup.
+**[Huan LI](https://github.com/huan)** An Angel Investor, Paragliding Pilot and Full Stack Developer. He founded serial enterprises with strong technical background and rich social network experience. He is also the organizer of the meetup.
 
 **[Hailiang WANG](https://github.com/Samurais)** is the leader of *Rockq Community* and a chatbot developer. He used to work in *IBM Innovation Center* and the *Development Labs*. Now he works for *Lingling English* and in charge of the AI Lead.
 
@@ -63,7 +63,7 @@ Here is the Chinese version.
 
 简单介绍一下大家：
 
-[李卓桓](https://github.com/zixia)：PreAngel 投资人。zixia BBS、叽歪网创始人，优酷网首席科学家，水木清华BBS站长。清华大学本科，中欧国际工商学院EMBA。清华企业家协会移动互联网副主席，中欧移动互联网协会发起人。
+[李卓桓](https://github.com/huan)：PreAngel 投资人。zixia BBS、叽歪网创始人，优酷网首席科学家，水木清华BBS站长。清华大学本科，中欧国际工商学院EMBA。清华企业家协会移动互联网副主席，中欧移动互联网协会发起人。
 
 [王海良](https://github.com/Samurais)：Rockq 社区领袖，呤呤英语 AI Lead，曾就职 IBM 创新中心、研发中心，他也是 Chatbot 开发者。
 

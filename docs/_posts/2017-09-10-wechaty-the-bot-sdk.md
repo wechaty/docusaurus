@@ -1,8 +1,13 @@
 ---
-
 title: "Wechaty - the missing bot SDK for WeChat"
 date: 2017-09-10 18:00 +0800
 author: dcsan
+categories: article
+tags:
+  - api
+  - unofficial
+header:
+  teaser: /assets/2017/dcsan-dashbot.jpg
 ---
 
 > Author: [@dcsan](https://github.com/dcsan) making chatbots at RIKAI Labs
@@ -20,6 +25,7 @@ Additionally the core wechaty team make a big effort to use English in their doc
 <!--more-->
 
 ## Groups APIs and multiuser chatbots
+
 So far the Tencent official APIs have only addressed 1:1 chatbots. WeChaty API is addressing an extra layer with addressing for users within groups.
 In the US Slack is providing new APIs for botmakers, such as "buttons" that you can use [to make choices in a shared chat](https://api.slack.com/interactive-messages). This brings up surprising design problems such as - if one person pushes a button to change state, should everyone else in the group see that state reflected? Or should each person get the chance to make their own decision, such as for a voting app, where everyone can vote differently.
 Slack is providing infrastructure to support both use cases.
@@ -28,8 +34,8 @@ The official tencent API allows for messages to single users, but [Wechaty also 
 With a group shared experience, there is a huge benefit to chatbots. Suddenly you can see what other people are doing. You can learn how to "use" the bot just by watching someone else's conversation. You can do tasks together such as peer-learning. The simple text UI suddenly becomes a huge benefit as it's easy to update a shared state.
 With WeChaty's ability to provide an API to a personal account, in many ways it's showing the way ahead for Wechat and how chat platforms can be a huge benefit to users over conventional websites and apps.
 
-
 ## Bot to Bot communications
+
 This talk of groups and multiuser communication reminds me of a meeting last week in SF with Beerud from [Gupshup](https://gupshup.io/). As well as being a major player in the bot authoring space, they also run lots of infrastructure for things like telco messaging. He has a vision called "interbot" which is about [bot to bot communication channels](https://www.interbot.cc)
 
 Of course this won't replace APIs but sometimes for a small business like a restaurant, a "chatbot" maybe the only API they'll provide to their menu, or making a booking for example. Gupshup is developing wrappers to allow you to compose new bots by configuring and routing messages. This is a little bit similar to some of the bots people have made with WeChaty that for example route messages between different chat groups.
@@ -37,6 +43,7 @@ Of course this won't replace APIs but sometimes for a small business like a rest
 They compare the Bot-to-bot vs traditional APIs:
 
 Bot to Bot
+
 * Connect bots without coding skills
 * Bots are generally flexible and fault tolerant
 * Bots are asynchronous, enable more possibilities
@@ -44,6 +51,7 @@ Bot to Bot
 * Bots can talk to bots and humans alike
 
 APIs
+
 * Integrating APIs requires coding skills
 * APIs are fragile; they break with input errors
 * APIs are synchronous; they don't like delays
@@ -56,8 +64,8 @@ There are some [fascinating ideas here for a language to compose bots](https://w
     Usage: @C = @A | @B
     Here, @C is a composite bot of 2 bots A & B concatenated serially.
 
-
 ## Analytics for Bots
+
 ![Dennis and Socks]({{site.baseurl}}/assets/2017/dcsan-dashbot.jpg)
 
 One of those from overseas who works with the Wechaty team is Dennis Yang from [Dashbot.io](https://www.dashbot.io/), one of the leading analytics providers purely for 'bots. The 'bot industry outside of China is at this established stage where the ecosystem is growing enough to have all types of companies from authoring to analytics to AI.
@@ -66,20 +74,21 @@ Dennis is planning to support the WeChaty API to make it easy for developers to 
 
 Dennis gave me some natty dashbot socks to share with the WeChaty dev team :)
 
-
 ## The future of WeChaty
+
 Previously I've seen unofficial APIs be embraced by forward looking platforms.
 For example [this blog post from Discord](https://blog.discordapp.com/the-robot-revolution-has-unofficially-begun-unofficial-api-23a3c722d5bf)
 
 > ### The Robot Revolution has Unofficially Begun (Unofficial API)
+>
 > ... a dedicated group of ballers have reverse engineered our API to create what we’re calling the official unofficial Discord API ...
 
 I believe the Telegram API also began as a reverse engineering project, that gave inspiration to the telegram team to embrace and create their own bot platform.
 
 Let's hope that Tencent will look to Wechaty and enable more functions for chatbot developers, or even provide a full Chatbot SDK!
 
+## Join Us
 
-## Join Us !
 Join the group to chat with us on wechat!
 
 Wechaty is used in many ChatBot projects by hundreds of developers. If you want to talk with other developers, just scan the following QR Code in WeChat with secret code wechaty, join our Wechaty Developers' Home now.

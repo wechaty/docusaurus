@@ -36,7 +36,7 @@ The Conference consists of a small group of seven people, and the theme is about
     height:100%;
 "></iframe></div>
 
-In the Conference, everyone got the newly released Wechaty Logo which Li Jiarui gave us as a gift. At the same time, Zhou Zaonan and Li Jiarui discussed with the Typescript language to optimize Chatie/angular project continuously. Li Zhuohuan([@zixia](https://github.com/zixia)) also give some useful suggestions for TensorFlow Community to help more beginners interested in Machine Learning. Jiarui and I also discussed an inovated program, hoping to make a more intelligent "brain" of the Wechaty robot, with deep learning methods, integrates the useful information together in Wechat Group. 
+In the Conference, everyone got the newly released Wechaty Logo which Li Jiarui gave us as a gift. At the same time, Zhou Zaonan and Li Jiarui discussed with the Typescript language to optimize Chatie/angular project continuously. Li Zhuohuan([@zixia](https://github.com/huan)) also give some useful suggestions for TensorFlow Community to help more beginners interested in Machine Learning. Jiarui and I also discussed an inovated program, hoping to make a more intelligent "brain" of the Wechaty robot, with deep learning methods, integrates the useful information together in Wechat Group. 
 
 Finally, we also visited the PNP Incubator located on Zhizao Avenue, Zhongguancun. Jia Rui took out the Japanese wine "White Island", which has been treasured for many years. We had a happy drinking experience. I also have a fortunately chance to take a photo with Li ZhuoHuan, who is the great recommender of my book.
 

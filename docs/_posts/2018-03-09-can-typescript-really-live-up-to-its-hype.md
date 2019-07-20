@@ -1,8 +1,12 @@
 ---
-
 title: "Can Typescript really live up to its hype?"
 date: '2018-03-09'
 author: suntong
+categories: article
+tags:
+  - typescript
+header:
+  teaser: /assets/2018/typescript-logo.png
 ---
 
 > Author: [@suntong](https://github.com/suntong), Canada
@@ -16,7 +20,7 @@ var x = 'A';
 x = x + 5
 ```
 
-But is it really? If you are a seasoned programmer and you are coding for yourself only, are you willing to get your hands tied up by MS Typescript, and suffer all its drawbacks in the mean time? 
+But is it really? If you are a seasoned programmer and you are coding for yourself only, are you willing to get your hands tied up by MS Typescript, and suffer all its drawbacks in the mean time?
 
 <!--more-->
 
@@ -91,7 +95,6 @@ https://flutter.io/?utm_source=google&utm_medium=blog&utm_campaign=beta_announce
 **Flutter Will Take Off in 2018**  
 https://codeburst.io/why-flutter-will-take-off-in-2018-bbd75f8741b0
 
-
 **What’s Revolutionary about Flutter**  
 https://hackernoon.com/whats-revolutionary-about-flutter-946915b09514
 
@@ -106,4 +109,3 @@ https://hackernoon.com/why-i-moved-from-javascript-to-dart-9ff55a108ff4#.ezyej7c
 
 **Why I moved from Java to Dart**  
 https://hackernoon.com/why-i-moved-from-java-to-dart-8f3802b1d652
-

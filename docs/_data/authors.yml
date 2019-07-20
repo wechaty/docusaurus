@@ -74,3 +74,39 @@ lijiarui:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/lijiarui"
+
+dcsan:
+  name        : "David 'DC' Collier"
+  bio         : "Serial Entrepreneur, Game designer and developer. Making chatbots at RIKAI Labs"
+  avatar      : "https://avatars1.githubusercontent.com/u/514002?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/dcsan"
+
+binsee:
+  name        : "Binsee"
+  bio         : "野路子的修炼者"
+  avatar      : "https://avatars1.githubusercontent.com/u/5285894?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/binsee"
+
+guoyingxu:
+  name        : "郭英旭"
+  bio         : ""
+  avatar      : "https://avatars1.githubusercontent.com/u/33899027?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/guoyingxu"
+
+tingyinhelen:
+  name        : "Helen"
+  bio         : "一个爱玩的程序员，喜欢折腾新技术，还喜欢研究框架源码。不写代码时喜欢跳舞，架子鼓，马拉松"
+  avatar      : "https://avatars1.githubusercontent.com/u/14006826?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/tingyinhelen"

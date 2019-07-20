@@ -15,7 +15,7 @@ Author: [@hain](http://blog.chatbot.io/webcv/), Lead of [Rockq Community](https:
 
 ![Blue and Red pill](/assets/2017/samurais-the-matrix.jpg)
 
-Wechaty就像是连到母体的管道，当我们还在思考着是吃红药片还是蓝药片的时候，pia，[zixia](https://github.com/zixia)就把Wechaty给做出来。然后呢？！
+Wechaty就像是连到母体的管道，当我们还在思考着是吃红药片还是蓝药片的时候，pia，[zixia](https://github.com/huan)就把Wechaty给做出来。然后呢？！
 
 对话，对话，对话。
 

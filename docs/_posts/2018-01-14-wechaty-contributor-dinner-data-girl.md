@@ -1,8 +1,12 @@
 ---
-
 title: Wechaty Contributor Dinner with Data Girls
 date: '2018-01-14 10:0:0 +0800'
 author: huan
+categories: event
+tags:
+  - meetup
+header:
+  teaser: /assets/2018/wechaty-contributor-dinner-data-girl.jpg
 ---
 
 ![Wechaty Contributors][contributors-image]
@@ -13,7 +17,7 @@ The above contributors are:
 
 1. [李佳芮](https://github.com/lijiarui), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003226), Founder & CEO of [BotOrange](http://botorange.com)
 2. [王海良](https://github.com/samurais), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003060), Founder & CEO of [ChatOpera](https://www.chatopera.com/)
-3. [李卓桓](https://github.com/zixia), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003061) & [Regional Director](https://rd.microsoft.com/en-us/huan-li), Author of [Wechaty](https://github.com/chatie/wechaty)
+3. [李卓桓](https://github.com/huan), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003061) & [Regional Director](https://rd.microsoft.com/en-us/huan-li), Author of [Wechaty](https://github.com/chatie/wechaty)
 4. [尹婷](https://github.com/TingYinHelen), [Microsoft VS MVP](https://mvp.microsoft.com/zh-cn/PublicProfile/5003059), Frontend Developer in ChengDu
 5. [梁迪](https://www.linkedin.com/in/christina-liang-590575147/), CPM at Microsoft
 6. [雨鸟](https://github.com/rainbird) , A devops engineer focus on Kubernetes

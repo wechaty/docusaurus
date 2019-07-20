@@ -1,8 +1,12 @@
 ---
-
 title: "Score Your Face Photo: a ML & Wechaty practice"
 date: 2017-09-18 09:00 +0800
 author: huyingxi
+categories: tutorial
+tags:
+  - code
+header:
+  teaser: /assets/2017/wechaty_selfie_pear.jpg
 ---
 
 > Author: [@huyingxi](https://github.com/huyingxi/wechaty_selfie) enjoying ML&Wechaty at BUPT
@@ -24,6 +28,7 @@ Say goodbye to your choice of difficulty!
 ![selfie demo](/assets/2017/wechaty_selfie_demo_screenshoot.jpg)
 
 ## Our development steps
+
 -----
 
 Once you have a little nodejs knowledge, and a little deep learning basis, you can build it. :)
@@ -47,20 +52,19 @@ Once you have a little nodejs knowledge, and a little deep learning basis, you c
 * Wechaty: wechat middleware
 * Fs: transfer pictures
 
-
 ## Some optimization recommendations
 
 If you are interested what I have done and would like to Develop a similar application.
+
 * If you want to use pictures from Instagram that have the selfie label as the training data, you should crawl the pictures with earlier release time.
 * You may try several different scoring strategies.
 * You can build a more complex deep learning model.
 
-
 ## Finally
 
 I strongly recommend that you now click on the link below, there are surprises waiting for you！
+
 * [Wechaty :)](https://github.com/Chatie/wechaty)
 * [What a Deep Neural Network thinks about your #selfie](https://karpathy.github.io/2015/10/25/selfie/)
 
 And more details about my selfie bot, you can find in my github repository at: [wechaty_selfie](https://github.com/huyingxi/wechaty_selfie)
-

@@ -449,7 +449,7 @@ Related Link
 - [Error: static puppet not found](https://github.com/Chatie/wechaty/issues/1161)
 - [Wechaty Multi-Instance Suport](https://github.com/Chatie/wechaty/issues/518)
 - NPM [clone-class](https://www.npmjs.com/package/clone-class)
-- https://github.com/zixia/node-clone-class/issues/5
+- https://github.com/huan/node-clone-class/issues/5
 
 ## Message.ext() 返回 `.ext` 而不是 `ext`
 根据`ext()` 在 Node/Python/C# 中的实现，我们的 `ext()` 也返回包括`.`的文件扩展名。 所以更新如下：
