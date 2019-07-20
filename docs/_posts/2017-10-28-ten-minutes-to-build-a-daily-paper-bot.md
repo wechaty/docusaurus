@@ -42,7 +42,7 @@ I also added some functions such as automatic reply to the bot, which made our u
 Finally, I like wechaty, thanks to all the contributors of wechaty!
 
 
-  [1]: /download/2017/leinue-bot.jpg
-  [2]: /download/2017/leinue-screenshot.PNG
+  [1]: /assets/2017/leinue-bot.jpg
+  [2]: /assets/2017/leinue-screenshot.PNG
   [3]: https://blog.chatie.io/guide/2017/01/01/getting-started-wechaty.html
   [4]: https://github.com/chatie/wechaty/wiki/Docker

@@ -105,7 +105,7 @@ docker logs -f wechaty
 
 扫描日志中的二维码或将URL地址复制到浏览器中扫描，然后正常的使用微信，可以看到终端中会有相关信息。
 
-[ghostcloud-banner]: /download/2016/ghostcloud-banner.jpg
-[ghostcloud-log]: /download/2016/ghostcloud-log.jpg
-[ghostcloud-message]: /download/2016/ghostcloud-message.jpg
-[ghostcloud-qrcode]: /download/2016/ghostcloud-qrcode.jpg
+[ghostcloud-banner]: /assets/2016/ghostcloud-banner.jpg
+[ghostcloud-log]: /assets/2016/ghostcloud-log.jpg
+[ghostcloud-message]: /assets/2016/ghostcloud-message.jpg
+[ghostcloud-qrcode]: /assets/2016/ghostcloud-qrcode.jpg

@@ -77,9 +77,9 @@ docker容器中默认的时间不是东八区，一定要重新搞一下，我�
 
 
 
-  [1]: /download/2017/iyjian-1.png
-  [2]: /download/2017/iyjian-2.png
-  [3]: /download/2017/iyjian-3.png
+  [1]: /assets/2017/iyjian-1.png
+  [2]: /assets/2017/iyjian-2.png
+  [3]: /assets/2017/iyjian-3.png
 
 
 

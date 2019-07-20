@@ -57,4 +57,4 @@ You can also pay a attention for Li Jiaxuan's this book "Technical Analysis And 
 
 大家也可以关注一下李嘉璇的这本畅销书《TensorFlow技术解析与实战》，对于建立深度学习知识体系很有帮助：[TensorFlow技术解析与实战](http://item.jd.com/12073631.html)
 
-[dinner-photo]: /download/2017/greatgeekgrace-chatie-wwdc-666.jpg
+[dinner-photo]: /assets/2017/greatgeekgrace-chatie-wwdc-666.jpg

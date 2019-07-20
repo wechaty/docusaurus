@@ -7,7 +7,7 @@ published: true
 
 > Author: [Huan LI](https://github.com/zixia), Half machine half human boy.
 
-![blessed twins bot](/download/2018/blessed-twins-bot.png)
+![blessed twins bot](/assets/2018/blessed-twins-bot.png)
 
 Wechaty v0.16 is working in progress.
 
@@ -110,7 +110,7 @@ By this technic, the code is very clean, the `instanceof` work as expected, ever
 
 After all the work, I modulized this part of the code as my new npm module: `clone-class` at <https://github.com/zixia/node-clone-class>, with automatic unit tests and deploy to NPM by CI/CD.
 
-![Hello Mr. Anderson](/download/2018/agent-smith-clone-anderson.jpg)
+![Hello Mr. Anderson](/assets/2018/agent-smith-clone-anderson.jpg)
 
 And finally, I can create as many bots as I need than before!
 

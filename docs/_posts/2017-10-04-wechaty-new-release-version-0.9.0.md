@@ -123,4 +123,4 @@ Thank you all contributors, Wechaty could not release version 0.9 without your h
 1. @[Gcaufy](https://github.com/Gcaufy): [\#310](https://github.com/Chatie/wechaty/pull/310)
 
 
-[wechaty-release-0.9.0]: /download/2017/huan-wechaty-new-version-0.9.0.png
+[wechaty-release-0.9.0]: /assets/2017/huan-wechaty-new-version-0.9.0.png

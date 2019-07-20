@@ -109,4 +109,4 @@ docker run -ti --volume="$(pwd)":/bot --rm zixia/wechaty mybot.ts
 ```
 [Click here to get the repo](https://github.com/lijiarui/Getting-Started-with-Wechaty---Live-Coding-Tutorial "Click here to get the repo")
 
-[ruirui-speech-nodejs-image]: /download/2017/lijiarui-speech-nodejs.jpg
+[ruirui-speech-nodejs-image]: /assets/2017/lijiarui-speech-nodejs.jpg

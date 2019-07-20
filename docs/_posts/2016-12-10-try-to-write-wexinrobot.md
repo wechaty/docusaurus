@@ -188,8 +188,8 @@ Wechaty解放了我的一些重复性工作，我也希望能为Wechaty做点什
 
 ![qr-code][qr-code]
 
-[ruirui-dance-image]: /download/2016/ruirui-dance.jpg
-[wechaty-pic]: /download/2017/lijiarui-write-bot-wechaty-pic.jpeg
-[docker-pull]: /download/2017/lijiarui-write-bot-docker-pull.jpeg
-[run-ding]: /download/2017/lijiarui-write-bot-run-ding.jpeg
-[qr-code]: /download/2017/lijiarui-write-bot-qr-code.jpeg
+[ruirui-dance-image]: /assets/2016/ruirui-dance.jpg
+[wechaty-pic]: /assets/2017/lijiarui-write-bot-wechaty-pic.jpeg
+[docker-pull]: /assets/2017/lijiarui-write-bot-docker-pull.jpeg
+[run-ding]: /assets/2017/lijiarui-write-bot-run-ding.jpeg
+[qr-code]: /assets/2017/lijiarui-write-bot-qr-code.jpeg

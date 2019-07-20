@@ -42,4 +42,4 @@ The above contributors are:
     height:100%;
 "></iframe></div>
 
-[contributors-image]: /download/2018/wechaty-contributor-dinner-data-girl.jpg
+[contributors-image]: /assets/2018/wechaty-contributor-dinner-data-girl.jpg

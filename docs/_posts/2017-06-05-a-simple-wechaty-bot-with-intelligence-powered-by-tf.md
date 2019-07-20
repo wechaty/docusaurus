@@ -144,9 +144,9 @@ Although there would be a number of challenges in the future, it is desirable to
 
 
 
-[wechaty-and-tensorflow]: /download/2017/wildcat-tf-wechaty-and-tensorflow-featured-image.png
-[from-go-to-chatbot]: /download/2017/wildcat-tf-from-go-to-chatbot.png
-[screenshot-training]: /download/2017/wildcat-tf-screenshot-training.png
-[screenshot-testing]: /download/2017/wildcat-tf-screenshot-testing.png
-[screenshot-simple-ui]: /download/2017/wildcat-tf-screenshot-simple-ui.jpg
-[screenshot-bot-in-wechat]: /download/2017/wildcat-tf-screenshot-bot-in-wechat.jpg
+[wechaty-and-tensorflow]: /assets/2017/wildcat-tf-wechaty-and-tensorflow-featured-image.png
+[from-go-to-chatbot]: /assets/2017/wildcat-tf-from-go-to-chatbot.png
+[screenshot-training]: /assets/2017/wildcat-tf-screenshot-training.png
+[screenshot-testing]: /assets/2017/wildcat-tf-screenshot-testing.png
+[screenshot-simple-ui]: /assets/2017/wildcat-tf-screenshot-simple-ui.jpg
+[screenshot-bot-in-wechat]: /assets/2017/wildcat-tf-screenshot-bot-in-wechat.jpg
