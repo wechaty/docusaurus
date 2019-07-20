@@ -1,16 +1,20 @@
 ---
-
 title: '如何编写聊天机器人'
-author: IT大咖说
+author: lijiarui
 date: '2017-7-13 23:04:27 +0800'
-published: true
+categories: tutorial
+tags:
+  - talk
+header:
+  teaser: /assets/2017/itdakashuo-how-to-build-a-chatbot-7.jpg
 ---
 
 > 摘要:
 > Chatbot，聊天机器人，用于和人类用户聊天的电脑程序。它是场交互革命，也是一个多技术融合的平台。桔子互动创始人根据自己的经验告诉大家，> 该如何来编写微信聊天机器人。
 
 ## What are chatbots and why the hype
-![]({{site.baseurl}}/assets/2017/itdakashuo-how-to-build-a-chatbot-1.jpg)
+
+![wechaty]({{site.baseurl}}/assets/2017/itdakashuo-how-to-build-a-chatbot-1.jpg)
 
 <!--more-->
 
@@ -26,7 +30,7 @@ published: true
 
 我认为chatbot是未来，接下来的所有服务可能都是通过chatbot去实现的。
 
-![]({{site.baseurl}}/assets/2017/itdakashuo-how-to-build-a-chatbot-2.jpg)
+![wechaty]({{site.baseurl}}/assets/2017/itdakashuo-how-to-build-a-chatbot-2.jpg)
 
 Chatbot Magazine创始人Matt Schlicht对chatbot的定义是：“A chatbot is a service,powered by rules and sometimes artificial intelligence,that you interact with via a chat interface.”
 
@@ -40,7 +44,7 @@ Chatbot Magazine创始人Matt Schlicht对chatbot的定义是：“A chatbot is a
 
 ## Overview of the bot ecosystem
 
-![]({{site.baseurl}}/assets/2017/itdakashuo-how-to-build-a-chatbot-3.jpg)
+![wechaty]({{site.baseurl}}/assets/2017/itdakashuo-how-to-build-a-chatbot-3.jpg)
 Facebook Message已经向开发者开放了，Apple ios Message APPS也在开放，Slack、Kik、Telegram和Skype都支持相关的接口。
 
 Facebook收购了Wit.ai，google收购了Api.ai，微软推出了luis.ai。我认为这三个都是实现一样的功能，就是实行意图识别。
@@ -53,7 +57,7 @@ Facebook Message上面有超过10万个bots，大概有10万个开发者在Faceb
 
 在其它平台如Skype、Telegram上也有上千的bot。
 
-![]({{site.baseurl}}/assets/2017/itdakashuo-how-to-build-a-chatbot-4.jpg)
+![wechaty]({{site.baseurl}}/assets/2017/itdakashuo-how-to-build-a-chatbot-4.jpg)
 
 消费者能够真正接触到的chatbots大概分为三类：
 
@@ -65,7 +69,7 @@ Facebook Message上面有超过10万个bots，大概有10万个开发者在Faceb
 
 Chatbot是一个很大的产业，它不是只有AI和deep learning，不一定要high tech去做，也不只有算法。而是要真正去解决一些实际问题。未来它就会像APP一样在我们身边，为我们提供非常一些简洁的服务。
 
-![]({{site.baseurl}}/assets/2017/itdakashuo-how-to-build-a-chatbot-5.jpg)
+![wechaty]({{site.baseurl}}/assets/2017/itdakashuo-how-to-build-a-chatbot-5.jpg)
 
 Requirement和正常软件开发相似，然后写一些需求的文档和需求说明。
 
@@ -80,12 +84,12 @@ Chatbot里做的测试和一般的APP测试不一样。在APP里可以简单暴�
 要部署到一个可托管的环境并时刻去监控它，然后做推广。
 
 最后还要做chatbot的分析，需要知道每一个会话时长是怎样的、用户对什么最感兴趣。拿到这些数据后再去调研用户的需求，形成一个循环。
-![]({{site.baseurl}}/assets/2017/itdakashuo-how-to-build-a-chatbot-6.jpg)
+![wechaty]({{site.baseurl}}/assets/2017/itdakashuo-how-to-build-a-chatbot-6.jpg)
 Chatbot主要是从场景入手，更关注的是解决一些问题和创新的点，而不是底层的开发。我认为接下来各种开发者也会从APP开发者转换成chatbot开发者，只是时间问题。
 
 ## itdakashuo-how-to-build-a-chatbot
 
-![]({{site.baseurl}}/assets/2017/itdakashuo-how-to-build-a-chatbot-7.jpg)
+![wechaty]({{site.baseurl}}/assets/2017/itdakashuo-how-to-build-a-chatbot-7.jpg)
 
 Wechaty是一个可以让微信变成机器人的接口，利用这个框架可以把个人微信号变成机器人，能自动回复和提供一些服务。
 
@@ -95,7 +99,7 @@ Side project通过代码追踪的方式应对微信网页变化。
 
 Wechaty的七个基本事件分别是error、scan、login、logout、message、friend和join。
 
-![]({{site.baseurl}}/assets/2017/itdakashuo-how-to-build-a-chatbot-8.jpg)
+![wechaty]({{site.baseurl}}/assets/2017/itdakashuo-how-to-build-a-chatbot-8.jpg)
 
 ## Related Scene
 

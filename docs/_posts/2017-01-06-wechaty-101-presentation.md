@@ -1,10 +1,13 @@
 ---
-
 title: 'Wechaty 101: from v0.0 to v0.7'
 date: '2017-01-06 10:0:0 +0800'
 author: huan
-categories: guide
-published: true
+categories: tutorial
+tags:
+  - talk
+header:
+  teaser: /assets/2017/wechaty-connect-chatbots.jpg
+
 ---
 <div class="video-container" style="
     position: relative;
@@ -61,4 +64,3 @@ Here's the slides of _Wechaty 101_ in this talk:
 _Wechaty 101_ Slides is hosted on Google Slides(Docs) at [here](https://docs.google.com/presentation/d/13oUOIEnzdLWO6KZWztD_pMuu22AQ3SIMjk2wp8f-f18/edit?usp=sharing)
 
 Learn more about Wechaty source code at: <https://github.com/chatie/wechaty>
-

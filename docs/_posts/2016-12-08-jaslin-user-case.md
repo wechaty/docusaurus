@@ -1,11 +1,12 @@
 ---
-
 title: 'Wechaty Case Study - a letter from JasLin'
 author: JasLin
 date: '2016-12-08'
-excerpt_separator: <!--more-->
-categories: case
-published: true
+categories: story
+tags:
+  - case
+header:
+  teaser: /assets/2016/jaslin-case-study.jpg
 ---
 
 Author: @[JasLin](https://github.com/jaslin/), BotWave CTO, Wechaty Contributor
@@ -15,7 +16,7 @@ Author: @[JasLin](https://github.com/jaslin/), BotWave CTO, Wechaty Contributor
 ![Case Study][jaslin-case]
 
 hi brother,
- 
+
 the attachments are the screenshot of the little system which i using wechaty.
 
 story about it :
@@ -26,7 +27,7 @@ we have a meditation group, people in the group take meditation every day, after
 
 ![Send][jaslin-send]
 
-people send specific emotion. 
+people send specific emotion.
 
 ![Record][jaslin-record]
 
@@ -38,7 +39,7 @@ some stastics.
 
 at the beginning, we do this job manually, it spent us much time. at last i decide to build a wechat robot to do this job.
 
-before use wechaty , i used a python sdk to build the robot. but it was not stable enough,it logout often and some other problems, because the protocol base implements can not take about the details, i think the tencent company can Identify the robot behavior. and then, i thought may be i can build a chrome plugin instead of using protocol directly.:) 
+before use wechaty , i used a python sdk to build the robot. but it was not stable enough,it logout often and some other problems, because the protocol base implements can not take about the details, i think the tencent company can Identify the robot behavior. and then, i thought may be i can build a chrome plugin instead of using protocol directly.:)
 
 lucky, after that, i found wechaty, it's what i need exactly :). i rewrite the code very javascript, and the robot works well, it's stable ,It seldom exits the program itself.
 
@@ -50,4 +51,3 @@ Jas, 3/12/2016
 [jaslin-record]: /assets/2016/jaslin-use-case-record.jpg
 [jaslin-send]: /assets/2016/jaslin-use-case-send.jpg
 [jaslin-statistics]: /assets/2016/jaslin-use-case-statistics.jpg
-

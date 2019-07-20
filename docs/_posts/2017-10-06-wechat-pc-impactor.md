@@ -3,7 +3,6 @@
 title: 关于对微信PC版Hook的一点研究分享
 date: '2017-10-06 23:47:0 +0800'
 author: h4dex
-published: true
 ---
 > Author: [@h4dex](https://github.com/h4dex) 会使用各种计算机语言写出 Hello World 的设计师（<http://icefox.org/>）
 

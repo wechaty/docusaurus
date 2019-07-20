@@ -1,9 +1,13 @@
 ---
-
 title: "A Simple WeChaty Bot with Intelligence Powered by TensorFlow"
 date: 2017-06-05 23:50 +0800
 author: WildCat
-comments: true
+categories: tutorial
+tags:
+  - code
+  - machine learning
+header:
+  teaser: /assets/2017/wildcat-tf-wechaty-and-tensorflow-featured-image.png
 ---
 
 Author: [@imWildCat](https://github.com/imWildCat), University of Birmingham
@@ -141,8 +145,6 @@ Although there would be a number of challenges in the future, it is desirable to
 
 [^1]: Siraj Raval, 2016. *How to Make an Amazing Tensorflow Chatbot Easily*. Retrieved from: [https://www.youtube.com/watch?v=SJDEOWLHYVo](https://www.youtube.com/watch?v=SJDEOWLHYVo)
 [^2]: Russell Jon, 2017. *Google’s AlphaGo AI wins three-match series against the world’s best Go player*. Retrived from: [https://techcrunch.com/2017/05/24/alphago-beats-planets-best-human-go-player-ke-jie/](https://techcrunch.com/2017/05/24/alphago-beats-planets-best-human-go-player-ke-jie/)
-
-
 
 [wechaty-and-tensorflow]: /assets/2017/wildcat-tf-wechaty-and-tensorflow-featured-image.png
 [from-go-to-chatbot]: /assets/2017/wildcat-tf-from-go-to-chatbot.png

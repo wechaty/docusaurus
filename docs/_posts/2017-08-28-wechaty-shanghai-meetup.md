@@ -1,9 +1,12 @@
 ---
-
 title: "Shanghai WWDC - WeChaty Worldwide Developers Conference"
 date: 2017-08-28 18:00 +0800
 author: dcsan
-excerpt_separator: <!--more-->
+categories: event
+tags:
+  - meetup
+header:
+  teaser: /assets/2017/dcsan-shanghai-meetup.jpg
 ---
 
 > Author: [@dcsan](https://github.com/dcsan), making Chatbots at [RIKAI Labs](http://RIK.ai)
@@ -18,11 +21,12 @@ We talked devops, chatbot games, NLP and more!
 <!--more-->
 
 ## WeChaty Infrastructure and DevOps
+
 One of the issues for people running wechaty services is dev ops. Especially if you want to have many bots running. WeChaty itself is nicely docker-ized, but running multiple instances of the container, and orchestrating them is something a few companies are seeing as a common next step. We discussed ways to communicate between different node services.
 In WeChaty core there's much discussion on this topic, so if this is a sub project you would like to see happen please let us know below!
 
-
 ## DNode vs. REST APIs
+
 For inter-bot communication, we talked about a few methods and ax4 shared his experience of using DNode. I'll let @ax4 explain:
 
 * Dnode is not a substitute of REST API.  REST API is essential and powerful, in all kinds of programming (cross language and cross platform). Dnode is simple and useful for Javascript stack, and only have several languages support in perl / ruby/ php/ php-sync/java (check https://github.com/substack/dnode#dnode-in-other-languages)
@@ -31,13 +35,13 @@ For inter-bot communication, we talked about a few methods and ax4 shared his ex
 
 These type of services will enable bot-to-bot communications in the future. This is becoming a topic in the US now too, with so many chatbots. For many companies a chatbot maybe the only "API" they have. For example a local pizza shop won't hire a web developer to make their API, but you could 'query' their chatbot to find out their hours or prices.
 
-
 ## Chinese NLP libraries
+
 No bot developers meetup would be complete without a discussion of NLP libraries. We talked about the various low-level tools such as segmenters and POS taggers. @ax4 mentioned [bosonNLP](http://www.bosonnlp.com/) but Jieba and SnowNLP seem like good options too. Personally I have had best quality from the Stanford NLP libraries but it's a hassle to maintain a Java stack so we mostly use Jieba now.
 At a high level we compared [yige](http://www.yige.ai/) and [API.ai](https://api.ai) which seems to be flaky to connect to and use since they were acquired by Google and started moving to Google infrastructure. Well, that opens up the field for more [local companies](http://www.emotibot.com/)!
 
-
 ## Groups Bots and Games
+
 One of the things WeChaty enables is bots in groups, not just 1:1 between a single person and an official account. This opens up a whole number of design questions shared experiences, and technical decisions like how to share state between users.
 
 DC built a text adventure game called "Pirates" that can be played within a group. All the users see the results of any players actions, as you are travelling as a "party". It's interesting to watch people playing. One person will try something, then maybe give up, and then someone else will take over. It's almost like passing the steering wheel to your friend to try driving for a bit! On the other hand, scoring was implemented per user.
@@ -49,6 +53,7 @@ Games have already spent a lot of time thinking about multiplayer and the chat p
 There is much that WeChaty can provide on the server APIs, but client modifications need to be added by the platform. For example Slack has the concept of a "
 
 ## Chatbots Shanghai Community
+
 The first WeChaty DevCon was just four of us but there are more and more 'bot makers in Shanghai!
 
 [@lijiarui](https://github.com/lijiarui) is a Wechaty core contributor and runs [batorange.com](http://batorange.com/) They manage more than 30k wechat groups and she also keeps the WeChaty community humming along.
@@ -59,7 +64,8 @@ The first WeChaty DevCon was just four of us but there are more and more 'bot m
 
 Please get in touch if you'd like to know about the next Shanghai Wechaty WWDC and be invited!
 
-## Join Us !
+## Join Us
+
 Wechaty is used in many ChatBot projects by hundreds of developers. If you want to talk with other developers, just scan the following QR Code in WeChat with secret code wechaty, join our Wechaty Developers' Home now.
 
 ![qrcode](https://chatie.io/wechaty/images/bot-qr-code.png)

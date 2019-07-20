@@ -1,8 +1,10 @@
 ---
-
 title: "How to use interval in Wechaty to overcome some web-wechat API limitations"
 author: Seabook
 date: '2017-05-25 19:31:53'
+categories: tutorial
+tags:
+  - code
 ---
 
 <img src="https://avatars2.githubusercontent.com/u/700550?v=3&s=88">
@@ -29,19 +31,19 @@ function sendFriendRequest(room, msg) {
 
     let content = msg.content();
     if (msg && /希望和大家做朋友/.test(content)) {
-        
+
         let contacts = room? room.memberList({}) : [];
 
         for (let i = 10; i < contacts.length; i ++) {
-            let contact = contacts[i];            
-            let request = new FriendRequest();                        
+            let contact = contacts[i];
+            let request = new FriendRequest();
             request.send(contact, "Hi 很高兴认识您")
                 .then( result => {
                     console.log("Friend Request Send ", contact.name(), result);
                 })
                 .catch(e => {
                     console.log('Bot', 'Friend Request Error: %s', e.stack);
-                })            
+                })
 
         }
     }
@@ -84,7 +86,7 @@ exports = module.exports = async function onMessage (msg) {
     const room      = msg.room();
     const sender    = msg.from();
     const content   = msg.content();
-    
+
     if (msg.self()) {
         sendFriendRequest(room, msg);
         return;
@@ -97,13 +99,13 @@ exports = module.exports = async function onMessage (msg) {
 async function sendFriendRequest(room, msg) {
 
     if (!room) {
-		console.log('Bot', 'there is no room yet');
+    console.log('Bot', 'there is no room yet');
         return;
     }
 
     let content = msg.content();
     if (msg && /希望和大家做朋友/.test(content)) {
-        
+
         let contacts = room? room.memberList({}) : [];
 
         if(!contacts || contacts.length == 0) {
@@ -113,15 +115,15 @@ async function sendFriendRequest(room, msg) {
         console.log('Contacts Size:', contacts.length);
 
         for (let i = 10; i < contacts.length; i ++) {
-            let contact = contacts[i];            
-            let request = new FriendRequest();                        
+            let contact = contacts[i];
+            let request = new FriendRequest();
             request.send(contact, "Hi 很高兴认识您")
                 .then( result => {
                     console.log("Friend Request Send ", contact.name(), result);
                 })
                 .catch(e => {
                      console.log('Bot', 'Friend Request Error: %s', e.stack);
-                })            
+                })
             await Wechaty.sleep(1000*60*2); // 2 mins is a good threshold
         }
     }
@@ -129,7 +131,6 @@ async function sendFriendRequest(room, msg) {
 }
 
 ```
-
 
 I think it's a common pattern when we are using Wechaty to do sth in the For-Loop block. It's better to make it wait a bit.
 

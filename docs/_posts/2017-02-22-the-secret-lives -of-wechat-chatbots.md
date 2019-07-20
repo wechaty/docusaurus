@@ -1,9 +1,12 @@
 ---
-
 title: 'The secret lives of WeChat’s chatbots'
 author: lijiarui
-published: true
+categories: story
+tags:
+  - interview
 ---
+
+> From: <https://www.techinasia.com/wechat-unofficial-bots> by [Eva Xiao](https://www.techinasia.com/profile/evaxiao)
 
 Chatbots rocketed into the limelight last year, bolstered by the enthusiasm of Facebook and Microsoft, though the technology wasn’t mature yet.
 
@@ -16,7 +19,6 @@ But unsanctioned bots run amok on the social network, often tactlessly spamming 
 Unlike WeChat’s “official” accounts, designed for commerce and media, these rogue bots hijack personal accounts. They can be purchased on Taobao, the country’s most popular online marketplace, for a couple of dollars or less. Some accounts are even “farmed” before they’re sold, which means they already have friends and have logged a certain amount of human-like activity, such as posting on Moments, WeChat’s newsfeed-like feature.
 
 “If I grow a WeChat account to 3,000 to 5,000 friends, one ad on my Moments could be worth between [US$14 to US$140],” explains Li Jiarui, a Javascript and WeChat bot developer based in Beijing. “It depends on the quality of your account.”
-
 
 More bots mean more WeChat accounts. This is another example of WeChat hacking: multiple apps installed on one device. Photo credit: Tencent.
 
@@ -55,7 +57,3 @@ Urbem sees friendly chatbots as a way to generate leads from the various food gr
 “Eventually, we would convert them to our WeChat account, so they can pay to be a member. That’s how we generate revenue,” he says.
 
 Given Tencent’s unforgiving stance towards rogue bots leaping into your messages, it’s uncertain how these bots, even those that have a positive impact or fulfill legitimate needs, will develop on the social network. Allowing unofficial bots to thrive on WeChat opens a Pandora’s box of possibilities, including AI of the Cara ilk. For now, bot developers will have to work hard to build increasingly human-like and believable messaging bots to slip under Tencent’s radar.
-
-
-
-From ：www.techinasia.com/wechat-unofficial-bots by [Eva Xiao](https://www.techinasia.com/profile/evaxiao)

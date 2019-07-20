@@ -1,10 +1,12 @@
 ---
-
 title: '给微信机器人添加热重启功能'
 author: gcaufy
 date: '2017-03-20 11:11:11 +0800'
-categories: developer
-published: true
+categories: tutorial
+tags:
+  - code
+header:
+  teaser: /assets/2017/gcaufy-hot-reload-screencast.gif
 ---
 
 <img src="https://avatars3.githubusercontent.com/u/2182004?v=3&s=88">
@@ -33,11 +35,11 @@ Wechaty解决了很多我在使用微信运营过程中的痛点问题，这里�
 
 通过查看源代码 [browser-driver.ts](https://github.com/Chatie/wechaty/blob/master/src/puppet-web/browser-driver.ts) 发现，在执行init时，程序会启动一个driver，可以看作是打开了一个浏览器，然后获取浏览器 session，重复尝试三次直到失败。这里是Wechaty运行的基础，我们没有办法从这里去避免这30s的时间开销。只能从另外的方面去思考。
 
-
 ### 2. Node.js 热重启
+
 这里实际就是Node.js本身的特性了，与Wechaty本身关联不大。可能通过监听文件改动从而动态加载模块内容，这里首先就要了解Node.js的模块缓存机制，参看[module.js](https://github.com/nodejs/node/blob/master/lib/module.js)关键代码：
 
-```
+```ts
 // Check the cache for the requested file.
 // 1. If a module already exists in the cache: return its exports object.
 // 2. If the module is native: call `NativeModule.require()` with the
@@ -70,9 +72,10 @@ Module._load = function(request, parent, isMain) {
 
 require.cache = Module._cache;
 ```
+
 如果Node.js已经require某个模块后，模块更新后，再次require这个模块时，实际读取的是内存中的原模块的缓存。除非手动清除掉`require.cache`的内容，这样才能重新加载更新后的模块内容。因此参照Node.js源码写出require缓存清除方法：
 
-```
+```ts
 // purge require cache
 const purgeCache = (moduleName) => {
     var mod = require.resolve(moduleName);
@@ -84,7 +87,7 @@ const purgeCache = (moduleName) => {
             delete require.cache[mod.id];
         }(mod));
     }
-    
+
     Object.keys(module.constructor._pathCache).forEach(function(cacheKey) {
         if (cacheKey.indexOf(moduleName)>0) {
             delete module.constructor._pathCache[cacheKey];
@@ -95,20 +98,18 @@ const purgeCache = (moduleName) => {
 
 再利用`fs.watch`或者`chokidar`之类的库完成文件监听功能，实现文件改动后重新加载模块：
 
-```
+```ts
 fs.watch('./somedir', (e, filename) => {
      purgeCache(`./somedir/${filename}`);
      require(`./somedir/${filename}`);
 });
 ```
 
-
 ### 3. 逻辑抽离
 
 在使用Wechaty的时候，开发者更多的是关心事件响应，比如响应扫码事件、好友请求事件、发送消息事件等等。因此可以单独将这些响应事件抽离出来。如果我需要关注好友请求事件，那么我就添加一个`friend.js`去处理。如果我需要关注发消息事件，那么就去添加一个`message.js`去处理。相反，不需要了我删除掉该js文件即可。每一个文件就是一个事件处理器。代码如下：
 
-
-```
+```ts
 const EVENT_LIST = ['scan', 'logout', 'login', 'friend', 'room-join', 'room-leave', 'room-topic', 'message', 'heartbeat', 'error'];
 
 let eventHandler = {};
@@ -137,12 +138,11 @@ EVENT_LIST.forEach(evt => {
 });
 ```
 
-
-### 4. 整合 
+### 4. 整合
 
 接着就是整合逻辑代码与热重启功能，让每个事件处理器都具有热重启功能。
 
-```
+```ts
 fs.watch('./listener', (e, filename) => {
     let evt = filename.substring(0, filename.length - 3);
     console.log(`${e}: ${filename}`);
@@ -172,7 +172,7 @@ fs.watch('./listener', (e, filename) => {
 
 最后，还需要一个环境变量来区分开发模式和线上模式，在线上模式中就不需要使用热重启功能。
 
-```
+```ts
 const isProd = process.env.NODE_ENV === 'production';
 
 if (isProd) {
@@ -182,7 +182,7 @@ if (isProd) {
 
 这样就可以通过以下命令来进入开发模式或者线上模式了。
 
-```
+```ts
 // development
 docker run -ti --rm --volume="$(pwd)":/bot zixia/wechaty index.js
 
@@ -193,7 +193,6 @@ docker run -ti -e NODE_ENV=production --rm --volume="$(pwd)":/bot zixia/wechaty 
 附热重启机器人效果图：
 
 ![hot-reload][gcaufy-hot-reload]
-
 
 到这里就基本介绍完了本篇文章的全部内容了，可以使用[example代码](https://github.com/Chatie/wechaty/tree/master/example/hot-reload-bot)来体验。
 

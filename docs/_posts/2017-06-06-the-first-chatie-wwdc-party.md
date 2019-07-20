@@ -1,8 +1,12 @@
 ---
-
 title: "The memorabilia of The First Chatie WWDC Party"
 date: 2017-06-06 18:00 +0800
 author: greatgeekgrace
+categories: event
+tags:
+  - meetup
+header:
+  teaser: /assets/2017/greatgeekgrace-chatie-wwdc-666.jpg
 ---
 
 > Author: [@greatgeekgrace](https://github.com/greatgeekgrace) Li Jiaxuan, Ex-Baidu-er, Tensorflow Expert who has just published a [ML Book](http://item.jd.com/12073631.html) last month.
@@ -31,7 +35,6 @@ The Conference consists of a small group of seven people, and the theme is about
     width:100%;
     height:100%;
 "></iframe></div>
-
 
 In the Conference, everyone got the newly released Wechaty Logo which Li Jiarui gave us as a gift. At the same time, Zhou Zaonan and Li Jiarui discussed with the Typescript language to optimize Chatie/angular project continuously. Li Zhuohuan([@zixia](https://github.com/zixia)) also give some useful suggestions for TensorFlow Community to help more beginners interested in Machine Learning. Jiarui and I also discussed an inovated program, hoping to make a more intelligent "brain" of the Wechaty robot, with deep learning methods, integrates the useful information together in Wechat Group. 
 

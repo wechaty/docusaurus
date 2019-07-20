@@ -65,3 +65,12 @@ su-chang:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/su-chang"
+
+lijiarui:
+  name        : "Jiarui LI"
+  bio         : "Full stack developer, serial entrepreneur, Founder & CEO of JuZi.bot"
+  avatar      : "https://avatars1.githubusercontent.com/u/6419514?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lijiarui"

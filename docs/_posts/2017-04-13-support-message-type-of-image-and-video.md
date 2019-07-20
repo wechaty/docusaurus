@@ -1,9 +1,12 @@
 ---
-
 title: '给机器人添加发送图片视频功能'
 author: mukaiu
 date: '2017-04-13 20:37:11 +0800'
-published: true
+categories: tutorial
+tags:
+  - code
+header:
+  teaser: /assets/2017/mukaiu-ding-code.jpg
 ---
 
 <img src="https://avatars2.githubusercontent.com/u/7746790?v=3&s=88">
@@ -31,24 +34,30 @@ onSuccess: function(e) {
         })
    } else
         this.onError("Ret: " + e.BaseResponse.Ret)
-}, 
+},
 ```  
+
 Web中Message是通过此函数创建的，图片消息会被添加MediaId属性，因此如果我们能取得需要上传文件的MediaId，就可以直接调用sendMessage发送图片了。
 
 ## 2. 上传图片
 
 通过抓包，发现图片被POST请求发送到
-```
+
+```sh
 https://file.wx.qq.com/cgi-bin/mmwebwx-bin/webwxuploadmedia?f=json
-```  
-搜索源码，找到
 ```
+
+搜索源码，找到
+
+```js
 API_webwxdownloadmedia: "https://" + o + "/cgi-bin/mmwebwx-bin/webwxgetmedia",
 API_webwxuploadmedia: "https://" + o + "/cgi-bin/mmwebwx-bin/webwxuploadmedia",
 API_webwxpreview: "/cgi-bin/mmwebwx-bin/webwxpreview",
-```  
+```
+
 API_webwxuploadmedia就是图片上传地址，全局搜索这个变量是不是就可以找到上传文件的方法呢？
 经过搜索
+
 ```js
 window.WebUploader = e;
 Y = e.create({
@@ -65,8 +74,10 @@ Y = e.create({
        chunked: !0,
        chunkSize: 524288
 })
-```  
+```
+
 e就是webuploader，处理文件上传，单独打包在一个chunk里。由于控制游览器读取本地文件没有什么好的处理办法，所以决定通过使用直接post数据到此地址的方式进行文件上传，该请求并没有上传cookie信息，因此省去了很多麻烦。各个参数都可以直接调用Web信息获取到
+
 ```js
 let uploadMediaRequest = {
       BaseRequest: baseRequest,
@@ -80,7 +91,7 @@ let uploadMediaRequest = {
       DataLen: size,
       TotalLen: size,
 }
-    
+
 let formData = {
       id: 'WU_FILE_1',
       name: filename,
@@ -96,6 +107,7 @@ let formData = {
 ```  
 
 返回结果为
+
 ```json
 {
 "BaseResponse": {
@@ -108,13 +120,15 @@ let formData = {
 "CDNThumbImgHeight": 100,
 "CDNThumbImgWidth": 100
 }
-```  
+```
+
 MediaId就是我们需要的，直接调用createMessage,sendMessage即可发送图片了。
 
 ## 3.整合Wechaty
 
 为快速验证可行性，直接添加了Wechaty.sendMedia。后和@zixia、@lijiarui讨论，决定使用say(MediaMessage(filename))的形式发送媒体文件。
 重载
+
 ```js
 Wchaty.send(message: MediaMessage)
 Contact.say(mediaMessage: MediaMessage)
@@ -122,11 +136,13 @@ Message.say(mediaMessage: MediaMessage)
 
 //准备后续添加
 Room.say(mediaMessage: MediaMessage)
-```  
+```
+
 ## 4.坑
 
 1. 测试期间发现，发送图片有时候会失败，原因是无法获取mediaId，第一感觉是，难道还有细节没有发现?对比post数据，完全一致，没有问题，那问题出在哪呢？
 后来看源码才发现
+
 ```js
 var e = location.host
 , t = "weixin.qq.com"
@@ -134,11 +150,12 @@ var e = location.host
 , n = "webpush.weixin.qq.com";
 e.indexOf("wx2.qq.com") > -1 ? (t = "weixin.qq.com",
 o = "file2.wx.qq.com",
-```  
+```
+
 原来还有个地址是wx2.qq.com。对应的文件上传地址是file2.wx.qq.com。不仔细啊
 
-2. 另一个坑是微信Web对视频大小有20M限制，这个也是开始没有注意的，发送大视频会失败
-3. 循环依赖
+1. 另一个坑是微信Web对视频大小有20M限制，这个也是开始没有注意的，发送大视频会失败
+1. 循环依赖
 由于MediaMessage继承Message，Message.say(MediaMessage)又需要引用MediaMessage.OMG,循环引用,TS报错了不支持这么玩～
 所以我把MediaMessage移入了message.ts,删除了media-message.ts,无中生有了186行变更😊
 
@@ -149,6 +166,5 @@ o = "file2.wx.qq.com",
 可以通过在ding-dong-bot里回复code来收到一张图片二维码。
 
 ![ding-code][mukaiu-ding-code]
-
 
 [mukaiu-ding-code]: /assets/2017/mukaiu-ding-code.jpg

@@ -3,7 +3,6 @@
 title: Migrating Wechaty v0.14 to v0.18 Guide - From Puppeteer To Padchat
 date: '2018-06-30 15:00:00 +0800'
 author: Li Jiarui
-published: true
 ---
 > Author: [@lijiarui](https://github.com/lijiarui) Founder of BotOrange, Author of Wechaty.
 
