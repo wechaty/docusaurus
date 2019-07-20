@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 如何将业务代码从Puppeteer 迁移到Padchat
 date: '2018-06-30 16:0:0 +0800'
 author: Li Jiarui

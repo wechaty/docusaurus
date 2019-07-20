@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: '如何编写聊天机器人'
 author: IT大咖说
 date: '2017-7-13 23:04:27 +0800'

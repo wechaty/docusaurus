@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: '一个姑娘如何用6行代码写出微信聊天机器人'
 author: lijiarui
 published: true

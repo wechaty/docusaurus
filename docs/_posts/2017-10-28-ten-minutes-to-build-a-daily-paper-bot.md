@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: "Ten minutes to build a daily paper bot"
 date: 2017-10-28 12:00 +0800
 author: leinue

@@ -25,7 +25,7 @@ Example as follows:
 
 ```yaml
 ---
- layout: post
+ 
  title: "'Score Your Face Photo' a ML&Wechaty practice"
  date: 2017-09-18 09:00 +0800
  author: huyingxi

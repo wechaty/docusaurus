@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: "Wechaty - the missing bot SDK for WeChat"
 date: 2017-09-10 18:00 +0800
 author: dcsan

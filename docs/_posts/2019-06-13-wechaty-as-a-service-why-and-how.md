@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Wechaty-As-A-Service Why and How
 author: qhduan
 date: '2019-06-13 01:20:00 +0800'

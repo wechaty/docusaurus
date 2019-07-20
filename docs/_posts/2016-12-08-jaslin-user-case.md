@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 'Wechaty Case Study - a letter from JasLin'
 author: JasLin
 date: '2016-12-08'

@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: "女生科技体验节，Wechaty专场技术复盘"
 date: '2018-01-29 11:32:53'
 author: Helen

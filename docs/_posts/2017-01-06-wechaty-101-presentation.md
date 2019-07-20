@@ -1,8 +1,8 @@
 ---
-layout: post
+
 title: 'Wechaty 101: from v0.0 to v0.7'
 date: '2017-01-06 10:0:0 +0800'
-author: zixia
+author: huan
 categories: guide
 published: true
 ---

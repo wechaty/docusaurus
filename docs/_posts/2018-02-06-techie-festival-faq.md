@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: "女生科技体验节，Wechaty杂货铺"
 date: '2018-02-06 18:44:53'
 author: Helen

@@ -1,5 +1,5 @@
 ---
- layout: post
+ 
  title: "AI、Bot、WeChaty相关思考"
  date: 2018-08-30 09:00 +0800
  author: lirobin1998
