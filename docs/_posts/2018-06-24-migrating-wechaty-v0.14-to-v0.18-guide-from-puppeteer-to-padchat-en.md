@@ -2,9 +2,8 @@
 title: Migrating Wechaty v0.14 to v0.18 Guide - From Puppeteer To Padchat
 date: '2018-06-30 15:00:00 +0800'
 author: lijiarui
-categories: tutorial
+categories: migration
 tags:
-  - migration
   - code
 header:
   teaser: /assets/2018/code-migration-en.png

@@ -2,7 +2,7 @@
 title: "Using Jsdoc to sync the doc with the latest code"
 date: 2017-09-20 21:00 +0800
 author: lijiarui
-categories: tutorial
+categories: announcement
 tags:
   - document
 header:

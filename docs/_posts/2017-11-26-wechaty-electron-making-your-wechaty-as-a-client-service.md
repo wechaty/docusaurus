@@ -2,7 +2,7 @@
 title: "wechaty-electron 把你的wechaty 变成客户端"
 date: 2017-11-26 12:00 +0800
 author: guoyingxu
-categories: tutorial
+categories: project
 tags:
   - code
 header:

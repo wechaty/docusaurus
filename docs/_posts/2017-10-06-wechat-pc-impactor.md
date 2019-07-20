@@ -2,7 +2,7 @@
 title: 关于对微信PC版Hook的一点研究分享
 date: '2017-10-06 23:47:0 +0800'
 author: h4dex
-categories: tutorial
+categories: hack
 tags:
   - code
   - hook

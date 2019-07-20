@@ -2,7 +2,7 @@
 title: "Run Your Telegram Bot with Wechaty"
 date: 2017-07-17 18:00 +0800
 author: hczhcz
-categories: tutorial
+categories: project
 tags:
   - code
   - telegram

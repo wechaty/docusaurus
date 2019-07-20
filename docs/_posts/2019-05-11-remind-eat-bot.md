@@ -2,7 +2,7 @@
 title: 居然有人能忘记吃饭？写个微信机器人提醒他。
 date: 2019-05-11 13:00 +0800
 author: 犀利豆
-categories: tutorial
+categories: project
 tags:
   - code
 header:

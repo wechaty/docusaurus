@@ -2,7 +2,7 @@
 title: "三步教你用Node做一个微信脱单神器，小白可上手"
 author: Leo_chen
 date: '2019-06-20 17:40:52 +0800'
-categories: tutorial
+categories: project
 tags:
   - code
 header:
