@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: "Can Typescript really live up to its hype?"
 date: '2018-03-09'
 author: suntong

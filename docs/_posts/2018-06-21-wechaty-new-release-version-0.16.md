@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Wechaty New Version 0.16(BETA, with super power) Released
 date: '2018-06-21 12:0:0 +0800'
 author: Huan

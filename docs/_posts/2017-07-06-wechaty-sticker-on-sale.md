@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: "Wechaty Sticker is ON SALE!"
 date: '2017-07-06 19:31:53'
 author: Huan

@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 'The secret lives of WeChat’s chatbots'
 author: lijiarui
 published: true

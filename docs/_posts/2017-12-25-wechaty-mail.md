@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: "Wechaty-Mail: An email tool build on Wechaty"
 date: 2017-12-25 21:00 +0800
 author: wangning

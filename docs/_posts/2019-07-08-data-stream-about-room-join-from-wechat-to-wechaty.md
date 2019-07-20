@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: "Data Stream about Room-Join Event from Wechat to Wechaty"
 author: su_chang
 date: '2019-07-08 16:55:12 +0800'

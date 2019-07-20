@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: "Lightbot统计分析管理平台"
 date: 2018-08-14 13:00 +0800
 author: LittleStrong

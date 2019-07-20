@@ -1,6 +1,6 @@
 ---
 title: "Integrate Wechat Personal Account to Microsoft BotFramework with a BotBuilder Wechaty Connector"
-author: zixia
+author: huan
 date: '2018-04-18 02:14:52 +0800'
 excerpt_separator: <!--more-->
 published: true

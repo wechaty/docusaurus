@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Using Jsdoc to sync the doc with the latest code"
 date: 2017-09-20 21:00 +0800
 author: lijiarui
@@ -133,7 +132,9 @@ We embed doc into the following file:
 ## Wechaty jsdoc2md progress
 
 ### 1. Generate jsdoc2md file
+
 Using the following command can generate document easily.
+
 ```shell
 jsdoc2md dist/src/{wechaty,room,contact,friend-request,message}.js dist/src/puppet-web/friend-request.js>> docs/index.md
 ```
@@ -141,11 +142,12 @@ jsdoc2md dist/src/{wechaty,room,contact,friend-request,message}.js dist/src/pupp
 ### 2. Use template to Sync Readme with api doc
 
 Actually, the first step is enough, but I think we need insert and sync all of the API docs into README, so I use a template by the following command:
+
 ```shell
 jsdoc2md --template docs/partials/README.hbs dist/src/{wechaty,room,contact,friend-request,message}.js dist/src/puppet-web/friend-request.js>> README.md
 ```
 
-Then add the partials {{>member-index-list~}} to show the API directory, because the full doc is too big to put in README, and it is not necessary.
+Then add the partials \{\{>member-index-list~\}\} to show the API directory, because the full doc is too big to put in README, and it is not necessary.
 
 ### 3. Linkable Code References
 

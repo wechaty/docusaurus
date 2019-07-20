@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Wechaty New Version 0.9.0 Released
 date: '2017-10-04 10:0:0 +0800'
 author: Huan

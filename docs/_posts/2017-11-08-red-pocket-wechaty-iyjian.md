@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: "我用wechaty做了一个积分红包机器人"
 date: 2017-11-09 19:00 +0800
 author: iyjian

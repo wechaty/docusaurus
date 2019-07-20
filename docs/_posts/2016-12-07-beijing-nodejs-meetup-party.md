@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 'Node Party #18 重新认识聊天机器人'
 author: Samurais
 date: '2016-12-07'

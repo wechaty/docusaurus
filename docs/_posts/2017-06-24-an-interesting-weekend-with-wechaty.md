@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: "An interesting weekend with Wechaty"
 date: '2017-06-24 19:31:53'
 author: Helen

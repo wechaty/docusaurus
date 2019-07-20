@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: "Deliver dialogs with SuperScript"
 author: hain
 date: '2017-05-17 19:31:53'

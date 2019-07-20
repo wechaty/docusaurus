@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: "用wechaty实现新闻资讯播报机器人"
 date: 2018-08-13 09:00 +0800
 author: judaschrist

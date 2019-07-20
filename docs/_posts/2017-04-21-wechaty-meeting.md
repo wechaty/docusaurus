@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: "Wechaty Contributor Dinner"
 author: Yang BAI
 date: '2017-04-26 13:01:53'
