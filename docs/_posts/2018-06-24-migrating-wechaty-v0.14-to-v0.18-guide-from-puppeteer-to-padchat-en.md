@@ -471,7 +471,7 @@ Related Link
 
 1. Wechaty Multi-Instance Support #518
 1. NPM [clone-class](https://www.npmjs.com/package/clone-class)
-1. https://github.com/zixia/node-clone-class/issues/5
+1. https://github.com/huan/node-clone-class/issues/5
 
 Related issue
 - [Error: class can not be instanciated directly! ](https://github.com/Chatie/wechaty/issues/1217)
@@ -479,7 +479,7 @@ Related issue
 - [Error: static puppet not found](https://github.com/Chatie/wechaty/issues/1161)
 - [Wechaty Multi-Instance Suport](https://github.com/Chatie/wechaty/issues/518)
 - NPM [clone-class](https://www.npmjs.com/package/clone-class)
-- https://github.com/zixia/node-clone-class/issues/5
+- https://github.com/huan/node-clone-class/issues/5
 
 ## Message.ext() return '.ext' instead of 'ext' before
 

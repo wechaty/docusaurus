@@ -1,8 +1,12 @@
 ---
-
 title: "女生科技体验节，Wechaty专场技术复盘"
 date: '2018-01-29 11:32:53'
-author: Helen
+author: tingyinhelen
+categories: event
+tags:
+  - talk
+header:
+  teaser: /assets/2018/helen-techie-festival.jpeg
 ---
 
 > <img src="https://avatars2.githubusercontent.com/u/14006826?v=3&s=88">
@@ -52,11 +56,13 @@ docker安装好的标志是命令行运行：`docker --version`会显示docker�
 ![run-ding][run-ding]
 
 以上是环境搭建，搭好环境之后就可以编写我们想要的微信机器人了。
+
 #### Wechaty
+
 Wechaty是一个为个人微信号搭建的chat bot框架。
 这里讲师给大家提供了一个[机器人代码](https://github.com/lijiarui/wechaty-getting-started)，实现了简单的自动通过好友请求，拉人入群，欢迎新人入群，踢人等功能。
 
-需要大家拉下这个仓库，使用命令git clone https://github.com/lijiarui/wechaty-getting-started.git，没有安装git的同学可以直接下载这个仓库。下载好仓库后，需要进入到项目目录下（使用命令行：`cd wechaty-getting-started`），然后运行项目（使用命令行：`docker run -ti --volume="$(pwd)":/bot --rm zixia/wechaty mybot.ts`）这里我解释一下这两句命令行的意思：
+需要大家拉下这个仓库，使用命令`git clone https://github.com/lijiarui/wechaty-getting-started.git`，没有安装git的同学可以直接下载这个仓库。下载好仓库后，需要进入到项目目录下（使用命令行：`cd wechaty-getting-started`），然后运行项目（使用命令行：`docker run -ti --volume="$(pwd)":/bot --rm zixia/wechaty mybot.ts`）这里我解释一下这两句命令行的意思：
 
 1.`cd wechaty-getting-started`就是进入到wechaty-getting-started这个文件夹下面；
 
@@ -82,37 +88,40 @@ docker run的意思是创建一个新的容器，并运行一个命令，语法�
 
 ```javascript
 .on('friend', async function (contact, request) {
-	if (request) {
-		await request.accept()
-		console.log(`Contact: ${contact.name()} send request ${request.hello}`)
-	}
+  if (request) {
+    await request.accept()
+    console.log(`Contact: ${contact.name()} send request ${request.hello}`)
+  }
 })
 ```
+
 然后当接收到消息的时候，当对方说“hello”，机器人就会回应："hello how are you”。这里的代码有一个小bug，就是回应的语句中也含有“hello”这个词，所以发生的当天著名的炸群事件，群里一个劲儿的回复“hello how are you”，导致当天有同学的微信号被封了。要修改这个bug很简单，就是将回复语中的“hello”换成其他词。继续往后，当同学们输入”room”的时候，机器人会找到一个名为“test”的群，然后将该同学拉进群里，并且会说：“welcome！${同学的名字}”,
+
 ```javascript
 .on('message', async function (m) {
-		const contact = m.from()
-		const content = m.content()
-		const room = m.room()
-		if (/room/.test(content)) {
-			let keyroom = await Room.find({ topic: "test" })
-			if (keyroom) {
-				await keyroom.add(contact)
-				await keyroom.say("welcome!", contact)
-			}
-		}
-	})
+    const contact = m.from()
+    const content = m.content()
+    const room = m.room()
+    if (/room/.test(content)) {
+      let keyroom = await Room.find({ topic: "test" })
+      if (keyroom) {
+        await keyroom.add(contact)
+        await keyroom.say("welcome!", contact)
+      }
+    }
+  })
 ```
 
 当同学发送“out”这个信息的时候，会把自己从“test”这个群里把自己踢出去（这个功能也是很有意思的，自己把自己踢出群）
+
 ```javascript
-        if (/out/.test(content)) {
-			let keyroom = await Room.find({ topic: "test" })
-			if (keyroom) {
-				await keyroom.say("Remove from the room", contact)
-				await keyroom.del(contact)
-			}
-		}
+    if (/out/.test(content)) {
+      let keyroom = await Room.find({ topic: "test" })
+      if (keyroom) {
+        await keyroom.say("Remove from the room", contact)
+        await keyroom.del(contact)
+      }
+    }
 
 ```
 
@@ -120,20 +129,23 @@ docker run的意思是创建一个新的容器，并运行一个命令，语法�
 还提供了一些事件：‘scan’（扫描二维码），,’login’（机器人登录），‘logout’（机器人退出），‘message’（接收到新消息），‘error’（程序报错），‘friend’（好友请求）等。Wechaty提供了一套非常方便的API，供开发者方便的使用，满足机器人来管理群。
 
 #### Server酱
+
 网页版微信会经常把用户踢下线，Server酱可以帮助我们知道Wechaty发生了哪些异常。
 Server酱，他是一个能从服务器推报警和日志到手机的工具，非常简单易操作：
 
 1.用GitHub账号登入后，获得一个SCKEY（在「发送消息」页面） 按照引导，点击“微信推送”，扫码关注“方糖”后即可完成绑定 2.在login、logout、scan、和error事件触发后，将一些关键信息往 http://sc.ftqq.com/SCKEY.send 发Get请求，我自己的微信里就收到消息了。
 
 这样，当我的机器人出现各种异常情况，我随时随地都可以知道，需要再扫码进入的时候，方糖这公众号就会把二维码推到我的手机上，我只要用机器人的微信扫码就可以了。
+
 #### UNIT
+
 最后，我们向大家介绍了怎么去制作智能微信机器人，使用了百度的UNIT框架。UNIT不需要有开发经验，我们需要做的是了解机器人使用在什么样的场景下，如何理解、如何回应用户。机器人是通过识别意图和词槽理解用户的。我们通过建立词槽，引入词典，配置词槽的澄清话术。配置回复文本及触发条件，配置引导话术、引导目标和触发条件，最后保存所有配置，导入语料，编辑对话模板，最后训练并生效模型。
 
 这篇文章先写到这里，后面将会对同学们在课程中遇到的问题和一些专有名词进行解释。
 
 文章最后还是提一下我自己的志向，我希望做一个面向女性和儿童的程序员社区，希望有更多的女性加入到编程行业，成为行业的引领者。同时大力提倡儿童编程，如果想跟我聊一聊的，下面是我的联系方式。
 
-<img src="/assets/2018/helen-weixin.jpg" width = "200" />
+![halen](/assets/2018/helen-weixin.jpg)
 
 [techie-festival]: /assets/2018/helen-techie-festival.jpeg
 [docker-screenshot]: /assets/2018/helen-docker-screenshot.png

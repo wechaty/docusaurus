@@ -1,28 +1,29 @@
 ---
-
 title: "微信App通信协议案例学习参考指南"
 author: h4dex
 date: '2018-03-11 09:18:52 +0800'
-excerpt_separator: <!--more-->
+categories: tutorial
+tags:
+  - hook
+  - hack
+header:
+  teaser: /assets/2018/h4dex-wechatprotocol.jpeg
 ---
 
 > Author: [@h4dex](https://github.com/h4dex),  写bug的设计师
 >
 > Blog: <https://www.icefox.org>
 
-
 在1月初无意看到某微信爱好者学习交流群里发现讨论一个名为 **MicroChat** （基于Mars）利用微信AndroidAPP客户端通讯协议代码！！， 震惊之余，已对作者膜拜。心情激动之下下载了下来，参考了一些文章对原始版本进行了部分修正和应用测试。 后测试增加了一些功能实现以及对扩展模拟任意设备方式登入验证，和特定功能处理的思路。本人能力有限，技术很菜很水，但是秉着对技术向往以及分享我的坑给更多的学习者科普了解，故整理编辑了一篇文章带领大家先一睹为快。并且对MicroChat基础功能做了一些扩展思路，如果有错误的地方，欢迎批评指正 ！
 
 ![Wechat Protocol](/assets/2018/h4dex-wechatprotocol.jpeg)
 
-
 <!--more-->
 ### 准备工作
 
-
 > 开发环境：
 
-```
+```text
 开发工具: Visual Studio 2015 及以上版本(marsWin32SDK 需要vc140以上)
 抓包和分析工具： Wireshark / Fiddler / Charles、TCPDump
 编译配套： Boost 、 ATL
@@ -30,13 +31,13 @@ excerpt_separator: <!--more-->
 
 > 附加目录
 
-```
+```text
 如果本机缺少引用目录请手动附加
 ```
 
 > 其他提醒
 
-```
+```text
 编译顺序为： Mars相关依赖 / SQLite3 -> MicrochatSDK(基于Mars Win32 Example) -> MicroChat(用户层)
 ```
 
@@ -48,7 +49,7 @@ excerpt_separator: <!--more-->
 
 > 域名
 
-```
+```text
 dns.weixin.qq.com
 support.weixin.qq.com    80/8080
 short.weixin.qq.com        443/8080 (sz)
@@ -57,12 +58,11 @@ wx.qlogo.cn                    80
 timg.cn  等
 ```
 
-
 > 基本执行过程概况
 
 1. 程序启动后，优先尝试DNS解析特定域名（上述域名，会返回所有节点）;
 
-```
+```text
 dns查询
 dns.weixin.qq.com
 返回一组IP地址long.weixin.qq.com
@@ -74,13 +74,13 @@ http://dns.weixin.qq.com/cgi-bin/micromsg-bin/newgetdns?uin=0&clientversion=6208
 获取到long.weixin.qq.com最优IP，然后建立到101.227.131.105的TCP长连接
 ```
 
-2. 如果DNS查询不可用，程序转为使用hardcode的ip链接服务；
-3. 如果dns可用，返回的ip为根据ISP智能解析的结果，程序使用返回的ip链接服务;
-4. 程序在注册、验证、解封、小程序等内置内容请求、阶段会使用https链接，加密协议为腾讯的mmtls;
-5. 客户端使用tcp 80/8080连接远端服务器。80/8080两个端口同时或任何单独一个，均可提供服务;
-6. 80端口为短链接，8080为长链接， 程序会优先使用8080端口;
+1. 如果DNS查询不可用，程序转为使用hardcode的ip链接服务；
+1. 如果dns可用，返回的ip为根据ISP智能解析的结果，程序使用返回的ip链接服务;
+1. 程序在注册、验证、解封、小程序等内置内容请求、阶段会使用https链接，加密协议为腾讯的mmtls;
+1. 客户端使用tcp 80/8080连接远端服务器。80/8080两个端口同时或任何单独一个，均可提供服务;
+1. 80端口为短链接，8080为长链接， 程序会优先使用8080端口;
 
-```
+```text
 请求确认连接后获取数据。
 提交请求中包含 账号 密码 登录方式(可以模拟任何设备~) 设备信息 网络信息 网络设备信息 地理位置 等~
 
@@ -105,9 +105,9 @@ GET http://wx.qlogo.cn/mmhead/Q3auHgzwzM7NR4TYFcoNjbxZpfO9aiaE7RU5lXGUw13SMicL6i
 
 ```
 
-7. 当连续2次心跳发送失败时，客户端会弹出提示“当前网络状况不好，是否提交反馈数据”，确认后客户端试图通过web提交反馈数据;
+1. 当连续2次心跳发送失败时，客户端会弹出提示“当前网络状况不好，是否提交反馈数据”，确认后客户端试图通过web提交反馈数据;
 
-```
+```text
 心跳频率约为5分钟
 
 登陆之后，会建立一个long.weixin.qq.com的HTTP长连接，端口号为8080
@@ -130,12 +130,14 @@ GET http://wx.qlogo.cn/mmhead/Q3auHgzwzM7NR4TYFcoNjbxZpfO9aiaE7RU5lXGUw13SMicL6i
 
 单纯摘取第0000行为例，共16个字节的头部:
 
-```
+```text
 00 00 00 10 00 10 00 01 00 00 00 06 00 00 00 0f
 ```
+
 16进制表示，每两个紧挨着数字代表一个byte字节。
 
 微信消息包格式：
+
 1. 前4字节表示数据包长度，可变 值为16时，意味着一个仅仅包含头部的完整的数据包（可能表示着预先定义好的业务意义），后面可能还有会别的消息包
 2. 2个字节表示头部长度，固定值，0x10 = 16
 3. 2个字节表示谢意版本，固定值，0x01 = 1
@@ -144,7 +146,7 @@ GET http://wx.qlogo.cn/mmhead/Q3auHgzwzM7NR4TYFcoNjbxZpfO9aiaE7RU5lXGUw13SMicL6i
 6. 头部后面紧跟着消息体，非明文，加密形式
 7. 一个消息包，最小16 byte字节
 
-```
+```text
 如果对报文不是很了解可以学习参考一下其他底层通信协议 比如.. ModbusTCP
 ```
 
@@ -165,9 +167,7 @@ GET http://wx.qlogo.cn/mmhead/Q3auHgzwzM7NR4TYFcoNjbxZpfO9aiaE7RU5lXGUw13SMicL6i
 
 https://gist.githubusercontent.com/yongboy/9341037/raw/pong_server.c
 
-
-
-{% highlight c %}
+```c
 /**
  * nieyong@youku.com
  * how to compile it:
@@ -308,12 +308,11 @@ static void free_res(struct ev_loop *loop, ev_io *w) {
     close(client->fd);
     free(client);
 }
-{% endhighlight %}
+```
 
+客户端<https://gist.githubusercontent.com/yongboy/9319660/raw/PingClient.java>
 
-客户端
-https://gist.githubusercontent.com/yongboy/9319660/raw/PingClient.java
-{% highlight java %}
+```java
 /**
  * Ping Client
  * @author nieyong
@@ -336,116 +335,116 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 import java.util.concurrent.TimeUnit;
 
 class PingClientHandler extends ChannelInboundHandlerAdapter {
-	private final ByteBuf firstMessage;
+  private final ByteBuf firstMessage;
 
-	public PingClientHandler() {
-		firstMessage = PooledByteBufAllocator.DEFAULT.buffer(22);
+  public PingClientHandler() {
+    firstMessage = PooledByteBufAllocator.DEFAULT.buffer(22);
 
-		// weixin 16 byte's header
-		firstMessage.writeByte(0);
-		firstMessage.writeByte(0);
-		firstMessage.writeByte(0);
-		firstMessage.writeByte(16);
+    // weixin 16 byte's header
+    firstMessage.writeByte(0);
+    firstMessage.writeByte(0);
+    firstMessage.writeByte(0);
+    firstMessage.writeByte(16);
 
-		firstMessage.writeByte(0);
-		firstMessage.writeByte(16);
+    firstMessage.writeByte(0);
+    firstMessage.writeByte(16);
 
-		firstMessage.writeByte(0);
-		firstMessage.writeByte(1);
+    firstMessage.writeByte(0);
+    firstMessage.writeByte(1);
 
-		firstMessage.writeByte(0);
-		firstMessage.writeByte(0);
-		firstMessage.writeByte(0);
-		firstMessage.writeByte(6);
+    firstMessage.writeByte(0);
+    firstMessage.writeByte(0);
+    firstMessage.writeByte(0);
+    firstMessage.writeByte(6);
 
-		firstMessage.writeByte(0);
-		firstMessage.writeByte(0);
-		firstMessage.writeByte(0);
-		firstMessage.writeByte(1);
+    firstMessage.writeByte(0);
+    firstMessage.writeByte(0);
+    firstMessage.writeByte(0);
+    firstMessage.writeByte(1);
 
-		// just for /n
-		firstMessage.writeByte('\n'); // 1 byte
+    // just for /n
+    firstMessage.writeByte('\n'); // 1 byte
 
-		// footer 16 byte
-		String welcome = "hello"; // 5 byte
-		firstMessage.writeBytes(welcome.getBytes());
-	}
+    // footer 16 byte
+    String welcome = "hello"; // 5 byte
+    firstMessage.writeBytes(welcome.getBytes());
+  }
 
-	@Override
-	public void channelActive(ChannelHandlerContext ctx) {
-		ctx.writeAndFlush(firstMessage);
-	}
+  @Override
+  public void channelActive(ChannelHandlerContext ctx) {
+    ctx.writeAndFlush(firstMessage);
+  }
 
-	@Override
-	public void channelRead(final ChannelHandlerContext ctx, final Object msg)
-			throws Exception {
-		ctx.executor().schedule(new Runnable() {
-			@Override
-			public void run() {
-				ctx.channel().writeAndFlush(msg);
-			}
-		}, 1, TimeUnit.SECONDS);
-	}
+  @Override
+  public void channelRead(final ChannelHandlerContext ctx, final Object msg)
+      throws Exception {
+    ctx.executor().schedule(new Runnable() {
+      @Override
+      public void run() {
+        ctx.channel().writeAndFlush(msg);
+      }
+    }, 1, TimeUnit.SECONDS);
+  }
 
-	@Override
-	public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
-		ctx.flush();
-	}
+  @Override
+  public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
+    ctx.flush();
+  }
 
-	@Override
-	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) {
-		System.err.println("Unexpected exception from downstream :"
-				+ cause.getMessage());
-		ctx.close();
-	}
+  @Override
+  public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) {
+    System.err.println("Unexpected exception from downstream :"
+        + cause.getMessage());
+    ctx.close();
+  }
 }
 
 public class PingClient {
 
-	private final String host;
-	private final int port;
+  private final String host;
+  private final int port;
 
-	public PingClient(String host, int port) {
-		this.host = host;
-		this.port = port;
-	}
+  public PingClient(String host, int port) {
+    this.host = host;
+    this.port = port;
+  }
 
-	public void run() throws Exception {
-		EventLoopGroup group = new NioEventLoopGroup();
-		try {
-			Bootstrap b = new Bootstrap();
-			b.group(group).channel(NioSocketChannel.class)
-					.option(ChannelOption.TCP_NODELAY, true)
-					.handler(new ChannelInitializer<SocketChannel>() {
-						@Override
-						public void initChannel(SocketChannel ch)
-								throws Exception {
-							ch.pipeline().addLast(new PingClientHandler());
-						}
-					});
+  public void run() throws Exception {
+    EventLoopGroup group = new NioEventLoopGroup();
+    try {
+      Bootstrap b = new Bootstrap();
+      b.group(group).channel(NioSocketChannel.class)
+          .option(ChannelOption.TCP_NODELAY, true)
+          .handler(new ChannelInitializer<SocketChannel>() {
+            @Override
+            public void initChannel(SocketChannel ch)
+                throws Exception {
+              ch.pipeline().addLast(new PingClientHandler());
+            }
+          });
 
-			ChannelFuture f = b.connect(host, port).sync();
+      ChannelFuture f = b.connect(host, port).sync();
 
-			f.channel().closeFuture().sync();
-		} finally {
-			// Shut down the event loop to terminate all threads.
-			group.shutdownGracefully();
-		}
-	}
+      f.channel().closeFuture().sync();
+    } finally {
+      // Shut down the event loop to terminate all threads.
+      group.shutdownGracefully();
+    }
+  }
 
-	public static void main(String[] args) throws Exception {
-		String host = "127.0.0.1";
-		int port = 8080;
+  public static void main(String[] args) throws Exception {
+    String host = "127.0.0.1";
+    int port = 8080;
 
-		if (args.length == 3) {
-			host = args[0];
-			port = Integer.parseInt(args[1]);
-		}
+    if (args.length == 3) {
+      host = args[0];
+      port = Integer.parseInt(args[1]);
+    }
 
-		new PingClient(host, port).run();
-	}
+    new PingClient(host, port).run();
+  }
 }
-{% endhighlight %}
+```
 
 > 结论
 
@@ -455,12 +454,11 @@ public class PingClient {
 输出的内容中，一定要包含换行字符"\n"
 因此，可以定性为微信使用了基于8080端口TCP长连接，一旦数据包中含有换行"\n"符号，就会被Wireshark误认为HTTP协议。可能微信是无心为之吧。
 
-
 > SyncRecv 新消息获取
 
 1. TCP长连接接收到服务器通知有新消息需要获取(消息，朋友圈，附近人，好友请求，瓶子，通知，摇一摇等)
-2. APP发起一个HTTP POST请求获取新状态消息，会带上当前SyncKey 地址为：http://short.weixin.qq.com/cgi-bin/micromsg-bin/reportstrategy HTTP/1.1，看不到明文(这是一个数据块，也可能是多个数据块)
-3. APP获取到新的消息，会再次发起一次HTTP POST请求，告诉服务器已确认收到，同时获取最新SyncKey 地址为：http://short.weixin.qq.com/cgi-bin/micromsg-bin/kvreport，看不到明文
+2. APP发起一个HTTP POST请求获取新状态消息，会带上当前SyncKey 地址为：<http://short.weixin.qq.com/cgi-bin/micromsg-bin/reportstrategy> HTTP/1.1，看不到明文(这是一个数据块，也可能是多个数据块)
+3. APP获取到新的消息，会再次发起一次HTTP POST请求，告诉服务器已确认收到，同时获取最新SyncKey 地址为：<http://short.weixin.qq.com/cgi-bin/micromsg-bin/kvreport>，看不到明文
 4. 接受一个消息，TCP长连接至少交互两次，客户端发起两次HTTP POST请求 具体每次交互内容是什么，有些模糊
 5. 服务器需要支持：状态消息获取标记，状态消息确认收取标记。只有被确认收到，此状态消息才算是被正确消费掉
 6. 多个不同设备同一账号同时使用微信，同一个状态消息会会被同时分发到多个设备上（如：模拟PC版 或IPAD MAC WINPHONE在线时）
@@ -488,7 +486,6 @@ public class PingClient {
 18. 微信 CommandSchedule自定义协议 weixin://  手动根据功能解析 profile获取和展示、View跳转等。可手动解析实现模拟手机端.
 
 
-
 > 协议小结
 
 1. 发布的消息对应一个ID（只要单个方向唯一即可，服务器端可能会根ID判断重复接收），消息重传机制确保有限次的重试，重试失败给予用户提示，发送成功会反馈确认，客户端只有收到确认信息才知道发送成功。发送消息可能不会产生新SyncKey。
@@ -502,7 +499,7 @@ public class PingClient {
 
 > 请求地址
 
-{% highlight cpp %}
+```cpp
 #define CGI_NEWSYNC "/cgi-bin/micromsg-bin/newsync" //同步服务端最新消息
 #define CGI_MANUALAUTH "/cgi-bin/micromsg-bin/manualauth" //登录
 #define CGI_NEWSENDMSG "/cgi-bin/micromsg-bin/newsendmsg" //发送文字消息
@@ -512,29 +509,29 @@ public class PingClient {
 #define CGI_GETCONTACT "/cgi-bin/micromsg-bin/getcontact" //查找新朋友
 #define CGI_VERIFYUSER "/cgi-bin/micromsg-bin/verifyuser" //添加好友
 #define CGI_BIND "/cgi-bin/micromsg-bin/bindopmobileforreg" //首次登录短信授权
-{% endhighlight %}
+```
 
 其他功能 自行添加请求地址，如 FindNearBy 附近人等~
 
-{% highlight cpp %}
+```cpp
 /测试请手动修改登录设备信息
 //登录设备硬件信息
-#define DEVICE_INFO_GUID					"A31d2152a33d83e7"   //GUID
-#define DEVICE_INFO_CLIENT_SEQID			"A31cc712ad2d83e6_1512965043210"  //GUID_LOCATION地址
-#define DEVICE_INFO_CLIENT_SEQID_SIGN		"e89b238e77cf988ebd09eb65f5378e99"  //MD5
-#define DEVICE_INFO_IMEI					"865167123366678"   //手机IMEI
-#define DEVICE_INFO_ANDROID_ID				"eabe1f220561a49f"          //设备ID
-#define DEVICE_INFO_ANDROID_VER				"android-26"                //安卓版本
-#define DEVICE_INFO_MANUFACTURER			CStringA2Utf8("iPhone")     //设备名称 随便填
-#define DEVICE_INFO_MODELNAME			    CStringA2Utf8("X")              //型号名称 随便填
-#define DEVICE_INFO_MOBILE_WIFI_MAC_ADDRESS	"01:67:33:56:78:11"                 //WIFI MAC地址
-#define DEVICE_INFO_AP_BSSID				"41:25:99:22:3f:14"         //手机信号基站  MAC地址
-#define DEVICE_INFO_LANGUAGE				"zh_CN"                     //语言
+#define DEVICE_INFO_GUID          "A31d2152a33d83e7"   //GUID
+#define DEVICE_INFO_CLIENT_SEQID      "A31cc712ad2d83e6_1512965043210"  //GUID_LOCATION地址
+#define DEVICE_INFO_CLIENT_SEQID_SIGN    "e89b238e77cf988ebd09eb65f5378e99"  //MD5
+#define DEVICE_INFO_IMEI          "865167123366678"   //手机IMEI
+#define DEVICE_INFO_ANDROID_ID        "eabe1f220561a49f"          //设备ID
+#define DEVICE_INFO_ANDROID_VER        "android-26"                //安卓版本
+#define DEVICE_INFO_MANUFACTURER      CStringA2Utf8("iPhone")     //设备名称 随便填
+#define DEVICE_INFO_MODELNAME          CStringA2Utf8("X")              //型号名称 随便填
+#define DEVICE_INFO_MOBILE_WIFI_MAC_ADDRESS  "01:67:33:56:78:11"                 //WIFI MAC地址
+#define DEVICE_INFO_AP_BSSID        "41:25:99:22:3f:14"         //手机信号基站  MAC地址
+#define DEVICE_INFO_LANGUAGE        "zh_CN"                     //语言
 
 //下面2个是设备 com.tencent.mm 包信息 及 设备信息（使用上面宏）
-#define DEVICE_INFO_SOFTINFO				"<softtype><lctmoc>0</lctmoc><level>1</level><k1>ARMv7 processor rev 1 (v7l) </k1><k2></k2><k3>5.1.1</k3><k4>%s</k4><k5>460007337766541</k5><k6>89860012221746527381</k6><k7>%s</k7><k8>unknown</k8><k9>%s</k9><k10>2</k10><k11>placeholder</k11><k12>0001</k12><k13>0000000000000001</k13><k14>%s</k14><k15></k15><k16>neon vfp swp half thumb fastmult edsp vfpv3 idiva idivt</k16><k18>%s</k18><k21>\"wireless\"</k21><k22></k22><k24>%s</k24><k26>0</k26><k30>\"wireless\"</k30><k33>com.tencent.mm</k33><k34>Android-x86/android_x86/x86:5.1.1/LMY48Z/denglibo08021647:userdebug/test-keys</k34><k35>vivo v3</k35><k36>unknown</k36><k37>%s</k37><k38>x86</k38><k39>android_x86</k39><k40>%s</k40><k41>1</k41><k42>%s</k42><k43>null</k43><k44>0</k44><k45></k45><k46></k46><k47>wifi</k47><k48>%s</k48><k49>/data/data/com.tencent.mm/</k49><k52>0</k52><k53>0</k53><k57>1080</k57><k58></k58><k59>0</k59></softtype>"
-#define DEVICE_INFO_DEVICEINFO				"<deviceinfo><MANUFACTURER name=\"%s\"><MODEL name=\%s\"><VERSION_RELEASE name=\"5.1.1\"><VERSION_INCREMENTAL name=\"eng.denglibo.20171224.164708\"><DISPLAY name=\"android_x86-userdebug 5.1.1 LMY48Z eng.denglibo.20171224.164708 test-keys\"></DISPLAY></VERSION_INCREMENTAL></VERSION_RELEASE></MODEL></MANUFACTURER></deviceinfo>"
-{% endhighlight %}
+#define DEVICE_INFO_SOFTINFO        "<softtype><lctmoc>0</lctmoc><level>1</level><k1>ARMv7 processor rev 1 (v7l) </k1><k2></k2><k3>5.1.1</k3><k4>%s</k4><k5>460007337766541</k5><k6>89860012221746527381</k6><k7>%s</k7><k8>unknown</k8><k9>%s</k9><k10>2</k10><k11>placeholder</k11><k12>0001</k12><k13>0000000000000001</k13><k14>%s</k14><k15></k15><k16>neon vfp swp half thumb fastmult edsp vfpv3 idiva idivt</k16><k18>%s</k18><k21>\"wireless\"</k21><k22></k22><k24>%s</k24><k26>0</k26><k30>\"wireless\"</k30><k33>com.tencent.mm</k33><k34>Android-x86/android_x86/x86:5.1.1/LMY48Z/denglibo08021647:userdebug/test-keys</k34><k35>vivo v3</k35><k36>unknown</k36><k37>%s</k37><k38>x86</k38><k39>android_x86</k39><k40>%s</k40><k41>1</k41><k42>%s</k42><k43>null</k43><k44>0</k44><k45></k45><k46></k46><k47>wifi</k47><k48>%s</k48><k49>/data/data/com.tencent.mm/</k49><k52>0</k52><k53>0</k53><k57>1080</k57><k58></k58><k59>0</k59></softtype>"
+#define DEVICE_INFO_DEVICEINFO        "<deviceinfo><MANUFACTURER name=\"%s\"><MODEL name=\%s\"><VERSION_RELEASE name=\"5.1.1\"><VERSION_INCREMENTAL name=\"eng.denglibo.20171224.164708\"><DISPLAY name=\"android_x86-userdebug 5.1.1 LMY48Z eng.denglibo.20171224.164708 test-keys\"></DISPLAY></VERSION_INCREMENTAL></VERSION_RELEASE></MODEL></MANUFACTURER></deviceinfo>"
+```
 
 > 验证
 
@@ -548,7 +545,7 @@ SYNC验证  SYNCKEY //收消息验证KEY
 
 > Profile
 
-{% highlight cpp %}
+```cpp
 #pragma once
 #include <string>
 #include "db/db.h"
@@ -556,43 +553,42 @@ SYNC验证  SYNCKEY //收消息验证KEY
 class CAuthInfo
 {
 public:
-	CAuthInfo()
-	{
-		InitializeCriticalSection(&m_cs_syncKey);
-	}
+  CAuthInfo()
+  {
+    InitializeCriticalSection(&m_cs_syncKey);
+  }
 
-	string	m_UserName; //昵称
-	string	m_WxId;  //wxid 或 老微信号
-	DWORD   m_uin = 0;   //uin 唯一标识
-	string	m_Alias;     //微信号
-	string	m_Session;	//SessionKey
-	DWORD   m_ClientVersion;   //客户端版本
-	string  m_guid_15;    //guid 15位
-	string  m_guid;       //guid
-	string  m_androidVer;  //安卓版本
-	string  m_launguage;   //lang
-	string  m_cookie;      //置入浏览器的Cookie
+  string  m_UserName; //昵称
+  string  m_WxId;  //wxid 或 老微信号
+  DWORD   m_uin = 0;   //uin 唯一标识
+  string  m_Alias;     //微信号
+  string  m_Session;  //SessionKey
+  DWORD   m_ClientVersion;   //客户端版本
+  string  m_guid_15;    //guid 15位
+  string  m_guid;       //guid
+  string  m_androidVer;  //安卓版本
+  string  m_launguage;   //lang
+  string  m_cookie;      //置入浏览器的Cookie
 
-	string GetSyncKey();
-	void SetSyncKey(string strSyncKey);
+  string GetSyncKey();
+  void SetSyncKey(string strSyncKey);
 
 
-	static CAuthInfo *GetInstance();
+  static CAuthInfo *GetInstance();
 
-	//获取短信验证码凭据
-	string m_mobilecode_authticket;
-	//接受短信号码(当前默认使用登录账号)
-	string m_mobileNum;
+  //获取短信验证码凭据
+  string m_mobilecode_authticket;
+  //接受短信号码(当前默认使用登录账号)
+  string m_mobileNum;
 
 private:
-	static CAuthInfo * m_Instance;
+  static CAuthInfo * m_Instance;
 
-	CRITICAL_SECTION   m_cs_syncKey;
+  CRITICAL_SECTION   m_cs_syncKey;
 };
 
 #define pAuthInfo (CAuthInfo::GetInstance())
-
-{% endhighlight %}
+```
 
 > 扩展多设备在线
 
@@ -610,7 +606,7 @@ private:
 2. Avcodec 音频文件转码与播放
 3. CEF3    提供模拟微信内置浏览器访问功能(小程序不支持)
 4. 截图工具
-5. proxy   
+5. proxy
 6. SQLite3
 
 ### 附录
@@ -619,7 +615,7 @@ Microsoft Exchange Active Sync协议，简称EAS，分为folderrsync(同步文�
 
 某网友总结的协议一次回话大致示范：
 
-```
+```c
 Client:   synckey=0 //第一次key为0
 Server:  newsynckey=1235434    //第一次返回新key
 Client:   synckey=1235434   //使用新key查询
@@ -634,7 +630,6 @@ key是递增的，但不要求连续
 请求的某个参数决定服务器是否立即返回
 ```
 
-
 ### 传送门
 
 原版Github传送门(已修复DNS错误301问题)：
@@ -642,7 +637,6 @@ key是递增的，但不要求连续
 
 Python版
 > https://github.com/InfiniteTsukuyomi/MicroChat/tree/master/test
-
 
 ### 感谢
 
@@ -652,10 +646,9 @@ Python版
 
 感谢腾讯WXG的开源精神奉献，给了大量的开源参考和文章讲解。
 
-
 参考链接：
 
-http://www.blogjava.net/yongboy/archive/2014/03/05/410636.html
+<http://www.blogjava.net/yongboy/archive/2014/03/05/410636.html>
 
 ### 严重声明
 

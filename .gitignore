@@ -4,3 +4,5 @@ _site
 Gemfile.lock
 .DS_Store
 .*.swp
+node_modules/
+package-lock.json

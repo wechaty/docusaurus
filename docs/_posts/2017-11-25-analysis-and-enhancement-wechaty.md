@@ -1,9 +1,12 @@
 ---
-
 title: "解析WebWxApp代码来增强wechaty功能（一）"
 date: 2017-11-09 19:00 +0800
 author: binsee
-excerpt_separator: <!--more-->
+categories: tutorial
+tags:
+  - code
+header:
+  teaser: /assets/2017/binsee-wechaty-structure.png
 ---
 
 > 作者: [@binsee](https://github.com/binsee), 野路子的修炼者
@@ -104,7 +107,6 @@ puppet-web中对将功能拆分为不同模块：
 - `watchdog`
 - `wechatyBro` 注入web环境运行的代码，实现对webWxApp的各种操作。
 
-
 wechatyBro中监听webWxApp中的信息事件，然后通过websocket把事件信息发送给puppet-web。而wechaty通过puppet-web操纵webWxApp。由于websocket不能同步返回处理结果，因此需要通过浏览器驱动将js代码注入进web环境执行（调用wechatyBro中的方法来操作webWxApp），并返回Promise将操作同步化。(可见`/src/puppet-web/bridge.ts`中`proxyWechaty()`)
 
 **例如：**
@@ -124,14 +126,12 @@ bridge.proxyWechaty() -> bridge.execute() -> browser.execute()
 // 将js代码注入web环境执行，并Promise以返回执行结果
 ```
 
-
 ##### puppet-web功能简述
 
 1. puppet-web创建一个websocket服务端用来接收wechatyBro的通信
 2. puppet-web通过浏览器驱动将wechatyBro的js代码注入进入web环境执行。
 3. WechatyBro进行初始化工作：连接puppet-web的websocket服务端，监听webWxApp的事件并进行处理后通过websocket发送给puppet-web。
 4. wechaty通过puppet-web执行各项功能时（如发送信息、创建群、拉人、踢人等主动操作），puppet-web会通过浏览器驱动将代码注入进web环境执行，以Promise返回执行结果
-
 
 以上对wechaty进行一个大概的了解，下边来以几个pr的实现来进一步了解wechaty。
 
@@ -428,12 +428,11 @@ function glueToAngular() {
 
 完整patch代码见[PR commit#174b6775c](https://github.com/Chatie/wechaty/commit/174b6775c4e9242e5f003094b2f9e10953c978f2)
 
-
 ## End
 
-感谢[zixia](https://github.com/zixia)的邀请，很抱歉拖了这么久才写了这篇文章。
+感谢[zixia](https://github.com/huan)的邀请，很抱歉拖了这么久才写了这篇文章。
 感谢Chatie的各位贡献者，有大家的共同努力，wechaty才会愈发的好用。
 也感谢耐心看完文章的你，希望我的文章没有浪费你的时间。
 谢谢！
 
-  [1]: /assets/2017/binsee-wechaty-structure.png
+[1]: /assets/2017/binsee-wechaty-structure.png

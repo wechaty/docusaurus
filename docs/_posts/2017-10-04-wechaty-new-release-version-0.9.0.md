@@ -1,10 +1,14 @@
 ---
-
 title: Wechaty New Version 0.9.0 Released
 date: '2017-10-04 10:0:0 +0800'
 author: Huan
+categories: announcement
+tags:
+  - release
+header:
+  teaser: /assets/2017/huan-wechaty-new-version-0.9.0.png
 ---
-> Author: [@zixia](https://github.com/zixia) Angel Investor, Full Stack Developer, Paragiding Pilot, Author of Wechaty.
+> Author: [@zixia](https://github.com/huan) Angel Investor, Full Stack Developer, Paragiding Pilot, Author of Wechaty.
 
 ![wechaty-release-0.9.0][wechaty-release-0.9.0]
 
@@ -17,17 +21,18 @@ Chatie/Wechaty
 
 <!--more-->
 
-# Change Log
+## Change Log
 
-## [v0.9.0](https://github.com/chatie/wechaty/tree/v0.9.0) (2017-10-04)
+### [v0.9.0](https://github.com/chatie/wechaty/tree/v0.9.0) (2017-10-04)
+
 [Full Changelog](https://github.com/chatie/wechaty/compare/v0.8.2...v0.9.0)
 
-BREAKING CHANGES
-----------------
+#### BREAKING CHANGES
+
 - \[Announcement\] Drop support for phantomjs [\#763](https://github.com/Chatie/wechaty/issues/763)
 
-NEW FEATURES
-------------
+#### NEW FEATURES
+
 - Support hot-reload for Wechaty events listeners [\#820](https://github.com/Chatie/wechaty/issues/820)
 - Add Transpond Message [\#726](https://github.com/Chatie/wechaty/issues/726)
 - \[Feature request\] @mention support? [\#153](https://github.com/Chatie/wechaty/issues/153)
@@ -41,8 +46,8 @@ NEW FEATURES
 - Add mention [\#362](https://github.com/Chatie/wechaty/pull/362) ([lijiarui](https://github.com/lijiarui))
 - added hot load bots [\#310](https://github.com/Chatie/wechaty/pull/310) ([Gcaufy](https://github.com/Gcaufy))
 
-BUG FIXES
----------
+#### BUG FIXES
+
 - \[bug\] Support for send 25Mb+ size files [\#766](https://github.com/Chatie/wechaty/issues/766)
 - Cannot send pdf file using MediaMessage [\#710](https://github.com/Chatie/wechaty/issues/710)
 - \[enhancement\] Add pdf, docx etc support to MediaMessage\(now only picture is supported\) [\#538](https://github.com/Chatie/wechaty/issues/538)
@@ -57,12 +62,11 @@ BUG FIXES
 - \[bug\]Cannot read property 'getUserName' of undefined [\#772](https://github.com/Chatie/wechaty/issues/772)
 - Cannot send pdf file using MediaMessage [\#710](https://github.com/Chatie/wechaty/issues/710)
 - Click Web Wechat `Switch Account` Automatically to get qrcode immediately when bot logout [\#636](https://github.com/Chatie/wechaty/issues/636)
-- Concat.avatar\(\)  faild ,when hostname changed from https://wx.qq.com to https://wx2.qq.com [\#418](https://github.com/Chatie/wechaty/issues/418)
+- Concat.avatar\(\)  faild ,when hostname changed from <https://wx.qq.com> to <https://wx2.qq.com> [\#418](https://github.com/Chatie/wechaty/issues/418)
 - it seems RECALLED: 10002 message dose't trigger on\\('message'\\) event [\#8](https://github.com/Chatie/wechaty/issues/8)
 
+#### ENHANCEMENTS
 
-ENHANCEMENTS
-------------
 - \[jsdoc\] additional optimizations [\#774](https://github.com/Chatie/wechaty/issues/774)
 - chrome-headless support [\#739](https://github.com/Chatie/wechaty/issues/739)
 - Click Web Wechat `Switch Account` Automatically to get qrcode immediately when bot logout [\#636](https://github.com/Chatie/wechaty/issues/636)
@@ -78,9 +82,8 @@ ENHANCEMENTS
 - add-sys-message-in-friendrequest [\#266](https://github.com/Chatie/wechaty/pull/266) ([lijiarui](https://github.com/lijiarui))
 - enhance \#155 fire `room-join` when someone joins from a QR Code [\#162](https://github.com/Chatie/wechaty/pull/162) ([lijiarui](https://github.com/lijiarui))
 
+#### MISC
 
-MISC
-----
 - Use Sentry.io to report exceptions [\#580](https://github.com/Chatie/wechaty/issues/580)
 - \[todo\] Change to use native Dom Websocket instead of socket.io library [\#502](https://github.com/Chatie/wechaty/issues/502)
 - License Change: from ISC to Apache-2.0 [\#474](https://github.com/Chatie/wechaty/issues/474)
@@ -99,14 +102,14 @@ MISC
 - friendrequest [\#199](https://github.com/Chatie/wechaty/pull/199) ([lijiarui](https://github.com/lijiarui))
 - \#181 fix [\#182](https://github.com/Chatie/wechaty/pull/182) ([lijiarui](https://github.com/lijiarui))
 
-CONTRIBUTORS
-------------
+#### CONTRIBUTORS
+
 The following contributiveness since v0.7.0 had been contributed.
 
 Thank you all contributors, Wechaty could not release version 0.9 without your help!
 
 1. @[lijiarui](https://github.com/lijiarui): [\#816](https://github.com/Chatie/wechaty/pull/816),[\#812](https://github.com/Chatie/wechaty/pull/812),[\#805](https://github.com/Chatie/wechaty/pull/805),[\#798](https://github.com/Chatie/wechaty/pull/798),[\#757](https://github.com/Chatie/wechaty/pull/757),[\#729](https://github.com/Chatie/wechaty/pull/729),[\#725](https://github.com/Chatie/wechaty/pull/725),[\#651](https://github.com/Chatie/wechaty/pull/651),[\#627](https://github.com/Chatie/wechaty/pull/627),[\#619](https://github.com/Chatie/wechaty/pull/619),[\#604](https://github.com/Chatie/wechaty/pull/604),[\#515](https://github.com/Chatie/wechaty/pull/515),[\#490](https://github.com/Chatie/wechaty/pull/490),[\#440](https://github.com/Chatie/wechaty/pull/440),[\#370](https://github.com/Chatie/wechaty/pull/370),[\#364](https://github.com/Chatie/wechaty/pull/364),[\#362](https://github.com/Chatie/wechaty/pull/362),[\#328](https://github.com/Chatie/wechaty/pull/328),[\#324](https://github.com/Chatie/wechaty/pull/324),[\#323](https://github.com/Chatie/wechaty/pull/323),[\#321](https://github.com/Chatie/wechaty/pull/321),[\#318](https://github.com/Chatie/wechaty/pull/318),[\#303](https://github.com/Chatie/wechaty/pull/303),[\#292](https://github.com/Chatie/wechaty/pull/292),[\#275](https://github.com/Chatie/wechaty/pull/275),[\#266](https://github.com/Chatie/wechaty/pull/266),[\#264](https://github.com/Chatie/wechaty/pull/264),[\#249](https://github.com/Chatie/wechaty/pull/249),[\#239](https://github.com/Chatie/wechaty/pull/239),[\#234](https://github.com/Chatie/wechaty/pull/234),[\#211](https://github.com/Chatie/wechaty/pull/211),[\#199](https://github.com/Chatie/wechaty/pull/199),[\#182](https://github.com/Chatie/wechaty/pull/182),[\#162](https://github.com/Chatie/wechaty/pull/162)
-1. @[zixia](https://github.com/zixia): [\#841](https://github.com/Chatie/wechaty/pull/841),[\#831](https://github.com/Chatie/wechaty/pull/831),[\#810](https://github.com/Chatie/wechaty/pull/810),[\#644](https://github.com/Chatie/wechaty/pull/644),[\#643](https://github.com/Chatie/wechaty/pull/643),[\#608](https://github.com/Chatie/wechaty/pull/608),[\#569](https://github.com/Chatie/wechaty/pull/569),[\#560](https://github.com/Chatie/wechaty/pull/560),[\#542](https://github.com/Chatie/wechaty/pull/542),[\#496](https://github.com/Chatie/wechaty/pull/496),[\#495](https://github.com/Chatie/wechaty/pull/495),[\#469](https://github.com/Chatie/wechaty/pull/469),[\#462](https://github.com/Chatie/wechaty/pull/462),[\#455](https://github.com/Chatie/wechaty/pull/455),[\#449](https://github.com/Chatie/wechaty/pull/449),[\#396](https://github.com/Chatie/wechaty/pull/396),[\#351](https://github.com/Chatie/wechaty/pull/351),[\#317](https://github.com/Chatie/wechaty/pull/317),[\#316](https://github.com/Chatie/wechaty/pull/316),[\#315](https://github.com/Chatie/wechaty/pull/315),[\#314](https://github.com/Chatie/wechaty/pull/314),[\#313](https://github.com/Chatie/wechaty/pull/313),[\#312](https://github.com/Chatie/wechaty/pull/312),[\#311](https://github.com/Chatie/wechaty/pull/311)
+1. @[zixia](https://github.com/huan): [\#841](https://github.com/Chatie/wechaty/pull/841),[\#831](https://github.com/Chatie/wechaty/pull/831),[\#810](https://github.com/Chatie/wechaty/pull/810),[\#644](https://github.com/Chatie/wechaty/pull/644),[\#643](https://github.com/Chatie/wechaty/pull/643),[\#608](https://github.com/Chatie/wechaty/pull/608),[\#569](https://github.com/Chatie/wechaty/pull/569),[\#560](https://github.com/Chatie/wechaty/pull/560),[\#542](https://github.com/Chatie/wechaty/pull/542),[\#496](https://github.com/Chatie/wechaty/pull/496),[\#495](https://github.com/Chatie/wechaty/pull/495),[\#469](https://github.com/Chatie/wechaty/pull/469),[\#462](https://github.com/Chatie/wechaty/pull/462),[\#455](https://github.com/Chatie/wechaty/pull/455),[\#449](https://github.com/Chatie/wechaty/pull/449),[\#396](https://github.com/Chatie/wechaty/pull/396),[\#351](https://github.com/Chatie/wechaty/pull/351),[\#317](https://github.com/Chatie/wechaty/pull/317),[\#316](https://github.com/Chatie/wechaty/pull/316),[\#315](https://github.com/Chatie/wechaty/pull/315),[\#314](https://github.com/Chatie/wechaty/pull/314),[\#313](https://github.com/Chatie/wechaty/pull/313),[\#312](https://github.com/Chatie/wechaty/pull/312),[\#311](https://github.com/Chatie/wechaty/pull/311)
 1. @[mukaiu](https://github.com/mukaiu): [\#337](https://github.com/Chatie/wechaty/pull/337),[\#470](https://github.com/Chatie/wechaty/pull/470),[\#438](https://github.com/Chatie/wechaty/pull/438),[\#421](https://github.com/Chatie/wechaty/pull/421),[\#420](https://github.com/Chatie/wechaty/pull/420),[\#415](https://github.com/Chatie/wechaty/pull/415),[\#376](https://github.com/Chatie/wechaty/pull/376)
 1. @[binsee](https://github.com/binsee): [\#844](https://github.com/Chatie/wechaty/pull/844),[\#811](https://github.com/Chatie/wechaty/pull/811),[\#771](https://github.com/Chatie/wechaty/pull/771),[\#744](https://github.com/Chatie/wechaty/pull/744),[\#727](https://github.com/Chatie/wechaty/pull/727),[\#714](https://github.com/Chatie/wechaty/pull/714)
 1. @[xinbenlv](https://github.com/xinbenlv): [\#388](https://github.com/Chatie/wechaty/pull/388),[\#361](https://github.com/Chatie/wechaty/pull/361),[\#280](https://github.com/Chatie/wechaty/pull/280)
@@ -120,6 +123,5 @@ Thank you all contributors, Wechaty could not release version 0.9 without your h
 1. @[imerse](https://github.com/imerse): [\#578](https://github.com/Chatie/wechaty/pull/578)
 1. @[ax4](https://github.com/ax4): [\#380](https://github.com/Chatie/wechaty/pull/380)
 1. @[Gcaufy](https://github.com/Gcaufy): [\#310](https://github.com/Chatie/wechaty/pull/310)
-
 
 [wechaty-release-0.9.0]: /assets/2017/huan-wechaty-new-version-0.9.0.png

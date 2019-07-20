@@ -4,7 +4,7 @@ author: huan
 date: '2018-08-14 8:14:52 +0800'
 ---
 
-> Author: [Huan LI](https://github.com/zixia), A Docker Fan
+> Author: [Huan LI](https://github.com/huan), A Docker Fan
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/zixia/wechaty.svg?maxAge=2592000)](https://hub.docker.com/r/zixia/wechaty/)
 [![Docker Stars](https://img.shields.io/docker/stars/zixia/wechaty.svg?maxAge=2592000)](https://hub.docker.com/r/zixia/wechaty/)

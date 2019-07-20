@@ -4,7 +4,7 @@ author: huan
 date: '2018-04-23 18:14:52 +0800'
 ---
 
-> Author: [Huan LI](https://github.com/zixia), Half machine half human boy.
+> Author: [Huan LI](https://github.com/huan), Half machine half human boy.
 
 ![blessed twins bot](/assets/2018/blessed-twins-bot.png)
 
@@ -107,7 +107,7 @@ By this technic, the code is very clean, the `instanceof` work as expected, ever
 
 ## MODULIZE
 
-After all the work, I modulized this part of the code as my new npm module: `clone-class` at <https://github.com/zixia/node-clone-class>, with automatic unit tests and deploy to NPM by CI/CD.
+After all the work, I modulized this part of the code as my new npm module: `clone-class` at <https://github.com/huan/node-clone-class>, with automatic unit tests and deploy to NPM by CI/CD.
 
 ![Hello Mr. Anderson](/assets/2018/agent-smith-clone-anderson.jpg)
 

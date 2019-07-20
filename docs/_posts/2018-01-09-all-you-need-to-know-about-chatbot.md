@@ -1,9 +1,12 @@
 ---
- 
- title: "关于聊天机器人你需要知道的东西"
- date: 2018-01-19 04:31 +1100
- author: Wang Yan
-
+title: "关于聊天机器人你需要知道的东西"
+date: 2018-01-19 04:31 +1100
+author: Wang Yan
+categories: event
+tags:
+  - datagirls
+header:
+  teaser: /assets/2018/techiefestival-25.jpeg
 ---
 > Author: [@Yan Wang](https://github.com/bukaqiaqia) 现就读于悉尼大学商业数据分析 ,是Datagirls社区志愿者助教，两年数据分析师工作经历，拥有丰富的社科数据分析项目经验。
 
@@ -28,7 +31,6 @@
 
 好吧，女孩子是要神秘一点才美丽。那么看淡一切，不拘小节的知名佛系青年——龙泉寺的贤二总不会不告诉我吧。
 ![5](/assets/2018/techiefestival-5.jpeg)
-
 
 ## 聊天机器人的历史
 
@@ -152,20 +154,20 @@ SmarterChild是其中最受欢迎的。开发于2000年，00后的它，现在�
 
 现在,你很难想象一个没有Siri和其他语音助手的世界，但几年前，与你的电话交谈告诉它该做什么的想法似乎很荒谬。聊天机器人可以安排会议，告诉你天气，并提供各种支持。而这仅仅是一个开始。可以预想的是，聊天机器人在未来一定会融入生活方方面面，创造更多的惊喜。
 
-
-
 参考文献：
+
 1. How chatbots could change customer service over the next 5 years
 2. Customer service and virtual assistant bots will be prevalent for online businesses in many markets
 3. Conversational Interfaces: The Future of Chatbots
 4. Burberry, Victoria’s Secret, Tommy Hilfiger: how major fashion retailers experiment with chatbots
 5. 11000个聊天机器人齐犯尴尬癌:用户对其爱不起来
 
-
 想知道更多关于聊天机器人的轶事吗？想学习如何制作聊天机器人吗？快来参加2018女生科技体验节！
 新的一年给自己一个成长的机会。1.14我们在北京等着你！
 
 ![techiefestival-25](/assets/2018/techiefestival-25.jpeg)
 [点我查看活动详情及报名](http://www.huodongxing.com/go/techiefestival2018)
+
 ### 关于DataGirls
+
 DataGirls是一个专注中国女性的有趣有料的数据分析学习社区，旨在成就更多女性成为数据驱动思考者，运用数据化决策帮助她们实现事业，家庭和个人的高度平衡，收获独立，自由和幸福的人生。关注微信公众号 “DataGirls”了解更多。

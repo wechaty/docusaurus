@@ -4,7 +4,7 @@ author: huan
 date: '2018-07-12 18:14:52 +0800'
 ---
 
-> Author: [Huan LI](https://github.com/zixia), Machine Learning Ph.D.
+> Author: [Huan LI](https://github.com/huan), Machine Learning Ph.D.
 
 ![reduce weight](/assets/2018/huan-reduce-weight.jpg)
 

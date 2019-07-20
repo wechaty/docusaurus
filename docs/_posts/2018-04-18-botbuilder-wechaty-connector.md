@@ -2,16 +2,20 @@
 title: "Integrate Wechat Personal Account to Microsoft BotFramework with a BotBuilder Wechaty Connector"
 author: huan
 date: '2018-04-18 02:14:52 +0800'
-excerpt_separator: <!--more-->
+categories: npm
+tags:
+  - botbuilder
+header:
+  teaser: /assets/2018/botframework.jpg
 ---
 
-> Author: [Huan LI](https://github.com/zixia), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003061) & [RD](https://rd.microsoft.com/en-us/huan-li), Author of `wechaty`.
+> Author: [Huan LI](https://github.com/huan), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003061) & [RD](https://rd.microsoft.com/en-us/huan-li), Author of `wechaty`.
 
 ![BotFramework](/assets/2018/botframework.jpg)
 
 [Microsoft BotFramework](https://dev.botframework.com/) is a robust platform that supports almost all kinds of the instance messengers like Facebook messenger, Skype, Slack, and backed by the powerful Cognitive Services like LUIS.ai, QnAMaker.ai, Azure Machine Learning. BotBuilder is a powerful SDK provides all we need when we are developing a ChatBot. I started learning them about 18 months ago, and I love them very much.
 
-However, it does not support Wechat **Individual** Account, so I decided to make some fun on it: connect Wechat PERSONAL Account to the BotBuilder by creating a new Connector: [botbuilder-wechaty-connector](https://github.com/zixia/botbuilder-wechaty-connector).
+However, it does not support Wechat **Individual** Account, so I decided to make some fun on it: connect Wechat PERSONAL Account to the BotBuilder by creating a new Connector: [botbuilder-wechaty-connector](https://github.com/huan/botbuilder-wechaty-connector).
 
 <!--more-->
 
@@ -76,8 +80,8 @@ Hope you will like it and could make fun of it too, cheers!
 
 ### See Also
 
-* GitHub: https://github.com/zixia/botbuilder-wechaty-connector
-* NPM: https://www.npmjs.com/package/botbuilder-wechaty-connector
-* [Create a bot with the Bot Builder SDK for Node.js](https://docs.microsoft.com/en-us/azure/bot-service/nodejs/bot-builder-nodejs-quickstart)
-* [Key concepts in the Bot Builder SDK for Node.js](https://docs.microsoft.com/en-us/azure/bot-service/nodejs/bot-builder-nodejs-concepts)
-* [VIDEO: Become a Bot Builder with Microsoft Bot Framework - James Mann speaking at dotnetsheff in April, 2017](https://pusher.com/sessions/meetup/dotnetsheff/become-a-bot-builder-with-microsoft-bot-framework)
+- GitHub: <https://github.com/huan/botbuilder-wechaty-connector>
+- NPM: <https://www.npmjs.com/package/botbuilder-wechaty-connector>
+- [Create a bot with the Bot Builder SDK for Node.js](https://docs.microsoft.com/en-us/azure/bot-service/nodejs/bot-builder-nodejs-quickstart)
+- [Key concepts in the Bot Builder SDK for Node.js](https://docs.microsoft.com/en-us/azure/bot-service/nodejs/bot-builder-nodejs-concepts)
+- [VIDEO: Become a Bot Builder with Microsoft Bot Framework - James Mann speaking at dotnetsheff in April, 2017](https://pusher.com/sessions/meetup/dotnetsheff/become-a-bot-builder-with-microsoft-bot-framework)
