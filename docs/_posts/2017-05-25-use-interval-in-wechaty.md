@@ -1,6 +1,6 @@
 ---
 title: "How to use interval in Wechaty to overcome some web-wechat API limitations"
-author: Seabook
+author: kungfu-software
 date: '2017-05-25 19:31:53'
 categories: hack
 tags:
