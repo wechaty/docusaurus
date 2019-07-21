@@ -8,7 +8,7 @@ tags:
   - saas
 ---
 
-> Author: [qhduna](https://github.com/qhduan/), A Deamer.
+> Author: [qhduan](https://github.com/qhduan/), A Deamer.
 
 [代码](https://github.com/deepdialog/Wechaty-as-a-service)
 
