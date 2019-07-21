@@ -49,7 +49,7 @@ header:
 
 在2018年在哈尔滨召开的SMP第二届中文人机对话技术评测中，清华凭借着人机对话领域卓越的技术实力，领导句子互动参赛团队得到了行业专家评委的一致认同和推荐，荣获本次SMP任务型人机对话[回复自然度第1名，在线评测第4名](https://zhuanlan.zhihu.com/p/43419905)的好成绩。
 
-#### 1.1 《从Rasa开始谈对话机器人开发》PPT
+#### Slides
 
 <div class="zoom-container" style="
     position: relative;
@@ -75,7 +75,7 @@ header:
   ></iframe>
 </div>
 
-#### 1.2 《从Rasa开始谈对话机器人开发》现场视频
+#### Video
 
 <div class="zoom-container" style="
     position: relative;
