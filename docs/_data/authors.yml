@@ -110,3 +110,12 @@ tingyinhelen:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/tingyinhelen"
+
+kungfu-software:
+  name        : "Seabook"
+  bio         : "Founder of [Kungfu Software](http://kungfusoftware.net)"
+  avatar      : "https://avatars1.githubusercontent.com/u/700550?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/kungfu-software"
