@@ -2,9 +2,10 @@
 title: "How to use interval in Wechaty to overcome some web-wechat API limitations"
 author: Seabook
 date: '2017-05-25 19:31:53'
-categories: tutorial
+categories: hack
 tags:
   - code
+  - api
 ---
 
 <img src="https://avatars2.githubusercontent.com/u/700550?v=3&s=88">
