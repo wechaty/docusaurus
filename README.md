@@ -50,7 +50,7 @@ Add `<!--more-->` section for your abstract part, it will show on the blog homep
 
 Please do not commit unrelated files.
 
-### 5. Add Vedios
+### 5. Add Videos
 
 Example
 
