@@ -64,17 +64,6 @@ NLP技术到底哪家强？
   - Wechaty面临的挑战和机会
   - BotHub之畅想
 
-### 2 主题分享：《脸盲助手-基于微信社交的Chatbot人脸识别应用探索》
-
-邝伟鹏 [@creatorkuang](https://github.com/creatorkuang) 积致科技创始人CEO，巴黎笛卡尔大学硕士。全栈工程师，曾任智能客服Udesk交互架构师，并独立完成类Google doc的实时文档编辑应用以及可视化拖拽开发App应用平台开发宝。积致科技致力于基于微信社交生态，以 Chatbot 的交互方式为用户提供人脸识别应用（FindMyFace及脸盲助手）。已获PreAngel种子投资。
-
-#### 内容大纲
-
-- 用户场景  
-- Chatbot解决方案  
-- 未来可能性探索  
-- 产品Demo  
-
 #### Slides - The Bad Part of My Chatbot Experience
 
 <div class="zoom-container" style="
@@ -100,6 +89,17 @@ NLP技术到底哪家强？
     "
   ></iframe>
 </div>
+
+### 2 主题分享：《脸盲助手-基于微信社交的Chatbot人脸识别应用探索》
+
+邝伟鹏 [@creatorkuang](https://github.com/creatorkuang) 积致科技创始人CEO，巴黎笛卡尔大学硕士。全栈工程师，曾任智能客服Udesk交互架构师，并独立完成类Google doc的实时文档编辑应用以及可视化拖拽开发App应用平台开发宝。积致科技致力于基于微信社交生态，以 Chatbot 的交互方式为用户提供人脸识别应用（FindMyFace及脸盲助手）。已获PreAngel种子投资。
+
+#### 内容大纲
+
+- 用户场景  
+- Chatbot解决方案  
+- 未来可能性探索  
+- 产品Demo  
 
 #### Slides - 脸盲助手-基于微信社交的Chatbot人脸识别应用探索
 
@@ -127,7 +127,7 @@ NLP技术到底哪家强？
   ></iframe>
 </div>
 
-#### Video
+### 3 视频回顾
 
 <div class="zoom-container" style="
     position: relative;
