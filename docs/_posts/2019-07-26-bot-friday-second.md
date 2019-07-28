@@ -40,11 +40,13 @@ header:
 
 ## 活动内容
 
-### 1 主题分享：《The Bad Part of My Chatbot Experience》
+### 1 Chatbot 分享：
+
+#### 1.1《The Bad Part of My Chatbot Experience》
 
 李明 [@limingth](https://github.com/limingth) 毛豆网创始人CEO，清华大学计算机硕士。曾与2003年创立嵌入式操作系统培训公司亚嵌科技。毛豆网致力于为内容创业者提供技术支持服务，关注Chatbot和微信小程序的结合与互动，并在微信群中基于NLP技术为用户提供流畅体验。已获清华XLab/DNA基金数百万天使投资；
 
-#### 内容大纲：
+##### 内容大纲：
 
 NLP技术到底哪家强？
 
@@ -64,7 +66,7 @@ NLP技术到底哪家强？
   - Wechaty面临的挑战和机会
   - BotHub之畅想
 
-#### Slides - The Bad Part of My Chatbot Experience
+##### Slides - The Bad Part of My Chatbot Experience
 
 <div class="zoom-container" style="
     position: relative;
@@ -90,18 +92,18 @@ NLP技术到底哪家强？
   ></iframe>
 </div>
 
-### 2 主题分享：《脸盲助手-基于微信社交的Chatbot人脸识别应用探索》
+#### 1.2 主题分享：《脸盲助手-基于微信社交的Chatbot人脸识别应用探索》
 
 邝伟鹏 [@creatorkuang](https://github.com/creatorkuang) 积致科技创始人CEO，巴黎笛卡尔大学硕士。全栈工程师，曾任智能客服Udesk交互架构师，并独立完成类Google doc的实时文档编辑应用以及可视化拖拽开发App应用平台开发宝。积致科技致力于基于微信社交生态，以 Chatbot 的交互方式为用户提供人脸识别应用（FindMyFace及脸盲助手）。已获PreAngel种子投资。
 
-#### 内容大纲
+##### 内容大纲
 
 - 用户场景  
 - Chatbot解决方案  
 - 未来可能性探索  
 - 产品Demo  
 
-#### Slides - 脸盲助手-基于微信社交的Chatbot人脸识别应用探索
+##### Slides - 脸盲助手-基于微信社交的Chatbot人脸识别应用探索
 
 <div class="zoom-container" style="
     position: relative;
@@ -127,7 +129,7 @@ NLP技术到底哪家强？
   ></iframe>
 </div>
 
-### 3 视频回顾
+#### 1.3 分享视频回顾
 
 <div class="zoom-container" style="
     position: relative;
