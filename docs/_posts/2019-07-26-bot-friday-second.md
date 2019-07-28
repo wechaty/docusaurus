@@ -68,12 +68,12 @@ NLP技术到底哪家强？
 
 邝伟鹏 [@creatorkuang](https://github.com/creatorkuang) 积致科技创始人CEO，巴黎笛卡尔大学硕士。全栈工程师，曾任智能客服Udesk交互架构师，并独立完成类Google doc的实时文档编辑应用以及可视化拖拽开发App应用平台开发宝。积致科技致力于基于微信社交生态，以 Chatbot 的交互方式为用户提供人脸识别应用（FindMyFace及脸盲助手）。已获PreAngel种子投资。
 
-#### 内容大纲：
+#### 内容大纲
 
-- 用户场景 
-- Chatbot解决方案 
-- 未来可能性探索 
-- 产品Demo 
+- 用户场景  
+- Chatbot解决方案  
+- 未来可能性探索  
+- 产品Demo  
 
 #### Slides - The Bad Part of My Chatbot Experience
 
@@ -182,14 +182,14 @@ NLP技术到底哪家强？
 
 ### 3 Bot Friday 决议
 
-1. 巨头主席 
+1. 巨头主席  
 Bot Friday 推选了首席巨头主席为会员提供巨头Chatbot 平台的行业指导，首席巨头主席为期1年，恭喜Bot Friday的首席巨头主席: 刘晓倩。
-1. 俱乐部名称 
+1. 俱乐部名称  
 在活动现场，11个人中10个人赞成每周五举办Chatbot活动，因此俱乐部名称暂定为：Bot Friday Club，简称 BFC。
-1. 轮值主席制度 
-- 每次活动后按照先自愿 + 主席指定原则，选出下次活动的轮值副主席。 
-- 本次活动的轮值副主席自动成为下次活动的轮值主席。 
-1. 会员制度
+1. 轮值主席制度  
+    1. 每次活动后按照先自愿 + 主席指定原则，选出下次活动的轮值副主席。
+    1. 本次活动的轮值副主席自动成为下次活动的轮值主席。
+1. 会员制度  
 Bot Friday 会员制度：只有在沙龙上分享过的人才能成为会员。参加沙龙活动的每一个人，原则上都必须发言。
 
 ### 4 下次活动信息
@@ -197,9 +197,9 @@ Bot Friday 会员制度：只有在沙龙上分享过的人才能成为会员。
 1. 下次活动时间：8月2日（周五） 18:30 - 20:30
     1. 18:30 - 19:00 (30 MIN): Registration & Social & Pizza
     1. 19:00 - 19:10 (10 MIN): Warm Up
-    1. 19:10 - 19:40 (30 MIN): Talk 1 
+    1. 19:10 - 19:40 (30 MIN): Talk 1
     1. 19:40 - 19:50 (10 MIN): Tea Break
-    1. 19:50 - 20:20 (30 MIN): Talk 2 
+    1. 19:50 - 20:20 (30 MIN): Talk 2
     1. 20:20 - 20:30 (10 MIN): Reflection & Group Photo
 1. 下次活动轮值主席：李卓桓
 1. 下次活动轮值副主席：李明
@@ -213,7 +213,7 @@ Bot Friday 会员制度：只有在沙龙上分享过的人才能成为会员。
 
 1. 李明/俊良/Simon：Wechaty Mini Program Support
 1. 李明/俊良/Simon/云军：What will happen after Chatbot empowered by Mini Program?
-1. 俊良：如何用if else 和正则表达式写一个聊天机器人    
+1. 俊良：如何用if else 和正则表达式写一个聊天机器人。
 1. 邝伟鹏：Chatbot 场景分享：秒印，驾校沟通的工具。
 1. 李卓桓：Bot Market Place --- 可重用能力平台。
 1. 肖立鹏：udesk 场景分享 （待定）
