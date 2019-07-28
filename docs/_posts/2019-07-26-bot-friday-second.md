@@ -182,8 +182,8 @@ NLP技术到底哪家强？
 
 ### 3 Bot Friday 决议
 
-1. 巨头主席  
-Bot Friday 推选了首席巨头主席为会员提供巨头Chatbot 平台的行业指导，首席巨头主席为期1年，恭喜Bot Friday的首席巨头主席: 刘晓倩。
+1. 平台主席  
+Bot Friday 推选了首位平台主席为会员提供巨头 Chatbot 平台的行业指导，平台主席为期1年，恭喜Bot Friday的首位平台主席: 刘晓倩。
 1. 俱乐部名称  
 在活动现场，11个人中10个人赞成每周五举办Chatbot活动，因此俱乐部名称暂定为：Bot Friday Club，简称 BFC。
 1. 轮值主席制度  
@@ -214,7 +214,7 @@ Bot Friday 会员制度：只有在沙龙上分享过的人才能成为会员。
 1. 李明/俊良/Simon：Wechaty Mini Program Support
 1. 李明/俊良/Simon/云军：What will happen after Chatbot empowered by Mini Program?
 1. 俊良：如何用if else 和正则表达式写一个聊天机器人。
-1. 邝伟鹏：Chatbot 场景分享：秒印，驾校沟通的工具。
+1. 邝伟鹏：Chatbot 场景分享：秒印，家校沟通的工具。
 1. 李卓桓：Bot Market Place --- 可重用能力平台。
 1. 肖立鹏：udesk 场景分享 （待定）
 1. 刘晓倩：Chatbot 行业应用，智能对话连接数据与商业
@@ -241,7 +241,7 @@ Bot Friday 会员制度：只有在沙龙上分享过的人才能成为会员。
 1. 场地赞助方：腾讯公司
 1. 晚餐赞助方：Tencent Bot Platform产品团队
 1. 直播赞助方：毛豆教育公司
-1. 活动承办方：句子互动公司
+1. 活动主办方：句子互动公司
 
 ## RSVP
 
