@@ -1,6 +1,6 @@
 ---
 title: Bot Friday 第二弹
-author: Li Jiarui
+author: lijiarui
 date: 2019-07-26 19:00 +0800
 categories: event
 tags:
