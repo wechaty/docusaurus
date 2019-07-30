@@ -1,6 +1,6 @@
 ---
 title: Bot Friday 第二弹
-author: Li Jiarui
+author: lijiarui
 date: 2019-07-26 19:00 +0800
 categories: event
 tags:
@@ -8,10 +8,10 @@ tags:
   - talk
   - meetup
 header:
-  teaser: /assets/2019/bot5-seminar-2/group-photo.jpg
+  teaser: /assets/2019/bot5-seminar-2/group-photo.png
 ---
 
-<< 本次活动通知: [腾讯+句子互动第二弹|Chatbot Friday](https://mp.weixin.qq.com/s/fbY9BVLIqhy6Uwls0g4fRQ) <<
+<< 本次活动通知: [腾讯+句子互动第二弹，Chatbot Friday](https://mp.weixin.qq.com/s/fbY9BVLIqhy6Uwls0g4fRQ) <<
 
 ## Bot Friday Second - 沙龙第二弹
 
@@ -19,7 +19,7 @@ header:
 - 地点：腾讯公司北京办公室，理想国际大厦17层
 - 赞助方：腾讯公司
 
-## 首期沙龙创始会员
+## 第二期沙龙参与成员
 
 - 分享嘉宾
   - 李明，毛豆网创始人CEO，清华大学计算机硕士。曾于2003年创立嵌入式操作系统培训公司亚嵌科技。毛豆网致力于为内容创业者提供技术支持服务，关注Chatbot和微信小程序的结合与互动，并在微信群中基于NLP技术为用户提供流畅体验。已获清华XLab/DNA基金数百万天使投资。
@@ -38,15 +38,15 @@ header:
   - 赵俊良，毛豆网客服总监，北京交通大学硕士，曾任北京联合大学信息学院讲师，拥有十余年嵌入式系统研发经历和智能仪器测控领域的创业经历；
   - 李卓桓，Github 6000 Star 的微信个人号SDK开源项目 Wechaty 作者，Conversational AI 布道者。曾任水木清华BBS站长，优酷网首席科学家。清华本科，中欧EMBA，北邮博士在读。
 
-## 活动内容
+## 主题分享
 
-### 1 Chatbot 分享：
+### 1. Talk 1 - The Bad Part of My Chatbot Experience
 
-#### 1.1《The Bad Part of My Chatbot Experience》
+#### 1.1 分享嘉宾
 
 李明 [@limingth](https://github.com/limingth) 毛豆网创始人CEO，清华大学计算机硕士。曾与2003年创立嵌入式操作系统培训公司亚嵌科技。毛豆网致力于为内容创业者提供技术支持服务，关注Chatbot和微信小程序的结合与互动，并在微信群中基于NLP技术为用户提供流畅体验。已获清华XLab/DNA基金数百万天使投资；
 
-##### 内容大纲：
+#### 1.2 内容大纲
 
 NLP技术到底哪家强？
 
@@ -66,7 +66,7 @@ NLP技术到底哪家强？
   - Wechaty面临的挑战和机会
   - BotHub之畅想
 
-##### Slides - The Bad Part of My Chatbot Experience
+#### 1.3 Slides
 
 <div class="zoom-container" style="
     position: relative;
@@ -92,18 +92,20 @@ NLP技术到底哪家强？
   ></iframe>
 </div>
 
-#### 1.2 主题分享：《脸盲助手-基于微信社交的Chatbot人脸识别应用探索》
+### 2. Talk2 - 脸盲助手-基于微信社交的Chatbot人脸识别应用探索
+
+#### 2.1 分享嘉宾
 
 邝伟鹏 [@creatorkuang](https://github.com/creatorkuang) 积致科技创始人CEO，巴黎笛卡尔大学硕士。全栈工程师，曾任智能客服Udesk交互架构师，并独立完成类Google doc的实时文档编辑应用以及可视化拖拽开发App应用平台开发宝。积致科技致力于基于微信社交生态，以 Chatbot 的交互方式为用户提供人脸识别应用（FindMyFace及脸盲助手）。已获PreAngel种子投资。
 
-##### 内容大纲
+#### 2.2 内容大纲
 
 - 用户场景  
 - Chatbot解决方案  
 - 未来可能性探索  
 - 产品Demo  
 
-##### Slides - 脸盲助手-基于微信社交的Chatbot人脸识别应用探索
+#### 2.3 Slides
 
 <div class="zoom-container" style="
     position: relative;
@@ -129,7 +131,7 @@ NLP技术到底哪家强？
   ></iframe>
 </div>
 
-#### 1.3 分享视频回顾
+### 3. 分享视频回顾
 
 <div class="zoom-container" style="
     position: relative;
@@ -159,7 +161,7 @@ NLP技术到底哪家强？
 
 > 感谢[毛豆网](https://maodou.io)提供[价值4000元](https://maodou.io/pricing)的本次活动[视频直播](https://live.maodou.io/course/yCt9NCNBdBe52uiT5)赞助！
 
-### 2 吐槽大会
+## 吐槽大会
 
 1. 李卓桓
     1. 活动应该守时，时间一到，不等任何人立即开始，优先满足活动现场人的用户体验。
@@ -182,7 +184,7 @@ NLP技术到底哪家强？
 1. 俊良
     1. 脑洞了一个“吐槽机器人”。
 
-### 3 Bot Friday 决议
+## Bot Friday 决议
 
 1. 平台主席  
 Bot Friday 推选了首位平台主席为会员提供巨头 Chatbot 平台的行业指导，平台主席为期1年，恭喜Bot Friday的首位平台主席: 刘晓倩。
@@ -194,7 +196,7 @@ Bot Friday 推选了首位平台主席为会员提供巨头 Chatbot 平台的行
 1. 会员制度  
 Bot Friday 会员制度：只有在沙龙上分享过的人才能成为会员。参加沙龙活动的每一个人，原则上都必须发言。
 
-### 4 下次活动信息
+## 4 下次活动信息
 
 1. 下次活动时间：8月2日（周五） 18:30 - 20:30
     1. 18:30 - 19:00 (30 MIN): Registration & Social & Pizza
@@ -209,7 +211,7 @@ Bot Friday 会员制度：只有在沙龙上分享过的人才能成为会员。
     1. 王天 《Tencent Bot Platform Product Talk》
     1. 李云军《Chatbot在团队任务管理中的应用》
 
-### 5 未来分享议题
+## 5 未来分享议题
 
 欢迎大家踊跃报名！
 
@@ -225,7 +227,7 @@ Bot Friday 会员制度：只有在沙龙上分享过的人才能成为会员。
 1. 雷飚：AI + AR + Chatbot = ？
 1. 段清华：打造一个超越 rasa 的chatbot平台 —— deepdialogue.ai
 
-### 6 集体合影
+## 6 集体合影
 
 ![合照]({{ '/assets/2019/bot5-seminar-2/group-photo.png' | relative_url }})
 ![所有人]({{ '/assets/2019/bot5-seminar-2/people.png' | relative_url }})
