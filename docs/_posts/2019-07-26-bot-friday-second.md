@@ -196,7 +196,7 @@ Bot Friday 推选了首位平台主席为会员提供巨头 Chatbot 平台的行
 1. 会员制度  
 Bot Friday 会员制度：只有在沙龙上分享过的人才能成为会员。参加沙龙活动的每一个人，原则上都必须发言。
 
-## 4 下次活动信息
+## 下次活动信息
 
 1. 下次活动时间：8月2日（周五） 18:30 - 20:30
     1. 18:30 - 19:00 (30 MIN): Registration & Social & Pizza
@@ -211,7 +211,7 @@ Bot Friday 会员制度：只有在沙龙上分享过的人才能成为会员。
     1. 王天 《Tencent Bot Platform Product Talk》
     1. 李云军《Chatbot在团队任务管理中的应用》
 
-## 5 未来分享议题
+## 未来分享议题
 
 欢迎大家踊跃报名！
 
@@ -227,9 +227,10 @@ Bot Friday 会员制度：只有在沙龙上分享过的人才能成为会员。
 1. 雷飚：AI + AR + Chatbot = ？
 1. 段清华：打造一个超越 rasa 的chatbot平台 —— deepdialogue.ai
 
-## 6 集体合影
+## 集体合影
 
 ![合照]({{ '/assets/2019/bot5-seminar-2/group-photo.png' | relative_url }})
+
 ![所有人]({{ '/assets/2019/bot5-seminar-2/people.png' | relative_url }})
 
 ## After Party 🍻
