@@ -1,6 +1,6 @@
 ---
 title: 脸盲助手 基于微信社交的Chatbot人脸识别应用探索
-author: weipeng kuang
+author: weipengkuang
 date: 2019-07-30 00:55 +0800
 categories: event
 tags:
