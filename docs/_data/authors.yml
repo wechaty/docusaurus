@@ -1,8 +1,8 @@
  # /_data/authors.yml
 
 huan:
-  name        : "Huan LI (李卓桓)"
-  bio         : "Microsoft AI MVP, Google ML GDE, Open Source Envangelist, Conversational AI Coder with 💖"
+  name        : "Huan (李卓桓)"
+  bio         : "Author of Wechaty. Microsoft AI MVP, Google ML GDE, Open Source Envangelist, Conversational AI Coder with 💖"
   avatar      : "https://avatars1.githubusercontent.com/u/1361891?s=460&v=4"
   links:
     - label: "GitHub"
