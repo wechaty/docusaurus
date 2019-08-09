@@ -24,6 +24,8 @@ github_username: chatie
 minimal_mistakes_skin: default
 search: true
 teaser: /assets/images/bio-photo.png
+breadcrumbs: true # true, false (default)
+words_per_minute: 200
 repository: "chatie/blog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 
 # Build settings
