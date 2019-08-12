@@ -9,8 +9,8 @@ tags:
 
 ---
 
-> 作者: [@jijiechen](https://github.com/jijiechen) dotnet club 技术社区负责人(https://dotnetclub.net)
-> 
+> 作者: [@jijiechen](https://github.com/jijiechen) [dotnet club](https://dotnetclub.net) 技术社区负责人。
+>  
 > [原文地址](https://blog.jijiechen.com/post/dotnet-club-use-wechaty-to-useful-wechat-chat-history/)
 
 ## 缘起
@@ -21,7 +21,7 @@ tags:
 
 幸而在互联网高度发达、信息传播充分高效的今天，通常当我们在技术上遇到问题时，不再需要花费数年之久来参悟。一般来说，现实压力也通常不会允许要花这么久，不然我们连 [996 的福报](https://github.com/996icu/996.ICU)也没有资格享受了。所以，人们通常从搜索引擎上查找已经遇到过类似问题的人所发布的讨论和分享，从开源网站上参考其他人的示例方法，大部分的问题也就能够快速得到解答了。另一方面说，这几乎足以说明不少技术人员的工作内容都是相同、至少是类似的。
 
-![Copying and Pasting from Stack Overflow](/assets/2019/dotnetclub-chaty/copy-paste-from-so.jpg) 
+![Copying and Pasting from Stack Overflow](/assets/2019/dotnetclub-chaty/copy-paste-from-so.jpg)
 
 如果在搜索引擎上找不到现成的分享，这时就要考虑以某种其他方式来获得解答了。比如，去一些问答网站上发贴求救，或者去一些在线群聊里讨论。一般来说，如果说的不够清楚，就会被管理员一顿批评，大意是“哪里来的菜鸟，问题都不会提！”，或者“扯那么多废话干嘛，先上代码！”如果确实是遇到了群组和社区大佬亲临指点，我们基本上就愉快地忍了，然后速速地按照指点把代码呈上一份、听候进一步的指点。
 
@@ -89,8 +89,3 @@ WeChaty 是由[句子互动](https://www.juzi.bot/)发布的开源微信 SDK，�
 作为例子，可以来看看导入后的最终效果：[https://dotnetclub.net/topics/61](https://dotnetclub.net/topics/61)
 
 综合来看，基于 WeChaty 实现的 club-chaty 提供的这项功能十分实用，能对具备收藏价值和传播价值的对话内容进行导出、再发布和持久利用，以便解决文章开头的困惑。另一方面，如果某位大牛的发言广为传播，使很多人受益，那么他难道不应该因此收到应有的肯定和赞赏吗？由于 club-chaty 导出的数据中包含原始的发言人账号信息，因此只要使用单向哈希等方式，便可以在保护隐私的同时还能够保留必要的信息以便支持进一步的互动。
-
-
-
-
-
