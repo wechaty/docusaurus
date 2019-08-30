@@ -8,7 +8,7 @@
 1. Create your blog branch (git checkout -b your-blog)
 1. Write your blog in markdown
 1. Add your blog to `_post` folder
-1. Add related image to `download` folder
+1. Add related image to `assets` folder
 1. Commit your changes (git commit -am 'added a blog')
 1. Push to the branch
 1. Create new Pull Request
@@ -38,7 +38,7 @@ Example as follows:
 
 * Keep all filenames & url as lowercase, and use `-` to connect words instead of space. e.g. `2017-10-06-wechat-pc-impactor` instead of `2017-10-06-WeChat PC Impactor`
 * Find a good image for the blog to make it more beautiful.
-* Embed the photo & video before publishing, save all external file to the blog `/download/2018` directory.
+* Embed the photo & video before publishing, save all external file to the blog `/assets/2018` directory.
 
 see more: [Do not include Date in URL](https://github.com/Chatie/blog/issues/79)
 
