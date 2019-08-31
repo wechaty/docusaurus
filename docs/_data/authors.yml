@@ -119,3 +119,18 @@ kungfu-software:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kungfu-software"
+
+kis87988:
+  name        : "William Chen"
+  bio         : "Full stack developer, De Anza WIKI Student groups manager, for(;;)love(people,sleep,eat,code)"
+  avatar      : "https://avatars3.githubusercontent.com/u/25014776?s=80"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/kis87988"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://facebook.com/kis87988"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:william@williamusa.me"
