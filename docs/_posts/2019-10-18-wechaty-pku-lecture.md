@@ -69,10 +69,8 @@ Wechaty的开源社区，同样遵循了众多开源社区的组织形式，包�
 
 * [如何用 padpro 发送微信小程序](https://blog.chatie.io/send-miniprogram-using-padpro/)
 
-
 ## 致谢
 
 * **[lijiarui](https://github.com/lijiarui)** 的PPT。这次讲座所用的ppt，绝大部分来自于李佳芮的贡献。如果不是那么精美的Slides已经完美总结了项目的方方面面，我很难有勇气走上讲台去做这个lecture。
 
 * 感谢北大张齐勋老师提供这么好的一个机会，能够让我们给新一代的大学生研究生来介绍来自开源社区的最新进展。会后有100多位同学加入了Wechaty-北大开源技术交流群，这一批新鲜血液相信会让Wechaty项目焕发出新的生机！
-
