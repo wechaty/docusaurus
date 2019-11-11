@@ -30,16 +30,19 @@ header:
 下面，我来重点介绍一下在讲座分享中比较有亮点的几张PPT。
 
 ## Wechaty整体架构
+
 Wechaty是一个典型的三层架构，最上层提供接口，中间层进行抽象，最下层对接各种不同的实现，这和Linux的系统调用层，fs文件系统层，driver层的逻辑和理念很接近，这样对上层的应用可以尽量保持接口一致和稳定性，便于构建各种chatbot实现；对下层可以接入不同的微信通信协议，例如puppeteer对应微信web协议，padpro对应微信pad协议。
 
 ![Wechaty整体架构]({{ '/assets/2019/wechaty-pku-lecture/wechaty-arch.jpeg' | relative_url }})
 
 ## Wechaty开源社区治理
+
 Wechaty的开源社区，同样遵循了众多开源社区的组织形式，包括了PMC（社区管理团队），CDG（社区开发者群体），OC（组织者委员会）。其中人数最多的是开发者群体，按照对项目的贡献程度和话语权，从高到低分为了4个等级：维护者Maintainer，代码提交者Commiter，代码贡献者Contributor，社区成员Community Member。大部分参与项目贡献代码的开发者，都是通过fork-pr-merge的流程来对项目作出自己的贡献。
 
 ![Wechaty社区架构]({{ '/assets/2019/wechaty-pku-lecture/wechaty-community.jpeg' | relative_url }})。
 
 ## Wechaty社区生态治理
+
 社区不是只有线上的代码提交，还包括每周五的Bot Friday线下活动。每次活动的人数大概在10-20左右，小规模的参会人数确保了大部分的人都能有发言和输出的机会，这也体现了社区管理者更重视质量而不是数量的治理理念。
 
 ![Wechaty Bot Friday]({{ '/assets/2019/wechaty-pku-lecture/wechaty-bot-friday.jpeg' | relative_url }})。
@@ -59,16 +62,17 @@ Wechaty的开源社区，同样遵循了众多开源社区的组织形式，包�
 这个项目的代码，目前就在 [Wechaty Examples](https://github.com/wechaty/wechaty-getting-started/tree/master/examples/third-party/maodou) 里面，如果对此有兴趣也欢迎和我联系。（加我微信号 limingth）
 
 推荐阅读和这个项目有关的三篇博客：
-* 实现支持微信小程序的聊天机器人  
-https://www.bot5.club/talks/wechaty-send-miniprogram/
-* The Bad Part of My Chatbot Experience  
-https://www.bot5.club/talks/maodou-bot-limingth/
-* 如何用 padpro 发送微信小程序  
-https://blog.chatie.io/send-miniprogram-using-padpro/
+
+* [实现支持微信小程序的聊天机器人](https://www.bot5.club/talks/wechaty-send-miniprogram/)
+
+* [The Bad Part of My Chatbot Experience](https://www.bot5.club/talks/maodou-bot-limingth/)
+
+* [如何用 padpro 发送微信小程序](https://blog.chatie.io/send-miniprogram-using-padpro/)
 
 
 ## 致谢
 
 * **[lijiarui](https://github.com/lijiarui)** 的PPT。这次讲座所用的ppt，绝大部分来自于李佳芮的贡献。如果不是那么精美的Slides已经完美总结了项目的方方面面，我很难有勇气走上讲台去做这个lecture。
+
 * 感谢北大张齐勋老师提供这么好的一个机会，能够让我们给新一代的大学生研究生来介绍来自开源社区的最新进展。会后有100多位同学加入了Wechaty-北大开源技术交流群，这一批新鲜血液相信会让Wechaty项目焕发出新的生机！
 
