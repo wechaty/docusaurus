@@ -7,7 +7,7 @@ tags:
   - meetup
   - lecture
 header:
-  teaser: /assets/2019/wechaty-pku-lecture/pku-liming.png
+  teaser: /assets/2019/wechaty-pku-lecture/pku-liming.jpeg
 ---
 
 > 作者: [limingth](https://github.com/limingth) 毛豆网
