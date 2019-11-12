@@ -7,7 +7,7 @@ tags:
   - meetup
   - lecture
 header:
-  teaser: /assets/2019/wechaty-pku-lecture/pku-liming.jpeg
+  teaser: /assets/2019/wechaty-pku-lecture/pku-liming2.jpeg
 ---
 
 > 作者: [limingth](https://github.com/limingth) 毛豆网
@@ -21,11 +21,15 @@ header:
 
 <!--more-->
 
+![北大讲座现场]({{ '/assets/2019/wechaty-pku-lecture/wechaty-pku-lecture.jpeg' | relative_url }})
+
 2019.10.18，受[北京大学软件与微电子学院](http://www.ss.pku.edu.cn/)张齐勋老师邀请，经华为云庄表伟的介绍，我代表Wechaty开源项目，给来自北大软院实验班的120多位同学，完整系统地介绍了Wechaty项目，并分享了Wechaty应用案例-[毛豆课堂小助手]({{ '/assets/2019/wechaty-pku-lecture/wechaty-pku-mdktxzs.jpeg' | relative_url }})。
+
+![李明北大讲座]({{ '/assets/2019/wechaty-pku-lecture/pku-liming.jpeg' | relative_url }})
 
 这一批学生大部分都是95年之后才出生，他们的成长阶段，本身就是Linux开源文化通过互联网传入中国，到萌芽传播再到发展壮大，最后做出我们自己的开源项目的一个历史过程。
 
-![毛豆课堂演示]({{ '/assets/2019/maodou-ketang-demo.png' | relative_url }})
+![北大讲座现场2]({{ '/assets/2019/wechaty-pku-lecture/wechaty-pku-lecture2.jpeg' | relative_url }})
 
 下面，我来重点介绍一下在讲座分享中比较有亮点的几张PPT。
 
@@ -54,6 +58,8 @@ Wechaty的开源社区，同样遵循了众多开源社区的组织形式，包�
 ## Wechaty应用案例分享
 
 毛豆课堂项目是为少儿教育机构和老师提供一个全线上可实时互动的教学平台，借助AI人工智能进行教学辅助和学习反馈，并通过课程智能推荐引擎为家长提供最可信赖和适合孩子的课程。在这个项目中，有一个部分是帮助老师进行创建课程提醒的微信机器人，就是毛豆课堂小助手。
+
+![毛豆课堂演示]({{ '/assets/2019/maodou-ketang-demo.png' | relative_url }})
 
 通过自然语言给毛豆课堂小助手发一条消息，就可以自动提取出其中的时间、地点和主题，帮助老师创建课程提醒，并给老师推送相关课程小程序。基本流程如下图所示：
 
