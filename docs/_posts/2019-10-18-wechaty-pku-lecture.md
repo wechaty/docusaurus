@@ -21,7 +21,7 @@ header:
 
 <!--more-->
 
-![北大讲座现场]({{ '/assets/2019/wechaty-pku-lecture/wechaty-pku-lecture.jpeg.jpeg' | relative_url }})
+![北大讲座现场]({{ '/assets/2019/wechaty-pku-lecture/wechaty-pku-lecture.jpeg' | relative_url }})
 
 2019.10.18，受[北京大学软件与微电子学院](http://www.ss.pku.edu.cn/)张齐勋老师邀请，经华为云庄表伟的介绍，我代表Wechaty开源项目，给来自北大软院实验班的120多位同学，完整系统地介绍了Wechaty项目，并分享了Wechaty应用案例-[毛豆课堂小助手]({{ '/assets/2019/wechaty-pku-lecture/wechaty-pku-mdktxzs.jpeg' | relative_url }})。
 
@@ -29,7 +29,7 @@ header:
 
 这一批学生大部分都是95年之后才出生，他们的成长阶段，本身就是Linux开源文化通过互联网传入中国，到萌芽传播再到发展壮大，最后做出我们自己的开源项目的一个历史过程。
 
-![北大讲座现场2]({{ '/assets/2019/wechaty-pku-lecture/wechaty-pku-lecture2.jpeg.jpeg' | relative_url }})
+![北大讲座现场2]({{ '/assets/2019/wechaty-pku-lecture/wechaty-pku-lecture2.jpeg' | relative_url }})
 
 下面，我来重点介绍一下在讲座分享中比较有亮点的几张PPT。
 
