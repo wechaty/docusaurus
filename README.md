@@ -8,7 +8,7 @@
 1. Create your blog branch (git checkout -b your-blog)
 1. Write your blog in markdown
 1. Add your blog to `_post` folder
-1. Add related image to `download` folder
+1. Add related image to `assets` folder
 1. Commit your changes (git commit -am 'added a blog')
 1. Push to the branch
 1. Create new Pull Request
@@ -25,7 +25,7 @@ Example as follows:
 
 ```yaml
 ---
- layout: post
+
  title: "'Score Your Face Photo' a ML&Wechaty practice"
  date: 2017-09-18 09:00 +0800
  author: huyingxi
@@ -38,7 +38,7 @@ Example as follows:
 
 * Keep all filenames & url as lowercase, and use `-` to connect words instead of space. e.g. `2017-10-06-wechat-pc-impactor` instead of `2017-10-06-WeChat PC Impactor`
 * Find a good image for the blog to make it more beautiful.
-* Embed the photo & video before publishing, save all external file to the blog `/download/2018` directory.
+* Embed the photo & video before publishing, save all external file to the blog `/assets/2018` directory.
 
 see more: [Do not include Date in URL](https://github.com/Chatie/blog/issues/79)
 
@@ -50,7 +50,7 @@ Add `<!--more-->` section for your abstract part, it will show on the blog homep
 
 Please do not commit unrelated files.
 
-### 5. Add Vedios
+### 5. Add Videos
 
 Example
 
@@ -62,7 +62,7 @@ Example
 
 ### Online Editor
 
-http://prose.io/#chatie/blog.chatie.io/tree/master/_posts
+<http://prose.io/#chatie/blog.chatie.io/tree/master/_posts>
 
 ## RUN LOCALHOST
 
@@ -87,3 +87,15 @@ bundle exec jekyll serve --watch
 ### JEKYLL THEME
 
 minima: <https://github.com/jekyll/minima>
+
+## AUTHOR
+
+[Huan LI (李卓桓)](http://linkedin.com/in/zixia) <zixia@zixia.net>
+
+[![Profile of Huan LI (李卓桓) on StackOverflow](https://stackexchange.com/users/flair/265499.png)](https://stackexchange.com/users/265499)
+
+## COPYRIGHT & LICENSE
+
+* Code & Docs © 2019 - now Huan LI <zixia@zixia.net>
+* Code released under the Apache-2.0 License
+* Docs released under Creative Commons
