@@ -14,8 +14,10 @@
 
 Wechaty 作为极客项目之一，参与了本次庙会狂欢。现场的极客们对Wechaty表现出极大的热情。
 
-![image-1.png](https://github.com/Chatie/blog/tree/master/docs/assets/2019/wechaty-shows-on-geeks-party/image-1.png)
+![wechaty-shows-on-geeks-party-image-1.png](https://github.com/Chatie/blog/tree/master/docs/assets/2019/wechaty-shows-on-geeks-party-image-1.png)
 
-![image-2.png](https://github.com/Chatie/blog/tree/master/docs/assets/2019/wechaty-shows-on-geeks-party/image-2.png)
+![wechaty-shows-on-geeks-party-image-2.png](https://github.com/Chatie/blog/tree/master/docs/assets/2019/wechaty-shows-on-geeks-party-image-2.png)
 
 希望所有的程序员小哥哥都能用Wechaty开发出自己的机器人，更好的生活。
+
+![wechaty-shows-on-geeks-party-image-3.jpg](https://github.com/Chatie/blog/tree/master/docs/assets/3019/wechaty-shows-on-geeks-party-image-3.jpg)
