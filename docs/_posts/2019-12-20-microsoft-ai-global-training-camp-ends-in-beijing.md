@@ -12,7 +12,11 @@ Global AI Bootcamp是微软发起的全球AI开发者训练营活动，旨在凝
 
 ![global-bootcamp](/assets/2019/microsoft-ai-global-training-camp/image-1.png)
 
-本次北京站Microsoft AI Bootcamp是由三位微软AI MVP共同发起与组织，三位分别是Microsoft Regional Director李卓桓、微软Data&AI解决方案架构师陈堰平、句子互动创始人&CEO李佳芮。
+本次北京站Microsoft AI Bootcamp是由三位微软AI MVP共同发起与组织，三位分别是:
+
+- Microsoft Regional Director, Microsoft AI MVP, Pre-Angel 合伙人李卓桓
+- Microsoft Data&AI 解决方案架构师, 前 Microsoft MVP 陈堰平
+- Microsoft AI MVP, 句子互动创始人&CEO 李佳芮。
 
 ![image-2](/assets/2019/microsoft-ai-global-training-camp/image-2.png)
 
@@ -77,7 +81,13 @@ Wish you were here.
 
 ![image-25](/assets/2019/microsoft-ai-global-training-camp/image-25.png)
 
-本次活动由DataFun&PNP&句子互动全程落地支持。
+本次活动由Microsoft MVP & DataFun & Plug and Play & Pre-Angel & 句子互动全程落地支持。
+
+### 微软MVP项目介绍
+
+微软最有价值专家Microsoft Most Valuable Professional（MVP）是微软公司授予第三方技术专业人士的一个全球奖项。27年来，世界各地的技术社区领导者，因在线上和线下的技术社区中分享专业知识和经验而获得此奖项。
+
+MVP是经过严格挑选的专家团队，他们代表着技术最精湛且最具智慧的人，对社区投入极大的热情并乐于助人的专家。MVP致力于通过讲课、论坛、网站、俱乐部以及自己所创建的网站和博客来帮助他人，并最大程度地帮助微软技术社区用户使用Microsoft技术。MVP申请请联系：ChinaMVP@Microsoft.com。
 
 ### DataFun介绍
 
@@ -91,6 +101,10 @@ Plug and Play 前身始于1998年，投资和孵化了谷歌等互联网巨头�
 
 作为全球无与伦比的创新生态平台，Plug and Play 中国致力于连接大企业与优质的创新项目，让硅谷的资源惠及全世界各个角落，让创新无处不在。
 
+### PreAngel 介绍
+
+PreAngel是一支专注于人工智能技术创业项目的天使基金，核心价值是提供“职业联合创始人”服务，参与创始 300+ 中美初创企业。它借助自身在人工智能产业领域的深刻的认识和资源积累，投资与早期创业团队并且帮助他们成长。PreAngel使命是在人工智能领域帮助有理想的创业者实现更大的社会价值。网址：[https://pre-angel.com](https://pre-angel.com)。
+
 ### 句子互动介绍
 
 句子互动是国内领先的智能对话服务商，专注于将智能对话落地到微信等社交生态，设计专业的对话系统对接流程，将业务场景梳理、数据收集、对话脚本撰写、系统搭建、评估反馈等进行标准化，帮助企业搭建符合真实业务场景的对话机器人。
@@ -99,16 +113,23 @@ Plug and Play 前身始于1998年，投资和孵化了谷歌等互联网巨头�
 
 ![image-26](/assets/2019/microsoft-ai-global-training-camp/image-26.png)
 
-### 微软MVP项目介绍
-
-微软最有价值专家Microsoft Most Valuable Professional（MVP）是微软公司授予第三方技术专业人士的一个全球奖项。27年来，世界各地的技术社区领导者，因在线上和线下的技术社区中分享专业知识和经验而获得此奖项。
-
-MVP是经过严格挑选的专家团队，他们代表着技术最精湛且最具智慧的人，对社区投入极大的热情并乐于助人的专家。MVP致力于通过讲课、论坛、网站、俱乐部以及自己所创建的网站和博客来帮助他人，并最大程度地帮助微软技术社区用户使用Microsoft技术。MVP申请请联系：ChinaMVP@Microsoft.com。
-
-### PreAngel 介绍
-
-PreAngel是一支专注于人工智能技术创业项目的天使基金，核心价值是提供“职业联合创始人”服务，参与创始 300+ 中美初创企业。它借助自身在人工智能产业领域的深刻的认识和资源积累，投资与早期创业团队并且帮助他们成长。PreAngel使命是在人工智能领域帮助有理想的创业者实现更大的社会价值。网址：[https://pre-angel.com](https://pre-angel.com)。
-
 ### 彩蛋
 
-附最后的彩蛋，北京站直播视频回放地址：[https://youtu.be/jKbMFxDw0T4?t=210](https://youtu.be/jKbMFxDw0T4?t=210)，各位童鞋认真学习起来吧！视频是youtube的，之后会同步提供国内视频链接。
+附最后的彩蛋，北京站直播视频回放地址，各位童鞋认真学习起来吧！
+
+<div class="video-container" style="
+    position: relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+">
+<iframe width="560" height="315" src="https://www.bilibili.com/video/av80153181/" frameborder="0" allowfullscreen="" style="
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+"></iframe></div>
+
+附录： [Youtube 地址](https://youtu.be/jKbMFxDw0T4?t=210)
