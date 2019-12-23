@@ -122,7 +122,7 @@ PreAngel是一支专注于人工智能技术创业项目的天使基金，核心
     height:0;
     overflow:hidden;
 ">
-<iframe width="560" height="315" src="https://www.bilibili.com/video/av80153181/" frameborder="0" allowfullscreen="" style="
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jKbMFxDw0T4?t=210" frameborder="0" allowfullscreen="" style="
     position: absolute;
     top:0;
     left:0;
@@ -130,4 +130,4 @@ PreAngel是一支专注于人工智能技术创业项目的天使基金，核心
     height:100%;
 "></iframe></div>
 
-附录： [Youtube 地址](https://youtu.be/jKbMFxDw0T4?t=210)
+附录： [国内用户，B站地址](https://www.bilibili.com/video/av80153181/)
