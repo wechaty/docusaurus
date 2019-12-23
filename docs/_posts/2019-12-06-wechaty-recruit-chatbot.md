@@ -4,7 +4,7 @@
  author: liqian
 ---
 
- > Author: 李乾
+ > Author: 李乾, 句子互动
 
 ## Wechaty琅琊榜问世，征集全站ChatBot
 
