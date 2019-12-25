@@ -77,6 +77,8 @@ RICEPO的wechaty使用的是[wechaty-puppet-padplus](https://github.com/botorang
   * 用作登陆提醒。
   * 若未登陆，会将登陆二维码发送至对应的channel
   * 若扫码登陆成功，发送一条登陆成功的消息至对应的channel
+  
+![RICEPO]({{ '/assets/2019/wechaty-ricepo/slack.png' | relative_url }})
 
 ## Wechaty使用遇到问题以及解决方案
 
