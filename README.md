@@ -58,28 +58,36 @@ Example
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3eq8wJfCAWs" frameborder="0" allowfullscreen></iframe>
 ```
 
-## TOOL
+## Usage
 
-### Online Editor
+### Jekyll
 
-<http://prose.io/#chatie/blog.chatie.io/tree/master/_posts>
+Install all the Jekyll requirements and run it at localhost for blog preview.
 
-## RUN LOCALHOST
+#### 1 Use Docker Compose
 
-### Install
+This is the recommended way for new users to easy getting started
 
-```shell
-sudo apt install -y ruby-bundler
-sudo apt install -y ruby-dev
-sudo gem install ffi -v '1.9.18'
-sudo gem install bundler
-bundle install
+```sh
+make docker
 ```
 
-### View
+#### 2 ~~Install Jekyll by Hand~~
 
-```shell
-bundle exec jekyll serve --watch
+You should not use this way except you are a Ruby expert.
+
+```sh
+make install
+make serve
+```
+
+### Test
+
+In order to make sure everything(file name, file size, etc) is ok, you can run the following command to check them before `git push`.
+
+```sh
+npm install
+npm test
 ```
 
 ## OTHERS
