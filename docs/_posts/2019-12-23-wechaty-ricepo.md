@@ -57,17 +57,32 @@ Wechaty可以几乎完美解决以上所有问题，
 查看订单详情，一键确认
 
 除此之外，Wechaty还可以实现饭店公告的功能。
-例如APP新功能，节假日营业时间变更，RICEPO都已开始大范围使用Wechty来通知餐馆。
+例如APP新功能，节假日营业时间变更，RICEPO都已开始大范围使用Wechaty来通知餐馆。
 
 
 
 
 ## Wechaty+SQS整体架构
 
-xxxx
+RICEPO的wechaty使用的是[wechaty-puppet-padplus](https://github.com/botorange/wechaty-puppet-padplus)
 
+主要运用的技术：
+* Docker
+  * Docker化部署
+* mongodb
+  * 用于持久化登陆信息，以便Docker重启之后无需再次扫码登陆
+* [SQS](https://aws.amazon.com/sqs/)
+  * aws的消息队列服务，wechaty从这里获取消息发送给对应的人(群)
+* [slack](https://slack.com/)
+  * 用作登陆提醒。
+  * 若未登陆，会将登陆二维码发送至对应的channel
+  * 若扫码登陆成功，发送一条登陆成功的消息至对应的channel
 
 ## Wechaty使用遇到问题以及解决方案
 
-* 群丢失，每天早上群发
-* 登录失败，slack提醒
+* 群丢失
+  * 发生原因：微信临时群组不保存的话，docker重启之后会丢失这些群组
+  * 解决方案： 
+    * 挂载缓存目录到docker宿主机 `-v ~/.wechaty:/root/.wechaty`
+    * 每天早上给每个bot下面的所有群组发送早安信息（消息间隔时间2S,避免过于频繁的消息发送），最大限度地保证有较多的群组缓存下来
+
