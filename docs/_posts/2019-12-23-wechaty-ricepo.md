@@ -77,14 +77,19 @@ RICEPO的wechaty使用的是[wechaty-puppet-padplus](https://github.com/botorang
   * 用作登陆提醒。
   * 若未登陆，会将登陆二维码发送至对应的channel
   * 若扫码登陆成功，发送一条登陆成功的消息至对应的channel
-  
+
 ![RICEPO]({{ '/assets/2019/wechaty-ricepo/slack.png' | relative_url }})
 
 ## Wechaty使用遇到问题以及解决方案
 
 * 群丢失
   * 发生原因：微信临时群组不保存的话，docker重启之后会丢失这些群组
-  * 解决方案： 
+  * 解决方案：
     * 挂载缓存目录到docker宿主机 `-v ~/.wechaty:/root/.wechaty`
     * 每天早上给每个bot下面的所有群组发送早安信息（消息间隔时间2S,避免过于频繁的消息发送），最大限度地保证有较多的群组缓存下来
 
+## 总结与未来发展
+基于Wechaty的自动发单系统，给平台的订单确认效率得到非常大的提升。
+饭店群公告功能也节省了大量客服与餐馆沟通成本，
+下一步我们将着手开始实现更多功能，包括自动机器应答，自动事件提醒等，都能再次提高各部门效率。
+感谢Wechaty给我们带来的变革。期待在未来看到在RICEPO平台更多的应用场景。
