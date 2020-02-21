@@ -69,6 +69,8 @@ docker exec -it container_id  bash
 const { Wechaty,config } = require('wechaty');
 const { generate } = require('qrcode-terminal');
 
+# 添加name属性，防止凌晨掉线
+
 const bot = new Wechaty({
     profile : config.default.DEFAULT_PROFILE,
     name:'wechaty_bot'
