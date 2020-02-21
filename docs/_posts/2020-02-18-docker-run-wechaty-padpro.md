@@ -65,6 +65,41 @@ docker exec -it container_id  bash
 # docker部署
 
 - 在本地创建一个`bot.js`文件，为了演示，这里直接把copy Demo里面的示例 [https://github.com/wechaty/wechaty-getting-started/blob/master/examples/basic/ding-dong-bot.js](https://github.com/wechaty/wechaty-getting-started/blob/master/examples/basic/ding-dong-bot.js)
+```
+const { Wechaty,config } = require('wechaty');
+const { generate } = require('qrcode-terminal');
+
+const bot = new Wechaty({
+    profile : config.default.DEFAULT_PROFILE,
+    name:'wechaty_bot'
+  });
+
+bot
+.on('scan', (qrcode, status) => {
+        const qrcodeImageUrl = [
+            'https://api.qrserver.com/v1/create-qr-code/?data=',
+            encodeURIComponent(qrcode),
+        ].join('')
+
+        console.log(`Scan QR Code to login: ${status}https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrcode)}`);
+
+        generate(qrcode, {
+            small: true
+        });
+        log.info('StarterBot', '%s(%s) - %s', ScanStatus[status], status, qrcodeImageUrl)
+
+    })
+.on('login', user => {
+        console.log(`User ${user} login.`)
+    })
+.on('message', message => {
+        console.log(`Message: ${message}`)
+    })
+.start()
+
+
+```
+
 - 初始化本地环境，并且安装添加的包
 
 ```
