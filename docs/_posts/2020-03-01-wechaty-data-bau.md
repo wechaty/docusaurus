@@ -9,7 +9,7 @@ header:
   teaser: /assets/2020/wechat-reply-night.jpg
 ---
 > Author: [@hkenter](https://github.com/hkenter) 数据工程师-医疗,医药行业
-
+<!--more-->
 ## 背景
 新冠疫情爆发于 2020 年2 月，某大型跨国药企业务数据的响应与维护工作随着疫情爆发迅速提升，一时间数据需求方的响应诉求迅速攀升，找到合适的开源解决方案成为目前乃至长期的救命稻草。
 ----------
