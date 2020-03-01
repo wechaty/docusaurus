@@ -134,3 +134,14 @@ kis87988:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:william@williamusa.me"
+
+cubesky:
+  name        : "立音"
+  avatar      : "https://avatars1.githubusercontent.com/u/8038511?s=460&v=4"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://liyin.date"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/cubesky"
