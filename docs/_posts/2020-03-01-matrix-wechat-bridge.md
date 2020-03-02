@@ -94,7 +94,7 @@ matrix-appservice-wechaty \
   --generate-registration
 ```
 
-注意如果你的 Synapse 服务器和 Wechaty 服务器不是同一个服务器则要将 APP_SERVER_ENDPOINT 的地址设置为 Wechaty 服务器的地址，同时注意防火墙开放端口。  
+注意如果你的 Synapse 服务器和 Wechaty 服务器不是同一个服务器则要将 APP_SERVICE_ENDPOINT 的地址设置为 Wechaty 服务器的地址，同时注意防火墙开放端口。  
 
 > 注：如果你的服务器在国内的 VPS 上，请注意备案问题。如果没有备案，Matrix 服务器连接可能会被你的 VPS 服务商阻挡。
 
