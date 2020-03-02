@@ -1,21 +1,28 @@
 ---
-title: "使用 [Matrix] 接收微信消息"
+title: "使用 [Matrix] 收发微信消息"
 date: 2020-03-01 16:29 +0800
 author: cubesky
 categories: tutorial
 tags:
   - wechaty
   - matrix
+header:
+  teaser: /assets/2020/2020-03-matrix-appservice-wechaty.jpg
 ---
 <!-- markdownlint-disable -->
 
 > 作者: [立音](https://github.com/cubesky)，个人开发者。首发于博客: [使用 Matrix 接收微信消息](https://liyin.date/2020/03/01/matrix-wechat-bridge/) 遵循 CC BY-NC-SA 3.0 CN
 
+[![Wechaty AppService Bridge for [Matrix]](/assets/2020/2020-03-matrix-appservice-wechaty.jpg)](https://github.com/chatie/matrix-appservice-wechaty)
+
 <!-- more -->
 
 我周围的人都知道我很讨厌微信————臃肿、慢速、开放性低而且还极其费电，于是呢我当然发挥裁剪流氓软件的能力，直接把微信的后台打了个半残，所以我周围的人一直说我微信经常找不到我，那是当然的，微信连后台都没了，能实时找得到我就怪了。  
+
 所以用其他聊天软件代收微信消息就显得很重要了，之前我用过 EH Forwarder Bot 将微信的消息转发到 Telegram，用了一段时间之后我发现它比较麻烦，在登录之后所有消息都是被 Bot 账号发送给你，而且如果你想将一个微信群组单独连接，就得自己创建群组，拉入 Bot，然后再选择连接。而且因为微信这个协议连接的问题，经常会出现突然就收不到消息，或者突然掉线的问题，所以后来我就不再使用 EH Forwarder Bot 了。（当然也是由于我那个时候买了第二台手机..）  
+
 然后今年因为一些原因，我和朋友分别建立了自己的 Matrix 服务器。然后我发现官网上有一个叫做 Bridge 的功能，具体来说就是可以将其他聊天协议上的用户和群组以虚拟用户和 Portal 群组的方式加入 Matrix 中，就如同他们本来就是 Matrix 用户一样。  
+
 作为尝试，我先建立了一个 Telegram Bridge 用来连接我的 Telegram 账号，连接倒是成功了，而且也正常收到消息，也可以回复，但是因为我的 Telegram 消息量太大了，造成了我服务器经常性的响应缓慢，后来不得已关闭了 Telegram Bridge。  
 同时，我看到 Bridge 介绍中有一个 [Huan](https://github.com/huan) 开发的叫做 Wechaty 的 Bridge，而我的微信消息并没有那么多，所以就想要尝试一下。  
 
@@ -40,7 +47,7 @@ nvm install v10.18.0
 
 ## 使用 Yarn
 
-虽然 [matrix-appservice-wechaty](https://github.com/wechaty/matrix-appservice-wechaty) 的 README 上写着使用 `npm install -g matrix-appservice-wechaty` 进行安装，但在我安装的过程中，反复遇到在安装 grpc 时执行 node-pre-gyp 失败的问题，经过多方查找发现，使用 Yarn 管理器就可以快速解决这个问题，所以我们先安装 Yarn。  
+虽然 [matrix-appservice-wechaty](https://github.com/chatie/matrix-appservice-wechaty) 的 README 上写着使用 `npm install -g matrix-appservice-wechaty` 进行安装，但在我安装的过程中，反复遇到在安装 grpc 时执行 node-pre-gyp 失败的问题，经过多方查找发现，使用 Yarn 管理器就可以快速解决这个问题，所以我们先安装 Yarn。  
 
 ```bash
 npm install -g yarn
@@ -68,22 +75,22 @@ yarn global add wechaty-puppet-后端名
 
 ## 创建配置文件
 
-先复制 [config.sample.yaml](https://github.com/wechaty/matrix-appservice-wechaty/blob/master/config/config.sample.yaml)  到 config.yaml ，我建议单独为它创建一个文件夹，方便之后将所有的数据文件都放在这一个文件夹里。  
+先复制 [config.sample.yaml](https://github.com/chatie/matrix-appservice-wechaty/blob/master/config/config.sample.yaml)  到 config.yaml ，我建议单独为它创建一个文件夹，方便之后将所有的数据文件都放在这一个文件夹里。  
 
 ```
-domain: aka.cn
-homeserverUrl: http://matrix.aka.cn:8008
+domain: chatie.io
+homeserverUrl: https://matrix.chatie.io
 registration: wechaty-registration.yaml
 ```
 
 将示例中的 aka.cn 替换为你的 Matrix Synapse 服务器地址。将 homeserverUrl 替换为你的 Synapse 服务器终结点地址。然后运行命令创建注册文件。  
 
 ```bash
-export APP_SERVER_ENDPOINT='http://localhost:8788'
+export APP_SERVICE_ENDPOINT='http://localhost:8788'
 
 matrix-appservice-wechaty \
   --config  config.yaml \
-  --url     "$APP_SERVER_ENDPOINT" \
+  --url     "$APP_SERVICE_ENDPOINT" \
   --generate-registration
 ```
 
