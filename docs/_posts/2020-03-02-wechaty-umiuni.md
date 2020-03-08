@@ -34,12 +34,14 @@ UmiUni 旨在连接留学生群体, 相互帮助, 解决留学生群体 在海�
 * 校园攻略:周边生活娱乐,社团活动,生活讯
 息,顺风车等等校内论坛内容
 
-#### 目标用户：
+### 目标用户：
+
 * 美国大学的中国留学生群体
 * 即将出国留学的国内高中生、大学生
 * 走上工作岗位的毕业生
 
-#### 应用场景
+### 应用场景
+
 * 新生入学寻找校内及周边公寓信息
 * 暑假回国空置公寓转租
 * 毕业回国闲置家居,家电等物品低价卖给学弟学妹
@@ -47,14 +49,13 @@ UmiUni 旨在连接留学生群体, 相互帮助, 解决留学生群体 在海�
 * 机场与学校之间的顺风车
 * 社团活动参与信息
 
-#### 运营情况
+### 运营情况
+
 UmiUni平台自2017年3月份开始对用户开放，经过半年多的发展，开发完成网页、微信小程序、手机APP三个端口的应 用。
 目前完全发展三所大学，部分发展达7所大学，累计用户数 超过1.8万，其中UIUC市场普及率和占有率均超过95%
 平均日活超过6000次，数据库保有超过1万条校园官方edu邮箱信息
 尝试并发现多个盈利方式，并在不断挖掘新的稳定盈利点
 UmiUni是北美知名的校内网小助手，为各个北美学校的校友提供如下服务
-
-
 
 ## Wechaty在UmiUni的应用
 
@@ -91,9 +92,9 @@ Umiuni 目前主要依托于用户登录小程序或app来发布，搜索自己�
 * wechaty
   * 用作构建消息来源
 
-#### wechaty 代码示例
-wechaty 部分由于还在搭建，因此仅展示正在运行的部分
+### wechaty 代码示例
 
+wechaty 部分由于还在搭建，因此仅展示正在运行的部分
 
 用户加群，为用户寻找合适的群组：
 ```typescript
@@ -140,11 +141,9 @@ async function putInRoom (contact: Contact, room: Room) {
 }
 ```
 
-
-
 ## wechaty 未来发展
 
-#### 基础features:
+### 基础features:
 
 * 群目录: 以分地区划分，先建立校友群 南京:， 香槟: 硅谷:, Maryland:, 群的分法，【校友群，同城群】，类目找工作，内推*，跳槽*，二手，租房*，身份*。
 
@@ -152,23 +151,18 @@ async function putInRoom (contact: Contact, room: Room) {
 * Make post call到python AI的项目。 advanced做法：apache thrift, google protobuff。简单做法：post call。
 。
 
-#### Security features
+### Security features
 
-1. 验证系统，学校邮箱验证(可以使用北美校内网http://umiuni.com 的edu验证Api)， 【或用户上传学校证明(发学生卡+自拍）()->人工review queue，】 【怎么验证同城，科技公司邮箱，或者美国工作证明(payement stub) ->人工review queue】 2.上传的学校证明。
+1. 验证系统，学校邮箱验证(可以使用北美校内网的edu验证Api)， 【或用户上传学校证明(发学生卡+自拍）()->人工review queue，】 【怎么验证同城，科技公司邮箱，或者美国工作证明(payement stub) ->人工review queue】 2.上传的学校证明。
 2. Implement黑名单，记录广告特征。
-
 3. 自动踢人，踢广告功能。(AI batch processing)
 
-#### 高级features
+### 高级features
 
 1. mysql数据库，记录用户session，wechat id，上传的学校证明。 为之后ai，data science发展铺路。
 2. Implement管理员，可以对机器人发出不同指令，可以剔除广告等。（implementation method，管理员群。）
-
 3. Save广告图片，文字，分析识别特征。(AI) 1）BlackList 广告号wechatID; 2) 文字关键词blacklist
-
 4. nodjs chatbot grpc call python service, send chat message to a python for model processing
 Service crash, session logout -> send a notification to 管理员群。
-
-5. 校友问答。校友在群中，或者私聊中提问 (e.g. 有没有二手自行车?），1)先搜索 北美校内网http://umiuni.com 数据库找匹配 2)搜索网络；有match后查看score。
-
+5. 校友问答。校友在群中，或者私聊中提问 (e.g. 有没有二手自行车?），1)先搜索[北美校内网](https://umiuni.com)数据库找匹配 2)搜索网络；有match后查看score。
 6. 工友问答。Package details, Layoff news, etc.
