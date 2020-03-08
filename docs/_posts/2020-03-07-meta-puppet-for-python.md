@@ -1,194 +1,572 @@
 ---
-title: "使用 [Matrix] 收发微信消息"
-date: 2020-03-01 16:29 +0800
-author: cubesky
-categories: tutorial
+title: "MetaPuppetForPython--用Python写Wechaty程序"   
+date: 2020-03-07 13:39 -0800
+author: Tom
+categories: tutorial  
 tags:
   - wechaty
-  - matrix
+  - python
+  - socket
+  - puppet   
+  
 header:
-  teaser: /assets/2020/2020-03-matrix-appservice-wechaty.jpg
+  teaser: /assets/2020/2020-03-meta-puppet-for-python.jpg
 ---
 <!-- markdownlint-disable -->
 
-> 作者: [立音](https://github.com/cubesky)，个人开发者。首发于博客: [使用 Matrix 接收微信消息](https://liyin.date/2020/03/01/matrix-wechat-bridge/) 遵循 CC BY-NC-SA 3.0 CN
+> 作者: [Tom](https://github.com/quantumFlame)   
+代码: [MetaPuppetForPython](https://github.com/quantumFlame/MetaPuppetForPython)   
+首发于博客: [用Python写Wechaty程序](https://blog.chatie.io/meta-puppet-for-python/)   
+文本协议: CC BY-NC-SA 3.0 CN
 
-[![Wechaty AppService Bridge for [Matrix]](/assets/2020/2020-03-matrix-appservice-wechaty.jpg)](https://github.com/chatie/matrix-appservice-wechaty)
+[![MetaPuppetForPython](/assets/2020/2020-03-meta-puppet-for-python.jpg)](https://github.com/quantumFlame/MetaPuppetForPython)  
 
 <!-- more -->
 
-我周围的人都知道我很讨厌微信————臃肿、慢速、开放性低而且还极其费电，于是呢我当然发挥裁剪流氓软件的能力，直接把微信的后台打了个半残，所以我周围的人一直说我微信经常找不到我，那是当然的，微信连后台都没了，能实时找得到我就怪了。  
+简介：一个支持Wechaty调用的Python框架
 
-所以用其他聊天软件代收微信消息就显得很重要了，之前我用过 EH Forwarder Bot 将微信的消息转发到 Telegram，用了一段时间之后我发现它比较麻烦，在登录之后所有消息都是被 Bot 账号发送给你，而且如果你想将一个微信群组单独连接，就得自己创建群组，拉入 Bot，然后再选择连接。而且因为微信这个协议连接的问题，经常会出现突然就收不到消息，或者突然掉线的问题，所以后来我就不再使用 EH Forwarder Bot 了。（当然也是由于我那个时候买了第二台手机..）  
+特征：
+  * 你可以只会python
+  * 支持Wechaty全部协议，全部接口
+  * 兼容同步/异步编程
+  * 可拓展至其他app/社交平台
 
-然后今年因为一些原因，我和朋友分别建立了自己的 Matrix 服务器。然后我发现官网上有一个叫做 Bridge 的功能，具体来说就是可以将其他聊天协议上的用户和群组以虚拟用户和 Portal 群组的方式加入 Matrix 中，就如同他们本来就是 Matrix 用户一样。  
+声明：作者是更加支持native的[python-wechaty](https://github.com/wechaty/python-wechaty)的哈，看好[@Huan](https://github.com/huan)和[@wj-Mcat](https://github.com/wj-Mcat)的工作！
+不过貌似开发还需要一段时间，有需要的童鞋可以暂时用MetaPuppetForPython。
 
-作为尝试，我先建立了一个 Telegram Bridge 用来连接我的 Telegram 账号，连接倒是成功了，而且也正常收到消息，也可以回复，但是因为我的 Telegram 消息量太大了，造成了我服务器经常性的响应缓慢，后来不得已关闭了 Telegram Bridge。  
-同时，我看到 Bridge 介绍中有一个 [Huan](https://github.com/huan) 开发的叫做 Wechaty 的 Bridge，而我的微信消息并没有那么多，所以就想要尝试一下。  
+## Talk is cheap, show me the code!
 
-## 安装 NodeJS
+#### 初级：Hello Human!
 
-其实安装 NodeJS 搜索一下就能找到怎么安装，所以在此就简略啦。我使用一台国内的 VPS 安装 Debian Stable 作为 Wechaty 的运行服务器。避免因为微信异地登录而被封禁。不过由于 Wechaty 最好使用 NodeJS v10，而且因为使用官方源安装之后 Node 有一部分存储于系统的某些固定目录下，有一些 Node 包会调用重编译之类的命令进而引起权限问题导致失败，所以我建议使用 nvm 来安装 NodeJS。  
-安装 NVM 就十分简单了，直接执行 
+> 目标：更改微信签名
+
+> 要点：你可以调用类似`a_server.change_self_signature()`的函数来主动调用Wechaty的各种接口，从而主动查找联系人，发信息等。
+你可以在`SocketServerCore`和`SweetSocketServer`中找到更多类似的函数。
+但他们其实都是只语法糖（下文会介绍原理），你也可以继承`SweetSocketServer`，然后根据自己的需要设计自己的函数。
+
+```python
+# -*- coding: utf-8 -*-
+import time
+
+from MetaPuppet.core.SweetSocketServer import SweetSocketServer
+from MetaPuppet.core.TestBot import TestBot
+
+if __name__ == '__main__':
+    # init
+    a_bot = TestBot(name='test')
+    a_server = SweetSocketServer(
+        robot=a_bot,
+        num_async_threads=1,
+        debug_mode=True
+    )
+    a_server.run()
+
+    print(
+        'Please make sure the client is connected '
+        'before run the following codes'
+    )
+    time.sleep(20)
+
+    #  -------------edit following code for simple tasks-----------------------
+    a_server.change_self_signature('Hello Human!')
+
+```
+
+#### 初级：a simple bot
+
+> 目标：一个简易机器人。自动接受加人邀请，并问好`Hello Human!`。自动回复，内容为接收到信息的反序。
+
+> 要点：你可以继承`RobotBase`然后override `_process_message()` 和`_process_friend_invitation()`函数。
+这些函数在收到相关微信信息后会被自动调用，你可以把机器人自动回复的逻辑放在这个类中。
+通过这种方式，你可以处理所有的被动请求。结合`Hello Human!`的例子，你可以主动发出请求。
+到此，你已经可以实现全部的业务逻辑。
+
+```python
+# -*- coding: utf-8 -*-
+import time
+
+from MetaPuppet.core.SweetSocketServer import SweetSocketServer
+from MetaPuppet.core.RobotBase import RobotBase
+
+class MyBot(RobotBase):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    async def _process_message(self, message, verbose=False):
+        #  -------------edit following code for simple tasks-----------------------
+        return_msg = None
+        if 'payload' in message and 'text' in message['payload']:
+            return_msg = message['payload']['text'][::-1]
+        return return_msg
+
+    async def _process_friend_invitation(self, message, verbose=False):
+        return_msg = {
+            'wx_msg_type': 'TEXT',
+            'path': 'Hello Human!',
+        }
+        return return_msg
+
+
+if __name__ == '__main__':
+    # init
+    a_bot = MyBot(name='test')
+    a_server = SweetSocketServer(
+        robot=a_bot,
+        num_async_threads=1,
+        debug_mode=True
+    )
+    a_server.run()
+
+    print(
+        'Please make sure the client is connected '
+        'before run the following codes'
+    )
+    time.sleep(20)
+
+    #  -------------edit following code for simple tasks-----------------------
+    # nothing needed here in this example
+    # however, you can put your other backend code here
+
+```
+
+#### 中级：语法糖
+
+> 目标：自定义函数：发送文本给特定联系人/群聊
+
+> 要点：MetaPuppetForPython实际上是用python将ts的代码片段转发给node并编译运行(详见原理部分)，所以若已有的语法糖不能满足需求，你需要定义自己的函数。
+由于ts的代码和python其实比较相似，并且往往只需要写很少的ts的代码，主要业务代码还是python，所以自定义函数的难度应该不大。
+你可以继承`SweetSocketServer`，然后在自定义函数中调用`exec_wx_function()`或`exec_one_wx_function()`执行文本格式的ts代码。
+如果你需要使用第三方的ts库，可以在`socket_client/src`的相关代码中声明。
+
+同步代码的语法糖：
+```python
+from MetaPuppet.core.SweetSocketServer import SweetSocketServer
+
+class ExtendedSocketServer(SweetSocketServer):
+    
+    # definition for other functions/variables
+    ...
+
+    def send_wx_msg_text(self, text, username, chat_type):
+        ts_code = '''
+            let say_content = `{}`
+            const a_contact = bot.{}.load('{}')
+            await a_contact.say(say_content)
+        '''.format(text, self.all_chat_type[chat_type.lower()], username)
+        self.exec_wx_function(
+            ts_code=ts_code,
+            need_return=False,
+        )
+    
+```
+异步代码的语法糖(只需要在函数的定义前加上async，在调用异步函数前面加上await)：
+```python
+from MetaPuppet.core.SweetSocketServer import SweetSocketServer
+
+class ExtendedSocketServer(SweetSocketServer):
+    
+    # definition for other functions/variables
+    ...
+
+    async def async_send_wx_msg_text(self, text, username, chat_type):
+        ts_code = '''
+            let say_content = `{}`
+            const a_contact = bot.{}.load('{}')
+            await a_contact.say(say_content)
+        '''.format(text, self.all_chat_type[chat_type.lower()], username)
+        await self.async_exec_wx_function(
+            ts_code=ts_code,
+            need_return=False,
+        )
+```
+
+#### 中级：同步/异步
+> 目标：通过使用异步编程加速代码
+
+> 要点：同步和异步的区别是在等待响应时前者是真的等待，后者是会缓存当前程序，执行其他异步程序，收到响应时恢复当前程序继续执行。
+需要等待的情况有：网络通信等待回复，等待其他某个进程结束，人为使用等待/睡眠等函数。
+所以，对于大多数看到这篇帖子的人而言，异步代码加速的主要是网络通信的部分。
+如果同步代码本身很慢，将其改为异步并不能减少其执行时间。
+基于MetaPuppetForPython的原理，对于频繁调用Wechaty的函数，建议使用异步编程，如默认的`_process_message()`就是异步函数。
+在`_process_message()`中，若需要经常调用Wechaty函数，建议使用异步版本的语法糖；若仅是偶尔调用，使用同步版本亦可。
+当然，为避免所有函数都需要异步定义，建议在设计层面将Wechaty的相关调用放在比较上层的位置，甚至与核心的同步代码相互独立。
+对于大部分业务代码，只是偶尔调用Wechaty函数，可以直接使用同步风格的语法糖，并不影响效率。
+
+异步：
+```python
+# -*- coding: utf-8 -*-
+import threading
+import time
+
+from MetaPuppet.core.SweetSocketServer import SweetSocketServer
+from MetaPuppet.core.RobotBase import RobotBase
+from MetaPuppet.core.time_classes import Time
+from MetaPuppet.core.utils import run_coroutine_in_new_thread
+
+class MyBot(RobotBase):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    async def _process_message(self, message, verbose=False):
+        #  -------------edit following code for simple tasks-----------------------
+        return_msg = None
+        if 'payload' in message and 'text' in message['payload']:
+            return_msg = message['payload']['text'][::-1]
+        return return_msg
+
+    async def _process_friend_invitation(self, message, verbose=False):
+        return_msg = {
+            'wx_msg_type': 'TEXT',
+            'path': 'Hello Human!',
+        }
+        return return_msg
+
+async def async_foo(server):
+    #  -------------edit following code for simple tasks-----------------------
+    rooms = await server.async_exec_one_wx_function(
+        func_name='bot.Room.findAll',
+        func_paras=[],
+        need_return=True,
+    )
+    print('Time:', Time())
+    print('async_foo', threading.currentThread().getName())
+    if rooms is not None:
+        print('async: len(rooms)', len(rooms))
+        print(rooms[0])
+    else:
+        print('async: rooms not found')
+        
+if __name__ == '__main__':
+    # init
+    a_bot = MyBot(name='test')
+    a_server = SweetSocketServer(
+        robot=a_bot,
+        num_async_threads=1,
+        debug_mode=True
+    )
+    a_server.run()
+
+    print(
+        'Please make sure the client is connected '
+        'before run the following codes'
+    )
+    time.sleep(20)
+
+    #  -------------edit following code for simple tasks-----------------------
+    # async version
+    # better to use async version because sync version might block io
+    run_coroutine_in_new_thread(
+        async_foo(a_server)
+    )
+
+```
+同步：
+```python
+
+...
+
+def bar(server):
+    contacts = server.exec_one_wx_function(
+        func_name='bot.Contact.findAll',
+        func_paras=[],
+        need_return=True,
+    )
+    print('Time:', Time())
+    print('bar', threading.currentThread().getName())
+    if contacts is not None:
+        print('sync: len(contacts)', len(contacts))
+        print(contacts[0])
+    else:
+        print('sync: contacts not found')
+        
+if __name__ == '__main__':
+    ...
+
+    #  -------------edit following code for simple tasks-----------------------
+    # sync version
+    # sync code is simpler, though not recommended for heavy load
+    # you can use it if you don't need to use many async functions
+    # (e.g. async_exec_one_wx_function) at the same time and also
+    # (1) the task here is short-term and light-load
+    # or (2) you have a powerful computer
+    bar(a_server)
+        
+```
+
+#### 中级：线程
+> 目标：通过使用多线程加速代码
+
+> 要点：上文中提到，异步主要是提升io方面的效率。
+对于需要较长计算时间的代码本身，异步帮助不大。
+此时可以使用多线程来避免堵塞其他任务。
+`SweetSocketServer`会默认开放一个线程进行消息的自动回复，需要的情况下可以设置初始化参数`num_async_threads`增加线程数。
+
+```python
+
+...
+
+def bar(server):
+    contacts = server.exec_one_wx_function(
+        func_name='bot.Contact.findAll',
+        func_paras=[],
+        need_return=True,
+    )
+    print('Time:', Time())
+    print('bar', threading.currentThread().getName())
+    if contacts is not None:
+        print('sync: len(contacts)', len(contacts))
+        print(contacts[0])
+    else:
+        print('sync: contacts not found')
+        
+if __name__ == '__main__':
+    ...
+
+    #  -------------edit following code for simple tasks-----------------------
+    # sync version
+    # sync code is simpler, though not recommended for heavy load
+    # you can use it if you don't need to use many async functions
+    # (e.g. async_exec_one_wx_function) at the same time and also
+    # (1) the task here is short-term and light-load
+    # or (2) you have a powerful computer
+    # however, pay attention that you should run the task here in a new thread
+    # it is not good to run it in the main thread
+    threading.Thread(
+        target=bar,
+        args=(a_server,)
+    ).start()
+
+```
+
+#### 高级：拓展至其他app/社交平台
+> 目标：使用MetaPuppetForPython框架与web app通信
+
+> 要点：MetaPuppetForPython将机器人本身作为服务器，将Wechaty作为客户，但其实可以有多个客户同时与机器人进行交互，可以是微博，QQ，或者网页应用等。
+你可以继承`SweetSocketServer`并override `process_socket_message()`和`process_custom_message()`以处理来自其他app的信息。
+
+服务器：
+```python
+# -*- coding: utf-8 -*-
+import time
+from MetaPuppet.core.SweetSocketServer import SweetSocketServer
+from MetaPuppet.core.RobotBase import RobotBase
+
+class ExtendedSocketServer(SweetSocketServer):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.webgui_room = 'webgui'
+
+    async def process_socket_message(self, sid, message, verbose=False):
+        sender = message['sender']
+        if sender.startswith('wx_'):
+            room_name = self.wx_room
+        elif sender.startswith('webgui_'):
+            room_name = self.webgui_room
+        else:
+            room_name = sender
+
+        text = message.get('text', '')
+        if text == 'CONNECTED':
+            print('{}: sender, sid, room_name'.format(text), sender, sid, room_name)
+            self.sio.enter_room(sid, room_name)
+            self.add_room(
+                sender=sender,
+                room_name=room_name,
+            )
+        else:
+            pass
+
+    async def process_custom_message(self, sid, message, verbose=False):
+        sender = message['sender']
+        msg_type = message.get('type', '')
+        if sender.startswith('webgui_'):
+            if msg_type == 'CHAT_INFO':
+                print('webgui info received', message)
+                await self.robot.process_webgui_chat_message(message, verbose=verbose)
+                pass
+                
+class MyBot(RobotBase):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    async def _process_message(self, message, verbose=False):
+        #  -------------edit following code for simple tasks-----------------------
+        return_msg = None
+        if 'payload' in message and 'text' in message['payload']:
+            return_msg = message['payload']['text'][::-1]
+        return return_msg
+
+    async def _process_friend_invitation(self, message, verbose=False):
+        return_msg = {
+            'wx_msg_type': 'TEXT',
+            'path': 'Hello Human!',
+        }
+        return return_msg
+
+    async def process_webgui_chat_message(self, message, verbose=False):
+        return_msg = await self._process_webgui_chat_message(message, verbose=verbose)
+        return return_msg
+
+    async def _process_webgui_chat_message(self, message, verbose=False):
+        print('message', message)
+        return None
+        
+if __name__ == '__main__':
+    # init
+    a_bot = MyBot(name='test')
+    a_server = ExtendedSocketServer(
+        robot=a_bot,
+        num_async_threads=1,
+        debug_mode=True
+    )
+    a_server.run()
+
+    print(
+        'Please make sure the client is connected '
+        'before run the following codes'
+    )
+    time.sleep(20)
+
+     # -------------edit following code for simple tasks-----------------------
+```
+
+Web app作为客户端(示例中的任务不需要性能，可以直接用同步代码)：
+```python
+import socketio
+import json
+import os
+
+class WebClient(object):
+    def __init__(self,
+                 config_path):
+        self.config_path = config_path
+        self.config = self.read_config(config_path=self.config_path)
+        self.sio = socketio.Client()
+        self.create_response_functions()
+
+    def read_config(self, config_path):
+        # get config
+        with open(config_path, 'r') as fr:
+            config = json.load(fr)
+        return config
+
+    def run(self):
+        self.sio.connect('http://{}:{}'.format(
+                self.config['server']['host'],
+                self.config['server']['port'],
+            ))
+        # use sio.wait if no other process keeping the program living
+        # self.sio.wait()
+        ...
+
+    def create_response_functions(self):
+        @self.sio.on('message')
+        def process_msg_from_server(message):
+            ...
+
+        @self.sio.on('connect')
+        def on_connect():
+            print('CONNECTED')
+            msg = {
+                'type': 'SOCKET_INFO',
+                'text': 'CONNECTED',
+            }
+            self.send_msg_to_server(msg)
+
+        @self.sio.on('disconnect')
+        def on_disconnect():
+            print('DISCONNECTED')
+
+    def send_msg_to_server(self, msg):
+        msg_to_send = {
+            'sender': 'webgui_client',
+            'status': 'NORMAL',
+        }
+        if isinstance(msg, str):
+            msg_to_send['text'] = msg
+        elif isinstance(msg, dict):
+            msg_to_send.update(msg)
+        else:
+            msg_to_send['status'] = 'ERROR'
+
+        self.sio.emit(
+            'message',
+            msg_to_send,
+        )
+
+
+a_webgui = WebClient(
+    config_path=os.path.join(os.path.dirname(__file__), '../config.json')
+)
+# run is a dead loop if sio.wait() called, so we should call lastly
+a_webgui.run()
+
+```
+
+## 原理
+[![MetaPuppetForPython](/assets/2020/2020-03-meta-puppet-for-python.jpg)](https://github.com/quantumFlame/MetaPuppetForPython)  
+`MetaPuppetForPython`的核心是通过socket双向通信，实现业务逻辑(server)与第三方业务(client)的交互，包括信息的收发以及接口的调用等。
+所以，在这个框架下，与`Wechaty`的架构类比，server是`Wechaty`的TS代码，client是`Wechaty`调用的各个puppet。
+`MetaPuppetForPython`默认包括完全的server和运行`Wechaty`的client代码，针对其他app(weibo, qq, web, etc.)的client需要自定义。
+对于想要一个python版本的`Wechaty`的童鞋来说，默认的代码已经够用。  
+
+针对`Wechaty`而言，server使用`python-socketio`，client使用`socket.io-client`，从而建立起双向异步通信。
+主要的业务逻辑在server端，使用Python控制。
+在需要调用`Wechaty`时，使用Python将文本形式的小段ts代码发送给client，client将其编译运行。
+client端包含少量的ts代码，用于编译来自server的代码，和响应微信的请求(新消息，好友请求等)，一般不需要更改。   
+
+基于此原理，可以使用Python调用`Wechaty`的任意原生代码，所以理论上可以兼容`Wechaty`的所有协议和接口函数。
+已实现`async_exec_wx_function()`用于运行代码块，和`async_exec_one_wx_function()`用于运行单个函数。
+
+## 安装
+```bash
+git clone https://github.com/quantumFlame/MetaPuppetForPython.git
+cd MetaPuppetForPython
+pip install .
+
+cd socket_client
+# install node.js
+# https://github.com/nodesource/distributions/blob/master/README.md
+# Using Ubuntu
+curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+sudo apt-get install -y nodejs
+npm install -g ts-node
+npm install -g typescript  
+sudo apt-get install autoconf
+sudo apt-get install libtool
+
+npm install 
+# or    
+# rm -rf node_modules package-lock.json 
+# npm install wechaty@latest
+# npm install wechaty-puppet-padplus@next
+# npm install qrcode-terminal
+# npm install socket.io-client
+# npm install @types/socket.io-client
+# npm install @types/node
+# npm install other packages if needed...
+
+```
+
+## 运行
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
-```
+# start client in one terminal
+cd socket_client
+# (before you run, you need a wechaty token and 
+# create the config.json file following 
+# the example config.example.json)
+ts-node src/wechaty_actions.ts
 
-等待安装好就可以了。  
-
-待 NVM 安装完成后输入 
-
-```bash
-nvm install v10.18.0
-```
-
-完成 NodeJS v10.18.0 的安装和配置。  
-
-## 使用 Yarn
-
-虽然 [matrix-appservice-wechaty](https://github.com/chatie/matrix-appservice-wechaty) 的 README 上写着使用 `npm install -g matrix-appservice-wechaty` 进行安装，但在我安装的过程中，反复遇到在安装 grpc 时执行 node-pre-gyp 失败的问题，经过多方查找发现，使用 Yarn 管理器就可以快速解决这个问题，所以我们先安装 Yarn。  
-
-```bash
-npm install -g yarn
-```
-
-然后通过 yarn 安装 matrix-appservice-wechaty，不过注意因为现在版本是在快速更新修复 bug 的状态，所以建议安装 next 版本  
-
-```bash
-yarn global add matrix-appservice-wechaty@next
-```
-
-## 安装所需的 Puppet
-
-在 matrix-appservice-wechaty 的程序中，我们需要定义一个 Puppet 来指示这个 AppService 使用什么微信后端来进行通信。现在可以选择的后端有 `Puppeteer` `Padplus` `Macpro` `Mock` `Wechat4u` 这几种。其中 `Puppeteer` 和 `Wechat4u` 基于 Web 协议，`Padplus` 基于 iPad 微信协议，`Macpro` 基于 MacOS 微信协议。选择合适的协议后使用下面的命令来安装。   
-
-```bash
-yarn global add wechaty-puppet-后端名
-```
-
-> 注：后端名为全小写，如 `wechaty-puppet-wechat4u`
-
-> 注2：某些后端是收费的，请注意查看各后端的部署信息。
-
-目前已知 next 版本的 appservice 在使用 PadPlus 作为后端时需要 next 版本的 PadPlus。 `wechaty-puppet-padplus@next`
-
-## 创建配置文件
-
-先复制 [config.sample.yaml](https://github.com/chatie/matrix-appservice-wechaty/blob/master/config/config.sample.yaml)  到 config.yaml ，我建议单独为它创建一个文件夹，方便之后将所有的数据文件都放在这一个文件夹里。  
+# start server in another terminal
+python example/hello_word.py
 
 ```
-domain: chatie.io
-homeserverUrl: https://matrix.chatie.io
-registration: wechaty-registration.yaml
-```
 
-将示例中的 aka.cn 替换为你的 Matrix Synapse 服务器地址。将 homeserverUrl 替换为你的 Synapse 服务器终结点地址。然后运行命令创建注册文件。  
 
-```bash
-export APP_SERVICE_ENDPOINT='http://localhost:8788'
+## Keys to remember:
+* Extend `RobotBase` and modify `_process_message()` to reply to various wechat messages.
 
-matrix-appservice-wechaty \
-  --config  config.yaml \
-  --url     "$APP_SERVICE_ENDPOINT" \
-  --generate-registration
-```
+* Compile your management tasks as `async_foo()` and call with `run_coroutine_in_new_thread()`. 
 
-注意如果你的 Synapse 服务器和 Wechaty 服务器不是同一个服务器则要将 APP_SERVICE_ENDPOINT 的地址设置为 Wechaty 服务器的地址，同时注意防火墙开放端口。  
-
-> 注：如果你的服务器在国内的 VPS 上，请注意备案问题。如果没有备案，Matrix 服务器连接可能会被你的 VPS 服务商阻挡。
-
-上述命令运行后将会生成一个名为 `wechaty-registration.yaml` 的文件，将它复制到你的 Synapse 服务器上。  
-编辑 Synapse 的 `homeserver.yaml` 文件，在其中的 `app_service_config_files` 项内加入 `wechaty-registration.yaml` 的路径，保存并重启 Synapse 服务器。  
-
-> 注：每次运行 `--generate-registration` 后都需要重新复制并重启 Synapse 服务器。
-
-## 开始运行
-
-一般来说，直接在有 `config.yaml` 和 `wechaty-registration.yaml` 运行下面这个命令就可以了。  
-
-```bash
-export WECHATY_PUPPET=wechaty-puppet-后端名
-
-matrix-appservice-wechaty \
-  --config  config.yaml \
-  --file    wechaty-registration.yaml
-```
-
-不过要注意，如果你使用 PadPlus 那些需要付费或者 Token 的 Puppet 后端，那么也需要 export 对应的变量，如 `export WECHATY_PUPPET_PADPLUS_TOKEN=xxxxxxxxxxxxxxxxxxxxx`  
-不过我创建了一个 start.sh 以方便运行  
-
-> 注意： padplus 版本需要额外安装 `qrcode-terminal` 否则会出现错误。  
-
-```sh
-#!/bin/bash
-. /home/user/.nvm/nvm.sh
-export WECHATY_PUPPET=wechaty-puppet-后端名
-matrix-appservice-wechaty \
-  --config  config.yaml \
-  --file    wechaty-registration.yaml
-```
-
-> 注：将 user 更换为你的用户名  
-
-chmod +x /path/to/config/start.sh
-
-同时还可以创建一个 systemd 配置来自动启动（如果你的 Wechaty 和 Synapse 不在同一个服务器则不要加 `After` 那行）
-
-```
-[Unit]
-Description=Matrix Bridge WeChaty
-After=matrix-synapse.service
-
-[Service]
-Type=simple
-WorkingDirectory=/path/to/config/
-ExecStart=/path/to/config/start.sh
-Restart=on-abort
-
-[Install]
-WantedBy=multi-user.target
-```
-
-执行 `systemctl daemon-reload`。  
-
-之后就可以使用 `systemctl enable` 命令和 `systemctl start` 命令来启动 Wechaty Matrix Bridge 了。  
-仅建议在调试完成，可以成功运行的情况下使用 systemctl 启动。  
-
-## Let's Go！
-
-来到你的 Matrix 客户端上，对 `@wechaty:你的服务器` 发起 **私聊** ，等待 Bot 加入后它应该会提示  
-
-```
-This room has been registered as your bridge management/status room.
-```
-
-看到这条提示后输入 `!login`，首次使用时 Bot 应该会提示  
-
-```
-You are not enable matrix-appservice-wechaty yet.
-```
-
-之后会立刻提示 `I had enabled it for you.`  
-
-这时，Wechaty 就正式注册为 AppService 了。  
-
-再次发送 `!login` 后，如果你没有安装你指定的 puppet，PuppetManager 会自动进行安装，稍等即可。如果安装过于缓慢，可以考虑按 Ctrl + C 终止程序，然后自己用 yarn 手动安装后再启动。  
-
-当 puppet 成功启动后，Matrix 端会生成一个二维码的链接，打开并扫描二维码就可以完成登录了。
-
-## 关于登出
-
-给 wechaty 机器人发送 !logout 就行啦！
-
-> 注意：截至到目前 latest 版本 (0.6.3) 没有这个命令，需要 next 版本 (0.7.2)
-
-## Matrix-AppService-Wechaty 
-
-这个通讯桥目前是一个刚开始开发没有多长时间的状态，只能解决基础的消息互通问题，如果遇到对方发送的是链接消息的情况，Matrix 这边会显示一个超长的 xml 结构，期待之后版本更新能带来更多的功能！
-
-同时借助 [Wechaty-Puppet-PadPlus](https://github.com/wechaty/wechaty-puppet-padplus) ，那些无法使用 Web 版微信的用户可以使用 iPad 协议来进行连接。因为我刚刚完成部署，所以稳定性我还不是非常清楚，不过因为这个协议是通过客户端级协议完成的，目测会稳定一些。  
-
-非常感谢 [huan](https://github.com/huan) 开发的 [Wechaty](https://github.com/wechaty/wechaty)，让微信桥接和微信机器人有更多可能！
-
-同时我也推荐一下他开发的 [Docker-Wechat](https://github.com/huan/docker-wechat) ，用 Docker 解决了使用 Linux 微信比较麻烦的问题。想了想我用 CrossOver 安装微信，然后用起来还有一堆的 bug 就感觉这个真的非常好。
+* If you don't like async, you can also run the sync version functions in new thread (see more details in `example/hello_world.py`).
