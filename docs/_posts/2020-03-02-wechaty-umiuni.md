@@ -60,6 +60,7 @@ UmiUni是北美知名的校内网小助手，为各个北美学校的校友提�
 ## Wechaty在UmiUni的应用
 
 Umiuni 目前主要依托于用户登录小程序或app来发布，搜索自己所需的信息，但是目前该产品提供的服务有如下不足：
+
 1. 用户偏爱在微信群中通过发送图片，文字的信息发布租房信息，要在小程序中发布需要重新写作，效率低下
 2. 用户希望在特定微信群中收到特定的消息（如二手车群，二手货群等），在app中搜索效率比较低下
 3. 用户希望在多个微信群中同时发布消息，逐个发布效率低下
@@ -69,6 +70,7 @@ Umiuni 目前主要依托于用户登录小程序或app来发布，搜索自己�
 ![UmiUni]({{ '/assets/2020/umiuni/architecture.png' | relative_url }})
 
 上图为umiuni的新架构设计，具体创新点如下：
+
 * 利用微信机器人帮助用户加入想加入的群组（如某个学校的二手群，租房群等）
 * 用户发布信息后，通过分析自动将发布的信息转换为app内的post，用户无需再次手动输入
 * 用户发布信息后，通过微信机器人发送消息至kafka，由kafka自动推送至特定的多个群组
@@ -97,6 +99,7 @@ Umiuni 目前主要依托于用户登录小程序或app来发布，搜索自己�
 wechaty 部分由于还在搭建，因此仅展示正在运行的部分
 
 用户加群，为用户寻找合适的群组：
+
 ```typescript
       const dingRoom = await this.Room.find({ topic: str })
       if (dingRoom) { // Room found
@@ -120,6 +123,7 @@ wechaty 部分由于还在搭建，因此仅展示正在运行的部分
 ```
 
 用户加群操作
+
 ```typescript
 async function putInRoom (contact: Contact, room: Room) {
   log.info('on-message', 'putInRoom("%s", "%s")', contact.name(), await room.topic())
@@ -143,7 +147,7 @@ async function putInRoom (contact: Contact, room: Room) {
 
 ## wechaty 未来发展
 
-### 基础features:
+### 基础features
 
 * 群目录: 以分地区划分，先建立校友群 南京:， 香槟: 硅谷:, Maryland:, 群的分法，【校友群，同城群】，类目找工作，内推*，跳槽*，二手，租房*，身份*。
 

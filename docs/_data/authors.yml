@@ -145,3 +145,14 @@ cubesky:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/cubesky"
+
+supercharleszhu:
+  name        : "Charles Zhu"
+  avatar      : "https://avatars1.githubusercontent.com/u/8038511?s=460&v=4"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://umiuni.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/supercharleszhu"
