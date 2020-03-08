@@ -1,6 +1,6 @@
 {
   "name": "@chatie/blog",
-  "version": "0.2.18",
+  "version": "0.2.19",
   "description": "Chatie Blog",
   "main": "index.js",
   "directories": {
