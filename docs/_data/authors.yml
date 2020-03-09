@@ -134,7 +134,27 @@ kis87988:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:william@williamusa.me"
-	  
+
+cubesky:
+  name        : "立音"
+  avatar      : "https://avatars1.githubusercontent.com/u/8038511?s=460&v=4"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://liyin.date"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/cubesky"
+
+quantumFlame:
+  name        : "Tom"
+  bio         : "A student curious about and interested in many things I don't know."
+  avatar      : "https://avatars0.githubusercontent.com/u/5970757?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/quantumFlame"
+  
 kelly-cheng:
   name        : "Kelly Cheng"
   bio         : "数据工程师、Java工程师，业余写写python、Node.js，医药、医疗行业"
