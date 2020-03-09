@@ -4,9 +4,7 @@ author: 江湖夜雨
 date: '2020-03-08T21:00:00+0800'
 categories: event
 tags:
-  - meetup
-header:
-  teaser: /assets/2019/wechaty-ricepo/logo.png
+  - wishlist
 ---
 
 > 作者: [江湖夜雨]
