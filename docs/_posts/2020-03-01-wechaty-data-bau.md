@@ -10,7 +10,7 @@ header:
 ---
 <!-- markdownlint-disable -->
 
-> Author: [@KellyCheng](https://github.com/hkenter) 数据工程师-医疗,医药行业
+> Author: [@KellyCheng](https://github.com/hkenter) 数据工程师，Java工程师,偶尔写写python、Node.js在医疗,医药行业打杂
 
 <!--more-->
 
