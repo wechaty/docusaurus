@@ -8,7 +8,10 @@ tags:
 header:
   teaser: /assets/2020/wechat-reply-night.jpg
 ---
-> Author: [@hkenter](https://github.com/hkenter) 数据工程师-医疗,医药行业
+<!-- markdownlint-disable -->
+
+> Author: [@KellyCheng](https://github.com/hkenter) 数据工程师-医疗,医药行业
+
 <!--more-->
 
 ## 背景
@@ -29,9 +32,7 @@ header:
 ### 碎片化数据被动查询 ###
 单一业务场景的数据应急需求，通常以碎片形式体现，或是阶段性有规律的需求，所以总结部分高频率、碎片化、有规律的需求，是此部分实现的前提。
 
-> 比如：
-~某会议数据是否已推送？
-~目前推送活动的类型是什么？
+> 比如：~某会议数据是否已推送？~目前推送活动的类型是什么？
 
 实现方案：构建此类场景的查询关键词规则，入参查询并回复
 
