@@ -134,3 +134,12 @@ kis87988:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:william@williamusa.me"
+	  
+kelly-cheng:
+  name        : "Kelly Cheng"
+  bio         : "数据工程师、Java工程师，业余写写python、Node.js，医药、医疗行业"
+  avatar      : "https://avatars2.githubusercontent.com/u/20569868?s=400&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hkenter"
