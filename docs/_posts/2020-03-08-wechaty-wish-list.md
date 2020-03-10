@@ -66,12 +66,16 @@ Wechaty官方建议nodejs10.0以上的版本，而在CentOS中使用yum默认安
 切换2种协议，非常简单，设置好指定的环境变量之后，再运行wechaty就可以了。
 
 Puppeteer:
+
 ```bash
+
 export WECHATY_PUPPET=wechaty-puppet-puppeteer
 ```
 
 Padplus：
+
 ```bash
+
 export WECHATY_PUPPET=wechaty-puppet-padplus
 export WECHATY_PUPPET_PADPLUS_TOKEN=***your token**
 ```
@@ -81,4 +85,3 @@ export WECHATY_PUPPET_PADPLUS_TOKEN=***your token**
 关于心愿机器人，目前仍在开发中，相信很快会与大家见面。初期的功能很简单，未来我们希望依托Wechaty的强大的支持，来实现更多的功能。比如能支持更多的电商网站的分享链接；机器人的回复看起来更智能，更有趣；用户对自己的心愿单能够分组、添加标签、编辑删除等。
 
 我们会持续努力！
-
