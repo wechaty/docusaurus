@@ -165,3 +165,11 @@ quantumFlame:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/quantumFlame"
+
+moderncrazy:
+  name        : "moderncrazy"
+  avatar      : "https://avatars3.githubusercontent.com/u/24598244?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/moderncrazy"
