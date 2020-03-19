@@ -1,4 +1,4 @@
- # /_data/authors.yml
+﻿ # /_data/authors.yml
 
 huan:
   name        : "Huan (李卓桓)"
@@ -165,6 +165,15 @@ quantumFlame:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/quantumFlame"
+
+kelly-cheng:
+  name        : "Kelly Cheng"
+  bio         : "数据工程师、Java工程师，偶尔写写python、Node.js，在医药、医疗行业打杂"
+  avatar      : "https://avatars2.githubusercontent.com/u/20569868?s=400&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hkenter"
 
 moderncrazy:
   name        : "moderncrazy"
