@@ -146,6 +146,17 @@ cubesky:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/cubesky"
 
+supercharleszhu:
+  name        : "Charles Zhu"
+  avatar      : "https://avatars1.githubusercontent.com/u/8038511?s=460&v=4"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://umiuni.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/supercharleszhu"
+
 quantumFlame:
   name        : "Tom"
   bio         : "A student curious about and interested in many things I don't know."
@@ -163,3 +174,11 @@ kelly-cheng:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hkenter"
+
+moderncrazy:
+  name        : "moderncrazy"
+  avatar      : "https://avatars3.githubusercontent.com/u/24598244?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/moderncrazy"
