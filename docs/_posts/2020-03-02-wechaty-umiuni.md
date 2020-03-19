@@ -1,6 +1,6 @@
 ---
 title: "wechaty 在UMIUNI北美校友圈中的应用"
-author: UmiUni
+author: supercharleszhu
 date: '2020-03-02T09:00:00+0800'
 categories: event
 tags:
