@@ -11,7 +11,7 @@ header:
 ---
 <!-- markdownlint-disable -->
 
-> 作者: [moderncrazy](https://github.com/moderncrazy)，个人开发者。首发于博客: [使用 SQLite 和 pullword 实现简易的业务助手](https://liyin.date/2020/03/17/sqlite-wechat-assistant/) 遵循 CC BY-NC-SA 3.0 CN
+> 作者: [moderncrazy](https://github.com/moderncrazy)，个人开发者。首发于博客: [使用 SQLite 和 pullword 实现简易的业务助手](https://blog.chatie.io/sqlite-wechat-assistant/) 遵循 CC BY-NC-SA 3.0 CN
 
 [![WechatAssistant](/assets/2020/2020-03-sqlite-wechat-assistant.jpeg)](https://github.com/moderncrazy/wechat_assistant)
 
