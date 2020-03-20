@@ -47,5 +47,8 @@
     "scripts": {
       "pre-push": "npx git-scripts-pre-push"
     }
+  },
+  "dependencies": {
+    "eslint": "^6.8.0"
   }
 }
