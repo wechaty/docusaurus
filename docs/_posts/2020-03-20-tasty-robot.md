@@ -6,13 +6,15 @@ categories: tutorial
 tags:
   - wechaty
   - nodejs
+  - koa
 header:
-  teaser: /assets/2020/tasty-robot/
+  teaser: /assets/2020/tasty-robot/wechaty-koa.jpg
 ---
 <!-- markdownlint-disable -->
 
 > 作者: [ykst615](https://github.com/ykst615)，个人开发者。首发于博客: [用 wechaty 帮助管理私域流量，线上分销](https://blog.chatie.io/tasty-robot/) 遵循 CC BY-NC-SA 3.0 CN
 
+[![TostyRobot](/assets/2020/tasty-robot/wechaty-koa.jpg)](https://github.com/ykst615/tasty-robot)
 
 <!-- more -->
 
@@ -30,7 +32,7 @@ PM2 v3.5.1+
 
 ## 项目思路
 
-wechaty 能够实现微信的诸多功能，但是每次开发都要去关闭线上服务，在打开开放环境，很不方便，我希望通过 wechaty 与 koa 结合，把 wechaty 的功能实现成为api，外部系统调用api就能够直接使用功能，这使得我无需多次去重启 wechaty ，只需要去关注业务模块就可以了。
+wechaty 能够实现微信的诸多功能，但是每次开发都要去关闭线上服务，在打开开发环境，很不方便，我希望通过 wechaty 与 koa 结合，把 wechaty 的功能实现成为api，外部系统调用api就能够直接使用功能，这使得我无需多次去重启 wechaty ，只需要去关注业务模块就可以了。
 
 ```javascript
 async function __main(): Promise<void> {
