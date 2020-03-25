@@ -155,3 +155,12 @@ quantumFlame:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/quantumFlame"
 
+zjacai:
+  name        : "zjacai"
+  bio         : "Operation and maintenance"
+  avatar      : "https://avatars2.githubusercontent.com/u/20898457?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zjacai"
+
