@@ -1,5 +1,5 @@
 ---
-title: "使用 SQLite 和 pullword 实现简易的业务助手"
+title: "用 wechaty 帮助管理私域流量，线上分销"
 date: 2020-03-20 22:00 +0800
 author: ykst615
 categories: tutorial
@@ -139,7 +139,7 @@ export { router as messageV1 };
 export async function onMessage(message) {
   try {
     const isSelf = message.self();
-    if (isSelf !== false) {
+    if (!isSelf) {
       return;
     }
     // 是否是来自群聊
