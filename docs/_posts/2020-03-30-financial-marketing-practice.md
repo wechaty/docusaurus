@@ -243,10 +243,11 @@ module.exports = {
 
 ## 后续计划和致谢
 
-首先，感谢开源项目[Wechaty](https://github.com/wechaty/wechaty)团队以及其提供的开发者计划，让我有机会能实现自己的想法。其次需要感谢同花顺和东方财富，你们提供的金融数据至关重要。
+首先，感谢开源项目[Wechaty](https://github.com/wechaty/wechaty)团队以及其提供的开发者计划，让我有机会能实现自己的想法。其次需要感谢同花顺和东方财富，你们提供的金融数据至关重要。[项目代码在这儿](https://github.com/lemonsX/maple-financial-assistant)
 
 目前的机器人还只能做一些简单的事情，后续会根据业务的需求增加更多的功能上去。目标是让机器人为我打工，以及在传统金融里面实现微创新。
 
 对了，如果您想要体验我的机器人，或者对可转债套利有兴趣。您都可以扫描我的机器人进行体验。
 
 ![Maple's financial bot](/assets/2020/2020-03-30-wechat-bot-demo.jpg)
+
