@@ -160,7 +160,7 @@ Wechaty的事件监听分离的非常清晰，通过message事件的监听，可
 
 为了能对将要管理的几个人的人数进行监听，我选择在room-join事件中做用户信息的同步和存储。
 
-```
+```js
 //on-room-join.js
 async function onRoomJoin(room, inviteeList, inviter){
     try {
