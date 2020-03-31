@@ -1,7 +1,7 @@
 ---
 title: "使用Wechaty助力金融营销实践"
 date: 2020-03-30 20:00 +0800
-author: lemons
+author: lemonsx
 categories: tutorial
 tags:
   - wechaty
