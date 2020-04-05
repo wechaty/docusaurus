@@ -91,7 +91,7 @@ yarn build
 
 - 在对应的 `github` 仓库中配置好 `webhook`
 - 在 `.env` 文件中配置以`WEBHOOK_` 开头的相关配置
-- 修改 `script/depoly.sh.sample` 为 `depoly.sh` 并修改 `PROJECT_NAME` 为你的项目名 
+- 修改 `script/depoly.sh.sample` 为 `depoly.sh` 并修改 `PROJECT_NAME` 为你的项目名
 - `push` 上 `github` 时服务器会发送 `webhook`
 - 然后服务器会执行 `script/deploy` 自动拉取项目并构建重载
 
