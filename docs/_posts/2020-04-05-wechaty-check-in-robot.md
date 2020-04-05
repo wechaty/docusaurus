@@ -11,6 +11,9 @@ header:
 
 > 作者: [yeojongki](https://github.com/yeojongki) 前端开发工程师
 
+[![wechaty-check-in-robot](/assets/2020/wechaty-check-in-robot/notice.png)](https://github.com/yeojongki/wechaty-check-in-robot)
+
+<!-- more -->
 
 ## 1. 开发背景
 
