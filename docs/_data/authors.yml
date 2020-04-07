@@ -191,3 +191,12 @@ yeojongki:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/yeojongki"
+
+cr4fun:
+  name        : "cr4fun"
+  bio         : "不务正业的SDK产品经理，平时喜欢鼓捣电子元件及做木工。"
+  avatar      : "https://avatars0.githubusercontent.com/u/38368200?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/cr4fun"
