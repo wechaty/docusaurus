@@ -1,5 +1,8 @@
 # wechaty.github.io
 
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
+[![NPM](https://github.com/wechaty/wechaty.github.io/workflows/NPM/badge.svg)](https://github.com/wechaty/wechaty.github.io/actions?query=workflow%3ANPM)
+
 [Wechaty Official Homepage](https://wechaty.github.io)
 
 ## HOW TO POST BLOG
