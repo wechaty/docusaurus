@@ -183,6 +183,14 @@ moderncrazy:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/moderncrazy"
 
+lemonsx:
+  name        : "lemonsx"
+  avatar      : "https://avatars1.githubusercontent.com/u/35106813?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lemonsX"
+
 yeojongki:
   name        : "yeojongki"
   bio         : "FE Developer."
