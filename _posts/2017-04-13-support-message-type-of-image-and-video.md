@@ -15,7 +15,7 @@ header:
 
 公司活动，需要对入群用户进行管理和自动回复。前期在Node Party Beijing上接触到@zixia的分享，Wechaty刚好能支持该活动，支持Docker部署，是一个很棒的Bot Framework。
 
-开发过程中发现，[#4 Support Message Type of Image/Video](https://github.com/Chatie/wechaty/issues/4)此功能还未实现，决定完成该项特征。
+开发过程中发现，[#4 Support Message Type of Image/Video](https://github.com/wechaty/wechaty/issues/4)此功能还未实现，决定完成该项特征。
 
 <!--more-->
 

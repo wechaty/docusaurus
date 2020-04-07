@@ -25,7 +25,7 @@ header:
 
 目前这个小程序的MVP已经通过微信审核上线，初步实现了家长（例如孩子妈妈）给孩子的课程设定时间提醒，提醒的方式包括小程序消息，短信，电话，邮件等四种常用通知方式。转发这个课程还可以邀请和课程有关的人（例如孩子爸爸，同学家长和课程老师等）也加入这个课程提醒，未来计划还会开发一些类似家长朋友圈的社交功能。有兴趣体验的朋友，可以扫这个[毛豆课堂小程序二维码]({{ '/assets/2019/maodou-ketang-invite-qrcode.png' | relative_url }})。
 
-1个月前，我们觉得通过这个小程序创建课程提醒的流程还是不够方便，想到了能否在微信里通过聊天方式来创建提醒，例如孩子妈妈发过来一条消息`”今天晚上6点晨晨英语课，在商务会馆1101“`，收到消息的爸爸就可以转发给一个微信机器人bot，从而为爸爸建好这个课程提醒，爸爸加入后就可以提醒他去送孩子上课。有这个想法的时候，正好有一天带娃路上偶遇了李卓桓，很自然就想到了要用[Wechaty](https://github.com/Chatie/wechaty/)这个牛逼闪闪的微信机器人开源项目。
+1个月前，我们觉得通过这个小程序创建课程提醒的流程还是不够方便，想到了能否在微信里通过聊天方式来创建提醒，例如孩子妈妈发过来一条消息`”今天晚上6点晨晨英语课，在商务会馆1101“`，收到消息的爸爸就可以转发给一个微信机器人bot，从而为爸爸建好这个课程提醒，爸爸加入后就可以提醒他去送孩子上课。有这个想法的时候，正好有一天带娃路上偶遇了李卓桓，很自然就想到了要用[Wechaty](https://github.com/wechaty/wechaty/)这个牛逼闪闪的微信机器人开源项目。
 
 其实知道这个项目已经有好几年了，但登录到github上看到[huan](https://github.com/huan)的5000多次commits还是把我惊了一跳，心中无数个草泥马翻腾而过，想说zixia还是那个zixia，你大爷居然还在写代码。Orz 钦佩之余，接下来一个多星期我也日夜奋战，虽然只有C语言和ARM汇编的基础，但在学习了[xiaoli-news-bot](https://github.com/wechaty/wechaty-getting-started/tree/master/examples/third-party/xiaoli)代码框架的基础上，实现了我们的[maodou-ketang-bot](https://github.com/maodouio/wechaty-getting-started/blob/master/examples/third-party/maodou/README.md)。有兴趣体验的朋友，可以扫这个[毛豆课堂小助手二维码]({{ '/assets/2019/maodou-ketang-qrcode.png' | relative_url }})，加好友之后，转给它那条孩子妈妈的消息。
 
@@ -35,19 +35,19 @@ header:
 
 初期测试我们使用的wechaty+puppeteer，发现不能发送图片和小程序，和李卓桓联系沟通后，建议使用puppet-padpro，还把他珍藏的两个token送了一个给我们做开发。这时我们发现wechaty真的很强大，可以挂接不同的puppet，而puppet-padpro就是ipad版本的puppet。
 
-同时，我们了解到[Simon大侠](https://github.com/lhr0909)已经在puppet-padpro上做了很多这方面的[底层改造工作](https://github.com/xanthous-tech/wechaty-puppet-padpro/commit/057927caf64f4b811b7269adfc18c7c8dec86efd)，就差一点即可实现发送小程序，因为时间关系没能继续完成。于是在他的基础上，我们进行了实验和修改，发现只需要在底层xml协议中加上filekey字段就可以了。随后我发了一个相关的#issue [Send Mini-Program](https://github.com/Chatie/wechaty/issues/1806)，接下来我的同事[@zhaoic](https://github.com/zhaoic)参与完成了后继的开发工作，初步解决了这个问题并提交了代码的PR。
+同时，我们了解到[Simon大侠](https://github.com/lhr0909)已经在puppet-padpro上做了很多这方面的[底层改造工作](https://github.com/xanthous-tech/wechaty-puppet-padpro/commit/057927caf64f4b811b7269adfc18c7c8dec86efd)，就差一点即可实现发送小程序，因为时间关系没能继续完成。于是在他的基础上，我们进行了实验和修改，发现只需要在底层xml协议中加上filekey字段就可以了。随后我发了一个相关的#issue [Send Mini-Program](https://github.com/wechaty/wechaty/issues/1806)，接下来我的同事[@zhaoic](https://github.com/zhaoic)参与完成了后继的开发工作，初步解决了这个问题并提交了代码的PR。
 
 对这次 PR 想仔细了解的可以直接进入下面的3个链接，重要的代码部分我也摘录在本文中，便于给想了解这个工作的人多一些线索。
 
-* <https://github.com/Chatie/wechaty/pull/1822/files>
-* <https://github.com/Chatie/wechaty-puppet/pull/55/files>
+* <https://github.com/wechaty/wechaty/pull/1822/files>
+* <https://github.com/wechaty/wechaty-puppet/pull/55/files>
 * <https://github.com/botorange/wechaty-puppet-padpro/pull/172/files>
 
 下面，我就重点介绍一下我们是如何实现发送微信小程序的。
 
 ## 如何用PadPro实现发送微信小程序
 
-实现发送小程序改造代码的过程，需要涉及 wechaty，wechaty-puppet和wechaty-puppet-padpro 三个库。关于这三个库的关系，推荐读一下另一位大侠[苏畅](https://github.com/su-chang)写的这篇[Summary of Learning Wechaty and Padpro](https://blog.chatie.io/summary-of-learning-wechaty-and-padpro)，非常清晰的勾画出了从上到下的三个层，即接口层-抽象层-实现层的逻辑关系，这里我就不再赘述，主要说明一下我们所做的代码改动过程。
+实现发送小程序改造代码的过程，需要涉及 wechaty，wechaty-puppet和wechaty-puppet-padpro 三个库。关于这三个库的关系，推荐读一下另一位大侠[苏畅](https://github.com/su-chang)写的这篇[Summary of Learning Wechaty and Padpro](https://wechaty.github.io/summary-of-learning-wechaty-and-padpro)，非常清晰的勾画出了从上到下的三个层，即接口层-抽象层-实现层的逻辑关系，这里我就不再赘述，主要说明一下我们所做的代码改动过程。
 
 要想从上到下整个改动，涉及的代码修改量很大，为了尽快跑通小程序的流程，经过分析后，我们发现UrlLink结构，和小程序比较接近。这样我们就不需要动wechaty和wechaty-puppet这两个库，只修改wechaty-puppet-padpro这一个库，大大减轻了工作量。
 
@@ -449,7 +449,7 @@ padpro中想要发送一个小程序需要先打开调试开关`PADPRO_LOG='sill
 4. 将获得到的信息嵌入模板
 5. 得到的XML结构作为messageSendMiniProgram的返回数据
 
-我们把抓到的底层 xml 协议发到了[这里](https://github.com/Chatie/wechaty/issues/1806)，有兴趣深入研究的朋友可以继续分析这些底层的协议字段。虽然我们猜出了一些关键字段，实现了基本的发送功能，但不知道微信服务器那边会不会监测字段的完整性或者正确性，毕竟通过这样Hack的方法要把bot拉入黑名单也很容易。
+我们把抓到的底层 xml 协议发到了[这里](https://github.com/wechaty/wechaty/issues/1806)，有兴趣深入研究的朋友可以继续分析这些底层的协议字段。虽然我们猜出了一些关键字段，实现了基本的发送功能，但不知道微信服务器那边会不会监测字段的完整性或者正确性，毕竟通过这样Hack的方法要把bot拉入黑名单也很容易。
 
 ### thumbnailUrl的CDN上传
 

@@ -45,5 +45,5 @@ Finally, I like wechaty, thanks to all the contributors of wechaty!
 
   [1]: /assets/2017/leinue-bot.jpg
   [2]: /assets/2017/leinue-screenshot.png
-  [3]: https://blog.chatie.io/guide/2017/01/01/getting-started-wechaty.html
-  [4]: https://github.com/chatie/wechaty/wiki/Docker
+  [3]: https://wechaty.github.io/guide/2017/01/01/getting-started-wechaty.html
+  [4]: https://github.com/wechaty/wechaty/wiki/Docker

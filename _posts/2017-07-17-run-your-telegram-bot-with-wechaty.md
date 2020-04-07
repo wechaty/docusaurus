@@ -59,7 +59,7 @@ Taking [MESE bot](https://github.com/hczhcz/mese-next-telegram) as an example, i
 
 Now, when creating a new Telegram chatbot, I would like to run it on WeChat too. Considering each chatbot has its own needs and the solution from MESE bot can not cover all of them, it requires a more general way to adapt between Telegram and WeChat. The difference here is that a "general" library should be strictly compatible (as much as it can be) with Telegram's API standard like using an integer as a user ID and providing complete message objects as defined in [Telegram Bot API](https://core.telegram.org/bots/api).
 
-That is why I started the project to build a WeChat adaptor for Telegram Bot API. "An adaptor" means it has two ends. On Telegram's side, it clones the interface of [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api) which implements the latest version of Telegram Bot API. On WeChat's side, I decided to use [Wechaty](https://github.com/Chatie/wechaty) because it is well maintained by an active community. For this project, it is important to keep both ends work well. The WeChat's side worth more attention since WeChat's protocol is not officially provided to developers. An active community like Wechaty's can help a lot in keeping the library updated in this case.
+That is why I started the project to build a WeChat adaptor for Telegram Bot API. "An adaptor" means it has two ends. On Telegram's side, it clones the interface of [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api) which implements the latest version of Telegram Bot API. On WeChat's side, I decided to use [Wechaty](https://github.com/wechaty/wechaty) because it is well maintained by an active community. For this project, it is important to keep both ends work well. The WeChat's side worth more attention since WeChat's protocol is not officially provided to developers. An active community like Wechaty's can help a lot in keeping the library updated in this case.
 
 ## From a Technical Perspective
 
@@ -87,7 +87,7 @@ message = {
 }
 ```
 
-The most difficult part is managing IDs. Telegram assigns a permanent ID to each user, each group, and each message. As mentioned in [Wechaty FAQ](https://github.com/Chatie/wechaty/wiki/FAQ), an alias which contains a unique ID would be able to identify a user. The unique ID is generated based on the timestamp and ensured uniqueness by spining:
+The most difficult part is managing IDs. Telegram assigns a permanent ID to each user, each group, and each message. As mentioned in [Wechaty FAQ](https://github.com/wechaty/wechaty/wiki/FAQ), an alias which contains a unique ID would be able to identify a user. The unique ID is generated based on the timestamp and ensured uniqueness by spining:
 
 ```javascript
 while (Date.now() === lastID) {
@@ -121,4 +121,4 @@ stopPolling() {
 
 I am really glad to share the story of [Wechaty Telegram Bot Adaptor](https://github.com/hczhcz/wechaty-telegram) to you. Wechaty is cool! As well, the community's blog and WeChat group benefit developers a lot.
 
-There are still a lot of work to do. If you are interested in making this adaptor work better, please feel free to submit issues/PRs. In addition, some parts of Wechaty still lack documentation. I have had some discussion with [@huan](https://github.com/Chatie/wechaty/pull/640) and @ax4 about it. If you are interested in adding documentation to them, it would be helpful to many projects powered by Wechaty including this one.
+There are still a lot of work to do. If you are interested in making this adaptor work better, please feel free to submit issues/PRs. In addition, some parts of Wechaty still lack documentation. I have had some discussion with [@huan](https://github.com/wechaty/wechaty/pull/640) and @ax4 about it. If you are interested in adding documentation to them, it would be helpful to many projects powered by Wechaty including this one.

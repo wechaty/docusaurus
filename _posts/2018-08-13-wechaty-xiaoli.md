@@ -233,7 +233,7 @@ async function onLogin(user) {
 
 以上代码表示机器人会在周一到周五每天9:00am准时给群里发送一份人工智能日报。
 
-到这里，这个又能查新闻，又能发日报的wechaty机器人就完成啦（完整代码看[这里](https://github.com/Chatie/wechaty-getting-started/tree/1305ada4278e7d19932a2c824e5d7eae5eb41f0f/examples/third-party/xiaoli)）。
+到这里，这个又能查新闻，又能发日报的wechaty机器人就完成啦（完整代码看[这里](https://github.com/wechaty/wechaty-getting-started/tree/1305ada4278e7d19932a2c824e5d7eae5eb41f0f/examples/third-party/xiaoli)）。
 
 ## <a name="append"></a>附：如何使用小理的内容接口
 

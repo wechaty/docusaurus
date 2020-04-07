@@ -11,7 +11,7 @@ header:
 
 > Author: [@wangning](https://github.com/wnbupt/wechaty_email) is a postgraduate student at BUPT who is a frontend full stack engineer, with rich Machine Learning/NLP/Image project experiences.
 
-As soon as I learn how to use 6 lines of JavaScript to achieve a simple chatbot based on [Wechaty](https://github.com/Chatie/wechaty), I was deeply attracted and decide to develop an easy-to-use email tool based on it. [Wechaty-Mail](https://github.com/wnbupt/wechaty_email) is an application based on Wechaty which can help you get notifications in WeChat when you receive new emails.
+As soon as I learn how to use 6 lines of JavaScript to achieve a simple chatbot based on [Wechaty](https://github.com/wechaty/wechaty), I was deeply attracted and decide to develop an easy-to-use email tool based on it. [Wechaty-Mail](https://github.com/wnbupt/wechaty_email) is an application based on Wechaty which can help you get notifications in WeChat when you receive new emails.
 
 ![wechaty_email](/assets/2017/wechaty-email.png)
 
@@ -34,6 +34,6 @@ Find more details in my github repository [Wechaty-Email](https://github.com/wnb
 
 ## Appendix: Packages We Used
 
-* [Wechaty](https://github.com/chatie/wechaty): A great and easy-to–use WeChat middleware.
+* [Wechaty](https://github.com/wechaty/wechaty): A great and easy-to–use WeChat middleware.
 * [Imap](https://github.com/mscdex/node-imap): An IMAP client module for node.js.
 * [Mailparser](https://github.com/nodemailer/mailparser): An advanced email parser for Node.js.

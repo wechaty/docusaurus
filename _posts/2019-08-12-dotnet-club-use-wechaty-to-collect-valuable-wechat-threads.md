@@ -57,7 +57,7 @@ tags:
 
 其中最为关键的就是右上角的“WeChaty 自动转换客服” club-chaty 项目，它能将收到的微信“消息记录”类型的消息导出为 JSON 格式，同时解析并下载其中包含的多媒体消息，包括链接、文件和图片视频等。
 
-之所以它能将微信消息提取到微信之外，这得益于微信消息解析 SDK。club-chaty 开发之初，在选用微信 SDK 的时候，发现社区中的微信 SDK 很多，琳琅满目到处都是，一时之间，难分伯仲。然而，club-chaty 要求能够解析“消息记录”类型的消息，这一硬性要求很快便将绝大多数 SDK 排除在外了。只有 [WeChaty](https://github.com/Chatie/wechaty) 才能完美地提供这些功能。
+之所以它能将微信消息提取到微信之外，这得益于微信消息解析 SDK。club-chaty 开发之初，在选用微信 SDK 的时候，发现社区中的微信 SDK 很多，琳琅满目到处都是，一时之间，难分伯仲。然而，club-chaty 要求能够解析“消息记录”类型的消息，这一硬性要求很快便将绝大多数 SDK 排除在外了。只有 [WeChaty](https://github.com/wechaty/wechaty) 才能完美地提供这些功能。
 
 ![WeChaty Logo](/assets/2019/dotnetclub-chaty/wechaty.jpg)
 

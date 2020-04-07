@@ -16,7 +16,7 @@ header:
 
 > 作者: [Tom](https://github.com/quantumFlame)   
 代码: [MetaPuppetForPython](https://github.com/quantumFlame/MetaPuppetForPython)   
-首发于博客: [用Python写Wechaty程序](https://blog.chatie.io/meta-puppet-for-python/)   
+首发于博客: [用Python写Wechaty程序](https://wechaty.github.io/meta-puppet-for-python/)   
 文本协议: CC BY-NC-SA 3.0 CN
 
 [![MetaPuppetForPython](/assets/2020/2020-03-meta-puppet-for-python.jpg)](https://github.com/quantumFlame/MetaPuppetForPython)  

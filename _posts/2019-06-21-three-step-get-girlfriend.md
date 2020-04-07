@@ -156,11 +156,11 @@ module.exports = {
 
     从2017年6月下旬开始，使用基于web版微信接入方案存在大概率的被限制登陆的可能性。 主要表现为：无法登陆Web 微信，但不影响手机等其他平台。 验证是否被限制登陆： https://wx.qq.com 上扫码查看是否能登陆，不能登录的话，那你可能就无法用这个工具了。 更多内容详见：
 
-    [Can not login with error message: 当前登录环境异常。为了你的帐号安全，暂时不能登录web微信。](https://github.com/Chatie/wechaty/issues/603)
+    [Can not login with error message: 当前登录环境异常。为了你的帐号安全，暂时不能登录web微信。](https://github.com/wechaty/wechaty/issues/603)
 
-    [[谣言] 微信将会关闭网页版本](https://github.com/Chatie/wechaty/issues/990)
+    [[谣言] 微信将会关闭网页版本](https://github.com/wechaty/wechaty/issues/990)
 
-    [新注册的微信号无法登陆](https://github.com/Chatie/wechaty/issues/872)
+    [新注册的微信号无法登陆](https://github.com/wechaty/wechaty/issues/872)
 2. 执行npm run start时无法安装puppet-puppeteer&&Chromium
 
     * Centos7下部署出现以下问题

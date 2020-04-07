@@ -68,6 +68,6 @@ Please get in touch if you'd like to know about the next Shanghai Wechaty WWDC a
 
 Wechaty is used in many ChatBot projects by hundreds of developers. If you want to talk with other developers, just scan the following QR Code in WeChat with secret code wechaty, join our Wechaty Developers' Home now.
 
-![qrcode](https://chatie.io/wechaty/images/bot-qr-code.png)
+![qrcode](https://wechaty.github.io/wechaty/images/bot-qr-code.png)
 
 Scan now, because other Wechaty developers want to talk with you too! (secret code: wechaty)

@@ -171,7 +171,7 @@ Bot或Bot引擎或Bot智能引擎是机器模仿人类智能的系统，因此�
 根据国家《新一代人工智能发展规划》的指导，首先开展Bot应用开发，然后提出新一代AI原创理论，并开发相应的Bot原创技术和产品，展示我们在AI理论原创和Bot技术原创方面的成果。
 
 ## 四、对WeChaty的思考
-WeChaty是一个使用Nodejs的开源Bot项目[https://github.com/Chatie/wechaty](https://github.com/Chatie/wechaty)，我们用WeChaty实现了微信群自动邀请入群的功能，获得了一点使用体验，而且感觉可以在AI教育之中用WeChaty开源项目做不少事情。
+WeChaty是一个使用Nodejs的开源Bot项目[https://github.com/wechaty/wechaty](https://github.com/wechaty/wechaty)，我们用WeChaty实现了微信群自动邀请入群的功能，获得了一点使用体验，而且感觉可以在AI教育之中用WeChaty开源项目做不少事情。
 
 ### （一）理解WeChaty的价值
 WeChaty的价值至少有三个方面：Bot聊天机器人、微信Web接口中间件、开放开源的Bot开发平台。

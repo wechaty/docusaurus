@@ -22,17 +22,17 @@ Thanks to [@Huan](https://github.com/huan), [@ax4](https://github.com/ax4),[@hcz
 <!--more-->
 
 > We need to document them better, not only the public but also the internal modules and methods.  
-> Finally we decided to use the classic [jsdoc](http://usejsdoc.org/ "jsdoc") to embed document in TypeScript, then generate document to [docs/](https://github.com/Chatie/wechaty/tree/master/docs "docs/") by [jsdoc2md](https://github.com/jsdoc2md/jsdoc-to-markdown "jsdoc2md").  
-> -- @Huan said in [issue 73](https://github.com/Chatie/wechaty/issues/73 "issue 73") in Nov 2016.
+> Finally we decided to use the classic [jsdoc](http://usejsdoc.org/ "jsdoc") to embed document in TypeScript, then generate document to [docs/](https://github.com/wechaty/wechaty/tree/master/docs "docs/") by [jsdoc2md](https://github.com/jsdoc2md/jsdoc-to-markdown "jsdoc2md").  
+> -- @Huan said in [issue 73](https://github.com/wechaty/wechaty/issues/73 "issue 73") in Nov 2016.
 
-At first, we write the doc in [wiki](https://github.com/Chatie/wechaty/wiki "wiki"), and it lasts for nearly a year.....
+At first, we write the doc in [wiki](https://github.com/wechaty/wechaty/wiki "wiki"), and it lasts for nearly a year.....
 
 A lot of developers use wiki to learn wechaty, but the wiki's performance is not good, it cannot update automatically and doesn't base on user's most demand.
 
 > * some minor fix (such as the different naming [Message Class](https://github.com/wechaty/wechaty/wiki/API#message-class) & [Class Room](https://github.com/wechaty/wechaty/wiki/API#class-room))
 > * improvement on the formatting, e.g. the level setting of each title
 > * maybe, add an index for better guiding  
-> -- In Feb 2017, [@ax4](https://github.com/ax4) creat an [issue](https://github.com/Chatie/wechaty/issues/252 "issue") and expressed his willingness to contribute the document.
+> -- In Feb 2017, [@ax4](https://github.com/ax4) creat an [issue](https://github.com/wechaty/wechaty/issues/252 "issue") and expressed his willingness to contribute the document.
 
 I like [@ax4](https://github.com/ax4)'s idea about the document guide:
 
@@ -76,7 +76,7 @@ Generates markdown API documentation from jsdoc annotated source code. Useful fo
 
 When you document your code using valid jscode comments and run jsdoc command (e.g. `jsdoc2md example.js`), then you can get a markdown output easily.
 
-At first, I just write all of jsdoc in the code and link [wechaty/docs/index.md](https://github.com/Chatie/wechaty/blob/master/docs/index.md) to the users, but I cannot sync `README.md` file with the code and make readme as simple as it can, so I have to do some else.
+At first, I just write all of jsdoc in the code and link [wechaty/docs/index.md](https://github.com/wechaty/wechaty/blob/master/docs/index.md) to the users, but I cannot sync `README.md` file with the code and make readme as simple as it can, so I have to do some else.
 
 First, I should know how jsdoc2md works.
 
@@ -104,18 +104,18 @@ For the wechaty document, I change two following dmd partials:
 
 [@Huan](https://github.com/huan), [@ax4](https://github.com/ax4),[@hczhcz](https://github.com/hczhcz), [@William](https://github.com/kis87988) and I talked a lot about wechaty document on the following issues:
 
-* **issue73:** [[doc] To Embed Document in Wechaty Code for Generating Automaticly](https://github.com/chatie/wechaty/issues/73)
-* **issue252:** [[doc] Contribute to the doc editing[ jsdoc / jsdoc2md / typedoc ]](https://github.com/chatie/wechaty/issues/252)
+* **issue73:** [[doc] To Embed Document in Wechaty Code for Generating Automaticly](https://github.com/wechaty/wechaty/issues/73)
+* **issue252:** [[doc] Contribute to the doc editing[ jsdoc / jsdoc2md / typedoc ]](https://github.com/wechaty/wechaty/issues/252)
 
 #### Related PR
 
 Also, [@hczhcz](https://github.com/hczhcz) and [@ax4](https://github.com/ax4) and I contribute a lot on the document:  
 
-* **PR378:** [jsdoc2md may flush some pieces of the embedded doc](https://github.com/Chatie/wechaty/issues/378)
-* **PR380:** [fix jsdoc flush issue #378 and minor fix on the doc examples](https://github.com/Chatie/wechaty/issues/380)  
-* **PR640:** [add documentation TODO entries](https://github.com/Chatie/wechaty/pull/640)
-* **PR725:** [add wechaty document](https://github.com/Chatie/wechaty/pull/725)
-* **PR321:** [Add JsDoc for Class Contact](https://github.com/Chatie/wechaty/pull/321)
+* **PR378:** [jsdoc2md may flush some pieces of the embedded doc](https://github.com/wechaty/wechaty/issues/378)
+* **PR380:** [fix jsdoc flush issue #378 and minor fix on the doc examples](https://github.com/wechaty/wechaty/issues/380)  
+* **PR640:** [add documentation TODO entries](https://github.com/wechaty/wechaty/pull/640)
+* **PR725:** [add wechaty document](https://github.com/wechaty/wechaty/pull/725)
+* **PR321:** [Add JsDoc for Class Contact](https://github.com/wechaty/wechaty/pull/321)
 
 ### Doc basic line
 
@@ -130,17 +130,17 @@ For the convenience of developers, our doc guideline as follows:
 2. Embedded doc insert in TypeScript
 3. Compile TypeScript into JavaScript, using `npm run dist`
 4. Run jsdoc / jsdoc2md, using `npm run doc`
-5. Get the final doc, in [index.md](https://github.com/Chatie/wechaty/blob/master/docs/index.md), config it to [chatie.io/wechaty](http://chatie.io/wechaty)
+5. Get the final doc, in [index.md](https://github.com/wechaty/wechaty/blob/master/docs/index.md), config it to [wechaty.github.io/wechaty](http://wechaty.github.io/wechaty)
 
 ### Wechaty Jsdoc file
 
 We embed doc into the following file:
 
-* [src/wechaty.ts](https://github.com/Chatie/wechaty/blob/master/src/wechaty.ts)
-* [src/message.ts](https://github.com/Chatie/wechaty/blob/master/src/message.ts)
-* [src/room.ts](https://github.com/Chatie/wechaty/blob/master/src/room.ts)
-* [src/contact.ts](https://github.com/Chatie/wechaty/blob/master/src/contact.ts)
-* [src/friend-request.ts](https://github.com/Chatie/wechaty/blob/master/src/friend-request.ts)
+* [src/wechaty.ts](https://github.com/wechaty/wechaty/blob/master/src/wechaty.ts)
+* [src/message.ts](https://github.com/wechaty/wechaty/blob/master/src/message.ts)
+* [src/room.ts](https://github.com/wechaty/wechaty/blob/master/src/room.ts)
+* [src/contact.ts](https://github.com/wechaty/wechaty/blob/master/src/contact.ts)
+* [src/friend-request.ts](https://github.com/wechaty/wechaty/blob/master/src/friend-request.ts)
 
 ### Wechaty jsdoc2md progress
 
@@ -164,10 +164,10 @@ Then add the partials \{\{>member-index-list~\}\} to show the API directory, bec
 
 #### 3. Linkable Code References
 
-After the second step, I found the link jsdoc2md generate is an anchor link(`#`), it means I cannot link it to other pages(<http://chatie.io/wechaty>), this is very inconvenient for readers.
+After the second step, I found the link jsdoc2md generate is an anchor link(`#`), it means I cannot link it to other pages(<https://wechaty.github.io/wechaty>), this is very inconvenient for readers.
 Inspired by [[jsdoc2md-issue-123](https://github.com/jsdoc2md/jsdoc-to-markdown/issues/123)], [@KevinAst](https://github.com/KevinAst) using jsdoc-to-markdown wrote a beatutiful doc: [astx-redux-util](https://astx-redux-util.js.org/1.0.0/).
 I found maybe I can created a custom partial too.
-Then I override the following templates in `docs/partials/overrides`, adding <http://chatie.io/wechaty> in the link:
+Then I override the following templates in `docs/partials/overrides`, adding <https://wechaty.github.io/wechaty> in the link:
 
 * link.hbs
 * sig-link-parent.hbs
@@ -200,6 +200,6 @@ function foo() {
 npm run doc
 ```
 
-Then you can find the generated jsdoc here: [wechaty/docs/index.md](https://github.com/Chatie/wechaty/blob/master/docs/index.md)
+Then you can find the generated jsdoc here: [wechaty/docs/index.md](https://github.com/wechaty/wechaty/blob/master/docs/index.md)
 
 Cheers!

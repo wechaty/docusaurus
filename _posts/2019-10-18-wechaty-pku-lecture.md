@@ -73,7 +73,7 @@ Wechaty的开源社区，同样遵循了众多开源社区的组织形式，包�
 
 * [The Bad Part of My Chatbot Experience](https://www.bot5.club/talks/maodou-bot-limingth/)
 
-* [如何用 padpro 发送微信小程序](https://blog.chatie.io/send-miniprogram-using-padpro/)
+* [如何用 padpro 发送微信小程序](https://wechaty.github.io/send-miniprogram-using-padpro/)
 
 ## 致谢
 
