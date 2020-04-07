@@ -17,7 +17,7 @@ tags:
 
 ### Wechaty
 
-[Wechaty](https://github.com/Chatie/wechaty) 是一个开源的`微信机器人`接口，由 Typescript 构建的 Node.js  应用。支持多种微信接入方案，包括网页、ipad、ios、windows, android 等。同时支持Linux, Windows, Darwin(OSX/Mac) 和 Docker 多个平台。
+[Wechaty](https://github.com/wechaty/wechaty) 是一个开源的`微信机器人`接口，由 Typescript 构建的 Node.js  应用。支持多种微信接入方案，包括网页、ipad、ios、windows, android 等。同时支持Linux, Windows, Darwin(OSX/Mac) 和 Docker 多个平台。
 
 #### Wechaty能帮我们做什么？
 
@@ -103,7 +103,7 @@ wechaty 所创建微信机器人做的最频繁的事情就是应答消息，下
 
 - msg.say()
 
-    该方法是发送消息最常用的方法，微信机器人只要收到消息就会予以回复，即微信机器人对所接受到的消息进行回复。使用该方法需要**慎重**，很可能会导致你的微信机器人疯狂的和自己说话。具体解决办法在我们官方的 [FAQ](https://docs.chatie.io/v/zh/faq#endless-talking) 中有明确答案，有兴趣的小伙伴可以飞去查看。
+    该方法是发送消息最常用的方法，微信机器人只要收到消息就会予以回复，即微信机器人对所接受到的消息进行回复。使用该方法需要**慎重**，很可能会导致你的微信机器人疯狂的和自己说话。具体解决办法在我们官方的 [FAQ](https://wechaty.js.org/v/zh/faq#endless-talking) 中有明确答案，有兴趣的小伙伴可以飞去查看。
 
 - room.say()
 
@@ -113,7 +113,7 @@ wechaty 所创建微信机器人做的最频繁的事情就是应答消息，下
 
 ### Puppet
 
-Puppet 是帮助 Wechaty 操纵微信的工具，即微信接入方案。目前存在根据不同协议实现的版本(wechaty-puppet-padchat, wechaty-puppet-padpro,wechaty-puppet-mock等)。详细了解Puppet抽象类的层级结构，参见 [Puppet Provider Interface Documentation](https://chatie.io/wechaty-puppet/typedoc/classes/puppet.html#hierarchy)。
+Puppet 是帮助 Wechaty 操纵微信的工具，即微信接入方案。目前存在根据不同协议实现的版本(wechaty-puppet-padchat, wechaty-puppet-padpro,wechaty-puppet-mock等)。详细了解Puppet抽象类的层级结构，参见 [Puppet Provider Interface Documentation](https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html#hierarchy)。
 
 #### Puppet常用方法梳理
 
@@ -206,7 +206,7 @@ Padpro 采用 gRPC 取代 RESTful 作为通信方式。具体使用教程参见 
 
 为了便于讨论，本文以 wechaty 中的 `room.qrcode()` 为例，来阐述三个模块之间的调用关系。
 
-[Wechaty API ⇒ room.qrcode](https://docs.chatie.io/v/zh/api/room#room-qrcode-promise)
+[Wechaty API ⇒ room.qrcode](https://wechaty.js.org/v/zh/api/room#room-qrcode-promise)
 
 ```ts
     room.qrcode() ⇒ Promise <string>
@@ -220,7 +220,7 @@ Padpro 采用 gRPC 取代 RESTful 作为通信方式。具体使用教程参见 
      /**
       * Get QR Code of the Room from the room, which can be used as scan and join the room.
       * > Tips:
-      * This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/Chatie/wechaty/wiki/Puppet#3-puppet-compatible-table)
+      * This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
       * @returns {Promise<string>}
       */
     public async qrcode (): Promise<string> {
@@ -320,7 +320,7 @@ padpro 通过 GRPC 接收到微信端推送过来的消息进行处理，根据�
 
 ## 合作开发
 
-有兴趣参与 wechaty 开发的小伙伴们，可以从GitHub上将 [wechaty](https://github.com/Chatie/wechaty)、[wechaty-puppet](https://github.com/Chatie/wechaty-puppet)、[wechaty-puppet-padpro](https://github.com/botorange/wechaty-puppet-padpro) 源码下载到本地，在开发项目中使用 npm link 将以上模块载入。便于Bug修复、业务拓展等的提交。
+有兴趣参与 wechaty 开发的小伙伴们，可以从GitHub上将 [wechaty](https://github.com/wechaty/wechaty)、[wechaty-puppet](https://github.com/wechaty/wechaty-puppet)、[wechaty-puppet-padpro](https://github.com/botorange/wechaty-puppet-padpro) 源码下载到本地，在开发项目中使用 npm link 将以上模块载入。便于Bug修复、业务拓展等的提交。
 
 技术栈：`Typescript` `Node.js`
 

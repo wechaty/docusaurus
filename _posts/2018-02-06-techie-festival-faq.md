@@ -24,7 +24,7 @@ So，这篇文章主要以问答的形式来写，并且，后面遇到新的问
 
 #### 1.  Wechaty微信机器人可以用到公众号上吗？
 
-不能用于公众号，公众号本身有自动回复的功能，可以直接调用公众号的接口，具体可以查看文档，使用Wechaty制作微信机器人只能用在个人微信号上。但是wechaty 有计划把公众号整合进来，详细讨论见 [issue1016](https://github.com/Chatie/wechaty/issues/1016)
+不能用于公众号，公众号本身有自动回复的功能，可以直接调用公众号的接口，具体可以查看文档，使用Wechaty制作微信机器人只能用在个人微信号上。但是wechaty 有计划把公众号整合进来，详细讨论见 [issue1016](https://github.com/wechaty/wechaty/issues/1016)
 
 #### 2.  docker的镜像加速器
 
@@ -98,9 +98,9 @@ Wechaty本身是使用的Typescript编写。我们在编写机器人的时候，
 
 有同学问，不想通过所有的好友请求，怎么办呢？
 
-这里可以参考这个示例：<https://github.com/Chatie/wechaty/blob/master/example/friend-bot.ts>
+这里可以参考这个示例：<https://github.com/wechaty/wechaty/blob/master/example/friend-bot.ts>
 和`friend Event` API：
-<http://chatie.io/wechaty/#Wechaty+on>
+<https://wechaty.github.io/wechaty/#Wechaty+on>
 
 Wechaty提供的接口可以通过验证信息来过滤掉一部分发送请求的好友。具体的的代码：
 
@@ -161,7 +161,7 @@ if(room){
 
 #### 14.wechaty的适用场景
 
-Wechaty的适用场景非常的广泛，[Wechaty](http://chatie.io/wechaty/) 提供了一套非常方便的接口。以前我们总是去App store中安装App，然后使用App来满足我们对应用场景的一些需求。然后现在使用手机，大多数的时间都花在了微信上。不管是私聊，群聊还是看朋友圈，我们不得不承认，微信占据了我们生活的很大一部分时间。那么为何不省去下载App的时间，就在微信上满足我们对应用的需求。预定机票，酒店，租房，天气查询，周边美食查询。可以说，chat bot可以实现大多数App实现的功能，只是需要开发者自己设计。chat bot能简化一切机械的人力成本，比如：拉人入群，发送欢迎语，自动添加好友，自动踢人。说到自动踢人，其实很多群里是群主手动踢人，在wechaty developer home微信群中，实现自动踢人，当有人在群里发送无关消息时，群里的成员可以@此人，用微信表情投票，得票超过三个，机器人将自动踢人。所以chat bot能做的事情是在太多了。如果你感兴趣在可以在Wechaty的blog中有发现很多开发者写得技术文章[https://blog.chatie.io/](https://blog.chatie.io/)，和wechaty的实际应用。当然你也可以发挥想象，做出更加有意思的微信机器人。
+Wechaty的适用场景非常的广泛，[Wechaty](https://wechaty.github.io) 提供了一套非常方便的接口。以前我们总是去App store中安装App，然后使用App来满足我们对应用场景的一些需求。然后现在使用手机，大多数的时间都花在了微信上。不管是私聊，群聊还是看朋友圈，我们不得不承认，微信占据了我们生活的很大一部分时间。那么为何不省去下载App的时间，就在微信上满足我们对应用的需求。预定机票，酒店，租房，天气查询，周边美食查询。可以说，chat bot可以实现大多数App实现的功能，只是需要开发者自己设计。chat bot能简化一切机械的人力成本，比如：拉人入群，发送欢迎语，自动添加好友，自动踢人。说到自动踢人，其实很多群里是群主手动踢人，在wechaty developer home微信群中，实现自动踢人，当有人在群里发送无关消息时，群里的成员可以@此人，用微信表情投票，得票超过三个，机器人将自动踢人。所以chat bot能做的事情是在太多了。如果你感兴趣在可以在Wechaty的blog中有发现很多开发者写得技术文章[https://wechaty.github.io/](https://wechaty.github.io/)，和wechaty的实际应用。当然你也可以发挥想象，做出更加有意思的微信机器人。
 
 #### 15.执行docker run要在项目目录下
 

@@ -16,7 +16,7 @@ Recently I was in San Francisco talking to a lot of my friends in the Chatbot co
 
 A lot of Americans look to China and WeChat for the future of Chatbots, but in fact Tencent has still not released an official "Chatbot SDK". Unlike Facebook, Slack, LINE, Telegram and every other messaging platform. [bot.QQ.com](http://bot.qq.com/) is still just a teaser of what might be.
 
-If you are determined enough, you can still build chatbots for WeChat but it feels like swimming upstream without a guide. For those who don't know, [WeChaty](https://github.com/Chatie/wechaty) allows you to turn a wechat personal account into a chatbot, and provides a [javascript API](https://github.com/Chatie/wechaty#api-reference) to talk to WeChat.
+If you are determined enough, you can still build chatbots for WeChat but it feels like swimming upstream without a guide. For those who don't know, [WeChaty](https://github.com/wechaty/wechaty) allows you to turn a wechat personal account into a chatbot, and provides a [javascript API](https://github.com/wechaty/wechaty#api-reference) to talk to WeChat.
 
 So in many ways WeChaty is becoming the missing bot SDK for WeChat, and it's community is the main gathering point for all types of chatbot and NLP discussion in China.
 
@@ -29,7 +29,7 @@ Additionally the core wechaty team make a big effort to use English in their doc
 So far the Tencent official APIs have only addressed 1:1 chatbots. WeChaty API is addressing an extra layer with addressing for users within groups.
 In the US Slack is providing new APIs for botmakers, such as "buttons" that you can use [to make choices in a shared chat](https://api.slack.com/interactive-messages). This brings up surprising design problems such as - if one person pushes a button to change state, should everyone else in the group see that state reflected? Or should each person get the chance to make their own decision, such as for a voting app, where everyone can vote differently.
 Slack is providing infrastructure to support both use cases.
-The official tencent API allows for messages to single users, but [Wechaty also has a 'room' concept](https://github.com/Chatie/wechaty#room) to allow the multiuser messaging.
+The official tencent API allows for messages to single users, but [Wechaty also has a 'room' concept](https://github.com/wechaty/wechaty#room) to allow the multiuser messaging.
 
 With a group shared experience, there is a huge benefit to chatbots. Suddenly you can see what other people are doing. You can learn how to "use" the bot just by watching someone else's conversation. You can do tasks together such as peer-learning. The simple text UI suddenly becomes a huge benefit as it's easy to update a shared state.
 With WeChaty's ability to provide an API to a personal account, in many ways it's showing the way ahead for Wechat and how chat platforms can be a huge benefit to users over conventional websites and apps.
@@ -95,6 +95,6 @@ Wechaty is used in many ChatBot projects by hundreds of developers. If you want 
 
 Wechaty Developers' Home
 
-![shanghai wechaty peeps](https://chatie.io/wechaty/images/bot-qr-code.png)
+![shanghai wechaty peeps](https://wechaty.github.io/wechaty/images/bot-qr-code.png)
 
 Scan now, because other Wechaty developers want to talk with you too! (secret code: wechaty)

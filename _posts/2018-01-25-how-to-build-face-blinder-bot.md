@@ -63,7 +63,7 @@ FaceNet算法有2个特点：
 ![wechaty](/assets/2018/wechaty-blinder-6.jpg)
 
 Wechaty 是一个开源的针对个人号的微信机器人框架，仅仅使用6行JavaScript代码就可以实现一个简单的机器人，同时支持Linux，Windows，Darwin(OSX/Mac) 和 Docker。
-博客地址是 [https://blog.chatie.io](https://blog.chatie.io)
+博客地址是 [https://wechaty.github.io](https://wechaty.github.io)
 
 ![wechaty](/assets/2018/wechaty-blinder-7.jpg)
 
@@ -148,7 +148,7 @@ docker run -d --restart=always --volume=/workdir:/workdir -e WECHATY_TOKEN=TOKEN
 
 如果你想随时在网页上控制这个机器人怎么办呢？很简单，跟着我做下面这五步：
 
-1. 打开 <https://chatie.io/angular/> ，然后点击 Click to run
+1. 打开 <https://wechaty.github.io/angular/> ，然后点击 Click to run
 2. 在输入框填入你的 WECHATY_TOKEN ，然后点击 Set Token
 3. 等待显示登录二维码，然后用手机摄像头（微信内长按不可以）扫描登录
 4. 建立一个新群，建群后不要做任何操作，先把群名修改为任意包含 facenet 的字符串

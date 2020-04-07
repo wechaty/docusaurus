@@ -149,7 +149,7 @@ Numbering rule:
 1. even numbers, such as 0.8, 0.12 indicated a stable release, which is fit for production use.
 1. odd numbers, such as 0.11 or 0.13, represented as development releases.
 
-See also: <https://github.com/Chatie/wechaty/issues/905>
+See also: <https://github.com/wechaty/wechaty/issues/905>
 
 ## 5. [tstest](https://github.com/huan/tstest)
 

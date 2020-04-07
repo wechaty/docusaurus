@@ -28,7 +28,7 @@ header:
 ## 业务分析与技术实现（基于已实现部分）
 
 代码参见：[GitHub](https://github.com/hkenter/wechatfordata)
-基于 [wechaty](https://github.com/Chatie/wechaty)
+基于 [wechaty](https://github.com/wechaty/wechaty)
 ### 碎片化数据被动查询 ###
 单一业务场景的数据应急需求，通常以碎片形式体现，或是阶段性有规律的需求，所以总结部分高频率、碎片化、有规律的需求，是此部分实现的前提。
 

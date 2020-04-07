@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 ---
 
-[![Wechaty](https://chatie.io/wechaty/images/wechaty-logo-en.png)](https://github.com/chatie/wechaty)
+[![Wechaty](https://wechaty.github.io/wechaty/images/wechaty-logo-green-en.png)](https://github.com/wechaty/wechaty)
 
 ## CONNECTING CHATBOTS
 
@@ -11,7 +11,7 @@ Wechaty is a Bot SDK for Wechat **Individual** Account which can help you create
 
 ## VOICE OF DEVELOPERS
 
-> "Wechaty is a great solution, I believe there would be much more users recognize it." [link](https://github.com/chatie/wechaty/pull/310#issuecomment-285574472)  
+> "Wechaty is a great solution, I believe there would be much more users recognize it." [link](https://github.com/wechaty/wechaty/pull/310#issuecomment-285574472)  
 > &mdash; <cite>@Gcaufy, Tencent Engineer, Author of [WePY](https://github.com/Tencent/wepy)</cite>
 >
 > "太好用，好用的想哭"  
@@ -26,7 +26,7 @@ Wechaty is a Bot SDK for Wechat **Individual** Account which can help you create
 > "If you know js ... try Wechaty, it's easy to use."  
 > &mdash; <cite>@Urinx Uri Lee, Author of [WeixinBot(Python)](https://github.com/Urinx/WeixinBot)</cite>
 
-See more at [Wiki:Voice Of Developer](https://github.com/Chatie/wechaty/wiki/Voice%20Of%20Developer)
+See more at [Wiki:Voice Of Developer](https://github.com/wechaty/wechaty/wiki/Voice%20Of%20Developer)
 
 ## My Talk
 

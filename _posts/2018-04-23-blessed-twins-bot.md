@@ -52,7 +52,7 @@ Instead, use `bot.Room`, `bot.Contact`, `bot.FriendRequest`, and `bot.Message`, 
 
 ## THE LONG STORY
 
-To allow multi-instance is on our todo list for many months.(See Github Issue [#518](https://github.com/Chatie/wechaty/issues/518))
+To allow multi-instance is on our todo list for many months.(See Github Issue [#518](https://github.com/wechaty/wechaty/issues/518))
 
 It will be straightforward to design all the class methods with a `puppet` parameter, which can solve the problem but we have to remember the puppet in the userspace code and pass it in for every call. I do not like that.
 
@@ -68,7 +68,7 @@ const Bot1Contact = new Proxy(Contact, handlerFactory(puppet1))
 
 But we need a new class is `instanceof` the original class, which means `Bot1Contact instanceof Contact` should be true. `Proxy` cannot meet this goal.
 
-Full ES6 Proxy PoC source code is at <https://github.com/Chatie/wechaty/issues/518#issuecomment-383319998>
+Full ES6 Proxy PoC source code is at <https://github.com/wechaty/wechaty/issues/518#issuecomment-383319998>
 
 ### 2. PoC V2: `Class.bind({})`
 
@@ -82,7 +82,7 @@ By doing this, we can get a branding new `Bot1Contact` which we can set static p
 
 However, by this technology, we can not get the right static properties inside the instance methods. We always got the static properties from the original class, which means it's utterly useless for us if we can not get back the information we need on the static properties from the new class.
 
-Full `Class.bind({})` source code is at: <https://github.com/Chatie/wechaty/issues/518#issuecomment-383357185>
+Full `Class.bind({})` source code is at: <https://github.com/wechaty/wechaty/issues/518#issuecomment-383357185>
 
 ### 3. PoC V3: `eval`
 
@@ -96,7 +96,7 @@ It works like a charm, and it will be qualified if we can set the `Bot1.Contact.
 
 However, I found that the `Bot1.Contact.prototype` could not be changed because it's `configurable` & `writable` properties are set to `false`, and the `writable` could not be changed by `Reflect.defineProperty()`, which means it will not be able to support the `Bot1Contact instanceof Contact`.
 
-Full `eval` source code is at <https://github.com/Chatie/wechaty/issues/518#issuecomment-383384175>
+Full `eval` source code is at <https://github.com/wechaty/wechaty/issues/518#issuecomment-383384175>
 
 ### 4. PoC V4: `class extend`
 
@@ -124,7 +124,7 @@ For example: if the current version's minor number is odd, which means it is a d
 
 So the regular users will always use the stable/production version when they try to `npm install wechaty` or `npm install wechaty@latest`. If they want to use the development release version, they have to opt-in by run `npm install wechaty@next`.
 
-See more about this by reading the GitHub Issue: [Continious Deploy to NPM with the @next tag when the MINOR version number is odd(in developing branch)](https://github.com/Chatie/wechaty/issues/1158)
+See more about this by reading the GitHub Issue: [Continious Deploy to NPM with the @next tag when the MINOR version number is odd(in developing branch)](https://github.com/wechaty/wechaty/issues/1158)
 
 ## CONCLUSION
 

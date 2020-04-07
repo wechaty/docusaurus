@@ -25,7 +25,7 @@ header:
 
 我就一直在想, 可不可以把这些消息公开出来, 让所有人可见, 这样感兴趣的人可以方便的查看聊天记录, 搜索感兴趣的内容. 如果我做这么一个工具, 对其他希望公开消息的群也是有意义的.
 
-正好之前有使用 [wechaty](https://github.com/Chatie/wechaty) 的经验, 说干就干, MVP 整起来! 经过几个礼拜的设计和开发, 我做了 [wewe](https://wewe.t9t.io)
+正好之前有使用 [wechaty](https://github.com/wechaty/wechaty) 的经验, 说干就干, MVP 整起来! 经过几个礼拜的设计和开发, 我做了 [wewe](https://wewe.t9t.io)
 
 ## wewe 提供的价值
 
@@ -39,7 +39,7 @@ header:
 
 [wewe](https://wewe.t9t.io) 是一个开源项目, 具体实现细节可见 [GitHub](https://github.com/t9tio/wewe)
 
-微信部分基于 [wechaty](https://github.com/Chatie/wechaty), 基本原理是启动一个浏览器, 登录网页微信后, 将收到的消息存入数据库.
+微信部分基于 [wechaty](https://github.com/wechaty/wechaty), 基本原理是启动一个浏览器, 登录网页微信后, 将收到的消息存入数据库.
 
 ## 如何加入
 

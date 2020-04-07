@@ -19,18 +19,18 @@ header:
 
 ### 介绍
 
-[Wechaty](https://github.com/Chatie/wechaty) 是一个对话机器人软件开发包，它可以帮你用 6 行 JavaScript 代码实现一个微信个人账号。由于使用 node 技术，它支持 Linux、Windows、macOS 平台和 Docker 容器。它的安装过程和其它 node 包类似，首先 ```git clone``` 源代码，再使用 node 的 npm 命令 ```npm install & npm start``` 实现开箱即用，同时官方也提供了入门案例：Wechaty getting started。而在国内，实际安装过程中可能会因某些软件依赖的原因遇到问题，本文记录了安装过程中可能会出现的错误及解决办法，下面描述详细的步骤和说明：
+[Wechaty](https://github.com/wechaty/wechaty) 是一个对话机器人软件开发包，它可以帮你用 6 行 JavaScript 代码实现一个微信个人账号。由于使用 node 技术，它支持 Linux、Windows、macOS 平台和 Docker 容器。它的安装过程和其它 node 包类似，首先 ```git clone``` 源代码，再使用 node 的 npm 命令 ```npm install & npm start``` 实现开箱即用，同时官方也提供了入门案例：Wechaty getting started。而在国内，实际安装过程中可能会因某些软件依赖的原因遇到问题，本文记录了安装过程中可能会出现的错误及解决办法，下面描述详细的步骤和说明：
 
-* 项目地址: [Wechaty](https://github.com/Chatie/wechaty)
-* Wechaty 起步: [Wechaty Getting Started](https://github.com/Chatie/wechaty-getting-started)
-* Wechaty 文档: [Wechaty Documents](https://chatie.io/wechaty/)
+* 项目地址: [Wechaty](https://github.com/wechaty/wechaty)
+* Wechaty 起步: [Wechaty Getting Started](https://github.com/wechaty/wechaty-getting-started)
+* Wechaty 文档: [Wechaty Documents](https://wechaty.js.org)
 
 <!--more-->
 
 ### 概念
 
 
-* [Puppet](https://github.com/Chatie/wechaty/wiki/Puppet): 一个包含了机器人对话逻辑的抽象类，是 Wechaty 技术架构的一部分。继承实现 Puppet 抽象类（协议）的组件，即可实现更广泛的与联系人、消息/一对一对话、群组/聊天室/多对多对话等相关逻辑。Puppet 的中文是木偶，用在这里相当传神。
+* [Puppet](https://github.com/wechaty/wechaty/wiki/Puppet): 一个包含了机器人对话逻辑的抽象类，是 Wechaty 技术架构的一部分。继承实现 Puppet 抽象类（协议）的组件，即可实现更广泛的与联系人、消息/一对一对话、群组/聊天室/多对多对话等相关逻辑。Puppet 的中文是木偶，用在这里相当传神。
 * [node-gyp](https://www.npmjs.com/package/node-gyp): 基于 gyp 编写的用来编译 node 本地扩展模块的 node 包，而 gpy 是 Chromium 项目上用于实现跨平台编译的工具。可参考 [安装文档](https://github.com/nodejs/node-gyp#installation)
 * [windows-build-tools](https://www.npmjs.com/package/windows-build-tools): node 包装的 Windows 平台的编译工具
 * [node-expat](https://www.npmjs.com/package/node-expat): 基于 libexpat 的用来处理 XML 的 node 包，libexpat 是一个号称最快的 XML 解析库，纯 C 语言编写。Wechaty 使用它解析基于 XML 的通讯。可参考 [安装文档](https://github.com/felixrieseberg/windows-build-tools)

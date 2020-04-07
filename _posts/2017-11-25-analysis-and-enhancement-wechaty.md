@@ -19,13 +19,13 @@ header:
 
 ## 简述
 
-我对wechaty一开始是因为兴趣，而并非是项目需要，因此只是观望。直到看到美女[lijiarui](https://github.com/lijiarui)提出的issue[#710 Cannot send pdf file using MediaMessage](https://github.com/Chatie/wechaty/issues/710)，被赏金诱惑才尝试着手来解决这个问题(:joy:)，并陆续提交了一些pr来增强wechaty的功能(论激励的重要性:joy:)。
+我对wechaty一开始是因为兴趣，而并非是项目需要，因此只是观望。直到看到美女[lijiarui](https://github.com/lijiarui)提出的issue[#710 Cannot send pdf file using MediaMessage](https://github.com/wechaty/wechaty/issues/710)，被赏金诱惑才尝试着手来解决这个问题(:joy:)，并陆续提交了一些pr来增强wechaty的功能(论激励的重要性:joy:)。
 
 > Pull requests list:
-> [#714 send any type file](https://github.com/Chatie/wechaty/pull/714)
-> [#727 Add Message.forward() forward message](https://github.com/Chatie/wechaty/pull/727)
-> [#744 emit RECALLED type msg(fix #8)](https://github.com/Chatie/wechaty/pull/744)
-> [#771 Support for send 25Mb+ files](https://github.com/Chatie/wechaty/pull/771)
+> [#714 send any type file](https://github.com/wechaty/wechaty/pull/714)
+> [#727 Add Message.forward() forward message](https://github.com/wechaty/wechaty/pull/727)
+> [#744 emit RECALLED type msg(fix #8)](https://github.com/wechaty/wechaty/pull/744)
+> [#771 Support for send 25Mb+ files](https://github.com/wechaty/wechaty/pull/771)
 
 在这个过程过，为了实现这些功能，不得不尝试去阅读WebWxApp及wechaty的源码，来了解他们的功能结构，以及学习typesrcipt。
 本文通过记录解决这几个问题的过程，来对WebWxApp和Wechaty的进行一些解读。
@@ -187,7 +187,7 @@ WechatyBro.glue = {
 
 ### 捕捉撤消信息事件
 
-以前wechaty是捕捉不到撤回消息的RECALLED事件的（最早见[issues#8](https://github.com/Chatie/wechaty/issues/8)），原因在于webWxApp的`messageProcess`中，对RECALLED事件的处理与其他类型的信息事件不一致。
+以前wechaty是捕捉不到撤回消息的RECALLED事件的（最早见[issues#8](https://github.com/wechaty/wechaty/issues/8)），原因在于webWxApp的`messageProcess`中，对RECALLED事件的处理与其他类型的信息事件不一致。
 
 我们看下webWxApp中处理消息的`messageProcess()`方法代码：
 
@@ -426,7 +426,7 @@ function glueToAngular() {
 
 ```
 
-完整patch代码见[PR commit#174b6775c](https://github.com/Chatie/wechaty/commit/174b6775c4e9242e5f003094b2f9e10953c978f2)
+完整patch代码见[PR commit#174b6775c](https://github.com/wechaty/wechaty/commit/174b6775c4e9242e5f003094b2f9e10953c978f2)
 
 ## End
 

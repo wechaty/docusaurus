@@ -1,6 +1,6 @@
-# blog.chatie.io
+# wechaty.github.io
 
-[Chatie Official Blog](https://blog.chatie.io)
+[Wechaty Official Homepage](https://wechaty.github.io)
 
 ## HOW TO POST BLOG
 
@@ -28,10 +28,10 @@ Example as follows:
 
  title: "'Score Your Face Photo' a ML&Wechaty practice"
  date: 2017-09-18 09:00 +0800
- author: huyingxi
+ author: your_github_username
  ---
 
- > Author: [@huyingxi](https://github.com/huyingxi/wechaty_selfie) enjoying ML&Wechaty at BUPT
+ > Author: [@your_github_username](https://github.com/your_github_username) your one-line bio at here
 ```
 
 ### 2. Writing Style
@@ -40,7 +40,7 @@ Example as follows:
 * Find a good image for the blog to make it more beautiful.
 * Embed the photo & video before publishing, save all external file to the blog `/assets/2018` directory.
 
-see more: [Do not include Date in URL](https://github.com/Chatie/blog/issues/79)
+see more: [Do not include Date in URL](https://github.com/wechaty/wechaty.github.io/issues/79)
 
 ### 3. Add `<!--more-->` Section
 
@@ -96,14 +96,14 @@ npm test
 
 minima: <https://github.com/jekyll/minima>
 
-## AUTHOR
+## Author
 
-[Huan LI (李卓桓)](http://linkedin.com/in/zixia) <zixia@zixia.net>
+[Huan LI](https://github.com/huan) ([李卓桓](http://linkedin.com/in/zixia)), Tencent TVP of Chatbot, \<zixia@zixia.net\>
 
 [![Profile of Huan LI (李卓桓) on StackOverflow](https://stackexchange.com/users/flair/265499.png)](https://stackexchange.com/users/265499)
 
-## COPYRIGHT & LICENSE
+## Copyright & License
 
-* Code & Docs © 2019 - now Huan LI <zixia@zixia.net>
+* Code & Docs © 2019-now Huan LI \<zixia@zixia.net\>
 * Code released under the Apache-2.0 License
 * Docs released under Creative Commons
