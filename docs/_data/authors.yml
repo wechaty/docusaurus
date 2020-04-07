@@ -183,6 +183,15 @@ moderncrazy:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/moderncrazy"
 
+zjacai:
+  name        : "zjacai"
+  bio         : "网站服务器运维"
+  avatar      : "https://avatars2.githubusercontent.com/u/20898457?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zjacai"
+
 lemonsx:
   name        : "lemonsx"
   avatar      : "https://avatars1.githubusercontent.com/u/35106813?s=460&v=4"
