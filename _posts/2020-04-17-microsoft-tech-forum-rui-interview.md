@@ -13,7 +13,7 @@ header:
 ---
 <!-- markdownlint-disable -->
 
-> 作者: [李佳芮](https://github.com/lijiarui)，Microsoft AI MVP, Co-founder of Juzibot, Author of [《Chatbot Zero to One》](https://item.jd.com/12630213.html)
+> 作者: [李佳芮](https://github.com/lijiarui)，Microsoft AI MVP, Co-founder of Juzibot, Author of 《Chatbot Zero to One》
 
 <!-- more -->
 
