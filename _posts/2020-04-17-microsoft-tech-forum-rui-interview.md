@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Online Tech Forum 微软在线技术峰会 - 李佳芮专访"
 date: 2020-04-17 15:00 +0800
-author: Jiarui LI
+author: lijiarui
 categories: interview
 tags:
   - wechaty
