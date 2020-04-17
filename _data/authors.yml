@@ -3,7 +3,7 @@
 huan:
   name        : "Huan (李卓桓)"
   bio         : "Author of Wechaty. Tencent TVP of Chatbot, Conversational AI Export, Open-source Coder with 💖"
-  avatar      : "https://avatars1.githubusercontent.com/u/1361891?s=460&v=4"
+  avatar      : "https://avatars0.githubusercontent.com/u/1361891?s=460&v=4"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -60,7 +60,7 @@ coderwhocode:
 su-chang:
   name        : "SuperChang"
   bio         : "Node.js全栈工程师"
-  avatar      : "https://avatars1.githubusercontent.com/u/9332609?s=460&v=4"
+  avatar      : "https://avatars0.githubusercontent.com/u/9332609?s=460&v=4"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -69,7 +69,7 @@ su-chang:
 lijiarui:
   name        : "Jiarui LI"
   bio         : "Full stack developer, serial entrepreneur, Founder & CEO of JuZi.bot"
-  avatar      : "https://avatars1.githubusercontent.com/u/6419514?s=460&v=4"
+  avatar      : "https://avatars0.githubusercontent.com/u/6419514?s=460&v=4"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
