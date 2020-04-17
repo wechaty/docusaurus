@@ -102,7 +102,7 @@ Chatbot 的智能程度取决于它能够给理解的意图和实体的数量和
     height:0;
     overflow:hidden;
 ">
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=VnI2jl71-Y8" frameborder="0" allowfullscreen="" style="
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VnI2jl71-Y8" frameborder="0" allowfullscreen="" style="
     position: absolute;
     top:0;
     left:0;
