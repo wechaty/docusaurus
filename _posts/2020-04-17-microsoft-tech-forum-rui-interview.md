@@ -9,7 +9,7 @@ tags:
   - chatbot
 
 header:
-  teaser: /assets/2020/ms-lijiarui-interview/teaser.jpg
+  teaser: /assets/2020/ms-lijiarui-interview/teaser.png
 ---
 <!-- markdownlint-disable -->
 
