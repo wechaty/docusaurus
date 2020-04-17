@@ -109,3 +109,13 @@ Chatbot 的智能程度取决于它能够给理解的意图和实体的数量和
 "></iframe></div>
 
 看 YouTube 有障碍的同学，可以移步到 [腾讯视频](https://v.qq.com/x/page/v0952wieqwl.html)
+
+## 彩蛋
+
+下面是在后台和微软中国 CTO 韦青老师的合影，为我的新书 [《Chatbot从0到1：对话式交互设计实践指南》](https://item.jd.com/12630213.html) 打call~ 
+
+![weiqing](/assets/2020/ms-lijiarui-interview/weiqing.jpg)
+
+现场很多小伙伴发了额 wechaty 弹幕，开心~~
+
+![wechaty](/assets/2020/ms-lijiarui-interview/wechaty.jpg)
