@@ -18,6 +18,7 @@ tags: - wechaty
 > Code: [Github](https://github.com/GreyPlane/nakano-bot)
 > <del>bot名字取自朋友id</del>
 
+[![fubuki↑fubuki↑↑fubuki↑↑↑](/assets/2020/nakano-bot/fubuki.jpg)](https://github.com/GreyPlane/nakano-bot)
 <!-- more -->
 
 ## 1.动机和需求
@@ -37,11 +38,11 @@ tags: - wechaty
 因为项目本身比较简单，代码量也小，就主要介绍一下在使用[Wechaty Starter模板](https://github.com/wechaty/wechaty-getting-started)时搭建环境时的一些折腾经验吧。
 
 - 平台: `Windows 10`
-- Nodejs: 12.x
+- JS Runtime: `Nodejs 12.x`
 
 首先因为`puppet-padplus`的构建需求，需要安装`windows-build-tools`但是这里有一个小坑点，至少在和另一位朋友的安装过程中，装完之后需要手动将`Visual Studio Build Tools`的Bin目录添加到PATH中。
 
-再者这个模板的eslint config包postinstall运行的是一个bash脚本，在我的平台上即便是在有WSL和Git Bash的情况下，npm install依然会直接报错，所以建议在Windows下使用这个模板时可以直接去掉这几个依赖。
+再者这个模板的eslint config包postinstall运行的是一个bash脚本，在我的平台上即便是在有WSL和Git Bash的情况下，`npm install`依然会直接报错，所以建议在Windows下使用这个模板时可以直接去掉这几个依赖。
 
 ## 4.Furthermore
 

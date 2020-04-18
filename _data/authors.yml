@@ -217,3 +217,12 @@ cr4fun:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/cr4fun"
+
+GreyPlane:
+  name        : "GreyPlane"
+  bio         : "student from shanghai, mainly working on fornt-end dev now"
+  avatar      : "https://avatars3.githubusercontent.com/u/31082046"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/GreyPlane"
