@@ -77,7 +77,6 @@ npm init
 npm install wechaty@0.38.0
 npm install bufferutil@^4.0.1
 npm install utf-8-validate@^5.0.2
-npm install wechaty-puppet-hostie@0.5.11
 ```
 
 5、创建 bot.js 文件
