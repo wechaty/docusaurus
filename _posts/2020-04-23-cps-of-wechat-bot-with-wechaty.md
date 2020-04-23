@@ -8,13 +8,15 @@ tags:
   - wechaty
   - cps
 
-header: none
+header:
+  teaser: /assets/2020/cps-bot/qrcode.png
 ---
 <!-- markdownlint-disable -->
 
-> 作者: [曾双洁](https://github.com/shuangjie)，Linkces CEO, a noob developer
+> 作者: [shuangjie](https://github.com/shuangjie), a noob developer
 
 <!-- more -->
+
 ---
 tips: if you try to use wechaty web version, you will be know it can't work, so this post show you how to use ipad version to make bot work, if you never use wechaty any version, this post also pass the web version, because it's pointless.
 ---
