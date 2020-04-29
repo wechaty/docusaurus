@@ -1,9 +1,8 @@
-# cps-bot
 ---
 title: "Cps demo of wechat bot with wechaty"
 date: 2020-04-23 15:00
 author: shuangjie
-categories: tutorial
+categories: project
 tags:
   - wechaty
   - cps
@@ -14,12 +13,14 @@ header:
 <!-- markdownlint-disable -->
 
 > 作者: [shuangjie](https://github.com/shuangjie), a noob developer
+> Code: [Github](https://github.com/shuangjie/cps-bot)
 
 <!-- more -->
 
 ---
 tips: if you try to use wechaty web version, you will be know it can't work, so this post show you how to use ipad version to make bot work, if you never use wechaty any version, this post also pass the web version, because it's pointless.
 ---
+
 ## what is it
 cps-bot is a wechat bot that using wechaty to solve a lot of transfer and push work in the cps.
 
