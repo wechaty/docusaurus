@@ -55,7 +55,7 @@ header:
 
 ```sh
 wget https://npm.taobao.org/mirrors/node/v12.2.0/node-v12.2.0-linux-x64.tar.xz
-tar -xvf node-v12.2.0-linux-x64.tar.xz 
+tar -xvf node-v12.2.0-linux-x64.tar.xz
 mv node-v12.2.0-linux-x64 /opt/node
 tee /etc/profile << EOF
   export NODE_HOME=/opt/node
@@ -66,7 +66,7 @@ source /etc/profile
 
 随后可验证安装是否成功
 
-```
+```sh
 node -v
 ```
 
@@ -118,5 +118,3 @@ node examples/ding-dong-bot.ts
 虽然官网的示例中提供了js和ts两种方式可供选择，但实际使用时发现用js进行开发会发生许多莫名其妙的错误。
 调试修改到烦之后换到ts发现可以运行启动。估计是我没怎么用过node，有哪个配置项没有找到的缘故吧。
 所以虽然我没有删除js，但本项目的所有内容均使用ts完成。
-
-
