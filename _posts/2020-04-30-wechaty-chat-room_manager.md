@@ -9,8 +9,7 @@ header:
 > 作者: [tianyugeng](https://github.com/tianyugeng) 前端开发工程师(自称)
 <!-- more -->
 
-# 微信群管辅助 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/chatie/wechaty)
-
+## 微信群管辅助 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/chatie/wechaty)
 
 [![Node.js CI](https://github.com/wechaty/wechaty-getting-started/workflows/Node.js%20CI/badge.svg)](https://github.com/wechaty/wechaty-getting-started/actions?query=workflow%3A%22Node.js+CI%22)
 ![Node.js v10](https://img.shields.io/badge/node-%3E%3D10-green.svg)
@@ -40,6 +39,7 @@ header:
   - [ ] 群主或机器人管理员可通过指令设置屏蔽指定格式的消息转发
 
 ## 系统需求
+
 > 我是用的是centos7作为开发运行环境，已经提前安装了git
 
 1. Node.js v10 或以上
@@ -52,6 +52,7 @@ header:
 如果你没有安装node或已经安装的node版本低于10，请根据下面步骤安装新的nodejs环境
 
 - Linux （centos7）
+
 ```sh
 wget https://npm.taobao.org/mirrors/node/v12.2.0/node-v12.2.0-linux-x64.tar.xz
 tar -xvf node-v12.2.0-linux-x64.tar.xz 
@@ -62,10 +63,13 @@ tee /etc/profile << EOF
 EOF
 source /etc/profile
 ```
+
 随后可验证安装是否成功
+
 ```
 node -v
 ```
+
 > 在其他平台安装 Node.js 的方法可参见 <https://nodejs.org/en/download/package-manager/>
 
 ### 1. 下载项目
