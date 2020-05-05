@@ -33,7 +33,7 @@ tags:
 
 ## 实现
 
-1. 机器人登录扫码
+### 机器人登录扫码
 
 ```javascript
 
@@ -44,10 +44,10 @@ tags:
             })
         }
     })
-    
+
 ```
 
-2. 接收消息并交给处理
+### 接收消息并交给处理
 
 ```javascript
 
@@ -66,10 +66,10 @@ tags:
    function botMsger(contact, text) {
        contact.say(text)
    }
-   
+
 ```
 
-3. 调用接口处理获取数据
+### 调用接口处理获取数据
 
 ```javascript
 
@@ -118,10 +118,10 @@ tags:
             }
         }
     })
-    
+
 ```
 
-4. 处理数据返回
+### 处理数据返回
 
 ```javascript
 
@@ -134,7 +134,7 @@ tags:
             resText += `${el.time}分钟后->${el.name}\n`
         })
     })
-    
+
 ```
 
 ## 实际效果
