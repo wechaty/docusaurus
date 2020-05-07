@@ -167,6 +167,11 @@ tags:
 开往：泮塘总站
 10分钟后->66路
 
+## 作者相关
+我的github地址：[Github](https://github.com/ershing)
+
+我的博客地址：[ershing的IT成长之路](http://ershing.cn)
+
 ## 致谢
 
 感谢 `Wechaty` 开源项目及 `JuziBot` 公司提供的 token，为开发者带来极大便利！
