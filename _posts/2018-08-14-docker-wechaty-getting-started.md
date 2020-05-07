@@ -1,11 +1,13 @@
 ---
 title: "Docker Wechaty Getting Started"
-author: zixia
+author: huan
 date: '2018-08-14 8:14:52 +0800'
-published: true
+categories: tutorial
+tags:
+  - docker
 ---
 
-> Author: [Huan LI](https://github.com/zixia), A Docker Fan
+> Author: [Huan LI](https://github.com/huan), A Docker Fan
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/zixia/wechaty.svg?maxAge=2592000)](https://hub.docker.com/r/zixia/wechaty/)
 [![Docker Stars](https://img.shields.io/docker/stars/zixia/wechaty.svg?maxAge=2592000)](https://hub.docker.com/r/zixia/wechaty/)
@@ -78,5 +80,5 @@ Thanks Docker, there's a official registry mirror in China, and you can use it b
 
 Learn more about the docker CN mirror at:
 
-- https://www.docker-cn.com/registry-mirror
-- https://docs.docker.com/registry/recipes/mirror/#use-case-the-china-registry-mirror
+- <https://www.docker-cn.com/registry-mirror>
+- <https://docs.docker.com/registry/recipes/mirror/#use-case-the-china-registry-mirror>

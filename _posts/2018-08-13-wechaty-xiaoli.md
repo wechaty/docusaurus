@@ -1,13 +1,18 @@
 ---
-layout: post
 title: "用wechaty实现新闻资讯播报机器人"
 date: 2018-08-13 09:00 +0800
 author: judaschrist
+categories: project
+tags:
+  - code
+header:
+  teaser: /assets/2018/wechaty-xiaoli.jpeg
 ---
+<!-- markdownlint-disable -->
 
 > Author: [@judaschrist](https://github.com/judaschrist), Co-founder & CTO of [小理智能](https://xiaoli.ai/) 
 
-![用wechaty实现智能内容机器人](/download/2018/wechaty-xiaoli.jpeg)
+![用wechaty实现智能内容机器人](/assets/2018/wechaty-xiaoli.jpeg)
 
 感谢 @lijiarui 邀请我分享我们的智能内容服务，以及在wechaty上的应用场景。
 
@@ -21,7 +26,7 @@ author: judaschrist
 
 新闻资讯的查询、播报是很多智能对话机器人技能中很重要的一环，一个经典的场景就是用户就自己感兴趣的关键词提问，机器人返回和该关键词相关的最新新闻资讯，如下图：
 
-![news-query-snapshot](/download/2018/xiaoli-1.jpeg)
+![news-query-snapshot](/assets/2018/xiaoli-1.jpeg)
 
 以上场景中我们询问了机器人关于```微信机器人```的最新消息，并且查看了其中一条新闻的详细内容。
 利用wechaty和小理的内容接口，我们可以很方便的实现以上功能。直接上代码：
@@ -166,7 +171,7 @@ async function onMessage(msg) {
 
 利用wechaty和小理的日报接口，我们就能把这项任务完全自动化！先看效果图：
 
-![daily-snapshot](/download/2018/xiaoli-2.jpeg)
+![daily-snapshot](/assets/2018/xiaoli-2.jpeg)
 
 小理会针对一些行业自动整理每天的相关新闻，生成一份日报，其中包含了多个主题版面，还能够通过智能分析算法自动生成新闻头条。接下来，我们就给机器人增加这个功能，让它每天定时在群里推送这样一份人工智能日报。
 首先实现```sendDaily```方法：
@@ -228,7 +233,7 @@ async function onLogin(user) {
 
 以上代码表示机器人会在周一到周五每天9:00am准时给群里发送一份人工智能日报。
 
-到这里，这个又能查新闻，又能发日报的wechaty机器人就完成啦（完整代码看[这里](https://github.com/Chatie/wechaty-getting-started/tree/1305ada4278e7d19932a2c824e5d7eae5eb41f0f/examples/third-party/xiaoli)）。
+到这里，这个又能查新闻，又能发日报的wechaty机器人就完成啦（完整代码看[这里](https://github.com/wechaty/wechaty-getting-started/tree/1305ada4278e7d19932a2c824e5d7eae5eb41f0f/examples/third-party/xiaoli)）。
 
 ## <a name="append"></a>附：如何使用小理的内容接口
 

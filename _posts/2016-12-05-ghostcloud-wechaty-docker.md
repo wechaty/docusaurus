@@ -1,11 +1,13 @@
 ---
-layout: post
 title: 'Docker玩转微信机器人框架Wechaty'
 author: shevyan
 date: '2016-12-05 11:11:11 +0800'
-categories: developer
-published: true
-excerpt_separator: <!--more-->
+categories: tutorial
+tags:
+  - code
+  - docker
+header:
+  teaser: /assets/2016/ghostcloud-banner.jpg
 ---
 
 * 本文作者：@[shevyan](https://github.com/shevyan) 晏东，[精灵云GhostCloud](https://www.ghostcloud.cn/)创始人&CEO
@@ -13,7 +15,7 @@ excerpt_separator: <!--more-->
 
 ![GhostCloud Banner][ghostcloud-banner]
 
-Wechaty(https://github.com/wechaty/wechaty)是一款开源的微信SDK，它基于微信公开的API，对接口进行了一系列的封装，提供一系列简单的接口，然后开发者可以在其之上进行微信机器人的开发。在跟作者沟通试用以后，发现其中有着非常多的应用场景，比如：
+Wechaty(<https://github.com/wechaty/wechaty>)是一款开源的微信SDK，它基于微信公开的API，对接口进行了一系列的封装，提供一系列简单的接口，然后开发者可以在其之上进行微信机器人的开发。在跟作者沟通试用以后，发现其中有着非常多的应用场景，比如：
 
 1. 如果你的好友众多，如何管理和维护好友分组；
 1. 如何快速有序地处理海量聊天信息，并区分重要性；
@@ -42,9 +44,9 @@ Wechaty.instance() // Singleton
 Step 2: 在主机上运行命令
 
 ```shell
-$ docker run -ti --rm --volume"$(pwd)":/bot zixia/wechaty mybot.js
+docker run -ti --rm --volume"$(pwd)":/bot zixia/wechaty mybot.js
 ```
-    
+
 Step 3: 拷贝二维码到浏览器
 
 ![QR Code][ghostcloud-qrcode]
@@ -82,18 +84,18 @@ EcOS (Enterprise container Operation System)是由Ghostcloud精灵云全自主�
 
 Ghostcloud EcOS，安装步骤如下：
 
-1. 浏览器访问 http://ecospkg.ghostcloud.cn/EcOS/stable/ ， 下载最新的安装文件（EcOS-install*）和服务镜像文件(srvimgs.tgz)到需要安装的服务器根目录
+1. 浏览器访问 <http://ecospkg.ghostcloud.cn/EcOS/stable/> ， 下载最新的安装文件（EcOS-install*）和服务镜像文件(srvimgs.tgz)到需要安装的服务器根目录
 1. 解压安装文件，执行安装脚本
 tar -zxf Ecos-install* && bash install.sh IPADDR(这里的IPADDR是安装EcOS所在的服务器IP地址)
 1. 解压服务镜像文件，执行push镜像操作tar -zxvf srvimgs.tag && ./srvimgs/pushimgs.sh
-1. 详细安装步骤请移步至：http://ecospkg.ghostcloud.cn/EcOS/video/EcOS_Install.mp4
+1. 详细安装步骤请移步至：<http://ecospkg.ghostcloud.cn/EcOS/video/EcOS_Install.mp4>
 
 部署
 
 1）创建wechaty服务
 
 通过EcOS平台创建wechaty容器（容器具体操作见
-http://ecospkg.ghostcloud.cn/EcOS/video/EcOS_Contianer.mp4）
+<http://ecospkg.ghostcloud.cn/EcOS/video/EcOS_Contianer.mp4>）
 镜像选择wechaty:latest, 创建启动选择为是，可适当的增加内存容量（允许容器使用的内存）
 
 2）监听 wechaty 容器的日志
@@ -105,7 +107,7 @@ docker logs -f wechaty
 
 扫描日志中的二维码或将URL地址复制到浏览器中扫描，然后正常的使用微信，可以看到终端中会有相关信息。
 
-[ghostcloud-banner]: /download/2016/ghostcloud-banner.jpg
-[ghostcloud-log]: /download/2016/ghostcloud-log.jpg
-[ghostcloud-message]: /download/2016/ghostcloud-message.jpg
-[ghostcloud-qrcode]: /download/2016/ghostcloud-qrcode.jpg
+[ghostcloud-banner]: /assets/2016/ghostcloud-banner.jpg
+[ghostcloud-log]: /assets/2016/ghostcloud-log.jpg
+[ghostcloud-message]: /assets/2016/ghostcloud-message.jpg
+[ghostcloud-qrcode]: /assets/2016/ghostcloud-qrcode.jpg

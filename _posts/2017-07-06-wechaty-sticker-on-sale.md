@@ -1,8 +1,12 @@
 ---
-layout: post
 title: "Wechaty Sticker is ON SALE!"
 date: '2017-07-06 19:31:53'
-author: Huan
+author: huan
+categories: shop
+tags:
+  - sticker
+header:
+  teaser: /assets/2017/wechaty-sticker.jpg
 ---
 
 [![Wechaty Sticker][wechaty-sticker-size]](https://item.jd.com/12994583384.html)
@@ -11,13 +15,13 @@ We had just made very high quality Wechaty Logo Stickers recently!
 
 If you are using Wechaty and you love Wechaty, from now you can buy our logo sticker online.
 
-### I <font color="red" size="+1">❤</font> Wechaty[^1]:
+<!-- markdownlint-disable MD033 -->
+
+### I <font color="red" size="+1">❤</font> Wechaty[^1]
 
 * Order from Etsy: <https://www.etsy.com/listing/541157219> (Worldwide[^2])
 * Order from JD: <https://item.jd.com/12994583384.html>
 * Order from TMall: <https://detail.tmall.com/item.htm?id=552823238544>
-
-<br />
 
 <!--more-->
 
@@ -34,9 +38,9 @@ If you are using Wechaty and you love Wechaty, from now you can buy our logo sti
 [^1]: Disclaimer: The seller is not Chatie/Wechaty but a 3rd party partner.
 [^2]: Worldwide: International shipping with PayPal/Credit Card support.
 
-[wechaty-sticker]: /download/2017/wechaty-sticker.jpg
-[wechaty-sticker-mac]: /download/2017/wechaty-sticker-mac.jpg
-[wechaty-sticker-size]: /download/2017/wechaty-sticker-size.jpg
-[wechaty-sticker-mac-inside]: /download/2017/wechaty-sticker-mac-inside.jpg
-[wechaty-sticker-ipad]: /download/2017/wechaty-sticker-ipad.jpg
-[wechaty-sticker-windows]: /download/2017/wechaty-sticker-windows.jpg
+[wechaty-sticker]: /assets/2017/wechaty-sticker.jpg
+[wechaty-sticker-mac]: /assets/2017/wechaty-sticker-mac.jpg
+[wechaty-sticker-size]: /assets/2017/wechaty-sticker-size.jpg
+[wechaty-sticker-mac-inside]: /assets/2017/wechaty-sticker-mac-inside.jpg
+[wechaty-sticker-ipad]: /assets/2017/wechaty-sticker-ipad.jpg
+[wechaty-sticker-windows]: /assets/2017/wechaty-sticker-windows.jpg

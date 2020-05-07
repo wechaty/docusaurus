@@ -1,10 +1,12 @@
 ---
-layout: post
 title: 'Node Party #18 重新认识聊天机器人'
 author: Samurais
 date: '2016-12-07'
 categories: event
-published: true
+tags:
+  - talk
+header:
+  teaser: /assets/2016/nodeparty-banner.jpg
 ---
 
 ![Node Party Banner][nodeparty-banner]
@@ -39,7 +41,7 @@ published: true
 
 李佳芮，桔子互动创始人/CEO，北京邮电大学计算机系硕士；2014年创立婚庆O2O平台“艾娘子”，同年获得500万天使投资；历任北京的邮电大学IDEA精英汇会长、学生会公关部副部长；曾获得第二届腾讯全国互联网创新创业大赛银奖、第三届京津冀营销创业大赛亚军。桔子互动是一家社区运营服务解决方案提供商，如基于微信的定制开发和运营推广服务。曾服务过亚马逊、腾讯、京东等多家上市公司。 爵士舞爱好者，业余时间创立舞蹈视频教学自媒体“舞哩”，搭建舞蹈社群。半年内原创视频全网播放近千万。多次被美拍、腾讯视频、B站、优酷评为热门精选。
 
-**演讲内容介绍**
+#### 演讲内容介绍
 
 1. Why Wechaty
 1. Wechaty from Scratch
@@ -80,7 +82,6 @@ published: true
 主办
 Rockq社区
 
-[nodeparty-banner]: /download/2016/nodeparty-banner.jpg
-[nodeparty-speaker]: /download/2016/nodeparty-speaker.jpg
-[nodeparty-speaker2]: /download/2016/nodeparty-speaker2.jpg
-
+[nodeparty-banner]: /assets/2016/nodeparty-banner.jpg
+[nodeparty-speaker]: /assets/2016/nodeparty-speaker.jpg
+[nodeparty-speaker2]: /assets/2016/nodeparty-speaker2.jpg

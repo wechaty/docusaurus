@@ -1,8 +1,11 @@
 ---
-layout: post
 title: "How to use interval in Wechaty to overcome some web-wechat API limitations"
-author: Seabook
+author: kungfu-software
 date: '2017-05-25 19:31:53'
+categories: hack
+tags:
+  - code
+  - api
 ---
 
 <img src="https://avatars2.githubusercontent.com/u/700550?v=3&s=88">
@@ -29,19 +32,19 @@ function sendFriendRequest(room, msg) {
 
     let content = msg.content();
     if (msg && /希望和大家做朋友/.test(content)) {
-        
+
         let contacts = room? room.memberList({}) : [];
 
         for (let i = 10; i < contacts.length; i ++) {
-            let contact = contacts[i];            
-            let request = new FriendRequest();                        
+            let contact = contacts[i];
+            let request = new FriendRequest();
             request.send(contact, "Hi 很高兴认识您")
                 .then( result => {
                     console.log("Friend Request Send ", contact.name(), result);
                 })
                 .catch(e => {
                     console.log('Bot', 'Friend Request Error: %s', e.stack);
-                })            
+                })
 
         }
     }
@@ -50,13 +53,13 @@ function sendFriendRequest(room, msg) {
 
 ```
 
-The code is simple, when the bot saying `希望和大家做朋友`, the bots will get all the contacts from the room and start to send FriendRequest. 
+The code is simple, when the bot saying `希望和大家做朋友`, the bots will get all the contacts from the room and start to send FriendRequest.
 
-However, it failed quickly with some exceptions in the log sometimes, or the Send Friend Request is always `False`. At this stage, the `Send Friend Request` is pretty much useless. So I created `ISSUE` in github and asked around. 
+However, it failed quickly with some exceptions in the log sometimes, or the Send Friend Request is always `False`. At this stage, the `Send Friend Request` is pretty much useless. So I created `ISSUE` in github and asked around.
 
-The original `ISSUE` link: <https://github.com/Chatie/wechaty/issues/540>
+The original `ISSUE` link: <https://github.com/wechaty/wechaty/issues/540>
 
-Thanks for the help from @zixia and @lijiarui, which let me understand the Limitations of web-wechat and I did some research online saying web-wechat only allows to send 100 user request per day. And the api call throttle need to be steady. Obvisouly the original For-Loop is just too fast. I am wondering is there any kinda `Sleep` function in javascript? 
+Thanks for the help from @zixia and @lijiarui, which let me understand the Limitations of web-wechat and I did some research online saying web-wechat only allows to send 100 user request per day. And the api call throttle need to be steady. Obvisouly the original For-Loop is just too fast. I am wondering is there any kinda `Sleep` function in javascript?
 
 Thanks for the help from @zixia. Turns out there is a built in `Sleep` function already. Here is how to use `Wechaty Sleep`.
 
@@ -64,7 +67,7 @@ Thanks for the help from @zixia. Turns out there is a built in `Sleep` function 
 
 async function asyncAwait() {
 
-    for (let i = 0; i < 10; i++) { 
+    for (let i = 0; i < 10; i++) {
         console.log("Knock", i);
         await Wechaty.sleep(5000);
     }
@@ -84,7 +87,7 @@ exports = module.exports = async function onMessage (msg) {
     const room      = msg.room();
     const sender    = msg.from();
     const content   = msg.content();
-    
+
     if (msg.self()) {
         sendFriendRequest(room, msg);
         return;
@@ -97,13 +100,13 @@ exports = module.exports = async function onMessage (msg) {
 async function sendFriendRequest(room, msg) {
 
     if (!room) {
-		console.log('Bot', 'there is no room yet');
+    console.log('Bot', 'there is no room yet');
         return;
     }
 
     let content = msg.content();
     if (msg && /希望和大家做朋友/.test(content)) {
-        
+
         let contacts = room? room.memberList({}) : [];
 
         if(!contacts || contacts.length == 0) {
@@ -113,15 +116,15 @@ async function sendFriendRequest(room, msg) {
         console.log('Contacts Size:', contacts.length);
 
         for (let i = 10; i < contacts.length; i ++) {
-            let contact = contacts[i];            
-            let request = new FriendRequest();                        
+            let contact = contacts[i];
+            let request = new FriendRequest();
             request.send(contact, "Hi 很高兴认识您")
                 .then( result => {
                     console.log("Friend Request Send ", contact.name(), result);
                 })
                 .catch(e => {
                      console.log('Bot', 'Friend Request Error: %s', e.stack);
-                })            
+                })
             await Wechaty.sleep(1000*60*2); // 2 mins is a good threshold
         }
     }
@@ -129,7 +132,6 @@ async function sendFriendRequest(room, msg) {
 }
 
 ```
-
 
 I think it's a common pattern when we are using Wechaty to do sth in the For-Loop block. It's better to make it wait a bit.
 

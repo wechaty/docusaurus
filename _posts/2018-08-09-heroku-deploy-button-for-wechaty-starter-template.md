@@ -1,11 +1,14 @@
 ---
 title: "Deploying Wechaty Bot from GitHub to Heroku as Easy as Clicking a Button"
-author: zixia
+author: huan
 date: '2018-08-09 18:14:52 +0800'
-published: true
+categories: tutorial
+tags:
+  - heroku
+  - deploy
 ---
 
-> Author: [Huan LI](https://github.com/zixia), A Former Linux Admin
+> Author: [Huan LI](https://github.com/huan), A Former Linux Admin
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Chatie/heroku-wechaty-getting-started)
 

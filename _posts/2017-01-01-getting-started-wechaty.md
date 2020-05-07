@@ -1,12 +1,13 @@
 ---
-layout: post
 title: Getting Started with Wechaty - Live Coding Tutorial
 date: '2017-01-01 10:0:0 +0800'
 author: lijiarui
-categories: guide
-published: true
+categories: tutorial
+tags:
+  - code
+header:
+  teaser: /assets/2017/lijiarui-speech-nodejs.jpg
 ---
-
 
 <div class="video-container" style="
     position: relative;
@@ -34,12 +35,11 @@ For visiters come from China who can not visit YouTube.com, this video is also h
 
 <!--more-->
 
-Learn more about how to use Wechaty: <https://github.com/Chatie/wechaty/wiki/GettingStarted>
+Learn more about how to use Wechaty: <https://github.com/wechaty/wechaty/wiki/GettingStarted>
 
 Code in the video:
 
 ```typescript
-
 import {Wechaty, Room} from 'wechaty'
 
 const bot = Wechaty.instance()
@@ -99,14 +99,14 @@ bot
 })
 
 .init()
-
 ```
 
-docker command:    
+docker command:
 
-```
+```sh
 docker run -ti --volume="$(pwd)":/bot --rm zixia/wechaty mybot.ts
 ```
+
 [Click here to get the repo](https://github.com/lijiarui/Getting-Started-with-Wechaty---Live-Coding-Tutorial "Click here to get the repo")
 
-[ruirui-speech-nodejs-image]: /download/2017/lijiarui-speech-nodejs.jpg
+[ruirui-speech-nodejs-image]: /assets/2017/lijiarui-speech-nodejs.jpg

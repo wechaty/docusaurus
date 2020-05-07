@@ -1,11 +1,15 @@
 ---
-layout: post
 title: "wechaty-electron 把你的wechaty 变成客户端"
 date: 2017-11-26 12:00 +0800
-author: 郭英旭
+author: guoyingxu
+categories: project
+tags:
+  - code
+header:
+  teaser: /assets/2017/wechaty-electron-making-your-wachaty-as-a-client-service1.jpg
 ---
 > <img src="https://avatars1.githubusercontent.com/u/33899027?s=88&v=3">
-> 
+>
 > 作者: [郭英旭](https://github.com/Guoyingxu)
 
 ## 初识wechaty
@@ -39,74 +43,77 @@ web端:微信里的用户发言会直接发布到文字直播间，被标注为�
 ![图4][4]
 
 唯一让我不满足的是，使用electron 客户端启动wechaty 仍然要打开一个网页来登录微信。 electron 本身就是基于chrome内核的。浏览器能做的它都能做，浏览器不能做的，它也能做。完全没有必要启动一个webdriver来登录微信。只需要new 一个window 或者打开一个webwiew 即可代替 浏览器，并且可以随心所欲的隐藏显示。wechaty只需要关心与electron 的webcontent 交互即可。另外，electron 本地代码与webcontent交互更加方便，除了完善的网页事件，更有ipcMain 和ipcRenderer 交互机制。wechaty 完全不必再额外启动一个express server 来建立socket 通道（当时没有puppeteer）。更有价值的一点是，wechaty 可以拥有一个随时随地使用的多平台客户端！
+
 ## wechaty-electron 实现
 
 我常常会为自己有一些自我感觉很棒多想法而窃喜。但是鼓起勇气去写又是另一回事了。我仔细的阅读wechaty的源码和electron的api 进行对比和测试。刚有所得时，puppeteer出现了，wechaty 出现了一个较大版本的变动。puppeteer 简直太好用了，比electron的api更全面（我猜测electron也许会因此而更新版本），然而问题也来了，puppeteer 实现的接口electron做不到了！比如 获取页面的弹窗，比如class ElementHandle...
 我采用最谨慎和保守的方式对 wechaty／puppet-web 进行改写：
 
-    * 新增electron-driver.ts 实现wechaty 中用到的puppeteer的所有接口方法
-    * 在wechaty－bro.js中使用ipcRenderer 来发送和接收electron 的事件和指令，
-    * 新增emit方法（electron 接口中没有puppeteer 的 exposeFunction方法 ）
-    * bridge.ts中增加 bindEvents方法，使用ipcMain.on(event,handler)来订阅页面回传的事件
+* 新增electron-driver.ts 实现wechaty 中用到的puppeteer的所有接口方法
+* 在wechaty－bro.js中使用ipcRenderer 来发送和接收electron 的事件和指令，
+* 新增emit方法（electron 接口中没有puppeteer 的 exposeFunction方法 ）
+* bridge.ts中增加 bindEvents方法，使用ipcMain.on(event,handler)来订阅页面回传的事件
+
 以上最主要的几处修改保证对原来项目改动最小化。
 经过测试，基本功能已经可用，但是仍然有些许bug，需要后续继续修正。项目地址：[wechaty-electron](https://github.com/GuoYingxu/wechaty/tree/wechaty-electron)
 
 ## run demo
-```javascript
 
-    git clone https://github.com/GuoYingxu/wechaty.git
-    git checkout wechaty-electron
-    
-    npm install
-    npm run dist
-    npm start
+```sh
+git clone https://github.com/GuoYingxu/wechaty.git
+git checkout wechaty-electron
+
+npm install
+npm run dist
+npm start
 ```
 
-参考  [https://github.com/GuoYingxu/wechaty/tree/wechaty-electron/example](https://github.com/GuoYingxu/wechaty/tree/wechaty-electron/example/electron-app) 
+参考  [https://github.com/GuoYingxu/wechaty/tree/wechaty-electron/example](https://github.com/GuoYingxu/wechaty/tree/wechaty-electron/example/electron-app)
 
 ## quick start
 
-  wechaty-electron 使用方式跟原谅一样。只是注意要再electron 初始化完成之后启动wechaty即可。
-  ```javascript
-    //demo code
-    const {app, BrowserWindow} from 'electron'
-    const {wechaty} from '../dist/index'
-    let window;
-    app.on('ready', () => {
-      //eletron init code
-      window = new BrowserWindow();
-      window.loadURL(url.format({
-        pathname: path.join(__dirname, './index.html'),
-        protocol: 'file',
-        slashes: true
-      }))
+wechaty-electron 使用方式跟原谅一样。只是注意要再electron 初始化完成之后启动wechaty即可。
 
-      //wechaty init
-      const bot = Wechaty.instance({ profile: config.default.DEFAULT_PROFILE })
+```javascript
+//demo code
+const {app, BrowserWindow} from 'electron'
+const {wechaty} from '../dist/index'
+let window;
+app.on('ready', () => {
+  //eletron init code
+  window = new BrowserWindow();
+  window.loadURL(url.format({
+    pathname: path.join(__dirname, './index.html'),
+    protocol: 'file',
+    slashes: true
+  }))
 
-      bot
-        .on('logout', user => log.info('Bot', `${user.name()} logouted`))
-        .on('login', user => {
-          log.info('Bot', `${user.name()} login`)
-          bot.say('Wechaty login').catch(console.error)
-        })
-        .on('scan', (url, code) => {
-          if (!/201|200/.test(String(code))) {
-            const loginUrl = url.replace(/\/qrcode\//, '/l/')
-            QrcodeTerminal.generate(loginUrl)
-          }
-          console.log(`${url}\n[${code}] Scan QR Code above url to log in: `)
-        })
-        .on('message', async m => {
-          //---
+  //wechaty init
+  const bot = Wechaty.instance({ profile: config.default.DEFAULT_PROFILE })
 
-        })
-      bot.start()
+  bot
+    .on('logout', user => log.info('Bot', `${user.name()} logouted`))
+    .on('login', user => {
+      log.info('Bot', `${user.name()} login`)
+      bot.say('Wechaty login').catch(console.error)
     })
+    .on('scan', (url, code) => {
+      if (!/201|200/.test(String(code))) {
+        const loginUrl = url.replace(/\/qrcode\//, '/l/')
+        QrcodeTerminal.generate(loginUrl)
+      }
+      console.log(`${url}\n[${code}] Scan QR Code above url to log in: `)
+    })
+    .on('message', async m => {
+      //---
 
-  ```
+    })
+  bot.start()
+})
+```
 
 ## 更多想法
+
 国内ip受限，npm install puppeteer 和electron 都非常不容易。所以我单独开了一个分支，删除了puppeteer。我想如果wechaty能把 puppet 做成插件模式，需要那个安装哪个，会不会体验更好？甚至后面还会有更多的  wechaty－puppet－engine ，比如wechaty-nw for NW.js。这样，wechaty 本身只关心 微信 api，puppet 只关心与engine通信，应该是一个比较完美的结构。
 
 微信机器人的使用会导致ip被封。暂时还无法确定使用electron 能否减少被封的概率。前面经验告诉我，如果微信被封号，换个ip是可以登录的，electron的客户端安装要比部署服务简单的多。
@@ -115,8 +122,7 @@ web端:微信里的用户发言会直接发布到文字直播间，被标注为�
 
 ps: 这几天听闻微信网页端要封的消息，尚不知真假。不过，技术本身更加吸引我。倘若web端被封杀，肯定会涌现出新的解决方案，对技术本身而言，也不算一件坏事情。
 
-
-  [1]: /download/2017/wechaty-electron-making-your-wachaty-as-a-client-service1.jpg
-  [2]: /download/2017/wechaty-electron-making-your-wechaty-as-a-client-service2.jpg
-  [3]: /download/2017/wechaty-electron-making-your-wachaty-as-a-client-service3.jpg
-  [4]: /download/2017/wechaty-electron-making-your-wechaty-as-a-client-service4.jpg
+  [1]: /assets/2017/wechaty-electron-making-your-wachaty-as-a-client-service1.jpg
+  [2]: /assets/2017/wechaty-electron-making-your-wechaty-as-a-client-service2.jpg
+  [3]: /assets/2017/wechaty-electron-making-your-wachaty-as-a-client-service3.jpg
+  [4]: /assets/2017/wechaty-electron-making-your-wechaty-as-a-client-service4.jpg

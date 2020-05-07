@@ -1,9 +1,13 @@
 ---
-layout: post
 title: "A Simple WeChaty Bot with Intelligence Powered by TensorFlow"
 date: 2017-06-05 23:50 +0800
 author: WildCat
-comments: true
+categories: project
+tags:
+  - code
+  - machine learning
+header:
+  teaser: /assets/2017/wildcat-tf-wechaty-and-tensorflow-featured-image.png
 ---
 
 Author: [@imWildCat](https://github.com/imWildCat), University of Birmingham
@@ -20,7 +24,7 @@ Artificial Intelligence (aka. AI) is a very hot topic at present time. A big new
 
 ![from-go-to-chatbot][from-go-to-chatbot]
 
-## Model training 
+## Model training
 
 We are going to use the code written by Sir Raval to train our model: <https://github.com/llSourcell/tensorflow_chatbot>. To get rid of difficulties of fetching dataset, it is highly recommended to use my repo with the dataset ready. In addition, the details of the usage for TensorFlow will not be included in this article. Because there are too many details to write about.
 
@@ -142,11 +146,9 @@ Although there would be a number of challenges in the future, it is desirable to
 [^1]: Siraj Raval, 2016. *How to Make an Amazing Tensorflow Chatbot Easily*. Retrieved from: [https://www.youtube.com/watch?v=SJDEOWLHYVo](https://www.youtube.com/watch?v=SJDEOWLHYVo)
 [^2]: Russell Jon, 2017. *Google’s AlphaGo AI wins three-match series against the world’s best Go player*. Retrived from: [https://techcrunch.com/2017/05/24/alphago-beats-planets-best-human-go-player-ke-jie/](https://techcrunch.com/2017/05/24/alphago-beats-planets-best-human-go-player-ke-jie/)
 
-
-
-[wechaty-and-tensorflow]: /download/2017/wildcat-tf-wechaty-and-tensorflow-featured-image.png
-[from-go-to-chatbot]: /download/2017/wildcat-tf-from-go-to-chatbot.png
-[screenshot-training]: /download/2017/wildcat-tf-screenshot-training.png
-[screenshot-testing]: /download/2017/wildcat-tf-screenshot-testing.png
-[screenshot-simple-ui]: /download/2017/wildcat-tf-screenshot-simple-ui.jpg
-[screenshot-bot-in-wechat]: /download/2017/wildcat-tf-screenshot-bot-in-wechat.jpg
+[wechaty-and-tensorflow]: /assets/2017/wildcat-tf-wechaty-and-tensorflow-featured-image.png
+[from-go-to-chatbot]: /assets/2017/wildcat-tf-from-go-to-chatbot.png
+[screenshot-training]: /assets/2017/wildcat-tf-screenshot-training.png
+[screenshot-testing]: /assets/2017/wildcat-tf-screenshot-testing.png
+[screenshot-simple-ui]: /assets/2017/wildcat-tf-screenshot-simple-ui.jpg
+[screenshot-bot-in-wechat]: /assets/2017/wildcat-tf-screenshot-bot-in-wechat.jpg

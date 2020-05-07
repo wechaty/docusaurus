@@ -1,13 +1,18 @@
 ---
-layout: post
 title: "Can Typescript really live up to its hype?"
 date: '2018-03-09'
 author: suntong
+categories: article
+tags:
+  - typescript
+header:
+  teaser: /assets/2018/typescript-logo.png
 ---
+<!-- markdownlint-disable -->
 
 > Author: [@suntong](https://github.com/suntong), Canada
 
-![TypeScript](/download/2018/typescript-logo.png)
+![TypeScript](/assets/2018/typescript-logo.png)
 
 Big companies or organizations push forward adopting of Typescript for a reason, mostly to prevent some dummies to shoot their own feet really easily -- The (almost only) advantage of Typescript is to point out, at the compile time, that the following usage is wrong:
 
@@ -16,17 +21,17 @@ var x = 'A';
 x = x + 5
 ```
 
-But is it really? If you are a seasoned programmer and you are coding for yourself only, are you willing to get your hands tied up by MS Typescript, and suffer all its drawbacks in the mean time? 
+But is it really? If you are a seasoned programmer and you are coding for yourself only, are you willing to get your hands tied up by MS Typescript, and suffer all its drawbacks in the mean time?
 
 <!--more-->
 
 ## About Pure ES6 instead of Typescript
 
-When I code customization code for [wechaty](https://github.com/Chatie/wechaty/), I write everything in pure ES6 instead of Typescript, and there are strong reasons for that.
+When I code customization code for [wechaty](https://github.com/wechaty/wechaty/), I write everything in pure ES6 instead of Typescript, and there are strong reasons for that.
 
 ### Typescript is not necessary
 
-- Looking at the [ES6 support in Node.js](http://node.green/), I can see really really few ES6 features are unsupported now. I.e., only very few _extreme_ end-cases are left. 
+- Looking at the [ES6 support in Node.js](http://node.green/), I can see really really few ES6 features are unsupported now. I.e., only very few _extreme_ end-cases are left.
 - Furthermore, I don't know how well the transpiling is, e.g., for the advanced ES6 features like `map`, `filter` and `reduce`, I don't know how efficient the transpiled code is.
 - Starting with version 8.5.0, Node.js even supports ES modules natively, so we can do `import {add} from './lib.mjs';` directly in ES6 now.
 - I.e., the ES6 is ready for prime time use, writing in TypeScript then have it transpiled into ES6 code seems like a redundant step now. (I'm not saying that TypeScript is not helpful, it is still good in big projects that you have some dummies really easily to shoot their own feet)
@@ -34,9 +39,9 @@ When I code customization code for [wechaty](https://github.com/Chatie/wechaty/)
 
 ### ES6 is the future, not Typescript
 
-Here is some good reading that I want to share with you, 
+Here is some good reading that I want to share with you,
 
-**When are you better off without Typescript?** --   
+**When are you better off without Typescript?** --
 [_When you can’t afford an extra transpilation tax_](https://medium.freecodecamp.org/when-should-i-use-typescript-311cb5fe801b)
 
 > There are no plans to support TypeScript natively in the browsers. Chrome did some experiment, but later cancelled support. I suspect this has something to do with unnecessary runtime overhead.
@@ -53,21 +58,21 @@ From above article,
 > The old Microsoft used to take standard tools — Java for example — and add proprietary non-standard features to them — in this case resulting in J++. **Then they would try to force developers to choose between the two**.
 > TypeScript is exactly the same approach — this time for JavaScript. By the way, **this isn’t Microsoft’s first fork of JavaScript. In 1996, they forked JavaScript to create JScript**.
 
-JavaScript has no types, this has it advantages and disadvantages. However, IMHO, its disadvantages has been over-proportionally emphasized and exaggerated, and its advantages has been down-played greatly. If using Typescript, then such advantages will be completely lost, and you'll get completely restrained, that's what MS does best. Here is a little example, out of the very limited hours I've been using JavaScript -- to write a wechaty simulation driving code, it'd be impossible to [write such simulation in such simple way](https://github.com/Chatie/wechaty/issues/1095#issuecomment-366595388), had I been writing my code in TypeScript. 
+JavaScript has no types, this has it advantages and disadvantages. However, IMHO, its disadvantages has been over-proportionally emphasized and exaggerated, and its advantages has been down-played greatly. If using Typescript, then such advantages will be completely lost, and you'll get completely restrained, that's what MS does best. Here is a little example, out of the very limited hours I've been using JavaScript -- to write a wechaty simulation driving code, it'd be impossible to [write such simulation in such simple way](https://github.com/wechaty/wechaty/issues/1095#issuecomment-366595388), had I been writing my code in TypeScript.
 
 ### Typescript is using the out-dated technology
 
 But someone may say, _"if Typescript is not allowing you do that, then you must be doing something wrong"_. Well, truth is,
 
-The modern programming paradigm has advanced way over the OO era, and "**interface**" has become the new way of thinking. The loosely coupled interface has much more benefit than the tightly coupled [OO polymorphism](https://en.wikipedia.org/wiki/Object-oriented_programming#Polymorphism), which means that MS using type checking to tie peoples hands up is so 19-century in this 21-century world, and will be left in the dust by most knowledgeable programmers. Interface compatibility is much more tolerant than [OO polymorphism](https://en.wikipedia.org/wiki/Object-oriented_programming#Polymorphism), that if both the two types satisfy the minimum interface requirement of the accepting parameter, than either of the two **unrelated** types can be used as the argument. And JavaScript, not Typescript, allows that. This is the reason why I can [write such simulation in such simple way](https://github.com/Chatie/wechaty/issues/1095#issuecomment-366595388) using JavaScript, but not Typescript.
+The modern programming paradigm has advanced way over the OO era, and "**interface**" has become the new way of thinking. The loosely coupled interface has much more benefit than the tightly coupled [OO polymorphism](https://en.wikipedia.org/wiki/Object-oriented_programming#Polymorphism), which means that MS using type checking to tie peoples hands up is so 19-century in this 21-century world, and will be left in the dust by most knowledgeable programmers. Interface compatibility is much more tolerant than [OO polymorphism](https://en.wikipedia.org/wiki/Object-oriented_programming#Polymorphism), that if both the two types satisfy the minimum interface requirement of the accepting parameter, than either of the two **unrelated** types can be used as the argument. And JavaScript, not Typescript, allows that. This is the reason why I can [write such simulation in such simple way](https://github.com/wechaty/wechaty/issues/1095#issuecomment-366595388) using JavaScript, but not Typescript.
 
-So, thank but no thanks to MS' JScript, or TypeScript, without the type restriction, the rest of the TypeScript hypes are actually come from ES6, which is what I'll stick to instead. 
+So, thank but no thanks to MS' JScript, or TypeScript, without the type restriction, the rest of the TypeScript hypes are actually come from ES6, which is what I'll stick to instead.
 
 ### Typescript will be abandoned
 
-Who still remember MS' JScript? Typescript will be left in the dust by most programmers, and it will be abandoned by Microsoft, eventually. Mark my words for it. 
+Who still remember MS' JScript? Typescript will be left in the dust by most programmers, and it will be abandoned by Microsoft, eventually. Mark my words for it.
 
-The philosophy that I resist anything that MS proposes has a long history of me, as a programmer, who was forced onto the MS band wagon for their shinny new toys, then get thrown under the bus when MS abandon them. Not many programmers start the love-hate affair with MS since DOS2.0, through DOS3.0 all they way to DOS5.0. Not many programmers have ever heard of OLE, DDE, DAO, ADO, ADO2, and the stories behind their rise and fall, yet I was the one who bite the bullet and gone through them all. Even today, I'm still living through the consequences of MS abandoning silverlight, for all these past several years. 
+The philosophy that I resist anything that MS proposes has a long history of me, as a programmer, who was forced onto the MS band wagon for their shinny new toys, then get thrown under the bus when MS abandon them. Not many programmers start the love-hate affair with MS since DOS2.0, through DOS3.0 all they way to DOS5.0. Not many programmers have ever heard of OLE, DDE, DAO, ADO, ADO2, and the stories behind their rise and fall, yet I was the one who bite the bullet and gone through them all. Even today, I'm still living through the consequences of MS abandoning silverlight, for all these past several years.
 
 ### In summary
 
@@ -86,11 +91,10 @@ PS, if I do have to write something that has to be transpiled first before runni
 Don't get me started on this, but check out the following yourself:
 
 **Google announced the first beta of Flutter**  
-https://flutter.io/?utm_source=google&utm_medium=blog&utm_campaign=beta_announcement
+<https://flutter.io/?utm_source=google&utm_medium=blog&utm_campaign=beta_announcement>
 
 **Flutter Will Take Off in 2018**  
 https://codeburst.io/why-flutter-will-take-off-in-2018-bbd75f8741b0
-
 
 **What’s Revolutionary about Flutter**  
 https://hackernoon.com/whats-revolutionary-about-flutter-946915b09514
@@ -106,4 +110,3 @@ https://hackernoon.com/why-i-moved-from-javascript-to-dart-9ff55a108ff4#.ezyej7c
 
 **Why I moved from Java to Dart**  
 https://hackernoon.com/why-i-moved-from-java-to-dart-8f3802b1d652
-

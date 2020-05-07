@@ -1,8 +1,12 @@
 ---
-layout: post
 title: "Ten minutes to build a daily paper bot"
 date: 2017-10-28 12:00 +0800
 author: leinue
+categories: project
+tags:
+  - code
+header:
+  teaser: /assets/2017/leinue-bot.jpg
 ---
 
 > Author: [@leinue](https://github.com/leinue), Developer && Designer, [ivydom](http://ivydom.com)
@@ -28,7 +32,6 @@ Before the bot work, I had really done a lot of work to crawl data and filter da
  5. **Code the bot**.I had prepared the API of the daily paper, so what I need to do is just wrote some codes to get the data from the API, which cost **1 mintues**.(Using **axios** and **async** function also saved a lot of time).
  6. **Test and Debug**.It worked correctly, which cost **20 seconds**.
 
-
 ## More
 
 I also added some functions such as automatic reply to the bot, which made our users more active in the group.
@@ -38,11 +41,9 @@ I also added some functions such as automatic reply to the bot, which made our u
  1. Just use the docker, which is so easy and can save a lot of time.
  2. Read the documents to know how powerful wechaty is.
 
-
 Finally, I like wechaty, thanks to all the contributors of wechaty!
 
-
-  [1]: /download/2017/leinue-bot.jpg
-  [2]: /download/2017/leinue-screenshot.PNG
-  [3]: https://blog.chatie.io/guide/2017/01/01/getting-started-wechaty.html
-  [4]: https://github.com/chatie/wechaty/wiki/Docker
+  [1]: /assets/2017/leinue-bot.jpg
+  [2]: /assets/2017/leinue-screenshot.png
+  [3]: https://wechaty.github.io/guide/2017/01/01/getting-started-wechaty.html
+  [4]: https://github.com/wechaty/wechaty/wiki/Docker

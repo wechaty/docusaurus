@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "Interact Wechaty with Ruby on Rails from scratch"
 author: WildCat
 date: '2017-04-21 16:01:53 +0100'
-headline: 'test'
-published: true
+categories: tutorial
+tags:
+  - code
+header:
+  teaser: /assets/2017/wildcat-rails-db-initial-structure.png
 ---
 
 ![architecture2][wildcat-rails-architecture-2]
@@ -428,7 +430,7 @@ Thanks for your reading. Feel free to drop any questions.
 [^3]: Read–eval–print loop - Wikipedia: [https://en.wikipedia.org/wiki/Read–eval–print_loop](https://en.wikipedia.org/wiki/Read–eval–print_loop)
 [^4]: Docker (software) - Wikipedia: [https://en.wikipedia.org/wiki/Docker_(software)](https://en.wikipedia.org/wiki/Docker_(software))
 
-[wildcat-rails-db-initial-structure]: /download/2017/wildcat-rails-db-initial-structure.png
-[wildcat-rails-architecture-1]: /download/2017/wildcat-rails-architecture-1.png
-[wildcat-rails-architecture-2]: /download/2017/wildcat-rails-architecture-2.png
-[wildcat-rails-admin-panel]: /download/2017/wildcat-rails-admin-panel.png
+[wildcat-rails-db-initial-structure]: /assets/2017/wildcat-rails-db-initial-structure.png
+[wildcat-rails-architecture-1]: /assets/2017/wildcat-rails-architecture-1.png
+[wildcat-rails-architecture-2]: /assets/2017/wildcat-rails-architecture-2.png
+[wildcat-rails-admin-panel]: /assets/2017/wildcat-rails-admin-panel.png

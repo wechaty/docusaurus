@@ -1,9 +1,12 @@
 ---
-layout: post
 title: "解析WebWxApp代码来增强wechaty功能（一）"
 date: 2017-11-09 19:00 +0800
 author: binsee
-excerpt_separator: <!--more-->
+categories: hack
+tags:
+  - code
+header:
+  teaser: /assets/2017/binsee-wechaty-structure.png
 ---
 
 > 作者: [@binsee](https://github.com/binsee), 野路子的修炼者
@@ -16,13 +19,13 @@ excerpt_separator: <!--more-->
 
 ## 简述
 
-我对wechaty一开始是因为兴趣，而并非是项目需要，因此只是观望。直到看到美女[lijiarui](https://github.com/lijiarui)提出的issue[#710 Cannot send pdf file using MediaMessage](https://github.com/Chatie/wechaty/issues/710)，被赏金诱惑才尝试着手来解决这个问题(:joy:)，并陆续提交了一些pr来增强wechaty的功能(论激励的重要性:joy:)。
+我对wechaty一开始是因为兴趣，而并非是项目需要，因此只是观望。直到看到美女[lijiarui](https://github.com/lijiarui)提出的issue[#710 Cannot send pdf file using MediaMessage](https://github.com/wechaty/wechaty/issues/710)，被赏金诱惑才尝试着手来解决这个问题(:joy:)，并陆续提交了一些pr来增强wechaty的功能(论激励的重要性:joy:)。
 
 > Pull requests list:
-> [#714 send any type file](https://github.com/Chatie/wechaty/pull/714)
-> [#727 Add Message.forward() forward message](https://github.com/Chatie/wechaty/pull/727)
-> [#744 emit RECALLED type msg(fix #8)](https://github.com/Chatie/wechaty/pull/744)
-> [#771 Support for send 25Mb+ files](https://github.com/Chatie/wechaty/pull/771)
+> [#714 send any type file](https://github.com/wechaty/wechaty/pull/714)
+> [#727 Add Message.forward() forward message](https://github.com/wechaty/wechaty/pull/727)
+> [#744 emit RECALLED type msg(fix #8)](https://github.com/wechaty/wechaty/pull/744)
+> [#771 Support for send 25Mb+ files](https://github.com/wechaty/wechaty/pull/771)
 
 在这个过程过，为了实现这些功能，不得不尝试去阅读WebWxApp及wechaty的源码，来了解他们的功能结构，以及学习typesrcipt。
 本文通过记录解决这几个问题的过程，来对WebWxApp和Wechaty的进行一些解读。
@@ -104,7 +107,6 @@ puppet-web中对将功能拆分为不同模块：
 - `watchdog`
 - `wechatyBro` 注入web环境运行的代码，实现对webWxApp的各种操作。
 
-
 wechatyBro中监听webWxApp中的信息事件，然后通过websocket把事件信息发送给puppet-web。而wechaty通过puppet-web操纵webWxApp。由于websocket不能同步返回处理结果，因此需要通过浏览器驱动将js代码注入进web环境执行（调用wechatyBro中的方法来操作webWxApp），并返回Promise将操作同步化。(可见`/src/puppet-web/bridge.ts`中`proxyWechaty()`)
 
 **例如：**
@@ -124,14 +126,12 @@ bridge.proxyWechaty() -> bridge.execute() -> browser.execute()
 // 将js代码注入web环境执行，并Promise以返回执行结果
 ```
 
-
 ##### puppet-web功能简述
 
 1. puppet-web创建一个websocket服务端用来接收wechatyBro的通信
 2. puppet-web通过浏览器驱动将wechatyBro的js代码注入进入web环境执行。
 3. WechatyBro进行初始化工作：连接puppet-web的websocket服务端，监听webWxApp的事件并进行处理后通过websocket发送给puppet-web。
 4. wechaty通过puppet-web执行各项功能时（如发送信息、创建群、拉人、踢人等主动操作），puppet-web会通过浏览器驱动将代码注入进web环境执行，以Promise返回执行结果
-
 
 以上对wechaty进行一个大概的了解，下边来以几个pr的实现来进一步了解wechaty。
 
@@ -187,7 +187,7 @@ WechatyBro.glue = {
 
 ### 捕捉撤消信息事件
 
-以前wechaty是捕捉不到撤回消息的RECALLED事件的（最早见[issues#8](https://github.com/Chatie/wechaty/issues/8)），原因在于webWxApp的`messageProcess`中，对RECALLED事件的处理与其他类型的信息事件不一致。
+以前wechaty是捕捉不到撤回消息的RECALLED事件的（最早见[issues#8](https://github.com/wechaty/wechaty/issues/8)），原因在于webWxApp的`messageProcess`中，对RECALLED事件的处理与其他类型的信息事件不一致。
 
 我们看下webWxApp中处理消息的`messageProcess()`方法代码：
 
@@ -426,14 +426,13 @@ function glueToAngular() {
 
 ```
 
-完整patch代码见[PR commit#174b6775c](https://github.com/Chatie/wechaty/commit/174b6775c4e9242e5f003094b2f9e10953c978f2)
-
+完整patch代码见[PR commit#174b6775c](https://github.com/wechaty/wechaty/commit/174b6775c4e9242e5f003094b2f9e10953c978f2)
 
 ## End
 
-感谢[zixia](https://github.com/zixia)的邀请，很抱歉拖了这么久才写了这篇文章。
+感谢[zixia](https://github.com/huan)的邀请，很抱歉拖了这么久才写了这篇文章。
 感谢Chatie的各位贡献者，有大家的共同努力，wechaty才会愈发的好用。
 也感谢耐心看完文章的你，希望我的文章没有浪费你的时间。
 谢谢！
 
-  [1]: /download/2017/binsee-wechaty-structure.png
+[1]: /assets/2017/binsee-wechaty-structure.png

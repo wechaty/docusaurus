@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - 13
+
+os:
+  - linux
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - npm test

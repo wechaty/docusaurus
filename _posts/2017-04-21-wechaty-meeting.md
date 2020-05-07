@@ -1,8 +1,12 @@
 ---
-layout: post
 title: "Wechaty Contributor Dinner"
 author: Yang BAI
 date: '2017-04-26 13:01:53'
+categories: event
+tags:
+  - meetup
+header:
+  teaser: /assets/2017/wechat-meeting.jpg
 ---
 
 Author: [@antonia0912](https://github.com/antonia0912), formal community manager at [JueJin](https://juejin.im/)(Chinese Hacker News)
@@ -15,7 +19,7 @@ There were 7 guys came to the gathering (including me), 6 programmers, and one u
 
 <!--more-->
 
-**[Huan LI](https://github.com/zixia)** An Angel Investor, Paragliding Pilot and Full Stack Developer. He founded serial enterprises with strong technical background and rich social network experience. He is also the organizer of the meetup.
+**[Huan LI](https://github.com/huan)** An Angel Investor, Paragliding Pilot and Full Stack Developer. He founded serial enterprises with strong technical background and rich social network experience. He is also the organizer of the meetup.
 
 **[Hailiang WANG](https://github.com/Samurais)** is the leader of *Rockq Community* and a chatbot developer. He used to work in *IBM Innovation Center* and the *Development Labs*. Now he works for *Lingling English* and in charge of the AI Lead.
 
@@ -25,7 +29,7 @@ There were 7 guys came to the gathering (including me), 6 programmers, and one u
 
 **[Lianxiang LIU](https://github.com/notedit)**, funder of [DotEngine](http://dot.cc), he is a continuous entrepreneur in the domain of *RTC*.
 
-**[Yang BAI](https://github.com/antonia0912)**, majored in French at her university but works as a marketing specialist. She is the formal community manager and marketing specialist of *Juejin*, a technical community. At present, she works at  *tag Design*, and responsible for planning and organizing activities. 
+**[Yang BAI](https://github.com/antonia0912)**, majored in French at her university but works as a marketing specialist. She is the formal community manager and marketing specialist of *Juejin*, a technical community. At present, she works at  *tag Design*, and responsible for planning and organizing activities.
 
 **[Lei ZHAO](https://github.com/Jolly23)**, born in 1996, he is still a college junior student. Doing well in *Python* and *Web Crawler*, as well as the framework of digitalized campus, he is addicted to the system of investment bank's quantitative-trading. All these influence his major for studying abroad.
 
@@ -49,7 +53,7 @@ Here is the video.
 "></iframe>
 </div>
 
-Here is the Chinese version. 
+Here is the Chinese version.
 
 4 月 21 日，周五，在北京这个妖风四起满世界柳絮的春天，跟几个朋友一起吃了顿饭。
 
@@ -59,7 +63,7 @@ Here is the Chinese version.
 
 简单介绍一下大家：
 
-[李卓桓](https://github.com/zixia)：PreAngel 投资人。zixia BBS、叽歪网创始人，优酷网首席科学家，水木清华BBS站长。清华大学本科，中欧国际工商学院EMBA。清华企业家协会移动互联网副主席，中欧移动互联网协会发起人。
+[李卓桓](https://github.com/huan)：PreAngel 投资人。zixia BBS、叽歪网创始人，优酷网首席科学家，水木清华BBS站长。清华大学本科，中欧国际工商学院EMBA。清华企业家协会移动互联网副主席，中欧移动互联网协会发起人。
 
 [王海良](https://github.com/Samurais)：Rockq 社区领袖，呤呤英语 AI Lead，曾就职 IBM 创新中心、研发中心，他也是 Chatbot 开发者。
 
@@ -75,6 +79,5 @@ Here is the Chinese version.
 
 很开心大家能聚在一起，共同探讨技术问题并增进对彼此的了解，希望日后能多一些线下交流的机会。
 
-
-[dinner-photo]: /download/2017/wechat-meeting.jpg
-[antonia-video-photo]: /download/2017/antonia0912-issue-4-seminar.jpg
+[dinner-photo]: /assets/2017/wechat-meeting.jpg
+[antonia-video-photo]: /assets/2017/antonia0912-issue-4-seminar.jpg

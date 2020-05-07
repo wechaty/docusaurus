@@ -1,17 +1,22 @@
 ---
-layout: post
 title: 如何将业务代码从Puppeteer 迁移到Padchat
 date: '2018-06-30 16:0:0 +0800'
-author: Li Jiarui
-published: true
+author: lijiarui
+categories: migration
+tags:
+  - code
+header:
+  teaser: /assets/2018/code-migration-zh.png
 ---
+<!-- markdownlint-disable -->
+
 > Author: [@lijiarui](https://github.com/lijiarui) Founder of BotOrange, Author of Wechaty.
 
 Wechaty 近期有了很大的升级，从0.14版本之后，开始陆续支持各类非Web 版本的解决方案。我的业务逻辑代码重度依赖于wechaty，所以自从wechaty release 了0.15 版本以后，我开始将我们的业务逻辑代码陆续从Web版本迁移到了非Web版本上来。
 
 本篇博客主要介绍了我是如何将业务逻辑代码，从Puppeteer 迁移到 Padchat上的。
 
-![code](/download/2018/code-migration-zh.png)
+![code](/assets/2018/code-migration-zh.png)
 
 <!--more-->
 
@@ -22,14 +27,14 @@ Wechaty 近期有了很大的升级，从0.14版本之后，开始陆续支持�
 
 现在再来介绍Puppeteer 和 Padchat 就会比较清楚了:
 
-![](https://github.com/Chatie/wechaty/wiki/image/abstract-info.png)
+![](https://github.com/wechaty/wechaty/wiki/image/abstract-info.png)
 
 - Puppeteer
 基于网页微信的实现，通过puppet连接到Wechaty API。
 - Padchat
 基于ipad 协议的实现，通过puppet 连接到Wechaty API。
 
-具体的Puppet 和各个实现方法，可以参考下图和这篇博客：[Wechaty New Version 0.16(BETA, with super power) Released](https://blog.chatie.io/wechaty-new-release-version-0.16/)
+具体的Puppet 和各个实现方法，可以参考下图和这篇博客：[Wechaty New Version 0.16(BETA, with super power) Released](https://wechaty.github.io/wechaty-new-release-version-0.16/)
 
 
 
@@ -37,7 +42,7 @@ Wechaty 近期有了很大的升级，从0.14版本之后，开始陆续支持�
 
 默认情况下，启动wechaty 是使用puppeteer的，切换成padchat 需要再运行的时候设置环境变量。
 
-更多信息详细见wiki[How to run a new wecahty-puppet-padchat](https://github.com/Chatie/wechaty/wiki/Puppet#2-run)
+更多信息详细见wiki[How to run a new wecahty-puppet-padchat](https://github.com/wechaty/wechaty/wiki/Puppet#2-run)
 
 ## Git 源码的方式
 
@@ -51,7 +56,7 @@ npm install
 
 ### 2. 获取token并设置环境变量
 
-在[Wechaty v0.17 Padchat Testing: Win32/iPad/Android/iOS/API Puppets Support are comming!](https://github.com/Chatie/wechaty/issues/1296) 中进行alpha test 版本的内测报名，并获取到token： `WECHATY_PUPPET_PADCHAT_TOKEN`
+在[Wechaty v0.17 Padchat Testing: Win32/iPad/Android/iOS/API Puppets Support are comming!](https://github.com/wechaty/wechaty/issues/1296) 中进行alpha test 版本的内测报名，并获取到token： `WECHATY_PUPPET_PADCHAT_TOKEN`
 
 ### 3. 设置环境变量并运行
 记得要设置`WECHATY_PUPPET=padchat` 来切换puppet版本。
@@ -68,7 +73,7 @@ npm install wechaty@next
 
 ### 2. 获取token并设置环境变量
 
-在[#1296](https://github.com/Chatie/wechaty/issues/1296) 中进行alpha test 版本的内测报名，并获取到token： `WECHATY_PUPPET_PADCHAT_TOKEN`
+在[#1296](https://github.com/wechaty/wechaty/issues/1296) 中进行alpha test 版本的内测报名，并获取到token： `WECHATY_PUPPET_PADCHAT_TOKEN`
 
 ### 3. 设置环境变量并运行
 记得要设置`WECHATY_PUPPET=padchat` 来切换puppet版本。
@@ -86,7 +91,7 @@ docker pull zixia/wechaty:latest
 
 ### 2. 获取token
 
-在[#1296](https://github.com/Chatie/wechaty/issues/1296) 中进行alpha test 版本的内测报名，并获取到token： `WECHATY_PUPPET_PADCHAT_TOKEN`
+在[#1296](https://github.com/wechaty/wechaty/issues/1296) 中进行alpha test 版本的内测报名，并获取到token： `WECHATY_PUPPET_PADCHAT_TOKEN`
 
 ### 3. 设置环境变量并运行
 - 记得要设置`WECHATY_PUPPET=padchat` 来切换puppet版本。
@@ -133,8 +138,8 @@ npm install tslint-config-standard
 创建配置文件 `tslint.json`
 
 tslint 和tsconfig 建议参考wechaty 的配置：
-- [tslint 配置文件](https://github.com/Chatie/wechaty/blob/master/tslint.json)
-- [tsconfig 配置文件](https://github.com/Chatie/wechaty/blob/master/tsconfig.json)
+- [tslint 配置文件](https://github.com/wechaty/wechaty/blob/master/tslint.json)
+- [tsconfig 配置文件](https://github.com/wechaty/wechaty/blob/master/tsconfig.json)
 
 这里针对wechaty 的一些配置进行说明
 
@@ -151,9 +156,9 @@ tslint 和tsconfig 建议参考wechaty 的配置：
 - "strictNullChecks"           : true
 在严格的 null检查模式下， null和 undefined值不包含在任何类型里，只允许用它们自己和 any来赋值（有个例外， undefined可以赋值到 void）
 - "noImplicitAny"              : true
-在表达式和声明上有隐含的 any类型时报错。 相关issue: [ts-node 7.0 breaking change: Skip `files` by default](https://github.com/Chatie/wechaty/issues/1383)
+在表达式和声明上有隐含的 any类型时报错。 相关issue: [ts-node 7.0 breaking change: Skip `files` by default](https://github.com/wechaty/wechaty/issues/1383)
 - "no-floating-promises": true
-如果有async 方法，要求必须使用await。相关issue: [Prevent the Floating Promise in the Async/Await Code](https://github.com/Chatie/wechaty/issues/1346)
+如果有async 方法，要求必须使用await。相关issue: [Prevent the Floating Promise in the Async/Await Code](https://github.com/wechaty/wechaty/issues/1346)
 - "noUnusedParameters"         : true
 若有未使用的参数则抛错。
 - "noImplicitThis"             : true
@@ -181,11 +186,11 @@ tslint 和tsconfig 建议参考wechaty 的配置：
 ### 5. 彩蛋
 唔。。。这里再赠送一个VSCode 插件彩蛋：editorconfig : 让使用不同编辑器的开发者在共同开发一个项目时“无痛”地遵循编码规范。更多说明见[editorconfig官网](https://editorconfig.org/) 
 
-wechaty 的配置见 [.editorconfig](https://github.com/Chatie/wechaty/blob/master/.editorconfig)
+wechaty 的配置见 [.editorconfig](https://github.com/wechaty/wechaty/blob/master/.editorconfig)
 
 
 # 4. BREAKING CHANGES
-wechaty 升级版本后(参考[博客](https://blog.chatie.io/wechaty-new-release-version-0.16/))，虽然尽可能的减少接口变动，但是为了适配padchat， 还是会有一些接口有了不同程度的变化。因此在进行代码迁移的时候，我们也需要修改原来的部分代码，我把相关内容列在下面了，更多内容，建议仔细阅读[CHANGE LOG](https://github.com/chatie/wechaty/blob/master/CHANGELOG.md)
+wechaty 升级版本后(参考[博客](https://wechaty.github.io/wechaty-new-release-version-0.16/))，虽然尽可能的减少接口变动，但是为了适配padchat， 还是会有一些接口有了不同程度的变化。因此在进行代码迁移的时候，我们也需要修改原来的部分代码，我把相关内容列在下面了，更多内容，建议仔细阅读[CHANGE LOG](https://github.com/wechaty/wechaty/blob/master/CHANGELOG.md)
 
 ## bot.init() 变成了 bot.start()
 
@@ -223,11 +228,11 @@ wechaty.on('friendship', request => {
 })
 ```
 
-建议仔细看代码[friend-bot.ts](https://github.com/Chatie/wechaty/blob/master/examples/friend-bot.ts)
+建议仔细看代码[friend-bot.ts](https://github.com/wechaty/wechaty/blob/master/examples/friend-bot.ts)
 
 相关issue:
-- [BREAKING CHANGE: v0.16 on('friend`) arguments changed!](https://github.com/Chatie/wechaty/issues/1196)
-- [BREAKING CHANGES v0.16: FriendRequest class will be replaced with Friendship](https://github.com/Chatie/wechaty/issues/1312)
+- [BREAKING CHANGE: v0.16 on('friend`) arguments changed!](https://github.com/wechaty/wechaty/issues/1196)
+- [BREAKING CHANGES v0.16: FriendRequest class will be replaced with Friendship](https://github.com/wechaty/wechaty/issues/1312)
 
 ## Message.content() 改成了 Message.text()
 
@@ -235,7 +240,7 @@ wechaty.on('friendship', request => {
 从 v0.18, Message.content() 会彻底弃用.
 
 相关issue:
-- [BREAKING CHANGE: v0.16 will replace `Message.content()` with `Message.text()`](https://github.com/Chatie/wechaty/issues/1163)
+- [BREAKING CHANGE: v0.16 will replace `Message.content()` with `Message.text()`](https://github.com/wechaty/wechaty/issues/1163)
 
 ## MediaMessage 将会被弃用
 从 0.16, MediaMessage 依然是可被兼容的状态.
@@ -250,7 +255,7 @@ wechaty.on('friendship', request => {
 ```
 
 相关issue:
-- [BREAKING CHANGE: v0.16 will remove `MediaMessage` class ](https://github.com/Chatie/wechaty/issues/1164)
+- [BREAKING CHANGE: v0.16 will remove `MediaMessage` class ](https://github.com/wechaty/wechaty/issues/1164)
 
 ### 介绍一个好用的发送图片的功能
 
@@ -266,7 +271,7 @@ BOT_QR_CODE_IMAGE_FILE,
 ## Wechaty.self() 改成了 Wechaty.userSelf()
 
 相关issue:
-- [BREAKING CHANGE v0.16 Wechaty.self() eprecated, use Wechaty.userSelf() instead](https://github.com/Chatie/wechaty/issues/1369)
+- [BREAKING CHANGE v0.16 Wechaty.self() eprecated, use Wechaty.userSelf() instead](https://github.com/wechaty/wechaty/issues/1369)
 
 ## Contact.personal() 和 Contact.official() 改成了 Contact.type()
 ### 之前
@@ -288,12 +293,12 @@ const isOfficial = contact.official()
 ```
 
 相关issue:
-- [BREAKING CHANGE v0.16 Contact.personal() and Contact.official() deprecated, use Contact.type() instead](https://github.com/Chatie/wechaty/issues/1366)
+- [BREAKING CHANGE v0.16 Contact.personal() and Contact.official() deprecated, use Contact.type() instead](https://github.com/wechaty/wechaty/issues/1366)
 
 ## Room.add() 返回值从Promise<boolean> 变成了 Promise<void>
 
 相关issue:
-- [BREAKING CHANGE v0.16 room.add return Promise<void> instead of return Promise<boolean> ](https://github.com/Chatie/wechaty/issues/1362)
+- [BREAKING CHANGE v0.16 room.add return Promise<void> instead of return Promise<boolean> ](https://github.com/wechaty/wechaty/issues/1362)
 
 ## Room.topic() 从Sync 变成了 Async
 ### 之前
@@ -309,7 +314,7 @@ const topic = await room.topic()
 ```
 
 相关issue:
-- [BREAKING CHANGE: v0.16 `Room.topic()` change from Sycn to Async](https://github.com/Chatie/wechaty/issues/1295)
+- [BREAKING CHANGE: v0.16 `Room.topic()` change from Sycn to Async](https://github.com/wechaty/wechaty/issues/1295)
 
 ## Room.alias(contact) 从Sync 变成了 Async
 ### 之前
@@ -326,7 +331,7 @@ const alias = await room.alias(contact)
 
 
 相关issue:
-- [BREAKING CHANGE: v0.16 `Room.alias(contact)` change from Sycn to Async](https://github.com/Chatie/wechaty/issues/1293)
+- [BREAKING CHANGE: v0.16 `Room.alias(contact)` change from Sycn to Async](https://github.com/wechaty/wechaty/issues/1293)
 
 ## Room.memberList() 从Sync 变成了 Async
 ### 之前
@@ -342,7 +347,7 @@ const memberList = await room.memberList()
 ```
 
 相关issue:
-- [BREAKING CHANGE: v0.16 `Room.memberList()` change from Sycn to Async](https://github.com/Chatie/wechaty/issues/1290)
+- [BREAKING CHANGE: v0.16 `Room.memberList()` change from Sycn to Async](https://github.com/wechaty/wechaty/issues/1290)
 
 ## Room.member() 从Sync 变成了 Async
 ### 之前
@@ -359,7 +364,7 @@ const contact = room.member('Huan')
 ```
 
 相关issue:
-- [BREAKING CHANGES: v0.16 `Room.member()` from `sync` to `async`](https://github.com/Chatie/wechaty/issues/1258)
+- [BREAKING CHANGES: v0.16 `Room.member()` from `sync` to `async`](https://github.com/wechaty/wechaty/issues/1258)
 
 ## Room.has(contact) 从Sync 变成了 Async
 ### 之前
@@ -374,7 +379,7 @@ const exist = await room.has(contact)
 ```
 
 相关issue:
-- [BREAKING CHANGE: v0.16 `Room.has(contact)` change from Sycn to Async](https://github.com/Chatie/wechaty/issues/1289)
+- [BREAKING CHANGE: v0.16 `Room.has(contact)` change from Sycn to Async](https://github.com/wechaty/wechaty/issues/1289)
 
 ## Message.mention() 从Sync 变成了 Async
 
@@ -391,23 +396,23 @@ const mentionList = message.mention()
 + const mentionList = await message.mention()
 ```
 相关issue:
-- [BREAKING CHANGE: v0.16 `Message.mention()` change from `sync` to `async`](https://github.com/Chatie/wechaty/issues/1259)
+- [BREAKING CHANGE: v0.16 `Message.mention()` change from `sync` to `async`](https://github.com/wechaty/wechaty/issues/1259)
 
 
 ## `scan` 事件参数发生了变化
 对老代码是兼容的
 ### 之前
 
-https://github.com/Chatie/wechaty/blob/860e85ec776ac20e92751ec4b67e0d539ef40a16/examples/ding-dong-bot.ts#L74-L77
+https://github.com/wechaty/wechaty/blob/860e85ec776ac20e92751ec4b67e0d539ef40a16/examples/ding-dong-bot.ts#L74-L77
 
 ### 之后
 
-https://github.com/Chatie/wechaty/blob/07008dff17ccc46b347ba28b85af167984573ea0/examples/ding-dong-bot.ts#L74-L76
+https://github.com/wechaty/wechaty/blob/07008dff17ccc46b347ba28b85af167984573ea0/examples/ding-dong-bot.ts#L74-L76
 
 请注意我们删除了 ~~`const loginUrl = url.replace(/\/qrcode\//, '/l/')`~~
 
 相关issue:
-- [BREAKING CHANGE: v0.16 `scan` event args will be different!](https://github.com/Chatie/wechaty/issues/1262)
+- [BREAKING CHANGE: v0.16 `scan` event args will be different!](https://github.com/wechaty/wechaty/issues/1262)
 
 ## `Room`,`Contact`,`Message`,`FriendRequest`在不能直接实例化
 
@@ -445,12 +450,12 @@ const room = await Room.create(...)
 Contact, FriendRequest, and Message这些也一样
 
 Related Link
-- [Error: class can not be instanciated directly! ](https://github.com/Chatie/wechaty/issues/1217)
-- [BREAKING CHANGE v0.16 Contact, FriendRequest, Message, and Room classes will not be able to instantiate directly](https://github.com/Chatie/wechaty/issues/1364)
-- [Error: static puppet not found](https://github.com/Chatie/wechaty/issues/1161)
-- [Wechaty Multi-Instance Suport](https://github.com/Chatie/wechaty/issues/518)
+- [Error: class can not be instanciated directly! ](https://github.com/wechaty/wechaty/issues/1217)
+- [BREAKING CHANGE v0.16 Contact, FriendRequest, Message, and Room classes will not be able to instantiate directly](https://github.com/wechaty/wechaty/issues/1364)
+- [Error: static puppet not found](https://github.com/wechaty/wechaty/issues/1161)
+- [Wechaty Multi-Instance Suport](https://github.com/wechaty/wechaty/issues/518)
 - NPM [clone-class](https://www.npmjs.com/package/clone-class)
-- https://github.com/zixia/node-clone-class/issues/5
+- https://github.com/huan/node-clone-class/issues/5
 
 ## Message.ext() 返回 `.ext` 而不是 `ext`
 根据`ext()` 在 Node/Python/C# 中的实现，我们的 `ext()` 也返回包括`.`的文件扩展名。 所以更新如下：
@@ -469,6 +474,6 @@ const ext = message.ext()
 `assert(ext === '.txt')`
 
 相关链接
-- [BREAKING CHANGE: v0.16 Message.ext() return '.ext' instead of 'ext' before](https://github.com/Chatie/wechaty/issues/1168)
+- [BREAKING CHANGE: v0.16 Message.ext() return '.ext' instead of 'ext' before](https://github.com/wechaty/wechaty/issues/1168)
 
 嗯，这大概就是所有的迁移记录了，谢谢！希望大家使用顺利！
