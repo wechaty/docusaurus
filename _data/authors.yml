@@ -1,5 +1,3 @@
-﻿ # /_data/authors.yml
-
 huan:
   name        : "Huan (李卓桓)"
   bio         : "Author of Wechaty. Tencent TVP of Chatbot, Conversational AI Export, Open-source Coder with 💖"
@@ -226,3 +224,12 @@ hzzzzzz:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hzzzzzz"
+
+legendaryjesse:
+  name        : "legendaryjesse"
+  bio         : "Entrepreneurs、coder、real human"
+  avatar      : "https://avatars0.githubusercontent.com/u/23567445?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/JesseWeb"
