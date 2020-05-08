@@ -24,7 +24,7 @@ Done!~
 
 ### 1. Add Blog Header
 
-All blog should has title, author, date...
+All blog should has title, author, date, teaser...
 
 Example as follows:
 
@@ -35,7 +35,7 @@ Example as follows:
  date: 2017-09-18 09:00 +0800
  author: your_github_username
  header:
-  teaser: your_teaser_image_path
+   teaser: your_teaser_image_path
  ---
 
  > Author: [@your_github_username](https://github.com/your_github_username) your one-line bio at here
