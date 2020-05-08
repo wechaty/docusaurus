@@ -3,7 +3,7 @@ title: "微信群管辅助"
 author: tianyugeng
 date: '2020年4月30日'
 header:
-  teaser: /assets/images/bio-photo.png
+  teaser: /assests/2020/room-manager/bio-photo.png
 ---
 
 > 作者: [tianyugeng](https://github.com/tianyugeng) 前端开发工程师(自称)
