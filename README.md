@@ -36,7 +36,7 @@ Example as follows:
  author: your_github_username
  header:
    teaser: your_teaser_image_path
- ---
+---
 
  > Author: [@your_github_username](https://github.com/your_github_username) your one-line bio at here
 ```
