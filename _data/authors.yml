@@ -226,3 +226,15 @@ hzzzzzz:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hzzzzzz"
+
+ershing:
+  name        : "ershing"
+  bio         : "Node.js developer"
+  avatar      : "https://avatars1.githubusercontent.com/u/24764598?s=80"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ershing"
+    - label: "Blog"
+      icon: "fab fa-fw fa-rss-square"
+      url: "http://www.ershing.cn"
