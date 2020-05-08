@@ -8,7 +8,7 @@
 ## HOW TO POST BLOG
 
 1. Fork it
-1. [Syncing a fork](https://help.github.com/cn/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+1. [Syncing your fork](https://help.github.com/cn/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
 1. Create your blog branch (git checkout -b your-blog)
 1. Write your blog in markdown
 1. Add your blog to `_post` folder
