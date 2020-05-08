@@ -1,7 +1,7 @@
 ---
 title: "微信群管辅助"
 author: tianyugeng
-date: '2020年4月30日'
+date: '2020-4-30 09:00 +0800'
 header:
   teaser: /assests/2020/room-manager/bio-photo.png
 ---
