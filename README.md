@@ -8,10 +8,12 @@
 ## HOW TO POST BLOG
 
 1. Fork it
+1. [Syncing a fork](https://help.github.com/cn/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
 1. Create your blog branch (git checkout -b your-blog)
 1. Write your blog in markdown
 1. Add your blog to `_post` folder
 1. Add related image to `assets` folder
+1. Add your info into `_data/authors.yml`
 1. Commit your changes (git commit -am 'added a blog')
 1. Push to the branch
 1. Create new Pull Request
@@ -32,6 +34,8 @@ Example as follows:
  title: "'Score Your Face Photo' a ML&Wechaty practice"
  date: 2017-09-18 09:00 +0800
  author: your_github_username
+ header:
+  teaser: your_teaser_image_path
  ---
 
  > Author: [@your_github_username](https://github.com/your_github_username) your one-line bio at here
