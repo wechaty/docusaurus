@@ -38,14 +38,18 @@ Example as follows:
    teaser: your_teaser_image_path
 ---
 
- > Author: [@your_github_username](https://github.com/your_github_username) your one-line bio at here
+<!-- markdownlint-disable -->
+
+> Author: [@your_github_username](https://github.com/your_github_username) your one-line bio at here
+
+> Code: [@yourcode](your_code_path)
 ```
 
 ### 2. Writing Style
 
 * Keep all filenames & url as lowercase, and use `-` to connect words instead of space. e.g. `2017-10-06-wechat-pc-impactor` instead of `2017-10-06-WeChat PC Impactor`
 * Find a good image for the blog to make it more beautiful.
-* Embed the photo & video before publishing, save all external file to the blog `/assets/2018` directory.
+* Embed the photo & video before publishing, save all external file to the blog `/assets/${current_year}` directory.
 
 see more: [Do not include Date in URL](https://github.com/wechaty/wechaty.github.io/issues/79)
 
