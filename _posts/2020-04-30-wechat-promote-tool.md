@@ -59,7 +59,7 @@ header:
 * 增加更多推广能力
 
 ## 鸣谢
-感谢 [Wechaty](https://github.com/wechaty/wechaty) 开源项目及 JuziBot 公司提供的 token，为开发者带来极大便利！
+感谢 [Wechaty](https://github.com/wechaty/wechaty) 开源项目及 [句子互动](https://www.juzibot.com/)公司提供的 token，为开发者带来极大便利！
 
 感谢[@huan](https://github.com/huan) 提供的代码思路以及编码风格。
 
