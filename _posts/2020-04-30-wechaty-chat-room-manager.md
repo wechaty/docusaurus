@@ -6,14 +6,16 @@ tags:
    - wechaty
 
 header:
-  teaser: /assests/2020/room-manager/bio-photo.png
+  teaser: /assets/2020/room-manager/bio-photo.png
 ---
 
 > 作者: [tianyugeng](https://github.com/tianyugeng) 前端开发工程师(自称)
 
 <!-- more -->
 
-## 微信群管辅助 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/chatie/wechaty)
+## 微信群管辅助
+
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/chatie/wechaty)
 
 [![Node.js CI](https://github.com/wechaty/wechaty-getting-started/workflows/Node.js%20CI/badge.svg)](https://github.com/wechaty/wechaty-getting-started/actions?query=workflow%3A%22Node.js+CI%22)
 ![Node.js v10](https://img.shields.io/badge/node-%3E%3D10-green.svg)
