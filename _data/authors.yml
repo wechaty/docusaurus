@@ -247,3 +247,12 @@ ershing:
     - label: "Blog"
       icon: "fab fa-fw fa-rss-square"
       url: "http://www.ershing.cn"
+
+tianyugeng:
+  name        : "tianyugeng"
+  bio         : "前端开发工程师(自称)"
+  avatar      : "https://avatars1.githubusercontent.com/u/24802572?s=400&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/tianyugeng"
