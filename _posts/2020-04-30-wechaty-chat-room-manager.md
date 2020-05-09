@@ -2,6 +2,8 @@
 title: "微信群管辅助"
 date: '2020-5-8 09:00 +0800'
 author: tianyugeng
+tags:
+   - wechaty
 
 header:
   teaser: /assests/2020/room-manager/bio-photo.png
