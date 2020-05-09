@@ -8,10 +8,12 @@
 ## HOW TO POST BLOG
 
 1. Fork it
+1. [Syncing your fork](https://help.github.com/cn/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
 1. Create your blog branch (git checkout -b your-blog)
 1. Write your blog in markdown
 1. Add your blog to `_post` folder
 1. Add related image to `assets` folder
+1. Add your info into `_data/authors.yml`
 1. Commit your changes (git commit -am 'added a blog')
 1. Push to the branch
 1. Create new Pull Request
@@ -22,7 +24,7 @@ Done!~
 
 ### 1. Add Blog Header
 
-All blog should has title, author, date...
+All blog should has title, author, date, teaser...
 
 Example as follows:
 
@@ -32,16 +34,22 @@ Example as follows:
  title: "'Score Your Face Photo' a ML&Wechaty practice"
  date: 2017-09-18 09:00 +0800
  author: your_github_username
- ---
+ header:
+   teaser: your_teaser_image_path
+---
 
- > Author: [@your_github_username](https://github.com/your_github_username) your one-line bio at here
+<!-- markdownlint-disable -->
+
+> Author: [@your_github_username](https://github.com/your_github_username) your one-line bio at here
+
+> Code: [@yourcode](your_code_path)
 ```
 
 ### 2. Writing Style
 
 * Keep all filenames & url as lowercase, and use `-` to connect words instead of space. e.g. `2017-10-06-wechat-pc-impactor` instead of `2017-10-06-WeChat PC Impactor`
 * Find a good image for the blog to make it more beautiful.
-* Embed the photo & video before publishing, save all external file to the blog `/assets/2018` directory.
+* Embed the photo & video before publishing, save all external file to the blog `/assets/${current_year}` directory.
 
 see more: [Do not include Date in URL](https://github.com/wechaty/wechaty.github.io/issues/79)
 
