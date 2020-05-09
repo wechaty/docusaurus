@@ -6,7 +6,7 @@ categories: event
 tags:
   - wechaty
 header:
-  teaser: /assets/2020/chatbot-on-uniqueway/slide-1.jpg
+  teaser: /assets/2020/chatbot-on-uniqueway/teaser.jpg
 ---
 
 > 作者: [李恺](https://github.com/tlikai)，无二之旅研发总监、资深后端工程师。
