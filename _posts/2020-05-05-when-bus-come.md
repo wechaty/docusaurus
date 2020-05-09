@@ -6,6 +6,8 @@ categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
+header:
+  teaser: /assets/2020/when-bus-come/teaser.jpg
 ---
 
 > 作者: [ershing](https://github.com/ershing) Node.js developer
