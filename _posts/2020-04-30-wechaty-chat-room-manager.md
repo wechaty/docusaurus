@@ -1,12 +1,14 @@
 ---
 title: "微信群管辅助"
+date: '2020-5-8 09:00 +0800'
 author: tianyugeng
-date: '2020-4-30 09:00 +0800'
+
 header:
   teaser: /assests/2020/room-manager/bio-photo.png
 ---
 
 > 作者: [tianyugeng](https://github.com/tianyugeng) 前端开发工程师(自称)
+
 <!-- more -->
 
 ## 微信群管辅助 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/chatie/wechaty)
