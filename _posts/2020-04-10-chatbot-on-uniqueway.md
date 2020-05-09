@@ -1,7 +1,7 @@
 ---
 title: "Chatbot 在定制旅游行业的应用"
 date: 2020-05-09 19:00 +0800
-author: tlikai
+author: likai
 categories: event
 tags:
   - wechaty
