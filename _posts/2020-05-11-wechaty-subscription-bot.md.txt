@@ -6,7 +6,7 @@ categories: event
 tags:
   - wechaty
 header:
-  teaser: /assets/2020/chatbot-on-uniqueway/slide-1.jpg
+  teaser: /assets/2020/2020-05-11-wechaty-subscription-bot.png
 ---
 
 <!-- markdownlint-disable -->
