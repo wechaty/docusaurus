@@ -265,3 +265,12 @@ likai:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/tlikai"
+
+fish-ball:
+  name        : "likai"
+  bio         : "分母为零的斜杠大龄青年程序员"
+  avatar      : "https://avatars0.githubusercontent.com/u/1356974?s=88&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/fish-ball"
