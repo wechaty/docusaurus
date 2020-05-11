@@ -14,7 +14,7 @@ header:
 > 作者: [工画师](https://github.com/fish-ball)，分母为零的斜杠大龄青年程序员。
 <!-- more -->
 
-项目链接：[![subsbot](https://img.shields.io/badge/GitHub-subsbot-green)](https://github.com/fish-ball/wechaty-subsbot)
+项目链接：[![wechaty-subsbot](https://img.shields.io/badge/GitHub-subsbot-green)](https://github.com/fish-ball/wechaty-subsbot)
 
 ## 项目背景
 
