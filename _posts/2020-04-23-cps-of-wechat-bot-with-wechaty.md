@@ -8,7 +8,7 @@ tags:
   - cps
 
 header:
-  teaser: /assets/2020/cps-bot/qrcode.png
+  teaser: /assets/2020/cps-bot/qrcode.jpg
 ---
 <!-- markdownlint-disable -->
 
