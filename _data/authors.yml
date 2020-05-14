@@ -218,6 +218,15 @@ cr4fun:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/cr4fun"
 
+shuangjie:
+  name        : "DoubleJack"
+  bio         : "a noob developer"
+  avatar      : "https://avatars0.githubusercontent.com/u/13066471?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/shuangjie"
+
 hzzzzzz:
   name        : "hzzzzzz"
   bio         : "Node.js developer"
