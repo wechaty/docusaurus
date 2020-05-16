@@ -18,7 +18,7 @@ tags: - wechaty
 > Code: [Github](https://github.com/GreyPlane/nakano-bot)
 > <del>bot名字取自朋友id</del>
 
-[![fubuki↑fubuki↑↑fubuki↑↑↑](/assets/2020/nakano-bot/fubuki.jpg)](https://github.com/GreyPlane/nakano-bot)
+[![bot结构](/assets/2020/nakano-bot/fubuki.png)](https://github.com/GreyPlane/nakano-bot)
 <!-- more -->
 
 ## 1.动机和需求
