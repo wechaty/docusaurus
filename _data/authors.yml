@@ -292,3 +292,13 @@ xiaogan18:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/xiaogan18"
+
+Kylin93CN:
+  name        : "Kylin93CN"
+  bio         : "Full stack developer in Hangzhou"
+  avatar      : "https://avatars1.githubusercontent.com/u/18496145?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Kylin93CN"
+
