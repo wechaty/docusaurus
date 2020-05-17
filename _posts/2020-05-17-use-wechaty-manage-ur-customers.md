@@ -2,10 +2,11 @@
 title: "使用Wechaty管理你的顾客"
 author: Kylin93CN
 date: '2020-05-17 19:20:50 +0800'
-categories: project
+categories: XueMiEr-wx-bot
 tags:
   - wechaty
-  - wechaty-puppet-macpro
+  - wechaty-puppet-padplus
+  - chatbot
 ---
 
 > 作者: [Kylin93CN](https://github.com/Kylin93CN)
