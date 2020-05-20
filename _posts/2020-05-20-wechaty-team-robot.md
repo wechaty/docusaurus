@@ -71,7 +71,7 @@ exports.onMessage = bot =>{
         console.log("收到消息",msg)
         const contact = msg.from() //发送消息的联系人
         const text = msg.text() //消息内容
-        const room = msg.room()  //群消息，null则不是 
+        const room = msg.room()  //群消息，null则不是
         // 判断消息来自自己，直接return
         if (msg.self()) return;
         // 判断此消息类型是否为文本
@@ -102,27 +102,24 @@ exports.onMessage = bot =>{
 
 ```js
 
-module.exports ={
-	handle : params => { //消息处理
-	  return get({
-	    api: "/taskMsg/handle",
-	    data: params
-	  })
-	},
-	setSend : params => { //将消息置为已发送
-	  return get({
-      api: "/taskMsg/setSend",
-      data: params
-	  })
-	},
-	list : params => { //未发送消息列表
-	  return get({
-      api: "/taskMsg/list",
-      data: params
-	  })
-	}
+function handle(params){ //消息处理
+  return get({
+    api: "/taskMsg/handle",
+    data: params
+  })
 }
-
+function setSend(params){ //将消息置为已发送
+  return get({
+    api: "/taskMsg/setSend",
+    data: params
+  })
+}
+function	list(params){ //未发送消息列表
+  return get({
+    api: "/taskMsg/list",
+    data: params
+  })
+}
 ```
 
 ### 轮询获取待发送的消息，发送给联系人或者群里@联系人
