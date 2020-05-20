@@ -7,7 +7,7 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
 ---
-
+<!-- markdownlint-disable -->
 > 作者: [suruozhong](https://github.com/suruozhong)
 > Code: [Github](https://github.com/suruozhong/wechaty-team-robot)
 
@@ -25,6 +25,23 @@ tags:
 
 wechaty-team-robot
 
+#### 结构
+
+```js
+|-- src/
+|---- api/
+|------ api.js  #请求的接口
+|------ request.js #request请求
+|---- constant/
+|------ config.js #参数配置文件
+|---- event/
+|------ friendship.js	# 好友添加监听回调
+|------ message.js 	# 消息监听回调
+|------ room.js		# 进入房间监听回调
+|------ roomInvitation.js		# 群邀请监听回调
+|-- index.js	# 入口文件
+|- package.json
+```
 ## 实现
 
 - 方案：
@@ -102,23 +119,25 @@ exports.onMessage = bot =>{
 
 ```js
 
-function handle(params){ //消息处理
-  return get({
-    api: "/taskMsg/handle",
-    data: params
-  })
-}
-function setSend(params){ //将消息置为已发送
-  return get({
-    api: "/taskMsg/setSend",
-    data: params
-  })
-}
-function	list(params){ //未发送消息列表
-  return get({
-    api: "/taskMsg/list",
-    data: params
-  })
+module.exports ={
+	handle : params => { //消息处理
+	  return get({
+	    api: "/taskMsg/handle",
+	    data: params
+	  })
+	},
+	setSend : params => { //将消息置为已发送
+	  return get({
+		api: "/taskMsg/setSend",
+		data: params
+	  })
+	},
+	list : params => { //未发送消息列表
+	  return get({
+		api: "/taskMsg/list",
+		data: params
+	  })
+	}
 }
 ```
 
