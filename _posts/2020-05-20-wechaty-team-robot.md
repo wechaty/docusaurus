@@ -8,7 +8,7 @@ tags:
   - wechaty-puppet-padplus
 ---
 
-> 作者: [suruozhong](https://github.com/suruozhong) 
+> 作者: [suruozhong](https://github.com/suruozhong)
 > Code: [Github](https://github.com/suruozhong/wechaty-team-robot)
 
 ## 需求背景
@@ -30,7 +30,6 @@ wechaty-team-robot
 
 ### 代码结构
 
-```js
 |-- src/
 |---- index.js				# 入口文件
 |---- config.js		  	# 配置文件
@@ -39,11 +38,10 @@ wechaty-team-robot
 |---- onMessage.js		# 消息监听回调
 |---- onFriendShip.js	# 好友添加监听回调
 |-- package.json
-```
 
 ### 机器人登录扫码，退出登录，消息处理，好友添加，加入群聊，入群邀请，各种事件回调
 
-```javascript
+```js
 
 bot
   .on('scan', (qrcode, status) => { //扫码登录
@@ -72,18 +70,17 @@ bot
 
 ### 接收消息并交给接口处理
 
-```javascript
+```js
 
 // 消息处理 
 exports.onMessage = bot => {
-    return async function onMessage(msg) {
+    return async function onMessage(msg){
         console.log("收到消息",msg)
         const contact = msg.from() //发送消息的联系人
         const text = msg.text() //消息内容
         const room = msg.room()  //群消息，null则不是 
         // 判断消息来自自己，直接return
-        if (msg.self()) return
-
+        if (msg.self()) return;
         // 判断此消息类型是否为文本
         if (msg.type() == Message.Type.Text) {
             if(room==null){
@@ -110,7 +107,7 @@ exports.onMessage = bot => {
 
 ### 接口列表
 
-```javascript
+```js
 
 module.exports ={
 	handle : params => { //消息处理
@@ -195,6 +192,7 @@ exports.taskSendMessage = async function(bot){
 ```
 
 ## 已实现的功能
+
 - 自动通过好友验证
 - 私聊群聊自动回复
   - 回复 `帮助` 查看功能介绍
@@ -206,13 +204,16 @@ exports.taskSendMessage = async function(bot){
 - 中英文互译
 
 ## 效果图
-![](/assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot1.jpg)
-![](/assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot2.jpg)
+
+![1](/assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot1.jpg)
+![2](/assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot2.jpg)
 
 ## 待实现需求
+
 - 日报收集，定时统计日报，定时@未提交日报的成员。
 - 每天早上爬取热点新闻发送
 - 等等团队需要的功能待挖掘实现
 
 ## wechaty-team-robot 还是一个正在开发中的项目, 欢迎留言交流你对它的看法，以及你需要的功能
+
 ## 感谢  Wechaty开源项目及JuziBot公司提供的接口和token，为开发者带来极大便利！
