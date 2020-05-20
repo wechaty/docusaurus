@@ -32,19 +32,6 @@ wechaty-team-robot
   2. 团队成员按格式发送消息，调用接口分析消息，存入数据库，接口返回消息处理结果
   3. 定时轮询接口，获取待发送的消息
 
-### 代码结构
-
-```
-|-- src/
-|---- index.js				# 入口文件
-|---- config.js		  	# 配置文件
-|---- onScan.js				# 机器人需要扫描二维码时监听回调
-|---- onRoomJoin.js 	# 进入房间监听回调
-|---- onMessage.js		# 消息监听回调
-|---- onFriendShip.js	# 好友添加监听回调
-|-- package.json
-```
-
 ### 机器人登录扫码，退出登录，消息处理，好友添加，加入群聊，入群邀请，各种事件回调
 
 ```js
@@ -113,7 +100,7 @@ exports.onMessage = bot =>{
 
 ### 接口列表
 
-```
+```js
 
 module.exports ={
 	handle : params => { //消息处理
@@ -124,14 +111,14 @@ module.exports ={
 	},
 	setSend : params => { //将消息置为已发送
 	  return get({
-		api: "/taskMsg/setSend",
-		data: params
+      api: "/taskMsg/setSend",
+      data: params
 	  })
 	},
 	list : params => { //未发送消息列表
 	  return get({
-		api: "/taskMsg/list",
-		data: params
+      api: "/taskMsg/list",
+      data: params
 	  })
 	}
 }
