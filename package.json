@@ -1,0 +1,20 @@
+{
+  "name": "wechaty.github.io",
+  "version": "1.0.0",
+  "description": "[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)\r [![NPM](https://github.com/wechaty/wechaty.github.io/workflows/NPM/badge.svg)](https://github.com/wechaty/wechaty.github.io/actions?query=workflow%3ANPM)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suruozhong/wechaty.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suruozhong/wechaty.github.io/issues"
+  },
+  "homepage": "https://github.com/suruozhong/wechaty.github.io#readme"
+}
