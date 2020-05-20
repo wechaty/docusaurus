@@ -20,9 +20,13 @@ tags:
 --说干就干，开始了我的微信机器人之旅
 
 <!--more-->
+
 ## 项目
+
 wechaty-team-robot
+
 ## 实现
+
 - 方案：
   1. 使用 `Node.js` 开发，使用`wechaty/wechaty-puppet-padplus`等功能库；
   2. 团队成员按格式发送消息，调用接口分析消息，存入数据库，接口返回消息处理结果
@@ -30,6 +34,7 @@ wechaty-team-robot
 
 ### 代码结构
 
+```
 |-- src/
 |---- index.js				# 入口文件
 |---- config.js		  	# 配置文件
@@ -38,6 +43,7 @@ wechaty-team-robot
 |---- onMessage.js		# 消息监听回调
 |---- onFriendShip.js	# 好友添加监听回调
 |-- package.json
+```
 
 ### 机器人登录扫码，退出登录，消息处理，好友添加，加入群聊，入群邀请，各种事件回调
 
@@ -72,8 +78,8 @@ bot
 
 ```js
 
-// 消息处理 
-exports.onMessage = bot => {
+// 消息处理
+exports.onMessage = bot =>{
     return async function onMessage(msg){
         console.log("收到消息",msg)
         const contact = msg.from() //发送消息的联系人
@@ -107,7 +113,7 @@ exports.onMessage = bot => {
 
 ### 接口列表
 
-```js
+```
 
 module.exports ={
 	handle : params => { //消息处理
