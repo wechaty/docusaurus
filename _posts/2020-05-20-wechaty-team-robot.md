@@ -6,6 +6,8 @@ categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
+header:
+  teaser: /assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot_header.jpg 
 ---
 <!-- markdownlint-disable -->
 > 作者: [suruozhong](https://github.com/suruozhong)
@@ -211,11 +213,18 @@ exports.taskSendMessage = async function(bot){
   - 群聊私聊中开启自动回复后，可以和机器人聊天
 - 定时获取并发送的待办提醒（私聊或者群聊@多人）
 - 中英文互译
+- 成语词典
+- 每日一句
+- 数字计算
+- 天气预报
+- 空气质量
 
 ## 效果图
 
 ![1](/assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot1.jpg)
 ![2](/assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot2.jpg)
+![3](/assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot3.jpg)
+![4](/assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot4.jpg)
 
 ## 待实现需求
 
