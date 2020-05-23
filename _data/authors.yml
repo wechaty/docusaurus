@@ -302,3 +302,11 @@ Kylin93CN:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Kylin93CN"
 
+suruozhong:
+  name        : "suruozhong"
+  bio         : "一贫如洗的java开发工程师，喜欢研究各种有意思的技术"
+  avatar      : "https://avatars2.githubusercontent.com/u/22618493?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/suruozhong"  
