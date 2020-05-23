@@ -7,7 +7,7 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
 header:
-  teaser: /assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot_header.jpg 
+  teaser: /assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot0.jpg 
 ---
 <!-- markdownlint-disable -->
 > 作者: [suruozhong](https://github.com/suruozhong)
