@@ -293,6 +293,15 @@ xiaogan18:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/xiaogan18"
 
+Kylin93CN:
+  name        : "Kylin93CN"
+  bio         : "Full stack developer in Hangzhou"
+  avatar      : "https://avatars1.githubusercontent.com/u/18496145?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Kylin93CN"
+
 suruozhong:
   name        : "suruozhong"
   bio         : "一贫如洗的java开发工程师，喜欢研究各种有意思的技术"
@@ -300,4 +309,4 @@ suruozhong:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/suruozhong"      
+      url: "https://github.com/suruozhong"  
