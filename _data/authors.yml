@@ -310,3 +310,12 @@ suruozhong:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/suruozhong"  
+      
+renjiayue:
+  name        : "renjiayue"
+  bio         : "java开发工程师，想要做好每一件事"
+  avatar      : "https://avatars1.githubusercontent.com/u/50537525?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/renjiayue"  
