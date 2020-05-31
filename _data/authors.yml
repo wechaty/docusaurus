@@ -310,3 +310,12 @@ suruozhong:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/suruozhong"  
+
+Peanut:
+  name        : "Peanut"
+  bio         : "前端开发工程师，想做一个完美的产品"
+  avatar      : "https://avatars1.githubusercontent.com/u/35526117?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/isnl"  
