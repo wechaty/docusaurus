@@ -163,4 +163,5 @@ $ node mybot.js
 ![8](/assets/2020/web-panel/qr.png)
 
 ## 致谢
+
 感谢Wechaty团队提供这么好的一个工具，同时还开发出这么赞的插件系统。希望能够有更多的人参与进来，来继续扩大wechaty插件的生态圈
