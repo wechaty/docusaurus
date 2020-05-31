@@ -309,4 +309,13 @@ suruozhong:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/suruozhong"  
+      url: "https://github.com/suruozhong"
+
+leo_chen:
+  name        : "Leo_chen"
+  bio         : "高级前端工程师一枚，喜欢用node做各种项目，生命不止，折腾不息！"
+  avatar      : "https://avatars1.githubusercontent.com/u/20028566?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/gengchen528"
