@@ -319,3 +319,12 @@ Peanut:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/isnl"  
+
+lwp:
+  name        : "beclass"
+  bio         : "全栈工程师，喜欢研究好玩的东西"
+  avatar      : "https://avatars3.githubusercontent.com/u/12541388?s=400&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/beclass"  
