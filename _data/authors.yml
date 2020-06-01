@@ -319,3 +319,21 @@ leo_chen:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/gengchen528"
+
+Peanut:
+  name        : "Peanut"
+  bio         : "前端开发工程师，想做一个完美的产品"
+  avatar      : "https://avatars1.githubusercontent.com/u/35526117?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/isnl"  
+
+lwp:
+  name        : "beclass"
+  bio         : "全栈工程师，喜欢研究好玩的东西"
+  avatar      : "https://avatars3.githubusercontent.com/u/12541388?s=400&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/beclass"  
