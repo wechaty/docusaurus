@@ -9,7 +9,7 @@ tags:
   - webPanel
   - plugins
 header:
-  teaser: /assets/2020/web-panel/web-head.png
+  teaser: /assets/2020/web-panel-plugin/web-head.png
 ---
 <!-- markdownlint-disable -->
 
@@ -81,7 +81,7 @@ header:
 
 3. 个人中心获取`APIKEY`和`APISECRET`，后续配置用到
 
-![](/assets/2020/web-panel/user-center.png)
+![](/assets/2020/web-panel-plugin/user-center.png)
 
 ### 开始
 
@@ -136,23 +136,23 @@ $ node mybot.js
 
 进入面板`小助手配置->登录状态`扫码登录，或直接扫码控制台二维码登录。成功登陆后，即可使用面板中所有的功能
 
-![](/assets/2020/web-panel/qrcode-s.png)
+![](/assets/2020/web-panel-plugin/qrcode-s.png)
 
 ## 面板预览
 
-![](/assets/2020/web-panel/qrcode.png)
-![](/assets/2020/web-panel/everyday.png)
-![](/assets/2020/web-panel/schedule.png)
-![](/assets/2020/web-panel/event.png)
-![](/assets/2020/web-panel/material.png)
+![](/assets/2020/web-panel-plugin/qrcode.png)
+![](/assets/2020/web-panel-plugin/everyday.png)
+![](/assets/2020/web-panel-plugin/schedule.png)
+![](/assets/2020/web-panel-plugin/event.png)
+![](/assets/2020/web-panel-plugin/material.png)
 
 ## 功能预览
 
-![](/assets/2020/web-panel/news.jpeg)
+![](/assets/2020/web-panel-plugin/news.jpeg)
 
 个人定时与群定时任务
 
-![](/assets/2020/web-panel/func.jpeg)
+![](/assets/2020/web-panel-plugin/func.jpeg)
 
 功能一览
 
@@ -160,7 +160,7 @@ $ node mybot.js
 
 后续会继续完善插件的功能，也欢迎大家来提交Pr。如果想要了解插件最新进展或者进行交流，欢迎添加我的小秘书，回复`插件`拉你进群
 
-![8](/assets/2020/web-panel/qr.png)
+![8](/assets/2020/web-panel-plugin/qr.png)
 
 ## 致谢
 
