@@ -1,5 +1,5 @@
 ---
-title: "wechat-bot"
+title: "优惠券搜索机器人（Coupon wechat bot）"
 author: h3llotom
 date: "2020-06-02 12:00:00 +0800"
 categories: project
