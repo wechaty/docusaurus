@@ -338,7 +338,7 @@ lwp:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/beclass"  
 
-lwp:
+remainsu:
   name        : "remainsu"
   bio         : "大数据工程师，喜欢各种瞎折腾"
   avatar      : "https://avatars3.githubusercontent.com/u/13496358?s=400&v=4"
