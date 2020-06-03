@@ -341,7 +341,7 @@ lwp:
 lwp:
   name        : "remainsu"
   bio         : "大数据工程师，喜欢各种瞎折腾"
-  avatar      : ""
+  avatar      : "https://avatars3.githubusercontent.com/u/13496358?s=400&v=4"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
