@@ -7,7 +7,7 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
 header:
-  teaser: /assets/2020/2020-06-02-wechat-bot.jpg
+  teaser: /assets/2020/coupon-wechat-bot/coupon-wechat-bot.jpg
 ---
 
 <!-- markdownlint-disable -->
@@ -103,7 +103,7 @@ yarn start
 ```
 
 ### 效果图
-![效果图](/assets/2020/2020-06-02-wechat-bot.jpg)
+![效果图](/assets/2020/coupon-wechat-bot/coupon-wechat-bot.jpg)
 
 ### 致谢
 感谢Wechaty团队提供这么好的一个工具，让我们开发者可以持续增强我们的国民级应用。希望能够有更多的人参与进来，来继续扩大wechaty的生态圈。<br />感谢juzi科技提供的api-token
