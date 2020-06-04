@@ -84,6 +84,15 @@ dcsan:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/dcsan"
 
+h3llotom:
+  name        : "yance"
+  bio         : "全炸工程师"
+  avatar      : "https://avatars1.githubusercontent.com/u/17921087?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/h3llotom"
+
 binsee:
   name        : "Binsee"
   bio         : "野路子的修炼者"
@@ -327,7 +336,7 @@ Peanut:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/isnl"  
+      url: "https://github.com/isnl"
 
 lwp:
   name        : "beclass"
@@ -336,7 +345,7 @@ lwp:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/beclass"  
+      url: "https://github.com/beclass"
 
 remainsu:
   name        : "remainsu"
