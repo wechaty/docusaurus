@@ -10,7 +10,7 @@ tags:
   - wechaty-puppet-padplus
   - nuxt
 header:
-  teaser: /assets/2020/wxbot/qrcode.png 
+  teaser: /assets/2020/mqbot/qrcode.png 
 ---
 
 <!-- markdownlint-disable -->
