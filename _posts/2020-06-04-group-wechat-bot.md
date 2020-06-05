@@ -1,5 +1,5 @@
 ---
-title: "微信群助手"
+title: "使用Wechaty开发微信群管理小助手"
 author: Sam
 date: "2020-06-03 12:00:00 +0800"
 categories: project
