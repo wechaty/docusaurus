@@ -164,7 +164,7 @@ npm start
 - [ ] 生活向文字冒险游戏
 
 ### 谁是卧底小游戏
-![Image text](/assets/2020/im-game-robot/A20200605161518.png)
-![Image text](/assets/2020/im-game-robot/B20200605161653.png)
-![Image text](/assets/2020/im-game-robot/C20200605161807.png)
+![Image text](/assets/2020/im-game-robot/a.png)
+![Image text](/assets/2020/im-game-robot/b.png)
+![Image text](/assets/2020/im-game-robot/c.png)
 ![Image text](/assets/2020/im-game-robot/qrbread.jpg)
