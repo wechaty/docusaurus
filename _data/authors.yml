@@ -84,6 +84,15 @@ dcsan:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/dcsan"
 
+h3llotom:
+  name        : "yance"
+  bio         : "全炸工程师"
+  avatar      : "https://avatars1.githubusercontent.com/u/17921087?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/h3llotom"
+
 binsee:
   name        : "Binsee"
   bio         : "野路子的修炼者"
@@ -292,3 +301,66 @@ Leons828:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Leons828"
+
+xiaogan18:
+  name        : "xiaogan18"
+  bio         : "Full stack developer,specialized golang and blockchain."
+  avatar      : "https://avatars1.githubusercontent.com/u/30039239?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/xiaogan18"
+
+Kylin93CN:
+  name        : "Kylin93CN"
+  bio         : "Full stack developer in Hangzhou"
+  avatar      : "https://avatars1.githubusercontent.com/u/18496145?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Kylin93CN"
+
+suruozhong:
+  name        : "suruozhong"
+  bio         : "一贫如洗的java开发工程师，喜欢研究各种有意思的技术"
+  avatar      : "https://avatars2.githubusercontent.com/u/22618493?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/suruozhong"
+
+leo_chen:
+  name        : "Leo_chen"
+  bio         : "高级前端工程师一枚，喜欢用node做各种项目，生命不止，折腾不息！"
+  avatar      : "https://avatars1.githubusercontent.com/u/20028566?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/gengchen528"
+
+Peanut:
+  name        : "Peanut"
+  bio         : "前端开发工程师，想做一个完美的产品"
+  avatar      : "https://avatars1.githubusercontent.com/u/35526117?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/isnl"
+
+lwp:
+  name        : "beclass"
+  bio         : "全栈工程师，喜欢研究好玩的东西"
+  avatar      : "https://avatars3.githubusercontent.com/u/12541388?s=400&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/beclass"
+
+remainsu:
+  name        : "remainsu"
+  bio         : "大数据工程师，喜欢各种折腾"
+  avatar      : "https://avatars3.githubusercontent.com/u/13496358?s=400&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/remainsu"
