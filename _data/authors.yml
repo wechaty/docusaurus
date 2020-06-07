@@ -365,9 +365,9 @@ sam:
       url: "https://github.com/PXingwei"
 
 osindex:
-  name        : "osindex"
-  bio         : "A lazy full stack developer"
-  avatar      : "https://avatars3.githubusercontent.com/u/4703215?s=60&v=4"
+  name: "osindex"
+  bio: "A lazy full stack developer"
+  avatar: "https://avatars3.githubusercontent.com/u/4703215?s=60&v=4"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
