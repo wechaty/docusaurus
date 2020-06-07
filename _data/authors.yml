@@ -363,3 +363,15 @@ sam:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/PXingwei"
+
+osindex:
+  name        : "osindex"
+  bio         : "A lazy full stack developer"
+  avatar      : "https://avatars3.githubusercontent.com/u/4703215?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/osindex"
+    - label: "Blog"
+      icon: "fab fa-fw fa-rss-square"
+      url: "http://www.youngfan.top"
