@@ -356,6 +356,14 @@ remainsu:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/remainsu"
 
+sam:
+  name        : "Sam"
+  bio         : "乐于接受挑战"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/PXingwei"
+
 osindex:
   name        : "osindex"
   bio         : "A lazy full stack developer"
