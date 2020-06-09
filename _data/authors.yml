@@ -292,7 +292,7 @@ fish-ball:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/fish-ball"
-      
+
 Leons828:
   name        : "Leons828"
   bio         : "A web and embedded engineer"
