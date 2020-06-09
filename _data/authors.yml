@@ -368,6 +368,7 @@ remainsu:
 sam:
   name        : "Sam"
   bio         : "乐于接受挑战"
+  avatar      : "https://avatars3.githubusercontent.com/u/32804492?s=400&v=4"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
