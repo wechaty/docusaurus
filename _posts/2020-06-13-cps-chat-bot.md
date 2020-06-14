@@ -4,7 +4,7 @@
  date: 2020-06-13 09:00 +0800
  author: 793062366@qq.com
  header:
-   teaser: your_teaser_image_path
+   teaser: /assets/2020/cps-chat-bot/goodsMsg.jpeg
 ---
 
 <!-- markdownlint-disable -->
@@ -19,6 +19,8 @@ tips: 使用微信群，推广电商商品及优惠券，机器人使用 wechaty
 
 ## 简介
 推广营销机器人是一个微信助手，可以帮助推广者在自己的微信群，查询优惠商品及优惠券并转发到自己所在的微信群
+
+<!--more-->
 
 ## 需求描述
 
