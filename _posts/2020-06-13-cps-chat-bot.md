@@ -4,7 +4,7 @@
  date: 2020-06-13 09:00 +0800
  author: 793062366@qq.com
  header:
-   teaser: /assets/2020/cps-chat-bot/goodsMsg.jpeg
+   teaser: /assets/2020/cps-chat-bot/goodsmsg.jpeg
 ---
 
 <!-- markdownlint-disable -->
@@ -309,7 +309,7 @@ $ npm run start
 ---
 
 ### 效果图
-![效果图](/assets/2020/cps-chat-bot/goodsMsg.jpeg)
+![效果图](/assets/2020/cps-chat-bot/goodsmsg.jpeg)
 
 ### 致谢
 感谢Wechaty团队。<br />感谢juzi科技提供的api-token
