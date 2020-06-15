@@ -1,6 +1,6 @@
 ---
 title: "资讯自动推送机器人（Daily push wechat robot）"
-author: IvanEvan
+author: Evany
 date: "2020-06-15 15:54:00 +0800"
 categories: project
 tags:
@@ -121,7 +121,6 @@ header:
 
 2. 打开`config.js` 文件，配置自己的信息
    
-
 3. `onMessage.js` 中的闲聊接口为[小思机器人](https://www.ownthink.com/)，需要单独申请
 
 ## 完善方向
