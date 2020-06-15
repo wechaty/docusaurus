@@ -56,7 +56,7 @@ import onFriendship from './handler/friendship';
 import onMessage from './handler/message';
 
 async function bootstrap() {
-  // 这里使用获取到的ipad token
+  // 这里使用获取到的ipad token 填写你申请的token 具体查看./handler/message.ts
   const token = process.env.WECHATY_TOKEN;
 
   // 创建puppet实例
