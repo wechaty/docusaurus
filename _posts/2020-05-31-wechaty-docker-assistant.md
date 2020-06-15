@@ -1,6 +1,6 @@
 ---
 title: "wechaty Web Panel的构思与实现"
-author: Leo_chen
+author: leo_chen
 date: '2020-05-31 18:03:52 +0800'
 categories: project
 tags:

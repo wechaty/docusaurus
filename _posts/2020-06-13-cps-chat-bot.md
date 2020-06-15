@@ -2,7 +2,7 @@
 
  title: "CPS chat bot"
  date: 2020-06-13 09:00 +0800
- author: 793062366@qq.com
+ author: wss793062366
  header:
    teaser: /assets/2020/cps-chat-bot/goodsmsg.jpeg
 ---
