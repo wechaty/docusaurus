@@ -385,6 +385,7 @@ osindex:
     - label: "Blog"
       icon: "fab fa-fw fa-rss-square"
       url: "http://www.youngfan.top"
+
 generalbao:
   name        : "generalbao"
   bio         : "php工程师,拍片哥"
@@ -393,3 +394,14 @@ generalbao:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/generalbao"      
+
+
+wss793062366:
+  name        : "wss793062366"
+  bio         : "A iOS developer"
+  avatar      : "https://avatars3.githubusercontent.com/u/66787169?s=400&u=4c897956ec58e4328cc594288e06e010851f1277&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/wss793062366"
+
