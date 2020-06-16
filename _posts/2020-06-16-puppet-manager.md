@@ -6,6 +6,8 @@ tags:
     - wechaty
     - java-wechaty
 categories: project
+header:
+  teaser: /assets/2020/java-puppet-manager/java-wechaty-logo.png
 ---
 
 <!-- markdownlint-disable -->
@@ -24,7 +26,7 @@ categories: project
 ## 背景
 &ensp;&ensp;&ensp;&ensp;参与开发java-wechaty有一个多月的时间，在开发的过程中，不免要进行自测。在前期没有token调试不便的情况下，就想借助单测对所写代码进行验证，但是我发现想要进行单测也不是一件容易的事情。与以往 java web 开发不同，没有Spring封装好的带有上下文的test。于是，我借鉴ts版本wechaty的mock模块，实现了java-wechaty的mock puppet，专门用于测试wechaty上层代码逻辑。开心地实现完成mock puppet之后，又发现了新的问题。那就是现有java版本的wechaty在初始化puppet的时候，在代码中写死了hostie puppet，也就是图中的`GrpcPuppet`。  
 
-![image](https://hexo-rxy.oss-cn-beijing.aliyuncs.com/wechaty/%E8%AE%BE%E8%AE%A1%E8%83%8C%E6%99%AF.png)  
+![image](/assets/2020/java-puppet-manager/manager-backgroud.png)  
 
 &ensp;&ensp;&ensp;&ensp;这样的话，我就无法初始化mock puppet了，所以我就思考能不能有一个manager来管理puppet的具体实现。有了这个想法，那么如何进行优雅的实现呢？接下来我们简单来聊聊。
 
@@ -35,7 +37,7 @@ categories: project
 
 &ensp;&ensp;&ensp;&ensp;使用上述思路的改造，wechaty初始化的流程就变成了下图的样子。  
 
-![image](https://hexo-rxy.oss-cn-beijing.aliyuncs.com/wechaty/manager%E7%AE%A1%E7%90%86%E5%90%8E.png)  
+![image](/assets/2020/java-puppet-manager/after-manage.png)  
 
 &ensp;&ensp;&ensp;&ensp;可以看到，在wechaty的`initPuppet()`方法中，不再是直接初始化`GrpcPuppet`，而是使用了`PuppetManager`的`resolveInstance()`方法拿到了初始化过的puppet实现。  
 &ensp;&ensp;&ensp;&ensp;那么`PuppetManager`具体是怎么实现的呢？其实很简单，直接看代码。  
@@ -86,7 +88,7 @@ class PuppetManager {
 
 &ensp;&ensp;&ensp;&ensp;后续可能会支持多个puppet，那么manager就需要适当的改造去适配多个puppet实现。这里有一个简单的设计思路，在puppet定义层，我们可以定义一个mapping()方法，该方法的意思是作为一个puppet，我需要如何的映射才能初始化。那么具体怎么映射就交给子类，也就是具体的puppet实现类自己去实现。在manager中，我们只需要使用puppet定义层的mapping()方法就可以实现对子类的映射处理，作为manager，并不用关心当前到底是谁在初始化。下图是大体的结构。  
 
-![image](https://hexo-rxy.oss-cn-beijing.aliyuncs.com/wechaty/manager%E5%B1%95%E6%9C%9B.png)  
+![image](/assets/2020/java-puppet-manager/manage-mapping.png)  
 
 &ensp;&ensp;&ensp;&ensp;有了`PuppetManager`，我们的java-wechaty实现得更加优雅了一些，而且实现了mock puppet，后续就可以通过单测提高代码的质量，提升稳定性，相信我们的java-wechaty会越来越完善。  
 &ensp;&ensp;&ensp;&ensp;如果你对wechaty感兴趣，恰巧又是java developer，对java-wechaty有自己的想法或对目前的代码实现有任何好的建议，期待你的加入，为java-wechaty贡献代码~  
