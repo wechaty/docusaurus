@@ -431,10 +431,6 @@ diaozxin007:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/diaozxin007"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/diaozxin007"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://xilidou.com/"
@@ -466,15 +462,6 @@ kaffa:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kaffa"
 
-suntong:
-  name        : "suntong"
-  bio         : "• Provided the "monster" demo as a one-stop wechaty demo that includes everything useful for people to get an easier start. \n • Started to use padplus recently and helped promoting it with an ready-to-use starter code too."
-  avatar      : "https://avatars0.githubusercontent.com/u/422244?s=460"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/suntong"
-
 bukaqiaqia:
   name        : "Yan Wang"
   bio         : "现就读于悉尼大学商业数据分析 ,是Datagirls社区志愿者助教，两年数据分析师工作经历，拥有丰富的社科数据分析项目经验。"
@@ -495,21 +482,12 @@ wangning:
 
 iyjian:
   name        : "iyjian"
-  bio         : "	CTO from a listed company called 路骋国旅(831320), mainly focus on data analysis. He wrote a bot share PUFA bank point and share point to get a gift from the bank."
+  bio         : "CTO from a listed company called 路骋国旅(831320), mainly focus on data analysis. He wrote a bot share PUFA bank point and share point to get a gift from the bank."
   avatar      : "https://avatars3.githubusercontent.com/u/466985?s=460"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/iyjian"
-
-Evany:
-  name        : "Evany"
-  bio         : "CEO of Authing. He started his own business when he was a junior student at the university, had built a draw and drop user interface that helps developers to develop apps and deploy the apps automatically with Docker technology."
-  avatar      : "https://avatars2.githubusercontent.com/u/2469688?s=460"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/leinue"
 
 h4dex:
   name        : "h4dex"
@@ -628,3 +606,20 @@ redmaple1:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/redmaple1"
 
+suntong:
+  name        : "suntong"
+  bio         : "Provided the [monster] demo as a one-stop wechaty demo that includes everything useful for people to get an easier start; Started to use padplus recently and helped promoting it with an ready-to-use starter code too."
+  avatar      : "https://avatars0.githubusercontent.com/u/422244?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/suntong"
+
+evany:
+  name        : "Evany"
+  bio         : "CEO of Authing. Started his own business when he was a junior student at the university, had built a draw and drop user interface that helps developers to develop apps and deploy the apps automatically with Docker technology."
+  avatar      : "https://avatars2.githubusercontent.com/u/2469688?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/leinue"
