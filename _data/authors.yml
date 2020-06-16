@@ -414,7 +414,7 @@ wss793062366:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/wss793062366"
 
-Evany:
+evany:
   name        : "Evany"
   bio         : "烫头程序员"
   avatar      : "https://avatars0.githubusercontent.com/u/31529258?s=60&v=4"
@@ -606,8 +606,8 @@ suntong:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/suntong"
 
-evany:
-  name        : "Evany"
+leinue:
+  name        : "ivydom"
   bio         : "CEO of Authing. Started his own business when he was a junior student at the university, had built a draw and drop user interface that helps developers to develop apps and deploy the apps automatically with Docker technology."
   avatar      : "https://avatars2.githubusercontent.com/u/2469688?s=460"
   links:
