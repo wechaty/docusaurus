@@ -619,3 +619,12 @@ shevyan:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/shevyan"
 
+redmaple1:
+  name        : "redmaple1"
+  bio         : "Committer of java-wechaty. ex Zhihu Engineer"
+  avatar      : "https://avatars3.githubusercontent.com/u/34436684?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/redmaple1"
+

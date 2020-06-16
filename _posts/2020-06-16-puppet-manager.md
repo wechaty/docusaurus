@@ -12,8 +12,11 @@ categories: project
 > 作者: [redmaple1](https://github.com/redmaple1/)
 > Code: [Github](https://github.com/wechaty/java-wechaty)
 
+&ensp;&ensp;&ensp;&ensp;我们来简单聊一聊java-wechaty中Puppet Manager的实现。  
+<!-- more -->
+
 ## 前言
-&ensp;&ensp;&ensp;&ensp;今天我们来聊一聊java-wechaty中Puppet Manager的实现。首先，这里借用java-wechaty的maintainer犀利豆的博客介绍一下wechaty是什么，以及java版本的前世今生。
+&ensp;&ensp;&ensp;&ensp;首先，这里借用java-wechaty的maintainer犀利豆的博客介绍一下wechaty是什么，以及java版本的前世今生。
 > 犀利豆
 [终于有一个Java可以用的微信机器人了](https://xilidou.com/2020/06/03/java-wechaty/)
 
