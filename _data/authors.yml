@@ -597,6 +597,15 @@ shevyan:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/shevyan"
 
+redmaple1:
+  name        : "redmaple1"
+  bio         : "Committer of java-wechaty. ex Zhihu Engineer"
+  avatar      : "https://avatars3.githubusercontent.com/u/34436684?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/redmaple1"
+
 suntong:
   name        : "suntong"
   bio         : "Provided the [monster] demo as a one-stop wechaty demo that includes everything useful for people to get an easier start; Started to use padplus recently and helped promoting it with an ready-to-use starter code too."
