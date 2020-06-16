@@ -489,15 +489,6 @@ iyjian:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/iyjian"
 
-Evany:
-  name        : "Evany"
-  bio         : "CEO of Authing. He started his own business when he was a junior student at the university, had built a draw and drop user interface that helps developers to develop apps and deploy the apps automatically with Docker technology."
-  avatar      : "https://avatars2.githubusercontent.com/u/2469688?s=460"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/leinue"
-
 h4dex:
   name        : "h4dex"
   bio         : "会使用各种计算机语言写出 Hello World 的设计师（http://icefox.org/）"
