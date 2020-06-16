@@ -19,7 +19,7 @@
 
 公众号很久没有更新了。主要两个原因，换了工作之后，第一，要花更多的时间去了解和学习新的业务。第二，我最近把几乎所有的业余时间都来写这个 Java 版的微信机器人了。
 
-![java-wechaty](https://user-gold-cdn.xitu.io/2020/6/7/1728f3473ada338c?w=2008&h=699&f=png&s=45021)
+![java-wechaty](https://camo.githubusercontent.com/ba6c3db45948f907f3ae9c2fc5462fe8721d58da/68747470733a2f2f776563686174792e6769746875622e696f2f6a6176612d776563686174792f696d616765732f6a6176612d776563686174792e706e67)
 
 ## Wechaty 是什么
 
