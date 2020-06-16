@@ -1,6 +1,6 @@
 ---
 title: "资讯自动推送机器人（Daily push wechat robot）"
-author: Evany
+author: evany
 date: "2020-06-15 15:54:00 +0800"
 categories: project
 tags:
