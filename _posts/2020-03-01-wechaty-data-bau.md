@@ -6,7 +6,7 @@ categories: project
 tags:
   - code
 header:
-  teaser: /assets/2020/wechat-reply-night.jpg
+  teaser: /assets/2020/wechat-for-data-bau/wechat-reply-night.jpg
 ---
 <!-- markdownlint-disable -->
 
