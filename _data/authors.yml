@@ -623,3 +623,12 @@ leinue:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/leinue"
+
+Chaogan-Yan:
+  name        : "Chao-Gan Yan"
+  bio         : "Professor of the Institute of Psychology, Chinese Academy of Sciences (IPCAS), Director of International Big-Data Center for Depression Research, the Deputy Director of the Magnetic Resonance Imaging Research Center and the Principal Investigator of The R-fMRI Lab located at IPCAS."
+  avatar      : "https://avatars3.githubusercontent.com/u/2280786?s=400&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Chaogan-Yan"
