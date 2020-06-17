@@ -4,7 +4,7 @@
  date: 2020-06-17 15:19 +0800
  author: wj-Mcat
  header:
-   teaser: https://avatars3.githubusercontent.com/u/10242208?s=460
+   teaser: /assets/2020/python-wechaty/python-wechaty-logo.png
 ---
 
 <!-- markdownlint-disable -->
