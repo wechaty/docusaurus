@@ -8,7 +8,7 @@ tags:
   - wechaty-puppet-padplus
   - chatbot
 header:
-  teaser: /assets/2020/2020-0517-wechat.jpeg
+  teaser: /assets/2020/manage-ur-customers/2020-0517-wechat.jpeg
 ---
 
 > 作者: [Kylin93CN](https://github.com/Kylin93CN)

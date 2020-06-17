@@ -7,7 +7,7 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
 header:
-  teaser: /assets/2020/2020-05-16-repe-assistant.png
+  teaser: /assets/2020/repe-assistant/2020-05-16-repe-assistant.png
 ---
 
 > Author: [@xiaogan18](https://github.com/xiaogan18) Full stack developer,specialized golang and blockchain.
