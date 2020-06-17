@@ -181,5 +181,4 @@ asyncio.run(main())
 
 微信号：`pure-_--love`
 
-![image-20200617145659900](/assets/2020/python-wechaty/wj-mcat-weixin.png)
-
+![image-20200617145659900](/assets/2020/python-wechaty/wujing-weixin.png)
