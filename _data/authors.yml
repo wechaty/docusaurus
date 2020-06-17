@@ -623,3 +623,12 @@ leinue:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/leinue"
+
+wj-Mcat:
+  name        : "吴京京"
+  bio         : "a nlp researcher, keen to the chatbot, and want to create greate chatbot opensource software"
+  avatar      : "https://avatars3.githubusercontent.com/u/10242208?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/wj-Mcat"
