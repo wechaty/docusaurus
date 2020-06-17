@@ -19,7 +19,7 @@
 
 公众号很久没有更新了。主要两个原因，换了工作之后，第一，要花更多的时间去了解和学习新的业务。第二，我最近把几乎所有的业余时间都来写这个 Java 版的微信机器人了。
 
-![java-wechaty](assets/2020/2020-06-15-java-wechaty.png)
+![java-wechaty](/assets/2020/2020-06-15-java-wechaty.png)
 
 ## Wechaty 是什么
 
