@@ -4,7 +4,7 @@
  date: 2020-06-15 09:00 +0800
  author: diaozxin007
  header:
-   teaser: https://avatars3.githubusercontent.com/u/8286584?s=460&u=8de5650f0d3c60b03841f9d0284caf5daa547667&v=4
+   teaser: /assets/2020/2020-06-15-java-wechaty.png
 ---
 
 <!-- markdownlint-disable -->
@@ -19,7 +19,7 @@
 
 公众号很久没有更新了。主要两个原因，换了工作之后，第一，要花更多的时间去了解和学习新的业务。第二，我最近把几乎所有的业余时间都来写这个 Java 版的微信机器人了。
 
-![java-wechaty](https://camo.githubusercontent.com/ba6c3db45948f907f3ae9c2fc5462fe8721d58da/68747470733a2f2f776563686174792e6769746875622e696f2f6a6176612d776563686174792f696d616765732f6a6176612d776563686174792e706e67)
+![java-wechaty](assets/2020/2020-06-15-java-wechaty.png)
 
 ## Wechaty 是什么
 
