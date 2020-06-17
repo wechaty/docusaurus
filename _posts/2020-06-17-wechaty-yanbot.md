@@ -29,3 +29,25 @@ YanBot is an academic chatbot application to help Dr. Chao-Gan Yan for answering
 
 If you want to build some chatbot for your own purpose, then YanBot would be a good example!
 
+
+## Tips to be shared:
+
+YanBot is an academic chatbot application based on wechaty. As YanBot needs to bridge the the R-fMRI Journal Club wechat groups, it also uses the RoomConnectors from wechaty-plugin-contrib.
+
+### Problem
+However, the code example
+```sh
+map: async message => message.from()?.name() + '(many to many): ' + message.text(),
+```
+has a limitation: People always set nickname (RoomAlias) in a wechat group (chatroom), but the code example will not bring the GroupAlias to another room, thus people in another chatroom doesn’t know who the speaker is.
+
+### Solution
+My modification 
+```sh
+map: async message => await message.room()?.alias(message.from()??bot.userSelf()) + '(另群): ' + message.text(),
+```
+will forward the nickname (RoomAlias) from one chatroom to another chatroom, thus people can talk across rooms more conveniently.
+
+Hope this tips helps for others!
+
+
