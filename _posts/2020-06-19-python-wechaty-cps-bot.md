@@ -2,8 +2,6 @@
  title: "基于python-wechaty的CPS BOT"
  date: 2020-06-19 00:00 +0800
  author: Snow
- header:
-   teaser: /assets/2020/python-wechaty-cps-bot/jdyangli.jpg
 ---
 
 <!-- markdownlint-disable -->
@@ -22,6 +20,8 @@
 - 定时获取优惠券信息，然后发送到指定的微信群聊，释放双手。
 
 ## 最终效果图
+
+![效果图](/assets/2020/python-wechaty-cps-bot/jdyangli.jpg)
 
 ## 快速上手
 
