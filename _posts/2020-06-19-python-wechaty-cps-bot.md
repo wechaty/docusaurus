@@ -2,6 +2,8 @@
  title: "基于python-wechaty的CPS BOT"
  date: 2020-06-19 00:00 +0800
  author: Snow
+ header:
+   teaser: /assets/2020/python-wechaty-cps-bot/jdyangli.jpg
 ---
 
 <!-- markdownlint-disable -->
@@ -92,11 +94,11 @@ python bot.py
 
 ### 心得
 
-申请的token属于donut token ，底层其实是Windows Hook原理，所以微信发送消息的规则需要满足Windows上的操作，不然你会让腾讯关注到哦。
+申请的token属于donut-token ，底层其实是Windows Hook原理，所以微信发送消息的规则需要满足Windows上的操作，不然你会让腾讯关注到哦。
 
 ### 致谢
 
-感谢Wechaty团队。感谢juzi科技提供的api-token
+感谢Wechaty团队。感谢juzi科技提供的donut-token
 
 项目链接
 
