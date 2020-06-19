@@ -641,3 +641,18 @@ Chaogan-Yan:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Chaogan-Yan"
+
+why2lyj:
+  name        : "why2lyj"
+  bio         : "PM from H3C, worked in HP and Motorola"
+  avatar      : "https://avatars1.githubusercontent.com/u/31466760?s=460&u=46de5cd121507230e8b40a0975b06ffc2e87e4a0&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/why2lyj"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "http://www.farseer.vip/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:admin@farseer.vip"
