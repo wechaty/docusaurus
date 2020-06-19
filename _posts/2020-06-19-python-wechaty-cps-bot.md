@@ -2,7 +2,7 @@
 
  title: "基于python-wechaty的CPS BOT"
  date: 2020-06-19 00:00 +0800
- author: admin@farseer.vip
+ author: Snow
  header:
    teaser: /assets/2020/python-wechaty-cps-bot/jdyangli.jpg
    
@@ -24,7 +24,6 @@
 - 定时获取优惠券信息，然后发送到指定的微信群聊，释放双手。
 
 ### 最终效果图
-
 ![效果图](/assets/2020/python-wechaty-cps-bot/jdyangli.jpg)
 
 ## 快速上手
@@ -97,7 +96,7 @@ python bot.py
 
 ### 心得
 
-申请的token属于donut token（[申请地址](https://github.com/wechaty/wechaty/issues/1941)） ，底层其实是Windows Hook原理，所以微信发送消息的规则需要满足Windows上的操作，不然你会让腾讯关注到哦。
+申请的token属于donut token ，底层其实是Windows Hook原理，所以微信发送消息的规则需要满足Windows上的操作，不然你会让腾讯关注到哦。
 
 ---
 
@@ -106,5 +105,7 @@ python bot.py
 
 感谢Wechaty团队。感谢juzi科技提供的api-token
 
-项目链接 [youxiang-wechaty](https://github.com/why2lyj/youxiang-wechaty)
+项目链接
+
+https://github.com/why2lyj/youxiang-wechaty
 
