@@ -20,10 +20,10 @@ Wechaty 的代码质量，是大家公认的比较高的水准。而在整个项
 
 ## Wechaty DevOps family
 这里主要给大家介绍以下几个重要的 Wechaty DevOps 工具：
-- [@chatie/semver](#@chatie/semver) NPM 版本检查工具
-- [@chatie/git-scripts](#@chatie/git-scripts) Git 脚本合集
-- [@chatie/tsconfig](#@chatie/tsconfig) 中心化 tsconfig 配置
-- [@chatie/eslint-config](#@chatie/eslint-config) 中心化 eslint 配置
+- [@chatie/semver](#@chatiesemver) NPM 版本检查工具
+- [@chatie/git-scripts](#@chatiegit-scripts) Git 脚本合集
+- [@chatie/tsconfig](#@chatietsconfig) 中心化 tsconfig 配置
+- [@chatie/eslint-config](#@chatieeslint-config) 中心化 eslint 配置
 
 ## @chatie/semver
 
@@ -60,9 +60,9 @@ fi
 ## @chatie/git-scripts
 
 `@chatie/git-scripts` 是一些 `git` 脚本的集合，里面主要包括下面几个非常常用的脚本：
-- [npm-pack-testing.sh](#npm-pack-testing.sh) NPM 打包测试脚本
-- [package-publish-config-tag.sh](#package-publish-config-tag.sh) NPM 自动 tag 脚本
-- [pre-push.sh](#pre-push.sh) Git push 自动检查/升版脚本
+- [npm-pack-testing.sh](#npm-pack-testingsh) NPM 打包测试脚本
+- [package-publish-config-tag.sh](#package-publish-config-tagsh) NPM 自动 tag 脚本
+- [pre-push.sh](#pre-pushsh) Git push 自动检查/升版脚本
 
 ### npm-pack-testing.sh
 
