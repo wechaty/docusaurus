@@ -78,6 +78,21 @@ Example
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3eq8wJfCAWs" frameborder="0" allowfullscreen></iframe>
 ```
 
+### 6. Add links to anchor in paragraph
+
+The titles in markdown files will be added an anchor automatically, you can use that to add your own anchor links. And here is some of the rules how the blog generate the anchor:
+
+* convert the title directly to anchor
+* spaces will be replaced by dash `-`
+* `/`, `&`, `?` and `.` will be eliminated
+* Chinese character will be kept in the anchor
+
+#### Example
+Say you have a title as `### 我是? a title.bat`. Then you will get the anchor generated as `我是-a-titlebat`. And you can use the generated anchor to implement your own links. Like this:
+```markdown
+[奇妙的Link](#我是-a-titlebat)
+```
+
 ## Usage
 
 ### Jekyll
