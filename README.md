@@ -5,6 +5,15 @@
 
 [Wechaty Official Homepage](https://wechaty.github.io)
 
+[![fame0](https://sourcerer.io/fame/huan/wechaty/wechaty.github.io/images/0)](https://sourcerer.io/fame/huan/wechaty/wechaty.github.io/links/0)
+[![fame1](https://sourcerer.io/fame/huan/wechaty/wechaty.github.io/images/1)](https://sourcerer.io/fame/huan/wechaty/wechaty.github.io/links/1)
+[![fame2](https://sourcerer.io/fame/huan/wechaty/wechaty.github.io/images/2)](https://sourcerer.io/fame/huan/wechaty/wechaty.github.io/links/2)
+[![fame3](https://sourcerer.io/fame/huan/wechaty/wechaty.github.io/images/3)](https://sourcerer.io/fame/huan/wechaty/wechaty.github.io/links/3)
+[![fame4](https://sourcerer.io/fame/huan/wechaty/wechaty.github.io/images/4)](https://sourcerer.io/fame/huan/wechaty/wechaty.github.io/links/4)
+[![fame5](https://sourcerer.io/fame/huan/wechaty/wechaty.github.io/images/5)](https://sourcerer.io/fame/huan/wechaty/wechaty.github.io/links/5)
+[![fame6](https://sourcerer.io/fame/huan/wechaty/wechaty.github.io/images/6)](https://sourcerer.io/fame/huan/wechaty/wechaty.github.io/links/6)
+[![fame7](https://sourcerer.io/fame/huan/wechaty/wechaty.github.io/images/7)](https://sourcerer.io/fame/huan/wechaty/wechaty.github.io/links/7)
+
 ## HOW TO POST BLOG
 
 1. Fork it
@@ -67,6 +76,21 @@ Example
 
 ```html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3eq8wJfCAWs" frameborder="0" allowfullscreen></iframe>
+```
+
+### 6. Add links to anchor in paragraph
+
+The titles in markdown files will be added an anchor automatically, you can use that to add your own anchor links. And here is some of the rules how the blog generate the anchor:
+
+* convert the title directly to anchor
+* spaces will be replaced by dash `-`
+* `/`, `&`, `?` and `.` will be eliminated
+* Chinese character will be kept in the anchor
+
+#### Example
+Say you have a title as `### 我是? a title.bat`. Then you will get the anchor generated as `我是-a-titlebat`. And you can use the generated anchor to implement your own links. Like this:
+```markdown
+[奇妙的Link](#我是-a-titlebat)
 ```
 
 ## Usage

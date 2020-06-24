@@ -1,6 +1,6 @@
 ---
 title: "Wechaty Contributor Dinner"
-author: Yang BAI
+author: antonia0912
 date: '2017-04-26 13:01:53'
 categories: event
 tags:
@@ -9,7 +9,7 @@ header:
   teaser: /assets/2017/wechat-meeting.jpg
 ---
 
-Author: [@antonia0912](https://github.com/antonia0912), formal community manager at [JueJin](https://juejin.im/)(Chinese Hacker News)
+Author: [Yang BAI](https://github.com/antonia0912), formal community manager at [JueJin](https://juejin.im/)(Chinese Hacker News)
 
 ![Photo][antonia-video-photo]
 
