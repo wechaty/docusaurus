@@ -9,7 +9,7 @@ tags:
   - wechaty-puppet-padplus
   - mysql
 header:
-  teaser: /assets/2020/im-game-robot/qrcat.jpg 
+  teaser: /assets/2020/info-subtotal/head.jpeg 
 ---
 
 <!-- markdownlint-disable -->
