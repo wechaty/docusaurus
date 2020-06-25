@@ -8,7 +8,7 @@ tags:
   - financial
 
 header:
-  teaser: /assets/2020/2020-03-30-wechaty-bond-bot.png
+  teaser: /assets/2020/financial-marketing/2020-03-30-wechaty-bond-bot.png
 ---
 <!-- markdownlint-disable -->
 
@@ -252,5 +252,5 @@ module.exports = {
 
 对了，如果您想要体验我的机器人，或者对可转债套利有兴趣。您都可以扫描我的机器人进行体验。
 
-![Maple's financial bot](/assets/2020/2020-03-30-wechat-bot-demo.jpg)
+![Maple's financial bot](/assets/2020/financial-marketing/2020-03-30-wechat-bot-demo.jpg)
 

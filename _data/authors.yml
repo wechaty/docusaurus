@@ -2,7 +2,7 @@
 
 huan:
   name        : "Huan (李卓桓)"
-  bio         : "Author of Wechaty. Tencent TVP of Chatbot, Conversational AI Export, Open-source Coder with 💖"
+  bio         : "Author of Wechaty. Tencent TVP of Chatbot, Conversational AI Expert, Open-source Coder with 💖"
   avatar      : "https://avatars2.githubusercontent.com/u/1361891?s=460&v=4"
   links:
     - label: "GitHub"
@@ -20,6 +20,24 @@ huan:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
     #   url: "https://www.zixia.net"
+
+lijiarui:
+  name        : "Jiarui LI"
+  bio         : "Co-founder & CEO of JuziBot, Y Combinator Alumni, Microsoft AI MVPs"
+  avatar      : "https://avatars2.githubusercontent.com/u/6419514?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lijiarui"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:rui@chatie.io"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://lijiarui.github.io/"
+    - label: "Company"
+      icon: "fas fa-fw fa-link"
+      url: "https://pre-angel.com/portfolios/juzibot/"
 
 qhduan:
   name        : "段清华"
@@ -65,15 +83,6 @@ su-chang:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/su-chang"
-
-lijiarui:
-  name        : "Jiarui LI"
-  bio         : "Full stack developer, serial entrepreneur, Founder & CEO of JuZi.bot"
-  avatar      : "https://avatars2.githubusercontent.com/u/6419514?s=460&v=4"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/lijiarui"
 
 dcsan:
   name        : "David 'DC' Collier"
@@ -386,7 +395,6 @@ osindex:
       icon: "fab fa-fw fa-rss-square"
       url: "http://www.youngfan.top"
 
-
 sking:
   name        : "sking"
   bio         : "A lazy full stack developer"
@@ -395,3 +403,298 @@ sking:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/shijianzhong"
+
+generalbao:
+  name        : "generalbao"
+  bio         : "php工程师,拍片哥"
+  avatar      : "https://avatars3.githubusercontent.com/u/18185856?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/generalbao"
+
+
+wss793062366:
+  name        : "wss793062366"
+  bio         : "A iOS developer"
+  avatar      : "https://avatars3.githubusercontent.com/u/66787169?s=400&u=4c897956ec58e4328cc594288e06e010851f1277&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/wss793062366"
+
+evany:
+  name        : "Evany"
+  bio         : "烫头程序员"
+  avatar      : "https://avatars0.githubusercontent.com/u/31529258?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/IvanEvan"
+
+diaozxin007:
+  name        : "犀利豆"
+  bio         : "北邮本科，University of Leicester EE 研究生，Java后端开发，目前就职阿里"
+  avatar      : "https://avatars3.githubusercontent.com/u/8286584?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/diaozxin007"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://xilidou.com/"
+
+zhoumh1988:
+  name        : "LittleStrong"
+  bio         : "WEB Development Manager at iTrustdata, 喜欢挖坑与填坑😝"
+  avatar      : "https://avatars1.githubusercontent.com/u/7434920?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zhoumh1988"
+
+judaschrist:
+  name        : "Lingxiao Zhang"
+  bio         : "Co-founder of 小理智能, Musical lover, Movie addict."
+  avatar      : "https://avatars0.githubusercontent.com/u/5763903?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/judaschrist"
+
+kaffa:
+  name        : "kaffa"
+  bio         : "a life-long learner / a Psychology, Astrology, Ancient Egyptian culture lover, also a coffee mocha lover. My new blog: https://kaffa.im/"
+  avatar      : "https://avatars1.githubusercontent.com/u/4386281?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/kaffa"
+
+bukaqiaqia:
+  name        : "Yan Wang"
+  bio         : "现就读于悉尼大学商业数据分析 ,是Datagirls社区志愿者助教，两年数据分析师工作经历，拥有丰富的社科数据分析项目经验。"
+  avatar      : "https://avatars1.githubusercontent.com/u/20809334?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/bukaqiaqia"
+
+wangning:
+  name        : "wangning"
+  bio         : "a postgraduate student at BUPT, a frontend full stack engineer, with rich Machine Learning/NLP/Image project experiences."
+  avatar      : "https://avatars0.githubusercontent.com/u/16443320?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/wnbupt"
+
+iyjian:
+  name        : "iyjian"
+  bio         : "CTO from a listed company called 路骋国旅(831320), mainly focus on data analysis. He wrote a bot share PUFA bank point and share point to get a gift from the bank."
+  avatar      : "https://avatars3.githubusercontent.com/u/466985?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/iyjian"
+
+h4dex:
+  name        : "h4dex"
+  bio         : "会使用各种计算机语言写出 Hello World 的设计师（http://icefox.org/）"
+  avatar      : "https://avatars1.githubusercontent.com/u/8213215?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/h4dex"
+
+huyingxi:
+  name        : "huyingxi"
+  bio         : "enjoying ML&Wechaty at BUPT. She is a graduate student studying at BUPT, who has very good experience related with ChatBot & Machine Learning and Chinese NLP."
+  avatar      : "https://avatars1.githubusercontent.com/u/15273969?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/huyingxi"
+
+hczhcz:
+  name        : "hczhcz"
+  bio         : "An open source coder and fan of the TOAD"
+  avatar      : "https://avatars1.githubusercontent.com/u/3832986?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hczhcz"
+
+greatgeekgrace:
+  name        : "greatgeekgrace"
+  bio         : "Jiaxuan LI, Ex-Baidu-er, Tensorflow Expert who has just published a ML Book in 2017."
+  avatar      : "https://avatars2.githubusercontent.com/u/15572156?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/greatgeekgrace"
+
+WildCat:
+  name        : "imWildCat"
+  bio         : "A designer and developer, currently a postgraduate student at University of Birmingham (Computer Science), and founded his own company in China with a startup business plan"
+  avatar      : "https://avatars1.githubusercontent.com/u/2396817?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/imWildCat"
+
+hain:
+  name        : "hain"
+  bio         : "Chatbot Evangelist, I built Cloud, Mobile, Bizflow Applications at IBM China Development Lab, recent years work in Startups."
+  avatar      : "https://avatars3.githubusercontent.com/u/3538629?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Samurais"
+
+antonia0912:
+  name        : "Yang BAI"
+  bio         : "formal community manager at JueJin(Chinese Hacker News)"
+  avatar      : "https://avatars1.githubusercontent.com/u/17244623?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/antonia0912"
+
+xinbenlv:
+  name        : "xinbenlv"
+  bio         : "Google Engineer, Founder of HaoShiYou. HaoShiYou has many 500 people Wechat groups, which is a massive work for human."
+  avatar      : "https://avatars0.githubusercontent.com/u/640325?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/xinbenlv"
+
+mukaiu:
+  name        : "mukaiu"
+  bio         : "CTO of Chatopera"
+  avatar      : "https://avatars2.githubusercontent.com/u/7746790?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/mukaiu"
+
+gcaufy:
+  name        : "gcaufy"
+  bio         : "Author of WePY, a mini program fframework for Wechat. Tencent Engineer"
+  avatar      : "https://avatars2.githubusercontent.com/u/2182004?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/gcaufy"
+
+jasLin:
+  name        : "JasLin"
+  bio         : "CTO of BotWave"
+  avatar      : "https://avatars1.githubusercontent.com/u/147611?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jaslin"
+
+shevyan:
+  name        : "shevyan"
+  bio         : "Dong YAN，Founder&CEO of GhostCloud"
+  avatar      : "https://avatars3.githubusercontent.com/u/5117637?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/shevyan"
+
+redmaple1:
+  name        : "redmaple1"
+  bio         : "Committer of java-wechaty. ex Zhihu Engineer"
+  avatar      : "https://avatars3.githubusercontent.com/u/34436684?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/redmaple1"
+
+suntong:
+  name        : "suntong"
+  bio         : "Provided the [monster] demo as a one-stop wechaty demo that includes everything useful for people to get an easier start; Started to use padplus recently and helped promoting it with an ready-to-use starter code too."
+  avatar      : "https://avatars0.githubusercontent.com/u/422244?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/suntong"
+
+leinue:
+  name        : "ivydom"
+  bio         : "CEO of Authing. Started his own business when he was a junior student at the university, had built a draw and drop user interface that helps developers to develop apps and deploy the apps automatically with Docker technology."
+  avatar      : "https://avatars2.githubusercontent.com/u/2469688?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/leinue"
+
+wj-Mcat:
+  name        : "吴京京"
+  bio         : "a nlp researcher, keen to the chatbot, and want to create greate chatbot opensource software"
+  avatar      : "https://avatars3.githubusercontent.com/u/10242208?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/wj-Mcat"
+
+Chaogan-Yan:
+  name        : "Chao-Gan Yan"
+  bio         : "Professor of the Institute of Psychology, Chinese Academy of Sciences (IPCAS), Director of International Big-Data Center for Depression Research, the Deputy Director of the Magnetic Resonance Imaging Research Center and the Principal Investigator of The R-fMRI Lab located at IPCAS."
+  avatar      : "https://avatars3.githubusercontent.com/u/2280786?s=400&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Chaogan-Yan"
+
+why2lyj:
+  name        : "why2lyj"
+  bio         : "PM from H3C, worked in HP and Motorola"
+  avatar      : "https://avatars1.githubusercontent.com/u/31466760?s=460&u=46de5cd121507230e8b40a0975b06ffc2e87e4a0&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/why2lyj"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "http://www.farseer.vip/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:admin@farseer.vip"
+
+archy:
+  name        : "Archy Will He 何魏奇"
+  bio         : "泡面男人 Archy the Raman 🍜 🍜 🤮"
+  avatar      : "https://avatars3.githubusercontent.com/u/10269911?s=460&u=2c786233b39069d4d4e235ccfdf31e173991967c&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/archywillhe"
+    - label: "StackOverflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/users/2041954/"
+    - label: "Arxiv"
+      icon: "fab fa-fw fa-lastfm"
+      url: "https://arxiv.org/search/math?searchtype=author&query=He%2C+A+W"
+    - label: "Blog"
+      icon: "fas fa-fw fa-rss"
+      url: "https://0a.io"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:a@0a.io"
+
+windmemory:
+  name        : "高原"
+  bio         : "Committer of Wechaty. Author of several wechaty-puppets. Co-founder & CTO of JuziBot"
+  avatar      : "https://avatars3.githubusercontent.com/u/6801292?s=460&u=0141bbc26ff39b223810a4dc1d403099d27043d9&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/windmemory"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:wind.memory.cn@gmail.com"
