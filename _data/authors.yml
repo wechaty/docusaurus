@@ -698,3 +698,12 @@ windmemory:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:wind.memory.cn@gmail.com"
+
+dchaofei:
+  name        : "丁超飞"
+  bio         : "Committer of Go Wechaty."
+  avatar      : "https://avatars2.githubusercontent.com/u/29528188?s=400&u=35f3e3fffab658b2c163103bdd3ecfa28447cbc6&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/dchaofei"
