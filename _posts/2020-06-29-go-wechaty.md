@@ -16,6 +16,8 @@
 # go-wechaty
 go-wechaty 是 wechaty 多语言版本中的 golang 语言实现,目的是方便 go 语言开发者更容易的去使用 wechaty。
 
+<!--more-->
+
 # 目前状态
 有人在群里问 go-wechaty 可以使用吗？其实 go-wechaty 已经可以用了，大家可以关注这两个仓库 [@go-wechaty](https://github.com/wechaty/go-wechaty) 和 [@go-wechaty-getting-started](https://github.com/wechaty/go-wechaty-getting-started).
 
