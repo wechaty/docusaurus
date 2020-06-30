@@ -710,3 +710,15 @@ Zophyr:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:the-zephyr@hotmail.com"
+
+PeterZhang:
+  name        : "一路向北"
+  bio         : "I am a full-stack Software Engineer in Beijing."
+  avatar      : "https://avatars1.githubusercontent.com/u/831839?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zhangchunsheng"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:1097692918@qq.com"
