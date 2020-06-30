@@ -38,8 +38,6 @@ Multi-language Wechaty Beta Released! We have Python, Go, Java, and Scala releas
 
 ![Wechaty Community Org](/assets/2020/multi-language-wechaty-beta-released/community-org.png)
 
-![Wechaty Developers Program Gifts](/assets/2020/multi-language-wechaty-beta-released/wechaty-developers-gifts.png)
-
 The Apache Way
 
 "If it didn't happen on list, it didn't happen." - Craig, Chairman of Apache Software Foundation.
