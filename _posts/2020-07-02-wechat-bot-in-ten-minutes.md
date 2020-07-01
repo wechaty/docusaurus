@@ -155,3 +155,13 @@ const TXRobot = (
 ## 后续
 
 以上只是一个mvp的机器人，后期我会完善自己的机器人，实现一些可以帮我提高效率的功能，后面的代码我都会把代码同步到这个仓库，保证所有的代码开源。
+
+---
+
+title: "十分钟实现一个微信聊天机器人"
+date: 2020-07-02
+author: luwei
+
+---
+
+> Author: [@luwei](https://github.com/luweiCN)
