@@ -1,9 +1,9 @@
 ---
 title: "Azure Show - Wechaty 开源故事"
 author: huan
-categories: announcement
+categories: talks
 tags:
-  - release
+  - mvp
 header:
   teaser: /assets/2020/azure-show/azure-show.png
 ---
