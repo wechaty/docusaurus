@@ -3,6 +3,7 @@
 import test  from 'tstest'
 
 import fs from 'fs'
+import path from 'path'
 import util from 'util'
 
 import probeImageSize from 'probe-image-size'
@@ -34,15 +35,22 @@ test('image size should not more than 1MB', async t => {
   const MAX_WIDTH = 1920         // HD
   const MAX_SIZE  = 1024 * 1024  // 1MB
 
-  const fileList = await glob('../assets/**/*.{jpg,jpeg,png}')
+  const fileList = await glob(path.join(
+    __dirname,
+    '../assets/**/*.{jpg,jpeg,png}'
+  ))
   t.true(fileList.length > 0, 'should get image file list')
 
   for (const file of fileList) {
     const dim = await probeImageSize(fs.createReadStream(file))
     const size = fs.statSync(file)['size']
 
-    if (dim.width > MAX_WIDTH || size > MAX_SIZE) {
-      t.fail(`${file} exceed the max limit: width: ${dim.width}, size: ${size}. use "./scripts/fit-image.sh <FILE>" to adjust it fit.`)
+    const fit = dim.width <= MAX_WIDTH && size <= MAX_SIZE
+    t.true(fit, `${file.replace(/.*\//, '')} should not exceed the max limit: width: ${dim.width}, size: ${size}.`)
+
+    if (!fit) {
+      console.error(`use "./scripts/fit-image.sh <FILE>" to adjust it fit MAX_WIDTH: ${MAX_WIDTH} & MAX_SIZE: ${MAX_SIZE}`)
     }
+
   }
 })

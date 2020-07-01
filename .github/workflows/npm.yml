@@ -8,7 +8,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [13]
+        node: [12]
 
     runs-on: ${{ matrix.os }}
     steps:
@@ -19,9 +19,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install Dependencies
-        working-directory: util
         run: npm install
 
       - name: Test
-        working-directory: util
         run: npm test
