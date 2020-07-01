@@ -89,6 +89,7 @@
     "dingdayu",
     "jcai",
     "redmaple",
-    "windmemory"
+    "windmemory",
+    "yamllint"
   ],
 }
