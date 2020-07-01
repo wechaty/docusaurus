@@ -157,9 +157,10 @@ Contributors:
 
 ![Scala Wechaty - Jingjing WU (吴京京)](/assets/2020/multi-language-wechaty-beta-released/jing-talk-ding-dong-bot.jpg)
 
-#### Talk 2: Slides & Video (@wj-Mcat)
+#### Talk 2: Video & Slides & Blog (@wj-Mcat)
 
-[Slides](https://docs.google.com/presentation/d/1cGBzq3eIRklBB_C5a58NTdjPZFz6inSuYlpLy42HCdk/edit?usp=sharing)
+- [Slides](https://docs.google.com/presentation/d/1cGBzq3eIRklBB_C5a58NTdjPZFz6inSuYlpLy42HCdk/edit?usp=sharing)
+- Blog Post [simple bot : python-wechaty](https://wechaty.github.io/2020/06/17/python-wechaty/)
 
 <div class="video-container" style="
     position: relative;
@@ -248,7 +249,9 @@ Contributors:
 
 ![Java Wechaty - Zhengxin DIAO (刁政欣)](/assets/2020/multi-language-wechaty-beta-released/xilidou-happy-birthday-gallary.jpg)
 
-#### Talk 3: Video (@diaozxin007)
+#### Talk 3: Video & Blog (@diaozxin007)
+
+Blog Post: [终于有一个 Java 可以用的微信机器人了](https://wechaty.github.io/2020/06/15/java-wechaty/)
 
 <div class="video-container" style="
     position: relative;
@@ -291,7 +294,9 @@ Contributors:
 
 ![Java Wechaty - Xiaoya REN (任筱雅)](/assets/2020/multi-language-wechaty-beta-released/xiaoya-talk-5.jpg)
 
-#### Talk 4: Video (@redmaple1)
+#### Talk 4: Video & Blog (@redmaple1)
+
+Blog Post: [简单聊聊java版Puppet Manager的实现](https://wechaty.github.io/2020/06/16/java-puppet-manager/)
 
 <div class="video-container" style="
     position: relative;
@@ -365,7 +370,9 @@ Contributors:
 
 ![Go Wechaty - Chaofei DING (丁超飞)](/assets/2020/multi-language-wechaty-beta-released/chaofei-talk-6.jpg)
 
-#### Talk 5: Video (@dchaofei)
+#### Talk 5: Video & Blog (@dchaofei)
+
+Blog Post: [go 语言可用的 wechaty 框架](https://wechaty.github.io/2020/09/18/go-wechaty/)
 
 <div class="video-container" style="
     position: relative;
@@ -414,7 +421,7 @@ Contributors:
 
 ### Talk 6: Scala with Wechaty，蔡君, ([@jcai](https://github.com/jcai))
 
-https://github.com/jcai/wechaty-meetup
+- [Scala Wechaty Slides](https://github.com/jcai/wechaty-meetup)
 
 [Scala Wechaty - Jun CAI (蔡君) Slides](/assets/2020/multi-language-wechaty-beta-released/jcai-talk-slides.pdf)
 
@@ -509,7 +516,9 @@ https://github.com/jcai/wechaty-meetup
 
 ![DevOps Wechaty - Yuan GAO (高原)](/assets/2020/multi-language-wechaty-beta-released/yuan-talk-13.jpg)
 
-### Talk 7: Video (@windmemory)
+### Talk 7: Video & Blog (@windmemory)
+
+Blog Post: [Wonderful Wechaty devops toolset](https://wechaty.github.io/2020/06/20/wonderful-wechaty-devops-tools/)
 
 <div class="video-container" style="
     position: relative;
