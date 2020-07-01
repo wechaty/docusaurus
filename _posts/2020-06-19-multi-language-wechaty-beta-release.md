@@ -58,7 +58,7 @@ Before the meeting, every speaker introduced themselves!
     overflow:hidden;
 ">
 <iframe
-  src="https://www.youtube.com/embed/fluenDIHZec?t=210"
+  src="https://www.youtube.com/embed/fluenDIHZec?start=210"
   width="560"
   height="315"
   frameborder="0"
@@ -101,7 +101,7 @@ At the last, Rui showed our gifts for our Wechaty Community Contributors, it's s
     overflow:hidden;
 ">
 <iframe
-  src="https://www.youtube.com/embed/fluenDIHZec?t=364"
+  src="https://www.youtube.com/embed/fluenDIHZec?start=364"
   width="560"
   height="315"
   frameborder="0"
@@ -170,7 +170,7 @@ Contributors:
     overflow:hidden;
 ">
 <iframe
-  src="https://www.youtube.com/embed/fluenDIHZec?t=1772"
+  src="https://www.youtube.com/embed/fluenDIHZec?start=1772"
   width="560"
   height="315"
   frameborder="0"
@@ -261,7 +261,7 @@ Blog Post: [终于有一个 Java 可以用的微信机器人了](https://wechaty
     overflow:hidden;
 ">
 <iframe
-  src="https://www.youtube.com/embed/fluenDIHZec?t=2477"
+  src="https://www.youtube.com/embed/fluenDIHZec?start=2477"
   width="560"
   height="315"
   frameborder="0"
@@ -306,7 +306,7 @@ Blog Post: [简单聊聊java版Puppet Manager的实现](https://wechaty.github.i
     overflow:hidden;
 ">
 <iframe
-  src="https://www.youtube.com/embed/fluenDIHZec?t=3163"
+  src="https://www.youtube.com/embed/fluenDIHZec?start=3163"
   width="560"
   height="315"
   frameborder="0"
@@ -382,7 +382,7 @@ Blog Post: [go 语言可用的 wechaty 框架](https://wechaty.github.io/2020/09
     overflow:hidden;
 ">
 <iframe
-  src="https://www.youtube.com/embed/fluenDIHZec?t=3678"
+  src="https://www.youtube.com/embed/fluenDIHZec?start=3678"
   width="560"
   height="315"
   frameborder="0"
@@ -451,7 +451,7 @@ Contributors:
     overflow:hidden;
 ">
 <iframe
-  src="https://www.youtube.com/embed/fluenDIHZec?t=7152"
+  src="https://www.youtube.com/embed/fluenDIHZec?start=7152"
   width="560"
   height="315"
   frameborder="0"
@@ -528,7 +528,7 @@ Blog Post: [Wonderful Wechaty devops toolset](https://wechaty.github.io/2020/06/
     overflow:hidden;
 ">
 <iframe
-  src="https://www.youtube.com/embed/fluenDIHZec?t=4445"
+  src="https://www.youtube.com/embed/fluenDIHZec?start=4445"
   width="560"
   height="315"
   frameborder="0"
@@ -579,7 +579,7 @@ Blog Post: [Wonderful Wechaty devops toolset](https://wechaty.github.io/2020/06/
     overflow:hidden;
 ">
 <iframe
-  src="https://www.youtube.com/embed/fluenDIHZec?t=6170"
+  src="https://www.youtube.com/embed/fluenDIHZec?start=6170"
   width="560"
   height="315"
   frameborder="0"
