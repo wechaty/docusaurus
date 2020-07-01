@@ -1,9 +1,9 @@
 ---
 title: "Azure Show - 如何用 QnAMaker.ai 构建一个投融资聊天机器人"
-author: huan
-categories: announcement
+author: lijiarui
+categories: talks
 tags:
-  - release
+  - mvp
 header:
   teaser: /assets/2020/azure-show/azure-show.png
 ---
