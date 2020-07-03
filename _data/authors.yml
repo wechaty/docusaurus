@@ -719,3 +719,12 @@ dchaofei:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/dchaofei"
+
+Johnson-hd:
+  name        : "Johnson-hd"
+  bio         : "前腾讯前端工程师"
+  avatar      : "https://avatars2.githubusercontent.com/u/15664509?s=400&u=ca29475aaddb93e2bea3ecb174a98a4cc06dd413&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Johnson-hd"
