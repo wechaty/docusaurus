@@ -732,8 +732,8 @@ PeterZhang:
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:1097692918@qq.com"
 
-So:
-  name        : "So"
+secreter:
+  name        : "secreter"
   bio         : "Committer of Go Wechaty."
   avatar      : "https://avatars2.githubusercontent.com/u/10734397?s=60&v=4"
   links:
