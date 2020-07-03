@@ -1,8 +1,9 @@
 ---
-
- title: "使用wechaty助力公众号主维护社群"
- date: 2020-07-01 12:30 +0800
- author: sl1673495
+title: "使用wechaty助力公众号主维护社群"
+date: 2020-07-01 12:30 +0800
+author: sl1673495
+header:
+  teaser: /assets/2020/wechat-official-helper/teaser.png
 ---
 
 <!-- markdownlint-disable -->
@@ -81,39 +82,39 @@ npm install qrcode-terminal // 终端生成二维码用
 
 ```js
 // bot.ts
-import { Contact, Message, Wechaty } from 'wechaty'
-import { ScanStatus } from 'wechaty-puppet'
-import { PuppetPadplus } from 'wechaty-puppet-padplus'
-import QrcodeTerminal from 'qrcode-terminal'
+import { Contact, Message, Wechaty } from "wechaty";
+import { ScanStatus } from "wechaty-puppet";
+import { PuppetPadplus } from "wechaty-puppet-padplus";
+import QrcodeTerminal from "qrcode-terminal";
 
-const token = 'your-token'
+const token = "your-token";
 
 const puppet = new PuppetPadplus({
   token,
-})
+});
 
-const name = 'your-bot-name'
+const name = "your-bot-name";
 
 const bot = new Wechaty({
   puppet,
   name, // generate xxxx.memory-card.json and save login data for the next login
-})
+});
 
 bot
-  .on('scan', (qrcode, status) => {
+  .on("scan", (qrcode, status) => {
     if (status === ScanStatus.Waiting) {
       QrcodeTerminal.generate(qrcode, {
         small: true,
-      })
+      });
     }
   })
-  .on('login', (user: Contact) => {
-    console.log(`login success, user: ${user}`)
+  .on("login", (user: Contact) => {
+    console.log(`login success, user: ${user}`);
   })
-  .on('message', (msg: Message) => {
-    console.log(`msg : ${msg}`)
+  .on("message", (msg: Message) => {
+    console.log(`msg : ${msg}`);
   })
-  .start()
+  .start();
 ```
 
 token 那边填写你申请获得的即可。
@@ -127,27 +128,27 @@ token 那边填写你申请获得的即可。
 通过公众号等方式引导粉丝加你为好友以后，机器人这边会监听到一个事件 `friendship`，我们只需要通过好友，然后改备注，自动给他发送一段引导消息，等待他回复 「加群」 两个字以后拉他入群。
 
 ```js
-bot.on('friendship', async (friendship) => {
+bot.on("friendship", async (friendship) => {
   // 如果是添加好友请求
   if (friendship.type() === Friendship.Type.Receive) {
     // 通过好友请求
-    await friendship.accept()
+    await friendship.accept();
     // 获取联系人信息
-    const contact = friendship.contact()
-    greeting(contact)
-    addAlias(contact)
+    const contact = friendship.contact();
+    greeting(contact);
+    addAlias(contact);
   }
-})
+});
 
 /**
  * 对新增好友打招呼，提示加群消息
  */
 async function greeting(contact: Contact) {
   try {
-    await contact.say(`Hi，终于等到你！回复「加群」，即可加入进阶交流群哦。`)
-    console.log(`greeting to ${contact.name()} successfully!`)
+    await contact.say(`Hi，终于等到你！回复「加群」，即可加入进阶交流群哦。`);
+    console.log(`greeting to ${contact.name()} successfully!`);
   } catch (e) {
-    console.log(`failed to greeting to ${contact.name()}`)
+    console.log(`failed to greeting to ${contact.name()}`);
   }
 }
 
@@ -155,13 +156,13 @@ async function greeting(contact: Contact) {
  * 为好友添加别名 「前端 + 名字」
  */
 async function addAlias(contact: Contact) {
-  const name = contact.name()
-  const newAlias = `前端 ${name}`
+  const name = contact.name();
+  const newAlias = `前端 ${name}`;
   try {
-    await contact.alias(newAlias)
-    console.log(`change ${contact.name()}'s alias ${newAlias} successfully!`)
+    await contact.alias(newAlias);
+    console.log(`change ${contact.name()}'s alias ${newAlias} successfully!`);
   } catch (e) {
-    console.log(`failed to change ${contact.name()} alias!`)
+    console.log(`failed to change ${contact.name()} alias!`);
   }
 }
 ```
