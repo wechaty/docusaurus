@@ -196,7 +196,7 @@ Contributors:
 Committers:
 
 - Zhengxin DIAO (刁政欣) <https://github.com/diaozxin007>
-- Xiaoya REN (任筱雅) <https://github.com/diaozxin007>
+- Xiaoya REN (任筱雅) <https://github.com/redmaple1>
 
 Contributors:
 
