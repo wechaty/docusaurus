@@ -734,7 +734,7 @@ PeterZhang:
 
 secreter:
   name        : "secreter"
-  bio         : "Committer of Go Wechaty."
+  bio         : "A nodejs developer"
   avatar      : "https://avatars2.githubusercontent.com/u/10734397?s=60&v=4"
   links:
     - label: "GitHub"

@@ -4,7 +4,7 @@ title: "微信群打卡统计机器人"
 date: 2020-07-03 09:00 +0800
 author: secreter
 header:
-   teaser: http://images.redream.cn/upic/2019/20200703203949-WechatIMG267.jpeg
+   teaser: /assets/2020/tiny-bot/teaser.jpeg
 ---
 
 <!-- markdownlint-disable -->
