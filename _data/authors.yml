@@ -731,3 +731,12 @@ PeterZhang:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:1097692918@qq.com"
+
+chengaopan:
+  name        : "陈小胖"
+  bio         : "Java/PHP工程师，偶尔写写python、Node.js"
+  avatar      : "https://avatars1.githubusercontent.com/u/18641281?s=400&u=6209d11327a220b8852fd9291f8f0f1605f20e62&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/chengaopan"
