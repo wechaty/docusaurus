@@ -17,7 +17,7 @@ header:
 
 ---
 
-<img src="http://images.redream.cn/upic/2019/20200703203949-WechatIMG267.jpeg" width=200>
+<img src="/assets/2020/tiny-bot/teaser.jpeg" width=200>
 
 <!--more-->
 
@@ -98,16 +98,16 @@ header:
 
 图片生成是在服务端实现的，主要是用到了无头浏览器[puppeteer](https://try-puppeteer.appspot.com/)的截图功能。相当于浏览器访问tpl.html地址，将生成的页面进行截图，再通过File-box 返回给用户，即实现了打卡生成图片的功能。
 
-<img src="http://images.redream.cn/upic/2019/20200703203949-WechatIMG267.jpeg" width=300>
+<img src="/assets/2020/tiny-bot/teaser.jpeg" width=300>
 
 ### OCR打卡
 
 手动输入打卡关键字打卡，对于有的比较懒的同学，还是比较麻烦的。OCR 技术能实现无感知打卡，当用户将keep 运动的截图发送到群聊的时候，就可以通过OCR 技术识别关键字，进行打卡。这里主要调用的接口是[腾讯的AI 开放平台](https://ai.qq.com/)的通用识图技术。
 
-<img src="http://images.redream.cn/upic/2019/20200703201549-WechatIMG266.jpeg" width=300>
+<img src="/assets/2020/tiny-bot/ocr.jpeg" width=300>
 <br/>
 
-<img src="http://images.redream.cn/upic/2019/20200703201749-WechatIMG264.jpeg" width=300>
+<img src="/assets/2020/tiny-bot/menu.jpeg" width=300>
 
 ## 功能增强
 
@@ -125,4 +125,4 @@ header:
 
 也欢迎大家添加我的机器人张三进行体验。
 
-<img src="http://images.redream.cn/upic/2019/20200703203111-WechatIMG263.jpeg" width=200>
+<img src="/assets/2020/tiny-bot/qr.jpeg" width=200>
