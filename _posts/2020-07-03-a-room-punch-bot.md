@@ -87,7 +87,7 @@ header:
 
 ```
 
-其中listeners 目录对消息类型进行了分类，这样，需要添加特定消息的业务逻辑时，就可以很清晰的添加。config.js 中提供了项目中的所有动态配置项，tpl/ 目录里，存放了代码的打卡模板，可以[点击查看效果](http://images.redream.cn/upic/2019/20200629184711-punch.html?data=[{"count":1,"timestamp":1593097495015},{"count":1,"timestamp":1593270295015},{"count":1,"timestamp":1593339046223},{"count":1,"timestamp":1593427696584},{"count":1,"timestamp":1593521084178},{"count":1,"timestamp":1593574357851},{"count":1,"timestamp":1593688908645},{"count":1,"timestamp":1593705938358}]&avatar=http://wx.qlogo.cn/mmhead/ver_1/OeKicM5TibegS3iaUtdbwFwzQia16QftEgzLuNR2ib5dicH0ka4bTAotbH8phSibTAKjh8derOHCh7qcPQhic1qnEibFlNW29z2ebqrn7gRpR9lgOicCM/132&name=@2020&&h=450&w=375&x=0&y=0)（手机版）
+其中listeners 目录对消息类型进行了分类，这样，需要添加特定消息的业务逻辑时，就可以很清晰的添加。config.js 中提供了项目中的所有动态配置项，tpl/ 目录里，存放了代码的打卡模板，可以[点击查看效果](http://images.redream.cn/upic/2019/20200629184711-punch.html?data=[{"count":1,"timestamp":1593097495015},{"count":1,"timestamp":1593270295015},{"count":1,"timestamp":1593339046223},{"count":1,"timestamp":1593427696584},{"count":1,"timestamp":1593521084178},{"count":1,"timestamp":1593574357851},{"count":1,"timestamp":1593688908645},{"count":1,"timestamp":1593705938358}]&avatar=https://github.com/wechaty/wechaty.github.io/raw/master/assets/2020/tiny-bot/qr.jpeg&name=@2020&&h=450&w=375&x=0&y=0)（手机版）
 
 
 ### 打卡模板实现
