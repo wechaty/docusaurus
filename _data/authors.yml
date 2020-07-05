@@ -720,6 +720,7 @@ dchaofei:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/dchaofei"
 
+
 sl1673495:
   name        : "ssh"
   bio         : "front-end developer"
@@ -740,3 +741,18 @@ PeterZhang:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:1097692918@qq.com"
+
+secreter:
+  name        : "secreter"
+  bio         : "A nodejs developer"
+  avatar      : "https://avatars2.githubusercontent.com/u/10734397?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/secreter"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:so@redream.cn"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.redream.cn"
