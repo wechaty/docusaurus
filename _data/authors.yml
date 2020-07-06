@@ -731,3 +731,15 @@ PeterZhang:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:1097692918@qq.com"
+
+Ray:
+  name        : "Ray"
+  bio         : "I am a full-stack Software Engineer in Chengdu."
+  avatar      : "https://avatars2.githubusercontent.com/u/6951638?s=460&u=508a06f9f02922ba190de06213d95c316d043463&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/leiroc"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:121644750@qq.com"
