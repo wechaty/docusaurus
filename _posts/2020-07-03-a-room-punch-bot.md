@@ -15,7 +15,7 @@ header:
 
 一个可以OCR 打卡并生成统计方块图的机器人。
 
----
+
 ![打卡图片](/assets/2020/tiny-bot/teaser.jpeg)
 
 <!--more-->
