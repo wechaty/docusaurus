@@ -719,6 +719,16 @@ dchaofei:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/dchaofei"
+
+
+sl1673495:
+  name        : "ssh"
+  bio         : "front-end developer"
+  avatar      : "https://avatars1.githubusercontent.com/u/23615778?s=460&u=dfafce9be474c8cface7cd5e0a7c32a0822c3556&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/sl1673495"
    
 PeterZhang:
   name        : "一路向北"
@@ -740,3 +750,18 @@ chengaopan:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/chengaopan"
+
+secreter:
+  name        : "secreter"
+  bio         : "A nodejs developer"
+  avatar      : "https://avatars2.githubusercontent.com/u/10734397?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/secreter"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:so@redream.cn"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.redream.cn"
