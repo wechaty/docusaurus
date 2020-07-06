@@ -16,8 +16,7 @@ header:
 一个可以OCR 打卡并生成统计方块图的机器人。
 
 ---
-
-<img src="/assets/2020/tiny-bot/teaser.jpeg" width=200>
+![打卡图片](/assets/2020/tiny-bot/teaser.jpeg)
 
 <!--more-->
 
@@ -98,16 +97,15 @@ header:
 
 图片生成是在服务端实现的，主要是用到了无头浏览器[puppeteer](https://try-puppeteer.appspot.com/)的截图功能。相当于浏览器访问tpl.html地址，将生成的页面进行截图，再通过File-box 返回给用户，即实现了打卡生成图片的功能。
 
-<img src="/assets/2020/tiny-bot/teaser.jpeg" width=300>
+![打卡图片](/assets/2020/tiny-bot/teaser.jpeg)
 
 ### OCR打卡
 
 手动输入打卡关键字打卡，对于有的比较懒的同学，还是比较麻烦的。OCR 技术能实现无感知打卡，当用户将keep 运动的截图发送到群聊的时候，就可以通过OCR 技术识别关键字，进行打卡。这里主要调用的接口是[腾讯的AI 开放平台](https://ai.qq.com/)的通用识图技术。
 
-<img src="/assets/2020/tiny-bot/ocr.jpeg" width=300>
-<br/>
+![打卡图片](/assets/2020/tiny-bot/ocr.jpeg)
 
-<img src="/assets/2020/tiny-bot/menu.jpeg" width=300>
+![打卡图片](/assets/2020/tiny-bot/menu.jpeg)
 
 ## 功能增强
 
@@ -125,4 +123,4 @@ header:
 
 也欢迎大家添加我的机器人张三进行体验。
 
-<img src="/assets/2020/tiny-bot/qr.jpeg" width=200>
+![机器人二维码](/assets/2020/tiny-bot/qr.jpeg)
