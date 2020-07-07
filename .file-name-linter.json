@@ -1,18 +1,19 @@
 {
   "rules": {
-    "docs/_posts": [
-      "^docs/_posts/",
+    "_posts": [
+      "^_posts/",
       "/[0-9\\-a-z]+\\.",
       "\\.md$"
     ],
-    "docs/assets": [
-      "^docs/assets/",
+    "assets": [
+      "^assets/",
       "/[0-9\\-a-z]+\\.",
       "\\.(jpg|jpeg|png|gif|zip|pdf)$"
     ]
   },
   "ignore": [
-    "docs/assets/js/viewer-js",
+    "assets/js/viewer-js",
+    "assets/js/sidecar-gitter.js",
     "tests/fixtures"
   ]
 }

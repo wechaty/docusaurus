@@ -1,24 +1,25 @@
 {
-  "name": "@chatie/blog",
-  "version": "0.2.19",
-  "description": "Chatie Blog",
+  "name": "wechaty.github.io",
+  "version": "0.2.27",
+  "description": "Wechaty Home Page",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
     "fit-image": "./scripts/fit-image.sh",
-    "lint": "npm run lint:es && npm run lint:ts && npm run lint:md && npm run lint:fn",
+    "lint": "npm run lint:es && npm run lint:ts && npm run lint:md && npm run lint:fn && npm run lint:yml",
     "lint:es": "eslint 'src/**/*.ts' 'tests/**/*.spec.ts' --ignore-pattern tests/fixtures/",
     "lint:ts": "tsc --noEmit",
-    "lint:md": "markdownlint README.md 'docs/**/*.md'",
+    "lint:md": "markdownlint --ignore _site/ --ignore node_modules/ '**/*.md'",
     "lint:fn": "file-name-linter .file-name-linter.json",
+    "lint:yml": "yamllint _data/*.yml",
     "test": "npm run lint && npm run test:unit",
     "test:unit": "ts-node --files ./node_modules/.bin/blue-tape 'src/**/*.spec.ts' 'tests/**/*.spec.ts'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chatie/blog.git"
+    "url": "git+https://github.com/wechaty/wechaty.github.io.git"
   },
   "keywords": [
     "Minimal Mistakes",
@@ -27,9 +28,9 @@
   "author": "Huan LI <zixia@zixia.net>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/chatie/blog/issues"
+    "url": "https://github.com/wechaty/wechaty.github.io/issues"
   },
-  "homepage": "https://github.com/chatie/blog#readme",
+  "homepage": "https://github.com/wechaty/wechaty.github.io#readme",
   "devDependencies": {
     "@chatie/eslint-config": "^0.6.13",
     "@chatie/git-scripts": "^0.2.5",
@@ -41,7 +42,8 @@
     "image-size": "^0.7.4",
     "is-pr": "^1.1.0",
     "probe-image-size": "^4.0.0",
-    "tstest": "^0.4.2"
+    "tstest": "^0.4.2",
+    "yaml-lint": "^1.2.4"
   },
   "git": {
     "scripts": {
