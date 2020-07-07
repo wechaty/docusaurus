@@ -11,11 +11,13 @@ author: wj-Mcat
 
 ## 漫长的会议
 
-如小标题所示，昨晚（7.5）的会议开了接近三个小时，即使如此，大家热情依然饱满，几乎忘却了时间，全身心投入到技术主题讨论中。满载而归的我必须要发一篇博客来分享一下昨晚的成果。
+昨晚（7.5）的会议开了接近三个小时，即使如此，大家热情依然饱满，几乎忘却了时间，全身心投入到技术主题讨论中。满载而归的我必须要发一篇博客来分享一下昨晚的成果。
 
 昨晚会议围绕 Mock & Test & Restful Api 这三个主题展开，并进行了深入的讨论，详细的会议议程大家可转到[google doc](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.85djedyd54di)上面查看。
 
 接下来我将一一介绍各位参与者分享的内容，如果想要观看整个会议的过程，可转移到[油管](https://www.youtube.com/watch?v=qWkv0F_pluQ)观看。
+
+<!--more-->
 
 ## Mock Is required for wechaty
 
