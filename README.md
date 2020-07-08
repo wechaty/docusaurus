@@ -47,8 +47,6 @@ Example as follows:
    teaser: your_teaser_image_path
 ---
 
-<!-- markdownlint-disable -->
-
 > Author: [@your_github_username](https://github.com/your_github_username) your one-line bio at here
 
 > Code: [@yourcode](your_code_path)
@@ -88,7 +86,9 @@ The titles in markdown files will be added an anchor automatically, you can use 
 * Chinese character will be kept in the anchor
 
 #### Example
+
 Say you have a title as `### 我是? a title.bat`. Then you will get the anchor generated as `我是-a-titlebat`. And you can use the generated anchor to implement your own links. Like this:
+
 ```markdown
 [奇妙的Link](#我是-a-titlebat)
 ```
