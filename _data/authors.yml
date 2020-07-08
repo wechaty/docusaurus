@@ -293,6 +293,15 @@ likai:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/tlikai"
 
+willcup:
+  name        : "willcup"
+  bio         : "斜杠工程师"
+  avatar      : "https://avatars2.githubusercontent.com/u/22429697?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/runningdata"
+
 fish-ball:
   name        : "fish-ball"
   bio         : "分母为零的斜杠大龄青年程序员"
