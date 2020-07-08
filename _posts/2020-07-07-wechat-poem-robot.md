@@ -10,7 +10,7 @@ tags:
   - regex
   - regex101
 header:
-   teaser: /assets/2020/
+   teaser: /assets/2020/wechat-poem-robot/chat.png
 ---
 
 <!-- markdownlint-disable -->
