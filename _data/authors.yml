@@ -728,3 +728,82 @@ dchaofei:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/dchaofei"
+
+
+sl1673495:
+  name        : "ssh"
+  bio         : "front-end developer"
+  avatar      : "https://avatars1.githubusercontent.com/u/23615778?s=460&u=dfafce9be474c8cface7cd5e0a7c32a0822c3556&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/sl1673495"
+   
+PeterZhang:
+  name        : "一路向北"
+  bio         : "I am a full-stack Software Engineer in Beijing."
+  avatar      : "https://avatars1.githubusercontent.com/u/831839?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zhangchunsheng"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:1097692918@qq.com"
+
+chengaopan:
+  name        : "陈小胖"
+  bio         : "java/PHP工程师，偶尔写写python nodejs项目"
+  avatar      : "https://avatars1.githubusercontent.com/u/18641281?s=400&u=6209d11327a220b8852fd9291f8f0f1605f20e62&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/chengaopan"
+
+secreter:
+  name        : "secreter"
+  bio         : "A nodejs developer"
+  avatar      : "https://avatars2.githubusercontent.com/u/10734397?s=60&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/secreter"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:so@redream.cn"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.redream.cn"
+
+Ray:
+  name        : "Ray"
+  bio         : "I am a full-stack Software Engineer in Chengdu."
+  avatar      : "https://avatars2.githubusercontent.com/u/6951638?s=460&u=508a06f9f02922ba190de06213d95c316d043463&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/leiroc"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:121644750@qq.com"
+
+ray7551:
+  name        : "ray7551"
+  bio         : "Coder."
+  avatar      : "https://avatars0.githubusercontent.com/u/1812388?s=400&u=6d7fb7cdb384672a3bc0fd611925c1b9cdcbf5cc&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ray7551"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/ray7551"
+
+leijiahang:
+  name        : "leijiahang"
+  bio         : "I am a baby coder"
+  avatar      : "https://avatars0.githubusercontent.com/u/68017996?s=460&u=001aba78259ed16a3363fcb7e0a3e4533598f4de&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/leijiahang"
