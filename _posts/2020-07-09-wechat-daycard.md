@@ -1,7 +1,7 @@
 ---
 title: "微信群音乐卡片分享机器人（wechat daycard）"
 author: leijiahang
-date: "2020-07-09 10:47:00 +0800"
+date: "2020-07-09 09:47:00 +0800"
 categories: project
 tags:
   - wechaty
@@ -41,7 +41,7 @@ wechaty：wechaty核心库<br />wechaty-puppet-padplus：wechaty的ipad协议实
 
 ### 实现过程
 
-具体代码可以上github参看 [Github](https://github.com/leijiahang/wechat-daycard)
+具体代码可以上github参看 [wechat-daycard](https://github.com/leijiahang/wechat-daycard)
 
 ### 本地运行
 
