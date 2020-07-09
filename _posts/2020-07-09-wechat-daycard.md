@@ -1,7 +1,7 @@
 ---
-title: "微信群音乐卡片分享机器人（wechat daycard）"
+title: "每日微信音乐卡片分享机器人（wechat-daycard）"
 author: leijiahang
-date: "2020-07-09 09:47:00 +0800"
+date: "2020-07-09 09:40:00 +0800"
 categories: project
 tags:
   - wechaty
@@ -11,7 +11,7 @@ header:
 ---
 
 <!-- markdownlint-disable -->
-> 作者: [leijiahang](https://github.com/leijiahang)
+> 作者: [leijiahang](https://github.com/leijiahang/)
 > Code: [Github](https://github.com/leijiahang/wechat-daycard)
 
 [![](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
@@ -37,11 +37,11 @@ header:
 - 发送图片消息给用户
 
 ### 依赖
-wechaty：wechaty核心库<br />wechaty-puppet-padplus：wechaty的ipad协议实现<br>gm: 图片合成<br>axios: 发请求
+wechaty：wechaty核心库<br />wechaty-puppet-padplus：wechaty的ipad协议实现<br />gm: 图片合成<br />axios: 发请求
 
 ### 实现过程
 
-具体代码可以上github参看 [wechat-daycard](https://github.com/leijiahang/wechat-daycard)
+具体代码可以上github参看 [Github](https://github.com/leijiahang/wechat-daycard/)
 
 ### 本地运行
 
