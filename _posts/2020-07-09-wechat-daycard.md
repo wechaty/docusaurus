@@ -1,6 +1,6 @@
 ---
 title: "微信群音乐卡片分享机器人（wechat daycard）"
-author: Ray
+author: leijiahang
 date: "2020-07-09 10:47:00 +0800"
 categories: project
 tags:
