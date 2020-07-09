@@ -798,3 +798,12 @@ ray7551:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/ray7551"
+
+leijiahang:
+  name        : "leijiahang"
+  bio         : "I am a baby coder"
+  avatar      : "https://avatars0.githubusercontent.com/u/68017996?s=460&u=001aba78259ed16a3363fcb7e0a3e4533598f4de&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/leijiahang"
