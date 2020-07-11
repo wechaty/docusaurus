@@ -738,7 +738,7 @@ sl1673495:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sl1673495"
-   
+
 PeterZhang:
   name        : "一路向北"
   bio         : "I am a full-stack Software Engineer in Beijing."
@@ -807,3 +807,13 @@ leijiahang:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/leijiahang"
+
+zzhoouxin:
+  name        : "zzhoouxin"
+  bio         : "A boy who loves to play"
+  avatar      : "https://avatars2.githubusercontent.com/u/21190031?s=460&u=1b0e26a69742e75ff7414fa6f1ff1712c48ba6d5&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zzhoouxin"
+
