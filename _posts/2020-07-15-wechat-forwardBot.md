@@ -1,43 +1,54 @@
 ---
-title: "微信转发机器人（wechaty-forwardBot）"
-author: xiaok
-date: "2020-07-15 10:24:00 +0800"
+title: "每日微信音乐卡片分享机器人（wechat-daycard）"
+author: leijiahang
+date: "2020-07-09 09:40:00 +0800"
 categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
 header:
-   teaser: https://avatars3.githubusercontent.com/u/56892264?s=460&u=b94cb5809dff0bc5766bc88acd3b57629817271f&v=4
+   teaser: /assets/2020/wechat-daycard/header.png
 ---
 
 <!-- markdownlint-disable -->
-> 作者: [22528850](https://github.com/22528850)
-> Code: [Github](https://github.com/22528850/wechaty-forwardBot)
+> 作者: [leijiahang](https://github.com/leijiahang/)
+> Code: [Github](https://github.com/leijiahang/wechat-daycard)
 
 [![](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
 [![](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ### 背景
-运营群需要有价值的内容，才能把用户留住。但是自己又懒得搞这些内容，所以最好就是，直接把别人群有价值的内容转发到自己群，既能偷懒，还能留住用户，岂不美哉？
+
+公司app有一个呢喃打卡的活动，现有的方式是在app分享图片和H5的二维码。现利用wechaty，基于每日数据接口，获取到当日的歌曲和图片，利用现有的听歌小程序结合微信个人头像和昵称，做一个在群里面就能实现打卡分享每日歌曲图片的这么一个机器人。
+
+<!--more-->
 
 ### 功能
-判断n个群里面是否存在xxx关键词是则转发至自己的n个群
 
-### 逻辑
-- 监听配置好指定的群消息
-- 判断是否存在某个关键词
-- 存在则转发到配置好的群
+- 群里回复打卡，合成歌曲分享图片（分享图+微信头像+微信昵称+小程序歌曲码）
+
+### 实现逻辑
+
+- 监听群消息，获取打卡人的头像和昵称，这一块wechaty已经做的差不多了，我只需要简单的几行代码搞定；
+- 请求每日数据接口，拉取到当日的歌曲id和对应的分享封面图；
+- 保存拉取到的图片网络连接到本地
+- 根据歌曲id生成对应的小程序码，这一步需要小程序服务端的相关功能
+- 合成图片，这一块利用gm来实现
+- 发送图片消息给用户
 
 ### 依赖
-- wechaty：WechatY核心库
-- wechaty-puppet-padplus：WechatY之iPad协议模块
-- qrcode-terminal: 终端输出二维码
+wechaty：wechaty核心库<br />wechaty-puppet-padplus：wechaty的ipad协议实现<br />gm: 图片合成<br />axios: 发请求
 
-### 运行
+### 实现过程
+
+具体代码可以上github参看 [Github](https://github.com/leijiahang/wechat-daycard/)
+
+### 本地运行
+
 1. 克隆项目
 ```shell
-git clone https://github.com/22528850/wechaty-forwardBot
-cd wechaty-forwardBot
+git clone g https://github.com/leijiahang/wechat-daycard
+cd wechat-daycard
 ```
 
 2. 安装依赖
@@ -47,41 +58,15 @@ npm install
 
 3. 启动项目
 ```shell
-node index.js
+node app.js
 ```
 
-### 开发
-```JavaScript
-.on('message',           v => {
-	let
-	from = v.from(),
-	room = v.room()
+### 效果图
 
-	if(!room) return
-	if(v.type() == 0) return
-	if(v.type() != 7) return toRoom()
-	// 文本消息逻辑处理
-	// 是否为监听群
-	if(config.group.indexOf(room.payload.topic) < 0) return
-	
-	// 是否存在关键字
-	for (let k in config.keyWord)
-	if(v.text().indexOf(config.keyWord[k]) >= 0)
-	return toRoom()
-	
-	// 循环发送转发群
-	function toRoom()
-	{
-		for (let k in config.toGroup)
-		((k)=>{
-			setTimeout(async i => {
-				let Room = await bot.Room.find({topic: config.toGroup[k]})
-				if(Room) v.forward(Room)
-			},(Number(k)+1)*config.sstg)
-		})(k)
-	}
-})
-```
+![效果图](/assets/2020/wechat-daycard/demo.jpg)
 
 ### 致谢
-感谢WechatY团队提供微信机器人SDK，感谢句子互动提供的iPad协议版token
+
+非常感谢Wechaty团队提供微信机器人SDK，让开发者可以专注于业务代码。<br />感谢句子互动提供的pad协议版token。
+
+
