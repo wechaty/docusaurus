@@ -18,10 +18,10 @@ header:
 [![](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ### 背景
-运营群需要有价值的内容，才能把用户留住。<br>但是自己又懒得搞这些内容，所以最好就是<br>直接把别人群有价值的内容转发到自己群<br>既能偷懒，还能留住用户，岂不美哉？
+运营群需要有价值的内容，才能把用户留住。但是自己又懒得搞这些内容，所以最好就是，直接把别人群有价值的内容转发到自己群，既能偷懒，还能留住用户，岂不美哉？
 
 ### 功能
-判断n个群里面是否存在<br>xxx关键词<br>是则转发至自己的n个群
+判断n个群里面是否存在xxx关键词是则转发至自己的n个群
 
 ### 逻辑
 - 监听配置好指定的群消息
@@ -84,4 +84,4 @@ node index.js
 ```
 
 ### 致谢
-感谢WechatY团队提供微信机器人SDK<br>感谢句子互动提供的iPad协议版token
+感谢WechatY团队提供微信机器人SDK，感谢句子互动提供的iPad协议版token
