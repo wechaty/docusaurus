@@ -7,7 +7,7 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
 header:
-   teaser: https://avatars3.githubusercontent.com/u/56892264?s=460&u=b94cb5809dff0bc5766bc88acd3b57629817271f&v=4
+   teaser: /assets/2020/group-wechat-bot/2020-06-04-group-wechat-bot.png
 ---
 
 <!-- markdownlint-disable -->
