@@ -1,82 +1,48 @@
 ---
-title: "微信计算器机器人（wechat robot calculator）"
-author: Ray
-date: "2020-07-06 10:47:00 +0800"
+title: "微信转发机器人（wechaty-forwardBot）"
+author: xiaok
+date: "2020-07-15 10:24:00 +0800"
 categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
 header:
-   teaser: /assets/2020/wechat-calc/header.jpg
+   teaser: https://avatars3.githubusercontent.com/u/56892264?s=460&u=b94cb5809dff0bc5766bc88acd3b57629817271f&v=4
 ---
 
 <!-- markdownlint-disable -->
-> 作者: [Ray](https://github.com/leiroc/)
-> Code: [Github](https://github.com/leiroc/wechat-calculator)
+> 作者: [xiaok](https://github.com/22528850)
+> Code: [Github](https://github.com/22528850/wechaty-forwardBot)
 
 [![](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
 [![](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ### 背景
 
-很早开始就在关注微信机器人，自己是做前端开发的，对nodejs有不错的了解。想自己做一个微信机器人的计算器，因为每次需要用计算器就很不方便，手机里的app我都放在很深的目录，不好找，放在首页又太浪费了。所以就想到用wechaty来实现个人号微信计算器机器人，实现常规的加减乘除功能；
-
-<!--more-->
+运营群需要有价值的内容，才能把用户留住。但是自己又懒得搞这些内容，所以最好就是,直接把别人群有价值的内容转发到自己群,既能偷懒，还能留住用户，岂不美哉？
 
 ### 功能
 
-加、减、乘、除
+- 判断n个群里面是否存在 xxx关键词 是则转发至自己的n个群
 
-### 实现逻辑
+### 逻辑
 
-逻辑可以说是很简单；利用wechaty接收用户消息，对消息过滤，用户输入：1+1，然后直接eval 计算结果返回给用户；
+- 监听配置好指定的群消息
+- 判断是否存在某个关键词
+- 存在则转发到配置好的群
 
 ### 依赖
-wechaty：wechaty核心库<br />wechaty-puppet-padplus：wechaty的ipad协议实现
 
-### 实现过程
-```javascript
+- wechaty：WechatY核心库
+- wechaty-puppet-padplus：WechatY之iPad协议模块
+- qrcode-terminal: 终端输出二维码
 
-function calculator(intxt, callback) {
-	return new Promise(function (resolve, reject) {
-	    var a = intxt;
-		try {
-			intxt = intxt.replace(/=|等|等于|\?/, '');
-			intxt = intxt.replace(/加/g, '+').replace(/减/g, '-').replace(/乘/g, '*').replace(/除/g, '/');
-			a = eval(intxt);
-		} catch(e){
-			// console.log('========error', e);
-		}
-	    resolve(a);
-  	});
-}
-
-async function onMessage (msg) {
-  const contact = msg.from()
-  let text = msg.text()
-  const room = msg.room();
-
-  if (room) return;
-  if(msg.self()){ // 自己发消息
-    return;
-  }
-  if (text) {
-    text = text.replace(/[。，、,.]$/gi, '').replace(/\s*/gi, "");
-  }
-  if (msg.type() === bot.Message.Type.Text && /^\d+.{1}\d+/gi.test(text)) { // 文本消息
-    let result = await CalcFunc.calculator(text);
-    await msg.say(result+'');
-  }
-}
-
-```
-
-### 本地运行
+### 运行
 
 1. 克隆项目
 ```shell
-git clone g https://github.com/leiroc/wechat-calculator.git
-cd wechat-calculator
+git clone https://github.com/22528850/wechaty-forwardBot
+cd wechaty-forwardBot
 ```
 
 2. 安装依赖
@@ -86,12 +52,44 @@ npm install
 
 3. 启动项目
 ```shell
-node app.js
+node index.js
 ```
 
-### 效果图
-![效果图](/assets/2020/wechat-calc/demo.jpg)
+### 开发
+
+```javascript
+.on('message',           v => {
+	let
+	from = v.from(),
+	room = v.room()
+
+	if(!room) return
+	if(v.type() == 0) return
+	if(v.type() != 7) return toRoom()
+	// 文本消息逻辑处理
+	// 是否为监听群
+	if(config.group.indexOf(room.payload.topic) < 0) return
+	
+	// 是否存在关键字
+	for (let k in config.keyWord)
+	if(v.text().indexOf(config.keyWord[k]) >= 0)
+	return toRoom()
+	
+	// 循环发送转发群
+	function toRoom()
+	{
+		for (let k in config.toGroup)
+		((k)=>{
+			setTimeout(async i => {
+				let Room = await bot.Room.find({topic: config.toGroup[k]})
+				if(Room) v.forward(Room)
+			},(Number(k)+1)*config.sstg)
+		})(k)
+	}
+})
+```
 
 ### 致谢
-感谢Wechaty团队提供微信机器人SDK，让开发者可以专注于业务代码。<br />感谢句子互动提供的pad协议版token，看到很多基于dll的实现，太费时就没有研究了
+
+感谢WechatY团队提供微信机器人SDK 感谢句子互动提供的iPad协议版token
 
