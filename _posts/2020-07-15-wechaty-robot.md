@@ -7,7 +7,7 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
 header:
-    teaser: /assets/2020/wechaty-robot/chat.png
+   teaser: /assets/2020/wechaty-robot/header.jpg
 ---
 
 <!-- markdownlint-disable -->
