@@ -1,5 +1,5 @@
 ---
-title: "微信机器人（wechaty robot）"
+title: "微信代购机器人（WeChat Purchasing Robot）"
 author: DevoZou
 date: "2020-07-15 10:47:00 +0800"
 categories: project
@@ -10,7 +10,6 @@ header:
    teaser: /assets/2020/wechaty-robot/header.jpg
 ---
 
-<!-- markdownlint-disable -->
 > 作者: [DevoZou](https://github.com/zoudingyi/)
 > Code: [Github](https://github.com/zoudingyi/wechaty-robot)
 
@@ -18,7 +17,7 @@ header:
 [![](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ### 背景
-女朋友在做代购，加了很多微信好友和微信群，所以每天会有很多人前来咨询商品信息以及商品价格，因此想做一个管理机器人，用于自动回复消息、群管理以及自动添加好友。
+女朋友在做代购，加了很多微信好友和微信群，所以每天会有很多人前来咨询商品信息以及商品价格，因此想做一个管理机器人，用于自动回复消息、群管理以及自动添加好友，以及用户发送商品关键词能够自动回复相应商品信息。
 
 <!--more-->
 

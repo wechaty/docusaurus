@@ -807,3 +807,12 @@ leijiahang:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/leijiahang"
+
+DevoZou:
+  name        : "DevoZou（邹定一）"
+  bio         : "一个打杂特别勤奋的前端工程师，喜欢研究有趣的东西。"
+  avatar      : "https://avatars3.githubusercontent.com/u/33066257?s=460&u=622ee7b4b6df52d6c94719938dc5147c5dd8f841&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zoudingyi"
