@@ -7,7 +7,7 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
 header:
-   teaser: https://avatars3.githubusercontent.com/u/56892264?s=460&u=b94cb5809dff0bc5766bc88acd3b57629817271f&v=4
+   teaser: /assets/2020/wechaty-forwardbot/header.jpg
 ---
 
 <!-- markdownlint-disable -->
@@ -33,8 +33,8 @@ header:
 
 ### 依赖
 
-- wechaty：WechatY核心库
-- wechaty-puppet-padplus：WechatY之iPad协议模块
+- wechaty：wechaty核心库
+- wechaty-puppet-padplus：wechaty iPad协议
 - qrcode-terminal: 终端输出二维码
 
 ### 运行
@@ -91,5 +91,6 @@ node index.js
 
 ### 致谢
 
-感谢WechatY团队提供微信机器人SDK 感谢句子互动提供的iPad协议版token
-
+感谢Wechaty团队提供微信机器人SDK 感谢句子互动提供的iPad协议版token
+wechaty: https://github.com/wechaty/wechaty
+juzibot:https://www.juzibot.com/
