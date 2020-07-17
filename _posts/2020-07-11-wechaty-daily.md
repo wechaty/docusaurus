@@ -11,38 +11,44 @@ header:
    teaser: /assets/2020/wechaty-daily/daily.png
 ---
 
-
+<!-- markdownlint-disable -->
 > 作者: [zzhoouxin](https://github.com/zzhoouxin/)
 > Code: [Github](https://github.com/zzhoouxin/wechaty-bot)
 
 [![](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
 [![](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
+###背景
 
-
-
-##背景
 我们日常每天都需要写日报,用来汇报今日工作内容和明日工作计划。日报内容维护在wiki里面。团队TL每天会去wiki上收集工作内容；在发送到公司大群。但是每天会有小伙伴会忘记写。 导致 TL没办法收集今日内容。很是苦恼。还有每次编写都需要去wiki挨个复制每个人的。 工作效率很低；
+
 <!--more-->
-##思考
+
+###思考
+
 之前也了解过wechaty，就想着是否可以做一个每天快下班提醒团队小伙伴，维护下工作日报。以及团队TL便捷获取团队所有日报的系统。不需要一个个复制；
-##项目地址
+
+###项目地址
+
 github:[https://github.com/zzhoouxin/wechaty-bot](https://github.com/zzhoouxin/wechaty-bot)
 
 
-##基础依赖
+###基础依赖
+
 - [wechaty](https://github.com/wechaty/wechaty)  --微信操作
 - [node-schedule](https://github.com/node-schedule/node-schedule) --定时任务
 - [superagent](https://github.com/visionmedia/superagent) --接口请求
 - [cheerio](https://github.com/cheeriojs/cheerio#readme) -- 抓取数据
 - [qrcode-terminal](https://github.com/gtanner/qrcode-terminal) --终端显示二维码
 
-##功能
+###功能
+
 - 定时提醒组内小伙伴填写工作日报以及发送工作日报到工作群
 - 根据关键字自动发送日报内容
 -  后续功能...(等待和小组人员讨论)
 
-##项目成果
+###项目成果
+
 - 日常提醒
 ![日常提醒](https://upload-images.jianshu.io/upload_images/7078301-f10068182c7ce0a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/330)
 - 定时发送日报
