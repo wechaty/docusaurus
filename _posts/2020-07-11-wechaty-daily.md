@@ -6,7 +6,6 @@ categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
-
 header:
    teaser: /assets/2020/wechaty-daily/daily.png
 ---
@@ -51,17 +50,15 @@ github:[https://github.com/zzhoouxin/wechaty-bot](https://github.com/zzhoouxin/w
 
 - 日常提醒
 ![日常提醒](https://upload-images.jianshu.io/upload_images/7078301-f10068182c7ce0a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/330)
+
 - 定时发送日报
 ![定时发送日报](https://upload-images.jianshu.io/upload_images/7078301-4af74bb5c0ea1991.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/340)
 
 - 根据关键字发送日报内容
 ![image.png](https://upload-images.jianshu.io/upload_images/7078301-6b92349444b82c24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/340)
 
+###1.项目结构
 
-
-
-##实现过程
-#####1.项目结构
 ![image.png](https://upload-images.jianshu.io/upload_images/7078301-b1b1b9855a417e80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/340)
 - bot 存放wechaty每个状态的回调函数
 - schecdule 定时任务-获取日报并发送
@@ -69,9 +66,8 @@ github:[https://github.com/zzhoouxin/wechaty-bot](https://github.com/zzhoouxin/w
 - tool 封装基础请求、公共方法
 - index.js 启动入口
 
+###1.index.js -- wechaty启动入口
 
-#####2.核心代码
-#####1.index.js -- wechaty启动入口
 ```
 const {Wechaty} = require('wechaty')
 const {PuppetPadplus} = require("wechaty-puppet-padplus");
@@ -80,7 +76,6 @@ const onScan = require('./bot/onScan')
 const onLogin = require('./bot/onLogin')
 const onMessage = require('./bot/onMessage')
 const onLogout = require('./bot/onLogout')
-
 const bot = new Wechaty({
     puppet: new PuppetPadplus({
         token: config.TOKEN
@@ -96,9 +91,11 @@ bot
     .then(() => console.log('开始登陆微信'))
     .catch(e => console.error(e))
 ```
+
 这边使用的是[wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus#readme)基于ipad协议进行开发的；`scan login logout message`这些是Wechaty的基础回调事件。
 
-#####2.config  基础文件配置`这里面都是自己基于自己业务的参数-如果您也是用confluence wiki 那可以参考下`
+###2.config  基础文件配置`这里面都是自己基于自己业务的参数-如果您也是用confluence wiki 那可以参考下`
+
 ```
 // 配置文件
 module.exports = {
@@ -114,14 +111,19 @@ module.exports = {
   KEYWORDs:['本组','全部']
 };
 ```
+
 ![image.png](https://upload-images.jianshu.io/upload_images/7078301-06e3a9ed05e322d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/340)
 
 里面的wiki_url 是我们自己平常填写日报的wiki地址。如果您使用其他方式-那就具体情况具体分析
 
-#####3.定时任务提醒
+###3.定时任务提醒
+
 - 在登录后启动定时任务
+
 这边我们就使用到了- [node-schedule](https://github.com/node-schedule/node-schedule) 这个node库  当然可以配置他的启动时间。可以查看官网详细说明。
-#####3.1首页我们在wechaty的onlogin事件里面加入定时任务
+
+###3.1首页我们在wechaty的onlogin事件里面加入定时任务
+
 ```
 const dailyRemind = require('../schedule/dailyRemind')
 const collectContent = require('../schedule/collectContent')
@@ -136,10 +138,12 @@ module.exports = bot => {
         await collectContent(bot);//所有汇总
     }
 }
-
 ```
+
 #####3.2创建一个定时提醒的任务
+
 - 通过[bot.Room.find(id)](https://wechaty.js.org/v/zh/api/room#room-find-query-promise-less-than-room-greater-than)找到需要提醒的群
+
 - 在使用[announce](https://wechaty.js.org/v/zh/api/room#room-announce-text-promise-less-than-void-or-string-greater-than)创建群公告 @所有人 即可做到提醒
 
 ```
@@ -161,8 +165,11 @@ module.exports =async  function dailyRemind(bot) {
    });
 }
 ```
-####4.根据关键字。发送日报内容
+
+###4.根据关键字。发送日报内容
+
 - 上图中 机器人会自动提示，需要回复什么关键字。当然这一步是我们自己配置的。在config.js里面有关键字配置属性。直接看代码
+
 - 机器人自动回复-就需要在`message`事件里面处理啦-[message的官方文档](https://wechaty.js.org/v/zh/api/message)
 
 ```
@@ -199,12 +206,16 @@ module.exports = (bot) => {
 };
 ```
 
-####5.获取自己需要的信息
+###5.获取自己需要的信息
+
 - 上文中提交到我们有`日报填写的地址`
+
 - 以及 [superagent](https://github.com/visionmedia/superagent) 、[cheerio](https://github.com/cheeriojs/cheerio#readme) 2个依赖库-主要用到请求我们日报地址 并且获取所需要的内容
+
 ![wiki基础页面结构](https://upload-images.jianshu.io/upload_images/7078301-14ae5594244e7afd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/340)
 
 这个是我们wiki文档的项目结构-我们首先需求通过superagent请求访问该页面-并且通过cheero获取内容。当然这2个依赖库使用。建议先熟悉一下官方文档。下文代码做了一些兼容--
+
 ```
 async function collectUserContent() {
   let str = '';
@@ -243,10 +254,13 @@ async function collectUserContent() {
   return str;
 }
 ```
+
 `获取到自己需要的内容，依旧可以通过room.say发送出去`;
+
 至此我们一个简单的日报收集的系统机器人简单的实现了。
 
-##总结
+###总结
+
 相信很多公司都有发送日报的要求。以上代码实现也是依赖了自己所需业务场景进行实现。通过wechaty改变了我们传统的工作流程。大大的提高了工作效率。避免很多重复行为。当然还有更多好玩有趣的功能区可以加入。希望自己可以和团队进行沟通，提高我们流程。大家可以参考以上流程。
 
 
