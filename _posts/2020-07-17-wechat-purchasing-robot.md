@@ -1,7 +1,7 @@
 ---
 title: "微信代购机器人（WeChat Purchasing Robot）"
 author: DevoZou
-date: "2020-07-15 10:47:00 +0800"
+date: "2020-07-17 16:10:00 +0800"
 categories: project
 tags:
   - wechaty
@@ -10,6 +10,7 @@ header:
    teaser: /assets/2020/wechaty-robot/header.jpg
 ---
 
+<!-- markdownlint-disable -->
 > 作者: [DevoZou](https://github.com/zoudingyi/)
 > Code: [Github](https://github.com/zoudingyi/wechaty-robot)
 
@@ -17,6 +18,7 @@ header:
 [![](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ### 背景
+
 女朋友在做代购，加了很多微信好友和微信群，所以每天会有很多人前来咨询商品信息以及商品价格，因此想做一个管理机器人，用于自动回复消息、群管理以及自动添加好友，以及用户发送商品关键词能够自动回复相应商品信息。
 
 <!--more-->
@@ -46,9 +48,11 @@ header:
 |-- package.json
 ```
 ### 依赖
+
 wechaty：wechaty 核心库<br />wechaty-puppet-padplus：wechaty的ipad协议实现
 
 ### 代码介绍
+
 ```javascript
 // init
 const bot = new Wechaty({
@@ -78,6 +82,7 @@ bot
 ### 本地运行
 
 1. 克隆项目
+
 ```shell
 git clone https://github.com/zoudingyi/wechaty-robot.git
 
@@ -85,20 +90,25 @@ cd wechaty-robot
 ```
 
 2. 安装依赖
+
 ```shell
 npm install
 ```
 
 3. 启动项目
+
 ```shell
 npm run serve
 ```
+
 ### 使用
+
 修改`config`配置
 
     打开`src/config.js` 文件，将里面的配置改为自己的。然后就可以运行了
 
 ### 效果图
+
 ![效果图](/assets/2020/wechaty-robot/chat.png)
 
 ### 致谢
