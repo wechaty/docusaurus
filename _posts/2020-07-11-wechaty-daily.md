@@ -10,7 +10,6 @@ header:
    teaser: /assets/2020/wechaty-daily/daily.png
 ---
 
-<!-- markdownlint-disable -->
 > 作者: [zzhoouxin](https://github.com/zzhoouxin/)
 > Code: [Github](https://github.com/zzhoouxin/wechaty-bot)
 
