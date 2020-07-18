@@ -16,6 +16,8 @@
 官网：[https://isrc.iscas.ac.cn/summer2020](https://isrc.iscas.ac.cn/summer2020) 官方新闻：[http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html](http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html)
 本项目 [基于python-wechaty的群聊助手机器人] 系 暑期2020 支持的开源项目。
 
+<!--more-->
+
 ## [基于python-wechaty的群聊助手机器人]具体计划
 
 - 导师：吴京京
