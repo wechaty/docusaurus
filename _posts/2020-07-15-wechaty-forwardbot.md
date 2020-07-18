@@ -7,10 +7,9 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
 header:
-   teaser: /assets/2020/wechaty-forwardBot/header.jpg
+   teaser: /assets/2020/wechaty-forwardbot/header.jpg
 ---
 
-<!-- markdownlint-disable -->
 > 作者: [xiaok](https://github.com/22528850)
 > Code: [Github](https://github.com/22528850/wechaty-forwardBot)
 
