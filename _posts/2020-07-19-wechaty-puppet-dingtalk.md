@@ -4,7 +4,7 @@
  author: jihuayu
  categories: project
  header:
-    teaser: /assets/2020/wechaty-puppet-dingtalk/logo.jpeg
+    teaser: /assets/2020/wechaty-puppet-dingtalk/logo.png
 ---
 > Author: [@jihuayu](https://github.com/jihuayu)
 > Code: [@jihuayu/wechaty-puppet-dingtalk](https://github.com/jihuayu/wechaty-puppet-dingtalk)
