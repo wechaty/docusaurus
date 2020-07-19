@@ -823,6 +823,21 @@ kxz18:
       icon: "fas fa-fw fa-link"
       url: "http://kxz18.github.io/"
 
+univerone:
+  name        : "univerone"
+  bio         : "I am new to computer science,and I want to be a professional researcher."
+  avatar      : "https://avatars0.githubusercontent.com/u/35693452?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/univerone"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:univerone@outlook.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://blog.univerone.com"  
+      
 godkillerxiao:
   name        : "MrZilinXiao"
   bio         : "Maybe an AI researcher"
@@ -837,3 +852,4 @@ godkillerxiao:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://mrxiao.net/"
+
