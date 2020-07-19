@@ -20,15 +20,15 @@ header:
 ### 背景
 
 运营群需要有价值的内容，才能把用户留住。但是自己又懒得搞这些内容
-<br>
+<br />
 所以最好就是,直接把别人群有价值的内容转发到自己群
-<br>
+<br />
 既能偷懒，还能留住用户，岂不美哉？
 
 ### 功能
 
 判断n个群里面是否存在xxx关键词
-<br>
+<br />
 是则转发至自己的n个群
 
 ### 逻辑
@@ -98,7 +98,7 @@ node index.js
 ### 致谢
 
 感谢Wechaty团队提供微信机器人SDK 感谢句子互动提供的iPad协议版token
-<br>
+<br />
 wechaty: https://github.com/wechaty/wechaty
-<br>
+<br />
 juzibot:https://www.juzibot.com/
