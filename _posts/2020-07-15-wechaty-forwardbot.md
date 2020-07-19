@@ -56,39 +56,6 @@ npm install
 node index.js
 ```
 
-### 开发
-
-```javascript
-.on('message',           v => {
-	let
-	from = v.from(),
-	room = v.room()
-
-	if(!room) return
-	if(v.type() == 0) return
-	if(v.type() != 7) return toRoom()
-	// 文本消息逻辑处理
-	// 是否为监听群
-	if(config.group.indexOf(room.payload.topic) < 0) return
-	
-	// 是否存在关键字
-	for (let k in config.keyWord)
-	if(v.text().indexOf(config.keyWord[k]) >= 0)
-	return toRoom()
-	
-	// 循环发送转发群
-	function toRoom()
-	{
-		for (let k in config.toGroup)
-		((k)=>{
-			setTimeout(async i => {
-				let Room = await bot.Room.find({topic: config.toGroup[k]})
-				if(Room) v.forward(Room)
-			},(Number(k)+1)*config.sstg)
-		})(k)
-	}
-})
-```
 
 ### 致谢
 
