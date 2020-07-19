@@ -38,17 +38,20 @@ header:
 ### 运行
 
 克隆项目
+
 ```shell
 git clone https://github.com/22528850/wechaty-forwardbot
 cd wechaty-forwardbot
 ```
 
 安装依赖
+
 ```shell
 npm install
 ```
 
 启动项目
+
 ```
 node index.js
 ```
