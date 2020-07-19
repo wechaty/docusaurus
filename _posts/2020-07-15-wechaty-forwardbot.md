@@ -56,7 +56,6 @@ npm install
 node index.js
 ```
 
-
 ### 致谢
 
 感谢Wechaty团队提供微信机器人SDK  
