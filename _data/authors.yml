@@ -293,6 +293,15 @@ likai:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/tlikai"
 
+willcup:
+  name        : "willcup"
+  bio         : "斜杠工程师"
+  avatar      : "https://avatars2.githubusercontent.com/u/22429697?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/runningdata"
+
 fish-ball:
   name        : "fish-ball"
   bio         : "分母为零的斜杠大龄青年程序员"
@@ -729,7 +738,7 @@ sl1673495:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sl1673495"
-   
+
 PeterZhang:
   name        : "一路向北"
   bio         : "I am a full-stack Software Engineer in Beijing."
@@ -777,3 +786,54 @@ Ray:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:121644750@qq.com"
+
+ray7551:
+  name        : "ray7551"
+  bio         : "Coder."
+  avatar      : "https://avatars0.githubusercontent.com/u/1812388?s=400&u=6d7fb7cdb384672a3bc0fd611925c1b9cdcbf5cc&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ray7551"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/ray7551"
+
+leijiahang:
+  name        : "leijiahang"
+  bio         : "I am a baby coder"
+  avatar      : "https://avatars0.githubusercontent.com/u/68017996?s=460&u=001aba78259ed16a3363fcb7e0a3e4533598f4de&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/leijiahang"
+
+kxz18:
+  name        : "kxz"
+  bio         : "Undergraduate coder in Beijing"
+  avatar      : "https://avatars3.githubusercontent.com/u/49088922?s=460&u=f8aae4e2b3b3e16a5b43c666913f3f2ebd4b0fc0&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/kxz18"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:15068701650@163.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "http://kxz18.github.io/"
+
+univerone:
+  name        : "univerone"
+  bio         : "I am new to computer science,and I want to be a professional researcher."
+  avatar      : "https://avatars0.githubusercontent.com/u/35693452?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/univerone"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:univerone@outlook.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://blog.univerone.com"      
