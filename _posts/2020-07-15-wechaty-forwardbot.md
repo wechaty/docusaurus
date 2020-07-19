@@ -89,5 +89,7 @@ node index.js
 
 ### 致谢
 
-感谢Wechaty团队提供微信机器人SDK  
-感谢句子互动提供的iPad协议版token
+感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
+感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token
+[wechaty](https://github.com/wechaty/wechaty)
+[句子互动](https://www.juzibot.com/)
