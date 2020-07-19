@@ -10,7 +10,7 @@ header:
    teaser: /assets/2020/wechaty-words-per-day-plugin-plan/header.png
 ---
 
-<!-- markdownlint-disable -->
+
 > 作者: [univerone](https://github.com/univerone/)
 > Code: [Github](https://github.com/univerone/WordsPerDay)
 <!--more-->
