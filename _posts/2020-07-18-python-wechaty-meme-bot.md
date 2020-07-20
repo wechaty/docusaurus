@@ -1,8 +1,8 @@
 ---
- title: "基于Python-wechaty建立一个斗图机器人"
- date: 2020-07-19 14:00 +0800
- author: godkillerxiao
- header:
+title: "基于Python-wechaty建立一个斗图机器人"
+date: 2020-07-19 14:00 +0800
+author: godkillerxiao
+header:
   teaser: /assets/2020/meme-bot/07-19-wechaty-meme-bot.png
 
 ---
