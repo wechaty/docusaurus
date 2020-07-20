@@ -13,7 +13,6 @@ header:
   teaser: /assets/2020/mqbot/qrcode.png 
 ---
 
-<!-- markdownlint-disable -->
 > 作者: [remainsu](https://github.com/remainsu)
 > Code: [Github](https://github.com/remainsu/qmrobot)
 
@@ -29,9 +28,9 @@ header:
 
 ## 项目使用
 
-#### 1. 目录介绍
+### 1. 目录介绍
 
-```
+```js
 .
 ├── README.md     介绍
 ├── config.js     配置文件，有token、机器人名称等
@@ -42,20 +41,20 @@ header:
 └── utils         工具类
 ```
 
-#### 2. 安装 nodejs 并确保版本在10以上
+### 2. 安装 nodejs 并确保版本在10以上
 
 ```sh
 # macos 直接使用
 brew install node
 ```
 
-#### 3. 克隆项目
+### 3. 克隆项目
 
 ```sh
-git@github.com:remainsu/qmrobot.git 
+git@github.com:remainsu/qmrobot.git
 ```
 
-#### 4. 修改config.js 中的token
+### 4. 修改config.js 中的token
 
 ```sh
 const basic = {
@@ -64,7 +63,8 @@ const basic = {
 }
 ```
 
-#### 5. 运行
+### 5. 运行
+
 ```sh
 node dtot.js
 ```
@@ -80,22 +80,20 @@ node dtot.js
 
 使用方式如下，拿快手举例
 
-#### 1. 发送复制链接
+### 1. 发送复制链接
 
 ![演示图片](/assets/2020/mqbot/fasong1.jpg)
 
-#### 2. 发送给机器人，会得到及时的返回结果，复制到浏览器即可下载
+### 2. 发送给机器人，会得到及时的返回结果，复制到浏览器即可下载
 
 ![演示图片](/assets/2020/mqbot/wancheng1.jpg)
 
 ## 最后
 
-感谢Wechaty开源项目 及 句子互动公司提供的token，为开发者带来极大便利！
+感谢[Wechaty](https://wechaty.github.io)开源项目 及 [句子互动](https://www.juzibot.com)公司提供的token，为开发者带来极大便利！
 
 还有很多可以完善的功能，例如如何快速的下载转换会后的视频，目前正在研究中。
 
 欢迎扫码加我的机器人，验证填写 “tiktok”，也欢迎将我推荐给需要的朋友，无水印下载就是这么简单。
 
 ![演示图片](/assets/2020/mqbot/ewm1.jpeg)
-
-
