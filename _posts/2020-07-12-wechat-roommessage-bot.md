@@ -13,8 +13,8 @@ header:
 > 作者: [sidny](https://github.com/sidny/)
 > Code: [Github](https://github.com/sidny/wxbot)
 
-[![](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
-[![](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
+[![chatie/wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
+[![Everything-about-Wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ### 背景
 
@@ -34,19 +34,24 @@ header:
 
 ### 功能
 
-- 咨询 ：<br/>@机器人 【咨询】你要咨询的内容<br/><br/>
+- 咨询 ：
+  @机器人 【咨询】你要咨询的内容
 
+- 回复 ：
+  @机器人 msgId:xxxxoooo
+  【回复】你要回复的内容
 
-- 回复 ：<br/>@机器人 msgId:xxxxoooo<br/>【回复】你要回复的内容<br/><br/>
-
-- 公告：<br/>@机器人 【公告】公告内容
+- 公告：
+  @机器人 【公告】公告内容
 
 ### 实现逻辑
 
 - 监听群消息，分析消息文本，使用 【】作为关键次标识，然后进行相应的消息发送
 
 ### 依赖
-wechaty：wechaty核心库<br />wechaty-puppet-padplus：wechaty的ipad协议实现
+
+wechaty：wechaty核心库
+wechaty-puppet-padplus：wechaty的ipad协议实现
 
 ### 实现过程
 
@@ -55,16 +60,19 @@ wechaty：wechaty核心库<br />wechaty-puppet-padplus：wechaty的ipad协议实
 ### 本地运行
 
 1. 克隆项目
+
 ```shell
 git clone https://github.com/sidny/wxbot.git
 ```
 
-2. 安装依赖
+1. 安装依赖
+
 ```shell
 npm install
 ```
 
-3. 启动项目
+1. 启动项目
+
 ```shell
 npm run serve
 ```
