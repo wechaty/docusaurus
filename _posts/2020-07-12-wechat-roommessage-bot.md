@@ -93,5 +93,5 @@ npm run serve
 非常感谢 [Wechaty](https://wechaty.github.io/) 团队提供微信机器人SDK，让开发者可以专注于业务代码。
 感谢 [句子互动](https://www.juzibot.com/) 提供的pad协议版token。
 
-wechaty：[https://www.juzibot.com/](https://wechaty.github.io/)
+wechaty：[https://wechaty.github.io/](https://wechaty.github.io/)
 句子互动：[https://www.juzibot.com/](https://www.juzibot.com/)
