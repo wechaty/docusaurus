@@ -738,7 +738,7 @@ sl1673495:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sl1673495"
-   
+
 PeterZhang:
   name        : "一路向北"
   bio         : "I am a full-stack Software Engineer in Beijing."
@@ -817,3 +817,32 @@ sidny:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sidny"
       
+kxz18:
+  name        : "kxz"
+  bio         : "Undergraduate coder in Beijing"
+  avatar      : "https://avatars3.githubusercontent.com/u/49088922?s=460&u=f8aae4e2b3b3e16a5b43c666913f3f2ebd4b0fc0&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/kxz18"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:15068701650@163.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "http://kxz18.github.io/"
+
+univerone:
+  name        : "univerone"
+  bio         : "I am new to computer science,and I want to be a professional researcher."
+  avatar      : "https://avatars0.githubusercontent.com/u/35693452?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/univerone"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:univerone@outlook.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://blog.univerone.com"      
