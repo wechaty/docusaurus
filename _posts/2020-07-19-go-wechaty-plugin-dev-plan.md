@@ -4,7 +4,7 @@
  author: FINCTIVE
  categories: project
  header:
-   teaser: /assets/2020/go-wechaty/2020-06-29-go-wechaty.png
+   teaser: /assets/2020/go-wechaty-plugin-soc/2020-07-21-go-wechaty.png
 ---
 > Author: [@FINCTIVE](https://github.com/finctive)
 
