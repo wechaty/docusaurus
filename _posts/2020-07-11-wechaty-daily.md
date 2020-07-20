@@ -44,20 +44,7 @@ github:[https://github.com/zzhoouxin/wechaty-bot](https://github.com/zzhoouxin/w
 - 根据关键字自动发送日报内容
 - 后续功能...(等待和小组人员讨论)
 
-### 项目成果
-
-- 日常提醒
-  ![日常提醒](https://upload-images.jianshu.io/upload_images/7078301-f10068182c7ce0a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/330)
-
-- 定时发送日报
-  ![定时发送日报](https://upload-images.jianshu.io/upload_images/7078301-4af74bb5c0ea1991.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/340)
-
-- 根据关键字发送日报内容
-  ![image.png](https://upload-images.jianshu.io/upload_images/7078301-6b92349444b82c24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/340)
-
 ### 1.项目结构
-
-![image.png](https://upload-images.jianshu.io/upload_images/7078301-b1b1b9855a417e80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/340)
 
 - bot 存放 wechaty 每个状态的回调函数
 - schecdule 定时任务-获取日报并发送
@@ -110,8 +97,6 @@ module.exports = {
   KEYWORDs:['本组','全部']
 };
 ```
-
-![image.png](https://upload-images.jianshu.io/upload_images/7078301-06e3a9ed05e322d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/340)
 
 里面的 wiki_url 是我们自己平常填写日报的 wiki 地址。如果您使用其他方式-那就具体情况具体分析
 
@@ -214,9 +199,7 @@ module.exports = (bot) => {
 - 和 [cheerio](https://github.com/cheeriojs/cheerio#readme)
 2个依赖库-主要用到请求我们日报地址 并且获取所需要的内容
 
-![wiki基础页面结构](https://upload-images.jianshu.io/upload_images/7078301-14ae5594244e7afd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/340)
-
-这个是我们 wiki 文档的项目结构-我们首先需求通过 superagent 请求访问该页面-并且通过 cheero 获取内容。当然这 2 个依赖库使用。建议先熟悉一下官方文档。下文代码做了一些兼容--
+我们首先需求通过 superagent 请求访问该页面-并且通过 cheero 获取内容。当然这 2 个依赖库使用。建议先熟悉一下官方文档。下文代码做了一些兼容--
 
 ```js
 async function collectUserContent() {
