@@ -38,7 +38,7 @@ Wechaty 合计发布了11个项目，共收到来自清华大学、北京大学�
     overflow:hidden;
 ">
 <iframe
-  src="//player.bilibili.com/player.html?aid=625978692&bvid=BV1et4y1y7a2&cid=199810616&page=13"
+  src="https://youtu.be/fMFzCexnDsY "
   width="560"
   height="315"
   frameborder="0"
@@ -51,9 +51,12 @@ Wechaty 合计发布了11个项目，共收到来自清华大学、北京大学�
     height:100%;
 "></iframe></div>
 
+你也可以在Bilibili上查看[暑期2020宣讲会](//player.bilibili.com/player.html?aid=625978692&bvid=BV1et4y1y7a2&cid=199810616&page=13)
+
 ## Wechaty 项目列表
 
-Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 项任务，并通过 issue 的方式进行每周的更新。  
+Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 项任务，并通过 issue 的方式进行每周的更新。
+全部项目在[wechaty/summer-of-code#3](https://github.com/wechaty/summer-of-code/issues/3)中进行汇总。
 如果你有看到感兴趣的项目，可以直接在对应 issue 下面找到负责对应任务的开发者。
 
 ### 多语言：为 go-wechaty 设计实现 插件体系 <https://github.com/wechaty/summer-of-code/issues/9>
@@ -136,7 +139,7 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 
 ## 暑期2020 开发计划
 
-此次暑期2020活动中，开发者分别需要在Wechaty社区内完成例行交付、在组委会提供的Gitlab中提供两个节点的代码并完成答辩，其所有成果均会以开源的形式向社区开放。
+此次暑期2020活动中，开发者分别需要在Wechaty社区内完成例行交付、向组委会提供两个节点的代码并完成答辩，其所有成果均会以开源的形式向社区开放。
 
 ### Wechaty 社区交付内容
 
