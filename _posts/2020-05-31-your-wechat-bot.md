@@ -10,8 +10,6 @@ header:
   teaser: /assets/2020/your-wechat-bot/banner.png
 ---
 
-<!-- markdownlint-disable -->
-
 > 作者: [peanut](https://github.com/isnl/)
 > Code: [Github](https://github.com/isnl/wechat-robot)
 
