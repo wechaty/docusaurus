@@ -1,6 +1,6 @@
 ---
 title: "Wechaty的新进展和‘暑期2020’破冰会会议纪实"
-author: rickyyyin98
+author: rickyyin98
 date: "2020-07-20 08:00:00 +0800"
 categories: project
 tags:
