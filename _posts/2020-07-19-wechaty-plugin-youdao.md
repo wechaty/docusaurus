@@ -7,7 +7,7 @@ tags:
   - wechaty
   - plugins
 header:
-   teaser: /assets/2020/wechaty-words-per-day-plugin-plan/header.png
+   teaser: /assets/2020/youdao-plugin/head.jpeg
 ---
 
 > 作者: [Chs97](https://github.com/chs97/)
