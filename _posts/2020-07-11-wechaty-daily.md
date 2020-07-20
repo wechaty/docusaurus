@@ -7,67 +7,67 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
 header:
-   teaser: /assets/2020/wechaty-daily/daily.png
+  teaser: /assets/2020/wechaty-daily/daily.png
 ---
 
 > 作者: [zzhoouxin](https://github.com/zzhoouxin/)
 > Code: [Github](https://github.com/zzhoouxin/wechaty-bot)
 
-[![](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
-[![](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
+[![Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
+[![Wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
-###背景
+### 背景
 
-我们日常每天都需要写日报,用来汇报今日工作内容和明日工作计划。日报内容维护在wiki里面。团队TL每天会去wiki上收集工作内容；在发送到公司大群。但是每天会有小伙伴会忘记写。 导致 TL没办法收集今日内容。很是苦恼。还有每次编写都需要去wiki挨个复制每个人的。 工作效率很低；
+我们日常每天都需要写日报,用来汇报今日工作内容和明日工作计划。日报内容维护在 wiki 里面。团队 TL 每天会去 wiki 上收集工作内容；在发送到公司大群。但是每天会有小伙伴会忘记写。 导致 TL 没办法收集今日内容。很是苦恼。还有每次编写都需要去 wiki 挨个复制每个人的。 工作效率很低；
 
 <!--more-->
 
-###思考
+### 思考
 
-之前也了解过wechaty，就想着是否可以做一个每天快下班提醒团队小伙伴，维护下工作日报。以及团队TL便捷获取团队所有日报的系统。不需要一个个复制；
+之前也了解过 wechaty，就想着是否可以做一个每天快下班提醒团队小伙伴，维护下工作日报。以及团队 TL 便捷获取团队所有日报的系统。不需要一个个复制；
 
-###项目地址
+### 项目地址
 
 github:[https://github.com/zzhoouxin/wechaty-bot](https://github.com/zzhoouxin/wechaty-bot)
 
+### 基础依赖
 
-###基础依赖
-
-- [wechaty](https://github.com/wechaty/wechaty)  --微信操作
+- [wechaty](https://github.com/wechaty/wechaty) --微信操作
 - [node-schedule](https://github.com/node-schedule/node-schedule) --定时任务
 - [superagent](https://github.com/visionmedia/superagent) --接口请求
 - [cheerio](https://github.com/cheeriojs/cheerio#readme) -- 抓取数据
 - [qrcode-terminal](https://github.com/gtanner/qrcode-terminal) --终端显示二维码
 
-###功能
+### 功能
 
 - 定时提醒组内小伙伴填写工作日报以及发送工作日报到工作群
 - 根据关键字自动发送日报内容
--  后续功能...(等待和小组人员讨论)
+- 后续功能...(等待和小组人员讨论)
 
-###项目成果
+### 项目成果
 
 - 日常提醒
-![日常提醒](https://upload-images.jianshu.io/upload_images/7078301-f10068182c7ce0a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/330)
+  ![日常提醒](https://upload-images.jianshu.io/upload_images/7078301-f10068182c7ce0a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/330)
 
 - 定时发送日报
-![定时发送日报](https://upload-images.jianshu.io/upload_images/7078301-4af74bb5c0ea1991.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/340)
+  ![定时发送日报](https://upload-images.jianshu.io/upload_images/7078301-4af74bb5c0ea1991.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/340)
 
 - 根据关键字发送日报内容
-![image.png](https://upload-images.jianshu.io/upload_images/7078301-6b92349444b82c24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/340)
+  ![image.png](https://upload-images.jianshu.io/upload_images/7078301-6b92349444b82c24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/340)
 
-###1.项目结构
+### 1.项目结构
 
 ![image.png](https://upload-images.jianshu.io/upload_images/7078301-b1b1b9855a417e80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/340)
-- bot 存放wechaty每个状态的回调函数
+
+- bot 存放 wechaty 每个状态的回调函数
 - schecdule 定时任务-获取日报并发送
 - config 基本配置-链接、群号等
 - tool 封装基础请求、公共方法
 - index.js 启动入口
 
-###1.index.js -- wechaty启动入口
+### 1.index.js -- wechaty 启动入口
 
-```
+```js
 const {Wechaty} = require('wechaty')
 const {PuppetPadplus} = require("wechaty-puppet-padplus");
 const config = require('./config')
@@ -91,11 +91,11 @@ bot
     .catch(e => console.error(e))
 ```
 
-这边使用的是[wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus#readme)基于ipad协议进行开发的；`scan login logout message`这些是Wechaty的基础回调事件。
+这边使用的是[wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus#readme)基于 ipad 协议进行开发的；`scan login logout message`这些是 Wechaty 的基础回调事件。
 
-###2.config  基础文件配置`这里面都是自己基于自己业务的参数-如果您也是用confluence wiki 那可以参考下`
+### 2.config 基础文件配置`这里面都是自己基于自己业务的参数-如果您也是用confluence wiki 那可以参考下`
 
-```
+```js
 // 配置文件
 module.exports = {
   // 每个人对应页面的ID
@@ -113,17 +113,17 @@ module.exports = {
 
 ![image.png](https://upload-images.jianshu.io/upload_images/7078301-06e3a9ed05e322d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/340)
 
-里面的wiki_url 是我们自己平常填写日报的wiki地址。如果您使用其他方式-那就具体情况具体分析
+里面的 wiki_url 是我们自己平常填写日报的 wiki 地址。如果您使用其他方式-那就具体情况具体分析
 
-###3.定时任务提醒
+### 3.定时任务提醒
 
 - 在登录后启动定时任务
 
-这边我们就使用到了- [node-schedule](https://github.com/node-schedule/node-schedule) 这个node库  当然可以配置他的启动时间。可以查看官网详细说明。
+这边我们就使用到了- [node-schedule](https://github.com/node-schedule/node-schedule) 这个 node 库 当然可以配置他的启动时间。可以查看官网详细说明。
 
-###3.1首页我们在wechaty的onlogin事件里面加入定时任务
+### 3.1 首页我们在 wechaty 的 onlogin 事件里面加入定时任务
 
-```
+```js
 const dailyRemind = require('../schedule/dailyRemind')
 const collectContent = require('../schedule/collectContent')
 /**
@@ -139,13 +139,15 @@ module.exports = bot => {
 }
 ```
 
-#####3.2创建一个定时提醒的任务
+### 3.2 创建一个定时提醒的任务
 
-- 通过[bot.Room.find(id)](https://wechaty.js.org/v/zh/api/room#room-find-query-promise-less-than-room-greater-than)找到需要提醒的群
+- 通过[bot.Room.find(id)](https://wechaty.js.org/v/zh/api/room#room-find-query-promise-less-than-room-greater-than)
+找到需要提醒的群
 
-- 在使用[announce](https://wechaty.js.org/v/zh/api/room#room-announce-text-promise-less-than-void-or-string-greater-than)创建群公告 @所有人 即可做到提醒
+- 在使用[announce](https://wechaty.js.org/v/zh/api/room#room-announce-text-promise-less-than-void-or-string-greater-than)
+创建群公告 @所有人 即可做到提醒
 
-```
+```js
 const schedule = require('./index');
 const config = require('../config');
 const utils = require('../tool/utils')
@@ -165,13 +167,13 @@ module.exports =async  function dailyRemind(bot) {
 }
 ```
 
-###4.根据关键字。发送日报内容
+## #4.根据关键字。发送日报内容
 
-- 上图中 机器人会自动提示，需要回复什么关键字。当然这一步是我们自己配置的。在config.js里面有关键字配置属性。直接看代码
+- 上图中 机器人会自动提示，需要回复什么关键字。当然这一步是我们自己配置的。在 config.js 里面有关键字配置属性。直接看代码
 
-- 机器人自动回复-就需要在`message`事件里面处理啦-[message的官方文档](https://wechaty.js.org/v/zh/api/message)
+- 机器人自动回复-就需要在`message`事件里面处理啦-[message 的官方文档](https://wechaty.js.org/v/zh/api/message)
 
-```
+```js
 // 监听对话
 const { Message } = require('wechaty');
 const config = require('../config');
@@ -205,17 +207,18 @@ module.exports = (bot) => {
 };
 ```
 
-###5.获取自己需要的信息
+### 5.获取自己需要的信息
 
-- 上文中提交到我们有`日报填写的地址`
-
-- 以及 [superagent](https://github.com/visionmedia/superagent) 、[cheerio](https://github.com/cheeriojs/cheerio#readme) 2个依赖库-主要用到请求我们日报地址 并且获取所需要的内容
+- 上文中提交到我们有日报填写的地址
+- 以及 [superagent](https://github.com/visionmedia/superagent)
+- 和 [cheerio](https://github.com/cheeriojs/cheerio#readme)
+2个依赖库-主要用到请求我们日报地址 并且获取所需要的内容
 
 ![wiki基础页面结构](https://upload-images.jianshu.io/upload_images/7078301-14ae5594244e7afd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/340)
 
-这个是我们wiki文档的项目结构-我们首先需求通过superagent请求访问该页面-并且通过cheero获取内容。当然这2个依赖库使用。建议先熟悉一下官方文档。下文代码做了一些兼容--
+这个是我们 wiki 文档的项目结构-我们首先需求通过 superagent 请求访问该页面-并且通过 cheero 获取内容。当然这 2 个依赖库使用。建议先熟悉一下官方文档。下文代码做了一些兼容--
 
-```
+```js
 async function collectUserContent() {
   let str = '';
   for (let user of config.ALL_USER_LIST) {
@@ -239,7 +242,7 @@ async function collectUserContent() {
         }
       }
     });
- 
+
    $('.wiki-content .pd7nslm').each(function (i, e) {
       let html = $(e).children();
       if (html.length === 1) {
@@ -258,13 +261,6 @@ async function collectUserContent() {
 
 至此我们一个简单的日报收集的系统机器人简单的实现了。
 
-###总结
+### 总结
 
-相信很多公司都有发送日报的要求。以上代码实现也是依赖了自己所需业务场景进行实现。通过wechaty改变了我们传统的工作流程。大大的提高了工作效率。避免很多重复行为。当然还有更多好玩有趣的功能区可以加入。希望自己可以和团队进行沟通，提高我们流程。大家可以参考以上流程。
-
-
-
-
-
-
-
+相信很多公司都有发送日报的要求。以上代码实现也是依赖了自己所需业务场景进行实现。通过 wechaty 改变了我们传统的工作流程。大大的提高了工作效率。避免很多重复行为。当然还有更多好玩有趣的功能区可以加入。希望自己可以和团队进行沟通，提高我们流程。大家可以参考以上流程。
