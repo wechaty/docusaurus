@@ -808,6 +808,15 @@ leijiahang:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/leijiahang"
 
+sidny:
+  name        : "sidny"
+  bio         : "you been watched"
+  avatar      : "https://avatars2.githubusercontent.com/u/1266905?s=460&u=e3c1cf6b99c8dc1e56a8df789cfce44bcd81ba34&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/sidny"
+      
 kxz18:
   name        : "kxz"
   bio         : "Undergraduate coder in Beijing"
