@@ -849,3 +849,12 @@ rickyyin98:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "yinbohao@juzi.bot"
+
+xiaok:
+  name       : "xiaok"
+  bio        : "I am 写代码 I am 脑壳疼 I am 是小白"
+  avatar     : "https://avatars3.githubusercontent.com/u/56892264?s=460&u=b94cb5809dff0bc5766bc88acd3b57629817271f&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/22528850"
