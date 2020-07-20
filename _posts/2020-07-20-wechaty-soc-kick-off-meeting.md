@@ -51,7 +51,9 @@ Wechaty 合计发布了11个项目，共收到来自清华大学、北京大学�
     height:100%;
 "></iframe></div>
 
-你也可以在Bilibili上查看[暑期2020宣讲会](//player.bilibili.com/player.html?aid=625978692&bvid=BV1et4y1y7a2&cid=199810616&page=13)
+你可以在Bilibili上查看[暑期2020宣讲会视频](//player.bilibili.com/player.html?aid=625978692&bvid=BV1et4y1y7a2&cid=199810616&page=13)
+
+你也可以在Google Docs上查看[暑期2020宣讲会Slide](https://docs.google.com/presentation/d/1ZLH37rQyRgChGqFCUDjA5rbVgBuRkVM4Tys-_ls0gs0/edit#slide=id.g88410f616d_1_20)
 
 ## Wechaty 项目列表
 
