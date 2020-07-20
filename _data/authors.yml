@@ -838,6 +838,21 @@ univerone:
       icon: "fas fa-fw fa-link"
       url: "https://blog.univerone.com"      
 
+Chs97:
+  name        : "Chs97"
+  bio         : "A coder. Be interested in anything."
+  avatar      : "https://avatars2.githubusercontent.com/u/12679581?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/chs97"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "chsqaq@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "http://www.hs97.cn/"      
+
 rickyyin98:
   name        : "Yinbohao"
   bio         : "Serial entrepreneur, CMO of JuziBOT."
