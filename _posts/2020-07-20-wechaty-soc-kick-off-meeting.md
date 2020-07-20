@@ -29,6 +29,7 @@ Wechaty 合计发布了11个项目，共收到来自清华大学、北京大学�
 此次 Wechaty 发布的11个项目涉及多语言、多平台、多功能三个核心主题，来自Wechaty社区的导师将和来自高校的学生开发者们一起，在三个月的时间里完成对应的开源项目。
 
 ## Wechaty 暑期2020宣讲会
+
 <div class="video-container" style="
     position: relative;
     padding-bottom:56.25%;
@@ -52,50 +53,62 @@ Wechaty 合计发布了11个项目，共收到来自清华大学、北京大学�
 
 
 ## Wechaty 项目列表
+
 Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 项任务，并通过 issue 的方式进行每周的更新。  
 如果你有看到感兴趣的项目，可以直接在对应 issue 下面找到负责对应任务的开发者。
 
 ### 多语言：为 go-wechaty 设计实现 插件体系 https://github.com/wechaty/summer-of-code/issues/9
+
 - 导师：丁小雨（ 614422099@qq.com），丁超飞（dchaofei@163.com），李博杰（silkage@silkage.net）
 - 学生开发者：林昊翰，西安电子科技大学本科生（finctive@foxmail.com）
 
 ### 多语言：Go-wechaty Github Action optimization https://github.com/wechaty/summer-of-code/issues/8
+
 - 导师：丁小雨（ 614422099@qq.com），丁超飞（dchaofei@163.com），李博杰（silkage@silkage.net）
 - 学生开发者：唐光彬，华南农业大学本科生（Tang.Packet@outlook.com）
 
 ### 多语言：Wechaty Java 移植组件开发 https://github.com/wechaty/summer-of-code/issues/4
+
 - 导师：刁政欣 阿里开发工程师 Author of Java-wechaty （diaozxin@gmail.com）
 - 学生开发者：陈炀，福州大学本科生（1184016190@qq.com）
 
 ### 多平台：基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人 https://github.com/wechaty/summer-of-code/issues/2
+
 - 导师：高原，句子互动CTO、前亚马逊工程师（gaoyuan@juzi.bot）；李佳芮，句子互动CEO、专注微信生态近10年（rui@juzi.bot）
 - 学生开发者：谢昱清，清华大学本科生（1205402283@qq.com）
 
 ### 多平台：基于开放 API 封装 Wechaty 接口下的钉钉聊天机器人 https://github.com/wechaty/summer-of-code/issues/11
+
 - 导师：高原，句子互动CTO、前亚马逊工程师（gaoyuan@juzi.bot）；李佳芮，句子互动CEO、专注微信生态近10年（rui@juzi.bot）
 - 学生开发者：杨明哲，福州大学本科生（yutinice@foxmail.com）
 
 ### 多平台：基于开放 API 封装 Wechaty 接口下的飞书聊天机器人 https://github.com/wechaty/summer-of-code/issues/12
+
 - 导师：高原，句子互动CTO、前亚马逊工程师（gaoyuan@juzi.bot）；李佳芮，句子互动CEO、专注微信生态近10年（rui@juzi.bot）
 - 学生开发者：范蕊，南开大学本科生（953299708@qq.com）
 
 ### 多平台：基于 RPA 封装 Wechaty 接口下的抖音聊天机器人 https://github.com/wechaty/summer-of-code/issues/13
+
 - 导师：尹伯昊，连续创业者，句子互动CMO（yinbohao@juzi.bot）
 - 学生开发者：王俊伟，长春工业大学本科生（863445607@qq.com）
 
 ### 多平台：基于 RPA 封装 Wechaty 接口下的快手聊天机器人 https://github.com/wechaty/summer-of-code/issues/14
+
 - 导师：尹伯昊，连续创业者，句子互动CMO（yinbohao@juzi.bot）
 - 学生开发者：毕凯乔，长春工业大学本科生（358461417@qq.com）
 
 ### 多功能：基于python-wechaty的群聊助手机器人 https://github.com/wechaty/summer-of-code/issues/6
+
 - 导师：吴京京：Wechaty Committer，Python Wechaty Author（ 1435130236@qq.com）
 - 学生开发者：孔祥哲，清华大学本科生（15068701650@163.com）
 
 ### 多功能：基于Python-wechaty建立一个斗图机器人 https://github.com/wechaty/summer-of-code/issues/7
+
 - 导师：黄纯洪，python-wechaty contributor（huangaszaq@gmail.com）
 - 学生开发者：肖子霖，四川大学本科生（me@mrxiao.net）
 
 ### 多功能：编写一个“每日一句”插件 https://github.com/wechaty/summer-of-code/issues/10
+
 - 导师：Gcaufy，20000+Star小程序框架Wepy作者、Wechaty Plugin系统设计师（gcaufy@gmail.com）
 - 学生开发者：江姗姗，北京大学硕士生（1900022730@pku.edu.cn）
 
