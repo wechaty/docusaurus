@@ -3,6 +3,7 @@
  date: 2020-07-19 14:00 +0800
  author: MrZilinXiao
  header:
+  teaser: /assets/2020/meme-bot/07-19-wechaty-meme-bot.png
 
 ---
 
@@ -29,7 +30,7 @@
 - 学生：肖子霖
 - 模块列表
 - 项目初步规划图（可能有调整）
-![image](https://upyun.mrxiao.net/img/wechaty-meme-bot.png)
+![plan](/assets/2020/meme-bot/07-19-wechaty-meme-bot.png)
   - [x] 数据库管理
   - [ ] 针对静态表情包的特征提取模块调试与开发
   - [ ] 适配K-means算法
