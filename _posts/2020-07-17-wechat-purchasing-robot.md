@@ -7,10 +7,9 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
 header:
-   teaser: /assets/2020/wechaty-robot/header.jpg
+   teaser: /assets/2020/wechat-purchasing-robot/header.jpg
 ---
 
-<!-- markdownlint-disable -->
 > 作者: [DevoZou](https://github.com/zoudingyi/)
 > Code: [Github](https://github.com/zoudingyi/wechaty-robot)
 
@@ -31,7 +30,9 @@ header:
 - [x] 群管理（拉人进群、踢人出群、@群成员）
 - [x] 发送图片、链接、名片
 
+在有人咨询商品信息的时候，比如发送有关于【香水】的话题，便自动回复有在售出的香水商品列表，包含了商品不同尺寸下的价格。
 
+![效果图](/assets/2020/wechat-purchasing-robot/sell.png)
 
 #### 结构
 
@@ -47,6 +48,7 @@ header:
 |---- index.js              # 入口文件
 |-- package.json
 ```
+
 ### 依赖
 
 wechaty：wechaty 核心库<br />wechaty-puppet-padplus：wechaty的ipad协议实现
@@ -107,10 +109,12 @@ npm run serve
 
     打开`src/config.js` 文件，将里面的配置改为自己的。然后就可以运行了
 
-### 效果图
+### 其他功能效果
 
 ![效果图](/assets/2020/wechaty-robot/chat.png)
 
 ### 致谢
 
-非常感谢Wechaty团队提供微信机器人SDK，让开发者可以专注于业务代码。<br />感谢句子互动提供的pad协议版token。
+非常感谢Wechaty团队提供微信机器人SDK，让开发者可以专注于业务代码。<br />感谢句子互动提供的pad协议版token。<br />
+wechaty: <https://wechaty.github.io/><br />
+juzibot: https://www.juzibot.com
