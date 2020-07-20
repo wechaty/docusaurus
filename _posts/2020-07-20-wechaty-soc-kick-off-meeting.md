@@ -116,7 +116,7 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 ">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Irfj7W4RYlI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-![现场合影](/assets/2020/wechaty-kick-off-meeting/group-photo.png)
+![现场合影](/assets/2020/wechaty-soc-kick-off-meeting/group-photo.png)
 
 ## 暑期2020 开发计划
 
