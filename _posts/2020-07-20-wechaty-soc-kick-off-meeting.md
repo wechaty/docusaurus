@@ -1,6 +1,6 @@
 ---
 title: "Wechaty的新进展和‘暑期2020’破冰会会议纪实"
-author: rickyyyin98
+author: rickyyin98
 date: "2020-07-20 08:00:00 +0800"
 categories: project
 tags:
@@ -37,19 +37,8 @@ Wechaty 合计发布了11个项目，共收到来自清华大学、北京大学�
     height:0;
     overflow:hidden;
 ">
-<iframe
-  src="https://youtu.be/fMFzCexnDsY "
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fMFzCexnDsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 你可以在Bilibili上查看[暑期2020宣讲会视频](//player.bilibili.com/player.html?aid=625978692&bvid=BV1et4y1y7a2&cid=199810616&page=13)
 
@@ -125,19 +114,9 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
     height:0;
     overflow:hidden;
 ">
-<iframe
-  src="https://www.youtube.com/watch?v=Irfj7W4RYlI"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Irfj7W4RYlI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+![现场合影](/assets/2020/wechaty-kick-off-meeting/group-photo.png)
 
 ## 暑期2020 开发计划
 
