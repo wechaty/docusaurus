@@ -882,3 +882,12 @@ xiaok:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/22528850"
+      
+jihuayu:
+  name       : "jihuayu"
+  bio        : "mc mod dev"
+  avatar     : "https://avatars3.githubusercontent.com/u/32858525?s=460&u=fc345be4c72189bdfd3aee87d3b7660409e5a8a6&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jihuayu"
