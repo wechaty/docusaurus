@@ -836,7 +836,19 @@ univerone:
       url: "mailto:univerone@outlook.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://blog.univerone.com"
+      url: "https://blog.univerone.com"      
+
+rickyyin98:
+  name        : "Yinbohao"
+  bio         : "Serial entrepreneur, CMO of JuziBOT."
+  avatar      : "https://avatars3.githubusercontent.com/u/24710596?s=460&u=e31ee0eac63c8f68ebcfcccfb87b7b753ac9b024&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/rickyyin98"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "yinbohao@juzi.bot"
 
 xiaok:
   name       : "xiaok"
