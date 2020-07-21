@@ -9,13 +9,14 @@
 ---
 
 > Author: [@windmemory](https://github.com/windmemory) Wechaty contributor, author of [wechaty-puppet-padchat](https://github.com/wechaty/wechaty-puppet-padchat), [wechaty-puppet-padpro](https://github.com/wechaty/wechaty-puppet-padpro), [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus). CTO of [Juzi.Bot](https://pre-angel.com/portfolios/juzibot/)
+
 > Code: [wwc-wechaty](https://github.com/windmemory/wwc-wechaty)
 
 应 [WWC(Women Who Code)](#women-who-code) 邀请，我在线上分享了如何用「Wechaty」和「微信对话开放平台」做个助理帮助回答常见问题。
 
 <!--more-->
 
-![wechaty-weixin-openai](teaser)
+![wechaty-weixin-openai][teaser]
 
 随着社会节奏的不断变快，每天，我都有越来越多的微信消息需要回复，其中不乏很多重复的问题反复找到我。作为一个程序员，都是不愿意在重复的工作中浪费自己宝贵的时间的。这次，将给大家分享如何用 Wechaty 和 OpenAI 创建一个属于你的个人助理，帮助你来处理那些重复的问题，解放你的时间。
 
@@ -66,22 +67,6 @@ bot.start()
 19:27:44 INFO PuppetPadplus start()
 19:27:47 INFO WechatyPluginContrib EventLogger heartbeat:
 19:27:48 INFO WechatyPluginContrib EventLogger scan: http://weixin.qq.com/x/QfsfuToGOs-EVGgaa-gn,2,
-▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-█ ▄▄▄▄▄ ██▄▄ ▀  ▄█▀▄█▄█ ▄▄▄▄▄ █
-█ █   █ █▀▄  █▀▄█▄██▀██ █   █ █
-█ █▄▄▄█ █▄▀ █▄▀▀▄ █▀▄ █ █▄▄▄█ █
-█▄▄▄▄▄▄▄█▄▀▄█ █ █ █▄▀ █▄▄▄▄▄▄▄█
-█▄▄▀▀▀▄▄▄█▄ █▄▄ ▄█▄▀ ▀██▀ ▄▀▀██
-█▄▀▄█▄▀▄▄▀▄▀ ▄█▀▄ ▄▀█ █ ▄▄█████
-█▄▀▀▄ ▀▄█▄  █▀██▀▄██▀ ▄  ▀█▀▀ █
-█▄██▄▀█▄█▄▄██▀██  ▄▄▀▄█▄█▄█ █▀█
-█▀ ▄█▄▀▄▀▀▄▀█▄ █  ▄▀ ▀▀▀ ▀▀ ▀▀█
-█ ▄▄█ ▄▄▄▀  ▀▄▄▀ ▀█▀ █ ▄█▄███▄█
-█▄█████▄▄▀▄▄▄▀▄ ██▄██ ▄▄▄ ▀▄▄▄█
-█ ▄▄▄▄▄ █ ▀ █▀▄   ██  █▄█  ▄▀▀█
-█ █   █ ████▄▄▀█▄ ▄█▄  ▄▄▄▀█▄▀█
-█ █▄▄▄█ █▀▄█ ▄▄  ▄█▀▄▄█     ▄▀█
-█▄▄▄▄▄▄▄█▄▄▄▄▄████▄█████▄▄█▄███
 
 19:27:48 INFO WechatyPluginContrib QRCodeTerminal Login QR Code Status: Waiting(2)
 QR Code Image URL: https://wechaty.github.io/qrcode/http%3A%2F%2Fweixin.qq.com%2Fx%2FQfsfuToGOs-EVGgaa-gn
@@ -127,7 +112,7 @@ bot.on('message', async (message: Message) => {
 
 这样，当我在群里@机器人来介绍`句子互动`或者我自己的时候，机器人就会帮我自动发送一些介绍的话术，我就可以不需要
 
-![mobile-screenshot-1](mobile-screenshot-1)
+![mobile-screenshot-1][mobile-screenshot-1]
 
 ## 实现常见问答
 
@@ -168,11 +153,11 @@ if (/句子互动/.test(message.text())) {
 
 然后在平台上创建一个机器人，我叫他`我的助理`，然后给他添加一个自定义的普通技能`助理技能`
 
-![openai-screenshot](openai-screenshot)
+![openai-screenshot][openai-screenshot]
 
 接下来，就是给技能里面添加自定义的问答了，我创建了几个，如下图：
 
-![openai-qna](openai-qna)
+![openai-qna][openai-qna]
 
 这里我遇到了一个麻烦的问题，我配置了关于`句子互动`和`技术栈`的问答，但是我发现当我问`句子互动的技术栈`的时候，匹配的是`句子互动`而不是`技术栈`，所以如上图可见，我在`句子互动`里面创建了一个**反例**。它的意思是，当问题匹配到这个相似问的时候，说明问题并不属于当前这个问答，这样就可以完美解决`句子互动的技术栈`匹配错的问题了。
 
@@ -228,7 +213,7 @@ bot.use(WechatyWeixinOpenAI({
 
 插件的使用其实非常简单，只要传入`微信对话开放平台`里面开放服务接入的`TOKEN`和`EncodingAESKey`即可，就能连接到`微信对话开放平台`了
 
-![openai-config](openai-config)
+![openai-config][openai-config]
 
 另外，大家可以看到，这个插件的配置里面还有一个叫做`preAnswerHook`的函数，这个函数的作用就如他的名字一样，是在`wechaty-weixin-openai`插件用`微信对话开放平台`的结果回复之前，调用的一个函数，可以让我们在回复之前做一些自定义的其他逻辑。
 
@@ -330,7 +315,7 @@ PS：在现场演示过程中，我们的测试了很多种的负面情绪的消
 
 ## 最后效果
 
-![final-screenshot](final-screenshot)
+![final-screenshot][final-screenshot]
 
 完整代码请见 [https://github.com/windmemory/wwc-wechaty](https://github.com/windmemory/wwc-wechaty)
 
@@ -363,7 +348,7 @@ PS：在现场演示过程中，我们的测试了很多种的负面情绪的消
 
 [微信对话开放平台](https://openai.weixin.qq.com/) 是以提供串联微信生态内外的服务流程为核心，提供全网多样的流程化服务能力。为开发者和非开发者提供完备，高效，简易的可配置服务。
 
-![openai-banner](openai-banner)
+![openai-banner][openai-banner]
 
 ## Women Who Code
 
