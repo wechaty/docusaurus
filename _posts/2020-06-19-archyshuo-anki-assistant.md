@@ -16,8 +16,6 @@ excerpt: a chatbot that can extract difficult Chinese words from WeChat 公众�
 
 ---
 
-<!-- markdownlint-disable -->
-
 > 作者: [Archy Will He 何魏奇](https://github.com/archywillhe/)，on and off创了八年都没有发，目前在全职做[吖奇说(Archy.sh)](https://xn--nqr.xn--fiqs8s/)这个项目。
 >
 > Github Repo: [Archy the Anki bot (吖奇说Anki助理)](https://github.com/archywillhe/archy-the-anki-bot)
@@ -35,9 +33,11 @@ Unlike English there are no spaces in Chinese. Figuring out the proper segmentat
 
 不像英文，中文并没有空格。对于还在学习汉字的人来说，很多时候分词是一件令人费解的事，尤其当句中含有学习者不熟悉的词与字。
 
-It has occured to me that many Chinese learners including myself would be able to perform word segmentation more efficiently if we can preview beforehand what are the difficult words in each paragraph (i.e. Chinese words we are likely not familiar with) and have each word annotated with its pinyin and some rough definition. This would also improve the whole reading experience.　
+It has occured to me that many Chinese learners including myself would be able to perform word segmentation more efficiently if we can preview beforehand what are the difficult words in each paragraph (i.e. Chinese words we are likely not familiar with) and have each word annotated with its pinyin and some rough definition. This would also improve the whole reading experience.
 
 在阅读一篇文章前，如果我能事先预览段落中有哪些难词（也就是很大机率我不熟悉的词语），以及这些词语的拼音与大致意思，我相信我（包括很多中文的学习者）将能更高效率地进行分词。这也会让整个阅读体验变得更棒。
+
+<!-- markdownlint-disable MD033 -->
 
 And it would be even nicer if there is a simple procedure that would enter everything we need to remember (i.e. the words we are not familiar with, together with their pinyin and definitions) into a system like Anki<sup>\[1\]</sup> where we can later perform active recall<sup>\[2\]</sup> and spaced repetition<sup>\[3\]</sup> to develop long-term memory for these words in an efficient manner.
 
@@ -121,7 +121,6 @@ For the current use cases, we would use the `ArticleAnalysor` to extract text fr
 
 > \*: in general from a product perspective I believe chatbot is a great I/O into the world, especially as social media apps become the new browsers.
 >
-
 
 ## Lastly 最后
 

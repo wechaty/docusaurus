@@ -9,7 +9,6 @@ tags:
 header:
   teaser: /assets/2020/sqlite-wechat/2020-03-sqlite-wechat-assistant.jpeg
 ---
-<!-- markdownlint-disable -->
 
 > 作者: [moderncrazy](https://github.com/moderncrazy)，个人开发者。首发于博客: [使用 SQLite 和 pullword 实现简易的业务助手](https://wechaty.github.io/sqlite-wechat-assistant/) 遵循 CC BY-NC-SA 3.0 CN
 
@@ -209,8 +208,8 @@ async queryStatus(bot, message, msgData) {
 
 | 小助手 |                                                              | 用户 |
 | ------ | ------------------------------------------------------------ | ---- |
-|        | @小助手 查询消息状态<br />手机号：1300000000<br />邮箱：xxx@example.com | <-   |
-| ->     | 手机号为:13000000000，邮箱为:xxx@example.com的状态如下：<br />状态:成功<br />时间:2020-03-01 12:12:00 |      |
+|        | @小助手 查询消息状态 \n 手机号：1300000000 \n 邮箱：xxx@example.com | <-   |
+| ->     | 手机号为:13000000000，邮箱为:xxx@example.com的状态如下： \n 状态:成功 \n 时间:2020-03-01 12:12:00 |      |
 
 ## 感谢
 
