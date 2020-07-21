@@ -9,7 +9,7 @@
 ---
 
 > Author: [@windmemory](https://github.com/windmemory) Wechaty contributor, author of [wechaty-puppet-padchat](https://github.com/wechaty/wechaty-puppet-padchat), [wechaty-puppet-padpro](https://github.com/wechaty/wechaty-puppet-padpro), [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus). CTO of [Juzi.Bot](https://pre-angel.com/portfolios/juzibot/)
-
+>
 > Code: [wwc-wechaty](https://github.com/windmemory/wwc-wechaty)
 
 应 [WWC(Women Who Code)](#women-who-code) 邀请，我在线上分享了如何用「Wechaty」和「微信对话开放平台」做个助理帮助回答常见问题。
