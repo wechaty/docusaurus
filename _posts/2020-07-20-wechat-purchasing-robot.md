@@ -13,8 +13,8 @@ header:
 > 作者: [DevoZou](https://github.com/zoudingyi/)
 > Code: [Github](https://github.com/zoudingyi/wechaty-robot)
 
-[![](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
-[![](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
+[![Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
+[![开源激励计划](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ### 背景
 
@@ -84,7 +84,7 @@ bot
 
 ### 本地运行
 
-1. 克隆项目
+- 克隆项目
 
 ```shell
 git clone https://github.com/zoudingyi/wechaty-robot.git
@@ -92,13 +92,13 @@ git clone https://github.com/zoudingyi/wechaty-robot.git
 cd wechaty-robot
 ```
 
-2. 安装依赖
+- 安装依赖
 
 ```shell
 npm install
 ```
 
-3. 启动项目
+- 启动项目
 
 ```shell
 npm run serve
@@ -106,9 +106,9 @@ npm run serve
 
 ### 使用
 
-- 修改`config`配置
-  - 打开`src/config.js` 文件，将里面的配置改为自己的
-  - 运行项目
+1. 打开`src/config.js` 文件
+2. 修改`config`配置
+3. 运行项目
 
 ### 其他功能效果
 
