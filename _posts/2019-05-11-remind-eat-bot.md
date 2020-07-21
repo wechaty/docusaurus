@@ -8,15 +8,14 @@ tags:
 header:
   teaser: /assets/2019/remind-eat-1.jpg
 ---
-<!-- markdownlint-disable -->
 
 > Author: [犀利豆](https://xilidou.com/) 北邮本科，University of Leicester EE 研究生，Java后端开发，目前就职知乎。
-> 
+>
 > [原文地址](https://xilidou.com/2019/05/07/wx-bot/#more)
 
 居然有人忘记吃饭？？？
 
-![](/assets/2019/remind-eat-1.jpg)
+![image](/assets/2019/remind-eat-1.jpg)
 
 为了解决这个问题，我写了一个微信机器人到点就提醒他吃饭。
 
@@ -24,7 +23,7 @@ header:
 
 [Github 地址](https://github.com/diaozxin007/remindEat)
 
-## 使用方法:
+## 使用方法
 
 ```shell
 git clone https://github.com/diaozxin007/remindEat
@@ -54,7 +53,7 @@ node remindEat.js
 
 到时候对方应该不会忘记吃饭了。
 
-![](/assets/2019/remind-eat-2.jpg)
+![image](/assets/2019/remind-eat-2.jpg)
 
 ## 实现原理：
 

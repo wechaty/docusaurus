@@ -10,7 +10,6 @@ tags:
 header:
   teaser: /assets/2020/cps-bot/qrcode.jpg
 ---
-<!-- markdownlint-disable -->
 
 > 作者: [shuangjie](https://github.com/shuangjie), a noob developer
 > Code: [Github](https://github.com/shuangjie/cps-bot)
@@ -18,28 +17,30 @@ header:
 <!-- more -->
 
 ---
-tips: if you try to use wechaty web version, you will be know it can't work, so this post show you how to use ipad version to make bot work, if you never use wechaty any version, this post also pass the web version, because it's pointless.
----
 
-## what is it
+tips: if you try to use wechaty web version, you will be know it can't work, so this post show you how to use ipad version to make bot work, if you never use wechaty any version, this post also pass the web version, because it's pointless
+
+## What is it
+
 cps-bot is a wechat bot that using wechaty to solve a lot of transfer and push work in the cps.
 
 ## Clear demand
+
 Before development, we need to clarify the requirements, that is, what do I need a robot to do
 cps-bot just need to automatically pass friend verification, send and receive messages
 so let's take a look at [wechaty](https://github.com/wechaty/wechaty) document
 
-*1.Automatically pass friend verification*
+1. Automatically pass friend verification
 
 - When someone adds a robot, pass or directly pass after judging the keyword of the verification message
 After verification, automatically reply and introduce the robot function
 
+1. Reply to product link (JD)
 
-*2.Reply to product link (JD)*
-
-- For example, reply https://item.m.jd.com/product/100008348572.html?wxa_abtest=o&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL&ad_od=share&utm_user=plusmember
+- For example, reply <https://item.m.jd.com/product/100008348572.html?wxa_abtest=o&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL&ad_od=share&utm_user=plusmember>
 
 ## before start
+
 First of all, the wechaty-puppet-padplus version used here will be very slow to install for the first time, because the installation package contains puppeter, I have also tried it successfully two or three times, and the QR code will appear after success
 If the scan code returns null (bug), close and run again
 
@@ -48,24 +49,23 @@ If the scan code returns null (bug), close and run again
 ### Create a new project
 
 ``` bash
-$ mkdir bot & cd ./bot
-$ npm init -y
+mkdir bot & cd ./bot
+npm init -y
 ```
 
 Then we install the dependency packages needed by the project
 
 ``` bash
-$ npm install --save wechaty
-$ npm install --save wechaty-puppet-padplus
-$ npm install --save qrcode-terminal
-
+npm install --save wechaty
+npm install --save wechaty-puppet-padplus
+npm install --save qrcode-terminal
 ```
 
 The preparatory work is done
 
 ### Start to code
 
-Write code according to needs，My file structure directory is like this: 
+Write code according to needs，My file structure directory is like this:
 
 - src
   - config.js
@@ -78,7 +78,7 @@ Write code according to needs，My file structure directory is like this:
 
 put our configuration params
 
-```
+```javascript
 module.exports = {
   // puppet_padplus Token
   token: "puppet_padplus_f387a9c321f178ce",
@@ -89,8 +89,7 @@ module.exports = {
 
 #### index.js
 
-
-```
+```javascript
 /**
  * wechaty-puppet-padplus index
  */
@@ -123,7 +122,7 @@ bot
 
 Friends add monitoring callback
 
-```
+```javascript
 /**
  * Friends add monitoring callback
  */
@@ -142,7 +141,7 @@ module.exports = async function onFriendShip(friendship) {
     switch (friendship.type()) {
       /**
        * step 1 New friend request
-       * to use 'request.hello()'' to get verification message 
+       * to use 'request.hello()'' to get verification message
        * Accept this request via 'request.accept ()'
        */
       case Friendship.Type.Receive:
@@ -170,7 +169,7 @@ module.exports = async function onFriendShip(friendship) {
 
 #### onMessage.js
 
-```
+```javascript
 /**
  * Message listening callback
  */
@@ -206,7 +205,7 @@ module.exports = bot => {
       let res = await requestApi(msg.text())
       // return content
       await msg.say(res)
-      
+
     } else {
       console.log("The message is not text!")
     }
@@ -244,7 +243,7 @@ function requestApi(info) {
 
 #### onScan.js
 
-```
+```javascript
 /**
  * monitor the callback when scanning the QR code
  */
@@ -260,8 +259,7 @@ module.exports = function onScan(qrcode, status) {
 
 set up your startup script in 'package.json'
 
-
-```
+```javascript
 {
   ...
 
@@ -274,10 +272,10 @@ set up your startup script in 'package.json'
 
 ```
 
-then run 
+then run
 
 ``` bash
-$ npm run start
+npm run start
 ```
 
 done
@@ -286,4 +284,4 @@ done
 
 The above code may be updated in the future, the latest code is located at:
 
-https://github.com/shuangjie/cps-bot
+<https://github.com/shuangjie/cps-bot>

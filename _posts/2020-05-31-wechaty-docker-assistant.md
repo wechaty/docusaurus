@@ -11,7 +11,6 @@ tags:
 header:
   teaser: /assets/2020/web-panel/web-head.png
 ---
-<!-- markdownlint-disable -->
 
 > 作者: [Leo_chen](https://github.com/gengchen528/)，高级前端工程师，喜欢使用node做各种项目
 
@@ -33,47 +32,56 @@ header:
 平台地址：[《智能微秘书》](https://wechat.aibotk.com/)
 
 ## 功能
-- [x] 微信每日说,定时给女朋友发送每日天气提醒，以及每日一句
 
-* 定时提醒
+* [x] 微信每日说,定时给女朋友发送每日天气提醒，以及每日一句
 
-- [x] 当天定时提醒  例："提醒 我 18:00 下班了，记得带好随身物品"
-- [x] 每天定时提醒  例："提醒 我 每天 18:00 下班了，记得带好随身物品"
-- [x] 指定日期提醒  例："提醒 我 2019-05-10 8:00 还有7天是女朋友生日了，准备一下"
-* 智能机器人
-- [x] 天行机器人
-- [x] 图灵机器人
-- [ ] 更多
+### 定时提醒
 
-* 群定时任务
-- [x] 群新闻定时发送
-- [x] 群消息定时发送
-- [ ] 更多功能等你来pr
+* [x] 当天定时提醒  例："提醒 我 18:00 下班了，记得带好随身物品"
+* [x] 每天定时提醒  例："提醒 我 每天 18:00 下班了，记得带好随身物品"
+* [x] 指定日期提醒  例："提醒 我 2019-05-10 8:00 还有7天是女朋友生日了，准备一下"
 
-* 关键词
-- [x] 关键词加好友
-- [x] 关键词加群
-- [x] 关键词回复
-- [x] 关键词事件
-  - [x] 天气查询 例："上海天气"
-  - [x] 垃圾分类 例："?香蕉皮"
-  - [x] 名人名言 例： "名人名言"
-  - [x] 老黄历查询 例： "黄历2019-6-13"
-  - [x] 姓氏起源 例： "姓陈"
-  - [x] 星座运势 例： "*双子座"
-  - [x] 神回复 例： "神回复"
-  - [x] 获取表情包 例： "表情包你好坏"
-  - [x] 获取美女图 例： "美女图"
-  - [ ] 更多待你发现
-- [x] 进群自动欢迎
-- [x] 加好友自动回复
-* 好友及群管理
-- [ ] 好友列表
-- [ ] 群列表
-- [ ] 聊天记录
-- [ ] 数据分析
-* 自动更新配置文件，无需重启
-- [x] 默认给机器人发送 ‘更新’ 触发拉取新配置文件操作，可在面板`小助手配置->关键词回复->关键词事件`进行修改关键词
+### 智能机器人
+
+* [x] 天行机器人
+* [x] 图灵机器人
+* [ ] 更多
+
+### 群定时任务
+
+* [x] 群新闻定时发送
+* [x] 群消息定时发送
+* [ ] 更多功能等你来pr
+
+### 关键词
+
+* [x] 关键词加好友
+* [x] 关键词加群
+* [x] 关键词回复
+* [x] 关键词事件
+  * [x] 天气查询 例："上海天气"
+  * [x] 垃圾分类 例："?香蕉皮"
+  * [x] 名人名言 例： "名人名言"
+  * [x] 老黄历查询 例： "黄历2019-6-13"
+  * [x] 姓氏起源 例： "姓陈"
+  * [x] 星座运势 例： "*双子座"
+  * [x] 神回复 例： "神回复"
+  * [x] 获取表情包 例： "表情包你好坏"
+  * [x] 获取美女图 例： "美女图"
+  * [ ] 更多待你发现
+* [x] 进群自动欢迎
+* [x] 加好友自动回复
+
+### 好友及群管理
+
+* [ ] 好友列表
+* [ ] 群列表
+* [ ] 聊天记录
+* [ ] 数据分析
+
+### 自动更新配置文件，无需重启
+
+* [x] 默认给机器人发送 ‘更新’ 触发拉取新配置文件操作，可在面板`小助手配置->关键词回复->关键词事件`进行修改关键词
 
 ## 技术选择
 
@@ -82,6 +90,7 @@ header:
 为了达到想要的效果，一个完整的后端平台是必不可少的，由于自己是前端开发，所以能想到的熟悉语言就是`js`了，而`js`可以拿来写后端的就是`nodejs`了，那是选择自己从0搭建一套完整的解决方案还是选择一个现成的框架去做，我也纠结了很久，最后还是确定下来使用`egg`来实现自己的后端功能。不得不说`egg`是真的很强大，它的插件和中间件功能让人眼前一亮，而且集成的很多功能可以让我专注于业务逻辑开发，而不需要考虑过多的配置。
 
 ### 前端
+
 前端首先选的就是vue和element的搭配了，毕竟日常工作用的最多，开发起来上手也快。
 
 ### 客户端
@@ -108,13 +117,13 @@ header:
 
 ![4](/assets/2020/web-panel/panel-4.png)
 
-
 ### 远程重启项目
 
 这一块起初是使用了node的`auto-reload`库来加载最新的配置信息，但是定时任务是在每次启动的时候设置的，所以这个库只能满足我一部分的需求。最后使用了`pm2`的文件监控功能，每次发送重启命令的时候，修改监控文件的内容来实现远程重启功能。
 
 pm2配置
-```
+
+```json
 {
   "apps": [
     {
@@ -132,9 +141,9 @@ pm2配置
       "watch": ["reload"], // 监控此文件来达到自动重启目的
       "watch_delay": 1000,
       "ignore_watch": ["node_modules", "logs", "wechat.config.js"],
-      "watch_options": { 
-        "followSymlinks": false 
-      } 
+      "watch_options": {
+        "followSymlinks": false
+      }
     }
   ]
 }
@@ -144,7 +153,7 @@ pm2配置
 
 `wechaty`有一个`heartbeat`事件，可以推送当前客户端登录的状态，所以实现起来也是很方便的
 
-```
+```ts
 const {sendHeartBeat} = require('../proxy/aibotk')
 
 async function onHeartBeat(str) {
@@ -160,6 +169,7 @@ module.exports = onHeartBeat
 ```
 
 ![5](/assets/2020/web-panel/panel-5.png)
+
 ### 平台与客户端的对接
 
 这里参考了开放api接口平台的模式，使用`apikey`和`apisecret`来确保通信的安全（把所有的请求参数排序后和apisecretkey做hash生成一个签名sign参数，服务器后台只需要按照规则做一次签名计算，然后和请求的签名做比较，如果相等验证通过，不相等就不通过）key与secret在注册的时候自动生成，在个人中心查看
@@ -170,7 +180,6 @@ module.exports = onHeartBeat
 
 素材库的作用是统一管理所有的文字与文件，方便不同场景下的复用。文件支持常用的图片，office等。目前是直接上传到七牛云之中
 
-
 ![7](/assets/2020/web-panel/panel-7.png)
 
 ### 客户端多平台通用(docker)
@@ -179,7 +188,7 @@ module.exports = onHeartBeat
 
 刚开始是准备使用官方提供的docker来进行构建，但是后来发现，官方提供的docker部署方式并不能达到我想要的效果，我的想法是用户直接拉取我生成的docker镜像后，直接简单配置后就可以直接对接《智能微秘书》平台。因此就开始自己编写属于自己项目的`Dockerfile`,不写不知道，一写吓一跳，遇到的问题还是蛮多的，首先采用的是`node:alpine`版本，因为这个版本构建体积最小，但是无奈这个环境无法正常安装`puppet`所需要的字体依赖等文件，没办法还是直接采用了`node:10`这个镜像。但是并没有结束，不能每次`build`镜像都重新下载依赖，所以参考了[《Node.js 基于 Docker 使用的最佳经验》](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)这篇文章的建议对`Dockerfile`文件进行了优化。最终配置文件如下：
 
-```
+```sh
 FROM node:10
 LABEL maintainer="Leo_chen <chengeng@aibotk.com>"
 WORKDIR /home/app
@@ -226,12 +235,12 @@ LABEL \
 
 如果你的wechaty项目也想运行在docker环境中，那么这个配置文件也是适合你的。现在这个Docker镜像已经发布在[Docker hub](https://hub.docker.com/r/aibotk/wechat-assistant)平台，如果想体验，直接`docker pull aibotk/wechat-assistant`即可。
 
-
 ## 部署体验
 
 首先需要注册一个账号： [https://wechat.aibotk.com/](https://wechat.aibotk.com/)
 
 ### 本地部署
+
 克隆本项目，并进入项目根目录
 
 第一步 `env.js` 文件中填入《智能微秘书》的apiKey 和 apiSecret
@@ -248,28 +257,27 @@ LABEL \
 
 #### 提前安装依赖
 
-```
+```sh
 npm i -g node-gyp
 ```
 
 如果是win平台，还需进行
 
-
-``` 
-npm i -g windows-build-tools 
+```sh
+npm i -g windows-build-tools
 ```
 
 #### 配置ipad token
 
 在`env.js`里填入你的ipadtoken即可
 
-
 ### docekr部署（推荐）
+
 镜像地址：[https://hub.docker.com/repository/docker/aibotk/wechat-assistant](https://hub.docker.com/repository/docker/aibotk/wechat-assistant)
 
 一、创建一个`env.js`，并在`env.js`中填入相关的配置参数如下
 
-```
+```js
 module.exports = {
     apiKey: '', //智能微秘书平台APIKEY （必填）
     apiSecret: '',//智能微秘书平台APISECRET （必填）
@@ -280,16 +288,15 @@ module.exports = {
 
 二、拉取镜像
 
-```
+```sh
 docker pull aibotk/wechat-assistant
 ```
 
 三、运行镜像
 
-```
+```sh
 docker run -v 绝对路径/env.js:/home/app/env.js -d  aibotk/wechat-assistant
 ```
-
 
 四、登录智能微助手平台扫码登录即可
 
