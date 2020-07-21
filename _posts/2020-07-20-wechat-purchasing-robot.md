@@ -7,7 +7,7 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
 header:
-   teaser: /assets/2020/wechat-purchasing-robot/header.jpg
+  teaser: /assets/2020/wechat-purchasing-robot/header.jpg
 ---
 
 > 作者: [DevoZou](https://github.com/zoudingyi/)
@@ -111,7 +111,7 @@ npm run serve
 
 ### 其他功能效果
 
-![效果图](/assets/2020/wechaty-robot/chat.png)
+![效果图](/assets/2020/wechat-purchasing-robot/chat.png)
 
 ### 致谢
 
