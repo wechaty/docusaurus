@@ -150,6 +150,7 @@ if (/句子互动/.test(message.text())) {
 ```
 
 如果问的问题是`句子互动的技术栈是什么？`，上面的代码就不能正确的回答上来答案了。当然，我可以通过调整两个`if`判断的顺序来解决这个问题，但是如果我有20个常见问题，这样的`if-else`写法一定有问题。除此之外，每个问题都可能有很多种不同的问法，比如说问我们公司介绍的，可能还会说：
+
 - 你们公司做什么的？
 - 介绍下你们的情况？
 - 你们做什么业务的？
@@ -163,7 +164,7 @@ if (/句子互动/.test(message.text())) {
 
 ### 配置微信对话开放平台
 
-那接下来，我们需要做的就是先注册一个`微信对话开放平台`的账号：https://openai.weixin.qq.com/
+那接下来，我们需要做的就是先注册一个`微信对话开放平台`的账号：[https://openai.weixin.qq.com](https://openai.weixin.qq.com)
 
 然后在平台上创建一个机器人，我叫他`我的助理`，然后给他添加一个自定义的普通技能`助理技能`
 
@@ -331,7 +332,7 @@ PS：在现场演示过程中，我们的测试了很多种的负面情绪的消
 
 ![final-screenshot](final-screenshot)
 
-*完整代码请见 https://github.com/windmemory/wwc-wechaty*
+完整代码请见 [https://github.com/windmemory/wwc-wechaty](https://github.com/windmemory/wwc-wechaty)
 
 ## Live Coding
 
@@ -366,7 +367,7 @@ PS：在现场演示过程中，我们的测试了很多种的负面情绪的消
 
 ## Women Who Code
 
-[Women Who Code Beijing]() 于2015年10月在北京成立，希望能够帮助和鼓励在这个城市生活和工作的 女性工程师在职业发展的道路上顺利前行。我们相信IT行业也会因为有更多的女性的加入变得更有生产力和创造力。
+[Women Who Code Beijing](https://mp.weixin.qq.com/s?__biz=MzIyMzc0NDgzMg==&mid=100000001&idx=1&sn=2cb2c65673dd989cebac1e69abad5ccd&chksm=6818c72e5f6f4e386470525349192f23c8407a77e0a628cec7dbee3e75d9704223a2ef7f2d95) 于2015年10月在北京成立，希望能够帮助和鼓励在这个城市生活和工作的 女性工程师在职业发展的道路上顺利前行。我们相信IT行业也会因为有更多的女性的加入变得更有生产力和创造力。
 
 [teaser]: /assets/2020/wechaty-weixin-openai/teaser-image.png
 [mobile-screenshot-1]: /assets/2020/wechaty-weixin-openai/mobile-screenshot-1.png
