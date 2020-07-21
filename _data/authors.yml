@@ -825,7 +825,7 @@ sidny:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sidny"
-
+      
 kxz18:
   name        : "kxz"
   bio         : "Undergraduate coder in Beijing"
