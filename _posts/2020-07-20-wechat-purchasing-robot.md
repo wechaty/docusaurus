@@ -51,7 +51,8 @@ header:
 
 ### 依赖
 
-wechaty：wechaty 核心库<br/>wechaty-puppet-padplus：wechaty的ipad协议实现
+wechaty：wechaty 核心库  
+wechaty-puppet-padplus：wechaty的ipad协议实现
 
 ### 代码介绍
 
@@ -105,9 +106,9 @@ npm run serve
 
 ### 使用
 
-修改`config`配置
-
-    打开`src/config.js` 文件，将里面的配置改为自己的。然后就可以运行了
+- 修改`config`配置
+  - 打开`src/config.js` 文件，将里面的配置改为自己的
+  - 运行项目
 
 ### 其他功能效果
 
@@ -115,6 +116,7 @@ npm run serve
 
 ### 致谢
 
-非常感谢Wechaty团队提供微信机器人SDK，让开发者可以专注于业务代码。<br/>感谢句子互动提供的pad协议版token。<br/>
-wechaty: <https://wechaty.github.io/><br/>
+非常感谢Wechaty团队提供微信机器人SDK，让开发者可以专注于业务代码。  
+感谢句子互动提供的pad协议版token。  
+wechaty: <https://wechaty.github.io/>  
 juzibot: <https://www.juzibot.com>
