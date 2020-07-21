@@ -887,7 +887,7 @@ Chs97:
       url: "chsqaq@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "http://www.hs97.cn/"      
+      url: "http://www.hs97.cn/"
 
 rickyyin98:
   name        : "Yinbohao"
@@ -909,7 +909,7 @@ xiaok:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/22528850"
-      
+
 jihuayu:
   name       : "jihuayu"
   bio        : "mc mod dev"
