@@ -24,6 +24,8 @@ header:
 
 ## Wechaty 与暑期2020
 
+![Wechaty SoC破冰会现场合影](/assets/2020/wechaty-soc-kick-off-meeting/group-photo.png)
+
 Wechaty 作为中国最大的聊天机器人开源项目，与其他数十个中国顶级开源项目一起参与“暑期2020”。
 Wechaty 合计发布了11个项目，共收到来自清华大学、北京大学、中国科学院大学、南开大学、四川大学等高校的数十份申请，并由Wechaty社区的资深Contributor作为导师，选出了11位同学进行项目开发。
 此次 Wechaty 发布的11个项目涉及多语言、多平台、多功能三个核心主题，来自Wechaty社区的导师将和来自高校的学生开发者们一起，在三个月的时间里完成对应的开源项目。
@@ -37,19 +39,8 @@ Wechaty 合计发布了11个项目，共收到来自清华大学、北京大学�
     height:0;
     overflow:hidden;
 ">
-<iframe
-  src="https://youtu.be/fMFzCexnDsY "
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fMFzCexnDsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 你可以在Bilibili上查看[暑期2020宣讲会视频](//player.bilibili.com/player.html?aid=625978692&bvid=BV1et4y1y7a2&cid=199810616&page=13)
 
@@ -125,19 +116,8 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
     height:0;
     overflow:hidden;
 ">
-<iframe
-  src="https://www.youtube.com/watch?v=Irfj7W4RYlI"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Irfj7W4RYlI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ## 暑期2020 开发计划
 

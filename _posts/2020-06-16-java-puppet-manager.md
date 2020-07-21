@@ -10,7 +10,6 @@ header:
   teaser: /assets/2020/java-puppet-manager/java-wechaty-logo.png
 ---
 
-<!-- markdownlint-disable -->
 > 作者: [redmaple1](https://github.com/redmaple1/)
 > Code: [Github](https://github.com/wechaty/java-wechaty)
 
@@ -18,12 +17,13 @@ header:
 <!-- more -->
 
 ## 前言
+
 &ensp;&ensp;&ensp;&ensp;首先，这里借用java-wechaty的maintainer犀利豆的博客介绍一下wechaty是什么，以及java版本的前世今生。
 > 犀利豆
 [终于有一个Java可以用的微信机器人了](https://xilidou.com/2020/06/03/java-wechaty/)
 
-
 ## 背景
+
 &ensp;&ensp;&ensp;&ensp;参与开发java-wechaty有一个多月的时间，在开发的过程中，不免要进行自测。在前期没有token调试不便的情况下，就想借助单测对所写代码进行验证，但是我发现想要进行单测也不是一件容易的事情。与以往 java web 开发不同，没有Spring封装好的带有上下文的test。于是，我借鉴ts版本wechaty的mock模块，实现了java-wechaty的mock puppet，专门用于测试wechaty上层代码逻辑。开心地实现完成mock puppet之后，又发现了新的问题。那就是现有java版本的wechaty在初始化puppet的时候，在代码中写死了hostie puppet，也就是图中的`GrpcPuppet`。  
 
 ![image](/assets/2020/java-puppet-manager/manager-backgroud.png)  
@@ -31,6 +31,7 @@ header:
 &ensp;&ensp;&ensp;&ensp;这样的话，我就无法初始化mock puppet了，所以我就思考能不能有一个manager来管理puppet的具体实现。有了这个想法，那么如何进行优雅的实现呢？接下来我们简单来聊聊。
 
 ## 实现思路
+
 - `PuppetManager`来管理具体的puppet实现类
 - 在wechaty中通过调用`PuppetManager`的实例化方法，初始化出需要的puppet实现
 - 可使用反射机制处理puppet和具体实现类
@@ -41,7 +42,6 @@ header:
 
 &ensp;&ensp;&ensp;&ensp;可以看到，在wechaty的`initPuppet()`方法中，不再是直接初始化`GrpcPuppet`，而是使用了`PuppetManager`的`resolveInstance()`方法拿到了初始化过的puppet实现。  
 &ensp;&ensp;&ensp;&ensp;那么`PuppetManager`具体是怎么实现的呢？其实很简单，直接看代码。  
-
 
 ```java
 const val REFLECTION_BASE_PACKAGE = "io.github.wechaty"
@@ -83,6 +83,7 @@ class PuppetManager {
 &ensp;&ensp;&ensp;&ensp;以上就是manager实例化puppet的简单实现。  
 
 ## 展望
+
 &ensp;&ensp;&ensp;&ensp;首次引入manager的版本中，我们把之前引入到wechaty sdk中的hostie puppet实现拿了出来，在sdk中仅引入puppet定义层。这样，使用者需要哪种puppet实现，自己引入即可，作为sdk就不再关心了。  
 &ensp;&ensp;&ensp;&ensp;但是这样又增添了使用者的使用门坎，不如之前仅引入sdk包就能使用方便，所以在接下来的版本中，我们还是打算在sdk中使用hostie puppet作为puppet的默认实现，如果使用者有使用其他puppet实现类的诉求，需要手动在pom中exclude掉hostie puppet的默认实现，然后引入需要的puppet实现即可。  
 
