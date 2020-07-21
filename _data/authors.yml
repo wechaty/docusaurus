@@ -807,7 +807,90 @@ leijiahang:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/leijiahang"
+sidny:
+  name        : "sidny"
+  bio         : "you been watched"
+  avatar      : "https://avatars2.githubusercontent.com/u/1266905?s=460&u=e3c1cf6b99c8dc1e56a8df789cfce44bcd81ba34&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/sidny"
+      
+kxz18:
+  name        : "kxz"
+  bio         : "Undergraduate coder in Beijing"
+  avatar      : "https://avatars3.githubusercontent.com/u/49088922?s=460&u=f8aae4e2b3b3e16a5b43c666913f3f2ebd4b0fc0&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/kxz18"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:15068701650@163.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "http://kxz18.github.io/"
 
+univerone:
+  name        : "univerone"
+  bio         : "I am new to computer science,and I want to be a professional researcher."
+  avatar      : "https://avatars0.githubusercontent.com/u/35693452?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/univerone"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:univerone@outlook.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://blog.univerone.com"
+
+Chs97:
+  name        : "Chs97"
+  bio         : "A coder. Be interested in anything."
+  avatar      : "https://avatars2.githubusercontent.com/u/12679581?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/chs97"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "chsqaq@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "http://www.hs97.cn/"      
+
+rickyyin98:
+  name        : "Yinbohao"
+  bio         : "Serial entrepreneur, CMO of JuziBOT."
+  avatar      : "https://avatars3.githubusercontent.com/u/24710596?s=460&u=e31ee0eac63c8f68ebcfcccfb87b7b753ac9b024&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/rickyyin98"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "yinbohao@juzi.bot"
+
+xiaok:
+  name       : "xiaok"
+  bio        : "I am 写代码 I am 脑壳疼 I am 是小白"
+  avatar     : "https://avatars3.githubusercontent.com/u/56892264?s=460&u=b94cb5809dff0bc5766bc88acd3b57629817271f&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/22528850"
+      
+jihuayu:
+  name       : "jihuayu"
+  bio        : "mc mod dev"
+  avatar     : "https://avatars3.githubusercontent.com/u/32858525?s=460&u=fc345be4c72189bdfd3aee87d3b7660409e5a8a6&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jihuayu"
+      
 DevoZou:
   name        : "DevoZou（邹定一）"
   bio         : "一个打杂特别勤奋的前端工程师，喜欢研究有趣的东西。"
