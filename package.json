@@ -1,6 +1,6 @@
 {
   "name": "wechaty.github.io",
-  "version": "0.2.35",
+  "version": "0.2.37",
   "description": "Wechaty Home Page",
   "main": "index.js",
   "directories": {
