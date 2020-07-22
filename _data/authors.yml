@@ -933,3 +933,18 @@ jihuayu:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jihuayu"
+
+darkli:
+  name        : "darkli(李云军)"
+  bio         : "人机对话在任务协作领域的探索者"
+  avatar      : "https://avatars0.githubusercontent.com/u/1259590?s=400&u=a6c3dc10b16958fdea219635a633de25b1a06980&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/darkli"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:lyj@teamin.cc"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.teamin.cc"
