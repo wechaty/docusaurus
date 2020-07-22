@@ -56,36 +56,47 @@ Wechaty.instance() // Global Instance
 [Wechaty插件库](https://github.com/wechaty/wechaty-plugin-contrib)
 
 ### Wechaty 基础能力插件
+
 <https://github.com/wechaty/wechaty-plugin-contrib#plugins-contrib>
 
 ### Wechaty 群管理插件
+
 <https://github.com/Gcaufy/wechaty-voteout>
 
 ### Wechaty 定时任务插件
+
 <https://github.com/Gcaufy/wechaty-schedule>
 
 ### Wechaty 群监控插件
+
 <https://github.com/wechaty/wechaty-got-kicked-out>
 
 ### Wechaty 可视化面板接入插件
+
 <https://github.com/gengchen528/wechaty-web-panel>
 
 ### Wechaty Intercom 接入插件
+
 <https://github.com/wechaty/wechaty-plugin-intercom>
 
 ### Wechaty Freshdesk 接入插件
+
 <https://github.com/wechaty/wechaty-plugin-freshdesk>
 
 ### Wechaty Qnamaker 接入插件
+
 <https://github.com/wechaty/wechaty-plugin-qnamaker>
 
 ### Wechaty 腾讯智能对话平台 接入插件
+
 <https://github.com/wechaty/wechaty-weixin-openai>
 
 ### Wechaty 有道翻译接入插件
+
 <https://github.com/chs97/wechaty-plugin-youdao>
 
 ### Wechaty CLI 插件
+
 <https://github.com/wechaty/wechaty-vorpal>
 
 ## 欢迎正在阅读的你参与其中
