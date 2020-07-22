@@ -131,17 +131,18 @@ npm test
 
 minima: <https://github.com/jekyll/minima>
 
-## Author
+## Maintainer
 
 [Huan LI](https://github.com/huan)
 ([李卓桓](http://linkedin.com/in/zixia)),
 Tencent TVP of Chatbot,
 \<zixia@zixia.net\>
 
-[![Profile of Huan LI (李卓桓) on StackOverflow](https://stackexchange.com/users/flair/265499.png)](https://stackexchange.com/users/265499)
+[Rui LI](https://github.com/lijiarui)
+(@lijiarui) Founder & CEO of Juzi.BOT
 
 ## Copyright & License
 
-* Code & Docs © 2019-now Huan LI \<zixia@zixia.net\>
+* Code & Docs © 2019-now Wechaty Contributors \<https://github.com/wechaty\>
 * Code released under the Apache-2.0 License
 * Docs released under Creative Commons
