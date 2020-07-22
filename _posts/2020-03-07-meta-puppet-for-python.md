@@ -8,7 +8,6 @@ tags:
   - python
   - socket
   - puppet   
-  
 header:
   teaser: /assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.jpg
 ---

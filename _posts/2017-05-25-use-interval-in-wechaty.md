@@ -7,8 +7,7 @@ tags:
   - code
   - api
 ---
-
-<img src="https://avatars2.githubusercontent.com/u/700550?v=3&s=88">
+![avatars2](https://avatars2.githubusercontent.com/u/700550?v=3&s=88)
 
 Author: Seabook, [@kungfu-software](https://github.com/kungfu-software), Founder of [Kungfu Software](http://kungfusoftware.net)
 

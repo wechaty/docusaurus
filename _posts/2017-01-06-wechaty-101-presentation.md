@@ -7,7 +7,6 @@ tags:
   - talk
 header:
   teaser: /assets/2017/wechaty-connect-chatbots.jpg
-
 ---
 <div class="video-container" style="
     position: relative;
