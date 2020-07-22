@@ -7,7 +7,7 @@ tags:
   - wechaty
   - plugins
 header:
-   teaser: /assets/2020/wechaty-words-per-day-plugin-plan/header.png
+  teaser: /assets/2020/wechaty-words-per-day-plugin-plan/header.png
 ---
 
 > 作者: [univerone](https://github.com/univerone/)

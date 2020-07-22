@@ -1,10 +1,9 @@
 ---
-
- title: "simple bot : python-wechaty"
- date: 2020-06-17 15:19 +0800
- author: wj-Mcat
- header:
-   teaser: /assets/2020/python-wechaty/python-wechaty-logo.png
+title: "simple bot : python-wechaty"
+date: 2020-06-17 15:19 +0800
+author: wj-Mcat
+header:
+  teaser: /assets/2020/python-wechaty/python-wechaty-logo.png
 ---
 
 > Author: [wj-Mcat](https://github.com/wj-Mcat)

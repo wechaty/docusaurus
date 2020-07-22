@@ -7,7 +7,7 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
 header:
-   teaser: /assets/2020/wechat-calc/header.jpg
+  teaser: /assets/2020/wechat-calc/header.jpg
 ---
 
 > 作者: [Ray](https://github.com/leiroc/)

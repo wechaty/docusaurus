@@ -8,8 +8,9 @@ tags:
 header:
   teaser: /assets/2017/wechaty-electron-making-your-wachaty-as-a-client-service1.jpg
 ---
-> <img src="https://avatars1.githubusercontent.com/u/33899027?s=88&v=3">
->
+
+![a](https://avatars1.githubusercontent.com/u/33899027?s=88&v=3)
+
 > 作者: [郭英旭](https://github.com/Guoyingxu)
 
 ## 初识wechaty
