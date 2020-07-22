@@ -20,6 +20,7 @@ header:
 Wechaty 的故事开始于用RPA的方式模拟登录微信，在过去的几年里，服务了数万名开发者，收获了 Github 的 8000 Star。  
 <https://github.com/wechaty/wechaty>
 我们将过去对于绝大多数人难以想象的工作量，通过数万行代码封装成了最短六行代码就可以模拟登录微信的npm包。  
+
 ```javascript
 const { Wechaty } = require('wechaty') // import { Wechaty } from 'wechaty'
 Wechaty.instance() // Global Instance
@@ -28,6 +29,7 @@ Wechaty.instance() // Global Instance
 .on('message',       message => console.log(`Message: ${message}`))
 .start()
 ```
+
 但是，对于真正的可用的微信聊天机器人，不可避免地需要用大量的逻辑来处理不同条件下的收发消息、群管理甚至和外部系统的耦合。  
 这也就意味着，即使收消息、发消息、添加好友等操作都只需要一行代码，对于一个复杂任务仍需数十行代码才能完成。  
 带着对于即插即用的期待，我们上线了完整的插件系统。  
@@ -103,6 +105,7 @@ Wechaty.instance() // Global Instance
 
 插件系统的诞生对于 Wechaty 是一个重要的里程碑，能够帮助开发者从繁琐的开发中解脱出来，更好地解决业务问题。  
 Wechaty 社区欢迎你使用插件、将你的机器人能力封装成插件、让更多开发者使用你的插件。
+
 - 直接在[Wechaty插件库](https://github.com/wechaty/wechaty-plugin-contrib)中寻找合适的插件并使用。
 - 参与Wechaty开源激励计划[Everything about Wechaty](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)，生产一个有价值的插件，Wechaty社区将为你提供一个长期有效的Token。
 - 在[Wechaty插件库](https://github.com/wechaty/wechaty-plugin-contrib)中更新你的插件，让更多开发者直接使用。
