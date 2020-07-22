@@ -133,13 +133,12 @@ minima: <https://github.com/jekyll/minima>
 
 ## Maintainer
 
-[Huan LI](https://github.com/huan)
+1. [Rui LI](https://github.com/lijiarui)
+(@lijiarui) Founder & CEO of Juzi.BOT
+1. [Huan LI](https://github.com/huan)
 ([李卓桓](http://linkedin.com/in/zixia)),
 Tencent TVP of Chatbot,
 \<zixia@zixia.net\>
-
-[Rui LI](https://github.com/lijiarui)
-(@lijiarui) Founder & CEO of Juzi.BOT
 
 ## Copyright & License
 
