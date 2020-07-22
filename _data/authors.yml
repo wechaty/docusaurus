@@ -860,7 +860,22 @@ univerone:
       url: "mailto:univerone@outlook.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://blog.univerone.com"
+      url: "https://blog.univerone.com"  
+      
+godkillerxiao:
+  name        : "MrZilinXiao"
+  bio         : "Maybe an AI researcher"
+  avatar      : "https://avatars0.githubusercontent.com/u/42504790?s=460&u=7b2cbb1582ef5255e5a572b70d4eec55b1e4781c&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/MrZilinXiao"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:me@mrxiao.net"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://mrxiao.net/"
 
 FINCTIVE:
   name        : "FINCTIVE"
