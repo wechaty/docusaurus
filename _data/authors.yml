@@ -799,6 +799,15 @@ ray7551:
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/ray7551"
 
+DevoZou:
+  name        : "DevoZou（邹定一）"
+  bio         : "一个打杂特别勤奋的前端工程师，喜欢研究有趣的东西。"
+  avatar      : "https://avatars3.githubusercontent.com/u/33066257?s=460&u=622ee7b4b6df52d6c94719938dc5147c5dd8f841&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zoudingyi"
+
 leijiahang:
   name        : "leijiahang"
   bio         : "I am a baby coder"
@@ -807,7 +816,14 @@ leijiahang:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/leijiahang"
-
+zzhoouxin:
+  name        : "zzhoouxin"
+  bio         : "A boy who loves to play"
+  avatar      : "https://avatars2.githubusercontent.com/u/21190031?s=460&u=1b0e26a69742e75ff7414fa6f1ff1712c48ba6d5&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zzhoouxin"
 sidny:
   name        : "sidny"
   bio         : "you been watched"
@@ -816,7 +832,6 @@ sidny:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sidny"
-      
 kxz18:
   name        : "kxz"
   bio         : "Undergraduate coder in Beijing"
@@ -847,6 +862,18 @@ univerone:
       icon: "fas fa-fw fa-link"
       url: "https://blog.univerone.com"
 
+FINCTIVE:
+  name        : "FINCTIVE"
+  bio         : ""
+  avatar      : "https://avatars1.githubusercontent.com/u/31786061?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/fintive"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://fintive.com"      
+
 Chs97:
   name        : "Chs97"
   bio         : "A coder. Be interested in anything."
@@ -860,7 +887,7 @@ Chs97:
       url: "chsqaq@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "http://www.hs97.cn/"      
+      url: "http://www.hs97.cn/"
 
 rickyyin98:
   name        : "Yinbohao"
@@ -882,7 +909,7 @@ xiaok:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/22528850"
-      
+
 jihuayu:
   name       : "jihuayu"
   bio        : "mc mod dev"
