@@ -144,6 +144,6 @@ Tencent TVP of Chatbot,
 
 ## Copyright & License
 
-* Code & Docs © 2019-now Wechaty Contributors \<https://github.com/wechaty\>
+* Code & Docs © 2019-now Wechaty Contributors <https://github.com/wechaty>
 * Code released under the Apache-2.0 License
 * Docs released under Creative Commons
