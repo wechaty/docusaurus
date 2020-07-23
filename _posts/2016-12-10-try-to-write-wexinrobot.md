@@ -5,6 +5,7 @@ excerpt_separator: <!--more-->
 categories: story
 tags:
   - code
+  - news
 header:
   teaser: /assets/2016/ruirui-dance.jpg
 ---

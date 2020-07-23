@@ -4,8 +4,9 @@ author: huan
 categories: announcement
 tags:
   - release
-header:
-  teaser: /assets/2020/multi-language-wechaty-beta-released/multi-language-teaser.png
+  - event
+  - news
+image: /assets/2020/multi-language-wechaty-beta-released/multi-language-teaser.png
 ---
 
 > Author: [Huan LI](https://github.com/huan), Author of Wechaty

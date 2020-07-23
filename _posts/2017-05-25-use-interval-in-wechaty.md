@@ -6,6 +6,7 @@ categories: hack
 tags:
   - code
   - api
+  - news
 ---
 ![avatars2](https://avatars2.githubusercontent.com/u/700550?v=3&s=88)
 

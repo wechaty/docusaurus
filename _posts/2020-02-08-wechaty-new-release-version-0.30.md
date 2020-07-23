@@ -4,8 +4,8 @@ author: huan
 categories: announcement
 tags:
   - release
-header:
-  teaser: /assets/2017/wechaty-sticker.jpg
+  - news
+image: /assets/2017/wechaty-sticker.jpg
 ---
 
 > Author: [Huan LI](https://github.com/huan), A Homebody ...

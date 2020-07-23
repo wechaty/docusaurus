@@ -5,6 +5,7 @@ author: lijiarui
 categories: migration
 tags:
   - code
+  - news
 header:
   teaser: /assets/2018/code-migration-en.png
 ---

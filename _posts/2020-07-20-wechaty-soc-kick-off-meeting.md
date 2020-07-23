@@ -6,8 +6,10 @@ categories: project
 tags:
   - wechaty
   - soc
-header:
-  teaser: /assets/2020/wechaty-soc-kick-off-meeting/soc.png
+  - event
+  - talk
+  - news
+image: /assets/2020/wechaty-soc-kick-off-meeting/soc.png
 ---
 
 > 作者: [Yinbohao](https://github.com/rickyyin98/)

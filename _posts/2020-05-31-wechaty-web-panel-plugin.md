@@ -8,6 +8,7 @@ tags:
   - wechaty
   - webPanel
   - plugins
+  - news
 header:
   teaser: /assets/2020/web-panel-plugin/web-head.png
 ---

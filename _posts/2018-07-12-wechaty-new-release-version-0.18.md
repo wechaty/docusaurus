@@ -5,8 +5,9 @@ date: '2018-07-12 18:14:52 +0800'
 categories: announcement
 tags:
   - release
-header:
-  teaser: /assets/2018/huan-reduce-weight.jpg
+  - news
+  - featured
+image: /assets/2018/huan-reduce-weight.jpg
 ---
 
 > Author: [Huan LI](https://github.com/huan), Machine Learning Ph.D.

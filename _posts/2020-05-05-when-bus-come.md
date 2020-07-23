@@ -6,6 +6,7 @@ categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
+  - news
 header:
   teaser: /assets/2020/when-bus-come/teaser.jpg
 ---

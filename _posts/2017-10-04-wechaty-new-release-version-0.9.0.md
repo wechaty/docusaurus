@@ -5,6 +5,7 @@ author: huan
 categories: announcement
 tags:
   - release
+  - news
 header:
   teaser: /assets/2017/huan-wechaty-new-version-0.9.0.png
 ---

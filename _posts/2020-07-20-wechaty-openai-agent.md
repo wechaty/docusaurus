@@ -1,11 +1,12 @@
 ---
- title: "用「Wechaty」和「微信对话开放平台」做个助理"
- date: 2020-07-16 12:00 +0800
- author: windmemory
- tags: 
-    - openai
- header:
-   teaser: /assets/2020/wechaty-weixin-openai/teaser-image.png
+title: "用「Wechaty」和「微信对话开放平台」做个助理"
+date: 2020-07-16 12:00 +0800
+author: windmemory
+tags: 
+  - openai
+  - talk
+  - news
+image: /assets/2020/wechaty-weixin-openai/teaser-image.png
 ---
 
 > Author: [@windmemory](https://github.com/windmemory) Wechaty contributor, author of [wechaty-puppet-padchat](https://github.com/wechaty/wechaty-puppet-padchat), [wechaty-puppet-padpro](https://github.com/wechaty/wechaty-puppet-padpro), [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus). CTO of [Juzi.Bot](https://pre-angel.com/portfolios/juzibot/)

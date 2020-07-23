@@ -7,8 +7,8 @@ tags:
   - open source
   - devops
   - npm
-header:
-  teaser: /assets/2019/chatie-devops-toolset.gif
+  - news
+image: /assets/2019/chatie-devops-toolset.gif
 ---
 
 > Author: [huan](https://github.com/huan/), A DevOps fan.

@@ -7,6 +7,7 @@ tags:
   - nodejs
   - wechaty
   - wechaty-puppet-padplus
+  - news
 header:
   teaser: /assets/2020/yanbot/yanbot.jpg 
 ---

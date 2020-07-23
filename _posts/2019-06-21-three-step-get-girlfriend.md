@@ -5,6 +5,7 @@ date: '2019-06-20 17:40:52 +0800'
 categories: project
 tags:
   - code
+  - news
 header:
   teaser: /assets/2019/everyday-header.png
 ---

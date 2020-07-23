@@ -4,8 +4,9 @@ author: huan
 categories: talks
 tags:
   - mvp
-header:
-  teaser: /assets/2020/azure-show/azure-show.png
+  - news
+  - talk
+image: /assets/2020/azure-show/azure-show.png
 ---
 
 > Author: [Huan LI](https://github.com/huan), Microsoft Regional Director, AI MVP, Author of Wechaty

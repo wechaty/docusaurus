@@ -1,12 +1,12 @@
 ---
 title: "使用句子秒回控制家里的台灯"
-date: 2020-04-06 05:00 +0800
 author: cr4fun
 categories: tutorial
 tags:
   - wechaty
   - iot
   - arduino
+  - news
 ---
 
 > 作者: [cr4fun](https://github.com/cr4fun)，极客、物联网专家，SDK产品经理。

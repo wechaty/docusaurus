@@ -6,6 +6,7 @@ categories: tutorial
 tags:
   - wechaty
   - SQLite
+  - news
 header:
   teaser: /assets/2020/sqlite-wechat/2020-03-sqlite-wechat-assistant.jpeg
 ---

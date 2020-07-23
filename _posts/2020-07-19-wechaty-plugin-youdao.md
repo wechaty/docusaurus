@@ -6,6 +6,7 @@ categories: npm
 tags:
   - wechaty
   - plugins
+  - news
 header:
   teaser: /assets/2020/youdao-plugin/head.jpeg
 ---

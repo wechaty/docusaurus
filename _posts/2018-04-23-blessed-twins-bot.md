@@ -5,8 +5,8 @@ date: '2018-04-23 18:14:52 +0800'
 categories: feature
 tags:
   - code
-header:
-  teaser: /assets/2018/blessed-twins-bot.png
+  - news
+image: /assets/2018/blessed-twins-bot.png
 ---
 
 > Author: [Huan LI](https://github.com/huan), Half machine half human boy.

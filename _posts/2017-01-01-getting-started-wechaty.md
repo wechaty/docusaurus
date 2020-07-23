@@ -5,8 +5,8 @@ author: lijiarui
 categories: tutorial
 tags:
   - code
-header:
-  teaser: /assets/2017/lijiarui-speech-nodejs.jpg
+  - news
+image: /assets/2017/lijiarui-speech-nodejs.jpg
 ---
 
 <div class="video-container" style="

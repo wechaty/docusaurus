@@ -5,6 +5,7 @@ author: fish-ball
 categories: event
 tags:
   - wechaty
+  - news
 header:
   teaser: /assets/2020/wechaty-subscription-bot/teaser.png
 ---

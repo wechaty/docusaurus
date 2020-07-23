@@ -5,6 +5,7 @@ author: likai
 categories: event
 tags:
   - wechaty
+  - news
 header:
   teaser: /assets/2020/chatbot-on-uniqueway/teaser.jpg
 ---

@@ -5,6 +5,7 @@ author: zhoumh1988
 categories: project
 tags:
   - analytics
+  - news
 header:
   teaser: /assets/2018/wechaty-lightbot-logo.jpg
 ---

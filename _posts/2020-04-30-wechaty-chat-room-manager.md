@@ -103,7 +103,7 @@ cnpm rebuild
 ### 3. 开始运行
 
 ```sh
-WECHATY_PUPPET_PADPLUS_TOKEN={{你的token}} npm start
+WECHATY_PUPPET_PADPLUS_TOKEN=${YOUR_TOKEN} npm start
 ```
 
 或者直接通过node来启动

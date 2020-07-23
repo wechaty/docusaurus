@@ -5,8 +5,9 @@ author: windmemory
 tags: 
   - devops
   - tool
-header:
-  teaser: /assets/2020/wonderful-wechaty-devops-tools/teaser-image.png
+  - talk
+  - news
+image: /assets/2020/wonderful-wechaty-devops-tools/teaser-image.png
 ---
 
 > Author: [@windmemory](https://github.com/windmemory) Wechaty contributor, author of [wechaty-puppet-padchat](https://github.com/wechaty/wechaty-puppet-padchat), [wechaty-puppet-padpro](https://github.com/wechaty/wechaty-puppet-padpro), [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus). CTO of [Juzi.Bot](https://pre-angel.com/portfolios/juzibot/)

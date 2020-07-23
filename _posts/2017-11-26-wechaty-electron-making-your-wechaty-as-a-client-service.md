@@ -5,6 +5,7 @@ author: guoyingxu
 categories: project
 tags:
   - code
+  - news
 header:
   teaser: /assets/2017/wechaty-electron-making-your-wachaty-as-a-client-service1.jpg
 ---
