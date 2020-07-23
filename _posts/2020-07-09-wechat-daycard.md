@@ -7,15 +7,14 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
 header:
-   teaser: /assets/2020/wechat-daycard/header.png
+  teaser: /assets/2020/wechat-daycard/header.png
 ---
 
-<!-- markdownlint-disable -->
 > 作者: [leijiahang](https://github.com/leijiahang/)
 > Code: [Github](https://github.com/leijiahang/wechat-daycard)
 
-[![](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
-[![](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
+[![wechaty badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
+[![everything about wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ### 背景
 
@@ -37,7 +36,11 @@ header:
 - 发送图片消息给用户
 
 ### 依赖
-wechaty：wechaty核心库<br />wechaty-puppet-padplus：wechaty的ipad协议实现<br />gm: 图片合成<br />axios: 发请求
+
+wechaty：wechaty核心库  
+wechaty-puppet-padplus：wechaty的ipad协议实现  
+gm: 图片合成  
+axios: 发请求  
 
 ### 实现过程
 
@@ -46,17 +49,20 @@ wechaty：wechaty核心库<br />wechaty-puppet-padplus：wechaty的ipad协议实
 ### 本地运行
 
 1. 克隆项目
+
 ```shell
 git clone g https://github.com/leijiahang/wechat-daycard
 cd wechat-daycard
 ```
 
-2. 安装依赖
+1. 安装依赖
+
 ```shell
 npm install
 ```
 
-3. 启动项目
+1. 启动项目
+
 ```shell
 node app.js
 ```
@@ -67,5 +73,5 @@ node app.js
 
 ### 致谢
 
-非常感谢Wechaty团队提供微信机器人SDK，让开发者可以专注于业务代码。<br />感谢句子互动提供的pad协议版token。
-
+非常感谢[Wechaty](https://wechaty.github.io/)团队提供微信机器人SDK，让开发者可以专注于业务代码。  
+感谢[句子互动](https://www.juzibot.com)提供的pad协议版token。

@@ -8,9 +8,8 @@ tags:
 header:
   teaser: /assets/2018/wechaty-xiaoli.jpeg
 ---
-<!-- markdownlint-disable -->
 
-> Author: [@judaschrist](https://github.com/judaschrist), Co-founder & CTO of [小理智能](https://xiaoli.ai/) 
+> Author: [@judaschrist](https://github.com/judaschrist), Co-founder & CTO of [小理智能](https://xiaoli.ai/)
 
 ![用wechaty实现智能内容机器人](/assets/2018/wechaty-xiaoli.jpeg)
 
@@ -37,7 +36,7 @@ const bot = new Wechaty({
 })
 
 bot.on('message', onMessage)
-     
+
 async function onMessage(msg) {
     let msgText = msg.text()
 
@@ -127,16 +126,19 @@ function makeSearchResponseText(json_obj) {
 }
 
 ```
+
 以上我们实现了最简单的新闻查询功能。
 
 接下来，我们希望用户能够回复数字看某条新闻的详情，这也能够通过小理的接口实现。小理对每篇新闻自动提取了摘要，我们可以将新闻的摘要存在临时变量里面，当用户输入数字的时候返回对应的结果。
 
 首先定义临时变量:
+
 ```javascript
 let preNewsList = []
 ```
 
 查询新闻时暂存这些新闻的摘要（news_abstract字段）:
+
 ```javascript
 function makeSearchResponseText(json_obj) {
     //...
@@ -149,6 +151,7 @@ function makeSearchResponseText(json_obj) {
 ```
 
 监听到数字模式，返回对应结果：
+
 ```javascript
 async function onMessage(msg) {
     let msgText = msg.text()
@@ -163,6 +166,7 @@ async function onMessage(msg) {
 
 }
 ```
+
 到此，一个简单的新闻查询机器人就大功告成啦。除了这个例子中用到的新闻标题和摘要字段，接口还提供了时间、图片、url等基本信息；我们还支持包含复杂条件组合的多关键词搜索。开发者可以用这些接口完成更加复杂的功能。
 
 ## 日报定时发送
@@ -184,6 +188,7 @@ async function sendDaily() {
     room.say(dailyText)
 }
 ```
+
 我们找到需要推送的群，往里面发送文本形式的日报。```getDaily```方法通过小理接口拿到日报数据：
 
 ```javascript
@@ -216,11 +221,13 @@ function makeDailyResponseText(json_obj) {
     return newsText
 }
 ```
+
 其中，```getDaily```方法中的```dailyUuid```变量是人工智能日报的唯一标识（更多日报主题看[这里](#daily)）。
 日报由多个section（版面）组成，每个section包含一个当日相关新闻的列表。
 回调函数```makeDailyResponseText```中，我们取日报中前5个section，每个section取前三个新闻，拼成字符串。
 
 接下来我们让机器人登录后定时调用```sendDaily```函数即可。这里我们用第三方模块[node-schedule](https://www.npmjs.com/package/node-schedule):
+
 ```javascript
 const schedule = require('node-schedule')
 
@@ -235,19 +242,22 @@ async function onLogin(user) {
 
 到这里，这个又能查新闻，又能发日报的wechaty机器人就完成啦（完整代码看[这里](https://github.com/wechaty/wechaty-getting-started/tree/1305ada4278e7d19932a2c824e5d7eae5eb41f0f/examples/third-party/xiaoli)）。
 
-## <a name="append"></a>附：如何使用小理的内容接口
+## 附：如何使用小理的内容接口
 
 以基本的资讯接口为例：用户可以指定任意关键词，小理的接口能够返回和关键词相关的最新新闻。
 
 例如，如果想要查询和"人工智能"相关的最新新闻，可以向小理的搜索接口地址```https://api.xiaoli.ai/v1/api/search/basic```发送包含如下数据的post请求：
-```
+
+```json
 {
-	"keywords": ["人工智能"],
-	"token": "45d898b459b4a739474175657556249a"
+  "keywords": ["人工智能"],
+  "token": "45d898b459b4a739474175657556249a"
 }
 ```
+
 以上代码中的[token](#token)用于验证用户身份。通过解析返回的JSON串，可以获得包含标题、URL、摘要等信息的最新相关新闻列表：
-```
+
+```json
 {
     "data": {
         "contents": [
@@ -276,20 +286,23 @@ async function onLogin(user) {
 
 更多功能请开发者们参考小理的[接口文档](http://docs.xiaoli.ai)。
 
-### <a name="token"></a>测试Token
+### 测试Token
 
 我们的系统目前属于内测阶段，尚未开放注册。调用接口需要使用验证token，为了方便大家测试，这里为大家准备了3个测试用的token：
-```
+
+```log
 45d898b459b4a739474175657556249a
 6d3b08ef9188c4d5c22739fb2f073b20
 ecefeb8778165cbdfb2bfaa66be42bfb
 ```
+
 以上token供大家测试功能使用，会有一定的频率和次数限制。
 
-### <a name="daily"></a>日报
+### 日报
 
 小理每天为近100个行业主题自动生成日报，并且支持用户自定义任意主题的日报。这里为大家准备了一些日报的dailyUuid：
-```
+
+```log
 互联网医疗日报: '60108efa-2a78-41d1-994d-cb53e0b66d2e'
 互联网社交娱乐日报: '07c3f2a1-9f2d-4e58-b324-54cd944adb17'
 互联网大数据日报: '6e442691-43b6-4e14-ae06-25089e53b9f6'

@@ -1,17 +1,15 @@
 ---
- title: "Wonderful Wechaty devops toolset"
- date: 2020-06-20 09:00 +0800
- author: windmemory
- tags: 
-    - devops
-    - tool
- header:
-   teaser: /assets/2020/wonderful-wechaty-devops-tools/teaser-image.png
+title: "Wonderful Wechaty devops toolset"
+date: 2020-06-20 09:00 +0800
+author: windmemory
+tags: 
+  - devops
+  - tool
+header:
+  teaser: /assets/2020/wonderful-wechaty-devops-tools/teaser-image.png
 ---
 
-<!-- markdownlint-disable -->
 > Author: [@windmemory](https://github.com/windmemory) Wechaty contributor, author of [wechaty-puppet-padchat](https://github.com/wechaty/wechaty-puppet-padchat), [wechaty-puppet-padpro](https://github.com/wechaty/wechaty-puppet-padpro), [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus). CTO of [Juzi.Bot](https://pre-angel.com/portfolios/juzibot/)
-
 > Code: [@chatie/semver](https://github.com/chatie/semver), [@chatie/git-scripts](https://github.com/chatie/git-scripts), [@chatie/tsconfig](https://github.com/chatie/tsconfig), [@chatie/eslint-config](https://github.com/chatie/eslint-config)
 
 Wechaty 的代码质量，是大家公认的比较高的水准。而在整个项目的搭建和发展的过程中，DevOps 工具是 Wechaty 代码质量的重要保证，这里，就和大家一起聊聊关于 Wechaty DevOps Toolset。
@@ -19,7 +17,9 @@ Wechaty 的代码质量，是大家公认的比较高的水准。而在整个项
 <!--more-->
 
 ## Wechaty DevOps family
+
 这里主要给大家介绍以下几个重要的 Wechaty DevOps 工具：
+
 - [@chatie/semver](#@chatiesemver) NPM 版本检查工具
 - [@chatie/git-scripts](#@chatiegit-scripts) Git 脚本合集
 - [@chatie/tsconfig](#@chatietsconfig) 中心化 tsconfig 配置
@@ -32,12 +32,14 @@ Wechaty 的代码质量，是大家公认的比较高的水准。而在整个项
 ![VersionIntro][version-intro]
 
 `Wechaty` 的版本控制遵循了 `Linux Kernel Version Numbering`，如上图所示，`Wechaty` 使用 minor version 的奇偶来区分当前版本是开发版还是稳定版。
+
 - 奇数版 -> 开发版 -> @next
 - 偶数版 -> 稳定版 -> @latest
 
 ### Example
 
 `package-publish-config-tag.sh` in `@chatie/git-scripts`
+
 ```shell
 #!/usr/bin/env bash
 set -e
@@ -60,6 +62,7 @@ fi
 ## @chatie/git-scripts
 
 `@chatie/git-scripts` 是一些 `git` 脚本的集合，里面主要包括下面几个非常常用的脚本：
+
 - [npm-pack-testing.sh](#npm-pack-testingsh) NPM 打包测试脚本
 - [package-publish-config-tag.sh](#package-publish-config-tagsh) NPM 自动 tag 脚本
 - [pre-push.sh](#pre-pushsh) Git push 自动检查/升版脚本
@@ -67,6 +70,7 @@ fi
 ### npm-pack-testing.sh
 
 这个脚本主要做了以下几件事情：
+
 > 1. 将代码打包成npm包格式
 > 1. 创建临时文件夹
 > 1. 以npm install的方式安装刚才的包
@@ -81,6 +85,7 @@ fi
 ### pre-push.sh
 
 这个包主要做了以下三件事情：
+
 > 1. 执行 npm lint 检查代码格式
 > 1. 如果格式无误，则升级npm版本
 > 1. 执行push
@@ -120,6 +125,7 @@ NO_HOOK=1 git push
 ### 限制
 
 也正是因为上面所述的原因，使用这个 `pre-push.sh` 脚本是有一些限制的，最明显的一个限制就是无法使用稍微复杂的 `git push` 指令，例如：
+
 ```shell
 git push -u origin very-sexy-code-change
 ```
