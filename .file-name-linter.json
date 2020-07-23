@@ -8,12 +8,14 @@
     "assets": [
       "^assets/",
       "/[0-9\\-a-z]+\\.",
-      "\\.(jpg|jpeg|png|gif|zip|pdf)$"
+      "\\.(jpg|png|gif|webp|zip|pdf|docx|doc|txt)$"
     ]
   },
   "ignore": [
-    "assets/js/viewer-js",
-    "assets/js/sidecar-gitter.js",
+    "assets/js",
+    "assets/css",
+    "assets/images",
+    "assets/developers/wechaty",
     "tests/fixtures"
   ]
 }
