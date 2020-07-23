@@ -15,7 +15,6 @@ header:
 > Author: [lmaCode](https://github.com/lmaCode)
 > Code: [early-bird-chatbot](https://github.com/lmaCode/early-bird-chatbot)
 
-
 ## 背景
 
 早鸟平台是一群硅谷在职的工程师创建的平台。受全球疫情的影响，今年的求职季变得很特殊，对于企业来说，缩减招聘需求成了一段时间的常态。对于求职者来说面试周期拉长、求职压力倍增。而早鸟作为专业的求职交流公益平台，在全球疫情蔓延，经济低迷的情况下，更应该助广大毕业生或求职者一臂之力。
