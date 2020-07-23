@@ -8,10 +8,13 @@ tags:
   - wechaty
   - job
   - intern
+header:
+  teaser: /assets/2020/early-bird-chatbot/bird.png
 ---
 
 > Author: [lmaCode](https://github.com/lmaCode)
 > Code: [early-bird-chatbot](https://github.com/lmaCode/early-bird-chatbot)
+
 
 ## 背景
 
@@ -24,6 +27,8 @@ tags:
 3. 一个你能长期获得帮助的社群，从找实习、全职到职业发展等
 
 2020的秋招马上开始了，早鸟计划扩展出刷题、项目、简历、求职、内推、面试和实习等十余个分队，每个分队涉及众多国内外名校的学生，将分别以不同的主题建群。为了更方便地维护求职信息群，急需生成一款社群管理工具。受限于部分用户无法登录`web 协议` 的wechaty。所以使用基于`iPad 协议`的wechaty-puppet-padplus来实现功能。
+
+<!--more-->
 
 > Wechaty 是一个开源的的个人号微信机器人接口，是一个使用 Typescript 构建的 Node.js 应用。支持多种微信接入方案，包括网页，ipad，ios，windows， android 等。同时支持 Linux, Windows, Darwin(OSX/Mac) 和 Docker 多个平台。
 
