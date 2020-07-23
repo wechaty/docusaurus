@@ -5,8 +5,8 @@ author: dcsan
 categories: event
 tags:
   - meetup
-header:
-  teaser: /assets/2017/dcsan-shanghai-meetup.jpg
+  - home
+image: /assets/2017/dcsan-shanghai-meetup.jpg
 ---
 
 > Author: [@dcsan](https://github.com/dcsan), making Chatbots at [RIKAI Labs](http://RIK.ai)

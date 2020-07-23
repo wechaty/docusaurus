@@ -5,8 +5,8 @@ author: fish-ball
 categories: event
 tags:
   - wechaty
-header:
-  teaser: /assets/2020/wechaty-subscription-bot/teaser.png
+  - home
+image: /assets/2020/wechaty-subscription-bot/teaser.png
 ---
 
 > 作者: [工画师](https://github.com/fish-ball)，分母为零的斜杠大龄青年程序员。

@@ -7,8 +7,8 @@ tags:
   - wechaty
   - microsoft
   - chatbot
-header:
-  teaser: /assets/2020/ms-lijiarui-interview/teaser.png
+  - home
+image: /assets/2020/ms-lijiarui-interview/teaser.png
 ---
 
 > 作者: [李佳芮](https://github.com/lijiarui)，Microsoft AI MVP, Co-founder of Juzibot, Author of [Chatbot Zero to One](https://item.jd.com/12630213.html)

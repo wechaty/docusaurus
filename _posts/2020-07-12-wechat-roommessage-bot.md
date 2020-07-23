@@ -1,13 +1,12 @@
 ---
 title: "群消息同步机器人"
-author: [@sidny](https://github.com/sidny) 
+author: sidny
 date: "2020-07-12 15:00:00 +0800"
 categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
-header:
-  teaser: /assets/2020/wechat-roommessage-bot/teaser.png
+image: /assets/2020/wechat-roommessage-bot/teaser.png
 ---
 
 > 作者: [sidny](https://github.com/sidny/)
