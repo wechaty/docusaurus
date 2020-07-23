@@ -738,7 +738,7 @@ sl1673495:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sl1673495"
-   
+
 PeterZhang:
   name        : "一路向北"
   bio         : "I am a full-stack Software Engineer in Beijing."
@@ -799,6 +799,15 @@ ray7551:
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/ray7551"
 
+DevoZou:
+  name        : "DevoZou（邹定一）"
+  bio         : "一个打杂特别勤奋的前端工程师，喜欢研究有趣的东西。"
+  avatar      : "https://avatars3.githubusercontent.com/u/33066257?s=460&u=622ee7b4b6df52d6c94719938dc5147c5dd8f841&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zoudingyi"
+
 leijiahang:
   name        : "leijiahang"
   bio         : "I am a baby coder"
@@ -807,6 +816,7 @@ leijiahang:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/leijiahang"
+
 
 yinizhilian:
   name        : "AINLPer"
@@ -819,5 +829,3 @@ yinizhilian:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:419516477@qq.com"
-
-

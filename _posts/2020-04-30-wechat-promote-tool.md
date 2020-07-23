@@ -4,7 +4,6 @@ date: 2020-04-30 10:00 +0800
 author: legendaryjesse
 tags:
    - wechaty
-
 header:
   teaser:  /assets/2020/promote-bot/banner.png
 ---

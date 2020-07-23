@@ -1,40 +1,34 @@
 ---
-
- title: "CPS chat bot"
- date: 2020-06-13 09:00 +0800
- author: wss793062366
- header:
-   teaser: /assets/2020/cps-chat-bot/goodsmsg.jpeg
+title: "CPS chat bot"
+date: 2020-06-13 09:00 +0800
+author: wss793062366
+header:
+  teaser: /assets/2020/cps-chat-bot/goodsmsg.jpeg
 ---
 
-<!-- markdownlint-disable -->
-
 > Author: [@wss793062366](https://github.com/wss793062366) your one-line bio at here
-
 > Code: [@my-padplus-bot](https://github.com/wss793062366/my-padplus-bot)
 
 ---
 tips: 使用微信群，推广电商商品及优惠券，机器人使用 wechaty-puppet-padplus.
----
 
 ## 简介
+
 推广营销机器人是一个微信助手，可以帮助推广者在自己的微信群，查询优惠商品及优惠券并转发到自己所在的微信群
 
 <!--more-->
 
 ## 需求描述
 
-
-*1.推广者启动机器人，查询商品*
+1.推广者启动机器人，查询商品
 
 - 当推广者，发送指令查询商品类目后， 微信助手通过接口查询到商品列表。
 
-
-*2.查询到的商品信息，发送到微信群*
+2.查询到的商品信息，发送到微信群
 
 - 例如, 发送
- 
-```
+
+```log
 【京东】君乐宝 涨芝士啦酸奶芝芝多莓口味 180g*12袋
 京东价：¥ 59.9
 
@@ -47,38 +41,36 @@ tips: 使用微信群，推广电商商品及优惠券，机器人使用 wechaty
 
 ### 新建项目
 
-``` 
-bash
-$ mkdir bot & cd ./bot
-$ npm init -y
+```bash
+mkdir bot & cd ./bot
+npm init -y
 ```
 
 安装项目依赖
 
-``` 
-bash
-$ npm install --save wechaty
-$ npm install --save wechaty-puppet-padplus
-$ npm install --save qrcode-terminal
+``` bash
+npm install --save wechaty
+npm install --save wechaty-puppet-padplus
+npm install --save qrcode-terminal
 
 ```
 
-
-
 ### 开始编码
 
-项目目录如下 
+项目目录如下
 
+```log
 - src
   - my-chat-bot.js
 - config
   - config.ts
+```
 
 #### config.js
 
 配置信息
 
-```
+```js
 module.exports = {
   // puppet_padplus Token
   token: "puppet_padplus_..."
@@ -87,7 +79,7 @@ module.exports = {
 
 #### my-chat-bot.js
 
-```
+```js
 /**
  * wechaty-puppet-padplus index
  */
@@ -115,11 +107,11 @@ bot.start()
 
 ```
 
-#### 查询商品
+#### 收商品指令
 
 收到查询商品指令
 
-```
+```js
 /**
  * onMessage
  */
@@ -140,7 +132,7 @@ async function onMessage (msg: Message) {
 
 #### 查询商品
 
-```
+```js
 const eliteIds: Array<Number> =
 [
   1, //好券商品,
@@ -159,7 +151,7 @@ function queryJingFenGoodsAndSendMsg(msg: Message) {
   queryJingFenGoods(eliteId).then(res => {
     var index = 0
     if (eliteIdsIndex < eliteIds.length) {
-      eliteId = eliteIds[eliteIdsIndex]; 
+      eliteId = eliteIds[eliteIdsIndex];
       eliteIdsIndex ++;
     } else {
         eliteIdsIndex = 0;
@@ -175,7 +167,7 @@ function queryJingFenGoodsAndSendMsg(msg: Message) {
         sendPromotionMsg(msg, goods, cpsInfo)
     });
     }
-    
+
   }, rej => {
     console.log('rej = ', rej);
   });
@@ -222,7 +214,7 @@ async function getCpsUrl(goodsInfo: JFGoodsInfo) {
       materialId = 'https://' + materialId;
     }
     const appId = 000000; // your app id
-    
+
     var promotionCodeReq = {
       materialId: materialId,
       siteId: appId,
@@ -281,12 +273,11 @@ function sendPromotionMsg(msg: Message, goods:JFGoodsInfo, cpsInfo: CpsInfo) {
 
 ```
 
-
 ### 试运行
 
 启动脚本 'package.json'
 
-```
+```json
 {
   ...
 
@@ -299,22 +290,23 @@ function sendPromotionMsg(msg: Message, goods:JFGoodsInfo, cpsInfo: CpsInfo) {
 
 ```
 
-运行 
+运行
 
-``` bash
-$ npm run start
+```bash
+npm run start
 ```
-
 
 ---
 
 ### 效果图
+
 ![效果图](/assets/2020/cps-chat-bot/goodsmsg.jpeg)
 
 ### 致谢
-感谢Wechaty团队。<br />感谢juzi科技提供的api-token
+
+- 感谢[Wechaty](https://wechaty.github.io)团队。
+- 感谢[句子互动](https://www.juzibot.com)提供的api-token
 
 项目链接
 
-https://github.com/wss793062366/my-padplus-bot
-
+<https://github.com/wss793062366/my-padplus-bot>

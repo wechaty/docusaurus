@@ -8,15 +8,13 @@ tags:
   - python
   - socket
   - puppet   
-  
 header:
   teaser: /assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.jpg
 ---
-<!-- markdownlint-disable -->
 
-> 作者: [Tom](https://github.com/quantumFlame)   
-代码: [MetaPuppetForPython](https://github.com/quantumFlame/MetaPuppetForPython)   
-首发于博客: [用Python写Wechaty程序](https://wechaty.github.io/meta-puppet-for-python/)   
+> 作者: [Tom](https://github.com/quantumFlame)
+代码: [MetaPuppetForPython](https://github.com/quantumFlame/MetaPuppetForPython)
+首发于博客: [用Python写Wechaty程序](https://wechaty.github.io/meta-puppet-for-python/)
 文本协议: CC BY-NC-SA 3.0 CN
 
 [![MetaPuppetForPython](/assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.jpg)](https://github.com/quantumFlame/MetaPuppetForPython)  
@@ -26,20 +24,20 @@ header:
 简介：一个支持Wechaty调用的Python框架
 
 特征：
-  * 你可以只会python
-  * 支持Wechaty全部协议，全部接口
-  * 兼容同步/异步编程
-  * 可拓展至其他app/社交平台
+
+* 你可以只会python
+* 支持Wechaty全部协议，全部接口
+* 兼容同步/异步编程
+* 可拓展至其他app/社交平台
 
 声明：作者是更加支持native的[python-wechaty](https://github.com/wechaty/python-wechaty)的哈，看好[@Huan](https://github.com/huan)和[@wj-Mcat](https://github.com/wj-Mcat)的工作！
 不过貌似开发还需要一段时间，有需要的童鞋可以暂时用MetaPuppetForPython。
 
-## Talk is cheap, show me the code!
+## Talk is cheap, show me the code
 
-#### 初级：Hello Human!
+### 初级：Hello Human
 
 > 目标：更改微信签名
-
 > 要点：你可以调用类似`a_server.change_self_signature()`的函数来主动调用Wechaty的各种接口，从而主动查找联系人，发信息等。
 你可以在`SocketServerCore`和`SweetSocketServer`中找到更多类似的函数。
 但他们其实都是只语法糖（下文会介绍原理），你也可以继承`SweetSocketServer`，然后根据自己的需要设计自己的函数。
@@ -72,10 +70,9 @@ if __name__ == '__main__':
 
 ```
 
-#### 初级：a simple bot
+### 初级：a simple bot
 
 > 目标：一个简易机器人。自动接受加人邀请，并问好`Hello Human!`。自动回复，内容为接收到信息的反序。
-
 > 要点：你可以继承`RobotBase`然后override `_process_message()` 和`_process_friend_invitation()`函数。
 这些函数在收到相关微信信息后会被自动调用，你可以把机器人自动回复的逻辑放在这个类中。
 通过这种方式，你可以处理所有的被动请求。结合`Hello Human!`的例子，你可以主动发出请求。
@@ -129,21 +126,21 @@ if __name__ == '__main__':
 
 ```
 
-#### 中级：语法糖
+### 中级：语法糖
 
 > 目标：自定义函数：发送文本给特定联系人/群聊
-
 > 要点：MetaPuppetForPython实际上是用python将ts的代码片段转发给node并编译运行(详见原理部分)，所以若已有的语法糖不能满足需求，你需要定义自己的函数。
 由于ts的代码和python其实比较相似，并且往往只需要写很少的ts的代码，主要业务代码还是python，所以自定义函数的难度应该不大。
 你可以继承`SweetSocketServer`，然后在自定义函数中调用`exec_wx_function()`或`exec_one_wx_function()`执行文本格式的ts代码。
 如果你需要使用第三方的ts库，可以在`socket_client/src`的相关代码中声明。
 
 同步代码的语法糖：
+
 ```python
 from MetaPuppet.core.SweetSocketServer import SweetSocketServer
 
 class ExtendedSocketServer(SweetSocketServer):
-    
+
     # definition for other functions/variables
     ...
 
@@ -157,14 +154,16 @@ class ExtendedSocketServer(SweetSocketServer):
             ts_code=ts_code,
             need_return=False,
         )
-    
+
 ```
+
 异步代码的语法糖(只需要在函数的定义前加上async，在调用异步函数前面加上await)：
+
 ```python
 from MetaPuppet.core.SweetSocketServer import SweetSocketServer
 
 class ExtendedSocketServer(SweetSocketServer):
-    
+
     # definition for other functions/variables
     ...
 
@@ -180,9 +179,9 @@ class ExtendedSocketServer(SweetSocketServer):
         )
 ```
 
-#### 中级：同步/异步
-> 目标：通过使用异步编程加速代码
+### 中级：同步/异步
 
+> 目标：通过使用异步编程加速代码
 > 要点：同步和异步的区别是在等待响应时前者是真的等待，后者是会缓存当前程序，执行其他异步程序，收到响应时恢复当前程序继续执行。
 需要等待的情况有：网络通信等待回复，等待其他某个进程结束，人为使用等待/睡眠等函数。
 所以，对于大多数看到这篇帖子的人而言，异步代码加速的主要是网络通信的部分。
@@ -193,6 +192,7 @@ class ExtendedSocketServer(SweetSocketServer):
 对于大部分业务代码，只是偶尔调用Wechaty函数，可以直接使用同步风格的语法糖，并不影响效率。
 
 异步：
+
 ```python
 # -*- coding: utf-8 -*-
 import threading
@@ -235,7 +235,7 @@ async def async_foo(server):
         print(rooms[0])
     else:
         print('async: rooms not found')
-        
+
 if __name__ == '__main__':
     # init
     a_bot = MyBot(name='test')
@@ -260,7 +260,9 @@ if __name__ == '__main__':
     )
 
 ```
+
 同步：
+
 ```python
 
 ...
@@ -278,7 +280,7 @@ def bar(server):
         print(contacts[0])
     else:
         print('sync: contacts not found')
-        
+
 if __name__ == '__main__':
     ...
 
@@ -290,12 +292,12 @@ if __name__ == '__main__':
     # (1) the task here is short-term and light-load
     # or (2) you have a powerful computer
     bar(a_server)
-        
+
 ```
 
-#### 中级：线程
-> 目标：通过使用多线程加速代码
+### 中级：线程
 
+> 目标：通过使用多线程加速代码
 > 要点：上文中提到，异步主要是提升io方面的效率。
 对于需要较长计算时间的代码本身，异步帮助不大。
 此时可以使用多线程来避免堵塞其他任务。
@@ -318,7 +320,7 @@ def bar(server):
         print(contacts[0])
     else:
         print('sync: contacts not found')
-        
+
 if __name__ == '__main__':
     ...
 
@@ -338,13 +340,14 @@ if __name__ == '__main__':
 
 ```
 
-#### 高级：拓展至其他app/社交平台
-> 目标：使用MetaPuppetForPython框架与web app通信
+### 高级：拓展至其他app/社交平台
 
+> 目标：使用MetaPuppetForPython框架与web app通信
 > 要点：MetaPuppetForPython将机器人本身作为服务器，将Wechaty作为客户，但其实可以有多个客户同时与机器人进行交互，可以是微博，QQ，或者网页应用等。
 你可以继承`SweetSocketServer`并override `process_socket_message()`和`process_custom_message()`以处理来自其他app的信息。
 
 服务器：
+
 ```python
 # -*- coding: utf-8 -*-
 import time
@@ -384,7 +387,7 @@ class ExtendedSocketServer(SweetSocketServer):
                 print('webgui info received', message)
                 await self.robot.process_webgui_chat_message(message, verbose=verbose)
                 pass
-                
+
 class MyBot(RobotBase):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -410,7 +413,7 @@ class MyBot(RobotBase):
     async def _process_webgui_chat_message(self, message, verbose=False):
         print('message', message)
         return None
-        
+
 if __name__ == '__main__':
     # init
     a_bot = MyBot(name='test')
@@ -431,6 +434,7 @@ if __name__ == '__main__':
 ```
 
 Web app作为客户端(示例中的任务不需要性能，可以直接用同步代码)：
+
 ```python
 import socketio
 import json
@@ -504,6 +508,7 @@ a_webgui.run()
 ```
 
 ## 原理
+
 [![MetaPuppetForPython](/assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.jpg)](https://github.com/quantumFlame/MetaPuppetForPython)  
 `MetaPuppetForPython`的核心是通过socket双向通信，实现业务逻辑(server)与第三方业务(client)的交互，包括信息的收发以及接口的调用等。
 所以，在这个框架下，与`Wechaty`的架构类比，server是`Wechaty`的TS代码，client是`Wechaty`调用的各个puppet。
@@ -513,12 +518,13 @@ a_webgui.run()
 针对`Wechaty`而言，server使用`python-socketio`，client使用`socket.io-client`，从而建立起双向异步通信。
 主要的业务逻辑在server端，使用Python控制。
 在需要调用`Wechaty`时，使用Python将文本形式的小段ts代码发送给client，client将其编译运行。
-client端包含少量的ts代码，用于编译来自server的代码，和响应微信的请求(新消息，好友请求等)，一般不需要更改。   
+client端包含少量的ts代码，用于编译来自server的代码，和响应微信的请求(新消息，好友请求等)，一般不需要更改。
 
 基于此原理，可以使用Python调用`Wechaty`的任意原生代码，所以理论上可以兼容`Wechaty`的所有协议和接口函数。
 已实现`async_exec_wx_function()`用于运行代码块，和`async_exec_one_wx_function()`用于运行单个函数。
 
 ## 安装
+
 ```bash
 git clone https://github.com/quantumFlame/MetaPuppetForPython.git
 cd MetaPuppetForPython
@@ -535,9 +541,9 @@ npm install -g typescript
 sudo apt-get install autoconf
 sudo apt-get install libtool
 
-npm install 
-# or    
-# rm -rf node_modules package-lock.json 
+npm install
+# or
+# rm -rf node_modules package-lock.json
 # npm install wechaty@latest
 # npm install wechaty-puppet-padplus@next
 # npm install qrcode-terminal
@@ -553,8 +559,8 @@ npm install
 ```bash
 # start client in one terminal
 cd socket_client
-# (before you run, you need a wechaty token and 
-# create the config.json file following 
+# (before you run, you need a wechaty token and
+# create the config.json file following
 # the example config.example.json)
 ts-node src/wechaty_actions.ts
 
@@ -563,10 +569,10 @@ python example/hello_word.py
 
 ```
 
+## Keys to remember
 
-## Keys to remember:
 * Extend `RobotBase` and modify `_process_message()` to reply to various wechat messages.
 
-* Compile your management tasks as `async_foo()` and call with `run_coroutine_in_new_thread()`. 
+* Compile your management tasks as `async_foo()` and call with `run_coroutine_in_new_thread()`.
 
 * If you don't like async, you can also run the sync version functions in new thread (see more details in `example/hello_world.py`).

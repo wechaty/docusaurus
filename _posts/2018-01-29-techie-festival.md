@@ -9,7 +9,7 @@ header:
   teaser: /assets/2018/helen-techie-festival.jpeg
 ---
 
-> <img src="https://avatars2.githubusercontent.com/u/14006826?v=3&s=88">
+![a](https://avatars2.githubusercontent.com/u/14006826?v=3&s=88)
 >
 > 作者: [@Helen](https://github.com/TingYinHelen), Lenovo
 >
