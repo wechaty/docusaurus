@@ -948,3 +948,11 @@ darkli:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://www.teamin.cc"
+lmaCode:
+  name       : "lmaCode"
+  bio        : "For a dream"
+  avatar     : "https://avatars.githubusercontent.com/u/52693821?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lmaCode"
