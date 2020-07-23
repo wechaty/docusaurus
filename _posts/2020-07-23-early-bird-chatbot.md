@@ -39,13 +39,12 @@ header:
 细节如下：
 > 为了参与开源激励计划，需要开发者填写表单，联系Juzi BOT（微信号：juzibot）或等待其主动联系均可。
 直接填写： Wechaty 开源激励计划2.0申请表 。
-
+> 
 > 在收到开源激励计划申请表和 Github 项目信息后，Juzi BOT（微信号：juzibot）将依照开源激励计划申请表中的联系方式主动联系。
 在确认开发者愿意将最终成品代码开源同时在Wechaty社区内撰写一篇博客后，将为开发者发放一个有效期 15 天的 Token 。
 开源激励计划的 Token 为 padplus 协议，目前主要支持 node.js 的开发，如果想要使用 Java / Python / Go 进行开发，可以申请 Donut Token，其针对多语言进行了优化，但需要进行付费购买。
-
+> 
 > 在提供有效期 15 天的 Token 后，我们期待开发者将 MVP （最小可行化产品）代码在 Github 中开源，并储存在一个 public repo 中。
-
 
 ## 本工具已实现功能
 
@@ -58,8 +57,9 @@ header:
 
 示例：
 回复序号或关键字获取对应服务
+
 1. 加入WeChaty群聊（或其他已配置的群聊）
-2. 求职信息
+2. 求职信息	
 3. 海外疫情
 
 如需创建群聊，请输入"创建群聊-"+群名称（例：创建群聊-求职群1）
@@ -68,7 +68,6 @@ header:
 
 ![1](/assets/2020/early-bird-chatbot/job.png)
 ![2](/assets/2020/early-bird-chatbot/covid.png)
-
 
 ## 目录结构
 
@@ -85,7 +84,7 @@ header:
 
 ## 如何使用
 
-克隆仓库代码 
+克隆仓库代码
 [Early-Bird-ChatBot](https://github.com/lmaCode/early-bird-chatbot)
 
 安装依赖
@@ -100,7 +99,7 @@ npm install
    天行 api 官网 ：[https://tianapi.com/](https://tianapi.com/)  
     注册成功后，申请以下接口：
    - [海外疫情]
-   
+
    之后请打开`superagent/index.js`，将顶部`APIKEY`改为自己天行 api 的`key`即可
 
 其他免费接口可随意申请，不想用天行的接口可以删掉对应的关键字。
@@ -110,27 +109,21 @@ npm install
 ```bash
 npm start
 ```
+
 终端会出现一个二维码，扫码登录即可。
 
 ## 展望
+
 因目前工作较忙，时间和精力所限只实现了部分功能，未来会有更多的开发者会加入到早鸟机器人的开发队列中，我们计划扩展的功能列表如下（持续更新中）：
 
-* 每日算法
-* 架构设计精讲 
-* 面试宝典
-* 硅谷新鲜事
-* 职场求生录
-* 科技日报
-* 湾区生活指南
+- 每日算法
+- 架构设计精讲
+- 面试宝典
+- 硅谷新鲜事
+- 职场求生录
+- 科技日报
+- 湾区生活指南
 
+感兴趣的小伙伴可以探索wechaty更多的功能，请参见： (<https://github.com/wechaty/wechaty-puppet-padplus>)
 
-感兴趣的小伙伴可以探索wechaty更多的功能，请参见： https://github.com/wechaty/wechaty-puppet-padplus
-
-便于查找的API列表：https://github.com/wechaty/wechaty
-
-
-
-   
-   
-   
- 
+便于查找的API列表：(<https://github.com/wechaty/wechaty>)
