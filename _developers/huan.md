@@ -2,12 +2,10 @@
 name: Huan LI (李卓桓)
 site: https://github.com/huan
 avatar: /assets/developers/huan/avatar.jpg
-bio: Author of Wechaty, Tencent TVP of Chatbot. Active angel investor focusing on Conversational AI, Serial Entrepreneur. Coder with 25+ years of programming experience.
+bio: Author of Wechaty, Tencent TVP of Chatbot. Active angel investor focusing on Conversational AI, Serial Entrepreneur with 25+ years coding experience.
 email: huan@chatie.io
 twitter: https://twitter.com/huan_us
 ---
-
-Author of Wechaty, Tencent TVP of Chatbot. Active angel investor focusing on Conversational AI, Serial Entrepreneur. Coder with 25+ years of programming experience.
 
 ## Contact
 
