@@ -124,6 +124,6 @@ npm start
 - 科技日报
 - 湾区生活指南
 
-感兴趣的小伙伴可以探索wechaty更多的功能，请参见： (<https://github.com/wechaty/wechaty-puppet-padplus>)
+感兴趣的小伙伴可以探索wechaty更多的功能，请参见:(<https://github.com/wechaty/wechaty-puppet-padplus>)
 
-便于查找的API列表：(<https://github.com/wechaty/wechaty>)
+便于查找的API列表:(<https://github.com/wechaty/wechaty>)
