@@ -7,8 +7,7 @@ tags:
   - python
   - wechaty
   - wechaty-puppet-padplus
-header:
-  teaser: /assets/2020/daily-push-wechat-robot/fake-robot.jpg
+image: /assets/2020/daily-push-wechat-robot/fake-robot.jpg
 
 ---
 

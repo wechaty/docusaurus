@@ -4,8 +4,9 @@ author: lijiarui
 categories: talks
 tags:
   - mvp
-header:
-  teaser: /assets/2020/azure-show/azure-show.png
+  - home
+  - talk
+image: /assets/2020/azure-show/azure-show.png
 ---
 
 > Author: [Rui LI](https://github.com/lijiarui), Microsoft AI MVP, Co-author of Wechaty

@@ -5,8 +5,7 @@ author: kelly-cheng
 categories: project
 tags:
   - code
-header:
-  teaser: /assets/2020/wechat-for-data-bau/wechat-reply-night.jpg
+image: /assets/2020/wechat-for-data-bau/wechat-reply-night.jpg
 ---
 
 > Author: [@KellyCheng](https://github.com/hkenter) 数据工程师，Java工程师,偶尔写写python、Node.js在医疗,医药行业打杂

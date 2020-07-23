@@ -5,8 +5,7 @@ author: judaschrist
 categories: project
 tags:
   - code
-header:
-  teaser: /assets/2018/wechaty-xiaoli.jpeg
+image: /assets/2018/wechaty-xiaoli.jpeg
 ---
 
 > Author: [@judaschrist](https://github.com/judaschrist), Co-founder & CTO of [小理智能](https://xiaoli.ai/)

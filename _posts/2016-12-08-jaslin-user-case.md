@@ -5,8 +5,7 @@ date: '2016-12-08'
 categories: story
 tags:
   - case
-header:
-  teaser: /assets/2016/jaslin-case-study.jpg
+image: /assets/2016/jaslin-case-study.jpg
 ---
 
 Author: @[JasLin](https://github.com/jaslin/), BotWave CTO, Wechaty Contributor

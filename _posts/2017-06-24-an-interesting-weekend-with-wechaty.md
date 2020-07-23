@@ -5,8 +5,8 @@ author: tingyinhelen
 categories: project
 tags:
   - code
-header:
-  teaser: /assets/2017/helen-screenshot-testing.jpg
+  - home
+image: /assets/2017/helen-screenshot-testing.jpg
 ---
 
 ![avatar](https://avatars2.githubusercontent.com/u/14006826?v=3&s=88)

@@ -6,8 +6,8 @@ categories: tutorial
 tags:
   - wechaty
   - matrix
-header:
-  teaser: /assets/2020/matrix-wechaty/2020-03-matrix-appservice-wechaty.png
+  - home
+image: /assets/2020/matrix-wechaty/2020-03-matrix-appservice-wechaty.png
 ---
 
 > 作者: [立音](https://github.com/cubesky)，个人开发者。首发于博客: [使用 Matrix 接收微信消息](https://liyin.date/2020/03/01/matrix-wechat-bridge/) 遵循 CC BY-NC-SA 3.0 CN

@@ -5,8 +5,8 @@ date: '2018-04-18 02:14:52 +0800'
 categories: npm
 tags:
   - botbuilder
-header:
-  teaser: /assets/2018/botframework.jpg
+  - home
+image: /assets/2018/botframework.jpg
 ---
 
 > Author: [Huan LI](https://github.com/huan), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003061) & [RD](https://rd.microsoft.com/en-us/huan-li), Author of `wechaty`.

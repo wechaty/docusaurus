@@ -6,8 +6,7 @@ categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
-header:
-  teaser: /assets/2020/wechat-robot-seller/chat.jpeg
+image: /assets/2020/wechat-robot-seller/chat.jpeg
 ---
 
 > 作者: [PeterZhang](https://github.com/zhangchunsheng/)

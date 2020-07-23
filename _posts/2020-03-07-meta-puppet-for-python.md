@@ -7,9 +7,9 @@ tags:
   - wechaty
   - python
   - socket
-  - puppet   
-header:
-  teaser: /assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.jpg
+  - puppet
+  - home
+image: /assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.jpg
 ---
 
 > 作者: [Tom](https://github.com/quantumFlame)
