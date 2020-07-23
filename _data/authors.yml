@@ -807,3 +807,17 @@ leijiahang:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/leijiahang"
+
+yinizhilian:
+  name        : "AINLPer"
+  bio         : "a little coder"
+  avatar      : "https://avatars1.githubusercontent.com/yinizhilian"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yinizhilian"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:419516477@qq.com"
+
+
