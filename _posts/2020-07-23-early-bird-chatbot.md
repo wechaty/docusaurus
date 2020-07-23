@@ -34,7 +34,7 @@ header:
 ## 如何获取免费 Token
 
 官方文档中提供了免费 token 的获取方式。
-[https://github.com/juzibot/Welcome/wiki/Support-Developers](https://github.com/juzibot/Welcome/wiki/Support-Developers)
+[https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 细节如下：
 > 为了参与开源激励计划，需要开发者填写表单，联系Juzi BOT（微信号：juzibot）或等待其主动联系均可。
