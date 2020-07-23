@@ -5,9 +5,8 @@ author: lijiarui
 categories: migration
 tags:
   - code
-  - news
-header:
-  teaser: /assets/2018/code-migration-zh.png
+  - home
+image: /assets/2018/code-migration-zh.png
 ---
 
 > Author: [@lijiarui](https://github.com/lijiarui) Founder of BotOrange, Author of Wechaty.

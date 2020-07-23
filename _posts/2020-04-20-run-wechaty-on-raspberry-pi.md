@@ -7,7 +7,7 @@ tags:
   - wechaty
   - iot
   - raspberrypi
-  - news
+  - home
 image: /assets/2020/runwechatyonpi/head.png
 ---
 

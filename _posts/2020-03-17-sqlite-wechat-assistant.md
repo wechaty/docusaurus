@@ -6,9 +6,8 @@ categories: tutorial
 tags:
   - wechaty
   - SQLite
-  - news
-header:
-  teaser: /assets/2020/sqlite-wechat/2020-03-sqlite-wechat-assistant.jpeg
+  - home
+image: /assets/2020/sqlite-wechat/2020-03-sqlite-wechat-assistant.jpeg
 ---
 
 > 作者: [moderncrazy](https://github.com/moderncrazy)，个人开发者。首发于博客: [使用 SQLite 和 pullword 实现简易的业务助手](https://wechaty.github.io/sqlite-wechat-assistant/) 遵循 CC BY-NC-SA 3.0 CN

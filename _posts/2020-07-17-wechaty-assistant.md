@@ -9,7 +9,7 @@ tags:
   - wechat-robot
   - teamin
   - chatbot
-  - news
+  - home
 image: /assets/2020/wechaty-teamin-chatbot/home-01.jpg
 ---
 

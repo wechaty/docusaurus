@@ -4,7 +4,7 @@ author: lijiarui
 categories: story
 tags:
   - interview
-  - news
+  - home
 ---
 
 > From: <https://www.techinasia.com/wechat-unofficial-bots> by [Eva Xiao](https://www.techinasia.com/profile/evaxiao)

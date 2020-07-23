@@ -8,9 +8,8 @@ tags:
   - wechaty
   - webPanel
   - plugins
-  - news
-header:
-  teaser: /assets/2020/web-panel-plugin/web-head.png
+  - home
+image: /assets/2020/web-panel-plugin/web-head.png
 ---
 
 > 作者: [Leo_chen](https://github.com/gengchen528/)，高级前端工程师，喜欢使用node做各种项目

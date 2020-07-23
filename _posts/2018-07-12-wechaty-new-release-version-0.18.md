@@ -5,7 +5,7 @@ date: '2018-07-12 18:14:52 +0800'
 categories: announcement
 tags:
   - release
-  - news
+  - home
   - featured
 image: /assets/2018/huan-reduce-weight.jpg
 ---

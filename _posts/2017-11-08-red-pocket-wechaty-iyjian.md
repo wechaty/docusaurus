@@ -5,8 +5,7 @@ author: iyjian
 categories: project
 tags:
   - code
-header:
-  teaser: /assets/2017/iyjian-1.png
+image: /assets/2017/iyjian-1.png
 ---
 
 > 作者: [@iyjian](https://github.com/iyjian), 半路出家伪程序员

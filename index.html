@@ -1,10 +1,10 @@
 ---
-title: Home
+title: News Updates
 layout: default
 description: Wechaty - Conversational AI RPA SDK for Chatbot Builders
 ---
 
-{% assign news_posts = site.tags['news'] %}
+{% assign home_posts = site.tags['home'] %}
 
 <div class="container">
 
@@ -12,7 +12,7 @@ description: Wechaty - Conversational AI RPA SDK for Chatbot Builders
 <div class="row remove-site-content-margin">
 
     <!-- latest post -->
-    {% assign latest_post = news_posts[0] %}
+    {% assign latest_post = home_posts[0] %}
     <div class="col-md-6">
     <div class="card border-0 mb-4 box-shadow">
     <a href="{{site.baseurl}}{{latest_post.url}}">
@@ -44,7 +44,7 @@ description: Wechaty - Conversational AI RPA SDK for Chatbot Builders
     <div class="col-md-6">
 
         <!-- second latest post -->
-        {%- assign second_post = news_posts[1] -%}
+        {%- assign second_post = home_posts[1] -%}
         <div class="mb-3 d-flex align-items-center">
                 {% if second_post.image %}
                 <div class="col-md-4">
@@ -71,7 +71,7 @@ description: Wechaty - Conversational AI RPA SDK for Chatbot Builders
             </div>
 
         <!-- third latest post -->
-        {%- assign third_post = news_posts[2] -%}
+        {%- assign third_post = home_posts[2] -%}
         <div class="mb-3 d-flex align-items-center">
                 {% if third_post.image %}
                 <div class="col-md-4">
@@ -98,7 +98,7 @@ description: Wechaty - Conversational AI RPA SDK for Chatbot Builders
             </div>
 
         <!-- fourth latest post -->
-        {%- assign fourth_post = news_posts[3] -%}
+        {%- assign fourth_post = home_posts[3] -%}
         <div class="mb-3 d-flex align-items-center">
                 {% if fourth_post.image %}
                 <div class="col-md-4">
@@ -129,7 +129,7 @@ description: Wechaty - Conversational AI RPA SDK for Chatbot Builders
 </div>
 
 <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
-{% for post in news_posts %}
+{% for post in home_posts %}
 {% if post.tags contains "sticky" %}
 <div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
     <div class="pl-4 pr-0 h-100 tofront">
@@ -159,7 +159,7 @@ description: Wechaty - Conversational AI RPA SDK for Chatbot Builders
         <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
 
 
-        {% for post in news_posts %}
+        {% for post in home_posts %}
 
             {% include main-loop-card-post.html %}
 
@@ -168,7 +168,7 @@ description: Wechaty - Conversational AI RPA SDK for Chatbot Builders
     </div>
 
     <div class="col-md-4">
-        {% assign news = true %}
+        {% assign home = true %}
         {% include sidebar-featured.html %}
     </div>
 

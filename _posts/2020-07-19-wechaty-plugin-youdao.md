@@ -6,9 +6,8 @@ categories: npm
 tags:
   - wechaty
   - plugins
-  - news
-header:
-  teaser: /assets/2020/youdao-plugin/head.jpeg
+  - home
+image: /assets/2020/youdao-plugin/head.jpeg
 ---
 
 > 作者: [Chs97](https://github.com/chs97/)

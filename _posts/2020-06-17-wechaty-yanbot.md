@@ -7,9 +7,8 @@ tags:
   - nodejs
   - wechaty
   - wechaty-puppet-padplus
-  - news
-header:
-  teaser: /assets/2020/yanbot/yanbot.jpg 
+  - home
+image: /assets/2020/yanbot/yanbot.jpg 
 ---
 
 > Author: [Chaogan-Yan](https://github.com/Chaogan-Yan) Professor, Institute of Psychology, Chinese Academy of Sciences

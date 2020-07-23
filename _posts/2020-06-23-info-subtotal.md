@@ -8,7 +8,7 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
   - mysql
-  - news
+  - home
 image: /assets/2020/info-subtotal/head.jpeg 
 ---
 

@@ -6,7 +6,7 @@ categories: story
 tags:
   - bot
   - dotnetclub
-  - news
+  - home
 ---
 
 > 作者: [@jijiechen](https://github.com/jijiechen) [dotnet club](https://dotnetclub.net) 技术社区负责人。

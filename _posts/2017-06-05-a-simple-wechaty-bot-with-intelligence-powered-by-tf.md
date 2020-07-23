@@ -6,9 +6,8 @@ categories: project
 tags:
   - code
   - machine learning
-  - news
-header:
-  teaser: /assets/2017/wildcat-tf-wechaty-and-tensorflow-featured-image.png
+  - home
+image: /assets/2017/wildcat-tf-wechaty-and-tensorflow-featured-image.png
 ---
 
 Author: [@imWildCat](https://github.com/imWildCat), University of Birmingham

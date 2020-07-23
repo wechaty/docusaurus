@@ -3,7 +3,7 @@ title: "go 语言可用的 wechaty 框架"
 author: dchaofei
 tags:
   - go
-  - news
+  - home
   - featured
 image: /assets/2020/go-wechaty/2020-06-29-go-wechaty.png
 ---

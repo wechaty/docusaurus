@@ -6,9 +6,8 @@ categories: article
 tags:
   - api
   - unofficial
-  - news
-header:
-  teaser: /assets/2017/dcsan-dashbot.jpg
+  - home
+image: /assets/2017/dcsan-dashbot.jpg
 ---
 
 > Author: [@dcsan](https://github.com/dcsan) making chatbots at RIKAI Labs

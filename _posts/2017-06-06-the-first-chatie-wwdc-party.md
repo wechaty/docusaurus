@@ -5,7 +5,7 @@ author: greatgeekgrace
 categories: event
 tags:
   - meetup
-  - news
+  - home
 image: /assets/2017/greatgeekgrace-chatie-wwdc-666.jpg
 ---
 

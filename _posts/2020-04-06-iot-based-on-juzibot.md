@@ -6,7 +6,7 @@ tags:
   - wechaty
   - iot
   - arduino
-  - news
+  - home
 ---
 
 > 作者: [cr4fun](https://github.com/cr4fun)，极客、物联网专家，SDK产品经理。

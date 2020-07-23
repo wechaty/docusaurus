@@ -5,8 +5,7 @@ author: suntong
 categories: article
 tags:
   - typescript
-header:
-  teaser: /assets/2018/typescript-logo.png
+image: /assets/2018/typescript-logo.png
 ---
 
 > Author: [@suntong](https://github.com/suntong), Canada

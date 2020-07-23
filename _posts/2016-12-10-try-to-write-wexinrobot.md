@@ -5,9 +5,8 @@ excerpt_separator: <!--more-->
 categories: story
 tags:
   - code
-  - news
-header:
-  teaser: /assets/2016/ruirui-dance.jpg
+  - home
+image: /assets/2016/ruirui-dance.jpg
 ---
 
 作者：@[lijiarui](https://github.com/lijiarui), Entrepreneur, [Wechaty Author](https://github.com/orgs/wechaty/teams/pmc)

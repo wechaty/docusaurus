@@ -6,9 +6,8 @@ categories: project
 tags:
   - code
   - telegram
-  - news
-header:
-  teaser: /assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-1.png
+  - home
+image: /assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-1.png
 ---
 
 > Author: [@hczhcz](https://github.com/hczhcz), an open source coder <del>and fan of the TOAD</del>

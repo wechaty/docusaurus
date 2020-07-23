@@ -6,7 +6,7 @@ categories: tutorial
 tags:
   - wechaty
   - matrix
-  - news
+  - home
 image: /assets/2020/matrix-wechaty/2020-03-matrix-appservice-wechaty.png
 ---
 

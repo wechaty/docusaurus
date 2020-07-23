@@ -5,7 +5,7 @@ date: "2020-06-16 10:55:00 +0800"
 tags: 
   - wechaty
   - java-wechaty
-  - news
+  - home
 categories: project
 image: /assets/2020/java-puppet-manager/java-wechaty-logo.png
 ---

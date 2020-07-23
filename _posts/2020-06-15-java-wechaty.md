@@ -3,7 +3,7 @@ title: "终于有一个 Java 可以用的微信机器人了"
 date: 2020-06-15 09:00 +0800
 author: diaozxin007
 tags:
-  - news
+  - home
   - java
 image: /assets/2020/java-wechaty/2020-06-15-java-wechaty.png
 ---

@@ -5,9 +5,8 @@ author: lijiarui
 categories: announcement
 tags:
   - document
-  - news
-header:
-  teaser: /assets/2017/add-wechaty-jsdoc-automate-all-the-things.jpg
+  - home
+image: /assets/2017/add-wechaty-jsdoc-automate-all-the-things.jpg
 ---
 
 > Author: [@lijiarui](https://github.com/lijiarui) @[BotOrange](http://www.batorange.com)

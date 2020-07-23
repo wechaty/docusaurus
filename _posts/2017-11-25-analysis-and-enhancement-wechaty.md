@@ -5,9 +5,8 @@ author: binsee
 categories: hack
 tags:
   - code
-  - news
-header:
-  teaser: /assets/2017/binsee-wechaty-structure.png
+  - home
+image: /assets/2017/binsee-wechaty-structure.png
 ---
 
 > 作者: [@binsee](https://github.com/binsee), 野路子的修炼者

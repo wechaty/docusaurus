@@ -8,7 +8,9 @@ tags:
   - soc
   - event
   - talk
-  - news
+  - home
+  - featured
+  - sticky
 image: /assets/2020/wechaty-soc-kick-off-meeting/soc.png
 ---
 

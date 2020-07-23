@@ -7,9 +7,8 @@ tags:
   - code
   - talk
   - machine learning
-  - news
-header:
-  teaser: /assets/2018/wechaty-blinder-1.jpg
+  - home
+image: /assets/2018/wechaty-blinder-1.jpg
 ---
 
 > Author: [@李佳芮](github.com/lijiarui), [桔子互动](botorange.com)创始人, Wechaty Author

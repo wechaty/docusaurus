@@ -5,7 +5,7 @@ date: '2018-04-23 18:14:52 +0800'
 categories: feature
 tags:
   - code
-  - news
+  - home
 image: /assets/2018/blessed-twins-bot.png
 ---
 

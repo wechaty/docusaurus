@@ -5,9 +5,8 @@ author: zhoumh1988
 categories: project
 tags:
   - analytics
-  - news
-header:
-  teaser: /assets/2018/wechaty-lightbot-logo.jpg
+  - home
+image: /assets/2018/wechaty-lightbot-logo.jpg
 ---
 
 > Author: [@LittleStrong](https://github.com/zhoumh1988), WEB Development Manager at [iTrustdata](http://itrustdata.com/), 喜欢挖坑与填坑😝

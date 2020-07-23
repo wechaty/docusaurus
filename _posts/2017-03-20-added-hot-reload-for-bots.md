@@ -5,9 +5,8 @@ date: '2017-03-20 11:11:11 +0800'
 categories: feature
 tags:
   - code
-  - news
-header:
-  teaser: /assets/2017/gcaufy-hot-reload-screencast.gif
+  - home
+image: /assets/2017/gcaufy-hot-reload-screencast.gif
 ---
 
 ![avatars](https://avatars3.githubusercontent.com/u/2182004?v=3&s=88)

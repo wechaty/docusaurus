@@ -5,7 +5,8 @@ author: windmemory
 tags: 
   - openai
   - talk
-  - news
+  - home
+  - sticky
 image: /assets/2020/wechaty-weixin-openai/teaser-image.png
 ---
 

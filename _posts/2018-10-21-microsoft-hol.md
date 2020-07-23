@@ -5,9 +5,8 @@ date: '2018-10-21 22:57:52 +0800'
 categories: event
 tags:
   - talk
-  - news
-header:
-  teaser: /assets/2018/microsoft-hol-chatbot.jpeg
+  - home
+image: /assets/2018/microsoft-hol-chatbot.jpeg
 ---
 
 > Author: [李佳芮](https://github.com/lijiarui/)，桔子互动创始人，微软AI MVP。

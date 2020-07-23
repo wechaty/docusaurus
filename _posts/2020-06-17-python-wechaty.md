@@ -4,7 +4,7 @@ date: 2020-06-17 15:19 +0800
 author: wj-Mcat
 tags:
   - python
-  - news
+  - home
   - featured
 image: /assets/2020/python-wechaty/python-wechaty-logo.png
 ---

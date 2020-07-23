@@ -4,7 +4,7 @@ date: "2020-07-06 15:50:00 +0800"
 author: wj-Mcat
 categories: meeting-notes
 tags:
-  - news
+  - home
   - meeting
   - talk
 image: assets/2020/meeting-notes/07-05-head-picture.jpg

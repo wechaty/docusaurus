@@ -4,7 +4,7 @@ author: huan
 categories: talks
 tags:
   - mvp
-  - news
+  - home
   - talk
 image: /assets/2020/azure-show/azure-show.png
 ---

@@ -5,9 +5,8 @@ date: '2019-07-18T09:00:00+0800'
 categories: feature
 tags:
   - code
-  - news
-header:
-  teaser: /assets/2019/maodou-ketang-demo.png
+  - home
+image: /assets/2019/maodou-ketang-demo.png
 ---
 
 > 作者: [limingth](https://github.com/limingth)，[zhaoic](https://github.com/zhaoic) 毛豆网

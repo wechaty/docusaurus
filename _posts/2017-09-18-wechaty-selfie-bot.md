@@ -5,9 +5,8 @@ author: huyingxi
 categories: project
 tags:
   - code
-  - news
-header:
-  teaser: /assets/2017/wechaty-selfie-pear.jpg
+  - home
+image: /assets/2017/wechaty-selfie-pear.jpg
 ---
 
 > Author: [@huyingxi](https://github.com/huyingxi/wechaty_selfie) enjoying ML&Wechaty at BUPT
