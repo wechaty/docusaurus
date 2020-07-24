@@ -8,10 +8,9 @@ tags:
   - wechaty
   - webPanel
   - plugins
-header:
-  teaser: /assets/2020/web-panel-plugin/web-head.png
+  - home
+image: /assets/2020/web-panel-plugin/web-head.png
 ---
-<!-- markdownlint-disable -->
 
 > 作者: [Leo_chen](https://github.com/gengchen528/)，高级前端工程师，喜欢使用node做各种项目
 
@@ -25,24 +24,29 @@ header:
 插件地址：[Wechaty-web-panel](https://github.com/gengchen528/wechaty-web-panel)
 
 ## 面板主要功能
+
 - [x] 微信每日说,定时给女朋友发送每日天气提醒，以及每日一句
 
-* 定时提醒
+### 定时提醒
 
 - [x] 当天定时提醒  例："提醒 我 18:00 下班了，记得带好随身物品"
 - [x] 每天定时提醒  例："提醒 我 每天 18:00 下班了，记得带好随身物品"
 - [x] 指定日期提醒  例："提醒 我 2019-05-10 8:00 还有7天是女朋友生日了，准备一下"
-* 智能机器人
+
+### 智能机器人
+
 - [x] 天行机器人
 - [x] 图灵机器人
 - [ ] 更多
 
-* 群定时任务
+### 群定时任务
+
 - [x] 群新闻定时发送
 - [x] 群消息定时发送
 - [ ] 更多功能等你来pr
 
-* 关键词
+### 关键词
+
 - [x] 关键词加好友
 - [x] 关键词加群
 - [x] 关键词回复
@@ -59,12 +63,16 @@ header:
   - [ ] 更多待你发现
 - [x] 进群自动欢迎
 - [x] 加好友自动回复
-* 好友及群管理
+
+### 好友及群管理
+
 - [ ] 好友列表
 - [ ] 群列表
 - [ ] 聊天记录
 - [ ] 数据分析
-* 自动更新配置文件，无需重启
+
+### 自动更新配置文件，无需重启
+
 - [x] 默认给机器人发送 ‘更新’ 触发拉取新配置文件操作，可在面板`小助手配置->关键词回复->关键词事件`进行修改关键词
 
 更多详情介绍：[传送门](https://www.xkboke.com/web-inn/secretary/client.html#%E5%B0%8F%E5%8A%A9%E6%89%8B%E5%8A%9F%E8%83%BD%E4%B8%80%E8%A7%88)
@@ -81,20 +89,21 @@ header:
 
 3. 个人中心获取`APIKEY`和`APISECRET`，后续配置用到
 
-![](/assets/2020/web-panel-plugin/user-center.png)
+![user-center](/assets/2020/web-panel-plugin/user-center.png)
 
 ### 开始
 
 #### Step 1: 安装
 
-```
-$ npm install wechaty-web-panel --save
+```shell
+npm install wechaty-web-panel --save
 ```
 
 #### Step 2: 创建配置文件
+
 项目根目录创建`env.json`,填入之前准备的`apiKey`和`apiSecret`
 
-```
+```shell
 $ vim env.json
 
 {
@@ -104,7 +113,8 @@ $ vim env.json
 ```
 
 再创建一个`wechat-config.json`，内容为一个空对象即可，后续会自动写入配置文件
-```
+
+```shell
 $ vim wechat-config.json
 
 {}
@@ -112,7 +122,7 @@ $ vim wechat-config.json
 
 #### Step 3: 创建机器人
 
-```
+```sh
 $ vim mybot.js
 
 const { Wechaty } = require('wechaty');
@@ -128,31 +138,31 @@ bot
 
 #### Step 4: 运行
 
-```
-$ node mybot.js
+```sh
+ode mybot.js
 ```
 
 #### Step 5: 扫码进入
 
 进入面板`小助手配置->登录状态`扫码登录，或直接扫码控制台二维码登录。成功登陆后，即可使用面板中所有的功能
 
-![](/assets/2020/web-panel-plugin/qrcode-s.png)
+![qrcode](/assets/2020/web-panel-plugin/qrcode-s.png)
 
 ## 面板预览
 
-![](/assets/2020/web-panel-plugin/qrcode.png)
-![](/assets/2020/web-panel-plugin/everyday.png)
-![](/assets/2020/web-panel-plugin/schedule.png)
-![](/assets/2020/web-panel-plugin/event.png)
-![](/assets/2020/web-panel-plugin/material.png)
+![qrcpde](/assets/2020/web-panel-plugin/qrcode.png)
+![everyday](/assets/2020/web-panel-plugin/everyday.png)
+![schedule](/assets/2020/web-panel-plugin/schedule.png)
+![event](/assets/2020/web-panel-plugin/event.png)
+![material](/assets/2020/web-panel-plugin/material.png)
 
 ## 功能预览
 
-![](/assets/2020/web-panel-plugin/news.jpeg)
+![news](/assets/2020/web-panel-plugin/news.jpeg)
 
 个人定时与群定时任务
 
-![](/assets/2020/web-panel-plugin/func.jpeg)
+![func](/assets/2020/web-panel-plugin/func.jpeg)
 
 功能一览
 

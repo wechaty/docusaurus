@@ -5,8 +5,7 @@ date: '2019-12-24T09:00:00+0800'
 categories: event
 tags:
   - meetup
-header:
-  teaser: /assets/2019/wechaty-ricepo/logo.png
+image: /assets/2019/wechaty-ricepo/logo.png
 ---
 
 > 作者: [RICEPO LLC](https://github.com/ricepo)
