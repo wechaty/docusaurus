@@ -5,8 +5,8 @@ author: huan
 categories: announcement
 tags:
   - talk
-header:
-  teaser: /assets/2017/wechaty-connect-chatbots.jpg
+  - home
+image: /assets/2017/wechaty-connect-chatbots.jpg
 ---
 <div class="video-container" style="
     position: relative;

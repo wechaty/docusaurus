@@ -7,8 +7,7 @@ tags:
   - wechaty
   - cps
 
-header:
-  teaser: /assets/2020/cps-bot/qrcode.jpg
+image: /assets/2020/cps-bot/qrcode.jpg
 ---
 
 > 作者: [shuangjie](https://github.com/shuangjie), a noob developer

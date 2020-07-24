@@ -6,8 +6,7 @@ categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
-header:
-  teaser: /assets/2020/coupon-wechat-bot/coupon-wechat-bot.jpg
+image: /assets/2020/coupon-wechat-bot/coupon-wechat-bot.jpg
 ---
 
 > 作者: [h3llotom](https://github.com/h3llotom/)

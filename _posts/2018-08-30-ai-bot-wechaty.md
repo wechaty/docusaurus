@@ -5,8 +5,7 @@ author: lirobin1998
 categories: article
 tags:
   - artificial intelligence
-header:
-  teaser: /assets/2018/hi-ai.jpg
+image: /assets/2018/hi-ai.jpg
 ---
 
 > Author: [@李彬](https://github.com/lirobin1998) ，清华大学博士。硅谷智慧科技公司创始人，贵州博士科技有限公司CEO。聚焦智慧AI创新创业，从AI科普教育切入，开展人机智慧智能开发教育，打造全民AI教育开放平台。30年前在清华大学电子工程系开始研究机器翻译，20年前到硅谷开始学习探索智慧智能科技，10年硅谷与国内高科技创业经历。

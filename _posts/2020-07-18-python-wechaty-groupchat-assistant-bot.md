@@ -3,8 +3,10 @@ title: "基于python-wechaty的群聊助手机器人"
 date: 2020-07-18 09:00 +0800
 author: kxz18
 categories: project
-header:
-  teaser: /assets/2020/groupchat-assistant-bot/header.jpeg
+image: /assets/2020/groupchat-assistant-bot/header.jpeg
+tags:
+  - python
+  - soc2020
 ---
 > Author: [@kxz18](https://github.com/kxz18)
 > Code: [@kxz18/python-wechaty-groupchat-bot](https://github.com/kxz18/python-wechaty-groupchat-bot)

@@ -6,8 +6,7 @@ categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
-header:
-  teaser: /assets/2020/group-wechat-bot/2020-06-04-group-wechat-bot.png
+image: /assets/2020/group-wechat-bot/2020-06-04-group-wechat-bot.png
 ---
 
 > 作者: [Sam](https://github.com/PXingwei/)

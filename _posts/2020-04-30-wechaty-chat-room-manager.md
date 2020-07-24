@@ -4,8 +4,7 @@ date: '2020-5-8 09:00 +0800'
 author: tianyugeng
 tags:
    - wechaty
-header:
-  teaser: /assets/2020/room-manager/bio-photo.png
+image: /assets/2020/room-manager/bio-photo.png
 ---
 
 > 作者: [tianyugeng](https://github.com/tianyugeng) 前端开发工程师(自称)
@@ -103,7 +102,7 @@ cnpm rebuild
 ### 3. 开始运行
 
 ```sh
-WECHATY_PUPPET_PADPLUS_TOKEN={{你的token}} npm start
+WECHATY_PUPPET_PADPLUS_TOKEN=${YOUR_TOKEN} npm start
 ```
 
 或者直接通过node来启动
