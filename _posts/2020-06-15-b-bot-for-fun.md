@@ -6,8 +6,7 @@ categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
-header:
-  teaser: /assets/2020/paipiange-bot/1.png
+image: /assets/2020/paipiange-bot/1.png
 ---
 
 > 作者: [generalbao](https://github.com/generalbao/)

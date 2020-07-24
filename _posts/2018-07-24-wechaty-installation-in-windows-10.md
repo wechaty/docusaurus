@@ -6,8 +6,8 @@ categories: tutorial
 tags:
   - windows
   - install
-header:
-  teaser: /assets/2018/wechaty-installation-in-windows.png
+  - home
+image: /assets/2018/wechaty-installation-in-windows.png
 ---
 
 > [@kaffa](https://github.com/kaffa) a life-long learner / a beginner investor / a coffee mocha lover. My blog is [https://kaffa.im/](https://kaffa.im/)

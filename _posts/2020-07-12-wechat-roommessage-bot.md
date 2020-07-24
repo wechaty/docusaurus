@@ -6,8 +6,7 @@ categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
-header:
-  teaser: /assets/2020/wechat-roommessage-bot/teaser.png
+image: /assets/2020/wechat-roommessage-bot/teaser.png
 ---
 
 > 作者: [sidny](https://github.com/sidny/)

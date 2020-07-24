@@ -5,8 +5,8 @@ author: guoyingxu
 categories: project
 tags:
   - code
-header:
-  teaser: /assets/2017/wechaty-electron-making-your-wachaty-as-a-client-service1.jpg
+  - home
+image: /assets/2017/wechaty-electron-making-your-wachaty-as-a-client-service1.jpg
 ---
 
 ![a](https://avatars1.githubusercontent.com/u/33899027?s=88&v=3)
