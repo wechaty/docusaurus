@@ -9,8 +9,8 @@ tags:
   - wechat-robot
   - regex
   - regex101
-header:
-  teaser: /assets/2020/wechat-poem-robot/chat.png
+  - home
+image: /assets/2020/wechat-poem-robot/chat.png
 ---
 
 > 作者: [ray7551](https://github.com/ray7551/)

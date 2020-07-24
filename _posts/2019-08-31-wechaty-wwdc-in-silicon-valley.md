@@ -5,8 +5,8 @@ author: kis87988
 categories: event
 tags:
   - meetup
-header:
-  teaser: /assets/2019/chatie-wwdc-in-sv-110718.jpg
+  - home
+image: /assets/2019/chatie-wwdc-in-sv-110718.jpg
 ---
 
 > Author: [@kis87988](https://github.com/kis87988) William Chen, Software Engineer

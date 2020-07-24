@@ -6,8 +6,8 @@ categories: hack
 tags:
   - code
   - hook
-header:
-  teaser: /assets/2017/h4dex-inject.png
+  - home
+image: /assets/2017/h4dex-inject.png
 ---
 
 > Author: [@h4dex](https://github.com/h4dex) 会使用各种计算机语言写出 Hello World 的设计师（<http://icefox.org/>）

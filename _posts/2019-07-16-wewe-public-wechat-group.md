@@ -5,8 +5,8 @@ date: '2019-07-16 18:30:00 +0800'
 categories: project
 tags:
   - startup
-header:
-  teaser: /assets/2019/wewe-screenshot.png
+  - home
+image: /assets/2019/wewe-screenshot.png
 ---
 
 > Author: [@timqian](https://github.com/timqian) Building transparent products at [t9t.io](https://t9t.io)

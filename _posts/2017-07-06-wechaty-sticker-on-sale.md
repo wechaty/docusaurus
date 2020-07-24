@@ -5,8 +5,8 @@ author: huan
 categories: shop
 tags:
   - sticker
-header:
-  teaser: /assets/2017/wechaty-sticker.jpg
+  - home
+image: /assets/2017/wechaty-sticker.jpg
 ---
 
 [![Wechaty Sticker][wechaty-sticker-size]](https://item.jd.com/12994583384.html)

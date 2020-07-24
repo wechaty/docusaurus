@@ -9,8 +9,8 @@ tags:
   - wechat-robot
   - teamin
   - chatbot
-header:
-  teaser: /assets/2020/wechaty-teamin-chatbot/home-01.jpg
+  - home
+image: /assets/2020/wechaty-teamin-chatbot/home-01.jpg
 ---
 
 > 作者: [darkli](https://github.com/darkli)
