@@ -5,8 +5,8 @@ date: '2017-04-26 13:01:53'
 categories: event
 tags:
   - meetup
-header:
-  teaser: /assets/2017/wechat-meeting.jpg
+  - home
+image: /assets/2017/wechat-meeting.jpg
 ---
 
 Author: [Yang BAI](https://github.com/antonia0912), formal community manager at [JueJin](https://juejin.im/)(Chinese Hacker News)
