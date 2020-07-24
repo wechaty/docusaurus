@@ -5,7 +5,7 @@ author: tingyinhelen
 categories: project
 tags:
   - code
-  - home
+  - featured
 image: /assets/2017/helen-screenshot-testing.jpg
 ---
 

@@ -5,7 +5,7 @@ date: '2017-03-20 11:11:11 +0800'
 categories: feature
 tags:
   - code
-  - home
+  - featured
 image: /assets/2017/gcaufy-hot-reload-screencast.gif
 ---
 

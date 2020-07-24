@@ -5,7 +5,7 @@ date: '2019-07-12 18:30:00 +0800'
 categories: project
 tags:
   - code
-  - home
+  - featured
 image: /assets/2019/wechaty-pay-paypic.png
 ---
 

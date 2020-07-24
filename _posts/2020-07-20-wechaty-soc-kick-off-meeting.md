@@ -2,12 +2,12 @@
 title: "Wechaty的新进展和‘暑期2020’破冰会会议纪实"
 author: rickyyin98
 date: "2020-07-20 08:00:00 +0800"
-categories: project
+categories: meetup
 tags:
   - wechaty
   - soc
-  - event
   - talk
+  - home
   - featured
 image: /assets/2020/wechaty-soc-kick-off-meeting/soc.png
 ---

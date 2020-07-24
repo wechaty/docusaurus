@@ -5,7 +5,7 @@ date: '2018-04-18 02:14:52 +0800'
 categories: npm
 tags:
   - botbuilder
-  - home
+  - featured
 image: /assets/2018/botframework.jpg
 ---
 

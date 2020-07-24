@@ -9,7 +9,7 @@ tags:
   - wechat-robot
   - regex
   - regex101
-  - home
+  - featured
 image: /assets/2020/wechat-poem-robot/chat.png
 ---
 

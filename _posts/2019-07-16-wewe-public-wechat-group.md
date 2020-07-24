@@ -5,7 +5,7 @@ date: '2019-07-16 18:30:00 +0800'
 categories: project
 tags:
   - startup
-  - home
+  - featured
 image: /assets/2019/wewe-screenshot.png
 ---
 

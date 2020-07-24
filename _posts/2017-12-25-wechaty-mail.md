@@ -5,7 +5,6 @@ author: wangning
 categories: project
 tags:
   - code
-  - home
 image: /assets/2017/wechaty-email.png
 ---
 

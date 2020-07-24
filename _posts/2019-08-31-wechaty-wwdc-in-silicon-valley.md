@@ -6,6 +6,7 @@ categories: event
 tags:
   - meetup
   - home
+  - featured
 image: /assets/2019/chatie-wwdc-in-sv-110718.jpg
 ---
 

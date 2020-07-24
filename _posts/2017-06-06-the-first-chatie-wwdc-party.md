@@ -6,6 +6,7 @@ categories: event
 tags:
   - meetup
   - home
+  - featured
 image: /assets/2017/greatgeekgrace-chatie-wwdc-666.jpg
 ---
 

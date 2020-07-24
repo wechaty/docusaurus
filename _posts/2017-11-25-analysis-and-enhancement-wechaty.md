@@ -5,7 +5,7 @@ author: binsee
 categories: hack
 tags:
   - code
-  - home
+  - featured
 image: /assets/2017/binsee-wechaty-structure.png
 ---
 

@@ -7,7 +7,7 @@ tags:
   - code
   - wechaty
   - webPanel
-  - home
+  - feature
 image: /assets/2020/web-panel/web-head.png
 ---
 

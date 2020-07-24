@@ -6,6 +6,7 @@ categories: event
 tags:
   - meetup
   - home
+  - featured
 image: /assets/2018/country-wide-developer-conference.jpg
 ---
 

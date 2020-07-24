@@ -4,7 +4,7 @@ date: 2020-06-19 00:00 +0800
 author: why2lyj
 tags:
   - python
-  - home
+  - featured
 image: /assets/2020/python-wechaty-cps-bot/jdyangli.jpg
 ---
 

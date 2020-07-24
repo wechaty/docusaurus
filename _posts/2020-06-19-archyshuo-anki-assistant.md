@@ -10,7 +10,6 @@ tags:
   - nlp
   - anki
   - productivity
-  - home
 image: /assets/2020/archyshuo-anki-assistant/archybots.jpg
 excerpt: a chatbot that can extract difficult Chinese words from WeChat 公众号 articles, annotate them with Pinyin and definitions, and generate Anki notes.
 

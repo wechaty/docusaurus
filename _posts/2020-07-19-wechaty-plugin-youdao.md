@@ -6,7 +6,7 @@ categories: npm
 tags:
   - wechaty
   - plugins
-  - home
+  - featured
 image: /assets/2020/youdao-plugin/head.jpeg
 ---
 

@@ -8,8 +8,7 @@ tags:
   - wechaty
   - job
   - intern
-header:
-  teaser: /assets/2020/early-bird-chatbot/bird.png
+image: /assets/2020/early-bird-chatbot/bird.png
 ---
 
 > Author: [lmaCode](https://github.com/lmaCode)
