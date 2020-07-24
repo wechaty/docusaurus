@@ -1,5 +1,5 @@
 ---
-title: "Go Wechaty Beta Published!"
+title: "Go Wechaty Beta Released!"
 author: dchaofei
 categories: announcement
 tags:

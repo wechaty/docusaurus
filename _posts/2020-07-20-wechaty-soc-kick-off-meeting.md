@@ -1,13 +1,14 @@
 ---
-title: "Wechaty的新进展和‘暑期2020’破冰会会议纪实"
+title: "Wechaty Summer of Code 2020 Kickoff Meeting"
 author: rickyyin98
 date: "2020-07-20 08:00:00 +0800"
-categories: meetup
+categories: announcement
 tags:
   - wechaty
   - soc
   - talk
   - home
+  - meetup
   - featured
 image: /assets/2020/wechaty-soc-kick-off-meeting/soc.png
 ---
