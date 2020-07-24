@@ -950,6 +950,7 @@ darkli:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://www.teamin.cc"
+
 lmaCode:
   name       : "lmaCode"
   bio        : "For a dream"
@@ -958,3 +959,15 @@ lmaCode:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/lmaCode"
+
+csjuXYZ:
+  name        : "陈述句"
+  bio         : "前端开发与街头摄影"
+  avatar      : "https://avatars1.githubusercontent.com/u/25047688?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/csjuXYZ"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "hoc0415@foxmail.com"
