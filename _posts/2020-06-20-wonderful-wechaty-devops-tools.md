@@ -2,11 +2,13 @@
 title: "Wonderful Wechaty devops toolset"
 date: 2020-06-20 09:00 +0800
 author: windmemory
+categories: announcement
 tags: 
   - devops
   - tool
   - talk
   - home
+  - featured
 image: /assets/2020/wonderful-wechaty-devops-tools/teaser-image.png
 ---
 

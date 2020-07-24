@@ -6,10 +6,10 @@ categories: project
 tags:
   - code
   - startup
-  - home
+  - featured
 ---
 
-![avatar]("https://avatars0.githubusercontent.com/u/640325?v=3&s=88)
+![avatar](https://avatars0.githubusercontent.com/u/640325?v=3&s=88)
 
 作者: [@xinbenlv](https://github.com/xinbenlv), Google, [Chatie Contributor](https://github.com/orgs/Chatie/teams/contributor)
 

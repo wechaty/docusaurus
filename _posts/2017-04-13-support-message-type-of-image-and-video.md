@@ -5,7 +5,7 @@ date: '2017-04-13 20:37:11 +0800'
 categories: feature
 tags:
   - code
-  - home
+  - featured
 image: /assets/2017/mukaiu-ding-code.jpg
 ---
 

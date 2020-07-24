@@ -10,7 +10,7 @@ tags:
   - redis
   - sqlite
   - knex
-  - home
+  - featured
 image: /assets/2020/im-game-robot/qrcat.jpg 
 ---
 

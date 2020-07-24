@@ -9,7 +9,6 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
   - nuxt
-  - home
 image: /assets/2020/mqbot/qrcode.png 
 ---
 

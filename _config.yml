@@ -50,7 +50,10 @@ paginate: 30
 paginate_path: /news/page:num/
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+exclude:
+  - package.json
+  - _site
+  - node_modules
 
 collections:
   developers:

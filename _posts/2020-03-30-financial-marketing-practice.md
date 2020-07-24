@@ -6,7 +6,6 @@ categories: tutorial
 tags:
   - wechaty
   - financial
-  - home
 image: /assets/2020/financial-marketing/2020-03-30-wechaty-bond-bot.png
 ---
 

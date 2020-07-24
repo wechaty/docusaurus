@@ -5,7 +5,7 @@ author: huyingxi
 categories: project
 tags:
   - code
-  - home
+  - featured
 image: /assets/2017/wechaty-selfie-pear.jpg
 ---
 

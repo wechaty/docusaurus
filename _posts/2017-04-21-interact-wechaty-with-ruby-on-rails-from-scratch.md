@@ -5,7 +5,7 @@ date: '2017-04-21 16:01:53 +0100'
 categories: tutorial
 tags:
   - code
-  - home
+  - featured
 image: /assets/2017/wildcat-rails-db-initial-structure.png
 ---
 

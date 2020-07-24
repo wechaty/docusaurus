@@ -1,6 +1,7 @@
 ---
-title: "go 语言可用的 wechaty 框架"
+title: "Go Wechaty Beta Published!"
 author: dchaofei
+categories: announcement
 tags:
   - go
   - home

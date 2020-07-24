@@ -7,7 +7,7 @@ tags:
   - code
   - talk
   - machine learning
-  - home
+  - featured
 image: /assets/2018/wechaty-blinder-1.jpg
 ---
 

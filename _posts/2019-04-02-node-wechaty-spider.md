@@ -5,7 +5,6 @@ date: '2019-04-02 17:30:52 +0800'
 categories: project
 tags:
   - code
-  - home
   - featured
 image: /assets/2019/node-wechaty-1.jpeg
 ---

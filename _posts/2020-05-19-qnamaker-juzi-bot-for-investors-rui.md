@@ -1,5 +1,5 @@
 ---
-title: "Azure Show - 如何用 QnAMaker.ai 构建一个投融资聊天机器人"
+title: "如何用 QnAMaker.ai 构建一个投融资聊天机器人 - Azure Show"
 author: lijiarui
 categories: talks
 tags:

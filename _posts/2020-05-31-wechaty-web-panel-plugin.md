@@ -8,7 +8,7 @@ tags:
   - wechaty
   - webPanel
   - plugins
-  - home
+  - feature
 image: /assets/2020/web-panel-plugin/web-head.png
 ---
 
