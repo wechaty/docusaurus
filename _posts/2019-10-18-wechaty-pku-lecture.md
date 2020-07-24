@@ -6,8 +6,8 @@ categories: event
 tags:
   - meetup
   - lecture
-header:
-  teaser: /assets/2019/wechaty-pku-lecture/pku-liming2.jpeg
+  - home
+image: /assets/2019/wechaty-pku-lecture/pku-liming2.jpeg
 ---
 
 > 作者: [limingth](https://github.com/limingth) 毛豆网

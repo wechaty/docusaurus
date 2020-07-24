@@ -5,8 +5,8 @@ date: '2018-03-11 09:18:52 +0800'
 categories: hack
 tags:
   - hook
-header:
-  teaser: /assets/2018/h4dex-wechatprotocol.jpeg
+  - home
+image: /assets/2018/h4dex-wechatprotocol.jpeg
 ---
 
 > Author: [@h4dex](https://github.com/h4dex),  写bug的设计师

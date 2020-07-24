@@ -6,8 +6,7 @@ categories: tutorial
 tags:
   - code
   - docker
-header:
-  teaser: /assets/2016/ghostcloud-banner.jpg
+image: /assets/2016/ghostcloud-banner.jpg
 ---
 
 * 本文作者：@[shevyan](https://github.com/shevyan) 晏东，[精灵云GhostCloud](https://www.ghostcloud.cn/)创始人&CEO
