@@ -6,10 +6,9 @@ categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
-header:
-  teaser: /assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot0.jpg 
+image: /assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot0.jpg 
 ---
-<!-- markdownlint-disable -->
+
 > 作者: [suruozhong](https://github.com/suruozhong)
 > Code: [Github](https://github.com/suruozhong/wechaty-team-robot)
 
@@ -27,23 +26,24 @@ header:
 
 wechaty-team-robot
 
-#### 结构
+### 结构
 
 ```js
 |-- src/
 |---- api/
-|------ api.js  #请求的接口
-|------ request.js #request请求
+|------ api.js              #请求的接口
+|------ request.js          #request请求
 |---- constant/
-|------ config.js #参数配置文件
+|------ config.js           #参数配置文件
 |---- event/
-|------ friendship.js	# 好友添加监听回调
-|------ message.js 	# 消息监听回调
-|------ room.js		# 进入房间监听回调
-|------ roomInvitation.js		# 群邀请监听回调
-|-- index.js	# 入口文件
+|------ friendship.js       # 好友添加监听回调
+|------ message.js          # 消息监听回调
+|------ room.js             # 进入房间监听回调
+|------ roomInvitation.js   # 群邀请监听回调
+|-- index.js                # 入口文件
 |- package.json
 ```
+
 ## 实现
 
 - 方案：
@@ -122,24 +122,24 @@ exports.onMessage = bot =>{
 ```js
 
 module.exports ={
-	handle : params => { //消息处理
-	  return get({
-	    api: "/taskMsg/handle",
-	    data: params
-	  })
-	},
-	setSend : params => { //将消息置为已发送
-	  return get({
-		api: "/taskMsg/setSend",
-		data: params
-	  })
-	},
-	list : params => { //未发送消息列表
-	  return get({
-		api: "/taskMsg/list",
-		data: params
-	  })
-	}
+  handle : params => { //消息处理
+    return get({
+      api: "/taskMsg/handle",
+      data: params
+    })
+  },
+  setSend : params => { //将消息置为已发送
+    return get({
+  api: "/taskMsg/setSend",
+  data: params
+    })
+  },
+  list : params => { //未发送消息列表
+    return get({
+  api: "/taskMsg/list",
+  data: params
+    })
+  }
 }
 ```
 
@@ -232,6 +232,8 @@ exports.taskSendMessage = async function(bot){
 - 每天早上爬取热点新闻发送
 - 等等团队需要的功能待挖掘实现
 
-## wechaty-team-robot 还是一个正在开发中的项目, 欢迎留言交流你对它的看法，以及你需要的功能
+wechaty-team-robot 还是一个正在开发中的项目, 欢迎留言交流你对它的看法，以及你需要的功能
 
-## 感谢  Wechaty开源项目及JuziBot公司提供的接口和token，为开发者带来极大便利！
+## 感谢
+
+[Wechaty](https://wechaty.github.io/)开源项目及[JuziBot](https://www.juzibot.com)公司提供的接口和token，为开发者带来极大便利！

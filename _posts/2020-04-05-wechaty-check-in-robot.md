@@ -5,8 +5,7 @@ date: '2020-04-05 20:37:00 +0800'
 categories: project
 tags:
   - wechaty
-header:
-  teaser: /assets/2020/wechaty-check-in-robot/notice.png
+image: /assets/2020/wechaty-check-in-robot/notice.png
 ---
 
 > 作者: [yeojongki](https://github.com/yeojongki) 前端开发工程师

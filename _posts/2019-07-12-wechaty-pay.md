@@ -5,8 +5,8 @@ date: '2019-07-12 18:30:00 +0800'
 categories: project
 tags:
   - code
-header:
-  teaser: /assets/2019/wechaty-pay-paypic.png
+  - home
+image: /assets/2019/wechaty-pay-paypic.png
 ---
 
 > 作者: [Shawn](https://mugglepay.com)，全栈创业狗，致力于利用技术提升支付领域效率。

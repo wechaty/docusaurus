@@ -5,8 +5,7 @@ author: Wang Yan
 categories: event
 tags:
   - datagirls
-header:
-  teaser: /assets/2018/techiefestival-25.jpeg
+image: /assets/2018/techiefestival-25.jpeg
 ---
 > Author: [@Yan Wang](https://github.com/bukaqiaqia) 现就读于悉尼大学商业数据分析 ,是Datagirls社区志愿者助教，两年数据分析师工作经历，拥有丰富的社科数据分析项目经验。
 
