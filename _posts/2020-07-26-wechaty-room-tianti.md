@@ -31,13 +31,13 @@ image: /assets/2020/wechaty-room-tianti/header.png
 ### 运行
 
 ```shell
-$ git clone https://github.com/fangmuke/wechaty-room-tianti.git
+git clone https://github.com/fangmuke/wechaty-room-tianti.git
 
-$ cd wechaty-room-tianti
+cd wechaty-room-tianti
 
-$ npm install
+npm install
 
-$ node bot.js
+node bot.js
 ```
 
 ### 未来计划
