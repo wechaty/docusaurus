@@ -971,3 +971,14 @@ csjuXYZ:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "hoc0415@foxmail.com"
+cunkoulaocai:
+  name        : "陈炀"
+  bio         : "java开发,一个小白"
+  avatar      : "https://avatars3.githubusercontent.com/u/30389241?s=460&u=99b73e1a68a668a56e0a567ffa33bb8c2e99b4bb&v=4"
+  links:
+    - label: "GitHub"
+      icon: "cy666"
+      url: "https://github.com/cunkoulaocai"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "1184016190@qq.com"
