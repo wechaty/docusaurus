@@ -6,7 +6,7 @@ tags:
   - mvp
   - home
   - talk
-image: /assets/2020/azure-show/azure-show.png
+image: /assets/2020/azure-show/azure-show-rui.png
 ---
 
 > Author: [Rui LI](https://github.com/lijiarui), Microsoft AI MVP, Co-author of Wechaty
@@ -15,7 +15,7 @@ image: /assets/2020/azure-show/azure-show.png
 
 <!--more-->
 
-![huan](/assets/2020/azure-show/azure-show-rui.png)
+![Azure Show](/assets/2020/azure-show/azure-show.png)
 
 ## Azure Show
 
