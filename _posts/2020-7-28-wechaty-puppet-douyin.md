@@ -8,6 +8,8 @@ tags:
   - featured
 ---
 
+Author: [@gavinwang23](https://github.com/gavinwang23/wechaty-puppet-douyin) 
+
 # 暑期2020 [基于RPA封装的Wechaty接口下的抖音聊天机器人] 计划书
 
 ## 暑期2020
