@@ -5,8 +5,7 @@ date: '2020-03-02T09:00:00+0800'
 categories: event
 tags:
   - meetup
-header:
-  teaser: /assets/2020/umiuni/icon.png
+image: /assets/2020/umiuni/icon.png
 ---
 
 > 作者: [SuperCharlesZhu](https://github.com/SuperCharlesZhu)

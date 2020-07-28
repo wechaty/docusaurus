@@ -3,6 +3,9 @@ title: "年末最硬核！微软AI全球训练营北京站落幕"
 date: 2019-12-20 19:00 +0800
 published: false
 author: 句子互动
+tags:
+  - event
+  - home
 ---
 
  > Author: 句子互动
@@ -123,7 +126,7 @@ PreAngel是一支专注于人工智能技术创业项目的天使基金，核心
     height:0;
     overflow:hidden;
 ">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jKbMFxDw0T4?t=210" frameborder="0" allowfullscreen="" style="
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jKbMFxDw0T4?start=210" frameborder="0" allowfullscreen="" style="
     position: absolute;
     top:0;
     left:0;

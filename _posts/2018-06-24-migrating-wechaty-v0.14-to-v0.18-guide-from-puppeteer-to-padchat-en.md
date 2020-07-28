@@ -5,10 +5,10 @@ author: lijiarui
 categories: migration
 tags:
   - code
-header:
-  teaser: /assets/2018/code-migration-en.png
+  - home
+image: /assets/2018/code-migration-en.png
 ---
-<!-- markdownlint-disable -->
+
 > Author: [@lijiarui](https://github.com/lijiarui) Founder of BotOrange, Author of Wechaty.
 
 Wechaty has been updated to version 0.16(BETA) these days and begin to support all kinds of wechat solutions including web, ipad, ios, etc. My product based on wechaty has to migration from wechaty solution based on web to ipad solution.
@@ -23,7 +23,7 @@ This blog introduces how to porting code from wechaty puppeteer to padchat.
 
 **Puppet System** means to connect Wechaty API to any kinds of Puppets, including Web, iPad, Android, Windows Hook and ios. Different implements of these puppets are totally different, without the puppet, using one API to bridge all implement is very difficult, so we had Puppet System.
 
-![](https://github.com/wechaty/wechaty/wiki/image/abstract-info.png)
+![Puppet](https://github.com/wechaty/wechaty/wiki/image/abstract-info.png)
 
 - Puppeteer
 A solution based on Web Wechat
@@ -34,13 +34,13 @@ You can find more in this blog: [Wechaty New Version 0.16(BETA, with superpower)
 
 ## 2. How to run puppet-padchat
 
-Wechaty will start with puppeteer(web solution) by default, if you want to change to padchat, you need to set the environmental variable. 
+Wechaty will start with puppeteer(web solution) by default, if you want to change to padchat, you need to set the environmental variable.
 
 See more in wechaty wiki: [How to run a new wecahty-puppet-padchat](https://github.com/wechaty/wechaty/wiki/Puppet#2-run)
 
 ### Start with Github repo
 
-#### 1. Pull the latest code:
+#### 1. Pull the latest code
 
 ```shell
 git pull
@@ -73,7 +73,7 @@ npm install wechaty@next
 
 Participate in our alpha test here: [Wechaty v0.17 Padchat Testing: Win32/iPad/Android/iOS/API Puppets Support are coming!](https://github.com/wechaty/wechaty/issues/1296) and Get `WECHATY_PUPPET_PADCHAT_TOKEN`
 
-#### 3. Set environment variable and run
+#### 3. Set environment variable & run
 
 Remeber to set `WECHATY_PUPPET=padchat` to change from puppeteer to padchat
 
@@ -84,21 +84,20 @@ WECHATY_PUPPET_PADCHAT_TOKEN=your padchat token WECHATY_PUPPET=padchat   node ex
 
 ### Docker
 
-#### 1. Install
+#### 1. Install Docker
 
 ```shell
 docker pull zixia/wechaty:latest
 ```
 
-#### 2. Get Token
+#### 2. Get Token for Docker
 
 Participate in our alpha test here: [Wechaty v0.17 Padchat Testing: Win32/iPad/Android/iOS/API Puppets Support are coming!](https://github.com/wechaty/wechaty/issues/1296) and Get `WECHATY_PUPPET_PADCHAT_TOKEN`
 
-#### 3. Set environment variable and run
+#### 3. Set environment variable and Run
 
 - Remeber to set `WECHATY_PUPPET=padchat` to change from puppeteer to padchat
 - Remove wechaty in `node_module` if exist.
-
 
 ```shell
 docker run -t -i  -e WECHATY_PUPPET="padchat" -e WECHATY_PUPPET_PADCHAT_TOKEN="your token"  --volume="$(pwd)":/bot --name=wechaty zixia/wechaty:latest examples/ding-dong-bot.ts
@@ -112,7 +111,7 @@ We need tools to help us check our code errors. I use **TSLint** to help me to c
 
 ### Why we need to check code
 
-Maybe you think JavaScript is so flexible so it needs to be checked, but typescript has been able to check out a lot of problems when compiling. Why do we still need to check the code? 
+Maybe you think JavaScript is so flexible so it needs to be checked, but typescript has been able to check out a lot of problems when compiling. Why do we still need to check the code?
 
 This is because TypeScript focuses on the type of match, not the code style. When there are more and more people on our team, the same logic may be totally different in different people:
 
@@ -132,7 +131,7 @@ In one word, though code errors are more important than the uniform code style w
 
 TSLint is an extensible static analysis tool that checks TypeScript code for readability, maintainability, and functionality errors. It is widely supported across modern editors & build systems and can be customized with your own lint rules, configurations, and formatters. Learn more in [TSLint Website](https://palantir.github.io/tslint/)
 
-#### 1. Install
+#### 1. Install TSLint
 
 ```shell
 npm install --save-dev tslint
@@ -141,18 +140,19 @@ npm install tslint-config-standard
 
 #### 2. Config File
 
-Create config file `tslint.json` 
+Create config file `tslint.json`
 
 I suggest to refer wechaty config about `tslint` and `tsconfig`
+
 - [tslint config file in wechaty](https://github.com/wechaty/wechaty/blob/master/tslint.json)
 - [tsconfig config file in wechaty](https://github.com/wechaty/wechaty/blob/master/tsconfig.json)
 
 Here are some tips about wehcaty config:
 
 - "strict" : true
-Enable all strict type checking options. 
+Enable all strict type checking options.
 Enabling --strict enables --noImplicitAny, --noImplicitThis, --alwaysStrict, --strictNullChecks, --strictFunctionTypes and --strictPropertyInitialization
--  "noEmitOnError"              : true
+- "noEmitOnError"              : true
 Do not emit outputs if any errors were reported.
 - "noUnusedLocals"             : true
 Report errors on unused locals.
@@ -163,7 +163,7 @@ Report errors for fallthrough cases in switch statement.
 - "strictNullChecks"           : true
 In strict null checking mode, the null and undefined values are not in the domain of every type and are only assignable to themselves and any (the one exception being that undefined is also assignable to void).
 - "noImplicitAny"              : true
-Raise error on expressions and declarations with an implied any type. 
+Raise error on expressions and declarations with an implied any type.
 Related issue: [ts-node 7.0 breaking change: Skip `files` by default](https://github.com/wechaty/wechaty/issues/1383)
 - "no-floating-promises": true
 Check the floating promise。Related issue: [Prevent the Floating Promise in the Async/Await Code](https://github.com/wechaty/wechaty/issues/1346)
@@ -176,7 +176,7 @@ see more in [official website](https://www.typescriptlang.org/docs/handbook/comp
 
 #### 3. Add tslint script for package.json
 
-```
+```json
 {
     "scripts": {
         "lint": "tslint --project . src/**/*.ts src/**/*.tsx",
@@ -184,7 +184,7 @@ see more in [official website](https://www.typescriptlang.org/docs/handbook/comp
 }
 ```
 
-`-- project .` require all tslint to use `tsconfig.json` configuration of the current directory to get the information. 
+`-- project .` require all tslint to use `tsconfig.json` configuration of the current directory to get the information.
 
 Then run `npm run lint` will check the whole code.
 
@@ -198,7 +198,6 @@ I also recommend another plugin in vscode: `editorconfig`: EditorConfig helps de
 
 You can find wechaty editorconfig in [.editorconfig](https://github.com/wechaty/wechaty/blob/master/.editorconfig)
 
-
 ## 4. BREAKING CHANGES
 
 After upgrade wechaty, see more in[blog](https://wechaty.github.io/wechaty-new-release-version-0.16/). Although we are trying to minimize API changes, there are some breaking changes. I really suggest you reading [CHANGE LOG](https://github.com/wechaty/wechaty/blob/master/CHANGELOG.md). Also, I list some important changes here:
@@ -207,7 +206,7 @@ After upgrade wechaty, see more in[blog](https://wechaty.github.io/wechaty-new-r
 
 ### bot.quit() change to bot.stop()
 
-### FriendRequest change to Friendship 
+### FriendRequest change to Friendship
 
 `FriendRequest` class refactored.
 
@@ -240,6 +239,7 @@ wechaty.on('friendship', request => {
 ```
 
 Related link:
+
 - [friend-bot.ts](https://github.com/wechaty/wechaty/blob/master/examples/friend-bot.ts)
 - [BREAKING CHANGE: v0.16 on('friend`) arguments changed!](https://github.com/wechaty/wechaty/issues/1196)
 - [BREAKING CHANGES v0.16: FriendRequest class will be replaced with Friendship](https://github.com/wechaty/wechaty/issues/1312)
@@ -250,11 +250,10 @@ From v0.16, Message.content() will be deprecated.
 From v0.18, Message.content() will be removed.
 
 Related Link:
+
 - [BREAKING CHANGE: v0.16 will replace `Message.content()` with `Message.text()`](https://github.com/wechaty/wechaty/issues/1163)
 
-
-### Remove `MediaMessage` class 
-
+### Remove `MediaMessage` class
 
 From v0.16, MediaMessage will be deprecated.
 From v0.18, MediaMessage will be removed.
@@ -262,15 +261,18 @@ From v0.18, MediaMessage will be removed.
 Use Message instead.
 
 Migration Example
+
 ```diff
 - bot.say(new MediaMessage('/image.png')
 + bot.say(new Message('/image.png')
 ```
 
 Related issue
+
 - [BREAKING CHANGE: v0.16 will remove `MediaMessage` class](https://github.com/wechaty/wechaty/issues/1164)
 
-#### A useful tip to send the image 
+#### A useful tip to send the image
+
 [FileBox](https://www.npmjs.com/package/file-box), FileBox is a virtual container for packing a file data into it for future readers, and easily transport between servers with the least payload, no mater than where it is (local path, remote URL, or cloud storage).
 
 ```ts
@@ -283,17 +285,20 @@ BOT_QR_CODE_IMAGE_FILE,
 ### Wechaty self() change to Wechaty.userSelf()
 
 Related issue:
+
 - [BREAKING CHANGE v0.16 Wechaty.self() eprecated, use Wechaty.userSelf() instead](https://github.com/wechaty/wechaty/issues/1369)
 
 ### Contact.personal() and Contact.official() change to Contact.type()
 
-#### Before
+#### Contact.personal() Before
+
 ```ts
 const isPersonal = contact.personal()
 const isOfficial = contact.official()
 ```
 
-#### After
+#### Contact.personal() sAfter
+
 ```ts
   /**
    * Return the type of the Contact
@@ -306,71 +311,78 @@ const isOfficial = contact.official()
 ```
 
 Related issue
+
 - [BREAKING CHANGE v0.16 Contact.personal() and Contact.official() deprecated, use Contact.type() instead](https://github.com/wechaty/wechaty/issues/1366)
 
-### Room.add() return from Promise<boolean> to Promise<void>
+### Room.add() return from Promise `<boolean>` to `Promise<void>`
 
 Related issue:
-- [BREAKING CHANGE v0.16 room.add return Promise<void> instead of return Promise<boolean>](https://github.com/wechaty/wechaty/issues/1362)
+
+- [BREAKING CHANGE v0.16 room.add return `Promise<void>` instead of return `Promise<boolean>`](https://github.com/wechaty/wechaty/issues/1362)
 
 ### Room.topic() change from Sycn to Async
-#### Before
+
+#### Room.topic() Before
 
 ```ts
 const topic = room.topic()
 ```
 
-#### After
+#### Room.topic() After
 
 ```ts
 const topic = await room.topic()
 ```
 
 Related issue:
+
 - [BREAKING CHANGE: v0.16 `Room.topic()` change from Sycn to Async](https://github.com/wechaty/wechaty/issues/1295)
 
 ### Room.alias(contact) change from Sycn to Async
 
-#### Before
+#### Room.alias(contact) Before
 
 ```ts
 const alias = room.alias(contact)
 ```
 
-#### After
+#### Room.alias(contact) After
 
 ```ts
 const alias = await room.alias(contact)
 ```
 
 Related issue:
+
 - [BREAKING CHANGE: v0.16 `Room.alias(contact)` change from Sycn to Async](https://github.com/wechaty/wechaty/issues/1293)
 
-### Room.memberList() change from Sycn to Async 
+### Room.memberList() change from Sycn to Async
 
-#### Before
+#### Room.memberList() Before
 
 ```ts
 const memberList = room.memberList()
 ```
 
-#### After
+#### Room.memberList() After
 
 ```ts
 const memberList = await room.memberList()
 ```
 
 Related Issue:
+
 - [BREAKING CHANGE: v0.16 `Room.memberList()` change from Sycn to Async](https://github.com/wechaty/wechaty/issues/1290)
 
 ### Room.member() from sync to async
-#### Before
+
+#### Room.member() Before
 
 ```ts
 const contact = room.member('Huan')
 ```
 
-#### After
+#### Room.member() After
 
 ```diff
 - const contact = room.member('Huan')
@@ -378,6 +390,7 @@ const contact = room.member('Huan')
 ```
 
 Related Issue:
+
 - [BREAKING CHANGES: v0.16 `Room.member()` from `sync` to `async`](https://github.com/wechaty/wechaty/issues/1258)
 
 ### Room.has(contact) change from Sycn to Async
@@ -390,19 +403,20 @@ if (room.has(contact)) {
 }
 ```
 
-#### Before
+#### Room.has(contact) Before
 
 ```ts
 const exist = room.has(contact)
 ```
 
-#### After
+#### Room.has(contact) After
 
 ```ts
 const exist = await room.has(contact)
 ```
 
 Related Link:
+
 - [BREAKING CHANGE: v0.16 `Room.has(contact)` change from Sycn to Async](https://github.com/wechaty/wechaty/issues/1289)
 - [Detect missing await in TypeScript](https://www.meziantou.net/2017/11/20/detect-missing-await-in-typescript)
 
@@ -410,13 +424,13 @@ Related Link:
 
 BREAKING CHANGE: v0.16 `Message.mention()` change from `sync` to `async`
 
-#### Before
+#### Message.mention() Before
 
 ```ts
 const mentionList = message.mention()
 ```
 
-#### After
+#### Message.mention() After
 
 ```diff
 - const mentionList = message.mention()
@@ -429,17 +443,17 @@ Related issue:
 
 ### `scan` Event args will become different
 
-The good news is: the old code seems will run without problem, because it will just do nothing: 
+The good news is: the old code seems will run without problem, because it will just do nothing:
 
 `const loginUrl = url.replace(/\/qrcode\//, '/l/')`
 
-#### Before
+#### `scan` Event Before
 
-https://github.com/wechaty/wechaty/blob/860e85ec776ac20e92751ec4b67e0d539ef40a16/examples/ding-dong-bot.ts#L74-L77
+<https://github.com/wechaty/wechaty/blob/860e85ec776ac20e92751ec4b67e0d539ef40a16/examples/ding-dong-bot.ts#L74-L77>
 
-#### After
+#### `scan` Event After
 
-https://github.com/wechaty/wechaty/blob/07008dff17ccc46b347ba28b85af167984573ea0/examples/ding-dong-bot.ts#L74-L76
+<https://github.com/wechaty/wechaty/blob/07008dff17ccc46b347ba28b85af167984573ea0/examples/ding-dong-bot.ts#L74-L76>
 
 Notice that we deleted the ~~`const loginUrl = url.replace(/\/qrcode\//, '/l/')`~~
 
@@ -487,7 +501,7 @@ Related Link
 
 1. Wechaty Multi-Instance Support #518
 1. NPM [clone-class](https://www.npmjs.com/package/clone-class)
-1. https://github.com/huan/node-clone-class/issues/5
+1. <https://github.com/huan/node-clone-class/issues/5>
 
 Related issue
 
@@ -496,7 +510,7 @@ Related issue
 - [Error: static puppet not found](https://github.com/wechaty/wechaty/issues/1161)
 - [Wechaty Multi-Instance Suport](https://github.com/wechaty/wechaty/issues/518)
 - NPM [clone-class](https://www.npmjs.com/package/clone-class)
-- https://github.com/huan/node-clone-class/issues/5
+- <https://github.com/huan/node-clone-class/issues/5>
 
 ### Message.ext() return '.ext' instead of 'ext' before
 

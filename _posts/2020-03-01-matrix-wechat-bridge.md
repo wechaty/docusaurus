@@ -6,10 +6,9 @@ categories: tutorial
 tags:
   - wechaty
   - matrix
-header:
-  teaser: /assets/2020/matrix-wechaty/2020-03-matrix-appservice-wechaty.png
+  - featured
+image: /assets/2020/matrix-wechaty/2020-03-matrix-appservice-wechaty.png
 ---
-<!-- markdownlint-disable -->
 
 > 作者: [立音](https://github.com/cubesky)，个人开发者。首发于博客: [使用 Matrix 接收微信消息](https://liyin.date/2020/03/01/matrix-wechat-bridge/) 遵循 CC BY-NC-SA 3.0 CN
 
@@ -29,7 +28,7 @@ header:
 ## 安装 NodeJS
 
 其实安装 NodeJS 搜索一下就能找到怎么安装，所以在此就简略啦。我使用一台国内的 VPS 安装 Debian Stable 作为 Wechaty 的运行服务器。避免因为微信异地登录而被封禁。不过由于 Wechaty 最好使用 NodeJS v10，而且因为使用官方源安装之后 Node 有一部分存储于系统的某些固定目录下，有一些 Node 包会调用重编译之类的命令进而引起权限问题导致失败，所以我建议使用 nvm 来安装 NodeJS。  
-安装 NVM 就十分简单了，直接执行 
+安装 NVM 就十分简单了，直接执行
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
@@ -37,7 +36,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 
 等待安装好就可以了。  
 
-待 NVM 安装完成后输入 
+待 NVM 安装完成后输入
 
 ```bash
 nvm install v10.18.0
@@ -61,14 +60,13 @@ yarn global add matrix-appservice-wechaty@next
 
 ## 安装所需的 Puppet
 
-在 matrix-appservice-wechaty 的程序中，我们需要定义一个 Puppet 来指示这个 AppService 使用什么微信后端来进行通信。现在可以选择的后端有 `Puppeteer` `Padplus` `Macpro` `Mock` `Wechat4u` 这几种。其中 `Puppeteer` 和 `Wechat4u` 基于 Web 协议，`Padplus` 基于 iPad 微信协议，`Macpro` 基于 MacOS 微信协议。选择合适的协议后使用下面的命令来安装。   
+在 matrix-appservice-wechaty 的程序中，我们需要定义一个 Puppet 来指示这个 AppService 使用什么微信后端来进行通信。现在可以选择的后端有 `Puppeteer` `Padplus` `Macpro` `Mock` `Wechat4u` 这几种。其中 `Puppeteer` 和 `Wechat4u` 基于 Web 协议，`Padplus` 基于 iPad 微信协议，`Macpro` 基于 MacOS 微信协议。选择合适的协议后使用下面的命令来安装。
 
 ```bash
 yarn global add wechaty-puppet-后端名
 ```
 
 > 注：后端名为全小写，如 `wechaty-puppet-wechat4u`
-
 > 注2：某些后端是收费的，请注意查看各后端的部署信息。
 
 目前已知 next 版本的 appservice 在使用 PadPlus 作为后端时需要 next 版本的 PadPlus。 `wechaty-puppet-padplus@next`
@@ -77,7 +75,7 @@ yarn global add wechaty-puppet-后端名
 
 先复制 [config.sample.yaml](https://github.com/chatie/matrix-appservice-wechaty/blob/master/config/config.sample.yaml)  到 config.yaml ，我建议单独为它创建一个文件夹，方便之后将所有的数据文件都放在这一个文件夹里。  
 
-```
+```yml
 domain: chatie.io
 homeserverUrl: https://matrix.chatie.io
 registration: wechaty-registration.yaml
@@ -135,7 +133,7 @@ chmod +x /path/to/config/start.sh
 
 同时还可以创建一个 systemd 配置来自动启动（如果你的 Wechaty 和 Synapse 不在同一个服务器则不要加 `After` 那行）
 
-```
+```shell
 [Unit]
 Description=Matrix Bridge WeChaty
 After=matrix-synapse.service
@@ -159,13 +157,13 @@ WantedBy=multi-user.target
 
 来到你的 Matrix 客户端上，对 `@wechaty:你的服务器` 发起 **私聊** ，等待 Bot 加入后它应该会提示  
 
-```
+```log
 This room has been registered as your bridge management/status room.
 ```
 
 看到这条提示后输入 `!login`，首次使用时 Bot 应该会提示  
 
-```
+```log
 You are not enable matrix-appservice-wechaty yet.
 ```
 
@@ -183,7 +181,7 @@ You are not enable matrix-appservice-wechaty yet.
 
 > 注意：截至到目前 latest 版本 (0.6.3) 没有这个命令，需要 next 版本 (0.7.2)
 
-## Matrix-AppService-Wechaty 
+## Matrix-AppService-Wechaty
 
 这个通讯桥目前是一个刚开始开发没有多长时间的状态，只能解决基础的消息互通问题，如果遇到对方发送的是链接消息的情况，Matrix 这边会显示一个超长的 xml 结构，期待之后版本更新能带来更多的功能！
 

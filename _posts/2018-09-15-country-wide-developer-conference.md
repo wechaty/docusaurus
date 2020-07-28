@@ -5,8 +5,9 @@ author: lijiarui
 categories: event
 tags:
   - meetup
-header:
-  teaser: /assets/2018/country-wide-developer-conference.jpg
+  - home
+  - featured
+image: /assets/2018/country-wide-developer-conference.jpg
 ---
 
 > Author: [李佳芮](https://github.com/lijiarui/)，Founder of BotOrange。

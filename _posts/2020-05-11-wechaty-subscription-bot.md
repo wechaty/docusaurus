@@ -2,14 +2,11 @@
 title: "用Wecahty制作订阅机器人(B站)"
 date: 2020-05-11 13:07 +0800
 author: fish-ball
-categories: event
+categories: tutorial
 tags:
   - wechaty
-header:
-  teaser: /assets/2020/wechaty-subscription-bot/teaser.png
+image: /assets/2020/wechaty-subscription-bot/teaser.png
 ---
-
-<!-- markdownlint-disable -->
 
 > 作者: [工画师](https://github.com/fish-ball)，分母为零的斜杠大龄青年程序员。
 <!-- more -->
@@ -30,7 +27,7 @@ header:
 
 于是先把登录部分撸下来：
 
-```
+```javascript
 bot.on('scan', (qrcode, status) => {
   if (status === ScanStatus.Waiting) {
     console.log(qrcode);
@@ -58,7 +55,7 @@ bot.on('scan', (qrcode, status) => {
 
 首先，既然是机器人，交互都来源于对话，那么最方便的方式就是直接将 UP 主的频道链接发给机器人，然后就知道具体的频道是什么了，所以这里做一个简单的正则就可以判断到发来的订阅请求：
 
-```
+```javascript
 // ...
 }).on('message', async msg => {
   // ...
@@ -80,9 +77,9 @@ bot.on('scan', (qrcode, status) => {
 {
   "subscriptions": {
     "9458053": {
-	  "lastTimestamp": 1589170983.101,
-	  "name":"李永乐老师官方"
-	}
+    "lastTimestamp": 1589170983.101,
+    "name":"李永乐老师官方"
+  }
   }
 }
 ```
@@ -93,7 +90,7 @@ bot.on('scan', (qrcode, status) => {
 
 大概是这样子：
 
-```
+```javascript
 class UserContext {
   userId: string;
   fname: string;
@@ -141,7 +138,7 @@ class UserContext {
 
 然后下面这一段把订阅的持久化做完，当然还要反馈一些提示给用户，顺道需要把频道的名称抓下来存在 UserContext 里面。
 
-```
+```javascript
 // ...
 }).on('message', async msg => {
   // ...
@@ -173,7 +170,7 @@ class UserContext {
 
 我把这个动作的代码封装到了一个 `SubscriptionRunner` 类里面（此处省略1000字）：
 
-```
+```javascript
 // 定时获取订阅的 UP 主的视频，如果发现更新则推送
 class SubscriptionRunner {
   static check() {
@@ -211,7 +208,7 @@ class SubscriptionRunner {
 
 然后，启动轮询的时机应该是在登录之后，一分钟刷一次吧：
 
-```
+```javascript
 bot.on('login', async () => {
   // 每分钟查一下有没有新片发布
   setTimeout(async () => {
@@ -228,7 +225,7 @@ bot.on('login', async () => {
 
 所以这两块我在 `UserContext` 类里面加了两个方法实现：
 
-```
+```javascript
 class UserContext {
 
   // ...
@@ -258,7 +255,7 @@ class UserContext {
 
 然后在 on message 那里引入一下：
 
-```
+```javascript
 bot.on('message', async msg => {
 
   // ...

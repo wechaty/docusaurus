@@ -5,8 +5,7 @@ author: leinue
 categories: project
 tags:
   - code
-header:
-  teaser: /assets/2017/leinue-bot.jpg
+image: /assets/2017/leinue-bot.jpg
 ---
 
 > Author: [@leinue](https://github.com/leinue), Developer && Designer, [ivydom](http://ivydom.com)

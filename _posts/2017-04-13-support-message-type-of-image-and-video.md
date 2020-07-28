@@ -5,11 +5,11 @@ date: '2017-04-13 20:37:11 +0800'
 categories: feature
 tags:
   - code
-header:
-  teaser: /assets/2017/mukaiu-ding-code.jpg
+  - featured
+image: /assets/2017/mukaiu-ding-code.jpg
 ---
 
-<img src="https://avatars2.githubusercontent.com/u/7746790?v=3&s=88">
+![avatars2](https://avatars2.githubusercontent.com/u/7746790?v=3&s=88)
 
 作者：@[mukaiu](https://github.com/mukaiu), [Wechaty Contributor](https://github.com/orgs/Chatie/teams/contributor)
 
