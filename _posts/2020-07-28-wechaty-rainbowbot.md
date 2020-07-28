@@ -6,8 +6,8 @@
  tags:
      - wechaty
      - wechaty-puppet-padplus
-	 - koa
-	 - weixin-openai
+     - koa
+     - weixin-openai
 image: /assets/2020/wechaty-rainbowbot/rainbow.jpg
 ---
 
