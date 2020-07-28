@@ -9,7 +9,7 @@ tags:
   - featured
 ---
 
-> Author: [@gavinwang23](https://github.com/gavinwang23) 
+> Author: [@gavinwang23](https://github.com/gavinwang23)
 > Code: [@gavinwang23/wechaty-puppet-douyin](https://github.com/gavinwang23/wechaty-puppet-douyin)
 
 ## 暑期2020
