@@ -11,7 +11,6 @@
 image: /assets/2020/wechaty-rainbowbot/rainbow.jpg
 ---
 
-
 > Author: [@CavonCheng](https://github.com/CavonCheng)
 > Code: [@rainbow-bot](https://github.com/CavonCheng/rainbow-bot)
 
@@ -24,7 +23,7 @@ image: /assets/2020/wechaty-rainbowbot/rainbow.jpg
 
 <!--more-->
 
-##### 典型的场景
+### 典型的场景
 
 - 每日评选销售精英团队Top10，在微信群中展示业绩数据（或者海报），并对销售欠佳的团队给予勉励，等等；
 
@@ -32,15 +31,15 @@ image: /assets/2020/wechaty-rainbowbot/rainbow.jpg
 
 顺便说一句，熟悉微商行业的应该知道，微商团队把微信群管理营销发挥到了极致，最典型的是他们的“报单”场景，小伙伴开单后立即向团队群汇报，群内一阵庆贺、鼓励，不得不说，这样的操作对团队积极性的调动是最直接的，对维持团队开单活动率的正向效果明显。所以传统行业在走向微信群营销管理的时候，自然而然地也会选择这种“接地气”的营销方式。
 
-##### 痛点
+### 痛点
 
 大部分传统行业，这类工作是人工执行，甚至需要设立专职人员监控业务系统的数据情况，（尽量的）及时编辑文案，发送给相应的微信营销群或者个人。然而作为一个有程序猿背景的业务管理者，这样重复的人工浪费是我无法忍受的。为什么不能接入一个微信robot，把这些事务性的繁琐工作接管，自动执行从业务系统到微信群的发送工作呢。当然，痛点也是显而易见的：业务系统与团队微信群本身是相互独立地存在，两者之间缺少一个通信连接的桥梁。
 
-##### 关键需求
+### 关键需求
 
 外部的业务系统可以根据数据达成情况主动地向特定的微信群和个人发送消息。
 
-##### 关键实现
+### 关键实现
 
 微信robot要暴露外部通信接口，第三方系统能够通过调用接口，实现微信消息（图片、文字、视频、文件等）的发送。
 
@@ -58,7 +57,7 @@ image: /assets/2020/wechaty-rainbowbot/rainbow.jpg
 
 为了避免重复制造轮子，我翻阅了不少已有的Wechaty项目，有基于爬虫+定时任务来实现外部系统与微信端通信的应用，但这与我的需求还是有区别的。我希望实现的是（理论上）任意时间点，外部系统主动调用接口与微信之间进行通信。最后决定自己动手搞起来，理论模型已经很清晰，一个最简单的实现结构是这样的：
 
-![](/assets/2020/wechaty-rainbowbot/pic1.png)
+![结构图](/assets/2020/wechaty-rainbowbot/pic1.png)
 
 RainbowBot作为中间通信桥梁，就像一弯`彩虹`，连接起远在天边的两个独立系统。
 
@@ -66,8 +65,8 @@ RainbowBot作为中间通信桥梁，就像一弯`彩虹`，连接起远在天�
 
 服务端基于 nodejs, koa, koa-jwt, multer
 
-* wechaty核心库 [wechaty](https://github.com/wechaty/wechaty)
-* wechaty的 ipad协议 [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus/)
+- wechaty核心库 [wechaty](https://github.com/wechaty/wechaty)
+- wechaty的 ipad协议 [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus/)
 
 ## 实现逻辑
 
@@ -92,8 +91,8 @@ const robot = {
             const sended = await multiSend(roomTopics, contactNames, fileBoxes)
             await delFiles(paths)
             ctx.body = {}
-        } catch (err) { 
-            throw err 
+        } catch (err) {
+            throw err
         } finally{
             if(paths) await delFiles(paths)
         }
@@ -125,31 +124,31 @@ RainbowBot不只实现了系统与微信之间的通信，也扩展微信助理�
 
 因此，我在会后就立即为RainbowBot开通了微信对话平台API，并将关键词触发逻辑移接到平台端。高原先生也为我们封装好了Wechaty接入微信对话开放平台的插件[wechaty-weixin-openai](https://github.com/wechaty/wechaty-weixin-openai) ，让我可以仅用少量的代码就能够快速的实现接入平台和机器人的对话逻辑的配置。
 
-在此推荐大家都看一下分享会的实况视频：https://www.bilibili.com/video/BV1LV411r756/
+在此推荐大家都看一下分享会的实况视频：[https://www.bilibili.com/video/BV1LV411r756/](https://www.bilibili.com/video/BV1LV411r756/)
 
 ## 本地运行
 
-- ##### 克隆项目
+- ### 克隆项目
 
 ```Shell
 git clone g https://github.com/CavonCheng/rainbow-bot
 cd rainbow-bot
 ```
 
-- ##### 安装依赖
+- ### 安装依赖
 
-```
+```Shell
 npm install
 ```
 
-- ##### 修改配置
+- ### 修改配置
 
   1. 修改`config/index.js` 文件，将里面的配置改为自己的。
   2. 修改`config/openai.js`、`config/puppet.js`，分别设置自己的微信对话开放平台 token和wechaty-puppet token。 [微信对话平台官网](https://openai.weixin.qq.com/)，扫码登录提交开发者信息即可获得api token。
 
 ### 启动
 
-- ##### 启动项目
+- #### 启动项目
 
 ```shell
 node app
@@ -160,3 +159,4 @@ node app
 ## 感谢
 
 感谢[@beclass](https://github.com/beclass/beclass)的开源项目[`wxbot`](https://github.com/beclass/wxbot)，这是一套优秀的BS版微信robot后台管理系统，让我这枚nodejs全栈初级修炼者学习到了很多，受益匪浅。感谢[Wechaty](https://wechaty.github.io/)团队提供微信机器人SDK，让开发者可以专注于业务代码。 感谢[句子互动](https://www.juzibot.com)提供的pad协议版token。
+
