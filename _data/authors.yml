@@ -971,3 +971,12 @@ csjuXYZ:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "hoc0415@foxmail.com"
+      
+CavonCheng:
+  name       : "橙子哥"
+  bio        : "独立全栈修炼者in Shandong（Java, Python, Nodejs）"
+  avatar     : "https://avatars1.githubusercontent.com/u/30438622?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/CavonCheng"
