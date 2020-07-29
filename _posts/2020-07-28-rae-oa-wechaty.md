@@ -117,4 +117,4 @@ npm run docker:clean
   - `event` 机器人所有message交互处理
   - `message` 具体的处理逻辑函数
   - `schedule` 定时任务
-- `index.ts` 数据请求
+- `index.ts` 程序入口
