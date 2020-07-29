@@ -1,12 +1,12 @@
 ---
- title: "基于python-wechaty的CPS BOT"
- date: 2020-06-19 00:00 +0800
- author: why2lyj
- header:
-   teaser: /assets/2020/python-wechaty-cps-bot/jdyangli.jpg
+title: "基于python-wechaty的CPS BOT"
+date: 2020-06-19 00:00 +0800
+author: why2lyj
+tags:
+  - python
+  - featured
+image: /assets/2020/python-wechaty-cps-bot/jdyangli.jpg
 ---
-
-<!-- markdownlint-disable -->
 
 > Author: [@why2lyj](https://github.com/why2lyj)
 
@@ -30,12 +30,11 @@
 
 安装 python-wechaty
 
-```
+```sh
 pip install wechaty
 ```
 
 笔者使用的版本是：0.5.dev1
-
 
 ### 编码
 
@@ -43,7 +42,7 @@ pip install wechaty
 
 创建定时任务
 
-```
+```py
 async def jd_job():
     scheduler = AsyncIOScheduler()
         # 每小时55分45秒时任务启动，抖动时间30秒
@@ -53,7 +52,7 @@ async def jd_job():
 
 向群内发送消息
 
-```
+```py
 async def jingdongfenxiang():
         # 由于 python 的 wechaty-puppet（0.0.8）并没有实现 find 方法，
         # 所以这里只能从 _pool 中获取群聊id
@@ -74,7 +73,7 @@ async def jingdongfenxiang():
 
 启动
 
-```
+```py
 async def main():
     t1 = asyncio.create_task(dingdong())   # ding-dong任务，详见 python-wechaty-get-start
     t2 = asyncio.create_task(jd_job())
@@ -83,12 +82,11 @@ async def main():
 asyncio.run(main())
 ```
 
-
 ### 运行
 
 运行
 
-```
+```sh
 python bot.py
 ```
 
@@ -98,9 +96,8 @@ python bot.py
 
 ### 致谢
 
-感谢Wechaty团队。感谢juzi科技提供的donut-token
+感谢[Wechaty](https://wechaty.github.io)团队。感谢[juzibot](https://www.juzibot.com)提供的donut-token
 
 项目链接
 
-https://github.com/why2lyj/youxiang-wechaty
-
+<https://github.com/why2lyj/youxiang-wechaty>

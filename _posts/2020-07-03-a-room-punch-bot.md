@@ -3,18 +3,16 @@
 title: "微信群打卡统计机器人"
 date: 2020-07-03 09:00 +0800
 author: secreter
-header:
-   teaser: /assets/2020/tiny-bot/teaser.jpeg
+categories: tutorials
+tags:
+  - featured
+image: /assets/2020/tiny-bot/teaser.jpeg
 ---
 
-<!-- markdownlint-disable -->
-
 > Author: [@secreter](https://github.com/secreter) 公众号redream
-
 > Code: [@tiny-bot](https://github.com/secreter/tiny-bot)
 
 一个可以OCR 打卡并生成统计方块图的机器人。
-
 
 ![打卡图片](/assets/2020/tiny-bot/teaser.jpeg)
 
@@ -42,7 +40,7 @@ header:
 
 首先，我们在代码编码之前，应该设计一些代码的目录结构和基本框架，好的框架能让开发得心应手，提高效率。
 
-```
+```js
 |-tiny-bot
   |-Dockerfile
   |-README.md
@@ -87,7 +85,6 @@ header:
 ```
 
 其中listeners 目录对消息类型进行了分类，这样，需要添加特定消息的业务逻辑时，就可以很清晰的添加。config.js 中提供了项目中的所有动态配置项，tpl/ 目录里，存放了代码的打卡模板，可以[点击查看效果](http://images.redream.cn/upic/2019/20200629184711-punch.html?data=[{"count":1,"timestamp":1593097495015},{"count":1,"timestamp":1593270295015},{"count":1,"timestamp":1593339046223},{"count":1,"timestamp":1593427696584},{"count":1,"timestamp":1593521084178},{"count":1,"timestamp":1593574357851},{"count":1,"timestamp":1593688908645},{"count":1,"timestamp":1593705938358}]&avatar=https://github.com/wechaty/wechaty.github.io/raw/master/assets/2020/tiny-bot/qr.jpeg&name=@2020&&h=450&w=375&x=0&y=0)（手机版）
-
 
 ### 打卡模板实现
 

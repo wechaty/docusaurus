@@ -7,8 +7,8 @@ tags:
   - bot friday
   - talk
   - meetup
-header:
-  teaser: /assets/2019/bot5-seminar-2/group-photo.png
+  - home
+image: /assets/2019/bot5-seminar-2/group-photo.png
 ---
 
 << 本次活动通知: [腾讯+句子互动第二弹，Chatbot Friday](https://mp.weixin.qq.com/s/fbY9BVLIqhy6Uwls0g4fRQ) <<
