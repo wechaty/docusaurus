@@ -43,7 +43,6 @@ image: /assets/2020/wechaty-electron/header.png
 
 ⭐自动生成推送内容图片，无须二次跳转访问链接
 
-
 ### 逻辑
 
 - 通过electron生成的桌面程序启动&管理wechaty
