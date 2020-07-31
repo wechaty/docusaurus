@@ -83,8 +83,8 @@ yarn run dev
 
 ### 效果图
 
-- ![截图](/assets/2020/wechaty-electron/pic_1.jpg)
-- ![截图](/assets/2020/wechaty-electron/pic_2.jpg)
+- ![截图](/assets/2020/wechaty-electron/pic01.jpg)
+- ![截图](/assets/2020/wechaty-electron/pic02.jpg)
 
 ### 致谢
 
