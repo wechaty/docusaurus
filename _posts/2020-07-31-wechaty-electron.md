@@ -14,6 +14,14 @@ image: /assets/2020/wechaty-electron/header.png
 
 ### 背景
 
+作为一个爱逛二手闲置数码的机佬，怎么淘到自己喜欢的且性价比高的设备是个技术活~
+
+曾经写过浏览器插件弹窗以及邮件推送等手段来传递信息，但是总是觉得稍微还是差了那么一点...
+
+场景覆盖性&信息实时性&所及即所得...这些痛点该如何解决呢？
+
+于是我找到了wechaty~
+
 👐 代码配置化很极客
 
 🙌 可视化配置操作更贴近大众用户
@@ -25,12 +33,15 @@ image: /assets/2020/wechaty-electron/header.png
 <!--more-->
 ### 功能
 
- 🌙基于electron的主要原因是为了可视化配置wechaty设置
-- ⭐可视化配置wechaty相关设置【token&bot_name等等】
-- ⭐可视化配置推送相关设置【关键词&推送时间段等】
+🌙基于electron的主要原因是为了可视化配置wechaty设置
 
- 🌙利用electron自动生成资讯内容图片
-- ⭐自动生成推送内容图片，无须二次跳转访问链接
+⭐可视化配置wechaty相关设置【token&bot_name等等】
+
+⭐可视化配置推送相关设置【关键词&推送时间段等】
+
+🌙利用electron自动生成资讯内容图片
+
+⭐自动生成推送内容图片，无须二次跳转访问链接
 
 
 ### 逻辑
@@ -72,6 +83,7 @@ yarn run dev
 ```
 
 ### 效果图
+
 - ![截图](/assets/2020/wechaty-electron/pic_1.jpg)
 - ![截图](/assets/2020/wechaty-electron/pic_2.jpg)
 
