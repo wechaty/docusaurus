@@ -31,6 +31,7 @@ wechaty-plugin-xyao 插件可以让你的 wechaty bot 具备以分布式模块�
 
 <!--more-->
 
+## demo
 
 ![sample](../assets/2020/wechaty-plugin-xyao/interaction-sample.png)
 
