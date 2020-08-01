@@ -17,12 +17,12 @@ image: /assets/2020/wechaty-plugin-xyao/arc.png
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/chatie/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
-
 wechaty-plugin-xyao 插件可以让你的 wechaty bot 具备以分布式模块执行自定义指令的能力。
 
 ## why wechaty-plugin-xyao
 
 使用这个插件，至少会带来以下几个优势：
+
 1. 如果 bot 的业务处理和微信通讯两部分逻辑都集中在单个进程，随着业务逻辑的增长，部分逻辑出现问题可能导致整个 bot crash，且单进程受限于单个
 节点的处理能力，也限制了能力的扩展。将微信通讯与业务解耦，业务和业务独立部署，能够有效缓解这些问题。
 2. 独立出的业务处理模块可以采用任意适合该领域业务的语言（目前提供了一个基于 java springboot 的 brain 模块开发框架）。
@@ -38,7 +38,6 @@ wechaty-plugin-xyao 插件可以让你的 wechaty bot 具备以分布式模块�
 上例中， bot 将 `fin:` 前缀的指令通过队列交给 fin 关联的模块处理，而 `x:` 前缀的指令交给 x 对应的模块。那些无法被识别
 为指令的消息（比如 `你好` `午饭吃什么`），则统一交给某个指定模块处理（通常是一个具备智能闲聊能力的处理模块，比如 百度 unit）。
 
-
 这些处理模块被称之为 `brain 模块`，它们为 bot 赋予了某一个特定领域的处理能力。
 
 ## 计划中的 brain 模块
@@ -49,7 +48,6 @@ wechaty-plugin-xyao 插件可以让你的 wechaty bot 具备以分布式模块�
 | [xyao-brain-jira](https://github.com/watertao/xyao-brain-jira) |  开发中 |提供 atlassion jira 相关的指令，比如将某个群组与某个 JIRA 项目绑定，定期推送每日 issue 进度及工时登录，检查 issue 规范性等 |
 | [xyao-brain-fin-info](https://github.com/watertao/xyao-brain-fin-info) | 开发中 | 提供股市相关信息的查询或推送特性 |
 | xyao-brain-translate | 待开发 | 提供中英文互翻的特性 |
-
 
 ## Requirements
 
@@ -110,16 +108,13 @@ bot.start()
 1. `log_file`: 日志文件路径
 1. `log_level`: 日志级别
 
-
 ## 部署架构参考
 
 ![architecture](../assets/2020/wechaty-plugin-xyao/arc.png)
 
 bot 在收到消息后，先尝试识别指令，识别为指令后，按前缀通过队列分发给指定的 brain 模块去处理。
 
-
 每个 brain 模块都有自己唯一的标识，该标识会作为指令的前缀，比如 `fin:index` 指令会交给标识为 `fin` 的 brain 模块。
-
 
 ## 🌀 指令
 
@@ -127,24 +122,26 @@ bot 在收到消息后，先尝试识别指令，识别为指令后，按前缀�
 
 比如跟机器人私聊或者在群内 @ 机器人，跟它说：
 
-```
+```text
 jira:bind-project -p READK223
 ```
+
 那么这条消息将被机器人识别为指令，
- - `jira` 是 brain 模块标识，机器人根据此标识将指令传递给相应的 brain 处理模块
- - `bind-project` 是指令关键字，brain 模块根据此关键字决定采用哪段业务处理逻辑
- - `-p READK223` 是指令的选项，通常一个指令会有0到多个选项，采用不同的选项，会影响业务处理的逻辑
- 
+
+- `jira` 是 brain 模块标识，机器人根据此标识将指令传递给相应的 brain 处理模块
+- `bind-project` 是指令关键字，brain 模块根据此关键字决定采用哪段业务处理逻辑
+- `-p READK223` 是指令的选项，通常一个指令会有0到多个选项，采用不同的选项，会影响业务处理的逻辑
 在开发 brain 模块 的时候，建议都支持 help 和 echo 指令，比如：
-```
+
+```text
 jira:help
 jira:help bind-project
 jira:echo tell me what i have said
 ```
+
 - `jira:help` 返回标识为 jira 的 brain 模块所支持的所有的指令
 - `jira:help bind-project` 返回 bind-project 指令的详情，包括支持的选项说明
 - `jira:echo tell me what i have said` 返回 echo 的内容，用于检验该 brain 模块当前是否在线并正常工作
-
 
 ## 🧠 brain 模块
 
@@ -162,7 +159,8 @@ brain 模块的开发并不限定语言或平台，任何能够连上 redis 并�
 为了简化 brain 模块的开发，可参考基于 java springboot 的 brain 开发框架（比如 [xyao-brain-trunk](https://github.com/watertao/xyao-brain-trunk) ），它会尽量将业务无关部分的逻辑统一处理掉，并默认提供了 help 或 echo 指令。
 
 项目目录结构如下：
-```
+
+```text
 ├── myapp
 |   ├── src
 |   |   └── main
@@ -184,6 +182,7 @@ brain 模块的开发并不限定语言或平台，任何能够连上 redis 并�
 `io.github.watertao.xyao.instruction` 这个 package 用于放置自定义指令处理类。
 
 `application.properties` 是配置文件，它包含了以下配置：
+
 ```properties
 # dev: 开发模式； prod: 生产模式。 这两种模式的主要区别是日志的输出不同，前者输出到控制台，后者输出到文件。一般我们在生产环境下，jar
 # 包同级目录中放一个 config/application.properties 用于覆盖 jar 内的 properties。
@@ -222,12 +221,15 @@ logging.encodePattern = %d{yyyy/MM/dd-HH:mm:ss SSS} %-5level - %msg %n
 以开发一个返回随机数的指令为例。brain 标识为 `foo`, 指令名为 `random`，参数 `-m` 代表随机数小于该参数指定的数。
 
 1. 修改 application.properties：
+
 ```properties
 xyao.brain = foo
 ```
+
 (其他诸如 redis 连接参数，日志 以及 帮助信息等配置自行按照实际情况修改)
 
-2. 添加 `io.github.watertao.xyao.instruction.RandomHandler` 类：
+1. 添加 `io.github.watertao.xyao.instruction.RandomHandler` 类：
+
 ```java
 package io.github.watertao.xyao.instruction;
 
@@ -247,11 +249,11 @@ import java.util.Random;
         msgEnv = MessageEnvironmentEnum.BOTH    // 这条指令使用的范围是私聊还是群聊，或都支持
 )
 public class RandomHandler extends AbstractInstructionHandler {
-    
+
     // 注入此 bean 用于发送消息至 redis
     @Autowired
     private XyaoChannelProxy channelProxy;
-    
+
     @Override
     protected Options defineOptions() {
         Options options = new Options();
@@ -262,31 +264,29 @@ public class RandomHandler extends AbstractInstructionHandler {
     @Override
     protected void handle(XyaoInstruction instruction, CommandLine command) {
         Integer max = 10;   // 默认最大范围是 10
-        
+
         // 如果用户指定了 m 选项，则最大范围设置成该选项值
         // （为了演示，忽略非数字字符的异常情况处理）
         if (command.hasOption("m")) {
             max = Integer.valueOf(command.getOptionValue("n"));
         }
-        
+
         Integer randomNum = new Random().nextInt(max + 1);
 
         // 通过父类方法 makeResponseMessage 构建响应消息，该方法会将回复对象以及群组设置为指令发起人和指令发起时的群组
         XyaoMessage xyaoMessage = makeResponseMessage(instruction);
         xyaoMessage.getEntities().add(new XyaoMessage.StringEntity(String.valueOf(randomNum)));
-        
+
         // 发送响应至 redis
         channelProxy.publish(xyaoMessage);
-        
+
     }
 }
-``` 
-
+```
 
 接着我们通过向机器人发送私聊或群内 @ 机器人，发送消息： `foo:random -m 100` ，机器人就会回复 0~100 以内的随机数。
 
 完成一个指令就是这么简单 😁。
-
 
 ## Maintainer
 
@@ -296,10 +296,4 @@ public class RandomHandler extends AbstractInstructionHandler {
 
 ## Copyright & License
 
-* Code released under the Apache-2.0 License
-
-
-
-
-
-
+1. Code released under the Apache-2.0 License
