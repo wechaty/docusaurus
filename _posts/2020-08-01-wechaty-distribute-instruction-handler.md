@@ -8,7 +8,7 @@ tags:
   - wechaty-puppet-padplus
   - chatbot
   - cli
-image: /assets/2020/manage-ur-customers/2020-0517-wechat.jpeg
+image: /assets/2020/wechaty-plugin-xyao/arc.png
 ---
 
 > 作者: [watertao](https://github.com/watertao/)
