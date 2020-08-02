@@ -7,7 +7,7 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
   - stock
-image: /assets/2020/wecahty-stock-bot/header.jpg
+image: /assets/2020/wechaty-stock-bot/header.jpg
 ---
 > Author: [wengcan](https://github.com/wengcan)
 > Code: [stock-bot](https://github.com/wengcan/stock-bot)
@@ -61,8 +61,8 @@ npm start
 
 ### 效果图
 
-- ![截图](/assets/2020/wecahty-stock-bot/pic01.png)
-- ![截图](/assets/2020/wecahty-stock-bot/pic02.png)
+- ![截图](/assets/2020/wechaty-stock-bot/pic01.png)
+- ![截图](/assets/2020/wechaty-stock-bot/pic02.png)
 
 ### 致谢
 
