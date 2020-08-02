@@ -16,6 +16,8 @@ image: /assets/2020/wecahty-stock-bot/header.jpg
 
 随着“牛市”的到来, 各种炒股，荐股的群又活跃起来， 大佬荐股的同时， 韭菜们也需要快速了解该股票的行情和基本面，于是有了这个小工具
 
+<font color=red size=5>股市有风险，投资需谨慎</font>
+
 <!--more-->
 ### 功能
 
