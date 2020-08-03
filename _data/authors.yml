@@ -971,3 +971,19 @@ csjuXYZ:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "hoc0415@foxmail.com"
+
+
+ziyi:
+  name        : "子弋"
+  bio         : "全沾工程师"
+  avatar      : "https://avatars2.githubusercontent.com/u/2668081?s=460&u=6e7f6312c57a4b4f23cc4504ff3f62d4e42f9259&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/forsigner"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "forsigner@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "http://www.forsigner.com"
