@@ -46,12 +46,17 @@ Wechaty.instance() // Global Instance
 ">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tfGZXoe_aA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
 ![Wechaty Plugin活动](/assets/2020/wechaty-plugin-milestone/plugin.png)
+
 [Wechaty 作者 李卓桓 Wechaty项目和社区生态介绍](https://www.bilibili.com/video/BV1vA411v73c)
 <iframe src="https://docs.google.com/presentation/d/13oUOIEnzdLWO6KZWztD_pMuu22AQ3SIMjk2wp8f-f18/embed?start=false&loop=false&delayms=3000
 " width='1306' height='763' allowfullscreen webkitallowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="0" style=" position: absolute; top:0; left:0; width:100%; height:100%; " ></iframe>
+
 ![李卓桓-1](/assets/2020/wechaty-plugin-milestone/huan1.png)
+
 ![李卓桓-2](/assets/2020/wechaty-plugin-milestone/huan2.png)
+
 [Wechaty Plugin 设计师，腾讯微信小程序框架开源项目Wepy 作者 Gcaufy 插件系统开发历程及应用](https://www.bilibili.com/video/BV1Et4y1y7Gc)
 <div class="zoom-container" style="
     position: relative;
@@ -76,9 +81,13 @@ Wechaty.instance() // Global Instance
     "
   ></iframe>
 </div>
+
 ![Gcaufy-1](/assets/2020/wechaty-plugin-milestone/gcaufy1.jpg)
+
 ![Gcaufy-2](/assets/2020/wechaty-plugin-milestone/gcaufy2.jpg)
+
 ![Gcaufy-3](/assets/2020/wechaty-plugin-milestone/gcaufy3.jpg)
+
 [15:00 - 15:30 Wechaty Puppet Donut/Padplus 作者 高原 Wechaty 插件的商业化落地展望](https://www.bilibili.com/video/BV13T4y1J7Ta)
 <div class="zoom-container" style="
     position: relative;
@@ -103,11 +112,16 @@ Wechaty.instance() // Global Instance
     "
   ></iframe>
 </div>
+
 ![Yuan-1](/assets/2020/wechaty-plugin-milestone/yuan1.jpg)
+
 ![Yuan-2](/assets/2020/wechaty-plugin-milestone/yuan2.jpg)
+
 [15:30 - 16:00 Wechaty Plugin开发者 王墨炱 基于插件的Wechaty开发](https://www.bilibili.com/video/BV1sz4y1973D)
 [Live Code Demo: Invite to Room](https://github.com/JesseWeb/invite2room_demo)
+
 ![Jessie-1](/assets/2020/wechaty-plugin-milestone/jessie1.jpg)
+
 ![Jessie-2](/assets/2020/wechaty-plugin-milestone/jessie2.jpg)
 
 ## Wechaty 插件库
