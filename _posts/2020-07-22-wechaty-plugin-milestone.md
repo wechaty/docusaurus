@@ -60,6 +60,7 @@ Wechaty.instance() // Global Instance
 ![李卓桓-2](/assets/2020/wechaty-plugin-milestone/huan2.png)
 
 ### 插件系统开发历程及应用
+
 [Wechaty Plugin 设计师，腾讯微信小程序框架开源项目Wepy 作者 Gcaufy 插件系统开发历程及应用](https://www.bilibili.com/video/BV1Et4y1y7Gc)
 <div class="zoom-container" style="
     position: relative;
