@@ -5,12 +5,12 @@ author: tingyinhelen
 categories: project
 tags:
   - code
-header:
-  teaser: /assets/2017/helen-screenshot-testing.jpg
+  - featured
+image: /assets/2017/helen-screenshot-testing.jpg
 ---
 
-> <img src="https://avatars2.githubusercontent.com/u/14006826?v=3&s=88">
->
+![avatar](https://avatars2.githubusercontent.com/u/14006826?v=3&s=88)
+
 > Author: [@Helen](https://github.com/TingYinHelen), Lenovo
 >
 > Helen is a full stack engineer living in Chengdu, familiar with D3. When not coding, she loves dancing, sings and play Erhu.

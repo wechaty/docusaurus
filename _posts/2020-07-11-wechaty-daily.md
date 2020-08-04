@@ -6,8 +6,7 @@ categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
-header:
-  teaser: /assets/2020/wechaty-daily/daily.png
+image: /assets/2020/wechaty-daily/daily.png
 ---
 
 > 作者: [zzhoouxin](https://github.com/zzhoouxin/)

@@ -8,8 +8,7 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
   - mysql
-header:
-  teaser: /assets/2020/info-subtotal/head.jpeg 
+image: /assets/2020/info-subtotal/head.jpeg 
 ---
 
 > 作者: [sking](https://github.com/shijianzhong)

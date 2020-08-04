@@ -3,11 +3,10 @@ title: 简单聊聊java版Puppet Manager的实现
 author: redmaple1
 date: "2020-06-16 10:55:00 +0800"
 tags: 
-    - wechaty
-    - java-wechaty
+  - wechaty
+  - java-wechaty
 categories: project
-header:
-  teaser: /assets/2020/java-puppet-manager/java-wechaty-logo.png
+image: /assets/2020/java-puppet-manager/java-wechaty-logo.png
 ---
 
 > 作者: [redmaple1](https://github.com/redmaple1/)

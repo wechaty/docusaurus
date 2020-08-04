@@ -2,11 +2,10 @@
 title: "用Wecahty制作订阅机器人(B站)"
 date: 2020-05-11 13:07 +0800
 author: fish-ball
-categories: event
+categories: tutorial
 tags:
   - wechaty
-header:
-  teaser: /assets/2020/wechaty-subscription-bot/teaser.png
+image: /assets/2020/wechaty-subscription-bot/teaser.png
 ---
 
 > 作者: [工画师](https://github.com/fish-ball)，分母为零的斜杠大龄青年程序员。

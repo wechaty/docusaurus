@@ -5,8 +5,8 @@ date: '2017-04-21 16:01:53 +0100'
 categories: tutorial
 tags:
   - code
-header:
-  teaser: /assets/2017/wildcat-rails-db-initial-structure.png
+  - featured
+image: /assets/2017/wildcat-rails-db-initial-structure.png
 ---
 
 ![architecture2][wildcat-rails-architecture-2]

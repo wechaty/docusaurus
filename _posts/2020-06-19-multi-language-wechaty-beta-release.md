@@ -4,8 +4,10 @@ author: huan
 categories: announcement
 tags:
   - release
-header:
-  teaser: /assets/2020/multi-language-wechaty-beta-released/multi-language-teaser.png
+  - event
+  - home
+  - sticky
+image: /assets/2020/multi-language-wechaty-beta-released/multi-language-teaser.png
 ---
 
 > Author: [Huan LI](https://github.com/huan), Author of Wechaty
@@ -196,7 +198,7 @@ Contributors:
 Committers:
 
 - Zhengxin DIAO (刁政欣) <https://github.com/diaozxin007>
-- Xiaoya REN (任筱雅) <https://github.com/diaozxin007>
+- Xiaoya REN (任筱雅) <https://github.com/redmaple1>
 
 Contributors:
 

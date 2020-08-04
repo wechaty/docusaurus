@@ -1,10 +1,14 @@
 ---
-title: "2002.07.05 多语言wechaty会议分享"
+title: "Multi-language Wechaty Meeting: Mocking & Code Quality"
 date: "2020-07-06 15:50:00 +0800"
 author: wj-Mcat
 categories: meeting-notes
-header:
-  teaser: assets/2020/meeting-notes/07-05-head-picture.jpg
+tags:
+  - home
+  - meeting
+  - talk
+  - featured
+image: assets/2020/meeting-notes/07-05-head-picture.jpg
 ---
 
 > 作者: [wj-Mcat](https://github.com/wj-Mcat/)

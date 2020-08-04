@@ -6,8 +6,7 @@ categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
-header:
-  teaser: /assets/2020/your-wechat-bot/banner.png
+image: /assets/2020/your-wechat-bot/banner.png
 ---
 
 > 作者: [peanut](https://github.com/isnl/)

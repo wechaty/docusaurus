@@ -5,8 +5,7 @@ author: wangning
 categories: project
 tags:
   - code
-header:
-  teaser: /assets/2017/wechaty-email.png
+image: /assets/2017/wechaty-email.png
 ---
 
 > Author: [@wangning](https://github.com/wnbupt/wechaty_email) is a postgraduate student at BUPT who is a frontend full stack engineer, with rich Machine Learning/NLP/Image project experiences.

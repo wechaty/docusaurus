@@ -1,12 +1,15 @@
 ---
- title: "Wonderful Wechaty devops toolset"
- date: 2020-06-20 09:00 +0800
- author: windmemory
- tags: 
-    - devops
-    - tool
- header:
-   teaser: /assets/2020/wonderful-wechaty-devops-tools/teaser-image.png
+title: "Wonderful Wechaty devops toolset"
+date: 2020-06-20 09:00 +0800
+author: windmemory
+categories: announcement
+tags: 
+  - devops
+  - tool
+  - talk
+  - home
+  - featured
+image: /assets/2020/wonderful-wechaty-devops-tools/teaser-image.png
 ---
 
 > Author: [@windmemory](https://github.com/windmemory) Wechaty contributor, author of [wechaty-puppet-padchat](https://github.com/wechaty/wechaty-puppet-padchat), [wechaty-puppet-padpro](https://github.com/wechaty/wechaty-puppet-padpro), [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus). CTO of [Juzi.Bot](https://pre-angel.com/portfolios/juzibot/)
