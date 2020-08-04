@@ -16,7 +16,7 @@ image: /assets/2020/wechaty-stock-bot/header.jpg
 
 随着“牛市”的到来, 各种炒股，荐股的群又活跃起来， 大佬荐股的同时， 韭菜们也需要快速了解该股票的行情和基本面，于是有了这个小工具
 
-```
+```shell
 股市有风险，投资需谨慎
 ```
 
@@ -30,7 +30,6 @@ image: /assets/2020/wechaty-stock-bot/header.jpg
 ⭐ 龙虎榜查询
 
 ⭐ 更多功能开发中
-
 
 ### 运行
 
@@ -49,6 +48,7 @@ cd stock-bot
 ```shell
 npm install
 ```
+
 获取最新股票代码列表
 
 ```shell
