@@ -1,11 +1,12 @@
 ---
- title: "用「Wechaty」和「微信对话开放平台」做个助理"
- date: 2020-07-16 12:00 +0800
- author: windmemory
- tags: 
-    - openai
- header:
-   teaser: /assets/2020/wechaty-weixin-openai/teaser-image.png
+title: "用「Wechaty」和「微信对话开放平台」做个助理"
+date: 2020-07-16 12:00 +0800
+author: windmemory
+tags: 
+  - openai
+  - talk
+  - sticky
+image: /assets/2020/wechaty-weixin-openai/teaser-image.png
 ---
 
 > Author: [@windmemory](https://github.com/windmemory) Wechaty contributor, author of [wechaty-puppet-padchat](https://github.com/wechaty/wechaty-puppet-padchat), [wechaty-puppet-padpro](https://github.com/wechaty/wechaty-puppet-padpro), [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus). CTO of [Juzi.Bot](https://pre-angel.com/portfolios/juzibot/)
@@ -346,7 +347,7 @@ PS：在现场演示过程中，我们的测试了很多种的负面情绪的消
 
 ## 微信对话开放平台
 
-[微信对话开放平台](https://openai.weixin.qq.com/) 是以提供串联微信生态内外的服务流程为核心，提供全网多样的流程化服务能力。为开发者和非开发者提供完备，高效，简易的可配置服务。
+[微信对话开放平台](https://openai.weixin.qq.com/) 是**以对话交互为核心**，为有客服需求的个人、企业和组织，提供智能业务服务与用户管理能力的**技能配置平台**，技能开发者可利用平台提供的工具自助完成客服机器人的搭建。
 
 ![openai-banner][openai-banner]
 
@@ -355,7 +356,7 @@ PS：在现场演示过程中，我们的测试了很多种的负面情绪的消
 [Women Who Code Beijing](https://mp.weixin.qq.com/s?__biz=MzIyMzc0NDgzMg==&mid=100000001&idx=1&sn=2cb2c65673dd989cebac1e69abad5ccd&chksm=6818c72e5f6f4e386470525349192f23c8407a77e0a628cec7dbee3e75d9704223a2ef7f2d95) 于2015年10月在北京成立，希望能够帮助和鼓励在这个城市生活和工作的 女性工程师在职业发展的道路上顺利前行。我们相信IT行业也会因为有更多的女性的加入变得更有生产力和创造力。
 
 [teaser]: /assets/2020/wechaty-weixin-openai/teaser-image.png
-[mobile-screenshot-1]: /assets/2020/wechaty-weixin-openai/mobile-screenshot-1.png
+[mobile-screenshot-1]: /assets/2020/wechaty-weixin-openai/mobile-screenshot-1.jpg
 [openai-screenshot]: /assets/2020/wechaty-weixin-openai/openai-screenshot.jpg
 [openai-qna]: /assets/2020/wechaty-weixin-openai/openai-qna.jpg
 [openai-config]: /assets/2020/wechaty-weixin-openai/openai-config.jpg

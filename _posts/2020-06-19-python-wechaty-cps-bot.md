@@ -1,9 +1,11 @@
 ---
- title: "基于python-wechaty的CPS BOT"
- date: 2020-06-19 00:00 +0800
- author: why2lyj
- header:
-   teaser: /assets/2020/python-wechaty-cps-bot/jdyangli.jpg
+title: "基于python-wechaty的CPS BOT"
+date: 2020-06-19 00:00 +0800
+author: why2lyj
+tags:
+  - python
+  - featured
+image: /assets/2020/python-wechaty-cps-bot/jdyangli.jpg
 ---
 
 > Author: [@why2lyj](https://github.com/why2lyj)

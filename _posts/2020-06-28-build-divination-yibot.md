@@ -2,8 +2,10 @@
 title: "使用wechaty自助算卦"
 date: 2020-06-28 09:00 +0800
 author: willcup
-header:
-  teaser: /assets/2020/yibot/1.jpg
+categories: project
+tags:
+  - typescript
+image: /assets/2020/yibot/1.jpg
 ---
 
 > Author: [@runningdata](https://github.com/runningdata)

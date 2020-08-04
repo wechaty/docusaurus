@@ -9,8 +9,7 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
   - nuxt
-header:
-  teaser: /assets/2020/mqbot/qrcode.png 
+image: /assets/2020/mqbot/qrcode.png 
 ---
 
 > 作者: [remainsu](https://github.com/remainsu)

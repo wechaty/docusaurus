@@ -6,8 +6,7 @@ categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
-header:
-   teaser: /assets/2020/wechat-daycard/header.png
+image: /assets/2020/wechat-daycard/header.png
 ---
 
 > 作者: [leijiahang](https://github.com/leijiahang/)

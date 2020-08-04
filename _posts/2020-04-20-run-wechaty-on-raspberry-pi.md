@@ -7,8 +7,7 @@ tags:
   - wechaty
   - iot
   - raspberrypi
-header:
-  teaser: /assets/2020/runwechatyonpi/head.png
+image: /assets/2020/runwechatyonpi/head.png
 ---
 
 > 作者: [cr4fun](https://github.com/cr4fun)，极客、物联网专家，SDK产品经理。

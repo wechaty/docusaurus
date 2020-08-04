@@ -6,9 +6,7 @@ categories: tutorial
 tags:
   - wechaty
   - financial
-
-header:
-  teaser: /assets/2020/financial-marketing/2020-03-30-wechaty-bond-bot.png
+image: /assets/2020/financial-marketing/2020-03-30-wechaty-bond-bot.png
 ---
 
 > 作者: lemonsx(柠檬x)，证券从业者，前平台产品经理

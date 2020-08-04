@@ -6,16 +6,32 @@ all: serve
 
 .PHONY: install
 install:
-	(cd .. && bundle install && bundle update)
+	bundle install && bundle update
 
 .PHONY: test
 test:
 	npm run test
 
+.PHONY: code
+code:
+	code .
+
+.PHONY: clean
+clean:
+	rm -fr docs/_site
+
+.PHONY: build
+build:
+	bundle exec jekyll build
+
 .PHONY: serve
 serve:
-	(cd .. && bundle exec jekyll serve --incremental)
+	bundle exec jekyll serve --incremental
+
+.PHONY: docker
+docker:
+	docker-compose -f config/docker-compose.yml up
 
 .PHONY: fit-image
 fit-image:
-	./scripts/fit-image.sh ../assets/
+	./scripts/fit-image.sh assets/

@@ -7,9 +7,8 @@ tags:
   - code
   - wechaty
   - webPanel
-  
-header:
-  teaser: /assets/2020/web-panel/web-head.png
+  - feature
+image: /assets/2020/web-panel/web-head.png
 ---
 
 > 作者: [Leo_chen](https://github.com/gengchen528/)，高级前端工程师，喜欢使用node做各种项目

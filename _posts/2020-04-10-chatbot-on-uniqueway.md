@@ -2,11 +2,10 @@
 title: "Chatbot 在定制旅游行业的应用"
 date: 2020-05-09 19:00 +0800
 author: likai
-categories: event
+categories: tutorial
 tags:
   - wechaty
-header:
-  teaser: /assets/2020/chatbot-on-uniqueway/teaser.jpg
+image: /assets/2020/chatbot-on-uniqueway/teaser.jpg
 ---
 
 > 作者: [李恺](https://github.com/tlikai)，无二之旅研发总监、资深后端工程师。

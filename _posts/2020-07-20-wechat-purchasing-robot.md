@@ -6,8 +6,7 @@ categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
-header:
-  teaser: /assets/2020/wechat-purchasing-robot/header.jpg
+image: /assets/2020/wechat-purchasing-robot/header.jpg
 ---
 
 > 作者: [DevoZou](https://github.com/zoudingyi/)

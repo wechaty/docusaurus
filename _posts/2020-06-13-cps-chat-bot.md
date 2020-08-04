@@ -1,10 +1,8 @@
 ---
-
- title: "CPS chat bot"
- date: 2020-06-13 09:00 +0800
- author: wss793062366
- header:
-   teaser: /assets/2020/cps-chat-bot/goodsmsg.jpeg
+title: "CPS chat bot"
+date: 2020-06-13 09:00 +0800
+author: wss793062366
+image: /assets/2020/cps-chat-bot/goodsmsg.jpeg
 ---
 
 > Author: [@wss793062366](https://github.com/wss793062366) your one-line bio at here

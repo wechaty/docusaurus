@@ -5,11 +5,11 @@ date: '2017-03-20 11:11:11 +0800'
 categories: feature
 tags:
   - code
-header:
-  teaser: /assets/2017/gcaufy-hot-reload-screencast.gif
+  - featured
+image: /assets/2017/gcaufy-hot-reload-screencast.gif
 ---
 
-<img src="https://avatars3.githubusercontent.com/u/2182004?v=3&s=88">
+![avatars](https://avatars3.githubusercontent.com/u/2182004?v=3&s=88)
 
 作者：@[Gcaufy](https://github.com/gcaufy), Tencent, [Wechaty Contributor](https://github.com/orgs/Chatie/teams/contributor)
 

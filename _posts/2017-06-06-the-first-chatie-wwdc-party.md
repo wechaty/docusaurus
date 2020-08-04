@@ -5,8 +5,9 @@ author: greatgeekgrace
 categories: event
 tags:
   - meetup
-header:
-  teaser: /assets/2017/greatgeekgrace-chatie-wwdc-666.jpg
+  - home
+  - featured
+image: /assets/2017/greatgeekgrace-chatie-wwdc-666.jpg
 ---
 
 > Author: [@greatgeekgrace](https://github.com/greatgeekgrace) Li Jiaxuan, Ex-Baidu-er, Tensorflow Expert who has just published a [ML Book](http://item.jd.com/12073631.html) last month.

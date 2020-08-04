@@ -1,5 +1,5 @@
 ---
-title: "MetaPuppetForPython--用Python写Wechaty程序"   
+title: "MetaPuppetForPython - 用Python写Wechaty程序"   
 date: 2020-03-07 13:39 -0800
 author: quantumFlame
 categories: tutorial  
@@ -7,10 +7,9 @@ tags:
   - wechaty
   - python
   - socket
-  - puppet   
-  
-header:
-  teaser: /assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.jpg
+  - puppet
+  - featured
+image: /assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.jpg
 ---
 
 > 作者: [Tom](https://github.com/quantumFlame)

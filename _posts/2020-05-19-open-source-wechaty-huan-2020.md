@@ -1,11 +1,12 @@
 ---
-title: "Azure Show - Wechaty 开源故事"
+title: "Wechaty 2016 - 2020：开源这四年 - Huan"
 author: huan
 categories: talks
 tags:
   - mvp
-header:
-  teaser: /assets/2020/azure-show/azure-show.png
+  - home
+  - talk
+image: /assets/2020/azure-show/azure-show-huan.png
 ---
 
 > Author: [Huan LI](https://github.com/huan), Microsoft Regional Director, AI MVP, Author of Wechaty
@@ -14,7 +15,7 @@ header:
 
 <!--more-->
 
-![huan](/assets/2020/azure-show/azure-show-huan.png)
+![Azure Show](/assets/2020/azure-show/azure-show.png)
 
 ## Azure Show
 

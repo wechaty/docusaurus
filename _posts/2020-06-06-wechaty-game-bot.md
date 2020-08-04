@@ -10,8 +10,8 @@ tags:
   - redis
   - sqlite
   - knex
-header:
-  teaser: /assets/2020/im-game-robot/qrcat.jpg 
+  - featured
+image: /assets/2020/im-game-robot/qrcat.jpg 
 ---
 
 > 作者: [osindex](https://github.com/osindex)

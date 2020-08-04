@@ -5,8 +5,7 @@ author: diaozxin007
 categories: project
 tags:
   - code
-header:
-  teaser: /assets/2019/remind-eat-1.jpg
+image: /assets/2019/remind-eat-1.jpg
 ---
 
 > Author: [犀利豆](https://xilidou.com/) 北邮本科，University of Leicester EE 研究生，Java后端开发，目前就职知乎。

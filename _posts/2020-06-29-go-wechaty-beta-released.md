@@ -1,10 +1,12 @@
 ---
-
- title: "go 语言可用的 wechaty 框架"
- date: 2020-09-18 13:30 +0800
- author: dchaofei
- header:
-   teaser: /assets/2020/go-wechaty/2020-06-29-go-wechaty.png
+title: "Go Wechaty Beta Released!"
+author: dchaofei
+categories: announcement
+tags:
+  - go
+  - home
+  - featured
+image: /assets/2020/go-wechaty/2020-06-29-go-wechaty.png
 ---
 
 > Author: [@dchaofei](https://github.com/dchaofei) The author of go-wechaty

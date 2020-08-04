@@ -5,8 +5,8 @@ date: '2017-7-13 23:04:27 +0800'
 categories: tutorial
 tags:
   - talk
-header:
-  teaser: /assets/2017/itdakashuo-how-to-build-a-chatbot-7.jpg
+  - featured
+image: /assets/2017/itdakashuo-how-to-build-a-chatbot-7.jpg
 ---
 
 > 摘要:
