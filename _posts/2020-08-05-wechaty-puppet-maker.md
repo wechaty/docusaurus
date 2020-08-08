@@ -108,8 +108,21 @@ Wechaty 通过精妙的代码设计，实现了基于一套应用层代码，自
 
 分享人：Wechaty Creator 李卓桓
 
-<iframe src="https://docs.google.com/presentation/d/13oUOIEnzdLWO6KZWztD_pMuu22AQ3SIMjk2wp8f-f18/embed?start=false&loop=false&delayms=3000
-" width='1306' height='763' allowfullscreen webkitallowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="0" style=" position: absolute; top:0; left:0; width:100%; height:100%; " ></iframe>
+<div class="video-container" style="
+    position: relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+">
+  <iframe width="560" height="315" src="https://docs.google.com/presentation/d/13oUOIEnzdLWO6KZWztD_pMuu22AQ3SIMjk2wp8f-f18/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="" style="
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+  "></iframe>
+</div>
 
 ![李卓桓-1](/assets/2020/wechaty-puppet-maker/huan1.png)
 
