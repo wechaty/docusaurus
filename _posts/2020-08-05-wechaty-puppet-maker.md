@@ -6,8 +6,7 @@ categories: project
 tags:
   - wechaty
   - puppet
-header:
-  teaser: /assets/2020/wechaty-puppet-maker/puppet.png
+image: /assets/2020/wechaty-puppet-maker/puppet.png
 ---
 
 > 作者: [Yinbohao](https://github.com/rickyyin98/)
