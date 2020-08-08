@@ -6,8 +6,7 @@ categories: project
 tags:
   - wechaty
   - plugin
-header:
-  teaser: /assets/2020/wechaty-plugin-milestone/plugin.png
+image: /assets/2020/wechaty-plugin-milestone/plugin.png
 ---
 
 > 作者: [Yinbohao](https://github.com/rickyyin98/)
