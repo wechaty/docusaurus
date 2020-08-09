@@ -89,7 +89,6 @@ const startWatchingLog = (bot:Wechaty,logOperations:WechatyLogOperation[])=>{
  }
 ```
 
-
 ```typescript
 export const watchAndStream = (file:string,callback:(content:string)=>void)=>{
   if(!fs.existsSync(file)){
