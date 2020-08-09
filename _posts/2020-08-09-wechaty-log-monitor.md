@@ -33,7 +33,7 @@ excerpt: 为了能让（营业中的）小助手可以有更棒的 readily avail
 
 ## 一、如何「掉线给码」
 
-```
+```bash
 yarn add wechaty-log-monitor@latest
 ```
 
@@ -204,4 +204,4 @@ export enum WechatyLogOperationSecurityRule {
 
 若pragmatically，『chatbot变成一个更简易的terminal』这件事真的行得通，那另一个非常有意思的发展方向就是结合OpenAI提及到的GPT3的一个很有意思的应用：[Natural Language Shell](https://beta.openai.com/?app=productivity&example=4_2_0) - 运用自然语言去做执行unix等命令。
 
-![qr-rescue](/assets/2020/wechaty-log-monitor/gtp3.jepg)
+![qr-rescue](/assets/2020/wechaty-log-monitor/gtp3.jeg)
