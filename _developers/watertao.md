@@ -1,7 +1,7 @@
 ---
 name: watertao
 site: https://github.com/watertao
-avatar: /assets/developers/huan/avatar.jpg
+avatar: https://avatars0.githubusercontent.com/u/19725525?s=460&v=4
 bio: 证券金融行IT打杂
 email: 1059912278@qq.com
 twitter: 
