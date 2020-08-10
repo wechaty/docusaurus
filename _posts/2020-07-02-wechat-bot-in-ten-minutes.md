@@ -1,3 +1,17 @@
+---
+title: "十分钟实现一个智能问答微信聊天机器人"
+author: luweiCN
+date: '2020-07-02 17:21:00 +0800'
+categories: bot
+tags:
+  - nodejs
+  - wechaty
+  - wechaty-puppet-padplus
+---
+
+<!-- markdownlint-disable -->
+> 作者: [luweiCN](https://github.com/luweiCN)
+
 # 十分钟实现一个智能问答微信聊天机器人
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/chatie/wechaty)
@@ -156,12 +170,3 @@ const TXRobot = (
 
 以上只是一个mvp的机器人，后期我会完善自己的机器人，实现一些可以帮我提高效率的功能，后面的代码我都会把代码同步到这个仓库，保证所有的代码开源。
 
----
-
-title: "十分钟实现一个微信聊天机器人"
-date: 2020-07-02
-author: luwei
-
----
-
-> Author: [@luwei](https://github.com/luweiCN)
