@@ -13,7 +13,6 @@ twitter:
 
 编程于我而言不仅是工作，更像玩乐高玩具，用它去实现有意思的想法，体验这种过程带来的快乐。
 
-
 ## Contact
 
 - Github: <https://github.com/watertao>
