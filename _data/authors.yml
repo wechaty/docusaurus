@@ -972,8 +972,8 @@ csjuXYZ:
       icon: "fas fa-fw fa-envelope-square"
       url: "hoc0415@foxmail.com"
 
-Hzhuhao:
-  name        : "Hzhuhao"
+hzhuhao:
+  name        : "hzhuhao"
   bio         : "专注于web开发。"
   avatar      : "https://avatars1.githubusercontent.com/u/24507171?s=460&u=18573952668759fa8d73e8abdcaafb0e7d40c6e2&v=4"
   links:
