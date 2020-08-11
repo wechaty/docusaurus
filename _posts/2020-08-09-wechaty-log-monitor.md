@@ -7,7 +7,7 @@ tags:
   - plugin
   - wechaty
   - devops
-image: /assets/2020/wechaty-log-monitor/demo.jepg
+image: /assets/2020/wechaty-log-monitor/demo.jpeg
 excerpt: 为了能让（营业中的）小助手可以有更棒的 readily availability，我写了这个wechaty-log-monitor插件来给在production跑的Wechaty做日志相关的devops。
 
 ---
@@ -25,7 +25,7 @@ excerpt: 为了能让（营业中的）小助手可以有更棒的 readily avail
 
 目前插件的主要功能是「掉线给码」：一个Wechaty掉线了，另一个Wechaty会发QR码给这个Wechaty的微信号来重新登陆。
 
-![qr-rescue](/assets/2020/wechaty-log-monitor/demo.jepg)
+![qr-rescue](/assets/2020/wechaty-log-monitor/demo.jpeg)
 
 这样掉线了就不用`ssh`到production服务器，然后`sudo su git`+`pm2 logs --lines 100`来进行扫码重登了。
 
@@ -67,7 +67,7 @@ botBob.use(WechatyLogMonitor({
 
 p.s. 掉线后，bot发一个二维码就不会再发给你了。如果你想要最新的登陆二维码，发「qr」给bot就行。
 
-![qr](/assets/2020/wechaty-log-monitor/qr.jepg)
+![qr](/assets/2020/wechaty-log-monitor/qr.jpeg)
 
 ## 二、`WechatyLogMonitor`的内部
 
@@ -203,4 +203,4 @@ export enum WechatyLogOperationSecurityRule {
 
 若pragmatically，『chatbot变成一个更简易的terminal』这件事真的行得通，那另一个非常有意思的发展方向就是结合OpenAI提及到的GPT3的一个很有意思的应用：[Natural Language Shell](https://beta.openai.com/?app=productivity&example=4_2_0) - 运用自然语言去做执行unix等命令。
 
-![qr-rescue](/assets/2020/wechaty-log-monitor/gtp3.jeg)
+![qr-rescue](/assets/2020/wechaty-log-monitor/gtp3.jpeg)
