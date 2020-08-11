@@ -49,6 +49,13 @@ cd stock-bot
 npm install
 ```
 
+参考config.sample.js 创建config.js 文件
+
+```shell
+export const token = "puppet_padplus_xxxx";
+export const activeRooms = ['BOT_TEST','测试群聊'];
+```
+
 获取最新股票代码列表
 
 ```shell
