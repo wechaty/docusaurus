@@ -46,6 +46,7 @@ const qrResuceForB = qrResuce(({
   adminWeixin: "BobWeixin"
 },{loginTest:"您好世界"}))
 botAlice.use(WechatyLogMonitor({
+   enableSelfToBeQrRescued: true,
    logOperations:[qrResuceForB]
 }))
 ```
@@ -59,6 +60,7 @@ const qrResuceForA = qrResuce(({
   adminWeixin: "AliceWeixin"
 },{loginTest:"#ping"))
 botBob.use(WechatyLogMonitor({
+  enableSelfToBeQrRescued: true,
   logOperations:[qrResuceForA]
 }))
 ```
@@ -79,9 +81,10 @@ wechaty-log-monitor里面所有东西都是函数式的。而且非常松耦合�
 
 ```typescript
 const startWatchingLog = (bot:Wechaty,logOperations:WechatyLogOperation[])=>{
-   _.each(logOperations,({onLogFileIsChanged, config})=>{
+   _.each(logOperations,(operation:WechatyLogOperation)=>{
+     const {onLogFileIsChanged, config} = operation
      if(typeof onLogFileIsChanged === "undefined") return
-     const {logFile} = config
+     const {logFile=""} = config
      watchAndStream(logFile,(content)=>{
        onLogFileIsChanged(bot,content)
      })
@@ -131,7 +134,7 @@ export type WechatyLogOperation = {
 
 ```typescript
 const onLogFileIsChanged = async (bot:Wechaty, newLogs:string) =>{
-  const { logFile="", adminWeixin} = config
+  const {adminWeixin} = config
   if(globalState.isDisabled) return
   if(globalState.isOtherBotAlive){
     const latestQRCode = qrCodeAwaitingToBeScanned(newLogs)
@@ -143,7 +146,7 @@ const onLogFileIsChanged = async (bot:Wechaty, newLogs:string) =>{
 }
 ```
 
-`qrCodeAwaitingToBeScanned`里的regex主要是来查找“INFO StarterBot...”和“INFO StarterBot onScan...”这两个string。
+`qrCodeAwaitingToBeScanned`里的regex主要是来查找“INFO StarterBot...”和“INFO StarterBot onScan...”这两个string。(WechatyLogMonitor的参数`enableSelfToBeQrRescued: true`将会让Wechaty在登陆和要扫码时给出对应这两个string的log，写入log file里。)
 
 ```typescript
 const qrCodeAwaitingToBeScanned = (lastFewLines:string):string|undefined => {
