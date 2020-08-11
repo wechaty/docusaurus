@@ -21,15 +21,19 @@ excerpt: 为了能让（营业中的）小助手可以有更棒的 readily avail
 
 最近基于Wechaty[做的一个学中文小助手ARCHY开始营业了](https://mp.weixin.qq.com/s/FcgaOOnZNPUuMSihmMs_lw)🤖🤖🍜～
 
+<img src="/assets/2020/wechaty-log-monitor/gif.gif" alt="gif-demo" style="width:300px">
+
 为了能让小助手可以有更棒的 readily availability，我写了这个[wechaty-log-monitor插件](https://github.com/archywillhe/wechaty-log-monitor)来给在production跑的Wechaty做日志相关的devops。这是一个建立于两个chatbots的二重奏。
 
 目前插件的主要功能是「掉线给码」：一个Wechaty掉线了，另一个Wechaty会发QR码给这个Wechaty的微信号来重新登陆。
 
-![qr-rescue](/assets/2020/wechaty-log-monitor/demo.jpeg)
+![qr-rescue](/assets/2020/wechaty-log-monitor/demo2.jpeg)
 
 这样掉线了就不用`ssh`到production服务器，然后`sudo su git`+`pm2 logs --lines 100`来进行扫码重登了。
 
 现在不管在吃饭、野外、还是地铁上，掉线了便可立马扫码重登。
+
+![thumbup](/assets/2020/wechaty-log-monitor/thumbup.jpeg)
 
 ## 一、如何「掉线给码」
 
@@ -146,7 +150,7 @@ const onLogFileIsChanged = async (bot:Wechaty, newLogs:string) =>{
 }
 ```
 
-`qrCodeAwaitingToBeScanned`里的regex主要是来查找“INFO StarterBot...”和“INFO StarterBot onScan...”这两个string。(WechatyLogMonitor的参数`enableSelfToBeQrRescued: true`将会让Wechaty在登陆和要扫码时给出对应这两个string的log，写入log file里。)
+`qrCodeAwaitingToBeScanned`里的regex主要是来查找“INFO StarterBot...”和“INFO StarterBot onScan...”这两个string。(`WechatyLogMonitor`的参数`enableSelfToBeQrRescued: true`将会让Wechaty在登陆和要扫码时给出对应这两个string的log，写入log file里。)
 
 ```typescript
 const qrCodeAwaitingToBeScanned = (lastFewLines:string):string|undefined => {
@@ -179,6 +183,8 @@ export const restartPM2 = (config: WechatyLogOperationConfig, parameter:{pm2Id:n
 }
 ```
 
+![restart](/assets/2020/wechaty-log-monitor/restart.jpeg)
+
 ## 五、待开发的Auth、GTP3功能
 
 目前 `WechatyLogOperationConfig` 里有一个 `securityRule`值，默认是`None`.
@@ -204,6 +210,6 @@ export enum WechatyLogOperationSecurityRule {
 
 我相信Auth功能对于wechaty-log-monitor插件来说将会是一个有意思的发展方向之一。
 
-若pragmatically，『chatbot变成一个更简易的terminal』这件事真的行得通，那另一个非常有意思的发展方向就是结合OpenAI提及到的GPT3的一个很有意思的应用：[Natural Language Shell](https://beta.openai.com/?app=productivity&example=4_2_0) - 运用自然语言去做执行unix等命令。
+若pragmatically，『chatbot变成一个更简易的terminal』这件事真的行得通，那另一个非常有意思的发展方向就是结合[OpenAI最近提及到GPT3的一个很有意思的应用：Natural Language Shell](https://beta.openai.com/?app=productivity&example=4_2_0) - 运用自然语言去做执行unix等命令。
 
-![qr-rescue](/assets/2020/wechaty-log-monitor/gtp3.jpeg)
+![gtp3](/assets/2020/wechaty-log-monitor/gtp3.jpeg)
