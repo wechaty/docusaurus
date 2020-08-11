@@ -58,7 +58,6 @@ image: /assets/2020/wechaty-personal-reminder/header.png
 
 ![web](/assets/2020/wechaty-personal-reminder/task-web.png)
 
-
 代码包含数据库信息，所以就不放出来了。
 
 ### 助手实现
@@ -67,16 +66,15 @@ image: /assets/2020/wechaty-personal-reminder/header.png
 
 ![bot](/assets/2020/wechaty-personal-reminder/bot.jpg)
 
-
 ### 开发
 
 如何启动助手项目体验？clone 项目 `npm run dev` 跑起来，扫描二维码即可：
 
 ```bash
-$ git clone git@github.com:forsigner/ziyi-bot.git
-$ cd ziyi-bot
-$ npm i
-$ npm run dev
+git clone git@github.com:forsigner/ziyi-bot.git
+cd ziyi-bot
+npm i
+npm run dev
 ```
 
 ## 展望
