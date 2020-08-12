@@ -34,12 +34,9 @@ jobs:
         git checkout master
     - name: Install dependencies
       run: npm install
-    - name: Build docusaurus
+    - name: Build Homepage
       run: |
-        pushd docusaurus
-        rm -fr build
-        npx docusaurus build
-        popd
+        bash -x ./scripts/build.sh
     - name: Bind git worktree with new-gh-pages folder and gh-pages branch
       run: |
         rm -fr new-gh-pages
@@ -47,8 +44,7 @@ jobs:
     - name: Copy files
       run: |
         mv docusaurus/build/* new-gh-pages/
-        mv docusaurus/build/.nojekyll new-gh-pages/
-        rmdir docusaurus/build
+        mv _sites/* new-gh-pages/
     - name: Deploy new-gh-pages
       run: |
         pushd new-gh-pages
