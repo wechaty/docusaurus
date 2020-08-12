@@ -1,0 +1,63 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: GitHub Pages CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [ 12.x ]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install dependencies
+      run: npm install
+    - name: Config Git
+      run: |
+        git config --global user.name 'Huan @ GitHub Action'
+        git config --global user.email 'zixia@zixia.net'
+    - name: Create orphan branch for gh-pages
+      run: |
+        git checkout --orphan gh-pages
+        git reset --hard
+        git commit --allow-empty -m "Orphan init"
+        git checkout master
+    - name: Build docusaurus
+      run: |
+        pushd docusaurus
+        rm -fr build
+        npx docusaurus build
+        popd
+    - name: Bind git worktree with new-gh-pages folder and gh-pages branch
+      run: |
+        rm -fr new-gh-pages
+        git worktree add new-gh-pages gh-pages
+    - name: Copy files
+      run: |
+        mv docusaurus/build/* new-gh-pages/
+        mv docusaurus/build/.nojekyll new-gh-pages/
+        rmdir docusaurus/build
+    - name: Deploy new-gh-pages
+      run: |
+        pushd new-gh-pages
+        git add --all
+        git commit -m "$(jq -r .version ../package.json)"
+        git push -f origin gh-pages
+        popd
+    - name: Unbind new-gh-pages folder from gh-pages branch
+      run: |
+        git worktree remove new-gh-pages
+        git branch -D gh-pages
+        rm -fr new-gh-pages

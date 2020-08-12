@@ -1,4 +1,4 @@
-name: NPM
+name: Editor CI
 
 on: [push, pull_request]
 

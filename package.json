@@ -77,5 +77,10 @@
     "probe-image-size": "^4.0.0",
     "tstest": "^0.4.2",
     "yaml-lint": "^1.2.4"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "npx git-scripts-pre-push"
+    }
   }
 }
