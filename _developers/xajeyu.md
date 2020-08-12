@@ -2,7 +2,7 @@
 name: xajeyu
 site: https://github.com/xajeyu
 bio: 究极无敌切图仔 
-avatar: https://avatars1.githubusercontent.com/u/26016496?s=460
+avatar: /assets/developers/xajeyu/avatar.png
 email: xajeyu@gmail.com
 twitter: https://www.weibo.com/u/5059307505
 ---
