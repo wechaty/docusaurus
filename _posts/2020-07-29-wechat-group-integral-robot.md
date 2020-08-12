@@ -6,8 +6,7 @@ categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
-header:
-  teaser: /assets/2020/wechat-group-integral-robot/header.jpg
+image: /assets/2020/wechat-group-integral-robot/header.jpg
 ---
 
 > 作者: [Hzhuhao](https://github.com/hzhuhao/)
