@@ -72,7 +72,7 @@ module.exports = {
 
 首先，感谢[Monitor Twitter](https://github.com/matthewpalmer/monitor-twitter)的开发者，我们发展了他们的主程序，实现了对Twitter账号的监听，具体的实现请参考twitter_monitor.js文件。
 核心的程序如下图，在每30秒poll一次Twitter的情况下，如果检测到有新Tweet发布，我们抓取Tweet的text()，然后同步发布到微信Wechat预设的房间内。
-![Core Code](/assets/2020/wechaty-twitter2wechat/core_code.jpg)
+![Core Code](/assets/2020/wechaty-twitter2wechat/core-code.jpg)
 
 ## 运行
 
