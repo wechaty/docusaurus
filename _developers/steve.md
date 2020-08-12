@@ -1,7 +1,7 @@
 ---
 name: Steve
 site: https://www.pesnaleague.com
-bio: I am Steve from New York, a Python/Excel/Web developer
+bio: a Web developer looking to expand IFTTT via Wechaty
 avatar: /assets/developers/steve/steve-avatar.png
 email: pesnaleague@gmail.com
 twitter: https://www.twitter.com/pesnaleague
@@ -15,7 +15,7 @@ twitter: https://www.twitter.com/pesnaleague
 
 如今的微信已经无处不在。我个人觉得wechaty，以及配套的机器人程序，可以大大扩展微信的功能性，让用户能够使用微信，作为一站式服务或者说界面，掌控到日常生活的方方面面。
 
-谢谢Juzibot,我很乐意加入Wechaty Contributor群，与Wechaty的开发者们进行更深度的交流沟通。如果在北美有业务开发的话，我也很乐意出一份力。
+谢谢Juzibot,我很乐意加入Wechaty Contributor群，与Wechaty的开发者们进行更深度的交流沟通。
 
 ## 联系我
 
