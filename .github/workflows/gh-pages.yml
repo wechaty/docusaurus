@@ -34,17 +34,13 @@ jobs:
         git checkout master
     - name: Install dependencies
       run: npm install
-    - name: Build Homepage
-      run: |
-        bash -x ./scripts/build.sh
     - name: Bind git worktree with new-gh-pages folder and gh-pages branch
       run: |
         rm -fr new-gh-pages
         git worktree add new-gh-pages gh-pages
-    - name: Copy files
+    - name: Build and copy all homepage files to new-gh-pages/ together
       run: |
-        mv docusaurus/build/* new-gh-pages/
-        mv _sites/* new-gh-pages/
+        bash -x ./scripts/build.sh new-gh-pages
     - name: Deploy new-gh-pages
       run: |
         pushd new-gh-pages
