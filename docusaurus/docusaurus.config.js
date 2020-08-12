@@ -27,12 +27,12 @@ module.exports = {
       items: [
         {
           label: 'News',
-          to: 'news/index.html',
+          href: 'http://wechaty.js.org/news/index.html',
           position: 'right'
         },
         {
           label: 'Community',
-          to: 'community/index.html',
+          href: 'http://wechaty.js.org/community/index.html',
           position: 'right'
         },
         {
