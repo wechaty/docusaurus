@@ -6,7 +6,7 @@ categories: project
 tags:
   - code
   - telegram
-  - home
+  - news
 image: /assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-1.png
 ---
 
@@ -16,7 +16,7 @@ Before introducing [Wechaty Telegram Bot Adaptor](https://github.com/hczhcz/wech
 
 ![telegram]({{site.baseurl}}/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-1.png)
 
-### Playing Werewolf on Telegram
+## Playing Werewolf on Telegram
 
 What are the differences between a chatbot and a game app? A chatbot is much more accessible. You do not need to let your friends download and install it. Instead, just say "hey, let's play Werewolf/UNO/Avalon..." and the chatbot will be ready for your friends and you. The process of playing the game and the process of chatting are actually "fused" together.
 
@@ -25,7 +25,7 @@ In addition to games, chatbots can involve in one's daily life from many aspects
 
 ![telegram]({{site.baseurl}}/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-2.jpg)
 
-### A Bot Involves in Your Daily Life (via Imgur)
+## A Bot Involves in Your Daily Life (via Imgur)
 
 Chatbots are good at encouraging user-generated contents. There are auto-reply bots in Telegram which allow users to add their own reply rules. Since auto-reply bots were added to our group, we fed a lot of interesting rules to it. Now, it looks like:
 
@@ -51,11 +51,11 @@ Taking [MESE bot](https://github.com/hczhcz/mese-next-telegram) as an example, i
 
 ![telegram]({{site.baseurl}}/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-3.png)
 
-### Telegram MESE Bot
+## Telegram MESE Bot
 
 ![telegram]({{site.baseurl}}/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-4.png)
 
-### WeChat MESE Bot
+## WeChat MESE Bot
 
 Now, when creating a new Telegram chatbot, I would like to run it on WeChat too. Considering each chatbot has its own needs and the solution from MESE bot can not cover all of them, it requires a more general way to adapt between Telegram and WeChat. The difference here is that a "general" library should be strictly compatible (as much as it can be) with Telegram's API standard like using an integer as a user ID and providing complete message objects as defined in [Telegram Bot API](https://core.telegram.org/bots/api).
 

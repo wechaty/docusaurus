@@ -5,7 +5,7 @@ author: huan
 categories: event
 tags:
   - meetup
-  - home
+  - news
 image: /assets/2018/wechaty-contributor-dinner-data-girl.jpg
 ---
 
@@ -26,9 +26,7 @@ The above contributors are:
 9. [胡莺夕](https://github.com/huyingxi), CS Student from BUPT, NLP Algrithm Intern at Microsoft Research Aisa
 10. [王宁](https://github.com/wnbupt), CS Student from BUPT, Frontend Intern at Alipay
 
-<!--more-->
-
-### Introduction Video
+## Introduction Video
 
 <div class="video-container" style="
     position: relative;

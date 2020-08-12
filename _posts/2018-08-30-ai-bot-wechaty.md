@@ -14,7 +14,6 @@ image: /assets/2018/hi-ai.jpg
 
 ![hiai](/assets/2018/hi-ai.jpg)
 
-<!--more-->
 ## 一、对AI的思考
 
 对AI的思考我们谈三点：AI的基本概念、AI研究的分类、AI研究的关键。

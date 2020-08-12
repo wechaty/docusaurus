@@ -10,7 +10,7 @@ image: /assets/2016/jaslin-case-study.jpg
 
 Author: @[JasLin](https://github.com/jaslin/), BotWave CTO, Wechaty Contributor
 
-### Usercase of using wechat robot with Wechaty
+## Usercase of using wechat robot with Wechaty
 
 ![Case Study][jaslin-case]
 

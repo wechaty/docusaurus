@@ -4,7 +4,7 @@ author: dchaofei
 categories: announcement
 tags:
   - go
-  - home
+  - news
   - featured
 image: /assets/2020/go-wechaty/2020-06-29-go-wechaty.png
 ---
