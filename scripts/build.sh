@@ -26,7 +26,7 @@ fi
 buildDocusarus
 buildJekyll
 
-mv -v docusaurus/build/* "$target"
-mv -v _site/* "$target"
+cp -Rav docusaurus/build/* "$target"
+cp -Rav _site/* "$target"
 
 touch "$target"/.nojekyll
