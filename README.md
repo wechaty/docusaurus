@@ -1,4 +1,4 @@
-# wechaty.js.org
+## wechaty.js.org
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
 [![GitHub Pages CI](https://github.com/wechaty/wechaty.js.org/workflows/GitHub%20Pages%20CI/badge.svg)](https://github.com/wechaty/wechaty.js.org/actions?query=workflow%3A%22GitHub+Pages+CI%22)
@@ -197,14 +197,8 @@ Contact rui@chatie.io to learn more
 
 ## Maintainer
 
-1. @lijiarui,
-[Rui LI](https://github.com/lijiarui),
-Founder & CEO of Juzi.BOT
-1. @huan,
-[Huan LI](https://github.com/huan)
-([李卓桓](http://linkedin.com/in/zixia)),
-Tencent TVP of Chatbot,
-\<zixia@zixia.net\>
+1. @lijiarui, [Rui LI](https://github.com/lijiarui), Founder & CEO of Juzi.BOT
+1. @huan, [Huan LI](https://github.com/huan) ([李卓桓](http://linkedin.com/in/zixia)), Tencent TVP of Chatbot, \<zixia@zixia.net\>
 
 ## Copyright & License
 

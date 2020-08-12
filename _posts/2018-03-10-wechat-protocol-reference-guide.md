@@ -17,8 +17,7 @@ image: /assets/2018/h4dex-wechatprotocol.jpeg
 
 ![Wechat Protocol](/assets/2018/h4dex-wechatprotocol.jpeg)
 
-<!--more-->
-### 准备工作
+## 准备工作
 
 > 开发环境：
 
@@ -40,7 +39,7 @@ image: /assets/2018/h4dex-wechatprotocol.jpeg
 编译顺序为： Mars相关依赖 / SQLite3 -> MicrochatSDK(基于Mars Win32 Example) -> MicroChat(用户层)
 ```
 
-### 微信是如何通信的呢？
+## 微信是如何通信的呢？
 
 > 端口
 
@@ -493,7 +492,7 @@ public class PingClient {
 1. 微信协议最小成本为16字节，大部分时间若干个消息包和在一起，批量传输。微信协议说不上最简洁，也不是最节省流量，但是非常成功的。
 1. 若服务器检测到一些不确定因素，可能会导致微启用安全套接层SSL协议进行常规的TCP长连接传输。短连接都没有发生变化
 
-### MicroChat使用指南
+## MicroChat使用指南
 
 > 请求地址
 
@@ -607,7 +606,7 @@ private:
 5. proxy
 6. SQLite3
 
-### 附录
+## 附录
 
 Microsoft Exchange Active Sync协议，简称EAS，分为folderrsync(同步文件夹目录，即邮箱内有哪几个文件夹)和sync（每个文件夹内有哪些文档）两部分。
 
@@ -628,7 +627,7 @@ key是递增的，但不要求连续
 请求的某个参数决定服务器是否立即返回
 ```
 
-### 传送门
+## 传送门
 
 原版Github传送门(已修复DNS错误301问题)：
 > <https://github.com/InfiniteTsukuyomi/MicroChat/>
@@ -636,7 +635,7 @@ key是递增的，但不要求连续
 Python版
 > <https://github.com/InfiniteTsukuyomi/MicroChat/tree/master/test>
 
-### 感谢
+## 感谢
 
 特别鸣谢 CSDN博客、博客园的微信协议分析文章作者，是你们的文章参考带领我参考学习和验证。给了很大启发和帮助。
 
@@ -648,6 +647,6 @@ Python版
 
 <http://www.blogjava.net/yongboy/archive/2014/03/05/410636.html>
 
-### 严重声明
+## 严重声明
 
 > 请勿外传用于任何商业用途，违者后果自负！

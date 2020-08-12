@@ -11,30 +11,30 @@ image: /assets/2020/wechaty-forwardbot/header.png
 > Author: [xiaok](https://github.com/22528850)
 > Code: [Github](https://github.com/22528850/wechaty-forwardbot)
 
-### 背景
+## 背景
 
 运营群需要有价值的内容，才能把用户留住。但是自己又懒得搞这些内容  
 所以最好就是,直接把别人群有价值的内容转发到自己群  
 既能偷懒，还能留住用户，岂不美哉？
 
-### 功能
+## 功能
 
 判断n个群里面是否存在xxx关键词  
 是则转发至自己的n个群
 
-### 逻辑
+## 逻辑
 
 - 监听配置好指定的群消息
 - 判断是否存在某个关键词
 - 存在则转发到配置好的群
 
-### 依赖
+## 依赖
 
 - wechaty：wechaty核心库
 - wechaty-puppet-padplus：wechaty iPad协议
 - qrcode-terminal: 终端输出二维码
 
-### 运行
+## 运行
 
 克隆项目
 
@@ -55,7 +55,7 @@ npm install
 node index.js
 ```
 
-### 开发
+## 开发
 
 ```javascript
 .on('message', v => {
@@ -86,7 +86,7 @@ node index.js
 })
 ```
 
-### 致谢
+## 致谢
 
 感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
 感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token

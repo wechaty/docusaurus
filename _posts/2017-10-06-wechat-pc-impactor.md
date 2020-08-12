@@ -24,7 +24,6 @@ image: /assets/2017/h4dex-inject.png
 PEid、Ollydbg、IDA pro、CheatEngine、DLL自动注入工具、微信电脑版2.4.1.37/79
 ```
 
-<!--more-->
 ## 关于对微信PC版Hook的一点研究分享
 
 ### HOOK 注入类  hookinject.h

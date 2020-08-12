@@ -5,15 +5,15 @@ description: 'Alternative Projects'
 
 Wechaty is similar to some patterns and technologies, but is also different from them in important ways. We'll list some of the similarities below.
 
-### Python
+## Python
 
 - itchat
 - WeixinBot
 
-### JavaScript
+## JavaScript
 
 - wechat4u
 
-### .Net(C#)
+## .Net(C#)
 
 - Senparc.Weixin

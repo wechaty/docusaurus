@@ -29,10 +29,8 @@ Wechaty 近期有了很大的升级，从0.14版本之后，开始陆续支持�
 
 ![image](https://github.com/wechaty/wechaty/wiki/image/abstract-info.png)
 
-- Puppeteer
-基于网页微信的实现，通过puppet连接到Wechaty API。
-- Padchat
-基于ipad 协议的实现，通过puppet 连接到Wechaty API。
+- Puppeteer: 基于网页微信的实现，通过puppet连接到Wechaty API。
+- Padchat: 基于ipad 协议的实现，通过puppet 连接到Wechaty API。
 
 具体的Puppet 和各个实现方法，可以参考下图和这篇博客：[Wechaty New Version 0.16(BETA, with super power) Released](https://wechaty.github.io/wechaty-new-release-version-0.16/)
 
@@ -154,25 +152,25 @@ tslint 和tsconfig 建议参考wechaty 的配置：
 这里针对wechaty 的一些配置进行说明
 
 - "strict" : true
-启用所有严格类型检查选项。 启用 --strict相当于启用 --noImplicitAny, --noImplicitThis, --alwaysStrict,--strictNullChecks和 --strictFunctionTypes和--strictPropertyInitialization。
+    启用所有严格类型检查选项。 启用 --strict相当于启用 --noImplicitAny, --noImplicitThis, --alwaysStrict,--strictNullChecks和 --strictFunctionTypes和--strictPropertyInitialization。
 - "noEmitOnError"              : true
-报错时不生成输出文件。
+    报错时不生成输出文件。
 - "noUnusedLocals"             : true
-若有未使用的局部变量则抛错。
+    若有未使用的局部变量则抛错。
 - "noImplicitReturns"          : true
-不是函数的所有返回路径都有返回值时报错。
+    不是函数的所有返回路径都有返回值时报错。
 - "noFallthroughCasesInSwitch" : true
-报告switch语句的fallthrough错误。（即，不允许switch的case语句贯穿）
+    报告switch语句的fallthrough错误。（即，不允许switch的case语句贯穿）
 - "strictNullChecks"           : true
-在严格的 null检查模式下， null和 undefined值不包含在任何类型里，只允许用它们自己和 any来赋值（有个例外， undefined可以赋值到 void）
+    在严格的 null检查模式下， null和 undefined值不包含在任何类型里，只允许用它们自己和 any来赋值（有个例外， undefined可以赋值到 void）
 - "noImplicitAny"              : true
-在表达式和声明上有隐含的 any类型时报错。 相关issue: [ts-node 7.0 breaking change: Skip `files` by default](https://github.com/wechaty/wechaty/issues/1383)
+    在表达式和声明上有隐含的 any类型时报错。 相关issue: [ts-node 7.0 breaking change: Skip `files` by default](https://github.com/wechaty/wechaty/issues/1383)
 - "no-floating-promises": true
-如果有async 方法，要求必须使用await。相关issue: [Prevent the Floating Promise in the Async/Await Code](https://github.com/wechaty/wechaty/issues/1346)
+    如果有async 方法，要求必须使用await。相关issue: [Prevent the Floating Promise in the Async/Await Code](https://github.com/wechaty/wechaty/issues/1346)
 - "noUnusedParameters"         : true
-若有未使用的参数则抛错。
+    若有未使用的参数则抛错。
 - "noImplicitThis"             : true
-当 this表达式的值为 any类型的时候，生成一个错误。
+    当 this表达式的值为 any类型的时候，生成一个错误。
 
 更多参考[typescript 文档](https://tslang.cn/docs/handbook/compiler-options.html)
 

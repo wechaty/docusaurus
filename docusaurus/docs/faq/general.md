@@ -1,9 +1,8 @@
 ---
 sidebar_label: General
 hide_title: true
+title: 'Wechaty FAQ: General'
 ---
-
-# Wechaty FAQ: General
 
 ## Table of Contents
 

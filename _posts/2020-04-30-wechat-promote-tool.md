@@ -46,10 +46,9 @@ image:  /assets/2020/promote-bot/banner.png
 ## 测试效果
 
 * 机器人相关操作
-![INVITE](/assets/2020/promote-bot/result.jpg)
-
+    ![INVITE](/assets/2020/promote-bot/result.jpg)
 * 测试发送效果
-![INVITE](/assets/2020/promote-bot/result1.png)
+    ![INVITE](/assets/2020/promote-bot/result1.png)
 
 ## 后续计划
 

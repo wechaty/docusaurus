@@ -11,30 +11,30 @@ image: /assets/2020/wechaty-lottery/lottery-header.jpg
 > Author: [csjuXYZ](https://github.com/csjuXYZ)
 > Code: [wechaty_lottery](https://github.com/csjuXYZ/wechaty_lottery)
 
-### 背景
+## 背景
 
 目前群内抽奖的方法主要有两种:红包最佳手气和第三方抽奖小程序
 而这两种方法从形式到结果的通知都不够直观便捷,不适合高频快速的运营
 所以有了制作群内抽奖机器人的想法
-<!--more-->
-### 功能
+
+## 功能
 
 通过关键词触发机器人随机抽取群内一人获奖,已除去发奖人与机器人
 
-### 逻辑
+## 逻辑
 
 - 通过"抽奖+空格"格式触发抽奖机器人,例如"抽奖 抱枕","抽奖 一等奖"等  
 - 机器人被触发后获取当前群内成员数组,并去除机器人和发奖人
 - 等概率随机抽取一人,在群内消息通知中奖信息并同时@发奖人和中奖人
 - ![截图](/assets/2020/wechaty-lottery/pic01.jpg)
 
-### 依赖
+## 依赖
 
 - wechaty：wechaty核心库
 - wechaty-puppet-padplus：wechaty iPad协议
 - qrcode-terminal: 终端输出二维码
 
-### 运行
+## 运行
 
 克隆项目
 
@@ -55,7 +55,7 @@ npm install
 npm run serve
 ```
 
-### 开发
+## 开发
 
 ```javascript
 const { Message } = require("wechaty")
@@ -135,7 +135,7 @@ async function lottery(msg) {
 }
 ```
 
-### 致谢
+## 致谢
 
 感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
 感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token

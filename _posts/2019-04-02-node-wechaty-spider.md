@@ -336,7 +336,8 @@ npm run start
 
 1. 执行npm run start时无法安装puppet-puppeteer&&Chromium
 
-* Centos7下部署出现以下问题
+Centos7下部署出现以下问题
+
 ![image](/assets/2019/koa-wechaty-7.jpeg)
 
 问题原因:[https://segmentfault.com/a/1190000011382062](https://segmentfault.com/a/1190000011382062)
