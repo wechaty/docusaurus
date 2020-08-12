@@ -5,7 +5,7 @@ author: lijiarui
 categories: migration
 tags:
   - code
-  - home
+  - news
 image: /assets/2018/code-migration-zh.png
 ---
 

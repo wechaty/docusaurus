@@ -5,7 +5,7 @@ author: huan
 categories: announcement
 tags:
   - code
-  - home
+  - news
 ---
 ![Wechaty Logo][wechaty-logo-image]
 

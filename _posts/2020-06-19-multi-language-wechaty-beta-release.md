@@ -5,7 +5,7 @@ categories: announcement
 tags:
   - release
   - event
-  - home
+  - news
   - sticky
 image: /assets/2020/multi-language-wechaty-beta-released/multi-language-teaser.png
 ---
