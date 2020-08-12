@@ -35,7 +35,7 @@ jobs:
     - name: Install dependencies
       run: |
         npm install
-        make install
+        sudo make install
     - name: Bind git worktree with new-gh-pages folder and gh-pages branch
       run: |
         rm -fr new-gh-pages
