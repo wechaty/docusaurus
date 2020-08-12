@@ -13,12 +13,15 @@ function buildJekyll () {
   make build
 }
 
+target=$1
 
-target=${1:-new-gh-pages}
-[ -d "$target" ] || {
+if [ -z "$target" ]; then
+  >&2 echo "You need to provide a folder name to store the build artifact fles."
+  exit 1
+elif [ ! -d "$target" ]; then
   >&2 echo "$target directory not exist!"
   exit 1
-}
+fi
 
 buildDocusarus
 buildJekyll
