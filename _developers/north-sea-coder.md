@@ -1,8 +1,8 @@
 ---
-name: NorthSeacoder
+name: north-sea-coder
 site: http://www.nsc.best
 bio: enjoying
-avatar: https://avatars2.githubusercontent.com/u/30330837?s=460&u=1cd6e7c560308a159cf25295d652e375924ddf7e&v=4
+avatar: /assets/2020/rae-oa-wechaty/github-avatars.jpg
 email: 646388689@qq.com
 ---
 
