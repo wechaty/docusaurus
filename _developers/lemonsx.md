@@ -7,8 +7,6 @@ email:
 twitter: 
 ---
 
-
-
 ## Contact me
 
 - Github: <https://github.com/lemonsX>
