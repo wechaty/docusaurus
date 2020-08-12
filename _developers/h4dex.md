@@ -7,7 +7,7 @@ email:
 twitter: 
 ---
 
-会使用各种计算机语言写出 Hello World 的设计师（http://icefox.org/）
+会使用各种计算机语言写出 Hello World 的设计师 <http://icefox.org>
 
 ## Contact me
 
