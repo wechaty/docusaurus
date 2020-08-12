@@ -36,24 +36,24 @@ module.exports = {
           title: 'Docs',
           items: [
             { label: 'Getting Started', to: 'docs/getting-started' },
-            { label: 'FAQ', to: 'docs/faq/README' },
-            { label: 'Tutorial', to: 'docs/video-tutorial' },
-            { label: 'API Reference', to: 'docs/api/README' },
+            { label: 'FAQ',             to: 'docs/faq/README' },
+            { label: 'Tutorial',        to: 'docs/video-tutorial' },
+            { label: 'API Reference',   to: 'docs/api/README' },
           ],
         },
         {
           title: 'Community',
           items: [
-            { label: 'Stack Overflow', href: 'https://stackoverflow.com/questions/tagged/wechaty' },
-            { label: 'Gitter', href: 'https://gitter.im/Chatie/wechaty' },
-            { label: 'Twitter', href: 'https://twitter.com/chatieio' },
+            { label: 'Stack Overflow',  href: 'https://stackoverflow.com/questions/tagged/wechaty' },
+            { label: 'Gitter',          href: 'https://gitter.im/Chatie/wechaty' },
+            { label: 'Twitter',         href: 'https://twitter.com/chatieio' },
           ],
         },
         {
           title: 'More',
           items: [
-            { label: 'Blog', to: 'blog' },
-            { label: 'GitHub', href: 'https://github.com/wechaty/wechaty#readme' },
+            { label: 'Blog',    href: 'https://wechaty.js.org/community/', target: '_self' },
+            { label: 'GitHub',  href: 'https://github.com/wechaty/wechaty#readme' },
           ],
         },
       ],
