@@ -2,7 +2,7 @@
 name: Steve
 site: https://www.pesnaleague.com
 bio: I am Steve from New York, a Python/Excel/Web developer
-avatar: https://avatars1.githubusercontent.com/u/38563149?s=400&u=467bd61f9d073d0975c15f73cfd5ef2acec02335&v=4
+avatar: /assets/2020/wechaty-twitter2wechat/steve.png
 email: pesnaleague@gmail.com
 twitter: https://www.twitter.com/pesnaleague
 ---
