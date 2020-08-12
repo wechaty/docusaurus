@@ -22,8 +22,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Install dependencies
-      run: npm install
     - name: Config Git
       run: |
         git config --global user.name 'Huan @ GitHub Action'
@@ -34,6 +32,8 @@ jobs:
         git reset --hard
         git commit --allow-empty -m "Orphan init"
         git checkout master
+    - name: Install dependencies
+      run: npm install
     - name: Build docusaurus
       run: |
         pushd docusaurus

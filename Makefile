@@ -18,7 +18,7 @@ code:
 
 .PHONY: clean
 clean:
-	rm -fr docs/_site
+	rm -fr _site
 
 .PHONY: build
 build:
