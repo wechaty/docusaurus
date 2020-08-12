@@ -1,7 +1,8 @@
 ## wechaty.js.org
 
-[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
+[![Editor CI](https://github.com/wechaty/wechaty.js.org/workflows/Editor%20CI/badge.svg)](https://github.com/wechaty/wechaty.js.org/actions?query=workflow%3A%22Editor+CI%22)
 [![GitHub Pages CI](https://github.com/wechaty/wechaty.js.org/workflows/GitHub%20Pages%20CI/badge.svg)](https://github.com/wechaty/wechaty.js.org/actions?query=workflow%3A%22GitHub+Pages+CI%22)
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
 
 ![Wechaty Docusaurus](docs/images/wechaty-docusaurus.png)
 
@@ -195,7 +196,7 @@ Contact rui@chatie.io to learn more
 - [F8 2019: Using Docusaurus to Create Open Source Websites](https://www.youtube.com/watch?v=QcGJsf6mgZE)
 - [Jekyll Theme minima](https://github.com/jekyll/minima)
 
-## Maintainer
+## Maintainers
 
 1. @lijiarui, [Rui LI](https://github.com/lijiarui), Founder & CEO of Juzi.BOT
 1. @huan, [Huan LI](https://github.com/huan) ([李卓桓](http://linkedin.com/in/zixia)), Tencent TVP of Chatbot, \<zixia@zixia.net\>
