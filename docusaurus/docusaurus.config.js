@@ -5,8 +5,8 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'wechaty', // Usually your GitHub org/user name.
-  projectName: 'wechaty.js.org', // Usually your repo name.
+  organizationName: 'wechaty',    // Usually your GitHub org/user name.
+  projectName: 'wechaty.js.org',  // Usually your repo name.
   stylesheets: [
     '/css/gitter-sidecar.css',
   ],
@@ -58,16 +58,16 @@ module.exports = {
         },
       ],
       logo: {
-        alt: 'Wechaty Logo',
-        src: 'img/wechaty-logo.svg',
-        href: 'https://wechaty.js.org/',
+        alt  : 'Wechaty Logo',
+        src  : 'img/wechaty-logo.svg',
+        href : 'https://wechaty.js.org/',
       },
       copyright: `Copyright © 2016-${new Date().getFullYear()} Wechaty Contributors`,
     },
     algolia: {
-      apiKey: 'cd8ca324c447a803e8a196a5c8fa22dd',
-      indexName: 'wechaty',
-      searchParameters: {}, // Optional (if provided by Algolia)
+      apiKey           : 'cd8ca324c447a803e8a196a5c8fa22dd',
+      indexName        : 'wechaty',
+      searchParameters : {},                                   // Optional (if provided by Algolia)
     },
     googleAnalytics: {
       trackingID: 'UA-88739146-3',
