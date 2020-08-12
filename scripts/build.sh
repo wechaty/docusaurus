@@ -28,3 +28,5 @@ buildJekyll
 
 mv -v docusaurus/build/* "$target"
 mv -v _site/* "$target"
+
+touch "$target"/.nojekyll
