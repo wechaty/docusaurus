@@ -8,13 +8,12 @@ module.exports = {
   organizationName: 'wechaty', // Usually your GitHub org/user name.
   projectName: 'wechaty.js.org', // Usually your repo name.
   stylesheets: [
-    'css/gitter-sidecar.css',
+    '/css/gitter-sidecar.css',
   ],
   scripts: [
-    'js/gitter-sidecar.js',
+    '/js/gitter-sidecar.js',
     {
-      src:
-        'https://sidecar.gitter.im/dist/sidecar.v1.js',
+      src: 'https://sidecar.gitter.im/dist/sidecar.v1.js',
       async: true,
     },
   ],
