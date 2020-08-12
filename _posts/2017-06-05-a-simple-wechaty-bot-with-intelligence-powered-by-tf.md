@@ -6,7 +6,7 @@ categories: project
 tags:
   - code
   - machine learning
-  - home
+  - news
 image: /assets/2017/wildcat-tf-wechaty-and-tensorflow-featured-image.png
 ---
 

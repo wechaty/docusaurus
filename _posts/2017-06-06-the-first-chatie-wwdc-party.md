@@ -5,7 +5,7 @@ author: greatgeekgrace
 categories: event
 tags:
   - meetup
-  - home
+  - news
   - featured
 image: /assets/2017/greatgeekgrace-chatie-wwdc-666.jpg
 ---
@@ -20,7 +20,7 @@ The Conference consists of a small group of seven people, and the theme is about
 
 <!--more-->
 
-### This is the greetings vedio from the above person
+## This is the greetings vedio from the above person
 
 <div class="video-container" style="
     position: relative;
