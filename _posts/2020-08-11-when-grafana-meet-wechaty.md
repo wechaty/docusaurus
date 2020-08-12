@@ -1,8 +1,15 @@
 ---
 title: "当Grafana遇上Wechaty"
 date: 2020-08-11 10:00 +0800
-author: Magina
-header:
+author: magina
+categories: project
+tags:
+  - grafana
+  - screenshot
+  - wechaty
+  - wechaty-puppet-padplus
+  - monitor
+image: 
 ---
 
 > Author: [Magina](https://github.com/techxel)
