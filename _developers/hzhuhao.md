@@ -1,6 +1,6 @@
 ---
 name: hzhuhao
-site: https:huhao.me
+site: https://huhao.me/
 avatar: /assets/developers/hzhuhao/avatar.jpg
 bio: Focus on web development.
 email: hzhuhao@163.com
@@ -13,4 +13,4 @@ twitter: https://twitter.com/hzhuhao
 
 - Github: <https://github.com/hzhuhao>
 - 邮箱：hzhuhao@163.com
-- 个人博客: <https://huhao.me>
+- 个人博客: <https://huhao.me/>
