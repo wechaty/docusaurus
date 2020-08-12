@@ -25,6 +25,7 @@ image: /assets/2020/wechaty-twitter2wechat/wechaty-twitter2wechat-header.jpg
 一个实际的应用是，我们有一个实况足球的小联盟[PESNALeague](https://www.pesnaleague.com)。如果有玩家在YouTube或Twitch上直播比赛对战的话，通过预设的IFTTT, 直播的URL会在Twitter发布。
 之后，通过这个wechaty机器人，实现了在微信群的通告功能。
 <!--more-->
+
 ## 效果预览
 
 ![Header Picture](/assets/2020/wechaty-twitter2wechat/wechaty-twitter2wechat-header.jpg)
