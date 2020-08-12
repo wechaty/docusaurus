@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Wechaty',
-  tagline: 'A Conversational SDK for Chatbot Makers',
+  tagline: 'Conversational SDK for Chatbot Makers',
   url: 'https://wechaty.js.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -39,24 +39,24 @@ module.exports = {
           activeBasePath: 'docs',
           label: 'Docs',
           to: 'docs/',
-          position: 'right'
+          position: 'right',
         },
         {
           label: 'Getting Started',
           to: 'docs/getting-started',
-          position: 'right'
+          position: 'right',
         },
         {
           label: 'Tutorial',
           to: 'docs/video-tutorial',
-          position: 'right'
+          position: 'right',
         },
         { label: 'API', to: 'docs/api/README', position: 'right' },
         { label: 'FAQ', to: 'docs/faq/README', position: 'right' },
         {
           label: 'GitHub',
           href: 'https://github.com/wechaty/wechaty',
-          position: 'right'
+          position: 'right',
         },
       ],
     },
@@ -68,21 +68,21 @@ module.exports = {
           items: [
             {
               label: 'Getting Started',
-              to: 'docs/getting-started'
+              to: 'docs/getting-started',
             },
             {
               label: 'FAQ',
-              to: 'docs/faq/README'
+              to: 'docs/faq/README',
             },
             {
               label: 'Tutorial',
-              to: 'docs/video-tutorial'
+              to: 'docs/video-tutorial',
             },
             {
               label: 'API Reference',
-              to: 'docs/api/README'
-            }
-          ]
+              to: 'docs/api/README',
+            },
+          ],
         },
         {
           title: 'Community',
@@ -128,7 +128,7 @@ module.exports = {
       searchParameters: {}, // Optional (if provided by Algolia)
     },
     googleAnalytics: {
-      trackingID: 'UA-88739146-3'
+      trackingID: 'UA-88739146-3',
     },
     prism: {
       additionalLanguages: [
@@ -165,4 +165,4 @@ module.exports = {
       },
     ],
   ],
-};
+}
