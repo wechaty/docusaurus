@@ -31,7 +31,8 @@ Send, receive friend request, and friend confirmation events.
 Accept Friend Request
 
 **Kind**: instance method of [`Friendship`](friendship.md#Friendship)  
-**Example**
+
+#### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -86,7 +87,8 @@ bot.on('friendship', async friendship => {
 Get the contact from friendship
 
 **Kind**: instance method of [`Friendship`](friendship.md#Friendship)  
-**Example**
+
+#### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -147,7 +149,7 @@ The best practice is to send friend request once per minute. Remeber not to do t
 | contact | `Contact` | Send friend request to contact |
 | hello | `string` | The friend request content |
 
-**Example**
+#### Example
 
 ```javascript
 const memberList = await room.memberList()
@@ -155,4 +157,3 @@ for (let i = 0; i < memberList.length; i++) {
   await bot.Friendship.add(member, 'Nice to meet you! I am wechaty bot!')
 }
 ```
-

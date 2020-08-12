@@ -81,7 +81,7 @@ Send message inside Room, if set mentionList, wechaty will mention the contact l
 | textOrContactOrFileOrUrlLinkOrMiniProgram | `string` \| `Contact` \| `FileBox` \| `UrlLink` \| `MiniProgram` | Send `text`, `media file` or `link` inside Room.   You can use [FileBox](https://www.npmjs.com/package/file-box) to send file |
 | ...mentionList | `Contact []` | Send content inside Room, and mention @contact list. |
 
-**Example**
+#### Exampl
 
 ```javascript
 import { FileBox }  from 'file-box'
@@ -151,7 +151,7 @@ await room.say(miniProgram);
 | event | [`RoomEventName`](room.md#RoomEventName) | Emit WechatyEvent |
 | listener | [`RoomEventFunction`](room.md#RoomEventFunction) | Depends on the WechatyEvent |
 
-**Example** _\(Event:join \)_
+#### Example _\(Event:join \)_
 
 ```javascript
 const bot = new Wechaty()
@@ -166,7 +166,7 @@ if (room) {
 }
 ```
 
-**Example** _\(Event:leave \)_
+#### Example _\(Event:leave \)_
 
 ```javascript
 const bot = new Wechaty()
@@ -181,7 +181,7 @@ if (room) {
 }
 ```
 
-**Example** _\(Event:topic \)_
+#### Example _\(Event:topic \)_
 
 ```javascript
 const bot = new Wechaty()
@@ -195,7 +195,7 @@ if (room) {
 }
 ```
 
-**Example** _\(Event:invite \)_
+#### Example _\(Event:invite \)_
 
 ```javascript
 const bot = new Wechaty()
@@ -221,7 +221,7 @@ Add contact in a room
 | :--- | :--- |
 | contact | `Contact` |
 
-**Example**
+#### Exampl
 
 ```javascript
 const bot = new Wechaty()
@@ -252,7 +252,7 @@ Delete a contact from the room It works only when the bot is the owner of the ro
 | :--- | :--- |
 | contact | `Contact` |
 
-**Example**
+#### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -291,7 +291,7 @@ SET/GET topic from the room
 | :--- | :--- | :--- |
 | \[newTopic\] | `string` | If set this para, it will change room topic. |
 
-**Example** _\(When you say anything in a room, it will get room topic. \)_
+#### Example _\(When you say anything in a room, it will get room topic. \)_
 
 ```javascript
 const bot = new Wechaty()
@@ -306,7 +306,7 @@ bot
 .start()
 ```
 
-**Example** _\(When you say anything in a room, it will change room topic. \)_
+#### Example _\(When you say anything in a room, it will change room topic. \)_
 
 ```javascript
 const bot = new Wechaty()
@@ -336,7 +336,7 @@ SET/GET announce from the room
 | :--- | :--- | :--- |
 | \[text\] | `string` | If set this para, it will change room announce. |
 
-**Example** _\(When you say anything in a room, it will get room announce. \)_
+#### Example _\(When you say anything in a room, it will get room announce. \)_
 
 ```javascript
 const bot = new Wechaty()
@@ -347,7 +347,7 @@ const announce = await room.announce()
 console.log(`room announce is : ${announce}`)
 ```
 
-**Example** _\(When you say anything in a room, it will change room announce. \)_
+#### Example _\(When you say anything in a room, it will change room announce. \)_
 
 ```javascript
 const bot = new Wechaty()
@@ -377,7 +377,7 @@ Return contact's roomAlias in the room
 | :--- | :--- |
 | contact | `Contact` |
 
-**Example**
+#### Exampl
 
 ```javascript
 const bot = new Wechaty()
@@ -403,7 +403,7 @@ Check if the room has member `contact`, the return is a Promise and must be `awa
 | :--- | :--- |
 | contact | `Contact` |
 
-**Example** _\(Check whether 'lijiarui' is in the room 'wechaty'\)_
+#### Example _\(Check whether 'lijiarui' is in the room 'wechaty'\)_
 
 ```javascript
 const bot = new Wechaty()
@@ -436,7 +436,7 @@ Find all contacts in a room
 | :--- | :--- | :--- |
 | \[query\] | [`RoomMemberQueryFilter`](room.md#RoomMemberQueryFilter) \| `string` | Optional parameter, When use memberAll\(name:string\), return all matched members, including name, roomAlias, contactAlias |
 
-**Example**
+#### Example
 
 ```javascript
 const memberList: Conatct[] = await room.memberAll()
@@ -456,7 +456,7 @@ Find all contacts in a room, if get many, return the first one.
 | :--- | :--- | :--- |
 | queryArg | [`RoomMemberQueryFilter`](room.md#RoomMemberQueryFilter) \| `string` | When use member\(name:string\), return all matched members, including name, roomAlias, contactAlias |
 
-**Example** _\(Find member by name\)_
+#### Example _\(Find member by name\)_
 
 ```javascript
 const bot = new Wechaty()
@@ -473,7 +473,7 @@ if (room) {
 }
 ```
 
-**Example** _\(Find member by MemberQueryFilter\)_
+#### Example _\(Find member by MemberQueryFilter\)_
 
 ```javascript
 const bot = new Wechaty()
@@ -525,7 +525,7 @@ Create a new room.
 | contactList | `Array` |
 | \[topic\] | `string` |
 
-**Example** _\(Creat a room with 'lijiarui' and 'juxiaomi', the room topic is 'ding - created'\)_
+#### Example _\(Creat a room with 'lijiarui' and 'juxiaomi', the room topic is 'ding - created'\)_
 
 ```javascript
 const helperContactA = await Contact.find({ name: 'lijiarui' })  // change 'lijiarui' to any contact in your wechat
@@ -548,7 +548,7 @@ Find room by by filter: {topic: string \| RegExp}, return all the matched room
 | :--- | :--- |
 | \[query\] | [`RoomQueryFilter`](room.md#RoomQueryFilter) |
 
-**Example**
+#### Exampl
 
 ```javascript
 const bot = new Wechaty()
@@ -568,7 +568,7 @@ Try to find a room by filter: {topic: string \| RegExp}. If get many, return the
 | :--- | :--- |
 | query | [`RoomQueryFilter`](room.md#RoomQueryFilter) |
 
-**Example**
+#### Exampl
 
 ```javascript
 const bot = new Wechaty()
@@ -623,4 +623,3 @@ The way to search member by Room.member\(\)
 | name | `string` | Find the contact by wechat name in a room, equal to `Contact.name()`. |
 | roomAlias | `string` | Find the contact by alias set by the bot for others in a room. |
 | contactAlias | `string` | Find the contact by alias set by the contact out of a room, equal to `Contact.alias()`. [More Detail](https://github.com/Chatie/wechaty/issues/365) |
-

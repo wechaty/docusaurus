@@ -61,7 +61,7 @@ Get bot qrcode
 
 **Kind**: instance method of [`ContactSelf`](contact-self.md#ContactSelf)
 
-**Example**
+#### Example
 
 ```javascript
 import { generate } from 'qrcode-terminal'
@@ -83,7 +83,7 @@ Change bot signature
 | :--- | :--- |
 | signature | The new signature that the bot will change to |
 
-**Example**
+#### Example
 
 ```javascript
 bot.on('login', async user => {
@@ -106,7 +106,7 @@ Get or change bot name.
 | :--- | :--- |
 | \[name\] | The new alias that the bot will change to |
 
-**Example**
+#### Example
 
 ```javascript
 bot.on('login', async user => {

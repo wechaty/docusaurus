@@ -18,4 +18,3 @@ title: Tech
 ### Testing
 
 * [Unit Testing for Bot Applications](https://www.microsoft.com/developerblog/2017/01/20/unit-testing-for-bot-applications/)
-

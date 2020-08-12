@@ -64,7 +64,7 @@ Get the destination of the message Message.to\(\) will return null if a message 
 
 **Kind**: instance method of [`Message`](message.md#Message)
 
-**Example**
+#### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -89,7 +89,7 @@ Get the room from the message. If the message is not in a room, then will return
 
 **Kind**: instance method of [`Message`](message.md#Message)
 
-**Example**
+#### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -169,7 +169,7 @@ Reply a Text, Contact Card, Media File or Link message to the sender.
 | :--- | :--- | :--- |
 | textOrContactOrFileOrUrlLinkOrMiniProgram | `string` \| `Contact` \| `FileBox` \| `UrlLink` \| `MiniProgram` | send text, Contact, UrlLink, MiniProgram or file to bot.   You can use [FileBox](https://www.npmjs.com/package/file-box) to send file |
 
-**Example**
+#### Example
 
 ```javascript
 import { FileBox }  from 'file-box'
@@ -317,7 +317,7 @@ Forward the received message. This action doesn't trigger the on-message events.
 | :--- | :--- | :--- |
 | to | `Sayable` \| `Array` | Room or Contact The recipient of the message, the room, or the contact |
 
-**Example**
+#### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -389,4 +389,3 @@ Find message in cache
 Find messages in cache
 
 **Kind**: static method of [`Message`](message.md#Message)
-

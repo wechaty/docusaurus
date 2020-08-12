@@ -71,4 +71,3 @@ Learn more about Wechaty Puppet at [https://github.com/wechaty/wechaty-puppet/wi
 * Documentation: [https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html](https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html)
 * Puppet Development Guide: [https://github.com/wechaty/wechaty-puppet/wiki/Development](https://github.com/wechaty/wechaty-puppet/wiki/Development)
 * Puppet Related Links: [https://github.com/wechaty/wechaty-puppet/wiki/Links](https://github.com/wechaty/wechaty-puppet/wiki/Links)
-

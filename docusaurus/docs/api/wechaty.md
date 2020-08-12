@@ -237,7 +237,7 @@ When you start the bot, bot will begin to login, need you wechat scan qrcode to 
 
 **Kind**: instance method of [`Wechaty`](wechaty.md#Wechaty)
 
-**Example**
+#### Example
 
 ```javascript
 await bot.start()
@@ -249,7 +249,8 @@ await bot.start()
 Stop the bot
 
 **Kind**: instance method of [`Wechaty`](wechaty.md#Wechaty)  
-**Example**
+
+#### Example
 
 ```javascript
 await bot.stop()
@@ -260,7 +261,8 @@ await bot.stop()
 Logout the bot
 
 **Kind**: instance method of [`Wechaty`](wechaty.md#Wechaty)  
-**Example**
+
+#### Example
 
 ```javascript
 await bot.logout()
@@ -271,7 +273,8 @@ await bot.logout()
 Get the logon / logoff state
 
 **Kind**: instance method of [`Wechaty`](wechaty.md#Wechaty)  
-**Example**
+
+#### Example
 
 ```javascript
 if (bot.logonoff()) {
@@ -286,7 +289,8 @@ if (bot.logonoff()) {
 Get current user
 
 **Kind**: instance method of [`Wechaty`](wechaty.md#Wechaty)  
-**Example**
+
+#### Example
 
 ```javascript
 const contact = bot.userSelf()
@@ -305,7 +309,7 @@ Send message to userSelf, in other words, bot send message to itself.
 | :--- | :--- | :--- |
 | textOrContactOrFileOrUrl | `string` \| `Contact` \| `FileBox` \| `UrlLink` | send text, Contact, file or Link to bot. &lt;/br&gt; You can use [FileBox](https://www.npmjs.com/package/file-box) to send file |
 
-**Example**
+#### Example
 
 ```javascript
 const bot = new Wechaty()

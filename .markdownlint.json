@@ -5,18 +5,7 @@
   },
   "MD013": false,
   "MD024": false,
-  "MD033": {
-    "allowed_elements": [
-      "cite",
-      "code",
-      "del",
-      "dl",
-      "dt",
-      "dd",
-      "script",
-      "var"
-    ]
-  },
+  "MD033": false,
   "first-line-h1": false,
   "no-hard-tabs": true,
   "no-trailing-spaces": {

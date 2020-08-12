@@ -53,7 +53,7 @@ All wechat contacts\(friend\) will be encapsulated as a Contact. [Examples/Conta
 | :--- | :--- | :--- |
 | textOrContactOrFileOrUrlLinkOrMiniProgram | `string` \| [`Contact`](contact.md#Contact) \| `FileBox` \| `UrlLink` \| `MiniProgram` | send text, Contact, file or UrlLink to contact.   You can use [FileBox](https://www.npmjs.com/package/file-box) to send file |
 
-**Example**
+#### Example
 
 ```javascript
 import { FileBox }  from 'file-box'
@@ -269,7 +269,7 @@ Find contact by name or alias, if the result more than one, return the first one
 | :--- | :--- |
 | query | [`ContactQueryFilter`](contact.md#ContactQueryFilter) |
 
-**Example**
+#### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -295,7 +295,7 @@ If use Contact.findAll\(\) get the contact list of the bot. Include the contacts
 | :--- | :--- |
 | queryArg | [`ContactQueryFilter`](contact.md#ContactQueryFilter) |
 
-**Example**
+#### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -315,4 +315,3 @@ The way to search Contact
 | :--- | :--- | :--- |
 | name | `string` | The name-string set by user-self, should be called name |
 | alias | `string` | The name-string set by bot for others, should be called alias [More Detail](https://github.com/Chatie/wechaty/issues/365) |
-

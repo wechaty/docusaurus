@@ -38,4 +38,3 @@ In Gist-bot
 > -- @Urinx Uri Lee, Author of [WeixinBot\(Python\)](https://github.com/Urinx/WeixinBot)
 
 See more at [Wiki:VoiceOfDeveloper](https://github.com/wechaty/wechaty/wiki/VoiceOfDeveloper)
-

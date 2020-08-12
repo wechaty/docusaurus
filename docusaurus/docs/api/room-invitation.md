@@ -23,7 +23,8 @@ accept room invitation
 Accept Room Invitation
 
 **Kind**: instance method of [`RoomInvitation`](room-invitation.md#RoomInvitation)  
-**Example**
+
+#### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -43,7 +44,8 @@ bot.on('room-invite', async roomInvitation => {
 Get the inviter from room invitation
 
 **Kind**: instance method of [`RoomInvitation`](room-invitation.md#RoomInvitation)  
-**Example**
+
+#### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -60,7 +62,8 @@ bot.on('room-invite', async roomInvitation => {
 Get the room topic from room invitation
 
 **Kind**: instance method of [`RoomInvitation`](room-invitation.md#RoomInvitation)  
-**Example**
+
+#### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -89,4 +92,3 @@ Returns the roopm invitation age in seconds.
 For example, the invitation is sent at time `8:43:01`, and when we received it in Wechaty, the time is `8:43:15`, then the age\(\) will return `8:43:15 - 8:43:01 = 14 (seconds)`
 
 **Kind**: instance method of [`RoomInvitation`](room-invitation.md#RoomInvitation)
-
