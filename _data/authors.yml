@@ -5,6 +5,9 @@ qhduan:
   bio         : "人工智障工程师"
   avatar      : "https://avatars2.githubusercontent.com/u/3895924?s=460&v=4"
   links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/qhduan"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "http://qhduan.com"
@@ -835,7 +838,7 @@ FINCTIVE:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/fintive"
+      url: "https://github.com/finctive"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://fintive.com"

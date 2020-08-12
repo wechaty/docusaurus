@@ -64,20 +64,22 @@
     ]
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^2.0.0-alpha.51",
     "@chatie/eslint-config": "^0.6.13",
     "@chatie/git-scripts": "^0.2.5",
     "@chatie/tsconfig": "^0.6.1",
+    "@docusaurus/module-type-aliases": "^2.0.0-alpha.51",
     "@types/glob": "^7.1.1",
     "@types/image-size": "^0.7.0",
-    "git-scripts": "^0.2.1",
-    "markdownlint-cli": "^0.12.0",
+    "@types/yaml": "^1.9.7",
     "file-box": "^0.8.27",
+    "git-scripts": "^0.2.1",
     "glob": "^7.1.4",
     "image-size": "^0.7.4",
     "is-pr": "^1.1.0",
+    "markdownlint-cli": "^0.12.0",
     "probe-image-size": "^4.0.0",
     "tstest": "^0.4.2",
+    "yaml": "^1.10.0",
     "yaml-lint": "^1.2.4"
   },
   "git": {
