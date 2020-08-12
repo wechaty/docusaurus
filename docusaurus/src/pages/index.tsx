@@ -1,10 +1,10 @@
-import React from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import styles from './styles.module.css';
+import React from 'react'
+import clsx from 'clsx'
+import Layout from '@theme/Layout'
+import Link from '@docusaurus/Link'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
+import useBaseUrl from '@docusaurus/useBaseUrl'
+import styles from './styles.module.css'
 
 const features = [
   {
@@ -13,7 +13,7 @@ const features = [
     description: (
       <>
         Wechaty was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        used to get your chatbot up and running quickly.
       </>
     ),
   },
@@ -22,25 +22,25 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Wechaty lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Wechaty lets you focus on your conversations, and we'll do the chores. Go
+        ahead and build your business logic based on <code>Wechaty</code>.
       </>
     ),
   },
   {
-    title: 'Powered by GRPC',
+    title: 'Powered by Community',
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your chatbot by reusing any programming languages. Wechaty can
-        be extended easily in JavaScript/TypeScript, Python, Java/Kotlin/Scala, PHP, Go, and .NET(C#).
+        Extend or customize your chatbot by reusing any community driven modules. Wechaty can
+        be extended easily in plugins for most of the languages.
       </>
     ),
   },
-];
+]
 
-function Feature({imageUrl, title, description}) {
-  const imgUrl = useBaseUrl(imageUrl);
+function Feature ({ imageUrl, title, description }) {
+  const imgUrl = useBaseUrl(imageUrl)
   return (
     <div className={clsx('col col--4', styles.feature)}>
       {imgUrl && (
@@ -51,15 +51,15 @@ function Feature({imageUrl, title, description}) {
       <h3>{title}</h3>
       <p>{description}</p>
     </div>
-  );
+  )
 }
 
-function Home() {
-  const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+function Home () {
+  const context = useDocusaurusContext()
+  const { siteConfig = {} } = context
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
@@ -83,7 +83,7 @@ function Home() {
             <div className="container">
               <div className="row">
                 {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
+                  <Feature key = {idx} {...props} />
                 ))}
               </div>
             </div>
@@ -91,7 +91,7 @@ function Home() {
         )}
       </main>
     </Layout>
-  );
+  )
 }
 
-export default Home;
+export default Home
