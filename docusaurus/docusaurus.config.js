@@ -29,11 +29,13 @@ module.exports = {
           label: 'News',
           href: 'http://wechaty.js.org/news/',
           position: 'right',
+          target: '_self',
         },
         {
           label: 'Community',
           href: 'http://wechaty.js.org/community/',
           position: 'right',
+          target: '_self',
         },
         {
           activeBasePath: 'docs',
