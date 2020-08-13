@@ -10,7 +10,6 @@ image: /assets/2020/wechaty-puppet-maker/puppet.png
 ---
 
 > 作者: [Yinbohao](https://github.com/rickyyin98/)
-<!--more-->
 
 ![Wechaty Puppet活动](/assets/2020/wechaty-puppet-maker/puppet.png)
 

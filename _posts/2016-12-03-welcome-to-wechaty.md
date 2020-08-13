@@ -31,8 +31,6 @@ Wechaty.instance() // Singleton
 .init()
 ```
 
-<!--more-->
-
 How to run this piece of code? Easy. Wechaty has a docker image which can help you put your bot on duty in seconds:
 
 ```shell

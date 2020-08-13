@@ -17,8 +17,6 @@ image: /assets/2020/umiuni/icon.png
 * Wechaty 的 技术实现
 * Umiuni+Wechaty 的将来发展
 
-<!--more-->
-
 ![UmiUni]({{ '/assets/2020/umiuni/icon.png' | relative_url }})
 
 ## UmiUni -- 北美留学生自己的校园生活圈子

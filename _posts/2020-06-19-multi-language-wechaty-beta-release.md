@@ -28,8 +28,6 @@ image: /assets/2020/multi-language-wechaty-beta-released/multi-language-teaser.p
 
 Multi-language Wechaty Beta Released! We have Python, Go, Java, and Scala released on June 19, 2020!
 
-<!--more-->
-
 ## Agenda
 
 [![Multi-language Wechaty Beta Released Agenda](/assets/2020/multi-language-wechaty-beta-released/agenda-2.png)](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.ym05s3ebes31)

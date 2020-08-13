@@ -22,8 +22,6 @@ With v0.17, we have 27,630 source line of code with 377 unit tests(you can check
 
 Start from v0.18, we have 7,817 lines of code left(v0.17 is 353% of this!), with 10+ related npm modules.
 
-<!--more-->
-
 Let's back to May 2016, when the first version of Wechaty was published, it only contains thousands of lines of the code, and at the end of the year 2016, we have about 10,000 lines of the code. (you can read our [blog](https://wechaty.github.io/welcome-to-wechaty/) at this time)
 
 As the time passed by in 2017 & 2018, we added more features to Wechaty, like send attachment files, support WeChat protocol other than web like ipad, which means we write more and more codes in Wechaty repository... at last we get almost 30,000 lines of the code, and to be precise: 27,630. (with 377 unit tests, you can check it out at [here](https://github.com/wechaty/wechaty/blob/01bfdf96c8023f44fa2ad2762f8f12fee875e42e/tests/README.md) if you are interested)

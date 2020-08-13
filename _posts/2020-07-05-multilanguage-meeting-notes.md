@@ -21,8 +21,6 @@ image: assets/2020/meeting-notes/07-05-head-picture.jpg
 
 接下来我将一一介绍各位参与者分享的内容，如果想要观看整个会议的过程，可转移到[油管](https://www.youtube.com/watch?v=qWkv0F_pluQ)观看。
 
-<!--more-->
-
 ## Mock Is required for wechaty
 
 分享者：[wj-Mcat 吴京京](https://www.github.com/wj-Mcat/)

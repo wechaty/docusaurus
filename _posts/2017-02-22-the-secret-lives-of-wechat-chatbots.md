@@ -13,8 +13,6 @@ Chatbots rocketed into the limelight last year, bolstered by the enthusiasm of F
 
 In China, however, the response was more muted. While Facebook was busy pushing its new Messenger app – boasting when it hit 11,000 bots – Tencent, the maker of WeChat, quietly let millions of accounts develop AI-powered bots of their own, keeping a wary eye out for abuse. Accounts like Cara, for example, are shut down, as Tencent wants to confine bots to customer service-related functions within brand accounts.
 
-<!--more-->
-
 But unsanctioned bots run amok on the social network, often tactlessly spamming groups or artificially inflating a brand’s likes and follows. The Chinese tech firm clamped down last year on thousands of accounts, denouncing the use of external software to alter WeChat. Tencent did not reply to queries about its policies on bots.
 
 Unlike WeChat’s “official” accounts, designed for commerce and media, these rogue bots hijack personal accounts. They can be purchased on Taobao, the country’s most popular online marketplace, for a couple of dollars or less. Some accounts are even “farmed” before they’re sold, which means they already have friends and have logged a certain amount of human-like activity, such as posting on Moments, WeChat’s newsfeed-like feature.

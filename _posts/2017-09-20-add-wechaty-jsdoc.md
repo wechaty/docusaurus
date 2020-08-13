@@ -19,8 +19,6 @@ Yes, we planned to do this for nearly a year...
 
 Thanks to [@Huan](https://github.com/huan), [@ax4](https://github.com/ax4),[@hczhcz](https://github.com/hczhcz), [@William](https://github.com/kis87988), by the end of August, we finally convert all the doc to jsdoc. And I'd like to share some jsdoc experience here.
 
-<!--more-->
-
 > We need to document them better, not only the public but also the internal modules and methods.  
 > Finally we decided to use the classic [jsdoc](http://usejsdoc.org/ "jsdoc") to embed document in TypeScript, then generate document to [docs/](https://github.com/wechaty/wechaty/tree/master/docs "docs/") by [jsdoc2md](https://github.com/jsdoc2md/jsdoc-to-markdown "jsdoc2md").  
 > -- @Huan said in [issue 73](https://github.com/wechaty/wechaty/issues/73 "issue 73") in Nov 2016.

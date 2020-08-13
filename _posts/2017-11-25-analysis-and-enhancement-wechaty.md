@@ -15,8 +15,6 @@ image: /assets/2017/binsee-wechaty-structure.png
 
 一个菜鸟如何通过解析webWxApp与wechaty代码，来给wechaty增加新特性的回顾。
 
-<!--more-->
-
 ## 简述
 
 我对wechaty一开始是因为兴趣，而并非是项目需要，因此只是观望。直到看到美女[lijiarui](https://github.com/lijiarui)提出的issue[#710 Cannot send pdf file using MediaMessage](https://github.com/wechaty/wechaty/issues/710)，被赏金诱惑才尝试着手来解决这个问题(:joy:)，并陆续提交了一些pr来增强wechaty的功能(论激励的重要性:joy:)。

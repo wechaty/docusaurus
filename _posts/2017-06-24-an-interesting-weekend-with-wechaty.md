@@ -18,8 +18,6 @@ image: /assets/2017/helen-screenshot-testing.jpg
 Thanks for inviting me to write this article that give me a chance to share my story for each other. And Wechaty is a very awesome library that is powerful and easy to use. The most important point is that is interesting for Wechat  users and developers.
 Last week, I want to help my friend to make a chat bot. Because she is a manager of a technic community and she is also a owner of a chat group. In her daily life, many people add her to be the bunny on wechat. Then she needs add these persons into wechat group. It is a manual work, right? So I want to help her to lessen workload. So I ready to use wechaty.
 
-<!--more-->
-
 Firstly, I implemented some basic features. Like below
 
 ## The chat bot can receive the friend request automatically

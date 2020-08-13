@@ -33,8 +33,6 @@ For visiters come from China who can not visit YouTube.com, this video is also h
 * [Getting Started with Wechaty @ YouKu](http://v.youku.com/v_show/id_XMTkyNDgzMjY5Ng==.html)
 * [Getting Started with Wechaty @ Tencent](https://v.qq.com/x/page/b0363p9kg3q.html)
 
-<!--more-->
-
 Learn more about how to use Wechaty: <https://github.com/wechaty/wechaty/wiki/GettingStarted>
 
 Code in the video:

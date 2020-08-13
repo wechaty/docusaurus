@@ -15,8 +15,6 @@ tags:
 
 这里作者分享一下为什么要做这个Wechaty-As-A-Service的东东，它如何将Wechaty服务化，在什么场景下应用的。
 
-<!--more-->
-
 ## 为什么需要Wechaty
 
 Wechaty是对接微信的工具，这个工具在今天已经很成熟，也有充足的社区的支持。

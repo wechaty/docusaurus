@@ -22,8 +22,6 @@ story about it :
 
 we have a meditation group, people in the group take meditation every day, after meditation they check in with a emotion image in the group, to help  encourage the others or themselves keep meditation every day.
 
-<!--more-->
-
 ![Send][jaslin-send]
 
 people send specific emotion.

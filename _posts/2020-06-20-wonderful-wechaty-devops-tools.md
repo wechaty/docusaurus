@@ -17,8 +17,6 @@ image: /assets/2020/wonderful-wechaty-devops-tools/teaser-image.png
 
 Wechaty 的代码质量，是大家公认的比较高的水准。而在整个项目的搭建和发展的过程中，DevOps 工具是 Wechaty 代码质量的重要保证，这里，就和大家一起聊聊关于 Wechaty DevOps Toolset。
 
-<!--more-->
-
 ## Wechaty DevOps family
 
 这里主要给大家介绍以下几个重要的 Wechaty DevOps 工具：

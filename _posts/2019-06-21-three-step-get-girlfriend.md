@@ -13,7 +13,6 @@ image: /assets/2019/everyday-header.png
 
 ![image](/assets/2019/everyday-header.png)
 三步教你用Node做一个微信脱单神器，小白可上手！也可以用来哄女友，哄女(男\基)友我们程序猿(媛)是认真的
-<!--more-->
 
 ## 前言
 

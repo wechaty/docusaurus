@@ -18,8 +18,6 @@ Wechaty v0.16 is working in progress.
 * **Good news**: We will be able to run as many as Wechaty instances than only one singleton before!
 * **Bad news**: ~~BREAKING CHANGES were introduced.~~ This enhancement has no BC any more!
 
-<!--more-->
-
 Wechaty could only be able to instantiate once before. This comes for one reason: I'm lazy at the beginning.
 
 I'm lazy because there's need some works to support the second instance. For example, we can image when we are using `Contact.find('name')` to search contacts, `Contact` must know the exactly wechat account we are using. When we have one, it's all ok, but when we got the second one, we have to make a choice.

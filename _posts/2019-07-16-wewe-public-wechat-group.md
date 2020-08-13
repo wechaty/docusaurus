@@ -13,8 +13,6 @@ image: /assets/2019/wewe-screenshot.png
 
 [![wewe]({{ '/assets/2019/wewe-screenshot.png' | relative_url }})](https://wewe.t9t.io)
 
-<!--more-->
-
 ## 背景
 
 几周前, 我在几个论坛分享了 [透明创业实验](https://blog.t9t.io/transparent-startup-experiment-2019-05-20/), 并且建了一个微信群方便交流.

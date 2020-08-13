@@ -24,8 +24,6 @@ image: /assets/2020/your-wechat-bot/banner.png
 
 github 上找到了 wechaty ，看到了希望。
 
-<!--more-->
-
 ### 克隆代码
 
 ```bash

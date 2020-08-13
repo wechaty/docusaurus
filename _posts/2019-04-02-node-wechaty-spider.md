@@ -13,7 +13,6 @@ image: /assets/2019/node-wechaty-1.jpeg
 
 ![koa2](/assets/2019/node-wechaty-1.jpeg)
 微信每日说，每日自动发送微信消息给你心爱的人。
-<!--more-->
 
 ## 项目介绍
 

@@ -31,8 +31,6 @@ image: /assets/2020/java-wechaty/2020-06-15-java-wechaty.png
 
 Github 地址：[https://github.com/wechaty/wechaty](https://github.com/wechaty/wechaty) 目前已经有 7.9k 的 star 了。
 
-<!--more-->
-
 ## 与 Wechaty 结缘
 
 之前的工作，老板有一个要求，是就每天下班后，发一封邮件日报简单描述一下今天工作进展。如果忘记发日报，第二天就负责整理 全组人的日报。作为一个健忘的人，忘记发日报简直就是家常便饭。

@@ -22,8 +22,6 @@ image: /assets/2020/paipiange-bot/1.png
 Any developers can add JuziBOT Inc's staff ( Wechat number : botorange_yeah ) as a Wechat friend. You will receive a review form after adding. If you pass the review and willing to write a blog in Wechaty , you can use our iPad protocol for free！
 链接：<https://github.com/juzibot/Welcome/wiki/Support-Developers>
 
-<!--more-->
-
 ## 功能
 
 - 段子

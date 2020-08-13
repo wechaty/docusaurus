@@ -17,8 +17,6 @@ With the development of science and technology, the progress of the society is r
 
 There were 7 guys came to the gathering (including me), 6 programmers, and one used to work for a technical community. We met at 7 pm and would have dinner together in a Chinese restaurant. We’d like to introduce ourselves to each other at the beginning of the meeting with a video recorded.
 
-<!--more-->
-
 **[Huan LI](https://github.com/huan)** An Angel Investor, Paragliding Pilot and Full Stack Developer. He founded serial enterprises with strong technical background and rich social network experience. He is also the organizer of the meetup.
 
 **[Hailiang WANG](https://github.com/Samurais)** is the leader of *Rockq Community* and a chatbot developer. He used to work in *IBM Innovation Center* and the *Development Labs*. Now he works for *Lingling English* and in charge of the AI Lead.

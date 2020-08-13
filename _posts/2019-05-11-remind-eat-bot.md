@@ -18,8 +18,6 @@ image: /assets/2019/remind-eat-1.jpg
 
 为了解决这个问题，我写了一个微信机器人到点就提醒他吃饭。
 
-<!--more-->
-
 [Github 地址](https://github.com/diaozxin007/remindEat)
 
 ## 使用方法

@@ -21,8 +21,6 @@ x = x + 5
 
 But is it really? If you are a seasoned programmer and you are coding for yourself only, are you willing to get your hands tied up by MS Typescript, and suffer all its drawbacks in the mean time?
 
-<!--more-->
-
 ## About Pure ES6 instead of Typescript
 
 When I code customization code for [wechaty](https://github.com/wechaty/wechaty/), I write everything in pure ES6 instead of Typescript, and there are strong reasons for that.

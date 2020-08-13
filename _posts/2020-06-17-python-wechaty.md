@@ -17,8 +17,6 @@ Python-wechaty能够使用少量代码即可完成一个机器人，使用起来
 
 python-wechaty项目源于wechaty，甚至说很大程度上代码是直接从其翻译过来的，然后加上一些python的特性，让其更加pythonic。作为一个IM的入口工具，未来我们也将添加更多的Chatbot元素进去，让其能够成为一个真正的聊天机器人。
 
-<!--more-->
-
 在介绍python-wechaty之前，还是简要介绍一下wechaty。
 
 ## wechaty

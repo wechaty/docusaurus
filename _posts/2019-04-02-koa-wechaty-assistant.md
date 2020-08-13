@@ -21,8 +21,6 @@ image: /assets/2019/koa-wechaty.jpg
 
 如果以上问题你有一条符合的话，那就可以安心读下去了，因为微信小秘书可以帮你解决大部分的问题。当然没有符合的话，也可以继续读下去，因为既然来了就说明你还是有兴趣的😆。如果小秘书不符合你要求的话[《用Node+wechaty写一个爬虫脚本每天定时给女(男)朋友发微信暖心话》](https://juejin.im/post/5c77c6bef265da2de6611cff)也可以看一下奥！
 
-<!--more-->
-
 ## 技术栈
 
 [node](https://nodejs.org/zh-cn/): 建议最新稳定版，由于wechaty依赖，所以至少node > 10以上版本

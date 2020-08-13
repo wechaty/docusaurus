@@ -24,8 +24,6 @@ image: /assets/2018/wechaty-installation-in-windows.png
 * Wechaty 起步: [Wechaty Getting Started](https://github.com/wechaty/wechaty-getting-started)
 * Wechaty 文档: [Wechaty Documents](https://wechaty.js.org)
 
-<!--more-->
-
 ## 概念
 
 * [Puppet](https://github.com/wechaty/wechaty/wiki/Puppet): 一个包含了机器人对话逻辑的抽象类，是 Wechaty 技术架构的一部分。继承实现 Puppet 抽象类（协议）的组件，即可实现更广泛的与联系人、消息/一对一对话、群组/聊天室/多对多对话等相关逻辑。Puppet 的中文是木偶，用在这里相当传神。

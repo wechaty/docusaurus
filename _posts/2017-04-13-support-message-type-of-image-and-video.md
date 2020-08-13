@@ -17,8 +17,6 @@ image: /assets/2017/mukaiu-ding-code.jpg
 
 开发过程中发现，[#4 Support Message Type of Image/Video](https://github.com/wechaty/wechaty/issues/4)此功能还未实现，决定完成该项特征。
 
-<!--more-->
-
 ## 1. 问题分析
 
 为解Web微信是如何发送图片的，进行了数据抓包，并分析微信Web源码

@@ -16,8 +16,6 @@ WeChaty is an powerful library to help developers interact with WeChat programma
 
 ![wechaty-and-tensorflow][wechaty-and-tensorflow]
 
-<!--more-->
-
 ## A brief introduction of Artificial Intelligence
 
 Artificial Intelligence (aka. AI) is a very hot topic at present time. A big news is that DeepMind's AlphaGo won three matches against Ke Jie[^2] (Russel, 2017). The method to beat him is not magic. It is 'learning' of machine from a very big data set. By doing a lot of training, machines could do better than human in some specific fields. Go is a very recent example. The chatbot is a similar topic. We have a lot of resources to train our chatbot, such as the scripts of TV and movies. As a result, the problem of intelligence could become that of big data. 'Talk is cheap, show me the code.' Let's look a bit inside into it.
