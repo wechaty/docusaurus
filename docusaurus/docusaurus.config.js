@@ -95,12 +95,12 @@ module.exports = {
           // Equivalent to `enableUpdateTime`.
           showLastUpdateTime: true,
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/wechaty/wechaty.js.org/edit/master/website/blog/',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   editUrl:
+        //     'https://github.com/wechaty/wechaty.js.org/edit/master/docusaurusblog/',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
