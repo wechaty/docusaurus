@@ -1,6 +1,5 @@
 ---
 title: "Java Wechaty Beta Released: 终于有了 Java 可以用的微信机器人"
-date: 2020-06-15 09:00 +0800
 author: diaozxin007
 categories: announcement
 tags:

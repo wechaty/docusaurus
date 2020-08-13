@@ -1,7 +1,6 @@
 ---
 title: "twitter2wechat"
 author: steve
-date: "2020-08-06 10:59:00 +0800"
 categories: project
 tags:
   - wechaty

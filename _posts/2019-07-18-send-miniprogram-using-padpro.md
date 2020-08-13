@@ -1,7 +1,6 @@
 ---
 title: "如何用PadPro实现发送微信小程序"
 author: limingth
-date: '2019-07-18T09:00:00+0800'
 categories: feature
 tags:
   - code

@@ -1,7 +1,6 @@
 ---
 title: "wewe 向全世界公开群消息"
 author: timqian
-date: '2019-07-16 18:30:00 +0800'
 categories: project
 tags:
   - startup

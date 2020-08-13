@@ -1,7 +1,6 @@
 ---
 title: '如何编写聊天机器人'
 author: lijiarui
-date: '2017-7-13 23:04:27 +0800'
 categories: tutorial
 tags:
   - talk

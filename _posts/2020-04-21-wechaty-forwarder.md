@@ -1,7 +1,6 @@
 ---
 title: "Wechaty 服务器的最小化实现"
 author: hzzzzzz
-date: '2020-04-16 10:00:00 +0800'
 categories: project
 tags:
   - wechaty

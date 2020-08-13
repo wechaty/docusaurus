@@ -1,7 +1,6 @@
 ---
 title: '用Chatie实现微信机器人商业逻辑之【好室友】群管理篇'
 author: xinbenlv
-date: '2017-04-16 14:42:53 +0800'
 categories: project
 tags:
   - code

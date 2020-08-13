@@ -1,6 +1,5 @@
 ---
 title: "解析WebWxApp代码来增强wechaty功能（一）"
-date: 2017-11-09 19:00 +0800
 author: binsee
 categories: hack
 tags:

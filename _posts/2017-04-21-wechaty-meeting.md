@@ -1,7 +1,6 @@
 ---
 title: "Wechaty Contributor Dinner"
 author: antonia0912
-date: '2017-04-26 13:01:53'
 categories: event
 tags:
   - meetup

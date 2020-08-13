@@ -1,7 +1,6 @@
 ---
 
 title: "微信群打卡统计机器人"
-date: 2020-07-03 09:00 +0800
 author: secreter
 categories: tutorials
 tags:

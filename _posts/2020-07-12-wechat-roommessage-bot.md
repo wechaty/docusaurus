@@ -1,7 +1,6 @@
 ---
 title: "群消息同步机器人"
 author: sidny
-date: "2020-07-12 15:00:00 +0800"
 categories: project
 tags:
   - wechaty

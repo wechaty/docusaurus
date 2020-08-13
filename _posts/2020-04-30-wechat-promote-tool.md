@@ -1,6 +1,5 @@
 ---
 title: "如何用Wechaty打造一个推广机器人"
-date: 2020-04-30 10:00 +0800
 author: legendaryjesse
 tags:
    - wechaty

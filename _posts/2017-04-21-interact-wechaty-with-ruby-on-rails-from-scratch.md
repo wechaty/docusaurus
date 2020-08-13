@@ -1,7 +1,6 @@
 ---
 title: "Interact Wechaty with Ruby on Rails from scratch"
 author: WildCat
-date: '2017-04-21 16:01:53 +0100'
 categories: tutorial
 tags:
   - code

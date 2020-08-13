@@ -1,6 +1,5 @@
 ---
 title: "Multi-language Wechaty Meeting: Mocking & Code Quality"
-date: "2020-07-06 15:50:00 +0800"
 author: wj-Mcat
 categories: meeting-notes
 tags:

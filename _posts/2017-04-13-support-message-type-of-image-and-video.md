@@ -1,7 +1,6 @@
 ---
 title: '给机器人添加发送图片视频功能'
 author: mukaiu
-date: '2017-04-13 20:37:11 +0800'
 categories: feature
 tags:
   - code

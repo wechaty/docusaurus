@@ -1,6 +1,5 @@
 ---
 title: "基于开放 API 封装 Wechaty 接口下的钉钉聊天机器人"
-date: 2020-07-19 20:00 +0800
 author: jihuayu
 categories: project
 image: /assets/2020/wechaty-puppet-dingtalk/logo.png

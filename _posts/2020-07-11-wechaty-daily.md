@@ -1,7 +1,6 @@
 ---
 title: "用 Wechaty 实现工作日报管理系统"
 author: zzhoouxin
-date: "2020-07-11 12:13:00 +0800"
 categories: project
 tags:
   - wechaty

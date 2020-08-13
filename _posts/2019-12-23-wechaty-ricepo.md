@@ -1,7 +1,6 @@
 ---
 title: "RICEPO北美地道中餐外卖"
 author: RICEPO LLC
-date: '2019-12-24T09:00:00+0800'
 categories: event
 tags:
   - meetup

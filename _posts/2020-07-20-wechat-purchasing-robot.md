@@ -1,7 +1,6 @@
 ---
 title: "微信代购机器人（WeChat Purchasing Robot）"
 author: DevoZou
-date: "2020-07-20 16:10:00 +0800"
 categories: project
 tags:
   - wechaty

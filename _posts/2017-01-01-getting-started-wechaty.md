@@ -1,6 +1,5 @@
 ---
 title: Getting Started with Wechaty - Live Coding Tutorial
-date: '2017-01-01 10:0:0 +0800'
 author: lijiarui
 categories: tutorial
 tags:

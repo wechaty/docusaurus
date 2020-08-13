@@ -1,7 +1,6 @@
 ---
 title: "智障机器人(retarded-robot)"
 author: xajeyu
-date: " 2020-07-27 14:58 +0800"
 categories: project
 tags:
   - wechaty

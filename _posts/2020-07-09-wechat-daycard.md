@@ -1,7 +1,6 @@
 ---
 title: "每日微信音乐卡片分享机器人（wechat-daycard）"
 author: leijiahang
-date: "2020-07-09 09:40:00 +0800"
 categories: project
 tags:
   - wechaty

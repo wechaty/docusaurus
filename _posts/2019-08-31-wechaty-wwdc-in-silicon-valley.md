@@ -1,6 +1,5 @@
 ---
 title: "Frist WWDC in Silicon Valley"
-date: 2019-08-31 12:00 -0800
 author: kis87988
 categories: event
 tags:

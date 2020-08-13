@@ -1,6 +1,5 @@
 ---
 title: "Wonderful Wechaty devops toolset"
-date: 2020-06-20 09:00 +0800
 author: windmemory
 categories: announcement
 tags: 

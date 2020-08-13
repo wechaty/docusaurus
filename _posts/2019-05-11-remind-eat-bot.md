@@ -1,6 +1,5 @@
 ---
 title: 居然有人能忘记吃饭？写个微信机器人提醒他
-date: 2019-05-11 13:00 +0800
 author: diaozxin007
 categories: project
 tags:

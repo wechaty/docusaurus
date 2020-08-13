@@ -1,6 +1,5 @@
 ---
 title: "用「Wechaty」和「微信对话开放平台」做个助理"
-date: 2020-07-16 12:00 +0800
 author: windmemory
 tags: 
   - openai

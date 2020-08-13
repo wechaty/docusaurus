@@ -1,7 +1,6 @@
 ---
 title: "微信机器人能够做些什么事？"
 author: zhuangbiaowei
-date: '2018-11-25 21:14:52 +0800'
 categories: article
 tags:
   - artificial intelligence

@@ -1,6 +1,5 @@
 ---
 title: Welcome to Wechaty!
-date: '2016-12-03 14:04:27 +0800'
 author: huan
 categories: announcement
 tags:

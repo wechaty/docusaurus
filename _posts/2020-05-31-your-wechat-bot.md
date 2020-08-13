@@ -1,7 +1,6 @@
 ---
 title: "你的微信小助手"
 author: Peanut
-date: "2020-05-31 12:00:00 +0800"
 categories: project
 tags:
   - wechaty

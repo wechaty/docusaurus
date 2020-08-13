@@ -1,7 +1,6 @@
 ---
 title: "微信群积分机器人（Wechat group integral robot）"
 author: hzhuhao
-date: "2020-07-29 12:30:00 +0800"
 categories: project
 tags:
   - wechaty

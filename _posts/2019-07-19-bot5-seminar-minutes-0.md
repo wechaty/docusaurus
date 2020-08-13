@@ -1,7 +1,6 @@
 ---
 title: Chatbot Friday - 碰撞思想，点燃科技
 author: huan
-date: 2019-07-19 19:00 +0800
 categories: event
 tags:
   - bot5

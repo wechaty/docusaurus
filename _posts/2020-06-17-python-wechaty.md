@@ -1,6 +1,5 @@
 ---
 title: "Python Wechaty Beta Released: A Simple Bot"
-date: 2020-06-17 15:19 +0800
 author: wj-Mcat
 categories: announcement
 tags:

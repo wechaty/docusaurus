@@ -1,7 +1,6 @@
 ---
 title: "Docker Wechaty Getting Started"
 author: huan
-date: '2018-08-14 8:14:52 +0800'
 categories: tutorial
 tags:
   - docker

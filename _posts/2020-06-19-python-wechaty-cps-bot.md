@@ -1,6 +1,5 @@
 ---
 title: "基于python-wechaty的CPS BOT"
-date: 2020-06-19 00:00 +0800
 author: why2lyj
 tags:
   - python
