@@ -5,7 +5,7 @@ date: '2016-12-04 19:04:27 +0800'
 categories: story
 tags:
   - interview
-  - news
+  - announcement
 image: /assets/2016/gitchat-lijiarui-interview.jpg
 ---
 

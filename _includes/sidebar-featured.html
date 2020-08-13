@@ -3,7 +3,7 @@
     <ol class="list-featured">
         {% for post in site.tags.featured %}
 
-        {% if post.tags contains 'news' %}
+        {% if post.tags contains 'announcement' %}
               <!-- in home page, we only display posts with tag `home` -->
               {% unless home %}{% continue %}{% endunless %}
             {% else %}

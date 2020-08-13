@@ -6,7 +6,7 @@ categories: hack
 tags:
   - code
   - hook
-  - news
+  - announcement
 image: /assets/2017/h4dex-inject.png
 ---
 

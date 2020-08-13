@@ -5,7 +5,7 @@ author: kis87988
 categories: event
 tags:
   - meetup
-  - news
+  - announcement
   - featured
 image: /assets/2019/chatie-wwdc-in-sv-110718.jpg
 ---

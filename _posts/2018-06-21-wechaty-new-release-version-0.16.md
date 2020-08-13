@@ -5,7 +5,7 @@ author: huan
 categories: announcement
 tags:
   - release
-  - news
+  - announcement
 image: /assets/2018/huan-wechaty-new-version-0.16.png
 ---
 > Author: [@huan](https://github.com/huan) Coder, Author of Wechaty.

@@ -6,7 +6,7 @@ categories: project
 tags:
   - code
   - saas
-  - news
+  - announcement
 ---
 
 > Author: [qhduan](https://github.com/qhduan/), A Deamer.

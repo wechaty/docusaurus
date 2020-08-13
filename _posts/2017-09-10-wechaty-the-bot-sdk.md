@@ -6,7 +6,7 @@ categories: article
 tags:
   - api
   - unofficial
-  - news
+  - announcement
 image: /assets/2017/dcsan-dashbot.jpg
 ---
 

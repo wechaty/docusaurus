@@ -5,7 +5,7 @@ author: huan
 categories: event
 tags:
   - meetup
-  - news
+  - announcement
 image: /assets/2018/wechaty-contributor-dinner-data-girl.jpg
 ---
 

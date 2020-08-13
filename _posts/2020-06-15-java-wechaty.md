@@ -4,7 +4,7 @@ date: 2020-06-15 09:00 +0800
 author: diaozxin007
 categories: announcement
 tags:
-  - news
+  - announcement
   - java
   - featured
 image: /assets/2020/java-wechaty/2020-06-15-java-wechaty.png

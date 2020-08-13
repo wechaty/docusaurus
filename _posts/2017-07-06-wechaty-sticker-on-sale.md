@@ -5,7 +5,7 @@ author: huan
 categories: shop
 tags:
   - sticker
-  - news
+  - announcement
 image: /assets/2017/wechaty-sticker.jpg
 ---
 

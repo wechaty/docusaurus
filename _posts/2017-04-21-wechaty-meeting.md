@@ -5,7 +5,7 @@ date: '2017-04-26 13:01:53'
 categories: event
 tags:
   - meetup
-  - news
+  - announcement
 image: /assets/2017/wechat-meeting.jpg
 ---
 
