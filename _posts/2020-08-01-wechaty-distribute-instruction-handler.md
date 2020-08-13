@@ -128,8 +128,7 @@ jira:bind-project -p READK223
 
 - `jira` 是 brain 模块标识，机器人根据此标识将指令传递给相应的 brain 处理模块
 - `bind-project` 是指令关键字，brain 模块根据此关键字决定采用哪段业务处理逻辑
-- `-p READK223` 是指令的选项，通常一个指令会有0到多个选项，采用不同的选项，会影响业务处理的逻辑
-在开发 brain 模块 的时候，建议都支持 help 和 echo 指令，比如：
+- `-p READK223` 是指令的选项，通常一个指令会有0到多个选项，采用不同的选项，会影响业务处理的逻辑。在开发 brain 模块 的时候，建议都支持 help 和 echo 指令，比如：
 
 ```text
 jira:help
@@ -288,9 +287,7 @@ public class RandomHandler extends AbstractInstructionHandler {
 
 ## Maintainer
 
-1. watertao,
-[Tao Wu](https://github.com/watertao),
-\<1059912278@qq.com\>
+1. watertao,[Tao Wu](https://github.com/watertao),\<1059912278@qq.com\>
 
 ## Copyright & License
 
