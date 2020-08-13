@@ -47,7 +47,7 @@ module.exports = {
     ],
     Others: [
       'release-log',
-      'change-log',
+      'changelog',
       'awesome-wechaty',
       'advanced',
       'tech',
