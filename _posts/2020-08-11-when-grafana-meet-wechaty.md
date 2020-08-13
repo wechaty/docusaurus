@@ -15,7 +15,7 @@ image:
 > Author: [Magina](https://github.com/techxel)
 > Code: [grafana-wechaty](https://github.com/techxel/grafana-wechaty) & [grafana-screenshot](https://github.com/techxel/grafana-screenshot)
 
-### 背景
+## 背景
 
 - 项目需求
 
@@ -31,7 +31,7 @@ image:
 
 目前github上有很多关于微信机器人的项目, 其中99%都是封装web微信接口, 其实也够用, 但是有个问题, 新注册的微信现在无法使用web登录了, 我们也不太敢把自己的私人微信用作机器人, 主要原因还是怕被封禁, 后面偶然看到`wechaty-puppet-padplus`项目, 觉得这个方案可行, 具体原理可以关注官方介绍
 
-### 如何实现
+## 如何实现
 
 - Grafana截图
 
@@ -228,7 +228,7 @@ bot
 
 具体环境配置, 请参照我的项目[grafana-wechaty](https://github.com/techxel/grafana-wechaty)
 
-### 最后实现效果
+## 最后实现效果
 
 - 整点定时发送监控图片
 
