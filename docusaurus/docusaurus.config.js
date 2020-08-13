@@ -86,10 +86,10 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`` path).
-          homePageId: 'README',
+          homePageId: 'introduction/README',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/wechaty/wechaty.js.org/edit/master/website/',
+          editUrl: 'https://github.com/wechaty/wechaty.js.org/edit/master/docusaurus/',
           // Equivalent to `enableUpdateBy`.
           showLastUpdateAuthor: true,
           // Equivalent to `enableUpdateTime`.

@@ -1,14 +1,14 @@
 module.exports = {
   docs: {
     Introduction: [
-      'README',
-      'multi-language',
-      'puppet',
-      'concepts',
-      'motivation',
+      'introduction/README',
+      'introduction/multi-language',
+      'introduction/puppet',
+      'introduction/concepts',
+      'introduction/motivations',
       'examples',
       'examples2',
-      'alternatives',
+      'introduction/alternatives',
     ],
     'Getting Started': [
       'getting-started',
@@ -16,15 +16,6 @@ module.exports = {
     Tutorials: [
       'tutorials/README',
       'video-tutorial',
-    ],
-    'API Reference': [
-      'api/README',
-      'api/wechaty',
-      'api/message',
-      'api/contact',
-      'api/room',
-      'api/room-invitation',
-      'api/friendship',
     ],
     Recipes: [
       'recipes/README',
@@ -35,6 +26,15 @@ module.exports = {
       'recipes/using-plugin-with-wechaty',
       'recipes/using-vorpal-with-wechaty',
       'recipes/using-redux-with-wechaty',
+    ],
+    'API Reference': [
+      'api/README',
+      'api/wechaty',
+      'api/message',
+      'api/contact',
+      'api/room',
+      'api/room-invitation',
+      'api/friendship',
     ],
     FAQ: [
       'faq/README',
@@ -53,7 +53,7 @@ module.exports = {
       'tech',
       'glossary',
       'contributing',
-      'user-showcases',
+      'showcases',
     ],
     Docusaurus: [
       'test/doc1',

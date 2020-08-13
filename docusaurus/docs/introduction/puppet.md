@@ -8,7 +8,7 @@ The plugins are named `PuppetXXX`, like [PuppetPuppeteer](https://github.com/wec
 
 For a deeper understanding of the Puppet in Wechaty, you can read its source code if you like at [https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts](https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts)
 
-![Puppet Structure](../static/img/docs/architecture.png)
+![Puppet Structure](../../static/img/docs/architecture.png)
 
 ## 2. Wechaty Puppet List
 
