@@ -2,7 +2,7 @@
 
  title: "wechaty-rainbowbot 基于WeChaty实现的企业业务系统与营销团队微信群之间通信的桥梁"
  date: 2020-07-28 09:00 +0800
- author: cavon-cheng
+ author: CavonCheng
  categories: project
  tags:
      - wechaty
