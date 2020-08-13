@@ -12,7 +12,7 @@ image: /assets/2020/wechaty-electron/header.png
 > Author: [krapnik](https://github.com/krapnikkk)
 > Code: [wechaty-electron](https://github.com/krapnikkk/wechaty-electron)
 
-### 背景
+## 背景
 
 作为一个爱逛二手闲置数码的机佬，怎么淘到自己喜欢的且性价比高的设备是个技术活~
 
