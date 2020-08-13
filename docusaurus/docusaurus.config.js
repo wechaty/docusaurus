@@ -53,6 +53,7 @@ module.exports = {
           title: 'More',
           items: [
             { label: 'Blog',    href: 'https://wechaty.js.org/community/', target: '_self' },
+            { label: 'Press',   to:   'press' },
             { label: 'GitHub',  href: 'https://github.com/wechaty/wechaty#readme' },
           ],
         },

@@ -5,26 +5,19 @@ title: Wechaty Introduction
 
 ![Wechaty is a Conversational SDK for Chatbot Makers](/img/wechaty-logo.svg)
 
-Wechaty is a Conversational SDK for Chatbot Makers.
-
 ## Table of Contents
 
 ### Basic
 
 - **What is Wechaty**
-  - [Concepts](concepts.md)
-  - [Motivations](motivations.md)
-  - [Alternatives](alternatives.md)
 - **Who uses Wechaty**
-  OSS.Chat
-  Friday.BOT
-  Juzi.BOT
-  Archy BOT
 - **How to Wechaty**
-  Supported Languages
-      'multi-language',
-  Supported Conversational Protocols
-      'puppet',
+
+- [Concepts](concepts.md)
+- [Motivations](motivations.md)
+- [Alternatives](alternatives.md)
+- [Multi Languages](multi-language.md)
+- [Instance Messages] Conversational Protocols](puppet.md)
 - **Examples**
       'examples',
       'examples2',

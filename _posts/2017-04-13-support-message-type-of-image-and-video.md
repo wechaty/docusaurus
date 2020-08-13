@@ -13,7 +13,7 @@ image: /assets/2017/mukaiu-ding-code.jpg
 
 作者：@[mukaiu](https://github.com/mukaiu), [Wechaty Contributor](https://github.com/orgs/Chatie/teams/contributor)
 
-公司活动，需要对入群用户进行管理和自动回复。前期在Node Party Beijing上接触到@zixia的分享，Wechaty刚好能支持该活动，支持Docker部署，是一个很棒的Bot Framework。
+公司活动，需要对入群用户进行管理和自动回复。前期在Node Party Beijing上接触到 @huan 的分享，Wechaty刚好能支持该活动，支持Docker部署，是一个很棒的Bot Framework。
 
 开发过程中发现，[#4 Support Message Type of Image/Video](https://github.com/wechaty/wechaty/issues/4)此功能还未实现，决定完成该项特征。
 
@@ -126,7 +126,7 @@ MediaId就是我们需要的，直接调用createMessage,sendMessage即可发送
 
 ## 3.整合Wechaty
 
-为快速验证可行性，直接添加了Wechaty.sendMedia。后和@zixia、@lijiarui讨论，决定使用say(MediaMessage(filename))的形式发送媒体文件。
+为快速验证可行性，直接添加了Wechaty.sendMedia。后和@huan @lijiarui讨论，决定使用say(MediaMessage(filename))的形式发送媒体文件。
 重载
 
 ```js
