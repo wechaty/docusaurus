@@ -22,7 +22,7 @@ Last week, I want to help my friend to make a chat bot. Because she is a manager
 
 Firstly, I implemented some basic features. Like below
 
-#### The chat bot can receive the friend request automatically
+## The chat bot can receive the friend request automatically
 
 ```javascript
 const bot = Wechaty.instance({profile: 'secretary'});
@@ -34,7 +34,7 @@ bot.on('friend', async function(contact, request){
 })
 ```
 
-#### Input keyword then add him/her into the chat group
+## Input keyword then add him/her into the chat group
 
 ```javascript
   bot.on('message', async function(m){

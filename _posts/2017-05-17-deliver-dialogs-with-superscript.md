@@ -5,7 +5,7 @@ date: '2017-05-17 19:31:53'
 categories: tutorial
 tags:
   - code
-  - home
+  - news
 ---
 
 Author: [@hain](http://blog.chatbot.io/webcv/), Lead of [Rockq Community](https://github.com/rockq-org/node-party), [Wechaty Contributor](https://github.com/orgs/Chatie/teams/contributor)

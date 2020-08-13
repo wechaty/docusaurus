@@ -22,9 +22,7 @@ Wechaty(<https://github.com/wechaty/wechaty>)是一款开源的微信SDK，它�
 1. 能否可以自动智能地进行聊天回复
 1. ……
 
-<!--more-->
-
-### 1 快速上手
+## 1 快速上手
 
 wechaty使用node编写，所以支持几乎所有的平台，wechaty的hello-world只需要6行代码即可实现聊天记录的动态收集。为了使用方便作者还进行了docker化的封装，结合docker绝对是一个不错的选择。
 
@@ -54,13 +52,13 @@ Step 4: 所有聊天记录就会打印到屏幕上
 
 ![Message][ghostcloud-message]
 
-### 2 容器化分析
+## 2 容器化分析
 
 wechaty是一个比较好的docker化例子，其工程根目录下的Dockerfile详细描述了如何构建镜像，也就是需要哪些环境。通过Dockerfile我们可以看出，它使用的基础镜像是基于alpine的node镜像mhart/alpine-node:7
 
 alpine是我们日常比较推荐的镜像，最小的只有4M左右。之后是一些常用的包的安装，具体可以参看Dockerfile。在运行时，会将mybot.js映射到容器内部，这样就相当于把运行环境和具体的应用进行了隔离。
 
-### 3 其他例子
+## 3 其他例子
 
 hello-world一般只是最简单的例子，这个框架真正厉害的是包含了其他一些用例，具体位于<https://github.com/wechaty/wechaty/tree/master/example>
 
@@ -77,15 +75,14 @@ hello-world一般只是最简单的例子，这个框架真正厉害的是包含
 
 其实细心的朋友，看到这里会问，到底这个框架能否支持动态抢红包呢？这就留给有兴趣的朋友去研究了。同时，我们也会在后续分享一些其他的开源项目介绍。
 
-### 4 通过Ghostcloud EcOS部署wechaty
+## 4 通过Ghostcloud EcOS部署wechaty
 
 EcOS (Enterprise container Operation System)是由Ghostcloud精灵云全自主研发的Docker容器云平台, 为企业研发、运维及新业务上线部署提供了一整套解决方案和管理平台。通过EcOS用户可以快速在私有云和混合云环境安装Docker，官方地址是：www.ghostcloud.cn
 
 Ghostcloud EcOS，安装步骤如下：
 
 1. 浏览器访问 <http://ecospkg.ghostcloud.cn/EcOS/stable/> ， 下载最新的安装文件（EcOS-install*）和服务镜像文件(srvimgs.tgz)到需要安装的服务器根目录
-1. 解压安装文件，执行安装脚本
-tar -zxf Ecos-install* && bash install.sh IPADDR(这里的IPADDR是安装EcOS所在的服务器IP地址)
+1. 解压安装文件，执行安装脚本: tar -zxf Ecos-install* && bash install.sh IPADDR(这里的IPADDR是安装EcOS所在的服务器IP地址)
 1. 解压服务镜像文件，执行push镜像操作tar -zxvf srvimgs.tag && ./srvimgs/pushimgs.sh
 1. 详细安装步骤请移步至：<http://ecospkg.ghostcloud.cn/EcOS/video/EcOS_Install.mp4>
 

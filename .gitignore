@@ -2,6 +2,7 @@ _site/
 .jekyll-cache/
 node_modules/
 t/
+t.*
 
 .sass-cache
 .jekyll-metadata
@@ -12,3 +13,5 @@ package-lock.json
 
 .idea
 .DS_Store
+
+new-gh-pages/

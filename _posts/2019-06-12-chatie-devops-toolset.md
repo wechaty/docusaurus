@@ -7,7 +7,7 @@ tags:
   - open source
   - devops
   - npm
-  - home
+  - news
 image: /assets/2019/chatie-devops-toolset.gif
 ---
 

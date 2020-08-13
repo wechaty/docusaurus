@@ -5,7 +5,7 @@ author: lijiarui
 categories: tutorial
 tags:
   - code
-  - home
+  - news
 image: /assets/2017/lijiarui-speech-nodejs.jpg
 ---
 

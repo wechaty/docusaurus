@@ -1,8 +1,8 @@
 {
-  "name": "wechaty.github.io",
-  "version": "0.4.18",
-  "description": "Wechaty Home Page",
-  "main": "index.js",
+  "name": "wechaty.js.org",
+  "version": "0.5.24",
+  "description": "Wechaty Homepage",
+  "private": true,
   "directories": {
     "doc": "docs"
   },
@@ -14,35 +14,72 @@
     "lint:md": "markdownlint --ignore _site/ --ignore node_modules/ '**/*.md'",
     "lint:fn": "file-name-linter .file-name-linter.json",
     "lint:yml": "yamllint _data/*.yml",
-    "test": "npm run lint && npm run test:unit",
-    "test:unit": "ts-node --files ./node_modules/.bin/blue-tape 'src/**/*.spec.ts' 'tests/**/*.spec.ts'"
+    "test": "npm run lint && npm run test:unit && npm run build",
+    "test:unit": "ts-node --files ./node_modules/.bin/blue-tape 'src/**/*.spec.ts' 'tests/**/*.spec.ts'",
+    "build": "npm run docusaurus:build && npm run jekyll:build",
+    "build:docusaurus": "npm run docusaurus:build",
+    "jekyll:build": "make build",
+    "docusaurus:start": "cd docusaurus && docusaurus start",
+    "docusaurus:build": "cd docusaurus && docusaurus build",
+    "docusaurus:swizzle": "docusaurus swizzle",
+    "docusaurus:deploy": "docusaurus deploy",
+    "docusaurus:serve": "docusaurus serve"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wechaty/wechaty.github.io.git"
+    "url": "git+https://github.com/wechaty/wechaty.js.org.git"
   },
   "keywords": [
+    "wechaty",
+    "document",
+    "homepage",
+    "Docusaurus",
     "Minimal Mistakes",
     "Jekyll"
   ],
   "author": "Huan LI <zixia@zixia.net>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/wechaty/wechaty.github.io/issues"
+    "url": "https://github.com/wechaty/wechaty.js.org/issues"
   },
-  "homepage": "https://github.com/wechaty/wechaty.github.io#readme",
+  "homepage": "https://github.com/wechaty/wechaty.js.org#readme",
+  "dependencies": {
+    "@docusaurus/core": "^2.0.0-alpha.60",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.60",
+    "@mdx-js/react": "^1.5.8",
+    "clsx": "^1.1.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
     "@chatie/eslint-config": "^0.6.13",
     "@chatie/git-scripts": "^0.2.5",
     "@chatie/tsconfig": "^0.6.1",
+    "@docusaurus/module-type-aliases": "^2.0.0-alpha.51",
     "@types/glob": "^7.1.1",
     "@types/image-size": "^0.7.0",
+    "@types/yaml": "^1.9.7",
     "file-box": "^0.8.27",
+    "git-scripts": "^0.2.1",
     "glob": "^7.1.4",
     "image-size": "^0.7.4",
     "is-pr": "^1.1.0",
+    "markdownlint-cli": "^0.12.0",
     "probe-image-size": "^4.0.0",
     "tstest": "^0.4.2",
+    "yaml": "^1.10.0",
     "yaml-lint": "^1.2.4"
   },
   "git": {

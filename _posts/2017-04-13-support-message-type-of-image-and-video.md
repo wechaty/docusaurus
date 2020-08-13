@@ -141,23 +141,24 @@ Room.say(mediaMessage: MediaMessage)
 ## 4.坑
 
 1. 测试期间发现，发送图片有时候会失败，原因是无法获取mediaId，第一感觉是，难道还有细节没有发现?对比post数据，完全一致，没有问题，那问题出在哪呢？
-后来看源码才发现
 
-```js
-var e = location.host
-, t = "weixin.qq.com"
-, o = "file.wx.qq.com"
-, n = "webpush.weixin.qq.com";
-e.indexOf("wx2.qq.com") > -1 ? (t = "weixin.qq.com",
-o = "file2.wx.qq.com",
-```
+    后来看源码才发现
 
-原来还有个地址是wx2.qq.com。对应的文件上传地址是file2.wx.qq.com。不仔细啊
+    ```js
+    var e = location.host
+    , t = "weixin.qq.com"
+    , o = "file.wx.qq.com"
+    , n = "webpush.weixin.qq.com";
+    e.indexOf("wx2.qq.com") > -1 ? (t = "weixin.qq.com",
+    o = "file2.wx.qq.com",
+    ```
+
+    原来还有个地址是wx2.qq.com。对应的文件上传地址是file2.wx.qq.com。不仔细啊
 
 1. 另一个坑是微信Web对视频大小有20M限制，这个也是开始没有注意的，发送大视频会失败
 1. 循环依赖
-由于MediaMessage继承Message，Message.say(MediaMessage)又需要引用MediaMessage.OMG,循环引用,TS报错了不支持这么玩～
-所以我把MediaMessage移入了message.ts,删除了media-message.ts,无中生有了186行变更😊
+    由于MediaMessage继承Message，Message.say(MediaMessage)又需要引用MediaMessage.OMG,循环引用,TS报错了不支持这么玩～
+    所以我把MediaMessage移入了message.ts,删除了media-message.ts,无中生有了186行变更😊
 
 ## 5.End
 

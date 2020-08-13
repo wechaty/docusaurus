@@ -5,7 +5,7 @@ author: huan
 categories: shop
 tags:
   - sticker
-  - home
+  - news
 image: /assets/2017/wechaty-sticker.jpg
 ---
 
@@ -17,7 +17,7 @@ If you are using Wechaty and you love Wechaty, from now you can buy our logo sti
 
 <!-- markdownlint-disable MD033 -->
 
-### I <font color="red" size="+1">❤</font> Wechaty[^1]
+## I <font color="red" size="+1">❤</font> Wechaty[^1]
 
 * Order from Etsy: <https://www.etsy.com/listing/541157219> (Worldwide[^2])
 * Order from JD: <https://item.jd.com/12994583384.html>

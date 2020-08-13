@@ -1,6 +1,8 @@
-name: NPM
+name: Editor CI
 
-on: [push, pull_request]
+on:
+  - push
+  - pull_request
 
 jobs:
   build:
@@ -19,7 +21,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install Dependencies
-        run: npm install
+        run: |
+          npm install
+          sudo make install
 
       - name: Test
         run: npm test
