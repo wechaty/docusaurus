@@ -42,7 +42,10 @@ module.exports = {
       'faq/puppet',
       'faq/miscellaneous',
     ],
-   Others: [
+    Troubleshooting: [
+      'troubleshooting',
+    ],
+    Others: [
       'release-log',
       'change-log',
       'awesome-wechaty',
@@ -60,4 +63,3 @@ module.exports = {
     ],
   },
 }
-
