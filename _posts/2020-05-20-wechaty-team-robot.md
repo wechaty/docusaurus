@@ -1,7 +1,6 @@
 ---
 title: "团队小助手"
 author: suruozhong
-date: '2020-05-20 12:00:00 +0800'
 categories: project
 tags:
   - wechaty

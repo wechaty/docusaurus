@@ -1,6 +1,5 @@
 ---
 title: "在 Windows 10 下安装 Wechaty"
-date: 2018-07-24 09:00 +0800
 author: kaffa
 categories: tutorial
 tags:

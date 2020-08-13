@@ -1,7 +1,6 @@
 ---
 title: "Wechaty New Release Version v0.18: SLOC from 27,630 to 7,817"
 author: huan
-date: '2018-07-12 18:14:52 +0800'
 categories: announcement
 tags:
   - release

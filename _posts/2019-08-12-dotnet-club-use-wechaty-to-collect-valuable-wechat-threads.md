@@ -1,7 +1,6 @@
 ---
 title: dotnet club 借助 WeChaty 沉淀深度技术对话
 author: jijiechen
-date: 2019-08-12 21:15 +0800
 categories: story
 tags:
   - bot

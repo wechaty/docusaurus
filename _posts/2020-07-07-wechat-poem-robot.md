@@ -1,7 +1,6 @@
 ---
 title: "用 Wechaty 实现微信诗歌搜索机器人（wechat poem robot）"
 author: ray7551
-date: "2020-07-07 04:13:00 +0800"
 categories: project
 tags:
   - wechaty

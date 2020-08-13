@@ -1,7 +1,6 @@
 ---
 title: 'Chat实录｜李佳芮：向前一步的程序媛'
 author: lijiarui
-date: '2016-12-04 19:04:27 +0800'
 categories: story
 tags:
   - interview

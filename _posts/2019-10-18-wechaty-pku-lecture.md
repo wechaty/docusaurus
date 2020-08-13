@@ -1,7 +1,6 @@
 ---
 title: "Wechaty 走进北大开源实验班"
 author: limingth
-date: '2019-10-18T09:00:00+0800'
 categories: event
 tags:
   - meetup

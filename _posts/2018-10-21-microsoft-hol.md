@@ -1,7 +1,6 @@
 ---
 title: "MicroSoft Tech Summit-快速搭建一个聊天机器人"
 author: lijiarui
-date: '2018-10-21 22:57:52 +0800'
 categories: event
 tags:
   - talk

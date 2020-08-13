@@ -1,7 +1,6 @@
 ---
 title: "New Feature: Multi-Instance Support for Wechaty v0.16(WIP)"
 author: huan
-date: '2018-04-23 18:14:52 +0800'
 categories: feature
 tags:
   - code

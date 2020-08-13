@@ -1,7 +1,6 @@
 ---
 title: "有道智云翻译插件"
 author: Chs97
-date: "2020-07-19 17:00:00 +0800"
 categories: npm
 tags:
   - wechaty

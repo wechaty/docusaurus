@@ -1,7 +1,6 @@
 ---
 title: "Wechaty - 让线上没有难做的生意"
 author: coderwhocode
-date: '2019-07-12 18:30:00 +0800'
 categories: project
 tags:
   - code

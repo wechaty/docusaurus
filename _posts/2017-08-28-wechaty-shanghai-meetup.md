@@ -1,6 +1,5 @@
 ---
 title: "Shanghai WWDC - WeChaty Worldwide Developers Conference"
-date: 2017-08-28 18:00 +0800
 author: dcsan
 categories: event
 tags:

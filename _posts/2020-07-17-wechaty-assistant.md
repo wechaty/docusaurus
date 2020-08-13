@@ -1,7 +1,6 @@
 ---
 title: "用 Wechaty 实现微信任务小助手（wechat teamin chat robot）"
 author: darkli
-date: "2020-07-17 12:00:00 +0800"
 categories: project
 tags:
   - wechaty

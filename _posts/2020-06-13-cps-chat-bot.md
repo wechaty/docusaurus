@@ -1,6 +1,5 @@
 ---
 title: "CPS chat bot"
-date: 2020-06-13 09:00 +0800
 author: wss793062366
 image: /assets/2020/cps-chat-bot/goodsmsg.jpeg
 ---

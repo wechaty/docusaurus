@@ -1,7 +1,6 @@
 ---
 title: 'Wechaty Case Study - a letter from JasLin'
 author: jaslin
-date: '2016-12-08'
 categories: story
 tags:
   - case

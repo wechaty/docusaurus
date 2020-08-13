@@ -1,7 +1,6 @@
 ---
 title: "带货机器人（wechat robot seller）"
 author: PeterZhang
-date: "2020-06-30 18:47:00 +0800"
 categories: project
 tags:
   - wechaty

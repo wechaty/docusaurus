@@ -1,7 +1,6 @@
 ---
 title: "repe-assistant 社群活动助手"
 author: xiaogan18
-date: 2020-05-16 09:00 +0800
 categories: project
 tags:
   - wechaty

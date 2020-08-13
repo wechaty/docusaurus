@@ -1,7 +1,6 @@
 ---
 title: "微信群内抽奖机器人(wechaty_lottery)"
 author: csju
-date: "2020-07-23 10:24:00 +0800"
 categories: project
 tags:
   - wechaty

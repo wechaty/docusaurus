@@ -1,7 +1,6 @@
 ---
 title: "暑期2020 [编写一个“每日一句”插件] 计划书"
 author: univerone
-date: "2020-07-18 22:10:00 +0800"
 categories: project
 tags:
   - wechaty

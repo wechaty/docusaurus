@@ -1,7 +1,6 @@
 ---
 title: "Chatbots二重奏：用wechaty-log-monitor插件实现「掉线给码」等DevOps"
 author: archy
-date: "2020-08-09 20:20:00 +0800"
 categories: project
 tags:
   - plugin

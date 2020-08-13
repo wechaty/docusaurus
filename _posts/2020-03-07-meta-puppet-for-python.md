@@ -1,6 +1,5 @@
 ---
 title: "MetaPuppetForPython - 用Python写Wechaty程序"   
-date: 2020-03-07 13:39 -0800
 author: quantumFlame
 categories: tutorial  
 tags:

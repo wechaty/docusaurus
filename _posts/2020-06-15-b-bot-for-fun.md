@@ -1,7 +1,6 @@
 ---
 title: "发段子 舔狗 毒鸡汤 美图bot"
 author: generalbao
-date: "2020-06-15 12:00:00 +0800"
 categories: project
 tags:
   - wechaty

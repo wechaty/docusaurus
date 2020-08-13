@@ -7,11 +7,10 @@ e.g.
 
 ``` md
 ---
- title: "'Score Your Face Photo' a ML&Wechaty practice"
- date: 2017-09-18 09:00 +0800
- author: huyingxi
- ---
- > Author: [@huyingxi](https://github.com/huyingxi/wechaty_selfie) enjoying ML&Wechaty at BUPT
+title: "'Score Your Face Photo' a ML&Wechaty practice"
+author: huyingxi
+---
+> Author: [@huyingxi](https://github.com/huyingxi/wechaty_selfie) enjoying ML&Wechaty at BUPT
 ```
 
 - [ ] Keep all filenames & url as lowercase, and use `-` to connect words instead of space. e.g. `2017-10-06-wechat-pc-impactor` instead of `2017-10-06-WeChat PC Impactor`,

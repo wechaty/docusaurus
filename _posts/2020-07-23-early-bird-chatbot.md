@@ -1,7 +1,6 @@
 ---
 title: 基于wechaty的求职社群管理工具
 author: lmaCode
-date: 2020-07-24 00:55 +0800
 categories: event
 tags:
   - bot

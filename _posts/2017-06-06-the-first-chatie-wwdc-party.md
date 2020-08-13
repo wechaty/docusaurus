@@ -1,6 +1,5 @@
 ---
 title: "The memorabilia of The First Chatie WWDC Party"
-date: 2017-06-06 18:00 +0800
 author: greatgeekgrace
 categories: event
 tags:

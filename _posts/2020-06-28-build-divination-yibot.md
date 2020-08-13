@@ -1,6 +1,5 @@
 ---
 title: "使用wechaty自助算卦"
-date: 2020-06-28 09:00 +0800
 author: willcup
 categories: project
 tags:

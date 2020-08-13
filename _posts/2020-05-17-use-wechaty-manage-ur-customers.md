@@ -1,7 +1,6 @@
 ---
 title: "使用Wechaty管理你的顾客"
 author: Kylin93CN
-date: '2020-05-17 19:20:50 +0800'
 categories: project
 tags:
   - wechaty

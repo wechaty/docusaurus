@@ -1,7 +1,6 @@
 ---
 title: "Wechaty 实时公交查询"
 author: ershing
-date: '2020-05-05 12:00:00 +0800'
 categories: project
 tags:
   - wechaty

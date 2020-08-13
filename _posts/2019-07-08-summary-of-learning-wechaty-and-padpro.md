@@ -1,7 +1,6 @@
 ---
 title: "Summary of Learning Wechaty and Padpro"
 author: su-chang
-date: '2019-07-08 16:55:12 +0800'
 categories: tutorial
 tags:
   - code
