@@ -2,6 +2,8 @@
 title: Change Log
 ---
 
+<!-- markdownlint-disable -->
+
 ## WECHATY CONTRIBUTORS
 
 ### Active Contributors
