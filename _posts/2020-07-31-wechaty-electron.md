@@ -31,7 +31,7 @@ image: /assets/2020/wechaty-electron/header.png
 ☝️ 直接图文阅读无须二次跳转更快
 
 <!--more-->
-### 功能
+## 功能
 
 🌙基于electron的主要原因是为了可视化配置wechaty设置
 
@@ -43,21 +43,21 @@ image: /assets/2020/wechaty-electron/header.png
 
 ⭐自动生成推送内容图片，无须二次跳转访问链接
 
-### 逻辑
+## 逻辑
 
 - 通过electron生成的桌面程序启动&管理wechaty
 - 可视化配置推送关键字及时间段等相关设置
 - 获取到相关资讯信息后自动生成内容图片并保存到本地
 - 通过wechaty推送已生成的资讯精要信息和内容图片
 
-### 依赖
+## 依赖
 
 - wechaty：wechaty核心库
 - wechaty-puppet-padplus：wechaty iPad协议
 - electron: 基于Web技术创建原生程序的框架
 - react+antd: 框架+UI
 
-### 运行
+## 运行
 
 克隆项目
 
