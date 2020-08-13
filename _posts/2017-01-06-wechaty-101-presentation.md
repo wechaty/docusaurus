@@ -39,8 +39,6 @@ For visiters come from China who can not visit YouTube.com, this video is also h
 * [Wechaty 101 @ YouKu](http://v.youku.com/v_show/id_XMjQ3NjUxMjAwOA==.html)
 * [Wechaty 101 @ Tencent](https://v.qq.com/x/page/l03679h2u9s.html)
 
-<!--more-->
-
 ## Presentation Slides
 
 Here's the slides of _Wechaty 101_ in this talk:
