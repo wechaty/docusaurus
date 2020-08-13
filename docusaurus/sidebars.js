@@ -54,7 +54,9 @@ module.exports = {
       'contributing',
       'showcases',
       {
-        Docusaurus: [
+        type: 'category',
+        label: 'Docusaurus',
+        items: [
           'test/doc1',
           'test/doc2',
           'test/doc3',
