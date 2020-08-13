@@ -25,5 +25,7 @@ Redux assumes that you
 
 ## Something else doesn't work
 
-Ask around on the **Chatie/Wechaty** [Gitter.im](http://gitter.im/Chatie/Wechaty) Gitter.im room, or [create an issue](https://github.com/wechaty/wechaty/issues).
-If you figure it out, [edit this document](https://github.com/wechaty/wechaty.js.org/edit/master/docs/troubleshooting.md) as a courtesy to the next person having the same problem.
+Ask around on the **wechaty/wechaty** [Gitter.im](http://gitter.im/wechaty/wechaty) Gitter.im room,
+or [create an issue](https://github.com/wechaty/wechaty/issues).
+If you figure it out, [edit this document](https://github.com/wechaty/wechaty.js.org/edit/master/docs/troubleshooting.md)
+as a courtesy to the next person having the same problem.

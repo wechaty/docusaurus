@@ -46,20 +46,21 @@ module.exports = {
       'troubleshooting',
     ],
     Others: [
-      'release-log',
       'changelog',
       'awesome-wechaty',
       'advanced',
-      'tech',
+      'resources',
       'glossary',
       'contributing',
       'showcases',
-    ],
-    Docusaurus: [
-      'test/doc1',
-      'test/doc2',
-      'test/doc3',
-      'test/mdx',
+      {
+        Docusaurus: [
+          'test/doc1',
+          'test/doc2',
+          'test/doc3',
+          'test/mdx',
+        ],
+      },
     ],
   },
 }

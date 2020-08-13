@@ -10,7 +10,7 @@ All wechat rooms(groups) will be encapsulated as a Room.
 
 All wechat rooms\(groups\) will be encapsulated as a Room.
 
-[Examples/Room-Bot](https://github.com/Chatie/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/room-bot.ts)
+[Examples/Room-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/room-bot.ts)
 
 ## Typedefs
 
@@ -28,13 +28,13 @@ The way to search member by Room.member\(\)
 
 All wechat rooms\(groups\) will be encapsulated as a Room.
 
-[Examples/Room-Bot](https://github.com/Chatie/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/room-bot.ts)
+[Examples/Room-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/room-bot.ts)
 
 **Kind**: global class **Properties**
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| id | `string` | Get Room id. This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/Chatie/wechaty/wiki/Puppet#3-puppet-compatible-table) |
+| id | `string` | Get Room id. This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table) |
 
 * [Room](room.md#Room)
   * _instance_
@@ -72,7 +72,7 @@ await room.sync()
 
 Send message inside Room, if set mentionList, wechaty will mention the contact list as well.
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/Chatie/wechaty/wiki/Puppet#3-puppet-compatible-table)
+> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 **Kind**: instance method of [`Room`](room.md#Room)
 
@@ -125,7 +125,7 @@ const linkPayload = new UrlLink({
   description : 'WeChat Bot SDK for Individual Account, Powered by TypeScript, Docker, and Love',
   thumbnailUrl: 'https://avatars0.githubusercontent.com/u/25162437?s=200&v=4',
   title       : 'Welcome to Wechaty',
-  url         : 'https://github.com/chatie/wechaty',
+  url         : 'https://github.com/wechaty/wechaty',
 })
 await room.say(linkPayload)
 
@@ -211,9 +211,9 @@ if (room) {
 
 Add contact in a room
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/Chatie/wechaty/wiki/Puppet#3-puppet-compatible-table)
+> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 >
-> see [Web version of WeChat closed group interface](https://github.com/Chatie/wechaty/issues/1441)
+> see [Web version of WeChat closed group interface](https://github.com/wechaty/wechaty/issues/1441)
 
 **Kind**: instance method of [`Room`](room.md#Room)
 
@@ -242,9 +242,9 @@ if (room) {
 
 Delete a contact from the room It works only when the bot is the owner of the room
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/Chatie/wechaty/wiki/Puppet#3-puppet-compatible-table)
+> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 >
-> see [Web version of WeChat closed group interface](https://github.com/Chatie/wechaty/issues/1441)
+> see [Web version of WeChat closed group interface](https://github.com/wechaty/wechaty/issues/1441)
 
 **Kind**: instance method of [`Room`](room.md#Room)
 
@@ -273,7 +273,7 @@ if (room) {
 
 Bot quit the room itself
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/Chatie/wechaty/wiki/Puppet#3-puppet-compatible-table)
+> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 **Kind**: instance method of [`Room`](room.md#Room) **Example**
 
@@ -328,7 +328,7 @@ SET/GET announce from the room
 
 > Tips: It only works when bot is the owner of the room.
 >
-> This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/Chatie/wechaty/wiki/Puppet#3-puppet-compatible-table)
+> This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 **Kind**: instance method of [`Room`](room.md#Room)
 
@@ -363,7 +363,7 @@ console.log(`room announce change from ${oldAnnounce} to ${room.announce()}`)
 
 Get QR Code of the Room from the room, which can be used as scan and join the room.
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/Chatie/wechaty/wiki/Puppet#3-puppet-compatible-table)
+> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 **Kind**: instance method of [`Room`](room.md#Room)
 
@@ -494,7 +494,7 @@ if (room) {
 
 Get room's owner from the room.
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/Chatie/wechaty/wiki/Puppet#3-puppet-compatible-table)
+> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 **Kind**: instance method of [`Room`](room.md#Room) **Example**
 
@@ -506,7 +506,7 @@ const owner = room.owner()
 
 Get room's avatar
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/Chatie/wechaty/wiki/Puppet#3-puppet-compatible-table)
+> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 **Kind**: instance method of [`Room`](room.md#room) **Example**
 
@@ -622,4 +622,4 @@ The way to search member by Room.member\(\)
 | :--- | :--- | :--- |
 | name | `string` | Find the contact by wechat name in a room, equal to `Contact.name()`. |
 | roomAlias | `string` | Find the contact by alias set by the bot for others in a room. |
-| contactAlias | `string` | Find the contact by alias set by the contact out of a room, equal to `Contact.alias()`. [More Detail](https://github.com/Chatie/wechaty/issues/365) |
+| contactAlias | `string` | Find the contact by alias set by the contact out of a room, equal to `Contact.alias()`. [More Detail](https://github.com/wechaty/wechaty/issues/365) |

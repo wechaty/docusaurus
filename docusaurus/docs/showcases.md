@@ -1,5 +1,5 @@
 ---
-title: User Showcases
+title: Showcases
 ---
 
 ## TBW
