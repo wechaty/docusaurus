@@ -13,16 +13,16 @@ twitter:
 
 爱好唱歌，旅游，写代码。
 
-![](/assets/developers/wj-Mcat/hello.jpeg)
+![happy to say hello to the world](/assets/developers/wj-Mcat/hello.jpeg)
 
-![](/assets/developers/wj-Mcat/scenery.jpeg)
+![love to see beautiful scenery](/assets/developers/wj-Mcat/scenery.jpeg)
 
 ## Contact me
 
-- Github: https://www.github.com/wj-Mcat
+- Github: [https://www.github.com/wj-Mcat](https://www.github.com/wj-Mcat)
 - Wechat: [pure-_--love](/imgs/weixin.jpeg)
 - WeiBo: [猫神战](https://weibo.com/u/3877178684)
 - Email: 1435130236@qq.com
-- Zhihu: https://www.zhihu.com/people/wjmcat
+- Zhihu: [wjmcat](https://www.zhihu.com/people/wjmcat)
 - Website: [wj-mcat.github.io](https://wj-mcat.github.io/)
   
