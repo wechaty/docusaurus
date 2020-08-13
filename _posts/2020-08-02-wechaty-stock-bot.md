@@ -12,7 +12,7 @@ image: /assets/2020/wechaty-stock-bot/header.jpg
 > Author: [wengcan](https://github.com/wengcan)
 > Code: [stock-bot](https://github.com/wengcan/stock-bot)
 
-### 背景
+## 背景
 
 随着“牛市”的到来, 各种炒股，荐股的群又活跃起来， 大佬荐股的同时， 韭菜们也需要快速了解该股票的行情和基本面，于是有了这个小工具
 
@@ -21,6 +21,7 @@ image: /assets/2020/wechaty-stock-bot/header.jpg
 ```
 
 <!--more-->
+
 ### 功能
 
 ⭐ 分析群聊内容，实时回复当前行情
