@@ -7,6 +7,7 @@ tags:
   - plugin
   - wechaty
   - devops
+  - featured
 image: /assets/2020/wechaty-log-monitor/demo.jpeg
 excerpt: 为了能让（营业中的）小助手可以有更棒的 readily availability，我写了这个wechaty-log-monitor插件来给在production跑的Wechaty做日志相关的devops。
 
