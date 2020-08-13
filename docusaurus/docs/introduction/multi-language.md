@@ -15,8 +15,8 @@ import TabItem from '@theme/TabItem';
 <Tabs
   defaultValue="js"
   values={[
-    { label: 'JavaScript (ES5)', value: 'js', },
-    { label: 'TypeScript (ES6)', value: 'ts', },
+    { label: 'TypeScript', value: 'ts', },
+    { label: 'JS (ES5)', value: 'js', },
     { label: 'Python', value: 'py', },
     { label: 'Go', value: 'go', },
     { label: 'Java', value: 'java', },

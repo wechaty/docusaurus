@@ -1,5 +1,5 @@
 ---
-title: API Reference
+title: Wechaty API Reference
 sidebar_label: 'API Index'
 ---
 
