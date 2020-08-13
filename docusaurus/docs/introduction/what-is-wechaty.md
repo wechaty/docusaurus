@@ -7,7 +7,13 @@ title: Wechaty Introduction
 
 ## What is Wechaty
 
-[Wechaty](https://github.com/Chatie/wechaty/) is a Wechat Bot SDK for Personal Account that lets you create software to extend the functionality of the Wechat, written in Node.js with TypeScript, Support all platforms including [Linux](https://travis-ci.com/chatie/wechaty), [Windows](https://ci.appveyor.com/project/chatie/wechaty), [Darwin\(OSX/Mac\)](https://travis-ci.com/chatie/wechaty) and [Docker](https://app.shippable.com/github/Chatie/wechaty).
+[Wechaty](https://github.com/wechaty/wechaty/) is a Conversational SDK for chatbot makers that
+lets you create software to extend the functionality of the WeChat,
+written in Node.js with TypeScript, Support all platforms including
+[Linux](https://github.com/wechaty/wechaty/actions),
+[Windows](https://github.com/wechaty/wechaty/actions),
+[Darwin\(OSX/Mac\)](https://github.com/wechaty/wechaty/actions) and
+[Docker](https://github.com/wechaty/wechaty/actions).
 
 You can use wechaty building a personal wechat chatbot in just 6 lines of JavaScript code!
 
@@ -19,7 +25,7 @@ More Powerful Feature as follows:
 * Intelligent dialogue Management: Just several configuration can get a task-oriented bot.
 * ...
 
-See more in [Wechaty](https://github.com/chatie/wechaty)
+See more in [Wechaty](https://github.com/wechaty/wechaty)
 [![NPM Version](https://badge.fury.io/js/wechaty.svg)](https://badge.fury.io/js/wechaty)
 [![Docker Pulls](https://img.shields.io/docker/pulls/wechaty/wechaty.svg?maxAge=2592000)](https://hub.docker.com/r/wechaty/wechaty/)
 [![TypeScript](https://img.shields.io/badge/<%2F>-TypeScript-blue.svg)](https://www.typescriptlang.org/)
@@ -38,14 +44,14 @@ Take a look at our [Wechaty 101 Talk](https://blog.chatie.io/wechaty-101-present
 
 related issues:
 
-* [Can not login with error message: 当前登录环境异常。为了你的帐号安全，暂时不能登录web微信。](https://github.com/Chatie/wechaty/issues/603)
-* [\[RUMOR\] wechat will close web api for wechat](https://github.com/Chatie/wechaty/issues/990)
-* [New account login issue](https://github.com/Chatie/wechaty/issues/872)
-* [wechaty-puppet-puppeteer](https://github.com/chatie/wechaty-puppet-puppeteer)
+* [Can not login with error message: 当前登录环境异常。为了你的帐号安全，暂时不能登录web微信。](https://github.com/wechaty/wechaty/issues/603)
+* [\[RUMOR\] wechat will close web api for wechat](https://github.com/wechaty/wechaty/issues/990)
+* [New account login issue](https://github.com/wechaty/wechaty/issues/872)
+* [wechaty-puppet-puppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer)
 
 If you want to break the above limitations, please consider to use a Wechaty Puppet other than using Web API, like [wechaty-puppet-padplus](https://github.com/botorange/wechaty-puppet-padplus).
 
-Learn more about the Puppet at [Wechaty wiki: Puppet](https://github.com/Chatie/wechaty/wiki/Puppet)
+Learn more about the Puppet at [Wechaty wiki: Puppet](https://github.com/wechaty/wechaty/wiki/Puppet)
 
 ## Curious how our technology works?
 
@@ -60,7 +66,7 @@ Plugins are named PuppetXXX, like PuppetPuppeteer is using the chrome puppeteer 
 * ​[Full Puppet List](puppet.md#2-wechaty-puppet-list)
 * ​[Wechaty Puppet compatibility](puppet.md#3-wechaty-puppet-compatibility)
 
-For a deeper understanding of the Puppet in Wechaty, you can read its source code if you like at [https://github.com/Chatie/wechaty-puppet/blob/master/src/puppet.ts](https://github.com/Chatie/wechaty-puppet/blob/master/src/puppet.ts)
+For a deeper understanding of the Puppet in Wechaty, you can read its source code if you like at [https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts](https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts)
 
 All implement by web WeChat is fully open-source and free, if you need other implement, you should apply for it, [see HOW to get token](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty#wechaty-token-%E7%94%B3%E8%AF%B7%E5%8F%8A%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%E5%92%8C%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98).
 

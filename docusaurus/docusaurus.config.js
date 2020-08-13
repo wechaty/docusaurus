@@ -36,8 +36,8 @@ module.exports = {
           title: 'Docs',
           items: [
             { label: 'Getting Started', to: 'docs/getting-started' },
-            { label: 'FAQ',             to: 'docs/faq/README' },
             { label: 'Tutorial',        to: 'docs/video-tutorial' },
+            { label: 'FAQ',             to: 'docs/faq/README' },
             { label: 'API Reference',   to: 'docs/api/README' },
           ],
         },
@@ -45,8 +45,9 @@ module.exports = {
           title: 'Community',
           items: [
             { label: 'Stack Overflow',  href: 'https://stackoverflow.com/questions/tagged/wechaty' },
-            { label: 'Gitter',          href: 'https://gitter.im/Chatie/wechaty' },
+            { label: 'Gitter',          href: 'https://gitter.im/wechaty/wechaty' },
             { label: 'Twitter',         href: 'https://twitter.com/chatieio' },
+            { label: 'WeChat',          href: 'https://gitter.im/wechaty/wechaty' },
           ],
         },
         {

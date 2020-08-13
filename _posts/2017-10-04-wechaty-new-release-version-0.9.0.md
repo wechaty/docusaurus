@@ -17,7 +17,7 @@ The Wechaty has been updated to version 0.9.0 today. This release contains a num
 If you find new issues, please let us know by visiting our Github issue page and filing a bug.
 
 Huan LI  
-Chatie/Wechaty
+Creator of Wechaty
 
 <!--more-->
 
