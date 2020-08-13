@@ -9,9 +9,9 @@ The examples use TypeScript, but you should still find them useful if you use so
 ## Table of Contents
 
 - **Token**
-  - [Concepts](concepts)
-  - [Motivations](motivations)
-  - [Alternatives](alternatives)
+  - [Concepts](#concepts)
+  - [Motivations](#motivations)
+  - [Alternatives](#alternatives)
 - **Puppet**
 
 ## Nothing happens when I dispatch an action

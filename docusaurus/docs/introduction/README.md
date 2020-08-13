@@ -12,9 +12,9 @@ Wechaty is a Conversational SDK for Chatbot Makers.
 ### Basic
 
 - **What is Wechaty**
-  - [Concepts](concepts)
-  - [Motivations](motivations)
-  - [Alternatives](alternatives)
+  - [Concepts](concepts.md)
+  - [Motivations](motivations.md)
+  - [Alternatives](alternatives.md)
 - **Who uses Wechaty**
   OSS.Chat
   Friday.BOT
