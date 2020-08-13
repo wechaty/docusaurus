@@ -59,9 +59,9 @@ However, it failed quickly with some exceptions in the log sometimes, or the Sen
 
 The original `ISSUE` link: <https://github.com/wechaty/wechaty/issues/540>
 
-Thanks for the help from @zixia and @lijiarui, which let me understand the Limitations of web-wechat and I did some research online saying web-wechat only allows to send 100 user request per day. And the api call throttle need to be steady. Obvisouly the original For-Loop is just too fast. I am wondering is there any kinda `Sleep` function in javascript?
+Thanks for the help from @huan and @lijiarui, which let me understand the Limitations of web-wechat and I did some research online saying web-wechat only allows to send 100 user request per day. And the api call throttle need to be steady. Obvisouly the original For-Loop is just too fast. I am wondering is there any kinda `Sleep` function in javascript?
 
-Thanks for the help from @zixia. Turns out there is a built in `Sleep` function already. Here is how to use `Wechaty Sleep`.
+Thanks for the help from @huan. Turns out there is a built in `Sleep` function already. Here is how to use `Wechaty Sleep`.
 
 ```javascript
 
