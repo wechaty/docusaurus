@@ -2,7 +2,7 @@
  name: krapnik
  site: https://github.com/krapnikkk
  avatar: /assets/developers/krapnik/avatar.jpg
- bio: an Coooooooooooooooding~
+ bio: 🐢 Coooooooooooooooding~
  email: krapnik@qq.com
  twitter: // TODO
  ---
@@ -11,4 +11,4 @@
 
  - Github: <https://github.com/krapnikkk>
  - Email：<krapnik@qq.com>
- - Website: <http://krapnik.cn>
+ - Website: <http://blog.krapnik.cn>
