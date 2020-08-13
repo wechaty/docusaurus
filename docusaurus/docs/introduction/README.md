@@ -21,9 +21,9 @@ Wechaty is a Conversational SDK for Chatbot Makers.
   Juzi.BOT
   Archy BOT
 - **How to Wechaty**
-Supported Languages
+  Supported Languages
       'multi-language',
-Supported Conversational Protocols
+  Supported Conversational Protocols
       'puppet',
 - **Examples**
       'examples',
