@@ -7,7 +7,7 @@ tags:
   - wechaty
   - soc
   - talk
-  - news
+  - announcement
   - meetup
   - featured
 image: /assets/2020/wechaty-soc-kick-off-meeting/soc.png

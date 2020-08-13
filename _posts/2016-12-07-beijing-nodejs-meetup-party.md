@@ -5,7 +5,7 @@ date: '2016-12-07'
 categories: event
 tags:
   - talk
-  - news
+  - announcement
 image: /assets/2016/nodeparty-banner.jpg
 ---
 

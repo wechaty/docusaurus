@@ -5,7 +5,7 @@ excerpt_separator: <!--more-->
 categories: story
 tags:
   - code
-  - news
+  - announcement
 image: /assets/2016/ruirui-dance.jpg
 ---
 

@@ -47,7 +47,7 @@ highlighter: rouge
 
 # Paginate
 paginate: 30
-paginate_path: /community/page:num/
+paginate_path: /blog/page:num/
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
 exclude:

@@ -6,7 +6,7 @@ categories: tutorial
 tags:
   - heroku
   - deploy
-  - news
+  - announcement
 ---
 
 > Author: [Huan LI](https://github.com/huan), A Former Linux Admin

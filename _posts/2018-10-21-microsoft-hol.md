@@ -5,7 +5,7 @@ date: '2018-10-21 22:57:52 +0800'
 categories: event
 tags:
   - talk
-  - news
+  - announcement
 image: /assets/2018/microsoft-hol-chatbot.jpeg
 ---
 

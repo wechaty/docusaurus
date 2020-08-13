@@ -4,7 +4,7 @@ author: lijiarui
 categories: talks
 tags:
   - mvp
-  - news
+  - announcement
   - talk
 image: /assets/2020/azure-show/azure-show-rui.png
 ---

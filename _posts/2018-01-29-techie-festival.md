@@ -5,7 +5,7 @@ author: tingyinhelen
 categories: event
 tags:
   - talk
-  - news
+  - announcement
 image: /assets/2018/helen-techie-festival.jpeg
 ---
 

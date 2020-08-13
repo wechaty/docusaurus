@@ -5,7 +5,7 @@ published: false
 author: 句子互动
 tags:
   - event
-  - news
+  - announcement
 ---
 
  > Author: 句子互动

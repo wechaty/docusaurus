@@ -5,7 +5,7 @@ author: dcsan
 categories: event
 tags:
   - meetup
-  - news
+  - announcement
 image: /assets/2017/dcsan-shanghai-meetup.jpg
 ---
 
