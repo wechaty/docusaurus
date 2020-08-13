@@ -21,8 +21,6 @@ So I build a fun application based on Wechaty, called [wechaty_selfie](https://g
 
 Say goodbye to your choice of difficulty!
 
-<!--more-->
-
 ## Screenshot of the application
 
 ![selfie demo](/assets/2017/wechaty-selfie-demo-screenshoot.jpg)

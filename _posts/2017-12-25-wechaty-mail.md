@@ -14,8 +14,6 @@ As soon as I learn how to use 6 lines of JavaScript to achieve a simple chatbot 
 
 ![wechaty_email](/assets/2017/wechaty-email.png)
 
-<!--more-->
-
 ## Screenshot of the Application
 
 For example, my binding email address is 346786495@qq.com

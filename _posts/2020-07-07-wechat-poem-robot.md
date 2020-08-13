@@ -38,8 +38,6 @@ image: /assets/2020/wechat-poem-robot/chat.png
 
 此时我找到了 `beclass` 的博文 [《基于Nodejs+Wechaty开发微信机器人管理平台》](https://wechaty.github.io/2020/05/31/wxbot/)。发现了 Wechaty 这个项目，支持 iPad 协议，虽然需要付费获取 token，但是可以申请[参与开源激励计划](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty#2%E5%85%8D%E8%B4%B9Token%E5%8F%82%E4%B8%8E%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92)来获取免费甚至长期有效的 token。
 
-<!--more-->
-
 ## 具体实现
 
 ### 基本构架

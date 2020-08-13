@@ -10,7 +10,6 @@ tags:
 > 作者: [Su Chang](https://github.com/su-chang)，Node.js全栈工程师
 
 介绍wechaty中的room-join事件的产生，及其数据流的变化
-<!--more-->
 
 ## 问题
 

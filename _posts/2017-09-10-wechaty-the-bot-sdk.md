@@ -22,8 +22,6 @@ So in many ways WeChaty is becoming the missing bot SDK for WeChat, and it's com
 
 Additionally the core wechaty team make a big effort to use English in their documents and community. So this community is the gateway to China for international chatbot companies too. It's great to get some ideas from [outside of the genepool](http://www.chinadaily.com.cn/business/tech/2017-08/21/content_30913647.htm) too XD
 
-<!--more-->
-
 ## Groups APIs and multiuser chatbots
 
 So far the Tencent official APIs have only addressed 1:1 chatbots. WeChaty API is addressing an extra layer with addressing for users within groups.

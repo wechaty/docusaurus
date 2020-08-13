@@ -23,8 +23,6 @@ If you are using Wechaty and you love Wechaty, from now you can buy our logo sti
 * Order from JD: <https://item.jd.com/12994583384.html>
 * Order from TMall: <https://detail.tmall.com/item.htm?id=552823238544>
 
-<!--more-->
-
 [![Wechaty Sticker][wechaty-sticker]](https://item.jd.com/12994583384.html)
 
 [![Wechaty Sticker on Mac][wechaty-sticker-mac]](https://item.jd.com/12994583384.html)

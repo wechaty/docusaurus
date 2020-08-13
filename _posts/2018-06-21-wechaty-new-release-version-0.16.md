@@ -36,8 +36,6 @@ Please file a new issues if you meet any bug or have any feature suggestions, an
 
 Huan LI
 
-<!--more-->
-
 [![Wechaty with new color in blue](https://wechaty.github.io/wechaty/images/wechaty-logo-green-en.png)](https://github.com/wechaty/wechaty)
 
 ## CHANGE LOG

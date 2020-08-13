@@ -16,8 +16,6 @@ I built a bot to deliver the daily paper about machine learning and fintech to t
 
 Before the bot work, I had really done a lot of work to crawl data and filter data, I won't talk about the data here, just about the Wechaty!
 
-<!--more-->
-
 ## Screenshot
 
 ![screenshot][2]

@@ -18,8 +18,6 @@ I am currently exploring all the examples from the Wechaty and try to customize 
 
 So I had a particular evil thought in my mind one day. I wanted to add a Wechaty bot to any chatrooms and sent bot a command, then somehow the bot can start to send Friend Requests to all the people in the room.
 
-<!--more-->
-
 Below is the code snippet
 
 ```javascript

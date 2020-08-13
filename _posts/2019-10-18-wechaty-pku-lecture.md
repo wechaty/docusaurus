@@ -19,8 +19,6 @@ image: /assets/2019/wechaty-pku-lecture/pku-liming2.jpeg
 * Wechaty社区生态治理  
 * Wechaty应用案例分享  
 
-<!--more-->
-
 ![北大讲座现场]({{ '/assets/2019/wechaty-pku-lecture/wechaty-pku-lecture.jpeg' | relative_url }})
 
 2019.10.18，受[北京大学软件与微电子学院](http://www.ss.pku.edu.cn/)张齐勋老师邀请，经华为云庄表伟的介绍，我代表Wechaty开源项目，给来自北大软院实验班的120多位同学，完整系统地介绍了Wechaty项目，并分享了Wechaty应用案例-[毛豆课堂小助手]({{ '/assets/2019/wechaty-pku-lecture/wechaty-pku-mdktxzs.jpeg' | relative_url }})。

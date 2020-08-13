@@ -62,10 +62,6 @@ image: your_teaser_image_path
 
 see more: [Do not include Date in URL](https://github.com/wechaty/wechaty.github.io/issues/79)
 
-### 3. Add `<!--more-->` Section
-
-Add `<!--more-->` section for your abstract part, it will show on the blog homepage, or the blog homepage will show all your blog content.
-
 ### 4. Just Commit Related Files
 
 Please do not commit unrelated files.

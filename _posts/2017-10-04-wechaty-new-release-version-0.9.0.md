@@ -19,8 +19,6 @@ If you find new issues, please let us know by visiting our Github issue page and
 Huan LI  
 Creator of Wechaty
 
-<!--more-->
-
 ## Change Log
 
 ### [v0.9.0](https://github.com/wechaty/wechaty/tree/v0.9.0) (2017-10-04)

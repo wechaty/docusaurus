@@ -17,8 +17,6 @@ image: /assets/2019/wechaty-ricepo/logo.png
 * Wechaty+SQS整体架构
 * Wechaty使用遇到问题以及解决方案
 
-<!--more-->
-
 ![RICEPO]({{ '/assets/2019/wechaty-ricepo/ricepo.png' | relative_url }})
 
 ## RICEPO简介

@@ -20,7 +20,6 @@ Before introducing [Wechaty Telegram Bot Adaptor](https://github.com/hczhcz/wech
 
 What are the differences between a chatbot and a game app? A chatbot is much more accessible. You do not need to let your friends download and install it. Instead, just say "hey, let's play Werewolf/UNO/Avalon..." and the chatbot will be ready for your friends and you. The process of playing the game and the process of chatting are actually "fused" together.
 
-<!--more-->
 In addition to games, chatbots can involve in one's daily life from many aspects. When I wake up in the morning, I can call a bot to add myself to the list of early-morning guys (even if I get up later than 10 a.m. XD). I can keep tracking the updates from GitHub via a bot. A bot can also get random XKCD comics, Konachan wallpapers or Wikipedia entries for me. There are some super funny chatbots. One of them would let you ban a user in a group for several seconds but you have a probability of 50% that gets yourself banned. Another will pair the parentheses you sent. For example, if you say something like "（逃", it will reply "） ○(￣^￣○)".
 
 ![telegram]({{site.baseurl}}/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-2.jpg)

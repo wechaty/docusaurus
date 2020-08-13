@@ -17,8 +17,6 @@ Wechaty 近期有了很大的升级，从0.14版本之后，开始陆续支持�
 
 ![code](/assets/2018/code-migration-zh.png)
 
-<!--more-->
-
 ## 1. Puppeteer VS Padchat
 
 首先进行一下名词解释，在说这两个名词之前，先介绍一下Puppet

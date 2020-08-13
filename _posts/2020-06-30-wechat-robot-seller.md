@@ -21,8 +21,6 @@ image: /assets/2020/wechat-robot-seller/chat.jpeg
 
 通过一番学习之后，看到了新的ipad协议，有C#版本的但是很久没有人维护了，看到wechaty的puppet-padplus，基于RPC实现的版本，将ipad协议封装到了server端，还是很方便的
 
-<!--more-->
-
 ## 功能
 
 - 商品搜索

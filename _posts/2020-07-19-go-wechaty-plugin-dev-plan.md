@@ -15,8 +15,6 @@ image: /assets/2020/go-wechaty-plugin-soc/2020-07-21-go-wechaty.png
 官网：[https://isrc.iscas.ac.cn/summer2020](https://isrc.iscas.ac.cn/summer2020) 官方新闻：[http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html](http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html)
 本项目 [为 go-wechaty 设计实现插件体系] 系 暑期2020 支持的开源项目。
 
-<!--more-->
-
 ## [为 go-wechaty 设计实现插件体系]具体计划
 
 - 导师：丁小雨、丁超飞、李博杰

@@ -1,7 +1,6 @@
 ---
 title: '一个姑娘如何用6行代码写出微信聊天机器人'
 author: lijiarui
-excerpt_separator: <!--more-->
 categories: story
 tags:
   - code
@@ -14,8 +13,6 @@ image: /assets/2016/ruirui-dance.jpg
 我一直和我的小伙伴在业余时间拍摄舞蹈教学视频，叫“舞哩”，原创了几百个视频，近千万的播放，所以就建了微信群来和粉丝交流。
 
 ![RuiRui][ruirui-dance-image]
-
-<!--more-->
 
 ## 1. 与微信机器人的结缘
 

@@ -16,8 +16,6 @@ image: /assets/2017/itdakashuo-how-to-build-a-chatbot-7.jpg
 
 ![wechaty]({{site.baseurl}}/assets/2017/itdakashuo-how-to-build-a-chatbot-1.jpg)
 
-<!--more-->
-
 早在80年代，大家普遍使用PC上网，所有网上交互都是通过PC客户端去实现的。随着网速变得越来越快，浏览器开始普及。
 
 智能手机出现以后，人们使用电脑的时间越来越少，手机里安装的APP则越来越多。

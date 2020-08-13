@@ -20,8 +20,6 @@ image: /assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot0.jpg
 --让天下没有难开发的机器人
 --说干就干，开始了我的微信机器人之旅
 
-<!--more-->
-
 ## 项目
 
 wechaty-team-robot

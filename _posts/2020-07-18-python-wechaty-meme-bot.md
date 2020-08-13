@@ -10,8 +10,6 @@ tags:
 > Author: [@MrZilinXiao](https://github.com/MrZilinXiao) Always dedicated to learn something brand new.
 > Code: [@Fighting-Meme-python-wechaty](https://github.com/MrZilinXiao/Fighting-Meme-python-wechaty)
 
-<!--more-->
-
 ## 暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。

@@ -10,7 +10,6 @@ image: /assets/2020/wechaty-plugin-milestone/plugin.png
 ---
 
 > 作者: [Yinbohao](https://github.com/rickyyin98/)
-<!--more-->
 
 ![Wechaty Plugin活动](/assets/2020/wechaty-plugin-milestone/plugin.png)
 

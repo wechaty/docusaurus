@@ -14,8 +14,6 @@ image: /assets/2017/wechaty-sticker.jpg
 
 Wechaty v0.30 Released! We have lots of new features added and bugs fixed!
 
-<!--more-->
-
 ## Change Log
 
 ## [v0.30](https://github.com/wechaty/wechaty/tree/v0.30) (2020-02-08)

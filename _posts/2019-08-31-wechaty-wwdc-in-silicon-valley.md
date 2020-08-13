@@ -27,8 +27,6 @@ Wechaty就是唯一最好用最Powerful並且擴展性高的Wechat工具了。
 
 這篇文章因為是由有拖延症的我編寫，導致延遲了接近一年，深感抱歉，現在讓我們來坐坐時光機回去吧
 
-<!--more-->
-
 讓我們回到2018年前的11月7日，在Chatie開源創始人的李董人來訪美國時，發生了神奇的事
 
 Guess what! Something happened. 對的！就是 Chatie WWDC in Silicon Valley!!

@@ -18,8 +18,6 @@ Most of the WeChaty core team are in Beijing, but there are a few of us here in 
 
 We talked devops, chatbot games, NLP and more!
 
-<!--more-->
-
 ## WeChaty Infrastructure and DevOps
 
 One of the issues for people running wechaty services is dev ops. Especially if you want to have many bots running. WeChaty itself is nicely docker-ized, but running multiple instances of the container, and orchestrating them is something a few companies are seeing as a common next step. We discussed ways to communicate between different node services.

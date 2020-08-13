@@ -20,8 +20,6 @@ image: /assets/2020/manage-ur-customers/2020-0517-wechat.jpeg
 - 群人数超过一定限额，群二维码失效，需要手动拉人
 - 最新的活动通知
 
-<!--more-->
-
 ## Wechaty 和 Puppet
 
 [`Wechaty`](https://github.com/wechaty/wechaty) 提供了群组管理、收发消息等接口，能够方便地满足计划需求。
