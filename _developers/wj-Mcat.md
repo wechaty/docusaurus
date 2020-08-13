@@ -4,7 +4,7 @@ site: https://github.com/wj-Mcat
 avatar: /assets/developers/wj-Mcat/avatar.png
 bio: Committer of Python-Wechaty. NLP & Chatbot Researcher, a graduate student at Beijing University of Posts and Telecommunications.
 email: 1435130236@qq.com
-twitter: 
+twitter: https://weibo.com/u/3877178684
 ---
 
 活跃于开源社区，目前正努力学习Chatbot领域相关内容，致力于开发一款足够简单，足够智能，足够好用的Conversation AI Chatbot，让更多的开发者能够快速进入聊天机器人领域，从而逐步推动行业的发展。
