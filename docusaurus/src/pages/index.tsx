@@ -23,17 +23,18 @@ const features = [
     description: (
       <>
         Wechaty lets you focus on your conversations, and we'll do the chores. Go
-        ahead and build your business logic based on <code>Wechaty</code>.
+        ahead and build your business logic based on <b>Wechaty</b>.
       </>
     ),
   },
   {
-    title: 'Powered by Community',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: 'Join our WeChat Room',
+    imageUrl: 'img/friday-qrcode.svg',
     description: (
       <>
-        Extend or customize your chatbot by reusing any community driven modules. Wechaty can
-        be extended easily in plugins for most of the languages.
+        You are welcome to join our <b>Wechaty Developers' Home</b> by
+        scaning the above QR code,
+        then send the secret code <code>wechaty</code> to <i>Friday.BOT</i>.
       </>
     ),
   },
