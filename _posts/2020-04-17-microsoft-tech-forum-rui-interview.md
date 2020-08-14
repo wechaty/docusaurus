@@ -6,7 +6,7 @@ tags:
   - wechaty
   - microsoft
   - chatbot
-  - announcement
+  - news
 image: /assets/2020/ms-lijiarui-interview/teaser.png
 ---
 

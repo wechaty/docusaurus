@@ -6,7 +6,7 @@ tags:
   - bot friday
   - talk
   - meetup
-  - announcement
+  - news
 image: /assets/2019/bot5-seminar-2/group-photo.png
 ---
 

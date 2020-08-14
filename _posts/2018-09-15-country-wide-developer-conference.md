@@ -4,7 +4,7 @@ author: lijiarui
 categories: event
 tags:
   - meetup
-  - announcement
+  - news
   - featured
 image: /assets/2018/country-wide-developer-conference.jpg
 ---

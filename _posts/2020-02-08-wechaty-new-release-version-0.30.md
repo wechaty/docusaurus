@@ -4,7 +4,7 @@ author: huan
 categories: announcement
 tags:
   - release
-  - announcement
+  - news
 image: /assets/2017/wechaty-sticker.jpg
 ---
 

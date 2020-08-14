@@ -5,7 +5,7 @@ categories: tutorial
 tags:
   - windows
   - install
-  - announcement
+  - news
 image: /assets/2018/wechaty-installation-in-windows.png
 ---
 

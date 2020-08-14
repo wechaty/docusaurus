@@ -19,7 +19,7 @@ module.exports = {
       title: '',
       logo: { alt: 'Wechaty Logo', src: 'img/wechaty-logo.svg' },
       items: [
-        { label: 'Announcement',    href: 'https://wechaty.js.org/announcement/', position: 'right', target: '_self' },
+        { label: 'News',            href: 'https://wechaty.js.org/news/',         position: 'right', target: '_self' },
         { label: 'Blog',            href: 'https://wechaty.js.org/blog/',         position: 'right', target: '_self' },
         { label: 'Docs',            to:   'docs/',                                position: 'right', activeBasePath: 'docs' },
         { label: 'Getting Started', to:   'docs/getting-started',                 position: 'right' },

@@ -6,7 +6,7 @@ tags:
   - bot5
   - talk
   - meetup
-  - announcement
+  - news
 image: /assets/2019/bot5-seminar-0/group-photo.jpg
 ---
 

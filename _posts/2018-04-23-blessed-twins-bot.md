@@ -4,7 +4,7 @@ author: huan
 categories: feature
 tags:
   - code
-  - announcement
+  - news
 image: /assets/2018/blessed-twins-bot.png
 ---
 

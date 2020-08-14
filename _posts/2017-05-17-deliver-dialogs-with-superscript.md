@@ -4,7 +4,7 @@ author: hain
 categories: tutorial
 tags:
   - code
-  - announcement
+  - news
 ---
 
 Author: [@hain](http://blog.chatbot.io/webcv/), Lead of [Rockq Community](https://github.com/rockq-org/node-party), [Wechaty Contributor](https://github.com/orgs/Chatie/teams/contributor)

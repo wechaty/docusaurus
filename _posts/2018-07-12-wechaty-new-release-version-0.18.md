@@ -4,7 +4,7 @@ author: huan
 categories: announcement
 tags:
   - release
-  - announcement
+  - news
   - featured
 image: /assets/2018/huan-reduce-weight.jpg
 ---
