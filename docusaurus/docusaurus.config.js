@@ -22,6 +22,7 @@ module.exports = {
         { label: 'News',            href: 'https://wechaty.js.org/news/',         position: 'right', target: '_self' },
         { label: 'Blog',            href: 'https://wechaty.js.org/blog/',         position: 'right', target: '_self' },
         { label: 'Docs',            to:   'docs/',                                position: 'right', activeBasePath: 'docs' },
+        { label: 'Developers',      href: 'https://wechaty.js.org/developers/',   position: 'right' },
         { label: 'Getting Started', to:   'docs/getting-started',                 position: 'right' },
         { label: 'Tutorial',        to:   'docs/video-tutorial',                  position: 'right' },
         { label: 'API',             to:   'docs/api/README',                      position: 'right' },
