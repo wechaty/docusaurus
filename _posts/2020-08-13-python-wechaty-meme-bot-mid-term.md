@@ -20,7 +20,7 @@ tags:
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。
-官网：https://isrc.iscas.ac.cn/summer2020 官方新闻：http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html
+官网：[https://isrc.iscas.ac.cn/summer2020](https://isrc.iscas.ac.cn/summer2020) 官方新闻：[http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html](http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html)
 本项目 基于Python-wechaty建立一个斗图机器人 系 暑期2020 支持的开源项目。
 
 ## [基于Python-wechaty建立一个斗图机器人]信息
@@ -33,7 +33,7 @@ tags:
 
 - 方案描述：利用OCR、NLP等技术，提取出用户发送的表情包内容，并回复数据库中已有与之相关的表情；具体技术方案泳道图见下：
 
-  ![](/assets/2020/meme-bot/08-13-wechaty-meme-bot-mid-term.svg)
+  ![mid-term](/assets/2020/meme-bot/08-13-wechaty-meme-bot-mid-term.svg)
 
   更多细节可参见[项目README](https://github.com/MrZilinXiao/python-wechaty-meme-bot/blob/master/README.md).
 
@@ -73,8 +73,6 @@ tags:
   - 对比传统图像分类模型Inception、Metric Learning模型CosineMetricNet的特征提取效果，为用户提供多种选择。
   - 思考出性能优秀的cosine distance比较方法，为从数据库海量表情中提取出相似的表情提供便利。
 
-
-
 ## 中期PPT演示 & Demo Live 视频链接
 
 PPT演示：
@@ -85,7 +83,7 @@ Demo Live视频：
 
 <iframe src="//player.bilibili.com/player.html?aid=286675266&bvid=BV17f4y197ut&cid=224030905&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
-## Reference 
+## Reference
 
 ### Open-Source Reference
 
@@ -103,4 +101,3 @@ Demo Live视频：
 
 - 项目链接：[@python-wechaty-meme-bot](https://github.com/MrZilinXiao/python-wechaty-meme-bot/)
 - 联系方式：me#mrxiao.net  (# -> @)
-
