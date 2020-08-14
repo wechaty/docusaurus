@@ -6,7 +6,7 @@ tags:
   - devops
   - tool
   - talk
-  - announcement
+  - news
   - featured
 image: /assets/2020/wonderful-wechaty-devops-tools/teaser-image.png
 ---

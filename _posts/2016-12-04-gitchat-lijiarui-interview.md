@@ -4,7 +4,7 @@ author: lijiarui
 categories: story
 tags:
   - interview
-  - announcement
+  - news
 image: /assets/2016/gitchat-lijiarui-interview.jpg
 ---
 

@@ -1,10 +1,10 @@
 ---
-title: Wechaty - Announcement
+title: Wechaty - News
 layout: default
 description: Wechaty - Conversational SDK for Chatbot Makers
 ---
 
-{% assign announcement_posts = site.tags['announcement'] %}
+{% assign news_posts = site.tags['news'] %}
 
 <div class="container">
 
@@ -12,7 +12,7 @@ description: Wechaty - Conversational SDK for Chatbot Makers
 <div class="row remove-site-content-margin">
 
     <!-- latest post -->
-    {% assign latest_post = announcement_posts[0] %}
+    {% assign latest_post = news_posts[0] %}
     <div class="col-md-6">
     <div class="card border-0 mb-4 box-shadow">
     <a href="{{site.baseurl}}{{latest_post.url}}">
@@ -44,7 +44,7 @@ description: Wechaty - Conversational SDK for Chatbot Makers
     <div class="col-md-6">
 
         <!-- second latest post -->
-        {%- assign second_post = announcement_posts[1] -%}
+        {%- assign second_post = news_posts[1] -%}
         <div class="mb-3 d-flex align-items-center">
                 {% if second_post.image %}
                 <div class="col-md-4">
@@ -71,7 +71,7 @@ description: Wechaty - Conversational SDK for Chatbot Makers
             </div>
 
         <!-- third latest post -->
-        {%- assign third_post = announcement_posts[2] -%}
+        {%- assign third_post = news_posts[2] -%}
         <div class="mb-3 d-flex align-items-center">
                 {% if third_post.image %}
                 <div class="col-md-4">
@@ -98,7 +98,7 @@ description: Wechaty - Conversational SDK for Chatbot Makers
             </div>
 
         <!-- fourth latest post -->
-        {%- assign fourth_post = announcement_posts[3] -%}
+        {%- assign fourth_post = news_posts[3] -%}
         <div class="mb-3 d-flex align-items-center">
                 {% if fourth_post.image %}
                 <div class="col-md-4">
@@ -129,7 +129,7 @@ description: Wechaty - Conversational SDK for Chatbot Makers
 </div>
 
 <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
-{% for post in announcement_posts %}
+{% for post in news_posts %}
 {% if post.tags contains "sticky" %}
 <div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
     <div class="pl-4 pr-0 h-100 tofront">
@@ -156,10 +156,10 @@ description: Wechaty - Conversational SDK for Chatbot Makers
 
     <div class="col-md-8 main-loop">
 
-        <h4 class="font-weight-bold spanborder"><span>Announcements</span></h4>
+        <h4 class="font-weight-bold spanborder"><span>All News</span></h4>
 
 
-        {% for post in announcement_posts %}
+        {% for post in news_posts %}
 
             {% include main-loop-card-post.html %}
 
@@ -168,7 +168,7 @@ description: Wechaty - Conversational SDK for Chatbot Makers
     </div>
 
     <div class="col-md-4">
-        {% assign announcement = true %}
+        {% assign news = true %}
         {% include sidebar-featured.html %}
     </div>
 

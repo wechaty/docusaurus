@@ -4,7 +4,7 @@ author: lijiarui
 categories: migration
 tags:
   - code
-  - announcement
+  - news
 image: /assets/2018/code-migration-en.png
 ---
 

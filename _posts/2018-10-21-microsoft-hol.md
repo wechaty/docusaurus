@@ -4,7 +4,7 @@ author: lijiarui
 categories: event
 tags:
   - talk
-  - announcement
+  - news
 image: /assets/2018/microsoft-hol-chatbot.jpeg
 ---
 

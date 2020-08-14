@@ -4,7 +4,7 @@ author: wj-Mcat
 categories: announcement
 tags:
   - python
-  - announcement
+  - news
   - featured
 image: /assets/2020/python-wechaty/python-wechaty-logo.png
 ---

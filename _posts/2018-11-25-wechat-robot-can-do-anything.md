@@ -4,7 +4,7 @@ author: zhuangbiaowei
 categories: article
 tags:
   - artificial intelligence
-  - announcement
+  - news
 ---
 
 > 作者: [庄表伟](https://github.com/zhuangbiaowei/)，[开源社](http://www.kaiyuanshe.cn/)理事/执行长。首发于简书: [微信机器人能够做些什么事？](https://www.jianshu.com/p/9698395511e0)

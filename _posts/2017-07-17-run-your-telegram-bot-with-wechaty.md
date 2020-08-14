@@ -5,7 +5,7 @@ categories: project
 tags:
   - code
   - telegram
-  - announcement
+  - news
 image: /assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-1.png
 ---
 

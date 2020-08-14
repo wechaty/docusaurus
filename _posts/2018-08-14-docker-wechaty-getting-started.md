@@ -4,7 +4,7 @@ author: huan
 categories: tutorial
 tags:
   - docker
-  - announcement
+  - news
 ---
 
 > Author: [Huan LI](https://github.com/huan), A Docker Fan

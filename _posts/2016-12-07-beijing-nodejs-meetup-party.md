@@ -4,7 +4,7 @@ author: Samurais
 categories: event
 tags:
   - talk
-  - announcement
+  - news
 image: /assets/2016/nodeparty-banner.jpg
 ---
 

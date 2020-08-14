@@ -3,7 +3,7 @@ title: "Java Wechaty Beta Released: 终于有了 Java 可以用的微信机器�
 author: diaozxin007
 categories: announcement
 tags:
-  - announcement
+  - news
   - java
   - featured
 image: /assets/2020/java-wechaty/2020-06-15-java-wechaty.png

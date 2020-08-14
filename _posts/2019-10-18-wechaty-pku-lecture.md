@@ -5,7 +5,7 @@ categories: event
 tags:
   - meetup
   - lecture
-  - announcement
+  - news
 image: /assets/2019/wechaty-pku-lecture/pku-liming2.jpeg
 ---
 

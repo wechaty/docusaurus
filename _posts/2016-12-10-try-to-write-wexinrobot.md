@@ -4,7 +4,7 @@ author: lijiarui
 categories: story
 tags:
   - code
-  - announcement
+  - news
 image: /assets/2016/ruirui-dance.jpg
 ---
 

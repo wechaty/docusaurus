@@ -4,7 +4,7 @@ author: huan
 categories: announcement
 tags:
   - talk
-  - announcement
+  - news
 image: /assets/2017/wechaty-connect-chatbots.jpg
 ---
 <div class="video-container" style="

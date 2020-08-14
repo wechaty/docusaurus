@@ -4,7 +4,7 @@ author: antonia0912
 categories: event
 tags:
   - meetup
-  - announcement
+  - news
 image: /assets/2017/wechat-meeting.jpg
 ---
 
