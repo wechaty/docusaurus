@@ -819,7 +819,7 @@ univerone:
 godkillerxiao:
   name        : "MrZilinXiao"
   bio         : "Maybe an AI researcher"
-  avatar      : "https://avatars0.githubusercontent.com/u/42504790?s=460&u=7b2cbb1582ef5255e5a572b70d4eec55b1e4781c&v=4"
+  avatar      : "/assets/developers/godkillerxiao/avatar.png"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
