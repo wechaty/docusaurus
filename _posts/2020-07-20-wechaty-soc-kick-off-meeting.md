@@ -1,20 +1,19 @@
 ---
 title: "Wechaty Summer of Code 2020 Kickoff Meeting"
 author: rickyyin98
-date: "2020-07-20 08:00:00 +0800"
 categories: announcement
 tags:
   - wechaty
   - soc
   - talk
-  - home
+  - announcement
   - meetup
   - featured
 image: /assets/2020/wechaty-soc-kick-off-meeting/soc.png
 ---
 
 > 作者: [Yinbohao](https://github.com/rickyyin98/)
-<!--more-->
+
 ## 关于暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。

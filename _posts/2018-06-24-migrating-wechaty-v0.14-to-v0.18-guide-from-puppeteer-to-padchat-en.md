@@ -1,11 +1,10 @@
 ---
 title: Migrating Wechaty v0.14 to v0.18 Guide - From Puppeteer To Padchat
-date: '2018-06-30 15:00:00 +0800'
 author: lijiarui
 categories: migration
 tags:
   - code
-  - home
+  - announcement
 image: /assets/2018/code-migration-en.png
 ---
 
@@ -17,18 +16,14 @@ This blog introduces how to porting code from wechaty puppeteer to padchat.
 
 ![code](/assets/2018/code-migration-en.png)
 
-<!--more-->
-
 ## 1. Puppeteer VS Padchat
 
 **Puppet System** means to connect Wechaty API to any kinds of Puppets, including Web, iPad, Android, Windows Hook and ios. Different implements of these puppets are totally different, without the puppet, using one API to bridge all implement is very difficult, so we had Puppet System.
 
 ![Puppet](https://github.com/wechaty/wechaty/wiki/image/abstract-info.png)
 
-- Puppeteer
-A solution based on Web Wechat
-- Padchat
-A solution based on Ipad Wechat
+- Puppeteer: a solution based on Web Wechat
+- Padchat: a solution based on Ipad Wechat
 
 You can find more in this blog: [Wechaty New Version 0.16(BETA, with superpower) Released](https://wechaty.github.io/wechaty-new-release-version-0.16/)
 
@@ -150,27 +145,27 @@ I suggest to refer wechaty config about `tslint` and `tsconfig`
 Here are some tips about wehcaty config:
 
 - "strict" : true
-Enable all strict type checking options.
-Enabling --strict enables --noImplicitAny, --noImplicitThis, --alwaysStrict, --strictNullChecks, --strictFunctionTypes and --strictPropertyInitialization
+    Enable all strict type checking options.
+    Enabling --strict enables --noImplicitAny, --noImplicitThis, --alwaysStrict, --strictNullChecks, --strictFunctionTypes and --strictPropertyInitialization
 - "noEmitOnError"              : true
-Do not emit outputs if any errors were reported.
+    Do not emit outputs if any errors were reported.
 - "noUnusedLocals"             : true
-Report errors on unused locals.
+    Report errors on unused locals.
 - "noImplicitReturns"          : true
-Report error when not all code paths in function return a value.
+    Report error when not all code paths in function return a value.
 - "noFallthroughCasesInSwitch" : true
-Report errors for fallthrough cases in switch statement.
+    Report errors for fallthrough cases in switch statement.
 - "strictNullChecks"           : true
-In strict null checking mode, the null and undefined values are not in the domain of every type and are only assignable to themselves and any (the one exception being that undefined is also assignable to void).
+    In strict null checking mode, the null and undefined values are not in the domain of every type and are only assignable to themselves and any (the one exception being that undefined is also assignable to void).
 - "noImplicitAny"              : true
-Raise error on expressions and declarations with an implied any type.
-Related issue: [ts-node 7.0 breaking change: Skip `files` by default](https://github.com/wechaty/wechaty/issues/1383)
+    Raise error on expressions and declarations with an implied any type.
+    Related issue: [ts-node 7.0 breaking change: Skip `files` by default](https://github.com/wechaty/wechaty/issues/1383)
 - "no-floating-promises": true
-Check the floating promise。Related issue: [Prevent the Floating Promise in the Async/Await Code](https://github.com/wechaty/wechaty/issues/1346)
+    Check the floating promise。Related issue: [Prevent the Floating Promise in the Async/Await Code](https://github.com/wechaty/wechaty/issues/1346)
 - "noUnusedParameters"         : true
     Report errors on unused parameters.。
 - "noImplicitThis"             : true
-Raise error on this expression with an implied any type.
+    Raise error on this expression with an implied any type.
 
 see more in [official website](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
 

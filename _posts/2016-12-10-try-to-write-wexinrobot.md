@@ -1,11 +1,10 @@
 ---
 title: '一个姑娘如何用6行代码写出微信聊天机器人'
 author: lijiarui
-excerpt_separator: <!--more-->
 categories: story
 tags:
   - code
-  - home
+  - announcement
 image: /assets/2016/ruirui-dance.jpg
 ---
 
@@ -14,8 +13,6 @@ image: /assets/2016/ruirui-dance.jpg
 我一直和我的小伙伴在业余时间拍摄舞蹈教学视频，叫“舞哩”，原创了几百个视频，近千万的播放，所以就建了微信群来和粉丝交流。
 
 ![RuiRui][ruirui-dance-image]
-
-<!--more-->
 
 ## 1. 与微信机器人的结缘
 
@@ -124,17 +121,15 @@ Wechaty.instance()
 下面对这段代码进行简单的介绍：
 
 - scan事件：两个返回值
-
   - code：返回了扫描的状态
     - 0：初始状态
     - 200：已经成功登陆
     - 201：微信已经扫码，等待确认
     - 408：等待微信扫码中
   - url：登陆需要扫描的二维码图片的地址，你需要将这个url粘贴到浏览器中打开，进行扫码登陆
-
 - login事件：返回的user，代表登陆的用户，返回的是一个Contact的类型，打印出来，是可以看到你当前登陆的用户昵称的。通过user.id()可以获取用户唯一id，user.name()可以获取用户的微信昵称，user.weixin()可以获取用户的微信号。
-
 - message事件：返回的是message，代表收到的消息，是一个Message类型。通过message.content()可以获取到消息的内容，message.from()可以获取到消息的发送者，返回的是一个Contact类型。
+
 以上只是一些简单的接口介绍，更多详细的接口文档可以点击查看：Wechaty的接口文档 接口文档还在更新中，如果希望更多接口，直接clone源码查看代码，你会发现很多惊喜好玩的小东西。
 
 除此之外，我还希望分享两个实用的Wechaty的工具：

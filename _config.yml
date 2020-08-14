@@ -9,7 +9,7 @@ email: wechaty@chatie.io
 mailchimp-list: https://zixia.us4.list-manage.com/subscribe/post?u=a8584b55dea5aa8bbc14bd1a0&amp;id=d9899f0d70
 
 include: ["_pages"]
-permalink: /:title/
+permalink: /:year/:month/:day/:title/
 
 # Plugins
 plugins:
@@ -47,7 +47,7 @@ highlighter: rouge
 
 # Paginate
 paginate: 30
-paginate_path: /news/page:num/
+paginate_path: /blog/page:num/
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
 exclude:

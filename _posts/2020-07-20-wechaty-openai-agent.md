@@ -1,11 +1,11 @@
 ---
 title: "用「Wechaty」和「微信对话开放平台」做个助理"
-date: 2020-07-16 12:00 +0800
 author: windmemory
 tags: 
   - openai
   - talk
   - sticky
+  - featured
 image: /assets/2020/wechaty-weixin-openai/teaser-image.png
 ---
 
@@ -14,8 +14,6 @@ image: /assets/2020/wechaty-weixin-openai/teaser-image.png
 > Code: [wwc-wechaty](https://github.com/windmemory/wwc-wechaty)
 
 应 [WWC(Women Who Code)](#women-who-code) 邀请，我在线上分享了如何用「Wechaty」和「微信对话开放平台」做个助理帮助回答常见问题。
-
-<!--more-->
 
 ![wechaty-weixin-openai][teaser]
 

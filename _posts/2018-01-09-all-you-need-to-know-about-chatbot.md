@@ -1,6 +1,5 @@
 ---
 title: "关于聊天机器人你需要知道的东西"
-date: 2018-01-19 04:31 +1100
 author: Wang Yan
 categories: event
 tags:
@@ -14,7 +13,6 @@ image: /assets/2018/techiefestival-25.jpeg
 
 ![1_](/assets/2018/techiefestival-1.jpg)
 
-<!--more-->
 当然还有这样的：
 
 ![2_](/assets/2018/techiefestival-2.jpg)
@@ -79,8 +77,6 @@ SmarterChild是其中最受欢迎的。开发于2000年，00后的它，现在�
 最后那位表情永远呆萌佛系青年贤二僧人究竟年龄几许呢？这款聊天机器人界的“扫地僧”的生日是2015年10月1日，当天是师父主持龙泉寺工作十周年的日子。它不仅也就是说他不过才1岁半，这么看出家人果然不打诳语。别看他年龄最小，听贤二一席话，能用禅意净化心灵，指引人生方向。
 
 ![14_](/assets/2018/techiefestival-14.jpg)
-
-<!--more-->
 
 ## 风起云涌的商业应用
 

@@ -1,11 +1,10 @@
 ---
 title: 'Wechaty 101: from v0.0 to v0.7'
-date: '2017-01-06 10:0:0 +0800'
 author: huan
 categories: announcement
 tags:
   - talk
-  - home
+  - announcement
 image: /assets/2017/wechaty-connect-chatbots.jpg
 ---
 <div class="video-container" style="
@@ -38,8 +37,6 @@ For visiters come from China who can not visit YouTube.com, this video is also h
 
 * [Wechaty 101 @ YouKu](http://v.youku.com/v_show/id_XMjQ3NjUxMjAwOA==.html)
 * [Wechaty 101 @ Tencent](https://v.qq.com/x/page/l03679h2u9s.html)
-
-<!--more-->
 
 ## Presentation Slides
 

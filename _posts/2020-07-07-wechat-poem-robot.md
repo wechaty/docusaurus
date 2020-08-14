@@ -1,7 +1,6 @@
 ---
 title: "用 Wechaty 实现微信诗歌搜索机器人（wechat poem robot）"
 author: ray7551
-date: "2020-07-07 04:13:00 +0800"
 categories: project
 tags:
   - wechaty
@@ -15,7 +14,7 @@ image: /assets/2020/wechat-poem-robot/chat.png
 
 > 作者: [ray7551](https://github.com/ray7551/)
 
-[![Wechaty Badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
+[![Wechaty Badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![Everything about Wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ## 微信机器人
@@ -37,8 +36,6 @@ image: /assets/2020/wechat-poem-robot/chat.png
 折腾到这里，我已经对各类方案有了基本了解：主要有 Web 网页端、Xpsoed 技术、PC Hook、iPad 协议、模拟机、MAC 协议这六类方案，从稳定性和安全性上比较，iPad 协议和 Mac 协议的方案是比较好的，商业上的应用也比较多。
 
 此时我找到了 `beclass` 的博文 [《基于Nodejs+Wechaty开发微信机器人管理平台》](https://wechaty.github.io/2020/05/31/wxbot/)。发现了 Wechaty 这个项目，支持 iPad 协议，虽然需要付费获取 token，但是可以申请[参与开源激励计划](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty#2%E5%85%8D%E8%B4%B9Token%E5%8F%82%E4%B8%8E%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92)来获取免费甚至长期有效的 token。
-
-<!--more-->
 
 ## 具体实现
 

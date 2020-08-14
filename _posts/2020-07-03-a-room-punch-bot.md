@@ -1,7 +1,6 @@
 ---
 
 title: "微信群打卡统计机器人"
-date: 2020-07-03 09:00 +0800
 author: secreter
 categories: tutorials
 tags:
@@ -15,8 +14,6 @@ image: /assets/2020/tiny-bot/teaser.jpeg
 一个可以OCR 打卡并生成统计方块图的机器人。
 
 ![打卡图片](/assets/2020/tiny-bot/teaser.jpeg)
-
-<!--more-->
 
 ## 项目背景
 

@@ -1,11 +1,10 @@
 ---
 title: "Deliver dialogs with SuperScript"
 author: hain
-date: '2017-05-17 19:31:53'
 categories: tutorial
 tags:
   - code
-  - home
+  - announcement
 ---
 
 Author: [@hain](http://blog.chatbot.io/webcv/), Lead of [Rockq Community](https://github.com/rockq-org/node-party), [Wechaty Contributor](https://github.com/orgs/Chatie/teams/contributor)
@@ -19,8 +18,6 @@ Author: [@hain](http://blog.chatbot.io/webcv/), Lead of [Rockq Community](https:
 Wechaty就像是连到母体的管道，当我们还在思考着是吃红药片还是蓝药片的时候，pia，[zixia](https://github.com/huan)就把Wechaty给做出来。然后呢？！
 
 对话，对话，对话。
-
-<!--more-->
 
 ## SuperScript
 

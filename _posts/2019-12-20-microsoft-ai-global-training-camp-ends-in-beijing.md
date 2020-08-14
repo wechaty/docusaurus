@@ -1,11 +1,10 @@
 ---
 title: "年末最硬核！微软AI全球训练营北京站落幕"
-date: 2019-12-20 19:00 +0800
 published: false
 author: 句子互动
 tags:
   - event
-  - home
+  - announcement
 ---
 
  > Author: 句子互动

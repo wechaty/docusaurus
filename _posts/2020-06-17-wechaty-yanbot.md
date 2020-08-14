@@ -1,7 +1,6 @@
 ---
 title: "学术场景应用：YanBot"
 author: Chaogan-Yan
-date: '2020-06-17 10:21:00 +0800'
 categories: project
 tags:
   - nodejs

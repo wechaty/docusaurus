@@ -1,6 +1,5 @@
 ---
 title: wechatfordata数据碎片化响应与BAU常规运维的探索实践
-date: 2020-03-01 13:00 +0800
 author: kelly-cheng
 categories: project
 tags:
@@ -9,8 +8,6 @@ image: /assets/2020/wechat-for-data-bau/wechat-reply-night.jpg
 ---
 
 > Author: [@KellyCheng](https://github.com/hkenter) 数据工程师，Java工程师,偶尔写写python、Node.js在医疗,医药行业打杂
-
-<!--more-->
 
 ## 背景
 

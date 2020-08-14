@@ -1,10 +1,9 @@
 ---
 title: "Java Wechaty Beta Released: 终于有了 Java 可以用的微信机器人"
-date: 2020-06-15 09:00 +0800
 author: diaozxin007
 categories: announcement
 tags:
-  - home
+  - announcement
   - java
   - featured
 image: /assets/2020/java-wechaty/2020-06-15-java-wechaty.png
@@ -30,8 +29,6 @@ image: /assets/2020/java-wechaty/2020-06-15-java-wechaty.png
 编程语言也由原来的单一语言（TypeScript） 发展到，Java，Scala，Python，Go 等多语言实现的工具库了，同时社区生态还在不断的壮大。
 
 Github 地址：[https://github.com/wechaty/wechaty](https://github.com/wechaty/wechaty) 目前已经有 7.9k 的 star 了。
-
-<!--more-->
 
 ## 与 Wechaty 结缘
 

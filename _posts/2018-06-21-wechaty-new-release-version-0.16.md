@@ -1,11 +1,10 @@
 ---
 title: Wechaty New Version 0.16(BETA, with super power) Released
-date: '2018-06-21 12:0:0 +0800'
 author: huan
 categories: announcement
 tags:
   - release
-  - home
+  - announcement
 image: /assets/2018/huan-wechaty-new-version-0.16.png
 ---
 > Author: [@huan](https://github.com/huan) Coder, Author of Wechaty.
@@ -35,8 +34,6 @@ Learn more about how to use the PuppetPadchat from [Wechaty v0.15 Alpha Testing:
 Please file a new issues if you meet any bug or have any feature suggestions, and PR is always welcome(with an issue created first).
 
 Huan LI
-
-<!--more-->
 
 [![Wechaty with new color in blue](https://wechaty.github.io/wechaty/images/wechaty-logo-green-en.png)](https://github.com/wechaty/wechaty)
 

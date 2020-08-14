@@ -1,11 +1,10 @@
 ---
 title: 'Node Party #18 重新认识聊天机器人'
 author: Samurais
-date: '2016-12-07'
 categories: event
 tags:
   - talk
-  - home
+  - announcement
 image: /assets/2016/nodeparty-banner.jpg
 ---
 
@@ -34,8 +33,6 @@ image: /assets/2016/nodeparty-banner.jpg
 ### 13:30 - 14:30 如何用6行JavaScript写出微信聊天机器人
 
 ![李卓桓，李佳芮][nodeparty-speaker]
-
-<!--more-->
 
 李卓桓，PreAngel合伙人，zixia BBS、叽歪网创始人。曾任优酷网首席科学家，ChinaRen系统工程师，水木清华BBS站长。清华大学本科，中欧国际工商学院EMBA。15年互联网创业经验，20年编程经验。著有《Linux网络编程》(2000年)、《反垃圾邮件完全手册》(2006年)等技术作品。热爱极限运动，喜欢和勇敢、富有激情、愿意接受新鲜事物并不断挑战突破自己的人做朋友。生活中喜爱跑步、滑雪、SALSA、MMA、跑酷、滑翔伞等极限运动。
 

@@ -1,7 +1,6 @@
 ---
 title: "repe-assistant 社群活动助手"
 author: xiaogan18
-date: 2020-05-16 09:00 +0800
 categories: project
 tags:
   - wechaty
@@ -15,7 +14,6 @@ image: /assets/2020/repe-assistant/2020-05-16-repe-assistant.png
 ## 介绍
 
 repe社群助手主要是为了提高社群活跃度以及群活动管理而设计。管理员使用后台web发起一系列活动并设置动态的参与口令，群成员只需要发送对应口令即可参与活动，并且能够结合积分系统做一些约束和奖励。
-<!--more-->
 
 ## 架构设计
 

@@ -1,13 +1,12 @@
 ---
 title: Bot Friday 第二弹
 author: lijiarui
-date: 2019-07-26 19:00 +0800
 categories: event
 tags:
   - bot friday
   - talk
   - meetup
-  - home
+  - announcement
 image: /assets/2019/bot5-seminar-2/group-photo.png
 ---
 
@@ -187,14 +186,14 @@ NLP技术到底哪家强？
 ## Bot Friday 决议
 
 1. 平台主席  
-Bot Friday 推选了首位平台主席为会员提供巨头 Chatbot 平台的行业指导，平台主席为期1年，恭喜Bot Friday的首位平台主席: 刘晓倩。
+    Bot Friday 推选了首位平台主席为会员提供巨头 Chatbot 平台的行业指导，平台主席为期1年，恭喜Bot Friday的首位平台主席: 刘晓倩。
 1. 俱乐部名称  
-在活动现场，11个人中10个人赞成每周五举办Chatbot活动，因此俱乐部名称暂定为：Bot Friday Club，简称 BFC。
+    在活动现场，11个人中10个人赞成每周五举办Chatbot活动，因此俱乐部名称暂定为：Bot Friday Club，简称 BFC。
 1. 轮值主席制度  
     1. 每次活动后按照先自愿 + 主席指定原则，选出下次活动的轮值副主席。
     1. 本次活动的轮值副主席自动成为下次活动的轮值主席。
 1. 会员制度  
-Bot Friday 会员制度：只有在沙龙上分享过的人才能成为会员。参加沙龙活动的每一个人，原则上都必须发言。
+    Bot Friday 会员制度：只有在沙龙上分享过的人才能成为会员。参加沙龙活动的每一个人，原则上都必须发言。
 
 ## 下次活动信息
 
