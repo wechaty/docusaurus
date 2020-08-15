@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   title: 'Wechaty',
   tagline: 'Conversational SDK for Chatbot Makers',
@@ -18,6 +20,7 @@ module.exports = {
     navbar: {
       title: '',
       logo: { alt: 'Wechaty Logo', src: 'img/wechaty-logo.svg' },
+      hideOnScroll: true,
       items: [
         { label: 'News',            href: 'https://wechaty.js.org/news/',         position: 'right', target: '_self' },
         { label: 'Blog',            href: 'https://wechaty.js.org/blog/',         position: 'right', target: '_self' },
@@ -110,5 +113,8 @@ module.exports = {
         },
       },
     ],
+  ],
+  plugins: [
+    require.resolve('./src/plugins/qrcode'),
   ],
 }
