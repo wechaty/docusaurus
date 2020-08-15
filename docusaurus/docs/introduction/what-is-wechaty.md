@@ -1,6 +1,5 @@
 ---
-sidebar_label: Introduction Index
-title: Wechaty Introduction
+title: What is Wechaty
 ---
 
 ![Wechaty: Conversational SDK for Chatbot Makers](/img/wechaty-logo.svg)

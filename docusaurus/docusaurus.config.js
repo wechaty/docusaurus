@@ -17,6 +17,14 @@ module.exports = {
     { src: 'https://sidecar.gitter.im/dist/sidecar.v1.js', async: true },
   ],
   themeConfig: {
+    image: 'img/wechaty-icon.png',
+    announcementBar: {
+      id: 'support_us', // Any value that will identify this message.
+      content:
+        'We are looking to revamp our website, please comment on <a target="_blank" href="https://github.com/wechaty/wechaty.js.org/issues/440">this issue</a>',
+      backgroundColor: '#fafbfc', // Defaults to `#fff`.
+      textColor: '#091E42', // Defaults to `#000`.
+    },
     navbar: {
       title: '',
       logo: { alt: 'Wechaty Logo', src: 'img/wechaty-logo.svg' },
@@ -24,12 +32,28 @@ module.exports = {
       items: [
         { label: 'News',            href: 'https://wechaty.js.org/news/',         position: 'right', target: '_self' },
         { label: 'Blog',            href: 'https://wechaty.js.org/blog/',         position: 'right', target: '_self' },
-        { label: 'Docs',            to:   'docs/',                                position: 'right', activeBasePath: 'docs' },
         { label: 'Developers',      href: 'https://wechaty.js.org/developers/',   position: 'right' },
-        { label: 'Getting Started', to:   'docs/getting-started',                 position: 'right' },
-        { label: 'Tutorial',        to:   'docs/video-tutorial',                  position: 'right' },
-        { label: 'API',             to:   'docs/api/README',                      position: 'right' },
-        { label: 'FAQ',             to:   'docs/faq/README',                      position: 'right' },
+
+        { label: 'Docs',            to: 'docs/', position: 'right', // activeBasePath: 'docs',
+          items: [
+            { label: 'Introduction',    to: 'docs/introduction/README' },
+            { label: 'Getting Started', to: 'docs/getting-started' },
+            { label: 'Tutorial',        to: 'docs/video-tutorial' },
+            { label: 'Recipe',          to: 'docs/recipes/README' },
+            { label: 'API',             to: 'docs/api/README' },
+            { label: 'FAQ',             to: 'docs/faq/README' },
+            { label: 'Troubleshooting', to: 'docs/troubleshooting' },
+          ],
+        },
+
+        // { label: 'Docs',            to:   'docs/introduction/README',             position: 'right' },
+        // { label: 'Getting Started', to:   'docs/getting-started',                 position: 'right' },
+        // { label: 'Tutorial',        to:   'docs/video-tutorial',                  position: 'right' },
+        // { label: 'Recipes',         to:   'docs/recipes/README',                  position: 'right' },
+        // { label: 'API',             to:   'docs/api/README',                      position: 'right' },
+        // { label: 'FAQ',             to:   'docs/faq/README',                      position: 'right' },
+        // { label: 'Troubleshooting', to:   'docs/troubleshooting',                 position: 'right' },
+
         { label: 'GitHub',          href: 'https://github.com/wechaty/wechaty',   position: 'right' },
       ],
     },
@@ -93,7 +117,7 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`` path).
-          homePageId: 'introduction/README',
+          homePageId: 'README',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/wechaty/wechaty.js.org/edit/master/docusaurus/',
