@@ -84,6 +84,7 @@ SuperScript是一个开源的对话引擎。使用SuperScript定义的语法，�
 ```
 
 所以，在回复中，\<capN\> 对应着 开场白里的 *。
+
 注意上面的 *^getWeather*，这里是插件。[*getWeather*](https://github.com/Samurais/ss-spa/blob/develop/plugins/index.plugin.js#L24)可以实现天气查询功能。
 
 更多[介绍](http://www.leiphone.com/news/201704/JvBW78wfyvcfB4xW.html)。

@@ -8,39 +8,40 @@ import styles from './styles.module.css'
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
         Wechaty was designed from the ground up to be easily installed and
         used to get your chatbot up and running quickly.
       </>
     ),
+    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'Easy to Use',
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
         Wechaty lets you focus on your conversations, and we'll do the chores. Go
         ahead and build your business logic based on <b>Wechaty</b>.
       </>
     ),
+    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: 'Focus on What Matters',
   },
   {
-    title: 'Join our WeChat Room',
-    imageUrl: 'img/friday-qrcode.svg',
     description: (
       <>
         You are welcome to join our <b>Wechaty Developers' Home</b> by
-        scaning the above QR code,
+        scanning the above QR code,
         then send the secret code <code>wechaty</code> to <i>Friday.BOT</i>.
       </>
     ),
+    imageUrl: 'img/friday-qrcode.svg',
+    title: 'Join our WeChat Room',
   },
 ]
 
-function Feature ({ imageUrl, title, description }) {
+function Feature ({ key, imageUrl, title, description }) {
+  void key
   const imgUrl = useBaseUrl(imageUrl)
   return (
     <div className={clsx('col col--4', styles.feature)}>
