@@ -1,7 +1,9 @@
 ---
-title: Recipes
+title: Wechaty Recipes
 sidebar_label: 'Recipes Index'
 ---
+
+<!-- how-to/cookbook - Explains how to accomplish a specific task. -->
 
 These are some use cases and code snippets to get you started with Redux in a real app. They assume you understand the topics in [basic](#b) and [advanced](#a) tutorials.
 

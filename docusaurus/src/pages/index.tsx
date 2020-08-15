@@ -6,6 +6,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './styles.module.css'
 
+// one-pager - Encapsulates the essence of a technology onto a single page.
+
 const features = [
   {
     description: (
@@ -62,7 +64,7 @@ function Home () {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Wechaty: Conversational SDK for Chatbot Makers.">
+      description="Conversational SDK for Chatbot Makers.">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>

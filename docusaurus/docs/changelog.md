@@ -1,10 +1,14 @@
 ---
-title: Change Log
+title: Changelog
 ---
+
+<!-- Release Notes - Details recent changes to a product and known problems. -->
 
 <!-- markdownlint-disable -->
 
-## WECHATY CONTRIBUTORS
+## Wechaty Contributors
+
+[![Contribute](https://opencollective.com/wechaty/contributors.svg?width=890&button=false)](https://github.com/Wechaty/wechaty/graphs/contributors)
 
 ### Active Contributors
 

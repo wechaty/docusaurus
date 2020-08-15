@@ -27,6 +27,12 @@ module.exports = {
       'recipes/using-vorpal-with-wechaty',
       'recipes/using-redux-with-wechaty',
     ],
+    'Case Study': [
+      'case-study/README',
+      'case-study/friday-bot',
+      'case-study/osschat-bot',
+      'case-study/rui-bot',
+    ],
     'API Reference': [
       'api/README',
       'api/wechaty',
@@ -47,12 +53,12 @@ module.exports = {
     ],
     Others: [
       'changelog',
+      'others/cheatsheet',
       'awesome-wechaty',
       'advanced',
       'resources',
       'glossary',
       'contributing',
-      'showcases',
       {
         type: 'category',
         label: 'Docusaurus',

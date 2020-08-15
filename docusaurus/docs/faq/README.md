@@ -3,6 +3,8 @@ title: Wechaty FAQ
 sidebar_label: FAQ Index
 ---
 
+<!-- FAQ - Answers individual questions that users ask. -->
+
 ## Table of Contents
 
 - **General**
