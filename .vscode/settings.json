@@ -101,10 +101,13 @@
     "itchat",
     "jcai",
     "mailchimp",
+    "popd",
+    "pushd",
     "redmaple",
     "stylelint",
     "tofront",
     "windmemory",
+    "worktree",
     "yamllint"
   ],
 }

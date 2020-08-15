@@ -68,6 +68,7 @@
     "@types/image-size": "^0.8.0",
     "@types/yaml": "^1.9.7",
     "clsx": "^1.1.1",
+    "file-box": "^0.12.8",
     "git-scripts": "^0.4.3",
     "glob": "^7.1.6",
     "image-size": "^0.8.3",
