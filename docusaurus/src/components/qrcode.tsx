@@ -5,8 +5,8 @@ export default function QrCodeComponent (props) {
   const value = props.match.params[0] || 'https://wechaty.js.org/'
 
   return <QRCode
-    bgColor="#FFFFFF"
-    fgColor="#000000"
+    bgColor="#FFFFFF00"
+    fgColor="#44a838"
     level="Q"
     style={{ width: 256 }}
     value={value}
