@@ -2,7 +2,10 @@
 title: Getting Started
 ---
 
+<!-- Pushes a curious reader through the first few minutes of use. -->
+
 With just a few lines of code, your application can send and receive messages with WeChat using the Wechaty Puppets for WeChat.
+
 
 This Quickstart will teach you how to do this using the Wechaty SDK for WeChat, wechaty-puppet-mock, TypeScript.
 In this Quickstart, you will learn how to:

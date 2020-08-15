@@ -23,9 +23,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install Dependencies
-        run: |
-          npm install
-          sudo make install
+        run: npm install
       - name: Test
         run: npm test
 
