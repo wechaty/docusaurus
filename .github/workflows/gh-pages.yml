@@ -9,7 +9,7 @@ on:
 
 jobs:
   test:
-    name: Build
+    name: Test
     strategy:
       matrix:
         os: [ubuntu-latest]
@@ -30,6 +30,8 @@ jobs:
         run: npm test
 
   deploy:
+    name: Publish to GitHub Pages
+    needs: [test]
     runs-on: ubuntu-latest
     strategy:
       matrix:
