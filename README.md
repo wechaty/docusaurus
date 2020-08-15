@@ -1,4 +1,4 @@
 # wechaty.github.io
-Redirect to https://wechaty.js.org
 
-Move to https://github.com/wechaty/wechaty.js.org
+- Website has been redirected to <https://wechaty.js.org>
+- Repo has been moved to <https://github.com/wechaty/wechaty.js.org>
