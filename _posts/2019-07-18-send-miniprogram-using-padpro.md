@@ -1,12 +1,11 @@
 ---
 title: "如何用PadPro实现发送微信小程序"
 author: limingth
-date: '2019-07-18T09:00:00+0800'
 categories: feature
 tags:
   - code
-header:
-  teaser: /assets/2019/maodou-ketang-demo.png
+  - featured
+image: /assets/2019/maodou-ketang-demo.png
 ---
 
 > 作者: [limingth](https://github.com/limingth)，[zhaoic](https://github.com/zhaoic) 毛豆网
@@ -16,8 +15,6 @@ header:
 * 毛豆课堂项目背景介绍  
 * 如何用PadPro实现发送微信小程序  
 * 进一步需要完成的工作  
-
-<!--more-->
 
 ## 毛豆课堂项目背景介绍
 

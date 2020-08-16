@@ -1,12 +1,11 @@
 ---
 title: "Wechaty Contributor Dinner"
 author: antonia0912
-date: '2017-04-26 13:01:53'
 categories: event
 tags:
   - meetup
-header:
-  teaser: /assets/2017/wechat-meeting.jpg
+  - news
+image: /assets/2017/wechat-meeting.jpg
 ---
 
 Author: [Yang BAI](https://github.com/antonia0912), formal community manager at [JueJin](https://juejin.im/)(Chinese Hacker News)
@@ -16,8 +15,6 @@ Author: [Yang BAI](https://github.com/antonia0912), formal community manager at 
 With the development of science and technology, the progress of the society is related to create something useful. And to a certain extent,  the software developers are capable of changing the world.  Last Friday, I was lucky for having an enjoyable conversation with several coders together.
 
 There were 7 guys came to the gathering (including me), 6 programmers, and one used to work for a technical community. We met at 7 pm and would have dinner together in a Chinese restaurant. We’d like to introduce ourselves to each other at the beginning of the meeting with a video recorded.
-
-<!--more-->
 
 **[Huan LI](https://github.com/huan)** An Angel Investor, Paragliding Pilot and Full Stack Developer. He founded serial enterprises with strong technical background and rich social network experience. He is also the organizer of the meetup.
 

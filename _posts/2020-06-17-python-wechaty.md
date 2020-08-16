@@ -1,24 +1,20 @@
 ---
-
- title: "simple bot : python-wechaty"
- date: 2020-06-17 15:19 +0800
- author: wj-Mcat
- header:
-   teaser: /assets/2020/python-wechaty/python-wechaty-logo.png
+title: "Python Wechaty Beta Released: A Simple Bot"
+author: wj-Mcat
+categories: announcement
+tags:
+  - python
+  - news
+  - featured
+image: /assets/2020/python-wechaty/python-wechaty-logo.png
 ---
 
-<!-- markdownlint-disable -->
-
 > Author: [wj-Mcat](https://github.com/wj-Mcat)
-
 > Code: [python-wechaty](https://github.com/wechaty/python-wechaty)
-
 
 Python-wechaty能够使用少量代码即可完成一个机器人，使用起来非常简单，基于OOP的设计思路能够很好监听和处理微信内部大量的事件，比如：自动回复消息，定时发送消息，拉人入群，好友申请同意等等。此外，目前的插件系统里面有很多拿来即用的工具，比如拉人入群等。当然开发一个自己的插件也是非常简单，无需很高深的概念，只需要你能够理解事件和OOP即可。
 
 python-wechaty项目源于wechaty，甚至说很大程度上代码是直接从其翻译过来的，然后加上一些python的特性，让其更加pythonic。作为一个IM的入口工具，未来我们也将添加更多的Chatbot元素进去，让其能够成为一个真正的聊天机器人。
-
-<!--more-->
 
 在介绍python-wechaty之前，还是简要介绍一下wechaty。
 
@@ -92,7 +88,7 @@ class DingDongPlugin(WechatyPlugin):
 - on_[event_name]
 - init_plugin
 
-**WechatyPlugin**
+### WechatyPlugin
 
 此类为一个抽象类，所有的插件必须要继承此基类，并重写其中的函数。
 
@@ -108,7 +104,7 @@ class DingDongPlugin(WechatyPlugin):
 
   此类函数主要是为了监听系统中的不同事件，比如：`on_message`, `on_login`, `on_friendship`等事件的监听都只需要重写一下函数即可完成。不同插件之间以及不同事件之间都是独立的，能够很好的专注于不同业务场景下的开发。
 
-**event_name**
+### event_name
 
 `python-wechaty`很大程度上是由事件驱动，毕竟很多操作都是基于**消息接受**触发，由此事件的监听是其基础特性，可能第一感觉就是实用`EventEmitter`这种模式来监听事件，这样每个事件我都可以注册不同的函数来监听，每个函数中会有不同的逻辑处理。这也是传统的事件监听方法，可这至少会给开发上带来一些不方便：函数的参数需要查阅文档才能够获知，标准的函数式编程。
 

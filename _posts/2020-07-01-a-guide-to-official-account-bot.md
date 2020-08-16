@@ -1,15 +1,10 @@
 ---
 title: "使用wechaty助力公众号主维护社群"
-date: 2020-07-01 12:30 +0800
 author: sl1673495
-header:
-  teaser: /assets/2020/wechat-official-helper/teaser.png
+image: /assets/2020/wechat-official-helper/teaser.png
 ---
 
-<!-- markdownlint-disable -->
-
 > Author: [@your_github_username](https://github.com/sl1673495) front-end developer
-
 > Code: [@wechaty-bot](https://github.com/sl1673495/wechaty-bot)
 
 ## 前言
@@ -28,27 +23,27 @@ header:
 
 使用 ipad 协议登录需要先从官方申请一个 token，你可以参与开源激励计划获取 15 天的试用 token，也可以直接购买，具体看这里：
 
-https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty#21%E6%B5%81%E7%A8%8B%E6%A6%82%E8%BF%B0
+<https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty#21%E6%B5%81%E7%A8%8B%E6%A6%82%E8%BF%B0>
 
 ## 安装
 
 1. 首先确认你的 node 版本在 10 以上。
 
-```
+```sh
 node --version
 ```
 
-2. Windows 系统需要先安装 python 环境
+1. Windows 系统需要先安装 python 环境
 
-```
+```sh
 npm install -g windows-build-tools
 
 npm install -g node-gyp
 ```
 
-3. 创建项目
+1. 创建项目
 
-```
+```sh
 mkdir my-padplus-bot && cd my-padplus-bot
 
 npm init -y
@@ -62,13 +57,13 @@ touch bot.ts // copy the example code to it
 
 注意，这里的 `tsc` 指令要求你全局安装 `typescript`
 
-```
+```sh
 npm i typescript -g
 ```
 
-4. 安装 `wechaty` 依赖
+1. 安装 `wechaty` 依赖
 
-```
+```sh
 npm install wechaty@latest -S
 
 npm install wechaty-puppet-padplus@latest -S // ipad 登录协议用
@@ -76,7 +71,7 @@ npm install wechaty-puppet-padplus@latest -S // ipad 登录协议用
 npm install qrcode-terminal // 终端生成二维码用
 ```
 
-5. 编写 `bot.ts`
+1. 编写 `bot.ts`
 
 根据官方给的最小示例，先复制进去。
 

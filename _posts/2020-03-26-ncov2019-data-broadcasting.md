@@ -1,7 +1,6 @@
 ---
- title: "nCoV2019疫情播报"  
- date: 2020-03-26 09:00 +0800  
- author: zjacai
+title: "nCoV2019疫情播报"  
+author: zjacai
 ---
 
 > Author: [@zjacai](https://github.com/zjacai) enjoying ML&Wechaty at BUPT  
