@@ -104,8 +104,7 @@ Demo Live视频：
 
 Bilibili: [https://www.bilibili.com/video/BV17f4y197ut/](https://www.bilibili.com/video/BV17f4y197ut/)
 
-Youtube: 
-
+Youtube:
 <div class="video-container" style="
     position: relative;
     padding-bottom:56.25%;
@@ -126,8 +125,6 @@ Youtube:
     width:100%;
     height:100%;
 "></iframe></div>
-
-
 
 ## Reference
 
