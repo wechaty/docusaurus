@@ -75,11 +75,59 @@ tags:
 
 PPT演示：
 
-<iframe src="//player.bilibili.com/player.html?aid=371714000&bvid=BV1kZ4y1M7F6&cid=224034124&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+Bilibili: [https://www.bilibili.com/video/BV1kZ4y1M7F6/](https://www.bilibili.com/video/BV1kZ4y1M7F6/)
+
+Youtube:
+
+<div class="video-container" style="
+    position: relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+">
+<iframe
+  src="https://www.youtube.com/embed/JjH5mJ-lRgk"
+  width="560"
+  height="315"
+  frameborder="0"
+  allowfullscreen=""
+  style="
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+"></iframe></div>
 
 Demo Live视频：
 
-<iframe src="//player.bilibili.com/player.html?aid=286675266&bvid=BV17f4y197ut&cid=224030905&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+Bilibili: [https://www.bilibili.com/video/BV17f4y197ut/](https://www.bilibili.com/video/BV17f4y197ut/)
+
+Youtube: 
+
+<div class="video-container" style="
+    position: relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+">
+<iframe
+  src="https://www.youtube.com/embed/sjmlpu0TNj4"
+  width="560"
+  height="315"
+  frameborder="0"
+  allowfullscreen=""
+  style="
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+"></iframe></div>
+
+
 
 ## Reference
 
