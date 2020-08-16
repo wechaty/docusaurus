@@ -1,14 +1,13 @@
 ---
 title: '构建脸盲聊天机器人--Wechaty Blinder'
 author: lijiarui
-date: '2018-1-25 23:04:27 +0800'
 categories: project
 tags:
   - code
   - talk
   - machine learning
-header:
-  teaser: /assets/2018/wechaty-blinder-1.jpg
+  - featured
+image: /assets/2018/wechaty-blinder-1.jpg
 ---
 
 > Author: [@李佳芮](github.com/lijiarui), [桔子互动](botorange.com)创始人, Wechaty Author
@@ -17,9 +16,7 @@ header:
 
 ![wechaty](/assets/2018/wechaty-blinder-1.jpg)
 
-<!--more-->
-
-### Who am I
+## Who am I
 
 ![wechaty](/assets/2018/wechaty-blinder-2.jpg)
 
@@ -34,20 +31,20 @@ header:
 对，我有脸盲。
 而今天介绍的脸盲机器人，用人工智能，专门帮助我认识各种人的。
 
-### Content
+## Content
 
 ![wechaty](/assets/2018/wechaty-blinder-3.jpg)
 
 我会从5个角度来做这场分享，首先简单的介绍下TensorFlow, 然后介绍下Google 的Facenet，再来介绍下我们的3个开源项目：Wechaty, Node-Facenet, Wechaty-Blinder, 最后会给大家做现场的代码演示。
 之所以介绍wechaty-blinder 的项目要介绍wechaty 和node-facenet，是因为wechaty-blinder 是基于wechaty 和 node-facenet 这两个开源项目的。
 
-### Google TensorFlow
+## Google TensorFlow
 
 ![wechaty](/assets/2018/wechaty-blinder-4.jpg)
 
 脸盲机器人wechaty的底层用到了TensorFlow, 今天要介绍的wechaty-blinder 是一个基于TensorFlow 和google 的论文 Facenet 实现的node.js 开源项目，可以帮助解决人脸认证、识别和聚类等问题。
 
-### Google Facenet
+## Google Facenet
 
 ![wechaty](/assets/2018/wechaty-blinder-5.jpg)
 
@@ -58,7 +55,7 @@ FaceNet算法有2个特点：
 1. 去掉了最后的softmax，而是用元组计算距离的方式来进行模型的训练。使用这种方式学到的图像表示非常紧致，使用128位足矣。
 2. 元组的选择非常重要，选的好可以很快的收敛。
 
-### Open Source Chatie
+## Open Source Chatie
 
 ![wechaty](/assets/2018/wechaty-blinder-6.jpg)
 
@@ -85,7 +82,7 @@ Wechaty 现在有非常完善的开发者社区，开发者覆盖了全球，包
 2. 很好的优化了识别脸的性能，一张脸只要128维向量即可表示。
 3. 在LFW 数据集上可以达到99.63% 的准确率，在YouTube 数据集上可以达到95.21% 的准确率。
 
-### Open Source Node-FaceNet
+## Open Source Node-FaceNet
 
 ![wechaty](/assets/2018/wechaty-blinder-11.jpg)
 
@@ -114,7 +111,7 @@ Wechaty 现在有非常完善的开发者社区，开发者覆盖了全球，包
 这是另外一个例子，把脸和脸之间的距离可视化。
 我们可以看到这个绿色的框框就是上面我说的align出来的能够框出脸的框框，1.45，1.47, 0.66 三个数字分别代表了两个脸的相似程度，可以看出，数字约小，脸约像。如果两个脸是属于一个人的，他们的距离通常是0.75。当然这只是一个经验性数字，还要具体情况具体分析。
 
-### Open Source Wechaty-Blinder
+## Open Source Wechaty-Blinder
 
 ![wechaty](/assets/2018/wechaty-blinder-14.jpg)
 
@@ -154,7 +151,7 @@ docker run -d --restart=always --volume=/workdir:/workdir -e WECHATY_TOKEN=TOKEN
 4. 建立一个新群，建群后不要做任何操作，先把群名修改为任意包含 facenet 的字符串
 5. 在群里面发图片，附体在你身上的机器人就会施法了。
 
-### 最后，感谢Google 办了这么一场有趣的活动
+## 最后，感谢Google 办了这么一场有趣的活动
 
 ![wechaty](/assets/2018/wechaty-blinder-17.jpeg)
 

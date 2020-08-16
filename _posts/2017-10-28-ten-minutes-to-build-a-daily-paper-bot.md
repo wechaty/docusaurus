@@ -1,12 +1,10 @@
 ---
 title: "Ten minutes to build a daily paper bot"
-date: 2017-10-28 12:00 +0800
 author: leinue
 categories: project
 tags:
   - code
-header:
-  teaser: /assets/2017/leinue-bot.jpg
+image: /assets/2017/leinue-bot.jpg
 ---
 
 > Author: [@leinue](https://github.com/leinue), Developer && Designer, [ivydom](http://ivydom.com)
@@ -16,8 +14,6 @@ I built a bot to deliver the daily paper about machine learning and fintech to t
 ![chatbot][1]
 
 Before the bot work, I had really done a lot of work to crawl data and filter data, I won't talk about the data here, just about the Wechaty!
-
-<!--more-->
 
 ## Screenshot
 

@@ -1,16 +1,12 @@
 ---
 title: "你的微信小助手"
 author: Peanut
-date: "2020-05-31 12:00:00 +0800"
 categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
-header:
-  teaser: /assets/2020/your-wechat-bot/banner.png
+image: /assets/2020/your-wechat-bot/banner.png
 ---
-
-<!-- markdownlint-disable -->
 
 > 作者: [peanut](https://github.com/isnl/)
 > Code: [Github](https://github.com/isnl/wechat-robot)
@@ -26,8 +22,6 @@ header:
 能用机器代劳的事情为何要用手动？时间都是挤出来的，省出来这点时间给自己充电学习不好吗？
 
 github 上找到了 wechaty ，看到了希望。
-
-<!--more-->
 
 ### 克隆代码
 

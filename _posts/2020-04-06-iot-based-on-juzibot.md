@@ -1,6 +1,5 @@
 ---
 title: "使用句子秒回控制家里的台灯"
-date: 2020-04-06 05:00 +0800
 author: cr4fun
 categories: tutorial
 tags:
@@ -8,7 +7,6 @@ tags:
   - iot
   - arduino
 ---
-<!-- markdownlint-disable -->
 
 > 作者: [cr4fun](https://github.com/cr4fun)，极客、物联网专家，SDK产品经理。
 
@@ -26,13 +24,13 @@ tags:
 
 如何让针脚产生电平？可以通过编程语言实现。比如在arduino中，对针脚 0 执行高电平：
 
-```
+```log
 digitalWrite(0, HIGH);
 ```
 
 对针脚 0 执行低电平：
 
-```
+```log
 digitalWrite(0, LOW);
 ```
 
@@ -56,7 +54,7 @@ digitalWrite(0, LOW);
 
 然而，我在树莓派里跑wechaty并没有成功，原因是wechaty会启动一个chrome，但那个chrome是x86的，不支持arm。而把arm的chrome替换掉x86的chrome后，依然不能启动。我猜测是arm的chrome和x86的chrom可能不仅仅是指令集不一样，里面的接口也不一样。因此，需要有一个平台，能直接获得微信消息。句子秒回就是这样一个平台。
 
-在句子秒回中，可以设置API回调接口。https://wechat.botorange.com/
+在句子秒回中，可以设置API回调接口。<https://wechat.botorange.com/>
 
 ![RICEPO]({{ '/assets/2020/juzi-iot/4.jpg' | relative_url }})
 
@@ -84,7 +82,7 @@ open为开灯命令，close为关灯命令。
 
 因此composer.json中设置了这两个库。
 
-```
+```json
 {
     "require": {
         "mikecao/flight": "^1.3",
@@ -95,7 +93,7 @@ open为开灯命令，close为关灯命令。
 
 具体代码
 
-```
+```php
 <?php
 require __DIR__ . '/../vendor/autoload.php';
 use flight\Engine;
@@ -117,7 +115,7 @@ $app->route('POST /message', function(){
     $chatId = $json_data["data"]["chatId"];
     $myfile = fopen("$contactId.txt", "w") or die("Unable to open file!");
     fwrite($myfile, $text);
-    
+
     $client = new Client();
     $r = $client->request('POST', 'https://ex-api.botorange.com/message/send', [
         'json' => [
@@ -137,7 +135,7 @@ $app->start();
 ?>
 ```
 
-上面的例子中，获得消息和发消息，可以参考句子秒回的API文档：https://github.com/juzibot/xiaoju/wiki/API-Doc
+上面的例子中，获得消息和发消息，可以参考句子秒回的API文档：<https://github.com/juzibot/xiaoju/wiki/API-Doc>
 
 ### arduino代码
 
@@ -145,7 +143,7 @@ $app->start();
 
 需要把yourdomain替换成你的网址，wxid替换成发指令消息的微信id。该id可以从获得消息中的json字段中获得。即PHP代码中的 $contactId 。
 
-```
+```php
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 #include <ESP8266HTTPClient.h>
@@ -183,11 +181,9 @@ void loop() {
 }
 ```
 
-
-
 ## 视频演示
 
-https://b23.tv/BV1Gt4y127Qz
+<https://b23.tv/BV1Gt4y127Qz>
 
 ## 除了点灯还能干点别的不？
 

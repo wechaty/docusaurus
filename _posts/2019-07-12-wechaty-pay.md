@@ -1,12 +1,11 @@
 ---
 title: "Wechaty - 让线上没有难做的生意"
 author: coderwhocode
-date: '2019-07-12 18:30:00 +0800'
 categories: project
 tags:
   - code
-header:
-  teaser: /assets/2019/wechaty-pay-paypic.png
+  - featured
+image: /assets/2019/wechaty-pay-paypic.png
 ---
 
 > 作者: [Shawn](https://mugglepay.com)，全栈创业狗，致力于利用技术提升支付领域效率。
@@ -20,8 +19,6 @@ header:
 自从使用了Wechaty，资金及时到账，收款后立即通知。即开即用，高并发，超稳定不掉单。
 
 ![让线上没有难做的生意](/assets/2019/wechaty-pay-paypic.png)
-
-<!--more-->
 
 ### 背景
 

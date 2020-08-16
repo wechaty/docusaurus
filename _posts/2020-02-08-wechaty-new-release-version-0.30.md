@@ -4,8 +4,8 @@ author: huan
 categories: announcement
 tags:
   - release
-header:
-  teaser: /assets/2017/wechaty-sticker.jpg
+  - news
+image: /assets/2017/wechaty-sticker.jpg
 ---
 
 > Author: [Huan LI](https://github.com/huan), A Homebody ...
@@ -13,8 +13,6 @@ header:
 ![Wechaty](/assets/2017/wechaty-sticker.jpg)
 
 Wechaty v0.30 Released! We have lots of new features added and bugs fixed!
-
-<!--more-->
 
 ## Change Log
 

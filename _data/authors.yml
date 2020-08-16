@@ -1,49 +1,13 @@
  # /_data/authors.yml
 
-huan:
-  name        : "Huan (李卓桓)"
-  bio         : "Author of Wechaty. Tencent TVP of Chatbot, Conversational AI Expert, Open-source Coder with 💖"
-  avatar      : "https://avatars2.githubusercontent.com/u/1361891?s=460&v=4"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/huan"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://weibo.com/lizhuohuan"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/lizhuohuan"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:huan@chatie.io"
-    # - label: "Website"
-    #   icon: "fas fa-fw fa-link"
-    #   url: "https://www.zixia.net"
-
-lijiarui:
-  name        : "Jiarui LI"
-  bio         : "Co-founder & CEO of JuziBot, Y Combinator Alumni, Microsoft AI MVPs"
-  avatar      : "https://avatars2.githubusercontent.com/u/6419514?s=460&v=4"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/lijiarui"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:rui@chatie.io"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://lijiarui.github.io/"
-    - label: "Company"
-      icon: "fas fa-fw fa-link"
-      url: "https://pre-angel.com/portfolios/juzibot/"
-
 qhduan:
   name        : "段清华"
   bio         : "人工智障工程师"
   avatar      : "https://avatars2.githubusercontent.com/u/3895924?s=460&v=4"
   links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/qhduan"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "http://qhduan.com"
@@ -696,18 +660,6 @@ archy:
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:a@0a.io"
 
-windmemory:
-  name        : "高原"
-  bio         : "Committer of Wechaty. Author of several wechaty-puppets. Co-founder & CTO of JuziBot"
-  avatar      : "https://avatars3.githubusercontent.com/u/6801292?s=460&u=0141bbc26ff39b223810a4dc1d403099d27043d9&v=4"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/windmemory"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:wind.memory.cn@gmail.com"
-
 Zophyr:
   name        : "园长"
   bio         : "I am a person who likes to ask why. 🎯"
@@ -799,6 +751,15 @@ ray7551:
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/ray7551"
 
+DevoZou:
+  name        : "DevoZou（邹定一）"
+  bio         : "一个打杂特别勤奋的前端工程师，喜欢研究有趣的东西。"
+  avatar      : "https://avatars3.githubusercontent.com/u/33066257?s=460&u=622ee7b4b6df52d6c94719938dc5147c5dd8f841&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zoudingyi"
+
 leijiahang:
   name        : "leijiahang"
   bio         : "I am a baby coder"
@@ -807,6 +768,23 @@ leijiahang:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/leijiahang"
+
+zzhoouxin:
+  name        : "zzhoouxin"
+  bio         : "A boy who loves to play"
+  avatar      : "https://avatars2.githubusercontent.com/u/21190031?s=460&u=1b0e26a69742e75ff7414fa6f1ff1712c48ba6d5&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zzhoouxin"
+sidny:
+  name        : "sidny"
+  bio         : "you been watched"
+  avatar      : "https://avatars2.githubusercontent.com/u/1266905?s=460&u=e3c1cf6b99c8dc1e56a8df789cfce44bcd81ba34&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/sidny"
 
 kxz18:
   name        : "kxz"
@@ -822,3 +800,126 @@ kxz18:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "http://kxz18.github.io/"
+
+univerone:
+  name        : "univerone"
+  bio         : "I am new to computer science,and I want to be a professional researcher."
+  avatar      : "https://avatars0.githubusercontent.com/u/35693452?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/univerone"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:univerone@outlook.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://blog.univerone.com"
+
+godkillerxiao:
+  name        : "MrZilinXiao"
+  bio         : "Maybe an AI researcher"
+  avatar      : "/assets/developers/godkillerxiao/avatar.png"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/MrZilinXiao"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:me@mrxiao.net"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://mrxiao.net/"
+
+FINCTIVE:
+  name        : "FINCTIVE"
+  bio         : ""
+  avatar      : "https://avatars1.githubusercontent.com/u/31786061?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/finctive"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://fintive.com"
+
+Chs97:
+  name        : "Chs97"
+  bio         : "A coder. Be interested in anything."
+  avatar      : "https://avatars2.githubusercontent.com/u/12679581?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/chs97"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "chsqaq@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "http://www.hs97.cn/"
+
+rickyyin98:
+  name        : "Yinbohao"
+  bio         : "Serial entrepreneur, CMO of JuziBOT."
+  avatar      : "https://avatars3.githubusercontent.com/u/24710596?s=460&u=e31ee0eac63c8f68ebcfcccfb87b7b753ac9b024&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/rickyyin98"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "yinbohao@juzi.bot"
+
+xiaok:
+  name       : "xiaok"
+  bio        : "I am 写代码 I am 脑壳疼 I am 是小白"
+  avatar     : "https://avatars3.githubusercontent.com/u/56892264?s=460&u=b94cb5809dff0bc5766bc88acd3b57629817271f&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/22528850"
+
+jihuayu:
+  name       : "jihuayu"
+  bio        : "mc mod dev"
+  avatar     : "https://avatars3.githubusercontent.com/u/32858525?s=460&u=fc345be4c72189bdfd3aee87d3b7660409e5a8a6&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jihuayu"
+
+darkli:
+  name        : "darkli(李云军)"
+  bio         : "人机对话在任务协作领域的探索者"
+  avatar      : "https://avatars0.githubusercontent.com/u/1259590?s=400&u=a6c3dc10b16958fdea219635a633de25b1a06980&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/darkli"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:lyj@teamin.cc"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.teamin.cc"
+
+lmaCode:
+  name       : "lmaCode"
+  bio        : "For a dream"
+  avatar     : "https://avatars.githubusercontent.com/u/52693821?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lmaCode"
+
+csjuXYZ:
+  name        : "陈述句"
+  bio         : "前端开发与街头摄影"
+  avatar      : "https://avatars1.githubusercontent.com/u/25047688?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/csjuXYZ"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "hoc0415@foxmail.com"
