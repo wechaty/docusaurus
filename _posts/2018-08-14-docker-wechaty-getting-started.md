@@ -1,10 +1,10 @@
 ---
 title: "Docker Wechaty Getting Started"
 author: huan
-date: '2018-08-14 8:14:52 +0800'
 categories: tutorial
 tags:
   - docker
+  - news
 ---
 
 > Author: [Huan LI](https://github.com/huan), A Docker Fan
@@ -17,33 +17,31 @@ tags:
 
 **GitHub Repo: <https://github.com/Chatie/docker-wechaty-getting-started>**
 
-### Features
+## Features
 
 1. Wechaty is fully dockerized. So it will be very easy to be used as a MicroService.
 1. Clone the above repository, then you will be able to use Docker to run Wechaty with ZERO configuration.
 
-<!--more-->
-
-### Requirements
+## Requirements
 
 1. Docker
 1. Global Internet Connection
 
-### Usage
+## Usage
 
-#### 1. Run Vanilla Javascript Example
+### 1. Run Vanilla Javascript Example
 
 ```shell
 bash -x bin/docker-run-javascript-vanilla.sh
 ```
 
-#### 2. Run ES6 Javascript Example
+### 2. Run ES6 Javascript Example
 
 ```shell
 bash -x bin/docker-run-javascript-es6.sh
 ```
 
-#### 3. Run TypeScript Example
+### 3. Run TypeScript Example
 
 ```shell
 bash -x bin/docker-run-typescript.sh
@@ -51,9 +49,9 @@ bash -x bin/docker-run-typescript.sh
 
 Until then, enjoy!
 
-### Docker
+## Docker
 
-#### 1. Install Docker
+### 1. Install Docker
 
 Quick & easy install Docker via:
 
@@ -69,7 +67,7 @@ wget -qO- https://get.docker.com/ | sh
 
 Get to know more about Docker at: <https://www.docker.com/>
 
-#### 2. Use Docker Registry Mirror in China
+### 2. Use Docker Registry Mirror in China
 
 Thanks Docker, there's a official registry mirror in China, and you can use it by adding `registry.docker-cn.com/` in front of the image name:
 
