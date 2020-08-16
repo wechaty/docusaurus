@@ -1,6 +1,5 @@
 ---
 title: Wechaty Country Wide Developer Conference
-date: '2018-09-15 10:0:0 +0800'
 author: lijiarui
 categories: event
 tags:

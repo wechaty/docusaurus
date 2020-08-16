@@ -1,6 +1,5 @@
 ---
 title: Welcome to Wechaty!
-date: '2016-12-03 14:04:27 +0800'
 author: huan
 categories: announcement
 tags:
@@ -30,8 +29,6 @@ Wechaty.instance() // Singleton
 .on('message',  message => console.log(`Message: ${message}`))
 .init()
 ```
-
-<!--more-->
 
 How to run this piece of code? Easy. Wechaty has a docker image which can help you put your bot on duty in seconds:
 

@@ -1,7 +1,6 @@
 ---
 title: Wechaty-As-A-Service Why and How
 author: qhduan
-date: '2019-06-13 01:20:00 +0800'
 categories: project
 tags:
   - code
@@ -14,8 +13,6 @@ tags:
 [代码](https://github.com/deepdialog/Wechaty-as-a-service)
 
 这里作者分享一下为什么要做这个Wechaty-As-A-Service的东东，它如何将Wechaty服务化，在什么场景下应用的。
-
-<!--more-->
 
 ## 为什么需要Wechaty
 

@@ -1,7 +1,6 @@
 ---
 title: "群消息同步机器人"
 author: sidny
-date: "2020-07-12 15:00:00 +0800"
 categories: project
 tags:
   - wechaty
@@ -12,7 +11,7 @@ image: /assets/2020/wechat-roommessage-bot/teaser.png
 > 作者: [sidny](https://github.com/sidny/)
 > Code: [Github](https://github.com/sidny/wxbot)
 
-[![chatie/wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
+[![wechaty/wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![Everything-about-Wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ## 背景
@@ -28,8 +27,6 @@ image: /assets/2020/wechat-roommessage-bot/teaser.png
 3 租户在自己的群中@机器人，提出自己的问题， 机器人会将内容转发至 管理群
 4 房东接受问题，或将问题处理完后，可以回复相应信息，机器人会在对应的群众转发房东的回复并@租户
 5 房东可以在管理群中发送公告 ，同步至所有的机器人所在的群
-
-<!--more-->
 
 ## 功能
 

@@ -1,7 +1,6 @@
 ---
 title: "Docker Wechaty Getting Started"
 author: huan
-date: '2018-08-14 8:14:52 +0800'
 categories: tutorial
 tags:
   - docker
@@ -22,8 +21,6 @@ tags:
 
 1. Wechaty is fully dockerized. So it will be very easy to be used as a MicroService.
 1. Clone the above repository, then you will be able to use Docker to run Wechaty with ZERO configuration.
-
-<!--more-->
 
 ## Requirements
 

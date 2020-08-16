@@ -1,6 +1,5 @@
 ---
 title: "在 Windows 10 下安装 Wechaty"
-date: 2018-07-24 09:00 +0800
 author: kaffa
 categories: tutorial
 tags:
@@ -23,8 +22,6 @@ image: /assets/2018/wechaty-installation-in-windows.png
 * 项目地址: [Wechaty](https://github.com/wechaty/wechaty)
 * Wechaty 起步: [Wechaty Getting Started](https://github.com/wechaty/wechaty-getting-started)
 * Wechaty 文档: [Wechaty Documents](https://wechaty.js.org)
-
-<!--more-->
 
 ## 概念
 

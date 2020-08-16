@@ -1,7 +1,6 @@
 ---
 title: "Wechaty New Release Version v0.18: SLOC from 27,630 to 7,817"
 author: huan
-date: '2018-07-12 18:14:52 +0800'
 categories: announcement
 tags:
   - release
@@ -21,8 +20,6 @@ All about Wechaty v0.18 is to: Reduce Weight!
 With v0.17, we have 27,630 source line of code with 377 unit tests(you can check it out at [here](https://github.com/wechaty/wechaty/blob/01bfdf96c8023f44fa2ad2762f8f12fee875e42e/tests/README.md) if you are interested).
 
 Start from v0.18, we have 7,817 lines of code left(v0.17 is 353% of this!), with 10+ related npm modules.
-
-<!--more-->
 
 Let's back to May 2016, when the first version of Wechaty was published, it only contains thousands of lines of the code, and at the end of the year 2016, we have about 10,000 lines of the code. (you can read our [blog](https://wechaty.github.io/welcome-to-wechaty/) at this time)
 

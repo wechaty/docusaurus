@@ -1,7 +1,6 @@
 ---
 title: "Deliver dialogs with SuperScript"
 author: hain
-date: '2017-05-17 19:31:53'
 categories: tutorial
 tags:
   - code
@@ -19,8 +18,6 @@ Author: [@hain](http://blog.chatbot.io/webcv/), Lead of [Rockq Community](https:
 Wechaty就像是连到母体的管道，当我们还在思考着是吃红药片还是蓝药片的时候，pia，[zixia](https://github.com/huan)就把Wechaty给做出来。然后呢？！
 
 对话，对话，对话。
-
-<!--more-->
 
 ## SuperScript
 
@@ -87,6 +84,7 @@ SuperScript是一个开源的对话引擎。使用SuperScript定义的语法，�
 ```
 
 所以，在回复中，\<capN\> 对应着 开场白里的 *。
+
 注意上面的 *^getWeather*，这里是插件。[*getWeather*](https://github.com/Samurais/ss-spa/blob/develop/plugins/index.plugin.js#L24)可以实现天气查询功能。
 
 更多[介绍](http://www.leiphone.com/news/201704/JvBW78wfyvcfB4xW.html)。

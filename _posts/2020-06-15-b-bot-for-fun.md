@@ -1,7 +1,6 @@
 ---
 title: "发段子 舔狗 毒鸡汤 美图bot"
 author: generalbao
-date: "2020-06-15 12:00:00 +0800"
 categories: project
 tags:
   - wechaty
@@ -12,7 +11,7 @@ image: /assets/2020/paipiange-bot/1.png
 > 作者: [generalbao](https://github.com/generalbao/)
 > Code: [Github](https://github.com/generalbao/paipiange-wechat-bot)
 
-[![Wechaty Badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
+[![Wechaty Badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![Everything about Wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ## 背景
@@ -21,8 +20,6 @@ image: /assets/2020/paipiange-bot/1.png
 
 Any developers can add JuziBOT Inc's staff ( Wechat number : botorange_yeah ) as a Wechat friend. You will receive a review form after adding. If you pass the review and willing to write a blog in Wechaty , you can use our iPad protocol for free！
 链接：<https://github.com/juzibot/Welcome/wiki/Support-Developers>
-
-<!--more-->
 
 ## 功能
 

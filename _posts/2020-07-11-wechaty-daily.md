@@ -1,7 +1,6 @@
 ---
 title: "用 Wechaty 实现工作日报管理系统"
 author: zzhoouxin
-date: "2020-07-11 12:13:00 +0800"
 categories: project
 tags:
   - wechaty
@@ -12,14 +11,12 @@ image: /assets/2020/wechaty-daily/daily.png
 > 作者: [zzhoouxin](https://github.com/zzhoouxin/)
 > Code: [Github](https://github.com/zzhoouxin/wechaty-bot)
 
-[![Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
+[![Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![Wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ## 背景
 
 我们日常每天都需要写日报,用来汇报今日工作内容和明日工作计划。日报内容维护在 wiki 里面。团队 TL 每天会去 wiki 上收集工作内容；在发送到公司大群。但是每天会有小伙伴会忘记写。 导致 TL 没办法收集今日内容。很是苦恼。还有每次编写都需要去 wiki 挨个复制每个人的。 工作效率很低；
-
-<!--more-->
 
 ## 思考
 

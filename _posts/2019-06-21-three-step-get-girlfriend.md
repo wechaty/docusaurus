@@ -1,7 +1,6 @@
 ---
 title: "三步教你用Node做一个微信脱单神器，小白可上手"
 author: leo_chen
-date: '2019-06-20 17:40:52 +0800'
 categories: project
 tags:
   - code
@@ -13,7 +12,6 @@ image: /assets/2019/everyday-header.png
 
 ![image](/assets/2019/everyday-header.png)
 三步教你用Node做一个微信脱单神器，小白可上手！也可以用来哄女友，哄女(男\基)友我们程序猿(媛)是认真的
-<!--more-->
 
 ## 前言
 

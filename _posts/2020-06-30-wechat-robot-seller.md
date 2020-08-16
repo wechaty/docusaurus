@@ -1,7 +1,6 @@
 ---
 title: "带货机器人（wechat robot seller）"
 author: PeterZhang
-date: "2020-06-30 18:47:00 +0800"
 categories: project
 tags:
   - wechaty
@@ -12,7 +11,7 @@ image: /assets/2020/wechat-robot-seller/chat.jpeg
 > 作者: [PeterZhang](https://github.com/zhangchunsheng/)
 > Code: [Github](https://github.com/zhangchunsheng/wechat-robot-seller)
 
-[![Wechaty Badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
+[![Wechaty Badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![Everything about Wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ## 背景
@@ -20,8 +19,6 @@ image: /assets/2020/wechat-robot-seller/chat.jpeg
 疫情期间基于淘宝客的接口写了一个网站烙馍省钱<https://tb-m.luomor.com/> ，而推广对于程序员来说很难实施，现在有很多基于社区的推广微信群，因此想做一个带货机器人，之前接触过wechaty，只是之前基于web协议，昨天试了一下微信不让在web页面登录了
 
 通过一番学习之后，看到了新的ipad协议，有C#版本的但是很久没有人维护了，看到wechaty的puppet-padplus，基于RPC实现的版本，将ipad协议封装到了server端，还是很方便的
-
-<!--more-->
 
 ## 功能
 

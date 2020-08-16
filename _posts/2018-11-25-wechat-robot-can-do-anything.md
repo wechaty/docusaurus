@@ -1,7 +1,6 @@
 ---
 title: "微信机器人能够做些什么事？"
 author: zhuangbiaowei
-date: '2018-11-25 21:14:52 +0800'
 categories: article
 tags:
   - artificial intelligence
@@ -18,8 +17,6 @@ tags:
 * 接受“关键字”命令会很擅长，如果要实现自然语言操作（对话），就很困难。
 
 其他的，就没啥了。下面开始海阔天空：
-
-<!--more-->
 
 ## 记录聊天的历史
 

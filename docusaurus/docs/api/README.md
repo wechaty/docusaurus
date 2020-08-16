@@ -1,7 +1,10 @@
 ---
-title: API Reference
+title: Wechaty API Reference
 sidebar_label: 'API Index'
 ---
+
+<!-- Curious Beginner: API reference - Details all elements in an API. -->
+<!-- Active User: API Guide - Contains far greater detail (including edge cases) than a tutorial or Codelab. -->
 
 The Wechaty API surface is tiny. Wechaty defines a set of easy to use classes for you.
 

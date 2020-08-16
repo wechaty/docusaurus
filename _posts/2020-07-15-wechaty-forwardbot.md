@@ -1,7 +1,6 @@
 ---
 title: "微信转发机器人(wechaty-forwardbot)"
 author: xiaok
-date: "2020-07-15 10:24:00 +0800"
 categories: project
 tags:
   - wechaty

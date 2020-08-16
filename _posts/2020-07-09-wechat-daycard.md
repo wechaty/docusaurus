@@ -1,7 +1,6 @@
 ---
 title: "每日微信音乐卡片分享机器人（wechat-daycard）"
 author: leijiahang
-date: "2020-07-09 09:40:00 +0800"
 categories: project
 tags:
   - wechaty
@@ -12,14 +11,12 @@ image: /assets/2020/wechat-daycard/header.png
 > 作者: [leijiahang](https://github.com/leijiahang/)
 > Code: [Github](https://github.com/leijiahang/wechat-daycard)
 
-[![wechaty badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
+[![wechaty badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![everything about wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ## 背景
 
 公司app有一个呢喃打卡的活动，现有的方式是在app分享图片和H5的二维码。现利用wechaty，基于每日数据接口，获取到当日的歌曲和图片，利用现有的听歌小程序结合微信个人头像和昵称，做一个在群里面就能实现打卡分享每日歌曲图片的这么一个机器人。
-
-<!--more-->
 
 ## 功能
 

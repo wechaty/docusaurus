@@ -1,7 +1,6 @@
 ---
 title: "wechaty 在UMIUNI北美校友圈中的应用"
 author: supercharleszhu
-date: '2020-03-02T09:00:00+0800'
 categories: event
 tags:
   - meetup
@@ -16,8 +15,6 @@ image: /assets/2020/umiuni/icon.png
 * Wechaty在UmiUni的应用
 * Wechaty 的 技术实现
 * Umiuni+Wechaty 的将来发展
-
-<!--more-->
 
 ![UmiUni]({{ '/assets/2020/umiuni/icon.png' | relative_url }})
 

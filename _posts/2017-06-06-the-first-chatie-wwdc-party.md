@@ -1,6 +1,5 @@
 ---
 title: "The memorabilia of The First Chatie WWDC Party"
-date: 2017-06-06 18:00 +0800
 author: greatgeekgrace
 categories: event
 tags:
@@ -17,8 +16,6 @@ On June 6, 2017, at 6 PM, we held the First Chatie Worldwide Developers Conferen
 ![Chatie WWDC Photo][dinner-photo]
 
 The Conference consists of a small group of seven people, and the theme is about ChatBot and Artificial Intelligence in all aspects. The Participants include PNP Investors Li Zhuohuan, Orange Interactive Founder Li Jiarui, and Zhou Zainan who graduated from Tsinghua University, currently works in Google Adwords, a amateur who combined chatbot and Wechat group; And Chou Daohan who majored in business and undergraduated in Europe, and will be admitted to the University of Birmingham in computer science department; and Zhou Shuai who works in the Chinese Academy of Sciences Institute in Automation, in CBSR Laboratory, and researches in face recognition and face attribute analysis; And Zhao Wenjun who is a graduate student in Beijing University of Posts and Telecommunications, studying assiduously in Machine Learning; and the author of Book "Technical Analysis And Practice in TensorFlow", TensorFlow community's Founder Li Jiaxuan. We open an interesting ChatBot Summit together.
-
-<!--more-->
 
 ## This is the greetings vedio from the above person
 

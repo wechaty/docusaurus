@@ -1,7 +1,6 @@
 ---
 title: "Wechaty Summer of Code 2020 Kickoff Meeting"
 author: rickyyin98
-date: "2020-07-20 08:00:00 +0800"
 categories: announcement
 tags:
   - wechaty

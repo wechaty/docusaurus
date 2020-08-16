@@ -2,13 +2,21 @@
 title: Wechaty Puppet
 ---
 
+<!-- A channel is a connection between communication applications and a bot. A bot, registered with Azure, uses channels to facilitate the communication with users. -->
+
+<!-- WhatsApp is the most popular OTT app in many parts of the world. With the WhatsApp Business API with Twilio, you can reach more than 1.5 billion WhatsApp users. You can send notifications, have two-way conversations, or build chatbots. If you're trying to reach – and better converse with – users in LATAM, EMEA, and APAC, you need to consider using WhatsApp. -->
+
+<!-- :::
+The WhatsApp Business API with Twilio is now available in an early-access program, to allow developers to start building and prototyping in a sandbox. To launch apps in production, start by requesting access to enable WhatsApp on your Twilio number. WhatsApp is currently providing this access in a limited availability program, for which WhatsApp approval is required for all customers who wish to create their own profiles.
+::: -->
+
 The term [Puppet](https://github.com/wechaty/wechaty/wiki/Puppet) in Wechaty is an Abstract Class for implementing protocol plugins. The plugins are the component that helps Wechaty to control the Wechat\(that's the reason we call it puppet\).
 
 The plugins are named `PuppetXXX`, like [PuppetPuppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer) is using the [google puppeteer](https://github.com/GoogleChrome/puppeteer) to control the [WeChat Web API](https://wx.qq.com) via a chrome browser, [PuppetPadchat](https://github.com/lijiarui/wechaty-puppet-padchat) is using the WebSocket protocol to connect with a Protocol Server for controlling the iPad Wechat program. More detail you could go [Puppet in wiki](https://github.com/wechaty/wechaty-puppet/wiki).
 
 For a deeper understanding of the Puppet in Wechaty, you can read its source code if you like at [https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts](https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts)
 
-![Puppet Structure](../static/img/docs/architecture.png)
+![Puppet Structure](../../static/img/docs/architecture.png)
 
 ## 2. Wechaty Puppet List
 

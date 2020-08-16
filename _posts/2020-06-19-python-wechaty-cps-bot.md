@@ -1,6 +1,5 @@
 ---
 title: "基于python-wechaty的CPS BOT"
-date: 2020-06-19 00:00 +0800
 author: why2lyj
 tags:
   - python
@@ -13,8 +12,6 @@ image: /assets/2020/python-wechaty-cps-bot/jdyangli.jpg
 ## 背景
 
 无非就是想撸羊毛，自己又懒的一个一个找，一个一个发。已知目前的返佣app非常的多，比如：好省，蜜源，粉象，芬香等等等等。归根到底无非是利用淘宝、京东、拼多多、苏宁的开放平台做的。所以想到是否可以利用已有的开放平台来做一个属于自己的撸羊毛项目。
-
-<!--more-->
 
 ## 需求描述
 

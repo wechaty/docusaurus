@@ -1,7 +1,6 @@
 ---
 title: "北京周边跨城顺风车消息汇总"
 author: sking
-date: '2020-06-23 10:21:00 +0800'
 categories: project
 tags:
   - nodejs

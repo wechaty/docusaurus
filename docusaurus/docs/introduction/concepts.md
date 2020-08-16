@@ -2,6 +2,8 @@
 title: Concepts
 ---
 
+<!-- getting started  - Pushes a curious reader through the first few minutes of use. -->
+
 This page will helps you to build a deeper understanding of the underlying technology.
 
 ## Wechaty

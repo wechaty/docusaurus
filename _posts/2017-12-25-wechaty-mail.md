@@ -1,6 +1,5 @@
 ---
 title: "Wechaty-Mail: An email tool build on Wechaty"
-date: 2017-12-25 21:00 +0800
 author: wangning
 categories: project
 tags:
@@ -13,8 +12,6 @@ image: /assets/2017/wechaty-email.png
 As soon as I learn how to use 6 lines of JavaScript to achieve a simple chatbot based on [Wechaty](https://github.com/wechaty/wechaty), I was deeply attracted and decide to develop an easy-to-use email tool based on it. [Wechaty-Mail](https://github.com/wnbupt/wechaty_email) is an application based on Wechaty which can help you get notifications in WeChat when you receive new emails.
 
 ![wechaty_email](/assets/2017/wechaty-email.png)
-
-<!--more-->
 
 ## Screenshot of the Application
 

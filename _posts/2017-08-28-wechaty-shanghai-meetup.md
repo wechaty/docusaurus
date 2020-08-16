@@ -1,6 +1,5 @@
 ---
 title: "Shanghai WWDC - WeChaty Worldwide Developers Conference"
-date: 2017-08-28 18:00 +0800
 author: dcsan
 categories: event
 tags:
@@ -17,8 +16,6 @@ Most of the WeChaty core team are in Beijing, but there are a few of us here in 
 ![shanghai wechaty peeps]({{site.baseurl}}/assets/2017/dcsan-shanghai-meetup.jpg)
 
 We talked devops, chatbot games, NLP and more!
-
-<!--more-->
 
 ## WeChaty Infrastructure and DevOps
 

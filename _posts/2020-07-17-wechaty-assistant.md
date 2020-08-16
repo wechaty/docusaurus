@@ -1,7 +1,6 @@
 ---
 title: "用 Wechaty 实现微信任务小助手（wechat teamin chat robot）"
 author: darkli
-date: "2020-07-17 12:00:00 +0800"
 categories: project
 tags:
   - wechaty
@@ -15,10 +14,8 @@ image: /assets/2020/wechaty-teamin-chatbot/home-01.jpg
 
 > 作者: [darkli](https://github.com/darkli)
 
-[![PoweredBy](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
+[![PoweredBy](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![Wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
-
-<!--more-->
 
 ## Wechaty实现微信上的任务小助手
 

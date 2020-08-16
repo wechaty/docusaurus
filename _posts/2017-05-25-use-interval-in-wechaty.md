@@ -1,7 +1,6 @@
 ---
 title: "How to use interval in Wechaty to overcome some web-wechat API limitations"
 author: kungfu-software
-date: '2017-05-25 19:31:53'
 categories: hack
 tags:
   - code
@@ -17,8 +16,6 @@ Hello, first of all, thanks for inviting me to write a knowledge sharing post in
 I am currently exploring all the examples from the Wechaty and try to customize it to make my own requirements happening. Everyday I try to think of a user case that I can use wechaty to make it happen.
 
 So I had a particular evil thought in my mind one day. I wanted to add a Wechaty bot to any chatrooms and sent bot a command, then somehow the bot can start to send Friend Requests to all the people in the room.
-
-<!--more-->
 
 Below is the code snippet
 
@@ -59,9 +56,9 @@ However, it failed quickly with some exceptions in the log sometimes, or the Sen
 
 The original `ISSUE` link: <https://github.com/wechaty/wechaty/issues/540>
 
-Thanks for the help from @zixia and @lijiarui, which let me understand the Limitations of web-wechat and I did some research online saying web-wechat only allows to send 100 user request per day. And the api call throttle need to be steady. Obvisouly the original For-Loop is just too fast. I am wondering is there any kinda `Sleep` function in javascript?
+Thanks for the help from @huan and @lijiarui, which let me understand the Limitations of web-wechat and I did some research online saying web-wechat only allows to send 100 user request per day. And the api call throttle need to be steady. Obvisouly the original For-Loop is just too fast. I am wondering is there any kinda `Sleep` function in javascript?
 
-Thanks for the help from @zixia. Turns out there is a built in `Sleep` function already. Here is how to use `Wechaty Sleep`.
+Thanks for the help from @huan. Turns out there is a built in `Sleep` function already. Here is how to use `Wechaty Sleep`.
 
 ```javascript
 

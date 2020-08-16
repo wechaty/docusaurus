@@ -1,7 +1,6 @@
 ---
 title: '给微信机器人添加热重启功能'
 author: gcaufy
-date: '2017-03-20 11:11:11 +0800'
 categories: feature
 tags:
   - code
@@ -16,8 +15,6 @@ image: /assets/2017/gcaufy-hot-reload-screencast.gif
 Wechaty解决了很多我在使用微信运营过程中的痛点问题，这里就不再一一赘述了。同时Wechaty的API设计简洁优雅，部署方便也是另外一个吸引我的地方。
 
 快速上手后，在开发调试过程中，修改代码需要频繁重启Wechaty程序。相信绝大多数人都有着类似的问题， 下面就聊一聊怎么避免类似问题。
-
-<!--more-->
 
 ## 1. 问题分析
 

@@ -1,7 +1,6 @@
 ---
 title: "聚会娱乐机器人"
 author: osindex
-date: '2020-06-06 10:21:00 +0800'
 categories: project
 tags:
   - nodejs

@@ -1,7 +1,6 @@
 ---
 title: '构建脸盲聊天机器人--Wechaty Blinder'
 author: lijiarui
-date: '2018-1-25 23:04:27 +0800'
 categories: project
 tags:
   - code

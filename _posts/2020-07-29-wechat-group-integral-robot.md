@@ -1,7 +1,6 @@
 ---
 title: "微信群积分机器人（Wechat group integral robot）"
 author: hzhuhao
-date: "2020-07-29 12:30:00 +0800"
 categories: project
 tags:
   - wechaty
@@ -12,14 +11,12 @@ image: /assets/2020/wechat-group-integral-robot/header.jpg
 > 作者: [Hzhuhao](https://github.com/hzhuhao/)
 > Code: [Github](https://github.com/hzhuhao/wechaty-integral-robot)
 
-[![Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
+[![Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![开源激励计划](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ## 背景
 
 女朋友做微商代理卖水果，建了一个卖水果的微信群，为了维持群里的活跃度，有时候会弄一些积分送水果的活动，对于群成员的积分管理只能靠手动记分来维护，这样操作起来其实挺辛苦的。因此想做一个自动记分的群管理机器人，手动@用户就可以给用户加积分，这样就不用一个一个手动改备注积分啦，后期统计起来也很方便。
-
-<!--more-->
 
 ## 功能
 

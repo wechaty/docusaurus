@@ -1,7 +1,6 @@
 ---
 title: "wewe 向全世界公开群消息"
 author: timqian
-date: '2019-07-16 18:30:00 +0800'
 categories: project
 tags:
   - startup
@@ -12,8 +11,6 @@ image: /assets/2019/wewe-screenshot.png
 > Author: [@timqian](https://github.com/timqian) Building transparent products at [t9t.io](https://t9t.io)
 
 [![wewe]({{ '/assets/2019/wewe-screenshot.png' | relative_url }})](https://wewe.t9t.io)
-
-<!--more-->
 
 ## 背景
 

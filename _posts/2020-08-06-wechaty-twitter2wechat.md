@@ -1,7 +1,6 @@
 ---
 title: "twitter2wechat"
 author: steve
-date: "2020-08-06 10:59:00 +0800"
 categories: project
 tags:
   - wechaty
@@ -13,10 +12,10 @@ image: /assets/2020/wechaty-twitter2wechat/wechaty-twitter2wechat-header.jpg
 > Author: [afterever](https://github.com/afterever)
 > Code: [twitter2wechat](https://github.com/afterever/twitter2wechat)
 
-[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-blue.svg)](https://github.com/chatie/wechaty)
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-blue.svg)](https://github.com/wechaty/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 [![node version](https://img.shields.io/badge/node-%3E%3D10-blue.svg)](http://nodejs.cn/download/)
-[![node version](https://img.shields.io/badge/wechaty-%3E%3D0.40.5-blue.svg)](https://github.com/Chatie/wechaty)
+[![node version](https://img.shields.io/badge/wechaty-%3E%3D0.40.5-blue.svg)](https://github.com/wechaty/wechaty)
 
 ## Twitter2Wechat
 
@@ -24,7 +23,6 @@ image: /assets/2020/wechaty-twitter2wechat/wechaty-twitter2wechat-header.jpg
 感恩Wechaty API的出现，这个Twitter2Wechat 通过监听Twitter，在探测到有新Tweet发布后，会同步到预设的微信群里。
 一个实际的应用是，我们有一个实况足球的小联盟[PESNALeague](https://www.pesnaleague.com)。如果有玩家在YouTube或Twitch上直播比赛对战的话，通过预设的IFTTT, 直播的URL会在Twitter发布。
 之后，通过这个wechaty机器人，实现了在微信群的通告功能。
-<!--more-->
 
 ## 效果预览
 
@@ -32,7 +30,7 @@ image: /assets/2020/wechaty-twitter2wechat/wechaty-twitter2wechat-header.jpg
 
 ## 项目说明
 
-本项目是基于[wechaty](https://github.com/Chatie/wechaty)的个人开源项目，更多关于`wechaty`项目说明及api文档可以移步：[wechaty介绍](https://wechaty.js.org/v/zh/)
+本项目是基于[wechaty](https://github.com/wechaty/wechaty)的个人开源项目，更多关于`wechaty`项目说明及api文档可以移步：[wechaty介绍](https://wechaty.js.org/v/zh/)
 如果你拥有了[wechaty](https://github.com/wechaty/wechaty)发放的Padplus token，那么也可以直接使用本项目 （[PadPlus token 申请地址](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)）
 
 ## 程序结构

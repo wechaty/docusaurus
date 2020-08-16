@@ -1,12 +1,12 @@
 ---
 title: "Chatbots二重奏：用wechaty-log-monitor插件实现「掉线给码」等DevOps"
 author: archy
-date: "2020-08-09 20:20:00 +0800"
 categories: project
 tags:
   - plugin
   - wechaty
   - devops
+  - featured
 image: /assets/2020/wechaty-log-monitor/demo.jpeg
 excerpt: 为了能让（营业中的）小助手可以有更棒的 readily availability，我写了这个wechaty-log-monitor插件来给在production跑的Wechaty做日志相关的devops。
 
