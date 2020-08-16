@@ -4,8 +4,10 @@
  date: 2020-08-14 21:30 +0800
  author: kxz18
  categories: project
- header:
-    teaser: /assets/2020/groupchat-assistant-bot/header.jpeg
+ image: /assets/2020/groupchat-assistant-bot/header.jpeg
+ tags:
+   - python
+   - soc2020
 ---
 > Author: [@kxz18](https://github.com/kxz18)
 > Code: [@kxz18/python-wechaty-groupchat-bot](https://github.com/kxz18/python-wechaty-groupchat-bot)
@@ -60,7 +62,12 @@
 - 已完成工作：
   目前已经完成四个插件的开发以及对应的单元测试。即项目的前两个阶段已经完成，第三阶段完成一部分，正在进行中。
   
-  目前已经制作了presentation对项目的功能和结构做简单讲解，视频链接为：[https://youtu.be/WlxClO3C_Sc](https://youtu.be/WlxClO3C_Sc)。对已经实现的功能也进行了live coding演示，演示内容见：[https://youtu.be/TcsK58aokUA](https://youtu.be/TcsK58aokUA)
+  目前已经制作了presentation对项目的功能和结构做简单讲解:
+  <iframe width="560" height="315" src="https://youtu.be/WlxClO3C_Sc" frameborder="0" allowfullscreen></iframe>
+  
+  对已经实现的功能也进行了live coding演示，演示内容见：
+  
+  <iframe width="560" height="315" src="https://youtu.be/TcsK58aokUA" frameborder="0" allowfullscreen></iframe>
   
 - 遇到的问题及解决方案：
   
