@@ -4,7 +4,7 @@
  date: 2020-08-14 21:30 +0800
  author: kxz18
  categories: project
- image: /assets/2020/groupchat-assistant-bot/header.jpeg
+ image: /assets/2020/groupchat-assistant-bot-poc/header.png
  tags:
    - python
    - soc2020
