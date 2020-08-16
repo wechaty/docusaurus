@@ -1,143 +1,61 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Site
+name: Wechaty
+description: Conversational AI RPA SDK for Chatbot Builders
+logo: assets/images/logo.png
+favicon: assets/images/favicon.ico
+baseurl:
+disqus: chatie
+email: wechaty@chatie.io
+mailchimp-list: https://zixia.us4.list-manage.com/subscribe/post?u=a8584b55dea5aa8bbc14bd1a0&amp;id=d9899f0d70
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Wechaty - Conversational RPA SDK for WeChat
-email: dev@chatie.io
-description: >- # this means to ignore newlines until "baseurl:"
-  Wechaty is a Easy to Use Chatbot FrameWork
-  which can help you write The World's Smallest Chatbot
-  in TypeScript, JavaScript, Python, Java, and Go.
-twitter_username: chatieio
-github_username: chatie
-minimal_mistakes_skin: default
-search: true
-teaser: /assets/images/bio-photo.png
-breadcrumbs: true # true, false (default)
-words_per_minute: 200
-repository: "wechaty/wechaty.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-
-# Build settings
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-# Outputting
-# permalink: /:categories/:title/
-# permalink: /:title/
+include: ["_pages"]
 permalink: /:year/:month/:day/:title/
-paginate: 25 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-include:
-  - _pages
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - util/
-
-# Plugins (previously gems:)
+# Plugins
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
 
-author:
-  name   : "Wechaty"
-  avatar : "/assets/images/bio-photo.png"
-  bio    : "Bot is not born, but made."
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://wechaty.github.io"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/chatieio"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/wechaty"
-
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/chatieio"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/wechaty"
-
+# Defaults
 defaults:
-  # _posts
+
+  # all posts
   - scope:
-      path: ""
-      type: posts
+      path: _posts
     values:
-      layout: single
-      author_profile: true
-      read_time: true
+      layout: post
       comments: true
-      share: true
-      related: true
-      toc: true
-      toc_sticky: true
-  # _pages
+      author: wechaty
+      avatar: /assets/developers/wechaty/icon.png
+
+  # all pages
   - scope:
-      path: "_pages"
-      type: pages
+      path: _pages
     values:
-      layout: single
-      author_profile: true
+      layout: page
+  - scope:
+      path: _developers
+    values:
+      layout: developer
+      comments: true
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+# Syntax
+markdown: kramdown
+highlighter: rouge
 
-analytics:
-  provider               : "google" # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          : "UA-88739146-1"
-    anonymize_ip         : # true, false (default)
+# Paginate
+paginate: 30
+paginate_path: /blog/page:num/
 
-comments:
-  provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
-  utterances:
-    theme                 : "github-light" # "github-dark"
-    issue_term            : "title"
-  disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude:
+  - package.json
+  - _site
+  - node_modules
 
-after_footer_scripts:
-  - /assets/js/sidecar-gitter.js
-  - https://sidecar.gitter.im/dist/sidecar.v1.js
+collections:
+  developers:
+    output: true
+    permalink: /:collection/:path/

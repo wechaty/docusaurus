@@ -1,15 +1,13 @@
 ---
 title: "Microsoft Online Tech Forum 微软在线技术峰会 - 李佳芮专访"
-date: 2020-04-17 15:00 +0800
 author: lijiarui
 categories: interview
 tags:
   - wechaty
   - microsoft
   - chatbot
-
-header:
-  teaser: /assets/2020/ms-lijiarui-interview/teaser.png
+  - news
+image: /assets/2020/ms-lijiarui-interview/teaser.png
 ---
 
 > 作者: [李佳芮](https://github.com/lijiarui)，Microsoft AI MVP, Co-founder of Juzibot, Author of [Chatbot Zero to One](https://item.jd.com/12630213.html)
