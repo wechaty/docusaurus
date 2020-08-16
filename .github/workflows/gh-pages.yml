@@ -9,7 +9,7 @@ on:
 
 jobs:
   test:
-    name: Test
+    name: Test and Build Website
     strategy:
       matrix:
         os: [ubuntu-latest]
