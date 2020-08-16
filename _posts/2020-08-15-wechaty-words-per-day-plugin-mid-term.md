@@ -7,7 +7,7 @@ tags:
   - wechaty
   - plugins
   - soc
-image: /assets/2020/wechaty-words-per-day-plugin-mid-term/header.jpg
+image: /assets/2020/wechaty-words-per-day-plugin-mid-term/header.png
 ---
 
 > 作者: [univerone](https://github.com/univerone/)
