@@ -9,7 +9,7 @@ on:
 
 jobs:
   test:
-    name: Test and Build Website
+    name: Test & Build
     strategy:
       matrix:
         os: [ubuntu-latest]
@@ -28,10 +28,12 @@ jobs:
           sudo make install
       - name: Test
         run: npm test
+      - name: Build
+        run: npm run build
 
   deploy:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-    name: Publish to GitHub Pages
+    name: Deploy GitHub Pages
     needs: [test]
     runs-on: ubuntu-latest
     strategy:
