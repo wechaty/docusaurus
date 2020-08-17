@@ -63,11 +63,11 @@
   目前已经完成四个插件的开发以及对应的单元测试。即项目的前两个阶段已经完成，第三阶段完成一部分，正在进行中。
   
   目前已经制作了presentation对项目的功能和结构做简单讲解:
-  <iframe width="560" height="315" src="https://youtu.be/WlxClO3C_Sc" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/WlxClO3C_Sc" frameborder="0" allowfullscreen></iframe>
   
   对已经实现的功能也进行了live coding演示，演示内容见：
   
-  <iframe width="560" height="315" src="https://youtu.be/TcsK58aokUA" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/TcsK58aokUA" frameborder="0" allowfullscreen></iframe>
   
 - 遇到的问题及解决方案：
   
