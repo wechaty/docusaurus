@@ -1,7 +1,6 @@
 ---
 title: "微信群聊天记录天梯机器人(wechaty-room-tianti)"
 author: fangmuke
-date: "2020-07-26 21:45:00 +0800"
 categories: project
 tags:
   - wechaty
