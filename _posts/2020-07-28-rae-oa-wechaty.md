@@ -1,7 +1,6 @@
 ---
 title: "Rae-oa系统微信群辅助机器人(rae-wechaty)"
 author: north-sea-coder
-date: "2020-07-28 21:24:00 +0800"
 categories: project
 tags:
   - wechaty
