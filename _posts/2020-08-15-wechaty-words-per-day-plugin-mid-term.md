@@ -1,5 +1,6 @@
 ---
 title: "暑期2020 [编写一个“每日一句”插件] POC 成果展示"
+date: 2020-08-15 20:00
 author: univerone
 categories: project
 tags:
@@ -89,10 +90,14 @@ image: /assets/2020/wechaty-words-per-day-plugin-mid-term/header.png
 
 ## Wechaty Demo Day 视频
 
-### PPT展示
+### PPT展示视频
 
-<iframe src="//player.bilibili.com/player.html?aid=926702939&bvid=BV1vT4y157x5&cid=224469100&page=1" width="560" height="315" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+{% include iframe.html src="//player.bilibili.com/player.html?aid=926702939&bvid=BV1vT4y157x5&cid=224469100&page=1&as_wide=1&high_quality=1&danmaku=0" width="70%" %}
+
+### PPT
+
+{% include iframe.html src="/assets/js/viewer-js/#/assets/2020/wechaty-words-per-day-plugin-mid-term/presentation.pdf" width="60%" %}
 
 ### Live Code视频
 
-<iframe src="//player.bilibili.com/player.html?aid=201701469&bvid=BV1ih411d75h&cid=224470522&page=1" width="560" height="315" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+{% include iframe.html src="//player.bilibili.com/player.html?aid=201701469&bvid=BV1ih411d75h&cid=224470522&page=1" width="70%" %}
