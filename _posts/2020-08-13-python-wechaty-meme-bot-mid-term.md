@@ -1,6 +1,5 @@
 ---
 title: "基于Python-wechaty建立一个斗图机器人 POC 成果展示"
-date: 2020-08-13 23:00 +0800
 author: godkillerxiao
 image: /assets/2020/meme-bot/08-13-wechaty-meme-bot-mid-term.png
 tags:
