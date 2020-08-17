@@ -1,6 +1,5 @@
 ---
 title: "基于开放 API 封装 Wechaty 接口下的飞书聊天机器人"
-date: 2020-07-29 10:00 +0800
 author: fanrui
 categories: project
 tags:
