@@ -1,5 +1,5 @@
 ---
-title: "SpringBoot 搭建wechaty智能聊天机器"
+title: "SpringBoot搭建wechaty智能聊天机器"
 author: smwsk
 categories: project
 tags:
@@ -40,7 +40,7 @@ image: /assets/2020/smwsk-java-wechaty-bot/home.jpg
 
 ## 项目信息
 
-* [项目地址](https://github.com/smwsk/wechaty-bot) 
+* [项目地址](https://github.com/smwsk/wechaty-bot)
 
 ## 项目成果
 
