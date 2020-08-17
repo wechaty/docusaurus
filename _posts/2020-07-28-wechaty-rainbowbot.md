@@ -1,14 +1,12 @@
 ---
-
- title: "wechaty-rainbowbot 基于WeChaty实现的企业业务系统与营销团队微信群之间通信的桥梁"
- date: 2020-07-28 09:00 +0800
- author: CavonCheng
- categories: project
- tags:
-     - wechaty
-     - wechaty-puppet-padplus
-     - koa
-     - weixin-openai
+title: "wechaty-rainbowbot 基于WeChaty实现的企业业务系统与营销团队微信群之间通信的桥梁"
+author: CavonCheng
+categories: project
+tags:
+  - wechaty
+  - wechaty-puppet-padplus
+  - koa
+  - weixin-openai
 image: /assets/2020/wechaty-rainbowbot/rainbow.jpg
 ---
 

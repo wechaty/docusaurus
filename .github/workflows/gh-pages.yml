@@ -4,12 +4,12 @@
 name: GitHub Pages CI
 
 on:
-  push:
-    branches: [ master ]
+  - push
+  - pull_request
 
 jobs:
   test:
-    name: Editor Testing
+    name: Test & Build
     strategy:
       matrix:
         os: [ubuntu-latest]
@@ -23,12 +23,17 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install Dependencies
-        run: npm install
-      - name: Editor Testing
+        run: |
+          npm install
+          sudo make install
+      - name: Test
         run: npm test
+      - name: Build
+        run: npm run build
 
   deploy:
-    name: Publish to GitHub Pages
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    name: Deploy GitHub Pages
     needs: [test]
     runs-on: ubuntu-latest
     strategy:
