@@ -1,10 +1,8 @@
 ---
-
- title: "暑期2020 基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人 计划书"
- date: 2020-07-29 14:00 +0800
- author: Sapio-S
- header:
-   teaser: /assets/2020/work-puppet/pic.png
+title: "暑期2020 基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人 计划书"
+author: Sapio-S
+header:
+  teaser: /assets/2020/work-puppet/pic.png
 ---
 <!-- markdownlint-disable -->
 
