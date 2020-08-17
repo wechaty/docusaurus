@@ -1,6 +1,5 @@
 ---
 title: "Wechaty Contributor Meetup -- Shenzhen August 5"
-date: 2020-08-09 12:00 +0800
 author: dchaofei
 categories: event
 tags:
