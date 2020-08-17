@@ -1,7 +1,6 @@
 ---
 title: "十分钟实现一个智能问答微信聊天机器人"
 author: luweiCN
-date: '2020-07-02 17:21:00 +0800'
 categories: bot
 tags:
   - nodejs
