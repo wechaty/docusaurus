@@ -44,11 +44,11 @@ image: /assets/2020/smwsk-java-wechaty-bot/home.jpg
 
 ## 项目成果
 
-<img src="/assets/2020/smwsk-java-wechaty-bot/results_1.jpg" width="300" alt="讲笑话-听歌"/>
+<img src="/assets/2020/smwsk-java-wechaty-bot/results-1.jpg" width="300" alt="讲笑话-听歌"/>
 
-<img src="/assets/2020/smwsk-java-wechaty-bot/results_2.jpg" width="300" alt="新闻-成语接龙"/>
+<img src="/assets/2020/smwsk-java-wechaty-bot/results-2.jpg" width="300" alt="新闻-成语接龙"/>
 
-<img src="/assets/2020/smwsk-java-wechaty-bot/results_3.jpg" width="300" alt="心理年龄测试"/>
+<img src="/assets/2020/smwsk-java-wechaty-bot/results-3.jpg" width="300" alt="心理年龄测试"/>
 
 ## 待完善功能
 
