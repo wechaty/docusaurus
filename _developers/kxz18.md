@@ -1,6 +1,6 @@
 ---
 name: kxz
-site: https://kxz18.github.io/
+site: https://kxz18.github.io
 avatar: /assets/developers/kxz18/avatar.png
 bio: Undergraduate coder in Beijing
 email: mailto:15068701650@163.com
