@@ -1,7 +1,6 @@
 ---
 
 title: "基于Wechaty和NodeJs开发的微信机器人"
-date: 2020-07-03 11:30 +0800
 author: Johnson-hd
 tags:
 - nodejs
