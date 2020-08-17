@@ -923,3 +923,15 @@ csjuXYZ:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "hoc0415@foxmail.com"
+
+smwsk:
+  name        : "wangsk"
+  bio         : "JAVA 攻城狮"
+  avatar      : "https://avatars3.githubusercontent.com/u/12505419?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/smwsk"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "357531851@qq.com"
