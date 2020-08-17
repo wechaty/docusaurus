@@ -14,9 +14,7 @@ title: 基于Wechaty的夸夸机器人<br>
 date: 2020-08-17<br>
 author: yinizhilian<br>
 categories: project<br>
-tags: <br>
-
-- AI Project <br>
+tags: AI Project<br>
 
 image: /assets/2020/kuakua-wechaty/title_image.png<br>
 
