@@ -1,6 +1,5 @@
 ---
 title: "当Grafana遇上Wechaty"
-date: 2020-08-11 10:00 +0800
 author: magina
 categories: project
 tags:
