@@ -1,5 +1,5 @@
 ---
-title: " JAVA SpringBoot 搭建wechaty智能聊天机器"
+title: "   SpringBoot 搭建wechaty智能聊天机器"
 author: smwsk
 categories: project
 tags:
@@ -7,7 +7,7 @@ tags:
   - SpringBoot
   - Java
   - 微信对话开发平台
-image: /assets/2020/qijibot/qijibot.jpg
+image: /assets/2020/smwsk-java-wechaty-bot/home.jpg
 ---
 
 > 作者: [smwsk](https://github.com/smwsk/)
@@ -39,11 +39,11 @@ image: /assets/2020/qijibot/qijibot.jpg
 * [项目地址](https://github.com/smwsk/wechaty-bot) 
 
 ## 项目成果
-<img src="../assets/2020/smwsk-java-wechaty-bot/results_1.jpg" width="300" alt="讲笑话-听歌"/>
+<img src="/assets/2020/smwsk-java-wechaty-bot/results_1.jpg" width="300" alt="讲笑话-听歌"/>
 
-<img src="../assets/2020/smwsk-java-wechaty-bot/results_2.jpg" width="300" alt="新闻-成语接龙"/>
+<img src="/assets/2020/smwsk-java-wechaty-bot/results_2.jpg" width="300" alt="新闻-成语接龙"/>
 
-<img src="../assets/2020/smwsk-java-wechaty-bot/results_3.jpg" width="300" alt="心理年龄测试"/>
+<img src="/assets/2020/smwsk-java-wechaty-bot/results_3.jpg" width="300" alt="心理年龄测试"/>
 
 ## 待完善功能
 * TODO 自动通过好友功能
