@@ -5,7 +5,6 @@ author: godkillerxiao
 image: /assets/2020/meme-bot/08-13-wechaty-meme-bot-mid-term.png
 tags:
   - python
-
 ---
 
 > Author: [@MrZilinXiao](https://github.com/MrZilinXiao) Always dedicated to learn something brand new.
