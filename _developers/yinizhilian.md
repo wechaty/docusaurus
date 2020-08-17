@@ -2,11 +2,11 @@
 ---
 
 name: yinizhilian
-site: <https://github.com/yinizhilian>
-avatar: <https://avatars1.githubusercontent.com/yinizhilian>
+site: < https://github.com/yinizhilian >
+avatar: < https://avatars1.githubusercontent.com/yinizhilian >
 bio: a little coder && we media
 email: 419516477@qq.com
-Zhihu: <https://www.zhihu.com/people/wangjini521>
+Zhihu: < https://www.zhihu.com/people/wangjini521 >
 
 ---
 
@@ -20,7 +20,9 @@ author: yinizhilian
 
 categories: project
 
-tags: AI Project
+tags: 
+
+-  AI Project
 
 image: /assets/2020/kuakua-wechaty/title_image.png
 
