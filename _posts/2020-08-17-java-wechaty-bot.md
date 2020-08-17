@@ -13,9 +13,11 @@ image: /assets/2020/smwsk-java-wechaty-bot/home.jpg
 > 作者: [smwsk](https://github.com/smwsk/)
 
 ## 摘要
+
 > 本项目是基础wechaty项目实现微信的聊天功能、通过微信对话开放平台提供的API进行智能的应答、实现了微信的智能聊天、最后非常感谢wechaty的无私奉献。
 
 ## 智能机器人功能
+
 * 高级转人工
 * 周边生活服务
 * 聊聊电影
@@ -31,14 +33,17 @@ image: /assets/2020/smwsk-java-wechaty-bot/home.jpg
 ![微信二维码](/assets/2020/smwsk-java-wechaty-bot/code.jpg)
 
 ## 准备工作
+
 * 需要先准备一台token网关服务器
 * 跟wechaty人员申请token
 * [微信对话开放平台](https://openai.weixin.qq.com/) 申请一个机器人、学习技能、获取TOKEN
 
 ## 项目信息
+
 * [项目地址](https://github.com/smwsk/wechaty-bot) 
 
 ## 项目成果
+
 <img src="/assets/2020/smwsk-java-wechaty-bot/results_1.jpg" width="300" alt="讲笑话-听歌"/>
 
 <img src="/assets/2020/smwsk-java-wechaty-bot/results_2.jpg" width="300" alt="新闻-成语接龙"/>
@@ -46,10 +51,12 @@ image: /assets/2020/smwsk-java-wechaty-bot/home.jpg
 <img src="/assets/2020/smwsk-java-wechaty-bot/results_3.jpg" width="300" alt="心理年龄测试"/>
 
 ## 待完善功能
+
 * TODO 自动通过好友功能
 * TODO 根据群里的每个人回答对象@响应对应的群友
 
 ## 项目研究血泪史
+
 >本人英语不是很好，对于一个都是英文文档的项目看的简直是头疼、但是还是能看的懂一点点、我们从[wechaty](https://github.com/wechaty/wechaty
 )项目中得知,我们用到ipad协议的话，需要一个token、然后找到了客户拿到了token。
 ### 客服发的材料
