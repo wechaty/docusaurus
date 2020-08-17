@@ -1,7 +1,6 @@
 ---
 title: "wechaty plugin for easily extending capabilities"
 author: watertao
-date: '2020-08-01 20:20:20 +0800'
 categories: npm
 tags:
   - wechaty
