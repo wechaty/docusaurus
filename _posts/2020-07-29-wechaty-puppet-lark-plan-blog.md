@@ -3,13 +3,14 @@ title: "基于开放 API 封装 Wechaty 接口下的飞书聊天机器人"
 date: 2020-07-29 10:00 +0800
 author: fanrui
 categories: project
+image: /assets/2020/lark-puppet/wechaty-lark.png
 tags:
   - featured
-  - wechaty-puppet-lark
-image: /assets/2020/lark-puppet/wechaty-lark.png
+  - Soc2020
+  - Lark
 ---
 > Author: [@fanrui](https://github.com/Roxanne718)
-> Code: [@fanrui/wechaty-puppet-lark](https://github.com/Roxanne718/wechaty-puppty-lark)
+> Code: [@fanrui/wechaty-puppet-lark](https://github.com/Roxanne718/wechaty-puppet-lark)
 
 ## 暑期2020
 
@@ -23,13 +24,16 @@ image: /assets/2020/lark-puppet/wechaty-lark.png
 ## [基于开放 API 封装 Wechaty 接口下的飞书聊天机器人]具体计划
 
 - 导师：高原 吴京京
+
 - 学生：范蕊
+
 - 模块列表
   - [ ] 接收消息
   - [ ] 通讯录获取
   - [ ] 实现 puppet 上各个类型的消息接口
   - [ ] 设计配置参数
   - [ ] 使用文档
+
 - 计划安排：
   - 阅读源代码
     - 7.29 - 7.31
@@ -53,5 +57,7 @@ image: /assets/2020/lark-puppet/wechaty-lark.png
   - 项目完善
     - 9.12 - 9.30
     - 代码重构
-- 项目链接：[https://github.com/Roxanne718/wechaty-puppty-lark](https://github.com/Roxanne718/wechaty-puppty-lark)
+
+- 项目链接：[https://github.com/Roxanne718/wechaty-puppet-lark](https://github.com/Roxanne718/wechaty-puppet-lark)
+
 - 联系方式：+86 17822015718 | email: 953299708@qq.com
