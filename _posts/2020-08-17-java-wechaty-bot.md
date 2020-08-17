@@ -59,11 +59,12 @@ image: /assets/2020/smwsk-java-wechaty-bot/home.jpg
 
 >本人英语不是很好，对于一个都是英文文档的项目看的简直是头疼、但是还是能看的懂一点点、我们从[wechaty](https://github.com/wechaty/wechaty
 )项目中得知,我们用到ipad协议的话，需要一个token、然后找到了客户拿到了token。
+
 ### 客服发的材料
+
 * puppet_padplus_xxxxx 有效期2020-08-25
 * 请务必反复阅读我们的Wiki，Wechaty 的 API 中英文文档、各个项目链接、多个协议的使用说明、Web协议不能使用情况下如何申请其他协议Token等内容均在其中：https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty
 * API文档：https://wechaty.js.org/api
 * Padplus Token 进行多语言开发指南 https://github.com/wechaty/wechaty/issues/1985
-
 
 >我看到多语言版本有JAVA版本，马上就下载下来试一下能不能运行。没有详细看后面的文档、这导致我把[JAVA版本Demo](https://github.com/wechaty/java-wechaty-getting-started)下载下来一直运行不起来、后面仔细看了文档之后才知道需要部署一个网关服务、而且要在公网的服务器上面、希望后面的开发不要走我这个弯路、好好查看文档。
