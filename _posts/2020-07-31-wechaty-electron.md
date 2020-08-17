@@ -1,7 +1,6 @@
 ---
 title: "更有效率的二手捡漏助手"
 author: krapnik
-date: "2020-07-31 19:52:00 +0800"
 categories: project
 tags:
   - wechaty
