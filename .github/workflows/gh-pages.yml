@@ -9,7 +9,7 @@ on:
 
 jobs:
   test:
-    name: Test
+    name: Editor Testing
     strategy:
       matrix:
         os: [ubuntu-latest]
@@ -24,7 +24,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install Dependencies
         run: npm install
-      - name: Test
+      - name: Editor Testing
         run: npm test
 
   deploy:
