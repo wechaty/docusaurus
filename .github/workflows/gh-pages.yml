@@ -4,8 +4,8 @@
 name: GitHub Pages CI
 
 on:
-  push:
-    branches: [ master ]
+  - push
+  - pull_request
 
 jobs:
   test:
@@ -30,6 +30,7 @@ jobs:
         run: npm test
 
   deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     name: Publish to GitHub Pages
     needs: [test]
     runs-on: ubuntu-latest
