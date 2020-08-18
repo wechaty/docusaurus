@@ -1,7 +1,6 @@
 ---
 title: "股票盯盘助手"
 author: wengcan
-date: "2020-08-02 17:00:00 +0800"
 categories: project
 tags:
   - wechaty
