@@ -12,6 +12,9 @@ image: /assets/2020/wechaty-stock-bot/header.jpg
 > Author: [wengcan](https://github.com/wengcan)
 > Code: [stock-bot](https://github.com/wengcan/stock-bot)
 
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
+[![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
+
 ## 背景
 
 随着“牛市”的到来, 各种炒股，荐股的群又活跃起来， 大佬荐股的同时， 韭菜们也需要快速了解该股票的行情和基本面，于是有了这个小工具
@@ -24,13 +27,13 @@ image: /assets/2020/wechaty-stock-bot/header.jpg
 
 ### 功能
 
-⭐ 分析群聊内容，实时回复当前行情
+⭐ 监听群聊内容，从群聊内容中分析并提取所包含的股票名称，回复相关股票实时行情。
 
-⭐ 大盘指数查询
+⭐ 大盘指数查询，可查询上证指数，深圳成指，创业板指，和科创50指数。
 
-⭐ 龙虎榜查询
+⭐ 龙虎榜查询，可查询当日龙虎榜或者查询指定日期龙虎榜。
 
-⭐ 更多功能开发中
+⭐ 更多功能开发中...
 
 ### 运行
 
