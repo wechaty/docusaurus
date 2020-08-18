@@ -18,6 +18,8 @@
     src='https:////player.bilibili.com/player.html?bvid={{ include.src }}'
     {% elsif include.type == "pdf" %}
     src='/assets/js/viewer-js/#{{ include.src }}'
+    {% else %}
+    src='{{ include.src }}'
     {% endif %}
     allowfullscreen
     webkitallowfullscreen
