@@ -1,14 +1,12 @@
 ---
 title: "使用Wechaty管理你的顾客"
 author: Kylin93CN
-date: '2020-05-17 19:20:50 +0800'
 categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
   - chatbot
-header:
-  teaser: /assets/2020/manage-ur-customers/2020-0517-wechat.jpeg
+image: /assets/2020/manage-ur-customers/2020-0517-wechat.jpeg
 ---
 
 > 作者: [Kylin93CN](https://github.com/Kylin93CN)
@@ -20,8 +18,6 @@ header:
 
 - 群人数超过一定限额，群二维码失效，需要手动拉人
 - 最新的活动通知
-
-<!--more-->
 
 ## Wechaty 和 Puppet
 
@@ -43,5 +39,5 @@ header:
 
 ## 特别鸣谢
 
-[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/chatie/wechaty)
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)

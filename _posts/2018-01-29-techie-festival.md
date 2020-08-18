@@ -1,15 +1,14 @@
 ---
 title: "女生科技体验节，Wechaty专场技术复盘"
-date: '2018-01-29 11:32:53'
 author: tingyinhelen
 categories: event
 tags:
   - talk
-header:
-  teaser: /assets/2018/helen-techie-festival.jpeg
+  - news
+image: /assets/2018/helen-techie-festival.jpeg
 ---
 
-> <img src="https://avatars2.githubusercontent.com/u/14006826?v=3&s=88">
+![a](https://avatars2.githubusercontent.com/u/14006826?v=3&s=88)
 >
 > 作者: [@Helen](https://github.com/TingYinHelen), Lenovo
 >
@@ -19,8 +18,6 @@ header:
 女孩子天生喜欢漂亮的衣服，衣柜里琳琅满目的首饰，化妆品。周末和闺蜜约会，逛街，喝下午茶。这似乎是众人眼中的姑娘们的标配。然而又有着这么一群女孩，她们喜欢编程，用代码改变着身边细小的事情，改变着世界。聪明，具有创造力，她们用行动诠释了新时代女性的性感。一个女孩的美丽不仅仅来自她的外表，更来自她的思想。2018年女生科技体验节，便是一道独有的风景线，讲师李佳芮带领女孩子们体验使用Wechaty制作自己的微信机器人。
 
 ![techie-festival][techie-festival]
-
-<!--more-->
 
 在2018女生科技体验节中，讲师李佳芮向大家讲解了[《从0到1，搭建你的个人智能助理》](https://mp.weixin.qq.com/s?__biz=MzI4NDkwNDA2NA==&mid=2247484233&idx=1&sn=e6e4d66c9e81ae909c8a523d70972d26&chksm=ebf51ca6dc8295b02c5b320a17e2bb69918500ecdda69bdf565fa69377dac5a2a3ee3aef3387&mpshare=1&scene=1&srcid=0129BCkHC0MAzDl6r6y10V1j&pass_ticket=KEvH2mABSfNtoFSgclVOWz9M40KevjNRkSVjxyPhWuc%3D#rd)，基于同学们大多没有太多编码经验，所以这篇文章做一个技术复盘，把课程中讲到的技术知识点做一个总结。
 
@@ -55,7 +52,7 @@ docker安装好的标志是命令行运行：`docker --version`会显示docker�
 
 以上是环境搭建，搭好环境之后就可以编写我们想要的微信机器人了。
 
-#### Wechaty
+## Wechaty
 
 Wechaty是一个为个人微信号搭建的chat bot框架。
 这里讲师给大家提供了一个[机器人代码](https://github.com/lijiarui/wechaty-getting-started)，实现了简单的自动通过好友请求，拉人入群，欢迎新人入群，踢人等功能。
@@ -126,7 +123,7 @@ docker run的意思是创建一个新的容器，并运行一个命令，语法�
 好了，我把代码实现的功能讲述了一边，具体的就需要同学们自己去看代码了。这里我重点给大家介绍一下这段代码中用到的wechaty的几个类，分别是Wechaty、Contact、Message、和FriendRequest。每次我们只需要引入需要用到的类就可以使用类提供的方法了。
 还提供了一些事件：‘scan’（扫描二维码），,’login’（机器人登录），‘logout’（机器人退出），‘message’（接收到新消息），‘error’（程序报错），‘friend’（好友请求）等。Wechaty提供了一套非常方便的API，供开发者方便的使用，满足机器人来管理群。
 
-#### Server酱
+## Server酱
 
 网页版微信会经常把用户踢下线，Server酱可以帮助我们知道Wechaty发生了哪些异常。
 Server酱，他是一个能从服务器推报警和日志到手机的工具，非常简单易操作：
@@ -135,7 +132,7 @@ Server酱，他是一个能从服务器推报警和日志到手机的工具，�
 
 这样，当我的机器人出现各种异常情况，我随时随地都可以知道，需要再扫码进入的时候，方糖这公众号就会把二维码推到我的手机上，我只要用机器人的微信扫码就可以了。
 
-#### UNIT
+## UNIT
 
 最后，我们向大家介绍了怎么去制作智能微信机器人，使用了百度的UNIT框架。UNIT不需要有开发经验，我们需要做的是了解机器人使用在什么样的场景下，如何理解、如何回应用户。机器人是通过识别意图和词槽理解用户的。我们通过建立词槽，引入词典，配置词槽的澄清话术。配置回复文本及触发条件，配置引导话术、引导目标和触发条件，最后保存所有配置，导入语料，编辑对话模板，最后训练并生效模型。
 

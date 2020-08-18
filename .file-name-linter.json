@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "_posts": [
+      "^_posts/",
+      "/[0-9\\-a-z]+\\.",
+      "\\.md$"
+    ],
+    "assets": [
+      "^assets/",
+      "/[0-9\\-a-z]+\\.",
+      "\\.(jpg|jpeg|png|gif|webp|zip|pdf|docx|doc|txt)$"
+    ]
+  },
+  "ignore": [
+    "assets/js",
+    "assets/css",
+    "assets/images",
+    "assets/developers/wechaty",
+    "tests/fixtures"
+  ]
+}

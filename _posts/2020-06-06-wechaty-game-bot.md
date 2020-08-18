@@ -1,7 +1,6 @@
 ---
 title: "聚会娱乐机器人"
 author: osindex
-date: '2020-06-06 10:21:00 +0800'
 categories: project
 tags:
   - nodejs
@@ -10,25 +9,28 @@ tags:
   - redis
   - sqlite
   - knex
-header:
-  teaser: /assets/2020/im-game-robot/qrcat.jpg 
+  - featured
+image: /assets/2020/im-game-robot/qrcat.jpg 
 ---
 
-<!-- markdownlint-disable -->
 > 作者: [osindex](https://github.com/osindex)
 > Code: [Github](https://github.com/osindex/im-robot)
 
 ## 前言
+
 几年前大家开始通过微信拜年，基于vbot折腾过机器人，想要给所有alias不为空的好友发送定制问候，在发送不到10人消息之后，自己微信的WEB端口被封。无奈尝下没有技术和被墙的泪水。
 
 作为码农，能自动化处理的事情，为什么一定得人工？
 
 ## 项目说明
+
 几天前无意中浏览到Wechaty，于是再次萌发了做个机器人的想法。这次做一个娱乐向的机器人~
 
 ### 游戏特色
+
 本次开发了谁是卧底小游戏，房主无法设置游戏角色及人数，要求至少4人参加。每轮游戏结束后会重新分配各角色人数，增加随机趣味性。[扫最下方的二维码，发送`ding`自动加好友体验~]
-```
+
+```log
 假定总人数为ALL
 平民人数[P]：默认 总人数一半 + 1 向下取整
 卧底人数[W]：默认 随机 1 到 总人数 - 平民人数
@@ -36,8 +38,10 @@ header:
 额外分配：若W大于3则会再次分配，随机减少 0 或 W - 2人数，减少的人数加到P头上
 因此一般的人数规律是：3/1/0,3/1/1,3/2/0,4/1/1,4/2/0....
 ```
+
 游戏规则：
-```
+
+```log
 游戏结束：
 存活人数/游戏人数 <= 1/2时，即 2/4,2/5,3/6,3/7,4/8
 胜利条件：
@@ -45,7 +49,9 @@ header:
 2.卧底存活至游戏结束 卧底胜
 3.所有卧底出局后白板仍然存活 白板胜
 ```
+
 附上部分逻辑代码说明。
+
 ```javascript
 /**
  * 定义当前轮次游戏角色数目
@@ -95,7 +101,7 @@ Word.defTurn = function (playsList) {
         playsList[index].word = word
         // 顺便按顺序排号
         newPlaysList.push(playsList[index])
-        playsList.splice(index, 1); //    将随机出的元素在arr中删除            
+        playsList.splice(index, 1); //    将随机出的元素在arr中删除
         // console.log(roles)
     }
     // 排序
@@ -115,7 +121,7 @@ Word.defTurn = function (playsList) {
 - `imgs`存放相关图片
 - `listeners`存放机器人初始化后一系列事件处理(分模块)
   - `games` 游戏模块
-  	- `iswho.js` 谁是卧底核心模块
+    - `iswho.js` 谁是卧底核心模块
   - `on-friendship.js` 处理好友请求
   - `on-login.js` 处理登录
   - `on-message.js` 处理用户消息、群消息
@@ -148,6 +154,7 @@ npm install
 npm run initdb
 npm start
 ```
+
 ### 已实现功能
 
 - [x] 发送加群关键字，自动拉人进群。
@@ -164,6 +171,7 @@ npm start
 - [ ] 生活向文字冒险游戏
 
 ### 谁是卧底小游戏
+
 ![Image text](/assets/2020/im-game-robot/a.png)
 ![Image text](/assets/2020/im-game-robot/b.png)
 ![Image text](/assets/2020/im-game-robot/c.png)

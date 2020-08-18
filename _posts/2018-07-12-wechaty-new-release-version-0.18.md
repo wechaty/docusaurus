@@ -1,12 +1,12 @@
 ---
 title: "Wechaty New Release Version v0.18: SLOC from 27,630 to 7,817"
 author: huan
-date: '2018-07-12 18:14:52 +0800'
 categories: announcement
 tags:
   - release
-header:
-  teaser: /assets/2018/huan-reduce-weight.jpg
+  - news
+  - featured
+image: /assets/2018/huan-reduce-weight.jpg
 ---
 
 > Author: [Huan LI](https://github.com/huan), Machine Learning Ph.D.
@@ -20,8 +20,6 @@ All about Wechaty v0.18 is to: Reduce Weight!
 With v0.17, we have 27,630 source line of code with 377 unit tests(you can check it out at [here](https://github.com/wechaty/wechaty/blob/01bfdf96c8023f44fa2ad2762f8f12fee875e42e/tests/README.md) if you are interested).
 
 Start from v0.18, we have 7,817 lines of code left(v0.17 is 353% of this!), with 10+ related npm modules.
-
-<!--more-->
 
 Let's back to May 2016, when the first version of Wechaty was published, it only contains thousands of lines of the code, and at the end of the year 2016, we have about 10,000 lines of the code. (you can read our [blog](https://wechaty.github.io/welcome-to-wechaty/) at this time)
 
@@ -66,9 +64,8 @@ If we count the other npm modules that split out from Wechaty before, we can als
 1. [cloneClass](https://www.npmjs.com/package/clone-class): Clone an ES6 Class as Another Class Name for Isolating Class Static Properties.
 1. [finis](https://www.npmjs.com/package/finis): Node.js program finisher - run your last callback with `exit code` and `signal name` as arguments
 1. [FileBox](https://www.npmjs.com/package/file-box): Pack a File into Box for easy move/transfer between servers no matter of where it is.(local, remote url, or cloud storage)
-1. [FlashStore](https://www.npmjs.com/package/flash-store): FlashStore is a Key-Value persistent
+1. [FlashStore](https://www.npmjs.com/package/flash-store): FlashStore is a Key-Value persistent, storage with easy to use ES6 Map-like API(both Async and Sync support), powered by LevelDB and TypeScript.
 1. [hotImport](https://www.npmjs.com/package/hot-import): Hot Module Replacement(HMR) for Node.js
-storage with easy to use ES6 Map-like API(both Async and Sync support), powered by LevelDB and TypeScript.
 1. [Listag](https://www.npmjs.com/package/listag): List Manager for Array Operations & Query by Tag
 1. [MemoryCard](https://www.npmjs.com/package/memory-card): Memory Card is an Easy to Use Key/Value Store Implements ES6 Map with Async API, with Swagger & Serialization Support.
 1. [RxQueue](https://www.npmjs.com/package/rx-queue): Easy to Use RxJS Queue for Throttle/Debounce/Delay/DelayExecute

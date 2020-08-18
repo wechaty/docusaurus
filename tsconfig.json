@@ -1,0 +1,25 @@
+{
+  "extends": "@chatie/tsconfig",
+  "compilerOptions": {
+    "outDir": "dist",
+
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["DOM"],
+    "noEmit": true,
+    "noImplicitAny": false
+  },
+  "exclude": [
+    "node_modules/",
+    "dist/",
+    "tests/fixtures/",
+  ],
+  "include": [
+    "docusaurus/src/",
+    "bin/*.ts",
+    "scripts/**/*.ts",
+    "src/**/*.ts",
+    "tests/**/*.spec.ts",
+  ],
+}
