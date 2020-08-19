@@ -1,20 +1,19 @@
 ---
 title: "Wechaty Summer of Code 2020 Kickoff Meeting"
 author: rickyyin98
-date: "2020-07-20 08:00:00 +0800"
 categories: announcement
 tags:
   - wechaty
   - soc
   - talk
-  - home
+  - news
   - meetup
   - featured
 image: /assets/2020/wechaty-soc-kick-off-meeting/soc.png
 ---
 
 > 作者: [Yinbohao](https://github.com/rickyyin98/)
-<!--more-->
+
 ## 关于暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
@@ -108,7 +107,7 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 ### 多功能：编写一个“每日一句”插件 <https://github.com/wechaty/summer-of-code/issues/10>
 
 - 导师：Gcaufy，20000+Star小程序框架Wepy作者、Wechaty Plugin系统设计师（gcaufy@gmail.com）
-- 学生开发者：江姗姗，北京大学硕士生（1900022730@pku.edu.cn）
+- 学生开发者：江姗姗，北京大学二学位本科生（univerone@outlook.com）
 
 ## SoC破冰会会议纪实
 

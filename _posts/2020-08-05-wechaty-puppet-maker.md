@@ -1,7 +1,6 @@
 ---
 title: "Wechaty Workshop for Puppet Makers: How to make a Puppet for Wechaty"
 author: rickyyin98
-date: "2020-08-05 08:00:00 +0800"
 categories: project
 tags:
   - wechaty
@@ -10,7 +9,6 @@ image: /assets/2020/wechaty-puppet-maker/puppet.png
 ---
 
 > 作者: [Yinbohao](https://github.com/rickyyin98/)
-<!--more-->
 
 ![Wechaty Puppet活动](/assets/2020/wechaty-puppet-maker/puppet.png)
 

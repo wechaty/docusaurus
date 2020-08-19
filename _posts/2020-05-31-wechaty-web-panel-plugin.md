@@ -1,7 +1,6 @@
 ---
 title: "wechaty Web Panel的plugin诞生"
 author: leo_chen
-date: '2020-05-31 18:03:52 +0800'
 categories: project
 tags:
   - code

@@ -1,7 +1,6 @@
 ---
 title: "团队小助手"
 author: suruozhong
-date: '2020-05-20 12:00:00 +0800'
 categories: project
 tags:
   - wechaty
@@ -19,8 +18,6 @@ image: /assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot0.jpg
 --具有包括linux，Windows，MacOS和 Docker 在内的跨平台支持，基于Node.js
 --让天下没有难开发的机器人
 --说干就干，开始了我的微信机器人之旅
-
-<!--more-->
 
 ## 项目
 

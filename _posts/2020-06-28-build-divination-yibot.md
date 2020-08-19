@@ -1,6 +1,5 @@
 ---
 title: "使用wechaty自助算卦"
-date: 2020-06-28 09:00 +0800
 author: willcup
 categories: project
 tags:
@@ -17,7 +16,6 @@ image: /assets/2020/yibot/1.jpg
 易经本来就是一个工具书，只需要理解并会正当使用就行了，并不难。我就想写个机器人，可以让他们自己去操作，然后也慢慢学会掌握这种东西。
 
 **注意**：非常不推荐占卜！ 个人目前只推崇易理！
-<!--more-->
 
 ## wechaty实现
 

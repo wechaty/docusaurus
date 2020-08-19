@@ -1,12 +1,11 @@
 ---
 title: "Wechaty - the missing bot SDK for WeChat"
-date: 2017-09-10 18:00 +0800
 author: dcsan
 categories: article
 tags:
   - api
   - unofficial
-  - home
+  - news
 image: /assets/2017/dcsan-dashbot.jpg
 ---
 
@@ -21,8 +20,6 @@ If you are determined enough, you can still build chatbots for WeChat but it fee
 So in many ways WeChaty is becoming the missing bot SDK for WeChat, and it's community is the main gathering point for all types of chatbot and NLP discussion in China.
 
 Additionally the core wechaty team make a big effort to use English in their documents and community. So this community is the gateway to China for international chatbot companies too. It's great to get some ideas from [outside of the genepool](http://www.chinadaily.com.cn/business/tech/2017-08/21/content_30913647.htm) too XD
-
-<!--more-->
 
 ## Groups APIs and multiuser chatbots
 

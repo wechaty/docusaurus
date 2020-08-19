@@ -1,6 +1,5 @@
 ---
 title: "Cps demo of wechat bot with wechaty"
-date: 2020-05-13 15:00
 author: shuangjie
 categories: project
 tags:
@@ -12,10 +11,6 @@ image: /assets/2020/cps-bot/qrcode.jpg
 
 > 作者: [shuangjie](https://github.com/shuangjie), a noob developer
 > Code: [Github](https://github.com/shuangjie/cps-bot)
-
-<!-- more -->
-
----
 
 tips: if you try to use wechaty web version, you will be know it can't work, so this post show you how to use ipad version to make bot work, if you never use wechaty any version, this post also pass the web version, because it's pointless
 
@@ -30,13 +25,9 @@ cps-bot just need to automatically pass friend verification, send and receive me
 so let's take a look at [wechaty](https://github.com/wechaty/wechaty) document
 
 1. Automatically pass friend verification
-
-- When someone adds a robot, pass or directly pass after judging the keyword of the verification message
-After verification, automatically reply and introduce the robot function
-
+    When someone adds a robot, pass or directly pass after judging the keyword of the verification message. After verification, automatically reply and introduce the robot function
 1. Reply to product link (JD)
-
-- For example, reply <https://item.m.jd.com/product/100008348572.html?wxa_abtest=o&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL&ad_od=share&utm_user=plusmember>
+    For example, reply <https://item.m.jd.com/product/100008348572.html?wxa_abtest=o&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL&ad_od=share&utm_user=plusmember>
 
 ## before start
 

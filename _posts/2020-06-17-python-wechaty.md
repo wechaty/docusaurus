@@ -1,11 +1,10 @@
 ---
 title: "Python Wechaty Beta Released: A Simple Bot"
-date: 2020-06-17 15:19 +0800
 author: wj-Mcat
 categories: announcement
 tags:
   - python
-  - home
+  - news
   - featured
 image: /assets/2020/python-wechaty/python-wechaty-logo.png
 ---
@@ -16,8 +15,6 @@ image: /assets/2020/python-wechaty/python-wechaty-logo.png
 Python-wechaty能够使用少量代码即可完成一个机器人，使用起来非常简单，基于OOP的设计思路能够很好监听和处理微信内部大量的事件，比如：自动回复消息，定时发送消息，拉人入群，好友申请同意等等。此外，目前的插件系统里面有很多拿来即用的工具，比如拉人入群等。当然开发一个自己的插件也是非常简单，无需很高深的概念，只需要你能够理解事件和OOP即可。
 
 python-wechaty项目源于wechaty，甚至说很大程度上代码是直接从其翻译过来的，然后加上一些python的特性，让其更加pythonic。作为一个IM的入口工具，未来我们也将添加更多的Chatbot元素进去，让其能够成为一个真正的聊天机器人。
-
-<!--more-->
 
 在介绍python-wechaty之前，还是简要介绍一下wechaty。
 
