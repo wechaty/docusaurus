@@ -923,3 +923,12 @@ csjuXYZ:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "hoc0415@foxmail.com"
+
+Sapio-S:
+  name       : "Sapio-S"
+  bio        : "编程练习生。"
+  avatar     : "https://avatars2.githubusercontent.com/u/48854566?s=400&u=65bc99aecdd61bd2cff1da493f65fa7e4fa6193f&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Sapio-S"
