@@ -1,8 +1,9 @@
 # Site
 name: Wechaty
-description: Conversational AI RPA SDK for Chatbot Builders
+description: Conversational SDK for Chatbot Makers
 logo: assets/images/logo.png
 favicon: assets/images/favicon.ico
+url: https://wechaty.js.org
 baseurl:
 disqus: chatie
 email: wechaty@chatie.io
