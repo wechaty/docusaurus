@@ -833,7 +833,7 @@ godkillerxiao:
 
 FINCTIVE:
   name        : "FINCTIVE"
-  bio         : ""
+  bio         : "Bugs love me."
   avatar      : "https://avatars1.githubusercontent.com/u/31786061?s=460"
   links:
     - label: "GitHub"
@@ -841,7 +841,7 @@ FINCTIVE:
       url: "https://github.com/finctive"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://fintive.com"
+      url: "https://finctive.com"
 
 Chs97:
   name        : "Chs97"
