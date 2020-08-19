@@ -1,7 +1,6 @@
 ---
 title: "用 Wechaty 实现微信诗歌搜索机器人（wechat poem robot）"
 author: ray7551
-date: "2020-07-07 04:13:00 +0800"
 categories: project
 tags:
   - wechaty
@@ -9,15 +8,14 @@ tags:
   - wechat-robot
   - regex
   - regex101
-header:
-   teaser: /assets/2020/wechat-poem-robot/chat.png
+  - featured
+image: /assets/2020/wechat-poem-robot/chat.png
 ---
 
-<!-- markdownlint-disable -->
 > 作者: [ray7551](https://github.com/ray7551/)
 
-[![](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
-[![](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
+[![Wechaty Badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
+[![Everything about Wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ## 微信机器人
 
@@ -39,16 +37,16 @@ header:
 
 此时我找到了 `beclass` 的博文 [《基于Nodejs+Wechaty开发微信机器人管理平台》](https://wechaty.github.io/2020/05/31/wxbot/)。发现了 Wechaty 这个项目，支持 iPad 协议，虽然需要付费获取 token，但是可以申请[参与开源激励计划](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty#2%E5%85%8D%E8%B4%B9Token%E5%8F%82%E4%B8%8E%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92)来获取免费甚至长期有效的 token。
 
-<!--more-->
-
 ## 具体实现
+
 ### 基本构架
+
 由于前期尝试各种个人号 API 的方案，已经把搜索诗歌的部分独立出来作为一个服务。这个搜素服务接受查询字符串，返回一个包含结果的 json 字符串。
 
 至于跟微信相关的部分，就全部交给 Wechaty 了，包括接收微信消息，查询到诗歌内容以后发送微信消息。
 
-
 ### 诗歌搜索服务
+
 此部分用 PHP+MySQL 实现。诗歌数据库是从某诗歌博客数据库导入，并且用爬虫抓取相关微信公众号文章信息（机器人可以发送公众号文章链接）。
 
 此部分的难点在于博客数据库的诗歌并没有区分标题、内容、诗作者等字段，需要用正则表达式匹配出各个字段内容。虽然大部分的诗歌是有固定格式的，可以通过特定的 html 标签确定标题、诗作者在整个字符串的位置，但不同时期添加进数据库的诗歌格式有细微的区别。
@@ -63,8 +61,8 @@ Windows 平台下，我用过 RegexBuddy。我发现了一个更好的 Web 平�
 
 ![regex101-debug](/assets/2020/wechat-poem-robot/regex101-debug.png)
 
-
 除了用正则提取诗歌各字段，还需要匹配各种可能句式中的关键词。测试用例如下：
+
 ```php
 public function testGetKeywordStartWithSearch() {
     $this->assertEquals('', getKeyword('搜索'));
@@ -132,7 +130,9 @@ public function testGetKeywordStartWithOther() {
     $this->assertEquals('', getKeyword('有没有谁能告诉我'));
 }
 ```
+
 这个部分也花了不少时间，最终写出来的获取关键词的方法如下：
+
 ```php
 /**
  * @param string $str
@@ -162,10 +162,11 @@ function getKeyword($str, $divide = false) {
         : $keyword;
 }
 ```
+
 中文分词的部分使用了 [jieba-php](https://github.com/fukuball/jieba-php)，效率不是很高，内存占用比较大，但是可以接受。
 
-
 ### 使用 Wechaty 收发消息
+
 在 Wechaty 中，不同的 `Puppet` 对应不同的协议。Wechaty 还有不同语言的 SDK，以及 demo template repository，对开发者非常友好，开发者参与度也很高。
 
 感谢 `beclass` 已经开源了一个成功的案例，我不必从头开始，而是在 [beclass/wxbot](https://github.com/beclass/wxbot) 的基础上改动少量代码。
@@ -173,6 +174,7 @@ function getKeyword($str, $divide = false) {
 `beclass` 的[文章](https://wechaty.github.io/2020/05/31/wxbot/) 已经介绍了 wxbot 项目，下面不再详细解析 wxbot 的代码，只抽取关键部分。
 
 首先需要初始化一个 bot：
+
 ```js
 // create a Wechaty instance as bot
 let bot = new Wechaty({
@@ -182,11 +184,13 @@ let bot = new Wechaty({
   name: 'poem'
 })
 ```
+
 由于申请的是 iPad 协议的 token，这里用到的是 `PuppetPadplus`。
 接着对 bot 绑定各种事件的处理函数，其中 `message` 事件是接收到消息时触发的事件。
+
 ```js
 bot.on('scan', (qrcode) => {
-  // show the qrcode 
+  // show the qrcode
 }).on('login', onLogin)
   .on('message', onMessage(bot))
   .on('friendship', onFriendShip)
@@ -199,6 +203,7 @@ bot.on('scan', (qrcode) => {
 ```
 
 `onMessage` 是写在 `server/roobt/message` 里的
+
 ```js
 async function onMessage(msg) {
   // 忽略来自自己的消息
@@ -214,7 +219,7 @@ async function onMessage(msg) {
         let self = await msg.to()
         self = "@" + self.name()
         let receivedText = text.replace(self, "").trim()
-        
+
         let content = await getPoemReply(receivedText, room.id)
         // 返回消息，并@来自人
         if(content.poem) {
@@ -245,7 +250,7 @@ async function onMessage(msg) {
         return
       }
     }
-    
+
     return
   }
 }
@@ -282,12 +287,12 @@ async function getPoemReply(word, chatRoomId) {
 }
 ```
 
-
-
 ## 上线！
+
 在 production 环境运行，建议使用 PM2 。
 
 使用起来也很简单，新增一个配置文件 `pm2.config.js`
+
 ```js
 module.exports = {
   apps: [{
@@ -299,6 +304,7 @@ module.exports = {
   }]
 }
 ```
+
 然后命令行执行 `pm2 start pm2.config.js`。
 搭配其监控面板服务 PM2+，不仅可以在浏览器中控制任务运行状态，还能查看实时日志：
 
@@ -308,11 +314,12 @@ module.exports = {
 
 ![chat](/assets/2020/wechat-poem-robot/chat.png)
 
-
 ## 结论（~~以及广告~~）
+
 开发阶段我认为比较重要的部分，匹配各种搜索句式中的关键词，花费了很多时间，甚至还想过用 NL2SQL（自然语言转换为SQL） 技术来做。其实在上线以后很少有人用到，大部分人还是习惯于用 搜+关键词 的方式触发机器人搜索。虽然做的过程很开心，但是没有人用还是挺心酸的。
 
 还可以改进或拓展的地方：
+
 1. 用 ElasticSearch 代替 MySQL 的搜索，对诗歌内容进行分词（对于诗歌内容，分词结果做到正确很难），让搜索结果更准确。
 2. 对不同的群，分别设置机器人的功能开关。
 3. 每次的搜索结果应该尽可能不一样。
@@ -323,8 +330,8 @@ module.exports = {
 微信机器人这样常见的需求就应该有简单的做法。在排除各种不靠谱方案以后，我选择了 Wechaty。
 Wechaty 简洁的 API 可以帮助开发者快速地搭建一个微信个人号机器人。没有时间折腾的开发者，就不用花时间尝试其它方案了。
 
-
 ## One More Thing
+
 在此文写作过程中，我一直在想，什么样的技术博文才是好的？讲述各种细节固然是对其它开发者有用的。但软件是一直在变化的，这些有用的细节过不了多久可能就不适用了，反而成为开发者搜索过程中的信息噪音。
 
 Redis 开发者 [Salvatore Sanfilippo](http://invece.org/) 在[这篇文章](http://antirez.com/news/129)中说

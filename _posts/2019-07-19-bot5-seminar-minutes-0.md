@@ -1,14 +1,13 @@
 ---
 title: Chatbot Friday - 碰撞思想，点燃科技
 author: huan
-date: 2019-07-19 19:00 +0800
 categories: event
 tags:
   - bot5
   - talk
   - meetup
-header:
-  teaser: /assets/2019/bot5-seminar-0/group-photo.jpg
+  - news
+image: /assets/2019/bot5-seminar-0/group-photo.jpg
 ---
 
 << 本次活动通知: [腾讯+句子互动=碰撞思想，点燃科技](https://mp.weixin.qq.com/s?__biz=MzU3OTk2MzA1Nw==&mid=2247485197&idx=1&sn=404c319ad11b9e12515d127dfabf7efd) <<
