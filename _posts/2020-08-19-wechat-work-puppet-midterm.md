@@ -10,6 +10,7 @@ tags:
   - Wechat Work
 ---
 
+<!-- markdownlint-disable -->
 > Author: [@Sapio-S](https://github.com/Sapio-S) Learning & practicing.
 > Code: [@code](https://github.com/Sapio-S/wechaty-puppet-official)
 
