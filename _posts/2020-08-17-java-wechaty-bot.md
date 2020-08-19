@@ -52,7 +52,6 @@ image: /assets/2020/smwsk-java-wechaty-bot/home.jpg
 
 ## 待完善功能
 
-* TODO 自动通过好友功能
 * TODO 根据群里的每个人回答对象@响应对应的群友
 
 ## 项目研究血泪史
