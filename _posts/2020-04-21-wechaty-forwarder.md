@@ -1,7 +1,6 @@
 ---
 title: "Wechaty 服务器的最小化实现"
 author: hzzzzzz
-date: '2020-04-16 10:00:00 +0800'
 categories: project
 tags:
   - wechaty
@@ -14,8 +13,6 @@ tags:
 ## 需求
 
 我们每天需要向数百个微信群批量转发信息，目前使用手动操作，需要耗费大量时间和精力，且很容易遗漏、出错。如果有一可自动化、程序化群发消息的工具，则可大大减轻负担，提高效率。
-
-<!--more-->
 
 ## Wechaty 和 Puppet
 

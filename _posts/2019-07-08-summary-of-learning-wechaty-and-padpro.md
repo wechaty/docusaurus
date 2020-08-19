@@ -1,7 +1,6 @@
 ---
 title: "Summary of Learning Wechaty and Padpro"
 author: su-chang
-date: '2019-07-08 16:55:12 +0800'
 categories: tutorial
 tags:
   - code
@@ -11,7 +10,6 @@ tags:
 总结 wechaty 的基础用法；
 介绍 wechaty 与 puppet 及 padpro 模块之间的关系、数据流向、事件监听机制等；
 详细介绍合作开发的本地环境配置。
-<!--more-->
 
 ## 简介
 

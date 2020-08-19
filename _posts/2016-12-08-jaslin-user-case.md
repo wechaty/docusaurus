@@ -1,17 +1,15 @@
 ---
 title: 'Wechaty Case Study - a letter from JasLin'
 author: jaslin
-date: '2016-12-08'
 categories: story
 tags:
   - case
-header:
-  teaser: /assets/2016/jaslin-case-study.jpg
+image: /assets/2016/jaslin-case-study.jpg
 ---
 
 Author: @[JasLin](https://github.com/jaslin/), BotWave CTO, Wechaty Contributor
 
-### Usercase of using wechat robot with Wechaty
+## Usercase of using wechat robot with Wechaty
 
 ![Case Study][jaslin-case]
 
@@ -22,8 +20,6 @@ the attachments are the screenshot of the little system which i using wechaty.
 story about it :
 
 we have a meditation group, people in the group take meditation every day, after meditation they check in with a emotion image in the group, to help  encourage the others or themselves keep meditation every day.
-
-<!--more-->
 
 ![Send][jaslin-send]
 
