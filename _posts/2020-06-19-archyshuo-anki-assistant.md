@@ -1,7 +1,6 @@
 ---
 title: "Archy.sh: a WeChat Assistant That Generates Anki Flashcards for Chinese Learners 吖奇说：一个帮助外国人与海归学习中文的微信助理，可生成Anki卡片"
 author: archy
-date: "2020-06-19 04:20:00 +0800"
 categories: project
 tags:
   - typescript

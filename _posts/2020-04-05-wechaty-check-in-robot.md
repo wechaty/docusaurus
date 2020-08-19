@@ -1,7 +1,6 @@
 ---
 title: "微信打卡机器人"
 author: yeojongki
-date: '2020-04-05 20:37:00 +0800'
 categories: project
 tags:
   - wechaty

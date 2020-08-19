@@ -1,6 +1,5 @@
 ---
 title: "Score Your Face Photo: a ML & Wechaty practice"
-date: 2017-09-18 09:00 +0800
 author: huyingxi
 categories: project
 tags:
@@ -20,8 +19,6 @@ So I build a fun application based on Wechaty, called [wechaty_selfie](https://g
 ![selfie pear](/assets/2017/wechaty-selfie-pear.jpg)
 
 Say goodbye to your choice of difficulty!
-
-<!--more-->
 
 ## Screenshot of the application
 

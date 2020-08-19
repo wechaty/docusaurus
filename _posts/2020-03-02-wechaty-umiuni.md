@@ -1,7 +1,6 @@
 ---
 title: "wechaty 在UMIUNI北美校友圈中的应用"
 author: supercharleszhu
-date: '2020-03-02T09:00:00+0800'
 categories: event
 tags:
   - meetup
@@ -17,8 +16,6 @@ image: /assets/2020/umiuni/icon.png
 * Wechaty 的 技术实现
 * Umiuni+Wechaty 的将来发展
 
-<!--more-->
-
 ![UmiUni]({{ '/assets/2020/umiuni/icon.png' | relative_url }})
 
 ## UmiUni -- 北美留学生自己的校园生活圈子
@@ -28,10 +25,8 @@ UmiUni 旨在连接留学生群体, 相互帮助, 解决留学生群体 在海�
 
 主要提供的服务如下：
 
-* 留学生校园二手闲置买卖,转租房,二手车信
-息等功能,帮助留学生解决部分生活问题
-* 校园攻略:周边生活娱乐,社团活动,生活讯
-息,顺风车等等校内论坛内容
+* 留学生校园二手闲置买卖,转租房,二手车信息等功能,帮助留学生解决部分生活问题
+* 校园攻略:周边生活娱乐,社团活动,生活讯息,顺风车等等校内论坛内容
 
 ### 目标用户：
 
@@ -149,10 +144,8 @@ async function putInRoom (contact: Contact, room: Room) {
 ### 基础features
 
 * 群目录: 以分地区划分，先建立校友群 南京:， 香槟: 硅谷:, Maryland:, 群的分法，【校友群，同城群】，类目找工作，内推*，跳槽*，二手，租房*，身份*。
-
 * 自动通过加好友验证，并且发送群目录。
 * Make post call到python AI的项目。 advanced做法：apache thrift, google protobuff。简单做法：post call。
-。
 
 ### Security features
 
@@ -165,7 +158,6 @@ async function putInRoom (contact: Contact, room: Room) {
 1. mysql数据库，记录用户session，wechat id，上传的学校证明。 为之后ai，data science发展铺路。
 2. Implement管理员，可以对机器人发出不同指令，可以剔除广告等。（implementation method，管理员群。）
 3. Save广告图片，文字，分析识别特征。(AI) 1）BlackList 广告号wechatID; 2) 文字关键词blacklist
-4. nodjs chatbot grpc call python service, send chat message to a python for model processing
-Service crash, session logout -> send a notification to 管理员群。
+4. nodjs chatbot grpc call python service, send chat message to a python for model processing. Service crash, session logout -> send a notification to 管理员群。
 5. 校友问答。校友在群中，或者私聊中提问 (e.g. 有没有二手自行车?），1)先搜索[北美校内网](https://umiuni.com)数据库找匹配 2)搜索网络；有match后查看score。
 6. 工友问答。Package details, Layoff news, etc.

@@ -1,13 +1,12 @@
 ---
 title: "Wonderful Wechaty devops toolset"
-date: 2020-06-20 09:00 +0800
 author: windmemory
 categories: announcement
 tags: 
   - devops
   - tool
   - talk
-  - home
+  - news
   - featured
 image: /assets/2020/wonderful-wechaty-devops-tools/teaser-image.png
 ---
@@ -16,8 +15,6 @@ image: /assets/2020/wonderful-wechaty-devops-tools/teaser-image.png
 > Code: [@chatie/semver](https://github.com/chatie/semver), [@chatie/git-scripts](https://github.com/chatie/git-scripts), [@chatie/tsconfig](https://github.com/chatie/tsconfig), [@chatie/eslint-config](https://github.com/chatie/eslint-config)
 
 Wechaty 的代码质量，是大家公认的比较高的水准。而在整个项目的搭建和发展的过程中，DevOps 工具是 Wechaty 代码质量的重要保证，这里，就和大家一起聊聊关于 Wechaty DevOps Toolset。
-
-<!--more-->
 
 ## Wechaty DevOps family
 

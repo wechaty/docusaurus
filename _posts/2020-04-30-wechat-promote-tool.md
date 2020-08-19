@@ -1,6 +1,5 @@
 ---
 title: "如何用Wechaty打造一个推广机器人"
-date: 2020-04-30 10:00 +0800
 author: legendaryjesse
 tags:
    - wechaty
@@ -46,10 +45,9 @@ image:  /assets/2020/promote-bot/banner.png
 ## 测试效果
 
 * 机器人相关操作
-![INVITE](/assets/2020/promote-bot/result.jpg)
-
+    ![INVITE](/assets/2020/promote-bot/result.jpg)
 * 测试发送效果
-![INVITE](/assets/2020/promote-bot/result1.png)
+    ![INVITE](/assets/2020/promote-bot/result1.png)
 
 ## 后续计划
 
