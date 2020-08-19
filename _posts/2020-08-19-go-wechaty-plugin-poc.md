@@ -85,4 +85,3 @@ go-wechaty 是 Go 语言实现 wechaty 的项目，同样支持多协议接入�
 
 - 项目链接：[wechaty/go-wechaty](https://github.com/wechaty/go-wechaty)
 - 联系方式：finctive@foxmail.com
-- 
