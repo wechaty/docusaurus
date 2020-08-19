@@ -13,10 +13,11 @@ image: /assets/2020/go-wechaty-plugin-soc/go-wechaty.png
 > 作者: [FINCTIVE](https://github.com/finctive)
 
 ## 暑期2020
+
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。
-官网：https://isrc.iscas.ac.cn/summer2020 官方新闻：http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html
+官网：[https://isrc.iscas.ac.cn/summer2020](https://isrc.iscas.ac.cn/summer2020) 官方新闻：[http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html](http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html)
 本项目 [为 go-wechaty 设计实现插件体系] 系 暑期2020 支持的开源项目。
 
 ## [为 go-wechaty 设计实现插件体系]信息
@@ -35,6 +36,7 @@ wechaty 是一个款支持多协议的微信接入方案，随着社区多语言
 ```go
 bot.Use(DingDong{})
 ```
+
 go-wechaty 是 Go 语言实现 wechaty 的项目，同样支持多协议接入；同时借助 gorountine 和 channel 的语言特性，实现了更加合理的封装和设计。
 
 ### 时间规划
@@ -57,7 +59,6 @@ go-wechaty 是 Go 语言实现 wechaty 的项目，同样支持多协议接入�
 
 - 插件机制开发分支 [FINCTIVE/go-wechaty](https://github.com/FINCTIVE/go-wechaty/tree/plugin)
 - 插件示例代码仓库 [FINCTIVE/wechaty-demo-plugin](https://github.com/FINCTIVE/wechaty-demo-plugin)
-
 
 ### 已完成工作
 
@@ -84,3 +85,4 @@ go-wechaty 是 Go 语言实现 wechaty 的项目，同样支持多协议接入�
 
 - 项目链接：[wechaty/go-wechaty](https://github.com/wechaty/go-wechaty)
 - 联系方式：finctive@foxmail.com
+- 
