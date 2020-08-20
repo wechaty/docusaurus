@@ -12,3 +12,4 @@ package-lock.json
 
 .idea
 .DS_Store
+./_data/authors.yml
