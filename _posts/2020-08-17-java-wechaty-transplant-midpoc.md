@@ -103,8 +103,6 @@
 youtube地址为：<https://www.youtube.com/watch?v=ipRq3kT32wI>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ipRq3kT32wI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-
 ## 联系我们
 
 - 项目链接：<https://github.com/cunkoulaocai/java-wechaty>
