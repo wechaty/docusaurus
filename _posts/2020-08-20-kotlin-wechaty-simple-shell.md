@@ -15,7 +15,7 @@ image: /assets/2020/kotlin-wechaty-simple-shell/example.png
 
 ## 准备工作（创建自己的wechaty-hostie-token）
 
-假设我们首先获得的是padplus的token。
+假设我们目前拥有的是padplus的token。
 因为java-wechaty需要的是hostie的，所以这就需要先做一下转换。
 
 然后执行以下命令
