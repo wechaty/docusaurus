@@ -11,5 +11,5 @@ Zhihu: <https://www.zhihu.com/people/wangjini521>
 
 ## Contact me
 
--  GitHub：<https://github.com/yinizhilian>
--  微信：AINLPER-BOT
+- GitHub：<https://github.com/yinizhilian>
+- 微信：AINLPER-BOT
