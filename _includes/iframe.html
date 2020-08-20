@@ -11,7 +11,7 @@
 ">
   <iframe
     {% if include.src | slice: -4, -1 == '.pdf' %}
-    {% assign include.src = '/assets/js/viewer-js/#'| concat include.src %}
+    {% assign include.src = '/assets/js/viewer-js/#' | append: include.src %}
     {% endif %}
     src='{{ include.src }}'
     allowfullscreen
