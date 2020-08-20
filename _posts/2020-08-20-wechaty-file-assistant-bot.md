@@ -30,7 +30,7 @@ image:/assets/2020/file-assistant-bot/file-assistant-bot-img.png
 3、偶然间在github上看到了[wechaty框架](https://github.com/wechaty/wechaty)
 对这个简单上手，实用性高的框架爱不释手，于是决定立即开展。但是有发现，iPad 协议，虽然需要付费获取 token，但是可以申请[参与开源激励计划](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty#2%E5%85%8D%E8%B4%B9Token%E5%8F%82%E4%B8%8E%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92)来获取免费甚至长期有效的 token。
 
-## 使用Wechaty收发消息
+## 使用wechaty收发消息
 
 在 Wechaty 中，不同的 `Puppet` 对应不同的协议。Wechaty 还有不同语言的 SDK，以及 demo template repository，对开发者非常友好，开发者参与度也很高。
 
@@ -176,5 +176,4 @@ async function goFile(that, room, msg) {
 Wechaty 简洁的 API 可以帮助开发者快速地搭建一个微信个人号机器人。没有时间折腾的开发者，就不用花时间尝试其它方案了。
 
 ## 最后
-
 Wechaty的功能非常强大，我只用了一角。后续将扩充更多功能应用。
