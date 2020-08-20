@@ -2,6 +2,8 @@
 title: "暑期2020[基于 RPA 封装 Wechaty 接口下的快手聊天机器人]计划书"
 author: bikaiqiao
 categories：project
+tags:
+  - kuaishou
 ---
 
 > Author:[@bikaiqiao](https://github.com/bikaiqiao)
