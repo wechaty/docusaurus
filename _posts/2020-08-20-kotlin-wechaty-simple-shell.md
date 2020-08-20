@@ -14,6 +14,7 @@ image: /assets/2020/kotlin-wechaty-simple-shell/example.png
 > 这个项目是基于SpringBoot和SpringMVC的，语言是kotlin，构建工具是maven。
 
 ## 准备工作（创建自己的wechaty-hostie-token）
+
 假设我们首先拥有的是padplus的token。
 因为java-wechaty需要的是hostie的，所以这就需要先做一下转换。
 
@@ -43,6 +44,7 @@ docker run -d\
 经过这一番操作，你的padplus token就可以当成hostie来用了。一开始看官方文档并没有找到，搞了很久才发现在issue里面有提到这个用法，所以在这里写出来方便后面的人。同理，python和go的版本也是这么弄。
 
 ## 核心代码
+
 因为用了SpringBoot，所以比较好的办法是把它交给Spring管理，构造成一个Bean。
 
 ```java
@@ -116,17 +118,18 @@ object CommandUtil {
 }
 ```
 
-
 ## 额外的事情
+
 添加了Server酱的接口，在微信掉线以后会通过微信公众号发送二维码url，登录成功以后也会有通知。
 
-
-
 ## 部署
-#### 1. 自行编译
+
+### 1. 自行编译
+
 ```java
 git clone https://github.com/suninsky/wechat-bot.git
 ```
+
 修改application.properties参数
 
 ```java
@@ -134,17 +137,19 @@ server.port=8090
 wechat-bot.token=YOUR_TOKEN
 server-chan.token=YOUR_TOKEN
 ```
+
 第一个是运行端口，可默认。
 第二个是wechaty-hostie的token，必选。
 第三个是server-chan的token，可选。
 
-#### 2.  直接使用target中的jar包
+### 2.  直接使用target中的jar包
 
 ```java
 java -jar wechat-bot-1.0.jar --wechat-bot.token=YOUR_TOKEN  --server-chan.token=YOUR_TOKEN
 ```
 
 ## 使用
+
 扫码登录机器人以后，即可。群聊和私聊都可以操控shell，所以机器人需要谨慎加好友和群。考虑到安全问题，目前只能操作wechat-bot-1.0.jar所在的目录。以及，不支持交互式的命令。如果不小心输入了交互式的命令，将在5秒后返回。
 
 ## 例子
