@@ -7,9 +7,11 @@ author: przzl
 categories: project
 
 tags:
+
 - wechaty
 - nodejs
 - wechaty-puppet-padplus
+
 image:/assets/2020/file-assistant-bot/file-assistant-bot-img.png
 ---
 
@@ -39,6 +41,7 @@ github上已经开源了非常多成功的案例，具体细节就不在详述�
 老实说，install Wechaty我还是花了一些时间的，老是npm错误。后面发现是vs_BuildTools安装不上，原来是已经有了底版本的。需要先卸载。好在后面处理好了，不然就卡住了。
 
 2、初始化bot，绑定事件函数，这里只需要onScan和onMessage两个事件就行
+
 ```js
 // create a Wechaty instance as bot
 const puppet = new PuppetPadplus({
@@ -71,7 +74,9 @@ async function onScan(qrcode, status) {
     console.log(qrImgUrl)
 }
 ```
+
 3、onMessage事件
+
 ```js
 async function onMessage(msg) {
     const room = msg.room(); // 是否为群消息
