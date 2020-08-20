@@ -53,8 +53,6 @@ tags:
   - 继续改善和封装autojs的代码，美化和规范代码
   - 开发puppet，将现有socket客户端移植到puppet，接入wechaty完成一个dingdongbot
   
- 
-  
   PPT:
   <iframe src="https://youtu.be/zDIPzGztn_E" width="560" height="315" frameborder="0" allowfullscreen="" style=" position: absolute; top:0; left:0; width:100%; height:100%; "></iframe>
   
