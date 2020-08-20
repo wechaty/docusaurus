@@ -817,8 +817,6 @@ leijiahang:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/leijiahang"
 
-
-
 zzhoouxin:
   name        : "zzhoouxin"
   bio         : "A boy who loves to play"
@@ -973,16 +971,3 @@ csjuXYZ:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "hoc0415@foxmail.com"
-
-yinizhilian:
-  name        : "AINLPer"
-  bio         : "a little coder"
-  avatar      : "https://avatars1.githubusercontent.com/yinizhilian"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/yinizhilian"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:419516477@qq.com"
-

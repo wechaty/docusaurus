@@ -4,7 +4,7 @@ author: yinizhilian
 date: 2020-08-20 23:00 +0800
 categories: project
 header:
-  teasser: /assets/2020/kuakua.png
+  teasser: /assets/2020/kuakua-wechaty/titleimage.png
 ---
 
 > Author:&ensp;[yinizhilian](https://github.com/yinizhilian/kuakua_wechaty)
