@@ -2,7 +2,7 @@
 name: Sapio-S
 site: https://github.com/https://github.com/Sapio-S
 bio: 持续探索新世界。
-avatar: /assets/developers/cavon-cheng/avatar.jpg
+avatar: /assets/developers/Sapio-S/avatar.jpg
 email: 1205402283@qq.com
 twitter: None
 ---
