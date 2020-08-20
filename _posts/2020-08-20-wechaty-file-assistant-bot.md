@@ -10,7 +10,7 @@ tags:
   - wechaty
   - nodejs
   - wechaty-puppet-padplus 
-image:/assets/2020/archyshuo-anki-assistant/archybots.jpg
+image:/assets/2020/file-assistant-bot/file-assistant-bot-img.png
 ---
 
 
