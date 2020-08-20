@@ -91,7 +91,7 @@ image: /assets/2020/wechaty-words-per-day-plugin-mid-term/header.png
 
 ### PPT展示视频
 
-{% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1vT4y157x5" type="bilibili" %}
+{% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1vT4y157x5" %}
 
 ### PPT
 
@@ -99,4 +99,4 @@ image: /assets/2020/wechaty-words-per-day-plugin-mid-term/header.png
 
 ### Live Code视频
 
-{% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1ih411d75h" type="bilibili" %}
+{% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1ih411d75h" %}
