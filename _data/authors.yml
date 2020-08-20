@@ -923,3 +923,12 @@ csjuXYZ:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "hoc0415@foxmail.com"
+
+Suninsky:
+  name       : "Suninsky"
+  bio        : "just for fun"
+  avatar     : "https://avatars0.githubusercontent.com/u/11813280?s=460&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/suninsky"
