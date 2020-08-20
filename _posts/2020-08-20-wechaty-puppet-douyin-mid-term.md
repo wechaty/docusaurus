@@ -8,7 +8,7 @@ tags:
 ---
 
 > Author: [@gavinwang23](https://github.com/gavinwang23)
-> Code: [@gavinwang23/douyin-autojs](https://github.com/gavinwang23/douyin-autojs)
+> Code: [@gavinwang23/douyin-autojs](https://github.com/gavinwang23/douyin-autojs)[@gavinwang23/wechaty-puppet-douyin](https://github.com/gavinwang23/wechaty-puppet-douyin)
 
 ## 暑期2020
 
@@ -40,18 +40,22 @@ tags:
     - autojs控制安卓app的方法，现在正在采用，也是现在唯一可运行的方法，目前完成了抖音基本操作方法的封装和socket的通信
   - 抖音的autojs控制版本完成了自动登录，消息监听，发送消息等方法
   - 用socket和autojs的方法跑了一个简易dingdongbot，[视频演示地址](https://youtu.be/TY4hn9TIWlA)（youtube）
+  - puppet开发中，初步成型
 - 遇到的问题及解决方案：
   - 遇到问题
     - 抖音的app控件id命名很随机，为三位随机的字母和数字，不同版本的控件名称不一样
     - 首次抖音登录还需要图片验证，这个暂时没想到方法，只能人工验证，第二次登录就可以自动化了
     - 监听消息的问题，只能打开消息窗口才能获取到消息，这样多人发送多条消息时只能读取一个人
+    - eslist语法检查经常报错
   - 解决方案
     - 使用统一版本的抖音app
     - 首次登录手动登录一下
     - 退出消息窗口时继续查找未读消息，并且通过通过未读消息上带数字的小圆点判断有n条未读消息，打开未读消息的窗口，遍历屏幕上的消息框，将倒数n条消息存入数组，传到客户端
+    - 按照语法格式来
 - 后续工作安排：
   - 继续改善和封装autojs的代码，美化和规范代码
-  - 开发puppet，将现有socket客户端移植到puppet，接入wechaty完成一个dingdongbot
+  - 继续开发puppet，将现有socket客户端移植到puppet，接入wechaty完成一个dingdongbot
+  - 探索puppet更多的功能，实现底层autojs
   
   PPT:
   <iframe src="https://youtu.be/zDIPzGztn_E" width="560" height="315" frameborder="0" allowfullscreen="" style=" position: absolute; top:0; left:0; width:100%; height:100%; "></iframe>
