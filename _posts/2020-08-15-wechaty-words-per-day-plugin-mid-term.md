@@ -95,7 +95,7 @@ image: /assets/2020/wechaty-words-per-day-plugin-mid-term/header.png
 
 ### PPT
 
-{% include iframe.html src="/assets/js/viewer-js/#/assets/2020/wechaty-words-per-day-plugin-mid-term/presentation.pdf" %}
+{% include iframe.html src="/assets/2020/wechaty-words-per-day-plugin-mid-term/presentation.pdf" %}
 
 ### Live Code视频
 
