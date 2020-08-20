@@ -2,6 +2,7 @@
 title: "暑期2020[基于 RPA 封装 Wechaty 接口下的快手聊天机器人]中期报告"
 author: bikaiqiao
 categories: project
+image: /assets/2020/wechaty-puppet-kuaishou/wechaty-puppet-kuaishou-logo.jpg
 tags:
   - kuaishou
 ---
@@ -18,20 +19,22 @@ tags:
 
 ## [基于 RPA 封装 Wechaty 接口下的快手聊天机器人]中期报告
 
-## 项目信息
-
-- 项目名称：基于 RPA 封装 Wechaty 接口下的快手聊天机器人 
-- 方案描述：服务器端架设虚拟机，通过auto.js操作虚拟机内部的快手。类似于通过puppeteer操作微信网页版，但是被迫增加了通信。
-- 时间规划：7.19-8.15完成主要方案的探索8.15-9.30完成dingdong-bot完善接口
-
 ## 项目进度
 
-- 已完成工作：
-  <br>探索了三种方案：
-  - 原计划的在chorme上运行puppeteer操作快手停止，chrome不能运行快手app且web版没有私信功能
-  - 通过抓包工具截获私信消息的暂时被搁浅，两个抓包工具都不能很好的拦截快手的私信消息。
-  - 确定通过auto.js操控虚拟机的快手app为主要方案，已经完成puppet-kuaiShou的大部分前置工作。
-  - 产出一个能运行一次dingdong-bot的puppet
+ - 已完成：
+   - 探索方向
+     - 7.19-7.27
+     - 主要探索之前预想的方向
+   - auto.js init
+     - 7.27-8.03
+     - 完成了以auto.js作为服务端的初始化结构
+   - 为auto.js增加通信，完善封装代码
+     - 8.03-8.09
+     - 增加了客户端通信，使得在虚拟机上可以完成通过客户端控制的收发消息
+     - 并且重新封装了原来分散的脚本为一个class
+   - 构建puppet
+     - 构建puppet的初版，虽然还存在一些bug但是可以完成dingdong消息的收发
+ - 遇到的问题及解决方案
 - 遇到的问题及解决方案：
   - auto.js碰到的问题：
     - 快手的密码组件不能够被直接设置密码
@@ -43,62 +46,22 @@ tags:
     - 由于readLine()读取数据时没有换行符就会陷入阻塞状态。每次发送的字符串结尾加上\r\n即可
     - 设置死循环让readLine进入阻塞状态监听客户端发送的信息
     - 通过循环findOne(1000)以达到每隔1s重新在当前页面查找新消息提醒。
-- 后续工作安排：
-  - 重心调整到完善auto.js在虚拟机上的服务端代码完善度，把已经完成的dingdong-bot移植到puppet上，并且在完善服务端代码的基础上继续完善puppet代码。<br>
+ - 后续工作安排
+   - 8.16-8.23修正消息监听
+   - 8.23-8.30修正eslint错误
+   - 在完善服务端代码的基础上继续完善puppet代码
+   - 其他
 
 # Wechaty Demo Day 视频 #
+
 ## PPT展示 ##
 
-<div class="zoom-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <video
-    controls
-    width="560"
-    height="315"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    "
-  >
-    <source
-      src='https://www.bilibili.com/video/BV1vi4y1g7L2/'
-      type="video/mp4"
-    />Your browser does not support the video tag.
-  </video>
-</div>
+<iframe src="//player.bilibili.com/player.html?aid=541808800&bvid=BV1vi4y1g7L2&cid=226344300&page=1"  width="560" height="315" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<br>
 
 ## Live Code视频 ##
 
-<div class="zoom-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <video
-    controls
-    width="560"
-    height="315"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    "
-  >
-    <source
-      src='https://www.bilibili.com/video/BV1ei4y1g7og/'
-      type="video/mp4"
-    />Your browser does not support the video tag.
-  </video>
-</div>
+<br>
+
+<iframe src="//player.bilibili.com/player.html?aid=541809823&bvid=BV1ei4y1g7og&cid=226344965&page=1" width="560" height="315" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
