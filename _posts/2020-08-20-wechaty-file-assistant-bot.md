@@ -1,8 +1,11 @@
 
 ---
-title: "基于wechaty-puppet-padplus的微信文件传输助手" 
-author: przzl 
+title: "基于wechaty-puppet-padplus的微信文件传输助手"
+
+author: przzl
+
 categories: project 
+
 tags:
   - wechaty
   - nodejs
@@ -169,23 +172,18 @@ async function goFile(that, room, msg) {
 
 ## 实现功能
 1、在群中直接发送一个文件，机器人将文件自动上传至业务系统。
+
 2、在群中@机器人并发送gogogo，机器人将从业务系统下载文件并发送到群中。
 
-##应用场景
+## 应用场景
 公司业务文件系统与微信没有任何接口，但文件需要多人来编写，目前大部分是通过个人编写发到微信中，然后汇总统一上传到业务系统。涉及到多轮迭代时，就非常麻烦。
+
 
 微信机器人这样常见的需求就应该有简单的做法。在排除各种不靠谱方案以后，我选择了 Wechaty。
 Wechaty 简洁的 API 可以帮助开发者快速地搭建一个微信个人号机器人。没有时间折腾的开发者，就不用花时间尝试其它方案了。
 
-## One More Thing
+## 最后
 
-在此文写作过程中，我一直在想，什么样的技术博文才是好的？讲述各种细节固然是对其它开发者有用的。但软件是一直在变化的，这些有用的细节过不了多久可能就不适用了，反而成为开发者搜索过程中的信息噪音。
-
-Redis 开发者 [Salvatore Sanfilippo](http://invece.org/) 在[这篇文章](http://antirez.com/news/129)中说
-> Sometimes I believe that software, while great, will never be huge like writing a book that will survive for centuries. Note because it is not as great per-se, but because as a side effect it is also useful… and will be replaced when something more useful is around.
-
-在我看来，好的技术博文不应只有细节，还要有对细节的思考，对开发过程本身的观察，试图提炼出让开发过程更顺畅的经验。这些经验，甚至可以拓展到其它日常事务的处理过程中去。
-
-互联网每天产生和复制那么多技术博文，能有多少是可以在多年之后仍然给人启发的呢？
+Wechaty的功能非常强大，我只用了一角。后续将扩充更多功能应用。
 
 
