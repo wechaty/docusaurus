@@ -1,26 +1,16 @@
 <div style="
     position: relative;
-    {% if include.type == "bilibili" %}
-    padding-bottom: 70%;
-    {% else %}
-    padding-bottom: 56.25%;
+    {% assign ratio = '56.25%' %}
+    {% if include.src contains 'player.bilibili.com' %}
+    {% assign ratio = '70%' %}
     {% endif %}
+    padding-bottom: {{ ratio }};
     padding-top:30px;
     height:0;
     overflow:hidden;
 ">
   <iframe
-    width='560'
-    height='315'
-    {% if include.type == "youtube" %}
-    src='https://www.youtube.com/embed/{{ include.src }}'
-    {% elsif include.type == "bilibili" %}
-    src='https:////player.bilibili.com/player.html?bvid={{ include.src }}'
-    {% elsif include.type == "pdf" %}
-    src='/assets/js/viewer-js/#{{ include.src }}'
-    {% else %}
     src='{{ include.src }}'
-    {% endif %}
     allowfullscreen
     webkitallowfullscreen
     frameborder="0"

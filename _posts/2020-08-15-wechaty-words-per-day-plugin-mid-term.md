@@ -91,12 +91,12 @@ image: /assets/2020/wechaty-words-per-day-plugin-mid-term/header.png
 
 ### PPT展示视频
 
-{% include iframe.html src="BV1vT4y157x5" type="bilibili" %}
+{% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1vT4y157x5" type="bilibili" %}
 
 ### PPT
 
-{% include iframe.html src="/assets/2020/wechaty-words-per-day-plugin-mid-term/presentation.pdf" type="pdf" %}
+{% include iframe.html src="/assets/js/viewer-js/#/assets/2020/wechaty-words-per-day-plugin-mid-term/presentation.pdf" %}
 
 ### Live Code视频
 
-{% include iframe.html src="BV1ih411d75h" type="bilibili" %}
+{% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1ih411d75h" type="bilibili" %}
