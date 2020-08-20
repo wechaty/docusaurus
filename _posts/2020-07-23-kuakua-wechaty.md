@@ -1,10 +1,11 @@
 ---
 title: "基于Wechaty的夸夸机器人"
 author: yinizhilian
-date: 2020-08-20 23:00 +0800
 categories: project
-header:
-  teasser: /assets/2020/kuakua-wechaty/titleimage.png
+tags:
+  - wechaty
+  - wechaty-puppet-padplus
+image: /assets/2020/kuakua-wechaty/titleimage.png
 ---
 
 > Author:&ensp;[yinizhilian](https://github.com/yinizhilian/kuakua_wechaty)
