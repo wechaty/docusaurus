@@ -14,4 +14,3 @@ Committer of Go Wechaty.
 - Github: <https://github.com/dchaofei>
 - Email：<dchaofei@163.com>
 - Website: <>
-  
