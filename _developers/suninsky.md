@@ -7,7 +7,7 @@ email: suninsky@foxmail.com
 twitter: 
 ---
 
-A boy who loves to play
+He like coding and singing.
 
 ## Contact me
 
