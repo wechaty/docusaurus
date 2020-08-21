@@ -1,18 +1,16 @@
 ---
 title: "暑期2020 [编写一个“每日一句”插件] 计划书"
 author: univerone
-date: "2020-07-18 22:10:00 +0800"
 categories: project
 tags:
   - wechaty
   - plugins
-header:
-   teaser: /assets/2020/wechaty-words-per-day-plugin-plan/header.png
+image: /assets/2020/wechaty-words-per-day-plugin-plan/header.jpg
 ---
 
 > 作者: [univerone](https://github.com/univerone/)
 > Code: [Github](https://github.com/univerone/WordsPerDay)
-<!--more-->
+
 ## 暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。

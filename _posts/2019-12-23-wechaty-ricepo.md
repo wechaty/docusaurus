@@ -1,12 +1,10 @@
 ---
 title: "RICEPO北美地道中餐外卖"
 author: RICEPO LLC
-date: '2019-12-24T09:00:00+0800'
 categories: event
 tags:
   - meetup
-header:
-  teaser: /assets/2019/wechaty-ricepo/logo.png
+image: /assets/2019/wechaty-ricepo/logo.png
 ---
 
 > 作者: [RICEPO LLC](https://github.com/ricepo)
@@ -17,8 +15,6 @@ header:
 * Wechaty在RICEPO的应用
 * Wechaty+SQS整体架构
 * Wechaty使用遇到问题以及解决方案
-
-<!--more-->
 
 ![RICEPO]({{ '/assets/2019/wechaty-ricepo/ricepo.png' | relative_url }})
 

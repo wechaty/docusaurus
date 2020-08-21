@@ -1,12 +1,11 @@
 ---
 title: Wechaty New Version 0.9.0 Released
-date: '2017-10-04 10:0:0 +0800'
 author: huan
 categories: announcement
 tags:
   - release
-header:
-  teaser: /assets/2017/huan-wechaty-new-version-0.9.0.png
+  - news
+image: /assets/2017/huan-wechaty-new-version-0.9.0.png
 ---
 > Author: [@huan](https://github.com/huan) Angel Investor, Full Stack Developer, Paragiding Pilot, Author of Wechaty.
 
@@ -17,9 +16,7 @@ The Wechaty has been updated to version 0.9.0 today. This release contains a num
 If you find new issues, please let us know by visiting our Github issue page and filing a bug.
 
 Huan LI  
-Chatie/Wechaty
-
-<!--more-->
+Creator of Wechaty
 
 ## Change Log
 
