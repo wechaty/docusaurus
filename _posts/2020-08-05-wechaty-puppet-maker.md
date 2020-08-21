@@ -6,6 +6,7 @@ tags:
   - wechaty
   - puppet
   - news
+  - sticky
   - workshop
 image: /assets/2020/wechaty-puppet-maker/puppet.png
 ---
