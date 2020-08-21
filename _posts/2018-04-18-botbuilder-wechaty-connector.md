@@ -1,11 +1,10 @@
 ---
 title: "Integrate Wechat Personal Account to Microsoft BotFramework with a BotBuilder Wechaty Connector"
 author: huan
-date: '2018-04-18 02:14:52 +0800'
 categories: npm
 tags:
   - botbuilder
-  - home
+  - featured
 image: /assets/2018/botframework.jpg
 ---
 
@@ -17,9 +16,7 @@ image: /assets/2018/botframework.jpg
 
 However, it does not support Wechat **Individual** Account, so I decided to make some fun on it: connect Wechat PERSONAL Account to the BotBuilder by creating a new Connector: [botbuilder-wechaty-connector](https://github.com/huan/botbuilder-wechaty-connector).
 
-<!--more-->
-
-### Update
+## Update
 
 - Jan 14, 2019: The [botbuilder-wechaty-adapter](https://npmjs.com/package/botbuilder-wechaty-adapter) realeased for Bot Builder V4 support.
 - Apr 18, 2018: The [botbuilder-wechaty-connecter](https://npmjs.com/package/botbuilder-wechaty-connector) realeased for Bot Builder V3 support.)
@@ -78,7 +75,7 @@ wechatyConnector.listen()
 
 Hope you will like it and could make fun of it too, cheers!
 
-### See Also
+## See Also
 
 - GitHub: <https://github.com/huan/botbuilder-wechaty-connector>
 - NPM: <https://www.npmjs.com/package/botbuilder-wechaty-connector>

@@ -1,12 +1,10 @@
 ---
 title: "使用Wechaty助力金融营销实践"
-date: 2020-03-30 20:00 +0800
 author: lemonsx
 categories: tutorial
 tags:
   - wechaty
   - financial
-  - home
 image: /assets/2020/financial-marketing/2020-03-30-wechaty-bond-bot.png
 ---
 

@@ -1,15 +1,14 @@
 ---
 title: '用Chatie实现微信机器人商业逻辑之【好室友】群管理篇'
 author: xinbenlv
-date: '2017-04-16 14:42:53 +0800'
 categories: project
 tags:
   - code
   - startup
-  - home
+  - featured
 ---
 
-![avatar]("https://avatars0.githubusercontent.com/u/640325?v=3&s=88)
+![avatar](https://avatars0.githubusercontent.com/u/640325?v=3&s=88)
 
 作者: [@xinbenlv](https://github.com/xinbenlv), Google, [Chatie Contributor](https://github.com/orgs/Chatie/teams/contributor)
 
@@ -35,8 +34,6 @@ tags:
 
 在得知Chatie之后，我们立即使用Chatie的接口开发了机器人来进行群的管理工作，
 大大简化了管理员志愿者们的工作流程和负担。我们这里介绍一下我们的业务逻辑模块。
-
-<!--more-->
 
 ## 逻辑模块
 

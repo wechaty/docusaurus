@@ -1,7 +1,6 @@
 ---
 title: "无水印下载短视频机器人"
 author: remainsu
-date: '2020-06-03 16:21:00 +0800'
 categories: project
 tags:
   - nodejs
@@ -9,7 +8,6 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
   - nuxt
-  - home
 image: /assets/2020/mqbot/qrcode.png 
 ---
 

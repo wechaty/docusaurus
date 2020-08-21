@@ -1,11 +1,10 @@
 ---
 title: "三步教你用Node做一个微信脱单神器，小白可上手"
 author: leo_chen
-date: '2019-06-20 17:40:52 +0800'
 categories: project
 tags:
   - code
-  - home
+  - featured
 image: /assets/2019/everyday-header.png
 ---
 
@@ -13,7 +12,6 @@ image: /assets/2019/everyday-header.png
 
 ![image](/assets/2019/everyday-header.png)
 三步教你用Node做一个微信脱单神器，小白可上手！也可以用来哄女友，哄女(男\基)友我们程序猿(媛)是认真的
-<!--more-->
 
 ## 前言
 
@@ -150,35 +148,26 @@ module.exports = {
 * 也可添加小助手微信后，发送`'加群'`进入微信每日说技术交流群
 
 1. 我的微信号无法登陆
-
-从2017年6月下旬开始，使用基于web版微信接入方案存在大概率的被限制登陆的可能性。 主要表现为：无法登陆Web 微信，但不影响手机等其他平台。 验证是否被限制登陆： <https://wx.qq.com> 上扫码查看是否能登陆，不能登录的话，那你可能就无法用这个工具了。 更多内容详见：
-
-[Can not login with error message: 当前登录环境异常。为了你的帐号安全，暂时不能登录web微信。](https://github.com/wechaty/wechaty/issues/603)
-
-[[谣言] 微信将会关闭网页版本](https://github.com/wechaty/wechaty/issues/990)
-
-[新注册的微信号无法登陆](https://github.com/wechaty/wechaty/issues/872)
-
+    1. 从2017年6月下旬开始，使用基于web版微信接入方案存在大概率的被限制登陆的可能性。 主要表现为：无法登陆Web 微信，但不影响手机等其他平台。 验证是否被限制登陆： <https://wx.qq.com> 上扫码查看是否能登陆，不能登录的话，那你可能就无法用这个工具了。 更多内容详见：
+    1. [Can not login with error message: 当前登录环境异常。为了你的帐号安全，暂时不能登录web微信。](https://github.com/wechaty/wechaty/issues/603)
+    1. [[谣言] 微信将会关闭网页版本](https://github.com/wechaty/wechaty/issues/990)
+    1. [新注册的微信号无法登陆](https://github.com/wechaty/wechaty/issues/872)
 1. 执行npm run start时无法安装puppet-puppeteer&&Chromium
+1. Centos7下部署出现以下问题
+    ![image](/assets/2019/everyday-15.png)
+    问题原因:[https://segmentfault.com/a/1190000011382062](https://segmentfault.com/a/1190000011382062)
+    解决方案:
 
-* Centos7下部署出现以下问题
-![image](/assets/2019/everyday-15.png)
+    ```shell
+    #依赖库
+    yum install pango.x86_64 libXcomposite.x86_64 libXcursor.x86_64 libXdamage.x86_64 libXext.x86_64 libXi.x86_64 libXtst.x86_64 cups-libs.x86_64 libXScrnSaver.x86_64 libXrandr.x86_64 GConf2.x86_64 alsa-lib.x86_64 atk.x86_64 gtk3.x86_64 -y
 
-问题原因:[https://segmentfault.com/a/1190000011382062](https://segmentfault.com/a/1190000011382062)
-
-解决方案:
-
-```shell
-#依赖库
-yum install pango.x86_64 libXcomposite.x86_64 libXcursor.x86_64 libXdamage.x86_64 libXext.x86_64 libXi.x86_64 libXtst.x86_64 cups-libs.x86_64 libXScrnSaver.x86_64 libXrandr.x86_64 GConf2.x86_64 alsa-lib.x86_64 atk.x86_64 gtk3.x86_64 -y
-
-#字体
-yum install ipa-gothic-fonts xorg-x11-fonts-100dpi xorg-x11-fonts-75dpi xorg-x11-utils xorg-x11-fonts-cyrillic xorg-x11-fonts-Type1 xorg-x11-fonts-misc -y
-```
+    #字体
+    yum install ipa-gothic-fonts xorg-x11-fonts-100dpi xorg-x11-fonts-75dpi xorg-x11-utils xorg-x11-fonts-cyrillic xorg-x11-fonts-Type1 xorg-x11-fonts-misc -y
+    ```
 
 1. windows下，下载puppeteer失败
-
-执行一下`npm install wechaty-puppet-puppeteer@^0.17.14 --no-save`
+    执行一下`npm install wechaty-puppet-puppeteer@^0.17.14 --no-save`
 
 ## 注意
 

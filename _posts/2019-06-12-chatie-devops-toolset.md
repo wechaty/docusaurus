@@ -1,13 +1,12 @@
 ---
 title: New DevOps Toolset for @Chatie Organization
 author: huan
-date: '2019-06-10 17:30:52 +0800'
 categories: npm
 tags:
   - open source
   - devops
   - npm
-  - home
+  - news
 image: /assets/2019/chatie-devops-toolset.gif
 ---
 
@@ -23,8 +22,6 @@ The powerful and easy to use Chatie DevOps Toolset:
 1. [@chatie/git-scripts](https://github.com/chatie/git-scripts): Git Hooks Integration for Chatie Projects
 1. [tstest](https://github.com/huan/tstest): A pytest in TypeScript
 1. [pkg-jq](https://github.com/huan/pkg-jq): Find the nearest package.json then deal with jq syntax on it. (in-line edit supported!)
-
-<!--more-->
 
 DevOps is king. Chatie dependents DevOps for years and it works great. We have dozens of projects with repositories hosted on GitHub, and publish them to NPM right after a commit & push, through the DevOps pipeline, which mainly under the control of Travis CI.
 

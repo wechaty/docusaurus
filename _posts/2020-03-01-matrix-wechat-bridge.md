@@ -1,12 +1,11 @@
 ---
 title: "使用 [Matrix] 收发微信消息"
-date: 2020-03-01 16:29 +0800
 author: cubesky
 categories: tutorial
 tags:
   - wechaty
   - matrix
-  - home
+  - featured
 image: /assets/2020/matrix-wechaty/2020-03-matrix-appservice-wechaty.png
 ---
 

@@ -1,13 +1,11 @@
 ---
 title: "在树莓派上运行wechaty"
-date: 2020-04-20 09:56 +0800
 author: cr4fun
 categories: tutorial
 tags:
   - wechaty
   - iot
   - raspberrypi
-  - home
 image: /assets/2020/runwechatyonpi/head.png
 ---
 

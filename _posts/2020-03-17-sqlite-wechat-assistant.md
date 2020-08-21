@@ -1,12 +1,10 @@
 ---
 title: "使用 SQLite 和 pullword 实现简易的业务助手"
-date: 2020-03-17 18:00 +0800
 author: moderncrazy
 categories: tutorial
 tags:
   - wechaty
   - SQLite
-  - home
 image: /assets/2020/sqlite-wechat/2020-03-sqlite-wechat-assistant.jpeg
 ---
 

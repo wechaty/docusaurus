@@ -17,7 +17,7 @@ const isPR = require('is-pr')
 
 test.skip('pull request title', async t => {
   if (isPR) {
-    const prNum = parseInt(process.env['TRAVIS_PULL_REQUEST'] as string)
+    const prNum = parseInt(process.env.TRAVIS_PULL_REQUEST as string)
     const prTitle = await prNumberToTitle('bupt', 'ai-ml.club', prNum)
 
     if (prTitle.match(/(oral|poster)/i)) {
@@ -43,7 +43,7 @@ test('image size should not more than 1MB', async t => {
 
   for (const file of fileList) {
     const dim = await probeImageSize(fs.createReadStream(file))
-    const size = fs.statSync(file)['size']
+    const size = fs.statSync(file).size
 
     const fit = dim.width <= MAX_WIDTH && size <= MAX_SIZE
     t.true(fit, `${file.replace(/.*\//, '')} should not exceed the max limit: width: ${dim.width}, size: ${size}.`)

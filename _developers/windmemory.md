@@ -1,10 +1,11 @@
 ---
 name: Yuan GAO (高原)
 site: https://github.com/windmemory
-bio: 句子互动科技有限公司联合创始人 & CTO, Ex-Amazon（北京）, Ex-Expedia（西雅图） 
+bio: Committer of Wechaty. Author of several wechaty-puppets. Co-founder & CTO of JuziBot
 avatar: https://avatars3.githubusercontent.com/u/6801292
-email: gaoyuan@juzi.bot
+email: wind.memory.cn@gmail.com
 twitter: https://www.weibo.com/u/2166731327
+github: https://github.com/windmemory
 ---
 
 句子互动联合创始人 & CTO，联合创立的句子互动专注于将聊天机器人技术落地到企业的真实场景中，以提升企业与客户沟通的效率，推动聊天机器人行业的发展，是 [Bot Friday Club](https://www.bot5.club/) 活动发起者之一。活跃于开源社区，是拥有近万 Star 数的 Chatbot SDK 开源项目 Wechaty 的核心 Contributor，wechaty-puppet-padpro 的作者，wechaty-puppet-padplus 的核心贡献者。

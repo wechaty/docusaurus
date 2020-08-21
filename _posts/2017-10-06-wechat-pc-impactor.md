@@ -1,12 +1,11 @@
 ---
 title: 关于对微信PC版Hook的一点研究分享
-date: '2017-10-06 23:47:0 +0800'
 author: h4dex
 categories: hack
 tags:
   - code
   - hook
-  - home
+  - news
 image: /assets/2017/h4dex-inject.png
 ---
 
@@ -24,7 +23,6 @@ image: /assets/2017/h4dex-inject.png
 PEid、Ollydbg、IDA pro、CheatEngine、DLL自动注入工具、微信电脑版2.4.1.37/79
 ```
 
-<!--more-->
 ## 关于对微信PC版Hook的一点研究分享
 
 ### HOOK 注入类  hookinject.h
@@ -454,6 +452,6 @@ CALLBACK 类 因为在原代码中没有公开，是调用其他人开发的 eco
 
 链接：[download full package](http://pan.baidu.com/s/1hsEeDoC)   密码：wttk
 
-感谢@zixia 的邀请。
+感谢@huan 的邀请。
 
 > h4dex  2017年10月6日
