@@ -8,7 +8,7 @@ description: Wechaty Latest Community Blog Updates
 
 {% assign blog_posts = '' | split: ',' %}
 {% for post in site.posts %}
-  {% unless post.tags contains 'announcement' %}
+  {% unless post.tags contains 'news' %}
      {% assign blog_posts = blog_posts | push: post %}
   {% endunless %}
 {% endfor %}
