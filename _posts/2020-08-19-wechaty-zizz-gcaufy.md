@@ -8,7 +8,7 @@ tags:
 ---
 
 > 这个是 阿兹纳莫曲线
-> &mdash; [@Gcaufy](/developers/gcaufy/), Creator of [WePY](https://github.com/tencent/wepy)
+> &mdash; [@Gcaufy](/developers/gcaufy/), Creator of [WePY](https://github.com/tencent/wepy), Wechaty Contributor.
 
 ![Gcaufy Wechaty zizz](/assets/2020/08-zizz/zizz-discussion.jpg)
 
