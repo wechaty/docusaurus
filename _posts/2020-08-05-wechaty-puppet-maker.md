@@ -10,16 +10,14 @@ tags:
 image: /assets/2020/wechaty-puppet-maker/puppet.png
 ---
 
-> 作者: [Yinbohao](https://github.com/rickyyin98/)
-
-![Wechaty Puppet活动](/assets/2020/wechaty-puppet-maker/puppet.png)
+Wechaty 通过精妙的代码设计，实现了基于一套应用层代码，自由切换不同的接入方式，帮助开发者以最大程度的易用性，快速实现多个平台的聊天机器人接入。  
 
 ## Wechaty Puppet
 
 ![Wechaty 代码结构](/assets/2020/wechaty-puppet-maker/architecture.png)
 
-Wechaty 通过精妙的代码设计，实现了基于一套应用层代码，自由切换不同的接入方式，帮助开发者以最大程度的易用性，快速实现多个平台的聊天机器人接入。  
-而每一种接入方式，都以 Puppet 的形式进行封装，目前已经上线的 Puppet 包括Puppeteer、Padplus、Hostie等多种方式的微信个人号接入，微信公众平台的接入等。  
+Wechaty 的每一种接入方式，都以 Puppet 的形式进行封装，目前已经上线的 Puppet 包括Puppeteer、Padplus、Hostie等多种方式的微信个人号接入，微信公众平台的接入等。  
+
 此外，钉钉、企业微信、飞书、抖音、快手的 Puppet 正在开发中，QQ、微博、Signal等多个平台的 Puppet 开发等待进行。  
 
 ## How to make a Puppet for Wechaty
