@@ -923,12 +923,3 @@ csjuXYZ:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "hoc0415@foxmail.com"
-      
-przzl:
-  name       : "przzl"
-  bio        : "JAVA,NODEJS工程师，喜欢接触一些好完的项目"
-  avatar     : "https://avatars.githubusercontent.com/u/52693821?s=460&v=4"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/przzl"
