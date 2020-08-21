@@ -1,6 +1,6 @@
 ---
 title: "Multi-language Wechaty Meeting: Mocking & Code Quality"
-author: wj-Mcat
+author: wj-mcat
 categories: meeting-notes
 tags:
   - news

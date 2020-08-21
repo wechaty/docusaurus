@@ -1,6 +1,6 @@
 ---
 title: "有道智云翻译插件"
-author: Chs97
+author: chs97
 categories: npm
 tags:
   - wechaty
