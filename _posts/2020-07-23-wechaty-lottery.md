@@ -1,6 +1,6 @@
 ---
 title: "微信群内抽奖机器人(wechaty_lottery)"
-author: csju
+author: csjuxyz
 categories: project
 tags:
   - wechaty

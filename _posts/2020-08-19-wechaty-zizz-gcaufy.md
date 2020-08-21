@@ -14,7 +14,7 @@ tags:
 
 ---
 
-> [@陈汉森](/developers/Chs97): 这个波形有特殊含义吗？  
+> [@陈汉森](/developers/chs97): 这个波形有特殊含义吗？  
 > [@xajeyu](/developers/xajeyu/): 机器人。滋滋滋  
 > [@Huan](/developers/huan/): Zizz...zzz!  
 > [@Gcaufy](/developers/gcaufy/): 这个是 阿滋纳莫曲线  
