@@ -1,19 +1,25 @@
+{% assign src = include.src %}
+{% assign ratio = '56.25%' %}
+{% assign type = src | split: '//' | last | split: '/' | first %}
+{% if src contains '.pdf' %}
+  {% assign type = 'pdf' %}
+{% endif %}
+{% case type %}
+  {% when 'player.bilibili.com' %}
+    {% assign ratio = '70%' %}
+  {% when "pdf" %}
+    {% assign src = '/assets/js/viewer-js/#' | append: src %}
+{% endcase %}
+
 <div style="
     position: relative;
-    {% assign ratio = '56.25%' %}
-    {% if include.src contains 'player.bilibili.com' %}
-    {% assign ratio = '70%' %}
-    {% endif %}
     padding-bottom: {{ ratio }};
     padding-top:30px;
     height:0;
     overflow:hidden;
 ">
   <iframe
-    {% if include.src | slice: -4, -1 == '.pdf' %}
-    {% assign include.src = '/assets/js/viewer-js/#' | append: include.src %}
-    {% endif %}
-    src='{{ include.src }}'
+    src='{{ src }}'
     allowfullscreen
     webkitallowfullscreen
     frameborder="0"
