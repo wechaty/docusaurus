@@ -5,6 +5,7 @@ categories: announcement
 tags:
   - wechaty
   - soc
+  - soc2020
   - talk
   - news
   - meetup
