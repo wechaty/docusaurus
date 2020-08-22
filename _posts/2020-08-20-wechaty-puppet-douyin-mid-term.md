@@ -5,7 +5,6 @@ categories: project
 image: /assets/2020/wechaty-puppet-douyin-mid-term/wechaty-puppet-douyin-mid-term.jpg
 tags:
   - douyin
-  - puppet
   - soc
   - soc2020
 ---
