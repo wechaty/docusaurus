@@ -2,7 +2,7 @@
 title: "行情播报微信机器人"
 author: exctech
 categories: project
-image: t
+image: /assets/2020/market-wechat-robot/teaser.jpeg
 tags:
   - wechaty
   - market
