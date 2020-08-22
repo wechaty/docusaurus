@@ -1,7 +1,7 @@
 ---
 name: imWildCat
 site: https://github.com/imWildCat
-avatar: /assets/developers/WildCat/avatar.png
+avatar: /assets/developers/wild-cat/avatar.png
 bio: A designer and developer, currently a postgraduate student at University of Birmingham (Computer Science), and founded his own company in China with a startup business plan
 email: 
 twitter: 

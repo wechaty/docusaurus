@@ -1,7 +1,7 @@
 ---
 name: JasLin
 site: https://github.com/jaslin
-avatar: /assets/developers/jasLin/avatar.png
+avatar: /assets/developers/jaslin/avatar.png
 bio: CTO of BotWave
 email: 
 twitter: 

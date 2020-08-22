@@ -1,7 +1,7 @@
 ---
 name: Leons828
 site: https://github.com/Leons828
-avatar: /assets/developers/Leons828/avatar.png
+avatar: /assets/developers/leons828/avatar.png
 bio: A web and embedded engineer
 email: 
 twitter: 
