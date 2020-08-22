@@ -1,6 +1,6 @@
 ---
 title: 基于wechaty的求职社群管理工具
-author: lmaCode
+author: lmacode
 categories: event
 tags:
   - bot

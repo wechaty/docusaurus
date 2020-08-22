@@ -1,6 +1,6 @@
 ---
 title: "微信代购机器人（WeChat Purchasing Robot）"
-author: DevoZou
+author: devozou
 categories: project
 tags:
   - wechaty

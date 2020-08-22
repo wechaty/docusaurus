@@ -1,6 +1,6 @@
 ---
 title: "使用Wechaty管理你的顾客"
-author: Kylin93CN
+author: kylin93cn
 categories: project
 tags:
   - wechaty
