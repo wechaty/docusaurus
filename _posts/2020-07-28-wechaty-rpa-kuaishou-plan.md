@@ -5,6 +5,8 @@ categories: project
 image: /assets/2020/wechaty-puppet-kuaishou/wechaty-puppet-kuaishou-logo.jpeg
 tags:
   - kuaishou
+  - soc
+  - soc2020
 ---
 
 > Author:[@bikaiqiao](https://github.com/bikaiqiao)
