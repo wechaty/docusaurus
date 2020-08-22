@@ -5,6 +5,9 @@ categories: project
 image: /assets/2020/wechaty-puppet-douyin/wechaty-puppet-douyin-logo.jpg
 tags:
   - douyin
+  - puppet
+  - soc
+  - soc2020
 ---
 
 > Author: [@gavinwang23](https://github.com/gavinwang23)
@@ -20,7 +23,7 @@ tags:
 
 <!--more-->
 
-## [基于开放 API 封装 Wechaty 接口下的钉钉聊天机器人]中期报告
+## [基于开放 API 封装 Wechaty 接口下的抖音聊天机器人]中期报告
 
 ## 项目信息
 
