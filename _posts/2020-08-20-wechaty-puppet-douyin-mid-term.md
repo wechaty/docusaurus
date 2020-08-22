@@ -61,7 +61,7 @@ tags:
   - 探索puppet更多的功能，实现底层autojs
   
   PPT:
-  <iframe src="https://youtu.be/zDIPzGztn_E" width="560" height="315" frameborder="0" allowfullscreen="" style=" position: absolute; top:0; left:0; width:100%; height:100%; "></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/zDIPzGztn_E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   live code:
-  <iframe src="https://youtu.be/UWio2whtoeA" width="560" height="315" frameborder="0" allowfullscreen="" style=" position: absolute; top:0; left:0; width:100%; height:100%; "></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/OF7UfQ4o_5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
