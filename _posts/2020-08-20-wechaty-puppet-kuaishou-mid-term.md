@@ -4,7 +4,8 @@ author: bikaiqiao
 categories: project
 image: /assets/2020/wechaty-puppet-kuaishou/wechaty-puppet-kuaishou-logo2.jpeg
 tags:
-  - kuaishou-puppet
+  - kuaishou
+  - puppet
   - soc
   - soc2020
 ---
@@ -58,12 +59,8 @@ tags:
 
 ### PPT展示
 
-<iframe src="//player.bilibili.com/player.html?aid=541808800&bvid=BV1vi4y1g7L2&cid=226344300&page=1"  width="560" height="315" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<br>
+{% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1vi4y1g7L2" type="bilibili" %}
 
 ### Live Code视频
 
-<br>
-
-<iframe src="//player.bilibili.com/player.html?aid=541809823&bvid=BV1ei4y1g7og&cid=226344965&page=1" width="560" height="315" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+{% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1ei4y1g7og" type="bilibili" %}
