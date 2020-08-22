@@ -2,12 +2,15 @@
 title: "暑期2020[基于 RPA 封装 Wechaty 接口下的快手聊天机器人]中期报告"
 author: bikaiqiao
 categories: project
-image: /assets/2020/wechaty-puppet-kuaishou/wechaty-puppet-kuaishou-logo.jpeg
+image: /assets/2020/wechaty-puppet-kuaishou/wechaty-puppet-kuaishou-logo2.jpeg
 tags:
   - kuaishou
+  - soc
+  - soc2020
 ---
 
 > Author:[@bikaiqiao](https://github.com/bikaiqiao)
+> Code: [@bikaiqiao/kuaishou-autojs](https://github.com/bikaiqiao/kuaishou-auto)[@bikaiqiao/kuaishouPuppet](https://github.com/bikaiqiao/kuaishouPuppet)
 
 ## 暑期2020
 
