@@ -831,6 +831,18 @@ godkillerxiao:
       icon: "fas fa-fw fa-link"
       url: "https://mrxiao.net/"
 
+FINCTIVE:
+  name        : "FINCTIVE"
+  bio         : ""
+  avatar      : "https://avatars1.githubusercontent.com/u/31786061?s=460"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/finctive"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://fintive.com"
+
 Chs97:
   name        : "Chs97"
   bio         : "A coder. Be interested in anything."
