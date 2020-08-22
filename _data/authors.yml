@@ -923,12 +923,3 @@ csjuXYZ:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "hoc0415@foxmail.com"
-
-TangGuangbin:
-  name        : "Tang Guangbin"
-  bio         : "学生"
-  avatar      : "https://avatars3.githubusercontent.com/u/16758041?s=460"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/Nebell/"

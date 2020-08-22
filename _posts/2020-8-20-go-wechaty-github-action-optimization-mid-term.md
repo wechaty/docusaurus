@@ -4,7 +4,7 @@ author: TangGuangbin
 categories: project
 tags:
   - soc
-image: /assets/2020/go-wechaty-github-action-optimization/header.png
+image: /assets/2020/go-wechaty-github-action-optimization/header.jpg
 ---
 
 > 作者: [TangGuangbin](https://github.com/Nebell/)
