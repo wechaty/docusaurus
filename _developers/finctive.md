@@ -1,9 +1,10 @@
 ---
 name: FINCTIVE
 site: https://github.com/fintcive
-avatar: /assets/developers/FINCTIVE/avatar.png
-bio: Bugs love me.
-email: finctive@foxmail.com
+avatar: /assets/developers/finctive/avatar.png
+bio: 
+email: 
+twitter: 
 ---
 
 ## Contact me

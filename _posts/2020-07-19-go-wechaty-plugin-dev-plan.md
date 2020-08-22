@@ -8,6 +8,9 @@ tags:
   - soc
   - go
 image: /assets/2020/go-wechaty-plugin-soc/2020-07-21-go-wechaty.png
+tags:
+  - soc
+  - soc2020
 ---
 
 ## 暑期2020

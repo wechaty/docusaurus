@@ -5,6 +5,8 @@ categories: project
 image: /assets/2020/wechaty-puppet-dingtalk/logo.png
 tags:
   - featured
+  - soc
+  - soc2020
 ---
 > Author: [@jihuayu](https://github.com/jihuayu)
 > Code: [@jihuayu/wechaty-puppet-dingtalk](https://github.com/jihuayu/wechaty-puppet-dingtalk)
