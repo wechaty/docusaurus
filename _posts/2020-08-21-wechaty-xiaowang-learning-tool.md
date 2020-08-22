@@ -2,7 +2,7 @@
 title: 基于Wechaty的群学习内容推送工具
 author: GilesWong
 date: 2020-08-19 22:51:49
-image: https://avatars0.githubusercontent.com/u/13916856?s=60&v=4
+image: /assets/developers/gileswong/avatar.png
 ---
 
 > Author: [@GilesWong](https://github.com/GilesWong)
