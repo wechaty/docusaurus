@@ -6,7 +6,7 @@ tags:
   - wechaty
   - ServerChan
   - shell
-image: /assets/2020/kotlin-wechaty-simple-shell/example.png
+image: /assets/2020/kotlin-wechaty-simple-shell/home.jpeg
 ---
 
 
