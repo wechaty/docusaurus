@@ -55,7 +55,14 @@ wechaty-words-per-day-plugin-mid-term
 - [go-wechaty-getting-started 测试](https://github.com/Nebell/go-wechaty-getting-started)
 - [Docker Image](https://github.com/Nebell/go-wechaty-getting-started/packages/322606)
 
+### 视频报告
+
+<iframe width="560" height="315" src="//player.bilibili.com/player.html?aid=926781806&bvid=BV13T4y1L748&cid=227497146&page=1" scrolling="no"  frameborder="0" allowfullscreen="true"> </iframe>
+
+<iframe width="560" height="315" src="//player.bilibili.com/player.html?aid=371800597&bvid=BV1qZ4y1K7Mh&cid=227500615&page=1" scrolling="no" frameborder="0"  allowfullscreen="true"> </iframe>
+
 ## 联系我们
 
 - 项目链接：[https://github.com/Nebell/go-wechaty-getting-started](https://github.com/Nebell/go-wechaty-getting-started)
 - 联系方式：[tang.packet@outlook.com](tang.packet@outlook.com)
+
