@@ -65,4 +65,3 @@ wechaty-words-per-day-plugin-mid-term
 
 - 项目链接：[https://github.com/Nebell/go-wechaty-getting-started](https://github.com/Nebell/go-wechaty-getting-started)
 - 联系方式：[tang.packet@outlook.com](tang.packet@outlook.com)
-
