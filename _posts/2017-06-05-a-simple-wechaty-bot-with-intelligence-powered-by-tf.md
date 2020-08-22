@@ -1,6 +1,6 @@
 ---
 title: "A Simple WeChaty Bot with Intelligence Powered by TensorFlow"
-author: WildCat
+author: wildcat
 categories: project
 tags:
   - code

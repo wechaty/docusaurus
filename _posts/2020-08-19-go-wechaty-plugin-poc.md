@@ -6,6 +6,7 @@ tags:
   - wechaty
   - plugins
   - soc
+  - soc2020
   - go
 image: /assets/2020/go-wechaty-plugin-soc/go-wechaty.png
 ---

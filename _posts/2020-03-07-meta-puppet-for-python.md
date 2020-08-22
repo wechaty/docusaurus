@@ -1,6 +1,6 @@
 ---
 title: "MetaPuppetForPython - 用Python写Wechaty程序"   
-author: quantumFlame
+author: quantumflame
 categories: tutorial  
 tags:
   - wechaty
