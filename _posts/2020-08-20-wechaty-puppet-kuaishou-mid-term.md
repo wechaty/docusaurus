@@ -4,7 +4,7 @@ author: bikaiqiao
 categories: project
 image: /assets/2020/wechaty-puppet-kuaishou/wechaty-puppet-kuaishou-logo2.jpeg
 tags:
-  - kuaishou
+  - kuaishou-puppet
   - soc
   - soc2020
 ---
