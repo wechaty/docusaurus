@@ -7,6 +7,7 @@ tags:
   - wechaty-puppet-padplus
   - chatbot
   - cli
+  - plugin
 image: /assets/2020/wechaty-plugin-xyao/arc.png
 ---
 
