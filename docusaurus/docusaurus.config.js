@@ -56,7 +56,7 @@ module.exports = {
         // { label: 'FAQ',             to:   'docs/faq/README',                      position: 'right' },
         // { label: 'Troubleshooting', to:   'docs/troubleshooting',                 position: 'right' },
 
-        { label: 'GitHub',          href: 'https://github.com/wechaty/wechaty',   position: 'right' },
+        { label: 'GitHub',          href: 'https://github.com/wechaty/wechaty#readme',   position: 'right' },
       ],
     },
     footer: {

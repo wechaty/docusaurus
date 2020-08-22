@@ -1,6 +1,6 @@
 ---
 title: "你的微信小助手"
-author: Peanut
+author: peanut
 categories: project
 tags:
   - wechaty

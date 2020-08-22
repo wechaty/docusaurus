@@ -3,8 +3,8 @@ title: "Wechaty Sticker is ON SALE!"
 author: huan
 categories: shop
 tags:
-  - sticker
   - news
+  - badge
 image: /assets/2017/wechaty-sticker.jpg
 ---
 
