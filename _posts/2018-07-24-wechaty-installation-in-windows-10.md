@@ -1,12 +1,11 @@
 ---
 title: "在 Windows 10 下安装 Wechaty"
-date: 2018-07-24 09:00 +0800
 author: kaffa
 categories: tutorial
 tags:
   - windows
   - install
-  - home
+  - news
 image: /assets/2018/wechaty-installation-in-windows.png
 ---
 
@@ -14,9 +13,9 @@ image: /assets/2018/wechaty-installation-in-windows.png
 
 ![在 Windows 10 下安装 Wechaty](/assets/2018/wechaty-installation-in-windows.png)
 
-感谢 @zixia @lijiarui 让我在此分享我在 Windows 10 Home 平台安装 Wechaty 的经历，希望我对安装过程的记录和分析能帮助在此平台下安装 Wechaty 的人。
+感谢 @huan @lijiarui 让我在此分享我在 Windows 10 Home 平台安装 Wechaty 的经历，希望我对安装过程的记录和分析能帮助在此平台下安装 Wechaty 的人。
 
-### 介绍
+## 介绍
 
 [Wechaty](https://github.com/wechaty/wechaty) 是一个对话机器人软件开发包，它可以帮你用 6 行 JavaScript 代码实现一个微信个人账号。由于使用 node 技术，它支持 Linux、Windows、macOS 平台和 Docker 容器。它的安装过程和其它 node 包类似，首先 ```git clone``` 源代码，再使用 node 的 npm 命令 ```npm install & npm start``` 实现开箱即用，同时官方也提供了入门案例：Wechaty getting started。而在国内，实际安装过程中可能会因某些软件依赖的原因遇到问题，本文记录了安装过程中可能会出现的错误及解决办法，下面描述详细的步骤和说明：
 
@@ -24,9 +23,7 @@ image: /assets/2018/wechaty-installation-in-windows.png
 * Wechaty 起步: [Wechaty Getting Started](https://github.com/wechaty/wechaty-getting-started)
 * Wechaty 文档: [Wechaty Documents](https://wechaty.js.org)
 
-<!--more-->
-
-### 概念
+## 概念
 
 * [Puppet](https://github.com/wechaty/wechaty/wiki/Puppet): 一个包含了机器人对话逻辑的抽象类，是 Wechaty 技术架构的一部分。继承实现 Puppet 抽象类（协议）的组件，即可实现更广泛的与联系人、消息/一对一对话、群组/聊天室/多对多对话等相关逻辑。Puppet 的中文是木偶，用在这里相当传神。
 * [node-gyp](https://www.npmjs.com/package/node-gyp): 基于 gyp 编写的用来编译 node 本地扩展模块的 node 包，而 gpy 是 Chromium 项目上用于实现跨平台编译的工具。可参考 [安装文档](https://github.com/nodejs/node-gyp#installation)
@@ -36,7 +33,7 @@ image: /assets/2018/wechaty-installation-in-windows.png
 * [puppeteer](https://github.com/GoogleChrome/puppeteer): 可编程的 Google Chrome， Google Chrome 团队官方出品。
 * [Chromium](https://www.chromium.org/): puppeteer 依赖一个特定的 Chromium 版本，Chrome 就是 开源 Chromium + Google 开发的闭源的扩展包。
 
-### 安装步骤
+## 安装步骤
 
 一、下载 Wechaty 源代码
 
@@ -44,7 +41,7 @@ image: /assets/2018/wechaty-installation-in-windows.png
 
 三、启动 Wechaty
 
-### 详细步骤
+## 详细步骤
 
 一、下载 Wechaty 源代码
 
@@ -378,7 +375,7 @@ npm install & npm start
 
 如果你对扫描控制台的文本二维码遇到问题，可以参考我的 [一篇关于二维码](https://kaffa.im/a-story-about-text-qrcode.html) 的博文。
 
-### 总结
+## 总结
 
 由于已成功启动项目，所以我并没有在 Windows 7 系统 或 32 位机上进行配置，主要问题应该差不多。解决办法建议查阅上述出现错误的软件文档来解决。
 

@@ -1,7 +1,6 @@
 ---
 title: "有道智云翻译插件"
-author: Chs97
-date: "2020-07-19 17:00:00 +0800"
+author: chs97
 categories: npm
 tags:
   - wechaty
@@ -13,10 +12,9 @@ image: /assets/2020/youdao-plugin/head.jpeg
 > 作者: [Chs97](https://github.com/chs97/)
 > Code: [Github](https://github.com/chs97/wechaty-plugin-youdao)
 
-[![badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
+[![badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![badge](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
-<!--more-->
 ## 有道智云翻译插件
 
 以 `wechaty` 插件的形式集成有道智云翻译的能力，让更多的开发者可以很便捷的对机器人添加具备翻译的功能。有道智云是有道官方的云平台，提供翻译的能力。[相关 API 文档](https://ai.youdao.com/DOCSIRMA/html/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E7%BF%BB%E8%AF%91/API%E6%96%87%E6%A1%A3/%E6%96%87%E6%9C%AC%E7%BF%BB%E8%AF%91%E6%9C%8D%E5%8A%A1/%E6%96%87%E6%9C%AC%E7%BF%BB%E8%AF%91%E6%9C%8D%E5%8A%A1-API%E6%96%87%E6%A1%A3.html)

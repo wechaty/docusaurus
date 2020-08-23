@@ -1,9 +1,11 @@
 ---
 title: "暑期2020 [为 go-wechaty 设计实现插件体系] 计划书"
-date: 2020-07-19 09:00 +0800
-author: FINCTIVE
+author: finctive
 categories: project
 image: /assets/2020/go-wechaty-plugin-soc/2020-07-21-go-wechaty.png
+tags:
+  - soc
+  - soc2020
 ---
 > Author: [@FINCTIVE](https://github.com/finctive)
 
@@ -14,8 +16,6 @@ image: /assets/2020/go-wechaty-plugin-soc/2020-07-21-go-wechaty.png
 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。
 官网：[https://isrc.iscas.ac.cn/summer2020](https://isrc.iscas.ac.cn/summer2020) 官方新闻：[http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html](http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html)
 本项目 [为 go-wechaty 设计实现插件体系] 系 暑期2020 支持的开源项目。
-
-<!--more-->
 
 ## [为 go-wechaty 设计实现插件体系]具体计划
 

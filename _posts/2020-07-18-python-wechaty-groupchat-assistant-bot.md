@@ -1,12 +1,12 @@
 ---
 title: "基于python-wechaty的群聊助手机器人"
-date: 2020-07-18 09:00 +0800
 author: kxz18
 categories: project
 image: /assets/2020/groupchat-assistant-bot/header.jpeg
 tags:
   - python
   - soc2020
+  - soc
 ---
 > Author: [@kxz18](https://github.com/kxz18)
 > Code: [@kxz18/python-wechaty-groupchat-bot](https://github.com/kxz18/python-wechaty-groupchat-bot)
@@ -17,8 +17,6 @@ tags:
 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。
 官网：[https://isrc.iscas.ac.cn/summer2020](https://isrc.iscas.ac.cn/summer2020) 官方新闻：[http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html](http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html)
 本项目 [基于python-wechaty的群聊助手机器人] 系 暑期2020 支持的开源项目。
-
-<!--more-->
 
 ## [基于python-wechaty的群聊助手机器人]具体计划
 

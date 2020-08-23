@@ -1,16 +1,15 @@
 ---
 title: "基于Python-wechaty建立一个斗图机器人"
-date: 2020-07-19 14:00 +0800
 author: godkillerxiao
 image: /assets/2020/meme-bot/07-19-wechaty-meme-bot.png
 tags:
   - python
+  - soc
+  - soc2020
 ---
 
 > Author: [@MrZilinXiao](https://github.com/MrZilinXiao) Always dedicated to learn something brand new.
 > Code: [@Fighting-Meme-python-wechaty](https://github.com/MrZilinXiao/Fighting-Meme-python-wechaty)
-
-<!--more-->
 
 ## 暑期2020
 
@@ -30,7 +29,7 @@ tags:
 - 学生：肖子霖
 - 模块列表
 - 项目初步规划图（可能有调整）
-![plan](/assets/2020/meme-bot/07-19-wechaty-meme-bot.png)
+    ![plan](/assets/2020/meme-bot/07-19-wechaty-meme-bot.png)
   - [x] 数据库管理
   - [ ] 针对静态表情包的特征提取模块调试与开发
   - [ ] 适配K-means算法

@@ -1,6 +1,5 @@
 ---
 title: 居然有人能忘记吃饭？写个微信机器人提醒他
-date: 2019-05-11 13:00 +0800
 author: diaozxin007
 categories: project
 tags:
@@ -17,8 +16,6 @@ image: /assets/2019/remind-eat-1.jpg
 ![image](/assets/2019/remind-eat-1.jpg)
 
 为了解决这个问题，我写了一个微信机器人到点就提醒他吃饭。
-
-<!--more-->
 
 [Github 地址](https://github.com/diaozxin007/remindEat)
 

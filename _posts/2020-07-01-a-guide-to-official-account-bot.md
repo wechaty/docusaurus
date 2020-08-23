@@ -1,8 +1,9 @@
 ---
 title: "使用wechaty助力公众号主维护社群"
-date: 2020-07-01 12:30 +0800
 author: sl1673495
 image: /assets/2020/wechat-official-helper/teaser.png
+tags:
+  - wechatOA
 ---
 
 > Author: [@your_github_username](https://github.com/sl1673495) front-end developer

@@ -1,11 +1,10 @@
 ---
 title: "New Feature: Multi-Instance Support for Wechaty v0.16(WIP)"
 author: huan
-date: '2018-04-23 18:14:52 +0800'
 categories: feature
 tags:
   - code
-  - home
+  - news
 image: /assets/2018/blessed-twins-bot.png
 ---
 
@@ -17,8 +16,6 @@ Wechaty v0.16 is working in progress.
 
 * **Good news**: We will be able to run as many as Wechaty instances than only one singleton before!
 * **Bad news**: ~~BREAKING CHANGES were introduced.~~ This enhancement has no BC any more!
-
-<!--more-->
 
 Wechaty could only be able to instantiate once before. This comes for one reason: I'm lazy at the beginning.
 

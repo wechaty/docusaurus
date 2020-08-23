@@ -1,7 +1,6 @@
 ---
 title: "Data Stream about Room-Join Event from Wechat to Wechaty"
 author: su-chang
-date: '2019-07-08 16:55:12 +0800'
 categories: tutorial
 tags:
   - code
@@ -10,7 +9,6 @@ tags:
 > 作者: [Su Chang](https://github.com/su-chang)，Node.js全栈工程师
 
 介绍wechaty中的room-join事件的产生，及其数据流的变化
-<!--more-->
 
 ## 问题
 

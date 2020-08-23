@@ -1,7 +1,6 @@
 ---
 title: "微信代购机器人（WeChat Purchasing Robot）"
-author: DevoZou
-date: "2020-07-20 16:10:00 +0800"
+author: devozou
 categories: project
 tags:
   - wechaty
@@ -12,16 +11,14 @@ image: /assets/2020/wechat-purchasing-robot/header.jpg
 > 作者: [DevoZou](https://github.com/zoudingyi/)
 > Code: [Github](https://github.com/zoudingyi/wechaty-robot)
 
-[![Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/chatie/wechaty)
+[![Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![开源激励计划](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
-### 背景
+## 背景
 
 女朋友在做代购，加了很多微信好友和微信群，所以每天会有很多人前来咨询商品信息以及商品价格，因此想做一个管理机器人，用于自动回复消息、群管理以及自动添加好友，以及用户发送商品关键词能够自动回复相应商品信息。
 
-<!--more-->
-
-### 功能
+## 功能
 
 - [x] 自动处理好友请求
 - [x] 私聊关键字回复
@@ -33,7 +30,7 @@ image: /assets/2020/wechat-purchasing-robot/header.jpg
 
 ![效果图](/assets/2020/wechat-purchasing-robot/sell.png)
 
-#### 结构
+### 结构
 
 ```js
 |-- img                     # 储项目所使用到的图片与其他相应资源。
@@ -48,12 +45,12 @@ image: /assets/2020/wechat-purchasing-robot/header.jpg
 |-- package.json
 ```
 
-### 依赖
+## 依赖
 
 wechaty：wechaty 核心库  
 wechaty-puppet-padplus：wechaty的ipad协议实现
 
-### 代码介绍
+## 代码介绍
 
 ```javascript
 // init
@@ -81,7 +78,7 @@ bot
 
 ```
 
-### 本地运行
+## 本地运行
 
 - 克隆项目
 
@@ -103,17 +100,17 @@ npm install
 npm run serve
 ```
 
-### 使用
+## 使用
 
 1. 打开`src/config.js` 文件
 2. 修改`config`配置
 3. 运行项目
 
-### 其他功能效果
+## 其他功能效果
 
 ![效果图](/assets/2020/wechat-purchasing-robot/chat.png)
 
-### 致谢
+## 致谢
 
 非常感谢Wechaty团队提供微信机器人SDK，让开发者可以专注于业务代码。  
 感谢句子互动提供的pad协议版token。  

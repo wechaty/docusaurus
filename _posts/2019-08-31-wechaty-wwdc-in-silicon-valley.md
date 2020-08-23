@@ -1,11 +1,10 @@
 ---
 title: "Frist WWDC in Silicon Valley"
-date: 2019-08-31 12:00 -0800
 author: kis87988
 categories: event
 tags:
   - meetup
-  - home
+  - news
   - featured
 image: /assets/2019/chatie-wwdc-in-sv-110718.jpg
 ---
@@ -26,8 +25,6 @@ Wechaty就是唯一最好用最Powerful並且擴展性高的Wechat工具了。
 個人我也希望可以從各位Contributor身上學到更多技能也希望可以互相幫助。
 
 這篇文章因為是由有拖延症的我編寫，導致延遲了接近一年，深感抱歉，現在讓我們來坐坐時光機回去吧
-
-<!--more-->
 
 讓我們回到2018年前的11月7日，在Chatie開源創始人的李董人來訪美國時，發生了神奇的事
 

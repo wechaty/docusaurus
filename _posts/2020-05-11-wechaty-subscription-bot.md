@@ -1,6 +1,5 @@
 ---
 title: "用Wecahty制作订阅机器人(B站)"
-date: 2020-05-11 13:07 +0800
 author: fish-ball
 categories: tutorial
 tags:
