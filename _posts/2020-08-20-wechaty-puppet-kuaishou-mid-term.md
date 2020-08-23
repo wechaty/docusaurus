@@ -59,8 +59,8 @@ tags:
 
 ### PPT展示
 
-{% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1vi4y1g7L2" type="bilibili" %}
+{% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1vi4y1g7L2" %}
 
 ### Live Code视频
 
-{% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1ei4y1g7og" type="bilibili" %}
+{% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1ei4y1g7og" %}
