@@ -45,7 +45,7 @@ tags:
     - 尝试了通过安卓和ios端抓包的方式获取抖音的私信方法，结果抓不到私信的消息
     - autojs控制安卓app的方法，现在正在采用，也是现在唯一可运行的方法，目前完成了抖音基本操作方法的封装和socket的通信
   - 抖音的autojs控制版本完成了自动登录，消息监听，发送消息等方法
-  - 用socket和autojs的方法跑了一个简易dingdongbot，[视频演示地址](https://youtu.be/TY4hn9TIWlA)（youtube）
+  - 用socket和autojs的方法跑了一个简易dingdongbot，[视频演示地址](https://youtu.be/TY4hn9TIWlA)(youtube)
   - puppet开发中，初步成型
 - 遇到的问题及解决方案：
   - 遇到问题
