@@ -34,7 +34,7 @@ module.exports = {
       'case-study/rui-bot',
     ],
     'API Reference': [
-      'api/README',
+      'api/',
       'api/wechaty',
       'api/message',
       'api/contact',
