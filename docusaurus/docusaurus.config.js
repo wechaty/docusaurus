@@ -79,7 +79,7 @@ module.exports = {
             { label: 'Twitter',         href: 'https://twitter.com/chatieio' },
             { label: 'YouTube',         href: 'https://www.youtube.com/playlist?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh' },
             { label: 'OpenCollective',  href: 'https://opencollective.com/wechaty' },
-            { label: 'WeChat',          href: 'https://gitter.im/chatie/wechaty' },
+            { label: 'Meeting Notes',   href: 'https://bit.ly/2zpi2XG' },
           ],
         },
         {
