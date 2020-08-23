@@ -6,8 +6,9 @@ categories: project
 image: /assets/2020/lark-puppet/wechaty-lark.png
 tags:
   - featured
-  - Soc2020
+  - soc2020
   - Lark
+  - soc
 ---
 > Author: [@fanrui](https://github.com/Roxanne718)
 > Code: [@fanrui/wechaty-puppet-lark](https://github.com/Roxanne718/wechaty-puppet-lark)

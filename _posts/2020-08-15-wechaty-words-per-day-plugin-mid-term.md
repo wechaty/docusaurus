@@ -6,6 +6,7 @@ tags:
   - wechaty
   - plugins
   - soc
+  - soc2020
 image: /assets/2020/wechaty-words-per-day-plugin-mid-term/header.png
 ---
 

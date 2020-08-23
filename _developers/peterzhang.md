@@ -1,7 +1,7 @@
 ---
 name: 一路向北
 site: https://github.com/zhangchunsheng
-avatar: /assets/developers/PeterZhang/avatar.png
+avatar: /assets/developers/peter-zhang/avatar.png
 bio: I am a full-stack Software Engineer in Beijing.
 email: mailto:1097692918@qq.com
 twitter: 

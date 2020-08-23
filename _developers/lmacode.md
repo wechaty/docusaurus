@@ -1,7 +1,7 @@
 ---
 name: lmaCode
 site: https://github.com/lmaCode
-avatar: /assets/developers/lmaCode/avatar.png
+avatar: /assets/developers/lma-code/avatar.png
 bio: For a dream
 email: 
 twitter: 

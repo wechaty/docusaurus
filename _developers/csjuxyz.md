@@ -1,7 +1,7 @@
 ---
 name: 陈述句
 site: https://github.com/csjuXYZ
-avatar: /assets/developers/csjuXYZ/avatar.png
+avatar: /assets/developers/csjuxyz/avatar.png
 bio: 前端开发与街头摄影
 email: hoc0415@foxmail.com
 twitter: 

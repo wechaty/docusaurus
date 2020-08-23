@@ -6,7 +6,7 @@ tags:
   - code
   - wechaty
   - webPanel
-  - plugins
+  - plugin
   - feature
 image: /assets/2020/web-panel-plugin/web-head.png
 ---

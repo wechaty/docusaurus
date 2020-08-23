@@ -1,7 +1,7 @@
 ---
 name: Kylin93CN
 site: https://github.com/Kylin93CN
-avatar: /assets/developers/Kylin93CN/avatar.png
+avatar: /assets/developers/kylin93cn/avatar.png
 bio: Full stack developer in Hangzhou
 email: 
 twitter: 

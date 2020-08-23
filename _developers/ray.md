@@ -1,7 +1,7 @@
 ---
 name: Ray
 site: https://github.com/leiroc
-avatar: /assets/developers/Ray/avatar.png
+avatar: /assets/developers/ray/avatar.png
 bio: I am a full-stack Software Engineer in Chengdu.
 email: mailto:121644750@qq.com
 twitter: 
