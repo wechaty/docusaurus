@@ -15,14 +15,18 @@ tags:
 ## 暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
+
 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
+
 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。
+
 官网：[https://isrc.iscas.ac.cn/summer2020](https://isrc.iscas.ac.cn/summer2020) 官方新闻：[http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html](http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html)
+
 本项目 [基于 RPA 封装 Wechaty 接口下的抖音聊天机器人] 系 暑期2020 支持的开源项目。
 
 <!--more-->
 
-## [基于 RPA 封装 Wechaty 接口下的抖音聊天机器人]中期报告
+## 中期报告：基于 RPA 封装 Wechaty 接口下的抖音聊天机器人
 
 ## 项目信息
 
@@ -59,8 +63,10 @@ tags:
   - 继续开发puppet，将现有socket客户端移植到puppet，接入wechaty完成一个dingdongbot
   - 探索puppet更多的功能，实现底层autojs
   
-  PPT:
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/zDIPzGztn_E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### PPT
 
-  live code:
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/OF7UfQ4o_5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include iframe.html src="https://www.youtube.com/embed/zDIPzGztn_E" %}
+
+### Live coding
+
+{% include iframe.html src="https://www.youtube.com/embed/UWio2whtoeA" %}
