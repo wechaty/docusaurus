@@ -1,6 +1,6 @@
 ---
 title: "Python Wechaty Beta Released: A Simple Bot"
-author: wj-Mcat
+author: wj-mcat
 categories: announcement
 tags:
   - python

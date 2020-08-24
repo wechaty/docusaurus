@@ -5,6 +5,8 @@ categories: project
 tags:
   - wechaty
   - plugins
+  - soc
+  - soc2020
 image: /assets/2020/wechaty-words-per-day-plugin-plan/header.jpg
 ---
 

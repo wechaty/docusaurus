@@ -1,6 +1,6 @@
 ---
 title: "微信计算器机器人（wechat robot calculator）"
-author: Ray
+author: ray
 categories: project
 tags:
   - wechaty
