@@ -56,7 +56,7 @@ module.exports = {
         // { label: 'FAQ',             to:   'docs/faq/README',                      position: 'right' },
         // { label: 'Troubleshooting', to:   'docs/troubleshooting',                 position: 'right' },
 
-        { label: 'GitHub',          href: 'https://github.com/wechaty/wechaty',   position: 'right' },
+        { label: 'GitHub',          href: 'https://github.com/wechaty/wechaty#readme',   position: 'right' },
       ],
     },
     footer: {
@@ -79,13 +79,13 @@ module.exports = {
             { label: 'Twitter',         href: 'https://twitter.com/chatieio' },
             { label: 'YouTube',         href: 'https://www.youtube.com/playlist?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh' },
             { label: 'OpenCollective',  href: 'https://opencollective.com/wechaty' },
-            { label: 'WeChat',          href: 'https://gitter.im/chatie/wechaty' },
+            { label: 'Meeting Notes',   href: 'https://bit.ly/2zpi2XG' },
           ],
         },
         {
           title: 'More',
           items: [
-            { label: 'Blog',      href: 'https://wechaty.js.org/community/' },
+            { label: 'Blog',      href: 'https://wechaty.js.org/blog/' },
             { label: 'Book',      href: 'http://www.bot5.club/blogs/chatbot-0-1/' },
             { label: 'Branding',  to:   'branding' },
             { label: 'Press',     to:   'press' },

@@ -1,6 +1,5 @@
 ## wechaty.js.org
 
-[![Editor CI](https://github.com/wechaty/wechaty.js.org/workflows/Editor%20CI/badge.svg)](https://github.com/wechaty/wechaty.js.org/actions?query=workflow%3A%22Editor+CI%22)
 [![GitHub Pages CI](https://github.com/wechaty/wechaty.js.org/workflows/GitHub%20Pages%20CI/badge.svg)](https://github.com/wechaty/wechaty.js.org/actions?query=workflow%3A%22GitHub+Pages+CI%22)
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
 
@@ -55,13 +54,21 @@ see more: [Do not include Date in URL](https://github.com/wechaty/wechaty.github
 
 Please do not commit unrelated files.
 
-### 5. Add Videos
+### 5. Add Videos or pdf
 
 Example
 
 ```html
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3eq8wJfCAWs" frameborder="0" allowfullscreen></iframe>
+{% include iframe.html src="https://www.youtube.com/watch?v=3eq8wJfCAWs" %}
 ```
+
+or
+
+```html
+{% include iframe.html src="/assets/2020/qijibot/final.pdf" %}
+```
+
+see more： [Add iframe to wechaty blog](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)
 
 ### 6. Add links to anchor in paragraph
 

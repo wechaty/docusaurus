@@ -1,6 +1,6 @@
 ---
 title: "Deliver dialogs with SuperScript"
-author: Samurais
+author: samurais
 categories: tutorial
 tags:
   - code
