@@ -1,6 +1,6 @@
 ---
 name: Tang Guangbin
-site: https://github.com/Nebell
+site: https://github.com/nebell
 avatar: /assets/developers/TangGuangbin/avatar.jpg
 bio: A student.
 email: 
@@ -11,7 +11,7 @@ A student interested in OS.
 
 ## Contact me
 
-- Github: <https://github.com/Nebell>
+- Github: <https://github.com/nebell>
 - Email：<>
 - Website: <>
   
