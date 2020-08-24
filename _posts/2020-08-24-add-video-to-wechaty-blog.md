@@ -1,15 +1,15 @@
 ---
-title: "使用jekyll include在wechaty博客中快速插入视频"
+title: 使用jekyll include在wechaty博客中快速插入视频
 author: univerone
 categories: tutorial
 image: /assets/2020/add-video-to-wechaty-blog/header.png
 ---
 
-> 作者: [univerone](https://github.com/univerone/)
+撰写暑期2020中期POC博客的时候，遇到了在博文中插入视频、PPT等iframe的需求，可以在markdownn文档中直接使用bilibili等视频网站提供的视频嵌入代码，然而这样视频的样式不够美观，iframe没有铺满整个宽度并保持一定宽高比。
 
 ## 1. 背景
 
-在撰写暑期2020中期POC博客的时候，遇到了在博文中插入视频、PPT等iframe的需求，可以在markdownn文档中直接使用bilibili等视频网站提供的视频嵌入代码，然而这样视频的样式不够美观，iframe没有铺满整个宽度并保持一定宽高比，在[lijiarui](https://wechaty.js.org/developers/lijiarui/)和[Huan](https://wechaty.js.org/developers/huan/)的建议下，参考[之前的博客](https://wechaty.js.org/2020/05/19/qnamaker-juzi-bot-for-investors-rui/),应用如下样式插入iframe能够达到较为满意的效果（宽高比为16:9）。
+在[lijiarui](https://wechaty.js.org/developers/lijiarui/)和[Huan](https://wechaty.js.org/developers/huan/)的建议下，参考[之前的博客](https://wechaty.js.org/2020/05/19/qnamaker-juzi-bot-for-investors-rui/),应用如下样式插入iframe能够达到较为满意的效果（宽高比为16:9）。
 
 ```html
 <div class="video-container" style="
