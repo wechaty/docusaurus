@@ -159,12 +159,12 @@ image: /assets/2020/add-video-to-wechaty-blog/header.png
 {% raw %}
 
 ```liquid
-{% include iframe.html src="https://v.youku.com/v_show/id_XMTkyNDgzMjY5Ng==.html" %}
+{% include iframe.html src="https://v.youku.com/v_show/id_XMzcyODcwMzQzNg==.html" %}
 ```
 
 {% endraw %}
 
-{% include iframe.html src="https://v.youku.com/v_show/id_XMTkyNDgzMjY5Ng==.html" %}
+{% include iframe.html src="https://v.youku.com/v_show/id_XMzcyODcwMzQzNg==.html" %}
 
 ### 腾讯视频
 
