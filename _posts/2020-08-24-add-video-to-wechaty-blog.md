@@ -5,7 +5,7 @@ categories: tutorial
 image: /assets/2020/add-video-to-wechaty-blog/header.png
 ---
 
-撰写暑期2020中期POC博客的时候，遇到了在博文中插入视频、PPT等iframe的需求，可以在markdownn文档中直接使用bilibili等视频网站提供的视频嵌入代码，然而这样视频的样式不够美观，iframe没有铺满整个宽度并保持一定宽高比。
+撰写暑期2020中期POC博客的时候，遇到了在博文中插入视频、PPT等iframe的需求，可以在markdown文档中直接使用bilibili等视频网站提供的视频嵌入代码，然而这样视频的样式不够美观，iframe没有铺满整个宽度并保持一定宽高比。
 
 ## 1. 背景
 
@@ -159,12 +159,12 @@ image: /assets/2020/add-video-to-wechaty-blog/header.png
 {% raw %}
 
 ```liquid
-{% include iframe.html src="http://v.youku.com/v_show/id_XMjQ3NjUxMjAwOA==.html" %}
+{% include iframe.html src="https://v.youku.com/v_show/id_XMjQ3NjUxMjAwOA==.html" %}
 ```
 
 {% endraw %}
 
-{% include iframe.html src="http://v.youku.com/v_show/id_XMjQ3NjUxMjAwOA==.html" %}
+{% include iframe.html src="https://v.youku.com/v_show/id_XMjQ3NjUxMjAwOA==.html" %}
 
 ### 腾讯视频
 
