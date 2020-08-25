@@ -6,7 +6,8 @@ categories: project
 image: /assets/2020/work-puppet/pic2.jpg
 tags:
   - featured
-  - Soc2020
+  - soc2020
+  - soc
   - Wechat Work
 ---
 
