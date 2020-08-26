@@ -1,11 +1,9 @@
 ---
 title: "用Node+wechaty写一个爬虫脚本每天定时给女(男)朋友发微信暖心话"
 author: Leo_chen
-date: '2019-04-02 17:30:52 +0800'
 categories: project
 tags:
   - code
-  - home
   - featured
 image: /assets/2019/node-wechaty-1.jpeg
 ---
@@ -14,7 +12,6 @@ image: /assets/2019/node-wechaty-1.jpeg
 
 ![koa2](/assets/2019/node-wechaty-1.jpeg)
 微信每日说，每日自动发送微信消息给你心爱的人。
-<!--more-->
 
 ## 项目介绍
 
@@ -337,7 +334,8 @@ npm run start
 
 1. 执行npm run start时无法安装puppet-puppeteer&&Chromium
 
-* Centos7下部署出现以下问题
+Centos7下部署出现以下问题
+
 ![image](/assets/2019/koa-wechaty-7.jpeg)
 
 问题原因:[https://segmentfault.com/a/1190000011382062](https://segmentfault.com/a/1190000011382062)

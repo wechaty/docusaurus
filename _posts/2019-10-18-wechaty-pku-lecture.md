@@ -1,12 +1,11 @@
 ---
-title: "北大开源实验班"
+title: "Wechaty 走进北大开源实验班"
 author: limingth
-date: '2019-10-18T09:00:00+0800'
 categories: event
 tags:
   - meetup
   - lecture
-  - home
+  - news
 image: /assets/2019/wechaty-pku-lecture/pku-liming2.jpeg
 ---
 
@@ -18,8 +17,6 @@ image: /assets/2019/wechaty-pku-lecture/pku-liming2.jpeg
 * Wechaty开源社区治理  
 * Wechaty社区生态治理  
 * Wechaty应用案例分享  
-
-<!--more-->
 
 ![北大讲座现场]({{ '/assets/2019/wechaty-pku-lecture/wechaty-pku-lecture.jpeg' | relative_url }})
 

@@ -1,11 +1,10 @@
 ---
 title: '给机器人添加发送图片视频功能'
 author: mukaiu
-date: '2017-04-13 20:37:11 +0800'
 categories: feature
 tags:
   - code
-  - home
+  - featured
 image: /assets/2017/mukaiu-ding-code.jpg
 ---
 
@@ -13,11 +12,9 @@ image: /assets/2017/mukaiu-ding-code.jpg
 
 作者：@[mukaiu](https://github.com/mukaiu), [Wechaty Contributor](https://github.com/orgs/Chatie/teams/contributor)
 
-公司活动，需要对入群用户进行管理和自动回复。前期在Node Party Beijing上接触到@zixia的分享，Wechaty刚好能支持该活动，支持Docker部署，是一个很棒的Bot Framework。
+公司活动，需要对入群用户进行管理和自动回复。前期在Node Party Beijing上接触到 @huan 的分享，Wechaty刚好能支持该活动，支持Docker部署，是一个很棒的Bot Framework。
 
 开发过程中发现，[#4 Support Message Type of Image/Video](https://github.com/wechaty/wechaty/issues/4)此功能还未实现，决定完成该项特征。
-
-<!--more-->
 
 ## 1. 问题分析
 
@@ -126,7 +123,7 @@ MediaId就是我们需要的，直接调用createMessage,sendMessage即可发送
 
 ## 3.整合Wechaty
 
-为快速验证可行性，直接添加了Wechaty.sendMedia。后和@zixia、@lijiarui讨论，决定使用say(MediaMessage(filename))的形式发送媒体文件。
+为快速验证可行性，直接添加了Wechaty.sendMedia。后和@huan @lijiarui讨论，决定使用say(MediaMessage(filename))的形式发送媒体文件。
 重载
 
 ```js
@@ -141,23 +138,24 @@ Room.say(mediaMessage: MediaMessage)
 ## 4.坑
 
 1. 测试期间发现，发送图片有时候会失败，原因是无法获取mediaId，第一感觉是，难道还有细节没有发现?对比post数据，完全一致，没有问题，那问题出在哪呢？
-后来看源码才发现
 
-```js
-var e = location.host
-, t = "weixin.qq.com"
-, o = "file.wx.qq.com"
-, n = "webpush.weixin.qq.com";
-e.indexOf("wx2.qq.com") > -1 ? (t = "weixin.qq.com",
-o = "file2.wx.qq.com",
-```
+    后来看源码才发现
 
-原来还有个地址是wx2.qq.com。对应的文件上传地址是file2.wx.qq.com。不仔细啊
+    ```js
+    var e = location.host
+    , t = "weixin.qq.com"
+    , o = "file.wx.qq.com"
+    , n = "webpush.weixin.qq.com";
+    e.indexOf("wx2.qq.com") > -1 ? (t = "weixin.qq.com",
+    o = "file2.wx.qq.com",
+    ```
+
+    原来还有个地址是wx2.qq.com。对应的文件上传地址是file2.wx.qq.com。不仔细啊
 
 1. 另一个坑是微信Web对视频大小有20M限制，这个也是开始没有注意的，发送大视频会失败
 1. 循环依赖
-由于MediaMessage继承Message，Message.say(MediaMessage)又需要引用MediaMessage.OMG,循环引用,TS报错了不支持这么玩～
-所以我把MediaMessage移入了message.ts,删除了media-message.ts,无中生有了186行变更😊
+    由于MediaMessage继承Message，Message.say(MediaMessage)又需要引用MediaMessage.OMG,循环引用,TS报错了不支持这么玩～
+    所以我把MediaMessage移入了message.ts,删除了media-message.ts,无中生有了186行变更😊
 
 ## 5.End
 

@@ -6,6 +6,7 @@ all: serve
 
 .PHONY: install
 install:
+	gem install bundler
 	bundle install && bundle update
 
 .PHONY: test
@@ -18,7 +19,11 @@ code:
 
 .PHONY: clean
 clean:
-	rm -fr docs/_site
+	rm -fr _site
+
+.PHONY: build
+build:
+	bundle exec jekyll build
 
 .PHONY: serve
 serve:

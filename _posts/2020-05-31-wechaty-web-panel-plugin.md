@@ -1,14 +1,13 @@
 ---
 title: "wechaty Web Panel的plugin诞生"
 author: leo_chen
-date: '2020-05-31 18:03:52 +0800'
 categories: project
 tags:
   - code
   - wechaty
   - webPanel
   - plugins
-  - home
+  - feature
 image: /assets/2020/web-panel-plugin/web-head.png
 ---
 

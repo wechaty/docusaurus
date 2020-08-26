@@ -1,6 +1,5 @@
 ---
 title: "AI、Bot、WeChaty相关思考"
-date: 2018-08-30 09:00 +0800
 author: lirobin1998
 categories: article
 tags:
@@ -14,7 +13,6 @@ image: /assets/2018/hi-ai.jpg
 
 ![hiai](/assets/2018/hi-ai.jpg)
 
-<!--more-->
 ## 一、对AI的思考
 
 对AI的思考我们谈三点：AI的基本概念、AI研究的分类、AI研究的关键。

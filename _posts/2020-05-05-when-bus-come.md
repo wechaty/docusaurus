@@ -1,12 +1,10 @@
 ---
 title: "Wechaty 实时公交查询"
 author: ershing
-date: '2020-05-05 12:00:00 +0800'
 categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus
-  - home
 image: /assets/2020/when-bus-come/teaser.jpg
 ---
 
@@ -16,8 +14,6 @@ image: /assets/2020/when-bus-come/teaser.jpg
 ## 需求
 
 我们很多时候需要到某个公交站，但是不知道公交什么时候来，导致等来很久才到，浪费来太多的时间，如果可以提前知道车什么时候来，就可以准时出门，不用在车站等这么久的时间，特别这么炎热的天气。当然，已经有很多小程序可以做到这个查询的工作，这里的仓库也是用来广州公交行讯通小程序的接口，或许你觉得多此一举，但是我觉得这个只是其中一个小功能集成在某个机器人的问答交互功能当中，后面扩展起来还是有很多可以做的工作。
-
-<!--more-->
 
 ## Wechaty 和 Puppet
 

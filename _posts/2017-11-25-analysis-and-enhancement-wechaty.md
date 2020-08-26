@@ -1,11 +1,10 @@
 ---
 title: "解析WebWxApp代码来增强wechaty功能（一）"
-date: 2017-11-09 19:00 +0800
 author: binsee
 categories: hack
 tags:
   - code
-  - home
+  - featured
 image: /assets/2017/binsee-wechaty-structure.png
 ---
 
@@ -14,8 +13,6 @@ image: /assets/2017/binsee-wechaty-structure.png
 ![wechaty结构脑图][1]
 
 一个菜鸟如何通过解析webWxApp与wechaty代码，来给wechaty增加新特性的回顾。
-
-<!--more-->
 
 ## 简述
 

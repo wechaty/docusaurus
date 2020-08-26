@@ -1,11 +1,11 @@
 ---
 title: Wechaty Country Wide Developer Conference
-date: '2018-09-15 10:0:0 +0800'
 author: lijiarui
 categories: event
 tags:
   - meetup
-  - home
+  - news
+  - featured
 image: /assets/2018/country-wide-developer-conference.jpg
 ---
 
@@ -27,8 +27,6 @@ image: /assets/2018/country-wide-developer-conference.jpg
 10. [罗淼](https://github.com/bitwater), Full stack developer at [ColorfulClouds](http://caiyunapp.com/), interested in AI, Game and Philosophy. He built a translator bot based on their translate API and wechaty.
 11. [龚澄(Gcaufy)](https://github.com/gcaufy), Author of [WePY](https://github.com/tencent/wepy), a mini program framework for Wechat. Tencent Engineer.
 
-<!--more-->
-
 Thanks to [李彬彬（杉木）](https://github.com/binsee/) and [龚澄(Gcaufy)](https://github.com/gcaufy), they come to Beijing so we try to have this interesting meet-up, talking about wechaty ideas and chatbot. When [伍翀](https://github.com/iyjian) heard about [李彬彬（杉木）](https://github.com/binsee/) will come this conference, he bought an airline form Shanghai to Beijing.
 
 Here is their sharing:
@@ -42,7 +40,7 @@ Here is their sharing:
 - [罗淼](https://github.com/bitwater): talk about his translator bot and the experience using wechaty.
 - [张灵箫](https://github.com/judaschrist): talk about his intresting information bot and the experience using wechaty.
 
-### Introduction Video
+## Introduction Video
 
 <div class="video-container" style="
     position: relative;
