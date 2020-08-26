@@ -18,9 +18,6 @@ image: /assets/2020/wechaty-statistical-robot/header.jpg
 
 新冠疫情期间，公司订餐需要接龙，每天接龙也是真的麻烦。使用了机器人，再不怕同事忘记订餐了。
 
-
-<!--more-->
-
 ### 功能
 
 - 统计功能
@@ -43,14 +40,13 @@ git clone https://github.com/ovarte/statistical-robot.git
 cd statistical-robot
 ```
 
-- 安装依赖机器人所需依赖
+安装依赖机器人所需依赖
 
 ```shell
 npm install
 ```
 
-
-- 启动项目
+启动项目
 
 ```shell
 npm serve
