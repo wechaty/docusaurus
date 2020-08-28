@@ -7,17 +7,21 @@ image: assets/images/logo.png
 生活中学校通知信息都会借助微信群聊发布，并且时常会要求“收到请回复”。这就导致了少数重要信息与大量无关信息混杂在一起，屏蔽与不屏蔽都不是好办法。遂实现了命令行控制的「微信机器人」，并在此基础上完成了群聊信息过滤功能。
 
 ## 1. 开发过程
+
 1. 微信官方并没有相关的API。已知的`企业微信机器人`和`聊天平台`有局限性，并不能灵活的完成我所期望的功能以及实现未来可能的拓展。
 2. 找了很多开源的`wxbot`，但他们都是基于Web版微信，笔者的微信账号并不能登陆成功。
 3. 后来找到了`Wechaty`，发现它完美解决了与微信交互的问题，并且封装了各式各样的接口，有详细的API文档。于是参与了[开源激励计划](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty#2%E5%85%8D%E8%B4%B9Token%E5%8F%82%E4%B8%8E%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92)，获取了免费甚至长期有效的iPad Puppet的Token。
 
 ## 2. 核心代码
+
 完整代码请访问[LazyBot Public Repo](https://github.com/RaymondJiangkw/lazyBot)。
+
 ### 利用Wechaty与微信交互
+
 查阅了`Wechaty`的API文档，并且学习了`介绍视频`之后，笔者首先完成了一个入口程序，以方便移植与拓展。
+
 ```javascript
 // ./index.js
-
 const tokenJSON = require("./token.json")
 const infoJSON = require("./package.json")
 console.log(`Running LazyBot ${infoJSON.version}...`)
@@ -30,12 +34,13 @@ console.log(`Detect 'token' from './token.json': ${tokenJSON.token}`)
 const main = require("./main.js")
 main(tokenJSON.token, './bot-settings.json')
 ```
+
 其中`token`被保存在`./token.json`中，`bot`的设定被保存在`./bot-settings.json`中。
 
 随后，笔者仿照`视频`搭建了一个`Wechaty`的基本框架。
+
 ```javascript
 // ./main.js
-
 module.exports = function(token, botSettingFile) {
     // Import Wechaty
     // ...
@@ -53,10 +58,8 @@ module.exports = function(token, botSettingFile) {
     // Initialize Writing Settings
     // Writing Settings of Bot to local file every 10 min.
     // ...
-
     // Initialize Bot Settings
     // ...
-
     // Begin Bot
     bot
     .on('scan', function (qrcode, status) {
@@ -82,15 +85,17 @@ module.exports = function(token, botSettingFile) {
     .on('message', async function(message){
         // ...
     });
-
     bot.start();
 }
 ```
+
 其中，`bot`的配置被保存在了`botSettings`当中，并且每隔10 min就被保存到本地`./bot-settings.json`中。
 
 ### 解析命令
+
 首先，为了区别普通的消息与命令，笔者规定任何以`.`开头的消息文本都被视为命令。但是保险起见，笔者要求在群聊当中，
 需要先`开启 LazyBot`，然后才会触发解析。
+
 ```javascript
 // ./utils.js
 /**
@@ -101,7 +106,6 @@ module.exports = function(token, botSettingFile) {
 function isCommand(message) {
     return message[0] === '.';
 }
-
 // ./main.js -> 'message' event function
 if (message.room()) {
     const id = message.room().id;
@@ -120,6 +124,7 @@ if (message.room()) {
 
 然后，是解析的实现。命令以`空格`作为分隔符，但是考虑到有时候空格可能会作为`参数`的一部分，笔者采用了被包裹在配对的`"`
 或`'`之间的`空格`将不再被视作为分隔符的解决方案。解析完毕后，会生成一个命令对象。
+
 ```javascript
 // ./utils.js
 /**
@@ -148,10 +153,12 @@ function parseCommand (message) {
     return ret;
     }
 ```
+
 其中，以`--`开头的参数被认为是`boolean flag`，而以`-`开头的参数被认为是`non-boolean flag`，并且其后所接的参数被认为属于这个`flag`。
 
 至此，命令行的输入与解析就实现完成。之后就是相应功能的实现。为了能够一般化命令行指令，笔者定义了一个处理中心，接收解析好的命令，并且
 找到合适的实例去执行。
+
 ```javascript
 // ./commands.js
 /**
@@ -191,22 +198,21 @@ class CommandUnits{
     }
 }
 ```
+
 其中，`CommandUnits`接收正常的`Command`和正则形式的`Regex Command`，所有的`Command`在使用前都需要显式的注册到`CommandUnits`中。
 并且，`CommandUnits`在确定接受完所有的注册后，需要显式的调用`Ready`去做一些初始化工作。
 
 随后，就是`Command`的具体实现。同样，笔者定义了一个类来完成封装。
+
 ```javascript
 // ./commands.js
-
 class Command{
     _parse(commands) {
         const parsedCommands = {
             mainCommand: commands.mainCommand,
             err: "",
             args: [],
-            flags:{
-
-            }
+            flags:{}
         };
         // Parse parsed Commands to suit needs of this specific instance
         // ...
@@ -249,10 +255,12 @@ class Command{
     }
 }
 ```
+
 其中，`flags`被以`Array<Object>`的形式注册到`Command`中，相应的处理函数也被注册到其中。笔者设计`Command`类时，要求为`Command`和每个
 `flag`提供帮助文本以自动生成`帮助信息`。
 
 下面是两个简单的使用的例子。
+
 ```javascript
 // 让 Bot 识别 .hi 指令，对注册过的用户回复“欢迎”的消息。
 commandUnits.RegisterCommand(new Command(".hi",[],[],
@@ -264,6 +272,7 @@ function (commands, message, botSettings) {
     return `Hello, ${message.from().name()}! What a nice day!`;
 }), "Say Hi to Bot");
 ```
+
 <img src="../assets/2020/commandline-filter/1.jpg" width=500/>
 
 ```javascript
@@ -287,14 +296,16 @@ function (commands, message, botSettings) {
     return `Hello, ${message.from().name()}!`;
 }), "Register Account");
 ```
+
 <img src="../assets/2020/commandline-filter/0.jpg" width=500/>
 
 ### 实现群聊信息过滤
+
 在准备好所有工具过后，就要实现群聊信息的过滤了。笔者采用的是`黑名单`和`白名单`方案，各个方案接受`指定用户`的检测或者是基于`正则表达式`的文本检测。
 保险起见，笔者要求用户显式的开启过滤功能，并且为`黑名单`和`白名单`分别设置了开关。
+
 ```javascript
 // ./command.js
-
 commandUnits.RegisterCommand(new Command(".monitor",
 [
     {flag: "off", description: "Turn Off The Monitor"},
@@ -330,7 +341,6 @@ commandUnits.RegisterCommand(new Command(".whitelist",
 async function (commands, message, botSettings) {
     // Check whether `.whitelist` is valid in current environment
     // ...
-    
     const topic = await message.room().topic();
     const id = message.room().id;
     const userId = message.from().id;
@@ -351,6 +361,7 @@ async function (commands, message, botSettings) {
     }
 }), "Manipulate WhiteList of Message Filter of Group Chat");
 ```
+
 其中，`.blacklist`同理。
 
 然后，完善`main.js`中的相应事件，`LazyBot`就初步搭建成功。
@@ -361,8 +372,10 @@ async function (commands, message, botSettings) {
 <img src="../assets/2020/commandline-filter/3.jpg" width=500/>
 
 ## 3. 已知问题
+
 1. 暂时无法完成连续性指令。
 2. 设置被缓存在本地文件当中，写入数据库会更好。
 
 ## 4. 优势
+
 1. 实现了泛式的命令行控制，易于拓展功能。
