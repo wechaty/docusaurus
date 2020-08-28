@@ -115,7 +115,8 @@ pm2 logs koa  //后台查看运行程序  首次会显示扫码日志
 ### 较wechat-assistant-padplus进行的改动
 
 由于本人是一名后端开发，web协议的wechaty本来有Java语言的版本，但是由于网页版微信限制(详见[issues](https://github.com/wechaty/wechaty/issues/603))。所以找到了另外一种协议 -- IPAD协议。问题又来了，没有对应语言的版本，所以找到了wechat-assistant-padplus项目，项目主要以JS为主，对其做了以上变动。  
-#### 1、注释了 wechat-assistant-padplus 中定时任务的相关业务逻辑。
+
+#### 1、注释了 wechat-assistant-padplus 中定时任务的相关业务逻辑
 
 #### 2、将KOA与wechaty整合到了一个项目(因为需要在koa暴露的Web API接口中调用wechaty的初始化属性)  
 
