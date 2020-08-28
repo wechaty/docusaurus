@@ -14,7 +14,7 @@ date: 202008-28 11:25:47
 [![node version](https://img.shields.io/badge/wechaty-%3E%3D0.38.4-blue.svg)](https://github.com/Chatie/wechaty)
 [![node version](https://img.shields.io/badge/wechaty--puppet--padplus-%3E%3D0.6.2-green)](https://github.com/wechaty/wechaty-puppet-padplus)
 
-# wechaty-alert-padplus
+# wechaty-alert-padplus #
 
 ## 微信机器人 - 实时转发预警信息
 
@@ -47,7 +47,7 @@ date: 202008-28 11:25:47
 命令行运行：npm i pm2 -g
 
 #### 4、修改token  //在wechaty-alert-padplus/wechaty/wechat.config.js文件的`WECHATYTOKEN`处修改
- 
+
 ### 安装启动过程
 
 #### 1、下载项目
@@ -78,17 +78,17 @@ pm2 logs koa  //后台查看运行程序  首次会显示扫码日志
 
 #### 2、 端口目前是15999，请先确保端口未被占用。修改需到wechaty/app.js  51行处修改
 
-#### 3、	配置群名称需要到wechaty/wechaty/wechaty.config.js中 25行修改ROOMLIST数组中的roomName属性，目前接口逻辑只识别一个群(好友同理)
+#### 3、 配置群名称需要到wechaty/wechaty/wechaty.config.js中 25行修改ROOMLIST数组中的roomName属性，目前接口逻辑只识别一个群(好友同理)
 
-#### 4、	扫描成功后会添加缓存文件，下次免登录，文件地址及名称 wechaty/ WechatEveryDay.memory-card，如果自动登录了后，想切换账号，删除该文件。
+#### 4、 扫描成功后会添加缓存文件，下次免登录，文件地址及名称 wechaty/ WechatEveryDay.memory-card，如果自动登录了后，想切换账号，删除该文件。
 
-#### 5、	日志及错误记录在wechaty/koa/log目录中
+#### 5、 日志及错误记录在wechaty/koa/log目录中
 
-#### 6、	如果不是后台运行的话，请设置计算机进入休眠状态为 从不。建议最好开启后台运行，并且修改状态。
+#### 6、 如果不是后台运行的话，请设置计算机进入休眠状态为 从不。建议最好开启后台运行，并且修改状态。
 
 具体修改流程(win10)  Win+R –> control –> 搜索:电源  -> 电源选项 –> 选择关闭显示器的时间 –> 使计算机进入休眠状态 –> 从不
 
-#### 7、	pm2进程守护工具常用命令
+#### 7、 pm2进程守护工具常用命令
 
 1）pm2 logs 线程名 。  查看线程日志  例如：pm2 logs koa  
 2）pm2 list 。 查看pm2所有应用  
@@ -115,9 +115,9 @@ pm2 logs koa  //后台查看运行程序  首次会显示扫码日志
 ### 较wechat-assistant-padplus进行的改动
 
 由于本人是一名后端开发，web协议的wechaty本来有Java语言的版本，但是由于网页版微信限制(详见[issues](https://github.com/wechaty/wechaty/issues/603))。所以找到了另外一种协议 -- IPAD协议。问题又来了，没有对应语言的版本，所以找到了wechat-assistant-padplus项目，项目主要以JS为主，对其做了以上变动。  
-1、 注释了 wechat-assistant-padplus 中定时任务的相关业务逻辑。  
-2、 将KOA与wechaty整合到了一个项目(因为需要在koa暴露的Web API接口中调用wechaty的初始化属性)  
-3、 去除了MongoDB与天气接口
+#### 1、注释了 wechat-assistant-padplus 中定时任务的相关业务逻辑。  
+#### 2、将KOA与wechaty整合到了一个项目(因为需要在koa暴露的Web API接口中调用wechaty的初始化属性)  
+#### 3、去除了MongoDB与天气接口
 
 ### 更多问题
 
