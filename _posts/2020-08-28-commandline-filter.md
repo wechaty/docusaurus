@@ -100,7 +100,7 @@ module.exports = function(token, botSettingFile) {
 // ./utils.js
 /**
  * Test whether message is a command
- * @param {string} message 
+ * @param {string} message
  * @returns {boolean}
  */
 function isCommand(message) {
@@ -132,7 +132,7 @@ if (message.room()) {
  * ' ', which is not between '' or "", is perceived as separator
  * subCommand beginning with '-' is perceived as non-boolean flag
  * subCommand beginning with '--' is perceived as boolean flag
- * @param {string} message 
+ * @param {string} message
  */
 function parseCommand (message) {
     // ... function for checking boolean flag
@@ -229,11 +229,11 @@ class Command{
         // ...
     }
     /**
-     * 
-     * @param {string} mainCommand 
-     * @param {Array<{flag: string, description: string}>} booleanFlags 
-     * @param {Array<{flag: string, description: string}>} nonBooleanFlags 
-     * @param {(commands, message, botSettings) => string} caller 
+     *
+     * @param {string} mainCommand
+     * @param {Array<{flag: string, description: string}>} booleanFlags
+     * @param {Array<{flag: string, description: string}>} nonBooleanFlags
+     * @param {(commands, message, botSettings) => string} caller
      */
     constructor(mainCommand, booleanFlags, nonBooleanFlags, caller) {
         this.mainCommand = mainCommand;
@@ -277,7 +277,7 @@ function (commands, message, botSettings) {
 
 ```javascript
 // 让 Bot 识别 .register 指令， 以接受用户的注册。对注册过的用户，提示已经注册过，除非显式加入`--force`参数。
-commandUnits.RegisterCommand(new Command(".register", 
+commandUnits.RegisterCommand(new Command(".register",
 [
     {
         flag:"force",
