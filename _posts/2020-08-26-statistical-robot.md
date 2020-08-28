@@ -6,7 +6,7 @@ tags:
   - wechaty
   - wechaty-puppet-padplus
   - order
-image: /assets/2020/wechaty-statistical-robot/header.jpg
+image:
 ---
 > Author: [ovarte](https://github.com/ovarte)
 > Code: [statistical-robot](https://github.com/ovarte/statistical-robot)
