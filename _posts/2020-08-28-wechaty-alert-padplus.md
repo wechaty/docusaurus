@@ -1,5 +1,3 @@
-# wechaty-alert-padplus
-
 ---
 title: 基于Wechaty-IPAD协议的预警消息转发机器人
 author: songbingjun
@@ -16,13 +14,18 @@ date: 202008-28 11:25:47
 [![node version](https://img.shields.io/badge/wechaty-%3E%3D0.38.4-blue.svg)](https://github.com/Chatie/wechaty)
 [![node version](https://img.shields.io/badge/wechaty--puppet--padplus-%3E%3D0.6.2-green)](https://github.com/wechaty/wechaty-puppet-padplus)
 
+## ---wechaty-alert-padplus---
+
 ## 微信机器人 - 实时转发预警信息
+
 ### 使用须知
+
 1、本项目基于微信IPAD协议，避免了网页版微信登陆不成功的情况  
 2、本项目必须要申请token，具体操作流程请参考[教程](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty#1Token-%E7%9A%84%E5%8A%9F%E8%83%BD%E5%92%8C%E7%94%B3%E8%AF%B7)  
 3、本项目延伸自 wechat-assistant-padplus ，因为官方版本当前只有TypeScript，目前为JavaScript语言。
 
 ### 初衷
+
 服务器上的预警信息天天都要有人一直监控着！好烦啊！能不能找一个机器人让我们能实时看到消息啊！  
 恩，就这样，在网上研究了之后，找到了wechaty。  
 本项目使用koa+wechaty的方式，暴露了Web API接口，方便服务器实时调用，转发到koa后向对应好友、微信群发送消息。也可以通过定时任务，轮询的方式来进行转发消息。
@@ -30,6 +33,7 @@ date: 202008-28 11:25:47
 #### 须知：本项目必须向`wechaty`团队申请`token`, 否则该项目是无法使用的. 申请流程参考: [申请token](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty#1Token-的功能和申请)
 
 ### 安装环境
+
 #### 1、 `Git客户端`
 
 [官网下载地址](https://git-scm.com/downloads)
@@ -45,6 +49,7 @@ date: 202008-28 11:25:47
 #### 4、修改token  //在wechaty-alert-padplus/wechaty/wechat.config.js文件的`WECHATYTOKEN`处修改
 
 ### 安装启动过程
+
 #### 1、下载项目
 
 git clone `https://github.com/Songbingjun/wechat-alert-padplus.git`  //参考git下载方式  
@@ -68,6 +73,7 @@ pm2 logs koa  //后台查看运行程序  首次会显示扫码日志
 ```
 
 ### 注意事项
+
 #### 1、 项目运行后，会出现二维码扫描，如果识别不出二维码的原因可能是命令操作台的字体有问题，调整点阵字体，或者换一个客户端打开命令行，推荐Cmder
 
 #### 2、 端口目前是15999，请先确保端口未被占用。修改需到wechaty/app.js  51行处修改
@@ -91,6 +97,7 @@ pm2 logs koa  //后台查看运行程序  首次会显示扫码日志
 5）pm2 restart all 。 重启所有应用  
 
 ### API接口
+
 #### 1、发送到群
 
 请求方式： GET
@@ -108,8 +115,10 @@ pm2 logs koa  //后台查看运行程序  首次会显示扫码日志
 ### 较wechat-assistant-padplus进行的改动
 
 由于本人是一名后端开发，web协议的wechaty本来有Java语言的版本，但是由于网页版微信限制(详见[issues](https://github.com/wechaty/wechaty/issues/603))。所以找到了另外一种协议 -- IPAD协议。问题又来了，没有对应语言的版本，所以找到了wechat-assistant-padplus项目，项目主要以JS为主，对其做了以上变动。  
-#### 1、注释了 wechat-assistant-padplus 中定时任务的相关业务逻辑。  
+#### 1、注释了 wechat-assistant-padplus 中定时任务的相关业务逻辑。
+
 #### 2、将KOA与wechaty整合到了一个项目(因为需要在koa暴露的Web API接口中调用wechaty的初始化属性)  
+
 #### 3、去除了MongoDB与天气接口
 
 ### 更多问题
