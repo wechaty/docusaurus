@@ -32,13 +32,15 @@ test.skip('pull request title', async t => {
 })
 
 test('image size should not more than 1MB', async t => {
+  const ASSET_FOLDER = path.join(
+    __dirname,
+    '../jekyll/assets'
+  )
+
   const MAX_WIDTH = 1920         // HD
   const MAX_SIZE  = 1024 * 1024  // 1MB
 
-  const fileList = await glob(path.join(
-    __dirname,
-    '../assets/**/*.{jpg,jpeg,png}'
-  ))
+  const fileList = await glob(`${ASSET_FOLDER}/**/*.{jpg,jpeg,png}`)
   t.true(fileList.length > 0, 'should get image file list')
 
   for (const file of fileList) {
