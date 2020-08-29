@@ -1,4 +1,5 @@
 ---
+slug: '/'
 title: Wechaty Docs Index
 ---
 

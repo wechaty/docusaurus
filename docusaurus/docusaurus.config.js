@@ -36,13 +36,13 @@ module.exports = {
 
         { label: 'Docs',            to: 'docs/', position: 'right', activeBasePath: 'docs',
           items: [
-            { label: 'Introduction',    to: 'docs/introduction/README' },
-            { label: 'Getting Started', to: 'docs/getting-started' },
-            { label: 'Tutorial',        to: 'docs/video-tutorial' },
-            { label: 'Recipe',          to: 'docs/recipes/README' },
-            { label: 'Case Study',      to: 'docs/case-study/README' },
-            { label: 'API',             to: 'docs/api/README' },
-            { label: 'FAQ',             to: 'docs/faq/README' },
+            { label: 'Introduction',    to: 'docs/introduction/' },
+            { label: 'Getting Started', to: 'docs/getting-started/' },
+            { label: 'Tutorial',        to: 'docs/tutorials/' },
+            { label: 'Recipe',          to: 'docs/recipes/' },
+            { label: 'Case Study',      to: 'docs/case-study/' },
+            { label: 'API',             to: 'docs/api/' },
+            { label: 'FAQ',             to: 'docs/faq/' },
             { label: 'Troubleshooting', to: 'docs/troubleshooting' },
           ],
         },
@@ -121,8 +121,6 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          // It is recommended to set document id as docs home page (`` path).
-          homePageId: 'README',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/wechaty/wechaty.js.org/edit/master/docusaurus/',

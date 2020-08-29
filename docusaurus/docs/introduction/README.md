@@ -1,4 +1,5 @@
 ---
+slug: /introduction/
 sidebar_label: Introduction Index
 title: Wechaty Introduction
 ---
