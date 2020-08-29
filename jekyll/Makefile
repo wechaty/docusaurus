@@ -30,5 +30,10 @@ serve:
 	bundle exec jekyll serve --incremental
 
 .PHONY: docker
-docker:
-	docker-compose -f config/docker-compose.yml up
+docker-serve:
+	docker run \
+		--rm \
+		-v .:/srv/jekyll:z \
+		-p 4000:4000 \
+		jekyll/jekyll \
+		jekyll serve --force_polling
