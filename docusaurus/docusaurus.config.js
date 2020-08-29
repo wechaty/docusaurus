@@ -47,14 +47,14 @@ module.exports = {
           ],
         },
 
-        // { label: 'Docs',            to:   'docs/introduction/README',             position: 'right' },
-        // { label: 'Getting Started', to:   'docs/getting-started',                 position: 'right' },
-        // { label: 'Tutorial',        to:   'docs/video-tutorial',                  position: 'right' },
-        // { label: 'Recipes',         to:   'docs/recipes/README',                  position: 'right' },
-        // { label: 'Case Study',      to:   'docs/case-study/README',               position: 'right' },
-        // { label: 'API',             to:   'docs/api/README',                      position: 'right' },
-        // { label: 'FAQ',             to:   'docs/faq/README',                      position: 'right' },
-        // { label: 'Troubleshooting', to:   'docs/troubleshooting',                 position: 'right' },
+        // { label: 'Docs',            to:   'docs/introduction/',    position: 'right' },
+        // { label: 'Getting Started', to:   'docs/getting-started',  position: 'right' },
+        // { label: 'Tutorial',        to:   'docs/tutorials/',       position: 'right' },
+        // { label: 'Recipes',         to:   'docs/recipes/',         position: 'right' },
+        // { label: 'Case Study',      to:   'docs/case-study/',      position: 'right' },
+        // { label: 'API',             to:   'docs/api/',             position: 'right' },
+        // { label: 'FAQ',             to:   'docs/faq/',             position: 'right' },
+        // { label: 'Troubleshooting', to:   'docs/troubleshooting',  position: 'right' },
 
         { label: 'GitHub',          href: 'https://github.com/wechaty/wechaty#readme',   position: 'right' },
       ],
@@ -65,10 +65,10 @@ module.exports = {
         {
           title: 'Docs',
           items: [
-            { label: 'Getting Started', to: 'docs/getting-started' },
-            { label: 'Tutorial',        to: 'docs/video-tutorial' },
-            { label: 'FAQ',             to: 'docs/faq/README' },
-            { label: 'API Reference',   to: 'docs/api/README' },
+            { label: 'Getting Started', to: 'docs/getting-started/' },
+            { label: 'Tutorial',        to: 'docs/tutorials/' },
+            { label: 'FAQ',             to: 'docs/faq/' },
+            { label: 'API Reference',   to: 'docs/api/' },
           ],
         },
         {
