@@ -1,6 +1,6 @@
 {
   "name": "wechaty.js.org",
-  "version": "0.5.80",
+  "version": "0.6.2",
   "description": "Wechaty Homepage",
   "private": true,
   "directories": {
@@ -13,12 +13,12 @@
     "lint:ts": "tsc --noEmit",
     "lint:md": "markdownlint --ignore _site/ --ignore node_modules/ '**/*.md'",
     "lint:fn": "file-name-linter .file-name-linter.json",
-    "lint:yml": "yamllint _data/*.yml",
+    "lint:yml": "true || yamllint jekyll/_data/*.yml",
     "test": "npm run lint && npm run test:unit",
     "test:unit": "ts-node --files ./node_modules/.bin/blue-tape 'src/**/*.spec.ts' 'tests/**/*.spec.ts'",
     "build": "npm run docusaurus:build && npm run jekyll:build",
     "build:docusaurus": "npm run docusaurus:build",
-    "jekyll:build": "make build",
+    "jekyll:build": "cd jekyll && make build",
     "docusaurus:start": "cd docusaurus && docusaurus start",
     "docusaurus:build": "cd docusaurus && docusaurus build",
     "docusaurus:swizzle": "docusaurus swizzle",

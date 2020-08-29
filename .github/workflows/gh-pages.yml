@@ -23,9 +23,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install Dependencies
-        run: |
-          npm install
-          sudo make install
+        run: make install
       - name: Test
         run: npm test
       - name: Build
@@ -57,15 +55,14 @@ jobs:
         git checkout master
     - name: Install dependencies
       run: |
-        npm install
-        sudo make install
+        make install
     - name: Bind git worktree with new-gh-pages folder and gh-pages branch
       run: |
         rm -fr new-gh-pages
         git worktree add new-gh-pages gh-pages
     - name: Build and copy all homepage files to new-gh-pages/ together
       run: |
-        bash -x ./scripts/build.sh new-gh-pages
+        bash -x ./scripts/build-all.sh new-gh-pages
     - name: Deploy new-gh-pages
       run: |
         pushd new-gh-pages
