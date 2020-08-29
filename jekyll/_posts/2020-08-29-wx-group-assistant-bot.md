@@ -1,6 +1,6 @@
 ---
 title: "微信营销群机器人客服"
-author: zlh&chy
+author: zlh
 categories: project
 tags:
   - wechaty
