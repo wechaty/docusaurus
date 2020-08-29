@@ -65,7 +65,7 @@ jobs:
         git worktree add new-gh-pages gh-pages
     - name: Build and copy all homepage files to new-gh-pages/ together
       run: |
-        bash -x ./scripts/build.sh new-gh-pages
+        bash -x ./scripts/build-all.sh new-gh-pages
     - name: Deploy new-gh-pages
       run: |
         pushd new-gh-pages
