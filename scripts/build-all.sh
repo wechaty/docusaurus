@@ -33,4 +33,5 @@ buildJekyll
 cp -Rav docusaurus/build/* "$target"
 cp -Rav jekyll/_site/* "$target"
 cp -v config/sitemap.xml "$target"
+rm -f "$target"/README.md
 touch "$target"/.nojekyll
