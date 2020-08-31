@@ -7,13 +7,6 @@ date: 2020-08-28 11:25:47
 > Author: [@Songbingjun](https://github.com/Songbingjun)
 > Code: [@Songbingjun/wechaty-alert-padplus](https://github.com/Songbingjun/wechaty-alert-padplus)
 
-[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/chatie/wechaty)
-[![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
-
-[![node version](https://img.shields.io/badge/node-%3E%3D10-blue.svg)](http://nodejs.cn/download/)
-[![node version](https://img.shields.io/badge/wechaty-%3E%3D0.38.4-blue.svg)](https://github.com/Chatie/wechaty)
-[![node version](https://img.shields.io/badge/wechaty--puppet--padplus-%3E%3D0.6.2-green)](https://github.com/wechaty/wechaty-puppet-padplus)
-
 ## ---wechaty-alert-padplus---
 
 ## 微信机器人 - 实时转发预警信息
