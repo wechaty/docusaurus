@@ -52,9 +52,7 @@ docker pull wechaty/wechaty
 
 #### 2. 设置`wechaty-puppet-hostie`
 
-可使用自定义的随机字符串，为防止与其他用户冲突，建议采用UUIDv4，可用在线生成工具来生成（https://uuidonline.com/ ）。
-
-
+可使用自定义的随机字符串，为防止与其他用户冲突，建议采用UUIDv4，可用在线生成工具来生成，[网址](https://uuidonline.com/)。
 
 ```sh
 export WECHATY_TOKEN=puppet_hostie_your_token
