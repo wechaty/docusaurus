@@ -1,7 +1,7 @@
 ---
 title: 基于Wechaty-IPAD协议的预警消息转发机器人
 author: songbingjun
-date: 202008-28 11:25:47
+date: 2020-08-28 11:25:47
 ---
 
 > Author: [@Songbingjun](https://github.com/Songbingjun)
