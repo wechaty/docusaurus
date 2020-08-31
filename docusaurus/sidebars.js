@@ -15,7 +15,7 @@ module.exports = {
     ],
     Tutorials: [
       'tutorials/README',
-      'video-tutorial',
+      'tutorials/video-tutorial',
     ],
     Recipes: [
       'recipes/README',

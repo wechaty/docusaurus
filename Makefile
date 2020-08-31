@@ -1,38 +1,29 @@
-# Makefile for awesome-chatboot
-# Author: Huan LI <zixia@zixia.net> github.com/huan
+# Makefile for wechaty.js.org
+# Author: Huan LI <zixia@zixia.net> https://github.com/huan
 
 .PHONY: all
-all: serve
+all: install
 
 .PHONY: install
 install:
-	gem install bundler
-	bundle install && bundle update
+	cd jekyll && sudo make install
+	npm install
 
 .PHONY: test
 test:
 	npm run test
 
-.PHONY: code
-code:
-	code .
-
 .PHONY: clean
 clean:
-	rm -fr _site
+	rm -fr jekyll/_site/
+	rm -fr docusaurus/build/
+	rm -fr new-gh-pages/
 
 .PHONY: build
 build:
-	bundle exec jekyll build
-
-.PHONY: serve
-serve:
-	bundle exec jekyll serve --incremental
-
-.PHONY: docker
-docker:
-	docker-compose -f config/docker-compose.yml up
+	cd jekyll && make build
+	cd docusaurus && npm run build
 
 .PHONY: fit-image
 fit-image:
-	./scripts/fit-image.sh assets/
+	./scripts/fit-image.sh jekyll/assets/

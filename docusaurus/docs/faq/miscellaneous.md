@@ -31,3 +31,7 @@ Wechaty can implement many wechat protocol plughins. The plugins are the compone
 > Is this right: wechaty has All api in wechat4u, but wechat 4u don't have all api wechaty has.
 
 No, wechaty use wechaty itself API for wechat4u. They are totally 2 different project and no one contains another.
+
+### How To Ask Questions The Smart Way
+
+<https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md>
