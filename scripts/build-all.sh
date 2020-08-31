@@ -6,11 +6,15 @@ function buildDocusarus () {
   pushd docusaurus
   rm -fr build
   npx docusaurus build
+  mv build/sitemap.xml build/sitemap-docusaurus.xml
   popd
 }
 
 function buildJekyll () {
+  pushd jekyll
   make build
+  mv _site/sitemap.xml _site/sitemap-jekyll.xml
+  popd
 }
 
 target=$1
@@ -27,6 +31,7 @@ buildDocusarus
 buildJekyll
 
 cp -Rav docusaurus/build/* "$target"
-cp -Rav _site/* "$target"
-
+cp -Rav jekyll/_site/* "$target"
+cp -v config/sitemap.xml "$target"
+rm -f "$target"/README.md
 touch "$target"/.nojekyll

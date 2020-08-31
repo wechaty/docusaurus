@@ -1,4 +1,5 @@
 ---
+slug: /case-study/
 sidebar_label: Case Study Index
 title: Cast Study
 ---

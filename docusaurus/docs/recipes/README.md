@@ -1,4 +1,5 @@
 ---
+slug: /recipes/
 title: Wechaty Recipes
 sidebar_label: 'Recipes Index'
 ---
