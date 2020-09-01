@@ -71,7 +71,7 @@ pm2 logs koa  //后台查看运行程序  首次会显示扫码日志
 
 #### 2、 端口目前是15999，请先确保端口未被占用。修改需到wechaty/app.js  51行处修改
 
-#### 3、 配置群名称需要到wechaty/wechaty/wechaty.config.js中 25行修改ROOMLIST数组中的roomName属性，目前接口逻辑只识别一个群(好友同理)
+#### 3、 配置群名称需要到wechaty/wechaty/wechaty.config.js中 25行修改ROOMLIST数组中的roomName属性，目前接口逻辑只识别一个群(向好友发消息类似)
 
 #### 4、 扫描成功后会添加缓存文件，下次免登录，文件地址及名称 wechaty/ WechatEveryDay.memory-card，如果自动登录了后，想切换账号，删除该文件。
 
