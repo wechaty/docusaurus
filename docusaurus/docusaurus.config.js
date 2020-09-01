@@ -76,6 +76,7 @@ module.exports = {
           items: [
             { label: 'Stack Overflow',  href: 'https://stackoverflow.com/questions/tagged/wechaty' },
             { label: 'Gitter',          href: 'https://gitter.im/wechaty/wechaty' },
+            { label: 'Telegram',        href: 'https://t.me/wechaty' },
             { label: 'Twitter',         href: 'https://twitter.com/chatieio' },
             { label: 'YouTube',         href: 'https://www.youtube.com/playlist?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh' },
             { label: 'OpenCollective',  href: 'https://opencollective.com/wechaty' },
