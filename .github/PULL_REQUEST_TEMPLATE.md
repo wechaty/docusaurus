@@ -18,6 +18,20 @@ Make sure these boxes are checked before creating your pull request -- thank you
 - [ ] Keep all filenames & url as lowercase, and use `-` to connect words instead of space. e.g. `2017-10-06-wechat-pc-impactor` instead of `2017-10-06-WeChat PC Impactor`,
 - [ ] Embed the photo & video before publishing, save all external file to a folder named by `${MONTH}-${YOUR_BLOG_SLUG}/` under `/assets/2020` directory.
 - [ ] Add teaser image for the blog
-- [ ] Add your self as an author to the author data file at <https://github.com/wechaty/wechaty.js.org/blob/master/_developers/YOUR_GITHUB_USERNAME.yml> with your GitHub username. And please also remember to reference yourself with the Github username in your blog post, so that we can have nice author information besides your blog after we published it!
+- [ ] Add your self as an author to the author data file at <https://github.com/wechaty/wechaty.js.org/blob/master/_developers/YOUR_GITHUB_USERNAME.md> with your GitHub username. And please also remember to reference yourself with the Github username in your blog post, so that we can have nice author information besides your blog after we published it!
+  For excample:
+  ```md
+  ---
+  name: Jiarui LI (李佳芮)
+  site: https://lijiarui.github.io
+  bio: 句子互动创始人 & CEO，微软人工智能最具价值专家 (AI MVP)
+  avatar: /assets/developers/lijiarui/avatar.png
+  email: rui@juzi.bot
+  twitter: https://weibo.com/u/2175505900
+  ---
+  ```
+  Here is the example file:
+  - lijiarui.md: https://github.com/wechaty/wechaty.github.io/blob/master/_developers/lijiarui.md
+  - It will shown like this on wechaty blog: https://wechaty.github.io/developers/lijiarui/
 
 To read more about the contribute guideline, visit: <https://github.com/wechaty/wechaty.js.org#contribute-guideline>
