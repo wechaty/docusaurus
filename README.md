@@ -5,18 +5,7 @@
 
 ![Wechaty Docusaurus](docs/images/wechaty-docusaurus.png)
 
-[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/images/0)](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/links/0)
-[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/images/1)](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/links/1)
-[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/images/2)](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/links/2)
-[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/images/3)](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/links/3)
-[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/images/4)](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/links/4)
-[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/images/5)](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/links/5)
-[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/images/6)](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/links/6)
-[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/images/7)](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/links/7)
-
-[Contributors List](https://github.com/wechaty/wechaty/wiki/Contributors)
-
-Wechaty Official Homepage: <https://wechaty.js.org>
+<https://wechaty.js.org> is the official wechaty homepage for publishing latest news, blog posts, and documentation from our open source community.
 
 ## How to post a blog
 
@@ -25,8 +14,8 @@ Wechaty Official Homepage: <https://wechaty.js.org>
 1. Create your blog branch (git checkout -b your-blog)
 1. Write your blog in markdown
 1. Add your blog to `_post` folder
-1. Add related image to `assets` folder
-1. Add your info into `_data/authors.yml`
+1. Add related image to `assets` folder (create a `$MONTH-your-blog-slug/` directory to contain your images)
+1. Add your info into `_developers/your_github_id.yml`
 1. Commit your changes (git commit -am 'added a blog')
 1. Push to the branch
 1. Create new Pull Request
@@ -65,13 +54,21 @@ see more: [Do not include Date in URL](https://github.com/wechaty/wechaty.github
 
 Please do not commit unrelated files.
 
-### 5. Add Videos
+### 5. Add Videos or pdf
 
 Example
 
 ```html
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3eq8wJfCAWs" frameborder="0" allowfullscreen></iframe>
+{% include iframe.html src="https://www.youtube.com/watch?v=3eq8wJfCAWs" %}
 ```
+
+or
+
+```html
+{% include iframe.html src="/assets/2020/qijibot/final.pdf" %}
+```
+
+see more： [Add iframe to wechaty blog](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)
 
 ### 6. Add links to anchor in paragraph
 
@@ -90,30 +87,7 @@ Say you have a title as `### 我是? a title.bat`. Then you will get the anchor 
 [奇妙的Link](#我是-a-titlebat)
 ```
 
-## Usage
-
-### Jekyll
-
-Install all the Jekyll requirements and run it at localhost for blog preview.
-
-#### 1 Use Docker Compose
-
-This is the recommended way for new users to easy getting started
-
-```sh
-make docker
-```
-
-#### 2 ~~Install Jekyll by Hand~~
-
-You should not use this way except you are a Ruby expert.
-
-```sh
-make install
-make serve
-```
-
-### Test
+## Test
 
 In order to make sure everything(file name, file size, etc) is ok, you can run the following command to check them before `git push`.
 
@@ -121,29 +95,6 @@ In order to make sure everything(file name, file size, etc) is ok, you can run t
 npm install
 npm test
 ```
-
-### Docusaurus
-
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
-
-1. Installation: `yarn`
-1. Local Development: `yarn start`
-    > This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
-1. Build: `yarn build`
-    > This command generates static content into the `build` directory and can be served using any static contents hosting service.
-1. Deployment `GIT_USER=<Your GitHub username> && USE_SSH=true yarn deploy`
-    > If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
-
-## Directory Structure
-
-We use different branch to support multi language:
-
-- master: English version
-- zh: Chinese version
-
-If you want to contribute to English version code, you can pull request to `master` branch.
-
-If you want to contribute to Chinese version code, you can pull request to `zh` branch.
 
 ## Welcome to contribute
 
@@ -153,26 +104,21 @@ As an open source product, Wechaty thrives from contributions of community membe
 
 At the same time, we also meet up offline all over the world, here is some activities:
 
-- [Wechaty Contributor Dinner](https://wechaty.github.io/2017/04/26/wechaty-meeting/)
-- [The memorabilia of The First Chatie WWDC Party](https://wechaty.github.io/2017/06/06/the-first-chatie-wwdc-party/)
-- [Shanghai WWDC - WeChaty Worldwide Developers Conference](https://wechaty.github.io/2017/08/28/wechaty-shanghai-meetup/)
-- [Wechaty Contributor Dinner with Data Girls](https://wechaty.github.io/2018/01/14/wechaty-contributor-dinner-data-girl/)
-- [Wechaty Country Wide Developer Conference](https://wechaty.github.io/2018/09/15/country-wide-developer-conference/)
+- [Wechaty Contributor Dinner](https://wechaty.js.org/2017/04/26/wechaty-meeting/)
+- [The memorabilia of The First Chatie WWDC Party](https://wechaty.js.org/2017/06/06/the-first-chatie-wwdc-party/)
+- [Shanghai WWDC - WeChaty Worldwide Developers Conference](https://wechaty.js.org/2017/08/28/wechaty-shanghai-meetup/)
+- [Wechaty Contributor Dinner with Data Girls](https://wechaty.js.org/2018/01/14/wechaty-contributor-dinner-data-girl/)
+- [Wechaty Country Wide Developer Conference](https://wechaty.js.org/2018/09/15/country-wide-developer-conference/)
 - .....
 
 ### How to contribute docs?
 
 - Fork this repo
-- Checkout to the right branch
-  - English version: `git checkout master`
-  - Chinese version: `git checkout zh`
 - Create your doc branch: `git checkout -b doc`
 - Write this doc in markdown
 - Commit your changes `git commit -am 'doc comment'`
 - Push to the branch
-- Create new Pull Request to the corresponding branch
-  - English version: pull request to master branch
-  - Chinese version: pull request to zh branch
+- Create new Pull Request
 
 ### More Contribution
 
@@ -188,13 +134,26 @@ Contact rui@chatie.io to learn more
 
 - [Migrating from gitbook to docsify.js](https://timdams.com/2019/05/02/migrating-from-gitbook-to-docsify-js/)
 - [Integrating GitBook with JSDoc to Document Your Open Source Project](https://gist.github.com/KevinAst/7e12648245ff2a8e9c1557135014b933)
-- [F8 2019: Using Docusaurus to Create Open Source Websites](https://www.youtube.com/watch?v=QcGJsf6mgZE)
-- [Jekyll Theme minima](https://github.com/jekyll/minima)
+
+## Writers
+
+[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/images/0)](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/links/0)
+[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/images/1)](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/links/1)
+[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/images/2)](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/links/2)
+[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/images/3)](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/links/3)
+[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/images/4)](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/links/4)
+[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/images/5)](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/links/5)
+[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/images/6)](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/links/6)
+[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/images/7)](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/links/7)
+
+To get to know all our writers, see <https://github.com/wechaty/wechaty.js.org/graphs/contributors>
 
 ## Maintainers
 
-1. @lijiarui, [Rui LI](https://github.com/lijiarui), Founder & CEO of Juzi.BOT
+1. @lijiarui, [Rui LI](https://github.com/lijiarui), Microsoft AI MVP, Founder & CEO of Juzi.BOT (YC W19 Alumni)
 1. @huan, [Huan LI](https://github.com/huan) ([李卓桓](http://linkedin.com/in/zixia)), Tencent TVP of Chatbot, \<zixia@zixia.net\>
+
+And [wechaty/contributors](https://github.com/orgs/wechaty/teams/contributors/members)
 
 ## Copyright & License
 

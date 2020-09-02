@@ -10,7 +10,7 @@ tags:
 image: /assets/2020/multi-language-wechaty-beta-released/multi-language-teaser.png
 ---
 
-> Author: [Huan LI](https://github.com/huan), Author of Wechaty
+Multi-language Wechaty Beta Released! We have Python, Go, Java, and Scala released on June 19, 2020!
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
 [![Wechaty in Python](https://img.shields.io/badge/Wechaty-Python-blue)](https://github.com/wechaty/python-wechaty)
@@ -25,8 +25,6 @@ image: /assets/2020/multi-language-wechaty-beta-released/multi-language-teaser.p
 - [Scala Wechaty Getting Started](https://github.com/wechaty/scala-wechaty-getting-started)
 
 ![Wechaty](/assets/2020/multi-language-wechaty-beta-released/multi-language.png)
-
-Multi-language Wechaty Beta Released! We have Python, Go, Java, and Scala released on June 19, 2020!
 
 ## Agenda
 

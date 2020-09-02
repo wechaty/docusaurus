@@ -7,15 +7,24 @@ type: the domain of this iframe url, if src is a local pdf file, type will be 'p
 
 {% assign src = include.src %}
 {% assign ratio = '56.25%' %}
-{% assign type = src | split: '//' | last | split: '/' | first %}
 {% if src contains '.pdf' %}
   {% assign type = 'pdf' %}
+{% else %}
+  {% assign type = src | split: '//' | last | split: '/' | first %}
 {% endif %}
 {% case type %}
-  {% when 'player.bilibili.com' %}
-    {% assign ratio = '70%' %}
   {% when "pdf" %}
     {% assign src = '/assets/js/viewer-js/#' | append: src %}
+  {% when 'www.bilibili.com' or 'player.bilibili.com' %}
+    {% assign ratio = '70%' %}
+    {% assign src = src | replace: "www.bilibili.com/video/", "player.bilibili.com/player.html?bvid=" | append: "&high_quality=1" %}
+  {% when 'youtu.be' or 'www.youtube.com' %}
+    {% assign src = src | replace: "watch?v=", "embed/" | replace: "youtu.be", "www.youtube.com/embed"  %}
+  {% when 'v.qq.com' %}
+    {% assign ratio = '60%' %}
+    {% assign src = src | replace: ".html", "" | replace: "x/page/", "txp/iframe/player.html?vid="  %}
+  {% when 'v.youku.com' %}
+    {% assign src = src | replace: ".html", "" | replace: "v.youku.com/v_show/id_", "player.youku.com/embed/"  %}
 {% endcase %}
 
 <div style="
