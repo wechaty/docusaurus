@@ -7,11 +7,11 @@ tags:
  - wechaty
  - java
  - soc2020
-image: assets/2020/java-wechaty-transplant/java-wechaty-transplant.jpg
+image: assets/2020/java-wechaty-transplant-midpoc/java-wechaty-transplant-midpoc.jpg
 ---
 
-> Author [@cunkoulaocai](httpsgithub.comcunkoulaocai) 
-> Code [@cunkoulaocaijava-wechaty](httpsgithub.comcunkoulaocaijava-wechaty)
+> Author: [@cunkoulaocai](https://github.com/cunkoulaocai) 
+> Code: [@cunkoulaocai/java-wechaty](https://github.com/cunkoulaocai/java-wechaty)
 
 ## 暑期2020
 
