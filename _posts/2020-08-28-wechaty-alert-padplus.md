@@ -5,7 +5,7 @@ date: 2020-08-31 11:25:47
 image: /assets/2020/alter-padplus/login.png
 ---
 
-> Author: [@Songbingjun](https://github.com/Songbingjun)
+> Author: [@Songbingjun](https://github.com/Songbingjun)  
 > Code: [@Songbingjun/wechaty-alert-padplus](https://github.com/Songbingjun/wechaty-alert-padplus)
 
 ## ---wechaty-alert-padplus---
