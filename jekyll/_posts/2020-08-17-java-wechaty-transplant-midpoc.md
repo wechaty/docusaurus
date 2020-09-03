@@ -18,7 +18,7 @@ image: assets/2020/java-wechaty-transplant/java-wechaty-transplant.jpg
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。
-官网：httpsisrc.iscas.ac.cnsummer2020 官方新闻：httpwww.iscas.ac.cnxshd2016xshy2016202004t20200426_5563484.html
+官网：<https://isrc.iscas.ac.cn/summer2020> 官方新闻：<http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html>
 本项目 [Wechaty Java组件移植] 系 暑期2020 支持的开源项目。
 
 ## 暑期2020 [Wechaty Java组件移植] POC 成果展示
@@ -108,8 +108,8 @@ image: assets/2020/java-wechaty-transplant/java-wechaty-transplant.jpg
 
 ## Demo Day视频
 
-youtube地址为：httpswww.youtube.comwatchv=ipRq3kT32wI
-iframe width=560 height=315 src=httpswww.youtube.comembedipRq3kT32wI frameborder=0 allow=accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture allowfullscreeniframe
+youtube地址为：<https://www.youtube.com/watch?v=ipRq3kT32wI>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ipRq3kT32wI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 联系我们
 
