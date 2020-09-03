@@ -59,6 +59,7 @@ git clone `https://github.com/Songbingjun/wechat-alert-padplus.git`  //参考git
 后台运行： `npm run pm2`
 
 前台示例图片如下:
+
 ![alertBot前台登陆示例](/assets/2020/alter-padplus/login.png)
 
 ### 后台方式启动导航  
