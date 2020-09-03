@@ -60,7 +60,7 @@ git clone `https://github.com/Songbingjun/wechat-alert-padplus.git`  //参考git
 
 前台示例图片如下:
 
-![alertBot前台登陆示例](/assets/2020/alter-padplus/login.png)
+![前台登陆后](/assets/2020/alter-padplus/login.png)
 
 ### 后台方式启动导航  
 
