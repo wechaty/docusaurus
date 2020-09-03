@@ -13,21 +13,6 @@ image: /assets/2020/java-wechaty-transplant/java-wechaty-transplant.jpg
 > Author: [@cunkoulaocai](https://github.com/cunkoulaocai) 
 > Code: [@cunkoulaocai/java-wechaty](https://github.com/cunkoulaocai/java-wechaty)
 
----
-title Wechaty Java 移植组件开发
-date 2020-07-27 0900 +0800
-author cunkoulaocai
-categories project
-tags
- - wechaty
- - java
- - soc2020
-image assets/2020/java-wechaty-transplant/java-wechaty-transplant.jpg
----
-
-> Author [@cunkoulaocai](httpsgithub.comcunkoulaocai) 
-> Code [@cunkoulaocaijava-wechaty](httpsgithub.comcunkoulaocaijava-wechaty)
-
 ## 暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。 官网：<https://isrc.iscas.ac.cn/summer2020> 官方新闻：<http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html> 本项目 [基于python-wechaty的群聊助手机器人] 系 暑期2020 支持的开源项目。
