@@ -10,7 +10,7 @@ tags:
 image: assets/2020/java-wechaty-transplant-midpoc/java-wechaty-transplant-midpoc.jpg
 ---
 
-> Author: [@cunkoulaocai](https://github.com/cunkoulaocai) 
+> Author: [@cunkoulaocai](https://github.com/cunkoulaocai)
 > Code: [@cunkoulaocai/java-wechaty](https://github.com/cunkoulaocai/java-wechaty)
 
 ## 暑期2020
@@ -98,7 +98,6 @@ image: assets/2020/java-wechaty-transplant-midpoc/java-wechaty-transplant-midpoc
 说实话我还是不太懂得怎么写出高质量的单元测试，后续要继续学习。
 
 - 后续工作安排：
-
 
 从目前的进度来看，还是有一些东西需要完成的
 
