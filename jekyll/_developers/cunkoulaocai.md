@@ -2,8 +2,8 @@
 name: yeojongki
 site: https://github.com/cunkoulaocai
 avatar: /assets/developers/cunkoulaocai/avatar.png
-bio: FE Developer.
-email: 
+bio: Java Developer.
+email: 1184016190@qq.com 
 twitter: 
 ---
 
