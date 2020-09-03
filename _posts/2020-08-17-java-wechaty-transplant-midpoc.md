@@ -1,10 +1,19 @@
 ## 暑期2020 [Wechaty Java组件移植] POC 成果展示
 
-| title                     | date                   | author       | categories | image                                                        | tags         |
-| ------------------------- | ---------------------- | ------------ | ---------- | ------------------------------------------------------------ | ------------ |
-| Wechaty Java 移植组件开发 | 2020-08-17 09:00 +0800 | cunkoulaocai | project    | /assets/2020/java-wechaty-transplant/java-wechaty-transplant.jpg | java,soc2020 |
+---
+title: "Wechaty Java 移植组件开发"
+date: 2020-08-17 09:00 +0800
+author: cunkoulaocai
+categories: project
+tags:
+  - wechaty
+  - java
+  - soc2020
+image: /assets/2020/java-wechaty-transplant/java-wechaty-transplant.jpg
+---
 
-> Author: [@cunkoulaocai](https://github.com/cunkoulaocai) Code: [@cunkoulaocai/java-wechaty](https://github.com/cunkoulaocai/java-wechaty)
+> Author: [@cunkoulaocai](https://github.com/cunkoulaocai) 
+> Code: [@cunkoulaocai/java-wechaty](https://github.com/cunkoulaocai/java-wechaty)
 
 ## 暑期2020
 
