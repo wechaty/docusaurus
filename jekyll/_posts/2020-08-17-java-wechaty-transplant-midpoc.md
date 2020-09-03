@@ -1,5 +1,3 @@
-## 暑期2020 [Wechaty Java组件移植] POC 成果展示
-
 ---
 title: Wechaty Java 移植组件开发
 date: 2020-08-17 0900 +0800
@@ -22,6 +20,8 @@ image: assets/2020/java-wechaty-transplant/java-wechaty-transplant.jpg
 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。
 官网：httpsisrc.iscas.ac.cnsummer2020 官方新闻：httpwww.iscas.ac.cnxshd2016xshy2016202004t20200426_5563484.html
 本项目 [Wechaty Java组件移植] 系 暑期2020 支持的开源项目。
+
+## 暑期2020 [Wechaty Java组件移植] POC 成果展示
 
 ## [Wechaty Java组件移植]信息
 
