@@ -2,6 +2,7 @@
 title: 基于Wechaty-IPAD协议的预警消息转发机器人
 author: songbingjun
 date: 2020-08-31 11:25:47
+image: /assets/2020/alter-padplus/login.png
 ---
 
 > Author: [@Songbingjun](https://github.com/Songbingjun)
@@ -56,6 +57,9 @@ git clone `https://github.com/Songbingjun/wechat-alert-padplus.git`  //参考git
 项目启动有两种方式，一种是前台运行，一种是使用pm2进行后台运行  
 前台运行： `npm run dev`  
 后台运行： `npm run pm2`
+
+前台示例图片如下:
+![alertBot前台登陆示例](/assets/2020/alter-padplus/login.png)
 
 ### 后台方式启动导航  
 
