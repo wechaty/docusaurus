@@ -1,10 +1,10 @@
 ---
-name: yeojongki
+name: cunkoulaocai
 site: https://github.com/cunkoulaocai
 avatar: /assets/developers/cunkoulaocai/avatar.png
 bio: Java Developer.
 email: 1184016190@qq.com 
-twitter: 
+twitter:
 ---
 
 一个Java菜鸟，正在修炼中
@@ -14,4 +14,3 @@ twitter:
 - Github: <https://github.com/cunkoulaocai>
 - Email：<1184016190@qq.com>
 - Website: <>
-  
