@@ -10,7 +10,7 @@ tags:
 image: /assets/2020/java-wechaty-transplant/java-wechaty-transplant.jpg
 ---
 
-> Author: [@cunkoulaocai](https://github.com/cunkoulaocai) 
+> Author: [@cunkoulaocai](https://github.com/cunkoulaocai)
 > Code: [@cunkoulaocai/java-wechaty](https://github.com/cunkoulaocai/java-wechaty)
 
 ## 暑期2020
