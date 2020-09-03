@@ -1,6 +1,21 @@
 ## 暑期2020 [Wechaty Java组件移植] POC 成果展示
 
 ---
+
+ title: "暑期2020 [基于python-wechaty的群聊助手机器人] POC 成果展示"
+ date: 2020-08-14 21:30 +0800
+ author: kxz18
+ categories: project
+ image: /assets/2020/groupchat-assistant-bot-poc/header.png
+ tags:
+   - python
+   - soc2020
+   - soc
+---
+> Author: [@kxz18](https://github.com/kxz18)
+> Code: [@kxz18/python-wechaty-groupchat-bot](https://github.com/kxz18/python-wechaty-groupchat-bot)
+
+---
  title: "Wechaty Java 移植组件开发"
  date: 2020-08-17 09:00 +0800
  author: cunkoulaocai
