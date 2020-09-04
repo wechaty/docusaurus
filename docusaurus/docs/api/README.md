@@ -1,4 +1,5 @@
 ---
+slug: /api/
 title: Wechaty API Reference
 sidebar_label: 'API Index'
 ---

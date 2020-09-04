@@ -1,4 +1,5 @@
 ---
+slug: /faq/
 title: Wechaty FAQ
 sidebar_label: FAQ Index
 ---

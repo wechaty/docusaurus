@@ -36,25 +36,25 @@ module.exports = {
 
         { label: 'Docs',            to: 'docs/', position: 'right', activeBasePath: 'docs',
           items: [
-            { label: 'Introduction',    to: 'docs/introduction/README' },
-            { label: 'Getting Started', to: 'docs/getting-started' },
-            { label: 'Tutorial',        to: 'docs/video-tutorial' },
-            { label: 'Recipe',          to: 'docs/recipes/README' },
-            { label: 'Case Study',      to: 'docs/case-study/README' },
-            { label: 'API',             to: 'docs/api/README' },
-            { label: 'FAQ',             to: 'docs/faq/README' },
+            { label: 'Introduction',    to: 'docs/introduction/' },
+            { label: 'Getting Started', to: 'docs/getting-started/' },
+            { label: 'Tutorial',        to: 'docs/tutorials/' },
+            { label: 'Recipe',          to: 'docs/recipes/' },
+            { label: 'Case Study',      to: 'docs/case-study/' },
+            { label: 'API',             to: 'docs/api/' },
+            { label: 'FAQ',             to: 'docs/faq/' },
             { label: 'Troubleshooting', to: 'docs/troubleshooting' },
           ],
         },
 
-        // { label: 'Docs',            to:   'docs/introduction/README',             position: 'right' },
-        // { label: 'Getting Started', to:   'docs/getting-started',                 position: 'right' },
-        // { label: 'Tutorial',        to:   'docs/video-tutorial',                  position: 'right' },
-        // { label: 'Recipes',         to:   'docs/recipes/README',                  position: 'right' },
-        // { label: 'Case Study',      to:   'docs/case-study/README',               position: 'right' },
-        // { label: 'API',             to:   'docs/api/README',                      position: 'right' },
-        // { label: 'FAQ',             to:   'docs/faq/README',                      position: 'right' },
-        // { label: 'Troubleshooting', to:   'docs/troubleshooting',                 position: 'right' },
+        // { label: 'Docs',            to:   'docs/introduction/',    position: 'right' },
+        // { label: 'Getting Started', to:   'docs/getting-started',  position: 'right' },
+        // { label: 'Tutorial',        to:   'docs/tutorials/',       position: 'right' },
+        // { label: 'Recipes',         to:   'docs/recipes/',         position: 'right' },
+        // { label: 'Case Study',      to:   'docs/case-study/',      position: 'right' },
+        // { label: 'API',             to:   'docs/api/',             position: 'right' },
+        // { label: 'FAQ',             to:   'docs/faq/',             position: 'right' },
+        // { label: 'Troubleshooting', to:   'docs/troubleshooting',  position: 'right' },
 
         { label: 'GitHub',          href: 'https://github.com/wechaty/wechaty#readme',   position: 'right' },
       ],
@@ -65,10 +65,10 @@ module.exports = {
         {
           title: 'Docs',
           items: [
-            { label: 'Getting Started', to: 'docs/getting-started' },
-            { label: 'Tutorial',        to: 'docs/video-tutorial' },
-            { label: 'FAQ',             to: 'docs/faq/README' },
-            { label: 'API Reference',   to: 'docs/api/README' },
+            { label: 'Getting Started', to: 'docs/getting-started/' },
+            { label: 'Tutorial',        to: 'docs/tutorials/' },
+            { label: 'FAQ',             to: 'docs/faq/' },
+            { label: 'API Reference',   to: 'docs/api/' },
           ],
         },
         {
@@ -76,6 +76,7 @@ module.exports = {
           items: [
             { label: 'Stack Overflow',  href: 'https://stackoverflow.com/questions/tagged/wechaty' },
             { label: 'Gitter',          href: 'https://gitter.im/wechaty/wechaty' },
+            { label: 'Telegram',        href: 'https://t.me/wechaty' },
             { label: 'Twitter',         href: 'https://twitter.com/chatieio' },
             { label: 'YouTube',         href: 'https://www.youtube.com/playlist?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh' },
             { label: 'OpenCollective',  href: 'https://opencollective.com/wechaty' },
@@ -121,8 +122,6 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          // It is recommended to set document id as docs home page (`` path).
-          homePageId: 'README',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/wechaty/wechaty.js.org/edit/master/docusaurus/',
