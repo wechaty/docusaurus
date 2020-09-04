@@ -3,10 +3,7 @@ title: "暑期2020 [Go-wechaty Github Action optimization] POC 成果展示"
 author: tangguangbin
 categories: project
 tags:
-<<<<<<< HEAD:jekyll/_posts/2020-08-20-go-wechaty-github-action-optimization-mid-term.md
   - soc
-=======
->>>>>>> 30969936fab406f611cab27c1864a508ca999300:_posts/2020-08-20-go-wechaty-github-action-optimization-mid-term.md
   - soc2020
   - go-wechaty
 image: /assets/2020/go-wechaty-github-action-optimization/header.jpg
