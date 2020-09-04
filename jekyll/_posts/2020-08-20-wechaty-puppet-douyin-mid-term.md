@@ -22,11 +22,11 @@ tags:
 
 官网：[https://isrc.iscas.ac.cn/summer2020](https://isrc.iscas.ac.cn/summer2020) 官方新闻：[http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html](http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html)
 
-本项目 [基于开放 API 封装 Wechaty 接口下的钉钉聊天机器人] 系 暑期2020 支持的开源项目。
+本项目 [基于 RPA 封装 Wechaty 接口下的抖音聊天机器人] 系 暑期2020 支持的开源项目。
 
 <!--more-->
 
-## 中期报告: 基于开放 API 封装 Wechaty 接口下的钉钉聊天机器人
+## 中期报告：基于 RPA 封装 Wechaty 接口下的抖音聊天机器人
 
 ## 项目信息
 
@@ -45,7 +45,7 @@ tags:
     - 尝试了通过安卓和ios端抓包的方式获取抖音的私信方法，结果抓不到私信的消息
     - autojs控制安卓app的方法，现在正在采用，也是现在唯一可运行的方法，目前完成了抖音基本操作方法的封装和socket的通信
   - 抖音的autojs控制版本完成了自动登录，消息监听，发送消息等方法
-  - 用socket和autojs的方法跑了一个简易dingdongbot，[视频演示地址](https://youtu.be/TY4hn9TIWlA)（youtube）
+  - 用socket和autojs的方法跑了一个简易dingdongbot，[视频演示地址](https://youtu.be/TY4hn9TIWlA)(youtube)
   - puppet开发中，初步成型
 - 遇到的问题及解决方案：
   - 遇到问题
@@ -64,9 +64,9 @@ tags:
   - 探索puppet更多的功能，实现底层autojs
   
 ### PPT
-  
+
 {% include iframe.html src="https://www.youtube.com/embed/zDIPzGztn_E" %}
 
 ### Live coding
 
-{% include iframe.html src="https://www.youtube.com/embed/UWio2whtoeA" %}
+{% include iframe.html src="https://www.youtube.com/embed/OF7UfQ4o_5c" %}
