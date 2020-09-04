@@ -2,6 +2,7 @@
 title: "微信营销群机器人客服"
 author: zlh
 categories: project
+image: /assets/2020/wx-group-assistant-bot/wx-bot.jpg
 tags:
   - wechaty
   - nodejs
