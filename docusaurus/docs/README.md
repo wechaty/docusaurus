@@ -1,4 +1,5 @@
 ---
+slug: '/'
 title: Wechaty Docs Index
 ---
 
@@ -6,10 +7,10 @@ title: Wechaty Docs Index
 
 ## Table of Contents
 
-- [Introduction](introduction/README.md)
-- [Getting Started](getting-started)
-- [Tutorials](tutorials/README)
-- [Recipes](recipes/README)
-- [API](api/README)
-- [FAQ](faq/README)
+- [Introduction](introduction/)
+- [Getting Started](getting-started/)
+- [Tutorials](tutorials/)
+- [Recipes](recipes/)
+- [API](api/)
+- [FAQ](faq/)
 - [Troubleshooting](troubleshooting)
