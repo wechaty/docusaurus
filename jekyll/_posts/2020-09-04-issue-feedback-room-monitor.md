@@ -6,39 +6,51 @@ image: /assets/2020/issue-feedback-room-monitor/header.jpg
 
 ---
 
+## 背景
+
 因为我们的用户都喜欢通过微信群讨论的方式进行产品问题反馈，这无疑给日常的线上问题处理的效率带来极大的影响。曾经尝试对用户习惯进行线上填写方式的引导，但最终以失败告终。无奈下看看弄一个微信群监控机器人是否可行。
 
 在之前公司我曾经用python通过itchat弄过一个群播报BI数据的机器人，但因为itcaht采用的是微信web协议，微信监控特别严，很多号都不能使用，即使登录上去了还会经常莫名掉线，极不稳定。因此这回肯定不能再通过web协议的方式来弄了。于是带着一点点期盼发现了Wechaty这个支持微信ipad协议的SDK。
 
-#### Wechaty官方定义：
+### Wechaty官方定义：
+
 > Wechaty是一个开源的的个人号微信机器人接口，使用Typescript构建的Node.js应用。支持多种微信接入方案，包括网页，ipad，ios，windows，android 等。同时支持 Linux, Windows, Darwin(OSX/Mac) 和 Docker 多个平台。
 
 这里必须要重点提一下，Token 是 Wechaty 开放源代码项目中所设计和支持的一种认证技术，是句子互动公司基于 Wechaty 的 Puppet 实现插件对云服务 API 的授权账号。这也就意味着你在使用Wechaty开发基于ipad协议的机器人之前必须要先拿到可用的token。你可以从Wechaty社区申请到一个15天有效的试用Token，过了试用期后可以选择付费购买（200RMB/月）或者按照如下介绍尝试获取长期免费的Token：[Wechaty Token 申请及使用文档和常见问题](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)  
 
 Wechaty目前已经支持了`Java`、`Python`、`Go`、`PHP`等多种语言，但是该SDK原生是用`TypeScript`编写的，并且github上大量的demo和开源项目都是用`node.js`写的，再加上Wechaty宣称可以通过6行代码就可以实现一个机器人，于是最终决定用之前一点稚嫩的`JavaScript`前端开发经验拥抱`node.js`吧！
 
-#### 参考资料：
+### 参考资料：
+
 * **官方** [API文档](https://wechaty.js.org/docs/)
+
 * **官方demo：**[wechaty-getting-started](https://github.com/wechaty/wechaty-getting-started)  
+
 * **wechaty-puppet-padplus** [示例](https://github.com/wechaty/wechaty-puppet-padplus) 。
+
 * **Wechaty社区** [开源项目](https://wechaty.js.org/blog/)
 
 通过短时间的学习和尝试后，发现基本微信机器人常用的功能实现几乎都能从这些开源的项目中直接拿到，然后再结合自己的需求再进行改装就可以了，确实开发起来挺方便的。
 
-#### 开发之前，首先要明确一下此次的功能需求：
+### 开发之前，首先要明确一下此次的功能需求：
 
 * **自动聊天**：群聊中通过 `@[机器人]xxx`,  机器人回复问题反馈模版信息  （已完成）
-* **加入群聊自动欢迎**：当新的小伙伴加入群聊后自动 `@[新的小伙伴] ` 发一个文字欢迎  （已完成）
+
+* **加入群聊自动欢迎**：当新的小伙伴加入群聊后自动 `@[新的小伙伴]` 发一个文字欢迎  （已完成）
+
 * **推送机器人登陆二维码到企业微信**：机器人掉线后，自动将二维码信息推送给指定企业微信群（已完成）
+
 * **监控群聊信息**：实时将聊天记录入库  （已完成）
+
 * **自动识别问题反馈信息**：自动识别判断群聊中问题反馈类信息，并收纳入问题库  （开发中）
+
 * **群播报功**：每天下班前播报问题收纳和未关闭问题情况  （未开始）
 
 项目github地址：  [https://github.com/tomallv/wechat-group-chat-monitoring-robot](https://github.com/tomallv/wechat-group-chat-monitoring-robot)
 
-#### 一、项目结构
+### 一、项目结构
 
-```
+```shell
 |-- src/  
 |---- index.js                   # 入口文件  
 |---- config.js                  # 配置文件  
@@ -52,13 +64,15 @@ Wechaty目前已经支持了`Java`、`Python`、`Go`、`PHP`等多种语言，�
 |-- package.json
 ```
 
-#### 二、核心包：
+### 二、核心包：
 
-* **Wechaty核心包**：  `npm install --save wechaty  `
+* **Wechaty核心包**：  `npm install --save wechaty`
+
 * **padplus协议包**：  `npm install --save wechaty-puppet-padplus`
+
 * **生成二维码**：  `npm install --save qrcode-terminal`
 
-#### 三、接下来介绍几个核心代码文件
+### 三、接下来介绍几个核心代码文件
 
 **1、配置文件**（ `src/config.js`）：
 
@@ -88,7 +102,7 @@ personal: {
 // mysql数据库配置信息
 mysql_db: {
     host: 'xxx.xxx.xxx.xxxx',
-    port: '3306', 
+    port: '3306',
     user: 'xxxxxxxxxx',
     password: 'xxxxxxx',
     database: 'xxxxxxx',
@@ -106,12 +120,12 @@ qrcode_png: "xxxxxxx.png"
 
 **2、入口文件（ `src/index.js`）：**
 
-```
+```javascript
 const { Wechaty } = require("wechaty") // Wechaty核心包  
 const { PuppetPadplus } = require("wechaty-puppet-padplus") // padplus协议包  
 const config = require("./config") // 配置文件
 
-//初始化bot 
+//初始化bot
 const bot = new Wechaty({  
  puppet: new PuppetPadplus({  
  token: config.token  
@@ -175,6 +189,7 @@ module.exports = function onScan(qrcode, status) {
 }
 }
 ```
+
 功能实现截图：
 
  ![1](/assets/2020/issue-feedback-room-monitor/qrcode-push.jpg)
@@ -202,7 +217,7 @@ module.exports = bot => {
              console.log(`text: ${msg.text()} `)
              console.log(`isRoom: ${msg.room()} : ${msg.room() ? msg.room().id : null}`)
              console.log("=============================")
-         
+
              // 判断此消息类型是否为群消息
              if (msg.room()) {
                   const room = await msg.room() // 获取群聊
@@ -223,7 +238,7 @@ module.exports = bot => {
              const msg_type = msg.type() // 获取消息类型
              console.log(`消息类型：` + msg_type)
              var msg_content = "" // 获取消息内容
-             
+
              if (msg_type == Message.Type.Text || msg_type == Message.Type.Url){
                   msg_content = msg.text()
              } else if (msg_type == Message.Type.Attachment){
@@ -242,7 +257,7 @@ module.exports = bot => {
                   msg_content = "消息内容类型为未知"
              }
              console.log(`消息内容：` + msg_content)
-             
+
              // 消息入库sql
              var sql = "insert into wechat_room_chat_record(id,room_name,room_id,sender_name,sender_alias,msg_content,msg_type,issue_flag,msg_date) values(?,?,?,?,?,?,?,?,?)"
 
@@ -250,7 +265,7 @@ module.exports = bot => {
              var sqlParams = [process.hrtime.bigint(),room_name.substring(5,room_name.length-2),room_id,sender_name,sender_alias,msg_content,msg_type,0,msg_date]
              mysqldb.InsertData(sql,sqlParams)
              console.log(`入库时间戳：` + process.hrtime.bigint())
-             
+
              // 收到消息，提到自己
              if (await msg.mentionSelf()) {
                    // 获取提到自己的名字
@@ -265,7 +280,7 @@ module.exports = bot => {
                    // 规定回复问题反馈模版
                    var report_template = "如您需要反馈问题，请按照如下模版进行拷贝填写，谢谢：\n问题反馈\n[1-问题描述]:\n[2-截图信息]:\n[3-账号信息]: \n[4-操作系统]:\n[5-浏览器]:\n[6-屏幕分辨率]:\n[7-移动设备型号(APP、小程序相关问题)]:\n[8-App、小程序版本信息(APP、小程序相关问题)]:\n[9-模块信息]: A-官网前台、B-小程序、C-APP、D-句芒后台、D-学习中心、F-CRM、G-H5网页、H-老后台、I-其他"
                    console.log("自动回复内容：" + report_template)
-                 
+
                    // 返回消息，并@来自人
                    var Datetemp1= new Date();
                    room.say(report_template, msg.from())
