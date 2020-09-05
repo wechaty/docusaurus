@@ -29,7 +29,7 @@ tags:
 
 ## 项目信息
 
-* [项目地址](https://github.com/smwsk/wechaty-bot)
+* [项目地址](https://github.com/xla145/fund-wechay-python)
 
 ## 功能展示
 
