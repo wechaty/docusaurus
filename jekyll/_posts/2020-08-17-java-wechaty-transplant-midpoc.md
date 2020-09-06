@@ -6,6 +6,7 @@ categories: project
 tags:
  - wechaty
  - java
+ - soc
  - soc2020
 image: assets/2020/java-wechaty-transplant-midpoc/java-wechaty-transplant-midpoc.jpg
 ---
