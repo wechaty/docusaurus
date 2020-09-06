@@ -1,7 +1,7 @@
 ---
 name: cunkoulaocai
 site: https://github.com/cunkoulaocai
-avatar: /assets/developers/cunkoulaocai/avatar.png
+avatar: /assets/developers/cunkoulaocai/avatar.jpg
 bio: Java Developer.
 email: 1184016190@qq.com 
 twitter:
