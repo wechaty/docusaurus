@@ -7,6 +7,7 @@ tags:
  - wechaty
  - java
  - soc2020
+ - soc
 image: /assets/2020/java-wechaty-transplant/java-wechaty-transplant.jpg
 ---
 
