@@ -8,6 +8,7 @@ tags:
   - soc
   - soc2020
   - go
+  - go-wechaty
 image: /assets/2020/go-wechaty-plugin-midterm/2020-08-19-go-wechaty.png
 ---
 
