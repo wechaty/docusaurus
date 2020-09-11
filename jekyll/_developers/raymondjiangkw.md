@@ -12,5 +12,5 @@ RaymondKevin
 ## Contact me
 
 - Github: <https://github.com/raymondjiangkw>
-- Email：<>
+- Email：jkw972887925@outlook.com
 - Website: <https://www.raymondkevin.top>
