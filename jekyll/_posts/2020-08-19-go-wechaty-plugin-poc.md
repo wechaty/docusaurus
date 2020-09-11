@@ -22,7 +22,7 @@ image: /assets/2020/go-wechaty-plugin-midterm/2020-08-19-go-wechaty.png
 
 ## [为 go-wechaty 设计实现插件体系]信息
 
-- 导师：丁小雨 丁超飞 丁超飞
+- 导师：丁小雨、丁超飞、李博杰
 - 学生：林昊翰
 - 项目名称：为 go-wechaty 设计实现插件体系
 
