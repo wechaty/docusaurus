@@ -28,7 +28,7 @@ image: /assets/2020/go-wechaty-plugin-midterm/2020-08-19-go-wechaty.png
 
 ### 方案描述
 
-wechaty 是一个款支持多协议的微信接入方案，随着社区多语言生态的建立，吸引了更多的开发者和爱好者的加入；同时需求的推动和技术的发展，插件系统逐渐完善，但是在多语言系统中 Plugin 体系尚未完成，我们希望通过这个任务，能够让更多的人加入 go-wechaty 的建设。
+wechaty 是一款支持多协议的微信接入方案，随着社区多语言生态的建立，吸引了更多的开发者和爱好者的加入；同时需求的推动和技术的发展，插件系统逐渐完善，但是在多语言系统中 Plugin 体系尚未完成，我们希望通过这个任务，能够让更多的人加入 go-wechaty 的建设。
 
 目前 go-wechaty examples/ding-dong-bot.go 有一个 ding-dong bot, 但是我们希望这个 ding-dong 是通用的，如果我们的 Plugin 体系能编写出来，也许实现 ding-dong 就只需要一行代码。
 例如：
