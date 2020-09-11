@@ -6,3 +6,4 @@ t.*
 .DS_Store
 
 new-gh-pages/
+tmp/
