@@ -2,7 +2,7 @@
 title: 实现微信产品问题反馈群实时监控与问题自动录入
 author: tomallv
 categories: tutorial
-image: /assets/2020/issue-feedback-room-monitor/header.jpg
+image: /assets/developers/tomallv/avatar.png
 
 ---
 
@@ -192,7 +192,7 @@ module.exports = function onScan(qrcode, status) {
 
 功能实现截图：
 
- ![1](/assets/2020/issue-feedback-room-monitor/qrcode-push.jpg)
+ ![1](/assets/2020/issue-feedback-room-monitor/qrcode-push.png)
 
 **4、消息监听回调（`src/onMessage.js`）**
 
