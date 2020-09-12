@@ -14,5 +14,5 @@ twitter:
 ## Contact me
 
 - Github: <https://github.com/jcq15>
-- Email：<mailtojcq15@mails.tsinghua.edu.cn>
+- Email：<mailto:jcq15@mails.tsinghua.edu.cn>
 - Website: <http://shadiao.online>
