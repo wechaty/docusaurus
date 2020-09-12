@@ -3,6 +3,8 @@ title: "Wechaty 将 TS 转发到 Python 的探索实践"
 author: jcq15
 ---
 
+报时机器人，每逢整点在群里发送报时信息。
+
 # Wechaty 将 TS 转发到 Python 的探索实践
 
 许多朋友可能对 Python 更为熟悉，而对 Typescirpt 则比较生疏。同时 Python 在文件处理、图像处理、机器学习等领域更为简易灵活。如果能将微信机器人接入 Python 将为开发者带来极大的便利。目前官方正在开发 Python 版本的机器人，在开发完善之前我们可以使用一些替代方案。本项目以一个简单的报时机器人为例，展示了如何将 Typescript 程序收到的消息转发给 Python 后端处理，可以作为 Python 版 Wechaty 正式上线之前的简易替代。
