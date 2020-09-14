@@ -114,8 +114,8 @@ bot.on('message', onMessage)
 bot.start()
 .then(() => log.info('StarterBot', 'Starter Bot Started.'))
 .catch(e => log.error('StarterBot', e))
-
 ```
+
 然后执行命令如下命令运行：
 
 ```bash
@@ -124,10 +124,13 @@ node bot.js
 成功运行：
 ![image.png](https://upload-images.jianshu.io/upload_images/24686309-0df665d0b9112bab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 之后就可以手机微信扫码登录，当别人给你当前登录的微信号发送消息“12345”，就会自动回复“hello world”。
+
 ## 遇到的问题
+
 开发之中也是碰到了一些问题，其实都可以从github官方的issues里面找到答案，我这边记录下我遇到的问题。
 
 ### cmd窗口二维码显示扫码不完善
+
 ![image.png](https://upload-images.jianshu.io/upload_images/24686309-08c59775ef5d4ae1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 解决办法是修改cmd窗口的属性，可以参考：[https://github.com/wechaty/wechaty/issues/2055](https://github.com/wechaty/wechaty/issues/2055)。
 结束！
