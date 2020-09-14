@@ -1,3 +1,4 @@
+---
 name: Gary Peng
 site: https://github.com/garyboygo
 avatar: /jekyll/assets/developers/garyboygo/avatar.jpg
