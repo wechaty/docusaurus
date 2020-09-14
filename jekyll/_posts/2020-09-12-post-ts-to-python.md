@@ -1,6 +1,13 @@
 ---
 title: "Wechaty 将 TS 转发到 Python 的探索实践"
 author: jcq15
+image: /assets/2020/post-ts-to-python/screenshot.jpg
+categories: project
+tags:
+  - wechaty
+  - wechaty-puppet-padplus
+  - nodejs
+  - python
 ---
 
 报时机器人，每逢整点在群里发送报时信息。
