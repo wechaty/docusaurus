@@ -36,21 +36,21 @@ title: /assets/2020/my-first-wechaty-bot/2020-09-my-first-wechaty-bot.png
 
 **step1：windows环境一些工具安装。**
 
-```
+```bash
 npm install -g windows-build-tools
 npm install -g node-gyp
 ```
 
 **step2：安装wechaty相关包。**
 
-```
+```bash
 npm install wechaty@next
 npm install wechaty-puppet-padplus@next
 ```
 
 **step3：安装其他依赖包。**
 
-```
+```bash
 npm install qrcode-terminal
 ```
 
@@ -58,7 +58,7 @@ npm install qrcode-terminal
 
 因为是初次接触，我们就实现下最基本的自动回复功能吧，跑通基本流程， 后续进阶的功能可以慢慢完善添加。
 
-```
+```javascript
 const {
     Wechaty,
     ScanStatus,
@@ -118,7 +118,7 @@ bot.start()
 ```
 然后执行命令如下命令运行：
 
-```
+```bash
 node bot.js
 ```
 成功运行：
