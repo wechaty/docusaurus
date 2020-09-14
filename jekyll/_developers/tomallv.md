@@ -1,7 +1,7 @@
 ---
 name: tomallv
 site: https://github.com/tomallv
-avatar: /assets/2020/issue-feedback-room-monitor/header.jpg
+avatar: /assets/developers/tomallv/avatar.png
 bio: A veteran who stand fast and remain at testing for more than 10 years
 email: 
 twitter: 
