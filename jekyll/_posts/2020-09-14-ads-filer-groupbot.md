@@ -6,7 +6,7 @@ tags:
   - wechaty
   - wechat groups
   - ads monitor
-image: /assets/2020/ads-filter-groupbot/ads-filter-groupbot.jpeg
+image: /jekyll/assets/2020/ads-filter-groupbot/ads-filter-groupbot.jpeg
 ---
 
 > 作者: [Gary](https://github.com/garyboygo/)
@@ -43,4 +43,4 @@ node bot.js
 ````
 
 ## 最终效果
-![avatar](/assets/2020/ads-filter-groupbot/ads-filter-groupbot.jpeg)
+![avatar](/jekyll/assets/2020/ads-filter-groupbot/ads-filter-groupbot.jpeg)
