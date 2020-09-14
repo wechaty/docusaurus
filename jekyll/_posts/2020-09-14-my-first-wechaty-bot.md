@@ -121,6 +121,7 @@ bot.start()
 ```bash
 node bot.js
 ```
+
 成功运行：
 ![image.png](https://upload-images.jianshu.io/upload_images/24686309-0df665d0b9112bab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 之后就可以手机微信扫码登录，当别人给你当前登录的微信号发送消息“12345”，就会自动回复“hello world”。
