@@ -4,6 +4,7 @@ author: dchaofei
 categories: event
 tags:
   - meetup
+  - news
 image: /assets/2020/wechaty-shenzhen-meetup/wechaty-shenzhen-meetup.jpg
 ---
 
