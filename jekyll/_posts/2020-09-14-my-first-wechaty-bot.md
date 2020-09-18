@@ -10,7 +10,7 @@ title: /assets/2020/my-first-wechaty-bot/2020-09-my-first-wechaty-bot.png
 
 首先，自然是对底层架构的选型，在网上也查找了很久，也尝试了许多其他的开源库，很多前两年（今天是2020年9月12日）的微信机器人库都已经过期无法使用了，主要原因他们都是基于web微信的协议，而腾讯的安全策略屏蔽了web微信协议。所以，经过一番挑挑拣拣，发现网上也就剩下最后一个可用的库，那就是这篇文章的主角，wechaty，官方github地址：[https://github.com/wechaty](https://github.com/wechaty)。
 
-这是一个商业公司（北京句子科技有限公司）开发的一套半开源半商业的库，基于web微信协议的库确实都开源了，但是基于上述腾讯的政策，web微信现在基本是都用不了了，所以web微信这套开源库，也就只能学学而已。但是他们还开发了一套基于pad微信协议的库，github地址：[https://github.com/wechaty/wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus)。这个可以用，但是呢，需要token，每个月收费200RMB，不过可以试用，15天的试用期，15天后，有机会把token试用期最长延期到1年，需要写博客支持他们发起的一个开源计划，说白了，就是替他们公司宣传这个库，只能说各取所需吧。这个开源计划可以参考：[https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)。
+这是一个商业公司（北京句子互动科技有限公司）开发的一套半开源半商业的库，基于web微信协议的库确实都开源了，但是基于上述腾讯的政策，web微信现在基本是都用不了了，所以web微信这套开源库，也就只能学学而已。但是他们还开发了一套基于pad微信协议的库，github地址：[https://github.com/wechaty/wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus)。这个可以用，但是呢，需要token，每个月收费200RMB，不过可以试用，15天的试用期，15天后，有机会把token试用期最长延期到1年，需要写博客支持他们发起的一个开源计划，说白了，就是替他们公司宣传这个库，只能说各取所需吧。这个开源计划可以参考：[https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)。
 
 ## 了解原理
 
