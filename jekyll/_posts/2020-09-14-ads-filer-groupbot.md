@@ -40,11 +40,6 @@ image: /jekyll/assets/2020/ads-filter-groupbot/ads-filter-groupbot.jpeg
 - npm install qrcode-terminal
 - npm install node-schedule
 - sudo npm install ts-node typescript -g
-  
-  启动机器人
-````
-node bot.js
-````
 
 ## 最终效果
 
