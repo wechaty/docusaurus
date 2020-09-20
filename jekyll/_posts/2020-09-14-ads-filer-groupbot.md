@@ -29,16 +29,17 @@ image: /jekyll/assets/2020/ads-filter-groupbot/ads-filter-groupbot.jpeg
 
 ## 具体实现
 
-  - bot.js: 项目入口文件，实现了扫码微信，并注册监测广告的逻辑。
-  - utility.js: 广告过来逻辑的实现函数。并且我们对广告进行了分级，有严重恶意广告和不严重恶意广告，实现逻辑在isSeriousAdsText和isLightAdsText。我们可以看到程度比较严重的广告是一些带有学历认证，病假申请的文字。而不严重的广告主要是一些带有保险字样的广告。
-  
-  使用这个机器人的时候要先安装一些dependency
-  - npm install wechaty@latest
-  - npm install wechaty-puppet@latest
-  - npm install wechaty-puppet-padplus@latest
-  - npm install qrcode-terminal
-  - npm install node-schedule
-  - sudo npm install ts-node typescript -g
+- bot.js: 项目入口文件，实现了扫码微信，并注册监测广告的逻辑。
+- utility.js: 广告过来逻辑的实现函数。并且我们对广告进行了分级，有严重恶意广告和不严重恶意广告，实现逻辑在isSeriousAdsText和isLightAdsText。我们可以看到程度比较严重的广告是一些带有学历认证，病假申请的文字。而不严重的广告主要是一些带有保险字样的广告。
+
+使用这个机器人的时候要先安装一些dependency
+
+- npm install wechaty@latest
+- npm install wechaty-puppet@latest
+- npm install wechaty-puppet-padplus@latest
+- npm install qrcode-terminal
+- npm install node-schedule
+- sudo npm install ts-node typescript -g
   
   启动机器人
 ````
