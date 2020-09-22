@@ -11,8 +11,6 @@ tags:
 
 智能群聊天机器人
 
-# 基于Wechaty打造智能聊天机器人(一)
-
 ## 1. 与微信机器人的结缘
 
 由于在去年我粉上了杨超越，广州演唱会期间加入了深圳站粉丝群，群主为了活跃气氛，在小群里拉了一个闲聊机器人，当时就想着自己也是一个技术开发，好早之前也有注册过图灵机器人，看着这个机器人的玩法感觉跟图灵机器人好像，就想着要不要自己去开发一个，但是当时这个念头也只是一闪而过，当时工作比较忙，也没放在心上。
@@ -31,6 +29,7 @@ tags:
 
 [Weachaty](https://github.com/wechaty/wechaty) 是一个开源的的对话机器人 SDK，支持个人微信号。它是一个使用Typescript 构建的Node.js 应用。支持多种微信接入方案，包括网页，ipad，ios，windows， android 等。同时支持Linux, Windows, Darwin(OSX/Mac) 和 Docker 多个平台。
 在GitHub上可以找到很多支持微信个人号接入的第三方类库，其中大多都是基于Web Wechat的API来实现的，如基于Python的WeixinBot，基于Node.js的Wechaty等。少数支持非Web协议的库，大多是商业私有闭源的，Wechaty是少有的开源项目支持非Web协议的类库。且目前来讲，Wechaty已经开始陆续支持多种编程语言了（Go、Python、Java等等）。官方说只需要6行代码，就可以做到自动管理微信消息了。
+
 ``` JavaScript
 import { Wechaty } from 'wechaty'
 
@@ -46,28 +45,38 @@ Wechaty.instance()
 可以看到，Wechaty能做到的事情很多，可以收消息、发消息、好友管理、群管理，更多功能可以参考官方文档[中文版](https://wechaty.js.org/v/zh/)、[英文版](https://wechaty.js.org/docs/introduction/README)英文版的文档更新更全更新。
 
 ## 3. 安装Wechaty
+
 原本一开始我是想着用Java版本的[Wechaty](https://github.com/wechaty/java-wechaty-getting-started)的，但是目前来讲Java版的还不够，入门阶段选择更加成熟的nodejs版的会更好，我选择了Docker的方式来使用开发Wechaty，系统方面选择了WSL2，配合VSCode就可以在Windows10下无缝开发，关于Windows10子系统WSL2的安装教程可以参考这篇[文章](https://segmentfault.com/a/1190000022865557)，从零开始到安装Docker成功。
+
 ### 安装nodejs和npm
 
 我的WSL2选择的系统是Ubuntu-18.04,我们先安装nodejs、npm
-```
+
+``` bash
 sudo apt-get install nodejs
 sudo apt-get install npm
 ```
+
 安装完毕后查看nodejs、npm版本
-```
+
+``` bash
 node -v
 npm -v
 ```
+
 当前是分别是v8.10.0、3.5.2.目前开发环境已经搭建完毕。
+
 ### 如何使用Wechaty
 
 我们用VSCode的Remote-WSL连接上我们的WSL系统，在当前用户文件夹下创建dog文件夹，选择它做为我们的工作区，在dog文件夹打开终端，用npm初始化项目：
-```
+
+``` bash
 npm init -y
 ```
+
 采用默认的生成package.json文件：
-```
+
+``` json
 {
   "name": "dog",
   "version": "1.0.0",
@@ -81,8 +90,10 @@ npm init -y
   "license": "ISC"
 }
 ```
+
 由于我采用 Typescript 进行开发的，在Dog文件夹创建dog.ts，对json文件手动修改一下：
-```
+
+``` json
 {
   "name": "dog",
   "version": "1.0.0",
@@ -100,13 +111,16 @@ npm init -y
 
 官方给我的是临时的puppetPadPlus协议，所以我需要安装的puppet是PadPlus版的，另外为了让二维码显示终端上，我们还需要另外一个开源库*QRCodeTerminal*,不过我这里引入的是wechaty-plugin-contrib，它包含了很多常用的库，这里我们用到的是*QRCodeTerminal*和*EventLog*
 我们安装*wechaty*、*wechaty-puppet-padplus*、*wechaty-plugin-contrib*.
-```
+
+``` base
 npm i --save wechaty
 npm i --save wechaty-puppet-padplus
 npm i --save wechaty-plugin-contrib
 ```
+
 安装完package.json也变成这样了：
-```
+
+``` json
 {
   "name": "dog",
   "version": "1.0.0",
@@ -127,7 +141,9 @@ npm i --save wechaty-plugin-contrib
 }
 
 ```
+
 修改dog.ts源代码如下：
+
 ``` Typescript
 import { Wechaty, Message, log } from 'wechaty'
 import { PuppetPadplus } from 'wechaty-puppet-padplus'
@@ -157,24 +173,31 @@ bot.on('message', async (message: Message) => {
 // 开启机器人
 bot.start()
 ```
+
 接下来我们在Docker上运行该项目：
-```
+
+``` bash
 docker run -ti --rm --volume="$(pwd)":/bot wechaty/wechaty run start
 ```
 
 第一次运行时wechaty镜像还没安装，docker会自动帮我们安装wechaty镜像，稍等片刻，一切正常的情况下，我们能看到终端打印出来的登录二维码，用你的微信扫码登录即可。目前运行的时候会发生以下这个错误：
-```
+
+``` bash
 Error: Failed to load gRPC binary module because it was not installed for the current system
 Expected directory: node-v72-linux-x64-glibc
 Found: [node-v57-linux-x64-glibc]
 This problem can often be fixed by running "npm rebuild" on the current system
 ```
+
 我们先执行rebuild再重新执行上面的代码。
-```
+
+``` bash
 docker run -ti --rm --volume="$(pwd)":/bot wechaty/wechaty npm rebuild
 ```
+
 重新运行后，扫码登录之后后台就打印出已确认的日志：
-```
+
+``` bash
 =================================================
     QRCODE_SCAN MSG : 已扫码，请在手机端确认登陆...
 =================================================
