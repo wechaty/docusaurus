@@ -32,7 +32,7 @@ Ubuntu
 照着[官方文档](https://github.com/wechaty/wechaty-puppet-padplus) 配置好环境
 
 创建文件夹，我的文件夹名字叫 `wechatBot`：
- ```shell script
+ ```shell
 #安装依赖
 npm install
 #复制.env文件
