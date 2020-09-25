@@ -1,7 +1,7 @@
 ---
 name: Gary Peng
 site: https://github.com/garyboygo
-avatar: /jekyll/assets/developers/garyboygo/avatar.jpg
+avatar: /assets/developers/garyboygo/avatar.jpeg
 bio: An Android Enginner.
 email: N/A
 twitter: N/A
