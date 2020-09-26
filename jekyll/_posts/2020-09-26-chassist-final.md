@@ -1,10 +1,10 @@
 ---
 
  title: "暑期2020 [基于python-wechaty的群聊助手机器人] 结项成果展示"
- date: 2020-08-14 09:00 +0800
+ date: 2020-09-26 15:00 +0800
  author: kxz18
  categories: project
- image: /assets/2020/groupchat-assistant-bot-final/logo.png
+ image: /assets/2020/chassist-final/logo.png
  tags:
    - python
    - soc2020
