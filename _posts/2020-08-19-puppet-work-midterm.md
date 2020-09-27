@@ -1,23 +1,18 @@
 ---
-title: "暑期2020 [基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人] POC 成果展示"
-date: 2020-08-19 22:00 +0800
-author: Sapio-S
-categories: project
-image: /assets/2020/work-puppet/pic2.jpg
-tags:
-  - featured
-  - soc2020
-  - soc
-  - Wechat Work
+
+ title: "暑期2020 [基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人] POC 中期成果展示"
+ date: 2020-08-19 22:00 +0800
+ author: Sapio-S
+ categories: project
+ image: /assets/2020/work-puppet/pic2.jpg
+ tags:
+   - featured
+   - soc2020
+   - soc
+   - Wechat Work
 ---
-
-<!-- markdownlint-disable -->
 > Author: [@Sapio-S](https://github.com/Sapio-S) Learning & practicing.
-> Code: [@code](https://github.com/Sapio-S/wechaty-puppet-official)
-##简介
-本项目计划针对企业微信平台开发一个puppet，让 Wechaty 开发者可以仅仅通过改变一个变量，就能够切换使用企业微信的功能。
-
-<!--more-->
+> Code: [@code](https://github.com/Sapio-S/wechaty-puppet-work)
 
 # 暑期2020 [基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人] POC 成果展示
 
