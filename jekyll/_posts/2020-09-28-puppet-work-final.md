@@ -14,7 +14,6 @@ tags:
 <!-- markdownlint-disable -->
 > Author: [@Sapio-S](https://github.com/Sapio-S) Learning & practicing.
 > Code: [@code](https://github.com/Sapio-S/wechaty-puppet-official)
-
 本项目计划针对企业微信平台开发一个puppet，让 Wechaty 开发者可以仅仅通过改变一个变量，就能够切换使用企业微信的功能。
 
 <!--more-->
@@ -64,7 +63,9 @@ tags:
 	- 撰写简单的配置说明。
 	
 	
-	- 关于代码结构与功能演示的视频请点击[这里](https://work.weixin.qq.com/wework_admin/liveroom/v2/replay?ref=app&roomid=6877185498936770818)  。
+	
+	- 项目仓库位于: <https://github.com/Sapio-S/wechaty-puppet-work>
+	- live coding视频:{% include iframe.html src="https://work.weixin.qq.com/wework_admin/liveroom/v2/replay?ref=app&roomid=6877185498936770818" %}
 
 - 遇到的问题及解决方案：
 	- 对项目需求不明确，前期缺乏和导师的有效沟通，导致有一两周的进展与目标方向无关，成为了无用功。后期应当积极与导师沟通，尽快解决存疑的问题，避免出现类似的情况。
@@ -77,10 +78,10 @@ tags:
 - 心得与体验：
 
   在项目期间，我感觉自己对于代码的理解能力在不断提高，回首一看，原先不懂的现在都明白个大概了，收获真的很大。在写这个报告的时候其实才算是对整个wechaty的架构有了一个比较清晰的认识，从7月初的完全不懂到八月的逐渐入门再到现在的恍然大悟（或许也没有真正领悟），很有成就感。
-  
+
   当然遗憾和不足也同样很多。主要的问题还是在于自身，对语言的不熟悉、时间上的冲突，导致目前的结果并不十分令人满意，遗留下了不少的坑待填。对于我而言这也是一个很重要的教训，未来做项目也要规划好时间，及早了解需要的技术栈，这样才能更好地完成任务。
-  
-  
+
+
   另：其实本来觉得自己的代码虽然肯定不能直接发布使用，也勉强算是马马虎虎完成了主要的功能。但是一看别人的blog，我陷入了深深的尴尬，其实可以完成度更高、做得更好的。希望这学期学校开设的软件工程等等课程可以让我更深入地理解并熟悉完整开发流程吧！
 
 
