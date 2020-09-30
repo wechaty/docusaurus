@@ -56,3 +56,20 @@ image: /assets/2020/go-wechaty-gh-actions-optimization-final-poc/header.png
 <iframe width="560" height="315" src="//player.bilibili.com/player.html?aid=244737639&bvid=BV1cv411y7jY&cid=239638372&page=1" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 <iframe width="560" height="315"  src="//player.bilibili.com/player.html?aid=669718149&bvid=BV1oa4y1j7Zv&cid=239631994&page=1" scrolling="no"frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+## 导师评论
+
+### 评审对象
+
+- 评审内容：*结项报告*
+- 提交人：*唐光彬*
+
+### 评审结果
+
+- 项目完成度：*完成了原既定的跨项目触发CI，以及Docker镜像的编译等工作。*
+- 学生参与度：*跨项目触发完全有学生完成，Docker编译部分由学生进行新方案的改进，Dockerfile在指导下完成优化*
+- 代码贡献量：*新方案的CI/CD的部分全部由学生完成，代码量涉及开源项目的5%-10，但不能以代码量论英雄，CI/CD对整个开源项目具有积极意义*
+- 综合评价及建议：
+  - 光彬同学能够很好的主动扩充自己尚未掌握的知识领域，甚至于在一定方向上能够主动的去探索新的技术方案，这一点在工作中是很重要的技能，希望你能够不段的扩充自己的知识领域，能够解决更多未知的问题。
+  - 技术方面相信你有足够的积极性去解决，就像你在总结中提到的你会意识到自己技术上的提升空间，但是另一方面希望你能够在开源方面有更多的收获，它可以使你在今后的工作中能够推动更多项目协同上的改进。
+- 最终评审结果：*通过*
