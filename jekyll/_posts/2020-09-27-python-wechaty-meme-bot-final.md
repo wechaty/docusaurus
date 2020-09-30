@@ -31,11 +31,11 @@ tags:
 
 - 方案描述：在导师的指导下，我利用OCR、NLP分词与对话系统等相关技术，实现了以下功能：
 
-1. 提取用户所发送表情包的内容；
+  1. 提取用户所发送表情包的内容；
 
-2. 将提取内容送入GPT2对话模型，并根据对话系统输出判断下一步回应：利用互相关Loss在候选回答中按互相关Loss升序排序选出最符合语义的回答，如果回答能匹配数据库中已有表情则回复对应表情，否则直接使用提取内容匹配数据库内容；具体技术方案泳道图见下：![flow-chart](/assets/2020/meme-bot/09-27-flow-chart.png)
+  2. 将提取内容送入GPT2对话模型，并根据对话系统输出判断下一步回应：利用互相关Loss在候选回答中按互相关Loss升序排序选出最符合语义的回答，如果回答能匹配数据库中已有表情则回复对应表情，否则直接使用提取内容匹配数据库内容；具体技术方案泳道图见下：![flow-chart](/assets/2020/meme-bot/09-27-flow-chart.png)
 
-   更多细节可参见[项目README](https://github.com/MrZilinXiao/python-wechaty-meme-bot/blob/master/README.md).
+    更多细节可参见[项目README](https://github.com/MrZilinXiao/python-wechaty-meme-bot/blob/master/README.md).
 
 - 时间规划（摘自项目申请书）：
   - Week1：仔细阅读python-wechaty项目源码，掌握项目大体框架和可用API；
