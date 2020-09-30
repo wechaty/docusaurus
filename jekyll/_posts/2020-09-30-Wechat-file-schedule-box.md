@@ -1,7 +1,7 @@
 ---
 title: Wechat-file-schedule-box
 author: hywhuangyuwei
-image: 
+image: /assets/2020/09-Wechat-file-schedule-box/teaser.jpg
 tags:
   - wechaty
   - wechaty-puppet-padplus
