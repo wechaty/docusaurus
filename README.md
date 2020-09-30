@@ -160,3 +160,4 @@ And [wechaty/contributors](https://github.com/orgs/wechaty/teams/contributors/me
 - Code & Docs © 2016-now Wechaty Contributors <https://github.com/wechaty>
 - Code released under the Apache-2.0 License
 - Docs released under Creative Commons
+Docs released under Creative Commons
