@@ -61,8 +61,8 @@ tags:
 ## 项目总结
 
 - 项目成果：
-	- 项目仓库位于: <https://github.com/Roxanne718/wechaty-puppet-lark>
-	- Live coding视频:{% include iframe.html src="https://www.bilibili.com/video/BV18v411y7G9/" %}
+  - 项目仓库位于: <https://github.com/Roxanne718/wechaty-puppet-lark>
+  - Live coding视频:{% include iframe.html src="https://www.bilibili.com/video/BV18v411y7G9/" %}
   - Demo 视频:{% include iframe.html src="https://www.bilibili.com/video/BV1fz4y1Z71Y/" %}
   
 - 遇到的问题及解决方案：
