@@ -7,7 +7,7 @@
 
 <https://wechaty.js.org> is the official wechaty homepage for publishing latest news, blog posts, and documentation from our open source community.
 
-## How to post a blog
+## How to post a blog easily
 
 1. Fork it
 1. [Syncing your fork](https://help.github.com/cn/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
