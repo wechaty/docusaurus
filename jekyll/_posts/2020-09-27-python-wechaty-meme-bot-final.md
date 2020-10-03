@@ -8,9 +8,6 @@ tags:
   - soc2020
 ---
 
-> Author: [@MrZilinXiao](https://github.com/MrZilinXiao) Always dedicated to learn something brand new.
-> Code: [@python-wechaty-meme-bot](https://github.com/MrZilinXiao/python-wechaty-meme-bot/)
-
 <!--more-->
 
 ## 暑期2020 基于Python-wechaty建立一个斗图机器人 POC 成果展示

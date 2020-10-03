@@ -7,8 +7,6 @@ tags:
 image: /assets/2018/wechaty-xiaoli.jpeg
 ---
 
-> Author: [@judaschrist](https://github.com/judaschrist), Co-founder & CTO of [小理智能](https://xiaoli.ai/)
-
 ![用wechaty实现智能内容机器人](/assets/2018/wechaty-xiaoli.jpeg)
 
 感谢 @lijiarui 邀请我分享我们的智能内容服务，以及在wechaty上的应用场景。

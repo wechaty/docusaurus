@@ -8,8 +8,6 @@ tags:
 image: /assets/2017/add-wechaty-jsdoc-automate-all-the-things.jpg
 ---
 
-> Author: [@lijiarui](https://github.com/lijiarui) @[BotOrange](http://www.batorange.com)
-
 In order to sync the doc with the latest code, it's best to use [jsdoc](https://github.com/jsdoc3/jsdoc) to describe the API and use [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown) to generate markdown format documents to the docs directory.
 
 ![automate all the things](/assets/2017/add-wechaty-jsdoc-automate-all-the-things.jpg)

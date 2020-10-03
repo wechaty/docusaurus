@@ -7,8 +7,6 @@ tags:
 image: /assets/2017/iyjian-1.png
 ---
 
-> 作者: [@iyjian](https://github.com/iyjian), 半路出家伪程序员
-
 我是个半路出家的程序员，有一个爱玩信用卡的老婆，老婆总逼着我我参加银行的积分活动，为了节省时间，我用wechaty做了一个积分红包机器人。
 
 ![产品的模样][3]

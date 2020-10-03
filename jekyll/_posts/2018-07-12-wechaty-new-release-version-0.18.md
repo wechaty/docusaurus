@@ -9,8 +9,6 @@ tags:
 image: /assets/2018/huan-reduce-weight.jpg
 ---
 
-> Author: [Huan LI](https://github.com/huan), Machine Learning Ph.D.
-
 ![reduce weight](/assets/2018/huan-reduce-weight.jpg)
 
 > Picture Credit: [Thumber.com](https://www.tumblr.com/search/the%20fastest%20way%20to%20lose%20weight)

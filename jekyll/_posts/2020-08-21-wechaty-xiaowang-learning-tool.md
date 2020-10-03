@@ -4,9 +4,6 @@ author: gileswong
 image: /assets/2020/wechaty-xiaowang-learning-tool/teaser.jpg
 ---
 
-> Author: [@GilesWong](https://github.com/GilesWong)
-> Code: [@GilesWong/wechaty-xiaowang](https://github.com/GilesWong/wechaty-xiaowang)
-
 ## 背景
 
 准备考研期间，希望在每天定时能获得天气推送，每日英语一题，早间新闻来丰富自己的学习；同时又不想要专门去点开某个App来看（这样不仅费心，还容易跑神）

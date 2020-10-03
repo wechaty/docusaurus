@@ -8,8 +8,6 @@ tags:
 image: /assets/2020/wechaty-shenzhen-meetup/wechaty-shenzhen-meetup.jpg
 ---
 
-> Author: [@dchaofei](https://github.com/dchaofei) The author of go-wechaty
-
 Wechaty 贡献者深圳聚餐
 
 ![Photo][wechaty-shenzhen-meetup-photo]

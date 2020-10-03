@@ -10,9 +10,6 @@ tags:
 image: /assets/2020/wechaty-words-per-day-plugin-final/logo.png
 ---
 
-> 作者: [univerone](https://github.com/univerone/)
-> Code: [Github](https://github.com/univerone/WordsPerDay)
-
 ## 项目信息
 
 - 项目名称：编写一个“每日一句”插件

@@ -6,7 +6,6 @@ tags:
   - datagirls
 image: /assets/2018/techiefestival-25.jpeg
 ---
-> Author: [@Yan Wang](https://github.com/bukaqiaqia) 现就读于悉尼大学商业数据分析 ,是Datagirls社区志愿者助教，两年数据分析师工作经历，拥有丰富的社科数据分析项目经验。
 
 2018年已经到来，一觉醒来，各种社交媒体已经被18岁刷屏
 有这样的：

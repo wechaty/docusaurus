@@ -10,8 +10,6 @@ tags:
   - soc
   - lark
 ---
-> Author: [@fanrui](https://github.com/Roxanne718)
-> Code: [@fanrui/wechaty-puppet-lark](https://github.com/Roxanne718/wechaty-puppet-lark)
 
 ## 暑期2020
 

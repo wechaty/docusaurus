@@ -8,8 +8,6 @@ tags:
   - news
 ---
 
-> Author: [Huan LI](https://github.com/huan), A Former Linux Admin
-
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Chatie/heroku-wechaty-getting-started)
 
 **GitHub Repo: <https://github.com/Chatie/heroku-wechaty-getting-started>**
