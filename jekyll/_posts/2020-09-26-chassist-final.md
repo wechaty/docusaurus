@@ -74,9 +74,13 @@
 中期之后主要进行了一些深度学习上的实验尝试，并对于机器人的交互进行了一定优化，在后阶段的 presentation 中对此进行了阐述：
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BCQx_g8t9l4" frameborder="0"  allowfullscreen></iframe>
 
+在bilibili也进行了视频上传：[https://www.bilibili.com/video/BV1zz4y1Z7iJ/](https://www.bilibili.com/video/BV1zz4y1Z7iJ/)
+
 为了能更好地展示项目成果，也按照社区要求对已经实现的功能进行了live coding演示，演示内容见：
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uqBwzAckhzk" frameborder="0" allowfullscreen></iframe>
+
+在bilibili也进行了视频上传：[https://www.bilibili.com/video/BV1iz4y1Z74S/](https://www.bilibili.com/video/BV1iz4y1Z74S/)
 
 ### 2.2 项目心得
 
