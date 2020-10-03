@@ -11,8 +11,7 @@ tags:
 ---
 
 <!-- markdownlint-disable -->
-> Author: [@Sapio-S](https://github.com/Sapio-S) Learning & practicing.
-> Code: [@code](https://github.com/Sapio-S/wechaty-puppet-official)
+
 ##简介
 本项目计划针对企业微信平台开发一个puppet，让 Wechaty 开发者可以仅仅通过改变一个变量，就能够切换使用企业微信的功能。
 

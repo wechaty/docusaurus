@@ -7,8 +7,6 @@ tags:
 image: /assets/2017/leinue-bot.jpg
 ---
 
-> Author: [@leinue](https://github.com/leinue), Developer && Designer, [ivydom](http://ivydom.com)
-
 I built a bot to deliver the daily paper about machine learning and fintech to the users.Considering the development of lowest cost, I chose wechaty. It's so awesome that it only took me **10 mintues** to make the bot work.
 
 ![chatbot][1]

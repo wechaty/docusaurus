@@ -7,8 +7,6 @@ tags:
 image: /assets/2018/typescript-logo.png
 ---
 
-> Author: [@suntong](https://github.com/suntong), Canada
-
 ![TypeScript](/assets/2018/typescript-logo.png)
 
 Big companies or organizations push forward adopting of Typescript for a reason, mostly to prevent some dummies to shoot their own feet really easily -- The (almost only) advantage of Typescript is to point out, at the compile time, that the following usage is wrong:

@@ -7,7 +7,6 @@ tags:
   - news
 image: /assets/2017/huan-wechaty-new-version-0.9.0.png
 ---
-> Author: [@huan](https://github.com/huan) Angel Investor, Full Stack Developer, Paragiding Pilot, Author of Wechaty.
 
 ![wechaty-release-0.9.0][wechaty-release-0.9.0]
 

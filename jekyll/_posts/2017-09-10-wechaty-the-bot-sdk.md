@@ -9,8 +9,6 @@ tags:
 image: /assets/2017/dcsan-dashbot.jpg
 ---
 
-> Author: [@dcsan](https://github.com/dcsan) making chatbots at RIKAI Labs
-
 Recently I was in San Francisco talking to a lot of my friends in the Chatbot community, and realized how the WeChaty community is becoming central to Chatbot development in China.
 
 A lot of Americans look to China and WeChat for the future of Chatbots, but in fact Tencent has still not released an official "Chatbot SDK". Unlike Facebook, Slack, LINE, Telegram and every other messaging platform. [bot.QQ.com](http://bot.qq.com/) is still just a teaser of what might be.

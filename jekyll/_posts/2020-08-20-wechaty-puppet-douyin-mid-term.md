@@ -9,9 +9,6 @@ tags:
   - soc2020
 ---
 
-> Author: [@gavinwang23](https://github.com/gavinwang23)
-> Code: [@gavinwang23/douyin-autojs](https://github.com/gavinwang23/douyin-autojs)[@gavinwang23/wechaty-puppet-douyin](https://github.com/gavinwang23/wechaty-puppet-douyin)
-
 ## 暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。

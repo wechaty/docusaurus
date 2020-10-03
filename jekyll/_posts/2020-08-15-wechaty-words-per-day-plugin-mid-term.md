@@ -10,9 +10,6 @@ tags:
 image: /assets/2020/wechaty-words-per-day-plugin-mid-term/header.png
 ---
 
-> 作者: [univerone](https://github.com/univerone/)
-> Github Repo: [Github](https://github.com/univerone/words-per-day)
-
 ## 暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
@@ -24,6 +21,8 @@ image: /assets/2020/wechaty-words-per-day-plugin-mid-term/header.png
 官方新闻：<http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html>
 
 本项目 [编写一个“每日一句”插件] 系 暑期2020 支持的开源项目。
+
+> Github Repo: [Github](https://github.com/univerone/words-per-day)
 
 ## [编写一个“每日一句”插件]信息
 

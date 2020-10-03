@@ -8,8 +8,6 @@ tags:
 image: /assets/2018/blessed-twins-bot.png
 ---
 
-> Author: [Huan LI](https://github.com/huan), Half machine half human boy.
-
 ![blessed twins bot](/assets/2018/blessed-twins-bot.png)
 
 Wechaty v0.16 is working in progress.

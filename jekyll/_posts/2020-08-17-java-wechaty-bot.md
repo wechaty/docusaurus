@@ -10,8 +10,6 @@ tags:
 image: /assets/2020/smwsk-java-wechaty-bot/home.jpg
 ---
 
-> 作者: [smwsk](https://github.com/smwsk/)
-
 ## 摘要
 
 > 本项目是基础wechaty项目实现微信的聊天功能、通过微信对话开放平台提供的API进行智能的应答、实现了微信的智能聊天、最后非常感谢wechaty的无私奉献。

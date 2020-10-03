@@ -9,8 +9,6 @@ tags:
 image: /assets/2017/h4dex-inject.png
 ---
 
-> Author: [@h4dex](https://github.com/h4dex) 会使用各种计算机语言写出 Hello World 的设计师（<http://icefox.org/>）
-
 ![Wechat Windows Impactor](/assets/2017/h4dex-inject.png)
 
 因为易语言代码有的朋友们可能看起来怪怪的 如果没有接触过它，并不是那么通俗易懂。所以改成了cpp代码供审阅.  由于书写仓促 错误的部分希望大家指正，小弟在此多谢！

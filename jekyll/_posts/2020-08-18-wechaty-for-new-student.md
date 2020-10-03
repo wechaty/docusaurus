@@ -7,12 +7,7 @@ tags:
   - wechaty-puppet-padplus
 image: /assets/2020/wechat-bot/header.jpg
 ---
-> Author: [](https://github.com/techial1042)
-> Code: [wechat-bot](https://github.com/m4d3bug/wechat-bot)
-[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
-[![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
-<!-- more -->
 基于 `wechaty` （包含 `wechaty-puppet-padplus` 插件）开发。
 
 使用 Mongodb 存储问题 / 答案 / 群组消息。
@@ -22,6 +17,9 @@ image: /assets/2020/wechat-bot/header.jpg
 大学新生开学（又到了每一年忙碌的时候），同一个（类似）问题会有很多人问，那为啥不把这些问题整理一下。
 
 如果有一个问答库，通过输入关键字让机器人发送答案，减少人工不必要的问答，提高效率。
+
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
+[![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ## 功能
 
