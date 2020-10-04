@@ -8,8 +8,6 @@ tags:
 image: /assets/2018/code-migration-zh.png
 ---
 
-> Author: [@lijiarui](https://github.com/lijiarui) Founder of BotOrange, Author of Wechaty.
-
 Wechaty 近期有了很大的升级，从0.14版本之后，开始陆续支持各类非Web 版本的解决方案。我的业务逻辑代码重度依赖于wechaty，所以自从wechaty release 了0.15 版本以后，我开始将我们的业务逻辑代码陆续从Web版本迁移到了非Web版本上来。
 
 本篇博客主要介绍了我是如何将业务逻辑代码，从Puppeteer 迁移到 Padchat上的。

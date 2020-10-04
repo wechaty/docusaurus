@@ -10,8 +10,6 @@ tags:
 image: /assets/2018/wechaty-blinder-1.jpg
 ---
 
-> Author: [@李佳芮](github.com/lijiarui), [桔子互动](botorange.com)创始人, Wechaty Author
-
 这是我在[2017 北京 谷歌开发者节](http://www.itdks.com/eventlist/detail/1627) TensorFlow 分会场的分享，本次活动是由谷歌（中国）、谷歌北京开发者社区主办，北京邮电大学协办的2017谷歌开发者节北京站在北京邮电大学圆满举办。我主要介绍了如何使用开源项目Wechaty-Blinder快速搭建一个微信脸盲机器人，迅速帮助你识别照片里的人。
 
 ![wechaty](/assets/2018/wechaty-blinder-1.jpg)

@@ -9,8 +9,6 @@ tags:
   - aws
 ---
 
-> Author: [@Charles-Wu-Chen](https://github.com/charles-wu-chen)
-
 This article is about to deploy wechaty node.js application into AWS EC2 steps by steps.
 
 ## Prerequisites

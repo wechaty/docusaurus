@@ -9,9 +9,7 @@ tags:
 image: /assets/2020/kotlin-wechaty-simple-shell/home.jpeg
 ---
 
-
-
-> 这个项目是基于SpringBoot和SpringMVC的，语言是kotlin，构建工具是maven。
+这个项目是基于SpringBoot和SpringMVC的，语言是kotlin，构建工具是maven。
 
 ## 准备工作（创建自己的wechaty-hostie-token）
 

@@ -12,9 +12,6 @@ tags:
 image: assets/2020/java-wechaty-transplant-midpoc/java-wechaty-transplant-midpoc.jpg
 ---
 
-> Author: [@cunkoulaocai](https://github.com/cunkoulaocai)
-> Code: [@cunkoulaocai/java-wechaty](https://github.com/cunkoulaocai/java-wechaty)
-
 ## 暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。

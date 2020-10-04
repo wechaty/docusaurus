@@ -9,8 +9,6 @@ tags:
 image: /assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-1.png
 ---
 
-> Author: [@hczhcz](https://github.com/hczhcz), an open source coder <del>and fan of the TOAD</del>
-
 Before introducing [Wechaty Telegram Bot Adaptor](https://github.com/hczhcz/wechaty-telegram), I would like to say something about Telegram chatbots. Recent days, I have a lot of fun playing chatbots on Telegram. After lynched hundreds of tanners in [Werewolf](http://www.tgwerewolf.com/) games, I realized that a chatbot can bring so much fun to users.
 
 ![telegram]({{site.baseurl}}/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-1.png)

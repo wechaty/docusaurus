@@ -8,8 +8,6 @@ tags:
 image: /assets/2018/code-migration-en.png
 ---
 
-> Author: [@lijiarui](https://github.com/lijiarui) Founder of BotOrange, Author of Wechaty.
-
 Wechaty has been updated to version 0.16(BETA) these days and begin to support all kinds of wechat solutions including web, ipad, ios, etc. My product based on wechaty has to migration from wechaty solution based on web to ipad solution.
 
 This blog introduces how to porting code from wechaty puppeteer to padchat.

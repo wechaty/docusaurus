@@ -15,7 +15,7 @@
 1. Write your blog in markdown
 1. Add your blog to `_post` folder
 1. Add related image to `assets` folder (create a `$MONTH-your-blog-slug/` directory to contain your images)
-1. Add your info into `_developers/your_github_id.yml`
+1. Add your info into `_developers/your_github_id.md`
 1. Commit your changes (git commit -am 'added a blog')
 1. Push to the branch
 1. Create new Pull Request

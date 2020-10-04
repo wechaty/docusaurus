@@ -7,8 +7,6 @@ tags:
   - featured
 image: /assets/2018/h4dex-wechatprotocol.jpeg
 ---
-
-> Author: [@h4dex](https://github.com/h4dex),  写bug的设计师
 >
 > Blog: <https://www.icefox.org>
 
