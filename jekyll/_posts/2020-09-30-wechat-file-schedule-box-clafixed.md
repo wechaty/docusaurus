@@ -10,11 +10,11 @@ tags:
   - netdisk
 ---
 
-# 简介
+## 简介
 
 使用Wechaty以少量的代码实现一个微信文件日程匣子项目。可快速将微信中的内容同步（转存）到其他网盘中。同时还添加自动识别处理日程等的小功能。
 
-# 关于Wechaty
+## 关于Wechaty
 
 ### 官方定义：
 
@@ -34,69 +34,69 @@ tags:
 
 ## 代码结构
 
-> 具体仓库见https://github.com/hywhuangyuwei/Wechat-file-schedule-box。
+> 代码仓库[已开源](https://github.com/hywhuangyuwei/Wechat-file-schedule-box)。
 
-
+目录结构如下：
 
 > ├── LICENSE
-> 
+>  
 > ├── Node
-> 
+>  
 > │   ├── coursHandler.js
-> 
+>  
 > │   ├── databasesConfig.js
-> 
+>  
 > │   ├── databases.js
-> 
+>  
 > │   ├── fileHandler.js
-> 
+>  
 > │   ├── functions.js
-> 
+>  
 > │   ├── httpServer.js
-> 
-> 
+>  
+>  
 > │   ├── main.js
-> 
+>  
 > │   ├── menuHandler.js
-> 
+>  
 > │   ├── scheduleHandler.js
-> 
-> 
-> 
+>  
+>  
+>  
 > │   ├── test.js
-> 
-> 
+>  
+>  
 > │   └── webdav.js
-> 
+>  
 > ├── package.json
-> 
+>  
 > ├── package-lock.json
-> 
+>  
 > ├── public
-> 
+>  
 > │   └── cours.json
-> 
-> 
+>  
+>  
 > ├── README.md
-> 
+>  
 > ├── RunDir
-> 
+>  
 > ├── RunRobot.sh
-> 
+>  
 > ├── template
-> 
+>  
 > │   └── template.html
-> 
+>  
 > └── Time-NLP
-> 
+>  
 >     ├── pom.xml
-> 
+>  
 >     ├── README.md
-> 
+>  
 >     ├── resource
-> 
+>  
 >     ├── src
-> 
+>  
 >     └── target
 
 主要代码位于`Node/`下。其中：
@@ -111,6 +111,6 @@ tags:
 
 `RunDir/`的存在主要是因为msg.toFileBox方法会在运行目录保存文件，故在此目录下暂存这些文件。
 
-# 结语
+## 结语
 
 众所周知微信作为我们每天都在使用的工具，在文件管理等方面较QQ等其他工具功能过于单一，因此可以通过Wechaty搭建一个文件匣子，给微信加上文件自动同步网盘、日程自动收集等小功能，让日常办公更加效率：）
