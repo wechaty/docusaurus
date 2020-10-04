@@ -53,8 +53,6 @@ image: /assets/2020/go-wechaty-gh-actions-optimization-final-poc/header.png
 
 <iframe width="560" height="315" src="//player.bilibili.com/player.html?aid=244737639&bvid=BV1cv411y7jY&cid=239638372&page=1" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
-<iframe width="560" height="315"  src="//player.bilibili.com/player.html?aid=669718149&bvid=BV1oa4y1j7Zv&cid=239631994&page=1" scrolling="no"frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
 ## 导师评论
 
 ### 评审对象
