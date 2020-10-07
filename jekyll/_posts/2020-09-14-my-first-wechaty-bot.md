@@ -16,7 +16,7 @@ title: /assets/2020/my-first-wechaty-bot/2020-09-my-first-wechaty-bot.png
 
 开发之前呢，最好还是了解下这个架构的原理，具体的不细说，有兴趣的github上都可以找到答案。这里就放一张官方的原理图。
 
-![image](jekyll/assets/2020/my-first-wechaty-bot/1.png)
+![image](/assets/2020/my-first-wechaty-bot/1.png)
 
 最底层是各个协议，基于pad微信的协议（本文重点，github库名称是wechaty-puppet-padplus），基于web微信协议的（github库名称是wechaty-puppet-puppeteer），基于windows pc端微信协议的（github库名称是wechaty-puppet-windows）等等。
 
@@ -123,7 +123,7 @@ node bot.js
 ```
 
 成功运行：
-![image.png](jekyll/assets/2020/my-first-wechaty-bot/2.png)
+![image.png](/assets/2020/my-first-wechaty-bot/2.png)
 之后就可以手机微信扫码登录，当别人给你当前登录的微信号发送消息“12345”，就会自动回复“hello world”。
 
 ## 遇到的问题
@@ -132,7 +132,7 @@ node bot.js
 
 ### cmd窗口二维码显示扫码不完善
 
-![image.png](jekyll/assets/2020/my-first-wechaty-bot/3.png)
+![image.png](/assets/2020/my-first-wechaty-bot/3.png)
 
 解决办法是修改cmd窗口的属性，可以参考：[https://github.com/wechaty/wechaty/issues/2055](https://github.com/wechaty/wechaty/issues/2055)。
 结束！
