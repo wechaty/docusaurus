@@ -17,6 +17,9 @@ module.exports = {
       'tutorials/README',
       'tutorials/video-tutorial',
     ],
+    'Chatbot 1 to 2': [
+      'chatbot-1-to-2/README',
+    ],
     Recipes: [
       'recipes/README',
       'recipes/configure-wechaty',
