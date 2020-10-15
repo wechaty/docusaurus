@@ -1,7 +1,7 @@
 ---
 name: hurely
 site: https://github.com/hurely
-avatar: /assets/developers/hurely/avatar.png
+avatar: /assets/developers/hurely/avatar.jpg
 bio: 前端开发，喜欢折腾新技术
 email: 
 twitter: 
