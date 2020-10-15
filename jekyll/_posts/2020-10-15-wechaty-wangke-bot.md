@@ -14,7 +14,7 @@ tags:
 
 ## 项目地址
 
-github：https://github.com/hurely/wechaty-wangke
+github：[https://github.com/hurely/wechaty-wangke](https://github.com/hurely/wechaty-wangke)
 
 ## 技术栈
 
@@ -43,7 +43,7 @@ github：https://github.com/hurely/wechaty-wangke
 
 1.src/index.js --wechaty 启动的入口文件
 
-```
+```js
 const config = require("../config/config")
 
 const {
@@ -110,7 +110,7 @@ bot.start()
 
 2.config/config.js 基础的配置文件
 
-```
+```js
 module.exports = {
     // 设定协议的token，本项目基于wechaty-puppet-padplus
     token: "puppet_XXXXXXXX",
@@ -130,7 +130,7 @@ module.exports = {
 
 3.src/utils/reply.js 根据关键字，回复内容
 
-```
+```js
 const axios = require("axios");
 const { FileBox } = require("file-box")
 const { log } = require('wechaty')
@@ -138,7 +138,6 @@ const config = require("../../config/config")
 const { pareMiniProgramMsg, pareseXmlToJson } = require("../utils/utils")
 
 module.exports = (msg, length) => {
-
 	return new Promise(async (resolve, reject) => {
 		// 接收小程序后发送小程序小程序appId和路径
 		if (msg.payload.type === 9 && msg.payload.fromId === 'mishi19900806') {
@@ -183,7 +182,7 @@ module.exports = (msg, length) => {
 
 4.src/utils/utils.js 工具类
 
-```
+```js
 var convert = require('xml-js')
 
 function pareseXmlToJson(xml){
@@ -215,13 +214,13 @@ module.exports = {
 
 ## Wechaty 的 Token 申请方法
 
-https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty
+[官方文档介绍](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ## 网课答案接口用法
 
 ![网课答案接口](https://kung-1252408270.cos.ap-chengdu.myqcloud.com/markdown/20201015141509.png)
 
-1.访问http://api.51aidian.com/index.php?id=kunggggyoyoyo
+1.访问[http://api.51aidian.com/index.php?id=kunggggyoyoyo](http://api.51aidian.com/index.php?id=kunggggyoyoyo)
 
 2.按照页面要求自定义一个 id，如`wangkebot`，记下此时的 token`73eF71417eC4652C561D4F30893a7F51`点击授权
 
@@ -236,7 +235,7 @@ https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty
 ## 遇到的坑点
 
 - 避免微信号被封锁，建议开发的时候用微信小号进行开发，并根据特定的情况回复内容；
-- wechaty-puppet 版本问题，参见 wechaty 文档https://github.com/wechaty/wechaty/issues/1930
+- wechaty-puppet 版本问题，参见 [wechaty 文档](https://github.com/wechaty/wechaty/issues/1930)
 
 ## 运行
 
