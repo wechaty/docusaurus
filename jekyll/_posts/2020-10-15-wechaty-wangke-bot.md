@@ -180,7 +180,7 @@ function pareseJsonToXml(json) {
     ignoreComment: true,
     spaces: 4
   }
-  var xml = convert.json2xml(json, options) 
+  var xml = convert.json2xml(json, options)
   return xml
 }
 
@@ -188,7 +188,7 @@ function pareseJsonToXml(json) {
 * 解析发送微信小程序的内容 具体接收内容查看msg.xml文件
 **/
 function pareMiniProgramMsg(msg) {
-  var str = msg.replace(/'\n'/g, '').replace(/'\t'/g, '').replace(/'\'/g, '') 
+  var str = msg.replace(/'\n'/g, '').replace(/'\t'/g, '').replace(/'\'/g, '')
   return str
 }
 
