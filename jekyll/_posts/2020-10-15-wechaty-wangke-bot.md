@@ -139,7 +139,7 @@ const { pareMiniProgramMsg, pareseXmlToJson } = require("../utils/utils")
 
 module.exports = (msg, length) => {
 	return new Promise(async (resolve, reject) => {
-		// 接收小程序后发送小程序小程序appId和路径
+    // 接收小程序后发送小程序小程序appId和路径
 		if (msg.payload.type === 9 && msg.payload.fromId === 'mishi19900806') {
 			let text = msg.payload.text
 			text = pareMiniProgramMsg(text)
@@ -239,7 +239,7 @@ module.exports = {
 
 ## 运行
 
-```
+```js
 npm install
 npm start
 ```
