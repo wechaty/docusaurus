@@ -6,7 +6,6 @@ tags:
   - wechaty
   - puppet
   - PadLocal
-  - wechat
   - Wechaty-wangke-bot
 ---
 ## 背景
