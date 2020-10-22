@@ -49,4 +49,4 @@ tags:
 
 ## 项目地址
 
-[![](https://img.shields.io/badge/GIhub-%40henryfanyiye-brightgreen)](https://github.com/henryfanyiye/wechat-fanli-robot.git)
+[![Github](https://img.shields.io/badge/GIhub-%40henryfanyiye-brightgreen)](https://github.com/henryfanyiye/wechat-fanli-robot.git)
