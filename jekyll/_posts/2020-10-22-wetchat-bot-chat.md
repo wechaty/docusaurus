@@ -1,7 +1,7 @@
 ---
 title: "基于Wechaty打造定时多功能机器人(一)"
 author: 石柳新
-image: /assets/2020/watchaty-chat/demo.jpg
+image: /assets/2020/padlocal/logo.png
 email: shiliux@foxmail.com
 site: https://github.com/slx1997
 tags:
