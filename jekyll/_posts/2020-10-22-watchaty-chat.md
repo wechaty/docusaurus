@@ -3,7 +3,7 @@ title: "基于Wechaty打造定时多功能机器人(一)"
 author: 石柳新
 image: /assets/2020/watchaty-chat/demo.jpg
 email: shiliux@foxmail.com
-site: https://github.com/EvilBT
+site: https://github.com/slx1997
 tags:
   - wechaty
   - wechaty-puppet-padplus
@@ -221,3 +221,4 @@ node index.js
 - 拉人入群
 -以及还有功能没有考虑清楚的
 - 还将对接音乐播放，点歌等等
+  
