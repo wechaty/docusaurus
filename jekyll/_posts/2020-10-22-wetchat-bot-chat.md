@@ -1,6 +1,6 @@
 ---
 title: "基于Wechaty打造定时多功能机器人(一)"
-author: 石柳新
+author: slx1997
 image: /assets/2020/padlocal/logo.png
 email: shiliux@foxmail.com
 site: https://github.com/slx1997
