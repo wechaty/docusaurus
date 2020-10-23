@@ -81,7 +81,7 @@ npm init -y
 ```
 
 官方给我的是临时的puppetPadPlus协议，所以我需要安装的puppet是PadPlus版的，为了让二维码可以显示出来，我将二维码导出在页面，我这边引入的插件为qr-image
-我们安装*wechaty*、*wechaty-puppet-padplus*。
+我们安装**wechaty**、**wechaty-puppet-padplus**。
 
 ``` base
 npm i --save wechaty
