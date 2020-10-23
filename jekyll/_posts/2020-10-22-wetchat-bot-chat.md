@@ -148,32 +148,30 @@ app.all('*', function(req, res, next) {
 });
 
 bot
-	.on("scan", function onScan(qrcode, status) {
-		var img = qrImg.image(qrcode, { size: 10 });
-		img.pipe(fs.createWriteStream("logo.png"));
-	})
-	.on('login', async user => {
-		console.log(JSON.stringify(user))
-	})
-	.on("message", async message => {
-		console.log(JSON.stringify(message))
-	})
-	.on("friendship", function onFriendShip(friendship){
-		switch (friendship.type()) {
-			case Friendship.Type.Receive:
-			  if (addFriendKeywords.some(v => v == friendship.hello())) {
-				friendship.accept()
-			  }
-			  break
-		  }
-	})
-	.start();
+  .on("scan", function onScan(qrcode, status) {
+    var img = qrImg.image(qrcode, { size: 10 });
+    img.pipe(fs.createWriteStream("logo.png"));
+    })
+    .on('login', async user => {
+      console.log(JSON.stringify(user))
+    })
+    .on("message", async message => {
+      console.log(JSON.stringify(message))
+    })
+    .on("friendship", function onFriendShip(friendship){
+      switch (friendship.type()) {
+        case Friendship.Type.Receive:
+          if (addFriendKeywords.some(v => v == friendship.hello())) {
+            friendship.accept()
+        }
+        break
+      }
+   })
+   .start();
 
 var server = app.listen(8090, function() {
     var host = server.address().address;
     var port = server.address().port;
-
-//    console.log("服务器启动成功了端口是", port);
 })
 
 ```
