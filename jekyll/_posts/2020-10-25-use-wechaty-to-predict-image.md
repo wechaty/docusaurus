@@ -52,6 +52,7 @@ python：fastapi,uvicorn,torch,numpy,PIL
 ### wechaty部分
 
 首先创建一个名叫wechaty-torch的bot；
+
 ```typescript
 import { Message, Wechaty } from 'wechaty'
 import { ScanStatus } from 'wechaty-puppet'
@@ -75,6 +76,7 @@ const bot = new Wechaty({
 ```
 
 然后扫码登录后，显示登录帐号；
+
 ```typescript
 bot.on('scan', (qrcode, status) => {
   if (status === ScanStatus.Waiting) {
@@ -89,6 +91,7 @@ bot.on('login'  , user => console.info('Bot', `bot login: ${user}`))
 ```
 
 message部分是该文件的重点，首先获取消息类型，如果非图片即跳出，是图片则将图转化为base64编码后使用request发送post请求到```http://127.0.0.1:8000/message```(后端服务器)，然后将响应值回复给用户；
+
 ```typescript
 bot.on('message', async (msg: Message) => {
     if (msg.type() !== Message.Type.Audio) {
@@ -120,6 +123,7 @@ bot.on('message', async (msg: Message) => {
 ```
 
 最后启动机器人即可。
+
 ```typescript
 bot.start().catch(async e => {
   console.info('Bot', 'init() fail:' + e)
@@ -131,6 +135,7 @@ bot.start().catch(async e => {
 ### 后端部分
 
 首先，引入各种依赖库和模型调用文件；
+
 ```python
 from typing import List
 from fastapi import Depends, FastAPI
@@ -148,6 +153,7 @@ from model import get_bsimg_pred
 ```
 
 然后创建一个FastAPI应用，并定义Message类（内含bsimg）；
+
 ```python
 app = FastAPI()
 
@@ -164,6 +170,7 @@ class Message(BaseModel):
 ```
 
 简简单单写一个post请求，完事。
+
 ```python
 @app.post("/message/")
 async def m(msg: Message):
@@ -179,6 +186,7 @@ async def m(msg: Message):
 > 模型部分仅介绍部分函数。
 
 **获得预测值和其余标签置信度**：传入tensor类型的变量img，返回pred:int 预测值ID、conf_list:list 其余变量置信度；
+
 ```python
 def get_pred(img):
     x = Variable(img)
@@ -192,6 +200,7 @@ def get_pred(img):
 ```
 
 **将base64编码转换为PLT图片类型**：传入str类型的base64编码，返回PLT图片类型变量img；
+
 ```python
 def base64_to_image(base64_str):
     base64_data = re.sub('^data:image/.+;base64,', '', base64_str)
@@ -202,6 +211,7 @@ def base64_to_image(base64_str):
 ```
 
 **获得base64编码图片的预测内容**：传入str类型的base64编码，返回包含预测值和置信度的字符串；
+
 ```python
 def get_bsimg_pred(bsimg: str):
     img_1 = transform(base64_to_image(bsimg))
