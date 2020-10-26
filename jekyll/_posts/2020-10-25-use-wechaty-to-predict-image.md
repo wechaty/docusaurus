@@ -227,4 +227,3 @@ def get_bsimg_pred(bsimg: str):
 ```
 
 以上即是开发过程~
-
