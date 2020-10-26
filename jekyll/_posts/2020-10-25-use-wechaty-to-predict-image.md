@@ -9,7 +9,7 @@ Use wechaty to apply pytorch model via WeChat.
 ## 想法
 
 在跑深度学习模型时，我时常会感觉调用一个模型好复杂，需要写好长好长的代码，而我又没有学过小程序开发，于是想到做一个用微信快速调用模型的小玩意儿。
- 
+
 本项目即是通过wechaty与微信通讯，利用fastapi中转数据并调用pytorch模型的实践。
 
 同时，目前该项目仅仅作为一个MVP（最小可行产品），功能可能并不完善，在未来或许会加入模型训练完毕提醒/模型训练意外终止提醒等功能，敬请期待~
@@ -225,3 +225,5 @@ def get_bsimg_pred(bsimg: str):
         confi_list = confi_list + "%8s 的置信度为： %.2f%%\n" % (label[i],con_list[i]*100)
     return str(label[pred])+'\n'+confi_list
 ```
+
+以上即是开发过程~
