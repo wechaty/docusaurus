@@ -68,7 +68,7 @@ To get to know the details about how it works, please feel free to read the sour
 
 How to send an image to the gitter.im room via API?
 
-I ran into this question two days ago. With great help from @MadLittleMods  finally, I made it!
+I ran into this question two days ago. With great help from [@MadLittleMods](https://github.com/MadLittleMods) finally, I made it!
 
 ### 1. Background
 
