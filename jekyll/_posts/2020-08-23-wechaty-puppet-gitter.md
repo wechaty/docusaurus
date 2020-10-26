@@ -23,9 +23,8 @@ To support Gitter.im, the core component is the NPM module [wechaty-puppet-gitte
 
 Here's the example code that shows out how to use Wechaty with Gitter room: it will print all room names and you can send text messages to rooms.
 
-// Of course you need `npm install wechaty wechaty-puppet-gitter` before run this little code snip!
-
 ```ts
+// Of course you need `npm install wechaty wechaty-puppet-gitter` before run this little code snip!
 import { Wechaty } from 'wechaty'
 import { PuppetGitter } from 'wechaty-puppet-gitter'
 
