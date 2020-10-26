@@ -60,9 +60,9 @@ In order to sync two rooms, we need to create two Wechaty instances, one is usin
 
 To get to know the details about how it works, please feel free to read the source code of our chatbot, it has been open-sourced at <https://github.com/wechaty/friday/>, and here are some entries that good to start with:
 
-1. Create a Wechaty instance with Gitter Puppet
-1. Create a Wechaty instance with Donut Puppet
-1. Sync Gitter Room and WeChat Room Messages
+1. [Create a Wechaty instance with Gitter Puppet](https://github.com/wechaty/friday/blob/c73f0647f7a03c5e10ee5745fc4bc2d818456e85/src/bots/gitter/bot.ts#L14-L21)
+1. [Create a Wechaty instance with Donut Puppet](https://github.com/wechaty/friday/blob/c73f0647f7a03c5e10ee5745fc4bc2d818456e85/src/friday/bot.ts#L23-L26)
+1. [Sync Gitter Room and WeChat Room Messages](https://github.com/wechaty/friday/blob/c73f0647f7a03c5e10ee5745fc4bc2d818456e85/src/cross-puppet.ts#L38-L81)
 
 ## Upload Image with Gitter API
 
