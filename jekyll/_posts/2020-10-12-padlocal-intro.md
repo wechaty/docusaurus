@@ -1,5 +1,5 @@
 ---
-title: "PadLocal Intro"
+title: "New Wechaty Puppet Service: PadLocal"
 author: padlocal
 image: /assets/2020/padlocal/logo.png
 categories: puppet-service-providers
@@ -11,9 +11,9 @@ tags:
   - wechaty-puppet-padlocal
 ---
 
-**PadLocal: WeChaty puppet service provider.**
-
 大家好，我是 PadLocal 的开发者，大伙都称我“好大”。
+
+## PadLocal: WeChaty puppet service provider.
 
 几年前做爬虫系统的时候，第一次接触到了 Wechaty。这个项目需要定期推送爬虫的状态信息，以及主动查询爬取的相关内容。正好当时有一句很流行的话：“对话即服务”，于是就想是不是可以通过微信来实现这些功能？借助 Wechaty 很快就实现了所有功能，最终效果也非常不错。最近一两年，我们团队开始做社群相关产品，自然而然也用了 Wechaty，慢慢地对 Wechaty 以及整个社区也越来越认可和信任。
 
