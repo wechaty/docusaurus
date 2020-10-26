@@ -2,7 +2,9 @@
 title: "PadLocal Intro"
 author: padlocal
 image: /assets/2020/padlocal/logo.png
+categories: puppet-service-providers
 tags:
+  - news
   - wechaty
   - puppet
   - PadLocal
