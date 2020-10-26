@@ -3,6 +3,7 @@ title: Gitter.im is supported by Wechaty now!
 author: huan
 image: /assets/2020/08-gitter/wechaty-gitter.png
 tags:
+  - news
   - wechaty
   - puppet
   - gitter
