@@ -11,20 +11,7 @@ image: /assets/2020/python-wechaty/live-coding.png
 
 Wechaty 作为一个对话SDK，拥有适配多平台的优秀能力，同时还具备多语言的特性，今天我们将以一个简单的视频来介绍如何开始使用[Python-Wechaty](https://github.com/wechaty/python-wechaty)编写一个最简单的聊天机器人。
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KSELdGeJIzo?start=0" frameborder="0" allowfullscreen="" style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=KSELdGeJIzo" %}
 
 ## 上手步骤
 
