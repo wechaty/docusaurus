@@ -14,7 +14,7 @@ tags:
 
 - 自从2017年微信web端API限制以后，itchat等一大批bot歇菜了，一直都在找一款合适的替品
 - 目前来看，大部分都是针对windows微信客户端，基于HOOK的dll注入实现对微信的操控，有一定的封号风险，只能用固定的版本，部署在linux服务器端比较困难，意味着只能一直开着电- -wechaty，支持IPAD,,MAC等多种协议，不用去调用WEB网页API,并且可以布署在服务器，满足我所有需求。[项目地址](https://github.com/wechaty/wechaty)
-- 看完官方文档后( [ token官方介绍](https://github.com/juzibot/welcome/wiki/everything-about-wechaty)), 发现需要申请Token,并且python版本的Token是要付费的，但没有学过typescript，有点想放弃，浏览了一下ding-dong-bot的Example,似乎可以看懂，那就边学习边摸索吧。（ps:后来偶然见发现了另一篇可以使用将token转变一下实现python版wechaty,但此时已经基本用TS写完了,如果想用Python等其他语言可以参考[官方文档](https://github.com/wechaty/wechaty/issues/1985)。）
+- 看完官方文档后（[ token官方介绍](https://github.com/juzibot/welcome/wiki/everything-about-wechaty)）， 发现需要申请Token,并且python版本的Token是要付费的，但没有学过typescript，有点想放弃，浏览了一下ding-dong-bot的Example,似乎可以看懂，那就边学习边摸索吧。（ps:后来偶然见发现了另一篇可以使用将token转变一下实现python版wechaty,但此时已经基本用TS写完了,如果想用Python等其他语言可以参考[官方文档](https://github.com/wechaty/wechaty/issues/1985)。）
 
 ## 具备功能
 
@@ -50,7 +50,7 @@ async function initDay() {
   setSchedule('0 40 0 * * *', async () => {
     console.log('你的贴心小助理开始工作啦！')
     let logMsg
-    let contact = 
+    let contact =
       (await bot.Contact.find({ name: 'Jason' })) ||
       (await bot.Contact.find({ alias: 'boss' })) // 获取你要发送的联系人
     let one = await getOne() //获取每日一句
@@ -131,11 +131,11 @@ const getBoss = async () => {
  * 用wechaty-weixin-openai可以实现快速接入微信对话平台
  */
 bot.use(WechatyWeixinOpenAI({
-    token: openAIToken, 
+    token: openAIToken,
     encodingAESKey: openAIEncodingAESKey,
     noAnswerHook, //在机器人无法回答时，推送设定的回答
     preAnswerHook, //判断是否是关键字，如果是关键字，触发关键字回答而不接入微信开放平台
-  })) 
+  }))
   
 const processCommonMaterial = async (message: Message) => {
     const room = message.room()
@@ -255,7 +255,7 @@ async function getOne() {
       .replace(/(^\s*)|(\s*$)/g, '')
     return todayOne
   } catch (err) {
-    console.log('错误', err);
+    console.log('错误', err)
     return err
   }
 }
@@ -274,7 +274,7 @@ async function getTXweather() {
       let obj = {
         weatherTips: todayInfo.tips,
         todayWeather:`阿林顿今天${todayInfo.weather}\n温度:${todayInfo.lowest}/${todayInfo.highest}
-        \n${todayInfo.wind}风： ${todayInfo.windspeed}\n紫外线指数:${todayInfo.uv_index}\n湿度 
+        \n${todayInfo.wind}风： ${todayInfo.windspeed}\n紫外线指数:${todayInfo.uv_index}\n湿度
         ${todayInfo.humidity}`
       };
       console.log('获取天行天气成功', obj)
