@@ -9,32 +9,32 @@ tags:
 
 ---
 
-
-
 ## 前言
 
 - 自从2017年微信web端API限制以后，itchat等一大批bot歇菜了，一直都在找一款合适的替品
 
 - 目前来看，大部分都是针对windows微信客户端，基于HOOK的dll注入实现对微信的操控，有一定的封号风险，只能用固定的版本，部署在linux服务器端比较困难，意味着只能一直开着电- -wechaty，支持IPAD,,MAC等多种协议，不用去调用WEB网页API,并且可以布署在服务器，满足我所有需求。[项目地址](https://github.com/wechaty/wechaty)
-- 看完官方文档后( [ token官方介绍](https://github.com/juzibot/welcome/wiki/everything-about-wechaty)), 发现需要申请Token,并且python版本的Token是要付费的，但没有学过typescript，有点想放弃，浏览了一下ding-dong-bot的Example,似乎可以看懂，那就边学习边摸索吧。（ps:后来偶然见发现了另一篇可以使用将token转变一下实现python版wechaty,但此时已经基本用TS写完了,如果想用Python等其他语言可以参考[官方文档](https://github.com/wechaty/wechaty/issues/1985)。） 
+- 看完官方文档后( [ token官方介绍](https://github.com/juzibot/welcome/wiki/everything-about-wechaty)), 发现需要申请Token,并且python版本的Token是要付费的，但没有学过typescript，有点想放弃，浏览了一下ding-dong-bot的Example,似乎可以看懂，那就边学习边摸索吧。（ps:后来偶然见发现了另一篇可以使用将token转变一下实现python版wechaty,但此时已经基本用TS写完了,如果想用Python等其他语言可以参考[官方文档](https://github.com/wechaty/wechaty/issues/1985)。）
 
 ## 具备功能
 
 ### 1. 关键词触发功能
 
-1.1 关键词"介绍一下自己"、 "自我介绍一下"、 "你是谁"触发自我介绍
+2.1.1 关键词"介绍一下自己"、 "自我介绍一下"、 "你是谁"触发自我介绍
 1.2 地名+天气 触发天气查询
 
 ### 2. 智能聊天功能
 
-2.1群外直接聊天
+3.2.1群外直接聊天
 2.2群内成员皆有聊天权限“@bot” 聊天
 2.3不会回复 @其他群成员 的消息
 
 ## 实现过程
+
 Talk is cheap，show your code
 
 ### 1. 主程序
+
 ```typescript
 import { Wechaty, Message, UrlLink,log,} from 'wechaty'
 import { PuppetPadplus } from 'wechaty-puppet-padplus'
@@ -43,7 +43,6 @@ import { WechatyWeixinOpenAI, } from 'wechaty-weixin-openai'
 import { setSchedule, } from './schedule/index'
 import { getDay, formatDate,} from './utils/index'
 import { getOne, getTXweather, getSweetWord,} from './superagent/index'
-
 // 创建微信每日说定时任务
 async function initDay() {
   console.log(`已经设定每日说任务`);
@@ -184,6 +183,7 @@ bot.start()
 ```
 
 ### 2.创建schedule定时函数
+
 ```typescript
 import { schedule } from 'node-schedule'
 // date 参数
@@ -217,7 +217,9 @@ function setSchedule(date,callback) {
 
 export function setSchedule()
 ```
+
 ### 3.创建几个功能函数，爬取ONE网站的每日一句，提取通过API获取的消息
+
 ```typescript
 import * as cheerio from 'cheerio'
 import * as superagent from 'superagent'
@@ -305,7 +307,9 @@ async function getSweetWord() {
 
 export { getOne, getTXweather, getSweetWord, }
 ```
+
 ### 计算距离某日（生日，结婚纪念日等）还有多少天
+
 ```typescript
 function getDay(date) {
   var date2 = new Date()
@@ -354,13 +358,11 @@ function formatDate(date) {
 }
 export { getDay, formatDate }
 ```
-
 ![关键字触发消息](/assets/2020/daily-message-and-chatbot/keyword_push)
 ![无法回答推送名片](/assets/2020/daily-message-and-chatbot/push_contact)
 ![定时推送消息](/assets/2020/daily-message-and-chatbot/daily_message)
 ![智能聊天](/assets/2020/daily-message-and-chatbot/talk_to_bot)
 
-# 后记
+## 后记
 
 到此已经实现了私人人助理和定时推送消息的功能（[项目地址](https://github.com/Jasonlovesharon/my_bot)），由于对Typescript不熟，很多功能都是借鉴很多大神的轮子实现的，还是对Python熟悉点，下步准备用Python来实现以上功能，并进一步拓展更多有趣的功能。
-
