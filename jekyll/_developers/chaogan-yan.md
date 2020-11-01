@@ -14,4 +14,3 @@ Professor of the Institute of Psychology, Chinese Academy of Sciences (IPCAS), D
 - Github: <https://github.com/Chaogan-Yan>
 - Email：<>
 - Website: <>
-  

@@ -14,4 +14,3 @@ CTO of BotWave
 - Github: <https://github.com/jaslin>
 - Email：<>
 - Website: <>
-  

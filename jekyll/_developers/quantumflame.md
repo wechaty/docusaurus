@@ -14,4 +14,3 @@ A student curious about and interested in many things I don't know.
 - Github: <https://github.com/quantumFlame>
 - Email：<>
 - Website: <>
-  

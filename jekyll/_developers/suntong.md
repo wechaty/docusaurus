@@ -14,4 +14,3 @@ Provided the [monster] demo as a one-stop wechaty demo that includes everything 
 - Github: <https://github.com/suntong>
 - Email：<>
 - Website: <>
-  

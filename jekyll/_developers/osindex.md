@@ -14,4 +14,3 @@ A lazy full stack developer
 - Github: <https://github.com/osindex>
 - Email：<>
 - Website: <>
-  
