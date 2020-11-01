@@ -14,4 +14,3 @@ Serial Entrepreneur, Game designer and developer. Making chatbots at RIKAI Labs
 - Github: <https://github.com/dcsan>
 - Email：<>
 - Website: <>
-  

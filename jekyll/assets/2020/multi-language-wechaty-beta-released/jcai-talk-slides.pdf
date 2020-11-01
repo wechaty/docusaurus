@@ -18,16 +18,16 @@
 
 
   <link crossorigin="anonymous" media="all" integrity="sha512-M+rOrrqF1JSfReuJe+z3tZLbJ2S9Blt6dzIAQp0s5n6ps4eFL01D/bei2Qf9Qo0RLw7Dh8zVze9A1ozNHu2k2Q==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-next-33eaceaeba85d4949f45eb897becf7b5.css" />
-  
+
     <link crossorigin="anonymous" media="all" integrity="sha512-qP/wSs83gQ2Jsrm94mfqU27K5YQ4xKUtKbbl+eMuqODXJdZ/C/K5YajXR6yHDWZ7O4E0Z3FMG8OAOvIJHKvtGA==" rel="stylesheet" href="https://github.githubassets.com/assets/github-next-a8fff04acf37810d89b2b9bde267ea53.css" />
-    
-    
-    
-    
+
+
+
+
 
 
   <meta name="viewport" content="width=device-width">
-  
+
   <title>wechaty-meetup/slides.pdf at master · jcai/wechaty-meetup</title>
     <meta name="description" content="Wechaty Meetup 2020.6.14. Contribute to jcai/wechaty-meetup development by creating an account on GitHub.">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
@@ -48,7 +48,7 @@
 
   <meta name="github-keyboard-shortcuts" content="repository,source-code" data-pjax-transient="true" />
 
-  
+
 
   <meta name="selected-link" value="repo_source" data-pjax-transient>
 
@@ -72,7 +72,7 @@
 
 
 
-  
+
 
       <meta name="hostname" content="github.com">
     <meta name="user-login" content="huan">
@@ -85,7 +85,7 @@
     <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS,PAGE_STALE_CHECK,PRIMER_NEXT">
 
   <meta http-equiv="x-pjax-version" content="d20575307c438c43353de3782f8fe8f5">
-  
+
 
       <link href="https://github.com/jcai/wechaty-meetup/commits/master.atom" rel="alternate" title="Recent Commits to wechaty-meetup:master" type="application/atom+xml">
 
@@ -113,7 +113,7 @@
   </head>
 
   <body class="logged-in env-production page-responsive page-blob">
-    
+
 
     <div class="position-relative js-header-wrapper ">
       <a href="#start-of-content" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
@@ -121,8 +121,8 @@
         <span class="progress-pjax-loader-bar top-0 left-0" style="width: 0%;"></span>
       </span>
 
-      
-      
+
+
 
 
 
@@ -173,9 +173,9 @@
             <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
 
             <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
-              
+
 <ul class="d-none js-jump-to-suggestions-template-container">
-  
+
 
 <li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
   <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
@@ -216,7 +216,7 @@
 </ul>
 
 <ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
-  
+
 
 <li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
   <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
@@ -248,7 +248,7 @@
   </a>
 </li>
 
-  
+
 
 <li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
   <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
@@ -306,7 +306,7 @@
     <div class="mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15">
       <a class="js-selected-navigation-item Header-link py-lg-3 d-inline-block" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-octo-click="marketplace_click" data-octo-dimensions="location:nav_bar" data-selected-links=" /marketplace" href="/marketplace">
         Marketplace
-</a>      
+</a>
 
     </div>
 
@@ -338,7 +338,7 @@
   </div>
 
   <div class="Header-item mr-0 mr-lg-3 flex-order-1 flex-lg-order-none">
-    
+
     <a aria-label="You have unread notifications" class="Header-link notification-indicator position-relative tooltipped tooltipped-sw js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:unread" data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6MTM2MTg5MSIsInQiOjE1OTM1MTg1MTN9--568132fc4fa19f2bf3e4e27c9da6175984c7ee4e91fe6b65ee3a0d82bad8c735" href="/notifications">
         <span class="js-indicator-modifier mail-status unread"></span>
         <svg class="octicon octicon-bell" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z"></path><path fill-rule="evenodd" d="M8 1.5A3.5 3.5 0 004.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.018.018 0 00-.003.01l.001.006c0 .002.002.004.004.006a.017.017 0 00.006.004l.007.001h10.964l.007-.001a.016.016 0 00.006-.004.016.016 0 00.004-.006l.001-.007a.017.017 0 00-.003-.01l-1.703-2.554a1.75 1.75 0 01-.294-.97V5A3.5 3.5 0 008 1.5zM3 5a5 5 0 0110 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.518 1.518 0 0113.482 13H2.518a1.518 1.518 0 01-1.263-2.36l1.703-2.554A.25.25 0 003 7.947V5z"></path></svg>
@@ -354,7 +354,7 @@
     <svg class="octicon octicon-plus" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2a.75.75 0 01.75.75v4.5h4.5a.75.75 0 010 1.5h-4.5v4.5a.75.75 0 01-1.5 0v-4.5h-4.5a.75.75 0 010-1.5h4.5v-4.5A.75.75 0 018 2z"></path></svg> <span class="dropdown-caret"></span>
   </summary>
   <details-menu class="dropdown-menu dropdown-menu-sw mt-n2">
-    
+
 <a role="menuitem" class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
   New repository
 </a>
@@ -383,7 +383,7 @@
   </div>
 
   <div class="Header-item position-relative mr-0 d-none d-lg-flex">
-    
+
   <details class="details-overlay details-reset js-feature-preview-indicator-container" data-feature-preview-indicator-src="/users/huan/feature_preview/indicator_check">
 
   <summary class="Header-link"
@@ -404,7 +404,7 @@
     <div role="none" class="dropdown-divider"></div>
 
       <div class="pl-3 pr-3 f6 user-status-container js-user-status-context lh-condensed" data-url="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1">
-        
+
 <div class="js-user-status-container rounded-1 px-2 py-1 mt-2 border"
   data-team-hovercards-enabled>
   <details class="js-user-status-details details-reset details-overlay details-overlay-dark">
@@ -417,7 +417,7 @@
           </div>
         </div>
         <div class="
-          
+
            user-status-message-wrapper f6 min-width-0"
            style="line-height: 20px;" >
           <div class="css-truncate css-truncate-target width-fit text-gray-dark text-left">
@@ -598,7 +598,7 @@
       <a role="menuitem"
          class="dropdown-item"
          href="/settings/organizations"
-         
+
          data-ga-click="Header, go to organizations, text:your organizations"
          data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/jcai/wechaty-meetup/blob/master/slides.pdf&quot;,&quot;target&quot;:&quot;YOUR_ORGANIZATIONS&quot;,&quot;originating_url&quot;:&quot;https://github.com/jcai/wechaty-meetup/blob/master/slides.pdf&quot;,&quot;user_id&quot;:1361891}}" data-hydro-click-hmac="44e0ae7807ee19b20f513a984d12d8fd771253abae0c9e176dd8bf6eb0ac672b"
          >Your organizations</a>
@@ -614,7 +614,7 @@
 
 
     <div role="none" class="dropdown-divider"></div>
-      
+
 <div id="feature-enrollment-toggle" class="hide-sm hide-md feature-preview-details position-relative">
   <button
     type="button"
@@ -634,7 +634,7 @@
     <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/jcai/wechaty-meetup/blob/master/slides.pdf&quot;,&quot;target&quot;:&quot;HELP&quot;,&quot;originating_url&quot;:&quot;https://github.com/jcai/wechaty-meetup/blob/master/slides.pdf&quot;,&quot;user_id&quot;:1361891}}" data-hydro-click-hmac="4ed51d03516240b8e54ff86f383aff4bb60a2d6d2d034ac568080418bab46307" >Help</a>
     <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/jcai/wechaty-meetup/blob/master/slides.pdf&quot;,&quot;target&quot;:&quot;SETTINGS&quot;,&quot;originating_url&quot;:&quot;https://github.com/jcai/wechaty-meetup/blob/master/slides.pdf&quot;,&quot;user_id&quot;:1361891}}" data-hydro-click-hmac="c473bdc7ba82d578026055673231cd0d3206331f249d86f5adbf1922b5f2d5dc" >Settings</a>
     <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="yTN96C8mqSijWKKiaFvxEObPHBqWTiZj3FWZ1i8CD+4J8WYPqETIhIKkCB2RX5Mr3hPCwDnOU57hbf7S9+yrWA==" />
-      
+
       <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/jcai/wechaty-meetup/blob/master/slides.pdf&quot;,&quot;target&quot;:&quot;SIGN_OUT&quot;,&quot;originating_url&quot;:&quot;https://github.com/jcai/wechaty-meetup/blob/master/slides.pdf&quot;,&quot;user_id&quot;:1361891}}" data-hydro-click-hmac="c03aad79b82abd799464bfa1a478410d1b94e24876a511bcf9eed223cd848baa"  role="menuitem">
         Sign out
       </button>
@@ -646,7 +646,7 @@
 
 </header>
 
-        
+
 
     </div>
 
@@ -664,7 +664,7 @@
     <button class="flash-close js-flash-close" type="button" aria-label="Dismiss this message">
       <svg class="octicon octicon-x" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
     </button>
-    
+
       <div class="js-flash-template-message"></div>
 
   </div>
@@ -673,7 +673,7 @@
 </div>
 
 
-  
+
 
   <include-fragment class="js-notification-shelf-include-fragment" data-base-src="https://github.com/notifications/beta/shelf"></include-fragment>
 
@@ -687,9 +687,9 @@
   >
         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
     <main  >
-      
 
-  
+
+
 
 
 
@@ -706,9 +706,9 @@
 
       <div class="flex-auto min-width-0 width-fit mr-3">
         <h1 class="public  d-flex flex-wrap flex-items-center break-word float-none f3">
-  
+
       <svg class="octicon octicon-repo-forked" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg>
-  
+
   <span class="author ml-2 flex-self-stretch" itemprop="author">
     <a class="url fn" rel="author" data-hovercard-type="user" data-hovercard-url="/users/jcai/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/jcai">jcai</a>
   </span>
@@ -716,7 +716,7 @@
   <strong itemprop="name" class="mr-2 flex-self-stretch">
     <a data-pjax="#js-repo-pjax-container" href="/jcai/wechaty-meetup">wechaty-meetup</a>
   </strong>
-  
+
 </h1>
 
   <span class="fork-flag mt-1" data-repository-hovercards-enabled>
@@ -859,7 +859,7 @@
       </button>
       <h1 class="Box-title">Fork wechaty-meetup</h1>
     </div>
-      
+
               <div class="text-center overflow-auto">
                 <include-fragment>
                   <div class="octocat-spinner my-5" aria-label="Loading..."></div>
@@ -879,7 +879,7 @@
 </ul>
 
     </div>
-    
+
 <nav class="UnderlineNav js-repo-nav js-sidenav-container-pjax js-responsive-underlinenav overflow-hidden px-3 px-md-4 px-lg-5 bg-gray-light" aria-label="Repository" data-pjax="#js-repo-pjax-container">
   <ul class="UnderlineNav-body list-style-none ">
           <li class="d-flex">
@@ -887,35 +887,35 @@
               <svg height="16" class="octicon octicon-code UnderlineNav-octicon d-none d-sm-inline" class_names="UnderlineNav-octicon" display="none inline" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z"></path></svg>
 
             <span data-content="Code">Code</span>
-              
+
 </a>      </li>
       <li class="d-flex">
         <a class="js-selected-navigation-item UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item" data-tab-item="pull-requests-tab" data-hotkey="g p" data-ga-click="Repository, Navigation click, Pull requests tab" data-selected-links="repo_pulls checks /jcai/wechaty-meetup/pulls" href="/jcai/wechaty-meetup/pulls">
               <svg height="16" class="octicon octicon-git-pull-request UnderlineNav-octicon d-none d-sm-inline" class_names="UnderlineNav-octicon" display="none inline" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"></path></svg>
 
             <span data-content="Pull requests">Pull requests</span>
-              
+
 </a>      </li>
       <li class="d-flex">
         <a class="js-selected-navigation-item UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item" data-tab-item="actions-tab" data-hotkey="g w" data-ga-click="Repository, Navigation click, Actions tab" data-selected-links="repo_actions /jcai/wechaty-meetup/actions" href="/jcai/wechaty-meetup/actions">
               <svg height="16" class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline" class_names="UnderlineNav-octicon" display="none inline" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM6.379 5.227A.25.25 0 006 5.442v5.117a.25.25 0 00.379.214l4.264-2.559a.25.25 0 000-.428L6.379 5.227z"></path></svg>
 
             <span data-content="Actions">Actions</span>
-              
+
 </a>      </li>
       <li class="d-flex">
         <a class="js-selected-navigation-item UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item" data-tab-item="projects-tab" data-hotkey="g b" data-ga-click="Repository, Navigation click, Projects tab" data-selected-links="repo_projects new_repo_project repo_project /jcai/wechaty-meetup/projects" href="/jcai/wechaty-meetup/projects">
               <svg height="16" class="octicon octicon-project UnderlineNav-octicon d-none d-sm-inline" class_names="UnderlineNav-octicon" display="none inline" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path></svg>
 
             <span data-content="Projects">Projects</span>
-              
+
 </a>      </li>
       <li class="d-flex">
         <a class="js-selected-navigation-item UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item" data-tab-item="wiki-tab" data-ga-click="Repository, Navigation click, Wikis tab" data-selected-links="repo_wiki /jcai/wechaty-meetup/wiki" href="/jcai/wechaty-meetup/wiki">
               <svg height="16" class="octicon octicon-book UnderlineNav-octicon d-none d-sm-inline" class_names="UnderlineNav-octicon" display="none inline" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 1.75A.75.75 0 01.75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0111.006 1h4.245a.75.75 0 01.75.75v10.5a.75.75 0 01-.75.75h-4.507a2.25 2.25 0 00-1.591.659l-.622.621a.75.75 0 01-1.06 0l-.622-.621A2.25 2.25 0 005.258 13H.75a.75.75 0 01-.75-.75V1.75zm8.755 3a2.25 2.25 0 012.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324l.004-5.073-.002-2.253A2.25 2.25 0 005.003 2.5H1.5v9h3.757a3.75 3.75 0 011.994.574z"></path></svg>
 
             <span data-content="Wiki">Wiki</span>
-              
+
 </a>      </li>
       <li class="d-flex">
         <a class="js-selected-navigation-item UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item" data-tab-item="security-tab" data-hotkey="g s" data-ga-click="Repository, Navigation click, Security tab" data-selected-links="security overview alerts policy token_scanning code_scanning /jcai/wechaty-meetup/security" href="/jcai/wechaty-meetup/security">
@@ -931,7 +931,7 @@
               <svg height="16" class="octicon octicon-graph UnderlineNav-octicon d-none d-sm-inline" class_names="UnderlineNav-octicon" display="none inline" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 1.75a.75.75 0 00-1.5 0v12.5c0 .414.336.75.75.75h14.5a.75.75 0 000-1.5H1.5V1.75zm14.28 2.53a.75.75 0 00-1.06-1.06L10 7.94 7.53 5.47a.75.75 0 00-1.06 0L3.22 8.72a.75.75 0 001.06 1.06L7 7.06l2.47 2.47a.75.75 0 001.06 0l5.25-5.25z"></path></svg>
 
             <span data-content="Insights">Insights</span>
-              
+
 </a>      </li>
 
 </ul>
@@ -945,7 +945,7 @@
 
 </summary>
             <details-menu class="dropdown-menu dropdown-menu-sw " role="menu">
-  
+
             <ul>
                 <li data-menu-item="code-tab" hidden>
                   <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links=" /jcai/wechaty-meetup" href="/jcai/wechaty-meetup">
@@ -989,19 +989,19 @@
 <div class="container-xl clearfix new-discussion-timeline  px-3 px-md-4 px-lg-5">
   <div class="repository-content ">
 
-    
-    
 
-  
+
+
+
 
 
     <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/jcai/wechaty-meetup/blob/e27a3b03842eae55fad869de48c5eb63cc0ae98a/slides.pdf">Permalink</a>
 
     <!-- blob contrib key: blob_contributors:v22:eba6c7ef94dab2925a1ae0e6226bf4ac -->
-    
+
 
     <div class="d-flex flex-items-center flex-shrink-0 pb-3 flex-wrap flex-justify-between flex-md-justify-start">
-      
+
 <details class="details-reset details-overlay mr-0 mb-0 " id="branch-select-menu">
   <summary class="btn css-truncate"
            data-hotkey="w"
@@ -1087,7 +1087,7 @@
 
     <div class="Box mt-3 position-relative
       ">
-      
+
 <div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
   <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
 
@@ -1121,10 +1121,10 @@
 
 
 
-      
+
 
   <div itemprop="text" class="Box-body p-0 blob-wrapper data type-text ">
-      
+
   <div class="render-wrapper ">
     <div class="render-container is-render-pending js-render-target  "
       data-identity="bc622041-2d4c-4088-aa3b-e2392817544c"
@@ -1144,7 +1144,7 @@
 
     </div>
 
-  
+
 
 
   <details class="details-reset details-overlay details-overlay-dark" id="jumpto-line-details-dialog">
@@ -1164,11 +1164,11 @@
 
     </main>
   </div>
-  
+
 
   </div>
 
-        
+
 <div class="footer container-xl width-full p-responsive" role="contentinfo">
   <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
@@ -1213,14 +1213,14 @@
     <script crossorigin="anonymous" integrity="sha512-47cvnR4cfmRA+p1TUeCLY+nCEqD7tni9XPMTW5kLy2C4SUhMCAw0NWiKqvZEM0iZRBw+8u8DgeD30fC56eV02w==" type="application/javascript" src="https://github.githubassets.com/assets/environment-bootstrap-e3b72f9d.js"></script>
     <script crossorigin="anonymous" async="async" integrity="sha512-XWz5HaaTTrTqPbip/poDC93vFrDNSzLklq8U2NDvVKkqFnGnjKWXc4oqIroQ7niVJGouPSNavRlVOj9sG46GDQ==" type="application/javascript" src="https://github.githubassets.com/assets/vendor-5d6cf91d.js"></script>
     <script crossorigin="anonymous" async="async" integrity="sha512-cFdsPtFdG3JFLJrPCw2IFgIdnECd3F1B+KWzwEih5VSTbixIO/Ymjon6nfNo/EQihv3x6UYYGbMet6XocJs60Q==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-70576c3e.js"></script>
-    
+
     <script crossorigin="anonymous" async="async" integrity="sha512-Pd5xPTv0AbHqO0tW3FDU088cgHoiy0AFhzOH+zZd2+aOMEpNw8Gie39RZ02m2IThJBhwKhQx2JIHQnZNMwq2qg==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-3dde713d.js"></script>
-    
+
       <script crossorigin="anonymous" async="async" integrity="sha512-4GcSWGoe36+BoWho4gtJcByZe8j43w+lt2/PDe3rmBxRVSgD29YipDwuIywe8fvOd2b2CszBqaPGxSznUtE3Xg==" type="application/javascript" data-module-id="./drag-drop.js" data-src="https://github.githubassets.com/assets/drag-drop-e0671258.js"></script>
       <script crossorigin="anonymous" async="async" integrity="sha512-2k8dDHk0yt52uKvOvgc9cwOXOeJhxBfVP5kPS2BrCdytDmtEIJ2yone26vFENAyk1a2aFQ7KDgEevRQafuAf8A==" type="application/javascript" data-module-id="./gist-vendor.js" data-src="https://github.githubassets.com/assets/gist-vendor-da4f1d0c.js"></script>
       <script crossorigin="anonymous" async="async" integrity="sha512-iv+4yAluOjiG50ZypUBIWIUCRDo6JEBf2twvmd5AelxgPQJO/XC1oNMGTMdDfKt30p7G7fHEOTZ2utHWDJ9PPQ==" type="application/javascript" data-module-id="./randomColor.js" data-src="https://github.githubassets.com/assets/randomColor-8affb8c8.js"></script>
-    
-    
+
+
   <div class="js-stale-session-flash flash flash-warn flash-banner" hidden
     >
     <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path></svg>

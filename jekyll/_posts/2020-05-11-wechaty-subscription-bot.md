@@ -142,7 +142,7 @@ class UserContext {
 }).on('message', async msg => {
   // ...
   const channelId = match[1];
-  
+
   ctx.data.subscriptions[channelId] = ctx.data.subscriptions[channelId] || {};
   const channel = ctx.data.subscriptions[channelId];
   channel.lastTimestamp = Number(new Date()) / 1000;
@@ -246,9 +246,9 @@ class UserContext {
     await this.save();
     (await this.user())?.say(`您已成功退订《${channel.name}》`);
   }
-  
+
   // ...
-  
+
 }
 ```
 
@@ -277,9 +277,9 @@ bot.on('message', async msg => {
     await ctx.leaveChannel(msg.content().split(' ')[1]);
     return;
   }
-  
+
   // ...
-  
+
 });
 ```
 
