@@ -1,5 +1,5 @@
 ---
-title: 走进 “ SLASH（斜杠)青年 ” 李卓桓
+title: 开源社：走进 “ SLASH（斜杠)青年 ” 李卓桓
 author: huan
 categories: story
 tags:
