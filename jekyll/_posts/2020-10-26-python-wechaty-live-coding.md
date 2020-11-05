@@ -1,6 +1,6 @@
 ---
 title: "Python-Wechaty Live Coding"
-author: wj-Mcat
+author: wj-mcat
 categories: tutorial
 tags:
   - news
