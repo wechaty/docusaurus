@@ -25,3 +25,10 @@ image: /assets/2020/11-lets-water/letswater@2x.png
 > 后期：目前有一个管理系统， 希望向机器人发送指定格式的信息，由机器人完成后台管理的一些操作，减少人工操作的步骤
 
 > 自动化部署：使用docker + daocloud平台 + github，一键+持续集成
+
+## 安装依赖 && 启动
+```shell
+cd app/
+npm i 
+npm start
+```
