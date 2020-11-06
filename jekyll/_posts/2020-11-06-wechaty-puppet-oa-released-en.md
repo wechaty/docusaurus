@@ -1,6 +1,6 @@
 ---
 title: "Official-Account Puppet Released"
-author: wj-Mcat
+author: wj-mcat
 categories: project
 tags:
   - news
