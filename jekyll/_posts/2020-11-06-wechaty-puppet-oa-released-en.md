@@ -21,7 +21,7 @@ If you have developed other IM platforms using wechaty, you can develop the WeCh
 
 Using wechaty to develop different platform chatbot is almost no difference at the code level, the underlying `puppet` has encapsulated all the logic, 'wechaty' provides a unified upper interface, so you only need to know how to use wechaty, you can develop powerful multi-platform chatbot.
 
-The development of WeChat Official Account is compared with other platforms, the only difference is that you need to provide WeChat Official Account configuration informationß, such as' appId ', 'appSecret', 'token' and so on.
+The development of WeChat Official Account is compared with other platforms, the only difference is that you need to provide WeChat Official Account configuration information, such as' appId ', 'appSecret', 'token' and so on.
 
 ## Quick Start
 
