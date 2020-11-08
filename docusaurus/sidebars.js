@@ -15,7 +15,10 @@ module.exports = {
     ],
     Tutorials: [
       'tutorials/README',
-      'video-tutorial',
+      'tutorials/video-tutorial',
+    ],
+    'Chatbot 1 to 2': [
+      'chatbot-1-to-2/README',
     ],
     Recipes: [
       'recipes/README',

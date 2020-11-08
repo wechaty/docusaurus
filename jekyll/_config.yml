@@ -1,0 +1,62 @@
+# Site
+name: Wechaty
+description: Conversational SDK for Chatbot Makers
+logo: assets/images/logo.png
+favicon: assets/images/favicon.ico
+url: https://wechaty.js.org
+baseurl:
+disqus: wechaty
+email: wechaty@chatie.io
+mailchimp-list: https://zixia.us4.list-manage.com/subscribe/post?u=a8584b55dea5aa8bbc14bd1a0&amp;id=d9899f0d70
+
+include: ["_pages"]
+permalink: /:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: _posts
+    values:
+      layout: post
+      comments: true
+      author: wechaty
+      avatar: /assets/developers/wechaty/icon.png
+
+  # all pages
+  - scope:
+      path: _pages
+    values:
+      layout: page
+  - scope:
+      path: _developers
+    values:
+      layout: developer
+      comments: true
+
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Paginate
+paginate: 30
+paginate_path: /blog/page:num/
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude:
+  - package.json
+  - _site
+  - node_modules
+
+collections:
+  developers:
+    output: true
+    permalink: /:collection/:path/
