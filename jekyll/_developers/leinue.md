@@ -14,4 +14,3 @@ CEO of Authing. Started his own business when he was a junior student at the uni
 - Github: <https://github.com/leinue>
 - Email：<>
 - Website: <>
-  

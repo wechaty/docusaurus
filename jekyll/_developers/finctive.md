@@ -12,4 +12,3 @@ twitter:
 - Github: <https://github.com/fintive>
 - Email：<finctive@foxmail.com>
 - Website: <https://finctive.com>
-  

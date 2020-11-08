@@ -59,7 +59,7 @@ tags:
   - 继续改善和封装autojs的代码，美化和规范代码
   - 继续开发puppet，将现有socket客户端移植到puppet，接入wechaty完成一个dingdongbot
   - 探索puppet更多的功能，实现底层autojs
-  
+
 ### PPT
 
 {% include iframe.html src="https://www.youtube.com/embed/zDIPzGztn_E" %}

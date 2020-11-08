@@ -14,4 +14,3 @@ Jiaxuan LI, Ex-Baidu-er, Tensorflow Expert who has just published a ML Book in 2
 - Github: <https://github.com/greatgeekgrace>
 - Email：<>
 - Website: <>
-  

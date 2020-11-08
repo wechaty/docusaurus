@@ -14,4 +14,3 @@ Author of WePY, a mini program fframework for Wechat. Tencent Engineer
 - Github: <https://github.com/gcaufy>
 - Email：<>
 - Website: <>
-  
