@@ -2,6 +2,11 @@
 title: "通过Wechaty使用深度学习模型预测图片类型"
 author: lyleshaw
 image: /assets/2020/10-use-wechaty-to-predict-image/screenshot.jpg
+categories: project
+tags:
+  - wechaty
+  - python
+  - pytorch
 ---
 
 Use wechaty to apply pytorch model via WeChat.
