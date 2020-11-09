@@ -366,4 +366,3 @@ export { getDay, formatDate }
 ## 后记
 
 到此已经实现了私人人助理和定时推送消息的功能（[项目地址](https://github.com/jasonlovesharon/my_bot)），由于对Typescript不熟，很多功能都是借鉴很多大神的轮子实现的，还是对Python熟悉点，下步准备用Python来实现以上功能，并进一步拓展更多有趣的功能。
-
