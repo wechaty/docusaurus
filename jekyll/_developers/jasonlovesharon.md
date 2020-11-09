@@ -3,7 +3,7 @@ name: jasonlovesharon
 site: https://github.com/jasonlovesharon
 avatar: /assets/developers/jasonlovesharon/avatar.png
 bio: python developer
-email: mailto:54027901@163.com
+email:54027901@163.com
 twitter:
 ---
 
