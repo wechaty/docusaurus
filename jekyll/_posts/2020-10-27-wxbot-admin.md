@@ -12,8 +12,8 @@ tags:
 image: /assets/2020/wxbot-admin/screenshot.png
 ---
 
-> 作者: [Skyvow](https://github.com/skyvow)
-> Code: [Github](https://github.com/wux-weapp/wxbot)
+> 作者: [Skyvow](https://github.com/skyvow) 前端开发工程师，WuxUI 作者
+> Code: [Github](https://github.com/wux-weapp/wxbot) 微信机器人，个人微信号小助手平台
 
 ## 准备
 
