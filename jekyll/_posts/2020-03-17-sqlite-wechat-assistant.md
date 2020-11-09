@@ -153,7 +153,7 @@ async index(bot, message) {
     }
   }
 },
-  
+
 ...
 ```
 

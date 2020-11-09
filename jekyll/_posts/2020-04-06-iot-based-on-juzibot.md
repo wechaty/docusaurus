@@ -152,7 +152,7 @@ void setup() {
   // put your setup code here, to run once:
   pinMode(0, OUTPUT);
   Serial.begin(9600);
-  
+
   WiFi.begin("wifiname", "wifipasswd");   //WiFi connection
   while (WiFi.status() != WL_CONNECTED) {  //Wait for the WiFI connection completion
     delay(500);

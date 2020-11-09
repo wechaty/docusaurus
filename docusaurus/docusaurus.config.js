@@ -91,6 +91,7 @@ module.exports = {
             { label: 'Branding',  to:   'branding' },
             { label: 'Press',     to:   'press' },
             { label: 'GitHub',    href: 'https://github.com/wechaty/wechaty#readme' },
+            { label: 'Status',    href: 'https://chatie.statuspage.io/' },
           ],
         },
       ],
