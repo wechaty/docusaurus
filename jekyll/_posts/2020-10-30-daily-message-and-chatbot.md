@@ -6,9 +6,7 @@ tags:
   - nodejs
   - wechaty
   - wechaty-puppet-padplus
-
 ---
-
 
 ## 前言
 
@@ -360,11 +358,12 @@ function formatDate(date) {
 export { getDay, formatDate }
 ```
 
-![关键字触发消息](/assets/2020/daily-message-and-chatbot/keyword_push)
-![无法回答推送名片](/assets/2020/daily-message-and-chatbot/push_contact)
-![定时推送消息](/assets/2020/daily-message-and-chatbot/daily_message)
-![智能聊天](/assets/2020/daily-message-and-chatbot/talk_to_bot)
+![关键字触发消息](/assets/2020/daily-message-and-chatbot/keyword_push.png)
+![无法回答推送名片](/assets/2020/daily-message-and-chatbot/push_contact.png)
+![定时推送消息](/assets/2020/daily-message-and-chatbot/daily_message.png)
+![智能聊天](/assets/2020/daily-message-and-chatbot/talk_to_bot.png)
 
 ## 后记
 
 到此已经实现了私人人助理和定时推送消息的功能（[项目地址](https://github.com/jasonlovesharon/my_bot)），由于对Typescript不熟，很多功能都是借鉴很多大神的轮子实现的，还是对Python熟悉点，下步准备用Python来实现以上功能，并进一步拓展更多有趣的功能。
+
