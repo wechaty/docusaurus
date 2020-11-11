@@ -60,7 +60,7 @@ image: /assets/2020/wechaty-xiaowang-learning-tool/teaser.jpg
 + 填写代码中的配置，如**Token**，**服务器地址、端口**等
 + 上传至服务器
 + 在其目录下，获取所有用到的NPM包
-  
+
   ```bash
     npm i
   ```
