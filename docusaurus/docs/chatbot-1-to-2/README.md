@@ -12,7 +12,7 @@ sidebar_label: 目录
 - **基础**
   - [Basic of Typescript](basic/typescript.md)
   - [Basic of Wechaty](basic/basic-wechaty.md)
-  - [Seven-Lines Code Chatbot ](basic/seven-lines-code-chatbot.md)
+  - [Seven-Lines Code Chatbot](basic/seven-lines-code-chatbot.md)
   - [Ding-Dong Chatbot](basic/ding-dong-bot.md)
 - **应用篇**
   - [Words Per Day](applications/1.words-per-day.md)
