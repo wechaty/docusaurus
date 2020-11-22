@@ -18,10 +18,8 @@ tags:
 
 1. 通过walmart提供的api，用python多线程异步地爬取产品，从而得到降价信息
 2. python把读取到的产品写入一个具有‘read false’标志位的txt文件中
-3. wechaty通过设置定时任务读取这个txt文件，并将标志位置为‘read True’ 
+3. wechaty通过设置定时任务读取这个txt文件，并将标志位置为‘read True’
 4. wechaty处理爬取到的字符串，并将处理后的产品图像，产品信息实时的发送到群聊中
-
-
 
 ## 2. Wechaty框架介绍
 
@@ -60,12 +58,9 @@ npm install
 npm start
 ```
 
-
-
 ### 如何使用Wechaty
 
 本来想图个方便使用网页版微信来实现这些功能，但是由于微信官方的原因，我的账号的网页版功能已经不能使用，所以就只好使用padplus的令牌来实现微信机器人的功能，首先要初始化wechaty类
-
 
 ``` Typescript
 const bot = new Wechaty({
@@ -91,6 +86,7 @@ const puppet = new PuppetPadplus({
   token,
 })
 ```
+
 为了实现业务逻辑，那么必须要调整onlogin()函数的功能，在里面加入main()函数，当然main是一个定时器函数，设定间隔读取爬虫和机器人的接口文件，如果读取到了，就接下来找到群来发送读取到的信息。
 
 ``` Typescript
@@ -167,6 +163,7 @@ async function main () {
 这里不少的功能都可以在wechaty的官方文档有所解释，比如filebox(用于发送图片等复杂信息)，还有诸如contact.say()，room.say().
 对于typescript语言的异步功能可以参阅JavaScript的官方文档，大同小异，可以直接在ts文件里面写js的代码，只需要指定一些变量的属性。
 下面是完整的代码(出于隐私问题，令牌以及群名已被替换掉)
+
 ``` Typescript
 /**
  * Wechaty - WeChat Bot SDK for Personal Account, Powered by TypeScript, Docker, and 💖
