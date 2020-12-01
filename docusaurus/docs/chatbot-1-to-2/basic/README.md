@@ -1,7 +1,7 @@
 ---
 slug: /chatbot-1-to-2/basic/
 title: Basic
-sidebar_label: Basic Index
+sidebar_label: Wechaty Basic
 ---
 
 ## Table of Contents
