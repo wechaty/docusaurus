@@ -81,6 +81,7 @@ module.exports = {
             { label: 'YouTube',         href: 'https://www.youtube.com/playlist?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh' },
             { label: 'OpenCollective',  href: 'https://opencollective.com/wechaty' },
             { label: 'Meeting Notes',   href: 'https://bit.ly/2zpi2XG' },
+            { label: 'Google Drive',    href: 'https://bit.ly/33Dfkuf' },
           ],
         },
         {
