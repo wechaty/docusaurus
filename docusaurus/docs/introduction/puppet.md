@@ -44,7 +44,6 @@ For a deeper understanding of the Puppet in Wechaty, you can read its source cod
 
 ## 3. Wechaty Puppet Compatibility
 
-
 ### Puppet Comparison
 
 Puppet | donut | padplus | wxwork | rock
