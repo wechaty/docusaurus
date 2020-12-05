@@ -68,7 +68,3 @@ image: /assets/2020/wechaty-guangzhou-gathering/pic1.jpg
 ![聚会图片](/assets/2020/wechaty-guangzhou-gathering/pic5.jpg)
 
 最后，回来之后仔细看了佳芮老师的书，的确是对话机器人这个领域的不可多得的理论和实践指南，在这里为佳芮老师带一下货，大家多多支持哦！也希望日后能有更多的机会参与开源项目的线下活动，Wechaty 越办越好！
-
-
-
-
