@@ -8,7 +8,7 @@ tags:
   - let's waterx
   - drink
   - node-wechaty
-image: /assets/2020/11-lets-water/letswater@2x.png
+image: /assets/2020/11-lets-water/letswater.png
 ---
 
 ## let's water wechaty-bot<水群机器人>
