@@ -7,6 +7,7 @@ tags:
   - wechaty
   - market
   - oracle
+  - python
 ---
 
 > Author: [@exctech](https://github.com/exctech)
