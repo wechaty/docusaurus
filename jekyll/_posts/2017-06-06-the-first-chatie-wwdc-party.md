@@ -25,4 +25,3 @@ Attendees:
 ## This is the greetings video from the above person
 
 {% include iframe.html src="https://youtu.be/Kd_I-nvdn9I" %}
-
