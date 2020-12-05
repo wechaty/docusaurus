@@ -2,12 +2,12 @@
 name: alienfist
 site: https://github.com/alienfist
 avatar: /assets/developers/alienfist/avatar.png
-bio: everything can be crtl+c crtl+v 
+bio: everything can be ctrl+c ctrl+v 
 email: mailto:alienfist@gmail.com
 twitter: 
 ---
 
-everything can be crtl+c crtl+v 
+everything can be ctrl+c ctrl+v
 
 ## Contact me
 
