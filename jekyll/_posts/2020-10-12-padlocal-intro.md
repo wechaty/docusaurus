@@ -8,7 +8,6 @@ tags:
   - wechaty
   - puppet
   - padlocal
-  - sticky
   - wechaty-puppet-padlocal
 ---
 
