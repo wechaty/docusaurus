@@ -1,6 +1,6 @@
 ---
 title: "十分钟实现一个智能问答微信聊天机器人"
-author: luweiCN
+author: luweicn
 categories: bot
 tags:
   - nodejs
@@ -8,10 +8,7 @@ tags:
   - wechaty-puppet-padplus
 ---
 
-<!-- markdownlint-disable -->
-> 作者: [luweiCN](https://github.com/luweiCN)
-
-# 十分钟实现一个智能问答微信聊天机器人
+## 十分钟实现一个智能问答微信聊天机器人
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/chatie/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
@@ -127,7 +124,7 @@ const TXRobot = (
     restype?: number,
     datatype?: number
 ): Promise<string> => {
-  	// 使用axios请求天行机器人的接口就可以
+    // 使用axios请求天行机器人的接口就可以
     return axios({
         method: "post",
         url: "http://api.tianapi.com/txapi/robot/index",
@@ -168,4 +165,3 @@ const TXRobot = (
 ## 后续
 
 以上只是一个mvp的机器人，后期我会完善自己的机器人，实现一些可以帮我提高效率的功能，后面的代码我都会把代码同步到这个仓库，保证所有的代码开源。
-
