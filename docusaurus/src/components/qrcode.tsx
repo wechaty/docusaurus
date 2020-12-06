@@ -8,7 +8,7 @@ export default function QrCodeComponent (props) {
     bgColor="#FFFFFF00"
     fgColor="#44a838"
     level="Q"
-    style={{ width: 256 }}
+    style={{ width: 256, padding: 10 }}
     value={value}
   />
 }
