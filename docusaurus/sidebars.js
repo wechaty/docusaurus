@@ -68,6 +68,13 @@ module.exports = {
       'case-study/osschat-bot',
       'case-study/rui-bot',
     ],
+    'Puppet Services': [
+      'puppet-services/README',
+      'puppet-services/wxwork',
+      'puppet-services/rock',
+      'puppet-services/padlocal',
+      'puppet-services/donut',
+    ],
     'API Reference': [
       'api/README',
       'api/wechaty',

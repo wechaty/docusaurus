@@ -21,9 +21,9 @@
     "jekyll:build": "cd jekyll && make build",
     "docusaurus:start": "cd docusaurus && docusaurus start",
     "docusaurus:build": "cd docusaurus && docusaurus build",
-    "docusaurus:swizzle": "docusaurus swizzle",
-    "docusaurus:deploy": "docusaurus deploy",
-    "docusaurus:serve": "docusaurus serve"
+    "docusaurus:swizzle": "cd docusaurus && docusaurus swizzle",
+    "docusaurus:deploy": "cd docusaurus && docusaurus deploy",
+    "docusaurus:serve": "cd docusaurus && docusaurus serve"
   },
   "repository": {
     "type": "git",
