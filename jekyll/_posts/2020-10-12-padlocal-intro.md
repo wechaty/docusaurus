@@ -7,7 +7,7 @@ tags:
   - news
   - wechaty
   - puppet
-  - PadLocal
+  - padlocal
   - wechaty-puppet-padlocal
 ---
 

@@ -43,5 +43,5 @@ tags:
   - 模块四
     - 9.30
     - 花更多的时间寻找合适的RPA操作方式，包括网络上一些已经有一些雏形的。尽可能地移植到wechaty
-- 项目链接：暂时未创建
+- 项目链接：[https://github.com/bikaiqiao/kuaishou-auto](https://github.com/bikaiqiao/kuaishou-auto) / [https://github.com/bikaiqiao/kuaishouPuppet.git](https://github.com/bikaiqiao/kuaishouPuppet.git)
 - 联系方式：+86 13943110476 | 358461417@qq.com
