@@ -14,3 +14,5 @@ title: Cast Study
   - The missing part of the Apache Way
 - [Rui.BOT](rui-bot)
   - An assistant bot for Rui (Founder & CEO of Juzi.BOT)
+- [Projects using Wechaty](projects-using-wechaty)
+  - The open source projects that using Wechaty

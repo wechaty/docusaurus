@@ -45,7 +45,7 @@ To be written.
 
 Please feel free to list yourself to our list at [Wechaty Puppet Provider Repo](https://github.com/wechaty/puppet-service-providers/), and add your introduction in this README by submitting a Pull Request!
 
-If you want to become a Wechaty Puppet Service Provider, please do not hesitate to file an issue to introduce yourself in this repository, then contact us at <https://gitter.im/wechaty/wechaty>!
+If you want to become a Wechaty Puppet Service Provider, please do not hesitate to file an issue to introduce yourself in this repository, then contact rui@chatie.io!
 
 Learn more about the Wechaty Puppet Service Providers from:
 

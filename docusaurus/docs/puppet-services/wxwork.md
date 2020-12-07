@@ -8,6 +8,10 @@ title: WXWork
 
 ## How to buy(apply)
 
+Register via WeCom at [jukebox](https://qiwei.juzibot.com/user/login?isWechaty=true) and buy the token! Also you can get a SCRM system for free!
+
+## Questions
+
 [Submit an issue at here](https://github.com/wechaty/puppet-service-providers/issues/new?assignees=windmemory&labels=wxwork&template=wxwork.md&title=WXWork%3A+)
 
 ## History
