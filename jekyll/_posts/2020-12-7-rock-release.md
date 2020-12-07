@@ -11,7 +11,7 @@ image: /assets/2020/12-07-rock/rock.jpeg
 
 恭喜 Wechaty-Puppet-Rock 正式进入 Beta 版！经过历时一个月的测试，Rock 现在已经通过社区验证，可以正式售卖给社区的小伙伴了！
 
-想要使用的，请点击[Rock 购买链接](http://www.chatools.top/?utm_source=wechaty&utm_medium=referral) 购买吧！
+想要使用的，请点击[Rock 购买链接](https://github.com/wechaty/puppet-service-providers#buy-token) 购买吧！
 
 ## 关于 Rock
 
@@ -25,8 +25,8 @@ Wechaty-Puppet-Rock 的作者是 [jcai](https://wechaty.js.org/developers/jcai/)
 
 - [x] 写一篇博客介绍这个新的puppet: <https://wechaty.js.org/2020/10/19/rock/>
 - [x] 写一个 getting started 告诉开发者如何将这个 puppet 跑起来: <https://github.com/wechaty/puppet-service-providers/issues/2>
-- [x]  puppet service provider 的 token 要通过 api.chatie.io 发布，以最大化提升开发者社区体验。
-- [x]  token 设置规范为：puppet_rock_XXX
+- [x] puppet service provider 的 token 要通过 api.chatie.io 发布，以最大化提升开发者社区体验。
+- [x] token 设置规范为：puppet_rock_XXX
 
 为了能让开发者更好的了解如何运行 wechaty-puppet-rock, 在这里给出大家运行的最小化代码：
 
@@ -35,7 +35,7 @@ import { Wechaty } from 'wechaty'
 import { ScanStatus } from 'wechaty-puppet'
 import QrcodeTerminal from 'qrcode-terminal';
 
-const token = 'get a rock token from: http://www.chatools.top/?utm_source=wechatydoc&utm_medium=referral'
+const token = 'get a rock token from: https://github.com/wechaty/puppet-service-providers#buy-token'
 
 const bot = new Wechaty({
   puppet: 'wechaty-puppet-hostie', // 注意这里是 wechaty-puppet-hostie 而不是 wechaty-puppet-rock
