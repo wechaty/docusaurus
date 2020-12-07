@@ -1,5 +1,5 @@
 ---
-title: "Wechaty Puppet Rock Beta版发布公告"
+title: "Wechaty Puppet Service Rock Beta版发布公告"
 author: lijiarui
 categories: announcement
 tags:
@@ -9,15 +9,15 @@ tags:
 image: /assets/2020/12-07-rock/rock.jpeg
 ---
 
-恭喜 Wechaty-Puppet-Rock 正式进入 Beta 版！经过历时一个月的测试，Rock 现在已经通过社区验证，可以正式售卖给社区的小伙伴了！
+恭喜 Rock 作为 Wechaty 社区新的 Puppet Service 正式进入 Beta 版！经过历时一个月的测试，Rock 现在已经通过社区验证，可以正式售卖给社区的小伙伴了！
 
 想要使用的，请点击[Rock 购买链接](https://github.com/wechaty/puppet-service-providers#buy-token) 购买吧！
 
 ## 关于 Rock
 
-Wechaty-Puppet-Rock 的作者是 [jcai](https://wechaty.js.org/developers/jcai/) scala-wechaty 作者,基于wechaty-puppet-hostie新provider,，自由职业者,scala狂热爱好者！
+Rock 的作者是 [jcai](https://wechaty.js.org/developers/jcai/) scala-wechaty 作者,基于 wechaty-puppet-hostie 做的新 puppet service，自由职业者,scala狂热爱好者！
 
-通过 Scala Wechaty 认识了阿蔡，后来他决定做 Wechaty Puppet Service Provider，很快就上线了 Wechaty-Puppet-Rock. 我带大家一起回顾一下 Wechaty Puppet Rock Beta 版的发布历程：
+通过 Scala Wechaty 认识了阿蔡，后来他决定做 Wechaty Puppet Service Provider，很快就上线了 Rock 服务。我带大家一起回顾一下 Wechaty Puppet Service Rock Beta 版的发布历程：
 
 ## Rock 的 Alpha Release
 
@@ -28,7 +28,7 @@ Wechaty-Puppet-Rock 的作者是 [jcai](https://wechaty.js.org/developers/jcai/)
 - [x] puppet service provider 的 token 要通过 api.chatie.io 发布，以最大化提升开发者社区体验。
 - [x] token 设置规范为：puppet_rock_XXX
 
-为了能让开发者更好的了解如何运行 wechaty-puppet-rock, 在这里给出大家运行的最小化代码：
+为了能让开发者更好的了解如何运行 rock, 在这里给出大家运行的最小化代码：
 
 ```ts
 import { Wechaty } from 'wechaty'
@@ -173,7 +173,7 @@ Rock 的产品测试，已完成 70%
 
 ## Rock 的下一步
 
-- 关于Rock 的最新进度，可以随时在这里查看： [wechaty-puppet-rock 发布进展](https://github.com/wechaty/puppet-service-providers/issues/20)
+- 关于Rock 的最新进度，可以随时在这里查看： [rock 发布进展](https://github.com/wechaty/puppet-service-providers/issues/20)
 - 使用过程中，有任何问题，欢迎[在这里发布 issue!](https://github.com/wechaty/puppet-service-providers/issues/new?assignees=jcai&labels=rock&template=rock.md&title=Rock%3A+)
 
 ## Rock 的多语言进展
