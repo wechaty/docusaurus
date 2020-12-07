@@ -41,6 +41,7 @@ module.exports = {
             { label: 'Tutorial',        to: 'docs/tutorials/' },
             { label: 'Recipe',          to: 'docs/recipes/' },
             { label: 'Case Study',      to: 'docs/case-study/' },
+            { label: 'Puppet Service',  to: 'docs/puppet-services/' },
             { label: 'API',             to: 'docs/api/' },
             { label: 'FAQ',             to: 'docs/faq/' },
             { label: 'Troubleshooting', to: 'docs/troubleshooting' },
