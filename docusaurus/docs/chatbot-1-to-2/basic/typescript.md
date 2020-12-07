@@ -1,5 +1,4 @@
 ---
-slug: /basic-of-wechaty/
 title: Typescript 基础
 sidebar_label: Typescript 基础
 ---
