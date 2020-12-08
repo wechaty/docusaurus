@@ -11,7 +11,7 @@ image: /assets/2020/12-07-rock/rock.jpeg
 
 恭喜 Rock 作为 Wechaty 社区新的 Puppet Service 正式进入 Beta 版！经过历时一个月的测试，Rock 现在已经通过社区验证，可以正式售卖给社区的小伙伴了！
 
-想要使用的，请点击[Rock 购买链接](https://github.com/wechaty/puppet-service-providers#buy-token) 购买吧！
+想要使用的，请点击[Rock 购买链接](https://wechaty.js.org/docs/puppet-services/rock/) 购买吧！
 
 ## 关于 Rock
 
