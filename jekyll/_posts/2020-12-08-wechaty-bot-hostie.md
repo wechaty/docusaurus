@@ -13,6 +13,7 @@ image: /assets/2020/wechaty-bot-hostie/img-func.jpeg
 > Code: [Github](https://github.com/mumup/cat-room) 微信机器人，群聊小助手
 
 ## wechaty
+
 GitHub上搜了一圈，看到了挺多微信bot的方案，后面决定使用wechaty，因为感觉设计得很优雅，6行代码就可以轻松构建一个wxbot。
 
 - [官方文档](https://wechaty.js.org/docs/)
@@ -22,6 +23,7 @@ GitHub上搜了一圈，看到了挺多微信bot的方案，后面决定使用we
 目前的需求很简单，在猫群里置放一个可以唠嗑可以玩游戏的机器人
 
 实现了几个功能
+
 - 成语接龙
 - 看图猜成语
 - 接入了图灵机器人
@@ -85,16 +87,19 @@ async function main() {
 }
 
 main()
+
 ```
 
 由于padplus马上要废弃，所以使用的是puppet-hostie，具体api可以查看官网文档，目前有少许功能并未实现，比较遗憾，等后续功能更加完善，准备用vue3+express做一个后台的管理系统，方便管理机器人。
 
 ## 安装
-```
+
+```sh
 npm install
 ```
 
 ## 运行
-```
+
+```sh
 npm run main
 ```
