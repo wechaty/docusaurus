@@ -4,11 +4,11 @@ title: PadLocal
 
 - Repo: <https://github.com/padlocal/wechaty-puppet-padlocal>
 - Provider: [PadLocal](https://github.com/padlocal)
-- Support: <https://github.com/padlocal/wechaty-puppet-padlocal/issues>
+- Support & Feedback: <https://github.com/padlocal/wechaty-puppet-padlocal/issues>
 
 ## How to buy(apply)
 
-[Submit an issue at here](https://github.com/wechaty/puppet-service-providers/issues/new?assignees=padlocal&labels=padlocal&template=padlocal.md&title=PadLocal%3A+)
+[Submit an issue at here](https://github.com/wechaty/puppet-services/issues/new?assignees=padlocal&labels=padlocal&template=padlocal.md&title=PadLocal%3A+)
 
 ## History
 
