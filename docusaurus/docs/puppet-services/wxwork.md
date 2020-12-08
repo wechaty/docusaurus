@@ -4,7 +4,7 @@ title: WXWork
 
 - Repo: <https://github.com/juzibot/wxwork-tester>
 - Provider: [@juzibot](https://github.com/juzibot)
-- Support: <https://github.com/juzibot/wxwork-tester/issues>
+- Support & Feedback: <https://github.com/juzibot/wxwork-tester/issues>
 
 ## How to buy(apply)
 
@@ -12,7 +12,7 @@ Register via WeCom at [jukebox](https://qiwei.juzibot.com/user/login?isWechaty=t
 
 ## Questions
 
-[Submit an issue at here](https://github.com/wechaty/puppet-service-providers/issues/new?assignees=windmemory&labels=wxwork&template=wxwork.md&title=WXWork%3A+)
+[Submit an issue at here](https://github.com/wechaty/puppet-services/issues/new?assignees=windmemory&labels=wxwork&template=wxwork.md&title=WXWork%3A+)
 
 ## History
 
