@@ -1,5 +1,6 @@
 ---
-title: PadLocal
+title: 'Puppet Service: PadLocal'
+sidebar_label: PadLocal
 ---
 
 - Repo: <https://github.com/padlocal/wechaty-puppet-padlocal>

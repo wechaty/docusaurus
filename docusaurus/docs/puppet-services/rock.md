@@ -1,5 +1,6 @@
 ---
-title: Rock
+title: 'Puppet Service: Rock'
+sidebar_label: Rock
 ---
 
 - Provider: [@jcai](https://github.com/jcai)

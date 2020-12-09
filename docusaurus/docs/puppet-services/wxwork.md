@@ -1,5 +1,6 @@
 ---
-title: WXWork
+title: 'Puppet Service: WXWork'
+sidebar_label: WXWork
 ---
 
 - Repo: <https://github.com/juzibot/wxwork-tester>

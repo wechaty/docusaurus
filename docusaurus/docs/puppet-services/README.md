@@ -10,8 +10,8 @@ Learn more from [Wechaty OSS Project and the Commercial Puppet Service Provider 
 
 Now, we have the following Wechaty Puppet Services:
 
-| Puppet Service | Platform | Protocol | Maintainer |
-| :--- | :--- | :--- | :--- |
+| Name | Platform | Protocol | Maintainer |
+| :---: | :---: | :---: | :---: |
 | [WXWork](wxwork/) | WeCom | Windows | @juzibot |
 | [Rock](rock/) | WeChat | Pad | @jcai |
 | [PadLocal](padlocal/) | WeChat | Pad | @padlocal |
