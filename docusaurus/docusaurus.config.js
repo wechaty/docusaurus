@@ -71,19 +71,21 @@ module.exports = {
             { label: 'Tutorial',        to: 'docs/tutorials/' },
             { label: 'FAQ',             to: 'docs/faq/' },
             { label: 'API Reference',   to: 'docs/api/' },
+            { label: 'Puppet Service',  to: 'docs/puppet-services/' },
           ],
         },
         {
           title: 'Community',
           items: [
-            { label: 'Stack Overflow',  href: 'https://stackoverflow.com/questions/tagged/wechaty' },
             { label: 'Gitter',          href: 'https://gitter.im/wechaty/wechaty' },
+            { label: 'Discussion',      href: 'https://github.com/wechaty/wechaty/discussions' },
+            { label: 'Stack Overflow',  href: 'https://stackoverflow.com/questions/tagged/wechaty' },
             { label: 'Telegram',        href: 'https://t.me/wechaty' },
             { label: 'Twitter',         href: 'https://twitter.com/chatieio' },
             { label: 'YouTube',         href: 'https://www.youtube.com/playlist?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh' },
             { label: 'OpenCollective',  href: 'https://opencollective.com/wechaty' },
-            { label: 'Meeting Notes',   href: 'https://bit.ly/2zpi2XG' },
             { label: 'Google Drive',    href: 'https://bit.ly/33Dfkuf' },
+            { label: 'Meeting Notes',   href: 'https://bit.ly/2zpi2XG' },
           ],
         },
         {
@@ -103,7 +105,7 @@ module.exports = {
         src  : 'img/wechaty-logo.svg',
         href : 'https://wechaty.js.org/',
       },
-      copyright: `Copyright © 2016-${new Date().getFullYear()} Wechaty Contributors`,
+      copyright: `Copyright © 2016-${ new Date().getFullYear() } Wechaty Contributors`,
     },
     algolia: {
       apiKey           : 'cd8ca324c447a803e8a196a5c8fa22dd',

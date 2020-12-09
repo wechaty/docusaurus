@@ -1,5 +1,6 @@
 ---
-title: Donut
+title: 'Puppet Service: Donut'
+sidebar_label: Donut
 ---
 
 - Repo: <https://github.com/juzibot/donut-tester>
