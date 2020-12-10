@@ -2,12 +2,12 @@
 name: iTingle
 site: https://github.com/iTingle
 bio: More than ordinary people
-avatar: /assets/developers/iTingle/avatar.png
+avatar: /assets/developers/itingle/avatar.png
 email: yibumuxue@sina.com
 csdn: https://blog.csdn.net/tophighmi
 ---
 
-## 联系我
+## Contact me
 
 - Github: <https://github.com/iTingle>
 - 微信: <>
