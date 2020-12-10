@@ -1,24 +1,16 @@
 ---
 title: "wechaty-robot-lite"
 author: iTingle
-name: iTingle
-site: https://github.com/iTingle
-bio: go on
 avatar: /assets/developers/iTingle/avatar.png
-email: yibumuxue@sina.com
-csdn: https://blog.csdn.net/tophighmi
-tags:
-  - news
-  - wechaty
-  - nodejs
+image: 
+  - /assets/2020/12-wechaty-robot-lite/code-structure.png
+  - /assets/2020/12-wechaty-robot-lite/qrcode-login.png
+  - /assets/2020/12-wechaty-robot-lite/qrcode-login-error.png
+  - /assets/2020/12-wechaty-robot-lite/web-example.png
+  - /assets/2020/12-wechaty-robot-lite/example-1.png
+  - /assets/2020/12-wechaty-robot-lite/example-2.png
+  - /assets/2020/12-wechaty-robot-lite/example-3.png
 ---
-
-## Contact me
-
-- Github: <https://github.com/iTingle>
-- wechat: <>
-- email: yibumuxue@sina.com
-- Phone: <>
 
 ### г╟ят
 

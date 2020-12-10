@@ -1,16 +1,10 @@
 ---
-title: "wechaty-robot-lite"
-author: iTingle
 name: iTingle
 site: https://github.com/iTingle
-bio: go on
+bio: go on coder
 avatar: /assets/developers/iTingle/avatar.png
 email: yibumuxue@sina.com
 csdn: https://blog.csdn.net/tophighmi
-tags:
-  - news
-  - wechaty
-  - nodejs
 ---
 
 ## Contact me
