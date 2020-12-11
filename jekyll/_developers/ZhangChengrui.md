@@ -1,7 +1,6 @@
 ---
-name: padlocal
-site: https://github.com/padlocal
-avatar: /assets/developers/padlocal/avatar.png
+name: zhang chengrui
+site: https://github.com/zcr20090430
 bio: Everything is ok.
 email: zcr20090430@163.com
 ---
