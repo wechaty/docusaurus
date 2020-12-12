@@ -2,14 +2,7 @@
 title: "wechaty-robot-lite"
 author: iTingle
 avatar: /assets/developers/iTingle/avatar.png
-image: 
-  - /assets/2020/12-wechaty-robot-lite/code-structure.png
-  - /assets/2020/12-wechaty-robot-lite/qrcode-login.png
-  - /assets/2020/12-wechaty-robot-lite/qrcode-login-error.png
-  - /assets/2020/12-wechaty-robot-lite/web-example.png
-  - /assets/2020/12-wechaty-robot-lite/example-1.png
-  - /assets/2020/12-wechaty-robot-lite/example-2.png
-  - /assets/2020/12-wechaty-robot-lite/example-3.png
+image: /assets/2020/12-wechaty-robot-lite/example-1.png
 ---
 
 ### г╟ят
