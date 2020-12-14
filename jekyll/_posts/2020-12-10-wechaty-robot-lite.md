@@ -5,6 +5,10 @@ avatar: /assets/developers/itingle/avatar.png
 image: /assets/2020/12-wechaty-robot-lite/example-1.png
 ---
 
+# wechaty-robot-lite 微信小助手
+
+## 介绍
+
 ### 前言
 
 最近在dy上看到有相关wx机器人（SCRM）在进行相关推广，而之前学习的时候，用基于python开发的itchat玩过一段时间，后来，某一天突然发现微信登不上了，官方的微信网页版也不能登陆了（至于是啥原因，咱也不知道，也不敢去研究）。
@@ -18,62 +22,62 @@ image: /assets/2020/12-wechaty-robot-lite/example-1.png
 
 ### 简介：
 
-*   [官方（git）](https://github.com/wechaty)
-*   语言：node(TypeScript )，python，java（项目多是支持node，一些是开源了python和java；看issues说是node项目支持的更完美~~咱也没细究）
-*   协议：iPad、Mac、WinPc、Web等等（支持的协议挺多的，当然，web协议的README里会声明，登录不了web版微信的号不能正常使用）
-*   使用：这里有个东东要提前声明下：token，wechaty的服务都依赖于token，有个合法的token才能正常使用wechaty的服务；后面会细说
-*   免费：参与开源激励计划→[传送门(点它)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty#2%E5%85%8D%E8%B4%B9Token%E5%8F%82%E4%B8%8E%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92)
-*   收费：官方发布是200￥/号/月，具体→[传送门(点它)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty#3%E4%BB%98%E8%B4%B9Token%E7%9B%B4%E6%8E%A5%E5%92%A8%E8%AF%A2%E5%95%86%E5%8A%A1%E8%B4%AD%E4%B9%B0)
-*   说明：官方声明，一个token原则上只能同时在线一个微信号，这里的意思就有意味了。这个token不会绑定你的微信号，但是呢，只能同时在线一个微信，你要是想做n个微信的私域，那就需要n个token
+* [官方（git）](https://github.com/wechaty)
+* 语言：node(TypeScript )，python，java（项目多是支持node，一些是开源了python和java；看issues说是node项目支持的更完美~~咱也没细究）
+* 协议：iPad、Mac、WinPc、Web等等（支持的协议挺多的，当然，web协议的README里会声明，登录不了web版微信的号不能正常使用）
+* 使用：这里有个东东要提前声明下：token，wechaty的服务都依赖于token，有个合法的token才能正常使用wechaty的服务；后面会细说
+* 免费：参与开源激励计划→[传送门(点它)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty#2%E5%85%8D%E8%B4%B9Token%E5%8F%82%E4%B8%8E%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92)
+* 收费：官方发布是200￥/号/月，具体→[传送门(点它)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty#3%E4%BB%98%E8%B4%B9Token%E7%9B%B4%E6%8E%A5%E5%92%A8%E8%AF%A2%E5%95%86%E5%8A%A1%E8%B4%AD%E4%B9%B0)
+* 说明：官方声明，一个token原则上只能同时在线一个微信号，这里的意思就有意味了。这个token不会绑定你的微信号，但是呢，只能同时在线一个微信，你要是想做n个微信的私域，那就需要n个token
 
 ### 学习：
 
-*   我这里的项目是基于[wechaty-puppet-hostie](https://github.com/wechaty/wechaty-puppet-hostie)
-*   [官方API文档](https://wechaty.js.org/docs/api/)（很重要！！！一定要先看文档再下手，如果要基于这个开发，一定要把它当作手册）
-*   [官方参考示例](https://github.com/juzibot/donut-tester#example)（至于我为什么基于这个示例，因为官方给的我15天免费token是donut版，基于windows协议）
-*   语言：主要是nodejs，基于express框架→[传送门（点它）](https://www.expressjs.com.cn/)
-*   技术栈：express框架（前端ejs），socket io
-*   名词解释
-    *   token：官方解释
-        
-        > *   Our Mission: Make it easy to build a WeChat Chatbot for developers.
-        >     
-        >     We provide a **free** access using [iPad protocol](https://www.lizenghai.com/goto/?url=https://github.com/wechaty/wechaty-puppet-padplus) for the developers who have a strong will and ability to build a valuable chatbot for users.
-        >     
-        >     Any developers can add JuziBOT Inc’s staff ( **Wechat number :** juzibot) as a Wechat friend. You will receive a review form after adding. If you pass the review and willing to write a blog in Wechaty , you can use our iPad protocol for free！
-        >     
-        >     我们的使命：轻松为开发人员构建微信聊天机器人
-        >     
-        >     我们为有强烈意愿和能力为用户构建有价值的聊天机器人的开发人员提供了使用[iPad协议](https://www.lizenghai.com/goto/?url=https://github.com/wechaty/wechaty-puppet-padplus)的**免费**访问权限
-        >     
-        >     任何开发人员都可以将JuziBOT Inc的工作人员（**微信编号：**juzibot）添加为微信好友。添加后，您将收到一份审查表。如果您通过审查并愿意在Wechaty中写博客，则可以免费使用我们的iPad协议！
-        >     
-        
-        *   意思是我们提交审查表后，会获得为期15天的免费Token；想要获取长期有效的免费token，那就参加所谓的开源激励计划，就是在15天后，需要提交一个MVP(最小可行化产品)的Github仓库，Wechaty会将其fork到社区中的同时，会提供一个长期免费Token
-            
-    *   [wechaty-puppet-padplus](https://www.lizenghai.com/goto/?url=https://github.com/wechaty/wechaty-puppet-padplus)：基于ipad协议的微信机器人
-    *   [wechaty-puppet-hostie](https://github.com/wechaty/wechaty-puppet-hostie)：基于windows协议的机器人
+* 我这里的项目是基于[wechaty-puppet-hostie](https://github.com/wechaty/wechaty-puppet-hostie)
+* [官方API文档](https://wechaty.js.org/docs/api/)（很重要！！！一定要先看文档再下手，如果要基于这个开发，一定要把它当作手册）
+* [官方参考示例](https://github.com/juzibot/donut-tester#example)（至于我为什么基于这个示例，因为官方给的我15天免费token是donut版，基于windows协议）
+* 语言：主要是nodejs，基于express框架→[传送门（点它）](https://www.expressjs.com.cn/)
+* 技术栈：express框架（前端ejs），socket io
+* 名词解释
+  * token：官方解释
+  
+        > * Our Mission: Make it easy to build a WeChat Chatbot for developers.
+        >  
+        >  We provide a **free** access using [iPad protocol](https://www.lizenghai.com/goto/?url=https://github.com/wechaty/wechaty-puppet-padplus) for the developers who have a strong will and ability to build a valuable chatbot for users.
+        >  
+        >  Any developers can add JuziBOT Inc’s staff ( **Wechat number :** juzibot) as a Wechat friend. You will receive a review form after adding. If you pass the review and willing to write a blog in Wechaty , you can use our iPad protocol for free！
+        >  
+        >  我们的使命：轻松为开发人员构建微信聊天机器人
+        >  
+        >  我们为有强烈意愿和能力为用户构建有价值的聊天机器人的开发人员提供了使用[iPad协议](https://www.lizenghai.com/goto/?url=https://github.com/wechaty/wechaty-puppet-padplus)的**免费**访问权限
+        >  
+        >  任何开发人员都可以将JuziBOT Inc的工作人员（**微信编号：**juzibot）添加为微信好友。添加后，您将收到一份审查表。如果您通过审查并愿意在Wechaty中写博客，则可以免费使用我们的iPad协议！
+        >  
+  
+    * 意思是我们提交审查表后，会获得为期15天的免费Token；想要获取长期有效的免费token，那就参加所谓的开源激励计划，就是在15天后，需要提交一个MVP(最小可行化产品)的Github仓库，Wechaty会将其fork到社区中的同时，会提供一个长期免费Token
+  
+  * [wechaty-puppet-padplus](https://www.lizenghai.com/goto/?url=https://github.com/wechaty/wechaty-puppet-padplus)：基于ipad协议的微信机器人
+  * [wechaty-puppet-hostie](https://github.com/wechaty/wechaty-puppet-hostie)：基于windows协议的机器人
 
 ### 初步需求：
 
-*   关键字自动通过好友验证
-    *   当有人添加机器人时，判断验证消息关键字后通过或直接通过
-    *   通过验证后自动回复并介绍机器人功能
-*   私聊关键字回复
-    *   例如回复 `加群` 推送群聊邀请
-    *   例如回复 `作者微信` 推送作者微信名片
-    *   例如回复 白名单`群名` 邀请入群
-*   自动聊天
-    *   对接AI机器人，这里科普推荐免费机器人api和[免费天气查询api](http://www.tianqiapi.com/)，回复 芜湖天气 
-    *   群聊中通过 `@[机器人]xxx` 可以和机器人聊天
-    *   私聊发送消息即可聊天
-    *   向机器人询问天气
-*   加入群聊自动欢迎
-    *   当新的小伙伴加入群聊后自动 `@[新的小伙伴]` 发一个文字欢迎
-*   web聊天
-    *   前台获取好友列表
-    *   通过socket实时向前台推送还有消息
-    *   实现前台向好友发送消息
+* 关键字自动通过好友验证
+  * 当有人添加机器人时，判断验证消息关键字后通过或直接通过
+  * 通过验证后自动回复并介绍机器人功能
+* 私聊关键字回复
+  * 例如回复 `加群` 推送群聊邀请
+  * 例如回复 `作者微信` 推送作者微信名片
+  * 例如回复 白名单`群名` 邀请入群
+* 自动聊天
+  * 对接AI机器人，这里科普推荐免费机器人api和[免费天气查询api](http://www.tianqiapi.com/)，回复 芜湖天气 
+  * 群聊中通过 `@[机器人]xxx` 可以和机器人聊天
+  * 私聊发送消息即可聊天
+  * 向机器人询问天气
+* 加入群聊自动欢迎
+  * 当新的小伙伴加入群聊后自动 `@[新的小伙伴]` 发一个文字欢迎
+* web聊天
+  * 前台获取好友列表
+  * 通过socket实时向前台推送还有消息
+  * 实现前台向好友发送消息
 
 ### 项目结构：
 
@@ -105,20 +109,17 @@ image: /assets/2020/12-wechaty-robot-lite/example-1.png
 |--socketio.js # socket核心
 ```
 
-
-撸起袖子干，开干
-========
+## 代码开干
 
 项目初始化
------
 
 **新建文件夹wechaty-lite，进入目录执行cnpm init -y   (大家都知道国内直接使用 npm 的官方镜像是非常慢的，这里推荐使用[淘宝 NPM 镜像](https://www.runoob.com/nodejs/nodejs-npm.html#taobaonpm)。)**
 
 ```bash
-cnpm init -y 
+cnpm init -y
 ```
 
-**安装核心包**
+安装核心包
 
 ```bash
 // Wechaty核心包
@@ -127,17 +128,16 @@ cnpm install --save wechaty
 cnpm install --save wechaty-puppet
 //开发过程中，还需要用到qrcode-terminal这个包，作用就是将二维码输出在终端来供我们扫码登录
 cnpm install --save qrcode-terminal
- 
+
 //node5以后可以不用使用--save
 ```
 
-核心代码：
------
+## 核心代码
 
-**配置文件config.js**
+配置文件**config.js**
 
 ```javascript
- 
+
 module.exports = {
     // puppet_donu Token
     token: "PUT_YOUR_TOKEN_HERE",
@@ -182,79 +182,79 @@ module.exports = {
 };
 ```
 
-**启动文件www**
+启动文件**www**
 
 在Create HTTP server.后引入socketio和wechaty，进行启动
 
-*   引入socketio，调用封装的getSocketio()进行初始化启动；
-*   引入donut，调用封装的run()进行初始化启动；
+* 引入socketio，调用封装的getSocketio()进行初始化启动；
+* 引入donut，调用封装的run()进行初始化启动；
 
 ```javascript
 /**
  * Create socket.io server.
  */
- 
+
 var io = require('../socketio');
 io.getSocketio(server);
- 
- 
+
+
 /**
  * Create puppet_donut server.
  */
- 
+
 var puppet_donut = require('../donut');
 puppet_donut.run();
 ```
 
-**socket服务 socketio.js文件**
+socket服务**socketio.js**文件
 
 该示例主要介绍了socket发送机制，如发送给自己，发送给初自己外的其他用户（广播），推送给所有人；（还可以推送给某一个socket连接用户，通过id，这里不介绍了）
 
-1.  监听客户端的消息；
-2.  监听客户端的微信消息并发送给相关好友；
-3.  封装接口sendWechatLoginMsg、sendWechatMsg给wechaty调用；
+1. 监听客户端的消息；
+2. 监听客户端的微信消息并发送给相关好友；
+3. 封装接口sendWechatLoginMsg、sendWechatMsg给wechaty调用；
 
 ```javascript
- 
+
 var socketio = {};
 const common = require('./common');
- 
+
 // 获取io
- 
+
 var io = null;
- 
+
 //微信登录消息推送至客户端
 socketio.sendWechatLoginMsg = function(msg){
     io.emit('getWechatLoginMsg', + msg);//触发所有用户
 };
- 
+
 //回调消息推送至客户端
 socketio.sendWechatMsg = function(msg){
     io.emit('getWechatMsg', '【' + common.currentDateTime() + '】' + msg);//触发所有用户
 };
- 
+
 //初始化socketio
 socketio.getSocketio = function(server){ // http(s) server
- 
+
     io = require("socket.io")(server);
- 
+
     //监听连接成功
     io.sockets.on('connection', function (socket) {
         console.log('连接成功');
- 
+
         //监听事件event01
         socket.on('event01',function(){ // 处理来自客户端的’event01’事件
- 
+
             console.log('监听点击事件');
- 
+
             var datas = [1,2,3,4,5];
- 
+
             socket.emit('event02', {datas: datas}); // 给该客户端发送event02事件
- 
+
             socket.broadcast.emit('event02', {datas: datas}); // 发送给其它客户端
- 
+
         });
- 
+
         //监听事件send
         socket.on("send", data => {  // 监听的频道必须和客户端监听的频道相同，等待消息
             // io.emit("监听频道", "发送的信息");  // 向所有客户端发送信息
@@ -264,7 +264,7 @@ socketio.getSocketio = function(server){ // http(s) server
             // socket.broadcast.emit('getMsg', '我是返回的消息... ...' + new Date().getTime());//触发除去该用户以外的用户
             // io.to(socketedId).emit('getMsg', '我是返回的消息... ...' + new Date().getTime());//触发指定用户
         });
- 
+
         //监听前台发送微信文本消息，并进行消息发送
         socket.on("sendWechatText", data => {
             console.log('客户端发送的内容：', data);
@@ -272,54 +272,54 @@ socketio.getSocketio = function(server){ // http(s) server
             puppet_donut.sendTextMsgToContact(data.friendNick, data.wechatContent);
             io.emit('sendWechatTextCallback', '微信消息发送成功... ...' + common.currentDateTime());//触发所有用户
         });
- 
+
         // 更多事件，就更多处理函数
- 
+
         // ......
- 
+
         socket.on("disconnect", data => {  // 客户端断开链接
             console.log('断开连接：', data);
         });
- 
+
         socket.on('error', function (err) {   //发生错误时触发
             console.log(err);
         });
- 
+
         setTimeout( () => {
             socket.emit('getMsg', '我是初始化3s后的返回消息... ...');
         }, 3000)
- 
+
     })
- 
+
 };
- 
+
 module.exports = socketio;
 ```
 
-**donut服务 donut.js文件**
+donut服务**donut.js**文件
 
 该示例主要介绍了引用wechaty包，实现wechaty初始化、加入群聊、退出群聊、消息等监听和多种发送消息函数封装
 
-*   bot初始化；
-*   实现bot监听（OnMessage、OnRoomJoin...）；
-*   消息发送（文本、媒体、链接等消息）；
+* bot初始化；
+* 实现bot监听（OnMessage、OnRoomJoin...）；
+* 消息发送（文本、媒体、链接等消息）；
 
 ```javascript
- 
+
 const { FileBox } = require("wechaty");
- 
+
 var puppet_donut = {};
- 
+
 //获取bot（机器人）
 var bot = null;
- 
+
 //发送文本消息给联系人
 puppet_donut.sendTextMsgToContact = async function(friendName, text){
     const contact = await bot.Contact.find({name: friendName});  //根据昵称搜索好友 change 'lijiarui' to any of your contact name in wechat
     if(!contact) return; //好友不存在直接返回
     await contact.say(text); //调用contact对象的say方法发送消息，contact对象很多方法，参考官方文档
 };
- 
+
 //发送媒体消息给联系人
 puppet_donut.sendMediaMsgToContact = async function(friendName, fileUrl, filePath){
     const contact = await bot.Contact.find({name: friendName});  // change 'lijiarui' to any of your contact name in wechat
@@ -333,7 +333,7 @@ puppet_donut.sendMediaMsgToContact = async function(friendName, fileUrl, filePat
         await contact.say(fileBox2)
     }
 };
- 
+
 //发送名片消息给联系人
 puppet_donut.sendContactCardMsgToContact = async function(friendName, contactId){
     const contact = await bot.Contact.find({name: friendName});  // change 'lijiarui' to any of your contact name in wechat
@@ -341,7 +341,7 @@ puppet_donut.sendContactCardMsgToContact = async function(friendName, contactId)
     const contactCard = bot.Contact.load(contactId);
     await contact.say(contactCard);
 };
- 
+
 //发送链接消息给联系人
 puppet_donut.sendUrlLinkMsgToContact = async function(friendName, description, thumbnailUrl, title, url){
     const contact = await bot.Contact.find({name: friendName});  // change 'lijiarui' to any of your contact name in wechat
@@ -354,7 +354,7 @@ puppet_donut.sendUrlLinkMsgToContact = async function(friendName, description, t
     });
     await contact.say(urlLink);
 };
- 
+
 //发送小程序消息给联系人
 puppet_donut.sendMiniProgramMsgToContact = async function(friendName, username, appid, title, pagepath, description, thumbnailurl){
     const contact = await bot.Contact.find({name: friendName});  // change 'lijiarui' to any of your contact name in wechat
@@ -369,23 +369,23 @@ puppet_donut.sendMiniProgramMsgToContact = async function(friendName, username, 
     });
     await contact.say(miniProgram)
 };
- 
+
 //初始化调用
 puppet_donut.run = function(){
- 
+
     const { Wechaty } = require('wechaty');
     const { ScanStatus } = require('wechaty-puppet');
     const QrcodeTerminal = require('qrcode-terminal');
     const io = require('./socketio');
     const config = require("./config");
- 
+
     const onRoomJoin = require("./wechaty/onRoomJoin");     // 加入房间监听回调
     const onRoomLeave = require("./wechaty/onRoomLeave");   // 退出房间监听回调
     const onMessage = require("./wechaty/onMessage");       // 消息监听回调
     const onFriendShip = require("./wechaty/onFriendShip"); // 好友添加监听回调
- 
+
     const token = config.token;
- 
+
     bot = new Wechaty({
         puppet: 'wechaty-puppet-hostie',
         puppetOptions: {
@@ -393,7 +393,7 @@ puppet_donut.run = function(){
         },
         name: config.name
     });
- 
+
     bot
         .on('scan', (qrcode, status) => {
             if (status === ScanStatus.Waiting) {
@@ -418,7 +418,7 @@ puppet_donut.run = function(){
         .on("friendship", onFriendShip) // 好友添加监听
         .start();
 };
- 
+
 module.exports = puppet_donut;
 ```
 
@@ -426,12 +426,12 @@ module.exports = puppet_donut;
 
 这边重点描述下wechaty的监听示例，这也是为什么单独把几个监听业务给抽出来到wechaty目录下的原因之一。
 
-*   scan                //扫码登录监听
-*   login                //登录成功监听
-*   room-join        //加入群聊监听
-*   room-leave     //退出群聊监听
-*   message        //消息通知监听
-*   friendship       //好友添加监听
+* scan                //扫码登录监听
+* login                //登录成功监听
+* room-join        //加入群聊监听
+* room-leave     //退出群聊监听
+* message        //消息通知监听
+* friendship       //好友添加监听
 
 ### **初始化**
 
@@ -458,8 +458,8 @@ puppet_donut.sendTextMsgToContact = async function(friendName, text){
 
 这里传入两个参数
 
-*   friendName  //好友昵称，这里可以调用对象Contact的find({name: friendName})函数进行好友查询
-*   text               //发送的文本内容
+* friendName  //好友昵称，这里可以调用对象Contact的find({name: friendName})函数进行好友查询
+* text               //发送的文本内容
 
 其他的发送方式在代码里，这里直接看代码，不一一解释（代码详细注释，建议参考官方文档）
 
@@ -511,11 +511,11 @@ const QrcodeTerminal = require('qrcode-terminal');
 
 这边有一个坑，在webstorm上打码的时候，在终端输出的二维码是这样的，
 
-![](/assets/2020/12-wechaty-robot-lite/qrcode-login-error.png)
+![alt text](/assets/2020/12-wechaty-robot-lite/qrcode-login-error.png "qrcode-login-error")
 
 这时候我们需要把这些字符串复制到码农神器notepad++里，如下图
 
-![](/assets/2020/12-wechaty-robot-lite/qrcode-login.png)
+![alt text](/assets/2020/12-wechaty-robot-lite/qrcode-login.png "qrcode-login")
 
 然后进行扫码登录；
 
@@ -536,7 +536,7 @@ const config = require("../config");
 const io = require('../socketio');
 // 好友添加验证消息自动同意关键字数组
 const addFriendKeywords = config.personal.addFriendKeywords;
- 
+
 // 好友添加监听回调
 module.exports = async function onFriendShip(friendship) {
     let logMsg;
@@ -559,7 +559,7 @@ module.exports = async function onFriendShip(friendship) {
                     logMsg = "不自动通过，因为验证消息是: " + friendship.hello();
                 }
                 break;
- 
+
             /**
              * 2. 友谊确认
              */
@@ -587,7 +587,7 @@ const io = require('../socketio');
 const roomJoinReply = config.room.roomJoinReply;
 // 管理群组列表
 const roomList = config.room.roomList;
- 
+
 // 进入房间监听回调 room-群聊 inviteeList-受邀者名单 inviter-邀请者
 module.exports = async function onRoomJoin(room, inviteeList, inviter) {
     // 判断配置项群组id数组中是否存在该群聊id
@@ -609,9 +609,9 @@ module.exports = async function onRoomJoin(room, inviteeList, inviter) {
 
 此回调接收三个参数
 
-*   room 群聊实例
-*   inviteeList 受邀者名单
-*   inviter 邀请者
+* room 群聊实例
+* inviteeList 受邀者名单
+* inviter 邀请者
 
 有了房间，受邀者，邀请者，这里可实现的业务就多了~~此处啪啦啪啦省略800字...
 
@@ -626,8 +626,6 @@ module.exports = async function onRoomJoin(room, inviteeList, inviter) {
 ```
 
 接下来就是，监听到新加入，把受邀者列表遍历一下，使用`room.say`方法发送群消息即可，受邀者列表里存的就是加入的微信号实例，`say` 方法第一个参数就是要发送的消息，第二个参数就是为了@此人一下。。。其他业务开发请参考[官方文档（再来一个传送门）](https://wechaty.js.org/docs/api/)
-
-###  
 
 ### onRoomLeave
 
@@ -646,14 +644,12 @@ module.exports = async function onRoomLeave(room, leaver) {
 
 此回调接收三个参数
 
-*   room 群聊实例
-*   leaver 退出群聊者
+* room 群聊实例
+* leaver 退出群聊者
 
 ### onMessage
 
 主要监听消息的接收
-
-      
 
 ```javascript
         // 判断此消息类型是否为文本
@@ -672,15 +668,15 @@ module.exports = async function onRoomLeave(room, leaver) {
                     let self = "@" + config.name;
                     // 获取消息内容，拿到整个消息文本，去掉 @+名字
                     let sendText = msg.text().replace(self, "");
- 
+
                     // 请求机器人接口回复
                     let res = await requestRobot(sendText);
- 
+
                     // 返回消息，并@来自人
                     room.say(res, msg.from());
                     return;
                 }
- 
+
                 // 收到消息，没有提到自己  忽略
             } else {
                 // 回复信息是关键字 “加群”
@@ -688,11 +684,11 @@ module.exports = async function onRoomLeave(room, leaver) {
                 if(config.personal.robotBlockList.includes(msg.from().id)) return;//判断该好友是否在阻断名单
                 if(!config.personal.robotQunBlockList.includes(msg.from().id)){//判断该好友是否在群阻断名单
                     if (await isAddRoom(msg)) return;
- 
+
                     // 回复信息是所管理的群聊名
                     if (await isRoomName(bot, msg)) return;
                 }
- 
+
                 // 请求机器人聊天接口
                 let res = await requestRobot(msg.text());
                 // 返回聊天接口内容
@@ -735,7 +731,7 @@ async function isAddRoom(msg) {
 }
 ```
 
-**回复群名进行群邀请**  
+回复**群名**进行群邀请  
 
 ```javascript
 /**
@@ -749,13 +745,13 @@ async function isRoomName(bot, msg) {
     if (Object.keys(roomList).some(v => v == msg.text())) {
         // 通过群聊id获取到该群聊实例
         const room = await bot.Room.find({ id: roomList[msg.text()] });
- 
+
         // 判断是否在房间中 在-提示并结束
         if (await room.has(msg.from())) {
             await msg.say("您已经在房间中了");
             return true
         }
- 
+
         // 发送群邀请
         await room.add(msg.from())
         await msg.say("已发送群邀请");
@@ -769,12 +765,12 @@ async function isRoomName(bot, msg) {
 
 说到微信机器人，肯定不能脱离AI只能回复；这里的业务用到了自动陪聊和天气查询的功能，分别用到了如下api，相关参数配置在config文件，大家自行申请api 参数进行修改
 
-*   免费机器人
-    *   接口文档：[http://www.itpk.cn/](http://www.itpk.cn/)
-    *   这里自行注册，还可以配置自定义回复，无答案回复，自行训练等等
-*   免费天气
-    *   接口文档：[http://www.tianqiapi.com/](http://www.tianqiapi.com/%C2%A0) 
-    *   这里官方文档竟然给了个公开能用的appid和appsecret...额。。。大家自行参考文档
+* 免费机器人
+  * 接口文档：[http://www.itpk.cn/](http://www.itpk.cn/)
+  * 这里自行注册，还可以配置自定义回复，无答案回复，自行训练等等
+* 免费天气
+  * 接口文档：[http://www.tianqiapi.com/](http://www.tianqiapi.com/%C2%A0) 
+  * 这里官方文档竟然给了个公开能用的appid和appsecret...额。。。大家自行参考文档
 
 这里没什么可细说，主要是调用第三方封装的api，进行一些关键词的自动答复；
 
@@ -784,7 +780,9 @@ async function isRoomName(bot, msg) {
 cnpm install --save request
 cnpm install --save urlencode
 ```
+
 这里小小吐槽下图灵，n年体验过图灵，这回本来想申请图灵的api测试，结果关注官方公众号等渠道体验。。。好吧，竟然没有机器人只能答复，遂找了家免费的AI机器人，希望大家别吐槽不智能~~~哈哈，毕竟itpk也需要慢慢进步嘛
+
 ```javascript
 /**
  * @description 机器人请求接口 处理函数
@@ -840,7 +838,7 @@ function requestRobot(info) {
                         if (body.startsWith('?')) {//此处返回的json数据有些问题，额外处理
                             body = body.replace('?', '')
                         }
- 
+
                         if (!common.isJSON(body)) {
                             resolve(body);
                         } else {
@@ -902,6 +900,7 @@ function requestRobot(info) {
     })
 }
 ```
+
 这里有个槽点，调用机器人api，设置返回的数据是json，但是返回的body字符串里开通竟然多个个'-'，完了还只能在编译器的控制台能看到，放到浏览器和别的编译器显示不出来，只能进行简单替换处理
 
 ```javascript
@@ -914,9 +913,9 @@ function requestRobot(info) {
 
 这里为了体验下机器人的代入感，做了个前端demo（很简陋，这里别吐槽。。。就是为了和socket结合一起实时看效果；忽略右上角的红x...调试时中断服务的原因...）
 
-![](/assets/2020/12-wechaty-robot-lite/web-example.png)
+![alt text](/assets/2020/12-wechaty-robot-lite/web-example.png "web-example")
 
-**这里简介下nodejs express socketio的一些使用**
+这里简介下**nodejs express socketio**的一些使用
 
 前端引用socket.io.js，为了方式前后端socket版本不一致带来的问题，强烈建议如下引用方式
 
@@ -926,11 +925,9 @@ function requestRobot(info) {
 
 会直接调用接口/socket.io目录下的js文件，实际调用到modules目录下的文件
 
-![](/assets/2020/12-wechaty-robot-lite/code-structure.png)
+![alt text](/assets/2020/12-wechaty-robot-lite/code-structure.png "code-structure")
 
 前端建立socket连接
-
-   
 
 ```javascript
  var socket = io(url);
@@ -979,10 +976,10 @@ io.sockets.on('connection', function (socket) {});
 
 事件监听，这里举例’send‘事件监听，具体触发如下
 
-*   调用初始化的io进行emit()或send()，可向所有用户推送该消息（适用场景向所有客户端推送紧急通知）
-*   调用该监听通道，向当前用户回复消息socket.emit()
-*   调用当前监听通道，向出自己外的其他用户进行广播推送socket.broadcast.emit()
-*   调用初始化的io向某个客户端进行单独的消息推送io.to(socketedId).emit()
+* 调用初始化的io进行emit()或send()，可向所有用户推送该消息（适用场景向所有客户端推送紧急通知）
+* 调用该监听通道，向当前用户回复消息socket.emit()
+* 调用当前监听通道，向出自己外的其他用户进行广播推送socket.broadcast.emit()
+* 调用初始化的io向某个客户端进行单独的消息推送io.to(socketedId).emit()
 
 ```javascript
         //监听事件send
@@ -998,38 +995,40 @@ io.sockets.on('connection', function (socket) {});
 
 此demo的核心代码基本就介绍这么多了...
 
+## 总结
+
 ### 写在最后
 
-*   config的很多配置在实际业务中应业务化处理，比如db化接受实时操作；
-*   关于wechaty，根据个人的体验，除了没有朋友圈，视频号相关的内容操作，其他的基本满足机器人、私域相关的操作，支持多语言，提供Java，Go，Python，Javascript，C#等主流语言的兼容支持，根据官方api，业务可扩展性极强；
-*   关于nodejs，由于作者之前并没有nodejs实战开发经验，也是基于这个demo看了nodejs相关文档，学习express框架初学，提供不了太多解读。不过nodejs基于脚本语言，学习起来还是很快；
-*   关于socketio，和nodejs结合在一起，体验nodejs的异步非阻塞，简直要起了飞；
-*   环境
-    *   系统：win7、centos7.6成功运行
-    *   nodejs版本：windows下调试：v12.16.2；centos：v10.16.0；（wechaty对node版本有要求，不同协议版本最低要求不一致，大家自行参考开源说明和官方文档）
-*   代码
-    *   主要是抽空码出来的，没有太多时间优化
-    *   有一些业务代码写好了，但是并没有接入使用，欢迎大家补充
-    *   刚开始查找微信助手相关功能时在CSDN看到这篇文章[《Wechaty|不使用微信的web协议的机器人》](https://blog.csdn.net/lx91216/article/details/106257248)，勾起了我对wechaty的回忆和探索，因此这篇文档很多内容上也是参考了它（时间关系甚至直接搬运，希望原文作者原谅哈...）
-    *   源码直通车→[点我《wechaty-robot-lite》](https://github.com/itingle/wechaty-robot-lite)
+* config的很多配置在实际业务中应业务化处理，比如db化接受实时操作；
+* 关于wechaty，根据个人的体验，除了没有朋友圈，视频号相关的内容操作，其他的基本满足机器人、私域相关的操作，支持多语言，提供Java，Go，Python，Javascript，C#等主流语言的兼容支持，根据官方api，业务可扩展性极强；
+* 关于nodejs，由于作者之前并没有nodejs实战开发经验，也是基于这个demo看了nodejs相关文档，学习express框架初学，提供不了太多解读。不过nodejs基于脚本语言，学习起来还是很快；
+* 关于socketio，和nodejs结合在一起，体验nodejs的异步非阻塞，简直要起了飞；
+* 环境
+  * 系统：win7、centos7.6成功运行
+  * nodejs版本：windows下调试：v12.16.2；centos：v10.16.0；（wechaty对node版本有要求，不同协议版本最低要求不一致，大家自行参考开源说明和官方文档）
+* 代码
+  * 主要是抽空码出来的，没有太多时间优化
+  * 有一些业务代码写好了，但是并没有接入使用，欢迎大家补充
+  * 刚开始查找微信助手相关功能时在CSDN看到这篇文章[《Wechaty|不使用微信的web协议的机器人》](https://blog.csdn.net/lx91216/article/details/106257248)，勾起了我对wechaty的回忆和探索，因此这篇文档很多内容上也是参考了它（时间关系甚至直接搬运，希望原文作者原谅哈...）
+  * 源码直通车→[点我《wechaty-robot-lite》](https://github.com/itingle/wechaty-robot-lite)
 
 后面有空，会持续迭代功能，后续需求扩展
 
-*   推送
-    *   例如每日早8点，拉取头条`热门文章`发送至群聊
-    *   可设置定时任务，定时给自己/群聊发送消息
-    *   好友可定制天气预报定时推送功能
-*   消息监听发送
-    *   同步展示推送媒体消息等
-    *   支持发送动图，表情包等信息
-    *   开启斗图模式
-*   群聊功能消息管理
-    *   监听群聊中消息，有不正当言论时或不文明用语对其警告
-    *   涉zheng，涉huang等言论清除出群
-*   群聊游戏
-*   后台管理系统(可视化配置及群聊数据统计)
-    *   丰富聊天功能，提供媒体消息发送，资源库内容发送
-    *   统计群聊活跃度，关键词通知统计功能
+* 推送
+  * 例如每日早8点，拉取头条`热门文章`发送至群聊
+  * 可设置定时任务，定时给自己/群聊发送消息
+  * 好友可定制天气预报定时推送功能
+* 消息监听发送
+  * 同步展示推送媒体消息等
+  * 支持发送动图，表情包等信息
+  * 开启斗图模式
+* 群聊功能消息管理
+  * 监听群聊中消息，有不正当言论时或不文明用语对其警告
+  * 涉zheng，涉huang等言论清除出群
+* 群聊游戏
+* 后台管理系统(可视化配置及群聊数据统计)
+  * 丰富聊天功能，提供媒体消息发送，资源库内容发送
+  * 统计群聊活跃度，关键词通知统计功能
 
 ### PS：
 
@@ -1037,19 +1036,19 @@ io.sockets.on('connection', function (socket) {});
 
 ### 参考文档
 
-*   [Wechaty官方API](https://wechaty.js.org/docs/api/)
-*   [Wechaty官方文档](https://wechaty.github.io/wechaty/)
-*   [Wechaty官方示例](https://github.com/juzibot/donut-tester#example)
-*   [socketio](https://socket.io/)
-*   [nodejs](http://nodejs.cn/)
-*   [express框架](https://www.expressjs.com.cn/)
+* [Wechaty官方API](https://wechaty.js.org/docs/api/)
+* [Wechaty官方文档](https://wechaty.github.io/wechaty/)
+* [Wechaty官方示例](https://github.com/juzibot/donut-tester#example)
+* [socketio](https://socket.io/)
+* [nodejs](http://nodejs.cn/)
+* [express框架](https://www.expressjs.com.cn/)
 
 ### 效果截图
 
-![](/assets/2020/12-wechaty-robot-lite/example-1.png)
+![alt text](/assets/2020/12-wechaty-robot-lite/example-1.png "example-1")
 
-![](/assets/2020/12-wechaty-robot-lite/example-2.png)
+![alt text](/assets/2020/12-wechaty-robot-lite/example-2.png "example-2")
 
-![](/assets/2020/12-wechaty-robot-lite/example-3.png)
+![alt text](/assets/2020/12-wechaty-robot-lite/example-3.png "example-3")
 
 待完结
