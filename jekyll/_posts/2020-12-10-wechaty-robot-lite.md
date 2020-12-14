@@ -3,7 +3,10 @@
 ---
 title: "wechaty-robot-lite"
 author: itingle
-avatar: /assets/developers/itingle/avatar.png
+categories: tutorial
+tags:
+  - news
+  - wechaty
 image: /assets/2020/12-wechaty-robot-lite/example-1.png
 ---
 
