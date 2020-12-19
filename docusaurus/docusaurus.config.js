@@ -82,10 +82,11 @@ module.exports = {
             { label: 'Stack Overflow',  href: 'https://stackoverflow.com/questions/tagged/wechaty' },
             { label: 'Telegram',        href: 'https://t.me/wechaty' },
             { label: 'Twitter',         href: 'https://twitter.com/chatieio' },
-            { label: 'YouTube',         href: 'https://www.youtube.com/playlist?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh' },
+            { label: 'YouTube',         href: 'https://bit.ly/3aoLE86' },
             { label: 'OpenCollective',  href: 'https://opencollective.com/wechaty' },
             { label: 'Google Drive',    href: 'https://bit.ly/33Dfkuf' },
             { label: 'Meeting Notes',   href: 'https://bit.ly/2zpi2XG' },
+            { label: "Hall of Fame",    href: 'https://bit.ly/2J6ziXa' },
           ],
         },
         {
