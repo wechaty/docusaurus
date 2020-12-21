@@ -13,7 +13,6 @@ Now, we have the following Wechaty Puppet Services:
 | Name | Platform | Protocol | Maintainer |
 | :---: | :---: | :---: | :---: |
 | [WXWork](wxwork/) | WeCom | Windows | @juzibot |
-| [Rock](rock/) | WeChat | Pad | @jcai |
 | [PadLocal](padlocal/) | WeChat | Pad | @padlocal |
 | [Donut](donut/) | WeChat | Windows | @juzibot |
 

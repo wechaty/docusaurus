@@ -78,7 +78,6 @@ module.exports = {
     'Puppet Services': [
       'puppet-services/README',
       'puppet-services/wxwork',
-      'puppet-services/rock',
       'puppet-services/padlocal',
       'puppet-services/donut',
     ],

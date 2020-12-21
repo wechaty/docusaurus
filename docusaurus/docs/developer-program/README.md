@@ -32,6 +32,16 @@ The following are our existing backers. Thank you to everyone! 🙏 [[Become a b
 
 <a href="https://opencollective.com/wechaty#backers" target="_blank"><img src="https://opencollective.com/wechaty/backers.svg?width=890" /></a>
 
+## Badge
+
+[![Wechaty Developer Program](https://img.shields.io/badge/Wechaty-Developer%20Program-green.svg)](https://wechaty.js.org/docs/developer-program/)
+
+You need to add the __Wechaty Developer Program__ badge after you join this program.
+
+```md
+[![Wechaty Developer Program](https://img.shields.io/badge/Wechaty-Developer%20Program-green.svg)](https://wechaty.js.org/docs/developer-program/)
+```
+
 ## FAQ
 
 ### How to publish blogs
