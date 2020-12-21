@@ -10,10 +10,9 @@ Learn more from [Wechaty OSS Project and the Commercial Puppet Service Provider 
 
 Now, we have the following Wechaty Puppet Services:
 
-| Puppet Service | Platform | Protocol | Maintainer |
-| :--- | :--- | :--- | :--- |
+| Name | Platform | Protocol | Maintainer |
+| :---: | :---: | :---: | :---: |
 | [WXWork](wxwork/) | WeCom | Windows | @juzibot |
-| [Rock](rock/) | WeChat | Pad | @jcai |
 | [PadLocal](padlocal/) | WeChat | Pad | @padlocal |
 | [Donut](donut/) | WeChat | Windows | @juzibot |
 
@@ -43,15 +42,15 @@ See:
 
 To be written.
 
-Please feel free to list yourself to our list at [Wechaty Puppet Provider Repo](https://github.com/wechaty/puppet-service-providers/), and add your introduction in this README by submitting a Pull Request!
+Please feel free to list yourself to our list at [Wechaty Puppet Provider Repo](https://github.com/wechaty/puppet-services/), and add your introduction in this README by submitting a Pull Request!
 
 If you want to become a Wechaty Puppet Service Provider, please do not hesitate to file an issue to introduce yourself in this repository, then contact rui@chatie.io!
 
 Learn more about the Wechaty Puppet Service Providers from:
 
 1. [The relationship between Wechaty OSS Project and the Commercial Puppet Service Provider (CPSP) #11](https://github.com/wechaty/PMC/issues/11)
-1. [Wechaty Puppet Service Registration & Discovery (w.r.t. token) #39](https://github.com/wechaty/puppet-service-providers/issues/39)
+1. [Wechaty Puppet Service Registration & Discovery (w.r.t. token) #39](https://github.com/wechaty/puppet-services/issues/39)
 
 ### How to buy(apply) for the token
 
-Please submit your application by filing an issue at <https://github.com/wechaty/puppet-service-providers/issues/new/choose>
+Please submit your application by filing an issue at <https://github.com/wechaty/puppet-services/issues/new/choose>

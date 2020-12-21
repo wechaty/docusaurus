@@ -1,10 +1,11 @@
 ---
-title: Donut
+title: 'Puppet Service: Donut'
+sidebar_label: Donut
 ---
 
 - Repo: <https://github.com/juzibot/donut-tester>
 - Provider: [@juzibot](https://github.com/juzibot)
-- Support: <https://github.com/juzibot/donut-tester/issues>
+- Support & Feedback: <https://github.com/juzibot/donut-tester/issues>
 
 ## How to buy(apply)
 
