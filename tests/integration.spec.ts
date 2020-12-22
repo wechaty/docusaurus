@@ -3,6 +3,7 @@
 import test  from 'tstest'
 
 import fs from 'fs'
+import path from 'path'
 import util from 'util'
 
 import probeImageSize from 'probe-image-size'
@@ -16,7 +17,7 @@ const isPR = require('is-pr')
 
 test.skip('pull request title', async t => {
   if (isPR) {
-    const prNum = parseInt(process.env['TRAVIS_PULL_REQUEST'] as string)
+    const prNum = parseInt(process.env.TRAVIS_PULL_REQUEST as string)
     const prTitle = await prNumberToTitle('bupt', 'ai-ml.club', prNum)
 
     if (prTitle.match(/(oral|poster)/i)) {
@@ -31,18 +32,27 @@ test.skip('pull request title', async t => {
 })
 
 test('image size should not more than 1MB', async t => {
+  const ASSET_FOLDER = path.join(
+    __dirname,
+    '../jekyll/assets'
+  )
+
   const MAX_WIDTH = 1920         // HD
   const MAX_SIZE  = 1024 * 1024  // 1MB
 
-  const fileList = await glob('docs/assets/**/*.{jpg,jpeg,png}')
+  const fileList = await glob(`${ASSET_FOLDER}/**/*.{jpg,jpeg,png}`)
   t.true(fileList.length > 0, 'should get image file list')
 
   for (const file of fileList) {
     const dim = await probeImageSize(fs.createReadStream(file))
-    const size = fs.statSync(file)['size']
+    const size = fs.statSync(file).size
 
-    if (dim.width > MAX_WIDTH || size > MAX_SIZE) {
-      t.fail(`${file} exceed the max limit: width: ${dim.width}, size: ${size}. use "./scripts/fit-image.sh <FILE>" to adjust it fit.`)
+    const fit = dim.width <= MAX_WIDTH && size <= MAX_SIZE
+    t.true(fit, `${file.replace(/.*\//, '')} should not exceed the max limit: width: ${dim.width}, size: ${size}.`)
+
+    if (!fit) {
+      console.error(`use "./scripts/fit-image.sh <FILE>" to adjust it fit MAX_WIDTH: ${MAX_WIDTH} & MAX_SIZE: ${MAX_SIZE}`)
     }
+
   }
 })

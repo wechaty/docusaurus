@@ -1,8 +1,9 @@
-_site
-.sass-cache
-.jekyll-metadata
-Gemfile.lock
-.DS_Store
-.*.swp
 node_modules/
-package-lock.json
+t/
+t.*
+
+.idea
+.DS_Store
+
+new-gh-pages/
+tmp/
