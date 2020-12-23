@@ -641,7 +641,7 @@ async function onMessage(msg) {
 
 ## 用户反馈
 
-![1D923EA4-F45C-4C84-9601-D54598CDB763](/assets/2020/2020-12-23-wxwork-and-donut/example1.png)
-![1D923EA4-F45C-4C84-9601-D54598CDB763](/assets/2020/2020-12-23-wxwork-and-donut/example2.png)
+![example1](/assets/2020/2020-12-23-wxwork-and-donut/example1.png)
+![example2](/assets/2020/2020-12-23-wxwork-and-donut/example2.png)
 
 ### 由于完整代码会有一些公司的敏感信息暴露出去，就不分享了。可以识别头部图片体验机器人功能
