@@ -11,10 +11,10 @@
 ## 消息模块：
 ### 对收到的文本信息进行解析返回对应的信息，如果调用api无法识别商品id则不返回返利链接;如果识别到商品id，但没有优惠信息返回无优惠;如果有优惠信息返回返利链接；
 ![help](https://github.com/jiangxiaotao1024/wechaty.js.org/blob/robot/assets/help.png)
-![chaxun](https://github.com/jiangxiaotao1024/wechaty.js.org/blob/robot/assets/help.png)
-![tixian](https://github.com/jiangxiaotao1024/wechaty.js.org/blob/robot/assets/help.png)
-![zhuanqian](https://github.com/jiangxiaotao1024/wechaty.js.org/blob/robot/assets/help.jpg)
-![taokouling](https://github.com/jiangxiaotao1024/wechaty.js.org/blob/robot/assets/help.png)
+![chaxun](https://github.com/jiangxiaotao1024/wechaty.js.org/blob/robot/assets/chaxun.png)
+![tixian](https://github.com/jiangxiaotao1024/wechaty.js.org/blob/robot/assets/tixian.png)
+![zhuanqian](https://github.com/jiangxiaotao1024/wechaty.js.org/blob/robot/assets/zhuanqian.jpg)
+![taokouling](https://github.com/jiangxiaotao1024/wechaty.js.org/blob/robot/assets/taokouling.png)
 ## 订单查询模块：
 ### 登录后出发10s定时器，每隔10s查询这段时间的订单交易信息，解析出支付成功订单的优惠信息以及pid，根据pid查询对应的wxid，对该wxid用户发送预计佣金信息。对支付成功订单给该用户返回佣金信息，并按照比例，同时对上级，上上级返回返利信息。
 
