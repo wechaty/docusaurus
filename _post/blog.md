@@ -1,3 +1,8 @@
+---
+title: "用wechaty制作返利机器人"
+author: jiangxiaotao1024
+---
+
 # 用wechaty制作返利机器人
 ## 实现的功能：
 ### 1，通过发送淘口令会自动识别淘口令并返回一个返利链接
