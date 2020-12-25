@@ -13,9 +13,9 @@ image: /assets/2020/python-wechaty/pythotn-wechaty-logo.png
 
 > python-wechaty：一个面向所有IM平台的聊天机器人框架。
 
-# 一、背景介绍
+## 一、背景介绍
 
-## 1.1 自动回复
+### 1.1 自动回复
 
 有接触到微信公众号的同学都知道，它有一个自动回复的功能：你给它发送一个关键字，它就给你回复指定的内容，可以是纯文字，图片，视频等。
 
@@ -23,7 +23,7 @@ image: /assets/2020/python-wechaty/pythotn-wechaty-logo.png
 
 而在微信中回复的内容又可以是什么呢？可以是：纯文字、带艾特消息@的文字、图片、动图（表情包）、视频，语音、视频、小程序以及好友名片等，这些消息内容在python-wechaty都能够使用简单的配置即可完成此功能。
 
-## 1.2 关键字入群
+### 1.2 关键字入群
 
 目前有很多社区运营者都会面临着一些问题：
 
@@ -37,11 +37,11 @@ image: /assets/2020/python-wechaty/pythotn-wechaty-logo.png
 
 接下来我将介绍如何上手这两个插件，快速解决你们身边的一些问题。
 
-# 二、安装 & 配置
+## 二、安装 & 配置
 
 编程环境要求python3.7+版本，以及一个token两个依赖包。
 
-## 1.1 配置Token
+### 1.1 配置Token
 
 什么是Token？为什么要配置Token？如何获取Token？
 
@@ -64,7 +64,7 @@ Token的配置可以有多种方式：
 
 那如何获取长期Token呢？详细请看：[Everything-about-Wechaty](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
-## 1.2 安装依赖包
+### 1.2 安装依赖包
 
 整个依赖包分为两个：`wechaty`以及`wechaty-plugin-contrib`，安装脚本如下所示：
 
@@ -79,11 +79,11 @@ pip install wechaty-plugin-contrib
 
 Wechaty社区欢迎各位优秀开发者共建Chatbot领域基础设施
 
-# 三、关键字入群
+## 三、关键字入群
 
-关键字入群是很多社区运营同学的日常工作，也是最消耗体力的活儿，并没有很很复杂的脑力活儿。现在都0202年了，居然有同学还没有使用到自动化工具来提升工作效率，更有趣的事儿，他们大部分都有一个程序猿同事/同学/老公/老婆。为了让他们更好的帮助自己身边的人解决问题，[关键字入群]()这个插件你们必须得安利一波儿～
+关键字入群是很多社区运营同学的日常工作，也是最消耗体力的活儿，并没有很很复杂的脑力活儿。现在都0202年了，居然有同学还没有使用到自动化工具来提升工作效率，更有趣的事儿，他们大部分都有一个程序猿同事/同学/老公/老婆。为了让他们更好的帮助自己身边的人解决问题，关键字入群这个插件你们必须得安利一波儿～
 
-## 3.1 功能介绍
+### 3.1 功能介绍
 
 当用户私聊你，发送一个关键字，然后聊天机器人会根据关键字寻找到对应的群，比如你给Wechaty官方机器人发送一个“wechaty”的关键字，它会将你拉到Wechaty的开发者群内，并发送欢迎语。
 
@@ -91,7 +91,7 @@ Wechaty社区欢迎各位优秀开发者共建Chatbot领域基础设施
 
 `RoomInviterPlugin`  Is All You Need.
 
-## 3.2 示例代码
+### 3.2 示例代码
 
 最好的代码永远是最简单的代码
 
@@ -114,7 +114,7 @@ async def run():
     """async run method"""
     rules: Dict[MessageMatcher, RoomMatcher] = {
         MessageMatcher('wechaty'): RoomMatcher('Wechaty开发者群（1）'),
-				MessageMatcher('python-wechaty'): RoomMatcher('Python-Wechaty开发者群（2）')
+        MessageMatcher('python-wechaty'): RoomMatcher('Python-Wechaty开发者群（2）'),
     }
     plugin = RoomInviterPlugin(options=RoomInviterOptions(
         name='python-wechaty关键字入群插件',
@@ -143,7 +143,7 @@ asyncio.run(run())
 
     启动机器人只需要调用一下start这个函数。
 
-# 三、自动回复
+## 三、自动回复
 
 自动回复也是我们日常生活工作中的一些高频使用场景，而回复内容不仅限于文字，还可以是图片，文件，链接以及小程序等等。比如你给机器人发“网易”，它会给你发送一个网易云音乐的小程序；你给它发一个”身份证“，它会给你发送身份证的正反面照片；...... 等等。
 
@@ -195,7 +195,7 @@ asyncio.run(run())
 
 代码非常简单（API设计的很人性化），相信大家一眼就能够看懂，在此我就不做过多解释。
 
-# 四、总结
+## 四、总结
 
 python-wechaty有非常人性化的API，同时内置了很多高频功能插件库，提供给开发者能够快速上手开发出自己的小应用。
 
