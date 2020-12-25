@@ -646,6 +646,7 @@ async function onMessage(msg) {
 
 ## 由于完整代码会有一些公司的敏感信息暴露出去，但是这里分享一个我自己写的小案例
 
+```
 - 自动通过好友验证
   - 当有人添加机器人时，判断验证消息关键字后通过或直接通过
   - 通过验证后自动回复并介绍机器人功能
@@ -657,6 +658,8 @@ async function onMessage(msg) {
   - 私聊发送消息即可聊天
 - 加入群聊自动欢迎
   - 当新的小伙伴加入群聊后自动 `@[新的小伙伴]` 发一个文字欢迎
+```
+
 ### 结构
 
 ```js
@@ -679,6 +682,7 @@ async function onMessage(msg) {
 |---- error-service.js			    #当机器人内部出错的时候会触发error 事件。
 |-- package.json
 ```
+
 - [项目地址](https://github.com/zhihuifanqiechaodan/wechaty-bot)
 
 # 感谢
