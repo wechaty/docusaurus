@@ -2,7 +2,7 @@
 title: "java-wechaty auto get news"
 author: HarrisonQI
 categories: tutorial
-image: /assets/2020/HarrisonQI/banner.jpg
+image: /assets/2020/HarrisonQI/2020-12-28-auto-push-news-banner.jpg
 ---
 
 In daily life, most people always want to know latest news. This tutorial will record how to automatically get the current latest news.
@@ -21,11 +21,11 @@ IDE: IntelliJ IDEA
 ### Init project
 Visit [Spring initializr](https://start.spring.io/) and generate:
 
-![Spring initializr](/assets/2020/HarrisonQI/01.jpg)
+![Spring initializr](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-01.jpg)
 
 Download & unzip, open with IDEA:
 
-![open with IDEA](/assets/2020/HarrisonQI/02.jpg)
+![open with IDEA](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-02.jpg)
 
 Add dependency(newest version) and update:
 ```xml
@@ -35,7 +35,7 @@ Add dependency(newest version) and update:
     <version>0.1.5-SNAPSHOT</version>
 </dependency>
 ```
-![dependency](/assets/2020/HarrisonQI/03.jpg)
+![dependency](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-03.jpg)
 ### Add wechaty scan plugin
 Create `WechatyPlugins.kt` file in `com.example.demo`:
 ```kotlin
@@ -134,7 +134,7 @@ class WechatyPlugins {
 ```
 Screenshot:
 
-![dependency](/assets/2020/HarrisonQI/04.jpg)
+![dependency](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-04.jpg)
 ### Autowire wechaty
 Change DemoApplication.kt to: 
 ```kotlin
@@ -163,7 +163,7 @@ fun main(args: Array<String>) {
 	runApplication<DemoApplication>(*args)
 }
 ```
-![dependency](/assets/2020/HarrisonQI/05.jpg)
+![dependency](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-05.jpg)
 
 Then run the application, you'll see log of wechaty. 
 
@@ -172,16 +172,16 @@ Then run the application, you'll see log of wechaty.
 First we need enable schedule:
 Add a `@EnableScheduling` to application:
 
-![EnableScheduling](/assets/2020/HarrisonQI/08.jpg)
+![EnableScheduling](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-08.jpg)
 
 We need schedule of spring boot, so we create `MySchedule.kt`:
 
-![MySchedule](/assets/2020/HarrisonQI/06.jpg)
+![MySchedule](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-06.jpg)
 
 #### Inject wechaty
 We wanna use functions of wechaty. Because the injection has been completed above, we only need to directly introduce here:
 
-![Inject wechaty](/assets/2020/HarrisonQI/07.jpg)
+![Inject wechaty](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-07.jpg)
 
 #### Create a schedule task
 Let's create a schedule for test. Print time every 5 second. Replace your `MySchedule.kt`:
@@ -203,7 +203,7 @@ class MySchedule(private val wechaty: Wechaty) {
 ```
 Run application, you can see time print on your console:
 
-![Inject wechaty](/assets/2020/HarrisonQI/09.jpg)
+![Inject wechaty](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-09.jpg)
 
 Next, we only need to focus on how to push and content.
 
@@ -217,7 +217,7 @@ Because we need `RestTemplate` to send http request, so we add a dependency into
 </dependency>
 ```
 
-![RestTemplate](/assets/2020/HarrisonQI/10.jpg)
+![RestTemplate](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-10.jpg)
 
 Don't forget to reimport.
 
