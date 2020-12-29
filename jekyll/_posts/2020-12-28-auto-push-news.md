@@ -8,17 +8,22 @@ image: /assets/2020/HarrisonQI/2020-12-28-auto-push-news-banner.jpg
 In daily life, most people always want to know latest news. This tutorial will record how to automatically get the current latest news.
 
 ## Project structure
+
 ### Technology selection
+
 `kotlin` + `java-wechaty` + `Spring boot`
 IDE: IntelliJ IDEA
 
 ### Core Modules
+
 1. Wechaty(WeChat push)
 2. Timing task
 3. Information acquisition
 
 ## Start
+
 ### Init project
+
 Visit [Spring initializr](https://start.spring.io/) and generate:
 
 ![Spring initializr](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-01.jpg)
@@ -28,6 +33,7 @@ Download & unzip, open with IDEA:
 ![open with IDEA](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-02.jpg)
 
 Add dependency(newest version) and update:
+
 ```xml
 <dependency>
     <groupId>io.github.wechaty</groupId>
@@ -35,9 +41,13 @@ Add dependency(newest version) and update:
     <version>0.1.5-SNAPSHOT</version>
 </dependency>
 ```
+
 ![dependency](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-03.jpg)
+
 ### Add wechaty scan plugin
+
 Create `WechatyPlugins.kt` file in `com.example.demo`:
+
 ```kotlin
 package com.bugcatt.wxbot.wechaty.plugins
 
@@ -132,11 +142,15 @@ class WechatyPlugins {
 
 }
 ```
+
 Screenshot:
 
 ![dependency](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-04.jpg)
+
 ### Autowire wechaty
+
 Change DemoApplication.kt to: 
+
 ```kotlin
 package com.example.demo
 
@@ -163,12 +177,15 @@ fun main(args: Array<String>) {
 	runApplication<DemoApplication>(*args)
 }
 ```
+
 ![dependency](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-05.jpg)
 
 Then run the application, you'll see log of wechaty. 
 
 ### Create schedule
+
 #### Enable scheduling
+
 First we need enable schedule:
 Add a `@EnableScheduling` to application:
 
@@ -179,12 +196,15 @@ We need schedule of spring boot, so we create `MySchedule.kt`:
 ![MySchedule](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-06.jpg)
 
 #### Inject wechaty
+
 We wanna use functions of wechaty. Because the injection has been completed above, we only need to directly introduce here:
 
 ![Inject wechaty](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-07.jpg)
 
 #### Create a schedule task
+
 Let's create a schedule for test. Print time every 5 second. Replace your `MySchedule.kt`:
+
 ```kotlin
 package com.example.demo
 
@@ -201,6 +221,7 @@ class MySchedule(private val wechaty: Wechaty) {
     }
 }
 ```
+
 Run application, you can see time print on your console:
 
 ![Inject wechaty](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-09.jpg)
@@ -208,8 +229,11 @@ Run application, you can see time print on your console:
 Next, we only need to focus on how to push and content.
 
 ### Free news api
+
 #### RestTemplate
+
 Because we need `RestTemplate` to send http request, so we add a dependency into `pom.xml`:
+
 ```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
@@ -222,9 +246,11 @@ Because we need `RestTemplate` to send http request, so we add a dependency into
 Don't forget to reimport.
 
 #### News Api
+
 There's a free news api: https://www.juhe.cn/docs/api/id/235 . Let's use it.
 
 First, we create a data class to receive json data. Create `ToutiaoResponse.kt`:
+
 ```kotlin
 package com.example.demo
 
@@ -268,6 +294,7 @@ data class ToutiaoResponse(
 ``` 
 
 Then create `NewsUtil.kt`:
+
 ```kotlin
 package com.example.demo
 
@@ -288,6 +315,7 @@ class NewsUtil {
 ```
 
 Finally, we just use this function in our schedule:
+
 ```kotlin
 package com.example.demo
 
