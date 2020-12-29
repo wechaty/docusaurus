@@ -149,7 +149,7 @@ Screenshot:
 
 ### Autowire wechaty
 
-Change DemoApplication.kt to: 
+Change DemoApplication.kt to:
 
 ```kotlin
 package com.example.demo
@@ -162,25 +162,25 @@ import org.springframework.context.annotation.Bean
 @SpringBootApplication
 class DemoApplication{
 
-	@Bean
-	fun wechaty():Wechaty{
-		val wechatyToken = "your wechaty token"
-		val bot = Wechaty.instance(wechatyToken)
-		bot.use(WechatyPlugins.ScanPlugin())
-		bot.start(false)
-		return bot
-	}
+    @Bean
+    fun wechaty():Wechaty{
+        val wechatyToken = "your wechaty token"
+        val bot = Wechaty.instance(wechatyToken)
+        bot.use(WechatyPlugins.ScanPlugin())
+        bot.start(false)
+        return bot
+    }
 
 }
 
 fun main(args: Array<String>) {
-	runApplication<DemoApplication>(*args)
+    runApplication<DemoApplication>(*args)
 }
 ```
 
 ![dependency](/assets/2020/HarrisonQI/2020-12-28-auto-push-news-05.jpg)
 
-Then run the application, you'll see log of wechaty. 
+Then run the application, you'll see log of wechaty.
 
 ### Create schedule
 
@@ -247,7 +247,7 @@ Don't forget to reimport.
 
 #### News Api
 
-There's a free news api: https://www.juhe.cn/docs/api/id/235 . Let's use it.
+There's a free news [Api](https://www.juhe.cn/docs/api/id/235). Let's use it.
 
 First, we create a data class to receive json data. Create `ToutiaoResponse.kt`:
 
@@ -291,7 +291,7 @@ data class ToutiaoResponse(
             val url: String? = null
     )
 }
-``` 
+```
 
 Then create `NewsUtil.kt`:
 
