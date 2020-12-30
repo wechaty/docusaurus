@@ -1,6 +1,6 @@
 ---
 title: "java-wechaty auto get news"
-author: HarrisonQI
+author: harrisonqi
 categories: tutorial
 image: /assets/2020/HarrisonQI/2020-12-28-auto-push-news-banner.jpg
 ---
