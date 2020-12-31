@@ -1,8 +1,8 @@
 ---
 title: "dotnet wechaty Getting Start"
 author: jesn
+categories: tutorial
 tags:
-  - wechaty
   - dotnet wechaty
   - csharp wechaty
   - csharp
