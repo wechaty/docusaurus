@@ -26,13 +26,13 @@ image: /assets/2020/12-dotnet-wechaty/dotnet-wechaty.png
 
 新建一个.Net Core 3.1 控制台程序
 
-<img src="/assets/2020/dotnet-wechaty-getting-start/console-project.png"  alt="创建console控制台程序"/>
+![创建console控制台程序](/assets/2020/12-dotnet-wechaty/console-project.png)
 
 ### 添加Nuget包
 
 只需要引用Wechaty一个Nuget包即可，其他相关包会自动引入
 
-<img src="/assets/2020/dotnet-wechaty-getting-start/add-wechaty-nuget.png"  alt="添加Wechaty Nuget包"/>
+![添加Wechaty Nuget包](/assets/2020/12-dotnet-wechaty/add-wechaty-nuget.png)
 
 ### 6行代码运行一个Bot
 
@@ -157,6 +157,7 @@ namespace dotnet_wechaty_getting_start
 ## Join Wechaty
 
 ![Wechaty Friday.BOT QR Code](https://wechaty.js.org/img/friday-qrcode.svg)  
+
 口令：`wechaty`
 
 ## .NET Wechaty Contributors 招募
