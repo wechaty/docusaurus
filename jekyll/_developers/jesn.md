@@ -1,5 +1,5 @@
 ---
-name: Jesn
+name: Darren
 bio: Co-author of .NET Wechaty
 site: https://github.com/jesn
 avatar: /assets/developers/jesn/avatar.png
