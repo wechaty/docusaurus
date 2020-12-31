@@ -11,7 +11,7 @@ tags:
 
 ## .NET Wechaty框架介绍
 
-![.NET Wechaty](https://raw.githubusercontent.com/wechaty/dotnet-wechaty/master/docs/images/dotnet-wechaty.png)
+![.NET Wechaty](/assets/2020/12-dotnet-wechaty/dotnet-wechaty.png)
 
 .NET Wechaty 是使用.Net Core对TS版本Wechaty的翻译。
 
