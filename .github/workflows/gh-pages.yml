@@ -22,6 +22,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-modules
+          restore-keys: |
+            ${{ runner.os }}-node-
       - name: Install Dependencies
         run: make install
       - name: Test
@@ -43,6 +49,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-modules
+        restore-keys: |
+          ${{ runner.os }}-node-
     - name: Config Git
       run: |
         git config --global user.name 'Huan @ GitHub Action'
