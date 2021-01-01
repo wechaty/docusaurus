@@ -150,9 +150,9 @@ To get to know all our writers, see <https://github.com/wechaty/wechaty.js.org/g
 
 ## Maintainers
 
-1. @lijiarui, [Rui LI](https://github.com/lijiarui), Microsoft AI MVP, Founder & CEO of Juzi.BOT (YC W19 Alumni)
-1. @huan, [Huan LI](https://github.com/huan) ([李卓桓](http://linkedin.com/in/zixia)), Tencent TVP of Chatbot, \<zixia@zixia.net\>
-1. @wj-Mcat, [Jingjing WU](https://github.com/wj-Mcat/), Author of [Python Wechaty](https://github.com/wechaty/python-wechaty)
+1. [@lijiarui](https://github.com/lijiarui), [Rui LI](https://wechaty.js.org/developers/lijiarui), Microsoft AI MVP, Founder & CEO of Juzi.BOT (YC W19 Alumni)
+1. [@huan](https://github.com/huan), [Huan LI](https://wechaty.js.org/developers/huan), Tencent TVP of Chatbot, \<zixia@zixia.net\>
+1. [@wj-Mcat](https://github.com/wj-Mcat), [Jingjing WU](https://wechaty.js.org/developers/wj-mcat), Author of [Python Wechaty](https://github.com/wechaty/python-wechaty)
 
 And [wechaty/contributors](https://github.com/orgs/wechaty/teams/contributors/members)
 
