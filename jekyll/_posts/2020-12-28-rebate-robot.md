@@ -27,6 +27,7 @@ author: jiangxiaotao1024
 ### 消息模块：
 
 对收到的文本信息进行解析返回对应的信息，如果调用api无法识别商品id则不返回返利链接;如果识别到商品id，但没有优惠信息返回无优惠;如果有优惠信息返回返利链接；
+
 ![help](https://github.com/jiangxiaotao1024/wechaty.js.org/blob/robot/jekyll/assets/2020/rebate-robot/help.png)
 ![chaxun](https://github.com/jiangxiaotao1024/wechaty.js.org/blob/robot/jekyll/assets/2020/rebate-robot/chaxun.png)
 ![tixian](https://github.com/jiangxiaotao1024/wechaty.js.org/blob/robot/jekyll/assets/2020/rebate-robot/tixian.png)
