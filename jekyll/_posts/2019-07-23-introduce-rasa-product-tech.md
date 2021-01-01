@@ -1,5 +1,5 @@
 ---
-title: Rasa介绍 对话系统、产品与技术
+title: Rasa介绍：对话系统、产品与技术
 author: qhduan
 categories: event
 tags:
