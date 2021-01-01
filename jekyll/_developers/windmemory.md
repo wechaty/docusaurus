@@ -2,7 +2,7 @@
 name: Yuan GAO (高原)
 site: https://github.com/windmemory
 bio: Committer of Wechaty. Author of several wechaty-puppets. Co-founder & CTO of JuziBot
-avatar: https://avatars3.githubusercontent.com/u/6801292
+avatar: /assets/developers/windmemory/avatar.jpg
 email: wind.memory.cn@gmail.com
 twitter: https://www.weibo.com/u/2166731327
 github: https://github.com/windmemory

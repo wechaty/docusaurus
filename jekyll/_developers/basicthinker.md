@@ -1,10 +1,9 @@
 ---
 name: Jinglei Ren
-site: https://github.com/basicthinker
+site: https://persper.org
 avatar: /assets/developers/basicthinker/avatar.jpg
 bio: 
 email: jinglei@persper.org
-site: https://persper.org
 twitter: 
 ---
 
