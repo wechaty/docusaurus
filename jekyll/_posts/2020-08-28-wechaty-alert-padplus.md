@@ -1,8 +1,11 @@
 ---
 title: 基于Wechaty-IPAD协议的预警消息转发机器人
 author: wys0903
-date: 2020-08-31 11:25:47
 image: /assets/2020/alter-padplus/login.png
+categories:
+  - project
+tags:
+  - padplus
 ---
 
 ## ---wechaty-alert-padplus---

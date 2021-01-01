@@ -2,8 +2,10 @@
 title: 实现微信产品问题反馈群实时监控与问题自动录入
 author: tomallv
 categories: tutorial
+tags:
+  - issue
+  - padplus
 image: /assets/2020/issue-feedback-room-monitor/way.jpg
-
 ---
 
 ## 背景
