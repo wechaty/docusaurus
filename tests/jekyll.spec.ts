@@ -55,7 +55,7 @@ const getImageList = (filename: string): string[] => {
   const content = fs.readFileSync(filename).toString()
 
   // https://stackoverflow.com/a/37981325
-  const REGEXP = /!\[.*?\]\((.*?)\)\s/g
+  const REGEXP = /!\[.*?\]\((.*?)\)/g
 
   const imageList: string[] = []
 
@@ -285,11 +285,13 @@ test('developer project avatar should be put under assets/developers/ folder', a
 test.only('all images linked from the post should be stored local (in the repo) for preventing the 404 error in the future.', async t => {
   const URL_WHITE_LIST_REGEX = [
     /badge\.fury\.io/i,
+    /dockeri\.co\/image/i,
+    /github\.com\/.*\/workflows\//i,
     /herokucdn\.com/i,
     /img\.shields\.io/i,
-    /github\.com\/.*\/workflows\//i,
     /pepy\.tech\/badge/i,
     /sourcerer\.io/i,
+    /wechaty\.js\.org/i,
   ]
   const isNotWhiteList = (url: string) => !URL_WHITE_LIST_REGEX.some(regex => regex.test(url))
 
