@@ -1,7 +1,7 @@
 ---
 name: HarrisonQI
 site: https://www.bugcatt.com
-avatar: /assets/developers/harrisonqi/avatar.png
+avatar: /assets/developers/harrisonqi/avatar.jpg
 bio: 开源万岁!!
 email: harrisonqi@foxmail.com
 twitter: 
