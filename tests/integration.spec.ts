@@ -2,16 +2,7 @@
 
 import test  from 'tstest'
 
-import fs from 'fs'
-import path from 'path'
-import util from 'util'
-
-import probeImageSize from 'probe-image-size'
-import globCB from 'glob'
-
 import { prNumberToTitle } from '../src/pr-number-to-title'
-
-const glob = util.promisify(globCB)
 
 const isPR = require('is-pr')
 
@@ -29,44 +20,4 @@ test.skip('pull request title', async t => {
   } else {
     t.skip('skipped because this test is not ran from a pull request')
   }
-})
-
-test('', async t => {
-  t.skip('tbw')
-})
-
-test('', async t => {
-  t.skip('tbw')
-})
-
-test('', async t => {
-  t.skip('tbw')
-})
-
-test('', async t => {
-  t.skip('tbw')
-})
-
-test('', async t => {
-  t.skip('tbw')
-})
-
-test('', async t => {
-  t.skip('tbw')
-})
-
-test('', async t => {
-  t.skip('tbw')
-})
-
-test('', async t => {
-  t.skip('tbw')
-})
-
-test('', async t => {
-  t.skip('tbw')
-})
-
-test('', async t => {
-  t.skip('tbw')
 })
