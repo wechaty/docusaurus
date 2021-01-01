@@ -43,7 +43,6 @@
     "url": "https://github.com/wechaty/wechaty.js.org/issues"
   },
   "homepage": "https://github.com/wechaty/wechaty.js.org#readme",
-  "dependencies": {},
   "browserslist": {
     "production": [
       ">0.2%",
@@ -67,6 +66,7 @@
     "@types/glob": "^7.1.3",
     "@types/image-size": "^0.8.0",
     "@types/yaml": "^1.9.7",
+    "@types/yaml-front-matter": "^4.1.0",
     "clsx": "^1.1.1",
     "file-box": "^0.12.8",
     "git-scripts": "^0.4.3",
@@ -80,6 +80,7 @@
     "react-qr-svg": "^2.2.2",
     "tstest": "^0.4.10",
     "yaml": "^1.10.0",
+    "yaml-front-matter": "^4.1.1",
     "yaml-lint": "^1.2.4"
   },
   "git": {
