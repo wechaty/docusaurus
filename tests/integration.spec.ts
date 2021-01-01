@@ -31,28 +31,42 @@ test.skip('pull request title', async t => {
   }
 })
 
-test('image size should not more than 1MB', async t => {
-  const ASSET_FOLDER = path.join(
-    __dirname,
-    '../jekyll/assets'
-  )
+test('', async t => {
+  t.skip('tbw')
+})
 
-  const MAX_WIDTH = 1920         // HD
-  const MAX_SIZE  = 1024 * 1024  // 1MB
+test('', async t => {
+  t.skip('tbw')
+})
 
-  const fileList = await glob(`${ASSET_FOLDER}/**/*.{jpg,jpeg,png}`)
-  t.true(fileList.length > 0, 'should get image file list')
+test('', async t => {
+  t.skip('tbw')
+})
 
-  for (const file of fileList) {
-    const dim = await probeImageSize(fs.createReadStream(file))
-    const size = fs.statSync(file).size
+test('', async t => {
+  t.skip('tbw')
+})
 
-    const fit = dim.width <= MAX_WIDTH && size <= MAX_SIZE
-    t.true(fit, `${file.replace(/.*\//, '')} should not exceed the max limit: width: ${dim.width}, size: ${size}.`)
+test('', async t => {
+  t.skip('tbw')
+})
 
-    if (!fit) {
-      console.error(`use "./scripts/fit-image.sh <FILE>" to adjust it fit MAX_WIDTH: ${MAX_WIDTH} & MAX_SIZE: ${MAX_SIZE}`)
-    }
+test('', async t => {
+  t.skip('tbw')
+})
 
-  }
+test('', async t => {
+  t.skip('tbw')
+})
+
+test('', async t => {
+  t.skip('tbw')
+})
+
+test('', async t => {
+  t.skip('tbw')
+})
+
+test('', async t => {
+  t.skip('tbw')
 })
