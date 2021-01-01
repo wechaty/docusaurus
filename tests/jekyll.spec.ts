@@ -80,7 +80,7 @@ test('image size should be fit for the web (no more than 1MB and 1920x1080)', as
     const size = fs.statSync(file).size
 
     const fit = dim.width <= MAX_WIDTH && size <= MAX_SIZE
-    t.true(fit, `${file.replace(/.*\//, '')} should not exceed the max limit: width: ${dim.width}, size: ${size}.`)
+    t.true(fit, `"${stripRepoRoot(file)}" should not exceed the max limit: width: ${dim.width}, size: ${size}.`)
 
     if (!fit) {
       console.error(`use "scripts/fit-image.sh <FILE>" to adjust it fit MAX_WIDTH: ${MAX_WIDTH} & MAX_SIZE: ${MAX_SIZE}`)
@@ -121,12 +121,12 @@ test('filename only allow [a-z0-9-_.]', async t => {
 
   for (const filename of filenameList) {
     const ok = REGEX.test(filename)
-    t.true(ok, `${filename} contains all lowercase and no specicial characters`)
+    t.true(ok, `"${filename}" contains all lowercase and no specicial characters`)
   }
 })
 
 test('front matter key `tags` must contact at least one tag', async t => {
-  const postsFileList   = await glob(`${POSTS_FOLDER}/**/*`)
+  const postsFileList = await glob(`${POSTS_FOLDER}/**/*`)
 
   for (const file of postsFileList) {
     const content = fs.readFileSync(file)
@@ -135,7 +135,7 @@ test('front matter key `tags` must contact at least one tag', async t => {
     const tagCount = front.tags && Array.isArray(front.tags)
       ? front.tags.length
       : 0
-    t.true(tagCount, `${file} front matter: tags(${tagCount}) has at least one tag`)
+    t.true(tagCount, `"${stripRepoRoot(file)}" tags(${tagCount}) has at least one tag`)
   }
 })
 
@@ -171,10 +171,10 @@ test('front matter key `categories` must contains at lease one preset category',
         : []
     }
 
-    t.true(categoryList.length, `${file} front matter: categories(${categoryList.length}) has at lease one category`)
+    t.true(categoryList.length, `"${stripRepoRoot(file)}" categories(${categoryList.length}) has at lease one category`)
 
     const allPreset = categoryList.every(isPreset)
-    t.true(allPreset, `${file} categories(${categoryList.join(',')}) is in preset(${allPreset ? '...' : PRESET_CATEGORIES_LIST.join(',')})`)
+    t.true(allPreset, `"${stripRepoRoot(file)}" categories(${categoryList.join(',')}) is in preset(${allPreset ? '...' : PRESET_CATEGORIES_LIST.join(',')})`)
   }
 })
 
@@ -184,7 +184,7 @@ test('files in `_posts/` must have name prefix with `YYYY-MM-DD-`', async t => {
 
   for (const filename of postsFileList) {
     const good = REGEX.test(filename)
-    t.true(good, `${filename} have name started with YYYY-MM-DD-`)
+    t.true(good, `"${filename}" have name started with YYYY-MM-DD-`)
   }
 })
 
@@ -199,7 +199,7 @@ test('files in `_posts/` must contain at least three slugs connected by dash aft
     const slugList = name.split('-')
     const good = slugList.length >= 3
 
-    t.true(good, `${filename.replace(POSTS_FOLDER + '/', '')} have at least 3 slugs`)
+    t.true(good, `"${filename.replace(POSTS_FOLDER + '/', '')}" have at least 3 slugs`)
   }
 })
 
@@ -209,7 +209,7 @@ test('files in `_posts/` must end with `.md` file extension', async t => {
 
   for (const filename of postsFileList) {
     const good = REGEX.test(filename)
-    t.true(good, `${filename} end with .md`)
+    t.true(good, `"${stripRepoRoot(filename)}" end with .md`)
   }
 })
 
@@ -220,11 +220,11 @@ test('front matter key `author` should has a value exist in jekyll/_developers/_
     const content = fs.readFileSync(file)
     const front = loadFront(content)
     const author = front.author
-    t.true(author, `${stripRepoRoot(file)} author has been set to ${author}`)
+    t.true(author, `"${stripRepoRoot(file)}" author has been set to ${author}`)
 
     const authorFile = path.join(JEKYLL_ROOT, '_developers', author + '.md')
     const good = fs.existsSync(authorFile)
-    t.true(good, `${stripRepoRoot(file)} author profile at ${stripRepoRoot(authorFile)}`)
+    t.true(good, `"${stripRepoRoot(file)}" author profile at ${stripRepoRoot(authorFile)}`)
   }
 })
 
@@ -236,7 +236,7 @@ test('developer profile file (jekyll/_developers/__AUTHOR__.md) filename must ma
 
   for (const filename of nameList) {
     const good = REGEX.test(filename)
-    t.true(good, `${filename} is match ${REGEX}`)
+    t.true(good, `"${filename}" is match ${REGEX}`)
   }
 })
 
@@ -259,7 +259,7 @@ test('front matter key `image` must has a value to define the teaser image', asy
     const content = fs.readFileSync(file)
     const front = loadFront(content)
     const image = front.image
-    t.true(image, `${stripRepoRoot(file)} front matter: image(${image}) has been set`)
+    t.true(image, `"${stripRepoRoot(file)}" image(${image}) has been set`)
   }
 })
 
@@ -270,7 +270,7 @@ test('developer project avatar should be put under assets/developers/ folder', a
     const content = fs.readFileSync(file)
     const front   = loadFront(content)
 
-    t.true(front.avatar, `${stripRepoRoot(file)} should have avatar(${front.avatar})`)
+    t.true(front.avatar, `"${stripRepoRoot(file)}" should have avatar("${front.avatar}")`)
 
     if (/^http/i.test(front.avatar)) {
       t.fail(`${stripRepoRoot(file)} should put avatar files to local repo instead of using URL`)
@@ -282,7 +282,7 @@ test('developer project avatar should be put under assets/developers/ folder', a
   }
 })
 
-test.only('all images linked from the post should be stored local (in the repo) for preventing the 404 error in the future.', async t => {
+test('all images linked from the post should be stored local (in the repo) for preventing the 404 error in the future.', async t => {
   const URL_WHITE_LIST_REGEX = [
     /badge\.fury\.io/i,
     /dockeri\.co\/image/i,
@@ -348,7 +348,7 @@ test('all asset files should be put into folder `/assets/YYYY/MM-slug-slug-slug/
 
     for (const imageFile of [...teaserList, ...imageList]) {
       const good = imageFile.includes(expectedFolder)
-      t.true(good, `${imageFile} from ${stripRepoRoot(filename)} should be save to ${expectedFolder}/`)
+      t.true(good, `"${imageFile}" from "${stripRepoRoot(filename)}" should be save to "${expectedFolder}/"`)
     }
   }
 
