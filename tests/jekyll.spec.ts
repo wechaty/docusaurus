@@ -55,7 +55,7 @@ const getImageList = (filename: string): string[] => {
   const content = fs.readFileSync(filename).toString()
 
   // https://stackoverflow.com/a/37981325
-  const REGEXP = /!\[.*?\]\((.*)\)\s/g
+  const REGEXP = /!\[.*?\]\((.*?)\)\s/g
 
   const imageList: string[] = []
 
@@ -283,6 +283,16 @@ test('developer project avatar should be put under assets/developers/ folder', a
 })
 
 test.only('all images linked from the post should be stored local (in the repo) for preventing the 404 error in the future.', async t => {
+  const URL_WHITE_LIST_REGEX = [
+    /badge\.fury\.io/i,
+    /herokucdn\.com/i,
+    /img\.shields\.io/i,
+    /github\.com\/.*\/workflows\//i,
+    /pepy\.tech\/badge/i,
+    /sourcerer\.io/i,
+  ]
+  const isNotWhiteList = (url: string) => !URL_WHITE_LIST_REGEX.some(regex => regex.test(url))
+
   const postsFileList      = await glob(`${POSTS_FOLDER}/*.md`)
   const developersFileList = await glob(`${DEVELOPERS_FOLDER}/*.md`)
 
@@ -298,7 +308,7 @@ test.only('all images linked from the post should be stored local (in the repo) 
     ...postsFileList.map(getTeaserList).flat(),
     ...postsFileList.map(getImageList).flat(),
     ...developersFileList.map(getAvatarList).flat(),
-  ]
+  ].filter(isNotWhiteList)
 
   for (const image of allImageList) {
     if (/^http/i.test(image)) {
