@@ -1,6 +1,6 @@
 ---
 title: "基于Wechaty开发的群聊小助手"
-author: Penley
+author: mumup
 categories: project
 tags:
   - nodejs
