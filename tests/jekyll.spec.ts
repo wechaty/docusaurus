@@ -29,7 +29,7 @@ const ASSETS_FOLDER     = path.join(JEKYLL_ROOT, 'assets')
 const DEVELOPERS_FOLDER = path.join(JEKYLL_ROOT, '_developers')
 const POSTS_FOLDER      = path.join(JEKYLL_ROOT, '_posts')
 
-test.skip('image size should be fit for the web (no more than 1MB and 1920x1080)', async t => {
+test('image size should be fit for the web (no more than 1MB and 1920x1080)', async t => {
   const MAX_WIDTH = 1920         // HD
   const MAX_SIZE  = 1024 * 1024  // 1MB
 
@@ -65,7 +65,7 @@ test('folder _developers/ and _posts/ has been moved to `jekyll/` (e.g. _posts/ 
  * Issue #585: Blog post author should be all lowercase #585
  *  https://github.com/wechaty/wechaty.js.org/issues/585
  */
-test.skip('filename only allow [a-z0-9-_.]', async t => {
+test('filename only allow [a-z0-9-_.]', async t => {
   const REGEX = /^[a-z0-9/_.-]+$/
   const WHITE_LIST_REGEX_LIST = [
     new RegExp('/assets/js/viewer-js'),
@@ -87,7 +87,7 @@ test.skip('filename only allow [a-z0-9-_.]', async t => {
   }
 })
 
-test.only('front matter key `tags` must contact at least one tag', async t => {
+test('front matter key `tags` must contact at least one tag', async t => {
   const postsFileList   = await glob(`${POSTS_FOLDER}/**/*`)
 
   for (const file of postsFileList) {
@@ -101,15 +101,42 @@ test.only('front matter key `tags` must contact at least one tag', async t => {
   }
 })
 
-test('front matter key `categories` must contact one and only one category', async t => {
+test.only('front matter key `categories` must contains at lease one category', async t => {
+  const PRESET_CATEGORIES_LIST = [
+    'announcement',
+    'article',
+    'event',
+    'feature',
+    'fun',
+    'hacking',
+    'interview',
+    'migration',
+    'npm',
+    'project',
+    'shop',
+    'story',
+    'talk',
+    'tutorial',
+  ]
+  const isPreset = (category: string) => PRESET_CATEGORIES_LIST.includes(category)
+
   const postsFileList   = await glob(`${POSTS_FOLDER}/**/*`)
 
   for (const file of postsFileList) {
-    const content = fs.readFileSync(file)
-    const front = loadFront(content)
+    const content       = fs.readFileSync(file)
+    const front         = loadFront(content)
 
-    const ok = front.categories && Array.isArray(front.categories) && front.tags.length === 1
-    t.true(ok, `${file} front matter: categories has one category`)
+    let categoryList  = front.categories
+    if (!Array.isArray(categoryList)) {
+      categoryList = categoryList
+        ? [categoryList]
+        : []
+    }
+
+    t.true(categoryList.length, `${file} front matter: categories(${categoryList.length}) has at lease one category`)
+
+    const allPreset = categoryList.every(isPreset)
+    t.true(allPreset, `${file} categories(${categoryList.join(',')}) is in preset(${allPreset ? '...' : PRESET_CATEGORIES_LIST.join(',')})`)
   }
 })
 

@@ -1,6 +1,7 @@
 ---
 title: "用「Wechaty」和「微信对话开放平台」做个助理"
 author: windmemory
+categories: tutorial
 tags: 
   - openai
   - talk

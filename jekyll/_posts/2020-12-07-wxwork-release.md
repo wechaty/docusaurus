@@ -4,7 +4,7 @@ author: lijiarui
 categories: announcement
 tags:
   - news
-  - puppet-service-provider
+  - Puppet Service Provider
   - wxwork
 image: /assets/2020/12-07-wxwork/wecom.png
 ---

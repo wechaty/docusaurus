@@ -2,12 +2,13 @@
 title: "New Wechaty Puppet Service: PadLocal"
 author: padlocal
 image: /assets/2020/padlocal/logo.png
-categories: puppet-service-providers
+categories: announcement
 tags:
   - news
   - wechaty
   - puppet
   - padlocal
+  - Puppet Service Provider
   - wechaty-puppet-padlocal
 ---
 

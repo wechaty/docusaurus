@@ -2,6 +2,7 @@
 title: "基于Python-wechaty建立一个斗图机器人 POC 结项博客"
 author: godkillerxiao
 image: /assets/2020/meme-bot/09-27-wechaty-meme-bot-0001.png
+categories: project
 tags:
   - python
   - soc

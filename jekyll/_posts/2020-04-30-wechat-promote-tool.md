@@ -1,6 +1,7 @@
 ---
 title: "如何用Wechaty打造一个推广机器人"
 author: legendaryjesse
+categories: project
 tags:
    - wechaty
 image:  /assets/2020/promote-bot/banner.png

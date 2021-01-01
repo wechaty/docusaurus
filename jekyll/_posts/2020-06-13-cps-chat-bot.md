@@ -2,8 +2,7 @@
 title: "CPS chat bot"
 author: wss793062366
 image: /assets/2020/cps-chat-bot/goodsmsg.jpeg
-categories:
-  - project
+categories: project
 tags:
   - retail
 ---

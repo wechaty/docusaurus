@@ -1,8 +1,8 @@
 ---
 title: Wechaty bot in Java to sync group messages
 author: charles-wu-chen
-date: 2020-10-26
 image: /assets/2020/java-group-message-sync-bot/wechaty-java.png
+categories: project
 tags:
   - wechaty
   - java
