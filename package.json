@@ -1,7 +1,7 @@
 {
   "name": "wechaty.js.org",
-  "version": "0.6.84",
-  "description": "Wechaty Homepage",
+  "version": "0.6.96",
+  "description": "Wechaty Official Website for News, Blogs, Developer Profiles, and Documentations",
   "private": true,
   "directories": {
     "doc": "docs"
