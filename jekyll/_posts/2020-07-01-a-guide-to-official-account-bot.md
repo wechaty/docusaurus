@@ -2,6 +2,7 @@
 title: "使用wechaty助力公众号主维护社群"
 author: sl1673495
 image: /assets/2020/wechat-official-helper/teaser.png
+categories: project
 tags:
   - wechatOA
 ---

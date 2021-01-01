@@ -1,9 +1,8 @@
 ---
 title: "基于Wechaty打造智能聊天机器人(一)"
-author: 陈志鹏
+author: evilbt
 image: /assets/2020/wechaty-group-chat-robot/demo.jpg
-email: chenzhipeng505613@gmail.com
-site: https://github.com/EvilBT
+categories: project
 tags:
   - wechaty
   - wechaty-puppet-padplus

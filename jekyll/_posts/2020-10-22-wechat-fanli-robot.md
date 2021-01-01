@@ -2,6 +2,7 @@
 title: "基于wechaty实现的微信机器人，根据淘口令生成高佣转链接，并创建新的淘口令。"
 author: henry
 image: /assets/2020/wechat-fanli-robot/weixin.png
+categories: project
 tags:
   - Nodejs
   - TypeScript
