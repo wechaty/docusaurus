@@ -17,11 +17,11 @@ author: jiangxiaotao1024
 ### 同意好友请求后设置该好友备注为wxid，方便后期查找
 ## 消息模块：
 ### 对收到的文本信息进行解析返回对应的信息，如果调用api无法识别商品id则不返回返利链接;如果识别到商品id，但没有优惠信息返回无优惠;如果有优惠信息返回返利链接；
-![help](/assets/2020/fanlirobot/help.png)
-![chaxun](/assets/2020/fanlirobot/chaxun.png)
-![tixian](/assets/2020/fanlirobot/tixian.png)
-![zhuanqian](/assets/2020/fanlirobot/zhuanqian.jpg)
-![taokouling](/assets/2020/fanlirobot/taokouling.png)
+![help](../assets/2020/fanlirobot/help.png)
+![chaxun](../assets/2020/fanlirobot/chaxun.png)
+![tixian](../assets/2020/fanlirobot/tixian.png)
+![zhuanqian](../assets/2020/fanlirobot/zhuanqian.jpg)
+![taokouling](..//assets/2020/fanlirobot/taokouling.png)
 ## 订单查询模块：
 ### 登录后出发10s定时器，每隔10s查询这段时间的订单交易信息，解析出支付成功订单的优惠信息以及pid，根据pid查询对应的wxid，对该wxid用户发送预计佣金信息。对支付成功订单给该用户返回佣金信息，并按照比例，同时对上级，上上级返回返利信息。
 代码路径：https://github.com/jiangxiaotao1024/wechaty.git
