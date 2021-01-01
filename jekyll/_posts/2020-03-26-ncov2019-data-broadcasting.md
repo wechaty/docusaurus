@@ -1,8 +1,7 @@
 ---
 title: "nCoV2019疫情播报"  
 author: zjacai
-categories:
-  - project
+categories: project
 tags:
   - typescript
   - bupt

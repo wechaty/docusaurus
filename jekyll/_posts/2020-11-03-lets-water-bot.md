@@ -1,7 +1,7 @@
 ---
 title: "node-wechaty let's water"
 author: wanglei158
-categories: app
+categories: project
 tags:
   - room
   - wechaty

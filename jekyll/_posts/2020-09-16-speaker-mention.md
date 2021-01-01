@@ -2,6 +2,7 @@
 title: "微信群过于频繁提醒功能"
 author: chianquan
 image: /assets/2020/wechaty-speaker-mention/speaker-mention.png
+categories: project
 tags:
   - wechaty
   - nodejs

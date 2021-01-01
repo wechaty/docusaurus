@@ -1,7 +1,7 @@
 ---
 title: "Wechaty - the missing bot SDK for WeChat"
 author: dcsan
-categories: article
+categories: story
 tags:
   - api
   - unofficial
