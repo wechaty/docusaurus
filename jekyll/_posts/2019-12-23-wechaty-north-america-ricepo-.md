@@ -1,6 +1,6 @@
 ---
 title: "RICEPO北美地道中餐外卖"
-author: RICEPO LLC
+author: areigna
 categories: event
 tags:
   - meetup
