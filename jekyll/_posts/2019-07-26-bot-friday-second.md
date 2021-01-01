@@ -75,7 +75,7 @@ NLP技术到底哪家强？
     overflow:hidden;
 ">
   <iframe
-    src='{{ '/assets/js/viewer-js/#/assets/2019/bot5-seminar-2/chatbot-experience-limingth.pdf' | relative_url }}'
+    src='/assets/js/viewer-js/#/assets/2019/bot5-seminar-2/chatbot-experience-limingth.pdf'
     width='560'
     height='315'
     allowfullscreen
@@ -114,7 +114,7 @@ NLP技术到底哪家强？
     overflow:hidden;
 ">
   <iframe
-    src='{{ '/assets/js/viewer-js/#/assets/2019/bot5-seminar-2/find-my-face-creatorkuang.pdf' | relative_url }}'
+    src='/assets/js/viewer-js/#/assets/2019/bot5-seminar-2/find-my-face-creatorkuang.pdf'
     width='560'
     height='315'
     allowfullscreen
@@ -228,13 +228,13 @@ NLP技术到底哪家强？
 
 ## 集体合影
 
-![合照]({{ '/assets/2019/bot5-seminar-2/group-photo.png' | relative_url }})
+![合照](/assets/2019/bot5-seminar-2/group-photo.png)
 
-![所有人]({{ '/assets/2019/bot5-seminar-2/people.png' | relative_url }})
+![所有人](/assets/2019/bot5-seminar-2/people.png)
 
 ## After Party 🍻
 
-![After Party]({{ '/assets/2019/bot5-seminar-2/after-party.png' | relative_url }})
+![After Party](/assets/2019/bot5-seminar-2/after-party.png)
 
 主场活动结束后，六个人前往上次After Party的管氏串吧继续补充能量，大家讨论了创业，社区，技术，招聘等一系列问题，并成功的消灭了3炮鲜啤！
 

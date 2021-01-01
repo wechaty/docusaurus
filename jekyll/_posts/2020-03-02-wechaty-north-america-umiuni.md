@@ -16,7 +16,7 @@ image: /assets/2020/umiuni/icon.png
 * Wechaty 的 技术实现
 * Umiuni+Wechaty 的将来发展
 
-![UmiUni]({{ '/assets/2020/umiuni/icon.png' | relative_url }})
+![UmiUni](/assets/2020/umiuni/icon.png)
 
 ## UmiUni -- 北美留学生自己的校园生活圈子
 
@@ -61,7 +61,7 @@ Umiuni 目前主要依托于用户登录小程序或app来发布，搜索自己�
 
 因此我们使用Wechaty 的微信机器人用以提升整体效率
 
-![UmiUni]({{ '/assets/2020/umiuni/architecture.png' | relative_url }})
+![UmiUni](/assets/2020/umiuni/architecture.png)
 
 上图为umiuni的新架构设计，具体创新点如下：
 
