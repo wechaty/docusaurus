@@ -1,7 +1,7 @@
 ---
 title: "Wechaty Workshop for Puppet Makers: How to make a Puppet for Wechaty"
 author: rickyyin98
-categories: events
+categories: event
 tags:
   - wechaty
   - puppet

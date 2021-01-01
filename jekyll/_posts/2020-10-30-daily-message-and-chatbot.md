@@ -2,6 +2,7 @@
 title: "基于wechaty的定时消息推送（可以哄女朋友）、智能聊天和私人助理"
 author: jasonlovesharon
 email: 54027901@163.com
+categories: project
 tags:
   - nodejs
   - wechaty

@@ -2,8 +2,7 @@
 title: "Wechaty琅琊榜问世，征集全站ChatBot"
 author: liqian
 published: false
-categories:
-  - event
+categories: event
 tags:
   - juzi
 ---

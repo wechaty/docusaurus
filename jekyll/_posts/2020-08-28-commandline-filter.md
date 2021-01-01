@@ -2,8 +2,7 @@
 title: "简易命令行控制的「微信机器人」及群聊信息过滤实现"
 author: raymondjiangkw
 image: /assets/2020/commandline-filter/logo.png
-categories:
-  - project
+categories: project
 tags:
   - javascript
 ---

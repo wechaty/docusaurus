@@ -2,8 +2,7 @@
 title: 基于Wechaty的群学习内容推送工具
 author: gileswong
 image: /assets/2020/wechaty-xiaowang-learning-tool/teaser.jpg
-categories:
-  - project
+categories: project
 tags:
   - typescript
 ---

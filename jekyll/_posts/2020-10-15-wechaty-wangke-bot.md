@@ -2,6 +2,7 @@
 title: "基于wechaty开发网课答案查询机器人"
 author: hurely
 image: /assets/2020/wangke-bot/banner.jpg
+categories: project
 tags:
   - wechaty
   - puppet
