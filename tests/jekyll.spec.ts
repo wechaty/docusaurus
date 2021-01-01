@@ -29,6 +29,45 @@ const ASSETS_FOLDER     = path.join(JEKYLL_ROOT, 'assets')
 const DEVELOPERS_FOLDER = path.join(JEKYLL_ROOT, '_developers')
 const POSTS_FOLDER      = path.join(JEKYLL_ROOT, '_posts')
 
+const stripRepoRoot = (filename: string) => filename.replace(REPO_ROOT + '/', '')
+const getDate = (filename: string) => {
+  const matches = filename.match(/\/(\d\d\d\d)-(\d\d)-\d\d-/)
+  if (!matches) {
+    throw new Error(`${filename} parse month fail!`)
+  }
+  return {
+    month : matches[2],
+    year  : matches[1],
+  }
+}
+
+const getTeaserList = (filename: string): string[] => {
+  const content = fs.readFileSync(filename)
+  const front   = loadFront(content)
+
+  if (front.image) {
+    return [front.image]
+  }
+  return []
+}
+
+const getImageList = (filename: string): string[] => {
+  const content = fs.readFileSync(filename).toString()
+
+  // https://stackoverflow.com/a/37981325
+  const REGEXP = /!\[.*?\]\((.*)\)\s/g
+
+  const imageList: string[] = []
+
+  let matches = REGEXP.exec(content)
+  while (matches != null) {
+    imageList.push(matches[1])
+    matches = REGEXP.exec(content)
+  }
+
+  return imageList
+}
+
 test('image size should be fit for the web (no more than 1MB and 1920x1080)', async t => {
   const MAX_WIDTH = 1920         // HD
   const MAX_SIZE  = 1024 * 1024  // 1MB
@@ -74,7 +113,6 @@ test('filename only allow [a-z0-9-_.]', async t => {
   const assetsFileList  = await glob(`${ASSETS_FOLDER}/**/*`)
   const postsFileList   = await glob(`${POSTS_FOLDER}/**/*`)
 
-  const stripRepoRoot  = (filename: string) => filename.replace(REPO_ROOT + '/', '')
   const isNotWhiteList = (filename: string) => WHITE_LIST_REGEX_LIST.every(regex => !regex.test(filename))
 
   const filenameList = [...assetsFileList, ...postsFileList]
@@ -101,7 +139,7 @@ test('front matter key `tags` must contact at least one tag', async t => {
   }
 })
 
-test.only('front matter key `categories` must contains at lease one category', async t => {
+test('front matter key `categories` must contains at lease one preset category', async t => {
   const PRESET_CATEGORIES_LIST = [
     'announcement',
     'article',
@@ -161,7 +199,7 @@ test('files in `_posts/` must contain at least three slugs connected by dash aft
     const slugList = name.split('-')
     const good = slugList.length >= 3
 
-    t.true(good, `${name} have at least 3 slugs`)
+    t.true(good, `${filename.replace(POSTS_FOLDER + '/', '')} have at least 3 slugs`)
   }
 })
 
@@ -176,26 +214,27 @@ test('files in `_posts/` must end with `.md` file extension', async t => {
 })
 
 test('front matter key `author` should has a value exist in jekyll/_developers/__VALUE__.md file', async t => {
-  const postsFileList   = await glob(`${POSTS_FOLDER}/**/*`)
+  const postsFileList = await glob(`${POSTS_FOLDER}/**/*`)
 
   for (const file of postsFileList) {
     const content = fs.readFileSync(file)
     const front = loadFront(content)
     const author = front.author
-    t.true(author, `${file} front matter: author has been set`)
+    t.true(author, `${stripRepoRoot(file)} author has been set to ${author}`)
 
     const authorFile = path.join(JEKYLL_ROOT, '_developers', author + '.md')
     const good = fs.existsSync(authorFile)
-    t.true(good, `${file} author profile found`)
+    t.true(good, `${stripRepoRoot(file)} author profile at ${stripRepoRoot(authorFile)}`)
   }
 })
 
 test('developer profile file (jekyll/_developers/__AUTHOR__.md) filename must match /[a-z0-9_-.]+/', async t => {
-  const REGEX = /^[a-z0-9_-.]+$/
+  const REGEX = new RegExp('/[a-z0-9_.-]+.md$')
 
   const developersFileList = await glob(`${DEVELOPERS_FOLDER}/**/*`)
+  const nameList = developersFileList.map(stripRepoRoot)
 
-  for (const filename of developersFileList) {
+  for (const filename of nameList) {
     const good = REGEX.test(filename)
     t.true(good, `${filename} is match ${REGEX}`)
   }
@@ -209,15 +248,67 @@ test('front matter key `image` must has a value to define the teaser image', asy
   const postsFileList   = await glob(`${POSTS_FOLDER}/**/*`)
 
   for (const file of postsFileList) {
+    const { year } = getDate(file)
+    /**
+     * Huan(202101): We leave the posts before 2021 as it is
+     */
+    if (parseInt(year) < 2021) {
+      continue
+    }
+
     const content = fs.readFileSync(file)
     const front = loadFront(content)
     const image = front.image
-    t.true(image, `${file} front matter: image(${image}) has been set`)
+    t.true(image, `${stripRepoRoot(file)} front matter: image(${image}) has been set`)
   }
 })
 
-test('all images linked from the post should be stored local (in the repo) for preventing the 404 error in the future.', async t => {
-  t.skip('tbw')
+test('developer project avatar should be put under assets/developers/ folder', async t => {
+  const developersFileList = await glob(`${DEVELOPERS_FOLDER}/*.md`)
+
+  for (const file of developersFileList) {
+    const content = fs.readFileSync(file)
+    const front   = loadFront(content)
+
+    t.true(front.avatar, `${stripRepoRoot(file)} should have avatar(${front.avatar})`)
+
+    if (/^http/i.test(front.avatar)) {
+      t.fail(`${stripRepoRoot(file)} should put avatar files to local repo instead of using URL`)
+    } else {
+      const filename = path.join(JEKYLL_ROOT, front.avatar)
+      const good = fs.existsSync(filename)
+      t.true(good, `${stripRepoRoot(filename)} should exist`)
+    }
+  }
+})
+
+test.only('all images linked from the post should be stored local (in the repo) for preventing the 404 error in the future.', async t => {
+  const postsFileList      = await glob(`${POSTS_FOLDER}/*.md`)
+  const developersFileList = await glob(`${DEVELOPERS_FOLDER}/*.md`)
+
+  const getAvatarList = (file: string): string[] => {
+    const front = loadFront(fs.readFileSync(file))
+    if (front.avatar) {
+      return [front.avatar]
+    }
+    return []
+  }
+
+  const allImageList = [
+    ...postsFileList.map(getTeaserList).flat(),
+    ...postsFileList.map(getImageList).flat(),
+    ...developersFileList.map(getAvatarList).flat(),
+  ]
+
+  for (const image of allImageList) {
+    if (/^http/i.test(image)) {
+      t.fail(`"${image}" should put image files to local repo instead of using URL`)
+    } else {
+      const filename = path.join(JEKYLL_ROOT, image)
+      const good = fs.existsSync(filename)
+      t.true(good, `"${image}" should exist`)
+    }
+  }
 })
 
 test('all asset files should be put into folder `/assets/YYYY/MM-slug-slug-slug/` (slugs should be the same as the post)', async t => {
@@ -225,8 +316,16 @@ test('all asset files should be put into folder `/assets/YYYY/MM-slug-slug-slug/
 
   for (const filename of postsFileList) {
     const { year, month } = getDate(filename)
+
+    /**
+     * Huan(202101): do not check paths before 2021
+     */
+    if (parseInt(year) < 2021) {
+      continue
+    }
+
     const slugs           = getSlugs(filename)
-    const teaser          = getTeaser(filename)
+    const teaserList      = getTeaserList(filename)
     const imageList       = getImageList(filename)
 
     const expectedFolder = path.join(
@@ -235,44 +334,17 @@ test('all asset files should be put into folder `/assets/YYYY/MM-slug-slug-slug/
       `${month}-${slugs}`,
     )
 
-    for (const imageFile of [teaser, ...imageList]) {
+    for (const imageFile of [...teaserList, ...imageList]) {
       const good = imageFile.includes(expectedFolder)
-      t.true(good, `${imageFile} in ${filename} is in ${expectedFolder} folder`)
-    }
-  }
-
-  function getDate (filename: string) {
-    const matches = filename.match(/^(\d\d\d\d)-(\d\d)-\d\d-/)
-    if (!matches) {
-      throw new Error(`${filename} parse month fail!`)
-    }
-    return {
-      month : matches[2],
-      year  : matches[1],
+      t.true(good, `${imageFile} from ${stripRepoRoot(filename)} should be save to ${expectedFolder}/`)
     }
   }
 
   function getSlugs (filename: string): string {
-    const matches = filename.match(/^\d\d\d\d-\d\d-\d\d-(.+)\.md/)
+    const matches = filename.match(/\/\d\d\d\d-\d\d-\d\d-(.+)\.md$/)
     if (!matches) {
       throw new Error(`${filename} parse slugs fail`)
     }
     return matches[1]
-  }
-
-  function getTeaser (filename: string): string {
-    const content = fs.readFileSync(filename)
-    const front   = loadFront(content)
-
-    if (!front.image) {
-      throw new Error(`${filename} has no teaser!`)
-    }
-    return front.image
-  }
-
-  function getImageList (filename: string): string[] {
-    void filename
-    // TODO(huan Jan 1, 2021): get all the image files in markdown content
-    return []
   }
 })
