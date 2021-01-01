@@ -1,7 +1,7 @@
 ---
 title: "微信App通信协议案例学习参考指南"
 author: h4dex
-categories: hack
+categories: hacking
 tags:
   - hook
   - featured

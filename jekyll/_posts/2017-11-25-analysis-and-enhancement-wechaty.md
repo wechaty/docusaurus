@@ -1,7 +1,7 @@
 ---
 title: "解析WebWxApp代码来增强wechaty功能（一）"
 author: binsee
-categories: hack
+categories: hacking
 tags:
   - code
   - featured

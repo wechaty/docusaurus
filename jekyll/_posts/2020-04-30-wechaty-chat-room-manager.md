@@ -1,6 +1,7 @@
 ---
 title: "微信群管辅助"
 author: tianyugeng
+categories: project
 tags:
    - wechaty
 image: /assets/2020/room-manager/bio-photo.png
