@@ -2,6 +2,10 @@
 title: "简易命令行控制的「微信机器人」及群聊信息过滤实现"
 author: raymondjiangkw
 image: /assets/2020/commandline-filter/logo.png
+categories:
+  - project
+tags:
+  - javascript
 ---
 
 生活中学校通知信息都会借助微信群聊发布，并且时常会要求“收到请回复”。这就导致了少数重要信息与大量无关信息混杂在一起，屏蔽与不屏蔽都不是好办法。遂实现了命令行控制的「微信机器人」，并在此基础上完成了群聊信息过滤功能。
