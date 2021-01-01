@@ -16,7 +16,7 @@ image: /assets/2019/wechaty-ricepo/logo.png
 * Wechaty+SQS整体架构
 * Wechaty使用遇到问题以及解决方案
 
-![RICEPO]({{ '/assets/2019/wechaty-ricepo/ricepo.png' | relative_url }})
+![RICEPO](/assets/2019/wechaty-ricepo/ricepo.png)
 
 ## RICEPO简介
 
@@ -49,10 +49,10 @@ Wechaty可以几乎完美解决以上所有问题，
 * 老板查看微信频次高，不容易错过订单
 * 无需打印，无需设备，使用成本低
 
-![RICEPO]({{ '/assets/2019/wechaty-ricepo/wechat.png' | relative_url }})
+![RICEPO](/assets/2019/wechaty-ricepo/wechat.png)
 文字+链接发送实时订单
 
-![RICEPO]({{ '/assets/2019/wechaty-ricepo/order.png' | relative_url }})
+![RICEPO](/assets/2019/wechaty-ricepo/order.png)
 查看订单详情，一键确认
 
 除此之外，Wechaty还可以实现饭店公告的功能。
@@ -75,7 +75,7 @@ RICEPO的wechaty使用的是[wechaty-puppet-padplus](https://github.com/botorang
   * 若未登陆，会将登陆二维码发送至对应的channel
   * 若扫码登陆成功，发送一条登陆成功的消息至对应的channel
 
-![RICEPO]({{ '/assets/2019/wechaty-ricepo/slack.png' | relative_url }})
+![RICEPO](/assets/2019/wechaty-ricepo/slack.png)
 
 ## Wechaty使用遇到问题以及解决方案
 

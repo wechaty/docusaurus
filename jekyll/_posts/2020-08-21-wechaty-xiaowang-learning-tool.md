@@ -29,7 +29,8 @@ tags:
 
 ## 功能示例
 
-![英语每日一题](/assets/2020/wechaty-xiaowang-learning-tool/img-4425.jpg)![每日早报](/assets/2020/wechaty-xiaowang-learning-tool/img-4418.jpg)
+![英语每日一题](/assets/2020/wechaty-xiaowang-learning-tool/img-4425.jpg)
+![每日早报](/assets/2020/wechaty-xiaowang-learning-tool/img-4418.jpg)
 
 ## 项目结构
 

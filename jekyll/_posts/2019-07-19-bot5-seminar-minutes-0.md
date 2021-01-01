@@ -58,7 +58,7 @@ image: /assets/2019/bot5-seminar-0/group-photo.jpg
     overflow:hidden;
 ">
   <iframe
-    src='{{ '/assets/js/viewer-js/#/assets/2019/bot5-seminar-0/rasa-core-qhduan.pdf' | relative_url }}'
+    src='/assets/js/viewer-js/#/as/2019/bot5-seminar-0/rasa-core-qhduan.pdf'
     width='560'
     height='315'
     allowfullscreen
@@ -177,11 +177,11 @@ Our Vision: Became the hottest place for a Friday night out with the chatbots! T
 
 ### 5 集体合影
 
-![合照]({{ '/assets/2019/bot5-seminar-0/group-photo.jpg' | relative_url }})
+![合照](/assets/2019/bot5-seminar-0/group-photo.jpg)
 
 ## After Party 🍻
 
-![After Party]({{ '/assets/2019/bot5-seminar-0/after-party.jpg' | relative_url }})
+![After Party](/assets/2019/bot5-seminar-0/after-party.jpg)
 
 Bot Friday Zero 主场活动结束后，意(ji)犹(chang)未(lu)尽(lu)的三个人前往第三极大厦十字路口对面的管氏串吧继续补充能量，大家一起头脑风暴了活动的参加人员、可持续性发展、讨论主题，以及活动名称等，并成功的消灭了4L鲜啤。
 
