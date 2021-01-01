@@ -1,6 +1,6 @@
 ---
 title: "Wechaty琅琊榜问世，征集全站ChatBot"
-author: liqian
+author: lijiarui
 published: false
 categories: event
 tags:
