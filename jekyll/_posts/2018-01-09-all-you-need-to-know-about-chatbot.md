@@ -1,6 +1,6 @@
 ---
 title: "关于聊天机器人你需要知道的东西"
-author: Wang Yan
+author: bukaqiaqia
 categories: event
 tags:
   - datagirls
