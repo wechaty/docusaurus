@@ -1,6 +1,6 @@
 ---
 title: "用wechaty制作返利机器人"
-author: jiangxiaotao1024
+author: yoke
 ---
 
 ## 用wechaty制作返利机器人
@@ -37,5 +37,3 @@ author: jiangxiaotao1024
 ## 订单查询模块：
 
 登录后触发10s定时器，每隔10s查询这段时间的订单交易信息，解析出支付成功订单的优惠信息以及pid，根据pid查询对应的wxid，对该wxid用户发送预计佣金信息。对支付成功订单给该用户发送佣金信息，并按照比例，同时对上级，上上级发送返利信息。
-
-代码路径：https://github.com/jiangxiaotao1024/wechaty.git
