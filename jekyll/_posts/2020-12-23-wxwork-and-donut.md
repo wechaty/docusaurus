@@ -353,7 +353,7 @@ async function onMessage(msg) {
             }`,
             imageStream
           );
-          msgObj["msgContent"] = "![screenshot](" 
+          msgObj["msgContent"] = "![screenshot]("
             + result.url + ")";
           msgObj["msgTime"] = msgTime;
           msgObj["msgType"] = "6";

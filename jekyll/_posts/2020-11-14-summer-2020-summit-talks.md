@@ -35,4 +35,3 @@ Wechaty 作者 Huan 在开源文化分会场做报告：Wechaty 开源之路
 ![Wechaty Friends](/assets/2020/11-summer-2020-summit-talks/six.jpg)
 
 ![Wechaty Friends](/assets/2020/11-summer-2020-summit-talks/four.jpg)
-
