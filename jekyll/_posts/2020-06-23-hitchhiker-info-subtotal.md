@@ -4,7 +4,6 @@ author: sking
 categories: project
 tags:
   - nodejs
-  - wechaty
   - wechaty-puppet-padplus
   - mysql
 image: /assets/2020/info-subtotal/head.jpeg 

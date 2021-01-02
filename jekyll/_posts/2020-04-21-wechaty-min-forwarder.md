@@ -3,7 +3,6 @@ title: "Wechaty 服务器的最小化实现"
 author: hzzzzzz
 categories: project
 tags:
-  - wechaty
   - wechaty-puppet-macpro
 ---
 
