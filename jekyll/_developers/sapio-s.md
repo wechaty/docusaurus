@@ -1,5 +1,5 @@
 ---
-name: Sapio-S
+name: Sapio S
 site: https://github.com/https://github.com/Sapio-S
 bio: 持续探索新世界。
 avatar: /assets/developers/sapio-s/avatar.jpg
