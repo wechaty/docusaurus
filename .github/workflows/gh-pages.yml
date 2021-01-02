@@ -28,10 +28,12 @@ jobs:
           key: ${{ runner.os }}-node-modules
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: NPM Install & Test
-        run: |
-          npm install
-          npm test
+
+      - name: NPM Install
+        run: npm install
+      - name: NPM Test
+        run: npm test
+
       - name: Install Dependencies
         run: make install
       - name: Build
