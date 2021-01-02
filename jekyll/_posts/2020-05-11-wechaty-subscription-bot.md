@@ -289,7 +289,7 @@ bot.on('message', async msg => {
 
 测试机器人(wx_easecloud)：
 
-![逸云科技](https://github.com/fish-ball/wechaty-subsbot/raw/master/wx_easecloud.jpg)
+![逸云科技](/assets/2020/wechaty-subscription-bot/wx_easecloud.jpg)
 
 联系作者：
 
