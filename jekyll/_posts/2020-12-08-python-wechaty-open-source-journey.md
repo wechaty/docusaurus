@@ -57,4 +57,3 @@ image: /assets/2020/python-wechaty/wechaty-nanjing-picture.jpg
 {% include iframe.html src="https://youtu.be/ncSWIRtHyAo" %}
 
 > YouTube: <https://youtu.be/ncSWIRtHyAo>
-

@@ -8,7 +8,7 @@ tags:
 image: /assets/2021/01-wechaty-puppet-service/5-puppets.jpg
 ---
 
-### Wechaty Puppet Service
+## Wechaty Puppet Service
 
 WeChaty is heavily dependeing on the RPA (Robotic Progress Automation) technology to convert the IM software to a software module.
 
@@ -30,4 +30,3 @@ As you know, they are most relies on the RPA technic, which is hard to deploy.
 
 It always not easy to setup an environment when it complicated
 And one more thing, Wechaty Puppet Service Providers
-
