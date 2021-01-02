@@ -22,7 +22,7 @@ Wechaty 近期有了很大的升级，从0.14版本之后，开始陆续支持�
 
 现在再来介绍Puppeteer 和 Padchat 就会比较清楚了:
 
-![image](https://github.com/wechaty/wechaty/wiki/image/abstract-info.png)
+![image](/assets/2018/abstract-info.png)
 
 - Puppeteer: 基于网页微信的实现，通过puppet连接到Wechaty API。
 - Padchat: 基于ipad 协议的实现，通过puppet 连接到Wechaty API。
