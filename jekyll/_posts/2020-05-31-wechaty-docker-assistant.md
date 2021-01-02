@@ -4,7 +4,6 @@ author: leo_chen
 categories: project
 tags:
   - code
-  - wechaty
   - webPanel
   - feature
 image: /assets/2020/web-panel/web-head.png
