@@ -3,8 +3,8 @@ title: "如何用Wechaty打造一个推广机器人"
 author: legendaryjesse
 categories: project
 tags:
-   - wechaty
-image:  /assets/2020/promote-bot/banner.png
+   - retail
+image: /assets/2020/promote-bot/banner.png
 ---
 
 > 作者: [LegendaryJesse](https://github.com/JesseWeb)，悦享推广联合创始人，半路出家的程序员。
