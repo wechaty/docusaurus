@@ -3,7 +3,7 @@ title: "用Wecahty制作订阅机器人(B站)"
 author: fish-ball
 categories: tutorial
 tags:
-  - wechaty
+  - subscribe
 image: /assets/2020/wechaty-subscription-bot/teaser.png
 ---
 

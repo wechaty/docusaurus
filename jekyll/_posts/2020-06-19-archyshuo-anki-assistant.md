@@ -5,7 +5,6 @@ categories: project
 tags:
   - typescript
   - python
-  - wechaty
   - nlp
   - anki
   - productivity

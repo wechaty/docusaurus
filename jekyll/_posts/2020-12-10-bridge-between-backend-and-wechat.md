@@ -5,7 +5,6 @@ image: /assets/2020/12-johnwang71/avartar.png
 categories: project
 tags:
   - nodejs
-  - wechaty
   - donut
 ---
 

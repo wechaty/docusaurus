@@ -3,7 +3,6 @@ title: "我如何用Chatbot在奇绩创坛重构销售体系"
 author: rickyyin98
 categories: project
 tags:
-  - wechaty
   - sticky
   - featured
 image: /assets/2020/qijibot/qijibot.jpg

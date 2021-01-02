@@ -3,7 +3,6 @@ title: "基于Wechaty的夸夸机器人"
 author: yinizhilian
 categories: project
 tags:
-  - wechaty
   - wechaty-puppet-padplus
 image: /assets/2020/kuakua-wechaty/titleimage.png
 ---

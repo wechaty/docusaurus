@@ -4,7 +4,6 @@ author: charles-wu-chen
 image: /assets/2020/java-group-message-sync-bot/wechaty-java.png
 categories: project
 tags:
-  - wechaty
   - java
   - aws
 ---

@@ -4,7 +4,6 @@ author: luweicn
 categories: project
 tags:
   - nodejs
-  - wechaty
   - wechaty-puppet-padplus
 ---
 

@@ -3,7 +3,6 @@ title: "用 Wechaty 实现工作日报管理系统"
 author: zzhoouxin
 categories: project
 tags:
-  - wechaty
   - wechaty-puppet-padplus
 image: /assets/2020/wechaty-daily/daily.png
 ---

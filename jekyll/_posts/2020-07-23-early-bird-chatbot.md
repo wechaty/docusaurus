@@ -4,7 +4,6 @@ author: lmacode
 categories: event
 tags:
   - bot
-  - wechaty
   - job
   - intern
 image: /assets/2020/early-bird-chatbot/bird.png

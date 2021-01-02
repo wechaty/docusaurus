@@ -4,7 +4,6 @@ author: lijiarui
 categories: story
 tags:
   - news
-  - wechaty
   - mvp
   - microsoft
 image: /assets/2020/11-mvp-six-two-one/wechaty-contributors.webp

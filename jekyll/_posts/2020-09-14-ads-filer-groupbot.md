@@ -3,7 +3,6 @@ title: "微信群广告检测机器人"
 author: garyboygo
 categories: npm
 tags:
-  - wechaty
   - wechat groups
   - ads monitor
 image: /assets/2020/ads-filter-groupbot/ads-filter-groupbot.jpeg

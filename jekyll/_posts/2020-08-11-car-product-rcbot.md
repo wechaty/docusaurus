@@ -3,7 +3,6 @@ title: "传统工业与信息化的结合"
 author: jiucl
 categories: project
 tags:
-  - wechaty
   - bot
   - car
 image: /assets/2020/rcbot/rcbot.jpg

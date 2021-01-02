@@ -3,7 +3,6 @@ title: "Microsoft Online Tech Forum 微软在线技术峰会 - 李佳芮专访"
 author: lijiarui
 categories: interview
 tags:
-  - wechaty
   - microsoft
   - chatbot
   - news
