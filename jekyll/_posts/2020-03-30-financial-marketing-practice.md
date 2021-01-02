@@ -3,7 +3,6 @@ title: "使用Wechaty助力金融营销实践"
 author: lemonsx
 categories: tutorial
 tags:
-  - wechaty
   - financial
 image: /assets/2020/financial-marketing/2020-03-30-wechaty-bond-bot.png
 ---

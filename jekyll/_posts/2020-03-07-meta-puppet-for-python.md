@@ -3,7 +3,6 @@ title: "MetaPuppetForPython - 用Python写Wechaty程序"
 author: quantumflame
 categories: tutorial  
 tags:
-  - wechaty
   - python
   - socket
   - puppet
