@@ -8,7 +8,7 @@ tags:
   - wechaty-puppet-donut
   - wechaty-puppet-wxwork
   - rx-queue
-image: /assets/2020/2020-12-23-wxwork-and-donut/chatbot-img.jpeg
+image: /assets/2020/2020-12-23-wxwork-and-donut/chatbot-img.png
 ---
 
 > 作者: [zhihuifanqiechaodan](https://github.com/zhihuifanqiechaodan) 前端开发工程师
@@ -354,7 +354,8 @@ async function onMessage(msg) {
             }`,
             imageStream
           );
-          msgObj["msgContent"] = "![screenshot](" + result.url + ")";
+          msgObj["msgContent"] = "![screenshot](" 
+            + result.url + ")";
           msgObj["msgTime"] = msgTime;
           msgObj["msgType"] = "6";
         }

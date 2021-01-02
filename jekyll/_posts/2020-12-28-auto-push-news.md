@@ -28,11 +28,11 @@ IDE: IntelliJ IDEA
 
 Visit [Spring initializr](https://start.spring.io/) and generate:
 
-![Spring initializr](/assets/2020/harrisonqi/2020-12-28-auto-push-news-01.jpg)
+![Spring initializr](/assets/2020/harrisonqi/2020-12-28-auto-push-news-01.png)
 
 Download & unzip, open with IDEA:
 
-![open with IDEA](/assets/2020/harrisonqi/2020-12-28-auto-push-news-02.jpg)
+![open with IDEA](/assets/2020/harrisonqi/2020-12-28-auto-push-news-02.png)
 
 Add dependency(newest version) and update:
 
@@ -44,7 +44,7 @@ Add dependency(newest version) and update:
 </dependency>
 ```
 
-![dependency](/assets/2020/harrisonqi/2020-12-28-auto-push-news-03.jpg)
+![dependency](/assets/2020/harrisonqi/2020-12-28-auto-push-news-03.png)
 
 ### Add wechaty scan plugin
 
@@ -147,7 +147,7 @@ class WechatyPlugins {
 
 Screenshot:
 
-![dependency](/assets/2020/harrisonqi/2020-12-28-auto-push-news-04.jpg)
+![dependency](/assets/2020/harrisonqi/2020-12-28-auto-push-news-04.png)
 
 ### Autowire wechaty
 
@@ -180,7 +180,7 @@ fun main(args: Array<String>) {
 }
 ```
 
-![dependency](/assets/2020/harrisonqi/2020-12-28-auto-push-news-05.jpg)
+![dependency](/assets/2020/harrisonqi/2020-12-28-auto-push-news-05.png)
 
 Then run the application, you'll see log of wechaty.
 
@@ -191,17 +191,17 @@ Then run the application, you'll see log of wechaty.
 First we need enable schedule:
 Add a `@EnableScheduling` to application:
 
-![EnableScheduling](/assets/2020/harrisonqi/2020-12-28-auto-push-news-08.jpg)
+![EnableScheduling](/assets/2020/harrisonqi/2020-12-28-auto-push-news-08.png)
 
 We need schedule of spring boot, so we create `MySchedule.kt`:
 
-![MySchedule](/assets/2020/harrisonqi/2020-12-28-auto-push-news-06.jpg)
+![MySchedule](/assets/2020/harrisonqi/2020-12-28-auto-push-news-06.png)
 
 #### Inject wechaty
 
 We wanna use functions of wechaty. Because the injection has been completed above, we only need to directly introduce here:
 
-![Inject wechaty](/assets/2020/harrisonqi/2020-12-28-auto-push-news-07.jpg)
+![Inject wechaty](/assets/2020/harrisonqi/2020-12-28-auto-push-news-07.png)
 
 #### Create a schedule task
 
@@ -226,7 +226,7 @@ class MySchedule(private val wechaty: Wechaty) {
 
 Run application, you can see time print on your console:
 
-![Inject wechaty](/assets/2020/harrisonqi/2020-12-28-auto-push-news-09.jpg)
+![Inject wechaty](/assets/2020/harrisonqi/2020-12-28-auto-push-news-09.png)
 
 Next, we only need to focus on how to push and content.
 
@@ -243,7 +243,7 @@ Because we need `RestTemplate` to send http request, so we add a dependency into
 </dependency>
 ```
 
-![RestTemplate](/assets/2020/harrisonqi/2020-12-28-auto-push-news-10.jpg)
+![RestTemplate](/assets/2020/harrisonqi/2020-12-28-auto-push-news-10.png)
 
 Don't forget to reimport.
 

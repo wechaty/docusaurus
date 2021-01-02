@@ -52,11 +52,11 @@ github:[https://github.com/gengchen528/wechat-assistant](https://github.com/geng
 
 提醒自己
 
-![image](/assets/2019/koa-wechaty-1.jpg)
+![image](/assets/2019/koa-wechaty-1.jpeg)
 
 委托提醒（前提是你和你想要提醒的人都是小秘书的好友，采用的是昵称查找用户，不是备注要注意）
 
-![image](/assets/2019/koa-wechaty-2.jpg)
+![image](/assets/2019/koa-wechaty-2.jpeg)
 
 数据库中已添加任务
 
