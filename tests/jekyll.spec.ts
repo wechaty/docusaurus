@@ -125,17 +125,30 @@ test('filename only allow [a-z0-9-_.]', async t => {
   }
 })
 
-test('front matter key `tags` must contact at least one tag', async t => {
+test('front matter key `tags` must contact at least one tag and not black listed', async t => {
+  const TAG_BLACK_LIST = [
+    'wechaty', // we should not add wechaty because everything is related to wechaty
+    // TODO: should we permit space in tag name?
+    // TODO: should we only permit the lowercase tag characters? or CamelCase?
+  ]
+  const notBlackList = (tag: string) => !TAG_BLACK_LIST.includes(tag)
+
   const postsFileList = await glob(`${POSTS_FOLDER}/**/*`)
 
   for (const file of postsFileList) {
     const content = fs.readFileSync(file)
     const front = loadFront(content)
 
-    const tagCount = front.tags && Array.isArray(front.tags)
-      ? front.tags.length
-      : 0
-    t.true(tagCount, `"${stripRepoRoot(file)}" tags(${tagCount}) has at least one tag`)
+    let tagList  = front.tags
+    if (!Array.isArray(tagList)) {
+      tagList = tagList
+        ? [tagList]
+        : []
+    }
+    t.true(tagList.length, `"${stripRepoRoot(file)}" tags(${tagList.length}) has at least one tag`)
+
+    const good = tagList.every(notBlackList)
+    t.true(good, `"${stripRepoRoot(file)}" tags(${good ? tagList.length : tagList.join(',')}) has no black listed`)
   }
 })
 
@@ -359,4 +372,38 @@ test('all asset files should be put into folder `/assets/YYYY/MM-slug-slug-slug/
     }
     return matches[1]
   }
+})
+
+test('{% include iframe.html src=... %} should exist in assets/ folder', async t => {
+  const postsFileList = await glob(`${POSTS_FOLDER}/**/*`)
+
+  for (const filename of postsFileList) {
+    const fileList = getIncludeSrcList(filename)
+    if (fileList.length) {
+      const good = fileList.every(isExist)
+      t.true(good, `${fileList.map(s => `"${s}"`).join(', ')} should exist`)
+    }
+  }
+
+  function isExist (file: string): boolean {
+    return fs.existsSync(path.join(JEKYLL_ROOT, file))
+  }
+
+  function getIncludeSrcList (filename: string): string[] {
+    const content = fs.readFileSync(filename).toString()
+
+    // '{% include iframe.html src="/assets/2020/11-summer-2020-summit-talks/wechaty-summer-2020-introduction.pdf" %}'
+    const REGEXP = /{%\s+include\s+iframe.html\s+src="\/([^"]+?)"\s+%}/g
+
+    const fileList: string[] = []
+
+    let matches = REGEXP.exec(content)
+    while (matches != null) {
+      fileList.push(matches[1])
+      matches = REGEXP.exec(content)
+    }
+
+    return fileList
+  }
+
 })
