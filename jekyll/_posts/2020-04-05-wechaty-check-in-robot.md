@@ -3,7 +3,7 @@ title: "微信打卡机器人"
 author: yeojongki
 categories: project
 tags:
-  - wechaty
+  - checkin
 image: /assets/2020/wechaty-check-in-robot/notice.png
 ---
 

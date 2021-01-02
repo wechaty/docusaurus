@@ -3,7 +3,6 @@ title: "使用Wechaty管理你的顾客"
 author: kylin93cn
 categories: project
 tags:
-  - wechaty
   - wechaty-puppet-padplus
   - chatbot
 image: /assets/2020/manage-ur-customers/2020-0517-wechat.jpeg

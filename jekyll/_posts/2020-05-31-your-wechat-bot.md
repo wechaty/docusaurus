@@ -3,7 +3,6 @@ title: "你的微信小助手"
 author: peanut
 categories: project
 tags:
-  - wechaty
   - wechaty-puppet-padplus
 image: /assets/2020/your-wechat-bot/banner.png
 ---
