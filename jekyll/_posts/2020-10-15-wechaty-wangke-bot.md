@@ -1,13 +1,13 @@
 ---
 title: "基于wechaty开发网课答案查询机器人"
 author: hurely
-image: /assets/2020/wangke-bot/banner.jpg
+image: /assets/2020/wanke-bot/banner.jpg
 categories: project
 tags:
   - wechaty
   - puppet
   - PadLocal
-  - Wechaty-wangke-bot
+  - Wechaty-wanke-bot
 ---
 ## 背景
 
@@ -35,10 +35,10 @@ github：[https://github.com/hurely/wechaty-wangke](https://github.com/hurely/we
 ## 项目展示
 
 - 自动回复网课答案
-  ![回复网课答案](https://kung-1252408270.cos.ap-chengdu.myqcloud.com/markdown/20201015105732.png)
+  ![回复网课答案](/assets/2020/wanke-bot/20201015105732.png)
 
 - 接收小程序
-  ![接收小程序](https://kung-1252408270.cos.ap-chengdu.myqcloud.com/markdown/20201015112724.png)
+  ![接收小程序](/assets/2020/wanke-bot/20201015112724.png)
 
 ## 核心代码
 
@@ -207,7 +207,7 @@ module.exports = {
 
 ## 网课答案接口用法
 
-![网课答案接口](https://kung-1252408270.cos.ap-chengdu.myqcloud.com/markdown/20201015141509.png)
+![网课答案接口](/assets/2020/wanke-bot/20201015141509.png)
 
 1.访问[http://api.51aidian.com/index.php?id=kunggggyoyoyo](http://api.51aidian.com/index.php?id=kunggggyoyoyo)
 

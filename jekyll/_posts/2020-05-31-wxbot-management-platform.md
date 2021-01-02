@@ -57,7 +57,7 @@ bot.start()
 文档里可以看到一个示例代码  [wechaty-getting-started](https://github.com/wechaty/wechaty-getting-started)
 
 下载完之后先 npm i 安装模块，然后运行就有了登录二维码
-![err1](http://pic.666up.cn/wxbot/err1.jpg)
+![err1](/assets/2020/wxbot/err1.jpg)
 很遗憾，失败了。
 
 ## 网页版微信登录失败
@@ -118,7 +118,7 @@ bot.start()
   - 低智商对话
   - 成语接龙，查天气，查酒店，歇后语...
 
-![admin](http://pic.666up.cn/wxbot/admin1.jpg)
+![admin](/assets/2020/wxbot/admin1.jpg)
 
 ### 技术构成
 
@@ -236,7 +236,7 @@ pm2 start pm2.config.js
 
 欢迎扫码加我的小助手，验证消息写 `机器人` 即可直接通过啦，加群一起交流也是可以的。也可以把机器人加到你的群聊中来玩耍哦，登陆上面的在线实例，设置关键字就能体验啦。
 
-![qrcode](http://pic.666up.cn/wxbot/qrcode.png)
-![0](http://pic.666up.cn/wxbot/wx0.jpg)
-![1](http://pic.666up.cn/wxbot/wx1.jpg)
-![2](http://pic.666up.cn/wxbot/wx2.jpg)
+![qrcode](/assets/2020/wxbot/qrcode.png)
+![0](/assets/2020/wxbot/wx0.jpg)
+![1](/assets/2020/wxbot/wx1.jpg)
+![2](/assets/2020/wxbot/wx2.jpg)
