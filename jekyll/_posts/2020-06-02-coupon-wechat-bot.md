@@ -3,7 +3,6 @@ title: "优惠券搜索机器人（Coupon wechat bot）"
 author: h3llotom
 categories: project
 tags:
-  - wechaty
   - wechaty-puppet-padplus
 image: /assets/2020/coupon-wechat-bot/coupon-wechat-bot.jpg
 ---

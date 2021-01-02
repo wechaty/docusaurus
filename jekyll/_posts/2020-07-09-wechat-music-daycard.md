@@ -3,7 +3,6 @@ title: "每日微信音乐卡片分享机器人（wechat-daycard）"
 author: leijiahang
 categories: project
 tags:
-  - wechaty
   - wechaty-puppet-padplus
 image: /assets/2020/wechat-daycard/header.png
 ---

@@ -4,7 +4,6 @@ author: archy
 categories: project
 tags:
   - plugin
-  - wechaty
   - devops
   - featured
 image: /assets/2020/wechaty-log-monitor/demo.jpeg
