@@ -55,7 +55,7 @@ const getImageList = (filename: string): string[] => {
   const content = fs.readFileSync(filename).toString()
 
   // https://stackoverflow.com/a/37981325
-  const REGEXP = /!\[.*?\]\((.*?)\)/g
+  const REGEXP = /!\[[^\]]*?\]\((.*?)\)/g
 
   const imageList: string[] = []
 
@@ -300,10 +300,13 @@ test.only('all images linked from the post should be stored local (in the repo) 
     /badge\.fury\.io/i,
     /dockeri\.co\/image/i,
     /github\.com\/.*\/workflows\//i,
+    /githubusercontent\.com/i,
     /herokucdn\.com/i,
+    /images\.microbadger\.com/i,
     /img\.shields\.io/i,
     /pepy\.tech\/badge/i,
     /sourcerer\.io/i,
+    /wechaty\.github\.io/i,
     /wechaty\.js\.org/i,
   ]
   const isNotWhiteList = (url: string) => !URL_WHITE_LIST_REGEX.some(regex => regex.test(url))
