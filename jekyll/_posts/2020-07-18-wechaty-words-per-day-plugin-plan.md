@@ -3,7 +3,6 @@ title: "暑期2020 [编写一个“每日一句”插件] 计划书"
 author: univerone
 categories: project
 tags:
-  - wechaty
   - plugins
   - soc
   - soc2020

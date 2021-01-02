@@ -3,7 +3,6 @@ title: "twitter2wechat"
 author: steve
 categories: project
 tags:
-  - wechaty
   - wechaty-puppet-padplus
   - twitter
 image: /assets/2020/wechaty-twitter2wechat/wechaty-twitter2wechat-header.jpg

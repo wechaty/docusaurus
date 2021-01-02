@@ -3,7 +3,6 @@ title: "有道智云翻译插件"
 author: chs97
 categories: npm
 tags:
-  - wechaty
   - plugins
   - featured
 image: /assets/2020/youdao-plugin/head.jpeg

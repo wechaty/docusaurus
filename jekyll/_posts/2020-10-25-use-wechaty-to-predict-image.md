@@ -4,7 +4,6 @@ author: lyleshaw
 image: /assets/2020/10-use-wechaty-to-predict-image/screenshot.jpg
 categories: project
 tags:
-  - wechaty
   - python
   - pytorch
 ---

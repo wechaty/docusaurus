@@ -3,7 +3,6 @@ title: "Wechaty Workshop for Puppet Makers: How to make a Puppet for Wechaty"
 author: rickyyin98
 categories: event
 tags:
-  - wechaty
   - puppet
   - news
   - sticky

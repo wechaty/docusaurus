@@ -3,7 +3,6 @@ title: "使用句子秒回控制家里的台灯"
 author: cr4fun
 categories: tutorial
 tags:
-  - wechaty
   - iot
   - arduino
 ---

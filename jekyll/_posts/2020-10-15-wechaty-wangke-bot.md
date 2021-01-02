@@ -4,7 +4,6 @@ author: hurely
 image: /assets/2020/wanke-bot/banner.jpg
 categories: project
 tags:
-  - wechaty
   - puppet
   - PadLocal
   - Wechaty-wanke-bot

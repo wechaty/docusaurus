@@ -1,9 +1,10 @@
 ---
 title: "记一次 Wechaty 广州小分队与佳芮老师的小聚会"
 author: fish-ball
-categories: npm
+categories: event
 tags:
-  - wechaty
+  - guangzhou
+  - meetup
 image: /assets/2020/wechaty-guangzhou-gathering/pic1.jpg
 ---
 

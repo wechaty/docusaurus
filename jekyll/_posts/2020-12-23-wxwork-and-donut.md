@@ -4,7 +4,6 @@ author: zhihuifanqiechaodan
 categories: project
 tags:
   - nodejs
-  - wechaty
   - wechaty-puppet-donut
   - wechaty-puppet-wxwork
   - rx-queue
