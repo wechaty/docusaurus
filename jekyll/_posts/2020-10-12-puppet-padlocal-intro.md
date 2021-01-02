@@ -5,7 +5,6 @@ image: /assets/2020/padlocal/logo.png
 categories: announcement
 tags:
   - news
-  - wechaty
   - puppet
   - padlocal
   - Puppet Service Provider

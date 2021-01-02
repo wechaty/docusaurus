@@ -3,7 +3,6 @@ title: "910taoBot-为了美好的生活"
 author: chengaopan
 categories: project
 tags:
-  - wechaty
   - wechaty-puppet-padplus
 image: /assets/2020/910taobot/panda.jpg 
 ---

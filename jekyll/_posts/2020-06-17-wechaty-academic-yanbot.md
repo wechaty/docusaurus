@@ -4,7 +4,7 @@ author: chaogan-yan
 categories: project
 tags:
   - nodejs
-  - wechaty
+  - academic
   - wechaty-puppet-padplus
 image: /assets/2020/yanbot/yanbot.jpg 
 ---

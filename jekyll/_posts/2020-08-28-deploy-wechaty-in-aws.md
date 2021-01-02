@@ -4,7 +4,6 @@ author: charles-wu-chen
 image: /assets/2020/deploy-wechaty-in-aws/wechaty-aws.png
 categories: project
 tags:
-  - wechaty
   - nodejs
   - aws
 ---

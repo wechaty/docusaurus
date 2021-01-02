@@ -4,7 +4,6 @@ author: evilbt
 image: /assets/2020/wechaty-group-chat-robot/demo.jpg
 categories: project
 tags:
-  - wechaty
   - wechaty-puppet-padplus
   - nodejs
 ---

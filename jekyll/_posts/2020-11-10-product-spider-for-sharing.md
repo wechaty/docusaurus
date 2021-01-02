@@ -3,7 +3,6 @@ title: 基于Wechaty打造实时爬取产品信息并分享给用户群
 author: zcr20090430
 categories: project
 tags:
-  - wechaty
   - wechaty-puppet-padplus
   - python
   - typescript

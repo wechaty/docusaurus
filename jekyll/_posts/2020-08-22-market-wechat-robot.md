@@ -4,7 +4,6 @@ author: exctech
 categories: project
 image: /assets/2020/market-wechat-robot/teaser.jpeg
 tags:
-  - wechaty
   - market
   - oracle
   - python

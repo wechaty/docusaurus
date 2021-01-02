@@ -4,7 +4,6 @@ author: jcq15
 image: /assets/2020/post-ts-to-python/screenshot.jpg
 categories: project
 tags:
-  - wechaty
   - wechaty-puppet-padplus
   - nodejs
   - python

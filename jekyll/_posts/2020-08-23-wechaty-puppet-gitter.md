@@ -5,7 +5,6 @@ image: /assets/2020/08-gitter/wechaty-gitter.png
 categories: announcement
 tags:
   - news
-  - wechaty
   - puppet
   - gitter
   - wechaty-puppet-gitter

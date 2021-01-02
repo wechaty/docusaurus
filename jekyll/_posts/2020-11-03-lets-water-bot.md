@@ -4,7 +4,6 @@ author: wanglei158
 categories: project
 tags:
   - room
-  - wechaty
   - let's waterx
   - drink
   - node-wechaty

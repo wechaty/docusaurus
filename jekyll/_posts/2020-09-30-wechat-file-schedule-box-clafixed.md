@@ -3,7 +3,6 @@ title: Wechat File Schedule Box
 author: hywhuangyuwei
 categories: project
 tags:
-  - wechaty
   - wechaty-puppet-padplus
   - nodejs
   - sync
