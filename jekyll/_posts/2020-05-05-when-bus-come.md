@@ -3,7 +3,6 @@ title: "Wechaty 实时公交查询"
 author: ershing
 categories: project
 tags:
-  - wechaty
   - wechaty-puppet-padplus
 image: /assets/2020/when-bus-come/teaser.jpg
 ---
