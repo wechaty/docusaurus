@@ -5,7 +5,7 @@
       "\\.md$"
     ],
     "jekyll/assets": [
-      "/[0-9\\-a-z]+\\.",
+      "/[0-9\\-a-z_]+\\.",
       "\\.(jpg|jpeg|png|gif|webp|zip|pdf|docx|doc|txt)$"
     ]
   },
