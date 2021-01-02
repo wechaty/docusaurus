@@ -5,7 +5,7 @@ categories: announcement
 tags:
   - puppet-service
   - news
-# image: /assets/2021/01-wechaty-puppet-service/
+image: /assets/2021/01-wechaty-puppet-service/5-puppets.jpg
 ---
 
 ### Wechaty Puppet Service
