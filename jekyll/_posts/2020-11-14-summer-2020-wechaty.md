@@ -6,6 +6,7 @@ tags:
   - award
   - soc
   - open-source
+  - news
 image: /assets/2020/11-summer-2020-wechaty/summer-2020.png
 ---
 
