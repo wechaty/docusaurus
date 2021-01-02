@@ -3,7 +3,6 @@ title: "带货机器人（wechat robot seller）"
 author: peterzhang
 categories: project
 tags:
-  - wechaty
   - wechaty-puppet-padplus
 image: /assets/2020/wechat-robot-seller/chat.jpeg
 ---

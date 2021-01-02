@@ -295,7 +295,7 @@ test('developer project avatar should be put under assets/developers/ folder', a
   }
 })
 
-test.only('all images linked from the post should be stored local (in the repo) for preventing the 404 error in the future.', async t => {
+test('all images linked from the post should be stored local (in the repo) for preventing the 404 error in the future.', async t => {
   const URL_WHITE_LIST_REGEX = [
     /badge\.fury\.io/i,
     /dockeri\.co\/image/i,
