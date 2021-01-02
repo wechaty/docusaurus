@@ -112,11 +112,15 @@ test('filename only allow [a-z0-9-_.]', async t => {
 
   const assetsFileList  = await glob(`${ASSETS_FOLDER}/**/*`)
   const postsFileList   = await glob(`${POSTS_FOLDER}/**/*`)
+  const developersFileList = await glob(`${DEVELOPERS_FOLDER}/**/*`)
 
   const isNotWhiteList = (filename: string) => WHITE_LIST_REGEX_LIST.every(regex => !regex.test(filename))
 
-  const filenameList = [...assetsFileList, ...postsFileList]
-    .filter(isNotWhiteList)
+  const filenameList = [
+    ...assetsFileList,
+    ...developersFileList,
+    ...postsFileList,
+  ].filter(isNotWhiteList)
     .map(stripRepoRoot)
 
   for (const filename of filenameList) {
