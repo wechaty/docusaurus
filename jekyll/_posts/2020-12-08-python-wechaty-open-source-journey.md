@@ -52,3 +52,10 @@ image: /assets/2020/python-wechaty/wechaty-nanjing-picture.jpg
 ## 一定要积极参加开源项目
 
 其实很多开源项目都非常欢迎新鲜的血液，也愿意去指导那些愿意学习的同学，所以如果你有一颗想要开源的心，就勇敢的尝试参与开源项目把，在里面你将收获非常多的提升和帮助，也会帮你认识很多优秀的人。
+
+## Talk: Multi-Wechaty SDK for Chatbot
+
+{% include iframe.html src="https://youtu.be/ncSWIRtHyAo" %}
+
+> YouTube: <https://youtu.be/ncSWIRtHyAo>
+
