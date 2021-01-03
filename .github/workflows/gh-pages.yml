@@ -24,9 +24,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - uses: actions/cache@v2
         with:
-          path:
-          - ~/.npm
-          - ~/.bundle
+          path: ~/.npm
           key: ${{ runner.os }}-wechaty.js.org-cache
           restore-keys: |
             ${{ runner.os }}-wechaty.js.org-
@@ -39,7 +37,7 @@ jobs:
       - name: Bundle Config
         run: |
           sudo gem install bundler
-          bundle config path ~/.bundle
+          bundle config path ~/.npm/bundle
           bundle install && bundle update
       - name: Install Dependencies
         run: make install
@@ -63,9 +61,7 @@ jobs:
 
     - uses: actions/cache@v2
       with:
-        path:
-        - ~/.npm
-        - ~/.bundle
+        path: ~/.npm
         key: ${{ runner.os }}-wechaty.js.org-cache
         restore-keys: |
           ${{ runner.os }}-wechaty.js.org-
@@ -73,7 +69,7 @@ jobs:
     - name: Bundle Config
       run: |
         sudo gem install bundler
-        bundle config path ~/.bundle
+        bundle config path ~/.npm/bundle
         bundle install && bundle update
 
     - name: Config Git
