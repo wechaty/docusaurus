@@ -4,6 +4,7 @@ author: jiangxiaotao1024
 categories: project
 tags:
   - retail
+image: /assets/2020/rebate-robot/taokouling.png
 ---
 
 ## 用wechaty制作返利机器人
