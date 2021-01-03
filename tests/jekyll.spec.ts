@@ -21,6 +21,8 @@ import probeImageSize from 'probe-image-size'
 import globCB         from 'glob'
 import { loadFront }  from 'yaml-front-matter'
 
+import { markdownImageList } from '../src/markdown-image-list'
+
 const glob = util.promisify(globCB)
 
 const REPO_ROOT         = path.join(__dirname, '..')
@@ -49,23 +51,6 @@ const getTeaserList = (filename: string): string[] => {
     return [front.image]
   }
   return []
-}
-
-const getImageList = (filename: string): string[] => {
-  const content = fs.readFileSync(filename).toString()
-
-  // https://stackoverflow.com/a/37981325
-  const REGEXP = /!\[[^\]]*?\]\((.*?)\)/g
-
-  const imageList: string[] = []
-
-  let matches = REGEXP.exec(content)
-  while (matches != null) {
-    imageList.push(matches[1])
-    matches = REGEXP.exec(content)
-  }
-
-  return imageList
 }
 
 test('image size should be fit for the web (no more than 1MB and 1920x1080)', async t => {
@@ -328,7 +313,7 @@ test('all images linked from the post should be stored local (in the repo) for p
 
   const allImageList = [
     ...postsFileList.map(getTeaserList).flat(),
-    ...postsFileList.map(getImageList).flat(),
+    ...postsFileList.map(markdownImageList).flat(),
     ...developersFileList.map(getAvatarList).flat(),
   ].filter(isNotWhiteList)
 
@@ -358,7 +343,7 @@ test('all asset files should be put into folder `/assets/YYYY/MM-slug-slug-slug/
 
     const slugs           = getSlugs(filename)
     const teaserList      = getTeaserList(filename)
-    const imageList       = getImageList(filename)
+    const imageList       = markdownImageList(filename)
 
     const expectedFolder = path.join(
       'assets',
