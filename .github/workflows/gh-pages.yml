@@ -42,8 +42,8 @@ jobs:
             ${{ runner.os }}-gems-
       - name: Bundle Config
         run: |
-          gem install bundler
-          bundle install && bundle update
+          sudo gem install bundler
+          sudo bundle install && bundle update
           bundle config path vendor/bundle
       - name: Install Dependencies
         run: make install
@@ -80,8 +80,8 @@ jobs:
           ${{ runner.os }}-gems-
     - name: Bundle Config
       run: |
-        gem install bundler
-        bundle install && bundle update
+        sudo gem install bundler
+        sudo bundle install && bundle update
         bundle config path vendor/bundle
 
     - name: Config Git

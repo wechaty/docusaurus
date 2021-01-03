@@ -21,7 +21,7 @@ function markdownImageList (file: string): string[] {
     if ('tokens' in token && token.tokens) {
       if ((token.type as any) === 'table') {
         /**
-         * Table has `tokens` which is different type
+         * Huan(202101): Table has `tokens` which is different type
          *  (also undocumented, without any typing)
          */
         // console.info((token.tokens as any).header)
