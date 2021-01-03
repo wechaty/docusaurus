@@ -24,26 +24,22 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - uses: actions/cache@v2
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-modules
+          path:
+          - ~/.npm
+          - ~/.bundle
+          key: ${{ runner.os }}-wechaty.js.org-cache
           restore-keys: |
-            ${{ runner.os }}-node-
+            ${{ runner.os }}-wechaty.js.org-
 
       - name: NPM Install
         run: npm install
       - name: NPM Test
         run: npm test
 
-      - uses: actions/cache@v2
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-bundles
-          restore-keys: |
-            ${{ runner.os }}-gems-
       - name: Bundle Config
         run: |
           sudo gem install bundler
-          bundle config path vendor/bundle
+          bundle config path ~/.bundle
           bundle install && bundle update
       - name: Install Dependencies
         run: make install
@@ -67,21 +63,17 @@ jobs:
 
     - uses: actions/cache@v2
       with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-modules
+        path:
+        - ~/.npm
+        - ~/.bundle
+        key: ${{ runner.os }}-wechaty.js.org-cache
         restore-keys: |
-          ${{ runner.os }}-node-
-    - uses: actions/cache@v2
-      # https://github.com/actions/cache/blob/main/examples.md#ruby---bundler
-      with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-gems-bundles
-        restore-keys: |
-          ${{ runner.os }}-gems-
+          ${{ runner.os }}-wechaty.js.org-
+
     - name: Bundle Config
       run: |
         sudo gem install bundler
-        bundle config path vendor/bundle
+        bundle config path ~/.bundle
         bundle install && bundle update
 
     - name: Config Git
