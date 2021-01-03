@@ -1,11 +1,12 @@
 ---
-title: “开源软件供应链 2020 峰会：Wechaty 开源之路
+title: 开源专题论坛：Wechaty 的开源之路
 author: huan
-categories: talk
+categories: event
 tags:
   - soc
   - 2020
   - news
+  - talk
 image: /assets/2020/11-summer-2020-summit-talks/summit.webp
 ---
 
@@ -17,11 +18,13 @@ image: /assets/2020/11-summer-2020-summit-talks/summit.webp
 
 Wechaty 是 2016 年基于 Apache-2.0 许可证发布的开源对话式交互人机界面 SDK，具备极简开发、多语言、丰富组件等关键能力，并支持微信、Whatsapp、Gitter、飞书、快手等各大即时通讯工具对话平台，已经广泛应用在教育、零售、社区管理等领域，开发者来自腾讯、百度、阿里、Google、微软等多家公司，在 GitHub 上被近万名开发者收藏（star）。
 
+![Wechaty Friends](/assets/2020/11-summer-2020-summit-talks/friends.webp)
+
 ## Wechaty 开源之路
 
-Wechaty 作者 Huan 在开源文化分会场做报告：Wechaty 开源之路
+[![Summer 2020 Summit Agenda](/assets/2020/11-summer-2020-summit-talks/agenda.webp)](https://isrc.iscas.ac.cn/summer2020/#/summitmeeting)
 
-![Wechaty Friends](/assets/2020/11-summer-2020-summit-talks/friends.webp)
+Wechaty 作者 Huan 在开源文化分会场做报告：Wechaty 开源之路
 
 {% include iframe.html src="https://youtu.be/DMMGB-32LFM" %}
 
@@ -32,7 +35,3 @@ Wechaty 作者 Huan 在开源文化分会场做报告：Wechaty 开源之路
 ![Wechaty Friends](/assets/2020/11-summer-2020-summit-talks/six.jpg)
 
 ![Wechaty Friends](/assets/2020/11-summer-2020-summit-talks/four.jpg)
-
-## Wechaty 开源软件供应链点亮计划暑期 2020 招募书
-
-{% include iframe.html src="/assets/2020/11-summer-2020-summit-talks/wechaty-summer-2020-introduction.pdf" %}
