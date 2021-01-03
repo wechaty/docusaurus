@@ -1,7 +1,5 @@
-# wechaty-robot-lite 微信小助手
-
 ---
-title: "wechaty-robot-lite"
+title: "wechaty-robot-lite 微信小助手"
 author: itingle
 categories: tutorial
 tags:
@@ -9,7 +7,6 @@ tags:
   - wechaty
 image: /assets/2020/12-wechaty-robot-lite/example-1.png
 ---
-
 
 ## 介绍
 
@@ -44,21 +41,20 @@ image: /assets/2020/12-wechaty-robot-lite/example-1.png
 * 名词解释
   * token：官方解释
   
-        > * Our Mission: Make it easy to build a WeChat Chatbot for developers.
-        >  
-        >  We provide a **free** access using [iPad protocol](https://www.lizenghai.com/goto/?url=https://github.com/wechaty/wechaty-puppet-padplus) for the developers who have a strong will and ability to build a valuable chatbot for users.
-        >  
-        >  Any developers can add JuziBOT Inc’s staff ( **Wechat number :** juzibot) as a Wechat friend. You will receive a review form after adding. If you pass the review and willing to write a blog in Wechaty , you can use our iPad protocol for free！
-        >  
-        >  我们的使命：轻松为开发人员构建微信聊天机器人
-        >  
-        >  我们为有强烈意愿和能力为用户构建有价值的聊天机器人的开发人员提供了使用[iPad协议](https://www.lizenghai.com/goto/?url=https://github.com/wechaty/wechaty-puppet-padplus)的**免费**访问权限
-        >  
-        >  任何开发人员都可以将JuziBOT Inc的工作人员（**微信编号：**juzibot）添加为微信好友。添加后，您将收到一份审查表。如果您通过审查并愿意在Wechaty中写博客，则可以免费使用我们的iPad协议！
-        >  
-  
-    * 意思是我们提交审查表后，会获得为期15天的免费Token；想要获取长期有效的免费token，那就参加所谓的开源激励计划，就是在15天后，需要提交一个MVP(最小可行化产品)的Github仓库，Wechaty会将其fork到社区中的同时，会提供一个长期免费Token
-  
+  > * Our Mission: Make it easy to build a WeChat Chatbot for developers.
+  >  
+  >  We provide a **free** access using [iPad protocol](https://www.lizenghai.com/goto/?url=https://github.com/wechaty/wechaty-puppet-padplus) for the developers who have a strong will and ability to build a valuable chatbot for users.
+  >  
+  >  Any developers can add JuziBOT Inc’s staff ( **Wechat number :** juzibot) as a Wechat friend. You will receive a review form after adding. If you pass the review and willing to write a blog in Wechaty , you can use our iPad protocol for free！
+  >  
+  >  我们的使命：轻松为开发人员构建微信聊天机器人
+  >  
+  >  我们为有强烈意愿和能力为用户构建有价值的聊天机器人的开发人员提供了使用[iPad协议](https://www.lizenghai.com/goto/?url=https://github.com/wechaty/wechaty-puppet-padplus)的**免费**访问权限
+  >  
+  >  任何开发人员都可以将JuziBOT Inc的工作人员（**微信编号：**juzibot）添加为微信好友。添加后，您将收到一份审查表。如果您通过审查并愿意在Wechaty中写博客，则可以免费使用我们的iPad协议！
+  >  
+
+  * 意思是我们提交审查表后，会获得为期15天的免费Token；想要获取长期有效的免费token，那就参加所谓的开源激励计划，就是在15天后，需要提交一个MVP(最小可行化产品)的Github仓库，Wechaty会将其fork到社区中的同时，会提供一个长期免费Token  
   * [wechaty-puppet-padplus](https://www.lizenghai.com/goto/?url=https://github.com/wechaty/wechaty-puppet-padplus)：基于ipad协议的微信机器人
   * [wechaty-puppet-hostie](https://github.com/wechaty/wechaty-puppet-hostie)：基于windows协议的机器人
 
@@ -85,7 +81,7 @@ image: /assets/2020/12-wechaty-robot-lite/example-1.png
 
 ### 项目结构：
 
-  ```bash
+```bash
 |--bin/
 |----www # 项目启动文件
 |--publick/ #静态资源木狼
@@ -119,13 +115,13 @@ image: /assets/2020/12-wechaty-robot-lite/example-1.png
 
 **新建文件夹wechaty-lite，进入目录执行cnpm init -y   (大家都知道国内直接使用 npm 的官方镜像是非常慢的，这里推荐使用[淘宝 NPM 镜像](https://www.runoob.com/nodejs/nodejs-npm.html#taobaonpm)。)**
 
-  ```bash
+```bash
 cnpm init -y
 ```
 
 安装核心包
 
-  ```bash
+```bash
 // Wechaty核心包
 cnpm install --save wechaty
 // wechaty-puppet协议包
@@ -140,7 +136,7 @@ cnpm install --save qrcode-terminal
 
 配置文件**config.js**
 
-  ```javascript
+```javascript
 
 module.exports = {
     // puppet_donu Token
@@ -193,7 +189,7 @@ module.exports = {
 * 引入socketio，调用封装的getSocketio()进行初始化启动；
 * 引入donut，调用封装的run()进行初始化启动；
 
-  ```javascript
+```javascript
 /**
  * Create socket.io server.
  */
@@ -218,7 +214,7 @@ socket服务**socketio.js**文件
 2. 监听客户端的微信消息并发送给相关好友；
 3. 封装接口sendWechatLoginMsg、sendWechatMsg给wechaty调用；
 
-  ```javascript
+```javascript
 
 var socketio = {};
 const common = require('./common');
@@ -308,7 +304,7 @@ donut服务**donut.js**文件
 * 实现bot监听（OnMessage、OnRoomJoin...）；
 * 消息发送（文本、媒体、链接等消息）；
 
-  ```javascript
+```javascript
 
 const { FileBox } = require("wechaty");
 
@@ -439,7 +435,7 @@ module.exports = puppet_donut;
 
 ### **初始化**
 
-  ```javascript
+```javascript
     bot = new Wechaty({
         puppet: 'wechaty-puppet-hostie',
         puppetOptions: {
@@ -451,7 +447,7 @@ module.exports = puppet_donut;
 
 ### 发送文本消息给好友
 
-  ```javascript
+```javascript
 //发送文本消息给联系人
 puppet_donut.sendTextMsgToContact = async function(friendName, text){
     const contact = await bot.Contact.find({name: friendName});  //根据昵称搜索好友 change 'lijiarui' to any of your contact name in wechat
@@ -469,7 +465,7 @@ puppet_donut.sendTextMsgToContact = async function(friendName, text){
 
 ### **监听配置启动**
 
-  ```javascript
+```javascript
     bot
         .on('scan', (qrcode, status) => {
             if (status === ScanStatus.Waiting) {
@@ -497,7 +493,7 @@ puppet_donut.sendTextMsgToContact = async function(friendName, text){
 
 ### **scan**（顾名思义，是用于扫码登录的一个监听）
 
-  ```javascript
+```javascript
                 QrcodeTerminal.generate(qrcode, {
                     small: true
                 });
@@ -505,7 +501,7 @@ puppet_donut.sendTextMsgToContact = async function(friendName, text){
 
 这里代码较简单，意思是前面通过
 
-  ```javascript
+```javascript
 const QrcodeTerminal = require('qrcode-terminal');
 ```
 
@@ -533,7 +529,7 @@ const QrcodeTerminal = require('qrcode-terminal');
 
 这里我看了官方文档，可实现的业务很多，大家可参考官方api进行更多业务拓展！！！
 
-  ```javascript
+```javascript
 const { Friendship } = require("wechaty");
 // 配置文件
 const config = require("../config");
@@ -583,7 +579,7 @@ module.exports = async function onFriendShip(friendship) {
 
 这里主要监听用户加入房间的回调
 
-  ```javascript
+```javascript
 // 配置文件
 const config = require("../config");
 const io = require('../socketio');
@@ -625,7 +621,7 @@ module.exports = async function onRoomJoin(room, inviteeList, inviter) {
 
 我的需求是要管理我的群组，所以事先跑了下程序，输出了`room`，然后群里发个消息，就拿到了我想管理的群组所有信息，id自然也在里面，然后写到了配置里，这里输出一个room的聊天信息示例，这里面的roomId就是房号
 
-  ```javascript
+```json
 {"_events":{},"_eventsCount":0,"id":"2098964982947510281","payload":{"filename":"","fromId":"发送者微信号","id":"209896498xxxxx消息唯一id","mentionIdList":["wxid_diuxkznxxxx群里好友wxid列表"],"roomId":"xxxx@chatroom","text":"@Oreo 北京天气","timestamp":1607568215000,"toId":"","type":7}}
 ```
 
@@ -635,7 +631,7 @@ module.exports = async function onRoomJoin(room, inviteeList, inviter) {
 
 监听用户退出群聊
 
-  ```javascript
+```javascript
 const io = require('../socketio');
 // 进入房间监听回调 room-群聊 leaver-退群者
 module.exports = async function onRoomLeave(room, leaver) {
@@ -655,7 +651,7 @@ module.exports = async function onRoomLeave(room, leaver) {
 
 主要监听消息的接收
 
-  ```javascript
+```javascript
         // 判断此消息类型是否为文本
         if (msg.type() == Message.Type.Text) {
             // 判断消息类型来自群聊
@@ -706,7 +702,7 @@ module.exports = async function onRoomLeave(room, leaver) {
 
 这里有个代码块
 
-  ```javascript
+```javascript
 let self = await msg.to();
 ```
 
@@ -714,7 +710,7 @@ let self = await msg.to();
 
 **加入群聊监听** 这里有个业务点简单描述下，根据用户私聊的的内容，判断是否触发关键词，如果触发直接发送可加的群信息；
 
-  ```javascript
+```javascript
 /**
  * @description 回复信息是关键字 “加群” 处理函数
  * @param {Object} msg 消息对象
@@ -737,7 +733,7 @@ async function isAddRoom(msg) {
 
 回复**群名**进行群邀请  
 
-  ```javascript
+```javascript
 /**
  * @description 回复信息是所管理的群聊名 处理函数
  * @param {Object} bot 实例对象
@@ -780,14 +776,14 @@ async function isRoomName(bot, msg) {
 
 涉及到api的http请求，所以需要引入如下两个模块
 
-  ```bash
+```bash
 cnpm install --save request
 cnpm install --save urlencode
 ```
 
 这里小小吐槽下图灵，n年体验过图灵，这回本来想申请图灵的api测试，结果关注官方公众号等渠道体验。。。好吧，竟然没有机器人只能答复，遂找了家免费的AI机器人，希望大家别吐槽不智能~~~哈哈，毕竟itpk也需要慢慢进步嘛
 
-  ```javascript
+```javascript
 /**
  * @description 机器人请求接口 处理函数
  * @param {String} info 发送文字
@@ -907,7 +903,7 @@ function requestRobot(info) {
 
 这里有个槽点，调用机器人api，设置返回的数据是json，但是返回的body字符串里开通竟然多个个'-'，完了还只能在编译器的控制台能看到，放到浏览器和别的编译器显示不出来，只能进行简单替换处理
 
-  ```javascript
+```javascript
                         if (body.startsWith('?')) {//此处返回的json数据有些问题，额外处理
                             body = body.replace('?', '')
                         }
@@ -923,7 +919,7 @@ function requestRobot(info) {
 
 前端引用socket.io.js，为了方式前后端socket版本不一致带来的问题，强烈建议如下引用方式
 
-  ```javascript
+```javascript
 <script src="/socket.io/socket.io.js"></script>
 ```
 
@@ -933,13 +929,13 @@ function requestRobot(info) {
 
 前端建立socket连接
 
-  ```javascript
+```javascript
  var socket = io(url);
 ```
 
 建立连接后，监听名为getMsg的事件
 
-  ```javascript
+```javascript
         socket.on('getMsg', data => {
             console.log('服务端消息：',  data);
             msg.innerHTML = `${data} <br/>`;
@@ -948,7 +944,7 @@ function requestRobot(info) {
 
 建立连接，想服务端推送数据（socket.emit()），可以是String，可以是json对象
 
-  ```javascript
+```javascript
         function sendWxmsg(){
             var friendNick = document.querySelector('#friendNick').value;
             var wechatContent = document.querySelector('#wechatContent').value;
@@ -968,13 +964,13 @@ function requestRobot(info) {
 
 初始化socketio
 
-  ```javascript
+```javascript
 io = require("socket.io")(server);
 ```
 
 监听客户端的连接，这里socketio知识点很多，比如多客户端连接。通过id和session区分等，建议搭建参考[官方文档](https://socket.io/)，官方对socketio支持很赞，java，python，nodejs等等
 
-  ```javascript
+```javascript
 io.sockets.on('connection', function (socket) {});
 ```
 
@@ -985,7 +981,7 @@ io.sockets.on('connection', function (socket) {});
 * 调用当前监听通道，向出自己外的其他用户进行广播推送socket.broadcast.emit()
 * 调用初始化的io向某个客户端进行单独的消息推送io.to(socketedId).emit()
 
-  ```javascript
+```javascript
         //监听事件send
         socket.on("send", data => {  // 监听的频道必须和客户端监听的频道相同，等待消息
             // io.emit("监听频道", "发送的信息");  // 向所有客户端发送信息
