@@ -34,6 +34,14 @@ jobs:
       - name: NPM Test
         run: npm test
 
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-bundles
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Bundle Config
+        run: bundle config path vendor/bundle
       - name: Install Dependencies
         run: make install
       - name: Build
@@ -53,12 +61,22 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+
     - uses: actions/cache@v2
       with:
         path: ~/.npm
         key: ${{ runner.os }}-node-modules
         restore-keys: |
           ${{ runner.os }}-node-
+    - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-bundles
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Bundle Config
+        run: bundle config path vendor/bundle
+
     - name: Config Git
       run: |
         git config --global user.name 'Huan @ GitHub Action'
