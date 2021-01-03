@@ -1,6 +1,9 @@
 ---
 title: "用wechaty制作返利机器人"
-author: yoke
+author: jiangxiaotao1024
+categories: project
+tags:
+  - retail
 ---
 
 ## 用wechaty制作返利机器人

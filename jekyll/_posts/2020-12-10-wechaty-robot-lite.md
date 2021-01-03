@@ -3,8 +3,7 @@ title: "wechaty-robot-lite 微信小助手"
 author: itingle
 categories: tutorial
 tags:
-  - news
-  - wechaty
+  - assistant
 image: /assets/2020/12-wechaty-robot-lite/example-1.png
 ---
 

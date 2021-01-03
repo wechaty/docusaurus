@@ -1,7 +1,7 @@
 ---
-name: yoke
-site: https://github.com/jiangxiaotao1024/wechaty
-avatar: 
+name: Yoke
+site: https://github.com/jiangxiaotao1024
+avatar: /assets/developers/jiangxiaotao1024/avatar.png
 bio: 
 email: 1024186209@qq.com
 twitter: 
