@@ -69,11 +69,12 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-node-
     - uses: actions/cache@v2
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-bundles
-          restore-keys: |
-            ${{ runner.os }}-gems-
+      # https://github.com/actions/cache/blob/main/examples.md#ruby---bundler
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-bundles
+        restore-keys: |
+          ${{ runner.os }}-gems-
       - name: Bundle Config
         run: bundle config path vendor/bundle
 
