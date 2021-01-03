@@ -43,8 +43,8 @@ jobs:
       - name: Bundle Config
         run: |
           sudo gem install bundler
-          sudo bundle install && bundle update
           bundle config path vendor/bundle
+          bundle install && bundle update
       - name: Install Dependencies
         run: make install
       - name: Build
@@ -81,8 +81,8 @@ jobs:
     - name: Bundle Config
       run: |
         sudo gem install bundler
-        sudo bundle install && bundle update
         bundle config path vendor/bundle
+        bundle install && bundle update
 
     - name: Config Git
       run: |
