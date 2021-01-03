@@ -1,5 +1,6 @@
 ---
 title: "Introducing Wechaty Puppet Service (Providers)"
+publish: false
 author: huan
 categories: announcement
 tags:
