@@ -38,7 +38,6 @@ jobs:
         run: |
           sudo gem install bundler
           bundle config path ~/.npm/bundle
-          bundle install && bundle update
       - name: Install Dependencies
         run: make install
       - name: Build
@@ -70,7 +69,6 @@ jobs:
       run: |
         sudo gem install bundler
         bundle config path ~/.npm/bundle
-        bundle install && bundle update
 
     - name: Config Git
       run: |
