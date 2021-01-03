@@ -14,4 +14,3 @@ a noob developer
 - Github: <https://github.com/shuangjie>
 - Email：<>
 - Website: <>
-  

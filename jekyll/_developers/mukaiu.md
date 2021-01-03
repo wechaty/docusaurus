@@ -14,4 +14,3 @@ CTO of Chatopera
 - Github: <https://github.com/mukaiu>
 - Email：<>
 - Website: <>
-  

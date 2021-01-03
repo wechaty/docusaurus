@@ -14,4 +14,3 @@ formal community manager at JueJin(Chinese Hacker News)
 - Github: <https://github.com/antonia0912>
 - Email：<>
 - Website: <>
-  

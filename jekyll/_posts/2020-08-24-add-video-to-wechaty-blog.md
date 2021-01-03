@@ -2,6 +2,9 @@
 title: 使用jekyll include在wechaty博客中快速插入视频
 author: univerone
 categories: tutorial
+tags:
+  - jekyll
+  - plugin
 image: /assets/2020/add-video-to-wechaty-blog/header.png
 ---
 

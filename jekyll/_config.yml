@@ -5,7 +5,7 @@ logo: assets/images/logo.png
 favicon: assets/images/favicon.ico
 url: https://wechaty.js.org
 baseurl:
-disqus: chatie
+disqus: wechaty
 email: wechaty@chatie.io
 mailchimp-list: https://zixia.us4.list-manage.com/subscribe/post?u=a8584b55dea5aa8bbc14bd1a0&amp;id=d9899f0d70
 

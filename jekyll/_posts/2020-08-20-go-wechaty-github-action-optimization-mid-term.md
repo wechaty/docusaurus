@@ -37,16 +37,16 @@ wechaty-words-per-day-plugin-mid-term
   - 自动更新 `go-wechaty-getting-started` 依赖到最新版本
   - 完成 `win` 平台下 `ding-dong` 编译测试
   - 完成 ding-dong 的 docker 并推送到 Github Packages
-  
+
 - 遇到的问题及解决方案：
   自动化流程使得软件构建、测试、发布等操作更为便捷，提升了相关效率，也使得开源项目的维护更加容易。
-  
+
   在完成第一个核心目标时，考虑到更新`go.mod`时，其中的依赖不仅仅有`go-wechaty`相关包，后续的 examples 中可能加入其他示例，有其他依赖的加入，故而不直接使用`go get -u`仅对`go-wechaty`进行相关更新。而用了一个笨方法，在 Action 中的项目文件中，将`go.mod`备份，再使用`go mod init github.com/wechaty/go-wechaty-getting-started`再注册一次，再使用`go mod tidy`更新。之后对比新旧`go.mod`，如果两者不一致则向提交一个 Pull-Request，更新依赖。
-  
+
   在完善 Dockerfile 相关测试时，其中 golang 依赖下载需要的网络环境不支持，故而将 ENV 中的 goproxy 设置成了`goproxy.io`。且在测试时，测试用的 TOKEN 无法使用，通过自己搭建服务解决了。
-  
+
 - 后续工作安排：
-  
+
   - 8月15日~9月5日：完善内容，提交项目代码，确保原项目中代码能顺利触发。
 
 ### 相关地址

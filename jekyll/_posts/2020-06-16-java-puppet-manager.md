@@ -2,7 +2,7 @@
 title: 简单聊聊java版Puppet Manager的实现
 author: redmaple1
 tags: 
-  - wechaty
+  - java
   - java-wechaty
 categories: project
 image: /assets/2020/java-puppet-manager/java-wechaty-logo.png

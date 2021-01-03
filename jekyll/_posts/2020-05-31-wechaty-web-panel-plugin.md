@@ -4,7 +4,6 @@ author: leo_chen
 categories: project
 tags:
   - code
-  - wechaty
   - webPanel
   - plugin
   - feature

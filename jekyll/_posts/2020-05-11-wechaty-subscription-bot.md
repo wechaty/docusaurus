@@ -3,7 +3,7 @@ title: "用Wecahty制作订阅机器人(B站)"
 author: fish-ball
 categories: tutorial
 tags:
-  - wechaty
+  - subscribe
 image: /assets/2020/wechaty-subscription-bot/teaser.png
 ---
 
@@ -142,7 +142,7 @@ class UserContext {
 }).on('message', async msg => {
   // ...
   const channelId = match[1];
-  
+
   ctx.data.subscriptions[channelId] = ctx.data.subscriptions[channelId] || {};
   const channel = ctx.data.subscriptions[channelId];
   channel.lastTimestamp = Number(new Date()) / 1000;
@@ -246,9 +246,9 @@ class UserContext {
     await this.save();
     (await this.user())?.say(`您已成功退订《${channel.name}》`);
   }
-  
+
   // ...
-  
+
 }
 ```
 
@@ -277,9 +277,9 @@ bot.on('message', async msg => {
     await ctx.leaveChannel(msg.content().split(' ')[1]);
     return;
   }
-  
+
   // ...
-  
+
 });
 ```
 
@@ -289,7 +289,7 @@ bot.on('message', async msg => {
 
 测试机器人(wx_easecloud)：
 
-![逸云科技](https://github.com/fish-ball/wechaty-subsbot/raw/master/wx_easecloud.jpg)
+![逸云科技](/assets/2020/wechaty-subscription-bot/wx_easecloud.jpg)
 
 联系作者：
 

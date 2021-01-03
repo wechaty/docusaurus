@@ -14,4 +14,3 @@ Dong YAN，Founder&CEO of GhostCloud
 - Github: <https://github.com/shevyan>
 - Email：<>
 - Website: <>
-  

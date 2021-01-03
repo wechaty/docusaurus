@@ -253,7 +253,7 @@ npm uninstall \
   tslint-config-standard \
   tslint-eslint-rules \
   tslint-jsdoc-rules \
-  
+
 npm install --save-dev @chatie/eslint-config
 
 npx pkg-jq -i ".scripts.\"lint:es\"=\"eslint --ignore-pattern tests/fixtures/ '{bin,examples,scripts,src,tests}/**/*.ts'\""

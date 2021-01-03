@@ -17,6 +17,10 @@ wechaty.js.org/ | Repo Folder
 
 Run the Jekyll at localhost for blog preview.
 
+### 0 Prerequisites
+
+Follow in the official instruction to install jekyll in your local [jekyll quickstart](https://jekyllrb.com/docs/)
+
 ### 1 Use Docker
 
 This is the recommended way for new users to easy getting started

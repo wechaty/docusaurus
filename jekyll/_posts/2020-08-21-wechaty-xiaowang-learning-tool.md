@@ -2,6 +2,9 @@
 title: 基于Wechaty的群学习内容推送工具
 author: gileswong
 image: /assets/2020/wechaty-xiaowang-learning-tool/teaser.jpg
+categories: project
+tags:
+  - typescript
 ---
 
 ## 背景
@@ -26,7 +29,8 @@ image: /assets/2020/wechaty-xiaowang-learning-tool/teaser.jpg
 
 ## 功能示例
 
-![英语每日一题](/assets/2020/wechaty-xiaowang-learning-tool/img-4425.jpg)![每日早报](/assets/2020/wechaty-xiaowang-learning-tool/img-4418.jpg)
+![英语每日一题](/assets/2020/wechaty-xiaowang-learning-tool/img-4425.jpg)
+![每日早报](/assets/2020/wechaty-xiaowang-learning-tool/img-4418.jpg)
 
 ## 项目结构
 
@@ -60,7 +64,7 @@ image: /assets/2020/wechaty-xiaowang-learning-tool/teaser.jpg
 + 填写代码中的配置，如**Token**，**服务器地址、端口**等
 + 上传至服务器
 + 在其目录下，获取所有用到的NPM包
-  
+
   ```bash
     npm i
   ```

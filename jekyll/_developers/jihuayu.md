@@ -14,4 +14,3 @@ mc mod dev
 - Github: <https://github.com/jihuayu>
 - Email：<>
 - Website: <>
-  

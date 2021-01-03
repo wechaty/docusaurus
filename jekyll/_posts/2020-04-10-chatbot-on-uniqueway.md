@@ -3,7 +3,7 @@ title: "Chatbot 在定制旅游行业的应用"
 author: likai
 categories: tutorial
 tags:
-  - wechaty
+  - travel
 image: /assets/2020/chatbot-on-uniqueway/teaser.jpg
 ---
 

@@ -14,4 +14,3 @@ A student interested in OS.
 - Github: <https://github.com/nebell>
 - Email：<>
 - Website: <>
-  

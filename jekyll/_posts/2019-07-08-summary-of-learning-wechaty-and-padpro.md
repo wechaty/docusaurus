@@ -180,7 +180,7 @@ Puppet-PadPro 是 Puppet 基于 iPad 协议的一种实现方式，将 Puppet �
 
   - utils
       > 工具类方法
-  
+
   - padpro-manager
       > Padpro逻辑管理工具，主要是调用gRPC接口来实现相应的功能，也是该项目的核心之一
 

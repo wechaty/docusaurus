@@ -22,15 +22,18 @@ For a deeper understanding of the Puppet in Wechaty, you can read its source cod
 
 ### 2.1. For Puppet User
 
-| Wechaty Puppet | Backend Protocol | Npm Name | Npm Version | Stage |
-| :--- | :--- | :--- | :--- | :--- |
-| [PuppetPuppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer) | Web API via Browser Hooking | wechaty-puppet-puppeteer | ![PuppetPuppeteer](https://badge.fury.io/js/wechaty-puppet-puppeteer.svg) [![npm \(tag\)](https://img.shields.io/npm/v/wechaty-puppet-puppeteer/next.svg)](https://www.npmjs.com/package/wechaty-puppet-puppeteer?activeTab=versions) | ![Stage:Release](https://img.shields.io/badge/Stage-Release-green.svg) |
-| [PuppetPadchat](https://github.com/lijiarui/wechaty-puppet-padchat) | iPad Protocol | wechaty-puppet-padchat | ![PuppetPadchat](https://badge.fury.io/js/wechaty-puppet-padchat.svg)   [![npm \(tag\)](https://img.shields.io/npm/v/wechaty-puppet-padchat/next.svg)](https://www.npmjs.com/package/wechaty-puppet-padchat?activeTab=versions) | ![Stage:Release](https://img.shields.io/badge/Stage-Release-green.svg) |
-| [PuppetPadpro](https://github.com/botorange/wechaty-puppet-padpro) | iPad Protocol | Enhance wechaty-puppet-padchat, see more [issue1668](https://github.com/wechaty/wechaty/issues/1668) | ![PuppetPadpro](https://badge.fury.io/js/wechaty-puppet-padpro.svg)   [![npm \(tag\)](https://img.shields.io/npm/v/wechaty-puppet-padpro.svg)](https://www.npmjs.com/package/wechaty-puppet-padpro?activeTab=versions) | ![Stage:Release](https://img.shields.io/badge/Stage-Release-green.svg) |
-| [PuppetWechat4u](https://github.com/wechaty/wechaty-puppet-wechat4u) | Web API via HTTP | wechaty-puppet-wechat4u | ![PuppetWechat4u](https://badge.fury.io/js/wechaty-puppet-wechat4u.svg)   [![npm \(tag\)](https://img.shields.io/npm/v/wechaty-puppet-wechat4u/next.svg)](https://www.npmjs.com/package/wechaty-puppet-wechat4u?activeTab=versions) | ![Stage:Release](https://img.shields.io/badge/Stage-Alpha-red.svg) |
-| [PuppetIosbird](https://github.com/botorange/wechaty-puppet-iosbird) | iPhone Hook | wechaty-puppet-iosbird | ![PuppetIosbird](https://badge.fury.io/js/wechaty-puppet-iosbird.svg)   [![npm \(tag\)](https://img.shields.io/npm/v/wechaty-puppet-iosbird.svg)](https://www.npmjs.com/package/wechaty-puppet-iosbird?activeTab=versions) | ![Stage:Release](https://img.shields.io/badge/Stage-Alpha-red.svg) |
-| TBW | Android Hook | Android | 0.0.0 | ![Stage:Release](https://img.shields.io/badge/Stage-Plan-lightgrey.svg) |
-| TBW | Win32 Hook | Win32 | 0.0.0 | ![Stage:Release](https://img.shields.io/badge/Stage-Plan-lightgrey.svg) |
+| Protocol | Puppet Provider | Environment Variable |
+| --- | --- | --- |
+| Web | [PuppetPuppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer) | `export WECHATY_PUPPET=wechaty-puppet-puppeteer` |
+| Windows | [PuppetWxwork](https://github.com/juzibot/wxwork-tester) | `export WECHATY_PUPPET=wechaty-puppet-hostie` |
+| Web | [PuppetWechat4u](https://github.com/wechaty/wechaty-puppet-wechat4u) | `export WECHATY_PUPPET=wechaty-puppet-wechat4u` |
+| iPad | [PuppetRock](https://github.com/wechaty/puppet-services) | `export WECHATY_PUPPET=wechaty-puppet-hostie` |
+| iPad | [PuppetPadLocal](https://github.com/wechaty/puppet-services) | `export WECHATY_PUPPET=wechaty-puppet-hostie` |
+| Windows | [PuppetDonut](https://github.com/wechaty/puppet-services) | `export WECHATY_PUPPET=wechaty-puppet-hostie` |
+| iPad | ~~PuppetPadpro~~ **DEPRECATED** | `export WECHATY_PUPPET=wechaty-puppet-padpro` |
+| iPad | ~~PuppetPadchat~~ **DEPRECATED** | `export WECHATY_PUPPET=wechaty-puppet-padchat` |
+| iPad | ~~PuppetPadplus~~ **DEPRECATED** | `export WECHATY_PUPPET=wechaty-puppet-padplus` |
+| Mac | ~~PuppetMacpro~~ **DEPRECATED** | `export WECHATY_PUPPET=wechaty-puppet-macpro` |
 
 ### 2.2. For Puppet Builder
 
@@ -41,40 +44,66 @@ For a deeper understanding of the Puppet in Wechaty, you can read its source cod
 
 ## 3. Wechaty Puppet Compatibility
 
-### 3.1 Puppet Contact API
+### Puppet Comparison
 
-| Contact API | wechat4u & puppeteer | padchat | Iosbird |
-| :--- | :---: | :---: | :---: |
-| Permanent ContactPayload.id | ~~No~~ | Yes | Yes |
-| ContactPayload.friend | ~~No~~ | Yes | Yes |
-| weixin\(\) | ~~No~~ | Yes | Yes |
-
-### 3.2 Puppet Message API
-
-| Message API | wechat4u & puppeteer | padchat | Iosbird |
-| :--- | :---: | :---: | :---: |
-| messageSendContact\(\) | ~~No~~ | Yes | ~~No~~ |
-| messageFile\(\) | Yes | Yes for Image/Audio/Video No for other Attachments | Yes for Image/Audio/Video/other Attachments/UrlLink |
-| messageSendFile\(\) | Yes | Yes for Image/Audio/Video No for other Attachments | Yes for Image No for other Attachment |
-| messageSendUrl\(\) | ~~No~~ | Yes | ~~No~~ |
-
-### 3.3 Puppet Room API
-
-| Room API | wechat4u & puppeteer | padchat | Iosbird |
-| :--- | :---: | :---: | :---: |
-| Permanent RoomPayload.id | ~~No~~ | Yes | Yes |
-| roomQrcode\(\) | ~~No~~ | Yes | Yes |
-| roomCreate\(\) | ~~No~~ | Yes | Yes |
-| roomAdd\(\) | ~~No~~ | Yes | Yes |
-| roomDel\(\) | ~~No~~ | Yes | Yes |
-| roomQuit\(\) | ~~No~~ | Yes | Yes |
-| roomAnnounce\(\) | ~~No~~ | Yes | Yes |
-| roomPayload.owner | ~~No~~ | Yes | ~~No~~ |
+Puppet | donut | padplus | wxwork | rock
+:---|:---:|:---:| :---:| :---:
+支持账号|个人微信|个人微信|企业微信|个人微信
+**<消息>**|  |  |  |
+收发文本| ✅  | ✅  |✅ |✅
+收发个人名片| ✅  |✅   |✅ |✅
+收发图文链接| ✅  |✅   |✅ |✅
+发送图片、文件| ✅  | ✅（对内容有大小限制，20M以下）  |✅ |✅（较慢）
+接收图片、文件| ✅  | ✅（对内容有大小限制，25M以下）  |✅ |✅
+发送视频| ✅  | ✅   |✅ |✅（较慢）
+接收视频| ✅  | ✅   |✅ |✅
+发送小程序| ✅  | ✅   |✅ |✅
+接收动图| ❌  | ✅   |✅|❌
+发送动图| ✅  | ✅  |✅ |✅（以文件形式发送）
+接收语音消息| ✅  | ✅   |✅|❌
+发送语音消息| ❌  | ❌  |❌ |❌
+转发文本| ✅  | ✅   |✅ |✅
+转发图片| ✅  | ✅  |✅ |✅
+转发图文链接| ✅  | ✅  |✅|❌
+转发音频| ✅ | ❌   |✅ |❌
+转发视频| ✅  | ✅   |✅ |✅
+转发文件| ✅  | ✅   |✅|✅
+转发动图| ❌  | ❌   |✅| ❌
+转发小程序| ✅ | ✅   |✅ |✅
+**<群组>**|   |    |
+创建群聊|✅|✅ |✅|✅
+设置群公告|✅|✅|✅|✅
+获取群公告|❌|✅|❌|✅
+群二维码|❌|✅ |❌|❌
+拉人进群|✅|✅ |✅|✅
+踢人出群|✅|✅ |✅|✅
+退出群聊|✅|✅ |❌|✅
+改群名称|✅|✅ |✅|❌
+入群事件|✅|✅ |✅|✅
+离群事件|✅|✅ |✅|✅
+群名称变更事件|✅|✅|✅|❌
+@群成员|✅|✅|✅|✅
+群列表|✅|✅ |✅|✅
+群成员列表|✅|✅|✅|✅
+群详情|✅|✅|✅|✅
+**<联系人>**|  |   |
+修改备注|✅|✅ |✅|❌
+添加好友|✅|✅|✅|❌
+自动通过好友|✅|✅|✅|✅
+好友列表|✅|✅ |✅|✅
+好友详情|✅|✅|✅|✅
+**<其他>**|  |   |
+登录事件|✅|✅|✅|✅
+扫码状态|❌|✅|❌|❌
+登出事件|✅|✅|✅|❌
+主动退出登录|✅|✅|❌|✅
+依赖协议|Windows|iPad| Windows|iPad
 
 ## 4. Learn More
 
 Learn more about Wechaty Puppet at [https://github.com/wechaty/wechaty-puppet/wiki](https://github.com/wechaty/wechaty-puppet/wiki)
 
+* Contact Puppet Creators & Get Puppet Token: [https://github.com/wechaty/puppet-services](https://github.com/wechaty/puppet-services)
 * Repository: [https://github.com/wechaty/wechaty-puppet](https://github.com/wechaty/wechaty-puppet)
 * Documentation: [https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html](https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html)
 * Puppet Development Guide: [https://github.com/wechaty/wechaty-puppet/wiki/Development](https://github.com/wechaty/wechaty-puppet/wiki/Development)

@@ -3,7 +3,6 @@ title: "暑期2020 [编写一个“每日一句”插件] POC 成果展示"
 author: univerone
 categories: project
 tags:
-  - wechaty
   - plugins
   - soc
   - soc2020
@@ -72,7 +71,7 @@ image: /assets/2020/wechaty-words-per-day-plugin-mid-term/header.png
     - 进一步抽象数据抓取模块，支持使用用户自定义的数据抓取函数。能够解析每日一句信息中的图片信息，并以图片的形式发送。
 
 - 遇到的问题及解决方案：
-  
+
   - 在编写这个插件的过程中，有很多需要等待一定时间来完成的步骤，比如图片的下载保存等，这些过程是异步执行的，如果想在这个过程结束后进行下一个过程使用它的结果，可以使用回调函数，但是可读性比较差，因此最终改用Promise以及Async/Await进行处理。
   - 图像处理使用了npm的gm包，相关文档不够详细因此在处理图像的过程中花费较多时间达到想要的效果。
 

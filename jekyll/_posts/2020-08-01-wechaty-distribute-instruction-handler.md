@@ -3,7 +3,6 @@ title: "wechaty plugin for easily extending capabilities"
 author: watertao
 categories: npm
 tags:
-  - wechaty
   - wechaty-puppet-padplus
   - chatbot
   - cli

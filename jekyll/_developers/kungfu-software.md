@@ -14,4 +14,3 @@ Founder of [Kungfu Software](http://kungfusoftware.net)
 - Github: <https://github.com/kungfu-software>
 - Email：<>
 - Website: <>
-  

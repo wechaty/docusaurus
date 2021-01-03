@@ -1,6 +1,7 @@
 ---
 title: "基于python-wechaty的CPS BOT"
 author: why2lyj
+categories: project
 tags:
   - python
   - featured

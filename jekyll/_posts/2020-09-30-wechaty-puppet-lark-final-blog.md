@@ -61,7 +61,7 @@ tags:
 - 项目成果：
   - 项目仓库位于: <https://github.com/Roxanne718/wechaty-puppet-lark>
   - Live coding视频:{% include iframe.html src="https://youtu.be/eutz5EMlJCI" %}
-  - Demo 视频:{% include iframe.html src="https://youtu.be/EhB1NCaFjok" %}
+  - Demo 视频:{% include iframe.html src="https://youtu.be/_y5DktHdL9U" %}
   
 - 遇到的问题及解决方案：
   - 使用Ngrox进行内网穿透时，每次重启子域名都会发生变化，在老师的建议和指导下最终采用localtunnel解决了这一问题。

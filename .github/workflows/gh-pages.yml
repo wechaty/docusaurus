@@ -22,10 +22,24 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-wechaty.js.org-cache
+          restore-keys: |
+            ${{ runner.os }}-wechaty.js.org-
+
+      - name: NPM Install
+        run: npm install
+      - name: NPM Test
+        run: npm test
+
+      - name: Bundle Config
+        run: |
+          sudo gem install bundler
+          bundle config path ~/.npm/bundle
       - name: Install Dependencies
         run: make install
-      - name: Test
-        run: npm test
       - name: Build
         run: npm run build
 
@@ -43,6 +57,19 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+
+    - uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-wechaty.js.org-cache
+        restore-keys: |
+          ${{ runner.os }}-wechaty.js.org-
+
+    - name: Bundle Config
+      run: |
+        sudo gem install bundler
+        bundle config path ~/.npm/bundle
+
     - name: Config Git
       run: |
         git config --global user.name 'Huan @ GitHub Action'

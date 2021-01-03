@@ -1,13 +1,13 @@
 ---
-title: "年末最硬核！微软AI全球训练营北京站落幕"
-published: false
-author: 句子互动
+title: 年末最硬核！微软AI全球训练营北京站落幕
+author: lijiarui
+categories: event
 tags:
   - event
+  - microsoft
+  - ai
   - news
 ---
-
- > Author: 句子互动
 
 ## 年末最硬核！微软AI全球训练营北京站落幕
 

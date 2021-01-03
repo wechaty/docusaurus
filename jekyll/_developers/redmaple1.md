@@ -14,4 +14,3 @@ Committer of java-wechaty. ex Zhihu Engineer
 - Github: <https://github.com/redmaple1>
 - Email：<>
 - Website: <>
-  

@@ -26,4 +26,3 @@ email: yinbohao@juzi.bot
 
 - Github: <https://github.com/rickyyin98>
 - Email：<yinbohao@juzi.bot>
-  

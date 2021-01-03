@@ -14,4 +14,3 @@ Co-founder of 小理智能, Musical lover, Movie addict.
 - Github: <https://github.com/judaschrist>
 - Email：<>
 - Website: <>
-  

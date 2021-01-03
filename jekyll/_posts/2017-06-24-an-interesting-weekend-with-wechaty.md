@@ -24,28 +24,28 @@ Firstly, I implemented some basic features. Like below
 ```javascript
 const bot = Wechaty.instance({profile: 'secretary'});
 bot.on('friend', async function(contact, request){
-  if(request){
-    await request.accept()
-    await contact.say('您好，我是 FCC（freeCodeCamp成都社区）的姜姜姜，很高兴认识你*^_^*回复暗号”FCC成都社区”， 加入FCC成都社区群。直接聊天，请  随意…')
-  }
+  if(request){
+    await request.accept()
+    await contact.say('您好，我是 FCC（freeCodeCamp成都社区）的姜姜姜，很高兴认识你*^_^*回复暗号”FCC成都社区”， 加入FCC成都社区群。直接聊天，请  随意…')
+  }
 })
 ```
 
 ## Input keyword then add him/her into the chat group
 
 ```javascript
-  bot.on('message', async function(m){
-    const fromContact = m.from()
-    const fromContent = m.content()
-    const room = m.room()
-    if(/FCC成都社区/.test(fromContent)){
-      let keyroom = await Room.find({topic: 'FreeCodeCamp-成都'});
-      if(keyroom){
-        await keyroom.add(fromContact);
-        await keyroom.say(`欢迎 @${fromContact.name()} 加入FCC(freecodecamp)成都社区*^_^*`)
-      }
-    }
-  })
+  bot.on('message', async function(m){
+    const fromContact = m.from()
+    const fromContent = m.content()
+    const room = m.room()
+    if(/FCC成都社区/.test(fromContent)){
+      let keyroom = await Room.find({topic: 'FreeCodeCamp-成都'});
+      if(keyroom){
+        await keyroom.add(fromContact);
+        await keyroom.say(`欢迎 @${fromContact.name()} 加入FCC(freecodecamp)成都社区*^_^*`)
+      }
+    }
+  })
 ```
 
 The above feature has already help her lessen some work. But my friend think it is not enough to satisfy her requirement. She is a very beautiful girl, so there is someone always asked her if she has boyfriend. That makes her boyfriend a little annoyed. So she want me to implement a feature that is if someone in this chat group ask her something about her bf the chat bot can send a photo of her bf.
@@ -58,7 +58,7 @@ await m.say(new MediaMessage(__dirname + '/../image/BotQrcode.png'))
 ```
 
 I tried immediately, it does work. haha~perfect~
-Then I  use `api.ai`. If someone say: ‘Does  @姜姜姜 have boy friend?’ or say some synonym the chat bot will send a photo of her bf automatically. Well that was I did in last weekend. I think wechaty is an interesting library.
+Then I  use `api.ai`. If someone say: ‘Does  @姜姜姜 have boy friend?’ or say some synonym the chat bot will send a photo of her bf automatically. Well that was I did in last weekend. I think wechaty is an interesting library.
 
 At the end, I help the author of Wechaty add this api to the Wechaty documentation.
 

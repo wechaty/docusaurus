@@ -3,7 +3,6 @@ title: "暑期2020 [为 go-wechaty 设计实现插件体系] 结项报告"
 author: finctive
 categories: project
 tags:
-  - wechaty
   - plugins
   - soc
   - soc2020
@@ -101,27 +100,27 @@ bot.OnMessage(func(context *wechaty.Context, message *user.Message) {
 执行顺序：Part A → pluginB → pluginC → Part D
 
 - 开关
-  
+
   - 禁用、启用插件。
-  
+
     对应方法：`Plugin.SetEnable`
-  
+
     通过加锁的方式修改插件属性变量。这个方法是并发安全的。
-  
+
   - 在本轮消息事件中，暂时禁用某一个插件。
-  
+
     对应方法：`Context.DisableOnce`
-  
+
   - 消息拦截，跳过后续插件对该本轮消息事件的处理。同时终止所有仍在进行的插件代码操作，即先前插件产生的 Goroutine。
-  
+
     对应方法：`Context.Abort` 以及 `Context.Done`
-  
+
   - 在并发程序中，控制插件内部 goroutine 的结束。用法与 Go 语言中的 context.Context ([WithCancel  ()](https://golang.org/pkg/context/#WithCancel))相同。
-  
+
     对应方法：`Context.Abort` 以及 `Context.Done`
-  
+
     示例：
-  
+
     ```go
     plugin := NewPlugin()
     plugin.OnMessage(func(context *wechaty.Context, message *user.Message) {
@@ -130,15 +129,15 @@ bot.OnMessage(func(context *wechaty.Context, message *user.Message) {
             select {
             case <-ctx.Done():
                 // terminated by wechaty.Context.Abort()
-  
+
            // other code ...
-  
+
            }
         }(context)
     })
-  
+
     // other code ...
-  
+
     // context.Abort() will terminate the goroutine
     ```
 

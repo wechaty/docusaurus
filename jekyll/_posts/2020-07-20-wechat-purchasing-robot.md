@@ -3,7 +3,6 @@ title: "微信代购机器人（WeChat Purchasing Robot）"
 author: devozou
 categories: project
 tags:
-  - wechaty
   - wechaty-puppet-padplus
 image: /assets/2020/wechat-purchasing-robot/header.jpg
 ---
