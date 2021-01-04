@@ -5,8 +5,8 @@ categories: event
 tags:
   - puppet
   - news
-  - sticky
   - workshop
+  - tutorial
 image: /assets/2020/wechaty-puppet-maker/puppet.png
 ---
 
