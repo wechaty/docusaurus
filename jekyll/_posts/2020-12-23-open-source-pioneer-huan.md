@@ -7,10 +7,11 @@ tags:
   - honor
   - open-source
   - news
+  - sticky
 image: /assets/2020/12-open-source-pioneer-huan/pioneer.png
 ---
 
-> 简介：2020 年 12 月 23 日，由 SegmentFault 思否发起的第二届“中国技术先锋”年度评选结果揭晓，Wechaty 作者，BOT5.Club Chair，腾讯 Chatbot TVP，PreAngel Partner 李卓桓入选 2020 “中国开源先锋33人”年度榜单。
+> 2020 年 12 月 23 日，由 SegmentFault 思否发起的第二届“中国技术先锋”年度评选结果揭晓，Wechaty 作者，BOT5.Club Chair，腾讯 Chatbot TVP，PreAngel Partner 李卓桓入选 2020 “中国开源先锋33人”年度榜单。
 
 12 月 23 日，「SegmentFault 思否」联合「开源社」重磅推出《2020 中国开源先锋 33 人》榜单。Wechaty 作者李卓桓入选“心”尖上的开源人物。
 
