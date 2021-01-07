@@ -10,11 +10,11 @@ Learn more from [Wechaty OSS Project and the Commercial Puppet Service Provider 
 
 Now, we have the following Wechaty Puppet Services:
 
-| Name | Platform | Protocol | Maintainer |
+| Name | Platform | Protocol | Maintainer | Buy
 | :---: | :---: | :---: | :---: |
-| [WXWork](wxwork/) | WeCom | Windows | @juzibot |
-| [PadLocal](padlocal/) | WeChat | Pad | @padlocal |
-| [Donut](donut/) | WeChat | Windows | @juzibot |
+| [WXWork](wxwork/) | WeCom | Windows | @juzibot | [Buy](https://qiwei.juzibot.com/user/login?isWechaty=true) |
+| [PadLocal](padlocal/) | WeChat | Pad | @padlocal | [Contact](https://github.com/padlocal/wechaty-puppet-padlocal/wiki/TOKEN-%E7%94%B3%E8%AF%B7%E6%96%B9%E6%B3%95)|
+| [Donut](donut/) | WeChat | Windows | @juzibot | Will sunset 6 months later |
 
 ## FAQ
 
