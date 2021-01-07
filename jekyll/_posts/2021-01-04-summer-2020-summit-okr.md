@@ -22,6 +22,8 @@ Before the travel to Nanjing, in order to make the goal clear, we have a meeting
 >
 > &mdash; [The ultimate OKR guide](https://www.perdoo.com/okr-guide/)
 
+The following points about the Key Result are copy/pasted from our previous discussion from our AI-ML.Club: [BUPT/magic-mirror - OKR管理项目的方式探讨 #17](https://github.com/BUPT/magic-mirror/issues/17)
+
 ## What is Key Result
 
 The Key Result needs to be an outcome(what we get) instead of output(what we do). At the same time, we have to make sure KRs are value-based, measurable with metrics, and most importantly, should be short.
@@ -44,7 +46,7 @@ A short goal will make it easy to be understood, so we should always prevent lon
 
 Almost anything can be measured. If you’re struggling to find Key Results for an Objective, ask yourself “How will I know when my Objective has been achieved?”. Make sure to choose Key Results that are outcome based, look for metrics you don’t directly own or control, but that you can influence.
 
-## Initiative (To-do list)
+## What is Initiative (To-do list)
 
 When we are planning to do something, we are very likely to define a list of todos, because we can control it very easily, like
 
@@ -58,19 +60,19 @@ The above result will not be able to be controlled by ourselves, but we can only
 
 So, I believe the reason the Padoo introduce the initiative concept to OKRs is that everyone wants to have a TODO list for their OKRs, which could make them more comfortable. And they always want to put a TODO list as the Key Results, which is not right and needs to be clarified.
 
-### Key Result v.s. Initiative
+## Key Result v.s. Initiative
 
 The most important when we are using OKRs is that we have to make sure that we are listing the real **Key Results** instead of ~~Initiatives~~ as our Key Results.
 
 According to [What is an OKR?](https://www.perdoo.com/resources/):
 
-#### Key Result
+### 1. Key Result
 
 > “How do I know if I’m getting there?” A Key Result shows you how you’re progressing towards your Objective. Think of it as a signpost with a distance marker.
 >
 > A Key Result is a metric with a starting value and a target value that measures progress towards an Objective.
 
-#### Initiative
+### 2. Initiative
 
 > “What will I do to get there?” An Initiative describes what you’ll do to influence your Key Results. Think of it as the description of what you’ll do to get to your destination.
 >
@@ -86,6 +88,8 @@ In short, a `Key Result` is "What you can get(outcome)", and the `Initiative` is
 At last, `Key Results` must be **measurable**.
 
 ## Wechaty OKRs
+
+The following OKR discussion is copy/pasted from [wechaty/summer-of-code - Wechaty Open Source Software Supply Chain 2020 Najing Summit OKR Review #26](https://github.com/wechaty/summer-of-code/issues/26)
 
 ![Wechaty Goals](/assets/2021/01-summer-2020-summit-okr/goal.png)
 
@@ -106,53 +110,53 @@ In this open-source summit, we have the following **Ultimate Objectives** and **
 1. A Standard of Process (SOP) for promoting Wechaty in events in the future
     > Check-list, Resources, Scripts
 
-### Team OKR
+## Team OKR
 
-#### OKR: @wj-Mcat
+### 1. OKR: @wj-Mcat
 
-##### Objectives
+#### Objectives
 
 1. Tell a story that how do I start python-wechaty open-source project and make it attractive
 1. Give a live-coding process that can invite developers into Wechat Group and play with one/two games.
 
-##### Key Results
+#### Key Results
 
 1. Make a presentation that influence 30+ developers on-site
 1. Write a blog post for the representation that gets 100+ reads from chatbot developers.
 1. Build a Wechat Group at the beginning of the presentation to include 30+ audiences in the rooms.
 
-#### OKR: @univerone
+### 2. OKR: @univerone
 
-##### Objectives
+#### Objectives
 
 1. Make Wechaty draw the most attention among all the projects.
 
-##### Key Results
+#### Key Results
 
 1. Collect videos(Captured by Dji and Talk videos), Collect relevant pictures, make a vlog video(with help from Bohao), publish it on YouTube, has 100 views.
 1. Write a blog and have 100 views.
 1. Introduce Wechaty to more than 20 people.
 
-#### OKR: @rickyyin98
+### 3. OKR: @rickyyin98
 
-##### Objectives
+#### Objectives
 
 1. Make Wechaty all design to be known as one of the most attractive open-source design in this event
 1. Set up a SOP and make it can cover all similar activities
 
-##### Key Results
+#### Key Results
 
 1. Present our projects via live code game & flyer, influence 200+ developers
 1. convert 20+ developers to Wechaty Developer.
 
-#### OKR: @huan
+### 4. OKR: @huan
 
-##### Objectives
+#### Objectives
 
 1. Tell a story form the Wechaty open source community and make it attractive
 1. Play a ding/dong game with audiences in the room to demo what Wechaty can do and make it fun
 
-##### Key Results
+#### Key Results
 
 1. Make a presentation that influences 50+ developers on site
 1. Write a blog post for the presentation that get 100+ reads from chatbot developers
@@ -160,8 +164,6 @@ In this open-source summit, we have the following **Ultimate Objectives** and **
 
 ## Related Links
 
-- [wechaty/summer-of-code - Wechaty Open Source Software Supply Chain 2020 Najing Summit OKR Review #26](https://github.com/wechaty/summer-of-code/issues/26)
-- [BUPT/magic-mirror - OKR管理项目的方式探讨 #17](https://github.com/BUPT/magic-mirror/issues/17)
 - [The Ultimate Guide to OKR](https://www.perdoo.com/the-ultimate-okr-guide/)
 - [Guide: Set goals with OKRs](https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/)
 
