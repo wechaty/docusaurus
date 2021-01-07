@@ -64,4 +64,3 @@ Add this Wechaty badge to your README:
 ```
 
 Then add it to the list at [Project using Wechaty](http://wechaty.js.org/docs/case-study/projects-using-wechaty)
- 
