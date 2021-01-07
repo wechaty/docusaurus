@@ -12,7 +12,7 @@ It takes a community to design, build, and ship great chatbot.
 
 Building an chatbot that on top of Wechaty? Apply for our Developer Program! The possibilities are endless, and you enjoy the kudos.
 
-If you are looking for the developer program from 句子互动, please go to visit the great introduction documentation at <https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty/>
+If you are looking for the developer program from Juzi.BOT, please go to visit the great introduction documentation at <https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty/>
 
 [![Juzi.BOT Developer Program](https://img.shields.io/badge/Wechaty%20Developer%20Program-Juzi.BOT-orange.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty/)
 
