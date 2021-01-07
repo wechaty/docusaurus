@@ -17,7 +17,7 @@ Before the travel to Nanjing, in order to make the goal clear, we have a meeting
 > Objectives and key results (OKR) is a goal-setting framework for defining and tracking objectives and their outcomes.
 >
 > &mdash; [Wikipedia](https://en.wikipedia.org/wiki/OKR)
-
+>
 > An OKR consists of an Objective, which tells you where to go, and several Key Results, which are the results you need to achieve to get to your Objective. Initiatives are all the projects and tasks that will help you achieve your Key Results.
 >
 > &mdash; [The ultimate OKR guide](https://www.perdoo.com/okr-guide/)
@@ -64,14 +64,14 @@ The most important when we are using OKRs is that we have to make sure that we a
 
 According to [What is an OKR?](https://www.perdoo.com/resources/):
 
-> **Key Result**
->
+#### Key Result
+
 > “How do I know if I’m getting there?” A Key Result shows you how you’re progressing towards your Objective. Think of it as a signpost with a distance marker.
 >
 > A Key Result is a metric with a starting value and a target value that measures progress towards an Objective.
 
-> **Initiative**
->
+#### Initiative
+
 > “What will I do to get there?” An Initiative describes what you’ll do to influence your Key Results. Think of it as the description of what you’ll do to get to your destination.
 >
 > An Initiative is a description of the work you’ll do to influence a Key Result.
