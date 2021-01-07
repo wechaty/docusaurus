@@ -2,8 +2,6 @@ import marked from 'marked'
 import fs from 'fs'
 
 function markdownImageList (file: string): string[] {
-  console.info('file:', file)
-
   const markdown  = fs.readFileSync(file).toString()
   const tokenList = marked.lexer(markdown)
 

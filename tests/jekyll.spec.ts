@@ -327,7 +327,7 @@ test('all images linked from the post should be stored local (in the repo) for p
   }
 })
 
-test('all asset files should be put into folder `/assets/YYYY/MM-slug-slug-slug/` (slugs should be the same as the post)', async t => {
+test('all asset files should be put into folder `/assets/YYYY/MM-slug-...-slug/` (slugs should be the same as the post)', async t => {
   const postsFileList = await glob(`${POSTS_FOLDER}/**/*`)
 
   for (const filename of postsFileList) {
