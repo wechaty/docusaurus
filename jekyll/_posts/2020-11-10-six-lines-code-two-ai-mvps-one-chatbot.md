@@ -11,7 +11,7 @@ image: /assets/2020/11-mvp-six-two-one/wechaty-contributors.webp
 
 **Six lines of code. Two MVPs. One chatbot.**
 
-This is the proposition behind WeChaty, a conversational SDK which enables for bot development with just six lines of JavaScript, Python, Go, and Java, and cross-platform support including Linux, Windows, MacOS, and Docker.
+This is the proposition behind WeChaty, a RPA SDK which enables for bot development with just six lines of JavaScript, Python, Go, and Java, and cross-platform support including Linux, Windows, MacOS, and Docker.
 
 Created by AI MVPs [Jiarui Li](https://mvp.microsoft.com/en-us/mvp/jiarui%20li-5003226) and [Huan Li](https://mvp.microsoft.com/en-us/mvp/Huan%20%E2%80%86%20LI-5003061), the open-source repository on GitHub has enabled more than 10,000 developers from countries around the world to make AI chatbots and connect to each other.
 

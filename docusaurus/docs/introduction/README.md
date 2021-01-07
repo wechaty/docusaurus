@@ -4,7 +4,7 @@ sidebar_label: Introduction Index
 title: Wechaty Introduction
 ---
 
-![Wechaty is a Conversational SDK for Chatbot Makers](/img/wechaty-logo.svg)
+![Wechaty is a RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ title: Wechaty Introduction
 - [Motivations](motivations.md)
 - [Alternatives](alternatives.md)
 - [Multi Languages](multi-language.md)
-- [Instance Messages] Conversational Protocols](puppet.md)
+- [Multi IMs](puppet.md)
 - **Examples**
       'examples',
       'examples2',
