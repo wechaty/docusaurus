@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
   title: 'Wechaty',
-  tagline: 'Conversational SDK for Chatbot Makers',
+  tagline: 'RPA SDK for Chatbot Makers',
   url: 'https://wechaty.js.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',

@@ -3,6 +3,8 @@ title: 'Wechaty FAQ: Puppet'
 sidebar_label: Puppet
 ---
 
+Wechaty supports multi IMs (Instant Messaging) by our called Wechaty Puppet System.
+
 ## Table of Contents
 
 - **General**

@@ -99,7 +99,7 @@ In this open-source summit, we have the following **Ultimate Objectives** and **
 
 1. Make Wechaty to be known as one of the **best open-source projects** in China
 1. Make more people get to know **what problem that Wechaty can solve**.
-    > Wechaty is a conversational SDK for Chatbot Makers that supports connecting to WeChat, DingTalk, Lark, WhatsApp, Teams, and Gitter and it can build a chatbot in 6 lines of code in almost any language.
+    > Wechaty is a RPA SDK for Chatbot Makers that supports connecting to WeChat, DingTalk, Lark, WhatsApp, Teams, and Gitter and it can build a chatbot in 6 lines of code in almost any language.
 
 ### Ultimate Key Results
 
