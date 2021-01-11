@@ -63,7 +63,7 @@ image: /assets/2020/12-summer-2020-student-developers/award.png
 
 ## 项目 2 - 基于开放 API 封装 Wechaty 接口下的飞书聊天机器人
 
-![Wechaty Summer 2020 范蕊](/assets/2020/12-summer-2020-student-developers/fanrui.jpg)
+![Wechaty Summer 2020 范蕊](/assets/2020/12-summer-2020-student-developers/fanrui.webp)
 
 - 学生：范蕊，南开大学（大四）
 - 导师：高原，李佳芮
