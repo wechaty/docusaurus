@@ -3,9 +3,8 @@ title: "今年夏天，Wechaty 社区与 9 位开源后浪的故事"
 author: huan
 categories: announcement
 tags:
-  - okr
   - news
-  - summer-2020
+  - soc2020
   - soc
 image: /assets/2020/12-summer-2020-student-developers/award.png
 ---
