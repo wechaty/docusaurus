@@ -31,7 +31,7 @@ image: /assets/2020/12-summer-2020-student-developers/award.png
 
 > 暑期2020的优秀学生最具潜力奖！
 
-![Wechaty Summer 2020 孔祥哲](/assets/2020/12-summer-2020-student-developers/kongxiangzhe.jpg)
+![Wechaty Summer 2020 孔祥哲](/assets/2020/12-summer-2020-student-developers/kongxiangzhe.webp)
 
 - 学生：孔祥哲，清华大学（大二）
 - 导师：吴京京
