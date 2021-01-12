@@ -14,9 +14,7 @@ image: /assets/2021/01-wechaty-charbot/1.png
   为了实现在微信上实现同等功能，便开始在github上寻找微信机器人，直到看到Wechaty解决方案，它是适用于微信个人及企业微信的BotSDK，提供微信机器人完美解决方案。
 
 ## Wechaty
-  [Wechaty](https://wechaty.github.io/) 是适用于微信个人帐户的Bot SDK，可以帮助您创建6行JavaScript的机器人，并具有包括[Linux](https://travis-ci.com/wechaty/w
-echaty)，[Windows](https://ci.appveyor.com/project/wechaty/wechaty)，[Darwin（OSX / Mac）](https://travis-ci.com/Wechaty/wechaty)和[Docker](https://app.shipp
-able.com/github/Wechaty/wechaty)在内的跨平台支持。
+  [Wechaty](https://wechaty.github.io/) 是适用于微信个人帐户的Bot SDK，可以帮助您创建6行JavaScript的机器人，并具有包括[Linux](https://travis-ci.com/wechaty/wechaty)，[Windows](https://ci.appveyor.com/project/wechaty/wechaty)，[Darwin（OSX / Mac）](https://travis-ci.com/Wechaty/wechaty)和[Docker](https://app.shippable.com/github/Wechaty/wechaty)在内的跨平台支持。
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/chatie/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
