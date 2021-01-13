@@ -114,6 +114,10 @@ cd jekyll
 make serve
 ```
 
+### 2 Preview the Blog
+
+Go to <http://127.0.0.1:4000/blog/> , you can preview the blog successfully!
+
 See more: [jekyll for wechaty.js.org](https://github.com/wechaty/wechaty.js.org/tree/puppet/jekyll)
 
 ## Welcome to contribute
