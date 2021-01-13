@@ -110,6 +110,7 @@ You should not use this way except you are a Ruby expert.
 
 ```sh
 make install
+cd jekyll
 make serve
 ```
 
