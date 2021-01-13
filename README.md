@@ -98,13 +98,13 @@ npm test
 
 ## Preview
 
-Run the Jekyll at localhost for blog preview.
+Run the Jekyll localhost for blog preview.
 
-### 0 Prerequisites
+### 0. Prerequisites
 
 Follow in the official instruction to install jekyll in your local [jekyll quickstart](https://jekyllrb.com/docs/)
 
-### 1 Install Jekyll by Hand
+### 1. Install Jekyll by Hand
 
 You should not use this way except you are a Ruby expert.
 
@@ -114,7 +114,7 @@ cd jekyll
 make serve
 ```
 
-### 2 Preview the Blog
+### 2. Preview the Blog
 
 Go to <http://127.0.0.1:4000/blog/> , you can preview the blog successfully!
 
