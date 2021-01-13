@@ -27,7 +27,7 @@ For a deeper understanding of the Puppet in Wechaty, you can read its source cod
 | Web | [PuppetPuppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer) | `export WECHATY_PUPPET=wechaty-puppet-puppeteer` |
 | Windows | [PuppetWxwork](https://github.com/juzibot/wxwork-tester) | `export WECHATY_PUPPET=wechaty-puppet-hostie` |
 | Web | [PuppetWechat4u](https://github.com/wechaty/wechaty-puppet-wechat4u) | `export WECHATY_PUPPET=wechaty-puppet-wechat4u` |
-| iPad | [PuppetRock](https://github.com/wechaty/puppet-services) | `export WECHATY_PUPPET=wechaty-puppet-hostie` |
+| iPad | [PuppetPaimon](https://github.com/wechaty/puppet-services) | `export WECHATY_PUPPET=wechaty-puppet-hostie` |
 | iPad | [PuppetPadLocal](https://github.com/wechaty/puppet-services) | `export WECHATY_PUPPET=wechaty-puppet-hostie` |
 | Windows | [PuppetDonut](https://github.com/wechaty/puppet-services) | `export WECHATY_PUPPET=wechaty-puppet-hostie` |
 | iPad | ~~PuppetPadpro~~ **DEPRECATED** | `export WECHATY_PUPPET=wechaty-puppet-padpro` |

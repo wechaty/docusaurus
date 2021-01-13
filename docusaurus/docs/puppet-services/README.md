@@ -14,7 +14,7 @@ Now, we have the following Wechaty Puppet Services:
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [WXWork](wxwork/) | WeCom | Windows | @juzibot | [Buy](https://qiwei.juzibot.com/user/login?isWechaty=true) | wechaty-puppet-hostie | juzibot |
 | [PadLocal](padlocal/) | WeChat | Pad | @padlocal | [Contact](https://github.com/padlocal/wechaty-puppet-padlocal/wiki/TOKEN-%E7%94%B3%E8%AF%B7%E6%96%B9%E6%B3%95)| wechaty-puppet-padlocal | oxddoxdd |
-| [paimon]| WeChat | Pad | @zpaimon | [Buy](http://150.158.176.142/) | wechaty-puppet-hostie | hutusheng-bot |
+| [paimon](paimon/)| WeChat | Pad | @zpaimon | [Buy](http://150.158.176.142/) | wechaty-puppet-hostie | hutusheng-bot |
 | [Donut](donut/) | WeChat | Windows | @juzibot | Will sunset 6 months later | wechaty-puppet-hostie | juzibot |
 
 ## FAQ

@@ -79,6 +79,7 @@ module.exports = {
       'puppet-services/README',
       'puppet-services/wxwork',
       'puppet-services/padlocal',
+      'puppet-services/paimon',
       'puppet-services/donut',
     ],
     'Developer Program': [
