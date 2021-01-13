@@ -96,6 +96,25 @@ npm install
 npm test
 ```
 
+## Preview
+
+Run the Jekyll at localhost for blog preview.
+
+### 0 Prerequisites
+
+Follow in the official instruction to install jekyll in your local [jekyll quickstart](https://jekyllrb.com/docs/)
+
+### 1 Install Jekyll by Hand
+
+You should not use this way except you are a Ruby expert.
+
+```sh
+make install
+make serve
+```
+
+See more: [jekyll for wechaty.js.org](https://github.com/wechaty/wechaty.js.org/tree/puppet/jekyll)
+
 ## Welcome to contribute
 
 ### Why contribute?
