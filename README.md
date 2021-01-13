@@ -106,7 +106,7 @@ Follow in the official instruction to install jekyll in your local [jekyll quick
 
 ### 1. Install Jekyll by Hand
 
-You should not use this way except you are a Ruby expert.
+Run the Jekyll at localhost for blog preview. (It would be easier for a Ruby expert.)
 
 ```sh
 make install
