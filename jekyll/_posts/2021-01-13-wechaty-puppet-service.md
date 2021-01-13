@@ -11,7 +11,7 @@ image: /assets/2021/01-wechaty-puppet-service/5-puppets.jpg
 
 ## Wechaty Puppet Service
 
-WeChaty is heavily dependeing on the RPA (Robotic Progress Automation) technology to convert the IM software to a software module.
+Wechaty is heavily dependeing on the RPA (Robotic Progress Automation) technology to convert the IM software to a software module.
 
 When we published Wechaty on May 2016, we were using WebDriver/Puppeteer([wechaty-puppet-puppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer)) to hook to the Web WeChat code, but later the [Web Protocol has been deprecated](https://github.com/wechaty/wechaty/issues/603) and we have to find other ways to get the job done.
 

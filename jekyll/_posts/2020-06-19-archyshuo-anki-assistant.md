@@ -76,7 +76,7 @@ And [Archy the Anki Bot 0.0.1](https://github.com/archywillhe/archy-the-anki-bot
 
 ![Informal UML](/assets/2020/archyshuo-anki-assistant/informal-uml.png)
 
-Basically we would have an `ArticleAnalysor`, a `TextAnalysor`, a `Lexicographer`, and an `AnkiDeckGenerator`. And we would integrate everything in main.ts where we handle WeChaty callbacks.
+Basically we would have an `ArticleAnalysor`, a `TextAnalysor`, a `Lexicographer`, and an `AnkiDeckGenerator`. And we would integrate everything in main.ts where we handle Wechaty callbacks.
 
 基本来说，我们会有一个`ArticleAnalysor`、 `TextAnalysor`、 `Lexicographer`、 `AnkiDeckGenerator`。 然后，我们会在处理WeChaty回调的main.ts中合并所有东西。
 
@@ -129,7 +129,7 @@ Huge thanks to
 
 - [contributors of the genanki library for writing such an easy-to-use tool!](https://github.com/kerrickstaley/genanki/graphs/contributors)
 
-- the [WeChaty community](https://wechaty.github.io/) and [everyone involved in making WeChaty such a wonderful lib!](https://github.com/wechaty/wechaty#two_hearts-contributors) And [the Juzi.bot team](https://botorange.com/) for [opening up their padplus protocol ecosystem](https://github.com/juzibot/Welcome/wiki/Support-Developers) for outsiders like me!
+- the [Wechaty community](https://wechaty.github.io/) and [everyone involved in making Wechaty such a wonderful lib!](https://github.com/wechaty/wechaty#two_hearts-contributors) And [the Juzi.bot team](https://botorange.com/) for [opening up their padplus protocol ecosystem](https://github.com/juzibot/Welcome/wiki/Support-Developers) for outsiders like me!
 
 If you are interested in the development of this project feel free to follow Archy.sh on WeChat and TikTok or [join our mailing list](https://mailing-list.xn--nqr.xn--fiqs8s/) =)
 

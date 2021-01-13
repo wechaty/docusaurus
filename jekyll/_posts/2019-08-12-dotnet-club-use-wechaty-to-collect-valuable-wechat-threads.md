@@ -1,5 +1,5 @@
 ---
-title: dotnet club 借助 WeChaty 沉淀深度技术对话
+title: dotnet club 借助 Wechaty 沉淀深度技术对话
 author: jijiechen
 categories: story
 tags:
@@ -38,7 +38,7 @@ tags:
 
 情何以堪！
 
-## WeChaty 成就 dotnet club 时光机
+## Wechaty 成就 dotnet club 时光机
 
 这时，聪明的我在想，大佬们分享的时候，大家都爽，可惜就是像上面这种做笔记的好人太少，而对于日以继夜的大佬们来说，这点小事更是不会上心。如果有一种工具能帮我们把微信群里大佬们的精辟对话导出来，放到某个地方供后人瞻仰、查阅，岂不美哉？
 
@@ -52,15 +52,15 @@ tags:
 
 ![对话转换流程图](/assets/2019/dotnetclub-chaty/convert-flow-large.jpg)
 
-其中最为关键的就是右上角的“WeChaty 自动转换客服” club-chaty 项目，它能将收到的微信“消息记录”类型的消息导出为 JSON 格式，同时解析并下载其中包含的多媒体消息，包括链接、文件和图片视频等。
+其中最为关键的就是右上角的“Wechaty 自动转换客服” club-chaty 项目，它能将收到的微信“消息记录”类型的消息导出为 JSON 格式，同时解析并下载其中包含的多媒体消息，包括链接、文件和图片视频等。
 
-之所以它能将微信消息提取到微信之外，这得益于微信消息解析 SDK。club-chaty 开发之初，在选用微信 SDK 的时候，发现社区中的微信 SDK 很多，琳琅满目到处都是，一时之间，难分伯仲。然而，club-chaty 要求能够解析“消息记录”类型的消息，这一硬性要求很快便将绝大多数 SDK 排除在外了。只有 [WeChaty](https://github.com/wechaty/wechaty) 才能完美地提供这些功能。
+之所以它能将微信消息提取到微信之外，这得益于微信消息解析 SDK。club-chaty 开发之初，在选用微信 SDK 的时候，发现社区中的微信 SDK 很多，琳琅满目到处都是，一时之间，难分伯仲。然而，club-chaty 要求能够解析“消息记录”类型的消息，这一硬性要求很快便将绝大多数 SDK 排除在外了。只有 [Wechaty](https://github.com/wechaty/wechaty) 才能完美地提供这些功能。
 
-![WeChaty Logo](/assets/2019/dotnetclub-chaty/wechaty.jpg)
+![Wechaty Logo](/assets/2019/dotnetclub-chaty/wechaty.jpg)
 
-WeChaty 是由[句子互动](https://www.juzi.bot/)发布的开源微信 SDK，它直接为微信个人账号赋予编程接口，将个人账号变成自动化应答程序。最重要的是，它能以结构化的方式解析“消息记录”类型的消息。除了解析消息本身，WeChaty 还提供相关的 API 可以下载消息中包含的多媒体内容。这些功能都完美地满足了 club-chaty 的需求。
+Wechaty 是由[句子互动](https://www.juzi.bot/)发布的开源微信 SDK，它直接为微信个人账号赋予编程接口，将个人账号变成自动化应答程序。最重要的是，它能以结构化的方式解析“消息记录”类型的消息。除了解析消息本身，Wechaty 还提供相关的 API 可以下载消息中包含的多媒体内容。这些功能都完美地满足了 club-chaty 的需求。
 
-时不我待，club-chaty 很快就开始了基于 WeChaty 的开发，并在 dotnet club 主站中集成了相关的对话导入流程。作为 dotnet club 网站的一部分，club-chaty 并没有独立地提供线上的网站服务。不过它作为一个软件项目，它的代码与 dotnet club 主站的开发是相互独立的，因此可以单独使用这部分代码。
+时不我待，club-chaty 很快就开始了基于 Wechaty 的开发，并在 dotnet club 主站中集成了相关的对话导入流程。作为 dotnet club 网站的一部分，club-chaty 并没有独立地提供线上的网站服务。不过它作为一个软件项目，它的代码与 dotnet club 主站的开发是相互独立的，因此可以单独使用这部分代码。
 
 ![表情：搬转](/assets/2019/dotnetclub-chaty/brick-carrier.jpg)
 
@@ -85,4 +85,4 @@ WeChaty 是由[句子互动](https://www.juzi.bot/)发布的开源微信 SDK，�
 
 作为例子，可以来看看导入后的最终效果：[https://dotnetclub.net/topics/61](https://dotnetclub.net/topics/61)
 
-综合来看，基于 WeChaty 实现的 club-chaty 提供的这项功能十分实用，能对具备收藏价值和传播价值的对话内容进行导出、再发布和持久利用，以便解决文章开头的困惑。另一方面，如果某位大牛的发言广为传播，使很多人受益，那么他难道不应该因此收到应有的肯定和赞赏吗？由于 club-chaty 导出的数据中包含原始的发言人账号信息，因此只要使用单向哈希等方式，便可以在保护隐私的同时还能够保留必要的信息以便支持进一步的互动。
+综合来看，基于 Wechaty 实现的 club-chaty 提供的这项功能十分实用，能对具备收藏价值和传播价值的对话内容进行导出、再发布和持久利用，以便解决文章开头的困惑。另一方面，如果某位大牛的发言广为传播，使很多人受益，那么他难道不应该因此收到应有的肯定和赞赏吗？由于 club-chaty 导出的数据中包含原始的发言人账号信息，因此只要使用单向哈希等方式，便可以在保护隐私的同时还能够保留必要的信息以便支持进一步的互动。

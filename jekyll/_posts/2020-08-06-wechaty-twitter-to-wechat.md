@@ -60,7 +60,7 @@ module.exports = {
   // Twitter ID you wanted to monitor
   twitter_user_id: "fill_in_your_twitter_account",
 
-  // WeChaty and Wechat information
+  // Wechaty and Wechat information
   puppet_padplus_token: 'fill_in_your_puppet_padplus_token',
   wechat_chatroom_id : '555456789@chatroom',
 }
