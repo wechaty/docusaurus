@@ -9,3 +9,7 @@ sidebar_label: Paimon
 ## How to buy
 
 [Register and buy here](http://150.158.176.142/)
+
+## Contact
+
+- Wechat: hutusheng-bot
