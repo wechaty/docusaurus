@@ -41,5 +41,5 @@ Wechaty Integrated with Other Modules/Services, see [https://github.com/wechaty/
 | api-ai-bot.ts | Wechaty bot that uses ApiAi.com brain |
 | speech-to-text-bot.ts | bot that uses baidu speech \(vop.baidu.com\) |
 | tuling123-bot.ts | Connect to [tuling123](http://www.tuling123.com/) chatbot |
-| telegram-roger-bot.js | single bot that runs under/for both Telegram and WeChaty |
+| telegram-roger-bot.js | single bot that runs under/for both Telegram and Wechaty |
 | blessed-twins-bot/ | Wechaty multi-instance support \(v0.16+\) demo |

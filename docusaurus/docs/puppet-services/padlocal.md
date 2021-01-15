@@ -17,3 +17,7 @@ sidebar_label: PadLocal
 1. Testing Progress
 1. Beta Announcement
 1. Release Announcement
+
+## Contact
+
+- Wechat: oxddoxdd
