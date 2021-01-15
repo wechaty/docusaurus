@@ -8,7 +8,7 @@ tags:
 image: /assets/2021/01-wechaty-puppet-service/5-puppets.jpg
 ---
 
-Wechaty is an RPA SDK for chatbot makers, and it uses the [Robotic Progress Automation (RPA)](https://en.wikipedia.org/wiki/Robotic_process_automation) technology to help developers to build a more productive [Conversational User Interface (CUI)](https://en.wikipedia.org/wiki/Conversational_user_interface), which we call it a [Chatbot](https://en.wikipedia.org/wiki/Chatbot).
+Wechaty is an SDK for chatbot makers, and it uses the [Robotic Progress Automation (RPA)](https://en.wikipedia.org/wiki/Robotic_process_automation) technology to help developers to build a more productive [Conversational User Interface (CUI)](https://en.wikipedia.org/wiki/Conversational_user_interface), which we call it a [Chatbot](https://en.wikipedia.org/wiki/Chatbot).
 
 ## Wechaty Puppet
 
