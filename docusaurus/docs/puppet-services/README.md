@@ -10,12 +10,12 @@ Learn more from [Wechaty OSS Project and the Commercial Puppet Service Provider 
 
 Now, we have the following Wechaty Puppet Services:
 
-| Name | Platform | Protocol | Maintainer | Buy | Package | Contact WeChat |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [WXWork](wxwork/) | WeCom | Windows | @juzibot | [Buy](https://qiwei.juzibot.com/user/login?isWechaty=true) | wechaty-puppet-hostie | juzibot |
-| [PadLocal](padlocal/) | WeChat | Pad | @padlocal | [Contact](https://github.com/padlocal/wechaty-puppet-padlocal/wiki/TOKEN-%E7%94%B3%E8%AF%B7%E6%96%B9%E6%B3%95)| wechaty-puppet-padlocal | oxddoxdd |
-| [paimon]| WeChat | Pad | @zpaimon | [Buy](http://150.158.176.142/) | wechaty-puppet-hostie | hutusheng-bot |
-| [Donut](donut/) | WeChat | Windows | @juzibot | Will sunset 6 months later | wechaty-puppet-hostie | juzibot |
+| Name | Platform | Protocol | Maintainer | Buy | Package |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| [WXWork](wxwork/) | WeCom | Windows | @juzibot | [Link](https://qiwei.juzibot.com/user/login?isWechaty=true) | wechaty-puppet-hostie |
+| [Paimon](paimon/)| WeChat | Pad | @zpaimon | [Link](http://150.158.176.142/) | wechaty-puppet-hostie |
+| [PadLocal](padlocal/) | WeChat | Pad | @padlocal | [Link](https://github.com/padlocal/wechaty-puppet-padlocal/wiki/TOKEN-%E7%94%B3%E8%AF%B7%E6%96%B9%E6%B3%95)| wechaty-puppet-padlocal |
+| [Donut](donut/) | WeChat | Windows | @juzibot | Will sunset 6 months later | wechaty-puppet-hostie |
 
 ## FAQ
 

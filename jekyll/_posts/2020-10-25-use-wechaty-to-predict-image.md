@@ -18,7 +18,7 @@ Use wechaty to apply pytorch model via WeChat.
 
 同时，目前该项目仅仅作为一个MVP（最小可行产品），功能可能并不完善，在未来或许会加入模型训练完毕提醒/模型训练意外终止提醒等功能，敬请期待~
 
-完整代码见[https://github.com/lyleshaw/WeChaty-Torch](https://github.com/lyleshaw/WeChaty-Torch)
+完整代码见[https://github.com/lyleshaw/Wechaty-Torch](https://github.com/lyleshaw/Wechaty-Torch)
 
 ## 原理
 
