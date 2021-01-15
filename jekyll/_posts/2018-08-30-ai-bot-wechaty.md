@@ -3,7 +3,7 @@ title: "AI、Bot、WeChaty相关思考"
 author: lirobin1998
 categories: article
 tags:
-  - artificial intelligence
+  - ai
 image: /assets/2018/hi-ai.jpg
 ---
 

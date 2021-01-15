@@ -7,7 +7,7 @@ tags:
   - featured
   - soc
   - soc2020
-  - Wechat Work
+  - wecom
 ---
 
 <!-- markdownlint-disable -->

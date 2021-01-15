@@ -3,10 +3,7 @@ title: "node-wechaty let's water"
 author: wanglei158
 categories: project
 tags:
-  - room
-  - let's waterx
-  - drink
-  - node-wechaty
+  - water
 image: /assets/2020/11-lets-water/letswater.png
 ---
 

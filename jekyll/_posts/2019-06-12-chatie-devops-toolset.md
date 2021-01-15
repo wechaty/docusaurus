@@ -3,7 +3,7 @@ title: New DevOps Toolset for @Chatie Organization
 author: huan
 categories: npm
 tags:
-  - open source
+  - open-source
   - devops
   - npm
   - news
