@@ -3,7 +3,7 @@ title: "微信机器人能够做些什么事？"
 author: zhuangbiaowei
 categories: article
 tags:
-  - artificial intelligence
+  - ai
   - news
 ---
 

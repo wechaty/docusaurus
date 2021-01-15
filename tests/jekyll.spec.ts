@@ -96,13 +96,14 @@ test('filename only allow [a-z0-9-_.]', async t => {
   }
 })
 
-test('front matter key `tags` must contact at least one tag and not black listed', async t => {
+test.only('front matter key `tags` must contact at least one tag and not black listed', async t => {
   const TAG_BLACK_LIST = [
     'wechaty', // we should not add wechaty because everything is related to wechaty
     // TODO: should we permit space in tag name?
     // TODO: should we only permit the lowercase tag characters? or CamelCase?
   ]
-  const notBlackList = (tag: string) => !TAG_BLACK_LIST.includes(tag)
+  const isNotBlackList = (tag: string) => !TAG_BLACK_LIST.includes(tag)
+  const isNotIncludeSpace = (tag: string) => !/\s+/.test(tag)
 
   const postsFileList = await glob(`${JEKYLL_FOLDER.posts}/**/*`)
 
@@ -118,8 +119,11 @@ test('front matter key `tags` must contact at least one tag and not black listed
     }
     t.true(tagList.length, `"${stripRepoRoot(file)}" tags(${tagList.length}) has at least one tag`)
 
-    const good = tagList.every(notBlackList)
-    t.true(good, `"${stripRepoRoot(file)}" tags(${good ? tagList.length : tagList.join(',')}) has no black listed`)
+    const notBlackListed = tagList.every(isNotBlackList)
+    t.true(notBlackListed, `"${stripRepoRoot(file)}" tags(${notBlackListed ? tagList.length : tagList.join(',')}) has no black listed`)
+
+    const notIncludeSpace = tagList.every(isNotIncludeSpace)
+    t.true(notIncludeSpace, `"${stripRepoRoot(file)}" tags(${notIncludeSpace ? tagList.length : tagList.join(',')}) does not include space in tag`)
   }
 })
 

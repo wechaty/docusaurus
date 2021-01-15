@@ -3,8 +3,8 @@ title: ".NET Wechaty Getting Start"
 author: jesn
 categories: tutorial
 tags:
-  - dotnet wechaty
-  - csharp wechaty
+  - dotnet-wechaty
+  - csharp-wechaty
   - csharp
   - dotnet
 image: /assets/2020/12-dotnet-wechaty/dotnet-wechaty.png

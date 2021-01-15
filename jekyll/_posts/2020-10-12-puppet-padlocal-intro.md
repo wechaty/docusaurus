@@ -7,7 +7,7 @@ tags:
   - news
   - puppet
   - padlocal
-  - Puppet Service Provider
+  - puppet-service-provider
   - wechaty-puppet-padlocal
 ---
 
