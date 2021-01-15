@@ -1,6 +1,6 @@
 ---
 title: "基于wechaty的拼车小程序（1）"
-author: jellyZhang
+author: jellyzhang
 categories: project
 tags:
   - nodejs
