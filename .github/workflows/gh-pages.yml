@@ -18,18 +18,10 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
-      #
-      # Cache
-      #
-      - name: Create cache hash file (remove .version)
-        run: | # remove .version because we change it automatically in every push
-          cat /dev/null                  > hash.file
-          grep -v version package.json  >> hash.file
-          cat jekyll/Gemfile            >> hash.file
       - uses: actions/cache@v2
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-wechaty.js.org-${{ hashFiles('hash.file') }}
+          key: ${{ runner.os }}-wechaty.js.org-${{ hashFiles('**/package.json', 'jekyll/Gemfile') }}
           restore-keys: |
             ${{ runner.os }}-wechaty.js.org-
       - name: Bundle Config
@@ -60,19 +52,10 @@ jobs:
         node-version: [ 12.x ]
     steps:
     - uses: actions/checkout@v2
-
-    #
-    # Cache
-    #
-    - name: Create cache hash file (remove .version)
-      run: | # remove .version because we change it automatically in every push
-        cat /dev/null                  > hash.file
-        grep -v version package.json  >> hash.file
-        cat jekyll/Gemfile            >> hash.file
     - uses: actions/cache@v2
       with:
         path: ~/.npm
-        key: ${{ runner.os }}-wechaty.js.org-${{ hashFiles('hash.file') }}
+        key: ${{ runner.os }}-wechaty.js.org-${{ hashFiles('**/package.json', 'jekyll/Gemfile') }}
         restore-keys: |
           ${{ runner.os }}-wechaty.js.org-
     - name: Bundle Cache Config
