@@ -96,7 +96,7 @@ test('filename only allow [a-z0-9-_.]', async t => {
   }
 })
 
-test.only('front matter key `tags` must contact at least one tag and not black listed', async t => {
+test('front matter key `tags` must contact at least one tag and not black listed', async t => {
   const TAG_BLACK_LIST = [
     'wechaty', // we should not add wechaty because everything is related to wechaty
     // TODO: should we permit space in tag name?
