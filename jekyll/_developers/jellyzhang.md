@@ -11,7 +11,6 @@ twitter:
 
 ## Contact me
 
-- Github: https://github.com/JellyZhang
-- Email：zhangjelly0405@gmail.com
+- Github: <https://github.com/JellyZhang>
+- Email：<zhangjelly0405@gmail.com>
 - Website: <>
-
