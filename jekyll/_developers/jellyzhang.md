@@ -1,7 +1,7 @@
 ---
 name: JellyZhang
 site: https://github.com/JellyZhang
-avatar: /assets/developers/jellyZhang/avatar.jpeg
+avatar: /assets/developers/jellyzhang/avatar.jpeg
 bio: 无聊写写代码
 email: zhangjelly0405@gmail.com
 twitter: 
