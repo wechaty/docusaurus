@@ -8,7 +8,7 @@ tags:
 image: /assets/2021/01-wechaty-puppet-service/5-puppets.jpg
 ---
 
-Wechaty is an SDK for chatbot makers, and it uses the [Robotic Progress Automation (RPA)](https://en.wikipedia.org/wiki/Robotic_process_automation) technology to help developers to build a more productive [Conversational User Interface (CUI)](https://en.wikipedia.org/wiki/Conversational_user_interface), which we call it a [Chatbot](https://en.wikipedia.org/wiki/Chatbot).
+Wechaty is an SDK for chatbot makers. It uses [Robotic Progress Automation (RPA)](https://en.wikipedia.org/wiki/Robotic_process_automation) technology to help developers to be more productive for building [Conversational User Interface (CUI)](https://en.wikipedia.org/wiki/Conversational_user_interface), which we call it a [Chatbot](https://en.wikipedia.org/wiki/Chatbot).
 
 ## Wechaty Puppet
 
@@ -177,14 +177,14 @@ Firstly, define the underlying Wechaty Puppet Provider and its parameters:
 
 ```sh
 export WECHATY_PUPPET='wechaty-puppet-padlocal'
-export WECHATY_PUPPET_PADLOCAL_TOKEN='puppet_padlocal_xxxxxxxxxx'
+export WECHATY_PUPPET_PADLOCAL_TOKEN='puppet_padlocal_xxx'
 ```
 
 Secondly, specify the token of our Wechaty Puppet Service, with a port for the service(will be used for the docker port mapping)
 
 ```sh
 export WECHATY_TOKEN='puppet_hostie_my_private_token'
-export WECHATY_HOSTIE_PORT='8788' // any available port can be visited from internet
+export WECHATY_HOSTIE_PORT=8788 // any available port can be visited from internet
 ```
 
 Thirdly, set log to `verbose` to get more debug log messages.
@@ -257,6 +257,8 @@ More Puppet Service Providers are welcomed, please learn more from <https://gith
 Learn more about all the Wechaty Puppet Services at our official website: <https://wechaty.js.org/docs/puppet-services/>
 
 ## Appendix
+
+The following topics on GitHub was created when we were building the Wechaty Puppet Service ecosystem. Please feel free to read them and join the discussion by commenting those issues/discussions.
 
 1. [Deprecated Announcement: Padplus service will end on Dec 1st, 2020 #11](https://github.com/wechaty/puppet-services/discussions/11)
 1. [go-wechaty implementation wechaty-puppet-hostie discussion. #22](https://github.com/wechaty/go-wechaty/issues/22)
