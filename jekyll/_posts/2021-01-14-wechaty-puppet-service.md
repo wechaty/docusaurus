@@ -222,7 +222,13 @@ docker run -ti --rm \
 
 You can see lots of the output log messages in your terminal with the above command.
 
-Then you can confirm your Wechaty Puppet Service is online by visiting <https://api.chatie.io/v0/hosties/${WECHATY_TOKEN}>. (replace ${WECHATY_TOKEN} to your real token in the above configuration)
+Then you can confirm your Wechaty Puppet Service is online by visiting:
+
+```
+https://api.chatie.io/v0/hosties/${WECHATY_TOKEN}
+```
+
+> Replace ${WECHATY\_TOKEN} to your real token in the above configuration
 
 ✅ If you get an HTTP/200 response with a JSON object body that includes your `ip` and `port`, then you are all set.  
 ❌ If you get an HTTP/404 response, your Puppet Service Gateway has some issues and needs to be troubleshooting.
