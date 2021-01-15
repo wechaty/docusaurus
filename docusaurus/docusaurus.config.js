@@ -38,14 +38,11 @@ module.exports = {
           items: [
             { label: 'Introduction',      to: 'docs/introduction/' },
             { label: 'Getting Started',   to: 'docs/getting-started/' },
-            { label: 'Tutorial',          to: 'docs/tutorials/' },
-            { label: 'Recipe',            to: 'docs/recipes/' },
             { label: 'Case Study',        to: 'docs/case-study/' },
             { label: 'Puppet Service',    to: 'docs/puppet-services/' },
             { label: 'Developer Program', to: 'docs/developer-program/' },
             { label: 'API',               to: 'docs/api/' },
             { label: 'FAQ',               to: 'docs/faq/' },
-            { label: 'Troubleshooting',   to: 'docs/troubleshooting' },
           ],
         },
 
