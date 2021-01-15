@@ -107,7 +107,7 @@ However, as we mentioned, all the Wechaty ecosystems are build on top of TypeScr
 
 Our goal is to reuse all the TypeScript ecosystems with the Polyglot Wechaty. But how?
 
-## gRPC for Rescue
+## RPC for Rescue
 
 The key to using the TypeScript ecosystem in other languages is to cloudify the Wechaty Puppet API.
 
@@ -117,13 +117,11 @@ As we mentioned before:
 
 Wechaty is built on top of the Wechaty Puppet API. If we can use the Wechaty Puppet Providers remotely via network, then Polyglot Wechaty will be able to use the Wechaty Puppet API from the TypeScript ecosystem.
 
-How can we use a Wechaty Puppet Provider remotely via network? The answer is that we can convert it to gRPC service.
+How can we use a Wechaty Puppet Provider remotely via network? The answer is that we can convert it to Remote Procedure Call (RPC).
 
-In Feb 2020, we finished the [Wechaty gRPC](https://github.com/wechaty/grpc) service abstracting module with the [wechaty-puppet-hostie](https://github.com/wechaty/wechaty-puppet-hostie) implementation.
+The goal of Wechaty RPC is to cloudify our Wechaty Puppet Providers. A Wechaty Puppet Provider, like [PadLocal](https://github.com/padlocal/wechaty-puppet-padlocal), is written in TypeScript and can only be used in TypeScript program locally.
 
-The goal of Wechaty gRPC is to cloudify our Wechaty Puppet Providers. A Wechaty Puppet Provider, like [PadLocal](https://github.com/padlocal/wechaty-puppet-padlocal), is written in TypeScript and can only be used in TypeScript program locally.
-
-With gRPC, we can design our Wechaty Ecosystem Architecture as the following diagram:
+With RPC, we can design our Wechaty Ecosystem Architecture as the following diagram:
 
 ```asciiart
   +-------------------------------------------------------+
@@ -139,7 +137,7 @@ With gRPC, we can design our Wechaty Ecosystem Architecture as the following dia
   |                (wechaty-puppet-hostie)                |
   +-------------------------------------------------------+
 
-    +----------------+  @chatie/grpc  +-----------------+
+    +--------------------+  gRPC  +---------------------+
 
 +-----------------------------------------------------------+
 |                  Wechaty Puppet Service                   |
@@ -160,6 +158,18 @@ With gRPC, we can design our Wechaty Ecosystem Architecture as the following dia
   |  wechaty-puppet-wxwork   | |  wechaty-puppet-macpro   |
   +--------------------------+ +--------------------------+
 ```
+
+## Polyglot Google Remote Procedure Call (gRPC)
+
+Google Remote Procedure Call ([gRPC](https://grpc.io/)) is a modern open source high performance RPC framework that can run in any environment.
+
+Currently, gRPC provides support for many languages like Node.js, Python, Golang, .NET, C++, Java, etc.
+
+It is very easy to generate the gRPC client and server interfaces from `.proto` service definition by using protocol buffer compiler `protoc` with a special gRPC polyglot plugin to generate gRPC services in all supported languages.
+
+In Feb 2020, we finished the [Wechaty gRPC](https://github.com/wechaty/grpc) service abstracting module with the [wechaty-puppet-hostie](https://github.com/wechaty/wechaty-puppet-hostie) implementation.
+
+Wechaty gRPC is always auto-generating gRPC client from our [wechaty.proto](https://github.com/wechaty/grpc/tree/master/proto/wechaty) service defination, and publish them as multi-language modules. Learn more about how it works of our DevOps pipe by reading our [GitHub Action Workflows](https://github.com/wechaty/grpc/tree/master/.github/workflows).
 
 ## Wechaty Puppet Service
 
