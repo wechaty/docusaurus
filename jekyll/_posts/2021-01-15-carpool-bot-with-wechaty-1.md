@@ -8,10 +8,8 @@ tags:
 image: /assets/2021/01-carpool-bot-with-wechaty-1/4.jpeg
 ---
 
-> 作者: [Jelly](https://github.com/jellyZhang) 
-> Code: [Github](https://github.com/JellyZhang/rw-helper-back) 
-
-
+> 作者: [Jelly](https://github.com/jellyZhang)
+> Code: [Github](https://github.com/JellyZhang/rw-helper-back)
 
 ## 基于wechaty的拼车小程序（1）
 
@@ -111,8 +109,6 @@ image: /assets/2021/01-carpool-bot-with-wechaty-1/4.jpeg
   });
   ```
 
-  
-
 ### 后端服务
 
 另外需要一个后端服务，主要支持以下功能：
@@ -121,8 +117,6 @@ image: /assets/2021/01-carpool-bot-with-wechaty-1/4.jpeg
 2. 将Bot处理好的「拼车信息」、「群聊ID」绑定在一起，存储到数据库里。
 3. 向前端（小程序端）返回全部的拼车信息，供用户选择。
 4. 将用户填写的wechatId与小程序的openId进行绑定，存储到数据库，使用户不必每次都填写。
-
-
 
 ### 开发截图
 
@@ -139,10 +133,6 @@ image: /assets/2021/01-carpool-bot-with-wechaty-1/4.jpeg
 - 用户进行「加入群聊」后，Bot将用户拉入群聊（bot视角）：
 
   ![Pic-1](/assets/2021/01-carpool-bot-with-wechaty-1/3.jpg)
-
-
-
-
 
 ### 项目相关
 
@@ -163,6 +153,3 @@ image: /assets/2021/01-carpool-bot-with-wechaty-1/4.jpeg
     - ……etc
 
   - 支持当用户发起「加入」时却未添加Bot未好友时，Bot能主动发起「好友请求」
-
-    
-
