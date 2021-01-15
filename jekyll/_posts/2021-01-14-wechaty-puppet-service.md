@@ -20,9 +20,9 @@ _Wechaty Puppet_ is a standard for maintaining compatibility between IM systems.
 
 ## Wechaty Puppet Provider
 
-Different IM systems need different Wechaty Puppets, and they have different names and all implementing the Wechaty Puppet API, we call them the **Wechaty Puppet Provider**. For example, the Wechaty Puppet Providers who are supporting WeChat is named [wechaty-puppet-puppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer), supporting Whatsapp is named [wechaty-puppet-whatsapp](https://github.com/wechaty/wechaty-puppet-whatsapp), and supporting Lark is named [wechaty-puppet-lark](https://github.com/wechaty/wechaty-puppet-lark).
+Different IM systems need different Wechaty Puppets, and they have different names and all implementing the Wechaty Puppet API, we call them the **Wechaty Puppet Provider**. For example, the Wechaty Puppet Provider who is supporting WeChat is named [wechaty-puppet-puppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer), supporting Whatsapp is named [wechaty-puppet-whatsapp](https://github.com/wechaty/wechaty-puppet-whatsapp), and supporting Lark is named [wechaty-puppet-lark](https://github.com/wechaty/wechaty-puppet-lark).
 
-When we published Wechaty in May 2016, we were using WebDriver/Puppeteer([wechaty-puppet-puppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer)) to hook to the Web WeChat code. Still, later the [Web Protocol has been deprecated](https://github.com/wechaty/wechaty/issues/603), and we have to find other ways to get the job done.
+When we published Wechaty in May 2016, we were using WebDriver/Puppeteer([wechaty-puppet-puppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer)) and [wechaty-puppet-wechat4u](https://github.com/wechaty/wechaty-puppet-wechat4u) to hook to the Web WeChat code. Still, later the [Web Protocol has been deprecated](https://github.com/wechaty/wechaty/issues/603), and we have to find other ways to get the job done.
 
 Beyonds the Web Protocol, the community have tried many technologies in the past years, such as:
 
@@ -34,14 +34,10 @@ Beyonds the Web Protocol, the community have tried many technologies in the past
     1. [PadChat (deprecated)](https://www.npmjs.com/package/wechaty-puppet-padchat)
     1. [PadPro (deprecated)](https://www.npmjs.com/package/wechaty-puppet-padpro)
     1. [PadPlus (deprecated)](https://github.com/wechaty/wechaty-puppet-padplus)
-1. Web Protocol
-    1. [Puppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer)
-    1. [Wechat4u](https://github.com/wechaty/wechaty-puppet-wechat4u)
 1. Mac Hook
     1. [macOS (under construction)](https://github.com/wechaty/wechaty-puppet-macOS)
     1. [MacPro (deprecated)](https://github.com/juzibot/wechaty-puppet-macpro)
 1. App Hook: [IosBird (deprecated)](https://github.com/juzibot/wechaty-puppet-iosbird)
-1. Mock: [Mock](https://github.com/wechaty/wechaty-puppet-mock)
 
 To learn about all Wechaty Puppet Providers, you can go to our [Wechaty Puppet Directory](https://github.com/wechaty/wechaty-puppet/wiki/Directory)
 
