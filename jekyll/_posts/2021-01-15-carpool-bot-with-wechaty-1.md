@@ -59,7 +59,7 @@ image: /assets/2021/01-carpool-bot-with-wechaty-1/4.jpeg
       console.log("createDingRoom() new ding room created: ", room);
       return room;
     }
-  
+
     public async InviteToRoom(userId: string, roomId: string) {
       const contact = await this.bot.Contact.find({ id: userId });
       if (contact == null) {
@@ -81,7 +81,7 @@ image: /assets/2021/01-carpool-bot-with-wechaty-1/4.jpeg
 
   ```typescript
   const app: express.Application = express();
-  
+
   // create room by userId
   app.post("/room/create", async (req, res) => {
     let id: string = req.query.id as string;
@@ -95,7 +95,7 @@ image: /assets/2021/01-carpool-bot-with-wechaty-1/4.jpeg
     }
     res.send(new Resp(ERROR_CODE.Success, ERROR_MSG.Success, resp));
   });
-  
+
   // invite someone to a room
   app.post("/room/invite", async (req, res) => {
     let userId: string = req.query.userId as string;
