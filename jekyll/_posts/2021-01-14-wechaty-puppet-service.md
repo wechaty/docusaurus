@@ -159,7 +159,7 @@ With RPC, we can design our Wechaty Ecosystem Architecture as the following diag
   +--------------------------+ +--------------------------+
 ```
 
-## Polyglot Google Remote Procedure Call (gRPC)
+## Google Remote Procedure Call (gRPC)
 
 Google Remote Procedure Call ([gRPC](https://grpc.io/)) is a modern open source high performance RPC framework that can run in any environment.
 
@@ -169,11 +169,11 @@ It is very easy to generate the gRPC client and server interfaces from `.proto` 
 
 In Feb 2020, we finished the [Wechaty gRPC](https://github.com/wechaty/grpc) service abstracting module with the [wechaty-puppet-hostie](https://github.com/wechaty/wechaty-puppet-hostie) implementation.
 
-Wechaty gRPC is always auto-generating gRPC client from our [wechaty.proto](https://github.com/wechaty/grpc/tree/master/proto/wechaty) service defination, and publish them as multi-language modules. Learn more about how it works of our DevOps pipe by reading our [GitHub Action Workflows](https://github.com/wechaty/grpc/tree/master/.github/workflows).
+Wechaty gRPC is always auto-generating gRPC client from our [wechaty.proto](https://github.com/wechaty/grpc/tree/master/proto/wechaty) service defination, and publish them as multi-language modules. Learn more about how it works of our DevOps pipeline by reading our [GitHub Action Workflows](https://github.com/wechaty/grpc/tree/master/.github/workflows).
 
 ## Wechaty Puppet Service
 
-_Wechaty Puppet Service_ is a gRPC for _Wechaty Puppet Provider_.
+_Wechaty Puppet Service_ is gRPC for _Wechaty Puppet Provider_.
 
 For example, we can cloudify the _Wechaty Puppet Provider_ `wechaty-puppet-padlocal` to a _Wechaty Puppet Service_ by running our _Wechaty Puppet Service Token Gateway_.
 
@@ -193,7 +193,7 @@ export WECHATY_PUPPET_PADLOCAL_TOKEN='puppet_padlocal_xxx'
 Secondly, specify the token of our Wechaty Puppet Service, with a port for the service(will be used for the docker port mapping)
 
 ```sh
-export WECHATY_TOKEN='puppet_hostie_my_private_token'
+export WECHATY_TOKEN='puppet_hostie_yyy'
 export WECHATY_HOSTIE_PORT=8788 // any available port can be visited from internet
 ```
 
@@ -224,7 +224,7 @@ You can see lots of the output log messages in your terminal with the above comm
 
 Then you can confirm your Wechaty Puppet Service is online by visiting:
 
-```
+```sh
 https://api.chatie.io/v0/hosties/${WECHATY_TOKEN}
 ```
 
@@ -243,7 +243,7 @@ export WECHATY_PUPPET_HOSTIE_TOKEN=${__WECHATY_PUPPET_SERVICE_TOKEN__}
 node -r ts-node/register bot.ts
 ```
 
-You may have a question of what is the value of `WECHATY_PUPPET_HOSTIE_TOKEN`? The answer is that the value of `WECHATY_PUPPET_HOSTIE_TOKEN` is the `WECHATY_TOKEN` when you set up your Wechaty Puppet Service Gateway in the previous step.
+You may have a question of what is the value of `WECHATY_PUPPET_HOSTIE_TOKEN`? The answer is that the value should be the `WECHATY_TOKEN` when you set up your Wechaty Puppet Service Gateway in the previous step.
 
 ## Ready-to-use Wechaty Puppet Services
 
@@ -268,7 +268,7 @@ For now, the Wechaty community has four official Wechaty Puppet Services:
 1. [Paimon](https://wechaty.js.org/docs/puppet-services/paimon/): WeChat Pad Protocol
 1. [Donut](https://wechaty.js.org/docs/puppet-services/donut/): WeChat Windows Protocol
 
-More Puppet Service Providers are welcomed, please learn more from <https://github.com/wechaty/puppet-services> and feel free to contact us at Gitter(<https://gitter.im/wechaty/wechaty>) if you are interested.
+More Puppet Service Providers are welcomed, please learn more from <https://github.com/wechaty/puppet-services> and feel free to contact us at Gitter(<https://gitter.im/wechaty/wechaty>) if you have any questions.
 
 Learn more about all the Wechaty Puppet Services at our official website: <https://wechaty.js.org/docs/puppet-services/>
 
