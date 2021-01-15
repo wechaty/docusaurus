@@ -17,7 +17,7 @@ test('getMarkdownImageList', async t => {
     '/assets/2021/01-carpool-bot-with-wechaty-1/1.jpg',
     '/assets/2021/01-carpool-bot-with-wechaty-1/2.jpg',
     '/assets/2021/01-carpool-bot-with-wechaty-1/3.jpg',
-  ]
-  const imageList = getMarkdownImageList(FILE)
+  ].sort()
+  const imageList = getMarkdownImageList(FILE).sort()
   t.deepEqual(imageList, EXPECTED_IMAGE_LIST, 'should get markdown image list')
 })
