@@ -268,7 +268,7 @@ For now, the Wechaty community has four official Wechaty Puppet Services:
 1. [Paimon](https://wechaty.js.org/docs/puppet-services/paimon/): WeChat Pad Protocol
 1. [Donut](https://wechaty.js.org/docs/puppet-services/donut/): WeChat Windows Protocol
 
-More Puppet Service Providers are welcomed, please learn more from <https://github.com/wechaty/puppet-services> and feel free to contact us at Gitter(<https://gitter.im/wechaty/wechaty>) if you have any questions.
+More Puppet Service Providers are welcomed, please learn more from <https://github.com/wechaty/puppet-services> and feel free to contact us at Gitter (<https://gitter.im/wechaty/wechaty>) if you have any questions.
 
 Learn more about all the Wechaty Puppet Services at our official website: <https://wechaty.js.org/docs/puppet-services/>
 
