@@ -272,6 +272,20 @@ More Puppet Service Providers are welcomed, please learn more from <https://gith
 
 Learn more about all the Wechaty Puppet Services at our official website: <https://wechaty.js.org/docs/puppet-services/>
 
+## Summary
+
+In this post, we clarified the following core concepts of Wechaty:
+
+1. __Wechaty Puppet__
+1. __Wechaty Puppet Abstract__
+1. __Wechaty Puppet Provider__
+1. __Wechaty gRPC__
+1. __Wechaty Puppet Service__
+1. __Wechaty Puppet Service Token__
+1. __Wechaty Puppet Service Provider__
+
+I hope it can help our developer to understand Wechaty ecosystem better.
+
 ## Appendix
 
 The following topics on GitHub was created when we were building the Wechaty Puppet Service ecosystem. Please feel free to read them and join the discussion by commenting those issues/discussions.
