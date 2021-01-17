@@ -12,7 +12,7 @@ Wechaty is an SDK for chatbot makers. It uses [Robotic Progress Automation (RPA)
 
 ## Wechaty Puppet
 
-For different instant messaging (IM) systems (such as WeChat, Whatsapp, and Lark), the Wechaty community builds separate RPA modules for each, and we call those modules [Wechaty Puppet](https://github.com/wechaty/wechaty-puppet). _Wechaty Puppet_ is the core concept in the Wechaty ecosystem, which is in charge of connecting the Wechaty API to the underlying IM Platform bot account.
+For different instant messaging (IM) systems (such as WeChat, Whatsapp, and TikTok), the Wechaty community builds separate RPA modules for each, and we call those modules [Wechaty Puppet](https://github.com/wechaty/wechaty-puppet). _Wechaty Puppet_ is the core concept in the Wechaty ecosystem, which is in charge of connecting the Wechaty API to the underlying IM Platform bot account.
 
 ## Wechaty Puppet Abstract
 
