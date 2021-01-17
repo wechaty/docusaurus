@@ -286,6 +286,10 @@ In this post, we clarified the following core concepts of Wechaty:
 
 I hope it can help our developer to understand Wechaty ecosystem better.
 
+The Wechaty Puppet Core repo is [here](https://github.com/wechaty/wechaty-puppet) and gRPC repo is [there](https://github.com/wechaty/grpc).
+
+Interested in RPA, building chatbots & providing service for developers? [Join the Wechaty community on Gitter](https://gitter.im/wechaty/wechaty)!
+
 ## Appendix
 
 The following topics on GitHub was created when we were building the Wechaty Puppet Service ecosystem. Please feel free to read them and join the discussion by commenting those issues/discussions.
