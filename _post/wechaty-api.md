@@ -26,9 +26,9 @@ curl -X POST -H ‘Content-Type: application/json’ http://127.0.0.1:3000/conta
 The reason I added this group because the curl does not support the Chinese language. So use the maps to resolve it.
 ### 3.2 interactive mode
 Last is to make bot to reply: Now only prepare the ping to show whether the bot service is active or not.
-##4 First service — Temperature forecast
+## 4 First service — Temperature forecast
 Extract the temperature info from api.openweathermap.org and send to my wechat regularly. This only saved my time to browse the web every morning.
-##5. Next to do
-###5.1 Redirect the line message to wechat
+## 5. Next to do
+### 5.1 Redirect the line message to wechat
 This is my wife’s request. She always missed important messages from line since she use wechat mostly. She wants the bot to help her.
-###5.2 Use gmail api to send message if the email meets some conditions.(From or Subject)
+### 5.2 Use gmail api to send message if the email meets some conditions.(From or Subject)
