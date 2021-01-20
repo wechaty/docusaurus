@@ -1,5 +1,5 @@
 ---
-title: "Huan: 介绍对话机器人（Chatbot）与对话式交互界面（CUI）"
+title: "Huan: 介绍对话机器人（Chatbot）与对话式用户交互界面（CUI）"
 author: huan
 categories: tutorial
 tags:
@@ -15,7 +15,7 @@ Wechaty 是一个为对话式交互人机界面提供接口服务的 SDK，通�
 为什么我们要做 Chatbot ，我们经常提起的 Chatbot 等名词究竟是什么，它们有哪些优势？本文希望可以简明扼要的介绍清楚：
 
 1. 什么是对话机器人（Chatbot）
-1. 什么是对话式人机交互界面（Conversational User Interface, CUI）
+1. 什么是对话式用户交互界面（Conversational User Interface, CUI）
 1. Chatbot 能做什么
 1. 什么是 Conversational AI (CAI)
 1. CUI 与即时通讯平台（Instant Messaging, IM）
@@ -26,9 +26,9 @@ Chatbot 是一个有能力与用户通过自然语言进行交谈的软件。
 
 一般 Chatbot 都会运行在现有的即时消息软件平台上，比如 Slack、微信、钉钉。它也可以直接嵌入在独立网站或者移动手机 APP 中。
 
-## 什么是对话式人机交互界面（Conversational User Interface, CUI）
+## 什么是对话式用户交互界面（Conversational User Interface, CUI）
 
-对话式人机交互界面（Conversational User Interface, CUI）与以前使用按钮、输入框和滚动条的图形界面（Graphical User Interface, GUI）类似，但是 CUI 是通过模拟人类说话来与用户进行交互。
+对话式用户交互界面（Conversational User Interface, CUI）与以前使用按钮、输入框和滚动条的图形界面（Graphical User Interface, GUI）类似，但是 CUI 是通过模拟人类说话来与用户进行交互。
 
 比如，一个网站，是一个图形界面，也就是说主要的用户界面是图形：按钮，图片，滚动条，等等。与之对比，一个对话机器人是一个聊天界面，它的主要用户界面是用户和软件之间的对话。
 
@@ -46,13 +46,13 @@ Chatbot 的应用广泛，能够应用在很多日常任务中。比如查天气
 
 ## 什么是 Conversational AI (CAI)
 
-对话式人机交互是计算机从文本命令到图形界面之后，随着人工智能能力的不断增强，计算机软件系统下一代的人机交互界面。为对话式人机交互界面提供的 AI 能力，就是 Conversational AI (CAI)。
+对话式交互是计算机从文本命令到图形界面之后，随着人工智能能力的不断增强，计算机软件系统下一代的人机交互界面。为对话式用户交互界面提供的 AI 能力，就是 Conversational AI (CAI)。
 
 人工智能的发展是近些年来对话机器人能够越来越强大的基础原动力。近些年的世界变化表明，这些智能技术它们所不断学习和进步的速度，远远超越了我们人类。
 
 ## CUI 与即时通讯平台（Instant Messaging, IM）
 
-对话式人机交互界面(CUI)也需要适配各种平台，就像现有的响应式网页设计（Responsive Web Design）界面需要适配不同的屏幕分辨率和兼容电脑鼠标和手机触屏一样。
+对话式用户交互界面(CUI)也需要适配各种平台，就像现有的响应式网页设计（Responsive Web Design）界面需要适配不同的屏幕分辨率和兼容电脑鼠标和手机触屏一样。
 
 CUI 基于不同的平台，你的 Chatbot 需要适应不同平台之间的不同特点。换言之，你需要确保你的用户在不同的设备和平台上访问你的对话机器人时，能够得到一致的体验。目前，最流行的对话平台包括：微信、Whatsapp、Slack、钉钉、飞书等。
 
@@ -60,7 +60,7 @@ CUI 基于不同的平台，你的 Chatbot 需要适应不同平台之间的不�
 
 对话机器人是一个蕴含着巨大机会的新领域。今天的 Chatbot，就好像是 1996 年的网页。
 
-Google，Microsoft，Facebook，Amazon，和 Apple 这些大公司已经发现了对话机器人可以作为未来拓展用户的重要途径。对话机器人提供的这种基于自然语言的对话式人机界面可能很快替代大量的 APPs ，使用户可以直接通过语言来和他们喜欢的数字服务进行交互。理解对话式人机交互界面（CUI）是理解未来科技发展的重要一步。
+Google，Microsoft，Facebook，Amazon，和 Apple 这些大公司已经发现了对话机器人可以作为未来拓展用户的重要途径。对话机器人提供的这种基于自然语言的对话式人机界面可能很快替代大量的 APPs ，使用户可以直接通过语言来和他们喜欢的数字服务进行交互。理解对话式用户交互界面（CUI）是理解未来科技发展的重要一步。
 
 Chatbot 现在不断在迭代升级，对各种商业场景的未来都会产生巨大影响。你绝不应该错过这个绝佳的机会，今天就尽快建立一个属于你自己的 Chatbot 并通过它实现与你的客户的自然语言沟通，提升用户体验把！
 
