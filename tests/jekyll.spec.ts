@@ -60,6 +60,7 @@ test('folder _developers/ and _posts/ has been moved to `jekyll/` (e.g. _posts/ 
   const DEPRECATED_FOLDER_LIST = {
     _developer  : '_developer might a typo of `jekyll/_developers`',
     _developers : '_developers/ has been moved to `jekyll/_developers`',
+    // 👇 https://github.com/wechaty/wechaty.js.org/pull/648
     _post       : '_post might a typo of `jekyll/_posts`',
     _posts      : '_posts/ has been moved to `jekyll/_posts`',
   }
