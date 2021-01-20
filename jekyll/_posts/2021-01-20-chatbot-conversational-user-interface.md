@@ -14,11 +14,10 @@ Wechaty 是一个为对话式交互人机界面提供接口服务的 SDK，通�
 为什么我们要做 Chatbot ，我们经常提起的 Chatbot 等名词究竟是什么，它们有哪些优势？本文希望可以简明扼要的介绍清楚：
 
 1. 什么是对话机器人（Chatbot）
-1. 什么是对话式人机交互（Conversational User Interface, CUI）
+1. 什么是对话式人机交互界面（Conversational User Interface, CUI）
 1. Chatbot 能做什么
-1. Chatbot 的价值与优势
-1. 什么是 Conversational AI
-1. Chatbot 与即时消息软件平台（Instant Messaging, IM）
+1. 什么是 Conversational AI (CAI)
+1. CUI 与即时通讯平台（Instant Messaging, IM）
 
 ## 什么是对话机器人（Chatbot）
 
@@ -56,7 +55,7 @@ Chatbot 的应用广泛，能够应用在很多日常任务中。比如查天气
 
 CUI 基于不同的平台，你的 Chatbot 需要适应不同平台之间的不同特点。换言之，你需要确保你的用户在不同的设备和平台上访问你的对话机器人时，能够得到一致的体验。目前，最流行的对话平台包括：微信、Whatsapp、Slack、钉钉、飞书等。
 
-## 结论
+## 写在最后
 
 对话机器人是一个蕴含着巨大机会的新领域。今天的 Chatbot，就好像是 1996 年的网页。
 
