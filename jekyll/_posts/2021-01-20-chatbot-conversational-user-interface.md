@@ -3,6 +3,7 @@ title: "Huan: 介绍对话机器人（Chatbot）与对话式交互界面（CUI�
 author: huan
 categories: tutorial
 tags:
+  - news
   - chatbot
   - cui
   - conversational-user-interface
