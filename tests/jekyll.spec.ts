@@ -56,6 +56,32 @@ test('image size should be fit for the web (no more than 1MB and 1920x1080)', as
   }
 })
 
+test('miss placed files', async t => {
+  const DEPRECATED_FOLDER_LIST = {
+    // 👇 https://github.com/wechaty/wechaty.js.org/pull/648/commits/6e435f65ef26b251375561b5c82d1b66cc2d7619
+    jekyll  : 'jekyll/*.md',
+  }
+
+  const WHITE_LIST = [
+    'jekyll/README.md',
+  ]
+
+  const isNotWhiteListed = (file: string) => !WHITE_LIST.includes(file)
+
+  const missPlacedFileListList = await Promise.all(
+    Object.values(DEPRECATED_FOLDER_LIST)
+      .map(matchGlob => path.join(REPO_ROOT, matchGlob))
+      .map(matchGlob => glob(matchGlob))
+  )
+  const missPlacedFileList = missPlacedFileListList
+    .flat()
+    .map(stripRepoRoot)
+    .filter(isNotWhiteListed)
+
+  const isGood = missPlacedFileList.length === 0
+  t.true(isGood, `should no miss placed files. ${missPlacedFileList.join(', ')}`)
+})
+
 test('folder _developers/ and _posts/ has been moved to `jekyll/` (e.g. _posts/ => jekyll/_posts/)', async t => {
   const DEPRECATED_FOLDER_LIST = {
     _developer  : '_developer might a typo of `jekyll/_developers`',
