@@ -292,6 +292,9 @@ test('developer project avatar should be put under assets/developers/ folder', a
 
     t.true(front.avatar, `"${stripRepoRoot(file)}" should have avatar("${front.avatar}")`)
 
+    const startWithSlash = /^\//.test(front.avatar)
+    t.true(startWithSlash, `"${front.avatar}" should start with '/'`)
+
     if (/^http/i.test(front.avatar)) {
       t.fail(`${stripRepoRoot(file)} should put avatar files to local repo instead of using URL`)
     } else {

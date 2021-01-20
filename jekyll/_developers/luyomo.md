@@ -1,7 +1,7 @@
 ---
 name: luyomo
-avatar: assets/developers/luyomo/luyomo.png
-email: mailto:syunka.tyo@gmail.com
+avatar: /assets/developers/luyomo/luyomo.png
+email: syunka.tyo@gmail.com
 ---
 
 Work in JP
