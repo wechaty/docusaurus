@@ -57,11 +57,17 @@ test('image size should be fit for the web (no more than 1MB and 1920x1080)', as
 })
 
 test('folder _developers/ and _posts/ has been moved to `jekyll/` (e.g. _posts/ => jekyll/_posts/)', async t => {
-  const wrongDevelopersFolder = fs.existsSync(path.join(REPO_ROOT, '_developers'))
-  t.false(wrongDevelopersFolder, '_developers/ should not exist because it has been moved to `jekyll/` sub folder')
+  const DEPRECATED_FOLDER_LIST = {
+    _developer  : '_developer might a typo of `jekyll/_developers`',
+    _developers : '_developers/ has been moved to `jekyll/_developers`',
+    _post       : '_post might a typo of `jekyll/_posts`',
+    _posts      : '_posts/ has been moved to `jekyll/_posts`',
+  }
 
-  const wrongPostsFolder = fs.existsSync(path.join(REPO_ROOT, '_posts'))
-  t.false(wrongPostsFolder, '_posts/ should not exist because it has been moved to `jekyll/` sub folder')
+  for (const [folder, memo] of Object.entries(DEPRECATED_FOLDER_LIST)) {
+    const existDeprecatedFolder = fs.existsSync(path.join(REPO_ROOT, folder))
+    t.false(existDeprecatedFolder, `${folder}/ should not exist: ${memo}`)
+  }
 })
 
 /**
