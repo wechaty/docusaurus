@@ -37,8 +37,8 @@ image: /assets/2021/01-wechaty-charbot/1.png
 
 - 接收微信好友及微信群信息，并post给运维接口对指令集做逻辑处理
   - 提供外部访问Wechaty接口，方便外面调用，如外部通过http请求给微信群或个人发信息
-    - 发送文本： curl  http://xxx:3000/send_group_msg?type=text&group_name=test&message=test
-    - 发送图片： curl  http://xxx:3000/send_group_msg?type=media&group_name=test&message=test&url=www.xxx.com/xx.png
+    - 发送文本： curl  <http://xxx:3000/send_group_msg?type=text&group_name=test&message=test>
+    - 发送图片： curl  <http://xxx:3000/send_group_msg?type=media&group_name=test&message=test&url=www.xxx.com/xx.png>
 
     ![image](https://github.com/zhoujian1028/wechaty-charbot/blob/main/image/1.png)
     ![image](https://github.com/zhoujian1028/wechaty-charbot/blob/main/image/2.png)
