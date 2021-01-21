@@ -72,4 +72,3 @@ image: /assets/2021/01-wechaty-charbot/1.png
 ## 最后
 
 此项目开源仅供技术产品交流。对于开发者来说Wechaty是个很棒的产品，感谢Wechaty作者提供该解决方案。
-
