@@ -6,7 +6,7 @@ tags:
   - wechaty-charbot
   - news
 categories: project
-image: /assets/2021/01-wechaty-charbot/1.png
+image: /assets/2021/01-wechaty-charbot-lite/1.png
 ---
 
 > Author: [@zhoujian1028](https://github.com/zhoujian1028)
