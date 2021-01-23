@@ -30,7 +30,7 @@ image: assets/2020/meeting-notes/07-05-head-picture.jpg
 
 ![mock-is-required-for-wechaty](/assets/2020/meeting-notes/07-05-mock-server-can-test-more.png)
 
-`mock-server`是一个`*-wechaty-puppet-hostie`连接的对象，可以看作是`hostie-server`，我们可以在不改变任何代码的情况下完成测试的流程，并且这整个流程是非常完整的：`language-wechaty` + `language-wechaty-puppet-hostie`。也就是每次测试是同时测试了`language-wechaty`和`language-wechaty-puppet-hostie` 这两个模块。
+`mock-server`是一个`*-wechaty-puppet-service`连接的对象，可以看作是`puppet-server`，我们可以在不改变任何代码的情况下完成测试的流程，并且这整个流程是非常完整的：`language-wechaty` + `language-wechaty-puppet-service`。也就是每次测试是同时测试了`language-wechaty`和`language-wechaty-puppet-service` 这两个模块。
 
 ![api](/assets/2020/meeting-notes/07-05-hook-restful-api.png)
 
@@ -79,7 +79,7 @@ image: assets/2020/meeting-notes/07-05-head-picture.jpg
 
 ![plugin](/assets/2020/meeting-notes/07-05-wechaty-plugin-in-server.png)
 
-为了让多语言`wechaty`使用`typescript-wechaty`里面的插件，可以将`Plugin`移至`Hostie-Server`端，那这样`Language-wechaty`只需要添加指定的配置参数即可调用插件。
+为了让多语言`wechaty`使用`typescript-wechaty`里面的插件，可以将`Plugin`移至`puppet-server`端，那这样`Language-wechaty`只需要添加指定的配置参数即可调用插件。
 
 ## How to improve stability of puppet implementation
 

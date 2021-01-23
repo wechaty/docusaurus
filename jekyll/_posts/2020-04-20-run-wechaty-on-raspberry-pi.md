@@ -89,10 +89,10 @@ Wechaty.instance() // Global Instance
 
 6、运行
 
-wechaty-puppet-hostie用的是windows微信协议，该协议需要使用token。把下面命令中的token替换成你的token。然后执行如下命令，启动机器人。
+wechaty-puppet-service用的是windows微信协议，该协议需要使用token。把下面命令中的token替换成你的token。然后执行如下命令，启动机器人。
 
 ```shell
-WECHATY_PUPPET=wechaty-puppet-hostie WECHATY_PUPPET_HOSTIE_TOKEN=token node bot.js
+WECHATY_PUPPET=wechaty-puppet-service WECHATY_PUPPET_SERVICE_TOKEN=token node bot.js
 ```
 
 ![RICEPO](/assets/2020/runwechatyonpi/run.jpg)

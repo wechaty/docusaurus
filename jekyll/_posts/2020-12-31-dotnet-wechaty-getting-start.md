@@ -42,7 +42,7 @@ var bot = new Wechaty.Wechaty(new PuppetOptions()
 {
     // 如何申请token，请看：https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty
     Token = "your token",
-    PuppetService = "wechaty-puppet-hostie"
+    PuppetService = "wechaty-puppet-service"
 });
 
  // 监听bot事件
@@ -90,7 +90,7 @@ namespace dotnet_wechaty_getting_start
             var bot = new Wechaty.Wechaty(new PuppetOptions()
             {
                 Token = "puppet_rock_4448d7e832fd436c9f2a1d33eea8e865",
-                PuppetService = "wechaty-puppet-hostie"
+                PuppetService = "wechaty-puppet-service"
             });
 
             // 监听bot事件

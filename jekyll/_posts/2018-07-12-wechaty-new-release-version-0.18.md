@@ -40,7 +40,7 @@ So at this version (v0.18), we have the follow npm modules that splited out from
 | Beta    | padchat   | [PuppetPadchat](https://github.com/lijiarui/wechaty-puppet-padchat) | iPad Protocol | ![PuppetPadchat](https://badge.fury.io/js/wechaty-puppet-padchat.svg) |
 | Alpha   | wechat4u  | [PuppetWechat4u](https://github.com/wechaty/wechaty-puppet-wechat4u) | Web API via HTTP | ![PuppetWechat4u](https://badge.fury.io/js/wechaty-puppet-wechat4u.svg) |
 | Alpha   | ioscat    | [PuppetIoscat](https://github.com/linyimin-bupt/wechaty-puppet-ioscat) (WIP) | iPhone App Hooking | ![PuppetIoscat](https://badge.fury.io/js/wechaty-puppet-ioscat.svg) |
-| Alpha   | hostie    | [PuppetHostie](https://github.com/wechaty/wechaty-puppet-hostie) | Chatie Cloud | ![PuppetHostie](https://badge.fury.io/js/wechaty-puppet-hostie.svg) |
+| Alpha   | service    | [PuppetService](https://github.com/wechaty/wechaty-puppet-service) | Chatie Cloud | ![PuppetService](https://badge.fury.io/js/wechaty-puppet-service.svg) |
 | TBW | Android | | Android Hook | 0.0.0 |
 | TBW | Win32   | | Win32 Hook   | 0.0.0 |
 

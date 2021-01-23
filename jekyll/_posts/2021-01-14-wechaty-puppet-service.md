@@ -134,7 +134,7 @@ With RPC, we can design our Wechaty Ecosystem Architecture as the following diag
   +-------------------------------------------------------+
   |                Wechaty Puppet Abstract                |
   |                                                       |
-  |                (wechaty-puppet-hostie)                |
+  |                (wechaty-puppet-service)               |
   +-------------------------------------------------------+
 
     +--------------------+  gRPC  +---------------------+
@@ -167,7 +167,7 @@ Currently, gRPC provides support for many languages like Node.js, Python, Golang
 
 It is very easy to generate the gRPC client and server interfaces from `.proto` service definition by using protocol buffer compiler `protoc` with a special gRPC polyglot plugin to generate gRPC services in all supported languages.
 
-In Feb 2020, we finished the [Wechaty gRPC](https://github.com/wechaty/grpc) service abstracting module with the [wechaty-puppet-hostie](https://github.com/wechaty/wechaty-puppet-hostie) implementation.
+In Feb 2020, we finished the [Wechaty gRPC](https://github.com/wechaty/grpc) service abstracting module with the [wechaty-puppet-service](https://github.com/wechaty/wechaty-puppet-service) implementation.
 
 Wechaty gRPC is always auto-generating gRPC client from our [wechaty.proto](https://github.com/wechaty/grpc/tree/master/proto/wechaty) service defination, and publish them as multi-language modules. Learn more about how it works of our DevOps pipeline by reading our [GitHub Action Workflows](https://github.com/wechaty/grpc/tree/master/.github/workflows).
 
@@ -193,8 +193,8 @@ export WECHATY_PUPPET_PADLOCAL_TOKEN='puppet_padlocal_xxx'
 Secondly, specify the token of our Wechaty Puppet Service, with a port for the service(will be used for the docker port mapping)
 
 ```sh
-export WECHATY_TOKEN='puppet_hostie_yyy'
-export WECHATY_HOSTIE_PORT=8788 // any available port can be visited from internet
+export WECHATY_TOKEN='puppet_service_yyy'
+export WECHATY_PUPPET_SERVER_PORT=8788 // any available port can be visited from internet
 ```
 
 Thirdly, set log to `verbose` to get more debug log messages.
@@ -212,11 +212,11 @@ docker run -ti --rm \
   -e WECHATY_PUPPET_PADLOCAL_TOKEN \
   \
   -e WECHATY_TOKEN \
-  -e WECHATY_HOSTIE_PORT \
+  -e WECHATY_PUPPET_SERVER_PORT \
   \
   -e WECHATY_LOG \
   \
-  -p "$WECHATY_HOSTIE_PORT:$WECHATY_HOSTIE_PORT” \
+  -p "$WECHATY_PUPPET_SERVER_PORT:$WECHATY_PUPPET_SERVER_PORT” \
   wechaty/wechaty
 ```
 
@@ -235,15 +235,15 @@ https://api.chatie.io/v0/hosties/${WECHATY_TOKEN}
 
 ## Using Wechaty Puppet Service with Wechaty
 
-Using Wechaty Puppet Service is very easy. Just set the `WECHATY_PUPPET` to `wechaty-puppet-hostie` and `WECHATY_PUPPET_HOSTIE_TOKEN` to your Wechaty Puppet Service Token.
+Using Wechaty Puppet Service is very easy. Just set the `WECHATY_PUPPET` to `wechaty-puppet-service` and `WECHATY_PUPPET_SERVICE_TOKEN` to your Wechaty Puppet Service Token.
 
 ```sh
-export WECHATY_PUPPET=wechaty-puppet-hostie
-export WECHATY_PUPPET_HOSTIE_TOKEN=${__WECHATY_PUPPET_SERVICE_TOKEN__}
+export WECHATY_PUPPET=wechaty-puppet-service
+export WECHATY_PUPPET_SERVICE_TOKEN=${__WECHATY_PUPPET_SERVICE_TOKEN__}
 node -r ts-node/register bot.ts
 ```
 
-You may have a question of what is the value of `WECHATY_PUPPET_HOSTIE_TOKEN`? The answer is that the value should be the `WECHATY_TOKEN` when you set up your Wechaty Puppet Service Gateway in the previous step.
+You may have a question of what is the value of `WECHATY_PUPPET_SERVICE_TOKEN`? The answer is that the value should be the `WECHATY_TOKEN` when you set up your Wechaty Puppet Service Gateway in the previous step.
 
 ## Ready-to-use Wechaty Puppet Services
 
@@ -259,7 +259,7 @@ And there has another scenario for the Wechaty Puppet Provider is closed source,
 
 ## Introducing Wechaty Puppet Service Provider
 
-Our Wechaty Community now has serval Wechaty Puppet Services which works out-of-the-box. All you need is to get a Wechaty Puppet Service Token, then use `wechaty-puppet-hostie` with that token.
+Our Wechaty Community now has serval Wechaty Puppet Services which works out-of-the-box. All you need is to get a Wechaty Puppet Service Token, then use `wechaty-puppet-service` with that token.
 
 For now, the Wechaty community has four official Wechaty Puppet Services:
 
@@ -295,11 +295,11 @@ Interested in RPA, building chatbots & providing service for developers? [Join t
 The following topics on GitHub was created when we were building the Wechaty Puppet Service ecosystem. Please feel free to read them and join the discussion by commenting those issues/discussions.
 
 1. [Deprecated Announcement: Padplus service will end on Dec 1st, 2020 #11](https://github.com/wechaty/puppet-services/discussions/11)
-1. [go-wechaty implementation wechaty-puppet-hostie discussion. #22](https://github.com/wechaty/go-wechaty/issues/22)
-1. [How to create your own Wechaty Hostie Token with the Web Protocol #1986](https://github.com/wechaty/wechaty/discussions/1986)
+1. [go-wechaty implementation wechaty-puppet-service discussion. #22](https://github.com/wechaty/go-wechaty/issues/22)
+1. [How to create your own Wechaty Servie Token with the Web Protocol #1986](https://github.com/wechaty/wechaty/discussions/1986)
 1. [MemoryCard support: required for stateless puppet service #16](https://github.com/wechaty/puppet-services/discussions/16)
 1. [Puppet Service Specifications #54](https://github.com/wechaty/puppet-services/discussions/54)
-1. [Support rock puppet service provider. #98](https://github.com/wechaty/wechaty-puppet-hostie/issues/98)
+1. [Support rock puppet service provider. #98](https://github.com/wechaty/wechaty-puppet-service/issues/98)
 1. [the relationship between hostie, grpc, and puppet. #1947](https://github.com/wechaty/wechaty/issues/1947)
 1. [Using your Puppet PadPlus token with Python, Java, and Go Wechaty #1985](https://github.com/wechaty/wechaty/discussions/1985)
 1. [Wechaty is All You Need: Python, Go, and Java Translation Project #1927](https://github.com/wechaty/wechaty/discussions/1927)
