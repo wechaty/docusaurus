@@ -25,7 +25,7 @@ tags:
 
 中间是一层抽象层，wechaty puppet（github库名称是wechaty-puppet）。
 
-再上一层是wechaty puppet hostie。
+再上一层是wechaty puppet service
 
 再上一层就是各种语言的实现，js、python、go、java等等。官方支持最好的是ts或者js，因为官方自身就是用ts开发的。
 

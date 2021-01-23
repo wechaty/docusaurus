@@ -16,7 +16,7 @@ image: /assets/2020/12-07-wxwork/wecom.png
 
 ## 关于 Wechaty Puppet Service WxWork
 
-WxWork 是 [juzibot](https://github.com/juzibot/wxwork-tester) 基于 wechaty-puppet-hostie 做的新 puppet service，句子互动围绕微信生态为客户提供智能营销和销售服务，帮助企业引流并实现转化，客户覆盖教育、保险、大健康等多个领域。曾入选百度AI加速器 和 Facebook 大陆首期加速器，获得PreAngel、Plug and Play，Y Combination, TSVC和阿尔法公社多家中美机构投资。 而在今年，句子互动更加聚焦在企业微信，通过为客户提供 SCRM 系统帮助客户实现引流和转化，因此今年发布了 **企业微信** 的 puppet。
+WxWork 是 [juzibot](https://github.com/juzibot/wxwork-tester) 基于 wechaty-puppet-service 做的新 puppet service，句子互动围绕微信生态为客户提供智能营销和销售服务，帮助企业引流并实现转化，客户覆盖教育、保险、大健康等多个领域。曾入选百度AI加速器 和 Facebook 大陆首期加速器，获得PreAngel、Plug and Play，Y Combination, TSVC和阿尔法公社多家中美机构投资。 而在今年，句子互动更加聚焦在企业微信，通过为客户提供 SCRM 系统帮助客户实现引流和转化，因此今年发布了 **企业微信** 的 puppet。
 
 关于 Wechaty Puppet WxWork Beta 版的发布历程如下：
 
@@ -36,7 +36,7 @@ import QrcodeTerminal from 'qrcode-terminal';
 const token = 'get a wxwork token from: https://github.com/wechaty/puppet-services#buy-token'
 
 const bot = new Wechaty({
-  puppet: 'wechaty-puppet-hostie', // 注意这里是 wechaty-puppet-hostie 而不是 wechaty-puppet-wxwork
+  puppet: 'wechaty-puppet-service', // 注意这里是 wechaty-puppet-service 而不是 wechaty-puppet-wxwork
   puppetOptions: {
     token,
   }
@@ -59,7 +59,7 @@ bot
   .start()
 ```
 
-### 介绍 wechaty-puppet-hostie
+### 介绍 wechaty-puppet-service
 
 > This part is written by Huan
 
@@ -67,17 +67,17 @@ bot
 
 所以，如果你是一个随着 Wechaty 发展一路走来的开发者，那么你会记得，过去每一个不同的协议，我们都需要在运行 Wechaty 的本地环境中，安装上述的 NPM 包，来启用对应的协议。
 
-然而，Wechaty 社区在发展过程中，我们发现其实针对不同的协议，其核心的区别在于 Wechaty Puppet Abstract Class 这个抽象层之下的逻辑实现，而 Wechaty Puppet API 是完全一致的。所以，我们如果能够把 Wechaty Puppet API 及其之上层的代码重用，而将其之下层面的代码进行 gRPC 化封装，这样我们就能够通过一个 Wechaty Puppet 的实现，最终得以支持不同的底层协议。这就是 wechaty-puppet-hostie 的由来。
+然而，Wechaty 社区在发展过程中，我们发现其实针对不同的协议，其核心的区别在于 Wechaty Puppet Abstract Class 这个抽象层之下的逻辑实现，而 Wechaty Puppet API 是完全一致的。所以，我们如果能够把 Wechaty Puppet API 及其之上层的代码重用，而将其之下层面的代码进行 gRPC 化封装，这样我们就能够通过一个 Wechaty Puppet 的实现，最终得以支持不同的底层协议。这就是 wechaty-puppet-service 的由来。
 
-简而言之，[Wechaty Puppet Hostie](https://github.com/wechaty/wechaty-puppet-hostie) 是一个可以兼容任意 Wechaty Puppet 协议的模块，Wechaty 只需要安装 wechaty-puppet-hostie ，然后通过设置 `WECHATY_PUPPET_HOSTIE_TOKEN`，即可通过 gRPC 协议，与 token 所对应的 gRPC 服务器进行通讯，实现 Wechaty Puppet Service 化，而提供 Wechaty Puppet Service 的第三方，既是我们称之为 [Wechaty Puppet Service Provider](https://github.com/wechaty/puppet-services) 的角色。
+简而言之，[Wechaty Puppet Service](https://github.com/wechaty/wechaty-puppet-service) 是一个可以兼容任意 Wechaty Puppet 协议的模块，Wechaty 只需要安装 wechaty-puppet-service ，然后通过设置 `WECHATY_PUPPET_SERVICE_TOKEN`，即可通过 gRPC 协议，与 token 所对应的 gRPC 服务器进行通讯，实现 Wechaty Puppet Service 化，而提供 Wechaty Puppet Service 的第三方，既是我们称之为 [Wechaty Puppet Service Provider](https://github.com/wechaty/puppet-services) 的角色。
 
-在未来，Wechaty 社区计划大部分的 Puppet Service 都将基于 wechaty-puppet-hostie 进行发布和使用。同时针对某些特定的 Puppet Service ，比如 [wechaty-puppet-padlocal](https://www.npmjs.com/package/wechaty-puppet-padlocal) ([PadLocal](https://github.com/padlocal/padlocal-client-ts)可以使用本地服务器 IP 与 Server 进行连接），也可以通过本地运行一个 Hostie Token Gateway 进行转换。（详见 [Issue #1986](https://github.com/wechaty/wechaty/issues/1986))
+在未来，Wechaty 社区计划大部分的 Puppet Service 都将基于 wechaty-puppet-service 进行发布和使用。同时针对某些特定的 Puppet Service ，比如 [wechaty-puppet-padlocal](https://www.npmjs.com/package/wechaty-puppet-padlocal) ([PadLocal](https://github.com/padlocal/padlocal-client-ts)可以使用本地服务器 IP 与 Server 进行连接），也可以通过本地运行一个 Puppet Service Token Gateway 进行转换。（详见 [Issue #1986](https://github.com/wechaty/wechaty/issues/1986))
 
-目前，在社区最佳实践中，使用 wechaty-puppet-hostie 的方法如下：
+目前，在社区最佳实践中，使用 wechaty-puppet-service 的方法如下：
 
 ```sh
-export WECHATY_PUPPET=wechaty-puppet-hostie
-export WECHATY_PUPPET_HOSTIE_TOKEN=__YOUR_TOKEN__
+export WECHATY_PUPPET=wechaty-puppet-service
+export WECHATY_PUPPET_SERVICE_TOKEN=__YOUR_TOKEN__
 
 // Start your bot with the above two variables
 ts-node bot.ts
