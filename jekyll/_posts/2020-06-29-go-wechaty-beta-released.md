@@ -25,7 +25,7 @@ go-wechaty 是 wechaty 多语言版本中的 golang 语言实现,目的是方便
 ```bash
 git clone https://github.com/wechaty/go-wechaty-getting-started.git
 
-WECHATY_PUPPET_HOSTIE_TOKEN=your_token_at_here make bot
+WECHATY_PUPPET_SERVICE_TOKEN=your_token_at_here make bot
 ```
 
 ## 开发过程中遇到的一些问题及解决方案
