@@ -5,7 +5,7 @@ categories: project
 tags:
   - code
   - talk
-  - machine learning
+  - machine-learning
   - featured
 image: /assets/2018/wechaty-blinder-1.jpg
 ---

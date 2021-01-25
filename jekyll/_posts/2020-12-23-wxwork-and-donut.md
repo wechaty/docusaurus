@@ -39,7 +39,7 @@ GitHub 上搜了一圈，看到了挺多微信 bot 的方案，后面决定使�
 
 ```js
 const bot = new Wechaty({
-  puppet: "wechaty-puppet-hostie",
+  puppet: "wechaty-puppet-service",
   puppetOptions: {
     token,
   },

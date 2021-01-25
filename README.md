@@ -96,6 +96,30 @@ npm install
 npm test
 ```
 
+## Preview
+
+Run the Jekyll localhost for blog preview.
+
+### 0. Prerequisites
+
+Follow in the official instruction to install jekyll in your local [jekyll quickstart](https://jekyllrb.com/docs/)
+
+### 1. Install Jekyll by Hand
+
+Run the Jekyll at localhost for blog preview. (It would be easier for a Ruby expert.)
+
+```sh
+make install
+cd jekyll
+make serve
+```
+
+### 2. Preview the Blog
+
+Go to <http://127.0.0.1:4000/blog/> , you can preview the blog successfully!
+
+See more: [jekyll for wechaty.js.org](https://github.com/wechaty/wechaty.js.org/tree/puppet/jekyll)
+
 ## Welcome to contribute
 
 ### Why contribute?
@@ -106,7 +130,7 @@ At the same time, we also meet up offline all over the world, here is some activ
 
 - [Wechaty Contributor Dinner](https://wechaty.js.org/2017/04/26/wechaty-meeting/)
 - [The memorabilia of The First Chatie WWDC Party](https://wechaty.js.org/2017/06/06/the-first-chatie-wwdc-party/)
-- [Shanghai WWDC - WeChaty Worldwide Developers Conference](https://wechaty.js.org/2017/08/28/wechaty-shanghai-meetup/)
+- [Shanghai WWDC - Wechaty Worldwide Developers Conference](https://wechaty.js.org/2017/08/28/wechaty-shanghai-meetup/)
 - [Wechaty Contributor Dinner with Data Girls](https://wechaty.js.org/2018/01/14/wechaty-contributor-dinner-data-girl/)
 - [Wechaty Country Wide Developer Conference](https://wechaty.js.org/2018/09/15/country-wide-developer-conference/)
 - .....

@@ -5,7 +5,7 @@ bio: 自由职业者
 avatar: /assets/developers/jcai/avatar.png
 email: jcai@ganshane.com
 ---
-scala-wechaty 作者,基于wechaty-puppet-hostie新provider,，自由职业者,scala狂热爱好者！
+scala-wechaty 作者,基于wechaty-puppet-service新provider,，自由职业者,scala狂热爱好者！
 
 ## 联系我
 

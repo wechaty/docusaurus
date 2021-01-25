@@ -12,9 +12,10 @@ Now, we have the following Wechaty Puppet Services:
 
 | Name | Platform | Protocol | Maintainer | Buy | Package |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| [WXWork](wxwork/) | WeCom | Windows | @juzibot | [Buy](https://qiwei.juzibot.com/user/login?isWechaty=true) | wechaty-puppet-hostie |
-| [PadLocal](padlocal/) | WeChat | Pad | @padlocal | [Contact](https://github.com/padlocal/wechaty-puppet-padlocal/wiki/TOKEN-%E7%94%B3%E8%AF%B7%E6%96%B9%E6%B3%95)| wechaty-puppet-padlocal |
-| [Donut](donut/) | WeChat | Windows | @juzibot | Will sunset 6 months later | wechaty-puppet-hostie |
+| [WXWork](wxwork/) | WeCom | Windows | @juzibot | [Link](https://qiwei.juzibot.com/user/login?isWechaty=true) | wechaty-puppet-service |
+| [Paimon](paimon/)| WeChat | Pad | @zpaimon | [Link](http://150.158.176.142/) | wechaty-puppet-service |
+| [PadLocal](padlocal/) | WeChat | Pad | @padlocal | [Link](https://github.com/padlocal/wechaty-puppet-padlocal/wiki/TOKEN-%E7%94%B3%E8%AF%B7%E6%96%B9%E6%B3%95)| wechaty-puppet-padlocal |
+| [Donut](donut/) | WeChat | Windows | @juzibot | Will sunset 6 months later | wechaty-puppet-service |
 
 ## FAQ
 
@@ -25,8 +26,8 @@ to be written
 To use the token with Wechaty, the following commands demonstrated how to use it under Linux/macOS:
 
 ```shell
-export WECHATY_PUPPET=wechaty-puppet-hostie
-export WECHATY_PUPPET_HOSTIE_TOKEN=your_applied_token_at_here
+export WECHATY_PUPPET=wechaty-puppet-service
+export WECHATY_PUPPET_SERVICE_TOKEN=your_applied_token_at_here
 
 ts-node bot.ts
 // or: node bot.js
@@ -36,7 +37,7 @@ ts-node bot.ts
 See:
 
 1. [Wechaty Starter Project Template that works out-of-the-box](https://github.com/wechaty/wechaty-getting-started)
-1. [How to create your own Wechaty Hostie Token with the Web Protocol](https://github.com/wechaty/wechaty/issues/1986)
+1. [How to create your own Wechaty Puppet Service Token with the Web Protocol](https://github.com/wechaty/wechaty/issues/1986)
 
 ### How to became a Wechaty Puppet Service Provider
 

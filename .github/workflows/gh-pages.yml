@@ -18,26 +18,25 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
       - uses: actions/cache@v2
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-wechaty.js.org-cache
+          key: ${{ runner.os }}-wechaty.js.org-${{ hashFiles('**/package.json', 'jekyll/Gemfile') }}
           restore-keys: |
             ${{ runner.os }}-wechaty.js.org-
-
-      - name: NPM Install
-        run: npm install
-      - name: NPM Test
-        run: npm test
-
       - name: Bundle Config
         run: |
           sudo gem install bundler
           bundle config path ~/.npm/bundle
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: NPM Install
+        run: npm install
+      - name: NPM Test
+        run: npm test
       - name: Install Dependencies
         run: make install
       - name: Build
@@ -53,23 +52,21 @@ jobs:
         node-version: [ 12.x ]
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-
     - uses: actions/cache@v2
       with:
         path: ~/.npm
-        key: ${{ runner.os }}-wechaty.js.org-cache
+        key: ${{ runner.os }}-wechaty.js.org-${{ hashFiles('**/package.json', 'jekyll/Gemfile') }}
         restore-keys: |
           ${{ runner.os }}-wechaty.js.org-
-
-    - name: Bundle Config
+    - name: Bundle Cache Config
       run: |
         sudo gem install bundler
         bundle config path ~/.npm/bundle
 
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
     - name: Config Git
       run: |
         git config --global user.name 'Huan @ GitHub Action'

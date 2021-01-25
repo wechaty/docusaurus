@@ -1,7 +1,7 @@
 import marked from 'marked'
-import fs from 'fs'
+import fs     from 'fs'
 
-function markdownImageList (file: string): string[] {
+function getMarkdownImageList (file: string): string[] {
   const markdown  = fs.readFileSync(file).toString()
   const tokenList = marked.lexer(markdown)
 
@@ -30,6 +30,9 @@ function markdownImageList (file: string): string[] {
         throw new Error('token.tokens is not Array!')
       }
       return token.tokens.reduce(markdownImageReducer, imageList)
+    } else if ('items' in token && token.items) {
+      // image in a list
+      return token.items.reduce(markdownImageReducer, imageList)
     } else if ('type' in token && token.type === 'image') {
       imageList.push(token.href)
       return imageList
@@ -39,4 +42,4 @@ function markdownImageList (file: string): string[] {
   }
 }
 
-export { markdownImageList }
+export { getMarkdownImageList }
