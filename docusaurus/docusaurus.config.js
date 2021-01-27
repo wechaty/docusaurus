@@ -36,13 +36,13 @@ module.exports = {
 
         { label: 'Docs',            to: 'docs/', position: 'right', activeBasePath: 'docs',
           items: [
-            { label: 'Introduction',      to: 'docs/introduction/' },
-            { label: 'Getting Started',   to: 'docs/getting-started/' },
-            { label: 'Case Study',        to: 'docs/case-study/' },
-            { label: 'Puppet Service',    to: 'docs/puppet-services/' },
-            { label: 'Developer Program', to: 'docs/developer-program/' },
-            { label: 'API',               to: 'docs/api/' },
-            { label: 'FAQ',               to: 'docs/faq/' },
+            { label: 'Introduction',        to: 'docs/introduction/' },
+            { label: 'Getting Started',     to: 'docs/getting-started/' },
+            { label: 'Case Study',          to: 'docs/case-study/' },
+            { label: 'Puppet Service',      to: 'docs/puppet-services/' },
+            { label: 'Contributor Program', to: 'docs/contributor-program/' },
+            { label: 'API',                 to: 'docs/api/' },
+            { label: 'FAQ',                 to: 'docs/faq/' },
           ],
         },
 

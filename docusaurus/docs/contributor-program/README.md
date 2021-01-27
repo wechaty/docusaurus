@@ -1,24 +1,24 @@
 ---
-slug: /developer-program/
-title: Wechaty Developer Program
-sidebar_label: Developer Program Index
+slug: /contributor-program/
+title: Wechaty Contributor Program
+sidebar_label: Contributor Program Index
 ---
 
-The _Wechaty Developer Program_ provides valuable supports for qualified developers.
+The _Wechaty Contributor Program_ provides valuable supports for qualified contributors.
 
 > Our Mission: build the most easy to use conversational SDK across all messaging platforms for chatbot makers.
 
 It takes a community to design, build, and ship great chatbot.
 
-Building an chatbot that on top of Wechaty? Apply for our Developer Program! The possibilities are endless, and you enjoy the kudos.
+Building an chatbot that on top of Wechaty? Apply for our Contributor Program! The possibilities are endless, and you enjoy the kudos.
 
-If you are looking for the developer program from Juzi.BOT, please go to visit the great introduction documentation at <https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty/>
+If you are looking for the contributor program from Juzi.BOT, please go to visit the great introduction documentation at <https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty/>
 
-[![Juzi.BOT Developer Program](https://img.shields.io/badge/Wechaty%20Developer%20Program-Juzi.BOT-orange.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty/)
+[![Juzi.BOT Contributor Program](https://img.shields.io/badge/Wechaty%20Contributor%20Program-Juzi.BOT-orange.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty/)
 
 ## Table of Contents
 
-- Wechaty Developer Program Suppliers
+- Wechaty Contributor Program Suppliers
 - [Submit a blog post](publish-blog)
     Publish your blog post to the Wechaty community
 
@@ -39,12 +39,12 @@ The following are our existing backers. Thank you to everyone! 🙏 [[Become a b
 
 ## Badge
 
-[![Wechaty Developer Program](https://img.shields.io/badge/Wechaty-Developer%20Program-green.svg)](https://wechaty.js.org/docs/developer-program/)
+[![Wechaty Contributor Program](https://img.shields.io/badge/Wechaty-Contributor%20Program-green.svg)](https://wechaty.js.org/docs/contributor-program/)
 
-You need to add the __Wechaty Developer Program__ badge after you join this program.
+You need to add the __Wechaty Contributor Program__ badge after you join this program.
 
 ```md
-[![Wechaty Developer Program](https://img.shields.io/badge/Wechaty-Developer%20Program-green.svg)](https://wechaty.js.org/docs/developer-program/)
+[![Wechaty Contributor Program](https://img.shields.io/badge/Wechaty-Contributor%20Program-green.svg)](https://wechaty.js.org/docs/contributor-program/)
 ```
 
 ## FAQ
