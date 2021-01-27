@@ -15,7 +15,7 @@ import {
 
 const glob = util.promisify(globCB)
 
-test('miss placed files', async t => {
+test('misplaced files', async t => {
   const DEPRECATED_FOLDER_LIST = {
     // 👇 https://github.com/wechaty/wechaty.js.org/pull/648/commits/6e435f65ef26b251375561b5c82d1b66cc2d7619
     jekyll  : 'jekyll/*.md',
