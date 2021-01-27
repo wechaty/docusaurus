@@ -46,9 +46,9 @@ module.exports = {
       'puppet-services/paimon',
       'puppet-services/donut',
     ],
-    'Developer Program': [
-      'developer-program/README',
-      'developer-program/publish-blog',
+    'Contributor Program': [
+      'contributor-program/README',
+      'contributor-program/publish-blog',
     ],
     'API Reference': [
       'api/README',
