@@ -290,6 +290,8 @@ The Wechaty Puppet Core repo is [here](https://github.com/wechaty/wechaty-puppet
 
 Interested in RPA, building chatbots & providing service for developers? [Join the Wechaty community on Gitter](https://gitter.im/wechaty/wechaty)!
 
+And, [We are hiring](https://chatie.breezy.hr/)!
+
 ## Appendix
 
 The following topics on GitHub was created when we were building the Wechaty Puppet Service ecosystem. Please feel free to read them and join the discussion by commenting those issues/discussions.
