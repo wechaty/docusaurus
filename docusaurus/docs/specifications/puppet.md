@@ -9,7 +9,7 @@ Here are some rules that a Wechaty Puppet should follow:
 1. [ ] **Emit Self Messages**: when the bot says anything, the bot should receive a message said by itself. (and the `message.self()` will return true for this message)
 1. [ ] **Perfect Logout**: `logout` method should clean all the user session data from the puppet service, and the status of the App on the phone should display correctly (not log in on any devices).
 1. [ ] **State-less Session Management** (with MemoryCard support): the puppet service should save the user session data to the memory card, and can be restored from the memory card. (See: #16)
-1. [ ] **MIME File Name Extension Convention**: FileBoxChunk.name must be able to convert to a MIME type and versa visa. The puppet needs to set the name with the right extension (.jpg, .pdf, etc) to the name of the file box. See: <https://github.com/wechaty/wechaty-puppet-hostie/discussions/115>, 
+1. [ ] **MIME File Name Extension Convention**: FileBoxChunk.name must be able to convert to a MIME type and versa visa. The puppet needs to set the name with the right extension (.jpg, .pdf, etc) to the name of the file box. See: <https://github.com/wechaty/wechaty-puppet-hostie/discussions/115>,
 1. [ ] To be added.
 
 See: <https://github.com/wechaty/puppet-services/discussions/54>
@@ -69,3 +69,9 @@ Need to fire `ready` event after the bot logined and all data has been synced.
 > For example, after we re-installed the WeChat app on our phone, it has to load contacts/rooms from the server for a long time.
 
 See: <https://github.com/wechaty/wechaty-puppet-service/issues/18>
+
+## NPM Publication
+
+- [ ] `wechaty-puppet` must not a dependency. It should be put in devDependencies and peerDependencies
+- [ ] `wechaty` must not a dependency. It should be put in devDependencies and peerDependencies
+- [ ] must exist `examples/ding-dong-bot.ts` to implement the ding/dong logic, use puppet api only.

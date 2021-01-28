@@ -43,7 +43,7 @@ There at least have two way to do the registration to publish tokens:
 
 ### 1. Registration the Token with Docker
 
-We have an issue describing the steps in details: 
+We have an issue describing the steps in details:
 
 1. [How to create your own Wechaty Puppet Service Token with the Web Protocol #1986](https://github.com/wechaty/wechaty/issues/1986)
 1. [Using your Puppet PadPlus token with Python, Java, and Go Wechaty #1985](https://github.com/wechaty/wechaty/issues/1985)
