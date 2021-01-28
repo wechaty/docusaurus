@@ -1,24 +1,21 @@
-# .NET Wechaty 如何使用 PadLocal Puppet Service
+## .NET Wechaty 如何使用 PadLocal Puppet Service
 
-<a name="pN6le"></a>
-## PadLocal 介绍
-至于什么是PadLocal的详细介绍我这里就不累述了，把相关的文档贴在这里，大家可以去仔细的查看<br />   
+### PadLocal 介绍
 
-- [New Wechaty Puppet Service: PadLocal ](https://wechaty.js.org/2020/10/12/puppet-padlocal-intro/)
+至于什么是PadLocal的详细介绍我这里就不累述了，把相关的文档贴在这里，大家可以去仔细的查看
+
+- [New Wechaty Puppet Service: PadLocal](https://wechaty.js.org/2020/10/12/puppet-padlocal-intro/)
 - [wechaty-puppet-padlocal](https://github.com/padlocal/wechaty-puppet-padlocal)
 - [wechaty-puppet-padlocal-demo](https://github.com/padlocal/wechaty-puppet-padlocal-demo)
-- [TOKEN 申请方法](https://wechaty.js.org/docs/puppet-services/) 或者在 `Wechaty Contributors` 群 @好大 
+- [TOKEN 申请方法](https://wechaty.js.org/docs/puppet-services/) 或者在 `Wechaty Contributors` 群 @好大
 
-![](https://wechaty.js.org/assets/2020/padlocal/topological-graph.png)
-<a name="7CUGS"></a>
-## 部署Wechaty Gateway
+![PadLocal](https://wechaty.js.org/assets/2020/padlocal/topological-graph.png)
 
+### 部署Wechaty Gateway
 
 - `WECHATY_PUPPET_PADLOCAL_TOKEN`  是你的PadLocal token，前缀 `puppet_padlocal_` 请勿去掉
 - `WECHATY_TOKEN` 可以随机生成一个GUID作为你GateWay的token，可以访问改地址随机生成：[https://www.uuidgenerator.net/version4](https://www.uuidgenerator.net/version4)
 - `WECHATY_PUPPET_SERVER_PORT` 在设置端口前，请保证该端口没有被占用，如果是Linux系统，则可以通过 `netstat  -anp  |grep 端口` 检查该端口是否被占用
-
-
 
 ```csharp
 # 设置环境变量
@@ -45,11 +42,10 @@ docker run -ti \
   
 ```
 
+### 多语言Wechaty对接GateWay
 
-<a name="OURpG"></a>
-## 多语言Wechaty对接GateWay
+在对接Gateway的时候，这里需要注意下，如果GateWay的是部署在公网可以访问的服务器上，则我们可以直接设置 `WECHATY_TOKEN` 即可连接，如果是部署在自己内网服务器上，这里则需要指定自己服务器的 `IP`  和 `Port` ，其他的多语言版本也是类似，其他的地方就没有什么变动的。<br />我这里以 .NET Wechaty 为例做个说明：
 
-<br />在对接Gateway的时候，这里需要注意下，如果GateWay的是部署在公网可以访问的服务器上，则我们可以直接设置 `WECHATY_TOKEN` 即可连接，如果是部署在自己内网服务器上，这里则需要指定自己服务器的 `IP`  和 `Port` ，其他的多语言版本也是类似，其他的地方就没有什么变动的。<br />我这里以 .NET Wechaty 为例做个说明：
 ```csharp
 // GateWay 部署在 dev.chatie.io
 var PuppetOptions = new Module.Puppet.Schemas.PuppetOptions()
@@ -65,7 +61,6 @@ var PuppetOptions = new Module.Puppet.Schemas.PuppetOptions()
     Endpoint = "192.168.1.100:9004"
 };
 ```
-
 
 ```bash
 info: Wechaty.Wechaty[0]
@@ -95,10 +90,10 @@ info: Wechaty.Module.Puppet.WechatyPuppet[0]
 </msg>
 ```
 
+### .NET Wechaty Getting Start
 
-<a name="X01eN"></a>
-## .NET Wechaty Getting Start 
  6行命令启动一个 `.NET Wechaty` 服务
+
 ```csharp
 var PuppetOptions = new PuppetOptions()
 {
@@ -113,18 +108,13 @@ var PuppetOptions = new PuppetOptions()
      .Start();
 ```
 
-<br />具体的使用可以查看` dotnet-wechaty-getting-started `<br />
+具体的使用可以查看` dotnet-wechaty-getting-started `
 
 - [.NET Wechaty](https://github.com/wechaty/dotnet-wechaty)
 - [dotnet-wechaty-getting-started](https://github.com/wechaty/dotnet-wechaty-getting-started)
-- 之前我写过一篇博客介绍如何使用[.NET Wechaty ](https://wechaty.js.org/2020/12/31/dotnet-wechaty-getting-start/)，大家也可以通过这里了解如何使用
-<a name="aXu7n"></a>
-## dev.chatie.io 服务器申请
+- 之前我写过一篇博客介绍如何使用[.NET Wechaty](https://wechaty.js.org/2020/12/31/dotnet-wechaty-getting-start/)，大家也可以通过这里了解如何使用
 
+### dev.chatie.io 服务器申请
 
 - Wechaty Contributor Server Host 是由微软 MVP Sponsorship 赞助的，只针对 [Wechaty Contributor Program](https://wechaty.js.org/docs/contributor-program/) 的 `Contributor` 使用，具体的申请方式请查看 [PMC-issue-13](https://github.com/wechaty/PMC/issues/13)。
 - 如何成为 `Wechaty Contributor` 可以通过该链接查看 [https://wechaty.js.org/docs/contributor-program/](https://wechaty.js.org/docs/contributor-program/)
-
-
-<br />
-
