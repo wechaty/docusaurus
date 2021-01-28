@@ -21,8 +21,6 @@ image: /assets/2020/12-dotnet-wechaty/dotnet-wechaty.png
 - [wechaty-puppet-padlocal-demo](https://github.com/padlocal/wechaty-puppet-padlocal-demo)
 - [TOKEN 申请方法](https://wechaty.js.org/docs/puppet-services/) 或者在 `Wechaty Contributors` 群 @好大
 
-![PadLocal](https://wechaty.js.org/assets/2020/padlocal/topological-graph.png)
-
 ### 部署Wechaty Gateway
 
 - `WECHATY_PUPPET_PADLOCAL_TOKEN`  是你的PadLocal token，前缀 `puppet_padlocal_` 请勿去掉
