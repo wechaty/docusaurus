@@ -15,7 +15,7 @@
 
 - `WECHATY_PUPPET_PADLOCAL_TOKEN`  是你的PadLocal token，前缀 `puppet_padlocal_` 请勿去掉
 - `WECHATY_TOKEN` 可以随机生成一个GUID作为你GateWay的token，可以访问改地址随机生成：[https://www.uuidgenerator.net/version4](https://www.uuidgenerator.net/version4)
-- `WECHATY_PUPPET_SERVER_PORT` 在设置端口前，请保证该端口没有被占用，如果是Linux系统，则可以通过 `netstat  -anp  |grep 端口` 检查该端口是否被占用
+- `WECHATY_PUPPET_SERVER_PORT` 在设置端口前，请保证该端口没有被占用，如果是Linux系统，则可以通过 `netstat  -anp  |grep 端口` 命令检查该端口是否被占用
 
 ```csharp
 # 设置环境变量
