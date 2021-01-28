@@ -59,6 +59,13 @@ module.exports = {
       'api/room-invitation',
       'api/friendship',
     ],
+    Specifications: [
+      'specifications/README',
+      'specifications/wechaty',
+      'specifications/puppet',
+      'specifications/service',
+      'specifications/token',
+    ],
     FAQ: ['faq'],
     Troubleshooting: [
       'troubleshooting',
