@@ -1,3 +1,15 @@
+---
+title: .NET Wechaty如何使用PadLocal Puppet Service
+author: jesn
+date: 2021-01-28 23:44:00
+tags:
+  - .NET wechaty
+  - .NET
+  - Csharp
+categories: project
+image: /assets/2020/12-dotnet-wechaty/dotnet-wechaty.png
+---
+
 ## .NET Wechaty 如何使用 PadLocal Puppet Service
 
 ### PadLocal 介绍
