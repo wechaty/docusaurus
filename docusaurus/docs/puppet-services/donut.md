@@ -7,6 +7,12 @@ sidebar_label: Donut
 - Provider: [@juzibot](https://github.com/juzibot)
 - Support & Feedback: <https://github.com/juzibot/donut-tester/issues>
 
+## Sunsetting Notice
+
+1. Starting in July 2021, Donut will not accept new application.
+1. Donut will be shutdown on Jan 1, 2022
+1. Donut will be fully shutdown by the end of 2022.
+
 ## How to buy(apply)
 
 Register via WeCom at [jukebox](https://qiwei.juzibot.com/user/login?isWechaty=true) and buy the token! Also you can get a SCRM system for free!
