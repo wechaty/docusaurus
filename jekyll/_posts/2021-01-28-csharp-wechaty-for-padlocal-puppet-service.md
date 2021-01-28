@@ -7,7 +7,7 @@ tags:
   - .NET
   - Csharp
 categories: project
-image: /assets/2020/12-dotnet-wechaty/dotnet-wechaty.png
+image: /assets/2021/01-csharp-wechaty-for-padlocal-puppet-service/dotnet-wechaty.png
 ---
 
 ## .NET Wechaty 如何使用 PadLocal Puppet Service
