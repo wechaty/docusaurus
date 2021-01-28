@@ -183,25 +183,42 @@ _Wechaty Puppet Service Token Gateway_ is a gateway for converting the _Wechaty 
 
 Here's an example for setup a Wechaty Puppet Service for the PadLocal Puppet Provider.
 
-Firstly, define the underlying Wechaty Puppet Provider and its parameters:
+### 1. WECHATY_PUPPET
+
+Define the underlying Wechaty Puppet Provider and its parameters:
 
 ```sh
 export WECHATY_PUPPET='wechaty-puppet-padlocal'
 export WECHATY_PUPPET_PADLOCAL_TOKEN='puppet_padlocal_xxx'
 ```
 
-Secondly, specify the token of our Wechaty Puppet Service, with a port for the service(will be used for the docker port mapping)
+> Note: you can using any Wechaty Puppet at here, like [wechaty-puppet-puppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer), [wechaty-puppet-whatsapp](https://github.com/wechaty/wechaty-puppet-whatsapp), and any others we mentioned earlier.
+
+### 2. WECHATY_TOKEN
+
+[Generate a new UUIDv4](https://www.uuidgenerator.net/version4) as your Wechaty Puppet Service Token. Your new token **MUST** different to any existing tokens in our system. (or they will conflict)
 
 ```sh
-export WECHATY_TOKEN='puppet_service_yyy'
+export WECHATY_TOKEN='2fdb00a5-5c31-4018-84ac-c64e5f995057'
+```
+
+### 3. WECHATY_PUPPET_SERVER_PORT
+
+Specify a free port for the Wechaty Puppet Service (it will also be used for the docker port mapping)
+
+```sh
 export WECHATY_PUPPET_SERVER_PORT=8788 // any available port can be visited from internet
 ```
 
-Thirdly, set log to `verbose` to get more debug log messages.
+### 4. WECHATY_LOG
+
+Set log to `verbose` to get more debug log messages.
 
 ```sh
 export WECHATY_LOG="verbose"
 ```
+
+### 5. Start Wechaty Puppet Servcie Token Gateway
 
 At last, everything we need has been packaged to the docker image `wechaty/wechaty`. All you need is to use a docker command to start your Wechaty Puppet Service Token Gateway with the above configuration:
 
@@ -217,7 +234,7 @@ docker run -ti --rm \
   -e WECHATY_LOG \
   \
   -p "$WECHATY_PUPPET_SERVER_PORT:$WECHATY_PUPPET_SERVER_PORT” \
-  wechaty/wechaty
+  wechaty/wechaty:0.56
 ```
 
 You can see lots of the output log messages in your terminal with the above command.
@@ -225,7 +242,7 @@ You can see lots of the output log messages in your terminal with the above comm
 Then you can confirm your Wechaty Puppet Service is online by visiting:
 
 ```sh
-https://api.chatie.io/v0/hosties/${WECHATY_TOKEN}
+curl https://api.chatie.io/v0/hosties/${WECHATY_TOKEN}
 ```
 
 > Replace ${WECHATY\_TOKEN} to your real token in the above configuration
@@ -239,7 +256,7 @@ Using Wechaty Puppet Service is very easy. Just set the `WECHATY_PUPPET` to `wec
 
 ```sh
 export WECHATY_PUPPET=wechaty-puppet-service
-export WECHATY_PUPPET_SERVICE_TOKEN=${__WECHATY_PUPPET_SERVICE_TOKEN__}
+export WECHATY_PUPPET_SERVICE_TOKEN=${WECHATY_PUPPET_SERVICE_TOKEN}
 node -r ts-node/register bot.ts
 ```
 
