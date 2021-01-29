@@ -38,10 +38,10 @@ jobs:
       - name: NPM Test
         run: |
           # Huan(202101): Only show unit tests that failed for easier debug
-          set +e
+          set +e  # Execute all commands without exit on failure
           if ! npm test > /dev/null 2>&1; then
-            2>/dev/null npm test  | grep '^not ok '  || true
-            1>/dev/null npm test                     || true
+            2>/dev/null npm test  | grep '^not ok '
+            1>/dev/null npm test
           fi
       - name: Install Dependencies
         run: make install
