@@ -122,7 +122,7 @@ var PuppetOptions = new PuppetOptions()
 
 - [.NET Wechaty](https://github.com/wechaty/dotnet-wechaty)
 - [dotnet-wechaty-getting-started](https://github.com/wechaty/dotnet-wechaty-getting-started)
-- 之前我写过一篇博客介绍如何使用[.NET Wechaty](https://wechaty.js.org/2020/12/31/dotnet-wechaty-getting-start/)，大家也可以通过这里了解如何使用
+- 之前我写过一篇博客介绍如何使用[.NET Wechaty](https://wechaty.js.org/2020/12/31/dotnet-wechaty-getting-start/)，大家可以通过这里了解如何使用
 
 ### dev.chatie.io 服务器申请
 
