@@ -38,9 +38,10 @@ jobs:
       - name: NPM Test
         run: |
           # Huan(202101): Only show unit tests that failed for easier debug
+          set +e
           if ! npm test > /dev/null 2>&1; then
-            npm test 2>/dev/null | grep '^not ok '
-            npm test > /dev/null
+            2>/dev/null npm test  | grep '^not ok '  || true
+            1>/dev/null npm test                     || true
           fi
       - name: Install Dependencies
         run: make install
