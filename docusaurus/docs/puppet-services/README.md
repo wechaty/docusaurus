@@ -24,9 +24,13 @@ If you have any questions about the Wechaty Puppet Service, please feel free to 
 
 ### 1. Free TOKEN (Short-term)
 
-Short-term TOKEN is for those developers who want to test Wechaty Puppet Service to make sure the service can meet their needs.
+Short-term TOKEN（7 days） is for those developers who want to test Wechaty Puppet Service to make sure the service can meet their needs.
 
 TODO: list a easy to follow steps how to apply free token
+
+- Paimon: Register [here](http://150.158.176.142/)
+- wxwork/donut: Using **WeCom Account**(Not WeChat) with administrator rights [here](https://qiwei.juzibot.com/user/login?isWechaty=true)
+- Padlocal: send email to oxddoxdd@gmail.com
 
 ### 2. Free TOKEN (Long-term)
 
