@@ -30,13 +30,18 @@ jobs:
           bundle config path ~/.npm/bundle
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
       - name: NPM Install
         run: npm install
       - name: NPM Test
-        run: npm test
+        run: |
+          # Huan(202101): Only show unit tests that failed for easier debug
+          if ! npm test > /dev/null 2>&1; then
+            npm test 2>/dev/null | grep 'not ok'
+            npm test > /dev/null
+          fi
       - name: Install Dependencies
         run: make install
       - name: Build
@@ -64,7 +69,7 @@ jobs:
         bundle config path ~/.npm/bundle
 
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
     - name: Config Git
