@@ -10,12 +10,7 @@ on:
 jobs:
   test:
     name: Test & Build
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node: [12]
-
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/cache@v2
@@ -29,10 +24,10 @@ jobs:
           sudo gem install bundler
           bundle config path ~/.npm/bundle
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 14
       - name: NPM Install
         run: npm install
       - name: NPM Test
