@@ -75,3 +75,48 @@ See: <https://github.com/wechaty/wechaty-puppet-service/issues/18>
 - [ ] `wechaty-puppet` must not a dependency. It should be put in devDependencies and peerDependencies
 - [ ] `wechaty` must not a dependency. It should be put in devDependencies and peerDependencies
 - [ ] must exist `examples/ding-dong-bot.ts` to implement the ding/dong logic, use puppet api only.
+
+## Event: `heartbeat`
+
+Puppet must emit heartbeats for provide a health check signal.
+
+### The `heartbeat` design
+
+Here are the details:
+
+1. Wechaty Puppet is designed to emit at least one event in 60 seconds. If we do not have any events to emit, then we need to emit a `heartbeat` event so that it can prove itself is alive and healthy. See: <https://github.com/wechaty/wechaty-puppet/blob/bab9e29c088c33fa8bc6e148d9bdadbd453fd138/src/puppet.ts#L253-L254>
+2. It seems that the PadLocal does not have any `heartbeat` event to emit when there are no other events, so if your bot idle for more than 60 seconds, then the Wechaty Puppet system will think the puppet provider has dead, so it will call `reset` to try to recover the puppet.
+
+A leaking of `heartbeat` example logs:
+
+```sh
+02:00:13 INFO StarterBot Message#Text[🗣Contact<OssChat>@👥Room<ChatOps - Heartbeat 💖>] [太阳]
+
+02:01:13 WARN Puppet dogReset() reason: {"data":"onGrpcStreamEvent(EVENT_TYPE_MESSAGE)","timeout":60000}
+02:01:13 VERB Puppet reset(onGrpcStreamEvent(EVENT_TYPE_MESSAGE))
+02:01:13 VERB PuppetService stop()
+02:01:13 VERB StateSwitch <PuppetService> off(pending) <- (false)
+02:01:13 VERB PuppetService stopGrpcStream()
+02:01:13 VERB PuppetService stopGrpcClient()
+02:01:13 VERB Puppet selfId()
+02:01:13 VERB StateSwitch <PuppetService> off(true) <- (pending)
+02:01:13 INFO StarterBot Contact<Mike (李卓桓)> logout
+02:01:13 VERB PuppetService start()
+02:01:13 VERB StateSwitch <PuppetService> on(pending) <- (false)
+02:01:13 VERB PuppetService startGrpcClient()
+02:01:13 VERB PuppetService discoverServiceIp(e49007b7-7523-4a80-bfdb-1be0de3844b9)
+02:01:14 VERB PuppetService startGrpcStream()
+02:01:14 VERB StateSwitch <PuppetService> on(true) <- (pending)
+02:01:14 VERB PuppetService onGrpcStreamEvent({type:EVENT_TYPE_LOGIN(25), payload:"{"contactId":"wxid_a8d806dzznm822"}"})
+02:01:14 INFO StarterBot Contact<Mike (李卓桓)> login
+02:01:15 VERB PuppetService onGrpcStreamEvent({type:EVENT_TYPE_READY(23), payload:"{"data":"ready"}"})
+02:01:15 VERB StateSwitch <WechatyReady> on(true) <- (true)
+02:01:20 VERB PuppetService onGrpcStreamEvent({type:EVENT_TYPE_READY(23), payload:"{"data":"ready"}"})
+02:01:20 VERB StateSwitch <WechatyReady> on(true) <- (true)
+```
+
+### `heartbeat` Example
+
+Here's an [example](https://github.com/wechaty/wechaty-puppet-puppeteer/blob/07f6260b3784c65bcee24bd003aac5d2968a9efc/src/wechaty-bro.js#L103-L112) from our puppeteer puppet, which emits heartbeats in the browser, so if the browser dead, we will get to know because the heartbeat will be lost.
+
+See: <https://github.com/wechaty/puppet-services/issues/85#issuecomment-769967606>
