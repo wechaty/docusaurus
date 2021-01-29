@@ -51,11 +51,9 @@ jobs:
   deploy:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     name: Deploy GitHub Pages
-    needs: [test]
+    needs:
+      - test
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [ 12.x ]
     steps:
     - uses: actions/checkout@v2
     - uses: actions/cache@v2
@@ -69,10 +67,10 @@ jobs:
         sudo gem install bundler
         bundle config path ~/.npm/bundle
 
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 14
     - name: Config Git
       run: |
         git config --global user.name 'Huan @ GitHub Action'
