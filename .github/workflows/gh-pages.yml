@@ -10,12 +10,7 @@ on:
 jobs:
   test:
     name: Test & Build
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node: [12]
-
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/cache@v2
@@ -29,18 +24,19 @@ jobs:
           sudo gem install bundler
           bundle config path ~/.npm/bundle
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 14
       - name: NPM Install
         run: npm install
       - name: NPM Test
         run: |
           # Huan(202101): Only show unit tests that failed for easier debug
+          set +e  # Execute all commands without exit on failure
           if ! npm test > /dev/null 2>&1; then
-            npm test 2>/dev/null | grep '^not ok '
-            npm test > /dev/null
+            2>/dev/null npm test  | grep '^not ok '
+            1>/dev/null npm test
           fi
       - name: Install Dependencies
         run: make install
@@ -50,11 +46,9 @@ jobs:
   deploy:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     name: Deploy GitHub Pages
-    needs: [test]
+    needs:
+      - test
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [ 12.x ]
     steps:
     - uses: actions/checkout@v2
     - uses: actions/cache@v2
@@ -68,10 +62,10 @@ jobs:
         sudo gem install bundler
         bundle config path ~/.npm/bundle
 
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 14
     - name: Config Git
       run: |
         git config --global user.name 'Huan @ GitHub Action'
