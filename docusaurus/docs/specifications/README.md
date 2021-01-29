@@ -4,17 +4,17 @@ title: Wechaty Specifications
 sidebar_label: 'Specification Index'
 ---
 
-Wechaty community need a clear specifications for healthy ecosystem.
+Wechaty community need clear specifications for a healthy ecosystem.
 
-All Wechaty community projects should follow our official specifications.
+All Wechaty community projects should follow Wechaty Specifications.
 
 ## Table of Content
 
-- [Wechaty](wechaty)
+- [Polygram Wechaty](wechaty)
   - Polygram Wechaty
-- [Puppet](puppet)
+- [Wechaty Puppet](puppet)
   - Puppet Abstract, Puppet Providers
-- [Service](service)
+- [Wechaty Puppet Service](service)
   - Wechaty Puppet Service
-- [Token](token)
+- [Wechaty Puppet Service Token](token)
   - Wechaty Puppet Service Token
