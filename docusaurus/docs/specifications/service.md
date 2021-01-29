@@ -65,6 +65,17 @@ The current process can be described as the following two steps:
 
 You can learn more about the registration protocol via this discussion: [Support rock puppet service provider. #98](https://github.com/wechaty/wechaty-puppet-service/issues/98)
 
+## Registration Process Discussion
+
+The current process can be described as the following two steps:
+
+1. The `Wechaty Puppet Server` sends a WebSocket connection to `wss://api.chatie.io/v0/websocket`, with an HTTP authorization header  `Token puppet_servcie_token_here`. After the connection has been established, the `api.chatie.io` service will register your token online. (refer to the source code at <https://github.com/wechaty/wechaty/blob/7e97620e2a92841227a6ae355efa615c5af95b32/src/io.ts#L236>)
+1. When a Wechaty Puppet Service Discovery Query has been sent to `api.chatie.io` like `https://api.chatie.io/v0/hosties/puppet_service_token` has been visited, the `api.chatie.io` will send a JSONRPC to you via the WebSocket connection, with the method name `hostieGrpcPort`, and you need to return your service port so that it can be returned to the user. (refer to the source code at <https://github.com/wechaty/wechaty/blob/7e97620e2a92841227a6ae355efa615c5af95b32/src/io.ts#L363>)
+
+The above two steps are the current way we are working with our service. So please feel free to read the source code from the links above, then I believe you can register multiple rock puppet token to our service with the same IP and Port without any problem.
+
+See: <https://github.com/wechaty/wechaty-puppet-service/issues/98>
+
 ## Related Resources
 
 1. Wechaty Puppet Service gRPC: <https://github.com/wechaty/grpc>
