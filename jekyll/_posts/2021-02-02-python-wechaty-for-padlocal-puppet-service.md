@@ -15,6 +15,7 @@ image: /assets/2020/python-wechaty/python-wechaty-logo.png
 ### 首先是TOKEN的申请方法，大家可以按图索骥
 
 - [TOKEN 申请方法](https://wechaty.js.org/docs/puppet-services/)
+- [wechaty-puppet-padlocal](https://github.com/padlocal/wechaty-puppet-padlocal)
 
 ### 搭建PadLocal Token Gateway
 
