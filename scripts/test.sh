@@ -15,10 +15,7 @@ echo
 echo '####### Error Details #######'
 echo
 
-echo 1
 2>/dev/null npm test | grep '^not ok '
-echo 2
 1>/dev/null npm test
-echo 3
 
 exit 1
