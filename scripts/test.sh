@@ -6,10 +6,14 @@
 # GitHub Actions is using `shell: /bin/bash -e {0}`
 # set +e
 
-if npm test > /dev/null 2>&1; then
+if npm test; then
   echo 'NPM Testing passed.'
   exit 0
 fi
+
+echo
+echo '####### Error Details #######'
+echo
 
 echo 1
 2>/dev/null npm test | grep '^not ok '
