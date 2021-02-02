@@ -20,8 +20,6 @@ Token是分协议的，可以是iPad、Windows和Web，本文就是基于iPad的
 
 ### 搭建PadLocal Token Gateway
 
-先上代码
-
 ```shell
 # 设置环境变量
 
