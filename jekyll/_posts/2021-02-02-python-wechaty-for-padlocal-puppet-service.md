@@ -1,31 +1,44 @@
 ---
-title: python Wechaty如何使用PadLocal Puppet Service
-author: biofer
-date: 2021-02-02 13:26:00
+title: .NET Wechaty如何使用PadLocal Puppet Service
+author: jesn
+date: 2021-01-28 23:44:00
 tags:
-  - Python-Wechaty
-  - puppet-services
-  - PadLocal Token
+  - .NET-wechaty
+  - .NET
+  - Csharp
 categories: project
-image: /assets/2020/python-wechaty/python-wechaty-logo.png
+image: /assets/2021/01-csharp-wechaty-for-padlocal-puppet-service/dotnet-wechaty.png
 ---
 
-## python Wechaty 如何使用 PadLocal Puppet Service
+## .NET Wechaty 如何使用 PadLocal Puppet Service
 
-### 搭建PadLocal Token Gateway
+### PadLocal 介绍
 
-先上代码
+至于什么是PadLocal的详细介绍我这里就不累述了，把相关的文档贴在这里，大家可以去仔细的查看
 
-```shell
+- [New Wechaty Puppet Service: PadLocal](https://wechaty.js.org/2020/10/12/puppet-padlocal-intro/)
+- [wechaty-puppet-padlocal](https://github.com/padlocal/wechaty-puppet-padlocal)
+- [wechaty-puppet-padlocal-demo](https://github.com/padlocal/wechaty-puppet-padlocal-demo)
+- [TOKEN 申请方法](https://wechaty.js.org/docs/puppet-services/) 或者在 `Wechaty Contributors` 群 @好大
+
+### 部署Wechaty Gateway
+
+- `WECHATY_PUPPET_PADLOCAL_TOKEN`  是你的PadLocal token，前缀 `puppet_padlocal_` 请勿去掉
+- `WECHATY_TOKEN` 可以随机生成一个GUID作为你GateWay的token，可以访问改地址随机生成：[https://www.uuidgenerator.net/version4](https://www.uuidgenerator.net/version4)
+- `WECHATY_PUPPET_SERVER_PORT` 在设置端口前，请保证该端口没有被占用，如果是Linux系统，则可以通过 `netstat  -anp  |grep 端口` 命令检查该端口是否被占用
+
+```csharp
 # 设置环境变量
 
 export WECHATY_LOG="verbose"
+
 export WECHATY_PUPPET="wechaty-puppet-padlocal"
-export WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal_XXXXXX"
+export WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal_XXX"
 
 export WECHATY_PUPPET_SERVER_PORT="9001"
-export WECHATY_TOKEN="1fe5f846-3cfb-401d-b20c-XXXXX"
+export WECHATY_TOKEN="0c7b8f97-f3cc-40a5-a537-d492fd689801"
 
+# 运行docker
 docker run -ti \
   --name wechaty_puppet_service_token_gateway \
   --rm \
@@ -36,53 +49,82 @@ docker run -ti \
   -e WECHATY_TOKEN \
   -p "$WECHATY_PUPPET_SERVER_PORT:$WECHATY_PUPPET_SERVER_PORT" \
   wechaty/wechaty:0.56
+  
 ```
 
-- WECHATY_PUPPET_PADLOCAL_TOKEN 申请得到的token代码
-- WECHATY_PUPPET_SERVER_PORT 设置对外访问端口，需要保证端口没被占用，没被防火墙匹配
-- WECHATY_TOKEN 生成个人随机[TOKEN](https://www.uuidgenerator.net/version4)。WECHATY_TOKEN：个人理解为和远程wechaty服务器做通讯用，通过这个唯一token可以返回当前主机访问地址和端口。所以需要避免和别人重复。
+### 多语言Wechaty对接GateWay
 
-可以通过下面代码，确定是否成功。
+在对接Gateway的时候，这里需要注意下，如果GateWay的是部署在公网可以访问的服务器上，则我们可以直接设置 `WECHATY_TOKEN` 即可连接，如果是部署在自己内网服务器上，这里则需要指定自己服务器的 `IP`  和 `Port` ，其他的多语言版本也是类似，其他的地方就没有什么变动的。<br />我这里以 .NET Wechaty 为例做个说明：
 
-```shell
-curl https://api.chatie.io/v0/hosties/$WECHATY_TOKEN (个人随机token)
-{"ip":"36.7.XXX.XXX","port":9001}
+```csharp
+// GateWay 部署在 dev.chatie.io
+var PuppetOptions = new Module.Puppet.Schemas.PuppetOptions()
+{
+    Token = "0c7b8f97-f3cc-40a5-a537-d492fd689801",
+};
+
+
+// GateWay部署在自己的服务器上
+var PuppetOptions = new Module.Puppet.Schemas.PuppetOptions()
+{
+    Token = "0c7b8f97-f3cc-40a5-a537-d492fd689801",
+    Endpoint = "192.168.1.100:9004"
+};
 ```
 
-### python-Wechaty对接GateWay
+```bash
+info: Wechaty.Wechaty[0]
+      init puppet event bridge
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: D:\coding\github\wechaty\dotnet\dotnet-wechaty\src\Wechaty.Getting.Start\bin\Debug\netcoreapp3.1
+info: Wechaty.Module.Puppet.WechatyPuppet[0]
+      dateTime:2021-01-28 17:53:00 Login,PayLoad:{"contactId":"xiaoxianxian"}
+"onGrpcStreamEvent(Login)"
+info: Wechaty.Module.Puppet.WechatyPuppet[0]
+      dateTime:2021-01-28 17:53:04 Message,PayLoad:{"messageId":"379439903307716939"}
+"onGrpcStreamEvent(Message)"
+info: Wechaty.Module.Puppet.WechatyPuppet[0]
+      dateTime:2021-01-28 17:53:06 Message,PayLoad:{"messageId":"1921871762129872913"}
+"onGrpcStreamEvent(Message)"
+<msg>
+<op id='11'>
+<name>HandOffMaster</name>
+<arg><handofflist opcode="4" seq="1528" deviceid="A1ce85b51b227c93" networkstatus="wifi">
 
-在对接Gateway的时候，这里需要注意下，如果GateWay是部署在公网可以访问的服务器上，按照默认配置就可访问；如果是部署在自己内网服务器上，就会报`Your service token has no available endpoint, is your token correct?`，这个时候需要设置WECHATY_PUPPET_SERVICE_ENDPOINT。
-
-```shell
-#1  默认配置
-export WECHATY_PUPPET="wechaty-puppet-service"
-export WECHATY_PUPPET_SERVICE_TOKEN="puppet_padlocal_XXXXXX"
-
-#2  主机是部署在内网服务器上
-export WECHATY_PUPPET="wechaty-puppet-service"
-export WECHATY_PUPPET_SERVICE_TOKEN="puppet_padlocal_XXXXXX"
-export WECHATY_PUPPET_SERVICE_ENDPOINT="192.168.1.56:9001"
+        </handofflist></arg>
+</op>
+</msg>
 ```
 
-WECHATY_PUPPET_SERVICE_ENDPOINT：内网IP地址:端口号
+### .NET Wechaty Getting Start
 
-### python-wechaty-getting-started
+ 6行命令启动一个 `.NET Wechaty` 服务
 
-```shell
-git clone https://github.com/wj-Mcat/python-wechaty-getting-started
-cd python-wechaty-getting-started
+```csharp
+var PuppetOptions = new PuppetOptions()
+{
+    Token = "0c7b8f97-f3cc-40a5-a537-d492fd689801",
+};
+ bot = new Wechaty.Wechaty(PuppetOptions);
 
-export WECHATY_PUPPET="wechaty-puppet-service"
-export WECHATY_PUPPET_SERVICE_TOKEN="puppet_padlocal_XXXXXX"
-
-python examples/ding-dong-bot.py
+ await bot.OnScan(WechatyScanEventListener)
+     .OnLogin(WechatyLoginEventListener)
+     .OnMessage(WechatyMessageEventListenerAsync)
+     .OnHeartbeat(WechatyHeartbeatEventListener)
+     .Start();
 ```
 
-到此，恭喜你入坑。
-具体的使用可以查看[python-wechaty-getting-started](https://github.com/wechaty/python-wechaty-getting-started)
+具体的使用可以查看` dotnet-wechaty-getting-started `
 
-### 参考
+- [.NET Wechaty](https://github.com/wechaty/dotnet-wechaty)
+- [dotnet-wechaty-getting-started](https://github.com/wechaty/dotnet-wechaty-getting-started)
+- 之前我写过一篇博客介绍如何使用[.NET Wechaty](https://wechaty.js.org/2020/12/31/dotnet-wechaty-getting-start/)，大家可以通过这里了解如何使用
 
+### dev.chatie.io 服务器申请
+
+- Wechaty Contributor Server Host 是由微软 MVP Sponsorship 赞助的，只针对 [Wechaty Contributor Program](https://wechaty.js.org/docs/contributor-program/) 的 `Contributor` 使用，具体的申请方式请查看 [PMC-issue-13](https://github.com/wechaty/PMC/issues/13)。
 - 如何成为 `Wechaty Contributor` 可以通过该链接查看 [https://wechaty.js.org/docs/contributor-program/](https://wechaty.js.org/docs/contributor-program/)
-- [.NET Wechaty 如何使用 PadLocal Puppet Service](https://wechaty.js.org/2021/01/28/csharp-wechaty-for-padlocal-puppet-service/)
-- 特别感谢 @huan 的帮助。
