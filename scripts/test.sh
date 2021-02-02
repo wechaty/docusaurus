@@ -11,6 +11,6 @@ if npm test > /dev/null 2>&1; then
   exit 0
 fi
 
-2>/dev/null npm test  | grep '^not ok '
-1>/dev/null npm test
+2>/dev/null npm test  | grep '^not ok ' || true
+1>/dev/null npm test                    || true
 exit 1
