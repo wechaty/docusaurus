@@ -12,9 +12,9 @@ if npm test > /dev/null 2>&1; then
 fi
 
 echo 1
-2>/dev/null npm test  | grep '^not ok ' || true
+2>/dev/null npm test | grep '^not ok '
 echo 2
-1>/dev/null npm test                    || true
+1>/dev/null npm test
 echo 3
 
 exit 1
