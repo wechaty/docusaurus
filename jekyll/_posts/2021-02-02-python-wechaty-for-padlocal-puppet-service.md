@@ -19,6 +19,7 @@ image: /assets/2020/python-wechaty/python-wechaty-logo.png
 ### 搭建PadLocal Token Gateway
 
 先上代码
+
 ```shell
 # 设置环境变量
 
@@ -40,11 +41,13 @@ docker run -ti \
   -p "$WECHATY_PUPPET_SERVER_PORT:$WECHATY_PUPPET_SERVER_PORT" \
   wechaty/wechaty:0.56
 ```
+
 - WECHATY_PUPPET_PADLOCAL_TOKEN 申请得到的token代码
 - WECHATY_PUPPET_SERVER_PORT 设置对外访问端口，需要保证端口没被占用，没被防火墙匹配
 - WECHATY_TOKEN 生成个人随机[TOKEN](https://www.uuidgenerator.net/version4)。WECHATY_TOKEN：个人理解为和远程wechaty服务器做通讯用，通过这个唯一token可以返回当前主机访问地址和端口。所以需要避免和别人重复。
 
 可以通过下面代码，确定是否成功。
+
 ```shell
 curl https://api.chatie.io/v0/hosties/$WECHATY_TOKEN (个人随机token)
 {"ip":"36.7.XXX.XXX","port":9001}
@@ -65,6 +68,7 @@ export WECHATY_PUPPET="wechaty-puppet-service"
 export WECHATY_PUPPET_SERVICE_TOKEN="puppet_padlocal_XXXXXX"
 export WECHATY_PUPPET_SERVICE_ENDPOINT="192.168.1.56:9001"
 ```
+
 WECHATY_PUPPET_SERVICE_ENDPOINT：内网IP地址:端口号
 
 
@@ -80,6 +84,7 @@ export WECHATY_PUPPET_SERVICE_TOKEN="puppet_padlocal_XXXXXX"
 
 python examples/ding-dong-bot.py
 ```
+
 到此，恭喜你入坑。
 
 具体的使用可以查看[python-wechaty-getting-started](https://github.com/wechaty/python-wechaty-getting-started)
