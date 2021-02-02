@@ -15,10 +15,8 @@ image: /assets/2020/python-wechaty/python-wechaty-logo.png
 ### 首先是TOKEN的申请方法，大家可以按图索骥
 
 Token是分协议的，可以是iPad、Windows和Web，本文就是基于iPad的协议（PadLocal）。拿到Token后，就可以基于此做不同语言的开发。本文是描述python语言下的简单实现。
-
 - [wechaty-puppet-padlocal](https://github.com/padlocal/wechaty-puppet-padlocal)
 - [TOKEN 申请方法](https://wechaty.js.org/docs/puppet-services/)
-
 
 ### 搭建PadLocal Token Gateway
 
