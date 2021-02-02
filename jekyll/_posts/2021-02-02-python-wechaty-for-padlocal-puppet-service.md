@@ -13,11 +13,9 @@ image: /assets/2020/python-wechaty/python-wechaty-logo.png
 ## python Wechaty 如何使用 PadLocal Puppet Service
 
 ### 首先是TOKEN的申请方法，大家可以按图索骥
-
 - [TOKEN 申请方法](https://wechaty.js.org/docs/puppet-services/)
 
 ### 搭建PadLocal Token Gateway
-
 先上代码
 
 ```shell
@@ -55,7 +53,6 @@ curl https://api.chatie.io/v0/hosties/$WECHATY_TOKEN (个人随机token)
 
 
 ### python-Wechaty对接GateWay
-
 在对接Gateway的时候，这里需要注意下，如果GateWay是部署在公网可以访问的服务器上，按照默认配置就可访问；如果是部署在自己内网服务器上，就会报`Your service token has no available endpoint, is your token correct?`，这个时候需要设置WECHATY_PUPPET_SERVICE_ENDPOINT。
 
 ```shell
@@ -71,8 +68,6 @@ export WECHATY_PUPPET_SERVICE_ENDPOINT="192.168.1.56:9001"
 
 WECHATY_PUPPET_SERVICE_ENDPOINT：内网IP地址:端口号
 
-
-
 ### python-wechaty-getting-started
 
 ```shell
@@ -86,13 +81,9 @@ python examples/ding-dong-bot.py
 ```
 
 到此，恭喜你入坑。
-
 具体的使用可以查看[python-wechaty-getting-started](https://github.com/wechaty/python-wechaty-getting-started)
 
-
 ### 参考
-
 - 如何成为 `Wechaty Contributor` 可以通过该链接查看 [https://wechaty.js.org/docs/contributor-program/](https://wechaty.js.org/docs/contributor-program/)
 - [.NET Wechaty 如何使用 PadLocal Puppet Service](https://wechaty.js.org/2021/01/28/csharp-wechaty-for-padlocal-puppet-service/)
 - 特别感谢 @huan 的帮助。
-
