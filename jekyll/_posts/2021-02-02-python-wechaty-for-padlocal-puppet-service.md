@@ -12,7 +12,7 @@ image: /assets/2020/python-wechaty/python-wechaty-logo.png
 
 ## python Wechaty 如何使用 PadLocal Puppet Service
 
-### 首先是TOKEN 申请方法的申请方法，大家可以按图索骥
+### 首先是TOKEN的申请方法，大家可以按图索骥
 
 - [TOKEN 申请方法](https://wechaty.js.org/docs/puppet-services/)
 
