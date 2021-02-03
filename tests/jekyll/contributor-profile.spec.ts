@@ -68,7 +68,7 @@ test('developer project avatar should be put under assets/contributors/ folder',
   }
 })
 
-test('developer profile name must be github username', async t => {
+test('developer profile name must be GitHub username', async t => {
   const pickName = (filePath: string) => {
     const matches = /\/([^./]+?)\.md$/.exec(filePath)
     if (!matches) {
