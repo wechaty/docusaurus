@@ -1,6 +1,6 @@
 ---
 slug: /specifications/
-title: Wechaty Specifications
+title: 'Wechaty Specifications: Index'
 sidebar_label: 'Specification Index'
 ---
 
