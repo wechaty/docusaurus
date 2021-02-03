@@ -5,9 +5,11 @@ import test  from 'tstest'
 import fs   from 'fs'
 import path from 'path'
 import util from 'util'
+import https from 'https'
 
 import globCB         from 'glob'
 import { loadFront }  from 'yaml-front-matter'
+import fetch from 'node-fetch'
 
 import {
   getFrontmatterTeaserList,
@@ -17,7 +19,7 @@ import {
 
 const glob = util.promisify(globCB)
 
-test('all images linked from the post should be stored local (in the repo) for preventing the 404 error in the future.', async t => {
+test('all images linked from the post should be stored local (in the repo) for preventing the 404 error in the future (except the whitelist ones).', async t => {
   const URL_WHITE_LIST_REGEX = [
     /badge\.fury\.io/i,
     /dockeri\.co\/image/i,
@@ -31,7 +33,32 @@ test('all images linked from the post should be stored local (in the repo) for p
     /wechaty\.github\.io/i,
     /wechaty\.js\.org/i,
   ]
-  const isNotWhiteList = (url: string) => !URL_WHITE_LIST_REGEX.some(regex => regex.test(url))
+  const isWhiteList = (url: string) => URL_WHITE_LIST_REGEX.some(regex => regex.test(url))
+  const not         = (func: (...args: any[]) => boolean) => (...args: any) => !func(...args)
+
+  // https://stackoverflow.com/a/59944400/1123955
+  const httpsAgent = new https.Agent({
+    rejectUnauthorized: false,
+  })
+  const httpsOptions = {
+    agent: httpsAgent,
+  }
+  const urlExist = async (url: string) => {
+    try {
+      const response = await fetch(
+        encodeURI(url),
+        {
+          method: 'HEAD',
+          .../^https/.test(url) ? httpsOptions : undefined,
+        },
+      )
+      return response.ok
+    } catch (e) {
+      console.error(e)
+      t.fail(`${url} is invalid`)
+      return false
+    }
+  }
 
   const postsFileList        = await glob(`${JEKYLL_FOLDER.posts}/*.md`)
   const contributorsFileList = await glob(`${JEKYLL_FOLDER.contributors}/*.md`)
@@ -48,15 +75,27 @@ test('all images linked from the post should be stored local (in the repo) for p
     ...postsFileList.map(getFrontmatterTeaserList).flat(),
     ...postsFileList.map(getMarkdownImageList).flat(),
     ...contributorsFileList.map(getAvatarList).flat(),
-  ].filter(isNotWhiteList)
+  ]
 
-  for (const image of allImageList) {
-    if (/^http/i.test(image)) {
-      t.fail(`"${image}" should put image files to local repo instead of using URL`)
+  const remoteImageList = allImageList.filter(isWhiteList)
+  const localImageList  = allImageList.filter(not(isWhiteList))
+
+  for (const imageUrl of remoteImageList) {
+    if (!/^http/i.test(imageUrl)) {
+      t.fail(`"${imageUrl}" should be a remote url for white listed image`)
     } else {
-      const filename = path.join(JEKYLL_FOLDER.root, image)
+      const good = urlExist(imageUrl)
+      t.true(good, `"${imageUrl}" should be HTTP/200`)
+    }
+  }
+
+  for (const imagePath of localImageList) {
+    if (/^http/i.test(imagePath)) {
+      t.fail(`"${imagePath}" should put image files to local repo instead of using URL`)
+    } else {
+      const filename = path.join(JEKYLL_FOLDER.root, imagePath)
       const good = fs.existsSync(filename)
-      t.true(good, `"${image}" should exist`)
+      t.true(good, `"${imagePath}" should exist`)
     }
   }
 })
