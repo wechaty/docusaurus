@@ -1,8 +1,10 @@
 ---
-title: Puppet
+title: Wechaty Puppet
 ---
 
-## Puppet
+Puppet is... (introduction, tbw)
+
+## Basic Rules
 
 Here are some rules that a Wechaty Puppet should follow:
 
@@ -120,3 +122,54 @@ A leaking of `heartbeat` example logs:
 Here's an [example](https://github.com/wechaty/wechaty-puppet-puppeteer/blob/07f6260b3784c65bcee24bd003aac5d2968a9efc/src/wechaty-bro.js#L103-L112) from our puppeteer puppet, which emits heartbeats in the browser, so if the browser dead, we will get to know because the heartbeat will be lost.
 
 See: <https://github.com/wechaty/puppet-services/issues/85#issuecomment-769967606>
+
+## Wechaty Puppet Message Processing Flow
+
+Yes, `video` messagge is not supported now, and pr is welcome. I believe this feature is simple for you. You can have a try so you can become a wechaty contributor 👍 
+Please refer to :
+
+- [message material in official-account](https://developers.weixin.qq.com/doc/offiaccount/Asset_Management/New_temporary_materials.html)
+- [sendFile method](https://github.com/wechaty/wechaty-puppet-official-account/blob/master/src/official-account/official-account.ts#L299)
+- [messageSend method](https://github.com/wechaty/wechaty-puppet-official-account/blob/master/src/puppet-oa.ts#L495)
+
+We now support very limit message types:
+
+<https://github.com/wechaty/wechaty-puppet-official-account/blob/381ffb820fcc63e4b89a99c433b696e790e06b7a/src/official-account/webhook.ts#L241-L244>
+
+In order to support receiving more message types, like audio, you need to look at:
+
+<https://github.com/wechaty/wechaty-puppet-official-account/blob/381ffb820fcc63e4b89a99c433b696e790e06b7a/src/official-account/webhook.ts#L247-L252>
+
+I hope the above information can help you and please feel free to let me know if you have more questions. @MachengShen 
+
+Congratulations! It seems that you can receive the right webhook payload from WeChat Official Server when you sent an audio message to your Official Account!
+
+However, it seems that the _Wechaty Message Payload_ has not been set correctly. In order to make it correct, you need to understand the message processing flow in Wechaty Puppet.
+
+### Wechaty Puppet Message Processing Flow
+
+1. The Webhook get called by the Tencent Server (what you have done already)
+1. The message **event** will be propagated from the `Webhook` class to the `OfficialAccount` class:
+
+    <https://github.com/wechaty/wechaty-puppet-official-account/blob/381ffb820fcc63e4b89a99c433b696e790e06b7a/src/official-account/official-account.ts#L116-L119>
+
+1. The message **event** will be propagated from the `OfficialAccount` class to the `PuppetOA` class:
+
+    <https://github.com/wechaty/wechaty-puppet-official-account/blob/381ffb820fcc63e4b89a99c433b696e790e06b7a/src/puppet-oa.ts#L188-L189>
+
+1. After message **event** be propagated from the PuppetOA to Wechaty, then the [puppet.messagePayload()](https://github.com/wechaty/wechaty-puppet/blob/763e94194fd1104007fccad4ba4994365890cde8/src/puppet.ts#L834) will be called to get the [Wechaty Message Payload](https://github.com/wechaty/wechaty-puppet/blob/763e94194fd1104007fccad4ba4994365890cde8/src/schemas/message.ts#L103).  Here is the most important part: we need to construct a Wechaty Message Payload from the Raw Message Payload (source code at [here](https://github.com/wechaty/wechaty-puppet/blob/763e94194fd1104007fccad4ba4994365890cde8/src/puppet.ts#L854-L855)):
+
+    ```ts
+    const rawPayload = await this.messageRawPayload(messageId)
+    const payload    = await this.messageRawPayloadParser(rawPayload)
+    ````
+
+### What to Do Next
+
+So it will be very clear that, what we need to do to support the new Message Type (audio in this case), is to implement the `messageRawPayload` methods, which you can find here:
+
+<https://github.com/wechaty/wechaty-puppet-official-account/blob/381ffb820fcc63e4b89a99c433b696e790e06b7a/src/puppet-oa.ts#L456-L478>
+
+I hope the above explanation could help you to move forward, please feel free to let me know if you have more questions.
+
+See: <https://github.com/wechaty/wechaty-puppet-official-account/issues/19>
