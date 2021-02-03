@@ -1,7 +1,6 @@
 ---
 title: 基于Wechaty实现运维自动化交互及微信消息通知
 author: zhoujian
-date: 2021-01-12 09:00:00
 tags:
   - wechaty-charbot
   - news
