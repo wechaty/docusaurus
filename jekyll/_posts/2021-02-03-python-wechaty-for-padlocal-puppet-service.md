@@ -1,5 +1,5 @@
 ---
-title: python Wechaty如何使用PadLocal Puppet Service
+title: Python Wechaty如何使用PadLocal Puppet Service
 author: biofer
 tags:
   - Python-Wechaty
@@ -9,11 +9,7 @@ categories: project
 image: /assets/2021/02-python-wechaty-for-padlocal-puppet-service/python-wechaty-logo.png
 ---
 
-## python Wechaty 如何使用 PadLocal Puppet Service
-
-### 首先是TOKEN的申请方法，大家可以按图索骥
-
-Token是分协议的，可以是iPad、Windows和Web，本文就是基于iPad的协议（PadLocal）。拿到Token后，就可以基于此做不同语言的开发。本文是描述python语言下的简单实现。
+本文描述Python语言下如何使用iPad协议的PadLocal Token。其他Wechaty多语言开发也能做参考。
 
 - [wechaty-puppet-padlocal](https://github.com/padlocal/wechaty-puppet-padlocal)
 - [TOKEN 申请方法](https://wechaty.js.org/docs/puppet-services/)
