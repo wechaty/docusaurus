@@ -1,7 +1,6 @@
 ---
 title: python Wechaty如何使用PadLocal Puppet Service
 author: biofer
-date: 2021-02-03 18:52:00
 tags:
   - Python-Wechaty
   - puppet-services
