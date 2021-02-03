@@ -1,7 +1,7 @@
 ---
 name: hain
-site: https://github.com/Samurais
-avatar: /assets/contributors/hain/avatar.png
+site: https://github.com/hailiang-wang
+avatar: /assets/contributors/hailiang-wang/avatar.png
 bio: You know, for chatbot.
 twitter: 
 ---
