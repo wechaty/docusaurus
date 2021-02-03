@@ -50,4 +50,4 @@ Please make sure to check the following boxes creating your pull request, thank 
   - lijiarui.md: <https://github.com/wechaty/wechaty.js.org/blob/master/jekyll/_contributors/lijiarui.md>
   - It will shown like this on wechaty website: <https://wechaty.js.org/contributors/lijiarui/>
 
-To read more about the contribute guideline, visit: <https://wechaty.js.org/docs/contributor-program/>
+To learn more about the contribute guideline, visit: <https://wechaty.js.org/docs/contributor-program/>
