@@ -1,7 +1,6 @@
 ---
 title: .NET Wechaty如何使用PadLocal Puppet Service
 author: jesn
-date: 2021-01-28 23:44:00
 tags:
   - .NET-wechaty
   - .NET

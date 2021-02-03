@@ -1,5 +1,5 @@
 ---
-title: Service
+title: Wechaty Puppet Service
 ---
 
 Recently, the Wechaty community has grown fast, we have more and more multi-language Wechaty (Python, Go, .NET, Java, PHP, Scala, etc) and puppet service providers (WXWork, Donut, Rock, PadLocal, etc).

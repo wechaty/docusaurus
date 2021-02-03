@@ -1,6 +1,5 @@
 ---
 title: Wechaty Java 移植组件开发
-date: 2020-07-27 09:00 +0800
 author: cunkoulaocai
 categories: project
 tags:
