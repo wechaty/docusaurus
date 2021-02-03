@@ -173,3 +173,12 @@ So it will be very clear that, what we need to do to support the new Message Typ
 I hope the above explanation could help you to move forward, please feel free to let me know if you have more questions.
 
 See: <https://github.com/wechaty/wechaty-puppet-official-account/issues/19>
+
+## `Ding`/`Dong` Protocol
+
+Puppet has a API named `ding(data: string): void`, and the Puppet must:
+
+1. emit a `dong` event when the `ding()` method has been called
+1. the payload of the `dong` event might contains a `data` key with the value exactly match the `data` when calling the `ding()` method.
+
+This is for active(passive) health checking, and this is also a workaround for some edge case communication between the top puppet with the bottom puppet.
