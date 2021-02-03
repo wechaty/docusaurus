@@ -14,11 +14,13 @@ image: /assets/2020/python-wechaty/python-wechaty-logo.png
 
 ### 首先是TOKEN的申请方法，大家可以按图索骥
 
+Token是分协议的，可以是iPad、Windows和Web，本文就是基于iPad的协议（PadLocal）。拿到Token后，就可以基于此做不同语言的开发。本文是描述python语言下的简单实现。
+
+- [wechaty-puppet-padlocal](https://github.com/padlocal/wechaty-puppet-padlocal)
 - [TOKEN 申请方法](https://wechaty.js.org/docs/puppet-services/)
 
 ### 搭建PadLocal Token Gateway
 
-先上代码
 ```shell
 # 设置环境变量
 
@@ -40,16 +42,17 @@ docker run -ti \
   -p "$WECHATY_PUPPET_SERVER_PORT:$WECHATY_PUPPET_SERVER_PORT" \
   wechaty/wechaty:0.56
 ```
+
 - WECHATY_PUPPET_PADLOCAL_TOKEN 申请得到的token代码
 - WECHATY_PUPPET_SERVER_PORT 设置对外访问端口，需要保证端口没被占用，没被防火墙匹配
 - WECHATY_TOKEN 生成个人随机[TOKEN](https://www.uuidgenerator.net/version4)。WECHATY_TOKEN：个人理解为和远程wechaty服务器做通讯用，通过这个唯一token可以返回当前主机访问地址和端口。所以需要避免和别人重复。
 
 可以通过下面代码，确定是否成功。
+
 ```shell
 curl https://api.chatie.io/v0/hosties/$WECHATY_TOKEN (个人随机token)
 {"ip":"36.7.XXX.XXX","port":9001}
 ```
-
 
 ### python-Wechaty对接GateWay
 
@@ -65,9 +68,8 @@ export WECHATY_PUPPET="wechaty-puppet-service"
 export WECHATY_PUPPET_SERVICE_TOKEN="puppet_padlocal_XXXXXX"
 export WECHATY_PUPPET_SERVICE_ENDPOINT="192.168.1.56:9001"
 ```
+
 WECHATY_PUPPET_SERVICE_ENDPOINT：内网IP地址:端口号
-
-
 
 ### python-wechaty-getting-started
 
@@ -80,14 +82,12 @@ export WECHATY_PUPPET_SERVICE_TOKEN="puppet_padlocal_XXXXXX"
 
 python examples/ding-dong-bot.py
 ```
+
 到此，恭喜你入坑。
-
 具体的使用可以查看[python-wechaty-getting-started](https://github.com/wechaty/python-wechaty-getting-started)
-
 
 ### 参考
 
 - 如何成为 `Wechaty Contributor` 可以通过该链接查看 [https://wechaty.js.org/docs/contributor-program/](https://wechaty.js.org/docs/contributor-program/)
 - [.NET Wechaty 如何使用 PadLocal Puppet Service](https://wechaty.js.org/2021/01/28/csharp-wechaty-for-padlocal-puppet-service/)
 - 特别感谢 @huan 的帮助。
-
