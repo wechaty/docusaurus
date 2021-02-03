@@ -23,17 +23,17 @@ image: /assets/2021/01-wechaty-charbot-lite/1.png
 - [Powered by Wechaty](https://github.com/chatie/wechaty)
 - [Wechaty开源激励计划](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
-    **全球最短的ChatBot代码：6行JavaScript**
+### 全球最短的ChatBot代码：6行JavaScript
 
-    ```javascript
-  const { Wechaty } = require('wechaty')
-  Wechaty.instance()
+```javascript
+const { Wechaty } = require('wechaty')
+Wechaty.instance()
   .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrcode
-)}`))
+  )}`))
   .on('login',            user => console.log(`User ${user} logined`))
   .on('message',       message => console.log(`Message: ${message}`))
   .start()
-    ```
+```
 
 ## 使用Wechaty实现
 
