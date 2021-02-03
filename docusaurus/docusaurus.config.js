@@ -32,7 +32,7 @@ module.exports = {
       items: [
         { label: 'News',            href: 'https://wechaty.js.org/news/',         position: 'right', target: '_self' },
         { label: 'Blog',            href: 'https://wechaty.js.org/blog/',         position: 'right', target: '_self' },
-        { label: 'Developers',      href: 'https://wechaty.js.org/developers/',   position: 'right' },
+        { label: 'Contributors',    href: 'https://wechaty.js.org/contributors/', position: 'right' },
 
         { label: 'Docs',            to: 'docs/', position: 'right', activeBasePath: 'docs',
           items: [

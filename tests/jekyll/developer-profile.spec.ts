@@ -19,7 +19,7 @@ import {
 
 const glob = util.promisify(globCB)
 
-test('front matter key `author` should has a value exist in jekyll/_developers/__VALUE__.md file', async t => {
+test('front matter key `author` should has a value exist in jekyll/_contributors/__VALUE__.md file', async t => {
   const postsFileList = await glob(`${JEKYLL_FOLDER.posts}/**/*`)
 
   for (const file of postsFileList) {
@@ -28,17 +28,17 @@ test('front matter key `author` should has a value exist in jekyll/_developers/_
     const author = front.author
     t.true(author, `"${stripRepoRoot(file)}" author has been set to ${author}`)
 
-    const authorFile = path.join(JEKYLL_FOLDER.root, '_developers', author + '.md')
+    const authorFile = path.join(JEKYLL_FOLDER.root, '_contributors', author + '.md')
     const good = fs.existsSync(authorFile)
     t.true(good, `"${stripRepoRoot(file)}" author profile at ${stripRepoRoot(authorFile)}`)
   }
 })
 
-test('developer profile file (jekyll/_developers/__AUTHOR__.md) filename must match /[a-z0-9_-.]+/', async t => {
+test('developer profile file (jekyll/_contributors/__AUTHOR__.md) filename must match /[a-z0-9_-.]+/', async t => {
   const REGEX = new RegExp('/[a-z0-9_.-]+.md$')
 
-  const developersFileList = await glob(`${JEKYLL_FOLDER.developers}/**/*`)
-  const nameList = developersFileList.map(stripRepoRoot)
+  const contributorsFileList = await glob(`${JEKYLL_FOLDER.contributors}/**/*`)
+  const nameList = contributorsFileList.map(stripRepoRoot)
 
   for (const filename of nameList) {
     const good = REGEX.test(filename)
@@ -46,10 +46,10 @@ test('developer profile file (jekyll/_developers/__AUTHOR__.md) filename must ma
   }
 })
 
-test('developer project avatar should be put under assets/developers/ folder', async t => {
-  const developersFileList = await glob(`${JEKYLL_FOLDER.developers}/*.md`)
+test('developer project avatar should be put under assets/contributors/ folder', async t => {
+  const contributorsFileList = await glob(`${JEKYLL_FOLDER.contributors}/*.md`)
 
-  for (const file of developersFileList) {
+  for (const file of contributorsFileList) {
     const content = fs.readFileSync(file)
     const front   = loadFront(content)
 

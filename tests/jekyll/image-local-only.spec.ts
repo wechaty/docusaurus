@@ -33,8 +33,8 @@ test('all images linked from the post should be stored local (in the repo) for p
   ]
   const isNotWhiteList = (url: string) => !URL_WHITE_LIST_REGEX.some(regex => regex.test(url))
 
-  const postsFileList      = await glob(`${JEKYLL_FOLDER.posts}/*.md`)
-  const developersFileList = await glob(`${JEKYLL_FOLDER.developers}/*.md`)
+  const postsFileList        = await glob(`${JEKYLL_FOLDER.posts}/*.md`)
+  const contributorsFileList = await glob(`${JEKYLL_FOLDER.contributors}/*.md`)
 
   const getAvatarList = (file: string): string[] => {
     const front = loadFront(fs.readFileSync(file))
@@ -47,7 +47,7 @@ test('all images linked from the post should be stored local (in the repo) for p
   const allImageList = [
     ...postsFileList.map(getFrontmatterTeaserList).flat(),
     ...postsFileList.map(getMarkdownImageList).flat(),
-    ...developersFileList.map(getAvatarList).flat(),
+    ...contributorsFileList.map(getAvatarList).flat(),
   ].filter(isNotWhiteList)
 
   for (const image of allImageList) {

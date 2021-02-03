@@ -6,7 +6,7 @@ const root = path.join(REPO_ROOT, 'jekyll')
 
 const JEKYLL_FOLDER = {
   assets     : path.join(root, 'assets'),
-  developers : path.join(root, '_developers'),
+  contributors : path.join(root, '_contributors'),
   posts      : path.join(root, '_posts'),
   root,
 }
