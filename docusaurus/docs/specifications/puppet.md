@@ -125,7 +125,7 @@ See: <https://github.com/wechaty/puppet-services/issues/85#issuecomment-76996760
 
 ## Wechaty Puppet Message Processing Flow
 
-Yes, `video` messagge is not supported now, and pr is welcome. I believe this feature is simple for you. You can have a try so you can become a wechaty contributor 👍 
+Yes, `video` messagge is not supported now, and pr is welcome. I believe this feature is simple for you. You can have a try so you can become a wechaty contributor 👍
 Please refer to :
 
 - [message material in official-account](https://developers.weixin.qq.com/doc/offiaccount/Asset_Management/New_temporary_materials.html)
@@ -139,8 +139,6 @@ We now support very limit message types:
 In order to support receiving more message types, like audio, you need to look at:
 
 <https://github.com/wechaty/wechaty-puppet-official-account/blob/381ffb820fcc63e4b89a99c433b696e790e06b7a/src/official-account/webhook.ts#L247-L252>
-
-I hope the above information can help you and please feel free to let me know if you have more questions. @MachengShen 
 
 Congratulations! It seems that you can receive the right webhook payload from WeChat Official Server when you sent an audio message to your Official Account!
 

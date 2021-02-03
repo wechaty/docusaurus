@@ -1,6 +1,5 @@
 ---
 title: "基于开放 API 封装 Wechaty 接口下的飞书聊天机器人：期末"
-date: 2020-09-30 22:00 +0800
 author: fanrui
 categories: project
 image: /assets/2020/lark-puppet/wechaty-lark-final.png

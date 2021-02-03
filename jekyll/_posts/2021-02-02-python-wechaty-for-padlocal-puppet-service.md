@@ -1,13 +1,13 @@
 ---
 title: python Wechaty如何使用PadLocal Puppet Service
 author: biofer
-date: 2021-02-02 13:26:00
 tags:
   - Python-Wechaty
   - puppet-services
-  - PadLocal Token
+  - padlocal
+  - token
 categories: project
-image: /assets/2020/python-wechaty/python-wechaty-logo.png
+image: /assets/2021/02-python-wechaty-for-padlocal-puppet-service/python-wechaty-logo.png
 ---
 
 ## python Wechaty 如何使用 PadLocal Puppet Service
