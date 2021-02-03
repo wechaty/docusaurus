@@ -1,5 +1,6 @@
 ---
 title: Polyglot Wechaty
+sidebar_label: Wechaty
 ---
 
 Polyglot Wechaty is ... (tbw)

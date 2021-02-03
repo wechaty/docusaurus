@@ -1,5 +1,6 @@
 ---
 title: Wechaty Puppet
+sidebar_label: Puppet
 ---
 
 Puppet is... (introduction, tbw)

@@ -1,5 +1,6 @@
 ---
 title: Wechaty Puppet Service Token
+sidebar_label: Token
 ---
 
 Wechaty Puppet Service Token (TOKEN), is ... (tbw)
