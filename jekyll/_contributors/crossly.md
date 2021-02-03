@@ -1,7 +1,7 @@
 ---
 name: lemonsx
-site: https://github.com/lemonsX
-avatar: /assets/contributors/lemonsx/avatar.png
+site: https://github.com/crossly
+avatar: /assets/contributors/crossly/avatar.png
 bio: 
 email: 
 twitter: 

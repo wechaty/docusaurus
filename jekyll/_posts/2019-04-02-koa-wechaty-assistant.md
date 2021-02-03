@@ -1,6 +1,6 @@
 ---
 title: "使用koa2+wechaty打造个人微信小秘书"
-author: leo_chen
+author: gengchen528
 categories: project
 tags:
   - code

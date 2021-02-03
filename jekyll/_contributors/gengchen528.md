@@ -1,7 +1,7 @@
 ---
 name: Leo chen
 site: https://github.com/gengchen528
-avatar: /assets/contributors/leo-chen/avatar.png
+avatar: /assets/contributors/gengchen528/avatar.png
 bio: 高级前端工程师一枚，喜欢用node做各种项目，生命不止，折腾不息！
 email: 
 twitter: 

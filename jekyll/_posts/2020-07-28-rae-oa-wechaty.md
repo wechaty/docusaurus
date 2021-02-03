@@ -1,6 +1,6 @@
 ---
 title: "Rae-oa系统微信群辅助机器人(rae-wechaty)"
-author: north-sea-coder
+author: northseacoder
 categories: project
 tags:
   - wechaty-puppet-padplus

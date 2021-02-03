@@ -1,6 +1,6 @@
 ---
 title: "暑期2020 [Go-wechaty Github Action optimization] POC 成果展示"
-author: tangguangbin
+author: nebell
 categories: project
 tags:
   - soc

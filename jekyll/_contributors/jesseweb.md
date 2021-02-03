@@ -1,7 +1,7 @@
 ---
 name: legendaryjesse
 site: https://github.com/JesseWeb
-avatar: /assets/contributors/legendaryjesse/avatar.png
+avatar: /assets/contributors/jesseweb/avatar.png
 bio: Entrepreneurs、coder、real human
 email: 
 twitter: 

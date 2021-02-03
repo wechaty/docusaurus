@@ -6,7 +6,7 @@ import path   from 'path'
 import util   from 'util'
 import fs     from 'fs'
 import globCB from 'glob'
-
+import fetch  from 'node-fetch'
 import { loadFront } from 'yaml-front-matter'
 
 import {
@@ -65,5 +65,44 @@ test('developer project avatar should be put under assets/contributors/ folder',
       const good = fs.existsSync(filename)
       t.true(good, `${stripRepoRoot(filename)} should exist`)
     }
+  }
+})
+
+test('developer profile name must be github username', async t => {
+  const pickName = (filePath: string) => {
+    const matches = /\/([^./]+?)\.md$/.exec(filePath)
+    if (!matches) {
+      throw new Error('no matches for profile name')
+    }
+    return matches[1]
+  }
+
+  /**
+   * https://stackoverflow.com/a/30219553/1123955
+   * curl -w '%{response_code}' 'https://api.github.com/users/zixiaxxx'
+   */
+  const userNameExist = async (userName: string) => {
+    try {
+      const response = await fetch(
+        `https://github.com/${userName}`,
+        {
+          method: 'HEAD',
+        },
+      )
+      // console.info(response)
+      return response.ok
+    } catch (e) {
+      console.error(e)
+      return false
+    }
+  }
+
+  const contributorsFileList = await glob(`${JEKYLL_FOLDER.contributors}/**/*`)
+  const nameList = contributorsFileList.map(pickName)
+
+  const resultList = await Promise.all(nameList.map(userNameExist))
+
+  for (const [i, isExist] of resultList.entries()) {
+    t.true(isExist, `"${nameList[i]}" should exist on GitHub`)
   }
 })

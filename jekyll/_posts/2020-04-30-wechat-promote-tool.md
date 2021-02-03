@@ -1,6 +1,6 @@
 ---
 title: "如何用Wechaty打造一个推广机器人"
-author: legendaryjesse
+author: jesseweb
 categories: project
 tags:
    - retail
