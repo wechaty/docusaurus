@@ -13,7 +13,7 @@
     "jekyll/assets/js",
     "jekyll/assets/css",
     "jekyll/assets/images",
-    "jekyll/assets/developers/wechaty",
+    "jekyll/assets/contributors/wechaty",
     "tests/fixtures"
   ]
 }

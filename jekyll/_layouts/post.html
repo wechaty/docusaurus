@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign author = site.developers | where: 'slug', page.author | first %}
+{% assign author = site.contributors | where: 'slug', page.author | first %}
 
 <div class="container">
 <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
@@ -21,7 +21,7 @@ layout: default
 					<h1 class="display-4 mb-4 article-headline">{{ page.title }}</h1>
 					<div class="d-flex align-items-center">
                         {% if author.avatar %}
-                          <a href="{{ site.baseurl }}/developers/{{ author.slug }}">
+                          <a href="{{ site.baseurl }}/contributors/{{ author.slug }}">
                             <img class="rounded-circle" src="{{author.avatar}}" alt="{{author.name}}" width="70"/>
                           </a>
                         {% endif %}
@@ -92,7 +92,7 @@ layout: default
 				<div class="row mt-5">
 					<div class="col-md-2 align-self-center">
                         {% if author.avatar %}
-                          <a href="{{site.baseurl}}/developers/{{ author.slug }}">
+                          <a href="{{site.baseurl}}/contributors/{{ author.slug }}">
                             <img class="rounded-circle" src="{{author.avatar}}" alt="{{author.name}}" width="90"/>
                           </a>
                         {% endif %}

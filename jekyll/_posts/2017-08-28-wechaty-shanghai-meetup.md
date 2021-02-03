@@ -45,7 +45,7 @@ DC built a text adventure game called "Pirates" that can be played within a grou
 
 [@hczhcz](https://github.com/hczhcz) told us about bots for playing werewolf, you can read more about that [at his wechaty blog post](/2017/07/17/run-your-telegram-bot-with-wechaty.html).
 
-Games have already spent a lot of time thinking about multiplayer and the chat platforms related to games do too, for example [Discord has a rich API for Guild management](https://discordapp.com/developers/docs/resources/guild)
+Games have already spent a lot of time thinking about multiplayer and the chat platforms related to games do too, for example [Discord has a rich API for Guild management](https://discordapp.com/contributors/docs/resources/guild)
 
 There is much that Wechaty can provide on the server APIs, but client modifications need to be added by the platform. For example Slack has the concept of a "
 
