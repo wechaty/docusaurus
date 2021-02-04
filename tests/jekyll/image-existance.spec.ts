@@ -6,6 +6,7 @@ import fs   from 'fs'
 import path from 'path'
 import util from 'util'
 import https from 'https'
+import { URL } from 'url'
 
 import globCB    from 'glob'
 import { chunk } from 'lodash'
@@ -72,7 +73,9 @@ test('all remote images linked from the post should be exist.', async t => {
     agent: httpsAgent,
   }
 
-  const urlExist = async (url: string) => {
+  const urlExist = async (strUrl: string) => {
+    const url = new URL(strUrl)
+
     const controller = new AbortController()
     const timer = setTimeout(
       () => controller.abort(),
@@ -81,25 +84,25 @@ test('all remote images linked from the post should be exist.', async t => {
     try {
       const baseOptions = {
         signal: controller.signal,
-        .../^https/.test(url) ? httpsOptions : undefined,
+        .../^https/.test(url.protocol) ? httpsOptions : undefined,
       }
       const headOptions = {
-        method: 'HEAD',
         ...baseOptions,
+        method: 'HEAD',
       }
       const getOptions = {
-        method: 'GET',
         ...baseOptions,
+        method: 'GET',
       }
 
       let response = await fetch(
-        encodeURI(url),
+        url,
         headOptions,
       )
 
       if (!response.ok) {
         response = await fetch(
-          encodeURI(url),
+          url,
           getOptions
         )
       }
