@@ -21,9 +21,13 @@ test('{% include iframe.html src=... %} should exist in assets/ folder', async t
     const fileList = getIncludeSrcList(filename)
     if (fileList.length) {
       const good = fileList.every(isExist)
-      t.true(good, `${fileList.map(s => `"${s}"`).join(', ')} should exist`)
+      if (!good) {
+        t.fail(`${fileList.map(s => `"${s}"`).join(', ')} should exist`)
+      }
     }
   }
+
+  t.pass(`total ${postsFileList.length} files checked.`)
 
   function isExist (file: string): boolean {
     return fs.existsSync(path.join(JEKYLL_FOLDER.root, file))

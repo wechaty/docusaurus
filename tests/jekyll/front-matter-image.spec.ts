@@ -38,6 +38,11 @@ test('front matter key `image` must has a value to define the teaser image', asy
     const content = fs.readFileSync(file)
     const front = loadFront(content)
     const image = front.image
-    t.true(image, `"${stripRepoRoot(file)}" image(${image}) has been set`)
+
+    if (!image) {
+      t.fail(`"${stripRepoRoot(file)}" image(${image}) has been set`)
+    }
   }
+
+  t.pass(`total ${postsFileList.length} files checked`)
 })
