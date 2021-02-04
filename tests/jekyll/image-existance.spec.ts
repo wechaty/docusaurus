@@ -7,11 +7,11 @@ import path from 'path'
 import util from 'util'
 import https from 'https'
 
-import globCB         from 'glob'
+import globCB    from 'glob'
+import { chunk } from 'lodash'
 
 import fetch            from 'node-fetch'
 import AbortController  from 'abort-controller'
-
 import {
   getFrontmatterTeaserList,
   getMarkdownImageList,
@@ -47,6 +47,7 @@ const URL_WHITE_LIST_REGEX = [
   /wechaty\.github\.io/i,
   /wechaty\.js\.org/i,
 ]
+
 const isWhiteList = (url: string) => URL_WHITE_LIST_REGEX.some(regex => regex.test(url))
 const not         = (func: (...args: any[]) => boolean) => (...args: any) => !func(...args)
 
@@ -115,16 +116,27 @@ test('all remote images linked from the post should be exist.', async t => {
   }
 
   const remoteImageList = await getRemoteImageList()
-  const resultList = await Promise.all(
-    remoteImageList.map(urlExist)
-  )
+  const chunkList = chunk(remoteImageList, 30)
 
-  for (const [i, result] of resultList.entries()) {
-    if (!result) {
-      t.fail(`"${remoteImageList[i]}" should be http response ok`)
+  for (const chunk of chunkList) {
+    process.stdout.write(
+      Array(chunk.length).join('.')
+    )
+
+    const resultList = await Promise.all(
+      chunk.map(urlExist)
+    )
+
+    await new Promise(resolve => setTimeout(resolve, 1000))
+
+    for (const [i, result] of resultList.entries()) {
+      if (!result) {
+        t.fail(`"${remoteImageList[i]}" should be http response ok`)
+      }
     }
   }
 
+  console.info()
   t.pass(`total ${remoteImageList.length} remote image urls checked`)
 })
 
