@@ -81,7 +81,7 @@
     "lodash": "^4.17.20",
     "markdownlint-cli": "^0.23.2",
     "marked": "^1.2.7",
-    "node-fetch": "^1.7.3",
+    "node-fetch": "^2.6.1",
     "probe-image-size": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
