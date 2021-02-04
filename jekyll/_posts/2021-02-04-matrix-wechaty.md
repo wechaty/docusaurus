@@ -32,7 +32,7 @@ image: /assets/2020/matrix-wechaty/2020-03-matrix-appservice-wechaty.png
 
 
 #### 配置matrix chat
-    
+
 ```bash
 git clone https://github.com/spantaleev/matrix-docker-ansible-deploy.git
 mkdir inventory/host_vars/example.com/
@@ -49,16 +49,16 @@ matrix_ma1sd_enabled: true
 echo 'example.com ansible_host=example.com ansible_ssh_user=root' >> inventory/hosts
 ansible-playbook -i inventory/hosts setup.yml --tags=setup-all,start
 ```
-    
+
 等一切部署完之后可以检测一下有没有问题
 ```
 ansible-playbook -i inventory/hosts setup.yml --tags=self-check
 ```
-    
+
 #### 配置matrix-appservice-wechaty
 
 连接远程服务器
-    
+
 新建`docker-compose.yml`并填入如下内容
 ```
 version: '2'
@@ -114,7 +114,7 @@ services:
       ports:
         - 8788:8788
 ```
-    
+
 然后新增文件`/matrix/synapse/config/wechaty-config.yaml`，并填入如下内容
 
 ```
@@ -122,12 +122,12 @@ domain: example.com
 homeserverUrl: https://matrix.example.com
 registration: /data/wechaty-registration.yaml
 ```
-    
+
 运行`docker-compose run --rm matrix-appservice-wechaty --config /data/wechaty-config.yaml --url "http://example:8788" --generate-registration`生成配置文件
-    
+
 然后编辑`/matrix/synapse/config/homeserver.yaml`
 修改`app_service_config_files`那一行为`app_service_config_files: ["/data/wechaty-registration.yaml"]`
-    
+
 运行`systemctl restart matrix-*`重启matrix服务
 
 #### 注册并登录
@@ -139,7 +139,7 @@ registration: /data/wechaty-registration.yaml
 I had enabled it for you ;-)` 就再发送一遍
 5. 扫描二维码登录
 
-    
+
 ### 参考资料
 1. https://github.com/spantaleev/matrix-docker-ansible-deploy
 2. https://wechaty.js.org/2021/01/28/csharp-wechaty-for-padlocal-puppet-service/
