@@ -2,8 +2,10 @@
 
 import test   from 'tstest'
 
-import path   from 'path'
-import util   from 'util'
+import path         from 'path'
+import util         from 'util'
+import childProcess from 'child_process'
+
 import fs     from 'fs'
 import globCB from 'glob'
 import { loadFront } from 'yaml-front-matter'
@@ -93,7 +95,7 @@ test('developer profile name must be GitHub username', async t => {
   const pickName = (filePath: string) => {
     const matches = /\/([^./]+?)\.md$/.exec(filePath)
     if (!matches) {
-      throw new Error('no matches for profile name')
+      throw new Error(`no matches for profile name for "${filePath}"`)
     }
     return matches[1]
   }
@@ -131,25 +133,58 @@ test('developer profile name must be GitHub username', async t => {
     }
   }
 
-  const contributorsFileList = await glob(`${JEKYLL_FOLDER.contributors}/**/*`)
-  const nameList = contributorsFileList.map(pickName)
+  /**
+   * Git show files that were changed in the last 2 days
+   *  https://stackoverflow.com/a/7500276/1123955
+   *
+   * git log --since="1 month ago" --name-only --pretty=format: | sort | uniq | grep jekyll/_contributors
+   */
+  const exec = util.promisify(childProcess.exec)
+  const output = await exec([
+    'git log',
+    '--since="1 month ago"',
+    '--name-only',
+    '--pretty=format:',
+    '| sort',
+    '| uniq',
+    '| grep "jekyll/_contributors/"',
+    // Huan(202002) it seems that the GitHub HTTP has a limit that X request per Y seconds.
+    '| head -50',
+  ].join(' '))
+
+  const allContributorsFileList = await glob(`${JEKYLL_FOLDER.contributors}/**/*`)
+  const changedContributorsFileList = output.stdout
+    .split('\n')
+    .filter(s => !!s)
+
+  const allContributorsNameList     = allContributorsFileList.map(pickName)
+  const changedContributorsNameList = changedContributorsFileList.map(pickName)
+
+  // filter out the name that has been changed.
+  // e.g. name_1 -> name_2
+  const nameList = changedContributorsNameList
+    .filter(name => allContributorsNameList.includes(name))
 
   const nameListChunk = chunk(nameList, 10)
 
   for (const chunk of nameListChunk) {
-    process.stdout.write(Array(chunk.length).join('.'))
+    process.stdout.write(Array(chunk.length + 1).join('.'))
     const resultList = await Promise.all(
       chunk.map(userNameExist)
     )
 
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    // await new Promise(resolve => setTimeout(resolve, 5000))
 
     for (const [i, isExist] of resultList.entries()) {
       if (!isExist) {
+        console.info()
         t.fail(`"${chunk[i]}" should exist on GitHub`)
+      } else {
+        // t.pass(`"${chunk[i]}" should exist on GitHub`)
       }
     }
   }
 
+  console.info()
   t.pass(`${nameList.length} contributors profile names checked`)
 })
