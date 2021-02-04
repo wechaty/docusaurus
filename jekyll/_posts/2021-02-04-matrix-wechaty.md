@@ -9,6 +9,7 @@ image: /assets/2020/matrix-wechaty/2020-03-matrix-appservice-wechaty.png
 ---
 > 作者: [Roy](https://blog.yswtrue.com)。首发于博客: [用Matrix和wechaty来聊微信](https://blog.yswtrue.com/yong-matrix/)
 
+## 用Matrix和wechaty来聊微信
 
 [Matrix chat](https://matrix.org/)是一个很不错的聊天软件，它支持了多种聊天协议和聊天机器人。并且支持通过[matrix-appservice-wechaty](https://github.com/wechaty/matrix-appservice-wechaty)来支持微信聊天。
 现在我来梳理一下matrix-appservice-wechaty的部署方法。
@@ -30,7 +31,6 @@ image: /assets/2020/matrix-wechaty/2020-03-matrix-appservice-wechaty.png
 | CNAME | jitsi (*)             | -        | -      | -    | matrix.<your-domain> |
 | SRV   | _matrix-identity._tcp | 10       | 0      | 443  | matrix.<your-domain> |
 
-
 #### 配置matrix chat
 
 ```bash
@@ -51,7 +51,8 @@ ansible-playbook -i inventory/hosts setup.yml --tags=setup-all,start
 ```
 
 等一切部署完之后可以检测一下有没有问题
-```
+
+```bash
 ansible-playbook -i inventory/hosts setup.yml --tags=self-check
 ```
 
@@ -60,7 +61,8 @@ ansible-playbook -i inventory/hosts setup.yml --tags=self-check
 连接远程服务器
 
 新建`docker-compose.yml`并填入如下内容
-```
+
+```yaml
 version: '2'
 services:
   wechaty-gateway:
@@ -93,11 +95,12 @@ services:
       ports:
         - 8788:8788
 ```
+
 `padlocal_token`需要[申请](https://wechaty.js.org/docs/puppet-services/)
 `random_token`是随机字符串，可以用uuid
 如果没有`padlocal_token`可以使用`wechaty-puppet-puppeteer`，把内容改为
 
-```
+```yaml
 version: '2'
 services:
   matrix-appservice-wechaty:
@@ -117,7 +120,7 @@ services:
 
 然后新增文件`/matrix/synapse/config/wechaty-config.yaml`，并填入如下内容
 
-```
+```properties
 domain: example.com
 homeserverUrl: https://matrix.example.com
 registration: /data/wechaty-registration.yaml
@@ -135,12 +138,12 @@ registration: /data/wechaty-registration.yaml
 1. 打开`https://example.com`，然后注册账号
 2. 点击`People`右边的➕，然后输入`@wechaty:example.com`点击`Go`
 3. 在打开的聊天窗口，等出现`This room has been registered as your bridge management/status room.`
-4. 然后发送`!login`，如果提示`You are not enable `matrix-appservice-wechaty` yet. Please talk to the `wechaty` bot to check you in.
+4. 然后发送`!login`，如果提示 `You are not enable matrix-appservice-wechaty yet. Please talk to the wechaty bot to check you in.
 I had enabled it for you ;-)` 就再发送一遍
 5. 扫描二维码登录
 
-
 ### 参考资料
-1. https://github.com/spantaleev/matrix-docker-ansible-deploy
-2. https://wechaty.js.org/2021/01/28/csharp-wechaty-for-padlocal-puppet-service/
-3. https://github.com/wechaty/wechaty-puppet-puppeteer
+
+1. [](https://github.com/spantaleev/matrix-docker-ansible-deploy)
+2. [](https://wechaty.js.org/2021/01/28/csharp-wechaty-for-padlocal-puppet-service/)
+3. [](https://github.com/wechaty/wechaty-puppet-puppeteer)
