@@ -1,13 +1,16 @@
 #!/usr/bin/env ts-node
 
-import test  from 'tstest'
+import test   from 'tstest'
 
 import path   from 'path'
 import util   from 'util'
 import fs     from 'fs'
 import globCB from 'glob'
-import fetch  from 'node-fetch'
 import { loadFront } from 'yaml-front-matter'
+import { chunk } from 'lodash'
+
+import fetch  from 'node-fetch'
+import AbortController  from 'abort-controller'
 
 import {
   JEKYLL_FOLDER,
@@ -26,12 +29,18 @@ test('front matter key `author` should has a value exist in jekyll/_contributors
     const content = fs.readFileSync(file)
     const front = loadFront(content)
     const author = front.author
-    t.true(author, `"${stripRepoRoot(file)}" author has been set to ${author}`)
+    if (!author) {
+      t.fail(`"${stripRepoRoot(file)}" author should set to ${author}`)
+    }
 
     const authorFile = path.join(JEKYLL_FOLDER.root, '_contributors', author + '.md')
     const good = fs.existsSync(authorFile)
-    t.true(good, `"${stripRepoRoot(file)}" author profile at ${stripRepoRoot(authorFile)}`)
+    if (!good) {
+      t.fail(`"${stripRepoRoot(file)}" author profile should exist at ${stripRepoRoot(authorFile)}`)
+    }
   }
+
+  t.pass(`total ${postsFileList.length} files checked.`)
 })
 
 test('developer profile file (jekyll/_contributors/__AUTHOR__.md) filename must match /[a-z0-9_-.]+/', async t => {
@@ -42,8 +51,12 @@ test('developer profile file (jekyll/_contributors/__AUTHOR__.md) filename must 
 
   for (const filename of nameList) {
     const good = REGEX.test(filename)
-    t.true(good, `"${filename}" is match ${REGEX}`)
+    if (!good) {
+      t.fail(`"${filename}" should match ${REGEX}`)
+    }
   }
+
+  t.pass(`total ${nameList.length} files checked.`)
 })
 
 test('developer project avatar should be put under assets/contributors/ folder', async t => {
@@ -53,19 +66,27 @@ test('developer project avatar should be put under assets/contributors/ folder',
     const content = fs.readFileSync(file)
     const front   = loadFront(content)
 
-    t.true(front.avatar, `"${stripRepoRoot(file)}" should have avatar("${front.avatar}")`)
+    if (!front.avatar) {
+      t.fail(`"${stripRepoRoot(file)}" should have avatar("${front.avatar}")`)
+    }
 
     const startWithSlash = /^\//.test(front.avatar)
-    t.true(startWithSlash, `"${front.avatar}" should start with '/'`)
+    if (!startWithSlash) {
+      t.fail(`"${front.avatar}" should start with '/'`)
+    }
 
     if (/^http/i.test(front.avatar)) {
       t.fail(`${stripRepoRoot(file)} should put avatar files to local repo instead of using URL`)
     } else {
       const filename = path.join(JEKYLL_FOLDER.root, front.avatar)
       const good = fs.existsSync(filename)
-      t.true(good, `${stripRepoRoot(filename)} should exist`)
+      if (!good) {
+        t.fail(`${stripRepoRoot(filename)} should exist`)
+      }
     }
   }
+
+  t.pass(`total ${contributorsFileList.length} files checked`)
 })
 
 test('developer profile name must be GitHub username', async t => {
@@ -82,27 +103,53 @@ test('developer profile name must be GitHub username', async t => {
    * curl -w '%{response_code}' 'https://api.github.com/users/zixiaxxx'
    */
   const userNameExist = async (userName: string) => {
+    const controller = new AbortController()
+    const timer = setTimeout(
+      () => controller.abort(),
+      10 * 1000,  // 10 seconds
+    )
+
     try {
+      const options = {
+        method: 'HEAD',
+        signal: controller.signal,
+      }
+
       const response = await fetch(
         `https://github.com/${userName}`,
-        {
-          method: 'HEAD',
-        },
+        options,
       )
+
       // console.info(response)
       return response.ok
+
     } catch (e) {
       console.error(e)
       return false
+    } finally {
+      clearTimeout(timer)
     }
   }
 
   const contributorsFileList = await glob(`${JEKYLL_FOLDER.contributors}/**/*`)
   const nameList = contributorsFileList.map(pickName)
 
-  const resultList = await Promise.all(nameList.map(userNameExist))
+  const nameListChunk = chunk(nameList, 10)
 
-  for (const [i, isExist] of resultList.entries()) {
-    t.true(isExist, `"${nameList[i]}" should exist on GitHub`)
+  for (const chunk of nameListChunk) {
+    process.stdout.write(Array(chunk.length).join('.'))
+    const resultList = await Promise.all(
+      chunk.map(userNameExist)
+    )
+
+    await new Promise(resolve => setTimeout(resolve, 1000))
+
+    for (const [i, isExist] of resultList.entries()) {
+      if (!isExist) {
+        t.fail(`"${chunk[i]}" should exist on GitHub`)
+      }
+    }
   }
+
+  t.pass(`${nameList.length} contributors profile names checked`)
 })

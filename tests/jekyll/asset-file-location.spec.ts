@@ -35,6 +35,10 @@ test('all asset files should be put into folder `/assets/YYYY/MM-slug-...-slug/`
 
     const teaserList = getFrontmatterTeaserList(filename)
     const imageList  = getMarkdownImageList(filename)
+    const allList = [
+      ...teaserList,
+      ...imageList,
+    ]
 
     // console.info('processing: ', filename)
     // console.info('teaserList:', teaserList.length)
@@ -47,11 +51,16 @@ test('all asset files should be put into folder `/assets/YYYY/MM-slug-...-slug/`
       `${month}-${slugs}`,
     )
 
-    for (const imageFile of [...teaserList, ...imageList]) {
+    for (const imageFile of allList) {
       const good = imageFile.includes(expectedFolder)
-      t.true(good, `"${imageFile}" from "${stripRepoRoot(filename)}" should be save to "${expectedFolder}/"`)
+      if (!good) {
+        t.fail(`"${imageFile}" from "${stripRepoRoot(filename)}" should be save to "${expectedFolder}/"`)
+      }
     }
+
   }
+
+  t.pass(`total ${postsFileList.length} files checked.`)
 
   function getSlugs (filename: string): string {
     const matches = filename.match(/\/\d\d\d\d-\d\d-\d\d-(.+)\.md$/)

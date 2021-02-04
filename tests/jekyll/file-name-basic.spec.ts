@@ -43,6 +43,10 @@ test('filename only allow [a-z0-9-_.]', async t => {
 
   for (const filename of filenameList) {
     const ok = REGEX.test(filename)
-    t.true(ok, `"${filename}" contains all lowercase and no specicial characters`)
+    if (!ok) {
+      t.fail(`"${filename}" contains all lowercase and no specicial characters`)
+    }
   }
+
+  t.pass(`total ${filenameList.length} files checked.`)
 })

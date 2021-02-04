@@ -11,7 +11,7 @@ import globCB         from 'glob'
 import {
   REPO_ROOT,
   stripRepoRoot,
-}                             from '../../src/repo-root'
+}                     from '../../src/repo-root'
 
 const glob = util.promisify(globCB)
 
@@ -55,6 +55,10 @@ test('folder _contributors/, _posts/, and assets/ has been moved to `jekyll/` (e
 
   for (const [folder, memo] of Object.entries(DEPRECATED_FOLDER_LIST)) {
     const existDeprecatedFolder = fs.existsSync(path.join(REPO_ROOT, folder))
-    t.false(existDeprecatedFolder, `${folder}/ should not exist: ${memo}`)
+    if (existDeprecatedFolder) {
+      t.fail(`${folder}/ should not exist: ${memo}`)
+    }
   }
+
+  t.pass(`${Object.keys(DEPRECATED_FOLDER_LIST).length} deprecated folders checked.`)
 })
