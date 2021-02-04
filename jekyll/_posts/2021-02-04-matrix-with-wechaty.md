@@ -5,7 +5,7 @@ categories: tutorial
 tags:
   - matrix
   - featured
-image: /assets/2020/matrix-wechaty/2020-03-matrix-appservice-wechaty.png
+image: /assets/2021/02-matrix-with-wechaty/2020-03-matrix-appservice-wechaty.png
 ---
 > 作者: [Roy](https://blog.yswtrue.com)。首发于博客: [用Matrix和wechaty来聊微信](https://blog.yswtrue.com/yong-matrix/)
 
