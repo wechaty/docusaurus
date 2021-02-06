@@ -20,3 +20,7 @@ curl https://api.chatie.io/v0/hosties/__TOKEN__
 
 1. `HTTP/200`: In-service
 1. `HTTP/404`: Out-service
+
+## Online UUID Generator
+
+<https://www.uuidgenerator.net/version4>
