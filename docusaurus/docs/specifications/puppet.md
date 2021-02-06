@@ -3,7 +3,57 @@ title: Wechaty Puppet
 sidebar_label: Puppet
 ---
 
-Puppet is... (introduction, tbw)
+The term `Puppet` in Wechaty is an Abstract Class for implementing protocol plugins. The plugins are the component that helps Wechaty to control the IMs like WeChat(that's the reason we call it puppet!).
+
+The plugins are named `PuppetXXX`, like [PuppetPuppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer) is using the [google puppeteer](https://github.com/GoogleChrome/puppeteer) to control the [WeChat Web API](https://wx.qq.com) via a chrome browser, [PuppetPadLocal](https://github.com/padlocal/wechaty-puppet-padlocal) is using the Pad Protocol to connect with WeChat Server.
+
+- Puppet Directory: <https://github.com/wechaty/wechaty-puppet/wiki/Directory>
+- Puppet Compatibility Table: <https://github.com/wechaty/wechaty-puppet/wiki/Compatibility>
+- Puppet Development Guide: <https://github.com/wechaty/wechaty-puppet/wiki/Development>
+- Puppet Related Links: <https://github.com/wechaty/wechaty-puppet/wiki/Links>
+- Puppet Documentation: <https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html>
+
+## WHAT IS WECHATY PUPPET
+
+The term `Puppet` in Wechaty is a name that we had picked up to describe part of our system: Puppet is an Abstract Class for implementing plugins, the plugins are the component that helps Wechaty to control the Wechat, that's the reason we call it `puppet`.
+
+Plugins are named PuppetXXX, like PuppetPuppeteer is using the chrome puppeteer to control the WeChat Web API via a chrome browser, PuppetService is using the gRPC protocol to connect with a Protocol Server for controlling an iPad/Windows/whatever program.
+
+For a deeper understanding of the Puppet in Wechaty, you can read its documentation from <https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html> and source code if you like at <https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts>
+
+![abstract puppet](/img/docs/architecture.png)
+
+### Important Puppets
+
+1. PuppetPuppeteer
+
+    A web solution to connect WeChat, Wechaty init implement is by web WeChat, which inject js code into chrome.
+
+1. PuppetMock
+
+    A mock function to connect WeChat, not a real implement, for testing other connectors to connect with Wechaty, in other words: a mock solution to implement puppet. This is used for further to connect other solutions, such as iPad, Xposed, iOs, windows client...
+
+1. PuppetPadLocal
+
+    An iPad solution to connect WeChat
+
+1. PuppetService
+
+    See: </docs/puppet-services/>
+
+## Using Puppet with Wechaty Examples
+
+1. Using [wechaty-puppet-mock](https://www.npmjs.com/package/wechaty-puppet-mock) to run [ding-dong-bot](https://github.com/wechaty/wechaty/blob/master/examples/ding-dong-bot.ts)
+
+    ```sh
+    WECHATY_PUPPET=wechaty-puppet-mock npm start
+    ```
+
+1. Using [wechaty-puppet-padpro](https://www.npmjs.com/package/wechaty-puppet-padpro) to run [ding-dong-bot](https://github.com/wechaty/wechaty/blob/master/examples/ding-dong-bot.ts)
+
+    ```sh
+    WECHATY_PUPPET=wechaty-puppet-padpro npm start
+    ```
 
 ## Basic Rules
 
@@ -181,3 +231,67 @@ Puppet has a API named `ding(data: string): void`, and the Puppet must:
 1. the payload of the `dong` event might contains a `data` key with the value exactly match the `data` when calling the `ding()` method.
 
 This is for active(passive) health checking, and this is also a workaround for some edge case communication between the top puppet with the bottom puppet.
+
+## Development
+
+A Wechaty Puppet is a node package published on NPM that follow a defined convention.
+
+### How to implement a wechaty puppet
+
+related tutorial: [How to implement a wechaty-puppet](https://github.com/lijiarui/wechaty-puppet-padchat/issues/33)
+
+### Structure
+
+#### `package.json`
+
+The `package.json` is a manifest format for describing **Node.js modules**. Wechaty Puppets are built on top of Node modules. It declares dependencies, version, ownership, and other information required to run a plugin in Wechaty. This document describes the schema in detail.
+
+A plugin manifest `package.json` can also contain details about the required configuration. The configuration schema is defined in the `wechaty` field of the `package.json` (This field follow the [JSON-Schema](http://json-schema.org/) guidelines):
+
+```json
+{
+    "name": "wechaty-puppet-mytest",
+    "version": "0.0.1",
+    "description": "This is my first Wechaty Puppet",
+    "engines": {
+        "wechaty": ">=0.16.x"
+    },
+    "wechaty": {
+        "properties": {
+            "myConfigKey": {
+                "type": "string",
+                "default": "it's the default value",
+                "description": "It defines my awesome config!"
+            }
+        }
+    }
+}
+```
+
+You can learn more about `package.json` from the [NPM documentation](https://docs.npmjs.com/files/package.json).
+
+The **package name** must begin with `wechaty-puppet-` and the **package engines** should contain `wechaty`.
+
+#### mod.ts
+
+The `mod.ts` is the main entry point of your puppet implementation:
+
+```ts
+import { Puppet } from 'wechaty'
+
+export class PuppetMyTest extends Puppet {
+  // ... implenmentation here ...
+}
+
+export default PuppetMyTest
+```
+
+#### Publish Your Puppet
+
+Wechaty Puppet can be published on [NPM](https://www.npmjs.com/).
+
+To publish a new Puppet, you need to create an account on [npmjs.com](https://www.npmjs.com/) then publish it from the command line:
+
+```shell
+npm publish
+```
