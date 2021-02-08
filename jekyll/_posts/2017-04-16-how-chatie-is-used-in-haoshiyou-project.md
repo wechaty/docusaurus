@@ -8,10 +8,6 @@ tags:
   - featured
 ---
 
-![avatar](https://avatars0.githubusercontent.com/u/640325?v=3&s=88)
-
-作者: [@xinbenlv](https://github.com/xinbenlv), Google, [Chatie Contributor](https://github.com/orgs/Chatie/teams/contributor)
-
 为了帮助新来硅谷的朋友找室友和租房，我们在所在地区组建了若干微信群。
 我们对这个项目的基本理念是简单专注，用完即走。
 
