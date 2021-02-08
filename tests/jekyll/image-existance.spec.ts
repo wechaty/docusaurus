@@ -52,9 +52,14 @@ const URL_WHITE_LIST_REGEX = [
 const isWhiteList = (url: string) => URL_WHITE_LIST_REGEX.some(regex => regex.test(url))
 const not         = (func: (...args: any[]) => boolean) => (...args: any) => !func(...args)
 
+const isGitHubUserContent = (url: string) => /\.githubusercontent.com\//i.test(url)
+
 const getRemoteImageList = async () => {
   const allImageList = await getAllImageList()
-  const remoteImageList = allImageList.filter(isWhiteList)
+  const remoteImageList = allImageList
+    .filter(isWhiteList)
+    .filter(not(isGitHubUserContent))
+
   return remoteImageList
 }
 
