@@ -12,7 +12,7 @@ image: /assets/2021/02-how-to-use-wechaty-to-ask-for-payment-before-user-joining
 
 一直以来在私域流量运营领域都有这样一个需求：自动通过好友，并在新好友支付一定的费用之后，依据新好友所发送的关键字，将其拉到对应的微信群。关键字与微信群对应，并且微信群满员以后可以自动扩建。
 
-有人想过这样的解决方法，先让潜在用户添加人工客服微信，转帐或扫码支付，人工验证之后，再拉TA入群。但是这个方法人工成本高，人工成本高，就意味着会拉高入群票价。
+有人想过这样的解决方法，先让潜在用户添加人工客服微信，转帐或扫码支付，人工验证之后，再拉他/她入群。但是这个方法人工成本高，人工成本高，就意味着会拉高入群票价。
 
 还有一个变通的方法，采用微商城，让用户在商城内自助完成支付，然后通过钩子设置发给用户一个四位数字的验证码，就是虚拟发货。完成这一步后，再引导用户拿着验证码添加机器人助手微信，机器人助手收到验证码以后，先到数据库里验证订单真伪，核实后再拉人入群。
 
@@ -38,9 +38,9 @@ image: /assets/2021/02-how-to-use-wechaty-to-ask-for-payment-before-user-joining
 
 ## 使用准备
 
-在使用之前需要Wechaty的token和小微商户的MCHID和SECRET。前者可在[这里](https://qiwei.juzibot.com/corpPremium/wechaty)购买，是月租付费形式。后者在[这里](https://pay.xunhuweb.com/)申请，它是一次性付费的，面向个人开放。
+在使用之前需要`Wechaty`的`token`和小微商户的`MCHID`和`SECRET`。前者可在[这里](https://qiwei.juzibot.com/corpPremium/wechaty)购买，是月租付费形式。后者在[这里](https://pay.xunhuweb.com/)申请，它是一次性付费的，面向个人开放。
 
-拿到启动材料后，需要在本地bash中配置一下系统变量：
+拿到启动材料后，需要在本地`bash`中配置一下系统变量：
 
 ```bash
 export WEPAY_MCHID=xxx
@@ -52,7 +52,7 @@ export WECHATY_PUPPET_HOSTIE_TOKEN=xxx
 
 ## 如何启动
 
-启动简单：
+启动：
 
 ```bash
 git clone https://github.com/rixingyike/wechat-operation-assistant.git --depth=1
@@ -65,7 +65,7 @@ npm run serve
 
 版本：[v1.0](https://github.com/rixingyike/wechat-operation-assistant/releases/tag/v1.0)
 
-当然了这个版本还存在一些问题，例如机器人助手依据昵称管理员权限，这存在漏洞。Wechaty 中 Contact 对象有一个`alias`方法，可以设置/获取联系人备注，可以使用这个方法代替`name`检验管理员权限。
+当然了这个版本还存在一些问题，例如机器人助手依据昵称管理员权限，这存在漏洞。`Wechaty`中`Contact`对象有一个`alias`方法，可以设置/获取联系人备注，可以使用这个方法代替`name`检验管理员权限。
 
 后续作者可能对这个项目进行不断完善，如果你有什么建议，欢迎提出来，也欢迎提交PR。
 
