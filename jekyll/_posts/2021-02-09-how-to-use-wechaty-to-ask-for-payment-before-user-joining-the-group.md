@@ -71,6 +71,4 @@ v1.0：https://github.com/rixingyike/wechat-operation-assistant/releases/tag/v1.
 
 这里还有一个Youbute版本：https://youtu.be/Rujwzt0B9K8
 
-有问题请关注微信公众号“程序员LIYI”联系作者。
-
-![](https://yishulun.com/post-images/1610260345230.jpg)
+2021年02月09日
