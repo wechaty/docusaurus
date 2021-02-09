@@ -65,7 +65,7 @@ npm run serve
 
 版本：[v1.0](https://github.com/rixingyike/wechat-operation-assistant/releases/tag/v1.0)
 
-当然了这个版本还存在一些问题，例如机器人助手依据昵称管理员权限，这存在漏洞。Wechaty中Contact对象有一个alias方法，可以设置/获取联系人备注，可以使用这个方法代替name检验管理员权限。
+当然了这个版本还存在一些问题，例如机器人助手依据昵称管理员权限，这存在漏洞。Wechaty 中 Contact 对象有一个`alias`方法，可以设置/获取联系人备注，可以使用这个方法代替`name`检验管理员权限。
 
 后续作者可能对这个项目进行不断完善，如果你有什么建议，欢迎提出来，也欢迎提交PR。
 
