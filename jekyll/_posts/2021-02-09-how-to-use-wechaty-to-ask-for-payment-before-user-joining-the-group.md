@@ -1,11 +1,14 @@
-title: How to use wechaty to ask for payment before user joining the group
-author: 程序员LIYI
+---
+title: "使用小微商户 + Wechaty构建一个可付费的私域流量运营助手"
+author: rixingyike
 categories: project
 tags:
   - group
   - payment
 image: /assets/2021/02-how-to-use-wechaty-to-ask-for-payment-before-user-joining-the-group/paying-by-qrcode.png
 ---
+
+> 作者: [程序员LIYI](https://yishulun.com)，首发于公众号: [一个小小智能机器人：帮我们自动拉人，自动核实付费，自动将收款转到个人银行卡](https://mp.weixin.qq.com/s/TUKmK7IgJElECt7hNq5QEA)。以下内容重发时有修改。
 
 一直以来在私域流量运营领域都有这样一个需求：自动通过好友，并在新好友支付一定的费用之后，依据新好友所发送的关键字，将其拉到对应的微信群。关键字与微信群对应，并且微信群满员以后可以自动扩建。
 
@@ -21,7 +24,7 @@ image: /assets/2021/02-how-to-use-wechaty-to-ask-for-payment-before-user-joining
 
 这是一个实验性的小项目，还不完善，但可行性是具备的，完全可运行，收到的款项也会自动转到个人微信卡。希望这个项目能给你启发，但不提供任何技术保证和使用许诺。
 
-该项目基于微信小微商户+Wechaty实现，并借鉴于Wechaty的示例代码（https://github.com/wechaty/wechaty-getting-started）。
+该项目基于微信小微商户+Wechaty实现，并借鉴于[Wechaty的示例代码](https://github.com/wechaty/wechaty-getting-started)。
 
 接下来介绍一下它需要准备什么，如何使用，未尾有作者录制的视频，方便你快速查看项目的交互效果。
 
@@ -29,28 +32,29 @@ image: /assets/2021/02-how-to-use-wechaty-to-ask-for-payment-before-user-joining
 
 主要支持的功能交互指令：
 
-1. 申请加入xx群，可以加入群，将xx换成具体的关键字，例如书法
-2. #查询2021xxx，用于查询旧订单，如果支付了可以补拉进群
-3. 指定的管理员，可以使用”@xxx 勿发“这样的群消息指令，让机器人踢出某人
+- 申请加入xx群，可以加入群，将xx换成具体的关键字，例如书法
+- `#查询2021xxx`，用于查询旧订单，如果支付了可以补拉进群
+- 指定的管理员，可以使用`@xxx 勿发`这样的群消息指令，让机器人踢出某人
 
 ## 使用准备
 
-在使用之前需要Wechaty的token和小微商户的MCHID和SECRET。前者可在 https://qiwei.juzibot.com/corpPremium/wechaty 购买，是月租付费形式，更稿时每月200。后者在 https://pay.xunhuweb.com/ 申请，一次性付费。
+在使用之前需要Wechaty的token和小微商户的MCHID和SECRET。前者可在[这里](https://qiwei.juzibot.com/corpPremium/wechaty)购买，是月租付费形式。后者在[这里](https://pay.xunhuweb.com/)申请，它是一次性付费的，面向个人开放。
 
 拿到启动材料后，需要在本地bash中配置一下系统变量：
 
-```
+```bash
 export WEPAY_MCHID=xxx
 export WEPAY_SECRET=xxx
 export WECHATY_PUPPET_HOSTIE_TOKEN=xxx
 ```
-这是Linux/Mac下的配置，在Windows下需要自行修改一下配置方法。
+
+这是`Linux/Mac下`的配置，在`Windows`下需要自行修改一下配置方法。
 
 ## 如何启动
 
 启动简单：
 
-```
+```bash
 git clone https://github.com/rixingyike/wechat-operation-assistant.git --depth=1
 cd wechat-operation-assistant
 npm i
@@ -59,7 +63,7 @@ npm run serve
 
 ## 投石问路版本
 
-v1.0：https://github.com/rixingyike/wechat-operation-assistant/releases/tag/v1.0
+版本：[v1.0](https://github.com/rixingyike/wechat-operation-assistant/releases/tag/v1.0)
 
 当然了这个版本还存在一些问题，例如机器人助手依据昵称管理员权限，这存在漏洞。Wechaty中Contact对象有一个alias方法，可以设置/获取联系人备注，可以使用这个方法代替name检验管理员权限。
 
