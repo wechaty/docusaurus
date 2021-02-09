@@ -67,8 +67,6 @@ v1.0：https://github.com/rixingyike/wechat-operation-assistant/releases/tag/v1.
 
 ## 使用视频
 
-作者为这个版本的使用录了一个视频：https://mp.weixin.qq.com/s/TUKmK7IgJElECt7hNq5QEA
-
-这里还有一个Youbute版本：https://youtu.be/Rujwzt0B9K8
+{% include iframe.html src="https://youtu.be/Rujwzt0B9K8"%}
 
 2021年02月09日
