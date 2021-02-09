@@ -1,6 +1,6 @@
 ---
 title: "使用小微商户 + Wechaty构建一个可付费的私域流量运营助手"
-author: CoderLIYI
+author: rixingyike
 categories: project
 tags:
   - group
