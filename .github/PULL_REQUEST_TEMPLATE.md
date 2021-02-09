@@ -25,7 +25,7 @@ Please make sure to check the following boxes creating your pull request, thank 
     > It will be easier to start drafting your post by using a existing post file as your template, for example, [this one](https://github.com/wechaty/wechaty.js.org/blob/master/jekyll/_posts/2021-01-14-wechaty-puppet-service.md)
 
 - [ ] Keep all filenames lowercase, and use `-` to connect words instead of space. e.g. `2017-10-06-wechat-pc-impactor.md` instead of `2017-10-06-WeChat PC Impactor.md`
-- [ ] Embed video from YouTube (if there's any)
+- [ ] Embed video/pdf from YouTube/Bilibili/local (if there's any) by using `{% include iframe.html src="URL_or_PATH" %}`. (Learn more about how to embed file/url in the post by reading this [blog post](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)
 - [ ] Save photo to local before publishing, to a folder named by `${MONTH}-${YOUR_BLOG_SLUG}/` under `/assets/2021/` directory.
 - [ ] Select a beautiful and meaningful teaser image for your blog
 - [ ] Create your contributor profile (if you are a first time contributor)
