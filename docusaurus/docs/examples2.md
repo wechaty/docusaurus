@@ -17,7 +17,7 @@ npm install
 npm start
 ```
 
-Or check out the [sandbox](https://codesandbox.io/s/github/wechaty/wechaty-getting-started/tree/master/examples/third-parties/gitpod?hidenavigation=1&module=%2Fding-dong-bot.ts&theme=dark):
+Or check out the [sandbox](https://codesandbox.io/s/github/wechaty/wechaty-getting-started/tree/master/examples/third-parties/codesandbox?hidenavigation=1&module=%2Fding-dong-bot.ts&theme=dark):
 
 <iframe class="codesandbox"src="https://codesandbox.io/embed/github/wechaty/wechaty-getting-started/tree/master/examples/third-parties/gitpod?hidenavigation=1&module=%2Fding-dong-bot.ts&theme=dark"sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
