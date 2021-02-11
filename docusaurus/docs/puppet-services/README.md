@@ -9,6 +9,7 @@ For different instant messaging (IM) systems (such as WeChat, Whatsapp, and TikT
 Wechaty Puppet Service is gRPC for Wechaty Puppet. To use a Wechaty Puppet Service, you need a TOKEN for that service, and pass it to Wechaty, then you will be able to use that Puppet Service.
 
 ```sh
+export WECHATY_PUPPET=wechaty-puppet-service
 export WECHATY_PUPPET_SERVICE_TOKEN="__TOKEN__"
 ```
 
