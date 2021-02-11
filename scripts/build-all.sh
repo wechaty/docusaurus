@@ -35,3 +35,4 @@ cp -Rav jekyll/_site/* "$target"
 cp -v config/sitemap.xml "$target"
 rm -f "$target"/README.md
 touch "$target"/.nojekyll
+npx pkg-jq -r .version > "$target"/VERSION
