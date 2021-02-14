@@ -153,6 +153,8 @@ test('all local images linked from the post should be exist.', async t => {
   for (const imagePath of localImageList) {
     if (/^http/i.test(imagePath)) {
       t.fail(`"${imagePath}" should put image files to local repo instead of using URL`)
+    } else if (!/^\//.test(imagePath)) {
+      t.fail(`"${imagePath}" should be absoluted path (start with '/')`)
     } else {
       const filename = path.join(JEKYLL_FOLDER.root, imagePath)
       const good = fs.existsSync(filename)

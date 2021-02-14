@@ -7,7 +7,7 @@ tags:
  - soc
  - soc2020
  - java-wechaty
-image: assets/2020/java-wechaty-transplant-midpoc/java-wechaty-transplant-midpoc.jpg
+image: /assets/2020/java-wechaty-transplant-midpoc/java-wechaty-transplant-midpoc.jpg
 ---
 
 ## 暑期2020
