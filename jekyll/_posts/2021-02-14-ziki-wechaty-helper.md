@@ -1,3 +1,13 @@
+---
+name: wade0564
+site: https://github.com/wade0564
+avatar: /assets/contributors/wade0564/avatar.png
+bio: javaer
+email: 991445760@qq.com
+twitter: 
+---
+> 作者:日拱一卒，持续学习，搭建知识体系，工作快乐，生活美好。
+
 # 基于wechaty的个人知识库机器人
 ## 背景
 
