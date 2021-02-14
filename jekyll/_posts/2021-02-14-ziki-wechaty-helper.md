@@ -1,11 +1,12 @@
 ---
 title: 基于wechaty的个人知识库机器人
 author: wade0564
-site: https://github.com/wade0564
+categories: project
+tags:
+  - wiki
+image: /assets/2021/02-ziki-wechaty-helper/ziki_bot_input.png
 avatar: /assets/contributors/wade0564/avatar.png
-bio: javaer
 email: 991445760@qq.com
-twitter: 
 ---
 > 作者:日拱一卒，持续学习，搭建知识体系，工作快乐，生活美好。
 
