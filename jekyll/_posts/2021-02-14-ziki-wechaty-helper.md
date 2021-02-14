@@ -1,5 +1,6 @@
 ---
-name: wade0564
+title: 基于wechaty的个人知识库机器人
+author: wade0564
 site: https://github.com/wade0564
 avatar: /assets/contributors/wade0564/avatar.png
 bio: javaer
