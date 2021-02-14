@@ -17,6 +17,7 @@ import {
   getFrontmatterTeaserList,
   getMarkdownImageList,
   getFrontmatterAvatarList,
+  isWhiteListedRemoteUrl,
   JEKYLL_FOLDER,
 }                             from '../../src/jekyll/mod'
 
@@ -35,29 +36,14 @@ const getAllImageList = async () => {
   return allImageList
 }
 
-const URL_WHITE_LIST_REGEX = [
-  /badge\.fury\.io/i,
-  /dockeri\.co\/image/i,
-  /github\.com\/.*\/workflows\//i,
-  /githubusercontent\.com/i,
-  /herokucdn\.com/i,
-  /images\.microbadger\.com/i,
-  /img\.shields\.io/i,
-  /pepy\.tech\/badge/i,
-  /sourcerer\.io/i,
-  /wechaty\.github\.io/i,
-  /wechaty\.js\.org/i,
-]
-
-const isWhiteList = (url: string) => URL_WHITE_LIST_REGEX.some(regex => regex.test(url))
-const not         = (func: (...args: any[]) => boolean) => (...args: any) => !func(...args)
+const not = (func: (...args: any[]) => boolean) => (...args: any) => !func(...args)
 
 const isGitHubUserContent = (url: string) => /\.githubusercontent.com\//i.test(url)
 
 const getRemoteImageList = async () => {
   const allImageList = await getAllImageList()
   const remoteImageList = allImageList
-    .filter(isWhiteList)
+    .filter(isWhiteListedRemoteUrl)
     .filter(not(isGitHubUserContent))
 
   return remoteImageList
@@ -65,7 +51,7 @@ const getRemoteImageList = async () => {
 
 const getLocalImageList = async () => {
   const allImageList = await getAllImageList()
-  const localImageList  = allImageList.filter(not(isWhiteList))
+  const localImageList  = allImageList.filter(not(isWhiteListedRemoteUrl))
   return localImageList
 }
 
