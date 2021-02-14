@@ -1,3 +1,13 @@
+---
+name: wade0564
+site: https://github.com/wade0564
+avatar: /assets/contributors/wade0564/avatar.png
+bio: javaer
+email: 991445760@qq.com
+twitter: 
+---
+爱折腾的开发者
+
 # 基于wechaty的个人知识库机器人
 ## 背景
 
