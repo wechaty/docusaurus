@@ -40,7 +40,7 @@ test('front matter key `image` must has a value to define the teaser image', asy
     const image = front.image
 
     if (!image) {
-      t.fail(`"${stripRepoRoot(file)}" image(${image}) has been set`)
+      t.fail(`"${stripRepoRoot(file)}" 'frontmatter.image' should set to a beautiful teaser image`)
     }
   }
 

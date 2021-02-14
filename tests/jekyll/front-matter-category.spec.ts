@@ -50,7 +50,7 @@ test('front matter key `categories` must contains at lease one preset category',
     }
 
     if (!categoryList.length) {
-      t.fail(`"${stripRepoRoot(file)}" categories(${categoryList.length}) has at lease one category`)
+      t.fail(`"${stripRepoRoot(file)}" categories(${categoryList.length}) should have at lease one category`)
     }
 
     const allPreset = categoryList.every(isPreset)
