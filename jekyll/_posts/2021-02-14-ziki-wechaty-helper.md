@@ -44,7 +44,7 @@ https://github.com/wade0564/ziki-wechaty-helper
 ##### wechaty 配置
 `config/wechaty.js`
 
-```
+```javascript
 module.exports = {
   // puppet provider
   puppet: "wechaty-puppet-padlocal",
@@ -59,7 +59,7 @@ module.exports = {
 ##### 知识库接口配置
 `config/ziki.js`
 
-```
+```javascript
 module.exports = {
   favorApi: "http://xxxxxx", // favor api
   queryApi: "http://xxxxxx", // query api
@@ -70,6 +70,6 @@ module.exports = {
 
 #### 运行
 
-```
+```javascript
 npm run start
 ```
