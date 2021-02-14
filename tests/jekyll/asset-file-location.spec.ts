@@ -11,6 +11,7 @@ import {
   getFrontmatterTeaserList,
   getMarkdownImageList,
   getYearMonth,
+  isNotWhiteListedRemoteUrl,
   JEKYLL_FOLDER,
 }                             from '../../src/jekyll/mod'
 
@@ -38,7 +39,7 @@ test('all asset files should be put into folder `/assets/YYYY/MM-slug-...-slug/`
     const allList = [
       ...teaserList,
       ...imageList,
-    ]
+    ].filter(isNotWhiteListedRemoteUrl)
 
     // console.info('processing: ', filename)
     // console.info('teaserList:', teaserList.length)

@@ -5,6 +5,7 @@ categories: tutorial
 tags:
   - getting-started
   - gitpod
+  - news
 image: /assets/2021/02-wechaty-getting-started-without-leave-your-browser/gitpod-wechaty.webp
 ---
 
