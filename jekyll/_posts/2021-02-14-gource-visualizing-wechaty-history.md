@@ -158,3 +158,4 @@ Useful Argument Examples:
 
 - [Gource](https://gource.io/)
 - [Event Sourcing made Simple](https://kickstarter.engineering/event-sourcing-made-simple-4a2625113224)
+- [What they don’t tell you about event sourcing](https://medium.com/@hugo.oliveira.rocha/what-they-dont-tell-you-about-event-sourcing-6afc23c69e9a)
