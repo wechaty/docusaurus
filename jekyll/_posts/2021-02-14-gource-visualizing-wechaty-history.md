@@ -1,7 +1,7 @@
 ---
 title: Gource Visualization for Wechaty
 author: huan
-categories: blog
+categories: story
 tags:
   - gource
   - visualization
