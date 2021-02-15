@@ -91,6 +91,8 @@ Want to make your Git repo a video like mine? Go ahead to install & visualize it
 
 ### Install
 
+At first, you need to download gource source code from <https://gource.io/>.
+
 I use the following commands successfully installed Gource in my Linux Ubuntu 20.04 desktop:
 
 ```sh
