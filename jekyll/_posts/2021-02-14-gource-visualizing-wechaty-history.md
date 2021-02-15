@@ -77,12 +77,53 @@ I'd like to list the milestones that Wechaty archived from each year below for s
 - Issue/PRs 2,100+
 - GitHub Stars 10,000+
 
-## Links
-
-- [Gource](https://gource.io/)
-
 ## The first 30 days of Wechaty
 
 {% include iframe.html src="https://youtu.be/TYGZ3LCpXWQ" %}
 
-The above visualization is to show what I did in the first month (May, 2016) when I built Wechaty from scratch!
+The above visualization is to show what I did in the first 30 days (May, 2016) when I built Wechaty from scratch!
+
+## How to Generate Gource Video
+
+I use the following script to generate the gource visualization video:
+
+> Script credit: [Matthias Krüger](https://bugs.archlinux.org/user/10679), <https://bugs.archlinux.org/task/26905>
+
+```sh
+$ git clone git@github.com:wechaty/wechaty.js.org.git
+$ cd wechaty.js.org
+$ gource \
+    -1920x1080 \
+    --camera-mode overview \
+    --highlight-all-users \
+    --file-idle-time 0 \
+    -auto-skip-seconds 0.001 \
+    --seconds-per-day 0.5 \
+    --hide progress,mouse \
+    --stop-at-end \
+    --max-files 99999999999 \
+    --max-file-lag 0.00001 \
+    --output-ppm-stream - \
+    | \
+    ffmpeg \
+        -f image2pipe \
+        -vcodec ppm \
+        -i \
+        - \
+        -y \
+        -vcodec libx264 \
+        -threads 8 \
+        -b 3000k \
+        -maxrate 8000k \
+        -bufsize 10000k \
+        video.mp4
+```
+
+Useful Argument Examples:
+
+- `--start-date 2016-05-01`
+- `--stop-date 2016-06-01`
+
+## Links
+
+- [Gource](https://gource.io/)
