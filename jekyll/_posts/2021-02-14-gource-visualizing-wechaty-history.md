@@ -157,3 +157,4 @@ Useful Argument Examples:
 ## Links
 
 - [Gource](https://gource.io/)
+- [Event Sourcing made Simple](https://kickstarter.engineering/event-sourcing-made-simple-4a2625113224)
