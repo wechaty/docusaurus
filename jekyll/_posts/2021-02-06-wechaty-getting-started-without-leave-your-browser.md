@@ -9,9 +9,11 @@ tags:
 image: /assets/2021/02-wechaty-getting-started-without-leave-your-browser/gitpod-wechaty.webp
 ---
 
-[Wechaty](https://github.com/wechaty/wechaty/) is a Conversatioanl RPA SDK for building chatbot in 6 lines of code. It's well designed with an easy to use API, supports all OSs including Linux, OSX, Win32, Docker, and lots of IMs including WeChat, WeCom, Whatsapp, Lark, Gitter, etc.
-
-As a developer, you can use Wechaty to easily build your bot, effectively manage message sending/receiving, room creating/inviting, contact friendship, and delightful add artificial intelligence between users and your bot.
+> Gitpod is an online IDE which can be launched from any GitHub page. Simply prefix any GitHub-URL with “<https://gitpod.io#>” or use our browser extension that adds a button to GitHub pages.
+>
+> Within seconds, Gitpod provides you with a fully working development environment, including a VS Code-powered IDE and a cloud-based Linux container configured specifically for the project at hand.
+>
+> &mdash; [Gitpod — Online IDE For GitHub](https://medium.com/gitpod/gitpod-gitpod-online-ide-for-github-6296b907a886)
 
 ## Wechaty Getting Started
 
@@ -20,7 +22,7 @@ We have created a template GitHub repo <https://github.com/wechaty/wechaty-getti
 - GitHub: <https://github.com/wechaty/wechaty-getting-started>
 - `ding-dong-bot.ts`: <https://github.com/wechaty/wechaty-getting-started/blob/master/examples/ding-dong-bot.ts>
 
-## Features
+### Features
 
 1. Works out-of-the-box under Linux/Mac/Windows.
 1. Supports all puppets like Web, Pad, Windows, and Mac.
@@ -56,13 +58,3 @@ The button will take you to this link: <https://gitpod.io/#https://github.com/we
 [![GitPod Wechaty Getting Started](/assets/2021/02-wechaty-getting-started-without-leave-your-browser/gitpod-wechaty.webp)](https://gitpod.io/#https://github.com/wechaty/wechaty-getting-started)
 
 > Wechaty ❤️ Gitpod
-
-## What is Gitpod
-
-> Gitpod is an online IDE which can be launched from any GitHub page. Simply prefix any GitHub-URL with “<https://gitpod.io#>” or use our browser extension that adds a button to GitHub pages.
->
-> Within seconds, Gitpod provides you with a fully working development environment, including a VS Code-powered IDE and a cloud-based Linux container configured specifically for the project at hand.
->
-> &mdash; [Gitpod — Online IDE For GitHub](https://medium.com/gitpod/gitpod-gitpod-online-ide-for-github-6296b907a886)
-
-[Here](https://stackoverflow.com/a/63595356/1123955) has a Stackoverflow answer from Gitpod co-founder Moriz Eysholdt.
