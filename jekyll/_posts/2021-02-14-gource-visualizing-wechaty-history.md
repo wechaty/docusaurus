@@ -6,6 +6,8 @@ tags:
   - gource
   - visualization
   - news
+  - history
+  - memory
 image: /assets/2021/02-gource-visualizing-wechaty-history/wechaty-gource.webp
 ---
 
@@ -85,9 +87,35 @@ The above visualization is to show what I did in the first 30 days (May, 2016) w
 
 ## How to Generate Gource Video
 
-I use the following script to generate the gource visualization video:
+Want to make your Git repo a video like mine? Go ahead to install & visualize it!
 
-> Script credit: [Matthias Krüger](https://bugs.archlinux.org/user/10679), <https://bugs.archlinux.org/task/26905>
+### Install
+
+I use the following commands successfully installed Gource in my Linux Ubuntu 20.04 desktop:
+
+```sh
+# Install development dependencies
+$ sudo apt install \
+    libglew-dev \
+    libsdl2-dev
+    libsdl2-image-dev \
+    libboost-all-dev \
+    libglm-dev
+
+# Download, configure, and make install
+$ tar zxvf ../gource-0.51.tar.gz
+$ cd gource-0.51/
+$ ./configure
+$ make
+$ sudo make install
+
+# Gsource will be install in /usr/local/bin
+$ gsource
+```
+
+### Visualize
+
+I use the following script to generate the gource visualization video:
 
 ```sh
 $ git clone git@github.com:wechaty/wechaty.js.org.git
@@ -118,6 +146,8 @@ $ gource \
         -bufsize 10000k \
         video.mp4
 ```
+
+> Script credit: [Matthias Krüger](https://bugs.archlinux.org/user/10679), <https://bugs.archlinux.org/task/26905>
 
 Useful Argument Examples:
 
