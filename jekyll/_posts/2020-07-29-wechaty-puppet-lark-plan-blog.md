@@ -1,6 +1,6 @@
 ---
 title: "基于开放 API 封装 Wechaty 接口下的飞书聊天机器人：期初"
-author: fanrui
+author: roxanne718
 categories: project
 image: /assets/2020/lark-puppet/wechaty-lark.png
 tags:
@@ -9,8 +9,8 @@ tags:
   - Lark
   - soc
 ---
-> Author: [@fanrui](https://github.com/Roxanne718)
-> Code: [@fanrui/wechaty-puppet-lark](https://github.com/Roxanne718/wechaty-puppet-lark)
+> Author: [@roxanne718](https://github.com/Roxanne718)
+> Code: [wechaty-puppet-lark](https://github.com/Roxanne718/wechaty-puppet-lark)
 
 ## 暑期2020
 
