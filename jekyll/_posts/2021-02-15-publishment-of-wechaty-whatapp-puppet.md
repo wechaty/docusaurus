@@ -30,7 +30,7 @@ To enable the display of QR code in the terminal, `qrcode-terminal` should also 
 npm i qrcode-terminal
 ```
 
-Then, you can implement your bot in a few lines of code, here is an basic demo: 
+Then, you can implement your bot in a few lines of code, here is an basic demo:
 
 ```javascript
 const { Wechaty, log} = require("wechaty");
@@ -54,13 +54,11 @@ After scanning a WhatsApp QR code and logging in, you can view the received mess
 
 ![basic demo](/assets/2021/02-publishment-of-wechaty-whatapp-puppet/wechaty-puppet-whatsapp-demo.png)
 
-
 ## Next Steps
 
 As always, feel free to file an issue on the [github repo](https://github.com/wechaty/wechaty-puppet-whatsapp/issues) for any feedback.
 
 `wechaty-puppet-whatsapp` is an open-source project. If you’re interested in contributing to this project, check out the contribution guidelines or join the [Wechaty Developers' Home](https://github.com/wechaty/wechaty#raising_hand-join-us) to learn more.
-
 
 Here are some features to be implemented:
 
