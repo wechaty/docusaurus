@@ -15,7 +15,7 @@
 1. Write your blog in markdown
 1. Add your blog to `jekyll/_post` folder
 1. Add related image to `jekyll/assets` folder (under `$YEAR/$MONTH-your-blog-slug/` directory to contain your images)
-1. Add your info into `jekyll/_developers/your_github_id.md`
+1. Add your info into `jekyll/_contributors/your_github_id.md`
 1. Commit your changes (git commit -am "${YOUR_BLOG_TITLE")
 1. Push to the branch
 1. Create new Pull Request
@@ -147,9 +147,9 @@ To get to know all our writers, see <https://github.com/wechaty/wechaty.js.org/g
 
 ## Maintainers
 
-1. [@lijiarui](https://github.com/lijiarui), [Rui LI](https://wechaty.js.org/developers/lijiarui), Microsoft AI MVP, Founder & CEO of Juzi.BOT (YC W19 Alumni)
-1. [@huan](https://github.com/huan), [Huan LI](https://wechaty.js.org/developers/huan), Tencent TVP of Chatbot, \<zixia@zixia.net\>
-1. [@wj-Mcat](https://github.com/wj-Mcat), [Jingjing WU](https://wechaty.js.org/developers/wj-mcat), Author of [Python Wechaty](https://github.com/wechaty/python-wechaty)
+1. [@lijiarui](https://github.com/lijiarui), [Rui LI](https://wechaty.js.org/contributors/lijiarui), Microsoft AI MVP, Founder & CEO of Juzi.BOT (YC W19 Alumni)
+1. [@huan](https://github.com/huan), [Huan LI](https://wechaty.js.org/contributors/huan), Tencent TVP of Chatbot, \<zixia@zixia.net\>
+1. [@wj-Mcat](https://github.com/wj-Mcat), [Jingjing WU](https://wechaty.js.org/contributors/wj-mcat), Author of [Python Wechaty](https://github.com/wechaty/python-wechaty)
 
 And [wechaty/contributors](https://github.com/orgs/wechaty/teams/contributors/members)
 

@@ -1,6 +1,9 @@
 ---
-title: Token
+title: Wechaty Puppet Service Token
+sidebar_label: Token
 ---
+
+Wechaty Puppet Service Token (TOKEN), is ... (tbw)
 
 ## Format / Convensions
 
@@ -17,3 +20,7 @@ curl https://api.chatie.io/v0/hosties/__TOKEN__
 
 1. `HTTP/200`: In-service
 1. `HTTP/404`: Out-service
+
+## Online UUID Generator
+
+<https://www.uuidgenerator.net/version4>

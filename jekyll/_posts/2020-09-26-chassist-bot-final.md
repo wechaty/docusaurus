@@ -1,6 +1,5 @@
 ---
 title: "暑期2020 [基于python-wechaty的群聊助手机器人] 结项成果展示"
-date: 2020-08-14 09:00 +0800
 author: kxz18
 categories: project
 image: /assets/2020/chassist-final/logo.png

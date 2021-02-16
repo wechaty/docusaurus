@@ -21,8 +21,12 @@ test('files in `_posts/` must have name prefix with `YYYY-MM-DD-`', async t => {
 
   for (const filename of postsFileList) {
     const good = REGEX.test(filename)
-    t.true(good, `"${filename}" have name started with YYYY-MM-DD-`)
+    if (!good) {
+      t.fail(`"${filename}" have name started with YYYY-MM-DD-`)
+    }
   }
+
+  t.pass(`total ${postsFileList.length} files checked`)
 })
 
 test('files in `_posts/` must contain at least three slugs connected by dash after the date prefix (slug1-slug2-slug3)', async t => {
@@ -36,8 +40,12 @@ test('files in `_posts/` must contain at least three slugs connected by dash aft
     const slugList = name.split('-')
     const good = slugList.length >= 3
 
-    t.true(good, `"${filename.replace(JEKYLL_FOLDER.posts + '/', '')}" have at least 3 slugs`)
+    if (!good) {
+      t.fail(`"${filename.replace(JEKYLL_FOLDER.posts + '/', '')}" have at least 3 slugs`)
+    }
   }
+
+  t.pass(`total ${postsFileList.length} files checked.`)
 })
 
 test('files in `_posts/` must end with `.md` file extension', async t => {
@@ -46,6 +54,10 @@ test('files in `_posts/` must end with `.md` file extension', async t => {
 
   for (const filename of postsFileList) {
     const good = REGEX.test(filename)
-    t.true(good, `"${stripRepoRoot(filename)}" end with .md`)
+    if (!good) {
+      t.fail(`"${stripRepoRoot(filename)}" end with .md`)
+    }
   }
+
+  t.pass(`total ${postsFileList.length} files checked.`)
 })

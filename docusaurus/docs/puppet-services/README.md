@@ -9,6 +9,7 @@ For different instant messaging (IM) systems (such as WeChat, Whatsapp, and TikT
 Wechaty Puppet Service is gRPC for Wechaty Puppet. To use a Wechaty Puppet Service, you need a TOKEN for that service, and pass it to Wechaty, then you will be able to use that Puppet Service.
 
 ```sh
+export WECHATY_PUPPET=wechaty-puppet-service
 export WECHATY_PUPPET_SERVICE_TOKEN="__TOKEN__"
 ```
 
@@ -24,9 +25,13 @@ If you have any questions about the Wechaty Puppet Service, please feel free to 
 
 ### 1. Free TOKEN (Short-term)
 
-Short-term TOKEN is for those developers who want to test Wechaty Puppet Service to make sure the service can meet their needs.
+Short-term TOKEN（7 days） is for those developers who want to test Wechaty Puppet Service to make sure the service can meet their needs.
 
 TODO: list a easy to follow steps how to apply free token
+
+- Paimon: Register [here](http://150.158.176.142/)
+- wxwork/donut: Using **WeCom Account**(Not WeChat) with administrator rights [here](https://qiwei.juzibot.com/user/login?isWechaty=true)
+- Padlocal: send email to oxddoxdd@gmail.com
 
 ### 2. Free TOKEN (Long-term)
 

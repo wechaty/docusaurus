@@ -1,6 +1,6 @@
 ---
 title: "三步教你用Node做一个微信脱单神器，小白可上手"
-author: leo_chen
+author: gengchen528
 categories: project
 tags:
   - code

@@ -11,7 +11,7 @@ import globCB         from 'glob'
 import {
   REPO_ROOT,
   stripRepoRoot,
-}                             from '../../src/repo-root'
+}                     from '../../src/repo-root'
 
 const glob = util.promisify(globCB)
 
@@ -41,10 +41,12 @@ test('misplaced files', async t => {
   t.true(isGood, `should no miss placed files. ${missPlacedFileList.join(', ')}`)
 })
 
-test('folder _developers/, _posts/, and assets/ has been moved to `jekyll/` (e.g. _posts/ => jekyll/_posts/)', async t => {
+test('folder _contributors/, _posts/, and assets/ has been moved to `jekyll/` (e.g. _posts/ => jekyll/_posts/)', async t => {
   const DEPRECATED_FOLDER_LIST = {
-    _developer  : '_developer might a typo of `jekyll/_developers`',
-    _developers : '_developers/ has been moved to `jekyll/_developers`',
+    _contributor  : '_contributor might a typo of `jekyll/_contributors`',
+    _contributors : '_contributors/ has been moved to `jekyll/_contributors`',
+    _developer  : '_developer might a typo of `jekyll/_contributors`',
+    _developers : '_developers/ has been moved to `jekyll/_contributors`',
     // 👇 https://github.com/wechaty/wechaty.js.org/pull/648
     _post       : '_post might a typo of `jekyll/_posts`',
     _posts      : '_posts/ has been moved to `jekyll/_posts`',
@@ -53,6 +55,10 @@ test('folder _developers/, _posts/, and assets/ has been moved to `jekyll/` (e.g
 
   for (const [folder, memo] of Object.entries(DEPRECATED_FOLDER_LIST)) {
     const existDeprecatedFolder = fs.existsSync(path.join(REPO_ROOT, folder))
-    t.false(existDeprecatedFolder, `${folder}/ should not exist: ${memo}`)
+    if (existDeprecatedFolder) {
+      t.fail(`${folder}/ should not exist: ${memo}`)
+    }
   }
+
+  t.pass(`${Object.keys(DEPRECATED_FOLDER_LIST).length} deprecated folders checked.`)
 })

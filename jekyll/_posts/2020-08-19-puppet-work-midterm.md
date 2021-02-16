@@ -1,6 +1,5 @@
 ---
 title: "暑期2020 [基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人] POC 成果展示"
-date: 2020-08-19 22:00 +0800
 author: sapio-s
 categories: project
 image: /assets/2020/work-puppet/pic2.jpg

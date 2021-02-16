@@ -1,7 +1,6 @@
 ---
 title: "暑期2020 [Go-wechaty Github Action optimization] 计划书"
-date: 2020-07-30 16:00 +0800
-author: tangguangbin
+author: nebell
 categories: project
 image: /assets/2020/go-wechaty-github-action-optimization-poc/header.jpg
 tags:

@@ -6,7 +6,7 @@ image: assets/2015/12-five-years/group-photo-2k.jpg
 comments: true
 ---
 
-{% assign preangel = site.developers | where: 'slug', 'preangel' | first %}
+{% assign preangel = site.contributors | where: 'slug', 'preangel' | first %}
 
 {% assign partners = '' | split: ',' %}
 {% for person in site.peoples %}
@@ -99,4 +99,4 @@ _Wechaty 101_ Slides is hosted on Google Slides(Docs) at [here](https://docs.goo
 WztD_pMuu22AQ3SIMjk2wp8f-f18/edit?usp=sharing)
 
 
-Made with <i class="fa fa-heart text-danger"></i> by <a href="/developers/huan/">@Huan</a>
+Made with <i class="fa fa-heart text-danger"></i> by <a href="/contributors/huan/">@Huan</a>

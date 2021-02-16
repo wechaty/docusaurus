@@ -39,12 +39,21 @@ test('front matter key `tags` must contact at least one tag and not black listed
         ? [tagList]
         : []
     }
-    t.true(tagList.length, `"${stripRepoRoot(file)}" tags(${tagList.length}) has at least one tag`)
+
+    if (!tagList.length) {
+      t.fail(`"${stripRepoRoot(file)}" tags(${tagList.length}) has at least one tag`)
+    }
 
     const notBlackListed = tagList.every(isNotBlackList)
-    t.true(notBlackListed, `"${stripRepoRoot(file)}" tags(${notBlackListed ? tagList.length : tagList.join(',')}) has no black listed`)
+    if (!notBlackListed) {
+      t.fail(`"${stripRepoRoot(file)}" tags(${notBlackListed ? tagList.length : tagList.join(',')}) must not be black listed`)
+    }
 
     const notIncludeSpace = tagList.every(isNotIncludeSpace)
-    t.true(notIncludeSpace, `"${stripRepoRoot(file)}" tags(${notIncludeSpace ? tagList.length : tagList.join(',')}) does not include space in tag`)
+    if (!notIncludeSpace) {
+      t.fail(`"${stripRepoRoot(file)}" tags(${notIncludeSpace ? tagList.length : tagList.join(',')}) must not include space in tag`)
+    }
   }
+
+  t.pass(`total ${postsFileList.length} files checked`)
 })

@@ -1,6 +1,6 @@
 ---
 title: "使用Wechaty助力金融营销实践"
-author: lemonsx
+author: crossly
 categories: tutorial
 tags:
   - financial

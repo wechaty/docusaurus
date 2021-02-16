@@ -7,7 +7,7 @@ tags:
   - meeting
   - talk
   - featured
-image: assets/2020/meeting-notes/07-05-head-picture.jpg
+image: /assets/2020/meeting-notes/07-05-head-picture.jpg
 ---
 
 > 作者: [wj-Mcat](https://github.com/wj-Mcat/)

@@ -28,21 +28,25 @@ test('filename only allow [a-z0-9-_.]', async t => {
     new RegExp('/assets/js/viewer-js'),
   ]
 
-  const assetsFileList  = await glob(`${JEKYLL_FOLDER.assets}/**/*`)
-  const postsFileList   = await glob(`${JEKYLL_FOLDER.posts}/**/*`)
-  const developersFileList = await glob(`${JEKYLL_FOLDER.developers}/**/*`)
+  const assetsFileList       = await glob(`${JEKYLL_FOLDER.assets}/**/*`)
+  const postsFileList        = await glob(`${JEKYLL_FOLDER.posts}/**/*`)
+  const contributorsFileList = await glob(`${JEKYLL_FOLDER.contributors}/**/*`)
 
   const isNotWhiteList = (filename: string) => WHITE_LIST_REGEX_LIST.every(regex => !regex.test(filename))
 
   const filenameList = [
     ...assetsFileList,
-    ...developersFileList,
+    ...contributorsFileList,
     ...postsFileList,
   ].filter(isNotWhiteList)
     .map(stripRepoRoot)
 
   for (const filename of filenameList) {
     const ok = REGEX.test(filename)
-    t.true(ok, `"${filename}" contains all lowercase and no specicial characters`)
+    if (!ok) {
+      t.fail(`"${filename}" contains all lowercase and no specicial characters`)
+    }
   }
+
+  t.pass(`total ${filenameList.length} files checked.`)
 })

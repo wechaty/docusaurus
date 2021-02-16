@@ -49,9 +49,15 @@ test('front matter key `categories` must contains at lease one preset category',
         : []
     }
 
-    t.true(categoryList.length, `"${stripRepoRoot(file)}" categories(${categoryList.length}) has at lease one category`)
+    if (!categoryList.length) {
+      t.fail(`"${stripRepoRoot(file)}" categories(${categoryList.length}) should have at lease one category`)
+    }
 
     const allPreset = categoryList.every(isPreset)
-    t.true(allPreset, `"${stripRepoRoot(file)}" categories(${categoryList.join(',')}) is in preset(${allPreset ? '...' : PRESET_CATEGORIES_LIST.join(',')})`)
+    if (!allPreset) {
+      t.fail(`"${stripRepoRoot(file)}" should only use categories(${categoryList.join(',')}) is in preset(${allPreset ? '...' : PRESET_CATEGORIES_LIST.join(',')})`)
+    }
   }
+
+  t.pass(`total ${postsFileList.length} files checked.`)
 })

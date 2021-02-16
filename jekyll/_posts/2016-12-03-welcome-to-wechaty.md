@@ -60,5 +60,5 @@ Huan, a ChatBot & Deep Learning Fan
 
 [wechaty-gh]: https://github.com/wechaty/wechaty/
 [wechaty-io]: www.chatie.io/
-[wechaty-qrcode-image]: https://raw.githubusercontent.com/wechaty/wechaty/master/docs/images/bot-qr-code.png
-[wechaty-logo-image]: https://raw.githubusercontent.com/wechaty/wechaty/master/docs/images/wechaty-logo-green-en.png
+[wechaty-qrcode-image]: https://wechaty.js.org/img/friday-qrcode.svg
+[wechaty-logo-image]: https://wechaty.js.org/img/wechaty-logo.svg
