@@ -9,7 +9,10 @@ import https from 'https'
 import { URL } from 'url'
 
 import globCB    from 'glob'
-import { chunk } from 'lodash'
+import {
+  chunk,
+  shuffle,
+}               from 'lodash'
 
 import fetch            from 'node-fetch'
 import AbortController  from 'abort-controller'
@@ -109,8 +112,27 @@ test('all remote images linked from the post should be exist.', async t => {
     }
   }
 
-  const remoteImageList = await getRemoteImageList()
-  const chunkList = chunk(remoteImageList, 30)
+  // Get rid of duplicated urls
+  let remoteImageList = await getRemoteImageList()
+
+  remoteImageList = shuffle(
+    Array.from(
+      new Set(
+        remoteImageList
+      )
+    )
+  )
+
+  // void chunk
+  // void urlExist
+  // console.info(remoteImageList)
+
+  const CONCURRENCY = 20
+
+  const chunkList = chunk(
+    remoteImageList,
+    CONCURRENCY,
+  )
 
   for (const chunk of chunkList) {
     process.stdout.write(
