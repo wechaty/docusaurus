@@ -38,4 +38,4 @@ Please make sure the CI turns green, and if the CI fail, you need to check the e
 
 ## Support
 
-If you need support, please join our Gitter at <https://gitter.im/wechaty/wechaty>
+You can [join our Gitter](https://gitter.im/wechaty/wechaty) network if you aren’t already a member.

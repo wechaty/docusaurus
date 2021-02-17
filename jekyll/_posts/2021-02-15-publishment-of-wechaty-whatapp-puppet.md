@@ -58,7 +58,7 @@ After scanning a WhatsApp QR code and logging in, you can view the received mess
 
 As always, feel free to file an issue on the [github repo](https://github.com/wechaty/wechaty-puppet-whatsapp/issues) for any feedback.
 
-`wechaty-puppet-whatsapp` is an open-source project. If you’re interested in contributing to this project, check out the contribution guidelines to learn more, and welcome to join the [Wechaty Developers' Home](https://github.com/wechaty/wechaty#raising_hand-join-us) or our Gitter channel <https://gitter.im/wechaty/wechaty> to join our community.
+`wechaty-puppet-whatsapp` is an open-source project. If you’re interested in contributing to this project, check out the contribution guidelines to learn more, and welcome to join the [Wechaty Developers' Home](https://github.com/wechaty/wechaty#raising_hand-join-us) or our Gitter network <https://gitter.im/wechaty/wechaty> to join our community.
 
 Here are some features to be implemented:
 
