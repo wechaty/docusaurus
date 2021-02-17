@@ -1,5 +1,5 @@
 ---
-slug: /events/gsoc/
+slug: /gsoc/
 title: Google Summer of Code
 sidebar_label: GSoC Index
 ---

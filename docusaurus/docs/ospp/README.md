@@ -1,5 +1,5 @@
 ---
-slug: /events/ospp/
+slug: /ospp/
 title: 开源软件供应链点亮计划
 sidebar_label: 开源软件供应链点亮计划 Index
 ---
