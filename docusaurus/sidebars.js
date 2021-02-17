@@ -54,7 +54,14 @@ module.exports = {
       'events/README',
       'events/bot5/README',
       'events/ospp/README',
-      'events/gsoc/README',
+      {
+        type: 'category',
+        label: 'Google Summer of Code',
+        items: [
+          'events/gsoc/README',
+          'events/gsoc/2021',
+        ],
+      },
       'events/gsod/README',
     ],
     'API Reference': [

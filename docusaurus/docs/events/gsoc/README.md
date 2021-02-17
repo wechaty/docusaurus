@@ -1,6 +1,7 @@
 ---
 slug: /events/gsoc/
 title: Google Summer of Code
+sidebar_label: GSoC Index
 ---
 
 ![Wechaty Summer of Code](/img/docs/gsoc/wechaty-gsoc.png)
