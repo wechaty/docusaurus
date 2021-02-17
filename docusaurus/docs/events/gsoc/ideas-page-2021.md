@@ -8,7 +8,7 @@ This page aggregates project ideas for Google Summer of Code 2021. See more info
 
 ## Introduction
 
-Below you can find project ideas which have been proposed for this year. New ideas may be proposed by interested mentors or students. Project ideas without potential mentors will be considered though applicants may need to work with the community and GSoC org admins to find mentors. To add a new project idea, see: [proposing project ideas](../proposing-new-project-ideas.md) .
+Below you can find project ideas which have been proposed for this year. New ideas may be proposed by interested mentors or students. Project ideas without potential mentors will be considered though applicants may need to work with the community and GSoC org admins to find mentors. To add a new project idea, see: [proposing project ideas](https://github.com/wechaty/wishlist/issues).
 
 ### Learn more from Community
 

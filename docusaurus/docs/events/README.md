@@ -1,5 +1,5 @@
 ---
-slug: '/events/'
+slug: /events/
 title: Events
 sidebar_label: Events Index
 ---
