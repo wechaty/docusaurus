@@ -53,7 +53,15 @@ module.exports = {
     'Events': [
       'events/README',
       'events/bot5/README',
-      'events/ospp/README',
+      {
+        type: 'category',
+        label: '开源软件供应链点亮计划',
+        items: [
+          'events/ospp/README',
+          'events/ospp/2021',
+          'events/ospp/2020',
+        ],
+      },
       {
         type: 'category',
         label: 'Google Summer of Code',
