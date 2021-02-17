@@ -471,7 +471,7 @@ We want to improve this module and make it better, including but not limited to 
 1. Appservice can not send files to wechat users. Now we make appservice send files and pictures to wechat users.
 1. Appservice can not display wechat bbob message directly. We need to convert bbob message to HTML and return it to the matrix server.
 
-- **Potential Mentor(s)**: [Roy](https://wechaty.js.org/contributors/yswtrue/)
+- **Potential Mentor(s)**: [Roy](https://wechaty.js.org/contributors/yswtrue/), [Eric Migicovsky](https://github.com/ericmigi/)
 - **Category**: Fun/Peripheral
 - **Skills Required**: TypeScript programming language, [Matrix] API
 - **Difficulty Level**: Medium
