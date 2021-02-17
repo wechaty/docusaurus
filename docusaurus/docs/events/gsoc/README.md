@@ -1,5 +1,5 @@
 ---
-slug: '/events/gsoc/'
+slug: /events/gsoc/
 title: Google Summer of Code
 ---
 

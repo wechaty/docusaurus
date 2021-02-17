@@ -1,5 +1,5 @@
 ---
-slug: '/events/ospp/'
+slug: /events/ospp/
 title: 开源软件供应链点亮计划
 ---
 

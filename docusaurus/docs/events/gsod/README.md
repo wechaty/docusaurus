@@ -1,5 +1,5 @@
 ---
-slug: '/events/gsod/'
+slug: /events/gsod/
 title: Google Season of Docs
 ---
 
