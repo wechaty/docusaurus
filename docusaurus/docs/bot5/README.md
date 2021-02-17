@@ -1,5 +1,5 @@
 ---
-slug: /events/bot5/
+slug: /bot5/
 title: BOT Friday Club
 ---
 
