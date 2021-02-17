@@ -13,7 +13,7 @@ Please follow [TOKEN 申请方法](https://github.com/padlocal/wechaty-puppet-pa
 
 ## History
 
-1. [Alpha Announcement: New Wechaty Puppet Service: PadLocal](https://wechaty.js.org/2020/10/12/padlocal-intro/)
+1. [Alpha Announcement: New Wechaty Puppet Service: PadLocal](https://wechaty.js.org/2020/10/12/puppet-padlocal-intro/)
 1. Testing Progress
 1. Beta Announcement
 1. Release Announcement
