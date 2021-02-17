@@ -50,6 +50,13 @@ module.exports = {
       'contributor-program/README',
       'contributor-program/publish-blog',
     ],
+    'Events': [
+      'events/README',
+      'events/bot5/README',
+      'events/ospp/README',
+      'events/gsoc/README',
+      'events/gsod/README',
+    ],
     'API Reference': [
       'api/README',
       'api/wechaty',
