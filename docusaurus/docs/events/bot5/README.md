@@ -40,5 +40,6 @@ Read our latest events blog posts from our website: <https://www.bot5.club>
 
 We have meetups every week, on Friday night.
 
-- Gitter Chat: <https://gitter.im/wechaty/wechaty>
-- YouTube Playlist: <https://www.youtube.com/playlist?list=PL8hd9KDTdarDJdNcARh5nInSkurE2wDXu>
+You can [join our Gitter](https://gitter.im/wechaty/wechaty) network if you aren’t already a member.
+
+We have also recorded our seminar via zoom, you can watch the playbacks from our YouTube Playlist: <https://www.youtube.com/playlist?list=PL8hd9KDTdarDJdNcARh5nInSkurE2wDXu>
