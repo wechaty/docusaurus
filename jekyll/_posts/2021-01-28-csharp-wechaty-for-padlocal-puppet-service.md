@@ -5,6 +5,7 @@ tags:
   - .NET-wechaty
   - .NET
   - Csharp
+  - sticky
 categories: project
 image: /assets/2021/01-csharp-wechaty-for-padlocal-puppet-service/dotnet-wechaty.png
 ---
