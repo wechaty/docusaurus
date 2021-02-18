@@ -86,7 +86,7 @@ Wechaty Puppet Whatsapp is built on top of [whatsapp-web.js](https://github.com/
 
 ## Learn more
 
-Other than WhatsApp, wechaty ecosystem also supports different instant messaging (IM) systems(such as TikTok, Dingding), your can refer to the following links for more details:
+Other than WhatsApp, wechaty ecosystem also supports different instant messaging (IM) systems(such as TikTok, Dingding), you can refer to the following links for more details:
 
 - [Wechat Offical Account](https://github.com/wechaty/wechaty-puppet-official-account)
 - [TikTok](https://wechaty.js.org/2020/10/13/wechaty-puppet-douyin-final-term/)
