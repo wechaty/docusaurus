@@ -51,26 +51,26 @@ module.exports = {
       'contributor-program/publish-blog',
     ],
     'Events': [
-      'events/README',
-      'events/bot5/README',
+      'events',
+      'bot5/README',
       {
         type: 'category',
         label: '开源软件供应链点亮计划',
         items: [
-          'events/ospp/README',
-          'events/ospp/2021',
-          'events/ospp/2020',
+          'ospp/README',
+          'ospp/2021',
+          'ospp/2020',
         ],
       },
       {
         type: 'category',
         label: 'Google Summer of Code',
         items: [
-          'events/gsoc/README',
-          'events/gsoc/2021',
+          'gsoc/README',
+          'gsoc/2021',
         ],
       },
-      'events/gsod/README',
+      'gsod/README',
     ],
     'API Reference': [
       'api/README',

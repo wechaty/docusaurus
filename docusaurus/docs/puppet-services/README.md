@@ -21,7 +21,7 @@ If you want to learn more about the concepts behind TOKEN, please read our blog 
 
 You can get a short-term free TOKEN for testing, get a long-term free TOKEN by joining our [Wechaty Contributor Program](/docs/contributor-program/), or buy a TOKEN from our Wechaty Puppet Service Providers.
 
-If you have any questions about the Wechaty Puppet Service, please feel free to talk to us at Wechaty Gitter room at <https://gitter.im/wechaty/wechaty>.
+If you have any questions about the Wechaty Puppet Service, please feel free to talk to us by [joining our Gitter](https://gitter.im/wechaty/wechaty) network if you aren’t already a member.
 
 ### 1. Free TOKEN (Short-term)
 

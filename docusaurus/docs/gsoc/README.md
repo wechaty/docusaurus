@@ -1,5 +1,5 @@
 ---
-slug: /events/gsoc/
+slug: /gsoc/
 title: Google Summer of Code
 sidebar_label: GSoC Index
 ---
@@ -20,8 +20,15 @@ Wechaty is applying to join GSoC in 2021 as its first time.
 
 ### Useful Links
 
-- [Wishlist: Propose a project idea](https://github.com/wechaty/wishlist/issues)
-- Mentor Registration: <https://forms.gle/RiXWabFfJLi8qErj8>
+- Wishlist: Propose a project idea <https://github.com/wechaty/wishlist/issues>
+- Mentor Registration <https://forms.gle/RiXWabFfJLi8qErj8>
+
+## What do mentors get?
+
+- A student who works full-time in the area of your interest for several months
+- Joint projects with Jenkins experts, lots of fun and ability to study something together
+- Limited-edition of swags from Google and Jenkins project
+- Maybe: Participation in GSoC Mentor Summit and other GSoC events/meetups
 
 ## For Mentors
 
