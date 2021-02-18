@@ -4,7 +4,6 @@ author: mukaiu
 categories: feature
 tags:
   - code
-  - featured
 image: /assets/2017/mukaiu-ding-code.jpg
 ---
 

@@ -5,8 +5,8 @@ categories: project
 image: /assets/2020/groupchat-assistant-bot-poc/header.png
 tags:
   - python
-  - soc2020
-  - soc
+  - summer-2020
+  - summer-of-wechaty
 ---
 
 ## 暑期2020

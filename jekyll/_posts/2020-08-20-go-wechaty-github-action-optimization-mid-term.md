@@ -3,8 +3,8 @@ title: "暑期2020 [Go-wechaty Github Action optimization] POC 成果展示"
 author: nebell
 categories: project
 tags:
-  - soc
-  - soc2020
+  - summer-of-wechaty
+  - summer-2020
   - go-wechaty
 image: /assets/2020/go-wechaty-github-action-optimization/header.jpg
 ---

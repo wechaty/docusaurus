@@ -7,7 +7,6 @@ tags:
   - honor
   - open-source
   - news
-  - sticky
 image: /assets/2020/12-open-source-award-wechaty/oss-award-rui.jpg 
 ---
 

@@ -5,9 +5,10 @@ categories: project
 image: /assets/2020/lark-puppet/wechaty-lark-final.png
 tags:
   - featured
-  - soc2020
-  - soc
+  - summer-2020
+  - summer-of-wechaty
   - lark
+  - featured
 ---
 
 ## 暑期2020

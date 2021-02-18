@@ -5,6 +5,7 @@ categories: announcement
 tags:
   - puppet-service
   - news
+  - sticky
 image: /assets/2021/01-wechaty-puppet-service/5-puppets.jpg
 ---
 
