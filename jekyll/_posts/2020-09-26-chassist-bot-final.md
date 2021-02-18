@@ -5,8 +5,8 @@ categories: project
 image: /assets/2020/chassist-final/logo.png
 tags:
   - python
-  - soc
-  - soc2020
+  - summer-of-wechaty
+  - summer-2020
 ---
 > Author: [@kxz18](https://github.com/kxz18)
 > Code: [@kxz18/CHAssisT](https://github.com/kxz18/CHAssisT)

@@ -4,6 +4,7 @@ author: univerone
 categories: announcement
 tags:
   - news
+  - sticky
   - release
 image: /assets/2021/02-publishment-of-wechaty-whatapp-puppet/logo.png
 ---

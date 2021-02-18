@@ -4,8 +4,8 @@ author: finctive
 categories: project
 tags:
   - plugins
-  - soc
-  - soc2020
+  - summer-of-wechaty
+  - summer-2020
   - go
   - go-wechaty
 image: /assets/2020/09-soc-go-plugin/2020-09-27-go-wechaty-plugin.png

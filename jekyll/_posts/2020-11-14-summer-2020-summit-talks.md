@@ -3,7 +3,7 @@ title: 开源专题论坛：Wechaty 的开源之路
 author: huan
 categories: event
 tags:
-  - soc
+  - summer-of-wechaty
   - 2020
   - news
   - talk

@@ -5,8 +5,8 @@ image: /assets/2020/meme-bot/09-27-wechaty-meme-bot-0001.png
 categories: project
 tags:
   - python
-  - soc
-  - soc2020
+  - summer-of-wechaty
+  - summer-2020
 ---
 
 <!--more-->
