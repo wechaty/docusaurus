@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # https://github.community/t/solved-workflows-and-git-logs/121289
       - uses: actions/cache@v2
         with:
           path: ~/.npm
@@ -30,6 +32,10 @@ jobs:
           node-version: 14
       - name: NPM Install
         run: npm install
+      - name: Debug
+        run: |
+          git log --since="1 week ago" --name-only --pretty=format: | sort | uniq
+          git log --since="1 week ago" --name-only --pretty=format: | sort | uniq | wc -l
       - name: NPM Test
         run: npm test
       - name: Install Dependencies
