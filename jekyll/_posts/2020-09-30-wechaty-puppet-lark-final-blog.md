@@ -8,7 +8,6 @@ tags:
   - summer-2020
   - summer-of-wechaty
   - lark
-  - featured
 ---
 
 ## 暑期2020
