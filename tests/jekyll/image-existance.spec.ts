@@ -127,7 +127,7 @@ test('all remote images linked from the post should be exist.', async t => {
   // void urlExist
   // console.info(remoteImageList)
 
-  const CONCURRENCY = 20
+  const CONCURRENCY = 10
 
   const chunkList = chunk(
     remoteImageList,
