@@ -4,7 +4,7 @@ author: huan
 categories: announcement
 tags:
   - award
-  - soc
+  - summer-of-wechaty
   - open-source
   - news
 image: /assets/2020/11-summer-2020-wechaty/summer-2020.png

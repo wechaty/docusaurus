@@ -4,18 +4,16 @@ import test   from 'tstest'
 
 import path         from 'path'
 import util         from 'util'
-import childProcess from 'child_process'
 
 import fs     from 'fs'
 import globCB from 'glob'
 import { loadFront } from 'yaml-front-matter'
 import { chunk } from 'lodash'
 
-import fetch  from 'node-fetch'
-import AbortController  from 'abort-controller'
-
 import {
   JEKYLL_FOLDER,
+  isUrlExist,
+  getChangedFileList,
 }                             from '../../src/jekyll/mod'
 
 import {
@@ -100,77 +98,29 @@ test('developer profile name must be GitHub username', async t => {
     return matches[1]
   }
 
-  /**
-   * https://stackoverflow.com/a/30219553/1123955
-   * curl -w '%{response_code}' 'https://api.github.com/users/zixiaxxx'
-   */
-  const userNameExist = async (userName: string) => {
-    const controller = new AbortController()
-    const timer = setTimeout(
-      () => controller.abort(),
-      10 * 1000,  // 10 seconds
-    )
+  const allContributorsFileList = (await glob(`${JEKYLL_FOLDER.contributors}/**/*`))
+    .map(stripRepoRoot)
 
-    try {
-      const options = {
-        method: 'HEAD',
-        signal: controller.signal,
-      }
+  const changedFileList = await getChangedFileList({
+    since: '1 week ago',
+  })
 
-      const response = await fetch(
-        `https://github.com/${userName}`,
-        options,
-      )
+  // console.info('changedFileList', changedFileList)
+  // console.info('allContributorsFileList', allContributorsFileList)
 
-      // console.info(response)
-      return response.ok
+  const urlList = allContributorsFileList
+    .filter(file => changedFileList.includes(file))
+    .map(pickName)
+    .map(name => `https://github.com/${name}`)
 
-    } catch (e) {
-      console.error(e)
-      return false
-    } finally {
-      clearTimeout(timer)
-    }
-  }
+  // console.info(urlList)
 
-  /**
-   * Git show files that were changed in the last 2 days
-   *  https://stackoverflow.com/a/7500276/1123955
-   *
-   * git log --since="1 month ago" --name-only --pretty=format: | sort | uniq | grep jekyll/_contributors
-   */
-  const exec = util.promisify(childProcess.exec)
-  const output = await exec([
-    'git log',
-    '--since="1 month ago"',
-    '--name-only',
-    '--pretty=format:',
-    '| sort',
-    '| uniq',
-    '| grep "jekyll/_contributors/"',
-    // Huan(202002) it seems that the GitHub HTTP has a limit that X request per Y seconds.
-    '| head -50',
-  ].join(' '))
-
-  const allContributorsFileList = await glob(`${JEKYLL_FOLDER.contributors}/**/*`)
-  const changedContributorsFileList = output.stdout
-    .split('\n')
-    .filter(s => !!s)
-
-  const allContributorsNameList     = allContributorsFileList.map(pickName)
-  const changedContributorsNameList = changedContributorsFileList.map(pickName)
-
-  // filter out the name that has been changed.
-  // e.g. name_1 -> name_2
-  const nameList = changedContributorsNameList
-    .filter(name => allContributorsNameList.includes(name))
-
-  const nameListChunk = chunk(nameList, 10)
+  const nameListChunk = chunk(urlList, 10)
 
   for (const chunk of nameListChunk) {
     process.stdout.write(Array(chunk.length + 1).join('.'))
     const resultList = await Promise.all(
-      chunk.map(userNameExist)
+      chunk.map(isUrlExist)
     )
 
     // await new Promise(resolve => setTimeout(resolve, 5000))
@@ -186,5 +136,5 @@ test('developer profile name must be GitHub username', async t => {
   }
 
   console.info()
-  t.pass(`${nameList.length} contributors profile names checked`)
+  t.pass(`${urlList.length} contributors profile names checked`)
 })

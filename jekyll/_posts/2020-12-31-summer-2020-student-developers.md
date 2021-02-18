@@ -4,8 +4,9 @@ author: huan
 categories: announcement
 tags:
   - news
-  - soc2020
-  - soc
+  - summer-2020
+  - summer-of-wechaty
+  - featured
 image: /assets/2020/12-summer-2020-student-developers/award.png
 ---
 

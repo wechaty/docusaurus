@@ -4,9 +4,8 @@ author: roxanne718
 categories: project
 image: /assets/2020/lark-puppet/wechaty-lark-mid-term.png
 tags:
-  - featured
-  - soc2020
-  - soc
+  - summer-2020
+  - summer-of-wechaty
   - lark
 ---
 

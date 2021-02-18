@@ -5,8 +5,8 @@ categories: project
 image: /assets/2020/go-wechaty-github-action-optimization-poc/header.jpg
 tags:
   - go-wechaty
-  - soc
-  - soc2020
+  - summer-of-wechaty
+  - summer-2020
 ---
 
 > 作者: [TangGuangbin](https://github.com/Nebell/)

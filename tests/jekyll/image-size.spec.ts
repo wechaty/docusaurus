@@ -34,7 +34,7 @@ test('image size should be fit for the web (no more than 1MB and 1920x1080)', as
     const fit = dim.width <= MAX_WIDTH && size <= MAX_SIZE
 
     if (!fit) {
-      console.error('use "scripts/fit-image.sh <FILE>" to adjust it to fit')
+      console.error('\n\nTIP: use "scripts/fit-image.sh <FILE>" to adjust it to fit\n\n')
       t.fail(`"${stripRepoRoot(file)}" (width: ${dim.width}, size: ${size}) exceed the maximum limitation: width<=${MAX_WIDTH} size<=${MAX_SIZE}`)
     }
   }

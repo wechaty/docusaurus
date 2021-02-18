@@ -4,7 +4,6 @@ author: why2lyj
 categories: project
 tags:
   - python
-  - featured
 image: /assets/2020/python-wechaty-cps-bot/jdyangli.jpg
 ---
 
