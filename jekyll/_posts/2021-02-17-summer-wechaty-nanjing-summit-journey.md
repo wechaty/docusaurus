@@ -3,9 +3,10 @@ title: 一次愉快的南京开源峰会之旅
 author: univerone
 categories: story
 tags:
-  - soc
+  - summer-2020
+  - summer-of-wechaty
   - open-source
-  - news
+  - talk
 image: /assets/2021/02-summer-wechaty-nanjing-summit-journey/front.jpg
 ---
 
