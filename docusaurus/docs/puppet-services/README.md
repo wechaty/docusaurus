@@ -15,6 +15,8 @@ export WECHATY_PUPPET_SERVICE_TOKEN="__TOKEN__"
 
 > You can switch between different Wechaty Puppet Services by changing your TOKEN. All your source code should work between different tokens without any changes.
 
+## What is Wechaty Puppet Service
+
 If you want to learn more about the concepts behind TOKEN, please read our blog post: [Introducing Wechaty Puppet Service](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/)
 
 ## Get A Token
