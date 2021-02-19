@@ -6,6 +6,9 @@ sidebar_label: Donut
 - Repo: <https://github.com/juzibot/donut-tester>
 - Provider: [@juzibot](https://github.com/juzibot)
 - Support & Feedback: <https://github.com/juzibot/donut-tester/issues>
+- Service-level Agreement (SLA): To-be-added
+- User Agreements: To-be-added
+- Privacy Policy: To-be-added
 
 ## Sunsetting Notice
 
