@@ -12,6 +12,7 @@ sidebar_label: PadLocal
 
 ## Known Issues
 
+- 新注册微信不能登陆报“SERVER_ERROR: 2 UNKNOWN: [tid:bec7b588] wechat bad request erro” #46: <https://github.com/padlocal/wechaty-puppet-padlocal/issues/46>
 - PadLocal: can not login after scan the QR code if the IP is not in China #62: <https://github.com/wechaty/puppet-services/issues/62>
 
 ## How to buy(apply)
