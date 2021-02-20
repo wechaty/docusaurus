@@ -12,10 +12,6 @@ It takes a community to design, build, and ship great chatbot.
 
 Building an chatbot that on top of Wechaty? Apply for our Contributor Program! The possibilities are endless, and you enjoy the kudos.
 
-If you are looking for the contributor program from Juzi.BOT, please go to visit the great introduction documentation at <https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty/>
-
-[![Juzi.BOT Contributor Program](https://img.shields.io/badge/Wechaty%20Contributor%20Program-Juzi.BOT-orange.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty/)
-
 ## Table of Contents
 
 - Wechaty Contributor Program Suppliers
@@ -28,6 +24,8 @@ If you are looking for the contributor program from Juzi.BOT, please go to visit
 1. Rock
 1. PadLocal
 1. Donut
+
+Learn more about Wechaty Puppet Services from our [document](https://wechaty.js.org/docs/puppet-services/) and [blog post](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/).
 
 ## 2. Support the Wechaty Project
 
@@ -64,3 +62,9 @@ Add this Wechaty badge to your README:
 ```
 
 Then add it to the list at [Project using Wechaty](http://wechaty.js.org/docs/case-study/projects-using-wechaty)
+
+## Third Party Supports for Wechaty Contributors
+
+### Juzi.BOT
+
+If you are looking for the contributor program from Juzi.BOT, please go to visit the great introduction documentation at <https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty/>
