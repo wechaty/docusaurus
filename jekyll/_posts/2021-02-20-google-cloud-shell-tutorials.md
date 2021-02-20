@@ -1,7 +1,7 @@
 ---
 title: Google Cloud Shell Tutorials for Wechaty
 author: huan
-categories: tutorials
+categories: tutorial
 tags:
   - google-cloud-shell
   - getting-started
