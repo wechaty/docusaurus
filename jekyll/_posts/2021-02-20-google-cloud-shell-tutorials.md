@@ -14,9 +14,9 @@ Today, We have created a Google Cloud Shell Tutorial for easy getting started wi
 
 [![Open in Cloud Shell][shell_img]][shell_link]
 
-> Button generated via [open-in-cloud-shell](https://cloud.google.com/shell/docs/open-in-cloud-shell)
+The above button will take you to the Google Cloud Shell, open our tutorial in the right panel.
 
-The above button will take you to the Google Cloud Shell, open our tutorial in the right panel. Please follow it to enjoy playing with our Wechaty ding-dong BOT!
+Please follow it to enjoy playing with our Wechaty ding-dong BOT!
 
 ![Google Cloud Shell Tutorials for Wechaty Getting Started][screenshot_img]
 
@@ -31,7 +31,9 @@ The above button will take you to the Google Cloud Shell, open our tutorial in t
 >  
 > A tutorial is a set of instructions written in Markdown. Cloud Shell creates in-context tutorials from these Markdown files by parsing the text into steps and substeps that are then displayed in a panel in Google Cloud Console.  
 >  
-> Source: [Writing tutorials in Cloud Shell](https://cloud.google.com/shell/docs/cloud-shell-tutorials/tutorials)
+> &mdash; [Writing tutorials in Cloud Shell](https://cloud.google.com/shell/docs/cloud-shell-tutorials/tutorials)
+
+- Button generated via [open-in-cloud-shell](https://cloud.google.com/shell/docs/open-in-cloud-shell)
 
 [shell_img]: https://gstatic.com/cloudssh/images/open-btn.svg
 [shell_link]: https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2Fwechaty%2Fwechaty-getting-started&cloudshell_open_in_editor=examples/ding-dong-bot.ts&cloudshell_workspace=.&cloudshell_tutorial=examples/tutorials/google-cloud-shell-tutorial.md
