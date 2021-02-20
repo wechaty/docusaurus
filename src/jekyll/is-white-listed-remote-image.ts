@@ -3,6 +3,7 @@ const URL_WHITE_LIST_REGEX = [
   /dockeri\.co\/image/i,
   /github\.com\/.*\/workflows\//i,
   /githubusercontent\.com/i,
+  /gstatic\.com/i,
   /herokucdn\.com/i,
   /images\.microbadger\.com/i,
   /img\.shields\.io/i,
