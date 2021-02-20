@@ -5,6 +5,8 @@ categories: tutorials
 tags:
   - google-cloud-shell
   - getting-started
+  - news
+  - featured
 image: /assets/2021/02-google-cloud-shell-tutorials/google-cloud-platform.jpg
 ---
 
