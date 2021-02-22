@@ -74,7 +74,7 @@ The `WECHATY_PUPPET` environment will be used as the Wechaty Puppet Provider NPM
 
 ```sh
 export WECHATY_PUPPET=wechaty-puppet-whatsapp
-node -r ts-node/register bot.ts
+ts-node bot.ts
 ```
 
 The above shell commands set the [wechaty-puppet-whatsapp](https://github.com/wechaty/wechaty-puppet-whatsapp) to the environment variable `WECHATY_PUPPET` and our Wechaty system will use it.
@@ -258,7 +258,7 @@ Using Wechaty Puppet Service is very easy. Just set the `WECHATY_PUPPET` to `wec
 ```sh
 export WECHATY_PUPPET=wechaty-puppet-service
 export WECHATY_PUPPET_SERVICE_TOKEN=${WECHATY_PUPPET_SERVICE_TOKEN}
-node -r ts-node/register bot.ts
+ts-node bot.ts
 ```
 
 You may have a question of what is the value of `WECHATY_PUPPET_SERVICE_TOKEN`? The answer is that the value should be the `WECHATY_TOKEN` when you set up your Wechaty Puppet Service Gateway in the previous step.
