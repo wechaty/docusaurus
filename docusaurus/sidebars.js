@@ -46,6 +46,17 @@ module.exports = {
       'puppet-services/paimon',
       'puppet-services/donut',
     ],
+    'Polyglot Wechaty': [
+      'polyglot/README',
+      'polyglot/python',
+      'polyglot/go',
+      'polyglot/java',
+      'polyglot/scala',
+      'polyglot/php',
+      'polyglot/dotnet',
+      'polyglot/rust',
+    ],
+
     'Contributor Program': [
       'contributor-program/README',
       'contributor-program/publish-blog',
