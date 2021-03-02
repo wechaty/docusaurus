@@ -6,9 +6,9 @@ sidebar_label: WXWork
 - Repo: <https://github.com/juzibot/wxwork-tester>
 - Provider: [@juzibot](https://github.com/juzibot)
 - Support & Feedback: <https://github.com/juzibot/wxwork-tester/issues>
-- Service Level Agreement (SLA): To-be-added
-- End User License Agreement (EULA): To-be-added
+- Term of Service (ToS): To-be-added
 - Privacy Policy: To-be-added
+- Service Level Agreement (SLA): To-be-added
 
 ## How to buy(apply)
 
