@@ -42,8 +42,8 @@ async function onScan (
   qrcode: undefined | string,
   status: ScanStatus,
 ) {
-  console.info(`Scan QR Code to login: (status:${status})`)
-  console.info(`https://wechaty.js.org/qrcode/${encodeURIComponent(qrcode)}`)
+  console.info('Scan QR Code to login, status:', status)
+  console.info('https://wechaty.js.org/qrcode/' + encodeURIComponent(qrcode))
 }
 
 bot.on('scan', onScan)
@@ -58,8 +58,8 @@ async function onScan (
   qrcode,
   status,
 ) {
-  console.info(`Scan QR Code to login: (status:${status})`)
-  console.info(`https://wechaty.js.org/qrcode/${encodeURIComponent(qrcode)}`)
+  console.info('Scan QR Code to login, status:', status)
+  console.info('https://wechaty.js.org/qrcode/' + encodeURIComponent(qrcode))
 }
 
 bot.on('scan', onScan)
@@ -148,7 +148,7 @@ TODO: introducing `login` event
 import { Contact } from 'wechaty'
 
 function onLogin (bot: Contact) {
-  console.info(`User ${user} logged in`)
+  console.info('Bot logged in:', bot)
 }
 
 bot.on('login', onLogin)
@@ -160,7 +160,7 @@ bot.start()
 
 ```js
 function onLogin (bot) {
-  console.info(`User ${user} logged in`)
+  console.info('Bot logged in:', bot)
 }
 
 bot.on('login', onLogin)
@@ -331,7 +331,7 @@ TODO: introducing `message` event
 import { Message } from 'wechaty'
 
 function onMessage (message: Message) {
-  console.info(`New message received: ${message}`)
+  console.info('New message:', message)
 }
 
 bot.on('message', onMessage)
@@ -343,7 +343,7 @@ bot.start()
 
 ```js
 function onMessage (message) {
-  console.info(`New message received: ${message}`)
+  console.info('New message:', message)
 }
 
 bot.on('message', onMessage)
