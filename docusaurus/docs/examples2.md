@@ -27,27 +27,7 @@ Or check out the [sandbox](https://codesandbox.io/s/github/wechaty/wechaty-getti
 
 It does not require a build system or a view framework and exists to show the raw Redux API used with ES5.
 
-## Counter
-
-Run the [Counter](https://github.com/reduxjs/redux/tree/master/examples/counter) example:
-
-```sh
-git clone https://github.com/reduxjs/redux.git
-
-cd redux/examples/counter
-npm install
-npm start
-```
-
-Or check out the [sandbox](https://codesandbox.io/s/github/reduxjs/redux/tree/master/examples/counter):
-
-<iframe class="codesandbox"src="https://codesandbox.io/embed/github/reduxjs/redux/tree/master/examples/counter"sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
-
-This is the most basic example of using Redux together with React. For simplicity, it re-renders the React component manually when the store changes. In real projects, you will likely want to use the highly performant [React Redux](https://github.com/reduxjs/react-redux) bindings instead.
-
-This example includes tests.
-
 ## More Examples
 
-You can find more examples in the [Redux Apps and Examples](https://github.com/markerikson/redux-ecosystem-links/blob/master/apps-and-examples.md)
-page of the [Redux Addons Catalog](https://github.com/markerikson/redux-ecosystem-links).
+You can find more examples in the [Wechaty Getting Started Examples](https://github.com/wechaty/wechaty-getting-started/examples/)
+page.
