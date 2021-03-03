@@ -1,6 +1,7 @@
 ---
 slug: /gsod/
 title: Google Season of Docs
+sidebar_label: 'GSoD: Index'
 ---
 
 ## Google Season of Docs

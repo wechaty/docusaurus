@@ -1,7 +1,7 @@
 ---
 slug: /contributor-program/
 title: Wechaty Contributor Program
-sidebar_label: Contributor Program Index
+sidebar_label: 'Contributor Program: Index'
 ---
 
 The _Wechaty Contributor Program_ provides valuable supports for qualified contributors.

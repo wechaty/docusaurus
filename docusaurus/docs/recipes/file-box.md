@@ -1,5 +1,5 @@
 ---
-title: 'Working with Files'
+title: 'Processing Files'
 ---
 
 import Tabs from '@theme/Tabs';
@@ -28,7 +28,7 @@ import TabItem from '@theme/TabItem';
 import { FileBox } from 'wechaty'
 
 const fileBox = FileBox.fromUrl('https://wechaty.js.org/img/icon.png')
-bot.say(fileBox)
+await bot.say(fileBox)
 ```
 
 </TabItem>
@@ -38,7 +38,7 @@ bot.say(fileBox)
 const { FileBox } = require('wechaty')
 
 const fileBox = FileBox.fromUrl('https://wechaty.js.org/img/icon.png')
-bot.say(fileBox)
+await bot.say(fileBox)
 ```
 
 </TabItem>

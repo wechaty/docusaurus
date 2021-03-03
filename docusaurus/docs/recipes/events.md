@@ -14,7 +14,7 @@ The Wechaty Events are all the same acrossing Polyglot Wechaty programs!
 
 ## Basic Events
 
-### `scan`: QR code
+### `scan` Event: QR code
 
 TODO: introducing `scan` event
 
@@ -47,7 +47,7 @@ async function onScan (
 }
 
 bot.on('scan', onScan)
-bot.start()
+await bot.start()
 ```
 
 </TabItem>
@@ -63,7 +63,7 @@ async function onScan (
 }
 
 bot.on('scan', onScan)
-bot.start()
+await bot.start()
 ```
 
 </TabItem>
@@ -75,7 +75,7 @@ def onScan (qrcode, status):
     print('https://wechaty.js.org/qrcode/{}'.format(qrcode))
 
 bot.on('scan', onScan)
-bot.start()
+await bot.start()
 ```
 
 </TabItem>
@@ -123,7 +123,7 @@ bot.start()
 </TabItem>
 </Tabs>
 
-### `login`: bot contact
+### `login` Event: bot contact
 
 TODO: introducing `login` event
 
@@ -152,7 +152,7 @@ function onLogin (bot: Contact) {
 }
 
 bot.on('login', onLogin)
-bot.start()
+await bot.start()
 ```
 
 </TabItem>
@@ -164,7 +164,7 @@ function onLogin (bot) {
 }
 
 bot.on('login', onLogin)
-bot.start()
+await bot.start()
 ```
 
 </TabItem>
@@ -222,7 +222,7 @@ bot.on('login', onLogin)
 </TabItem>
 </Tabs>
 
-### `logout`
+### `logout` Event
 
 TODO: introducing `logout` event
 
@@ -306,7 +306,7 @@ TODO: introducing `logout` event
 </TabItem>
 </Tabs>
 
-### `message`
+### `message` Event
 
 TODO: introducing `message` event
 
@@ -335,7 +335,7 @@ function onMessage (message: Message) {
 }
 
 bot.on('message', onMessage)
-bot.start()
+await bot.start()
 ```
 
 </TabItem>
@@ -347,7 +347,7 @@ function onMessage (message) {
 }
 
 bot.on('message', onMessage)
-bot.start()
+await bot.start()
 ```
 
 </TabItem>
@@ -405,7 +405,7 @@ bot.on('message', onMessage)
 </TabItem>
 </Tabs>
 
-### `friendship`: friend requests
+### `friendship` Event: friend requests
 
 TODO: introducing `friendship` event
 
@@ -491,7 +491,7 @@ TODO: introducing `friendship` event
 
 ## Room Events
 
-### `room-topic`: messages
+### `room-topic` Event: messages
 
 TODO: introducing `room-topic` event
 
@@ -575,7 +575,7 @@ TODO: introducing `room-topic` event
 </TabItem>
 </Tabs>
 
-### `room-invite`: messages
+### `room-invite` Event: messages
 
 TODO: introducing `room-invite` event
 
@@ -659,7 +659,7 @@ TODO: introducing `room-invite` event
 </TabItem>
 </Tabs>
 
-### `room-join`: messages
+### `room-join` Event: messages
 
 TODO: introducing `room-join` event
 
@@ -743,7 +743,7 @@ TODO: introducing `room-join` event
 </TabItem>
 </Tabs>
 
-### `room-leave`: messages
+### `room-leave` Event: messages
 
 TODO: introducing `room-leave` event
 
@@ -829,9 +829,9 @@ TODO: introducing `room-leave` event
 
 ## System events
 
-### `dong`: messages
+### `ready` Event
 
-TODO: introducing `dong` event
+TODO: introducing `ready` event
 
 <Tabs
   defaultValue="ts"
@@ -913,7 +913,7 @@ TODO: introducing `dong` event
 </TabItem>
 </Tabs>
 
-### `heartbeat`: messages
+### `heartbeat` Event: messages
 
 TODO: introducing `heartbeat` event
 
@@ -997,261 +997,9 @@ TODO: introducing `heartbeat` event
 </TabItem>
 </Tabs>
 
-### `dirty`: messages
-
-TODO: introducing `dirty` event
-
-<Tabs
-  defaultValue="ts"
-  values={[
-    { label: 'TypeScript',  value: 'ts', },
-    { label: 'JavaScript',  value: 'js', },
-    { label: 'Python',      value: 'py', },
-    { label: 'Go',          value: 'go', },
-    { label: 'Java',        value: 'java', },
-    { label: 'PHP',         value: 'php', },
-    { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
-    { label: 'Rust',        value: 'rust', },
-  ]
-}>
-
-<TabItem value="ts">
-
-```ts
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="js">
-
-```js
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="py">
-
-```py
-# TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="java">
-
-```java
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="go">
-
-```go
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="php">
-
-```php
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="csharp">
-
-```csharp
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="scala">
-
-```scala
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="rust">
-
-```rust
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-</Tabs>
-
-### `reset`: messages
-
-TODO: introducing `reset` event
-
-<Tabs
-  defaultValue="ts"
-  values={[
-    { label: 'TypeScript',  value: 'ts', },
-    { label: 'JavaScript',  value: 'js', },
-    { label: 'Python',      value: 'py', },
-    { label: 'Go',          value: 'go', },
-    { label: 'Java',        value: 'java', },
-    { label: 'PHP',         value: 'php', },
-    { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
-    { label: 'Rust',        value: 'rust', },
-  ]
-}>
-
-<TabItem value="ts">
-
-```ts
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="js">
-
-```js
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="py">
-
-```py
-# TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="java">
-
-```java
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="go">
-
-```go
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="php">
-
-```php
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="csharp">
-
-```csharp
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="scala">
-
-```scala
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="rust">
-
-```rust
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-</Tabs>
-
-### `error`
+### `error` Event
 
 TODO: introducing `error` event
-
-<Tabs
-  defaultValue="ts"
-  values={[
-    { label: 'TypeScript',  value: 'ts', },
-    { label: 'JavaScript',  value: 'js', },
-    { label: 'Python',      value: 'py', },
-    { label: 'Go',          value: 'go', },
-    { label: 'Java',        value: 'java', },
-    { label: 'PHP',         value: 'php', },
-    { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
-    { label: 'Rust',        value: 'rust', },
-  ]
-}>
-
-<TabItem value="ts">
-
-```ts
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="js">
-
-```js
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="py">
-
-```py
-# TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="java">
-
-```java
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="go">
-
-```go
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="php">
-
-```php
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="csharp">
-
-```csharp
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="scala">
-
-```scala
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="rust">
-
-```rust
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-</Tabs>
-
-### `ready`
-
-TODO: introducing `ready` event
 
 <Tabs
   defaultValue="ts"
