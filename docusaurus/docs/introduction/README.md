@@ -17,7 +17,7 @@ title: Wechaty Introduction
 - [Concepts](concepts.md)
 - [Motivations](motivations.md)
 - [Alternatives](alternatives.md)
-- [Multi Languages](multi-language.md)
+- [Polyglot Languages](polyglot/README.md)
 - [Multi IMs](puppet.md)
 - **Examples**
       'examples',
