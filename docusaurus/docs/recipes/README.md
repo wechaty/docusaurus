@@ -1,7 +1,7 @@
 ---
 slug: /recipes/
 title: Wechaty Recipes
-sidebar_label: 'Recipes Index'
+sidebar_label: 'Recipes: Index'
 ---
 
 <!-- how-to/cookbook - Explains how to accomplish a specific task. -->

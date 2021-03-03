@@ -1,7 +1,7 @@
 ---
 slug: /polyglot/
 title: 'Polyglot Wechaty'
-sidebar_label: 'Polyglot Wechaty Index'
+sidebar_label: 'Polyglot: Index'
 ---
 
 [![TypeScript Wechaty](https://img.shields.io/badge/Wechaty-TypeScript-blue)](https://github.com/wechaty/wechaty)

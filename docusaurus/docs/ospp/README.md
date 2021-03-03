@@ -1,7 +1,7 @@
 ---
 slug: /ospp/
 title: 开源软件供应链点亮计划
-sidebar_label: 开源软件供应链点亮计划 Index
+sidebar_label: '开源软件供应链点亮计划: Index'
 ---
 
 ![Wechaty Open Source Promotion Plan - 开源软件供应链点亮计划](/img/docs/ospp/ospp-logo.png)

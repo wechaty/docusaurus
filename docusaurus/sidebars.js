@@ -21,7 +21,7 @@ module.exports = {
       'tutorials/video-tutorial',
       CHATBOT_1_TO_2,
     ],
-    'Polyglot Wechaty': [
+    'Polyglot': [
       'polyglot/README',
       'polyglot/typescript',
       'polyglot/python',
