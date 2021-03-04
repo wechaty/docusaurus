@@ -29,7 +29,7 @@ TODO: introducing `scan` event
     { label: 'Java',        value: 'java', },
     { label: 'PHP',         value: 'php', },
     { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
+    { label: 'C#',          value: 'csharp', },
     { label: 'Rust',        value: 'rust', },
   ]
 }>
@@ -141,7 +141,7 @@ TODO: introducing `login` event
     { label: 'Java',        value: 'java', },
     { label: 'PHP',         value: 'php', },
     { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
+    { label: 'C#',          value: 'csharp', },
     { label: 'Rust',        value: 'rust', },
   ]
 }>
@@ -241,7 +241,7 @@ TODO: introducing `logout` event
     { label: 'Java',        value: 'java', },
     { label: 'PHP',         value: 'php', },
     { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
+    { label: 'C#',          value: 'csharp', },
     { label: 'Rust',        value: 'rust', },
   ]
 }>
@@ -326,7 +326,7 @@ TODO: introducing `message` event
     { label: 'Java',        value: 'java', },
     { label: 'PHP',         value: 'php', },
     { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
+    { label: 'C#',          value: 'csharp', },
     { label: 'Rust',        value: 'rust', },
   ]
 }>
@@ -426,7 +426,7 @@ TODO: introducing `friendship` event
     { label: 'Java',        value: 'java', },
     { label: 'PHP',         value: 'php', },
     { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
+    { label: 'C#',          value: 'csharp', },
     { label: 'Rust',        value: 'rust', },
   ]
 }>
@@ -513,7 +513,7 @@ TODO: introducing `room-topic` event
     { label: 'Java',        value: 'java', },
     { label: 'PHP',         value: 'php', },
     { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
+    { label: 'C#',          value: 'csharp', },
     { label: 'Rust',        value: 'rust', },
   ]
 }>
@@ -598,7 +598,7 @@ TODO: introducing `room-invite` event
     { label: 'Java',        value: 'java', },
     { label: 'PHP',         value: 'php', },
     { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
+    { label: 'C#',          value: 'csharp', },
     { label: 'Rust',        value: 'rust', },
   ]
 }>
@@ -683,7 +683,7 @@ TODO: introducing `room-join` event
     { label: 'Java',        value: 'java', },
     { label: 'PHP',         value: 'php', },
     { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
+    { label: 'C#',          value: 'csharp', },
     { label: 'Rust',        value: 'rust', },
   ]
 }>
@@ -768,7 +768,7 @@ TODO: introducing `room-leave` event
     { label: 'Java',        value: 'java', },
     { label: 'PHP',         value: 'php', },
     { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
+    { label: 'C#',          value: 'csharp', },
     { label: 'Rust',        value: 'rust', },
   ]
 }>
@@ -855,7 +855,7 @@ TODO: introducing `ready` event
     { label: 'Java',        value: 'java', },
     { label: 'PHP',         value: 'php', },
     { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
+    { label: 'C#',          value: 'csharp', },
     { label: 'Rust',        value: 'rust', },
   ]
 }>
@@ -940,7 +940,7 @@ TODO: introducing `heartbeat` event
     { label: 'Java',        value: 'java', },
     { label: 'PHP',         value: 'php', },
     { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
+    { label: 'C#',          value: 'csharp', },
     { label: 'Rust',        value: 'rust', },
   ]
 }>
@@ -1025,7 +1025,7 @@ TODO: introducing `error` event
     { label: 'Java',        value: 'java', },
     { label: 'PHP',         value: 'php', },
     { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
+    { label: 'C#',          value: 'csharp', },
     { label: 'Rust',        value: 'rust', },
   ]
 }>
