@@ -1,7 +1,7 @@
 ---
 slug: /case-study/
-sidebar_label: Case Study Index
 title: Cast Study
+sidebar_label: 'Case Study: Index'
 ---
 
 <!-- case study - Shows how users successfully employed this technology in the real world. -->

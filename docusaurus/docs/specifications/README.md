@@ -1,7 +1,7 @@
 ---
 slug: /specifications/
-title: 'Wechaty Specifications: Index'
-sidebar_label: 'Specification Index'
+title: 'Wechaty Specifications'
+sidebar_label: 'Specification: Index'
 ---
 
 Wechaty community need clear specifications for a healthy ecosystem.

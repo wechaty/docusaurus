@@ -4,7 +4,6 @@ module.exports = {
   docs: {
     Introduction: [
       'introduction/README',
-      'introduction/multi-language',
       'introduction/puppet',
       'introduction/motivations',
       'introduction/concepts',
@@ -22,9 +21,25 @@ module.exports = {
       'tutorials/video-tutorial',
       CHATBOT_1_TO_2,
     ],
+    'Polyglot': [
+      'polyglot/README',
+      'polyglot/typescript',
+      'polyglot/python',
+      'polyglot/go',
+      'polyglot/java',
+      'polyglot/scala',
+      'polyglot/php',
+      'polyglot/dotnet',
+      'polyglot/rust',
+    ],
     Recipes: [
       'recipes/README',
-      'recipes/configure-wechaty',
+      'recipes/wechaty',
+      'recipes/events',
+      'recipes/file-box',
+      'recipes/friendship',
+      'recipes/contact',
+      'recipes/room',
       'recipes/usage-with-typescript',
       'recipes/usage-with-docker',
       'recipes/usage-with-heroku',
@@ -90,7 +105,7 @@ module.exports = {
     ],
     Others: [
       'changelog',
-      'others/cheatsheet',
+      'cheatsheet',
       'awesome-wechaty',
       'advanced',
       'resources',

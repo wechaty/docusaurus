@@ -97,7 +97,7 @@ namespace dotnet_wechaty_getting_start
             await bot
                 .OnScan((string qrcode, ScanStatus status, string? data) =>
                 {
-                    const string QrcodeServerUrl = "https://wechaty.github.io/qrcode/";
+                    const string QrcodeServerUrl = "https://wechaty.js.org/qrcode/";
                     if (status == ScanStatus.Waiting || status == ScanStatus.Timeout)
                     {
                         var qrcodeImageUrl = QrcodeServerUrl + qrcode;

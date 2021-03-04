@@ -116,9 +116,14 @@ module.exports = {
     },
     prism: {
       additionalLanguages: [
-        'csharp',
+        'python',
+        'go',
+        'java',
         'kotlin',
         'scala',
+        'php',
+        'csharp',
+        'rust',
       ],
     },
   },

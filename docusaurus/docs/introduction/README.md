@@ -1,7 +1,7 @@
 ---
 slug: /introduction/
-sidebar_label: Introduction Index
 title: Wechaty Introduction
+sidebar_label: 'Introduction: Index'
 ---
 
 ![Wechaty is a RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
@@ -17,7 +17,7 @@ title: Wechaty Introduction
 - [Concepts](concepts.md)
 - [Motivations](motivations.md)
 - [Alternatives](alternatives.md)
-- [Multi Languages](multi-language.md)
+- [Polyglot Languages](polyglot/README.md)
 - [Multi IMs](puppet.md)
 - **Examples**
       'examples',

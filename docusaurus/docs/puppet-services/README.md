@@ -1,7 +1,7 @@
 ---
 slug: /puppet-services/
 title: Puppet Services
-sidebar_label: Puppet Services Index
+sidebar_label: 'Puppet Services: Index'
 ---
 
 For different instant messaging (IM) systems (such as WeChat, Whatsapp, and TikTok), the Wechaty community builds separate RPA modules for each, and we call those modules [Wechaty Puppet](https://github.com/wechaty/wechaty-puppet).
