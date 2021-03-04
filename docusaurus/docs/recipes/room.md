@@ -18,7 +18,7 @@ import TabItem from '@theme/TabItem';
     { label: 'Java',        value: 'java', },
     { label: 'PHP',         value: 'php', },
     { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
+    { label: 'C#',          value: 'csharp', },
     { label: 'Rust',        value: 'rust', },
   ]
 }>
@@ -101,7 +101,7 @@ import TabItem from '@theme/TabItem';
     { label: 'Java',        value: 'java', },
     { label: 'PHP',         value: 'php', },
     { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
+    { label: 'C#',          value: 'csharp', },
     { label: 'Rust',        value: 'rust', },
   ]
 }>
@@ -184,7 +184,7 @@ import TabItem from '@theme/TabItem';
     { label: 'Java',        value: 'java', },
     { label: 'PHP',         value: 'php', },
     { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
+    { label: 'C#',          value: 'csharp', },
     { label: 'Rust',        value: 'rust', },
   ]
 }>
@@ -267,7 +267,7 @@ import TabItem from '@theme/TabItem';
     { label: 'Java',        value: 'java', },
     { label: 'PHP',         value: 'php', },
     { label: 'Scala',       value: 'scala', },
-    { label: 'CSharp',      value: 'csharp', },
+    { label: 'C#',          value: 'csharp', },
     { label: 'Rust',        value: 'rust', },
   ]
 }>
