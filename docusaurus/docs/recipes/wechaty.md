@@ -12,6 +12,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
@@ -34,6 +35,7 @@ import { Wechaty } from 'wechaty'
 async function main () {
   const bot = new Wechaty()
   // TODO: init your bot at here...
+  // bot.on('scan', console.info)
   await bot.start()
 }
 
@@ -50,6 +52,7 @@ const { Wechaty } = require('wechaty')
 async function main () {
   const bot = new Wechaty()
   // TODO: init your bot at here...
+  // bot.on('scan', console.info)
   await bot.start()
 }
 

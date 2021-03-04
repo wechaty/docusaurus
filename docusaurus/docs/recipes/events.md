@@ -19,6 +19,7 @@ The Wechaty Events are all the same acrossing Polyglot Wechaty programs!
 TODO: introducing `scan` event
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
@@ -42,7 +43,7 @@ async function onScan (
   qrcode: undefined | string,
   status: ScanStatus,
 ) {
-  console.info('Scan QR Code to login, status:', status)
+  console.info('Scan QR Code to login, status:', status, ScanStatus[status])
   console.info('https://wechaty.js.org/qrcode/' + encodeURIComponent(qrcode))
 }
 
@@ -54,11 +55,13 @@ await bot.start()
 <TabItem value="js">
 
 ```ts
+const { ScanStatus } = require('wechaty')
+
 async function onScan (
   qrcode,
   status,
 ) {
-  console.info('Scan QR Code to login, status:', status)
+  console.info('Scan QR Code to login, status:', status, ScanStatus[status])
   console.info('https://wechaty.js.org/qrcode/' + encodeURIComponent(qrcode))
 }
 
@@ -128,6 +131,7 @@ await bot.start()
 TODO: introducing `login` event
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
@@ -227,6 +231,7 @@ bot.on('login', onLogin)
 TODO: introducing `logout` event
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
@@ -311,6 +316,7 @@ TODO: introducing `logout` event
 TODO: introducing `message` event
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
@@ -410,6 +416,7 @@ bot.on('message', onMessage)
 TODO: introducing `friendship` event
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
@@ -496,6 +503,7 @@ TODO: introducing `friendship` event
 TODO: introducing `room-topic` event
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
@@ -580,6 +588,7 @@ TODO: introducing `room-topic` event
 TODO: introducing `room-invite` event
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
@@ -664,6 +673,7 @@ TODO: introducing `room-invite` event
 TODO: introducing `room-join` event
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
@@ -748,6 +758,7 @@ TODO: introducing `room-join` event
 TODO: introducing `room-leave` event
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
@@ -834,6 +845,7 @@ TODO: introducing `room-leave` event
 TODO: introducing `ready` event
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
@@ -918,6 +930,7 @@ TODO: introducing `ready` event
 TODO: introducing `heartbeat` event
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
@@ -1002,6 +1015,7 @@ TODO: introducing `heartbeat` event
 TODO: introducing `error` event
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
