@@ -29,5 +29,5 @@ It does not require a build system or a view framework and exists to show the ra
 
 ## More Examples
 
-You can find more examples in the [Wechaty Getting Started Examples](https://github.com/wechaty/wechaty-getting-started/examples/)
+You can find more examples in the [Wechaty Getting Started Examples Directory](https://github.com/wechaty/wechaty-getting-started/tree/master/examples)
 page.
