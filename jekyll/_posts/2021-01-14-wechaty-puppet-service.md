@@ -21,9 +21,9 @@ _Wechaty Puppet_ is a standard for maintaining compatibility between IM systems.
 
 ## Wechaty Puppet Provider
 
-Different IM systems need different Wechaty Puppets, and they have different names and all implementing the Wechaty Puppet API, we call them the **Wechaty Puppet Provider**. For example, the Wechaty Puppet Provider who is supporting WeChat is named [wechaty-puppet-puppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer), supporting Whatsapp is named [wechaty-puppet-whatsapp](https://github.com/wechaty/wechaty-puppet-whatsapp), and supporting Lark is named [wechaty-puppet-lark](https://github.com/wechaty/wechaty-puppet-lark).
+Different IM systems need different Wechaty Puppets, and they have different names and all implementing the Wechaty Puppet API, we call them the **Wechaty Puppet Provider**. For example, the Wechaty Puppet Provider who is supporting WeChat is named [wechaty-puppet-wechat](https://github.com/wechaty/wechaty-puppet-wechat), supporting Whatsapp is named [wechaty-puppet-whatsapp](https://github.com/wechaty/wechaty-puppet-whatsapp), and supporting Lark is named [wechaty-puppet-lark](https://github.com/wechaty/wechaty-puppet-lark).
 
-When we published Wechaty in May 2016, we were using WebDriver/Puppeteer([wechaty-puppet-puppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer)) and [wechaty-puppet-wechat4u](https://github.com/wechaty/wechaty-puppet-wechat4u) to hook to the Web WeChat code. Still, later the [Web Protocol has been deprecated](https://github.com/wechaty/wechaty/issues/603), and we have to find other ways to get the job done.
+When we published Wechaty in May 2016, we were using WebDriver/Puppeteer([wechaty-puppet-wechat](https://github.com/wechaty/wechaty-puppet-wechat)) and [wechaty-puppet-wechat4u](https://github.com/wechaty/wechaty-puppet-wechat4u) to hook to the Web WeChat code. Still, later the [Web Protocol has been deprecated](https://github.com/wechaty/wechaty/issues/603), and we have to find other ways to get the job done.
 
 Beyonds the Web Protocol, the community have tried many technologies in the past years, such as:
 
@@ -59,7 +59,7 @@ Wechaty.instance() // Global Instance
 .start()
 ```
 
-The above code will use the default Wechaty Puppet Provider (which is [wechaty-puppet-puppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer)) because we have not specified manually.
+The above code will use the default Wechaty Puppet Provider (which is [wechaty-puppet-wechat](https://github.com/wechaty/wechaty-puppet-wechat)) because we have not specified manually.
 
 If we want this bot to serve on Whatsapp, we need to specify a Wechaty Puppet Provider for Whatsapp.
 
@@ -152,7 +152,7 @@ With RPC, we can design our Wechaty Ecosystem Architecture as the following diag
 
   +--------------------------+ +--------------------------+
   |       Pad Protocol:      | |       Web Protocol:      |
-  | wechaty-puppet-padlocal  | | wechaty-puppet-puppeteer |
+  | wechaty-puppet-padlocal  | | wechaty-puppet-wechat |
   +--------------------------+ +--------------------------+
   +--------------------------+ +--------------------------+
   |     Windows Protocol:    | |       Mac Protocol:      |
@@ -193,7 +193,7 @@ export WECHATY_PUPPET='wechaty-puppet-padlocal'
 export WECHATY_PUPPET_PADLOCAL_TOKEN='puppet_padlocal_xxx'
 ```
 
-> Note: you can using any Wechaty Puppet at here, like [wechaty-puppet-puppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer), [wechaty-puppet-whatsapp](https://github.com/wechaty/wechaty-puppet-whatsapp), and any others we mentioned earlier.
+> Note: you can using any Wechaty Puppet at here, like [wechaty-puppet-wechat](https://github.com/wechaty/wechaty-puppet-wechat), [wechaty-puppet-whatsapp](https://github.com/wechaty/wechaty-puppet-whatsapp), and any others we mentioned earlier.
 
 ### 2. WECHATY_TOKEN
 
