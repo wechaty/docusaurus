@@ -8,6 +8,7 @@ import TabItem from '@theme/TabItem';
 ## Sending File
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
@@ -99,6 +100,7 @@ await bot.say(fileBox)
 ## Receiving File
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },

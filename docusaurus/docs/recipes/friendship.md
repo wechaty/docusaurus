@@ -8,6 +8,7 @@ import TabItem from '@theme/TabItem';
 ## Sending Request
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
@@ -110,6 +111,7 @@ if (contact) {
 ## Receiving Request
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },

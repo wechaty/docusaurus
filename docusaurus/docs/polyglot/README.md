@@ -34,6 +34,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },

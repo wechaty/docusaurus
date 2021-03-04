@@ -8,6 +8,7 @@ import TabItem from '@theme/TabItem';
 ## Creating New Room
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
@@ -90,6 +91,7 @@ import TabItem from '@theme/TabItem';
 ## Adding contact to room
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
@@ -172,6 +174,7 @@ import TabItem from '@theme/TabItem';
 ## Remove contact from room
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
@@ -254,6 +257,7 @@ import TabItem from '@theme/TabItem';
 ## Changing topic of the room
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },

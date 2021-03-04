@@ -8,6 +8,7 @@ import TabItem from '@theme/TabItem';
 ## List all contacts
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
@@ -114,6 +115,7 @@ for (const contact of contactList) {
 `Contact.find` and `Contact.findAll` supports search by `id`, `name`, `alias`, `weixin`.
 
 <Tabs
+  groupId="programming-languages"
   defaultValue="ts"
   values={[
     { label: 'TypeScript',  value: 'ts', },
