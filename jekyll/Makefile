@@ -7,7 +7,7 @@ all: serve
 .PHONY: install
 install:
 	gem install bundler
-	bundle install && bundle update
+	bundle update && bundle install
 
 .PHONY: test
 test:
