@@ -24,7 +24,7 @@ jobs:
       - name: Bundle Config
         run: |
           sudo gem install bundler
-          bundle config path ~/.npm/bundle
+          # bundle config path ~/.npm/bundle
 
       - name: Use Node.js
         uses: actions/setup-node@v2
@@ -60,7 +60,7 @@ jobs:
     - name: Bundle Cache Config
       run: |
         sudo gem install bundler
-        bundle config path ~/.npm/bundle
+        # bundle config path ~/.npm/bundle
 
     - name: Use Node.js
       uses: actions/setup-node@v2
