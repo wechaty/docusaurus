@@ -49,9 +49,10 @@ module.exports = {
     ],
     'Case Study': [
       'case-study/README',
-      'case-study/friday-bot',
       'case-study/osschat-bot',
       'case-study/rui-bot',
+      'case-study/friday-bot',
+      'case-study/coax-bot',
       'case-study/projects-using-wechaty',
     ],
     'Puppet Services': [
