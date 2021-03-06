@@ -54,11 +54,17 @@ import TabItem from '@theme/TabItem';
 ```ts
 import { Wechaty } from 'wechaty'
 
-Wechaty.instance()
-  .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://wechaty.js.org/qrcode/${encodeURIComponent(qrcode)}`))
-  .on('login',            user => console.log(`User ${user} logged in`))
-  .on('message',       message => console.log(`Message: ${message}`))
-  .start()
+async function main () {
+  conswt bot = new Wechaty()
+  bot
+    .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://wechaty.js.org/qrcode/${encodeURIComponent(qrcode)}`))
+    .on('login',            user => console.log(`User ${user} logged in`))
+    .on('message',       message => console.log(`Message: ${message}`))
+  await bot.start()
+}
+
+main()
+  .catch(console.error)
 ```
 
 </TabItem>
@@ -67,11 +73,17 @@ Wechaty.instance()
 ```ts
 const { Wechaty } = require('wechaty')
 
-Wechaty.instance()
-  .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://wechaty.js.org/qrcode/${encodeURIComponent(qrcode)}`))
-  .on('login',            user => console.log(`User ${user} logged in`))
-  .on('message',       message => console.log(`Message: ${message}`))
-  .start()
+async function main () {
+  conswt bot = new Wechaty()
+  bot
+    .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://wechaty.js.org/qrcode/${encodeURIComponent(qrcode)}`))
+    .on('login',            user => console.log(`User ${user} logged in`))
+    .on('message',       message => console.log(`Message: ${message}`))
+  await bot.start()
+}
+
+main()
+  .catch(console.error)
 ```
 
 </TabItem>
