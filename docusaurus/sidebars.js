@@ -52,7 +52,7 @@ module.exports = {
       'case-study/osschat-bot',
       'case-study/rui-bot',
       'case-study/friday-bot',
-      'case-study/coax-bot',
+      'case-study/coaxer-bot',
       'case-study/projects-using-wechaty',
     ],
     'Puppet Services': [
