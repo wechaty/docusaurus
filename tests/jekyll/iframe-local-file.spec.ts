@@ -37,7 +37,8 @@ test('{% include iframe.html src=... %} should exist in assets/ folder', async t
     const content = fs.readFileSync(filename).toString()
 
     // '{% include iframe.html src="/assets/2020/11-summer-2020-summit-talks/wechaty-summer-2020-introduction.pdf" %}'
-    const REGEXP = /{%\s+include\s+iframe.html\s+src="\/([^"]+?)"\s+%}/g
+    // Huan(202103): skip URL like '//bilibili.com/video/1234'
+    const REGEXP = /{%\s+include\s+iframe.html\s+src="\/([^"/]+?)"\s+%}/g
 
     const fileList: string[] = []
 
