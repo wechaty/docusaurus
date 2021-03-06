@@ -214,8 +214,6 @@ Wechaty in all programming languages have the same API, as the TypeScript docume
 
 :::
 
-## Related Links
-
 ## Blogs
 
 - [Multi Language Wechaty Beta Release Announcement!](https://wechaty.js.org/2020/06/19/multi-language-wechaty-beta-release/)
