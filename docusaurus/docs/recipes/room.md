@@ -40,7 +40,29 @@ import TabItem from '@theme/TabItem';
 <TabItem value="py">
 
 ```py
-# TODO: Pull Request is welcome!
+from __future__ import annotations
+from typing import List
+
+from wechaty import (
+    Wechaty,
+    Contact,
+    Room,
+    Message
+)
+
+
+class MyBot(Wechaty):
+    async def on_ready(self, _):
+        """creating room"""
+        # 1. filter friend
+        friends: List[Contact] = await self.Contact.find_all()
+        # find my python-wechaty related friends
+        friends = [friend for friend in friends if friend.alias().startswith('python-wechaty')]
+
+        # 2. create room and invite them
+        room: Room = await self.Room.create(friends, topic='Python❤Wechaty')
+        if room:
+            room.say('hello, python-wechaty is ready for you.')
 ```
 
 </TabItem>
@@ -123,7 +145,33 @@ import TabItem from '@theme/TabItem';
 <TabItem value="py">
 
 ```py
-# TODO: Pull Request is welcome!
+from __future__ import annotations
+from typing import List
+
+from wechaty import (
+    Wechaty,
+    Contact,
+    Room,
+    Message
+)
+
+
+class MyBot(Wechaty):
+
+    async def on_message(self, msg: Message):
+        """add friend to room if they send `python-wechaty` keyword to be"""
+
+        # invite someone to the room by keyword<python-wechaty>
+        if msg.text() == 'python-wechaty':
+            talker: Contact = await msg.talker()
+            room: Room = await msg.room()
+            mention_self: bool = await msg.mention_self()
+            python_wechaty_room: Room = await self.Room.find(query='id-of-your-room')
+            if room:
+                if mention_self:
+                    await python_wechaty_room.add(talker)
+            else:
+                await python_wechaty_room.add(talker)
 ```
 
 </TabItem>
@@ -206,7 +254,26 @@ import TabItem from '@theme/TabItem';
 <TabItem value="py">
 
 ```py
-# TODO: Pull Request is welcome!
+from __future__ import annotations
+from typing import List
+
+from wechaty import (
+    Wechaty,
+    Contact,
+    Room,
+    Message
+)
+
+
+class MyBot(Wechaty):
+
+    async def on_message(self, msg: Message):
+        room: Room = await msg.room()
+        if room:
+            # func<is_dangerous_words> is to detect whether the content is dangerous
+            if is_dangerous_words(msg.text()):
+                talker: Contact = await msg.talker()
+                room.delete(talker)
 ```
 
 </TabItem>
@@ -289,7 +356,34 @@ import TabItem from '@theme/TabItem';
 <TabItem value="py">
 
 ```py
-# TODO: Pull Request is welcome!
+from __future__ import annotations
+from typing import List
+
+from wechaty import (
+    Wechaty,
+    Room,
+    Message
+)
+
+
+class MyBot(Wechaty):
+
+    async def on_message(self, msg: Message):
+        """change room topic by token"""
+        room: Room = await msg.room()
+        if not room:
+            return
+
+        text: str = await msg.text()
+        talker: Contact = await msg.talker()
+        keyword = 'new-topic:'
+        if talker.alias() == 'admin' and text.startswith(keyword):
+            new_topic: str = text[len(keyword):]
+            old_topic: str = await room.topic()
+            await room.say(f'ok, I will change old_topic<{old_topic}> to new_topic<{new_topic}>')
+            
+            # change the topic of room
+            await room.topic(new_topic)
 ```
 
 </TabItem>
