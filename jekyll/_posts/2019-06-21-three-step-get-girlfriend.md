@@ -47,13 +47,7 @@ github: [https://github.com/gengchen528/wechatBot](https://github.com/gengchen52
 
 ## 视频教程
 
-<iframe width="560" height="315" src="//player.bilibili.com/player.html?aid=56077628&cid=98021463&page=1" frameborder="0" allowfullscreen="true" style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:560;
-    height:315;
-"></iframe></div>
+{% include iframe.html src="//www.bilibili.com/video/av56077628" %}
 
 ## 三步走教程
 

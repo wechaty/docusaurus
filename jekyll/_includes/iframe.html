@@ -16,12 +16,13 @@ Blog: https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/
 {% else %}
   {% assign type = src | split: '//' | last | split: '/' | first %}
 {% endif %}
+
 {% case type %}
   {% when "pdf" %}
     {% assign src = '/assets/js/viewer-js/#' | append: src %}
   {% when 'www.bilibili.com' or 'player.bilibili.com' %}
     {% assign ratio = '70%' %}
-    {% assign src = src | replace: "www.bilibili.com/video/", "player.bilibili.com/player.html?bvid=" | append: "&high_quality=1" %}
+    {% assign src = src | replace: "www.bilibili.com/video/BV", "player.bilibili.com/player.html?bvid=BV" | replace: "www.bilibili.com/video/av", "player.bilibili.com/player.html?aid=" | append: "&high_quality=1" %}
   {% when 'youtu.be' or 'www.youtube.com' %}
     {% assign src = src | replace: "watch?v=", "embed/" | replace: "youtu.be", "www.youtube.com/embed"  %}
   {% when 'v.qq.com' %}
