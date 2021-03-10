@@ -60,7 +60,14 @@ if (contact) {
 <TabItem value="py">
 
 ```py
-# TODO: Pull Request is welcome!
+from typing import Optional
+from wechaty import Wechaty, Contact
+
+class MyBot(Wechaty):
+    async def on_ready(self, _):
+        contact: Optional[Contact] = await self.Friendship.search(phone='phone-of-someone')
+        if contact:
+            self.Friendship.add(contact)
 ```
 
 </TabItem>
@@ -167,7 +174,12 @@ bot.on('friendship', onFriendship)
 <TabItem value="py">
 
 ```py
-# TODO: Pull Request is welcome!
+from wechaty import Wechaty, Friendship, FriendshipType
+
+class MyBot(Wechaty):
+    async def on_friendship(self, friendship: Friendship):
+        if friendship.type() == FriendshipType.FRIENDSHIP_TYPE_RECEIVE:
+            await friendship.accept()
 ```
 
 </TabItem>
