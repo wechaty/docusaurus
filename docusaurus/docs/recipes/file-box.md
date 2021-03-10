@@ -164,7 +164,15 @@ bot.on('message', onMessage)
 <TabItem value="py">
 
 ```py
-# TODO: Pull Request is welcome!
+from wechaty_puppet import FileBox
+from wechaty import Wechaty, Contact, Message
+
+class MyBot(Wechaty):
+    async def on_message(self, msg: Message):
+        if msg.type() == MessageType.MESSAGE_TYPE_IMAGE:
+            image_file_box = await msg.to_file_box()
+            print(f'saving file<{image_file_box.name}>')
+            await image_file_box.to_file('/path/to/local/file')
 ```
 
 </TabItem>
