@@ -10,11 +10,6 @@ sidebar_label: PadLocal
 - Privacy Policy: To-be-added
 - Service Level Agreement (SLA): To-be-added
 
-## Known Issues
-
-- 新注册微信不能登陆报“SERVER_ERROR: 2 UNKNOWN: [tid:bec7b588] wechat bad request erro” #46: <https://github.com/padlocal/wechaty-puppet-padlocal/issues/46>
-- PadLocal: can not login after scan the QR code if the IP is not in China #62: <https://github.com/wechaty/puppet-services/issues/62>
-
 ## How to buy(apply)
 
 Please follow [TOKEN 申请方法](https://github.com/padlocal/wechaty-puppet-padlocal/wiki/TOKEN-%E7%94%B3%E8%AF%B7%E6%96%B9%E6%B3%95), or [submit an issue at here](https://github.com/wechaty/puppet-services/issues/new?assignees=padlocal&labels=padlocal&template=padlocal.md&title=PadLocal%3A+)
@@ -29,3 +24,6 @@ Please follow [TOKEN 申请方法](https://github.com/padlocal/wechaty-puppet-pa
 ## Contact
 
 - Wechat: oxddoxdd
+
+
+![Screen Shot 2021-03-12 at 4 04 21 PM](https://user-images.githubusercontent.com/64943823/110910668-a2fa5500-834c-11eb-8325-1da9ae5fae8e.png)
