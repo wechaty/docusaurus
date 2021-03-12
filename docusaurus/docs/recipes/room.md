@@ -431,6 +431,89 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
+## Mention(@) others in the room
+
+<Tabs
+  groupId="programming-languages"
+  defaultValue="ts"
+  values={[
+    { label: 'TypeScript',  value: 'ts', },
+    { label: 'JavaScript',  value: 'js', },
+    { label: 'Python',      value: 'py', },
+    { label: 'Go',          value: 'go', },
+    { label: 'Java',        value: 'java', },
+    { label: 'PHP',         value: 'php', },
+    { label: 'Scala',       value: 'scala', },
+    { label: 'C#',          value: 'csharp', },
+    { label: 'Rust',        value: 'rust', },
+  ]
+}>
+
+<TabItem value="ts">
+
+```ts
+await room.say`Hello, ${contact}`
+```
+
+</TabItem>
+<TabItem value="js">
+
+```js
+await room.say`Hello, ${contact}`
+```
+
+</TabItem>
+<TabItem value="py">
+
+```py
+# TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="java">
+
+```java
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="go">
+
+```go
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="php">
+
+```php
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="csharp">
+
+```csharp
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="scala">
+
+```scala
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="rust">
+
+```rust
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+</Tabs>
+
 ## Moniting room events
 
 TBW ...
