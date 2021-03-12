@@ -1,11 +1,13 @@
 ---
-title: 'Making Friends'
+title: 'Dealing with Message'
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## Sending Request
+## Mention
+
+Only a message in the room can mention(@) others.
 
 <Tabs
   groupId="programming-languages"
@@ -26,52 +28,63 @@ import TabItem from '@theme/TabItem';
 <TabItem value="ts">
 
 ```ts
-async function onReady () {
-  const weixin  = 'FridayBOT' // weixin id
-  const contact = await bot.Friendship.search({ weixin })
+import { Message } from 'wechaty'
 
-  if (contact) {
-    console.info('Sending friend request...')
-    await bot.Friendship.add(contact)
-  } else {
-    console.info('Friendship.search: not found')
+async function onMessage(message: Message): Promise<void> {
+  if (await message.mentionSelf()) {
+    const room = message.room()
+    if (!room) {
+      throw new Error('Should never reach here: a mention message must in a room')
+    }
+
+    console.info(message.text())
+    // "@bot Hello"
+    console.info(await message.mentionList())
+    // [bot]
+    console.info(await message.mentionText())
+    // "Hello"
+
+    const talker = room.talker()
+    await room.say`Thanks for mention me! ${talker}`
   }
 }
 
-bot.on('ready', onReady)
+bot.on('message', onMessage)
 ```
 
 </TabItem>
 <TabItem value="js">
 
 ```js
-async function onReady () {
-  const weixin  = 'FridayBOT' // weixin id
-  const contact = await bot.Friendship.search({ weixin })
+const { Message } = require('wechaty')
 
-  if (contact) {
-    console.info('Sending friend request...')
-    await bot.Friendship.add(contact)
-  } else {
-    console.info('Friendship.search: not found')
+async function onMessage(message) {
+  if (await message.mentionSelf()) {
+    const room = message.room()
+    if (!room) {
+      throw new Error('Should never reach here: a mention message must in a room')
+    }
+
+    console.info(message.text())
+    // "@bot Hello"
+    console.info(await message.mentionList())
+    // [bot]
+    console.info(await message.mentionText())
+    // "Hello"
+
+    const talker = room.talker()
+    await room.say`Thanks for mention me! ${talker}`
   }
 }
 
-bot.on('ready', onReady)
+bot.on('message', onMessage)
 ```
 
 </TabItem>
 <TabItem value="py">
 
 ```py
-from typing import Optional
-from wechaty import Wechaty, Contact
-
-class MyBot(Wechaty):
-    async def on_ready(self, _):
-        contact: Optional[Contact] = await self.Friendship.search(phone='phone-of-someone')
-        if contact:
-            self.Friendship.add(contact)
+# TODO: Pull Request is welcome!
 ```
 
 </TabItem>
@@ -119,7 +132,7 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
-## Receiving Request
+## Self message
 
 <Tabs
   groupId="programming-languages"
@@ -140,50 +153,43 @@ class MyBot(Wechaty):
 <TabItem value="ts">
 
 ```ts
-import { Friendship } from 'wechaty'
+import { Message } from 'wechaty'
 
-async function onFriendship (friendship: Friendship) {
-  if (friendship.type() === Friendship.Type.Receive) {
-    console.info('New requrest from', friendship.contact())
-    console.info('Hello message:', friendship.hello())
-    await friendship.accept()
-  } else if (friendship.type() === Friendship.Type.Confirm) {
-    console.info('New request confirmed with', friendship.contact().name())
+async function onMessage(message: Message): Promise<void> {
+  if (message.self()) {
+    const talker = message.talker()
+    const bot = message.wechaty.userSelf()
+    assert(talker === bot, 'Message is sent from bot')
+    console.info('Message is sent from bot')
   }
 }
 
-bot.on('friendship', onFriendship)
+bot.on('message', onMessage)
 ```
 
 </TabItem>
 <TabItem value="js">
 
 ```js
-import { Friendship } from 'wechaty'
+const { Message } = require('wechaty')
 
-async function onFriendship (friendship) {
-  if (friendship.type() === Friendship.Type.Receive) {
-    console.info('New requrest from', friendship.contact())
-    console.info('Hello message:', friendship.hello())
-    await friendship.accept()
-  } else if (friendship.type() === Friendship.Type.Confirm) {
-    console.info('New request confirmed with', friendship.contact().name())
+async function onMessage(message) {
+  if (message.self()) {
+    const talker = message.talker()
+    const bot = message.wechaty.userSelf()
+    assert(talker === bot, 'Message is sent from bot')
+    console.info('Message is sent from bot')
   }
 }
 
-bot.on('friendship', onFriendship)
+bot.on('message', onMessage)
 ```
 
 </TabItem>
 <TabItem value="py">
 
 ```py
-from wechaty import Wechaty, Friendship, FriendshipType
-
-class MyBot(Wechaty):
-    async def on_friendship(self, friendship: Friendship):
-        if friendship.type() == FriendshipType.FRIENDSHIP_TYPE_RECEIVE:
-            await friendship.accept()
+# TODO: Pull Request is welcome!
 ```
 
 </TabItem>

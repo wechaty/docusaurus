@@ -8,7 +8,13 @@ sidebar_label: 'Recipes: Index'
 
 These are some use cases and code snippets to get you started with Redux in a real app. They assume you understand the topics in [basic](#b) and [advanced](#a) tutorials.
 
-- [Configuring Wechaty](recipes/wechaty.md)
+- [Start wechaty](recipes/wechaty.md)
+- [Listening events](recipes/events.md)
+- [Dealing with messages](recipes/message.md)
+- [Managing contacts](recipes/contact.md)
+- [Managing rooms](recipes/room.md)
+- [Making friends](recipes/friendship.md)
+- [Processing files](recipes/file-box.md)
 - [Usage with TypeScript](recipes/usage-with-typescript.md)
 - [Usage with Docker](recipes/usage-with-docker.md)
 - [Usage with Heroku](recipes/usage-with-heroku.md)
