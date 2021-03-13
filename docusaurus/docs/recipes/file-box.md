@@ -74,16 +74,16 @@ await bot.say(fileBox)
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -197,16 +197,16 @@ class MyBot(Wechaty):
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 

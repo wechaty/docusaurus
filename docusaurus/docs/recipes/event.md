@@ -118,16 +118,16 @@ asyncio.run(MyBot().start())
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -230,16 +230,16 @@ asyncio.run(MyBot().start())
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -334,16 +334,16 @@ asyncio.run(start())
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -447,16 +447,16 @@ asyncio.run(MyBot().start())
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -548,16 +548,16 @@ asyncio.run(MyBot().start())
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -652,16 +652,16 @@ asyncio.run(MyBot().start())
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -754,16 +754,16 @@ asyncio.run(MyBot().start())
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -857,16 +857,16 @@ asyncio.run(MyBot().start())
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -960,16 +960,16 @@ asyncio.run(MyBot().start())
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -1074,16 +1074,16 @@ asyncio.run(MyBot().start())
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -1176,16 +1176,16 @@ asyncio.run(MyBot().start())
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -1278,16 +1278,16 @@ asyncio.run(MyBot().start())
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
