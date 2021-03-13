@@ -70,4 +70,4 @@ npm start
 
 ## Maintainers
 
-- [@univerone](https://github.com/univerone)
+- [@univerone](https://wechaty.js.org/contributors/univerone)

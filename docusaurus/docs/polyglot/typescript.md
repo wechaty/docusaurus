@@ -53,8 +53,8 @@ Wechaty.instance()
 
 ## Maintainers
 
-- [@huan](https://github.com/huan) Huan
-- [@lijiarui](https://github.com/lijiarui) Rui
+- [@huan](https://wechaty.js.org/contributors/huan) Huan
+- [@lijiarui](https://wechaty.js.org/contributors/lijiarui) Rui
 
 ## History
 

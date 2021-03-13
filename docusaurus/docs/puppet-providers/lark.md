@@ -70,4 +70,4 @@ npm start
 
 ## Maintainers
 
-- [@Roxanne718](https://github.com/roxanne718)
+- [@Roxanne718](https://wechaty.js.org/contributors/roxanne718)

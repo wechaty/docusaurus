@@ -85,5 +85,5 @@ npm start
 
 ## Maintainers
 
-- [@huan](https://github.com/huan)
-- [@windmemory](https://github.com/windmemory)
+- [@huan](https://wechaty.js.org/contributors/huan)
+- [@windmemory](https://wechaty.js.org/contributors/windmemory)
