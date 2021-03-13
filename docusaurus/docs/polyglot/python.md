@@ -3,6 +3,8 @@ title: 'Python Wechaty'
 sidebar_label: Python
 ---
 
+[![Python Wechaty](https://img.shields.io/badge/Wechaty-Python-blue)](https://github.com/wechaty/python-wechaty)
+
 ## Under Construction
 
 Pull Request is Welcome!
