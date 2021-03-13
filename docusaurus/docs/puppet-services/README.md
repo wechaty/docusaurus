@@ -1,6 +1,6 @@
 ---
 slug: /puppet-services/
-title: Puppet Services
+title: Wechaty Puppet Services
 sidebar_label: 'Puppet Services: Index'
 ---
 

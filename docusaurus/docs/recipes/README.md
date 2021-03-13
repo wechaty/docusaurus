@@ -26,3 +26,7 @@ These are some use cases and code snippets to get you started with Redux in a re
 ## To be added
 
 1. Using Puppets with Wechaty (How to switch between puppets)
+
+## Use Cases
+
+You can learn more from [Wechaty cases study](case-study/README.md)
