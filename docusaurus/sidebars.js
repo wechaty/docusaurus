@@ -56,6 +56,18 @@ module.exports = {
       'case-study/coaxer-bot',
       'case-study/projects-using-wechaty',
     ],
+    'Puppet Providers': [
+      'puppet-providers/README',
+      'puppet-providers/wechat',
+      'puppet-providers/whatsapp',
+      'puppet-providers/official-account',
+      'puppet-providers/gitter',
+      'puppet-providers/lark',
+      'puppet-providers/padlocal',
+      'puppet-providers/wechat4u',
+      'puppet-providers/service',
+      'puppet-providers/mock',
+    ],
     'Puppet Services': [
       'puppet-services/README',
       'puppet-services/wxwork',
