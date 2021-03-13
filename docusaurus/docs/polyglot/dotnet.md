@@ -3,6 +3,8 @@ title: '.NET Wechaty'
 sidebar_label: .NET
 ---
 
+[![.NET Wechaty](https://img.shields.io/badge/Wechaty-.NET-blueviolet)](https://github.com/wechaty/dotnet-wechaty)
+
 ## Under Construction
 
 Pull Request is Welcome!
