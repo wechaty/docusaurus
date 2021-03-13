@@ -9,7 +9,7 @@ sidebar_label: 'Recipes: Index'
 These are some use cases and code snippets to get you started with Redux in a real app. They assume you understand the topics in [basic](#b) and [advanced](#a) tutorials.
 
 - [Start wechaty](recipes/wechaty.md)
-- [Listening events](recipes/events.md)
+- [Listening events](recipes/event.md)
 - [Dealing with messages](recipes/message.md)
 - [Managing contacts](recipes/contact.md)
 - [Managing rooms](recipes/room.md)
