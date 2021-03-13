@@ -35,7 +35,7 @@ module.exports = {
     Recipes: [
       'recipes/README',
       'recipes/wechaty',
-      'recipes/events',
+      'recipes/event',
       'recipes/message',
       'recipes/contact',
       'recipes/room',
