@@ -3,6 +3,8 @@ title: 'Puppet Provider: PadLocal'
 sidebar_label: PadLocal
 ---
 
+[![Wechaty Puppet PadLocal](https://img.shields.io/badge/Puppet-PadLocal-blueviolet)](padlocal)
+
 ![Wechaty Puppet PadLocal](https://wechaty.js.org/assets/2020/padlocal/logo.png)
 
 [![NPM Version](https://badge.fury.io/js/wechaty-puppet-padlocal.svg)](https://badge.fury.io/js/wechaty-puppet-padlocal)

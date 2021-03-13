@@ -3,6 +3,8 @@ title: 'Puppet Provider: Official Account'
 sidebar_label: Official Account
 ---
 
+[![Wechaty Puppet Official Account](https://img.shields.io/badge/Puppet-Official%20Account-blueviolet)](official-account)
+
 ![Wechaty Puppet Official Account](https://raw.githubusercontent.com/wechaty/wechaty-puppet-official-account/HEAD/docs/images/wechaty-puppet-official-account.png)
 
 [![NPM Version](https://badge.fury.io/js/wechaty-puppet-official-account.svg)](https://badge.fury.io/js/wechaty-puppet-official-account)
