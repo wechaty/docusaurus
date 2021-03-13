@@ -104,23 +104,6 @@ asyncio.run(main())
 ```
 
 </TabItem>
-<TabItem value="java">
-
-```java
-package io.github.wechaty;
-
-class Bot{
-  public static void main(String args[]){
-    Wechaty bot = Wechaty.instance()
-      .onScan((qrcode, statusScanStatus, data) -> System.out.println(QrcodeUtils.getQr(qrcode)))
-      .onLogin(user -> System.out.println("User logged in :" + user))
-      .onMessage(message -> System.out.println("Message:" + message))
-      .start(true);
-  }
-}
-```
-
-</TabItem>
 <TabItem value="go">
 
 ```go
@@ -140,6 +123,23 @@ func main() {
     OnLogin(func(user string) { fmt.Printf("User %s logged in\n", user) }).
     OnMessage(func(message string) { fmt.Printf("Message: %s\n", message) }).
     Start()
+}
+```
+
+</TabItem>
+<TabItem value="java">
+
+```java
+package io.github.wechaty;
+
+class Bot{
+  public static void main(String args[]){
+    Wechaty bot = Wechaty.instance()
+      .onScan((qrcode, statusScanStatus, data) -> System.out.println(QrcodeUtils.getQr(qrcode)))
+      .onLogin(user -> System.out.println("User logged in :" + user))
+      .onMessage(message -> System.out.println("Message:" + message))
+      .start(true);
+  }
 }
 ```
 

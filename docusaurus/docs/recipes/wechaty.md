@@ -76,21 +76,6 @@ asyncio.run(main())
 ```
 
 </TabItem>
-<TabItem value="java">
-
-```java
-package io.github.wechaty;
-
-class Bot{
-  public static void main(String args[]){
-    Wechaty bot = new Wechaty()
-    // TODO: init your bot at here...
-    bot.start(true);
-  }
-}
-```
-
-</TabItem>
 <TabItem value="go">
 
 ```go
@@ -106,6 +91,21 @@ func main() {
   bot = wechaty.NewWechaty()
   // TODO: init your bot at here...
   bot.Start()
+}
+```
+
+</TabItem>
+<TabItem value="java">
+
+```java
+package io.github.wechaty;
+
+class Bot{
+  public static void main(String args[]){
+    Wechaty bot = new Wechaty()
+    // TODO: init your bot at here...
+    bot.start(true);
+  }
 }
 ```
 

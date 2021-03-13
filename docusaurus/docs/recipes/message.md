@@ -88,16 +88,16 @@ bot.on('message', onMessage)
 ```
 
 </TabItem>
-<TabItem value="java">
+<TabItem value="go">
 
-```java
+```go
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="go">
+<TabItem value="java">
 
-```go
+```java
 // TODO: Pull Request is welcome!
 ```
 
@@ -193,16 +193,16 @@ bot.on('message', onMessage)
 ```
 
 </TabItem>
-<TabItem value="java">
+<TabItem value="go">
 
-```java
+```go
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="go">
+<TabItem value="java">
 
-```go
+```java
 // TODO: Pull Request is welcome!
 ```
 
