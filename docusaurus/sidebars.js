@@ -79,10 +79,6 @@ module.exports = {
       'contributor-program/README',
       'contributor-program/publish-blog',
     ],
-    'Google Summer of Code': [
-      'gsoc/README',
-      'gsoc/2021',
-    ],
     'Events': [
       'events',
       'bot5/README',
@@ -96,6 +92,14 @@ module.exports = {
         ],
       },
       'gsod/README',
+      {
+        type: 'category',
+        label: 'Google Summer of Code',
+        items: [
+          'gsoc/README',
+          'gsoc/2021',
+        ],
+      },
     ],
     'API Reference': [
       'api/README',
