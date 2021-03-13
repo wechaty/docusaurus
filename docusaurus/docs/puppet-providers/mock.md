@@ -130,4 +130,4 @@ See: [Project README](https://github.com/wechaty/wechaty-puppet-mock#history)
 
 ## Maintainers
 
-- [@huan](https://github.com/huan)
+- [@huan](https://wechaty.js.org/contributors/huan)

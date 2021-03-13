@@ -71,6 +71,6 @@ npm start
 
 ## Maintainers
 
-- [@huan](https://github.com/huan)
-- [@wj-Mcat](https://github.com/wj-Mcat)
-- [@qhduan](https://github.com/qhduan)
+- [@huan](https://wechaty.js.org/contributors/huan)
+- [@wj-Mcat](https://wechaty.js.org/contributors/wj-mcat)
+- [@qhduan](https://wechaty.js.org/contributors/qhduan)

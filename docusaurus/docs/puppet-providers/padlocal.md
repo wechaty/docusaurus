@@ -134,4 +134,4 @@ npm start
 
 ## Maintainers
 
-- [@padlocal](https://github.com/padlocal)
+- [@padlocal](https://wechaty.js.org/contributors/padlocal)

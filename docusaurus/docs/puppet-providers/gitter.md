@@ -73,4 +73,4 @@ npm start
 
 ## Maintainers
 
-- [@huan](https://github.com/huan)
+- [@huan](https://wechaty.js.org/contributors/huan)
