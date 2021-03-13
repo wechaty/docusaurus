@@ -4,6 +4,16 @@ title: Wechaty Puppet Providers
 sidebar_label: 'Puppet Providers: Index'
 ---
 
+[![Wechaty Puppet WeChat](https://img.shields.io/badge/Puppet-WeChat-orange)](wechat)
+[![Wechaty Puppet Whatsapp](https://img.shields.io/badge/Puppet-Whatsapp-orange)](whatsapp)
+[![Wechaty Puppet Official Account](https://img.shields.io/badge/Puppet-Official%20Account-orange)](official-account)
+[![Wechaty Puppet Gitter](https://img.shields.io/badge/Puppet-Gitter-orange)](gitter)
+[![Wechaty Puppet Lark](https://img.shields.io/badge/Puppet-Lark-orange)](lark)
+[![Wechaty Puppet PadLocal](https://img.shields.io/badge/Puppet-PadLocal-orange)](padlocal)
+[![Wechaty Puppet WeChat4U](https://img.shields.io/badge/Puppet-WeChat4U-orange)](wechat4u)
+[![Wechaty Puppet Service](https://img.shields.io/badge/Puppet-Service-orange)](service)
+[![Wechaty Puppet Mock](https://img.shields.io/badge/Puppet-Mock-orange)](mock)
+
 For different instant messaging (IM) systems (such as WeChat, Whatsapp, and TikTok), the Wechaty community builds separate RPA modules for each, and we call those modules [Wechaty Puppet](https://github.com/wechaty/wechaty-puppet).
 
 Wechaty Puppet Provider is an NPM module for a specific IM protocol Wechaty Puppet.
