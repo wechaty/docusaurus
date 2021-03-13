@@ -3,6 +3,8 @@ title: 'Puppet Provider: Service'
 sidebar_label: Service
 ---
 
+[![Wechaty Puppet Service](https://img.shields.io/badge/Puppet-Service-blueviolet)](service)
+
 ![Wechaty Puppet Service](https://raw.githubusercontent.com/wechaty/wechaty-puppet-service/HEAD/docs/images/hostie.png)
 
 [![NPM Version](https://badge.fury.io/js/wechaty-puppet-service.svg)](https://badge.fury.io/js/wechaty-puppet-service)

@@ -3,6 +3,8 @@ title: 'Puppet Provider: Whatsapp'
 sidebar_label: Whatsapp
 ---
 
+[![Wechaty Puppet Whatsapp](https://img.shields.io/badge/Puppet-Whatsapp-blueviolet)](whatsapp)
+
 ![Wechaty Puppet Whatsapp](https://raw.githubusercontent.com/wechaty/wechaty-puppet-whatsapp/HEAD/docs/images/wechaty-puppet-whatsapp.png)
 
 [![NPM Version](https://badge.fury.io/js/wechaty-puppet-whatsapp.svg)](https://badge.fury.io/js/wechaty-puppet-whatsapp)

@@ -3,6 +3,8 @@ title: 'Puppet Provider: Gitter'
 sidebar_label: Gitter
 ---
 
+[![Wechaty Puppet Gitter](https://img.shields.io/badge/Puppet-Gitter-blueviolet)](gitter)
+
 ![Wechaty Puppet Gitter](https://raw.githubusercontent.com/wechaty/wechaty-puppet-gitter/HEAD/docs/images/wechaty-puppet-gitter.png)
 
 [![NPM Version](https://badge.fury.io/js/wechaty-puppet-gitter.svg)](https://badge.fury.io/js/wechaty-puppet-gitter)

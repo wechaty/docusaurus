@@ -3,6 +3,8 @@ title: 'Puppet Provider: Mock'
 sidebar_label: Mock
 ---
 
+[![Wechaty Puppet Mock](https://img.shields.io/badge/Puppet-Mock-blueviolet)](mock)
+
 ![Wechaty Puppet Mock](https://raw.githubusercontent.com/wechaty/wechaty-puppet-mock/HEAD/docs/images/mock.png)
 
 [![NPM Version](https://badge.fury.io/js/wechaty-puppet-mock.svg)](https://badge.fury.io/js/wechaty-puppet-mock)

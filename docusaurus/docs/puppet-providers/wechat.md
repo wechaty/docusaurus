@@ -3,6 +3,8 @@ title: 'Puppet Provider: WeChat'
 sidebar_label: WeChat
 ---
 
+[![Wechaty Puppet WeChat](https://img.shields.io/badge/Puppet-WeChat-blueviolet)](wechat)
+
 ![Wechaty Puppet WeChat](https://raw.githubusercontent.com/wechaty/wechaty-puppet-wechat/HEAD/docs/images/wechaty-puppet-wechat.png)
 
 [![NPM Version](https://badge.fury.io/js/wechaty-puppet-wechat.svg)](https://badge.fury.io/js/wechaty-puppet-wechat)
