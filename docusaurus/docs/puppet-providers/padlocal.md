@@ -1,5 +1,5 @@
 ---
-title: 'Puppet Service: PadLocal'
+title: 'Puppet Provider: PadLocal'
 sidebar_label: PadLocal
 ---
 

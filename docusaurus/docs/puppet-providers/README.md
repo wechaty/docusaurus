@@ -26,10 +26,6 @@ npm start
 
 > You can switch between different Wechaty Puppet Provider by changing your `WECHATY_PUPPET` environment variable. All your source code should work between different tokens without any changes.
 
-## What is Wechaty Puppet Provider
-
-If you want to learn more about the concepts behind TOKEN, please read our blog post: [Introducing Wechaty Puppet Service](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/)
-
 ## Wechaty Puppet Providers
 
 Now, we have the following Wechaty Puppet Providers:
@@ -50,3 +46,10 @@ Now, we have the following Wechaty Puppet Providers:
 
 - [Wechaty Puppet Providers Trends, Huan, Mar 4, 2021](https://wechaty.js.org/2021/03/04/wechaty-puppet-providers-trends/)
 - [Introducing Wechaty Puppet Service, Huan, Jan 14, 2021](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/)
+
+## See Also
+
+If you want to learn more about the concepts behind Wechaty Puppet Provider, you can read:
+
+1. [Wechaty Puppet Specification](specifications/puppet.md)
+1. [Introducing Wechaty Puppet Service](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/)
