@@ -119,16 +119,6 @@ $bot->start();
 ```
 
 </TabItem>
-
-<TabItem value="csharp">
-
-```csharp
-var bot = new Wechaty()
-// TODO: init your bot at here...
-bot.Start();
-```
-
-</TabItem>
 <TabItem value="scala">
 
 ```scala
@@ -145,7 +135,15 @@ object DingDongBot {
 ```
 
 </TabItem>
+<TabItem value="csharp">
 
+```csharp
+var bot = new Wechaty()
+// TODO: init your bot at here...
+bot.Start();
+```
+
+</TabItem>
 <TabItem value="rust">
 
 ```rust
