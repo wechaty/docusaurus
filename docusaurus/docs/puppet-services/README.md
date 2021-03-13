@@ -4,6 +4,11 @@ title: Wechaty Puppet Services
 sidebar_label: 'Puppet Services: Index'
 ---
 
+[![Wechaty Puppet Service WXWork](https://img.shields.io/badge/Service-WXWork-blue)](wxwork)
+[![Wechaty Puppet Service PadLocal](https://img.shields.io/badge/Service-PadLocal-blue)](padlocal)
+[![Wechaty Puppet Service Paimon](https://img.shields.io/badge/Service-Paimon-blue)](paimon)
+[![Wechaty Puppet Service Donut](https://img.shields.io/badge/Service-Donut-blue)](donut)
+
 For different instant messaging (IM) systems (such as WeChat, Whatsapp, and TikTok), the Wechaty community builds separate RPA modules for each, and we call those modules [Wechaty Puppet](https://github.com/wechaty/wechaty-puppet).
 
 Wechaty Puppet Service is gRPC for Wechaty Puppet. To use a Wechaty Puppet Service, you need a TOKEN for that service, and pass it to Wechaty, then you will be able to use that Puppet Service.
