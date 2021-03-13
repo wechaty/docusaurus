@@ -15,7 +15,7 @@ TypeScript is the language that Wechaty ecosystem built on.
 
 Template Repo: <https://github.com/wechaty/wechaty-getting-started>
 
-### 1. [Gitpod ❤️  Wechaty](docs/gitpod.md)
+### 1. Gitpod ❤️  Wechaty
 
 [![GitPod Ready-to-Code][gitpod_img]][gitpod_link]
 
