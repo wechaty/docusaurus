@@ -5,6 +5,11 @@ sidebar_label: PHP
 
 [![PHP Wechaty](https://img.shields.io/badge/Wechaty-PHP-7de)](https://github.com/wechaty/php-wechaty)
 
-## Under Construction
+- GitHub Repo <https://github.com/wechaty/php-wechaty>
+- Getting Started Template Repo <https://github.com/wechaty/php-wechaty-getting-started>
 
-Pull Request is Welcome!
+## History
+
+## Maintainers
+
+- [@zhangchunsheng](https://github.com/zhangchunsheng)

@@ -5,6 +5,11 @@ sidebar_label: Rust
 
 [![Rust Wechaty](https://img.shields.io/badge/Wechaty-Rust-f42)](https://github.com/wechaty/rust-wechaty)
 
-## Under Construction
+- GitHub Repo <https://github.com/wechaty/rust-wechaty>
+- Getting Started Template Repo <https://github.com/wechaty/rust-wechaty-getting-started>
 
-Pull Request is Welcome!
+## History
+
+## Maintainers
+
+- [@lucifer1004](https://github.com/lucifer1004)

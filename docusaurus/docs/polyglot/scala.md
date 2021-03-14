@@ -5,6 +5,11 @@ sidebar_label: Scala
 
 [![Scala Wechaty](https://img.shields.io/badge/Wechaty-Scala-890)](https://github.com/wechaty/scala-wechaty)
 
-## Under Construction
+- GitHub Repo <https://github.com/wechaty/scala-wechaty>
+- Getting Started Template Repo <https://github.com/wechaty/scala-wechaty-getting-started>
 
-Pull Request is Welcome!
+## History
+
+## Maintainers
+
+- [@jcai](https://wechaty.js.org/contributors/jcai)
