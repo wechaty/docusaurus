@@ -8,6 +8,7 @@ sidebar_label: 'Puppet Services: Index'
 [![Wechaty Puppet Service PadLocal](https://img.shields.io/badge/Service-PadLocal-blue)](padlocal)
 [![Wechaty Puppet Service Paimon](https://img.shields.io/badge/Service-Paimon-blue)](paimon)
 [![Wechaty Puppet Service Donut](https://img.shields.io/badge/Service-Donut-blue)](donut)
+[![Wechaty Puppet Service DIY](https://img.shields.io/badge/Service-DIY-blue)](diy)
 
 For different instant messaging (IM) systems (such as WeChat, Whatsapp, and TikTok), the Wechaty community builds separate RPA modules for each, and we call those modules [Wechaty Puppet](https://github.com/wechaty/wechaty-puppet).
 
