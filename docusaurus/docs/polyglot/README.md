@@ -222,3 +222,7 @@ Wechaty in all programming languages have the same API, as the TypeScript docume
 - [Wechaty is All You Need: Python, Go, and Java Translation Project wechaty/wechaty#1927](https://github.com/wechaty/wechaty/discussions/1927)
 - [Python the Wechaty Way wechaty/python-wechaty#13](https://github.com/wechaty/python-wechaty/issues/13)
 - [Go Wechaty project initialized! wechaty/go-wechaty#1](https://github.com/wechaty/go-wechaty/issues/1)]
+
+## Support
+
+You can [join our Gitter](https://gitter.im/wechaty/wechaty) network if you aren’t already a member.
