@@ -74,6 +74,7 @@ module.exports = {
       'puppet-services/padlocal',
       'puppet-services/paimon',
       'puppet-services/donut',
+      'puppet-services/diy',
     ],
     'Contributor Program': [
       'contributor-program/README',
