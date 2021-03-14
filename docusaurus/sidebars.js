@@ -31,6 +31,7 @@ module.exports = {
       'polyglot/php',
       'polyglot/dotnet',
       'polyglot/rust',
+      'polyglot/diy',
     ],
     Recipes: [
       'recipes/README',
