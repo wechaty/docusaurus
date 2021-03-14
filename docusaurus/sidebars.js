@@ -67,6 +67,7 @@ module.exports = {
       'puppet-providers/wechat4u',
       'puppet-providers/service',
       'puppet-providers/mock',
+      'puppet-providers/diy',
     ],
     'Puppet Services': [
       'puppet-services/README',

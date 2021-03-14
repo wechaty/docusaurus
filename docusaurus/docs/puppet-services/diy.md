@@ -1,6 +1,5 @@
 ---
 title: 'Puppet Service: DIY'
-sidebar_label: 'Puppet Service: DIY'
 ---
 
 <!-- MDX import -->
@@ -432,6 +431,11 @@ fi
 </Tabs>
 
 I hope you enjoy it!
+
+## Blogs
+
+- [Python Wechaty如何使用PadLocal Puppet Service, Biofer, Feb, 3, 2021](https://wechaty.js.org/2021/02/03/python-wechaty-for-padlocal-puppet-service/)
+- [.NET Wechaty如何使用PadLocal Puppet Service, Darren, Jan 28, 2021](https://wechaty.js.org/2021/01/28/csharp-wechaty-for-padlocal-puppet-service/)
 
 ## History
 
