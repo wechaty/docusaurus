@@ -8,6 +8,17 @@ sidebar_label: Python
 - GitHub Repo <https://github.com/wechaty/python-wechaty>
 - Getting Started Template Repo <https://github.com/wechaty/python-wechaty-getting-started>
 
+## Getting Started
+
+Template Repo: <https://github.com/wechaty/python-wechaty-getting-started>
+
+```sh
+git clone git@github.com:wechaty/python-wechaty-getting-started.git
+cd python-wechaty-getting-started
+make install
+make bot
+```
+
 ## History
 
 - [Python Wechaty如何使用PadLocal Puppet Service, Biofer, Feb, 3, 2021](https://wechaty.js.org/2021/02/03/python-wechaty-for-padlocal-puppet-service/)

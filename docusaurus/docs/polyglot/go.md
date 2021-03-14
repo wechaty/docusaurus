@@ -8,6 +8,17 @@ sidebar_label: Go
 - GitHub Repo <https://github.com/wechaty/go-wechaty>
 - Getting Started Template Repo <https://github.com/wechaty/go-wechaty>
 
+## Getting Started
+
+Template Repo: <https://github.com/wechaty/go-wechaty-getting-started>
+
+```sh
+git clone git@github.com:wechaty/go-wechaty-getting-started.git
+cd go-wechaty-getting-started
+make install
+make bot
+```
+
 ## History
 
 - [Go Wechaty Beta Released!, dchaofei, Jun 29, 2020](https://wechaty.js.org/2020/06/29/go-wechaty-beta-released/)

@@ -8,6 +8,17 @@ sidebar_label: Java
 - GitHub Repo <https://github.com/wechaty/java-wechaty>
 - Getting Started Template Repo <https://github.com/wechaty/java-wechaty-getting-started>
 
+## Getting Started
+
+Template Repo: <https://github.com/wechaty/java-wechaty-getting-started>
+
+```sh
+git clone git@github.com:wechaty/java-wechaty-getting-started.git
+cd java-wechaty-getting-started
+make install
+make bot
+```
+
 ## History
 
 - [Java Wechaty Beta Released: 终于有了 Java 可以用的微信机器人, 犀利豆, Jun 15, 2020](https://wechaty.js.org/2020/06/15/java-wechaty-beta-release/)
