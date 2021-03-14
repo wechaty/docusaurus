@@ -1,8 +1,7 @@
 ---
 slug: /tutorials/
 title: Wechaty Tutorials
-sidebar_label: 'Tutorials Index'
-description: 'Overview of the Wechaty tutorial pages'
+sidebar_label: 'Tutorials: Index'
 ---
 
 <!-- tutorial/Codelab - Converts a reader from curious investigator to active user. -->

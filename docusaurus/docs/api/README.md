@@ -1,7 +1,7 @@
 ---
 slug: /api/
 title: Wechaty API Reference
-sidebar_label: 'API Index'
+sidebar_label: 'API: Index'
 ---
 
 <!-- Curious Beginner: API reference - Details all elements in an API. -->

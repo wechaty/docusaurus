@@ -3,8 +3,8 @@ title: "Wechaty Summer of Code 2020 Kickoff Meeting"
 author: rickyyin98
 categories: announcement
 tags:
-  - soc
-  - soc2020
+  - summer-of-wechaty
+  - summer-2020
   - talk
   - news
   - meetup

@@ -5,7 +5,6 @@ categories: tutorial
 tags: 
   - openai
   - talk
-  - sticky
   - featured
 image: /assets/2020/wechaty-weixin-openai/teaser-image.png
 ---
@@ -69,7 +68,7 @@ bot.start()
 19:27:48 INFO WechatyPluginContrib EventLogger scan: http://weixin.qq.com/x/QfsfuToGOs-EVGgaa-gn,2,
 
 19:27:48 INFO WechatyPluginContrib QRCodeTerminal Login QR Code Status: Waiting(2)
-QR Code Image URL: https://wechaty.github.io/qrcode/http%3A%2F%2Fweixin.qq.com%2Fx%2FQfsfuToGOs-EVGgaa-gn
+QR Code Image URL: https://wechaty.js.org/qrcode/http%3A%2F%2Fweixin.qq.com%2Fx%2FQfsfuToGOs-EVGgaa-gn
 19:27:55 INFO PadplusManager
             =================================================
             QRCODE_SCAN MSG : 已扫码，请在手机端确认登陆...

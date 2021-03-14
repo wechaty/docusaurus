@@ -1,6 +1,6 @@
 ---
 title: "微信代购机器人（WeChat Purchasing Robot）"
-author: devozou
+author: zoudingyi
 categories: project
 tags:
   - wechaty-puppet-padplus

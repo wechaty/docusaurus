@@ -1,5 +1,5 @@
 ---
-title: "wechaty-rainbowbot 基于WeChaty实现的企业业务系统与营销团队微信群之间通信的桥梁"
+title: "wechaty-rainbowbot 基于Wechaty实现的企业业务系统与营销团队微信群之间通信的桥梁"
 author: cavoncheng
 categories: project
 tags:

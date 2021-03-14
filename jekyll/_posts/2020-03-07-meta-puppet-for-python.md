@@ -6,7 +6,6 @@ tags:
   - python
   - socket
   - puppet
-  - featured
 image: /assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.jpg
 ---
 

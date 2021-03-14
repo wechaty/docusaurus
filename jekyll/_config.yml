@@ -1,6 +1,6 @@
 # Site
 name: Wechaty
-description: Conversational SDK for Chatbot Makers
+description: RPA SDK for Chatbot Makers
 logo: assets/images/logo.png
 favicon: assets/images/favicon.ico
 url: https://wechaty.js.org
@@ -29,7 +29,7 @@ defaults:
       layout: post
       comments: true
       author: wechaty
-      avatar: /assets/developers/wechaty/icon.png
+      avatar: /assets/contributors/wechaty/icon.png
 
   # all pages
   - scope:
@@ -37,9 +37,9 @@ defaults:
     values:
       layout: page
   - scope:
-      path: _developers
+      path: _contributors
     values:
-      layout: developer
+      layout: contributor
       comments: true
 
 # Syntax
@@ -57,6 +57,6 @@ exclude:
   - node_modules
 
 collections:
-  developers:
+  contributors:
     output: true
     permalink: /:collection/:path/

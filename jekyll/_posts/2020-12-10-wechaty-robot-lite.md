@@ -32,7 +32,7 @@ image: /assets/2020/12-wechaty-robot-lite/example-1.png
 
 ### 学习：
 
-* 我这里的项目是基于[wechaty-puppet-hostie](https://github.com/wechaty/wechaty-puppet-hostie)
+* 我这里的项目是基于[wechaty-puppet-service](https://github.com/wechaty/wechaty-puppet-service)
 * [官方API文档](https://wechaty.js.org/docs/api/)（很重要！！！一定要先看文档再下手，如果要基于这个开发，一定要把它当作手册）
 * [官方参考示例](https://github.com/juzibot/donut-tester#example)（至于我为什么基于这个示例，因为官方给的我15天免费token是donut版，基于windows协议）
 * 语言：主要是nodejs，基于express框架→[传送门（点它）](https://www.expressjs.com.cn/)
@@ -55,7 +55,7 @@ image: /assets/2020/12-wechaty-robot-lite/example-1.png
 
   * 意思是我们提交审查表后，会获得为期15天的免费Token；想要获取长期有效的免费token，那就参加所谓的开源激励计划，就是在15天后，需要提交一个MVP(最小可行化产品)的Github仓库，Wechaty会将其fork到社区中的同时，会提供一个长期免费Token  
   * [wechaty-puppet-padplus](https://www.lizenghai.com/goto/?url=https://github.com/wechaty/wechaty-puppet-padplus)：基于ipad协议的微信机器人
-  * [wechaty-puppet-hostie](https://github.com/wechaty/wechaty-puppet-hostie)：基于windows协议的机器人
+  * [wechaty-puppet-service](https://github.com/wechaty/wechaty-puppet-service)：基于windows协议的机器人
 
 ### 初步需求：
 
@@ -386,7 +386,7 @@ puppet_donut.run = function(){
     const token = config.token;
 
     bot = new Wechaty({
-        puppet: 'wechaty-puppet-hostie',
+        puppet: 'wechaty-puppet-service',
         puppetOptions: {
             token,
         },
@@ -436,7 +436,7 @@ module.exports = puppet_donut;
 
 ```javascript
     bot = new Wechaty({
-        puppet: 'wechaty-puppet-hostie',
+        puppet: 'wechaty-puppet-service',
         puppetOptions: {
             token,
         },

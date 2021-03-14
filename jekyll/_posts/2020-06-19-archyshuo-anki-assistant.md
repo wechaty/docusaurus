@@ -76,9 +76,9 @@ And [Archy the Anki Bot 0.0.1](https://github.com/archywillhe/archy-the-anki-bot
 
 ![Informal UML](/assets/2020/archyshuo-anki-assistant/informal-uml.png)
 
-Basically we would have an `ArticleAnalysor`, a `TextAnalysor`, a `Lexicographer`, and an `AnkiDeckGenerator`. And we would integrate everything in main.ts where we handle WeChaty callbacks.
+Basically we would have an `ArticleAnalysor`, a `TextAnalysor`, a `Lexicographer`, and an `AnkiDeckGenerator`. And we would integrate everything in main.ts where we handle Wechaty callbacks.
 
-基本来说，我们会有一个`ArticleAnalysor`、 `TextAnalysor`、 `Lexicographer`、 `AnkiDeckGenerator`。 然后，我们会在处理WeChaty回调的main.ts中合并所有东西。
+基本来说，我们会有一个`ArticleAnalysor`、 `TextAnalysor`、 `Lexicographer`、 `AnkiDeckGenerator`。 然后，我们会在处理Wechaty回调的main.ts中合并所有东西。
 
 For the current use cases, we would use the `ArticleAnalysor` to extract text from the WeChat Article (using `request` & `cheerio`), the `TextAnalysor` to tokenise the text into words (using [`jieba` with a pretrained model in `paddle`](https://github.com/fxsjy/jieba)), the `Lexicographer` to assign a difficulty score to each word (using an ad hoc formula with [Chih-Hao's Chinese characters meta-data](http://technology.chtsai.org/charfreq/characters.html)), as well as to give English definitions and pinyin to selected words (using [CC-CEDICT](https://cc-cedict.org/wiki/)). And lastly `AnkiDeckGenerator` is for generating a deck of Anki notes (using [genanki](https://github.com/kerrickstaley/genanki)).
 
@@ -129,7 +129,7 @@ Huge thanks to
 
 - [contributors of the genanki library for writing such an easy-to-use tool!](https://github.com/kerrickstaley/genanki/graphs/contributors)
 
-- the [WeChaty community](https://wechaty.github.io/) and [everyone involved in making WeChaty such a wonderful lib!](https://github.com/wechaty/wechaty#two_hearts-contributors) And [the Juzi.bot team](https://botorange.com/) for [opening up their padplus protocol ecosystem](https://github.com/juzibot/Welcome/wiki/Support-Developers) for outsiders like me!
+- the [Wechaty community](https://wechaty.github.io/) and [everyone involved in making Wechaty such a wonderful lib!](https://github.com/wechaty/wechaty#two_hearts-contributors) And [the Juzi.bot team](https://botorange.com/) for [opening up their padplus protocol ecosystem](https://github.com/juzibot/Welcome/wiki/Support-Developers) for outsiders like me!
 
 If you are interested in the development of this project feel free to follow Archy.sh on WeChat and TikTok or [join our mailing list](https://mailing-list.xn--nqr.xn--fiqs8s/) =)
 

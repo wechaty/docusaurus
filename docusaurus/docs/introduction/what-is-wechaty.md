@@ -2,11 +2,11 @@
 title: What is Wechaty
 ---
 
-![Wechaty: Conversational SDK for Chatbot Makers](/img/wechaty-logo.svg)
+![Wechaty: RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
 
 ## What is Wechaty
 
-[Wechaty](https://github.com/wechaty/wechaty/) is a Conversational SDK for chatbot makers that
+[Wechaty](https://github.com/wechaty/wechaty/) is a RPA SDK for chatbot makers that
 lets you create software to extend the functionality of the WeChat,
 written in Node.js with TypeScript, Support all platforms including
 [Linux](https://github.com/wechaty/wechaty/actions),

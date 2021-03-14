@@ -5,10 +5,10 @@
 
         {% if post.tags contains 'news' %}
               <!-- in home page, we only display posts with tag `home` -->
-              {% unless home %}{% continue %}{% endunless %}
+              {% unless news %}{% continue %}{% endunless %}
             {% else %}
-              <!-- in home page, we only display posts without tag `home` -->
-              {% if home %}{% continue %}{% endif %}
+              <!-- in news page, we only display posts without tag `news` -->
+              {% if news %}{% continue %}{% endif %}
             {% endif %}
 
             <li class="mb-4">

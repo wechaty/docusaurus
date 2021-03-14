@@ -1,14 +1,12 @@
 ---
-
- title: "暑期2020 [基于python-wechaty的群聊助手机器人] POC 成果展示"
- date: 2020-08-14 21:30 +0800
- author: kxz18
- categories: project
- image: /assets/2020/groupchat-assistant-bot-poc/header.png
- tags:
-   - python
-   - soc2020
-   - soc
+title: "暑期2020 [基于python-wechaty的群聊助手机器人] POC 成果展示"
+author: kxz18
+categories: project
+image: /assets/2020/groupchat-assistant-bot-poc/header.png
+tags:
+  - python
+  - summer-2020
+  - summer-of-wechaty
 ---
 
 ## 暑期2020

@@ -133,7 +133,7 @@ chmod +x /path/to/config/start.sh
 
 ```shell
 [Unit]
-Description=Matrix Bridge WeChaty
+Description=Matrix Bridge Wechaty
 After=matrix-synapse.service
 
 [Service]

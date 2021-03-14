@@ -51,14 +51,14 @@ Token的配置可以有多种方式：
 - 方法一：通过环境变量来配置
 
     ```bash
-    export WECHATY_PUPPET_HOSTIE_TOKEN='your-token'
+    export WECHATY_PUPPET_SERVICE_TOKEN='your-token'
     ```
 
 - 方法二：通过python代码来配置
 
     ```python
     import os
-    os.environ['WECHATY_PUPPET_HOSTIE_TOKEN'] = 'your-token'
+    os.environ['WECHATY_PUPPET_SERVICE_TOKEN'] = 'your-token'
     ```
 
 那如何获取长期Token呢？详细请看：[Everything-about-Wechaty](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
