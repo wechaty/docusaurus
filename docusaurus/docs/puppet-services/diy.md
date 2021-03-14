@@ -6,7 +6,7 @@ title: 'Puppet Service: DIY'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-[![Wechaty Puppet Service DIY](https://img.shields.io/badge/Service-DIY-blue)](diy)
+[![Wechaty Puppet Service DIY](https://img.shields.io/badge/Service-DIY-blue)](diy.md)
 
 :::note Do It Yourself
 
@@ -78,7 +78,7 @@ set WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal__TOKEN__"
 
 ### 3. Set Wechaty Puppet Service TOKEN
 
-In order to provide [Wechaty Puppet Service](puppet-servcie/README.md), you need to specify a [TOKEN](specifications/token.md) for authorization.
+In order to provide [Wechaty Puppet Service](.md), you need to specify a [TOKEN](specifications/token.md) for authorization.
 
 You can [Generate a new UUIDv4](https://www.uuidgenerator.net/version4) online, use this new UUIDv4 as your token.
 

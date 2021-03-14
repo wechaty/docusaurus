@@ -3,7 +3,7 @@ title: 'Puppet Service: PadLocal'
 sidebar_label: PadLocal
 ---
 
-[![Wechaty Puppet Service PadLocal](https://img.shields.io/badge/Service-PadLocal-blue)](padlocal)
+[![Wechaty Puppet Service PadLocal](https://img.shields.io/badge/Service-PadLocal-blue)](padlocal.md)
 
 - Repo: <https://github.com/padlocal/wechaty-puppet-padlocal>
 - Provider: [PadLocal](https://github.com/padlocal)

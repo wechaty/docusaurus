@@ -3,7 +3,7 @@ title: 'Puppet Service: Paimon'
 sidebar_label: Paimon
 ---
 
-[![Wechaty Puppet Service Paimon](https://img.shields.io/badge/Service-Paimon-blue)](paimon)
+[![Wechaty Puppet Service Paimon](https://img.shields.io/badge/Service-Paimon-blue)](paimon.md)
 
 - Provider: [zpaimon](https://github.com/zpaimon)
 - Support & Feedback: <https://github.com/wechaty/puppet-services/issues>
