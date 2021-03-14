@@ -78,7 +78,7 @@ set WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal__TOKEN__"
 
 ### 3. Set Wechaty Puppet Service TOKEN
 
-In order to provide [Wechaty Puppet Service](.md), you need to specify a [TOKEN](specifications/token.md) for authorization.
+In order to provide [Wechaty Puppet Service](specifications/service.md), you need to specify a [TOKEN](specifications/token.md) for authorization.
 
 You can [Generate a new UUIDv4](https://www.uuidgenerator.net/version4) online, use this new UUIDv4 as your token.
 
