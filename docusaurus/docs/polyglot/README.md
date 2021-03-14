@@ -158,20 +158,6 @@ $wechaty->onScan(function($qrcode, $status, $data) {
 ```
 
 </TabItem>
-<TabItem value="csharp">
-
-```csharp
-var wechaty = new Wechaty(options, logger).onScan((qrcode, status) => {
-  Console.WriteLine($"Scan QR Code to login: {status} https://wechaty.js.org/qrcode/{(qrcode)}`");
-}).OnLogin( user => {
-  Console.WriteLine("User {user} logined");
-}).OnMessage( message => {
-  Console.WriteLine($"Message: {message}");
-}).Start();
-```
-
-</TabItem>
-
 <TabItem value="scala">
 
 ```scala
@@ -190,7 +176,19 @@ object DingDongBot {
 ```
 
 </TabItem>
+<TabItem value="csharp">
 
+```csharp
+var wechaty = new Wechaty(options, logger).onScan((qrcode, status) => {
+  Console.WriteLine($"Scan QR Code to login: {status} https://wechaty.js.org/qrcode/{(qrcode)}`");
+}).OnLogin( user => {
+  Console.WriteLine("User {user} logined");
+}).OnMessage( message => {
+  Console.WriteLine($"Message: {message}");
+}).Start();
+```
+
+</TabItem>
 <TabItem value="rust">
 
 ```rust
