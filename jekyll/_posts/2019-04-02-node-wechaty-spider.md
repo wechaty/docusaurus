@@ -1,6 +1,6 @@
 ---
 title: "用Node+wechaty写一个爬虫脚本每天定时给女(男)朋友发微信暖心话"
-author: leo_chen
+author: gengchen528
 categories: project
 tags:
   - code

@@ -3,7 +3,7 @@ title: Bot Friday 第二弹
 author: lijiarui
 categories: event
 tags:
-  - bot friday
+  - bot5
   - talk
   - meetup
   - news

@@ -7,7 +7,7 @@ tags:
   - news
   - puppet
   - padlocal
-  - Puppet Service Provider
+  - puppet-service-provider
   - wechaty-puppet-padlocal
 ---
 
@@ -15,7 +15,7 @@ tags:
 
 几年前做爬虫系统的时候，第一次接触到了 Wechaty。这个项目需要定期推送爬虫的状态信息，以及主动查询爬取的相关内容。正好当时有一句很流行的话：“对话即服务”，于是就想是不是可以通过微信来实现这些功能？借助 Wechaty 很快就实现了所有功能，最终效果也非常不错。
 
-## PadLocal: WeChaty puppet service provider
+## PadLocal: Wechaty puppet service provider
 
 但那时候社区中的 puppet 还不是特别完美，使用过程中有一些槽点。而且 puppet 生命周期不是特别稳定，用了一段时间可能就不再维护，我们担心这种不确定性会影响到我们的业务，于是萌生了自己去开发一个 puppet 的想法。再加上我自己也是国内比较早的一批 iOS 开发者，自信对 iOS 有比较深入的理解，以前也玩过一点逆向，觉得这样的想法也并非天方夜谭。
 

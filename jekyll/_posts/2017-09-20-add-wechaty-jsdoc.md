@@ -4,7 +4,6 @@ author: lijiarui
 categories: announcement
 tags:
   - document
-  - featured
 image: /assets/2017/add-wechaty-jsdoc-automate-all-the-things.jpg
 ---
 

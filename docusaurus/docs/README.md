@@ -3,7 +3,7 @@ slug: '/'
 title: Wechaty Docs Index
 ---
 
-![Wechaty is a Conversational SDK for Chatbot Makers](/img/wechaty-logo.svg)
+![Wechaty is a RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
 
 ## Table of Contents
 

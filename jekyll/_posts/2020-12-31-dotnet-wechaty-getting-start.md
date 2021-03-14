@@ -3,8 +3,8 @@ title: ".NET Wechaty Getting Start"
 author: jesn
 categories: tutorial
 tags:
-  - dotnet wechaty
-  - csharp wechaty
+  - dotnet-wechaty
+  - csharp-wechaty
   - csharp
   - dotnet
 image: /assets/2020/12-dotnet-wechaty/dotnet-wechaty.png
@@ -42,7 +42,7 @@ var bot = new Wechaty.Wechaty(new PuppetOptions()
 {
     // 如何申请token，请看：https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty
     Token = "your token",
-    PuppetService = "wechaty-puppet-hostie"
+    PuppetService = "wechaty-puppet-service"
 });
 
  // 监听bot事件
@@ -90,14 +90,14 @@ namespace dotnet_wechaty_getting_start
             var bot = new Wechaty.Wechaty(new PuppetOptions()
             {
                 Token = "puppet_rock_4448d7e832fd436c9f2a1d33eea8e865",
-                PuppetService = "wechaty-puppet-hostie"
+                PuppetService = "wechaty-puppet-service"
             });
 
             // 监听bot事件
             await bot
                 .OnScan((string qrcode, ScanStatus status, string? data) =>
                 {
-                    const string QrcodeServerUrl = "https://wechaty.github.io/qrcode/";
+                    const string QrcodeServerUrl = "https://wechaty.js.org/qrcode/";
                     if (status == ScanStatus.Waiting || status == ScanStatus.Timeout)
                     {
                         var qrcodeImageUrl = QrcodeServerUrl + qrcode;
@@ -147,12 +147,12 @@ namespace dotnet_wechaty_getting_start
 [![.NET(C#) Wechatyin](https://img.shields.io/badge/Wechaty-.NET-629)](https://github.com/wechaty/dotnet-wechaty)
 
 - [Wechaty](https://github.com/wechaty/wechaty) - Conversatioanl SDK for Chatot Makers (TypeScript)
-- [Python Wechaty](https://github.com/wechaty/python-wechaty) - Conversational SDK for Chatbot Makers written in Python
-- [Go Wechaty](https://github.com/wechaty/go-wechaty) - Conversational SDK for Chatbot Makers written in Go
-- [Java Wechaty](https://github.com/wechaty/java-wechaty) - Conversational SDK for Chatbot Makers written in Java(Kotlin)
-- [Scala Wechaty](https://github.com/wechaty/scala-wechaty) - Conversational SDK for Chatbot Makers written in Scala
-- [PHP Wechaty](https://github.com/wechaty/php-wechaty) - Conversational SDK for Chatbot Makers written in PHP
-- [.Net(C#) Wechaty](https://github.com/wechaty/dotnet-wechaty) - Conversational SDK for Chatbot Makers written in .NET(C#)
+- [Python Wechaty](https://github.com/wechaty/python-wechaty) - RPA SDK for Chatbot Makers written in Python
+- [Go Wechaty](https://github.com/wechaty/go-wechaty) - RPA SDK for Chatbot Makers written in Go
+- [Java Wechaty](https://github.com/wechaty/java-wechaty) - RPA SDK for Chatbot Makers written in Java(Kotlin)
+- [Scala Wechaty](https://github.com/wechaty/scala-wechaty) - RPA SDK for Chatbot Makers written in Scala
+- [PHP Wechaty](https://github.com/wechaty/php-wechaty) - RPA SDK for Chatbot Makers written in PHP
+- [.Net(C#) Wechaty](https://github.com/wechaty/dotnet-wechaty) - RPA SDK for Chatbot Makers written in .NET(C#)
 
 ## Join Wechaty
 

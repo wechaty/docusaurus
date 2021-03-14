@@ -4,8 +4,8 @@ author: univerone
 categories: project
 tags:
   - plugins
-  - soc
-  - soc2020
+  - summer-of-wechaty
+  - summer-2020
 image: /assets/2020/wechaty-words-per-day-plugin-final/logo.png
 ---
 

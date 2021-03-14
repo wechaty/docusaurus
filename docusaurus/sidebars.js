@@ -1,51 +1,14 @@
-const CHATBOT_1_TO_2 = {
-  type: 'category',
-  label: 'Chatbot 1 to 2',
-  items: [
-    'chatbot-1-to-2/README',
-    {
-      type: 'category',
-      label: '基础篇',
-      items: [
-        'chatbot-1-to-2/basic/typescript',
-        'chatbot-1-to-2/basic/basic-wechaty',
-        'chatbot-1-to-2/basic/seven-lines-code-chatbot',
-        'chatbot-1-to-2/basic/ding-dong-bot',
-      ],
-    },
-    {
-      type: 'category',
-      label: '应用篇',
-      items: [
-        'chatbot-1-to-2/applications/1.words-per-day',
-        'chatbot-1-to-2/applications/2.contact-and-room-management',
-        'chatbot-1-to-2/applications/3.group-chatbot',
-        'chatbot-1-to-2/applications/4.group-qa-chatbot',
-      ],
-    },
-    {
-      type: 'category',
-      label: '进阶篇',
-      items: [
-        'chatbot-1-to-2/advanced/1.multi-languages',
-        'chatbot-1-to-2/advanced/2.multi-platform',
-        'chatbot-1-to-2/advanced/3.multi-plugins',
-        'chatbot-1-to-2/advanced/4.deployment',
-        'chatbot-1-to-2/advanced/5.wechaty-with-ai',
-        'chatbot-1-to-2/advanced/6.story-of-open-source',
-      ],
-    },
-  ],
-}
+const CHATBOT_1_TO_2 = require('./sidebar-chatbot-1-to-2.js')
 
 module.exports = {
   docs: {
     Introduction: [
       'introduction/README',
-      'introduction/multi-language',
       'introduction/puppet',
-      'introduction/concepts',
       'introduction/motivations',
+      'introduction/concepts',
+      'introduction/architecture',
+      'introduction/lifecycle',
       'examples',
       'examples2',
       'introduction/alternatives',
@@ -58,9 +21,27 @@ module.exports = {
       'tutorials/video-tutorial',
       CHATBOT_1_TO_2,
     ],
+    'Polyglot': [
+      'polyglot/README',
+      'polyglot/typescript',
+      'polyglot/python',
+      'polyglot/go',
+      'polyglot/java',
+      'polyglot/scala',
+      'polyglot/php',
+      'polyglot/dotnet',
+      'polyglot/rust',
+      'polyglot/diy',
+    ],
     Recipes: [
       'recipes/README',
-      'recipes/configure-wechaty',
+      'recipes/wechaty',
+      'recipes/event',
+      'recipes/message',
+      'recipes/contact',
+      'recipes/room',
+      'recipes/friendship',
+      'recipes/file-box',
       'recipes/usage-with-typescript',
       'recipes/usage-with-docker',
       'recipes/usage-with-heroku',
@@ -70,20 +51,58 @@ module.exports = {
     ],
     'Case Study': [
       'case-study/README',
-      'case-study/friday-bot',
       'case-study/osschat-bot',
       'case-study/rui-bot',
+      'case-study/friday-bot',
+      'case-study/coaxer-bot',
       'case-study/projects-using-wechaty',
+    ],
+    'Puppet Providers': [
+      'puppet-providers/README',
+      'puppet-providers/wechat',
+      'puppet-providers/whatsapp',
+      'puppet-providers/official-account',
+      'puppet-providers/gitter',
+      'puppet-providers/lark',
+      'puppet-providers/padlocal',
+      'puppet-providers/wechat4u',
+      'puppet-providers/service',
+      'puppet-providers/mock',
+      'puppet-providers/diy',
     ],
     'Puppet Services': [
       'puppet-services/README',
       'puppet-services/wxwork',
       'puppet-services/padlocal',
+      'puppet-services/paimon',
       'puppet-services/donut',
+      'puppet-services/diy',
     ],
-    'Developer Program': [
-      'developer-program/README',
-      'developer-program/publish-blog',
+    'Contributor Program': [
+      'contributor-program/README',
+      'contributor-program/publish-blog',
+    ],
+    'Events': [
+      'events',
+      'bot5/README',
+      {
+        type: 'category',
+        label: '开源软件供应链点亮计划',
+        items: [
+          'ospp/README',
+          'ospp/2021',
+          'ospp/2020',
+        ],
+      },
+      'gsod/README',
+      {
+        type: 'category',
+        label: 'Google Summer of Code',
+        items: [
+          'gsoc/README',
+          'gsoc/2021',
+        ],
+      },
     ],
     'API Reference': [
       'api/README',
@@ -94,18 +113,20 @@ module.exports = {
       'api/room-invitation',
       'api/friendship',
     ],
-    FAQ: [
-      'faq/README',
-      'faq/general',
-      'faq/puppet',
-      'faq/miscellaneous',
+    Specifications: [
+      'specifications/README',
+      'specifications/wechaty',
+      'specifications/puppet',
+      'specifications/service',
+      'specifications/token',
     ],
+    FAQ: ['faq'],
     Troubleshooting: [
       'troubleshooting',
     ],
     Others: [
       'changelog',
-      'others/cheatsheet',
+      'cheatsheet',
       'awesome-wechaty',
       'advanced',
       'resources',

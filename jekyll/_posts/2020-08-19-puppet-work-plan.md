@@ -4,10 +4,9 @@ author: sapio-s
 categories: project
 image: /assets/2020/work-puppet/pic.jpg
 tags:
-  - featured
-  - soc
-  - soc2020
-  - Wechat Work
+  - summer-of-wechaty
+  - summer-2020
+  - wecom
 ---
 
 <!-- markdownlint-disable -->

@@ -1,13 +1,12 @@
 ---
 title: "基于开放 API 封装 Wechaty 接口下的飞书聊天机器人：期末"
-date: 2020-09-30 22:00 +0800
-author: fanrui
+author: roxanne718
 categories: project
 image: /assets/2020/lark-puppet/wechaty-lark-final.png
 tags:
   - featured
-  - soc2020
-  - soc
+  - summer-2020
+  - summer-of-wechaty
   - lark
 ---
 

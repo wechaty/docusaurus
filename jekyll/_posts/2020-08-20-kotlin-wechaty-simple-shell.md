@@ -60,7 +60,7 @@ open class AppConfig {
             onScan(object : ScanListener {
                 override fun handler(qrcode: String?, statusScanStatus: ScanStatus, data: String?) {
                     println(qrcode?.let { QrcodeUtils.getQr(it) })
-                    val url = "https://wechaty.github.io/qrcode/$qrcode"
+                    val url = "https://wechaty.js.org/qrcode/$qrcode"
                     log.info("Online Image: $url")
                     ServerChanUtil.push("微信机器人又挂掉啦~", url)
                 }

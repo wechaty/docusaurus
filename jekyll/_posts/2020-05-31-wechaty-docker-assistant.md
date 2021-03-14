@@ -1,6 +1,6 @@
 ---
 title: "wechaty Web Panel的构思与实现"
-author: leo_chen
+author: gengchen528
 categories: project
 tags:
   - code

@@ -41,7 +41,7 @@ Tencent is understandably opaque about its rules for catching bots to keep devel
 
 “Do your best to mimic a real account,” she advises. Chatbots should follow brand accounts, have a profile picture, post on Moments, and both proactively and passively make friends on the app. “Ideally have your friends add you first. And try to have these friends comment on the content in your Moments,” she says.
 
-At the moment, many WeChat bot developers rely on hacking the app’s web version. A quick search for “wechat bots” on Github pulls up multiple projects that can turn personal accounts into bots, such as WeChaty, the framework that Jiarui uses. However, that too has its limitations. Scraping the app’s web interface limits you to basic functions, such as sending messages and adding friends.
+At the moment, many WeChat bot developers rely on hacking the app’s web version. A quick search for “wechat bots” on Github pulls up multiple projects that can turn personal accounts into bots, such as Wechaty, the framework that Jiarui uses. However, that too has its limitations. Scraping the app’s web interface limits you to basic functions, such as sending messages and adding friends.
 
 “Web WeChat is this crippled, semi-supported project by Tencent,” emphasizes Alex, a freelance web developer who would only disclose his first name. You can only do about a quarter of what you can do with the mobile app, excluding all the “interesting features,” he says.
 

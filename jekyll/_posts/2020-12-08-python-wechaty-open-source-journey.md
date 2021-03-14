@@ -57,3 +57,9 @@ image: /assets/2020/python-wechaty/wechaty-nanjing-picture.jpg
 {% include iframe.html src="https://youtu.be/ncSWIRtHyAo" %}
 
 > YouTube: <https://youtu.be/ncSWIRtHyAo>
+
+## Vlog： Wechaty社区南京开源峰会之旅
+
+{% include iframe.html src="https://youtu.be/0ARx1cCf5p0" %}
+
+> YouTube: <https://youtu.be/0ARx1cCf5p0>
