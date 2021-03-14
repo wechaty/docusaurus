@@ -3,7 +3,7 @@ title: 'Puppet Service: Donut'
 sidebar_label: Donut
 ---
 
-[![Wechaty Puppet Service Donut](https://img.shields.io/badge/Service-Donut-blue)](donut)
+[![Wechaty Puppet Service Donut](https://img.shields.io/badge/Service-Donut-blue)](donut.md)
 
 - Repo: <https://github.com/juzibot/donut-tester>
 - Provider: [@juzibot](https://github.com/juzibot)

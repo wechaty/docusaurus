@@ -4,16 +4,16 @@ title: Wechaty Puppet Providers
 sidebar_label: 'Puppet Providers: Index'
 ---
 
-[![Wechaty Puppet WeChat](https://img.shields.io/badge/Puppet-WeChat-blueviolet)](wechat)
-[![Wechaty Puppet Whatsapp](https://img.shields.io/badge/Puppet-Whatsapp-blueviolet)](whatsapp)
-[![Wechaty Puppet Official Account](https://img.shields.io/badge/Puppet-Official%20Account-blueviolet)](official-account)
-[![Wechaty Puppet Gitter](https://img.shields.io/badge/Puppet-Gitter-blueviolet)](gitter)
-[![Wechaty Puppet Lark](https://img.shields.io/badge/Puppet-Lark-blueviolet)](lark)
-[![Wechaty Puppet PadLocal](https://img.shields.io/badge/Puppet-PadLocal-blueviolet)](padlocal)
-[![Wechaty Puppet WeChat4U](https://img.shields.io/badge/Puppet-WeChat4U-blueviolet)](wechat4u)
-[![Wechaty Puppet Service](https://img.shields.io/badge/Puppet-Service-blueviolet)](service)
-[![Wechaty Puppet Mock](https://img.shields.io/badge/Puppet-Mock-blueviolet)](mock)
-[![Wechaty Puppet DIY](https://img.shields.io/badge/Provider-DIY-blueviolet)](diy)
+[![Wechaty Puppet WeChat](https://img.shields.io/badge/Puppet-WeChat-blueviolet)](wechat.md)
+[![Wechaty Puppet Whatsapp](https://img.shields.io/badge/Puppet-Whatsapp-blueviolet)](whatsapp.md)
+[![Wechaty Puppet Official Account](https://img.shields.io/badge/Puppet-Official%20Account-blueviolet)](official-account.md)
+[![Wechaty Puppet Gitter](https://img.shields.io/badge/Puppet-Gitter-blueviolet)](gitter.md)
+[![Wechaty Puppet Lark](https://img.shields.io/badge/Puppet-Lark-blueviolet)](lark.md)
+[![Wechaty Puppet PadLocal](https://img.shields.io/badge/Puppet-PadLocal-blueviolet)](padlocal.md)
+[![Wechaty Puppet WeChat4U](https://img.shields.io/badge/Puppet-WeChat4U-blueviolet)](wechat4u.md)
+[![Wechaty Puppet Service](https://img.shields.io/badge/Puppet-Service-blueviolet)](service.md)
+[![Wechaty Puppet Mock](https://img.shields.io/badge/Puppet-Mock-blueviolet)](mock.md)
+[![Wechaty Puppet DIY](https://img.shields.io/badge/Provider-DIY-blueviolet)](diy.md)
 
 For different instant messaging (IM) systems (such as WeChat, Whatsapp, and TikTok), the Wechaty community builds separate RPA modules for each, and we call those modules [Wechaty Puppet](https://github.com/wechaty/wechaty-puppet).
 
@@ -33,15 +33,15 @@ Now, we have the following Wechaty Puppet Providers:
 
 | Name | Platform | Protocol | Stable |
 | :---: | :---: | :---: | :---: |
-| [WeChat](wechat/) | WeChat | Web | Beta |
-| [Wahtsapp](whatsapp/) | Whatsapp | Web | Alpha |
+| [WeChat](wechat.md) | WeChat | Web | Beta |
+| [Wahtsapp](whatsapp.md) | Whatsapp | Web | Alpha |
 | [Official Account](official-account/) | WeChat Official Account | API | Alpha |
-| [Gitter](gitter/) | Gitter | API | Alpha |
-| [Lark](lark/) | Lark | API | Alpha |
-| [PadLocal](padlocal/) | WeChat | Pad | Beta |
-| [WeChat4U](wechat4u/) | WeChat | Web | Alpha |
-| [Service](service/) | Universal | gRPC | Beta |
-| [Mock](mock/) | Universal | Mock | Beta |
+| [Gitter](gitter.md) | Gitter | API | Alpha |
+| [Lark](lark.md) | Lark | API | Alpha |
+| [PadLocal](padlocal.md) | WeChat | Pad | Beta |
+| [WeChat4U](wechat4u.md) | WeChat | Web | Alpha |
+| [Service](service.md) | Universal | gRPC | Beta |
+| [Mock](mock.md) | Universal | Mock | Beta |
 
 ## History
 
