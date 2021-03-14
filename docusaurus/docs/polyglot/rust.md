@@ -8,6 +8,17 @@ sidebar_label: Rust
 - GitHub Repo <https://github.com/wechaty/rust-wechaty>
 - Getting Started Template Repo <https://github.com/wechaty/rust-wechaty-getting-started>
 
+## Getting Started
+
+Template Repo: <https://github.com/wechaty/rust-wechaty-getting-started>
+
+```sh
+git clone git@github.com:wechaty/rust-wechaty-getting-started.git
+cd rust-wechaty-getting-started
+make install
+make bot
+```
+
 ## History
 
 ## Maintainers

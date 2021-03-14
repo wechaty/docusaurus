@@ -8,6 +8,17 @@ sidebar_label: .NET
 - GitHub Repo <https://github.com/wechaty/dotnet-wechaty>
 - Getting Started Template Repo <https://github.com/wechaty/dotnet-wechaty-getting-started>
 
+## Getting Started
+
+Template Repo: <https://github.com/wechaty/dotnet-wechaty-getting-started>
+
+```sh
+git clone git@github.com:wechaty/dotnet-wechaty-getting-started.git
+cd dotnet-wechaty-getting-started
+make install
+make bot
+```
+
 ## History
 
 - [.NET Wechaty如何使用PadLocal Puppet Service, Darren, Jan 28, 2021](https://wechaty.js.org/2021/01/28/csharp-wechaty-for-padlocal-puppet-service/)

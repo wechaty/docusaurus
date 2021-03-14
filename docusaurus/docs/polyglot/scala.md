@@ -8,6 +8,17 @@ sidebar_label: Scala
 - GitHub Repo <https://github.com/wechaty/scala-wechaty>
 - Getting Started Template Repo <https://github.com/wechaty/scala-wechaty-getting-started>
 
+## Getting Started
+
+Template Repo: <https://github.com/wechaty/scala-wechaty-getting-started>
+
+```sh
+git clone git@github.com:wechaty/scala-wechaty-getting-started.git
+cd scala-wechaty-getting-started
+make install
+make bot
+```
+
 ## History
 
 ## Maintainers
