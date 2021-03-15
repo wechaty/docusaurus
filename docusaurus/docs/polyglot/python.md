@@ -21,8 +21,12 @@ make bot
 
 ## History
 
-- [Python Wechaty如何使用PadLocal Puppet Service, Biofer, Feb, 3, 2021](https://wechaty.js.org/2021/02/03/python-wechaty-for-padlocal-puppet-service/)
 - [Python Wechaty Beta Released: A Simple Bot, wj-Mcat, Jun 17, 2020](https://wechaty.js.org/2020/06/17/python-wechaty-beta-released/)
+
+## Blogs
+
+- [Python-wechaty & wechaty-puppet-padlocal的初探, iivveess, Mar 8, 2021](https://wechaty.js.org/2021/03/08/python-wechaty-and-wechaty-puppet-padlocal/)
+- [Python Wechaty如何使用PadLocal Puppet Service, Biofer, Feb, 3, 2021](https://wechaty.js.org/2021/02/03/python-wechaty-for-padlocal-puppet-service/)
 
 ## Maintainers
 
