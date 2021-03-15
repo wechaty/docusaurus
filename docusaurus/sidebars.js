@@ -51,11 +51,14 @@ module.exports = {
     ],
     'Case Study': [
       'case-study/README',
-      'case-study/osschat-bot',
-      'case-study/rui-bot',
-      'case-study/friday-bot',
       'case-study/coaxer-bot',
-      'case-study/projects-using-wechaty',
+    ],
+    'Showcases': [
+      'showcases/README',
+      'showcases/osschat-bot',
+      'showcases/rui-bot',
+      'showcases/friday-bot',
+      'showcases/projects-using-wechaty',
     ],
     'Puppet Providers': [
       'puppet-providers/README',
