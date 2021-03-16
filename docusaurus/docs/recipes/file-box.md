@@ -53,16 +53,16 @@ await bot.say(fileBox)
 ```
 
 </TabItem>
-<TabItem value="java">
+<TabItem value="go">
 
-```java
+```go
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="go">
+<TabItem value="java">
 
-```go
+```java
 // TODO: Pull Request is welcome!
 ```
 
@@ -74,16 +74,16 @@ await bot.say(fileBox)
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -164,20 +164,28 @@ bot.on('message', onMessage)
 <TabItem value="py">
 
 ```py
-# TODO: Pull Request is welcome!
-```
+from wechaty_puppet import FileBox
+from wechaty import Wechaty, Contact, Message
 
-</TabItem>
-<TabItem value="java">
-
-```java
-// TODO: Pull Request is welcome!
+class MyBot(Wechaty):
+    async def on_message(self, msg: Message):
+        if msg.type() == MessageType.MESSAGE_TYPE_IMAGE:
+            image_file_box = await msg.to_file_box()
+            print(f'saving file<{image_file_box.name}>')
+            await image_file_box.to_file('/path/to/local/file')
 ```
 
 </TabItem>
 <TabItem value="go">
 
 ```go
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="java">
+
+```java
 // TODO: Pull Request is welcome!
 ```
 
@@ -189,16 +197,16 @@ bot.on('message', onMessage)
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 

@@ -76,21 +76,6 @@ asyncio.run(main())
 ```
 
 </TabItem>
-<TabItem value="java">
-
-```java
-package io.github.wechaty;
-
-class Bot{
-  public static void main(String args[]){
-    Wechaty bot = new Wechaty()
-    // TODO: init your bot at here...
-    bot.start(true);
-  }
-}
-```
-
-</TabItem>
 <TabItem value="go">
 
 ```go
@@ -110,22 +95,27 @@ func main() {
 ```
 
 </TabItem>
+<TabItem value="java">
+
+```java
+package io.github.wechaty;
+
+class Bot{
+  public static void main(String args[]){
+    Wechaty bot = new Wechaty()
+    // TODO: init your bot at here...
+    bot.start(true);
+  }
+}
+```
+
+</TabItem>
 <TabItem value="php">
 
 ```php
 $bot = \IO\Github\Wechaty\Wechaty::getInstance();
 // TODO: init your bot at here...
 $bot->start();
-```
-
-</TabItem>
-
-<TabItem value="csharp">
-
-```csharp
-var bot = new Wechaty()
-// TODO: init your bot at here...
-bot.Start();
 ```
 
 </TabItem>
@@ -145,7 +135,15 @@ object DingDongBot {
 ```
 
 </TabItem>
+<TabItem value="csharp">
 
+```csharp
+var bot = new Wechaty()
+// TODO: init your bot at here...
+bot.Start();
+```
+
+</TabItem>
 <TabItem value="rust">
 
 ```rust

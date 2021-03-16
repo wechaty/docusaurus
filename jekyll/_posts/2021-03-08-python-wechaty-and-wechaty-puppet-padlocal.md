@@ -12,6 +12,7 @@ image: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/python-wechaty
 
 ## Python-wechaty & wechaty-puppet-padlocal的初探 ##
 
+
 本文为本地运行python-wechaty + 云上虚拟机运行wechaty-puppet-padlocal的简易教学
 
 ## 注意事项 ##
@@ -24,6 +25,7 @@ image: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/python-wechaty
 
 * March 01, 2021
 * March 16, 2021
+
 
 ## 环境 ##
 
@@ -42,6 +44,7 @@ image: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/python-wechaty
 
 ## Step 1 wechaty-puppet-padlocal ##
 
+
 你会需要一个国内的公网IP+Token([请向管理员注册](https://wechaty.js.org/docs/puppet-services/#1-free-token-short-term))来让wechaty-puppet生效
 虚拟机部分,试用or免费方案你可以选用阿里云or华为云的or~~GCP~~
 很可惜google没有在国内的IP，~~不然你还可以顺便玩一下gcp的k8s~~
@@ -51,7 +54,8 @@ image: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/python-wechaty
 注册个ubuntu20.04即可,注意安全组要**放行port 8788**  
 在ubuntu cmdline里运行以下指令
 
-``` shell
+
+```  shell
 apt update
 apt install docker.io
 docker pull wechaty/wechaty
@@ -80,8 +84,10 @@ docker container ls
 
 ![testing]
 
+
 你可以telnet 虚拟机IP:8788 简易debug一下通不通
 (Optional)你可以运行将docker run改为docker-compose，虚拟机当机后可以自动长起来
+
 
 ## Step 2 验证hostie token ##
 
@@ -96,6 +102,7 @@ No Good:
 
 ## Step 3 本地运行python ##
 
+
 python-wechaty-getting-started你需要Python3.7+
 运行以下cmd
 
@@ -108,16 +115,19 @@ export WECHATY_PUPPET_SERVICE_TOKEN=your_token_at_here
 python3 examples/ding-dong-bot.py
 ```
 
+
  坐等QR code出现扫码就好
 ![qrcode]
 
 ## Step 4 微信扫码 ##
+
 
 ~~目前用**新注册帐号会失败**~~  
 扫完后就登入了
 
 最后再请朋友或是发给自己ding(不要有空格跟全小写)
 就会自动回dong啦！
+
 后续有非常多资源跟应用在[官网](https://wechaty.js.org/blog/)上，
 大家有空就翻翻看。
 Happy hacking!

@@ -1,8 +1,14 @@
 ---
 slug: /puppet-services/
-title: Puppet Services
+title: Wechaty Puppet Services
 sidebar_label: 'Puppet Services: Index'
 ---
+
+[![Wechaty Puppet Service WXWork](https://img.shields.io/badge/Service-WXWork-blue)](wxwork.md)
+[![Wechaty Puppet Service PadLocal](https://img.shields.io/badge/Service-PadLocal-blue)](padlocal.md)
+[![Wechaty Puppet Service Paimon](https://img.shields.io/badge/Service-Paimon-blue)](paimon.md)
+[![Wechaty Puppet Service Donut](https://img.shields.io/badge/Service-Donut-blue)](donut.md)
+[![Wechaty Puppet Service DIY](https://img.shields.io/badge/Service-DIY-blue)](diy.md)
 
 For different instant messaging (IM) systems (such as WeChat, Whatsapp, and TikTok), the Wechaty community builds separate RPA modules for each, and we call those modules [Wechaty Puppet](https://github.com/wechaty/wechaty-puppet).
 
@@ -57,10 +63,10 @@ Now, we have the following Wechaty Puppet Services:
 
 | Name | Platform | Protocol | Life Cycle |
 | :---: | :---: | :---: | :---: |
-| [WXWork](wxwork/) | WeCom | Windows | Beta |
-| [Paimon](paimon/)| WeChat | Pad | Beta |
-| [PadLocal](padlocal/) | WeChat | Pad | Beta |
-| [Donut](donut/) | WeChat | Windows | Deprecated |
+| [WXWork](wxwork.md) | WeCom | Windows | Beta |
+| [Paimon](paimon.md)| WeChat | Pad | Beta |
+| [PadLocal](padlocal.md) | WeChat | Pad | Beta |
+| [Donut](donut.md) | WeChat | Windows | Deprecated |
 
 > If you are interested in using a Wechaty Puppet Provider directly in your program instead of a Puppet Service, please visit our [Wechaty Puppet Directory](https://github.com/wechaty/wechaty-puppet/wiki/Directory)
 

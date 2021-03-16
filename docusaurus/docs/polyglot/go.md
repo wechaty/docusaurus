@@ -3,6 +3,27 @@ title: 'Go Wechaty'
 sidebar_label: Go
 ---
 
-## Under Construction
+[![Go Wechaty](https://img.shields.io/badge/Wechaty-Go-7de)](https://github.com/wechaty/go-wechaty)
 
-Pull Request is Welcome!
+- GitHub Repo <https://github.com/wechaty/go-wechaty>
+- Getting Started Template Repo <https://github.com/wechaty/go-wechaty>
+
+## Getting Started
+
+Template Repo: <https://github.com/wechaty/go-wechaty-getting-started>
+
+```sh
+git clone git@github.com:wechaty/go-wechaty-getting-started.git
+cd go-wechaty-getting-started
+make install
+make bot
+```
+
+## History
+
+- [Go Wechaty Beta Released!, dchaofei, Jun 29, 2020](https://wechaty.js.org/2020/06/29/go-wechaty-beta-released/)
+
+## Maintainers
+
+- [@dingdayu](https://github.com/dingdayu)
+- [@dchaofei](https://wechaty.js.org/contributors/dchaofei)

@@ -1,5 +1,5 @@
 ---
-title: 'Searching Contacts'
+title: 'Managing Contacts'
 ---
 
 import Tabs from '@theme/Tabs';
@@ -28,16 +28,20 @@ import TabItem from '@theme/TabItem';
 ```ts
 import { Contact } from 'wechaty'
 
-const contactList = await bot.Contact.findAll()
-console.info('Total number of contacts:', contactList.length)
+async function onReady () {
+  const contactList = await bot.Contact.findAll()
+  console.info('Total number of contacts:', contactList.length)
 
-for (const contact of contactList) {
-  console.info('Id:',   contact.id)
-  console.info('Name:', contact.name())
+  for (const contact of contactList) {
+    console.info('Id:',   contact.id)
+    console.info('Name:', contact.name())
 
-  const type = contact.type()
-  console.info('Type:', Contact.Type[type])
+    const type = contact.type()
+    console.info('Type:', Contact.Type[type])
+  }
 }
+
+bot.on('ready', onReady)
 ```
 
 </TabItem>
@@ -46,36 +50,47 @@ for (const contact of contactList) {
 ```js
 const { Contact } from 'wechaty'
 
-const contactList = await bot.Contact.findAll()
-console.info('Total number of contacts:', contactList.length)
+async function onReady () {
+  const contactList = await bot.Contact.findAll()
+  console.info('Total number of contacts:', contactList.length)
 
-for (const contact of contactList) {
-  console.info('Id:',   contact.id)
-  console.info('Name:', contact.name())
-  
-  const type = contact.type()
-  console.info('Type:', Contact.Type[type])
+  for (const contact of contactList) {
+    console.info('Id:',   contact.id)
+    console.info('Name:', contact.name())
+    
+    const type = contact.type()
+    console.info('Type:', Contact.Type[type])
+  }
 }
+
+bot.on('ready', onReady)
 ```
 
 </TabItem>
 <TabItem value="py">
 
 ```py
-# TODO: Pull Request is welcome!
-```
+from typing import List
+from wechaty import Wechaty, Contact
 
-</TabItem>
-<TabItem value="java">
-
-```java
-// TODO: Pull Request is welcome!
+class MyBot(Wechaty):
+    async def on_ready(self, _):
+        contacts: List[Contact] = await self.Contact.find_all()
+        for contact in contacts:
+            print(f'id<{contact.contact_id}>, name<{contact.name}>, type<{contact.type()}>')
 ```
 
 </TabItem>
 <TabItem value="go">
 
 ```go
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="java">
+
+```java
 // TODO: Pull Request is welcome!
 ```
 
@@ -87,16 +102,16 @@ for (const contact of contactList) {
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -133,54 +148,78 @@ for (const contact of contactList) {
 <TabItem value="ts">
 
 ```ts
-// find by id:
-const filehelper = await bot.Contact.find('filehelper')
-console.info('filehelper:', filehelper)
+async function onReady () {
+  // find by id:
+  const filehelper = await bot.Contact.find('filehelper')
+  console.info('filehelper:', filehelper)
 
-// find by name:
-const nameContainsJList = await bot.Contact.findAll({ name: /j/i })
-console.info('Total number of contacts:', nameContainsJList.length)
+  // find by name:
+  const nameContainsJList = await bot.Contact.findAll({ name: /j/i })
+  console.info('Total number of contacts:', nameContainsJList.length)
 
-for (const contact of nameContainsJList) {
-  console.info('contact:', contact)
+  for (const contact of nameContainsJList) {
+    console.info('contact:', contact)
+  }
 }
+
+bot.on('ready', onReady)
 ```
 
 </TabItem>
 <TabItem value="js">
 
 ```js
-// find by id:
-const filehelper = await bot.Contact.find('filehelper')
-console.info('filehelper:', filehelper)
+async function onReady () {
+  // find by id:
+  const filehelper = await bot.Contact.find('filehelper')
+  console.info('filehelper:', filehelper)
 
-// find by name:
-const nameContainsJList = await bot.Contact.findAll({ name: /j/i })
-console.info('Total number of contacts:', nameContainsJList.length)
+  // find by name:
+  const nameContainsJList = await bot.Contact.findAll({ name: /j/i })
+  console.info('Total number of contacts:', nameContainsJList.length)
 
-for (const contact of nameContainsJList) {
-  console.info('contact:', contact)
+  for (const contact of nameContainsJList) {
+    console.info('contact:', contact)
+  }
 }
+
+bot.on('ready', onReady)
 ```
 
 </TabItem>
 <TabItem value="py">
 
 ```py
-# TODO: Pull Request is welcome!
-```
+from typing import List, Optional
+from wechaty import Wechaty, Contact
+from wechaty_puppet.schemas.contact import ContactQueryFilter
 
-</TabItem>
-<TabItem value="java">
+class MyBot(Wechaty):
+    async def on_ready(self, _):
+        # find by id
+        filehelper: Optional[Contact] = await self.Contact.find('filehelper')
+        if filehelper:
+            print(f'filehelper<{filehelper}>')
+        
+        # find by name
+        contacts: List[Contact] = await self.Contact.find_all(ContactQueryFilter(name='your-friend-name'))
+        print(f'total number of contacts: {len(contacts)}')
 
-```java
-// TODO: Pull Request is welcome!
+        for contact in contacts:
+            print(contact)
 ```
 
 </TabItem>
 <TabItem value="go">
 
 ```go
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="java">
+
+```java
 // TODO: Pull Request is welcome!
 ```
 
@@ -192,16 +231,16 @@ for (const contact of nameContainsJList) {
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 

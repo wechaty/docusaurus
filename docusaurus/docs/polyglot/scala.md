@@ -3,6 +3,24 @@ title: 'Scala Wechaty'
 sidebar_label: Scala
 ---
 
-## Under Construction
+[![Scala Wechaty](https://img.shields.io/badge/Wechaty-Scala-890)](https://github.com/wechaty/scala-wechaty)
 
-Pull Request is Welcome!
+- GitHub Repo <https://github.com/wechaty/scala-wechaty>
+- Getting Started Template Repo <https://github.com/wechaty/scala-wechaty-getting-started>
+
+## Getting Started
+
+Template Repo: <https://github.com/wechaty/scala-wechaty-getting-started>
+
+```sh
+git clone git@github.com:wechaty/scala-wechaty-getting-started.git
+cd scala-wechaty-getting-started
+make install
+make bot
+```
+
+## History
+
+## Maintainers
+
+- [@jcai](https://wechaty.js.org/contributors/jcai)

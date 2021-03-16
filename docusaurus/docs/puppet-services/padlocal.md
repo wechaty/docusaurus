@@ -3,6 +3,8 @@ title: 'Puppet Service: PadLocal'
 sidebar_label: PadLocal
 ---
 
+[![Wechaty Puppet Service PadLocal](https://img.shields.io/badge/Service-PadLocal-blue)](padlocal.md)
+
 - Repo: <https://github.com/padlocal/wechaty-puppet-padlocal>
 - Provider: [PadLocal](https://github.com/padlocal)
 - Support & Feedback: <https://github.com/padlocal/wechaty-puppet-padlocal/issues>
@@ -18,6 +20,12 @@ sidebar_label: PadLocal
 ## How to buy(apply)
 
 Please follow [TOKEN 申请方法](https://github.com/padlocal/wechaty-puppet-padlocal/wiki/TOKEN-%E7%94%B3%E8%AF%B7%E6%96%B9%E6%B3%95), or [submit an issue at here](https://github.com/wechaty/puppet-services/issues/new?assignees=padlocal&labels=padlocal&template=padlocal.md&title=PadLocal%3A+)
+
+## Blogs
+
+- [.NET Wechaty如何使用PadLocal Puppet Service, Darren, Jan 28, 2021](https://wechaty.js.org/2021/01/28/csharp-wechaty-for-padlocal-puppet-service/)
+- [Python Wechaty如何使用PadLocal Puppet Service, Biofer, Feb, 3, 2021](https://wechaty.js.org/2021/02/03/python-wechaty-for-padlocal-puppet-service/)
+- [Python-wechaty & wechaty-puppet-padlocal的初探, iivveess, Mar 8, 2021](https://wechaty.js.org/2021/03/08/python-wechaty-and-wechaty-puppet-padlocal/)
 
 ## History
 
