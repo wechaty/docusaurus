@@ -27,6 +27,8 @@ Please follow [TOKEN 申请方法](https://github.com/padlocal/wechaty-puppet-pa
 - [Python Wechaty如何使用PadLocal Puppet Service, Biofer, Feb, 3, 2021](https://wechaty.js.org/2021/02/03/python-wechaty-for-padlocal-puppet-service/)
 - [Python-wechaty & wechaty-puppet-padlocal的初探, iivveess, Mar 8, 2021](https://wechaty.js.org/2021/03/08/python-wechaty-and-wechaty-puppet-padlocal/)
 
+Read more blogs with the `padlocal` tag at <https://wechaty.js.org/tags.html#padlocal>
+
 ## History
 
 1. [Alpha Announcement: New Wechaty Puppet Service: PadLocal](https://wechaty.js.org/2020/10/12/puppet-padlocal-intro/)

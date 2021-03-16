@@ -19,6 +19,10 @@ make install
 make bot
 ```
 
+## Blogs
+
+Read blogs with the `rust` tag at <https://wechaty.js.org/tags.html#rust>
+
 ## History
 
 ## Maintainers

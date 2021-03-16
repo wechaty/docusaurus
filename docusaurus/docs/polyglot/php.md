@@ -19,6 +19,10 @@ make install
 make bot
 ```
 
+## Blogs
+
+Read blogs with the `php` tag at <https://wechaty.js.org/tags.html#php>
+
 ## History
 
 ## Maintainers

@@ -29,3 +29,7 @@ Register via WeCom at [jukebox](https://qiwei.juzibot.com/user/login?isWechaty=t
 ## Contact
 
 - Wechat: juzibot
+
+## Blogs
+
+Read blogs with the `wxwork` tag at <https://wechaty.js.org/tags.html#wxwork>
