@@ -19,6 +19,10 @@ make install
 make bot
 ```
 
+## Blogs
+
+Read blogs with the `scala` tag at <https://wechaty.js.org/tags.html#scala>
+
 ## History
 
 ## Maintainers

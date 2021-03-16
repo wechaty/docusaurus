@@ -18,3 +18,7 @@ sidebar_label: Paimon
 ## Contact
 
 - Wechat: hutusheng-bot
+
+## Blogs
+
+Read blogs with the `paimon` tag at <https://wechaty.js.org/tags.html#paimon>

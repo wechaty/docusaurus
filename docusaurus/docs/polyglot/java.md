@@ -19,6 +19,10 @@ make install
 make bot
 ```
 
+## Blogs
+
+Read blogs with the `java` tag at <https://wechaty.js.org/tags.html#java>
+
 ## History
 
 - [Java Wechaty Beta Released: 终于有了 Java 可以用的微信机器人, 犀利豆, Jun 15, 2020](https://wechaty.js.org/2020/06/15/java-wechaty-beta-release/)

@@ -28,6 +28,8 @@ make bot
 - [Python-wechaty & wechaty-puppet-padlocal的初探, iivveess, Mar 8, 2021](https://wechaty.js.org/2021/03/08/python-wechaty-and-wechaty-puppet-padlocal/)
 - [Python Wechaty如何使用PadLocal Puppet Service, Biofer, Feb, 3, 2021](https://wechaty.js.org/2021/02/03/python-wechaty-for-padlocal-puppet-service/)
 
+Read more blogs with the `Python` tag at <https://wechaty.js.org/tags.html#python>
+
 ## Maintainers
 
 - [@wj-Mcat](https://wechaty.js.org/contributors/wj-mcat)
