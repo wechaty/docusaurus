@@ -4,6 +4,7 @@ module.exports = {
   docs: {
     Introduction: [
       'introduction/README',
+      'introduction/rpa',
       'introduction/puppet',
       'introduction/motivations',
       'introduction/concepts',
@@ -79,6 +80,7 @@ module.exports = {
       'puppet-services/padlocal',
       'puppet-services/paimon',
       'puppet-services/donut',
+      'puppet-services/compatibility',
       'puppet-services/diy',
     ],
     'Contributor Program': [
