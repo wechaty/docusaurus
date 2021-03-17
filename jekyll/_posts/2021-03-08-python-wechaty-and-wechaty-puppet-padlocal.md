@@ -16,12 +16,14 @@ image: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/python-wechaty
 
 ## 注意事项 ##
 
-1. wechaty-puppet-padlocal目前只能用**国内的公网IP**
-2. **新注册**的wechat小号会无法登入
+1. wechaty-puppet-padlocal~~目前只能用**国内公网IP**~~ Fixed at 2021-03-16
+2. ~~**新注册**的wechat小号会无法登入~~ Fixed at 2021-03-10
+3. Update cmd in step1 docker run
 
 ## Test Date ##
 
-* March 1, 2021
+* March 01, 2021
+* March 16, 2021
 
 ## 环境 ##
 
@@ -40,7 +42,7 @@ image: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/python-wechaty
 
 ## Step 1 wechaty-puppet-padlocal ##
 
-你会需要一个国内的公网IP+Token(请向管理员注册)来让wechaty-puppet生效
+你会需要一个国内的公网IP+Token(请向[管理员注册](https://wechaty.js.org/docs/puppet-services/#1-free-token-short-term))来让wechaty-puppet生效
 虚拟机部分,试用or免费方案你可以选用阿里云or华为云的or~~GCP~~
 很可惜google没有在国内的IP，~~不然你还可以顺便玩一下gcp的k8s~~
 建议你还是使用国内资源
@@ -57,14 +59,15 @@ export WECHATY_PUPPET_PADLOCAL_TOKEN=puppet_padlocal_xxxxxxxxxxxxxxxxxx
 export WECHATY_PUPPET_SERVER_PORT=8788
 export WECHATY_PUPPET=wechaty-puppet-padlocal
 export WECHATY_LOG=verbose
-docker run
-  --rm
-  -ti
-  -e WECHATY_LOG
-  -e WECHATY_PUPPET
-  -e WECHATY_HOSTIE_PORT
-  -e WECHATY_TOKEN
-  -p "$WECHATY_HOSTIE_PORT"
+docker run \
+  --rm \
+  -ti \
+  -e WECHATY_LOG \
+  -e WECHATY_PUPPET \
+  -e WECHATY_PUPPET_PADLOCAL_TOKEN \
+  -e WECHATY_PUPPET_SERVER_PORT \
+  -e WECHATY_TOKEN="$WECHATY_PUPPET_PADLOCAL_TOKEN" \
+  -p "$WECHATY_PUPPET_SERVER_PORT:$WECHATY_PUPPET_SERVER_PORT" \
   wechaty/wechaty
 ```
 
@@ -110,7 +113,7 @@ python3 examples/ding-dong-bot.py
 
 ## Step 4 微信扫码 ##
 
-目前用**新注册帐号会失败**  
+~~目前用**新注册帐号会失败**~~ Fixed  
 扫完后就登入了
 
 最后再请朋友或是发给自己ding(不要有空格跟全小写)
