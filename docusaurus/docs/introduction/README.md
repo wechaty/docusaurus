@@ -1,8 +1,12 @@
 ---
 slug: /introduction/
-title: Wechaty Introduction
-sidebar_label: 'Introduction: Index'
+title: Wechaty Introduction Overview
+sidebar_label: 'Overview'
 ---
+
+import ShortestChatbots from '../polyglot/transclusions/shortest-chatbots.mdx'
+import ProviderBadges   from '../puppet-providers/transclusions/badges.mdx'
+import PolyglotBadges   from '../polyglot/transclusions/badges.mdx'
 
 ![Wechaty is a RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
 
@@ -11,11 +15,28 @@ sidebar_label: 'Introduction: Index'
 
 ## What is Wechaty
 
-Wechaty is a [Conversational RPA](rpa.md) SDK for Chatbot Makers which can create a bot in 6 lines of [TypeScript](../polyglot/typescript/README.md), [JavaScript](../polyglot/typescript/README.md), [Python](../polyglot/python/README.md), [Go](../polyglot/go/README.md), [Java](../polyglot/java/README.md), [.NET](../polyglot/dotnet/README.md), [PHP](../polyglot/php/README.md), [Scala](../polyglot/scala/README.md), and [Rust](../polyglot/rust/README.md) with cross-platform support including Linux, Windows, macOS, and Docker, on top of the most [popular IMs](../puppet-providers/README.md) like [WeChat](../puppet-providers/wechat.md), [Whatsapp](../puppet-providers/whatsapp.md), [WeCom](../puppet-services/wxwork), [Gitter](../puppet-providers/gitter.md), and [Lark](../puppet-providers/lark.md) etc.
+Wechaty is a [Conversational RPA](rpa.md) SDK for Chatbot Makers which can create a bot in 6 lines of [TypeScript](../polyglot/typescript/README.md), [JavaScript](../polyglot/typescript/README.md), [Python](../polyglot/python/README.md), [Go](../polyglot/go/README.md), [Java](../polyglot/java/README.md), [.NET](../polyglot/dotnet/README.md), [PHP](../polyglot/php/README.md), [Scala](../polyglot/scala/README.md), and [Rust](../polyglot/rust/README.md) with cross-platform compatibility including Linux, Windows, macOS, and Docker, supports the most [popular IMs](../puppet-providers/README.md) like [WeChat](../puppet-providers/wechat.md), [Whatsapp](../puppet-providers/whatsapp.md), [WeCom](../puppet-services/wxwork), [Gitter](../puppet-providers/gitter.md), and [Lark](../puppet-providers/lark.md) etc.
 
-A chatbot is a computer program or application that can simulate and process human conversations (via text or voice), allowing users/humans to interact with digital entities as if they were communicating with real humans.
+Wechaty support lots of most popular instant messaging platforms:
 
-With the help of a chat interface, chatbots get to chat with the users on their queries. The best part of this application is; you can use it with many other applications and establish easy communication without any barrier.
+<ProviderBadges />
+
+And you can write Wechaty in almost all popular programming languages:
+
+<PolyglotBadges />
+
+## Features
+
+1. Send/receive image, audio, video messages
+1. Create new room, add/remove contact in room, and change topic, etc
+1. Search contact by Phone/Weixin and send friendrequest to them
+1. Write once, run on all IM platforms
+
+:::note API References
+
+Learn more functions from [API Reference](../api/README.md) and [Recipes](../recipes/README.md).
+
+:::
 
 ## Voice of Developers
 
@@ -37,44 +58,17 @@ With the help of a chat interface, chatbots get to chat with the users on their 
 > "Wechaty is a good project, I hope it can continue! Therefore, I became a contributors in open collective."  
 > &mdash; <cite>[@Simple](https://github.com/mrwhh)</cite>
 
-## AI
+## World's shortest chatbot
 
-The AI chatbots are developed in a way that they can address the verbal as well as non-verbal queries and interpret the same. Depending on the questions, it delivers relevant information to the users.
+We can build a chatbot in minimum 6 lines of code with Wechaty.
 
-Chatbot, Like other AI mechanisms, chatbots will be used to improve the capabilities of personnel and free them to become more creative, productive and innovative, and spend more time on strategic rather than tactical activities.
+<ShortestChatbots />
 
-## Conversational User Interface (CUI)
+:::note Polyglot Wechaty
 
-## Wechaty
+Read more codes from [Polyglot](../polyglot/README.md).
 
-## Table of Contents
-
-### Basic
-
-- **What is Wechaty**
-- **Who uses Wechaty**
-- **How to Wechaty**
-
-- [Concepts](concepts.md)
-- [Motivations](motivations.md)
-- [Alternatives](alternatives.md)
-- [Polyglot Languages](polyglot/README.md)
-- [Multi IMs](puppet.md)
-- **Examples**
-      'examples',
-      'examples2',
-
-### Advanced
-
-- **What is Wechaty**
-  - [Cannot login](#11-i-can-not-login-with-my-wechat-account)
-  - [What wechaty cannot do on wechat](#a)
-- **Who uses Wechaty**
-  - [Can wechaty send url rich media message?](#b)
-  - [I don't know wechaty support for personal account of wechat official account?](#c)
-- **How to Wechaty**
-  - [Can wechaty send url rich media message?](#b)
-  - [I don't know wechaty support for personal account of wechat official account?](#c)
+:::
 
 ## Contact Us
 
