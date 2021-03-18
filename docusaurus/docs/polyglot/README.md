@@ -6,16 +6,9 @@ sidebar_label: 'Polyglot: Index'
 
 <!-- MDX import -->
 import ShortestChatbot from './shortest-chatbot.mdx'
+import Badges from './badges.mdx'
 
-[![TypeScript Wechaty](https://img.shields.io/badge/Wechaty-TypeScript-blue)](typescript.md)
-[![Python Wechaty](https://img.shields.io/badge/Wechaty-Python-blue)](python.md)
-[![Go Wechaty](https://img.shields.io/badge/Wechaty-Go-7de)](go.md)
-[![Kotlin(Java) Wechaty](https://img.shields.io/badge/Wechaty-Kotlin-orange)](java.md)
-[![Scala Wechaty](https://img.shields.io/badge/Wechaty-Scala-890)](scala.md)
-[![PHP Wechaty](https://img.shields.io/badge/Wechaty-PHP-7de)](php.md)
-[![.NET Wechaty](https://img.shields.io/badge/Wechaty-.NET-blueviolet)](dotnet.md)
-[![Rust Wechaty](https://img.shields.io/badge/Wechaty-Rust-f42)](rust.md)
-[![DIY Wechaty](https://img.shields.io/badge/Wechaty-DIY-brightgreen)](diy.md)
+<Badges />
 
 | Language | Git Repo | Creator | Getting Started |
 | --- | --- | --- | --- |
