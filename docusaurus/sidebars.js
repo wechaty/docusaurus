@@ -24,6 +24,7 @@ module.exports = {
     ],
     'Polyglot': [
       'polyglot/README',
+      'polyglot/openapi/README',
       'polyglot/typescript/README',
       'polyglot/python/README',
       'polyglot/go/README',
