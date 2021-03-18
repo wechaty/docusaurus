@@ -5,7 +5,6 @@ module.exports = {
     Introduction: [
       'introduction/README',
       'introduction/rpa',
-      'introduction/puppet',
       'introduction/motivations',
       'introduction/concepts',
       'introduction/architecture',

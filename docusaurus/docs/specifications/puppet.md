@@ -233,3 +233,7 @@ Puppet has a API named `ding(data: string): void`, and the Puppet must:
 1. the payload of the `dong` event might contains a `data` key with the value exactly match the `data` when calling the `ding()` method.
 
 This is for active(passive) health checking, and this is also a workaround for some edge case communication between the top puppet with the bottom puppet.
+
+## Learn More
+
+- Puppet Related Links: [https://github.com/wechaty/wechaty-puppet/wiki/Links](https://github.com/wechaty/wechaty-puppet/wiki/Links)
