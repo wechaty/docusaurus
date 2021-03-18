@@ -1,36 +1,50 @@
 # Wechaty+微信小程序实现群内活动报名
+---
+title: Wechaty+微信小程序实现群内活动报名
+author: atorber
+categories: project
+tags:
+  - node
+  - padlocal
+image: /assets/2021/02-your-blog-slug/teaser.jpg
+---
 
+## 场景
 
-# 场景
 - 前情
 
 超哥之前开发了一个叫做「群组大师」的小程序，听名字就知道，是用来管理群组的，管理群组的什么呢？
 
-最初的想法是管理群组活动，超哥是羽毛球健将，经常出入京城各个羽毛球约球群，群内人肉接龙报名的传统让人抓狂，所以开发了一个小程序来发布活动和报名。
+最初的想法是管理群组活动，超哥是羽毛球爱好者，经常出入京城各个羽毛球约球群，群内人肉接龙报名的传统让人抓狂，所以开发了一个小程序来发布活动和报名。
 
 然鹅，现实是残酷的，培养球友的习惯并不容易，so，小程序基本没人使用...
 
 - 峰回路转
+
 突然就在最近，超哥又混进一个羽毛球群，竟然在使用微信机器人进行报名，并且用起来确实比小程序要爽，于是乎萌生了「机器人+小程序」的想法
 
-# 思路和实现
-## 流程
+## 思路和实现
+
+### 流程
 -  基于Wechaty制作微信机器人，获取群内实时消息
 - 将消息转发给「群组大师」后台服务接口
 - 后台服务根据消息是否命中关键字，返回活动和报名信息
 - 机器人程序将返回的信息发送到群
-## 指令设置
+
+### 指令设置
+
 帮助——获取指令列表
 活动——查询活动详情
 报名——报名活动
 取消——取消活动报名
 
-# 实现
+## 实现
+
 - 基于Puppet Service: PadLocal实现，详细介绍参见 https://wechaty.js.org/docs/puppet-services/padlocal
 - 参考PadLocal官方demo示例 https://github.com/padlocal/wechaty-puppet-padlocal-demo
 - 修改demo中的main.ts文件，编写自己的业务逻辑
 
-# 效果图
+## 效果图
 
 - 打开「群组大师」，找到群列表
 
@@ -68,7 +82,7 @@
 
 ![bot_step9.jpeg](https://upload-images.jianshu.io/upload_images/2399305-750d52b3019525d0.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
-# demo源码：
+## demo源码：
 
 特别说明：
 1. 替换代码中的Token为自己的，「群组大师」提供的http://test-958d13-1251176925.ap-shanghai.service.tcloudbase.com/test/groupmaster接口是本人使用小程序云开发开放供小伙伴们测试体验使用的接口，请务必不要滥用。
@@ -86,7 +100,7 @@ import {
 } from 'wechaty'
 const request = require('request');
 const puppet = new PuppetPadlocal({
-    token: "换成自己的Token"
+    token: "----------"
 })
 
 function print(msg: string, res?: any): void {
@@ -251,3 +265,11 @@ bot.start().then(() => {
 
 
 ```
+
+---
+name: atorber (鲁玉超)
+site: https://github.com/atorber
+bio: 一个不误正业的产品经理
+avatar: /jekyll/assets/contributors/lijiarui/avatar.png
+email: atorber@163.com
+---
