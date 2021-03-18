@@ -5,21 +5,36 @@ title: Getting Started
 <!-- MDX import -->
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
-import ShortestChatbot from './polyglot/shortest-chatbot.mdx'
+import ShortestChatbot  from './polyglot/shortest-chatbot.mdx'
+import PolyglotBadges   from './polyglot/badges.mdx'
+import ProviderBadges   from './puppet-providers/badges.mdx'
+import ServiceBadges    from './puppet-services/badges.mdx'
 
 <!-- Pushes a curious reader through the first few minutes of use. -->
 
-With just a few lines of code, your application can send and receive messages with WeChat/Whatsapp/Gitter powered by our Conversational RPA SDK Wechaty.
+With just a few lines of code, your WeChat/Whatsapp account will become a chatbot and automation whatever you want to do, powered by our Conversational RPA SDK Wechaty.
 
-This Quickstart will teach you how to do this using the Wechaty SDK for WeChat, Whatsapp in TypeScript.
+:::note RPA for IMs
 
-:::note Polyglot Wechaty
+Wechaty RPA supports [WeChat](puppet-providers/wechat.md), [Whatsapp](puppet-providers/whatsapp.md), [WeCom](puppet-services/wxwork.md), [Gitter](puppet-providers/gitter.md), [Lark](puppet-providers/lark.md) and almost all popular IMs. Learn more from our  [Wechaty Puppet Providers](puppet-providers/README.md):
 
-You can find othere languages as well in [Polyglot Wechaty](polyglot/README.md)
+<ProviderBadges />
+
+And [Wechaty Puppet Services](puppet-services/README.md):
+
+<ServiceBadges />
 
 :::
 
-<ShortestChatbot />
+:::note Multi-languages Programming
+
+Wechaty SDK supports TypeScript, Python, Go, Rust, and almost all popular programming languages. Learn more from our [Polyglot Wechaty](polyglot/README.md):
+
+<PolyglotBadges />
+
+:::
+
+This Quickstart will teach you how to do this using the Wechaty SDK for WeChat, Whatsapp, and any IMs that we supported.
 
 ## TL;DR
 
@@ -27,51 +42,45 @@ If you want to try Wechaty quick and easy, the best way is to run [Wechaty Getti
 
 You have two choices:
 
-1. Gitpod: login by GitHub. The easist way to getting started.
-1. Google Cloud Shell: login by Google account. With a great step by step online tutorial.
+1. [Gitpod](#gitpod): The easiest way to getting started by login with your GitHub account.
+1. [Google Cloud Shell](#google-cloud-shell): Has a great step by step online tutorial grantuee you can learn something by login with your Google account.
 
-### 1. Gitpod ❤️  Wechaty
-
-[![GitPod Ready-to-Code][gitpod_img]][gitpod_link]
+### 1. Gitpod [![GitPod Ready-to-Code][gitpod_img]][gitpod_link] {#gitpod}
 
 [gitpod_img]: https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod
 [gitpod_link]: https://gitpod.io/#https://github.com/wechaty/wechaty-getting-started
 
-Learn more from our blog: [Getting Started Without Leave Your Browser: Wechaty ❤️ Gitpod](https://wechaty.js.org/2021/02/06/wechaty-getting-started-without-leave-your-browser/)
+Let's [Getting started with Gitpod][gitpod_link]
 
-### 2. Google Cloud Shell
+> Read more: [Getting Started Without Leave Your Browser: Wechaty ❤️ Gitpod](https://wechaty.js.org/2021/02/06/wechaty-getting-started-without-leave-your-browser/)
 
-[![Open in Cloud Shell][shell_img]][shell_link]
+### 2. Google Cloud Shell [![Open in Cloud Shell][shell_img]][shell_link] {#google-cloud-shell}
 
-[shell_img]: https://gstatic.com/cloudssh/images/open-btn.svg
+<!-- https://gstatic.com/cloudssh/images/open-btn.svg -->
+[shell_img]: https://img.shields.io/badge/%F0%9F%92%BB%20Google%20Cloud%20Shell-%3C%2F%3E-blue
 [shell_link]: https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2Fwechaty%2Fwechaty-getting-started&cloudshell_open_in_editor=examples/ding-dong-bot.ts&cloudshell_workspace=.&cloudshell_tutorial=examples/tutorials/google-cloud-shell-tutorial.md
 
-Learn more from our blog: [Google Cloud Shell Tutorials for Wechaty](https://wechaty.js.org/2021/02/20/google-cloud-shell-tutorials/)
+Let's [Getting started with Google Cloud Shell][shell_link]
 
-## World's shortest chatbot code
+> Read more: [Google Cloud Shell Tutorials for Wechaty](https://wechaty.js.org/2021/02/20/google-cloud-shell-tutorials/)
 
-6 lines of JavaScript/TypeScript as well as other languages:
-
-<ShortestChatbot />
-
-## Getting Started
+## Getting started the hard way
 
 In this Quickstart, you will learn how to:
 
-1. Install Node.js
+1. Install developing tools
+1. Install programming language
 1. Install Wechaty
-1. Start running your first chatbot
+1. Run your first chatbot
 
-## REQUIREMENTS
+<ShortestChatbot />
 
-1. Node.js v10 or above
-1. Build Tools for your Platform
+### Requirements
 
-## RUN
+1. A Linux/macOS/Windows computer
+1. Internet connection
 
-### 0. Install Node.js \(&gt;=10\)
-
-If you have not installed Node.js\(or version is below 12\),You need to install the latest version of Node.js first by following the links below:
+### 1. Setup development environment
 
 <Tabs
   groupId="operating-systems"
