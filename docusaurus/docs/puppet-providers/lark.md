@@ -3,6 +3,10 @@ title: 'Puppet Provider: Lark'
 sidebar_label: Lark
 ---
 
+<!-- MDX import -->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 [![Wechaty Puppet Lark](https://img.shields.io/badge/Puppet-Lark-blueviolet)](lark)
 
 ![Wechaty Puppet Lark](https://raw.githubusercontent.com/wechaty/wechaty-puppet-lark/HEAD/docs/images/wechaty-puppet-lark.png)
@@ -18,10 +22,6 @@ sidebar_label: Lark
 1. Send & receive messages
 
 ## Usage
-
-<!-- MDX import -->
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs
   groupId="operating-systems"
