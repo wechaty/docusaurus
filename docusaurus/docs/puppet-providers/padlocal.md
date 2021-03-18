@@ -81,8 +81,8 @@ Learn about [how to get a PadLocal TOKEN](puppet-services/padlocal.md)
 :::
 
 <!-- MDX import -->
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
 
 <Tabs
   groupId="operating-systems"
