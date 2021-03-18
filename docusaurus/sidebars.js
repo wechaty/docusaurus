@@ -22,7 +22,7 @@ module.exports = {
     Tutorials: [
       'tutorials/README',
       'tutorials/video-tutorial',
-      CHATBOT_1_TO_2,
+      'tutorials/docker',
     ],
     'Polyglot': [
       'polyglot/README',
@@ -47,7 +47,6 @@ module.exports = {
       'recipes/friendship',
       'recipes/file-box',
       'recipes/usage-with-typescript',
-      'recipes/usage-with-docker',
       'recipes/usage-with-heroku',
       'recipes/using-plugin-with-wechaty',
       'recipes/using-vorpal-with-wechaty',
