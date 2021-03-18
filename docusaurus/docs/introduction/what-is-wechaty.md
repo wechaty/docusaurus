@@ -46,7 +46,7 @@ related issues:
 * [Can not login with error message: 当前登录环境异常。为了你的帐号安全，暂时不能登录web微信。](https://github.com/wechaty/wechaty/issues/603)
 * [\[RUMOR\] wechat will close web api for wechat](https://github.com/wechaty/wechaty/issues/990)
 * [New account login issue](https://github.com/wechaty/wechaty/issues/872)
-* [wechaty-puppet-puppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer)
+* [wechaty-puppet-wechat](https://github.com/wechaty/wechaty-puppet-wechat)
 
 If you want to break the above limitations, please consider to use a Wechaty Puppet other than using Web API, like [wechaty-puppet-padplus](https://github.com/botorange/wechaty-puppet-padplus).
 
@@ -62,8 +62,8 @@ The term `Puppet` in Wechaty is a name that we had picked up to describe part of
 
 Plugins are named PuppetXXX, like PuppetPuppeteer is using the chrome puppeteer to control the WeChat Web API via a chrome browser, PuppetPadchat is using the WebSocket protocol to connect with a Protocol Server for controlling an iPad program. Here is the related information:
 
-* ​[Full Puppet List](puppet.md#2-wechaty-puppet-list)
-* ​[Wechaty Puppet compatibility](puppet.md#3-wechaty-puppet-compatibility)
+* ​[Full Puppet List](../puppet-providers/README.md)
+* ​[Wechaty Puppet compatibility](../puppet-services/compatibility.md)
 
 For a deeper understanding of the Puppet in Wechaty, you can read its source code if you like at [https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts](https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts)
 
@@ -98,7 +98,7 @@ Here is the whole image for wechaty puppet introduction:
 [![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty/images/6)](https://sourcerer.io/fame/huan/wechaty/wechaty/links/6)
 [![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty/images/7)](https://sourcerer.io/fame/huan/wechaty/wechaty/links/7)
 
-This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+This project exists thanks to all the people who contribute.
 
 -----
 

@@ -35,19 +35,21 @@ Get to know more about Docker at: <https://www.docker.com/>
 The best practice of using Wechaty Docker is like the following:
 
 ```bash
-$ cat > mybot.js <<'EOF'
-const { Wechaty } = require('wechaty')
+$ cat > mybot.ts <<'EOF'
+import { Wechaty } from 'wechaty'
 
 Wechaty.instance() // Singleton
-.on('scan', (qrcode, status) => console.log(`Scan QrCode to login: ${status}\n${qrcode}`))
-.on('login',       user      => console.log(`User ${user} logined`))
-.on('message',  message      => console.log(`Message: ${message}`))
-.start()
+  .on('scan', (qrcode, status) => console.log(`Scan QrCode to login: ${status}\n${qrcode}`))
+  .on('login',       user      => console.log(`User ${user} logined`))
+  .on('message',  message      => console.log(`Message: ${message}`))
+  .start()
 EOF
 
 $ function wechaty() {
-  sudo docker run \
+  docker run \
     -t -i --rm \
+    --privileged \
+    --network=host \
     -e WECHATY_LOG="$WECHATY_LOG" \
     -e WECHATY_PUPPET="$WECHATY_PUPPET" \
     -e WECHATY_TOKEN="$WECHATY_TOKEN" \
@@ -56,18 +58,20 @@ $ function wechaty() {
     "$@"
 }
 
-$ wechaty mybot.js
+$ wechaty mybot.ts
 ```
 
 see? death easy to use!
 
-> You might want to confirm that you can download `wechaty/wechaty` image successfully by run `sudo docker pull wechaty/wechaty`, and this command is also able to help you upgrade the image to the latest version.
+> You might want to confirm that you can download `wechaty/wechaty` image successfully by run `docker pull wechaty/wechaty`, and this command is also able to help you upgrade the image to the latest version.
 
 ### Docker options explanation
 
 1. `-t` : Allocate a pseudo-TTY
 1. `-i` : Keep STDIN open even if not attached
 1. `--rm` : Automatically remove the container when it exits
+1. `--privileged` : Give extended privileges to this container
+1. `--network=host` : use the Docker host network stack
 1. `-e WECHATY_LOG="$WECHATY_LOG"` : Pass the environment variable `WECHATY_LOG` into the container
 1. `--volume="$(pwd)":/bot` : Bind current directory(`"$(pwd)"`) to '`/bot`' inside the container, by mounting the volume
 1. `--name=wechaty` : Assign `wechaty` as the container name
