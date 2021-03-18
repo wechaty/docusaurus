@@ -1,6 +1,6 @@
 ---
 slug: /introduction/
-title: Wechaty Introduction Overview
+title: Wechaty Overview
 sidebar_label: 'Overview'
 ---
 
@@ -38,7 +38,7 @@ Learn more functions from [API Reference](../api/README.md) and [Recipes](../rec
 
 :::
 
-## Voice of Developers
+## Voice of Developers {#voice-of-developers}
 
 > "Wechaty is a great solution, I believe there would be much more users recognize it." [link](https://github.com/Wechaty/wechaty/pull/310#issuecomment-285574472)  
 > &mdash; <cite>@Gcaufy, Tencent Engineer, Author of [WePY](https://github.com/Tencent/wepy)</cite>
@@ -58,7 +58,7 @@ Learn more functions from [API Reference](../api/README.md) and [Recipes](../rec
 > "Wechaty is a good project, I hope it can continue! Therefore, I became a contributors in open collective."  
 > &mdash; <cite>[@Simple](https://github.com/mrwhh)</cite>
 
-## World's shortest chatbot
+## World's Shortest Chatbot {#shortest-chatbot}
 
 We can build a chatbot in minimum 6 lines of code with Wechaty.
 
