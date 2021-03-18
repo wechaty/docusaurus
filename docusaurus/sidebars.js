@@ -15,7 +15,9 @@ module.exports = {
       'introduction/alternatives',
     ],
     'Getting Started': [
-      'getting-started',
+      'getting-started/README',
+      'getting-started/quick-start',
+      'getting-started/hard-way',
     ],
     Tutorials: [
       'tutorials/README',

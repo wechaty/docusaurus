@@ -34,3 +34,7 @@ sidebar_label: 'Introduction: Index'
 - **How to Wechaty**
   - [Can wechaty send url rich media message?](#b)
   - [I don't know wechaty support for personal account of wechat official account?](#c)
+
+## Contact Us
+
+You can [join our Gitter](https://gitter.im/wechaty/wechaty) network if you aren’t already a member.
