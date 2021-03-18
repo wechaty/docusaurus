@@ -2,6 +2,7 @@ import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
 import ShortestChatbotTypeScript  from '../typescript/transclusions/shortest-chatbot.mdx'
+import ShortestChatbotOpenApi     from '../openapi/transclusions/shortest-chatbot.mdx'
 import ShortestChatbotJavaScript  from '../typescript/transclusions/shortest-chatbot-js.mdx'
 import ShortestChatbotPython      from '../python/transclusions/shortest-chatbot.mdx'
 import ShortestChatbotGo          from '../go/transclusions/shortest-chatbot.mdx'
@@ -15,6 +16,7 @@ import ShortestChatbotRust        from '../rust/transclusions/shortest-chatbot.m
   groupId="programming-languages"
   defaultValue="ts"
   values={[
+    { label: 'OpenAPI',     value: 'openapi', },
     { label: 'TypeScript',  value: 'ts', },
     { label: 'JavaScript',  value: 'js', },
     { label: 'Python',      value: 'py', },
@@ -26,6 +28,10 @@ import ShortestChatbotRust        from '../rust/transclusions/shortest-chatbot.m
     { label: 'Rust',        value: 'rust', },
   ]}
 >
+
+<TabItem value="openapi">
+  <ShortestChatbotOpenApi />
+</TabItem>
 
 <TabItem value="ts">
   <ShortestChatbotTypeScript />
