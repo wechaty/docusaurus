@@ -1,4 +1,5 @@
 # Wechaty+微信小程序实现群内活动报名
+
 ---
 title: Wechaty+微信小程序实现群内活动报名
 author: atorber
@@ -26,6 +27,7 @@ image: /assets/2021/02-your-blog-slug/teaser.jpg
 ## 思路和实现
 
 ### 流程
+
 -  基于Wechaty制作微信机器人，获取群内实时消息
 - 将消息转发给「群组大师」后台服务接口
 - 后台服务根据消息是否命中关键字，返回活动和报名信息
