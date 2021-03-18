@@ -13,11 +13,13 @@ The plugins are named `PuppetXXX`, like [PuppetPuppeteer](https://github.com/wec
 - Puppet Related Links: <https://github.com/wechaty/wechaty-puppet/wiki/Links>
 - Puppet Documentation: <https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html>
 
-## WHAT IS WECHATY PUPPET
+## What is Wechaty Puppet
 
 The term `Puppet` in Wechaty is a name that we had picked up to describe part of our system: Puppet is an Abstract Class for implementing plugins, the plugins are the component that helps Wechaty to control the Wechat, that's the reason we call it `puppet`.
 
 Plugins are named PuppetXXX, like PuppetPuppeteer is using the chrome puppeteer to control the WeChat Web API via a chrome browser, PuppetService is using the gRPC protocol to connect with a Protocol Server for controlling an iPad/Windows/whatever program.
+
+## Show me the code
 
 For a deeper understanding of the Puppet in Wechaty, you can read its documentation from <https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html> and source code if you like at <https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts>
 
