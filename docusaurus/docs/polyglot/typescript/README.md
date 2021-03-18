@@ -80,7 +80,7 @@ Getting Started Template Repo <https://github.com/wechaty/wechaty-getting-starte
 ## Docs
 
 - API Reference: <https://wechaty.github.io/wechaty/>
-- [Wechaty Receipts](../recipes/)
+- [Wechaty Receipts](../../recipes/README.md)
 
 ## Badge
 
@@ -96,5 +96,5 @@ You can [join our Gitter](https://gitter.im/wechaty/wechaty) network if you aren
 
 - Read & create an [issues](https://github.com/wechaty/wechaty/issues)
 - Read & create a [pull requests](https://github.com/wechaty/wechaty/pulls)
-- [Publish blog post](../contributor-program/publish-blog)
+- [Publish blog post](../../contributor-program/publish-blog.md)
 - etc.

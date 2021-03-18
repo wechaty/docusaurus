@@ -3,7 +3,7 @@ slug: /polyglot/diy/
 title: 'Polyglot: DIY'
 ---
 
-[![DIY Wechaty](https://img.shields.io/badge/Wechaty-DIY-brightgreen)](diy)
+[![DIY Wechaty](https://img.shields.io/badge/Wechaty-DIY-brightgreen)](README.md)
 
 :::note
 
