@@ -1,4 +1,5 @@
 ---
+slug: /polyglot/rust/
 title: 'Rust Wechaty'
 sidebar_label: Rust
 ---

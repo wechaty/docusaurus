@@ -1,4 +1,5 @@
 ---
+slug: /polyglot/dotnet/
 title: '.NET Wechaty'
 sidebar_label: .NET
 ---

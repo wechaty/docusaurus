@@ -1,4 +1,5 @@
 ---
+slug: /polyglot/java/
 title: 'Java Wechaty'
 sidebar_label: Java
 ---
