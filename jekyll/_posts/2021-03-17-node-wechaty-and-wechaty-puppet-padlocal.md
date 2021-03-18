@@ -40,8 +40,8 @@ image: /assets/2021/02-your-blog-slug/teaser.jpg
 
 ## 实现
 
-- 基于Puppet Service: PadLocal实现，详细介绍参见 https://wechaty.js.org/docs/puppet-services/padlocal
-- 参考PadLocal官方demo示例 https://github.com/padlocal/wechaty-puppet-padlocal-demo
+- 基于Puppet Service: PadLocal实现，详细介绍参见 <https://wechaty.js.org/docs/puppet-services/padlocal>
+- 参考PadLocal官方demo示例 <https://github.com/padlocal/wechaty-puppet-padlocal-demo>
 - 修改demo中的main.ts文件，编写自己的业务逻辑
 
 ## 效果图
@@ -78,19 +78,19 @@ image: /assets/2021/02-your-blog-slug/teaser.jpg
 
 ![bot_step8.jpeg](https://upload-images.jianshu.io/upload_images/2399305-cdb975103ee45785.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
-- 在「群组大师」小程序中可查看活动报名详情 
+- 在「群组大师」小程序中可查看活动报名详情
 
 ![bot_step9.jpeg](https://upload-images.jianshu.io/upload_images/2399305-750d52b3019525d0.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 ## demo源码：
 
 特别说明：
-1. 替换代码中的Token为自己的，「群组大师」提供的http://test-958d13-1251176925.ap-shanghai.service.tcloudbase.com/test/groupmaster接口是本人使用小程序云开发开放供小伙伴们测试体验使用的接口，请务必不要滥用。
-1. 下载https://github.com/padlocal/wechaty-puppet-padlocal-demo中示例，将main.ts中代码替换为如下，运行并登陆微信
+1. 替换代码中的Token为自己的，「群组大师」提供的<http://test-958d13-1251176925.ap-shanghai.service.tcloudbase.com/test/groupmaster>接口是本人使用小程序云开发开放供小伙伴们测试体验使用的接口，请务必不要滥用。
+1. 下载<https://github.com/padlocal/wechaty-puppet-padlocal-demo>中示例，将main.ts中代码替换为如下，运行并登陆微信
 1. 将机器人微信加入到群组
 1. 联系超哥（微信ledongmao）帮你在后台绑定为你群组的管理员，即可发布和管理活动（自主认领微信群的功能还在开发中，目前人肉设置群管理员）
 
-```
+```javascript
 import { PuppetPadlocal } from "wechaty-puppet-padlocal";
 import { Contact, log, Message, ScanStatus, Wechaty } from "wechaty";
 import { FileBox } from 'file-box'
@@ -268,7 +268,7 @@ bot.start().then(() => {
 
 ---
 name: atorber (鲁玉超)
-site: https://github.com/atorber
+site: <https://github.com/atorber>
 bio: 一个不误正业的产品经理
 avatar: /jekyll/assets/contributors/lijiarui/avatar.png
 email: atorber@163.com
