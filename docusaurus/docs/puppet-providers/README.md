@@ -4,7 +4,7 @@ title: Wechaty Puppet Providers
 sidebar_label: 'Puppet Providers: Index'
 ---
 
-import Badges from './badges.mdx'
+import Badges from './transclusions/badges.mdx'
 
 <Badges />
 

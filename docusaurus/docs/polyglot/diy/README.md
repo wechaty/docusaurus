@@ -1,4 +1,5 @@
 ---
+slug: /polyglot/diy/
 title: 'Polyglot: DIY'
 ---
 
