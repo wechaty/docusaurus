@@ -8,7 +8,7 @@ title: 'Usage with Docker'
 
 [![dockeri.co](http://dockeri.co/image/wechaty/wechaty)](https://hub.docker.com/r/wechaty/wechaty/)
 
-Wechaty is fully dockerized. So it will be very easy to be used as a MicroService. 
+Wechaty is fully dockerized. So it will be very easy to be used as a MicroService.
 
 ## Getting Started with Docker
 
