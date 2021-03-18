@@ -4,6 +4,7 @@ module.exports = {
   docs: {
     Introduction: [
       'introduction/README',
+      'introduction/rpa',
       'introduction/puppet',
       'introduction/motivations',
       'introduction/concepts',
@@ -51,11 +52,14 @@ module.exports = {
     ],
     'Case Study': [
       'case-study/README',
-      'case-study/osschat-bot',
-      'case-study/rui-bot',
-      'case-study/friday-bot',
       'case-study/coaxer-bot',
-      'case-study/projects-using-wechaty',
+    ],
+    'Showcases': [
+      'showcases/README',
+      'showcases/osschat-bot',
+      'showcases/rui-bot',
+      'showcases/friday-bot',
+      'showcases/projects-using-wechaty',
     ],
     'Puppet Providers': [
       'puppet-providers/README',
@@ -76,6 +80,7 @@ module.exports = {
       'puppet-services/padlocal',
       'puppet-services/paimon',
       'puppet-services/donut',
+      'puppet-services/compatibility',
       'puppet-services/diy',
     ],
     'Contributor Program': [

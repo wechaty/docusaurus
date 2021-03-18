@@ -7,9 +7,9 @@ The term `Puppet` in Wechaty is an Abstract Class for implementing protocol plug
 
 The plugins are named `PuppetXXX`, like [PuppetPuppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer) is using the [google puppeteer](https://github.com/GoogleChrome/puppeteer) to control the [WeChat Web API](https://wx.qq.com) via a chrome browser, [PuppetPadLocal](https://github.com/padlocal/wechaty-puppet-padlocal) is using the Pad Protocol to connect with WeChat Server.
 
-- Puppet Directory: <https://github.com/wechaty/wechaty-puppet/wiki/Directory>
+- Puppet Providers Directory: <https://wechaty.js.org/docs/puppet-providers/>
 - Puppet Compatibility Table: <https://github.com/wechaty/wechaty-puppet/wiki/Compatibility>
-- Puppet Development Guide: <https://github.com/wechaty/wechaty-puppet/wiki/Development>
+- Puppet Development Guide: <https://wechaty.js.org/docs/puppet-providers/diy>
 - Puppet Related Links: <https://github.com/wechaty/wechaty-puppet/wiki/Links>
 - Puppet Documentation: <https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html>
 
