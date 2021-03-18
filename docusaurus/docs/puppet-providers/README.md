@@ -4,16 +4,9 @@ title: Wechaty Puppet Providers
 sidebar_label: 'Puppet Providers: Index'
 ---
 
-[![Wechaty Puppet WeChat](https://img.shields.io/badge/Puppet-WeChat-blueviolet)](wechat.md)
-[![Wechaty Puppet Whatsapp](https://img.shields.io/badge/Puppet-Whatsapp-blueviolet)](whatsapp.md)
-[![Wechaty Puppet Official Account](https://img.shields.io/badge/Puppet-Official%20Account-blueviolet)](official-account.md)
-[![Wechaty Puppet Gitter](https://img.shields.io/badge/Puppet-Gitter-blueviolet)](gitter.md)
-[![Wechaty Puppet Lark](https://img.shields.io/badge/Puppet-Lark-blueviolet)](lark.md)
-[![Wechaty Puppet PadLocal](https://img.shields.io/badge/Puppet-PadLocal-blueviolet)](padlocal.md)
-[![Wechaty Puppet WeChat4U](https://img.shields.io/badge/Puppet-WeChat4U-blueviolet)](wechat4u.md)
-[![Wechaty Puppet Service](https://img.shields.io/badge/Puppet-Service-blueviolet)](service.md)
-[![Wechaty Puppet Mock](https://img.shields.io/badge/Puppet-Mock-blueviolet)](mock.md)
-[![Wechaty Puppet DIY](https://img.shields.io/badge/Provider-DIY-blueviolet)](diy.md)
+import Badges from './transclusions/badges.mdx'
+
+<Badges />
 
 For different instant messaging (IM) systems (such as WeChat, Whatsapp, and TikTok), the Wechaty community builds separate RPA modules for each, and we call those modules [Wechaty Puppet](https://github.com/wechaty/wechaty-puppet).
 
