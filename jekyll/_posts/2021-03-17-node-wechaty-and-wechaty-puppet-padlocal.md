@@ -85,6 +85,7 @@ image: /assets/2021/02-your-blog-slug/teaser.jpg
 ## demo源码：
 
 特别说明：
+
 - 替换代码中的Token为自己的，「群组大师」提供的<http://test-958d13-1251176925.ap-shanghai.service.tcloudbase.com/test/groupmaster>接口是本人使用小程序云开发开放供小伙伴们测试体验使用的接口，请务必不要滥用。
 - 下载<https://github.com/padlocal/wechaty-puppet-padlocal-demo>中示例，将main.ts中代码替换为如下，运行并登陆微信
 - 将机器人微信加入到群组
@@ -263,13 +264,14 @@ bot.start().then(() => {
     log.info("TestBot", "started.");
 });
 
-
 ```
 
 ---
+
 name: atorber(鲁玉超)
 site: <https://github.com/atorber>
 bio: 一个不误正业的产品经理
 avatar: /jekyll/assets/contributors/lijiarui/avatar.png
 email: atorber@163.com
+
 ---
