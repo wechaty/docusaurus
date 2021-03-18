@@ -3,8 +3,8 @@ title: 'Puppet Provider: DIY'
 ---
 
 <!-- MDX import -->
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
 
 [![Wechaty Puppet DIY](https://img.shields.io/badge/Provider-DIY-blueviolet)](diy)
 
