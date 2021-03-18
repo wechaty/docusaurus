@@ -78,7 +78,7 @@ set WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal__TOKEN__"
 
 ### 3. Set Wechaty Puppet Service TOKEN
 
-In order to provide [Wechaty Puppet Service](.md), you need to specify a [TOKEN](specifications/token.md) for authorization.
+In order to provide [Wechaty Puppet Service](specifications/service.md), you need to specify a [TOKEN](specifications/token.md) for authorization.
 
 You can [Generate a new UUIDv4](https://www.uuidgenerator.net/version4) online, use this new UUIDv4 as your token.
 
@@ -244,8 +244,6 @@ If you want to remove the `--privileged`, you need to add:
 
 ### 7. Check your TOKEN service
 
-Check your TOKEN availability by visiting `https://api.chatie.io/v0/hosties/${WECHATY_TOKEN}`
-
 :::note wait for token gateway getting full started
 
 The docker command in the previous step might need some time to getting fully started.
@@ -253,6 +251,8 @@ The docker command in the previous step might need some time to getting fully st
 Wait and read the docker container log messages carefully to make sure the server has been started before continue this step.
 
 :::
+
+Check your TOKEN availability by visiting `https://api.chatie.io/v0/hosties/${WECHATY_TOKEN}`
 
 <Tabs
   groupId="operating-systems"
