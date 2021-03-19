@@ -295,7 +295,7 @@ If you get `HTTP/404`, then you need to check the previous steps and troubleshoo
 
 Learn more about the TOKEN from [Wechaty Puppet Service TOKEN Specification](specifications/token.md).
 
-### 8. Congratulations! You are all set
+### 🎉 Congratulations! You are all set
 
 Your Wechaty Puppet Service will be ready to service for [Polyglot Wechaty](polyglot/README.md)!
 
@@ -366,7 +366,7 @@ else
   >&2 echo "ERROR: Wechaty Puppet Service TOKEN ${WECHATY_TOKEN} out of service"
 fi
 
-# Step 8 🍻
+# Step 8 🎉
 ```
 
 </TabItem>
@@ -417,7 +417,7 @@ else
   >&2 echo "ERROR: Wechaty Puppet Service TOKEN ${WECHATY_TOKEN} out of service"
 fi
 
-# Step 8 🍻
+# Step 8 🎉
 ```
 
 </TabItem>
