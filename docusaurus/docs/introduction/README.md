@@ -1,6 +1,6 @@
 ---
 slug: /introduction/
-title: Wechaty Overview
+title: Wechaty Introduction Overview
 sidebar_label: 'Overview'
 ---
 
