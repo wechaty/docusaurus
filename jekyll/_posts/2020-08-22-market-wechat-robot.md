@@ -4,7 +4,6 @@ author: exctech
 categories: project
 image: /assets/2020/market-wechat-robot/teaser.jpeg
 tags:
-  - wechaty
   - market
   - oracle
   - python
@@ -51,7 +50,7 @@ BTC现报11421.60USDT，日内累计涨幅-302.41，达-2.58%，15分钟内现�
 docker pull wechaty/wechaty
 ```
 
-#### 2. 设置`wechaty-puppet-hostie`
+#### 2. 设置`wechaty-puppet-service`
 
 可使用自定义的随机字符串，为防止与其他用户冲突，建议采用UUIDv4，可用在线生成工具来生成，[网址](https://uuidonline.com/)。
 

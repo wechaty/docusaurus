@@ -3,10 +3,9 @@ title: "暑期2020 [为 go-wechaty 设计实现插件体系] POC 成果展示"
 author: finctive
 categories: project
 tags:
-  - wechaty
   - plugins
-  - soc
-  - soc2020
+  - summer-of-wechaty
+  - summer-2020
   - go
   - go-wechaty
 image: /assets/2020/go-wechaty-plugin-midterm/2020-08-19-go-wechaty.png

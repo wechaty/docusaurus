@@ -4,8 +4,8 @@ author: slx1997
 image: /assets/2020/wetchat-bot-chat/demo.jpg
 email: shiliux@foxmail.com
 site: https://github.com/slx1997
+categories: project
 tags:
-  - wechaty
   - wechaty-puppet-padplus
   - nodejs
 ---

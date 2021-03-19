@@ -3,7 +3,6 @@ title: "基于wechaty的英语学习群助手"
 author: alienfist
 categories: project
 tags:
-  - wechaty
   - wechaty-puppet-padplus
   - sqlite3
 image: /assets/2020/wechaty-english-learning-assistant/header.jpg

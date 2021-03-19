@@ -5,8 +5,8 @@ categories: project
 image: /assets/2020/wechaty-puppet-douyin/wechaty-puppet-douyin-logo.jpg
 tags:
   - douyin
-  - soc
-  - soc2020
+  - summer-of-wechaty
+  - summer-2020
 ---
 
 ## 暑期2020

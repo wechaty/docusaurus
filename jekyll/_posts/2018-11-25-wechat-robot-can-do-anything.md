@@ -3,7 +3,7 @@ title: "微信机器人能够做些什么事？"
 author: zhuangbiaowei
 categories: article
 tags:
-  - artificial intelligence
+  - ai
   - news
 ---
 
@@ -101,4 +101,4 @@ tags:
 
 先聊到这里，后续的想法，也欢迎大家一起来讨论。二维码是“开源社-bot”，欢迎添加。功能还很弱，大家轻拍 :)
 
-![开源社](https://upload-images.jianshu.io/upload_images/10072-fc21bd27b1fd3c91.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![开源社](/assets/2018/kaiyuanshe.png)

@@ -3,7 +3,6 @@ title: "使用Wechaty开发微信群管理小助手"
 author: sam
 categories: project
 tags:
-  - wechaty
   - wechaty-puppet-padplus
 image: /assets/2020/group-wechat-bot/2020-06-04-group-wechat-bot.png
 ---

@@ -6,7 +6,6 @@ tags:
   - release
   - event
   - news
-  - sticky
 image: /assets/2020/multi-language-wechaty-beta-released/multi-language-teaser.png
 ---
 
@@ -609,3 +608,5 @@ To review our first multiple language Wechaty meeting
 | 9:15 - 9:30 | Golang里的EventEmitter | 李博杰，@SilkageNet |
 | 9:30 - 9:45 | Discussion: Prize for DingDongBot | 李卓桓，@huan |
 | 9:45 - 10:00 | Q/A & Free Talk | |
+
+> Related Issue [Wechaty is All You Need: Python, Go, and Java Translation Project #1927](https://github.com/wechaty/wechaty/discussions/1927)

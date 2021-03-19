@@ -1,13 +1,12 @@
 ---
-title: "基于开放 API 封装 Wechaty 接口下的飞书聊天机器人"
-date: 2020-09-30 22:00 +0800
-author: fanrui
+title: "基于开放 API 封装 Wechaty 接口下的飞书聊天机器人：期末"
+author: roxanne718
 categories: project
 image: /assets/2020/lark-puppet/wechaty-lark-final.png
 tags:
   - featured
-  - soc2020
-  - soc
+  - summer-2020
+  - summer-of-wechaty
   - lark
 ---
 
@@ -60,9 +59,9 @@ tags:
 
 - 项目成果：
   - 项目仓库位于: <https://github.com/Roxanne718/wechaty-puppet-lark>
-  - Live coding视频:{% include iframe.html src="https://www.bilibili.com/video/BV18v411y7G9/" %}
-  - Demo 视频:{% include iframe.html src="https://www.bilibili.com/video/BV1fz4y1Z71Y/" %}
-
+  - Live coding视频:{% include iframe.html src="https://youtu.be/eutz5EMlJCI" %}
+  - Demo 视频:{% include iframe.html src="https://youtu.be/_y5DktHdL9U" %}
+  
 - 遇到的问题及解决方案：
   - 使用Ngrox进行内网穿透时，每次重启子域名都会发生变化，在老师的建议和指导下最终采用localtunnel解决了这一问题。
   - 由于对TypeScript和HTTP请求的理解不太透彻，遇到了一些消息格式上的问题，通过查阅资料、学习其他同学的代码等解决了这些问题。

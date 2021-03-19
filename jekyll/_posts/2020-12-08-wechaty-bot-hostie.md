@@ -1,10 +1,9 @@
 ---
 title: "基于Wechaty开发的群聊小助手"
-author: Penley
+author: mumup
 categories: project
 tags:
   - nodejs
-  - wechaty
   - wechaty-puppet-donut
 image: /assets/2020/wechaty-bot-hostie/img-func.jpeg
 ---
@@ -40,7 +39,7 @@ GitHub上搜了一圈，看到了挺多微信bot的方案，后面决定使用we
 
 ```js
 const bot = new Wechaty({
-  puppet: 'wechaty-puppet-hostie',
+  puppet: 'wechaty-puppet-service',
   puppetOptions: {
     token,
   }
@@ -90,7 +89,7 @@ main()
 
 ```
 
-由于padplus马上要废弃，所以使用的是puppet-hostie，具体api可以查看官网文档，目前有少许功能并未实现，比较遗憾，等后续功能更加完善，准备用vue3+express做一个后台的管理系统，方便管理机器人。
+由于padplus马上要废弃，所以使用的是puppet-service，具体api可以查看官网文档，目前有少许功能并未实现，比较遗憾，等后续功能更加完善，准备用vue3+express做一个后台的管理系统，方便管理机器人。
 
 ## 安装
 

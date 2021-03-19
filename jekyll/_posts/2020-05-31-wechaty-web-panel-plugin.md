@@ -1,10 +1,9 @@
 ---
 title: "wechaty Web Panel的plugin诞生"
-author: leo_chen
+author: gengchen528
 categories: project
 tags:
   - code
-  - wechaty
   - webPanel
   - plugin
   - feature

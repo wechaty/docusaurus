@@ -5,7 +5,7 @@
 
 ![Wechaty Docusaurus](docs/images/wechaty-docusaurus.png)
 
-<https://wechaty.js.org> is the official wechaty homepage for publishing latest news, blog posts, and documentation from our open source community.
+<https://wechaty.js.org> is the official Wechaty website for publishing latest news, blog posts, and documentation from our open source community.
 
 ## How to post a blog
 
@@ -13,20 +13,23 @@
 1. [Syncing your fork](https://help.github.com/cn/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
 1. Create your blog branch (git checkout -b your-blog)
 1. Write your blog in markdown
-1. Add your blog to `_post` folder
-1. Add related image to `assets` folder (create a `$MONTH-your-blog-slug/` directory to contain your images)
-1. Add your info into `_developers/your_github_id.md`
-1. Commit your changes (git commit -am 'added a blog')
+1. Add your blog to `jekyll/_post` folder
+1. Add related image to `jekyll/assets` folder (under `$YEAR/$MONTH-your-blog-slug/` directory to contain your images)
+1. Add your info into `jekyll/_contributors/your_github_id.md`
+1. Commit your changes (git commit -am "${YOUR_BLOG_TITLE")
 1. Push to the branch
 1. Create new Pull Request
+1. Sign the CLA
+1. Wait for pass the GitHub Action CI, or fix whatever to make sure CI turns green
+1. Wait for @wechaty/editors to review
 
-Done!~
+That's it!
 
 ## Contribution Guidelines
 
 ### 1. Add Blog Header
 
-All blog should has title, author, date, teaser...
+All blog should has title, author, image...
 
 Example as follows:
 
@@ -44,11 +47,9 @@ image: your_teaser_image_path
 
 ### 2. Writing Style
 
-- Keep all filenames & url as lowercase, and use `-` to connect words instead of space. e.g. `2017-10-06-wechat-pc-impactor` instead of `2017-10-06-WeChat PC Impactor`
+- Keep all filenames & url as lowercase, and use `-` to connect words instead of space. e.g. `2017-10-06-wechat-pc-impactor` instead of `2017-10-06-WeChat PC Impactor`. No Chinese should be use in all filenames.
 - Find a good image for the blog to make it more beautiful.
-- Embed the photo & video before publishing, save all external file to the blog `/assets/${current_year}` directory.
-
-see more: [Do not include Date in URL](https://github.com/wechaty/wechaty.github.io/issues/79)
+- Embed the photo & video before publishing, save all external file to the blog `/jekyll/assets/${YEAR}/$MONTH-your-blog-slug/` directory.
 
 ### 4. Just Commit Related Files
 
@@ -70,23 +71,6 @@ or
 
 see more： [Add iframe to wechaty blog](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)
 
-### 6. Add links to anchor in paragraph
-
-The titles in markdown files will be added an anchor automatically, you can use that to add your own anchor links. And here is some of the rules how the blog generate the anchor:
-
-- convert the title directly to anchor
-- spaces will be replaced by dash `-`
-- `/`, `&`, `?` and `.` will be eliminated
-- Chinese character will be kept in the anchor
-
-#### Example
-
-Say you have a title as `### 我是? a title.bat`. Then you will get the anchor generated as `我是-a-titlebat`. And you can use the generated anchor to implement your own links. Like this:
-
-```markdown
-[奇妙的Link](#我是-a-titlebat)
-```
-
 ## Test
 
 In order to make sure everything(file name, file size, etc) is ok, you can run the following command to check them before `git push`.
@@ -95,6 +79,28 @@ In order to make sure everything(file name, file size, etc) is ok, you can run t
 npm install
 npm test
 ```
+
+## Preview
+
+Run the Jekyll localhost for blog preview.
+
+### 0. Prerequisites
+
+Follow in the official instruction to install jekyll in your local [jekyll quickstart](https://jekyllrb.com/docs/)
+
+### 1. Install Jekyll by Hand
+
+Run the Jekyll at localhost for blog preview. (It would be easier for a Ruby expert.)
+
+```sh
+make install
+cd jekyll
+make serve
+```
+
+### 2. Preview the Blog
+
+Go to <http://127.0.0.1:4000/blog/> , you can preview the blog successfully!
 
 ## Welcome to contribute
 
@@ -106,7 +112,7 @@ At the same time, we also meet up offline all over the world, here is some activ
 
 - [Wechaty Contributor Dinner](https://wechaty.js.org/2017/04/26/wechaty-meeting/)
 - [The memorabilia of The First Chatie WWDC Party](https://wechaty.js.org/2017/06/06/the-first-chatie-wwdc-party/)
-- [Shanghai WWDC - WeChaty Worldwide Developers Conference](https://wechaty.js.org/2017/08/28/wechaty-shanghai-meetup/)
+- [Shanghai WWDC - Wechaty Worldwide Developers Conference](https://wechaty.js.org/2017/08/28/wechaty-shanghai-meetup/)
 - [Wechaty Contributor Dinner with Data Girls](https://wechaty.js.org/2018/01/14/wechaty-contributor-dinner-data-girl/)
 - [Wechaty Country Wide Developer Conference](https://wechaty.js.org/2018/09/15/country-wide-developer-conference/)
 - .....
@@ -120,20 +126,11 @@ At the same time, we also meet up offline all over the world, here is some activ
 - Push to the branch
 - Create new Pull Request
 
-### More Contribution
-
-See more in: [Welcome to contribute](https://wechaty.github.io/docs/welcome-to-contribute)
-
-Contact rui@chatie.io to learn more
-
-## Markdown Linting Rules
-
-[Markdown Linting Rules Documents](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md)
-
 ## Resources
 
 - [Migrating from gitbook to docsify.js](https://timdams.com/2019/05/02/migrating-from-gitbook-to-docsify-js/)
 - [Integrating GitBook with JSDoc to Document Your Open Source Project](https://gist.github.com/KevinAst/7e12648245ff2a8e9c1557135014b933)
+- [Markdown Linting Rules Documents](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md)
 
 ## Writers
 
@@ -150,8 +147,9 @@ To get to know all our writers, see <https://github.com/wechaty/wechaty.js.org/g
 
 ## Maintainers
 
-1. @lijiarui, [Rui LI](https://github.com/lijiarui), Microsoft AI MVP, Founder & CEO of Juzi.BOT (YC W19 Alumni)
-1. @huan, [Huan LI](https://github.com/huan) ([李卓桓](http://linkedin.com/in/zixia)), Tencent TVP of Chatbot, \<zixia@zixia.net\>
+1. [@lijiarui](https://github.com/lijiarui), [Rui LI](https://wechaty.js.org/contributors/lijiarui), Microsoft AI MVP, Founder & CEO of Juzi.BOT (YC W19 Alumni)
+1. [@huan](https://github.com/huan), [Huan LI](https://wechaty.js.org/contributors/huan), Tencent TVP of Chatbot, \<zixia@zixia.net\>
+1. [@wj-Mcat](https://github.com/wj-Mcat), [Jingjing WU](https://wechaty.js.org/contributors/wj-mcat), Author of [Python Wechaty](https://github.com/wechaty/python-wechaty)
 
 And [wechaty/contributors](https://github.com/orgs/wechaty/teams/contributors/members)
 

@@ -6,8 +6,8 @@ image: /assets/2020/wechaty-puppet-kuaishou/wechaty-puppet-kuaishou-logo.jpeg
 tags:
   - kuaishou
   - puppet
-  - soc
-  - soc2020
+  - summer-of-wechaty
+  - summer-2020
 ---
 
 > Author:[@bikaiqiao](https://github.com/bikaiqiao)

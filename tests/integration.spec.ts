@@ -2,16 +2,7 @@
 
 import test  from 'tstest'
 
-import fs from 'fs'
-import path from 'path'
-import util from 'util'
-
-import probeImageSize from 'probe-image-size'
-import globCB from 'glob'
-
 import { prNumberToTitle } from '../src/pr-number-to-title'
-
-const glob = util.promisify(globCB)
 
 const isPR = require('is-pr')
 
@@ -28,31 +19,5 @@ test.skip('pull request title', async t => {
     }
   } else {
     t.skip('skipped because this test is not ran from a pull request')
-  }
-})
-
-test('image size should not more than 1MB', async t => {
-  const ASSET_FOLDER = path.join(
-    __dirname,
-    '../jekyll/assets'
-  )
-
-  const MAX_WIDTH = 1920         // HD
-  const MAX_SIZE  = 1024 * 1024  // 1MB
-
-  const fileList = await glob(`${ASSET_FOLDER}/**/*.{jpg,jpeg,png}`)
-  t.true(fileList.length > 0, 'should get image file list')
-
-  for (const file of fileList) {
-    const dim = await probeImageSize(fs.createReadStream(file))
-    const size = fs.statSync(file).size
-
-    const fit = dim.width <= MAX_WIDTH && size <= MAX_SIZE
-    t.true(fit, `${file.replace(/.*\//, '')} should not exceed the max limit: width: ${dim.width}, size: ${size}.`)
-
-    if (!fit) {
-      console.error(`use "./scripts/fit-image.sh <FILE>" to adjust it fit MAX_WIDTH: ${MAX_WIDTH} & MAX_SIZE: ${MAX_SIZE}`)
-    }
-
   }
 })

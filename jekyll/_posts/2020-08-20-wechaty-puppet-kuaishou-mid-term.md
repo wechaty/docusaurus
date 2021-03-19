@@ -6,8 +6,8 @@ image: /assets/2020/wechaty-puppet-kuaishou-mid-term/wechaty-puppet-kuaishou-mid
 tags:
   - kuaishou
   - puppet
-  - soc
-  - soc2020
+  - summer-of-wechaty
+  - summer-2020
 ---
 
 ## 暑期2020

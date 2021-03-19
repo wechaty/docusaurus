@@ -1,0 +1,122 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="row justify-content-center">
+
+    {% include item-content.html %}
+
+    <div class="col-md-12">
+      <!-- Startup Start -->
+      {% assign people_startups = '' | split: ',' %}
+      {% for portfolio in site.contributors %}
+        {% if portfolio.people contains page.slug %}
+          {% assign people_startups = people_startups | push: portfolio %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign people_startups_size = people_startups | size %}
+      {% if people_startups_size > 0 %}
+        <h4 class="font-weight-bold spanborder"><span>Startup of {{page.name}}</span></h4>
+        <div class="container">
+          <div class="row gap-y listrecent listauthor">
+            {% assign item_type = 'portfolios' %}
+            {% for item in people_startups %}
+            {% include main-loop-card-item.html %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+      <!-- Startup End -->
+
+      <!-- Portfolio Start -->
+      {% assign people_portfolios = '' | split: ',' %}
+      {% for portfolio in site.contributors %}
+        {% if portfolio.ventures contains page.slug %}
+          {% assign people_portfolios = people_portfolios | push: portfolio %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign people_portfolios_size = people_portfolios | size %}
+      {% if people_portfolios_size > 0 %}
+        <h4 class="font-weight-bold spanborder"><span>Portfolios of {{page.name}}</span></h4>
+        <div class="container">
+          <div class="row gap-y listrecent listauthor">
+            {% assign item_type = 'portfolios' %}
+            {% for item in people_portfolios %}
+            {% include main-loop-card-item.html %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+      <!-- Portfolio End -->
+
+
+      <!-- Ventures Start -->
+      {% assign people_ventures = '' | split: ',' %}
+      {% for venture in site.ventures %}
+        {% if venture.people contains page.slug %}
+          {% assign people_ventures = people_ventures | push: venture %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign people_ventures_size = people_ventures | size %}
+      {% if people_ventures_size > 0 %}
+        <h4 class="font-weight-bold spanborder"><span>Ventures of {{page.name}}</span></h4>
+        <div class="container">
+          <div class="row gap-y listrecent listauthor">
+            {% assign item_type = 'ventures' %}
+            {% for item in people_ventures %}
+            {% include main-loop-card-item.html %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+      <!-- Ventures End -->
+
+
+      <!-- Agency Start -->
+      {% assign people_agents = '' | split: ',' %}
+      {% for agent in site.agents %}
+        {% if agent.people contains page.slug %}
+          {% assign people_agents = people_agents | push: agent %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign people_agents_size = people_agents | size %}
+      {% if people_agents_size > 0 %}
+        <h4 class="font-weight-bold spanborder"><span>Agents of {{page.name}}</span></h4>
+        <div class="container">
+          <div class="row gap-y listrecent listauthor">
+            {% assign item_type = 'agencies' %}
+            {% for item in people_agents %}
+            {% include main-loop-card-item.html %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+      <!-- Agency End -->
+
+
+      <!-- Posts Start -->
+      {% assign posts = site.posts | where:"author", page.slug %}
+      {% assign posts_size = posts | size %}
+      {% if posts_size > 0 %}
+        <h4 class="font-weight-bold spanborder"><span>Posts by {{page.name}}</span></h4>
+        {% for post in posts %}
+        {% include main-loop-card-post.html %}
+        {% endfor %}
+      {% endif %}
+      <!-- Posts End -->
+
+
+      <!-- Comments -->
+      {% if page.comments != false %}
+      {% include comments.html %}
+      {% endif %}
+
+
+    </div>
+  </div>
+</div>

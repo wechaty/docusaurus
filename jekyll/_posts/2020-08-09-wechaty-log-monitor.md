@@ -4,7 +4,6 @@ author: archy
 categories: project
 tags:
   - plugin
-  - wechaty
   - devops
   - featured
 image: /assets/2020/wechaty-log-monitor/demo.jpeg
@@ -206,7 +205,7 @@ export enum WechatyLogOperationSecurityRule {
 }
 ```
 
-未来如果要发展到把项目整个production相关的DevOps（不单只是WeChaty相关的Operations，如在production跑的MongoDB相关的Operations、Restful API服务器相关的Operations等）都运用WeChaty来给团队塑造一个简单、容易上手的流程，也就是把chatbot变成了一个简易的terminal，那时候我们可以设定让更危险的Operations变得需要短信验证码、authy等方式去做Authentication。
+未来如果要发展到把项目整个production相关的DevOps（不单只是Wechaty相关的Operations，如在production跑的MongoDB相关的Operations、Restful API服务器相关的Operations等）都运用Wechaty来给团队塑造一个简单、容易上手的流程，也就是把chatbot变成了一个简易的terminal，那时候我们可以设定让更危险的Operations变得需要短信验证码、authy等方式去做Authentication。
 
 我相信Auth功能对于wechaty-log-monitor插件来说将会是一个有意思的发展方向之一。
 

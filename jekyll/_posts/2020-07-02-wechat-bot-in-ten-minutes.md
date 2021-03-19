@@ -1,10 +1,9 @@
 ---
 title: "十分钟实现一个智能问答微信聊天机器人"
 author: luweicn
-categories: bot
+categories: project
 tags:
   - nodejs
-  - wechaty
   - wechaty-puppet-padplus
 ---
 

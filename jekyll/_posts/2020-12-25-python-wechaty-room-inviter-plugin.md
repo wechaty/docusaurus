@@ -3,10 +3,9 @@ title: "Python-Wechaty之自动回复&关键字入群插件"
 author: wj-mcat
 categories: tutorial
 tags:
-  - news
-  - wechaty
   - python-wechaty
-image: /assets/2020/python-wechaty/pythotn-wechaty-logo.png
+  - python
+image: /assets/2020/python-wechaty/python-wechaty-logo.png
 ---
 
 经不可靠统计，大部分聊天机器人的初学者都是以：自动回复和关键字入群这两个基础功能上手，然后才会逐步开发更多更复杂的功能，在此我将介绍如何使用python-wechaty快速实现这两个功能。
@@ -52,14 +51,14 @@ Token的配置可以有多种方式：
 - 方法一：通过环境变量来配置
 
     ```bash
-    export WECHATY_PUPPET_HOSTIE_TOKEN='your-token'
+    export WECHATY_PUPPET_SERVICE_TOKEN='your-token'
     ```
 
 - 方法二：通过python代码来配置
 
     ```python
     import os
-    os.environ['WECHATY_PUPPET_HOSTIE_TOKEN'] = 'your-token'
+    os.environ['WECHATY_PUPPET_SERVICE_TOKEN'] = 'your-token'
     ```
 
 那如何获取长期Token呢？详细请看：[Everything-about-Wechaty](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)

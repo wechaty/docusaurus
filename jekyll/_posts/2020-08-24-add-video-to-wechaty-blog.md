@@ -2,6 +2,9 @@
 title: 使用jekyll include在wechaty博客中快速插入视频
 author: univerone
 categories: tutorial
+tags:
+  - jekyll
+  - plugin
 image: /assets/2020/add-video-to-wechaty-blog/header.png
 ---
 
@@ -9,7 +12,7 @@ image: /assets/2020/add-video-to-wechaty-blog/header.png
 
 ## 1. 背景
 
-在[lijiarui](https://wechaty.js.org/developers/lijiarui/)和[Huan](https://wechaty.js.org/developers/huan/)的建议下，参考[之前的博客](https://wechaty.js.org/2020/05/19/qnamaker-juzi-bot-for-investors-rui/),应用如下样式插入iframe能够达到较为满意的效果（宽高比为16:9）。
+在[lijiarui](https://wechaty.js.org/contributors/lijiarui/)和[Huan](https://wechaty.js.org/contributors/huan/)的建议下，参考[之前的博客](https://wechaty.js.org/2020/05/19/qnamaker-juzi-bot-for-investors-rui/),应用如下样式插入iframe能够达到较为满意的效果（宽高比为16:9）。
 
 ```html
 <div class="video-container" style="
@@ -44,7 +47,7 @@ image: /assets/2020/add-video-to-wechaty-blog/header.png
 
 基本思想很简单，传入一个参数：iframe的地址或者视频的播放地址，利用上面带样式的iframe代码写成模板文件即可。
 
-在[Huan](https://wechaty.js.org/developers/huan/)的建议下，在模板文件中使用[liquid](https://shopify.github.io/liquid/)语法进行一些简单的逻辑判断，针对不同类型的iframe进行不同的处理，比如：
+在[Huan](https://wechaty.js.org/contributors/huan/)的建议下，在模板文件中使用[liquid](https://shopify.github.io/liquid/)语法进行一些简单的逻辑判断，针对不同类型的iframe进行不同的处理，比如：
 
 * bilibili视频的iframe有一个最上面的推荐栏，会导致iframe变高，使用16：9的比例不能使视频铺满，因此修改其宽高比为10:7,更具体得说，将`.video-container`这个div的`padding-bottom`改为70%。
 * 插入pdf文件需要使用viewer.js进行渲染，需要在本地的pdf文件路径前加上`/assets/js/viewer-js/#`作为完整的iframe地址。

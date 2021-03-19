@@ -1,6 +1,10 @@
 ---
 title: "nCoV2019疫情播报"  
 author: zjacai
+categories: project
+tags:
+  - typescript
+  - bupt
 ---
 
 > Author: [@zjacai](https://github.com/zjacai) enjoying ML&Wechaty at BUPT  
