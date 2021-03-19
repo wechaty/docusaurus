@@ -26,3 +26,7 @@ Can you imagine that? He was dying...
 So a tireless bot working for me 24x7 on wechat, monitoring/filtering the most important message is badly needed. For example, it highlights discussion which contains the KEYWORDS which he want to follow up(especially in a noisy room). ;-)
 
 At last, It's built for huan's personal study purpose of Automatically Testing.
+
+## Mission
+
+> Our Mission: Make it easy to build a WeChat Chatbot for developers.

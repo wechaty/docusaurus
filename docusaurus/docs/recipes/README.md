@@ -16,7 +16,6 @@ These are some use cases and code snippets to get you started with Redux in a re
 - [Making friends](recipes/friendship.md)
 - [Processing files](recipes/file-box.md)
 - [Usage with TypeScript](recipes/usage-with-typescript.md)
-- [Usage with Docker](recipes/usage-with-docker.md)
 - [Usage with Heroku](recipes/usage-with-heroku.md)
 - [Writing Tests](recipes/writing-tests.md)
 - [Using Plugin with Wechaty](recipes/using-plugin-with-wechaty.md)
