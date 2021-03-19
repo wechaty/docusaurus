@@ -48,39 +48,39 @@ image: /assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/grouupmaster.png
 
 - 打开「群组大师」，找到群列表
 
-![bot_step1.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step1?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![bot_step1.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step1.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 - 进入群主页
 
-![bot_step2.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step2?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![bot_step2.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step2.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 - 发布活动
 
-![bot_step3.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step3?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![bot_step3.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step3.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 - 提交并发布
 
-![bot_step4.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step4?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![bot_step4.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step4.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 - 发布成功进入活动详情
 
-![bot_step5.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step5?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![bot_step5.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step5.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 - 在对应微信群内使用指令进行活动报名，首次使用可发送 帮助 获取全部指令列表
 
-![bot_step6.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step6?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![bot_step6.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step6.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 - 发送 活动 查看群内活动详情，发送 报名 即可立即报名活动
 
-![bot_step7.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step7?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![bot_step7.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 - 发送 取消，取消活动报名
 
-![bot_step8.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step8?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![bot_step8.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step8.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 - 在「群组大师」小程序中可查看活动报名详情
 
-![bot_step9.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step9?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![bot_step9.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step9.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 ## demo源码：
 
@@ -271,7 +271,7 @@ bot.start().then(() => {
 name: atorber(鲁玉超)
 site: <https://github.com/atorber>
 bio: 一个不误正业的产品经理
-avatar: /jekyll/assets/contributors/atorber/avatar.png
+avatar: /assets/contributors/atorber/avatar.png
 email: atorber@163.com
 
 ---
