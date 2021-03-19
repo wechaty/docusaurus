@@ -48,39 +48,39 @@ image: /assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/grouupmaster.png
 
 - 打开「群组大师」，找到群列表
 
-![bot_step1.jpeg](https://upload-images.jianshu.io/upload_images/2399305-557e0e8053e95032.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![bot_step1.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step1?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 - 进入群主页
 
-![bot_step2.jpeg](https://upload-images.jianshu.io/upload_images/2399305-3d68b441bb67b991.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![bot_step2.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step2?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 - 发布活动
 
-![bot_step3.jpeg](https://upload-images.jianshu.io/upload_images/2399305-e229276ef9319534.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![bot_step3.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step3?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 - 提交并发布
 
-![bot_step4.jpeg](https://upload-images.jianshu.io/upload_images/2399305-8e860f0d6814c653.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![bot_step4.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step4?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 - 发布成功进入活动详情
 
-![bot_step5.jpeg](https://upload-images.jianshu.io/upload_images/2399305-13572ddd24a8f657.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![bot_step5.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step5?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 - 在对应微信群内使用指令进行活动报名，首次使用可发送 帮助 获取全部指令列表
 
-![bot_step6.jpeg](https://upload-images.jianshu.io/upload_images/2399305-ffaacbc677ac5b0d.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![bot_step6.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step6?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 - 发送 活动 查看群内活动详情，发送 报名 即可立即报名活动
 
-![bot_step7.jpeg](https://upload-images.jianshu.io/upload_images/2399305-47ff9abdddb8a6ee.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![bot_step7.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step7?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 - 发送 取消，取消活动报名
 
-![bot_step8.jpeg](https://upload-images.jianshu.io/upload_images/2399305-cdb975103ee45785.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![bot_step8.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step8?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 - 在「群组大师」小程序中可查看活动报名详情
 
-![bot_step9.jpeg](https://upload-images.jianshu.io/upload_images/2399305-750d52b3019525d0.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![bot_step9.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step9?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 ## demo源码：
 
