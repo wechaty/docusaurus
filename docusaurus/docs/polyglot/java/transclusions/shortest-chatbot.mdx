@@ -1,0 +1,13 @@
+```java
+package io.github.wechaty;
+
+class Bot{
+  public static void main(String args[]){
+    Wechaty bot = Wechaty.instance()
+      .onScan((qrcode, statusScanStatus, data) -> System.out.println(QrcodeUtils.getQr(qrcode)))
+      .onLogin(user -> System.out.println("User logged in :" + user))
+      .onMessage(message -> System.out.println("Message:" + message))
+      .start(true);
+  }
+}
+```

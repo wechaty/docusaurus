@@ -1,4 +1,5 @@
 ---
+slug: /polyglot/php/
 title: 'PHP Wechaty'
 sidebar_label: PHP
 ---

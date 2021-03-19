@@ -1,4 +1,5 @@
 ---
+slug: /polyglot/python/
 title: 'Python Wechaty'
 sidebar_label: Python
 ---

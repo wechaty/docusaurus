@@ -1,7 +1,10 @@
 ---
+slug: /polyglot/typescript/
 title: 'TypeScript Wechaty'
 sidebar_label: TypeScript
 ---
+
+import NodeInstall from './transclusions/install.mdx'
 
 [![TypeScript Wechaty](https://img.shields.io/badge/Wechaty-TypeScript-blue)](https://github.com/wechaty/wechaty)
 
@@ -11,7 +14,7 @@ TypeScript is the language that Wechaty ecosystem built on.
 
 :::
 
-## Getting Started
+## Quick Started
 
 Template Repo: <https://github.com/wechaty/wechaty-getting-started>
 
@@ -37,6 +40,12 @@ The Google Cloud Shell should open our tutorial in the right panel for you to fo
 
 Learn more from blog post: [Google Cloud Shell Tutorials for Wechaty](https://wechaty.js.org/2021/02/20/google-cloud-shell-tutorials/)
 
+## Getting Started
+
+## Install
+
+<NodeInstall />
+
 ## World's shortest chatbot code
 
 6 lines of JavaScript/TypeScript:
@@ -50,6 +59,10 @@ Wechaty.instance()
   .on('message',       message => console.log(`Message: ${message}`))
   bot.start()
 ```
+
+## Getting Started
+
+Getting Started Template Repo <https://github.com/wechaty/wechaty-getting-started>
 
 ## Maintainers
 
@@ -67,7 +80,7 @@ Wechaty.instance()
 ## Docs
 
 - API Reference: <https://wechaty.github.io/wechaty/>
-- [Wechaty Receipts](../recipes/)
+- [Wechaty Receipts](../../recipes/README.md)
 
 ## Badge
 
@@ -83,5 +96,5 @@ You can [join our Gitter](https://gitter.im/wechaty/wechaty) network if you aren
 
 - Read & create an [issues](https://github.com/wechaty/wechaty/issues)
 - Read & create a [pull requests](https://github.com/wechaty/wechaty/pulls)
-- [Publish blog post](../contributor-program/publish-blog)
+- [Publish blog post](../../contributor-program/publish-blog.md)
 - etc.

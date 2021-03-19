@@ -1,0 +1,14 @@
+```scala
+package wechaty
+
+object DingDongBot {
+  def main(args: Array[String]): Unit = {
+    Wechaty.instance()
+      .onScan(payload     => { println("Scan QR Code to login: %s\nhttps://wechaty.js.org/qrcode/%s\n".format(payload.status, payload.qrcode)) })
+      .onLogin(payload    => { println("User %s logged in\n".format(payload.id)) })
+      .onMessage(message  => { println(message) })
+      .start()
+    Thread.currentThread().join()
+  }
+}
+```

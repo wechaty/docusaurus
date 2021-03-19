@@ -45,6 +45,21 @@ You need to add the __Wechaty Contributor Program__ badge after you join this pr
 [![Wechaty Contributor Program](https://img.shields.io/badge/Wechaty-Contributor%20Program-green.svg)](https://wechaty.js.org/docs/contributor-program/)
 ```
 
+## Cite Wechaty
+
+To cite this project in publications:
+
+```bibtex
+@misc{wechaty,
+  author = {Huan LI, Rui LI},
+  title = {Wechaty: Conversational RPA SDK for Chatbot Makers},
+  year = {2016},
+  publisher = {GitHub},
+  journal = {GitHub Repository},
+  howpublished = {\url{https://github.com/wechaty/wechaty}},
+}
+```
+
 ## FAQ
 
 ### How to publish blogs

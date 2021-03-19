@@ -8,8 +8,8 @@ We have the world's shortest lines code of chatbot in all programming languages!
 
 :::
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
 
 <Tabs
   groupId="programming-languages"
