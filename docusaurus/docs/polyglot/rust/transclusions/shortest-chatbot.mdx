@@ -1,0 +1,10 @@
+```rust
+let bot = Wechaty::new(PuppetService::new(options).await.unwrap());
+
+bot.on_scan(handle_scan)
+    .on_login(handle_login)
+    .on_logout(handle_logout)
+    .on_message(handle_message)
+    .start()
+    .await;
+```

@@ -1,4 +1,5 @@
 ---
+slug: /polyglot/scala/
 title: 'Scala Wechaty'
 sidebar_label: Scala
 ---
