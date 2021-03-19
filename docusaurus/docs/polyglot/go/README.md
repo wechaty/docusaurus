@@ -1,4 +1,5 @@
 ---
+slug: /polyglot/go/
 title: 'Go Wechaty'
 sidebar_label: Go
 ---

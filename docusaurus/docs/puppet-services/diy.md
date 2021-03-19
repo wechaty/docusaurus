@@ -3,8 +3,8 @@ title: 'Puppet Service: DIY'
 ---
 
 <!-- MDX import -->
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
 
 [![Wechaty Puppet Service DIY](https://img.shields.io/badge/Service-DIY-blue)](diy.md)
 
@@ -222,7 +222,7 @@ docker run -ti \
   --name wechaty_puppet_service_token_gateway \
   --rm \
   --privileged \
-  --net=host \
+  --network=host \
   -e WECHATY_LOG \
   -e WECHATY_PUPPET \
   -e WECHATY_PUPPET_PADLOCAL_TOKEN \
@@ -348,7 +348,7 @@ docker run \
   --name wechaty_puppet_service_token_gateway \
   --rm \
   --privileged \
-  --net=host \
+  --network=host \
   -e WECHATY_LOG \
   -e WECHATY_PUPPET \
   -e WECHATY_PUPPET_PADLOCAL_TOKEN \
@@ -399,7 +399,7 @@ docker run \
   --name wechaty_puppet_service_token_gateway \
   --rm \
   --privileged \
-  --net=host \
+  --network=host \
   -e WECHATY_LOG \
   -e WECHATY_PUPPET \
   -e WECHATY_PUPPET_PADLOCAL_TOKEN \

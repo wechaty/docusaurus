@@ -32,8 +32,8 @@ Learn about [Wechaty Puppet Service](puppet-services/README.md) for all services
 :::
 
 <!-- MDX import -->
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
 
 <Tabs
   groupId="operating-systems"

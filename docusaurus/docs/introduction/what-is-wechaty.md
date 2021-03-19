@@ -46,7 +46,7 @@ related issues:
 * [Can not login with error message: 当前登录环境异常。为了你的帐号安全，暂时不能登录web微信。](https://github.com/wechaty/wechaty/issues/603)
 * [\[RUMOR\] wechat will close web api for wechat](https://github.com/wechaty/wechaty/issues/990)
 * [New account login issue](https://github.com/wechaty/wechaty/issues/872)
-* [wechaty-puppet-puppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer)
+* [wechaty-puppet-wechat](https://github.com/wechaty/wechaty-puppet-wechat)
 
 If you want to break the above limitations, please consider to use a Wechaty Puppet other than using Web API, like [wechaty-puppet-padplus](https://github.com/botorange/wechaty-puppet-padplus).
 
@@ -62,8 +62,8 @@ The term `Puppet` in Wechaty is a name that we had picked up to describe part of
 
 Plugins are named PuppetXXX, like PuppetPuppeteer is using the chrome puppeteer to control the WeChat Web API via a chrome browser, PuppetPadchat is using the WebSocket protocol to connect with a Protocol Server for controlling an iPad program. Here is the related information:
 
-* ​[Full Puppet List](puppet.md#2-wechaty-puppet-list)
-* ​[Wechaty Puppet compatibility](puppet.md#3-wechaty-puppet-compatibility)
+* ​[Full Puppet List](../puppet-providers/README.md)
+* ​[Wechaty Puppet compatibility](../puppet-services/compatibility.md)
 
 For a deeper understanding of the Puppet in Wechaty, you can read its source code if you like at [https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts](https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts)
 
@@ -72,6 +72,53 @@ All implement by web WeChat is fully open-source and free, if you need other imp
 Here is the whole image for wechaty puppet introduction:
 
 ![Puppet Structure](../../static/img/docs/architecture.png)
+
+## RELEASE NOTES
+
+* [Latest Release](https://github.com/Wechaty/wechaty/releases/latest)(All releases [here](https://github.com/Wechaty/wechaty/releases))
+* [Changelog](https://github.com/Wechaty/wechaty/blob/master/CHANGELOG.md)
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/wechaty/wechaty.svg)](https://starchart.cc/wechaty/wechaty)
+
+## Contributors
+
+[![GitHub issues](https://img.shields.io/github/issues/wechaty/wechaty.svg)](https://github.com/Wechaty/wechaty/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/wechaty/wechaty.svg)](https://github.com/Wechaty/wechaty/pulls)
+[![Open Collective Backers](https://opencollective.com/wechaty/backer/badge.svg?label=open%20collective%20backers&color=blue)](https://opencollective.com/wechaty/)
+[![Open Collective Sponsors](https://opencollective.com/wechaty/sponsors/badge.svg?label=open%20collective%20sponsors&color=blue)](https://opencollective.com/wechaty/)
+
+[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty/images/0)](https://sourcerer.io/fame/huan/wechaty/wechaty/links/0)
+[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty/images/1)](https://sourcerer.io/fame/huan/wechaty/wechaty/links/1)
+[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty/images/2)](https://sourcerer.io/fame/huan/wechaty/wechaty/links/2)
+[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty/images/3)](https://sourcerer.io/fame/huan/wechaty/wechaty/links/3)
+[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty/images/4)](https://sourcerer.io/fame/huan/wechaty/wechaty/links/4)
+[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty/images/5)](https://sourcerer.io/fame/huan/wechaty/wechaty/links/5)
+[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty/images/6)](https://sourcerer.io/fame/huan/wechaty/wechaty/links/6)
+[![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty/images/7)](https://sourcerer.io/fame/huan/wechaty/wechaty/links/7)
+
+This project exists thanks to all the people who contribute.
+
+-----
+
+[![Contribute](https://opencollective.com/wechaty/contributors.svg?width=890&button=false)](https://github.com/Wechaty/wechaty/graphs/contributors)
+
+## Backers
+
+[![Backers on Open Collective](https://opencollective.com/wechaty/backers/badge.svg)](#backers)
+
+Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/wechaty#backer)]
+
+[![Open Collective Wechaty](https://opencollective.com/wechaty/backers.svg?width=890)](https://opencollective.com/wechaty#backers)
+
+## Sponsors
+
+[![Sponsors on Open Collective](https://opencollective.com/wechaty/sponsors/badge.svg)](#sponsors)
+
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/wechaty#sponsor)]
+
+[![Wechaty Sponsor](https://opencollective.com/wechaty/sponsor.svg?width=890)](https://opencollective.com/wechaty/#sponsor)
 
 ## Join Us
 
