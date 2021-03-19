@@ -8,11 +8,11 @@ The following diagram shows out that we can reuse almost everything in TypeScrip
   +--------------------------+ +--------------------------+
   |                          | |                          |
   |   Wechaty (TypeScript)   | |    Wechaty(Polyglot)     |
-  |                          | |  Python, Go, Java, etc.  |
+  |                          | |  Python, Go, Rust, etc.  |
   +--------------------------+ +--------------------------+
 
   +-------------------------------------------------------+
-  |                 Wechaty Puppet Servuce                |
+  |                 Wechaty Puppet Service                |
   |                                                       |
   |                (wechaty-puppet-service)               |
   +-------------------------------------------------------+
