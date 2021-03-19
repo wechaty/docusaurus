@@ -4,10 +4,6 @@ author: zhihuifanqiechaodan
 categories: project
 tags:
   - nodejs
-  - wechaty
-  - wechaty-puppet-donut
-  - wechaty-puppet-wxwork
-  - rx-queue
 image: /assets/2020/12-07-wxwork/wecom.png
 ---
 
