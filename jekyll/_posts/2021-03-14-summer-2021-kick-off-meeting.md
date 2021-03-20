@@ -16,7 +16,9 @@ tags:
 
 ## Kick off meeting
 
-为了更好地参与**暑期2021**，我们组织了一场启动会议，[点此](https://www.youtube.com/watch?v=_RURk6UPlS4)回顾。
+为了更好地参与**暑期2021**，我们组织了一场启动会议，视频回顾：
+
+{% include iframe.html src="https://youtu.be/_y5DktHdL9U" %}
 
 ## Mentor Wanted
 
