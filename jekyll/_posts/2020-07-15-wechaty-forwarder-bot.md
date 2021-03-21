@@ -3,7 +3,8 @@ title: "微信转发机器人(wechaty-forwardbot)"
 author: xiaok
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - padplus
+  - project
 image: /assets/2020/wechaty-forwardbot/header.png
 ---
 > Author: [xiaok](https://github.com/22528850)

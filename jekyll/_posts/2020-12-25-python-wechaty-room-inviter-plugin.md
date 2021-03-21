@@ -3,8 +3,8 @@ title: "Python-Wechaty之自动回复&关键字入群插件"
 author: wj-mcat
 categories: tutorial
 tags:
-  - python-wechaty
   - python
+  - plugin
 image: /assets/2020/python-wechaty/python-wechaty-logo.png
 ---
 

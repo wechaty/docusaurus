@@ -4,7 +4,7 @@ author: wj-mcat
 categories: tutorial
 tags:
   - news
-  - python-wechaty
+  - python
 image: /assets/2020/python-wechaty/live-coding.png
 ---
 

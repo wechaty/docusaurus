@@ -4,7 +4,8 @@ author: evany
 categories: project
 tags:
   - python
-  - wechaty-puppet-padplus
+  - padplus
+  - project
 image: /assets/2020/daily-push-wechat-robot/fake-robot.jpg
 
 ---

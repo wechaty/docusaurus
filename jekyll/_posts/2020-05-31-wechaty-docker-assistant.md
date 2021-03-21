@@ -4,7 +4,7 @@ author: gengchen528
 categories: project
 tags:
   - code
-  - webPanel
+  - web-panel
   - feature
 image: /assets/2020/web-panel/web-head.png
 ---
