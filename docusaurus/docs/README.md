@@ -10,7 +10,6 @@ title: Wechaty Docs Index
 - [Introduction](introduction/)
 - [Getting Started](getting-started/)
 - [Tutorials](tutorials/)
-- [Chatbot 1 to 2](chatbot-1-to-2/)
 - [Recipes](recipes/)
 - [Puppet Services](puppet-services/)
 - [API](api/)
