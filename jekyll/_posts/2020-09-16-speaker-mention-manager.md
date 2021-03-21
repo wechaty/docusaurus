@@ -5,7 +5,8 @@ image: /assets/2020/wechaty-speaker-mention/speaker-mention.png
 categories: project
 tags:
   - nodejs
-  - wechaty-puppet-padplus
+  - padplus
+  - project
 ---
 
 ## 背景

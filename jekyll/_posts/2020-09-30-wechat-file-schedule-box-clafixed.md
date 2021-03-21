@@ -3,7 +3,8 @@ title: Wechat File Schedule Box
 author: hywhuangyuwei
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - padplus
+  - project
   - nodejs
   - sync
   - netdisk

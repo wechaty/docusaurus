@@ -3,7 +3,8 @@ title: "微信群积分机器人（Wechat group integral robot）"
 author: hzhuhao
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - padplus
+  - project
 image: /assets/2020/wechat-group-integral-robot/header.jpg
 ---
 

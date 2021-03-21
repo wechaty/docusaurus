@@ -3,7 +3,8 @@ title: "发段子 舔狗 毒鸡汤 美图bot"
 author: generalbao
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - padplus
+  - project
 image: /assets/2020/paipiange-bot/1.png
 ---
 

@@ -4,7 +4,7 @@ author: nebell
 categories: project
 image: /assets/2020/go-wechaty-github-action-optimization-poc/header.jpg
 tags:
-  - go-wechaty
+  - go
   - summer-of-wechaty
   - summer-2020
 ---
