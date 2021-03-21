@@ -1,7 +1,6 @@
 ---
 slug: /introduction/
-title: Wechaty Introduction Overview
-sidebar_label: 'Overview'
+title: What is Wechaty
 ---
 
 import ShortestChatbots from '../polyglot/transclusions/shortest-chatbots.mdx'
