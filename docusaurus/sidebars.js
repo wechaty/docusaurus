@@ -2,8 +2,6 @@ module.exports = {
   docs: {
     Introduction: [
       'introduction/README',
-      'introduction/conversational',
-      'introduction/rpa',
       'introduction/motivations',
       'introduction/concepts',
       'introduction/architecture',
