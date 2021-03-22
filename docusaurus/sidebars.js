@@ -97,7 +97,14 @@ module.exports = {
           'ospp/2020',
         ],
       },
-      'gsod/README',
+      {
+        type: 'category',
+        label: 'Google Season of Docs',
+        items: [
+          'gsod/README',
+          'gsod/2021',
+        ],
+      },
       {
         type: 'category',
         label: 'Google Summer of Code',
