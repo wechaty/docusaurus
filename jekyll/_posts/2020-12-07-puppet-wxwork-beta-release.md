@@ -5,7 +5,7 @@ categories: announcement
 tags:
   - news
   - puppet-service
-  - puppet-service-provider
+  - puppet-provider
   - wxwork
 image: /assets/2020/12-07-wxwork/wecom.png
 ---

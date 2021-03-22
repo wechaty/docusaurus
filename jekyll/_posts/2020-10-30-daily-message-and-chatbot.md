@@ -5,7 +5,8 @@ email: 54027901@163.com
 categories: project
 tags:
   - nodejs
-  - wechaty-puppet-padplus
+  - padplus
+  - project
 ---
 
 ## 前言

@@ -3,7 +3,8 @@ title: "群消息同步机器人"
 author: sidny
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - padplus
+  - project
 image: /assets/2020/wechat-roommessage-bot/teaser.png
 ---
 

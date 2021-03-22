@@ -6,6 +6,8 @@ tags:
   - news
   - sticky
   - release
+  - puppet-provider
+  - whatsapp
 image: /assets/2021/02-publishment-of-wechaty-whatapp-puppet/logo.png
 ---
 

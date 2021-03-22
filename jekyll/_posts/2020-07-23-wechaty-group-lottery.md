@@ -3,7 +3,8 @@ title: "微信群内抽奖机器人(wechaty_lottery)"
 author: csjuxyz
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - padplus
+  - project
 image: /assets/2020/wechaty-lottery/lottery-header.jpg
 ---
 > Author: [csjuXYZ](https://github.com/csjuXYZ)

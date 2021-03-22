@@ -5,7 +5,8 @@ categories: project
 image: /assets/2020/lark-puppet/wechaty-lark.png
 tags:
   - summer-2020
-  - Lark
+  - puppet-provider
+  - lark
   - summer-of-wechaty
 ---
 > Author: [@roxanne718](https://github.com/Roxanne718)
