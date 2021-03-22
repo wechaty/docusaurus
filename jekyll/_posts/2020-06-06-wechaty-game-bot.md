@@ -4,7 +4,8 @@ author: osindex
 categories: project
 tags:
   - nodejs
-  - wechaty-puppet-padplus
+  - padplus
+  - project
   - redis
   - sqlite
   - knex

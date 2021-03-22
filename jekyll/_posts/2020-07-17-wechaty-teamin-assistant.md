@@ -3,7 +3,8 @@ title: "用 Wechaty 实现微信任务小助手（wechat teamin chat robot）"
 author: darkli
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - padplus
+  - project
   - wechat-robot
   - teamin
   - chatbot

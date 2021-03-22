@@ -3,7 +3,8 @@ title: "团队小助手"
 author: suruozhong
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - padplus
+  - project
 image: /assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot0.jpg 
 ---
 

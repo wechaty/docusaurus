@@ -3,7 +3,8 @@ title: "更有效率的二手捡漏助手"
 author: krapnik
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - padplus
+  - project
   - electron
 image: /assets/2020/wechaty-electron/header.png
 ---

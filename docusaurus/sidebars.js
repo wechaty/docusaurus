@@ -1,11 +1,7 @@
-const CHATBOT_1_TO_2 = require('./sidebar-chatbot-1-to-2.js')
-
 module.exports = {
   docs: {
     Introduction: [
       'introduction/README',
-      'introduction/conversational',
-      'introduction/rpa',
       'introduction/motivations',
       'introduction/concepts',
       'introduction/architecture',

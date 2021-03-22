@@ -6,7 +6,8 @@ image: /assets/2020/work-puppet/pic3.jpg
 tags:
   - summer-2020
   - summer-of-wechaty
-  - wechaty-puppet-wecom
+  - puppet-provider
+  - wecom
 ---
 
 <!-- markdownlint-disable -->
