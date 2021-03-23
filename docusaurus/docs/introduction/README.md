@@ -14,9 +14,11 @@ import PolyglotBadges   from '../polyglot/transclusions/badges.mdx'
 
 ## What is Wechaty
 
-Wechaty is a [Conversational](#conversational) [RPA](#rpa) SDK for Chatbot Makers which can create a bot in 6 lines of [TypeScript](../polyglot/typescript/README.md), [JavaScript](../polyglot/typescript/README.md), [Python](../polyglot/python/README.md), [Go](../polyglot/go/README.md), [Java](../polyglot/java/README.md), [.NET](../polyglot/dotnet/README.md), [PHP](../polyglot/php/README.md), [Scala](../polyglot/scala/README.md), and [Rust](../polyglot/rust/README.md) with cross-platform compatibility including Linux, Windows, macOS, and Docker, supports the most [popular IMs](../puppet-providers/README.md) like [WeChat](../puppet-providers/wechat.md), [Whatsapp](../puppet-providers/whatsapp.md), [WeCom](../puppet-services/wxwork), [Gitter](../puppet-providers/gitter.md), and [Lark](../puppet-providers/lark.md) etc.
+Wechaty is a modern [Conversational](#conversational) [RPA](#rpa) SDK for Chatbot Makers which can create a bot in a few lines of code.
 
-Wechaty support lots of most popular instant messaging platforms:
+Wechaty offers out-of-the box support for the common features you'd expect from turning your IM account into chatbot, and can be easily customised and extended by developers to create a chatbot that is tailored to their precise needs.
+
+Wechaty support lots of popular instant messaging platforms:
 
 <ProviderBadges />
 
