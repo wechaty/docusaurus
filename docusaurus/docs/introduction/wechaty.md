@@ -22,7 +22,7 @@ And you can write Wechaty in almost all popular programming languages:
 
 <PolyglotBadges />
 
-### Features
+## Features {#features}
 
 1. Send/receive image, audio, video messages
 1. Create new room, add/remove contact in room, and change topic, etc
@@ -35,7 +35,7 @@ Learn more functions from [API Reference](../api/overview.mdx) and [How-to Guide
 
 :::
 
-### Voice of Developers {#voice-of-developers}
+## Voice of Developers {#voice-of-developers}
 
 > "Wechaty is a great solution, I believe there would be much more users recognize it." [link](https://github.com/Wechaty/wechaty/pull/310#issuecomment-285574472)  
 > &mdash; <cite>@Gcaufy, Tencent Engineer, Author of [WePY](https://github.com/Tencent/wepy)</cite>
