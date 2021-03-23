@@ -36,7 +36,7 @@ module.exports = {
 
         { label: 'Docs',            to: 'docs/', position: 'right', activeBasePath: 'docs',
           items: [
-            { label: 'Introduction',  to: 'docs/introduction/' },
+            { label: 'Introduction',  to: 'docs/' },
             { label: 'Tutorials',     to: 'docs/tutorials/' },
             { label: 'How-to Guides', to: 'docs/how-tos/' },
             { label: 'References',    to: 'docs/references/' },
