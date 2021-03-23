@@ -1,5 +1,6 @@
 ---
-title: Contribution
+slug: /contributing/
+title: Overview
 ---
 
 ## Why contribute?

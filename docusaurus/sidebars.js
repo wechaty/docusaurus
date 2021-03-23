@@ -1,7 +1,8 @@
 module.exports = {
   docs: {
     Introduction: [
-      'introduction/README',
+      'introduction/overview',
+      'introduction/wechaty',
       'introduction/motivations',
       'introduction/concepts',
       'introduction/architecture',
@@ -10,31 +11,18 @@ module.exports = {
       'examples2',
       'introduction/alternatives',
     ],
-    'Getting Started': [
-      'getting-started/README',
-      'getting-started/quick-start',
-      'getting-started/hard-way',
-    ],
     Tutorials: [
-      'tutorials/README',
+      'tutorials/overview',
       'tutorials/video-tutorial',
       'tutorials/docker',
-    ],
-    'Polyglot': [
-      'polyglot/README',
-      'polyglot/openapi/README',
-      'polyglot/typescript/README',
-      'polyglot/python/README',
-      'polyglot/go/README',
-      'polyglot/java/README',
-      'polyglot/scala/README',
-      'polyglot/php/README',
-      'polyglot/dotnet/README',
-      'polyglot/rust/README',
-      'polyglot/diy/README',
+      'tutorials/usage-with-typescript',
+      'tutorials/usage-with-heroku',
+      'tutorials/using-plugin-with-wechaty',
+      'tutorials/using-vorpal-with-wechaty',
+      'tutorials/using-redux-with-wechaty',
     ],
     'How-to Guides': [
-      'how-tos/README',
+      'how-tos/overview',
       'how-tos/install',
       'how-tos/wechaty',
       'how-tos/event',
@@ -43,22 +31,39 @@ module.exports = {
       'how-tos/room',
       'how-tos/friendship',
       'how-tos/file-box',
-      'how-tos/usage-with-typescript',
-      'how-tos/usage-with-heroku',
-      'how-tos/using-plugin-with-wechaty',
-      'how-tos/using-vorpal-with-wechaty',
-      'how-tos/using-redux-with-wechaty',
     ],
-    'Case Study': [
-      'case-study/README',
-      'case-study/coaxer-bot',
+    'References': [
+      'references/overview',
+      {
+        type: 'category',
+        label: 'API',
+        items: [
+          'api/overview',
+          'api/wechaty',
+          'api/message',
+          'api/contact',
+          'api/room',
+          'api/room-invitation',
+          'api/friendship',
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Specifications',
+        items: [
+          'specs/overview',
+          'specs/wechaty',
+          'specs/puppet',
+          'specs/service',
+          'specs/token',
+        ],
+      }
     ],
-    'Showcases': [
-      'showcases/README',
-      'showcases/osschat-bot',
-      'showcases/rui-bot',
-      'showcases/friday-bot',
-      'showcases/projects-using-wechaty',
+    Explainations: [
+      'explainations/overview',
+    ],
+    '-------': [
+      'explainations/overview',
     ],
     'Puppet Providers': [
       'puppet-providers/README',
@@ -82,16 +87,39 @@ module.exports = {
       'puppet-services/compatibility',
       'puppet-services/diy',
     ],
+    'Polyglot': [
+      'polyglot/README',
+      'polyglot/openapi/README',
+      'polyglot/typescript/README',
+      'polyglot/python/README',
+      'polyglot/go/README',
+      'polyglot/java/README',
+      'polyglot/scala/README',
+      'polyglot/php/README',
+      'polyglot/dotnet/README',
+      'polyglot/rust/README',
+      'polyglot/diy/README',
+    ],
+    'Getting Started': [
+      'getting-started/README',
+      'getting-started/quick-start',
+      'getting-started/hard-way',
+    ],
+    'Case Study': [
+      'case-study/README',
+      'case-study/coaxer-bot',
+    ],
+    'Showcases': [
+      'showcases/README',
+      'showcases/osschat-bot',
+      'showcases/rui-bot',
+      'showcases/friday-bot',
+      'showcases/projects-using-wechaty',
+    ],
     'Contributing': [
-      'contributing',
-      {
-        type: 'category',
-        label: 'Contributor Program',
-        items: [
-          'contributor-program/README',
-          'contributor-program/publish-blog',
-        ],
-      },
+      'contributing/README',
+      'contributing/contributor-program',
+      'contributing/publish-blog',
     ],
     'Google Season of Docs': [
       'gsod/README',
@@ -118,32 +146,6 @@ module.exports = {
         ],
       },
     ],
-    'References': [
-      {
-        type: 'category',
-        label: 'API',
-        items: [
-          'api/README',
-          'api/wechaty',
-          'api/message',
-          'api/contact',
-          'api/room',
-          'api/room-invitation',
-          'api/friendship',
-        ],
-      },
-      {
-        type: 'category',
-        label: 'Specifications',
-        items: [
-          'specifications/README',
-          'specifications/wechaty',
-          'specifications/puppet',
-          'specifications/service',
-          'specifications/token',
-        ],
-      }
-    ],
     FAQ: ['faq'],
     Troubleshooting: [
       'troubleshooting',
@@ -155,7 +157,6 @@ module.exports = {
       'advanced',
       'resources',
       'glossary',
-      'contributing',
       {
         type: 'category',
         label: 'Docusaurus',
