@@ -1,5 +1,5 @@
 ---
-title: 'Creating Wechaty BOT'
+title: 'Create a bot'
 ---
 
 :::tip
