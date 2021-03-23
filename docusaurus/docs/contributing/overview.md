@@ -1,5 +1,6 @@
 ---
-title: Contribution
+slug: /contributing/
+title: Overview
 ---
 
 ## Why contribute?
@@ -43,4 +44,4 @@ See Become a Committer.md for becoming a committer steps and more details.
 
 ## Contributors List
 
-[https://github.com/wechaty/wechaty/wiki/Contributors](https://github.com/wechaty/wechaty/wiki/Contributors)
+[Wechaty Contributors](https://wechaty.js.org/contributors/)

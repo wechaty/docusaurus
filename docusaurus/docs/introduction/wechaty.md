@@ -7,16 +7,14 @@ import ShortestChatbots from '../polyglot/transclusions/shortest-chatbots.mdx'
 import ProviderBadges   from '../puppet-providers/transclusions/badges.mdx'
 import PolyglotBadges   from '../polyglot/transclusions/badges.mdx'
 
-![Wechaty is a RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
-
 > A chatbot is a software application used to conduct an on-line chat conversation, in lieu of providing direct contact with a live human agent. A chatbot is a type of software that can automate conversations and interact with people through messaging platforms.
 > &mdash; [WikiPedia](https://en.wikipedia.org/wiki/Chatbot)
 
-## What is Wechaty
+Wechaty is a modern [Conversational](#conversational) [RPA](#rpa) SDK for Chatbot Makers which can create a bot in a few lines of code.
 
-Wechaty is a [Conversational](#conversational) [RPA](#rpa) SDK for Chatbot Makers which can create a bot in 6 lines of [TypeScript](../polyglot/typescript/README.md), [JavaScript](../polyglot/typescript/README.md), [Python](../polyglot/python/README.md), [Go](../polyglot/go/README.md), [Java](../polyglot/java/README.md), [.NET](../polyglot/dotnet/README.md), [PHP](../polyglot/php/README.md), [Scala](../polyglot/scala/README.md), and [Rust](../polyglot/rust/README.md) with cross-platform compatibility including Linux, Windows, macOS, and Docker, supports the most [popular IMs](../puppet-providers/README.md) like [WeChat](../puppet-providers/wechat.md), [Whatsapp](../puppet-providers/whatsapp.md), [WeCom](../puppet-services/wxwork), [Gitter](../puppet-providers/gitter.md), and [Lark](../puppet-providers/lark.md) etc.
+Wechaty offers out-of-the box support for the common features you'd expect from turning your IM account into chatbot, and can be easily customised and extended by developers to create a chatbot that is tailored to their precise needs.
 
-Wechaty support lots of most popular instant messaging platforms:
+Wechaty support lots of popular instant messaging platforms:
 
 <ProviderBadges />
 
@@ -24,7 +22,7 @@ And you can write Wechaty in almost all popular programming languages:
 
 <PolyglotBadges />
 
-### Features
+## Features {#features}
 
 1. Send/receive image, audio, video messages
 1. Create new room, add/remove contact in room, and change topic, etc
@@ -33,11 +31,11 @@ And you can write Wechaty in almost all popular programming languages:
 
 :::note API References
 
-Learn more functions from [API Reference](../api/README.md) and [Recipes](../recipes/README.md).
+Learn more functions from [API Reference](../api/overview.mdx) and [How-to Guides](../how-tos/overview.md).
 
 :::
 
-### Voice of Developers {#voice-of-developers}
+## Voice of Developers {#voice-of-developers}
 
 > "Wechaty is a great solution, I believe there would be much more users recognize it." [link](https://github.com/Wechaty/wechaty/pull/310#issuecomment-285574472)  
 > &mdash; <cite>@Gcaufy, Tencent Engineer, Author of [WePY](https://github.com/Tencent/wepy)</cite>
@@ -65,7 +63,7 @@ We can build a chatbot in minimum 6 lines of code with Wechaty.
 
 :::note Polyglot Wechaty
 
-Read more codes from [Polyglot](../polyglot/README.md).
+Read more codes from [Polyglot](../polyglot/overview.mdx).
 
 :::
 

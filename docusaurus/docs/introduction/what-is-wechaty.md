@@ -62,7 +62,7 @@ The term `Puppet` in Wechaty is a name that we had picked up to describe part of
 
 Plugins are named PuppetXXX, like PuppetPuppeteer is using the chrome puppeteer to control the WeChat Web API via a chrome browser, PuppetPadchat is using the WebSocket protocol to connect with a Protocol Server for controlling an iPad program. Here is the related information:
 
-* ​[Full Puppet List](../puppet-providers/README.md)
+* ​[Full Puppet List](../puppet-providers/overview.mdx)
 * ​[Wechaty Puppet compatibility](../puppet-services/compatibility.md)
 
 For a deeper understanding of the Puppet in Wechaty, you can read its source code if you like at [https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts](https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts)
