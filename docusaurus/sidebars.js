@@ -33,20 +33,21 @@ module.exports = {
       'polyglot/rust/README',
       'polyglot/diy/README',
     ],
-    Recipes: [
-      'recipes/README',
-      'recipes/wechaty',
-      'recipes/event',
-      'recipes/message',
-      'recipes/contact',
-      'recipes/room',
-      'recipes/friendship',
-      'recipes/file-box',
-      'recipes/usage-with-typescript',
-      'recipes/usage-with-heroku',
-      'recipes/using-plugin-with-wechaty',
-      'recipes/using-vorpal-with-wechaty',
-      'recipes/using-redux-with-wechaty',
+    'How-to Guides': [
+      'how-tos/README',
+      'how-tos/install',
+      'how-tos/wechaty',
+      'how-tos/event',
+      'how-tos/message',
+      'how-tos/contact',
+      'how-tos/room',
+      'how-tos/friendship',
+      'how-tos/file-box',
+      'how-tos/usage-with-typescript',
+      'how-tos/usage-with-heroku',
+      'how-tos/using-plugin-with-wechaty',
+      'how-tos/using-vorpal-with-wechaty',
+      'how-tos/using-redux-with-wechaty',
     ],
     'Case Study': [
       'case-study/README',
@@ -81,9 +82,20 @@ module.exports = {
       'puppet-services/compatibility',
       'puppet-services/diy',
     ],
-    'Contributor Program': [
-      'contributor-program/README',
-      'contributor-program/publish-blog',
+    'Contributing': [
+      'contributing',
+      {
+        type: 'category',
+        label: 'Contributor Program',
+        items: [
+          'contributor-program/README',
+          'contributor-program/publish-blog',
+        ],
+      },
+    ],
+    'Google Season of Docs': [
+      'gsod/README',
+      'gsod/2021',
     ],
     'Events': [
       'events',
@@ -99,14 +111,6 @@ module.exports = {
       },
       {
         type: 'category',
-        label: 'Google Season of Docs',
-        items: [
-          'gsod/README',
-          'gsod/2021',
-        ],
-      },
-      {
-        type: 'category',
         label: 'Google Summer of Code',
         items: [
           'gsoc/README',
@@ -114,21 +118,31 @@ module.exports = {
         ],
       },
     ],
-    'API Reference': [
-      'api/README',
-      'api/wechaty',
-      'api/message',
-      'api/contact',
-      'api/room',
-      'api/room-invitation',
-      'api/friendship',
-    ],
-    Specifications: [
-      'specifications/README',
-      'specifications/wechaty',
-      'specifications/puppet',
-      'specifications/service',
-      'specifications/token',
+    'References': [
+      {
+        type: 'category',
+        label: 'API',
+        items: [
+          'api/README',
+          'api/wechaty',
+          'api/message',
+          'api/contact',
+          'api/room',
+          'api/room-invitation',
+          'api/friendship',
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Specifications',
+        items: [
+          'specifications/README',
+          'specifications/wechaty',
+          'specifications/puppet',
+          'specifications/service',
+          'specifications/token',
+        ],
+      }
     ],
     FAQ: ['faq'],
     Troubleshooting: [
