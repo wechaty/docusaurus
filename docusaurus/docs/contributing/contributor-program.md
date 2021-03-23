@@ -36,12 +36,12 @@ The following are our existing backers. Thank you to everyone! 🙏 [[Become a b
 
 ## Badge
 
-[![Wechaty Contributor Program](https://img.shields.io/badge/Wechaty-Contributor%20Program-green.svg)](https://wechaty.js.org/docs/contributor-program/)
+[![Wechaty Contributor Program](https://img.shields.io/badge/Wechaty-Contributor%20Program-green.svg)](https://wechaty.js.org/docs/contributing/contributor-program)
 
 You need to add the __Wechaty Contributor Program__ badge after you join this program.
 
 ```md
-[![Wechaty Contributor Program](https://img.shields.io/badge/Wechaty-Contributor%20Program-green.svg)](https://wechaty.js.org/docs/contributor-program/)
+[![Wechaty Contributor Program](https://img.shields.io/badge/Wechaty-Contributor%20Program-green.svg)](https://wechaty.js.org/docs/contributing/contributor-program)
 ```
 
 ## Cite Wechaty

@@ -1,5 +1,5 @@
 ---
-slug: /recipes/
+slug: /how-tos/
 title: Wechaty How-to Guides Overview
 sidebar_label: 'How-to Guides: Overview'
 ---
@@ -8,19 +8,13 @@ sidebar_label: 'How-to Guides: Overview'
 
 These are some use cases and code snippets to get you started with Redux in a real app. They assume you understand the topics in [basic](#b) and [advanced](#a) tutorials.
 
-- [Start wechaty](recipes/wechaty.md)
-- [Listening events](recipes/event.md)
-- [Dealing with messages](recipes/message.md)
-- [Managing contacts](recipes/contact.md)
-- [Managing rooms](recipes/room.md)
-- [Making friends](recipes/friendship.md)
-- [Processing files](recipes/file-box.md)
-- [Usage with TypeScript](recipes/usage-with-typescript.md)
-- [Usage with Heroku](recipes/usage-with-heroku.md)
-- [Writing Tests](recipes/writing-tests.md)
-- [Using Plugin with Wechaty](recipes/using-plugin-with-wechaty.md)
-- [Using Vorpal with Wechaty](recipes/using-vorpal-with-wechaty.md)
-- [Using Redux with Wechaty](recipes/using-redux-with-wechaty.md)
+- [Start wechaty](how-tos/wechaty.md)
+- [Listening events](how-tos/event.md)
+- [Dealing with messages](how-tos/message.md)
+- [Managing contacts](how-tos/contact.md)
+- [Managing rooms](how-tos/room.md)
+- [Making friends](how-tos/friendship.md)
+- [Processing files](how-tos/file-box.md)
 
 ## To be added
 
@@ -28,4 +22,4 @@ These are some use cases and code snippets to get you started with Redux in a re
 
 ## Use Cases
 
-You can learn more from [Wechaty cases study](case-study/README.md)
+You can learn more from [Wechaty cases study](case-study/overview.md)

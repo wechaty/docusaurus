@@ -7,12 +7,8 @@ import ShortestChatbots from '../polyglot/transclusions/shortest-chatbots.mdx'
 import ProviderBadges   from '../puppet-providers/transclusions/badges.mdx'
 import PolyglotBadges   from '../polyglot/transclusions/badges.mdx'
 
-![Wechaty is a RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
-
 > A chatbot is a software application used to conduct an on-line chat conversation, in lieu of providing direct contact with a live human agent. A chatbot is a type of software that can automate conversations and interact with people through messaging platforms.
 > &mdash; [WikiPedia](https://en.wikipedia.org/wiki/Chatbot)
-
-## What is Wechaty
 
 Wechaty is a modern [Conversational](#conversational) [RPA](#rpa) SDK for Chatbot Makers which can create a bot in a few lines of code.
 
@@ -35,7 +31,7 @@ And you can write Wechaty in almost all popular programming languages:
 
 :::note API References
 
-Learn more functions from [API Reference](../api/README.md) and [Recipes](../recipes/README.md).
+Learn more functions from [API Reference](../api/overview.mdx) and [How-to Guides](../how-tos/overview.md).
 
 :::
 
@@ -67,7 +63,7 @@ We can build a chatbot in minimum 6 lines of code with Wechaty.
 
 :::note Polyglot Wechaty
 
-Read more codes from [Polyglot](../polyglot/README.md).
+Read more codes from [Polyglot](../polyglot/overview.mdx).
 
 :::
 

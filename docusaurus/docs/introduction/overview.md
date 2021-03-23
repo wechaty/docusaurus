@@ -22,30 +22,30 @@ Having trouble? We'd like to help!
 
 - Try the [FAQ](/faq.md) - it's got answers to many common questions.
 - Looking for specific information? Try the [Google Search](https://www.google.com/search?q=site%3Awechaty.js.org) or [Bing Search](https://www.bing.com/search?q=site%3Awechaty.js.org)!
-- Not found anything? See [FAQ: Getting Help](faq/README.md) for information on getting support and asking questions to the community.
+- Not found anything? See [FAQ: Getting Help](faq.md) for information on getting support and asking questions to the community.
 - Report bugs with Wechaty in our [GitHub Issues](https://github.com/wechaty/wechaty/issues/)
 
 ## How the documentation is organized
 
 Wechaty has a lot of documentation. A high-level overview of how it's organized will help you know where to look for certain things:
 
-- [Tutorials](tutorials/README.md) take you by the hand through a series of steps to create a Chatbot application. Start here if you are new to Wechaty or Chatbot application development. Also look at the "[First steps](#first-steps)".
-- [Explainations](explainations/README.md) discuss key topics and concepts at a fairly high level and provide useful background information and explanation.
-- [Reference guides](references/README.md) contain technical reference for APIs and other aspects of Wechaty's machinery. They describe how it works and how to use it but assume that you have a basic understanding of key concepts.
-- [How-to gtuides](how-tos/README.md) are recipes. They guide you through the steps involved in addressing key problems and use-cases. They are more advanced than tutorials and assume some knowledge of how Wechaty works.
+- [Tutorials](tutorials/overview.md) take you by the hand through a series of steps to create a Chatbot application. Start here if you are new to Wechaty or Chatbot application development. Also look at the "[First steps](#first-steps)".
+- [Explainations](explainations/overview.mdx) discuss key topics and concepts at a fairly high level and provide useful background information and explanation.
+- [Reference guides](references/overview.mdx) contain technical reference for APIs and other aspects of Wechaty's machinery. They describe how it works and how to use it but assume that you have a basic understanding of key concepts.
+- [How-to gtuides](how-tos/overview.md) are recipes. They guide you through the steps involved in addressing key problems and use-cases. They are more advanced than tutorials and assume some knowledge of how Wechaty works.
 
 ## The Wechaty Layer
 
 Wechaty provides an abstraction layer for structuring and manipulating the data of your Chatbot application. Learn more about it below:
 
 - **Wechaty** [Wechaty](api/wechaty.md)
-- **User Classes** [Message](api/message.md) | [Contact](api/contact.md) | [ContactSelf](api/contact-self.md) | [Room](api/room.md) | [Friendship](api/friendship.md) | [Image](api/image.md) | [FileBox](api/file-box.md) | [RoomInvitation](api/room-invitation.md)
+- **User Classes** [Message](api/message.md) | [Contact](api/contact.md) | [ContactSelf](api/contact-self.md) | [Room](api/room.md) | [Friendship](api/friendship.md) | [FileBox](https://github.com/huan/file-box) | [RoomInvitation](api/room-invitation.md)
 
 ## The Puppet Layer
 
-Wechaty has the concept of "[Puppet](specifications/puppet.md)" to encapsulate the logic responsible for processing a IM's request and for returning the responses. Find all you need to know about puppets via the links below:
+Wechaty has the concept of "[Puppet](specs/puppet.md)" to encapsulate the logic responsible for processing a IM's request and for returning the responses. Find all you need to know about puppets via the links below:
 
-- **The basics**:[Puppet specification](specifications/puppet.md) | [Providers](puppet-providers/README.md)
+- **The basics**:[Puppet specification](specs/puppet.md) | [Providers](puppet-providers/overview.mdx)
 - **Providers**: [WeChat](puppet-providers/wechat.md) | [Whatsapp](puppet-providers/whatsapp.md) | [Lark](puppet-providers/lark.md) | [WeChat Official Account](puppet-providers/official-account.md) | etc
 - **Advanced**: [Do-it-yourself: Create your Wechaty Puppet Provider](puppet-providers/diy.md)
 
@@ -53,15 +53,15 @@ Wechaty has the concept of "[Puppet](specifications/puppet.md)" to encapsulate t
 
 The service layer provides a multi-language frinedly way for re-using the source code across the programming languages. Learn how this service can be used by users and how it can be extended by programmers:
 
-- **The basics**: [Service specification](specifications/service.md) | [Services](puppet-servcies/README.md)
-- **Services**: [WeWork](puppet-services/wework.md) | [PadLocal](puppet-services/padlocal.md) | [Paimon](puppet-services/paimon.md) | [Donut](puppet-services/donut.md)
-- **Advanced**: [Do-it-yourself: Create your Wechaty Puppet Service](puppet-services/diiy.md)
+- **The basics**: [Service specification](specs/service.md) | [Services](puppet-services/overview.mdx)
+- **Services**: [WeWork](puppet-services/wxwork.md) | [PadLocal](puppet-services/padlocal.md) | [Paimon](puppet-services/paimon.md) | [Donut](puppet-services/donut.md)
+- **Advanced**: [Do-it-yourself: Create your Wechaty Puppet Service](puppet-services/diy.md)
 
-## Multi Programming Language SDKs
+## Multi programming language SDKs
 
 Wechaty provides SDK in lots of programming languages, developed from the community, to the community, and for the community!
 
-- **The overview**: [Polyglot Wechaty](polyglot/README.md)
+- **The overview**: [Polyglot Wechaty](polyglot/overview.mdx)
 - **Programming Languages**: [OpenAPI](polyglot/openapi/) | [TypeScript](polyglot/typescript/) | [Python](polyglot/python/) | [Go](polyglot/go/) | [Java](polyglot/java/) | [Scala](polyglot/scala/) | [PHP](polyglot/php/) ｜ [.NET](polyglot/dotnet/) ｜ [Rust](polyglot/rust/)
 
 ## The development process
@@ -88,18 +88,16 @@ Learn about the various components and tools to help you in the development and 
 
 Learn about some other core functionalities of the Wechaty:
 
-- [TOKEN specification](specifications/token.md)
-- [Puppet specification](specifications/puppet.md)
+- [TOKEN specification](specs/token.md)
+- [Puppet specification](specs/puppet.md)
 
 ## The Wechaty open-source project
 
 Learn about the development process for the Wechaty project itself and about how you can contribute:
 
-<!--
-- **Commmunity**: [How to get involved]() | [Team organization]() | The Wechaty source code repository]() | [Mailing lists]() | [Gitter.im channel]() | [Wechaty contributor program](contributor-program/README.md)
+- **Commmunity**: [How to get involved](contributing/overview.md) | [Team organization](https://github.com/wechaty/PMC) | [The Wechaty source code repository](https://github.com/wechaty/wechaty) | [Mailing lists](https://groups.google.com/g/wechaty) | [Gitter.im channel](https://gitter.im/wechaty/wechaty) | [Wechaty contributor program](contributing/contributor-program.md)
 - **Documentation**: [About this documentation](contributing/writing-documentation.md)
-- Wechaty over time: [Release notes]()
--->
+- Wechaty over time: [Release notes](https://github.com/wechaty/wechaty/releases)
 
 ## Contact Us
 
