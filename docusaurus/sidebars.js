@@ -86,9 +86,11 @@ const contributing = {
     'contributing/overview',
     'contributing/contributor-program',
     'contributing/new-contributors',
+    'contributing/committing-code',
     'contributing/publish-blog',
     'contributing/writing-documentation',
     'contributing/writing-code',
+    'contributing/working-with-git',
   ],
 }
 
