@@ -32,7 +32,7 @@ And you can write Wechaty in almost all popular programming languages:
 
 :::note API References
 
-Learn more functions from [API Reference](../api/overview.mdx) and [How-to Guides](../howto/overview.mdx).
+Learn more functions from [API Reference](./api/overview.mdx) and [How-to Guides](./howto/overview.mdx).
 
 :::
 
@@ -64,7 +64,7 @@ We can build a chatbot in minimum 6 lines of code with Wechaty.
 
 :::note Polyglot Wechaty
 
-Read more codes from [Polyglot](../polyglot/overview.mdx).
+Read more codes from [Polyglot](./polyglot/overview.mdx).
 
 :::
 

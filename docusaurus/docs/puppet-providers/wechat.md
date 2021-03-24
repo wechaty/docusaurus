@@ -27,7 +27,7 @@ WeChat Account that registered after 2017 might not be able to login Web Wechat,
 1. Web API can not create room and invite members to room since 2018.
 1. The ID of contacts and rooms will change across sessions. [#1644](https://github.com/wechaty/wechaty/issues/1644)
 
-If you want to break the above limitations, then you need consider to use a Wechaty Puppet other than Web. Learn them from [Wechaty Puppet Providers](puppet-providers/overview.md).
+If you want to break the above limitations, then you need consider to use a Wechaty Puppet other than Web. Learn them from [Wechaty Puppet Providers](puppet-providers/overview.mdx).
 
 ## Usage
 
