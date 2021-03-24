@@ -7,7 +7,7 @@ import ProviderBadges   from './puppet-providers/transclusions/badges.mdx'
 import PolyglotBadges   from './polyglot/transclusions/badges.mdx'
 
 > A chatbot is a software application used to conduct an on-line chat conversation, in lieu of providing direct contact with a live human agent. A chatbot is a type of software that can automate conversations and interact with people through messaging platforms.
-> &mdash; [WikiPedia](https://en.wikipedia.org/wiki/Chatbot)
+> &mdash; [Wikipedia](https://en.wikipedia.org/wiki/Chatbot)
 
 Wechaty is a modern [Conversational](#conversational) [RPA](#rpa) SDK for Chatbot Makers which can create a bot in a few lines of code.
 
