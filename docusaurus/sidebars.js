@@ -183,6 +183,7 @@ const introduction = {
   items: [
     'introduction/overview',
     'introduction/wechaty',
+    'introduction/what-is-wechaty',
     subMenu(showcases),
     subMenu(contributing),
     subMenu(events),
