@@ -2,6 +2,8 @@
 title: Architecture
 ---
 
+![Puppet Structure](../../static/img/docs/architecture.png)
+
 The following diagram shows out that we can reuse almost everything in TypeScript, and what we need to do is only the block located at the top right of the diagram: `Wechaty (Polyglot)`.
 
 ```ascii

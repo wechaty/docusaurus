@@ -2,11 +2,40 @@
 title: Examples
 ---
 
+## Ding Dong Bot
+
+Run the [Ding Dong Bot](https://github.com/wechaty/wechaty-getting-started/tree/master/examples/ding-dong-bot.ts) example:
+
+```sh
+git clone https://github.com/wechaty/wechaty-getting-started.git
+
+cd wechaty-getting-started
+npm install
+npm start
+```
+
+Or check out the [sandbox](https://codesandbox.io/s/github/wechaty/wechaty-getting-started/tree/master/examples/third-parties/codesandbox?hidenavigation=1&module=%2Fding-dong-bot.ts&theme=dark):
+
+<iframe
+  class="codesandbox"
+  src="https://codesandbox.io/embed/github/wechaty/wechaty-getting-started/tree/master/examples/third-parties/codesandbox?hidenavigation=1&module=%2Fding-dong-bot.ts&theme=dark"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+></iframe>
+
+It does not require a build system or a view framework and exists to show the raw Redux API used with ES5.
+
+## More Examples
+
+You can find more examples in the [Wechaty Getting Started Examples Directory](https://github.com/wechaty/wechaty-getting-started/tree/master/examples)
+page.
+
+## Wechaty Examples Directory
+
 You can get all of the following examples as follows
 
 [https://github.com/wechaty/wechaty-getting-started/tree/master/examples](https://github.com/wechaty/wechaty-getting-started/tree/master/examples)
 
-## 1. BASIC
+### 1. BASIC
 
 Wechaty Basic Functions, see [https://github.com/wechaty/wechaty-getting-started/tree/master/examples/basic](https://github.com/wechaty/wechaty-getting-started/tree/master/examples/basic)
 
@@ -16,7 +45,7 @@ Wechaty Basic Functions, see [https://github.com/wechaty/wechaty-getting-started
 | ding-dong-bot.js | Practical example illustrates on how to do message handling |
 | contact-bot.js | List all contacts by Wechat ID & Name |
 
-## 2. ADVANCED
+### 2. ADVANCED
 
 Wechaty Advanced Functions, see [https://github.com/wechaty/wechaty-getting-started/tree/master/examples/advanced](https://github.com/wechaty/wechaty-getting-started/tree/master/examples/advanced)
 
@@ -29,7 +58,7 @@ Wechaty Advanced Functions, see [https://github.com/wechaty/wechaty-getting-star
 | friend-bot.js | Practical example illustrates on how to do friend handling |
 | gist-bot/ | Best template for bigger modules, with each handler in separated files |
 
-## 3. PROFESSIONAL
+### 3. PROFESSIONAL
 
 Wechaty Integrated with Other Modules/Services, see [https://github.com/wechaty/wechaty-getting-started/tree/master/examples/professional](https://github.com/wechaty/wechaty-getting-started/tree/master/examples/professional)
 

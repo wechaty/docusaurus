@@ -14,6 +14,12 @@ Wechaty is fully dockerized. So it will be very easy to be used as a MicroServic
 
 Getting Started Template for Docker Users: <https://github.com/wechaty/docker-wechaty-getting-started>
 
+## Docker Wechaty Getting Started
+
+[![Docker](https://avatars0.githubusercontent.com/u/5429470?s=200)](https://github.com/wechaty/docker-wechaty-getting-started)
+
+[https://github.com/wechaty/docker-wechaty-getting-started](https://github.com/wechaty/docker-wechaty-getting-started)
+
 ## Install Docker
 
 Quick & easy install Docker via:

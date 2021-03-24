@@ -57,11 +57,11 @@ module.exports = {
         {
           title: 'Docs',
           items: [
-            { label: 'Getting Started', to: 'docs/getting-started/' },
-            { label: 'Tutorial',        to: 'docs/tutorials/' },
-            { label: 'FAQ',             to: 'docs/faq/' },
-            { label: 'API Reference',   to: 'docs/api/' },
-            { label: 'Puppet Service',  to: 'docs/puppet-services/' },
+            { label: 'Introduction',  to: 'docs/introduction/' },
+            { label: 'Tutorials',     to: 'docs/tutorials/' },
+            { label: 'Explainations', to: 'docs/explainations/' },
+            { label: 'References',    to: 'docs/references/' },
+            { label: 'Howto Guides',  to: 'docs/howto/' },
           ],
         },
         {
