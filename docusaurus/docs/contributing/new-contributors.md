@@ -5,13 +5,6 @@ title: Advice for new contributors
 New contributor and not sure what to do? Want to help but just don't know how
 to get started? This is the section for you.
 
-:::note Get up and running!
-
-  If you are new to contributing to Wechaty, the [Contributing Getting Started](intro/contributing)
-  tutorial will give you an introduction to the tools and the workflow.
-
-:::
-
 This page contains more general advice on ways you can contribute to Wechaty,
 and how to approach that.
 

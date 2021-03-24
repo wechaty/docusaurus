@@ -2,4 +2,6 @@
 title: 'Using Plugin with Wechaty'
 ---
 
-## TBW
+## History
+
+- Wechaty Plugin Support with Kickout Example [#1939](https://github.com/wechaty/wechaty/issues/1939)
