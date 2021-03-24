@@ -186,8 +186,8 @@ const introduction = {
     'overview',
     'wechaty',
     subMenu(showcases),
-    subMenu(contributing),
     subMenu(community),
+    subMenu(contributing),
     'changelog',
   ],
 }
@@ -208,7 +208,6 @@ const tutorials = {
     subMenu(caseStudy),
     'tutorials/video-tutorial',
     'tutorials/docker',
-    'tutorials/usage-with-typescript',
     'tutorials/usage-with-heroku',
     'tutorials/using-plugin-with-wechaty',
     'tutorials/using-vorpal-with-wechaty',
