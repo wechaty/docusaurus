@@ -16,7 +16,7 @@ The work on Wechaty itself falls into three major areas:
 Fix a bug, or add a new feature. You can make a pull request and see **your
 code** in the next version of Wechaty!
 
-Start from the [writing code docs](contributing/writing-code).
+Start from the [writing code docs](writing-code.md).
 
 ### Writing documentation ✍️
 
@@ -24,7 +24,7 @@ Wechaty's documentation is one of its key strengths. It's informative
 and thorough. You can help to improve the documentation and keep it
 relevant as the framework evolves.
 
-See [writing documentation](contributing/writing-documentation)` for more.
+See [writing documentation](writing-documentation.md) for more.
 
 ### Building RPA Puppet Provider/Service 🗺️
 
@@ -43,7 +43,7 @@ Wechaty chatbot framework. Browse the following sections to find out how:
 
 - [New contributors](new-contributors.md)
 - [Bugs and features](bugs-and-features.md)
-- [Triaging tickets](triaging-tickets.md)
+- [Triaging issues](triaging-issues.md)
 - [Writing code](writing-code.md)
 - [Writing documentation](writing-documentation.md)
 - [Committing code](committing-code.md)
@@ -53,10 +53,6 @@ Wechaty chatbot framework. Browse the following sections to find out how:
 We're passionate about helping Wechaty users make the jump to contributing
 members of the community. There are several other ways you can help the
 Wechaty community and others to maintain a great ecosystem to work in:
-
-Gitter.im
-WeChat Room
-Maillist Google Groups
 
 - Join the [Wechaty channel](https://gitter.im/wechaty/wechaty)
   on Gitter.im and answer questions.

@@ -135,12 +135,10 @@ of public branches are the ``main`` and ``stable/A.B.x`` branches in the
 When you think your work is ready to be pulled into Wechaty, you should create
 a pull request at GitHub. A good pull request means:
 
-- commits with one logical change in each, following the
-  [coding style](coding-style.md),
+- commits with one logical change in each,
 
 - well-formed messages for each commit: a summary line and then paragraphs
-  wrapped at 72 characters thereafter --
-  see the [committing guidelines](committing-guidelines.md) for more details,
+  wrapped at 72 characters thereafter,
 
 - documentation and tests, if needed -- actually tests are always needed,
   except for documentation changes.

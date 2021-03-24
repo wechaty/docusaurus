@@ -11,14 +11,14 @@ ways you can help Wechaty's development:
   improve Wechaty. We're always open to suggestions. You can also interact on
   the [Wechaty Gitter channel](https://gitter.im/wechatyw/echaty).
 
-- [Submit patches](submitting-patches.md) for new and/or fixed behavior. If
+- [Working with git](working-with-git.md) for new and/or fixed behavior. If
   you're looking for a way to get started contributing to Wechaty read the
   [Contributing to Wechaty](overview.md) tutorial and have a look at the
   [good first issues](https://github.com/search?q=org%3Awechaty+label%3A%22good+first+issue%22&type=issues).
 
 - [Improve the documentation](writing-documentation.md) or [write unit tests](unit-tests.md).
 
-- [Triage tickets and review patches](triaging-tickets.md) created by
+- [Triage issues and review pull requests](triaging-issues.md) created by
   other users.
 
 - Read the [Advice for new contributors](new-contributors.md) to help you

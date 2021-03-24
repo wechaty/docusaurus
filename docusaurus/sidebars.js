@@ -91,6 +91,9 @@ const contributing = {
     'contributing/writing-documentation',
     'contributing/writing-code',
     'contributing/working-with-git',
+    'contributing/bugs-and-features',
+    'contributing/triaging-issues',
+    'contributing/unit-tests',
   ],
 }
 

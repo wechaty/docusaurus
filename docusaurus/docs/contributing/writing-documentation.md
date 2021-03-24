@@ -172,8 +172,6 @@ documentation:
   Add `django.contrib.auth` to your `INSTALLED_APPS`...
   ```
 
-- Use `[title](path/file.md)` to reference documentation files.
-
 - Add markdown code syntax to literal blocks so that they get highlighted.
 
       ```<lang>
