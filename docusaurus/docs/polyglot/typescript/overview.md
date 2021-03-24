@@ -80,7 +80,7 @@ Getting Started Template Repo <https://github.com/wechaty/wechaty-getting-starte
 ## Docs
 
 - API Reference: <https://wechaty.github.io/wechaty/>
-- [Wechaty How-to Guides](../../how-tos/overview.md)
+- [Wechaty How-to Guides](../../howto/overview.md)
 
 ## Badge
 

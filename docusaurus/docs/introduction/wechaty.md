@@ -31,7 +31,7 @@ And you can write Wechaty in almost all popular programming languages:
 
 :::note API References
 
-Learn more functions from [API Reference](../api/overview.mdx) and [How-to Guides](../how-tos/overview.md).
+Learn more functions from [API Reference](../api/overview.mdx) and [How-to Guides](../howto/overview.md).
 
 :::
 

@@ -38,7 +38,7 @@ module.exports = {
           items: [
             { label: 'Introduction',  to: 'docs/' },
             { label: 'Tutorials',     to: 'docs/tutorials/' },
-            { label: 'How-to Guides', to: 'docs/how-tos/' },
+            { label: 'How-to Guides', to: 'docs/howto/' },
             { label: 'References',    to: 'docs/references/' },
             { label: 'Explainations', to: 'docs/explainations/' },
           ],
@@ -47,7 +47,7 @@ module.exports = {
         // { label: 'Docs',            to:   'docs/introduction/',    position: 'right' },
         // { label: 'Getting Started', to:   'docs/getting-started',  position: 'right' },
         // { label: 'Tutorial',        to:   'docs/tutorials/',       position: 'right' },
-        // { label: 'How-to Guides',   to:   'docs/how-tos/',         position: 'right' },
+        // { label: 'How-to Guides',   to:   'docs/howto/',         position: 'right' },
         // { label: 'Case Study',      to:   'docs/case-study/',      position: 'right' },
         // { label: 'API',             to:   'docs/api/',             position: 'right' },
         // { label: 'FAQ',             to:   'docs/faq/',             position: 'right' },

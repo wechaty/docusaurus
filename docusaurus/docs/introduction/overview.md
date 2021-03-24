@@ -12,7 +12,7 @@ Everything you need to know about Wechaty.
 
 Are you new to Wechaty or to programming? This is the place to start!
 
-- **From scratch**: [Quick start](getting-started/quick-start.mdx) | [Installation](how-tos/install.md)
+- **From scratch**: [Quick start](getting-started/quick-start.mdx) | [Installation](howto/install.md)
 - **Tutorial**: [Live coding for beginners](tutorials/video-tutorial.md) | [Use Docker with Wechaty](tutorials/docker.md)
 - **Advanced Tutorials**: [Getting started with Wechaty the hard way](getting-started/hard-way.mdx)
 
@@ -32,7 +32,7 @@ Wechaty has a lot of documentation. A high-level overview of how it's organized 
 - [Tutorials](tutorials/overview.md) take you by the hand through a series of steps to create a Chatbot application. Start here if you are new to Wechaty or Chatbot application development. Also look at the "[First steps](#first-steps)".
 - [Explainations](explainations/overview.mdx) discuss key topics and concepts at a fairly high level and provide useful background information and explanation.
 - [Reference guides](references/overview.mdx) contain technical reference for APIs and other aspects of Wechaty's machinery. They describe how it works and how to use it but assume that you have a basic understanding of key concepts.
-- [How-to gtuides](how-tos/overview.md) are recipes. They guide you through the steps involved in addressing key problems and use-cases. They are more advanced than tutorials and assume some knowledge of how Wechaty works.
+- [How-to gtuides](howto/overview.md) are recipes. They guide you through the steps involved in addressing key problems and use-cases. They are more advanced than tutorials and assume some knowledge of how Wechaty works.
 
 ## The Wechaty Layer
 
