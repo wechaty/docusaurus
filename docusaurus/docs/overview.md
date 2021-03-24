@@ -6,6 +6,8 @@ sidebar_label: Overview
 
 ![Wechaty: Conversational RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
 
+[![DIVIO documentation system](https://img.shields.io/badge/DIVIO-Documentation%20System-blue)](https://documentation.divio.com/)
+
 Everything you need to know about Wechaty.
 
 ## First steps {#first-steps}
