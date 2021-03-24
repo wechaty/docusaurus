@@ -30,6 +30,23 @@ tags:
   - sticky
 ```
 
+## Minimizing images
+
+Optimize image compression where possible.
+
+Our limitation for an image is:
+
+1. file size maximum 1MB
+1. file resolution maximum 1920x1080
+
+For image files, use `scripts/fit-image.sh`:
+
+```sh
+./scripts/fit-image.sh jekyll/assets/2021/03-your-blog-folder/
+```
+
+This is based on ImageMagick.
+
 ## Submit Blog Post
 
 Submit your blog by creating a Pull Request at <https://github.com/wechaty/wechaty.js.org/tree/master/jekyll/_posts>
