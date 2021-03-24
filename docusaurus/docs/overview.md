@@ -1,6 +1,6 @@
 ---
 slug: /
-title: Wechaty Documentation Overview
+title: Wechaty documentation overview
 sidebar_label: Overview
 ---
 

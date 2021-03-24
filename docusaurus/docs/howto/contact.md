@@ -1,5 +1,5 @@
 ---
-title: 'Managing Contacts'
+title: 'Managing contacts'
 ---
 
 import Tabs from '@theme/Tabs'

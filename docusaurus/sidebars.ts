@@ -229,6 +229,7 @@ const howtos = {
     'howto/room',
     'howto/friendship',
     'howto/file-box',
+    'howto/testing',
   ],
 }
 

@@ -1,5 +1,5 @@
 ---
-title: Publish Blog
+title: Publish blog
 ---
 
 ## Tricks

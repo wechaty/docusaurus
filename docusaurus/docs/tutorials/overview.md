@@ -1,6 +1,6 @@
 ---
 slug: /tutorials/
-title: Wechaty Tutorials Overview
+title: Wechaty tutorials overview
 sidebar_label: 'Tutorials: Overview'
 ---
 

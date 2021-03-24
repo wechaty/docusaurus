@@ -1,5 +1,5 @@
 ---
-title: Working with Git
+title: Working with git
 ---
 
 This section explains how the community can contribute code to Wechaty via pull

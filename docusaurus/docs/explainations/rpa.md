@@ -1,5 +1,5 @@
 ---
-title: 'RPA: Robotic Process Automation'
+title: RPA
 ---
 
 Wechaty is a RPA SDK.

@@ -1,5 +1,5 @@
 ---
-title: Video Tutorial
+title: Video tutorial
 ---
 
 ## 1. Wechaty Tutorial

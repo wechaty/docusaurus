@@ -1,16 +1,20 @@
 ---
 slug: /community/
-title: Community Overview
+title: Community overview
 ---
 
 Here you can find some of our great community events.
 
-## Table of Contents
+## Table of contents
 
 - [BOT Friday Club](bot5/)
 - [Open Source Promotion Plan](ospp/)
 - [Google Summer of Code](gsoc/)
 - [Google Season of Docs](gsod/)
+
+## Contributors profile list
+
+[Wechaty Contributors](https://wechaty.js.org/contributors/)
 
 ## Join us
 
