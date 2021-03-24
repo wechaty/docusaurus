@@ -1,47 +1,87 @@
 ---
 slug: /contributing/
-title: Overview
+title: Contributing to Wechaty
 ---
 
-## Why contribute?
+Wechaty is a community that lives on its volunteers. As it keeps growing, we
+always need more people to help others. You can contribute in many ways, either
+on the framework itself or in the wider ecosystem.
 
-As an open source product, Wechaty thrives from contributions of community members. Whatever your skill set is, there is a lot you can do to help us make Wechaty better! So start forking!
+## Work on the Wechaty framework
 
-## Not sure where to start?
+The work on Wechaty itself falls into three major areas:
 
-It's a myth that writing code is the only way to contribute to open source. Wechaty community is open to new ideas and there are so many different ways to make valuable contributions. We have some ideas of how you can get started!
+### Writing code 💻
 
-### 1. Contribute Code
+Fix a bug, or add a new feature. You can make a pull request and see **your
+code** in the next version of Wechaty!
 
-* Check out GitHub issues with the tags `good first issue`, `pull request welcome` or `help wanted`
-* Write code examples for documentation
-* Report a bug and work on resolving it
-* Collaborate with others on building new features
+Start from the [writing code docs](contributing/writing-code).
 
-**Tips:** If you want to add new features or change the API, please submit an issue first to make sure no one else is already working on the same thing and discuss the implementation and API details with maintainers and users by creating an issue. When everything is settled down, you can submit a pull request.
+### Writing documentation ✍️
 
-Make sure to add tests for your features and bugfixes and update the documentation \(see below\) before submitting your code!
+Wechaty's documentation is one of its key strengths. It's informative
+and thorough. You can help to improve the documentation and keep it
+relevant as the framework evolves.
 
-### 2. Contribute Support
+See [writing documentation](contributing/writing-documentation)` for more.
 
-* Fix typos in documentation
-* Translate documentation to your local language
-* Write tutorials and blog posts, see more: [https://github.com/wechaty/wechaty.github.io](https://github.com/wechaty/wechaty.github.io)
-* Answer questions on the Wechaty Developers Home or Github issues
-* Organize Wechaty meetups or user groups in your area
+### Building RPA Puppet Provider/Service 🗺️
 
-Contact [rui@chatie.io](mailto:rui@chatie.io) to learn more
+Wechaty supports over 10 Puppet Provider & Services.
+The RPA team are always looking for hackers
+to help maintain and increase IMs that Wechaty ecosystem should support.
 
-## How Do I Become a Committer?
+See [creating your puppet providers](puppet-providers/diy.md)
+to help expand the RPA for Wechaty.
 
-First of all you need to get involved and be a Contributor.
+If you think working *with* Wechaty is fun, wait until you start working *on*
+it. Really, **ANYONE** can do something to help make Wechaty better and greater!
 
-Based on your track-record as a contributor, one of our Maintainers or PMC members may invite you to be a committer \(after we've called a vote\). When that happens, if you accept, the following process kicks into place...
+This contributing guide contains everything you need to know to help build the
+Wechaty chatbot framework. Browse the following sections to find out how:
 
-Note that becoming a committer is not just about submitting some patches; it‘s also about helping out on the development and user Discussion Forums, helping with documentation and the issues.
+- [New contributors](new-contributors.md)
+- [Bugs and features](bugs-and-features.md)
+- [Triaging tickets](triaging-tickets.md)
+- [Writing code](writing-code.md)
+- [Writing documentation](writing-documentation.md)
+- [Committing code](committing-code.md)
 
-See Become a Committer.md for becoming a committer steps and more details.
+## Join the Wechaty community ❤️
 
-## Contributors List
+We're passionate about helping Wechaty users make the jump to contributing
+members of the community. There are several other ways you can help the
+Wechaty community and others to maintain a great ecosystem to work in:
 
-[Wechaty Contributors](https://wechaty.js.org/contributors/)
+Gitter.im
+WeChat Room
+Maillist Google Groups
+
+- Join the [Wechaty channel](https://gitter.im/wechaty/wechaty)
+  on Gitter.im and answer questions.
+  By explaining Wechaty to other users, you're going to learn a lot about the
+  framework yourself.
+
+- Join the [GitHub Discussions](https://github.com/wechaty/wechaty/discussions).
+  This forum is a place for discussing the Wechaty
+  framework and applications and projects that use it. This is also a good
+  place to ask and answer any questions related to installing, using, or
+  contributing to Wechaty.
+
+- Join the [Google Group](https://groups.google.com/g/wechaty) and answer questions.
+
+- Blog about Wechaty. We syndicate all the Wechaty blogs we know about on
+  the [community blogs](https://wechaty.js.org/blog);
+  if you'd like to see your blog on that page you can [register it here](publish-blog.md).
+
+- Contribute to open-source Wechaty projects, write some documentation, or
+  release your own code as an open-source pluggable application. The
+  ecosystem of pluggable applications is a big strength of Wechaty, help us
+  build it!
+
+We're looking forward to working with you. Welcome aboard! ⛵️
+
+## Special Thanks
+
+I have to credit Django doc authors, because this documentation page is inspired by, and mostly copy/pasted from [Django contributing docs](https://github.com/django/django/blob/main/docs/internals/contributing/index.txt)

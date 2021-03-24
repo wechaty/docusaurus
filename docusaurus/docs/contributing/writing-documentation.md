@@ -11,7 +11,7 @@ Documentation changes generally come in two forms:
   explanations through clearer writing and more examples.
 
 - New features: documentation of features that have been added to the
-  SDK since the last release.
+  framework since the last release.
 
 This section explains how writers can craft their documentation changes
 in the most useful and least error-prone ways.
@@ -127,7 +127,7 @@ is implied to be.
 Here are some style guidelines on commonly used terms throughout the
 documentation:
 
-- **Wechaty** &mdash; when referring to the SDK, capitalize Wechaty.
+- **Wechaty** &mdash; when referring to the framework, capitalize Wechaty.
 
 - **email** &mdash; no hyphen.
 
@@ -193,6 +193,6 @@ documentation:
   ##### Five
   ```
 
-## Thanks
+## Special Thanks
 
 I have to credit Django doc authors, because this documentation page is inspired by, and mostly copy/pasted from [Django contributing docs](https://github.com/django/django/blob/main/docs/internals/contributing/writing-documentation.txt)
