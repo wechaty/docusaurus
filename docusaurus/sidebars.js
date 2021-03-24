@@ -85,8 +85,10 @@ const contributing = {
   items: [
     'contributing/overview',
     'contributing/contributor-program',
+    'contributing/new-contributors',
     'contributing/publish-blog',
     'contributing/writing-documentation',
+    'contributing/writing-code',
   ],
 }
 

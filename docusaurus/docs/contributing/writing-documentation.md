@@ -70,7 +70,7 @@ The documentation is organized into several categories:
   not what you explain. It can be helpful to refer back to what you've done and
   explain afterwards.
 
-- [Explainations](explainations/overview.md) aim to explain a concept or subject at a
+- [Explainations](explainations/overview.mdx) aim to explain a concept or subject at a
   fairly high level.
 
   Link to reference material rather than repeat it. Use examples and don't be
@@ -80,7 +80,7 @@ The documentation is organized into several categories:
   Providing background context helps a newcomer connect the topic to things
   that they already know.
 
-- [References](references/overview.md) contain technical reference for APIs.
+- [References](references/overview.mdx) contain technical reference for APIs.
   They describe the functioning of Wechaty's internal machinery and instruct in
   its use.
 
@@ -92,7 +92,7 @@ The documentation is organized into several categories:
   yourself explaining basic concepts, you may want to move that material to a
   topic guide.
 
-- [How-to Guides](howto/overview.md) are recipes that take the reader through
+- [How-to Guides](howto/overview.mdx) are recipes that take the reader through
   steps in key subjects.
 
   What matters most in a how-to guide is what a user wants to achieve.
