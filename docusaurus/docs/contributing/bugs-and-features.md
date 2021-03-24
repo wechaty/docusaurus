@@ -1,5 +1,5 @@
 ---
-title: Bug and Features
+title: Bug and features
 ---
 
 TBW

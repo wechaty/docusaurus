@@ -1,5 +1,5 @@
 ---
-title: 'Processing Files'
+title: 'Processing files'
 ---
 
 import Tabs from '@theme/Tabs'

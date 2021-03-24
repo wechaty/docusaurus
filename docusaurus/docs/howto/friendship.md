@@ -1,5 +1,5 @@
 ---
-title: 'Making Friends'
+title: 'Making friends'
 ---
 
 import Tabs from '@theme/Tabs'

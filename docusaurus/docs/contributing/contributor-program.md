@@ -1,6 +1,6 @@
 ---
-title: Wechaty Contributor Program
-sidebar_label: 'Contributor Program'
+title: Wechaty contributor program
+sidebar_label: Contributor program
 ---
 
 The _Wechaty Contributor Program_ provides valuable supports for qualified contributors.

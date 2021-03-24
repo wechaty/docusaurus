@@ -1,5 +1,5 @@
 ---
-title: 'Listening Events'
+title: 'Listening events'
 ---
 
 <!-- MDX import -->
