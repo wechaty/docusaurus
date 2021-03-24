@@ -20,9 +20,9 @@ Are you new to Wechaty or to programming? This is the place to start!
 
 Having trouble? We'd like to help!
 
-- Try the [FAQ](/faq.md) - it's got answers to many common questions.
+- Try the [FAQ](explainations/faq.md) - it's got answers to many common questions.
 - Looking for specific information? Try the [Google Search](https://www.google.com/search?q=site%3Awechaty.js.org) or [Bing Search](https://www.bing.com/search?q=site%3Awechaty.js.org)!
-- Not found anything? See [FAQ: Getting Help](faq.md) for information on getting support and asking questions to the community.
+- Not found anything? See [FAQ: Getting Help](explainations/faq.md) for information on getting support and asking questions to the community.
 - Report bugs with Wechaty in our [GitHub Issues](https://github.com/wechaty/wechaty/issues/)
 
 ## How the documentation is organized

@@ -54,8 +54,6 @@ wechaty.start()
 // The Mocker will start perform the SimpleEnvironment...
 ```
 
-See: [SimpleEnvironment](src/mocker/environment.ts)
-
 ## API Reference
 
 ### Mocker
@@ -94,5 +92,4 @@ this.state.off(true)
 
 await this.state.ready('on')
 await this.state.ready('off')
-
 ```
