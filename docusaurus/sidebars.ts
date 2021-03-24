@@ -14,7 +14,7 @@ const showcases: SubMenuData = {
     'showcases/osschat-bot',
     'showcases/rui-bot',
     'showcases/friday-bot',
-    'showcases/projects-using-wechaty',
+    'showcases/awesome-wechaty',
   ],
 }
 
@@ -123,10 +123,10 @@ const gettingStarted: SubMenuData = {
   ],
 }
 
-const events: SubMenuData = {
-  label: 'Events',
+const community: SubMenuData = {
+  label: 'Community',
   items: [
-    'events',
+    'community',
     {
       type: 'category',
       label: '开源软件供应链点亮计划',
@@ -156,26 +156,12 @@ const events: SubMenuData = {
   ],
 }
 
-const others: SubMenuData = {
-  label: 'Others',
+const docusaurus: SubMenuData = {
+  label: 'Docusaurus',
   items: [
-    'changelog',
-    'cheatsheet',
-    'awesome-wechaty',
-    'advanced',
-    'resources',
-    'glossary',
-    {
-      type: 'category',
-      label: 'Docusaurus',
-      items: [
-        'test/doc1',
-        'test/doc2',
-        'test/doc3',
-        'test/mdx',
-      ],
-    },
-  ]
+    'test/doc1',
+    'test/mdx',
+  ],
 }
 
 /*********************************
@@ -197,12 +183,12 @@ const subMenu = (data: SubMenuData) => ({
 const introduction = {
   label: 'Introduction',
   items: [
-    'introduction/overview',
-    'introduction/wechaty',
-    'introduction/what-is-wechaty',
+    'overview',
+    'wechaty',
     subMenu(showcases),
     subMenu(contributing),
-    subMenu(events),
+    subMenu(community),
+    'changelog',
   ],
 }
 
@@ -227,8 +213,8 @@ const tutorials = {
     'tutorials/using-plugin-with-wechaty',
     'tutorials/using-vorpal-with-wechaty',
     'tutorials/using-redux-with-wechaty',
-    'examples',
-    'examples2',
+    'tutorials/cheatsheet',
+    'tutorials/examples',
   ],
 }
 
@@ -264,14 +250,17 @@ const explainations = {
   label: 'Explainations',
   items: [
     'explainations/overview',
+    'explainations/conversational',
+    'explainations/rpa',
     'explainations/motivations',
     'explainations/concepts',
     'explainations/architecture',
     'explainations/lifecycle',
     'explainations/alternatives',
-    'faq',
-    'troubleshooting',
-    subMenu(others),
+    'explainations/glossary',
+    'explainations/faq',
+    'explainations/troubleshooting',
+    subMenu(docusaurus),
   ],
 }
 

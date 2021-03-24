@@ -1,6 +1,6 @@
 ---
-title: Events
-sidebar_label: Events Index
+slug: /community/
+title: Community Overview
 ---
 
 Here you can find some of our great community events.
@@ -11,3 +11,11 @@ Here you can find some of our great community events.
 - [Open Source Promotion Plan](ospp/)
 - [Google Summer of Code](gsoc/)
 - [Google Season of Docs](gsod/)
+
+## Join us
+
+1. Gitter.im
+1. WeChat Room: WeChaty Developers' Home
+1. GitHub Discussions
+1. Google Groups
+1. Stackoverflow
