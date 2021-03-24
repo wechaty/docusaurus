@@ -19,7 +19,7 @@ in the most useful and least error-prone ways.
 ## Getting the raw documentation
 
 Though Wechaty's documentation is intended to be read as HTML at
-https://wechaty.js.org/docs/, we edit it as a collection of markdown files for
+<https://wechaty.js.org/docs/>, we edit it as a collection of markdown files for
 maximum flexibility. These files live in the top-level ``docusaurus/docs/``
 directory at Wechaty Website repository at <https://github.com/wechaty/wechaty.js.org>.
 
@@ -171,11 +171,6 @@ documentation:
   ```md
   Add `django.contrib.auth` to your `INSTALLED_APPS`...
   ```
-
-- Add markdown code syntax to literal blocks so that they get highlighted.
-
-      ```<lang>
-      ```
 
 - Use these heading styles::
 
