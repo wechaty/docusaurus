@@ -1,5 +1,5 @@
 ---
-slug: /how-tos/
+slug: /howto/
 title: Wechaty How-to Guides Overview
 sidebar_label: 'How-to Guides: Overview'
 ---
@@ -8,13 +8,13 @@ sidebar_label: 'How-to Guides: Overview'
 
 These are some use cases and code snippets to get you started with Redux in a real app. They assume you understand the topics in [basic](#b) and [advanced](#a) tutorials.
 
-- [Start wechaty](how-tos/wechaty.md)
-- [Listening events](how-tos/event.md)
-- [Dealing with messages](how-tos/message.md)
-- [Managing contacts](how-tos/contact.md)
-- [Managing rooms](how-tos/room.md)
-- [Making friends](how-tos/friendship.md)
-- [Processing files](how-tos/file-box.md)
+- [Start wechaty](howto/wechaty.md)
+- [Listening events](howto/event.md)
+- [Dealing with messages](howto/message.md)
+- [Managing contacts](howto/contact.md)
+- [Managing rooms](howto/room.md)
+- [Making friends](howto/friendship.md)
+- [Processing files](howto/file-box.md)
 
 ## To be added
 
