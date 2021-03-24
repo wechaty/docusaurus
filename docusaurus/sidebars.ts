@@ -159,8 +159,8 @@ const community: SubMenuData = {
 const docusaurus: SubMenuData = {
   label: 'Docusaurus',
   items: [
-    'test/doc1',
-    'test/mdx',
+    'docusaurus/doc1',
+    'docusaurus/mdx',
   ],
 }
 
