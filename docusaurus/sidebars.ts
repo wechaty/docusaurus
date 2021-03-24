@@ -1,4 +1,13 @@
-const showcases = {
+/**
+ * Docusaurus Sidebar
+ */
+interface SubMenuData {
+  label: string,
+  items: (SubMenuData | string)[],
+  type?: string,
+}
+
+const showcases: SubMenuData = {
   label: 'Showcases',
   items: [
     'showcases/overview',
@@ -9,7 +18,7 @@ const showcases = {
   ],
 }
 
-const api = {
+const api: SubMenuData = {
   label: 'API',
   items: [
     'api/overview',
@@ -22,7 +31,7 @@ const api = {
   ],
 }
 
-const polyglot = {
+const polyglot: SubMenuData = {
   label: 'Polyglot',
   items: [
     'polyglot/overview',
@@ -39,7 +48,7 @@ const polyglot = {
   ],
 }
 
-const puppetProviders = {
+const puppetProviders: SubMenuData = {
   label: 'Puppet Providers',
   items: [
     'puppet-providers/overview',
@@ -56,7 +65,7 @@ const puppetProviders = {
   ],
 }
 
-const puppetServices = {
+const puppetServices: SubMenuData = {
   label: 'Puppet Services',
   items: [
     'puppet-services/overview',
@@ -69,7 +78,7 @@ const puppetServices = {
   ]
 }
 
-const specs = {
+const specs: SubMenuData = {
   label: 'Specifications',
   items: [
     'specs/overview',
@@ -80,7 +89,7 @@ const specs = {
   ],
 }
 
-const contributing = {
+const contributing: SubMenuData = {
   label: 'Contributing',
   items: [
     'contributing/overview',
@@ -97,7 +106,7 @@ const contributing = {
   ],
 }
 
-const caseStudy = {
+const caseStudy: SubMenuData = {
   label: 'Case Study',
   items: [
     'case-study/overview',
@@ -105,7 +114,7 @@ const caseStudy = {
   ],
 }
 
-const gettingStarted = {
+const gettingStarted: SubMenuData = {
   label: 'Getting Started',
   items: [
     'getting-started/overview',
@@ -114,7 +123,7 @@ const gettingStarted = {
   ],
 }
 
-const events = {
+const events: SubMenuData = {
   label: 'Events',
   items: [
     'events',
@@ -147,7 +156,7 @@ const events = {
   ],
 }
 
-const others = {
+const others: SubMenuData = {
   label: 'Others',
   items: [
     'changelog',
@@ -174,10 +183,10 @@ const others = {
  * Category Helper function
  *
  */
-const subMenu = (data) => ({
-  label: data.label,
-  items: data.items,
-  type: 'category',
+const subMenu = (data: SubMenuData) => ({
+  label : data.label,
+  items : data.items,
+  type  : data.type ?? 'category',
 })
 
 /*********************************
@@ -266,12 +275,12 @@ const explainations = {
   ],
 }
 
-module.exports = {
-  docs: {
-    [introduction.label]  : [...introduction.items],
-    [tutorials.label]     : [...tutorials.items],
-    [explainations.label] : [...explainations.items],
-    [references.label]    : [...references.items],
-    [howtos.label]        : [...howtos.items],
-  },
+const docs = {
+  [introduction.label]  : [...introduction.items],
+  [tutorials.label]     : [...tutorials.items],
+  [explainations.label] : [...explainations.items],
+  [references.label]    : [...references.items],
+  [howtos.label]        : [...howtos.items],
 }
+
+export { docs }

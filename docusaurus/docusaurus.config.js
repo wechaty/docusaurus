@@ -1,3 +1,8 @@
+/**
+ * Support sidebar.ts in TypeScript
+ */
+require('ts-node/register')
+
 const path = require('path')
 
 module.exports = {
@@ -38,21 +43,11 @@ module.exports = {
           items: [
             { label: 'Introduction',  to: 'docs/' },
             { label: 'Tutorials',     to: 'docs/tutorials/' },
-            { label: 'How-to Guides', to: 'docs/howto/' },
-            { label: 'References',    to: 'docs/references/' },
             { label: 'Explainations', to: 'docs/explainations/' },
+            { label: 'References',    to: 'docs/references/' },
+            { label: 'How-to Guides', to: 'docs/howto/' },
           ],
         },
-
-        // { label: 'Docs',            to:   'docs/introduction/',    position: 'right' },
-        // { label: 'Getting Started', to:   'docs/getting-started',  position: 'right' },
-        // { label: 'Tutorial',        to:   'docs/tutorials/',       position: 'right' },
-        // { label: 'How-to Guides',   to:   'docs/howto/',         position: 'right' },
-        // { label: 'Case Study',      to:   'docs/case-study/',      position: 'right' },
-        // { label: 'API',             to:   'docs/api/',             position: 'right' },
-        // { label: 'FAQ',             to:   'docs/faq/',             position: 'right' },
-        // { label: 'Troubleshooting', to:   'docs/troubleshooting',  position: 'right' },
-
         { label: 'GitHub',          href: 'https://github.com/wechaty/wechaty#readme',   position: 'right' },
       ],
     },
@@ -130,7 +125,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./sidebars.ts'),
           // Please change this to your repo.
           editUrl: 'https://github.com/wechaty/wechaty.js.org/edit/master/docusaurus/',
           // Equivalent to `enableUpdateBy`.
