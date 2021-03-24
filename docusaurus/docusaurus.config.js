@@ -41,7 +41,7 @@ module.exports = {
 
         { label: 'Docs',            to: 'docs/', position: 'right', activeBasePath: 'docs',
           items: [
-            { label: 'Introduction',  to: 'docs/' },
+            { label: 'Introduction',  to: 'docs/wechaty' },
             { label: 'Tutorials',     to: 'docs/tutorials/' },
             { label: 'Explainations', to: 'docs/explainations/' },
             { label: 'References',    to: 'docs/references/' },
@@ -57,7 +57,7 @@ module.exports = {
         {
           title: 'Docs',
           items: [
-            { label: 'Introduction',  to: 'docs/introduction/' },
+            { label: 'Introduction',  to: 'docs/' },
             { label: 'Tutorials',     to: 'docs/tutorials/' },
             { label: 'Explainations', to: 'docs/explainations/' },
             { label: 'References',    to: 'docs/references/' },
