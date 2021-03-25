@@ -6,6 +6,7 @@ categories: project
 tags:
   - python
   - pytorch
+  - machine-learning
 ---
 
 Use wechaty to apply pytorch model via WeChat.

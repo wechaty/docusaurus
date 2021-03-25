@@ -26,6 +26,8 @@ Read blogs with the `scala` tag at <https://wechaty.js.org/tags.html#scala>
 
 ## History
 
+- [Scala Wechaty, @jcai, Jul 2, 2020](https://github.com/wechaty/scala-wechaty)
+
 ## Maintainers
 
 - [@jcai](https://wechaty.js.org/contributors/jcai)

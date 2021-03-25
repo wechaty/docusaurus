@@ -7,6 +7,8 @@ tags:
   - python
   - summer-of-wechaty
   - summer-2020
+  - pytorch
+  - machine-learning
 ---
 
 > Author: [@MrZilinXiao](https://github.com/MrZilinXiao) Always dedicated to learn something brand new.
