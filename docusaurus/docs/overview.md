@@ -16,16 +16,16 @@ Are you new to Wechaty or to programming? This is the place to start!
 
 - **From scratch**: [Quick start](getting-started/quick-start.mdx) | [Installation](howto/install.md)
 - **Tutorial**: [Live coding for beginners](tutorials/video-tutorial.md) | [Use Docker with Wechaty](tutorials/docker.md)
-- **Advanced Tutorials**: [Getting started with Wechaty the hard way](getting-started/hard-way.mdx)
+- **Advanced tutorials**: [Getting started with Wechaty the hard way](getting-started/hard-way.mdx)
 
 ## Getting help
 
 Having trouble? We'd like to help!
 
 - Try the [FAQ](explainations/faq.md) - it's got answers to many common questions.
-- Looking for specific information? Try the [Google Search](https://www.google.com/search?q=site%3Awechaty.js.org) or [Bing Search](https://www.bing.com/search?q=site%3Awechaty.js.org)!
-- Not found anything? See [FAQ: Getting Help](explainations/faq.md) for information on getting support and asking questions to the community.
-- Report bugs with Wechaty in our [GitHub Issues](https://github.com/wechaty/wechaty/issues/)
+- Looking for specific information? Try the [Google search](https://www.google.com/search?q=site%3Awechaty.js.org) or [Bing search](https://www.bing.com/search?q=site%3Awechaty.js.org)!
+- Not found anything? See [FAQ: Getting help](explainations/faq.md) for information on getting support and asking questions to the community.
+- Report bugs with Wechaty in our [GitHub issues](https://github.com/wechaty/wechaty/issues/)
 
 ## How the documentation is organized
 

@@ -142,6 +142,7 @@ const community: SubMenuData = {
       label: 'Google Season of Docs',
       items: [
         'gsod/overview',
+        'gsod/ideas',
         'gsod/2021',
       ],
     },
@@ -151,6 +152,7 @@ const community: SubMenuData = {
       label: 'Google Summer of Code',
       items: [
         'gsoc/overview',
+        'gsoc/ideas',
         'gsoc/2021',
       ],
     },
