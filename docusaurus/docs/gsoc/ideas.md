@@ -1,36 +1,26 @@
 ---
-title: GSoC 2021
+title: Ideas list
 ---
 
-![Wechaty Summer of Code](/img/docs/gsoc/wechaty-gsoc.png)
-
-This page aggregates project ideas for Google Summer of Code 2021. See more information about this project and applications on the [Wechaty Google Summer of Code page](../).
+This page aggregates project ideas form Wechaty community.
 
 ## Introduction
 
-Below you can find project ideas which have been proposed for this year. New ideas may be proposed by interested mentors or students. Project ideas without potential mentors will be considered though applicants may need to work with the community and GSoC org admins to find mentors. To add a new project idea, see: [proposing project ideas](https://github.com/wechaty/wishlist/issues).
+Below you can find project ideas
+which comes from our [Wechaty contributors](https://wechaty.js.org/contributors/).
+New ideas may be proposed by interested developers.
+
+Project ideas without potential mentors will be considered though applicants may need to work with the community to find mentors.
+
+To add a new project idea, see: [proposing project ideas](https://github.com/wechaty/wishlist/issues).
 
 ### Learn more from community
 
-You can [join our Gitter](https://gitter.im/wechaty/wechaty) network if you aren’t already a member, [read our Meeting Notes](https://bit.ly/2zpi2XG) to learn what we discussed in the past, or run [getting started with Wechaty](https://wechaty.js.org/2021/02/06/wechaty-getting-started-without-leave-your-browser/) right now!
+You can [join our Gitter](https://gitter.im/wechaty/wechaty) network if you aren’t already a member, [read our Meeting Notes](https://bit.ly/2zpi2XG) to learn what we discussed in the past, or run [getting started with Wechaty](https://wechaty.js.org/docs/getting-started/) right now!
 
-### The Ideas
+## The Ideas
 
-We have three lists in this Ideas Page:
-
-1. **Accepted Project Ideas**: Accepted by the GSoC program
-1. **Draft Ideas**: Accepted by the community
-1. **Ongoing Discussions**: Proposed from the community
-
-## ACCEPTED PROJECT IDEAS
-
-Below you can see the list of project ideas that fully match the Wechaty' project idea standard. The scope of these ideas is well known and we don't normally expect deep changes. All ideas have quick start guidelines and newbie-frienfly issues referenced. We welcome contributors to join the mentor teams, and we invite students to submit project proposal applications in relation to these ideas.
-
-### To be selected by Google & Org Admins
-
-## DRAFT PROJECT IDEAS
-
-Below you can see draft project ideas, which are currently under review. The scope of such ideas may change during the discussions, but the idea is accepted in principle. You are welcome to comment on the draft and to join the project as a mentor. If you are a student, it is also fine to explore and to apply to the draft project ideas.
+Below you can see the list of project ideas that fully match the Wechaty' project idea standard. The scope of these ideas is well known and we don't normally expect deep changes. All ideas have quick start guidelines and newbie-frienfly issues referenced. We welcome contributors to join the mentor teams, and we invite developers to submit project proposal applications in relation to these ideas.
 
 ### [Project #32: Enhance Whatsapp Puppet](https://github.com/wechaty/summer-of-wechaty/issues/32)
 
@@ -510,38 +500,6 @@ Preliminary design:
 
 -----
 
-## ONGOING DISCUSSIONS (WISHLIST)
-
-These are proposals in the [Wishlist Repo](https://github.com/wechaty/wishlist/issues) which have not been published as project ideas yet. The feasibility is yet to be defined, and the idea may be dismissed depending on the feedback. Everyone is welcome to participate in the discussion and to join as a potential mentor.
-
 ## Contact us
 
 You can [join our Gitter](https://gitter.im/wechaty/wechaty) network if you aren’t already a member.
-
-## Application result: not accepted
-
-```text
-Subject: GSoC 2021: Wechaty application status
-From: Google Summer of Code <summerofcode-noreply@google.com>
-To: zixia@zixia.net
-
-
-Thank you for applying to be a Google Summer of Code 2021
-mentor organization. Sadly, we were unable to accept Wechaty
-this year. We had many more applications than available slots.
-We hope you will apply again in the future!
-
-This email was sent to zixia@zixia.net.
-
-You are receiving this email because of your participation in Google Summer
-of Code 2021. https://summerofcode.withgoogle.com
-
-To leave the program and stop receiving all emails, you can go to your
-profile (https://summerofcode.withgoogle.com/dashboard/profile/) and request
-deletion of your program profile.
-
-For any questions, please contact gsoc-support@google.com.
-Replies to this message go to an unmonitored mailbox.
-
-(c) 2021 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
-```
