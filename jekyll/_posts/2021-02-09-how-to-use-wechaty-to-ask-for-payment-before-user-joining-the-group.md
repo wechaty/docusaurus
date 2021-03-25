@@ -5,6 +5,8 @@ categories: project
 tags:
   - group
   - payment
+  - tutorial
+  - case-study
 image: /assets/2021/02-how-to-use-wechaty-to-ask-for-payment-before-user-joining-the-group/paying-by-qrcode.png
 ---
 

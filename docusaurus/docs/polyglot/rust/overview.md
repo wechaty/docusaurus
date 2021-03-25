@@ -26,6 +26,8 @@ Read blogs with the `rust` tag at <https://wechaty.js.org/tags.html#rust>
 
 ## History
 
+- [Rust Wechaty, @lucifer1004, Mar 22, 2021](https://github.com/wechaty/rust-wechaty/)
+
 ## Maintainers
 
 - [@lucifer1004](https://github.com/lucifer1004)

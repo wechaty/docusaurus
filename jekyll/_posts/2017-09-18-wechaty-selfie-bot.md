@@ -5,6 +5,7 @@ categories: project
 tags:
   - code
   - featured
+  - machine-learning
 image: /assets/2017/wechaty-selfie-pear.jpg
 ---
 

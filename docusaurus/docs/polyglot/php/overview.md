@@ -26,6 +26,8 @@ Read blogs with the `php` tag at <https://wechaty.js.org/tags.html#php>
 
 ## History
 
+- [PHP Wechaty, @zhangchunsheng, Aug 5, 2020](https://github.com/wechaty/php-wechaty/)
+
 ## Maintainers
 
 - [@zhangchunsheng](https://github.com/zhangchunsheng)

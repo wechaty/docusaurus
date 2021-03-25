@@ -6,6 +6,7 @@ tags:
   - code
   - talk
   - machine-learning
+  - tensorflow
   - featured
 image: /assets/2018/wechaty-blinder-1.jpg
 ---
