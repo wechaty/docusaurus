@@ -57,7 +57,7 @@ wechaty.use(kickOffPlugin({ roomTopic: 'Test Room' }))
 
 Any comments about this design will be welcome.
 
-P.S. The Kickout Feature was originally introduced from the PR [add vote manager to manage vote message in room #4](https://github.com/wechaty/friday/pull/4) authored by @windmemory 
+P.S. The Kickout Feature was originally introduced from the PR [add vote manager to manage vote message in room #4](https://github.com/wechaty/friday/pull/4) authored by @windmemory.
 
 ## Links
 

@@ -83,6 +83,7 @@ const specs: SubMenuData = {
   items: [
     'specs/overview',
     'specs/wechaty',
+    'specs/plugin',
     'specs/puppet',
     'specs/service',
     'specs/token',
