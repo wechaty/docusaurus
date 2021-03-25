@@ -6,7 +6,8 @@ title: Publish blog
 
 ### Hide A Post
 
-If you do not want to list your post on the website, you can add a `published: false` to the front matter YAML.
+If you do not want to list your post on the website,
+you can add a `published: false` to the front matter YAML.
 
 ```yaml
 published: false
@@ -14,14 +15,15 @@ published: false
 
 ### List on <https://wechaty.js.org/news/>
 
-If a post has a tag named `news` then it will be shown at <https://wechaty.js.org/news/>
+If a post has a tag named `news`
+then it will be shown at <https://wechaty.js.org/news/>
 
 ```yaml
 tags:
   - news
 ```
 
-All posts will be showed at < <https://wechaty.js.org/blog/>
+All posts will be showed at <https://wechaty.js.org/blog/>
 
 ### Show Big Picture
 

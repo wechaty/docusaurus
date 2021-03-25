@@ -96,5 +96,5 @@ You can [join our Gitter](https://gitter.im/wechaty/wechaty) network if you aren
 
 - Read & create an [issues](https://github.com/wechaty/wechaty/issues)
 - Read & create a [pull requests](https://github.com/wechaty/wechaty/pulls)
-- [Publish blog post](../../contributing/publish-blog.md)
+- [Publish blog post](../../contributing/blog.md)
 - etc.

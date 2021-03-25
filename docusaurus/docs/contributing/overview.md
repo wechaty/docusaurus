@@ -16,7 +16,7 @@ The work on Wechaty itself falls into three major areas:
 Fix a bug, or add a new feature. You can make a pull request and see **your
 code** in the next version of Wechaty!
 
-Start from the [writing code docs](writing-code.md).
+Start from the [writing code docs](coding.md).
 
 ### Writing documentation ✍️
 
@@ -24,7 +24,7 @@ Wechaty's documentation is one of its key strengths. It's informative
 and thorough. You can help to improve the documentation and keep it
 relevant as the framework evolves.
 
-See [writing documentation](writing-documentation.md) for more.
+See [writing documentation](documentation.md) for more.
 
 ### Building RPA Puppet Provider/Service 🗺️
 
@@ -32,7 +32,7 @@ Wechaty supports over 10 Puppet Provider & Services.
 The RPA team are always looking for hackers
 to help maintain and increase IMs that Wechaty ecosystem should support.
 
-See [creating your puppet providers](puppet-providers/diy.md)
+See [creating your puppet providers](../puppet-providers/diy.md)
 to help expand the RPA for Wechaty.
 
 If you think working *with* Wechaty is fun, wait until you start working *on*
@@ -42,11 +42,10 @@ This contributing guide contains everything you need to know to help build the
 Wechaty chatbot framework. Browse the following sections to find out how:
 
 - [New contributors](new-contributors.md)
-- [Bugs and features](bugs-and-features.md)
-- [Triaging issues](triaging-issues.md)
-- [Writing code](writing-code.md)
-- [Writing documentation](writing-documentation.md)
-- [Committing code](committing-code.md)
+- [Bugs and features, Triaging issues](issues.md)
+- [Writing code](coding.md)
+- [Writing documentation](documentation.md)
+- [Committing code](pulls.md)
 
 ## Join the Wechaty community ❤️
 
@@ -69,7 +68,7 @@ Wechaty community and others to maintain a great ecosystem to work in:
 
 - Blog about Wechaty. We syndicate all the Wechaty blogs we know about on
   the [community blogs](https://wechaty.js.org/blog);
-  if you'd like to see your blog on that page you can [register it here](publish-blog.md).
+  if you'd like to see your blog on that page you can [register it here](blog.md).
 
 - Contribute to open-source Wechaty projects, write some documentation, or
   release your own code as an open-source pluggable application. The

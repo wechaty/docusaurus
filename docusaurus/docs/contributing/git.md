@@ -4,7 +4,7 @@ title: Working with git
 
 This section explains how the community can contribute code to Wechaty via pull
 requests. If you're interested in how committers handle them, see
-[committing code](committing-code.md).
+[committing code](pulls.md).
 
 Below, we are going to show how to create a GitHub pull request containing the
 changes for issue #xxxxx. By creating a fully-ready pull request, you

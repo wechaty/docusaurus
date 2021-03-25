@@ -1,5 +1,5 @@
 ---
-title: Writing documentation
+title: Write documentation
 ---
 
 We place a high importance on consistency and readability of documentation.

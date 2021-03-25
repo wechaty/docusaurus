@@ -1,4 +1,5 @@
 ---
+slug: /contributor-program/
 title: Wechaty contributor program
 sidebar_label: Contributor program
 ---
@@ -14,17 +15,17 @@ Building an chatbot that on top of Wechaty? Apply for our Contributor Program! T
 ## Table of Contents
 
 - Wechaty Contributor Program Suppliers
-- [Submit a blog post](publish-blog)
-    Publish your blog post to the Wechaty community
+- [Submit a blog post](contributing/blog.md)
+  Publish your blog post to the Wechaty community
 
 ## 1 Free Puppet Service Token
 
 1. WXWork
-1. Rock
 1. PadLocal
+1. Paimon
 1. Donut
 
-Learn more about Wechaty Puppet Services from our [document](https://wechaty.js.org/docs/puppet-services/) and [blog post](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/).
+Learn more about Wechaty Puppet Services from our [document](../puppet-services/overview.mdx) and the [blog post](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/).
 
 ## 2. Support the Wechaty Project
 
@@ -36,12 +37,12 @@ The following are our existing backers. Thank you to everyone! 🙏 [[Become a b
 
 ## Badge
 
-[![Wechaty Contributor Program](https://img.shields.io/badge/Wechaty-Contributor%20Program-green.svg)](https://wechaty.js.org/docs/contributing/contributor-program)
+[![Wechaty Contributor Program](https://img.shields.io/badge/Wechaty-Contributor%20Program-green.svg)](https://wechaty.js.org/docs/contributing/)
 
 You need to add the __Wechaty Contributor Program__ badge after you join this program.
 
 ```md
-[![Wechaty Contributor Program](https://img.shields.io/badge/Wechaty-Contributor%20Program-green.svg)](https://wechaty.js.org/docs/contributing/contributor-program)
+[![Wechaty Contributor Program](https://img.shields.io/badge/Wechaty-Contributor%20Program-green.svg)](https://wechaty.js.org/docs/contributing/)
 ```
 
 ## Cite Wechaty
