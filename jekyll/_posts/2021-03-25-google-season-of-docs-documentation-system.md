@@ -13,7 +13,7 @@ image: /assets/2021/03-google-season-of-docs-documentation-system/doc-sys-overvi
 
 This year, Wechaty organization is applying the [Google Season of Docs](https://developers.google.com/season-of-docs) program because we want to improve our documentation for the community.
 
-When I'm reading [Google Season of Docs - Project Ideas](https://developers.google.com/season-of-docs/docs/project-ideas), I found this great talk: [What nobody tells you about documentation, Daniele Procida, 2017, PyCon AU](https://2017.pycon-au.org/schedule/presentation/15/) ([YouTube talk video](https://youtu.be/t4vKPhjcMZg)), which techs me **[The Grand Unified Theory of Documentation](https://documentation.divio.com/)**:
+When I'm reading [Google Season of Docs - Project Ideas](https://developers.google.com/season-of-docs/docs/project-ideas), I found this great talk: [What nobody tells you about documentation, Daniele Procida, 2017, PyCon AU](https://2017.pycon-au.org/schedule/presentation/15/), which techs me **[The Grand Unified Theory of Documentation](https://documentation.divio.com/)**:
 
 > There is a secret that needs to be understood
   in order to write good software documentation:
@@ -27,13 +27,13 @@ When I'm reading [Google Season of Docs - Project Ideas](https://developers.goog
 
 ## What nobody tells you about documentation
 
-In the Daniele's 30 minutes talk video, and finished reading his [Documentation system](https://documentation.divio.com/) website, I decided to follow his principle to refactor our Wechaty Documentation website.
+In the Daniele's 30 minutes talk video, I decided to follow his principle to refactor our Wechaty Documentation website.
 
 {% include iframe.html src="https://youtu.be/t4vKPhjcMZg" %}
 
-> [What nobody tells you about documentation, Daniele Procida, 2017, PyCon AU](https://2017.pycon-au.org/schedule/presentation/15/) ([YouTube talk video](https://youtu.be/t4vKPhjcMZg))
+> [What nobody tells you about documentation, Daniele Procida, 2017, PyCon AU](https://2017.pycon-au.org/schedule/presentation/15/)
 
-In the above video, Daniele "using real-life examples I'll draw out the key functions of documentation, and how they map onto different ways of writing it. Putting this into practice is simple when armed with some basic guidelines. The benefits are huge, and available with a minimum of effort." ([link](https://2017.pycon-au.org/schedule/presentation/15/))
+In the above video, Daniele "_using real-life examples I'll draw out the key functions of documentation, and how they map onto different ways of writing it. Putting this into practice is simple when armed with some basic guidelines. The benefits are huge, and available with a minimum of effort._" ([link](https://2017.pycon-au.org/schedule/presentation/15/))
 
 The most important concept is the following diagram:
 
