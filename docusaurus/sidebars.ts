@@ -110,6 +110,7 @@ const caseStudy: SubMenuData = {
   label: 'Case Study',
   items: [
     'case-study/overview',
+    'case-study/money-bot',
     'case-study/assistant-bot',
     'case-study/coaxer-bot',
   ],
