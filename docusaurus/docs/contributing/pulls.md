@@ -1,10 +1,10 @@
 ---
-title: Committing code
+title: Create pull requests
 ---
 
 This section is addressed to the committers and to anyone interested in knowing
 how code gets committed into Wechaty. If you're a community member who wants to
-contribute code to Wechaty, look at [working with git](working-with-git.md) instead.
+contribute code to Wechaty, look at [working with git](git.md) instead.
 
 ## Handling pull requests
 

@@ -9,7 +9,7 @@ This page contains more general advice on ways you can contribute to Wechaty,
 and how to approach that.
 
 If you are looking for a reference on the details of making code contributions,
-see the [Writing code](writing-code.md) documentation.
+see the [Writing code](coding.md) documentation.
 
 ## First steps
 
@@ -43,7 +43,7 @@ Start with these steps to discover Wechaty's development process.
 
   Wechaty's documentation is great but it can always be improved. Did you find
   a typo? Do you think that something should be clarified? Go ahead and
-  suggest a documentation patch! See also the guide on [writing documentation](writing-documentation.md).
+  suggest a documentation patch! See also the guide on [writing documentation](documentation.md).
 
 - **Sign the Contributor License Agreement**
 

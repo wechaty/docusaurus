@@ -93,16 +93,16 @@ const contributing: SubMenuData = {
   label: 'Contributing',
   items: [
     'contributing/overview',
-    'contributing/contributor-program',
     'contributing/new-contributors',
-    'contributing/committing-code',
-    'contributing/publish-blog',
-    'contributing/writing-documentation',
-    'contributing/writing-code',
-    'contributing/working-with-git',
-    'contributing/bugs-and-features',
-    'contributing/triaging-issues',
-    'contributing/unit-tests',
+    'contributing/documentation',
+    'contributing/contributor-program',
+    'contributing/devops',
+    'contributing/pulls',
+    'contributing/blog',
+    'contributing/coding',
+    'contributing/git',
+    'contributing/issues',
+    'contributing/testing',
   ],
 }
 
@@ -110,6 +110,7 @@ const caseStudy: SubMenuData = {
   label: 'Case Study',
   items: [
     'case-study/overview',
+    'case-study/assistant-bot',
     'case-study/coaxer-bot',
   ],
 }

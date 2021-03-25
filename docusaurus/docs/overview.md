@@ -1,6 +1,6 @@
 ---
 slug: /
-title: Wechaty documentation overview
+title: Wechaty Documentation
 sidebar_label: Overview
 ---
 
@@ -98,7 +98,7 @@ Learn about some other core functionalities of the Wechaty:
 Learn about the development process for the Wechaty project itself and about how you can contribute:
 
 - **Commmunity**: [How to get involved](contributing/overview.md) | [Team organization](https://github.com/wechaty/PMC) | [The Wechaty source code repository](https://github.com/wechaty/wechaty) | [Mailing lists](https://groups.google.com/g/wechaty) | [Gitter.im channel](https://gitter.im/wechaty/wechaty) | [Wechaty contributor program](contributing/contributor-program.md)
-- **Documentation**: [About this documentation](contributing/writing-documentation.md)
+- **Documentation**: [About this documentation](contributing/documentation.md)
 - Wechaty over time: [Release notes](https://github.com/wechaty/wechaty/releases)
 
 ## Contact Us
