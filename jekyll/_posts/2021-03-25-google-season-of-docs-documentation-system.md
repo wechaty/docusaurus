@@ -37,9 +37,24 @@ In the above video, Daniele "using real-life examples I'll draw out the key func
 
 The most important concept is the following diagram:
 
-[![The Documentation System](/assets/2021/03-google-season-of-docs-documentation-system/doc-sys-overview.png)](https://documentation.divio.com/)
+![The Documentation System](/assets/2021/03-google-season-of-docs-documentation-system/doc-sys-overview.png)
+
+> Credit: [Documentation System](https://documentation.divio.com/)
 
 By following the above concepts, I re-structured our docs site by a better understanding of what Wechaty documentation should be like, and also great help me to write a better GSoD proposal for submitting to Google.
+
+## The Good Docs Project
+
+[The Good Docs Project](https://thegooddocsproject.dev) is also a great project with huge helps.
+
+The goal of the Good Docs Project is to improve open source software documentation by providing high quality templates and writing instructions to the open source community and beyond.
+
+The following diagram illustrated the lifecycle of the documentation:
+
+![The Good Docs Project](/assets/2021/03-google-season-of-docs-documentation-system/doctypes.png)
+
+> Each document type serves a different purpose and has differing requirements
+  &mdash; [The Good Docs Project](https://thegooddocsproject.dev)
 
 ## Updated docs site
 
