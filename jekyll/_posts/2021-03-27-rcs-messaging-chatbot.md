@@ -40,9 +40,9 @@ In China, the telecom operators call the RCS a **5G Chatbot**. (See: [Chinese op
 - [Cbot RCS Chatbot Improves User Experience of Banking Clients, GSMA Mobile World Congress 2019 (MWC19) in Barcelona, Jun 25, 2019](https://www.youtube.com/watch?v=xjQPH17AP6k)
   - <http://www.cbot.ai/>
 
-## Issues
+## Conclusion
 
-- [Enable RCS Support for Wechaty wechaty/wishlist#53](https://github.com/wechaty/wishlist/issues/53)
+What I'm thinking about is, if we build a Wechaty Puppet RCS, then our chatbot will be able to run both on the WeChat and the RCS without modify any code! Here's the Wechaty Puppet RCS Wishlist: [Enable RCS Support for Wechaty wechaty/wishlist#53](https://github.com/wechaty/wishlist/issues/53)
 
 ## Credit
 
