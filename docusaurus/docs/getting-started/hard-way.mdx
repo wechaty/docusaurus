@@ -1,0 +1,154 @@
+---
+title: The hard way
+---
+
+<!-- MDX import -->
+import Tabs     from '@theme/Tabs'
+import TabItem  from '@theme/TabItem'
+
+import ShortestChatbots from '../polyglot/transclusions/shortest-chatbots.mdx'
+
+<!-- Pushes a curious reader through the first few minutes of use. -->
+
+You can setup your own server for convnience. What you need to learn are:
+
+1. Install developing tools
+1. Install programming language
+1. Install Wechaty
+1. Run your first chatbot
+
+<ShortestChatbots />
+
+### Requirements
+
+1. A Linux/macOS/Windows computer
+1. Internet connection
+
+### 1. Setup development environment
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```sh
+apt-get install make
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```sh
+brew install make
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```sh
+choco install make
+```
+
+</TabItem>
+</Tabs>
+
+:::note Node.js installation docs
+
+* [Windows](https://nodejs.org/en/download/package-manager/#windows)
+* [Linux\(Debian/Ubuntu\)](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+* [macOS](https://nodejs.org/en/download/package-manager/#macos)
+
+> Instal Node.js for other platforms can be found at [https://nodejs.org/en/download/package-manager/](https://nodejs.org/en/download/package-manager/)
+
+:::
+
+### Instal Build Tools
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```sh
+sudo apt install build-essential
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```sh
+brew install make
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```sh
+choco install make
+```
+
+</TabItem>
+</Tabs>
+
+### 1. Clone wechaty-getting-started Repository
+
+```bash
+git clone https://github.com/wechaty/wechaty-getting-started
+cd wechaty-getting-started
+```
+
+### 2. Install Dependencies
+
+```bash
+# npm install
+make install
+```
+
+### 3. Run the Bot
+
+> **Notice: Wechaty requires Node.js version &gt;= 10**
+
+```sh
+# npm start
+#   Or use node to run bot directly
+#     node examples/starter-bot.js
+make bot
+```
+
+You are all set!
+
+You can see the following result after running:
+
+![demo](/img/docs/getting-started-qrcode.png)
+
+This demo will show all message on the bot.
+
+## Showcase
+
+![Wechaty Developers' Home](/img/friday-qrcode.svg)
+
+Scan the following QR Code in WeChat with secret code _wechaty_, join our **Wechaty Developers' Home**. This group is only for developers.
+
+:::note Friday BOT
+
+Learn more about our open-sourced Friday BOT from our [showcases](showcases/friday-bot.mdx)
+
+:::
+
+## Contact us
+
+You can [join our Gitter](https://gitter.im/wechaty/wechaty) network if you aren’t already a member.

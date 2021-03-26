@@ -5,7 +5,7 @@ categories: project
 tags:
   - summer-of-wechaty
   - summer-2020
-  - go-wechaty
+  - go
 image: /assets/2020/go-wechaty-gh-actions-optimization-final-poc/header.png
 ---
 

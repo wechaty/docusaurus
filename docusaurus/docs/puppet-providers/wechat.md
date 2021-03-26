@@ -19,14 +19,21 @@ This is a full-featured Wechaty Puppet.
 
 ## Known Issues
 
-1. Not all WeChat accounts can login the [Web WeChat](https://web.wechat.com) [#603](https://github.com/wechaty/wechaty/issues/603)
+WeChat Account that registered after 2017 might not be able to login Web Wechat, so it can not use wechaty-puppet-wechat with Wechaty. Please make sure your WeChat Account can be able to login by visiting [Web WeChat](https://web.wechat.com)
+
+1. Can not login with error message: 当前登录环境异常。为了你的帐号安全，暂时不能登录web微信。[#603](https://github.com/wechaty/wechaty/issues/603)
+    - New account login issue [#872](https://github.com/wechaty/wechaty/issues/872)
+    - [RUMOR]: wechat will close web api for wechat [#990](https://github.com/wechaty/wechaty/issues/990)
+1. Web API can not create room and invite members to room since 2018.
 1. The ID of contacts and rooms will change across sessions. [#1644](https://github.com/wechaty/wechaty/issues/1644)
+
+If you want to break the above limitations, then you need consider to use a Wechaty Puppet other than Web. Learn them from [Wechaty Puppet Providers](puppet-providers/overview.mdx).
 
 ## Usage
 
 <!-- MDX import -->
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
 
 <Tabs
   groupId="operating-systems"

@@ -5,7 +5,8 @@ categories: project
 tags:
   - nodejs
   - vue
-  - wechaty-puppet-padplus
+  - padplus
+  - project
   - nuxt
   - feature
 image: /assets/2020/wxbot-admin/screenshot.png

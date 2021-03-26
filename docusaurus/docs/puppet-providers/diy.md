@@ -3,8 +3,8 @@ title: 'Puppet Provider: DIY'
 ---
 
 <!-- MDX import -->
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
 
 [![Wechaty Puppet DIY](https://img.shields.io/badge/Provider-DIY-blueviolet)](diy)
 
@@ -16,11 +16,69 @@ You can make a Wechaty Puppet Provider easily.
 
 You can build a Wechaty Puppet Service by yourself with any Wechaty Puppet Providers.
 
-## Steps
+## Development
 
-To-be-written
+A Wechaty Puppet is a node package published on NPM that follow a defined convention.
 
-Pull Request is welcome!
+### How to implement a wechaty puppet
+
+related tutorial: [How to implement a wechaty-puppet](https://github.com/lijiarui/wechaty-puppet-padchat/issues/33)
+
+### Structure
+
+#### `package.json`
+
+The `package.json` is a manifest format for describing **Node.js modules**. Wechaty Puppets are built on top of Node modules. It declares dependencies, version, ownership, and other information required to run a plugin in Wechaty. This document describes the schema in detail.
+
+A plugin manifest `package.json` can also contain details about the required configuration. The configuration schema is defined in the `wechaty` field of the `package.json` (This field follow the [JSON-Schema](http://json-schema.org/) guidelines):
+
+```json
+{
+    "name": "wechaty-puppet-mytest",
+    "version": "0.0.1",
+    "description": "This is my first Wechaty Puppet",
+    "engines": {
+        "wechaty": ">=0.16.x"
+    },
+    "wechaty": {
+        "properties": {
+            "myConfigKey": {
+                "type": "string",
+                "default": "it's the default value",
+                "description": "It defines my awesome config!"
+            }
+        }
+    }
+}
+```
+
+You can learn more about `package.json` from the [NPM documentation](https://docs.npmjs.com/files/package.json).
+
+The **package name** must begin with `wechaty-puppet-` and the **package engines** should contain `wechaty`.
+
+#### mod.ts
+
+The `mod.ts` is the main entry point of your puppet implementation:
+
+```ts
+import { Puppet } from 'wechaty'
+
+export class PuppetMyTest extends Puppet {
+  // ... implenmentation here ...
+}
+
+export default PuppetMyTest
+```
+
+#### Publish Your Puppet
+
+Wechaty Puppet can be published on [NPM](https://www.npmjs.com/).
+
+To publish a new Puppet, you need to create an account on [npmjs.com](https://www.npmjs.com/) then publish it from the command line:
+
+```shell
+npm publish
+```
 
 ## Blogs
 

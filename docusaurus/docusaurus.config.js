@@ -1,8 +1,13 @@
+/**
+ * Support sidebar.ts in TypeScript
+ */
+require('ts-node/register')
+
 const path = require('path')
 
 module.exports = {
   title: 'Wechaty',
-  tagline: 'RPA SDK for Chatbot Makers',
+  tagline: 'Conversational RPA SDK for Chatbot Makers',
   url: 'https://wechaty.js.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -36,31 +41,13 @@ module.exports = {
 
         { label: 'Docs',            to: 'docs/', position: 'right', activeBasePath: 'docs',
           items: [
-            { label: 'Introduction',        to: 'docs/introduction/' },
-            { label: 'Getting Started',     to: 'docs/getting-started/' },
-            { label: 'Tutorials',           to: 'docs/case-study/' },
-            { label: 'Case Study',          to: 'docs/case-study/' },
-            { label: 'Polyglot',            to: 'docs/polyglot/' },
-            { label: 'Recipes',             to: 'docs/recipes/' },
-            { label: 'Puppet Providers',    to: 'docs/puppet-providers/' },
-            { label: 'Puppet Service',      to: 'docs/puppet-services/' },
-            { label: 'Contributor Program', to: 'docs/contributor-program/' },
-            { label: 'Events',              to: 'docs/events/' },
-            { label: 'Specifications',      to: 'docs/specifications/' },
-            { label: 'API References',      to: 'docs/api/' },
-            { label: 'FAQ',                 to: 'docs/faq/' },
+            { label: 'Introduction',  to: 'docs/wechaty' },
+            { label: 'Tutorials',     to: 'docs/tutorials/' },
+            { label: 'Explainations', to: 'docs/explainations/' },
+            { label: 'References',    to: 'docs/references/' },
+            { label: 'How-to Guides', to: 'docs/howto/' },
           ],
         },
-
-        // { label: 'Docs',            to:   'docs/introduction/',    position: 'right' },
-        // { label: 'Getting Started', to:   'docs/getting-started',  position: 'right' },
-        // { label: 'Tutorial',        to:   'docs/tutorials/',       position: 'right' },
-        // { label: 'Recipes',         to:   'docs/recipes/',         position: 'right' },
-        // { label: 'Case Study',      to:   'docs/case-study/',      position: 'right' },
-        // { label: 'API',             to:   'docs/api/',             position: 'right' },
-        // { label: 'FAQ',             to:   'docs/faq/',             position: 'right' },
-        // { label: 'Troubleshooting', to:   'docs/troubleshooting',  position: 'right' },
-
         { label: 'GitHub',          href: 'https://github.com/wechaty/wechaty#readme',   position: 'right' },
       ],
     },
@@ -70,11 +57,11 @@ module.exports = {
         {
           title: 'Docs',
           items: [
-            { label: 'Getting Started', to: 'docs/getting-started/' },
-            { label: 'Tutorial',        to: 'docs/tutorials/' },
-            { label: 'FAQ',             to: 'docs/faq/' },
-            { label: 'API Reference',   to: 'docs/api/' },
-            { label: 'Puppet Service',  to: 'docs/puppet-services/' },
+            { label: 'Introduction',  to: 'docs/' },
+            { label: 'Tutorials',     to: 'docs/tutorials/' },
+            { label: 'Explainations', to: 'docs/explainations/' },
+            { label: 'References',    to: 'docs/references/' },
+            { label: 'Howto Guides',  to: 'docs/howto/' },
           ],
         },
         {
@@ -138,7 +125,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./sidebars.ts'),
           // Please change this to your repo.
           editUrl: 'https://github.com/wechaty/wechaty.js.org/edit/master/docusaurus/',
           // Equivalent to `enableUpdateBy`.

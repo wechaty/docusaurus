@@ -2,9 +2,8 @@
 title: .NET Wechaty如何使用PadLocal Puppet Service
 author: jesn
 tags:
-  - .NET-wechaty
-  - .NET
-  - Csharp
+  - dotnet
+  - csharp
   - sticky
 categories: project
 image: /assets/2021/01-csharp-wechaty-for-padlocal-puppet-service/dotnet-wechaty.png

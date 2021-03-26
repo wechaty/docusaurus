@@ -19,7 +19,7 @@ Wechaty Puppet Service is a Wechaty Puppet for providing/consuming gRPC Puppet A
 
 If you want to learn more about the concepts behind TOKEN, please read our blog post: [Introducing Wechaty Puppet Service](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/)
 
-Learn all service provided by the Wechaty Community at [here](puppet-services/README.md)
+Learn all service provided by the Wechaty Community at [here](puppet-services/overview.mdx)
 
 ## Usage
 
@@ -27,13 +27,13 @@ Learn all service provided by the Wechaty Community at [here](puppet-services/RE
 
 Wechaty Puppet Service need a token for authorization.
 
-Learn about [Wechaty Puppet Service](puppet-services/README.md) for all services our community currently supported now.
+Learn about [Wechaty Puppet Service](puppet-services/overview.mdx) for all services our community currently supported now.
 
 :::
 
 <!-- MDX import -->
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
 
 <Tabs
   groupId="operating-systems"

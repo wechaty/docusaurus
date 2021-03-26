@@ -4,7 +4,8 @@ author: przzl
 categories: project
 tags:
   - nodejs
-  - wechaty-puppet-padplus
+  - padplus
+  - project
 image: /assets/2020/file-assistant-bot/file-assistant-bot-img.png
 ---
 

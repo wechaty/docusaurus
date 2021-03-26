@@ -5,7 +5,8 @@ categories: project
 tags:
   - nodejs
   - academic
-  - wechaty-puppet-padplus
+  - padplus
+  - project
 image: /assets/2020/yanbot/yanbot.jpg 
 ---
 

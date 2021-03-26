@@ -5,7 +5,8 @@ categories: project
 image: /assets/2020/wx-group-assistant-bot/wx-bot.jpg
 tags:
   - nodejs
-  - wechaty-puppet-padplus
+  - padplus
+  - project
 ---
 
 ## 背景与需求分析
