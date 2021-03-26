@@ -14,7 +14,7 @@ tags:
 
 值得注意的是，今年的**暑期2021**将由**暑期2020**中的部分优秀导师和学生牵头组织，一方面，这代表在**暑期2020**中，我们成功吸纳了新的活跃贡献者加入社区，是对社区在暑期2020活动中表现的肯定；另一方面，我们相信这些曾经的参与者，会从他们的角度提出新的思路和想法，让**暑期2021**活动更加高效、更加人性化。
 
-### 开源软件供应链点亮计划
+## 开源软件供应链点亮计划
 
 Institute of Software Chinese Academy of Sciences (ISCAS) Open Source Promotion Plan (OSPP) encourages everyone to pay close attention to open source software and open source community, aiming to cultivate and explore more outstanding developers. ‘Summer 2021’ will be held in this summer. We will collaborate closely with the open source community to provide one-to-one mentor guidance and invite some specialists to conduct free online lectures. In order to promote the development of open source software and facilitate the construction of excellent open source software community, we encourage researchers, open source enthusiasts, professors as well as students to participate in the development and maintenance of open source software. Furthermore, ‘Summer 2021’ is supposed to increase the activity of open source projects, and promote the development of open source ecology.
 
@@ -27,7 +27,7 @@ Institute of Software Chinese Academy of Sciences (ISCAS) Open Source Promotion 
 - 详细介绍：<https://summer.iscas.ac.cn/help/>
 - GitHub: <https://github.com/summer-ospp>
 
-### 暑期2021社区组织者
+## 暑期2021社区组织者
 
 - [Yuan](https://wechaty.js.org/contributors/windmemory), CTO of Juzi.BOT, Creator of Wechaty Puppet Service [WXWork](https://wechaty.js.org/docs/puppet-services/wxwork)
 - [Jing](https://wechaty.js.org/contributors/wj-mcat), Author of [Python Wechaty](https://github.com/wechaty/python-wechaty)
