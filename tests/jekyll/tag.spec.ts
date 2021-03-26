@@ -15,6 +15,7 @@ import {
 import {
   stripRepoRoot,
 }                             from '../../src/repo-root'
+import { getFrontmatterCategoryList } from '../../src/jekyll/get-frontmatter-category-list'
 
 const glob = util.promisify(globCB)
 
@@ -154,4 +155,42 @@ test('tags naming convension', async t => {
   }
 
   t.pass(`total ${fileTagsMap.size} files checked`)
+})
+
+/**
+ * #710 - Enforce blog posts with category 'project' to contain one of the tags
+ *  https://github.com/wechaty/wechaty.js.org/issues/710
+ */
+test('tags for project category', async t => {
+  const TAGS = {
+    education     : 'Mobile learning, talk to the professor, application management, and manage course schedules',
+    entertainment : 'Movie updates, booking tickets, etc.',
+    estate        : 'Sales, schedule appointments, customer support, etc',
+    finance       : 'banking and Insurance: Account updates, OTPs, account transactions, Suspicious account, Insurance premium updates, and payment, recommend right insurance products, compare insurance premiums, password setting, and new loans, credit card updates, etc.',
+    media         : 'Send digital newspapers, etc.',
+    retail        : 'E-commerce expansion on SMS messaging platform; browsing, promotions, and complete transactions.',
+    telecom       : 'Send Bills, complete payment, customer support, new connection/product, etc.',
+    travel        : 'Browse hotels and tickets, booking, send boarding pass, etc',
+  }
+
+  const postsFileList   = await glob(`${JEKYLL_FOLDER.posts}/**/*`)
+  const tagMap = await getFileToTagsMap()
+
+  for (const file of postsFileList) {
+    const categoryList  = getFrontmatterCategoryList(file)
+    const tagList = tagMap[file]
+
+    if (tagList?.length <= 0) {
+      continue
+    }
+
+    if (!categoryList.includes('project')) {
+      continue
+    }
+
+    const tagOk = tagList.some(tag => tag in TAGS)
+    if (!tagOk) {
+      t.fail(`"${stripRepoRoot(file)}" should contains one of "${Object.keys(TAGS).join(',')}" for a post with category "project"`)
+    }
+  }
 })
