@@ -295,5 +295,5 @@ We are listing those powerful Wechaty Plugins outside the contrib as in the foll
 ## History
 
 - Wechaty Plugin Support with Kickout Example [#1939](https://github.com/wechaty/wechaty/issues/1939)
-- [Wechaty插件系统发布，让你的机器人快速接入复杂管理和智能对话能力, @yinbohao, Jul 22, 2020](https://wechaty.js.org/2020/07/22/wechaty-plugin-milestone/)
+- [Wechaty插件系统发布，让你的机器人快速接入复杂管理和智能对话能力, @rickyyin98, Jul 22, 2020](https://wechaty.js.org/2020/07/22/wechaty-plugin-milestone/)
 - [有道智云翻译插件, @chs97, Jul 19, 2020](http://wechaty.js.org/2020/07/19/wechaty-plugin-youdao/)
