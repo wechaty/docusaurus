@@ -21,7 +21,7 @@ function buildManifest () {
   FILE=$1
   VERSION=$(npx pkg-jq -r .version)
   cat <<_POD_ > "$FILE"
-'{"version":"$VERSION"}'
+{"version":"$VERSION"}
 _POD_
 }
 
