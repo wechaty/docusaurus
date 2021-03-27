@@ -4,7 +4,7 @@ author: hywhuangyuwei
 categories: project
 tags:
   - padplus
-  - project
+  - productivity
   - nodejs
   - sync
   - netdisk

@@ -3,7 +3,7 @@ title: "用wechaty制作返利机器人"
 author: jiangxiaotao1024
 categories: project
 tags:
-  - retail
+  - ecommerce
 image: /assets/2020/rebate-robot/taokouling.png
 ---
 

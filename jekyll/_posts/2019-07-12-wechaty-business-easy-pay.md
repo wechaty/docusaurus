@@ -5,6 +5,7 @@ categories: project
 tags:
   - code
   - featured
+  - ecommerce
 image: /assets/2019/wechaty-pay-paypic.png
 ---
 

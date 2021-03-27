@@ -4,7 +4,7 @@ author: zoudingyi
 categories: project
 tags:
   - padplus
-  - project
+  - ecommerce
 image: /assets/2020/wechat-purchasing-robot/header.jpg
 ---
 

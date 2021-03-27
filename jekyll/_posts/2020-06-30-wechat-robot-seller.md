@@ -4,7 +4,7 @@ author: peterzhang
 categories: project
 tags:
   - padplus
-  - project
+  - ecommerce
 image: /assets/2020/wechat-robot-seller/chat.jpeg
 ---
 

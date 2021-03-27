@@ -4,7 +4,7 @@ author: xiaogan18
 categories: project
 tags:
   - padplus
-  - project
+  - utility
 image: /assets/2020/repe-assistant/2020-05-16-repe-assistant.png
 ---
 

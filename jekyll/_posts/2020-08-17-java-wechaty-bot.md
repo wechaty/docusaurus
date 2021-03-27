@@ -6,6 +6,7 @@ tags:
   - springboot
   - java
   - weixin-openai
+  - entertainment
 image: /assets/2020/smwsk-java-wechaty-bot/home.jpg
 ---
 

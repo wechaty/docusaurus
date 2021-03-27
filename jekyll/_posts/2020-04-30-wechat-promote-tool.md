@@ -3,7 +3,7 @@ title: "如何用Wechaty打造一个推广机器人"
 author: jesseweb
 categories: project
 tags:
-   - retail
+   - ecommerce
 image: /assets/2020/promote-bot/banner.png
 ---
 

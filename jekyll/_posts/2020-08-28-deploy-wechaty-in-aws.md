@@ -6,6 +6,7 @@ categories: project
 tags:
   - nodejs
   - aws
+  - devops
 ---
 
 This article is about to deploy wechaty node.js application into AWS EC2 steps by steps.

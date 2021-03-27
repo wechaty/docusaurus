@@ -5,6 +5,7 @@ categories: project
 tags:
   - serverchen
   - shell
+  - utility
 image: /assets/2020/kotlin-wechaty-simple-shell/home.jpeg
 ---
 

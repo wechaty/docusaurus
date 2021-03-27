@@ -4,7 +4,8 @@ author: xiaok
 categories: project
 tags:
   - padplus
-  - project
+  - productivity
+  - social
 image: /assets/2020/wechaty-forwardbot/header.png
 ---
 > Author: [xiaok](https://github.com/22528850)

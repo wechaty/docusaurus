@@ -5,6 +5,7 @@ categories: project
 tags:
   - code
   - featured
+  - social
 image: /assets/2017/helen-screenshot-testing.jpg
 ---
 

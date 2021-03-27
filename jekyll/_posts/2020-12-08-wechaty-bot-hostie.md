@@ -5,6 +5,7 @@ categories: project
 tags:
   - nodejs
   - donut
+  - social
 image: /assets/2020/wechaty-bot-hostie/img-func.jpeg
 ---
 

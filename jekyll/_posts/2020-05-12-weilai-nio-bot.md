@@ -4,7 +4,7 @@ author: leons828
 categories: project
 tags:
   - padplus
-  - project
+  - automotive
 image: /assets/2020/nio-bot/bio-photo.jpg
 ---
 

@@ -4,6 +4,7 @@ author: diaozxin007
 categories: project
 tags:
   - code
+  - social
 image: /assets/2019/remind-eat-1.jpg
 ---
 

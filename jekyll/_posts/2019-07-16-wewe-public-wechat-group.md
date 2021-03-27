@@ -5,6 +5,8 @@ categories: project
 tags:
   - startup
   - featured
+  - social
+  - utility
 image: /assets/2019/wewe-screenshot.png
 ---
 

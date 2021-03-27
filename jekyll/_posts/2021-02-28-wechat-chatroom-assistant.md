@@ -5,6 +5,7 @@ categories: project
 tags:
   - python
   - padlocal
+  - productivity
 image: /assets/2021/02-wechat-chatroom-assistant/header.jpg
 ---
 

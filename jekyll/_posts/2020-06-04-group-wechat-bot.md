@@ -4,7 +4,7 @@ author: sam
 categories: project
 tags:
   - padplus
-  - project
+  - real-estate
 image: /assets/2020/group-wechat-bot/2020-06-04-group-wechat-bot.png
 ---
 

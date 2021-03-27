@@ -7,6 +7,7 @@ tags:
   - puppet
   - padlocal
   - wangke
+  - education
 ---
 ## 背景
 

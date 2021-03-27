@@ -4,6 +4,8 @@ author: willcup
 categories: project
 tags:
   - typescript
+  - entertainment
+  - case-study
 image: /assets/2020/yibot/1.jpg
 ---
 

@@ -4,7 +4,7 @@ author: suruozhong
 categories: project
 tags:
   - padplus
-  - project
+  - productivity
 image: /assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot0.jpg 
 ---
 
