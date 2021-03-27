@@ -6,6 +6,7 @@ tags:
   - padplus
   - project
   - stock
+  - finance
 image: /assets/2020/wechaty-stock-bot/header.jpg
 ---
 > Author: [wengcan](https://github.com/wengcan)

@@ -6,7 +6,7 @@ tags:
   - nodejs
   - academic
   - padplus
-  - project
+  - healthcare
 image: /assets/2020/yanbot/yanbot.jpg 
 ---
 

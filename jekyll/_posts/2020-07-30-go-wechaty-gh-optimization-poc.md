@@ -7,6 +7,7 @@ tags:
   - go
   - summer-of-wechaty
   - summer-2020
+  - devops
 ---
 
 > 作者: [TangGuangbin](https://github.com/Nebell/)

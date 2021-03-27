@@ -4,7 +4,8 @@ author: yinizhilian
 categories: project
 tags:
   - padplus
-  - project
+  - entertainment
+  - social
 image: /assets/2020/kuakua-wechaty/titleimage.png
 ---
 

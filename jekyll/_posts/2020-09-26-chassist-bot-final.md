@@ -7,6 +7,7 @@ tags:
   - python
   - summer-of-wechaty
   - summer-2020
+  - entertainment
 ---
 > Author: [@kxz18](https://github.com/kxz18)
 > Code: [@kxz18/CHAssisT](https://github.com/kxz18/CHAssisT)

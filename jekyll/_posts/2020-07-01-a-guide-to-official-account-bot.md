@@ -5,6 +5,8 @@ image: /assets/2020/wechat-official-helper/teaser.png
 categories: project
 tags:
   - official-account
+  - productivity
+  - social
 ---
 
 > Author: [@your_github_username](https://github.com/sl1673495) front-end developer

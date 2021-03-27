@@ -7,6 +7,7 @@ tags:
   - python
   - pytorch
   - machine-learning
+  - productivity
 ---
 
 Use wechaty to apply pytorch model via WeChat.

@@ -9,6 +9,7 @@ tags:
   - project
   - nuxt
   - feature
+  - utility
 image: /assets/2020/wxbot/qrcode.png 
 ---
 

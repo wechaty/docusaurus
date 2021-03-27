@@ -4,7 +4,7 @@ author: ershing
 categories: project
 tags:
   - padplus
-  - project
+  - travel
 image: /assets/2020/when-bus-come/teaser.jpg
 ---
 

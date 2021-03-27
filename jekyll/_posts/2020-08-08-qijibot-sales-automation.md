@@ -5,6 +5,8 @@ categories: project
 tags:
   - featured
   - qiji
+  - productivity
+  - social
 image: /assets/2020/qijibot/qijibot.jpg
 ---
 

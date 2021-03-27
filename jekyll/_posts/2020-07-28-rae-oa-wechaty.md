@@ -4,6 +4,7 @@ author: northseacoder
 categories: project
 tags:
   - puppet-provider
+  - productivity
 image: /assets/2020/rae-oa-wechaty/schecdule.png
 ---
 > Author: [NorthSeacoder](https://github.com/NorthSeacoder)

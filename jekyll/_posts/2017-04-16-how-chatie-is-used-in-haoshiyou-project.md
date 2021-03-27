@@ -6,7 +6,7 @@ tags:
   - code
   - startup
   - featured
-  - estate
+  - real-estate
 ---
 
 为了帮助新来硅谷的朋友找室友和租房，我们在所在地区组建了若干微信群。

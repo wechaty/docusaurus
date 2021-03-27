@@ -4,7 +4,7 @@ author: chengaopan
 categories: project
 tags:
   - padplus
-  - project
+  - productivity
 image: /assets/2020/910taobot/panda.jpg 
 ---
 

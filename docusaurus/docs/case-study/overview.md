@@ -20,3 +20,5 @@ sidebar_label: 'Case study: Index'
 1. [用wechaty实现新闻资讯播报机器人, @judaschrist, Aug 13, 2018](https://wechaty.js.org/2018/08/13/wechaty-xiaoli-bot/)
 1. [聚会娱乐机器人, osindex, Jun 06, 2020](https://wechaty.js.org/2020/06/06/wechaty-game-bot/)
 1. [Wechaty - 让线上没有难做的生意, @coderwhocode, Jul 12, 2019](https://wechaty.js.org/2019/07/12/wechaty-business-easy-pay/)
+
+Read more from our `case-study` tag at <https://wechaty.js.org/tags.html#case-study>

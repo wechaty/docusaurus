@@ -5,6 +5,7 @@ image: /assets/2020/my-first-wechaty-bot/2020-09-my-first-wechaty-bot.png
 categories: project
 tags:
   - windows
+  - other
 ---
 
 手头上的事情越来越多，回复微信都是件很麻烦的事，对于IT行业的人来说，能用机器解决的事就不应该手动去做，于是就有了构建微信机器人的想法。

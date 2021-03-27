@@ -4,7 +4,8 @@ author: csjuxyz
 categories: project
 tags:
   - padplus
-  - project
+  - productivity
+  - entertainment
 image: /assets/2020/wechaty-lottery/lottery-header.jpg
 ---
 > Author: [csjuXYZ](https://github.com/csjuXYZ)

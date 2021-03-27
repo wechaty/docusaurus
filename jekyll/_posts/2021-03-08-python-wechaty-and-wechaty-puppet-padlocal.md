@@ -1,7 +1,7 @@
 ---
 title:  "Python-wechaty & wechaty-puppet-padlocal的初探"
 author: iivveess
-categories: project
+categories: article
 tags:
   - cloud
   - python

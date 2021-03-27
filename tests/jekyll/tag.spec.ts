@@ -162,15 +162,29 @@ test('tags naming convension', async t => {
  *  https://github.com/wechaty/wechaty.js.org/issues/710
  */
 test('tags for project category', async t => {
+  /**
+   * Categories for Chatbots
+   *  https://research.aimultiple.com/chatbot-applications/
+   */
   const TAGS = {
-    education     : 'Mobile learning, talk to the professor, application management, and manage course schedules',
+    automotive    : 'Cars',
+    devops        : 'DevOps & CI/CD',
+    ecommerce     : 'E-Commerce',
+    ecosystem     : 'Ecosystem for Wechaty community',
+    education     : 'learning, talk to the professor, application management, and manage course schedules',
     entertainment : 'Movie updates, booking tickets, etc.',
-    estate        : 'Sales, schedule appointments, customer support, etc',
     finance       : 'banking and Insurance: Account updates, OTPs, account transactions, Suspicious account, Insurance premium updates, and payment, recommend right insurance products, compare insurance premiums, password setting, and new loans, credit card updates, etc.',
+    game          : 'Interactive games',
+    healthcare    : '',
+    hospitality   : '',
+    insurance     : '',
     media         : 'Send digital newspapers, etc.',
-    retail        : 'E-commerce expansion on SMS messaging platform; browsing, promotions, and complete transactions.',
-    telecom       : 'Send Bills, complete payment, customer support, new connection/product, etc.',
+    other         : '',
+    productivity  : '',
+    'real-estate' : 'Real Estates',
+    social        : '',
     travel        : 'Browse hotels and tickets, booking, send boarding pass, etc',
+    utility       : '',
   }
 
   const postsFileList   = await glob(`${JEKYLL_FOLDER.posts}/**/*`)

@@ -4,7 +4,7 @@ author: darkli
 categories: project
 tags:
   - padplus
-  - project
+  - productivity
   - wechat-robot
   - teamin
   - chatbot

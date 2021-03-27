@@ -7,6 +7,7 @@ tags:
   - padplus
   - project
   - nodejs
+  - entertainment
 ---
 
 智能群聊天机器人

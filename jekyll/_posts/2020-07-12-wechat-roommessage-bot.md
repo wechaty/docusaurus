@@ -5,6 +5,8 @@ categories: project
 tags:
   - padplus
   - project
+  - productivity
+  - hospitality
 image: /assets/2020/wechat-roommessage-bot/teaser.png
 ---
 

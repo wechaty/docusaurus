@@ -4,7 +4,7 @@ author: hzhuhao
 categories: project
 tags:
   - padplus
-  - project
+  - ecommerce
 image: /assets/2020/wechat-group-integral-robot/header.jpg
 ---
 

@@ -4,7 +4,7 @@ author: shuangjie
 categories: project
 tags:
   - cps
-
+  - ecommerce
 image: /assets/2020/cps-bot/qrcode.jpg
 ---
 

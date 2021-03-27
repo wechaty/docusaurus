@@ -4,11 +4,11 @@ author: ray7551
 categories: project
 tags:
   - padplus
-  - project
   - wechat-robot
   - regex
   - regex101
   - featured
+  - entertainment
 image: /assets/2020/wechat-poem-robot/chat.png
 ---
 

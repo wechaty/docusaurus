@@ -7,6 +7,7 @@ tags:
   - summer-of-wechaty
   - summer-2020
   - go
+  - ecosystem
 image: /assets/2020/go-wechaty-plugin-soc/2020-07-21-go-wechaty.png
 ---
 

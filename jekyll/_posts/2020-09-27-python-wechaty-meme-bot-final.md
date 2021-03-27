@@ -9,6 +9,7 @@ tags:
   - summer-2020
   - tensorflow
   - machine-learning
+  - social
 ---
 
 <!--more-->

@@ -6,6 +6,7 @@ categories: project
 tags:
   - node.js
   - typescript
+  - ecommerce
 ---
 
 基于wechaty实现的微信机器人，根据淘口令生成高佣转链接，并创建新的淘口令。

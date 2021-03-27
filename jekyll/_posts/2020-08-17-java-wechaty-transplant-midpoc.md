@@ -6,6 +6,7 @@ tags:
   - java
   - soc
   - soc2020
+  - ecosystem
 image: /assets/2020/java-wechaty-transplant-midpoc/java-wechaty-transplant-midpoc.jpg
 ---
 

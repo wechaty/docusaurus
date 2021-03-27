@@ -5,7 +5,7 @@ categories: project
 tags:
   - node
   - padlocal
-  - project
+  - social
 image: /assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/grouupmaster.png
 ---
 
