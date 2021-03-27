@@ -53,7 +53,7 @@ test('front matter key `tags` must contact at least one tag', async t => {
     }
   }
 
-  t.pass(`total ${tagMap.size} files checked`)
+  t.pass(`total ${Object.keys(tagMap).length} files checked`)
 })
 
 test('front matter key `tags` must not black listed', async t => {
@@ -94,7 +94,7 @@ test('front matter key `tags` must not black listed', async t => {
     }
   }
 
-  t.pass(`total ${tagMap.size} files checked`)
+  t.pass(`total ${Object.keys(tagMap).length} files checked`)
 })
 
 test('tags naming convension', async t => {
@@ -154,7 +154,7 @@ test('tags naming convension', async t => {
     }
   }
 
-  t.pass(`total ${fileTagsMap.size} files checked`)
+  t.pass(`total ${Object.keys(fileTagsMap).length} files checked`)
 })
 
 /**
@@ -204,7 +204,15 @@ test('tags for project category', async t => {
 
     const tagOk = tagList.some(tag => tag in TAGS)
     if (!tagOk) {
-      t.fail(`"${stripRepoRoot(file)}" should contains one of "${Object.keys(TAGS).join(',')}" for a post with category "project"`)
+      t.fail([
+        `"${stripRepoRoot(file)}" has category "project":`,
+        `   it's tags should contain one of "${Object.keys(TAGS).join(',')}"`,
+        '',
+        '   Learn more from Issue #710: Enforce blog posts with category "project" to contain one of the tags',
+        '     Url: https://github.com/wechaty/wechaty.js.org/issues/710',
+      ].join('\n'))
     }
   }
+
+  t.pass(`total ${Object.keys(tagMap).length} files checked`)
 })
