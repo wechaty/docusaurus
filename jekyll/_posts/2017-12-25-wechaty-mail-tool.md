@@ -1,6 +1,6 @@
 ---
 title: "Wechaty-Mail: An email tool build on Wechaty"
-author: wangning
+author: wnbupt
 categories: project
 tags:
   - code
