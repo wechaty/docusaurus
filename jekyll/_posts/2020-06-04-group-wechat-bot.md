@@ -1,6 +1,6 @@
 ---
 title: "使用Wechaty开发微信群管理小助手"
-author: sam
+author: pxingwei
 categories: project
 tags:
   - padplus
