@@ -6,6 +6,7 @@ tags:
   - analytics
   - featured
   - utility
+  - ecosystem
 image: /assets/2018/wechaty-lightbot-logo.jpg
 ---
 
