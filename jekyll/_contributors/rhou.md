@@ -11,7 +11,6 @@ twitter:
 
 ## Contact me
 
-- Github: https://github.com/r-hou
+- Github: <https://github.com/r-hou>
 - Email：<rhou@connect.ust.hk>
-- Website: <>
 

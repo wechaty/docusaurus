@@ -7,16 +7,14 @@ tags:
 ---
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://wechaty.js.org)
 
-> 作者: [r-hou](<https://github.com/r-hou>)，学生，加密货币爱好者。
+> 作者: [r-hou](https://github.com/r-hou)，学生，加密货币爱好者。
 
 [![Wechaty-Cryptocurrency-Notification](../assets/2021/03-wechaty-cryptocurrency-notification/wechaty-btc.jpg)](https://github.com/r-hou/wechaty-cryptocurrency-websocket)
 
 <!-- more -->
 从2020年3月份以来，加密货币市场随着疫情导致的全球大放水而飞速扩张，BTC的价格从低点\$3800涨到了最高\$60000， 十几倍的涨幅吸引了全球越来越多的个人和机构投资者参与到这个市场。 这个7x24小时的市场瞬息万变，上下几个点甚至几十个点的波动常常在十几分钟甚至几分钟之内就能完成，这么大的波动在给投资者带来丰厚回报的同时也伴随着巨大的风险。作为一名个人投资者，非常希望能够及时得到虚拟货币价格的变动情况而进行交易。
 
-因此, 我非常希望建立一个自动化机器人，在行情波动巨大的时候及时发出提醒。目前，市面上有各种各样的接口提供了消息推送，比如钉钉，spark， IFTTT， telegram等等. 但是，每个人手机里各种各样的消息推送常常让人应接不暇。而微信，作为最广泛使用的聊天工具，鲜有人错过阅读微信消息。 所以，我打算通过微信机器人来进行消息推送。
-
-通过搜索，了解到目前市场的消息机器人有itchat， wxpy，wechaty等等。可是随着腾讯施加压力，基于web微信的itchat和wxpy无法使用。而wechaty支持多种协议，比web协议更加安全，于是决定采用wechaty基于ipad协议 ( padLocal ) 来搭建机器人。
+因此, 我非常希望建立一个自动化机器人，在行情波动巨大的时候及时发出提醒。目前，市面上有各种各样的接口提供了消息推送，比如钉钉，spark， IFTTT， telegram等等. 但是，每个人手机里各种各样的消息推送常常让人应接不暇。而微信，作为最广泛使用的聊天工具，鲜有人错过阅读微信消息。 所以，我打算通过微信机器人来进行消息推送。通过搜索，了解到目前市场的消息机器人有itchat， wxpy，wechaty等等。可是随着腾讯施加压力，基于web微信的itchat和wxpy无法使用。而wechaty支持多种协议，比web协议更加安全，于是决定采用wechaty基于ipad协议 ( padLocal ) 来搭建机器人。
 
 让我们进入正题！
 
@@ -27,7 +25,8 @@ aiohttp
 asyncio
 wechaty
 
-##Wechaty Puppet Hostie部署：
+## Wechaty Puppet Hostie部署：
+
 因为原生的wechaty是基于JavaScript和TypeScript写的，所以需要通过docker搭建Wechaty Puppet Hostie 服务作为中转， 从而可以通过python调用。
 
 - **部署前置准备:**
