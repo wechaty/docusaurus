@@ -6,6 +6,7 @@ tags:
   - python
   - cryptocurrency
   - binance
+  - devops
 image: assets/2021/03-wechaty-cryptocurrency-websocket/wechaty-btc.jpg
 ---
 
