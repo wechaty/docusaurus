@@ -7,7 +7,7 @@ tags:
   - cryptocurrency
   - binance
   - devops
-image: assets/2021/03-wechaty-cryptocurrency-websocket/wechaty-btc.jpg
+image: /assets/2021/03-wechaty-cryptocurrency-websocket/wechaty-btc.jpg
 ---
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://wechaty.js.org)
