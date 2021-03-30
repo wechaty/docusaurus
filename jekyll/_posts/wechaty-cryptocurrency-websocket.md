@@ -41,6 +41,7 @@ wechaty
 - **部署Wechaty Puppet Hostie**
 
 具体代码如下（本人服务器为 Ununtu 18.04）
+
 ```
 #! /usr/bin/bash
 
@@ -60,6 +61,7 @@ export WECHATY_TOKEN=$(curl -s https://www.uuidgenerator.net/api/version4)
   -p "$WECHATY_PUPPET_SERVER_PORT:$WECHATY_PUPPET_SERVER_PORT" \
   wechaty/wechaty
 ```
+
 代码中的WECHATY_PUPPET_PADLOCAL_TOKEN是需要向官方申请，可以得到的一个可以试用7天的token，后续通过社区的激励计划，还可以免费获得时效更长的token。[详情参见这里](https://wechaty.js.org/docs/contributor-program/)。
 
 - **验证Wechaty Puppet Hostie**
