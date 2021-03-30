@@ -26,10 +26,13 @@ tags:
 python
 aiohttp
 asyncio
+wechaty
 
 ##Wechaty Puppet Hostie部署：
 因为原生的wechaty是基于JavaScript和TypeScript写的，所以需要通过docker搭建Wechaty Puppet Hostie 服务作为中转， 从而可以通过python调用。
+
 - **部署前置准备:**
+  
 一个满足以下三点要求的服务器：
 
 >Public IP
@@ -63,6 +66,7 @@ export WECHATY_TOKEN=$(curl -s https://www.uuidgenerator.net/api/version4)
 访问 https://api.chatie.io/v0/hosties/WECHATY_TOKEN ，其中WECHATY_TOKEN是指你刚刚自行设定的Token，当返回结果为服务器的Public IP时则说明部署成功，为0.0.0.0时则说明部署失败~
 
 ## 项目思路
+
 搭建完中转服务，现在我们需要集中注意力在需求和机器人的搭建上面。市场行情数据来源于国内三大交易所之一[币安](https://binance.com/)。为了获得更加及时的数据，我决定采用websocket来搭建我们的服务。关于机器人方面，我读了官方examples里面的代码发现机器人都是继承Wechaty基类来通过自定义回调函数来实现各种功能。利用事件驱动的回调函数这样是很被动的，而我想得到一个可直接调用的Wechaty对象，不通过start()函数进入事件循环监听, 而可以主动的发送信息。经过一天的阅读代码和自我摸索，终于实现了创建一个可以直接调用的机器人对象，稍后请参考详细代码，其中最重要的还是需要进入事件监听，然后在监听到成功登录的事件以后，中断监听，返回已经登录好的机器人对象， 从而实现直接调用。
 
 首先我们建立Websocket基类, 并且建立HeartBeat类来定期执行某些任务，比如检查websocket连通性并断线重连等等。
@@ -468,7 +472,9 @@ if __name__ == '__main__':
 至此我们的加密货币波动提醒机器人基本框架已经搭好，如果感兴趣的话，大家可以通过搭配k线事件，trade事件和orderbook事件形成新的信号提醒，也可以做各种量化交易提醒。
 
 ## 运行效果
-![](../assets/2021/03-wechaty-cryptocurrency-notification/result.jpg)
+
+![效果](../assets/2021/03-wechaty-cryptocurrency-notification/result.jpg)
+
 ## 感谢
 
 在最后我们要感谢所有为我们提供工具和服务的团队和个人。特别感谢开源项目[Wechaty](https://github.com/wechaty/wechaty)团队和免费提供服务的padLocal团队。
