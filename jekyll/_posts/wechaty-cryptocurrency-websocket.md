@@ -3,10 +3,12 @@ title: "使用wechaty提醒加密货币行情"
 author: r-hou
 categories: project
 tags:
+  - python
   - cryptocurrency
   - binance
-	- python
+image: assets/2021/03-wechaty-cryptocurrency-notification/wechaty-btc.jpg
 ---
+
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://wechaty.js.org)
 
 > 作者: [r-hou](https://github.com/r-hou)，学生，加密货币爱好者。
