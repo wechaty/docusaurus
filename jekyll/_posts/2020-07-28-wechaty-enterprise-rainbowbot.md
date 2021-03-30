@@ -7,6 +7,7 @@ tags:
   - project
   - koa
   - weixin-openai
+  - productivity
 image: /assets/2020/wechaty-rainbowbot/rainbow.jpg
 ---
 

@@ -7,6 +7,7 @@ tags:
   - python
   - summer-2020
   - summer-of-wechaty
+  - productivity
 ---
 
 ## 暑期2020

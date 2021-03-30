@@ -5,6 +5,8 @@ categories: project
 tags:
   - project
   - macpro
+  - social
+  - productivity
 ---
 
 > 作者: [hzzzzzz](https://github.com/hzzzzzz) Node.js developer

@@ -2,11 +2,17 @@
 # Author: Huan LI <zixia@zixia.net> https://github.com/huan
 
 .PHONY: all
-all: install
+all: build
 
 .PHONY: install
-install:
+install: jekyll-install npm-install
+
+.PHONY: jekyll-install
+jekyll-install:
 	cd jekyll && sudo make install
+
+.PHONY: npm-install
+install:
 	npm install
 
 .PHONY: test
@@ -20,8 +26,14 @@ clean:
 	rm -fr new-gh-pages/
 
 .PHONY: build
-build:
+build: jekyll-build docusaurus-build
+
+.PHONY: jekyll-build
+jekyll-build:
 	cd jekyll && make build
+
+.PHONY: docusaurus-build
+docusaurus-build:
 	cd docusaurus && npm run build
 
 .PHONY: fit-image

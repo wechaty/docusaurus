@@ -4,7 +4,7 @@ author: ray
 categories: project
 tags:
   - padplus
-  - project
+  - productivity
 image: /assets/2020/wechat-calc/header.jpg
 ---
 

@@ -5,7 +5,7 @@ categories: project
 tags:
   - nodejs
   - padplus
-  - project
+  - productivity
 image: /assets/2020/file-assistant-bot/file-assistant-bot-img.png
 ---
 

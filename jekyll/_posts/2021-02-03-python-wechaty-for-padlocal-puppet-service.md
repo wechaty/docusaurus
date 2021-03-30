@@ -6,7 +6,7 @@ tags:
   - puppet-service
   - padlocal
   - sticky
-categories: project
+categories: tutorial
 image: /assets/2021/02-python-wechaty-for-padlocal-puppet-service/python-wechaty-logo.png
 ---
 

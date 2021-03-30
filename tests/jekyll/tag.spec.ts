@@ -15,6 +15,7 @@ import {
 import {
   stripRepoRoot,
 }                             from '../../src/repo-root'
+import { getFrontmatterCategoryList } from '../../src/jekyll/get-frontmatter-category-list'
 
 const glob = util.promisify(globCB)
 
@@ -52,7 +53,7 @@ test('front matter key `tags` must contact at least one tag', async t => {
     }
   }
 
-  t.pass(`total ${tagMap.size} files checked`)
+  t.pass(`total ${Object.keys(tagMap).length} files checked`)
 })
 
 test('front matter key `tags` must not black listed', async t => {
@@ -93,7 +94,7 @@ test('front matter key `tags` must not black listed', async t => {
     }
   }
 
-  t.pass(`total ${tagMap.size} files checked`)
+  t.pass(`total ${Object.keys(tagMap).length} files checked`)
 })
 
 test('tags naming convension', async t => {
@@ -153,5 +154,65 @@ test('tags naming convension', async t => {
     }
   }
 
-  t.pass(`total ${fileTagsMap.size} files checked`)
+  t.pass(`total ${Object.keys(fileTagsMap).length} files checked`)
+})
+
+/**
+ * #710 - Enforce blog posts with category 'project' to contain one of the tags
+ *  https://github.com/wechaty/wechaty.js.org/issues/710
+ */
+test('tags for project category', async t => {
+  /**
+   * Categories for Chatbots
+   *  https://research.aimultiple.com/chatbot-applications/
+   */
+  const TAGS = {
+    automotive    : 'Cars',
+    devops        : 'DevOps & CI/CD',
+    ecommerce     : 'E-Commerce',
+    ecosystem     : 'Ecosystem for Wechaty community',
+    education     : 'learning, talk to the professor, application management, and manage course schedules',
+    entertainment : 'Movie updates, booking tickets, etc.',
+    finance       : 'banking and Insurance: Account updates, OTPs, account transactions, Suspicious account, Insurance premium updates, and payment, recommend right insurance products, compare insurance premiums, password setting, and new loans, credit card updates, etc.',
+    game          : 'Interactive games',
+    healthcare    : '',
+    hospitality   : '',
+    insurance     : '',
+    media         : 'Send digital newspapers, etc.',
+    other         : '',
+    productivity  : '',
+    'real-estate' : 'Real Estates',
+    social        : '',
+    travel        : 'Browse hotels and tickets, booking, send boarding pass, etc',
+    utility       : '',
+  }
+
+  const postsFileList   = await glob(`${JEKYLL_FOLDER.posts}/**/*`)
+  const tagMap = await getFileToTagsMap()
+
+  for (const file of postsFileList) {
+    const categoryList  = getFrontmatterCategoryList(file)
+    const tagList = tagMap[file]
+
+    if (tagList?.length <= 0) {
+      continue
+    }
+
+    if (!categoryList.includes('project')) {
+      continue
+    }
+
+    const tagOk = tagList.some(tag => tag in TAGS)
+    if (!tagOk) {
+      t.fail([
+        `"${stripRepoRoot(file)}" has category "project":`,
+        `   it's tags should contain one of "${Object.keys(TAGS).join(',')}"`,
+        '',
+        '   Learn more from Issue #710: Enforce blog posts with category "project" to contain one of the tags',
+        '     Url: https://github.com/wechaty/wechaty.js.org/issues/710',
+      ].join('\n'))
+    }
+  }
+
+  t.pass(`total ${Object.keys(tagMap).length} files checked`)
 })

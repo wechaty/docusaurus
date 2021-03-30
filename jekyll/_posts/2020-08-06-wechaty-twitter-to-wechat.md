@@ -6,6 +6,7 @@ tags:
   - padplus
   - project
   - twitter
+  - utility
 image: /assets/2020/wechaty-twitter2wechat/wechaty-twitter2wechat-header.jpg
 ---
 

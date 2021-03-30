@@ -4,8 +4,7 @@ author: kylin93cn
 categories: project
 tags:
   - padplus
-  - project
-  - chatbot
+  - social
 image: /assets/2020/manage-ur-customers/2020-0517-wechat.jpeg
 ---
 

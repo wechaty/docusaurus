@@ -4,7 +4,7 @@ author: zzhoouxin
 categories: project
 tags:
   - padplus
-  - project
+  - productivity
 image: /assets/2020/wechaty-daily/daily.png
 ---
 

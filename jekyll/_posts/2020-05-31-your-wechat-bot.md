@@ -4,7 +4,7 @@ author: peanut
 categories: project
 tags:
   - padplus
-  - project
+  - social
 image: /assets/2020/your-wechat-bot/banner.png
 ---
 

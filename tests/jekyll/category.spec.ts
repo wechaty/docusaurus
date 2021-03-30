@@ -3,10 +3,7 @@
 import test  from 'tstest'
 
 import util   from 'util'
-import fs     from 'fs'
 import globCB from 'glob'
-
-import { loadFront } from 'yaml-front-matter'
 
 import {
   JEKYLL_FOLDER,
@@ -15,6 +12,7 @@ import {
 import {
   stripRepoRoot,
 }                             from '../../src/repo-root'
+import { getFrontmatterCategoryList } from '../../src/jekyll/get-frontmatter-category-list'
 
 const glob = util.promisify(globCB)
 
@@ -39,15 +37,7 @@ test('front matter key `categories` must contains at lease one preset category',
   const postsFileList   = await glob(`${JEKYLL_FOLDER.posts}/**/*`)
 
   for (const file of postsFileList) {
-    const content       = fs.readFileSync(file)
-    const front         = loadFront(content)
-
-    let categoryList  = front.categories
-    if (!Array.isArray(categoryList)) {
-      categoryList = categoryList
-        ? [categoryList]
-        : []
-    }
+    const categoryList  = getFrontmatterCategoryList(file)
 
     if (!categoryList.length) {
       t.fail(`"${stripRepoRoot(file)}" categories(${categoryList.length}) should have at lease one category`)
@@ -55,7 +45,7 @@ test('front matter key `categories` must contains at lease one preset category',
 
     const allPreset = categoryList.every(isPreset)
     if (!allPreset) {
-      t.fail(`"${stripRepoRoot(file)}" should only use categories(${categoryList.join(',')}) is in preset(${allPreset ? '...' : PRESET_CATEGORIES_LIST.join(',')})`)
+      t.fail(`"${stripRepoRoot(file)}" non of categories(${categoryList.join(',')}) is in preset(${allPreset ? '...' : PRESET_CATEGORIES_LIST.join(',')})`)
     }
   }
 

@@ -14,9 +14,11 @@ sidebar_label: 'Case study: Index'
 
 ## Blogs
 
-1. [我如何用Chatbot在奇绩创坛重构销售体系, @yinbohao, Aug 08, 2020](https://wechaty.js.org/2020/08/08/qijibot-sales-automation/)
+1. [我如何用Chatbot在奇绩创坛重构销售体系, @rickyyin98, Aug 08, 2020](https://wechaty.js.org/2020/08/08/qijibot-sales-automation/)
 1. [Chatbot 在定制旅游行业的应用, @likai, Apr 10, 2020](https://wechaty.js.org/2020/04/10/chatbot-on-uniqueway/)
 1. [Microsoft Tech Summit - 快速搭建一个聊天机器人, @lijiarui, Oct 21, 2018](https://wechaty.js.org/2018/10/21/microsoft-tech-summit-chatbot-quick-started/)
 1. [用wechaty实现新闻资讯播报机器人, @judaschrist, Aug 13, 2018](https://wechaty.js.org/2018/08/13/wechaty-xiaoli-bot/)
 1. [聚会娱乐机器人, osindex, Jun 06, 2020](https://wechaty.js.org/2020/06/06/wechaty-game-bot/)
 1. [Wechaty - 让线上没有难做的生意, @coderwhocode, Jul 12, 2019](https://wechaty.js.org/2019/07/12/wechaty-business-easy-pay/)
+
+Read more from our `case-study` tag at <https://wechaty.js.org/tags.html#case-study>

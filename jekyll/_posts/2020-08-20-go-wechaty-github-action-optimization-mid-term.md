@@ -6,6 +6,7 @@ tags:
   - summer-of-wechaty
   - summer-2020
   - go
+  - devops
 image: /assets/2020/go-wechaty-github-action-optimization/header.jpg
 ---
 

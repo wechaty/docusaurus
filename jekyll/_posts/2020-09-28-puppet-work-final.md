@@ -8,6 +8,7 @@ tags:
   - summer-of-wechaty
   - puppet-provider
   - wecom
+  - ecosystem
 ---
 
 <!-- markdownlint-disable -->

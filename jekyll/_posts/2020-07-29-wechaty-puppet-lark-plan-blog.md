@@ -8,6 +8,7 @@ tags:
   - puppet-provider
   - lark
   - summer-of-wechaty
+  - ecosystem
 ---
 > Author: [@roxanne718](https://github.com/Roxanne718)
 > Code: [wechaty-puppet-lark](https://github.com/Roxanne718/wechaty-puppet-lark)

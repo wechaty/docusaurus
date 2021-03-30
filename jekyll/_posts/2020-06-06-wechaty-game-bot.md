@@ -5,7 +5,7 @@ categories: project
 tags:
   - nodejs
   - padplus
-  - project
+  - game
   - redis
   - sqlite
   - knex

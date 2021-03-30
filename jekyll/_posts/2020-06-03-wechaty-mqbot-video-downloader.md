@@ -6,7 +6,7 @@ tags:
   - nodejs
   - vue
   - padplus
-  - project
+  - productivity
   - nuxt
 image: /assets/2020/mqbot/qrcode.png 
 ---

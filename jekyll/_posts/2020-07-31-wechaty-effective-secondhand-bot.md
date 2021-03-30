@@ -6,6 +6,7 @@ tags:
   - padplus
   - project
   - electron
+  - ecommerce
 image: /assets/2020/wechaty-electron/header.png
 ---
 > Author: [krapnik](https://github.com/krapnikkk)

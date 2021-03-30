@@ -6,6 +6,7 @@ tags:
   - code
   - web-panel
   - feature
+  - ecosystem
 image: /assets/2020/web-panel/web-head.png
 ---
 

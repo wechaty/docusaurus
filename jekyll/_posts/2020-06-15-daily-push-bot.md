@@ -5,7 +5,7 @@ categories: project
 tags:
   - python
   - padplus
-  - project
+  - media
 image: /assets/2020/daily-push-wechat-robot/fake-robot.jpg
 
 ---

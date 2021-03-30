@@ -5,7 +5,7 @@ categories: project
 tags:
   - nodejs
   - padplus
-  - project
+  - travel
   - mysql
 image: /assets/2020/info-subtotal/head.jpeg 
 ---

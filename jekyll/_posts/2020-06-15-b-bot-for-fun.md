@@ -4,7 +4,7 @@ author: generalbao
 categories: project
 tags:
   - padplus
-  - project
+  - social
 image: /assets/2020/paipiange-bot/1.png
 ---
 

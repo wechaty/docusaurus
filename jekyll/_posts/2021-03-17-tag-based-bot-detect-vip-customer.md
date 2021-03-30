@@ -4,7 +4,7 @@ author: wenzai007
 categories: project
 tags:
   - mysql
-  - tag
+  - social
 image: /assets/2021/03-tag-based-bot-detect-vip-customer/archetecture.png
 ---
 

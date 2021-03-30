@@ -4,7 +4,7 @@ author: techial1042
 categories: project
 tags:
   - padplus
-  - project
+  - productivity
 image: /assets/2020/wechat-bot/header.jpg
 ---
 

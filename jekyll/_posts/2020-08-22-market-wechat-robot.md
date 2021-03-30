@@ -7,6 +7,7 @@ tags:
   - market
   - oracle
   - python
+  - finance
 ---
 
 > Author: [@exctech](https://github.com/exctech)

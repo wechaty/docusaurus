@@ -6,6 +6,7 @@ tags:
   - padplus
   - project
   - sqlite3
+  - education
 image: /assets/2020/wechaty-english-learning-assistant/header.jpg
 ---
 > Author: [alienfist](https://github.com/alienfist)

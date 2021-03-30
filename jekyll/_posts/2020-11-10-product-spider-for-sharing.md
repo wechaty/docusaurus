@@ -7,6 +7,7 @@ tags:
   - project
   - python
   - typescript
+  - ecommerce
 ---
 
 基于Wechaty打造实时爬取产品信息并分享给用户群

@@ -4,7 +4,7 @@ author: leijiahang
 categories: project
 tags:
   - padplus
-  - project
+  - entertainment
 image: /assets/2020/wechat-daycard/header.png
 ---
 
