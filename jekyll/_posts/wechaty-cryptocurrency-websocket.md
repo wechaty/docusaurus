@@ -70,6 +70,7 @@ export WECHATY_TOKEN=$(curl -s https://www.uuidgenerator.net/api/version4)
 搭建完中转服务，现在我们需要集中注意力在需求和机器人的搭建上面。市场行情数据来源于国内三大交易所之一[币安](https://binance.com/)。为了获得更加及时的数据，我决定采用websocket来搭建我们的服务。关于机器人方面，我读了官方examples里面的代码发现机器人都是继承Wechaty基类来通过自定义回调函数来实现各种功能。利用事件驱动的回调函数这样是很被动的，而我想得到一个可直接调用的Wechaty对象，不通过start()函数进入事件循环监听, 而可以主动的发送信息。经过一天的阅读代码和自我摸索，终于实现了创建一个可以直接调用的机器人对象，稍后请参考详细代码，其中最重要的还是需要进入事件监听，然后在监听到成功登录的事件以后，中断监听，返回已经登录好的机器人对象， 从而实现直接调用。
 
 首先我们建立Websocket基类, 并且建立HeartBeat类来定期执行某些任务，比如检查websocket连通性并断线重连等等。
+
 ```python
 #websocketAPI.py
 
@@ -260,6 +261,7 @@ class HeartBeat(object):
 heartbeat = HeartBeat()
 
 ```
+
 接着通过币安提供的websocket API来拉取行情。 因此我们新建一个Binance的子类来继承Websocket类，并且在Binance中实现机器人。
 
 ```python
