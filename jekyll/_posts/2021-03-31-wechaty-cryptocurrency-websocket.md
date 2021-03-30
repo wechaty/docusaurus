@@ -1,11 +1,12 @@
 ---
 title: "使用wechaty提醒加密货币行情"
 author: r-hou
-categories: project
+categories: tutorial
 tags:
   - cryptocurrency
   - binance
 	- python
+
 ---
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://wechaty.js.org)
 
