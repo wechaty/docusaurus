@@ -38,9 +38,9 @@ github: [https://github.com/gengchen528/wechatBot](https://github.com/gengchen52
 
 在三步走教学之前，先放上效果看一下
 
-![image](/assets/2019/everyday-1.png)
+![image](../assets/2019/everyday-1.png)
 
-![image](/assets/2019/everyday-2.png)
+![image](../assets/2019/everyday-2.png)
 
 可以看到在指定的时间就会收到发送的消息，包括天气信息，天气提醒，还有你们在一起多少天了。当开启机器人后，女朋友就可以和小助手对话了，不过目前开源机器人的api都不是非常的智能，匹配的语义可能不是那么准确。所以有时候女朋友生气了，千万记得不要开启机器人，不然回答的不对是会被女朋友暴打的😨！
 
