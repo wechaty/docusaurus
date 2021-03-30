@@ -6,10 +6,10 @@ tags:
   - cryptocurrency, binance
 ---
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://wechaty.js.org)
-> 作者: [r-hou](https://github.com/r-hou)，学生，加密货币爱好者。
-> 
-[![Wechaty-Cryptocurrency-Notification](../assets/2021/03-wechaty-cryptocurrency-notification/wechaty-btc.jpg)](https://github.com/r-hou/wechaty-cryptocurrency-websocket)
 
+> 作者: [r-hou](<https://github.com/r-hou>)，学生，加密货币爱好者。
+
+[![Wechaty-Cryptocurrency-Notification](../assets/2021/03-wechaty-cryptocurrency-notification/wechaty-btc.jpg)](https://github.com/r-hou/wechaty-cryptocurrency-websocket)
 
 <!-- more -->
 从2020年3月份以来，加密货币市场随着疫情导致的全球大放水而飞速扩张，BTC的价格从低点\$3800涨到了最高\$60000， 十几倍的涨幅吸引了全球越来越多的个人和机构投资者参与到这个市场。 这个7x24小时的市场瞬息万变，上下几个点甚至几十个点的波动常常在十几分钟甚至几分钟之内就能完成，这么大的波动在给投资者带来丰厚回报的同时也伴随着巨大的风险。作为一名个人投资者，非常希望能够及时得到虚拟货币价格的变动情况而进行交易。
@@ -19,7 +19,6 @@ tags:
 通过搜索，了解到目前市场的消息机器人有itchat， wxpy，wechaty等等。可是随着腾讯施加压力，基于web微信的itchat和wxpy无法使用。而wechaty支持多种协议，比web协议更加安全，于是决定采用wechaty基于ipad协议 ( padLocal ) 来搭建机器人。
 
 让我们进入正题！
-
 
 ## 环境和依赖
 
@@ -38,6 +37,7 @@ wechaty
 >Public IP
 >Public Port
 >Docker
+
 - **部署Wechaty Puppet Hostie**
 
 具体代码如下（本人服务器为 Ununtu 18.04）
@@ -65,6 +65,7 @@ export WECHATY_TOKEN=$(curl -s https://www.uuidgenerator.net/api/version4)
 代码中的WECHATY_PUPPET_PADLOCAL_TOKEN是需要向官方申请，可以得到的一个可以试用7天的token，后续通过社区的激励计划，还可以免费获得时效更长的token。[详情参见这里](https://wechaty.js.org/docs/contributor-program/)。
 
 - **验证Wechaty Puppet Hostie**
+
 访问 <https://api.chatie.io/v0/hosties/WECHATY_TOKEN> ，其中WECHATY_TOKEN是指你刚刚自行设定的Token，当返回结果为服务器的Public IP时则说明部署成功，为0.0.0.0时则说明部署失败~
 
 ## 项目思路
