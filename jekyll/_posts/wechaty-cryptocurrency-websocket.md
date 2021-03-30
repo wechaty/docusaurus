@@ -63,7 +63,7 @@ export WECHATY_TOKEN=$(curl -s https://www.uuidgenerator.net/api/version4)
 代码中的WECHATY_PUPPET_PADLOCAL_TOKEN是需要向官方申请，可以得到的一个可以试用7天的token，后续通过社区的激励计划，还可以免费获得时效更长的token。[详情参见这里](https://wechaty.js.org/docs/contributor-program/)。
 
 - **验证Wechaty Puppet Hostie**
-访问 https://api.chatie.io/v0/hosties/WECHATY_TOKEN ，其中WECHATY_TOKEN是指你刚刚自行设定的Token，当返回结果为服务器的Public IP时则说明部署成功，为0.0.0.0时则说明部署失败~
+访问 <https://api.chatie.io/v0/hosties/WECHATY_TOKEN> ，其中WECHATY_TOKEN是指你刚刚自行设定的Token，当返回结果为服务器的Public IP时则说明部署成功，为0.0.0.0时则说明部署失败~
 
 ## 项目思路
 
