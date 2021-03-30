@@ -42,7 +42,7 @@ wechaty
 
 具体代码如下（本人服务器为 Ununtu 18.04）
 
-```
+```bash
 #! /usr/bin/bash
 
 export WECHATY_LOG="verbose"
