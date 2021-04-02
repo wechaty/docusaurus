@@ -7,17 +7,19 @@ The term `Puppet` in Wechaty is an Abstract Class for implementing protocol plug
 
 The plugins are named `PuppetXXX`, like [PuppetPuppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer) is using the [google puppeteer](https://github.com/GoogleChrome/puppeteer) to control the [WeChat Web API](https://wx.qq.com) via a chrome browser, [PuppetPadLocal](https://github.com/padlocal/wechaty-puppet-padlocal) is using the Pad Protocol to connect with WeChat Server.
 
-- Puppet Directory: <https://github.com/wechaty/wechaty-puppet/wiki/Directory>
+- Puppet Providers Directory: <https://wechaty.js.org/docs/puppet-providers/>
 - Puppet Compatibility Table: <https://github.com/wechaty/wechaty-puppet/wiki/Compatibility>
-- Puppet Development Guide: <https://github.com/wechaty/wechaty-puppet/wiki/Development>
+- Puppet Development Guide: <https://wechaty.js.org/docs/puppet-providers/diy>
 - Puppet Related Links: <https://github.com/wechaty/wechaty-puppet/wiki/Links>
 - Puppet Documentation: <https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html>
 
-## WHAT IS WECHATY PUPPET
+## What is Wechaty Puppet
 
 The term `Puppet` in Wechaty is a name that we had picked up to describe part of our system: Puppet is an Abstract Class for implementing plugins, the plugins are the component that helps Wechaty to control the Wechat, that's the reason we call it `puppet`.
 
 Plugins are named PuppetXXX, like PuppetPuppeteer is using the chrome puppeteer to control the WeChat Web API via a chrome browser, PuppetService is using the gRPC protocol to connect with a Protocol Server for controlling an iPad/Windows/whatever program.
+
+## Show me the code
 
 For a deeper understanding of the Puppet in Wechaty, you can read its documentation from <https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html> and source code if you like at <https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts>
 
@@ -231,3 +233,7 @@ Puppet has a API named `ding(data: string): void`, and the Puppet must:
 1. the payload of the `dong` event might contains a `data` key with the value exactly match the `data` when calling the `ding()` method.
 
 This is for active(passive) health checking, and this is also a workaround for some edge case communication between the top puppet with the bottom puppet.
+
+## Learn More
+
+- Puppet Related Links: [https://github.com/wechaty/wechaty-puppet/wiki/Links](https://github.com/wechaty/wechaty-puppet/wiki/Links)

@@ -2,8 +2,8 @@
 title: 'Managing Rooms'
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
 
 ## Creating New Room
 
@@ -66,16 +66,16 @@ class MyBot(Wechaty):
 ```
 
 </TabItem>
-<TabItem value="java">
+<TabItem value="go">
 
-```java
+```go
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="go">
+<TabItem value="java">
 
-```go
+```java
 // TODO: Pull Request is welcome!
 ```
 
@@ -87,16 +87,16 @@ class MyBot(Wechaty):
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -175,16 +175,16 @@ class MyBot(Wechaty):
 ```
 
 </TabItem>
-<TabItem value="java">
+<TabItem value="go">
 
-```java
+```go
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="go">
+<TabItem value="java">
 
-```go
+```java
 // TODO: Pull Request is welcome!
 ```
 
@@ -196,16 +196,16 @@ class MyBot(Wechaty):
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -277,16 +277,16 @@ class MyBot(Wechaty):
 ```
 
 </TabItem>
-<TabItem value="java">
+<TabItem value="go">
 
-```java
+```go
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="go">
+<TabItem value="java">
 
-```go
+```java
 // TODO: Pull Request is welcome!
 ```
 
@@ -298,16 +298,16 @@ class MyBot(Wechaty):
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -387,16 +387,16 @@ class MyBot(Wechaty):
 ```
 
 </TabItem>
-<TabItem value="java">
+<TabItem value="go">
 
-```java
+```go
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="go">
+<TabItem value="java">
 
-```go
+```java
 // TODO: Pull Request is welcome!
 ```
 
@@ -408,6 +408,13 @@ class MyBot(Wechaty):
 ```
 
 </TabItem>
+<TabItem value="scala">
+
+```scala
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
 <TabItem value="csharp">
 
 ```csharp
@@ -415,9 +422,85 @@ class MyBot(Wechaty):
 ```
 
 </TabItem>
+<TabItem value="rust">
+
+```rust
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+</Tabs>
+
+## Mention(@) others in the room
+
+<Tabs
+  groupId="programming-languages"
+  defaultValue="ts"
+  values={[
+    { label: 'TypeScript',  value: 'ts', },
+    { label: 'JavaScript',  value: 'js', },
+    { label: 'Python',      value: 'py', },
+    { label: 'Go',          value: 'go', },
+    { label: 'Java',        value: 'java', },
+    { label: 'PHP',         value: 'php', },
+    { label: 'Scala',       value: 'scala', },
+    { label: 'C#',          value: 'csharp', },
+    { label: 'Rust',        value: 'rust', },
+  ]
+}>
+
+<TabItem value="ts">
+
+```ts
+await room.say`Hello, ${contact}`
+```
+
+</TabItem>
+<TabItem value="js">
+
+```js
+await room.say`Hello, ${contact}`
+```
+
+</TabItem>
+<TabItem value="py">
+
+```py
+# TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="go">
+
+```go
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="java">
+
+```java
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="php">
+
+```php
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
 <TabItem value="scala">
 
 ```scala
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="csharp">
+
+```csharp
 // TODO: Pull Request is welcome!
 ```
 

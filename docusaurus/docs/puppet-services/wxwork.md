@@ -3,6 +3,8 @@ title: 'Puppet Service: WXWork'
 sidebar_label: WXWork
 ---
 
+[![Wechaty Puppet Service WXWork](https://img.shields.io/badge/Service-WXWork-blue)](wxwork.md)
+
 - Repo: <https://github.com/juzibot/wxwork-tester>
 - Provider: [@juzibot](https://github.com/juzibot)
 - Support & Feedback: <https://github.com/juzibot/wxwork-tester/issues>
@@ -27,3 +29,7 @@ Register via WeCom at [jukebox](https://qiwei.juzibot.com/user/login?isWechaty=t
 ## Contact
 
 - Wechat: juzibot
+
+## Blogs
+
+Read blogs with the `wxwork` tag at <https://wechaty.js.org/tags.html#wxwork>

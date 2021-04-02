@@ -2,8 +2,8 @@
 title: 'Making Friends'
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
 
 ## Sending Request
 
@@ -26,34 +26,38 @@ import TabItem from '@theme/TabItem';
 <TabItem value="ts">
 
 ```ts
-import { Friendship } from 'wechaty'
+async function onReady () {
+  const weixin  = 'FridayBOT' // weixin id
+  const contact = await bot.Friendship.search({ weixin })
 
-const weixin  = 'FridayBOT' // weixin id
-const contact = await Friendship.search({ weixin })
-
-if (contact) {
-  console.info('Sending friend request...')
-  await Friendship.add(contact)
-} else {
-  console.info('Friendship.search: not found')
+  if (contact) {
+    console.info('Sending friend request...')
+    await bot.Friendship.add(contact)
+  } else {
+    console.info('Friendship.search: not found')
+  }
 }
+
+bot.on('ready', onReady)
 ```
 
 </TabItem>
 <TabItem value="js">
 
 ```js
-const { Friendship } = require('wechaty')
+async function onReady () {
+  const weixin  = 'FridayBOT' // weixin id
+  const contact = await bot.Friendship.search({ weixin })
 
-const weixin  = 'FridayBOT' // weixin id
-const contact = await Friendship.search({ weixin })
-
-if (contact) {
-  console.info('Sending friend request...')
-  await Friendship.add(contact)
-} else {
-  console.info('Friendship.search: not found')
+  if (contact) {
+    console.info('Sending friend request...')
+    await bot.Friendship.add(contact)
+  } else {
+    console.info('Friendship.search: not found')
+  }
 }
+
+bot.on('ready', onReady)
 ```
 
 </TabItem>
@@ -71,16 +75,16 @@ class MyBot(Wechaty):
 ```
 
 </TabItem>
-<TabItem value="java">
+<TabItem value="go">
 
-```java
+```go
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="go">
+<TabItem value="java">
 
-```go
+```java
 // TODO: Pull Request is welcome!
 ```
 
@@ -92,16 +96,16 @@ class MyBot(Wechaty):
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -183,16 +187,16 @@ class MyBot(Wechaty):
 ```
 
 </TabItem>
-<TabItem value="java">
+<TabItem value="go">
 
-```java
+```go
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="go">
+<TabItem value="java">
 
-```go
+```java
 // TODO: Pull Request is welcome!
 ```
 
@@ -204,16 +208,16 @@ class MyBot(Wechaty):
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 

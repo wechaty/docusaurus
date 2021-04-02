@@ -2,8 +2,8 @@
 title: 'Processing Files'
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
 
 ## Sending File
 
@@ -53,16 +53,16 @@ await bot.say(fileBox)
 ```
 
 </TabItem>
-<TabItem value="java">
+<TabItem value="go">
 
-```java
+```go
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="go">
+<TabItem value="java">
 
-```go
+```java
 // TODO: Pull Request is welcome!
 ```
 
@@ -74,16 +74,16 @@ await bot.say(fileBox)
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
@@ -176,16 +176,16 @@ class MyBot(Wechaty):
 ```
 
 </TabItem>
-<TabItem value="java">
+<TabItem value="go">
 
-```java
+```go
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="go">
+<TabItem value="java">
 
-```go
+```java
 // TODO: Pull Request is welcome!
 ```
 
@@ -197,16 +197,16 @@ class MyBot(Wechaty):
 ```
 
 </TabItem>
-<TabItem value="csharp">
+<TabItem value="scala">
 
-```csharp
+```scala
 // TODO: Pull Request is welcome!
 ```
 
 </TabItem>
-<TabItem value="scala">
+<TabItem value="csharp">
 
-```scala
+```csharp
 // TODO: Pull Request is welcome!
 ```
 
