@@ -1,7 +1,7 @@
 ---
 title: "微信群中的加密货币报价机器人"
 author: heygum
-categories: project
+categories: tutorial
 tags:
   - cryptocurrency
   - padplus
@@ -10,46 +10,43 @@ image: /assets/2021/04-wechat-group-cryptocurrency-robot/header.jpg
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://wechaty.js.org)
 
-> 作者: [heygum](https://github.com/heygum) 
+> 作者: [heygum](https://github.com/heygum)
 
 ## 背景
-当今正时大牛市 (或者牛快结束了), 在很多时候并没有办法打开App软件看币价, 比如在上课的时候, 在上班摸鱼的时候, 在地铁上的时候, 所以在微信群中,查询自己所需要的币的价格是很有必要的. 
 
-##部署环境
+当今正时大牛市 (或者牛快结束了), 在很多时候并没有办法打开App软件看币价, 比如在上课的时候, 在上班摸鱼的时候, 在地铁上的时候, 所以在微信群中,查询自己所需要的币的价格是很有必要的.
 
-```
+## 部署环境
+
 Node.js12+ (目前不要上15的车)
-```
-```
+
 TypeScript
-```
-```
+
 qrcode-terminal
 wechaty
 wechaty-puppet-padlocal
-```
 
 在此项目中, 目前使用的是免费无限制的非小号API, 大致能用, 没上二线交易所以上的币一般没有.
 
 本人运行环境 Debian 10.
 
-##实现
+## 实现
 
 刚开始使用尝试的是python实现,后来遇到了连接不上的问题(搭了gateway也连不上), 后面使用Typescript实现时再次遇到了连接不上的问题.
 
 后面发现是服务器的问题, 建议用服务器:
 
-```
+```sh
 ping gateway.pad-local.com
 ```
 
 尝试能不能ping通.
 
-在此项目中,大致框架借鉴的是[ wechaty-puppet-padlocal-demo](https://github.com/padlocal/wechaty-puppet-padlocal-demo) ,在此基础上进行修改,在部署时可以先按着Demo进行操作.
+在此项目中,大致框架借鉴的是 [wechaty-puppet-padlocal-demo](https://github.com/padlocal/wechaty-puppet-padlocal-demo), 在此基础上进行修改,在部署时可以先按着Demo进行操作.
 
 Demo使用没问题时, 便可以进行二次修改.
 
-```
+```js
 // coinBot.ts
 import { PuppetPadlocal } from "wechaty-puppet-padlocal";
 import { Contact, log, Message, ScanStatus, Wechaty } from "wechaty";
@@ -139,12 +136,11 @@ bot.start().then(() => {
 }
 
 ```
-##运行效果
 
+## 运行效果
 
 ![效果图](/assets/2021/04-wechat-group-cryptocurrency-robot/result.png)
 
+## 致谢
 
-##致谢
 谢谢Wechaty团队‘好大’的指导.
-
