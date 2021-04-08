@@ -272,9 +272,9 @@ const explainations = {
 const docs = {
   [introduction.label]  : [...introduction.items],
   [tutorials.label]     : [...tutorials.items],
-  [explainations.label] : [...explainations.items],
-  [references.label]    : [...references.items],
   [howtos.label]        : [...howtos.items],
+  [references.label]    : [...references.items],
+  [explainations.label] : [...explainations.items],
 }
 
 export { docs }
