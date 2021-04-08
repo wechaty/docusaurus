@@ -43,9 +43,9 @@ module.exports = {
           items: [
             { label: 'Introduction',  to: 'docs/wechaty' },
             { label: 'Tutorials',     to: 'docs/tutorials/' },
-            { label: 'Explainations', to: 'docs/explainations/' },
-            { label: 'References',    to: 'docs/references/' },
             { label: 'How-to Guides', to: 'docs/howto/' },
+            { label: 'References',    to: 'docs/references/' },
+            { label: 'Explainations', to: 'docs/explainations/' },
           ],
         },
         { label: 'GitHub',          href: 'https://github.com/wechaty/wechaty#readme',   position: 'right' },
