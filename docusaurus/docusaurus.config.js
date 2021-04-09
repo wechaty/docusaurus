@@ -31,7 +31,7 @@ module.exports = {
       textColor: '#091E42', // Defaults to `#000`.
     },
     navbar: {
-      title: '',
+      title: '',  // Huan(202104): need to be empty. title will be displayed after the logo.
       logo: { alt: 'Wechaty Logo', src: 'img/wechaty-logo.svg' },
       hideOnScroll: true,
       items: [
@@ -104,8 +104,8 @@ module.exports = {
       indexName        : 'wechaty',
       searchParameters : {},                                   // Optional (if provided by Algolia)
     },
-    googleAnalytics: {
-      trackingID: 'UA-88739146-3',
+    tagManager: {
+      trackingID: 'GTM-PD2PL84',
     },
     prism: {
       additionalLanguages: [
@@ -146,6 +146,7 @@ module.exports = {
     ],
   ],
   plugins: [
+    '@ionic-internal/docusaurus-plugin-tag-manager',
     require.resolve('./src/plugins/qrcode'),
   ],
 }
