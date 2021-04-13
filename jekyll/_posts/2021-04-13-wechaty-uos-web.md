@@ -23,12 +23,13 @@ image: /assets/2021/04-wechaty-uos-web/wechaty-puppet-wechat.png
 
 对现有代码无任何侵入性，只是更新一下依赖即可
 
-一、首先安装最新的`wechaty-puppet-wechat`依赖
+一、首先安装最新的`wechaty-puppet-wechat`依赖和配置环境
 
 ```shell
 npm install qrcode-terminal --save
 npm install wechaty 
 npm install wechaty-puppet-wechat@0.27.1 --save // 这个依赖是关键
+export WECHATY_PUPPET=wechaty-puppet-wechat
 ```
 
 二、请保证你的puppet配置的是`wechaty-puppet-wechat`
@@ -47,14 +48,13 @@ const name = 'wechat-puppet-wechat';
 let bot = '';
 bot = new Wechaty({
   name, // generate xxxx.memory-card.json and save login data for the next login
-  puppet: 'wechaty-puppet-wechat', // 注意必须配置这个
 });
 
 //  二维码生成
 function onScan(qrcode, status) {
   require('qrcode-terminal').generate(qrcode); // 在console端显示二维码
   const qrcodeImageUrl = [
-    'https://api.qrserver.com/v1/create-qr-code/?data=',
+    'https://wechaty.js.org/qrcode/',
     encodeURIComponent(qrcode),
   ].join('');
   console.log(qrcodeImageUrl);
