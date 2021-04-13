@@ -60,7 +60,6 @@ cd ../bin
 ![启动效果图](/assets/2021/04-wechat-group-chat-interactive-robot/start.png)
 ![指令效果图](/assets/2021/04-wechat-group-chat-interactive-robot/bind.png)
 
-
 ## 其他Tips
 
 需要配置环境变量，需要替换指令功能的API地址
