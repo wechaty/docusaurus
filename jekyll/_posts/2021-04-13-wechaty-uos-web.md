@@ -124,7 +124,5 @@ client-version' = '2.0.0',
 如果想快速体验Wechay的完整功能，以及可视化配置功能，可以关注我的 [《微信每日说》](https://github.com/gengchen528/wechatBot)  和  [《智能微秘书》](https://github.com/gengchen528/wechat-assistant-pro) 项目，以上项目均已更新最新版web协议，全部支持web登录
 
 > 历史文章
-> 
-> [wechaty-web-panel可视化插件](https://wechaty.js.org/2020/05/31/wechaty-web-panel-plugin/)
-> 
-> [三步教你用Node做一个微信脱单神器，小白可上手](https://wechaty.js.org/2019/06/21/three-step-get-girlfriend/)
+* [wechaty-web-panel可视化插件](https://wechaty.js.org/2020/05/31/wechaty-web-panel-plugin/)
+* [三步教你用Node做一个微信脱单神器，小白可上手](https://wechaty.js.org/2019/06/21/three-step-get-girlfriend/)
