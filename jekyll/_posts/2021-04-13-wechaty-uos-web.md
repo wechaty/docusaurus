@@ -1,7 +1,7 @@
 ---
 title: "重磅：绕过登录限制，wechaty免费版web协议重放荣光"
 author: gengchen528
-categories: puppet
+categories: article
 tags:
   - code
   - wechaty-puppet-wechat
