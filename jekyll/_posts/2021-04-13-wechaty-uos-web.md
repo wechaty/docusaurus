@@ -1,5 +1,5 @@
 ---
-title: "重磅：绕过登录限制，wechaty免费版web协议重放荣光"
+title: "重磅：使用UOS微信桌面版协议登录，wechaty免费版web协议重放荣光"
 author: gengchen528
 categories: article
 tags:
@@ -15,11 +15,11 @@ image: /assets/2021/04-wechaty-uos-web/wechaty-puppet-wechat.png
 
 ## 重磅通知
 
-很高兴能够写这篇文章通知大家Wechaty的web协议又能大放光彩了，如果之前你的微信提示不能登录web端，那么这个更新将会是你的福音。因为现在的`wechaty-puppet-wechat`已经支持绕过web登录限制了，赶快来尝试一下吧。
+很高兴能够写这篇文章通知大家Wechaty的web协议又能大放光彩了，如果之前你的微信提示不能登录web端，那么这个更新将会是你的福音。因为现在的`wechaty-puppet-wechat`已经支持使用UOS微信桌面版协议登录，赶快来尝试一下吧。
 
 ## 如何使用
 
-> 关键依赖：npm install wechaty-puppet-wechat@0.27.1 --save
+> 关键依赖：npm install wechaty-puppet-wechat@next --save
 
 对现有代码无任何侵入性，只是更新一下依赖即可
 
@@ -28,7 +28,7 @@ image: /assets/2021/04-wechaty-uos-web/wechaty-puppet-wechat.png
 ```shell
 npm install qrcode-terminal --save
 npm install wechaty 
-npm install wechaty-puppet-wechat@0.27.1 --save // 这个依赖是关键
+npm install wechaty-puppet-wechat@next --save // 这个依赖是关键
 export WECHATY_PUPPET=wechaty-puppet-wechat
 ```
 
@@ -92,7 +92,7 @@ bot
 1、为什么我更新了最新依赖还是提示无法登录web端微信？
 
 请查看你项目的根目录，是否存在`wechaty-puppet-wechat.memory-card.json`这样的文件，如果有请把它删除后重新执行即可，这个存储的cookies
-有可能已经过期
+有可能已经过期(最新版本已经修复此问题)
 
 2、这个puppet可以保证一直能绕过web登录么？
 
@@ -117,7 +117,7 @@ extspam ='Gp8ICJkIEpkICggwMDAwMDAwMRAGGoAI1GiJSIpeO1RZTq9QBKsRbPJdi84ropi16EYI10
 client-version' = '2.0.0', 
 ```
 
-这样就可以完美绕过限制了，真的是非常感谢 [@Luv Letter](https://github.com/luvletter2333) 的解释和 [@artxia](https://github.com/https://github.com/artxia) 的chrome插件代码让我有机会为`wechaty-puppet-wechat`添砖加瓦
+这样就可以完美使用桌面版协议了，真的是非常感谢 [@Luv Letter](https://github.com/luvletter2333) 的解释和 [@artxia](https://github.com/https://github.com/artxia) 的chrome插件代码让我有机会为`wechaty-puppet-wechat`添砖加瓦
 
 ## 快速体验
 
