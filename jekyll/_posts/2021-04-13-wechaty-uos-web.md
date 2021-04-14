@@ -19,7 +19,7 @@ image: /assets/2021/04-wechaty-uos-web/wechaty-puppet-wechat.png
 
 ## 如何使用
 
-> 关键依赖：npm install wechaty-puppet-wechat@next --save
+> 关键依赖：npm install wechaty-puppet-wechat --save
 
 对现有代码无任何侵入性，只是更新一下依赖即可
 
@@ -28,7 +28,7 @@ image: /assets/2021/04-wechaty-uos-web/wechaty-puppet-wechat.png
 ```shell
 npm install qrcode-terminal --save
 npm install wechaty 
-npm install wechaty-puppet-wechat@next --save // 这个依赖是关键
+npm install wechaty-puppet-wechat --save // 这个依赖是关键
 export WECHATY_PUPPET=wechaty-puppet-wechat
 ```
 
