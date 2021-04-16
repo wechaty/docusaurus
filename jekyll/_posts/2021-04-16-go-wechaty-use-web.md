@@ -98,4 +98,3 @@ User 微信昵称 logined
 - web协议复活: [https://wechaty.js.org/2021/04/13/wechaty-uos-web/](https://wechaty.js.org/2021/04/13/wechaty-uos-web/)
 - Go Wechaty Getting Started: [https://wechaty.js.org/docs/polyglot/go/](https://wechaty.js.org/docs/polyglot/go/)
 - puppet-providers: [https://wechaty.js.org/docs/puppet-providers/wechat](https://wechaty.js.org/docs/puppet-providers/wechat)
-
