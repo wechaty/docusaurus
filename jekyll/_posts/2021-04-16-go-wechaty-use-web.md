@@ -91,6 +91,17 @@ User 微信昵称 logined
 然后我们向机器人发送一个 ding, 机器人就会回复一个 dong
 ![ding-dong](/assets/2021/04-go-wechaty-use-web/ding.jpeg)
 
+如果启动机器人不想依赖环境变量，也可以写在代码里
+
+```go
+// Endpoint 和 Token 二选一
+var bot = wechaty.NewWechaty(wechaty.WithPuppetOption(wp.Option{
+        Endpoint: "127.0.0.1:30001",
+        //Token: "3d415ebb-7a6f-4cba-b602-1f4ae400f011",
+        Timeout: time.Duration(2*time.Minute),
+}))
+```
+
 ## 🔗
 
 - go wechty: [https://github.com/wechaty/go-wechaty](https://github.com/wechaty/go-wechaty)
