@@ -8,6 +8,7 @@ sidebar_label: Go
 
 - GitHub Repo <https://github.com/wechaty/go-wechaty>
 - Getting Started Template Repo <https://github.com/wechaty/go-wechaty>
+- Go Wecahty And WeChat Web Protocol <https://wechaty.js.org/2021/04/16/go-wechaty-use-web/>
 
 ## Getting Started
 
