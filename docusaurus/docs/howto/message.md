@@ -84,7 +84,14 @@ bot.on('message', onMessage)
 <TabItem value="py">
 
 ```py
-# TODO: Pull Request is welcome!
+from typing import List
+from wechaty import Wechaty, Contact
+
+class MyBot(Wechaty):
+    async def on_ready(self, _):
+        contacts: List[Contact] = await self.Contact.find_all()
+        for contact in contacts:
+            print(f'id<{contact.contact_id}>, name<{contact.name}>, type<{contact.type()}>')
 ```
 
 </TabItem>
@@ -189,7 +196,23 @@ bot.on('message', onMessage)
 <TabItem value="py">
 
 ```py
-# TODO: Pull Request is welcome!
+from typing import List, Optional
+from wechaty import Wechaty, Contact
+from wechaty_puppet.schemas.contact import ContactQueryFilter
+
+class MyBot(Wechaty):
+    async def on_ready(self, _):
+        # find by id
+        filehelper: Optional[Contact] = await self.Contact.find('filehelper')
+        if filehelper:
+            print(f'filehelper<{filehelper}>')
+        
+        # find by name
+        contacts: List[Contact] = await self.Contact.find_all(ContactQueryFilter(name='your-friend-name'))
+        print(f'total number of contacts: {len(contacts)}')
+
+        for contact in contacts:
+            print(contact)
 ```
 
 </TabItem>
