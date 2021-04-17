@@ -8,6 +8,7 @@ tags:
   - puppet
   - summer-of-wechaty
   - summer-2020
+  - ecosystem
 ---
 
 > Author:[@bikaiqiao](https://github.com/bikaiqiao)

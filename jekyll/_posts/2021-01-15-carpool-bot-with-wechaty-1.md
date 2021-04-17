@@ -5,6 +5,7 @@ categories: project
 tags:
   - nodejs
   - code
+  - travel
 image: /assets/2021/01-carpool-bot-with-wechaty-1/4.jpeg
 ---
 

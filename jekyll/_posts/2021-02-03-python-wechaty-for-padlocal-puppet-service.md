@@ -2,11 +2,11 @@
 title: Python Wechaty如何使用PadLocal Puppet Service
 author: biofer
 tags:
-  - Python-Wechaty
-  - puppet-services
-  - PadLocal
+  - python
+  - puppet-service
+  - padlocal
   - sticky
-categories: project
+categories: tutorial
 image: /assets/2021/02-python-wechaty-for-padlocal-puppet-service/python-wechaty-logo.png
 ---
 

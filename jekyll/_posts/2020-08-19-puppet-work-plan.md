@@ -7,6 +7,7 @@ tags:
   - summer-of-wechaty
   - summer-2020
   - wecom
+  - ecosystem
 ---
 
 <!-- markdownlint-disable -->

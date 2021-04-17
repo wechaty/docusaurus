@@ -3,8 +3,9 @@ title: "基于wechaty的简易shell"
 author: suninsky
 categories: project
 tags:
-  - ServerChan
+  - serverchen
   - shell
+  - utility
 image: /assets/2020/kotlin-wechaty-simple-shell/home.jpeg
 ---
 

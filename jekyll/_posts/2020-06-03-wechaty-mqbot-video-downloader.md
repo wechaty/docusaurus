@@ -5,7 +5,8 @@ categories: project
 tags:
   - nodejs
   - vue
-  - wechaty-puppet-padplus
+  - padplus
+  - productivity
   - nuxt
 image: /assets/2020/mqbot/qrcode.png 
 ---

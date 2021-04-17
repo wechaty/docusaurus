@@ -6,6 +6,7 @@ categories: project
 tags:
   - java
   - aws
+  - productivity
 ---
 
 In the previous blog, we have deployed [wechaty bot with node.js to aws](https://wechaty.js.org/2020/08/28/deploy-wechaty-in-aws/).  This blog is about to develop wechaty bot with Java and implement the function of sync messages in between different groups.

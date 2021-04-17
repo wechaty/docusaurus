@@ -5,9 +5,11 @@ categories: project
 tags:
   - nodejs
   - vue
-  - wechaty-puppet-padplus
+  - padplus
+  - project
   - nuxt
   - feature
+  - utility
 image: /assets/2020/wxbot/qrcode.png 
 ---
 

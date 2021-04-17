@@ -4,7 +4,7 @@ author: wss793062366
 image: /assets/2020/cps-chat-bot/goodsmsg.jpeg
 categories: project
 tags:
-  - retail
+  - ecommerce
 ---
 
 > Author: [@wss793062366](https://github.com/wss793062366) your one-line bio at here

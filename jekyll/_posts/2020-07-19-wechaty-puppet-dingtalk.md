@@ -6,6 +6,7 @@ image: /assets/2020/wechaty-puppet-dingtalk/logo.png
 tags:
   - summer-of-wechaty
   - summer-2020
+  - ecosystem
 ---
 > Author: [@jihuayu](https://github.com/jihuayu)
 > Code: [@jihuayu/wechaty-puppet-dingtalk](https://github.com/jihuayu/wechaty-puppet-dingtalk)

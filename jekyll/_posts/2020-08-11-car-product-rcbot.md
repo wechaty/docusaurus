@@ -5,6 +5,7 @@ categories: project
 tags:
   - bot
   - car
+  - automotive
 image: /assets/2020/rcbot/rcbot.jpg
 ---
 

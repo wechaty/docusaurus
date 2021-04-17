@@ -7,6 +7,7 @@ tags:
   - summer-2020
   - summer-of-wechaty
   - lark
+  - ecosystem
 ---
 
 ## 暑期2020

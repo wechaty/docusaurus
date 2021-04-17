@@ -1,12 +1,12 @@
 ---
 title:  "Python-wechaty & wechaty-puppet-padlocal的初探"
 author: iivveess
-categories: project
+categories: article
 tags:
-  - Cloud
-  - Python-Wechaty
-  - PadLocal
-  - puppet-services
+  - cloud
+  - python
+  - padlocal
+  - puppet-service
 image: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/python-wechaty-logo9.png
 ---
 

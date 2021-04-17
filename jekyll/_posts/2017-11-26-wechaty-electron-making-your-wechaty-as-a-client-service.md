@@ -5,6 +5,7 @@ categories: project
 tags:
   - code
   - featured
+  - utility
 image: /assets/2017/wechaty-electron-making-your-wachaty-as-a-client-service1.jpg
 ---
 

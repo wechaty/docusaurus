@@ -6,6 +6,8 @@ image: /assets/2020/tom-chat/zelda.jpg
 categories: project
 tags:
   - assistant
+  - productivity
+  - entertainment
 ---
 
 > 作者: [Zophyr](https://github.com/Zophyr)

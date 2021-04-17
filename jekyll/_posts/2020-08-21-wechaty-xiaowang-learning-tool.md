@@ -5,6 +5,7 @@ image: /assets/2020/wechaty-xiaowang-learning-tool/teaser.jpg
 categories: project
 tags:
   - typescript
+  - education
 ---
 
 ## 背景
