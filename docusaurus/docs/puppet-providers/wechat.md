@@ -12,6 +12,7 @@ sidebar_label: WeChat
 
 - Repo: <https://github.com/wechaty/wechaty-puppet-wechat>
 - Support & Feedback: <https://github.com/wechaty/wechaty-puppet-wechat/issues>
+- Go Wecahty And WeChat Web Protocol <https://wechaty.js.org/2021/04/16/go-wechaty-use-web/>
 
 ## Features
 
