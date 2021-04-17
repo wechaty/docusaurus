@@ -1,152 +1,280 @@
-module.exports = {
-  docs: {
-    Introduction: [
-      'introduction/README',
-      'introduction/conversational',
-      'introduction/rpa',
-      'introduction/motivations',
-      'introduction/concepts',
-      'introduction/architecture',
-      'introduction/lifecycle',
-      'examples',
-      'examples2',
-      'introduction/alternatives',
-    ],
-    'Getting Started': [
-      'getting-started/README',
-      'getting-started/quick-start',
-      'getting-started/hard-way',
-    ],
-    Tutorials: [
-      'tutorials/README',
-      'tutorials/video-tutorial',
-      'tutorials/docker',
-    ],
-    'Polyglot': [
-      'polyglot/README',
-      'polyglot/openapi/README',
-      'polyglot/typescript/README',
-      'polyglot/python/README',
-      'polyglot/go/README',
-      'polyglot/java/README',
-      'polyglot/scala/README',
-      'polyglot/php/README',
-      'polyglot/dotnet/README',
-      'polyglot/rust/README',
-      'polyglot/diy/README',
-    ],
-    Recipes: [
-      'recipes/README',
-      'recipes/wechaty',
-      'recipes/event',
-      'recipes/message',
-      'recipes/contact',
-      'recipes/room',
-      'recipes/friendship',
-      'recipes/file-box',
-      'recipes/usage-with-typescript',
-      'recipes/usage-with-heroku',
-      'recipes/using-plugin-with-wechaty',
-      'recipes/using-vorpal-with-wechaty',
-      'recipes/using-redux-with-wechaty',
-    ],
-    'Case Study': [
-      'case-study/README',
-      'case-study/coaxer-bot',
-    ],
-    'Showcases': [
-      'showcases/README',
-      'showcases/osschat-bot',
-      'showcases/rui-bot',
-      'showcases/friday-bot',
-      'showcases/projects-using-wechaty',
-    ],
-    'Puppet Providers': [
-      'puppet-providers/README',
-      'puppet-providers/wechat',
-      'puppet-providers/whatsapp',
-      'puppet-providers/official-account',
-      'puppet-providers/gitter',
-      'puppet-providers/lark',
-      'puppet-providers/padlocal',
-      'puppet-providers/wechat4u',
-      'puppet-providers/service',
-      'puppet-providers/mock',
-      'puppet-providers/diy',
-    ],
-    'Puppet Services': [
-      'puppet-services/README',
-      'puppet-services/wxwork',
-      'puppet-services/padlocal',
-      'puppet-services/paimon',
-      'puppet-services/donut',
-      'puppet-services/compatibility',
-      'puppet-services/diy',
-    ],
-    'Contributor Program': [
-      'contributor-program/README',
-      'contributor-program/publish-blog',
-    ],
-    'Events': [
-      'events',
-      'bot5/README',
-      {
-        type: 'category',
-        label: '开源软件供应链点亮计划',
-        items: [
-          'ospp/README',
-          'ospp/2021',
-          'ospp/2020',
-        ],
-      },
-      'gsod/README',
-      {
-        type: 'category',
-        label: 'Google Summer of Code',
-        items: [
-          'gsoc/README',
-          'gsoc/2021',
-        ],
-      },
-    ],
-    'API Reference': [
-      'api/README',
-      'api/wechaty',
-      'api/message',
-      'api/contact',
-      'api/room',
-      'api/room-invitation',
-      'api/friendship',
-    ],
-    Specifications: [
-      'specifications/README',
-      'specifications/wechaty',
-      'specifications/puppet',
-      'specifications/service',
-      'specifications/token',
-    ],
-    FAQ: ['faq'],
-    Troubleshooting: [
-      'troubleshooting',
-    ],
-    Others: [
-      'changelog',
-      'cheatsheet',
-      'awesome-wechaty',
-      'advanced',
-      'resources',
-      'glossary',
-      'contributing',
-      {
-        type: 'category',
-        label: 'Docusaurus',
-        items: [
-          'test/doc1',
-          'test/doc2',
-          'test/doc3',
-          'test/mdx',
-        ],
-      },
-    ],
-  },
+/**
+ * Docusaurus Sidebar
+ */
+ interface SubMenuData {
+  label: string,
+  items: (SubMenuData | string)[],
+  type?: string,
 }
+
+const showcases: SubMenuData = {
+  label: 'Showcases',
+  items: [
+    'showcases/overview',
+    'showcases/osschat-bot',
+    'showcases/rui-bot',
+    'showcases/friday-bot',
+    'showcases/awesome-wechaty',
+  ],
+}
+
+const api: SubMenuData = {
+  label: 'API',
+  items: [
+    'api/overview',
+    'api/wechaty',
+    'api/message',
+    'api/contact',
+    'api/room',
+    'api/room-invitation',
+    'api/friendship',
+  ],
+}
+
+const polyglot: SubMenuData = {
+  label: 'Polyglot',
+  items: [
+    'polyglot/overview',
+    'polyglot/openapi/overview',
+    'polyglot/typescript/overview',
+    'polyglot/python/overview',
+    'polyglot/go/overview',
+    'polyglot/java/overview',
+    'polyglot/scala/overview',
+    'polyglot/php/overview',
+    'polyglot/dotnet/overview',
+    'polyglot/rust/overview',
+    'polyglot/diy/overview',
+  ],
+}
+
+const puppetProviders: SubMenuData = {
+  label: 'Puppet Providers',
+  items: [
+    'puppet-providers/overview',
+    'puppet-providers/wechat',
+    'puppet-providers/whatsapp',
+    'puppet-providers/official-account',
+    'puppet-providers/gitter',
+    'puppet-providers/lark',
+    'puppet-providers/padlocal',
+    'puppet-providers/wechat4u',
+    'puppet-providers/service',
+    'puppet-providers/mock',
+    'puppet-providers/diy',
+  ],
+}
+
+const puppetServices: SubMenuData = {
+  label: 'Puppet Services',
+  items: [
+    'puppet-services/overview',
+    'puppet-services/wxwork',
+    'puppet-services/padlocal',
+    'puppet-services/paimon',
+    'puppet-services/donut',
+    'puppet-services/compatibility',
+    'puppet-services/diy',
+  ]
+}
+
+const specs: SubMenuData = {
+  label: 'Specifications',
+  items: [
+    'specs/overview',
+    'specs/wechaty',
+    'specs/plugin',
+    'specs/puppet',
+    'specs/service',
+    'specs/token',
+  ],
+}
+
+const contributing: SubMenuData = {
+  label: 'Contributing',
+  items: [
+    'contributing/overview',
+    'contributing/new-contributors',
+    'contributing/documentation',
+    'contributing/contributor-program',
+    'contributing/devops',
+    'contributing/pulls',
+    'contributing/blog',
+    'contributing/coding',
+    'contributing/git',
+    'contributing/issues',
+    'contributing/testing',
+  ],
+}
+
+const caseStudy: SubMenuData = {
+  label: 'Case Study',
+  items: [
+    'case-study/overview',
+    'case-study/money-bot',
+    'case-study/assistant-bot',
+    'case-study/coaxer-bot',
+  ],
+}
+
+const gettingStarted: SubMenuData = {
+  label: 'Getting Started',
+  items: [
+    'getting-started/overview',
+    'getting-started/quick-start',
+    'getting-started/hard-way',
+  ],
+}
+
+const community: SubMenuData = {
+  label: 'Community',
+  items: [
+    'community',
+    {
+      type: 'category',
+      label: '开源软件供应链点亮计划',
+      items: [
+        'ospp/overview',
+        'ospp/2021',
+        'ospp/2020',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Google Season of Docs',
+      items: [
+        'gsod/overview',
+        'gsod/ideas',
+        'gsod/2021',
+      ],
+    },
+    'bot5/overview',
+    {
+      type: 'category',
+      label: 'Google Summer of Code',
+      items: [
+        'gsoc/overview',
+        'gsoc/ideas',
+        'gsoc/2021',
+      ],
+    },
+  ],
+}
+
+const docusaurus: SubMenuData = {
+  label: 'Docusaurus',
+  items: [
+    'docusaurus/doc1',
+    'docusaurus/mdx',
+  ],
+}
+
+/*********************************
+ *
+ * Category Helper function
+ *
+ */
+const subMenu = (data: SubMenuData) => ({
+  label : data.label,
+  items : data.items,
+  type  : data.type ?? 'category',
+})
+
+/*********************************
+ *
+ * Introduction
+ *
+ */
+const introduction = {
+  label: 'Introduction',
+  items: [
+    'overview',
+    'wechaty',
+    subMenu(showcases),
+    subMenu(community),
+    subMenu(contributing),
+    'changelog',
+  ],
+}
+
+/****************************************************************************
+ * Documentation System
+ *  https://documentation.divio.com/
+ *
+ *  The Grand Unified Theory of Documentation
+ *
+ *  Issue #704 - https://github.com/wechaty/wechaty.js.org/issues/704
+ ****************************************************************************/
+const tutorials = {
+  label: 'Tutorials',
+  items: [
+    'tutorials/overview',
+    subMenu(gettingStarted),
+    subMenu(caseStudy),
+    'tutorials/video-tutorial',
+    'tutorials/docker',
+    'tutorials/usage-with-heroku',
+    'tutorials/using-plugin-with-wechaty',
+    'tutorials/using-vorpal-with-wechaty',
+    'tutorials/using-redux-with-wechaty',
+    'tutorials/cheatsheet',
+    'tutorials/examples',
+  ],
+}
+
+const howtos = {
+  label: 'How-to Guides',
+  items: [
+    'howto/overview',
+    'howto/install',
+    'howto/wechaty',
+    'howto/event',
+    'howto/message',
+    'howto/contact',
+    'howto/room',
+    'howto/friendship',
+    'howto/file-box',
+    'howto/testing',
+  ],
+}
+
+const references = {
+  label: 'References',
+  items: [
+    'references/overview',
+    subMenu(api),
+    subMenu(polyglot),
+    subMenu(puppetProviders),
+    subMenu(puppetServices),
+    subMenu(specs),
+    'references/deprecations',
+  ]
+}
+
+const explainations = {
+  label: 'Explainations',
+  items: [
+    'explainations/overview',
+    'explainations/conversational',
+    'explainations/rpa',
+    'explainations/motivations',
+    'explainations/concepts',
+    'explainations/architecture',
+    'explainations/lifecycle',
+    'explainations/alternatives',
+    'explainations/glossary',
+    'explainations/faq',
+    'explainations/troubleshooting',
+    subMenu(docusaurus),
+  ],
+}
+
+const docs = {
+  [introduction.label]  : [...introduction.items],
+  [tutorials.label]     : [...tutorials.items],
+  [howtos.label]        : [...howtos.items],
+  [references.label]    : [...references.items],
+  [explainations.label] : [...explainations.items],
+}
+
+export { docs }
