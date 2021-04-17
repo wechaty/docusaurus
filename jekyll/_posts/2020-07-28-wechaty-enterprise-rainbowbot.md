@@ -3,9 +3,11 @@ title: "wechaty-rainbowbot 基于Wechaty实现的企业业务系统与营销团�
 author: cavoncheng
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - padplus
+  - project
   - koa
   - weixin-openai
+  - productivity
 image: /assets/2020/wechaty-rainbowbot/rainbow.jpg
 ---
 

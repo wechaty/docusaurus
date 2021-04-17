@@ -3,9 +3,11 @@ title: 基于Wechaty打造实时爬取产品信息并分享给用户群
 author: zcr20090430
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - padplus
+  - project
   - python
   - typescript
+  - ecommerce
 ---
 
 基于Wechaty打造实时爬取产品信息并分享给用户群
@@ -69,7 +71,8 @@ const bot = new Wechaty({
    * You can use the following providers:
    *  - wechaty-puppet-service
    *  - wechaty-puppet-puppeteer
-   *  - wechaty-puppet-padplus
+   *  - padplus
+  - project
    *  - etc.
    *
    * Learn more about Wechaty Puppet Providers at:
@@ -230,7 +233,8 @@ const bot = new Wechaty({
    * You can use the following providers:
    *  - wechaty-puppet-service
    *  - wechaty-puppet-puppeteer
-   *  - wechaty-puppet-padplus
+   *  - padplus
+  - project
    *  - etc.
    *
    * Learn more about Wechaty Puppet Providers at:

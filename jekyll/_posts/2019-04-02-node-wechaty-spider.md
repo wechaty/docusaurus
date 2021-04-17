@@ -5,6 +5,8 @@ categories: project
 tags:
   - code
   - featured
+  - social
+  - entertainment
 image: /assets/2019/node-wechaty-1.jpeg
 ---
 

@@ -4,6 +4,7 @@ author: iyjian
 categories: project
 tags:
   - code
+  - finance
 image: /assets/2017/iyjian-1.png
 ---
 

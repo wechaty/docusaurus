@@ -4,6 +4,8 @@ author: why2lyj
 categories: project
 tags:
   - python
+  - donut
+  - ecommerce
 image: /assets/2020/python-wechaty-cps-bot/jdyangli.jpg
 ---
 

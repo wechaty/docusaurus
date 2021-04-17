@@ -5,6 +5,7 @@ categories: project
 tags:
   - code
   - featured
+  - entertainment
 image: /assets/2019/everyday-header.png
 ---
 

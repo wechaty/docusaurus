@@ -7,8 +7,8 @@ tags:
   - news
   - puppet
   - padlocal
-  - puppet-service-provider
-  - wechaty-puppet-padlocal
+  - puppet-provider
+  - puppet-service
 ---
 
 大家好，我是 PadLocal 的开发者，大伙都称我“好大”。最近一两年，我们团队开始做社群相关产品，自然而然也用了 Wechaty，慢慢地对 Wechaty 以及整个社区也越来越认可和信任。

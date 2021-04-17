@@ -36,7 +36,7 @@ If you are interested in the adaption of WPPs, you can visit the NPM Trends serv
 
 ## Related Links
 
-- [Puppet Specification](https://wechaty.js.org/docs/specifications/puppet/)
+- [Puppet Specification](https://wechaty.js.org/docs/specs/puppet/)
 - [A Check-list for Creating New Puppets for Wechaty #1167](https://github.com/wechaty/wechaty/issues/1167)
 - [Wechaty Puppet API Docs](https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html)
 - [Wechaty Puppet Compatibility](https://github.com/wechaty/wechaty-puppet/wiki/Compatibility)

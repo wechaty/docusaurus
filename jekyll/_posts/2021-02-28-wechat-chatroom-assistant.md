@@ -4,7 +4,8 @@ author: paulhybryant
 categories: project
 tags:
   - python
-  - wechaty-puppet-padlocal
+  - padlocal
+  - productivity
 image: /assets/2021/02-wechat-chatroom-assistant/header.jpg
 ---
 

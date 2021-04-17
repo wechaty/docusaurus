@@ -3,7 +3,9 @@ title: "智障机器人(retarded-robot)"
 author: xajeyu
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - padplus
+  - project
+  - productivity
 ---
 
 > Author: [xajeyu](https://github.com/xajeyu)

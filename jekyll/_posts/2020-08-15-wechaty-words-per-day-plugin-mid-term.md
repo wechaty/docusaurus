@@ -6,6 +6,7 @@ tags:
   - plugins
   - summer-of-wechaty
   - summer-2020
+  - entertainment
 image: /assets/2020/wechaty-words-per-day-plugin-mid-term/header.png
 ---
 

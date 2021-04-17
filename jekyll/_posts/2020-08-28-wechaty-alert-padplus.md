@@ -5,6 +5,7 @@ image: /assets/2020/alter-padplus/login.png
 categories: project
 tags:
   - padplus
+  - utility
 ---
 
 ## ---wechaty-alert-padplus---
