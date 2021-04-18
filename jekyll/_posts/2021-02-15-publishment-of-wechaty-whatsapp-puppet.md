@@ -4,7 +4,6 @@ author: univerone
 categories: announcement
 tags:
   - news
-  - sticky
   - release
   - puppet-provider
   - whatsapp

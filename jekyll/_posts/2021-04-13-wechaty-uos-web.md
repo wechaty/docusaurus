@@ -6,6 +6,8 @@ tags:
   - code
   - wechaty-puppet-wechat
   - web协议
+  - news
+  - sticky
 image: /assets/2021/04-wechaty-uos-web/wechaty-puppet-wechat.png
 ---
 
