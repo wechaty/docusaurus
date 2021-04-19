@@ -10,7 +10,7 @@ title: 'Usage with Heroku'
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-Deploy to Heroku for Wechaty Starter Project
+[Deploy to Heroku for Wechaty Starter Project Repository](https://github.com/wechaty/heroku-wechaty-getting-started)
 
 ## About `Deploy to Heroku` Button
 
