@@ -2,11 +2,11 @@
 name: Soumi Bardhan
 site: https://github.com/Soumi7
 avatar: /assets/contributors/huan/avatar.jpg
-bio: Member @SymPy.Software dev, 
+bio: Member @SymPy.Software dev,
 technical writer, involved in research
 in Conputer Vision and NLP domains.
 email: soumibardhan10@gmail.com
-twitter: https://twitter.com/MsBardhan 
+twitter: https://twitter.com/MsBardhan
 ---
 
 ## Contact
@@ -18,8 +18,8 @@ twitter: https://twitter.com/MsBardhan
 
 ## About
 
-I enjoy solving real world problems with 
+I enjoy solving real world problems with
 computer vision and NLP. I write technical
 articles documenting my projects. All of
-my projects( expect ongoing research) are 
+my projects( expect ongoing research) are
 opensourced on my github.
