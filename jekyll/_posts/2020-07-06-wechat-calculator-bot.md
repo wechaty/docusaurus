@@ -3,7 +3,8 @@ title: "微信计算器机器人（wechat robot calculator）"
 author: ray
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - padplus
+  - productivity
 image: /assets/2020/wechat-calc/header.jpg
 ---
 

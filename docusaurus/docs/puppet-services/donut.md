@@ -3,6 +3,8 @@ title: 'Puppet Service: Donut'
 sidebar_label: Donut
 ---
 
+[![Wechaty Puppet Service Donut](https://img.shields.io/badge/Service-Donut-blue)](donut.md)
+
 - Repo: <https://github.com/juzibot/donut-tester>
 - Provider: [@juzibot](https://github.com/juzibot)
 - Support & Feedback: <https://github.com/juzibot/donut-tester/issues>
@@ -23,6 +25,10 @@ Register via WeCom at [jukebox](https://qiwei.juzibot.com/user/login?isWechaty=t
 ## Questions
 
 [Submit an issue at here](https://github.com/wechaty/puppet-service-providers/issues/new?assignees=windmemory&labels=donut&template=donut.md&title=Donut%3A+)
+
+## Blogs
+
+Read blogs with the `donut` tag at <https://wechaty.js.org/tags.html#donut>
 
 ## History
 

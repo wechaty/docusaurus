@@ -3,8 +3,10 @@ title: "股票盯盘助手"
 author: wengcan
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - padplus
+  - project
   - stock
+  - finance
 image: /assets/2020/wechaty-stock-bot/header.jpg
 ---
 > Author: [wengcan](https://github.com/wengcan)

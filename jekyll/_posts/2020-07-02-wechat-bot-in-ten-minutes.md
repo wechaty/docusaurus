@@ -4,7 +4,8 @@ author: luweicn
 categories: project
 tags:
   - nodejs
-  - wechaty-puppet-padplus
+  - padplus
+  - productivity
 ---
 
 ## 十分钟实现一个智能问答微信聊天机器人

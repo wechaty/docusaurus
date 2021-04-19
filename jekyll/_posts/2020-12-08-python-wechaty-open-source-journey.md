@@ -4,7 +4,7 @@ author: wj-mcat
 categories: story
 tags:
   - news
-  - python-wechaty
+  - python
 image: /assets/2020/python-wechaty/wechaty-nanjing-picture.jpg
 ---
 

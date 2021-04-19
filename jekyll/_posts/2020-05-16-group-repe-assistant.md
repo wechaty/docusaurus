@@ -3,7 +3,8 @@ title: "repe-assistant 社群活动助手"
 author: xiaogan18
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - padplus
+  - utility
 image: /assets/2020/repe-assistant/2020-05-16-repe-assistant.png
 ---
 

@@ -1,10 +1,11 @@
 ---
 title: "Official-Account Puppet Released"
 author: wj-mcat
-categories: project
+categories: announcement
 tags:
   - news
-  - wechaty-puppet-official-account
+  - puppet-provider
+  - official-account
 image: /assets/2020/official-account/wechaty-puppet-official-account.png
 ---
 

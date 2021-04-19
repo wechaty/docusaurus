@@ -3,10 +3,10 @@ title: Wechaty Java 移植组件开发
 author: cunkoulaocai
 categories: project
 tags:
- - java
- - soc
- - soc2020
- - java-wechaty
+  - java
+  - soc
+  - soc2020
+  - ecosystem
 image: /assets/2020/java-wechaty-transplant-midpoc/java-wechaty-transplant-midpoc.jpg
 ---
 

@@ -4,6 +4,7 @@ author: wade0564
 categories: project
 tags:
   - wiki
+  - productivity
 image: /assets/2021/02-ziki-wechaty-helper/ziki_bot_input.png
 avatar: /assets/contributors/wade0564/avatar.png
 email: 991445760@qq.com

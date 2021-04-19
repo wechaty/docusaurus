@@ -7,6 +7,7 @@ tags:
   - summer-2020
   - summer-of-wechaty
   - lark
+  - ecosystem
 ---
 
 ## 暑期2020
@@ -75,6 +76,6 @@ tags:
 
 ## 联系我们
 
-- 项目链接：[https://github.com/Roxanne718/wechaty-puppet-lark](https://github.com/Roxanne718/wechaty-puppet-lark)
+- 项目链接：[https://github.com/Roxanne718/wechaty-puppet-lark](https://github.com/wechaty/wechaty-puppet-lark)
 
 - 联系方式：+86 17822015718 | email: 953299708@qq.com

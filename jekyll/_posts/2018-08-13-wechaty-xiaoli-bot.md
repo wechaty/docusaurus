@@ -4,6 +4,7 @@ author: judaschrist
 categories: project
 tags:
   - code
+  - media
 image: /assets/2018/wechaty-xiaoli.jpeg
 ---
 

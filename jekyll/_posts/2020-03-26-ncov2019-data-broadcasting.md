@@ -5,6 +5,7 @@ categories: project
 tags:
   - typescript
   - bupt
+  - healthcare
 ---
 
 > Author: [@zjacai](https://github.com/zjacai) enjoying ML&Wechaty at BUPT  

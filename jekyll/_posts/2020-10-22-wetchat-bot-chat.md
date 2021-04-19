@@ -6,7 +6,8 @@ email: shiliux@foxmail.com
 site: https://github.com/slx1997
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - padplus
+  - productivity
   - nodejs
 ---
 
