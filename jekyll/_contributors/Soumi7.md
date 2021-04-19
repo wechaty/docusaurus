@@ -2,9 +2,7 @@
 name: Soumi Bardhan
 site: https://github.com/Soumi7
 avatar: /assets/contributors/huan/avatar.jpg
-bio: Member @SymPy.Software dev,
-technical writer, involved in research
-in Conputer Vision and NLP domains.
+bio: Member @SymPy,technical writer
 email: soumibardhan10@gmail.com
 twitter: https://twitter.com/MsBardhan
 ---
