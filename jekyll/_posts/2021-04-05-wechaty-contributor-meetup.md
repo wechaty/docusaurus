@@ -1,7 +1,7 @@
 ---
 title: "Wechaty Contributor Beijing Meetup 2020/04"
 author: padlocal
-image: /assets/2020/padlocal/logo.png
+image: /assets/2021/04-wechaty-contributor-meetup/cheers.jpg
 categories: story
 tags:
   - meetup
