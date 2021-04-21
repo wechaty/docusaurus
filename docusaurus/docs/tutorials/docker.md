@@ -2,23 +2,38 @@
 title: 'Usage with Docker'
 ---
 
+## DOCKER WECHATY GETTING STARTED
+
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-blue.svg)](https://github.com/chatie/wechaty)
 [![Docker Pulls](https://img.shields.io/docker/pulls/wechaty/wechaty.svg?maxAge=2592000)](https://hub.docker.com/r/wechaty/wechaty/)
 [![Docker Stars](https://img.shields.io/docker/stars/wechaty/wechaty.svg?maxAge=2592000)](https://hub.docker.com/r/wechaty/wechaty/)
 [![Docker Layers](https://images.microbadger.com/badges/image/wechaty/wechaty.svg)](https://microbadger.com/#/images/wechaty/wechaty)
 
 [![dockeri.co](http://dockeri.co/image/wechaty/wechaty)](https://hub.docker.com/r/wechaty/wechaty/)
 
-Wechaty is fully dockerized. So it will be very easy to be used as a MicroService.
+[Deploy to Docker for Wechaty Starter Project Repository](https://github.com/wechaty/docker-wechaty-getting-started)
 
-## Getting Started with Docker
+<!-- Wechaty is fully dockerized. So it will be very easy to be used as a MicroService.
 
-Getting Started Template for Docker Users: <https://github.com/wechaty/docker-wechaty-getting-started>
+## Getting Started with Docker 
+
 
 ## Docker Wechaty Getting Started
 
 [![Docker](https://avatars0.githubusercontent.com/u/5429470?s=200)](https://github.com/wechaty/docker-wechaty-getting-started)
 
-[https://github.com/wechaty/docker-wechaty-getting-started](https://github.com/wechaty/docker-wechaty-getting-started)
+[https://github.com/wechaty/docker-wechaty-getting-started](https://github.com/wechaty/docker-wechaty-getting-started)-->
+
+## FEATURES
+
+1. Wechaty is fully dockerized. So it will be very easy to be used as a MicroService.
+1. Clone this repository, then you will be able to use Docker to run Wechaty with ZERO configuration.
+
+## REQUIREMENTS
+
+1. Docker
+1. Global Internet Connection
+
 
 ## Install Docker
 
@@ -34,7 +49,8 @@ Or
 wget -qO- https://get.docker.com/ | sh
 ```
 
-Get to know more about Docker at: <https://www.docker.com/>
+* [Get to know more about Docker](https://www.docker.com/)
+* [Install Docker and run hello-world in 3 minutes](https://docs.docker.com/engine/getstarted/step_one/)
 
 ## Run
 
@@ -123,18 +139,28 @@ This image makes building derivative images easier. For most use cases, creating
 1. This `onbuild` variant will only install npm packages according to the `package.json`
 1. The npm installs devDependencies by default, which is undesirable if you're building a production image. To avoid this pass NODE_ENV as a build argument i.e. `docker build --build-arg NODE_ENV=production …`.
 
-## Docker Intro
-
-### How to Install Docker
-
-* [Install Docker and run hello-world in 3 minutes](https://docs.docker.com/engine/getstarted/step_one/)
-
-### Use Docker in China
-
-To be written...
-
 ## Build
 
 ```bash
 docker build -t wechaty .
 ```
+
+## SEE ALSO
+
+1. Wechaty Getting Started: <https://github.com/wechaty/wechaty-getting-started>
+2. Heroku Wechaty Getting Started: <https://github.com/wechaty/heroku-wechaty-getting-started>
+
+## AUTHOR
+
+[Huan LI](http://linkedin.com/in/zixia) \<zixia@zixia.net\>
+
+<a href="https://stackexchange.com/users/265499">
+  <img src="https://stackexchange.com/users/flair/265499.png" width="208" height="58" alt="profile for zixia on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for zixia on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+</a>
+
+## COPYRIGHT & LICENSE
+
+- Code & Docs © 2018 Huan LI \<zixia@zixia.net\>
+- Code released under the Apache-2.0 License
+- Docs released under Creative Commons
+
