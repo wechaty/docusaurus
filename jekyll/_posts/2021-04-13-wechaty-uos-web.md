@@ -31,6 +31,7 @@ image: /assets/2021/04-wechaty-uos-web/wechaty-puppet-wechat.png
 npm install qrcode-terminal --save
 npm install wechaty 
 npm install wechaty-puppet-wechat --save // 这个依赖是关键
+export WECHATY_PUPPET=wechaty-puppet-wechat // 这里也是关键，需要配置你使用的puppet
 ```
 
 二、请保证你的puppet配置的是`wechaty-puppet-wechat`
