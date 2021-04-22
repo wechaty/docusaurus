@@ -28,13 +28,13 @@ docker pull wechaty/wechaty
 
 ### 2. Config Wechaty Puppet Provider
 
-We need to choice which [Wechaty Puppet Provider](puppet-providers/README.md) we want to use by setting the `WECHATY_PUPPET` environment variable.
+We need to choice which [Wechaty Puppet Provider](puppet-providers/overview.mdx) we want to use by setting the `WECHATY_PUPPET` environment variable.
 
 For example, you can choose [wechaty-puppet-padlocal](puppet-providers/padlocal.md) by setting `WECHATY_PUPPET=wechaty-puppet-padlocal`, add an additional PadLocal token `WECHATY_PUPPET_PADLOCAL_TOKEN=puppet_padlocal__TOKEN__` which is required by PadLocal.
 
 :::note Wechaty Puppet Providers
 
-Learn all [Wechaty Puppet Providers](puppet-providers/README.md)
+Learn all [Wechaty Puppet Providers](puppet-providers/overview.mdx)
 
 You need to set all environment variables which requires from a specific provider.
 
@@ -78,7 +78,7 @@ set WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal__TOKEN__"
 
 ### 3. Set Wechaty Puppet Service TOKEN
 
-In order to provide [Wechaty Puppet Service](specifications/service.md), you need to specify a [TOKEN](specifications/token.md) for authorization.
+In order to provide [Wechaty Puppet Service](specs/service.md), you need to specify a [TOKEN](specs/token.md) for authorization.
 
 You can [Generate a new UUIDv4](https://www.uuidgenerator.net/version4) online, use this new UUIDv4 as your token.
 
@@ -126,7 +126,7 @@ set WECHATY_TOKEN="__UUIDv4__"
 
 ### 4. Set Wechaty Puppet Service Port
 
-The port for your [Wechaty Puppet Service](specifications/service.md) need to be specified. Make sure it's free on your server.
+The port for your [Wechaty Puppet Service](specs/service.md) need to be specified. Make sure it's free on your server.
 
 :::note port availablility
 
@@ -293,11 +293,11 @@ echo HTTP/$(curl -s -o /dev/null -w '%{http_code}' https://api.chatie.io/v0/host
 
 If you get `HTTP/404`, then you need to check the previous steps and troubleshoot which part has problems. If you find anything need to be reported, please feel free to submit an issue at [here](https://github.com/wechaty/puppet-services/issues)
 
-Learn more about the TOKEN from [Wechaty Puppet Service TOKEN Specification](specifications/token.md).
+Learn more about the TOKEN from [Wechaty Puppet Service TOKEN Specification](specs/token.md).
 
 ### 🎉 Congratulations! You are all set
 
-Your Wechaty Puppet Service will be ready to service for [Polyglot Wechaty](polyglot/README.md)!
+Your Wechaty Puppet Service will be ready to service for [Polyglot Wechaty](polyglot/overview.mdx)!
 
 ## All in One Command
 

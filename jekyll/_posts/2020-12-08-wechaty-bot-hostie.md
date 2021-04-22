@@ -4,7 +4,8 @@ author: mumup
 categories: project
 tags:
   - nodejs
-  - wechaty-puppet-donut
+  - donut
+  - social
 image: /assets/2020/wechaty-bot-hostie/img-func.jpeg
 ---
 

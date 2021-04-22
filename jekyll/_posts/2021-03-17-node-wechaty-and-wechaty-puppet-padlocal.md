@@ -5,12 +5,9 @@ categories: project
 tags:
   - node
   - padlocal
+  - social
 image: /assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/grouupmaster.png
 ---
-
-## 场景
-
-- 前情
 
 超哥之前开发了一个叫做「群组大师」的小程序，听名字就知道，是用来管理群组的，管理群组的什么呢？
 
@@ -265,3 +262,13 @@ bot.start().then(() => {
 });
 
 ```
+
+---
+
+name: atorber
+site: <https://github.com/atorber>
+bio: 一个不误正业的产品经理
+avatar: /assets/contributors/atorber/avatar.png
+email: <atorber@163.com>
+
+---

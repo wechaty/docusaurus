@@ -3,7 +3,8 @@ title: "Rae-oa系统微信群辅助机器人(rae-wechaty)"
 author: northseacoder
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - puppet-provider
+  - productivity
 image: /assets/2020/rae-oa-wechaty/schecdule.png
 ---
 > Author: [NorthSeacoder](https://github.com/NorthSeacoder)

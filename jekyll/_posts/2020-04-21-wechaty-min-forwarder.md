@@ -3,7 +3,10 @@ title: "Wechaty 服务器的最小化实现"
 author: hzzzzzz
 categories: project
 tags:
-  - wechaty-puppet-macpro
+  - project
+  - macpro
+  - social
+  - productivity
 ---
 
 > 作者: [hzzzzzz](https://github.com/hzzzzzz) Node.js developer

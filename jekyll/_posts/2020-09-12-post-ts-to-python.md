@@ -4,9 +4,11 @@ author: jcq15
 image: /assets/2020/post-ts-to-python/screenshot.jpg
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - padplus
+  - project
   - nodejs
   - python
+  - utility
 ---
 
 报时机器人，每逢整点在群里发送报时信息。

@@ -3,7 +3,8 @@ title: "Nio bot蔚来车主群服务机器人"
 author: leons828
 categories: project
 tags:
-  - wechaty-puppet-padplus
+  - padplus
+  - automotive
 image: /assets/2020/nio-bot/bio-photo.jpg
 ---
 

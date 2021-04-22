@@ -5,8 +5,9 @@ image: /assets/2020/wanke-bot/banner.jpg
 categories: project
 tags:
   - puppet
-  - PadLocal
-  - Wechaty-wanke-bot
+  - padlocal
+  - wangke
+  - education
 ---
 ## 背景
 

@@ -6,6 +6,7 @@ tags:
   - code
   - telegram
   - news
+  - utility
 image: /assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-1.png
 ---
 

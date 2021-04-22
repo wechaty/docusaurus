@@ -3,7 +3,7 @@ title: "使用 SQLite 和 pullword 实现简易的业务助手"
 author: moderncrazy
 categories: tutorial
 tags:
-  - SQLite
+  - sqlite
 image: /assets/2020/sqlite-wechat/2020-03-sqlite-wechat-assistant.jpeg
 ---
 
