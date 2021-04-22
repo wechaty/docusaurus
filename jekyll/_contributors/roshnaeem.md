@@ -1,10 +1,10 @@
 ---
-Name: Rosheen Naeem
-Site: https://roshnaeem.github.io/
-Github: https://github.com/roshnaeem
-Bio: Nothing hard comes easy
-Email: rosheennaeem4@gmail.com
-Twitter: https://twitter.com/RosheenNaeem
+name: Rosheen Naeem
+site: https://roshnaeem.github.io/
+avatar:
+bio: Nothing hard comes easy
+email: rosheennaeem4@gmail.com
+twitter: https://twitter.com/RosheenNaeem
 
 ---
 
