@@ -8,6 +8,7 @@ sidebar_label: Go
 
 - GitHub Repo <https://github.com/wechaty/go-wechaty>
 - Getting Started Template Repo <https://github.com/wechaty/go-wechaty>
+- Go Wecahty And WeChat Web Protocol <https://wechaty.js.org/2021/04/16/go-wechaty-use-web/>
 
 ## Getting Started
 
@@ -22,7 +23,9 @@ make bot
 
 ## Blogs
 
-Read blogs with the `go` tag at <https://wechaty.js.org/tags.html#go>
+- [教你用go-wecahty和web协议开发机器人, @dchaofei, Apr 16, 2021](https://wechaty.js.org/2021/04/16/go-wechaty-use-web/)
+
+Read more blogs with the `go` tag at <https://wechaty.js.org/tags.html#go>
 
 ## History
 
