@@ -42,23 +42,63 @@ Let's [run your first Ding Dong bot with Gitpod!][gitpod_link]
 
 Once you click on the link below, you see this page :
 
-![image](../../static/img/docs/getting-started/cloud_1.png)
+![Google Cloud Shell Homepage](../../static/img/docs/getting-started/google-cloud-shell-homepage.png)
 
 Click Continue. You will see this page :
 
-![image](../../static/img/docs/getting-started/cloud_2.png)
+![Google Cloud Shell Homepage - Make selection](../../static/img/docs/getting-started/google-cloud-shell-homepage-selection.png)
 
-It will the take you to the cloud shell editor :
+It will the take you to the Google Cloud shell editor :
 
-![image](../../static/img/docs/getting-started/cloud_3.png)
+![Google Cloud shell editor starting page](../../static/img/docs/getting-started/google-cloud-shell-editor-starting.png)
 
 The Wechaty tutorial will open up!
 
-![image](../../static/img/docs/getting-started/cloud_4.png)
+![Google Cloud Shell Editor - Wechaty Tutorial - Start](../../static/img/docs/getting-started/google-cloud-shell-editor-wechaty-tutorial-start-page.png)
 
-Follow the instructions :
+## Setting up development envioronment :
 
-![image](../../static/img/docs/getting-started/cloud_5.png)
+1. Install Node.js v12+.
+2. Git clone wechaty-getting-started repo
+3. Install system depending packages
+
+**1. Install Node.js **
+
+Node.js has been pre-installed in Google-Cloud Shell already.
+
+**2. Git clone wechaty-getting-started repo with ``git clone ``.**
+
+The Git Repo has been already cloned in Google Cloud Shell already.
+
+**3. Install system dependancy packages**
+
+The puppeteer needs libgbm 1 to be presented in the system, we need to install it first, run :
+
+```sudo apt install -y libgbml ```
+
+Follow the instructions to install required dependancies.  
+
+![Wechaty shell instructions to execute](../../static/img/docs/getting-started/cloud-execution-instructions.png)
+
+Next, install NPM :
+
+Install the NPM packages with ```npm install```
+
+![Wechaty shell instructions to execute](../../static/img/docs/getting-started/cloud-npm-installation.png)
+
+Now we are ready to get started with our ding-dong bot!
+
+Its source code is in examples/ding-dong-bot.ts.
+
+**Lets try it with Whatsapp :**
+
+To start our bot with whatsapp, we need to define WECHATY_PUPPET = wechaty-puppet-whatsapp. Run the following on the terminal :
+
+```
+export \
+WECHATY_PUPPET=wechaty-puppet-whatsapp
+npm start
+```
 
 Let's [get started with Google Cloud Shell][shell_link]
 
