@@ -19,6 +19,6 @@ twitter: https://twitter.com/sbis04
 
 I am a mobile app developer by passion,
 having experience in Android, iOS and Flutter.
-A freelance technical writer of Codemagic Blog, 
-and have published a number of articles on Medium 
+A freelance technical writer of Codemagic Blog,
+and have published a number of articles on Medium
 having over 500K+ views.
