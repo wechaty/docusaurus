@@ -10,6 +10,6 @@ Twitter: https://twitter.com/RosheenNaeem
 
 ## Contact me
 
-* Github: <https://github.com/binsee>
+* Github: https://github.com/roshnaeem
 * Email：rosheennaeem4@gmail.com
 * Website: https://roshnaeem.github.io/
