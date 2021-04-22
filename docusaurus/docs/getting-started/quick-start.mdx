@@ -108,7 +108,28 @@ Now you will be able to play with the ding-dong-bot! The messages received on wh
 
 ![Whatsapp messages displayed on google cloud terminal](../../static/img/docs/getting-started-terminal-messages.png)
 
-You can even add your own features!
+If you have finished the previous step, and login-ed successfully, then your bot will be able to reply a dong for any message send it as a ding, no matter which IM(Whatsapp or WeChat) your bot are working with. You can even add your own features!
+
+Now if you get a new feature request from your client: reply dongdong for dingding, you can do it super fast! Just updated the onMessage function in your ding-dong-bot.ts file!
+
+```
+async function onMessage (msg: Message) {
+  log.info('StarterBot', msg.toString())
+
+  if (msg.text() === 'ding') {
+    await msg.say('dong')
+  }
+  if (msg.text() === 'dingding') {
+    await msg.say('dongdong')
+  }
+}
+```
+
+That's it! We have added 3 lines of code to implment our new feature. Do not forget to save the file changes to the disk.
+
+Next up, start your brand new new ding-dong BOT and test your new feature! Once you complete the tutorial, you will be directed to the completion page. Congratulations, you did it!
+
+![Getting Started Tutorial Completion Page](../../static/img/docs/getting-started-tutorial-completion.png)
 
 Let's [get started with Google Cloud Shell][shell_link]
 
