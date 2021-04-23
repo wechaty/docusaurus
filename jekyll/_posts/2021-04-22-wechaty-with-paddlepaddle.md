@@ -36,7 +36,6 @@ image: /assets/2021/04-wechaty-with-paddlepaddle/header.png
 
 在这个时代里，ChatBot的竞争早已不再局限于技术，创意也显得尤为重要。因此，为了发掘更多优秀的ChatBot开发项目，培养更大优质人才，PaddleHub携手开源聊天机器人框架Wechaty带来了《AI ChatBot创意赛》。如果你在ChatBot开发方面有想法也有能力，那么欢迎报名参与本次大赛，为未来设计一款更加新颖、可靠、实用的ChatBot。而如果你的ChatBot创意项目足够优秀并进入了最终决赛，那么飞桨官方将会帮助你登上WAVE SUMMIT 2021峰会的舞台！
 
-![completion-invitor](/assets/2021/04-wechaty-with-paddlepaddle/completion-invite.png)
 
 ## 赛题介绍
 
@@ -58,6 +57,7 @@ Wechaty的优势在于对代码质量地管理，开发者可以使用了Github 
 
 目前，在Github上已有千余个开源项目基于Wechaty构建了聊天机器人。另外，Wechaty统一了即时通讯软件平台的对话接口，仅需要一套代码即可运行在多个平台之上，目前已成熟高效地推动了包括社群管理、数据运维、办公、资讯、广告、营销等多个领域不同实用场景的落地。比如OSS.Chat能够打通Github开发者社区，让开源社区获得即时动态；YanBot辅助管理相关的多个微信讨论群The R-fMRI Journal Club，并对用户对领域内文献的讨论和相关脑影像技术问题进行桥接；以及python-Wechaty斗图机器人能够与联系人趣聊斗图。
 
+
 ![wechaty-structure](/assets/2021/04-wechaty-with-paddlepaddle/wechaty-structure.png)
 
 ### 几行代码融合Wechaty和PaddleHub
@@ -66,7 +66,8 @@ Wechaty的优势在于对代码质量地管理，开发者可以使用了Github 
 
 ![wechaty-paddlehub](/assets/2021/04-wechaty-with-paddlepaddle/wechaty-paddlehub.png)
 
-> Python 3.8 / Pip 20.1.1 / PaddleHub 2.0.4 / PaddlePaddle  2.0.2
+Python 3.8 / Pip 20.1.1 / PaddleHub 2.0.4 / PaddlePaddle  2.0.2
+
 
 ## 参赛支持
 
@@ -87,7 +88,7 @@ Wechaty的优势在于对代码质量地管理，开发者可以使用了Github 
 
 当然，作为一场开发者大赛，丰厚的奖金和奖品也自然必不可少。百度飞桨针对参赛选手提供了以下奖励：
 
-| 名称   | 数量 | 奖励                                  |
+| 名称   | 数量 |  奖励                                  |
 | ------ | ---- | ------------------------------------- |
 | 一等奖 | 1名  | 1万元人民币                           |
 | 二等奖 | 1名  | Apple iPad Air 256G 1个（价值2598元） |
@@ -95,9 +96,9 @@ Wechaty的优势在于对代码质量地管理，开发者可以使用了Github 
 | 早鸟奖 | 10名 | Wechaty creators 李佳芮&李卓桓《Chatbot从0到1》1本        |
 | 提交奖 | 不限 | 比赛定制社区纪念品                    |
 
-需要注意的是，所有提交了参赛作品的选手均可获得由百度飞桨官方提供的独家纪念品一份！而本次活动的最终决赛将会成为百度年中开发者盛会WAVE SUMMIT上的一环，如果你的作品足够优秀并进入了决赛阶段，那么WAVE SUMMIT全场最靓的仔很可能就是你哦！
+-----
 
-让聊天机器人更具魅力，让创意释放光芒，让才华得以施展，欢迎加入本次大赛，与大家同台竞技，打造专属于你的AI ChatBot吧！
+需要注意的是，所有提交了参赛作品的选手均可获得由百度飞桨官方提供的独家纪念品一份！而本次活动的最终决赛将会成为百度年中开发者盛会WAVE SUMMIT上的一环，如果你的作品足够优秀并进入了决赛阶段，那么WAVE SUMMIT全场最靓的仔很可能就是你哦！
 
 ## 赛程赛制
 
@@ -107,7 +108,7 @@ Wechaty的优势在于对代码质量地管理，开发者可以使用了Github 
 | 2021/4/14      | 线上比赛宣讲         |
 | 2021/4/20      | 项目repo提交入口开启 |
 | 2021/5/10      | 项目提交截止         |
-| 2021/5月中下旬 | 最终决赛             |
+| 2021/5月中下旬  | 最终决赛             |
 
 参赛对象及要求
 
