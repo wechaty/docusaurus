@@ -56,102 +56,116 @@ image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg
 
 1. **复刻（fork）wehaty代码**
 
-——不知道什么是fork？总之很复杂，网上说的也不是很明白，简单点理解就是copy一份
+    不知道什么是fork？总之很复杂，网上说的也不是很明白，简单点理解就是copy一份，到wechaty的github项目页面<https://github.com/wechaty/wechaty.js.org>，然后看图操作
+
+    ![fork](/assets/2021/04-how-to-publish-blog-on-wechaty/04.png)
 
 2. **同步你的分支**
 
-——不知道如何同步？后边说
+    不知道如何同步？后边说
 
 3. **在本地（自己的电脑上）创建你的博客分支**
 
-——使用git把github上的代码下载下来
+    使用git把github上的代码下载下来，看图操作复制地址，然后在你要存放文件的目录运行`git clone https://github.com/wechaty/wechaty.js.org.git`
+
+    ![clone](/assets/2021/04-how-to-publish-blog-on-wechaty/05.png)
 
 4. **使用markdown书写你的博客**
 
-——不知道什么是markdown？后边说
+    不知道什么是markdown？后边说
 
 5. **添加你的博客文件到`jekyll/_post`文件夹**
 
-——整个博客的书写仅需要在jekyll这个目录下操作，不要动也不要管其他目录，正文放在jekyll/_post`下，其他文件下边会说，一下以当前这篇博客为例讲解，个人认为学习此类知识最好的方式就是Copy and Modify（俗称临摹）。
+    打开下载下来的代码，整个博客的书写仅需要在jekyll这个目录下操作，不要动也不要管其他目录，正文放在jekyll/_post`下，其他文件下边会说，一下以当前这篇博客为例讲解，个人认为学习此类知识最好的方式就是Copy and Modify（俗称临摹）。
 
-例如本文正文,是在`jekyll/_post`目录下创建名为`2021-04-22-how-to-publish-blog-on-wechaty.md`的文件并在里边写正文内容。
+    例如本文正文,是在`jekyll/_post`目录下创建名为`2021-04-22-how-to-publish-blog-on-wechaty.md`的文件并在里边写正文内容。
 
-![根目录](/assets/2021/04-how-to-publish-blog-on-wechaty/01.png)
+    ![根目录](/assets/2021/04-how-to-publish-blog-on-wechaty/01.png)
 
-![jekyll目录](/assets/2021/04-how-to-publish-blog-on-wechaty/02.png)
+    ![jekyll目录](/assets/2021/04-how-to-publish-blog-on-wechaty/02.png)
 
-![2021-04-22-how-to-publish-blog-on-wechaty.md](/assets/2021/04-how-to-publish-blog-on-wechaty/03.png)
+    ![2021-04-22-how-to-publish-blog-on-wechaty.md](/assets/2021/04-how-to-publish-blog-on-wechaty/03.png)
 
-正文内容书写规范：
+    正文内容书写规范：
 
-> 添加博客头
+    > 添加博客头
 
-所有的博客都必须有标题、作者、背景图片,写在正文打最开始:
+    所有的博客都必须有标题、作者、背景图片,写在正文打最开始:
 
-```yaml
----
-title: "入门：小白如何在wechaty社区发布自己的第一篇博客"
-author: atorber
-categories: article
-tags:
-  - blog
-  - wechaty
-  - study
-  - introduction
-image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare_book.jpeg
----
+    ```yaml
+    ---
+    title: "入门：小白如何在wechaty社区发布自己的第一篇博客"
+    author: atorber
+    categories: article
+    tags:
+      - blog
+      - wechaty
+      - study
+      - introduction
+    image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare_book.jpeg
+    ---
 
-> 作者: [atorber](https://github.com/atorber/)，不务正业的产品经理
-```
+    > 作者: [atorber](https://github.com/atorber/)，不务正业的产品经理
+    ```
 
-> 写作风格
+    > 写作风格
 
-- 所有的文件名和url地址使用小写字母, 并且使用`-` 连接，不允许中文字符。例如本文正文文件名：`2021-04-22-how-to-publish-blog-on-wechaty.md`
+    - 所有的文件名和url地址使用小写字母, 并且使用`-` 连接，不允许中文字符。例如本文正文文件名：`2021-04-22-how-to-publish-blog-on-wechaty.md`
 
-- 选择合适的图片可以使博客看起来更漂亮。例如本文背景图：
+    - 选择合适的图片可以使博客看起来更漂亮。例如本文背景图：
 
-![rare-book.jpeg](/assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg)
+    ![rare-book.jpeg](/assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg)
 
 6. **添加文档中的插图到 `jekyll/assets` 文件夹，在文件夹下当前年份下建立一个以"月份+博客文件名"为名称的文件夹来存放相关图片**
 
-——- 在发布之前插入图片和视频，需要将所有图片、视频文件保存在博客专属的文件夹中，文件夹的位置和命名方式 `/jekyll/assets/文章标标题/`。例如本文图片存放文件夹：`jekyll/assets/2021/04-how-to-publish-blog-on-wechaty`，本文背景图的完整路径`jekyll/assets/2021/04-how-to-publish-blog-on-wechaty/rare_book.jpeg` 
+    在发布之前插入图片和视频，需要将所有图片、视频文件保存在博客专属的文件夹中，文件夹的位置和命名方式 `/jekyll/assets/文章标标题/`。例如本文图片存放文件夹：`jekyll/assets/2021/04-how-to-publish-blog-on-wechaty`，本文背景图的完整路径`jekyll/assets/2021/04-how-to-publish-blog-on-wechaty/rare_book.jpeg`
 
 7. **添加你的个人信息到`jekyll/_contributors/your_github_id.md`**
 
-——新建一个文件your_github_id.md，把your_github_id换成你的github账号。例如本文个人信息文件`jekyll/_contributors/atorber.md`
+    新建一个文件your_github_id.md，把your_github_id换成你的github账号。例如本文个人信息文件`jekyll/_contributors/atorber.md`
 
-> 个人信息内容
+    > 个人信息内容
 
-```yaml
----
-name: atorber
-site: <https://github.com/atorber>
-bio: 一个不误正业的产品经理
-avatar: /assets/contributors/atorber/avatar.png
-email: tyutluyc@qq.com
----
-```
+    ```yaml
+    ---
+    name: atorber
+    site: <https://github.com/atorber>
+    bio: 一个不误正业的产品经理
+    avatar: /assets/contributors/atorber/avatar.png
+    email: tyutluyc@qq.com
+    ---
+    ```
 
-> 个人头像
+    > 个人头像
 
-在`jekyll/assets/contributors`目录下新建一个your_github_id命名的文件夹，并把个人头像以avatar.png命名存放起来。
-本文个人头像完整路径`jekyll/assets/contributors/atorber/avatar.png`
+    在`jekyll/assets/contributors`目录下新建一个your_github_id命名的文件夹，并把个人头像以avatar.png命名存放起来。
+    本文个人头像完整路径`jekyll/assets/contributors/atorber/avatar.png`
 
 8. 提交更改，使用博客标题作为备注信息
 
-——以文章标题为备注信息提交。本文示例提交命令
+    以文章标题为备注信息提交。本文示例提交命令
 
-`
-git commit -m "入门：小白如何在wechaty社区发布自己的第一篇博客"
-`
+    `git commit -m "入门：小白如何在wechaty社区发布自己的第一篇博客"`
 
 9. 推送到分支
 
+    推送分支到自己的github
+
+    `git push origin master`
+
 10. 创建一个新的Pull请求
 
-11. 签署CLA（什么CLA？后边说）
+    这一步在github界面操作（也可能可以直接推送到wechaty，超哥没有get到方法）
 
-12. 等待传递GitHub操作CI，或者修复任何东西以确保CI变为绿色（Wait for pass the GitHub Action CI, or fix whatever to make sure CI turns green，百度直译，超哥也没搞太清楚，后边说）
+    ![pull request](/assets/2021/04-how-to-publish-blog-on-wechaty/06.png)
+
+11. 签署CLA
+
+    什么CLA？后边说，到自动检查的步骤会提示，首次签署时刘毅页面提示，超哥因为之前已经签署过了，暂时没办法操作截图，后边不上
+
+12. 等待传递GitHub操作CI，或者修复任何东西以确保CI变为绿色
+
+    Wait for pass the GitHub Action CI, or fix whatever to make sure CI turns green，百度直译，超哥也没搞太清楚，后边说
 
 13. 等待@wechaty的管理员审核
 
@@ -159,28 +173,33 @@ git commit -m "入门：小白如何在wechaty社区发布自己的第一篇博�
 
 ### 贡献准则
 
+需要也别之一的几个点：
 
-#### 4. 只提交相关的文件
+#### 1. markdown格式规范化校验
 
-请勿提交博客不相关的文件
+  在文件命名正确、文件存放位置正确的情况下，大部分自动校验不通过的原因是正文markwown格式存在错误，原因是系统对格式进行了严格校验，尤其是对之前会使用markdown但对使用不规范的同学来说，需要认真学习一下了，可参考文档 <https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md>
 
-#### 5. 添加视频或pdf
+#### 2. 只提交相关的文件
 
-示例：
+  请勿提交博客不相关的文件
 
-```html
-{% include iframe.html src="https://www.youtube.com/watch?v=3eq8wJfCAWs" %}
-```
+#### 3. 添加视频或pdf
 
-或者
+  示例：
 
-```html
-{% include iframe.html src="/assets/2020/qijibot/final.pdf" %}
-```
+  ```html
+  {% include iframe.html src="https://www.youtube.com/watch?v=3eq8wJfCAWs" %}
+  ```
 
-更多： [将iframe添加到wechaty博客](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)
+  或者
 
-### 测试
+  ```html
+  {% include iframe.html src="/assets/2020/qijibot/final.pdf" %}
+  ```
+
+  更多： [将iframe添加到wechaty博客](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)
+
+### 测试（进阶内容，可以了解下）
 
 为了确保一切（文件名、文件大小等）都正常，可以在“git push”之前运行以下命令检查它们。
 
@@ -193,23 +212,29 @@ npm test
 
 在本地运行Jekyll来预览博客。
 
+——什么是Jekyll，自定百度
+
 #### 0. 依赖
 
-按照官方指示在本地安装jekyll [jekyll quickstart](https://jekyllrb.com/docs/)
+  按照官方指示在本地安装jekyll [jekyll quickstart](https://jekyllrb.com/docs/)
 
 #### 1. 手动安装Jekyll
 
-在本地运行Jekyll进行博客预览(对于熟悉Ruby语言的同学更容易一些。）
+  在本地运行Jekyll进行博客预览(对于熟悉Ruby语言的同学更容易一些。）
 
-```sh
-make install
-cd jekyll
-make serve
-```
+  ```sh
+  make install
+  cd jekyll
+  make serve
+  ```
 
 #### 2. 预览博客
 
-访问 <http://127.0.0.1:4000/blog/> 可以预览博客!
+  访问 <http://127.0.0.1:4000/blog/> 可以预览博客!
+
+#### 3. 总结
+
+  安装Jekyll的过程有些小复杂了，略过吧
 
 ## 最后
 
@@ -223,7 +248,7 @@ TODO:
 
 1. macOS下报错`jekyll/assets/.DS_Store does not match /\/[0-9\-a-z_]+\./!？`
 
-mac下烦人的`.DS_Store`文件，运行`sudo find / -name ".DS_Store" -depth -exec rm {} \;`，然后，等几分钟和碰运气...
+    mac下烦人的`.DS_Store`文件，运行`sudo find / -name ".DS_Store" -depth -exec rm {} \;`，然后，等几分钟和碰运气...
 
 更多问题后续会根据反馈继续补充
 
