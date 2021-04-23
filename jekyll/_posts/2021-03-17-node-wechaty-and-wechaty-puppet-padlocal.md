@@ -1,11 +1,10 @@
 ---
 title: Wechaty+微信小程序实现群内活动报名
 author: atorber
-categories: project
+categories: article
 tags:
   - node
   - padlocal
-  - social
 image: /assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/grouupmaster.png
 ---
 
@@ -262,13 +261,3 @@ bot.start().then(() => {
 });
 
 ```
-
----
-
-name: atorber
-site: <https://github.com/atorber>
-bio: 一个不误正业的产品经理
-avatar: /assets/contributors/atorber/avatar.png
-email: <atorber@163.com>
-
----
