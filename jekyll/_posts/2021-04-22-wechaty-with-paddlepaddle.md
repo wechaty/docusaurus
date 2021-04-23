@@ -14,13 +14,13 @@ image: /assets/2021/04-wechaty-with-paddlepaddle/header.png
 
 ![logs](/assets/2021/04-wechaty-with-paddlepaddle/logs.png)
 
->  ## 比赛介绍
+## 比赛介绍
 
-   ✨ 人工智能时代的ChatBot需要具备哪些能力？
+✨ 人工智能时代的ChatBot需要具备哪些能力？
 
-   -  它是智能小管家，帮你整理所有“码了就等于看了”的资料？
-   -  它是斗图大师，分分钟帮你p好好友的鬼畜表情包？
-   -  它是无情的夸人机器，每天都能自动生成新的彩虹屁？
+- 它是智能小管家，帮你整理所有“码了就等于看了”的资料？
+- 它是斗图大师，分分钟帮你p好好友的鬼畜表情包？
+- 它是无情的夸人机器，每天都能自动生成新的彩虹屁？
 
 实用的、有趣的、鬼畜的… 不知大侠有何高见？快来组队实现吧！PaddlePaddle融合Wechaty能 spark 出怎样的inspiration？我们欢迎所有关于ChatBot的创意项目！只要你的项目够优秀，官方送你出道！
 
@@ -35,7 +35,6 @@ image: /assets/2021/04-wechaty-with-paddlepaddle/header.png
 时光携技术一同推动了命运的转轮，AI发展至今也早不是昔日的吴下阿蒙。如今，ELIZA的后辈们活跃于各个领域，手机上的智能助手，电商用的智能客服，家庭生活的智能管家，交流用的表情包……ChatBot的训练语句在缩短，场景使用时间却延长了；ChatBot开发成本在减少，发挥空间却增加了；ChatBot的门槛在降低，人文温度却提升了。这一切的变化无不在告知这个时代：**ChatBot的新时代到来了**。
 
 在这个时代里，ChatBot的竞争早已不再局限于技术，创意也显得尤为重要。因此，为了发掘更多优秀的ChatBot开发项目，培养更大优质人才，PaddleHub携手开源聊天机器人框架Wechaty带来了《AI ChatBot创意赛》。如果你在ChatBot开发方面有想法也有能力，那么欢迎报名参与本次大赛，为未来设计一款更加新颖、可靠、实用的ChatBot。而如果你的ChatBot创意项目足够优秀并进入了最终决赛，那么飞桨官方将会帮助你登上WAVE SUMMIT 2021峰会的舞台！
-
 
 ## 赛题介绍
 
@@ -57,7 +56,6 @@ Wechaty的优势在于对代码质量地管理，开发者可以使用了Github 
 
 目前，在Github上已有千余个开源项目基于Wechaty构建了聊天机器人。另外，Wechaty统一了即时通讯软件平台的对话接口，仅需要一套代码即可运行在多个平台之上，目前已成熟高效地推动了包括社群管理、数据运维、办公、资讯、广告、营销等多个领域不同实用场景的落地。比如OSS.Chat能够打通Github开发者社区，让开源社区获得即时动态；YanBot辅助管理相关的多个微信讨论群The R-fMRI Journal Club，并对用户对领域内文献的讨论和相关脑影像技术问题进行桥接；以及python-Wechaty斗图机器人能够与联系人趣聊斗图。
 
-
 ![wechaty-structure](/assets/2021/04-wechaty-with-paddlepaddle/wechaty-structure.png)
 
 ### 几行代码融合Wechaty和PaddleHub
@@ -66,8 +64,7 @@ Wechaty的优势在于对代码质量地管理，开发者可以使用了Github 
 
 ![wechaty-paddlehub](/assets/2021/04-wechaty-with-paddlepaddle/wechaty-paddlehub.png)
 
-Python 3.8 / Pip 20.1.1 / PaddleHub 2.0.4 / PaddlePaddle  2.0.2
-
+> Python 3.8 / Pip 20.1.1 / PaddleHub 2.0.4 / PaddlePaddle 2.0.2
 
 ## 参赛支持
 
