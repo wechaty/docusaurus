@@ -21,4 +21,3 @@ image: /assets/2021/04-ai-chatbot-paddlehub/banner.png
 
 想要了接更多关于合鸟子👆视频中，AI续写情诗Paddlehub训练模型的，请看：
 [飞桨开发者说：AI教你写情诗](https://www.bilibili.com/video/BV1Nv41117eA?from=search&seid=6621079025823617647/)
-
