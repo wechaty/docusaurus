@@ -3,22 +3,22 @@ slug: /bot5/
 title: BOT Friday Club
 ---
 
-![BOT5 Club](/img/docs/bot5/cui.png)
+![BOT Friday Club](/img/docs/bot5/cui.png)
 
-BOT Friday Club (BOT5) is entrepreneur forum for chatbot makers to discuss the state-of-art machine learning algorithms, product market fit, and business straitegies.
+BOT Friday (BOT5 Club) is entrepreneur forum for chatbot makers to discuss the state-of-art machine learning algorithms, product market fit, and business straitegies.
 
 > BOT Friday Club 是一个技术极客讨论聊天机器人行业落地和商业应用的创业论坛。
 
 BOT5 is a half-open professional conversational user interface seminar for chatbot fans.
 
-Read our [Code of Conduct](http://www.bot5.club/manuals/code-of-conduct/) and [Executive Manual](http://www.bot5.club/slides/manual/#/)
+Read our [Code of Conduct](http://www.bot5.ml/manuals/code-of-conduct/) and [Executive Manual](http://www.bot5.ml/slides/manual/#/)
 
 ## Newcomer Requirements
 
 1. Strong passion for building chatbot
 1. Strong willingness for sharing
 
-Follow this [Newcomer Manual](http://www.bot5.club/manuals/newcomer/) and read our [Member Manual](http://www.bot5.club/manuals/member/)
+Follow this [Newcomer Manual](http://www.bot5.ml/manuals/newcomer/) and read our [Member Manual](http://www.bot5.ml/manuals/member/)
 
 ## Members
 
@@ -26,7 +26,7 @@ Follow this [Newcomer Manual](http://www.bot5.club/manuals/newcomer/) and read o
 - Giant company product managers
 - Entrepreneurs
 
-Learn our great [BOT5 members](http://www.bot5.club/people/)
+Learn our great [BOT5 members](http://www.bot5.ml/people/)
 
 ## Topics
 
@@ -34,7 +34,7 @@ Learn our great [BOT5 members](http://www.bot5.club/people/)
 - Ecosystem
 - Business
 
-Read our latest events blog posts from our website: <https://www.bot5.club>
+Read our latest events blog posts from our website: <https://www.bot5.ml>
 
 ## Join us
 
