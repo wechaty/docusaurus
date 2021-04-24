@@ -15,6 +15,12 @@ Extensible Interactive CLI Plugin for Wechaty ChatOps, Powered by Vorpal.
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-blue.svg)](https://www.typescriptlang.org/)
 
+## Requirements
+
+1. [Node.js](https://nodejs.org/en/download) v12+
+2. [Wechaty](https://github.com/wechaty/wechaty) v0.40+
+3. [WechatyVorpal](https://github.com/wechaty/wechaty-vorpal) v0.2+
+
 ## Usage
 
 ```ts
