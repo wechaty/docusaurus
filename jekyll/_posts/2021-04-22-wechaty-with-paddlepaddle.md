@@ -6,29 +6,23 @@ tags:
   - baidu
   - ai
   - chatbot
-  - completion
+  - competition
 image: /assets/2021/04-wechaty-with-paddlepaddle/header.png
 ---
+比赛报名入口：[AI ChatBot 创意赛](https://aistudio.baidu.com/aistudio/competition/detail/79)
+比赛时间：2021/04/12 - 2021/05/31
 
-> 作者: [wj-mcat](https://github.com/wj-Mcat) 自然语言处理算法工程师，python-wechaty 作者
-
-<!-- more -->
-
-AI ChatBot Creation Camp，创意赛重磅来袭！ 比赛时间：2021/04/12 - 2021/05/31
-
-欢迎所有关于ChatBot的创意项目！只要你的项目够优秀，官方送你出道! 比赛地址：[AI ChatBot 创意赛](https://aistudio.baidu.com/aistudio/competition/detail/79)
+![logs](/assets/2021/04-wechaty-with-paddlepaddle/logs.png)
 
 ## 比赛介绍
 
-> 🤔人工智能时代的ChatBot需要具备哪些能力？
+✨ 人工智能时代的ChatBot需要具备哪些能力？
 
-- ✨它是智能小管家，帮你整理所有“码了就等于看了”的资料？
-- ✨它是斗图大师，分分钟帮你p好好友的鬼畜表情包？
-- ✨它是无情的夸人机器，每天都能自动生成新的彩虹屁？
+- 它是智能小管家，帮你整理所有“码了就等于看了”的资料？
+- 它是斗图大师，分分钟帮你p好好友的鬼畜表情包？
+- 它是无情的夸人机器，每天都能自动生成新的彩虹屁？
 
-实用的、有趣的、鬼畜的… 不知大侠有何高见？快来组队实现吧！PaddlePaddle融合Wechaty能 spark 出怎样的inspiration？
-
-我们欢迎所有关于ChatBot的创意项目！只要你的项目够优秀，官方送你出道！
+实用的、有趣的、鬼畜的… 不知大侠有何高见？快来组队实现吧！PaddlePaddle融合Wechaty能 spark 出怎样的inspiration？我们欢迎所有关于ChatBot的创意项目！只要你的项目够优秀，官方送你出道！
 
 ![eliza](/assets/2021/04-wechaty-with-paddlepaddle/eliza.png)
 
@@ -41,8 +35,6 @@ AI ChatBot Creation Camp，创意赛重磅来袭！ 比赛时间：2021/04/12 - 
 时光携技术一同推动了命运的转轮，AI发展至今也早不是昔日的吴下阿蒙。如今，ELIZA的后辈们活跃于各个领域，手机上的智能助手，电商用的智能客服，家庭生活的智能管家，交流用的表情包……ChatBot的训练语句在缩短，场景使用时间却延长了；ChatBot开发成本在减少，发挥空间却增加了；ChatBot的门槛在降低，人文温度却提升了。这一切的变化无不在告知这个时代：**ChatBot的新时代到来了**。
 
 在这个时代里，ChatBot的竞争早已不再局限于技术，创意也显得尤为重要。因此，为了发掘更多优秀的ChatBot开发项目，培养更大优质人才，PaddleHub携手开源聊天机器人框架Wechaty带来了《AI ChatBot创意赛》。如果你在ChatBot开发方面有想法也有能力，那么欢迎报名参与本次大赛，为未来设计一款更加新颖、可靠、实用的ChatBot。而如果你的ChatBot创意项目足够优秀并进入了最终决赛，那么飞桨官方将会帮助你登上WAVE SUMMIT 2021峰会的舞台！
-
-![completion-invitor](/assets/2021/04-wechaty-with-paddlepaddle/completion-invite.png)
 
 ## 赛题介绍
 
@@ -72,7 +64,7 @@ Wechaty的优势在于对代码质量地管理，开发者可以使用了Github 
 
 ![wechaty-paddlehub](/assets/2021/04-wechaty-with-paddlepaddle/wechaty-paddlehub.png)
 
-> Python 3.8 / Pip 20.1.1 / PaddleHub 2.0.4 / PaddlePaddle  2.0.2
+> Python 3.8 / Pip 20.1.1 / PaddleHub 2.0.4 / PaddlePaddle 2.0.2
 
 ## 参赛支持
 
@@ -93,7 +85,7 @@ Wechaty的优势在于对代码质量地管理，开发者可以使用了Github 
 
 当然，作为一场开发者大赛，丰厚的奖金和奖品也自然必不可少。百度飞桨针对参赛选手提供了以下奖励：
 
-| 名称   | 数量 | 奖励                                  |
+| 名称   | 数量 |  奖励                                  |
 | ------ | ---- | ------------------------------------- |
 | 一等奖 | 1名  | 1万元人民币                           |
 | 二等奖 | 1名  | Apple iPad Air 256G 1个（价值2598元） |
@@ -101,9 +93,9 @@ Wechaty的优势在于对代码质量地管理，开发者可以使用了Github 
 | 早鸟奖 | 10名 | Wechaty creators 李佳芮&李卓桓《Chatbot从0到1》1本        |
 | 提交奖 | 不限 | 比赛定制社区纪念品                    |
 
-需要注意的是，所有提交了参赛作品的选手均可获得由百度飞桨官方提供的独家纪念品一份！而本次活动的最终决赛将会成为百度年中开发者盛会WAVE SUMMIT上的一环，如果你的作品足够优秀并进入了决赛阶段，那么WAVE SUMMIT全场最靓的仔很可能就是你哦！
+-----
 
-让聊天机器人更具魅力，让创意释放光芒，让才华得以施展，欢迎加入本次大赛，与大家同台竞技，打造专属于你的AI ChatBot吧！
+需要注意的是，所有提交了参赛作品的选手均可获得由百度飞桨官方提供的独家纪念品一份！而本次活动的最终决赛将会成为百度年中开发者盛会WAVE SUMMIT上的一环，如果你的作品足够优秀并进入了决赛阶段，那么WAVE SUMMIT全场最靓的仔很可能就是你哦！
 
 ## 赛程赛制
 
@@ -113,7 +105,7 @@ Wechaty的优势在于对代码质量地管理，开发者可以使用了Github 
 | 2021/4/14      | 线上比赛宣讲         |
 | 2021/4/20      | 项目repo提交入口开启 |
 | 2021/5/10      | 项目提交截止         |
-| 2021/5月中下旬 | 最终决赛             |
+| 2021/5月中下旬  | 最终决赛             |
 
 参赛对象及要求
 
