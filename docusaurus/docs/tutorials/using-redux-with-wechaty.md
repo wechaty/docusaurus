@@ -21,7 +21,7 @@ Wrap Wechaty with Redux Actions &amp; Reducers for Easy State Management
 
 ## Why use Redux with Wechaty
 
-To be write...
+Redux is used for application state management.
 
 ## What is Ducks
 
