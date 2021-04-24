@@ -1,11 +1,12 @@
 ---
 title: "AI Poet Chatbot powered by Python Wechaty & PaddleHub"
 author: valerieeeee
-categories: article
+categories: tutorial
 tags:
   - baidu
   - ai
   - chatbot
+  - paddle
 image: /assets/2021/04-ai-chatbot-paddlehub/banner.png
 ---
 
