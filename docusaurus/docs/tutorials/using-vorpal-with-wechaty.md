@@ -26,7 +26,7 @@ Extensible Interactive CLI Plugin for Wechaty ChatOps, Powered by Vorpal.
 ```ts
 import { Wechaty }        from 'wechaty'
 import { WechatyVorpal }  from 'wechaty-vorpal'
-import hackerNews         from 'vorpal-hacker-news'
+const hackerNews = require('vorpal-hacker-news')
 
 const wechaty = new Wechaty()
 
