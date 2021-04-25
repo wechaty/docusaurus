@@ -66,9 +66,9 @@ Wechaty的开源社区，同样遵循了众多开源社区的组织形式，包�
 
 推荐阅读和这个项目有关的三篇博客：
 
-* [实现支持微信小程序的聊天机器人](https://www.bot5.club/talks/wechaty-send-miniprogram/)
+* [实现支持微信小程序的聊天机器人](https://www.bot5.ml/talks/wechaty-send-miniprogram/)
 
-* [The Bad Part of My Chatbot Experience](https://www.bot5.club/talks/maodou-bot-limingth/)
+* [The Bad Part of My Chatbot Experience](https://www.bot5.ml/talks/maodou-bot-limingth/)
 
 * [如何用 padpro 发送微信小程序](https://wechaty.github.io/send-miniprogram-using-padpro/)
 
