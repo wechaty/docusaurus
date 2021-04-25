@@ -74,7 +74,7 @@ function Home () {
                 styles.getStarted,
               )}
               to={useBaseUrl('/press')}>
-              wechaty@chatie.io
+              wechaty@googlegroups.com
             </Link>
           </div>
           <br /><br />
