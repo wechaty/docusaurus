@@ -9,10 +9,11 @@ sidebar_label: 'Showcases: Index'
 ## Table of Content
 
 - [OSS.Chat](osschat-bot.mdx)
-  - The missing part of the Apache Way
+  - The bridge to the Apache Way
 - [Rui.BOT](rui-bot.mdx)
   - An assistant bot for Rui (Founder & CEO of Juzi.BOT)
 - [Friday BOT](friday-bot.mdx)
-  - A bot designed for serving the BOT5.Club and Wechaty community
+  - A bot designed for serving the BOT5 Club and Wechaty community
 - [Awesome Wechaty projects](awesome-wechaty.mdx)
   - The open source projects that using Wechaty
+  
