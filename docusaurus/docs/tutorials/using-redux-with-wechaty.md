@@ -21,11 +21,21 @@ Wrap Wechaty with Redux Actions &amp; Reducers for Easy State Management
 
 ## Why use Redux with Wechaty
 
-To be write...
+Redux is used for application state management.
 
 ## What is Ducks
 
 [![Ducksify Extension](https://img.shields.io/badge/Redux-Ducksify-yellowgreen)](https://github.com/huan/ducks#3-ducksify-extension-currying--api-interface)
+
+🦆🦆🦆Ducks is a Reducer Bundles Manager that Implementing the Redux Ducks Modular Proposal with Great Convenience.
+
+> Image Credit: [Alamy](https://www.alamy.com/cute-duck-and-little-ducks-over-white-background-colorful-design-vector-illustration-image185379753.html)
+
+[![Ducks Modular Proposal](https://img.shields.io/badge/Redux-Ducks%202015-yellow)](https://github.com/erikras/ducks-modular-redux)
+[![Re-Ducks Extended](https://img.shields.io/badge/Redux-Re--Ducks%202016-orange)](https://github.com/alexnm/re-ducks)
+[![Ducksify Extension](https://img.shields.io/badge/Redux-Ducksify%202020-yellowgreen)](https://github.com/huan/ducks#3-ducksify-extension-currying--ducksify-interface)
+
+Ducks offers a method of handling redux module packaging, installing, and running with your Redux store, with middleware support.
 
 See [Ducks](https://github.com/huan/ducks)
 
