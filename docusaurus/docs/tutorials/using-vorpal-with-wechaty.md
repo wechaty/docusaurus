@@ -119,7 +119,7 @@ Now, the bot is ready. Scan the QR code using WeChat or WhatsApp (according to t
 
 ## Bot demo
 
-![Wechaty Vorpal Hacker News](https://wechaty.github.io/wechaty-vorpal/images/wechaty-vorpal-hacker-news.png)
+![Wechaty Vorpal Hacker News](../../static/img/docs/tutorials/wechaty-vorpal-hacker-news.png)
 
 Some of the commands that you can try out with the bot are as follows:
 
