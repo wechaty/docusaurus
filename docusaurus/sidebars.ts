@@ -191,6 +191,7 @@ const introduction = {
     'overview',
     'wechaty',
     subMenu(showcases),
+    subMenu(caseStudy),
     subMenu(community),
     subMenu(contributing),
     'changelog',
@@ -210,7 +211,6 @@ const tutorials = {
   items: [
     'tutorials/overview',
     subMenu(gettingStarted),
-    subMenu(caseStudy),
     'tutorials/video-tutorial',
     'tutorials/docker',
     'tutorials/usage-with-heroku',
