@@ -15,7 +15,7 @@ Extensible Interactive CLI Plugin for Wechaty ChatOps, Powered by Vorpal.
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-blue.svg)](https://www.typescriptlang.org/)
 
-## Try out the bot 
+## Try out the bot
 
 [![Edit vorpal-wechaty-hackernews](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/sbis04/vorpal-wechaty-hackernews/tree/main/?fontsize=12&hidenavigation=1&module=%2Fvorpal-bot.ts&theme=dark)
 
@@ -23,7 +23,7 @@ You can try out the **Vorpal Hacker News** chat bot using this interactive CodeS
 
 Just scan the generated QR code with **WeChat** app, and you are ready to play with the bot!
 
-<iframe 
+<iframe
   class="codesandbox"
   src="https://codesandbox.io/embed/github/sbis04/vorpal-wechaty-hackernews/tree/main/?fontsize=12&hidenavigation=1&module=%2Fvorpal-bot.ts&theme=dark"
   title="vorpal-wechaty-hackernews"
@@ -58,7 +58,7 @@ See: [wechaty-vorpal-contrib](https://github.com/wechaty/wechaty-vorpal-contrib)
 
 ## Getting started
 
-In this tutorial you will learn how to use [Vorpal](https://github.com/wechaty/wechaty-vorpal) with [Wechaty](https://wechaty.js.org/) to build a [Hacker News](https://news.ycombinator.com/) chat bot. 
+In this tutorial you will learn how to use [Vorpal](https://github.com/wechaty/wechaty-vorpal) with [Wechaty](https://wechaty.js.org/) to build a [Hacker News](https://news.ycombinator.com/) chat bot.
 
 Before getting started, make sure you have `Node.js` installed on your system. If you do not have `Node.js` installed (or have a version below 12), then you need to install the latest version of `Node.js` by following the links below:
 
@@ -93,7 +93,7 @@ npm install
 
 First, you have to `export/set` the environment variables, and then you can run the bot:
 
-#### Linux/macOS:
+#### Linux/macOS
 
 ```bash
 export WECHATY_LOG=verbose
@@ -103,7 +103,7 @@ export WECHATY_PUPPET=wechaty-puppet-wechat
 npm start
 ```
 
-#### Windows:
+#### Windows
 
 ```bash
 set WECHATY_LOG=verbose
