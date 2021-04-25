@@ -8,31 +8,34 @@
 
 <https://wechaty.js.org> is the official Wechaty website for publishing latest news, blog posts, and documentation from our open source community.
 
-## How to post a blog
+## How To Post a Blog
 
-1. Fork it
-1. [Syncing your fork](https://help.github.com/cn/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
-1. Create your blog branch (git checkout -b your-blog)
-1. Write your blog in markdown
-1. Add your blog to `jekyll/_post` folder
-1. Add related image to `jekyll/assets` folder (under `$YEAR/$MONTH-your-blog-slug/` directory to contain your images)
-1. Add your info into `jekyll/_contributors/your_github_id.md`
-1. Commit your changes (git commit -am "${YOUR_BLOG_TITLE")
-1. Push to the branch
-1. Create new Pull Request
-1. Sign the CLA
-1. Wait for pass the GitHub Action CI, or fix whatever to make sure CI turns green
-1. Wait for @wechaty/editors to review
+To submit a blog post for publication on [wechaty.js.org](https://wechaty.js.org), you can follow the steps below.
+
+1. Fork this repository. If you don't know what is meant by forking a repository, read about it [here](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
+2. Clone the forked repository to your local machine. If you don't know how to do that, [this article](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) explains it well
+3. Make sure your forked repository is in sync with the main repository. If you don't know how to sync a forked repository,read about it in [this article](https://help.github.com/cn/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+4. We prefer using [gitHub flow](https://guides.github.com/introduction/flow/). Therefore start by creating a branch for your blog using the command `git checkout -b name-of-blog-branch`. Give the branch a meaningful name
+5. Create a markdown file in [jekyll/\_posts](./jekyll/_posts) folder. The file name should follow the format `YYYY-MM-DD-your-blog-slug.md`. For example `2016-12-03-welcome-to-wechaty.md`
+6. Write your blog in markdown in the file you created in the previous step. If you are not familiar with markdown syntax, you can learn it [here](https://guides.github.com/features/mastering-markdown/)
+7. Add related images to [jekyll/assets](./jekyll/assets) folder under `$YEAR/$MONTH-your-blog-slug/` directory
+8. Add your info into `jekyll/_contributors/your_github_id.md`
+9. Commit your changes using the command `git commit -am "YOUR_BLOG_TITLE"`. `YOUR_BLOG_TITLE` is the title of your blog
+10. Push you branch to github using the command `git push origin name-of-blog-branch`.
+11. Create new Pull Request(PR)
+12. Sign the [CLA](https://en.wikipedia.org/wiki/Contributor_License_Agreement)
+13. Wait for the continuous integration workflow run to finish. If it is failing, fix whatever is making it to fail so that CI turns green
+14. Wait for @wechaty/editors to review your PR
 
 That's it!
 
-## Contribution Guidelines
+## Guidelines For Writing a Blog Post
 
-### 1. Add Blog Header
+### 1. Your blog post should have a Header
 
-All blog should has title, author, image...
+The header of your blog post should have a title, author and image.
 
-Example as follows:
+This is illustrated in the example below:
 
 ```yaml
 ---
@@ -40,7 +43,6 @@ title: "'Score Your Face Photo' a ML&Wechaty practice"
 author: your_github_username
 image: your_teaser_image_path
 ---
-
 <One line abstract for your blog post>
 
 <Your beautiful blog post contents...>
@@ -48,17 +50,19 @@ image: your_teaser_image_path
 
 ### 2. Writing Style
 
-- Keep all filenames & url as lowercase, and use `-` to connect words instead of space. e.g. `2017-10-06-wechat-pc-impactor` instead of `2017-10-06-WeChat PC Impactor`. No Chinese should be use in all filenames.
+- You should keep all filenames and URLs as lowercase. Use `-` character between words instead of space when creating a new file or directory. e.g. `2017-10-06-wechat-pc-impactor` instead of `2017-10-06-WeChat PC Impactor`. No Chinese should be used in any filename.
 - Find a good image for the blog to make it more beautiful.
-- Embed the photo & video before publishing, save all external file to the blog `/jekyll/assets/${YEAR}/$MONTH-your-blog-slug/` directory.
+- You should embed photos and videos before publishing, save all external files to the `/jekyll/assets/${YEAR}/$MONTH-your-blog-slug/` directory.
 
-### 4. Just Commit Related Files
+### 3. Do Not Commit Unrelated Files
 
-Please do not commit unrelated files.
+Please do not commit unrelated files. It will keep things tidy and make it easier to review your PR.
 
-### 5. Add Videos or pdf
+### 4. How To Add Videos and PDFs To Your Blog Post
 
-Example
+You can add videos and PDFs to your blog post by using the syntax below.
+
+Example of how to add video or pdf
 
 ```html
 {% include iframe.html src="https://www.youtube.com/watch?v=3eq8wJfCAWs" %}
@@ -70,28 +74,24 @@ or
 {% include iframe.html src="/assets/2020/qijibot/final.pdf" %}
 ```
 
-see more： [Add iframe to wechaty blog](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)
+You can read more at： [Add iframe to wechaty blog](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)
 
-## Test
+## How To Run Tests
 
-In order to make sure everything(file name, file size, etc) is ok, you can run the following command to check them before `git push`.
+In order to make sure your changes have not broken anything, you can run the following commands before pushing your changes to gitHub.
 
 ```sh
 npm install
 npm test
 ```
 
-## Preview
+## How To Preview Your changes
 
-Run the Jekyll localhost for blog preview.
-
-### 0. Prerequisites
-
-Follow in the official instruction to install jekyll in your local [jekyll quickstart](https://jekyllrb.com/docs/)
+If you want to preview your blog post or changes on locahost, you need to have Jekyll installed in your machine. You can follow the [jekyll quickstart](https://jekyllrb.com/docs/) instructions to install jekyll.
 
 ### 1. Install Jekyll by Hand
 
-Run the Jekyll at localhost for blog preview. (It would be easier for a Ruby expert.)
+Run Jekyll at localhost to preview your blog post by running the commands below.
 
 ```sh
 make install
@@ -101,15 +101,17 @@ make serve
 
 ### 2. Preview the Blog
 
-Go to <http://127.0.0.1:4000/blog/> , you can preview the blog successfully!
+You can view the blog by navigating to <http://127.0.0.1:4000/blog/> in your browser
 
-## Welcome to contribute
+## How To Make Other Contributions
+
+If you are not interested in writing a blog post but would still love to make a contribution, you are still welcome. We are delighted to have you around.
 
 ### Why contribute?
 
 As an open source product, Wechaty thrives from contributions of community members. Whatever your skill set is, there is a lot you can do to help us make Wechaty better! So start forking!
 
-At the same time, we also meet up offline all over the world, here is some activities:
+At the same time, we also meet up offline all over the world. Here are some activities you are invited to join if you are interested:
 
 - [Wechaty Contributor Dinner](https://wechaty.js.org/2017/04/26/wechaty-meeting/)
 - [The memorabilia of The First Chatie WWDC Party](https://wechaty.js.org/2017/06/06/the-first-chatie-wwdc-party/)
@@ -118,13 +120,13 @@ At the same time, we also meet up offline all over the world, here is some activ
 - [Wechaty Country Wide Developer Conference](https://wechaty.js.org/2018/09/15/country-wide-developer-conference/)
 - .....
 
-### How to contribute docs?
+### How To Contribute To the Documentation
 
-- Fork this repo
-- Create your doc branch: `git checkout -b doc`
-- Write this doc in markdown
-- Commit your changes `git commit -am 'doc comment'`
-- Push to the branch
+- Fork this repository
+- Create your documentation branch: `git checkout -b branch-name`
+- Make changes to the documentation in markdown
+- Commit your changes using the command `git commit -am 'commit message'`
+- Push your changes to gitHub
 - Create new Pull Request
 
 ## Resources
