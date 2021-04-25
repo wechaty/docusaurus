@@ -29,7 +29,7 @@ During its history, Wechaty has been updated 24 times, attracted about 10,000 de
 
 “We built Wechaty to provide the community with a good communication platform,” the duo says. “They are passionate to test, find problems, and submit the quantity of pull requests to help Wechaty repair and grow in return. Certainly, we could say that without these fantastic contributors and community, we could not have today’s high-quality Wechaty!”
 
-Wechaty actively supports this community with hundreds of technical blogs and videos, docs, and case studies available on the [official website](https://wechaty.js.org). Further, the team organizes [Bot Friday](https://www.bot5.club), a weekly club for chatbot builders and chatbot entrepreneurs which discusses and explores technical problems.
+Wechaty actively supports this community with hundreds of technical blogs and videos, docs, and case studies available on the [official website](https://wechaty.js.org). Further, the team organizes [Bot Friday](https://www.bot5.ml), a weekly club for chatbot builders and chatbot entrepreneurs which discusses and explores technical problems.
 
 “As Microsoft MVPs, we are always excited to hear “Thank you for sharing. Your project helps us to understand how AI-related projects can make a positive difference in the world’,” the duo says.
 
