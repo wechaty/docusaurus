@@ -12,19 +12,21 @@ import ShortestChatbots from '../polyglot/transclusions/shortest-chatbots.mdx'
 
 You can setup your own server for running locally. Just follow the steps below:
 
-1. Install **Node.js**
+1. Install build tools
 1. Clone the **Wechaty Getting Started** repository
 1. Install dependencies
 1. Run the bot
 
 <ShortestChatbots />
 
-### Requirements
+## Requirements
 
 1. [Node.js](https://nodejs.dev/) v12+
 1. [Wechaty Puppet Service TOKEN](https://wechaty.js.org/docs/puppet-services/) (if you want to use RPA protocols other than Web)
 
-### 1. Install Node.js (>=12)
+## 1. Install build tools
+
+### Install Node.js (>=12)
 
 You will need `Node.js` for running the bot. If you do not have `Node.js` installed (or have a version below 12),
 then you need to install the latest version of `Node.js` by following the links below:
@@ -39,24 +41,62 @@ then you need to install the latest version of `Node.js` by following the links 
 
 :::
 
-### 2. Clone repository
+### Install make
 
-You can clone the **Wechaty Getting Started** repository by following these commands:
+You will need `make` for running the **Makefile**, use the command below to install:
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```sh
+sudo apt install build-essential
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```sh
+brew install make
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```sh
+choco install make
+```
+
+</TabItem>
+</Tabs>
+
+## 2. Clone repository
+
+You can clone the [Wechaty Getting Started](https://github.com/wechaty/wechaty-getting-started) repository by following the below command, and navigate to the directory:
 
 ```bash
 git clone https://github.com/wechaty/wechaty-getting-started
 cd wechaty-getting-started
 ```
 
-### 3. Install dependencies
+## 3. Install dependencies
 
 For installing the required `npm` dependencies run the following:
 
-```sh
-npm install
+```bash
+# npm install
+make install
 ```
 
-### 4. Run the bot
+## 4. Run the bot
 
 First, you have to `export/set` the environment variables, and then you can run the bot:
 
@@ -75,9 +115,10 @@ First, you have to `export/set` the environment variables, and then you can run 
 ```bash
 export WECHATY_LOG=verbose
 export WECHATY_PUPPET=wechaty-puppet-wechat
-npm start
+make bot
 # the above is equals to the below command:
-# npx ts-node examples/ding-dong-bot.ts
+# npm start
+#   or, npx ts-node examples/ding-dong-bot.ts
 ```
 
 </TabItem>
@@ -86,9 +127,10 @@ npm start
 ```bash
 export WECHATY_LOG=verbose
 export WECHATY_PUPPET=wechaty-puppet-wechat
-npm start
+make bot
 # the above is equals to the below command:
-# npx ts-node examples/ding-dong-bot.ts
+# npm start
+#   or, npx ts-node examples/ding-dong-bot.ts
 ```
 
 </TabItem>
@@ -97,9 +139,10 @@ npm start
 ```bash
 set WECHATY_LOG=verbose
 set WECHATY_PUPPET=wechaty-puppet-wechat
-npm start
+make bot
 # the above is equals to the below command:
-# npx ts-node examples/ding-dong-bot.ts
+# npm start
+#   or, npx ts-node examples/ding-dong-bot.ts
 ```
 
 </TabItem>
@@ -108,7 +151,7 @@ npm start
 You can install `npx` by using this command:
 
 ```sh
-npm install -g npm
+npm install -g npx
 ```
 
 > There are various **Wechaty puppets** available, you can know more about them [here](https://github.com/wechaty/wechaty-getting-started#working-with-different-puppets).
