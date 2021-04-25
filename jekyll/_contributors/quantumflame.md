@@ -1,7 +1,7 @@
 ---
 name: Tom
 site: https://github.com/quantumFlame
-avatar: /assets/contributors/quantum-flame/avatar.png
+avatar: /assets/contributors/quantumflame/avatar.png
 bio: A student curious about and interested in many things I don't know.
 email: 
 twitter: 
