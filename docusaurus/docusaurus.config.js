@@ -84,7 +84,7 @@ module.exports = {
           title: 'More',
           items: [
             { label: 'Blog',      href: 'https://wechaty.js.org/blog/' },
-            { label: 'Book',      href: 'http://www.bot5.club/blogs/chatbot-0-1/' },
+            { label: 'Book',      href: 'http://www.bot5.ml/blogs/chatbot-0-1/' },
             { label: 'Branding',  to:   'branding' },
             { label: 'Press',     to:   'press' },
             { label: 'GitHub',    href: 'https://github.com/wechaty/wechaty#readme' },
