@@ -17,17 +17,31 @@ Wrap Wechaty with Redux Actions &amp; Reducers for Easy State Management
 
 ## What is Redux
 
-[Redux](https://redux.js.org) is a Predictable State Container for JS Apps
+[Redux](https://redux.js.org) is a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native environments
 
 ## Why use Redux with Wechaty
 
-To be write...
+Redux is used for application state management.
+
+* makes the state predictable
+* easier to trace which action causes any change
+* makes it easier to test, maintain and debug
 
 ## What is Ducks
 
 [![Ducksify Extension](https://img.shields.io/badge/Redux-Ducksify-yellowgreen)](https://github.com/huan/ducks#3-ducksify-extension-currying--api-interface)
 
-See [Ducks](https://github.com/huan/ducks)
+🦆🦆🦆Ducks is a Reducer Bundles Manager that Implementing the Redux Ducks Modular Proposal with Great Convenience.
+
+> Image Credit: [Alamy](https://www.alamy.com/cute-duck-and-little-ducks-over-white-background-colorful-design-vector-illustration-image185379753.html)
+
+[![Ducks Modular Proposal](https://img.shields.io/badge/Redux-Ducks%202015-yellow)](https://github.com/erikras/ducks-modular-redux)
+[![Re-Ducks Extended](https://img.shields.io/badge/Redux-Re--Ducks%202016-orange)](https://github.com/alexnm/re-ducks)
+[![Ducksify Extension](https://img.shields.io/badge/Redux-Ducksify%202020-yellowgreen)](https://github.com/huan/ducks#3-ducksify-extension-currying--ducksify-interface)
+
+Ducks offers a method of handling redux module packaging, installing, and running with your Redux store, with middleware support.
+
+See [Ducks](https://github.com/huan/ducks) is a Reducer Bundles Manager that Implements the Redux Ducks Modular Proposal with Great Convenience. It offers a method of handling redux module packaging, installing, and running with your Redux store, with middleware support.
 
 ## Usage
 
@@ -56,9 +70,8 @@ import {
   Api,
 }                         from 'wechaty-redux'
 
-/**
- * 1. Configure Store with RxJS Epic Middleware for Wechaty Ducks API
- */
+// 1. Configure Store with RxJS Epic Middleware for Wechaty Ducks API
+
 const epicMiddleware = createEpicMiddleware()
 
 const store = createStore(
@@ -69,19 +82,19 @@ const store = createStore(
 const rootEpic = combineEpics(...Object.values(Api.epics))
 epicMiddleware.run(rootEpic)
 
-/**
- * 2. Instanciate Wechaty and Install Redux Plugin
- */
+// 2. Instanciate Wechaty and Install Redux Plugin
+
 const bot = Wechaty.instance({ puppet: 'wechaty-puppet-mock' })
 bot.use(WechatyRedux({ store }))
 
-/**
- * 3. Using Redux Store with Wechaty Ducks API!
- */
+// 3. Using Redux Store with Wechaty Ducks API!
+
 store.subscribe(() => console.info(store.getState()))
 
 store.dispatch(Api.actions.ding(bot.id, 'dispatch a ding action'))
+
 // The above code 👆 is exactly do the same thing with the following code 👇 :
+
 Api.operations.ding(store.dispatch)(bot.id, 'call ding from operations')
 ```
 
@@ -95,22 +108,19 @@ import {
   Api,
 }                   from 'wechaty-redux'
 
-/**
- * 1. Ducksify Wechaty Redux API
- */
+// 1. Ducksify Wechaty Redux API
+
 const ducks = new Ducks({ wechaty: Api })
 const store = ducks.configureStore()
 
-/**
- * 2. Instanciate Wechaty with Redux Plugin
- */
+// 2. Instanciate Wechaty with Redux Plugin
+
 const bot = Wechaty.instance({ puppet: 'wechaty-puppet-mock' })
 bot.use(WechatyRedux({ store }))
 
-/**
- * 3. Using Redux Store with Wechaty Ducks API!
- *  (With the Power of Ducks / Ducksify)
- */
+// 3. Using Redux Store with Wechaty Ducks API!
+//  (With the Power of Ducks / Ducksify)
+
 const wechatyDuck = ducks.ducksify('wechaty')
 
 store.subscribe(() => console.info(store.getState()))
@@ -120,3 +130,5 @@ wechatyDuck.operations.ding(bot.id, 'Ducksify Style ding!')
 ### Ducks Api
 
 [![Ducksify Extension](https://img.shields.io/badge/Redux-Ducksify-yellowgreen)](https://github.com/huan/ducks#3-ducksify-extension-currying--api-interface)
+
+Ducks is very easy to use, because one of the goals of designing it is to maximize the convenience. To know more about the Ducks Api,please refer [here](https://github.com/huan/ducks#3-ducksify-extension-currying--api-interface).

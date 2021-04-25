@@ -66,3 +66,70 @@ Git: https://github.com/rixingyike/wechat-operation-assistant
 
 @rixingyike [程序员LIYI](https://yishulun.com)，腾讯TVP。
 首发于公众号: [一个小小智能机器人：帮我们自动拉人，自动核实付费，自动将收款转到个人银行卡](https://mp.weixin.qq.com/s/TUKmK7IgJElECt7hNq5QEA)。
+
+
+## For readers who only understand English, this part is for you!
+
+![image](https://wechaty.js.org/assets/2021/02-how-to-use-wechaty-to-ask-for-payment-before-user-joining-the-group/paying-by -qrcode.png)
+
+There has always been such a requirement in the field of private domain traffic operation: automatically pass friends, and after new friends pay a certain fee, they will be pulled to the corresponding WeChat group based on the keywords sent by the new friends. The keyword corresponds to the WeChat group, and the WeChat group can be automatically expanded when it is full.
+
+Some people have thought of such a solution. First, let potential users add manual customer service WeChat, transfer or scan code to pay, and then pull him/her into the group after manual verification. However, this method has high labor costs and high labor costs, which means that it will increase the ticket price of the group.
+
+There is also a workaround, using the micro-mall to allow users to complete the payment in the mall by themselves, and then send a four-digit verification code to the user through the hook setting, which is virtual delivery. After completing this step, the user will be guided to add the robot assistant WeChat with the verification code. After the robot assistant receives the verification code, it will first verify the authenticity of the order in the database, and then join the group after verification.
+
+This scheme looks pretty good, but there are still big problems. In one sentence, it is too complicated. A database is needed, a micro mall is needed, etc., and the high deployment cost will naturally push up the ticket price of the group. Some people may also think that you can use Knowledge Planet or similar products. This product is really great, but sometimes we just want to gather private domain traffic in WeChat. What should we do?
+
+## Use small and micro merchants + Wechaty to build a paid private domain traffic operation assistant
+
+Can there be such a simple solution: After the robot assistant automatically passes the friend, it will judge whether it needs to be paid according to the keywords sent by the new friend, if necessary, send the new friend a payment QR code, and wait for the new friend to complete the scan code After that, TA will be automatically pulled into the WeChat group. There is no third-party jump in the whole process, and it is completely completed in the WeChat window. In addition, the entire solution does not involve Web services, database services, etc., only a WeChat robot needs to be deployed.
+
+The answer is yes, so the author wrote this open source project. I named it: a paid private domain operation assistant built using small and micro merchants + WeChat chatbots.
+
+This is an experimental small project, not yet complete, but the feasibility is available, it is fully operational, and the money received will automatically be transferred to the personal WeChat card. I hope this project can inspire you, but it does not provide any technical guarantees and use promises.
+
+The project is based on Wechat small and micro merchants + Wechaty implementation, and draws on [Wechaty's sample code](https://github.com/wechaty/wechaty-getting-started).
+
+Next, I will introduce what it needs to prepare and how to use it. There is a video recorded by the author at the end, which is convenient for you to quickly view the interactive effects of the project.
+
+## The main function
+
+Mainly supported functional interactive commands:
+
+-Apply to join the xx group, you can join the group and replace xx with specific keywords, such as calligraphy
+-`#Query 2021xxx`, used to query old orders, if paid, you can add to the group
+-The designated administrator can use a group message command such as `@xxx Do not send` to let the robot kick someone out
+
+Git: https://github.com/rixingyike/wechat-operation-assistant
+
+## Use video
+
+<div style={{
+    position:'relative',
+    paddingBottom: '70%',
+    paddingTop:'30px',
+    height:0,
+    overflow:'hidden',
+  }}>
+  <iframe
+    src='//www.youtube.com/embed/Rujwzt0B9K8'
+    allowFullScreen
+    webkitallowfullscreen="true"
+    frameBorder="0"
+    style={{
+      position:'absolute',
+      top:0,
+      left:0,
+      width:'100%',
+      height:'100%',
+    }}
+  >
+  </iframe>
+</div>
+
+> February 09, 2021
+
+## Credit
+
+@rixingyike [Programmer LIYI](https://yishulun.com), Tencent TVP.
+First published on the official account: [A small smart robot: help us automatically pull people, automatically verify payment, and automatically transfer the payment to the personal bank card] (https://mp.weixin.qq.com/s/TUKmK7IgJElECt7hNq5QEA). 
