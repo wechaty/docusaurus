@@ -128,3 +128,7 @@ var PuppetOptions = new PuppetOptions()
 
 - Wechaty Contributor Server Host 是由微软 MVP Sponsorship 赞助的，只针对 [Wechaty Contributor Program](https://wechaty.js.org/docs/contributor-program/) 的 `Contributor` 使用，具体的申请方式请查看 [PMC-issue-13](https://github.com/wechaty/PMC/issues/13)。
 - 如何成为 `Wechaty Contributor` 可以通过该链接查看 [https://wechaty.js.org/docs/contributor-program/](https://wechaty.js.org/docs/contributor-program/)
+
+## Blogs
+
+1. [Introducing Wechaty Puppet Service (Providers), @huan, Jan 14, 2021](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/)
