@@ -56,3 +56,7 @@ export const UUIDv4 = () => {
 ### Wechaty Puppet Service Token Validator
 
 <!-- TODO: huan(202104) -->
+
+## Blogs
+
+1. [Introducing Wechaty Puppet Service (Providers), @huan, Jan 14, 2021](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/)
