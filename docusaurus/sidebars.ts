@@ -129,7 +129,8 @@ const gettingStarted: SubMenuData = {
 const community: SubMenuData = {
   label: 'Community',
   items: [
-    'community',
+    'community/overview',
+    'community/code-of-conduct',
     {
       type: 'category',
       label: '开源软件供应链点亮计划',
