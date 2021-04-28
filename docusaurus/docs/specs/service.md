@@ -80,3 +80,7 @@ See: <https://github.com/wechaty/wechaty-puppet-service/issues/98>
 ## Related Resources
 
 1. Wechaty Puppet Service gRPC: <https://github.com/wechaty/grpc>
+
+## Blogs
+
+1. [Introducing Wechaty Puppet Service (Providers), @huan, Jan 14, 2021](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/)

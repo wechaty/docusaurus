@@ -1,7 +1,7 @@
 ---
 name: henry
 site: https://github.com/henryfanyiye
-avatar: /assets/contributors/henryfan/avatar.png
+avatar: /assets/contributors/henryfanyiye/avatar.png
 bio: Node.js developer
 email: 
 twitter: 

@@ -129,7 +129,8 @@ const gettingStarted: SubMenuData = {
 const community: SubMenuData = {
   label: 'Community',
   items: [
-    'community',
+    'community/overview',
+    'community/code-of-conduct',
     {
       type: 'category',
       label: '开源软件供应链点亮计划',
@@ -191,6 +192,7 @@ const introduction = {
     'overview',
     'wechaty',
     subMenu(showcases),
+    subMenu(caseStudy),
     subMenu(community),
     subMenu(contributing),
     'changelog',
@@ -210,7 +212,6 @@ const tutorials = {
   items: [
     'tutorials/overview',
     subMenu(gettingStarted),
-    subMenu(caseStudy),
     'tutorials/video-tutorial',
     'tutorials/docker',
     'tutorials/usage-with-heroku',
