@@ -1,6 +1,6 @@
 ---
-title:'Puppet Service Compatibility'
-sidebar_label:'Puppet Service: Compatibility'
+title: 'Puppet Service Compatibility'
+sidebar_label:'Puppet Service: 'Compatibility'
 ---
 Service|donut|wxwork|paimon|padlocal
 :---|:---:|:---:|:---:|:---:
