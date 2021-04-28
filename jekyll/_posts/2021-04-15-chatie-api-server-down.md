@@ -137,6 +137,7 @@ It's not hard for us to implemente this by the following steps:
 1. Build docker image for [chatie/server](https://github.com/Chatie/server)
 1. Start `nginx-proxy` with port `80` and `443` for the web service
 1. Start `chatie/service` container with the following `docker-compose.yml` config:
+
     ```yaml
     version: '3.8'
     services:
@@ -151,6 +152,7 @@ It's not hard for us to implemente this by the following steps:
           - VIRTUAL_HOST=api.chatie.io,www.chatie.io
           - LETSENCRYPT_HOST=api.chatie.io,www.chatie.io
     ```
+
 1. Change the DNS of `api.chatie.io` on Cloudflare from Heroku to our new Azure server.
 
 After the above steps, the service back to normal.
