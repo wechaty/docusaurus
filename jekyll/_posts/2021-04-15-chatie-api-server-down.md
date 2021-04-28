@@ -56,13 +56,13 @@ due to the limitation update of the Heroku and Cloudflare free servcies:
 
 By using `heroku logs -t -a chatieio`, we can see the follow `H11` and `H10` error messages:
 
-```
+```sh
 2021-04-14T14:11:03.885895+00:00 heroku[router]: at=error code=H11 desc="Backlog too deep" method=GET path="/v0/websocket" host=api.chatie.io request_id=59ec8c0c-aba6-4a7a-a7a1-c1d6ff798fc9 fwd="52.83.49.48,108.162.215.120" dyno= connect= service= status=503 bytes= protocol=http
 ```
 
 > at=error code=H11 desc="Backlog too deep"
 
-```
+```sh
 2021-04-14T14:12:01.619098+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/v0/websocket" host=api.chatie.io request_id=d0fa3403-5d6f-4f42-a2f9-e81de0bfb6c3 fwd="52.82.109.225,108.162.215.108" dyno= connect= service= status=503 bytes= protocol=http
 ```
 
@@ -105,7 +105,7 @@ We use 4 dynos for our service for workaround.
 
 Because the service is not designed for the horizon scale, so the query will fail 3 times with 1-time success on average.
 
-```
+```sh
 01:00:20 VERB Wechaty wechatifyUserModules(Puppet#0<PuppetService>(ding-dong-bot))
 01:00:20 VERB PuppetService start()
 01:00:20 VERB StateSwitch <PuppetService> on(pending) <- (false)
