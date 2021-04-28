@@ -14,6 +14,6 @@ sidebar_label: 'Showcases: Index'
   - An assistant bot for Rui (Founder & CEO of Juzi.BOT)
 - [Friday BOT](friday-bot.mdx)
   - A bot designed for serving the BOT5 Club and Wechaty community
-- [Awesome Wechaty projects](awesome-wechaty.mdx)
+- [Awesome Wechaty Projects](awesome-wechaty.mdx)
   - The open source projects that using Wechaty
   
