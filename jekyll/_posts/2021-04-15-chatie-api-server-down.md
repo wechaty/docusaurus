@@ -191,3 +191,7 @@ To-do list:
 
 1. Config to restart servers (Node & Linux) when the services run into unknown stautus
 1. Config DevOps for CI/CD
+
+## Issues
+
+- Chatie.io server down [Chatie/server#55](https://github.com/Chatie/server/issues/55)
