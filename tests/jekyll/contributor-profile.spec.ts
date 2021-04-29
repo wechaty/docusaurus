@@ -126,7 +126,7 @@ test('developer profile name must be GitHub username', async t => {
 
     for (const [i, isExist] of resultList.entries()) {
       if (!isExist) {
-        console.info()
+        process.stdout.write('\n')
         t.fail(`"${chunk[i]}" should exist on GitHub`)
       } else {
         // t.pass(`"${chunk[i]}" should exist on GitHub`)
@@ -134,6 +134,7 @@ test('developer profile name must be GitHub username', async t => {
     }
   }
 
-  // console.info()
+  process.stdout.write('\n')
+
   t.pass(`${urlList.length} contributors profile names checked`)
 })
