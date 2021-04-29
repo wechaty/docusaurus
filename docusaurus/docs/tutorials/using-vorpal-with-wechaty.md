@@ -72,7 +72,7 @@ Before getting started, make sure you have `Node.js` installed on your system. I
 
 :::
 
-You can head over to the [Building the bot](#building-the-bot) section to learn how to build the bot on your own. 
+You can head over to the [Building the bot](#building-the-bot) section to learn how to build the bot on your own.
 
 Otherwise, if you just want to try out the bot on your local system, follow the steps below:
 
@@ -161,10 +161,10 @@ This will generate the `package.json` file containing these:
 
 For building the bot mainly you will require the following dependencies:
 
-- [wechaty](https://www.npmjs.com/package/wechaty): Official Wechaty package
-- [wechaty-vorpal](https://www.npmjs.com/package/wechaty-vorpal): For using Wechaty with Vorpal
-- [vorpal-hacker-news](https://www.npmjs.com/package/vorpal-hacker-news): To fetch data from Hacker News API using Vorpal
-- [qrcode-terminal](https://www.npmjs.com/package/qrcode-terminal): Displays the QR code
+* [wechaty](https://www.npmjs.com/package/wechaty): Official Wechaty package
+* [wechaty-vorpal](https://www.npmjs.com/package/wechaty-vorpal): For using Wechaty with Vorpal
+* [vorpal-hacker-news](https://www.npmjs.com/package/vorpal-hacker-news): To fetch data from Hacker News API using Vorpal
+* [qrcode-terminal](https://www.npmjs.com/package/qrcode-terminal): Displays the QR code
 
 ```json
 "dependencies": {
@@ -401,7 +401,7 @@ Here, we have specified the script in way so that the type of puppet can be pass
 
 In order to run the bot, first you have to **export/set** an environment variable with the type of puppet to use, you can do it using:
 
-#### Linux/macOS
+**Linux/macOS**
 
 ```bash
 export WECHATY_LOG=verbose
@@ -410,7 +410,7 @@ export WECHATY_PUPPET=wechaty-puppet-wechat
 # export WECHATY_PUPPET=wechaty-puppet-whatsapp
 ```
 
-#### Windows
+**Windows**
 
 ```bash
 set WECHATY_LOG=verbose
@@ -498,5 +498,5 @@ You have learnt to use Vorpal with Wechaty and built a Hacker News bot. Vorpal h
 
 ## References
 
-- [Wechaty Getting Started](https://github.com/wechaty/wechaty-getting-started)
-- [Vorpal Hacker News bot](https://github.com/sbis04/vorpal-wechaty-hackernews)
+* [Wechaty Getting Started](https://github.com/wechaty/wechaty-getting-started)
+* [Vorpal Hacker News bot](https://github.com/sbis04/vorpal-wechaty-hackernews)
