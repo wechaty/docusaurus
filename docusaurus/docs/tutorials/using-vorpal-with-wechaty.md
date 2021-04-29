@@ -399,29 +399,25 @@ Here, we have specified the script in way so that the type of puppet can be pass
 
 ## Running the bot
 
-In order to run the bot, first you have to **export/set** an environment variable with the type of puppet to use, you can do it using:
+In order to run the bot, first you have to **export/set** an environment variable with the type of puppet to use and then run the bot:
 
-**Linux/macOS**
+### Linux/macOS
 
 ```bash
 export WECHATY_LOG=verbose
 export WECHATY_PUPPET=wechaty-puppet-wechat
 # If you want to use WhatsApp
 # export WECHATY_PUPPET=wechaty-puppet-whatsapp
+npm start
 ```
 
-**Windows**
+### Windows
 
 ```bash
 set WECHATY_LOG=verbose
 set WECHATY_PUPPET=wechaty-puppet-wechat
 # If you want to use WhatsApp
 # set WECHATY_PUPPET=wechaty-puppet-whatsapp
-```
-
-Now, start the bot using:
-
-```sh
 npm start
 ```
 
