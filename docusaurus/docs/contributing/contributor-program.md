@@ -60,6 +60,10 @@ To cite this project in publications:
 }
 ```
 
+## Community Public Server Access
+
+See: [Provide a Community Development Server for Wechaty Contributors wechaty/PMC#13](https://github.com/wechaty/PMC/issues/13)
+
 ## FAQ
 
 ### How to publish blogs
