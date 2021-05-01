@@ -2,7 +2,7 @@
 title: Contact Bot
 ---
 
-### Try out the bot
+## Try out the bot
 
 [![Edit wechaty-contact-bot](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Soumi7/Contact-Bot-Wechaty/tree/main/?fontsize=14&hidenavigation=1&module=%2Fcontact-bot.js&theme=dark)
 
