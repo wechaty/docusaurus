@@ -245,7 +245,7 @@ const professional = {
  const examples = {
   label: 'Examples',
   items: [
-    'tutorials/examples',
+    'examples/overview',
     subMenu(basic),
     subMenu(advanced),
     subMenu(professional),
