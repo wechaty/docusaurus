@@ -207,6 +207,50 @@ const introduction = {
  *
  *  Issue #704 - https://github.com/wechaty/wechaty.js.org/issues/704
  ****************************************************************************/
+ const basic = {
+  label: 'Basic',
+  items: [
+    'examples/basic/the-worlds-shortest-chatbot-code-in-6-lines',
+    'examples/basic/ding-dong-bot',
+    'examples/basic/contact-bot',
+  ],
+}
+
+const advanced = {
+  label: 'Advanced',
+  items: [
+    'examples/advanced/demo-in-tutorial',
+    'examples/advanced/busy-bot',
+    'examples/advanced/media-file-bot',
+    'examples/advanced/room-bot',
+    'examples/advanced/friend-bot',
+    'examples/advanced/gist-bot',
+  ],
+}
+
+const professional = {
+  label: 'Professional',
+  items: [
+    'examples/professional/hot-import-bot',
+    'examples/professional/ctrl-c-signal-bot',
+    'examples/professional/monster-bot',
+    'examples/professional/api-ai-bot',
+    'examples/professional/speech-to-text-bot',
+    'examples/professional/tuling123-bot',
+    'examples/professional/telegram-roger-bot',
+    'examples/professional/blessed-twins-bot',
+  ],
+}
+
+ const examples = {
+  label: 'Examples',
+  items: [
+    subMenu(basic),
+    subMenu(advanced),
+    subMenu(professional),
+  ],
+}
+
 const tutorials = {
   label: 'Tutorials',
   items: [
@@ -219,7 +263,7 @@ const tutorials = {
     'tutorials/using-vorpal-with-wechaty',
     'tutorials/using-redux-with-wechaty',
     'tutorials/cheatsheet',
-    'tutorials/examples',
+    subMenu(examples),
   ],
 }
 
