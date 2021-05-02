@@ -6,7 +6,7 @@ sidebar_label: 'Overview'
 
 <!-- tutorial/Codelab - Converts a reader from curious investigator to active user. -->
 
-These tutorials take you by the hand through a series of steps to create a Chatbot application. If you are a total beginner to Wechaty or Chatbot application development in general, we recommend you start from the `Getting started` tutorials.
+These tutorials take you by the hand through a series of steps to create a Chatbot application. If you are a total beginner to Wechaty or Chatbot application development in general, we recommend you start from the [Getting started](getting-started/overview.mdx) tutorials.
 
 If you have some experience with Wechaty or Chatbot application development, we have intermediate to advanced tutorials on the following topics as well.
 
