@@ -423,7 +423,7 @@ npm start
 
 This will start the bot and generate a QR code like this:
 
-![Wechaty Vorpal Hacker News QR Code](../../static/img/docs/tutorials/wechaty-vorpal-hacker-news-qr.png)
+![Wechaty Vorpal Hacker News QR Code](../../static/img/docs/tutorials/using-vorpal-with-wechaty/wechaty-vorpal-hacker-news-qr.png)
 
 Scan it using your **WeChat/WhatsApp** as per the puppet you have selected, and you are ready to play with the bot!
 
@@ -440,12 +440,12 @@ You can try building this bot without setting up any dev environment on your loc
 
 ## Bot demonstration
 
-![Wechaty Vorpal Hacker News](../../static/img/docs/tutorials/wechaty-vorpal-hacker-news.png)
+![Wechaty Vorpal Hacker News](../../static/img/docs/tutorials/using-vorpal-with-wechaty/wechaty-vorpal-hacker-news.png)
 
 Some of the commands that you can try out with the bot are as follows:
 
 <p align="left">
-  <img src="../../static/img/docs/tutorials/vorpal-hn-help.png" alt="Vorpal help" />
+  <img src="../../static/img/docs/tutorials/using-vorpal-with-wechaty/vorpal-hn-help.png" alt="Vorpal help" />
 </p>
 
 ```sh
@@ -457,7 +457,7 @@ Commands:
 ```
 
 <p align="left">
-  <img src="../../static/img/docs/tutorials/vorpal-hn-help-hacker-news.png" alt="Vorpal Hacker News help" />
+  <img src="../../static/img/docs/tutorials/using-vorpal-with-wechaty/vorpal-hn-help-hacker-news.png" alt="Vorpal Hacker News help" />
 </p>
 
 ```sh
@@ -472,7 +472,7 @@ Usage: hacker-news [options]
 ```
 
 <p align="left">
-  <img src="../../static/img/docs/tutorials/vorpal-hn-length.png" alt="Vorpal Hacker News length" />
+  <img src="../../static/img/docs/tutorials/using-vorpal-with-wechaty/vorpal-hn-length.png" alt="Vorpal Hacker News length" />
 </p>
 
 ```sh
