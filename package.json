@@ -1,6 +1,10 @@
 {
   "name": "wechaty.js.org",
+<<<<<<< HEAD
   "version": "0.8.227",
+=======
+  "version": "0.8.225",
+>>>>>>> upstream/master
   "description": "Wechaty Official Website for News, Blogs, Contributor Profiles, and Documentations",
   "private": true,
   "directories": {
