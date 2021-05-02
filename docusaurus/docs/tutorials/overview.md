@@ -10,10 +10,10 @@ These tutorials take you by the hand through a series of steps to create a Chatb
 
 If you have some experience with Wechaty or Chatbot application development, we have intermediate to advanced tutorials on the following topics as well.
 
-[Usage with Docker](tutorials/docker.md)<br>
-[Usage with Heroku](tutorials/usage-with-heroku.md)<br>
-[Using plugin with Wechaty](tutorials/using-plugin-with-wechaty.md)<br>
-[Using Vorpal with Wechaty](tutorials/using-vorpal-with-wechaty.md)<br>
-[Using Redux with Wechaty](tutorials/using-redux-with-wechaty.md)<br>
+- [Usage with Docker](tutorials/docker.md)
+- [Usage with Heroku](tutorials/usage-with-heroku.md)
+- [Using plugin with Wechaty](tutorials/using-plugin-with-wechaty.md)
+- [Using Vorpal with Wechaty](tutorials/using-vorpal-with-wechaty.md)
+- [Using Redux with Wechaty](tutorials/using-redux-with-wechaty.md)
 
 You can skip to any of them.
