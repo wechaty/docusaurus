@@ -70,6 +70,8 @@ Thanks for the following technical writers from GSoD'21: your proposal are very 
 
 ## The Plan
 
+Today, we have send an announcement email to our Wechaty mailing list: [Wechaty GSoD'21 Technical Writers Registration Form Opened](https://groups.google.com/g/wechaty/c/C7r1_GMRRa0)
+
 We are going to organize a Zoom meeting for discussing how to collaborate together to make Wechaty docs better. Our goal is to make everyone enjoy the Wechaty GSoD'21 by sharing and learning from each other.
 
 1. May 3: Send out the [Google Form](https://forms.gle/2LDqrX5GUs6j9fJR9) to technical writers
