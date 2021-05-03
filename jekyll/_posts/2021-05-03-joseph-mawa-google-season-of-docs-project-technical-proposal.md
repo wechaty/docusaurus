@@ -5,9 +5,9 @@ categories: google season of docs 2021
 tags:
   - gsod
   - gsod'21
-  - documentation
+  - project
   - proposal
-image: /assets/2021/05-joseph-mawa-google-season-of-docs-technical-proposal/lemur.jpeg
+image: /assets/2021/05-joseph-mawa-google-season-of-docs-project-technical-proposal/lemur.jpeg
 ---
 
 My name is Joseph Mawa. I am a technical writer and web developer. Below is my proposal for the project *Create easy to learn tutorials for beginner users of Wechaty* under Google Season of Docs 2021.
