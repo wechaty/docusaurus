@@ -1,6 +1,12 @@
 ---
-title: "2021 Google season of Docs Technical Proposal"
+title: "2021 Google Season of Docs Technical Proposal"
 author: nibble0101
+categories: google season of docs 2021
+tags:
+  - gsod
+  - gsod'21
+  - documentation
+  - gsod proposal
 image: /assets/2021/05-joseph-mawa-google-season-of-docs-technical-proposal/lemur.jpeg
 ---
 
