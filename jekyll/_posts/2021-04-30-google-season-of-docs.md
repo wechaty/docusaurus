@@ -33,7 +33,7 @@ Fortunately, we has been accepted by the Google Season of Docs program, and our 
 
 Wechaty Organization has been granted $9,500 from Google Season of Docs 2021.
 
-## Budget Plan
+## Budget plan
 
 1. Wechaty Tutorials: $5k (split to 2 writers)
 2. Build Wechaty landing page (homepage) with value proposition: $1k
@@ -44,7 +44,7 @@ Wechaty Organization has been granted $9,500 from Google Season of Docs 2021.
 
 Total: $9,500
 
-## Wechaty GSoD'21 Technical Writers
+## Wechaty GSoD'21 technical writers
 
 After the Wechaty GSoD'21 has been announced by the Google officially on April 16, we have been contacted by 23 technical writers. It's amazing that 15 of them submitted the proposal and almost all proposals are in detail planing with great insights of how to improve the Wechaty docs.
 
@@ -68,7 +68,7 @@ Thanks for the following technical writers from GSoD'21: your proposal are very 
 1. [Soumi Bardhan](https://docs.google.com/document/d/1q2_m0gqn7_cPLVPeMmIIzP_IEeGuQxEc_cztooOhLhc/edit)
 1. [Souvik Biswas](https://docs.google.com/document/d/1MD9CwO6BoB664J67ozfygBJUaawazay7dDpcXB3jJcY/edit)
 
-## The Plan
+## What's the next steps
 
 Today, we have send an announcement email to our Wechaty mailing list: [Wechaty GSoD'21 Technical Writers Registration Form Opened](https://groups.google.com/g/wechaty/c/C7r1_GMRRa0)
 
