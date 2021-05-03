@@ -6,7 +6,7 @@ tags:
   - gsod
   - gsod'21
   - documentation
-  - gsod proposal
+  - proposal
 image: /assets/2021/05-joseph-mawa-google-season-of-docs-technical-proposal/lemur.jpeg
 ---
 
