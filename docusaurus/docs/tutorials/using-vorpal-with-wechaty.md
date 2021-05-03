@@ -444,9 +444,7 @@ You can try building this bot without setting up any dev environment on your loc
 
 Some of the commands that you can try out with the bot are as follows:
 
-<p align="left">
-  <img src="../../static/img/docs/tutorials/using-vorpal-with-wechaty/vorpal-hn-help.png" alt="Vorpal help" />
-</p>
+![Vorpal help](../../static/img/docs/tutorials/using-vorpal-with-wechaty/vorpal-hn-help.png)
 
 ```sh
 Commands:
@@ -456,9 +454,7 @@ Commands:
     hacker-news [options]   Lists the top stories on hacker news.
 ```
 
-<p align="left">
-  <img src="../../static/img/docs/tutorials/using-vorpal-with-wechaty/vorpal-hn-help-hacker-news.png" alt="Vorpal Hacker News help" />
-</p>
+![Vorpal Hacker News help](../../static/img/docs/tutorials/using-vorpal-with-wechaty/vorpal-hn-help-hacker-news.png)
 
 ```sh
 Usage: hacker-news [options]
@@ -471,9 +467,7 @@ Usage: hacker-news [options]
     -l, --length [amt]  Limits the list to a given length.
 ```
 
-<p align="left">
-  <img src="../../static/img/docs/tutorials/using-vorpal-with-wechaty/vorpal-hn-length.png" alt="Vorpal Hacker News length" />
-</p>
+![Vorpal Hacker News length](../../static/img/docs/tutorials/using-vorpal-with-wechaty/vorpal-hn-length.png)
 
 ```sh
 Pulling top 3 stories on Hacker News:
