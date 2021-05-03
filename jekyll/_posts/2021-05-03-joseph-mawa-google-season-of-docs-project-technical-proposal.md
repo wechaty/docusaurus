@@ -1,9 +1,11 @@
 ---
 title: "2021 Google Season of Docs Technical Proposal"
 author: nibble0101
-categories: google season of docs 2021
+categories: article
 tags:
+  - google
   - gsod
+  - 2021
   - gsod'21
   - project
   - proposal
