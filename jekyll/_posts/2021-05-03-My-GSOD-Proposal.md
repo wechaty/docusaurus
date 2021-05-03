@@ -2,7 +2,7 @@
   I’m currently pursuing my Bachelor's in Electronics and Communication  Engineering from National Institute Of Technology, Hamirpur.
   I have applied for the position of Technical writer in Webchatty.
   Let's connect:
-  
+ 
   
    <a href="https://www.linkedin.com/in/vasvi-sood-176610206/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
    <a href="https://github.com/vasvi-sood"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
@@ -16,7 +16,9 @@
   Comming from a technical background I am well aware about various technologies and developer tools .Story writing has always been my favorite hobby. For me, combining technology 
   with my writing abilities is a natural match. 
   I share Wechaty's vision of using simple and descriptive language in documentation to attract developers.
-  
+
+
+<a href=https://drive.google.com/drive/u/0/my-drive><H1>My Proposal</H1></a>
  
-  
+   <img src="https://github.com/vasvi-sood/wechaty.js.org/blob/master/jekyll/assets/2021/05-My-GSOD-Proposal/my%20photo.png" height=500px wight=400px></img>
  
