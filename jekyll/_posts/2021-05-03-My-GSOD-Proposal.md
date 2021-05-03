@@ -18,7 +18,7 @@
   I share Wechaty's vision of using simple and descriptive language in documentation to attract developers.
 
 
-<a href=https://drive.google.com/drive/u/0/my-drive><H1>My Proposal</H1></a>
+<a href=https://drive.google.com/file/d/179ZTIxmW0ntWqdkA5xaJwxh5dI8cTz2D/view?usp><H1>My Proposal</H1></a>
  
    <img src="https://github.com/vasvi-sood/wechaty.js.org/blob/master/jekyll/assets/2021/05-My-GSOD-Proposal/my%20photo.png" height=500px wight=400px></img>
  
