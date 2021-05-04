@@ -26,7 +26,7 @@ The phrase(term) "value proposition" was first used in the paper [A Business is 
 
 ## Why Value Proposition is Important
 
-The _Value Proposition_ is a statement that answers the ‘why’ someone should do business with you. 
+The _Value Proposition_ is a statement that answers the ‘why’ someone should do business with you.
 
 It should convince a potential customer why your service or product will be of more value to them than similar offerings from your competition.
 
@@ -38,7 +38,7 @@ it must tell your audience:
 1. What benefits customers can expect
 1. Why customers should buy from you over your competitors
 
-It introduces you to prospective buyers and helps you make a strong first impression. That's why it is so important to have a powerful one. 
+It introduces you to prospective buyers and helps you make a strong first impression. That's why it is so important to have a powerful one.
 
 ## Guidelines
 
@@ -141,8 +141,8 @@ Currently, I believe we have the following points can be showed on our landing p
     1. [Vorpal](http://wechaty.js.org/docs/tutorials/using-vorpal-with-wechaty)
     1. [Redux](http://wechaty.js.org/docs/tutorials/using-redux-with-wechaty)
 1. Commercial Companies
-    1. JuziBot (https://www.juzi.bot)
-    1. Chatopera (https://www.chatopera.com/)
+    1. JuziBot <https://www.juzi.bot>
+    1. Chatopera <https://www.chatopera.com>
 1. Community Cases
     1. [哄女朋友开心](http://wechaty.js.org/docs/case-study/coaxer-bot)
     1. [Money BOT](http://wechaty.js.org/docs/case-study/money-bot)
