@@ -28,17 +28,17 @@ You can connect with me on [Twitter](https://twitter.com/sbis04) or [LinkedIn](h
 **Open source organization:** Wechaty
 
 **Project:** Create easy to learn tutorials for beginner users of Wechaty
- 
+
 * **Name:** Souvik Biswas
 * **Email:** sbis1999@gmail.com
-* **Website:** https://www.souvikbiswas.com
-* **Github:** https://github.com/sbis04
-* **Medium:** https://medium.com/@sbis1999
-* **Linkedin:**	https://www.linkedin.com/in/sbis04
+* [Website](https://www.souvikbiswas.com)
+* [Github](https://github.com/sbis04)
+* [Medium](https://medium.com/@sbis1999)
+* [Linkedin](https://www.linkedin.com/in/sbis04)
 * **Project length:** Standard length (3 months)
- 
+
 ### Technical Writing Experience
- 
+
 #### Freelance Technical Writer - Codemagic Blog
 
 Have written over 60+ articles and contributed to 2 ebooks published by Codemagic.
@@ -46,7 +46,7 @@ Have written over 60+ articles and contributed to 2 ebooks published by Codemagi
 * Topics of the articles consists of Android, Flutter, React Native, DevOps, CI/CD
 * Contributed to Flutter Libraries ebook and CI/CD for Mobile App Developers
 * Have written a comprehensive Cheatsheet of Codemagic YAML
- 
+
 #### Freelance Technical Writer - LogRocket Blog
 
 Started writing articles related to Flutter framework
@@ -63,7 +63,7 @@ Published various articles, mostly consisting of code walkthroughs. The articles
 * Covered various important concepts in Flutter
 * Testing in Flutter
 * Code-signing and delivering apps to different platforms
- 
+
 #### Technical Writer - ProAndroidDev
 
 Written articles on various UI and Navigation components used in Android.
@@ -72,7 +72,7 @@ Written articles on various UI and Navigation components used in Android.
 * Using Navigation component in Android
 * Kotlin’s new features
 * Code walkthrough
- 
+
 #### Technical Writer - Journal
 
 Have written article on VR on web
@@ -80,15 +80,15 @@ Have written article on VR on web
 * Building VR apps using React360
 * Integrating React360 VR apps in Flutter
 * Deploying to GitHub Pages
- 
+
 ### Research Work
- 
+
 I am a part of a research group of our university, working on new **post-quantum encryption schemes** and **Blockchain**. We have submitted three research papers for publication which received a very positive feedback from the editors and would be published soon. We are currently working on a new consensus algorithm which would be compatible with IoT devices.
- 
+
 ### Links to some of my most popular articles
 
 I have worked on over **70 articles** published across various sites including Medium, Codemagic Blog, LogRocket Blog. Have contributed to **2 ebooks** published by Codemagic.
- 
+
 * [Flutter: Implementing Google Sign In](https://medium.com/flutter-community/flutter-implementing-google-sign-in-71888bca24ed)
 * [Codemagic YAML cheat sheet](https://blog.codemagic.io/codemagic-yaml-cheatsheet/)
 * [Ebook on CI/CD for Mobile Apps](https://codemagic.io/ci-cd-ebook/)
@@ -103,7 +103,7 @@ I have worked on over **70 articles** published across various sites including M
 * [iOS Code Signing and Publishing with Codemagic .yaml file](https://blog.codemagic.io/distributing-native-ios-sdk-with-flutter-module-using-codemagic/)
 
 These were some of the articles, you can find more [here](https://medium.com/@sbis1999). Apart from this, I have also done a significant amount of contribution to the [Codemagic Documentation](https://docs.codemagic.io/).
- 
+
 ### Abstract
 
 #### Current State of WeChaty Tutorials
@@ -113,12 +113,13 @@ These were some of the articles, you can find more [here](https://medium.com/@sb
 * The current version of the Wechaty Tutorials is not properly structured.
 
 * The tutorials on the website needs improvement, and should be beginner friendly.
- 
+
 ### Proposed Work
 
 Update the **Tutorials** to include a step-by-step guide (easy for beginners to follow) for achieving the final goal of building a bot.
 
 The Tutorial project should:
+
 * Allow the user to learn by doing
 * Get the user started
 * Make sure that the tutorial works all the time
@@ -129,13 +130,13 @@ The Tutorial project should:
 * Focus only on the steps the user needs to take
 * Work with the contributor team to update the documentation on the Wechaty site.
 * Add easy to follow video tutorials
- 
+
 Each of the documentation page should be structured in a particular format (so that users get familiarized with the format and would be much easier to follow). And, each of the tutorial pages for building a bot should contain an interactive **CodeSandbox** at the end (consisting of minimal code and TODO steps) where they can apply the knowledge that they gained by following the tutorial, and build a bot totally by themselves!
 
 I have included a detailed **structure** (further down the article) of each documentation page that I propose to be followed for every bot building tutorial.
 
 One more thing that I noticed in the Tutorials is the lack of a **defined goal** that the user should expect to achieve at the end of that step-by-step guide. So, there should be a clear description of the goal in the introduction of each tutorial.
- 
+
 ### Contributions
 
 Some contributions that I have done to the [Wechaty GitHub repo](https://github.com/wechaty/wechaty.js.org) are mentioned below:
@@ -166,7 +167,7 @@ Some contributions that I have done to the [Wechaty GitHub repo](https://github.
 
 ### Documentation Period
 
-Wechaty repository at https://github.com/wechaty/wechaty.js.org
+Wechaty repository [here](https://github.com/wechaty/wechaty.js.org)
 
 As per the discussion with the community members, start working on a tutorial page - adding the improvements, properly structuring the pages, adding interactive CodeSandbox, adding video walkthrough (if necessary), adding relevant screenshots and defining a goal in the introduction of the tutorial (so that users have the idea of what they will achieve at the end of the tutorial).
 
@@ -192,7 +193,7 @@ A proposed structure of the tutorial documentation is as follows:
 * Try out the bot (**CodeSandbox** - already added: [#779](https://github.com/wechaty/wechaty.js.org/pull/779))
 * Update the step-by-step guide to have more technical details on how to build the bot, adding brief explanation of each function used
 * Add a **CodeSandbox** at the end with the TODO (as explained above)
-* Structure the tutorial properly as per the proposed structure given above 
+* Structure the tutorial properly as per the proposed structure given above
 
 #### Week 2 : (9th May - 15th May)
 
@@ -260,11 +261,11 @@ A proposed structure of the tutorial documentation is as follows:
 #### Week 11 : (11th July - 17th July)
 
 * Start working on the [Cheat Sheet](https://wechaty.js.org/docs/tutorials/cheatsheet) which would consist of the following:
-    * Brief description of a bot
-    * Code snippet to use it
-    * Tech description (in brief)
-    * Example - CodeSandbox (maybe included)
-    * Screenshots / GIFs
+  * Brief description of a bot
+  * Code snippet to use it
+  * Tech description (in brief)
+  * Example - CodeSandbox (maybe included)
+  * Screenshots / GIFs
 
 Creating the cheat sheet will take time (most probably two weeks).
 
@@ -274,7 +275,7 @@ Creating the cheat sheet will take time (most probably two weeks).
 * Create short video tutorials for some of the most used bots (if necessary).
 * Decide what are the things to be included to the [Examples](https://wechaty.js.org/docs/tutorials/examples) page.
 
-#### Week 13 & 14 :
+#### Week 13 & 14
 
 * Add **multi-language support** to the tutorials lacking it.
 * Including content to some of the pages of **How-to Guides** by discussing with the community members
@@ -291,7 +292,7 @@ The project would be considered successful if after publication of the new docum
 * The tutorials page views increase by 50%
 * The visit duration on tutorials increases by 50% (>2 minutes)
 * The bounce rate of tutorials decreases by 30% (<50%)
- 
+
 ### Why am I the right person for this project?
 
 I believe I am the right person for this project because I have previous experience of contributing to documentation and how to structure the modules properly so that it is easier for beginners to follow. I have also worked on a comprehensive [cheat sheet](https://blog.codemagic.io/codemagic-yaml-cheatsheet/) in the past, and I am comfortable with Git & GitHub to make the contributions.
@@ -300,7 +301,7 @@ I have already started contributing to the documentation of [Wechaty](https://gi
 
 ### Stipend
 
-Based on work division. 
+Based on work division.
 
 If one technical writer is selected - $5000
 
@@ -309,9 +310,6 @@ If work is divided between two technical writers - $2500. In this case, I am ope
 ### Personal Information
 
 **Name:** Souvik Biswas
-**Github:** https://github.com/sbis04
-**Linkedin:** https://www.linkedin.com/in/sbis04
-**Blog:** https://medium.com/@sbis1999
 **Location:** Kolkata, West Bengal, India
 **Time Zone:** UTC +05:30
 **Typical working hours:** 7 AM - 2 PM (UTC +05:30)
