@@ -1,7 +1,7 @@
 ---
 name: Shwetal Soni
 site: https://github.com/shwetalsoni/
-avatar: /assets/2021/05-gsod-21-proposal-shwetal-soni/profilepic.jpeg
+avatar: /jekyll/assets/contributors/shwetalsoni/shwetalsoni.jpeg
 bio: Web Developer | UI/UX Designer | Open Source Developer | Hackathon Enthusiast | Exploring Blockchains 
 email: mailto:sonishwetal704@gmail.com
 twitter: https://twitter.com/shwetalsoni19

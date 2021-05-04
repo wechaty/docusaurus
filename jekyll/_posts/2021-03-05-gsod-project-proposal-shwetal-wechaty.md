@@ -4,7 +4,7 @@ author: shwetal soni
 categories: project
 tags:
   - project proposal
-image: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/python-wechaty-logo9.png
+image: /assets/2021/05-gsod-21-proposal-shwetal-soni/profilepic.jpeg
 ---
 
 ## GSOD21 Proposal for Wechaty
