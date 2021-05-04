@@ -64,15 +64,15 @@ I am Soumi Bardhan, a passionate python and deep learning dev.
  
 ### Links to some of my medium articles :
  
-* [Named Entity Recognition — Simple Transformers —Flask REST API](https://medium.com/@soumibardhan10/named-entity-recognition-simple-transformers-flask-rest-api-ec14a7a444cb)
+[Named Entity Recognition — Simple Transformers —Flask REST API](https://medium.com/@soumibardhan10/named-entity-recognition-simple-transformers-flask-rest-api-ec14a7a444cb)
  
-* [Fixing Open Source Vulnerabilities in Azure Dev Ops- WhiteSource Bolt ](https://code.likeagirl.io/fixing-open-source-vulnerabilities-in-azure-dev-ops-whitesource-bolt-4a5e53cb9cfe)
+[Fixing Open Source Vulnerabilities in Azure Dev Ops- WhiteSource Bolt ](https://code.likeagirl.io/fixing-open-source-vulnerabilities-in-azure-dev-ops-whitesource-bolt-4a5e53cb9cfe)
  
-* [Dockerizing and Hosting your Flask Web App(Rest API) on AWS EC2](https://medium.com/datadriveninvestor/dockerizing-and-hosting-your-flask-web-app-rest-api-on-aws-ec2-9f9c189bf563)
+[Dockerizing and Hosting your Flask Web App(Rest API) on AWS EC2](https://medium.com/datadriveninvestor/dockerizing-and-hosting-your-flask-web-app-rest-api-on-aws-ec2-9f9c189bf563)
  
-* [Weather Based Stock Prediction with Pycaret - Analytics Vidhya](https://medium.com/analytics-vidhya/weather-based-stock-prediction-with-pycaret-4d604cdeb68f)
+[Weather Based Stock Prediction with Pycaret - Analytics Vidhya](https://medium.com/analytics-vidhya/weather-based-stock-prediction-with-pycaret-4d604cdeb68f)
  
-* [Tkinter Application to Switch Between Different Page Frames](https://www.geeksforgeeks.org/tkinter-application-to-switch-between-different-page-frames/) 
+[Tkinter Application to Switch Between Different Page Frames](https://www.geeksforgeeks.org/tkinter-application-to-switch-between-different-page-frames/) 
  
 I believe creating a consistent documentation of code is very important for any open source project for its growth.
  
