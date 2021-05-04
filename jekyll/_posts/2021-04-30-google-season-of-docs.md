@@ -9,6 +9,8 @@ tags:
   - docs
   - news
   - featured
+  - sticky
+  - documentation
 image: /assets/2021/04-google-season-of-docs/wechaty-gsod-2021.webp
 ---
 
