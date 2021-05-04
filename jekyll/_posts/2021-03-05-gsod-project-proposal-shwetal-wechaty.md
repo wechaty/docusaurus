@@ -3,7 +3,11 @@ title:  "GSOD'21 project proposal for wechaty"
 author: shwetal soni
 categories: project
 tags:
-  - project proposal
+  - gsod
+  - docs
+  - introduction
+  - project
+  - proposal
 image: /assets/2021/05-gsod-21-proposal-shwetal-soni/profilepic.jpeg
 ---
 

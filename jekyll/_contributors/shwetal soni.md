@@ -1,7 +1,7 @@
 ---
 name: Shwetal Soni
 site: https://github.com/shwetalsoni/
-avatar: /jekyll/assets/contributors/shwetalsoni/shwetalsoni.jpeg
+avatar: /assets/contributors/shwetalsoni/avatar.jpeg
 bio: Web Developer | UI/UX Designer | Open Source Developer | Hackathon Enthusiast | Exploring Blockchains 
 email: mailto:sonishwetal704@gmail.com
 twitter: https://twitter.com/shwetalsoni19
