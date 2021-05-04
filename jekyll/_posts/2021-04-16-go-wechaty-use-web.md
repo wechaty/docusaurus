@@ -5,7 +5,7 @@ categories: article
 tags:
   - code
   - wechaty-puppet-wechat
-  - web协议
+  - web-protocol
   - go
 image: /assets/2021/04-go-wechaty-use-web/struct.png
 ---
