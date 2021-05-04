@@ -11,7 +11,7 @@ tags:
   - introduction
   - project
   - proposal
-image: /assets/05-gsod-2021-applicant-soumi7/gsod_s.png
+image: /assets/2021/05-gsod-2021-applicant-soumi7/gsod_s.png
 ---
 
 ## GSoD 2021 Project Proposal
