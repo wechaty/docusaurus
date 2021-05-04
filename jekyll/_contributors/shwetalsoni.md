@@ -7,7 +7,6 @@ email: mailto:sonishwetal704@gmail.com
 twitter: https://twitter.com/shwetalsoni19
 linkedin: https://www.linkedin.com/in/shwetalsoni
 ---
-
 ## Contact me
 
 - Github: <https://github.com/shwetalsoni/>
