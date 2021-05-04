@@ -7,7 +7,7 @@ tags:
 image: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/python-wechaty-logo9.png
 ---
 
-# GSOD21 Proposal for Wechaty
+## GSOD21 Proposal for Wechaty
 
 ## Introduction
 
@@ -116,27 +116,27 @@ Being a new user to wechaty I encountered a lot of problems while running Ding D
   |- Quick Start
   |  |- Running on Gitpod
   |  |- Running on Google Cloud Shell
-  |  |_ Running Locally
+  |  |- Running Locally
   |- Tutorial Series(Creating your first bot from scratch)
   |  |- From Scratch
   |  |  |- Overview
-  |  |  |_ Installation
+  |  |  |- Installation
   |  |- Tutorial
   |  |  |- Create a bot
   |  |  |- Dealing with messages
   |  |  |- Processing files
-  |  |  |_ Writing tests
+  |  |  |- Writing tests
   |- Video Tutorials
   |  -> Chinese Tutorials
   |  -> Other than Chinese Tutorials
-  |_ Advanced Topics
+  |- Advanced Topics
   |  |  |- Usage with Docker
   |  |  |- Using with Heroku
   |  |  |- Using Plugin with wechaty
   |  |  |- Using Redux  with wechaty
-  |  |  |_ Using Vorpal with wechaty
+  |  |  |- Using Vorpal with wechaty
 
-* The above structure is well organized from beginner to advanced level. 
+* The above structure is well organized from beginner to advanced level.
 
 * **The overview section**  should give a complete overview of the topics. If a person is a beginner he can either simply run the app using any of the following options `Running on Gitpod`, `Running on Google Cloud Shell`, `Running locally` by clicking on the given links here.
   * Also the link for `Tutorial Series (Creating your first bot from scratch)` will also be given in case a user want to follow up with steps creating their own chatbot.
