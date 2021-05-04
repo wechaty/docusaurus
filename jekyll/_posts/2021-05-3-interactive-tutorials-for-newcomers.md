@@ -24,25 +24,25 @@ I am Soumi Bardhan, a passionate python and deep learning dev.
 * Sympy is a lightweight independent computer algebra system. Added and updated documentation, added missing style sections like Parameters and improved organization.
 * [My Season of Docs 2020 Report for the project Consistency Across docstrings, Sympy Documentation: ](https://github.com/sympy/sympy/wiki/GSoD-2020-Report-Soumi-Bardhan:-Consistency-across-docstrings---SymPy-Documentation)
 * Analysed metrics on the google search console before, during and after. Updated the modules with the most number of users first, then moved on to the less used modules.
- 
+
 #### Cppsecrets.com : Python Developer, technical writer
 
 * Well written articles and tutorials on several python libraries.
 * Implementation of SQLAlchemy ORM for creating Flask Applications
 * Functions of OS Module in python and implementations, tutorials
- 
+
 #### Geeks for Geeks, Technical Content Writer
 
 * Written articles based on OpenCV library functions and data structures and algorithms.
 * [Link to profile](https://auth.geeksforgeeks.org/user/soumibardhan10/articles)
- 
+
 #### Data driven investor : Technical Writer
 
 * Articles and tutorials on deep learning.
 * Using several deep learning methods to create models.
 * Create frontend and backend applications to host the models on cloud.
 * Docker and AWS
- 
+
 #### Analytics Vidhya: Technical Writer
 
 * Articles and tutorials on deep learning.
@@ -61,29 +61,29 @@ I am Soumi Bardhan, a passionate python and deep learning dev.
 #### Research Work :
 
 * My Research Work on Autism Spectrum Disorder Detection is also in progress. I am working at ITMR (Interactive Technologies & Multimedia Research) Lab, IIIT Allahabad remotely to simulate the results of my research work that is almost completed.
- 
+
 ### Links to some of my medium articles :
- 
+
 [Named Entity Recognition — Simple Transformers —Flask REST API](https://medium.com/@soumibardhan10/named-entity-recognition-simple-transformers-flask-rest-api-ec14a7a444cb)
- 
+
 [Fixing Open Source Vulnerabilities in Azure Dev Ops- WhiteSource Bolt ](https://code.likeagirl.io/fixing-open-source-vulnerabilities-in-azure-dev-ops-whitesource-bolt-4a5e53cb9cfe)
- 
+
 [Dockerizing and Hosting your Flask Web App(Rest API) on AWS EC2](https://medium.com/datadriveninvestor/dockerizing-and-hosting-your-flask-web-app-rest-api-on-aws-ec2-9f9c189bf563)
- 
+
 [Weather Based Stock Prediction with Pycaret - Analytics Vidhya](https://medium.com/analytics-vidhya/weather-based-stock-prediction-with-pycaret-4d604cdeb68f)
- 
+
 [Tkinter Application to Switch Between Different Page Frames](https://www.geeksforgeeks.org/tkinter-application-to-switch-between-different-page-frames/)
  
 I believe creating a consistent documentation of code is very important for any open source project for its growth.
- 
+
 ## Abstract :
 
 ### Current State of Wechaty Tutorials and previous work :
 
 Users come to Wechaty website and are seeking how to use Wechaty to build a chatbot application for solving their problems. Unfortunately, the learning curve is not friendly to Wechaty users, they struggle with setting up their development environment, can not get started with the simplest example source code, and find it hard to know what they can do with the Wechaty API. This problem leads Wechaty to lose lots of new users, increases the number of questions asked in the community, and lowers the user satisfaction.
- 
+
 The current version of the Wechaty tutorial is not properly planned. The tutorials on the website have to be approved. 
- 
+
 ### Proposed Work :
 
 Tutorials need to be useful for the beginner, easy to follow, meaningful and extremely robust, and kept up-to-date.
@@ -102,7 +102,7 @@ The Tutorial project will do the following :
 * Make video tutorials available in English
 * Each Module in the documentation needs image screenshots as well as gifs and video demonstrating the action. It's also important that they get access to both the code, screenshots, outputs and videos directly from the same page.
 * To get beginners interested, it is important to define right in the beginning of tutorial what will be the end result. So that will be designed as well.
- 
+
 ### Contributions :
 
 #795 : [Added interactive code sandbox for contact bot](https://github.com/wechaty/wechaty.js.org/pull/795)
@@ -176,7 +176,6 @@ Two important changes :
 * Add Use cases of usage-with-heroku.md in details.
 * Record demo videos and gifs of Friday Bot. Create interactive sandbox.
 
-
 ### Week 5 : (30th May - 5th June)
 
 * Record demo videos and gifs of :
@@ -235,7 +234,7 @@ Success shall be measured by the following metrics :
 * The tutorials page views increase by 50%
 * The visit duration on tutorials increases by 50% (>2 minutes)
 * The bounce rate of tutorials decreases by 30% (<50%)
- 
+
 ## Why am I the right person for this project?
 
 I believe myself to be the right person for this project because I have past experience in technical writing and I am well versed with git and github. I also find Wechaty very interesting.
@@ -250,7 +249,6 @@ If one technical writer is selected - $5000
 
 If work is divided between two technical writers - $2500. In this case, I am open to collaborating with the other technical writer as well and working as a team.
 
-
 ## Personal Information
 
 Soumi Bardhan
@@ -261,7 +259,7 @@ Soumi Bardhan
 * Location:  Kolkata, West Bengal, India
 * Time Zone: (UTC + 05:30)
 * Typical working hours: 10AM - 7 PM (UTC + 05:30) 
- 
+
 ## References
 
 [1](https://github.com/Wechaty/Wechaty-getting-started)
