@@ -103,21 +103,21 @@ The Tutorial project will do the following :
 * Each Module in the documentation needs image screenshots as well as gifs and video demonstrating the action. It's also important that they get access to both the code, screenshots, outputs and videos directly from the same page.
 * To get beginners interested, it is important to define right in the beginning of tutorial what will be the end result. So that will be designed as well.
 
-### Contributions :
+### Contributions
 
-#795 : [Added interactive code sandbox for contact bot](https://github.com/wechaty/wechaty.js.org/pull/795)
-#797 : [Added subsections to Examples section and reorginzation](https://github.com/wechaty/wechaty.js.org/pull/797)
-#756 : [Updates Google Cloud instructions and images for Getting Started  Tutorial](https://github.com/Wechaty/Wechaty.js.org/pull/756)
-#749 : [Enhance Getting started with Gitpod section of Getting Started Tutorials](https://github.com/wechaty/wechaty.js.org/pull/749)
-#774 : [Update getting started with Redux](https://github.com/wechaty/wechaty.js.org/pull/774)
-#745 : [Updates Usage with Heroku Page](https://github.com/Wechaty/Wechaty.js.org/pull/745)
-#776 : [Added Case studies in English](https://github.com/wechaty/wechaty.js.org/pull/776)
+* 795 : [Added interactive code sandbox for contact bot](https://github.com/wechaty/wechaty.js.org/pull/795)
+* 797 : [Added subsections to Examples section and reorginzation](https://github.com/wechaty/wechaty.js.org/pull/797)
+* 756 : [Updates Google Cloud instructions and images for Getting Started  Tutorial](https://github.com/Wechaty/Wechaty.js.org/pull/756)
+* 749 : [Enhance Getting started with Gitpod section of Getting Started Tutorials](https://github.com/wechaty/wechaty.js.org/pull/749)
+* 774 : [Update getting started with Redux](https://github.com/wechaty/wechaty.js.org/pull/774)
+* 745 : [Updates Usage with Heroku Page](https://github.com/Wechaty/Wechaty.js.org/pull/745)
+* 776 : [Added Case studies in English](https://github.com/wechaty/wechaty.js.org/pull/776)
 
 ### Project Goals
 
 **Timeline**
 
-Before May 1 :
+Before May 1
 
 * Continue making contributions to the organization.
 * Become more familiar with the user documentation and current version of Wechaty.
@@ -139,7 +139,7 @@ Before May 1 :
 
 **Two important changes :**
 
-- Define a specific structure for every tutorial page :
+* Define a specific structure for every tutorial page :
 
   * Aim
   * Prerequisites
@@ -150,10 +150,10 @@ Before May 1 :
   * Important links
   * References
 
-- Cutting down on text and adding video tutorials and gifs to engage beginners.
-- Add Interactive Sandboxes to all tutorials.
-- Adding simple English text for pages available only in Chinese.
-- Add a latest release section for blogs and information on the latest features.
+* Cutting down on text and adding video tutorials and gifs to engage beginners.
+* Add Interactive Sandboxes to all tutorials.
+* Adding simple English text for pages available only in Chinese.
+* Add a latest release section for blogs and information on the latest features.
 
 ### Week 1 : (1nd May - 8th May)
 
@@ -241,7 +241,7 @@ I believe myself to be the right person for this project because I have past exp
 
 I have experience in writing tutorials as well as open source. I have worked as a technical writer with SymPy in GSoD 2020. I would love to improve Wechaty’s tutorials and documentation structure. I have set up the development environment for [Wechaty](https://github.com/Wechaty/Wechaty.js.org) [1] . I am very comfortable in making contributions.
 
-## Stipend :
+## Stipend
 
 Based on work division.
 
@@ -258,7 +258,7 @@ Soumi Bardhan
 * [Blog](https://soumibardhan10.medium.com/)
 * Location:  Kolkata, West Bengal, India
 * Time Zone: (UTC + 05:30)
-* Typical working hours: 10AM - 7 PM (UTC + 05:30) 
+* Typical working hours: 10AM - 7 PM (UTC + 05:30)
 
 ## References
 
