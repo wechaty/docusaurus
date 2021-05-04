@@ -1,9 +1,15 @@
 ---
 title: Project Proposal for GSoD'21
-author: abhishek jaiswal
-categories: project
+author: abhishek
+categories: article
 tags:
-  - project proposal
+  - introduction
+  - google
+  - gsod
+  - 2021
+  - docs
+  - project
+  - proposal
 ---
 
 ## Introduction
@@ -21,6 +27,7 @@ My past Technical Writing Experience
 Technical Writer - AnalyticsVidya@medium & Devtutorials@medium
 
 Wrote :
+
 - Basic tools to learn in Data Analysis with Python
 - Basic Introduction to Numpy
 - Basic Introduction to Pandas: Pandas Series(Part 1)
@@ -30,6 +37,7 @@ Wrote :
 Technical Writer - Hashnode
 
 Wrote :
+
 - How to get started with Machine learning?
 - Unwrapping the features of VLC Media Player
 - Exploring CircuitVerse
@@ -37,11 +45,12 @@ Wrote :
 Video Production Manager - Qualki
 
 Managed :
+
 - video content
 - written script
 - grammatical content
 
-## Project Proposal 
+## Project Proposal
 
 Abstract
 
@@ -85,18 +94,19 @@ Project Goals
 - Work with the contributor team to update the documentation on the Wechaty site
 
 ## My Previous Contribution
-- https://github.com/wechaty/wechaty.js.org/pull/798
-- https://github.com/wechaty/wechaty.js.org/pull/789
-- https://github.com/wechaty/wechaty.js.org/pull/784
-- https://github.com/wechaty/wechaty.js.org/pull/782
-- https://github.com/wechaty/wechaty.js.org/pull/775
-- https://github.com/wechaty/wechaty.js.org/pull/761
-- https://github.com/wechaty/wechaty.js.org/pull/758
 
+- <https://github.com/wechaty/wechaty.js.org/pull/798>
+- <https://github.com/wechaty/wechaty.js.org/pull/789>
+- <https://github.com/wechaty/wechaty.js.org/pull/784>
+- <https://github.com/wechaty/wechaty.js.org/pull/782>
+- <https://github.com/wechaty/wechaty.js.org/pull/775>
+- <https://github.com/wechaty/wechaty.js.org/pull/761>
+- <https://github.com/wechaty/wechaty.js.org/pull/758>
 
 ## Timeline
 
 Doc development(Before 30 April)
+
 - Continue making contributions to the organisation.
 - Become more familiar with the current tutorials and make a blueprint of the changes to be done.
 - Learn new technologies and technical writing skills which will be helpful while implementing the project.
@@ -105,7 +115,9 @@ Doc development(Before 30 April)
 - Finalised the proposed feature and other modifications that need to be made with existing tutorials.
 
 Week 1 (1nd May - 8th May)
+
 This week I will focus on setting up the GitHub repository which I will use to push and pull all the changes I have made.
+
 - If a Github repository for the documentation has already been created by the Wechaty community before the beginning of the documentation period, I will fork the repository so that I can be making changes to my branch directly before creating a pull request to the main repository to be reviewed and merged by the mentor. If not, I will create a repository for the documentation on GitHub (of course after taking permission from the mentor).
 - Add a README file to GitHub to help future contributors understand how to contribute to Wechaty documentations and tutorials.
 - I will write documentation on two subheadings in the Getting Started section of the documentation.
@@ -114,53 +126,65 @@ This week I will focus on setting up the GitHub repository which I will use to p
 - Commit the newly made changes to my branch and create a pull request for review.
 
 Week 2(9th May - 15th May)
+
 - Help & Contact :To mention all the necessary links and references with details.
 - Quick Start Setup : A quick easy to understand setup tutorial with necessary images and easy-to-understand words.
 - Installation : Straightforward installation with images for each step in installation.
 
 Week 3(16th May - 22nd May)
+
 - Showcase : To translate language as well as rearrange the topics in block form for better User Interface.
 - Hands-on tutorial’s Homepage :To translate page and retransform page for better experience.4
 - Basic tutorials for beginners : To add a well explained introduction and some wechaty images to make interests for the users.
 
 Week 4(23rd May - 29th May)
+
 - Video Tutorial (Money Bot) : To translate the entire page and to add english subtitles to the video.
 - Create a bot : To reorganise the page, add items to left fields and conversion of codes to 5 different programming languages.
 - Listen to events : To reorganise the page, add items to left fields and conversion of codes to 5 different programming languages.
 
 Week 5(30th May - 5th June)
+
 - Video Tutorial (Assistant Bot) : To translate the entire page and to add english subtitles to the video.
 - Deal with message : To reorganise the page, add items to left fields and conversion of codes to 5 different programming languages.
 - Manage rooms : To reorganise the page, add items to left fields and conversion of codes to 5 different programming languages.
 
 Week 6(6th June - 12th June)
+
 - Video Tutorial (Coaxer Bot) : To translate the entire page and to add english subtitles to the video.
 - Make friends : To reorganise the page, add items to left fields and conversion of codes to 5 different programming languages.
 - Process files : To reorganise the page, add items to left fields and conversion of codes to 5 different programming languages.
 
 Week 7(13th June - 19th June)
+
 - Manage contacts : To reorganise the page, add items to left fields and conversion of codes to 5 different programming languages.
 - Write tests : To reorganise the page, add items to left fields and conversion of codes to 5 different programming languages.
 - Construct page for Heroku usage : To add content along with some visuals for better experience.
 
 Week 8(20th June - 26th June)
+
 - Construct page for Heroku usage : To add content along with some visuals for better experience.
 - Construct page for Heroku usage : To add content along with some visuals for better experience.
 - Reorganise Pugin with wechaty page : To reorganise all the content and add some photos for making it interesting.
 
 Week 9(27th June - 3rd July)
+
 - Reorganise Pugin with wechaty page : To reorganise all the content and add some photos for making it interesting.
 - Reorganise Pugin with wechaty page : To reorganise all the content and all photos for making it interesting.5
 - Examples and cheatsheet : Add some new examples and make new cheatsheet for the project.
 
 Week 10(4th July - 10th July)
+
 Conversion of Blogs to english language with possible images as well :
+
 - How do I use Chatbot to reconstruct the sales system in Qiji Innovation Forum,@rickyyin
 - Chatbot's application in customized travel industry,@likai
 - Microsoft Tech Summit-Quickly build a chatbot,@lijiarui
 
 Week 11(11th July - 17th July)
+
 Conversion of Blogs to english language with possible images as well :
+
 - Use wechaty to realize news and information broadcasting robot,@judaschrist
 - Party entertainment robot,@osindex
 - Wechaty-Let there be no difficult business online, @coderwhocode
@@ -168,6 +192,7 @@ Conversion of Blogs to english language with possible images as well :
 Additional Work
 
 Week 12(18th July - 24th July)
+
 - To reverify the reference doc,if we have any docs incomplete ,and translate it to english language as well ,and try to complete it within a week:
 - API references
 - Polyglot
@@ -176,6 +201,7 @@ Week 12(18th July - 24th July)
 - Specifications
 
 Week 13(25th July - 31st July)
+
 - To go through Explanations docs ,and translate it to english language as well for easy understanding and well formatted documents.
 - Overview
 - Conversational
@@ -191,6 +217,7 @@ Week 13(25th July - 31st July)
 - Docusaurus6
 
 Week 14(1st August - 7th August)
+
 - This week I will put all my attention on proofreading the documentation for typos and errors.
 - Submit a project report and evaluation of my mentors
 - Write and submit a report of my experience as a participant in Season of Docs.
@@ -198,8 +225,8 @@ Week 14(1st August - 7th August)
 Personal Information
 
 - Name: Abhishek Jaiswal
-- Github: https://github.com/abhishek-iiit
-- Blog: https://abhishek-iiit.hashnode.dev/ & https://abhishek-iiit.medium.com/
+- Github: <https://github.com/abhishek-iiit>
+- Blog: <https://abhishek-iiit.hashnode.dev/> & <https://abhishek-iiit.medium.com/>
 - Gitter handle: Abhishek Jaiswal
 - Resume: click here
 - Location: Uttar Pradesh, India
