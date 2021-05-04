@@ -9,6 +9,8 @@ tags:
   - docs
   - news
   - featured
+  - sticky
+  - documentation
 image: /assets/2021/04-google-season-of-docs/wechaty-gsod-2021.webp
 ---
 
@@ -31,26 +33,15 @@ Fortunately, we has been accepted by the Google Season of Docs program, and our 
 
 ![Wechaty Google Season of Docs 2021 Acceptance Email](/assets/2021/04-google-season-of-docs/gsod-acceptance-2021.webp)
 
-Wechaty Organization has been granted $9,500 from Google Season of Docs 2021.
-
-## Budget plan
-
-1. Wechaty Tutorials: $5k (split to 2 writers)
-2. Build Wechaty landing page (homepage) with value proposition: $1k
-3. Introduction: $1k
-4. References: $1k
-5. Volunteer stipends: $500
-6. stipends for the writers has not been selected, but has submitted valid proposals or merged PRs: $1k
-
-Total: $9,500
+> Wechaty Organization has been granted $9,500 from Google Season of Docs 2021.
 
 ## Wechaty GSoD'21 technical writers
 
-After the Wechaty GSoD'21 has been announced by the Google officially on April 16, we have been contacted by 23 technical writers. It's amazing that 15 of them submitted the proposal and almost all proposals are in detail planing with great insights of how to improve the Wechaty docs.
+After the Wechaty GSoD'21 has been announced by the Google officially on April 16, we have been contacted by 23 technical writers. It's amazing that 15 of them have submitted the proposal and almost all proposals are in detail planing with great insights of how to improve the Wechaty docs.
 
 Thanks for the following technical writers from GSoD'21: your proposal are very valuable for the Wechaty community, and we hope we can implemented most of them in the following summer months!
 
-> All names have been linked to their proposals:
+> All names have been linked to their great proposals:
 
 1. [Abhishek Jaiswal](https://06412355400643469324.googlegroups.com/attach/2696b2e901464/GSoD%202021%20Project%20Proposal(Abhishek%20Jaiswal).pdf?part=0.1&view=1&vt=ANaJVrH3pZ3BlMcLvPB0Hkmb5a0UOwzTxgIx35I_eiVuC-derjfLADp6bOkSNSplVMvJjxPvaSkAPmq-uhcbTI4yJfGY6tKzbegUoN3mwGlnY-7X-cuZUCU)
 1. [Ahmed Essam](https://docs.google.com/document/d/1GLxVZSUNDq_jf_OvZc82ZwjVK1ECB1srkBf2IyRYtGc/edit#heading=h.wu5oliio4h1o)
@@ -67,6 +58,17 @@ Thanks for the following technical writers from GSoD'21: your proposal are very 
 1. [Simin Liao (廖思閔)](https://groups.google.com/group/wechaty/attach/138b8c1c79a04/Season%20of%20Docs%20Application-Simin%20Liao.pdf?part=0.1&view=1)
 1. [Soumi Bardhan](https://docs.google.com/document/d/1q2_m0gqn7_cPLVPeMmIIzP_IEeGuQxEc_cztooOhLhc/edit)
 1. [Souvik Biswas](https://docs.google.com/document/d/1MD9CwO6BoB664J67ozfygBJUaawazay7dDpcXB3jJcY/edit)
+
+## Budget plan
+
+1. Wechaty Tutorials: $5k (split to 2 writers)
+2. Reconstruct Wechaty landing page (homepage) with value proposition: $1k
+3. Introduction: $1k
+4. References: $1k
+5. Volunteer stipends: $500
+6. stipends for the writers has not been selected, but has submitted valid proposals or merged PRs: $1k
+
+Total: $9,500
 
 ## What's the next steps
 
