@@ -22,7 +22,7 @@ I am Soumi Bardhan, a passionate python and deep learning dev.
 #### Google Season of Docs 2020 - Technical writer - Sympy
 
 * Sympy is a lightweight independent computer algebra system. Added and updated documentation, added missing style sections like Parameters and improved organization.
-* [My Season of Docs 2020 Report for the project Consistency Across docstrings,Sympy Documentation](https://github.com/sympy/sympy/wiki/GSoD-2020-Report-Soumi-Bardhan:-Consistency-across-docstrings---SymPy-Documentation)
+* My Season of Docs 2020 Report for the project Consistency Across docstrings : [Sympy Documentation](https://github.com/sympy/sympy/wiki/GSoD-2020-Report-Soumi-Bardhan:-Consistency-across-docstrings---SymPy-Documentation)
 * Analysed metrics on the google search console before, during and after. Updated the modules with the most number of users first, then moved on to the less used modules.
 
 #### Cppsecrets.com : Python Developer, technical writer
@@ -64,15 +64,15 @@ I am Soumi Bardhan, a passionate python and deep learning dev.
 
 ### Links to some of my medium articles
 
-[Named Entity Recognition — Simple Transformers —Flask REST API](https://medium.com/@soumibardhan10/named-entity-recognition-simple-transformers-flask-rest-api-ec14a7a444cb)
+Named Entity Recognition — Simple Transformers — [Flask REST API](https://medium.com/@soumibardhan10/named-entity-recognition-simple-transformers-flask-rest-api-ec14a7a444cb)
 
-[Fixing Open Source Vulnerabilities in Azure Dev Ops- WhiteSource Bolt ](https://code.likeagirl.io/fixing-open-source-vulnerabilities-in-azure-dev-ops-whitesource-bolt-4a5e53cb9cfe)
+Fixing Open Source Vulnerabilities in Azure Dev Ops- [WhiteSource Bolt](https://code.likeagirl.io/fixing-open-source-vulnerabilities-in-azure-dev-ops-whitesource-bolt-4a5e53cb9cfe)
 
-[Dockerizing and Hosting your Flask Web App(Rest API) on AWS EC2](https://medium.com/datadriveninvestor/dockerizing-and-hosting-your-flask-web-app-rest-api-on-aws-ec2-9f9c189bf563)
+Dockerizing and Hosting your Flask Web App(Rest API) on AWS [EC2](https://medium.com/datadriveninvestor/dockerizing-and-hosting-your-flask-web-app-rest-api-on-aws-ec2-9f9c189bf563)
 
-[Weather Based Stock Prediction with Pycaret - Analytics Vidhya](https://medium.com/analytics-vidhya/weather-based-stock-prediction-with-pycaret-4d604cdeb68f)
+Weather Based Stock Prediction with Pycaret - [Analytics Vidhya](https://medium.com/analytics-vidhya/weather-based-stock-prediction-with-pycaret-4d604cdeb68f)
 
-[Tkinter Application to Switch Between Different Page Frames](https://www.geeksforgeeks.org/tkinter-application-to-switch-between-different-page-frames/)
+Tkinter Application to Switch Between Different Page [Frames](https://www.geeksforgeeks.org/tkinter-application-to-switch-between-different-page-frames/)
 
 I believe creating a consistent documentation of code is very important for any open source project for its growth.
 
@@ -82,7 +82,7 @@ I believe creating a consistent documentation of code is very important for any 
 
 Users come to Wechaty website and are seeking how to use Wechaty to build a chatbot application for solving their problems. Unfortunately, the learning curve is not friendly to Wechaty users, they struggle with setting up their development environment, can not get started with the simplest example source code, and find it hard to know what they can do with the Wechaty API. This problem leads Wechaty to lose lots of new users, increases the number of questions asked in the community, and lowers the user satisfaction.
 
-The current version of the Wechaty tutorial is not properly planned. The tutorials on the website have to be approved. 
+The current version of the Wechaty tutorial is not properly planned. The tutorials on the website have to be approved.
 
 ### Proposed Work
 
@@ -113,16 +113,14 @@ The Tutorial project will do the following :
 * 745 : [Updates Usage with Heroku Page](https://github.com/Wechaty/Wechaty.js.org/pull/745)
 * 776 : [Added Case studies in English](https://github.com/wechaty/wechaty.js.org/pull/776)
 
-### Project Goals
-
-#### Timeline
+### Project Goals and Timeline
 
 * Before May 1, continue making contributions to Wechaty.
 * Become more familiar with the user documentation and current version of Wechaty.
 
 #### Community bonding
 
-* Set up a communication channel and time (due to timezone difference).
+* Set up a communication channel and time(due to timezone difference)
 * Refine my goals and set expectations on both sides.
 * Discussing the order in which the tutorial pages will be updated.
 * Finalize the order of editing the tutorial sections.
