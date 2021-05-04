@@ -11,6 +11,7 @@ tags:
   - introduction
   - project
   - proposal
+image: /assets/contributors/soumi7/avatar.jpeg
 ---
 
 ## GSoD 2021 Project Proposal
