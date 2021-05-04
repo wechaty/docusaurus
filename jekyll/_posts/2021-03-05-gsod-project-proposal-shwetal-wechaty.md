@@ -7,16 +7,15 @@ tags:
 image: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/python-wechaty-logo9.png
 ---
 
+# GSOD21 Proposal for Wechaty
+
 ## Introduction
 
 Hello Fellow Developers!
 
 ![Shwetal Soni](https://avatars.githubusercontent.com/u/57187745?v=4)
 
-Myself Shwetal Soni. I'm CSE Sophomore from National Institue of Technology Hamirpur, Himachal Pradesh, India and a Frontend Web Developer and UI/UX Designer also. Currently I'm exploring blockchains.
-I'm interested in contributing to wechaty's tutorial.
-
-# GSOD21 Proposal for Wechaty
+Myself Shwetal Soni. I'm CSE Sophomore from National Institue of Technology Hamirpur, Himachal Pradesh, India and a Frontend Web Developer and UI/UX Designer also. Currently I'm exploring blockchains. I'm interested in contributing to wechaty's tutorial.
 
 ## Technical Writer
 
@@ -40,7 +39,7 @@ sonishwetal704@gmail.com
 
 ## My Portfolio
 
-[shwetalsoni.github.io](https://shwetalsoni.github.io/) 
+[shwetalsoni.github.io](https://shwetalsoni.github.io/)
 
 ## Overview of my recent work
 
@@ -101,47 +100,47 @@ Being a new user to wechaty I encountered a lot of problems while running Ding D
 
 ## Based on the above analysis I propose the following structure
 
-    Getting Started with Wechaty
-    |- Overview
-    |  -> Beginner Level
-    |     -> Running on Gitpod
-    |     -> Running on Google Cloud Shell
-    |     -> Running Locally
-    |     -> Creating your first bot from scratch
-    |  -> Intermediate and Advanced Level
-    |     -> Usage with Docker
-    |     -> Using with Heroku
-    |     -> Using Plugin with wechaty
-    |     -> Using Redux  with wechaty
-    |     -> Using Vorpal with wechaty
-    |- Quick Start 
-    |  |- Running on Gitpod
-    |  |- Running on Google Cloud Shell
-    |  |_ Running Locally
-    |- Tutorial Series(Creating your first bot from scratch)
-    |  |- From Scratch
-    |  |  |- Overview
-    |  |  |_ Installation
-    |  |- Tutorial
-    |  |  |- Create a bot
-    |  |  |- Dealing with messages
-    |  |  |- Processing files
-    |  |  |_ Writing tests
-    |- Video Tutorials
-    |  -> Chinese Tutorials
-    |  -> Other than Chinese Tutorials
-    |_ Advanced Topics
-    |  |  |- Usage with Docker
-    |  |  |- Using with Heroku
-    |  |  |- Using Plugin with wechaty
-    |  |  |- Using Redux  with wechaty
-    |  |  |_ Using Vorpal with wechaty
+  Getting Started with Wechaty
+  |- Overview
+  |  -> Beginner Level
+  |     -> Running on Gitpod
+  |     -> Running on Google Cloud Shell
+  |     -> Running Locally
+  |     -> Creating your first bot from scratch
+  |  -> Intermediate and Advanced Level
+  |     -> Usage with Docker
+  |     -> Using with Heroku
+  |     -> Using Plugin with wechaty
+  |     -> Using Redux  with wechaty
+  |     -> Using Vorpal with wechaty
+  |- Quick Start
+  |  |- Running on Gitpod
+  |  |- Running on Google Cloud Shell
+  |  |_ Running Locally
+  |- Tutorial Series(Creating your first bot from scratch)
+  |  |- From Scratch
+  |  |  |- Overview
+  |  |  |_ Installation
+  |  |- Tutorial
+  |  |  |- Create a bot
+  |  |  |- Dealing with messages
+  |  |  |- Processing files
+  |  |  |_ Writing tests
+  |- Video Tutorials
+  |  -> Chinese Tutorials
+  |  -> Other than Chinese Tutorials
+  |_ Advanced Topics
+  |  |  |- Usage with Docker
+  |  |  |- Using with Heroku
+  |  |  |- Using Plugin with wechaty
+  |  |  |- Using Redux  with wechaty
+  |  |  |_ Using Vorpal with wechaty
 
 * The above structure is well organized from beginner to advanced level. 
 
 * **The overview section**  should give a complete overview of the topics. If a person is a beginner he can either simply run the app using any of the following options `Running on Gitpod`, `Running on Google Cloud Shell`, `Running locally` by clicking on the given links here.
-    * Also the link for `Tutorial Series (Creating your first bot from scratch)` will also be given in case a user want to follow up with steps creating their own chatbot.
-    * If a user has prior knowledge about wechaty, they can go to the advanced topics by clicking on the links given for respective topics `Usage with Docker`, `Using with Heroku`, etc.
+  * Also the link for `Tutorial Series (Creating your first bot from scratch)` will also be given in case a user want to follow up with steps creating their own chatbot.
+  * If a user has prior knowledge about wechaty, they can go to the advanced topics by clicking on the links given for respective topics `Usage with Docker`, `Using with Heroku`, etc.
 
 * **Quick Start** should be divided into sections. If a user wants to run the app using Gitpod, there should be a separate page for that. Similarly for the remaining two options also. This will enable proper step-wise step tutorial for every option unlike now `Running with Gitpod` and `Running with Google Cloud Shell` are both on the same page messing it up and leading to skipping of some important points.
 
@@ -169,16 +168,3 @@ From last year I have building many personal projects and also writing Readme fo
 ## Proposed Budget
 
 Technical Writer Stipend -> 5000 (Decided by the organization)
-
-
-
-
-
- 
-    
-
-
-
-
-
-
