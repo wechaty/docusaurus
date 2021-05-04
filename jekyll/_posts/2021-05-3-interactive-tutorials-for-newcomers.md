@@ -15,7 +15,7 @@ tags:
 
 ## GSoD 2021 Project Proposal
 
-### Project : Create easy to learn interactive tutorials for beginner users of Wechaty
+### Project - Create easy to learn interactive tutorials for beginner users of Wechaty
 
 I am Soumi Bardhan, a passionate python and deep learning dev.
 
@@ -58,11 +58,11 @@ I am Soumi Bardhan, a passionate python and deep learning dev.
 * Deep Learning
 * BERT(Bidirectional Encoder Representations from Transformers)
 
-#### Research Work :
+#### Research Work
 
 * My Research Work on Autism Spectrum Disorder Detection is also in progress. I am working at ITMR (Interactive Technologies & Multimedia Research) Lab, IIIT Allahabad remotely to simulate the results of my research work that is almost completed.
 
-### Links to some of my medium articles :
+### Links to some of my medium articles
 
 [Named Entity Recognition — Simple Transformers —Flask REST API](https://medium.com/@soumibardhan10/named-entity-recognition-simple-transformers-flask-rest-api-ec14a7a444cb)
 
@@ -76,15 +76,15 @@ I am Soumi Bardhan, a passionate python and deep learning dev.
  
 I believe creating a consistent documentation of code is very important for any open source project for its growth.
 
-## Abstract :
+## Abstract
 
-### Current State of Wechaty Tutorials and previous work :
+### Current State of Wechaty Tutorials and previous work
 
 Users come to Wechaty website and are seeking how to use Wechaty to build a chatbot application for solving their problems. Unfortunately, the learning curve is not friendly to Wechaty users, they struggle with setting up their development environment, can not get started with the simplest example source code, and find it hard to know what they can do with the Wechaty API. This problem leads Wechaty to lose lots of new users, increases the number of questions asked in the community, and lowers the user satisfaction.
 
 The current version of the Wechaty tutorial is not properly planned. The tutorials on the website have to be approved. 
 
-### Proposed Work :
+### Proposed Work
 
 Tutorials need to be useful for the beginner, easy to follow, meaningful and extremely robust, and kept up-to-date.
 
@@ -122,14 +122,14 @@ Before May 1 :
 * Continue making contributions to the organization.
 * Become more familiar with the user documentation and current version of Wechaty.
 
-#### Community bonding : 
+#### Community bonding 
 
 * Set up a communication channel and time (due to timezone difference).
 * Refine my goals and set expectations on both sides.
 * Discussing the order in which the tutorial pages will be updated.
 * Finalize the order of editing the tutorial sections.
 
-#### Documentation Period :
+#### Documentation Period
 
 [Wechaty Website repository](https://github.com/Wechaty/Wechaty.js.org)
 
@@ -137,18 +137,18 @@ Before May 1 :
 
 * For this, I will be collaborating with existing contributors and taking their inputs and feedback on the tutorials I create.
 
-Two important changes :
+**Two important changes :**
 
 - Define a specific structure for every tutorial page :
 
-* Aim
-* Prerequisites
-* Video Tutorial
-* Steps (with Screenshots)
-* Results
-* Try Out the Bot (interactive section)
-* Important links
-* References
+  * Aim
+  * Prerequisites
+  * Video Tutorial
+  * Steps (with Screenshots)
+  * Results
+  * Try Out the Bot (interactive section)
+  * Important links
+  * References
 
 - Cutting down on text and adding video tutorials and gifs to engage beginners.
 - Add Interactive Sandboxes to all tutorials.
@@ -216,7 +216,7 @@ Two important changes :
 * Add videos for setting up a development environment for new Wechaty contributors for the Contributing section of the docs.
 * Add a video keynote from Wechaty creators in simple english talking about why Wechaty was developed and its history.
 
-### Week 13 and 14 :
+### Week 13 and 14
 
 * Adding content to the testing page collaborating with the mentors.
 * Finalizing the work done and getting final reviews from the community.
@@ -227,7 +227,7 @@ As suggested by mentors and community and by the search control stats, I will fo
 
 The rest of the work will be decided based on the work done and search console results.
 
-### Measuring your project’s success
+### Measuring my project’s success
 
 Success shall be measured by the following metrics :
 
