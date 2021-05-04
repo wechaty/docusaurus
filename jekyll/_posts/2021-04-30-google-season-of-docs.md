@@ -33,7 +33,7 @@ Fortunately, we has been accepted by the Google Season of Docs program, and our 
 
 ![Wechaty Google Season of Docs 2021 Acceptance Email](/assets/2021/04-google-season-of-docs/gsod-acceptance-2021.webp)
 
-Wechaty Organization has been granted $9,500 from Google Season of Docs 2021.
+> Wechaty Organization has been granted $9,500 from Google Season of Docs 2021.
 
 ## Budget plan
 
