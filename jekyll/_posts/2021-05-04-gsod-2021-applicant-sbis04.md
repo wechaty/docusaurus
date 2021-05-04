@@ -309,7 +309,7 @@ If work is divided between two technical writers - $2500. In this case, I am ope
 
 ### Personal Information
 
-**Name:** Souvik Biswas
-**Location:** Kolkata, West Bengal, India
-**Time Zone:** UTC +05:30
-**Typical working hours:** 7 AM - 2 PM (UTC +05:30)
+* **Name:** Souvik Biswas
+* **Location:** Kolkata, West Bengal, India
+* **Time Zone:** UTC +05:30
+* **Typical working hours:** 7 AM - 2 PM (UTC +05:30)
