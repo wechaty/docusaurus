@@ -22,7 +22,7 @@ I am Soumi Bardhan, a passionate python and deep learning dev.
 #### Google Season of Docs 2020 - Technical writer - Sympy
 
 * Sympy is a lightweight independent computer algebra system. Added and updated documentation, added missing style sections like Parameters and improved organization.
-* [My Season of Docs 2020 Report for the project Consistency Across docstrings, Sympy Documentation: ](https://github.com/sympy/sympy/wiki/GSoD-2020-Report-Soumi-Bardhan:-Consistency-across-docstrings---SymPy-Documentation)
+* [My Season of Docs 2020 Report for the project Consistency Across docstrings,Sympy Documentation](https://github.com/sympy/sympy/wiki/GSoD-2020-Report-Soumi-Bardhan:-Consistency-across-docstrings---SymPy-Documentation)
 * Analysed metrics on the google search console before, during and after. Updated the modules with the most number of users first, then moved on to the less used modules.
 
 #### Cppsecrets.com : Python Developer, technical writer
@@ -50,7 +50,7 @@ I am Soumi Bardhan, a passionate python and deep learning dev.
 * Create frontend and backend applications to host the models on cloud.
 * Using pycaret to create several regression models and tuning.
 * LSTMs for Stock Prediction
- 
+
 #### The Startup : Technical writer
 
 * The Startup is the largest active medium publication. I write technical articles mostly in the NLP domain.
@@ -73,7 +73,7 @@ I am Soumi Bardhan, a passionate python and deep learning dev.
 [Weather Based Stock Prediction with Pycaret - Analytics Vidhya](https://medium.com/analytics-vidhya/weather-based-stock-prediction-with-pycaret-4d604cdeb68f)
 
 [Tkinter Application to Switch Between Different Page Frames](https://www.geeksforgeeks.org/tkinter-application-to-switch-between-different-page-frames/)
- 
+
 I believe creating a consistent documentation of code is very important for any open source project for its growth.
 
 ## Abstract
@@ -115,14 +115,12 @@ The Tutorial project will do the following :
 
 ### Project Goals
 
-**Timeline**
+#### Timeline
 
-Before May 1
-
-* Continue making contributions to the organization.
+* Before May 1, continue making contributions to Wechaty.
 * Become more familiar with the user documentation and current version of Wechaty.
 
-#### Community bonding 
+#### Community bonding
 
 * Set up a communication channel and time (due to timezone difference).
 * Refine my goals and set expectations on both sides.
