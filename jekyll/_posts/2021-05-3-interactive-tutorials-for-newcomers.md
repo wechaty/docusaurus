@@ -1,7 +1,7 @@
 ---
 title: "Interactive tutorials for newcomers"
 author: soumi7
-categories: project
+categories: article
 tags:
   - python
   - google
@@ -11,7 +11,7 @@ tags:
   - introduction
   - project
   - proposal
-image: /assets/contributors/soumi7/avatar.jpeg
+image: /assets/05-gsod-2021-applicant-soumi7/gsod_s.png
 ---
 
 ## GSoD 2021 Project Proposal
