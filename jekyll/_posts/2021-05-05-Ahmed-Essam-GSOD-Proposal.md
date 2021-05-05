@@ -1,7 +1,7 @@
 ---
-title: "Google Season of Docs 2021 Applicant: Souvik Biswas"
+title: "Google Season of Docs 2021 Applicant: Ahmed Essam"
 author: Hanaffi
-categories: article
+categories: proposal
 tags:
   - google
   - gsod
