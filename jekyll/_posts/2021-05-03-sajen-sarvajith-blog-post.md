@@ -7,6 +7,7 @@ tags:
   - google
   - wechaty
   - gsod 2021
+  - easy to learn tutorial
   - docs
   - project
   - proposal
