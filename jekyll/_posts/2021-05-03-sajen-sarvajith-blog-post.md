@@ -3,11 +3,10 @@ title: "Blog Post for intractive tutorial (Google Season of Docs 2021 Proposal)"
 author: sajenjeshan1222
 categories: article
 tags:
-  - interactive tutorial
+  - interactive
+  - tutorial
   - google
-  - wechaty
-  - gsod 2021
-  - easy to learn tutorial
+  - gsod21
   - docs
   - project
   - proposal
