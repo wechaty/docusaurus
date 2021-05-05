@@ -11,7 +11,7 @@ tags:
   - docs
   - project
   - proposal
-image: /assets/2021/05-gsod'21-interactive-tutorial-sajen-sarvajith/profile-pic.jpeg
+image: /assets/2021/05-sajen-sarvajith-blog-post/profile-pic.jpeg
 ---
 
 ## Biographical Information
