@@ -3,9 +3,9 @@ title: "微信群机器人-读经助手"
 author: kkdev163
 categories: article
 tags:
-  - blog
-  - wechaty
+  - chatroom-tool
   - bible
+  - nodejs
 image: /assets/2021/05-bible-robot/logo.png
 ---
 
@@ -41,31 +41,31 @@ image: /assets/2021/05-bible-robot/logo.png
 
 ### 功能简介
 
-![image](/assets/2021/05-bible-robot/03-01.jpeg)
+![image](/assets/2021/05-bible-robot/03-01.jpg)
 
 ### 更多功能
 
-![image](/assets/2021/05-bible-robot/03-02.jpeg)
+![image](/assets/2021/05-bible-robot/03-02.jpg)
 
-[更多功能长图](/assets/2021/05-bible-robot/03-03.jpeg)
+[更多功能长图](/assets/2021/05-bible-robot/03-03.jpg)
 
 ### 文章推送
 
-![image](/assets/2021/05-bible-robot/03-04.jpeg)
+![image](/assets/2021/05-bible-robot/03-04.jpg)
 
-![image](/assets/2021/05-bible-robot/03-05.jpeg)
+![image](/assets/2021/05-bible-robot/03-05.jpg)
 
 ### 打卡统计
 
-![image](/assets/2021/05-bible-robot/03-06.jpeg)
+![image](/assets/2021/05-bible-robot/03-06.jpg)
 
-![image](/assets/2021/05-bible-robot/03-07.jpeg)
+![image](/assets/2021/05-bible-robot/03-07.jpg)
 
-![image](/assets/2021/05-bible-robot/03-08.jpeg)
+![image](/assets/2021/05-bible-robot/03-08.jpg)
 
 ### 搜文章内容
 
-![image](/assets/2021/05-bible-robot/03-09.jpeg)
+![image](/assets/2021/05-bible-robot/03-09.jpg)
 
 ## 四、技术实现
 
@@ -164,16 +164,20 @@ image: /assets/2021/05-bible-robot/logo.png
 
 ### 微信侧风险
 
-开发阶段，有次把机器人号，从测试群中主动踢出，发现 Provider Service 抛出了一个 Error，为了复现这个异常，我重复多次把这个号从测试群中踢出。然后过了一段时间，就收到了 微信风控通知，提示该号被 多人投诉、有骚扰用户的行为。 所以大家尽量不要讲 机器人踢出群，最好采用主动退出的方式，以免被微信风控。
+开发阶段，有次把机器人号，从测试群中主动踢出，发现 Provider Service 抛出了一个 Error，为了复现这个异常，我重复多次把这个号从测试群中踢出。然后过了一段时间，就收到了 微信风控通知，提示该号被 多人投诉、有骚扰用户的行为。 所以大家尽量不要将 机器人踢出群，最好采用主动退出的方式，以免被微信风控。
 
 换了新的微信号后，大概服务了 2 个月不到，发现被微信主动踢下线了，再次登录提示使用了 微信外挂、非官方客户端或模拟器。不清楚是, provider service 的方案，被大批检测出，还是仅仅是 笔者的微信号，被投诉导致。。
-(/assets/2021/05-bible-robot/04-01.jpeg)
+(/assets/2021/05-bible-robot/04-01.jpg)
 
 笔者开发机器人的初衷是希望解放人力，其实越多的微信群使用(免费使用)，对我来说，开发机器人的价值越高。但由于存在微信封号风险，是目前笔者不敢主动推广，仅靠群成员的口口相传。
 
 ### 2 8 原则
 
 如上文提到的核心功能，笔者1个晚上就实现了，剩下的时间都在丰富七七八八的周边功能。但说实话，这些周边功能，都是我个人在使用，频率非常低，但却占据了我整体开发的 80% 以上时间。
+
+### 交互友好性
+
+由于读经机器人有部分功能是需要输出长段的文字，考虑到阅读的友好性，防止老年机大段文字刷屏，读经机器人使用了 node-canvas 渲染引擎，并实现了简单的文字排版，将大段文字通过图片的方式发送给用户。
 
 ### 便利性与通用性
 
