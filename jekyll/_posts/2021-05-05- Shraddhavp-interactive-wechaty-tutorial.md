@@ -13,8 +13,10 @@ image: /assets/2021/05-Gsod-2021-techwriter-blogpost/ShraddhaPic.jpg
 ---
 
 ## Project summary
+
 Interactive Wechaty Tutorial
 ## Open-source organization:
+
 WeChaty
 ## Technical writer Details:
 
@@ -26,11 +28,14 @@ Location: Bangalore,Karnatak,India
 Time Zone: (UTC + 05:30)
 
 ## Project name:
+
 Create easy to use tutorial for Wechaty
 ## Project length:
+
 Standard length (3 months)
 
 ## PROJECT PROPOSAL GSOD 2021
+
 User Doc is the most important integral part of any software be it paid or open source. The user docs site is designed to assist end-users to use a product or service. The good user docs site is very important because it provides an avenue for users to learn how to use the software, its features, tips, tricks and also resolve common problems encountered when using the software. It also reduces support cost and is part of the corporate identity of the product. The good user docs site is a sign of healthiness of the product, the developer team. Without good user docs site, a user may not know how to do the above things effectively and efficiently.
 My personal ideas to the product would be that I will definitely create a new tutorial page which gives a detailed and structured introduction to the software from installation to the end-user usage.
 the below are my personal ideas on the project:
@@ -42,6 +47,7 @@ the below are my personal ideas on the project:
 Let me now, give a detailed description of the new website look
 
 ## Wechaty User Guide Page :-
+
 • Installation guide.
 • Quick start with Wechaty.
 • Wechay Developer Guide Page:-
@@ -61,7 +67,7 @@ I am the right person for the project because-
 • I am also Medium blog writer and also at LoginRadius(My blockchain blog became rally famous)
 • I am really interested in this project as it creates value for people and new bees who want to use Wechaty and also for the dedication with which I work in my current company my leaders are really happy and appreciate the dedicated work I do.
 
-# I am also interested in working for Introduction ,Landing Page or References Page with a team member
+ **I am also interested in working for Introduction ,Landing Page or References Page with a team member**
 
 Links to some of my Technical Writing works
 • https://www.loginradius.com/blog/async/Blockchain-the-new-technology-of-security-trust/
