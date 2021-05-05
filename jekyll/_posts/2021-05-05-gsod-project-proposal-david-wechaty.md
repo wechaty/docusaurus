@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Hello Fellow Developers!
+Hello 👋!
 
 ![Shwetal Soni](https://avatars.githubusercontent.com/u/45256233?s=400&u=5a16803418ad38ed53caabaf5178fda80500a710&v=4)
 
