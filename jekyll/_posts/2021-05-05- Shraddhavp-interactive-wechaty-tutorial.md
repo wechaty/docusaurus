@@ -41,7 +41,7 @@ the below are my personal ideas on the project:
 
 Let me now, give a detailed description of the new website look
 
-##  Wechaty User Guide Page :-
+## Wechaty User Guide Page :-
 • Installation guide.
 • Quick start with Wechaty.
 • Wechay Developer Guide Page:-
@@ -51,7 +51,7 @@ List of all the contributors should be present in team sections Quick links and 
 • Blogs, Release Notes and Tutorials Page:-
 The tutorial page will contain some popular talks and articles that clarify Wechay concepts. Contributors can add their tutorial links in the tutorial page.
 
-##  WHY AM I THE RIGHT PERSON FOR THIS PROJECT:
+## WHY AM I THE RIGHT PERSON FOR THIS PROJECT:
 
 I am the right person for the project because-
 
@@ -66,3 +66,4 @@ I am the right person for the project because-
 Links to some of my Technical Writing works
 • https://www.loginradius.com/blog/async/Blockchain-the-new-technology-of-security-trust/
 • https://drive.google.com/drive/folders/1_g8lDR-Q0RXHTSj0vc3d4vvTXkrX2Ei0
+
