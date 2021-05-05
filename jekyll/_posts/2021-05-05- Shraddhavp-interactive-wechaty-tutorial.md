@@ -9,7 +9,7 @@ tags:
   - gsod'21
   - project
   - proposal
-image: /assets/2021/Shraddhavp/ShraddhaPic.jpg
+image: /assets/2021/05-Gsod-2021-techwriter-blogpost/ShraddhaPic.jpg
 ---
 
 ##Project summary
