@@ -1,7 +1,7 @@
 ---
-title: "Blog Post for intractive tutorial (Google Season of Docs 2021 Proposal)"
+title: "Sajen Sarvajith K: Blog Post for interactive tutorial (Google Season of Docs 2021 Proposal)"
 author: sajenjeshan1222
-categories: article
+categories: proposal
 tags:
   - interactive
   - tutorial
