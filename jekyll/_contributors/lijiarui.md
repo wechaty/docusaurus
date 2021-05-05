@@ -1,27 +1,27 @@
 ---
-name: Jiarui LI (李佳芮)
-site: https://lijiarui.github.io
-bio: 句子互动创始人 & CEO，微软人工智能最具价值专家 (AI MVP)
-avatar: /assets/contributors/lijiarui/avatar.png
-email: rui@juzi.bot
-twitter: https://weibo.com/u/2175505900
----
+ name: Fizie
+ site: https://lijiarui.github.io
+ bio: Founder & CEO of Sentence Interactive, Microsoft's most valuable artificial intelligence expert (AI MVP)
+ avatar: /assets/contributors/lijiarui/avatar.png
+ email: rui@juzi.bot
+ twitter: https://weibo.com/u/2175505900
+ ---
 
-李佳芮，连续创业者，微信生态产品的开发、设计、运营专家。过去六年中，曾为百余家企业提供微信生态技术和运营服务，包括亚马逊、腾讯、京东、新华网、联想、微软、飞利浦、鹏金所等。[《Chatbot从0到1：对话式交互设计实践指南》](https://item.jd.com/12630213.html) 作者。
+ Li Jiarui, serial entrepreneur, expert in the development, design and operation of WeChat ecological products.  In the past six years, he has provided WeChat ecological technology and operation services to more than 100 companies, including Amazon, Tencent, JD.com, Xinhuanet, Lenovo, Microsoft, Philips, and Pengjin.  ["Chatbot from 0 to 1: A Practical Guide to Conversational Interaction Design"](https://item.jd.com/12630213.html) Author.
 
-2017年创立句子互动，专注基于微信生态提供智能对话服务。客户覆盖教育、保险、大健康等多个领域。同年入选百度AI加速器，次年和百度联手打造[《从0到1搭建聊天机器人》系列课程](https://ai.baidu.com/support/video)。2019年成腾讯云智能对话平台合作伙伴。公司先后获得 PreAngel、Plug and Play、Y Combination,、TSVC（清谷资本）和阿尔法公社等多家中美机构天使投资。
+ Sentence Interactive was founded in 2017, focusing on providing intelligent dialogue services based on the WeChat ecosystem.  Customers cover education, insurance, general health and other fields.  In the same year, he was selected as Baidu AI Accelerator. In the following year, he joined hands with Baidu to create ["Building a Chatbot from 0 to 1" series of courses](https://ai.baidu.com/support/video)  Become a partner of Tencent Cloud Intelligent Dialogue Platform in 2019.  The company has successively obtained angel investment from many Chinese and American institutions such as PreAngel, Plug and Play, Y Combination, TSVC (Clear Valley Capital) and Alpha Commune.
 
-GitHub 8,300+ Stars 开源项目 Wechaty 联合作者，创建并管理覆盖全球基于微信平台的聊天机器人开发者社区，多次应邀在 Google、Microsoft 大会中做 Chatbot 行业技术分享。
+ GitHub 8,300+ Stars open source project Wechaty co-author, created and managed a global community of chatbot developers based on the WeChat platform, and was invited to share technology in the Chatbot industry at Google and Microsoft conferences many times.
 
-![无边游泳池](/assets/contributors/lijiarui/sky.jpg)
+ ![Infinity swimming pool](/assets/contributors/lijiarui/sky.jpg)
 
-李佳芮女士拥有北京邮电大学信息安全专业学士和硕士学位。在校期间参与创办微信公众号技术开发工作室，发布微信墙、微信会议解决方案、在线婚礼请柬喜鹊说等产品。研究生一年级参与腾讯T派校园创新创业大赛并获银创奖和 PreAngel 特别奖。二年级决定休学创业，与2位前腾讯员工合伙创立创立婚庆 O2O 平台蛮蛮互动公司，出任 CEO，并获得了A股上市公司天神娱乐 500 万天使投资。
+ Ms. Li Jiarui holds a bachelor's and master's degree in information security from Beijing University of Posts and Telecommunications.  During the school period, he participated in the establishment of WeChat Official Account Technology Development Studio, and released products such as WeChat Wall, WeChat meeting solutions, and online wedding invitations such as Magpie Talk.  The first-year graduate student participated in the Tencent T School Campus Innovation and Entrepreneurship Competition and won the Silver Innovation Award and the PreAngel Special Award.  In the second grade, he decided to take a break from school and start his own business. He co-founded a wedding O2O platform Manman Interactive Company with two former Tencent employees, served as the CEO, and received a 5 million angel investment from the A-share listed company Tianshen Entertainment.
 
-热爱舞蹈、马拉松、攀岩、瑜伽、拳击等运动，是一个现实的理想主义者，相信时间看得见。
+ Loves dancing, marathon, rock climbing, yoga, boxing and other sports. He is a realistic idealist and believes that time can be seen.
 
-## 联系我
+ ## contact me
 
-- Github: <https://github.com/lijiarui>
-- 微信: ruirui_0914
-- 邮箱：rui@juzi.bot
-- 个人博客: <http://lijiarui.github.io>
+ -Github: <https://github.com/lijiarui>
+ -WeChat: ruirui_0914
+ -Email: rui@juzi.bot
+ -Personal blog: <http://lijiarui.github.io>
