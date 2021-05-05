@@ -27,13 +27,13 @@ As one of the [30 great open-source organizations](https://developers.google.com
 
 ![Wechaty Google Season of Docs 2021 Participants](/assets/2021/04-google-season-of-docs/wechaty-gsod-2021-participants.webp)
 
-We has started to prepare the GSoD'21 at Feb, our proposal is to _[Create easy to learn tutorials for beginner users](https://wechaty.js.org/docs/gsod/2021/)_ with a budget at $6,500.
+We has started to prepare the GSoD'21 at Feb, our proposal is to _[Create easy to learn tutorials for beginner users](https://wechaty.js.org/docs/gsod/2021/)_.
 
 Fortunately, we has been accepted by the Google Season of Docs program, and our budget request has been granted as $9,500!
 
 ![Wechaty Google Season of Docs 2021 Acceptance Email](/assets/2021/04-google-season-of-docs/gsod-acceptance-2021.webp)
 
-> Wechaty Organization has been granted $9,500 from Google Season of Docs 2021.
+> Wechaty Organization has accepted by Google Season of Docs 2021.
 
 ## Wechaty GSoD'21 technical writers
 
