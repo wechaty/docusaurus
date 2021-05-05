@@ -14,7 +14,7 @@ image: /assets/2021/05-Gsod-2021-techwriter-blogpost/ShraddhaPic.jpg
 
 ## Project summary
 Interactive Wechaty Tutorial
-##Open-source organization:
+## Open-source organization:
 WeChaty
 ## Technical writer Details:
 
