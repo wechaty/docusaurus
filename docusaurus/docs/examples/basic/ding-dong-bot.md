@@ -46,7 +46,7 @@ The Ding Dong bot is a part of the **Wechaty Getting Started repository**, you c
 
 For the demo, the bot is started on a device using **WhatsApp**. You can see in the below screenshot it responds to the `ding` message with a `dong`.
 
-![Ding Dong Bot Demo](../../../static/img/docs/examples/basic/wechaty-ding-dong-bot-demo.png)
+![Ding Dong Bot Demo](../../../static/img/docs/examples/basic/ding-dong-bot/wechaty-ding-dong-bot-demo.png)
 
 ## References
 
