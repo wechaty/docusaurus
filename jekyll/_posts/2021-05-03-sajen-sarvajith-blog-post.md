@@ -14,7 +14,7 @@ tags:
 image: /assets/2021/05-gsod'21-interactive-tutorial-sajen-sarvajith/profile-pic.jpeg
 ---
 
-**Biographical Information**
+### Biographical Information
 
 I am a sophomore undergraduate student majoring in Computer Science from India. I have acted as a resource person on topics like ML, DL and orientation on online course awareness in colleges and universities. I have also organised and taken a few webinars regarding machine learning during COVID-19 pandemic.
 
@@ -24,21 +24,21 @@ I am good with popular machine learning libraries like TensorFlow, PyTorch, kera
 
 I have worked on two paper publications regarding anomaly detection and quantum machine learning algorithms. I am going to publish in Elsevier and ICLR journals respectively due to this pandemic. I am unable to go to my university AI lab to complete my final tests so my publications have been paused for now.
 
-**I have applied to GSoD 21 in wechaty org regarding making an interactive tutorial to make users to understand and learn wechaty in a interactive way**
+#### I have applied to GSoD 21 in wechaty org regarding making an interactive tutorial to make users to understand and learn wechaty in a interactive way
 
-**GSod Project Proposal**
+#### GSod Project Proposal
 
-**Contact Information**
+##### Contact Information
 
-Name: sajen sarvajith k
+**Name:** sajen sarvajith k
 
-Email: [sajenjeshan1222@gmail.com](mailto:sajenjeshan1222@gmail.com)
+**Email:** [sajenjeshan1222@gmail.com](mailto:sajenjeshan1222@gmail.com)
 
-GitHub: [sajenjeshan1222](https://github.com/sajenjeshan1222)
+**GitHub:** [sajenjeshan1222](https://github.com/sajenjeshan1222)
 
-Time Zone: UTC + 5:30
+**Time Zone:** UTC + 5:30
 
-**Motivation**
+#### Motivation
 
 My passion in deep learning, Natural Language Processing and documentation and my interest to work for an internationally reputed open source organisation made me apply for this Wechaty project.
 
@@ -46,11 +46,11 @@ Ideally this project will allow me the opportunity to utilize my experience gain
 
 I consider it a vibrant experience to get the opportunity to meet mentors from all over the world and learn about new technologies. I am a very diligent and highly motivated student, and I am certain to push through with dedication. I have always worked to accomplish my goals and gain more knowledge and insight into quantum neural networks, deep learning and documentation. I will be able to contribute to this community in the best way I can.
 
-**Project Title**
+##### Project Title
 
 &quot;Create easy to learn tutorials for beginner users of wehcaty&quot;
 
-**Synopsis**
+##### Synopsis
 
 1. Abstract
 2. Task
@@ -89,14 +89,14 @@ This project aims to improve the tutorials for wechaty in a way that the new wec
 
 Below explanation regarding the significant steps for this interactive and easy to use tutorial
 
-**Overview Section**
+#### Overview Section
 
 - The beginner tutorial has different sections, the first section is overview and in that section new users can find an interactive way of description about the wechaty in general. This is achieved by using JS elements and the webpage intracts to user clicks and other actions rather than a static tutorial or a video tutorial, by this users will understand about the wechaty easily
 - When a user reaches the end of the overview page there will be 2 options for the users, like the webpage will ask the new users that they have understood the above definition or not and the user must have to click it
 - Once the user click anything from the options (understood or not) then 2 operations will take place the first one is the user answers will be saved in a &quot;log&quot; file which we can later use it as an review/survey taken for this tutorial by implementing this, the additional work to take a separate survey from the users about the tutorial is reduced and users can provide their reviews on the spot just by clicking which makes users an easy way to give feedback.
 - The second operation is that when the user click they understood then it will move on to next section, When a user click don&#39;t understand the above overview of the wechaty given in the tutorial then by using JS the web page will refresh with an alternative text which will be more simplified version which explains about the wechaty, then there will be a GIF/videos running in the webpage which helps the user to visualise how the wechaty is working and implemented in different messaging platform like wechat, whatsapp etc. user can choose the messaging platform and they can visualise with a small GIF which demonstrate how the wechaty is working so because of this approach users can understand easily and there will also be an text which explains about the wechaty.
 
-**Quick Start Guide Section**
+#### Quick Start Guide Section
 
 - This section is a quick start guide section where the new users can get in touch with the wechaty code live directly from the wechaty tutorial page.
 - In this section there will be a step by step code with editor(terminal) available as well as a simple and clear explanation of what the code does in a beginner friendly way, users can change the code and explore with it by seeing the outputs of the code live from wechaty website without any delay.
@@ -127,7 +127,7 @@ Below explanation regarding the significant steps for this interactive and easy 
 - This makes our users learn about the wechaty in their preferred language so that beginner users will be more comfortable when going through this tutorial.
 - Once I finish implementing this interactive tutorial then I will make a documentation for the code of this tutorial so that new developers can understand the code of this interactive tutorial and if they have any ideas to improve it they can improve it by going through the code documentation.
 
-**Benefits to community**
+#### Benefits to community
 
 - This project benefits the wechaty and open source community by improving the tutorials for wechaty in a way that the new/beginner wechaty users can run example source code in the browser and learn how to use wechaty in an interactive way.
 - This interactive tutorial increases the pageviews and the duration of the tutorials will also be increased then the bounce rate of the tutorials will be decreased enormously.
@@ -144,16 +144,15 @@ Below explanation regarding the significant steps for this interactive and easy 
 - It invokes engagement and action. The thing that makes a website interactive is the ability for the user to actively engage with the content and various elements. This tutorial will break past one-way form of communication to start a two-way conversation with the user.
 - This tutorial can be extremely beneficial to both users and the wechaty community by providing individual and robust platforms for beginner tutorials.
 
-# Deliverables
+#### Deliverables
 
-Project Timeline
+#### Project Timeline
 
 **Week 1 (May 18 - May 24):**
 
 - Before the project timeline begins I will set up my development environment so that I will start the project as soon as possible this helps me to provide a professional tutorial
 - In this will I will complete the work of making the overview interactive tutorial for the first section of wechaty which explains about the wechaty in general
 - Create the log file for getting the user review in the webpage as mentioned in the
-
 implementation
 
 **Week 2 (May 25 - May 31):**
