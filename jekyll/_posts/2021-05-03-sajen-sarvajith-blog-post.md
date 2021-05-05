@@ -11,7 +11,7 @@ tags:
   - easy to learn tutorial
   - project
   - proposal
-image: /assets/2021/05-gsod'21-interactive-tutorial-sajen-sarvajith/Profile_Pic.jpg
+image: /assets/2021/05-gsod'21-interactive-tutorial-sajen-sarvajith/profile-pic.jpeg
 ---
 
 **Biographical Information**
