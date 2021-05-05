@@ -8,13 +8,12 @@ tags:
   - wechaty
   - gsod 2021
   - docs
-  - easy to learn tutorial
   - project
   - proposal
 image: /assets/2021/05-gsod'21-interactive-tutorial-sajen-sarvajith/profile-pic.jpeg
 ---
 
-### Biographical Information
+## Biographical Information
 
 I am a sophomore undergraduate student majoring in Computer Science from India. I have acted as a resource person on topics like ML, DL and orientation on online course awareness in colleges and universities. I have also organised and taken a few webinars regarding machine learning during COVID-19 pandemic.
 
@@ -24,7 +23,7 @@ I am good with popular machine learning libraries like TensorFlow, PyTorch, kera
 
 I have worked on two paper publications regarding anomaly detection and quantum machine learning algorithms. I am going to publish in Elsevier and ICLR journals respectively due to this pandemic. I am unable to go to my university AI lab to complete my final tests so my publications have been paused for now.
 
-#### I have applied to GSoD 21 in wechaty org regarding making an interactive tutorial to make users to understand and learn wechaty in a interactive way
+### I have applied to GSoD 21 in wechaty org regarding making an interactive tutorial to make users to understand and learn wechaty in a interactive way
 
 #### GSod Project Proposal
 
