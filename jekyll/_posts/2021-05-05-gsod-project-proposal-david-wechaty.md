@@ -1,10 +1,21 @@
+---
+title: Hi I'm David👋
+author: David Atanda
+categories: proposal
+tags:
+  - introduction
+  - participant
+  - gsod
+image: /assets/2021/05-david-applicant-for-gsod/david.jpg
+---
+
 ## GSoD 21 Proposal for Wechaty
 
 ## Introduction
 
 Hello 👋!
 
-![Shwetal Soni](https://avatars.githubusercontent.com/u/45256233?s=400&u=5a16803418ad38ed53caabaf5178fda80500a710&v=4)
+![David Atanda](https://avatars.githubusercontent.com/u/45256233?s=400&u=5a16803418ad38ed53caabaf5178fda80500a710&v=4)
 
 I'm a frontend developer and technical writer with interests in making the web more accessible while building scalable and high performing applications. I build stuff and write about them. Find me [here](https://twitter.com/Davidpreneur)
 
