@@ -5,7 +5,7 @@ categories: article
 tags:
   - code
   - wechaty-puppet-wechat
-  - web协议
+  - web-protocol
   - python
 image: /assets/2021/04-python-wechaty-use-web/wechaty-love-wechaty-desktop.png
 ---
