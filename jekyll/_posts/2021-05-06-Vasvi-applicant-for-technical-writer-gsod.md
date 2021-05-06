@@ -1,7 +1,7 @@
 ---
 title: GSoD Applicant (How-to guides) 
 author: https://github.com/vasvi-sood/
-categories: Applicayion blog
+categories: Application blog
 tags:
   - GSod 2021
   
