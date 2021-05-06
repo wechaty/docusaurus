@@ -342,7 +342,7 @@ async function main() {
 }
 ```
 
-### 6. Defining scripts
+### 5. Defining scripts
 
 You have to define the script for running the bot. Add the following to your `package.json` file:
 
