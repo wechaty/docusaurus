@@ -10,7 +10,7 @@ tags:
   - proposal
 image: /assets/2021/05-Gsod-2021-techwriter-blogpost/ShraddhaPic.jpg
 ---
- I am Shraddha Vasant Prasad ,2020 graduate and currntly working as a Software Engineer At American Express ,I describe myself as "Developer in the making and a Blogger by passion"
+ I am Shraddha Vasant Prasad, 2020 graduate and currntly working as a Software Engineer At American Express, I describe myself as "Developer in the making and a Blogger by passion"
 
 ## Technical writer Details
 
