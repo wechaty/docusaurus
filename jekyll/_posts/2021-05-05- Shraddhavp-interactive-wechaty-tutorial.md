@@ -64,8 +64,8 @@ I am the right person for the project because
 - I am really interested in this project as it creates value for people and new bees who want to use Wechaty and also for the dedication with which I work in my current company my leaders are really happy and appreciate the dedicated work I do.
 - I am also interested in working for Introduction ,Landing Page or References Page with a team member
  
+ 
 ## Links to some of my Technical Writing works
 
 • <https://www.loginradius.com/blog/async/Blockchain-the-new-technology-of-security-trust/>
 •  <https://drive.google.com/drive/folders/1_g8lDR-Q0RXHTSj0vc3d4vvTXkrX2Ei0>
-
