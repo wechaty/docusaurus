@@ -6,6 +6,7 @@ tags:
   - nodejs
   - chatroom-tool
   - bible
+  - other
 image: /assets/2021/05-wechaty-bible-chatbot/logo.png
 ---
 
