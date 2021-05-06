@@ -14,12 +14,12 @@ image: /assets/2021/05-Gsod-2021-techwriter-blogpost/ShraddhaPic.jpg
 
 ## Technical writer Details
 
-Name: Shraddha Vasant Prasad
-Github: <https://github.com/shraddhavp>
-Linkedin: <https://www.linkedin.com/in/shraddha-v-prasad/>
-Blog: <https://medium.com/@anitha.shraddha>
-Location: Bangalore,Karnatak,India
-Time Zone: (UTC + 05:30)
+- Name: Shraddha Vasant Prasad
+- Github: <https://github.com/shraddhavp>
+- Linkedin: <https://www.linkedin.com/in/shraddha-v-prasad/>
+- Blog: <https://medium.com/@anitha.shraddha>
+- Location: Bangalore,Karnatak,India
+- Time Zone: (UTC + 05:30)
 
 ## Project name
 
@@ -67,5 +67,5 @@ I am the right person for the project because
  
 ## Links to some of my Technical Writing works
 
-• <https://www.loginradius.com/blog/async/Blockchain-the-new-technology-of-security-trust/>
-•  <https://drive.google.com/drive/folders/1_g8lDR-Q0RXHTSj0vc3d4vvTXkrX2Ei0>
+- <https://www.loginradius.com/blog/async/Blockchain-the-new-technology-of-security-trust/>
+- <https://drive.google.com/drive/folders/1_g8lDR-Q0RXHTSj0vc3d4vvTXkrX2Ei0>
