@@ -261,6 +261,16 @@ function onLogout (user) {
 }
 ```
 
+#### onError
+
+This is for printing an error message to the console.
+
+```js
+function onError (e) {
+  console.error(e)
+}
+```
+
 Now, initialize the Wechaty bot by providing a name:
 
 ```js
