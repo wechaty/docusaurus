@@ -6,7 +6,6 @@ tags:
   - Documentation
   - gsod
   - 2021
-  - gsod'21
   - project
   - proposal
 image: /assets/2021/05-Gsod-2021-techwriter-blogpost/ShraddhaPic.jpg
@@ -15,14 +14,16 @@ image: /assets/2021/05-Gsod-2021-techwriter-blogpost/ShraddhaPic.jpg
 ## Project summary
 
 Interactive Wechaty Tutorial
+
 ## Open-source organization:
 
 WeChaty
+
 ## Technical writer Details:
 
 Name: Shraddha Vasant Prasad
 Github: https://github.com/shraddhavp
-Linkedin : https://www.linkedin.com/in/shraddha-v-prasad/
+Linkedin: https://www.linkedin.com/in/shraddha-v-prasad/
 Blog: https://medium.com/@anitha.shraddha
 Location: Bangalore,Karnatak,India
 Time Zone: (UTC + 05:30)
@@ -30,6 +31,7 @@ Time Zone: (UTC + 05:30)
 ## Project name:
 
 Create easy to use tutorial for Wechaty
+
 ## Project length:
 
 Standard length (3 months)
@@ -60,7 +62,6 @@ The tutorial page will contain some popular talks and articles that clarify Wech
 ## WHY AM I THE RIGHT PERSON FOR THIS PROJECT:
 
 I am the right person for the project because-
-
 • I have past experience of using Github and also been contributing to open source for more than an year now
 • I have been top open-source contributor in many open-source contributions like Hackincodes and Girlscript Summer of Code.
 • I have also been technical writer in GlobalCert Singapore and Girlscript summer of code for 2 months each
@@ -68,8 +69,7 @@ I am the right person for the project because-
 • I am really interested in this project as it creates value for people and new bees who want to use Wechaty and also for the dedication with which I work in my current company my leaders are really happy and appreciate the dedicated work I do.
 
  **I am also interested in working for Introduction ,Landing Page or References Page with a team member**
-
-Links to some of my Technical Writing works
+## Links to some of my Technical Writing works
 • https://www.loginradius.com/blog/async/Blockchain-the-new-technology-of-security-trust/
 • https://drive.google.com/drive/folders/1_g8lDR-Q0RXHTSj0vc3d4vvTXkrX2Ei0
 
