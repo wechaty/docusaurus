@@ -19,7 +19,7 @@
   with my writing abilities is a natural match. 
   I share Wechaty's vision of using simple and descriptive language in documentation to attract developers.
 
-   <img src="./assets/2021/assets\2021\05-My-GSod-Application\myPhoto.png" height=500px wight=400px></img>
+   <img src="https://github.com/vasvi-sood/wechaty.js.org/blob/master/jekyll/assets/2021/06-Vasvi-applicant-for-technical-writer-gsod/my%20photo.png" height=500px wight=400px></img>
    
    
    
