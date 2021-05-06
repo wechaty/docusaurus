@@ -8,10 +8,10 @@ tags:
   - 2021
   - project
   - proposal
-image: /assets/2021/05-gsod-2021-techwriter-blogpost/shraddhapic.jpg
+image: /assets/2021/05-gsod-2021-techwriter-blogpost/ShraddhaPic.jpg
 ---
 
- I am Shraddha Vasant Prasad, 2020 graduate and currently working as a Software Engineer At American Express, I describe myself as "Developer in the making and a Blogger by passion"
+I am Shraddha Vasant Prasad, 2020 graduate and currntly working as a Software Engineer At American Express, I describe myself as "Developer in the making and a Blogger by passion"
 
 ## Technical writer Details
 
@@ -45,14 +45,14 @@ Let me now, give a detailed description of the new website look
 
 ## Wechaty User Guide Page
 
-• Installation guide.
-• Quick start with Wechaty.
-• Wechay Developer Guide Page:-
-Development Guide, Contribution guide, Git setup, Code of Conduct, Documentation setup
-• About Wechaty Page:-
-List of all the contributors should be present in team sections Quick links and release notes, latest blogs will be added to engage the user to make them read about the latest Wechaty versions or so. Also read the uses of Wechaty
-• Blogs, Release Notes and Tutorials Page:-
-The tutorial page will contain some popular talks and articles that clarify Wechay concepts. Contributors can add their tutorial links in the tutorial page.
+- Installation guide.
+- Quick start with Wechaty.
+- Wechay Developer Guide Page:-
+  Development Guide, Contribution guide, Git setup, Code of Conduct, Documentation setup
+- About Wechaty Page:-
+  List of all the contributors should be present in team sections Quick links and release notes, latest blogs will be added to engage the user to make them read about the latest Wechaty versions or so. Also read the uses of Wechaty
+- Blogs, Release Notes and Tutorials Page:-
+  The tutorial page will contain some popular talks and articles that clarify Wechay concepts. Contributors can add their tutorial links in the tutorial page.
 
 ## WHY AM I THE RIGHT PERSON FOR THIS PROJECT
 
@@ -63,7 +63,7 @@ I am the right person for the project because
 - I have also been technical writer in GlobalCert Singapore and Girlscript summer of code for 2 months each
 - I am also Medium blog writer and also at LoginRadius(My blockchain blog became rally famous)
 - I am really interested in this project as it creates value for people and new bees who want to use Wechaty and also for the dedication with which I work in my current company my leaders are really happy and appreciate the dedicated work I do.
-- I am also interested in working for Introduction ,Landing Page or References Page with a team member.
+- I am also interested in working for Introduction ,Landing Page or References Page with a team member
 
 ## Links to some of my Technical Writing works
 
