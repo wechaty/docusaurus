@@ -9,6 +9,6 @@ twitter: https://twitter.com/therajiv
 
 ## Contact
 
-- Github: <https://github.com/iamrajiv>
 - Email: <rajivperfect007@gmail.com>
+- Github: <https://github.com/iamrajiv>
 - Website: <https://iamrajiv.github.io>
