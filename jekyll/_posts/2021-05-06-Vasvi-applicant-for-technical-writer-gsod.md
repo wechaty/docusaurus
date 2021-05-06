@@ -3,7 +3,11 @@ title: GSoD Applicant (How-to guides)
 author: https://github.com/vasvi-sood/
 categories: Application blog
 tags:
-  - GSod 2021
+  - documentation
+  - gsod
+  - 2021
+  - project
+  - proposal
   
 image: https://github.com/vasvi-sood/wechaty.js.org/blob/master/jekyll/assets/2021/06-Vasvi-applicant-for-technical-writer-gsod/my%20photo.png
 ---
