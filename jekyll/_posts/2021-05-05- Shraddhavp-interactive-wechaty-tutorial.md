@@ -68,3 +68,4 @@ I am the right person for the project because
 
 • <https://www.loginradius.com/blog/async/Blockchain-the-new-technology-of-security-trust/>
 •  <https://drive.google.com/drive/folders/1_g8lDR-Q0RXHTSj0vc3d4vvTXkrX2Ei0>
+
