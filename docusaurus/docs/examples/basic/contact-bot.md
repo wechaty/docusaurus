@@ -92,7 +92,7 @@ It will generate a QR code, scan it using **WeChat** or **WhatsApp** (according 
 
 ## Building the bot
 
-Let's get started with building the Vorpal Hacker News bot using Wechaty.
+Let's get started with building the Wechaty Contact bot using Wechaty.
 
 ### 1. Initialize project
 
@@ -113,7 +113,7 @@ This will generate the `package.json` file containing these:
 
 ```json
 {
-  "name": "vorpal-bot",
+  "name": "contact-bot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -258,16 +258,6 @@ This will print a log message when an user logs out of the bot.
 ```js
 function onLogout (user) {
   console.log(`${user} logout`)
-}
-```
-
-#### onMessage
-
-This will print a log message with the `Message` received by the bot from the user.
-
-```ts
-async function onMessage(msg: Message) {
-  log.info('VorpalBot:', msg.toString())
 }
 ```
 
