@@ -1,6 +1,6 @@
 ---
 title: Proposal for Volunteering in GSoD '21
-author: rajiv-ranjan-singh
+author: iamrajiv
 categories: proposal
 tags:
   - google
@@ -8,7 +8,7 @@ tags:
   - introduction
   - proposal
   - volunteering
-image: /assets/2021/05-gsod-2021-proposal-for-volunteering/avatar.jpeg
+image: /assets/2021/05-gsod-2021-proposal-for-volunteering/gsod-2021.svg
 ---
 
 ## Create easy to learn tutorials for beginner users of Wechaty
