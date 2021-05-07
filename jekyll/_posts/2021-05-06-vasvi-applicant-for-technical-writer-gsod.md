@@ -9,7 +9,7 @@ tags:
   - project
   - proposal
 
-image: https://github.com/vasvi-sood/wechaty.js.org/blob/master/jekyll/assets/2021/06-Vasvi-applicant-for-technical-writer-gsod/my%20photo.png
+image: https://github.com/vasvi-sood/wechaty.js.org/blob/master/jekyll/assets/2021/06-vasvi-applicant-for-technical-writer-gsod/photo.png
 ---
 
 Sophomore,NIT Hamirpur
