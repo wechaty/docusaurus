@@ -12,8 +12,6 @@ tags:
 image: https://github.com/vasvi-sood/wechaty.js.org/blob/master/jekyll/assets/2021/06-Vasvi-applicant-for-technical-writer-gsod/my%20photo.png
 ---
 
-Sophomore, NIT Hamirpur
-
 ### Hi there👋, I'm Vasvi Sood a GSOD applicant
 
 I’m currently pursuing my Bachelor's in Electronics and Communication Engineering from National Institute Of Technology, Hamirpur.
@@ -33,6 +31,5 @@ The best part was the transparent and interactive the application process. The m
 Comming from a technical background I am well aware about various technologies and developer tools .Story writing has always been my favorite hobby. For me, combining technology
 with my writing abilities is a natural match.
 I share Wechaty's vision of using simple and descriptive language in documentation to attract developers.
-
 <a href ="https://docs.google.com/document/d/123CtDluY0zCi5c46se4wF1jJEWHf1lkm5TPrEzysfq0/edit?usp=sharing">My Proposal</a>
 
