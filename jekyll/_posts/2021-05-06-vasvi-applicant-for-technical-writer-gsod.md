@@ -1,15 +1,14 @@
 ---
-title: GSoD Applicant (How-to guides)
-author: https://github.com/vasvi-sood/
-categories: Application blog
+title: "Vasvi Sood: 2021 Google Season of Docs Application"
+author: vasvi-sood
+categories: proposal
 tags:
   - documentation
   - gsod
   - 2021
   - project
   - proposal
-
-image: https://github.com/vasvi-sood/wechaty.js.org/blob/master/jekyll/assets/2021/06-vasvi-applicant-for-technical-writer-gsod/photo.png
+image: /assets/2021/06-vasvi-applicant-for-technical-writer-gsod/photo.png
 ---
 
 Sophomore,NIT Hamirpur
