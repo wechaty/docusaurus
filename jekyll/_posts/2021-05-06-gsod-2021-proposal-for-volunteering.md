@@ -8,7 +8,7 @@ tags:
   - introduction
   - proposal
   - volunteering
-image: /assets/2021/05-gsod-2021-proposal-for-volunteering/gsod-2021.png
+image: /assets/2021/05-gsod-2021-proposal-for-volunteering/gsod-2021.webp
 ---
 
 ## Create easy to learn tutorials for beginner users of Wechaty
