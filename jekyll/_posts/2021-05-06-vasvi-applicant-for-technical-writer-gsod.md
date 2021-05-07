@@ -12,7 +12,7 @@ tags:
 image: https://github.com/vasvi-sood/wechaty.js.org/blob/master/jekyll/assets/2021/06-Vasvi-applicant-for-technical-writer-gsod/my%20photo.png
 ---
 
-### Hi there👋, I'm Vasvi Sood a GSOD applicant
+## Hi there👋, I'm Vasvi Sood a GSOD applicant
 
 I’m currently pursuing my Bachelor's in Electronics and Communication Engineering from National Institute Of Technology, Hamirpur.
 I have applied for the position of Technical writer in Webchatty.
