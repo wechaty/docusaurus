@@ -5,24 +5,21 @@ categories: article
 tags:
   - baidu
   - ai
+  - news
+  - featured
   - chatbot
   - competition
-image: /assets/2021/04-wechaty-with-paddlepaddle/header.png
+image: /assets/2021/04-wechaty-with-paddlepaddle/wechaty-cpu.png
 ---
-比赛报名入口：[AI ChatBot 创意赛](https://aistudio.baidu.com/aistudio/competition/detail/79)
-比赛时间：2021/04/12 - 2021/05/31
 
-![logs](/assets/2021/04-wechaty-with-paddlepaddle/logs.png)
+人工智能时代的ChatBot需要具备哪些能力？它是智能小管家，帮你整理所有“码了就等于看了”的资料？它是斗图大师，分分钟帮你p好好友的鬼畜表情包？它是无情的夸人机器，每天都能自动生成新的彩虹屁？
 
-## 比赛介绍
+![logs](/assets/2021/04-wechaty-with-paddlepaddle/header.png)
 
-✨ 人工智能时代的ChatBot需要具备哪些能力？
+✨ 实用的、有趣的、鬼畜的… 不知大侠有何高见？快来组队实现吧！PaddlePaddle融合Wechaty能 spark 出怎样的inspiration？我们欢迎所有关于ChatBot的创意项目！只要你的项目够优秀，官方送你出道！
 
-- 它是智能小管家，帮你整理所有“码了就等于看了”的资料？
-- 它是斗图大师，分分钟帮你p好好友的鬼畜表情包？
-- 它是无情的夸人机器，每天都能自动生成新的彩虹屁？
-
-实用的、有趣的、鬼畜的… 不知大侠有何高见？快来组队实现吧！PaddlePaddle融合Wechaty能 spark 出怎样的inspiration？我们欢迎所有关于ChatBot的创意项目！只要你的项目够优秀，官方送你出道！
+- 比赛报名入口：[AI ChatBot 创意赛](https://aistudio.baidu.com/aistudio/competition/detail/79)
+- 比赛时间：2021/04/12 - 2021/05/31
 
 ![eliza](/assets/2021/04-wechaty-with-paddlepaddle/eliza.png)
 

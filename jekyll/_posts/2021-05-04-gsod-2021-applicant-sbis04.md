@@ -1,7 +1,7 @@
 ---
 title: "Google Season of Docs 2021 Applicant: Souvik Biswas"
 author: sbis04
-categories: article
+categories: proposal
 tags:
   - google
   - gsod

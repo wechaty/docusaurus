@@ -1,7 +1,7 @@
 ---
-title: "Interactive tutorials for newcomers"
+title: "Soumi Bardhan: Interactive tutorials for newcomers"
 author: soumi7
-categories: article
+categories: proposal
 tags:
   - python
   - google
