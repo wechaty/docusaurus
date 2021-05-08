@@ -11,7 +11,7 @@ title: Room Bot
 
 You can try out the **Wechaty Room bot** using this interactive CodeSandbox.
 
-There is a `TODO` where you have to specify one of your friends' name (the CodeSandbox can be edited by using the above button). After that just scan the generated QR code with **WeChat** app, and you are ready to play with the bot!
+There is a `TODO` where you have to specify one of your friends' name (the CodeSandbox can be edited by using the above button). After that just scan the generated QR code with the **WeChat** app, and you are ready to play with the bot!
 
 <iframe
   class="codesandbox"
