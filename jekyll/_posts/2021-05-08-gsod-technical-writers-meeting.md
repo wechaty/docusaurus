@@ -19,8 +19,7 @@ This is the zoom meeting record for the first online communication between Huan 
 
 {% include iframe src="https://www.youtube.com/watch?v=hTkM_XPpFfU" %}
 
-Agenda: Hello GSoD'21 Technical Writers!
-Meeting Notes: https://bit.ly/3vVOp8m
+Agenda: Hello GSoD'21 Technical Writers! ([meeting notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.edr3nzd8l43b))
 
 - [0:01:41](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=101s) 1. Introducing the Meeting Agenda
 - [0:03:08](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=188s) 2. Self-introduction: Huan
