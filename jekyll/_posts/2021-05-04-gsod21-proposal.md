@@ -3,9 +3,10 @@ title: Wechaty-Create easy to learn tutorials for beginner users of Wechaty
 author: Simin Liao
 tags:
   - proposal
+image: /assets/2021/05-simin-gsod-volunteer/profile.jpg
 ---
 
-# Google Season of Docs 2021 Project Proposal
+# Google Season of Docs 2021 Volunteering Proposal
 
 ## Personal Information:
 
@@ -15,7 +16,6 @@ tags:
 * Location: Taiwan (GMT +08:00)
 * Language: English, Chinese
 * Contact info: proudofheling@gmail.com
-
 
 ### Abstract:
 
@@ -31,7 +31,7 @@ On the other hand, writing for novice is one of the things that is often ignored
 
 Apart from in-job trainings, I also studied technical writing reference guide from Google, Microsoft and some parts of Red Hat. I acquired their writing style and will apply to this project.
 
-I hold a bachelor degree in linguistics and literature from the most prestigious university in Taiwan. Throughout four-year training, I was immersed in words and sentences that I have written many term papers about semantics and syntax. My academic practice gave me an advantage of working with people from engineering background. A great development team is always consists of smart engineers, and I am the one who captures their fabulous ideas, in a simple and transferable way. This is my calling.
+I hold a bachelor degree in linguistics and literature from National Taiwan University. Throughout four-year training, I was immersed in words and sentences that I have written many term papers about semantics and syntax. My academic practice gave me an advantage of working with people from engineering background. A great development team is always consists of smart engineers, and I am the one who captures their fabulous ideas, in a simple and transferable way. This is my calling.
 
 ### Current Issue:
 
@@ -53,81 +53,27 @@ This is kind of the hardest part for the ESL speakers. The user documentation is
 
 ### Approach:
 
-I believe that Wechaty already have many great developers contributing to your project. The biggest problem right now is that all the documentation are independent. Instead of looking for another developer to flourish the documentation, doing the things that you could actually do it yourself, what Wechaty really need right now is an experienced technical writer who could make a concrete structure for the documentation. In short, Wechaty needs the foundation first, before adding more cool functions or user interfaces. In the future, since there will definitely be more people contributing to this project, with a well-constructed structure, they could more easily allocate their new documents and the development team could organize the tutorials more comfortable.
+I believe that Wechaty already have many great developers contributing to your project. The biggest problem right now is that all the documentation are independent. Instead of looking for another developer to flourish the documentation, doing the things that you could actually do it yourself, what Wechaty really need now is an experienced technical writer who could make a concrete structure for the documentation. In short, Wechaty needs the foundation first, before adding more cool functions or user interfaces. In the future, since there will definitely be more people contributing to this project, with a well-constructed structure, they could more easily allocate their new documents and the development team could organize the tutorials more comfortable.
 
-Therefore, for the user documentation, my proposal would be a step by step tutorial from beginner to master Wechaty.
+###Responsibilties
 
+As a full time technical writer working with various engineers from different fields, I play an important role in editing the document and coordinating projects. These two are the things that are often ignored when it comes to technical writing, but are actually very crucial to whether the documentation is complete and professional or not. 
 
-### Timeline:
+Through my previous on-job and personal training, I will commit in the following two areas:
 
-#### Prepare:
+#####1. Edit and proofread the documentation
+  + Make sure all the documents follow [Google Developer Documentation Style Guide](https://developers.google.com/style), including format, syntax and word choice.
+   + Make sure the technical instruction is understandable for a novice. ( I will follow the instructions step by step as if I’m a user to make sure that the document is easy to understand and doable.)
+   + Make sure all the document structures are consistent.
+    + Make sure the language (English) is simple for ESL (English as Second Language) speakers to comprehend.
+   + Edit the documents and review PRs within three days after receiving.
 
-Get familiar with all the features
-
-
-#### 5/17-5/30 (first two weeks):
-
-For the first two weeks, I would like to make sure that the whole team and I have aligned about the project. Everything needs to be clear. I will spend the first two weeks doing the background research, talking to the development team, and setting up structure and standards.
-
-* Get familiar with all the functions
-* Get familiar with the team
-* Finalize the tutorial structure
-* Set up standards for the documentation
-* Define different functions/ features into three levels: Beginner, Intermediate, Advanced
-
-#### 5/31-6/16 (two weeks):
-
-In this two weeks, I will document the required steps before starting to coding. For example like installation or setting up the environment on different platform. This part is partially finished, so I will also contribute to linking each pages properly.
-
-* Document the overall and starter section
-
-------6/16-6/23 First monthly evaluation period------
-
-#### 6/16-7/16 (one month):
-
-In this month, I will document the functions/ actions that are classified as ---Beginner---. This part is for those who are not very proficient in coding, but still want to use some basic functions of Wechaty, as it is stressed as ---The world---s shortest chatbot code.---
-
-* Document the ---Beginner--- section
-
-------7/16-7/23 Second Monthly evaluation period------
-
-#### 7/16-8/16 (one month):
-
-In this month, I will prepare the section for those who already have some basic knowledge about Wechaty, and would like to explore more.
-
-* Document the ---Intermediate--- section
-
-------8/16-8/23 Third Monthly evaluation period------
-
-#### 8/16-9/16 (one month):
-
-In this month, I will document the features that are more complicated for the experienced users.
-
-* Document the ---Advanced--- section
-
-------9/16-9/23 Fourth monthly evaluation period------
-
-#### 9/16-9/30 (two weeks):
-
-In these two weeks I will work on documenting examples/ templates. This part is for those who do not have time to create their own customized chatbot and would like to follow a template. 
-
-* Document examples/ templates for the use of Wechaty chatbot
-
-#### 10/1-10/15 (last two weeks):
-
-In the last two weeks, I will double check to make sure everything is complete and the links are available. If possible, we could do some UI improvement.
-
-* Finalize the user documentation
-* UI improvement (Optional)
-
-------10/16-10/23 Fifth and final monthly evaluation period------
+#####2. Manage each documents
+    
+  + Make sure that every writer follows the document release schedule and report to Huan if anyone is failling behind.
+  + Make sure that every writer knows the rules of Wechaty documentation.
+  + Collaborate with another volunteer and writers for document release.
 
 ### Proposed Budget
 
-$5000 (negotiable)
-
-
-
-
-
-
+$500 (negotiable)
