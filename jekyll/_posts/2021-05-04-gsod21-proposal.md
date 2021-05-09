@@ -55,20 +55,20 @@ This is kind of the hardest part for the ESL speakers. The user documentation is
 
 I believe that Wechaty already have many great developers contributing to your project. The biggest problem right now is that all the documentation are independent. Instead of looking for another developer to flourish the documentation, doing the things that you could actually do it yourself, what Wechaty really need now is an experienced technical writer who could make a concrete structure for the documentation. In short, Wechaty needs the foundation first, before adding more cool functions or user interfaces. In the future, since there will definitely be more people contributing to this project, with a well-constructed structure, they could more easily allocate their new documents and the development team could organize the tutorials more comfortable.
 
-###Responsibilties
+### Responsibilties
 
 As a full time technical writer working with various engineers from different fields, I play an important role in editing the document and coordinating projects. These two are the things that are often ignored when it comes to technical writing, but are actually very crucial to whether the documentation is complete and professional or not. 
 
 Through my previous on-job and personal training, I will commit in the following two areas:
 
-#####1. Edit and proofread the documentation
+##### 1. Edit and proofread the documentation
   + Make sure all the documents follow [Google Developer Documentation Style Guide](https://developers.google.com/style), including format, syntax and word choice.
    + Make sure the technical instruction is understandable for a novice. ( I will follow the instructions step by step as if I’m a user to make sure that the document is easy to understand and doable.)
    + Make sure all the document structures are consistent.
     + Make sure the language (English) is simple for ESL (English as Second Language) speakers to comprehend.
    + Edit the documents and review PRs within three days after receiving.
 
-#####2. Manage each documents
+##### 2. Manage each documents
     
   + Make sure that every writer follows the document release schedule and report to Huan if anyone is failling behind.
   + Make sure that every writer knows the rules of Wechaty documentation.
