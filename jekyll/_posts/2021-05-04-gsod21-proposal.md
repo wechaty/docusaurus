@@ -62,6 +62,7 @@ As a full time technical writer working with various engineers from different fi
 Through my previous on-job and personal training, I will commit in the following two areas:
 
 #### 1. Edit and proofread the documentation
+
 * Make sure all the documents follow [Google Developer Documentation Style Guide](https://developers.google.com/style), including format, syntax and word choice.
 * Make sure the technical instruction is understandable for a novice. ( I will follow the instructions step by step as if I’m a user to make sure that the document is easy to understand and doable.)
 * Make sure all the document structures are consistent.
