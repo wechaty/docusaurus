@@ -50,20 +50,25 @@ The scope of this  project is limited to  improving  the References section of t
 ## Current state of References Page
 
 After analysis of the introduction section, following issues were seen:
-* The references page is difficult to understand for first time users technically 
-* It is incomplete and abstract
-* Many information is given in Chinese language and hence difficult for users to understand
+
+* The references page is difficult to understand for first time users technically.
+
+* It is incomplete and abstract.
+
+* Many information is given in Chinese language and hence difficult for users to understand.
 
 ## Proposal Video
 
 [PRESENTATION YOUTUBE LINK](https://www.youtube.com/watch?v=82rFox9Vq14)
 
-## Purpose of References section of  wechaty.js.org 
+## Purpose of References section of wechaty.js.org
 
 The references section of wechaty.js.org  will serve the following purposes
 
-* Describe what actually is Wechaty for all the users  be it technical or  non-technical in simple and comprehensible English 
+* Describe what actually is Wechaty for all the users  be it technical or  non-technical in simple and comprehensible English
+
 * Describe the technical aspects of Wechaty in an easy and understandable manner.
+
 The proposed structure is as follows :
 
 * **API References**
@@ -114,7 +119,7 @@ The tasks will be divided  each week after personal call discussions
 * Add snippets wherever possible with appropriate images to make it look more attractive.
 * Include more use cases
 * Add English translations to already existing Chinese language information
-* Focus on concrete steps 
+* Focus on concrete steps
 * At end of our project tenure we will definitely make the Reference page perfect & top-notch
 
 ## Team Goals
