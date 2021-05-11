@@ -61,19 +61,19 @@ The references section of wechaty.js.org  will serve the following purposes
 - Describe the technical aspects of Wechaty in an easy and understandable manner.
 The proposed structure is as follows :
 
-- ### API References
+- **API References**
 
 Add use cases for API references ,also add code snippets for it and also add details about user classes that can be used.
 
-- ### Polyglot
+- **Polyglot**
 
 Add code snippets with easy to understand examples for first time users in different programming languages.
 
-- ### Puppet Providers
+- **Puppet Providers**
 
 Add separate modules for each of the messaging apps and add necessary code snippets
 
-- ### Puppet Services
+- **Puppet Services**
 
 Include all the puppet services offered by Wechaty
 
