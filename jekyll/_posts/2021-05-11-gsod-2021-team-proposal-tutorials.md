@@ -20,7 +20,7 @@ This is the project proposal for creating and improving the **Wechaty Tutorials*
 ### Souvik Biswas (email: `sbis1999@gmail.com`)
 
 I am Souvik Biswas, currently pursuing a B.Tech degree in Computer Science and Engineering from IIIT Kalyani in India. I am a freelance technical writer of [Codemagic](https://blog.codemagic.io/) and [LogRocket](https://blog.logrocket.com/) Blog, and a passionate mobile app developer. You can also find some of my articles on [Medium](https://medium.com/@sbis1999), and explore my projects on [GitHub](https://github.com/sbis04).
- 
+
 ### Shwetal Soni (email: `sonishwetal704@gmail.com`)
 
 I am Shwetal Soni, currently pursuing B.Tech in Computer Science and Engineering from NIT Hamirpur in India. I am interested in UI/UX Design, Frontend web development and recently I’m also exploring the field of Technical Writing. Recently I have only written one technical blog on *writing smart contracts on Tezos Blockchain*. You can check it out here [Medium](https://shwetalsoni.medium.com/building-your-first-dapp-on-tezos-part-1-writing-smart-contract-on-smartpy-d7cdf27476f9). You can also find my projects on [Github](https://github.com/shwetalsoni/).
@@ -28,17 +28,15 @@ I am Shwetal Soni, currently pursuing B.Tech in Computer Science and Engineering
 ## Proposal Video Presentation
 
 {% include iframe.html src="https://youtu.be/aYlHgGFJoJM" %}
- 
+
 ## Abstract
 
 ### Current State of WeChaty Tutorials
 
 * Users come to Wechaty website seeking how to use Wechaty to build a chatbot application for solving their problems. Unfortunately, the learning curve is not friendly to our users, they always struggle with setting up their development environment, can not get started with the simplest example source code, and find it hard to know what they can do with our API. This problem leads to us losing lots of new users, increased number of questions asked in the community, and lowered user satisfaction.
-
 * The current version of the [Wechaty Tutorials](https://wechaty.js.org/docs/tutorials/) is not properly structured.
-
 * The tutorials on the website need improvement, and should be beginner friendly.
- 
+
 ## Proposed Work
 
 Update the **Tutorials** to include a step-by-step guide (easy for beginners to follow) for achieving the final goal of building a bot.
@@ -57,7 +55,7 @@ The Tutorial project should:
 * Add easy to follow video tutorials
 
 The current **overall structure** of the Tutorials documentation is a bit confusing, so uses might find it difficult to find their relevant information for which they came to the Docs. We have proposed a revised structure of the Tutorials section.
- 
+
 Each of the documentation pages should be structured in a particular format (so that users get familiarized with the format and would be much easier to follow). And, each of the tutorial pages for building a bot should contain an interactive **CodeSandbox** at the end (consisting of minimal code and TODO steps) where they can apply the knowledge that they gained by following the tutorial, and build a bot totally by themselves!
 
 We have included a detailed **structure** (further down the article) of each documentation page that we propose to be followed for every bot building tutorial.
@@ -125,14 +123,14 @@ A proposed structure of the tutorial documentation is as follows:
 * **Try out the bot** (CodeSandbox)
 * **Requirements** (tools required to follow the tutorial)
 * **Usage*** (can be renamed as **Quick Start**)
-  
+
   Code snippet - for users who may be searching for how to use the bot in their project, and doesn’t want to go deep into the step-by-step tutorial. 
   
   > One more suggestion: These are like quick start code snippets, so we think it should be moved to the Cheat Sheet section which will look more appropriate.
 
 * **Video tutorial** (optional)*
 * **Getting started**
-  
+
   Quick introduction to the required tools and how to setup their development environment to get started building the bot
 
 * **Building the bot**
