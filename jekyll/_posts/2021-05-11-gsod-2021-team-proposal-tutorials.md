@@ -224,7 +224,7 @@ A proposed structure of the tutorial documentation is as follows:
 * Include step-by-step guide and **CodeSandbox**
 * Add screenshots or GIFs (if necessary)
 
-### Week 11 : (11th July - 17th July)
+### Week 11
 
 * Start working on the [Cheat Sheet](https://wechaty.js.org/docs/tutorials/cheatsheet) which would consist of the following:
   * Brief description of a bot
@@ -235,7 +235,7 @@ A proposed structure of the tutorial documentation is as follows:
 
 Creating the cheat sheet will take time (most probably two weeks).
 
-### Week 12 : (18th July - 24th July)
+### Week 12
 
 * Continue with the cheat sheet.
 * Create short video tutorials for some of the most used bots (if necessary).
