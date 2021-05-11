@@ -57,7 +57,7 @@ After analysis of the introduction section, following issues were seen:
 
 ## Proposal Video
 
-<iframe width="1028" height="578" src="https://www.youtube.com/embed/82rFox9Vq14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include iframe.html src="https://www.youtube.com/embed/82rFox9Vq14" %}
 
 ## Purpose of References section of  wechaty.js.org
 
