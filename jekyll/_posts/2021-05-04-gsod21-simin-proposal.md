@@ -1,8 +1,10 @@
 ---
 title: Wechaty-Create easy to learn tutorials for beginner users of Wechaty
-author: Simin Liao
+author: proudofsimin
+categories: proposal 
 tags:
   - proposal
+image: /assets/2021/05-gsod21-simin-proposal/profile.jpg
 ---
 
 # Google Season of Docs 2021 Project Proposal
