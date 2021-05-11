@@ -26,7 +26,6 @@ image: /assets/2021/05-shraddhavp-soumi-combined-reference-proposal/gsod_s.png
 
 I am Shraddha Vasant Prasad currently working as a Software engineer at American Express with a great passion towards open source and technical writing.
 I would describe myself as “A creative person by nature and a developer by passion”
-<<<<<<< HEAD
 
 Writing Samples
 
@@ -58,7 +57,7 @@ After analysis of the introduction section, following issues were seen:
 
 ## Proposal Video
 
-[PRESENTATION YOUTUBE LINK](https://www.youtube.com/watch?v=82rFox9Vq14)
+<iframe width="1028" height="578" src="https://www.youtube.com/embed/82rFox9Vq14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Purpose of References section of  wechaty.js.org
 
