@@ -124,7 +124,7 @@ A proposed structure of the tutorial documentation is as follows:
 * **Requirements** (tools required to follow the tutorial)
 * **Usage*** (can be renamed as **Quick Start**)
 
-  Code snippet - for users who may be searching for how to use the bot in their project, and doesn’t want to go deep into the step-by-step tutorial. 
+  Code snippet - for users who may be searching for how to use the bot in their project, and doesn’t want to go deep into the step-by-step tutorial.
   
   > One more suggestion: These are like quick start code snippets, so we think it should be moved to the Cheat Sheet section which will look more appropriate.
 
@@ -137,7 +137,7 @@ A proposed structure of the tutorial documentation is as follows:
 
   Step-by-step guide for building the bot, with a **CodeSandbox** at the end having minimal code and *TODO* steps where users can try building the bot by themselves directly on the documentation page without installing any tools on their local system
 
-* **Running the bot** 
+* **Running the bot**
 
   Commands for running the bot locally
 
