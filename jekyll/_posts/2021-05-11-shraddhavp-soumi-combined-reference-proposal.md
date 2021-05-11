@@ -26,12 +26,9 @@ image: /assets/2021/05-shraddhavp-soumi-combined-reference-proposal/gsod_s.png
 
 I am Shraddha Vasant Prasad currently working as a Software engineer at American Express with a great passion towards open source and technical writing.
 I would describe myself as “A creative person by nature and a developer by passion”
-
-Writing Samples
-
-
-(https://www.loginradius.com/blog/async/blockchain-the-new-technology-of-security-trust/) -Blog on Blockchain
-(https://drive.google.com/drive/folders/1_g8lDR-Q0RXHTSj0vc3d4vvTXkrX2Ei0) -My other articles during my tenure as a Technical Content Writer at Girlscript foundation
+**Writing Samples**
+<https://www.loginradius.com/blog/async/blockchain-the-new-technology-of-security-trust/> -Blog on Blockchain
+<https://drive.google.com/drive/folders/1_g8lDR-Q0RXHTSj0vc3d4vvTXkrX2Ei0> -My other articles during my tenure as a Technical Content Writer at Girlscript foundation
 
 ### Soumi Bardhan
 
@@ -77,7 +74,7 @@ Add separate modules for each of the messaging apps and add necessary code snipp
 
 Include all the puppet services offered by Wechaty
 
-# PROJECT TIMELINE
+## PROJECT TIMELINE
 
 (This timeline is tentative it might change after discussion with the community)
 The tasks will be divided  each week after personal call discussions
@@ -125,4 +122,4 @@ The proposed budget for the entire  project is 1000 USD as decided by the organi
 
 ## Proposal Video
 
-[PRESENTATION YOUTUBE LINK] (https://www.youtube.com/watch?v=82rFox9Vq14)
+[PRESENTATION YOUTUBE LINK] <https://www.youtube.com/watch?v=82rFox9Vq14>
