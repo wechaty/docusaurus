@@ -15,10 +15,10 @@ image: /assets/2021/05-shraddhavp-soumi-combined-reference-proposal/gsod_s.png
 
 ### Team members
 
-#### Name  Shraddha Vasant Prasad
-#### Email  shraddhavp.1js16cs094@gmail.com
-#### Name  Soumi Bardhan 
-#### Email  soumibardhan10@gmail.com 
+**Name: Shraddha Vasant Prasad**
+**Email: (shraddhavp.1js16cs094@gmail.com)**
+**Name: Soumi Bardhan**
+**Email: (soumibardhan10@gmail.com)**
 
 ## PROFESSIONAL INFORMATION
 
@@ -37,11 +37,11 @@ Writing Samples
 
 I am Soumi Bardhan, a CS Junior at IIIT Kalyani. I love solving real world problems with deep learning and AI. I document my experiences through technical articles on medium. Checkout my [medium] (https://soumibardhan10.medium.com/) for my technical articles and my [Youtube] (https://www.youtube.com/channel/UCe9j0dMdSq01QydHMYsNPnw) for some video explanations.
 
-# Project title
+## Project title
 
 Improve the References page of wechaty.js.org
 
-# Project scope
+## Project scope
 
 References contain the technical reference for APIs and other technical aspects of the Wechaty machinery.It describes how it works and the way it works.
 The scope of this  project is limited to  improving  the References section of the wechaty.js.org website.
