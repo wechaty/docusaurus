@@ -1,5 +1,5 @@
 ---
-title: Wechaty-Create easy to learn tutorials for beginner users of Wechaty
+title: Google Season of Docs 2021 Volunteering Proposal
 author: proudofsimin
 categories: proposal
 tags:

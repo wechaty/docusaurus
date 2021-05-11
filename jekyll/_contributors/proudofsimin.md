@@ -1,7 +1,7 @@
 ---
 name: Simin Liao
-bio: Technical writer, linguist.
-image: /assets/2021/05-gsod21-proposal/profile.jpg
+bio: Technical writer, Linguist.
+image: /assets/2021/05-gsod21-simin-proposal/profile.jpg
 ---
 
 ## Contact
