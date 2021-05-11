@@ -50,7 +50,6 @@ The scope of this  project is limited to  improving  the References section of t
 
 After analysis of the introduction section, following issues were seen:
 
-<<<<<<< HEAD
 * The references page is difficult to understand for first time users technically.
 
 * It is incomplete and abstract.
@@ -61,9 +60,9 @@ After analysis of the introduction section, following issues were seen:
 
 [PRESENTATION YOUTUBE LINK](https://www.youtube.com/watch?v=82rFox9Vq14)
 
-## Purpose of References section of  wechaty.js.org 
+## Purpose of References section of  wechaty.js.org
 
-The references section of wechaty.js.org  will serve the following purposes
+The references section of wechaty.js.org  will serve the following purposes :
 
 * Describe what actually is Wechaty for all the users  be it technical or  non-technical in simple and comprehensible English
 
