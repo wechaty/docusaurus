@@ -17,7 +17,7 @@ It's a great honor for Wechaty to participate in Google Season of Docs 2021 as o
 
 This is the zoom meeting record for the first online communication between Huan (who is the creator of Wechaty) and all the Technical Writers.
 
-{% include iframe src="https://www.youtube.com/watch?v=hTkM_XPpFfU" %}
+{% include iframe.html src="https://www.youtube.com/watch?v=hTkM_XPpFfU" %}
 
 Agenda: Hello GSoD'21 Technical Writers! ([meeting notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.edr3nzd8l43b))
 
