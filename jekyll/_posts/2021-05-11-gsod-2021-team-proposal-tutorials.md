@@ -24,6 +24,10 @@ I am Souvik Biswas, currently pursuing a B.Tech degree in Computer Science and E
 ### Shwetal Soni (email: `sonishwetal704@gmail.com`)
 
 I am Shwetal Soni, currently pursuing B.Tech in Computer Science and Engineering from NIT Hamirpur in India. I am interested in UI/UX Design, Frontend web development and recently I’m also exploring the field of Technical Writing. Recently I have only written one technical blog on *writing smart contracts on Tezos Blockchain*. You can check it out here [Medium](https://shwetalsoni.medium.com/building-your-first-dapp-on-tezos-part-1-writing-smart-contract-on-smartpy-d7cdf27476f9). You can also find my projects on [Github](https://github.com/shwetalsoni/).
+
+## Proposal Video Presentation
+
+{% include iframe.html src="https://youtu.be/aYlHgGFJoJM" %}
  
 ## Abstract
 
