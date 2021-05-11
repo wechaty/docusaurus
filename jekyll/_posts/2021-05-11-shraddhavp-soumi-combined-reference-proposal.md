@@ -15,10 +15,11 @@ image: /assets/2021/05-shraddhavp-soumi-combined-reference-proposal/gsod_s.png
 
 ### Team members
 
-#### Name  Shraddha Vasant Prasad
-#### Email  shraddhavp.1js16cs094@gmail.com
-#### Name  Soumi Bardhan 
-#### Email  soumibardhan10@gmail.com 
+Name - Shraddha Vasant Prasad
+Email - shraddhavp.1js16cs094@gmail.com
+
+Name - Soumi Bardhan 
+Email - soumibardhan10@gmail.com 
 
 ## PROFESSIONAL INFORMATION
 
@@ -30,18 +31,18 @@ I would describe myself as “A creative person by nature and a developer by pas
 Writing Samples
 
 
-(https://www.loginradius.com/blog/async/blockchain-the-new-technology-of-security-trust/) -Blog on Blockchain
-(https://drive.google.com/drive/folders/1_g8lDR-Q0RXHTSj0vc3d4vvTXkrX2Ei0) -My other articles during my tenure as a Technical Content Writer at Girlscript foundation
+* [Blog on Blockchain](https://www.loginradius.com/blog/async/blockchain-the-new-technology-of-security-trust/)
+* My other [articles](https://drive.google.com/drive/folders/1_g8lDR-Q0RXHTSj0vc3d4vvTXkrX2Ei0) during my tenure as a Technical Content Writer at Girlscript foundation
 
 ### Soumi Bardhan
 
-I am Soumi Bardhan, a CS Junior at IIIT Kalyani. I love solving real world problems with deep learning and AI. I document my experiences through technical articles on medium. Checkout my [medium] (https://soumibardhan10.medium.com/) for my technical articles and my [Youtube] (https://www.youtube.com/channel/UCe9j0dMdSq01QydHMYsNPnw) for some video explanations.
+I am Soumi Bardhan, a CS Junior at IIIT Kalyani. I love solving real world problems with deep learning and AI. I document my experiences through technical articles on medium. Checkout my [medium](https://soumibardhan10.medium.com/) for my technical articles and my [Youtube](https://www.youtube.com/channel/UCe9j0dMdSq01QydHMYsNPnw) for some video explanations.
 
-# Project title
+## Project title
 
 Improve the References page of wechaty.js.org
 
-# Project scope
+## Project scope
 
 References contain the technical reference for APIs and other technical aspects of the Wechaty machinery.It describes how it works and the way it works.
 The scope of this  project is limited to  improving  the References section of the wechaty.js.org website.
@@ -52,6 +53,11 @@ After analysis of the introduction section, following issues were seen:
 - The references page is difficult to understand for first time users technically 
 - It is incomplete and abstract
 - Many information is given in Chinese language and hence difficult for users to understand
+
+## Proposal Video
+
+[PRESENTATION YOUTUBE LINK](https://www.youtube.com/watch?v=82rFox9Vq14)
+
 
 ## Purpose of References section of  wechaty.js.org 
 
@@ -77,7 +83,7 @@ Add separate modules for each of the messaging apps and add necessary code snipp
 
 Include all the puppet services offered by Wechaty
 
-# PROJECT TIMELINE
+## PROJECT TIMELINE
 
 (This timeline is tentative it might change after discussion with the community)
 The tasks will be divided  each week after personal call discussions
@@ -110,19 +116,15 @@ The tasks will be divided  each week after personal call discussions
 - Include more use cases
 - Add English translations to already existing Chinese language information
 - Focus on concrete steps 
-- At end of our project tenure we will definitely make the Reference page a  perfect & top-notch
- 
+- At end of our project tenure we will definitely make the Reference page perfect & top-notch
+
 ## Team Goals
 
 - Weekly  phone calls with each other for discussion
 - Also setup a personalized channel for small discussions
-- Check each other’s work and help out 
-- Set weekly goals together during the phone calls 
+- Check each other’s work and help out
+- Set weekly goals together during the phone calls
 
 ## Proposed budget
 
 The proposed budget for the entire  project is 1000 USD as decided by the organisation which we intend to divide equally.
-
-## Proposal Video
-
-[PRESENTATION YOUTUBE LINK] (https://www.youtube.com/watch?v=82rFox9Vq14)
