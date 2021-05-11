@@ -50,36 +50,35 @@ The scope of this  project is limited to  improving  the References section of t
 ## Current state of References Page
 
 After analysis of the introduction section, following issues were seen:
-- The references page is difficult to understand for first time users technically 
-- It is incomplete and abstract
-- Many information is given in Chinese language and hence difficult for users to understand
+* The references page is difficult to understand for first time users technically 
+* It is incomplete and abstract
+* Many information is given in Chinese language and hence difficult for users to understand
 
 ## Proposal Video
 
 [PRESENTATION YOUTUBE LINK](https://www.youtube.com/watch?v=82rFox9Vq14)
 
-
 ## Purpose of References section of  wechaty.js.org 
 
 The references section of wechaty.js.org  will serve the following purposes
 
-- Describe what actually is Wechaty for all the users  be it technical or  non-technical in simple and comprehensible English 
-- Describe the technical aspects of Wechaty in an easy and understandable manner.
+* Describe what actually is Wechaty for all the users  be it technical or  non-technical in simple and comprehensible English 
+* Describe the technical aspects of Wechaty in an easy and understandable manner.
 The proposed structure is as follows :
 
-- **API References**
+* **API References**
 
 Add use cases for API references ,also add code snippets for it and also add details about user classes that can be used.
 
-- **Polyglot**
+* **Polyglot**
 
 Add code snippets with easy to understand examples for first time users in different programming languages.
 
-- **Puppet Providers**
+* **Puppet Providers**
 
 Add separate modules for each of the messaging apps and add necessary code snippets
 
-- **Puppet Services**
+* **Puppet Services**
 
 Include all the puppet services offered by Wechaty
 
@@ -110,28 +109,21 @@ The tasks will be divided  each week after personal call discussions
 
 ## Project Goals
 
-- Make a neat index to search through the references section with ease
-- Building a step by step guide for references
-- Add snippets wherever possible with appropriate images to make it look more attractive.
-- Include more use cases
-- Add English translations to already existing Chinese language information
-- Focus on concrete steps 
-- At end of our project tenure we will definitely make the Reference page perfect & top-notch
+* Make a neat index to search through the references section with ease
+* Building a step by step guide for references
+* Add snippets wherever possible with appropriate images to make it look more attractive.
+* Include more use cases
+* Add English translations to already existing Chinese language information
+* Focus on concrete steps 
+* At end of our project tenure we will definitely make the Reference page perfect & top-notch
 
 ## Team Goals
 
-- Weekly  phone calls with each other for discussion
-- Also setup a personalized channel for small discussions
-- Check each other’s work and help out
-- Set weekly goals together during the phone calls
+* Weekly  phone calls with each other for discussion
+* Also setup a personalized channel for small discussions
+* Check each other’s work and help out
+* Set weekly goals together during the phone calls
 
 ## Proposed budget
 
 The proposed budget for the entire  project is 1000 USD as decided by the organisation which we intend to divide equally.
-<<<<<<< HEAD
-=======
-
-## Proposal Video
-
-[PRESENTATION YOUTUBE LINK] <https://www.youtube.com/watch?v=82rFox9Vq14>
->>>>>>> 41c5621f5157de3391f98afa7212821245064c0a
