@@ -80,7 +80,7 @@ Huan
 
 Budget: $500 (each)
 
-Thanks for reading our post, Cheers!
+Thanks for reading our post. Cheers!
 
 Best,
 
