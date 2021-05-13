@@ -70,7 +70,7 @@ Rohitesh
 
 Simin
 
-* I will be in touch with the org via mailing list, Gitter and GitHub and you could find me through Gmail, WhatsApp, or WeChat (ID: siminmin1128).
+* I will be in touch with the org via mailing list, Gitter, and GitHub, and you could find me through Gmail, WhatsApp, or WeChat (ID: siminmin1128).
 
 Huan
 
