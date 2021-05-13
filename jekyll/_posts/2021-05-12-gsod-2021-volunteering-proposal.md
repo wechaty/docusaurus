@@ -24,7 +24,7 @@ Read more about the volunteers in their individual project proposals
 4) I will Organize weekly meetings with Wechaty meeting notes, and make sure the meeting is on time and everyone is on the same page.
 5) I will write meeting notes & publish blog posts with zoom meeting recording videos on YouTube embedded.
 6) Help org complete three follow-up surveys which will be held in 2022.
-7) Will create my own whatsapp bot using Wechaty and give feedback on the current state of documentation.
+7) I Will create my own WhatsApp bot using Wechaty and give feedback on the current state of documentation.
 
 #### Deliverables
 
