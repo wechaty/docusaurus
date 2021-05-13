@@ -74,7 +74,7 @@ Simin
 
 Huan
 
-* I’d like to prefer to be contacted primary by my email zixia@zixia.net, and the secondary channel on WeChat (ID: 918999).
+* I’d like to prefer to be contacted primarily by my email zixia@zixia.net and the secondary channel on WeChat (ID: 918999).
 
 ### Project Budget
 
