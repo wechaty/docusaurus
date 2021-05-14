@@ -24,7 +24,7 @@ Read more about the volunteers in their individual project proposals
 4) I will Organize weekly meetings with Wechaty meeting notes, and make sure the meeting is on time and everyone is on the same page.
 5) I will write meeting notes & publish blog posts with zoom meeting recording videos on YouTube embedded.
 6) Help org complete three follow-up surveys which will be held in 2022.
-7) Will create my own whatsapp bot using Wechaty and give feedback on the current state of documentation.
+7) I Will create my own WhatsApp bot using Wechaty and give feedback on the current state of documentation.
 
 #### Deliverables
 
@@ -70,17 +70,17 @@ Rohitesh
 
 Simin
 
-* I will be in touch with the org via mailing list, Gitter and GitHub and you could find me through Gmail, WhatsApp, or WeChat (ID: siminmin1128).
+* I will be in touch with the org via mailing list, Gitter, and GitHub, and you could find me through Gmail, WhatsApp, or WeChat (ID: siminmin1128).
 
 Huan
 
-* I’d like to prefer to be contacted primary by my email zixia@zixia.net, and the secondary channel on WeChat (ID: 918999).
+* I’d like to prefer to be contacted primarily by my email zixia@zixia.net and the secondary channel on WeChat (ID: 918999).
 
 ### Project Budget
 
 Budget: $500 (each)
 
-Thanks for reading our post, Cheers!
+Thanks for reading our post. Cheers!
 
 Best,
 
