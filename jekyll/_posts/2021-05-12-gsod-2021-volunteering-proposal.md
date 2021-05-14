@@ -16,6 +16,10 @@ Read more about the volunteers in their individual project proposals
 * Rohitesh's [individual project proposa](https://wechaty.js.org/2021/05/04/rohitesh-applicant-for-volunteering-gsod/)
 * Simin's [individual project proposa](https://wechaty.js.org/2021/05/04/gsod21-simin-proposal/)
 
+## Proposal Video Presentation
+
+{% include iframe.html src="https://www.youtube.com/watch?v=q2Q5eFCa7dQ" %}
+
 ### Roles and Responsibilities of Rohitesh
 
 1) Write Final project report
@@ -51,9 +55,7 @@ Read more about the volunteers in their individual project proposals
 
 1) Collaborate with other volunteers and org members.
 2) Audit the final performance of the tech writers.
-3) Could we add the following responsibilities so that we can back up each other:
-    * One should notify the other volunteer by email to our mailing list when they can not be on duty so that the other volunteer can take the responsibilities from them, temporarily.
-    * One should take the responsibilities from the other when they can not be on duty by accident.
+3) Notify the other volunteer by email to the Wechaty mailing list when, we can not be on duty, and take the responsibilities from the other when they can not be on duty by accident.
 
 ### Communication
 
