@@ -1,14 +1,19 @@
 ---
 title: 'Hello Wechaty GSoD’21 Technical Writers!'
 author: huan
-categories: event
+categories:
+  - gsod
+  - announcement
+  - milestone
 tags:
   - google
   - gsod
+  - event
   - 2021
   - zoom
   - news
   - featured
+  - sticky
   - docs
 image: /assets/2021/05-gsod-technical-writers-meeting/gsod-meeting-teasor.webp 
 ---
