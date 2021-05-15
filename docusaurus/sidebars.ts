@@ -159,6 +159,8 @@ const community: SubMenuData = {
         'gsoc/2021',
       ],
     },
+    'marketing/branding',
+    'marketing/co-marketing',
   ],
 }
 

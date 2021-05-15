@@ -1,7 +1,7 @@
 ---
 title: "Google Season of Docs 2021 Joint Proposal: Improve the Introduction and Explanation sections project"
 author: nibble0101
-categories: proposal
+categories: GSoD'21
 tags:
   - google
   - gsod
