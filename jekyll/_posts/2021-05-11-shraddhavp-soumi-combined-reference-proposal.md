@@ -1,13 +1,14 @@
 ---
-title: "2021 Google Season of Docs Project - References"
+title: "Google Season of Docs 2021 Team Proposal - References"
 author: soumi7
-categories: proposal
+categories: gsod
 tags:
   - documentation
   - gsod
   - 2021
   - project
   - proposal
+  - team-proposal
 image: /assets/2021/05-shraddhavp-soumi-combined-reference-proposal/gsod_s.png
 ---
 

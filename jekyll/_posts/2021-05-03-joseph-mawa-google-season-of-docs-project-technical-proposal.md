@@ -1,7 +1,7 @@
 ---
 title: "Joseph Mawa: 2021 Google Season of Docs Technical Proposal"
 author: nibble0101
-categories: proposal
+categories: gsod
 tags:
   - google
   - gsod

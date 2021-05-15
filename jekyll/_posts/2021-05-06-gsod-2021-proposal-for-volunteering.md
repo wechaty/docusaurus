@@ -1,7 +1,7 @@
 ---
 title: Proposal for Volunteering in GSoD '21
 author: iamrajiv
-categories: proposal
+categories: gsod
 tags:
   - google
   - gsod

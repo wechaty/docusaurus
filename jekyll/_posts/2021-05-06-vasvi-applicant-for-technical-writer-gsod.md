@@ -1,7 +1,7 @@
 ---
 title: "Vasvi Sood: 2021 Google Season of Docs Application"
 author: vasvi
-categories: proposal
+categories: gsod
 tags:
   - documentation
   - gsod
