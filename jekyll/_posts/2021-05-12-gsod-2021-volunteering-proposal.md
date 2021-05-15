@@ -1,11 +1,13 @@
 ---
-title: Proposal for Volunteering in GSoD'21
+title: "Google Season of Docs 2021 Team Proposal - Volunteering"
 author: rohitesh-kumar-jain
-categories: proposal
+categories: gsod
 tags:
   - docs
   - volunteering
   - gsod
+  - proposal
+  - team-proposal
 image: /assets/2021/05-gsod-2021-volunteering-proposal/gsod_s.png
 ---
 

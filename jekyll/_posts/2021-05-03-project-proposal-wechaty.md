@@ -1,7 +1,7 @@
 ---
 title: "Abhishek Jaiswal :Project Proposal for GSoD'21"
 author: abhishek
-categories: proposal
+categories: gsod
 tags:
   - introduction
   - google
