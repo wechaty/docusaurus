@@ -23,7 +23,7 @@ test('front matter key `categories` must contains at lease one preset category',
     'event',
     'feature',
     'fun',
-    "gsod", // Googl Season of Docs
+    'gsod', // Googl Season of Docs
     'hacking',
     'interview',
     'migration',
