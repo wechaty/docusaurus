@@ -432,4 +432,4 @@ Here we'd like to announce that the Wechaty GSoD'21 selected technical writers, 
 1. [Rajiv Singh](https://wechaty.js.org/contributors/iamrajiv/) for Improve the gRPC and OpenAPI ecosystem (proposal)
 1. [Rohitesh Kumar Jain](https://wechaty.js.org/contributors/rohitesh-kumar-jain/) and [Simin Liao (廖思閔)](https://wechaty.js.org/contributors/proudofsimin/) for [Volunteering](https://wechaty.js.org/2021/05/12/gsod-2021-volunteering-proposal/) ([team proposal](https://docs.google.com/document/d/1Twl2sMIcpaRLC38Hndbn73U-IzWt2pEdLgdnYjsoVF8/))
 
-Welcome the above 13 technical writers onboarding!
+Welcome the above 13 technical writers onboarding, it's so great to have you all in our Wechaty organization community, cheers!
