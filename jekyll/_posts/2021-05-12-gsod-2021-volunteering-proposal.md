@@ -8,7 +8,7 @@ tags:
   - gsod
   - proposal
   - team-proposal
-image: /assets/2021/05-gsod-2021-volunteering-proposal/gsod_s.jpg
+image: /assets/2021/05-gsod-2021-volunteering-proposal/gsod_s.webp
 ---
 
 ## GSoD’21 Project Proposal for Volunteering
