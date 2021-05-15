@@ -1,7 +1,9 @@
 ---
 title: "Google Season of Docs ❤️ Wechaty"
 author: huan
-categories: announcement
+categories:
+  - announcement
+  - gsod
 tags:
   - google
   - gsod
