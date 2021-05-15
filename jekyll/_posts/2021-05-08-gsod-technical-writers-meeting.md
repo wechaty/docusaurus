@@ -147,7 +147,7 @@ We should always follow the documentation system by strictly aligning our docs t
 
 ![Documentation System: Tutorials, How-to Guides, Reference, Explanation][documentation_system_chart]
 
-[documentation_system_chart]: /assets/2021/03-google-season-of-docs-documentation-system/doc-sys-overview.png
+[documentation_system_chart]: /assets/2021/05-gsod-technical-writers-meeting/doc-sys-overview.png
 
 Learn more from:
 
@@ -417,17 +417,14 @@ That's it!
 
 ## Wechaty GSoD'21 selected technical writers
 
-1. [Create easy to learn tutorials for beginner users of Wechaty](https://wechaty.js.org/2021/05/11/gsod-2021-team-proposal-tutorials/)
-    - [Souvik Biswas](https://wechaty.js.org/contributors/sbis04/) and [Shwetal Soni](https://wechaty.js.org/contributors/shwetalsoni/) with [team proposal](https://docs.google.com/document/d/16MDUHguYxlHXxXH830I1OskEFml8_tdUzhThXYUqbn8/edit#heading=h.ja5jroiki3r3)
-1. [Improve the How-to guides section](https://wechaty.js.org/2021/05/12/gsod-2021-how-to-guide-team-proposal/)
-    - [Vasvi Sood](https://wechaty.js.org/contributors/vasvi/) and [Abhishek Jaiswal](https://wechaty.js.org/contributors/abhishek/) with [team proposal](https://docs.google.com/document/d/1x4FnMkvdAaeDn7iNvNlzJ9ykjaBMouJibOznyTYchRY/edit)
-1. [Improve the References section](https://wechaty.js.org/2021/05/11/shraddhavp-soumi-combined-reference-proposal/)
-    - [Shraddha Vasant Prasad](https://wechaty.js.org/contributors/shraddhavp/) and [Soumi Bardhan](https://wechaty.js.org/contributors/soumi7/) with [team proposal](https://docs.google.com/document/d/1ACh3weTzbuPeXG6Qr9Jq7ffRnA9Floz-qt-8nQ3bqLI/edit?ts=60979522)
-1. [Improve the Explanations (and Introduction) sections](https://wechaty.js.org/2021/05/13/gsod-2021-improve-introduction-and-explanation-project-joint-proposal/)
-    - [Mukosa Joseph Mawa](https://wechaty.js.org/contributors/nibble0101/) and Chris Estepa with [team proposal](https://docs.google.com/document/d/1VxIByga8Lui6raoyrosfvjQ8zelpwk-1ci7uk8mZ57M/edit#)
-1. [Reconstruct Wechaty homepage(landing page) with value proposition](https://wechaty.js.org/2021/05/12/gsod-2021-reconstruct-landing-page-team-proposal/)
-    - [Sajen Sarvajith k](https://wechaty.js.org/contributors/sajenjeshan1222/) and Arnab Saha with [team proposal](https://docs.google.com/document/d/1Ri8MpSC5fJQCZN7txai_imLe16Qh4BcPF24ZNugxDuk/edit#)
-1. Improve the gRPC and OpenAPI ecosystem
-    - [Rajiv Singh](https://wechaty.js.org/contributors/iamrajiv/) with proposal
-1. [Volunteering](https://wechaty.js.org/2021/05/12/gsod-2021-volunteering-proposal/)
-    - [Rohitesh Kumar Jain](https://wechaty.js.org/contributors/rohitesh-kumar-jain/) and [Simin Liao (廖思閔)](https://wechaty.js.org/contributors/proudofsimin/) with [team proposal](https://docs.google.com/document/d/1Twl2sMIcpaRLC38Hndbn73U-IzWt2pEdLgdnYjsoVF8/edit?ts=6097ae7e#)
+Here we'd like to announce that the Wechaty GSoD'21 selected technical writers, they are:
+
+1. [Souvik Biswas](https://wechaty.js.org/contributors/sbis04/) and [Shwetal Soni](https://wechaty.js.org/contributors/shwetalsoni/) for [Create easy to learn tutorials for beginner users of Wechaty](https://wechaty.js.org/2021/05/11/gsod-2021-team-proposal-tutorials/) ([team proposal](https://docs.google.com/document/d/16MDUHguYxlHXxXH830I1OskEFml8_tdUzhThXYUqbn8/edit#heading=h.ja5jroiki3r3))
+1. [Vasvi Sood](https://wechaty.js.org/contributors/vasvi/) and [Abhishek Jaiswal](https://wechaty.js.org/contributors/abhishek/) for [Improve the How-to guides section](https://wechaty.js.org/2021/05/12/gsod-2021-how-to-guide-team-proposal/) ([team proposal](https://docs.google.com/document/d/1x4FnMkvdAaeDn7iNvNlzJ9ykjaBMouJibOznyTYchRY/edit))
+1. [Shraddha Vasant Prasad](https://wechaty.js.org/contributors/shraddhavp/) and [Soumi Bardhan](https://wechaty.js.org/contributors/soumi7/) for [Improve the References section](https://wechaty.js.org/2021/05/11/shraddhavp-soumi-combined-reference-proposal/) ([team proposal](https://docs.google.com/document/d/1ACh3weTzbuPeXG6Qr9Jq7ffRnA9Floz-qt-8nQ3bqLI/))
+1. [Mukosa Joseph Mawa](https://wechaty.js.org/contributors/nibble0101/) and Chris Estepa for [Improve the Explanations (and Introduction) sections](https://wechaty.js.org/2021/05/13/gsod-2021-improve-introduction-and-explanation-project-joint-proposal/) ([team proposal](https://docs.google.com/document/d/1VxIByga8Lui6raoyrosfvjQ8zelpwk-1ci7uk8mZ57M/edit#))
+1. [Sajen Sarvajith k](https://wechaty.js.org/contributors/sajenjeshan1222/) and Arnab Saha for [Reconstruct Wechaty homepage(landing page) with value proposition](https://wechaty.js.org/2021/05/12/gsod-2021-reconstruct-landing-page-team-proposal/) ([team proposal](https://docs.google.com/document/d/1Ri8MpSC5fJQCZN7txai_imLe16Qh4BcPF24ZNugxDuk/edit#))
+1. [Rajiv Singh](https://wechaty.js.org/contributors/iamrajiv/) for Improve the gRPC and OpenAPI ecosystem (proposal)
+1. [Rohitesh Kumar Jain](https://wechaty.js.org/contributors/rohitesh-kumar-jain/) and [Simin Liao (廖思閔)](https://wechaty.js.org/contributors/proudofsimin/) for [Volunteering](https://wechaty.js.org/2021/05/12/gsod-2021-volunteering-proposal/) ([team proposal](https://docs.google.com/document/d/1Twl2sMIcpaRLC38Hndbn73U-IzWt2pEdLgdnYjsoVF8/))
+
+Welcome the above 13 technical writers onboarding!
