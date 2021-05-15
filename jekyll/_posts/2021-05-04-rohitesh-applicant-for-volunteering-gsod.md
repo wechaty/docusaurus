@@ -1,7 +1,7 @@
 ---
 title: Hi I'm Rohitesh interested in volunteering
 author: rohitesh-kumar-jain
-categories: proposal
+categories: gsod
 tags:
   - introduction
   - volunteering

@@ -1,7 +1,7 @@
 ---
-title: "Google Season of Docs 2021 Team Proposal: Tutorials"
+title: 'Google Season of Docs 2021 Team Proposal - Tutorials'
 author: sbis04
-categories: proposal
+categories: gsod
 tags:
   - google
   - gsod
@@ -10,6 +10,7 @@ tags:
   - tutorials
   - project
   - proposal
+  - team-proposal
 image: /assets/2021/05-gsod-2021-team-proposal-tutorials/wechaty-tutorials-proposal.png
 ---
 
