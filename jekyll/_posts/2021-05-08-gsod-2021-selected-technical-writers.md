@@ -318,7 +318,7 @@ The most important roles for the volunteers are:
 
 The grants from Google will be split as following:
 
-1. Tutorials: $4k
+1. Tutorials: $5k
 1. How-to guides: $1k
 1. References: $1k
 1. Explanations: $1k
