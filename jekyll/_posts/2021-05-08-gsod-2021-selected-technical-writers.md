@@ -15,7 +15,7 @@ tags:
   - featured
   - sticky
   - docs
-image: /assets/2021/05-gsod-2021-hired-technical-writers/gsod-meeting-teasor.webp 
+image: /assets/2021/05-gsod-2021-selected-technical-writers/gsod-meeting-teasor.webp 
 ---
 
 It's a great honor for Wechaty to participate in Google Season of Docs 2021
@@ -26,7 +26,7 @@ the GSoD program helps Wechaty organization to start collaborating
 with many great technical writers all over the world
 for improving the documentation of Wechaty project.
 
-![Google Season of Docs 2021](/assets/2021/05-gsod-2021-hired-technical-writers/gsod-banner.png)
+![Google Season of Docs 2021](/assets/2021/05-gsod-2021-selected-technical-writers/gsod-banner.png)
 
 If you have read our blog post
 [Google Season of Docs ❤️ Wechaty, @huan, Apr 30, 2021](https://wechaty.js.org/2021/04/30/google-season-of-docs/),
@@ -104,7 +104,7 @@ There are total 20 attendees on our meeting. They are:
 1. Arnab Saha,GSod’21 participant(landing pages)
 1. Rajiv Ranjan Singh, Interested in Volunteering for GSoD '21, IST (UTC +5:30)
 
-![Google Season of Docs 2021: Wechaty GSoD'21 Group Photo](/assets/2021/05-gsod-2021-hired-technical-writers/group-photo.webp)
+![Google Season of Docs 2021: Wechaty GSoD'21 Group Photo](/assets/2021/05-gsod-2021-selected-technical-writers/group-photo.webp)
 
 ### Agendas
 
@@ -152,7 +152,7 @@ We should always follow the documentation system by strictly aligning our docs t
 
 ![Documentation System: Tutorials, How-to Guides, Reference, Explanation][documentation_system_chart]
 
-[documentation_system_chart]: /assets/2021/05-gsod-2021-hired-technical-writers/doc-sys-overview.png
+[documentation_system_chart]: /assets/2021/05-gsod-2021-selected-technical-writers/doc-sys-overview.png
 
 Learn more from:
 
@@ -167,7 +167,7 @@ The project 1-4 is strictly defined by the documentation system, and they must f
 
 > Credit: [Documentation system: Introduction](https://documentation.divio.com/introduction/)
 
-[do-not-go-out-of-scope]: /assets/2021/05-gsod-2021-hired-technical-writers/do-not-go-out-of-scope.png
+[do-not-go-out-of-scope]: /assets/2021/05-gsod-2021-selected-technical-writers/do-not-go-out-of-scope.png
 
 #### Project 1: Tutorials
 
