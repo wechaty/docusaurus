@@ -35,7 +35,7 @@ After that, before we have the kickoff zoom meeting on May 8,
 we have been contacted by total 24 technical writers,
 which is the most powerful writers team I have ever seen before!
 
-## Technical writer hiring
+## Technical writer selection
 
 According to the [timeline from GSoD'21](https://developers.google.com/season-of-docs/docs/timeline),
 we need to hire the technical writers for our organization
@@ -429,7 +429,7 @@ Here we'd like to announce that the Wechaty GSoD'21 selected technical writers, 
 1. [Shraddha Vasant Prasad](https://wechaty.js.org/contributors/shraddhavp/) and [Soumi Bardhan](https://wechaty.js.org/contributors/soumi7/) for [Improve the References section](https://wechaty.js.org/2021/05/11/shraddhavp-soumi-combined-reference-proposal/) ([team proposal](https://docs.google.com/document/d/1ACh3weTzbuPeXG6Qr9Jq7ffRnA9Floz-qt-8nQ3bqLI/))
 1. [Mukosa Joseph Mawa](https://wechaty.js.org/contributors/nibble0101/) and Chris Estepa for [Improve the Explanations (and Introduction) sections](https://wechaty.js.org/2021/05/13/gsod-2021-improve-introduction-and-explanation-project-joint-proposal/) ([team proposal](https://docs.google.com/document/d/1VxIByga8Lui6raoyrosfvjQ8zelpwk-1ci7uk8mZ57M/edit#))
 1. [Sajen Sarvajith k](https://wechaty.js.org/contributors/sajenjeshan1222/) and Arnab Saha for [Reconstruct Wechaty homepage(landing page) with value proposition](https://wechaty.js.org/2021/05/12/gsod-2021-reconstruct-landing-page-team-proposal/) ([team proposal](https://docs.google.com/document/d/1Ri8MpSC5fJQCZN7txai_imLe16Qh4BcPF24ZNugxDuk/edit#))
-1. [Rajiv Singh](https://wechaty.js.org/contributors/iamrajiv/) for Improve the gRPC and OpenAPI ecosystem (proposal)
+1. [Rajiv Singh](https://wechaty.js.org/contributors/iamrajiv/) for Improve the gRPC and OpenAPI ecosystem ([proposal](https://github.com/iamrajiv/GSoD-2021/blob/master/GSoD_2021_Project_Proposal.md))
 1. [Rohitesh Kumar Jain](https://wechaty.js.org/contributors/rohitesh-kumar-jain/) and [Simin Liao (廖思閔)](https://wechaty.js.org/contributors/proudofsimin/) for [Volunteering](https://wechaty.js.org/2021/05/12/gsod-2021-volunteering-proposal/) ([team proposal](https://docs.google.com/document/d/1Twl2sMIcpaRLC38Hndbn73U-IzWt2pEdLgdnYjsoVF8/))
 
 Welcome the above 13 technical writers onboarding, it's so great to have you all in our Wechaty organization community, cheers!
