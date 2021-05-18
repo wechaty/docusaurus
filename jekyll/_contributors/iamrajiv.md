@@ -1,8 +1,8 @@
 ---
 name: Rajiv Ranjan Singh
 site: https://github.com/iamrajiv
-bio: I considered myself a Polymath. I believe in rigorous and intuitive learning. Spend the majority of the time exploring different types of algorithms and contributing to open source.
-avatar: /assets/contributors/iamrajiv/avatar.jpeg
+bio:
+avatar: https://avatars.githubusercontent.com/u/42106787?v=4
 email: rajivperfect007@gmail.com
 twitter: https://twitter.com/therajiv
 ---
