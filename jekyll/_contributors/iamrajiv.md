@@ -2,7 +2,7 @@
 name: Rajiv Ranjan Singh
 site: https://github.com/iamrajiv
 bio:
-avatar: https://avatars.githubusercontent.com/u/42106787?v=4
+avatar: /assets/contributors/iamrajiv/avatar.jpeg
 email: rajivperfect007@gmail.com
 twitter: https://twitter.com/therajiv
 ---
