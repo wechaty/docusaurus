@@ -4,7 +4,6 @@ author: huan
 categories:
   - gsod
   - announcement
-  - milestone
 tags:
   - google
   - gsod
