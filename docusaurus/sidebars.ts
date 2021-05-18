@@ -18,7 +18,7 @@ const showcases: SubMenuData = {
   ],
 }
 
-const wechatyAPI = {
+const wechatyAPI: SubMenuData = {
   label: 'wechatyAPI',
   items: [    
     'api/wechatyAPI/wechaty-api-overview',
