@@ -166,14 +166,14 @@ A proposed structure of the tutorial documentation is as follows:
 
 ### Week 2
 
-* Structure the tutorial properly as per the proposed structure given above 
+* Structure the tutorial properly as per the proposed structure given above
 * Add an **Installation** page for guiding the users to install the tools required for running the Wechaty bot on their local system.
 * Update the [Tutorials: Overview](https://wechaty.js.org/docs/tutorials/) page by adding information about what are the different types of tutorial available that then can go through (keep updating this as new tutorials are added to the docs)
 * In the [Getting started overview](https://wechaty.js.org/docs/getting-started/) page add information about what are the different ways that can get started with Wechaty bots.
 
 ### Week 3
 
-* * Include the **CodeSandbox** of the Ding Dong bot to the [Quick start](https://wechaty.js.org/docs/getting-started/quick-start) page, so that users can try out the bot directly.
+* Include the **CodeSandbox** of the Ding Dong bot to the [Quick start](https://wechaty.js.org/docs/getting-started/quick-start) page, so that users can try out the bot directly.
 * Short videos may be included for running the Ding Dong bot using GitPod and Google Cloud Shell.
 * Update the page with screenshots or GIF of the Ding Dong bot running on a device (WeChat / WhatsApp).
 
@@ -182,13 +182,6 @@ A proposed structure of the tutorial documentation is as follows:
 * Splitting Quick Start into two different pages, separate page for Running on Gitpod and same for Running on Cloudshell. (Removing the unnecessary information)
 * Create a subtopic under **Tutorials** called "**Deploying Wechaty**".
 * Keep the [Usage with Docker](https://wechaty.js.org/docs/tutorials/docker) page and the [Usage with Heroku](https://wechaty.js.org/docs/tutorials/usage-with-heroku) page as sub sections.
-
-  ```
-  Tutorials
-	  |- Deploying Wechaty
-		  |- Usage with Docker
-		  |- Usage with Heroku
-  ```
 
   > NOTE: The Deploying Wechaty section may be included to the How-to guides section
 
