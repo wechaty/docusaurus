@@ -1,7 +1,7 @@
 ---
 title: Google Season of Docs 2021 Volunteering Proposal
 author: proudofsimin
-categories: proposal
+categories: gsod
 tags:
   - proposal
 image: /assets/2021/05-gsod21-simin-proposal/profile.jpg

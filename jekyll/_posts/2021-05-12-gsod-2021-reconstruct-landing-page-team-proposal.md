@@ -1,7 +1,7 @@
 ---
 title: "Google Season of Docs 2021 Team Proposal: Reconstruct Wechaty landing page with value propositions"
 author: sajenjeshan1222
-categories: proposal
+categories: gsod
 tags:
   - google
   - gsod
@@ -12,6 +12,7 @@ tags:
   - value
   - propositions
   - proposal
+  - team-proposal
 image: /assets/2021/05-gsod-2021-reconstruct-landing-page-team-proposal/gsod-reconstruct-lp.png
 ---
 

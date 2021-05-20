@@ -7,6 +7,8 @@ tags:
   - wechaty-puppet-wechat
   - web-protocol
   - python
+  - featured
+  - sticky
 image: /assets/2021/04-python-wechaty-use-web/wechaty-love-wechaty-desktop.png
 ---
 

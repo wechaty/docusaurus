@@ -1,7 +1,7 @@
 ---
 title: "Shraddha Vasant Prasad: 2021 Google Season of Docs Technical Proposal"
 author: shraddhavp
-categories: proposal
+categories: gsod
 tags:
   - documentation
   - gsod

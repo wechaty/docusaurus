@@ -1,11 +1,12 @@
 ---
-title: "Google Season of Docs 2021 How to Guide : Team Proposal"
+title: "Google Season of Docs 2021 Team Proposal: How-to Guides"
 author: abhishek
-categories: proposal
+categories: gsod
 tags:
   - tutorials
   - project
   - proposal
+  - team-proposal
   - google
   - gsod
   - 2021

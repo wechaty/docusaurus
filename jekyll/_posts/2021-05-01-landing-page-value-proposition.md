@@ -1,7 +1,7 @@
 ---
 title: "Reconstruct Wechaty landing page with value propositions"
 author: huan
-categories: proposal
+categories: gsod
 tags:
   - gsod
   - 2021
