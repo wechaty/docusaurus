@@ -2,15 +2,18 @@
 title: What is Wechaty
 ---
 
+import ProviderBadges   from './puppet-providers/transclusions/badges.mdx'
+import PolyglotBadges   from './polyglot/transclusions/badges.mdx'
+
 ![Wechaty: Conversational RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
 
 ## Introduction to Wechaty
 
-A chatbot is a software application used to conduct an online chat conversation instead of direct contact with a human being. Wechaty is an [Open Source](https://opensource.com/resources/what-open-source) software application for building chatbots. It is a modern Conversational [RPA](/main-terms.md) [SDK](/main-terms.md) which Chatbot makers can use to create a bot in a few lines of code. You can use Wechaty to build a chatbot which automates conversations and interact with people through instant messaging platforms such as [Whatsapp](https://www.whatsapp.com/?lang=en), [Wechat](https://www.wechat.com/), [Gitter](https://gitter.im/) and [Lark](https://www.larksuite.com/) among others.
+A chatbot is a software application used to conduct an online chat conversation instead of direct contact with a human being. Wechaty is an [Open Source](https://opensource.com/resources/what-open-source) software application for building chatbots. It is a modern Conversational [RPA](#placeholder) [SDK](#placeholder) which Chatbot makers can use to create a bot in a few lines of code. You can use Wechaty to build a chatbot which automates conversations and interact with people through instant messaging platforms such as [Whatsapp](https://www.whatsapp.com/?lang=en), [Wechat](https://www.wechat.com/), [Gitter](https://gitter.im/) and [Lark](https://www.larksuite.com/) among others.
 
 ## Features of Wechaty
 
-Wechaty offers out-of-the-box support for the common features you would need for turning your [Instant Messaging](/main-terms.md) account into a chatbot. You can easily customize and extend Wechaty to create a chatbot that is tailored to your needs. Some common features of Wechaty that you can take advantage of include:
+Wechaty offers out-of-the-box support for the common features you would need for turning your [Instant Messaging](#placeholder) account into a chatbot. You can easily customize and extend Wechaty to create a chatbot that is tailored to your needs. Some common features of Wechaty that you can take advantage of include:
 
 <!-- Rethink these features -->
 
@@ -31,31 +34,31 @@ Wechaty supports a number of Instant Messaging platforms. You can build a chatbo
 - [Wechat](https://www.wechat.com/)
 - [Gitter](https://gitter.im/)
 - [Lark](https://www.larksuite.com/)
-- [Padlocal]()
-- [Wechat4U]()
-- [Service]()
-- [Mock]()
-- [DIY]()
+- [Padlocal](#placeholder)
+- [Wechat4U](#placeholder)
+- [Service](#placeholder)
+- [Mock](#placeholder)
+- [DIY](#placeholder)
 
-<!--- Insert badges here -->
+<ProviderBadges />
 
 ## Supported Programming Languages
 
-The Wechaty community have developed [Software Development Kits](/main-terms.md) for most of the popular programming languages. You can build a Wechaty Chatbot in any of the programming languages listed below.
+The Wechaty community have developed [Software Development Kits](#placeholder) for most of the popular programming languages. You can build a Wechaty Chatbot in any of the programming languages listed below.
 
 <!-- Find better way of presenting this list -->
 
-- [JavaScript]()
-- [Typscript]()
-- [Python]()
-- [Golang]()
-- [Java]()
-- [Scala]()
-- [PHP]()
-- [.NET]()
-- [Rust]()
+- [JavaScript](#placeholder)
+- [Typscript](#placeholder)
+- [Python](#placeholder)
+- [Golang](#placeholder)
+- [Java](#placeholder)
+- [Scala](#placeholder)
+- [PHP](#placeholder)
+- [.NET](#placeholder)
+- [Rust](#placeholder)
 
-<!-- Insert badges here -->
+<PolyglotBadges />
 
 All these SDKs have been developed by and for the community.
 
@@ -71,13 +74,13 @@ Wechaty is an [Open Source Project](https://opensource.com/resources/what-open-s
 
 ## Maintainers
 
-Wechaty is maintained by [Huan](https://github.com/huan), [Rui]() and a community of [Open Source Contributors](/community.md). We are always looking for people to join the Wechaty community to maintain the Wechaty codebase and documentation. You necessarily don't have to be a programmer to contribute to Wechaty. To get started contributing, you can read the [Contributing section](/contributing.md) of this documentation.
+Wechaty is maintained by [Huan](https://github.com/huan), [Rui](#placeholder) and a community of [Open Source Contributors](#placeholder). We are always looking for people to join the Wechaty community to maintain the Wechaty codebase and documentation. You necessarily don't have to be a programmer to contribute to Wechaty. To get started contributing, you can read the [Contributing section](#placeholder) of this documentation.
 
 <!-- Add Wechaty community as separate subsection under Introduction -->
 
 ## Getting help
 
-Wechaty has a community of very helpful contributors on different platforms you can join to get help from. Before joining any of the communities, we recommend you read our [Code of conduct](/code-of-conduct.md) so that you adhere to our community guidelines. A full list of the different Wechaty communities can be accessed from the [Wechaty community](/community.md) section of this documentation.
+Wechaty has a community of very helpful contributors on different platforms you can join to get help from. Before joining any of the communities, we recommend you read our [Code of conduct](#placeholder) so that you adhere to our community guidelines. A full list of the different Wechaty communities can be accessed from the [Wechaty community](#placeholder) section of this documentation.
 
 ## Mission
 
