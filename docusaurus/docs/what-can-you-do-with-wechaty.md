@@ -2,6 +2,8 @@
 title: What can you do with Wechaty
 ---
 
+![Wechaty: Conversational RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
+
 In this day and age, it is undeniable that chatbots are an essential part of every business and has become a part of our everyday lives. Aside from being a 24/7 digital support tool, chatbots can also perform a lot of functions especially automate repetitive tasks, increase sales, improve business yield, and most of all, enhance a customer's journey.
 
 Listed are the most common things that we can do with our **Wechaty chatbots**:
