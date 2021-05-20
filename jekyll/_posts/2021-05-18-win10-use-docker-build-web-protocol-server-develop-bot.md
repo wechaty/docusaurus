@@ -129,9 +129,10 @@ wsl --export docker-desktop e:\wsl2\docker\docker-desktop.tar
 wsl --unregister docker-desktop
 wsl --unregister docker-desktop-data
 ```
+
 导入镜像文件：
 
-```
+```bash
 wsl --import docker-desktop e:\wsl2\docker\docker-desktop e:\wsl2\docker\docker-desktop.tar --version 2
 wsl --import docker-desktop-data e:\wsl2\docker\docker-desktop-data e:\wsl2\docker\docker-desktop-data.tar --version 2
 ```
@@ -169,7 +170,7 @@ del e:\wsl2\docker\docker-desktop-data.tar
 
 最后感谢Polygplot Wechaty Home微信群内小伙伴们的指点，否则我一定还需要更多的时间才能走通这个ding-dong机器人流程。
 
->  感谢您的阅读，考虑到本人水平极其有限，文章难免有差错，若读者发现文中错误，欢迎指正，或联系我修改。
+> 感谢您的阅读，考虑到本人水平极其有限，文章难免有差错，若读者发现文中错误，欢迎指正，或联系我修改。
 
 ## 参考链接：
 
