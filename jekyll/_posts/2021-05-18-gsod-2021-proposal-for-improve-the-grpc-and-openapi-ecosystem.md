@@ -21,7 +21,7 @@ My Google Season of Docs '20 project report: <https://github.com/iamrajiv/GSoD-2
 
 ## Project Proposal Video Presentation
 
-{% include iframe.html src="" %}
+{% include iframe.html src="https://youtu.be/bSnKbzZYDco" %}
 
 ## Introduction
 
@@ -121,14 +121,12 @@ However, the Wechaty user documentation for gRPC and OpenAPI is currently outdat
 
 ## References
 
-- [Season of Docs Website](https://developers.google.com/season-of-docs/docs)
-- [Wechaty Google Season of Docs 2021 proposal](https://wechaty.js.org/docs/gsod/2021/)
+- [Season of Docs Website](https://developers.google.com/season-of-docs)
 - [wechaty/openapi](https://github.com/wechaty/openapi)
-- [wechaty/wechaty](https://github.com/wechaty/wechaty)
 - [wechaty/wechaty-grpc](https://github.com/wechaty/grpc)
 
 ## Links
 
-- GSoD '21 repository: <https://github.com/iamrajiv/GSoD-2021>
-- Project Proposal: <https://github.com/iamrajiv/GSoD-2021/blob/master/GSoD_2021_Project_Proposal.md>
-- Project Proposal Presentation: <https://gsod-2021-project-proposal-presentation.netlify.app>
+- [GSoD 2021 Project Proposal](https://github.com/iamrajiv/GSoD-2021/blob/master/GSoD_2021_Project_Proposal.md)
+- [GSoD 2021 Project Proposal Presentation](https://gsod-2021-project-proposal-presentation.netlify.app)
+- [GSoD 2021 Repository](https://github.com/iamrajiv/GSoD-2021)
