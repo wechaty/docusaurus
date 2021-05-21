@@ -73,7 +73,7 @@ The proposed How to Guide page will be structured to improve and ensure efficien
 3. TikTok
 
 * Deploy with Docker
-* Deploy with Heroku 
+* Deploy with Heroku
 * **FAQ**: Answer to all those questions that might hinder users from using its functionalities
 
 ## Project Goals
