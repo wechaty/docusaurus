@@ -72,6 +72,8 @@ The proposed How to Guide page will be structured to improve and ensure efficien
 2. Whatsapp
 3. TikTok
 
+* Deploy with Docker
+* Deploy with Heroku 
 * **FAQ**: Answer to all those questions that might hinder users from using its functionalities
 
 ## Project Goals
@@ -148,6 +150,8 @@ The proposed How to Guide page will be structured to improve and ensure efficien
 2. Whatsapp
 3. TikTok
 
+* Deploy with Docker
+* Deploy with Heroku
 * Add Related Image to each subsection to make it more interactive and more engaging.
 * Add the missing parts (TBW) to different programming language
 * Verify working of the code to each programming language
