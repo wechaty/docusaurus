@@ -56,7 +56,6 @@ The proposed How to Guide page will be structured to improve and ensure efficien
 ## Proposed Changes
 
 * **No overview section**: It is theoretical and can get boring for the users to go through an entire page just containing an Overview.
-* **About Bot**: Adding brief introduction to the bot and its various use cases and functionalities with images
 * **Add events to your bot**: Explaining what an event is, emphasising how it can add more value to the bot functionality (adding various use cases as well)
 * **Add more functionality to your bot** (All the  work that can be automated with the bot):
 
@@ -96,7 +95,6 @@ The proposed How to Guide page will be structured to improve and ensure efficien
 
 ### Week 2
 
-* About Bot: Adding brief introduction to the bot and its various use cases and functionalities with images.
 * Install Wechaty: It will link to Wechaty’s starter github template and will have a step by step guide on cloning and running instructions.
 * Add the missing parts (TBW) to different programming languages.
 * Add Related Image to each section to make it more interactive and more engaging.
