@@ -1,42 +1,24 @@
----
-title: What can you do with Wechaty
----
+# What can you do with Wechaty
+Wechaty is designed to help users implement their chatbots with straightforward business logic, without the complexities found in the realm of chatbot programming. As a developer or a non-technical user, users will be able to create a chatbot than can run on almost all popular instant messaging (IM) applications ([Wechat/Weixin](url), [WhatsApp](url), [WeCom](url), [Gitter](url), and [Lark](url), among others).
 
-![Wechaty: Conversational RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
+With a few lines of code from popular programming languages (Java, Python, PHP, .NET, Kotlin, OpenAPI, JavaScript, Go, Scala, C#, and Rust) , users will be able to create a customized chatbot to suit their business needs. On top of that, users can add their own code and configure the chatbot effortlessly. Also, with its intelligent dialogue management system, handling simple and complex user conversations would be easier. 
 
-In this day and age, it is undeniable that chatbots are an essential part of every business and has become a part of our everyday lives. Aside from being a 24/7 digital support tool, chatbots can also perform a lot of functions especially automate repetitive tasks, increase sales, improve business yield, and most of all, enhance a customer's journey.
-
-Listed are the most common things that we can do with our **Wechaty chatbots**:
-
-- Round-the-clock customer and technical support, including resolving a complaint
-- Sales and marketing
-- Scheduling of meetings, flights, etc.
-- Booking of appointments
-- Tracking of shipment
-- Purchasing items or services online
-- Payment management
-- Generation of leads
-- Brand communication
-- News service and mailing list
-- Can also give a detailed information or explanation and so much more.
-
-## What can you achieve by using Wechaty
-
-- Improve customer experience and engagement
-- Eliminate some human errors
+Here are some of the things that users and businesses can do with Wechaty:
+- Have their very own customized chatbot
+- Provide 24/7 digital support
+- Encourage long-term user engagement
+- Eliminate some human errors 
 - Save a lot of time which can boost team productivity
+- Give more detailed answers to queries
 - Cut on business costs and resources
 
+
 ## Motivation
-
-All businesses want higher customer satisfaction and financial returns. Aapparently, this is one of the main goals of Wechaty and our team can help you achieve your chatbot goals.
-
-## Mission
-
-Wechaty's mission is to make it easy for all types of users (esp. developers) to build a chatbot.
-
-## Vision
-
-Wechaty always aims to be at the forefront of the chatbot revolution and by being the only chatbot in the world with the shortest code.
+Wechaty aims to focus more on what the business is about instead of the code itself, despite the complicated requirements for conversational applications. As a chatbot framework for business, Wechaty is a last mile technology that brings chatbot to all types of end users.
 
 ## What is Wechaty's story
+Back in 2014, Huan Li's daily life depends on Wechat, which was dubbed as China's famous messaging app that is capable of payment processing and other mini applications such as friendship management. At the time, adding of friends in Wechat is possible but restricts a total number of friends to 5,000 only. Not to mention, the app has more than 400 rooms with more than 400 members each, room management is a big challenge. 
+
+That is why in 2017, Huan decided to build Wechaty for the purpose of his automation testing study. Wechaty is built as the *tireless bot* that can work 24/7, can filter the most important messages, can highlight discussions that contain the **keywords** that users would want to search and follow, and can monitor chatbot and user actions seamlessly. 
+
+
