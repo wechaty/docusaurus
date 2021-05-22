@@ -22,6 +22,10 @@ How to Guide is important because it guides us through the steps involved in add
 
 ![make changes](PR-file-changes.png)
 
+- Run test for file check
+
+![run test](npm-run-test.png)
+
 - Add changes to the staging area `git add .`
 
 ![add to staging area](git-add.png)
