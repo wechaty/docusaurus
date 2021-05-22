@@ -28,7 +28,7 @@ How to Guide is important because it guides us through the steps involved in add
 
 - Commit your changes using the command `git commit -m 'commit message'`
 
-![make commit](PR-commit.png)
+![make commit](git-commit.png)
 
 - Push your changes to gitHub `git push origin branch-name`
 
