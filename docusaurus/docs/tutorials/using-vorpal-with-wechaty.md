@@ -280,7 +280,7 @@ Now, you have to define some functions that will help you to handle the differen
 
 #### onScan
 
-Function used for generating **QR code** for the puppet specified, and display it on the console. 
+Function used for generating **QR code** for the puppet specified, and display it on the console.
 
 Follow the steps below:
 
@@ -327,7 +327,7 @@ function onLogin(user: Contact) {
 
 #### onLogout
 
-Function for printing a log message along with the `Contact` object, when an user logs out of the bot. 
+Function for printing a log message along with the `Contact` object, when an user logs out of the bot.
 
 ```ts
 function onLogout(user: Contact) {
