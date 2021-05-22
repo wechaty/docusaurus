@@ -135,8 +135,9 @@ At the same time, we also meet up offline all over the world. Here are some acti
 - Fork this repository
 - Create your documentation branch: `git checkout -b branch-name`
 - Make changes to the documentation in markdown
-- Commit your changes using the command `git commit -am 'commit message'`
-- Push your changes to gitHub
+- Add changes to the staging area `git add .`
+- Commit your changes using the command `git commit -m 'commit message'`
+- Push your changes to gitHub `git push origin branch-name`
 - Create new Pull Request
 
 ## Resources
