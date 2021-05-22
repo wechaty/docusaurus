@@ -276,35 +276,48 @@ import { generate } from 'qrcode-terminal'
 const hackerNews = require('vorpal-hacker-news')
 ```
 
-Specify some functions that we will require for handling different events returned by the Wechaty bot.
+Now, you have to define some functions that will help you to handle the different events returned by the Wechaty bot.
 
 #### onScan
 
-This function will be used for generating the **QR code** for the puppet specified, and display it on the console.
+Function used for generating **QR code** for the puppet specified, and display it on the console. 
 
-```ts
-function onScan(qrcode: string, status: ScanStatus) {
-    if (status === ScanStatus.Waiting || status === ScanStatus.Timeout) {
+Follow the steps below:
 
-        // Generate the QR code
-        generate(qrcode, { small: true })
+1. Check for the `status` of the QR code scanning process:
 
-        const qrcodeImageUrl = [
-            'https://wechaty.js.org/qrcode/',
-            encodeURIComponent(qrcode),
-        ].join('')
+   ```ts
+   function onScan(qrcode: string, status: ScanStatus) {
+       if (status === ScanStatus.Waiting || status === ScanStatus.Timeout) {
+           // TODO: Add QR code generation here
+       } else {
+           log.info('VorpalBot:', 'onScan: %s(%s)', ScanStatus[status], status)
+       }
+   }
+   ```
 
-        // Display the QR code on console
-        log.info('VorpalBot:', 'onScan: %s(%s) - %s', ScanStatus[status], status, qrcodeImageUrl)
-    } else {
-        log.info('VorpalBot:', 'onScan: %s(%s)', ScanStatus[status], status)
-    }
-}
-```
+   If the **status** is `Waiting` or `Timeout` then proceed with the QR code generation, otherwise print the scan status on console.
+
+2. Generate QR code:
+
+   ```ts
+   generate(qrcode, { small: true })
+
+   const qrcodeImageUrl = [
+     'https://wechaty.js.org/qrcode/',
+     encodeURIComponent(qrcode),
+   ].join('')
+   ```
+
+3. Display QR code on console along with the status:
+
+   ```ts
+   log.info('VorpalBot:', 'onScan: %s(%s) - %s', ScanStatus[status], status, qrcodeImageUrl)
+   ```
 
 #### onLogin
 
-This will print a log message when an user logs in to the bot.
+Function for printing a log message when an user logs in to the bot. Here, a `Contact` object is passed as a parameter which is printed on the console in order to understand who has logged in.
 
 ```ts
 function onLogin(user: Contact) {
@@ -314,7 +327,7 @@ function onLogin(user: Contact) {
 
 #### onLogout
 
-This will print a log message when an user logs out of the bot.
+Function for printing a log message along with the `Contact` object, when an user logs out of the bot. 
 
 ```ts
 function onLogout(user: Contact) {
@@ -324,7 +337,7 @@ function onLogout(user: Contact) {
 
 #### onMessage
 
-This will print a log message with the `Message` received by the bot from the user.
+Function for printing a log message with the `Message` object received by the bot from the user on the other end.
 
 ```ts
 async function onMessage(msg: Message) {
@@ -334,7 +347,7 @@ async function onMessage(msg: Message) {
 
 #### onError
 
-This is for printing an error message to the console.
+Function for printing an error message to the console if the bot fails to start.
 
 ```ts
 function onError(error: Error) {
@@ -342,7 +355,7 @@ function onError(error: Error) {
 }
 ```
 
-Now, initialize the Wechaty bot by providing a name:
+You have completed defining all the functions required for handling various bot events. Now, initialize the Wechaty bot by providing a name:
 
 ```ts
 const bot = new Wechaty({
@@ -425,11 +438,15 @@ This will start the bot and generate a QR code like this:
 
 ![Wechaty Vorpal Hacker News QR Code](../../static/img/docs/tutorials/using-vorpal-with-wechaty/wechaty-vorpal-hacker-news-qr.png)
 
-Scan it using your **WeChat/WhatsApp** as per the puppet you have selected, and you are ready to play with the bot!
+Scan it using your **WeChat** or **WhatsApp** as per the puppet you have selected, and you are ready to play with the bot!
 
-You can try building this bot without setting up any dev environment on your local system, just head over to this interactive **CodeSandbox** by clicking the button below (a preview of the starter project is given below):
+### CodeSandbox
+
+You can try building this bot without setting up any dev environment on your local system, just head over to this interactive **CodeSandbox** by clicking the button below:
 
 [![Edit vorpal-wechaty-hackernews](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/sbis04/vorpal-wechaty-hackernews/tree/starter/?fontsize=12&hidenavigation=1&module=%2Fvorpal-bot.ts&theme=dark)
+
+You will find various `TODO(s)`, complete them and you will have a successfully running bot (a preview of the starter project is given below):
 
 <iframe
   class="codesandbox"
@@ -439,6 +456,10 @@ You can try building this bot without setting up any dev environment on your loc
 ></iframe>
 
 ## Bot demonstration
+
+After scanning the generated QR code with the help of your app, the bot will start running on your device. Now, as it finds the specified commands inside the chat it will respond automatically to it.
+
+> **NOTE:** The bot will only respond to the messages sent by the user in the other end. One word of caution, this enables the bot globally inside your app, i.e. it will respond to messages sent by any person or within any group.
 
 ![Wechaty Vorpal Hacker News](../../static/img/docs/tutorials/using-vorpal-with-wechaty/wechaty-vorpal-hacker-news.png)
 
@@ -484,7 +505,7 @@ Pulling top 3 stories on Hacker News:
 
 ## Conclusion
 
-You have learnt to use Vorpal with Wechaty and built a Hacker News bot. Vorpal has a lot of extensions, you can find some of them [here](https://github.com/wechaty/wechaty-vorpal-contrib).
+You have learnt to use Vorpal with Wechaty and built a Hacker News bot from scratch. Vorpal has a lot of extensions, you can find some of them [here](https://github.com/wechaty/wechaty-vorpal-contrib).
 
 ## References
 
