@@ -14,6 +14,8 @@ How to Guide is important because it guides us through the steps involved in add
 
 ![Fork the repo](fork.jpg)
 
+- <a href="\locally">Follow these steps to run locally </a>
+
 - Create your documentation branch: `git checkout -b branch-name`
 
 ![checkout branch](git-checkout.png)
@@ -22,7 +24,7 @@ How to Guide is important because it guides us through the steps involved in add
 
 ![make changes](PR-file-changes.png)
 
-- Run test for file check
+- Run test for making sure the changes are valid `npm run test`
 
 ![run test](npm-run-test.png)
 
@@ -46,7 +48,11 @@ How to Guide is important because it guides us through the steps involved in add
 
 ![pass test case](PR-checks.png)
 
+<section id="locally">
+
 ### How to Run Locally
+
+</section>
 
 - Clone this repository: `git clone "https://github.com/wechaty/wechaty.js.org"`
 
