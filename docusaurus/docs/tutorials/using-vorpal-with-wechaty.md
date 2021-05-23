@@ -505,7 +505,7 @@ Pulling top 3 stories on Hacker News:
 
 ## Conclusion
 
-You have learnt to use Vorpal with Wechaty and built a Hacker News bot from scratch. Vorpal has a lot of extensions, you can find some of them [here](https://github.com/wechaty/wechaty-vorpal-contrib).
+You have learnt to use Vorpal with Wechaty and built a Hacker News bot. Vorpal has a lot of extensions, you can find some of them [here](https://github.com/wechaty/wechaty-vorpal-contrib).
 
 ## References
 
