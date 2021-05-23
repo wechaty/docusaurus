@@ -122,13 +122,13 @@ At the same time, we also meet up offline all over the world. Here are some acti
 
 ### How to Run Locally
 
-- Clone this repository: `git clone "https://github.com/wechaty/wechaty.js.org"`
-- On the terminal navigate to the root directory `cd wechaty.js.org`
-- Run the commands :
-  - `npm install`
-  - `npm run docusaurus:build`
-  - `npm run docusaurus:serve`
-- The site will be running  locally on `http://localhost:3000`
+1. Clone this repository: `git clone "https://github.com/wechaty/wechaty.js.org"`
+2. On the terminal navigate to the root directory `cd wechaty.js.org`
+3. Run the commands :
+    - `npm install`
+    - `npm run docusaurus:build`
+    - `npm run docusaurus:serve`
+4. The site will be running locally on `http://localhost:3000`
 
 ### How To Contribute To the Documentation
 
