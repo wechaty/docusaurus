@@ -1,5 +1,5 @@
 ---
-name: roshnaeem
+name: Rosheen Naeem
 site: https://roshnaeem.github.io/
 avatar: /assets/contributors/jcai/avatar.png
 bio: Nothing hard comes easy
