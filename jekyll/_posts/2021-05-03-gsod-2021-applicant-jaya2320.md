@@ -1,6 +1,7 @@
 ---
 title: "Create easy to learn tutorials for beginner users of Wechaty"
 author: jaya2320
+categories: gsod
 tags:
   - google
   - gsod
