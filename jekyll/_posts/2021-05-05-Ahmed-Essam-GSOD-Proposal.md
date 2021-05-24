@@ -1,9 +1,17 @@
-<div align="center">
-<h1>Wechaty</h1>
-<h3>
-Proposal for Volunteering
-</h3>
-</div>
+---
+title: "Google Season of Docs 2021 Proposal - Volunteering"
+author: Ahmed Essam
+categories: gsod
+tags:
+  - docs
+  - volunteering
+  - gsod
+  - proposal
+image: /assets/2021/05-gsod-2021-volunteering-proposal/gsod_s.webp
+---
+
+# GSoD’21 Project Proposal for Volunteering
+
 
 ## Create easy to learn tutorials for beginner users of Wechaty
 
