@@ -9,7 +9,7 @@ tags:
 image: /assets/2021/05-how-to-build-a-PandaFaceGenerator-with-paddlepaddle/ShutUpAndKissMe.jpg
 ---
 
-> 作者: [ninetailskim](https://github.com/ninetailskim/)，一只喜欢瞎搞的九尾妖熊   
+> 作者: [ninetailskim](https://github.com/ninetailskim/)，始于兴趣 陷于技术 忠于瞎搞   
       
 ## 谁是这篇博客读者
    
