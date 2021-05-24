@@ -18,18 +18,18 @@ const showcases: SubMenuData = {
   ],
 }
 
-const wechatyAPI: SubMenuData = {
-  label: 'wechatyAPI',
+const wechatyapi: SubMenuData = {
+  label: 'wechaty-api',
   items: [    
-    'api/wechatyAPI/wechaty-api-overview',
-    'api/wechatyAPI/classes',
-    'api/wechatyAPI/typedefs',
-    'api/wechatyAPI/wechaty-start',
-    'api/wechatyAPI/wechaty-on',
-    'api/wechatyAPI/wechaty-logout',
-    'api/wechatyAPI/wechaty-logonoff',
-    'api/wechatyAPI/wechaty-options',
-    'api/wechatyAPI/wechaty-eventfunction',
+    'api/wechaty-api/wechaty-api-overview',
+    'api/wechaty-api/classes',
+    'api/wechaty-api/typedefs',
+    'api/wechaty-api/wechaty-start',
+    'api/wechaty-api/wechaty-on',
+    'api/wechaty-api/wechaty-logout',
+    'api/wechaty-api/wechaty-logonoff',
+    'api/wechaty-api/wechaty-options',
+    'api/wechaty-api/wechaty-eventfunction',
   ],
 } 
 
@@ -292,7 +292,7 @@ const api: SubMenuData = {
   label: 'API',
   items: [
     'api/overview',
-    subMenu(wechatyAPI),
+    subMenu(wechatyapi),
     'api/message',
     'api/contact',
     'api/room',
