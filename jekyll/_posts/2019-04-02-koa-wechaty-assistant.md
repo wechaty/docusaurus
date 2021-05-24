@@ -1,6 +1,6 @@
 ---
 title: "使用koa2+wechaty打造个人微信小秘书"
-author: gengchen528
+author: leochen-g
 categories: project
 tags:
   - code
@@ -8,7 +8,7 @@ tags:
 image: /assets/2019/koa-wechaty.jpg
 ---
 
-> 作者: [Leo_chen](https://github.com/gengchen528/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [使用koa2+wechaty打造个人微信小秘书](https://juejin.im/post/5ca1dd846fb9a05e6c77b72f?utm_source=gold_browser_extension)
+> 作者: [Leo_chen](https://github.com/leochen-g/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [使用koa2+wechaty打造个人微信小秘书](https://juejin.im/post/5ca1dd846fb9a05e6c77b72f?utm_source=gold_browser_extension)
 
 ![koa2](/assets/2019/koa-wechaty.jpg)
 
