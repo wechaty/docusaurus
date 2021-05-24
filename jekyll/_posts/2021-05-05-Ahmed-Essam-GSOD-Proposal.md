@@ -10,8 +10,9 @@ tags:
 image: /assets/2021/05-gsod-2021-volunteering-proposal/gsod_s.webp
 ---
 
-# GSoD’21 Project Proposal for Volunteering
+## GSoD’21 Project Proposal for Volunteering
 
+Read more about the volunteers in their individual project proposals
 
 ## Create easy to learn tutorials for beginner users of Wechaty
 
