@@ -119,6 +119,8 @@ module.exports = {
         'rust',
       ],
     },
+    image: 'img/wechaty-logo.png',
+    metadatas: [{name: 'twitter:card', content: 'summary_large_image'}, {name: 'twitter:image', content: 'img/wechaty-icon.png'}, {name: 'twitter:title', content: 'Wechaty'}, {name: 'twitter:description', content: 'Wechaty Official Website for News, Blogs, Contributor Profiles, and Documentations.'}],
   },
   presets: [
     [
