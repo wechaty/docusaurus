@@ -6,7 +6,7 @@ tags:
   - blog
   - study
   - introduction
-image: /assets/2021/05-how-to-build-a-PandaFaceGenerator-with-paddlepaddle/shut-up-and-kiss-me.jpg
+image: /assets/2021/05-how-to-build-a-panda-face-generator-with-paddlepaddle/shut-up-and-kiss-me.jpg
 ---
 
 > 作者: [ninetailskim](https://github.com/ninetailskim/)，始于兴趣 陷于技术 忠于瞎搞
