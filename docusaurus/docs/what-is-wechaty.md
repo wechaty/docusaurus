@@ -19,14 +19,14 @@ Wechaty offers out-of-the-box support for the common features you would need for
 
 - **Message processing**: You can use Wechaty to receive and send messages. It supports messages in the form of text, image, audio, video, and attachements.
 - **Room management**: You can use it to create rooms, add and remove room members, manage topics, etc
-- **Contact management**: Search by name, alias, tags, get profile data and avatar
-- **Friendship management**: Search and add new friends, accept friendship requests, etc
-- **Intelligent dialogue Management**: Just several configuration can get a task-oriented bot.
-- **Multi-platform support**: With Wechaty, you write code which runs on all IM platforms!
+- **Contact management**: Search by name, alias, tags, get profile data and avatar.
+- **Friendship management**: Search and add new friends and accept friendship requests.
+- **Intelligent dialogue management**: Just several configuration can get a task-oriented bot.
+- **Multi-platform support**: With Wechaty, you write code which runs on all IM platforms.
 
-## Supported Instant Messaging Services
+## Supported Instant Messaging services
 
-Wechaty supports a number of Instant Messaging platforms. You can build a chatbot using Wechaty for any of the following Instant Messaging platforms.
+Wechaty supports a number of Instant Messaging platforms. You can build a chatbot using Wechaty for any of the following Instant Messaging platforms:
 
 <!-- Find better way of presenting this list -->
 
@@ -42,9 +42,9 @@ Wechaty supports a number of Instant Messaging platforms. You can build a chatbo
 
 <ProviderBadges />
 
-## Supported Programming Languages
+## Supported programming languages
 
-The Wechaty community have developed [Software Development Kits](#placeholder) for most of the popular programming languages. You can build a Wechaty Chatbot in any of the programming languages listed below.
+The Wechaty community have developed [Software Development Kits](#placeholder) for most of the popular programming languages. You can build a Wechaty Chatbot in any of the programming languages listed below:
 
 <!-- Find better way of presenting this list -->
 
@@ -84,4 +84,4 @@ Wechaty has a community of very helpful contributors on different platforms you 
 
 ## Mission
 
-Our mission is to Make it easy for developers to build Chatbots using WeChaty
+Our mission is to make it easy for developers to build Chatbots using WeChaty.
