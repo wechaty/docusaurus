@@ -19,9 +19,17 @@ For running Ding Dong Bot, you can setup your own server for running locally. Ju
 
 ## Try out the bot
 
+[![Edit wechaty-ding-dong-bot](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/wechaty/wechaty-getting-started/tree/master/examples/third-parties/codesandbox?hidenavigation=1&module=%2Fding-dong-bot.ts&theme=dark)
+
 You can try out Ding Dong Bot using this interactive CodeSandbox.
 
-Just scan the generated QR code with Wechat/WhatsApp app and you are ready to go.
+Just scan the generated QR code with **WeChat** app and you are ready to go.
+
+<iframe
+  class="codesandbox"
+  src="https://codesandbox.io/embed/github/wechaty/wechaty-getting-started/tree/master/examples/third-parties/codesandbox?fontsize=12&hidenavigation=1&module=%2Fding-dong-bot.ts&theme=dark"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+></iframe>
 
 ## Requirements
 
@@ -44,7 +52,7 @@ then you need to install the latest version of `Node.js` by following the links 
 * [Windows](https://nodejs.org/en/download/package-manager/#windows)
 * [Linux\(Debian/Ubuntu\)](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
 * [macOS](https://nodejs.org/en/download/package-manager/#macos)
-
+with Wechat/WhatsApp app
 > Installation guide for `Node.js` in other platforms can be found [here](https://nodejs.org/en/download/package-manager/).
 
 :::
@@ -355,6 +363,11 @@ function onScan (qrcode: string, status: ScanStatus) {
   }
 }
 ```
+**1.**  If `status` is **Waiting** or **Timeout** then function `onScan` will generate qrcode
+
+**2.**  `qrcodeImageUrl` is used for reading the generated `qrcode`. `encodeURIComponent(qrcode)` encodes a URI (string that refers to a resource ie. qrcode) by replacing each instance of certain characters by UTF-8 encoding of characters. 
+
+**3.**  After reading the `qrcode` it return `ScanStatus`.
 
 **onLogin**
 
