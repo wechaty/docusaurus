@@ -8,66 +8,95 @@
 
 How to Guide is important because it guides us through the steps involved in addressing key problems and use-cases.
 
-### How To Contribute To this section
+## How to Contribute to this section
 
-- Fork this repository
+**Step 1.** Fork this repository.
 
-![Fork the repo](fork.jpg)
+**Step 2.** Create your new branch.
 
-- Create your documentation branch: `git checkout -b branch-name`
+```yaml
+git checkout -b <your-branch-name>
 
-![checkout branch](git-checkout.png)
+# Replace <your-branch-name> with your desired name
+# Helps you apply changes to the newly created branch
+```
 
-- Make changes to the file
+**Step 3.** Contribute to the section.
 
-![make changes](PR-file-changes.png)
+**Step 4.** Run test for file check and solve the issue, if prompted.
 
-- Run test for file check
+```yaml
+npm run test
 
-![run test](npm-run-test.png)
+# Run the tests before deploying the project to Surge
+```
 
-- Add changes to the staging area `git add .`
+**Step 5.** Add changes to the staging area.
 
-![add to staging area](git-add.png)
+```yaml
+git add .
 
-- Commit your changes using the command `git commit -m 'commit message'`
+# Add all the changes in the working directory to the staging area
+```
 
-![make commit](git-commit.png)
+**Step 6.** Commit your changes.
 
-- Push your changes to gitHub `git push origin branch-name`
+```yaml
+git commit -m "your-commit-message"
 
-![push changes](git-push.png)
+# Replace <your-commit-message> with your short-message
+# Captures a snapshot of the project's currently staged changes 
+```
 
-- Create new Pull Request
+**Step 7.** Push your changes to GitHub.
 
-![open Pull Request](pull-request.jpg)
+```yaml
+git push origin <your-branch-name>
 
-- Make sure to pass all the Test Cases
+# Enter <your-branch-name> that you created with step 2
+# Upload local repository content to a remote repository
+```
 
-![pass test case](PR-checks.png)
+**Step 8.** Create new Pull Request.
 
-### How to Run Locally
+**Step 9.** Make sure to pass all the Test Cases.
 
-- Clone this repository: `git clone "https://github.com/wechaty/wechaty.js.org"`
+![PR-checks](https://user-images.githubusercontent.com/69477761/119541944-9e223a80-bdac-11eb-9891-d20bd87634a7.png)
 
-![git clone](git-clone.png)
+## How to Run Locally
 
-- Run the commands :
-  - `npm install`
-  - `npm run docusaurus:build`
-  - `npm run docusaurus:serve`
-  
-![run install](npm-install.png)
+**Step 1.** Clone this repository:
 
-![run build](npm-run-build.png)
+```yaml
+git clone "https://github.com/wechaty/wechaty.js.org"
 
-![run serve](num-run-serve.png)
+# Make a clone of the repo at a new location
+```
 
-- The site will be running  locally on `http://localhost:3000`
+**Step 2.** Run the commands :
 
-![run locally](localhost.png)
+```yaml
+a. npm install
+b. npm run docusaurus:build
+c. npm run docusaurus:serve
 
-### Copyright & License
+# Enter <your-branch-name> that you created with step 2
+# Make a clone the repo at a new location
+```
+
+![npm run docusaurus:build](https://user-images.githubusercontent.com/69477761/119619468-a8325080-be21-11eb-977e-d9e61b0cd5cb.png)
+
+![npm run docusaurus:serve](https://user-images.githubusercontent.com/69477761/119619344-820cb080-be21-11eb-889d-e699d7cc706e.png)
+
+**Step 3.** The site will be running locally on.
+
+```yaml
+http://localhost:3000
+```
+
+![localhost](https://user-images.githubusercontent.com/69477761/119619476-a9637d80-be21-11eb-98a9-f0ee840595b2.png)
+
+## Copyright & License
 
 - Code & Docs © 2016-now Wechaty Contributors <https://github.com/wechaty>
 - Code released under the Apache-2.0 License
