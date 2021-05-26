@@ -1,10 +1,9 @@
 ---
-title: 'Hello Wechaty GSoD’21 Technical Writers!'
+title: "Hello Wechaty GSoD’21 Technical Writers!"
 author: huan
 categories:
   - gsod
   - announcement
-  - milestone
 tags:
   - google
   - gsod
@@ -336,7 +335,7 @@ The base grants will be the 80% of the each grant.
 The performance grants will be the 20% of the each grant.
 
 It will be voted by the writer themselves (who is in the same team)
-and the vollunteers after the project has been finished.
+with the volunteers after the project has been finished.
 The rule is that everyone has 10 points
 which can be used to vote for the performance grant.
 
@@ -369,7 +368,7 @@ In our practice we need to add C and D which is our volunteers, that's it!
 
 The "Thank-you bonus" is for those GSoD'21 technical writers
 who has not been selected in the year 2021
-and meet one of the following requirements:
+and meet the following requirements:
 
 1. has submitted qualified proposal before the deadline (May 1st)
 1. has submitted PR for improving the Wechaty docs and has been merged.
