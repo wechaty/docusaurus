@@ -4,12 +4,16 @@ title: Who is using Wechaty
 
 ![Wechaty: Conversational RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
 
+## Users of Wechaty
+
 We have a diverse community of Wechaty contributors and users. The Wechaty users in our community mainly comprise of:
 
 - Conversational AI developers
 - Machine learning researchers
 - Freelancers who are building chatbots for their clients
 - Companies that are building commercial services on top of conversational automation
+
+## Companies using Wechaty
 
 Some of the companies that are currently using Wechaty include:
 
