@@ -1,6 +1,6 @@
 ---
 title: "用Node+wechaty写一个爬虫脚本每天定时给女(男)朋友发微信暖心话"
-author: gengchen528
+author: leochen-g
 categories: project
 tags:
   - code
@@ -10,7 +10,7 @@ tags:
 image: /assets/2019/node-wechaty-1.jpeg
 ---
 
-> 作者: [Leo_chen](https://github.com/gengchen528/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [用Node+wechaty写一个爬虫脚本每天定时给女(男)朋友发微信暖心话](https://juejin.im/post/5c77c6bef265da2de6611cff)
+> 作者: [Leo_chen](https://github.com/leochen-g/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [用Node+wechaty写一个爬虫脚本每天定时给女(男)朋友发微信暖心话](https://juejin.im/post/5c77c6bef265da2de6611cff)
 
 ![koa2](/assets/2019/node-wechaty-1.jpeg)
 微信每日说，每日自动发送微信消息给你心爱的人。
