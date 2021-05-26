@@ -2,6 +2,8 @@
 title: Who is using Wechaty
 ---
 
+![Wechaty: Conversational RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
+
 We have a diverse community of Wechaty contributors and users. The Wechaty users in our community mainly comprise of:
 
 - Conversational AI developers
