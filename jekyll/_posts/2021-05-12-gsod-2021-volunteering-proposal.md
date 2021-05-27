@@ -80,6 +80,15 @@ Simin
 
 Budget: $500 (each)
 
+### Additional Notes
+
+#### Guidelines for video-recording/downloading/uploading
+
+* Download the recording which has shared screen along with the gallery view
+* Crop the video at the beginning and at the end of the meeting, video should start form the beginning of the meeting
+* Add a beautiful thumbnail to the video
+* Highlight the most important agenda of the video by adding timestamps like [kick-off meeting recording](https://www.youtube.com/watch?v=hTkM_XPpFfU)
+
 Thanks for reading our post. Cheers!
 
 Best,

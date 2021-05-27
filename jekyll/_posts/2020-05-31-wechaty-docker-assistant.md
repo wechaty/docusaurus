@@ -1,6 +1,6 @@
 ---
 title: "wechaty Web Panel的构思与实现"
-author: gengchen528
+author: leochen-g
 categories: project
 tags:
   - code
@@ -10,7 +10,7 @@ tags:
 image: /assets/2020/web-panel/web-head.png
 ---
 
-> 作者: [Leo_chen](https://github.com/gengchen528/)，高级前端工程师，喜欢使用node做各种项目
+> 作者: [Leo_chen](https://github.com/leochen-g/)，高级前端工程师，喜欢使用node做各种项目
 
 <!-- more -->
 
