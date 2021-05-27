@@ -6,7 +6,7 @@ title: 'Using Vorpal with Wechaty'
 [![NPM](https://github.com/wechaty/wechaty-vorpal/workflows/NPM/badge.svg)](https://github.com/wechaty/wechaty-vorpal/actions?query=workflow%3ANPM)
 [![NPM Version](https://img.shields.io/npm/v/wechaty-vorpal?color=brightgreen)](https://www.npmjs.com/package/wechaty-vorpal)
 
-[Vorpal](https://github.com/dthree/vorpal) is a framework for building immersive CLI applications using `Node.js`. [WechatyVorpal](https://github.com/wechaty/wechaty-vorpal) is an extensible interactive CLI plugin for Wechaty ChatOps that is powered by Vorpal. 
+[Vorpal](https://github.com/dthree/vorpal) is a framework for building immersive CLI applications using `Node.js`. [WechatyVorpal](https://github.com/wechaty/wechaty-vorpal) is an extensible interactive CLI plugin for Wechaty ChatOps that is powered by Vorpal.
 
 In this tutorial, you will learn how to build a [Hacker News](https://news.ycombinator.com/) bot, that can be run on **WeChat** and **WhatsApp**, using `wechaty-vorpal` and `vorpal-hacker-news` plugins.
 
