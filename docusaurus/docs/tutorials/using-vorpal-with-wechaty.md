@@ -4,9 +4,11 @@ title: 'Using Vorpal with Wechaty'
 
 [![Wechaty Vorpal](https://img.shields.io/badge/Wechaty-Vorpal-brightgreen.svg)](https://github.com/wechaty/wechaty-vorpal)
 [![NPM](https://github.com/wechaty/wechaty-vorpal/workflows/NPM/badge.svg)](https://github.com/wechaty/wechaty-vorpal/actions?query=workflow%3ANPM)
- [![NPM Version](https://img.shields.io/npm/v/wechaty-vorpal?color=brightgreen)](https://www.npmjs.com/package/wechaty-vorpal)
+[![NPM Version](https://img.shields.io/npm/v/wechaty-vorpal?color=brightgreen)](https://www.npmjs.com/package/wechaty-vorpal)
 
-Extensible Interactive CLI Plugin for Wechaty ChatOps, Powered by Vorpal.
+[Vorpal](https://github.com/dthree/vorpal) is a framework for building immersive CLI applications using `Node.js`. [WechatyVorpal](https://github.com/wechaty/wechaty-vorpal) is an extensible interactive CLI plugin for Wechaty ChatOps that is powered by Vorpal. 
+
+In this tutorial, you will learn how to build a [Hacker News](https://news.ycombinator.com/) bot, that can be run on **WeChat** and **WhatsApp**, using `wechaty-vorpal` and `vorpal-hacker-news` plugins.
 
 [![Wechaty Vorpal](https://wechaty.github.io/wechaty-vorpal/images/wechaty-vorpal.png)](https://github.com/wechaty/wechaty-vorpal)
 
@@ -57,8 +59,6 @@ wechaty.start()
 See: [wechaty-vorpal-contrib](https://github.com/wechaty/wechaty-vorpal-contrib) for more Wechaty Vorpal Extension CLI for Chatbots.
 
 ## Getting started
-
-In this tutorial you will learn how to use [Vorpal](https://github.com/wechaty/wechaty-vorpal) with [Wechaty](https://wechaty.js.org/) to build a [Hacker News](https://news.ycombinator.com/) chat bot.
 
 Before getting started, make sure you have `Node.js` installed on your system. If you do not have `Node.js` installed (or have a version below 12), then you need to install the latest version of `Node.js` by following the links below:
 
