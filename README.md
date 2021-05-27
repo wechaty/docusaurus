@@ -132,13 +132,13 @@ At the same time, we also meet up offline all over the world. Here are some acti
 
 ### How To Contribute To the Documentation
 
-- Fork this repository
-- Create your documentation branch: `git checkout -b branch-name`
-- Make changes to the documentation in markdown
-- Add changes to the staging area `git add .`
-- Commit your changes using the command `git commit -m 'commit message'`
-- Push your changes to gitHub `git push origin branch-name`
-- Create new Pull Request
+1. Fork this repository
+2. Create your documentation branch: `git checkout -b branch-name`
+3. Make changes to the documentation in markdown
+4. Add changes to the staging area `git add .`
+5. Commit your changes using the command `git commit -m 'commit message'`
+6. Push your changes to gitHub `git push origin branch-name`
+7. Create new Pull Request
 
 ## Resources
 
