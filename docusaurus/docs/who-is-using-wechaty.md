@@ -26,7 +26,7 @@ Some of the companies that are currently using Wechaty include:
 - [L'Oréal](https://www.loreal.com/en/) - the world leader in beauty and makeup
 - [Xueersi](https://www.xueersi.com/) - a Beijing-based educational training site focused on primary and middle school students
 - [58Tong Cheng](https://by.58.com/) - is China's leading life service platform which provides different types of services such as recruitment, domestic, and rental services
-- [Plug And Play](https://www.plugandplaytechcenter.com/) - is the world's largest early stage investor, accelerator, and corporate innovation platform
+- [Plug And Play](https://www.plugandplaytechcenter.com/) - is the world's largest early-stage investor, accelerator, and corporate innovation platform
 - [Y Combinator](https://www.ycombinator.com/) - is a venture capitalist that provides seed funding for startups
 
 If you are interested in using Wechaty, you are welcome to join our [community](#link) of users and developers. We are an inclusive and welcoming community.
