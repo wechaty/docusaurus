@@ -278,84 +278,84 @@ const hackerNews = require('vorpal-hacker-news')
 
 Now, you have to define some functions that will help you to handle the different events returned by the Wechaty bot.
 
-#### onScan
+* **onScan**
 
-Function used for generating **QR code** for the puppet specified, and display it on the console.
+  Function used for generating **QR code** for the puppet specified, and display it on the console.
 
-Follow the steps below:
+  Follow the steps below:
+  
+  1. Check for the `status` of the QR code scanning process:
+  
+     ```ts
+     function onScan(qrcode: string, status: ScanStatus) {
+         if (status === ScanStatus.Waiting || status === ScanStatus.Timeout) {
+             // TODO: Add QR code generation here
+         } else {
+             log.info('VorpalBot:', 'onScan: %s(%s)', ScanStatus[status], status)
+         }
+     }
+     ```
+  
+     If the **status** is `Waiting` or `Timeout` then proceed with the QR code generation, otherwise print the scan status on console.
+  
+  2. Generate QR code:
+  
+     ```ts
+     generate(qrcode, { small: true })
+  
+     const qrcodeImageUrl = [
+       'https://wechaty.js.org/qrcode/',
+       encodeURIComponent(qrcode),
+     ].join('')
+     ```
+  
+  3. Display QR code on console along with the status:
+  
+     ```ts
+     log.info('VorpalBot:', 'onScan: %s(%s) - %s', ScanStatus[status], status, qrcodeImageUrl)
+     ```
 
-1. Check for the `status` of the QR code scanning process:
+* **onLogin**
 
-   ```ts
-   function onScan(qrcode: string, status: ScanStatus) {
-       if (status === ScanStatus.Waiting || status === ScanStatus.Timeout) {
-           // TODO: Add QR code generation here
-       } else {
-           log.info('VorpalBot:', 'onScan: %s(%s)', ScanStatus[status], status)
-       }
-   }
-   ```
+  Function for printing a log message when an user logs in to the bot. Here, a `Contact` object is passed as a parameter which is printed on the console in order to understand who has logged in.
 
-   If the **status** is `Waiting` or `Timeout` then proceed with the QR code generation, otherwise print the scan status on console.
+  ```ts
+  function onLogin(user: Contact) {
+    log.info('VorpalBot:', '%s login', user)
+  }
+  ```
 
-2. Generate QR code:
+* **onLogout**
 
-   ```ts
-   generate(qrcode, { small: true })
+  Function for printing a log message along with the `Contact` object, when an user logs out of the bot.
 
-   const qrcodeImageUrl = [
-     'https://wechaty.js.org/qrcode/',
-     encodeURIComponent(qrcode),
-   ].join('')
-   ```
+  ```ts
+  function onLogout(user: Contact) {
+    log.info('VorpalBot:', '%s logout', user)
+  }
+  ```
 
-3. Display QR code on console along with the status:
+* **onMessage**
 
-   ```ts
-   log.info('VorpalBot:', 'onScan: %s(%s) - %s', ScanStatus[status], status, qrcodeImageUrl)
-   ```
+  Function for printing a log message with the `Message` object received by the bot from the user on the other end.
 
-#### onLogin
+  ```ts
+  async function onMessage(msg: Message) {
+    log.info('VorpalBot:', msg.toString())
+  }
+  ```
 
-Function for printing a log message when an user logs in to the bot. Here, a `Contact` object is passed as a parameter which is printed on the console in order to understand who has logged in.
+* **onError**
 
-```ts
-function onLogin(user: Contact) {
-  log.info('VorpalBot:', '%s login', user)
-}
-```
+  Function for printing an error message to the console if the bot fails to start.
 
-#### onLogout
+  ```ts
+  function onError(error: Error) {
+      log.error('Bot error:', error)
+  }
+  ```
 
-Function for printing a log message along with the `Contact` object, when an user logs out of the bot.
-
-```ts
-function onLogout(user: Contact) {
-  log.info('VorpalBot:', '%s logout', user)
-}
-```
-
-#### onMessage
-
-Function for printing a log message with the `Message` object received by the bot from the user on the other end.
-
-```ts
-async function onMessage(msg: Message) {
-  log.info('VorpalBot:', msg.toString())
-}
-```
-
-#### onError
-
-Function for printing an error message to the console if the bot fails to start.
-
-```ts
-function onError(error: Error) {
-    log.error('Bot error:', error)
-}
-```
-
-You have completed defining all the functions required for handling various bot events. Now, initialize the Wechaty bot by providing a name:
+You have completed defining all the functions required for handling various bot events. Now, provide a name to initialize the Wechaty bot:
 
 ```ts
 const bot = new Wechaty({
