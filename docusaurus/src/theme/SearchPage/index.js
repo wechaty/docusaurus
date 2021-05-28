@@ -423,7 +423,7 @@ function SearchPage() {
               ({title, url, summary, breadcrumbs}, i) => (
                 <article key={i} className={styles.searchResultItem}>
                   <Link
-                    to={url}
+                    href={url}
                     className={styles.searchResultItemHeading}
                     dangerouslySetInnerHTML={{__html: title}}
                   />
