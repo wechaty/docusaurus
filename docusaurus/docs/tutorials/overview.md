@@ -69,7 +69,7 @@ For better understanding we have classified the bots under three categories taki
 
 - [Api ai bot](examples/professional/api-ai-bot.md): Wechaty bot that uses ApiAi.com brain
 
-- [Speech to text bot](examples/professional/speech-to-text-bot.md): Bot that uses baidu speech *[vop.baidu.com](vop.baidu.com)*
+- [Speech to text bot](examples/professional/speech-to-text-bot.md): Bot that uses baidu speech
 
 - [Tuling 123 bot](examples/professional/tuling123-bot.md): Connect to *[tuling123](http://www.turingapi.com/)* chatbot
 
