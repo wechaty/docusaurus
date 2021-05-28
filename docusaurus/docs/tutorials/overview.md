@@ -6,9 +6,9 @@ sidebar_label: 'Overview'
 
 <!-- tutorial/Codelab - Converts a reader from curious investigator to active user. -->
 
-These tutorials take you by the hand through a series of steps to create a Chatbot application. 
+These tutorials take you by the hand through a series of steps to create a Chatbot application.
 
-### Build your first chatbot with wechaty
+## Build your first chatbot with wechaty
 
 If you are a total beginner to Wechaty or Chatbot application development in general, we recommend you start from the [Getting started](getting-started/overview.mdx) tutorials. In these tutorials you'll be building a **ding-dong bot** which replies with a `dong` message when it recieves a `ding` message.
 
@@ -21,7 +21,7 @@ If you are a total begginer then we recommend using **Gitpod**.
 
 Once you get basic idea of ding-dong bot, you can try out building it from scratch by following our [Running Locally](getting-started/hard-way.mdx) tutorial.
 
-### Advanced Tutorials (Using plugins, library and framework with wechaty)
+## Advanced Tutorials (Using plugins, library and framework with wechaty)
 
 If you have some experience with Wechaty or Chatbot application development, we have intermediate to advanced tutorials on the following topics as well.
 
@@ -31,13 +31,13 @@ If you have some experience with Wechaty or Chatbot application development, we 
 
 You can skip to any of them.
 
-### Explore more bots (Adding more features to your bot)
+## Explore more bots (Adding more features to your bot)
 
-If you have already run your ding-dong bot successfully, you can now explore some more bots with wechaty. 
+If you have already run your ding-dong bot successfully, you can now explore some more bots with wechaty.
 
 For better understanding we have classified the bots under three categories taking you from building basic to proffesional bots.
 
-#### Basic
+### Basic
 
 - [World's Shortest Chatbot](examples/basic/the-worlds-shortest-chatbot-code-in-6-lines.md): The very first wechaty example showcasing how easy it is to get started.
 
@@ -45,7 +45,7 @@ For better understanding we have classified the bots under three categories taki
 
 - [Contact bot](examples/basic/contact-bot.md): List all contacts by Wechat ID & Name
 
-#### Advanced
+### Advanced
 
 - [Demo in tutorial](examples/advanced/demo-in-tutorial.md): The demo bot from tutorial
 
@@ -59,7 +59,7 @@ For better understanding we have classified the bots under three categories taki
 
 - [Gist bot](examples/advanced/gist-bot.md): Best template for bigger modules, with each handler in separated files
 
-#### Professional
+### Professional
 
 - [Hot import bot](examples/professional/hot-import-bot.md): Using Hot Module Reload(HMR) for Wechaty Listeners
 
