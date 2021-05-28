@@ -20,7 +20,7 @@ import {translate} from '@docusaurus/Translate';
 let DocSearchModal = null;
 
 function Hit({hit, children}) {
-  return <Link to={hit.url}>{children}</Link>;
+  return <Link href={hit.url}>{children}</Link>;
 }
 
 function ResultsFooter({state, onClose}) {
@@ -101,7 +101,7 @@ function DocSearch({contextualSearch, ...props}) {
 
   const navigator = useRef({
     navigate({itemUrl}) {
-      history.push(itemUrl);
+      location.href = itemUrl;
     },
   }).current;
 
