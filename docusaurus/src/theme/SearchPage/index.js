@@ -272,17 +272,17 @@ function SearchPage() {
         });
 
   const makeSearch = (page = 0) => {
-    algoliaHelper.addDisjunctiveFacetRefinement('docusaurus_tag', 'default');
-    algoliaHelper.addDisjunctiveFacetRefinement('language', currentLocale);
+    // algoliaHelper.addDisjunctiveFacetRefinement('docusaurus_tag', 'default');
+    // algoliaHelper.addDisjunctiveFacetRefinement('language', currentLocale);
 
-    Object.entries(docsSearchVersionsHelpers.searchVersions).forEach(
-      ([pluginId, searchVersion]) => {
-        algoliaHelper.addDisjunctiveFacetRefinement(
-          'docusaurus_tag',
-          `docs-${pluginId}-${searchVersion}`,
-        );
-      },
-    );
+    // Object.entries(docsSearchVersionsHelpers.searchVersions).forEach(
+    //   ([pluginId, searchVersion]) => {
+    //     algoliaHelper.addDisjunctiveFacetRefinement(
+    //       'docusaurus_tag',
+    //       `docs-${pluginId}-${searchVersion}`,
+    //     );
+    //   },
+    // );
 
     algoliaHelper.setQuery(searchQuery).setPage(page).search();
   };
