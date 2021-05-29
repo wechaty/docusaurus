@@ -1,38 +1,71 @@
 ---
 slug: /howto/
-title: Wechaty How-to guides overview
+title: How-to guides
 sidebar_label: 'How-to Guides: Overview'
 ---
 
 <!-- how-to/cookbook - Explains how to accomplish a specific task. -->
 
-How-to guides are recipes. They guide you through the steps involved in addressing key problems and use-cases. They are more advanced than tutorials and assume some knowledge of how Wechaty works.
+How-to guides are recipes and they guide you through the steps involved in addressing key problems and use-cases.
 
-These are some use cases and code snippets to get you started with Redux in a real app. They assume you understand the topics in [basic](#b) and [advanced](#a) tutorials.
+<!-- These are some use cases and code snippets to get you started with Redux in a real app. They assume you understand the topics in [basic](#b) and [advanced](#a) tutorials. They are more advanced than tutorials and assume some knowledge of how Wechaty works. -->
+
+## Add events to the bot
+
+Prepare your bot to add events
 
 - [Start wechaty](howto/wechaty.md)
 - [Listening events](howto/event.md)
+
+## Add functionality to the bot
+
+Use one of our quickstart repositories to add functionalities to the bot in a few minutes.
+
 - [Dealing with messages](howto/message.md)
 - [Managing contacts](howto/contact.md)
 - [Managing rooms](howto/room.md)
-- [Making friends](howto/friendship.md)
-- [Processing files](howto/file-box.md)
+- [Send and Accept friend requests](howto/friendship.md)
+- [Sending and Receiving files](howto/file-box.md)
 
-## Using Puppets with Wechaty (How to switch between puppets)
+## Test the bot
 
-For different instant messaging (IM) systems (such as WeChat, Whatsapp, and TikTok), the Wechaty community builds separate RPA (Robotic Process Automation) modules for each, and we call those modules [Wechaty Puppet](https://github.com/wechaty/wechaty-puppet).
+- [Puppet Mocker](#)
+- [Starter Template](#)
 
-Wechaty Puppet Service is gRPC for Wechaty Puppet. To use a Wechaty Puppet Service, you need a TOKEN for that service, and pass it to Wechaty, then you will be able to use that Puppet Service.
+## Deploy on IM platform
 
-```sh
-export WECHATY_PUPPET=wechaty-puppet-service
-export WECHATY_PUPPET_SERVICE_TOKEN="__TOKEN__"
-```
+Deploy the bot on various instant messaging platform
 
-> You can switch between different Wechaty Puppet Services by changing your TOKEN. The source code works same irrespective of the token you used.
+- [Deploy in WeChat](#)
+- [Deploy in Whatsapp](#)
 
-To learn how to generate TOKEN and switch between puppets , you can visit [Puppet Services](https://wechaty.js.org/docs/puppet-services/).
+## Deploy with containers
 
-## Use Cases
+Deploy the bot with highly popular container solutions
 
-You can learn more from [Wechaty cases study](case-study/overview.md)
+- [Deploy with Heroku](tutorials/usage-with-heroku.md)
+- [Deploy with Docker](tutorials/docker.md)
+
+## FAQ
+
+- [Get answer when you have a problem](#)
+
+
+<!-- ## Using Puppets with Wechaty (How to switch between puppets) -->
+
+<!-- For different instant messaging (IM) systems (such as WeChat, Whatsapp, and TikTok), the Wechaty community builds separate RPA (Robotic Process Automation) modules for each, and we call those modules [Wechaty Puppet](https://github.com/wechaty/wechaty-puppet). -->
+
+<!-- Wechaty Puppet Service is gRPC for Wechaty Puppet. To use a Wechaty Puppet Service, you need a TOKEN for that service, and pass it to Wechaty, then you will be able to use that Puppet Service. -->
+
+<!-- ```sh -->
+<!-- export WECHATY_PUPPET=wechaty-puppet-service -->
+<!-- export WECHATY_PUPPET_SERVICE_TOKEN="__TOKEN__" -->
+<!-- ``` -->
+
+<!-- > You can switch between different Wechaty Puppet Services by changing your TOKEN. The source code works same irrespective of the token you used. -->
+
+<!-- To learn how to generate TOKEN and switch between puppets , you can visit [Puppet Services](https://wechaty.js.org/docs/puppet-services/). -->
+
+<!-- ## Use Cases -->
+
+<!-- You can learn more from [Wechaty cases study](case-study/overview.md) -->
