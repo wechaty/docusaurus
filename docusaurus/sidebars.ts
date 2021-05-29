@@ -258,6 +258,7 @@ const tutorials = {
   label: 'Tutorials',
   items: [
     'tutorials/overview',
+    'tutorials/installation',
     subMenu(gettingStarted),
     'tutorials/video-tutorial',
     'tutorials/docker',
