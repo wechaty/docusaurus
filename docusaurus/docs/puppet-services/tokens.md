@@ -4,6 +4,21 @@ title: Tokens - Wechaty Puppet Services
 sidebar_label: 'Puppet Services: Tokens'
 ---
 
+
+## What is _"Wechaty Puppet Service Token"_ or _TOKEN_ you are talking about?
+
+TOKEN is a unique string for authorizing Wechaty Puppet Service.
+
+## Examples
+
+1. `puppet_wxwork_7ce4cf8a1ab789166c39c6`: WXWork TOKEN
+1. `puppet_padlocal_7ce48a1ab789166c39c6`: PadLocal TOKEN
+1. `puppet_paimon_7ce4cf8a1ab789166c39c6`: Paimon TOKEN
+1. `puppet_donut_e7ce4cf8a1ab789166c39c6`: Donut TOKEN
+1. `56945fa4-7ce8-4cf8-a1a9-b789166c39c6`: UUIDv4 TOKEN
+
+When you are using a Wechaty Puppet Service, you need to provide TOKEN to it so that it can serve you correctly.
+
 ## Get A Token
 
 There are three ways we provide tokens:
@@ -53,25 +68,7 @@ Now, we have the following Wechaty Puppet Services:
 
 > If you are interested in using a Wechaty Puppet Provider directly in your program instead of a Puppet Service, please visit our [Wechaty Puppet Directory](https://github.com/wechaty/wechaty-puppet/wiki/Directory)
 
-## FAQ
-
-### What is _"Wechaty Puppet"_, _"Wechaty Puppet Provider"_, _"Wechaty Puppet Service"_?
-
-We have a great blog post to explain those term in detail. Please read: [Introducing Wechaty Puppet Service](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/)
-
-## What is _"Wechaty Puppet Service Token"_ or _TOKEN_ you are talking about?
-
-TOKEN is a unique string for authorizing Wechaty Puppet Service.
-
-Here's some TOKEN examples:
-
-1. `puppet_wxwork_7ce4cf8a1ab789166c39c6`: WXWork TOKEN
-1. `puppet_padlocal_7ce48a1ab789166c39c6`: PadLocal TOKEN
-1. `puppet_paimon_7ce4cf8a1ab789166c39c6`: Paimon TOKEN
-1. `puppet_donut_e7ce4cf8a1ab789166c39c6`: Donut TOKEN
-1. `56945fa4-7ce8-4cf8-a1a9-b789166c39c6`: UUIDv4 TOKEN
-
-When you are using a Wechaty Puppet Service, you need to provide TOKEN to it so that it can serve you correctly.
+## Usage
 
 The following shell commands demonstrated how to use it under Linux/macOS:
 
@@ -85,16 +82,6 @@ ts-node bot.ts
 
 > `__TOKEN__` is your TOKEN
 
-### How To Become a Wechaty Puppet Service Provider
-
-To be written.
-
-Please feel free to list yourself to our list at [Wechaty Puppet Provider Repo](https://github.com/wechaty/puppet-services/), and add your introduction in this README by submitting a Pull Request!
-
-If you want to become a Wechaty Puppet Service Provider, please do not hesitate to file an issue to introduce yourself in this repository, then contact rui@chatie.io!
-
-Learn more about the Wechaty Puppet Service Providers from:
-
-More Puppet Service Providers are welcomed, please learn more from https://github.com/wechaty/puppet-services and feel free to contact us by joining our Gitter network if you aren’t already a member.
+## Learn More
 
 Learn more about all the Wechaty Puppet Services at our official website: https://wechaty.js.org/docs/puppet-services/
