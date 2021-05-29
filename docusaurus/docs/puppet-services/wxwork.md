@@ -7,10 +7,6 @@ sidebar_label: WXWork
 
 - Repo: <https://github.com/juzibot/wxwork-tester>
 - Provider: [@juzibot](https://github.com/juzibot)
-- Support & Feedback: <https://github.com/juzibot/wxwork-tester/issues>
-- Term of Service (ToS): To-be-added
-- Privacy Policy: To-be-added
-- Service Level Agreement (SLA): To-be-added
 
 ## Known Issues
 
@@ -33,6 +29,13 @@ Register via WeCom at [jukebox](https://qiwei.juzibot.com/user/login?isWechaty=t
 ## Contact
 
 - Wechat: juzibot
+
+## More Info
+
+- Support & Feedback: <https://github.com/juzibot/wxwork-tester/issues>
+- Term of Service (ToS): To-be-added
+- Privacy Policy: To-be-added
+- Service Level Agreement (SLA): To-be-added
 
 ## Blogs
 
