@@ -1,3 +1,9 @@
+---
+slug: /puppet-services/
+title: Tokens - Wechaty Puppet Services
+sidebar_label: 'Puppet Services: Tokens'
+---
+
 ## Get A Token
 
 There are three ways we provide tokens:
