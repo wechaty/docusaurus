@@ -95,7 +95,7 @@ The best way to update `Node.js` on **Windows** and **macOS** is by going to the
 3. Once the download is complete, run the installer and follow the steps to get it installed.
 
 4. Now, check the version once more to verify you are on the latest version:
-   
+
    ```sh
    node -v
    ```
@@ -113,13 +113,13 @@ npm install npm@latest -g
 In order to use **Wechaty** in your `Node.js` project, you need to install it inside your project directory. Wechaty is distributed as a **npm** package, so you can easily install it using the `npm` CLI tool.
 
 1. Navigate to your project directory:
-   
+
    ```sh
    cd node/proj/dir
    ```
 
 2. Install `wechaty` using:
-   
+
    ```sh
    npm install wechaty
    ```
@@ -149,6 +149,6 @@ npm install wechaty-puppet-NAME
 
 > You have to replace the `wechaty-puppet-NAME` with the puppet you want to use. There are various puppets available, you can choose from [here](./puppet-providers/overview.mdx).
 
-## Good to go!
+## Good to go
 
-Now, you have the minimal setup required to build a bot. You can now head over to the [tutorials](./../getting-started/hard-way.mdx).
+Now, you have the minimal setup required to build a bot. You can head over to the [tutorials](./../getting-started/hard-way.mdx).
