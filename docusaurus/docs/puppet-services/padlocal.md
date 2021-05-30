@@ -35,7 +35,7 @@ A preliminary study of Python-wechaty & wechaty-puppet-padlocal
 
 ## Architecture
 
-To be added
+![Architecture](../../static/img/docs/references/padlocal/architecture.png)
 
 ### Steps
 
@@ -48,10 +48,39 @@ To be added
 
 You will need a domestic public network IP+Token (please register with the administrator) to make wechaty-puppet take effect in the virtual machine part. For the trial or free plan, you can choose Alibaba Cloud or Huawei Cloud or GCP. It is a pity that Google does not have a domestic IP. , Or you can also play gcp's k8s by the way, suggest that you still use domestic resources.
 
+![Step 1](../../static/img/docs/references/padlocal/step-1.png)
+
 Just register a ubuntu20.04, pay attention to the security group to release port 8788.
 Run the following command in ubuntu cmdline.
 
+```
+apt update
+apt install docker.io
+docker pull wechaty/wechaty
+export WECHATY_PUPPET_PADLOCAL_TOKEN=puppet_padlocal_xxxxxxxxxxxxxxxxxx
+export WECHATY_PUPPET_SERVER_PORT=8788
+export WECHATY_PUPPET=wechaty-puppet-padlocal
+export WECHATY_LOG=verbose
+docker run \
+  --rm \
+  -ti \
+  -e WECHATY_LOG \
+  -e WECHATY_PUPPET \
+  -e WECHATY_PUPPET_PADLOCAL_TOKEN \
+  -e WECHATY_PUPPET_SERVER_PORT \
+  -e WECHATY_TOKEN="$WECHATY_PUPPET_PADLOCAL_TOKEN" \
+  -p "$WECHATY_PUPPET_SERVER_PORT:$WECHATY_PUPPET_SERVER_PORT" \
+  wechaty/wechaty
+```
+
 You can issue an instruction to check whether it is running normally, as shown in the figure :
+
+```
+netstat -ntlp
+docker container ls
+```
+
+![Step 1-terminal](../../static/img/docs/references/padlocal/step-1-terminal.png)
 
 You can telnet the virtual machine IP: 8788, simple debugging will not work.
 (Optional) You can change docker run to docker-compose by running, and the virtual machine can grow up automatically after it crashes.
@@ -73,16 +102,20 @@ python-wechaty-getting-started you need Python3.7+
 
 Run the following cmd :
 
+```
 git clone https://github.com/wechaty/python-wechaty-getting-started
 cd python-wechaty-getting-started
 pip3 install -r requirements.txt
 export WECHATY_PUPPET=wechaty-puppet-service
 export WECHATY_PUPPET_SERVICE_TOKEN=your_token_at_here
 python3 examples/ding-dong-bot.py
+```
 
 Just wait for the QR code to appear
 
 ### QRcode
+
+![QRCode](../../static/img/docs/references/padlocal/qrcode.png)
 
 ### Step 4 WeChat scan code
 
