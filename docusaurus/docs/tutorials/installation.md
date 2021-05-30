@@ -88,6 +88,8 @@ The best way to update `Node.js` on **Linux** is by using [Node Version Manager 
 
 The best way to update `Node.js` on **Windows** and **macOS** is by going to the official download page and install the latest release, the system should overwrite the older version with the updated one.
 
+![Node.js Downloads page](../../static/img/docs/tutorials/installation/node_update.png)
+
 1. Go to the [Downloads page of Node.js](https://nodejs.org/en/download/), you can choose between **LTS** (recommended) and **Current** release.
 
 2. Click on either **Windows Installer** or **macOS Installer** depending on your system, and download the latest version.
