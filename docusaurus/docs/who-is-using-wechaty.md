@@ -20,10 +20,10 @@ Some of the companies that are currently using Wechaty include:
 - [Wechat](https://www.wechat.com/en/) - is China's top free messaging and calling app that serves as a mobile internet
 - [BAIDU](http://www.baidu.com/) - a Chinese multinational technology company specializing in Internet-related services, products, and artificial intelligence
 - [VIP.COM](https://www.vip.com/) and [JD.COM](https://global.jd.com/) - famous online shops in China selling lifestyle goods
-- [Tencent](https://www.tencent.com/en-us/) - a Chinese multinational technology conglomerate holding company
+- [Tencent](https://www.tencent.com/en-us/) - a multinational technology conglomerate holding company
 - [Aliyun](https://eu.alibabacloud.com/en) - is China's leading cloud provider, also known as Alibaba Cloud
 - [Meituan](https://www.meituan.com/) - is a group-discount website which sells vouchers from merchants for deals and generates most of its revenue from mobile application services.
-- [L'Oréal](https://www.loreal.com/en/) - the world leader in beauty and makeup
+- [L'Oréal](https://www.loreal.com/en/) - is a leading personal care and cosmetics company
 - [Xueersi](https://www.xueersi.com/) - a Beijing-based educational training site focused on primary and middle school students
 - [58Tong Cheng](https://by.58.com/) - is China's leading life service platform which provides different types of services such as recruitment, domestic, and rental services
 - [Plug And Play](https://www.plugandplaytechcenter.com/) - is the world's largest early-stage investor, accelerator, and corporate innovation platform
