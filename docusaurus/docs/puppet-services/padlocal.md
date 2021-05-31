@@ -53,7 +53,7 @@ You will need a domestic public network IP+Token (please register with the admin
 Just register a ubuntu20.04, pay attention to the security group to release port 8788.
 Run the following command in ubuntu cmdline.
 
-```
+```sh
 apt update
 apt install docker.io
 docker pull wechaty/wechaty
@@ -87,7 +87,7 @@ You can telnet the virtual machine IP: 8788, simple debugging will not work.
 
 ### Step 2 verify hostie token
 
-Visit https://api.chatie.io/v0/hosties/puppet_padlocal_xxxxxxxx
+Visit [this link](https://api.chatie.io/v0/hosties/puppet_padlocal_xxxxxxxx).
 To check whether your token is successfully registered, if not, please go back to step 1 to check.
 
 Good:
@@ -102,7 +102,7 @@ python-wechaty-getting-started you need Python3.7+
 
 Run the following cmd :
 
-```
+```sh
 git clone https://github.com/wechaty/python-wechaty-getting-started
 cd python-wechaty-getting-started
 pip3 install -r requirements.txt

@@ -18,4 +18,4 @@ If you want to become a Wechaty Puppet Service Provider, please do not hesitate 
 
 Learn more about the Wechaty Puppet Service Providers from:
 
-More Puppet Service Providers are welcomed, please learn more from https://github.com/wechaty/puppet-services and feel free to contact us by joining our Gitter network if you aren’t already a member.
+More Puppet Service Providers are welcomed, please learn more from [here](https://github.com/wechaty/puppet-services) and feel free to contact us by joining our Gitter network if you aren’t already a member.

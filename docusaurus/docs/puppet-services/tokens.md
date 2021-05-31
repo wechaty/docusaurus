@@ -23,7 +23,7 @@ When you are using a Wechaty Puppet Service, you need to provide TOKEN to it so 
 
 There are three ways we provide tokens:
 
-- **Free Short Term Token** : You can get a short-term free TOKEN for testing. 
+- **Free Short Term Token** : You can get a short-term free TOKEN for testing.
 - **Free Long Term Token** : To get a long-term free TOKEN, joini our [Wechaty Contributor Program](contributing/contributor-program.md)
 - **Paid Long Term Token** :  buy a TOKEN from our Wechaty Puppet Service Providers.
 
@@ -37,7 +37,7 @@ TODO: list a easy to follow steps how to apply free token
 
 - Paimon: Register [here](http://175.27.139.176/)
 - wxwork/donut: Using **WeCom Account**(Not WeChat) with administrator rights [here](https://qiwei.juzibot.com/user/login?isWechaty=true)
-- Padlocal: [👉🏻 Get Free PadLocal Token 👈🏻](http://pad-local.com/) 
+- Padlocal: [👉🏻 Get Free PadLocal Token 👈🏻](http://pad-local.com/)
 
 ### 2. Free TOKEN (Long-term)
 
@@ -84,4 +84,4 @@ ts-node bot.ts
 
 ## Learn More
 
-Learn more about all the Wechaty Puppet Services at our official website: https://wechaty.js.org/docs/puppet-services/
+Learn more about all the Wechaty Puppet Services at our [official website](https://wechaty.js.org/docs/puppet-services/)
