@@ -74,7 +74,6 @@ The following shell commands demonstrated how to use it under Linux/macOS:
 
 ```shell
 export WECHATY_PUPPET_SERVICE_TOKEN=__TOKEN__
-
 ts-node bot.ts
 // or: node bot.js
 // or: make bot
