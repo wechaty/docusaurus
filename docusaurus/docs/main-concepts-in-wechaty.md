@@ -12,7 +12,7 @@ This section covers the main Wechaty concepts you need to be familiar with to un
 
 - **Chatbot**
 
-  These are bots which are designed for interacting with humans in voice or text-based conversation. Chatbots simulate human conversation by responding to certain phrases or words with programmed responses. Wechaty is a software program for developing chatbots for Instant Messaging services such as Wechat and Whatsapp. You can check our [Introduction section](#placeholder-link) for a list of all the supported Instant Messaging systems.
+  These are bots that are designed for interacting with humans in voice or text-based conversation. Chatbots simulate human conversation by responding to certain phrases or words with programmed responses. Wechaty is a software program for developing chatbots for Instant Messaging services such as Wechat and Whatsapp. You can check our [Introduction section](#placeholder-link) for a list of all the supported Instant Messaging systems.
 
 - **Wechaty Puppet**
 
