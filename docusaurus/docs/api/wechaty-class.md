@@ -1,6 +1,6 @@
-# Classes
+## Classes
 
-## Wechaty
+### Wechaty
 
 Wechaty is the main bot class.
 
@@ -12,7 +12,7 @@ A `Bot` is a wechat client that  depends on which  type of puppet is used. The f
 
 To understand puppet and its uses do visit the below link-
 
-## [What is a Puppet in Wechaty](https://github.com/wechaty/wechaty-getting-started/wiki/FAQ-EN#31-what-is-a-puppet-in-wechaty)?
+### [What is a Puppet in Wechaty](https://github.com/wechaty/wechaty-getting-started/wiki/FAQ-EN#31-what-is-a-puppet-in-wechaty)?
 
 > If you want to know how to send message, see Message
 > If you want to know how to get contact, see Contact
