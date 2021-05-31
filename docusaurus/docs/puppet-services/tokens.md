@@ -79,7 +79,7 @@ ts-node bot.ts
 // or: make bot
 ```
 
-> `__TOKEN__` is your TOKEN
+`__TOKEN__` is your TOKEN
 
 ## Learn More
 
