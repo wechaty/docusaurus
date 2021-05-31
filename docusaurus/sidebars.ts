@@ -75,6 +75,7 @@ const puppetServices: SubMenuData = {
     'puppet-services/paimon',
     'puppet-services/donut',
     'puppet-services/compatibility',
+    'puppet-services/compatibility-english',
     'puppet-services/diy',
   ]
 }
