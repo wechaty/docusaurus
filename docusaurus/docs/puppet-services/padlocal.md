@@ -75,7 +75,7 @@ docker run \
 
 You can issue an instruction to check whether it is running normally, as shown in the figure :
 
-```
+```sh
 netstat -ntlp
 docker container ls
 ```
