@@ -16,7 +16,7 @@ All wechat messages will be encapsulated as a `Message`.
 | to\(\)                      	| `Contact` or `null` 	|
 | room\(\)                    	| `Room` or `null`    	|
 | text\(\)                    	| `string`            	|
-| say\(text Or Contact Or File\)| `Promise `          	|
+| say\(text Or Contact Or File\)| `Promise`             |
 | type\(\)                    	| `MessageType`       	|
 | self\(\)                    	| `boolean`           	|
 | mention\(\)                 	| `Promise`          	  |
@@ -35,8 +35,8 @@ All wechat messages will be encapsulated as a `Message`.
 | find\(\)                    	| `Promise`          	  |
 | findAll\(\)                 	| `Promise`           	|
 
-
 ## Instance Methods 
+
 
 ### message.from\(\) ⇒ `Contact | null`
 
@@ -162,7 +162,6 @@ bot
  **see 👉🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 **See 👉🏻**: [Examples/ding-dong-bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/ding-dong-bot.ts)
-
 **Example**
 
 ```javascript
@@ -250,7 +249,6 @@ bot
 | MessageType.Text       	|
 | MessageType.Video      	|
 | MessageType.Url        	|
-
 **Example**
 
 ```javascript
@@ -312,7 +310,6 @@ if (await message.mentionSelf()) {
 | Param | Type | Description |
 | :--- | :--- | :--- |
 | to (Recipient) | `Sayable` \| `Array` | Room or Contact The recipient of the message, the room, or the contact |
-
 **Example**
 
 ```javascript
