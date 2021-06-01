@@ -35,8 +35,8 @@ All wechat messages will be encapsulated as a `Message`.
 | find\(\)       | `Promise`   |
 | findAll\(\)    | `Promise`   |
 
-
 ## Instance Methods 
+
 ### message.from\(\) ⇒ `Contact | null`
 
 * The method gets the sender from the message.
@@ -239,6 +239,7 @@ bot
 * The method gets the type of the  wechat message
 * The different method type supported are listed below 
 
+
 | Message Type           |
 |------------------------|
 | MessageType.Unknown    |
@@ -278,6 +279,7 @@ if (message.self()) {
 
 * It gets message mentioned contactList.
 * The method returns `Promise <Contact []>` - > message mentioned contactList 
+
 
 |  | Web | Mac PC Client | iOS Mobile | android Mobile |
 | :--- | :---: | :---: | :---: | :---: |
@@ -353,8 +355,7 @@ bot
 ### message.toUrlLink\(\) ⇒ `Promise <UrlLink>`
 
 * It extracts the Url Link from the Message, and encapsulate it into UrlLink class
-
-> Tips: This function is depending on the Puppet Implementation, **see 👉🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
+* Tips: This function is depending on the Puppet Implementation, **see 👉🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 ## Static Methods 
 
