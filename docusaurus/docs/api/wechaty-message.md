@@ -27,6 +27,7 @@ All wechat messages will be encapsulated as a `Message`.
 | toFileBox\(\)                   	| `Promise`           	|
 | toContact\(\)                   	| `Promise`           	|
 | toUrlLink\(\)                   	| `Promise`           	|
+
 ### Static Method
 
 | Static Methods 	| Return type 	|
@@ -272,6 +273,7 @@ if (message.self()) {
 
 ### message.mention\(\) ⇒ `Promise <Contact []>`
 
+
 * It gets message mentioned contactList.
 * The method returns `Promise <Contact []>` - > message mentioned contactList 
 
@@ -336,19 +338,16 @@ bot
 ### message.toFileBox\(\) ⇒ `Promise <FileBox>`
 
 * It extracts the Media file from the Message, and put it into the FileBox.
-
 > Tips: This function is depending on the Puppet Implementation, **see👉🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 ### message.toContact\(\) ⇒ `Promise <Contact>`
 
 * Get Share Card of the Message Extract the Contact Card from the Message, and encapsulate it into Contact class
-
 > Tips: This function is depending on the Puppet Implementation, **see 👉🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 ### message.toUrlLink\(\) ⇒ `Promise <UrlLink>`
 
 * It extracts the Url Link from the Message, and encapsulate it into UrlLink class
-
 > Tips: This function is depending on the Puppet Implementation, **see 👉🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 ## Static Methods 
