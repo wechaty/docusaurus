@@ -10,30 +10,29 @@ All wechat messages will be encapsulated as a `Message`.
 
 ### Instance Methods
 
-| Instance Method Name          | Return Type         	|
-|-----------------------------	|---------------------	|
-| from\(\)                    	| `Contact` or `null` 	|
-| to\(\)                      	| `Contact` or `null` 	|
-| room\(\)                    	| `Room` or `null`    	|
-| text\(\)                    	| `string`            	|
-| say\(text Or Contact Or File\)| `Promise`             |
-| type\(\)                    	| `MessageType`       	|
-| self\(\)                    	| `boolean`           	|
-| mention\(\)                 	| `Promise`          	  |
-| mentionSelf\(\)            	  | `Promise`             |
-| forward\(to\)               	| `Promise`          	  |
-| date\(\)                    	| `Date`              	|
-| age\(\)                     	| `Number`            	|
-| toFileBox\(\)               	| `Promise`          	  |
-| toContact\(\)               	| `Promise`           	|
-| toUrlLink\(\)               	| `Promise`          	  |
-
+| Instance methods                	| Return type         	|
+|---------------------------------	|---------------------	|
+| from\(\)                        	| `Contact` or `null` 	|
+| to\(\)                          	| `Contact` or `null` 	|
+| room\(\)                        	| `Room` or `null`    	|
+| text\(\)                        	| `string`            	|
+| say\(text Or Contact Or File\)  	| `Promise`           	|
+| type\(\)                        	| `MessageType`       	|
+| self\(\)                        	| `boolean`           	|
+| mention\(\)                     	| `Promise`           	|
+| mentionSelf\(\)                 	| `Promise`           	|
+| forward\(to\)                   	| `Promise`           	|
+| date\(\)                        	| `Date`              	|
+| age\(\)                         	| `Number`            	|
+| toFileBox\(\)                   	| `Promise`           	|
+| toContact\(\)                   	| `Promise`           	|
+| toUrlLink\(\)                   	| `Promise`           	|
 ### Static Method
 
-| Static Method Name            | Return Type         	|
-|-----------------------------	|---------------------	|
-| find\(\)                    	| `Promise`          	  |
-| findAll\(\)                 	| `Promise`           	|
+| Static Methods 	| Return type 	|
+|----------------	|-------------	|
+| find\(\)       	| `Promise`   	|
+| findAll\(\)    	| `Promise`   	|
 
 ## Instance Methods 
 
