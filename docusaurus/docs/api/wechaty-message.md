@@ -19,21 +19,22 @@ All wechat messages will be encapsulated as a `Message`.
 | say\(text Or Contact Or File\)| `Promise `          	|
 | type\(\)                    	| `MessageType`       	|
 | self\(\)                    	| `boolean`           	|
-| mention\(\)                 	| `Promise `          	|
-| mentionSelf\(\)            	| `Promise`          	|
-| forward\(to\)               	| `Promise `          	|
+| mention\(\)                 	| `Promise`          	  |
+| mentionSelf\(\)            	  | `Promise`             |
+| forward\(to\)               	| `Promise`          	  |
 | date\(\)                    	| `Date`              	|
 | age\(\)                     	| `Number`            	|
-| toFileBox\(\)               	| `Promise `          	|
-| toContact\(\)               	| `Promise `          	|
-| toUrlLink\(\)               	| `Promise `          	|
+| toFileBox\(\)               	| `Promise`          	  |
+| toContact\(\)               	| `Promise`           	|
+| toUrlLink\(\)               	| `Promise`          	  |
 
 ### Static Method
 
 | Static Method Name            | Return Type         	|
 |-----------------------------	|---------------------	|
-| find\(\)                    	| `Promise `          	|
-| findAll\(\)                 	| `Promise `          	|
+| find\(\)                    	| `Promise`          	  |
+| findAll\(\)                 	| `Promise`           	|
+
 
 ## Instance Methods 
 
@@ -90,7 +91,6 @@ bot
 
 * It gets the room from the message. 
 * If the message is not in a room, then will return `null`
-
 **Example**
 
 ```javascript
@@ -113,7 +113,6 @@ bot
 ### message.text\(\) ⇒ `string`
 
 * The method returns the text content of the message
-
 **Example**
 
 ```javascript
@@ -136,7 +135,6 @@ bot
 ### message.toRecalled\(\) ⇒ `Promise <Message | null>`
 
 * Gets the text content of the recalled message
-
 **Example**
 
 ```javascript
@@ -267,7 +265,6 @@ if (message.type() === bot.Message.Type.Text) {
 * The method checks if a message is sent by self.
 * It returns `true` if message is sent from self .
 * If message is sent from others it returns `false`
-
 **Example**
 
 ```javascript
@@ -289,7 +286,6 @@ Message event table  is as follows:
 | Identify magic code \(8197\) by copy & paste in mobile | ✘ | √ | √ | ✘ |
 | Identify magic code \(8197\) by programming | ✘ | ✘ | ✘ | ✘ |
 | Identify two contacts with the same roomAlias by \[You were  mentioned\] tip | ✘ | ✘ | √ | √ |
-
  **Example**
 
 ```javascript
@@ -301,7 +297,6 @@ console.log(contactList)
 
 * Checks if a message is  self mention.
 * Returns `true` for self mention messages
-
 **Example**
 
 ```javascript
