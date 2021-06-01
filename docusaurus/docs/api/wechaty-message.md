@@ -35,7 +35,7 @@ All wechat messages will be encapsulated as a `Message`.
 | find\(\)       | `Promise`   |
 | findAll\(\)    | `Promise`   |
 
-## Instance Methods 
+##  Instance Methods 
 
 ### message.from\(\) ⇒ `Contact | null`
 
@@ -86,10 +86,10 @@ bot
 .start()
 ```
 
-### message.room\(\) ⇒ `Room` \| `null`
+###  message.room\(\) ⇒ `Room` \| `null`
 
-* It gets the room from the message. 
-* If the message is not in a room, then will return `null`
+*  It gets the room from the message. 
+*  If the message is not in a room, then will return `null`
 
 ### Example
 
@@ -236,8 +236,8 @@ bot
 
 ### message.type\(\) ⇒ `MessageType`
 
-* The method gets the type of the  wechat message
-* The different method type supported are listed below 
+*  The method gets the type of the  wechat message
+*  The different method type supported are listed below 
 
 | Message Type           |
 |------------------------|
@@ -276,8 +276,8 @@ if (message.self()) {
 
 ### message.mention\(\) ⇒ `Promise <Contact []>`
 
-* It gets message mentioned contactList.
-* The method returns `Promise <Contact []>` - > message mentioned contactList 
+*  It gets message mentioned contactList.
+*  The method returns `Promise <Contact []>` - > message mentioned contactList 
 
 |  | Web | Mac PC Client | iOS Mobile | android Mobile |
 | :--- | :---: | :---: | :---: | :---: |
@@ -355,7 +355,7 @@ bot
 * It extracts the Url Link from the Message, and encapsulate it into UrlLink class
 * Tips: This function is depending on the Puppet Implementation, **see 👉🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
-## Static Methods 
+##  Static Methods 
 
 ### Message.find\(\) ⇒ `Promise <Message | null>`
 
