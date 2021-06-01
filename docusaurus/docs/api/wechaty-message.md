@@ -35,6 +35,7 @@ All wechat messages will be encapsulated as a `Message`.
 | find\(\)       | `Promise`   |
 | findAll\(\)    | `Promise`   |
 
+
 ## Instance Methods 
 
 ### message.from\(\) ⇒ `Contact | null`
@@ -43,7 +44,7 @@ All wechat messages will be encapsulated as a `Message`.
 * the method returns `null` if it does not find the sender
 * This is an instance method of class `Message`
 
-**Example:**
+### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -67,7 +68,7 @@ bot
 * Get the destination of the message Message.to\(\) will return null if a message is in a room, use Message.room\(\) to get the room.
 * The method is also  an instance method of class `Message`
 
-**Example**
+### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -90,7 +91,8 @@ bot
 
 * It gets the room from the message. 
 * If the message is not in a room, then will return `null`
-**Example**
+
+### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -112,7 +114,8 @@ bot
 ### message.text\(\) ⇒ `string`
 
 * The method returns the text content of the message
-**Example**
+
+### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -134,7 +137,8 @@ bot
 ### message.toRecalled\(\) ⇒ `Promise <Message | null>`
 
 * Gets the text content of the recalled message
-**Example**
+
+### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -161,7 +165,8 @@ bot
  **see 👉🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 **See 👉🏻**: [Examples/ding-dong-bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/ding-dong-bot.ts)
-**Example**
+
+### Example
 
 ```javascript
 import { FileBox }  from 'file-box'
@@ -248,7 +253,8 @@ bot
 | MessageType.Text       |
 | MessageType.Video      |
 | MessageType.Url        |
-**Example**
+
+### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -263,7 +269,7 @@ if (message.type() === bot.Message.Type.Text) {
 * It returns `true` if message is sent from self .
 * If message is sent from others it returns `false`
 
-**Example**
+### Example
 
 ```javascript
 if (message.self()) {
@@ -272,7 +278,6 @@ if (message.self()) {
 ```
 
 ### message.mention\(\) ⇒ `Promise <Contact []>`
-
 
 * It gets message mentioned contactList.
 * The method returns `Promise <Contact []>` - > message mentioned contactList 
@@ -285,7 +290,8 @@ Message event table  is as follows:
 | Identify magic code \(8197\) by copy & paste in mobile | ✘ | √ | √ | ✘ |
 | Identify magic code \(8197\) by programming | ✘ | ✘ | ✘ | ✘ |
 | Identify two contacts with the same roomAlias by \[You were  mentioned\] tip | ✘ | ✘ | √ | √ |
- **Example**
+
+### Example
 
 ```javascript
 const contactList = await message.mention()
@@ -297,7 +303,7 @@ console.log(contactList)
 * Checks if a message is  self mention.
 * Returns `true` for self mention messages
 
-**Example**
+### Example
 
 ```javascript
 if (await message.mentionSelf()) {
@@ -312,7 +318,8 @@ if (await message.mentionSelf()) {
 | Param | Type | Description |
 | :--- | :--- | :--- |
 | to (Recipient) | `Sayable` \| `Array` | Room or Contact The recipient of the message, the room, or the contact |
-**Example**
+
+### Example
 
 ```javascript
 const bot = new Wechaty()
