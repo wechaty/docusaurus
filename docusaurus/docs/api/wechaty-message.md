@@ -239,7 +239,6 @@ bot
 * The method gets the type of the  wechat message
 * The different method type supported are listed below 
 
-
 | Message Type           |
 |------------------------|
 | MessageType.Unknown    |
@@ -279,7 +278,6 @@ if (message.self()) {
 
 * It gets message mentioned contactList.
 * The method returns `Promise <Contact []>` - > message mentioned contactList 
-
 
 |  | Web | Mac PC Client | iOS Mobile | android Mobile |
 | :--- | :---: | :---: | :---: | :---: |
