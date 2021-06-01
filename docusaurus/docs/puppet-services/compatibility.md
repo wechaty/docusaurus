@@ -1,7 +1,7 @@
 ---
-title: 'Puppet Service Compatibility'
-sidebar_label:'Puppet Service: 'Compatibility'
+title: 'Puppet Service Compatibility- Chinese'
 ---
+
 Service|donut|wxwork|paimon|padlocal
 :---|:---:|:---:|:---:|:---:
 支持账号|个人微信|企业微信|个人微信|个人微信

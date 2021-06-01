@@ -1,3 +1,8 @@
+---
+title: 'Puppet Service Compatibility - English'
+sidebar_label:'Puppet Service: 'English'
+---
+
 ## For reference in English
 
 Service|donut|wxwork|paimon|padlocal

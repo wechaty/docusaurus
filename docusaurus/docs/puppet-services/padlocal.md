@@ -14,7 +14,7 @@ sidebar_label: PadLocal
 
 A preliminary study of Python-wechaty & wechaty-puppet-padlocal
 
-## Running python-wechaty locally + virtual machine running wechaty-puppet-padlocal on the cloud
+## Running wechaty-puppet-padlocal on cloud
 
 ### Precautions
 
@@ -44,7 +44,7 @@ A preliminary study of Python-wechaty & wechaty-puppet-padlocal
 3. Run local python-wechaty-getting-started
 4. Scan code login
 
-### Step 1 wechaty-puppet-padlocal
+### Step 1 : wechaty-puppet-padlocal
 
 You will need a domestic public network IP+Token (please register with the administrator) to make wechaty-puppet take effect in the virtual machine part. For the trial or free plan, you can choose Alibaba Cloud or Huawei Cloud or GCP. It is a pity that Google does not have a domestic IP. , Or you can also play gcp's k8s by the way, suggest that you still use domestic resources.
 
@@ -85,7 +85,7 @@ docker container ls
 You can telnet the virtual machine IP: 8788, simple debugging will not work.
 (Optional) You can change docker run to docker-compose by running, and the virtual machine can grow up automatically after it crashes.
 
-### Step 2 verify hostie token
+### Step 2 : verify hostie token
 
 Visit [this link](https://api.chatie.io/v0/hosties/puppet_padlocal_xxxxxxxx).
 To check whether your token is successfully registered, if not, please go back to step 1 to check.
@@ -96,7 +96,7 @@ Good:
 No Good:
 {"ip":"0.0.0.0","port":0}
 
-### Step 3 Run python locally
+### Step 3 : Run python locally
 
 python-wechaty-getting-started you need Python3.7+
 
@@ -117,7 +117,7 @@ Just wait for the QR code to appear
 
 ![QRCode](../../static/img/docs/references/padlocal/qrcode.png)
 
-### Step 4 WeChat scan code
+### Step 4 : WeChat scan code
 
 Currently using a new account registration will fail - Fixed
 Log in after scanning.

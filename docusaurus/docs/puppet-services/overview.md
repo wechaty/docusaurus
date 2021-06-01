@@ -1,7 +1,6 @@
 ---
-slug: /puppet-services/
 title: Wechaty Puppet Services
-sidebar_label: 'Puppet Services: Index'
+sidebar_label: 'Overview'
 ---
 
 import Badges from './transclusions/badges.mdx'
@@ -36,10 +35,10 @@ Our Wechaty Community now has **serval Wechaty Puppet Services** which works out
 
 For now, the Wechaty community has four official Wechaty Puppet Services:
 
-- WXWork : WeCom Windows Protocol
-- PadLocal : WeChat Pad Protocol
-- Paimon : WeChat Pad Protocol
-- Donut : WeChat Windows Protocol
+- WXWork : [WeCom Windows Protocol](wxwork.md)
+- PadLocal : [WeChat Pad Protocol](padlocal.md)
+- Paimon : [WeChat Pad Protocol](paimon.md)
+- Donut : [WeChat Windows Protocol](donut.md)
 
 [Introducing Wechaty Puppet Service](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/)
 
