@@ -35,7 +35,6 @@ All wechat messages will be encapsulated as a `Message`.
 | find\(\)       | `Promise`   |
 | findAll\(\)    | `Promise`   |
 
-
 ## Instance Methods 
 
 ### message.from\(\) ⇒ `Contact | null`
@@ -241,7 +240,6 @@ bot
 * The different method type supported are listed below 
 
 > Tips: MessageType is Enum here.
-
 | Message Type           |
 |------------------------|
 | MessageType.Unknown    |
@@ -281,8 +279,6 @@ if (message.self()) {
 
 * It gets message mentioned contactList.
 * The method returns `Promise <Contact []>` - > message mentioned contactList 
-
-Message event table  is as follows:
 
 |  | Web | Mac PC Client | iOS Mobile | android Mobile |
 | :--- | :---: | :---: | :---: | :---: |
@@ -362,6 +358,7 @@ bot
 > Tips: This function is depending on the Puppet Implementation, **see 👉🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 ## Static Methods 
+
 
 ### Message.find\(\) ⇒ `Promise <Message | null>`
 
