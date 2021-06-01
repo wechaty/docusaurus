@@ -1,5 +1,5 @@
 ---
-title: 'Listening events'
+title: 'Creating a bot from Scratch'
 ---
 
 <!-- MDX import -->
@@ -8,15 +8,95 @@ import TabItem from '@theme/TabItem'
 
 :::tip
 
-The Wechaty Events are all the same acrossing Polyglot Wechaty programs!
+The wechaty bot is available in various programming languages!
 
 :::
 
+Events are functions that define the operations the bot can perform. Some common events are login, logout, onMessage etc.
+
+After getting familiar with the ding dong bot, this tutrial will focus on creating a bot from scratch adding various events one by one.
+
+For simplicity, this tutorial will guide you to create a bot in javascriptbut but you can choose between various programming languages available.  
+
+## Getting started
+
+<ol>
+<li>Create an empty project folder</li>
+<li> Add a bot.js file</li>
+<li>In the termial write the following command</li>
+
+```bash
+npm init
+```
+
+A package.json file is created.
+
+<li>In the terminal install the necesary dependencies</li>
+
+```bash
+npm i qrcode-terminal wechaty 
+```
+
+```bash
+ npm i wechaty-puppet-PUPPET-PROVIDER
+```
+
+The <i>PUPPET-PROVIDER</i> represents the messaging platform you want to integrate your bot with.
+
+- For whatsaap:
+
+```bash
+ npm i wechaty-puppet-whatsapp
+```
+
+- For wechat
+
+```bash
+ npm i wechaty-puppet-wechat
+```
+
+<li> In the package.json file add a script</li>
+
+`"start": "node bot.js"`
+
+<img src="../../static/img/docs/howto/event/package-json.png"></img>
+
+<li> In the terminal type the following Commands</li>
+
+```bash
+ export WECHATY_LOG=verbose
+ ```
+
+<ul>
+
+<li> For whatsaap:</li>
+
+```bash
+export WECHATY_PUPPET=wechaty-puppet-whatsaap
+```
+
+<li>For wechat</li>
+
+```bash
+export WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</ul>
+
+<li>Now we can run the bot using the command:</li>
+
+``` bash
+npm start
+```
+
+But before that we need to add events to the bot. For following along the tutorial use the javascript code from the polyglot.
+</ol>
+
 ## Basic Events
 
-### `scan` Event: QR code
+### `Scan` Event
 
-TODO: introducing `scan` event
+The sacn event generates a QR code to integrate your bot to a puppet provider
 
 <Tabs
   groupId="programming-languages"
@@ -55,18 +135,22 @@ await bot.start()
 <TabItem value="js">
 
 ```ts
-const { ScanStatus } = require('wechaty')
+const { Wechaty,ScanStatus,log } = require('wechaty')
 
-async function onScan (
-  qrcode,
-  status,
-) {
+async function onScan (qrcode,status)
+ {
   console.info('Scan QR Code to login, status:', status, ScanStatus[status])
   console.info('https://wechaty.js.org/qrcode/' + encodeURIComponent(qrcode))
 }
 
+const bot = new Wechaty({
+    name: 'bot-name',
+  })
+
 bot.on('scan', onScan)
-await bot.start()
+bot.start()
+  .then(() => log.info('StarterBot', 'Starter Bot Started.'))
+  .catch(e => log.error('StarterBot', e))
 ```
 
 </TabItem>
