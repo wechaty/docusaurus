@@ -37,7 +37,6 @@ All wechat messages will be encapsulated as a `Message`.
 
 ## Instance Methods 
 
-
 ### message.from\(\) ⇒ `Contact | null`
 
 * The method gets the sender from the message.
@@ -235,6 +234,7 @@ bot
 
 * The method gets the type of the  wechat message
 * The different method type supported are listed below 
+
 > Tips: MessageType is Enum here.
 
 | Message Type           |
@@ -262,6 +262,7 @@ if (message.type() === bot.Message.Type.Text) {
 * The method checks if a message is sent by self.
 * It returns `true` if message is sent from self .
 * If message is sent from others it returns `false`
+
 **Example**
 
 ```javascript
@@ -295,6 +296,7 @@ console.log(contactList)
 
 * Checks if a message is  self mention.
 * Returns `true` for self mention messages
+
 **Example**
 
 ```javascript
@@ -337,16 +339,19 @@ bot
 ### message.toFileBox\(\) ⇒ `Promise <FileBox>`
 
 * It extracts the Media file from the Message, and put it into the FileBox.
+
 > Tips: This function is depending on the Puppet Implementation, **see👉🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 ### message.toContact\(\) ⇒ `Promise <Contact>`
 
 * Get Share Card of the Message Extract the Contact Card from the Message, and encapsulate it into Contact class
+
 > Tips: This function is depending on the Puppet Implementation, **see 👉🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 ### message.toUrlLink\(\) ⇒ `Promise <UrlLink>`
 
 * It extracts the Url Link from the Message, and encapsulate it into UrlLink class
+
 > Tips: This function is depending on the Puppet Implementation, **see 👉🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 ## Static Methods 
