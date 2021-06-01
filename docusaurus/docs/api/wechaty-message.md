@@ -35,8 +35,8 @@ All wechat messages will be encapsulated as a `Message`.
 | find\(\)       | `Promise`   |
 | findAll\(\)    | `Promise`   |
 
-## Instance Methods 
 
+## Instance Methods 
 ### message.from\(\) ⇒ `Contact | null`
 
 * The method gets the sender from the message.
@@ -239,7 +239,6 @@ bot
 * The method gets the type of the  wechat message
 * The different method type supported are listed below 
 
-> Tips: MessageType is Enum here.
 | Message Type           |
 |------------------------|
 | MessageType.Unknown    |
@@ -358,7 +357,6 @@ bot
 > Tips: This function is depending on the Puppet Implementation, **see 👉🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 ## Static Methods 
-
 
 ### Message.find\(\) ⇒ `Promise <Message | null>`
 
