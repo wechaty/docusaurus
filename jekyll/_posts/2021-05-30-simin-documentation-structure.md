@@ -3,9 +3,8 @@
  author: proudofsimin
  categories: article
  tags:
-   - GSoD
    - introduction
- image: /jekyll/assets/2021/05-simin-documentation-structure/cover_photo.png
+ image: /assets/2021/05-simin-documentation-structure/cover_photo.png
 ---
 
 ## Documentation Structure
