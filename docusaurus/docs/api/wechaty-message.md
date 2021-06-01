@@ -35,7 +35,7 @@ All wechat messages will be encapsulated as a `Message`.
 | find\(\)       | `Promise`   |
 | findAll\(\)    | `Promise`   |
 
-## Instance Methods 
+## Instance Methods
 
 ### message.from\(\) ⇒ `Contact | null`
 
@@ -86,7 +86,7 @@ bot
 .start()
 ```
 
-###  message.room\(\) ⇒ `Room` \| `null`
+### message.room\(\) ⇒ `Room` \| `null`
 
 * It gets the room from the message.
 * If the message is not in a room, then will return `null`
