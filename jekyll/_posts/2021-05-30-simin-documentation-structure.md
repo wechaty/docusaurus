@@ -4,6 +4,7 @@
  categories: article
  tags:
    - introduction
+   - gsod
  image: /assets/2021/05-simin-documentation-structure/cover_photo.png
 ---
 
