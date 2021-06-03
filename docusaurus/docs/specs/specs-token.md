@@ -71,6 +71,7 @@ The running of the Wechaty Puppet Service can be checked by using the command gi
 curl https://api.chatie.io/v0/hosties/${WECHATY_TOKEN}
 ```
 
-**Replace ${WECHATY_TOKEN} to your real token in the above configuration**
-✅ If you get an HTTP/200 response with a JSON object body that includes your `ip` and `port`, then you are all set.<br>
-❌ If you get an HTTP/404 response, your Puppet Service Gateway has some issues and needs to be troubleshooted.
+**Replace ${WECHATY_TOKEN} to your real token in the above configuration*
+
+* ✅ If you get an HTTP/200 response with a JSON object body that includes your `ip` and `port`, then you are all set.
+* ❌ If you get an HTTP/404 response, your Puppet Service Gateway has some issues and needs to be troubleshooted.
