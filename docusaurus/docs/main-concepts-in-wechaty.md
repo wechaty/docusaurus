@@ -4,7 +4,7 @@ title: Main concepts in Wechaty
 
 ![Wechaty: Conversational RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
 
-This section covers the main Wechaty concepts you need to be familiar with to understand the other sections of the documentation. The other sections of the documentation assume you are familiar with the following concepts:
+This section explains the main concepts in Wechaty. If you are new to software or chatbot development, start from this glossary to familiarize yourself with the terminology.
 
 - **Bot**
 
