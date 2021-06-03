@@ -25,6 +25,7 @@ This variable is used to intialize the unique Wechaty Puppet Service Token,that 
 ```bash
 export WECHATY_TOKEN='2fdb00a5-5c31-4018-84ac-c64e5f995057'
 ```
+
 ## WECHATY_PUPPET_SERVER_PORT
 
 WECHATY_PUPPET_SERVER_PORT is a variable used to setup the  free server port for the Wechaty Puppet Service,this can also be used for docker port mapping.
