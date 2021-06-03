@@ -4,7 +4,7 @@ title: 'Usage with Heroku'
 
 ## HEROKU WECHATY GETTING STARTED
 
-[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-blue.svg)](https://github.com/chatie/wechaty)
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-blue.svg)](https://github.com/wechaty/wechaty)
 [![Build Status](https://travis-ci.com/wechaty/heroku-wechaty-getting-started.svg?branch=master)](https://travis-ci.com/wechaty/heroku-wechaty-getting-started)
 [![Greenkeeper badge](https://badges.greenkeeper.io/wechaty/heroku-wechaty-getting-started.svg)](https://greenkeeper.io/)
 
