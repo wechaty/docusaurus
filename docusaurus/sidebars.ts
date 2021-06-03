@@ -126,6 +126,47 @@ const gettingStarted: SubMenuData = {
   ],
 }
 
+const addevents: SubMenuData = {
+  label: 'Prepare the bot to add events',
+  items: [
+    'howto/wechaty',
+    'howto/event',
+  ],
+}
+
+const addfunctionalities: SubMenuData = {
+  label: 'Add functionality to the bot',
+  items: [
+    'howto/message',
+    'howto/contact',
+    'howto/room',
+    'howto/friendship',
+    'howto/file-box',
+  ],
+}
+
+const testbot: SubMenuData = {
+  label: 'Test the bot',
+  items: [
+  ],
+}
+
+const deployonim: SubMenuData = {
+  label: 'Deploy on IM platform',
+  items: [
+    'howto/deploy-in-wechat',
+    'howto/deploy-in-whatsapp'
+  ],
+}
+
+const deploycontainer: SubMenuData = {
+  label: 'Deploy with containers',
+  items: [
+    'tutorials/usage-with-heroku',
+    'tutorials/docker',
+  ],
+}
+
 const community: SubMenuData = {
   label: 'Community',
   items: [
@@ -274,15 +315,12 @@ const howtos = {
   label: 'How-to Guides',
   items: [
     'howto/overview',
-    'howto/install',
-    'howto/wechaty',
-    'howto/event',
-    'howto/message',
-    'howto/contact',
-    'howto/room',
-    'howto/friendship',
-    'howto/file-box',
-    'howto/testing',
+    subMenu(addevents),
+    subMenu(addfunctionalities),
+    subMenu(testbot),
+    subMenu(deployonim),
+    subMenu(deploycontainer),
+    'howto/faq',
   ],
 }
 
