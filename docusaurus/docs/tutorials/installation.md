@@ -6,7 +6,7 @@ Before diving into the tutorials, you will need to install a few build tools. Th
 
 ## Install Node.js
 
-Wechaty being a JavaScript based SDK, it requires a JavaScript runtime environment provided by [Node.js](https://nodejs.org/), and [npm](https://www.npmjs.com/) which is a package manager for JavaScript. You do not need to download `npm` separately, as you install `Node.js` you automatically get `npm` installed on your system.
+Wechaty being a JavaScript based SDK, it requires a JavaScript runtime environment provided by [Node.js](https://nodejs.org/), and [npm](https://www.npmjs.com/) which is a package manager for JavaScript. You don't need to download `npm` separately, as you install `Node.js` you automatically get `npm` installed on your system.
 
 > Wechaty requires `Node.js` version higher than **12.0**
 
