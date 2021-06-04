@@ -127,7 +127,7 @@ const gettingStarted: SubMenuData = {
 }
 
 const addevents: SubMenuData = {
-  label: 'Prepare the bot to add events',
+  label: 'Add events to the bot',
   items: [
     'howto/wechaty',
     'howto/event',
@@ -162,8 +162,8 @@ const deployonim: SubMenuData = {
 const deploycontainer: SubMenuData = {
   label: 'Deploy with containers',
   items: [
-    'tutorials/usage-with-heroku',
-    'tutorials/docker',
+    'tutorials/deploy-with-heroku',
+    'tutorials/deploy-with-docker',
   ],
 }
 
