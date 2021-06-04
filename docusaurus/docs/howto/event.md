@@ -1,5 +1,5 @@
 ---
-title: 'Creating a bot from Scratch'
+title: 'Adding Events and Customising a bot'
 ---
 
 <!-- MDX import -->
@@ -16,7 +16,7 @@ Events are functions that define the operations the bot can perform. Some common
 
 After getting familiar with the ding dong bot, this tutrial will focus on creating a bot from scratch adding various events one by one.
 
-For simplicity, this tutorial will guide you to create a bot in javascriptbut but you can choose between various programming languages available.  
+For simplicity, this tutorial will guide you to create a bot in javascript but but you can choose between various programming languages available.  
 
 ## Getting started
 
