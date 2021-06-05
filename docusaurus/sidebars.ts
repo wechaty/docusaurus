@@ -1,7 +1,7 @@
 /**
  * Docusaurus Sidebar
  */
-interface SubMenuData {
+ interface SubMenuData {
   label: string,
   items: (SubMenuData | string)[],
   type?: string,
@@ -117,12 +117,10 @@ const caseStudy: SubMenuData = {
   ],
 }
 
-const gettingStarted: SubMenuData = {
-  label: 'Getting Started',
+const quickStart: SubMenuData = {
+  label: 'Quick Start',
   items: [
-    'getting-started/overview',
-    'getting-started/quick-start',
-    'getting-started/hard-way',
+    'quick-start/running-on-google-cloud-shell',
   ],
 }
 
@@ -251,6 +249,15 @@ const professional = {
     subMenu(basic),
     subMenu(advanced),
     subMenu(professional),
+  ],
+}
+
+const gettingStarted: SubMenuData = {
+  label: 'Getting Started',
+  items: [
+    'getting-started/overview',
+    subMenu(quickStart),
+    'getting-started/hard-way',
   ],
 }
 
