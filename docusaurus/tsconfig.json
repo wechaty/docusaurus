@@ -10,5 +10,9 @@
   "include": [
     "src/",
     "sidebar.ts",
+  ],
+  "lib": [
+    "es2016",
+    "dom"
   ]
 }
