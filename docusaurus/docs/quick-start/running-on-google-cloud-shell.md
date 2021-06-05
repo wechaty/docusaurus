@@ -8,7 +8,7 @@ You can follow the steps below to get started smoothly.
 
 1. **Open** the Google Cloud Shell environment by clicking the button:
 
-   [![][shell_img]][shell_link]
+   [![Google Cloud Shell badge][shell_img]][shell_link]
 
    <!-- https://gstatic.com/cloudssh/images/open-btn.svg -->
    [shell_img]: https://img.shields.io/badge/%F0%9F%92%BB%20Google%20Cloud%20Shell-%3C%2F%3E-blue
@@ -18,15 +18,15 @@ You can follow the steps below to get started smoothly.
 
 3. **Trust** the git repository and click **Confirm**.
 
-   ![](../../static/img/docs/quick-start/trust_the_repo.png)
+   ![Google Cloud Shell: Trust repo](../../static/img/docs/quick-start/trust_the_repo.png)
 
 4. Wait for the cloud shell provisioning to complete.
 
-   ![](../../static/img/docs/quick-start/wait_for_provisioning_to_complete.png)
+   ![Google Cloud Shell: Wait for provisioning](../../static/img/docs/quick-start/wait_for_provisioning_to_complete.png)
 
 5. After that you will see the **Cloud Shell Editor**, on the right panel is your step-by-step **guide**, and on the bottom you have the **terminal window**.
-   
-   ![](../../static/img/docs/quick-start/cloud_shell_editor.png)
+
+   ![Google Cloud Shell: Editor](../../static/img/docs/quick-start/cloud_shell_editor.png)
 
 Now, you can follow the tutorial inside the cloud shell.
 
