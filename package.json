@@ -96,5 +96,8 @@
     "scripts": {
       "pre-push": "npx git-scripts-pre-push"
     }
+  },
+  "dependencies": {
+    "zero-md": "^2.1.1"
   }
 }

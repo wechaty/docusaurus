@@ -4,6 +4,8 @@ title: 'Wechaty OpenAPI'
 sidebar_label: OpenAPI
 ---
 
+import ZeroMd from 'zero-md'
+
 [![Wechaty OpenAPI](https://img.shields.io/badge/Wechaty-OpenAPI-6a4)](https://github.com/wechaty/openapi)
 
 - GitHub Repo <https://github.com/wechaty/openapi>
@@ -25,6 +27,8 @@ make bot
 Read blogs with the `openapi` tag at <https://wechaty.js.org/tags.html#openapi>
 
 ## History
+
+<zero-md src='https://raw.githubusercontent.com/wechaty/openapi/main/CHANGELOG.md'></zero-md>
 
 ## Maintainers
 
