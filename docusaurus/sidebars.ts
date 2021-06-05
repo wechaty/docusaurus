@@ -162,8 +162,8 @@ const deployonim: SubMenuData = {
 const deploycontainer: SubMenuData = {
   label: 'Deploy with containers',
   items: [
-    'tutorials/deploy-with-heroku',
-    'tutorials/deploy-with-docker',
+    'howto/deploy-with-heroku',
+    'howto/deploy-with-docker',
   ],
 }
 
