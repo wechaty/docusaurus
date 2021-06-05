@@ -117,12 +117,13 @@ const caseStudy: SubMenuData = {
   ],
 }
 
-const gettingStarted: SubMenuData = {
-  label: 'Getting Started',
+const quickStart: SubMenuData = {
+  label: 'Quick Start',
   items: [
-    'getting-started/overview',
-    'getting-started/quick-start',
-    'getting-started/hard-way',
+    // 'getting-started/overview',
+    // 'getting-started/quick-start',
+    'getting-started/running-on-gitpod',
+    // 'getting-started/hard-way',
   ],
 }
 
@@ -207,6 +208,16 @@ const introduction = {
  *
  *  Issue #704 - https://github.com/wechaty/wechaty.js.org/issues/704
  ****************************************************************************/
+
+ const gettingStarted: SubMenuData = {
+  label: 'Getting Started',
+  items: [
+    'getting-started/overview',
+    subMenu(quickStart),
+    'getting-started/hard-way',
+  ],
+}
+
 const tutorials = {
   label: 'Tutorials',
   items: [
