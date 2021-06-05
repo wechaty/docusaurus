@@ -129,7 +129,7 @@ const gettingStarted: SubMenuData = {
 const addevents: SubMenuData = {
   label: 'Add events to the bot',
   items: [
-    'howto/wechaty',
+    'howto/starter',
     'howto/event',
   ],
 }
