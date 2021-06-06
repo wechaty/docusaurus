@@ -6,13 +6,13 @@ sidebar_label: 'Overview'
 
 <!-- tutorial/Codelab - Converts a reader from curious investigator to active user. -->
 
-These tutorials take you by the hand through a series of steps to create a Chatbot application.
+These tutorials take you by the hand through a series of steps to create a chatbot application.
 
 ## Build your first chatbot with wechaty
 
-If you are a total beginner to Wechaty or Chatbot application development in general, we recommend you start from the [Getting started](getting-started/overview.mdx) tutorials. In these tutorials you'll be building a **ding-dong bot** which replies with a `dong` message when it recieves a `ding` message.
+If you are a total beginner to Wechaty or chatbot application development in general, we recommend you to start from the [Getting started](getting-started/overview.mdx) tutorials. In these tutorials you'll be building a **ding-dong bot** which replies with a `dong` message when it recieves a `ding` message.
 
-The fastest way to get started with Wechaty is to use a Cloud based IDE for **running the bot** to understand how it works. You can either use:
+The fastest way to get started with Wechaty is to use a Cloud based IDE for **running the bot**. To understand how it works, You can either use:
 
 - [Gitpod](getting-started/quick-start.mdx)
 - [Cloud IDE](getting-started/quick-start.mdx)
@@ -35,11 +35,11 @@ You can skip to any of them.
 
 If you have already run your ding-dong bot successfully, you can now explore some more bots with wechaty.
 
-For better understanding we have classified the bots under three categories taking you from building basic to proffesional bots.
+For better understanding we have classified the bots under three categories taking you from building basic to professional bots.
 
 ### Basic
 
-- [World's Shortest Chatbot](examples/basic/the-worlds-shortest-chatbot-code-in-6-lines.md): The very first wechaty example showcasing how easy it is to get started.
+- [World's Shortest Chatbot](examples/basic/the-worlds-shortest-chatbot-code-in-6-lines.md): The very first wechaty example showcasing how easy it is to get started
 
 - [Ding Dong bot](examples/basic/ding-dong-bot.md): Practical example demonstrating how to do message handling
 
@@ -65,7 +65,7 @@ For better understanding we have classified the bots under three categories taki
 
 - [Ctrl c signal bot](examples/professional/ctrl-c-signal-bot.md): Ctrl-C signal handling demo
 
-- [Monster bot](examples/professional/monster-bot.md): Demo that tried to include everything -- message, room, HMR & signal handling, with each handler in separated files.
+- [Monster bot](examples/professional/monster-bot.md): Demo that tried to include everything -- message, room, HMR & signal handling, with each handler in separated files
 
 - [Api ai bot](examples/professional/api-ai-bot.md): Wechaty bot that uses ApiAi.com brain
 
