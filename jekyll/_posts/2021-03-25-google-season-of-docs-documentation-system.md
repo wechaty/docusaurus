@@ -6,7 +6,6 @@ tags:
   - gsod
   - docs
   - news
-  - sticky
   - documentation
 image: /assets/2021/03-google-season-of-docs-documentation-system/doc-sys-overview.png
 ---
