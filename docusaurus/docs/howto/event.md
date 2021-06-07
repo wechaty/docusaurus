@@ -16,7 +16,7 @@ Events are functions that define the operations the bot can perform. Some common
 
 After getting familiar with the ding dong bot, this tutrial will focus on creating a bot from scratch adding various events one by one.
 
-For simplicity, this tutorial will guide you to create a bot in javascript but but you can choose between various programming languages available.  
+For simplicity, this tutorial will guide you to create a bot in javascriptbut but you can choose between various programming languages available.  
 
 ## Getting started
 
@@ -227,7 +227,7 @@ asyncio.run(MyBot().start())
 
 ### `login` Event: bot contact
 
-TODO: introducing `login` event
+The login event prompts the user that the bot has been signed in to their account on Whatsaap/Wechat or any messaging app the user is using from the puppet providers.
 
 <Tabs
   groupId="programming-languages"
@@ -262,12 +262,19 @@ await bot.start()
 <TabItem value="js">
 
 ```js
-function onLogin (bot) {
-  console.info('Bot logged in:', bot)
+const { Wechaty,ScanStatus,log } = require('wechaty')
+function onLogin (user) {
+  log.info('StarterBot', '%s login', user)
 }
 
+const bot = new Wechaty({
+    name: 'bot-name',
+  })
+
 bot.on('login', onLogin)
-await bot.start()
+bot.start()
+  .then(() => log.info('Starter Bot', 'Starter Bot logged in.'))
+  .catch(e => log.error('Login error', e))
 ```
 
 </TabItem>
@@ -339,7 +346,7 @@ asyncio.run(MyBot().start())
 
 ### `logout` Event
 
-TODO: introducing `logout` event
+The logout event is used to log out the bot from the connected account.
 
 <Tabs
   groupId="programming-languages"
@@ -367,7 +374,20 @@ TODO: introducing `logout` event
 <TabItem value="js">
 
 ```js
-// TODO: Pull Request is welcome!
+const { Wechaty,ScanStatus,log } = require('wechaty')
+function onLogout (user) {
+  log.info('Logging out', '%s logout', user)
+}
+
+const bot = new Wechaty({
+    name: 'bot-name',
+  })
+
+bot.on('logout', onLogout)
+bot.start()
+  .then(() => log.info('Starter Bot', 'Starter Bot logged out.'))
+  .catch(e => log.error('Logout error', e))
+
 ```
 
 </TabItem>
@@ -443,7 +463,7 @@ asyncio.run(start())
 
 ### `message` Event
 
-TODO: introducing `message` event
+The message event contains code to send custom replies to incoming messages. For examples the message event of the ding-dong bot is defined to send a dong for incoming ding messages'.
 
 <Tabs
   groupId="programming-languages"
@@ -478,12 +498,20 @@ await bot.start()
 <TabItem value="js">
 
 ```js
-function onMessage (message) {
-  console.info('New message:', message)
+const { Wechaty,ScanStatus,log } = require('wechaty')
+async function onMessage (msg) {
+  log.info('StarterBot', msg.toString())
+  if (msg.text() === 'Hi') {
+    await msg.say('How may I help you?')
+  }
 }
-
+const bot = new Wechaty({
+    name: 'bot-name',
+  })
 bot.on('message', onMessage)
-await bot.start()
+bot.start()
+  .then(() => log.info('Starter Bot', 'Starter Bot message.'))
+  .catch(e => log.error('error', e))
 ```
 
 </TabItem>
@@ -553,6 +581,8 @@ asyncio.run(MyBot().start())
 
 </TabItem>
 </Tabs>
+
+All logic for sending custom messages based on the input messages resides inside the message event.
 
 ### `friendship` Event: friend requests
 
