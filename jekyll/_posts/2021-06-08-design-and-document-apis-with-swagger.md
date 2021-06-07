@@ -28,7 +28,7 @@ Microsoft’s free [Visual Studio Code](https://code.visualstudio.com/) provides
 
 Once you create a yaml (or json) file and add the basic OpenAPI structure, the API icon will appear on the left and you’ll have the option to preview the documentation using _Shift+Option+P_.
 
-![](../assets/2021/06-design-and-document-apis-with-swagger/2.webp)
+![Swagger](../assets/2021/06-design-and-document-apis-with-swagger/2.webp)
 
 ## Create and edit your OpenAPI spec files
 
@@ -41,9 +41,9 @@ openapi: 3.0.0
 info:
   title: Example Task Manager Project
   description: An example API documentation for a task manager.
-  version: '1.0'
+  version: "1.0"
 servers:
-  - url: 'https://example.com/taskmanager/'
+  - url: "https://example.com/taskmanager/"
 components:
   schemas:
     Task:
@@ -51,16 +51,16 @@ components:
       properties:
         title:
           type: string
-          example: 'Buy eggs'
-          description: 'The description task to be done.'
+          example: "Buy eggs"
+          description: "The description task to be done."
         completed:
           type: boolean
           example: true
-          description: 'True or false to mark whether the task has been completed.'
+          description: "True or false to mark whether the task has been completed."
         id:
           type: integer
           example: 3
-          description: 'A unique identifier for this task.'
+          description: "A unique identifier for this task."
 
   responses:
     error:
@@ -89,14 +89,14 @@ paths:
       summary: Get tasks
       description: Get a list of tasks
       responses:
-        '200':
+        "200":
           description: OK
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Task'
+                  $ref: "#/components/schemas/Task"
   /task:
     post:
       summary: Create a task
@@ -109,7 +109,7 @@ paths:
             type: string
             example: Take the dog for a walk
       responses:
-        '200':
+        "200":
           description: OK
           content:
             application/json:
@@ -120,13 +120,13 @@ paths:
                     description: Returns the id of the new task.
                     type: integer
                     example: 23
-        '500':
-          $ref: '#/components/responses/error'
+        "500":
+          $ref: "#/components/responses/error"
     put:
       summary: Update a task
       description: Modify the task's title or its completed status.
       parameters:
-        - $ref: '#/components/parameters/task'
+        - $ref: "#/components/parameters/task"
         - name: title
           in: query
           description: The new title of the task. Leave out if you don't want to change it.
@@ -140,19 +140,19 @@ paths:
             type: boolean
             example: true
       responses:
-        '200':
+        "200":
           description: OK
-        '500':
-          $ref: '#/components/responses/error'
+        "500":
+          $ref: "#/components/responses/error"
     delete:
       summary: Delete a task
       description: Removes a task completely.
-      parameters: [$ref: '#/components/parameters/task']
+      parameters: [$ref: "#/components/parameters/task"]
       responses:
-        '200':
+        "200":
           description: OK
-        '500':
-          $ref: '#/components/responses/error'
+        "500":
+          $ref: "#/components/responses/error"
 ```
 
 OpenAPI allows you to specify in detail the requests, endpoints, responses, and data types of your API. You can also define reusable components that you can then reference several times in your specs (to limit repeating yourself).
@@ -181,7 +181,7 @@ redoc-cli serve ~/path/to/your/openapi.yaml --watch
 
 You can also automatically generate documentation using your CI — if you use Gitlab, then you can set it up easily so that docs are generated and published to Gitlab Pages using Gitlab’s shared runners.
 
-![](../assets/2021/06-design-and-document-apis-with-swagger/3.webp)
+![Swagger](../assets/2021/06-design-and-document-apis-with-swagger/3.webp)
 
 ## What’s next
 
