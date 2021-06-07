@@ -28,7 +28,7 @@ Microsoft’s free [Visual Studio Code](https://code.visualstudio.com/) provides
 
 Once you create a yaml (or json) file and add the basic OpenAPI structure, the API icon will appear on the left and you’ll have the option to preview the documentation using _Shift+Option+P_.
 
-![Swagger](/../assets/2021/06-design-and-document-apis-with-swagger/2.png)
+<img src="../assets/2021/06-design-and-document-apis-with-swagger/2.webp" />
 
 ## Create and edit your OpenAPI spec files
 
@@ -181,7 +181,7 @@ redoc-cli serve ~/path/to/your/openapi.yaml --watch
 
 You can also automatically generate documentation using your CI — if you use Gitlab, then you can set it up easily so that docs are generated and published to Gitlab Pages using Gitlab’s shared runners.
 
-![Swagger](/../assets/2021/06-design-and-document-apis-with-swagger/3.png)
+<img src="../assets/2021/06-design-and-document-apis-with-swagger/3.webp" />
 
 ## What’s next
 
