@@ -168,7 +168,7 @@ async function main () {
 ``` Typescript
 /**
  * Wechaty - WeChat Bot SDK for Personal Account, Powered by TypeScript, Docker, and 💖
- *  - https://github.com/chatie/wechaty
+ *  - https://github.com/wechaty/wechaty
  */
 import { FileBox } from 'file-box'
 import {
