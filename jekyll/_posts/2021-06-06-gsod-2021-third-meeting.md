@@ -51,7 +51,7 @@ Total 12 attendees attended the meeting. They are:
 - [0:00:20](https://youtu.be/GE4Kq0JSdYE?t=20) 1. Week Summaries
 - [0:15:10](https://youtu.be/GE4Kq0JSdYE?t=910) 2. Discussion about the scope and size of PRs
 - [0:19:07](https://youtu.be/GE4Kq0JSdYE?t=1147) 3. Explanation for not updating the Wechaty follow-ups
-- [0:20:25](https://youtu.be/GE4Kq0JSdYE?t=1227) 4. Presentation on things you should remember when you are documenting
+- [0:20:25](https://youtu.be/GE4Kq0JSdYE?t=1227) 4. Presentation by Simin on things you should remember when you are documenting
 - [0:29:00](https://youtu.be/GE4Kq0JSdYE?t=1740) 5. Questions & Comments
 
 You can learn more from our [meeting notes][meeting_notes].
