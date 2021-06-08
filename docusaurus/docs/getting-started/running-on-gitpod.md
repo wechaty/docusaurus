@@ -2,11 +2,11 @@
 title: Running on Gitpod
 ---
 
-If you are total begginer to wechaty this tutorial will guide you how to run the [Ding Dong bot](https://github.com/wechaty/wechaty-getting-started/blob/master/examples/ding-dong-bot.ts) from the [Wechaty Getting Started](https://github.com/wechaty/wechaty-getting-started) GitHub repository directly on the browser using **Gitpod**.
+If you are total beginner to wechaty this tutorial will guide you how to run the [Ding Dong bot](https://github.com/wechaty/wechaty-getting-started/blob/master/examples/ding-dong-bot.ts) from the [Wechaty Getting Started](https://github.com/wechaty/wechaty-getting-started) GitHub repository directly on the browser using **Gitpod**.
 
 Gitpod is an online and open source platform for automated and ready-to-code development environments.
 
-Follow the steps below to get started.
+Follow the steps below to get started:
 
 1. **Click** the button below to access a complete setup of [Wechaty Getting Started](https://github.com/wechaty/wechaty-getting-started/blob/master/examples/ding-dong-bot.ts) **ding-dong BOT** project on gitpod.
 
@@ -19,7 +19,7 @@ Follow the steps below to get started.
 
   ![sign in](../../static/img/docs/getting-started/quick-start/gitpod/gitpod-signin.png)
 
-1. After logging in with your github account you have to create a workspace by clicking on **New Workspace** button.
+1. After logging in with your github account, you have to create a workspace by clicking on **New Workspace** button.
 
   ![create-workspace](../../static/img/docs/getting-started/quick-start/gitpod/create-workspace.png)
 
