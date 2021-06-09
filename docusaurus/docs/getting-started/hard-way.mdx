@@ -13,9 +13,9 @@ import ShortestChatbots from '../polyglot/transclusions/shortest-chatbots.mdx'
 For running Ding Dong Bot, you can setup your own server for running locally. Just follow the steps below:
 
 1. Getting Started
-2. Clone the [Ding Dong Bot](https://github.com/shwetalsoni/ding-dong-bot) repository
-3. Install dependencies
-4. Run the bot
+1. Clone the [Ding Dong Bot](https://github.com/wechaty/wechaty-getting-started) repository
+1. Install dependencies
+1. Run the bot
 
 ## Try out the bot
 
@@ -52,7 +52,7 @@ then you need to install the latest version of `Node.js` by following the links 
 * [Windows](https://nodejs.org/en/download/package-manager/#windows)
 * [Linux\(Debian/Ubuntu\)](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
 * [macOS](https://nodejs.org/en/download/package-manager/#macos)
-with Wechat/WhatsApp app
+
 > Installation guide for `Node.js` in other platforms can be found [here](https://nodejs.org/en/download/package-manager/).
 
 :::
@@ -100,11 +100,11 @@ choco install make
 
 ### 2. Clone repository
 
-You can clone the [Ding Dong Bot](https://github.com/shwetalsoni/ding-dong-bot) repository by following the below command, and navigate to the directory:
+You can clone the [Ding Dong Bot](https://github.com/wechaty/wechaty-getting-started) repository by following the below command, and navigate to the directory:
 
 ```bash
-git clone https://github.com/shwetalsoni/ding-dong-bot
-cd ding-dong-bot
+git clone https://github.com/wechaty/wechaty-getting-started
+cd wechaty-getting-started
 ```
 
 ### 3. Install dependencies
@@ -221,7 +221,6 @@ This will generate a `package.json` file containing these:
 For building the ding dong bot you will require these dependencies:
 
 * [wechaty](https://www.npmjs.com/package/wechaty): Official Wechaty package
-* [wechaty-plugin-contrib](https://www.npmjs.com/package/wechaty-plugin-contrib): JavaScript function that returns a function which accepts a Wechaty instance
 * [dotenv](https://www.npmjs.com/package/dotenv): For loading environment variables from .env file to process.env
 * [qrcode-terminal](https://www.npmjs.com/package/qrcode-terminal): Displays the QR code
 
@@ -230,7 +229,6 @@ For building the ding dong bot you will require these dependencies:
   "dotenv": "^8.2.0",
   "qrcode-terminal": "^0.12.0",
   "wechaty": "^0.60.3",
-  "wechaty-plugin-contrib": "^0.14.16"
 }
 ```
 You will also need to add dependencies for using any [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/) 
@@ -262,7 +260,6 @@ After adding few more required dependencies, `package.json` file will look like 
     "dotenv": "^8.2.0",
     "qrcode-terminal": "^0.12.0",
     "wechaty": "^0.60.3",
-    "wechaty-plugin-contrib": "^0.14.16"
   },
   "devDependencies": {
     "@chatie/eslint-config": "^0.12.3",
