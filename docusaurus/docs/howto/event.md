@@ -72,7 +72,7 @@ The <i>PUPPET-PROVIDER</i> represents the messaging platform you want to integra
 <li> For whatsaap:</li>
 
 ```bash
-export WECHATY_PUPPET=wechaty-puppet-whatsaap
+export WECHATY_PUPPET=wechaty-puppet-whatsapp
 ```
 
 <li>For wechat</li>
@@ -136,11 +136,17 @@ await bot.start()
 
 ```ts
 const { Wechaty,ScanStatus,log } = require('wechaty')
-
-async function onScan (qrcode,status)
- {
-  console.info('Scan QR Code to login, status:', status, ScanStatus[status])
-  console.info('https://wechaty.js.org/qrcode/' + encodeURIComponent(qrcode))
+function onScan (qrcode, status) {
+  if (status === ScanStatus.Waiting || status === ScanStatus.Timeout) {
+    require('qrcode-terminal').generate(qrcode, { small: true })  // show qrcode on console
+    const qrcodeImageUrl = [
+      'https://wechaty.js.org/qrcode/',
+      encodeURIComponent(qrcode),
+    ].join('')
+    log.info('StarterBot', 'onScan: %s(%s) - %s', ScanStatus[status], status, qrcodeImageUrl)
+  } else {
+    log.info('StarterBot', 'onScan: %s(%s)', ScanStatus[status], status)
+  }
 }
 
 const bot = new Wechaty({
