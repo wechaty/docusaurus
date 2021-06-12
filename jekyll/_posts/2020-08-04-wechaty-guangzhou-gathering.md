@@ -11,7 +11,7 @@ image: /assets/2020/wechaty-guangzhou-gathering/pic1.jpg
 > Author: [Alfred Huang](https://github.com/fish-ball/)
 > Code: [Github](https://github.com/fish-ball/wechaty.js.org)
 
-[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/chatie/wechaty)
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ## 题记
