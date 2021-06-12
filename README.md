@@ -132,7 +132,7 @@ At the same time, we also meet up offline all over the world. Here are some acti
 
 ### How To Contribute To the Documentation
 
-1. Fork this repository
+1. Fork this repository: `https://github.com/wechaty/wechaty.js.org`
 2. Create your documentation branch: `git checkout -b branch-name`
 3. Make changes to the documentation in markdown
 4. Add changes to the staging area `git add .`
