@@ -104,8 +104,6 @@ image: /assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddl
 
 (温馨提示: 免费的token有效期为7天，如需使用有效期更长的token，请访问wechaty官网: [https://wechaty.js.org/](https://wechaty.js.org/))
 
-或者使用UUID，链接: [https://www.uuidgenerator.net/version4](https://www.uuidgenerator.net/version4)
-
 ```python
 >>> apt update
 
@@ -128,7 +126,7 @@ image: /assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddl
 
 ### 1.19 检查是否运行成功
 
-- 输入网址: <https://api.chatie.io/v0/hosties/your_token_at_here>，例如我输入的地址就是这个: <https://api.chatie.io/v0/hosties/puppet_padlocal_ef0c112ddf9b49fdaa8242b87b83b030>
+- 输入网址: https://api.chatie.io/v0/hosties/your_token_at_here，例如我输入的地址就是这个: https://api.chatie.io/v0/hosties/puppet_padlocal_ef0c112ddf9b49fdaa8242b87b83b030
 - 如果返回了服务器的ip地址以及端口号，比如{"ip":"121.43.228.90","port":8080}，就说明运行成功了，如果返回的是{"ip":"0.0.0.0","port":0}，就说明没有运行成功
 ![1-19](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-19.png)
 

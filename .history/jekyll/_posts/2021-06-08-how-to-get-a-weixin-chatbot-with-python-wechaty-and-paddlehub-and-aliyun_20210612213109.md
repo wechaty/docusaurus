@@ -32,11 +32,11 @@ image: /assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddl
 
 ![1-1-2](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-1-2.jpg)
 
-### 1.2 点击底部的"免费试用"
+### 1.2 点击底部的免费试用
 
 ![1-2](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-2.jpg)
 
-### 1.3 点击右下角"了解试用"
+### 1.3 点击右下角了解试用
 
 ![1-3](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-3.jpg)
 
@@ -44,7 +44,7 @@ image: /assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddl
 
 ![1-4](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-4.jpg)
 
-### 1.5 选择操作系统为Ubuntu, 点击"立即购买"
+### 1.5 选择操作系统为Ubuntu, 点击立即购买
 
 ![1-5](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-5.jpg)
 
@@ -60,23 +60,23 @@ image: /assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddl
 
 ![1-8](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-8.jpg)
 
-### 1.9 点击"安全组"
+### 1.9 点击安全组
 
 ![1-9](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-9.png)
 
-### 1.10 点击"配置规则"
+### 1.10 点击配置规则
 
 ![1-10](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-10.png)
 
-### 1.11 点击"手动添加", "目的"栏填入8080/8080, "源"栏填入0.0.0.0/0, 点击"保存"
+### 1.11 点击手动添加, "目的"栏填入8080/8080, "源"栏填入0.0.0.0/0, 点击保存
 
 ![1-11](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-11.png)
 
-### 1.12 回到刚才的页面, 点击"远程连接"
+### 1.12 回到刚才的页面, 点击远程连接
 
 ![1-12](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-12.png)
 
-### 1.13 点击"立即登录"
+### 1.13 点击立即登录
 
 ![1-13](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-13.png)
 
@@ -84,7 +84,7 @@ image: /assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddl
 
 ![1-14](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-14.png)
 
-### 1.15 点击"重置实例密码"
+### 1.15 点击重置实例密码
 
 ![1-15](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-15.png)
 
@@ -103,8 +103,6 @@ image: /assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddl
 免费token申请地址: [http://pad-local.com](http://pad-local.com)
 
 (温馨提示: 免费的token有效期为7天，如需使用有效期更长的token，请访问wechaty官网: [https://wechaty.js.org/](https://wechaty.js.org/))
-
-或者使用UUID，链接: [https://www.uuidgenerator.net/version4](https://www.uuidgenerator.net/version4)
 
 ```python
 >>> apt update
@@ -128,7 +126,7 @@ image: /assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddl
 
 ### 1.19 检查是否运行成功
 
-- 输入网址: <https://api.chatie.io/v0/hosties/your_token_at_here>，例如我输入的地址就是这个: <https://api.chatie.io/v0/hosties/puppet_padlocal_ef0c112ddf9b49fdaa8242b87b83b030>
+- 输入网址: https://api.chatie.io/v0/hosties/your_token_at_here，例如我输入的地址就是这个: https://api.chatie.io/v0/hosties/puppet_padlocal_ef0c112ddf9b49fdaa8242b87b83b030
 - 如果返回了服务器的ip地址以及端口号，比如{"ip":"121.43.228.90","port":8080}，就说明运行成功了，如果返回的是{"ip":"0.0.0.0","port":0}，就说明没有运行成功
 ![1-19](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-19.png)
 
@@ -140,13 +138,13 @@ image: /assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddl
 
 ![1-21](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-21.png)
 
-### 1.22 点击"登录"，"继续登录"
+### 1.22 点击**登录**，**继续登录**
 
 ![1-22-1](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-22-1.jpg)
 
 ![1-22-2](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-22-2.jpg)
 
-### 1.23 会看到最上面有一个"桌面微信已登录"就说明成功啦
+### 1.23 会看到最上面有一个**桌面微信已登录**就说明成功啦
 
 ![1-23](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-23.jpg)
 
@@ -158,11 +156,11 @@ AI Studio官网地址: [https://aistudio.baidu.com/aistudio/index](https://aistu
 
 ![2-1](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/2-1.png)
 
-#### 2.1.1 点击"下一步"
+#### 2.1.1 点击**下一步**
 
 ![2-1-1](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/2-1-1.png)
 
-#### 2.1.2 填好项目名称，项目标签，项目描述，点击"创建"
+#### 2.1.2 填好项目名称，项目标签，项目描述，点击**创建**
 
 ![2-1-2](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/2-1-2.png)
 
@@ -265,7 +263,7 @@ asyncio.run(main())
 
 ### 2.4 运行任务
 
-#### 2.4.1 启动命令填`sh run.sh`, 点击"提交"
+#### 2.4.1 启动命令填`sh run.sh`, 点击**提交**
 
 ![2-4-1](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/2-4-1.png)
 
@@ -273,7 +271,7 @@ asyncio.run(main())
 
 ![2-4-2](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/2-4-2.png)
 
-#### 2.4.3 任务要排队，等一小会儿看到在执行中了就可以点击"查看日志"了
+#### 2.4.3 任务要排队，等一小会儿看到在执行中了就可以点击**查看日志**了
 
 ![2-4-3](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/2-4-3.png)
 
