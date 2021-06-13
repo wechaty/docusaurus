@@ -1,5 +1,5 @@
 ---
-title: 'Listening events'
+title: 'Adding events and Customising a bot'
 ---
 
 <!-- MDX import -->
