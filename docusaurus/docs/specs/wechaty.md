@@ -3,7 +3,7 @@ title: Wechaty Environment Variables
 sidebar_label: Wechaty
 ---
 
-Wechaty has different environment variables that need to be set for successful implementation of the bot.This section is dedicated to describe  the various envirnoment variables provided by Wechaty.
+Wechaty requires different environment variables to implement the bot. In this section, you will learn how to use the various environment variables.
 
 ## Environment Variables
 
