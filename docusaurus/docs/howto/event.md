@@ -1,5 +1,5 @@
 ---
-title: 'Adding events and Customising a bot'
+title: 'Add events and Customise a bot'
 ---
 
 <!-- MDX import -->

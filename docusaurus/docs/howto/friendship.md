@@ -1,5 +1,5 @@
 ---
-title: 'Send and Accept friend requests'
+title: 'Send and accept friend requests'
 ---
 
 import Tabs from '@theme/Tabs'

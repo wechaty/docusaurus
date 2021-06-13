@@ -1,5 +1,5 @@
 ---
-title: 'Getting started'
+title: 'Get started'
 ---
 
 This will be a step by step guide on how to run the bot on most popular messaging apps, Whatsapp and Wechat:

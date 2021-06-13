@@ -1,5 +1,5 @@
 ---
-title: 'Dealing with message'
+title: 'Deal with messages'
 ---
 
 import Tabs from '@theme/Tabs'
