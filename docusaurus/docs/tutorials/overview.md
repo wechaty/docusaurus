@@ -15,7 +15,7 @@ If you are a total beginner to Wechaty or chatbot application development in gen
 The fastest way to get started with Wechaty is to use a Cloud based IDE for **running the bot**. To understand how it works, You can either use:
 
 - [Gitpod](getting-started/quick-start.mdx)
-- [Cloud IDE](getting-started/quick-start.mdx)
+- [Google Cloud Shell](getting-started/quick-start.mdx)
 
 If you are a total begginer then we recommend using **Gitpod**.
 
