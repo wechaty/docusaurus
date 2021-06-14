@@ -16,7 +16,7 @@ Wechaty Puppet Service Token Gateway is a gateway for converting the Wechaty Pup
 
 ## Starting Wechaty Puppet Servcie Token Gateway
 
-After the docker image has been created use a docker command  to start the Wechaty Puppet Service Token Gateway with the below configuration:
+After the docker image has been created, use a docker command  to start the Wechaty Puppet Service Token Gateway with the below configuration:
 
 ```docker run -ti --rm \
   \
