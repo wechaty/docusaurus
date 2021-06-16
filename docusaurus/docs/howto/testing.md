@@ -1,5 +1,5 @@
 ---
-title: 'Writing tests'
+title: 'Write tests'
 ---
 
 [![NPM Version](https://badge.fury.io/js/wechaty-puppet-mock.svg)](https://badge.fury.io/js/wechaty-puppet-mock)

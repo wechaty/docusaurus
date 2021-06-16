@@ -1,5 +1,5 @@
 ---
-title: 'Processing files'
+title: 'Send and receive files'
 ---
 
 import Tabs from '@theme/Tabs'

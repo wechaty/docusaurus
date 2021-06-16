@@ -126,6 +126,45 @@ const gettingStarted: SubMenuData = {
   ],
 }
 
+const addevents: SubMenuData = {
+  label: 'Add events to the bot',
+  items: [
+    'howto/starter',
+    'howto/event',
+  ],
+}
+
+const addfunctionalities: SubMenuData = {
+  label: 'Add functionality to the bot',
+  items: [
+    'howto/message',
+    'howto/contact',
+    'howto/room',
+    'howto/friendship',
+    'howto/file-box',
+  ],
+}
+
+const deployonim: SubMenuData = {
+  label: 'Deploy on IM platform',
+  items: [
+    'howto/deploy-in-wechat',
+    'howto/deploy-in-whatsapp',
+    'howto/deploy-in-wecom',
+    'howto/deploy-in-gitter',
+    'howto/deploy-in-lark',
+    'howto/deploy-in-ding-dong',
+  ],
+}
+
+const deploycontainer: SubMenuData = {
+  label: 'Deploy with containers',
+  items: [
+    'howto/deploy-with-heroku',
+    'howto/deploy-with-docker',
+  ],
+}
+
 const community: SubMenuData = {
   label: 'Community',
   items: [
@@ -274,15 +313,11 @@ const howtos = {
   label: 'How-to Guides',
   items: [
     'howto/overview',
-    'howto/install',
-    'howto/wechaty',
-    'howto/event',
-    'howto/message',
-    'howto/contact',
-    'howto/room',
-    'howto/friendship',
-    'howto/file-box',
-    'howto/testing',
+    subMenu(addevents),
+    subMenu(addfunctionalities),
+    subMenu(deployonim),
+    subMenu(deploycontainer),
+    'howto/faq',
   ],
 }
 
