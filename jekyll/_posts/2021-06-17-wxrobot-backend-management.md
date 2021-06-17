@@ -283,11 +283,11 @@ pm2 start pm2.config.js --env production
 
 6.`CentOS` 安装 `better-sqlite3` 报错的问题
 
-- 首先执行 sudo yum install centos-release-scl-rh，sudo yum install devtoolset-8-build 这两个方法
-- 安装相应的gdb，sudo yum install devtoolset-8-gdb
-- 同样，也可以安装相应版本的 gcc 和 g++，sudo yum install devtoolset-8-gcc devtoolset-8-gcc-c++
-- yum安装完后，原来的gcc不覆盖，所以需要执行enable脚本更新环境变量，sudo source /opt/rh/devtoolset-8/enable
-- 可以通过加入到profile里面开机自动source, vim /etc/profile, 跳到最后一行加入以下内容，source /opt/rh/devtoolset-8/enable
+- 首先执行 `sudo yum install centos-release-scl-rh，sudo yum install devtoolset-8-build` 这两个方法
+- 安装相应的gdb，`sudo yum install devtoolset-8-gdb`
+- 同样，也可以安装相应版本的 gcc 和 g++，`sudo yum install devtoolset-8-gcc devtoolset-8-gcc-c++`
+- yum安装完后，原来的gcc不覆盖，所以需要执行enable脚本更新环境变量，`sudo source /opt/rh/devtoolset-8/enable`
+- 可以通过加入到profile里面开机自动`source, vim /etc/profile`, 跳到最后一行加入以下内容，`source /opt/rh/devtoolset-8/enable`
 - 参考文章 [better-sqlite3](https://www.cnblogs.com/clwsec/p/12493653.html)
 
 ## 感谢
