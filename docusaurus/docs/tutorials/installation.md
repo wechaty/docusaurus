@@ -2,7 +2,7 @@
 title: 'Installation'
 ---
 
-Before diving into the tutorials, you will need to install a few build tools. This guide will show you complete installation process of the minimum tools required to start building your own bots.
+Before diving into the tutorials, you will need to install a few build tools. This guide will show you complete installation process of the minimum tools required to start building your own bots. If you have already installed `Node.js` **12.0** or higher, then go to [Install Wechaty](#install-wechaty).
 
 ## Install Node.js
 
@@ -34,81 +34,10 @@ You can check your `npm` version by using:
 npm -v
 ```
 
-## Update Node.js and npm
+If your `Node.js` version is not **12.0** or greater, you can update `Node.js` and `npm` to their latest stable version by following instructions in the links below:
 
-Though `Node.js` and `npm` are installed together, they are separate projects and require to be updated separately.
-
-### Update Node.js
-
-To update `Node.js` you can follow the steps mentioned below:
-
-#### Linux
-
-The best way to update `Node.js` on **Linux** is by using [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm). It's a tool for managing multiple `Node.js` versions.
-
-1. Update the Linux package repository:
-
-    ```sh
-    sudo apt update
-    ```
-
-2. Download the following dependencies:
-
-    ```sh
-    sudo apt install build-essential checkinstall libssl-dev
-    ```
-
-3. Install **NVM** using the curl command:
-
-    ```sh
-    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.1/install.sh | bash
-    ```
-
-4. Close and reopen the **terminal**.
-
-5. Verify if NVM is successfully installed:
-
-    ```sh
-    nvm --version
-    ```
-
-6. Now you can check for newly available releases using:
-
-    ```sh
-    nvm ls-remote
-    ```
-
-7. To install the latest version, use the `nvm` command with the specific `Node.js` version:
-
-    ```sh
-    nvm install [version.number]
-    ```
-
-#### Windows and macOS
-
-The best way to update `Node.js` on **Windows** and **macOS** is by going to the official download page and install the latest release, the system should overwrite the older version with the updated one.
-
-![Node.js Downloads page](../../static/img/docs/tutorials/installation/node_update.png)
-
-1. Go to the [Downloads page of Node.js](https://nodejs.org/en/download/), you can choose between **LTS** (recommended) and **Current** release.
-
-2. Click on either **Windows Installer** or **macOS Installer** depending on your system, and download the latest version.
-
-3. Once the download is complete, run the installer and follow the steps to get it installed.
-
-4. Now, check the version once more to verify you are on the latest version:
-
-   ```sh
-   node -v
-   ```
-
-### Update npm
-
-To update `npm` you can just run the following command:
-
-```sh
-npm install npm@latest -g
-```
+* [Get the latest stable version of node](https://docs.npmjs.com/try-the-latest-stable-version-of-node)
+* [Get the latest stable version of npm](https://docs.npmjs.com/try-the-latest-stable-version-of-npm)
 
 ## Install Wechaty
 
@@ -117,7 +46,7 @@ In order to use **Wechaty** in your `Node.js` project, you need to install it in
 1. Navigate to your project directory:
 
    ```sh
-   cd node/proj/dir
+   cd <your wechaty dir>
    ```
 
 2. Install `wechaty` using:
