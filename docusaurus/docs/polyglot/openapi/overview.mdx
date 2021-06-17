@@ -5,14 +5,14 @@ sidebar_label: OpenAPI
 ---
 
 export const Highlight = ({ children, color }) => (
- <span
- style={{
+<span
+style={{
  color: color,
  }}
- >
- {children}
- </span>
-);
+
+> {children}
+> </span>
+> );
 
 [![Wechaty OpenAPI](https://img.shields.io/badge/Wechaty-OpenAPI-6a4)](https://github.com/wechaty/openapi)
 
@@ -27,12 +27,7 @@ export const Highlight = ({ children, color }) => (
 
 #### What Is OpenAPI?
 
-OpenAPI Specification (formerly Swagger Specification) is an API description format for REST APIs. An OpenAPI file allows you to describe your entire API, including:
-
-- The available endpoints (<Highlight color="#e83e8c">/users</Highlight>) and operations on each endpoint (<Highlight color="#e83e8c">GET /users</Highlight>, <Highlight color="#e83e8c">POST /users</Highlight>).
-- The operation parameters Input and output for each operation
-  Authentication methods.
-- The contact information, license, terms of use, and other information.
+OpenAPI Specification (formerly Swagger Specification) is an API description format for REST APIs. An OpenAPI file allows you to describe your entire API, including available Endpoints (<Highlight color="#e83e8c">/users</Highlight>) and operations on each endpoint (<Highlight color="#e83e8c">GET /users</Highlight>, <Highlight color="#e83e8c">POST /users</Highlight>), Operation parameters Input and Output for each operation Authentication methods, and the contact information, license, terms of use, and other information.
 
 API specifications can be written in YAML or JSON. The format is easy to learn and readable to both humans and machines. The complete OpenAPI Specification can be found on GitHub: OpenAPI 3.0 Specification.
 
