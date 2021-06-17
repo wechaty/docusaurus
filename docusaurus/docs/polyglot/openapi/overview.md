@@ -26,6 +26,58 @@ Read blogs with the `openapi` tag at <https://wechaty.js.org/tags.html#openapi>
 
 ## History
 
+## Learning Resources
+
+Learn what’s new in OpenAPI 3.0, and see what the latest release means for the Swagger tools that support it.
+
+[Learn more](https://swagger.io/blog/announcing-openapi-3-0/)
+
+#### **[Product Update: Design and Document APIs with OpenAPI 3.0](https://swaggerhub.com/blog/news/openapi-3-0-swaggerhub-support/)**
+
+SwaggerHub is one of the first API design and documentation platforms to offer support for OpenAPI 3.0. You can also convert existing 2.0 specs to the latest version of OpenAPI. Learn how to get started with OpenAPI 3.0 in SwaggerHub.
+
+[Learn more about OAS 3.0 support in SwaggerHub.](https://swaggerhub.com/blog/news/openapi-3-0-swaggerhub-support/)
+
+#### **[Tutorial: Learning the New OpenAPI Specification](https://swagger.io/docs/specification/about/)**
+
+You can find documentation for OpenAPI 3.0 and Swagger 2.0 Specification on Swagger.io. The updated documentation includes a detailed look at the updated structure and new features in the 3.0 specification.
+
+[Learn the new specification.](https://swagger.io/docs/specification/about/)
+
+#### **[OpenAPI 3.0, And What It Means for the Future of Swagger [Recorded Webinar]](https://swaggerhub.com/blog/api-resources/openapi-3-0-video-tutorial/)**
+
+In this training, you take a look at the newest improvements to OpenAPI 3.0. Ron Ratovsky, Swagger Developer Evangelist and member of the OAI TSC, covers major updates like improvement reusability, parameter changes, content negotiation support, support for describing callbacks, links, improved examples, and enhanced security definitions.
+
+[Learn more about the newest features in OAS 3.0.](https://swaggerhub.com/blog/api-resources/openapi-3-0-video-tutorial/)
+
+#### **[OpenAPI 3.0: How to Design and Document APIs with the Latest OpenAPI Specification [Recorded Webinar]](https://swaggerhub.com/blog/api-design/openapi-3-0-specification-training/)**
+
+This training provides a live demonstration of defining a new API using OpenAPI 3.0 in SwaggerHub. See the new structure of OpenAPI in action, and see a live demo of how you can use the SwaggerHub editor to define and visualize your APIs documentation using OpenAPI 3.0.
+
+[Learn more about designing and documenting APIs with OAS 3.0.](https://swaggerhub.com/blog/api-design/openapi-3-0-specification-training/)
+
+#### **[What Is the Difference Between Swagger and OpenAPI?](https://swagger.io/blog/difference-between-swagger-and-openapi/)**
+
+OpenAPI is the official name of the specification. The development of the specification is fostered by the OpenAPI Initiative, which involves more the 30 organizations from different areas of the tech world — including Microsoft, Google, IBM, and CapitalOne. Smartbear Software, which is the company that leads the development of the Swagger tools, is also a member of the OpenAPI Initiative, helping lead the evolution of the specification.
+
+[Learn more about the difference between OpenAPI and Swagger.](https://swaggerhub.com/blog/api-design/openapi-3-0-specification-training/)
+
+#### **[The State of The OpenAPI Specification: A Conversation with Darrel Miller, OAI TSC](https://swagger.io/blog/openapi-specification-overview/)**
+
+Keshav Vasudevan, product marketing manager for Swagger/SwaggerHub at SmartBear, sat down with Darrel Miller, Technical Steering Committee (TSC) of the OAI, at APIStrat 2017 to discuss the latest in OpenAPI and the current state of the project.
+
+[Read the full conversation.](https://swagger.io/blog/openapi-specification-overview/)
+
+#### **Additional Resources**
+
+Since the release of OpenAPI 3.0, there have been a number of valuable resources put out from around the API space to help teams learn and adopt the new OpenAPI 3.0 Specification. Here are some of our favorites from other API organizations and practitioners:
+
+- [OpenAPI 3.0 Official GitHub Repository](https://github.com/OAI/OpenAPI-Specification) — The OpenAPI Initiative
+- [OpenAPI 3.0 Tutorial Overview](https://idratherbewriting.com/learnapidoc/pubapis_openapi_tutorial_overview) — IdRatherBeWriting.com
+- [OpenAPI Visual Documentation](https://apihandyman.io/openapi-visual-documentation-updated-with-3.0.0-rc0/) — APIHandyman.com
+
+#### **[Announcing the Official Release of OpenAPI 3.0](https://swagger.io/blog/announcing-openapi-3-0/)**
+
 ## Maintainers
 
 - [@huan](https://wechaty.js.org/contributors/huan)
