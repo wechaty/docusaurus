@@ -66,32 +66,6 @@ Wechaty.instance()
 
 首先跑一个示例看看  [wechaty-getting-started](https://github.com/wechaty/wechaty-getting-started)。下载完之后先 `npm install & npm start` 一顿操作，然后运行就有了登录二维码，拿出手机扫码，然后 GG。
 
-## 基于 Web 微信的限制
-
-查找资料 [基于nodejs + wachaty开发微信机器人平台](https://juejin.im/post/6844904158886117383)，发现已经有大佬踩过坑了。
-
-原来2017年之后注册的微信号都无法登录网页版微信，而2017年之前注册得微信账号也有很大几率登录不上，找朋友试了也都不行。
-
-检验你的微信号是否支持网页微信登录：
-
-<http://wx.qq.com>
-
-点击链接链接，PC端进入然后手机扫码登录，若是可以登上，即可以使用上述示例
-
-然后又去看了 vbot 和 itchat，但发现也都是是基于网页协议实现的
-
-从网上查资料，大概有一下几种实现方式：
-
-- Web网页端：2017年后不再支持新号登录，仅支持老号，并且掉线严重，功能缺失严重
-- Xposed技术：在2019年6月份，微信官方在行业重点打击Xposed，自此行业内一片哀嚎遍野，陆续向iPad/MAC协议转型。具体案例请点击
-- PC Hook：代码注入型，也就是逆向开发。封号情况偏多，使用容易出现追封，公司大规模封号等情况，且目前在营销行业使用率较少，比较偏小团队使用
-- 模拟机：延迟高、消息实时到达率低、模拟人为操作效率慢、功能偏少，承担不了商业化功能
-- ipad协议：安全性较好，功能满足，行业占有率高，但具有能力研发人员偏少，基本两三个团队研发，且目前已有团队解散，部分微信号段登录失败、且通过grpc,mmtls研发，被检测几率存在
-- MAC协议：安全性相比iPad协议更好，功能性相比ipad协议少些，行业内具有研发能力更少，安全性、稳定性比较优秀，不会出现追封、批量封的情况
-- 混合通道：微信内部通道，最高权限，基于MAC与Ipad协议，非grpc,mmtls，功能合适，微信正版通道，不会出现技术封号问题
-
-看了看，内部通道是不可能的，只有ipad协议个mac协议目前最好了
-
 ## wechaty-puppet
 
 ~~使用 [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus) 一套基于 ipad 协议的包。~~
@@ -292,9 +266,9 @@ pm2 start pm2.config.js --env production
 
 ## 感谢
 
-[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/chatie/wechaty)
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 - 感谢 [beclass](https://github.com/beclass) 的开源项目 [`wxbot`](https://github.com/beclass/wxbot)，这是一套优秀的微信机器人平台。
-- 感谢 [Wechaty](https://wechaty.github.io/) 团队提供微信机器人 `SDK`，让开发者可以专注于业务代码。
+- 感谢 [Wechaty](https://wechaty.js.org) 团队提供微信机器人 `SDK`，让开发者可以专注于业务代码。
 - 感谢 [句子互动](https://www.juzibot.com) 提供的 `pad` 协议版 `token`。
