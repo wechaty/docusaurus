@@ -76,8 +76,6 @@ Since the release of OpenAPI 3.0, there have been a number of valuable resources
 - [OpenAPI 3.0 Tutorial Overview](https://idratherbewriting.com/learnapidoc/pubapis_openapi_tutorial_overview) — IdRatherBeWriting.com
 - [OpenAPI Visual Documentation](https://apihandyman.io/openapi-visual-documentation-updated-with-3.0.0-rc0/) — APIHandyman.com
 
-#### **[Announcing the Official Release of OpenAPI 3.0](https://swagger.io/blog/announcing-openapi-3-0/)**
-
 ## Maintainers
 
 - [@huan](https://wechaty.js.org/contributors/huan)
