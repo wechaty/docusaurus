@@ -311,6 +311,7 @@ const explainations = {
     'explainations/lifecycle',
     'explainations/alternatives',
     'explainations/glossary',
+    'explainations/devops-tools',
     'explainations/faq',
     'explainations/troubleshooting',
     subMenu(docusaurus),
