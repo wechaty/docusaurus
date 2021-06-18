@@ -78,7 +78,7 @@ First of all, add the `wechaty` dependency to the `package.json` file:
 
 For integrating the bot with any instant messaging (IM) systems (such as WeChat, WhatsApp, and Gitter), you have to add the respective [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/) under `devDependencies`:
 
-```
+```json
 "devDependencies": {
   "wechaty-puppet-mock": "^0.28.2",
   "wechaty-puppet-wechat": "^0.28",
@@ -204,9 +204,9 @@ bot.use(EventLogger())
 bot.start()
 ```
 
-Congratulations, You have successfully integrated the `EventLogger` plugin to your Wechaty bot. If you run the bot it will start logging the events:
+Congratulations! You have successfully integrated the `EventLogger` plugin to your Wechaty bot. If you run the bot it will start logging the events:
 
-![](../../static/img/docs/using-plugin-with-wechaty/event-logger/event-logger-output.png)
+![EventLogger plugin output](../../static/img/docs/using-plugin-with-wechaty/event-logger/event-logger-output.png)
 
 ## Conclusion
 
