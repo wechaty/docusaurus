@@ -1,6 +1,6 @@
 ---
 title: "手把手教你用python-wechaty+paddlehub+阿里云白嫖一个智能微信机器人"
-author: lovely-pig
+author: Lovely-Pig
 categories: article
 tags:
   - blog
@@ -10,7 +10,7 @@ tags:
 image: /assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/cover.jpg
 ---
 
-> 作者: [Lovely-Pig](https://github.com/Lovely-Pig/)，一只努力学习的可爱小猪
+> 作者: [Lovely-Pig](https://github.com/Lovely-Pig/)，一个热爱技术的大二学生
 
 ## 前言
 
