@@ -4,8 +4,8 @@ author: simplepad
 image: /assets/2021/06-puppet-simplepad-hello/logo.png
 categories: announcement
 tags:
-  - news
   - puppet
+  - featured
   - simplepad
   - puppet-provider
   - puppet-service
