@@ -16,7 +16,7 @@ Events are functions that define the operations the bot can perform. Some common
 
 After getting familiar with the [ding dong bot](https://wechaty.js.org/docs/examples/basic/ding-dong-bot), this guide will focus on various events of your choice.
 
-For simplicity, this guide will demonstrate in JavaScript, but you can choose between various programming languages available. 
+For simplicity, this guide will demonstrate in JavaScript, but you can choose between various programming languages available.
 
 ## Getting started
 
