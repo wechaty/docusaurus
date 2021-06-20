@@ -1,5 +1,5 @@
 ---
-title: Event Logger Plugin
+title: Event Logger plugin
 ---
 
 The `EventLogger` plugin helps in logging Wechaty events with just one line of code. In this tutorial, you will build a simple Wechaty bot and learn how to add the `EventLogger` plugin to it.
@@ -127,7 +127,7 @@ npm install
 
 This will generate a `node_modules` directory containing all the installed dependencies, and a `package-lock.json` file.
 
-### 4. Writing code for bot
+### 4. Write code for bot
 
 Create a new file called `event-logger-bot.ts` in the root project directory. Add the following to the file:
 
@@ -144,7 +144,7 @@ const bot = new Wechaty({
 bot.start()
 ```
 
-### 5. Running the bot
+### 5. Run the bot
 
 Before you can run the bot, you have to update the `scripts` present in the `package.json` file. You have to specify the `start` key with the command to run the TypeScript file, like this:
 
@@ -188,7 +188,7 @@ As the `EventLogger` plugin is present in the `wechaty-plugin-contrib` NPM packa
 npm i wechaty-plugin-contrib
 ```
 
-### 2. Integrating the plugin
+### 2. Integrate the plugin
 
 Inside the `event-logger-bot.ts` file, import the plugin:
 

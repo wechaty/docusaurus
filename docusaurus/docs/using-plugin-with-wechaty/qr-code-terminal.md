@@ -1,3 +1,3 @@
 ---
-title: QR Code Terminal Plugin
+title: QR Code Terminal plugin
 ---
