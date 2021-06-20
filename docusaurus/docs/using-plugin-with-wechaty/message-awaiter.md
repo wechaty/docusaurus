@@ -1,3 +1,3 @@
 ---
-title: Message Awaiter Plugin
+title: Message Awaiter plugin
 ---
