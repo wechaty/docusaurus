@@ -219,7 +219,6 @@ bot
       appid              : 'gh_0aa444a25adc',
       title              : '我正在使用Authing认证身份，你也来试试吧',
       pagePath           : 'routes/explore.html',
-      description        : '身份管家',
       thumbUrl           : '30590201000452305002010002041092541302033d0af802040b30feb602045df0c2c5042b777875706c6f61645f31373533353339353230344063686174726f6f6d3131355f313537363035393538390204010400030201000400',
       thumbKey           : '42f8609e62817ae45cf7d8fefb532e83',
     });
