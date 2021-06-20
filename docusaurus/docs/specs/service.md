@@ -24,7 +24,7 @@ The mechanism behind is the **Puppet Service Discovery**, which can resolve the 
     ```json
     {"ip":"0.0.0.0","port":0}
     ```
-    
+
 For the Wechaty SDK, we support the following environment variables so that the users can switch between different languages without any changes:
 
 1. `export WECHATY_PUPPET_SERVICE_TOKEN=__TOKEN__`
