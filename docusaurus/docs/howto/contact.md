@@ -1,11 +1,15 @@
 ---
-title: 'Managing contacts'
+title: 'Manage contacts'
 ---
 
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
+All wechaty contacts are encapsulated as a Contact.Example includes [Examples/Contact-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/contact-bot.ts)
+
 ## List all contacts
+
+List down all the contacts by its `id`, `name` & `Type`.
 
 <Tabs
   groupId="programming-languages"
@@ -125,9 +129,21 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
+### Explanation :
+
+* `Contact.findAll` gets the contact list of the bot and include the contacts from bot's rooms.
+
+* `contactList.length` find out the total contacts from the list.
+
+* `contact.id` gets the contact id of the friend(wechaty contacts). This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://wechaty.js.org/docs/specs/puppet/)
+
+* `contact.name` gets the name from a contact from the list.
+
+* `contact.type` return the type of the Contact from the list.
+
 ## Search in contacts
 
-`Contact.find` and `Contact.findAll` supports search by `id`, `name`, `alias`, `weixin`.
+Helps you find your contact from the list of contact.
 
 <Tabs
   groupId="programming-languages"
@@ -253,3 +269,9 @@ class MyBot(Wechaty):
 
 </TabItem>
 </Tabs>
+
+### Explanation :
+
+* `Contact.find` finds the contact by name or alias, if the result is more than one, it return the first one.
+
+* `Contact.findAll` gets the contact list of the bot and include the contacts from bot's rooms.
