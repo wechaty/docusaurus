@@ -1,5 +1,5 @@
 ---
-title: 'Add events and customising a bot'
+title: 'Add events and customise a bot'
 ---
 
 <!-- MDX import -->
@@ -12,18 +12,18 @@ The wechaty bot is available in various programming languages!
 
 :::
 
-Events are functions that define the operations the bot can perform. Some common events are login, logout, onMessage etc.
+Events are functions that define the operations the bot can perform. Some common events includes `login`, `logout`, `onMessage` etc.
 
-After getting familiar with the ding dong bot, this tutorial will focus on creating a bot from scratch adding various events one by one.
+After getting familiar with the [ding dong bot](https://wechaty.js.org/docs/examples/basic/ding-dong-bot), this guide will focus on various events of your choice.
 
-For simplicity, this tutorial will guide you to create a bot in javascript but but you can choose between various programming languages available.  
+For simplicity, this guide will demonstrate in JavaScript, but you can choose between various programming languages available. 
 
 ## Getting started
 
 <ol>
 <li>Create an empty project folder</li>
 <li> Add a bot.js file</li>
-<li>In the termial write the following command</li>
+<li>In the terminal, write the following command</li>
 
 ```bash
 npm init
@@ -31,7 +31,7 @@ npm init
 
 A package.json file is created.
 
-<li>In the terminal install the necesary dependencies</li>
+<li>In the terminal, install the necessary dependencies</li>
 
 ```bash
 npm i qrcode-terminal wechaty 
@@ -43,25 +43,25 @@ npm i qrcode-terminal wechaty
 
 The <i>PUPPET-PROVIDER</i> represents the messaging platform you want to integrate your bot with.
 
-- For whatsapp:
+- For WhatsApp:
 
 ```bash
  npm i wechaty-puppet-whatsapp
 ```
 
-- For wechat
+- For WeChat:
 
 ```bash
  npm i wechaty-puppet-wechat
 ```
 
-<li> In the package.json file add a script</li>
+<li> In the package.json file, add a script:</li>
 
 `"start": "node bot.js"`
 
 <img src="../../static/img/docs/howto/event/package-json.png"></img>
 
-<li> In the terminal type the following Commands</li>
+<li> In the terminal, type the following commands:</li>
 
 ```bash
  export WECHATY_LOG=verbose
@@ -69,13 +69,13 @@ The <i>PUPPET-PROVIDER</i> represents the messaging platform you want to integra
 
 <ul>
 
-<li> For whatsapp:</li>
+<li> For WhatsApp:</li>
 
 ```bash
 export WECHATY_PUPPET=wechaty-puppet-whatsaap
 ```
 
-<li>For wechat</li>
+<li>For WeChat:</li>
 
 ```bash
 export WECHATY_PUPPET=wechaty-puppet-wechat
@@ -83,20 +83,20 @@ export WECHATY_PUPPET=wechaty-puppet-wechat
 
 </ul>
 
-<li>Now we can run the bot using the command:</li>
+<li>Now, we can run the bot using the command:</li>
 
 ``` bash
 npm start
 ```
 
-But before that we need to add events to the bot. For following along the tutorial use the javascript code from the polyglot.
+But, before that we need to add events to the bot. Following are the below Events:
 </ol>
 
 ## Basic Events
 
 ### `Scan` Event
 
-The scan event generates a QR code to integrate your bot to a puppet provider
+The `scan` event generates a QR code to integrate your bot to a puppet provider.
 
 <Tabs
   groupId="programming-languages"
@@ -227,7 +227,7 @@ asyncio.run(MyBot().start())
 
 ### `login` Event: bot contact
 
-TODO: introducing `login` event
+The `login` event makes the bot to login successfully, with a contact of current login user.
 
 <Tabs
   groupId="programming-languages"
@@ -339,7 +339,7 @@ asyncio.run(MyBot().start())
 
 ### `logout` Event
 
-TODO: introducing `logout` event
+The `logout` event makes the bot to logout successfully, with a contact of the current login user.
 
 <Tabs
   groupId="programming-languages"
@@ -443,7 +443,7 @@ asyncio.run(start())
 
 ### `message` Event
 
-TODO: introducing `message` event
+The `message` event alerts when there's a new message received.
 
 <Tabs
   groupId="programming-languages"
@@ -556,7 +556,7 @@ asyncio.run(MyBot().start())
 
 ### `friendship` Event: friend requests
 
-TODO: introducing `friendship` event
+The `friendship` event alerts when someone sends you the friend request.
 
 <Tabs
   groupId="programming-languages"
@@ -659,7 +659,7 @@ asyncio.run(MyBot().start())
 
 ### `room-topic` Event: messages
 
-TODO: introducing `room-topic` event
+The `room-topic` event gets the topic event and alert when someone changes the room topic.
 
 <Tabs
   groupId="programming-languages"
@@ -761,7 +761,7 @@ asyncio.run(MyBot().start())
 
 ### `room-invite` Event: messages
 
-TODO: introducing `room-invite` event
+The `room-invite` event alerts when there is a room invitation.
 
 <Tabs
   groupId="programming-languages"
@@ -863,7 +863,7 @@ asyncio.run(MyBot().start())
 
 ### `room-join` Event: messages
 
-TODO: introducing `room-join` event
+The `room-join` event alerts when anyone joins the room.
 
 <Tabs
   groupId="programming-languages"
@@ -966,7 +966,7 @@ asyncio.run(MyBot().start())
 
 ### `room-leave` Event: messages
 
-TODO: introducing `room-leave` event
+The `room-leave` event alerts when anyone leaves the room.
 
 <Tabs
   groupId="programming-languages"
@@ -1071,7 +1071,7 @@ asyncio.run(MyBot().start())
 
 ### `ready` Event
 
-TODO: introducing `ready` event
+The `ready` event is executed when all data has been loaded successfully.
 
 <Tabs
   groupId="programming-languages"
@@ -1183,7 +1183,7 @@ asyncio.run(MyBot().start())
 
 ### `heartbeat` Event: messages
 
-TODO: introducing `heartbeat` event
+The `heartbeat` event makes the bot to get its heartbeat.
 
 <Tabs
   groupId="programming-languages"
@@ -1285,7 +1285,7 @@ asyncio.run(MyBot().start())
 
 ### `error` Event
 
-TODO: introducing `error` event
+The `error` event makes the bot to throw an error whenever error is encounterd.
 
 <Tabs
   groupId="programming-languages"
