@@ -129,7 +129,7 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
-### Explanation :
+### Explanation
 
 * `Contact.findAll` gets the contact list of the bot and include the contacts from bot's rooms.
 
@@ -270,7 +270,7 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
-### Explanation :
+### Explanation
 
 * `Contact.find` finds the contact by name or alias, if the result is more than one, it return the first one.
 
