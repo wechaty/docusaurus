@@ -94,7 +94,7 @@ But, before that we need to add events to the bot. Following are the below Event
 
 ## Basic Events
 
-### `Scan` Event
+### `scan` Event
 
 The `scan` event generates a QR code to integrate your bot to a puppet provider.
 
