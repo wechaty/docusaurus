@@ -12,11 +12,7 @@ The wechaty bot is available in various programming languages!
 
 :::
 
-Events are functions that define the operations the bot can perform. Some common events includes `login`, `logout`, `onMessage` etc.
-
-After getting familiar with the [ding dong bot](https://wechaty.js.org/docs/examples/basic/ding-dong-bot), this guide will focus on various events of your choice.
-
-For simplicity, this guide will demonstrate in JavaScript, but you can choose between various programming languages available.
+Before starting this guide, make sure you are already familiar with the ding dong bot. If not, go to [examples/basics](https://wechaty.js.org/docs/examples/basic/ding-dong-bot). In this section, you will learn how to add various events to a bot. Events are functions that define the operations a bot can perform. Some common events include `login`, `logout`, `onMessage`. The guide will demonstrate in JavaScript, but you can choose between various programming languages available.
 
 ## Getting started
 
