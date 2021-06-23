@@ -8,11 +8,11 @@ The DevOps model is all the rage for most software teams because of the immense 
 
 ## [@chatie/semver](https://www.npmjs.com/package/@chatie/semver)
 
-This is a very simple NPM package. [@chatie/semver](https://www.npmjs.com/package/@chatie/semver) is a wrapper for [semver](https://www.npmjs.com/package/semver) package. You can use it to check whether the current package version is the stable or the development version. It also provides typescript support.
+This is a very simple npm package. [@chatie/semver](https://www.npmjs.com/package/@chatie/semver) is a wrapper for [semver](https://www.npmjs.com/package/semver) package. You can use it to check whether the current package version is the stable or the development version. It also provides typescript support.
 
 ## [@chatie/git-scripts](https://npmjs.com/package/@chatie/git-scripts)
 
-This NPM package is a wrapper for the [git-scripts](https://www.npmjs.com/package/git-scripts) package. It provides githooks integration for chatie projects. In addition to the features that come with [git-scripts](https://www.npmjs.com/package/git-scripts) package, the `pre-push hook` has been configured to run `npm run lint` followed by `npm verion patch` before `git push` for better code quality and version management. You can learn more about `git-scripts` package from its [GitHub home page](https://github.com/nkzawa/git-scripts).
+This npm package is a wrapper for the [git-scripts](https://www.npmjs.com/package/git-scripts) package. It provides githooks integration for chatie projects. In addition to the features that come with [git-scripts](https://www.npmjs.com/package/git-scripts) package, the `pre-push hook` has been configured to run `npm run lint` followed by `npm verion patch` before `git push` for better code quality and version management. You can learn more about `git-scripts` package from its [GitHub home page](https://github.com/nkzawa/git-scripts).
 
 This hook has a feature for temporarily and permanently disabling `pre-push` as explained in the sections below.
 
@@ -46,7 +46,7 @@ This package is for centralized management of all Wechaty project `tsconfig.json
 
 ## [@chatie/eslint-config](https://www.npmjs.com/package/@chatie/eslint-config)
 
-You can configure a tool as part of your DevOps continuous integration pipeline to detect and fix problems in your codebase. Since [`tslint`](https://www.npmjs.com/package/tslint) is not supported, you can use [`eslint`](https://eslint.org/) instead to detect and fix problems. [`@chatie/eslint-config`](https://www.npmjs.com/package/@chatie/eslint-config) is a handy NPM package you can use for configuring [`eslint`](https://eslint.org/). It can effectively manage Wechaty `eslintrc.js` files.
+You can configure a tool as part of your DevOps continuous integration pipeline to detect and fix problems in your codebase. Since [`tslint`](https://www.npmjs.com/package/tslint) is not supported, you can use [`eslint`](https://eslint.org/) instead to detect and fix problems. [`@chatie/eslint-config`](https://www.npmjs.com/package/@chatie/eslint-config) is a handy npm package you can use for configuring [`eslint`](https://eslint.org/). It can effectively manage Wechaty `eslintrc.js` files.
 
 ## [Wechaty with docker](#placeholder-link)
 
