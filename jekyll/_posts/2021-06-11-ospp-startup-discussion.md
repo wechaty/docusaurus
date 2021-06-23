@@ -21,6 +21,8 @@ tags:
 - Hao, CMO of Juzi.Bot
 - Valerie
 
+{% include iframe.html src="https://www.youtube.com/watch?v=_WmEry_yl0Y" %}
+
 ## Agenda
 
 ### [wj-Mcat] Project Application Statistics
