@@ -22,12 +22,12 @@ Below is an architectural diagram of Wechaty Puppet.
 
 ### Important Puppets
 
-| Puppet Name     | Description                                                                                                                                                                                                      |
+| Puppet Name     | Description                                                                                                                                                                                           |
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | PuppetPuppeteer | A web solution to connect WeChat, Wechaty init  is implemented by web WeChat, which injects JavaScript code into chrome.                                                                                         |
 | PuppetMock      | A mock function to connect WeChat, not a real implement, for testing other connectors to connect with Wechaty. This is used for further to connect other solutions, such as iPad, Xposed, iOS and windows client |
-| PuppetPadLocal  | An iPad solution to connect WeChat.                                                                                                                                                                              |
-| PuppetService   | It is a gRPC solution.                                                                                                                                                                                           |
+| PuppetPadLocal  | An iPad solution to connect WeChat.                                                                                                                                                                            |
+| PuppetService   | It is a gRPC solution.                                                                                                                                                                                  |
 
 ## Using Puppet with Wechaty Examples
 
@@ -157,7 +157,8 @@ See: <https://github.com/wechaty/puppet-services/issues/85#issuecomment-76996760
     const rawPayload = await this.messageRawPayload(messageId)
     const payload    = await this.messageRawPayloadParser(rawPayload)
     ````
- [![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVERcbiAgICBBKFdlYmhvb2spIC0tPnxNZXNzYWdlRXZlbnR8IEIoT2ZmaWNpYWxBY2NvdW50KVxuICAgIEIgLS0-fE1lc3NhZ2VFdmVudHwgQyhQdXBwcGV0T0EpXG4gICAgQyAtLT58TWVzc2FnZUV2ZW50fCBEKFdlY2hhdHkpXG4gICAgRCAtLT58TWV0aG9kLXB1cHBldC5tZXNzYWdlUGF5bG9hZHwgRXtXZWNoYXR5IE1lc3NhZ2UgUGF5bG9hZH0iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjpmYWxzZSwidXBkYXRlRGlhZ3JhbSI6ZmFsc2V9)](https://mermaid-js.github.io/mermaid-live-editor/edit##eyJjb2RlIjoiZ3JhcGggVERcbiAgICBBKFdlYmhvb2spIC0tPnxNZXNzYWdlRXZlbnR8IEIoT2ZmaWNpYWxBY2NvdW50KVxuICAgIEIgLS0-fE1lc3NhZ2VFdmVudHwgQyhQdXBwcGV0T0EpXG4gICAgQyAtLT58TWVzc2FnZUV2ZW50fCBEKFdlY2hhdHkpXG4gICAgRCAtLT58TWV0aG9kLXB1cHBldC5tZXNzYWdlUGF5bG9hZHwgRXtXZWNoYXR5IE1lc3NhZ2UgUGF5bG9hZH0iLCJtZXJtYWlkIjoie1xuICBcInRoZW1lXCI6IFwiZGVmYXVsdFwiXG4gIFxufSIsInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOmZhbHNlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ)
+ 
+[![Flowchart](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVERcbiAgICBBKFdlYmhvb2spIC0tPnxNZXNzYWdlRXZlbnR8IEIoT2ZmaWNpYWxBY2NvdW50KVxuICAgIEIgLS0-fE1lc3NhZ2VFdmVudHwgQyhQdXBwcGV0T0EpXG4gICAgQyAtLT58TWVzc2FnZUV2ZW50fCBEKFdlY2hhdHkpXG4gICAgRCAtLT58TWV0aG9kLXB1cHBldC5tZXNzYWdlUGF5bG9hZHwgRXtXZWNoYXR5IE1lc3NhZ2UgUGF5bG9hZH0iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjpmYWxzZSwidXBkYXRlRGlhZ3JhbSI6ZmFsc2V9)](https://mermaid-js.github.io/mermaid-live-editor/edit##eyJjb2RlIjoiZ3JhcGggVERcbiAgICBBKFdlYmhvb2spIC0tPnxNZXNzYWdlRXZlbnR8IEIoT2ZmaWNpYWxBY2NvdW50KVxuICAgIEIgLS0-fE1lc3NhZ2VFdmVudHwgQyhQdXBwcGV0T0EpXG4gICAgQyAtLT58TWVzc2FnZUV2ZW50fCBEKFdlY2hhdHkpXG4gICAgRCAtLT58TWV0aG9kLXB1cHBldC5tZXNzYWdlUGF5bG9hZHwgRXtXZWNoYXR5IE1lc3NhZ2UgUGF5bG9hZH0iLCJtZXJtYWlkIjoie1xuICBcInRoZW1lXCI6IFwiZGVmYXVsdFwiXG4gIFxufSIsInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOmZhbHNlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ)
  
 ## Learn More
 
