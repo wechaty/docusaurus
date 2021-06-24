@@ -22,7 +22,7 @@ Wechaty自身对代码质量的管理，使用了 GitHub Actions 的 DevOps 工�
 
 通过阅读下面3个PPT，你可以对Wechaty及其发展历程有一个基础的了解。
 
-- 2016: [Wechaty 101: from v0.0 to v0.7](hhttps://docs.google.com/presentation/d/13oUOIEnzdLWO6KZWztD_pMuu22AQ3SIMjk2wp8f-f18/edit#slide=id.g194ee6e600_0_51)
+- 2016: [Wechaty 101: from v0.0 to v0.7](https://docs.google.com/presentation/d/13oUOIEnzdLWO6KZWztD_pMuu22AQ3SIMjk2wp8f-f18/edit#slide=id.g194ee6e600_0_51)
 - 2016-2020: [Open-source Wechaty: 2016 to 2020](https://docs.google.com/presentation/d/1eRNrKnCpdnsmplTwtZzmtGZgrPoNCmOnitmHKVc6iVU/edit#slide=id.g8568e8a985_3_8)
 - 2021: [Wechaty 2021](https://docs.google.com/presentation/d/1aJ9j0VoRk0Dkyyajy3Z-zEI0QcpmpTjcCcabEXxo4JM/edit#slide=id.p)
 
