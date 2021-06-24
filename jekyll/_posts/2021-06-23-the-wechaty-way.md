@@ -18,7 +18,9 @@ Wechaty自身对代码质量的管理，使用了 GitHub Actions 的 DevOps 工�
 
 在开源社区管理上，Wechaty 遵循 The Apache Way ，拥有 PMC / Committer 管理制度，和完善的 Issue / PR / Release 等管理制度。截止2021年，Wechaty 已经有近百万次 NPM 安装下载，并由社区自发推动了 Python, Go, Java, Scala, .NET, PHP, Rust 等语言的适配和发布，是国内最活跃的 Conversational AI Chatbot 开发者社区。
 
-## Wechaty 介绍素材：
+## Wechaty 介绍 PPT：
+
+通过阅读下面3个PPT，你可以对Wechaty及其发展历程有一个基础的了解。
 
 - 2016: [Wechaty 101: from v0.0 to v0.7](hhttps://docs.google.com/presentation/d/13oUOIEnzdLWO6KZWztD_pMuu22AQ3SIMjk2wp8f-f18/edit#slide=id.g194ee6e600_0_51)
 - 2016-2020: [Open-source Wechaty: 2016 to 2020](https://docs.google.com/presentation/d/1eRNrKnCpdnsmplTwtZzmtGZgrPoNCmOnitmHKVc6iVU/edit#slide=id.g8568e8a985_3_8)
@@ -28,10 +30,10 @@ Wechaty自身对代码质量的管理，使用了 GitHub Actions 的 DevOps 工�
 
 Wechaty 社区持续秉承信息开放透明：
 
-- 首选沟通渠道是 [Gitter](https://gitter.im/wechaty/wechaty), 因为 Gitter 保存了所有的历史沟通记录，即使你是刚刚加入社区的开发者，你也能追溯到第一天社区成员都沟通了哪些内容。
+- 首选沟通渠道是 [Gitter](https://gitter.im/wechaty/wechaty), 因为 Gitter 保存了所有的历史沟通记录，即使你是刚刚加入社区的开发者，你也能追溯到第一天社区成员都讨论过哪些内容。
 - 次优选的沟通渠道是加入我们的 Mailing List (发送邮件给 wechaty@googlegroups.com 即可加入)，我在 2019 年和 Apache 基金会主席 Craig 聊过： **If it didn't happen on list, it didn't happen.** 保证社区内容开放透明并以邮件存档是一件非常重要的事情，所以我们也非常推荐大家通过 Wechaty 的 Mailing List 来沟通。
 
-以下是所有的沟通渠道：
+以下是 Wechaty 的所有沟通渠道：
 
 - [Gitter](https://gitter.im/wechaty/wechaty)
 - Mailing List：发送邮件给 wechaty@googlegroups.com 即可加入
@@ -41,25 +43,25 @@ Wechaty 社区持续秉承信息开放透明：
 - [Telegram](https://t.me/wechaty)
 - [Twitter](https://twitter.com/chatieio)
 
-## Wechaty 内容库
+## Wechaty 更多链接
 
 除了社区沟通的渠道，你也可以在这里了解更多 Wechaty 相关内容。
 
-- [Blog](https://wechaty.js.org/blog/)
-- [Wechaty Contributors](https://wechaty.js.org/contributors/)
-- [Meeting Notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.64c95c3y2l4v)
-- [Branding Guides](https://wechaty.js.org/docs/marketing/branding/)
-- [YouTube](https://www.youtube.com/playlist?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh)
-- [Open Collective](https://opencollective.com/wechaty)
-- [Google Drive](https://drive.google.com/drive/folders/1KTnB3EOZo3nFRFSWoFc2-7LM7MgKQLzM)
-- [Photo Album](https://photos.google.com/share/AF1QipOWKUfUkjw-VzE0skrjmCwbwIWwuBiI7Li4UCbdXH62n8iH2ITnvDbPTsx4eBl8dw?key=cy1NdWFoUGpXanVmczVHSm84TVg1LXJWeW5HTDhR)
-- [Hall of Fame](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.64c95c3y2l4v)
+- [Blog](https://wechaty.js.org/blog/)： 这里是可以看到 Wechaty 的所有博客
+- [Wechaty Contributors](https://wechaty.js.org/contributors/)： 来这里可以看到所有 Wechaty Contributor 的介绍
+- [Meeting Notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.64c95c3y2l4v)：Wechaty 的每次会议记录的内容。
+- [Branding Guides](https://wechaty.js.org/docs/marketing/branding/)：使用 Wechaty 的 logo 等素材内容
+- [YouTube](https://www.youtube.com/playlist?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh)： Wechaty 所有的视频清单
+- [Open Collective](https://opencollective.com/wechaty)：为 Wechaty 捐赠的唯一通道
+- [Google Drive](https://drive.google.com/drive/folders/1KTnB3EOZo3nFRFSWoFc2-7LM7MgKQLzM)： Wechaty 所有的文件存档
+- [Photo Album](https://photos.google.com/share/AF1QipOWKUfUkjw-VzE0skrjmCwbwIWwuBiI7Li4UCbdXH62n8iH2ITnvDbPTsx4eBl8dw?key=cy1NdWFoUGpXanVmczVHSm84TVg1LXJWeW5HTDhR)：Wechaty 活动的精选照片
+- [Hall of Fame](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.64c95c3y2l4v)：了解 Wechaty 名人堂
 
 ## Wechaty 会议规范
 
 Wechaty 社区希望每一次会议尽可能让所有参与者都能专注参与，并且获得正向产出，保证会议简洁高效和社区透明，Wechaty 的会议有以下三个重要工具及使用规范。
 
-### Wechaty Meeting Notes
+### 1. Wechaty Meeting Notes
 
 Meeting Notes 有以下几个价值：
 
@@ -96,11 +98,11 @@ Meeting Notes 有以下几个价值：
 
 为了保证会议的沉淀，重大线上会议会要求的主持者在会议结束后将会议视频上传到 [Youtube](https://www.youtube.com/playlist?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh) 并添加到 wechaty 的 playlist 中，主持人若没有添加权限，可以向 Wechaty PMC 申请。
 
-上传到 Youtube 的同时，也在视频介绍中做好视频时间切割，比如下图 [Wechaty ❤️ Google Season of Docs: Kick-off meeting with 20 Technical Writers!](https://www.youtube.com/watch?v=hTkM_XPpFfU&list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&index=43) 就是一个很好的示例。因为一次会议的时间很长，其他人看视频的时候就可以很容易根据下图介绍知道 **视频中 0:01:41 的时候讲的内容是 Introducing the Meeting Agenda**， 同时点击 **0:01:41** 可以快速跳转到视频播放的地方。
+上传到 Youtube 的同时，也在视频介绍中做好视频时间切割， [Wechaty ❤️ Google Season of Docs: Kick-off meeting with 20 Technical Writers!](https://www.youtube.com/watch?v=hTkM_XPpFfU&list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&index=43) 就是一个很好的示例。因为一次会议的时间很长，其他人看视频的时候就可以很容易根据下图介绍知道 **视频中 0:01:41 的时候讲的内容是 Introducing the Meeting Agenda**， 同时点击 **0:01:41** 可以快速跳转到视频播放的地方。
 
-![youtube-example]](/assets/2021/06-the-wechaty-way/youtube-example.png)
+![youtube-example](/assets/2021/06-the-wechaty-way/youtube-example.png)
 
-上传视频以后，主持人要去社区发布一个会议的博客，并嵌入视频内容，这样就能保证这次会议进行了存档并可以共享个社区的任何开发者，具体要求见下。
+上传视频以后，主持人要去社区发布一个会议的博客，并嵌入视频内容，这样就能保证这次会议进行了存档并可以共享个社区的任何开发者。
 
 ### 会议博客
 
@@ -116,7 +118,7 @@ Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hell
 
 这是从博客中截图对应视频切割链接的截图。
 
-![agenda]](/assets/2021/06-the-wechaty-way/agenda.png)
+![agenda](/assets/2021/06-the-wechaty-way/agenda.png)
 
 ## Wechaty 博客发布规范
 
@@ -131,7 +133,11 @@ Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hell
 
 ## Wechaty Issue 发布规范
 
-社区希望遇到任何代码问题，都通过 issue 进行交流。强烈反对把代码截图或者日志截图直接发到微信群里，问大家为什么运行不了，或者为什么出错，因为一个截图无法给出全面的信息，同时也非常不利于归档传播给更多的开发者。 当你提出一个有价值的 issue 的时候，实际上可以极大的避免其他开发者踩坑。 当然，在发布 issue 之前，也强烈建议你在 issue 列表中进行搜索，看这个 issue 是不是别人已经提过了，甚至已经有人给出了很好的解决办法。
+社区希望遇到任何代码问题，都通过 issue 进行交流。
+
+强烈反对把代码截图或者日志截图直接发到微信群里，问大家为什么运行不了，或者直接问这事什么错误。一个截图是无法给出全面信息的，而且非常不利于归档传播给更多的开发者。当你提出一个有价值的 issue 的时候，实际上可以极大的避免其他开发者踩坑。
+
+当然，在发布 issue 之前，也强烈建议你在 issue 列表中进行搜索，看这个 issue 是不是别人已经提过了，甚至已经有人给出了很好的解决办法。
 
 发布 issue 的时候，建议按照 issue 模板发布 issue， 这样方便社区里的人更好的为你提供帮助。issue 分为3个类别：
 
@@ -178,9 +184,11 @@ Wechaty 的 Contributor [xpt](https://stackoverflow.com/users/2125837/xpt) 在 S
 
 ## Wechaty RFC
 
-如果是一个比较大的提案，建议先提一个 proposal，描述一下你要干什么、为什么要干这个事情、它能带来什么收益、方案是什么以及分析备选方案的优缺点等，我们会让你提个 Issue 进行讨论，最后以讨论后的 proposal 为基础，开始后面的开发。如这是 Wechaty Commiter [高原](https://wechaty.js.org/contributors/windmemory/) 发布的[提案](https://github.com/wechaty/wechaty/issues/1776)：
+如果是一个比较大的提案，建议先提一个 proposal，描述一下你要干什么、为什么要干这个事情、它能带来什么收益、方案是什么以及分析备选方案的优缺点等，我们会让你提个 Issue 进行讨论，最后以讨论后的 proposal 为基础，开始后面的开发。
 
-![rfc]](/assets/2021/06-the-wechaty-way/rfc.png)
+如这是 Wechaty Commiter [高原](https://wechaty.js.org/contributors/windmemory/) 发布的[提案](https://github.com/wechaty/wechaty/issues/1776)：
+
+![rfc](/assets/2021/06-the-wechaty-way/rfc.png)
 
 ## 进阶，了解 Apache Way，知道如何更好的参与开源项目
 
