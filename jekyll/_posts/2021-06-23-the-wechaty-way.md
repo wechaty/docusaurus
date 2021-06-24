@@ -141,6 +141,7 @@ Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hell
 - [1:57:49](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=7069s) 14. Budget Plan for Stipends
 - [2:05:28](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=7528s) 15. Webmaster Tools
 - [2:06:33](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=7593s) 16. Q&A
+
 ## Wechaty 博客发布规范
 
 任何人都可以通过在 [wechaty.js.org](https://github.com/wechaty/wechaty.js.org) Repo 下面通过发布 PR 的方式发布博客。
