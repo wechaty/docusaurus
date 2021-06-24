@@ -100,7 +100,7 @@ Meeting Notes 有以下几个价值：
 
 上传到 Youtube 的同时，也在视频介绍中做好视频时间切割， [Wechaty ❤️ Google Season of Docs: Kick-off meeting with 20 Technical Writers!](https://www.youtube.com/watch?v=hTkM_XPpFfU&list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&index=43) 就是一个很好的示例。因为一次会议的时间很长，其他人看视频的时候就可以很容易根据下图介绍知道 **视频中 0:01:41 的时候讲的内容是 Introducing the Meeting Agenda**， 同时点击 **0:01:41** 可以快速跳转到视频播放的地方。
 
-![youtube-example](/assets/2021/06-the-wechaty-way/youtube-example.png)
+![youtube-example](/assets/2021/06-the-wechaty-way/youtube-example.jpg)
 
 上传视频以后，主持人要去社区发布一个会议的博客，并嵌入视频内容，这样就能保证这次会议进行了存档并可以共享个社区的任何开发者。
 
