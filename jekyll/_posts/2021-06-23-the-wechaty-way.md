@@ -7,7 +7,7 @@ tags:
   - wechaty-way
   - news
   - guide
-image: /assets/2021/06-wechaty-way/teaser.png
+image: /assets/2021/06-the-wechaty-way/teaser.png
 ---
 
 Wechaty (Conversational RPA SDK) 2016 年发布于 GitHub，是一个基于 Apache-2.0 许可证的开源项目。经过5年多的发展，现在 Wechaty 开源社区已经拥有数十位 Committers，百余位 Contributors ，并被超过一万名 GitHub 开发者 Star。目前，使用 Wechaty 的开发者已覆盖数万人，并拥有基于微信群的数千人活跃开发者群。
@@ -68,7 +68,7 @@ Meeting Notes 有以下几个价值：
 
 这是 Meeting Notes 的模板内容(可以在 Meeting Notes 最底部拿到文字版，我这里放了图片方便看格式)：
 
-![meeting-notes](/assets/2021/06-wechaty-way/meeting-notes.png)
+![meeting-notes](/assets/2021/06-the-wechaty-way/meeting-notes.png)
 
 具体使用规范：
 
@@ -98,7 +98,7 @@ Meeting Notes 有以下几个价值：
 
 上传到 Youtube 的同时，也在视频介绍中做好视频时间切割，比如下图 [Wechaty ❤️ Google Season of Docs: Kick-off meeting with 20 Technical Writers!](https://www.youtube.com/watch?v=hTkM_XPpFfU&list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&index=43) 就是一个很好的示例。因为一次会议的时间很长，其他人看视频的时候就可以很容易根据下图介绍知道 **视频中 0:01:41 的时候讲的内容是 Introducing the Meeting Agenda**， 同时点击 **0:01:41** 可以快速跳转到视频播放的地方。
 
-![youtube-example]](/assets/2021/06-wechaty-way/youtube-example.png)
+![youtube-example]](/assets/2021/06-the-wechaty-way/youtube-example.png)
 
 上传视频以后，主持人要去社区发布一个会议的博客，并嵌入视频内容，这样就能保证这次会议进行了存档并可以共享个社区的任何开发者，具体要求见下。
 
@@ -116,7 +116,7 @@ Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hell
 
 这是从博客中截图对应视频切割链接的截图。
 
-![agenda]](/assets/2021/06-wechaty-way/agenda.png)
+![agenda]](/assets/2021/06-the-wechaty-way/agenda.png)
 
 ## Wechaty 博客发布规范
 
@@ -174,13 +174,13 @@ Wechaty 的 Contributor [xpt](https://stackoverflow.com/users/2125837/xpt) 在 S
 - 完成 CLA 的签署
 - 关联相关的 Issue 链接
 
-![pr](/assets/2021/06-wechaty-way/pr.png)
+![pr](/assets/2021/06-the-wechaty-way/pr.png)
 
 ## Wechaty RFC
 
 如果是一个比较大的提案，建议先提一个 proposal，描述一下你要干什么、为什么要干这个事情、它能带来什么收益、方案是什么以及分析备选方案的优缺点等，我们会让你提个 Issue 进行讨论，最后以讨论后的 proposal 为基础，开始后面的开发。如这是 Wechaty Commiter [高原](https://wechaty.js.org/contributors/windmemory/) 发布的[提案](https://github.com/wechaty/wechaty/issues/1776)：
 
-![rfc]](/assets/2021/06-wechaty-way/rfc.png)
+![rfc]](/assets/2021/06-the-wechaty-way/rfc.png)
 
 ## 进阶，了解 Apache Way，知道如何更好的参与开源项目
 
