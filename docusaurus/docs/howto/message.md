@@ -5,9 +5,11 @@ title: 'Dealing with message'
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
+Automation of messages can be done easily  with wechaty onMessage function. This guide will give you a step by step overview of how to respond to self messages or messages in a room.
+
 ## Mention
 
-Only a message in the room can mention(@) others.
+Mention messages are sent automatically by the bot if the message recieved as a parameter by the onMessage belongs to a room. The bot can mention(@) others.
 
 <Tabs
   groupId="programming-languages"
@@ -73,7 +75,7 @@ async function onMessage(message) {
     // "Hello"
 
     const talker = room.talker()
-    await room.say`Thanks for mention me! ${talker}`
+    await room.say`Thanks for mentioning me! ${talker}`
   }
 }
 
@@ -139,7 +141,12 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
+The expected output of the JavaScript code is:
+![Message](../../static/img/docs/howto/message/message1.png)
+
 ## Self message
+
+Self messages are sent automatically by the bot if the message recieved as a parameter by the onMessage  function has also been sent by the bot itself.
 
 <Tabs
   groupId="programming-languages"
@@ -180,14 +187,17 @@ bot.on('message', onMessage)
 ```js
 const { Message } = require('wechaty')
 
-async function onMessage(message) {
-  if (message.self()) {
-    const talker = message.talker()
-    const bot = message.wechaty.userSelf()
-    assert(talker === bot, 'Message is sent from bot')
+async function onMessage (msg) {
+  
+  log.info('StarterBot', msg.toString())
+  const contact = msg.talker() 
+   console.log(contact);
+  console.log("message self",msg.self());
+   if (msg.self()) {
+    const b = msg.wechaty.userSelf()
+    assert(talker === b, 'Message is sent from bot')
     console.info('Message is sent from bot')
   }
-}
 
 bot.on('message', onMessage)
 ```
@@ -259,3 +269,6 @@ class MyBot(Wechaty):
 
 </TabItem>
 </Tabs>
+
+The expected output of the JavaScript code is:
+![Message](../../static/img/docs/howto/message/message.png)
