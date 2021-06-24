@@ -2,7 +2,7 @@
 title: Wechaty Puppet
 sidebar_label: Puppet
 ---
-## What is Wechaty Puppet 
+## What is Wechaty Puppet
 
 The term `Puppet` in Wechaty is an Abstract Class for implementing protocol plugins. The plugins are the components that help the  Wechaty to control the IMs like WeChat.
 The plugins are named `PuppetXXX`, like [PuppetPuppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer) is using the [google puppeteer](https://github.com/GoogleChrome/puppeteer) to control the [WeChat Web API](https://wx.qq.com) via a chrome browser, [PuppetPadLocal](https://github.com/padlocal/wechaty-puppet-padlocal) is using the Pad Protocol to connect with WeChat Server.
@@ -153,10 +153,10 @@ See: <https://github.com/wechaty/puppet-services/issues/85#issuecomment-76996760
 
 4. After message **event** be propagated from the PuppetOA to Wechaty, then the [puppet.messagePayload()](https://github.com/wechaty/wechaty-puppet/blob/763e94194fd1104007fccad4ba4994365890cde8/src/puppet.ts#L834) will be called to get the [Wechaty Message Payload](https://github.com/wechaty/wechaty-puppet/blob/763e94194fd1104007fccad4ba4994365890cde8/src/schemas/message.ts#L103).  Here is the most important part: we need to construct a Wechaty Message Payload from the Raw Message Payload (source code at [here](https://github.com/wechaty/wechaty-puppet/blob/763e94194fd1104007fccad4ba4994365890cde8/src/puppet.ts#L854-L855)):
 
-    ```ts
+ ```ts
     const rawPayload = await this.messageRawPayload(messageId)
     const payload    = await this.messageRawPayloadParser(rawPayload)
-    ````
+ ````
  
 [![Flowchart](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVERcbiAgICBBKFdlYmhvb2spIC0tPnxNZXNzYWdlRXZlbnR8IEIoT2ZmaWNpYWxBY2NvdW50KVxuICAgIEIgLS0-fE1lc3NhZ2VFdmVudHwgQyhQdXBwcGV0T0EpXG4gICAgQyAtLT58TWVzc2FnZUV2ZW50fCBEKFdlY2hhdHkpXG4gICAgRCAtLT58TWV0aG9kLXB1cHBldC5tZXNzYWdlUGF5bG9hZHwgRXtXZWNoYXR5IE1lc3NhZ2UgUGF5bG9hZH0iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjpmYWxzZSwidXBkYXRlRGlhZ3JhbSI6ZmFsc2V9)](https://mermaid-js.github.io/mermaid-live-editor/edit##eyJjb2RlIjoiZ3JhcGggVERcbiAgICBBKFdlYmhvb2spIC0tPnxNZXNzYWdlRXZlbnR8IEIoT2ZmaWNpYWxBY2NvdW50KVxuICAgIEIgLS0-fE1lc3NhZ2VFdmVudHwgQyhQdXBwcGV0T0EpXG4gICAgQyAtLT58TWVzc2FnZUV2ZW50fCBEKFdlY2hhdHkpXG4gICAgRCAtLT58TWV0aG9kLXB1cHBldC5tZXNzYWdlUGF5bG9hZHwgRXtXZWNoYXR5IE1lc3NhZ2UgUGF5bG9hZH0iLCJtZXJtYWlkIjoie1xuICBcInRoZW1lXCI6IFwiZGVmYXVsdFwiXG4gIFxufSIsInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOmZhbHNlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ)
  
