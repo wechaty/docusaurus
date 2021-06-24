@@ -116,10 +116,31 @@ Meeting Notes 有以下几个价值：
 
 Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hello Wechaty GSoD’21 Technical Writers!](https://wechaty.js.org/2021/05/08/gsod-2021-selected-technical-writers/) 是一个很好的会议博客案例。
 
-这是从博客中截图对应视频切割链接的截图。
+以下是从博客中截取出的视频片段案例：
 
-![agenda](/assets/2021/06-the-wechaty-way/agenda.png)
+### Agendas
 
+- [0:01:41](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=101s) 1. Introducing the Meeting Agenda
+- [0:03:08](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=188s) 2. Self-introduction: Huan
+- [0:06:15](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=375s) 3. Self-introduction: Rui
+- [0:09:15](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=555s) 4. Self-introducing: Technical Writers
+- [0:24:53](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=1493s) 5. Introducing Wechaty
+- [0:29:37](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=1777s) 6. Introducing GSoD Project List
+- [0:41:46](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=2506s) 7. Introducing Received Proposals
+- [0:44:41](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=2681s) 8. Primary Project: Tutorial
+- [0:45:33](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=2733s) 8.1 Tutorial Proposal from Souvik Biswas
+- [0:49:24](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=2964s) 8.2 Tutorial Proposal from Shwetal Soni
+- [1:00:19](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=3619s) 9. Landing Page Proposal from Sajen Sarvajith K
+- [1:12:00](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=4320s) 10. Introduction & Explanation Proposal from Mukosa Joseph Mawa
+- [1:23:44](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=5024s) 11.1. How-to Guides Proposal from Vasvi Sood
+- [1:27:38](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=5258s) 11.2. How-to Guides Proposal from Abhishek Jaiswal
+- [1:33:05](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=5585s) 12. References Proposal from Shraddha Vasant Prasad
+- [1:41:00](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=6060s) 13. Volunteer Project
+- [1:43:00](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=6060s) 13.1 Volunteer Proposal from Rohitesh Jain
+- [1:45:42](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=6342s) 13.2 Volunteer Proposal from Vicky Liao
+- [1:57:49](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=7069s) 14. Budget Plan for Stipends
+- [2:05:28](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=7528s) 15. Webmaster Tools
+- [2:06:33](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=7593s) 16. Q&A
 ## Wechaty 博客发布规范
 
 任何人都可以通过在 [wechaty.js.org](https://github.com/wechaty/wechaty.js.org) Repo 下面通过发布 PR 的方式发布博客。
