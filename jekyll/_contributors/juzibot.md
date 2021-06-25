@@ -15,6 +15,7 @@ avatar: /assets/contributors/juzibot/juzibot图标.jpg
 
 ## 联系我
 
-- Github: <https://github.com/gangena>
+- Github: <https://github.com/juzibot>
 - 邮箱：gangena@juzi.bot
-- 个人博客: <http://gangena.github.io>
+- 官网: <http://www.juzibot.com>
+- 介绍： <http://pre-angel.com/portfolios/juzibot/>

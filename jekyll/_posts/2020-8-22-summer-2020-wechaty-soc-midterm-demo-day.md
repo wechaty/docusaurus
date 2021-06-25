@@ -12,7 +12,7 @@ tags:
 image: /assets/2020/wechaty-soc-kick-off-meeting/soc.png
 ---
 
-> 作者: [juzibot](https://github.com/gangena/)
+> 作者: [juzibot](https://github.com/juzibot/)
 
 ## 关于暑期2020
 
@@ -26,15 +26,7 @@ image: /assets/2020/wechaty-soc-kick-off-meeting/soc.png
 
 ## Wechaty 暑期2020宣讲会
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fMFzCexnDsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{% include iframe.html src="https://www.youtube.com/watch?v=fMFzCexnDsY" %}
 
 你可以在Bilibili上查看[暑期2020宣讲会视频](//player.bilibili.com/player.html?aid=625978692&bvid=BV1et4y1y7a2&cid=199810616&page=13)
 
