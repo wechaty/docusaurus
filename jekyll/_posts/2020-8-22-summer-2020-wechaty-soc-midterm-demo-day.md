@@ -1,6 +1,6 @@
 ---
 title: "Wechaty SoC Midterm Demo Day"
-author: gangena
+author: juzibot
 categories: announcement
 tags:
   - summer-of-wechaty
@@ -12,7 +12,7 @@ tags:
 image: /assets/2020/wechaty-soc-kick-off-meeting/soc.png
 ---
 
-> 作者: [gangena](https://github.com/gangena/)
+> 作者: [juzibot](https://github.com/gangena/)
 
 ## 关于暑期2020
 
