@@ -72,14 +72,14 @@ XXX
 
 ## 阶段性工作
 
-期初、期中和期末三篇报告要**以博客的方式提交到 [wechaty.js.org](https://github.com/wechaty/wechaty.js.org) Repo** 中，在提交报告之前，可以先阅读 [Wechaty 社区贡献规范](https://wechaty.js.org/2021/06/23/the-wechaty-way/), 至少了解下面内容：
+期初、期中和期末三篇报告要**以博客的方式提交到 [wechaty.js.org](https://github.com/wechaty/wechaty.js.org) Repo** 中，在提交报告之前，可以先阅读 [Wechaty 社区规范](https://wechaty.js.org/2021/06/23/the-wechaty-way/), 至少了解下面内容：
 
-- Wechaty 的介绍
-- 社区沟通渠道
-- 会议规范
-- 博客发布规范
-- Issue 发布规范
-- PR 发布规范
+1. Wechaty 的介绍
+1. 社区沟通渠道
+1. 会议规范
+1. 博客发布规范
+1. Issue 发布规范
+1. PR 发布规范
 
 尤其要注意的是在博客发布规范中详细的介绍了如何提交博客、如何在博客中嵌入视频等，在期中、期末报告中会用到。具体三篇报告的要求如下。
 
@@ -96,16 +96,16 @@ XXX
 
 #### 2. 期初报告
 
-- [ ] 标题： `OSPP 2021-期初报告-你的标题`
-- [ ] 文件名： `2021-XX-XX-ospp-plan-XX`
-- [ ] 报告 category 为：`project`
-- [ ] 报告 tag 至少包括：`summer-of-wechaty`,`summer-2021`,`ospp-2021`,`plan`
-- [ ] 报告内容至少包括：
-  - [ ] 项目名称
-  - [ ] 合作者介绍
-  - [ ] 导师
-  - [ ] 项目介绍
-  - [ ] 项目计划
+- 标题： `OSPP 2021-期初报告-你的标题`
+- 文件名： `2021-XX-XX-ospp-plan-XX`
+- 报告 category 为：`project`
+- 报告 tag 至少包括：`summer-of-wechaty`,`summer-2021`,`ospp-2021`,`plan`
+- 报告内容至少包括：
+  - 项目名称
+  - 合作者介绍
+  - 导师
+  - 项目介绍
+  - 项目计划
 
 ### 3. OSPP 2020 学生期初报告参考：
 
@@ -127,8 +127,8 @@ XXX
 
 #### 1. 期中 Demo Day 视频
 
-- [ ] 必选：视频需要上传到 youtube 中，并联系 [Huan](https://wechaty.js.org/contributors/huan/) 添加到 wechaty 的 playlist 中。
-- [ ] 可选：考虑到国内用户，可以上传到 bilibili 或者腾讯视频中
+- 视频需要上传到 youtube 中，并联系 [Huan](https://wechaty.js.org/contributors/huan/) 添加到 wechaty 的 playlist 中。
+- 考虑到国内用户，可以上传到 bilibili 或者腾讯视频中
 
 可以参考去年优秀学生突出贡献奖获得者[江姗姗](https://wechaty.js.org/contributors/univerone/)的视频：
 
@@ -137,22 +137,22 @@ XXX
 
 #### 2. 期中报告
 
-- [ ] 标题： `OSPP 2021-期中报告-你的标题`
-- [ ] 文件名： `2021-XX-XX-ospp-mid-term-XX`
-- [ ] 报告 category 为：`project`
-- [ ] 报告 tag 至少包括：`summer-of-wechaty`,`summer-2021`,`ospp-2021`,`mid-term`
-- [ ] 报告内容至少包括：
-  - [ ] 项目信息
-    - [ ] 项目名称
-    - [ ] 方案描述
-    - [ ] 时间规划
-  - [ ] 项目进度
-    - [ ] 已完成工作
-    - [ ] 遇到的问题及解决方案
-    - [ ] 后续工作安排
+- 标题： `OSPP 2021-期中报告-你的标题`
+- 文件名： `2021-XX-XX-ospp-mid-term-XX`
+- 报告 category 为：`project`
+- 报告 tag 至少包括：`summer-of-wechaty`,`summer-2021`,`ospp-2021`,`mid-term`
+- 报告内容至少包括：
+  - 项目信息
+    - 项目名称
+    - 方案描述
+    - 时间规划
+  - 项目进度
+    - 已完成工作
+    - 遇到的问题及解决方案
+    - 后续工作安排
   - 项目成果
-    - [ ] 期中汇报的视频，可以参考 [使用jekyll include在wechaty博客中快速插入视频](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)
-    - [ ] Live Coding/Demo 视频
+    - 期中汇报的视频，可以参考 [使用jekyll include在wechaty博客中快速插入视频](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)
+    - Live Coding/Demo 视频
 
 ### 3. OSPP 2020 学生期中报告参考：
 
@@ -166,32 +166,33 @@ XXX
 
 #### 1. 期末视频
 
-- [ ] 必选：视频需要上传到 youtube 中，并联系 [Huan](https://wechaty.js.org/contributors/huan/) 添加到 wechaty 的 playlist 中。
-- [ ] 可选：考虑到国内用户，可以上传到 bilibili 或者腾讯视频中
+- 视频需要上传到 youtube 中，并联系 [Huan](https://wechaty.js.org/contributors/huan/) 添加到 wechaty 的 playlist 中。
+- 考虑到国内用户，可以上传到 bilibili 或者腾讯视频中
 
-可以参考去年优秀学生突出贡献奖获得者[江姗姗](https://wechaty.js.org/contributors/univerone/)的视频：
+可以参考去年飞书项目参与学生，今年飞书项目导师[范蕊](https://wechaty.js.org/contributors/roxanne718/)的视频：
 
-- [期末结项报告视频](https://www.bilibili.com/video/BV1pf4y1D71F)
+- [SOC-基于开放 API 封装 Wechaty 接口下的飞书聊天机器人-结项汇报](https://www.youtube.com/watch?v=eutz5EMlJCI)
+- [SOC-基于开放 API 封装 Wechaty 接口下的飞书聊天机器人-Demo演示](https://www.youtube.com/watch?v=_y5DktHdL9U)
 
 #### 2. 期末报告
 
-- [ ] 标题： `OSPP 2021-结项报告-你的标题`
-- [ ] 文件名： `2021-XX-XX-ospp-final-XX`
-- [ ] 报告 category 为：`project`
-- [ ] 报告 tag 至少包括：`summer-of-wechaty`,`summer-2021`,`ospp-2021`,`final`
-- [ ] 报告内容至少包括：
-  - [ ] 项目信息
-    - [ ] 项目名称
-    - [ ] 方案描述
-    - [ ] 时间规划
-  - [ ] 项目总结
-    - [ ] 项目成果
-    - [ ] 期末汇报视频
-    - [ ] 期末汇报 PPT
-    - [ ] 遇到的问题及解决方案
+- 标题： `OSPP 2021-结项报告-你的标题`
+- 文件名： `2021-XX-XX-ospp-final-XX`
+- 报告 category 为：`project`
+- 报告 tag 至少包括：`summer-of-wechaty`,`summer-2021`,`ospp-2021`,`final`
+- 报告内容至少包括：
+  - 项目信息
+    - 项目名称
+    - 方案描述
+    - 时间规划
+  - 项目总结
+    - 项目成果
+    - 期末汇报视频
+    - 期末汇报 PPT
+    - 遇到的问题及解决方案
   - 导师审核
-    - [ ] 评审对象
-    - [ ] 评审结果
+    - 评审对象
+    - 评审结果
 
 ### 3. OSPP 2020 学生期中报告参考：
 
