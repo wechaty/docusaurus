@@ -114,12 +114,6 @@ Meeting Notes 有以下几个价值：
 - Zoom 会议视频
 - 会议议程（不要把Meeting Notes 的会议议程粘进去，而是用 Youtube 中做好的视频切割链接，这样方便读者可以快速的看自己关注的会议内容）
 
-下面是在会议博客中嵌入视频的代码案例：
-
-```html
-{% include iframe.html src="https://www.youtube.com/watch?v=hTkM_XPpFfU" %}
-```
-
 #### 会议博客例子
 
 Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hello Wechaty GSoD’21 Technical Writers](https://wechaty.js.org/2021/05/08/gsod-2021-selected-technical-writers/) 是一个很好的会议博客案例，完整的包含了上面的要求，建议第一次写会议博客的人先来看下这个案例。
@@ -132,6 +126,18 @@ Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hell
 - [Wechaty 博客的撰写规范](https://github.com/wechaty/wechaty.js.org#guidelines-for-writing-a-blog-post)
 - [本地测试保证博客内容没有问题](https://github.com/wechaty/wechaty.js.org#how-to-run-tests)
 - [本地预览](https://github.com/wechaty/wechaty.js.org#how-to-preview-your-changes)
+
+### 在博客中插入视频
+
+下面是在会议博客中嵌入视频的代码的简单案例：
+
+```html
+{% include iframe.html src="https://www.youtube.com/watch?v=hTkM_XPpFfU" %}
+```
+
+[univerone](https://wechaty.js.org/contributors/univerone/) 写了一篇非常详细的博客[使用jekyll include在wechaty博客中快速插入视频](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)，介绍了如何优雅的在博客中插入视频，有兴趣的同学也可以深入博客研究。
+
+### 小白入门发布博客
 
 如果你是完全小白，可以参考 [atorber](https://wechaty.js.org/contributors/atorber/) 的这篇博客: [入门：小白如何在wechaty社区发布自己的第一篇博客（一）](https://wechaty.js.org/2021/04/22/how-to-publish-blog-on-wechaty/) 通过大量的截图一步一步告诉你如何发布Wechaty博客。
 
