@@ -1,5 +1,5 @@
 ---
-title: "Wechaty Summer of Code 2021 Kickoff Meeting"
+title: "Wechaty Open Source Promotion Plan 2021 Kickoff Meeting"
 author: ninetailskim
 categories: announcement
 tags:
@@ -9,10 +9,10 @@ tags:
   - news
   - meetup
   - featured
-image: /assets/2021/06-wechaty-soc-kick-off-meeting/group-photo.png
+image: /assets/2021/06-wechaty-soc-kick-off-meeting/group-photo.webp
 ---
 
-> 作者: [ninetailskim](https://github.com/ninetailskim/)
+> 作者: [ninetailskim](https://wechaty.js.org/contributors/ninetailskim/)
 
 ## 开源软件供应链点亮计划-暑期2021 是什么活动
 
@@ -36,39 +36,39 @@ Wechaty 在多平台、多功能多个维度上，共发布了 10项任务，并
 全部项目在[wechaty/summer-of-code#79](https://github.com/wechaty/summer-of-wechaty/issues/79)中进行汇总。
 如果你有看到感兴趣的项目，可以直接在对应 issue 下面找到负责对应任务的开发者。
 
-### 开发基于 Wechaty 实现微俱乐部会员&活动管理的微信小程序 <https://github.com/wechaty/summer-of-wechaty/issues/78>
-
-- 导师：鲁玉超 物联网行业产品经、微信小程序群组大师开发者 （atorber@163.com）
-- 学生开发者：陈婧，华东理工大学本科生（1017137803@qq.com）
-
-### 基于 Itchat 为 Python Wechaty 实现社区首个 Python 语言的本地 Puppet <https://github.com/wechaty/summer-of-wechaty/issues/75>
-
-- 导师：李卓桓 Wechaty creator，Python Wechaty maintainer，Tencent TVP of Chatbot （zixia@zixia.net）；吴京京 Python Wechaty creator，Wechaty committer （wjmcater@gmail.com）
-- 学生开发者：肖良玉，杭州电子科技大学本科生（x@lyleshaw.com）
-
-### 开发支持电信运营商 5G Chatbot / RCS 的 Wechaty 接入 Puppet 模块 <https://github.com/wechaty/summer-of-wechaty/issues/74>
-
-- 导师：康嘉 硬核桃社区PM （sj-kangj@dimpt.com）；李佳芮 Wechaty co-creator，Founder & CEO of Juzi.BOT （rui@chatie.io）
-- 学生开发者：张瑞宁，长沙理工大学本科生（3134191406@qq.com）
-
 ### 基于开放API封装 Wechaty 接口下的飞书聊天机器人 <https://github.com/wechaty/summer-of-wechaty/issues/38>
 
 - 导师： 范蕊 飞书Puppet作者 （froxanne1024@gmail.com）
 - 学生开发者：梁浩彬，华南农业大学本科生（xilou31@gmail.com）；马田慧（tianhuima01@gmail.com）；许欣瑜（3378374880@qq.com）；张凯（840854995@qq.com）
-
-### 基与 Blessed 的 Wechaty 命令行文本客户端软件（仿IRC） <https://github.com/wechaty/summer-of-wechaty/issues/80>
-
-- 导师：李卓桓 Creator of Wechaty，Tencent TVP of Chatbot （zixia@zixia.net）
-- 学生开发者：刘靖，上海大学本科生（liuchinggg@gmail.com）
 
 ### 基于 Matrix AppService Wechaty 项目的用户、群与消息等基础功能的完善 <https://github.com/wechaty/summer-of-wechaty/issues/59>
 
 - 导师：yswtrue Wechaty contributor （yswtrue@gmail.com），李卓桓 Creator of Wechaty，Tencent TVP of Chatbot （zixia@zixia.net）
 - 学生开发者：林宇靖, 上海海洋大学本科生（545641826@qq.com）；张瑞宁, 长沙理工大学本科生（3134191406@qq.com）
 
+### 开发支持电信运营商 5G Chatbot / RCS 的 Wechaty 接入 Puppet 模块 <https://github.com/wechaty/summer-of-wechaty/issues/74>
+
+- 导师：康嘉 硬核桃社区PM （sj-kangj@dimpt.com）；李佳芮 Wechaty co-creator，Founder & CEO of Juzi.BOT （rui@chatie.io）
+- 学生开发者：张瑞宁，长沙理工大学本科生（3134191406@qq.com）
+
+### 基于 Itchat 为 Python Wechaty 实现社区首个 Python 语言的本地 Puppet <https://github.com/wechaty/summer-of-wechaty/issues/75>
+
+- 导师：吴京京 Python Wechaty creator，Wechaty committer （wjmcater@gmail.com）；李卓桓 Wechaty creator，Python Wechaty maintainer，Tencent TVP of Chatbot （zixia@zixia.net）
+- 学生开发者：肖良玉，杭州电子科技大学本科生（x@lyleshaw.com）
+
+### 开发基于 Wechaty 实现微俱乐部会员&活动管理的微信小程序 <https://github.com/wechaty/summer-of-wechaty/issues/78>
+
+- 导师：鲁玉超 物联网行业产品经、微信小程序群组大师开发者 （atorber@163.com）
+- 学生开发者：陈婧，华东理工大学本科生（1017137803@qq.com）
+
+### 基与 Blessed 的 Wechaty 命令行文本客户端软件（仿IRC） <https://github.com/wechaty/summer-of-wechaty/issues/80>
+
+- 导师：李卓桓 Creator of Wechaty，Tencent TVP of Chatbot （zixia@zixia.net）
+- 学生开发者：刘靖，上海大学本科生（liuchinggg@gmail.com）
+
 ### 开发支持 QQ 聊天软件的 Wechaty Puppet Provider 模块 <https://github.com/wechaty/summer-of-wechaty/issues/81>
 
-- 导师：李卓桓 Creator of Wechaty，Tencent TVP of Chatbot （zixia@zixia.net）；李佳芮 Wechaty co-creator，Founder & CEO of Juzi.BOT （rui@chatie.io）
+- 导师：李佳芮 Wechaty co-creator，Founder & CEO of Juzi.BOT （rui@chatie.io）；李卓桓 Creator of Wechaty，Tencent TVP of Chatbot （zixia@zixia.net）
 - 学生开发者：胡星武（huxingwu@gmail.com）
 
 ### 基于 Wechaty Puppet Official Account 项目的用户与消息等基础功能的完善 <https://github.com/wechaty/summer-of-wechaty/issues/82>
@@ -83,15 +83,7 @@ Wechaty 在多平台、多功能多个维度上，共发布了 10项任务，并
 
 ## SoC破冰会会议纪实
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZcVRxXA5OWc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+{% include iframe.html src="https://www.https://www.youtube.com/watch?v=ZcVRxXA5OWc" %}
 
 ## 暑期2021 开发计划
 
@@ -99,10 +91,10 @@ Wechaty 在多平台、多功能多个维度上，共发布了 10项任务，并
 
 ### Wechaty 社区交付内容
 
-- **每周例行更新**：在即日起的每周日前（首次更新最晚时间为**6.30号**），学生开发者会在 [Wechaty SoC Issues](https://github.com/wechaty/summer-of-code/issues) 中，按照下文模板更新每周进度；如果在当周有明确的新进展和学习收获，学生开发者也会以博客形式在 [wechaty.github.io](https://github.com/wechaty/wechaty.github.io) 中分享。
-- **Plan Blog**：学生开发者们会在**6.30号**前以博客形式在[wechaty.github.io](https://github.com/wechaty/wechaty.github.io)进行分享，内容包括：排期规划、对应项目Repo、联系方式等，同时也作为每周进展在例行更新中同步。除blog之外，学生还应另外提供投影片以及视频演讲内容。
-- **POC Blog**：学生开发者们会在**8.30号**前以博客形式在[wechaty.github.io](https://github.com/wechaty/wechaty.github.io)进行分享，内容包括：完成的项目核心攻关、后续需要的支持和新的开发排期，同时也作为每周进展在例行更新中同步。除blog之外，学生还应另外提供投影片以及视频演讲内容。
-- **Finished Blog**：学生开发者们会在**9.30号**前以博客形式在[wechaty.github.io](https://github.com/wechaty/wechaty.github.io)进行分享，内容包括：完整的项目情况和实现的功能、后续长期的开发展望，同时也作为最后一次每周进展在例行更新中同步。除blog之外，学生还应另外提供投影片以及视频演讲内容。
+- **每周例行更新**：在即日起的每周日前（首次更新最晚时间为**7.18号**），学生开发者会在 [Wechaty SoC Issues](https://github.com/wechaty/summer-of-code/issues) 中，按照下文模板更新每周进度；如果在当周有明确的新进展和学习收获，学生开发者也会以博客形式在 [wechaty/wechaty.js.org](https://github.com/wechaty/wechaty.js.org) 中分享。
+- **Plan Blog**：学生开发者们会在**7.18号**前以博客形式在[wechaty/wechaty.js.org](https://github.com/wechaty/wechaty.js.org)进行分享，内容包括：排期规划、对应项目Repo、联系方式等，同时也作为每周进展在例行更新中同步。除blog之外，学生还应另外提供投影片以及视频演讲内容。
+- **POC Blog**：学生开发者们会在**8.30号**前以博客形式在[wechaty/wechaty.js.org](https://github.com/wechaty/wechaty.js.org)进行分享，内容包括：完成的项目核心攻关、后续需要的支持和新的开发排期，同时也作为每周进展在例行更新中同步。除blog之外，学生还应另外提供投影片以及视频演讲内容。
+- **Finished Blog**：学生开发者们会在**9.30号**前以博客形式在[wechaty/wechaty.js.org](https://github.com/wechaty/wechaty.js.org)进行分享，内容包括：完整的项目情况和实现的功能、后续长期的开发展望，同时也作为最后一次每周进展在例行更新中同步。除blog之外，学生还应另外提供投影片以及视频演讲内容。
 
 ### 暑期2021组委会交付内容
 
