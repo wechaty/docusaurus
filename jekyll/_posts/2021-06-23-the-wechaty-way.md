@@ -96,7 +96,7 @@ Meeting Notes 有以下几个价值：
 
 ### 会议视频
 
-为了保证会议的沉淀，重大线上会议会要求的主持者在会议结束后将会议视频上传到 [Youtube](https://www.youtube.com/playlist?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh) 并添加到 wechaty 的 playlist 中，主持人若没有添加权限，可以向 Wechaty PMC 申请。
+为了保证会议的沉淀，重大线上会议会要求的主持者在会议结束后将会议视频上传到 [Youtube](https://www.youtube.com/playlist?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh) 并添加到 wechaty 的 playlist 中，主持人若没有添加权限，可以找 [Huan](https://wechaty.js.org/contributors/huan/) 申请。
 
 上传到 Youtube 的同时，也在视频介绍中做好视频时间切割， [Wechaty ❤️ Google Season of Docs: Kick-off meeting with 20 Technical Writers!](https://www.youtube.com/watch?v=hTkM_XPpFfU&list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&index=43) 就是一个很好的示例。因为一次会议的时间很长，其他人看视频的时候就可以很容易根据下图介绍知道 **视频中 0:01:41 的时候讲的内容是 Introducing the Meeting Agenda**， 同时点击 **0:01:41** 可以快速跳转到视频播放的地方。
 
@@ -109,38 +109,20 @@ Meeting Notes 有以下几个价值：
 为了保证社区的每一次会议都能够有内容沉淀，重大会议后需要些会议博客，[博客撰写](#Wechaty 博客发布规范)会在下一个小节介绍。 一次会议博客至少要包括下面的内容：
 
 - 会议背景介绍
-- Zoom 会议视频
-- 参会人
 - 会议合影
+- 参会人
+- Zoom 会议视频
 - 会议议程（不要把Meeting Notes 的会议议程粘进去，而是用 Youtube 中做好的视频切割链接，这样方便读者可以快速的看自己关注的会议内容）
 
-Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hello Wechaty GSoD’21 Technical Writers!](https://wechaty.js.org/2021/05/08/gsod-2021-selected-technical-writers/) 是一个很好的会议博客案例。
+下面是在会议博客中嵌入视频的代码案例：
 
-以下是从博客中截取出的视频片段案例：
+```md
+{% include iframe.html src="https://www.youtube.com/watch?v=hTkM_XPpFfU" %}
+```
 
-### Agendas
+#### 会议博客例子
 
-- [0:01:41](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=101s) 1. Introducing the Meeting Agenda
-- [0:03:08](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=188s) 2. Self-introduction: Huan
-- [0:06:15](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=375s) 3. Self-introduction: Rui
-- [0:09:15](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=555s) 4. Self-introducing: Technical Writers
-- [0:24:53](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=1493s) 5. Introducing Wechaty
-- [0:29:37](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=1777s) 6. Introducing GSoD Project List
-- [0:41:46](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=2506s) 7. Introducing Received Proposals
-- [0:44:41](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=2681s) 8. Primary Project: Tutorial
-- [0:45:33](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=2733s) 8.1 Tutorial Proposal from Souvik Biswas
-- [0:49:24](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=2964s) 8.2 Tutorial Proposal from Shwetal Soni
-- [1:00:19](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=3619s) 9. Landing Page Proposal from Sajen Sarvajith K
-- [1:12:00](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=4320s) 10. Introduction & Explanation Proposal from Mukosa Joseph Mawa
-- [1:23:44](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=5024s) 11.1. How-to Guides Proposal from Vasvi Sood
-- [1:27:38](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=5258s) 11.2. How-to Guides Proposal from Abhishek Jaiswal
-- [1:33:05](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=5585s) 12. References Proposal from Shraddha Vasant Prasad
-- [1:41:00](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=6060s) 13. Volunteer Project
-- [1:43:00](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=6060s) 13.1 Volunteer Proposal from Rohitesh Jain
-- [1:45:42](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=6342s) 13.2 Volunteer Proposal from Vicky Liao
-- [1:57:49](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=7069s) 14. Budget Plan for Stipends
-- [2:05:28](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=7528s) 15. Webmaster Tools
-- [2:06:33](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=7593s) 16. Q&A
+Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hello Wechaty GSoD’21 Technical Writers](https://wechaty.js.org/2021/05/08/gsod-2021-selected-technical-writers/) 是一个很好的会议博客案例，完整的包含了上面的要求，建议第一次写会议博客的人先来看下这个案例。
 
 ## Wechaty 博客发布规范
 
