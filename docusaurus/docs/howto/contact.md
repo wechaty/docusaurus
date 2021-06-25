@@ -5,11 +5,26 @@ title: 'Manage contacts'
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
-All wechaty contacts are encapsulated as a Contact.Example includes [Examples/Contact-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/contact-bot.ts)
+Use the guide to help you integrate additional functions to an existing project which is present at [Github/Contact-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/contact-bot.ts) or check that your existing local system will run on Wechaty. If, you wish to learn on how to build the bot on your own, please visit one of our [Building the bot](https://wechaty.js.org/docs/examples/basic/contact-bot#building-the-bot) section.
 
-## List all contacts
+The steps outlined here mainly focuses on working with Javascript, but user are free to switch between any languages.All wechaty contacts are encapsulated as a Contact.
 
-List down all the contacts by its `id`, `name` & `Type`.
+## Prerequisites
+
+* Your system must have [Node.js](https://nodejs.org/en/download/package-manager/) installed (version >= 12).
+* Your system must have [Wechaty](https://github.com/wechaty/wechaty) (version >= 0.40).
+* You need to be familiar with the basics of Wechaty platform. If not, follow our [tutorials](https://wechaty.js.org/docs/tutorials/) section.
+* You need to have at least a minimal application ready to work, follow one of our [Example/Contact-Bot](https://wechaty.js.org/docs/examples/basic/contact-bot).
+
+### If you don't know where to start from
+
+See [Running our first ding-dong bot](https://wechaty.js.org/docs/getting-started/quick-start).
+
+The below function needs a basic scipt that can help run the bot. The basic script starts by importing the code from [Github/Contact-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/contact-bot.ts).Integrate the below code, for this action to work.
+
+## All contacts - define how to list all contact
+
+This section help you list down all your contacts from the Instant messaging platform you choose to intergrate this bot by its `id`, `name` & `type`.
 
 <Tabs
   groupId="programming-languages"
@@ -52,7 +67,7 @@ bot.on('ready', onReady)
 <TabItem value="js">
 
 ```js
-const { Contact } from 'wechaty'
+const { Contact } = require('wechaty')
 
 async function onReady () {
   const contactList = await bot.Contact.findAll()
@@ -129,21 +144,12 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
-### Explanation
+The expected output of the JavaScript code is:
+![All contacts](../../static/img/docs/howto/contact/all-contact.png)
 
-* `Contact.findAll` gets the contact list of the bot and include the contacts from bot's rooms.
+## Search in contacts - define how to search within contacts
 
-* `contactList.length` find out the total contacts from the list.
-
-* `contact.id` gets the contact id of the friend(wechaty contacts). This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://wechaty.js.org/docs/specs/puppet/)
-
-* `contact.name` gets the name from a contact from the list.
-
-* `contact.type` return the type of the Contact from the list.
-
-## Search in contacts
-
-Helps you find your contact from the list of contact.
+This guide help you find your contact from the list of contacts from the Instant messaging platform you choose to intergrate this bot.
 
 <Tabs
   groupId="programming-languages"
@@ -185,6 +191,8 @@ bot.on('ready', onReady)
 <TabItem value="js">
 
 ```js
+const { Contact } = require('wechaty')
+
 async function onReady () {
   // find by id:
   const filehelper = await bot.Contact.find('filehelper')
@@ -270,8 +278,5 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
-### Explanation
-
-* `Contact.find` finds the contact by name or alias, if the result is more than one, it return the first one.
-
-* `Contact.findAll` gets the contact list of the bot and include the contacts from bot's rooms.
+The expected output of the JavaScript code is:
+![Contact Search](../../static/img/docs/howto/contact/contact-find.png)
