@@ -129,11 +129,15 @@ Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hell
 
 ### 在博客中插入视频
 
-下面是在会议博客中嵌入视频的代码的简单案例：
+下面是在会议博客中嵌入视频的代码的简单案例，作为`include`标签的src参数传入视频链接即可。
 
-```code
+{% raw %}
+
+```liquid
 {% include iframe.html src="https://www.youtube.com/watch?v=hTkM_XPpFfU" %}
 ```
+
+{% endraw %}
 
 [univerone](https://wechaty.js.org/contributors/univerone/) 写了一篇非常详细的博客[使用jekyll include在wechaty博客中快速插入视频](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)，介绍了如何优雅的在博客中插入视频，有兴趣的同学也可以深入博客研究。
 
