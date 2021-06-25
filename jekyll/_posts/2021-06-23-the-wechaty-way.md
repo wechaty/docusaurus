@@ -131,7 +131,7 @@ Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hell
 
 下面是在会议博客中嵌入视频的代码的简单案例：
 
-```html
+```txt
 {% include iframe.html src="https://www.youtube.com/watch?v=hTkM_XPpFfU" %}
 ```
 
