@@ -116,7 +116,7 @@ Meeting Notes 有以下几个价值：
 
 下面是在会议博客中嵌入视频的代码案例：
 
-```md
+```html
 {% include iframe.html src="https://www.youtube.com/watch?v=hTkM_XPpFfU" %}
 ```
 
