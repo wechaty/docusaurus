@@ -1,5 +1,5 @@
 ---
-title: "Wechaty 社区贡献规范"
+title: "Wechaty 社区规范"
 author: lijiarui
 categories:
   - announcement
