@@ -30,7 +30,7 @@ If you do not have `Node.js` installed or your version is below requirement, get
 
 :::
 
-## Adding EventLogger plugin
+## Adding Event Logger plugin
 
 For the demonstration of adding this plugin, we will use the **Starter Bot** and show you how to add the `EventLogger` plugin to it. Follow the steps below:
 
