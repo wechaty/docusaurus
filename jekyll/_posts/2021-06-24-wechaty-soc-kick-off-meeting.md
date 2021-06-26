@@ -83,7 +83,25 @@ Wechaty 在多平台、多功能多个维度上，共发布了 10项任务，并
 
 ## SoC破冰会会议纪实
 
-{% include iframe.html src="https://www.https://www.youtube.com/watch?v=ZcVRxXA5OWc" %}
+{% include iframe.html src="https://www.youtube.com/watch?v=ZcVRxXA5OWc" %}
+
+- [0:08:39](https://youtu.be/ZcVRxXA5OWc?t=519) 李卓桓
+- [0:10:07](https://youtu.be/ZcVRxXA5OWc?t=607) 康嘉
+- [0:13:09](https://youtu.be/ZcVRxXA5OWc?t=789) 李佳芮
+- [0:14:46](https://youtu.be/ZcVRxXA5OWc?t=886) 吴京京
+- [0:16:17](https://youtu.be/ZcVRxXA5OWc?t=977) 鲁玉超
+- [0:17:56](https://youtu.be/ZcVRxXA5OWc?t=1076) 王玉丹
+- [0:19:23](https://youtu.be/ZcVRxXA5OWc?t=1163) 韩磊
+- [0:20:46](https://youtu.be/ZcVRxXA5OWc?t=1246) 肖诗诗
+- [0:21:55](https://youtu.be/ZcVRxXA5OWc?t=1315) 肖良玉
+- [0:23:02](https://youtu.be/ZcVRxXA5OWc?t=1382) 左雁茹
+- [0:24:12](https://youtu.be/ZcVRxXA5OWc?t=1452) 陈婧
+- [0:25:23](https://youtu.be/ZcVRxXA5OWc?t=1523) 沈晨
+- [0:27:41](https://youtu.be/ZcVRxXA5OWc?t=1661) 张瑞宁
+- [0:28:43](https://youtu.be/ZcVRxXA5OWc?t=1723) 刘靖
+- [0:30:03](https://youtu.be/ZcVRxXA5OWc?t=1803) 梁浩彬
+- [0:31:28](https://youtu.be/ZcVRxXA5OWc?t=1888) 林宇靖
+- [1:03:14](https://youtu.be/ZcVRxXA5OWc?t=3794) 刘志辉
 
 ## 暑期2021 开发计划
 
