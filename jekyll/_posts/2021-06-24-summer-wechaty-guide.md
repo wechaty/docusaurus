@@ -10,6 +10,8 @@ tags:
   - summer-of-wechaty
   - news
   - guide
+  - ospp
+  - ospp-2021
 image: /assets/2021/06-summer-wechaty-guide/teaser.png
 ---
 
@@ -99,7 +101,7 @@ XXX
 - 标题： `OSPP 2021-期初报告-你的标题`
 - 文件名： `2021-XX-XX-ospp-plan-XX`
 - 报告 category 为：`project`
-- 报告 tag 至少包括：`summer-of-wechaty`,`summer-2021`,`ospp-2021`,`plan`
+- 报告 tag 至少包括：`summer-of-wechaty`,`summer-2021`,`ospp`,`ospp-2021`,`plan`
 - 报告内容至少包括：
   - 项目名称
   - 合作者介绍
@@ -140,7 +142,7 @@ XXX
 - 标题： `OSPP 2021-期中报告-你的标题`
 - 文件名： `2021-XX-XX-ospp-mid-term-XX`
 - 报告 category 为：`project`
-- 报告 tag 至少包括：`summer-of-wechaty`,`summer-2021`,`ospp-2021`,`mid-term`
+- 报告 tag 至少包括：`summer-of-wechaty`,`summer-2021`,`ospp`,`ospp-2021`,`mid-term`，`ospp`
 - 报告内容至少包括：
   - 项目信息
     - 项目名称
@@ -179,7 +181,7 @@ XXX
 - 标题： `OSPP 2021-结项报告-你的标题`
 - 文件名： `2021-XX-XX-ospp-final-XX`
 - 报告 category 为：`project`
-- 报告 tag 至少包括：`summer-of-wechaty`,`summer-2021`,`ospp-2021`,`final`
+- 报告 tag 至少包括：`summer-of-wechaty`,`summer-2021`,`ospp`,`ospp-2021`,`final`
 - 报告内容至少包括：
   - 项目信息
     - 项目名称
