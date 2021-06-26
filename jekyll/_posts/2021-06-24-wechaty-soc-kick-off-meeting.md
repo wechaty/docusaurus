@@ -83,7 +83,6 @@ Wechaty 在多平台、多功能多个维度上，共发布了 10项任务，并
 
 ## SoC破冰会会议纪实
 
-<<<<<<< HEAD
 {% include iframe.html src="https://www.youtube.com/watch?v=ZcVRxXA5OWc" %}
 
 - [0:08:39](https://youtu.be/ZcVRxXA5OWc?t=519) 李卓桓
@@ -103,9 +102,6 @@ Wechaty 在多平台、多功能多个维度上，共发布了 10项任务，并
 - [0:30:03](https://youtu.be/ZcVRxXA5OWc?t=1803) 梁浩彬
 - [0:31:28](https://youtu.be/ZcVRxXA5OWc?t=1888) 林宇靖
 - [1:03:14](https://youtu.be/ZcVRxXA5OWc?t=3794) 刘志辉
-=======
-{% include iframe.html src="https://www.https://www.youtube.com/watch?v=ZcVRxXA5OWc" %}
->>>>>>> a610ce079080f0f3586cb06f3faeadfe83878643
 
 ## 暑期2021 开发计划
 
