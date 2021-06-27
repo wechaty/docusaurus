@@ -30,7 +30,7 @@ If you do not have `Node.js` installed or your version is below requirement, get
 
 :::
 
-## Add QR code terminal plugin
+## Adding QR code terminal plugin
 
 For adding this plugin, refer to **Starter Bot** for building a basic bot and then to add the `QR code terminal` plugin to it follow the steps below:
 
