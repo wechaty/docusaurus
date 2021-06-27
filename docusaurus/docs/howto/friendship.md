@@ -1,11 +1,32 @@
 ---
-title: 'Making friends'
+title: 'Send and accept friend requests'
 ---
 
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
-## Sending Request
+Sending and accepting friend requests can easily be done using wechaty onfriendship function. This guide help you Send request, Receive request(in friend event), Confirmation friendship(friend event) in a room.
+
+Use the guide to help you integrate additional functions to an existing project which is present at [Github/Friend-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/friend-bot.ts) or check that your existing local system will run on Wechaty. If, you wish to learn on how to build the bot on your own, please visit one of our [Building the bot](https://wechaty.js.org/docs/examples/basic/contact-bot#building-the-bot) section.
+
+The steps outlined here mainly focuses on working with Javascript, but user are free to switch between any languages.This guide help you Send, receive friend request, and friend confirmation events.
+
+## Prerequisites
+
+* Your system must have [Node.js](https://nodejs.org/en/download/package-manager/) installed (version >= 12).
+* Your system must have [Wechaty](https://github.com/wechaty/wechaty) (version >= 0.40).
+* You need to be familiar with the basics of Wechaty platform. If not, follow our [tutorials](https://wechaty.js.org/docs/tutorials/) section.
+* You need to have at least a minimal application ready to work, follow one of our [Example/Friend-Bot](https://wechaty.js.org/docs/examples/advanced/friend-bot/).
+
+### If you don't know where to start from
+
+See [Running our first ding-dong bot](https://wechaty.js.org/docs/getting-started/quick-start).
+
+The below function needs a basic scipt that can help run the bot. The basic script starts by importing the code from [Github/Friend-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/friend-bot.ts).Integrate the below code, for this action to work.
+
+## Send Request - define how to send a friend request
+
+Trying to expand the network can help you extend the employment opportunities and professional resources. If you have questions like "How can I friend someone on IM platform?" then you need this section to send friend requests.
 
 <Tabs
   groupId="programming-languages"
@@ -119,7 +140,12 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
-## Receiving Request
+The expected output of the JavaScript code is:
+![Send Request](../../static/img/docs/howto/friendship/send-request.png)
+
+## Receive Request - define how to accept the friend request
+
+The more you network, the more you'll grow and learn how to make lasting connections,so are the others. When someone sends you the request, you choose whether to have the friend connection or to reject the connection.This section elaborates on how to accept friend requests.
 
 <Tabs
   groupId="programming-languages"
@@ -140,11 +166,11 @@ class MyBot(Wechaty):
 <TabItem value="ts">
 
 ```ts
-import { Friendship } from 'wechaty'
+const { Friendship } = require('wechaty')
 
 async function onFriendship (friendship: Friendship) {
   if (friendship.type() === Friendship.Type.Receive) {
-    console.info('New requrest from', friendship.contact())
+    console.info('New request from', friendship.contact())
     console.info('Hello message:', friendship.hello())
     await friendship.accept()
   } else if (friendship.type() === Friendship.Type.Confirm) {
@@ -159,11 +185,11 @@ bot.on('friendship', onFriendship)
 <TabItem value="js">
 
 ```js
-import { Friendship } from 'wechaty'
+const { Friendship } = require('wechaty')
 
 async function onFriendship (friendship) {
   if (friendship.type() === Friendship.Type.Receive) {
-    console.info('New requrest from', friendship.contact())
+    console.info('New request from', friendship.contact())
     console.info('Hello message:', friendship.hello())
     await friendship.accept()
   } else if (friendship.type() === Friendship.Type.Confirm) {
@@ -230,3 +256,6 @@ class MyBot(Wechaty):
 
 </TabItem>
 </Tabs>
+
+The expected output of the JavaScript code is:
+![Recieve Request](../../static/img/docs/howto/friendship/receive-request.png)
