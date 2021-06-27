@@ -2,11 +2,39 @@
 title: QR Code Terminal plugin
 ---
 
-`QR code terminal` plugin shows QR Code for scanning in terminal. In this tutorial you will learn how to integrate this plugin with [World's Shortest Chatbot](examples/basic/the-worlds-shortest-chatbot-code-in-6-lines.md).
+`QR code terminal` plugin shows QR Code for scanning in terminal. In this tutorial you will learn how to integrate this plugin with a Wechaty bot.
 
-You can refer to [World's Shortest Chatbot](examples/basic/the-worlds-shortest-chatbot-code-in-6-lines.md) to make a simple bot and then for adding `QR code terminal` plugin follow the steps below:
+## Requirements
 
-## 1. Add dependency
+1. [Node.js](https://nodejs.org/en/download) v12+
+2. [Wechaty](https://www.npmjs.com/package/wechaty) v0.40+
+3. [Wechaty Plugin Contrib](https://www.npmjs.com/package/wechaty-plugin-contrib)
+
+## Getting started
+
+You will require `Node.js` version **12.0** or greater in order to follow this tutorial. You can verify whether `Node.js` is installed on your system or whether you have the correct version using the command:
+
+```sh
+node -v
+```
+
+If you do not have `Node.js` installed or your version is below requirement, get the latest version of `Node.js` by following the links below:
+
+:::note Node.js installation docs
+
+* [Windows](https://nodejs.org/en/download/package-manager/#windows)
+* [Linux\(Debian/Ubuntu\)](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+* [macOS](https://nodejs.org/en/download/package-manager/#macos)
+
+> Installation guide for `Node.js` on other platforms can be found [here](https://nodejs.org/en/download/package-manager/).
+
+:::
+
+## Add QR code terminal plugin
+
+For adding this plugin, refer to **Starter Bot** for building a basic bot and then to add the `QR code terminal` plugin to it follow the steps below:
+
+### 1. Add dependency
 
 For using any plugin, you have to add `wechaty-plugin-contrib` NPM package to the dependencies using the following command:
 
@@ -14,7 +42,7 @@ For using any plugin, you have to add `wechaty-plugin-contrib` NPM package to th
 npm i wechaty-plugin-contrib
 ```
 
-## 2. Integrating the plugin
+### 2. Integrate the plugin
 
 Inside `bot.ts` file, import the plugin:
 
@@ -37,11 +65,11 @@ bot.use(QRCodeTerminal(config))
 bot.start()
 ```
 
-## 3. Running the bot
+### 3. Run the bot
 
 Now, you are done with the integration of `QR code terminal plugin` with your bot. For running the bot you have to **export/set** an environment variable with the type of puppet to use and then run the bot.
 
-### Linux/macOS
+#### Linux/macOS
 
 ```bash
 export WECHATY_LOG=verbose
@@ -51,7 +79,7 @@ export WECHATY_PUPPET=wechaty-puppet-wechat
 npm start
 ```
 
-### Windows
+#### Windows
 
 ```bash
 set WECHATY_LOG=verbose
@@ -64,6 +92,10 @@ npm start
 Congratulations! you have successfully added `QR code terminal` plugin to your bot. On running the bot it will show a QR code on terminal.
 
 ![QR code terminal plugin output](../../static/img/docs/qrcode-bot/output.png)
+
+## Conclusion
+
+You can use this `QR code terminal` plugin for building the bots where you have to connect to a device. You can refer to [Ding Dong bot](../getting-started/hard-way.mdx). In ding dong bot you have to scan the generated QR code to connect to **Whatsapp/Wechat**.
 
 ## References
 
