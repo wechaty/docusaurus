@@ -1,7 +1,7 @@
 ---
 title: "OSPP 2021 Project Status"
 author: simplepad
-image: /assets/2021/06-ospp-startup-discussion/ospp-meeting-image.jpg
+image: /assets/2021/06-ospp-startup-discussion/ospp-meeting-image.png
 categories: event
 tags:
   - ospp
@@ -22,6 +22,15 @@ tags:
 - Valerie
 
 {% include iframe.html src="https://www.youtube.com/watch?v=_WmEry_yl0Y" %}
+
+- [13:10](https://youtu.be/_WmEry_yl0Y?t=790) Project Application Statistics
+- [20:25](https://youtu.be/_WmEry_yl0Y?t=1256) How to work with students at Github ?
+- [28:31](https://youtu.be/_WmEry_yl0Y?t=1711) Kick off First Meeting with Students
+- [43:42](https://youtu.be/_WmEry_yl0Y?t=2622) Summer of Wechaty Admin
+- [53：44](https://youtu.be/_WmEry_yl0Y?t=3224) Volunteer/Prize of Wechaty
+- [1:06:04](https://youtu.be/_WmEry_yl0Y?t=3964) Milestone: Kick off Meeting for students
+- [1:06:53](https://youtu.be/_WmEry_yl0Y?t=4013) Milestone: Mid-Term Delivery
+- [1:07:45](https://youtu.be/_WmEry_yl0Y?t=4065) Three Blogs required
 
 ## Agenda
 
