@@ -80,7 +80,7 @@ Currently neither of the Donut, WXWork, Rock, PadLocal have support to this stat
 
 The order of events before the bot starts is very important and this section explains it in a a detailed manner:
 
-1. When you first start the bot , the `login` event is first  generated.
+1. When you first start the bot, the `login` event is first  generated.
 2. However, the Wechaty system needs to load the contact payload of the `userSelf` before it emits the `login` event because the login event of Wechaty needs to take a `userSelf` instance..So there will be some delay before the Wechaty emit the `login` event after it received the `login` event from its puppet.
 3. Then the `ready-ed` event is generated.The ievent is just before the `ready` event.
 4. Then lastly the `ready` event is generated.
