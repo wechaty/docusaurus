@@ -34,7 +34,11 @@ If you do not have `Node.js` installed or your version is below requirement, get
 
 For the demonstration of adding this plugin, we will use the **Starter Bot** and show you how to add the `EventLogger` plugin to it. Follow the steps below:
 
-### 1. Install dependency
+### 1. Create a starter bot
+
+Follow the instructions on the **Starter Bot** page to create the foundation of a Wechaty bot.
+
+### 2. Install dependency
 
 As the `EventLogger` plugin is present in the `wechaty-plugin-contrib` NPM package, you have to first add it to the dependencies. It can be installed using the following command:
 
@@ -42,7 +46,7 @@ As the `EventLogger` plugin is present in the `wechaty-plugin-contrib` NPM packa
 npm i wechaty-plugin-contrib
 ```
 
-### 2. Integrate the plugin
+### 3. Integrate the plugin
 
 Inside the `event-logger-bot.ts` file, import the plugin:
 
@@ -58,7 +62,7 @@ bot.use(EventLogger())
 bot.start()
 ```
 
-### 3. Run the bot
+### 4. Run the bot
 
 In order to run the bot, first you have to **export/set** an environment variable with the type of puppet to use, and then start the bot:
 
