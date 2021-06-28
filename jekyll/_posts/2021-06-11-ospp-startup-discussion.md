@@ -1,6 +1,6 @@
 ---
 title: "OSPP 2021 Project Status"
-author: simplepad
+author: wj-mcat
 image: /assets/2021/06-ospp-startup-discussion/ospp-meeting-image.png
 categories: event
 tags:
