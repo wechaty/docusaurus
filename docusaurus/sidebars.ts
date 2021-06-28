@@ -132,7 +132,7 @@ const usingPluginWithWechaty: SubMenuData = {
     'using-plugin-with-wechaty/overview',
     'using-plugin-with-wechaty/event-logger',
     'using-plugin-with-wechaty/qr-code-terminal',
-    'using-plugin-with-wechaty/message-awaiter',
+    'using-plugin-with-wechaty/heartbeat',
   ]
 }
 

@@ -44,9 +44,9 @@ You can get more information about these plugins in the **References** section o
 
 The plugin **tutorials** are available in the respective links:
 
-* [Event Logger Plugin](./event-logger)
-* [QR Code Terminal Plugin](./qr-code-terminal)
-* [Message Awaiter Plugin](./message-awaiter)
+* [Event Logger plugin](./event-logger)
+* [QR Code Terminal plugin](./qr-code-terminal)
+* [Heartbeat plugin](./heartbeat)
 
 ## Wechaty Plugin Directory
 
