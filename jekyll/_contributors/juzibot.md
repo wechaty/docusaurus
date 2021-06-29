@@ -2,7 +2,7 @@
 name: juzibot（句子互动）
 site: https://github.com/gangena
 bio: 北京句子互动科技有限公司
-avatar: /assets/contributors/juzibot/juzibot图标.jpg
+avatar: /assets/contributors/juzibot/juzibot.jpg
 ---
 
 
