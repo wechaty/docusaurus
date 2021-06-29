@@ -1,168 +1,120 @@
 ---
-title: "Wechaty SoC Midterm Demo Day"
+title: "Open Source 大咖说开源--wechaty的开源之路"
 author: juzibot
 categories: announcement
 tags:
   - summer-of-wechaty
-  - summer-2020
+  - summer-2021
   - talk
   - news
   - meetup
   - featured
-image: /assets/contributors/wechaty-soc-midterm-demo-day/midterm-demo-day.png
+image: /assets/2021/06-summer-2021-open-source/001.png
 ---
 
 > 作者: [juzibot](https://github.com/juzibot/)
 
-## 关于暑期2020
+<!-- more -->
+![intro](/assets/2021/06-summer-2021-open-source/002.png)
 
-“开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
-旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
-根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。
+##  自我介绍
+高原：句子互动联合创始人&CTO，开源项目Wechaty commiter，前亚马逊，Expedia工程师，Bot Friday 联合发起人。
 
-官网：<https://isrc.iscas.ac.cn/summer2020>
-
-官方新闻：<http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html>
-
-## Wechaty 暑期2020宣讲会
-
-{% include iframe.html src="https://youtu.be/fMFzCexnDsY" %}
-
-你可以在Bilibili上查看[暑期2020宣讲会视频](//player.bilibili.com/player.html?aid=625978692&bvid=BV1et4y1y7a2&cid=199810616&page=13)
-
-你也可以在Google Docs上查看[暑期2020宣讲会Slide](https://docs.google.com/presentation/d/1ZLH37rQyRgChGqFCUDjA5rbVgBuRkVM4Tys-_ls0gs0/edit#slide=id.g88410f616d_1_20)
-
-## Wechaty 暑期2020中期路演日
-
-此次的11个项目的学生开发者，均录制了一份路演视频，向社区介绍具体的项目进展和后续规划。
-在路演日中，除了按顺序播放视频，还会邀请社区导师和开发者进行评价和指导，并给出切实有效的建议。
-此外，开发者们可以在路演日中找到自己感兴趣的项目，并在路演日结束后，与对应的开发者取得联系并在后续共同开发。
-
-## Wechaty 中期项目列表
-
-Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 项任务，并通过 issue 的方式进行每周的更新。
-如果你有看到感兴趣的项目，可以直接在对应 issue 下面找到负责对应任务的开发者。
-
-你可以在查看[开发者和项目地址](https://wechaty.github.io/wechaty-soc-kick-off-meeting/)
-
-### 多语言：为 go-wechaty 设计实现 插件体系 <https://github.com/wechaty/summer-of-code/issues/9>
-
-- 导师：丁小雨（ 614422099@qq.com），丁超飞（dchaofei@163.com），李博杰（silkage@silkage.net）
-- 学生开发者：林昊翰，西安电子科技大学本科生（finctive@foxmail.com）
-
-### 多语言：Go-wechaty Github Action optimization <https://github.com/wechaty/summer-of-code/issues/8>
-
-- 导师：丁小雨（ 614422099@qq.com），丁超飞（dchaofei@163.com），李博杰（silkage@silkage.net）
-- 学生开发者：唐光彬，华南农业大学本科生（Tang.Packet@outlook.com）
-
-
-{% include iframe.html src="https://www.bilibili.com/video/BV13T4y1L748/" %}
-
-### 多语言：Wechaty Java 移植组件开发 <https://github.com/wechaty/summer-of-code/issues/4>
-
-- 导师：刁政欣 阿里开发工程师 Author of Jahttps://www.bilibili.com/video/BV13T4y1L748/)va-wechaty （diaozxin@gmail.com）
-- 学生开发者：陈炀，福州大学本科生（1184016190@qq.com）
-
-{% include iframe.html src="https://www.youtube.com/watch?v=ipRq3kT32wI" %}
-
-### 多平台：基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人 <https://github.com/wechaty/summer-of-code/issues/2>
-
-- 导师：高原，句子互动CTO、前亚马逊工程师（gaoyuan@juzi.bot）；李佳芮，句子互动CEO、专注微信生态近10年（rui@juzi.bot）
-- 学生开发者：谢昱清，清华大学本科生（1205402283@qq.com）
-
-{% include iframe.html src="https://work.weixin.qq.com/wework_admin/liveroom/v2/replay?ref=app&roomid=6863669709273989330" %}
-
-### 多平台：基于开放 API 封装 Wechaty 接口下的钉钉聊天机器人 <https://github.com/wechaty/summer-of-code/issues/11>
-
-- 导师：高原，句子互动CTO、前亚马逊工程师（gaoyuan@juzi.bot）；李佳芮，句子互动CEO、专注微信生态近10年（rui@juzi.bot）
-- 学生开发者：杨明哲，福州大学本科生（yutinice@foxmail.com）
-
-{% include iframe.html src="https://www.bilibili.com/video/BV1fK4y1Y7B3" %}
-
-### 多平台：基于开放 API 封装 Wechaty 接口下的飞书聊天机器人 <https://github.com/wechaty/summer-of-code/issues/12>
-
-- 导师：高原，句子互动CTO、前亚马逊工程师（gaoyuan@juzi.bot）；李佳芮，句子互动CEO、专注微信生态近10年（rui@juzi.bot）
-- 学生开发者：范蕊，南开大学本科生（953299708@qq.com）
-
-{% include iframe.html src="https://www.bilibili.com/video/BV1n54y1U7Fn/" %}
-
-### 多平台：基于 RPA 封装 Wechaty 接口下的抖音聊天机器人 <https://github.com/wechaty/summer-of-code/issues/13>
-
-- 导师：尹伯昊，连续创业者，句子互动CMO（yinbohao@juzi.bot）
-- 学生开发者：王俊伟，长春工业大学本科生（863445607@qq.com）
-
-{% include iframe.html src="https://youtube/zDIPzGztn_E" %}
-
-### 多平台：基于 RPA 封装 Wechaty 接口下的快手聊天机器人 <https://github.com/wechaty/summer-of-code/issues/14>
-
-- 导师：尹伯昊，连续创业者，句子互动CMO（yinbohao@juzi.bot）
-- 学生开发者：毕凯乔，长春工业大学本科生（358461417@qq.com）
-
-{% include iframe.html src="https://github.com/wechaty/summer-of-code/issues/6" %}
-
-### 多功能：基于python-wechaty的群聊助手机器人 <https://github.com/wechaty/summer-of-code/issues/6>
-
-- 导师：吴京京：Wechaty Committer，Python Wechaty Author（ 1435130236@qq.com）
-- 学生开发者：孔祥哲，清华大学本科生（15068701650@163.com）
-
-{% include iframe.html src="https://www.youtube.com/embed/WlxClO3C_Sc" %}
-
-### 多功能：基于Python-wechaty建立一个斗图机器人 <https://github.com/wechaty/summer-of-code/issues/7>
-
-- 导师：黄纯洪，python-wechaty contributor（huangaszaq@gmail.com）
-- 学生开发者：肖子霖，四川大学本科生（me@mrxiao.net）
-
-{% include iframe.html src="https://www.bilibili.com/video/BV1kZ4y1M7F6/" %}
-
-### 多功能：编写一个“每日一句”插件 <https://github.com/wechaty/summer-of-code/issues/10>
-
-- 导师：Gcaufy，20000+Star小程序框架Wepy作者、Wechaty Plugin系统设计师（gcaufy@gmail.com）
-- 学生开发者：江姗姗，北京大学二学位本科生（univerone@outlook.com）
-
-{% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1vT4y157x5" %}
-
-## Midterm Demo Day会议纪实
-
-{% include iframe.html src="https://www.youtube.com/watch?v=cNSlZez5oY4" %}
+## Wechaty开源之路直播纪实
+{% include iframe.html src="https://www.youtube.com/watch?v=0UMLAA1Pa-s" %}
 
 ### Agendas议程
+- [0:04:52](https://youtu.be/0UMLAA1Pa-s?t=293) 自我介绍
+- [0:05:55](https://youtu.be/0UMLAA1Pa-s?t=353) 什么是wechaty
+- [0:12:58](https://youtu.be/0UMLAA1Pa-s?t=778) 如何使用wechaty
+- [0:22:18](https://youtu.be/0UMLAA1Pa-s?t=1338) wechaty的开源之路
+- [0:39:39](https://youtu.be/0UMLAA1Pa-s?t=2379) 基于wechaty的开源项目
 
-- [0:01:41](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=101s) 1.介绍会议议程
-- [0:02:07](https://youtu.be/cNSlZez5oY4?t=127) 2.孔祥哲：基于python-wechaty的群聊助手机器人
-- [0:10:00](https://youtu.be/cNSlZez5oY4?t=599) 3.肖子霖:基于Python-wechaty建立一个斗图机器人
-- [0:23:57](https://youtu.be/cNSlZez5oY4?t=1433) 4.江珊珊:编写一个“每日一句”插件
-- [0:30:31](https://youtu.be/cNSlZez5oY4?t=1831) 5.陈炀:Wechaty Java 移植组件开发
-- [0:37:03](https://youtu.be/cNSlZez5oY4?t=2223) 6.谢昱清:基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人
-- [0:48:35](https://youtu.be/cNSlZez5oY4?t=2915) 7.杨明哲:基于开放 API 封装 Wechaty 接口下的钉钉聊天机器人
-- [0:55:39](https://youtu.be/cNSlZez5oY4?t=3339) 8.范蕊:基于开放 API 封装 Wechaty 接口下的飞书聊天机器人
-- [1:05:32](https://youtu.be/cNSlZez5oY4?t=3932) 9.王俊伟:基于 RPA 封装 Wechaty 接口下的抖音聊天机器人
-- [1:12:20](https://youtu.be/cNSlZez5oY4?t=4340) 10.毕凯乔:基于 RPA 封装 Wechaty 接口下的快手聊天机器人
-- [1:20:25](https://youtu.be/cNSlZez5oY4?t=4825) 11.总结
+## 1. 什么是Wechaty
+- 官方介绍：
+A Conversational RPA SDK for Wechat which can help you create a bot in 6 lines of javascript, with cross-platform support including Linux, Windows, Darwin(OSX/Mac) and Docker.
+也就是帮助聊天机器人开发者快速搭建聊天机器人的框架，并且支持多个系统平台。
+- Wechaty的使命：
+给聊天机器人的开发者提供一个最好的开源sdk，不断优化sdk，给开发者最好的体验。帮助开发者更多关注于逻辑应用，而不是与平台的底部对接上，只需关乎自己写上层应用的代码就可以了。
+- 开发者们的评价：
+腾讯的软件工程师，著名小程序vp框架的作者。在管理社区时用到了wechaty。并评价："Wechaty is a great solution, I believe there would be much more users recognize it."
+谷歌工程师，好室友项目的创始人，创建了帮助留学生找房的平台，所有交互在微信群内，基于wechaty搭建了平台，并服务了5000左右的活跃用户。他评价："太好用，好用的想哭"。
+- Wechaty越来越受欢迎，从2016年的330star到现在的10000+star很难得，因为在GitHub上超过10000star的并不多。开发者遍布全球各地，来自不同的互联网公司：微软、腾讯、谷歌、阿里巴巴、百度等等。Contributor来自各个大厂的开发者，在使用wechaty时为我们贡献了代码，Wechaty已经被854个开源项目引用了，了解到还有许多非开源项目也在使用wechaty，真正使用的数量庞大。
 
-You can learn more from our [meeting notes][meeting_notes].
+## 2. 怎样使用Wechaty
+- 用typescript举例子：
+![intro](/assets/2021/06-summer-2021-open-source/003.png)
+- 引入wechaty和二维码的包
+![intro](/assets/2021/06-summer-2021-open-source/004.png)
+- 创建新的bot并给他命名，加入：登陆事件，扫码事件（用到二维码的包），message的信息（在bot上收到message的情况）
+![intro](/assets/2021/06-summer-2021-open-source/005.png)
+- 六行代码实现聊天机器人
+![intro](/assets/2021/06-summer-2021-open-source/006.png)
+- 一个简单的叮咚的机器人：有人说叮，机器人就会说咚
+![intro](/assets/2021/06-summer-2021-open-source/007.png)
+大家可以去实现自己想要的任何逻辑，进行不同操作，获取消息后，对消息做不同的指令，做自己想要的逻辑，感兴趣的可以自己下载，随意玩一玩。
 
-[meeting_notes]: https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.5ztnno5qivcb
+## 3. wechaty的开源之路
+大家应该知道怎么用了，现在开始讲一讲开源之路上面经历了哪些事情。
 
+- Wechaty始于chatbot爱好者：李卓桓，他是一个很懒又聪明的人，在2016年，微信还没有500人的上限，他的微信里有12859个联系人，数百个百人群，有1000+未读消息，而他会写程序会开源，希望自动化处理微信里的消息，过滤不必要的消息，抽取筛选重要信息并处理。
 
-[00:01](df )dg---
+- 2016年的wechaty：支持微信、Web接入，当时只有300star。
 
-## 暑期2020 开发计划
+- 到了2018年，微信网页版限制登录，一大部分用户无法使用，社区出现非网页版接入方案；为了开发者无缝切换方案，运行稳定，提升效率，实施了新的策略，实现方式和代码都不同，对wechaty进行了一次重大的重塑，引入Puppet概念，puppet是自动化测试的框架，相当于一个适配器。
+![intro](/assets/2021/06-summer-2021-open-source/009.png)
+绿色部分：为上层，是开发者直接接触到的部分，为不同的类，像刚刚例子中用到的，都是开发者在写业务逻辑时需要频繁调用使用的。
+红色部分（puppet）：抽象的概念定义好了与wechaty对接的抽象接口，下面的实现需要按照要求去实现，只要底层实现符合标准，就会无缝的对接到wechaty上面。底层实现会对接到不同的平台上，去做数据的交互，再提交到上层的wechaty上面。
+Puppet巨大的好处：不改动任何业务逻辑代码，切换环境变量即可切换底层实现；让开发者无需关注底层接入实现，只关心自己的业务逻辑；社区里不同的底层实现可以无缝交付到开发者手里，为后续的更多IM实现奠定了坚实的基础；就有更多的开发者愿意做底层接入，与上层开发者有更好的配合。
 
-此次暑期2020活动中，开发者分别需要在Wechaty社区内完成例行交付、向组委会提供两个节点的代码并完成答辩，其所有成果均会以开源的形式向社区开放。
+- 2019年，有趣的wechaty项目开始大量的出现。
+微信上的讨论无法在邮件列表中存档，也无法通过永久地址进行访问特定讨论内容，交流讨论内容多基于中文，对国际开发者不友好，阻碍了跨越国界的理解和互动，为了解决以上问题而出现了OSS.CHAT，OSS.CHAT的功能是：当用户在 GitHub 上发布 issue 或者评论 issue 的时候，对应的微信群内会收到消息；群主引导用户将重要信息在 GitHub 的 issue 中进行回复讨论，正常群内闲聊内容在群中讨论；发布的中文issue 会被自动翻译成英文。
 
-### Wechaty 社区交付内容
+大家若感兴趣，加入方式如下： 
+[Getting Started Tutorial (video)](https://youtu.be/HNksCmm_pvY) 
+[GitHub Repo](https://github.com/kaiyuanshe/osschat) 
+[Community Meeting Notes](https://shimo.im/docs/wGHydDxvWGjWKgDK) 
 
-- **Finished Blog**：学生开发者们会在**9.30号**前以博客形式在[wechaty.github.io](https://github.com/wechaty/wechaty.github.io)进行分享，内容包括：完整的项目情况和实现的功能、后续长期的开发展望，同时也作为最后一次每周进展在例行更新中同步。
+- 2020年，加入 2020 开源软件供应链点亮计划，极大程度的扩展了 Wechaty 支持的 IM 接入数量，多语言版本的 Wechaty，更多非 Javascript 语言的开发者涌入社区
+Wechaty 支持 Plugin 系统，写一份代码，可以在7个不同的主流平台上运行，只需要切换一下环境变量就可以。
 
-### 暑期2020组委会交付内容
+- 2021年，参加了 Google Season of Docs，加入 2021 开源软件供应链点亮计划，Wechaty 主项目的 Star 数突破一万，网页版重新回归接入wechaty，更多新的有意思的IM的接入推进中。有很多来自全球各地的typewriter帮我们项目来优化我们的文档，目前还在推进中，大概有10个左右的typewriter在写。
 
-- **完整项目提交和汇报**：学生开发者们会在**9.30号**前完成，届时项目完整代码会向社区开放。
+- 终点和目标
+我们已经在一定程度上实现了我们的使命，现在的开发者已经可以很大程度上的只关注业务上的实现了，不必关注底层的实现，wechaty不敢说是做的最好的，但从开发者的反馈来看，我们已经是很成功的项目。
+
+## 4. 基于wechaty的开源项目
+
+### 算卦机器人 <https://wechaty.js.org/2020/06/28/build-divination-yibot/>
+![intro](/assets/2021/06-summer-2021-open-source/010.png)
+
+### 诗歌搜索机器人 <https://wechaty.js.org/2020/07/07/wechat-poem-robot/>
+![intro](/assets/2021/06-summer-2021-open-source/011.png)
+
+### 聚会娱乐机器人 <https://wechaty.js.org/2020/06/06/wechaty-game-bot/>
+![intro](/assets/2021/06-summer-2021-open-source/012.png)
+
+### 外卖机器人 <https://wechaty.js.org/2019/12/23/wechaty-north-america-ricepo/>
+![intro](/assets/2021/06-summer-2021-open-source/013.png)
+
+### 中文学习助理 <https://wechaty.js.org/2020/06/19/archyshuo-anki-assistant/>
+![intro](/assets/2021/06-summer-2021-open-source/014.png)
+
+### 奇绩创坛机器人 <https://wechaty.js.org/2020/08/08/qijibot-sales-automation/>
+![intro](/assets/2021/06-summer-2021-open-source/015.png)
+
+### 工作日报机器人 <https://wechaty.js.org/2020/07/11/wechaty-daily-report/>
+![intro](/assets/2021/06-summer-2021-open-source/016.png)
+
+若感兴趣，还有更多：<https://wechaty.js.org/blog/>
+
+最后，欢迎大家加入wechaty的社区，项目、文档、博客的地址。
+
+项目：<https://github.com/wechaty/wechaty>
+文档：<https://wechaty.js.org/v/zh/>
+博客：<https://wechaty.github.io/>
 
 ## 欢迎正在阅读的你参与其中
 
-虽然“暑期2020”的报名已经结束，但Wechaty社区依然欢迎正在阅读本篇内容的你参与到暑期2020的工作中来。
-以下是几种可能的参与方式：
-
-- 时刻跟进Wechaty SoC项目的每周例行更新 Issue，并直接与相关负责导师和学生开发者取得联系，和他们交流相关进展。
-- 在 Wechaty 开发者群内，为学生开发者们的Plan Blog、POC Blog和Finished Blog点赞和提出想法。
-- 直接参与已经完成部分工作的项目开发，为学生开发者们负责的复杂项目添砖加瓦。
+如果有人有兴趣一起加入一起来在企业级的scrm软件上面为营销过程去提效的话，欢迎大家联系我，我们一起聊一聊能否一起合作。
+![intro](/assets/2021/06-summer-2021-open-source/008.png)
