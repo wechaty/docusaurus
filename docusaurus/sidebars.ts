@@ -126,6 +126,15 @@ const gettingStarted: SubMenuData = {
   ],
 }
 
+const usingReduxWithWechaty: SubMenuData = {
+  label: 'Using Redux with Wechaty',
+  items: [
+    'using-redux-with-wechaty/overview',
+    'using-redux-with-wechaty/vannila-redux',
+    'using-redux-with-wechaty/ducks-proposal',
+  ]
+}
+
 const community: SubMenuData = {
   label: 'Community',
   items: [
@@ -264,7 +273,7 @@ const tutorials = {
     'tutorials/usage-with-heroku',
     'tutorials/using-plugin-with-wechaty',
     'tutorials/using-vorpal-with-wechaty',
-    'tutorials/using-redux-with-wechaty',
+    subMenu(usingReduxWithWechaty),
     'tutorials/cheatsheet',
     subMenu(examples),
   ],
