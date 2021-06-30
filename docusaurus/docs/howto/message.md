@@ -9,7 +9,7 @@ Automation of messages can be done easily  with wechaty onMessage function. This
 
 ## Mention
 
-Use this Mention feature to send a (@ mention) others in the room.This function works if  the message recieved  by the onMessage function belongs to a room.
+Use this Mention feature to send a (@ mention) to others in the room.This function works if the message recieved by the onMessage function belongs to a room.
 
 <Tabs
   groupId="programming-languages"
@@ -146,7 +146,7 @@ The expected output of the JavaScript code is:
 
 ## Self message
 
-Use this Self message feature to reply to the bot.This function works if  the message recieved  by the onMessage function has been sent by the bot itself.
+Use this Self message feature to reply to the bot.This function works if the message recieved by the onMessage function has been sent by the bot to itself.
 
 <Tabs
   groupId="programming-languages"
