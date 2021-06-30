@@ -34,7 +34,11 @@ If you do not have `Node.js` installed or your version is below requirement, get
 
 For adding this plugin, refer to **Starter Bot** for building a basic bot and then to add the `QR code terminal` plugin to it follow the steps below:
 
-### 1. Add dependency
+### 1. Create a starter bot
+
+Follow the instructions on the **Starter Bot** page to create the foundation of a Wechaty bot.
+
+### 2. Add dependency
 
 For using any plugin, you have to add `wechaty-plugin-contrib` NPM package to the dependencies using the following command:
 
@@ -42,7 +46,7 @@ For using any plugin, you have to add `wechaty-plugin-contrib` NPM package to th
 npm i wechaty-plugin-contrib
 ```
 
-### 2. Integrate the plugin
+### 3. Integrate the plugin
 
 Inside `bot.ts` file, import the plugin:
 
@@ -65,7 +69,7 @@ bot.use(QRCodeTerminal(config))
 bot.start()
 ```
 
-### 3. Run the bot
+### 4. Run the bot
 
 Now, you are done with the integration of `QR code terminal plugin` with your bot. For running the bot you have to **export/set** an environment variable with the type of puppet to use and then run the bot.
 
