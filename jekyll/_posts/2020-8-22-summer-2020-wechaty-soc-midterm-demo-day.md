@@ -47,77 +47,71 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 
 ### 多语言：为 go-wechaty 设计实现 插件体系 <https://github.com/wechaty/summer-of-code/issues/9>
 
-- 导师：丁小雨（ 614422099@qq.com），丁超飞（dchaofei@163.com），李博杰（silkage@silkage.net）
-- 学生开发者：林昊翰，西安电子科技大学本科生（finctive@foxmail.com）
+- 导师：丁小雨<614422099@qq.com>，丁超飞<dchaofei@163.com>，李博杰<silkage@silkage.net>
+- 学生开发者：林昊翰，西安电子科技大学本科生<finctive@foxmail.com>
 
 ### 多语言：Go-wechaty Github Action optimization <https://github.com/wechaty/summer-of-code/issues/8>
 
-- 导师：丁小雨（ 614422099@qq.com），丁超飞（dchaofei@163.com），李博杰（silkage@silkage.net）
+- 导师：丁小雨<614422099@qq.com>，丁超飞<dchaofei@163.com>，李博杰<silkage@silkage.net>
 - 学生开发者：唐光彬，华南农业大学本科生（Tang.Packet@outlook.com）
-
-
 {% include iframe.html src="https://www.bilibili.com/video/BV13T4y1L748/" %}
 
 ### 多语言：Wechaty Java 移植组件开发 <https://github.com/wechaty/summer-of-code/issues/4>
 
-- 导师：刁政欣 阿里开发工程师 Author of Jahttps://www.bilibili.com/video/BV13T4y1L748/)va-wechaty （diaozxin@gmail.com）
-- 学生开发者：陈炀，福州大学本科生（1184016190@qq.com）
-
+- 导师：刁政欣 阿里开发工程师 Author of Jahttps://www.bilibili.com/video/BV13T4y1L748/)va-wechaty<diaozxin@gmail.com>
+- 学生开发者：陈炀，福州大学本科生<1184016190@qq.com>
 {% include iframe.html src="https://www.youtube.com/watch?v=ipRq3kT32wI" %}
 
 ### 多平台：基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人 <https://github.com/wechaty/summer-of-code/issues/2>
 
-- 导师：高原，句子互动CTO、前亚马逊工程师（gaoyuan@juzi.bot）；李佳芮，句子互动CEO、专注微信生态近10年（rui@juzi.bot）
-- 学生开发者：谢昱清，清华大学本科生（1205402283@qq.com）
-
+- 导师：高原，句子互动CTO、前亚马逊工程师<gaoyuan@juzi.bot>；李佳芮，句子互动CEO、专注微信生态近10年<rui@juzi.bot>
+- 学生开发者：谢昱清，清华大学本科生<1205402283@qq.com>
 {% include iframe.html src="https://work.weixin.qq.com/wework_admin/liveroom/v2/replay?ref=app&roomid=6863669709273989330" %}
 
 ### 多平台：基于开放 API 封装 Wechaty 接口下的钉钉聊天机器人 <https://github.com/wechaty/summer-of-code/issues/11>
 
-- 导师：高原，句子互动CTO、前亚马逊工程师（gaoyuan@juzi.bot）；李佳芮，句子互动CEO、专注微信生态近10年（rui@juzi.bot）
-- 学生开发者：杨明哲，福州大学本科生（yutinice@foxmail.com）
-
+- 导师：高原，句子互动CTO、前亚马逊工程师<gaoyuan@juzi.bot>；李佳芮，句子互动CEO、专注微信生态近10年<rui@juzi.bot>
+- 学生开发者：杨明哲，福州大学本科生<yutinice@foxmail.com>
 {% include iframe.html src="https://www.bilibili.com/video/BV1fK4y1Y7B3" %}
 
 ### 多平台：基于开放 API 封装 Wechaty 接口下的飞书聊天机器人 <https://github.com/wechaty/summer-of-code/issues/12>
 
-- 导师：高原，句子互动CTO、前亚马逊工程师（gaoyuan@juzi.bot）；李佳芮，句子互动CEO、专注微信生态近10年（rui@juzi.bot）
-- 学生开发者：范蕊，南开大学本科生（953299708@qq.com）
-
+- 导师：高原，句子互动CTO、前亚马逊工程师<gaoyuan@juzi.bot>；李佳芮，句子互动CEO、专注微信生态近10年<rui@juzi.bot>
+- 学生开发者：范蕊，南开大学本科生<953299708@qq.com>
 {% include iframe.html src="https://www.bilibili.com/video/BV1n54y1U7Fn/" %}
 
 ### 多平台：基于 RPA 封装 Wechaty 接口下的抖音聊天机器人 <https://github.com/wechaty/summer-of-code/issues/13>
 
-- 导师：尹伯昊，连续创业者，句子互动CMO（yinbohao@juzi.bot）
-- 学生开发者：王俊伟，长春工业大学本科生（863445607@qq.com）
+- 导师：尹伯昊，连续创业者，句子互动CMO<yinbohao@juzi.bot>
+- 学生开发者：王俊伟，长春工业大学本科生<863445607@qq.com>
 
 {% include iframe.html src="https://youtube/zDIPzGztn_E" %}
 
 ### 多平台：基于 RPA 封装 Wechaty 接口下的快手聊天机器人 <https://github.com/wechaty/summer-of-code/issues/14>
 
-- 导师：尹伯昊，连续创业者，句子互动CMO（yinbohao@juzi.bot）
-- 学生开发者：毕凯乔，长春工业大学本科生（358461417@qq.com）
+- 导师：尹伯昊，连续创业者，句子互动CMO<yinbohao@juzi.bot>
+- 学生开发者：毕凯乔，长春工业大学本科生<358461417@qq.com>
 
 {% include iframe.html src="https://github.com/wechaty/summer-of-code/issues/6" %}
 
 ### 多功能：基于python-wechaty的群聊助手机器人 <https://github.com/wechaty/summer-of-code/issues/6>
 
-- 导师：吴京京：Wechaty Committer，Python Wechaty Author（ 1435130236@qq.com）
-- 学生开发者：孔祥哲，清华大学本科生（15068701650@163.com）
+- 导师：吴京京：Wechaty Committer，Python Wechaty Author<1435130236@qq.com>
+- 学生开发者：孔祥哲，清华大学本科生<15068701650@163.com>
 
 {% include iframe.html src="https://www.youtube.com/embed/WlxClO3C_Sc" %}
 
 ### 多功能：基于Python-wechaty建立一个斗图机器人 <https://github.com/wechaty/summer-of-code/issues/7>
 
-- 导师：黄纯洪，python-wechaty contributor（huangaszaq@gmail.com）
-- 学生开发者：肖子霖，四川大学本科生（me@mrxiao.net）
+- 导师：黄纯洪，python-wechaty contributor<huangaszaq@gmail.com>
+- 学生开发者：肖子霖，四川大学本科生<me@mrxiao.net>
 
 {% include iframe.html src="https://www.bilibili.com/video/BV1kZ4y1M7F6/" %}
 
 ### 多功能：编写一个“每日一句”插件 <https://github.com/wechaty/summer-of-code/issues/10>
 
-- 导师：Gcaufy，20000+Star小程序框架Wepy作者、Wechaty Plugin系统设计师（gcaufy@gmail.com）
-- 学生开发者：江姗姗，北京大学二学位本科生（univerone@outlook.com）
+- 导师：Gcaufy，20000+Star小程序框架Wepy作者、Wechaty Plugin系统设计师<gcaufy@gmail.com>
+- 学生开发者：江姗姗，北京大学二学位本科生<univerone@outlook.com>
 
 {% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1vT4y157x5" %}
 
@@ -139,9 +133,7 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 - [1:12:20](https://youtu.be/cNSlZez5oY4?t=4340) 10.毕凯乔:基于 RPA 封装 Wechaty 接口下的快手聊天机器人
 - [1:20:25](https://youtu.be/cNSlZez5oY4?t=4825) 11.总结
 
-You can learn more from our [meeting notes][meeting_notes].
-
-[meeting_notes]: https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.5ztnno5qivcb
+You can learn more from our [meeting_notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.5ztnno5qivcb)
 
 
 
