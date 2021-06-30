@@ -30,13 +30,13 @@ Redux is used for application state management and offers the following benefits
 
 Vanilla Redux means using plain Redux without any additional libraries like Ducks.
 
-The tutorial for **vannila redux with wechaty redux plugin** is available [here](using-redux-with-wechaty/vannila-redux.md)
+The tutorial for **Vannila Redux with Wechaty Redux Plugin** is available [here](using-redux-with-wechaty/vannila-redux.md)
 
 ## Ducks Proposal Style for Wechaty Redux Plugin
 
 [![Ducksify Extension](https://img.shields.io/badge/Redux-Ducksify-yellowgreen)](https://github.com/huan/ducks#3-ducksify-extension-currying--api-interface)
 
-🦆🦆🦆Ducks is a Reducer Bundles Manager that implements the Redux Ducks Modular Proposal with Great Convenience.
+🦆🦆🦆Ducks is a Reducer Bundles Manager that implements the Redux Ducks Modular Proposal with great convenience.
 
 > Image Credit: [Alamy](https://www.alamy.com/cute-duck-and-little-ducks-over-white-background-colorful-design-vector-illustration-image185379753.html)
 
