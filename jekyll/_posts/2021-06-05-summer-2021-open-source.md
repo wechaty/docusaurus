@@ -9,13 +9,13 @@ tags:
   - news
   - meetup
   - featured
-image: /assets/2021/06-summer-2021-open-source/001.png
+image: /assets/2021/06-summer-2021-open-source/001.webp
 ---
 
-> 作者: [juzibot](https://github.com/juzibot/)
+> 作者: [windmemory](https://github.com/windmemory）
 
 <!-- more -->
-![intro](/assets/2021/06-summer-2021-open-source/002.png)
+![intro](/assets/2021/06-summer-2021-open-source/002.webp)
 
 ##  自我介绍
 高原：句子互动联合创始人&CTO，开源项目Wechaty commiter，前亚马逊，Expedia工程师，Bot Friday 联合发起人。
@@ -43,15 +43,15 @@ A Conversational RPA SDK for Wechat which can help you create a bot in 6 lines o
 
 ## 2. 怎样使用Wechaty
 - 用typescript举例子：
-![intro](/assets/2021/06-summer-2021-open-source/003.png)
+![intro](/assets/2021/06-summer-2021-open-source/003.webp)
 - 引入wechaty和二维码的包
-![intro](/assets/2021/06-summer-2021-open-source/004.png)
+![intro](/assets/2021/06-summer-2021-open-source/004.webp)
 - 创建新的bot并给他命名，加入：登陆事件，扫码事件（用到二维码的包），message的信息（在bot上收到message的情况）
-![intro](/assets/2021/06-summer-2021-open-source/005.png)
+![intro](/assets/2021/06-summer-2021-open-source/005.webp)
 - 六行代码实现聊天机器人
-![intro](/assets/2021/06-summer-2021-open-source/006.png)
+![intro](/assets/2021/06-summer-2021-open-source/006.webp)
 - 一个简单的叮咚的机器人：有人说叮，机器人就会说咚
-![intro](/assets/2021/06-summer-2021-open-source/007.png)
+![intro](/assets/2021/06-summer-2021-open-source/007.webp)
 大家可以去实现自己想要的任何逻辑，进行不同操作，获取消息后，对消息做不同的指令，做自己想要的逻辑，感兴趣的可以自己下载，随意玩一玩。
 
 ## 3. wechaty的开源之路
@@ -62,7 +62,7 @@ A Conversational RPA SDK for Wechat which can help you create a bot in 6 lines o
 - 2016年的wechaty：支持微信、Web接入，当时只有300star。
 
 - 到了2018年，微信网页版限制登录，一大部分用户无法使用，社区出现非网页版接入方案；为了开发者无缝切换方案，运行稳定，提升效率，实施了新的策略，实现方式和代码都不同，对wechaty进行了一次重大的重塑，引入Puppet概念，puppet是自动化测试的框架，相当于一个适配器。
-![intro](/assets/2021/06-summer-2021-open-source/009.png)
+![intro](/assets/2021/06-summer-2021-open-source/009.webp)
 绿色部分：为上层，是开发者直接接触到的部分，为不同的类，像刚刚例子中用到的，都是开发者在写业务逻辑时需要频繁调用使用的。
 红色部分（puppet）：抽象的概念定义好了与wechaty对接的抽象接口，下面的实现需要按照要求去实现，只要底层实现符合标准，就会无缝的对接到wechaty上面。底层实现会对接到不同的平台上，去做数据的交互，再提交到上层的wechaty上面。
 Puppet巨大的好处：不改动任何业务逻辑代码，切换环境变量即可切换底层实现；让开发者无需关注底层接入实现，只关心自己的业务逻辑；社区里不同的底层实现可以无缝交付到开发者手里，为后续的更多IM实现奠定了坚实的基础；就有更多的开发者愿意做底层接入，与上层开发者有更好的配合。
@@ -86,25 +86,25 @@ Wechaty 支持 Plugin 系统，写一份代码，可以在7个不同的主流平
 ## 4. 基于wechaty的开源项目
 
 ### 算卦机器人 <https://wechaty.js.org/2020/06/28/build-divination-yibot/>
-![intro](/assets/2021/06-summer-2021-open-source/010.png)
+![intro](/assets/2021/06-summer-2021-open-source/010.webp)
 
 ### 诗歌搜索机器人 <https://wechaty.js.org/2020/07/07/wechat-poem-robot/>
-![intro](/assets/2021/06-summer-2021-open-source/011.png)
+![intro](/assets/2021/06-summer-2021-open-source/011.webp)
 
 ### 聚会娱乐机器人 <https://wechaty.js.org/2020/06/06/wechaty-game-bot/>
-![intro](/assets/2021/06-summer-2021-open-source/012.png)
+![intro](/assets/2021/06-summer-2021-open-source/012.webp)
 
 ### 外卖机器人 <https://wechaty.js.org/2019/12/23/wechaty-north-america-ricepo/>
-![intro](/assets/2021/06-summer-2021-open-source/013.png)
+![intro](/assets/2021/06-summer-2021-open-source/013.webp)
 
 ### 中文学习助理 <https://wechaty.js.org/2020/06/19/archyshuo-anki-assistant/>
-![intro](/assets/2021/06-summer-2021-open-source/014.png)
+![intro](/assets/2021/06-summer-2021-open-source/014.webp)
 
 ### 奇绩创坛机器人 <https://wechaty.js.org/2020/08/08/qijibot-sales-automation/>
-![intro](/assets/2021/06-summer-2021-open-source/015.png)
+![intro](/assets/2021/06-summer-2021-open-source/015.webp)
 
 ### 工作日报机器人 <https://wechaty.js.org/2020/07/11/wechaty-daily-report/>
-![intro](/assets/2021/06-summer-2021-open-source/016.png)
+![intro](/assets/2021/06-summer-2021-open-source/016.webp)
 
 若感兴趣，还有更多：<https://wechaty.js.org/blog/>
 
@@ -117,4 +117,4 @@ Wechaty 支持 Plugin 系统，写一份代码，可以在7个不同的主流平
 ## 欢迎正在阅读的你参与其中
 
 如果有人有兴趣一起加入一起来在企业级的scrm软件上面为营销过程去提效的话，欢迎大家联系我，我们一起聊一聊能否一起合作。
-![intro](/assets/2021/06-summer-2021-open-source/008.png)
+![intro](/assets/2021/06-summer-2021-open-source/008.webp)
