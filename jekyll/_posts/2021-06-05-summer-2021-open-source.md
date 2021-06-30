@@ -1,6 +1,6 @@
 ---
 title: "Open Source 大咖说开源--wechaty的开源之路"
-author: juzibot
+author: windmemory
 categories: announcement
 tags:
   - summer-of-wechaty
