@@ -53,12 +53,12 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 ### 多语言：Go-wechaty Github Action optimization <https://github.com/wechaty/summer-of-code/issues/8>
 
 - 导师：丁小雨<614422099@qq.com>，丁超飞<dchaofei@163.com>，李博杰<silkage@silkage.net>
-- 学生开发者：唐光彬，华南农业大学本科生（Tang.Packet@outlook.com）
+- 学生开发者：唐光彬，华南农业大学本科生<Tang.Packet@outlook.com>
 {% include iframe.html src="https://www.bilibili.com/video/BV13T4y1L748/" %}
 
 ### 多语言：Wechaty Java 移植组件开发 <https://github.com/wechaty/summer-of-code/issues/4>
 
-- 导师：刁政欣 阿里开发工程师 Author of Jahttps://www.bilibili.com/video/BV13T4y1L748/)va-wechaty<diaozxin@gmail.com>
+- 导师：刁政欣 阿里开发工程师 Author of Ja<https://www.bilibili.com/video/BV13T4y1L748/va-wechaty> <diaozxin@gmail.com>
 - 学生开发者：陈炀，福州大学本科生<1184016190@qq.com>
 {% include iframe.html src="https://www.youtube.com/watch?v=ipRq3kT32wI" %}
 
@@ -134,8 +134,6 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 - [1:20:25](https://youtu.be/cNSlZez5oY4?t=4825) 11.总结
 
 You can learn more from our [meeting_notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.5ztnno5qivcb)
-
-
 
 ## 暑期2020 开发计划
 
