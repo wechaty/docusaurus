@@ -7,7 +7,7 @@ import TabItem from '@theme/TabItem'
 
 Use the guide to help you integrate additional functions to an existing project which is present at [Github/Contact-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/contact-bot.ts) or check that your existing local system will run on Wechaty. If, you wish to learn on how to build the bot on your own, please visit one of our [Building the bot](https://wechaty.js.org/docs/examples/basic/contact-bot#building-the-bot) section.
 
-The steps outlined here mainly focuses on working with Javascript, but user are free to switch between any languages.All wechaty contacts are encapsulated as a Contact.
+The steps outlined here mainly focus on working with Javascript, but user are free to switch between any languages. All wechaty contacts are encapsulated as a Contact.
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ The steps outlined here mainly focuses on working with Javascript, but user are 
 
 See [Running our first ding-dong bot](https://wechaty.js.org/docs/getting-started/quick-start).
 
-The below function needs a basic scipt that can help run the bot. The basic script starts by importing the code from [Github/Contact-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/contact-bot.ts).Integrate the below code, for this action to work.
+The functions below require a basic script to help run the bot. Import the codes from [Github/Contact-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/contact-bot.ts) for the basic script, and integrate the codes below.
 
 ## All contacts - define how to list all contact
 
