@@ -66,7 +66,7 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 
 - 导师：高原，句子互动CTO、前亚马逊工程师<gaoyuan@juzi.bot>；李佳芮，句子互动CEO、专注微信生态近10年<rui@juzi.bot>
 - 学生开发者：谢昱清，清华大学本科生<1205402283@qq.com>
-{% include iframe.html src="https://work.weixin.qq.com/wework_admin/liveroom/v2/replay?ref=app&roomid=6863669709273989330" %}
+{% include iframe.html src="https://www.bilibili.com/video/BV1n54y1U7Fn/" %}
 
 ### 多平台：基于开放 API 封装 Wechaty 接口下的钉钉聊天机器人 <https://github.com/wechaty/summer-of-code/issues/11>
 
@@ -85,14 +85,12 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 - 导师：尹伯昊，连续创业者，句子互动CMO<yinbohao@juzi.bot>
 - 学生开发者：王俊伟，长春工业大学本科生<863445607@qq.com>
 
-{% include iframe.html src="https://youtube/zDIPzGztn_E" %}
+{% include iframe.html src="https://www.youtube.com/watch?v=zDIPzGztn_E" %}
 
 ### 多平台：基于 RPA 封装 Wechaty 接口下的快手聊天机器人 <https://github.com/wechaty/summer-of-code/issues/14>
 
 - 导师：尹伯昊，连续创业者，句子互动CMO<yinbohao@juzi.bot>
 - 学生开发者：毕凯乔，长春工业大学本科生<358461417@qq.com>
-
-{% include iframe.html src="https://github.com/wechaty/summer-of-code/issues/6" %}
 
 ### 多功能：基于python-wechaty的群聊助手机器人 <https://github.com/wechaty/summer-of-code/issues/6>
 
