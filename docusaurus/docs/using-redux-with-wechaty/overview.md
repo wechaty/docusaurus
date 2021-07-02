@@ -7,7 +7,7 @@ sidebar_label: Overview
 [![NPM](https://github.com/wechaty/wechaty-redux/workflows/NPM/badge.svg)](https://github.com/wechaty/wechaty-redux/actions?query=workflow%3ANPM)
 [![Ducksify Extension](https://img.shields.io/badge/Redux-Ducksify-yellowgreen)](https://github.com/huan/ducks#3-ducksify-extension-currying--api-interface)
 
-Using redux with wechaty wraps Wechaty with Redux Actions &amp; Reducers for Easy State Management.
+Using redux with Wechaty wraps Wechaty with Redux Actions &amp; Reducers for Easy State Management.
 
 [Redux](https://redux.js.org) is a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native environments.
 
@@ -20,17 +20,17 @@ Using redux with wechaty wraps Wechaty with Redux Actions &amp; Reducers for Eas
 
 Redux is used for application state management and offers the following benefits:
 
-- Makes the state predictable
+- Make the state predictable
 
 - Easier to trace which action causes any change
 
-- Makes it easier to test, maintain and debug the code
+- Make it easier to test, maintain and debug the code
 
 ## Vanilla Redux with Wechaty Redux Plugin
 
 Vanilla Redux means using plain Redux without any additional libraries like Ducks.
 
-The tutorial for **Vannila Redux with Wechaty Redux Plugin** is available [here](using-redux-with-wechaty/vannila-redux.md)
+The tutorial for **Vannila Redux with Wechaty Redux Plugin** is available [here](using-redux-with-wechaty/vannila-redux.md).
 
 ## Ducks Proposal Style for Wechaty Redux Plugin
 
@@ -46,7 +46,7 @@ The tutorial for **Vannila Redux with Wechaty Redux Plugin** is available [here]
 
 Ducks offers a method of handling redux module packaging, installing, and running with your Redux store with middleware support.
 
-The tutorial for **Ducks Proposal Style for Wechaty Redux Plugin** is available [here](using-redux-with-wechaty/ducks-proposal.md)
+The tutorial for **Ducks Proposal Style for Wechaty Redux Plugin** is available [here](using-redux-with-wechaty/ducks-proposal.md).
 
 ## References
 
