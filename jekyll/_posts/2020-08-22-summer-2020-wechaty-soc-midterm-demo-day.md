@@ -45,6 +45,26 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 
 你可以在查看[开发者和项目地址](https://wechaty.github.io/wechaty-soc-kick-off-meeting/)
 
+## Midterm Demo Day会议纪实
+
+{% include iframe.html src="https://www.youtube.com/watch?v=cNSlZez5oY4"%}
+
+### Agendas议程
+
+- [0:01:41](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=101s) 1.介绍会议议程
+- [0:02:07](https://youtu.be/cNSlZez5oY4?t=127) 2.孔祥哲：基于python-wechaty的群聊助手机器人
+- [0:10:00](https://youtu.be/cNSlZez5oY4?t=599) 3.肖子霖:基于Python-wechaty建立一个斗图机器人
+- [0:23:57](https://youtu.be/cNSlZez5oY4?t=1433) 4.江珊珊:编写一个“每日一句”插件
+- [0:30:31](https://youtu.be/cNSlZez5oY4?t=1831) 5.陈炀:Wechaty Java 移植组件开发
+- [0:37:03](https://youtu.be/cNSlZez5oY4?t=2223) 6.谢昱清:基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人
+- [0:48:35](https://youtu.be/cNSlZez5oY4?t=2915) 7.杨明哲:基于开放 API 封装 Wechaty 接口下的钉钉聊天机器人
+- [0:55:39](https://youtu.be/cNSlZez5oY4?t=3339) 8.范蕊:基于开放 API 封装 Wechaty 接口下的飞书聊天机器人
+- [1:05:32](https://youtu.be/cNSlZez5oY4?t=3932) 9.王俊伟:基于 RPA 封装 Wechaty 接口下的抖音聊天机器人
+- [1:12:20](https://youtu.be/cNSlZez5oY4?t=4340) 10.毕凯乔:基于 RPA 封装 Wechaty 接口下的快手聊天机器人
+- [1:20:25](https://youtu.be/cNSlZez5oY4?t=4825) 11.总结
+
+You can learn more from our [meeting_notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.5ztnno5qivcb)
+
 ### 多语言：为 go-wechaty 设计实现 插件体系 <https://github.com/wechaty/summer-of-code/issues/9>
 
 - 导师：丁小雨<614422099@qq.com>，丁超飞<dchaofei@163.com>，李博杰<silkage@silkage.net>
@@ -102,7 +122,6 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 ### 多功能：基于Python-wechaty建立一个斗图机器人 <https://github.com/wechaty/summer-of-code/issues/7>
 
 - 导师：黄纯洪，python-wechaty contributor<huangaszaq@gmail.com>
-
 - 学生开发者：肖子霖，四川大学本科生<me@mrxiao.net>
 
 {% include iframe.html src="https://www.bilibili.com/video/BV1kZ4y1M7F6/" %}
@@ -113,26 +132,6 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 - 学生开发者：江姗姗，北京大学二学位本科生<univerone@outlook.com>
 
 {% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1vT4y157x5" %}
-
-## Midterm Demo Day会议纪实
-
-{% include iframe.html src="https://www.youtube.com/watch?v=cNSlZez5oY4"%}
-
-### Agendas议程
-
-- [0:01:41](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=101s) 1.介绍会议议程
-- [0:02:07](https://youtu.be/cNSlZez5oY4?t=127) 2.孔祥哲：基于python-wechaty的群聊助手机器人
-- [0:10:00](https://youtu.be/cNSlZez5oY4?t=599) 3.肖子霖:基于Python-wechaty建立一个斗图机器人
-- [0:23:57](https://youtu.be/cNSlZez5oY4?t=1433) 4.江珊珊:编写一个“每日一句”插件
-- [0:30:31](https://youtu.be/cNSlZez5oY4?t=1831) 5.陈炀:Wechaty Java 移植组件开发
-- [0:37:03](https://youtu.be/cNSlZez5oY4?t=2223) 6.谢昱清:基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人
-- [0:48:35](https://youtu.be/cNSlZez5oY4?t=2915) 7.杨明哲:基于开放 API 封装 Wechaty 接口下的钉钉聊天机器人
-- [0:55:39](https://youtu.be/cNSlZez5oY4?t=3339) 8.范蕊:基于开放 API 封装 Wechaty 接口下的飞书聊天机器人
-- [1:05:32](https://youtu.be/cNSlZez5oY4?t=3932) 9.王俊伟:基于 RPA 封装 Wechaty 接口下的抖音聊天机器人
-- [1:12:20](https://youtu.be/cNSlZez5oY4?t=4340) 10.毕凯乔:基于 RPA 封装 Wechaty 接口下的快手聊天机器人
-- [1:20:25](https://youtu.be/cNSlZez5oY4?t=4825) 11.总结
-
-You can learn more from our [meeting_notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.5ztnno5qivcb)
 
 ## 暑期2020 开发计划
 
