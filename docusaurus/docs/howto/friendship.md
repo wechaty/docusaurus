@@ -5,7 +5,7 @@ title: 'Send and accept friend requests'
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
-Sending and accepting friend requests can easily be done using wechaty onfriendship function. This guide help you Send request, Receive request(in friend event), Confirmation friendship(friend event) in a room.
+Sending and accepting friend requests can easily be done using wechaty `onfriendship` function. This guide will help you send request, receive request(in friend event), confirm friendship(friend event) in a room.
 
 Use the guide to help you integrate additional functions to an existing project which is present at [Github/Friend-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/friend-bot.ts) or check that your existing local system will run on Wechaty. If, you wish to learn on how to build the bot on your own, please visit one of our [Building the bot](https://wechaty.js.org/docs/examples/basic/contact-bot#building-the-bot) section.
 
@@ -26,7 +26,7 @@ The below function needs a basic scipt that can help run the bot. The basic scri
 
 ## Send Request - define how to send a friend request
 
-Trying to expand the network can help you extend the employment opportunities and professional resources. If you have questions like "How can I friend someone on IM platform?" then you need this section to send friend requests.
+When you send the request, you try to make new friend connection. This section elaborates on how to send friend requests.`Friendship.search(<id>)` helps you search the contact, if found we get "Sending friend request..." as a response else "Friendship.search: not found" as a response.
 
 <Tabs
   groupId="programming-languages"
@@ -145,7 +145,7 @@ The expected output of the JavaScript code is:
 
 ## Receive Request - define how to accept the friend request
 
-The more you network, the more you'll grow and learn how to make lasting connections,so are the others. When someone sends you the request, you choose whether to have the friend connection or to reject the connection.This section elaborates on how to accept friend requests.
+When someone sends you the request, you choose whether to have the friend connection or to reject the connection. This section elaborates on how to accept friend requests. When someone sends you the request, the `friendship.contact()` helps you list down all the contacts with a hello message from `friendship.hello()` and then when the user accepts the request, it prints out with a confirmation message using `friendship.contact().name()`.
 
 <Tabs
   groupId="programming-languages"
