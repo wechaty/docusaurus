@@ -3,7 +3,7 @@ name: zzzyer
 site: https://github.com/zzzyer
 avatar: /assets/contributors/zzzyer/avatar.png
 bio: I want to be a professional Front End Engineer!
-email: www.906012317@qq.com
+email: 906012317@qq.com
 ---
 
 开源社区萌新一枚，对前端开发比较有兴趣，希望能够对社区做出自己的贡献😊,冲鸭💪.
