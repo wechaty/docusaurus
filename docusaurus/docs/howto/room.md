@@ -5,7 +5,50 @@ title: 'Managing rooms'
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
-## Creating New Room
+Wechaty Room is a group of Contacts. This section will teach you how to make a new room and add to it the first ten people who have sent you a message.The guide will demonstrate in JavaScript, but you can choose between various programming languages available.
+
+## Requirements
+
+1. [Node.js](https://nodejs.org/en/download) v12+
+2. [Wechaty](https://www.npmjs.com/package/wechaty) v0.40+
+
+## Prerequisites
+
+### 1. Getting Started
+
+This guide assumes that you have node installed and have set up a basic  Wechaty **Starter Bot**. You call follow the instructions on the **Starter Bot** page to create a foundation for this tutorial. Before continuing, make sure you've first created the onScan, onLogin, onLogout, and onMessage functions from the Starter file.
+
+### 2. Install dependency
+
+In order to create a new Room, you need to first install some npm dependencies. You can install it using the following command:
+
+```sh
+npm i wechaty
+```
+
+### 3. Integrate the dependencies
+
+Add the dependencies at the head of the `bot.js` file:
+
+```js
+const { 
+  Room,
+  Wechaty, 
+}           = require('wechaty')
+```
+
+## Creating a Room and adding Contacts
+
+<ol>
+<li> In the bot.js file add a contactList global array. The onMessage function will populate this array with contacts.
+
+```js
+const contactList=[];
+```
+
+</li>
+<li> The onMessage function should be defined as follows:</li>
+</ol>
 
 <Tabs
   groupId="programming-languages"
@@ -33,112 +76,18 @@ import TabItem from '@theme/TabItem'
 <TabItem value="js">
 
 ```js
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="py">
-
-```py
-from __future__ import annotations
-from typing import List
-
-from wechaty import (
-    Wechaty,
-    Contact,
-    Room,
-    Message
-)
-
-
-class MyBot(Wechaty):
-    async def on_ready(self, _):
-        """creating room"""
-        # 1. filter friend
-        friends: List[Contact] = await self.Contact.find_all()
-        # find my python-wechaty related friends
-        friends = [friend for friend in friends if friend.alias().startswith('python-wechaty')]
-
-        # 2. create room and invite them
-        room: Room = await self.Room.create(friends, topic='Python❤Wechaty')
-        if room:
-            room.say('hello, python-wechaty is ready for you.')
-```
-
-</TabItem>
-<TabItem value="go">
-
-```go
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="java">
-
-```java
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="php">
-
-```php
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="scala">
-
-```scala
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="csharp">
-
-```csharp
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="rust">
-
-```rust
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-</Tabs>
-
-## Adding contact to room
-
-<Tabs
-  groupId="programming-languages"
-  defaultValue="ts"
-  values={[
-    { label: 'TypeScript',  value: 'ts', },
-    { label: 'JavaScript',  value: 'js', },
-    { label: 'Python',      value: 'py', },
-    { label: 'Go',          value: 'go', },
-    { label: 'Java',        value: 'java', },
-    { label: 'PHP',         value: 'php', },
-    { label: 'Scala',       value: 'scala', },
-    { label: 'C#',          value: 'csharp', },
-    { label: 'Rust',        value: 'rust', },
-  ]
-}>
-
-<TabItem value="ts">
-
-```ts
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="js">
-
-```js
-// TODO: Pull Request is welcome!
+const contactList=[];
+async function onMessage (msg) {
+  const helperContact =msg.talker()  
+ contactList.push(helperContact);
+if(contactList.length>=10)
+{
+  console.log('Bot', 'contactList: %s', contactList)
+  const room = await bot.Room.create(contactList, 'ding')
+  console.log('Bot', 'createDingRoom() new ding room created: %s', room)
+  await room.topic('ding - created')
+}
+}
 ```
 
 </TabItem>
@@ -219,301 +168,39 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
-## Remove contact from room
+When a new message is received, the onMessage function is called. The sender will be added to a contactList array. A room called ding will be created once ten senders have been registered.
 
-<Tabs
-  groupId="programming-languages"
-  defaultValue="ts"
-  values={[
-    { label: 'TypeScript',  value: 'ts', },
-    { label: 'JavaScript',  value: 'js', },
-    { label: 'Python',      value: 'py', },
-    { label: 'Go',          value: 'go', },
-    { label: 'Java',        value: 'java', },
-    { label: 'PHP',         value: 'php', },
-    { label: 'Scala',       value: 'scala', },
-    { label: 'C#',          value: 'csharp', },
-    { label: 'Rust',        value: 'rust', },
-  ]
-}>
+## Run the bot
 
-<TabItem value="ts">
+To run the bot, first you have to **export/set** an environment variable with the type of puppet to use, and then start the bot:
 
-```ts
-// TODO: Pull Request is welcome!
+### Linux/macOS
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-whatsapp
+# If you want to use WeChat
+# export WECHATY_PUPPET=wechaty-puppet-wechat
+npm start
 ```
 
-</TabItem>
-<TabItem value="js">
+### Windows
 
-```js
-// TODO: Pull Request is welcome!
+```bash
+set WECHATY_LOG=verbose
+set WECHATY_PUPPET=wechaty-puppet-whatsapp
+# If you want to use WeChat
+# set WECHATY_PUPPET=wechaty-puppet-wechat
+npm start
 ```
 
-</TabItem>
-<TabItem value="py">
+After running the bot, it will generate a QR code for **WeChat** or **WhatsApp** (as per the puppet you have used), scan it with the appropriate app, and the bot will now be connected to the app. You will notice that the bot will create a new room with 10 contacts.
 
-```py
-from __future__ import annotations
-from typing import List
+## Output
 
-from wechaty import (
-    Wechaty,
-    Contact,
-    Room,
-    Message
-)
+The expected result will be:
+![Room output](../../static/img/howto/room/room.png)
 
+## Conclusion
 
-class MyBot(Wechaty):
-
-    async def on_message(self, msg: Message):
-        room: Room = await msg.room()
-        if room:
-            # func<is_dangerous_words> is to detect whether the content is dangerous
-            if is_dangerous_words(msg.text()):
-                talker: Contact = await msg.talker()
-                room.delete(talker)
-```
-
-</TabItem>
-<TabItem value="go">
-
-```go
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="java">
-
-```java
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="php">
-
-```php
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="scala">
-
-```scala
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="csharp">
-
-```csharp
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="rust">
-
-```rust
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-</Tabs>
-
-## Changing topic of the room
-
-<Tabs
-  groupId="programming-languages"
-  defaultValue="ts"
-  values={[
-    { label: 'TypeScript',  value: 'ts', },
-    { label: 'JavaScript',  value: 'js', },
-    { label: 'Python',      value: 'py', },
-    { label: 'Go',          value: 'go', },
-    { label: 'Java',        value: 'java', },
-    { label: 'PHP',         value: 'php', },
-    { label: 'Scala',       value: 'scala', },
-    { label: 'C#',          value: 'csharp', },
-    { label: 'Rust',        value: 'rust', },
-  ]
-}>
-
-<TabItem value="ts">
-
-```ts
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="js">
-
-```js
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="py">
-
-```py
-from __future__ import annotations
-from typing import List
-
-from wechaty import (
-    Wechaty,
-    Room,
-    Message
-)
-
-
-class MyBot(Wechaty):
-
-    async def on_message(self, msg: Message):
-        """change room topic by token"""
-        room: Room = await msg.room()
-        if not room:
-            return
-
-        text: str = await msg.text()
-        talker: Contact = await msg.talker()
-        keyword = 'new-topic:'
-        if talker.alias() == 'admin' and text.startswith(keyword):
-            new_topic: str = text[len(keyword):]
-            old_topic: str = await room.topic()
-            await room.say(f'ok, I will change old_topic<{old_topic}> to new_topic<{new_topic}>')
-            
-            # change the topic of room
-            await room.topic(new_topic)
-```
-
-</TabItem>
-<TabItem value="go">
-
-```go
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="java">
-
-```java
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="php">
-
-```php
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="scala">
-
-```scala
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="csharp">
-
-```csharp
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="rust">
-
-```rust
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-</Tabs>
-
-## Mention(@) others in the room
-
-<Tabs
-  groupId="programming-languages"
-  defaultValue="ts"
-  values={[
-    { label: 'TypeScript',  value: 'ts', },
-    { label: 'JavaScript',  value: 'js', },
-    { label: 'Python',      value: 'py', },
-    { label: 'Go',          value: 'go', },
-    { label: 'Java',        value: 'java', },
-    { label: 'PHP',         value: 'php', },
-    { label: 'Scala',       value: 'scala', },
-    { label: 'C#',          value: 'csharp', },
-    { label: 'Rust',        value: 'rust', },
-  ]
-}>
-
-<TabItem value="ts">
-
-```ts
-await room.say`Hello, ${contact}`
-```
-
-</TabItem>
-<TabItem value="js">
-
-```js
-await room.say`Hello, ${contact}`
-```
-
-</TabItem>
-<TabItem value="py">
-
-```py
-# TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="go">
-
-```go
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="java">
-
-```java
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="php">
-
-```php
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="scala">
-
-```scala
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="csharp">
-
-```csharp
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-<TabItem value="rust">
-
-```rust
-// TODO: Pull Request is welcome!
-```
-
-</TabItem>
-</Tabs>
-
-## Moniting room events
-
-TBW ...
+You can apply a similar concept to create a `Room` and add `contacts` to any of your Wechaty bots. You can also add predefined contacts to the contactList array and create a Wechaty room.
