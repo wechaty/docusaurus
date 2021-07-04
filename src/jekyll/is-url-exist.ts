@@ -55,7 +55,6 @@ async function isUrlExist (
     return response.ok
 
   } catch (e) {
-    console.error(e)
     return false
   } finally {
     clearTimeout(timer)
