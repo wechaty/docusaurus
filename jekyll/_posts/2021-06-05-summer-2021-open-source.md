@@ -23,7 +23,7 @@ image: /assets/2021/06-summer-2021-open-source/001.webp
 
 ## Wechaty开源之路直播纪实
 
-{% include iframe.html src="https://www.youtube.com/watch?v=0UMLAA1Pa-s&t=353s" %}
+{% include iframe.html src="https://www.youtube.com/watch?v=0UMLAA1Pa-s" %}
 
 ### Agendas议程
 
