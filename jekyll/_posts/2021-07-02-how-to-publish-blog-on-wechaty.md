@@ -79,16 +79,14 @@ image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.png
 5. **签署CLA**
 
     很多开源社区，都会要求贡献者签署CLA，只有签署了CLA的贡献者提供的内容才能被接受。从开源社区角度看，如果没签署CLA，会有风险。
-    
-    ![cla](/assets/2021/07-how-to-publish-blog-on-wechaty/cla.png)
 
+    ![cla](/assets/2021/07-how-to-publish-blog-on-wechaty/cla.png)
 
 6. **等待审核**
 
     等待@wechaty的管理员审核，不久管理员就会邮件通知你结果
 
     ![check1](/assets/2021/07-how-to-publish-blog-on-wechaty/check1.png)
-    
 
 7. **修改**
     
