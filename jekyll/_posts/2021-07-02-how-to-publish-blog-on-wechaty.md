@@ -89,7 +89,7 @@ image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.png
     ![check1](/assets/2021/07-how-to-publish-blog-on-wechaty/check1.png)
 
 7. **修改**
-    
+
     还是在这里查看
 
     ![check2](/assets/2021/07-how-to-publish-blog-on-wechaty/check2.png)
@@ -99,7 +99,7 @@ image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.png
     ![check3](/assets/2021/07-how-to-publish-blog-on-wechaty/check3.png)
 
     还是按照他写的去修改就好
-    
+
     ![check4](/assets/2021/07-how-to-publish-blog-on-wechaty/check4.png)
 
     在你认为一切都改好以后，可以再本地测试一下，再上传PR（pull request）。再等待管理员审核，一切成功之后，就可以看到自己写的博客发布在wechaty了。
@@ -122,7 +122,7 @@ image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.png
     切换到你的分支: git checkout XXXX
     拉代码: git pull
     运行： make serve
-    当看到命令行中出现 Server address: http://127.0.0.1:4000 的时候，在浏览器中输入地址 http://127.0.0.1:4000 即可
+    当看到命令行中出现 Server address:<http://127.0.0.1:4000>的时候，在浏览器中输入地址<http://127.0.0.1:4000>即可
     ![preview](/assets/2021/07-how-to-publish-blog-on-wechaty/preview.png)
 
 11. 签署CLA
