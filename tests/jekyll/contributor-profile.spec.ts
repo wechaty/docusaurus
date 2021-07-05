@@ -14,7 +14,8 @@ import {
   JEKYLL_FOLDER,
   isUrlExist,
   getChangedFileList,
-}                             from '../../src/jekyll/mod'
+  contributorFilenameToUsername,
+}                                 from '../../src/jekyll/mod'
 
 import {
   stripRepoRoot,
@@ -75,6 +76,12 @@ test('developer project avatar should be put under assets/contributors/ folder',
       t.fail(`"${front.avatar}" should start with '/'`)
     }
 
+    const userName = contributorFilenameToUsername(file)
+    const userNameRe = new RegExp(`/contributors/${userName}/`)
+    if (!userNameRe.test(front.avatar)) {
+      t.fail(`avatar "${front.avatar}" must be saved to folder "assets/contributors/${userName}"`)
+    }
+
     if (/^http/i.test(front.avatar)) {
       t.fail(`${stripRepoRoot(file)} should put avatar files to local repo instead of using URL`)
     } else {
@@ -90,14 +97,6 @@ test('developer project avatar should be put under assets/contributors/ folder',
 })
 
 test('developer profile name must be GitHub username', async t => {
-  const pickName = (filePath: string) => {
-    const matches = /\/([^./]+?)\.md$/.exec(filePath)
-    if (!matches) {
-      throw new Error(`no matches for profile name for "${filePath}"`)
-    }
-    return matches[1]
-  }
-
   const allContributorsFileList = (await glob(`${JEKYLL_FOLDER.contributors}/**/*`))
     .map(stripRepoRoot)
 
@@ -110,7 +109,7 @@ test('developer profile name must be GitHub username', async t => {
 
   const urlList = allContributorsFileList
     .filter(file => changedFileList.includes(file))
-    .map(pickName)
+    .map(contributorFilenameToUsername)
     .map(name => `https://github.com/${name}`)
 
   // console.info(urlList)
@@ -127,7 +126,7 @@ test('developer profile name must be GitHub username', async t => {
 
     for (const [i, isExist] of resultList.entries()) {
       if (!isExist) {
-        console.info()
+        process.stdout.write('\n')
         t.fail(`"${chunk[i]}" should exist on GitHub`)
       } else {
         // t.pass(`"${chunk[i]}" should exist on GitHub`)
@@ -135,6 +134,7 @@ test('developer profile name must be GitHub username', async t => {
     }
   }
 
-  console.info()
+  process.stdout.write('\n')
+
   t.pass(`${urlList.length} contributors profile names checked`)
 })

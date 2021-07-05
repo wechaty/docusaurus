@@ -20,7 +20,7 @@ const not = (func: (...args: any[]) => boolean) => (...args: any) => !func(...ar
 
 // const isGitHubUserContent = (url: string) => /\.githubusercontent.com\//i.test(url)
 
-const getRemoteImageList = async () => {
+const getRecentRemoteImageList = async () => {
   const allImageList = await getAllImageList({
     since: '1 week ago',
   })
@@ -41,7 +41,7 @@ const getLocalImageList = async () => {
 test('all remote images linked from the post should be exist.', async t => {
 
   // Get rid of duplicated urls
-  let remoteImageList = await getRemoteImageList()
+  let remoteImageList = await getRecentRemoteImageList()
 
   // console.info('remoteImageList', remoteImageList)
 
@@ -57,22 +57,25 @@ test('all remote images linked from the post should be exist.', async t => {
   // void urlExist
   // console.info(remoteImageList)
 
-  const CONCURRENCY = 10
+  const CHUNK_SIZE = 10
 
   const chunkList = chunk(
     remoteImageList,
-    CONCURRENCY,
+    CHUNK_SIZE,
   )
 
   for (const chunk of chunkList) {
+    // console.info('remoteImageList chunk', chunk)
+
     process.stdout.write(
-      Array(chunk.length).join('.')
+      Array(chunk.length + 1).join('.')
     )
 
     const resultList = await Promise.all(
       chunk.map(isUrlExist)
     )
 
+    // sleep 1 seconds before next check
     await new Promise(resolve => setTimeout(resolve, 1000))
 
     for (const [i, result] of resultList.entries()) {
@@ -82,7 +85,8 @@ test('all remote images linked from the post should be exist.', async t => {
     }
   }
 
-  console.info()
+  process.stdout.write('\n')
+
   t.pass(`total ${remoteImageList.length} remote image urls checked`)
 })
 

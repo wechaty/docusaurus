@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 import { URL } from 'url'
 import AbortController from 'abort-controller'
 
-const NETWORK_TIMEOUT = 10 * 1000 // 10 seconds
+const NETWORK_TIMEOUT = 30 * 1000 // 30 seconds
 
 const httpsAgent = new https.Agent({
   rejectUnauthorized: false,
