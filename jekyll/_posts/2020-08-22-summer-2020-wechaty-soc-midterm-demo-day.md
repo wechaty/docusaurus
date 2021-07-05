@@ -51,17 +51,17 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 
 ### Agendas议程
 
-- [0:01:41](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=101s) 1.介绍会议议程
-- [0:02:07](https://youtu.be/cNSlZez5oY4?t=127) 2.孔祥哲：基于python-wechaty的群聊助手机器人
-- [0:10:00](https://youtu.be/cNSlZez5oY4?t=599) 3.肖子霖:基于Python-wechaty建立一个斗图机器人
-- [0:23:57](https://youtu.be/cNSlZez5oY4?t=1433) 4.江珊珊:编写一个“每日一句”插件
-- [0:30:31](https://youtu.be/cNSlZez5oY4?t=1831) 5.陈炀:Wechaty Java 移植组件开发
-- [0:37:03](https://youtu.be/cNSlZez5oY4?t=2223) 6.谢昱清:基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人
-- [0:48:35](https://youtu.be/cNSlZez5oY4?t=2915) 7.杨明哲:基于开放 API 封装 Wechaty 接口下的钉钉聊天机器人
-- [0:55:39](https://youtu.be/cNSlZez5oY4?t=3339) 8.范蕊:基于开放 API 封装 Wechaty 接口下的飞书聊天机器人
-- [1:05:32](https://youtu.be/cNSlZez5oY4?t=3932) 9.王俊伟:基于 RPA 封装 Wechaty 接口下的抖音聊天机器人
-- [1:12:20](https://youtu.be/cNSlZez5oY4?t=4340) 10.毕凯乔:基于 RPA 封装 Wechaty 接口下的快手聊天机器人
-- [1:20:25](https://youtu.be/cNSlZez5oY4?t=4825) 11.总结
+- [0:01:41](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=101s) 介绍会议议程
+- [0:02:07](https://youtu.be/cNSlZez5oY4?t=127) 孔祥哲：基于python-wechaty的群聊助手机器人
+- [0:10:00](https://youtu.be/cNSlZez5oY4?t=599) 肖子霖:基于Python-wechaty建立一个斗图机器人
+- [0:23:57](https://youtu.be/cNSlZez5oY4?t=1433) 江珊珊:编写一个“每日一句”插件
+- [0:30:31](https://youtu.be/cNSlZez5oY4?t=1831) 陈炀:Wechaty Java 移植组件开发
+- [0:37:03](https://youtu.be/cNSlZez5oY4?t=2223) 谢昱清:基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人
+- [0:48:35](https://youtu.be/cNSlZez5oY4?t=2915) 杨明哲:基于开放 API 封装 Wechaty 接口下的钉钉聊天机器人
+- [0:55:39](https://youtu.be/cNSlZez5oY4?t=3339) 范蕊:基于开放 API 封装 Wechaty 接口下的飞书聊天机器人
+- [1:05:32](https://youtu.be/cNSlZez5oY4?t=3932) 王俊伟:基于 RPA 封装 Wechaty 接口下的抖音聊天机器人
+- [1:12:20](https://youtu.be/cNSlZez5oY4?t=4340) 毕凯乔:基于 RPA 封装 Wechaty 接口下的快手聊天机器人
+- [1:20:25](https://youtu.be/cNSlZez5oY4?t=4825) 总结
 
 You can learn more from our [meeting_notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.5ztnno5qivcb)
 
