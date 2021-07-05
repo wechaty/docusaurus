@@ -28,13 +28,9 @@ image: /assets/2021/06-summer-2021-open-source/001.webp
 ### Agendas议程
 
 - [0:04:52](https://youtu.be/0UMLAA1Pa-s?t=293) 自我介绍
-
 - [0:05:55](https://youtu.be/0UMLAA1Pa-s?t=353) 什么是wechaty
-
 - [0:12:58](https://youtu.be/0UMLAA1Pa-s?t=778) 如何使用wechaty
-
 - [0:22:18](https://youtu.be/0UMLAA1Pa-s?t=1338) wechaty的开源之路
-
 - [0:39:39](https://youtu.be/0UMLAA1Pa-s?t=2379) 基于wechaty的开源项目
 
 ## 1. 什么是Wechaty
