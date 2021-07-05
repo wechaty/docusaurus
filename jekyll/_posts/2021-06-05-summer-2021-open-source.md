@@ -27,41 +27,25 @@ image: /assets/2021/06-summer-2021-open-source/001.webp
 
 ### Agendas议程
 
-<<<<<<< Updated upstream
 - [0:04:52](https://youtu.be/0UMLAA1Pa-s?t=293) 自我介绍
 - [0:05:55](https://youtu.be/0UMLAA1Pa-s?t=353) 什么是wechaty
 - [0:12:58](https://youtu.be/0UMLAA1Pa-s?t=778) 如何使用wechaty
 - [0:22:18](https://youtu.be/0UMLAA1Pa-s?t=1338) wechaty的开源之路
 - [0:39:39](https://youtu.be/0UMLAA1Pa-s?t=2379) 基于wechaty的开源项目
-=======
--[0:04:52](https://youtu.be/0UMLAA1Pa-s?t=293) 自我介绍
--[0:05:55](https://youtu.be/0UMLAA1Pa-s?t=353) 什么是wechaty
--[0:12:58](https://youtu.be/0UMLAA1Pa-s?t=778) 如何使用wechaty
--[0:22:18](https://youtu.be/0UMLAA1Pa-s?t=1338) wechaty的开源之路
--[0:39:39](https://youtu.be/0UMLAA1Pa-s?t=2379) 基于wechaty的开源项目
->>>>>>> Stashed changes
 
 ## 1. 什么是Wechaty
 
 - 官方介绍：
-<<<<<<< Updated upstream
-  A Conversational RPA SDK for Wechat which can help you create a bot in 6 lines of javascript, with cross-platform support including Linux, Windows, Darwin(OSX/Mac) and Docker.
-也就是帮助聊天机器人开发者快速搭建聊天机器人的框架，并且支持多个系统平台。
-- Wechaty的使命：
-  给聊天机器人的开发者提供一个最好的开源sdk，不断优化sdk，给开发者最好的体验。帮助开发者更多关注于逻辑应用，而不是与平台的底部对接上，只需关乎自己写上层应用的代码就可以了。
-- 开发者们的评价：
-  腾讯的软件工程师，著名小程序vp框架的作者。在管理社区时用到了wechaty。并评价："Wechaty is a great solution, I believe there would be much more users recognize it."
-  谷歌工程师，好室友项目的创始人，创建了帮助留学生找房的平台，所有交互在微信群内，基于wechaty搭建了平台，并服务了5000左右的活跃用户。他评价："太好用，好用的想哭"。
-=======
 A Conversational RPA SDK for Wechat which can help you create a bot in 6 lines of javascript, with cross-platform support including Linux, Windows, Darwin(OSX/Mac) and Docker.也就是帮助聊天机器人开发者快速搭建聊天机器人的框架，并且支持多个系统平台。
 
-- Wechaty的使命：给聊天机器人的开发者提供一个最好的开源sdk，不断优化sdk，给开发者最好的体验。帮助开发者更多关注于逻辑应用，而不是与平台的底部对接上，只需关乎自己写上层应用的代码就可以了。
+- Wechaty的使命：
+
+给聊天机器人的开发者提供一个最好的开源sdk，不断优化sdk，给开发者最好的体验。帮助开发者更多关注于逻辑应用，而不是与平台的底部对接上，只需关乎自己写上层应用的代码就可以了。
 
 - 开发者们的评价：
 腾讯的软件工程师，著名小程序vp框架的作者。在管理社区时用到了wechaty。并评价："Wechaty is a great solution, I believe there would be much more users recognize it."
 谷歌工程师，好室友项目的创始人，创建了帮助留学生找房的平台，所有交互在微信群内，基于wechaty搭建了平台，并服务了5000左右的活跃用户。他评价："太好用，好用的想哭"。
 
->>>>>>> Stashed changes
 - Wechaty越来越受欢迎，从2016年的330star到现在的10000+star很难得，因为在GitHub上超过10000star的并不多。开发者遍布全球各地，来自不同的互联网公司：微软、腾讯、谷歌、阿里巴巴、百度等等。Contributor来自各个大厂的开发者，在使用wechaty时为我们贡献了代码，Wechaty已经被854个开源项目引用了，了解到还有许多非开源项目也在使用wechaty，真正使用的数量庞大。
 
 ## 2. 怎样使用Wechaty
