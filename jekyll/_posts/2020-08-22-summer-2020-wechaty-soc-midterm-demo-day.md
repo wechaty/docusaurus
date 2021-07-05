@@ -65,7 +65,7 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 
 You can learn more from our [meeting_notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.5ztnno5qivcb)
 
-### 多语言：为 go-wechaty 设计实现 插件体系 <https://github.com/wechaty/summer-of-code/issues/9>
+### 多语言：为 go-wechaty 设计实现插件体系 <https://github.com/wechaty/summer-of-code/issues/9>
 
 - 导师：丁小雨<614422099@qq.com>，丁超飞<dchaofei@163.com>，李博杰<silkage@silkage.net>
 - 学生开发者：林昊翰，西安电子科技大学本科生<finctive@foxmail.com>
