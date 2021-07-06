@@ -78,11 +78,11 @@ Otherwise, if you just want to try out the bot on your local system, follow the 
 
 ### 1. Clone the repository
 
-Use the following commands to clone the [GitHub repository](https://github.com/sbis04/vorpal-wechaty-hn) and navigate to the directory:
+Use the following commands to clone the [GitHub repository](https://github.com/wechaty/wechaty-vorpal-contrib) and navigate to the directory:
 
 ```bash
-git clone https://github.com/sbis04/vorpal-wechaty-hn
-cd vorpal-wechaty-hn
+git clone https://github.com/wechaty/wechaty-vorpal-contrib
+cd wechaty-vorpal-contrib
 ```
 
 ### 2. Install dependencies
@@ -510,4 +510,4 @@ You have learnt to use Vorpal with Wechaty and built a Hacker News bot. Vorpal h
 ## References
 
 * [Wechaty Getting Started](https://github.com/wechaty/wechaty-getting-started)
-* [Vorpal Hacker News bot](https://github.com/sbis04/vorpal-wechaty-hackernews)
+* [Wechaty Vorpal Contrib](https://github.com/wechaty/wechaty-vorpal-contrib)
