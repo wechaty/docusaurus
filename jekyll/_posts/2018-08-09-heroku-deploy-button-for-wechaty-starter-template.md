@@ -6,11 +6,12 @@ tags:
   - heroku
   - deploy
   - news
+image: /assets/2018/08-heroku-deploy-button-for-wechaty-starter-template/heroku-wechaty.png
 ---
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Chatie/heroku-wechaty-getting-started)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/wechaty/heroku-wechaty-getting-started)
 
-**GitHub Repo: <https://github.com/Chatie/heroku-wechaty-getting-started>**
+**GitHub Repo: <https://github.com/wechaty/heroku-wechaty-getting-started>**
 
 At Chatie, we’ve created several getting-started tutorials to make developers’ lives easier. Deploying Wechaty Bot has involved following their prospective README’s step-by-step guides.
 
@@ -25,6 +26,6 @@ Learn more at: [Creating a 'Deploy to Heroku' Button](https://devcenter.heroku.c
 ## What Will I Benefit From the `Deploy to Heroku` Button
 
 1. You can deploy Wechaty Bot in your browser with one click, get your bot online on Heroku, and it's free;
-1. You can clone [heroku-wechaty-getting-started](https://github.com/Chatie/heroku-wechaty-getting-started) repository and modify it to fit your needs, then you will get your own _Deploy to Heroku_ button for your own customized bot.
+1. You can clone [heroku-wechaty-getting-started](https://github.com/wechaty/heroku-wechaty-getting-started) repository and modify it to fit your needs, then you will get your own _Deploy to Heroku_ button for your own customized bot.
 
 Until then, enjoy!
