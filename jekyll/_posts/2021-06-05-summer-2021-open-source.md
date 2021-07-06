@@ -186,4 +186,5 @@ OSS.CHAT的功能是：当用户在 GitHub 上发布 issue 或者评论 issue �
 ## 欢迎正在阅读的你参与其中
 
 如果有人有兴趣一起加入，一起来在企业级的scrm软件上面为营销过程提效的话，欢迎大家联系我，我们一起聊一聊能否一起合作。
+
 ![intro](/assets/2021/06-summer-2021-open-source/008.webp)
