@@ -15,7 +15,7 @@ image: /assets/2021/07-puppet-laozhang-wechat-bot/wechat-bot.png
 
 wechaty社区即将迎来一个全新的puppet——wechaty-puppet-laozhang（老张牌puppet，或许后续会更新一个不这么响亮的名字），将支持使用Windows微信桌面版协议登录。
 
-## 关于puppet——wechaty-puppet-laozhang
+## 关于wechaty-puppet-laozhang
 
 该puppet来源另一个开源chatbot项目[wechat-bot](https://github.com/cixingguangming55555/wechat-bot)，由低调的个人开发者老张操刀。与wechaty项目的初衷一样，chatbot为开发者提供开源免费的chatbot工具，并且已累计600+start、190+fork。
 
