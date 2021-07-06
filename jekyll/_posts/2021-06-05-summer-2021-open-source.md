@@ -44,7 +44,11 @@ A Conversational RPA SDK for Wechat which can help you create a bot in 6 lines o
 
 - 开发者们的评价：
 腾讯的软件工程师，著名小程序vp框架的作者。在管理社区时用到了wechaty。并评价："Wechaty is a great solution, I believe there would be much more users recognize it."
+<<<<<<< Updated upstream
 谷歌工程师，好室友项目的创始人，创建了帮助留学生找房的平台，所有交互在微信群内，基于wechaty搭建了平台，并服务了5000左右的活跃用户。他评价："太好用，好用的想哭"。
+=======
+谷歌工程师，好室友项目的创始人，创建帮助留学生找房的平台，所有交互在微信群内，基于wechaty搭建了平台，并服务了5000左右的活跃用户。他评价："太好用，好用的想哭"。
+>>>>>>> Stashed changes
 
 - Wechaty越来越受欢迎，从2016年的330star到现在的10000+star很难得，因为在GitHub上超过10000star的并不多。开发者遍布全球各地，来自不同的互联网公司：微软、腾讯、谷歌、阿里巴巴、百度等等。Contributor来自各个大厂的开发者，在使用wechaty时为我们贡献了代码，Wechaty已经被854个开源项目引用了，了解到还有许多非开源项目也在使用wechaty，真正使用的数量庞大。
 
