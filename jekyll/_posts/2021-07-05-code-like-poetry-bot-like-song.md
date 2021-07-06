@@ -8,7 +8,7 @@ image: /assets/2021/07-code-like-poetry-bot-like-song/cover.jpg
 ---
 > 作者: [cixingguangming55555](https://github.com/cixingguangming55555)，老张学技术
 
-# 非关
+## 非关
   短，分行，如诗。  
   这个世界，除了我喜欢的汉字的堆叠，竟然还有这样美妙的存在。  
   不是偶然。  
