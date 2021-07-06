@@ -5,3 +5,4 @@ node_modules/
 .sass-cache
 .jekyll-metadata
 Gemfile.lock
+.DS_Store
