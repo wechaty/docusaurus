@@ -104,26 +104,24 @@ You can learn more from our [meeting_notes](https://docs.google.com/document/d/1
 
 - 导师：尹伯昊，连续创业者，句子互动CMO<yinbohao@juzi.bot>
 - 学生开发者：王俊伟，长春工业大学本科生<863445607@qq.com>
-
 {% include iframe.html src="https://www.youtube.com/watch?v=zDIPzGztn_E" %}
 
 ### 多平台：基于 RPA 封装 Wechaty 接口下的快手聊天机器人 <https://github.com/wechaty/summer-of-code/issues/14>
 
 - 导师：尹伯昊，连续创业者，句子互动CMO<yinbohao@juzi.bot>
 - 学生开发者：毕凯乔，长春工业大学本科生<358461417@qq.com>
+{% include iframe.html src="https://github.com/wechaty/summer-of-code/issues/6" %}
 
 ### 多功能：基于python-wechaty的群聊助手机器人 <https://github.com/wechaty/summer-of-code/issues/6>
 
 - 导师：吴京京：Wechaty Committer，Python Wechaty Author<1435130236@qq.com>
 - 学生开发者：孔祥哲，清华大学本科生<15068701650@163.com>
-
 {% include iframe.html src="https://www.youtube.com/embed/WlxClO3C_Sc" %}
 
 ### 多功能：基于Python-wechaty建立一个斗图机器人 <https://github.com/wechaty/summer-of-code/issues/7>
 
 - 导师：黄纯洪，python-wechaty contributor<huangaszaq@gmail.com>
-- 学生开发者：肖子霖，四川大学本科生<me@mrxiao.net>
-
+- 学生开发者：肖子霖，四川大学本科生<me@mrxiao.net
 {% include iframe.html src="https://www.bilibili.com/video/BV1kZ4y1M7F6/" %}
 
 ### 多功能：编写一个“每日一句”插件 <https://github.com/wechaty/summer-of-code/issues/10>
@@ -132,6 +130,7 @@ You can learn more from our [meeting_notes](https://docs.google.com/document/d/1
 - 学生开发者：江姗姗，北京大学二学位本科生<univerone@outlook.com>
 
 {% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1vT4y157x5" %}
+
 
 ## 暑期2020 开发计划
 
