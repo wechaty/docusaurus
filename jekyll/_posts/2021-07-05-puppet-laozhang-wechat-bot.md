@@ -78,7 +78,7 @@ phase2：Q4丰富wechaty-puppet-laozhang功能接口，同时准备提供一个�
 
 ### 认识老张
 
-- [老张发表的博客的地址](https://wechaty.js.org/2021/03/17/node-wechaty-and-wechaty-puppet-padlocal/)
+- [老张的博客](https://github.com/cixingguangming55555/wechat-bot)
 - [老张的wechat-bot开源项目](https://github.com/cixingguangming55555/wechat-bot)
 
 > 历史文章
