@@ -6,7 +6,7 @@ tags:
   - blog
   - study
   - introduction
-image: /assets/2021/07-puppet-laozhang-wechat-bot/wechat-bot.png
+image: /assets/2021/07-puppet-laozhang-wechat-bot/wechat_bot.png
 ---
 
 > 作者: [atorber](https://github.com/atorber/)，一个不务正业的产品经理
