@@ -68,7 +68,7 @@ wechaty提供了一套标准的chatbot接口规范和工具，6行代码实现�
 
 phase1：Q3提供本地化wechaty-puppet-laozhang，wechat-bot项目已开放功能接口全面适配集成到wechaty，开发者可以在本地使用Windows协议体验几乎与收费版Puppet Services同等的接口
 
-phase2：Q4丰富wechaty-puppet-laozhang功能接口，同时准备提供一个商业化的Windows协议协议Puppet Services
+phase2：Q4丰富wechaty-puppet-laozhang功能接口，同时准备提供一个商业化的Windows协议Puppet Service
 
 在此之前，开发者依然可以到[wechat-bot](https://github.com/cixingguangming55555/wechat-bot)项目体验目前最好且免费的本地化chatbot。
 
@@ -78,7 +78,6 @@ phase2：Q4丰富wechaty-puppet-laozhang功能接口，同时准备提供一个�
 
 ### 认识老张
 
-- [老张的博客](https://github.com/cixingguangming55555/wechat-bot)
 - [老张的wechat-bot开源项目](https://github.com/cixingguangming55555/wechat-bot)
 
 > 历史文章
