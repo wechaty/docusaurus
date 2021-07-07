@@ -21,9 +21,7 @@ Using redux with Wechaty wraps Wechaty with Redux Actions &amp; Reducers for Eas
 Redux is used for application state management and offers the following benefits:
 
 - Make the state predictable
-
 - Easier to trace which action causes any change
-
 - Make it easier to test, maintain and debug the code
 
 ## Vanilla Redux with Wechaty Redux Plugin
@@ -51,5 +49,4 @@ The tutorial for **Ducks Proposal Style for Wechaty Redux Plugin** is available 
 ## References
 
 - [NPM package of wechaty-redux](https://www.npmjs.com/package/wechaty-redux)
-
 - [Github repository of wechaty-redux](https://github.com/wechaty/wechaty-redux)
