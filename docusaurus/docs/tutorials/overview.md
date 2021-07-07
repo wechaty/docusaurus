@@ -17,11 +17,11 @@ The fastest way to get started with Wechaty is to use a Cloud based IDE for **ru
 - [Gitpod](getting-started/quick-start.mdx)
 - [Google Cloud Shell](getting-started/quick-start.mdx)
 
-If you are a total begginer then we recommend using **Gitpod**.
+If you are a total begginer then we recommend using [Gitpod](https://gitpod.io/#https://github.com/wechaty/wechaty-getting-started).
 
 Once you get basic idea of ding-dong bot, you can try out building it from scratch by following our [Running Locally](getting-started/hard-way.mdx) tutorial.
 
-## Advanced Tutorials (Using plugins, library and framework with wechaty)
+## Advanced Tutorials (Using plugins with wechaty)
 
 If you have some experience with Wechaty or Chatbot application development, we have intermediate to advanced tutorials on the following topics as well.
 
@@ -40,39 +40,25 @@ For better understanding we have classified the bots under three categories taki
 ### Basic
 
 - [World's Shortest Chatbot](examples/basic/the-worlds-shortest-chatbot-code-in-6-lines.md): The very first wechaty example showcasing how easy it is to get started
-
 - [Ding Dong bot](examples/basic/ding-dong-bot.md): Practical example demonstrating how to do message handling
-
 - [Contact bot](examples/basic/contact-bot.md): List all contacts by Wechat ID & Name
 
 ### Advanced
 
 - [Demo in tutorial](examples/advanced/demo-in-tutorial.md): The demo bot from tutorial
-
 - [Busy bot](examples/advanced/busy-bot.md): Auto response `busy` message for you when you are busy
-
 - [Media file bot](examples/advanced/media-file-bot.md): Save media attachment in message to local files
-
 - [Room bot](examples/advanced/room-bot.md): Practical examples illustrating how to do room handling
-
 - [Friend bot](examples/advanced/friend-bot.md): Practical example illustrating how to do friend handling
-
 - [Gist bot](examples/advanced/gist-bot.md): Best template for bigger modules, with each handler in separated files
 
 ### Professional
 
 - [Hot import bot](examples/professional/hot-import-bot.md): Using Hot Module Reload(HMR) for Wechaty Listeners
-
 - [Ctrl c signal bot](examples/professional/ctrl-c-signal-bot.md): Ctrl-C signal handling demo
-
 - [Monster bot](examples/professional/monster-bot.md): Demo that tried to include everything -- message, room, HMR & signal handling, with each handler in separated files
-
 - [Api ai bot](examples/professional/api-ai-bot.md): Wechaty bot that uses ApiAi.com brain
-
 - [Speech to text bot](examples/professional/speech-to-text-bot.md): Bot that uses baidu speech
-
 - [Tuling 123 bot](examples/professional/tuling123-bot.md): Connect to *[tuling123](http://www.turingapi.com/)* chatbot
-
 - [Telegram roger bot](examples/professional/telegram-roger-bot.md): Single bot that runs under/for both Telegram and WeChaty
-
 - [Blessed twins bot](examples/professional/blessed-twins-bot.md): Wechaty multi-instance support (v0.16+) demo
