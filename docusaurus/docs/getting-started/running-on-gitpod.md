@@ -2,7 +2,7 @@
 title: Running on Gitpod
 ---
 
-If you are total beginner to wechaty this tutorial will guide you how to run the [Ding Dong bot](https://github.com/wechaty/wechaty-getting-started/blob/master/examples/ding-dong-bot.ts) from the [Wechaty Getting Started](https://github.com/wechaty/wechaty-getting-started) GitHub repository directly on the browser using **Gitpod**.
+If you are total beginner to wechaty this tutorial will guide you how to run the [Ding Dong bot](https://github.com/wechaty/wechaty-getting-started/blob/master/examples/ding-dong-bot.ts) from the [Wechaty Getting Started](https://github.com/wechaty/wechaty-getting-started) GitHub repository directly on the browser using [Gitpod](https://gitpod.io/#https://github.com/wechaty/wechaty-getting-started).
 
 Gitpod is an online and open source platform for automated and ready-to-code development environments.
 
