@@ -193,132 +193,54 @@ mkdir ding-dong-bot
 cd ding-dong-bot
 ```
 
-Use the following command to initialise and npm project.
-
-```bash
-npm init -y
-```
-
-This will generate a `package.json` file containing these:
-
-```json
-{
-  "name": "ding-dong-bot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
-}
-```
-
-### 2. Add dependencies
+### 2. Install dependencies
 
 For building the ding dong bot you will require these dependencies:
 
 * [wechaty](https://www.npmjs.com/package/wechaty): Official Wechaty package
-* [dotenv](https://www.npmjs.com/package/dotenv): For loading environment variables from .env file to process.env
 * [qrcode-terminal](https://www.npmjs.com/package/qrcode-terminal): Displays the QR code
 
-```json
-"dependencies": {
-  "dotenv": "^8.2.0",
-  "qrcode-terminal": "^0.12.0",
-  "wechaty": "^0.60.3",
-}
+For installing these dependencies run the following commands:
+
+- **For installing wechaty**
+
+```bash
+npm install wechaty
 ```
+
+- **For installing qrcode-terminal**
+
+```bash
+npm install qrcode-terminal
+```
+
 You will also need to add dependencies for using any [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/) 
 which helps to integrate Wechaty with various **instant messaging (IM) systems** (such as WeChat, Whatsapp, and Gitter):
 
-```json
-"devDependencies": {
-  "wechaty-puppet-mock": "^0.28.2",
-  "wechaty-puppet-wechat": "^0.28",
-  "wechaty-puppet-wechat4u": "^0.18",
-  "wechaty-puppet-whatsapp": "0.2.3"
-}
+You can install wechaty-puppet as you like when using wechaty:
+
+1. If you want to use whatsapp,you can install wechaty-puppet-whatsapp
+
+```bash
+npm install wechaty-puppet-whatsapp
+```
+1. If you want to use wechat, you can install wechaty-puppet-wechat
+
+```bash
+npm install wechaty-puppet-wechat
 ```
 
-> Only add that puppet which you need for using the bot
+1. If you want to use wecom, you can install wechaty-puppet-wxwork
 
-After adding few more required dependencies, `package.json` file will look like this:
-
-```json
-{
-  "name": "ding-dong-bot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-    "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "qrcode-terminal": "^0.12.0",
-    "wechaty": "^0.60.3",
-  },
-  "devDependencies": {
-    "@chatie/eslint-config": "^0.12.3",
-    "@chatie/git-scripts": "^0.6.2",
-    "@chatie/tsconfig": "^0.14.1",
-    "check-node-version": "^4.1.0",
-    "connect": "^3.7.0",
-    "cross-env": "^7.0.3",
-    "is-pr": "^2.0.0",
-    "marked": "^2.0.0",
-    "nodemon": "^2.0.7",
-    "wechaty-puppet-mock": "^0.28.2",
-    "wechaty-puppet-wechat": "^0.28",
-    "wechaty-puppet-wechat4u": "^0.18",
-    "wechaty-puppet-whatsapp": "0.2.3"
-  }
-}
+```bash
+npm install wechaty-puppet-wxwork
 ```
 
-### 3. Install dependencies
-
-Before proceeding further, you should install the dependencies that we just specified in the `package.json` file. Run the following command from the root directory:
-
-```sh
-npm install
-```
-
-This will generate a `node_modules` directory containing all the installed dependencies, and a `package-lock.json` file.
-
-### 4. Configure TypeScript
-
-Create a new file called `tsconfig.json` inside the root folder of the npm project directory, add the following:
-
-```json
-{
-  "extends": "@chatie/tsconfig",
-  "compilerOptions": {
-    "outDir": "dist",
-  },
-  "exclude": [
-    "node_modules/",
-    "dist/",
-    "tests/fixtures/",
-  ],
-  "include": [
-    "app/**/*.ts",
-    "bin/*.ts",
-    "bot/**/*.ts",
-    "examples/**/*.ts",
-    "scripts/**/*.ts",
-    "src/**/*.ts",
-    "tests/**/*.spec.ts",
-  ],
-}
-```
+You can find more puppet information here: https://wechaty.js.org/docs/puppet-providers/
 
 Now, you are ready to write main code for bot
 
-### 5. Writing code for bot
+### 3. Writing code for bot
 
 Create a new folder called `src`, and add a file `ding-dong-bot.ts`. We will be writing the code here.
 
@@ -425,25 +347,6 @@ bot.start()
   .catch(e => log.error('StarterBot', e))
 ```
 
-### 6. Defining scripts
-
-You have to define the script for running the bot. Add the following to your `package.json` file:
-
-```json
-"scripts": {
-  "lint": "eslint \"src/*.ts\"",
-  "start": "ts-node src/ding-dong-bot.ts",
-  "start:js": "node src/ding-dong-bot.js",
-  "start:wechat:web": "cross-env WECHATY_LOG=verbose WECHATY_PUPPET=wechaty-puppet-wechat npm start",
-  "start:wechat:padlocal": "cross-env WECHATY_LOG=verbose WECHATY_PUPPET=wechaty-puppet-padlocal npm start",
-  "start:puppet:service": "cross-env WECHATY_LOG=verbose WECHATY_PUPPET=wechaty-puppet-service npm start",
-  "start:whatsapp:web": "cross-env WECHATY_LOG=verbose  WECHATY_PUPPET=wechaty-puppet-whatsapp npm start",
-  "test": "npm run lint && npm run test:version && npm run test:smoke",
-  "test:smoke": "ts-node tests/smoke-testing.ts",
-  "test:version": "check-node-version --node \">= 12\""
-}
-```
-
 ## Running the bot
 
 In order to run the bot, first you have to **export/set** an environment variable with the type of puppet to use and then run the bot:
@@ -464,10 +367,8 @@ In order to run the bot, first you have to **export/set** an environment variabl
 ```bash
 export WECHATY_LOG=verbose
 export WECHATY_PUPPET=wechaty-puppet-wechat
-make bot
-# the above is equals to the below command:
-# npm start
-#   or, npx ts-node examples/ding-dong-bot.ts
+
+npx ts-node src/ding-dong-bot.ts
 ```
 
 </TabItem>
@@ -476,10 +377,8 @@ make bot
 ```bash
 export WECHATY_LOG=verbose
 export WECHATY_PUPPET=wechaty-puppet-wechat
-make bot
-# the above is equals to the below command:
-# npm start
-#   or, npx ts-node examples/ding-dong-bot.ts
+
+ts-node src/ding-dong-bot.ts
 ```
 
 </TabItem>
@@ -488,10 +387,8 @@ make bot
 ```bash
 set WECHATY_LOG=verbose
 set WECHATY_PUPPET=wechaty-puppet-wechat
-make bot
-# the above is equals to the below command:
-# npm start
-#   or, npx ts-node examples/ding-dong-bot.ts
+
+npx ts-node src/ding-dong-bot.ts
 ```
 
 </TabItem>
