@@ -1,7 +1,7 @@
 ---
 title: "code如诗，bot如歌，由Wechaty引发的一个小白冒险之旅"
 author: cixingguangming55555
-categories: blog
+categories: article
 tags:
   - bot
 image: /assets/2021/07-code-like-poetry-bot-like-song/cover.jpg 
