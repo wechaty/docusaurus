@@ -117,12 +117,13 @@ const caseStudy: SubMenuData = {
   ],
 }
 
-const gettingStarted: SubMenuData = {
-  label: 'Getting Started',
+const quickStart: SubMenuData = {
+  label: 'Quick Start',
   items: [
     'getting-started/overview',
     'getting-started/quick-start',
     'getting-started/running-locally',
+    'getting-started/running-on-gitpod',
   ],
 }
 
@@ -261,6 +262,15 @@ const professional = {
     subMenu(basic),
     subMenu(advanced),
     subMenu(professional),
+  ],
+}
+
+const gettingStarted: SubMenuData = {
+  label: 'Getting Started',
+  items: [
+    'getting-started/overview',
+    subMenu(quickStart),
+    'getting-started/hard-way',
   ],
 }
 
