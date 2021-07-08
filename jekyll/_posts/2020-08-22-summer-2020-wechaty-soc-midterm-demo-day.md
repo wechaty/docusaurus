@@ -110,7 +110,6 @@ You can learn more from our [meeting_notes](https://docs.google.com/document/d/1
 
 - 导师：尹伯昊，连续创业者，句子互动CMO<yinbohao@juzi.bot>
 - 学生开发者：毕凯乔，长春工业大学本科生<358461417@qq.com>
-{% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1vi4y1g7L2&high_quality=1" %}
 
 ### 多功能：基于python-wechaty的群聊助手机器人 <https://github.com/wechaty/summer-of-code/issues/6>
 
