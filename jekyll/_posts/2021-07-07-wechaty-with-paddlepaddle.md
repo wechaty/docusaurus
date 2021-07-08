@@ -45,7 +45,7 @@ Metaverse元宇宙的奥秘，等你来揭晓！
 ![wanderer](/assets/2021/07-wechaty-with-paddlepaddle/wanderer.gif)
 
 《BotBay专属机器人小助手》是以生物多样性为命题的机器人赋能平台，采用一入口(微信)，一平台(botPlatform)，多支撑(PaddleWorkers)的模式进行设计与开发，借比赛实现自己的科幻梦想。
-![BotBay](/assets/2021/07-wechaty-with-paddlepaddle/BotBay.gif)
+![botbay](/assets/2021/07-wechaty-with-paddlepaddle/botbay.gif)
 
 《熊猫头表情生成器》是一个可以生成个人专属熊猫头表情包的聊天机器人，个性化聊天内容由你来掌控。!
 ![panda_emoji](/assets/2021/07-wechaty-with-paddlepaddle/panda_emoji.gif)
