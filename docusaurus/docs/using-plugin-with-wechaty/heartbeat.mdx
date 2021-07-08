@@ -63,23 +63,18 @@ import { Heartbeat } from 'wechaty-plugin-contrib'
 Define a variable called `config` where you can specify:
 
 * `contact`: The contact of the person whom you want to send the emoji (default: **filehelper**)
-* `emoji`: Define under `heartbeat`, the emoji to send (default: **爱心**)
+* `emoji`: Define under `heartbeat`, the emoji to send [爱心] - Heartbeat emoji
 * `intervalSeconds`: The time interval before sending an emoji (default: **1 hour**)
 
 ```ts
 const config = {
-    contact: 'cotact_num@c.us', // contact who will receive the emoji
+    contact: 'filehelper', // contact who will receive the emoji
     emoji: {
         heartbeat: '😎', // the emoji to send
     },
     intervalSeconds: 60, // sends the emoji after an interval of 60 seconds
 }
 ```
-
-For using with **WhatsApp** you can set the contact in the following format:
-
-* **Individual account:** `<contact_num_with_country_code>@c.us` (eg. `91xxxxxxxxxx@c.us`)
-* **Group:** `<contact_num_with_country_code>-<unix_timestamp>@g.us` (eg. `91xxxxxxxxxx-1620196021@g.us`)
 
 Now, just before starting the bot, you can use this plugin:
 
