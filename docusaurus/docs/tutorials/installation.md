@@ -82,4 +82,4 @@ npm install wechaty-puppet-NAME
 
 ## Good to go
 
-Now, you have the minimal setup required to build a bot. You can head over to the [tutorials](./../getting-started/hard-way.mdx).
+Now, you have the minimal setup required to build a bot. You can head over to the [tutorials](./../getting-started/running-locally.mdx).
