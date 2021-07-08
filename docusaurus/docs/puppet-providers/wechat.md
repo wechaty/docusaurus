@@ -27,9 +27,10 @@ WeChat Account that registered after 2017 might not be able to login Web Wechat,
 
 ## Fixed Issues
 
-1. Fixed by Can we support UOS with puppeteer [#127](https://github.com/wechaty/wechaty-puppet-wechat/issues/127) ~~Can not login with error message: 当前登录环境异常。为了你的帐号安全，暂时不能登录web微信。[#603](https://github.com/wechaty/wechaty/issues/603)~~
-    - New account login issue [#872](https://github.com/wechaty/wechaty/issues/872)
-    - [RUMOR]: wechat will close web api for wechat [#990](https://github.com/wechaty/wechaty/issues/990)
+1. ~~Can not login with error message: 当前登录环境异常。为了你的帐号安全，暂时不能登录web微信。[#603](https://github.com/wechaty/wechaty/issues/603)~~
+    - ~~New account login issue [#872](https://github.com/wechaty/wechaty/issues/872)~~
+    - ~~[RUMOR]: wechat will close web api for wechat [#990](https://github.com/wechaty/wechaty/issues/990)~~
+    - Fixed by: Can we support UOS with puppeteer [#127](https://github.com/wechaty/wechaty-puppet-wechat/issues/127)
 
 If you want to break the above limitations, then you need consider to use a Wechaty Puppet other than Web. Learn them from [Wechaty Puppet Providers](puppet-providers/overview.mdx).
 

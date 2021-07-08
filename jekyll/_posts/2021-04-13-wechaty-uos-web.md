@@ -1,6 +1,6 @@
 ---
 title: "重磅：使用UOS微信桌面版协议登录，wechaty免费版web协议重放荣光"
-author: gengchen528
+author: leochen-g
 categories: article
 tags:
   - code
@@ -11,7 +11,7 @@ tags:
 image: /assets/2021/04-wechaty-uos-web/wechaty-puppet-wechat.png
 ---
 
-> 作者: [Leo_chen](https://github.com/gengchen528/)，高级前端工程师，喜欢使用node做各种项目
+> 作者: [Leo_chen](https://github.com/leochen-g/)，高级前端工程师，喜欢使用node做各种项目
 
 <!-- more -->
 
