@@ -2,8 +2,8 @@
 title: What is Wechaty
 ---
 
-import ProviderBadges   from './puppet-providers/transclusions/badges.mdx'
-import PolyglotBadges   from './polyglot/transclusions/badges.mdx'
+import ProviderBadges from './puppet-providers/transclusions/badges.mdx'
+import PolyglotBadges from './polyglot/transclusions/badges.mdx'
 
 ![Wechaty: Conversational RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
 
@@ -17,7 +17,7 @@ Wechaty offers out-of-the-box support for the common features you would need for
 
 <!-- Rethink these features -->
 
-- **Message processing**: You can use Wechaty to receive and send messages. It supports messages in the form of text, image, audio, video, and attachements.
+- **Message processing**: You can use Wechaty to receive and send messages. It supports messages in the form of text, image, audio, video, and attachments.
 - **Room management**: You can use it to create rooms, add and remove room members, manage topics, etc
 - **Contact management**: Search by name, alias, tags, get profile data and avatar.
 - **Friendship management**: Search and add new friends and accept friendship requests.
@@ -66,7 +66,7 @@ All these SDKs have been developed by and for the community.
 
 <!-- Automate updates to the current stable version -->
 
-Since its creation in 2016, a number of Wechaty versions have been released. The current stable version of Wechaty is `V0.56`. For more about the release history and the current stable version, you can read the [Wechaty release notes](https://github.com/Wechaty/wechaty/releases) on Github.
+Since its creation in 2016, a number of Wechaty versions have been released. For more about the release history and the current stable version, you can read the [Wechaty release notes](https://github.com/Wechaty/wechaty/releases) on Github.
 
 ## License
 
