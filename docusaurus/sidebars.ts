@@ -1,7 +1,7 @@
 /**
  * Docusaurus Sidebar
  */
-interface SubMenuData {
+ interface SubMenuData {
   label: string,
   items: (SubMenuData | string)[],
   type?: string,
@@ -140,7 +140,10 @@ const usingReduxWithWechaty: SubMenuData = {
 const usingPluginWithWechaty: SubMenuData = {
   label: 'Using Plugin with Wechaty',
   items: [
+    'using-plugin-with-wechaty/overview',
+    'using-plugin-with-wechaty/event-logger',
     'using-plugin-with-wechaty/qr-code-terminal',
+    'using-plugin-with-wechaty/heartbeat',
   ]
 }
 
