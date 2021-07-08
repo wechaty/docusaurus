@@ -122,7 +122,7 @@ const gettingStarted: SubMenuData = {
   items: [
     'getting-started/overview',
     'getting-started/quick-start',
-    'getting-started/hard-way',
+    'getting-started/running-locally',
   ],
 }
 
@@ -265,6 +265,7 @@ const tutorials = {
   label: 'Tutorials',
   items: [
     'tutorials/overview',
+    'tutorials/installation',
     subMenu(gettingStarted),
     'tutorials/video-tutorial',
     'tutorials/docker',
