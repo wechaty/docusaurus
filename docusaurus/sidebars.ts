@@ -124,6 +124,13 @@ const quickStart: SubMenuData = {
   ],
 }
 
+const usingPluginWithWechaty: SubMenuData = {
+  label: 'Using Plugin with Wechaty',
+  items: [
+    'using-plugin-with-wechaty/qr-code-terminal',
+  ]
+}
+
 const community: SubMenuData = {
   label: 'Community',
   items: [
@@ -265,11 +272,12 @@ const tutorials = {
   label: 'Tutorials',
   items: [
     'tutorials/overview',
+    'tutorials/installation',
     subMenu(gettingStarted),
     'tutorials/video-tutorial',
     'tutorials/docker',
     'tutorials/usage-with-heroku',
-    'tutorials/using-plugin-with-wechaty',
+    subMenu(usingPluginWithWechaty),
     'tutorials/using-vorpal-with-wechaty',
     'tutorials/using-redux-with-wechaty',
     'tutorials/cheatsheet',
