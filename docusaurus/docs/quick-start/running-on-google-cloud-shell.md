@@ -32,6 +32,6 @@ Now, you can follow the tutorial inside the cloud shell.
 
 First it tells you about what Wechaty is, and then it guides you to run the Wechaty Ding Dong Bot and connect it with either **WeChat** or **WhatsApp**. It also has a section where you have to implement a new functionality in the bot and thereby giving you a better understanding how Wechaty bots work under the hood.
 
-After completing this tutorial, you can continue and learn how to [run Wechaty locally](./../getting-started/hard-way.mdx) on your system.
+After completing this tutorial, you can continue and learn how to [run Wechaty locally](./../getting-started/running-locally.mdx) on your system.
 
 > Learn more about Google Cloud Shell Tutorials for Wechaty from this [blog post](https://wechaty.js.org/2021/02/20/google-cloud-shell-tutorials/).
