@@ -14,7 +14,7 @@ Wechaty is an exciting SDK for developing chatbots for popular Instant Messaging
 
 - Bot specification
 
- Outline the features and functionality of the bot in this step. Think through each feature to make sure your bot will meet the business requirements articulated in the first step. Wechaty provides features for message processing, room management, contact management, friendship management, and intelligent dialogue management.
+  Outline the features and functionality of the bot in this step. Think through each feature to make sure your bot will meet the business requirements articulated in the first step. Wechaty provides features for message processing, room management, contact management, friendship management, and intelligent dialogue management.
 
 - Writing bot script
 
