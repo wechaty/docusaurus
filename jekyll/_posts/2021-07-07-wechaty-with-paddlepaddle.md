@@ -1,5 +1,5 @@
 ---
-title: "Metaverse启动机之重构现世，AI创造营创意赛开启！"
+title: "AI Chatbot Competition -- Metaverse启动机之重构现世！"
 author: Valerieeeee
 categories: article
 tags:
