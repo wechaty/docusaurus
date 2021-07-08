@@ -136,8 +136,7 @@ start
 - 微信上的讨论无法在邮件列表中存档，也无法通过永久地址进行访问特定讨论内容，交流讨论内容多基于中文，对国际开发者不友好，阻碍了跨越国界的理解和互动，为了解决以上问题而出现了OSS.CHAT。
 - OSS.CHAT的功能是：当用户在 GitHub 上发布 issue 或者评论 issue 的时候，对应的微信群内会收到消息；群主引导用户将重要信息在 GitHub 的 issue 中进行回复讨论，正常群内闲聊内容在群中讨论；发布的中文issue 会被自动翻译成英文。
 - 大家若感兴趣，加入方式如下：
-  [Getting Started Tutorial (video)](https://youtu.be/HNksCmm_pvY)
-  [GitHub Repo](https://github.com/kaiyuanshe/osschat)[Community Meeting Notes](https://shimo.im/docs/wGHydDxvWGjWKgDK)
+  [Getting Started Tutorial (video)](https://youtu.be/HNksCmm_pvY)、[GitHub Repo](https://github.com/kaiyuanshe/osschat)、[Community Meeting Notes](https://shimo.im/docs/wGHydDxvWGjWKgDK)
 
 - 2020年，加入 2020 开源软件供应链点亮计划，极大程度的扩展了 Wechaty 支持的 IM 接入数量，多语言版本的 Wechaty，更多非 Javascript 语言的开发者涌入社区Wechaty 支持 Plugin 系统，写一份代码，可以在7个不同的主流平台上运行，只需要切换一下环境变量就可以。
 
