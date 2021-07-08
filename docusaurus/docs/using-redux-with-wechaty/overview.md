@@ -36,8 +36,6 @@ The tutorial for **Vannila Redux with Wechaty Redux Plugin** is available [here]
 
 🦆🦆🦆Ducks is a Reducer Bundles Manager that implements the Redux Ducks Modular Proposal with great convenience.
 
-> Image Credit: [Alamy](https://www.alamy.com/cute-duck-and-little-ducks-over-white-background-colorful-design-vector-illustration-image185379753.html)
-
 [![Ducks Modular Proposal](https://img.shields.io/badge/Redux-Ducks%202015-yellow)](https://github.com/erikras/ducks-modular-redux)
 [![Re-Ducks Extended](https://img.shields.io/badge/Redux-Re--Ducks%202016-orange)](https://github.com/alexnm/re-ducks)
 [![Ducksify Extension](https://img.shields.io/badge/Redux-Ducksify%202020-yellowgreen)](https://github.com/huan/ducks#3-ducksify-extension-currying--ducksify-interface)
