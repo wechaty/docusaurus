@@ -16,7 +16,7 @@ Wechaty is an exciting SDK for developing chatbots for popular Instant Messaging
 
  Outline the features and functionality of the bot in this step. Think through each feature to make sure your bot will meet the business requirements articulated in the first step. Wechaty provides features for message processing, room management, contact management, friendship management, and intelligent dialogue management.
 
-- Wrting bot script
+- Writing bot script
 
   Unlike other software projects, chatbots are conversational in nature. They interact with clients. This is where you write a bot script to guide the user towards accomplishing the desired task. It is important to keep the script short, interesting, engaging, and focused. This will ensure the user is engaged until the desired task is completed without losing interest.
 
