@@ -170,7 +170,7 @@ start
 
 ### 奇绩创坛机器人 <https://wechaty.js.org/2020/08/08/qijibot-sales-automation/>
 
-![intro](/assets/2021/06-summer-2021-open-source/015.png)
+![intro](/assets/2021/06-summer-2021-open-source/015.webp)
 
 ### 工作日报机器人 <https://wechaty.js.org/2020/07/11/wechaty-daily-report/>
 
