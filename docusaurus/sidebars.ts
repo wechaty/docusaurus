@@ -117,13 +117,21 @@ const caseStudy: SubMenuData = {
   ],
 }
 
-const gettingStarted: SubMenuData = {
-  label: 'Getting Started',
+const quickStart: SubMenuData = {
+  label: 'Quick Start',
   items: [
     'getting-started/overview',
     'getting-started/quick-start',
-    'getting-started/hard-way',
+    'getting-started/running-locally',
+    'getting-started/running-on-gitpod',
   ],
+}
+
+const usingPluginWithWechaty: SubMenuData = {
+  label: 'Using Plugin with Wechaty',
+  items: [
+    'using-plugin-with-wechaty/qr-code-terminal',
+  ]
 }
 
 const community: SubMenuData = {
@@ -254,15 +262,25 @@ const professional = {
   ],
 }
 
+const gettingStarted: SubMenuData = {
+  label: 'Getting Started',
+  items: [
+    'getting-started/overview',
+    subMenu(quickStart),
+    'getting-started/hard-way',
+  ],
+}
+
 const tutorials = {
   label: 'Tutorials',
   items: [
     'tutorials/overview',
+    'tutorials/installation',
     subMenu(gettingStarted),
     'tutorials/video-tutorial',
     'tutorials/docker',
     'tutorials/usage-with-heroku',
-    'tutorials/using-plugin-with-wechaty',
+    subMenu(usingPluginWithWechaty),
     'tutorials/using-vorpal-with-wechaty',
     'tutorials/using-redux-with-wechaty',
     'tutorials/cheatsheet',
