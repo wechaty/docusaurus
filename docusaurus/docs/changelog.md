@@ -36,7 +36,7 @@ title: Changelog
 1. @[LanceZhu](https://github.com/LanceZhu): [\#1854](https://github.com/wechaty/wechaty/pull/1854)
 1. @[zhaoic](https://github.com/zhaoic): [\#1822](https://github.com/wechaty/wechaty/pull/1822)
 1. @[coderwhocode](https://github.com/coderwhocode): [\#1819](https://github.com/wechaty/wechaty/pull/1819)
-1. @[gengchen528](https://github.com/gengchen528): [\#1818](https://github.com/wechaty/wechaty/pull/1818)
+1. @[leochen-g](https://github.com/leochen-g): [\#1818](https://github.com/wechaty/wechaty/pull/1818)
 1. @[monkeywithacupcake](https://github.com/monkeywithacupcake): [\#1759](https://github.com/wechaty/wechaty/pull/1759)
 1. @[lhr0909](https://github.com/lhr0909): [\#1666](https://github.com/wechaty/wechaty/pull/1666)
 1. @[jzj1993](https://github.com/jzj1993): [\#1661](https://github.com/wechaty/wechaty/pull/1661)
