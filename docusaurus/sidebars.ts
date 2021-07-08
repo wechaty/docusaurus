@@ -267,7 +267,6 @@ const gettingStarted: SubMenuData = {
   items: [
     'getting-started/overview',
     subMenu(quickStart),
-    'getting-started/running-locally',
   ],
 }
 
