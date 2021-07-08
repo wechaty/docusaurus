@@ -1,6 +1,6 @@
 ---
 title: "AI Chatbot Competition -- Metaverse启动机之重构现世！"
-author: Valerieeeee
+author: valerieeeee
 categories: article
 tags:
   - baidu
