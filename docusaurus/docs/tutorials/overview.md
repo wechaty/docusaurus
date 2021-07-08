@@ -19,7 +19,7 @@ The fastest way to get started with Wechaty is to use a Cloud based IDE for **ru
 
 If you are a total begginer then we recommend using [Gitpod](https://gitpod.io/#https://github.com/wechaty/wechaty-getting-started).
 
-Once you get basic idea of ding-dong bot, you can try out building it from scratch by following our [Running Locally](getting-started/hard-way.mdx) tutorial.
+Once you get basic idea of ding-dong bot, you can try out building it from scratch by following our [Running Locally](getting-started/running-locally.mdx) tutorial.
 
 ## Advanced Tutorials (Using plugins with wechaty)
 
