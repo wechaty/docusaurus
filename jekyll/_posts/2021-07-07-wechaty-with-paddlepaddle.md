@@ -15,7 +15,7 @@ image: /assets/2021/07-wechaty-with-paddlepaddle/header.png
 硬核ML Chatbot 大赛重磅来袭!
 由Wechaty、PaddlePaddle和Mixlab联合主办，未来事务管理局作为媒体支持的「AI创造营 ：Metaverse启动机之重构现世」ML Chatbot 大赛正式启动！
 
-Metaverse元宇宙的奥秘，等你来揭晓！ 
+Metaverse元宇宙的奥秘，等你来揭晓！
 我们向所有科幻爱好者发出邀约！
 期待“你”充分开发自己的脑洞，借助飞桨PaddlePaddle技术，构建未来世界的超级Chatbot。
 
@@ -61,4 +61,3 @@ Metaverse元宇宙的奥秘，等你来揭晓！
 
 现场名额有限，赶快入群获取报名链接吧！
 ![qrcode](/assets/2021/07-wechaty-with-paddlepaddle/qrcode.png)
-
