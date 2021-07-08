@@ -2,6 +2,12 @@
 title: Heartbeat plugin
 ---
 
+<!-- MDX import -->
+import Tabs     from '@theme/Tabs'
+import TabItem  from '@theme/TabItem'
+
+import ShortestChatbots from '../polyglot/transclusions/shortest-chatbots.mdx'
+
 The `Heartbeat` plugin helps to send emojis to a specified contact or group periodically. In this tutorial, you will learn how to add the `Heartbeat` plugin to a Wechaty bot.
 
 ## Requirements
@@ -109,25 +115,53 @@ bot.use(
 
 To run the bot, first you have to **export/set** an environment variable with the type of puppet to use, and then start the bot:
 
-#### Linux/macOS
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
 
 ```bash
 export WECHATY_LOG=verbose
-export WECHATY_PUPPET=wechaty-puppet-whatsapp
-# If you want to use WeChat
-# export WECHATY_PUPPET=wechaty-puppet-wechat
-npm start
+export WECHATY_PUPPET=wechaty-puppet-wechat
+make bot
+# the above is equals to the below command:
+# npm start
+#   or, npx ts-node examples/ding-dong-bot.ts
 ```
 
-#### Windows
+</TabItem>
+<TabItem value="mac">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+make bot
+# the above is equals to the below command:
+# npm start
+#   or, npx ts-node examples/ding-dong-bot.ts
+```
+
+</TabItem>
+<TabItem value="windows">
 
 ```bash
 set WECHATY_LOG=verbose
-set WECHATY_PUPPET=wechaty-puppet-whatsapp
-# If you want to use WeChat
-# set WECHATY_PUPPET=wechaty-puppet-wechat
-npm start
+set WECHATY_PUPPET=wechaty-puppet-wechat
+make bot
+# the above is equals to the below command:
+# npm start
+#   or, npx ts-node examples/ding-dong-bot.ts
 ```
+
+</TabItem>
+</Tabs>
 
 After running the bot, it will generate a QR code for **WeChat** or **WhatsApp** (as per the puppet you have used), scan it with the appropriate app, and the bot will now be connected to the app. You will notice that the bot sends the emoji to the specified contact periodically.
 
@@ -143,3 +177,4 @@ You can apply a similar concept to add the `Heartbeat` plugin to any of your Wec
 
 * [GitHub repository of Wechaty Plugin Contrib](https://github.com/wechaty/wechaty-plugin-contrib)
 * [NPM package of Wechaty Plugin Contrib](https://www.npmjs.com/package/wechaty-plugin-contrib)
+* [Wechaty plugin launch video](https://www.youtube.com/watch?v=tfGZXoe_aA4)
