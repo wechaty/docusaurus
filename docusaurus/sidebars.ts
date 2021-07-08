@@ -1,7 +1,7 @@
 /**
  * Docusaurus Sidebar
  */
-interface SubMenuData {
+ interface SubMenuData {
   label: string,
   items: (SubMenuData | string)[],
   type?: string,
@@ -127,10 +127,23 @@ const quickStart: SubMenuData = {
   ],
 }
 
+
+const usingReduxWithWechaty: SubMenuData = {
+  label: 'Using Redux with Wechaty',
+  items: [
+    'using-redux-with-wechaty/overview',
+    'using-redux-with-wechaty/vannila-redux',
+    'using-redux-with-wechaty/ducks-proposal',
+  ]
+}
+
 const usingPluginWithWechaty: SubMenuData = {
   label: 'Using Plugin with Wechaty',
   items: [
+    'using-plugin-with-wechaty/overview',
+    'using-plugin-with-wechaty/event-logger',
     'using-plugin-with-wechaty/qr-code-terminal',
+    'using-plugin-with-wechaty/heartbeat',
   ]
 }
 
@@ -267,7 +280,6 @@ const gettingStarted: SubMenuData = {
   items: [
     'getting-started/overview',
     subMenu(quickStart),
-    'getting-started/hard-way',
   ],
 }
 
@@ -282,7 +294,7 @@ const tutorials = {
     'tutorials/usage-with-heroku',
     subMenu(usingPluginWithWechaty),
     'tutorials/using-vorpal-with-wechaty',
-    'tutorials/using-redux-with-wechaty',
+    subMenu(usingReduxWithWechaty),
     'tutorials/cheatsheet',
     subMenu(examples),
   ],
