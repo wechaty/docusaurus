@@ -34,7 +34,7 @@ Wechaty is unopinionated about which tools you should use for writing automated 
 
 - [Dimon](http://dimon.co/)
 
-  This is a platform that helps chatbot makers to identify and fix issues in chabot conversations. It offers features such as decreased testing time and constant monitoring as a result providing real-time notification if something goes wrong. It also supports a number of IM platforms. We recommend you learn more about it on the [Dimon site](http://dimon.co/) to see if it suits your needs.
+  This is a platform that helps chatbot makers to identify and fix issues in chatbot conversations. It offers features such as decreased testing time and constant monitoring as a result providing real-time notification if something goes wrong. It also supports a number of IM platforms. We recommend you learn more about it on the [Dimon site](http://dimon.co/) to see if it suits your needs.
 
 ## Key considerations when testing Wechaty chatbots
 
