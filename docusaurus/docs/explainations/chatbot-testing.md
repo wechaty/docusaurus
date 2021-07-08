@@ -6,7 +6,7 @@ title: Wechaty Chatbot testing
 
 Chatbot testing is an integral part of the [chatbot development lifecycle](#placeholder-link). Like any other software project, having a robust and well thought out tests for your chatbot will contribute immensely to the development and maintenance of your chatbot. This is mainly because among many other reasons, testing ensures your chatbot functions as required and makes it easy to maintain your codebase.
 
-You can run both manual and automated tests. It is very easy to run manual tests if you are dealing with a project that is small in size and scope. With manual testing, you can login to your [IM](#placeholder-link) account and start chatting to test whether the chatbot works as intended. As the project increases in size, it is not feasible to rely on manual testing. You will be relying more on automated tests since they are more reliable than manual tests. Automated testing will not only make work easier but catch a number of bugs and edge cases which could be easily missed when running manual tests. With automated tests, your job will be to analyze and interprete the data generated.
+You can run both manual and automated tests. It is very easy to run manual tests if you are dealing with a project that is small in size and scope. With manual testing, you can login to your [IM](#placeholder-link) account and start chatting to test whether the chatbot works as intended. As the project increases in size, it is not feasible to rely on manual testing. You will be relying more on automated tests since they are more reliable than manual tests. Automated testing will not only make work easier but catch a number of bugs and edge cases which could be easily missed when running manual tests. With automated tests, your job will be to analyze and interpret the data generated.
 
 ## Wechaty chatbot testing tools
 
@@ -28,7 +28,7 @@ Wechaty is unopinionated about which tools you should use for writing automated 
 
 - [Botanalytics](https://botanalytics.co/)
 
-  This is a coversational analytics tool focused mainly on engagement and retention measurement for chatbots. This tool helps you visualize how the chatbot interacts with your clients. As a result it provides insights on how well your chatbot is performing so that you learn how to improve it.
+  This is a conversational analytics tool focused mainly on engagement and retention measurement for chatbots. This tool helps you visualize how the chatbot interacts with your clients. As a result it provides insights on how well your chatbot is performing so that you learn how to improve it.
 
   For more about what you can do with this tool and the IM platforms supported, you can check the [Botanalytics website](https://botanalytics.co/).
 
@@ -49,4 +49,4 @@ Chatbots are conversational in nature. With Wechaty, you can build chatbots for 
 - Does the chatbot keep the user engaged?
 - Does the chatbot violate the terms of service of the Instant Messaging platform on which it is running?
 
-Chatbot testing is not an event but a process which runs through the entire chatbot development lifecycle. Unit testing conducted while coding is as important as the real-life feedback provided as the catbot interacts with clients in production. It is paramount to use the information obtained from feedback to improve the bot.
+Chatbot testing is not an event but a process which runs through the entire chatbot development lifecycle. Unit testing conducted while coding is as important as the real-life feedback provided as the chatbot interacts with clients in production. It is paramount to use the information obtained from feedback to improve the bot.
