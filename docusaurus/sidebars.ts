@@ -1,7 +1,7 @@
 /**
  * Docusaurus Sidebar
  */
-interface SubMenuData {
+ interface SubMenuData {
   label: string,
   items: (SubMenuData | string)[],
   type?: string,
@@ -117,19 +117,41 @@ const caseStudy: SubMenuData = {
   ],
 }
 
-const gettingStarted: SubMenuData = {
-  label: 'Getting Started',
+const quickStart: SubMenuData = {
+  label: 'Quick Start',
   items: [
     'getting-started/overview',
     'getting-started/quick-start',
-    'getting-started/hard-way',
+    'getting-started/running-locally',
+    'getting-started/running-on-gitpod',
   ],
+}
+
+
+const usingReduxWithWechaty: SubMenuData = {
+  label: 'Using Redux with Wechaty',
+  items: [
+    'using-redux-with-wechaty/overview',
+    'using-redux-with-wechaty/vannila-redux',
+    'using-redux-with-wechaty/ducks-proposal',
+  ]
+}
+
+const usingPluginWithWechaty: SubMenuData = {
+  label: 'Using Plugin with Wechaty',
+  items: [
+    'using-plugin-with-wechaty/overview',
+    'using-plugin-with-wechaty/event-logger',
+    'using-plugin-with-wechaty/qr-code-terminal',
+    'using-plugin-with-wechaty/heartbeat',
+  ]
 }
 
 const community: SubMenuData = {
   label: 'Community',
   items: [
-    'community',
+    'community/overview',
+    'community/code-of-conduct',
     {
       type: 'category',
       label: '开源软件供应链点亮计划',
@@ -158,6 +180,8 @@ const community: SubMenuData = {
         'gsoc/2021',
       ],
     },
+    'marketing/branding',
+    'marketing/co-marketing',
   ],
 }
 
@@ -191,6 +215,7 @@ const introduction = {
     'overview',
     'wechaty',
     subMenu(showcases),
+    subMenu(caseStudy),
     subMenu(community),
     subMenu(contributing),
     'changelog',
@@ -205,20 +230,73 @@ const introduction = {
  *
  *  Issue #704 - https://github.com/wechaty/wechaty.js.org/issues/704
  ****************************************************************************/
+ const basic = {
+  label: 'Basic',
+  items: [
+    'examples/basic/the-worlds-shortest-chatbot-code-in-6-lines',
+    'examples/basic/ding-dong-bot',
+    'examples/basic/contact-bot',
+  ],
+}
+
+const advanced = {
+  label: 'Advanced',
+  items: [
+    'examples/advanced/demo-in-tutorial',
+    'examples/advanced/busy-bot',
+    'examples/advanced/media-file-bot',
+    'examples/advanced/room-bot',
+    'examples/advanced/friend-bot',
+    'examples/advanced/gist-bot',
+  ],
+}
+
+const professional = {
+  label: 'Professional',
+  items: [
+    'examples/professional/hot-import-bot',
+    'examples/professional/ctrl-c-signal-bot',
+    'examples/professional/monster-bot',
+    'examples/professional/api-ai-bot',
+    'examples/professional/speech-to-text-bot',
+    'examples/professional/tuling123-bot',
+    'examples/professional/telegram-roger-bot',
+    'examples/professional/blessed-twins-bot',
+  ],
+}
+
+ const examples = {
+  label: 'Examples',
+  items: [
+    'examples/overview',
+    subMenu(basic),
+    subMenu(advanced),
+    subMenu(professional),
+  ],
+}
+
+const gettingStarted: SubMenuData = {
+  label: 'Getting Started',
+  items: [
+    'getting-started/overview',
+    subMenu(quickStart),
+  ],
+}
+
 const tutorials = {
   label: 'Tutorials',
   items: [
     'tutorials/overview',
+    'tutorials/installation',
     subMenu(gettingStarted),
-    subMenu(caseStudy),
     'tutorials/video-tutorial',
     'tutorials/docker',
     'tutorials/usage-with-heroku',
-    'tutorials/using-plugin-with-wechaty',
+    subMenu(usingPluginWithWechaty),
     'tutorials/using-vorpal-with-wechaty',
-    'tutorials/using-redux-with-wechaty',
+    subMenu(usingReduxWithWechaty),
     'tutorials/cheatsheet',
-    'tutorials/examples',
+    subMenu(examples),
   ],
 }
 

@@ -23,12 +23,12 @@ And you can write Wechaty in almost all popular programming languages:
 
 ## Features {#features}
 
-1. Message processing: receive and send messages, support text, image, audio, video, and attatchments.
-1. Room management: create rooms, add/remove room members, manage topics, etc
-1. Contact management: search by name, alias, tags, get profile data and avatar
-1. Friendship management: search and add new friends, accept friendship requests, etc
+1. Message processing: Receive and send messages, support text, image, audio, video, and attatchments.
+1. Room management: Create rooms, add/remove room members, manage topics, etc
+1. Contact management: Search by name, alias, tags, get profile data and avatar
+1. Friendship management: Search and add new friends, accept friendship requests, etc
 1. Intelligent dialogue Management: Just several configuration can get a task-oriented bot.
-1. last but not least: write once, run on all IM platforms!
+1. last but not least: Write once, run on all IM platforms!
 
 :::note API References
 

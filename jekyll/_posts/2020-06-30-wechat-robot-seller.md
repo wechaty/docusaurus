@@ -1,6 +1,6 @@
 ---
 title: "带货机器人（wechat robot seller）"
-author: peterzhang
+author: zhangchunsheng
 categories: project
 tags:
   - padplus
