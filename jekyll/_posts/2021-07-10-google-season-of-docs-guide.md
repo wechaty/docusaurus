@@ -11,7 +11,7 @@ tags:
   - gsod-2021
   - docs
   - guide
-image: /assets/2021/07-gsod-guide/guide.webp
+image: /assets/2021/07-google-season-of-docs-guide/guide.webp
 ---
 
 [Google Season of Docs](https://developers.google.com/season-of-docs) is an annual program organised by Google.
