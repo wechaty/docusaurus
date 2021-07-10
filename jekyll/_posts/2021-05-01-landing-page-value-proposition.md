@@ -5,6 +5,8 @@ categories: gsod
 tags:
   - gsod
   - 2021
+  - gsod-2021
+  - google
   - news
   - featured
   - marketing
