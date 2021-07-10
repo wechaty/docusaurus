@@ -16,7 +16,7 @@ Docker allows you to create virtualized sandboxes to run and deploy software. Us
 ## Requirements
 
 * Your OS must be Docker compatible, [click here](https://docs.docker.com/engine/install/) to see supported OS versions.
-* Uninstall any older versions of Docker such as `docker`, `docker.io`, or `docker-engine`, if installed.
+* If you have installed any older versions of Docker, including `docker`, `docker.io`, or `docker-engine`, uninstall it.
 
 ```shell
  sudo apt-get remove docker docker-engine docker.io containerd runc
@@ -36,7 +36,7 @@ sudo sh get-docker.sh
 
 ## Getting Started after Deployment
 
-To get familiar with the Docker Environment ,you can try [Runing hello-world under 3 minutes with Docker](https://docs.docker.com/get-started/)
+To get familiar with the Docker Environment, you can try [Running hello-world under 3 minutes with Docker](https://docs.docker.com/get-started/).
 
 You can confirm that you have downloaded `wechaty/wechaty` image successfully by running `docker pull wechaty/wechaty`, and this command also help you to upgrade the image to the latest version.
 
@@ -71,18 +71,18 @@ $ wechaty mybot.ts
 
 ### Know the commands used above
 
-1. `-t` : Allocate a pseudo-TTY
-2. `-i` : Keep STDIN open even if not attached
-3. `--rm` : Automatically remove the container when it exits
-4. `--privileged` : Give extended privileges to this container
-5. `--network=host` : use the Docker host network stack
-6. `-e WECHATY_LOG="$WECHATY_LOG"` : Pass the environment variable `WECHATY_LOG` into the container
-7. `--volume="$(pwd)":/bot` : Bind current directory(`"$(pwd)"`) to '`/bot`' inside the container, by mounting the volume
-8. `--name=wechaty` : Assign `wechaty` as the container name
-9. `wechaty/wechaty:latest` : Image name on docker hub, here's our [wechaty/wechaty](https://hub.docker.com/r/wechaty/wechaty) with `latest` version
-10. `mybot.js` : File contains code wrote by you, should be placed in current directory `./`
+* `-t` : Allocate a pseudo-TTY
+* `-i` : Keep STDIN open even if not attached
+* `--rm` : Automatically remove the container when it exits
+* `--privileged` : Give extended privileges to this container
+* `--network=host` : use the Docker host network stack
+* `-e WECHATY_LOG="$WECHATY_LOG"` : Pass the environment variable `WECHATY_LOG` into the container
+* `--volume="$(pwd)":/bot` : Bind current directory(`"$(pwd)"`) to '`/bot`' inside the container, by mounting the volume
+* `--name=wechaty` : Assign `wechaty` as the container name
+* `wechaty/wechaty:latest` : Image name on docker hub, here's our [wechaty/wechaty](https://hub.docker.com/r/wechaty/wechaty) with `latest` version
+* `mybot.js` : File contains code wrote by you, should be placed in current directory `./`
 
-* See Also: [Dockerize Wechaty for easy start #66](https://github.com/wechaty/wechaty/issues/66)
+See Also: [Dockerize Wechaty for easy start #66](https://github.com/wechaty/wechaty/issues/66)
 
 ### Examples
 
