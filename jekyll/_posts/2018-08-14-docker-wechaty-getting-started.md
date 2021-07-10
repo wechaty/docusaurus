@@ -13,7 +13,7 @@ tags:
 
 [![dockeri.co](http://dockeri.co/image/zixia/wechaty)](https://hub.docker.com/r/zixia/wechaty/)
 
-**GitHub Repo: <https://github.com/Chatie/docker-wechaty-getting-started>**
+**GitHub Repo: <https://github.com/wechaty/docker-wechaty-getting-started>**
 
 ## Features
 
