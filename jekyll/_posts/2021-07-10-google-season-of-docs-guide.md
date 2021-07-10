@@ -46,6 +46,24 @@ Here is the guideline for video-recording/downloading/uploading
 
 > Refer from: [Google Season of Docs 2021 Team Proposal - Volunteering](https://wechaty.js.org/2021/05/12/gsod-2021-volunteering-proposal/)
 
+### PR Reviewing & Approving Rules
+
+#### For writers
+
+Writers who are in the same team are **REQUIRED** to review each other’s PR, and give “Request changes” or “Approve”
+Writers are encouraged to give “Request changes”, “Approve”, or “Comment” to any PRs. (please contribute to the whole team by doing it!)
+
+#### For volunteers
+
+Volunteers are **REQUIRED** to review all PRs created by writers and give “Request changes” or “Approve”
+
+#### Mentors are in charge of reviewing the PR after
+
+- Volunteers create an issue list about the high priority PR
+- PR passed all the CI tests (CLA & unit testings)
+- PR gets approved by all the project team members (if applicable, 0-1 approval)
+- PR gets approved by all volunteers (2 approvals)
+
 ## Phased Work
 
 The three blog at the beginning, middle and the end should be commited to **[wechaty.js.org](https://github.com/wechaty/wechaty.js.org) Repo** . Before submitting the report, you can read the [Wechaty community specifications](https://wechaty.js.org/2021/06/23/the-wechaty-way/) and know wechaty better:
