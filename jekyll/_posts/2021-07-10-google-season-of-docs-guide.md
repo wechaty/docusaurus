@@ -22,7 +22,7 @@ Here is the related blog:
 - [Hello Wechaty GSoD’21 Technical Writers!](https://wechaty.js.org/2021/05/08/gsod-2021-selected-technical-writers/), Written By [Huan](https://wechaty.js.org/contributors/huan/)
 - [GSoD'21 First Month Evaluation](https://wechaty.js.org/2021/06/22/gsod-2021-first-month-evaluation/), Written By [Rohitesh Kumar Jain](https://wechaty.js.org/contributors/rohitesh-kumar-jain)
 
-We have some guide for GSoD like what we did in [OSPP - Chinese clone of Google summer of code](https://wechaty.js.org/2021/06/24/summer-wechaty-guide/). All of the tech writer involved in the project are required to complete their weekly work and phased work :
+We have some guide for GSoD like what we did in [OSPP - a Chinese clone of Google's summer of code](https://wechaty.js.org/2021/06/24/summer-wechaty-guide/). All of the tech writer involved in the project are required to complete their weekly work and phased work :
 
 - Weekly work
   - Every work day commit
