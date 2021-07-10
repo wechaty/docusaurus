@@ -1,7 +1,7 @@
 ---
 name: Jiarui LI (李佳芮)
 site: https://lijiarui.github.io
-bio: 句子互动创始人 & CEO，微软人工智能最具价值专家 (AI MVP)
+bio: Co-Creator of Wechaty; 句子互动创始人 & CEO，微软人工智能最具价值专家 (AI MVP)
 avatar: /assets/contributors/lijiarui/avatar.png
 email: rui@juzi.bot
 twitter: https://weibo.com/u/2175505900
@@ -11,7 +11,7 @@ twitter: https://weibo.com/u/2175505900
 
 2017年创立句子互动，专注基于微信生态提供智能对话服务。客户覆盖教育、保险、大健康等多个领域。同年入选百度AI加速器，次年和百度联手打造[《从0到1搭建聊天机器人》系列课程](https://ai.baidu.com/support/video)。2019年成腾讯云智能对话平台合作伙伴。公司先后获得 PreAngel、Plug and Play、Y Combination,、TSVC（清谷资本）和阿尔法公社等多家中美机构天使投资。
 
-GitHub 8,300+ Stars 开源项目 Wechaty 联合作者，创建并管理覆盖全球基于微信平台的聊天机器人开发者社区，多次应邀在 Google、Microsoft 大会中做 Chatbot 行业技术分享。
+GitHub 10,000+ Stars 开源项目 Wechaty 联合作者，创建并管理覆盖全球基于微信平台的聊天机器人开发者社区，多次应邀在 Google、Microsoft 大会中做 Chatbot 行业技术分享。
 
 ![无边游泳池](/assets/contributors/lijiarui/sky.jpg)
 
