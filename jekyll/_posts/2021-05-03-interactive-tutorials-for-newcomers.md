@@ -1,7 +1,7 @@
 ---
 title: "Soumi Bardhan: Interactive tutorials for newcomers"
 author: soumi7
-categories: proposal
+categories: gsod
 tags:
   - python
   - google
