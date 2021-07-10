@@ -152,6 +152,20 @@ Report template as follows:
     - Problems encountered and solutions
   - Voluteer Assessment
 
+## Submit Expense
+
+As [GSoD Payment Intro](https://developers.google.com/season-of-docs/docs/org-payments) showed:
+
+- Organizations will receive 40% of the grant after hiring a technical writer. Organizations will receive invitations to submit their first expense starting June 10, 2021.
+- Organizations will receive the remaining 60% of the grant after successful completion of the Season of Docs program. Organizations will receive invitations to submit their final expense starting December 14, 2021.
+
+So for all of the tech writers in Wechaty:
+
+- Get the first 40% stipends after submitting the mid-term blog and reviewed by volunteers and mentors.
+- Get the remainig 60% stipends after they submitting the final-term blog and reviewed by volunteers and mentors.
+
+Tech writers can submit expenses on [Wechaty-GSod-Opencollective](https://opencollective.com/google-season-of-docs/expenses/new), see more at [Opencollective docs about expences and getting paid](https://docs.opencollective.com/help/expenses-and-getting-paid/expenses)
+
 ## Performance
 
 To Be Added in the future.
