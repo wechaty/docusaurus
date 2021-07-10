@@ -14,7 +14,7 @@ tags:
 image: /assets/2021/07-google-season-of-docs-guide/guide.webp
 ---
 
-[Google Season of Docs](https://developers.google.com/season-of-docs) is an annual program organised by Google.
+[Google Season of Docs](https://developers.google.com/season-of-docs) is an annual program organized by Google.
 
 Here is the related blog:
 
@@ -22,10 +22,10 @@ Here is the related blog:
 - [Hello Wechaty GSoD’21 Technical Writers!](https://wechaty.js.org/2021/05/08/gsod-2021-selected-technical-writers/), Written By [Huan](https://wechaty.js.org/contributors/huan/)
 - [GSoD'21 First Month Evaluation](https://wechaty.js.org/2021/06/22/gsod-2021-first-month-evaluation/), Written By [Rohitesh Kumar Jain](https://wechaty.js.org/contributors/rohitesh-kumar-jain)
 
-We have some guide for GSoD like what we did in [OSPP - a Chinese clone of Google's summer of code](https://wechaty.js.org/2021/06/24/summer-wechaty-guide/). All of the tech writer involved in the project are required to complete their weekly work and phased work :
+We have some guide for GSoD like what we did in [OSPP - a Chinese clone of Google's summer of code](https://wechaty.js.org/2021/06/24/summer-wechaty-guide/). All of the tech writers involved in the project are required to complete their weekly work and phased work :
 
 - Weekly work
-  - Every work day commit
+  - Every workday commit
   - [Wechaty GSoD'21 Weekly Follow-Ups](https://docs.google.com/spreadsheets/d/1QglSl5JuZuVom84Or8yGhHb3_YbRMDBPgccxoMmnBa0/edit#gid=978979489)
   - Weekly Zoom Meeting
 - Phased work
@@ -35,12 +35,12 @@ We have some guide for GSoD like what we did in [OSPP - a Chinese clone of Googl
 
 ## Weekly Work
 
-Volunteer will organize weekly meeting and write meeting notes & publish blog posts with zoom meeting recording videos on YouTube embedded.
+A volunteer will organize the weekly meeting and write meeting notes & publish blog posts with zoom meeting recording videos on YouTube embedded.
 
 Here is the guideline for video-recording/downloading/uploading
 
-- Download the recording which has shared screen along with the gallery view
-- Crop the video at the beginning and at the end of the meeting, video should start form the beginning of the meeting
+- Download the recording which has a shared screen along with the gallery view
+- Crop the video at the beginning and the end of the meeting, the video should start to form the beginning of the meeting
 - Add a beautiful thumbnail to the video
 - Highlight the most important agenda of the video by adding timestamps like [kick-off meeting recording](https://www.youtube.com/watch?v=hTkM_XPpFfU)
 
@@ -66,7 +66,7 @@ Volunteers are **REQUIRED** to review all PRs created by writers and give “Req
 
 ## Phased Work
 
-The three blog at the beginning, middle and the end should be commited to **[wechaty.js.org](https://github.com/wechaty/wechaty.js.org) Repo** . Before submitting the report, you can read the [Wechaty community specifications](https://wechaty.js.org/2021/06/23/the-wechaty-way/) and know wechaty better:
+The three blogs at the beginning, middle and the end should be committed to **[wechaty.js.org](https://github.com/wechaty/wechaty.js.org) Repo**. Before submitting the report, you can read the [Wechaty community specifications](https://wechaty.js.org/2021/06/23/the-wechaty-way/) and know wechaty better:
 
 1. Introduction of Wechaty
 1. Community communication channels
@@ -79,11 +79,11 @@ It is important to note that the blog publishing specifications describe in deta
 
 ### Proposal Blog
 
-Now all of the tech writers have already finished this part. Here is some specification, if you have time, you can modify the previous blog to make it more beautiful.
+All of the tech writers have already finished this part. Here is some specification, if you have time, you can modify the previous blog to make it more beautiful.
 
 #### 1. Personal Profile
 
-Create your contributor profile (if you are a first time contributor). You can commit to [wechaty.js.org](https://github.com/wechaty/wechaty.js.org) Repo's `jekyll/_contributors` directory.
+Create your contributor profile (if you are a first-time contributor). You can commit to [wechaty.js.org](https://github.com/wechaty/wechaty.js.org) Repo's `jekyll/_contributors` directory.
 
 You can refer to the following developer introduction content writing page:
 
@@ -111,9 +111,9 @@ You can refer to the following developer introduction content writing page:
 
 ### Mid-term Blog
 
-There will be an GSoD Mid-term Demo Day, volunteers can orgnize this Mid-term Demo Day on a regular weekly zoom meeting.
+There will be a GSoD Mid-term Demo Day, volunteers can organize this Mid-term Demo Day on a regular weekly zoom meeting.
 
-All of the techwriter should submit a mid-term blog with the YouTube Midterm demo day video and a summary of the mid-term work. The video needs to be uploaded to youtube, and contact Huan to add it to the playlist of wechaty.
+All of the tech writers should submit a mid-term blog with the YouTube Midterm demo day video and a summary of the mid-term work. The video needs to be uploaded to youtube, and contact Huan to add it to the playlist of wechaty.
 
 Report template as follows:
 
@@ -162,9 +162,9 @@ As [GSoD Payment Intro](https://developers.google.com/season-of-docs/docs/org-pa
 So for all of the tech writers in Wechaty:
 
 - Get the first 40% stipends after submitting the mid-term blog and reviewed by volunteers and mentors.
-- Get the remainig 60% stipends after they submitting the final-term blog and reviewed by volunteers and mentors.
+- Get the remaining 60% stipends after they submitting the final-term blog and reviewed by volunteers and mentors.
 
-Tech writers can submit expenses on [Wechaty-GSod-Opencollective](https://opencollective.com/google-season-of-docs/expenses/new), see more at [Opencollective docs about expences and getting paid](https://docs.opencollective.com/help/expenses-and-getting-paid/expenses)
+Tech writers can submit expenses on [Wechaty-GSod-Opencollective](https://opencollective.com/google-season-of-docs/expenses/new), see more at [Opencollective docs about expenses and getting paid](https://docs.opencollective.com/help/expenses-and-getting-paid/expenses)
 
 ## Performance
 
@@ -172,4 +172,4 @@ To Be Added in the future.
 
 ## After GSod
 
-After the GSoD’21, techwriters should publish a blog post for talking about the whole project of GSoD’21 Wechaty from your personal perspective
+After the GSoD’21, tech writers should publish a blog post talking about the whole project of GSoD’21 Wechaty from your perspective
