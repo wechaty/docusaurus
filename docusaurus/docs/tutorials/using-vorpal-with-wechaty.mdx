@@ -2,11 +2,19 @@
 title: 'Using Vorpal with Wechaty'
 ---
 
+<!-- MDX import -->
+import Tabs     from '@theme/Tabs'
+import TabItem  from '@theme/TabItem'
+
+import ShortestChatbots from '../polyglot/transclusions/shortest-chatbots.mdx'
+
 [![Wechaty Vorpal](https://img.shields.io/badge/Wechaty-Vorpal-brightgreen.svg)](https://github.com/wechaty/wechaty-vorpal)
 [![NPM](https://github.com/wechaty/wechaty-vorpal/workflows/NPM/badge.svg)](https://github.com/wechaty/wechaty-vorpal/actions?query=workflow%3ANPM)
- [![NPM Version](https://img.shields.io/npm/v/wechaty-vorpal?color=brightgreen)](https://www.npmjs.com/package/wechaty-vorpal)
+[![NPM Version](https://img.shields.io/npm/v/wechaty-vorpal?color=brightgreen)](https://www.npmjs.com/package/wechaty-vorpal)
 
-Extensible Interactive CLI Plugin for Wechaty ChatOps, Powered by Vorpal.
+[Vorpal](https://github.com/dthree/vorpal) is a framework for building immersive CLI applications using `Node.js`. [WechatyVorpal](https://github.com/wechaty/wechaty-vorpal) is an extensible interactive CLI plugin for Wechaty ChatOps that is powered by Vorpal.
+
+In this tutorial, you will learn how to build a [Hacker News](https://news.ycombinator.com/) bot, that can be run on **WeChat** and **WhatsApp**, using `wechaty-vorpal` and `vorpal-hacker-news` plugins.
 
 [![Wechaty Vorpal](https://wechaty.github.io/wechaty-vorpal/images/wechaty-vorpal.png)](https://github.com/wechaty/wechaty-vorpal)
 
@@ -58,8 +66,6 @@ See: [wechaty-vorpal-contrib](https://github.com/wechaty/wechaty-vorpal-contrib)
 
 ## Getting started
 
-In this tutorial you will learn how to use [Vorpal](https://github.com/wechaty/wechaty-vorpal) with [Wechaty](https://wechaty.js.org/) to build a [Hacker News](https://news.ycombinator.com/) chat bot.
-
 Before getting started, make sure you have `Node.js` installed on your system. If you do not have `Node.js` installed (or have a version below 12), then you need to install the latest version of `Node.js` by following the links below:
 
 :::note Node.js installation docs
@@ -78,11 +84,11 @@ Otherwise, if you just want to try out the bot on your local system, follow the 
 
 ### 1. Clone the repository
 
-Use the following commands to clone the [GitHub repository](https://github.com/sbis04/vorpal-wechaty-hn) and navigate to the directory:
+Use the following commands to clone the [GitHub repository](https://github.com/wechaty/wechaty-vorpal-contrib) and navigate to the directory:
 
 ```bash
-git clone https://github.com/sbis04/vorpal-wechaty-hn
-cd vorpal-wechaty-hn
+git clone https://github.com/wechaty/wechaty-vorpal-contrib
+cd wechaty-vorpal-contrib
 ```
 
 ### 2. Install dependencies
@@ -97,25 +103,53 @@ npm install
 
 First, you have to `export/set` the environment variables, and then you can run the bot:
 
-#### Linux/macOS
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
 
 ```bash
 export WECHATY_LOG=verbose
 export WECHATY_PUPPET=wechaty-puppet-wechat
-# If you want to use WhatsApp
-# export WECHATY_PUPPET=wechaty-puppet-whatsapp
-npm start
+make bot
+# the above is equals to the below command:
+# npm start
+#   or, npx ts-node examples/ding-dong-bot.ts
 ```
 
-#### Windows
+</TabItem>
+<TabItem value="mac">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+make bot
+# the above is equals to the below command:
+# npm start
+#   or, npx ts-node examples/ding-dong-bot.ts
+```
+
+</TabItem>
+<TabItem value="windows">
 
 ```bash
 set WECHATY_LOG=verbose
 set WECHATY_PUPPET=wechaty-puppet-wechat
-# If you want to use WhatsApp
-# set WECHATY_PUPPET=wechaty-puppet-whatsapp
-npm start
+make bot
+# the above is equals to the below command:
+# npm start
+#   or, npx ts-node examples/ding-dong-bot.ts
 ```
+
+</TabItem>
+</Tabs>
 
 > There are various **Wechaty puppets** available, you can know more about them [here](https://github.com/wechaty/wechaty-getting-started#working-with-different-puppets).
 
@@ -157,7 +191,7 @@ This will generate the `package.json` file containing these:
 }
 ```
 
-### 2. Add dependencies
+### 2. Install dependencies
 
 For building the bot mainly you will require the following dependencies:
 
@@ -166,97 +200,34 @@ For building the bot mainly you will require the following dependencies:
 * [vorpal-hacker-news](https://www.npmjs.com/package/vorpal-hacker-news): To fetch data from Hacker News API using Vorpal
 * [qrcode-terminal](https://www.npmjs.com/package/qrcode-terminal): Displays the QR code
 
-```json
-"dependencies": {
-  "qrcode-terminal": "^0.12.0",
-  "vorpal-hacker-news": "^1.0.6",
-  "wechaty": "^0.60.5",
-  "wechaty-vorpal": "^0.6.12"
-}
+You can install these dependencies by running the following command:
+
+```bash
+npm install wechaty wechaty-vorpal vorpal-hacker-news qrcode-terminal
 ```
 
 You will also need to add dependencies for using any [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/) which helps to integrate Wechaty with various **instant messaging (IM) systems** (such as WeChat, Whatsapp, and Gitter):
 
-```json
-"devDependencies": {
-  "wechaty-puppet-mock": "^0.28.2",
-  "wechaty-puppet-wechat": "^0.28",
-  "wechaty-puppet-wechat4u": "^0.18",
-  "wechaty-puppet-whatsapp": "0.2.3"
-}
-```
+1. If you want to use **WhatsApp**, you can install `wechaty-puppet-whatsapp`:
 
-> You can add only the puppets that you need for using the bot.
+  ```bash
+  npm install wechaty-puppet-whatsapp
+  ```
+2. If you want to use **WeChat**, you can install `wechaty-puppet-wechat`:
 
-At this point the `package.json` file will look like this (a few more required dependencies are added):
+  ```bash
+  npm install wechaty-puppet-wechat
+  ```
 
-```json
-{
-  "name": "vorpal-bot",
-  "version": "1.0.0",
-  "description": "Vorpal Hacker News Bot",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "qrcode-terminal": "^0.12.0",
-    "vorpal-hacker-news": "^1.0.6",
-    "wechaty": "^0.60.5",
-    "wechaty-vorpal": "^0.6.12"
-  },
-  "devDependencies": {
-    "@chatie/eslint-config": "^0.12.3",
-    "@chatie/tsconfig": "^0.14.1",
-    "check-node-version": "^4.1.0",
-    "connect": "^3.7.0",
-    "cross-env": "^7.0.3",
-    "nodemon": "^2.0.7",
-    "ts-node": "^9.1.1",
-    "typescript": "^4.2.4",
-    "wechaty-puppet-mock": "^0.28.2",
-    "wechaty-puppet-wechat": "^0.28",
-    "wechaty-puppet-wechat4u": "^0.18",
-    "wechaty-puppet-whatsapp": "0.2.3"
-  }
-}
-```
+3. If you want to use **Wecom**, you can install `wechaty-puppet-wxwork`:
 
-### 3. Install dependencies
+  ```bash
+  npm install wechaty-puppet-wxwork
+  ```
 
-Before proceeding further, you should install the dependencies that we just specified in the `package.json` file. Run the following command from the root directory:
+> You can find more information about the puppets [here](https://wechaty.js.org/docs/puppet-providers/).
 
-```sh
-npm install
-```
-
-This will generate a `node_modules` directory containing all the installed dependencies, and a `package-lock.json` file.
-
-### 4. Configure TypeScript
-
-Create a new file called `tsconfig.json` inside the root folder of the npm project directory, add the following:
-
-```json
-{
-    "extends": "@chatie/tsconfig",
-    "compilerOptions": {
-      "outDir": "dist"
-    },
-    "include": [
-      "src/**/*.ts"
-    ],
-    "exclude": [
-      "node_modules/"
-    ]
-}
-```
-
-Now, you are ready to start writing the main code for building the bot.
-
-### 5. Writing code for bot
+### 3. Writing code for bot
 
 Start by creating a new folder called `src`, and add a file `vorpal-bot.ts`. We will be writing the code here.
 
@@ -276,73 +247,86 @@ import { generate } from 'qrcode-terminal'
 const hackerNews = require('vorpal-hacker-news')
 ```
 
-Specify some functions that we will require for handling different events returned by the Wechaty bot.
+Now, you have to define some functions that will help you to handle the different events returned by the Wechaty bot.
 
-#### onScan
+* **onScan**
 
-This function will be used for generating the **QR code** for the puppet specified, and display it on the console.
+  Function used for generating **QR code** for the puppet specified, and display it on the console.
 
-```ts
-function onScan(qrcode: string, status: ScanStatus) {
-    if (status === ScanStatus.Waiting || status === ScanStatus.Timeout) {
+  Follow the steps below:
+  
+  1. Check for the `status` of the QR code scanning process:
+  
+     ```ts
+     function onScan(qrcode: string, status: ScanStatus) {
+         if (status === ScanStatus.Waiting || status === ScanStatus.Timeout) {
+             // TODO: Add QR code generation here
+         } else {
+             log.info('VorpalBot:', 'onScan: %s(%s)', ScanStatus[status], status)
+         }
+     }
+     ```
+  
+     If the **status** is `Waiting` or `Timeout` then proceed with the QR code generation, otherwise print the scan status on console.
+  
+  2. Generate QR code:
+  
+     ```ts
+     generate(qrcode, { small: true })
+  
+     const qrcodeImageUrl = [
+       'https://wechaty.js.org/qrcode/',
+       encodeURIComponent(qrcode),
+     ].join('')
+     ```
+  
+  3. Display QR code on console along with the status:
+  
+     ```ts
+     log.info('VorpalBot:', 'onScan: %s(%s) - %s', ScanStatus[status], status, qrcodeImageUrl)
+     ```
 
-        // Generate the QR code
-        generate(qrcode, { small: true })
+* **onLogin**
 
-        const qrcodeImageUrl = [
-            'https://wechaty.js.org/qrcode/',
-            encodeURIComponent(qrcode),
-        ].join('')
+  Function for printing a log message when an user logs in to the bot. Here, a `Contact` object is passed as a parameter which is printed on the console in order to understand who has logged in.
 
-        // Display the QR code on console
-        log.info('VorpalBot:', 'onScan: %s(%s) - %s', ScanStatus[status], status, qrcodeImageUrl)
-    } else {
-        log.info('VorpalBot:', 'onScan: %s(%s)', ScanStatus[status], status)
-    }
-}
-```
+  ```ts
+  function onLogin(user: Contact) {
+    log.info('VorpalBot:', '%s login', user)
+  }
+  ```
 
-#### onLogin
+* **onLogout**
 
-This will print a log message when an user logs in to the bot.
+  Function for printing a log message along with the `Contact` object, when an user logs out of the bot.
 
-```ts
-function onLogin(user: Contact) {
-  log.info('VorpalBot:', '%s login', user)
-}
-```
+  ```ts
+  function onLogout(user: Contact) {
+    log.info('VorpalBot:', '%s logout', user)
+  }
+  ```
 
-#### onLogout
+* **onMessage**
 
-This will print a log message when an user logs out of the bot.
+  Function for printing a log message with the `Message` object received by the bot from the user on the other end.
 
-```ts
-function onLogout(user: Contact) {
-  log.info('VorpalBot:', '%s logout', user)
-}
-```
+  ```ts
+  async function onMessage(msg: Message) {
+    log.info('VorpalBot:', msg.toString())
+  }
+  ```
 
-#### onMessage
+* **onError**
 
-This will print a log message with the `Message` received by the bot from the user.
+  Function for printing an error message to the console if the bot fails to start.
 
-```ts
-async function onMessage(msg: Message) {
-  log.info('VorpalBot:', msg.toString())
-}
-```
+  ```ts
+  function onError(error: Error) {
+      log.error('Bot error:', error)
+  }
+  ```
 
-#### onError
-
-This is for printing an error message to the console.
-
-```ts
-function onError(error: Error) {
-    log.error('Bot error:', error)
-}
-```
-
-Now, initialize the Wechaty bot by providing a name:
+You have completed defining all the functions required for handling various bot events. Now, provide a name to initialize the Wechaty bot:
 
 ```ts
 const bot = new Wechaty({
@@ -379,57 +363,71 @@ bot.start()
     .catch(e => log.error('VorpalBot', e))
 ```
 
-### 6. Defining scripts
-
-You have to define the script for running the bot. Add the following to your `package.json` file:
-
-```json
-"scripts": {
-  "lint": "eslint \"src/*.ts\"",
-  "start": "ts-node src/vorpal-bot.ts",
-  "start:wechat:web": "cross-env WECHATY_LOG=verbose WECHATY_PUPPET=wechaty-puppet-wechat npm start",
-  "start:wechat:padlocal": "cross-env WECHATY_LOG=verbose WECHATY_PUPPET=wechaty-puppet-padlocal npm start",
-  "start:puppet:service": "cross-env WECHATY_LOG=verbose WECHATY_PUPPET=wechaty-puppet-service npm start",
-  "start:whatsapp:web": "cross-env WECHATY_LOG=verbose  WECHATY_PUPPET=wechaty-puppet-whatsapp npm start",
-  "test": "echo \"Error: no test specified\" && exit 1"
-},
-```
-
-Here, we have specified the script in way so that the type of puppet can be passed as an environment variable.
-
 ## Running the bot
 
 In order to run the bot, first you have to **export/set** an environment variable with the type of puppet to use and then run the bot:
 
-### Linux/macOS
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
 
 ```bash
 export WECHATY_LOG=verbose
 export WECHATY_PUPPET=wechaty-puppet-wechat
-# If you want to use WhatsApp
-# export WECHATY_PUPPET=wechaty-puppet-whatsapp
-npm start
+make bot
+# the above is equals to the below command:
+# npm start
+#   or, npx ts-node examples/ding-dong-bot.ts
 ```
 
-### Windows
+</TabItem>
+<TabItem value="mac">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+make bot
+# the above is equals to the below command:
+# npm start
+#   or, npx ts-node examples/ding-dong-bot.ts
+```
+
+</TabItem>
+<TabItem value="windows">
 
 ```bash
 set WECHATY_LOG=verbose
 set WECHATY_PUPPET=wechaty-puppet-wechat
-# If you want to use WhatsApp
-# set WECHATY_PUPPET=wechaty-puppet-whatsapp
-npm start
+make bot
+# the above is equals to the below command:
+# npm start
+#   or, npx ts-node examples/ding-dong-bot.ts
 ```
+
+</TabItem>
+</Tabs>
 
 This will start the bot and generate a QR code like this:
 
 ![Wechaty Vorpal Hacker News QR Code](../../static/img/docs/tutorials/using-vorpal-with-wechaty/wechaty-vorpal-hacker-news-qr.png)
 
-Scan it using your **WeChat/WhatsApp** as per the puppet you have selected, and you are ready to play with the bot!
+Scan it using your **WeChat** or **WhatsApp** as per the puppet you have selected, and you are ready to play with the bot!
 
-You can try building this bot without setting up any dev environment on your local system, just head over to this interactive **CodeSandbox** by clicking the button below (a preview of the starter project is given below):
+### CodeSandbox
+
+You can try building this bot without setting up any dev environment on your local system, just head over to this interactive **CodeSandbox** by clicking the button below:
 
 [![Edit vorpal-wechaty-hackernews](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/sbis04/vorpal-wechaty-hackernews/tree/starter/?fontsize=12&hidenavigation=1&module=%2Fvorpal-bot.ts&theme=dark)
+
+You will find various `TODO(s)`, complete them and you will have a successfully running bot (a preview of the starter project is given below):
 
 <iframe
   class="codesandbox"
@@ -439,6 +437,10 @@ You can try building this bot without setting up any dev environment on your loc
 ></iframe>
 
 ## Bot demonstration
+
+After scanning the generated QR code with the help of your app, the bot will start running on your device. Now, as it finds the specified commands inside the chat it will respond automatically to it.
+
+> **NOTE:** The bot will only respond to the messages sent by the user in the other end. One word of caution, this enables the bot globally inside your app, i.e. it will respond to messages sent by any person or within any group.
 
 ![Wechaty Vorpal Hacker News](../../static/img/docs/tutorials/using-vorpal-with-wechaty/wechaty-vorpal-hacker-news.png)
 
@@ -489,4 +491,4 @@ You have learnt to use Vorpal with Wechaty and built a Hacker News bot. Vorpal h
 ## References
 
 * [Wechaty Getting Started](https://github.com/wechaty/wechaty-getting-started)
-* [Vorpal Hacker News bot](https://github.com/sbis04/vorpal-wechaty-hackernews)
+* [Wechaty Vorpal Contrib](https://github.com/wechaty/wechaty-vorpal-contrib)
