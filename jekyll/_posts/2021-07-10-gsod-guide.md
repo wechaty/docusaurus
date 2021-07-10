@@ -1,0 +1,143 @@
+---
+title: "Google Season Of Docs (GSoD) Guide"
+author: lijiarui
+categories:
+  - announcement
+  - gsod
+tags:
+  - event
+  - google
+  - gsod
+  - gsod-2021
+  - docs
+  - guide
+image: /assets/2021/07-gsod-guide/guide.webp
+---
+
+[Google Season of Docs](https://developers.google.com/season-of-docs) is an annual program organised by Google.
+
+Here is the related blog:
+
+- [Google Season of Docs ❤️ Wechaty](https://wechaty.js.org/2021/04/30/google-season-of-docs/), Written By [Huan](https://wechaty.js.org/contributors/huan/)
+- [Hello Wechaty GSoD’21 Technical Writers!](https://wechaty.js.org/2021/05/08/gsod-2021-selected-technical-writers/), Written By [Huan](https://wechaty.js.org/contributors/huan/)
+- [GSoD'21 First Month Evaluation](https://wechaty.js.org/2021/06/22/gsod-2021-first-month-evaluation/), Written By [Rohitesh Kumar Jain](https://wechaty.js.org/contributors/rohitesh-kumar-jain)
+
+We have some guide for GSoD like what we did in [OSPP - Chinese clone of Google summer of code](https://wechaty.js.org/2021/06/24/summer-wechaty-guide/). All of the tech writer involved in the project are required to complete their weekly work and phased work :
+
+- Weekly work
+  - Every work day commit
+  - [Wechaty GSoD'21 Weekly Follow-Ups](https://docs.google.com/spreadsheets/d/1QglSl5JuZuVom84Or8yGhHb3_YbRMDBPgccxoMmnBa0/edit#gid=978979489)
+  - Weekly Zoom Meeting
+- Phased work
+  - Proposal blog
+  - Mid-term blog
+  - Final blog
+
+## Weekly Work
+
+Volunteer will organize weekly meeting and write meeting notes & publish blog posts with zoom meeting recording videos on YouTube embedded.
+
+Here is the guideline for video-recording/downloading/uploading
+
+- Download the recording which has shared screen along with the gallery view
+- Crop the video at the beginning and at the end of the meeting, video should start form the beginning of the meeting
+- Add a beautiful thumbnail to the video
+- Highlight the most important agenda of the video by adding timestamps like [kick-off meeting recording](https://www.youtube.com/watch?v=hTkM_XPpFfU)
+
+> Refer from: [Google Season of Docs 2021 Team Proposal - Volunteering](https://wechaty.js.org/2021/05/12/gsod-2021-volunteering-proposal/)
+
+## Phased Work
+
+The three blog at the beginning, middle and the end should be commited to **[wechaty.js.org](https://github.com/wechaty/wechaty.js.org) Repo** . Before submitting the report, you can read the [Wechaty community specifications](https://wechaty.js.org/2021/06/23/the-wechaty-way/) and know wechaty better:
+
+1. Introduction of Wechaty
+1. Community communication channels
+1. Meeting specifications
+1. Blog publishing specifications
+1. Issue release specification
+1. PR release specification
+
+It is important to note that the blog publishing specifications describe in detail how to submit a blog, how to embed a video in the blog, etc., which will be used in the mid-term and final reports. The specific requirements for the three reports are as follows.
+
+### Proposal Blog
+
+Now all of the tech writers have already finished this part. Here is some specification, if you have time, you can modify the previous blog to make it more beautiful.
+
+#### 1. Personal Profile
+
+Create your contributor profile (if you are a first time contributor). You can commit to [wechaty.js.org](https://github.com/wechaty/wechaty.js.org) Repo's `jekyll/_contributors` directory.
+
+You can refer to the following developer introduction content writing page:
+
+- [Rohitesh Kumar Jain](https://wechaty.js.org/contributors/rohitesh-kumar-jain/), Volunteers Team.
+- [sajen sarvajith](http://wechaty.js.org/contributors/sajenjeshan1222/), Landing Page Team.
+- [Soumi Bardhan](http://wechaty.js.org/contributors/soumi7/), References Team.
+- [Souvik Biswas](http://wechaty.js.org/contributors/sbis04/), Tutorial Team.
+
+#### 2. Proposal report
+
+- Title: `GSoD 2021-Proposal-your_title`
+- File name: `2021-XX-XX-gsod-plan-XX`
+- Category: `gsod`
+- Tag(at least include): `google`,`gsod-2021`,`gsod`,`docs`,`plan`
+- Content at lease includes as follows:
+  - Team Member
+  - Proposal Video Presentation
+  - Proposal Introduction
+  - Roles and Responsibilities
+  - Team Goal/Deliverables
+  - Proposal Timeline
+
+- [Google Season of Docs 2021 Team Proposal - Volunteering](https://wechaty.js.org/2021/05/12/gsod-2021-volunteering-proposal/)
+- [Google Season of Docs 2021 Team Proposal - Tutorials](https://wechaty.js.org/2021/05/11/gsod-2021-team-proposal-tutorials/)
+
+### Mid-term Blog
+
+There will be an GSoD Mid-term Demo Day, volunteers can orgnize this Mid-term Demo Day on a regular weekly zoom meeting.
+
+All of the techwriter should submit a mid-term blog with the YouTube Midterm demo day video and a summary of the mid-term work. The video needs to be uploaded to youtube, and contact Huan to add it to the playlist of wechaty.
+
+Report template as follows:
+
+- Title: `GSoD 2021-Mid-Term-your_title`
+- File name: `2021-XX-XX-gsod-mid-term-XX`
+- Category: `gsod`
+- Tag(at least include): `google`,`gsod-2021`,`gsod`,`docs`,`mid-term`
+- Content at lease includes as follows:
+  - Proposal
+    - Team Member
+    - Description/Abstract
+    - Timeline
+  - Proposal Mid-term Video Presentation
+  - Progress
+    - Work Done
+    - Problems encountered and solutions
+    - Follow-up work arrangement
+
+### Final Blog
+
+We need a final blog with the YouTube final video and a summary of the whole work. The video needs to be uploaded to youtube, and contact Huan to add it to the playlist of wechaty.
+
+Report template as follows:
+
+- Title: `GSoD 2021-Final-your_title`
+- File name: `2021-XX-XX-gsod-final-XX`
+- Category: `gsod`
+- Tag(at least include): `google`,`gsod-2021`,`gsod`,`docs`,`final`
+- Content at lease includes as follows:
+  - Proposal
+    - Team Member
+    - Description/Abstract
+    - Timeline
+  - Outcome
+    - Proposal Final Video Presentation
+    - Problems encountered and solutions
+  - Voluteer Assessment
+
+## Performance
+
+To Be Added in the future.
+
+## After GSod
+
+After the GSoD’21, techwriters should publish a blog post for talking about the whole project of GSoD’21 Wechaty from your personal perspective
