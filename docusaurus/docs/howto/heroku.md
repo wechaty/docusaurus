@@ -65,13 +65,13 @@ Write the following code in the file:
 
 `https://heroku.com/deploy?template=https://github.com/user-name/wechaty-getting-started/tree/feature`
 
-Remember to replace user-name with your own github username.
+Remember to replace user-name with your Github username.
 </li>
 <li>Add the necessary details and click on deploy app button.</li>
 <img src="../../static/img/howto/heroku/heroku1.png"></img>
 <img src="../../static/img/howto/heroku/heroku2.png"></img>
 
-<li>After the app has been succesfully created, open the terminal and add the heroku remote to your local github repository.
+<li>After the app has been successfully created, open the terminal and add the heroku remote to your local github repository.
 
 `heroku git:remote -a wechaty-test-123`
 
