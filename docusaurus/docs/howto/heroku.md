@@ -6,7 +6,7 @@ title: 'Deploying a Wechaty bot with Heroku'
 [![Build Status](https://travis-ci.com/wechaty/heroku-wechaty-getting-started.svg?branch=master)](https://travis-ci.com/wechaty/heroku-wechaty-getting-started)
 [![Greenkeeper badge](https://badges.greenkeeper.io/wechaty/heroku-wechaty-getting-started.svg)](https://greenkeeper.io/)
 
-## Using the Deploy to Heroku Button
+## Using the "Deploy to Heroku" Button
 
 > The ‘Deploy to Heroku’ button enables users to deploy apps to Heroku without leaving the web browser, and with little or no configuration. The button is ideal for customers, open-source project maintainers or add-on providers who wish to provide their customers with a quick and easy way to deploy and configure a Heroku app.
 
