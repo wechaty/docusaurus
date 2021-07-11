@@ -148,6 +148,7 @@ Report template as follows:
     - Description/Abstract
     - Timeline
   - Outcome
+    - Links to the added documentation
     - Proposal Final Video Presentation
     - Problems encountered and solutions
   - Voluteer Assessment
@@ -161,8 +162,8 @@ As [GSoD Payment Intro](https://developers.google.com/season-of-docs/docs/org-pa
 
 So for all of the tech writers in Wechaty:
 
-- Get the first 40% stipends after submitting the mid-term blog and reviewed by volunteers and mentors.
-- Get the remaining 60% stipends after they submitting the final-term blog and reviewed by volunteers and mentors.
+- Get the first 40% of the base stipend after submitting the mid-term blog and reviewed by volunteers and mentors.
+- Get the remaining stipends after they submitting the final-term blog and reviewed by volunteers and mentors.
 
 Tech writers can submit expenses on [Wechaty-GSod-Opencollective](https://opencollective.com/google-season-of-docs/expenses/new), see more at [Opencollective docs about expenses and getting paid](https://docs.opencollective.com/help/expenses-and-getting-paid/expenses)
 
