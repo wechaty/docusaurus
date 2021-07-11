@@ -1,7 +1,7 @@
 ---
 name: anaivebird
 site: https://github.com/anaivebird
-avatar: /assets/contributors/anaivebird/avatar.png
+avatar: /assets/contributors/anaivebird/avatar.webp
 bio: A bird who is naive and learning to learn
 email: 29398611+anaivebird@users.noreply.github.com
 ---
