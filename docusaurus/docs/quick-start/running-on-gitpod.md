@@ -19,17 +19,17 @@ Follow the steps below to get started:
 
   ![sign in](../../static/img/docs/quick-start/running-on-gitpod/gitpod-signin.webp)
 
-2. After logging in with your github account, you have to create a workspace by clicking on **New Workspace** button.
+1. After logging in with your github account, you have to create a workspace by clicking on **New Workspace** button.
 
   ![create-workspace](../../static/img/docs/quick-start/running-on-gitpod/create-workspace.webp)
 
-3. As the workspace loads, within no time it runs the ding dong bot.
+1. As the workspace loads, within no time it runs the ding dong bot.
 
   ![loaded](../../static/img/docs/quick-start/running-on-gitpod/gitpod-loaded.webp)
 
-4. Scan the generated QR code using **Wechat**.
+1. Scan the generated QR code using **Wechat**.
 
-5. For scanning the QR code with another puppet, quit the running code in terminal using `ctrl C` and run the command given below for using whatsapp.
+1. For scanning the QR code with another puppet, quit the running code in terminal using `ctrl C` and run the command given below for using whatsapp.
 
   ```ts
   npm run start:whatsapp:web
@@ -39,4 +39,4 @@ Follow the steps below to get started:
 
   ![output](../../static/img/docs/quick-start/running-on-gitpod/ding-dong-output.webp)
 
-2. The code for the ding-dong-bot is given inside `examples/ding-dong-bot.ts`. You can play more with the bot by editting `onMessage` function.
+1. The code for the ding-dong-bot is given inside `examples/ding-dong-bot.ts`. You can play more with the bot by editting `onMessage` function.
