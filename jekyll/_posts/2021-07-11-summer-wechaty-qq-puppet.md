@@ -2,7 +2,7 @@
 title: "OSPP 2021-期初报告-开发支持 QQ 聊天软件的 Wechaty Puppet Provider 模块"
 author: anaivebird
 categories: project, ospp
-image: /assets/2021/wechaty-puppet-qq/wechaty-puppet-qq-logo.png
+image: /assets/2021/07-summer-wechaty-qq-puppet/wechaty-qq-puppet-logo.webp
 tags:
   - kuaishou
   - puppet
