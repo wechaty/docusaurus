@@ -26,7 +26,7 @@ Once you get basic idea of ding-dong bot, you can try out building it from scrat
 If you have some experience with Wechaty or Chatbot application development, we have intermediate to advanced tutorials on the following topics as well.
 
 - [Using plugin with Wechaty](tutorials/using-plugin-with-wechaty.md)
-- [Using Vorpal with Wechaty](tutorials/using-vorpal-with-wechaty.md)
+- [Using Vorpal with Wechaty](tutorials/using-vorpal-with-wechaty.mdx)
 - [Using Redux with Wechaty](tutorials/using-redux-with-wechaty.md)
 
 You can skip to any of them.

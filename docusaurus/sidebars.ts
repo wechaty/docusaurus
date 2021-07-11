@@ -120,13 +120,9 @@ const caseStudy: SubMenuData = {
 const quickStart: SubMenuData = {
   label: 'Quick Start',
   items: [
-    'getting-started/overview',
-    'getting-started/quick-start',
-    'getting-started/running-locally',
-    'getting-started/running-on-gitpod',
+    'quick-start/running-on-google-cloud-shell',
   ],
 }
-
 
 const usingReduxWithWechaty: SubMenuData = {
   label: 'Using Redux with Wechaty',
@@ -280,6 +276,7 @@ const gettingStarted: SubMenuData = {
   items: [
     'getting-started/overview',
     subMenu(quickStart),
+    'getting-started/running-locally',
   ],
 }
 
