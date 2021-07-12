@@ -46,7 +46,7 @@ Here is the guideline for video-recording/downloading/uploading
 
 > Refer from: [Google Season of Docs 2021 Team Proposal - Volunteering](https://wechaty.js.org/2021/05/12/gsod-2021-volunteering-proposal/)
 
-### PR Reviewing & Approving Rules
+### PR Reviewing & Approving Workflow
 
 #### For writers
 
