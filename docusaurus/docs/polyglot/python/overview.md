@@ -8,7 +8,7 @@ sidebar_label: Python
 
 Python-wechaty is a Python programming language client derived from the Wechaty ecosystem, allowing developers to connect to various instant messaging software platforms with a small amount of code.Python-wechaty has been committed to improve code robustness, add community out-of-the-box tools, and improve the software development documentation.
 
-### Features of Python-Wechaty
+## Features of Python-Wechaty
 
 * Send and receive messages.
 * Accept friendship from contact.
@@ -29,6 +29,7 @@ cd python-wechaty-getting-started
 make install
 make bot
 ```
+
 ## Translation of TypeScript to Python
 
 As the basic ecosystem of wechaty is in TypeScript we only need to translate it to Python .There is a hundred (100) lines of code in  class named `Image` in charge of downloading the WeChat image to different sizes.
