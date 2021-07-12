@@ -149,23 +149,23 @@ start
 
 ### 算卦机器人 <https://wechaty.js.org/2020/06/28/build-divination-yibot/>
 
-![intro](/assets/2021/06-summer-2021-open-source/010.png)
+![intro](/assets/2021/06-summer-2021-open-source/010.webp)
 
 ### 诗歌搜索机器人 <https://wechaty.js.org/2020/07/07/wechat-poem-robot/>
 
-![intro](/assets/2021/06-summer-2021-open-source/011.png)
+![intro](/assets/2021/06-summer-2021-open-source/011.webp)
 
 ### 聚会娱乐机器人 <https://wechaty.js.org/2020/06/06/wechaty-game-bot/>
 
-![intro](/assets/2021/06-summer-2021-open-source/012.png)
+![intro](/assets/2021/06-summer-2021-open-source/012.webp)
 
 ### 外卖机器人 <https://wechaty.js.org/2019/12/23/wechaty-north-america-ricepo/>
 
-![intro](/assets/2021/06-summer-2021-open-source/013.png)
+![intro](/assets/2021/06-summer-2021-open-source/013.webp)
 
 ### 中文学习助理 <https://wechaty.js.org/2020/06/19/archyshuo-anki-assistant/>
 
-![intro](/assets/2021/06-summer-2021-open-source/014.png)
+![intro](/assets/2021/06-summer-2021-open-source/014.webp)
 
 ### 奇绩创坛机器人 <https://wechaty.js.org/2020/08/08/qijibot-sales-automation/>
 
@@ -173,7 +173,7 @@ start
 
 ### 工作日报机器人 <https://wechaty.js.org/2020/07/11/wechaty-daily-report/>
 
-![intro](/assets/2021/06-summer-2021-open-source/016.png)
+![intro](/assets/2021/06-summer-2021-open-source/016.webp)
 
 若感兴趣，还有更多：<https://wechaty.js.org/blog/>
 
