@@ -24,6 +24,7 @@ test('front matter key `categories` must contains at lease one preset category',
     'feature',
     'fun',
     'gsod', // Googl Season of Docs
+    'ospp', // Open Source Promotion Plan, Chinese clone of Google summer of code
     'hacking',
     'interview',
     'migration',

@@ -124,7 +124,6 @@ const quickStart: SubMenuData = {
   ],
 }
 
-
 const usingReduxWithWechaty: SubMenuData = {
   label: 'Using Redux with Wechaty',
   items: [
