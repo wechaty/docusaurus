@@ -124,13 +124,3 @@ image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.png
     运行： make serve
     当看到命令行中出现 Server address:<http://127.0.0.1:4000>的时候，在浏览器中输入地址<http://127.0.0.1:4000>即可
     ![preview](/assets/2021/07-how-to-publish-blog-on-wechaty/preview.png)
-<<<<<<< Updated upstream
-=======
-
-11. 其他问题
-
-    我还遇到过一个问题
-    就是git push之后提交不上去的情况
-    大家可以再试试这个方法：NO_HOOK=1 git push origin "branch name"来提交。
-    
->>>>>>> Stashed changes
