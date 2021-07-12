@@ -18,7 +18,7 @@ Wechaty offers out-of-the-box support for the common features you would need for
 <!-- Rethink these features -->
 
 - **Message processing**: You can use Wechaty to receive and send messages. It supports messages in the form of text, image, audio, video, and attachments.
-- **Room management**: You can use it to create rooms, add and remove room members, manage topics, etc
+- **Room management**: You can use it to create rooms, add and remove room members, manage topics, etc.
 - **Contact management**: Search by name, alias, tags, get profile data and avatar.
 - **Friendship management**: Search and add new friends and accept friendship requests.
 - **Intelligent dialogue management**: Just several configuration can get a task-oriented bot.
@@ -49,7 +49,7 @@ The Wechaty community have developed [Software Development Kits](#placeholder) f
 <!-- Find better way of presenting this list -->
 
 - [JavaScript](#placeholder)
-- [Typscript](#placeholder)
+- [TypeScript](#placeholder)
 - [Python](#placeholder)
 - [Golang](#placeholder)
 - [Java](#placeholder)
@@ -66,11 +66,11 @@ All these SDKs have been developed by and for the community.
 
 <!-- Automate updates to the current stable version -->
 
-Since its creation in 2016, a number of Wechaty versions have been released. For more about the release history and the current stable version, you can read the [Wechaty release notes](https://github.com/Wechaty/wechaty/releases) on Github.
+Since its creation in 2016, a number of Wechaty versions have been released. For more information about the release history and the current stable version, you can read the [Wechaty release notes](https://github.com/Wechaty/wechaty/releases) on Github.
 
 ## License
 
-Wechaty is an [Open Source Project](https://opensource.com/resources/what-open-source). It is released under [Apache-2.0 license](https://github.com/wechaty/wechaty/blob/master/LICENSE) and the corresponding documentation is released under [Creative Commons license](https://creativecommons.org/licenses/).
+Wechaty is an [Open Source Project](https://opensource.com/resources/what-open-source). It is released under [Apache-2.0 license](https://github.com/wechaty/wechaty/blob/master/LICENSE) and the corresponding documentation is released under the [Creative Commons license](https://creativecommons.org/licenses/).
 
 ## Maintainers
 
@@ -80,7 +80,7 @@ Wechaty is maintained by [Huan](https://github.com/huan), [Rui](#placeholder) an
 
 ## Getting help
 
-Wechaty has a community of very helpful contributors on different platforms you can join to get help from. Before joining any of the communities, we recommend you read our [Code of conduct](#placeholder) so that you adhere to our community guidelines. A full list of the different Wechaty communities can be accessed from the [Wechaty community](#placeholder) section of this documentation.
+Wechaty has a community of very helpful contributors on different platforms you can join to get help from. Before joining any of the communities, we recommend that you read our [Code of conduct](#placeholder) so that you adhere to our community guidelines. A full list of the different Wechaty communities can be accessed from the [Wechaty community](#placeholder) section of this documentation.
 
 ## Mission
 
