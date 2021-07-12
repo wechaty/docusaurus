@@ -1,7 +1,9 @@
 ---
 title: "Wechaty Open Source Promotion Plan 2021 Kickoff Meeting"
 author: ninetailskim
-categories: announcement
+categories: 
+  - announcement
+  - ospp
 tags:
   - summer-of-wechaty
   - summer-2021
