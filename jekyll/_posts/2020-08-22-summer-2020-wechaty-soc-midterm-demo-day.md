@@ -9,7 +9,7 @@ tags:
   - news
   - meetup
   - featured
-image: /assets/2020/08-wechaty-soc-midterm-demo-day/midterm-demo-day.png
+image: /assets/2020/08-wechaty-soc-midterm-demo-day/midterm-demo-day.webp
 ---
 
 > 作者: [juzibot](https://github.com/juzibot/)
