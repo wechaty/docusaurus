@@ -34,23 +34,23 @@ make bot
 As the basic ecosystem of wechaty is in TypeScript we only need to translate it to Python .There is a hundred (100) lines of code in  class named `Image` in charge of downloading the WeChat image to different sizes.
 Below are the links to `Image` class for both TypeScript and Pythonfor better understanding the code and the translation.
 
-- TypeScript: <https://github.com/wechaty/wechaty/blob/master/src/user/image.ts>
-- Python: <https://github.com/wechaty/python-wechaty/blob/master/src/wechaty/user/image.py>
+* TypeScript: <https://github.com/wechaty/wechaty/blob/master/src/user/image.ts>
+* Python: <https://github.com/wechaty/python-wechaty/blob/master/src/wechaty/user/image.py>
 
 ## History
 
 For more information on the Python-Wechaty releases and its history the below link can be visited.
 
-- [Python Wechaty Beta Released: A Simple Bot, wj-Mcat, Jun 17, 2020](https://wechaty.js.org/2020/06/17/python-wechaty-beta-released/)
+* [Python Wechaty Beta Released: A Simple Bot, wj-Mcat, Jun 17, 2020](https://wechaty.js.org/2020/06/17/python-wechaty-beta-released/)
 
 ## Blogs
 
 The blogs related to Python-Wechaty are also listed below.
 
-- [教你用python-wecahty和web协议开发机器人, @wj-Mcat, Apr 17, 2021](https://wechaty.js.org/2021/04/17/python-wechaty-use-web/)
-- [Python-wechaty & wechaty-puppet-padlocal的初探, iivveess, Mar 8, 2021](https://wechaty.js.org/2021/03/08/python-wechaty-and-wechaty-puppet-padlocal/)
-- [Python Wechaty如何使用PadLocal Puppet Service, Biofer, Feb, 3, 2021](https://wechaty.js.org/2021/02/03/python-wechaty-for-padlocal-puppet-service/)
+* [教你用python-wecahty和web协议开发机器人, @wj-Mcat, Apr 17, 2021](https://wechaty.js.org/2021/04/17/python-wechaty-use-web/)
+* [Python-wechaty & wechaty-puppet-padlocal的初探, iivveess, Mar 8, 2021](https://wechaty.js.org/2021/03/08/python-wechaty-and-wechaty-puppet-padlocal/)
+* [Python Wechaty如何使用PadLocal Puppet Service, Biofer, Feb, 3, 2021](https://wechaty.js.org/2021/02/03/python-wechaty-for-padlocal-puppet-service/)
 
 ## Maintainers
 
-- [@wj-Mcat](https://wechaty.js.org/contributors/wj-mcat)
+* [@wj-Mcat](https://wechaty.js.org/contributors/wj-mcat)
