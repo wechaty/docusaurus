@@ -6,12 +6,22 @@ sidebar_label: Python
 
 [![Python Wechaty](https://img.shields.io/badge/Wechaty-Python-blue)](https://github.com/wechaty/python-wechaty)
 
-- GitHub Repo <https://github.com/wechaty/python-wechaty>
-- Getting Started Template Repo <https://github.com/wechaty/python-wechaty-getting-started>
+Python-wechaty is a Python programming language client derived from the Wechaty ecosystem, allowing developers to connect to various instant messaging software platforms with a small amount of code.Python-wechaty has been committed to improve code robustness, add community out-of-the-box tools, and improve the software development documentation.
+
+### Features of Python-Wechaty
+
+* Send and receive messages.
+* Acccept friendship from contact.
+* Creation of room,member invitation.
+* Can also use the Wechaty-plugin system.
+* This has a  powerful sample code library for robots.
+* It is very easy to implement.
+
+You can fine more information on Python-Wechaty [here](https://github.com/wechaty/python-wechaty-getting-started).The following diagram illustrates on how the Python-Wechaty can be implement on the already existing TypeScript Wechaty ecosystem.
 
 ## Getting Started
 
-Template Repo: <https://github.com/wechaty/python-wechaty-getting-started>
+You can run the below commands for starting the Wechaty-Python.
 
 ```sh
 git clone git@github.com:wechaty/python-wechaty-getting-started.git
@@ -19,18 +29,27 @@ cd python-wechaty-getting-started
 make install
 make bot
 ```
+## Translation of TypeScript to Python
+
+As the basic ecosystem of wechaty is in TypeScript we only need to translate it to Python .There is a hundred (100) lines of code in  class named `Image` in charge of downloading the WeChat image to different sizes.
+Below are the links to `Image` class for both TypeScript and Pythonfor better understanding the code and the translation.
+
+- TypeScript: <https://github.com/wechaty/wechaty/blob/master/src/user/image.ts>
+- Python: <https://github.com/wechaty/python-wechaty/blob/master/src/wechaty/user/image.py>
 
 ## History
+
+For more information on the Python-Wechaty releases and its history the below link can be visited.
 
 - [Python Wechaty Beta Released: A Simple Bot, wj-Mcat, Jun 17, 2020](https://wechaty.js.org/2020/06/17/python-wechaty-beta-released/)
 
 ## Blogs
 
+The blogs related to Python-Wechaty are also listed below.
+
 - [教你用python-wecahty和web协议开发机器人, @wj-Mcat, Apr 17, 2021](https://wechaty.js.org/2021/04/17/python-wechaty-use-web/)
 - [Python-wechaty & wechaty-puppet-padlocal的初探, iivveess, Mar 8, 2021](https://wechaty.js.org/2021/03/08/python-wechaty-and-wechaty-puppet-padlocal/)
 - [Python Wechaty如何使用PadLocal Puppet Service, Biofer, Feb, 3, 2021](https://wechaty.js.org/2021/02/03/python-wechaty-for-padlocal-puppet-service/)
-
-Read more blogs with the `Python` tag at <https://wechaty.js.org/tags.html#python>
 
 ## Maintainers
 
