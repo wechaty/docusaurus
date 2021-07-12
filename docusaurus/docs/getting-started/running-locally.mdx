@@ -1,0 +1,408 @@
+---
+title: Running locally
+---
+
+<!-- MDX import -->
+import Tabs     from '@theme/Tabs'
+import TabItem  from '@theme/TabItem'
+
+import ShortestChatbots from '../polyglot/transclusions/shortest-chatbots.mdx'
+
+<!-- Pushes a curious reader through the first few minutes of use. -->
+
+For running Ding Dong Bot, you can setup your own server for running locally. Just follow the steps below:
+
+1. Getting Started
+1. Clone the [Ding Dong Bot](https://github.com/wechaty/wechaty-getting-started) repository
+1. Install dependencies
+1. Run the bot
+
+## Try out the bot
+
+[![Edit wechaty-ding-dong-bot](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/wechaty/wechaty-getting-started/tree/master/examples/third-parties/codesandbox?hidenavigation=1&module=%2Fding-dong-bot.ts&theme=dark)
+
+You can try out Ding Dong Bot using this interactive CodeSandbox.
+
+Just scan the generated QR code with **WeChat** app and you are ready to go.
+
+<iframe
+  class="codesandbox"
+  src="https://codesandbox.io/embed/github/wechaty/wechaty-getting-started/tree/master/examples/third-parties/codesandbox?fontsize=12&hidenavigation=1&module=%2Fding-dong-bot.ts&theme=dark"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+></iframe>
+
+## Requirements
+
+1. [Node.js](https://nodejs.dev/) v12+
+1. [Wechaty Puppet Service TOKEN](https://wechaty.js.org/docs/puppet-services/) (if you want to use RPA protocols other than Web)
+
+## Usage
+
+<ShortestChatbots />
+
+## Getting Started
+
+In this tutorial you will learn to use Ding Dong bot which replies with a `dong` message when it receives a `ding` message.
+
+Before getting started make sure you have `Node` installed on your system. If you do not have `Node.js` installed (or have a version below 12),
+then you need to install the latest version of `Node.js` by following the links below:
+
+:::note Node.js installation docs
+
+* [Windows](https://nodejs.org/en/download/package-manager/#windows)
+* [Linux\(Debian/Ubuntu\)](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+* [macOS](https://nodejs.org/en/download/package-manager/#macos)
+
+> Installation guide for `Node.js` in other platforms can be found [here](https://nodejs.org/en/download/package-manager/).
+
+:::
+
+You can head over to [Building the bot](#building-the-bot) section to learn how to build the bot on your own.
+
+If you just want to try out the bot on your local system, follow the steps below.
+
+### 1. Install make
+
+You will need `make` for running the **Makefile**, use the command below to install:
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```sh
+sudo apt install build-essential
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```sh
+brew install make
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```sh
+choco install make
+```
+
+</TabItem>
+</Tabs>
+
+### 2. Clone repository
+
+You can clone the [Ding Dong Bot](https://github.com/wechaty/wechaty-getting-started) repository by following the below command, and navigate to the directory:
+
+```bash
+git clone https://github.com/wechaty/wechaty-getting-started
+cd wechaty-getting-started
+```
+
+### 3. Install dependencies
+
+For installing the required `npm` dependencies run the following:
+
+```bash
+# npm install
+make install
+```
+
+### 4. Run the bot
+
+First, you have to `export/set` the environment variables, and then you can run the bot:
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+make bot
+# the above is equals to the below command:
+# npm start
+#   or, npx ts-node examples/ding-dong-bot.ts
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+make bot
+# the above is equals to the below command:
+# npm start
+#   or, npx ts-node examples/ding-dong-bot.ts
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```bash
+set WECHATY_LOG=verbose
+set WECHATY_PUPPET=wechaty-puppet-wechat
+make bot
+# the above is equals to the below command:
+# npm start
+#   or, npx ts-node examples/ding-dong-bot.ts
+```
+
+</TabItem>
+</Tabs>
+
+> There are various **Wechaty puppets** available, you can know more about them [here](https://github.com/wechaty/wechaty-getting-started#working-with-different-puppets).
+
+This will generate a QR code. Scan it using Wechat or WhatsApp depending upon the puppet used. 
+
+You are ready to play with the bot.
+
+## Building the bot
+
+Let's get started with building the Ding Dong bot using Wechaty.
+
+### 1. Initialise project
+
+Create a new folder called `ding-dong-bot` and move into that directory.
+
+```bash
+mkdir ding-dong-bot
+cd ding-dong-bot
+```
+
+### 2. Install dependencies
+
+For building the ding dong bot you will require these dependencies:
+
+* [wechaty](https://www.npmjs.com/package/wechaty): Official Wechaty package
+* [qrcode-terminal](https://www.npmjs.com/package/qrcode-terminal): Displays the QR code
+
+For installing these dependencies run the following commands:
+
+- **For installing wechaty**
+
+```bash
+npm install wechaty
+```
+
+- **For installing qrcode-terminal**
+
+```bash
+npm install qrcode-terminal
+```
+
+You will also need to add dependencies for using any [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/) 
+which helps to integrate Wechaty with various **instant messaging (IM) systems** (such as WeChat, Whatsapp, and Gitter):
+
+You can install wechaty-puppet as you like when using wechaty:
+
+1. If you want to use whatsapp,you can install wechaty-puppet-whatsapp
+
+```bash
+npm install wechaty-puppet-whatsapp
+```
+2. If you want to use wechat, you can install wechaty-puppet-wechat
+
+```bash
+npm install wechaty-puppet-wechat
+```
+
+3. If you want to use wecom, you can install wechaty-puppet-wxwork
+
+```bash
+npm install wechaty-puppet-wxwork
+```
+
+You can find more puppet information here: https://wechaty.js.org/docs/puppet-providers/
+
+Now, you are ready to write main code for bot
+
+### 3. Writing code for bot
+
+Create a new folder called `src`, and add a file `ding-dong-bot.ts`. We will be writing the code here.
+
+Let's import the required packages in the `ding-dong-bot.ts` file:
+
+```ts
+import {
+  Contact,
+  Message,
+  ScanStatus,
+  Wechaty,
+  log,
+}from 'wechaty'
+  
+import { generate } from 'qrcode-terminal'
+
+require('dotenv').config()
+```
+
+Now we will write some functions which will be required for handling different events returned by bot.
+
+**onScan**
+
+This function will be required for generating QR code for puppet specified and Displays it on console.
+
+```ts
+function onScan (qrcode: string, status: ScanStatus) {
+  if (status === ScanStatus.Waiting || status === ScanStatus.Timeout) {
+    generate(qrcode, { small: true })  // show qrcode on console
+
+    const qrcodeImageUrl = [
+      'https://wechaty.js.org/qrcode/',
+      encodeURIComponent(qrcode),
+    ].join('')
+
+    log.info('StarterBot', 'onScan: %s(%s) - %s', ScanStatus[status], status, qrcodeImageUrl)
+  } else {
+    log.info('StarterBot', 'onScan: %s(%s)', ScanStatus[status], status)
+  }
+}
+```
+**1.**  If `status` is **Waiting** or **Timeout** then function `onScan` will generate qrcode
+
+**2.**  `qrcodeImageUrl` is used for reading the generated `qrcode`. `encodeURIComponent(qrcode)` encodes a URI (string that refers to a resource ie. qrcode) by replacing each instance of certain characters by UTF-8 encoding of characters. 
+
+**3.**  After reading the `qrcode` it return `ScanStatus`.
+
+**onLogin**
+
+This function will print message when a user logs into the bot.
+
+```ts
+function onLogin (user: Contact) {
+  log.info('StarterBot', '%s login', user)
+}
+```
+
+**onLogout**
+
+This will print message when a user logs out.
+
+```ts
+function onLogout (user: Contact) {
+  log.info('StarterBot', '%s logout', user)
+}
+```
+
+**onMessage**
+
+This will print a log message. If the message is `ding` then it will print `dong`.
+
+```ts
+async function onMessage (msg: Message) {
+  log.info('StarterBot', msg.toString())
+
+  if (msg.text() === 'ding') {
+    await msg.say('dong')
+  }
+}
+```
+
+Now initialising the bot by providing a name.
+
+```ts
+const bot = new Wechaty({
+  name: 'ding-dong-bot',
+})
+```
+
+Assigning proper functions to call when an event is triggered.
+
+```ts
+bot.on('scan',    onScan)
+bot.on('login',   onLogin)
+bot.on('logout',  onLogout)
+bot.on('message', onMessage)
+```
+
+Finally for starting the bot
+
+```ts
+bot.start()
+  .then(() => log.info('StarterBot', 'Starter Bot Started.'))
+  .catch(e => log.error('StarterBot', e))
+```
+
+## Running the bot
+
+In order to run the bot, first you have to **export/set** an environment variable with the type of puppet to use and then run the bot:
+
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+
+npx ts-node src/ding-dong-bot.ts
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+
+ts-node src/ding-dong-bot.ts
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```bash
+set WECHATY_LOG=verbose
+set WECHATY_PUPPET=wechaty-puppet-wechat
+
+npx ts-node src/ding-dong-bot.ts
+```
+
+</TabItem>
+</Tabs>
+
+This will start bot and generate QR code like this:
+
+![hard-way](../../static/img/docs/getting-started/running-locally/hard-way.png)
+
+Scan it using your **WeChat/WhatsApp** as per the puppet you have selected, and you are ready to play with the bot!
+
+## Bot demonstration
+
+![bot-demo](../../static/img/docs/getting-started/running-locally/bot-demo.png)
+
+## Conclusion 
+
+You have learnt to make a ding dong bot.
+
+## References
+
+**[wechaty-getting-started](https://github.com/wechaty/wechaty-getting-started)**
+

@@ -8,6 +8,7 @@ tags:
   - google
   - gsod
   - 2021
+  - gsod-2021
   - docs
   - news
   - featured
