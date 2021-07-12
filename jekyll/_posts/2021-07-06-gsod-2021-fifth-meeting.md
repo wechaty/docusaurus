@@ -6,7 +6,7 @@ tags:
   - google
   - gsod
   - event
-  - gsod
+  - gsod-2021
   - 2021
   - zoom
   - docs
@@ -44,6 +44,7 @@ Note: Meeting Started 15 mins late, as there was some issue at my end. Shwetal m
 
 ### Agendas
 
+- [00:00](https://youtu.be/WtHPGXxHb5M?t=0) 0. Introduction & Welcome
 - [01:23](https://youtu.be/WtHPGXxHb5M?t=83) 1. Discussion with Tutorials team
 - [03:30](https://youtu.be/WtHPGXxHb5M?t=211) 2. Discussion with Introduction and explanation team
 - [06:25](https://youtu.be/WtHPGXxHb5M?t=386) 3. Discussion with Landing page team
