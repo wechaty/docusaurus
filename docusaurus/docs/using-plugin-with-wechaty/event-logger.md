@@ -1,3 +1,0 @@
----
-title: Event Logger plugin
----
