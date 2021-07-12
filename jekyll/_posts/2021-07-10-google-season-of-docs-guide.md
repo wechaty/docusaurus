@@ -136,6 +136,8 @@ Report template as follows:
 
 We need a final blog with the YouTube final video and a summary of the whole work. The video needs to be uploaded to youtube, and contact Huan to add it to the playlist of wechaty.
 
+The final Blog is to be written after most of PRs get merged, volunteers will announce the time to write a final blog when it is ready.
+
 Report template as follows:
 
 - Title: `GSoD 2021-Final-your_title`
