@@ -10,4 +10,4 @@ export {
 export { isUrlExist }                     from './is-url-exist'
 export { getChangedFileList }             from './get-changed-file-list'
 export { getAllImageList }                from './get-all-image-list'
-export { JEKYLL_FOLDER }                  from './jekyll-folder'
+export { JEKYLL_FOLDER }                  from './folders'
