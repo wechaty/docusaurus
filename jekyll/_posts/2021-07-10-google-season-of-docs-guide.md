@@ -113,7 +113,7 @@ You can refer to the following developer introduction content writing page:
 
 There will be a GSoD Mid-term Demo Day, volunteers can organize this Mid-term Demo Day on a regular weekly zoom meeting.
 
-All of the tech writers should submit a mid-term blog with the YouTube Midterm demo day video and a summary of the mid-term work. The video needs to be uploaded to youtube, and contact Huan to add it to the playlist of wechaty.
+Each writer in the same team should submit a mid-term blog together with the YouTube Midterm demo day video and a summary of the mid-term work. The video needs to be uploaded to youtube, and contact Huan to add it to the playlist of wechaty.
 
 Report template as follows:
 
@@ -134,7 +134,7 @@ Report template as follows:
 
 ### Final Blog
 
-We need a final blog with the YouTube final video and a summary of the whole work. The video needs to be uploaded to youtube, and contact Huan to add it to the playlist of wechaty.
+Each writer in the same team should submit a final blog together with the YouTube final video and a summary of the whole work. The video needs to be uploaded to youtube, and contact Huan to add it to the playlist of wechaty.
 
 The final Blog is to be written after most of PRs get merged, volunteers will announce the time to write a final blog when it is ready.
 
