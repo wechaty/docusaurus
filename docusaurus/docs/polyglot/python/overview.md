@@ -11,13 +11,13 @@ Python-wechaty is a Python programming language client derived from the Wechaty 
 ### Features of Python-Wechaty
 
 * Send and receive messages.
-* Acccept friendship from contact.
-* Creation of room,member invitation.
+* Accept friendship from contact.
+* Creation of room, member invitation.
 * Can also use the Wechaty-plugin system.
 * This has a  powerful sample code library for robots.
 * It is very easy to implement.
 
-You can fine more information on Python-Wechaty [here](https://github.com/wechaty/python-wechaty-getting-started).The following diagram illustrates on how the Python-Wechaty can be implement on the already existing TypeScript Wechaty ecosystem.
+You can find more information on Python-Wechaty [here](https://github.com/wechaty/python-wechaty-getting-started).The following diagram illustrates on how the Python-Wechaty can be implemented on the already existing TypeScript Wechaty ecosystem.
 
 ## Getting Started
 
