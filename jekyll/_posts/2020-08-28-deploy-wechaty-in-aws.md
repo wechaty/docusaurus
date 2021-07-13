@@ -1,7 +1,7 @@
 ---
 title: Deploy Wechaty in AWS ec2
 author: charles-wu-chen
-image: /assets/2020/deploy-wechaty-in-aws/wechaty-aws.png
+image: /assets/2020/deploy-wechaty-in-aws/wechaty-aws.webp
 categories: project
 tags:
   - nodejs
@@ -23,7 +23,7 @@ This article is about to deploy wechaty node.js application into AWS EC2 steps b
 Follow the AWS official Document to launch a linux instance. [Launching an instance using the Launch Instance Wizard](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/launching-instance.html)
 
 With a successful launch, you shall be able to see the instance status is running as screen below
-![EC2 is running](/assets/2020/deploy-wechaty-in-aws/ec2-running.png)
+![EC2 is running](/assets/2020/deploy-wechaty-in-aws/ec2-running.webp)
 
 ### Step 2 Connect the ec2 instance by ssh
 
@@ -33,6 +33,7 @@ Follow the AWS documents to connect the ec2 instance by ssh client
 - [Connecting to your Linux instance using SSH](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
 
 With a successful connection, you shall be able to see the console prompt as below:
+
 > [ec2-user@ip-172-31-8-111 ~]$
 
 ### Step 3 Install nvm and node

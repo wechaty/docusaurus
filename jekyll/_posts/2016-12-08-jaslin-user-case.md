@@ -1,10 +1,10 @@
 ---
-title: 'Wechaty Case Study - a letter from JasLin'
+title: "Wechaty Case Study - a letter from JasLin"
 author: jaslin
 categories: story
 tags:
   - case
-image: /assets/2016/jaslin-case-study.jpg
+image: /assets/2016/jaslin-case-study.webp
 ---
 
 Author: @[JasLin](https://github.com/jaslin/), BotWave CTO, Wechaty Contributor
@@ -19,7 +19,7 @@ the attachments are the screenshot of the little system which i using wechaty.
 
 story about it :
 
-we have a meditation group, people in the group take meditation every day, after meditation they check in with a emotion image in the group, to help  encourage the others or themselves keep meditation every day.
+we have a meditation group, people in the group take meditation every day, after meditation they check in with a emotion image in the group, to help encourage the others or themselves keep meditation every day.
 
 ![Send][jaslin-send]
 
@@ -43,7 +43,7 @@ thanks for wechaty!
 
 Jas, 3/12/2016
 
-[jaslin-case]: /assets/2016/jaslin-case-study.jpg
-[jaslin-record]: /assets/2016/jaslin-use-case-record.jpg
-[jaslin-send]: /assets/2016/jaslin-use-case-send.jpg
-[jaslin-statistics]: /assets/2016/jaslin-use-case-statistics.jpg
+[jaslin-case]: /assets/2016/jaslin-case-study.webp
+[jaslin-record]: /assets/2016/jaslin-use-case-record.webp
+[jaslin-send]: /assets/2016/jaslin-use-case-send.webp
+[jaslin-statistics]: /assets/2016/jaslin-use-case-statistics.webp

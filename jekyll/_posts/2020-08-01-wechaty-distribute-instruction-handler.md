@@ -8,7 +8,7 @@ tags:
   - chatbot
   - cli
   - plugin
-image: /assets/2020/wechaty-plugin-xyao/arc.png
+image: /assets/2020/wechaty-plugin-xyao/arc.webp
 ---
 
 > 作者: [watertao](https://github.com/watertao/)
@@ -31,7 +31,7 @@ wechaty-plugin-xyao 插件可以让你的 wechaty bot 具备以分布式模块�
 
 ## demo
 
-![sample](/assets/2020/wechaty-plugin-xyao/interaction-sample.png)
+![sample](/assets/2020/wechaty-plugin-xyao/interaction-sample.webp)
 
 上例中， bot 将 `fin:` 前缀的指令通过队列交给 fin 关联的模块处理，而 `x:` 前缀的指令交给 x 对应的模块。那些无法被识别
 为指令的消息（比如 `你好` `午饭吃什么`），则统一交给某个指定模块处理（通常是一个具备智能闲聊能力的处理模块，比如 百度 unit）。
@@ -40,12 +40,12 @@ wechaty-plugin-xyao 插件可以让你的 wechaty bot 具备以分布式模块�
 
 ## 计划中的 brain 模块
 
-|  brain  | status | description  |
-|  ----  | ---- | ----  |
-| [xyao-brain-trunk](https://github.com/watertao/xyao-brain-trunk) | 开发中 | 提供了微信机器人基本的处理能力，比如自定义 cron 形式的提醒，设置 todo-list, 消息搬运等特性 |
-| [xyao-brain-jira](https://github.com/watertao/xyao-brain-jira) |  开发中 |提供 atlassion jira 相关的指令，比如将某个群组与某个 JIRA 项目绑定，定期推送每日 issue 进度及工时登录，检查 issue 规范性等 |
-| [xyao-brain-fin-info](https://github.com/watertao/xyao-brain-fin-info) | 开发中 | 提供股市相关信息的查询或推送特性 |
-| xyao-brain-translate | 待开发 | 提供中英文互翻的特性 |
+| brain                                                                  | status | description                                                                                                                |
+| ---------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------- |
+| [xyao-brain-trunk](https://github.com/watertao/xyao-brain-trunk)       | 开发中 | 提供了微信机器人基本的处理能力，比如自定义 cron 形式的提醒，设置 todo-list, 消息搬运等特性                                 |
+| [xyao-brain-jira](https://github.com/watertao/xyao-brain-jira)         | 开发中 | 提供 atlassion jira 相关的指令，比如将某个群组与某个 JIRA 项目绑定，定期推送每日 issue 进度及工时登录，检查 issue 规范性等 |
+| [xyao-brain-fin-info](https://github.com/watertao/xyao-brain-fin-info) | 开发中 | 提供股市相关信息的查询或推送特性                                                                                           |
+| xyao-brain-translate                                                   | 待开发 | 提供中英文互翻的特性                                                                                                       |
 
 ## Requirements
 
@@ -58,39 +58,34 @@ wechaty-plugin-xyao 插件可以让你的 wechaty bot 具备以分布式模块�
 ## Usage
 
 ```ts
-import { Wechaty } from 'wechaty';
-import { PuppetPadplus } from 'wechaty-puppet-padplus';
-import { Xyao } from '../src/mod';
+import { Wechaty } from "wechaty";
+import { PuppetPadplus } from "wechaty-puppet-padplus";
+import { Xyao } from "../src/mod";
 
-
-const token = 'your PAD-PLUS token';
+const token = "your PAD-PLUS token";
 const puppet = new PuppetPadplus({ token });
 
 const bot = new Wechaty({
   puppet,
-  name : 'x.yao',
-})
+  name: "x.yao",
+});
 
 const xyaoConfig = {
-  redis_host: 'localhost',
+  redis_host: "localhost",
   redis_port: 6379,
-  redis_password: '123456',
+  redis_password: "123456",
   redis_retry_interval: 5000,
-  masters: ['wxid_of_master'],
-  brains_cli: ['x', 'jira'],
-  brains_ai: 'ai918',
-  log_appender: 'dateFile',
-  log_file: '/data/wechaty-xyao/xyao.log',
-  log_level: 'INFO'
+  masters: ["wxid_of_master"],
+  brains_cli: ["x", "jira"],
+  brains_ai: "ai918",
+  log_appender: "dateFile",
+  log_file: "/data/wechaty-xyao/xyao.log",
+  log_level: "INFO",
 };
 
+bot.use(Xyao(xyaoConfig));
 
-bot.use(
-    Xyao(xyaoConfig),
-)
-
-bot.start()
-    .catch(console.error)
+bot.start().catch(console.error);
 ```
 
 ### 配置插件
@@ -99,7 +94,7 @@ bot.start()
 1. `redis_port`: redis 端口
 1. `redis_password`: redis 密码
 1. `redis_retry_interval`: redis 断线重连间隔
-1. `masters`: 机器人的主人账号(注意是contact.id)，有部分指令必须是主人发起的才会执行
+1. `masters`: 机器人的主人账号(注意是 contact.id)，有部分指令必须是主人发起的才会执行
 1. `brains_cli`: brain 列表
 1. `brains_ai`: 未被识别为指令的的消息会交给这个 brain 模块
 1. `log_appender`: `dateFile` 输出到指定文件，按日期分割； `stdout` 输出到控制台
@@ -108,7 +103,7 @@ bot.start()
 
 ## 部署架构参考
 
-![architecture](/assets/2020/wechaty-plugin-xyao/arc.png)
+![architecture](/assets/2020/wechaty-plugin-xyao/arc.webp)
 
 bot 在收到消息后，先尝试识别指令，识别为指令后，按前缀通过队列分发给指定的 brain 模块去处理。
 
@@ -128,7 +123,7 @@ jira:bind-project -p READK223
 
 - `jira` 是 brain 模块标识，机器人根据此标识将指令传递给相应的 brain 处理模块
 - `bind-project` 是指令关键字，brain 模块根据此关键字决定采用哪段业务处理逻辑
-- `-p READK223` 是指令的选项，通常一个指令会有0到多个选项，采用不同的选项，会影响业务处理的逻辑。在开发 brain 模块 的时候，建议都支持 help 和 echo 指令，比如：
+- `-p READK223` 是指令的选项，通常一个指令会有 0 到多个选项，采用不同的选项，会影响业务处理的逻辑。在开发 brain 模块 的时候，建议都支持 help 和 echo 指令，比如：
 
 ```text
 jira:help
@@ -143,7 +138,7 @@ jira:echo tell me what i have said
 ## 🧠 brain 模块
 
 通过 wechaty-plugin-xyao 插件创建的 wechaty 机器人，它只负责微信消息的收发，若要使它具备一定的业务处理能力，就需要为其扩展 brain 模块。
-机器人收到消息并识别为指令后，将指令通过 redis 交给相应的 brain 模块，brain 根据指令种类及选项参数进行相应的业务处理，并将处理结果通过redis
+机器人收到消息并识别为指令后，将指令通过 redis 交给相应的 brain 模块，brain 根据指令种类及选项参数进行相应的业务处理，并将处理结果通过 redis
 再交给机器人，由机器人发送微信消息给指定的用户。
 
 所以我们可以简单的理解为：wechaty 机器人是耳朵和嘴巴，而 brain 模块则是大脑。你可以部署多种用于处理不同领域问题的大脑，比如股票行情，企业内部
@@ -195,7 +190,7 @@ xyao.channel = x.yao
 xyao.help.url = https://github.com/watertao/xyao-brain-fin-info/wiki/%5B-%23fin-%5D-Instruction-Manual-of-xyao-brain-fin-info
 xyao.help.title = [ #fin ] Instruction Manual of xyao brain fin info
 xyao.help.description = xyao-brain-fin-info is a brain module of wechaty-plugin-xyao, it provides common features, such as showing Shanghai or Shenzhen index, the real time price of specified stock , etc...
-xyao.help.thumbnail = https://coding-net-production-file-ci.codehub.cn/1190d970-ce81-11ea-9a30-ed2db94588f5.jpeg?sign=yZ8k7anwCH4ma8CRXmTKSOc/2pRhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNTk1OTAyNDM3JnQ9MTU5NTY4NjQzNyZyPTMwMDE1OTAmZj0vMTE5MGQ5NzAtY2U4MS0xMWVhLTlhMzAtZWQyZGI5NDU4OGY1LmpwZWcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ==
+xyao.help.thumbnail = https://coding-net-production-file-ci.codehub.cn/1190d970-ce81-11ea-9a30-ed2db94588f5.webp?sign=yZ8k7anwCH4ma8CRXmTKSOc/2pRhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNTk1OTAyNDM3JnQ9MTU5NTY4NjQzNyZyPTMwMDE1OTAmZj0vMTE5MGQ5NzAtY2U4MS0xMWVhLTlhMzAtZWQyZGI5NDU4OGY1LmpwZWcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ==
 
 # redis 连接配置
 spring.redis.host = localhost

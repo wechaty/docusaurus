@@ -5,12 +5,12 @@ categories: tutorial
 tags:
   - news
   - python
-image: /assets/2020/python-wechaty/live-coding.png
+image: /assets/2020/python-wechaty/live-coding.webp
 ---
 
 ## Python-Wechaty
 
-Wechaty 作为一个对话SDK，拥有适配多平台的优秀能力，同时还具备多语言的特性，今天我们将以一个简单的视频来介绍如何开始使用[Python-Wechaty](https://github.com/wechaty/python-wechaty)编写一个最简单的聊天机器人。
+Wechaty 作为一个对话 SDK，拥有适配多平台的优秀能力，同时还具备多语言的特性，今天我们将以一个简单的视频来介绍如何开始使用[Python-Wechaty](https://github.com/wechaty/python-wechaty)编写一个最简单的聊天机器人。
 
 {% include iframe.html src="https://www.youtube.com/watch?v=KSELdGeJIzo" %}
 
@@ -22,9 +22,9 @@ Wechaty 作为一个对话SDK，拥有适配多平台的优秀能力，同时还
 pip install wechaty
 ```
 
-### 2. 配置Token
+### 2. 配置 Token
 
-Token的配置可以有多种方式：
+Token 的配置可以有多种方式：
 
 方法一：通过环境变量来配置
 
@@ -32,14 +32,14 @@ Token的配置可以有多种方式：
 export WECHATY_PUPPET_SERVICE_TOKEN='your-token'
 ```
 
-方法二：通过python代码来配置
+方法二：通过 python 代码来配置
 
 ```python
 import os
 os.environ['WECHATY_PUPPET_SERVICE_TOKEN'] = 'your-token'
 ```
 
-那如何获取长期Token呢？详细请看：[Everything-about-Wechaty](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
+那如何获取长期 Token 呢？详细请看：[Everything-about-Wechaty](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ### 3. 编写最简单的机器人代码
 
@@ -58,8 +58,8 @@ class MyBot(Wechaty):
         elif msg.text() == 'image':
             file_box = FileBox.from_url(
                 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/'
-                'u=1116676390,2305043183&fm=26&gp=0.jpg',
-                name='ding-dong.jpg')
+                'u=1116676390,2305043183&fm=26&gp=0.webp',
+                name='ding-dong.webp')
             await talker.say(file_box)
 
 async def main():

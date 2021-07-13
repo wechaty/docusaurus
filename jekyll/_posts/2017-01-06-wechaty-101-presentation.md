@@ -1,12 +1,13 @@
 ---
-title: 'Wechaty 101: from v0.0 to v0.7'
+title: "Wechaty 101: from v0.0 to v0.7"
 author: huan
 categories: announcement
 tags:
   - talk
   - news
-image: /assets/2017/wechaty-connect-chatbots.jpg
+image: /assets/2017/wechaty-connect-chatbots.webp
 ---
+
 <div class="video-container" style="
     position: relative;
     padding-bottom:56.25%;
@@ -31,12 +32,12 @@ My topic includes:
 1. how does it work?
 1. what's in it for me?
 
->  
+>
 
 For visiters come from China who can not visit YouTube.com, this video is also hosted on YouKu.com & Tencent Video:
 
-* [Wechaty 101 @ YouKu](http://v.youku.com/v_show/id_XMjQ3NjUxMjAwOA==.html)
-* [Wechaty 101 @ Tencent](https://v.qq.com/x/page/l03679h2u9s.html)
+- [Wechaty 101 @ YouKu](http://v.youku.com/v_show/id_XMjQ3NjUxMjAwOA==.html)
+- [Wechaty 101 @ Tencent](https://v.qq.com/x/page/l03679h2u9s.html)
 
 ## Presentation Slides
 

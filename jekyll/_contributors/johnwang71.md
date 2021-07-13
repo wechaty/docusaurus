@@ -1,7 +1,7 @@
 ---
 name: johnwang71
 site: https://github.com/johnwang71
-avatar: /assets/contributors/johnwang71/avartar.png
+avatar: /assets/contributors/johnwang71/avartar.webp
 bio: IT民工
 email: john_wang71@hotmail.com
 ---
@@ -12,4 +12,4 @@ email: john_wang71@hotmail.com
 
 - Github: <https://github.com/johnwang71>
 - Email：<mailto:john_wang71@hotmail.com>
-- Website: <>  
+- Website: <>

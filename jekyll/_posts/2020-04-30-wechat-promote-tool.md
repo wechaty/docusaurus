@@ -3,8 +3,8 @@ title: "如何用Wechaty打造一个推广机器人"
 author: jesseweb
 categories: project
 tags:
-   - ecommerce
-image: /assets/2020/promote-bot/banner.png
+  - ecommerce
+image: /assets/2020/promote-bot/banner.webp
 ---
 
 > 作者: [LegendaryJesse](https://github.com/JesseWeb)，悦享推广联合创始人，半路出家的程序员。
@@ -24,14 +24,14 @@ image: /assets/2020/promote-bot/banner.png
 
 有几点需要解决：
 
-* 如何平滑获取平台用户手上的资源？
-* 如何利用平台用户的资源为客户创造收益？
-* 如何以最低的用户成本，为平台用户实现最高的价值？
+- 如何平滑获取平台用户手上的资源？
+- 如何利用平台用户的资源为客户创造收益？
+- 如何以最低的用户成本，为平台用户实现最高的价值？
 
 带着这些问题，我们找到了一个完美的解决方案：“WECHAT BOT”。
 接着就是用市面上功能最强、实现起来最快的[Wechaty](https://github.com/wechaty/wechaty)来实现了。
 
-## 三、Bot如何解决上述需求
+## 三、Bot 如何解决上述需求
 
 划重点：“分享优惠券，有人使用优惠券就有收益。”
 
@@ -39,22 +39,22 @@ image: /assets/2020/promote-bot/banner.png
 
 ### 只需三步，解放双手
 
-* 添加机器人好友
-* 绑定平台账户
-* 将机器人拉进群内
+- 添加机器人好友
+- 绑定平台账户
+- 将机器人拉进群内
 
 ## 测试效果
 
-* 机器人相关操作
-    ![INVITE](/assets/2020/promote-bot/result.jpg)
-* 测试发送效果
-    ![INVITE](/assets/2020/promote-bot/result1.png)
+- 机器人相关操作
+  ![INVITE](/assets/2020/promote-bot/result.webp)
+- 测试发送效果
+  ![INVITE](/assets/2020/promote-bot/result1.webp)
 
 ## 后续计划
 
-* 自动判断群所属用户、无需手动绑定。
-* 客服功能
-* 增加更多推广能力
+- 自动判断群所属用户、无需手动绑定。
+- 客服功能
+- 增加更多推广能力
 
 ## 鸣谢
 
@@ -62,4 +62,4 @@ image: /assets/2020/promote-bot/banner.png
 
 感谢[@huan](https://github.com/huan) 提供的代码思路以及编码风格。
 
-感谢[osschat](https://github.com/kaiyuanshe/osschat)提供的issue => wechat持续追踪。
+感谢[osschat](https://github.com/kaiyuanshe/osschat)提供的 issue => wechat 持续追踪。

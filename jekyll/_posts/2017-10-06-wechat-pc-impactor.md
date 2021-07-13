@@ -6,30 +6,30 @@ tags:
   - code
   - hook
   - news
-image: /assets/2017/h4dex-inject.png
+image: /assets/2017/h4dex-inject.webp
 ---
 
-![Wechat Windows Impactor](/assets/2017/h4dex-inject.png)
+![Wechat Windows Impactor](/assets/2017/h4dex-inject.webp)
 
-因为易语言代码有的朋友们可能看起来怪怪的 如果没有接触过它，并不是那么通俗易懂。所以改成了cpp代码供审阅.  由于书写仓促 错误的部分希望大家指正，小弟在此多谢！
+因为易语言代码有的朋友们可能看起来怪怪的 如果没有接触过它，并不是那么通俗易懂。所以改成了 cpp 代码供审阅. 由于书写仓促 错误的部分希望大家指正，小弟在此多谢！
 
-感谢 易语言精易论坛坛友(xdssoft,恨不能遗忘,gh0st少主)分享的开源代码参考！
+感谢 易语言精易论坛坛友(xdssoft,恨不能遗忘,gh0st 少主)分享的开源代码参考！
 
-> 准备工作：  
+> 准备工作：
 
 ```text
 PEid、Ollydbg、IDA pro、CheatEngine、DLL自动注入工具、微信电脑版2.4.1.37/79
 ```
 
-## 关于对微信PC版Hook的一点研究分享
+## 关于对微信 PC 版 Hook 的一点研究分享
 
-### HOOK 注入类  hookinject.h
+### HOOK 注入类 hookinject.h
 
-> 这里的例子是用Version.dll
+> 这里的例子是用 Version.dll
 
-因为version.dll优于WeChatWin.dll先加载
+因为 version.dll 优于 WeChatWin.dll 先加载
 
-version.dll是Windows NT系统以上版本检测应用程序接口相关文件。这里就用这个用途不是很必要的DLL模拟注入。
+version.dll 是 Windows NT 系统以上版本检测应用程序接口相关文件。这里就用这个用途不是很必要的 DLL 模拟注入。
 
 首先需要载入真正的 Version.dll
 
@@ -126,7 +126,7 @@ class hookInject {
 
 ```
 
-### 应用注入类          Impactor.h
+### 应用注入类 Impactor.h
 
 ```cpp
 class Impactor{
@@ -198,7 +198,7 @@ class Impactor{
 
 ```
 
-### 自己信息获取        GetProfile.h
+### 自己信息获取 GetProfile.h
 
 ```cpp
 
@@ -255,7 +255,7 @@ class GetProfile{
 }
 ```
 
-### 好友读取 (列表)类   GetContact.h
+### 好友读取 (列表)类 GetContact.h
 
 ```cpp
 class GetContact{
@@ -317,14 +317,14 @@ class GetContact{
 }
 ```
 
-### 注入执行类  WechatWatchDog.cpp
+### 注入执行类 WechatWatchDog.cpp
 
 ```cpp
-#include "stdafx.h"  
+#include "stdafx.h"
 #include <cstdio>
-#include <iostream>  
+#include <iostream>
 #include <string>
-#include <vector>  
+#include <vector>
 #include <Windows.h>
 #include "impactor.h"
 #include "hookinject.h"
@@ -427,11 +427,11 @@ void hook_install(){
 
 ### 后记
 
-里面有一套源码的DLL动态自动注入 非常不错~
+里面有一套源码的 DLL 动态自动注入 非常不错~
 
 附件：
-微信PC Hook易语言源码 （共3套）
-附带 etcp.dll  源码  VS2013 编译通过
+微信 PC Hook 易语言源码 （共 3 套）
+附带 etcp.dll 源码 VS2013 编译通过
 
 ```text
 CALLBACK 类 因为在原代码中没有公开，是调用其他人开发的 ecom (相当于可集成的 Com组件/Lib)
@@ -448,8 +448,8 @@ CALLBACK 类 因为在原代码中没有公开，是调用其他人开发的 eco
 
 完整下载地址：附带微信`2.4.5.73`安装包 没有微信`2.4.1.79`
 
-链接：[download full package](http://pan.baidu.com/s/1hsEeDoC)   密码：wttk
+链接：[download full package](http://pan.baidu.com/s/1hsEeDoC) 密码：wttk
 
 感谢@huan 的邀请。
 
-> h4dex  2017年10月6日
+> h4dex 2017 年 10 月 6 日

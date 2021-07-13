@@ -1,7 +1,7 @@
 ---
 title: Applying the documentation system to Wechaty docs
 author: huan
-categories: 
+categories:
   - announcement
   - gsod
 tags:
@@ -11,7 +11,7 @@ tags:
   - docs
   - news
   - documentation
-image: /assets/2021/03-google-season-of-docs-documentation-system/doc-sys-overview.png
+image: /assets/2021/03-google-season-of-docs-documentation-system/doc-sys-overview.webp
 ---
 
 This year, Wechaty organization is applying the [Google Season of Docs](https://developers.google.com/season-of-docs) program because we want to improve our documentation for the community.
@@ -19,14 +19,14 @@ This year, Wechaty organization is applying the [Google Season of Docs](https://
 When I'm reading [Google Season of Docs - Project Ideas](https://developers.google.com/season-of-docs/docs/project-ideas), I found this great talk: [What nobody tells you about documentation, Daniele Procida, 2017, PyCon AU](https://2017.pycon-au.org/schedule/presentation/15/), which techs me **[The Grand Unified Theory of Documentation](https://documentation.divio.com/)**:
 
 > There is a secret that needs to be understood
-  in order to write good software documentation:
-  there isn’t one thing called documentation, there are four.
+> in order to write good software documentation:
+> there isn’t one thing called documentation, there are four.
 >
 > They are: tutorials, how-to guides, technical references, and explanations.
-  They represent four different purposes or functions and
-  require four different approaches to their creation.
-  Understanding the implications of this will
-  help improve most documentation - often immensely.
+> They represent four different purposes or functions and
+> require four different approaches to their creation.
+> Understanding the implications of this will
+> help improve most documentation - often immensely.
 
 ## What nobody tells you about documentation
 
@@ -40,7 +40,7 @@ In the above video, Daniele "_using real-life examples I'll draw out the key fun
 
 The most important concept is the following diagram:
 
-![The Documentation System](/assets/2021/03-google-season-of-docs-documentation-system/doc-sys-overview.png)
+![The Documentation System](/assets/2021/03-google-season-of-docs-documentation-system/doc-sys-overview.webp)
 
 > Credit: [Documentation System](https://documentation.divio.com/)
 
@@ -54,10 +54,10 @@ The goal of the Good Docs Project is to improve open source software documentati
 
 The following diagram illustrated the lifecycle of the documentation:
 
-![The Good Docs Project](/assets/2021/03-google-season-of-docs-documentation-system/doctypes.png)
+![The Good Docs Project](/assets/2021/03-google-season-of-docs-documentation-system/doctypes.webp)
 
 > Each document type serves a different purpose and has differing requirements
-  &mdash; [The Good Docs Project](https://thegooddocsproject.dev)
+> &mdash; [The Good Docs Project](https://thegooddocsproject.dev)
 
 ## Updated docs site
 

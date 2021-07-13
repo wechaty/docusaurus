@@ -11,7 +11,7 @@ tags:
   - introduction
   - project
   - proposal
-image: /assets/2021/05-interactive-tutorials-for-newcomers/gsod_s.png
+image: /assets/2021/05-interactive-tutorials-for-newcomers/gsod_s.webp
 ---
 
 ## GSoD 2021 Project Proposal
@@ -22,46 +22,46 @@ I am Soumi Bardhan, a passionate python and deep learning dev.
 
 #### Google Season of Docs 2020 - Technical writer - Sympy
 
-* Sympy is a lightweight independent computer algebra system. Added and updated documentation, added missing style sections like Parameters and improved organization.
-* My Season of Docs 2020 Report for the project Consistency Across docstrings : [Sympy Documentation](https://github.com/sympy/sympy/wiki/GSoD-2020-Report-Soumi-Bardhan:-Consistency-across-docstrings---SymPy-Documentation)
-* Analysed metrics on the google search console before, during and after. Updated the modules with the most number of users first, then moved on to the less used modules.
+- Sympy is a lightweight independent computer algebra system. Added and updated documentation, added missing style sections like Parameters and improved organization.
+- My Season of Docs 2020 Report for the project Consistency Across docstrings : [Sympy Documentation](https://github.com/sympy/sympy/wiki/GSoD-2020-Report-Soumi-Bardhan:-Consistency-across-docstrings---SymPy-Documentation)
+- Analysed metrics on the google search console before, during and after. Updated the modules with the most number of users first, then moved on to the less used modules.
 
 #### Cppsecrets.com : Python Developer, technical writer
 
-* Well written articles and tutorials on several python libraries.
-* Implementation of SQLAlchemy ORM for creating Flask Applications
-* Functions of OS Module in python and implementations, tutorials
+- Well written articles and tutorials on several python libraries.
+- Implementation of SQLAlchemy ORM for creating Flask Applications
+- Functions of OS Module in python and implementations, tutorials
 
 #### Geeks for Geeks, Technical Content Writer
 
-* Written articles based on OpenCV library functions and data structures and algorithms.
-* [Link to profile](https://auth.geeksforgeeks.org/user/soumibardhan10/articles)
+- Written articles based on OpenCV library functions and data structures and algorithms.
+- [Link to profile](https://auth.geeksforgeeks.org/user/soumibardhan10/articles)
 
 #### Data driven investor : Technical Writer
 
-* Articles and tutorials on deep learning.
-* Using several deep learning methods to create models.
-* Create frontend and backend applications to host the models on cloud.
-* Docker and AWS
+- Articles and tutorials on deep learning.
+- Using several deep learning methods to create models.
+- Create frontend and backend applications to host the models on cloud.
+- Docker and AWS
 
 #### Analytics Vidhya: Technical Writer
 
-* Articles and tutorials on deep learning.
-* Using several deep learning methods on creating deep learning and ML models.
-* Create frontend and backend applications to host the models on cloud.
-* Using pycaret to create several regression models and tuning.
-* LSTMs for Stock Prediction
+- Articles and tutorials on deep learning.
+- Using several deep learning methods on creating deep learning and ML models.
+- Create frontend and backend applications to host the models on cloud.
+- Using pycaret to create several regression models and tuning.
+- LSTMs for Stock Prediction
 
 #### The Startup : Technical writer
 
-* The Startup is the largest active medium publication. I write technical articles mostly in the NLP domain.
-* Natural Language Processing
-* Deep Learning
-* BERT(Bidirectional Encoder Representations from Transformers)
+- The Startup is the largest active medium publication. I write technical articles mostly in the NLP domain.
+- Natural Language Processing
+- Deep Learning
+- BERT(Bidirectional Encoder Representations from Transformers)
 
 #### Research Work
 
-* My Research Work on Autism Spectrum Disorder Detection is also in progress. I am working at ITMR (Interactive Technologies & Multimedia Research) Lab, IIIT Allahabad remotely to simulate the results of my research work that is almost completed.
+- My Research Work on Autism Spectrum Disorder Detection is also in progress. I am working at ITMR (Interactive Technologies & Multimedia Research) Lab, IIIT Allahabad remotely to simulate the results of my research work that is almost completed.
 
 ### Links to some of my medium articles
 
@@ -91,132 +91,132 @@ Tutorials need to be useful for the beginner, easy to follow, meaningful and ext
 
 The Tutorial project will do the following :
 
-* Allow the user to learn by doing
-* Get the user started
-* Make sure that the tutorial works all the time
-* Ensure the user sees results immediately
-* Make the tutorial repeatable
-* Focus on concrete steps, not abstract concepts
-* Provide the minimum necessary explanation
-* Focus only on the steps the user needs to take
-* Work with the contributor team to update the documentation on the Wechaty site.
-* Make video tutorials available in English
-* Each Module in the documentation needs image screenshots as well as gifs and video demonstrating the action. It's also important that they get access to both the code, screenshots, outputs and videos directly from the same page.
-* To get beginners interested, it is important to define right in the beginning of tutorial what will be the end result. So that will be designed as well.
+- Allow the user to learn by doing
+- Get the user started
+- Make sure that the tutorial works all the time
+- Ensure the user sees results immediately
+- Make the tutorial repeatable
+- Focus on concrete steps, not abstract concepts
+- Provide the minimum necessary explanation
+- Focus only on the steps the user needs to take
+- Work with the contributor team to update the documentation on the Wechaty site.
+- Make video tutorials available in English
+- Each Module in the documentation needs image screenshots as well as gifs and video demonstrating the action. It's also important that they get access to both the code, screenshots, outputs and videos directly from the same page.
+- To get beginners interested, it is important to define right in the beginning of tutorial what will be the end result. So that will be designed as well.
 
 ### Contributions
 
-* 795 : [Added interactive code sandbox for contact bot](https://github.com/wechaty/wechaty.js.org/pull/795)
-* 797 : [Added subsections to Examples section and reorginzation](https://github.com/wechaty/wechaty.js.org/pull/797)
-* 756 : [Updates Google Cloud instructions and images for Getting Started  Tutorial](https://github.com/Wechaty/Wechaty.js.org/pull/756)
-* 749 : [Enhance Getting started with Gitpod section of Getting Started Tutorials](https://github.com/wechaty/wechaty.js.org/pull/749)
-* 774 : [Update getting started with Redux](https://github.com/wechaty/wechaty.js.org/pull/774)
-* 745 : [Updates Usage with Heroku Page](https://github.com/Wechaty/Wechaty.js.org/pull/745)
-* 776 : [Added Case studies in English](https://github.com/wechaty/wechaty.js.org/pull/776)
+- 795 : [Added interactive code sandbox for contact bot](https://github.com/wechaty/wechaty.js.org/pull/795)
+- 797 : [Added subsections to Examples section and reorginzation](https://github.com/wechaty/wechaty.js.org/pull/797)
+- 756 : [Updates Google Cloud instructions and images for Getting Started Tutorial](https://github.com/Wechaty/Wechaty.js.org/pull/756)
+- 749 : [Enhance Getting started with Gitpod section of Getting Started Tutorials](https://github.com/wechaty/wechaty.js.org/pull/749)
+- 774 : [Update getting started with Redux](https://github.com/wechaty/wechaty.js.org/pull/774)
+- 745 : [Updates Usage with Heroku Page](https://github.com/Wechaty/Wechaty.js.org/pull/745)
+- 776 : [Added Case studies in English](https://github.com/wechaty/wechaty.js.org/pull/776)
 
 ### Project Goals and Timeline
 
-* Before May 1, continue making contributions to Wechaty.
-* Become more familiar with the user documentation and current version of Wechaty.
+- Before May 1, continue making contributions to Wechaty.
+- Become more familiar with the user documentation and current version of Wechaty.
 
 #### Community bonding
 
-* Set up a communication channel and time(due to timezone difference)
-* Refine my goals and set expectations on both sides.
-* Discussing the order in which the tutorial pages will be updated.
-* Finalize the order of editing the tutorial sections.
+- Set up a communication channel and time(due to timezone difference)
+- Refine my goals and set expectations on both sides.
+- Discussing the order in which the tutorial pages will be updated.
+- Finalize the order of editing the tutorial sections.
 
 #### Documentation Period
 
 [Wechaty Website repository](https://github.com/Wechaty/Wechaty.js.org)
 
-* As we already have a repository for the website, I will start with updating the existing pages first. I think it is important to add video walkthroughs and tutorials for beginners.
+- As we already have a repository for the website, I will start with updating the existing pages first. I think it is important to add video walkthroughs and tutorials for beginners.
 
-* For this, I will be collaborating with existing contributors and taking their inputs and feedback on the tutorials I create.
+- For this, I will be collaborating with existing contributors and taking their inputs and feedback on the tutorials I create.
 
 **Two important changes :**
 
-* Define a specific structure for every tutorial page :
+- Define a specific structure for every tutorial page :
 
-  * Aim
-  * Prerequisites
-  * Video Tutorial
-  * Steps (with Screenshots)
-  * Results
-  * Try Out the Bot (interactive section)
-  * Important links
-  * References
+  - Aim
+  - Prerequisites
+  - Video Tutorial
+  - Steps (with Screenshots)
+  - Results
+  - Try Out the Bot (interactive section)
+  - Important links
+  - References
 
-* Cutting down on text and adding video tutorials and gifs to engage beginners.
-* Add Interactive Sandboxes to all tutorials.
-* Adding simple English text for pages available only in Chinese.
-* Add a latest release section for blogs and information on the latest features.
+- Cutting down on text and adding video tutorials and gifs to engage beginners.
+- Add Interactive Sandboxes to all tutorials.
+- Adding simple English text for pages available only in Chinese.
+- Add a latest release section for blogs and information on the latest features.
 
 ### Week 1 : (1nd May - 8th May)
 
-* Update cheat sheet and upload video tutorial on use cases.
-* Cover common setbacks beginners face while contributing.
-* Video tutorial for a first-time github contributor, for both code and documentation.
+- Update cheat sheet and upload video tutorial on use cases.
+- Cover common setbacks beginners face while contributing.
+- Video tutorial for a first-time github contributor, for both code and documentation.
 
 ### Week 2 : (9th May - 15th May)
 
-* Update docker.md and upload video tutorials.
-* Demo of usage of Ding Dong Bot and Basic functions.
+- Update docker.md and upload video tutorials.
+- Demo of usage of Ding Dong Bot and Basic functions.
 
 ### Week 3 : (16th May - 22nd May)
 
-* Video walkthrough of usage of advanced functions.
-* Overview.md will be made more attractive and friendly, to excite new users. Will add gifs to the webpage.
+- Video walkthrough of usage of advanced functions.
+- Overview.md will be made more attractive and friendly, to excite new users. Will add gifs to the webpage.
 
 ### Week 4 : (23rd May - 29th May)
 
-* Add Use cases of usage-with-heroku.md in details.
-* Record demo videos and gifs of Friday Bot. Create interactive sandbox.
+- Add Use cases of usage-with-heroku.md in details.
+- Record demo videos and gifs of Friday Bot. Create interactive sandbox.
 
 ### Week 5 : (30th May - 5th June)
 
-* Record demo videos and gifs of :
-  * OSSBot
-  * Mikt BO
-* Create interactive sandbox.
-* Organize and record videos and gifs for using-plugin-with-Wechaty.md. New users need to be able to see visuals.
+- Record demo videos and gifs of :
+  - OSSBot
+  - Mikt BO
+- Create interactive sandbox.
+- Organize and record videos and gifs for using-plugin-with-Wechaty.md. New users need to be able to see visuals.
 
 ### Week 6 : (6th June - 12th June)
 
-* Add separate pages for commonly used plugins with Wechaty.
-* Record videos for Running DingDong bot with GitPod with gifs.
+- Add separate pages for commonly used plugins with Wechaty.
+- Record videos for Running DingDong bot with GitPod with gifs.
 
 ### Week 7 : (13th June - 19th June)
 
-* Record videos for running Dingdong bot with Google Cloud along with gifs for blog posts, which can act as teasers and shared in open source communities.
+- Record videos for running Dingdong bot with Google Cloud along with gifs for blog posts, which can act as teasers and shared in open source communities.
 
 ### Week 8 : (20th June - 26th June)
 
-* Record video tutorial for getting started the hard way. Also, instead of mentioning the “hard way”, we can write “for experienced devs”. That is bound to make it sound easy. Also, adding a video tutorial will make it easy and resolve any issues they face along the way.
+- Record video tutorial for getting started the hard way. Also, instead of mentioning the “hard way”, we can write “for experienced devs”. That is bound to make it sound easy. Also, adding a video tutorial will make it easy and resolve any issues they face along the way.
 
 ### Week 9 : (27th June - 3rd July)
 
-* Get started with Videos in simple easy to understand English about the Money Bot. (Here will need a bit of help with translation from already existing tutorials, although i will be creating completely fresh videos. )
-* Update the website as well to be multilingual(will add simple easy to read English)
+- Get started with Videos in simple easy to understand English about the Money Bot. (Here will need a bit of help with translation from already existing tutorials, although i will be creating completely fresh videos. )
+- Update the website as well to be multilingual(will add simple easy to read English)
 
 ### Week 10 : (4th July - 10th July)
 
-* Update the Assistant Bot webpage and create video tutorials.  Create interactive sandbox.
+- Update the Assistant Bot webpage and create video tutorials. Create interactive sandbox.
 
 ### Week 11 : (11th July - 17th July)
 
-* Update the Coaxer Bot webpage and create video tutorials.
+- Update the Coaxer Bot webpage and create video tutorials.
 
 ### Week 12 : (18th July - 24th July)
 
-* Update the getting started - overview.md with gifs and visuals with what can be achieved with Wechaty.
-* Add videos for setting up a development environment for new Wechaty contributors for the Contributing section of the docs.
-* Add a video keynote from Wechaty creators in simple english talking about why Wechaty was developed and its history.
+- Update the getting started - overview.md with gifs and visuals with what can be achieved with Wechaty.
+- Add videos for setting up a development environment for new Wechaty contributors for the Contributing section of the docs.
+- Add a video keynote from Wechaty creators in simple english talking about why Wechaty was developed and its history.
 
 ### Week 13 and 14
 
-* Adding content to the testing page collaborating with the mentors.
-* Finalizing the work done and getting final reviews from the community.
+- Adding content to the testing page collaborating with the mentors.
+- Finalizing the work done and getting final reviews from the community.
 
 The modules mentioned here can be changed after further discussion with mentors and community.
 
@@ -228,9 +228,9 @@ The rest of the work will be decided based on the work done and search console r
 
 Success shall be measured by the following metrics :
 
-* The tutorials page views increase by 50%
-* The visit duration on tutorials increases by 50% (>2 minutes)
-* The bounce rate of tutorials decreases by 30% (<50%)
+- The tutorials page views increase by 50%
+- The visit duration on tutorials increases by 50% (>2 minutes)
+- The bounce rate of tutorials decreases by 30% (<50%)
 
 ## Why am I the right person for this project?
 
@@ -250,12 +250,12 @@ If work is divided between two technical writers - $2500. In this case, I am ope
 
 Soumi Bardhan
 
-* [Github](https://github.com/Soumi7)
-* [Linkedin](https://www.linkedin.com/in/soumi-bardhan-8539b3191/)
-* [Blog](https://soumibardhan10.medium.com/)
-* Location:  Kolkata, West Bengal, India
-* Time Zone: (UTC + 05:30)
-* Typical working hours: 10AM - 7 PM (UTC + 05:30)
+- [Github](https://github.com/Soumi7)
+- [Linkedin](https://www.linkedin.com/in/soumi-bardhan-8539b3191/)
+- [Blog](https://soumibardhan10.medium.com/)
+- Location: Kolkata, West Bengal, India
+- Time Zone: (UTC + 05:30)
+- Typical working hours: 10AM - 7 PM (UTC + 05:30)
 
 ## References
 

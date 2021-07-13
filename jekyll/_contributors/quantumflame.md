@@ -1,10 +1,10 @@
 ---
 name: Tom
 site: https://github.com/quantumFlame
-avatar: /assets/contributors/quantumflame/avatar.png
+avatar: /assets/contributors/quantumflame/avatar.webp
 bio: A student curious about and interested in many things I don't know.
-email: 
-twitter: 
+email:
+twitter:
 ---
 
 A student curious about and interested in many things I don't know.

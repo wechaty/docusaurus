@@ -10,7 +10,7 @@ tags:
   - nuxt
   - feature
   - utility
-image: /assets/2020/wxbot/qrcode.png 
+image: /assets/2020/wxbot/qrcode.webp
 ---
 
 > 作者: [lwp](https://github.com/beclass)
@@ -20,74 +20,82 @@ image: /assets/2020/wxbot/qrcode.png
 
 曾几何时，我加了一个微信，给它发送"加群"，然后就自动进到开发群了，随之在群聊里问问题，接着那个微信就会@我，引用我的问题并附上解答和参考链接。每天上下班的时候，它还会来一句温馨提示，出于对这种技术的强烈兴趣，开始了微信机器人研究之旅。
 
-开始找了几个第三方平台，试用了几天，但总觉得不够自由，既然是程序猿，何不通过技术手段实现？于是开始在GitHub找到以下三个开源作品
+开始找了几个第三方平台，试用了几天，但总觉得不够自由，既然是程序猿，何不通过技术手段实现？于是开始在 GitHub 找到以下三个开源作品
 
 - itchat
-  - `itchat`是一个开源的微信个人号接口，使用python调用微信
+  - `itchat`是一个开源的微信个人号接口，使用 python 调用微信
   - 使用不到三十行的代码，你就可以完成一个能够处理所有信息的微信机器人
 - wechaty
-  - `wechaty`是适用于微信个人的Bot SDK ，可以使用6行 js 创建一个机器人
-  - 具有包括`linux`，`Windows`，`MacOS`和 `Docker` 在内的跨平台支持，基于Node.js
+  - `wechaty`是适用于微信个人的 Bot SDK ，可以使用 6 行 js 创建一个机器人
+  - 具有包括`linux`，`Windows`，`MacOS`和 `Docker` 在内的跨平台支持，基于 Node.js
 - vbot
-  - `vbot`是基于微信web版的接口，使用`http协议`以及轮询方式实现
+  - `vbot`是基于微信 web 版的接口，使用`http协议`以及轮询方式实现
   - 亮点在于通过匿名函数，能够实现多种有趣的玩法
-  - 通过 API，更方便的打造属于自己的网页版微信，基于PHP
+  - 通过 API，更方便的打造属于自己的网页版微信，基于 PHP
 
-## 初识wechaty
+## 初识 wechaty
 
-因为对js相对比较熟悉，直接选择了wechaty
+因为对 js 相对比较熟悉，直接选择了 wechaty
 
-它是使用Typescript进行编写的Node项目，是一个专门为个人微信号搭建的bot框架。基本的实现原是通过Chrome实时监听微信网页版的各类信息，然后将抓取的信息封装成接口，供开发者使用。
+它是使用 Typescript 进行编写的 Node 项目，是一个专门为个人微信号搭建的 bot 框架。基本的实现原是通过 Chrome 实时监听微信网页版的各类信息，然后将抓取的信息封装成接口，供开发者使用。
 
 先看一下官方文档
 
 [wechaty-github](https://github.com/wechaty/wechaty)
-&ensp;&ensp;&ensp;&ensp; [wechaty中文文档](https://wechaty.js.org/v/zh/)
+&ensp;&ensp;&ensp;&ensp; [wechaty 中文文档](https://wechaty.js.org/v/zh/)
 
-6行js创建一个机器人，实在简洁
+6 行 js 创建一个机器人，实在简洁
 
 ```javascript
-const { Wechaty } = require('wechaty')
-const bot = new Wechaty()
-bot.on('scan',    (qrcode, status) => console.log(['https://api.qrserver.com/v1/create-qr-code/?data=',encodeURIComponent(qrcode),'&size=220x220&margin=20',].join('')))
-bot.on('login',   user => console.log(`User ${user} logined`))
-bot.on('message', message => console.log(`Message: ${message}`))
-bot.start()
+const { Wechaty } = require("wechaty");
+const bot = new Wechaty();
+bot.on("scan", (qrcode, status) =>
+  console.log(
+    [
+      "https://api.qrserver.com/v1/create-qr-code/?data=",
+      encodeURIComponent(qrcode),
+      "&size=220x220&margin=20",
+    ].join("")
+  )
+);
+bot.on("login", (user) => console.log(`User ${user} logined`));
+bot.on("message", (message) => console.log(`Message: ${message}`));
+bot.start();
 ```
 
-文档里可以看到一个示例代码  [wechaty-getting-started](https://github.com/wechaty/wechaty-getting-started)
+文档里可以看到一个示例代码 [wechaty-getting-started](https://github.com/wechaty/wechaty-getting-started)
 
 下载完之后先 npm i 安装模块，然后运行就有了登录二维码
-![err1](/assets/2020/wxbot/err1.jpg)
+![err1](/assets/2020/wxbot/err1.webp)
 很遗憾，失败了。
 
 ## 网页版微信登录失败
 
-原来2017年之后注册的微信号都无法登录网页版微信，而2017年之前注册得微信账号也有很大几率登录不上，找朋友试了也都不行。
+原来 2017 年之后注册的微信号都无法登录网页版微信，而 2017 年之前注册得微信账号也有很大几率登录不上，找朋友试了也都不行。
 
 检验你的微信号是否支持网页微信登录：
 
 <http://wx.qq.com>
 
-点击链接链接，PC端进入然后手机扫码登录，若是可以登上，即可以使用上述示例
+点击链接链接，PC 端进入然后手机扫码登录，若是可以登上，即可以使用上述示例
 
-然后又去看了vbot 和 itchat，但发现也都是是基于网页协议实现的
+然后又去看了 vbot 和 itchat，但发现也都是是基于网页协议实现的
 
 从网上查资料，大概有一下几种实现方式：
 
-- Web网页端：2017年后不再支持新号登录，仅支持老号，并且掉线严重，功能缺失严重
-- Xposed技术：在2019年6月份，微信官方在行业重点打击Xposed，自此行业内一片哀嚎遍野，陆续向iPad/MAC协议转型。具体案例请点击
+- Web 网页端：2017 年后不再支持新号登录，仅支持老号，并且掉线严重，功能缺失严重
+- Xposed 技术：在 2019 年 6 月份，微信官方在行业重点打击 Xposed，自此行业内一片哀嚎遍野，陆续向 iPad/MAC 协议转型。具体案例请点击
 - PC Hook：代码注入型，也就是逆向开发。封号情况偏多，使用容易出现追封，公司大规模封号等情况，且目前在营销行业使用率较少，比较偏小团队使用
 - 模拟机：延迟高、消息实时到达率低、模拟人为操作效率慢、功能偏少，承担不了商业化功能
-- ipad协议：安全性较好，功能满足，行业占有率高，但具有能力研发人员偏少，基本两三个团队研发，且目前已有团队解散，部分微信号段登录失败、且通过grpc,mmtls研发，被检测几率存在
-- MAC协议：安全性相比iPad协议更好，功能性相比ipad协议少些，行业内具有研发能力更少，安全性、稳定性比较优秀，不会出现追封、批量封的情况
-- 混合通道：微信内部通道，最高权限，基于MAC与Ipad协议，非grpc,mmtls，功能合适，微信正版通道，不会出现技术封号问题
+- ipad 协议：安全性较好，功能满足，行业占有率高，但具有能力研发人员偏少，基本两三个团队研发，且目前已有团队解散，部分微信号段登录失败、且通过 grpc,mmtls 研发，被检测几率存在
+- MAC 协议：安全性相比 iPad 协议更好，功能性相比 ipad 协议少些，行业内具有研发能力更少，安全性、稳定性比较优秀，不会出现追封、批量封的情况
+- 混合通道：微信内部通道，最高权限，基于 MAC 与 Ipad 协议，非 grpc,mmtls，功能合适，微信正版通道，不会出现技术封号问题
 
-看了看，内部通道是不可能的，只有ipad协议个mac协议目前最好了
+看了看，内部通道是不可能的，只有 ipad 协议个 mac 协议目前最好了
 
 ## wechaty-puppet-padplus
 
-正当准备放弃的时候，看到wechaty就有一套基于ipad协议的包
+正当准备放弃的时候，看到 wechaty 就有一套基于 ipad 协议的包
 [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus)
 
 ## 微信机器人平台—wxbot
@@ -119,16 +127,16 @@ bot.start()
   - 低智商对话
   - 成语接龙，查天气，查酒店，歇后语...
 
-![admin](/assets/2020/wxbot/admin1.jpg)
+![admin](/assets/2020/wxbot/admin1.webp)
 
 ### 技术构成
 
 - 服务端 [Node.js](https://nodejs.org/)
-- SSR框架 [NuxtJS](https://nuxtjs.org/)
+- SSR 框架 [NuxtJS](https://nuxtjs.org/)
 - 前端框架 [Vue](https://vuejs.org/)
-- UI组件 [Ant Design of Vue](https://www.antdv.com/docs/vue/introduce-cn/)
+- UI 组件 [Ant Design of Vue](https://www.antdv.com/docs/vue/introduce-cn/)
 - 持久化 [MongoDB](https://www.mongodb.org/)
-- ipad协议 [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus/)
+- ipad 协议 [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus/)
 
 这里就直接介绍下机器人模块
 
@@ -153,7 +161,7 @@ bot.start()
 
 #### 准备条件
 
-- 安装 [Node.js](https://nodejs.org/en/download/) (v10 以上版本)、[MongoDB](https://www.mongodb.org/downloads/)。  
+- 安装 [Node.js](https://nodejs.org/en/download/) (v10 以上版本)、[MongoDB](https://www.mongodb.org/downloads/)。
 - 推荐安装 [cnpm](https://cnpmjs.org/)
 
 #### 安装依赖
@@ -213,7 +221,7 @@ npm start
 
 ### 线上部署
 
-#### 使用PM2
+#### 使用 PM2
 
 推荐使用 [pm2](https://pm2.keymetrics.io/) 进行 Node.js 的进程管理和持久运行。
 
@@ -237,7 +245,7 @@ pm2 start pm2.config.js
 
 欢迎扫码加我的小助手，验证消息写 `机器人` 即可直接通过啦，加群一起交流也是可以的。也可以把机器人加到你的群聊中来玩耍哦，登陆上面的在线实例，设置关键字就能体验啦。
 
-![qrcode](/assets/2020/wxbot/qrcode.png)
-![0](/assets/2020/wxbot/wx0.jpg)
-![1](/assets/2020/wxbot/wx1.jpg)
-![2](/assets/2020/wxbot/wx2.jpg)
+![qrcode](/assets/2020/wxbot/qrcode.webp)
+![0](/assets/2020/wxbot/wx0.webp)
+![1](/assets/2020/wxbot/wx1.webp)
+![2](/assets/2020/wxbot/wx2.webp)

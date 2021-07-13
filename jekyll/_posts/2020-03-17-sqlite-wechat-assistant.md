@@ -4,35 +4,35 @@ author: moderncrazy
 categories: tutorial
 tags:
   - sqlite
-image: /assets/2020/sqlite-wechat/2020-03-sqlite-wechat-assistant.jpeg
+image: /assets/2020/sqlite-wechat/2020-03-sqlite-wechat-assistant.webp
 ---
 
 > 作者: [moderncrazy](https://github.com/moderncrazy)，个人开发者。首发于博客: [使用 SQLite 和 pullword 实现简易的业务助手](https://wechaty.github.io/sqlite-wechat-assistant/) 遵循 CC BY-NC-SA 3.0 CN
 
-[![WechatAssistant](/assets/2020/sqlite-wechat/2020-03-sqlite-wechat-assistant.jpeg)](https://github.com/moderncrazy/wechat_assistant)
+[![WechatAssistant](/assets/2020/sqlite-wechat/2020-03-sqlite-wechat-assistant.webp)](https://github.com/moderncrazy/wechat_assistant)
 
 <!-- more -->
 
 需求之初是，希望有一个机器人能够替我们完成各种机械式的操作，来提高我们的工作效率。
 
-业务背景是客户需要一个消息中心系统，对接多种第三方推送平台，内部系统通过我们发送通知，一边是三方平台一边是内部系统，两边的对接需要提供各种文档和脚本，还需要配合QA测试及查询发送状态，有时有3-4个群同时@我们，工作效率严重下降。
+业务背景是客户需要一个消息中心系统，对接多种第三方推送平台，内部系统通过我们发送通知，一边是三方平台一边是内部系统，两边的对接需要提供各种文档和脚本，还需要配合 QA 测试及查询发送状态，有时有 3-4 个群同时@我们，工作效率严重下降。
 
-所以我们想能否做一个自动化的机器人来替代我们，完成这些机械式的动作，最终我们找到了Wechaty。
+所以我们想能否做一个自动化的机器人来替代我们，完成这些机械式的动作，最终我们找到了 Wechaty。
 
 好了，废话少说进入正题！
 
 ## 调研
 
-最开始我们发现市面上有很多“傻瓜式”微信机器人，只能根据关键字回复固定内容，这显然不符合我们的需求，通过Google我们找到两款基本符合我们需求的产品。
+最开始我们发现市面上有很多“傻瓜式”微信机器人，只能根据关键字回复固定内容，这显然不符合我们的需求，通过 Google 我们找到两款基本符合我们需求的产品。
 
-- [Wechaty](https://github.com/wechaty/wechaty)是适用于微信个人帐户的Bot SDK ，可以帮助您使用6行javascript创建一个机器人...
-- [微控API](https://docs.wkteam.cn/)是一套商业的的微信个人号接口，它能监测微信中的各种事件，并辅助微信执行各种操作...
+- [Wechaty](https://github.com/wechaty/wechaty)是适用于微信个人帐户的 Bot SDK ，可以帮助您使用 6 行 javascript 创建一个机器人...
+- [微控 API](https://docs.wkteam.cn/)是一套商业的的微信个人号接口，它能监测微信中的各种事件，并辅助微信执行各种操作...
 
-根据我们的情况我们选择Wechaty，原因：Wechaty提供SDK方便本地调试，微控API需要外网IP不方便内网使用。
+根据我们的情况我们选择 Wechaty，原因：Wechaty 提供 SDK 方便本地调试，微控 API 需要外网 IP 不方便内网使用。
 
 ## 基础环境
 
-NodeJS v10.15+  
+NodeJS v10.15+
 
 SQLite 3
 
@@ -40,7 +40,7 @@ PM2 v3.5.1+
 
 ## 配置数据库
 
-考虑到我们的需求相对简单，所以使用SQLite进行简单的数据存储。
+考虑到我们的需求相对简单，所以使用 SQLite 进行简单的数据存储。
 
 创建数据库：
 
@@ -87,7 +87,7 @@ create table keyword_tb
 
 ## 项目思路
 
-我们可以将用户的提问的看作route，专门创建一个message.js充当router。
+我们可以将用户的提问的看作 route，专门创建一个 message.js 充当 router。
 
 ```js
 // index.js
@@ -201,11 +201,11 @@ async queryStatus(bot, message, msgData) {
 
 ## 运行效果
 
-粗略演示一下 ￣▽￣"
+粗略演示一下 ￣ ▽ ￣"
 
-| 小助手 |                                                              | 用户 |
-| ------ | ------------------------------------------------------------ | ---- |
-|        | @小助手 查询消息状态 \n 手机号：1300000000 \n 邮箱：xxx@example.com | <-   |
+| 小助手 |                                                                                                   | 用户 |
+| ------ | ------------------------------------------------------------------------------------------------- | ---- |
+|        | @小助手 查询消息状态 \n 手机号：1300000000 \n 邮箱：xxx@example.com                               | <-   |
 | ->     | 手机号为:13000000000，邮箱为:xxx@example.com的状态如下： \n 状态:成功 \n 时间:2020-03-01 12:12:00 |      |
 
 ## 感谢

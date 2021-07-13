@@ -7,10 +7,10 @@ tags:
   - wechaty-puppet-wechat
   - web-protocol
   - go
-image: /assets/2021/04-go-wechaty-use-web/struct.png
+image: /assets/2021/04-go-wechaty-use-web/struct.webp
 ---
 
-> 作者: [dchaofei](https://github.com/dchaofei)，go开发工程师，go-wechaty 作者
+> 作者: [dchaofei](https://github.com/dchaofei)，go 开发工程师，go-wechaty 作者
 
 <!-- more -->
 
@@ -25,12 +25,12 @@ image: /assets/2021/04-go-wechaty-use-web/struct.png
 `申请token` 或者`购买token`。
 
 go-wechaty 与 服务提供商的交互如下图
-![交互图](/assets/2021/04-go-wechaty-use-web/struct.png)
+![交互图](/assets/2021/04-go-wechaty-use-web/struct.webp)
 
 1. go-wecahty 首先会用之前我们购买或申请的 token 通过网关获取到服务提供商 token 所对应的服务器地址
 2. 然后用获取到的服务器地址与 puppet 服务进行直接连接
 
-可能购买或申请 token 会阻挡大多开发者开发微信机器人的想法，但是既然 web 协议可以用了，我们就可以自实现 puppet service了。
+可能购买或申请 token 会阻挡大多开发者开发微信机器人的想法，但是既然 web 协议可以用了，我们就可以自实现 puppet service 了。
 
 ## 如何使用
 
@@ -57,7 +57,7 @@ wechaty/wechaty:latest
 
 `WECHATY_PUPPET_SERVER_PORT` 环境变量是我们启动 web 协议 puppet service 提供的端口
 
-`WECHATY_TOKEN` 是我们随机生成的字符串，用于把当前puppet service 注册到 puppet 网关
+`WECHATY_TOKEN` 是我们随机生成的字符串，用于把当前 puppet service 注册到 puppet 网关
 
 二、启动 go-wecahty 写的一个简单的 ding-dong 机器人
 
@@ -89,7 +89,7 @@ User 微信昵称 logined
 ```
 
 然后我们向机器人发送一个 ding, 机器人就会回复一个 dong
-![ding-dong](/assets/2021/04-go-wechaty-use-web/ding.jpeg)
+![ding-dong](/assets/2021/04-go-wechaty-use-web/ding.webp)
 
 如果启动机器人不想依赖环境变量，也可以写在代码里
 
@@ -105,7 +105,7 @@ var bot = wechaty.NewWechaty(wechaty.WithPuppetOption(wp.Option{
 ## 🔗
 
 - go wechty: [https://github.com/wechaty/go-wechaty](https://github.com/wechaty/go-wechaty)
-- ding-dong bot: [https://github.com/wechaty/go-wechaty-getting-started](https://github.com/wechaty/go-wechaty-getting-started )
-- web协议复活: [https://wechaty.js.org/2021/04/13/wechaty-uos-web/](https://wechaty.js.org/2021/04/13/wechaty-uos-web/)
+- ding-dong bot: [https://github.com/wechaty/go-wechaty-getting-started](https://github.com/wechaty/go-wechaty-getting-started)
+- web 协议复活: [https://wechaty.js.org/2021/04/13/wechaty-uos-web/](https://wechaty.js.org/2021/04/13/wechaty-uos-web/)
 - Go Wechaty Getting Started: [https://wechaty.js.org/docs/polyglot/go/](https://wechaty.js.org/docs/polyglot/go/)
 - puppet-providers: [https://wechaty.js.org/docs/puppet-providers/wechat](https://wechaty.js.org/docs/puppet-providers/wechat)

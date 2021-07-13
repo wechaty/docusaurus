@@ -5,19 +5,19 @@ categories: project
 tags:
   - code
   - productivity
-image: /assets/2020/wechat-for-data-bau/wechat-reply-night.jpg
+image: /assets/2020/wechat-for-data-bau/wechat-reply-night.webp
 ---
 
-> Author: [@KellyCheng](https://github.com/hkenter) 数据工程师，Java工程师,偶尔写写python、Node.js在医疗,医药行业打杂
+> Author: [@KellyCheng](https://github.com/hkenter) 数据工程师，Java 工程师,偶尔写写 python、Node.js 在医疗,医药行业打杂
 
 ## 背景
 
-新冠疫情爆发于 2020 年2 月，某大型跨国药企业务数据的响应与维护工作随着疫情爆发迅速提升，一时间数据需求方的响应诉求迅速攀升，找到合适的开源解决方案成为目前乃至长期的救命稻草。
+新冠疫情爆发于 2020 年 2 月，某大型跨国药企业务数据的响应与维护工作随着疫情爆发迅速提升，一时间数据需求方的响应诉求迅速攀升，找到合适的开源解决方案成为目前乃至长期的救命稻草。
 
 ## wechatfordata 希望解决的问题
 
 - 碎片化数据被动查询（已实现）
-- BAU运维监控信息的主动推送（已实现）
+- BAU 运维监控信息的主动推送（已实现）
 - 按业务场景进行邀请并一定程度的管理微信群（计划实现）
 - 聊天内容的分析(计划实现)
 
@@ -34,20 +34,20 @@ image: /assets/2020/wechat-for-data-bau/wechat-reply-night.jpg
 
 实现方案：构建此类场景的查询关键词规则，入参查询并回复
 
-### BAU运维监控信息的主动推送
+### BAU 运维监控信息的主动推送
 
-目前需要监控的BAU信息分布于两处：
+目前需要监控的 BAU 信息分布于两处：
 
 - 位于内网的关系型数据库中
-- 位于内网的某些web展现层
+- 位于内网的某些 web 展现层
 
-实现方案：请求数据库监控数据，构建nodejs爬虫，爬取web层数据
+实现方案：请求数据库监控数据，构建 nodejs 爬虫，爬取 web 层数据
 
 ### 开发与生产环境
 
-目前环境均基于windows X64，对安装、部署等要求比较繁琐，且均处于内网，对代理的要求配置也比较讲究。
+目前环境均基于 windows X64，对安装、部署等要求比较繁琐，且均处于内网，对代理的要求配置也比较讲究。
 
-> Tips：npm环境尽量提前安装windows-build-tools@4.0.0，内网环境或代理不满足，可尝试离线安装vsbuild2015/2017
+> Tips：npm 环境尽量提前安装windows-build-tools@4.0.0，内网环境或代理不满足，可尝试离线安装 vsbuild2015/2017
 
 ## 结尾
 

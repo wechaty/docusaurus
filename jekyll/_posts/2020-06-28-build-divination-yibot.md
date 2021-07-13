@@ -6,7 +6,7 @@ tags:
   - typescript
   - entertainment
   - case-study
-image: /assets/2020/yibot/1.jpg
+image: /assets/2020/yibot/1.webp
 ---
 
 > Author: [@runningdata](https://github.com/runningdata)
@@ -19,12 +19,11 @@ image: /assets/2020/yibot/1.jpg
 
 **注意**：非常不推荐占卜！ 个人目前只推崇易理！
 
-## wechaty实现
+## wechaty 实现
 
-实现其实很简单了。就是使用0、1分别表示阴、阳两种爻。 然后用户输入自己求得的六爻，获得对应的卦象词条。
+实现其实很简单了。就是使用 0、1 分别表示阴、阳两种爻。 然后用户输入自己求得的六爻，获得对应的卦象词条。
 
 ```javascript
-
 // 简单列一下示意
 var ddict = [
   "坤为地000000=0",
@@ -37,68 +36,74 @@ var ddict = [
   "天地否000111=7",
   "地山谦001000=8",
   "艮为山001001=9",
-  ]
+];
 
-async function onMessage (msg) {
+async function onMessage(msg) {
   // log.info('StarterBot', msg.toString())
-  room = msg.room()
-  let text = msg.text()
-  if(text == "求卦") {
-    await msg.say(GUA_HELP)
+  room = msg.room();
+  let text = msg.text();
+  if (text == "求卦") {
+    await msg.say(GUA_HELP);
   }
-  if(text.indexOf("求卦-") > -1) {
-      let code = text.split("求卦-")[1]
-      try {
-        ddict.forEach((item,index,array)=>{
-          if (item.indexOf(code) > -1 ) {
-            let o_name = item.split(code)[0]
-            let names = o_name.split("为")
-            if (names.length > 1) {
-              o_name = names[0]
-            }
-            if (o_name.length > 2) {
-              o_name = o_name.slice(2)
-            }
-            throw new Error(o_name + "卦")
+  if (text.indexOf("求卦-") > -1) {
+    let code = text.split("求卦-")[1];
+    try {
+      ddict.forEach((item, index, array) => {
+        if (item.indexOf(code) > -1) {
+          let o_name = item.split(code)[0];
+          let names = o_name.split("为");
+          if (names.length > 1) {
+            o_name = names[0];
           }
-        })
-      } catch (error) {
-        log.info("找到了" + error.message)
-        let resp = "https://baike.baidu.com/item/" + error.message
-        const linkPayload = new UrlLink({ description : (" === 友情提示" + msg.from().name() + " === \n看易理，命运自己掌握，我们只需要看清时局！"),
-              thumbnailUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3740483648,506813176&fm=26&gp=0.jpg',
-              title : error.message,
-              url : resp})
+          if (o_name.length > 2) {
+            o_name = o_name.slice(2);
+          }
+          throw new Error(o_name + "卦");
+        }
+      });
+    } catch (error) {
+      log.info("找到了" + error.message);
+      let resp = "https://baike.baidu.com/item/" + error.message;
+      const linkPayload = new UrlLink({
+        description:
+          " === 友情提示" +
+          msg.from().name() +
+          " === \n看易理，命运自己掌握，我们只需要看清时局！",
+        thumbnailUrl:
+          "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3740483648,506813176&fm=26&gp=0.webp",
+        title: error.message,
+        url: resp,
+      });
 
-        log.info(resp)
-        await msg.say(linkPayload)
-      }
+      log.info(resp);
+      await msg.say(linkPayload);
+    }
   }
 }
 ```
 
 ## 截图
 
-![效果图 @4x](/assets/2020/yibot/1.jpg)
+![效果图 @4x](/assets/2020/yibot/1.webp)
 
 ## 其他
 
-过程中看了wechaty的其他的很多博客，发现大家贡献了很多有意思且实用的工具。比我弄得这个实用多了。计划后面选择性地丰富一下功能，添加一些生活元素，丢到群里，给朋友们玩耍。
+过程中看了 wechaty 的其他的很多博客，发现大家贡献了很多有意思且实用的工具。比我弄得这个实用多了。计划后面选择性地丰富一下功能，添加一些生活元素，丢到群里，给朋友们玩耍。
 
 最后再提示一下：善易者不卜！ 我是不善的，但是也不占卜。 虽然是传说，但是我觉得很多时候浑沌一些挺好的，有助于个人思考，也算是个人活过，真实的体验。什么都靠占卜，命系于天不由自己无说，不知道会不会遭天谴~~ 哈哈
 
 思之~ 慎之~
 
-## token的问题
+## token 的问题
 
-本人是Java程序员出身，工作一直在大数据领域，对python、scala都比较熟悉。但是对前端js的知识就有些贫瘠了。
+本人是 Java 程序员出身，工作一直在大数据领域，对 python、scala 都比较熟悉。但是对前端 js 的知识就有些贫瘠了。
 
-Wechaty社区对技术人员是蛮开放与支持的。社区当前也正在对多语言做支持。但是当前人们拿到的大多是padplus版本的。
+Wechaty 社区对技术人员是蛮开放与支持的。社区当前也正在对多语言做支持。但是当前人们拿到的大多是 padplus 版本的。
 
-文档中对于token的介绍个人觉得不太详细，因为很多人都在群内提到了相同的问题：为啥我拿到我的token在java/python中运行不了？
+文档中对于 token 的介绍个人觉得不太详细，因为很多人都在群内提到了相同的问题：为啥我拿到我的 token 在 java/python 中运行不了？
 
-同学，如果你的padplus版本的token，**只能使用js/ts进行编码测试**。不要一看是一种新的语言，以前没玩儿过就直接放弃了。写好很难，但是逐渐玩儿起来并不难。加油！
+同学，如果你的 padplus 版本的 token，**只能使用 js/ts 进行编码测试**。不要一看是一种新的语言，以前没玩儿过就直接放弃了。写好很难，但是逐渐玩儿起来并不难。加油！
 
 ## 致谢
 
-感谢Wechaty团队。
+感谢 Wechaty 团队。

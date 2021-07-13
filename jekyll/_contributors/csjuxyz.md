@@ -1,10 +1,10 @@
 ---
 name: 陈述句
 site: https://github.com/csjuXYZ
-avatar: /assets/contributors/csjuxyz/avatar.png
+avatar: /assets/contributors/csjuxyz/avatar.webp
 bio: 前端开发与街头摄影
 email: hoc0415@foxmail.com
-twitter: 
+twitter:
 ---
 
 前端开发与街头摄影

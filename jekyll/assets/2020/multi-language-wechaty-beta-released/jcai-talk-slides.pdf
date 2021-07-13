@@ -31,7 +31,7 @@
   <title>wechaty-meetup/slides.pdf at master · jcai/wechaty-meetup</title>
     <meta name="description" content="Wechaty Meetup 2020.6.14. Contribute to jcai/wechaty-meetup development by creating an account on GitHub.">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
-  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.webp" title="GitHub">
   <meta property="fb:app_id" content="1401488693436528">
   <meta name="apple-itunes-app" content="app-id=1477376905">
 
@@ -102,7 +102,7 @@
   <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
 
   <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
-  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
+  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.webp">
   <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
 
 <meta name="theme-color" content="#1e2327">
@@ -413,7 +413,7 @@
       <div class="d-flex flex-items-center flex-items-stretch">
         <div class="f6 lh-condensed user-status-header d-flex user-status-emoji-only-header circle">
           <div class="user-status-emoji-container flex-shrink-0 mr-2 d-flex flex-items-center flex-justify-center lh-condensed-ultra v-align-bottom">
-            <g-emoji alias="thought_balloon" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4ad.png">💭</g-emoji>
+            <g-emoji alias="thought_balloon" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4ad.webp">💭</g-emoji>
           </div>
         </div>
         <div class="
@@ -475,7 +475,7 @@
                   <div class="float-left col-6">
                       <button type="button" value=":palm_tree:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
                         <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
-                          <g-emoji alias="palm_tree" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f334.png">🌴</g-emoji>
+                          <g-emoji alias="palm_tree" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f334.webp">🌴</g-emoji>
                         </div>
                         <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
                           On vacation
@@ -483,7 +483,7 @@
                       </button>
                       <button type="button" value=":face_with_thermometer:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
                         <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
-                          <g-emoji alias="face_with_thermometer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f912.png">🤒</g-emoji>
+                          <g-emoji alias="face_with_thermometer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f912.webp">🤒</g-emoji>
                         </div>
                         <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
                           Out sick
@@ -493,7 +493,7 @@
                   <div class="float-left col-6">
                       <button type="button" value=":house:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
                         <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
-                          <g-emoji alias="house" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3e0.png">🏠</g-emoji>
+                          <g-emoji alias="house" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3e0.webp">🏠</g-emoji>
                         </div>
                         <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
                           Working from home
@@ -501,7 +501,7 @@
                       </button>
                       <button type="button" value=":dart:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
                         <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
-                          <g-emoji alias="dart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png">🎯</g-emoji>
+                          <g-emoji alias="dart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.webp">🎯</g-emoji>
                         </div>
                         <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
                           Focusing

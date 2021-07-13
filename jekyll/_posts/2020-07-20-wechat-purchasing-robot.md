@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - ecommerce
-image: /assets/2020/wechat-purchasing-robot/header.jpg
+image: /assets/2020/wechat-purchasing-robot/header.webp
 ---
 
 > 作者: [DevoZou](https://github.com/zoudingyi/)
@@ -28,7 +28,7 @@ image: /assets/2020/wechat-purchasing-robot/header.jpg
 
 在有人咨询商品信息的时候，比如发送有关于【香水】的话题，便自动回复有在售出的香水商品列表，包含了商品不同尺寸下的价格。
 
-![效果图](/assets/2020/wechat-purchasing-robot/sell.png)
+![效果图](/assets/2020/wechat-purchasing-robot/sell.webp)
 
 ### 结构
 
@@ -48,7 +48,7 @@ image: /assets/2020/wechat-purchasing-robot/header.jpg
 ## 依赖
 
 wechaty：wechaty 核心库  
-wechaty-puppet-padplus：wechaty的ipad协议实现
+wechaty-puppet-padplus：wechaty 的 ipad 协议实现
 
 ## 代码介绍
 
@@ -56,26 +56,24 @@ wechaty-puppet-padplus：wechaty的ipad协议实现
 // init
 const bot = new Wechaty({
   puppet: new PuppetPadplus({
-    token: config.token
+    token: config.token,
   }),
-  name: config.name
-})
+  name: config.name,
+});
 
-bot.on('scan', onScan) // 机器人需要扫描二维码时监听
-bot.on('login', (user) => log.info('StarterBot', '%s login', user))
-bot.on('logout', (user) => log.info('StarterBot', '%s logout', user))
-bot.on('message', onMessage(bot)) // 消息监听
-bot.on('friendship', onFriendShip) // 添加好友监听
-bot.on('room-join', onRoomJoin) // 加入房间监听
-
+bot.on("scan", onScan); // 机器人需要扫描二维码时监听
+bot.on("login", (user) => log.info("StarterBot", "%s login", user));
+bot.on("logout", (user) => log.info("StarterBot", "%s logout", user));
+bot.on("message", onMessage(bot)); // 消息监听
+bot.on("friendship", onFriendShip); // 添加好友监听
+bot.on("room-join", onRoomJoin); // 加入房间监听
 
 bot
   .start()
   .then(() => {
-    log.info('StarterBot', 'Starter Bot Started.')
+    log.info("StarterBot", "Starter Bot Started.");
   })
-  .catch((e) => log.error('StarterBot', e))
-
+  .catch((e) => log.error("StarterBot", e));
 ```
 
 ## 本地运行
@@ -108,11 +106,11 @@ npm run serve
 
 ## 其他功能效果
 
-![效果图](/assets/2020/wechat-purchasing-robot/chat.png)
+![效果图](/assets/2020/wechat-purchasing-robot/chat.webp)
 
 ## 致谢
 
-非常感谢Wechaty团队提供微信机器人SDK，让开发者可以专注于业务代码。  
-感谢句子互动提供的pad协议版token。  
+非常感谢 Wechaty 团队提供微信机器人 SDK，让开发者可以专注于业务代码。  
+感谢句子互动提供的 pad 协议版 token。  
 wechaty: <https://wechaty.github.io/>  
 juzibot: <https://www.juzibot.com>

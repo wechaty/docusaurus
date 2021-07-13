@@ -7,12 +7,12 @@ tags:
   - featured
   - social
   - utility
-image: /assets/2019/wewe-screenshot.png
+image: /assets/2019/wewe-screenshot.webp
 ---
 
 > Author: [@timqian](https://github.com/timqian) Building transparent products at [t9t.io](https://t9t.io)
 
-[![wewe](/assets/2019/wewe-screenshot.png)](https://wewe.t9t.io)
+[![wewe](/assets/2019/wewe-screenshot.webp)](https://wewe.t9t.io)
 
 ## 背景
 
@@ -49,7 +49,7 @@ image: /assets/2019/wewe-screenshot.png
 
 加入方式
 
-- 微信: 加 [timbot](../assets/2019/wewe-timbot.jpg) 为好友, 备注 "join wewe", 然后将机器人拉入群聊即可, 如果内容适合公开, 我就会开始收集
+- 微信: 加 [timbot](../assets/2019/wewe-timbot.webp) 为好友, 备注 "join wewe", 然后将机器人拉入群聊即可, 如果内容适合公开, 我就会开始收集
 - slack: 加入[t9t.io slack 群](https://join.slack.com/t/t9tio/shared_invite/enQtNjgzMzkwMDM0NTE3LTE5ZTUzYjU4Y2I0YzRiZjNkYTkzMzE1ZmM0NDdmYzRlZmMxNGY1MzZlN2EwYjYyNWVlMWY0Nzk2MDBhNWZlY2I)
 
 ## FAQ

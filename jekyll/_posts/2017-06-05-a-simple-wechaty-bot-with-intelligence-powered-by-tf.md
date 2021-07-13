@@ -8,7 +8,7 @@ tags:
   - tensorflow
   - news
   - utility
-image: /assets/2017/wildcat-tf-wechaty-and-tensorflow-featured-image.png
+image: /assets/2017/wildcat-tf-wechaty-and-tensorflow-featured-image.webp
 ---
 
 Author: [@imWildCat](https://github.com/imWildCat), University of Birmingham
@@ -100,35 +100,36 @@ Write a simple bot which send all the messages regardless those in groups to the
 
 ```js
 // bot.js
-const { Wechaty, MsgType } = require('wechaty');
-const request = require('request');
+const { Wechaty, MsgType } = require("wechaty");
+const request = require("request");
 
-const bot = Wechaty.instance({ profile: 'tensorflow' });
+const bot = Wechaty.instance({ profile: "tensorflow" });
 
-bot.on('message', (message) => {
-    if (!message.room() && !message.self() && message.type === MsgType.text) {
-        // If it is not a group message nor message posted by self
-        const content = message.content();
-        request.post({
-            url: 'http://localhost:5000/message',
-            form: { msg: content }
-        },
-            (err, httpResponse, body) => {
-                if (!err && body) {
-                    const data = JSON.parse(body);
-                    const response = data.text;
-                    console.log('message:', content, 'response:', response);
-                    message.say(response);
-                }
-
-            })
-    }
-})
+bot.on("message", (message) => {
+  if (!message.room() && !message.self() && message.type === MsgType.text) {
+    // If it is not a group message nor message posted by self
+    const content = message.content();
+    request.post(
+      {
+        url: "http://localhost:5000/message",
+        form: { msg: content },
+      },
+      (err, httpResponse, body) => {
+        if (!err && body) {
+          const data = JSON.parse(body);
+          const response = data.text;
+          console.log("message:", content, "response:", response);
+          message.say(response);
+        }
+      }
+    );
+  }
+});
 
 bot.init();
 ```
 
- Run this script `node bot.js`, each time while receiving message, Wechaty will post it to the AI API (flask web server) `[Message] <=> [Wechaty] <=> [AI]` then get the response.
+Run this script `node bot.js`, each time while receiving message, Wechaty will post it to the AI API (flask web server) `[Message] <=> [Wechaty] <=> [AI]` then get the response.
 
 ![screenshot-bot-in-wechat][screenshot-bot-in-wechat]
 
@@ -142,12 +143,12 @@ Although there would be a number of challenges in the future, it is desirable to
 
 ## Bibliography
 
-[^1]: Siraj Raval, 2016. *How to Make an Amazing Tensorflow Chatbot Easily*. Retrieved from: [https://www.youtube.com/watch?v=SJDEOWLHYVo](https://www.youtube.com/watch?v=SJDEOWLHYVo)
-[^2]: Russell Jon, 2017. *Google’s AlphaGo AI wins three-match series against the world’s best Go player*. Retrived from: [https://techcrunch.com/2017/05/24/alphago-beats-planets-best-human-go-player-ke-jie/](https://techcrunch.com/2017/05/24/alphago-beats-planets-best-human-go-player-ke-jie/)
+[^1]: Siraj Raval, 2016. _How to Make an Amazing Tensorflow Chatbot Easily_. Retrieved from: [https://www.youtube.com/watch?v=SJDEOWLHYVo](https://www.youtube.com/watch?v=SJDEOWLHYVo)
+[^2]: Russell Jon, 2017. _Google’s AlphaGo AI wins three-match series against the world’s best Go player_. Retrived from: [https://techcrunch.com/2017/05/24/alphago-beats-planets-best-human-go-player-ke-jie/](https://techcrunch.com/2017/05/24/alphago-beats-planets-best-human-go-player-ke-jie/)
 
-[wechaty-and-tensorflow]: /assets/2017/wildcat-tf-wechaty-and-tensorflow-featured-image.png
-[from-go-to-chatbot]: /assets/2017/wildcat-tf-from-go-to-chatbot.png
-[screenshot-training]: /assets/2017/wildcat-tf-screenshot-training.png
-[screenshot-testing]: /assets/2017/wildcat-tf-screenshot-testing.png
-[screenshot-simple-ui]: /assets/2017/wildcat-tf-screenshot-simple-ui.jpg
-[screenshot-bot-in-wechat]: /assets/2017/wildcat-tf-screenshot-bot-in-wechat.jpg
+[wechaty-and-tensorflow]: /assets/2017/wildcat-tf-wechaty-and-tensorflow-featured-image.webp
+[from-go-to-chatbot]: /assets/2017/wildcat-tf-from-go-to-chatbot.webp
+[screenshot-training]: /assets/2017/wildcat-tf-screenshot-training.webp
+[screenshot-testing]: /assets/2017/wildcat-tf-screenshot-testing.webp
+[screenshot-simple-ui]: /assets/2017/wildcat-tf-screenshot-simple-ui.webp
+[screenshot-bot-in-wechat]: /assets/2017/wildcat-tf-screenshot-bot-in-wechat.webp

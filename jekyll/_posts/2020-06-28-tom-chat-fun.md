@@ -2,7 +2,7 @@
 title: "TomChat-为生活增趣味"
 author: zophyr
 excerpt: "A chatbot by wechaty.You can learn about today in history, current weather and chat with Tom."
-image: /assets/2020/tom-chat/zelda.jpg 
+image: /assets/2020/tom-chat/zelda.webp
 categories: project
 tags:
   - assistant
@@ -26,7 +26,7 @@ tags:
 ├── config
 │   └── config.template.js
 ├── img
-│   └── xxx.jpeg
+│   └── xxx.webp
 ├── package.json
 └── src
     ├── bot.js

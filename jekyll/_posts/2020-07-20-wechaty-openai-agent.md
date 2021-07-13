@@ -2,11 +2,11 @@
 title: "用「Wechaty」和「微信对话开放平台」做个助理"
 author: windmemory
 categories: tutorial
-tags: 
+tags:
   - openai
   - talk
   - featured
-image: /assets/2020/wechaty-weixin-openai/teaser-image.png
+image: /assets/2020/wechaty-weixin-openai/teaser-image.webp
 ---
 
 > Author: [@windmemory](https://github.com/windmemory) Wechaty contributor, author of [wechaty-puppet-padchat](https://github.com/wechaty/wechaty-puppet-padchat), [wechaty-puppet-padpro](https://github.com/wechaty/wechaty-puppet-padpro), [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus). CTO of [Juzi.Bot](https://pre-angel.com/portfolios/juzibot/)
@@ -15,7 +15,7 @@ image: /assets/2020/wechaty-weixin-openai/teaser-image.png
 
 应 [WWC(Women Who Code)](#women-who-code) 邀请，我在线上分享了如何用「Wechaty」和「微信对话开放平台」做个助理帮助回答常见问题。
 
-活动介绍: [https://mp.weixin.qq.com/s/6HyEZlwWbuRGY9T_KotXEw](WWC在线分享: 如何用 Wechaty 和 微信对话开放平台 创建你的个人助理)
+活动介绍: [https://mp.weixin.qq.com/s/6HyEZlwWbuRGY9T_KotXEw](WWC 在线分享: 如何用 Wechaty 和 微信对话开放平台 创建你的个人助理)
 
 ![wechaty-weixin-openai][teaser]
 
@@ -36,25 +36,25 @@ image: /assets/2020/wechaty-weixin-openai/teaser-image.png
 这个时候就是 `Wechaty` 大显身手的时候了，下面是接入代码：
 
 ```ts
-import { Wechaty, Message, UrlLink } from 'wechaty'
-import { PuppetPadplus } from 'wechaty-puppet-padplus'
-import { EventLogger, QRCodeTerminal } from 'wechaty-plugin-contrib'
+import { Wechaty, Message, UrlLink } from "wechaty";
+import { PuppetPadplus } from "wechaty-puppet-padplus";
+import { EventLogger, QRCodeTerminal } from "wechaty-plugin-contrib";
 
-import { padplusToken } from './const'
+import { padplusToken } from "./const";
 
 const puppet = new PuppetPadplus({
   token: padplusToken,
-})
+});
 
 const bot = new Wechaty({
-  name: 'wwc-agent',
+  name: "wwc-agent",
   puppet,
-})
+});
 
-bot.use(EventLogger())
-bot.use(QRCodeTerminal({ small: true }))
+bot.use(EventLogger());
+bot.use(QRCodeTerminal({ small: true }));
 
-bot.start()
+bot.start();
 ```
 
 代码很简单，就是创建了一个 `puppet` 的实例，然后作为参数传给了 `Wechaty` 的构造函数，创建了一个新的 `Wechaty` 实例，然后启动了 `Wechaty` 实例。
@@ -94,21 +94,23 @@ QR Code Image URL: https://wechaty.js.org/qrcode/http%3A%2F%2Fweixin.qq.com%2Fx%
 这一步就比较容易，简单的代码逻辑实现一下就可以了
 
 ```ts
-bot.on('message', async (message: Message) => {
-  const room = message.room()
-  const from = message.from()
-  const mentionSelf = await message.mentionSelf()
-  const text = message.text()
+bot
+  .on("message", async (message: Message) => {
+    const room = message.room();
+    const from = message.from();
+    const mentionSelf = await message.mentionSelf();
+    const text = message.text();
 
-  if (room !== null && from.id === bossId && mentionSelf) {
-    if (/句子互动/.test(text)) {
-      await room.say(juzibotIntro)
-      await room.say(new UrlLink(juzibotIntroUrl))
-    } else if (/高原/.test(text)) {
-      await room.say(new UrlLink(yuanIntroUrl))
+    if (room !== null && from.id === bossId && mentionSelf) {
+      if (/句子互动/.test(text)) {
+        await room.say(juzibotIntro);
+        await room.say(new UrlLink(juzibotIntroUrl));
+      } else if (/高原/.test(text)) {
+        await room.say(new UrlLink(yuanIntroUrl));
+      }
     }
-  }
-}).start()
+  })
+  .start();
 ```
 
 这样，当我在群里@机器人来介绍`句子互动`或者我自己的时候，机器人就会帮我自动发送一些介绍的话术，我就可以不需要
@@ -121,7 +123,7 @@ bot.on('message', async (message: Message) => {
 
 ```ts
 if (/句子互动/.test(message.text())) {
-  await message.say(juzibotIntro)
+  await message.say(juzibotIntro);
 }
 ```
 
@@ -129,13 +131,13 @@ if (/句子互动/.test(message.text())) {
 
 ```ts
 if (/句子互动/.test(message.text())) {
-  await message.say(juzibotIntro)
+  await message.say(juzibotIntro);
 } else if (/技术栈/.test(message.text())) {
-  await message.say(techStackAnswer)
+  await message.say(techStackAnswer);
 }
 ```
 
-如果问的问题是`句子互动的技术栈是什么？`，上面的代码就不能正确的回答上来答案了。当然，我可以通过调整两个`if`判断的顺序来解决这个问题，但是如果我有20个常见问题，这样的`if-else`写法一定有问题。除此之外，每个问题都可能有很多种不同的问法，比如说问我们公司介绍的，可能还会说：
+如果问的问题是`句子互动的技术栈是什么？`，上面的代码就不能正确的回答上来答案了。当然，我可以通过调整两个`if`判断的顺序来解决这个问题，但是如果我有 20 个常见问题，这样的`if-else`写法一定有问题。除此之外，每个问题都可能有很多种不同的问法，比如说问我们公司介绍的，可能还会说：
 
 - 你们公司做什么的？
 - 介绍下你们的情况？
@@ -170,46 +172,48 @@ if (/句子互动/.test(message.text())) {
 
 ```ts
 const processCommonMaterial = async (message: Message) => {
-  const room = message.room()
-  const from = message.from()
-  const mentionSelf = await message.mentionSelf()
-  const text = message.text()
+  const room = message.room();
+  const from = message.from();
+  const mentionSelf = await message.mentionSelf();
+  const text = message.text();
 
   if (room !== null && from.id === bossId && mentionSelf) {
     if (/句子互动/.test(text)) {
-      await room.say(juzibotIntro)
-      await room.say(new UrlLink(juzibotIntroUrl))
-      return true
+      await room.say(juzibotIntro);
+      await room.say(new UrlLink(juzibotIntroUrl));
+      return true;
     } else if (/高原/.test(text)) {
-      await room.say(new UrlLink(yuanIntroUrl))
-      return true
+      await room.say(new UrlLink(yuanIntroUrl));
+      return true;
     }
   }
-  return false
-}
+  return false;
+};
 ```
 
 然后，就是在`Wechaty`里面引用和配置插件了
 
 ```ts
-const openAIToken = 'openai-token'
-const openAIEncodingAESKey = 'openai-encoding-aes-key'
+const openAIToken = "openai-token";
+const openAIEncodingAESKey = "openai-encoding-aes-key";
 
 const preAnswerHook = async (message: Message) => {
-  const isCommonMaterial = await processCommonMaterial(message)
+  const isCommonMaterial = await processCommonMaterial(message);
   if (isCommonMaterial) {
-    return false
+    return false;
   }
-}
+};
 
 /**
  * Use wechaty-weixin-openai plugin here with given config
  */
-bot.use(WechatyWeixinOpenAI({
-  token: openAIToken,
-  encodingAESKey: openAIEncodingAESKey,
-  preAnswerHook,
-}))
+bot.use(
+  WechatyWeixinOpenAI({
+    token: openAIToken,
+    encodingAESKey: openAIEncodingAESKey,
+    preAnswerHook,
+  })
+);
 ```
 
 插件的使用其实非常简单，只要传入`微信对话开放平台`里面开放服务接入的`TOKEN`和`EncodingAESKey`即可，就能连接到`微信对话开放平台`了
@@ -231,47 +235,49 @@ bot.use(WechatyWeixinOpenAI({
  * Function to get boss contact
  */
 const getBoss = async () => {
-  const contact = bot.Contact.load(bossId)
-  await contact.sync()
-  return contact
-}
+  const contact = bot.Contact.load(bossId);
+  await contact.sync();
+  return contact;
+};
 
 const noAnswerHook = async (message: Message) => {
-  const room = message.room()
-  const from = message.from()
+  const room = message.room();
+  const from = message.from();
   if (!room) {
-    const boss = await getBoss()
-    await room.say`${from}，你的问题我不会回答，你可以联系我的老板`
-    await room.say(boss)
+    const boss = await getBoss();
+    await room.say`${from}，你的问题我不会回答，你可以联系我的老板`;
+    await room.say(boss);
     return;
   }
-  const members = await room.memberAll()
-  const bossInRoom = members.find(m => m.id === bossId)
+  const members = await room.memberAll();
+  const bossInRoom = members.find((m) => m.id === bossId);
   if (bossInRoom) {
-    await room.say`${bossInRoom}，${from}问的问题我不知道，你帮我回答一下吧。`
+    await room.say`${bossInRoom}，${from}问的问题我不知道，你帮我回答一下吧。`;
   } else {
-    const boss = await getBoss()
-    await room.say`${from}，你的问题我不会回答，你可以联系我的老板`
-    await room.say(boss)
+    const boss = await getBoss();
+    await room.say`${from}，你的问题我不会回答，你可以联系我的老板`;
+    await room.say(boss);
   }
-}
+};
 
 /**
  * Use wechaty-weixin-openai plugin here with given config
  */
-bot.use(WechatyWeixinOpenAI({
-  token: openAIToken,
-  encodingAESKey: openAIEncodingAESKey,
-  noAnswerHook,
-  preAnswerHook,
-}))
+bot.use(
+  WechatyWeixinOpenAI({
+    token: openAIToken,
+    encodingAESKey: openAIEncodingAESKey,
+    noAnswerHook,
+    preAnswerHook,
+  })
+);
 ```
 
 这里新引入了另外一个`wechaty-weixin-openai`里面的函数`noAnswerHook`，同样，直译这个名字，就是这个函数的作用。当`微信对话开放平台`没有找到合适的回答的时候，会调用这个函数，这样我们可以在这个函数里面对于这种不清楚用户问什么的情况做一个兜底处理，比如我们这次就希望当不会回答的时候，可以把这个对话转接给我。
 
 这样，在这个回调函数里面，根据当前对话发生在群聊还是私聊做了区分，如果是私聊，就直接发送我的名片来引导加好友了。如果发生在群聊，则先获取一下群成员，并且判断我是不是在群里，如果在的话，直接@我回复，不在的话，同样发名片，代码很简单。
 
-截止到这，我们就已经基本完成了我们一开始设想的这些功能，但是我们能不能基于`微信对话开放平台`的AI能力，再玩出来点什么有意思的呢？
+截止到这，我们就已经基本完成了我们一开始设想的这些功能，但是我们能不能基于`微信对话开放平台`的 AI 能力，再玩出来点什么有意思的呢？
 
 ## One More Thing
 
@@ -280,32 +286,38 @@ bot.use(WechatyWeixinOpenAI({
 说干就干，下面是代码：
 
 ```ts
-const preAnswerHook = async (message: Message, _: any, sentiment: SentimentData) => {
-  const isCommonMaterial = await processCommonMaterial(message)
+const preAnswerHook = async (
+  message: Message,
+  _: any,
+  sentiment: SentimentData
+) => {
+  const isCommonMaterial = await processCommonMaterial(message);
   if (isCommonMaterial) {
-    return false
+    return false;
   }
 
-  const hate = sentiment.hate
-  const angry = sentiment.angry
-  const score = (hate || 0) + (angry || 0)
+  const hate = sentiment.hate;
+  const angry = sentiment.angry;
+  const score = (hate || 0) + (angry || 0);
   if (score > 0.9) {
-    const boss = await getBoss()
-    const from = message.from()
-    const room = await bot.Room.create([boss, from])
-    await new Promise(r => setTimeout(r, 3000))
-    await room.say`${boss}，你帮帮我吧，${from}和我聊天已经聊得不耐烦了`
-    return false
+    const boss = await getBoss();
+    const from = message.from();
+    const room = await bot.Room.create([boss, from]);
+    await new Promise((r) => setTimeout(r, 3000));
+    await room.say`${boss}，你帮帮我吧，${from}和我聊天已经聊得不耐烦了`;
+    return false;
   }
-}
+};
 
-bot.use(WechatyWeixinOpenAI({
-  token: openAIToken,
-  encodingAESKey: openAIEncodingAESKey,
-  includeSentiment: true,
-  noAnswerHook,
-  preAnswerHook,
-}))
+bot.use(
+  WechatyWeixinOpenAI({
+    token: openAIToken,
+    encodingAESKey: openAIEncodingAESKey,
+    includeSentiment: true,
+    noAnswerHook,
+    preAnswerHook,
+  })
+);
 ```
 
 这里用到了新的插件参数`includeSentiment`，这个参数决定在`preAnswerHook`函数里面是否同时传入`微信对话开放平台`里查到的当前消息的情绪值参数，我们这里是设置成了`true`，这样会在`preAnswerHook`函数里面带上情绪数据。
@@ -334,12 +346,12 @@ PS：在现场演示过程中，我们的测试了很多种的负面情绪的消
 
 ## Women Who Code
 
-[Women Who Code Beijing](https://mp.weixin.qq.com/s?__biz=MzIyMzc0NDgzMg==&mid=100000001&idx=1&sn=2cb2c65673dd989cebac1e69abad5ccd&chksm=6818c72e5f6f4e386470525349192f23c8407a77e0a628cec7dbee3e75d9704223a2ef7f2d95) 于2015年10月在北京成立，希望能够帮助和鼓励在这个城市生活和工作的 女性工程师在职业发展的道路上顺利前行。我们相信IT行业也会因为有更多的女性的加入变得更有生产力和创造力。
+[Women Who Code Beijing](https://mp.weixin.qq.com/s?__biz=MzIyMzc0NDgzMg==&mid=100000001&idx=1&sn=2cb2c65673dd989cebac1e69abad5ccd&chksm=6818c72e5f6f4e386470525349192f23c8407a77e0a628cec7dbee3e75d9704223a2ef7f2d95) 于 2015 年 10 月在北京成立，希望能够帮助和鼓励在这个城市生活和工作的 女性工程师在职业发展的道路上顺利前行。我们相信 IT 行业也会因为有更多的女性的加入变得更有生产力和创造力。
 
-[teaser]: /assets/2020/wechaty-weixin-openai/teaser-image.png
-[mobile-screenshot-1]: /assets/2020/wechaty-weixin-openai/mobile-screenshot-1.jpg
-[openai-screenshot]: /assets/2020/wechaty-weixin-openai/openai-screenshot.jpg
-[openai-qna]: /assets/2020/wechaty-weixin-openai/openai-qna.jpg
-[openai-config]: /assets/2020/wechaty-weixin-openai/openai-config.jpg
-[openai-banner]: /assets/2020/wechaty-weixin-openai/openai-banner.jpg
-[final-screenshot]: /assets/2020/wechaty-weixin-openai/final-screenshot.jpg
+[teaser]: /assets/2020/wechaty-weixin-openai/teaser-image.webp
+[mobile-screenshot-1]: /assets/2020/wechaty-weixin-openai/mobile-screenshot-1.webp
+[openai-screenshot]: /assets/2020/wechaty-weixin-openai/openai-screenshot.webp
+[openai-qna]: /assets/2020/wechaty-weixin-openai/openai-qna.webp
+[openai-config]: /assets/2020/wechaty-weixin-openai/openai-config.webp
+[openai-banner]: /assets/2020/wechaty-weixin-openai/openai-banner.webp
+[final-screenshot]: /assets/2020/wechaty-weixin-openai/final-screenshot.webp

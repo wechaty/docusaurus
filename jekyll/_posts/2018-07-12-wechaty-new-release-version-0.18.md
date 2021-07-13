@@ -6,10 +6,10 @@ tags:
   - release
   - news
   - featured
-image: /assets/2018/huan-reduce-weight.jpg
+image: /assets/2018/huan-reduce-weight.webp
 ---
 
-![reduce weight](/assets/2018/huan-reduce-weight.jpg)
+![reduce weight](/assets/2018/huan-reduce-weight.webp)
 
 > Picture Credit: [Thumber.com](https://www.tumblr.com/search/the%20fastest%20way%20to%20lose%20weight)
 
@@ -34,22 +34,22 @@ So at this version (v0.18), we have the follow npm modules that splited out from
 
 ### 1. For Puppet User
 
-| Stage   | Name      | Wechaty Puppet | Backend | Version |
-| :---    | :---      | :---           | :---    | :---    |
-| Release  | puppeteer | [PuppetPuppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer) | Web API via Browser Hooking | ![PuppetPuppeteer](https://badge.fury.io/js/wechaty-puppet-puppeteer.svg) |
-| Beta    | padchat   | [PuppetPadchat](https://github.com/lijiarui/wechaty-puppet-padchat) | iPad Protocol | ![PuppetPadchat](https://badge.fury.io/js/wechaty-puppet-padchat.svg) |
-| Alpha   | wechat4u  | [PuppetWechat4u](https://github.com/wechaty/wechaty-puppet-wechat4u) | Web API via HTTP | ![PuppetWechat4u](https://badge.fury.io/js/wechaty-puppet-wechat4u.svg) |
-| Alpha   | ioscat    | [PuppetIoscat](https://github.com/linyimin-bupt/wechaty-puppet-ioscat) (WIP) | iPhone App Hooking | ![PuppetIoscat](https://badge.fury.io/js/wechaty-puppet-ioscat.svg) |
-| Alpha   | service    | [PuppetService](https://github.com/wechaty/wechaty-puppet-service) | Chatie Cloud | ![PuppetService](https://badge.fury.io/js/wechaty-puppet-service.svg) |
-| TBW | Android | | Android Hook | 0.0.0 |
-| TBW | Win32   | | Win32 Hook   | 0.0.0 |
+| Stage   | Name      | Wechaty Puppet                                                               | Backend                     | Version                                                                   |
+| :------ | :-------- | :--------------------------------------------------------------------------- | :-------------------------- | :------------------------------------------------------------------------ |
+| Release | puppeteer | [PuppetPuppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer)       | Web API via Browser Hooking | ![PuppetPuppeteer](https://badge.fury.io/js/wechaty-puppet-puppeteer.svg) |
+| Beta    | padchat   | [PuppetPadchat](https://github.com/lijiarui/wechaty-puppet-padchat)          | iPad Protocol               | ![PuppetPadchat](https://badge.fury.io/js/wechaty-puppet-padchat.svg)     |
+| Alpha   | wechat4u  | [PuppetWechat4u](https://github.com/wechaty/wechaty-puppet-wechat4u)         | Web API via HTTP            | ![PuppetWechat4u](https://badge.fury.io/js/wechaty-puppet-wechat4u.svg)   |
+| Alpha   | ioscat    | [PuppetIoscat](https://github.com/linyimin-bupt/wechaty-puppet-ioscat) (WIP) | iPhone App Hooking          | ![PuppetIoscat](https://badge.fury.io/js/wechaty-puppet-ioscat.svg)       |
+| Alpha   | service   | [PuppetService](https://github.com/wechaty/wechaty-puppet-service)           | Chatie Cloud                | ![PuppetService](https://badge.fury.io/js/wechaty-puppet-service.svg)     |
+| TBW     | Android   |                                                                              | Android Hook                | 0.0.0                                                                     |
+| TBW     | Win32     |                                                                              | Win32 Hook                  | 0.0.0                                                                     |
 
 ### 2. For Puppet Builder
 
-| Stage   | Name      | Wechaty Puppet | Backend | Version |
-| :---    | :---      | :---           | :---    | :---    |
-| Release | N/A       | [Puppet](https://github.com/wechaty/wechaty-puppet) | Abstract Base Class | ![Puppet](https://badge.fury.io/js/wechaty-puppet.svg) |
-| Release | mock      | [PuppetMock](https://github.com/wechaty/wechaty-puppet-mock) | Mocking | ![PuppetMock](https://badge.fury.io/js/wechaty-puppet-mock.svg) |
+| Stage   | Name | Wechaty Puppet                                               | Backend             | Version                                                         |
+| :------ | :--- | :----------------------------------------------------------- | :------------------ | :-------------------------------------------------------------- |
+| Release | N/A  | [Puppet](https://github.com/wechaty/wechaty-puppet)          | Abstract Base Class | ![Puppet](https://badge.fury.io/js/wechaty-puppet.svg)          |
+| Release | mock | [PuppetMock](https://github.com/wechaty/wechaty-puppet-mock) | Mocking             | ![PuppetMock](https://badge.fury.io/js/wechaty-puppet-mock.svg) |
 
 If we count the other npm modules that split out from Wechaty before, we can also list them as the following:
 
@@ -76,13 +76,13 @@ So at last, as we published the v0.18, we only left 3,853 source lines of the co
 
 ### Source Lines of Code for Wechaty
 
-| Date | SLOC | Factor(%) |
-| :--- | :--- | ---: |
-| 2016.5 | 3,000 | 38% |
-| 2017.1 | 10,000 | 128% |
-| 2018.1 | 20,000 | 256% |
-| 2018.6 | 27,630 | 353% |
-| 2018.7 | 7,817 | 100% |
+| Date   | SLOC   | Factor(%) |
+| :----- | :----- | --------: |
+| 2016.5 | 3,000  |       38% |
+| 2017.1 | 10,000 |      128% |
+| 2018.1 | 20,000 |      256% |
+| 2018.6 | 27,630 |      353% |
+| 2018.7 | 7,817  |      100% |
 
 From 27,630 to 7,817, we are 72% off than before, cheers!
 
@@ -104,13 +104,13 @@ From 27,630 to 7,817, we are 72% off than before, cheers!
 
 **Fixed bugs:**
 
-- Cannot detect the the environment WECHATY\_PUPPET v0.17.118  [\#1456](https://github.com/wechaty/wechaty/issues/1456)
+- Cannot detect the the environment WECHATY_PUPPET v0.17.118 [\#1456](https://github.com/wechaty/wechaty/issues/1456)
 - PuppetPadchat Server logout and login cycle average 3-5mins [\#1446](https://github.com/wechaty/wechaty/issues/1446)
 - WARN PuppetPuppeteer initWatchdogForPuppet\(\) dog.on\(reset\) last food:inited, timeout:120000 [\#1439](https://github.com/wechaty/wechaty/issues/1439)
 - ts-node 7.0 breaking change: Skip `files` by default [\#1383](https://github.com/wechaty/wechaty/issues/1383)
 - Can not find room after add member to the room [\#1380](https://github.com/wechaty/wechaty/issues/1380)
 - PuppetPadchat: `friend` value of `ContactPayload` is undefined [\#1359](https://github.com/wechaty/wechaty/issues/1359)
-- WXGetContact cannot get user\_name [\#1358](https://github.com/wechaty/wechaty/issues/1358)
+- WXGetContact cannot get user_name [\#1358](https://github.com/wechaty/wechaty/issues/1358)
 - leveldown::Database::Close: Program terminated with signal SIGSEGV, Segmentation fault. [\#1355](https://github.com/wechaty/wechaty/issues/1355)
 
 **Closed issues:**
@@ -133,10 +133,10 @@ From 27,630 to 7,817, we are 72% off than before, cheers!
 **Merged pull requests:**
 
 - update version of puppet-padchat [\#1457](https://github.com/wechaty/wechaty/pull/1457) ([windmemory](https://github.com/windmemory))
-- catch error when get undifined user\_name in room [\#1408](https://github.com/wechaty/wechaty/pull/1408) ([lijiarui](https://github.com/lijiarui))
+- catch error when get undifined user_name in room [\#1408](https://github.com/wechaty/wechaty/pull/1408) ([lijiarui](https://github.com/lijiarui))
 - add a more suitable time to sync Contact and Room [\#1407](https://github.com/wechaty/wechaty/pull/1407) ([lijiarui](https://github.com/lijiarui))
-- mock self bot when WXGetContact\(\) return null user\_name [\#1405](https://github.com/wechaty/wechaty/pull/1405) ([lijiarui](https://github.com/lijiarui))
+- mock self bot when WXGetContact\(\) return null user_name [\#1405](https://github.com/wechaty/wechaty/pull/1405) ([lijiarui](https://github.com/lijiarui))
 - sync contact and room per hour [\#1402](https://github.com/wechaty/wechaty/pull/1402) ([lijiarui](https://github.com/lijiarui))
 - add `friend` in ContactPayload [\#1401](https://github.com/wechaty/wechaty/pull/1401) ([lijiarui](https://github.com/lijiarui))
-- fix Contact.findaAll\(\) cannot get contact when user\_name return undifined [\#1389](https://github.com/wechaty/wechaty/pull/1389) ([lijiarui](https://github.com/lijiarui))
+- fix Contact.findaAll\(\) cannot get contact when user_name return undifined [\#1389](https://github.com/wechaty/wechaty/pull/1389) ([lijiarui](https://github.com/lijiarui))
 - fix bug that after a room add, the room id get removed from cache [\#1384](https://github.com/wechaty/wechaty/pull/1384) ([windmemory](https://github.com/windmemory))

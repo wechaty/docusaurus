@@ -72,7 +72,7 @@ To facilitate a higher volume of documentation and communications, I would like 
 
 - Prepare documentation on setting up configuration files:
 
-  - Making more visual graphs and architecture diagrams about Wechaty workflow and converting old `.png` images to `.svg` images.
+  - Making more visual graphs and architecture diagrams about Wechaty workflow and converting old `.webp` images to `.svg` images.
   - Standardize documentation across all of our repositories and improve navigation between Wechaty projects.
   - Auditing the existing documentation and regarding Wechaty configuration as this is currently fragmented and difficult to navigate.
   - Providing a beginner-friendly tutorial.

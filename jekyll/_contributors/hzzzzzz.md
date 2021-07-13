@@ -1,10 +1,10 @@
 ---
 name: hzzzzzz
 site: https://github.com/hzzzzzz
-avatar: /assets/contributors/hzzzzzz/avatar.png
+avatar: /assets/contributors/hzzzzzz/avatar.webp
 bio: Node.js developer
-email: 
-twitter: 
+email:
+twitter:
 ---
 
 Node.js developer

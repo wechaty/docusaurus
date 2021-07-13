@@ -4,16 +4,16 @@ author: suntong
 categories: article
 tags:
   - typescript
-image: /assets/2018/typescript-logo.png
+image: /assets/2018/typescript-logo.webp
 ---
 
-![TypeScript](/assets/2018/typescript-logo.png)
+![TypeScript](/assets/2018/typescript-logo.webp)
 
 Big companies or organizations push forward adopting of Typescript for a reason, mostly to prevent some dummies to shoot their own feet really easily -- The (almost only) advantage of Typescript is to point out, at the compile time, that the following usage is wrong:
 
 ```javascript
-var x = 'A';
-x = x + 5
+var x = "A";
+x = x + 5;
 ```
 
 But is it really? If you are a seasoned programmer and you are coding for yourself only, are you willing to get your hands tied up by MS Typescript, and suffer all its drawbacks in the mean time?
@@ -38,7 +38,7 @@ Here is some good reading that I want to share with you,
 [_When you can’t afford an extra transpilation tax_](https://medium.freecodecamp.org/when-should-i-use-typescript-311cb5fe801b)
 
 > There are no plans to support TypeScript natively in the browsers. Chrome did some experiment, but later cancelled support. I suspect this has something to do with unnecessary runtime overhead.
-If someone wants training wheels, they can install them. But bikes shouldn’t come with permanent training wheels. This means that you will always have to transpile your TypeScript code before running them.
+> If someone wants training wheels, they can install them. But bikes shouldn’t come with permanent training wheels. This means that you will always have to transpile your TypeScript code before running them.
 > For standard ES6, it’s a whole different story. When ES6 is supported by most browsers, the current ES6 to ES5 transpilation will become unnecessary.
 > ES6 is the biggest change to the JavaScript language, and I believe most programmers will just settle with it. But those brave few who want to try the next version of JavaScript’s experimental features, or the features not yet implemented on all browsers — they will need to transpile anyway.
 
@@ -79,7 +79,7 @@ All in all, I'll stick to ES6 and never use TypeScript. It might be my personal 
 
 ### Postlude
 
-PS, if I do have to write something that has to be transpiled first before running, it is got to be the [Dart programming language](https://en.wikipedia.org/wiki/Dart_(programming_language)), because of the new Google's mobile UI framework, [Flutter](https://flutter.io/?utm_source=google&utm_medium=blog&utm_campaign=beta_announcement), introduce on February 27, 2018, at Mobile World Congress 2018.
+PS, if I do have to write something that has to be transpiled first before running, it is got to be the [Dart programming language](<https://en.wikipedia.org/wiki/Dart_(programming_language)>), because of the new Google's mobile UI framework, [Flutter](https://flutter.io/?utm_source=google&utm_medium=blog&utm_campaign=beta_announcement), introduce on February 27, 2018, at Mobile World Congress 2018.
 
 Don't get me started on this, but check out the following yourself:
 
@@ -95,7 +95,7 @@ Don't get me started on this, but check out the following yourself:
 **Why we chose Flutter and how it’s changed our company for the better**  
 <https://medium.com/@matthew.smith_66715/why-we-chose-flutter-and-how-its-changed-our-company-for-the-better-271ddd25da60>
 
-**Google跨平台UI框架 Flutter beta 重磅发布**  
+**Google 跨平台 UI 框架 Flutter beta 重磅发布**  
 <https://juejin.im/post/5a964adf5188257a690f9a85>
 
 **Why I moved from JavaScript to Dart**  

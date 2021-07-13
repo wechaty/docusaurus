@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - productivity
-image: /assets/2020/wechat-bot/header.jpg
+image: /assets/2020/wechat-bot/header.webp
 ---
 
 基于 `wechaty` （包含 `wechaty-puppet-padplus` 插件）开发。
@@ -23,8 +23,8 @@ image: /assets/2020/wechat-bot/header.jpg
 
 ## 功能
 
-* `#` 字符触发特殊命令
-* 关键字回复问题
+- `#` 字符触发特殊命令
+- 关键字回复问题
 
 ## 安装
 
@@ -80,9 +80,9 @@ $ tree
 
 ## 参考文档
 
-* [https://wechaty.js.org/docs/](https://wechaty.js.org/docs/)
+- [https://wechaty.js.org/docs/](https://wechaty.js.org/docs/)
 
 ## 致谢
 
-🙏感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
-🙏感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token
+🙏 感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人 SDK  
+🙏 感谢[句子互动](https://www.juzibot.com/)提供的 iPad 协议版 token

@@ -5,7 +5,7 @@ categories: announcement
 tags:
   - okr
   - news
-image: /assets/2021/01-summer-2020-summit-okr/what-is-okr.png
+image: /assets/2021/01-summer-2020-summit-okr/what-is-okr.webp
 ---
 
 In Nov 14, 2020, The [Open Source Promotion Plan - Summer 2020 Summit](https://isrc.iscas.ac.cn/summer2020/#/summitmeeting) was held in Nanjing (thanks ISCAS & openEuler Community for the organizing!). As an open-source organization we enjoyed this program and we have four people: @univerone, @wj-Mcat, @rickyyin98, and @huan attended the Summit.
@@ -22,7 +22,7 @@ Before the travel to Nanjing, in order to make the goal clear, we have a meeting
 >
 > &mdash; [The ultimate OKR guide](https://www.perdoo.com/okr-guide/)
 
-The following points about the Key Result are copy/pasted from our previous discussion from our AI-ML.Club: [BUPT/magic-mirror - OKR管理项目的方式探讨 #17](https://github.com/BUPT/magic-mirror/issues/17)
+The following points about the Key Result are copy/pasted from our previous discussion from our AI-ML.Club: [BUPT/magic-mirror - OKR 管理项目的方式探讨 #17](https://github.com/BUPT/magic-mirror/issues/17)
 
 ## What is Key Result
 
@@ -80,10 +80,10 @@ According to [What is an OKR?](https://www.perdoo.com/resources/):
 
 In short, a `Key Result` is "What you can get(outcome)", and the `Initiative` is "What you can do(output)".
 
-| Difference | Outcome V.S. Output | Influence V.S. Control | Value V.S. Activity |
-| --- | --- | --- | --- |
-| Key Result | What you can GET (outcome) | You cannot control it, you can only INFLUENCE it | Value-based |
-| Initiative      | What you can DO (output) | You can CONTROL it directly | Activity-based |
+| Difference | Outcome V.S. Output        | Influence V.S. Control                           | Value V.S. Activity |
+| ---------- | -------------------------- | ------------------------------------------------ | ------------------- |
+| Key Result | What you can GET (outcome) | You cannot control it, you can only INFLUENCE it | Value-based         |
+| Initiative | What you can DO (output)   | You can CONTROL it directly                      | Activity-based      |
 
 At last, `Key Results` must be **measurable**.
 
@@ -91,7 +91,7 @@ At last, `Key Results` must be **measurable**.
 
 The following OKR discussion is copy/pasted from [wechaty/summer-of-code - Wechaty Open Source Software Supply Chain 2020 Najing Summit OKR Review #26](https://github.com/wechaty/summer-of-code/issues/26)
 
-![Wechaty Goals](/assets/2021/01-summer-2020-summit-okr/goal.png)
+![Wechaty Goals](/assets/2021/01-summer-2020-summit-okr/goal.webp)
 
 In this open-source summit, we have the following **Ultimate Objectives** and **Key Results**:
 
@@ -99,16 +99,16 @@ In this open-source summit, we have the following **Ultimate Objectives** and **
 
 1. Make Wechaty to be known as one of the **best open-source projects** in China
 1. Make more people get to know **what problem that Wechaty can solve**.
-    > Wechaty is a RPA SDK for Chatbot Makers that supports connecting to WeChat, DingTalk, Lark, WhatsApp, Teams, and Gitter and it can build a chatbot in 6 lines of code in almost any language.
+   > Wechaty is a RPA SDK for Chatbot Makers that supports connecting to WeChat, DingTalk, Lark, WhatsApp, Teams, and Gitter and it can build a chatbot in 6 lines of code in almost any language.
 
 ### Ultimate Key Results
 
 1. 100+ influences on-site
 1. 500+ new developers join our community:
-    > Wechaty Developers’ Home WeChat room, [Gitter](https://gitter.im/wechaty/wechaty), Stars on [GitHub](https://github.com/wechaty/wechaty)
+   > Wechaty Developers’ Home WeChat room, [Gitter](https://gitter.im/wechaty/wechaty), Stars on [GitHub](https://github.com/wechaty/wechaty)
 1. 6 blog posts with video embedded form the event with 3,000+ influences
 1. A Standard of Process (SOP) for promoting Wechaty in events in the future
-    > Check-list, Resources, Scripts
+   > Check-list, Resources, Scripts
 
 ## Team OKR
 

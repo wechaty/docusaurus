@@ -10,7 +10,7 @@ tags:
   - introduction
   - project
   - proposal
-image: /assets/2021/05-gsod-2021-applicant-jaya2320/profile.jpg
+image: /assets/2021/05-gsod-2021-applicant-jaya2320/profile.webp
 ---
 
 My name is Jaya Gupta, I am a 3rd year Informational Technology Student currently persuing my B.Tech from HMRITM, Delhi. I have learned various programming languages such as C , C, PYTHON, DJANGO, Machine Learning, Deep Learning.
@@ -19,22 +19,22 @@ I have designed variety of projects using Web Development, Machine Learning, Dee
 
 I with my fellow team mates have designed a project named AAYE(Appointment At Your Ease) which aims to help patients have their daily routine check-ups with their doctors at home especially at the time of pandemic , so that we can break the traditional queue system.
 
-I have created a web application to detect skin cancer using art of technique called deep learning  to help people and doctors to work on the next step immediately instead of wasting time on waiting for reports, it also includes an online forum so people can discuss and share their opinion, a mask detector using machine learning  to help people know who is wearing mask or not especially in public places such as shops, malls etc.
+I have created a web application to detect skin cancer using art of technique called deep learning to help people and doctors to work on the next step immediately instead of wasting time on waiting for reports, it also includes an online forum so people can discuss and share their opinion, a mask detector using machine learning to help people know who is wearing mask or not especially in public places such as shops, malls etc.
 
-I really enjoy solving different questions from various competitive programming  site in my free time. I believe, the developers and programmers of technology field are the inventors of 21st century. For me working in IT, particularly is a lot more than just punching numbers and code. It’s a highly creative endeavour, one that keeps a person on his toes and requires him to come up with solution to problems every single day. This single thought enthuses me to work in this field as it would bring best out of me, because it asks for so much. It could be any area in the technology, but the work will rarely, if ever, be boring. I, with my proper set of skills, in this technical field want to make things, no matter how trivial-easier, faster and better.
+I really enjoy solving different questions from various competitive programming site in my free time. I believe, the developers and programmers of technology field are the inventors of 21st century. For me working in IT, particularly is a lot more than just punching numbers and code. It’s a highly creative endeavour, one that keeps a person on his toes and requires him to come up with solution to problems every single day. This single thought enthuses me to work in this field as it would bring best out of me, because it asks for so much. It could be any area in the technology, but the work will rarely, if ever, be boring. I, with my proper set of skills, in this technical field want to make things, no matter how trivial-easier, faster and better.
 
 **This is my first time in GSOD, Iam not very proficient in technical writing, I am still learning. But I can vouch for the fact that I am a fast learner. I am always open to learn and unlearn at the same time.Honestly, joining this esteemed organization will help me learn a lot. I would love to seek the guidance of experienced and learned teams that are already onboard.**
 
 ## Personal Infromation
 
-- **Name:*- Jaya GUPTA
-- **Email:*- jayagupta752@gmail.com
+- \*_Name:_- Jaya GUPTA
+- \*_Email:_- jayagupta752@gmail.com
 - [Github](https://github.com/jaya2320)
 - [Linkedin](https://www.linkedin.com/in/jaya-gupta-6a2494142/)
 
 ## Project Proposal
 
-**Open source organization:*- Wechaty
+\*_Open source organization:_- Wechaty
 
 ### Project Title
 
@@ -71,15 +71,15 @@ After each video provides the solution of that assignment so that users can get 
 
 #### Managing video content
 
-We  need to structure the content in a meaningful way. The proposed content structure and presentation  is to split the tutorial into high level units/ sections. Each unit/section will have the following components. Below are the proposed components of a unit. Each unit needs to have a  link to the next and previous  unit.
+We need to structure the content in a meaningful way. The proposed content structure and presentation is to split the tutorial into high level units/ sections. Each unit/section will have the following components. Below are the proposed components of a unit. Each unit needs to have a link to the next and previous unit.
 
 #### Starting Section
 
-This section should contain the  brief summary about what we are going to learn in this video, or table of content so that the user can get the idea of what they will be learning.
+This section should contain the brief summary about what we are going to learn in this video, or table of content so that the user can get the idea of what they will be learning.
 
 #### Main Section
 
-This section will contain howto steps and all the content that was written in the starting section with brief explanation about the content and also a floating headline of the definition of words  that might seem new to the user.
+This section will contain howto steps and all the content that was written in the starting section with brief explanation about the content and also a floating headline of the definition of words that might seem new to the user.
 
 #### Ending Section
 
@@ -133,7 +133,7 @@ Link to wechat API so that user can directly go there and try it out
 - Manage contacts : To reorganise the page, add items to left fields and conversion of codes to 5 different programming languages.
 - Construct page for Heroku usage : To add content along with some visuals for better experience.
 
-#### Week  - 8
+#### Week - 8
 
 - Construct page for Heroku usage : To add content along with some visuals for better experience. Reorganise Pugin with wechaty page : To reorganise all the content and add some photos for making it interesting.
 

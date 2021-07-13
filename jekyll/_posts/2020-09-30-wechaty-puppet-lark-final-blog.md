@@ -2,7 +2,7 @@
 title: "基于开放 API 封装 Wechaty 接口下的飞书聊天机器人：期末"
 author: roxanne718
 categories: project
-image: /assets/2020/lark-puppet/wechaty-lark-final.png
+image: /assets/2020/lark-puppet/wechaty-lark-final.webp
 tags:
   - featured
   - summer-2020
@@ -11,12 +11,12 @@ tags:
   - ecosystem
 ---
 
-## 暑期2020
+## 暑期 2020
 
-“开源软件供应链点亮计划-暑期2020”（以下简称暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
-根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。
+“开源软件供应链点亮计划-暑期 2020”（以下简称暑期 2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
+根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期 2020”活动奖金和奖杯。
 官网：[https://isrc.iscas.ac.cn/summer2020](https://isrc.iscas.ac.cn/summer2020) 官方新闻：[http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html](http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html)
-本项目 [基于开放 API 封装 Wechaty 接口下的飞书聊天机器人] 系 暑期2020 支持的开源项目。
+本项目 [基于开放 API 封装 Wechaty 接口下的飞书聊天机器人] 系 暑期 2020 支持的开源项目。
 
 <!--more-->
 
@@ -35,13 +35,13 @@ tags:
 - 时间规划
   - 熟悉技术栈
     - 7.1-7.20
-    - 阅读Wechaty-puppet-plus源代码，学习TypeScript，熟悉飞书服务端API
+    - 阅读 Wechaty-puppet-plus 源代码，学习 TypeScript，熟悉飞书服务端 API
   - 与飞书建立连接
     - 7.20-7.31
-    - 通过Express与飞书建立连接，实现文本信息的收发（即ding-dong-bot机器人）
-  - 完成文本信息的收发puppet
+    - 通过 Express 与飞书建立连接，实现文本信息的收发（即 ding-dong-bot 机器人）
+  - 完成文本信息的收发 puppet
     - 8.1-8.5
-    - 将文本信息的收发结合到lark-puppet中
+    - 将文本信息的收发结合到 lark-puppet 中
     - 搭建项目基础框架
   - 完成其他基础消息类型的收发
     - 8.6-8.20
@@ -60,14 +60,13 @@ tags:
 
 - 项目成果：
   - 项目仓库位于: <https://github.com/Roxanne718/wechaty-puppet-lark>
-  - Live coding视频:{% include iframe.html src="https://youtu.be/eutz5EMlJCI" %}
+  - Live coding 视频:{% include iframe.html src="https://youtu.be/eutz5EMlJCI" %}
   - Demo 视频:{% include iframe.html src="https://youtu.be/_y5DktHdL9U" %}
-  
 - 遇到的问题及解决方案：
-  - 使用Ngrox进行内网穿透时，每次重启子域名都会发生变化，在老师的建议和指导下最终采用localtunnel解决了这一问题。
-  - 由于对TypeScript和HTTP请求的理解不太透彻，遇到了一些消息格式上的问题，通过查阅资料、学习其他同学的代码等解决了这些问题。
+  - 使用 Ngrox 进行内网穿透时，每次重启子域名都会发生变化，在老师的建议和指导下最终采用 localtunnel 解决了这一问题。
+  - 由于对 TypeScript 和 HTTP 请求的理解不太透彻，遇到了一些消息格式上的问题，通过查阅资料、学习其他同学的代码等解决了这些问题。
   - 目前虽然完成了基础功能，但是项目并不能达到发布水准，如果想要像在微信中使用 wechaty 那样开发飞书机器人，还需要完成以下事情：
-    - contact类、room类等的封装
+    - contact 类、room 类等的封装
     - 其他 payload 消息的封装与处理
     - 将 puppet 封装到 wechaty 中
   - 感谢 wechaty 社区对我的包容、帮助和鼓励。虽然只有短短三个月的时间，但在这个项目中收获了很多。在与导师的交流中学到了很多新的东西，也认识到了很多优秀的同伴。目前这个项目还没有达到我预期的水准，后续我还会继续跟进、完善，希望能完成一套完整的飞书机器人框架。

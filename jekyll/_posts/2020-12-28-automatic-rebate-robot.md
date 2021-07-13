@@ -4,10 +4,10 @@ author: jiangxiaotao1024
 categories: project
 tags:
   - ecommerce
-image: /assets/2020/rebate-robot/taokouling.png
+image: /assets/2020/rebate-robot/taokouling.webp
 ---
 
-## 用wechaty制作返利机器人
+## 用 wechaty 制作返利机器人
 
 ### 实现的功能：
 
@@ -17,27 +17,27 @@ image: /assets/2020/rebate-robot/taokouling.png
 
 ### 实现方式：
 
-前台使用ts版本的wechaty与用户进行交互。后台使用java版本大淘客sdk，数据库使用mysql。前台通过在ts导入jar包调用后台接口。
+前台使用 ts 版本的 wechaty 与用户进行交互。后台使用 java 版本大淘客 sdk，数据库使用 mysql。前台通过在 ts 导入 jar 包调用后台接口。
 
 ### 缺陷：
 
 1，无法识别好友推荐人，所以收到好友申请时需要手动往数据库添加代理信息
-2，无法识别交易订单有哪个用户发起，所以需要给每个用户添加一个pid
+2，无法识别交易订单有哪个用户发起，所以需要给每个用户添加一个 pid
 
 ### 好友模块：
 
-同意好友请求后设置该好友备注为wxid，方便后期查找
+同意好友请求后设置该好友备注为 wxid，方便后期查找
 
 ### 消息模块：
 
-对收到的文本信息进行解析返回对应的信息，如果调用api无法识别商品id则不返回返利链接;如果识别到商品id，但没有优惠信息返回无优惠;如果有优惠信息返回返利链接；
+对收到的文本信息进行解析返回对应的信息，如果调用 api 无法识别商品 id 则不返回返利链接;如果识别到商品 id，但没有优惠信息返回无优惠;如果有优惠信息返回返利链接；
 
-![help](/assets/2020/rebate-robot/help.png)
-![chaxun](/assets/2020/rebate-robot/chaxun.png)
-![tixian](/assets/2020/rebate-robot/tixian.png)
-![zhuanqian](/assets/2020/rebate-robot/zhuanqian.jpg)
-![taokouling](/assets/2020/rebate-robot/taokouling.png)
+![help](/assets/2020/rebate-robot/help.webp)
+![chaxun](/assets/2020/rebate-robot/chaxun.webp)
+![tixian](/assets/2020/rebate-robot/tixian.webp)
+![zhuanqian](/assets/2020/rebate-robot/zhuanqian.webp)
+![taokouling](/assets/2020/rebate-robot/taokouling.webp)
 
 ## 订单查询模块：
 
-登录后触发10s定时器，每隔10s查询这段时间的订单交易信息，解析出支付成功订单的优惠信息以及pid，根据pid查询对应的wxid，对该wxid用户发送预计佣金信息。对支付成功订单给该用户发送佣金信息，并按照比例，同时对上级，上上级发送返利信息。
+登录后触发 10s 定时器，每隔 10s 查询这段时间的订单交易信息，解析出支付成功订单的优惠信息以及 pid，根据 pid 查询对应的 wxid，对该 wxid 用户发送预计佣金信息。对支付成功订单给该用户发送佣金信息，并按照比例，同时对上级，上上级发送返利信息。

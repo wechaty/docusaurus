@@ -22,14 +22,14 @@ tags:
 
 ## 背景
 
-这个机器人主要作用于人力资源服务行业，辅助业务员工作的这么一个机器人。业务员每天的工作就是群发消息、收集报名以及处理58同城的邮件并筛选出合适的人，大量的重复工作，因此该机器人诞生了！！
-该机器人还具备一些AI娱乐功能，例如颜值检测、智能对话等等。主要来源鹅厂开放的AI接口。
+这个机器人主要作用于人力资源服务行业，辅助业务员工作的这么一个机器人。业务员每天的工作就是群发消息、收集报名以及处理 58 同城的邮件并筛选出合适的人，大量的重复工作，因此该机器人诞生了！！
+该机器人还具备一些 AI 娱乐功能，例如颜值检测、智能对话等等。主要来源鹅厂开放的 AI 接口。
 
 ## 功能列表
 
 - [x] 工作信息查询
 - [x] 定时群发
-- [X] 58同城邮件解析(解析成功后，会通知到管理员，此功能已完成，但机器人里未开启，请参考/robot/loginStatus.ts中的onLogin事件)
+- [x] 58 同城邮件解析(解析成功后，会通知到管理员，此功能已完成，但机器人里未开启，请参考/robot/loginStatus.ts 中的 onLogin 事件)
 - [ ] 报名功能
 - [ ] 智能对话
 - [ ] 颜值检测
@@ -48,8 +48,8 @@ git clone https://github.com/xajeyu/retarded-robot.git
 
 ## 使用说明
 
-- 该机器人基于ipad协议，请在config/robot.ts中配置自己的[token](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
-- 所有涉及到配置的文本全在config文件夹中
+- 该机器人基于 ipad 协议，请在 config/robot.ts 中配置自己的[token](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
+- 所有涉及到配置的文本全在 config 文件夹中
 - 工作信息存在数据库中
 - 机器人在运行时的配置，将由管理员私信机器人配置并存储在 redis 中
 
@@ -60,11 +60,11 @@ npm start or yarn start
 
 ## 功能截图
 
-![管理员配置端](/assets/2020/retarded-robot/private-menu.png)
-![管理员配置端-1](/assets/2020/retarded-robot/private-feat.png)
-![群里工作信息查询](/assets/2020/retarded-robot/room-feat.png)
+![管理员配置端](/assets/2020/retarded-robot/private-menu.webp)
+![管理员配置端-1](/assets/2020/retarded-robot/private-feat.webp)
+![群里工作信息查询](/assets/2020/retarded-robot/room-feat.webp)
 
 ## 致谢
 
-感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
-感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token
+感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人 SDK  
+感谢[句子互动](https://www.juzibot.com/)提供的 iPad 协议版 token

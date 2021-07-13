@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - social
-image: /assets/2020/your-wechat-bot/banner.png
+image: /assets/2020/your-wechat-bot/banner.webp
 ---
 
 > 作者: [peanut](https://github.com/isnl/)

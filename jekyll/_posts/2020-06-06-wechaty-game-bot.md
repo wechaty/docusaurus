@@ -10,7 +10,7 @@ tags:
   - sqlite
   - knex
   - featured
-image: /assets/2020/im-game-robot/qrcat.jpg 
+image: /assets/2020/im-game-robot/qrcat.webp
 ---
 
 > 作者: [osindex](https://github.com/osindex)
@@ -18,17 +18,17 @@ image: /assets/2020/im-game-robot/qrcat.jpg
 
 ## 前言
 
-几年前大家开始通过微信拜年，基于vbot折腾过机器人，想要给所有alias不为空的好友发送定制问候，在发送不到10人消息之后，自己微信的WEB端口被封。无奈尝下没有技术和被墙的泪水。
+几年前大家开始通过微信拜年，基于 vbot 折腾过机器人，想要给所有 alias 不为空的好友发送定制问候，在发送不到 10 人消息之后，自己微信的 WEB 端口被封。无奈尝下没有技术和被墙的泪水。
 
 作为码农，能自动化处理的事情，为什么一定得人工？
 
 ## 项目说明
 
-几天前无意中浏览到Wechaty，于是再次萌发了做个机器人的想法。这次做一个娱乐向的机器人~
+几天前无意中浏览到 Wechaty，于是再次萌发了做个机器人的想法。这次做一个娱乐向的机器人~
 
 ### 游戏特色
 
-本次开发了谁是卧底小游戏，房主无法设置游戏角色及人数，要求至少4人参加。每轮游戏结束后会重新分配各角色人数，增加随机趣味性。[扫最下方的二维码，发送`ding`自动加好友体验~]
+本次开发了谁是卧底小游戏，房主无法设置游戏角色及人数，要求至少 4 人参加。每轮游戏结束后会重新分配各角色人数，增加随机趣味性。[扫最下方的二维码，发送`ding`自动加好友体验~]
 
 ```log
 假定总人数为ALL
@@ -59,58 +59,62 @@ image: /assets/2020/im-game-robot/qrcat.jpg
  * @return {Array}             [平民、卧底、白板每种角色的具体人数]
  */
 Word.defRoleNum = function (playLength) {
-    let Civilian, Undercover = 0
-    Civilian = parseInt(playLength / 2) + 1 // 一半 + 1
-    Undercover = randomNum(1, playLength - Civilian) // 随机卧底数目
-    if (Undercover > 3) { // 如果卧底大于3个
-        const rand = randomNum(0, Undercover - 2)
-        Civilian += rand // 最少保留1个卧底 其它归到平民
-        Undercover -= rand
-    }
-    const Blank = playLength - Civilian - Undercover // 白板人数
-    return [Civilian, Undercover, Blank];
-}
+  let Civilian,
+    Undercover = 0;
+  Civilian = parseInt(playLength / 2) + 1; // 一半 + 1
+  Undercover = randomNum(1, playLength - Civilian); // 随机卧底数目
+  if (Undercover > 3) {
+    // 如果卧底大于3个
+    const rand = randomNum(0, Undercover - 2);
+    Civilian += rand; // 最少保留1个卧底 其它归到平民
+    Undercover -= rand;
+  }
+  const Blank = playLength - Civilian - Undercover; // 白板人数
+  return [Civilian, Undercover, Blank];
+};
 // 定义当前轮次每玩家对应角色
 Word.defTurn = function (playsList) {
-    const playLength = playsList.length
-    if (playLength < 4) {
-        return
+  const playLength = playsList.length;
+  if (playLength < 4) {
+    return;
+  }
+  const roles = this.defRoleNum(playLength);
+  const roleList = deepClone(roles);
+  const randomWord = randomNum(1)
+    ? this.randomWord()
+    : this.randomWord().reverse();
+  // 难得再转化 直接汉字
+  let role = "平民";
+  let word = "";
+  let newPlaysList = [];
+  for (var i = 0; i < playLength; i++) {
+    var index = randomNum(playsList.length - 1); //随机下标
+    if (roles[2]) {
+      role = "白板";
+      word = "";
+      roles[2]--;
+    } else if (roles[1]) {
+      role = "卧底";
+      word = randomWord[1];
+      roles[1]--;
+    } else {
+      role = "平民";
+      word = randomWord[0];
     }
-    const roles = this.defRoleNum(playLength)
-    const roleList = deepClone(roles)
-    const randomWord = randomNum(1) ? this.randomWord() : this.randomWord().reverse()
-    // 难得再转化 直接汉字
-    let role = '平民';
-    let word = '';
-    let newPlaysList = []
-    for (var i = 0; i < playLength; i++) {
-        var index = randomNum(playsList.length - 1); //随机下标
-        if (roles[2]) {
-            role = '白板';
-            word = '';
-            roles[2]--;
-        } else if (roles[1]) {
-            role = '卧底';
-            word = randomWord[1];
-            roles[1]--;
-        } else {
-            role = '平民';
-            word = randomWord[0];
-        }
-        playsList[index].role = role
-        playsList[index].word = word
-        // 顺便按顺序排号
-        newPlaysList.push(playsList[index])
-        playsList.splice(index, 1); //    将随机出的元素在arr中删除
-        // console.log(roles)
-    }
-    // 排序
-    newPlaysList.sort((a, b) => {
-        return a.self_id - b.self_id
-    })
-    const first = randomNum(1, newPlaysList.length)
-    return { roleList, playsList: newPlaysList, first }
-}
+    playsList[index].role = role;
+    playsList[index].word = word;
+    // 顺便按顺序排号
+    newPlaysList.push(playsList[index]);
+    playsList.splice(index, 1); //    将随机出的元素在arr中删除
+    // console.log(roles)
+  }
+  // 排序
+  newPlaysList.sort((a, b) => {
+    return a.self_id - b.self_id;
+  });
+  const first = randomNum(1, newPlaysList.length);
+  return { roleList, playsList: newPlaysList, first };
+};
 ```
 
 ## 项目使用
@@ -145,7 +149,7 @@ Word.defTurn = function (playsList) {
     注册成功后，申请以下接口：
    - [每日英语一句话](https://www.tianapi.com/apiview/62)
    - [神回复](https://www.tianapi.com/apiview/39)
-3. 依赖sqlite3 和 redis, redis应需要单独安装
+3. 依赖 sqlite3 和 redis, redis 应需要单独安装
 
 然后就可以运行了
 
@@ -172,7 +176,7 @@ npm start
 
 ### 谁是卧底小游戏
 
-![Image text](/assets/2020/im-game-robot/a.png)
-![Image text](/assets/2020/im-game-robot/b.png)
-![Image text](/assets/2020/im-game-robot/c.png)
-![Image text](/assets/2020/im-game-robot/qrbread.jpg)
+![Image text](/assets/2020/im-game-robot/a.webp)
+![Image text](/assets/2020/im-game-robot/b.webp)
+![Image text](/assets/2020/im-game-robot/c.webp)
+![Image text](/assets/2020/im-game-robot/qrbread.webp)

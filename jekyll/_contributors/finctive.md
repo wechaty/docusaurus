@@ -1,10 +1,10 @@
 ---
 name: FINCTIVE
 site: https://github.com/fintcive
-avatar: /assets/contributors/finctive/avatar.png
-bio: 
-email: 
-twitter: 
+avatar: /assets/contributors/finctive/avatar.webp
+bio:
+email:
+twitter:
 ---
 
 ## Contact me

@@ -6,7 +6,7 @@ tags:
   - introduction
   - volunteering
   - gsod
-image: /assets/2021/05-rohitesh-applicant-for-volunteering-gsod/rohitesh.jpeg
+image: /assets/2021/05-rohitesh-applicant-for-volunteering-gsod/rohitesh.webp
 ---
 
 ## GSoD’21 Project Proposal for Volunteering
@@ -48,20 +48,20 @@ I am probably the intended user as I know basic coding and have never used Wecha
 
 ### Roles & Responsibilities
 
-* Read the existing documentation
-* Proofread the documentation that will be delivered by tech writers
-* Give suggestions and feedback on the delivered documentation
-* Make chatbots and will point out where the documentation is lacking
-* Suggest what else can be done to improve the learning curve of users based on my own learning curve
-* Organize Zoom meeting every week
-  * Prepare the agenda before meeting
-  * Make sure everyone get synced
-  * Make sure meeting happens every week and everyone is attending it
-* Publish a meeting minutes blog after each meeting
-  * Publish meetings on YouTube
-  * Send blog post url to our mailing list
-* Write and publish monthly report for Wechaty GSoD'21
-* Draft case study and final project evaluation for the Wechaty organization
+- Read the existing documentation
+- Proofread the documentation that will be delivered by tech writers
+- Give suggestions and feedback on the delivered documentation
+- Make chatbots and will point out where the documentation is lacking
+- Suggest what else can be done to improve the learning curve of users based on my own learning curve
+- Organize Zoom meeting every week
+  - Prepare the agenda before meeting
+  - Make sure everyone get synced
+  - Make sure meeting happens every week and everyone is attending it
+- Publish a meeting minutes blog after each meeting
+  - Publish meetings on YouTube
+  - Send blog post url to our mailing list
+- Write and publish monthly report for Wechaty GSoD'21
+- Draft case study and final project evaluation for the Wechaty organization
 
 ### Communication
 

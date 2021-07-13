@@ -6,7 +6,7 @@ tags:
   - puppet-service
   - puppet-provider
   - news
-image: /assets/2021/01-wechaty-puppet-service/5-puppets.jpg
+image: /assets/2021/01-wechaty-puppet-service/5-puppets.webp
 ---
 
 Wechaty is an SDK for chatbot makers. It uses [Robotic Progress Automation (RPA)](https://en.wikipedia.org/wiki/Robotic_process_automation) technology to help developers to be more productive for building [Conversational User Interface (CUI)](https://en.wikipedia.org/wiki/Conversational_user_interface), which we call it a [Chatbot](https://en.wikipedia.org/wiki/Chatbot).
@@ -28,16 +28,16 @@ When we published Wechaty in May 2016, we were using WebDriver/Puppeteer([wechat
 Beyonds the Web Protocol, the community have tried many technologies in the past years, such as:
 
 1. Windows Hook
-    1. [WxWork](https://github.com/juzibot/wxwork-tester)
-    1. [Donut](https://github.com/juzibot/donut-tester)
+   1. [WxWork](https://github.com/juzibot/wxwork-tester)
+   1. [Donut](https://github.com/juzibot/donut-tester)
 1. Pad Protocol
-    1. [PadLocal](https://github.com/padlocal/wechaty-puppet-padlocal)
-    1. [PadChat (deprecated)](https://www.npmjs.com/package/wechaty-puppet-padchat)
-    1. [PadPro (deprecated)](https://www.npmjs.com/package/wechaty-puppet-padpro)
-    1. [PadPlus (deprecated)](https://github.com/wechaty/wechaty-puppet-padplus)
+   1. [PadLocal](https://github.com/padlocal/wechaty-puppet-padlocal)
+   1. [PadChat (deprecated)](https://www.npmjs.com/package/wechaty-puppet-padchat)
+   1. [PadPro (deprecated)](https://www.npmjs.com/package/wechaty-puppet-padpro)
+   1. [PadPlus (deprecated)](https://github.com/wechaty/wechaty-puppet-padplus)
 1. Mac Hook
-    1. [macOS (under construction)](https://github.com/wechaty/wechaty-puppet-macOS)
-    1. [MacPro (deprecated)](https://github.com/juzibot/wechaty-puppet-macpro)
+   1. [macOS (under construction)](https://github.com/wechaty/wechaty-puppet-macOS)
+   1. [MacPro (deprecated)](https://github.com/juzibot/wechaty-puppet-macpro)
 1. App Hook: [IosBird (deprecated)](https://github.com/juzibot/wechaty-puppet-iosbird)
 
 To learn about all Wechaty Puppet Providers, you can go to our [Wechaty Puppet Directory](https://github.com/wechaty/wechaty-puppet/wiki/Directory)
@@ -50,13 +50,19 @@ We have the following six lines code, which is the world's shortest chatbot:
 
 ```ts
 // bot.ts
-import { Wechaty } from 'wechaty'
+import { Wechaty } from "wechaty";
 
 Wechaty.instance() // Global Instance
-.on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://wechaty.js.org/qrcode/${encodeURIComponent(qrcode)}`))
-.on('login',            user => console.log(`User ${user} logged in`))
-.on('message',       message => console.log(`Message: ${message}`))
-.start()
+  .on("scan", (qrcode, status) =>
+    console.log(
+      `Scan QR Code to login: ${status}\nhttps://wechaty.js.org/qrcode/${encodeURIComponent(
+        qrcode
+      )}`
+    )
+  )
+  .on("login", (user) => console.log(`User ${user} logged in`))
+  .on("message", (message) => console.log(`Message: ${message}`))
+  .start();
 ```
 
 The above code will use the default Wechaty Puppet Provider (which is [wechaty-puppet-wechat](https://github.com/wechaty/wechaty-puppet-wechat)) because we have not specified manually.
@@ -246,7 +252,7 @@ Then you can confirm your Wechaty Puppet Service is online by visiting:
 curl https://api.chatie.io/v0/hosties/${WECHATY_TOKEN}
 ```
 
-> Replace ${WECHATY\_TOKEN} to your real token in the above configuration
+> Replace ${WECHATY_TOKEN} to your real token in the above configuration
 
 ✅ If you get an HTTP/200 response with a JSON object body that includes your `ip` and `port`, then you are all set.  
 ❌ If you get an HTTP/404 response, your Puppet Service Gateway has some issues and needs to be troubleshooting.
@@ -294,13 +300,13 @@ Learn more about all the Wechaty Puppet Services at our official website: <https
 
 In this post, we clarified the following core concepts of Wechaty:
 
-1. __Wechaty Puppet__
-1. __Wechaty Puppet Abstract__
-1. __Wechaty Puppet Provider__
-1. __Wechaty gRPC__
-1. __Wechaty Puppet Service__
-1. __Wechaty Puppet Service Token__
-1. __Wechaty Puppet Service Provider__
+1. **Wechaty Puppet**
+1. **Wechaty Puppet Abstract**
+1. **Wechaty Puppet Provider**
+1. **Wechaty gRPC**
+1. **Wechaty Puppet Service**
+1. **Wechaty Puppet Service Token**
+1. **Wechaty Puppet Service Provider**
 
 I hope it can help our developer to understand Wechaty ecosystem better.
 

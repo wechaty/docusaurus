@@ -5,14 +5,14 @@ categories: tutorial
 tags:
   - code
   - featured
-image: /assets/2017/wildcat-rails-db-initial-structure.png
+image: /assets/2017/wildcat-rails-db-initial-structure.webp
 ---
 
 ![architecture2][wildcat-rails-architecture-2]
 
 Author: [@imWildCat](https://github.com/imWildCat), University of Portsmouth
 
-> [Ruby on Rails](http://rubyonrails.org) is a extremely powerful web framework with a long history, which can simplify our development process, making it more enjoyable. As it known to all, many well-known sites are built on this framework, such as [GitHub](https://github.com), [Unsplash](https://unsplash.com), [Airbnb](http://airbnb.com), [Dribbble](https://dribbble.com) and [Product Hunt](https://www.producthunt.com)[^1]. For most developers without so much experience about Rails, setting up a development environment for this stack is not a easy task. This blog would introduce how to interact Wechaty with Rails with an example of a group message logger, trying to *Keep it simple, stupid* (the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle)).
+> [Ruby on Rails](http://rubyonrails.org) is a extremely powerful web framework with a long history, which can simplify our development process, making it more enjoyable. As it known to all, many well-known sites are built on this framework, such as [GitHub](https://github.com), [Unsplash](https://unsplash.com), [Airbnb](http://airbnb.com), [Dribbble](https://dribbble.com) and [Product Hunt](https://www.producthunt.com)[^1]. For most developers without so much experience about Rails, setting up a development environment for this stack is not a easy task. This blog would introduce how to interact Wechaty with Rails with an example of a group message logger, trying to _Keep it simple, stupid_ (the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle)).
 > Note: This blog will mainly illustrate the tutorial on macOS. The situations can be very different on other platforms such as Windows and Linux. Due to the limitations of this author's time, these topics cannot be covered. Moreover, the final version of code has been published on GitHub: [https://github.com/imWildCat/blog-post-interact-wechaty-with-rails-from-scratch](https://github.com/imWildCat/blog-post-interact-wechaty-with-rails-from-scratch)
 
 ## Prerequisites
@@ -62,7 +62,7 @@ PostgeSQL is a database, usually used for Rails apps. On macOS, it is recommende
 ➜ brew cask install postgres
 ```
 
-However, it doesn't matter if you use MySQL or even SQLite. This tutorial offers this flexibility to use any database supported by *ActiveRecord* (the ORM framework of Rails).
+However, it doesn't matter if you use MySQL or even SQLite. This tutorial offers this flexibility to use any database supported by _ActiveRecord_ (the ORM framework of Rails).
 
 ## Get started for Wechaty
 
@@ -90,14 +90,17 @@ npm i --save wechaty chromedriver request
 Then create a new file named `bot.js` with this code base:
 
 ```javascript
-const { Wechaty } = require('wechaty');
+const { Wechaty } = require("wechaty");
 
 function startBot() {
-    const bot = Wechaty.instance({ profile: 'chatieme' });
-    bot.on('scan', (url, code) => console.log(`Scan QrCode to login: ${code}\n${url}`))
-        .on('login', user => console.log(`User ${user} logined`))
-        .on('message', message => console.log(`Message: ${message}`))
-        .init();
+  const bot = Wechaty.instance({ profile: "chatieme" });
+  bot
+    .on("scan", (url, code) =>
+      console.log(`Scan QrCode to login: ${code}\n${url}`)
+    )
+    .on("login", (user) => console.log(`User ${user} logined`))
+    .on("message", (message) => console.log(`Message: ${message}`))
+    .init();
 }
 
 startBot();
@@ -106,32 +109,35 @@ startBot();
 Since we'd like to send the message to Rails app, we have to build a JSON object:
 
 ```javascript
-const { Wechaty } = require('wechaty');
+const { Wechaty } = require("wechaty");
 
 function startBot() {
-    const bot = Wechaty.instance({ profile: 'chatieme' });
-    bot.on('scan', (url, code) => console.log(`Scan QrCode to login: ${code}\n${url}`))
-        .on('login', user => console.log(`User ${user} logined`))
-        .on('message', onMessage)
-        .init();
+  const bot = Wechaty.instance({ profile: "chatieme" });
+  bot
+    .on("scan", (url, code) =>
+      console.log(`Scan QrCode to login: ${code}\n${url}`)
+    )
+    .on("login", (user) => console.log(`User ${user} logined`))
+    .on("message", onMessage)
+    .init();
 }
 
 function onMessage(message) {
-    const room = message.room();
-    const sender = message.from();
-    const receiver = message.to();
-    const content = message.content();
+  const room = message.room();
+  const sender = message.from();
+  const receiver = message.to();
+  const content = message.content();
 
-    if (!room || !receiver) {
-        // onPersonalMessage(message);
-        return;
-    }
+  if (!room || !receiver) {
+    // onPersonalMessage(message);
+    return;
+  }
 
-    const topic = room.topic();
-    const from_name = sender.name();
+  const topic = room.topic();
+  const from_name = sender.name();
 
-    const data = {topic, from_name, content};
-    console.log(data);
+  const data = { topic, from_name, content };
+  console.log(data);
 }
 
 startBot();
@@ -250,11 +256,11 @@ At present, the code base has been set up and the directories would look like:
 
 ## Let Wechaty communicate with Rails
 
-Basicially, Rails is a web framework so that the most usual way for the *communication* is by HTTP (web). We hope there can be an *architecture* like this:
+Basicially, Rails is a web framework so that the most usual way for the _communication_ is by HTTP (web). We hope there can be an _architecture_ like this:
 
 ![architecture1][wildcat-rails-architecture-1]
 
-Both *Rails* and *Wechaty* can be regarded as micro services, which can also be dockerized[^4] in the coming blogs. The most consierable advantage of this kind of *architecture* is that more than one Wechaty instances can share a single Rails app:
+Both _Rails_ and _Wechaty_ can be regarded as micro services, which can also be dockerized[^4] in the coming blogs. The most consierable advantage of this kind of _architecture_ is that more than one Wechaty instances can share a single Rails app:
 
 ![architecture2][wildcat-rails-architecture-2]
 
@@ -262,7 +268,7 @@ So, let's do it.
 
 ### Set up API of Rails
 
-We need to create a controller to handle the HTTP requests about creating new *Message* record:
+We need to create a controller to handle the HTTP requests about creating new _Message_ record:
 
 ```bash
 ➜ rails generate controller Messages
@@ -340,43 +346,48 @@ We can test the API provided by Rails app using `curl`:
 We could take advantages of the library [request](https://github.com/request/request), posting the data to Rails:
 
 ```javascript
-const { Wechaty } = require('wechaty');
-const request = require('request');
+const { Wechaty } = require("wechaty");
+const request = require("request");
 
 function startBot() {
-    const bot = Wechaty.instance({ profile: 'chatieme' });
-    bot.on('scan', (url, code) => console.log(`Scan QrCode to login: ${code}\n${url}`))
-        .on('login', user => console.log(`User ${user} logined`))
-        .on('message', onMessage)
-        .init();
+  const bot = Wechaty.instance({ profile: "chatieme" });
+  bot
+    .on("scan", (url, code) =>
+      console.log(`Scan QrCode to login: ${code}\n${url}`)
+    )
+    .on("login", (user) => console.log(`User ${user} logined`))
+    .on("message", onMessage)
+    .init();
 }
 
 function onMessage(message) {
-    const room = message.room();
-    const sender = message.from();
-    const receiver = message.to();
-    const content = message.content();
+  const room = message.room();
+  const sender = message.from();
+  const receiver = message.to();
+  const content = message.content();
 
-    if (!room || !receiver) {
-        // onPersonalMessage(message);
-        return;
-    }
+  if (!room || !receiver) {
+    // onPersonalMessage(message);
+    return;
+  }
 
-    const topic = room.topic();
-    const from_name = sender.name();
+  const topic = room.topic();
+  const from_name = sender.name();
 
-    const data = { topic, from_name, content };
-    console.log(data);
+  const data = { topic, from_name, content };
+  console.log(data);
 
-    // New code starts
-    request.post({
-        url: 'http://localhost:3000/messages',
-        form: data
+  // New code starts
+  request.post(
+    {
+      url: "http://localhost:3000/messages",
+      form: data,
     },
-        function (err, httpResponse, body) {
-           console.log(body);
-        });
-    // New code ends
+    function (err, httpResponse, body) {
+      console.log(body);
+    }
+  );
+  // New code ends
 }
 
 startBot();
@@ -424,9 +435,9 @@ Thanks for your reading. Feel free to drop any questions.
 [^1]: Rails, StackShare: [https://stackshare.io/rails](https://stackshare.io/rails)
 [^2]: The Rails Command Line — Ruby on Rails Guides: [http://guides.rubyonrails.org/command_line.html](http://guides.rubyonrails.org/command_line.html)
 [^3]: Read–eval–print loop - Wikipedia: [https://en.wikipedia.org/wiki/Read–eval–print_loop](https://en.wikipedia.org/wiki/Read–eval–print_loop)
-[^4]: Docker (software) - Wikipedia: [https://en.wikipedia.org/wiki/Docker_(software)](https://en.wikipedia.org/wiki/Docker_(software))
+[^4]: Docker (software) - Wikipedia: [https://en.wikipedia.org/wiki/Docker\_(software)](<https://en.wikipedia.org/wiki/Docker_(software)>)
 
-[wildcat-rails-db-initial-structure]: /assets/2017/wildcat-rails-db-initial-structure.png
-[wildcat-rails-architecture-1]: /assets/2017/wildcat-rails-architecture-1.png
-[wildcat-rails-architecture-2]: /assets/2017/wildcat-rails-architecture-2.png
-[wildcat-rails-admin-panel]: /assets/2017/wildcat-rails-admin-panel.png
+[wildcat-rails-db-initial-structure]: /assets/2017/wildcat-rails-db-initial-structure.webp
+[wildcat-rails-architecture-1]: /assets/2017/wildcat-rails-architecture-1.webp
+[wildcat-rails-architecture-2]: /assets/2017/wildcat-rails-architecture-2.webp
+[wildcat-rails-admin-panel]: /assets/2017/wildcat-rails-admin-panel.webp

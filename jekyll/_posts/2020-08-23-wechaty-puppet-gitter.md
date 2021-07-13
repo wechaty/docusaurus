@@ -1,7 +1,7 @@
 ---
 title: Gitter.im is supported by Wechaty now!
 author: huan
-image: /assets/2020/08-gitter/wechaty-gitter.png
+image: /assets/2020/08-gitter/wechaty-gitter.webp
 categories: announcement
 tags:
   - news
@@ -12,7 +12,7 @@ tags:
 
 Wechaty is a RPA SDK for Chatbot Makers. It mainly works with WeChat accounts (both [individual](https://github.com/wechaty/wechaty-puppet-puppeteer) and [official](https://github.com/wechaty/wechaty-puppet-official-account)), and now we have published Gitter support for wechaty, which can make us easy to build a chatbot on Gitter.im, and sync the room between the Gitter.im and WeChat!
 
-![Gitter + Wechaty](/assets/2020/08-gitter/gitter.png)
+![Gitter + Wechaty](/assets/2020/08-gitter/gitter.webp)
 
 ## Wechaty + Gitter.im
 
@@ -26,24 +26,24 @@ Here's the example code that shows out how to use Wechaty with Gitter room: it w
 
 ```ts
 // Of course you need `npm install wechaty wechaty-puppet-gitter` before run this little code snip!
-import { Wechaty } from 'wechaty'
-import { PuppetGitter } from 'wechaty-puppet-gitter'
+import { Wechaty } from "wechaty";
+import { PuppetGitter } from "wechaty-puppet-gitter";
 
-async function main () {
-  const puppet = new PuppetGitter('your_gitter_token')
-  const bot = new Wechaty({ puppet })
-  await bot.start()
+async function main() {
+  const puppet = new PuppetGitter("your_gitter_token");
+  const bot = new Wechaty({ puppet });
+  await bot.start();
 
-  const roomList = await bot.Room.findAll()
+  const roomList = await bot.Room.findAll();
   for (const room of roomList) {
-    console.info('room found:', await room.topic())
+    console.info("room found:", await room.topic());
     // await room.say('Hello from Wechaty!')
   }
 
-  await bot.stop()
+  await bot.stop();
 }
 
-main().catch(console.error)
+main().catch(console.error);
 ```
 
 That's easy to use. To learn more about how to use Wechaty API, you can visit our docs website at <https://wechaty.js.org/docs>
@@ -105,7 +105,7 @@ async function main () {
   await wechaty.start()
   const room = wechaty.Room.find({ topic: 'gitter/developers' })
   if (room) {
-    const image = FileBox.fromUrl('https://raw.githubusercontent.com/wechaty/wechaty-puppet-gitter/master/docs/images/wechaty-puppet-gitter.png')
+    const image = FileBox.fromUrl('https://raw.githubusercontent.com/wechaty/wechaty-puppet-gitter/master/docs/images/wechaty-puppet-gitter.webp')
     await room.say(image)
   }
 }

@@ -6,12 +6,12 @@ tags:
   - checkin
   - social
   - game
-image: /assets/2020/wechaty-check-in-robot/notice.png
+image: /assets/2020/wechaty-check-in-robot/notice.webp
 ---
 
 > 作者: [yeojongki](https://github.com/yeojongki) 前端开发工程师
 
-[![wechaty-check-in-robot](/assets/2020/wechaty-check-in-robot/notice.png)](https://github.com/yeojongki/wechaty-check-in-robot)
+[![wechaty-check-in-robot](/assets/2020/wechaty-check-in-robot/notice.webp)](https://github.com/yeojongki/wechaty-check-in-robot)
 
 <!-- more -->
 
@@ -23,7 +23,7 @@ image: /assets/2020/wechaty-check-in-robot/notice.png
 
 - **用户需要每天将打卡及学习内容或者学习图片发送到群聊中**
 - **每日凌晨 `00:00:00` 结算今天未打卡人数**
-  - 未打卡的人机器人会在群聊中 `@`  TA，提醒今日未打卡
+  - 未打卡的人机器人会在群聊中 `@` TA，提醒今日未打卡
 - **每日凌晨 `00:00:00` 结算三天内都没打卡的人数**
   - 会发送三天内未打卡的人到管理员的微信上，管理员再进行移除
     - 这里可以做成自动移除该用户
@@ -41,9 +41,9 @@ image: /assets/2020/wechaty-check-in-robot/notice.png
   - [ ] 用户补卡
   - [ ] 打卡排行榜
 - 管理员功能
-  - [x] 查看当天未签到用户 (当天0点前)
+  - [x] 查看当天未签到用户 (当天 0 点前)
   - [x] 查看三天未签到用户
-  - [x] 更新群聊用户信息  (用户可能改名，避免 @ 时名字错误，可以做成定时更新)
+  - [x] 更新群聊用户信息 (用户可能改名，避免 @ 时名字错误，可以做成定时更新)
   - [x] 获取历史上的今天
   - [ ] 修正某个用户的打卡时间
   - [ ] 设置管理员 - 目前手动在数据库中设置

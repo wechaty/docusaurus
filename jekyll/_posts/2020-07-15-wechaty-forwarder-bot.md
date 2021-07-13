@@ -6,8 +6,9 @@ tags:
   - padplus
   - productivity
   - social
-image: /assets/2020/wechaty-forwardbot/header.png
+image: /assets/2020/wechaty-forwardbot/header.webp
 ---
+
 > Author: [xiaok](https://github.com/22528850)
 > Code: [Github](https://github.com/22528850/wechaty-forwardbot)
 
@@ -19,8 +20,8 @@ image: /assets/2020/wechaty-forwardbot/header.png
 
 ## 功能
 
-判断n个群里面是否存在xxx关键词  
-是则转发至自己的n个群
+判断 n 个群里面是否存在 xxx 关键词  
+是则转发至自己的 n 个群
 
 ## 逻辑
 
@@ -30,8 +31,8 @@ image: /assets/2020/wechaty-forwardbot/header.png
 
 ## 依赖
 
-- wechaty：wechaty核心库
-- wechaty-puppet-padplus：wechaty iPad协议
+- wechaty：wechaty 核心库
+- wechaty-puppet-padplus：wechaty iPad 协议
 - qrcode-terminal: 终端输出二维码
 
 ## 运行
@@ -88,5 +89,5 @@ node index.js
 
 ## 致谢
 
-感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
-感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token
+感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人 SDK  
+感谢[句子互动](https://www.juzibot.com/)提供的 iPad 协议版 token

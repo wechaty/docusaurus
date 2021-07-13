@@ -7,8 +7,9 @@ tags:
   - project
   - stock
   - finance
-image: /assets/2020/wechaty-stock-bot/header.jpg
+image: /assets/2020/wechaty-stock-bot/header.webp
 ---
+
 > Author: [wengcan](https://github.com/wengcan)
 > Code: [stock-bot](https://github.com/wengcan/stock-bot)
 
@@ -29,7 +30,7 @@ image: /assets/2020/wechaty-stock-bot/header.jpg
 
 ⭐ 监听群聊内容，从群聊内容中分析并提取所包含的股票名称，回复相关股票实时行情。
 
-⭐ 大盘指数查询，可查询上证指数，深圳成指，创业板指，和科创50指数。
+⭐ 大盘指数查询，可查询上证指数，深圳成指，创业板指，和科创 50 指数。
 
 ⭐ 龙虎榜查询，可查询当日龙虎榜或者查询指定日期龙虎榜。
 
@@ -53,7 +54,7 @@ cd stock-bot
 npm install
 ```
 
-参考config.sample.js 创建config.js 文件
+参考 config.sample.js 创建 config.js 文件
 
 ```shell
 export const token = "puppet_padplus_xxxx";
@@ -74,10 +75,10 @@ npm start
 
 ### 效果图
 
-- ![截图](/assets/2020/wechaty-stock-bot/pic01.png)
-- ![截图](/assets/2020/wechaty-stock-bot/pic02.png)
+- ![截图](/assets/2020/wechaty-stock-bot/pic01.webp)
+- ![截图](/assets/2020/wechaty-stock-bot/pic02.webp)
 
 ### 致谢
 
-🙏感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
-🙏感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token
+🙏 感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人 SDK  
+🙏 感谢[句子互动](https://www.juzibot.com/)提供的 iPad 协议版 token

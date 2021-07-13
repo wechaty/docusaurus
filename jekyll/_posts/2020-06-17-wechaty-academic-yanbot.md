@@ -7,7 +7,7 @@ tags:
   - academic
   - padplus
   - healthcare
-image: /assets/2020/yanbot/yanbot.jpg 
+image: /assets/2020/yanbot/yanbot.webp
 ---
 
 > Author: [Chaogan-Yan](https://github.com/Chaogan-Yan) Professor, Institute of Psychology, Chinese Academy of Sciences
@@ -15,11 +15,11 @@ image: /assets/2020/yanbot/yanbot.jpg
 
 ## 备注
 
-本人是中国科学院心理研究所研究员，博士生导师，心理所抑郁症大数据国际研究中心主任，心理所磁共振成像研究中心副主任，入选爱思唯尔 2019年中国高被引学者（神经科学）。本人对静息态功能磁共振成像（R-fMRI）的计算方法进行了规范化，建立了被引2000余次的脑成像流水线式计算平台DPARSF，并建立了脑成像分析与共享平台DPABI和基于大脑皮层的脑成像数据分析软件DPABISurf。 DPABI/DPABISurf/DPARSF系列软件拥有众多用户，因此需要构建一个机器人助理来回答用户的相关问题。另外，机器人助理要辅助管理相关的多个微信讨论群The R-fMRI Journal Club，并对用户对领域内文献的讨论和相关脑影像技术问题进行桥接。本项目是wechaty在学术场景应用的一个示范。
+本人是中国科学院心理研究所研究员，博士生导师，心理所抑郁症大数据国际研究中心主任，心理所磁共振成像研究中心副主任，入选爱思唯尔 2019 年中国高被引学者（神经科学）。本人对静息态功能磁共振成像（R-fMRI）的计算方法进行了规范化，建立了被引 2000 余次的脑成像流水线式计算平台 DPARSF，并建立了脑成像分析与共享平台 DPABI 和基于大脑皮层的脑成像数据分析软件 DPABISurf。 DPABI/DPABISurf/DPARSF 系列软件拥有众多用户，因此需要构建一个机器人助理来回答用户的相关问题。另外，机器人助理要辅助管理相关的多个微信讨论群 The R-fMRI Journal Club，并对用户对领域内文献的讨论和相关脑影像技术问题进行桥接。本项目是 wechaty 在学术场景应用的一个示范。
 
 YanBot is an academic chatbot application to help Dr. Chao-Gan Yan for answering DPABI/DPABISurf/DPARSF questions and managing The R-fMRI Journal Club wechat groups.
 
-- YanBot could answer questions including DPABI软件下载、DPARSF软件下载、DPABI软件安装、DPARSF软件安装、DPABISurf软件安装、DPABI编译版软件安装、Demo演示数据、在线网络课程、数据处理报错、常问问题、抑郁症大数据联盟数据下载、加入抑郁症大数据联盟。
+- YanBot could answer questions including DPABI 软件下载、DPARSF 软件下载、DPABI 软件安装、DPARSF 软件安装、DPABISurf 软件安装、DPABI 编译版软件安装、Demo 演示数据、在线网络课程、数据处理报错、常问问题、抑郁症大数据联盟数据下载、加入抑郁症大数据联盟。
 
 - YanBot is also a manager for The R-fMRI Journal Club groups, where people are discussing R-fMRI related papers and DPABI/DPABISurf/DPARSF questions. YanBot will invite new friend to The R-fMRI Journal Club groups automatically.
 

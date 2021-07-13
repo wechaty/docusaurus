@@ -5,7 +5,7 @@ categories: tutorial
 tags:
   - golang
   - padplus
-image: /assets/2021/04-wechat-group-chat-interactive-robot/header.png
+image: /assets/2021/04-wechat-group-chat-interactive-robot/header.webp
 ---
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://wechaty.js.org)
@@ -16,7 +16,7 @@ image: /assets/2021/04-wechat-group-chat-interactive-robot/header.png
 
 ## 背景
 
-公司小程序的相关通知需要及时、定时推送到相关的群，由于微信web网页登录基本全部被封建，所有在查阅了大量微信机器人的资料后，选择了wechaty进行机器人开发，
+公司小程序的相关通知需要及时、定时推送到相关的群，由于微信 web 网页登录基本全部被封建，所有在查阅了大量微信机器人的资料后，选择了 wechaty 进行机器人开发，
 以此达到用户可以通过指令进行绑定微信群、查询活动、活动推送等功能，借此提高用户粘性，提高活动的达成率。
 
 ## 功能
@@ -27,9 +27,9 @@ image: /assets/2021/04-wechat-group-chat-interactive-robot/header.png
 
 Go 1.14.6 darwin/amd64、Mysql 5.7、Redis 6.0
 
-## 购买Token
+## 购买 Token
 
-[chatTools平台]购买Token(175.27.139.176/#/order)
+[chatTools 平台]购买 Token(175.27.139.176/#/order)
 
 ## 下载代码
 
@@ -45,7 +45,7 @@ export REDIS_PORT = 6379
 export WEROBOT_LOGFILE = /tmp/robot.log
 ```
 
-## 编译可执行文件werobotctl和werobotd
+## 编译可执行文件 werobotctl 和 werobotd
 
 ```sh
 go build -o ./bin/werobotctl
@@ -57,14 +57,14 @@ cd ../bin
 
 ## 运行效果
 
-![启动效果图](/assets/2021/04-wechat-group-chat-interactive-robot/start.png)
-![指令效果图](/assets/2021/04-wechat-group-chat-interactive-robot/bind.png)
+![启动效果图](/assets/2021/04-wechat-group-chat-interactive-robot/start.webp)
+![指令效果图](/assets/2021/04-wechat-group-chat-interactive-robot/bind.webp)
 
-## 其他Tips
+## 其他 Tips
 
-需要配置环境变量，需要替换指令功能的API地址
+需要配置环境变量，需要替换指令功能的 API 地址
 
 ## 感谢
 
-感谢[Wechaty](https://wechaty.js.org/)团队提供微信机器人SDK，让开发者可以专注于业务代码。
-感谢[句子互动](https://www.juzibot.com)提供的pad协议版token。
+感谢[Wechaty](https://wechaty.js.org/)团队提供微信机器人 SDK，让开发者可以专注于业务代码。
+感谢[句子互动](https://www.juzibot.com)提供的 pad 协议版 token。

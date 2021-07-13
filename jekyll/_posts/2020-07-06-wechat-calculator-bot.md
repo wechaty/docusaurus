@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - productivity
-image: /assets/2020/wechat-calc/header.jpg
+image: /assets/2020/wechat-calc/header.webp
 ---
 
 > 作者: [Ray](https://github.com/leiroc/)
@@ -16,7 +16,7 @@ image: /assets/2020/wechat-calc/header.jpg
 
 ## 背景
 
-很早开始就在关注微信机器人，自己是做前端开发的，对nodejs有不错的了解。想自己做一个微信机器人的计算器，因为每次需要用计算器就很不方便，手机里的app我都放在很深的目录，不好找，放在首页又太浪费了。所以就想到用wechaty来实现个人号微信计算器机器人，实现常规的加减乘除功能；
+很早开始就在关注微信机器人，自己是做前端开发的，对 nodejs 有不错的了解。想自己做一个微信机器人的计算器，因为每次需要用计算器就很不方便，手机里的 app 我都放在很深的目录，不好找，放在首页又太浪费了。所以就想到用 wechaty 来实现个人号微信计算器机器人，实现常规的加减乘除功能；
 
 ## 功能
 
@@ -24,49 +24,53 @@ image: /assets/2020/wechat-calc/header.jpg
 
 ## 实现逻辑
 
-逻辑可以说是很简单；利用wechaty接收用户消息，对消息过滤，用户输入：1+1，然后直接eval 计算结果返回给用户；
+逻辑可以说是很简单；利用 wechaty 接收用户消息，对消息过滤，用户输入：1+1，然后直接 eval 计算结果返回给用户；
 
 ## 依赖
 
-- wechaty：wechaty核心库  
-- wechaty-puppet-padplus：wechaty的ipad协议实现
+- wechaty：wechaty 核心库
+- wechaty-puppet-padplus：wechaty 的 ipad 协议实现
 
 ## 实现过程
 
 ```javascript
-
 function calculator(intxt, callback) {
   return new Promise(function (resolve, reject) {
     var a = intxt;
     try {
-      intxt = intxt.replace(/=|等|等于|\?/, '');
-      intxt = intxt.replace(/加/g, '+').replace(/减/g, '-').replace(/乘/g, '*').replace(/除/g, '/');
+      intxt = intxt.replace(/=|等|等于|\?/, "");
+      intxt = intxt
+        .replace(/加/g, "+")
+        .replace(/减/g, "-")
+        .replace(/乘/g, "*")
+        .replace(/除/g, "/");
       a = eval(intxt);
-    } catch(e){
+    } catch (e) {
       // console.log('========error', e);
     }
-      resolve(a);
-    });
+    resolve(a);
+  });
 }
 
-async function onMessage (msg) {
-  const contact = msg.from()
-  let text = msg.text()
+async function onMessage(msg) {
+  const contact = msg.from();
+  let text = msg.text();
   const room = msg.room();
 
   if (room) return;
-  if(msg.self()){ // 自己发消息
+  if (msg.self()) {
+    // 自己发消息
     return;
   }
   if (text) {
-    text = text.replace(/[。，、,.]$/gi, '').replace(/\s*/gi, "");
+    text = text.replace(/[。，、,.]$/gi, "").replace(/\s*/gi, "");
   }
-  if (msg.type() === bot.Message.Type.Text && /^\d+.{1}\d+/gi.test(text)) { // 文本消息
+  if (msg.type() === bot.Message.Type.Text && /^\d+.{1}\d+/gi.test(text)) {
+    // 文本消息
     let result = await CalcFunc.calculator(text);
-    await msg.say(result+'');
+    await msg.say(result + "");
   }
 }
-
 ```
 
 ## 本地运行
@@ -92,9 +96,9 @@ node app.js
 
 ## 效果图
 
-![效果图](/assets/2020/wechat-calc/demo.jpg)
+![效果图](/assets/2020/wechat-calc/demo.webp)
 
 ## 致谢
 
-感谢[Wechaty](https://wechaty.github.io/)团队提供微信机器人SDK，让开发者可以专注于业务代码。  
-感谢[句子互动](https://www.juzibot.com)提供的pad协议版token，看到很多基于dll的实现，太费时就没有研究了
+感谢[Wechaty](https://wechaty.github.io/)团队提供微信机器人 SDK，让开发者可以专注于业务代码。  
+感谢[句子互动](https://www.juzibot.com)提供的 pad 协议版 token，看到很多基于 dll 的实现，太费时就没有研究了

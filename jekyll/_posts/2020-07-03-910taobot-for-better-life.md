@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - productivity
-image: /assets/2020/910taobot/panda.jpg 
+image: /assets/2020/910taobot/panda.webp
 ---
 
 > 作者: [chengaopan](https://github.com/chengaopan)
@@ -25,7 +25,7 @@ image: /assets/2020/910taobot/panda.jpg
 ├── config
 │   └── config.template.js
 ├── img
-│   └── xxx.jpeg
+│   └── xxx.webp
 ├── package.json
 └── src
     ├── bot.js
@@ -81,7 +81,6 @@ async function onMessage(msg) {
   if (msg.self() || msg.age() > 180) return;
 
   logMSG(msg);
-
 }
 ```
 
@@ -92,7 +91,7 @@ async function onMessage(msg) {
 ### 前期准备工作
 
 1. 申请 Wechaty Puppet Token，本项目使用的是 padplus，详情可参考 [Everything about Wechaty](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
-2. 找到自己想要用的 [七彩API(免费)](http://api.7cyd.com/)
+2. 找到自己想要用的 [七彩 API(免费)](http://api.7cyd.com/)
 
 上述申请完毕后，请将对应的 Token 填写到 config/config.template.js 文件中，并将 config.template.js 修改为 config.js 文件
 
@@ -101,9 +100,9 @@ async function onMessage(msg) {
 1. npm install
 2. npm run
 3. 扫码登陆微信
-4. 开启bot之旅吧~
+4. 开启 bot 之旅吧~
 
 ### 致谢
 
-- 感谢[Wechaty](https://wechaty.github.io)团队提供这么好的一个工具，让我们开发者可以持续增强我们的国民级应用。希望能够有更多的人参与进来，来继续扩大wechaty的生态圈。
-- 感谢[句子互动](https://www.juzibot.com)提供的api-token
+- 感谢[Wechaty](https://wechaty.github.io)团队提供这么好的一个工具，让我们开发者可以持续增强我们的国民级应用。希望能够有更多的人参与进来，来继续扩大 wechaty 的生态圈。
+- 感谢[句子互动](https://www.juzibot.com)提供的 api-token

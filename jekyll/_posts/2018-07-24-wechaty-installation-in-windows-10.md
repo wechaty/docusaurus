@@ -6,30 +6,30 @@ tags:
   - windows
   - install
   - news
-image: /assets/2018/wechaty-installation-in-windows.png
+image: /assets/2018/wechaty-installation-in-windows.webp
 ---
 
-![在 Windows 10 下安装 Wechaty](/assets/2018/wechaty-installation-in-windows.png)
+![在 Windows 10 下安装 Wechaty](/assets/2018/wechaty-installation-in-windows.webp)
 
 感谢 @huan @lijiarui 让我在此分享我在 Windows 10 Home 平台安装 Wechaty 的经历，希望我对安装过程的记录和分析能帮助在此平台下安装 Wechaty 的人。
 
 ## 介绍
 
-[Wechaty](https://github.com/wechaty/wechaty) 是一个对话机器人软件开发包，它可以帮你用 6 行 JavaScript 代码实现一个微信个人账号。由于使用 node 技术，它支持 Linux、Windows、macOS 平台和 Docker 容器。它的安装过程和其它 node 包类似，首先 ```git clone``` 源代码，再使用 node 的 npm 命令 ```npm install & npm start``` 实现开箱即用，同时官方也提供了入门案例：Wechaty getting started。而在国内，实际安装过程中可能会因某些软件依赖的原因遇到问题，本文记录了安装过程中可能会出现的错误及解决办法，下面描述详细的步骤和说明：
+[Wechaty](https://github.com/wechaty/wechaty) 是一个对话机器人软件开发包，它可以帮你用 6 行 JavaScript 代码实现一个微信个人账号。由于使用 node 技术，它支持 Linux、Windows、macOS 平台和 Docker 容器。它的安装过程和其它 node 包类似，首先 `git clone` 源代码，再使用 node 的 npm 命令 `npm install & npm start` 实现开箱即用，同时官方也提供了入门案例：Wechaty getting started。而在国内，实际安装过程中可能会因某些软件依赖的原因遇到问题，本文记录了安装过程中可能会出现的错误及解决办法，下面描述详细的步骤和说明：
 
-* 项目地址: [Wechaty](https://github.com/wechaty/wechaty)
-* Wechaty 起步: [Wechaty Getting Started](https://github.com/wechaty/wechaty-getting-started)
-* Wechaty 文档: [Wechaty Documents](https://wechaty.js.org)
+- 项目地址: [Wechaty](https://github.com/wechaty/wechaty)
+- Wechaty 起步: [Wechaty Getting Started](https://github.com/wechaty/wechaty-getting-started)
+- Wechaty 文档: [Wechaty Documents](https://wechaty.js.org)
 
 ## 概念
 
-* [Puppet](https://github.com/wechaty/wechaty/wiki/Puppet): 一个包含了机器人对话逻辑的抽象类，是 Wechaty 技术架构的一部分。继承实现 Puppet 抽象类（协议）的组件，即可实现更广泛的与联系人、消息/一对一对话、群组/聊天室/多对多对话等相关逻辑。Puppet 的中文是木偶，用在这里相当传神。
-* [node-gyp](https://www.npmjs.com/package/node-gyp): 基于 gyp 编写的用来编译 node 本地扩展模块的 node 包，而 gpy 是 Chromium 项目上用于实现跨平台编译的工具。可参考 [安装文档](https://github.com/nodejs/node-gyp#installation)
-* [windows-build-tools](https://www.npmjs.com/package/windows-build-tools): node 包装的 Windows 平台的编译工具
-* [node-expat](https://www.npmjs.com/package/node-expat): 基于 libexpat 的用来处理 XML 的 node 包，libexpat 是一个号称最快的 XML 解析库，纯 C 语言编写。Wechaty 使用它解析基于 XML 的通讯。可参考 [安装文档](https://github.com/felixrieseberg/windows-build-tools)
-* [Python 2.7](https://www.python.org/downloads/): 一门愈久弥新的语言，node-gyp 的依赖 Python 2.7 实现跨平台编译
-* [puppeteer](https://github.com/GoogleChrome/puppeteer): 可编程的 Google Chrome， Google Chrome 团队官方出品。
-* [Chromium](https://www.chromium.org/): puppeteer 依赖一个特定的 Chromium 版本，Chrome 就是 开源 Chromium + Google 开发的闭源的扩展包。
+- [Puppet](https://github.com/wechaty/wechaty/wiki/Puppet): 一个包含了机器人对话逻辑的抽象类，是 Wechaty 技术架构的一部分。继承实现 Puppet 抽象类（协议）的组件，即可实现更广泛的与联系人、消息/一对一对话、群组/聊天室/多对多对话等相关逻辑。Puppet 的中文是木偶，用在这里相当传神。
+- [node-gyp](https://www.npmjs.com/package/node-gyp): 基于 gyp 编写的用来编译 node 本地扩展模块的 node 包，而 gpy 是 Chromium 项目上用于实现跨平台编译的工具。可参考 [安装文档](https://github.com/nodejs/node-gyp#installation)
+- [windows-build-tools](https://www.npmjs.com/package/windows-build-tools): node 包装的 Windows 平台的编译工具
+- [node-expat](https://www.npmjs.com/package/node-expat): 基于 libexpat 的用来处理 XML 的 node 包，libexpat 是一个号称最快的 XML 解析库，纯 C 语言编写。Wechaty 使用它解析基于 XML 的通讯。可参考 [安装文档](https://github.com/felixrieseberg/windows-build-tools)
+- [Python 2.7](https://www.python.org/downloads/): 一门愈久弥新的语言，node-gyp 的依赖 Python 2.7 实现跨平台编译
+- [puppeteer](https://github.com/GoogleChrome/puppeteer): 可编程的 Google Chrome， Google Chrome 团队官方出品。
+- [Chromium](https://www.chromium.org/): puppeteer 依赖一个特定的 Chromium 版本，Chrome 就是 开源 Chromium + Google 开发的闭源的扩展包。
 
 ## 安装步骤
 
@@ -43,7 +43,7 @@ image: /assets/2018/wechaty-installation-in-windows.png
 
 一、下载 Wechaty 源代码
 
-首先我们建立源代码目录，本文使用 ```D:\code```。如果你使用了其他目录，在后文中作相应的替换即可。 让我们从入门项目开始，运行以下命令下载，并进入项目目录：
+首先我们建立源代码目录，本文使用 `D:\code`。如果你使用了其他目录，在后文中作相应的替换即可。 让我们从入门项目开始，运行以下命令下载，并进入项目目录：
 
 ```bat
 git clone https://github.com/lijiarui/wechaty-getting-started.git
@@ -309,7 +309,7 @@ wechaty-puppet-puppeteer
 
 接下来要做的就是一一从依赖的最底层安装
 
-1.安装 Python 2.7 至 ``C:\Python27\python.exe`` ，设置环境变量 ``PYTHON=C:\Python27\python.exe``
+1.安装 Python 2.7 至 `C:\Python27\python.exe` ，设置环境变量 `PYTHON=C:\Python27\python.exe`
 
 注意 node-gyp 并不支持 Python 3.x，如果你安装了 Python 3.x，错误日志如下:
 
@@ -323,10 +323,10 @@ Can't find Python executable "C:\Python36\python.EXE", you can set the PYTHON en
 
 参考 windows-build-tools 官方文档，有以下两种方式：
 
-* Visual C++ Build Tools
-* Visual Studio 2017 vs Visual Studio 2015
+- Visual C++ Build Tools
+- Visual Studio 2017 vs Visual Studio 2015
 
-我这里由于已经安装 Visual Studio 2017 社区版，所以没有尝试其他选项。这里的关键是需要一个 VC++ 编译器来编译 Windows 本地程序。而 Visual C++ Build Tools 在微软官方地址已失效，不容易找到，npm 官方推荐了安装 Visual Studio 2015。安装结束后，可以使用 ``npm install node-expat`` 验证上述安装配置是否成功
+我这里由于已经安装 Visual Studio 2017 社区版，所以没有尝试其他选项。这里的关键是需要一个 VC++ 编译器来编译 Windows 本地程序。而 Visual C++ Build Tools 在微软官方地址已失效，不容易找到，npm 官方推荐了安装 Visual Studio 2015。安装结束后，可以使用 `npm install node-expat` 验证上述安装配置是否成功
 
 4.[安装 puppeteer](https://github.com/GoogleChrome/puppeteer)
 
@@ -339,7 +339,7 @@ cnpm install puppeteer
 
 PS: 如果你遇到 Chromium revision is not downloaded. 时，在解决办法中看到的设置 PUPPETEER_SKIP_CHROMIUM_DOWNLOAD 其实是一个误导， 这个选项并不能帮助你安装 puppeteer，而是让你在更新时不必每次都下载 Chromium 二进制。
 
-这里还有一个手动安装办法，但不推荐：可以手动下载 chromium 安装包，放在 ``/node_modules/puppeteer/.local-chromium/`` 下，例如:
+这里还有一个手动安装办法，但不推荐：可以手动下载 chromium 安装包，放在 `/node_modules/puppeteer/.local-chromium/` 下，例如:
 
 ```bat
 D:\code\wechaty-getting-started\node_modules\_puppeteer@1.6.0@puppeteer\.local-chromium\win64-571375
@@ -377,4 +377,4 @@ npm install & npm start
 
 由于已成功启动项目，所以我并没有在 Windows 7 系统 或 32 位机上进行配置，主要问题应该差不多。解决办法建议查阅上述出现错误的软件文档来解决。
 
-当然，如果你遇到了任何其他问题，也欢迎 [我的Github](https://github.com/kaffa) 上联系我。
+当然，如果你遇到了任何其他问题，也欢迎 [我的 Github](https://github.com/kaffa) 上联系我。

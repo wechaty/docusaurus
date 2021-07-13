@@ -1,7 +1,7 @@
 ---
 title: "Wechaty 将 TS 转发到 Python 的探索实践"
 author: jcq15
-image: /assets/2020/post-ts-to-python/screenshot.jpg
+image: /assets/2020/post-ts-to-python/screenshot.webp
 categories: project
 tags:
   - padplus
@@ -64,122 +64,128 @@ touch bot.ts
 
 ```typescript
 // bot.ts
-import { Contact, Message, Wechaty } from 'wechaty'
-import { ScanStatus } from 'wechaty-puppet'
-import { PuppetPadplus } from 'wechaty-puppet-padplus'
-import QrcodeTerminal from 'qrcode-terminal'
-import { FileBox }  from 'wechaty'
+import { Contact, Message, Wechaty } from "wechaty";
+import { ScanStatus } from "wechaty-puppet";
+import { PuppetPadplus } from "wechaty-puppet-padplus";
+import QrcodeTerminal from "qrcode-terminal";
+import { FileBox } from "wechaty";
 
-const token = your_token
+const token = your_token;
 
 const puppet = new PuppetPadplus({
   token,
-})
+});
 
-const name  = your_name
+const name = your_name;
 
 const bot = new Wechaty({
   name,
   puppet, // generate xxxx.memory-card.json and save login data for the next login
-})
+});
 
-var baoshi: RegExp = new RegExp('报时.*')   // 正则表达式，群名以“报时”开头
+var baoshi: RegExp = new RegExp("报时.*"); // 正则表达式，群名以“报时”开头
 
 //报时器，整点触发
 async function hourReport() {
-    //当前时间
-    var time = new Date();
-    //小时
-    var hours = time.getHours();
-    //分钟
-    var mins = time.getMinutes();
-    //秒钟
-    var secs = time.getSeconds();
-    //下一次报时间隔
-    var next = ((60 - mins) * 60 - secs) * 1000;
-    //设置下次启动时间
-    setTimeout(hourReport, next);
-    //整点报时，因为第一次进来mins可能不为0所以要判断
-    const room = await bot.Room.find({topic:baoshi})
+  //当前时间
+  var time = new Date();
+  //小时
+  var hours = time.getHours();
+  //分钟
+  var mins = time.getMinutes();
+  //秒钟
+  var secs = time.getSeconds();
+  //下一次报时间隔
+  var next = ((60 - mins) * 60 - secs) * 1000;
+  //设置下次启动时间
+  setTimeout(hourReport, next);
+  //整点报时，因为第一次进来mins可能不为0所以要判断
+  const room = await bot.Room.find({ topic: baoshi });
 
-    var request = require('request')
-    request.get({url:'http://127.0.0.1:5000/clock'}, function (error, response, body) {  
-        if (error) {
-            console.log('Error :', error)
-            return
-        }
-        console.log(' Body :', body)
-        if(body.length > 0){
-          room?.say(body)
-        }
-    })
+  var request = require("request");
+  request.get(
+    { url: "http://127.0.0.1:5000/clock" },
+    function (error, response, body) {
+      if (error) {
+        console.log("Error :", error);
+        return;
+      }
+      console.log(" Body :", body);
+      if (body.length > 0) {
+        room?.say(body);
+      }
+    }
+  );
 }
 
-bot.on('scan', (qrcode, status) => {
-    if (status === ScanStatus.Waiting) {
-      QrcodeTerminal.generate(qrcode, {
-        small: true
-      })
-    }
-  })
-bot.on('login', async (user: Contact) => {
-    console.log(`login success, user: ${user}`)
-    //启动报时器
-    hourReport();
-  })
-bot.on('message', async (msg: Message) => {
-    console.log(`msg : ${msg}`)
-    var room = msg.room()
-    var topic = ''
-    if(room){
-      topic = await room.topic()
-    }
-    var contact = msg.from()
+bot.on("scan", (qrcode, status) => {
+  if (status === ScanStatus.Waiting) {
+    QrcodeTerminal.generate(qrcode, {
+      small: true,
+    });
+  }
+});
+bot.on("login", async (user: Contact) => {
+  console.log(`login success, user: ${user}`);
+  //启动报时器
+  hourReport();
+});
+bot.on("message", async (msg: Message) => {
+  console.log(`msg : ${msg}`);
+  var room = msg.room();
+  var topic = "";
+  if (room) {
+    topic = await room.topic();
+  }
+  var contact = msg.from();
 
-    //直接推给python处理，我们获得回复内容
-    var request = require('request')
-    var formData = {
-      text: msg.text(),
-      roomtopic: topic,
-      date: JSON.stringify(msg.date()),
-      contactid: contact?.id,
-    }
-    try{
-      // 所有的东西都推到后端用python处理
-      request.post({url:'http://127.0.0.1:5000/message', formData: formData}, function (error, response, body) {  
-          if (error) {
-              console.log('Error :', error)
-              return
-          }
-          console.log(' Body :', body)
-          var response = JSON.parse(body)
-          if(body.length > 0){
-            const type: string = response['type']
-            if(type=='image'){
-              const path: string = response['content']
-              const filebox: FileBox = FileBox.fromFile(path)
-              if(room){
-                console.log('准备发啦！')
-                room.say(filebox)
-              }else{
-                contact?.say(filebox)
-              }
-            }else if(type=='text'){
-              const text: string = response['content']
-              if(room){
-                room.say(text)
-              }else{
-                contact?.say(text)
-              }
-            }else{
-              //什么也不做
+  //直接推给python处理，我们获得回复内容
+  var request = require("request");
+  var formData = {
+    text: msg.text(),
+    roomtopic: topic,
+    date: JSON.stringify(msg.date()),
+    contactid: contact?.id,
+  };
+  try {
+    // 所有的东西都推到后端用python处理
+    request.post(
+      { url: "http://127.0.0.1:5000/message", formData: formData },
+      function (error, response, body) {
+        if (error) {
+          console.log("Error :", error);
+          return;
+        }
+        console.log(" Body :", body);
+        var response = JSON.parse(body);
+        if (body.length > 0) {
+          const type: string = response["type"];
+          if (type == "image") {
+            const path: string = response["content"];
+            const filebox: FileBox = FileBox.fromFile(path);
+            if (room) {
+              console.log("准备发啦！");
+              room.say(filebox);
+            } else {
+              contact?.say(filebox);
             }
+          } else if (type == "text") {
+            const text: string = response["content"];
+            if (room) {
+              room.say(text);
+            } else {
+              contact?.say(text);
+            }
+          } else {
+            //什么也不做
           }
-      })
-    }catch(e){
-      console.log(e)
-    }
-  })
+        }
+      }
+    );
+  } catch (e) {
+    console.log(e);
+  }
+});
 ```
 
 安装 `wechaty` 和 `qrcode-terminal`

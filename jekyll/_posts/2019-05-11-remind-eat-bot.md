@@ -5,16 +5,16 @@ categories: project
 tags:
   - code
   - social
-image: /assets/2019/remind-eat-1.jpg
+image: /assets/2019/remind-eat-1.webp
 ---
 
-> Author: [犀利豆](https://xilidou.com/) 北邮本科，University of Leicester EE 研究生，Java后端开发，目前就职知乎。
+> Author: [犀利豆](https://xilidou.com/) 北邮本科，University of Leicester EE 研究生，Java 后端开发，目前就职知乎。
 >
 > [原文地址](https://xilidou.com/2019/05/07/wx-bot/#more)
 
 居然有人忘记吃饭？？？
 
-![image](/assets/2019/remind-eat-1.jpg)
+![image](/assets/2019/remind-eat-1.webp)
 
 为了解决这个问题，我写了一个微信机器人到点就提醒他吃饭。
 
@@ -50,14 +50,14 @@ node remindEat.js
 
 到时候对方应该不会忘记吃饭了。
 
-![image](/assets/2019/remind-eat-2.jpg)
+![image](/assets/2019/remind-eat-2.webp)
 
 ## 实现原理：
 
 这个机器人主要使用两个库：
 
-* [wechaty](https://www.npmjs.com/package/wechaty) 一个 node 实现的微信机器人。
-* [node-schedule](https://www.npmjs.com/package/node-schedule) 一个定时任务触发器。
+- [wechaty](https://www.npmjs.com/package/wechaty) 一个 node 实现的微信机器人。
+- [node-schedule](https://www.npmjs.com/package/node-schedule) 一个定时任务触发器。
 
 其实核心的原理，就在 wechaty 登录以后，注册了一个定时任务。这个定时任务，用于在饭点的时候，注册另外一个 schedule ，同时这个 schedule 是为了实现每分钟一次的提示。
 

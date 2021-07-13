@@ -6,7 +6,7 @@ tags:
   - meetup
   - news
   - featured
-image: /assets/2018/country-wide-developer-conference.jpg
+image: /assets/2018/country-wide-developer-conference.webp
 ---
 
 > Author: [李佳芮](https://github.com/lijiarui/)，Founder of BotOrange。
@@ -16,7 +16,7 @@ image: /assets/2018/country-wide-developer-conference.jpg
 > The above contributors as follows, sort by the order of the contributor in the photo:
 
 1. [李卓桓](https://github.com/huan), [Microsoft AI MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003061) & [Regional Director](https://rd.microsoft.com/en-us/huan-li).
-2. [林贻民](http://github.com/linyimin-bupt),  CS Student from BUPT, author of[wechaty-puppet-ioscat](https://github.com/linyimin-bupt/wechaty-puppet-ioscat), which is a ios plugin to help Wechaty to control the Wechat.
+2. [林贻民](http://github.com/linyimin-bupt), CS Student from BUPT, author of[wechaty-puppet-ioscat](https://github.com/linyimin-bupt/wechaty-puppet-ioscat), which is a ios plugin to help Wechaty to control the Wechat.
 3. [李彬彬（杉木）](https://github.com/binsee/), freelancer, author of [padchat-sdk](github.com/binsee/padchat-sdk), which is a ipad solution to control Wechat.
 4. [高原](https://github.com/windmemory), Co-founder of BotOrange. author of [wechaty-puppet-padchat](https://github.com/lijiarui/wechaty-puppet-padchat), which is a ipad plugin to help Wechaty to control the Wechat.
 5. [张灵箫](https://github.com/judaschrist), Co-founder of [小理智能](http://xiaolizhuli.com), Musical lover, Movie addict. He just integrate wechaty with their information bot.
@@ -57,4 +57,4 @@ Here is their sharing:
     height:100%;
 "></iframe></div>
 
-[contributors-image]: /assets/2018/country-wide-developer-conference.jpg
+[contributors-image]: /assets/2018/country-wide-developer-conference.webp

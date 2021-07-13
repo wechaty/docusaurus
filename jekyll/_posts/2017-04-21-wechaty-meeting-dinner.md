@@ -5,7 +5,7 @@ categories: event
 tags:
   - meetup
   - news
-image: /assets/2017/wechat-meeting.jpg
+image: /assets/2017/wechat-meeting.webp
 ---
 
 Author: [Yang BAI](https://github.com/antonia0912), formal community manager at [JueJin](https://juejin.im/)(Chinese Hacker News)
@@ -18,17 +18,17 @@ There were 7 guys came to the gathering (including me), 6 programmers, and one u
 
 **[Huan LI](https://github.com/huan)** An Angel Investor, Paragliding Pilot and Full Stack Developer. He founded serial enterprises with strong technical background and rich social network experience. He is also the organizer of the meetup.
 
-**[Hailiang WANG](https://github.com/Samurais)** is the leader of *Rockq Community* and a chatbot developer. He used to work in *IBM Innovation Center* and the *Development Labs*. Now he works for *Lingling English* and in charge of the AI Lead.
+**[Hailiang WANG](https://github.com/Samurais)** is the leader of _Rockq Community_ and a chatbot developer. He used to work in _IBM Innovation Center_ and the _Development Labs_. Now he works for _Lingling English_ and in charge of the AI Lead.
 
-**[Yu XIANG](https://github.com/mukaiu)**, a Tech geek, employed by the *Lenovo Group* and he’s also a full- stack developer. He involved a lot of experience about *web crawler*, *3D Printing* and *front-end development* . As a *wechaty* contributor, he realized the function of sending pictures.
+**[Yu XIANG](https://github.com/mukaiu)**, a Tech geek, employed by the _Lenovo Group_ and he’s also a full- stack developer. He involved a lot of experience about _web crawler_, _3D Printing_ and _front-end development_ . As a _wechaty_ contributor, he realized the function of sending pictures.
 
 **[Jiarui LI](https://github.com/lijiarui)**, full-stack developer and chatbot developer, also funder of  [OrangeInteraction](http://www.batorange.com/). Fascinated with Jazz, she set up a dancing community in her spare time, and the videos are played more than 10 million times. She is a wechaty contributor too, and an organizer of the wechaty community as well.
 
-**[Lianxiang LIU](https://github.com/notedit)**, funder of [DotEngine](http://dot.cc), he is a continuous entrepreneur in the domain of *RTC*.
+**[Lianxiang LIU](https://github.com/notedit)**, funder of [DotEngine](http://dot.cc), he is a continuous entrepreneur in the domain of _RTC_.
 
-**[Yang BAI](https://github.com/antonia0912)**, majored in French at her university but works as a marketing specialist. She is the formal community manager and marketing specialist of *Juejin*, a technical community. At present, she works at  *tag Design*, and responsible for planning and organizing activities.
+**[Yang BAI](https://github.com/antonia0912)**, majored in French at her university but works as a marketing specialist. She is the formal community manager and marketing specialist of _Juejin_, a technical community. At present, she works at  *tag Design*, and responsible for planning and organizing activities.
 
-**[Lei ZHAO](https://github.com/Jolly23)**, born in 1996, he is still a college junior student. Doing well in *Python* and *Web Crawler*, as well as the framework of digitalized campus, he is addicted to the system of investment bank's quantitative-trading. All these influence his major for studying abroad.
+**[Lei ZHAO](https://github.com/Jolly23)**, born in 1996, he is still a college junior student. Doing well in _Python_ and _Web Crawler_, as well as the framework of digitalized campus, he is addicted to the system of investment bank's quantitative-trading. All these influence his major for studying abroad.
 
 It is such an honor to meet all these guys and I really appreciate for their sharing. Hope more and more meetups will be started.
 
@@ -60,11 +60,11 @@ Here is the Chinese version.
 
 简单介绍一下大家：
 
-[李卓桓](https://github.com/huan)：PreAngel 投资人。zixia BBS、叽歪网创始人，优酷网首席科学家，水木清华BBS站长。清华大学本科，中欧国际工商学院EMBA。清华企业家协会移动互联网副主席，中欧移动互联网协会发起人。
+[李卓桓](https://github.com/huan)：PreAngel 投资人。zixia BBS、叽歪网创始人，优酷网首席科学家，水木清华 BBS 站长。清华大学本科，中欧国际工商学院 EMBA。清华企业家协会移动互联网副主席，中欧移动互联网协会发起人。
 
 [王海良](https://github.com/Samurais)：Rockq 社区领袖，呤呤英语 AI Lead，曾就职 IBM 创新中心、研发中心，他也是 Chatbot 开发者。
 
-[向宇](https://github.com/mukaiu)：Tech geek，全栈开发工程师，就职于联想。对爬虫，3D打印，前端开发，网络等方向积累丰富经验。他也是 wechaty contributor，贡献了 wechaty 发送图片功能。
+[向宇](https://github.com/mukaiu)：Tech geek，全栈开发工程师，就职于联想。对爬虫，3D 打印，前端开发，网络等方向积累丰富经验。他也是 wechaty contributor，贡献了 wechaty 发送图片功能。
 
 [李佳芮](https://github.com/lijiarui)：全栈开发、chatbot 开发者，桔子互动创始人，爵士舞爱好者，业余创建舞蹈社群，全网播放过千万，wechaty contritubor，wechaty 社群发起人。
 
@@ -76,5 +76,5 @@ Here is the Chinese version.
 
 很开心大家能聚在一起，共同探讨技术问题并增进对彼此的了解，希望日后能多一些线下交流的机会。
 
-[dinner-photo]: /assets/2017/wechat-meeting.jpg
-[antonia-video-photo]: /assets/2017/antonia0912-issue-4-seminar.jpg
+[dinner-photo]: /assets/2017/wechat-meeting.webp
+[antonia-video-photo]: /assets/2017/antonia0912-issue-4-seminar.webp

@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - social
-image: /assets/2020/manage-ur-customers/2020-0517-wechat.jpeg
+image: /assets/2020/manage-ur-customers/2020-0517-wechat.webp
 ---
 
 > 作者: [Kylin93CN](https://github.com/Kylin93CN)

@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - productivity
-image: /assets/2020/wechaty-daily/daily.png
+image: /assets/2020/wechaty-daily/daily.webp
 ---
 
 > 作者: [zzhoouxin](https://github.com/zzhoouxin/)
@@ -43,15 +43,15 @@ github:[https://github.com/zzhoouxin/wechaty-bot](https://github.com/zzhoouxin/w
 ## 项目成果
 
 - 日常提醒
-    ![效果图](/assets/2020/wechaty-daily/daily.png)
+  ![效果图](/assets/2020/wechaty-daily/daily.webp)
 - 定时发送日报
-    ![效果图](/assets/2020/wechaty-daily/daily2.png)
+  ![效果图](/assets/2020/wechaty-daily/daily2.webp)
 - 根据关键字发送日报内容
-    ![image.png](/assets/2020/wechaty-daily/daily3.png)
+  ![image.webp](/assets/2020/wechaty-daily/daily3.webp)
 
 ## 1.项目结构
 
-![image.png](/assets/2020/wechaty-daily/daily4.png)
+![image.webp](/assets/2020/wechaty-daily/daily4.webp)
 
 - bot 存放 wechaty 每个状态的回调函数
 - schecdule 定时任务-获取日报并发送
@@ -62,27 +62,27 @@ github:[https://github.com/zzhoouxin/wechaty-bot](https://github.com/zzhoouxin/w
 ## 1.index.js -- wechaty 启动入口
 
 ```js
-const {Wechaty} = require('wechaty')
-const {PuppetPadplus} = require("wechaty-puppet-padplus");
-const config = require('./config')
-const onScan = require('./bot/onScan')
-const onLogin = require('./bot/onLogin')
-const onMessage = require('./bot/onMessage')
-const onLogout = require('./bot/onLogout')
+const { Wechaty } = require("wechaty");
+const { PuppetPadplus } = require("wechaty-puppet-padplus");
+const config = require("./config");
+const onScan = require("./bot/onScan");
+const onLogin = require("./bot/onLogin");
+const onMessage = require("./bot/onMessage");
+const onLogout = require("./bot/onLogout");
 const bot = new Wechaty({
-    puppet: new PuppetPadplus({
-        token: config.TOKEN
-    }),
-    name: "小艾"
+  puppet: new PuppetPadplus({
+    token: config.TOKEN,
+  }),
+  name: "小艾",
 });
 bot
-    .on('scan', onScan)
-    .on('login', onLogin(bot))
-    .on('logout', onLogout)
-    .on('message', onMessage(bot))
-    .start()
-    .then(() => console.log('开始登陆微信'))
-    .catch(e => console.error(e))
+  .on("scan", onScan)
+  .on("login", onLogin(bot))
+  .on("logout", onLogout)
+  .on("message", onMessage(bot))
+  .start()
+  .then(() => console.log("开始登陆微信"))
+  .catch((e) => console.error(e));
 ```
 
 这边使用的是[wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus#readme)基于 ipad 协议进行开发的；`scan login logout message`这些是 Wechaty 的基础回调事件。
@@ -93,19 +93,17 @@ bot
 // 配置文件
 module.exports = {
   // 每个人对应页面的ID
-  ALL_USER_LIST: [
-    { id: 27169291, name: '小人头'},
-  ],
-  WITHDRAWA_DATE: '00 50 17 * * *', //定时任务事件
-  COLLOECT_DATE:'10 30 09 * * *', // 定时任务事件
-  WIKI_URL: 'http://wiki.xxxxx.com/pages/viewpage.action?pageId=', //wiki内容地址
-  TOKEN: 'puppet_padplus_xxxxx',//token
-  ROOM: '22186778457@chatroom',//需要发送的群号
-  KEYWORDs:['本组','全部']
+  ALL_USER_LIST: [{ id: 27169291, name: "小人头" }],
+  WITHDRAWA_DATE: "00 50 17 * * *", //定时任务事件
+  COLLOECT_DATE: "10 30 09 * * *", // 定时任务事件
+  WIKI_URL: "http://wiki.xxxxx.com/pages/viewpage.action?pageId=", //wiki内容地址
+  TOKEN: "puppet_padplus_xxxxx", //token
+  ROOM: "22186778457@chatroom", //需要发送的群号
+  KEYWORDs: ["本组", "全部"],
 };
 ```
 
-![image.png](/assets/2020/wechaty-daily/daily5.png)
+![image.webp](/assets/2020/wechaty-daily/daily5.webp)
 
 里面的 wiki_url 是我们自己平常填写日报的 wiki 地址。如果您使用其他方式-那就具体情况具体分析
 
@@ -118,19 +116,19 @@ module.exports = {
 ## 3.1 首页我们在 wechaty 的 onlogin 事件里面加入定时任务
 
 ```js
-const dailyRemind = require('../schedule/dailyRemind')
-const collectContent = require('../schedule/collectContent')
+const dailyRemind = require("../schedule/dailyRemind");
+const collectContent = require("../schedule/collectContent");
 /**
  * 扫码登录
  * @param qrcode
  * @param status
  */
-module.exports = bot => {
-    return async function onLogin() {
-        await dailyRemind(bot);//日常提醒
-        await collectContent(bot);//所有汇总
-    }
-}
+module.exports = (bot) => {
+  return async function onLogin() {
+    await dailyRemind(bot); //日常提醒
+    await collectContent(bot); //所有汇总
+  };
+};
 ```
 
 ## 3.2 创建一个定时提醒的任务
@@ -139,23 +137,24 @@ module.exports = bot => {
 - 在使用 [announce](https://wechaty.js.org/v/zh/api/room#room-announce-text-promise-less-than-void-or-string-greater-than) 创建群公告 @所有人 即可做到提醒
 
 ```js
-const schedule = require('./index');
-const config = require('../config');
-const utils = require('../tool/utils')
-module.exports =async  function dailyRemind(bot) {
-    schedule.setSchedule(config.WITHDRAWA_DATE, async () => {
-        if(!utils.judgeIsJob()){ //周末的话，不做提醒
-           return false;
-        }
-       try {
-           //提醒组内人发送日报
-           const searchRoom = await bot.Room.find({ id: config.ROOM});
-           await searchRoom.announce("快下班了~大佬们可以更新一下日报啦~/:@)")
-       } catch (e) {
-           console.log("error:",e.message);
-       }
-   });
-}
+const schedule = require("./index");
+const config = require("../config");
+const utils = require("../tool/utils");
+module.exports = async function dailyRemind(bot) {
+  schedule.setSchedule(config.WITHDRAWA_DATE, async () => {
+    if (!utils.judgeIsJob()) {
+      //周末的话，不做提醒
+      return false;
+    }
+    try {
+      //提醒组内人发送日报
+      const searchRoom = await bot.Room.find({ id: config.ROOM });
+      await searchRoom.announce("快下班了~大佬们可以更新一下日报啦~/:@)");
+    } catch (e) {
+      console.log("error:", e.message);
+    }
+  });
+};
 ```
 
 ## #4.根据关键字。发送日报内容
@@ -166,8 +165,8 @@ module.exports =async  function dailyRemind(bot) {
 
 ```js
 // 监听对话
-const { Message } = require('wechaty');
-const config = require('../config');
+const { Message } = require("wechaty");
+const config = require("../config");
 module.exports = (bot) => {
   return async function onMessage(msg) {
     const contact = msg.from(); // 发消息人
@@ -180,7 +179,7 @@ module.exports = (bot) => {
     if (msg.type() == Message.Type.Text) {
       // await textJ(bot);
       if (room) {
-        console.log('room===>', room);
+        console.log("room===>", room);
         // 如果是群消息
         const topic = await room.topic();
         console.log(
@@ -189,7 +188,7 @@ module.exports = (bot) => {
       } else {
         let info = `日报查询仅支持2种，回复【】内文字即可查询~\n`;
         config.KEYWORDs.map((v) => {
-          info += '【' + v + '】' + '\n';
+          info += "【" + v + "】" + "\n";
         });
         msg.say(info);
       }
@@ -204,42 +203,42 @@ module.exports = (bot) => {
 - 以及 [superagent](https://github.com/visionmedia/superagent)
 - 和 [cheerio](https://github.com/cheeriojs/cheerio#readme)
 
-2个依赖库-主要用到请求我们日报地址 并且获取所需要的内容
+2 个依赖库-主要用到请求我们日报地址 并且获取所需要的内容
 
-![image.png](/assets/2020/wechaty-daily/daily5.png)
+![image.webp](/assets/2020/wechaty-daily/daily5.webp)
 
 这个是我们 wiki 文档的项目结构-我们首先需求通过 superagent 请求访问该页面-并且通过 cheero 获取内容。当然这 2 个依赖库使用。建议先熟悉一下官方文档。下文代码做了一些兼容--
 
 ```js
 async function collectUserContent() {
-  let str = '';
+  let str = "";
   for (let user of config.ALL_USER_LIST) {
     const url = `${config.WIKI_URL}${user.id}`;
     const res = await fetch(url);
     let $ = cheerio.load(res.text);
     // const data = $('.wiki-content .p1').text();
     str += `\n ${user.name} \n`;
-    $('.wiki-content p').each(function (i, e) {
+    $(".wiki-content p").each(function (i, e) {
       let text = $(e).text();
-      if (text !== '\xa0') {
+      if (text !== "\xa0") {
         str += ` ${text} \n`;
       }
     });
-    $('.wiki-content .p1pkss0x').each(function (i, e) {
+    $(".wiki-content .p1pkss0x").each(function (i, e) {
       let html = $(e).children();
       if (html.length === 0) {
         let text = $(e).text();
-        if (text !== '\xa0') {
+        if (text !== "\xa0") {
           str += ` ${text} \n`;
         }
       }
     });
 
-   $('.wiki-content .pd7nslm').each(function (i, e) {
+    $(".wiki-content .pd7nslm").each(function (i, e) {
       let html = $(e).children();
       if (html.length === 1) {
         let text = $(e).text();
-        if (text !== '\xa0') {
+        if (text !== "\xa0") {
           str += ` ${text} \n`;
         }
       }

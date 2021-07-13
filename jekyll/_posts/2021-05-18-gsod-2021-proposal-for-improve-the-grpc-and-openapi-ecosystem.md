@@ -8,7 +8,7 @@ tags:
   - gsod
   - openapi
   - proposal
-image: /assets/2021/05-gsod-2021-proposal-for-improve-the-grpc-and-openapi-ecosystem/gsod-2021.png
+image: /assets/2021/05-gsod-2021-proposal-for-improve-the-grpc-and-openapi-ecosystem/gsod-2021.webp
 ---
 
 ## About me

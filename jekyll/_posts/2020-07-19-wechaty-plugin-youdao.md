@@ -5,7 +5,7 @@ categories: npm
 tags:
   - plugins
   - featured
-image: /assets/2020/youdao-plugin/head.jpeg
+image: /assets/2020/youdao-plugin/head.webp
 ---
 
 > 作者: [Chs97](https://github.com/chs97/)
@@ -23,7 +23,7 @@ image: /assets/2020/youdao-plugin/head.jpeg
 提供翻译能力，通过微信发送待翻译文本，例如 `hello` 给机器人，机器人回复翻译的结果和发音音频。
 **发音音频需要应用绑定 语音合成服务**
 由于不支持 `Voice` 的消息类型，所以只能以 `UrlLink` 的形式回复发音音频。
-![效果图](/assets/2020/youdao-plugin/1.jpeg)
+![效果图](/assets/2020/youdao-plugin/1.webp)
 
 ## 具体实现
 
@@ -42,18 +42,18 @@ image: /assets/2020/youdao-plugin/head.jpeg
 
 ```typescript
 async function wechatyFixtures() {
-  const mocker = new Mocker()
-  const puppet = new PuppetMock({ mocker })
-  const wechaty = new Wechaty({ puppet })
-  await wechaty.start()
-  const [user, contact] = mocker.createContacts(2)
-  await mocker.login(user)
+  const mocker = new Mocker();
+  const puppet = new PuppetMock({ mocker });
+  const wechaty = new Wechaty({ puppet });
+  await wechaty.start();
+  const [user, contact] = mocker.createContacts(2);
+  await mocker.login(user);
   return {
     wechaty,
     user,
     contact,
     mocker,
-  }
+  };
 }
 ```
 
@@ -64,20 +64,20 @@ async function wechatyFixtures() {
 以 `test case: wechaty 回复翻译结果` 为例：
 
 ```typescript
-const { contact, user, wechaty } = await wechatyFixtures()
+const { contact, user, wechaty } = await wechatyFixtures();
 const CONFIG = {
   appId,
   privateKey,
-} as YouDaoTranslatorPluginOption
-wechaty.use(wechatyYouDaoPlugin(CONFIG))
+} as YouDaoTranslatorPluginOption;
+wechaty.use(wechatyYouDaoPlugin(CONFIG));
 // 插件收到消息回复翻译结果
-contact.on('message', (message) => {
-  const res = message.text()!
-  expect(res).toBe('你好')
-  done()
-})
+contact.on("message", (message) => {
+  const res = message.text()!;
+  expect(res).toBe("你好");
+  done();
+});
 // contact 向 wechaty 发送消息
-contact.say('Hello').to(user)
+contact.say("Hello").to(user);
 ```
 
 本插件的行为比较简单，所以对单元测试用例的编写也比较容易，可以参考[issues#37](https://github.com/wechaty/wechaty-puppet-mock/issues/37)
@@ -86,5 +86,5 @@ contact.say('Hello').to(user)
 
 `wechaty-puppet-mock` 目前的 API 并没有与 `wechaty` 完全一致，例如没办法发送除了 `Text` 以外的消息类型，如 `UrlLink` 等。
 关于这个问题提了一个 [Issue](https://github.com/wechaty/wechaty-puppet-mock/issues/40) 大家可以一起讨论。
-感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
-感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token
+感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人 SDK  
+感谢[句子互动](https://www.juzibot.com/)提供的 iPad 协议版 token

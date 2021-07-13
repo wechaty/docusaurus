@@ -5,7 +5,7 @@ categories: announcement
 tags:
   - release
   - news
-image: /assets/2018/huan-wechaty-new-version-0.16.png
+image: /assets/2018/huan-wechaty-new-version-0.16.webp
 ---
 
 ![wechaty-release-0.16][wechaty-release-0.16]
@@ -25,7 +25,7 @@ However, if you want to try the new Puppet like the [PuppetPadchat](https://gith
 
 1. Be able to login with the newly registered Wechat Account. ([#872](https://github.com/wechaty/wechaty/issues/872))
 1. Get wechat id for contacts. ([#133](https://github.com/wechaty/wechaty/issues/133))
-1. Get consistent room id for rooms across login session.  ([#90](https://github.com/wechaty/wechaty/issues/90))
+1. Get consistent room id for rooms across login session. ([#90](https://github.com/wechaty/wechaty/issues/90))
 1. ... To be discovered by you ...
 
 Learn more about how to use the PuppetPadchat from [Wechaty v0.15 Alpha Testing: Win32/iPad/Android/iOS/API Puppets Support are comming! #1296](https://github.com/wechaty/wechaty/issues/1296)
@@ -34,7 +34,7 @@ Please file a new issues if you meet any bug or have any feature suggestions, an
 
 Huan LI
 
-[![Wechaty with new color in blue](https://wechaty.github.io/wechaty/images/wechaty-logo-green-en.png)](https://github.com/wechaty/wechaty)
+[![Wechaty with new color in blue](https://wechaty.github.io/wechaty/images/wechaty-logo-green-en.webp)](https://github.com/wechaty/wechaty)
 
 ## CHANGE LOG
 
@@ -48,7 +48,7 @@ There will be a **migration guide from v0.14 to v0.16** will be published on our
 
 - BREAKING CHANGE: v0.16 will remove `MediaMessage` class [\#1164](https://github.com/wechaty/wechaty/issues/1164)
 - BREAKING CHANGES v0.16: FriendRequest class will be replaced with Friendship [\#1312](https://github.com/wechaty/wechaty/issues/1312)
-- BREAKING CHANGE v0.16  Contact, FriendRequest, Message, and Room classes will not be able to instantiate directly [\#1364](https://github.com/wechaty/wechaty/issues/1364)
+- BREAKING CHANGE v0.16 Contact, FriendRequest, Message, and Room classes will not be able to instantiate directly [\#1364](https://github.com/wechaty/wechaty/issues/1364)
 
 #### 1.2. Sync to Async
 
@@ -61,15 +61,15 @@ There will be a **migration guide from v0.14 to v0.16** will be published on our
 
 #### 1.3. Argument / Return Value
 
-- BREAKING CHANGE v0.16  room.add return Promise\<void\> instead of return Promise\<boolean\> [\#1362](https://github.com/wechaty/wechaty/issues/1362)
+- BREAKING CHANGE v0.16 room.add return Promise\<void\> instead of return Promise\<boolean\> [\#1362](https://github.com/wechaty/wechaty/issues/1362)
 - BREAKING CHANGE: v0.16 `scan` event args will be different! [\#1262](https://github.com/wechaty/wechaty/issues/1262)
 - BREAKING CHANGE: first arg of `room-leave` event licener changed from `Contact` to `Contact[]` [\#723](https://github.com/wechaty/wechaty/issues/723)
 - BREAKING CHANGE: v0.16 on('friend`) arguments changed! [\#1196](https://github.com/wechaty/wechaty/issues/1196)
 
 #### 1.4. Deprecated
 
-- BREAKING CHANGE v0.16 Wechaty.self() eprecated, use Wechaty.userSelf()  instead [\#1369](https://github.com/wechaty/wechaty/issues/1369)
-- BREAKING CHANGE v0.16 Contact.personal() and Contact.official()  deprecated, use Contact.type() instead [\#1366](https://github.com/wechaty/wechaty/issues/1366)
+- BREAKING CHANGE v0.16 Wechaty.self() eprecated, use Wechaty.userSelf() instead [\#1369](https://github.com/wechaty/wechaty/issues/1369)
+- BREAKING CHANGE v0.16 Contact.personal() and Contact.official() deprecated, use Contact.type() instead [\#1366](https://github.com/wechaty/wechaty/issues/1366)
 - BREAKING CHANGE: v0.16 will replace `Message.content()` with `Message.text()` [\#1163](https://github.com/wechaty/wechaty/issues/1163)
 
 ### 2. New Features
@@ -127,4 +127,4 @@ Thank you all contributors, Wechaty could not release version 0.16 without your 
 1. @[cherry-geqi](https://github.com/cherry-geqi): [\#97](https://github.com/wechaty/wechaty/pull/97)
 1. @[lpmi-13](https://github.com/lpmi-13): [\#681](https://github.com/wechaty/wechaty/pull/681)
 
-[wechaty-release-0.16]: /assets/2018/huan-wechaty-new-version-0.16.png
+[wechaty-release-0.16]: /assets/2018/huan-wechaty-new-version-0.16.webp

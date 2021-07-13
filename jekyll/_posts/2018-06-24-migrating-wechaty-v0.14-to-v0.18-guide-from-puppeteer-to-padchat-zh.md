@@ -5,39 +5,39 @@ categories: migration
 tags:
   - code
   - news
-image: /assets/2018/code-migration-zh.png
+image: /assets/2018/code-migration-zh.webp
 ---
 
-Wechaty 近期有了很大的升级，从0.14版本之后，开始陆续支持各类非Web 版本的解决方案。我的业务逻辑代码重度依赖于wechaty，所以自从wechaty release 了0.15 版本以后，我开始将我们的业务逻辑代码陆续从Web版本迁移到了非Web版本上来。
+Wechaty 近期有了很大的升级，从 0.14 版本之后，开始陆续支持各类非 Web 版本的解决方案。我的业务逻辑代码重度依赖于 wechaty，所以自从 wechaty release 了 0.15 版本以后，我开始将我们的业务逻辑代码陆续从 Web 版本迁移到了非 Web 版本上来。
 
-本篇博客主要介绍了我是如何将业务逻辑代码，从Puppeteer 迁移到 Padchat上的。
+本篇博客主要介绍了我是如何将业务逻辑代码，从 Puppeteer 迁移到 Padchat 上的。
 
-![code](/assets/2018/code-migration-zh.png)
+![code](/assets/2018/code-migration-zh.webp)
 
 ## 1. Puppeteer VS Padchat
 
-首先进行一下名词解释，在说这两个名词之前，先介绍一下Puppet
+首先进行一下名词解释，在说这两个名词之前，先介绍一下 Puppet
 
-**Puppet 系统**是一个用来连接Wechaty API 和其他的微信实现方式的连接器。简单的来说，通过微信API进行微信自动化操作会有很多种不同的是实现方式，比如基于网页微信的实现，基于ipad协议的实现，基于ios hook 的实现，基于windows hook 的实现，基于Android xposed的实现等等。不同的实现方法代码是完全不一样的。如果没有puppet 帮助桥接不同的实现方法，开发者就会有不同的接入API，这对上层业务逻辑的开发非常不方便，因此这是Puppet 系统设计的初衷。
+**Puppet 系统**是一个用来连接 Wechaty API 和其他的微信实现方式的连接器。简单的来说，通过微信 API 进行微信自动化操作会有很多种不同的是实现方式，比如基于网页微信的实现，基于 ipad 协议的实现，基于 ios hook 的实现，基于 windows hook 的实现，基于 Android xposed 的实现等等。不同的实现方法代码是完全不一样的。如果没有 puppet 帮助桥接不同的实现方法，开发者就会有不同的接入 API，这对上层业务逻辑的开发非常不方便，因此这是 Puppet 系统设计的初衷。
 
-现在再来介绍Puppeteer 和 Padchat 就会比较清楚了:
+现在再来介绍 Puppeteer 和 Padchat 就会比较清楚了:
 
-![image](/assets/2018/abstract-info.png)
+![image](/assets/2018/abstract-info.webp)
 
-- Puppeteer: 基于网页微信的实现，通过puppet连接到Wechaty API。
-- Padchat: 基于ipad 协议的实现，通过puppet 连接到Wechaty API。
+- Puppeteer: 基于网页微信的实现，通过 puppet 连接到 Wechaty API。
+- Padchat: 基于 ipad 协议的实现，通过 puppet 连接到 Wechaty API。
 
-具体的Puppet 和各个实现方法，可以参考下图和这篇博客：[Wechaty New Version 0.16(BETA, with super power) Released](https://wechaty.github.io/wechaty-new-release-version-0.16/)
+具体的 Puppet 和各个实现方法，可以参考下图和这篇博客：[Wechaty New Version 0.16(BETA, with super power) Released](https://wechaty.github.io/wechaty-new-release-version-0.16/)
 
 ## 2. 如何无缝切换
 
-默认情况下，启动wechaty 是使用puppeteer的，切换成padchat 需要再运行的时候设置环境变量。
+默认情况下，启动 wechaty 是使用 puppeteer 的，切换成 padchat 需要再运行的时候设置环境变量。
 
-更多信息详细见wiki[How to run a new wecahty-puppet-padchat](https://github.com/wechaty/wechaty/wiki/Puppet#2-run)
+更多信息详细见 wiki[How to run a new wecahty-puppet-padchat](https://github.com/wechaty/wechaty/wiki/Puppet#2-run)
 
 ### Git 源码的方式
 
-#### 1. 拉下github最新的代码
+#### 1. 拉下 github 最新的代码
 
 ```shell
 git pull
@@ -46,13 +46,13 @@ rm -rf node_modules/
 npm install
 ```
 
-#### 2. 获取token并设置环境变量
+#### 2. 获取 token 并设置环境变量
 
-在[Wechaty v0.17 Padchat Testing: Win32/iPad/Android/iOS/API Puppets Support are comming!](https://github.com/wechaty/wechaty/issues/1296) 中进行alpha test 版本的内测报名，并获取到token： `WECHATY_PUPPET_PADCHAT_TOKEN`
+在[Wechaty v0.17 Padchat Testing: Win32/iPad/Android/iOS/API Puppets Support are comming!](https://github.com/wechaty/wechaty/issues/1296) 中进行 alpha test 版本的内测报名，并获取到 token： `WECHATY_PUPPET_PADCHAT_TOKEN`
 
 #### 3. 设置环境变量并运行
 
-记得要设置`WECHATY_PUPPET=padchat` 来切换puppet版本。
+记得要设置`WECHATY_PUPPET=padchat` 来切换 puppet 版本。
 
 ```shell
 WECHATY_PUPPET_PADCHAT_TOKEN=your padchat token WECHATY_PUPPET=padchat  node examples/ding-dong-bot.js
@@ -60,19 +60,19 @@ WECHATY_PUPPET_PADCHAT_TOKEN=your padchat token WECHATY_PUPPET=padchat  node exa
 
 ### NPM
 
-#### 1. 安装到最新版本的npm
+#### 1. 安装到最新版本的 npm
 
 ```shell
 npm install wechaty@next
 ```
 
-#### 2. NPM下获取token并设置环境变量
+#### 2. NPM 下获取 token 并设置环境变量
 
-在[#1296](https://github.com/wechaty/wechaty/issues/1296) 中进行alpha test 版本的内测报名，并获取到token： `WECHATY_PUPPET_PADCHAT_TOKEN`
+在[#1296](https://github.com/wechaty/wechaty/issues/1296) 中进行 alpha test 版本的内测报名，并获取到 token： `WECHATY_PUPPET_PADCHAT_TOKEN`
 
-#### 3. NPM下设置环境变量并运行
+#### 3. NPM 下设置环境变量并运行
 
-记得要设置`WECHATY_PUPPET=padchat` 来切换puppet版本。
+记得要设置`WECHATY_PUPPET=padchat` 来切换 puppet 版本。
 
 ```shell
 WECHATY_PUPPET_PADCHAT_TOKEN=your padchat token WECHATY_PUPPET=padchat   node examples/ding-dong-bot.js
@@ -81,20 +81,20 @@ WECHATY_PUPPET_PADCHAT_TOKEN=your padchat token WECHATY_PUPPET=padchat   node ex
 
 ### Docker
 
-#### 1. 拉下最新版本的docker 镜像
+#### 1. 拉下最新版本的 docker 镜像
 
 ```shell
 docker pull zixia/wechaty:latest
 ```
 
-#### 2. 获取token
+#### 2. 获取 token
 
-在[#1296](https://github.com/wechaty/wechaty/issues/1296) 中进行alpha test 版本的内测报名，并获取到token： `WECHATY_PUPPET_PADCHAT_TOKEN`
+在[#1296](https://github.com/wechaty/wechaty/issues/1296) 中进行 alpha test 版本的内测报名，并获取到 token： `WECHATY_PUPPET_PADCHAT_TOKEN`
 
 #### 3. Docker 下设置环境变量并运行
 
-- 记得要设置`WECHATY_PUPPET=padchat` 来切换puppet版本。
-- 记得docker 版本不要重复安装wechaty 的npm 包，检查方法： 查看node_module 是否有wechaty，如果有就删掉它
+- 记得要设置`WECHATY_PUPPET=padchat` 来切换 puppet 版本。
+- 记得 docker 版本不要重复安装 wechaty 的 npm 包，检查方法： 查看 node_module 是否有 wechaty，如果有就删掉它
 
 ```shell
 docker run -t -i  -e WECHATY_PUPPET="padchat" -e WECHATY_PUPPET_PADCHAT_TOKEN="your token"  --volume="$(pwd)":/bot --name=wechaty zixia/wechaty:latest examples/ding-dong-bot.ts
@@ -102,9 +102,9 @@ docker run -t -i  -e WECHATY_PUPPET="padchat" -e WECHATY_PUPPET_PADCHAT_TOKEN="y
 
 ## 3. 代码检查
 
-wechaty 是使用typescript 写的，都是强类型的，我之前的代码没有统一typings，由于切换到padchat 以后，很多函数由同步变成了异步，所以索性我的代码也统一用了typings，并进行了类型检查。
+wechaty 是使用 typescript 写的，都是强类型的，我之前的代码没有统一 typings，由于切换到 padchat 以后，很多函数由同步变成了异步，所以索性我的代码也统一用了 typings，并进行了类型检查。
 
-人是一定会出错的，所以我们需要通过代码检查工具来发现代码错误、统一代码风格。我使用 **TSLint** 进行 TypeScript 的代码检查，编辑器用的是VSCODE。**TSLint** 支持自定义的代码检测规则。
+人是一定会出错的，所以我们需要通过代码检查工具来发现代码错误、统一代码风格。我使用 **TSLint** 进行 TypeScript 的代码检查，编辑器用的是 VSCODE。**TSLint** 支持自定义的代码检测规则。
 
 ### 为什么需要代码检查
 
@@ -124,7 +124,7 @@ wechaty 是使用typescript 写的，都是强类型的，我之前的代码没�
 
 简单的说，虽然发现代码错误比统一的代码风格更重要，但是当一个项目越来越庞大，开发人员也越来越多的时候，代码风格的约束还是必不可少的。
 
-### 使用tslint 工具代码检查
+### 使用 tslint 工具代码检查
 
 #### 1. 安装
 
@@ -139,33 +139,33 @@ npm install tslint-config-standard
 
 创建配置文件 `tslint.json`
 
-tslint 和tsconfig 建议参考wechaty 的配置：
+tslint 和 tsconfig 建议参考 wechaty 的配置：
 
 - [tslint 配置文件](https://github.com/wechaty/wechaty/blob/master/tslint.json)
 - [tsconfig 配置文件](https://github.com/wechaty/wechaty/blob/master/tsconfig.json)
 
-这里针对wechaty 的一些配置进行说明
+这里针对 wechaty 的一些配置进行说明
 
 - "strict" : true
-    启用所有严格类型检查选项。 启用 --strict相当于启用 --noImplicitAny, --noImplicitThis, --alwaysStrict,--strictNullChecks和 --strictFunctionTypes和--strictPropertyInitialization。
-- "noEmitOnError"              : true
-    报错时不生成输出文件。
-- "noUnusedLocals"             : true
-    若有未使用的局部变量则抛错。
-- "noImplicitReturns"          : true
-    不是函数的所有返回路径都有返回值时报错。
+  启用所有严格类型检查选项。 启用 --strict 相当于启用 --noImplicitAny, --noImplicitThis, --alwaysStrict,--strictNullChecks 和 --strictFunctionTypes 和--strictPropertyInitialization。
+- "noEmitOnError" : true
+  报错时不生成输出文件。
+- "noUnusedLocals" : true
+  若有未使用的局部变量则抛错。
+- "noImplicitReturns" : true
+  不是函数的所有返回路径都有返回值时报错。
 - "noFallthroughCasesInSwitch" : true
-    报告switch语句的fallthrough错误。（即，不允许switch的case语句贯穿）
-- "strictNullChecks"           : true
-    在严格的 null检查模式下， null和 undefined值不包含在任何类型里，只允许用它们自己和 any来赋值（有个例外， undefined可以赋值到 void）
-- "noImplicitAny"              : true
-    在表达式和声明上有隐含的 any类型时报错。 相关issue: [ts-node 7.0 breaking change: Skip `files` by default](https://github.com/wechaty/wechaty/issues/1383)
+  报告 switch 语句的 fallthrough 错误。（即，不允许 switch 的 case 语句贯穿）
+- "strictNullChecks" : true
+  在严格的 null 检查模式下， null 和 undefined 值不包含在任何类型里，只允许用它们自己和 any 来赋值（有个例外， undefined 可以赋值到 void）
+- "noImplicitAny" : true
+  在表达式和声明上有隐含的 any 类型时报错。 相关 issue: [ts-node 7.0 breaking change: Skip `files` by default](https://github.com/wechaty/wechaty/issues/1383)
 - "no-floating-promises": true
-    如果有async 方法，要求必须使用await。相关issue: [Prevent the Floating Promise in the Async/Await Code](https://github.com/wechaty/wechaty/issues/1346)
-- "noUnusedParameters"         : true
-    若有未使用的参数则抛错。
-- "noImplicitThis"             : true
-    当 this表达式的值为 any类型的时候，生成一个错误。
+  如果有 async 方法，要求必须使用 await。相关 issue: [Prevent the Floating Promise in the Async/Await Code](https://github.com/wechaty/wechaty/issues/1346)
+- "noUnusedParameters" : true
+  若有未使用的参数则抛错。
+- "noImplicitThis" : true
+  当 this 表达式的值为 any 类型的时候，生成一个错误。
 
 更多参考[typescript 文档](https://tslang.cn/docs/handbook/compiler-options.html)
 
@@ -173,9 +173,9 @@ tslint 和tsconfig 建议参考wechaty 的配置：
 
 ```json
 {
-    "scripts": {
-        "lint": "tslint --project . src/**/*.ts src/**/*.tsx",
-    }
+  "scripts": {
+    "lint": "tslint --project . src/**/*.ts src/**/*.tsx"
+  }
 }
 ```
 
@@ -189,13 +189,13 @@ tslint 和tsconfig 建议参考wechaty 的配置：
 
 #### 5. 彩蛋
 
-唔。。。这里再赠送一个VSCode 插件彩蛋：editorconfig : 让使用不同编辑器的开发者在共同开发一个项目时“无痛”地遵循编码规范。更多说明见[editorconfig官网](https://editorconfig.org/)
+唔。。。这里再赠送一个 VSCode 插件彩蛋：editorconfig : 让使用不同编辑器的开发者在共同开发一个项目时“无痛”地遵循编码规范。更多说明见[editorconfig 官网](https://editorconfig.org/)
 
 wechaty 的配置见 [.editorconfig](https://github.com/wechaty/wechaty/blob/master/.editorconfig)
 
 ## 4. BREAKING CHANGES
 
-wechaty 升级版本后(参考[博客](https://wechaty.github.io/wechaty-new-release-version-0.16/))，虽然尽可能的减少接口变动，但是为了适配padchat， 还是会有一些接口有了不同程度的变化。因此在进行代码迁移的时候，我们也需要修改原来的部分代码，我把相关内容列在下面了，更多内容，建议仔细阅读[CHANGE LOG](https://github.com/wechaty/wechaty/blob/master/CHANGELOG.md)
+wechaty 升级版本后(参考[博客](https://wechaty.github.io/wechaty-new-release-version-0.16/))，虽然尽可能的减少接口变动，但是为了适配 padchat， 还是会有一些接口有了不同程度的变化。因此在进行代码迁移的时候，我们也需要修改原来的部分代码，我把相关内容列在下面了，更多内容，建议仔细阅读[CHANGE LOG](https://github.com/wechaty/wechaty/blob/master/CHANGELOG.md)
 
 ### bot.init() 变成了 bot.start()
 
@@ -208,34 +208,33 @@ wechaty 升级版本后(参考[博客](https://wechaty.github.io/wechaty-new-rel
 #### 之前 (v0.14 或者更低)
 
 ```ts
-wechaty.on('friend', (contact, request) => {
+wechaty.on("friend", (contact, request) => {
   if (!request) {
     // this is a friend request confirmation event
   } else {
     // this is a friend request
   }
-})
-
+});
 ```
 
 #### 之后 (v0.16 或者更高)
 
 ```ts
-wechaty.on('friendship', request => {
+wechaty.on("friendship", (request) => {
   switch (request.type()) {
     case FriendRequest.Type.RECEIVE:
       // this is a friend request request
-      break
+      break;
     case FriendRequest.Type.CONFIRM:
       // this is a friend request confirmation
-      break
+      break;
   }
-})
+});
 ```
 
 建议仔细看代码[friend-bot.ts](https://github.com/wechaty/wechaty/blob/master/examples/friend-bot.ts)
 
-相关issue:
+相关 issue:
 
 - [BREAKING CHANGE: v0.16 on('friend`) arguments changed!](https://github.com/wechaty/wechaty/issues/1196)
 - [BREAKING CHANGES v0.16: FriendRequest class will be replaced with Friendship](https://github.com/wechaty/wechaty/issues/1312)
@@ -245,7 +244,7 @@ wechaty.on('friendship', request => {
 从 v0.16, Message.content() 依然是可被兼容的状态.
 从 v0.18, Message.content() 会彻底弃用.
 
-相关issue:
+相关 issue:
 
 - [BREAKING CHANGE: v0.16 will replace `Message.content()` with `Message.text()`](https://github.com/wechaty/wechaty/issues/1163)
 
@@ -259,28 +258,28 @@ wechaty.on('friendship', request => {
 代码变化
 
 ```diff
-- bot.say(new MediaMessage('/image.png')
-+ bot.say(new Message('/image.png')
+- bot.say(new MediaMessage('/image.webp')
++ bot.say(new Message('/image.webp')
 ```
 
-相关issue:
+相关 issue:
 
 - [BREAKING CHANGE: v0.16 will remove `MediaMessage` class](https://github.com/wechaty/wechaty/issues/1164)
 
 #### 介绍一个好用的发送图片的功能
 
-介绍一个非常好用的包: [FileBox 官网](https://www.npmjs.com/package/file-box), 一个将文件数据打包方便读取的npm 包，可以轻松地在具有最少有效负载的服务器之间进行传输，而不会比其位置（本地路径，远程URL或云存储）。详细使用方法见官网。
+介绍一个非常好用的包: [FileBox 官网](https://www.npmjs.com/package/file-box), 一个将文件数据打包方便读取的 npm 包，可以轻松地在具有最少有效负载的服务器之间进行传输，而不会比其位置（本地路径，远程 URL 或云存储）。详细使用方法见官网。
 
 ```ts
 const fileBox = FileBox.fromStream(
-fs.createReadStream(BOT_QR_CODE_IMAGE_FILE),
-BOT_QR_CODE_IMAGE_FILE,
-)
+  fs.createReadStream(BOT_QR_CODE_IMAGE_FILE),
+  BOT_QR_CODE_IMAGE_FILE
+);
 ```
 
 ### Wechaty.self() 改成了 Wechaty.userSelf()
 
-相关issue:
+相关 issue:
 
 - [BREAKING CHANGE v0.16 Wechaty.self() eprecated, use Wechaty.userSelf() instead](https://github.com/wechaty/wechaty/issues/1369)
 
@@ -289,93 +288,93 @@ BOT_QR_CODE_IMAGE_FILE,
 #### 之前
 
 ```ts
-const isPersonal = contact.personal()
-const isOfficial = contact.official()
+const isPersonal = contact.personal();
+const isOfficial = contact.official();
 ```
 
 #### 现在
 
 ```ts
-  /**
-   * Return the type of the Contact
-   *
-   * @returns ContactType - Contact.Type.PERSONAL for personal account, Contact.Type.OFFICIAL for official account
-   * @example
-   * const isOfficial = contact.type() === Contact.Type.OFFICIAL
-   */
-  const type = Contact.type()
+/**
+ * Return the type of the Contact
+ *
+ * @returns ContactType - Contact.Type.PERSONAL for personal account, Contact.Type.OFFICIAL for official account
+ * @example
+ * const isOfficial = contact.type() === Contact.Type.OFFICIAL
+ */
+const type = Contact.type();
 ```
 
-相关issue:
+相关 issue:
 
 - [BREAKING CHANGE v0.16 Contact.personal() and Contact.official() deprecated, use Contact.type() instead](https://github.com/wechaty/wechaty/issues/1366)
 
 ### Room.add() 返回值从 `Promise<boolean>` 变成了 `Promise<void>`
 
-相关issue:
+相关 issue:
 
 - [BREAKING CHANGE v0.16 room.add return `Promise<void>` instead of return `Promise<boolean>`](https://github.com/wechaty/wechaty/issues/1362)
 
-### Room.topic() 从Sync 变成了 Async
+### Room.topic() 从 Sync 变成了 Async
 
 #### Room.topic() 之前
 
 ```ts
-const topic = room.topic()
+const topic = room.topic();
 ```
 
 #### Room.topic() 现在
 
 ```ts
-const topic = await room.topic()
+const topic = await room.topic();
 ```
 
-相关issue:
+相关 issue:
 
 - [BREAKING CHANGE: v0.16 `Room.topic()` change from Sycn to Async](https://github.com/wechaty/wechaty/issues/1295)
 
-### Room.alias(contact) 从Sync 变成了 Async
+### Room.alias(contact) 从 Sync 变成了 Async
 
 #### Room.alias(contact) 之前
 
 ```ts
-const alias = room.alias(contact)
+const alias = room.alias(contact);
 ```
 
 #### Room.alias(contact) 现在
 
 ```ts
-const alias = await room.alias(contact)
+const alias = await room.alias(contact);
 ```
 
-相关issue:
+相关 issue:
 
 - [BREAKING CHANGE: v0.16 `Room.alias(contact)` change from Sycn to Async](https://github.com/wechaty/wechaty/issues/1293)
 
-### Room.memberList() 从Sync 变成了 Async
+### Room.memberList() 从 Sync 变成了 Async
 
 #### Room.memberList() 之前
 
 ```ts
-const memberList = room.memberList()
+const memberList = room.memberList();
 ```
 
 #### Room.memberList() 现在
 
 ```ts
-const memberList = await room.memberList()
+const memberList = await room.memberList();
 ```
 
-相关issue:
+相关 issue:
 
 - [BREAKING CHANGE: v0.16 `Room.memberList()` change from Sycn to Async](https://github.com/wechaty/wechaty/issues/1290)
 
-### Room.member() 从Sync 变成了 Async
+### Room.member() 从 Sync 变成了 Async
 
 #### Room.member() 之前
 
 ```ts
-const contact = room.member('Huan')
+const contact = room.member("Huan");
 ```
 
 #### Room.member() 现在
@@ -385,34 +384,34 @@ const contact = room.member('Huan')
 + const contact = await room.member('Huan')
 ```
 
-相关issue:
+相关 issue:
 
 - [BREAKING CHANGES: v0.16 `Room.member()` from `sync` to `async`](https://github.com/wechaty/wechaty/issues/1258)
 
-### Room.has(contact) 从Sync 变成了 Async
+### Room.has(contact) 从 Sync 变成了 Async
 
 #### Room.has(contact) 之前
 
 ```ts
-const exist = room.has(contact)
+const exist = room.has(contact);
 ```
 
 #### Room.has(contact) 现在
 
 ```ts
-const exist = await room.has(contact)
+const exist = await room.has(contact);
 ```
 
-相关issue:
+相关 issue:
 
 - [BREAKING CHANGE: v0.16 `Room.has(contact)` change from Sycn to Async](https://github.com/wechaty/wechaty/issues/1289)
 
-### Message.mention() 从Sync 变成了 Async
+### Message.mention() 从 Sync 变成了 Async
 
 #### Message.mention() 之前
 
 ```ts
-const mentionList = message.mention()
+const mentionList = message.mention();
 ```
 
 #### Message.mention() 之后
@@ -422,7 +421,7 @@ const mentionList = message.mention()
 + const mentionList = await message.mention()
 ```
 
-相关issue:
+相关 issue:
 
 - [BREAKING CHANGE: v0.16 `Message.mention()` change from `sync` to `async`](https://github.com/wechaty/wechaty/issues/1259)
 
@@ -440,7 +439,7 @@ const mentionList = message.mention()
 
 请注意我们删除了 ~~`const loginUrl = url.replace(/\/qrcode\//, '/l/')`~~
 
-相关issue:
+相关 issue:
 
 - [BREAKING CHANGE: v0.16 `scan` event args will be different!](https://github.com/wechaty/wechaty/issues/1262)
 
@@ -478,7 +477,7 @@ const room = await Room.create(...)
 + const room = await wechaty.Room.create(...)
 ```
 
-Contact, FriendRequest, and Message这些也一样
+Contact, FriendRequest, and Message 这些也一样
 
 Related Link
 
@@ -494,7 +493,7 @@ Related Link
 根据`ext()` 在 Node/Python/C# 中的实现，我们的 `ext()` 也返回包括`.`的文件扩展名。 所以更新如下：
 
 ```ts
-const ext = message.ext()
+const ext = message.ext();
 // assume the filename is `test.txt`
 ```
 

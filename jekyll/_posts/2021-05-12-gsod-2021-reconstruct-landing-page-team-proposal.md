@@ -13,7 +13,7 @@ tags:
   - propositions
   - proposal
   - team-proposal
-image: /assets/2021/05-gsod-2021-reconstruct-landing-page-team-proposal/gsod-reconstruct-lp.png
+image: /assets/2021/05-gsod-2021-reconstruct-landing-page-team-proposal/gsod-reconstruct-lp.webp
 ---
 
 ## Team Members
@@ -60,7 +60,7 @@ I consider it a vibrant experience to get the opportunity to meet mentors from a
 
 Most of the new users come to wechaty website by landing on the landing [homepage](https://wechaty.js.org/). Unfortunately, the landing page is too simple and lacks enough information for new users, especially no value proposition. This problem leads to losing lots of new users, or making new users take more time to understand what wechaty can do and why we are the best.
 
-In online marketing, landing pages are used to drive visitors towards conversion by getting them to click through to specific action. That action could be anything from encouraging users to make purchases on an online store or in our case to make use of wechaty or countless other actions. Whatever it is, there should be just one, clearly-defined [CTA (call-to-action)](https://en.wikipedia.org/wiki/Call_to_action_(marketing)). As opposed to being a full-blown professional website, a landing page is a single page with a highly specific target: getting visitors to click through to our end goal.
+In online marketing, landing pages are used to drive visitors towards conversion by getting them to click through to specific action. That action could be anything from encouraging users to make purchases on an online store or in our case to make use of wechaty or countless other actions. Whatever it is, there should be just one, clearly-defined [CTA (call-to-action)](<https://en.wikipedia.org/wiki/Call_to_action_(marketing)>). As opposed to being a full-blown professional website, a landing page is a single page with a highly specific target: getting visitors to click through to our end goal.
 
 This project aims to improve/reconstruct the wechaty homepage completely with value propositions. I think that landing page is the key of wechaty to attract more users because everytime when a user comes the first thing they see about wechaty is the landing page, so the landing page should be well designed, attractive and explain about the wechaty in a short, sweet and uncluttered manner.
 
@@ -75,7 +75,7 @@ This project aims to improve/reconstruct the wechaty homepage completely with va
 
 This is an example design for Wechaty Landing Page (as per available insights and can be changed based on mentor and community suggestions)
 
-![Example Design](/assets/2021/05-gsod-2021-reconstruct-landing-page-team-proposal/example-lp.png)
+![Example Design](/assets/2021/05-gsod-2021-reconstruct-landing-page-team-proposal/example-lp.webp)
 
 **Complete Design can be viewed** [**here**](https://www.figma.com/file/4mW0KnuJoBOdf5sFZ15kha/Wechaty?node-id=1%3A2)
 

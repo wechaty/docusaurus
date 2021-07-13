@@ -1,7 +1,7 @@
 ---
 title: "基于wechaty开发网课答案查询机器人"
 author: hurely
-image: /assets/2020/wanke-bot/banner.jpg
+image: /assets/2020/wanke-bot/banner.webp
 categories: project
 tags:
   - puppet
@@ -9,6 +9,7 @@ tags:
   - wangke
   - education
 ---
+
 ## 背景
 
 自己有运营一个网课答案查询的微信公众号，无奈服务器压力有时候会大，会出现回复不及时的问题，所以突发冥想开发一个个人号作为备用。
@@ -35,98 +36,100 @@ github：[https://github.com/hurely/wechaty-wangke](https://github.com/hurely/we
 ## 项目展示
 
 - 自动回复网课答案
-  ![回复网课答案](/assets/2020/wanke-bot/20201015105732.png)
+  ![回复网课答案](/assets/2020/wanke-bot/20201015105732.webp)
 
 - 接收小程序
-  ![接收小程序](/assets/2020/wanke-bot/20201015112724.png)
+  ![接收小程序](/assets/2020/wanke-bot/20201015112724.webp)
 
 ## 核心代码
 
 1.src/index.js --wechaty 启动的入口文件
 
 ```js
-const config = require("../config/config")
+const config = require("../config/config");
 
-const {
-  Wechaty,
-  ScanStatus,
-  log,
-}   = require('wechaty')
+const { Wechaty, ScanStatus, log } = require("wechaty");
 
-const { PuppetPadplus } = require("wechaty-puppet-padplus")
+const { PuppetPadplus } = require("wechaty-puppet-padplus");
 
-const replyToAMessage = require("./utils/reply")
+const replyToAMessage = require("./utils/reply");
 
-function onScan (qrcode, status) {
+function onScan(qrcode, status) {
   if (status === ScanStatus.Waiting || status === ScanStatus.Timeout) {
-      require('qrcode-terminal').generate(qrcode, { small: true })  // show qrcode on console
+    require("qrcode-terminal").generate(qrcode, { small: true }); // show qrcode on console
 
-      const qrcodeImageUrl = [
-      'https://wechaty.js.org/qrcode/',
+    const qrcodeImageUrl = [
+      "https://wechaty.js.org/qrcode/",
       encodeURIComponent(qrcode),
-      ].join('')
+    ].join("");
 
-      log.info('StarterBot', 'onScan: %s(%s) - %s', ScanStatus[status], status, qrcodeImageUrl)
-
+    log.info(
+      "StarterBot",
+      "onScan: %s(%s) - %s",
+      ScanStatus[status],
+      status,
+      qrcodeImageUrl
+    );
   } else {
-      log.info('StarterBot', 'onScan: %s(%s)', ScanStatus[status], status)
+    log.info("StarterBot", "onScan: %s(%s)", ScanStatus[status], status);
   }
 }
 
-function onLogin (user) {
-  log.info('StarterBot', '%s login', user)
+function onLogin(user) {
+  log.info("StarterBot", "%s login", user);
 }
 
-function onLogout (user) {
-  log.info('StarterBot', '%s logout', user)
+function onLogout(user) {
+  log.info("StarterBot", "%s logout", user);
 }
 
-async function onMessage (msg) {
-  log.info('StarterBot', msg)
-  var reply = await replyToAMessage(msg)
-  await msg.say(reply)
+async function onMessage(msg) {
+  log.info("StarterBot", msg);
+  var reply = await replyToAMessage(msg);
+  await msg.say(reply);
 }
 
-function onMini(msg){
-  log.info('onMini', msg)
+function onMini(msg) {
+  log.info("onMini", msg);
 }
 
 const bot = new Wechaty({
   name: config.name,
   puppet: new PuppetPadplus({
-      token: config.token
-  })
-})
+    token: config.token,
+  }),
+});
 
-bot.on('scan',    onScan)
-bot.on('login',   onLogin)
-bot.on('logout',  onLogout)
-bot.on('message', onMessage)
+bot.on("scan", onScan);
+bot.on("login", onLogin);
+bot.on("logout", onLogout);
+bot.on("message", onMessage);
 // bot.on('mini',onMini)
 
-bot.start()
-.then(() => log.info('StarterBot', 'Starter Bot Started.'))
-.catch(e => log.error('StarterBot', e))
+bot
+  .start()
+  .then(() => log.info("StarterBot", "Starter Bot Started."))
+  .catch((e) => log.error("StarterBot", e));
 ```
 
 2.config/config.js 基础的配置文件
 
 ```js
 module.exports = {
-    // 设定协议的token，本项目基于wechaty-puppet-padplus
-    token: "puppet_XXXXXXXX",
-    // 机器人名字
-    name: "XXXXXXXX",
-    //题库地址 申请链接为 http://api.51aidian.com/index.php?id=kunggggyoyoyo
-    tikuApi:"",
-    //bmob数据库配置 后续自行配置题库可以用到
-    bombApplicationId:'',
-    bombRestApiKey:'',
-    bombSecretKey:'',
-    bombMasterKey:'',
-    bombSafeCode:'',//API安全码
-    bmobHost:'https://api.bmobcloud.com/1/classes/',//数据库对应
-}
+  // 设定协议的token，本项目基于wechaty-puppet-padplus
+  token: "puppet_XXXXXXXX",
+  // 机器人名字
+  name: "XXXXXXXX",
+  //题库地址 申请链接为 http://api.51aidian.com/index.php?id=kunggggyoyoyo
+  tikuApi: "",
+  //bmob数据库配置 后续自行配置题库可以用到
+  bombApplicationId: "",
+  bombRestApiKey: "",
+  bombSecretKey: "",
+  bombMasterKey: "",
+  bombSafeCode: "", //API安全码
+  bmobHost: "https://api.bmobcloud.com/1/classes/", //数据库对应
+};
 ```
 
 3.src/utils/reply.js 根据关键字，回复内容
@@ -207,7 +210,7 @@ module.exports = {
 
 ## 网课答案接口用法
 
-![网课答案接口](/assets/2020/wanke-bot/20201015141509.png)
+![网课答案接口](/assets/2020/wanke-bot/20201015141509.webp)
 
 1.访问[http://api.51aidian.com/index.php?id=kunggggyoyoyo](http://api.51aidian.com/index.php?id=kunggggyoyoyo)
 

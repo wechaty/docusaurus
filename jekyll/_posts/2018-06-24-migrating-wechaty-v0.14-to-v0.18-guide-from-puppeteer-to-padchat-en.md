@@ -5,20 +5,20 @@ categories: migration
 tags:
   - code
   - news
-image: /assets/2018/code-migration-en.png
+image: /assets/2018/code-migration-en.webp
 ---
 
 Wechaty has been updated to version 0.16(BETA) these days and begin to support all kinds of wechat solutions including web, ipad, ios, etc. My product based on wechaty has to migration from wechaty solution based on web to ipad solution.
 
 This blog introduces how to porting code from wechaty puppeteer to padchat.
 
-![code](/assets/2018/code-migration-en.png)
+![code](/assets/2018/code-migration-en.webp)
 
 ## 1. Puppeteer VS Padchat
 
 **Puppet System** means to connect Wechaty API to any kinds of Puppets, including Web, iPad, Android, Windows Hook and ios. Different implements of these puppets are totally different, without the puppet, using one API to bridge all implement is very difficult, so we had Puppet System.
 
-![Puppet](/assets/2018/abstract-info.png)
+![Puppet](/assets/2018/abstract-info.webp)
 
 - Puppeteer: a solution based on Web Wechat
 - Padchat: a solution based on Ipad Wechat
@@ -143,27 +143,27 @@ I suggest to refer wechaty config about `tslint` and `tsconfig`
 Here are some tips about wehcaty config:
 
 - "strict" : true
-    Enable all strict type checking options.
-    Enabling --strict enables --noImplicitAny, --noImplicitThis, --alwaysStrict, --strictNullChecks, --strictFunctionTypes and --strictPropertyInitialization
-- "noEmitOnError"              : true
-    Do not emit outputs if any errors were reported.
-- "noUnusedLocals"             : true
-    Report errors on unused locals.
-- "noImplicitReturns"          : true
-    Report error when not all code paths in function return a value.
+  Enable all strict type checking options.
+  Enabling --strict enables --noImplicitAny, --noImplicitThis, --alwaysStrict, --strictNullChecks, --strictFunctionTypes and --strictPropertyInitialization
+- "noEmitOnError" : true
+  Do not emit outputs if any errors were reported.
+- "noUnusedLocals" : true
+  Report errors on unused locals.
+- "noImplicitReturns" : true
+  Report error when not all code paths in function return a value.
 - "noFallthroughCasesInSwitch" : true
-    Report errors for fallthrough cases in switch statement.
-- "strictNullChecks"           : true
-    In strict null checking mode, the null and undefined values are not in the domain of every type and are only assignable to themselves and any (the one exception being that undefined is also assignable to void).
-- "noImplicitAny"              : true
-    Raise error on expressions and declarations with an implied any type.
-    Related issue: [ts-node 7.0 breaking change: Skip `files` by default](https://github.com/wechaty/wechaty/issues/1383)
+  Report errors for fallthrough cases in switch statement.
+- "strictNullChecks" : true
+  In strict null checking mode, the null and undefined values are not in the domain of every type and are only assignable to themselves and any (the one exception being that undefined is also assignable to void).
+- "noImplicitAny" : true
+  Raise error on expressions and declarations with an implied any type.
+  Related issue: [ts-node 7.0 breaking change: Skip `files` by default](https://github.com/wechaty/wechaty/issues/1383)
 - "no-floating-promises": true
-    Check the floating promise。Related issue: [Prevent the Floating Promise in the Async/Await Code](https://github.com/wechaty/wechaty/issues/1346)
-- "noUnusedParameters"         : true
-    Report errors on unused parameters.。
-- "noImplicitThis"             : true
-    Raise error on this expression with an implied any type.
+  Check the floating promise。Related issue: [Prevent the Floating Promise in the Async/Await Code](https://github.com/wechaty/wechaty/issues/1346)
+- "noUnusedParameters" : true
+  Report errors on unused parameters.。
+- "noImplicitThis" : true
+  Raise error on this expression with an implied any type.
 
 see more in [official website](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
 
@@ -171,9 +171,9 @@ see more in [official website](https://www.typescriptlang.org/docs/handbook/comp
 
 ```json
 {
-    "scripts": {
-        "lint": "tslint --project . src/**/*.ts src/**/*.tsx",
-    }
+  "scripts": {
+    "lint": "tslint --project . src/**/*.ts src/**/*.tsx"
+  }
 }
 ```
 
@@ -195,7 +195,7 @@ You can find wechaty editorconfig in [.editorconfig](https://github.com/wechaty/
 
 After upgrade wechaty, see more in[blog](https://wechaty.github.io/wechaty-new-release-version-0.16/). Although we are trying to minimize API changes, there are some breaking changes. I really suggest you reading [CHANGE LOG](https://github.com/wechaty/wechaty/blob/master/CHANGELOG.md). Also, I list some important changes here:
 
-### bot.init() change to  bot.start()
+### bot.init() change to bot.start()
 
 ### bot.quit() change to bot.stop()
 
@@ -206,29 +206,28 @@ After upgrade wechaty, see more in[blog](https://wechaty.github.io/wechaty-new-r
 #### Before (v0.14 or below)
 
 ```ts
-wechaty.on('friend', (contact, request) => {
+wechaty.on("friend", (contact, request) => {
   if (!request) {
     // this is a friend request confirmation event
   } else {
     // this is a friend request
   }
-})
-
+});
 ```
 
 #### After (v0.16 or above)
 
 ```ts
-wechaty.on('friendship', request => {
+wechaty.on("friendship", (request) => {
   switch (request.type()) {
     case FriendRequest.Type.RECEIVE:
       // this is a friend request request
-      break
+      break;
     case FriendRequest.Type.CONFIRM:
       // this is a friend request confirmation
-      break
+      break;
   }
-})
+});
 ```
 
 Related link:
@@ -256,8 +255,8 @@ Use Message instead.
 Migration Example
 
 ```diff
-- bot.say(new MediaMessage('/image.png')
-+ bot.say(new Message('/image.png')
+- bot.say(new MediaMessage('/image.webp')
++ bot.say(new Message('/image.webp')
 ```
 
 Related issue
@@ -270,9 +269,9 @@ Related issue
 
 ```ts
 const fileBox = FileBox.fromStream(
-fs.createReadStream(BOT_QR_CODE_IMAGE_FILE),
-BOT_QR_CODE_IMAGE_FILE,
-)
+  fs.createReadStream(BOT_QR_CODE_IMAGE_FILE),
+  BOT_QR_CODE_IMAGE_FILE
+);
 ```
 
 ### Wechaty self() change to Wechaty.userSelf()
@@ -286,21 +285,21 @@ Related issue:
 #### Contact.personal() Before
 
 ```ts
-const isPersonal = contact.personal()
-const isOfficial = contact.official()
+const isPersonal = contact.personal();
+const isOfficial = contact.official();
 ```
 
 #### Contact.personal() sAfter
 
 ```ts
-  /**
-   * Return the type of the Contact
-   *
-   * @returns ContactType - Contact.Type.PERSONAL for personal account, Contact.Type.OFFICIAL for official account
-   * @example
-   * const isOfficial = contact.type() === Contact.Type.OFFICIAL
-   */
-  const type = Contact.type()
+/**
+ * Return the type of the Contact
+ *
+ * @returns ContactType - Contact.Type.PERSONAL for personal account, Contact.Type.OFFICIAL for official account
+ * @example
+ * const isOfficial = contact.type() === Contact.Type.OFFICIAL
+ */
+const type = Contact.type();
 ```
 
 Related issue
@@ -318,13 +317,13 @@ Related issue:
 #### Room.topic() Before
 
 ```ts
-const topic = room.topic()
+const topic = room.topic();
 ```
 
 #### Room.topic() After
 
 ```ts
-const topic = await room.topic()
+const topic = await room.topic();
 ```
 
 Related issue:
@@ -336,13 +335,13 @@ Related issue:
 #### Room.alias(contact) Before
 
 ```ts
-const alias = room.alias(contact)
+const alias = room.alias(contact);
 ```
 
 #### Room.alias(contact) After
 
 ```ts
-const alias = await room.alias(contact)
+const alias = await room.alias(contact);
 ```
 
 Related issue:
@@ -354,13 +353,13 @@ Related issue:
 #### Room.memberList() Before
 
 ```ts
-const memberList = room.memberList()
+const memberList = room.memberList();
 ```
 
 #### Room.memberList() After
 
 ```ts
-const memberList = await room.memberList()
+const memberList = await room.memberList();
 ```
 
 Related Issue:
@@ -372,7 +371,7 @@ Related Issue:
 #### Room.member() Before
 
 ```ts
-const contact = room.member('Huan')
+const contact = room.member("Huan");
 ```
 
 #### Room.member() After
@@ -392,20 +391,20 @@ WARNING: This change will let us make more mistakes:
 
 ```ts
 if (room.has(contact)) {
-  console.error('here will always be executed because Promise === true')
+  console.error("here will always be executed because Promise === true");
 }
 ```
 
 #### Room.has(contact) Before
 
 ```ts
-const exist = room.has(contact)
+const exist = room.has(contact);
 ```
 
 #### Room.has(contact) After
 
 ```ts
-const exist = await room.has(contact)
+const exist = await room.has(contact);
 ```
 
 Related Link:
@@ -420,7 +419,7 @@ BREAKING CHANGE: v0.16 `Message.mention()` change from `sync` to `async`
 #### Message.mention() Before
 
 ```ts
-const mentionList = message.mention()
+const mentionList = message.mention();
 ```
 
 #### Message.mention() After
@@ -512,7 +511,7 @@ According to the `ext()` methods behavior in Node/Python/C# etc, the `ext()` alw
 So the following BREAKING CHANGE was made in v0.15:
 
 ```ts
-const ext = message.ext()
+const ext = message.ext();
 // assume the filename is `test.txt`
 ```
 

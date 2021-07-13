@@ -8,17 +8,17 @@ tags:
   - plugin
   - feature
   - ecosystem
-image: /assets/2020/web-panel-plugin/web-head.png
+image: /assets/2020/web-panel-plugin/web-head.webp
 ---
 
-> 作者: [Leo_chen](https://github.com/leochen-g/)，高级前端工程师，喜欢使用node做各种项目
+> 作者: [Leo_chen](https://github.com/leochen-g/)，高级前端工程师，喜欢使用 node 做各种项目
 
 <!-- more -->
 
 ## 背景介绍
 
-对，又是那个写[《微信每日说》](https://github.com/gengchen528/wechatBot)的家伙来搞事情了。周末在参加了《Wechaty插件系统发布分享会》后，看到大家在群里讨有说到要是有一个可视化的面板插件就好了，
-看到这里，我就开始萌生了一个想法。其实可视化面板我已经做出来了，何不把这块逻辑直接抽成一个插件来提供web面板服务。既然如此，说干就干，凌晨3点钟，此插件终于发布成功
+对，又是那个写[《微信每日说》](https://github.com/gengchen528/wechatBot)的家伙来搞事情了。周末在参加了《Wechaty 插件系统发布分享会》后，看到大家在群里讨有说到要是有一个可视化的面板插件就好了，
+看到这里，我就开始萌生了一个想法。其实可视化面板我已经做出来了，何不把这块逻辑直接抽成一个插件来提供 web 面板服务。既然如此，说干就干，凌晨 3 点钟，此插件终于发布成功
 
 插件地址：[Wechaty-web-panel](https://github.com/gengchen528/wechaty-web-panel)
 
@@ -28,9 +28,9 @@ image: /assets/2020/web-panel-plugin/web-head.png
 
 ### 定时提醒
 
-- [x] 当天定时提醒  例："提醒 我 18:00 下班了，记得带好随身物品"
-- [x] 每天定时提醒  例："提醒 我 每天 18:00 下班了，记得带好随身物品"
-- [x] 指定日期提醒  例："提醒 我 2019-05-10 8:00 还有7天是女朋友生日了，准备一下"
+- [x] 当天定时提醒 例："提醒 我 18:00 下班了，记得带好随身物品"
+- [x] 每天定时提醒 例："提醒 我 每天 18:00 下班了，记得带好随身物品"
+- [x] 指定日期提醒 例："提醒 我 2019-05-10 8:00 还有 7 天是女朋友生日了，准备一下"
 
 ### 智能机器人
 
@@ -42,7 +42,7 @@ image: /assets/2020/web-panel-plugin/web-head.png
 
 - [x] 群新闻定时发送
 - [x] 群消息定时发送
-- [ ] 更多功能等你来pr
+- [ ] 更多功能等你来 pr
 
 ### 关键词
 
@@ -53,9 +53,9 @@ image: /assets/2020/web-panel-plugin/web-head.png
   - [x] 天气查询 例："上海天气"
   - [x] 垃圾分类 例："?香蕉皮"
   - [x] 名人名言 例： "名人名言"
-  - [x] 老黄历查询 例： "黄历2019-6-13"
+  - [x] 老黄历查询 例： "黄历 2019-6-13"
   - [x] 姓氏起源 例： "姓陈"
-  - [x] 星座运势 例： "*双子座"
+  - [x] 星座运势 例： "\*双子座"
   - [x] 神回复 例： "神回复"
   - [x] 获取表情包 例： "表情包你好坏"
   - [x] 获取美女图 例： "美女图"
@@ -88,7 +88,7 @@ image: /assets/2020/web-panel-plugin/web-head.png
 
 3. 个人中心获取`APIKEY`和`APISECRET`，后续配置用到
 
-![user-center](/assets/2020/web-panel-plugin/user-center.png)
+![user-center](/assets/2020/web-panel-plugin/user-center.webp)
 
 ### 开始
 
@@ -145,32 +145,32 @@ ode mybot.js
 
 进入面板`小助手配置->登录状态`扫码登录，或直接扫码控制台二维码登录。成功登陆后，即可使用面板中所有的功能
 
-![qrcode](/assets/2020/web-panel-plugin/qrcode-s.png)
+![qrcode](/assets/2020/web-panel-plugin/qrcode-s.webp)
 
 ## 面板预览
 
-![qrcpde](/assets/2020/web-panel-plugin/qrcode.png)
-![everyday](/assets/2020/web-panel-plugin/everyday.png)
-![schedule](/assets/2020/web-panel-plugin/schedule.png)
-![event](/assets/2020/web-panel-plugin/event.png)
-![material](/assets/2020/web-panel-plugin/material.png)
+![qrcpde](/assets/2020/web-panel-plugin/qrcode.webp)
+![everyday](/assets/2020/web-panel-plugin/everyday.webp)
+![schedule](/assets/2020/web-panel-plugin/schedule.webp)
+![event](/assets/2020/web-panel-plugin/event.webp)
+![material](/assets/2020/web-panel-plugin/material.webp)
 
 ## 功能预览
 
-![news](/assets/2020/web-panel-plugin/news.jpeg)
+![news](/assets/2020/web-panel-plugin/news.webp)
 
 个人定时与群定时任务
 
-![func](/assets/2020/web-panel-plugin/func.jpeg)
+![func](/assets/2020/web-panel-plugin/func.webp)
 
 功能一览
 
 ## 后续
 
-后续会继续完善插件的功能，也欢迎大家来提交Pr。如果想要了解插件最新进展或者进行交流，欢迎添加我的小秘书，回复`插件`拉你进群
+后续会继续完善插件的功能，也欢迎大家来提交 Pr。如果想要了解插件最新进展或者进行交流，欢迎添加我的小秘书，回复`插件`拉你进群
 
-![8](/assets/2020/web-panel-plugin/qr.png)
+![8](/assets/2020/web-panel-plugin/qr.webp)
 
 ## 致谢
 
-感谢Wechaty团队提供这么好的一个工具，同时还开发出这么赞的插件系统。希望能够有更多的人参与进来，来继续扩大wechaty插件的生态圈
+感谢 Wechaty 团队提供这么好的一个工具，同时还开发出这么赞的插件系统。希望能够有更多的人参与进来，来继续扩大 wechaty 插件的生态圈

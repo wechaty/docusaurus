@@ -5,44 +5,41 @@ categories: hacking
 tags:
   - code
   - featured
-image: /assets/2017/binsee-wechaty-structure.png
+image: /assets/2017/binsee-wechaty-structure.webp
 ---
 
 ![wechaty结构脑图][1]
 
-一个菜鸟如何通过解析webWxApp与wechaty代码，来给wechaty增加新特性的回顾。
+一个菜鸟如何通过解析 webWxApp 与 wechaty 代码，来给 wechaty 增加新特性的回顾。
 
 ## 简述
 
-我对wechaty一开始是因为兴趣，而并非是项目需要，因此只是观望。直到看到美女[lijiarui](https://github.com/lijiarui)提出的issue[#710 Cannot send pdf file using MediaMessage](https://github.com/wechaty/wechaty/issues/710)，被赏金诱惑才尝试着手来解决这个问题(:joy:)，并陆续提交了一些pr来增强wechaty的功能(论激励的重要性:joy:)。
+我对 wechaty 一开始是因为兴趣，而并非是项目需要，因此只是观望。直到看到美女[lijiarui](https://github.com/lijiarui)提出的 issue[#710 Cannot send pdf file using MediaMessage](https://github.com/wechaty/wechaty/issues/710)，被赏金诱惑才尝试着手来解决这个问题(:joy:)，并陆续提交了一些 pr 来增强 wechaty 的功能(论激励的重要性:joy:)。
 
 > Pull requests list:
-> [#714 send any type file](https://github.com/wechaty/wechaty/pull/714)
-> [#727 Add Message.forward() forward message](https://github.com/wechaty/wechaty/pull/727)
-> [#744 emit RECALLED type msg(fix #8)](https://github.com/wechaty/wechaty/pull/744)
-> [#771 Support for send 25Mb+ files](https://github.com/wechaty/wechaty/pull/771)
+> [#714 send any type file](https://github.com/wechaty/wechaty/pull/714) > [#727 Add Message.forward() forward message](https://github.com/wechaty/wechaty/pull/727) > [#744 emit RECALLED type msg(fix #8)](https://github.com/wechaty/wechaty/pull/744) > [#771 Support for send 25Mb+ files](https://github.com/wechaty/wechaty/pull/771)
 
-在这个过程过，为了实现这些功能，不得不尝试去阅读WebWxApp及wechaty的源码，来了解他们的功能结构，以及学习typesrcipt。
-本文通过记录解决这几个问题的过程，来对WebWxApp和Wechaty的进行一些解读。
+在这个过程过，为了实现这些功能，不得不尝试去阅读 WebWxApp 及 wechaty 的源码，来了解他们的功能结构，以及学习 typesrcipt。
+本文通过记录解决这几个问题的过程，来对 WebWxApp 和 Wechaty 的进行一些解读。
 
-我接触wechaty时是在V0.8.x版本，此文提及的pr代码及对wechaty结构的理解适用于V0.8.x版本，最新的0.10.x版本的`puttet-web`进行了重构，一些地方会有不同，因此仅做参考。
+我接触 wechaty 时是在 V0.8.x 版本，此文提及的 pr 代码及对 wechaty 结构的理解适用于 V0.8.x 版本，最新的 0.10.x 版本的`puttet-web`进行了重构，一些地方会有不同，因此仅做参考。
 
 作为一个菜鸟，对一些知识的理解认识不足或错误的地方，希望大佬们指正。
 
 ## 计划内容
 
-- wechaty结构的简单分析
+- wechaty 结构的简单分析
 - 捕捉撤消信息事件
 - 实现转发信息功能（在下篇文章中写）
 - 完善发送文件功能（在下篇文章中写）
 
-## WebWxApp与wechaty的大概框架结构
+## WebWxApp 与 wechaty 的大概框架结构
 
 ### WebWxApp
 
-WebWxApp是基于angular开发，使用webpack打包的前端项目，可在Chatie的`webwx-app-tracker`项目查看其[格式化过的代码](https://github.com/wechaty/webwx-app-tracker/blob/master/formatted/webwxApp.js)。
+WebWxApp 是基于 angular 开发，使用 webpack 打包的前端项目，可在 Chatie 的`webwx-app-tracker`项目查看其[格式化过的代码](https://github.com/wechaty/webwx-app-tracker/blob/master/formatted/webwxApp.js)。
 
-WebWxApp内定义了一些功能模块，下面列举一些涉及主要功能的:
+WebWxApp 内定义了一些功能模块，下面列举一些涉及主要功能的:
 
 ```javascript
 angular.module("Controllers").controller("loginController", ...)
@@ -64,48 +61,48 @@ angular.module("Services").factory("emojiFactory", ...)
 angular.module("Services").factory("mmHttp", ...)
 ```
 
-我对angular并没有什么研究，有兴趣的朋友可以自行阅读相关源码。
+我对 angular 并没有什么研究，有兴趣的朋友可以自行阅读相关源码。
 
-在wechaty中，我们要实现、完善一些功能，需要参考webwxapp中相关代码的逻辑结构和流程。
+在 wechaty 中，我们要实现、完善一些功能，需要参考 webwxapp 中相关代码的逻辑结构和流程。
 
-需要说明的是，webwxapp中并没有对所有事件、信息进行同样的处理，某些特性是wechaty默认捕捉不到的。比如`撤回信息的 RECALLED类型信息`，因此我们就必须要阅读webwxapp的源码，梳理其代码流程，来找到切入点解决问题。
+需要说明的是，webwxapp 中并没有对所有事件、信息进行同样的处理，某些特性是 wechaty 默认捕捉不到的。比如`撤回信息的 RECALLED类型信息`，因此我们就必须要阅读 webwxapp 的源码，梳理其代码流程，来找到切入点解决问题。
 
 ### wechaty
 
-wechaty设计进行分层、抽象化封装。
+wechaty 设计进行分层、抽象化封装。
 
-- 如将联系人Contact、信息Message、群Room、好友请求friend-request 按功能进行封装，提取主要数据并通过方法及`obj`属性对外暴露，以供访问使用。（可查看Contact、Message、Room这三个类中定义的rawObj及obj属性。前者为原始数据结构，后者为封装提取后的数据）
-- 另外实现了Puppet类接口，作为实现操纵微信的通道。目前仅有puppet-web，基于webWxApp操作微信的实现。而未来，我们会尝试实现基于微信PC版的puppet，甚至是ipad版的puppet，那样会比Web版微信能做的更多。
+- 如将联系人 Contact、信息 Message、群 Room、好友请求 friend-request 按功能进行封装，提取主要数据并通过方法及`obj`属性对外暴露，以供访问使用。（可查看 Contact、Message、Room 这三个类中定义的 rawObj 及 obj 属性。前者为原始数据结构，后者为封装提取后的数据）
+- 另外实现了 Puppet 类接口，作为实现操纵微信的通道。目前仅有 puppet-web，基于 webWxApp 操作微信的实现。而未来，我们会尝试实现基于微信 PC 版的 puppet，甚至是 ipad 版的 puppet，那样会比 Web 版微信能做的更多。
 
-#### puppet功能
+#### puppet 功能
 
-这里以puppet-web来简单说明一下，puppet的功能。
+这里以 puppet-web 来简单说明一下，puppet 的功能。
 
-简单来说，puppet-web通过浏览器驱动(`selenium-webdriver`、`puppeteer`)创建一个浏览器环境（下称web环境）来加载WebWxApp(`wx.qq.com`)，并通过浏览器驱动将代码注入进web环境。
-注入web环境的代码（以下称wechatyBro）会通过websocket来连接wechaty创建的websocket服务端，这样就可以在WebWxApp与wechaty之间进行通讯了。由于websocket协议是异步请求，因此对webWxApp的操作仍需要使用浏览器驱动将代码注入web环境执行的方式，来确保对webWxApp操作的同步性。
+简单来说，puppet-web 通过浏览器驱动(`selenium-webdriver`、`puppeteer`)创建一个浏览器环境（下称 web 环境）来加载 WebWxApp(`wx.qq.com`)，并通过浏览器驱动将代码注入进 web 环境。
+注入 web 环境的代码（以下称 wechatyBro）会通过 websocket 来连接 wechaty 创建的 websocket 服务端，这样就可以在 WebWxApp 与 wechaty 之间进行通讯了。由于 websocket 协议是异步请求，因此对 webWxApp 的操作仍需要使用浏览器驱动将代码注入 web 环境执行的方式，来确保对 webWxApp 操作的同步性。
 
-*关于浏览器驱动：* puppet-web先后使用过`selenium-webdriver`和`puppeteer`，最新版本中使用的是`puppeteer`。
+_关于浏览器驱动：_ puppet-web 先后使用过`selenium-webdriver`和`puppeteer`，最新版本中使用的是`puppeteer`。
 
-----
+---
 
-##### puppet-web的模块化
+##### puppet-web 的模块化
 
-puppet-web中对将功能拆分为不同模块：
+puppet-web 中对将功能拆分为不同模块：
 
-- `puppet-web` puppet-web的主体部分，初始化并调度其他模块的操作，实现上传文件功能。
-- `bridge` 封装需要注入web环境的代码，为`puppet-web`提供各项功能操作的方法。如`send()`方法
-- `browser` 封装对浏览器驱动的操作。如`bridge`需要通过`browser`封装的`execute`方法将js代码注入到web环境执行。
+- `puppet-web` puppet-web 的主体部分，初始化并调度其他模块的操作，实现上传文件功能。
+- `bridge` 封装需要注入 web 环境的代码，为`puppet-web`提供各项功能操作的方法。如`send()`方法
+- `browser` 封装对浏览器驱动的操作。如`bridge`需要通过`browser`封装的`execute`方法将 js 代码注入到 web 环境执行。
 - `firer` 封装一些信息解析、事件检查工作。
 - `friend-request` 封装好友请求操作。
-- `server` 封装了websocket服务端操作，并继承EventEmitter，将websocket接收到的信息以event方式广播。
-- `event` 封装了对server事件的监听处理。
+- `server` 封装了 websocket 服务端操作，并继承 EventEmitter，将 websocket 接收到的信息以 event 方式广播。
+- `event` 封装了对 server 事件的监听处理。
 - `watchdog`
-- `wechatyBro` 注入web环境运行的代码，实现对webWxApp的各种操作。
+- `wechatyBro` 注入 web 环境运行的代码，实现对 webWxApp 的各种操作。
 
-wechatyBro中监听webWxApp中的信息事件，然后通过websocket把事件信息发送给puppet-web。而wechaty通过puppet-web操纵webWxApp。由于websocket不能同步返回处理结果，因此需要通过浏览器驱动将js代码注入进web环境执行（调用wechatyBro中的方法来操作webWxApp），并返回Promise将操作同步化。(可见`/src/puppet-web/bridge.ts`中`proxyWechaty()`)
+wechatyBro 中监听 webWxApp 中的信息事件，然后通过 websocket 把事件信息发送给 puppet-web。而 wechaty 通过 puppet-web 操纵 webWxApp。由于 websocket 不能同步返回处理结果，因此需要通过浏览器驱动将 js 代码注入进 web 环境执行（调用 wechatyBro 中的方法来操作 webWxApp），并返回 Promise 将操作同步化。(可见`/src/puppet-web/bridge.ts`中`proxyWechaty()`)
 
 **例如：**
-wechaty中发送一条信息，会按以下顺序执行：
+wechaty 中发送一条信息，会按以下顺序执行：
 
 ```javascript
 //伪代码，标记调用过程
@@ -121,70 +118,70 @@ bridge.proxyWechaty() -> bridge.execute() -> browser.execute()
 // 将js代码注入web环境执行，并Promise以返回执行结果
 ```
 
-##### puppet-web功能简述
+##### puppet-web 功能简述
 
-1. puppet-web创建一个websocket服务端用来接收wechatyBro的通信
-2. puppet-web通过浏览器驱动将wechatyBro的js代码注入进入web环境执行。
-3. WechatyBro进行初始化工作：连接puppet-web的websocket服务端，监听webWxApp的事件并进行处理后通过websocket发送给puppet-web。
-4. wechaty通过puppet-web执行各项功能时（如发送信息、创建群、拉人、踢人等主动操作），puppet-web会通过浏览器驱动将代码注入进web环境执行，以Promise返回执行结果
+1. puppet-web 创建一个 websocket 服务端用来接收 wechatyBro 的通信
+2. puppet-web 通过浏览器驱动将 wechatyBro 的 js 代码注入进入 web 环境执行。
+3. WechatyBro 进行初始化工作：连接 puppet-web 的 websocket 服务端，监听 webWxApp 的事件并进行处理后通过 websocket 发送给 puppet-web。
+4. wechaty 通过 puppet-web 执行各项功能时（如发送信息、创建群、拉人、踢人等主动操作），puppet-web 会通过浏览器驱动将代码注入进 web 环境执行，以 Promise 返回执行结果
 
-以上对wechaty进行一个大概的了解，下边来以几个pr的实现来进一步了解wechaty。
+以上对 wechaty 进行一个大概的了解，下边来以几个 pr 的实现来进一步了解 wechaty。
 
-##### puttet-web操作webWxApp的关键点
+##### puttet-web 操作 webWxApp 的关键点
 
-WebWxApp内部实现了一些功能模块，来封装不同的功能代码。
+WebWxApp 内部实现了一些功能模块，来封装不同的功能代码。
 在`wechaty-bro`的`glueToAngular()`方法中，通过使用`angular.element(document).injector().get(name)`来获取不同的功能模块并保存在`WechatyBro.glue`中，使在`WechatyBro`中可以调用`WebWxApp`的功能代码，来实现不同的功能。
 
-`WechatyBro`初始化时会调用`hookEvents()`来监听`WebWxapp`的事件，如页面初始化`root:pageInit:success`、新信息`message:add:success`，并通过websocket将信息发送到`puppet-web`。
+`WechatyBro`初始化时会调用`hookEvents()`来监听`WebWxapp`的事件，如页面初始化`root:pageInit:success`、新信息`message:add:success`，并通过 websocket 将信息发送到`puppet-web`。
 
-而`wechatyBro`中封装了一些操作，需要puppet-web通过浏览器驱动将代码注入web环境来调用，并返回其运行结果，浏览器驱动会将运行结果以Promise返回隔天puppet-web。
+而`wechatyBro`中封装了一些操作，需要 puppet-web 通过浏览器驱动将代码注入 web 环境来调用，并返回其运行结果，浏览器驱动会将运行结果以 Promise 返回隔天 puppet-web。
 
-webwxApp中的工厂`factory`有很多，WechatyBro获取了一些需要用到的保存在内部，以便调用：
+webwxApp 中的工厂`factory`有很多，WechatyBro 获取了一些需要用到的保存在内部，以便调用：
 
 ```javascript
 //此部分代码从 WechatyBro 中摘出
-var injector  = angular.element(document).injector()
+var injector = angular.element(document).injector();
 
-var accountFactory  = injector.get('accountFactory')
-var appFactory      = injector.get('appFactory')
-var chatroomFactory = injector.get('chatroomFactory')
-var chatFactory     = injector.get('chatFactory')
-var contactFactory  = injector.get('contactFactory')
-var confFactory     = injector.get('confFactory')
-var emojiFactory    = injector.get('emojiFactory')
-var loginFactory    = injector.get('loginFactory')
-var utilFactory     = injector.get('utilFactory')
+var accountFactory = injector.get("accountFactory");
+var appFactory = injector.get("appFactory");
+var chatroomFactory = injector.get("chatroomFactory");
+var chatFactory = injector.get("chatFactory");
+var contactFactory = injector.get("contactFactory");
+var confFactory = injector.get("confFactory");
+var emojiFactory = injector.get("emojiFactory");
+var loginFactory = injector.get("loginFactory");
+var utilFactory = injector.get("utilFactory");
 
-var http            = injector.get('$http')
-var state           = injector.get('$state')
-var mmHttp          = injector.get('mmHttp')
+var http = injector.get("$http");
+var state = injector.get("$state");
+var mmHttp = injector.get("mmHttp");
 
 // 保存到WechatyBro.glue
 WechatyBro.glue = {
-  injector:       injector
-  , http:         http
-  , mmHttp:       mmHttp
-  , state:        state
-  , accountFactory:  accountFactory
-  , chatroomFactory: chatroomFactory
-  , chatFactory:     chatFactory
-  , confFactory:     confFactory
-  , contactFactory:  contactFactory
-  , emojiFactory:    emojiFactory
-  , loginFactory:    loginFactory
-  , utilFactory:     utilFactory
-  , rootScope:    rootScope
-  , appScope:     appScope
-  , loginScope:   loginScope
-  , contentChatScope: contentChatScope
-}
+  injector: injector,
+  http: http,
+  mmHttp: mmHttp,
+  state: state,
+  accountFactory: accountFactory,
+  chatroomFactory: chatroomFactory,
+  chatFactory: chatFactory,
+  confFactory: confFactory,
+  contactFactory: contactFactory,
+  emojiFactory: emojiFactory,
+  loginFactory: loginFactory,
+  utilFactory: utilFactory,
+  rootScope: rootScope,
+  appScope: appScope,
+  loginScope: loginScope,
+  contentChatScope: contentChatScope,
+};
 ```
 
 ### 捕捉撤消信息事件
 
-以前wechaty是捕捉不到撤回消息的RECALLED事件的（最早见[issues#8](https://github.com/wechaty/wechaty/issues/8)），原因在于webWxApp的`messageProcess`中，对RECALLED事件的处理与其他类型的信息事件不一致。
+以前 wechaty 是捕捉不到撤回消息的 RECALLED 事件的（最早见[issues#8](https://github.com/wechaty/wechaty/issues/8)），原因在于 webWxApp 的`messageProcess`中，对 RECALLED 事件的处理与其他类型的信息事件不一致。
 
-我们看下webWxApp中处理消息的`messageProcess()`方法代码：
+我们看下 webWxApp 中处理消息的`messageProcess()`方法代码：
 
 ```javascript
 messageProcess: function(e) {
@@ -253,7 +250,7 @@ messageProcess: function(e) {
 
 注意代码中处理`confFactory.MSGTYPE_RECALLED`类型信息的方式，是使用了`return`的，不会再执行下边的`t.addChatMessage(e)`。
 
-我们看下webWxApp中 `addChatMessage()`的代码：
+我们看下 webWxApp 中 `addChatMessage()`的代码：
 
 ```javascript
 addChatMessage: function(e) {
@@ -272,53 +269,54 @@ addChatMessage: function(e) {
 },
 ```
 
-wechatyBro中监听webWxApp事件的代码如下：
+wechatyBro 中监听 webWxApp 事件的代码如下：
 
 ```javascript
-rootScope.$on('message:add:success', function(event, data) {
-  if (!isLogin()) { // in case of we missed the pageInit event
-    login('by event[message:add:success]')
+rootScope.$on("message:add:success", function (event, data) {
+  if (!isLogin()) {
+    // in case of we missed the pageInit event
+    login("by event[message:add:success]");
   }
-  WechatyBro.emit('message', data)
-})
+  WechatyBro.emit("message", data);
+});
 ```
 
-`addChatMessage()`中使用`$rootScope.$broadcast("message:add:success", e)`来广播信息事件，而wechatyBro通过`rootScope.$on('message:add:success', function(event, data) {})`监听信息事件，从而获得webWxApp的信息（包含系统信息事件）。
+`addChatMessage()`中使用`$rootScope.$broadcast("message:add:success", e)`来广播信息事件，而 wechatyBro 通过`rootScope.$on('message:add:success', function(event, data) {})`监听信息事件，从而获得 webWxApp 的信息（包含系统信息事件）。
 
-而由于`messageProcess()`中对`confFactory.MSGTYPE_RECALLED`类型的信息使用了`return`，因此wechatyBro捕捉不到`RECALLED`事件的信息，wechaty自然也就无法得知某条消息被撤消了。
+而由于`messageProcess()`中对`confFactory.MSGTYPE_RECALLED`类型的信息使用了`return`，因此 wechatyBro 捕捉不到`RECALLED`事件的信息，wechaty 自然也就无法得知某条消息被撤消了。
 
 #### 解决方案
 
-既然`messageProcess()`中对`RECALLED`类型信息使用了return，但先调用了`t._recalledMsgProcess(e)`，那么我们可以使用在wechatyBro中hook `t._recalledMsgProcess()` 的方式来获得`RECALLED`类型的事件信息。
+既然`messageProcess()`中对`RECALLED`类型信息使用了 return，但先调用了`t._recalledMsgProcess(e)`，那么我们可以使用在 wechatyBro 中 hook `t._recalledMsgProcess()` 的方式来获得`RECALLED`类型的事件信息。
 
-通过分析webWxApp代码，得知`_recalledMsgProcess()`是`chatFactory`中的方法（善用搜索）。那么我们在wechatyBro中，就要hook`chatFactory._recalledMsgProcess()`方法了。
+通过分析 webWxApp 代码，得知`_recalledMsgProcess()`是`chatFactory`中的方法（善用搜索）。那么我们在 wechatyBro 中，就要 hook`chatFactory._recalledMsgProcess()`方法了。
 
-在wechatyBro中，使用`WechatyBro.glue.chatFactory`来获得webWxApp的`chatFactory`。
+在 wechatyBro 中，使用`WechatyBro.glue.chatFactory`来获得 webWxApp 的`chatFactory`。
 
 我们添加以下代码：
 
 ```javascript
 function hookRecalledMsgProcess() {
-  var chatFactory = WechatyBro.glue.chatFactory
+  var chatFactory = WechatyBro.glue.chatFactory;
   // 保存webWxApp自身的处理代码副本
-  chatFactory.__recalledMsgProcess = chatFactory._recalledMsgProcess
+  chatFactory.__recalledMsgProcess = chatFactory._recalledMsgProcess;
   // 定义一个新的处理方法替换原始处理代码
-  chatFactory._recalledMsgProcess = function(msg) {
-    chatFactory.__recalledMsgProcess(msg) //调用原始处理代码
+  chatFactory._recalledMsgProcess = function (msg) {
+    chatFactory.__recalledMsgProcess(msg); //调用原始处理代码
     //...下边就可以写我们的处理代码了
-  }
+  };
 }
 
 // init()方法中需要添加调用 hookRecalledMsgProcess()
-function init(){
+function init() {
   // ...
-    hookEvents()
-    hookRecalledMsgProcess()  //添加到hookEvents()后边
+  hookEvents();
+  hookRecalledMsgProcess(); //添加到hookEvents()后边
   // ...
 }
 ```
 
-webwxApp中`_recalledMsgProcess()`会对撤回信息进行解析处理，我们需要分析其代码，获取被撤回的信息内容，并通过websocket发给puppet-web。
+webwxApp 中`_recalledMsgProcess()`会对撤回信息进行解析处理，我们需要分析其代码，获取被撤回的信息内容，并通过 websocket 发给 puppet-web。
 
 ```javascript
 _recalledMsgProcess: function(e) {
@@ -421,13 +419,13 @@ function glueToAngular() {
 
 ```
 
-完整patch代码见[PR commit#174b6775c](https://github.com/wechaty/wechaty/commit/174b6775c4e9242e5f003094b2f9e10953c978f2)
+完整 patch 代码见[PR commit#174b6775c](https://github.com/wechaty/wechaty/commit/174b6775c4e9242e5f003094b2f9e10953c978f2)
 
 ## End
 
 感谢[zixia](https://github.com/huan)的邀请，很抱歉拖了这么久才写了这篇文章。
-感谢Chatie的各位贡献者，有大家的共同努力，wechaty才会愈发的好用。
+感谢 Chatie 的各位贡献者，有大家的共同努力，wechaty 才会愈发的好用。
 也感谢耐心看完文章的你，希望我的文章没有浪费你的时间。
 谢谢！
 
-[1]: /assets/2017/binsee-wechaty-structure.png
+[1]: /assets/2017/binsee-wechaty-structure.webp

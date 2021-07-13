@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - travel
-image: /assets/2020/when-bus-come/teaser.jpg
+image: /assets/2020/when-bus-come/teaser.webp
 ---
 
 > 作者: [ershing](https://github.com/ershing) Node.js developer
@@ -34,105 +34,103 @@ image: /assets/2020/when-bus-come/teaser.jpg
 ### 机器人登录扫码
 
 ```javascript
-
-    bot.on('scan', (qrcode, status) => {
-        if (status === ScanStatus.Waiting) {
-            QrcodeTerminal.generate(qrcode, {
-                small: true
-            })
-        }
-    })
-
+bot.on("scan", (qrcode, status) => {
+  if (status === ScanStatus.Waiting) {
+    QrcodeTerminal.generate(qrcode, {
+      small: true,
+    });
+  }
+});
 ```
 
 ### 接收消息并交给处理
 
 ```javascript
+bot
+  .on("message", async (msg) => {
+    const contact = msg.from();
+    const busStation = msg.text().trim();
+    try {
+      const res = await handler(busStation);
+      botMsger(contact, res);
+    } catch (eMsg) {
+      botMsger(contact, eMsg);
+    }
+  })
+  .start();
 
-    bot.on('message', async msg => {
-        const contact = msg.from()
-        const busStation = msg.text().trim()
-        try {
-            const res = await handler(busStation)
-            botMsger(contact, res)
-        } catch (eMsg) {
-            botMsger(contact, eMsg)
-        }
-    })
-    .start()
-
-   function botMsger(contact, text) {
-       contact.say(text)
-   }
-
+function botMsger(contact, text) {
+  contact.say(text);
+}
 ```
 
 ### 调用接口处理获取数据
 
 ```javascript
+const { retCode, retData } = await fetch("getBusStationId", {
+  name: busStation,
+  requesttime: Math.floor(+new Date() / 1000),
+});
 
-    const { retCode, retData } = await fetch('getBusStationId', { name: busStation, requesttime: Math.floor(+new Date() / 1000) })
+if (retCode !== 0) {
+  return Promise.reject("服务器异常，请稍后重试");
+}
+const {
+  bus: { station },
+} = retData;
+if (!station.length) {
+  return Promise.reject(`查询不到公交站：${busStation}`);
+}
+const busStationId = station[0].i;
 
-    if (retCode !== 0) {
-        return Promise.reject('服务器异常，请稍后重试')
+let [busAbout, busTime] = await Promise.all([
+  fetch("getBusAbout", { stationNameId: busStationId }),
+  fetch("getBusTime", { stationNameId: busStationId }),
+]);
+
+if (busAbout.retCode !== 0 || busTime.retCode !== 0) {
+  return Promise.reject("服务器异常，请稍后重试");
+}
+
+let idTime = {};
+busTime.retData.forEach((ele) => {
+  idTime[ele.i] = ele.time;
+});
+
+let direcBus = {};
+busAbout.retData.l.forEach((ele) => {
+  const { dn, rn, rsi } = ele;
+  let terminal = dn.split("-").pop();
+  let ter = direcBus[terminal];
+
+  let itemTime = idTime[rsi];
+  if (~itemTime) {
+    let addItem = {
+      busId: rsi,
+      name: rn,
+      time: itemTime,
+    };
+    if (ter) {
+      ter.push(addItem);
+    } else {
+      direcBus[terminal] = [addItem];
     }
-    const { bus: { station } } = retData
-    if (!station.length) {
-        return Promise.reject(`查询不到公交站：${busStation}`)
-    }
-    const busStationId = station[0].i
-
-    let [busAbout, busTime] = await Promise.all([
-        fetch('getBusAbout', { stationNameId: busStationId }),
-        fetch('getBusTime', { stationNameId: busStationId }),
-    ])
-
-    if (busAbout.retCode !== 0 || busTime.retCode !== 0) {
-        return Promise.reject('服务器异常，请稍后重试')
-    }
-
-    let idTime = {}
-    busTime.retData.forEach(ele => {
-        idTime[ele.i] = ele.time
-    })
-
-    let direcBus = {}
-    busAbout.retData.l.forEach(ele => {
-        const { dn, rn, rsi } = ele
-        let terminal = dn.split('-').pop()
-        let ter = direcBus[terminal]
-
-        let itemTime = idTime[rsi]
-        if (~itemTime) {
-            let addItem = {
-                busId: rsi,
-                name: rn,
-                time: itemTime
-            }
-            if (ter) {
-                ter.push(addItem)
-            } else {
-                direcBus[terminal] = [addItem]
-            }
-        }
-    })
-
+  }
+});
 ```
 
 ### 处理数据返回
 
 ```javascript
-
-    let resText = `公交车站：${busStation}\n`
-    Object.keys(direcBus).forEach(direct => {
-        let busLine = direcBus[direct]
-        busLine.sort((pre, next) => pre.time - next.time)
-        resText += `\n开往：${direct}\n`
-        busLine.forEach(el => {
-            resText += `${el.time}分钟后->${el.name}\n`
-        })
-    })
-
+let resText = `公交车站：${busStation}\n`;
+Object.keys(direcBus).forEach((direct) => {
+  let busLine = direcBus[direct];
+  busLine.sort((pre, next) => pre.time - next.time);
+  resText += `\n开往：${direct}\n`;
+  busLine.forEach((el) => {
+    resText += `${el.time}分钟后->${el.name}\n`;
+  });
+});
 ```
 
 ## 实际效果
@@ -142,28 +140,28 @@ image: /assets/2020/when-bus-come/teaser.jpg
 公交车站：北京路
 
 开往：昌岗路总站
-5分钟后->10路
+5 分钟后->10 路
 
 开往：汾水小区总站
-2分钟后->183路
+2 分钟后->183 路
 
 开往：芳村花园南门总站
-9分钟后->1路
+9 分钟后->1 路
 
 开往：黄沙总站
-2分钟后->219路
+2 分钟后->219 路
 
 开往：如意坊总站
-3分钟后->3路
+3 分钟后->3 路
 
 开往：恒宝广场总站
-3分钟后->541路
+3 分钟后->541 路
 
 开往：纸厂总站
-3分钟后->544路
+3 分钟后->544 路
 
 开往：泮塘总站
-10分钟后->66路
+10 分钟后->66 路
 
 ## 致谢
 

@@ -1,7 +1,7 @@
 ---
 name: zhihuifanqiechaodan
 site: https://github.com/zhihuifanqiechaodan
-avatar: /assets/2020/2020-12-23-wxwork-and-donut/avatar.png
+avatar: /assets/2020/2020-12-23-wxwork-and-donut/avatar.webp
 bio: web前端开发工程师 
 email: 673395239@qq.com
 twitter: 

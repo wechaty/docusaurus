@@ -4,18 +4,18 @@ author: proudofsimin
 categories: gsod
 tags:
   - proposal
-image: /assets/2021/05-gsod21-simin-proposal/profile.jpg
+image: /assets/2021/05-gsod21-simin-proposal/profile.webp
 ---
 
 ## Google Season of Docs 2021 Volunteering Proposal
 
 ### Personal Information
 
-* Technical writer: Simin Liao
-* Academic Background: BA from National Taiwan University
-* Current job: Technical Writer
-* Location: Taiwan (GMT +08:00)
-* Language: English, Chinese
+- Technical writer: Simin Liao
+- Academic Background: BA from National Taiwan University
+- Current job: Technical Writer
+- Location: Taiwan (GMT +08:00)
+- Language: English, Chinese
 
 ### Abstract
 
@@ -49,7 +49,7 @@ In the community, we could see many people asking simply questions everyday. The
 
 #### Syntax is not consistent
 
-This is kind of the hardest part for the ESL speakers. The user documentation is maintained by too many people, with different writing styles and different writing tone. Unlike writing essays, we ought to eliminate personal style in writing and create a consistent standard that everyone should follow.  
+This is kind of the hardest part for the ESL speakers. The user documentation is maintained by too many people, with different writing styles and different writing tone. Unlike writing essays, we ought to eliminate personal style in writing and create a consistent standard that everyone should follow.
 
 ### Approach
 
@@ -63,17 +63,17 @@ Through my previous on-job and personal training, I will commit in the following
 
 #### 1. Edit and proofread the documentation
 
-* Make sure all the documents follow [Google Developer Documentation Style Guide](https://developers.google.com/style), including format, syntax and word choice.
-* Make sure the technical instruction is understandable for a novice. ( I will follow the instructions step by step as if I’m a user to make sure that the document is easy to understand and doable.)
-* Make sure all the document structures are consistent.
-* Make sure the language (English) is simple for ESL (English as Second Language) speakers to comprehend.
-* Edit the documents and review PRs within three days after receiving.
+- Make sure all the documents follow [Google Developer Documentation Style Guide](https://developers.google.com/style), including format, syntax and word choice.
+- Make sure the technical instruction is understandable for a novice. ( I will follow the instructions step by step as if I’m a user to make sure that the document is easy to understand and doable.)
+- Make sure all the document structures are consistent.
+- Make sure the language (English) is simple for ESL (English as Second Language) speakers to comprehend.
+- Edit the documents and review PRs within three days after receiving.
 
 #### 2. Manage each documents
 
-* Make sure that every writer follows the document release schedule and report to Huan if anyone is failling behind.
-* Make sure that every writer knows the rules of Wechaty documentation.
-* Collaborate with another volunteer and writers for document release.
+- Make sure that every writer follows the document release schedule and report to Huan if anyone is failling behind.
+- Make sure that every writer knows the rules of Wechaty documentation.
+- Collaborate with another volunteer and writers for document release.
 
 ### Proposed Budget
 

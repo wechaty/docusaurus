@@ -5,7 +5,7 @@ categories: project
 tags:
   - mysql
   - social
-image: /assets/2021/03-tag-based-bot-detect-vip-customer/archetecture.png
+image: /assets/2021/03-tag-based-bot-detect-vip-customer/archetecture.webp
 ---
 
 <h2>基于标签的多功能服务系统&检测你身边的VIP用户</h2>
@@ -16,16 +16,15 @@ image: /assets/2021/03-tag-based-bot-detect-vip-customer/archetecture.png
 
 本系统实现了以下两个基本功能：
 
-> 1.
-> 我们在后台可以有多种类型以及门类的的service， 但是每种service的受众其实是不同的，取决于我们的微信好友们的不同兴趣指标，即好友属于哪种受众群体。如果我们把好友按照不同的兴趣指标进行分类，那么我们可以把对应的service精准投放/对接给不同的受众群体(对应标签的用户群) 。即满足了客户的需求，又避免打扰不需要的客户，提高了服务的效率。
-> 2.
-> 每一个标签的群体里对我们的service/bot 的兴趣值是不同的，如何找到标签中对我们最感兴趣的用户呢？这也就是寻找VIP客户的过程。我们需要列出每一个好友的属性，包括我们自定义的一些属性存于database中，在交流的过程中我们可以不断更新每个好友的各个属性，对每个属性都赋予权重，最后通过排序算出加权总和最高的用户，即我们的VIP用户。（此处可以进一步延伸并扩展，如果找到我们未来最合拍的商业合作或者创业伙伴？/最有价值的客户？/ 对你最感兴趣的高富帅/白富美？:-O）
+> 1.  我们在后台可以有多种类型以及门类的的 service， 但是每种 service 的受众其实是不同的，取决于我们的微信好友们的不同兴趣指标，即好友属于哪种受众群体。如果我们把好友按照不同的兴趣指标进行分类，那么我们可以把对应的 service 精准投放/对接给不同的受众群体(对应标签的用户群) 。即满足了客户的需求，又避免打扰不需要的客户，提高了服务的效率。
+> 2.  每一个标签的群体里对我们的 service/bot 的兴趣值是不同的，如何找到标签中对我们最感兴趣的用户呢？这也就是寻找 VIP 客户的过程。我们需要列出每一个好友的属性，包括我们自定义的一些属性存于 database 中，在交流的过程中我们可以不断更新每个好友的各个属性，对每个属性都赋予权重，最后通过排序算出加权总和最高的用户，即我们的 VIP 用户。（此处可以进一步延伸并扩展，如果找到我们未来最合拍的商业合作或者创业伙伴？/最有价值的客户？/ 对你最感兴趣的高富帅/白富美？:-O）
 
 <font size=5>系统整体架构简化图</font>
 
-![archetecture.png](/assets/2021/03-tag-based-bot-detect-vip-customer/archetecture.png)
+![archetecture.webp](/assets/2021/03-tag-based-bot-detect-vip-customer/archetecture.webp)
 
 相关服务和框架:
+
 > Typeorm
 > MySQL
 > wechatY
@@ -34,142 +33,146 @@ image: /assets/2021/03-tag-based-bot-detect-vip-customer/archetecture.png
 
 <font size=5>功能简介：</font>
 
-挑选了我的两个受众群体， 其中一个群体是喜欢投资比特币，那么他们比较想要快速了解到最近的整合比特币最新资讯，这里简单的实现了一个获取比特币资讯的service。第二个群体喜欢关注最新的行业资讯，想了解最新的独角兽公司的资讯，也实现了一个抓取整合独角兽公司的service。这两个service都利用wechaty的API实现的bot去对接客户，这样客户可以自动通过type不同的选项获取资讯。而service获取的资讯会实时的更新数据到MySQL数据库(typescript与DB交互还是有些坑，搞了一阵)，这样基于WechatY的bot 可以通过share的db信息将最新资讯返回给customers.
+挑选了我的两个受众群体， 其中一个群体是喜欢投资比特币，那么他们比较想要快速了解到最近的整合比特币最新资讯，这里简单的实现了一个获取比特币资讯的 service。第二个群体喜欢关注最新的行业资讯，想了解最新的独角兽公司的资讯，也实现了一个抓取整合独角兽公司的 service。这两个 service 都利用 wechaty 的 API 实现的 bot 去对接客户，这样客户可以自动通过 type 不同的选项获取资讯。而 service 获取的资讯会实时的更新数据到 MySQL 数据库(typescript 与 DB 交互还是有些坑，搞了一阵)，这样基于 WechatY 的 bot 可以通过 share 的 db 信息将最新资讯返回给 customers.
 
-这里我们的两个标签分别取名为btc和company.
+这里我们的两个标签分别取名为 btc 和 company.
 
-![tag-btc.png](/assets/2021/03-tag-based-bot-detect-vip-customer/tag-btc.png)
+![tag-btc.webp](/assets/2021/03-tag-based-bot-detect-vip-customer/tag-btc.webp)
 
-![tag-unicorn.png](/assets/2021/03-tag-based-bot-detect-vip-customer/tag-unicorn.png)
+![tag-unicorn.webp](/assets/2021/03-tag-based-bot-detect-vip-customer/tag-unicorn.webp)
 
-对于不同tag的user, 我们回复不同的autoReploy Message
+对于不同 tag 的 user, 我们回复不同的 autoReploy Message
 
 ```js
-import {Entity, Column, PrimaryGeneratedColumn} from "typeorm";
+import { Entity, Column, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 export class TagCatalog {
-    @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn()
   id: number;
 
   @Column()
   tag: string;
- 
+
   @Column("text")
   autoReplyMsg: string;
- 
-    @Column("text")
+
+  @Column("text")
   scheduleMsg: string;
 }
 ```
 
-> 可以看到标签为btc的用户发来一条信息，首先通过wechatY的bot 发送自动回复消息告知我们的service.  
+> 可以看到标签为 btc 的用户发来一条信息，首先通过 wechatY 的 bot 发送自动回复消息告知我们的 service.
 
-![btc-autoreply.png](/assets/2021/03-tag-based-bot-detect-vip-customer/btc-autoreply.png)
+![btc-autoreply.webp](/assets/2021/03-tag-based-bot-detect-vip-customer/btc-autoreply.webp)
 
-> 当用户选择1时，我们返回最新的当日BTC价格以及实时价格。这里后台的BTC service 会实时的更新MySQL 数据库，我们通过wechatY的bot 读取MySQL来返回最新的BTC价格
+> 当用户选择 1 时，我们返回最新的当日 BTC 价格以及实时价格。这里后台的 BTC service 会实时的更新 MySQL 数据库，我们通过 wechatY 的 bot 读取 MySQL 来返回最新的 BTC 价格
 
 ```js
-async function sayCurrentPrice(fromPersion: Contact){
-  createMySQLConnection().then(async connection => {
-  
+async function sayCurrentPrice(fromPersion: Contact) {
+  createMySQLConnection().then(async (connection) => {
     let btcMessageRepository = connection.getRepository(BtcPriceMessage);
 
-    let btcCurrentPrice = await btcMessageRepository.findOne({id: 1});
+    let btcCurrentPrice = await btcMessageRepository.findOne({ id: 1 });
 
     console.log("the current price meesage: ", btcCurrentPrice);
 
-    if(btcCurrentPrice){
+    if (btcCurrentPrice) {
       fromPersion.say(btcCurrentPrice.message);
-    }else{
-      fromPersion.say("Sorry, did not find the current btc price in our system");
+    } else {
+      fromPersion.say(
+        "Sorry, did not find the current btc price in our system"
+      );
     }
 
     // close the connection.
     connection.close();
-  })
+  });
 }
-
 ```
 
-> 标签为company的用户发来信息，我们告知其service.
+> 标签为 company 的用户发来信息，我们告知其 service.
 
-![unicorn-autoreply.png](/assets/2021/03-tag-based-bot-detect-vip-customer/unicorn-autoreply.png)
+![unicorn-autoreply.webp](/assets/2021/03-tag-based-bot-detect-vip-customer/unicorn-autoreply.webp)
 
-> 用户选择1,返回实时市值最高的5个独角兽公司。这里后台的UniCorn service 会实时的更新MySQL 数据库，我们通过wechatY的bot 读取MySQL来返回当前市值最高的5个独角兽公司。
+> 用户选择 1,返回实时市值最高的 5 个独角兽公司。这里后台的 UniCorn service 会实时的更新 MySQL 数据库，我们通过 wechatY 的 bot 读取 MySQL 来返回当前市值最高的 5 个独角兽公司。
 
-至此，基于标签的多功能服务系统的雏形完成了。那么如何获得标签为company的用户粘性值最高的人呢，即对我们最感兴趣的VIP客户呢？ 这需要再数据库中存储用户的各个属性， 这里仅为方便展示，我们只选取最简单的属性，用和bot的聊天次数属性作为唯一的权重计算。  通过一段时间与不同用户的的交流, 通过数据库的查询我们发现了我们的VIP客户，即db中talkTimes最高的用户。
+至此，基于标签的多功能服务系统的雏形完成了。那么如何获得标签为 company 的用户粘性值最高的人呢，即对我们最感兴趣的 VIP 客户呢？ 这需要再数据库中存储用户的各个属性， 这里仅为方便展示，我们只选取最简单的属性，用和 bot 的聊天次数属性作为唯一的权重计算。 通过一段时间与不同用户的的交流, 通过数据库的查询我们发现了我们的 VIP 客户，即 db 中 talkTimes 最高的用户。
 
 ```js
-
 @Entity()
 export class ContactAndInterest {
-    @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn()
   id: number;
 
   @Column()
   tag: string;
- 
+
   @Column("int")
   talktimes: number;
- 
-  @Column()
-  wxid : string;
 
   @Column()
-  alias : string;
+  wxid: string;
 
-//  @Column({ type: "varchar", charset: "utf8", collation: "utf8_general_ci"})
-@Column({ type: "varchar", charset: "utf8", collation: "utf8_bin"})
-  name : string;
+  @Column()
+  alias: string;
+
+  //  @Column({ type: "varchar", charset: "utf8", collation: "utf8_general_ci"})
+  @Column({ type: "varchar", charset: "utf8", collation: "utf8_bin" })
+  name: string;
 }
 ```
 
 ```js
+async function updateDbForInterest(fromPerson: Contact, tagName: string) {
+  createMySQLConnection()
+    .then(async (connection) => {
+      let personRepository = connection.getRepository(ContactAndInterest);
 
-async function updateDbForInterest(fromPerson: Contact, tagName: string){
-  createMySQLConnection().then(async connection => {
-  
-    let personRepository = connection.getRepository(ContactAndInterest);
+      let personIntrestToUpdate = await personRepository.findOne({
+        wxid: fromPerson.id,
+      });
 
-    let personIntrestToUpdate = await personRepository.findOne({wxid: fromPerson.id});
+      console.log("the person to update from the db: ", personIntrestToUpdate);
 
-    console.log("the person to update from the db: ", personIntrestToUpdate);
+      if (personIntrestToUpdate) {
+        personIntrestToUpdate.wxid = fromPerson.id;
 
-    if(personIntrestToUpdate){
-      personIntrestToUpdate.wxid  = fromPerson.id;
+        // if before is true then assign, else use empty
+        personIntrestToUpdate.alias = (await fromPerson.alias()) || "";
+        personIntrestToUpdate.name = (await fromPerson.name()) || "";
+        personIntrestToUpdate.tag = tagName;
+        personIntrestToUpdate.talktimes = personIntrestToUpdate.talktimes + 1;
+      } else {
+        personIntrestToUpdate = new ContactAndInterest();
 
-      // if before is true then assign, else use empty
-      personIntrestToUpdate.alias = await fromPerson.alias() || '';
-      personIntrestToUpdate.name = await fromPerson.name() || '';
-      personIntrestToUpdate.tag  = tagName;
-      personIntrestToUpdate.talktimes = personIntrestToUpdate.talktimes + 1;
-    }else{
-      personIntrestToUpdate = new ContactAndInterest();
+        personIntrestToUpdate.wxid = fromPerson.id;
+        personIntrestToUpdate.alias = (await fromPerson.alias()) || "";
+        personIntrestToUpdate.name = (await fromPerson.name()) || "";
+        personIntrestToUpdate.tag = tagName;
+        personIntrestToUpdate.talktimes = 1;
+      }
 
-      personIntrestToUpdate.wxid  = fromPerson.id;
-      personIntrestToUpdate.alias = await fromPerson.alias() || '';
-      personIntrestToUpdate.name = await fromPerson.name() || '';
-      personIntrestToUpdate.tag  = tagName;
-      personIntrestToUpdate.talktimes =  1;
-    }
+      await personRepository.save(personIntrestToUpdate);
+      log.info(
+        "updated the personInterest object of %s",
+        personIntrestToUpdate
+      );
 
-    await personRepository.save(personIntrestToUpdate);
-    log.info("updated the personInterest object of %s", personIntrestToUpdate);
-
-    // close the connection.
-    connection.close();
-  }).catch(error => {
-    console.log(error);
-  });
+      // close the connection.
+      connection.close();
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 }
 ```
 
 <font size=5>感谢</font>
 
-感谢WechatY提供的如此强大的微信API, 记得当时找开源的API找了很久，虽然也有其他的API, 不过有些API接口太少。最后发现了WechatY后感觉不错，希望wechaty不断完善，能够不断壮大，越来越好的发展下去。
+感谢 WechatY 提供的如此强大的微信 API, 记得当时找开源的 API 找了很久，虽然也有其他的 API, 不过有些 API 接口太少。最后发现了 WechatY 后感觉不错，希望 wechaty 不断完善，能够不断壮大，越来越好的发展下去。
 
 <font size=5>回顾与展望</font>
-由于之前基本没写过typescript, 所以这里也是现学现卖，很多语法写法并不是太考究还请海涵。
+由于之前基本没写过 typescript, 所以这里也是现学现卖，很多语法写法并不是太考究还请海涵。
 
-这里只是一个雏形的实现， 后面我觉得可以更深的去挖掘我们的微信好友， 比如将不同标签的好友的各种信息通过可视化的方式展现在前端，让人一目了然。 增加更多的属性去分析不同的用户，通过高级的算法去更好的分析用户，计算出VIP用户群体。开发更多的services去对接相应的用户转化为更高的价值。希望可以完成一个功能更加强大的服务。
+这里只是一个雏形的实现， 后面我觉得可以更深的去挖掘我们的微信好友， 比如将不同标签的好友的各种信息通过可视化的方式展现在前端，让人一目了然。 增加更多的属性去分析不同的用户，通过高级的算法去更好的分析用户，计算出 VIP 用户群体。开发更多的 services 去对接相应的用户转化为更高的价值。希望可以完成一个功能更加强大的服务。

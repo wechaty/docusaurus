@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - ecommerce
-image: /assets/2020/wechat-group-integral-robot/header.jpg
+image: /assets/2020/wechat-group-integral-robot/header.webp
 ---
 
 > 作者: [Hzhuhao](https://github.com/hzhuhao/)
@@ -26,7 +26,7 @@ image: /assets/2020/wechat-group-integral-robot/header.jpg
 
 当用户在群里发好评时，@该用户会给用户添加自定义积分。
 
-![效果图](/assets/2020/wechat-group-integral-robot/wxscreen.png)
+![效果图](/assets/2020/wechat-group-integral-robot/wxscreen.webp)
 
 ### 结构
 
@@ -49,41 +49,40 @@ image: /assets/2020/wechat-group-integral-robot/header.jpg
 
 ### 服务层
 
-服务层是用eggJs 搭建 配置起来超级简单，使用mysql作为数据持久化存储。具体可参考官网配置。
+服务层是用 eggJs 搭建 配置起来超级简单，使用 mysql 作为数据持久化存储。具体可参考官网配置。
 
 ## 依赖
 
 wechaty：wechaty 核心库  
-wechaty-puppet-padplus：wechaty的ipad协议实现
+wechaty-puppet-padplus：wechaty 的 ipad 协议实现
 
 ## 代码介绍
 
 ```javascript
-const { Wechaty } = require("wechaty") // Wechaty核心包
-const { PuppetPadplus } = require("wechaty-puppet-padplus") // padplus协议包
-const config = require("./config/config") // 配置文件
-const onScan = require("./src/onScan") // 机器人需要扫描二维码时监听回调
-const onRoomJoin = require("./src/onRoomJoin") // 加入房间监听回调
-const onMessage = require("./src/onMessage") // 消息监听回调
-const onFriendShip = require("./src/onFriendShip") // 好友添加监听回调
+const { Wechaty } = require("wechaty"); // Wechaty核心包
+const { PuppetPadplus } = require("wechaty-puppet-padplus"); // padplus协议包
+const config = require("./config/config"); // 配置文件
+const onScan = require("./src/onScan"); // 机器人需要扫描二维码时监听回调
+const onRoomJoin = require("./src/onRoomJoin"); // 加入房间监听回调
+const onMessage = require("./src/onMessage"); // 消息监听回调
+const onFriendShip = require("./src/onFriendShip"); // 好友添加监听回调
 
 // 初始化
 const bot = new Wechaty({
-    puppet: new PuppetPadplus({
-        token: config.token
-    }),
-    name: config.name
-})
+  puppet: new PuppetPadplus({
+    token: config.token,
+  }),
+  name: config.name,
+});
 bot
-    .on("scan", onScan) // 机器人需要扫描二维码时监听
-    .on("room-join", onRoomJoin) // 加入房间监听
-    .on('login', (user) => {
-        console.log(`user ${user} login`)
-    })
-    .on("message", onMessage(bot)) // 消息监听
-    .on("friendship", onFriendShip) // 好友添加监听
-    .start()
-
+  .on("scan", onScan) // 机器人需要扫描二维码时监听
+  .on("room-join", onRoomJoin) // 加入房间监听
+  .on("login", (user) => {
+    console.log(`user ${user} login`);
+  })
+  .on("message", onMessage(bot)) // 消息监听
+  .on("friendship", onFriendShip) // 好友添加监听
+  .start();
 ```
 
 ## 本地运行
@@ -102,7 +101,7 @@ cd wechaty-integral-robot
 npm install
 ```
 
-- 安装serve服务依赖
+- 安装 serve 服务依赖
 
 ```shell
 cd service
@@ -122,12 +121,12 @@ npm start
 
 1. 打开`config/config.js` 文件
 2. 修改`config`配置
-3. 进入 `service/config` 修改服务配置 以及 配置mysql数据库
+3. 进入 `service/config` 修改服务配置 以及 配置 mysql 数据库
 4. 运行项目
 
 ## 致谢
 
-非常感谢Wechaty团队提供微信机器人SDK，让开发者可以专注于业务代码。  
-感谢句子互动提供的pad协议版token。  
+非常感谢 Wechaty 团队提供微信机器人 SDK，让开发者可以专注于业务代码。  
+感谢句子互动提供的 pad 协议版 token。  
 wechaty: <https://wechaty.github.io/>  
 juzibot: <https://www.juzibot.com>

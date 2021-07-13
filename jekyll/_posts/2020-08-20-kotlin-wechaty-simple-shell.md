@@ -6,15 +6,15 @@ tags:
   - serverchen
   - shell
   - utility
-image: /assets/2020/kotlin-wechaty-simple-shell/home.jpeg
+image: /assets/2020/kotlin-wechaty-simple-shell/home.webp
 ---
 
-这个项目是基于SpringBoot和SpringMVC的，语言是kotlin，构建工具是maven。
+这个项目是基于 SpringBoot 和 SpringMVC 的，语言是 kotlin，构建工具是 maven。
 
-## 准备工作（创建自己的wechaty-hostie-token）
+## 准备工作（创建自己的 wechaty-hostie-token）
 
-假设我们目前拥有的是padplus的token。
-因为java-wechaty需要的是hostie的，所以这就需要先做一下转换。
+假设我们目前拥有的是 padplus 的 token。
+因为 java-wechaty 需要的是 hostie 的，所以这就需要先做一下转换。
 
 然后执行以下命令
 
@@ -39,11 +39,11 @@ docker run -d\
 
 ```
 
-经过这一番操作，你的padplus token就可以当成hostie来用了。一开始看官方文档并没有找到，搞了很久才发现在issue里面有提到这个用法，所以在这里写出来方便后面的人。同理，python和go的版本也是这么弄。
+经过这一番操作，你的 padplus token 就可以当成 hostie 来用了。一开始看官方文档并没有找到，搞了很久才发现在 issue 里面有提到这个用法，所以在这里写出来方便后面的人。同理，python 和 go 的版本也是这么弄。
 
 ## 核心代码
 
-因为用了SpringBoot，所以比较好的办法是把它交给Spring管理，构造成一个Bean。
+因为用了 SpringBoot，所以比较好的办法是把它交给 Spring 管理，构造成一个 Bean。
 
 ```java
 @Configuration
@@ -118,7 +118,7 @@ object CommandUtil {
 
 ## 额外的事情
 
-添加了Server酱的接口，在微信掉线以后会通过微信公众号发送二维码url，登录成功以后也会有通知。
+添加了 Server 酱的接口，在微信掉线以后会通过微信公众号发送二维码 url，登录成功以后也会有通知。
 
 ## 部署
 
@@ -128,7 +128,7 @@ object CommandUtil {
 git clone https://github.com/suninsky/wechat-bot.git
 ```
 
-修改application.properties参数
+修改 application.properties 参数
 
 ```java
 server.port=8090
@@ -137,10 +137,10 @@ server-chan.token=YOUR_TOKEN
 ```
 
 第一个是运行端口，可默认。
-第二个是wechaty-hostie的token，必选。
-第三个是server-chan的token，可选。
+第二个是 wechaty-hostie 的 token，必选。
+第三个是 server-chan 的 token，可选。
 
-### 2.  直接使用target中的jar包
+### 2. 直接使用 target 中的 jar 包
 
 ```java
 java -jar wechat-bot-1.0.jar --wechat-bot.token=YOUR_TOKEN  --server-chan.token=YOUR_TOKEN
@@ -148,8 +148,8 @@ java -jar wechat-bot-1.0.jar --wechat-bot.token=YOUR_TOKEN  --server-chan.token=
 
 ## 使用
 
-扫码登录机器人以后，即可。群聊和私聊都可以操控shell，所以机器人需要谨慎加好友和群。考虑到安全问题，目前只能操作wechat-bot-1.0.jar所在的目录。以及，不支持交互式的命令。如果不小心输入了交互式的命令，将在5秒后返回。
+扫码登录机器人以后，即可。群聊和私聊都可以操控 shell，所以机器人需要谨慎加好友和群。考虑到安全问题，目前只能操作 wechat-bot-1.0.jar 所在的目录。以及，不支持交互式的命令。如果不小心输入了交互式的命令，将在 5 秒后返回。
 
 ## 例子
 
-![example](/assets/2020/kotlin-wechaty-simple-shell/example.png)
+![example](/assets/2020/kotlin-wechaty-simple-shell/example.webp)

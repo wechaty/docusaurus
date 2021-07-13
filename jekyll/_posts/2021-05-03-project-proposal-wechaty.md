@@ -199,7 +199,7 @@ Additional Work
 
 ## Personal Information
 
-<a href="https://github.com/abhishek-iiit"><img src="https://user-images.githubusercontent.com/69477761/111753834-4ef7ef00-88bd-11eb-856c-afe7d58115d5.png" width=150px height=150px /></a>
+<a href="https://github.com/abhishek-iiit"><img src="https://user-images.githubusercontent.com/69477761/111753834-4ef7ef00-88bd-11eb-856c-afe7d58115d5.webp" width=150px height=150px /></a>
 
 - Name: Abhishek Jaiswal
 - Github: <https://github.com/abhishek-iiit>

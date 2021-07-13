@@ -1,7 +1,7 @@
 ---
 title: "CPS chat bot"
 author: wss793062366
-image: /assets/2020/cps-chat-bot/goodsmsg.jpeg
+image: /assets/2020/cps-chat-bot/goodsmsg.webp
 categories: project
 tags:
   - ecommerce
@@ -11,6 +11,7 @@ tags:
 > Code: [@my-padplus-bot](https://github.com/wss793062366/my-padplus-bot)
 
 ---
+
 tips: 使用微信群，推广电商商品及优惠券，机器人使用 wechaty-puppet-padplus.
 
 ## 简介
@@ -23,7 +24,7 @@ tips: 使用微信群，推广电商商品及优惠券，机器人使用 wechaty
 
 - 当推广者，发送指令查询商品类目后， 微信助手通过接口查询到商品列表。
 
-2.查询到的商品信息，发送到微信群
+  2.查询到的商品信息，发送到微信群
 
 - 例如, 发送
 
@@ -47,7 +48,7 @@ npm init -y
 
 安装项目依赖
 
-``` bash
+```bash
 npm install --save wechaty
 npm install --save wechaty-puppet-padplus
 npm install --save qrcode-terminal
@@ -72,8 +73,8 @@ npm install --save qrcode-terminal
 ```js
 module.exports = {
   // puppet_padplus Token
-  token: "puppet_padplus_..."
-}
+  token: "puppet_padplus_...",
+};
 ```
 
 #### my-chat-bot.js
@@ -83,27 +84,27 @@ module.exports = {
  * wechaty-puppet-padplus index
  */
 
-const { Wechaty } = require("wechaty")
-const { PuppetPadplus } = require("wechaty-puppet-padplus")
-const config = require("../config/config")
+const { Wechaty } = require("wechaty");
+const { PuppetPadplus } = require("wechaty-puppet-padplus");
+const config = require("../config/config");
 
 // init
 const bot = new Wechaty({
   puppet: new PuppetPadplus({
-    token: config.token
+    token: config.token,
   }),
-  name: config.name
-})
+  name: config.name,
+});
 
-bot.on('scan',    onScan)
-bot.on('login',   onLogin)
-bot.on('logout',  onLogout)
-bot.on('message', onMessage)
+bot.on("scan", onScan);
+bot.on("login", onLogin);
+bot.on("logout", onLogout);
+bot.on("message", onMessage);
 
-bot.start()
-  .then(() => log.info('StarterBot', 'Starter Bot Started.'))
-  .catch(e => log.error('StarterBot', e))
-
+bot
+  .start()
+  .then(() => log.info("StarterBot", "Starter Bot Started."))
+  .catch((e) => log.error("StarterBot", e));
 ```
 
 #### 收商品指令
@@ -114,19 +115,17 @@ bot.start()
 /**
  * onMessage
  */
-async function onMessage (msg: Message) {
+async function onMessage(msg: Message) {
   // log.info('StarterBot', msg.toString())
 
   if (msg.type() === bot.Message.Type.Text) {
-    if (msg.text().includes('#查询商品：')) {
-        queryJingFenGoodsAndSendMsg(msg);
-    } else if (msg.text().includes('ready stop')) {
-      console.log('ready stop');
+    if (msg.text().includes("#查询商品：")) {
+      queryJingFenGoodsAndSendMsg(msg);
+    } else if (msg.text().includes("ready stop")) {
+      console.log("ready stop");
     }
   }
 }
-
-
 ```
 
 #### 查询商品
@@ -299,12 +298,12 @@ npm run start
 
 ### 效果图
 
-![效果图](/assets/2020/cps-chat-bot/goodsmsg.jpeg)
+![效果图](/assets/2020/cps-chat-bot/goodsmsg.webp)
 
 ### 致谢
 
 - 感谢[Wechaty](https://wechaty.github.io)团队。
-- 感谢[句子互动](https://www.juzibot.com)提供的api-token
+- 感谢[句子互动](https://www.juzibot.com)提供的 api-token
 
 项目链接
 

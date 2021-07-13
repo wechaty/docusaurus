@@ -9,7 +9,7 @@ tags:
   - regex101
   - featured
   - entertainment
-image: /assets/2020/wechat-poem-robot/chat.png
+image: /assets/2020/wechat-poem-robot/chat.webp
 ---
 
 > 作者: [ray7551](https://github.com/ray7551/)
@@ -35,7 +35,7 @@ image: /assets/2020/wechat-poem-robot/chat.png
 
 折腾到这里，我已经对各类方案有了基本了解：主要有 Web 网页端、Xpsoed 技术、PC Hook、iPad 协议、模拟机、MAC 协议这六类方案，从稳定性和安全性上比较，iPad 协议和 Mac 协议的方案是比较好的，商业上的应用也比较多。
 
-此时我找到了 `beclass` 的博文 [《基于Nodejs+Wechaty开发微信机器人管理平台》](https://wechaty.github.io/2020/05/31/wxbot/)。发现了 Wechaty 这个项目，支持 iPad 协议，虽然需要付费获取 token，但是可以申请[参与开源激励计划](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty#2%E5%85%8D%E8%B4%B9Token%E5%8F%82%E4%B8%8E%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92)来获取免费甚至长期有效的 token。
+此时我找到了 `beclass` 的博文 [《基于 Nodejs+Wechaty 开发微信机器人管理平台》](https://wechaty.github.io/2020/05/31/wxbot/)。发现了 Wechaty 这个项目，支持 iPad 协议，虽然需要付费获取 token，但是可以申请[参与开源激励计划](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty#2%E5%85%8D%E8%B4%B9Token%E5%8F%82%E4%B8%8E%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92)来获取免费甚至长期有效的 token。
 
 ## 具体实现
 
@@ -57,9 +57,9 @@ image: /assets/2020/wechat-poem-robot/chat.png
 
 Windows 平台下，我用过 RegexBuddy。我发现了一个更好的 Web 平台正则调试工具 [regex101](https://regex101.com/)。它不仅能清楚标注匹配结果，还能展现正则一步步匹配的过程，这对于调试来说至关重要。
 
-![regex101](/assets/2020/wechat-poem-robot/regex101.png)
+![regex101](/assets/2020/wechat-poem-robot/regex101.webp)
 
-![regex101-debug](/assets/2020/wechat-poem-robot/regex101-debug.png)
+![regex101-debug](/assets/2020/wechat-poem-robot/regex101-debug.webp)
 
 除了用正则提取诗歌各字段，还需要匹配各种可能句式中的关键词。测试用例如下：
 
@@ -179,27 +179,29 @@ function getKeyword($str, $divide = false) {
 // create a Wechaty instance as bot
 let bot = new Wechaty({
   puppet: new PuppetPadplus({
-    token: puppet_padplus_token
+    token: puppet_padplus_token,
   }),
-  name: 'poem'
-})
+  name: "poem",
+});
 ```
 
 由于申请的是 iPad 协议的 token，这里用到的是 `PuppetPadplus`。
 接着对 bot 绑定各种事件的处理函数，其中 `message` 事件是接收到消息时触发的事件。
 
 ```js
-bot.on('scan', (qrcode) => {
-  // show the qrcode
-}).on('login', onLogin)
-  .on('message', onMessage(bot))
-  .on('friendship', onFriendShip)
-  .on('room-join', onRoomJoin)
-  .on('room-leave', onRoomLeave)
-  .on('error', error => {
-    logger.error('机器故障，error：' + error)
+bot
+  .on("scan", (qrcode) => {
+    // show the qrcode
   })
-  .on('logout', onLogout)
+  .on("login", onLogin)
+  .on("message", onMessage(bot))
+  .on("friendship", onFriendShip)
+  .on("room-join", onRoomJoin)
+  .on("room-leave", onRoomLeave)
+  .on("error", (error) => {
+    logger.error("机器故障，error：" + error);
+  })
+  .on("logout", onLogout);
 ```
 
 `onMessage` 是写在 `server/roobt/message` 里的
@@ -207,56 +209,57 @@ bot.on('scan', (qrcode) => {
 ```js
 async function onMessage(msg) {
   // 忽略来自自己的消息
-  if (msg.self()) return
+  if (msg.self()) return;
 
   // 目前只处理来自群聊的文本消息
   if (msg.type() == Message.Type.Text) {
-    const room = msg.room()
-    const text = msg.text()
+    const room = msg.room();
+    const text = msg.text();
     // 消息来自群聊
     if (room) {
-      if (await msg.mentionSelf()) {  //@了机器人
-        let self = await msg.to()
-        self = "@" + self.name()
-        let receivedText = text.replace(self, "").trim()
+      if (await msg.mentionSelf()) {
+        //@了机器人
+        let self = await msg.to();
+        self = "@" + self.name();
+        let receivedText = text.replace(self, "").trim();
 
-        let content = await getPoemReply(receivedText, room.id)
+        let content = await getPoemReply(receivedText, room.id);
         // 返回消息，并@来自人
-        if(content.poem) {
-          let poem = "\n\n" + content.poem
-          room.say(poem, msg.from())
+        if (content.poem) {
+          let poem = "\n\n" + content.poem;
+          room.say(poem, msg.from());
 
-          if(!content.data.wxPost) {
+          if (!content.data.wxPost) {
             return;
           }
           const linkPayload = new UrlLink({
-            description : '点击查看读睡荐诗',
+            description: "点击查看读睡荐诗",
             thumbnailUrl: content.data.wxPost.cover_src,
-            title       : content.data.wxPost.title,
-            url         : content.data.wxPost.link,
-          })
-          room.say(linkPayload)
+            title: content.data.wxPost.title,
+            url: content.data.wxPost.link,
+          });
+          room.say(linkPayload);
         }
-        return
-
-      } else {  // 没有@机器人
-        const receivedText = text.trim()
+        return;
+      } else {
+        // 没有@机器人
+        const receivedText = text.trim();
         // 只处理包含关键词的消息
-        if(!isSearchString(receivedText)) {
+        if (!isSearchString(receivedText)) {
           return;
         }
-        const content = await getPoemReply(receivedText, room.id)
-        if(content) room.say(content.poem)
-        return
+        const content = await getPoemReply(receivedText, room.id);
+        if (content) room.say(content.poem);
+        return;
       }
     }
 
-    return
+    return;
   }
 }
 
 function isSearchString(text) {
-  return /^搜/.test(text) || /的诗歌?$/.test(text)
+  return /^搜/.test(text) || /的诗歌?$/.test(text);
 }
 
 /**
@@ -265,25 +268,25 @@ function isSearchString(text) {
  * @return {Promise} 响应内容
  */
 async function getPoemReply(word, chatRoomId) {
-  let url = POEMAPI_HOST + '/bot_search.php'
+  let url = POEMAPI_HOST + "/bot_search.php";
   const pkg = {
-    method: 'get',
+    method: "get",
     headers: {
-      'Content-Type': 'application/json'
+      "Content-Type": "application/json",
     },
     data: {
       keyword: word,
-      chatroom: chatRoomId
+      chatroom: chatRoomId,
     },
     encoding: null,
     timeout: 5000,
-  }
-  let { status, data } = await urllib.request(url, pkg)
+  };
+  let { status, data } = await urllib.request(url, pkg);
 
-  if (status !== 200) return '不好意思，我出故障了.'
+  if (status !== 200) return "不好意思，我出故障了.";
 
-  data = JSON.parse(data.toString())
-  return data
+  data = JSON.parse(data.toString());
+  return data;
 }
 ```
 
@@ -295,28 +298,30 @@ async function getPoemReply(word, chatRoomId) {
 
 ```js
 module.exports = {
-  apps: [{
-    name: "wx-robot",
-    script: "./server/index.js",
-    env: {
-      NODE_ENV: "production",
-    }
-  }]
-}
+  apps: [
+    {
+      name: "wx-robot",
+      script: "./server/index.js",
+      env: {
+        NODE_ENV: "production",
+      },
+    },
+  ],
+};
 ```
 
 然后命令行执行 `pm2 start pm2.config.js`。
 搭配其监控面板服务 PM2+，不仅可以在浏览器中控制任务运行状态，还能查看实时日志：
 
-![PM2](/assets/2020/wechat-poem-robot/pm2.png)
+![PM2](/assets/2020/wechat-poem-robot/pm2.webp)
 
 目标达成：
 
-![chat](/assets/2020/wechat-poem-robot/chat.png)
+![chat](/assets/2020/wechat-poem-robot/chat.webp)
 
 ## 结论（~~以及广告~~）
 
-开发阶段我认为比较重要的部分，匹配各种搜索句式中的关键词，花费了很多时间，甚至还想过用 NL2SQL（自然语言转换为SQL） 技术来做。其实在上线以后很少有人用到，大部分人还是习惯于用 搜+关键词 的方式触发机器人搜索。虽然做的过程很开心，但是没有人用还是挺心酸的。
+开发阶段我认为比较重要的部分，匹配各种搜索句式中的关键词，花费了很多时间，甚至还想过用 NL2SQL（自然语言转换为 SQL） 技术来做。其实在上线以后很少有人用到，大部分人还是习惯于用 搜+关键词 的方式触发机器人搜索。虽然做的过程很开心，但是没有人用还是挺心酸的。
 
 还可以改进或拓展的地方：
 
@@ -335,6 +340,7 @@ Wechaty 简洁的 API 可以帮助开发者快速地搭建一个微信个人号�
 在此文写作过程中，我一直在想，什么样的技术博文才是好的？讲述各种细节固然是对其它开发者有用的。但软件是一直在变化的，这些有用的细节过不了多久可能就不适用了，反而成为开发者搜索过程中的信息噪音。
 
 Redis 开发者 [Salvatore Sanfilippo](http://invece.org/) 在[这篇文章](http://antirez.com/news/129)中说
+
 > Sometimes I believe that software, while great, will never be huge like writing a book that will survive for centuries. Note because it is not as great per-se, but because as a side effect it is also useful… and will be replaced when something more useful is around.
 
 在我看来，好的技术博文不应只有细节，还要有对细节的思考，对开发过程本身的观察，试图提炼出让开发过程更顺畅的经验。这些经验，甚至可以拓展到其它日常事务的处理过程中去。

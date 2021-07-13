@@ -1,13 +1,13 @@
 ---
 name: hzhuhao
 site: https://huhao.me/
-avatar: /assets/contributors/hzhuhao/avatar.jpg
+avatar: /assets/contributors/hzhuhao/avatar.webp
 bio: Focus on web development.
 email: hzhuhao@163.com
 twitter: https://twitter.com/hzhuhao
 ---
 
-一个热爱编程，热爱运动，喜欢折腾的90后程序员。
+一个热爱编程，热爱运动，喜欢折腾的 90 后程序员。
 
 ## 联系我
 

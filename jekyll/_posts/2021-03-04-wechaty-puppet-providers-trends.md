@@ -7,7 +7,7 @@ tags:
   - news
   - featured
   - visualization
-image: /assets/2021/03-wechaty-puppet-providers-trends/wechaty-puppet-providers-trends.png
+image: /assets/2021/03-wechaty-puppet-providers-trends/wechaty-puppet-providers-trends.webp
 ---
 
 Do you want know which **Wechaty Puppet Provider** is most used by our Wechaty developers?
@@ -44,5 +44,5 @@ If you are interested in the adaption of WPPs, you can visit the NPM Trends serv
 - [Wechaty Puppet Directory](https://github.com/wechaty/wechaty-puppet/wiki/Directory)
 - [Wechaty Puppet Links](https://github.com/wechaty/wechaty-puppet/wiki/Links)
 
-[trends_image]: /assets/2021/03-wechaty-puppet-providers-trends/wechaty-puppet-providers-trends.png
+[trends_image]: /assets/2021/03-wechaty-puppet-providers-trends/wechaty-puppet-providers-trends.webp
 [trends_link]: https://www.npmtrends.com/wechaty-puppet-service-vs-wechaty-puppet-mock-vs-wechaty-puppet-puppeteer-vs-wechaty-puppet-wechat4u-vs-wechaty-puppet-padlocal-vs-wechaty-puppet-official-account-vs-wechaty-puppet-gitter-vs-wechaty-puppet-lark-vs-wechaty-puppet-whatsapp

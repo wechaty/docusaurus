@@ -7,7 +7,7 @@ tags:
   - down
   - heroku
   - cloudflare
-image: /assets/2021/04-chatie-api-server-down/system-down.jpeg
+image: /assets/2021/04-chatie-api-server-down/system-down.webp
 ---
 
 The [Wechaty Puppet Service](https://wechaty.js.org/docs/puppet-services)
@@ -42,13 +42,13 @@ we have a terrible service incident
 due to the limitation update of the Heroku and Cloudflare free servcies:
 
 1. Heroku limited our Dyno
-  for no more than 1,000 concurrency WebSockets,
-  which raised [H11 - Backlog too deep](https://devcenter.heroku.com/articles/error-codes#h11-backlog-too-deep) errors.
+   for no more than 1,000 concurrency WebSockets,
+   which raised [H11 - Backlog too deep](https://devcenter.heroku.com/articles/error-codes#h11-backlog-too-deep) errors.
 1. Cloudflare false report DDoS attatck
-  and block all our visitors
-  when we have 3,000+ WebSocket connections
-  trying to connect to us
-  during the server is rebooting.
+   and block all our visitors
+   when we have 3,000+ WebSocket connections
+   trying to connect to us
+   during the server is rebooting.
 
 ## Heroku Error: H11
 
@@ -111,15 +111,15 @@ Because the service is not designed for the horizon scale, so the query will fai
 01:00:20 VERB StateSwitch <PuppetService> on(pending) <- (false)
 01:00:20 VERB PuppetService startGrpcClient()
 01:00:20 VERB PuppetService discoverServiceIp(puppet_donut_XXX)
-01:00:20 WARN No endpoint when starting grpc client, 10 retry left. Reconnecting in 10 seconds... 
+01:00:20 WARN No endpoint when starting grpc client, 10 retry left. Reconnecting in 10 seconds...
 01:00:30 VERB PuppetService discoverServiceIp(puppet_donut_XXX)
-01:00:32 WARN No endpoint when starting grpc client, 9 retry left. Reconnecting in 10 seconds... 
+01:00:32 WARN No endpoint when starting grpc client, 9 retry left. Reconnecting in 10 seconds...
 01:00:42 VERB PuppetService discoverServiceIp(puppet_donut_XXX)
-01:00:43 WARN No endpoint when starting grpc client, 8 retry left. Reconnecting in 10 seconds... 
+01:00:43 WARN No endpoint when starting grpc client, 8 retry left. Reconnecting in 10 seconds...
 01:00:53 VERB PuppetService discoverServiceIp(puppet_donut_XXX)
-01:00:54 WARN No endpoint when starting grpc client, 7 retry left. Reconnecting in 10 seconds... 
+01:00:54 WARN No endpoint when starting grpc client, 7 retry left. Reconnecting in 10 seconds...
 01:01:04 VERB PuppetService discoverServiceIp(puppet_donut_XXX)
-01:01:05 WARN No endpoint when starting grpc client, 6 retry left. Reconnecting in 10 seconds... 
+01:01:05 WARN No endpoint when starting grpc client, 6 retry left. Reconnecting in 10 seconds...
 01:01:15 VERB PuppetService discoverServiceIp(puppet_donut_XXX)
 01:01:15 VERB PuppetService startGrpcStream()
 01:01:16 VERB PuppetService onGrpcStreamEvent({type:EVENT_TYPE_SCAN(22), payload:"{"qrcode":"http://weixin.qq.com/x/AddMKwOGpxHRGRQNPWh5","status":2}"})
@@ -138,20 +138,20 @@ It's not hard for us to implemente this by the following steps:
 1. Start `nginx-proxy` with port `80` and `443` for the web service
 1. Start `chatie/service` container with the following `docker-compose.yml` config:
 
-    ```yaml
-    version: '3.8'
-    services:
-      chatie-api:
-        image: chatie-api
-        container_name: chatie-api
-        network_mode: bridge
-        expose:
-          - 8788
-        environment:
-          - HTTPS_METHOD=noredirect
-          - VIRTUAL_HOST=api.chatie.io,www.chatie.io
-          - LETSENCRYPT_HOST=api.chatie.io,www.chatie.io
-    ```
+   ```yaml
+   version: "3.8"
+   services:
+     chatie-api:
+       image: chatie-api
+       container_name: chatie-api
+       network_mode: bridge
+       expose:
+         - 8788
+       environment:
+         - HTTPS_METHOD=noredirect
+         - VIRTUAL_HOST=api.chatie.io,www.chatie.io
+         - LETSENCRYPT_HOST=api.chatie.io,www.chatie.io
+   ```
 
 1. Change the DNS of `api.chatie.io` on Cloudflare from Heroku to our new Azure server.
 

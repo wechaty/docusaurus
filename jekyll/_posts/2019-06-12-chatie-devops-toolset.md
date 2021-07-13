@@ -29,7 +29,7 @@ So, I'd like to introduce them to the community, and also it's a quick sheet to 
 
 ## 1. [@chatie/tsconfig](https://github.com/chatie/tsconfig)
 
-![@chatie/tsconfig](/assets/2019/chatie-tsconfig.jpg)
+![@chatie/tsconfig](/assets/2019/chatie-tsconfig.webp)
 
 This module enables other module to inheritance tsconfig.json via Node.js packages.
 
@@ -45,13 +45,9 @@ Then it will create a very nice `tsconfig.json` at the root of project for you, 
 {
   "extends": "@chatie/tsconfig",
   "compilerOptions": {
-    "outDir": "dist",
+    "outDir": "dist"
   },
-  "exclude": [
-    "node_modules/",
-    "dist/",
-    "tests/fixtures/",
-  ],
+  "exclude": ["node_modules/", "dist/", "tests/fixtures/"],
   "include": [
     "app/**/*.ts",
     "bin/*.ts",
@@ -59,8 +55,8 @@ Then it will create a very nice `tsconfig.json` at the root of project for you, 
     "examples/**/*.ts",
     "scripts/**/*.ts",
     "src/**/*.ts",
-    "tests/**/*.spec.ts",
-  ],
+    "tests/**/*.spec.ts"
+  ]
 }
 ```
 
@@ -73,7 +69,7 @@ After extends from @chatie/tsconfig from your tsconfig.json, you will have the c
 
 ## 2. [@chatie/eslint-config](https://github.com/chatie/eslint-config)
 
-![@chatie/eslint-config](/assets/2019/chatie-eslint-config.jpg)
+![@chatie/eslint-config](/assets/2019/chatie-eslint-config.webp)
 
 ESLint Sharable Rules in TypeScript Standard Style.
 
@@ -85,8 +81,8 @@ Then it will create a very nice `.eslintrc.js` for you automatically (if there's
 
 ```js
 module.exports = {
-  extends: '@chatie',
-}
+  extends: "@chatie",
+};
 ```
 
 Then you are all set. `./node_modules/.bin/eslint` will work and follow the @chatie rules.
@@ -113,7 +109,7 @@ By adding the following json entrance to package.json:
 
 ## 4. [@chatie/semver](https://github.com/chatie/semver)
 
-![@chatie/semver](/assets/2019/chatie-semver.png)
+![@chatie/semver](/assets/2019/chatie-semver.webp)
 
 The Enhanced Semantic Versioner for NPM.
 
@@ -148,7 +144,7 @@ See also: <https://github.com/wechaty/wechaty/issues/905>
 
 ## 5. [tstest](https://github.com/huan/tstest)
 
-![tstest](/assets/2019/tstest.png)
+![tstest](/assets/2019/tstest.webp)
 
 A pytest in TypeScript
 

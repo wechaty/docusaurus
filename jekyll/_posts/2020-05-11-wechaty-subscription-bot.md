@@ -4,10 +4,11 @@ author: fish-ball
 categories: tutorial
 tags:
   - subscribe
-image: /assets/2020/wechaty-subscription-bot/teaser.png
+image: /assets/2020/wechaty-subscription-bot/teaser.webp
 ---
 
 > 作者: [工画师](https://github.com/fish-ball)，分母为零的斜杠大龄青年程序员。
+
 <!-- more -->
 
 项目链接：[![wechaty-subsbot](https://img.shields.io/badge/GitHub-wechaty--subsbot-green)](https://github.com/fish-ball/wechaty-subsbot)
@@ -27,26 +28,29 @@ image: /assets/2020/wechaty-subscription-bot/teaser.png
 于是先把登录部分撸下来：
 
 ```javascript
-bot.on('scan', (qrcode, status) => {
-  if (status === ScanStatus.Waiting) {
-    console.log(qrcode);
-    QrcodeTerminal.generate(qrcode, {
-      small: true,
-    });
-  }
-}).on('message', async msg => {
-  const text = msg.text();
-  const sender = msg.from();
-  console.log(text, sender);
-  // 后面就在这里做文章了
-}).start();
+bot
+  .on("scan", (qrcode, status) => {
+    if (status === ScanStatus.Waiting) {
+      console.log(qrcode);
+      QrcodeTerminal.generate(qrcode, {
+        small: true,
+      });
+    }
+  })
+  .on("message", async (msg) => {
+    const text = msg.text();
+    const sender = msg.from();
+    console.log(text, sender);
+    // 后面就在这里做文章了
+  })
+  .start();
 ```
 
 这个很简单就测试过了，然后事实上后面的工作就是如何在 message 事件里面做文章了，下一步的话，我需要实现三个最基础的功能：
 
-+ 订阅频道
-+ 推送新内容
-+ 控制功能
+- 订阅频道
+- 推送新内容
+- 控制功能
 
 那么下面围绕这些内容展开说一下整个过程。
 
@@ -76,9 +80,9 @@ bot.on('scan', (qrcode, status) => {
 {
   "subscriptions": {
     "9458053": {
-    "lastTimestamp": 1589170983.101,
-    "name":"李永乐老师官方"
-  }
+      "lastTimestamp": 1589170983.101,
+      "name": "李永乐老师官方"
+    }
   }
 }
 ```
@@ -98,35 +102,36 @@ class UserContext {
   constructor(userId: string) {
     this.userId = userId;
     this.fname = `data/${userId}.subs`;
-    fs.mkdirSync(path.dirname(this.fname), {recursive: true, mode: 0o644});
+    fs.mkdirSync(path.dirname(this.fname), { recursive: true, mode: 0o644 });
     try {
       const content = fs.readFileSync(this.fname);
-      this.data = JSON.parse(content && content.toString() || '{}');
+      this.data = JSON.parse((content && content.toString()) || "{}");
       console.log(this.data);
     } catch (err) {
-      if (err.code !== 'ENOENT') {
+      if (err.code !== "ENOENT") {
         throw err;
       }
     }
   }
 
   async user() {
-    return bot.Contact.find({id: this.userId});
+    return bot.Contact.find({ id: this.userId });
   }
 
   async save() {
     // 获取
     await fs.promises.writeFile(this.fname, JSON.stringify(this.data));
-    console.log('write ok');
+    console.log("write ok");
   }
 
   static getUserIdList() {
     try {
-      const files = fs.readdirSync('data');
-      return files.filter(f => /\.subs$/.test(f))
-        .map(f => f.replace(/\.subs/, ''));
+      const files = fs.readdirSync("data");
+      return files
+        .filter((f) => /\.subs$/.test(f))
+        .map((f) => f.replace(/\.subs/, ""));
     } catch (err) {
-      if (err.code !== 'ENOENT') {
+      if (err.code !== "ENOENT") {
         throw err;
       }
       return [];
@@ -165,9 +170,9 @@ class UserContext {
 
 ## 实现内容推送
 
-嗯，这个其实好办，只要启动了之后，轮询一下查一下B站下面这个频道的新内容，如果日期晚于最晚更新的日期，那么就推送给 `UserContext` 对应的用户即可，把消息撸得好看一些就不错。
+嗯，这个其实好办，只要启动了之后，轮询一下查一下 B 站下面这个频道的新内容，如果日期晚于最晚更新的日期，那么就推送给 `UserContext` 对应的用户即可，把消息撸得好看一些就不错。
 
-我把这个动作的代码封装到了一个 `SubscriptionRunner` 类里面（此处省略1000字）：
+我把这个动作的代码封装到了一个 `SubscriptionRunner` 类里面（此处省略 1000 字）：
 
 ```javascript
 // 定时获取订阅的 UP 主的视频，如果发现更新则推送
@@ -208,7 +213,7 @@ class SubscriptionRunner {
 然后，启动轮询的时机应该是在登录之后，一分钟刷一次吧：
 
 ```javascript
-bot.on('login', async () => {
+bot.on("login", async () => {
   // 每分钟查一下有没有新片发布
   setTimeout(async () => {
     await SubscriptionRunner.check();
@@ -255,8 +260,7 @@ class UserContext {
 然后在 on message 那里引入一下：
 
 ```javascript
-bot.on('message', async msg => {
-
+bot.on("message", async (msg) => {
   // ...
 
   const text = msg.text();
@@ -274,12 +278,11 @@ bot.on('message', async msg => {
 
   // 退订指令
   if (/^:leave \d+$/.test(msg.content())) {
-    await ctx.leaveChannel(msg.content().split(' ')[1]);
+    await ctx.leaveChannel(msg.content().split(" ")[1]);
     return;
   }
 
   // ...
-
 });
 ```
 
@@ -289,7 +292,7 @@ bot.on('message', async msg => {
 
 测试机器人(wx_easecloud)：
 
-![逸云科技](/assets/2020/wechaty-subscription-bot/wx_easecloud.jpg)
+![逸云科技](/assets/2020/wechaty-subscription-bot/wx_easecloud.webp)
 
 联系作者：
 

@@ -2,24 +2,25 @@
 title: "基于python-wechaty的群聊助手机器人"
 author: kxz18
 categories: project
-image: /assets/2020/groupchat-assistant-bot/header.jpeg
+image: /assets/2020/groupchat-assistant-bot/header.webp
 tags:
   - python
   - summer-2020
   - summer-of-wechaty
   - utility
 ---
+
 > Author: [@kxz18](https://github.com/kxz18)
 > Code: [@kxz18/python-wechaty-groupchat-bot](https://github.com/kxz18/python-wechaty-groupchat-bot)
 
-## 暑期2020
+## 暑期 2020
 
-“开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
-根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。
+“开源软件供应链点亮计划-暑期 2020”（以下简称 暑期 2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
+根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期 2020”活动奖金和奖杯。
 官网：[https://isrc.iscas.ac.cn/summer2020](https://isrc.iscas.ac.cn/summer2020) 官方新闻：[http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html](http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html)
-本项目 [基于python-wechaty的群聊助手机器人] 系 暑期2020 支持的开源项目。
+本项目 [基于 python-wechaty 的群聊助手机器人] 系 暑期 2020 支持的开源项目。
 
-## [基于python-wechaty的群聊助手机器人]具体计划
+## [基于 python-wechaty 的群聊助手机器人]具体计划
 
 - 导师：吴京京
 - 学生：孔祥哲
@@ -40,7 +41,7 @@ tags:
     - 扩展功能
   - 群成员管理插件
     - 7.27 - 8.2
-    - 进行踢人和进群欢迎的管理，踢人要求3位以上群成员对某人表示不满。此插件需要机器人拥有相关的权限。
+    - 进行踢人和进群欢迎的管理，踢人要求 3 位以上群成员对某人表示不满。此插件需要机器人拥有相关的权限。
     - 扩展功能
   - 对前几个模块的交互方面进行提升
     - 8.3 - 8.23
@@ -48,7 +49,7 @@ tags:
     - 扩展功能
   - （选做）rasa chat bot 插件
     - 8.24 - 8.31
-    - 接入rasa chat bot 的API，此为选做内容，如果在以上内容都完成且仍有较充裕的时间的情况下，可以考虑尝试进行制作。
+    - 接入 rasa chat bot 的 API，此为选做内容，如果在以上内容都完成且仍有较充裕的时间的情况下，可以考虑尝试进行制作。
     - 选做内容
 - 项目链接：[https://github.com/kxz18/python-wechaty-groupchat-bot](https://github.com/kxz18/python-wechaty-groupchat-bot)
 - 联系方式：+86 15068701650 | e: 15068701650@163.com

@@ -8,16 +8,16 @@ tags:
   - summer-2020
   - go
   - ecosystem
-image: /assets/2020/09-soc-go-plugin/2020-09-27-go-wechaty-plugin.png
+image: /assets/2020/09-soc-go-plugin/2020-09-27-go-wechaty-plugin.webp
 ---
 
-## 暑期2020
+## 暑期 2020
 
-“开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
+“开源软件供应链点亮计划-暑期 2020”（以下简称 暑期 2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
-根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。
+根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期 2020”活动奖金和奖杯。
 官网：[https://isrc.iscas.ac.cn/summer2020](https://isrc.iscas.ac.cn/summer2020) 官方新闻：[http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html](http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html)
-本项目 [为 go-wechaty 设计实现插件体系] 系 暑期2020 支持的开源项目。
+本项目 [为 go-wechaty 设计实现插件体系] 系 暑期 2020 支持的开源项目。
 
 ## [为 go-wechaty 设计实现插件体系]信息
 
@@ -40,11 +40,11 @@ go-wechaty 是 Go 语言实现 wechaty 的项目，同样支持多协议接入�
 
 ### 时间规划
 
-第一阶段(7月1日至8月15日)
+第一阶段(7 月 1 日至 8 月 15 日)
 
 编写插件机制设计文档，与导师交流沟通。其中，文档包含设计思路，实现逻辑，以及涉及到项目代码变更等。根据 Go 语言特性，对插件机制的设计进行改进，并且尝试思考更多可能的方案。如果有需要，还应该编写相应的试验代码。
 
-第二阶段(8月16日至9月30日)
+第二阶段(8 月 16 日至 9 月 30 日)
 
 根据第一阶段的设计文档编写代码，实现 go-wechaty 的插件机制；使用 go-wechaty 插件机制编写一个插件 Demo，并解决插件机制使用过程中遇上的问题，回过头修改插件机制的设计和实现。
 
@@ -72,7 +72,7 @@ Live Coding
 
 #### go-wechaty 插件机制设计文档
 
-每周进度汇报与讨论Issue：[为 go-wechaty 设计实现 插件体系](https://github.com/wechaty/summer-of-code/issues/9#)
+每周进度汇报与讨论 Issue：[为 go-wechaty 设计实现 插件体系](https://github.com/wechaty/summer-of-code/issues/9#)
 
 相关代码仓库：[go-wechaty Plugin 分支 PR](https://github.com/wechaty/go-wechaty/pull/67)
 
@@ -115,7 +115,7 @@ bot.OnMessage(func(context *wechaty.Context, message *user.Message) {
 
     对应方法：`Context.Abort` 以及 `Context.Done`
 
-  - 在并发程序中，控制插件内部 goroutine 的结束。用法与 Go 语言中的 context.Context ([WithCancel  ()](https://golang.org/pkg/context/#WithCancel))相同。
+  - 在并发程序中，控制插件内部 goroutine 的结束。用法与 Go 语言中的 context.Context ([WithCancel ()](https://golang.org/pkg/context/#WithCancel))相同。
 
     对应方法：`Context.Abort` 以及 `Context.Done`
 
@@ -188,15 +188,15 @@ func main() {
 
 - 项目开发时间较长，常常有想要拖延的念头，动力不足。
 
-得益于 Wechaty 社区优秀的管理方式，参与项目开发的学生需要在相应的Issue上填写每周开发报告，报告中需要汇总每周工作成果，制定下周开发计划。由于有每周汇报的压力，我的拖延现象降低了许多。这次项目开发经验也让我学习到了制定计划的重要性。
+得益于 Wechaty 社区优秀的管理方式，参与项目开发的学生需要在相应的 Issue 上填写每周开发报告，报告中需要汇总每周工作成果，制定下周开发计划。由于有每周汇报的压力，我的拖延现象降低了许多。这次项目开发经验也让我学习到了制定计划的重要性。
 
 ## 导师评审结果
 
-- 项目完成度：*按照原计划方案，完成原计划的功能开发*
+- 项目完成度：_按照原计划方案，完成原计划的功能开发_
 
-- 学生参与度：*项目参加活动的部分，全部由学生完成*
+- 学生参与度：_项目参加活动的部分，全部由学生完成_
 
-- 代码贡献量：*Plugin 100% 由学生完成，包涵一个示例 Plugin，占到整个开源项目的10%-20%。*
+- 代码贡献量：_Plugin 100% 由学生完成，包涵一个示例 Plugin，占到整个开源项目的 10%-20%。_
 
 - 综合评价及建议：
 
@@ -204,7 +204,7 @@ func main() {
 
   - 相信大部分从学校过渡到工作中，都会对长周期的项目产生动摇，其实你只需要按照原计划去完成既定工作就好，大项目拆解成小项目是计划和执行中很重要的部分；报告中提到了周计划，很欣慰你看到了这点带给你的价值，它使你没有偏离原有计划的方向，也希望你今后的工作中能从此有所收获。
 
-- 最终评审结果：*通过*
+- 最终评审结果：_通过_
 
 ## 联系我们
 

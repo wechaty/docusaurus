@@ -2,7 +2,7 @@
 title: "基于开放 API 封装 Wechaty 接口下的飞书聊天机器人：期初"
 author: roxanne718
 categories: project
-image: /assets/2020/lark-puppet/wechaty-lark.png
+image: /assets/2020/lark-puppet/wechaty-lark.webp
 tags:
   - summer-2020
   - puppet-provider
@@ -10,15 +10,16 @@ tags:
   - summer-of-wechaty
   - ecosystem
 ---
+
 > Author: [@roxanne718](https://github.com/Roxanne718)
 > Code: [wechaty-puppet-lark](https://github.com/Roxanne718/wechaty-puppet-lark)
 
-## 暑期2020
+## 暑期 2020
 
-“开源软件供应链点亮计划-暑期2020”（以下简称暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
-根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。
+“开源软件供应链点亮计划-暑期 2020”（以下简称暑期 2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
+根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期 2020”活动奖金和奖杯。
 官网：[https://isrc.iscas.ac.cn/summer2020](https://isrc.iscas.ac.cn/summer2020) 官方新闻：[http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html](http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html)
-本项目 [基于开放 API 封装 Wechaty 接口下的飞书聊天机器人] 系 暑期2020 支持的开源项目。
+本项目 [基于开放 API 封装 Wechaty 接口下的飞书聊天机器人] 系 暑期 2020 支持的开源项目。
 
 <!--more-->
 
@@ -29,6 +30,7 @@ tags:
 - 学生：范蕊
 
 - 模块列表
+
   - [ ] 接收消息
   - [ ] 通讯录获取
   - [ ] 实现 puppet 上各个类型的消息接口
@@ -36,6 +38,7 @@ tags:
   - [ ] 使用文档
 
 - 计划安排：
+
   - 阅读源代码
     - 7.29 - 7.31
     - 阅读 wechaty 源代码

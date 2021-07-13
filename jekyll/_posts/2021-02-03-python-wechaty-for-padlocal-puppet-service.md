@@ -6,17 +6,17 @@ tags:
   - puppet-service
   - padlocal
 categories: tutorial
-image: /assets/2021/02-python-wechaty-for-padlocal-puppet-service/python-wechaty-logo.png
+image: /assets/2021/02-python-wechaty-for-padlocal-puppet-service/python-wechaty-logo.webp
 ---
 
-## Python Wechaty如何使用PadLocal Puppet Service
+## Python Wechaty 如何使用 PadLocal Puppet Service
 
-本文描述Python语言下如何使用iPad协议的PadLocal Token。其他Wechaty多语言开发也能做参考。
+本文描述 Python 语言下如何使用 iPad 协议的 PadLocal Token。其他 Wechaty 多语言开发也能做参考。
 
 - [wechaty-puppet-padlocal](https://github.com/padlocal/wechaty-puppet-padlocal)
 - [TOKEN 申请方法](https://wechaty.js.org/docs/puppet-services/)
 
-## 搭建PadLocal Token Gateway
+## 搭建 PadLocal Token Gateway
 
 ```shell
 # 设置环境变量
@@ -40,9 +40,9 @@ docker run -ti \
   wechaty/wechaty:0.56
 ```
 
-- WECHATY_PUPPET_PADLOCAL_TOKEN 申请得到的token代码
+- WECHATY_PUPPET_PADLOCAL_TOKEN 申请得到的 token 代码
 - WECHATY_PUPPET_SERVER_PORT 设置对外访问端口，需要保证端口没被占用，没被防火墙匹配
-- WECHATY_TOKEN 生成个人随机[TOKEN](https://www.uuidgenerator.net/version4)。WECHATY_TOKEN：个人理解为和远程wechaty服务器做通讯用，通过这个唯一token可以返回当前主机访问地址和端口。所以需要避免和别人重复。
+- WECHATY_TOKEN 生成个人随机[TOKEN](https://www.uuidgenerator.net/version4)。WECHATY_TOKEN：个人理解为和远程 wechaty 服务器做通讯用，通过这个唯一 token 可以返回当前主机访问地址和端口。所以需要避免和别人重复。
 
 可以通过下面代码，确定是否成功。
 
@@ -51,9 +51,9 @@ curl https://api.chatie.io/v0/hosties/$WECHATY_TOKEN (个人随机token)
 {"ip":"36.7.XXX.XXX","port":9001}
 ```
 
-## python-Wechaty对接GateWay
+## python-Wechaty 对接 GateWay
 
-在对接Gateway的时候，这里需要注意下，如果GateWay是部署在公网可以访问的服务器上，按照默认配置就可访问；如果是部署在自己内网服务器上，就会报`Your service token has no available endpoint, is your token correct?`，这个时候需要设置WECHATY_PUPPET_SERVICE_ENDPOINT。
+在对接 Gateway 的时候，这里需要注意下，如果 GateWay 是部署在公网可以访问的服务器上，按照默认配置就可访问；如果是部署在自己内网服务器上，就会报`Your service token has no available endpoint, is your token correct?`，这个时候需要设置 WECHATY_PUPPET_SERVICE_ENDPOINT。
 
 ```shell
 #1  默认配置
@@ -66,7 +66,7 @@ export WECHATY_PUPPET_SERVICE_TOKEN="puppet_padlocal_XXXXXX"
 export WECHATY_PUPPET_SERVICE_ENDPOINT="192.168.1.56:9001"
 ```
 
-WECHATY_PUPPET_SERVICE_ENDPOINT：内网IP地址:端口号
+WECHATY_PUPPET_SERVICE_ENDPOINT：内网 IP 地址:端口号
 
 ### python-wechaty-getting-started
 
@@ -85,6 +85,6 @@ python examples/ding-dong-bot.py
 
 ## 参考
 
-- 如何成为 `Wechaty Contributor` 可以通过该链接查看 [https://wechaty.js.org/docs/contributor-program/](https://wechaty.js.org/docs/contributor-program/)
+- 如何成为 `Wechaty Contributor`  可以通过该链接查看 [https://wechaty.js.org/docs/contributor-program/](https://wechaty.js.org/docs/contributor-program/)
 - [.NET Wechaty 如何使用 PadLocal Puppet Service](https://wechaty.js.org/2021/01/28/csharp-wechaty-for-padlocal-puppet-service/)
 - 特别感谢 @huan 的帮助。

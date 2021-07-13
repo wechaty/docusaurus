@@ -1,7 +1,7 @@
 ---
 title: "Wechaty Contributor Beijing Meetup 2020/04"
 author: padlocal
-image: /assets/2021/04-wechaty-contributor-meetup/cheers.jpg
+image: /assets/2021/04-wechaty-contributor-meetup/cheers.webp
 categories: story
 tags:
   - meetup
@@ -18,7 +18,7 @@ Wechaty Contributor 北京聚餐
 说起来有些唐突，因为事先并没有预约，由我临时起意问大家有没有空，毕竟 PadLocal 发布以来还没有和社区大佬们见过面。
 缘分就在于，也可能因为放假的缘故，刚好大家又能抽出时间，于是聚会才得以成行。
 
-早上10点，一行人按照约定陆陆续续到达北京“青春的前小腿” CAFE。据高原讲，这里是 Huan 的根据地，和老板特别熟，有啥好喝的直接问他就可以。
+早上 10 点，一行人按照约定陆陆续续到达北京“青春的前小腿” CAFE。据高原讲，这里是 Huan 的根据地，和老板特别熟，有啥好喝的直接问他就可以。
 
 落座一番寒暄，渐熟，开始了今天的议题：
 
@@ -43,4 +43,4 @@ Wechaty Contributor 北京聚餐
 
 [@padlocal](https://github.com/padlocal): Wechaty Padlocal puppet
 
-[wechaty-beijing-meetup-photo]: /assets/2021/04-wechaty-contributor-meetup/cheers.jpg
+[wechaty-beijing-meetup-photo]: /assets/2021/04-wechaty-contributor-meetup/cheers.webp

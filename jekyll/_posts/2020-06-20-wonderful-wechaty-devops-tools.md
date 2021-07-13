@@ -2,13 +2,13 @@
 title: "Wonderful Wechaty devops toolset"
 author: windmemory
 categories: announcement
-tags: 
+tags:
   - devops
   - tool
   - talk
   - news
   - featured
-image: /assets/2020/wonderful-wechaty-devops-tools/teaser-image.png
+image: /assets/2020/wonderful-wechaty-devops-tools/teaser-image.webp
 ---
 
 > Author: [@windmemory](https://github.com/windmemory) Wechaty contributor, author of [wechaty-puppet-padchat](https://github.com/wechaty/wechaty-puppet-padchat), [wechaty-puppet-padpro](https://github.com/wechaty/wechaty-puppet-padpro), [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus). CTO of [Juzi.Bot](https://pre-angel.com/portfolios/juzibot/)
@@ -71,10 +71,10 @@ fi
 
 这个脚本主要做了以下几件事情：
 
-> 1. 将代码打包成npm包格式
+> 1. 将代码打包成 npm 包格式
 > 1. 创建临时文件夹
-> 1. 以npm install的方式安装刚才的包
-> 1. 执行smoke-test来验证打包正确性
+> 1. 以 npm install 的方式安装刚才的包
+> 1. 执行 smoke-test 来验证打包正确性
 
 通过这样四步，可以完整的模拟一个 NPM 包在打包后，依次经历安装，引用，运行的过程，并且在 NPM 发包前保证这个包被发出去了之后，不会出现无法安装，安装后无法运行的情况，而且通过自动化的脚本，也省去了开发过程中对打包情况的测试，大大提升了开发效率，还保证了 NPM 包的健壮性。
 
@@ -87,8 +87,8 @@ fi
 这个包主要做了以下三件事情：
 
 > 1. 执行 npm lint 检查代码格式
-> 1. 如果格式无误，则升级npm版本
-> 1. 执行push
+> 1. 如果格式无误，则升级 npm 版本
+> 1. 执行 push
 
 但是接触过这个脚本的同学，可能曾经看到过类似这样的画面：
 
@@ -148,7 +148,7 @@ git push -u origin very-sexy-code-change
 
 `Wechaty` 的 devops 还有另外的一个重要组成部分，那就是 `Github Actions`，这篇博客由于时间原因，没有时间准备完整的内容，后续会持续更新更多关于 `Wechaty DevOps` 相关的内容，也欢迎大家一起来了解学习 `Wechaty DevOps`。
 
-[version-intro]: /assets/2020/wonderful-wechaty-devops-tools/version-intro.png
-[git-push-error]: /assets/2020/wonderful-wechaty-devops-tools/git-push-error.jpg
-[question-face]: /assets/2020/wonderful-wechaty-devops-tools/question-face.png
-[git-hooks-explain]: /assets/2020/wonderful-wechaty-devops-tools/git-hooks-explain.png
+[version-intro]: /assets/2020/wonderful-wechaty-devops-tools/version-intro.webp
+[git-push-error]: /assets/2020/wonderful-wechaty-devops-tools/git-push-error.webp
+[question-face]: /assets/2020/wonderful-wechaty-devops-tools/question-face.webp
+[git-hooks-explain]: /assets/2020/wonderful-wechaty-devops-tools/git-hooks-explain.webp

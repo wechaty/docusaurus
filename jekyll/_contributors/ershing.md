@@ -1,10 +1,10 @@
 ---
 name: ershing
 site: https://github.com/ershing
-avatar: /assets/contributors/ershing/avatar.png
+avatar: /assets/contributors/ershing/avatar.webp
 bio: Node.js developer
-email: 
-twitter: 
+email:
+twitter:
 ---
 
 Node.js developer

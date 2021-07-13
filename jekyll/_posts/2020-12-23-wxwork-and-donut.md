@@ -5,7 +5,7 @@ categories: project
 tags:
   - nodejs
   - productivity
-image: /assets/2020/12-07-wxwork/wecom.png
+image: /assets/2020/12-07-wxwork/wecom.webp
 ---
 
 > 作者: [zhihuifanqiechaodan](https://github.com/zhihuifanqiechaodan) 前端开发工程师
@@ -655,7 +655,7 @@ async function messageProcessing(message) {
 
 **关注公众号「番茄学前端」**，我会定时更新和发布前端相关信息和项目案例经验供你参考。
 
-## 这里提供给大家一个最小demo
+## 这里提供给大家一个最小 demo
 
 [项目地址](https://github.com/zhihuifanqiechaodan/wechaty-bot)
 

@@ -4,12 +4,12 @@ author: lijiarui
 categories: announcement
 tags:
   - document
-image: /assets/2017/add-wechaty-jsdoc-automate-all-the-things.jpg
+image: /assets/2017/add-wechaty-jsdoc-automate-all-the-things.webp
 ---
 
 In order to sync the doc with the latest code, it's best to use [jsdoc](https://github.com/jsdoc3/jsdoc) to describe the API and use [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown) to generate markdown format documents to the docs directory.
 
-![automate all the things](/assets/2017/add-wechaty-jsdoc-automate-all-the-things.jpg)
+![automate all the things](/assets/2017/add-wechaty-jsdoc-automate-all-the-things.webp)
 
 Yes, we planned to do this for nearly a year...
 
@@ -23,16 +23,16 @@ At first, we write the doc in [wiki](https://github.com/wechaty/wechaty/wiki "wi
 
 A lot of developers use wiki to learn wechaty, but the wiki's performance is not good, it cannot update automatically and doesn't base on user's most demand.
 
-> * some minor fix (such as the different naming [Message Class](https://github.com/wechaty/wechaty/wiki/API#message-class) & [Class Room](https://github.com/wechaty/wechaty/wiki/API#class-room))
-> * improvement on the formatting, e.g. the level setting of each title
-> * maybe, add an index for better guiding  
-> -- In Feb 2017, [@ax4](https://github.com/ax4) creat an [issue](https://github.com/wechaty/wechaty/issues/252 "issue") and expressed his willingness to contribute the document.
+> - some minor fix (such as the different naming [Message Class](https://github.com/wechaty/wechaty/wiki/API#message-class) & [Class Room](https://github.com/wechaty/wechaty/wiki/API#class-room))
+> - improvement on the formatting, e.g. the level setting of each title
+> - maybe, add an index for better guiding  
+>   -- In Feb 2017, [@ax4](https://github.com/ax4) creat an [issue](https://github.com/wechaty/wechaty/issues/252 "issue") and expressed his willingness to contribute the document.
 
 I like [@ax4](https://github.com/ax4)'s idea about the document guide:
 
-* **First:** Learn the awesome features of Wechaty
-* **Second:** See more advanced functions
-* **Third:** Reach the boundary? Help us develop Wechaty
+- **First:** Learn the awesome features of Wechaty
+- **Second:** See more advanced functions
+- **Third:** Reach the boundary? Help us develop Wechaty
 
 Thanks for [@ax4](https://github.com/ax4)'s suggestion and we decide to do the doc as soon as possible.
 
@@ -51,18 +51,17 @@ The simplest documentation is just a description
 
 ```js
 /** This is a description of the foo function. */
-function foo() {
-}
+function foo() {}
 ```
 
 #### Reference
 
-* *[jsdoc Introduction](http://www.2ality.com/2011/08/jsdoc-intro.html)
-* *[jsdoc English document](http://usejsdoc.org/)
-* *[jsdoc Chinese document](http://www.css88.com/doc/jsdoc/)
-* ***Document This**
-   I use vscode as my editor, and use [Document This](https://marketplace.visualstudio.com/items?itemName=joelday.docthis)
-    "Document This" is a Visual Studio Code extension that automatically generates detailed JSDoc comments for both TypeScript and JavaScript files. You can use Ctrl+Alt+D and again Ctrl+Alt+D to generates documentation for whatever the caret is on or inside of.
+- \*[jsdoc Introduction](http://www.2ality.com/2011/08/jsdoc-intro.html)
+- \*[jsdoc English document](http://usejsdoc.org/)
+- \*[jsdoc Chinese document](http://www.css88.com/doc/jsdoc/)
+- **\*Document This**
+  I use vscode as my editor, and use [Document This](https://marketplace.visualstudio.com/items?itemName=joelday.docthis)
+  "Document This" is a Visual Studio Code extension that automatically generates detailed JSDoc comments for both TypeScript and JavaScript files. You can use Ctrl+Alt+D and again Ctrl+Alt+D to generates documentation for whatever the caret is on or inside of.
 
 ### jsdoc2md
 
@@ -87,8 +86,8 @@ In order to pick function name from the full api doc, I learnt about [dmd](https
 
 For the wechaty document, I change two following dmd partials:
 
-* link.hbs
-* sig-link-parent.hbs
+- link.hbs
+- sig-link-parent.hbs
 
 ## Wechaty Progress on JsDoc && jsdoc2md
 
@@ -98,18 +97,18 @@ For the wechaty document, I change two following dmd partials:
 
 [@Huan](https://github.com/huan), [@ax4](https://github.com/ax4),[@hczhcz](https://github.com/hczhcz), [@William](https://github.com/kis87988) and I talked a lot about wechaty document on the following issues:
 
-* **issue73:** [[doc] To Embed Document in Wechaty Code for Generating Automaticly](https://github.com/wechaty/wechaty/issues/73)
-* **issue252:** [[doc] Contribute to the doc editing[ jsdoc / jsdoc2md / typedoc ]](https://github.com/wechaty/wechaty/issues/252)
+- **issue73:** [[doc] To Embed Document in Wechaty Code for Generating Automaticly](https://github.com/wechaty/wechaty/issues/73)
+- **issue252:** [[doc] Contribute to the doc editing[ jsdoc / jsdoc2md / typedoc]](https://github.com/wechaty/wechaty/issues/252)
 
 #### Related PR
 
-Also, [@hczhcz](https://github.com/hczhcz) and [@ax4](https://github.com/ax4) and I contribute a lot on the document:  
+Also, [@hczhcz](https://github.com/hczhcz) and [@ax4](https://github.com/ax4) and I contribute a lot on the document:
 
-* **PR378:** [jsdoc2md may flush some pieces of the embedded doc](https://github.com/wechaty/wechaty/issues/378)
-* **PR380:** [fix jsdoc flush issue #378 and minor fix on the doc examples](https://github.com/wechaty/wechaty/issues/380)  
-* **PR640:** [add documentation TODO entries](https://github.com/wechaty/wechaty/pull/640)
-* **PR725:** [add wechaty document](https://github.com/wechaty/wechaty/pull/725)
-* **PR321:** [Add JsDoc for Class Contact](https://github.com/wechaty/wechaty/pull/321)
+- **PR378:** [jsdoc2md may flush some pieces of the embedded doc](https://github.com/wechaty/wechaty/issues/378)
+- **PR380:** [fix jsdoc flush issue #378 and minor fix on the doc examples](https://github.com/wechaty/wechaty/issues/380)
+- **PR640:** [add documentation TODO entries](https://github.com/wechaty/wechaty/pull/640)
+- **PR725:** [add wechaty document](https://github.com/wechaty/wechaty/pull/725)
+- **PR321:** [Add JsDoc for Class Contact](https://github.com/wechaty/wechaty/pull/321)
 
 ### Doc basic line
 
@@ -130,11 +129,11 @@ For the convenience of developers, our doc guideline as follows:
 
 We embed doc into the following file:
 
-* [src/wechaty.ts](https://github.com/wechaty/wechaty/blob/master/src/wechaty.ts)
-* [src/message.ts](https://github.com/wechaty/wechaty/blob/master/src/message.ts)
-* [src/room.ts](https://github.com/wechaty/wechaty/blob/master/src/room.ts)
-* [src/contact.ts](https://github.com/wechaty/wechaty/blob/master/src/contact.ts)
-* [src/friend-request.ts](https://github.com/wechaty/wechaty/blob/master/src/friend-request.ts)
+- [src/wechaty.ts](https://github.com/wechaty/wechaty/blob/master/src/wechaty.ts)
+- [src/message.ts](https://github.com/wechaty/wechaty/blob/master/src/message.ts)
+- [src/room.ts](https://github.com/wechaty/wechaty/blob/master/src/room.ts)
+- [src/contact.ts](https://github.com/wechaty/wechaty/blob/master/src/contact.ts)
+- [src/friend-request.ts](https://github.com/wechaty/wechaty/blob/master/src/friend-request.ts)
 
 ### Wechaty jsdoc2md progress
 
@@ -163,8 +162,8 @@ Inspired by [[jsdoc2md-issue-123](https://github.com/jsdoc2md/jsdoc-to-markdown/
 I found maybe I can created a custom partial too.
 Then I override the following templates in `docs/partials/overrides`, adding <https://wechaty.github.io/wechaty> in the link:
 
-* link.hbs
-* sig-link-parent.hbs
+- link.hbs
+- sig-link-parent.hbs
 
 This is the reason why I add the following script in `package.json` :
 
@@ -184,8 +183,7 @@ For other developers, I tried my best to make it easier to add doc, just the fol
 
 ```ts
 /** This is a description of the foo function. */
-function foo() {
-}
+function foo() {}
 ```
 
 ### 2. Run the following command

@@ -6,14 +6,14 @@ tags:
   - python
   - donut
   - ecommerce
-image: /assets/2020/python-wechaty-cps-bot/jdyangli.jpg
+image: /assets/2020/python-wechaty-cps-bot/jdyangli.webp
 ---
 
 > Author: [@why2lyj](https://github.com/why2lyj)
 
 ## 背景
 
-无非就是想撸羊毛，自己又懒的一个一个找，一个一个发。已知目前的返佣app非常的多，比如：好省，蜜源，粉象，芬香等等等等。归根到底无非是利用淘宝、京东、拼多多、苏宁的开放平台做的。所以想到是否可以利用已有的开放平台来做一个属于自己的撸羊毛项目。
+无非就是想撸羊毛，自己又懒的一个一个找，一个一个发。已知目前的返佣 app 非常的多，比如：好省，蜜源，粉象，芬香等等等等。归根到底无非是利用淘宝、京东、拼多多、苏宁的开放平台做的。所以想到是否可以利用已有的开放平台来做一个属于自己的撸羊毛项目。
 
 ## 需求描述
 
@@ -21,7 +21,7 @@ image: /assets/2020/python-wechaty-cps-bot/jdyangli.jpg
 
 ## 最终效果图
 
-![效果图](/assets/2020/python-wechaty-cps-bot/jdyangli.jpg)
+![效果图](/assets/2020/python-wechaty-cps-bot/jdyangli.webp)
 
 ## 快速上手
 
@@ -63,7 +63,7 @@ async def jingdongfenxiang():
     infos = jingfen_query() # 由于并没有使用京东自有的SDK，源码请访问项目
     for info in infos:
         for image in info[1]:
-            file_box = FileBox.from_url(f'''{image}''', name='jing-dong.jpg') # 发送图片
+            file_box = FileBox.from_url(f'''{image}''', name='jing-dong.webp') # 发送图片
             time.sleep(random.randint(5,10))
             await conversation.say(file_box)
         time.sleep(random.randint(5,10))
@@ -91,11 +91,11 @@ python bot.py
 
 ### 心得
 
-申请的token属于donut-token ，底层其实是Windows Hook原理，所以微信发送消息的规则需要满足Windows上的操作，不然你会让腾讯关注到哦。
+申请的 token 属于 donut-token ，底层其实是 Windows Hook 原理，所以微信发送消息的规则需要满足 Windows 上的操作，不然你会让腾讯关注到哦。
 
 ### 致谢
 
-感谢[Wechaty](https://wechaty.github.io)团队。感谢[juzibot](https://www.juzibot.com)提供的donut-token
+感谢[Wechaty](https://wechaty.github.io)团队。感谢[juzibot](https://www.juzibot.com)提供的 donut-token
 
 项目链接
 

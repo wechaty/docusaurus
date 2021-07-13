@@ -7,20 +7,20 @@ tags:
   - summer-2020
   - go
   - devops
-image: /assets/2020/go-wechaty-github-action-optimization/header.jpg
+image: /assets/2020/go-wechaty-github-action-optimization/header.webp
 ---
 
-## 暑期2020
+## 暑期 2020
 
-“开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
+“开源软件供应链点亮计划-暑期 2020”（以下简称 暑期 2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
-根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。
+根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期 2020”活动奖金和奖杯。
 
 官网：[https://isrc.iscas.ac.cn/summer2020](https://isrc.iscas.ac.cn/summer2020)
 
 官方新闻：[http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html](http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html)
 
-本项目 [Go-wechaty Github Action optimization] 系 暑期2020 支持的开源项目。
+本项目 [Go-wechaty Github Action optimization] 系 暑期 2020 支持的开源项目。
 wechaty-words-per-day-plugin-mid-term
 
 ## 项目信息
@@ -30,11 +30,12 @@ wechaty-words-per-day-plugin-mid-term
 
 - 项目名称：Go-wechaty Github Action optimization
 - 方案描述：使用 Github Actions 相关特性为 Go-wechaty 相关项目作相关优化，提高用户体验。
-- 时间规划：8月20 - 9月5日，将相关代码落实到 Go-wechaty 项目中
+- 时间规划：8 月 20 - 9 月 5 日，将相关代码落实到 Go-wechaty 项目中
 
 ## 项目进度
 
 - 已完成工作：
+
   - 自动更新 `go-wechaty-getting-started` 依赖到最新版本
   - 完成 `win` 平台下 `ding-dong` 编译测试
   - 完成 ding-dong 的 docker 并推送到 Github Packages
@@ -48,7 +49,7 @@ wechaty-words-per-day-plugin-mid-term
 
 - 后续工作安排：
 
-  - 8月15日~9月5日：完善内容，提交项目代码，确保原项目中代码能顺利触发。
+  - 8 月 15 日~9 月 5 日：完善内容，提交项目代码，确保原项目中代码能顺利触发。
 
 ### 相关地址
 

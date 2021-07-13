@@ -7,7 +7,7 @@ tags:
   - release
   - puppet-provider
   - whatsapp
-image: /assets/2021/02-publishment-of-wechaty-whatsapp-puppet/logo.png
+image: /assets/2021/02-publishment-of-wechaty-whatsapp-puppet/logo.webp
 ---
 
 With the introduction of wechaty puppet and the growth of the wechaty ecosystem and community, we're happy to introduce `wechaty-puppet-whatsapp` which connects Wechaty API, the conversational RPA SDK for chatbot makers, and WhatsApp, a free, multi-platform messaging app.
@@ -35,26 +35,27 @@ npm i qrcode-terminal
 Then, you can implement your bot in a few lines of code, here is an basic demo:
 
 ```javascript
-const { Wechaty, log} = require("wechaty");
-const qrterminal = require('qrcode-terminal');
-const { PuppetWhatsapp} = require("wechaty-puppet-whatsapp");
+const { Wechaty, log } = require("wechaty");
+const qrterminal = require("qrcode-terminal");
+const { PuppetWhatsapp } = require("wechaty-puppet-whatsapp");
 
-const puppet  = new PuppetWhatsapp()
-const bot = new Wechaty({ puppet })
+const puppet = new PuppetWhatsapp();
+const bot = new Wechaty({ puppet });
 
 bot
-  .on('scan', qrcode => qrterminal.generate(qrcode, { small: true }))
-  .on('login', user => log.info(`User ${user} logged in`))
-  .on('message', message => log.info(`Message: ${message}`))
+  .on("scan", (qrcode) => qrterminal.generate(qrcode, { small: true }))
+  .on("login", (user) => log.info(`User ${user} logged in`))
+  .on("message", (message) => log.info(`Message: ${message}`));
 
-bot.start()
-  .then(() => log.info('StarterBot', 'Starter Bot Started.'))
-  .catch(e => log.error('StarterBot', e))
+bot
+  .start()
+  .then(() => log.info("StarterBot", "Starter Bot Started."))
+  .catch((e) => log.error("StarterBot", e));
 ```
 
 After scanning a WhatsApp QR code and logging in, you can view the received messages in the terminal, feel free to implement your own function over the messages based on your need.
 
-![basic demo](/assets/2021/02-publishment-of-wechaty-whatsapp-puppet/wechaty-puppet-whatsapp-demo.png)
+![basic demo](/assets/2021/02-publishment-of-wechaty-whatsapp-puppet/wechaty-puppet-whatsapp-demo.webp)
 
 ## Next Steps
 
@@ -64,22 +65,22 @@ As always, feel free to file an issue on the [github repo](https://github.com/we
 
 Here are some features to be implemented:
 
-| Feature  | Status |
-| ------------- | ------------- |
-| Send and Receive text messages  | ✅ |
-| Send media (images/audio/documents)  | ❌  |
-| Send video  | ❌ |
-| Receive Video | ❌ |
-| Receive media (images/audio/video/documents)  | ❌  |
-| Send contact cards | ❌ |
-| Get invite for group  | ❌ |
-| Modify group subject  | ❌  |
-| Add group participants  | ❌  |
-| Kick group participants  | ❌  |
-| Mention users | ❌ |
-| Get contact info | ❌ |
-| Get profile pictures | ❌ |
-| Set user status message | ❌ |
+| Feature                                      | Status |
+| -------------------------------------------- | ------ |
+| Send and Receive text messages               | ✅     |
+| Send media (images/audio/documents)          | ❌     |
+| Send video                                   | ❌     |
+| Receive Video                                | ❌     |
+| Receive media (images/audio/video/documents) | ❌     |
+| Send contact cards                           | ❌     |
+| Get invite for group                         | ❌     |
+| Modify group subject                         | ❌     |
+| Add group participants                       | ❌     |
+| Kick group participants                      | ❌     |
+| Mention users                                | ❌     |
+| Get contact info                             | ❌     |
+| Get profile pictures                         | ❌     |
+| Set user status message                      | ❌     |
 
 ## Thanks
 

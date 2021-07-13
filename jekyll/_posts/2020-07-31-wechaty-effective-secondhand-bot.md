@@ -7,8 +7,9 @@ tags:
   - project
   - electron
   - ecommerce
-image: /assets/2020/wechaty-electron/header.png
+image: /assets/2020/wechaty-electron/header.webp
 ---
+
 > Author: [krapnik](https://github.com/krapnikkk)
 > Code: [wechaty-electron](https://github.com/krapnikkk/wechaty-electron)
 
@@ -20,13 +21,13 @@ image: /assets/2020/wechaty-electron/header.png
 
 场景覆盖性&信息实时性&所及即所得...这些痛点该如何解决呢？
 
-于是我找到了wechaty~
+于是我找到了 wechaty~
 
 👐 代码配置化很极客
 
 🙌 可视化配置操作更贴近大众用户
 
-👌 wechaty消息推送实时到达很棒
+👌 wechaty 消息推送实时到达很棒
 
 ☝️ 直接图文阅读无须二次跳转更快
 
@@ -34,28 +35,28 @@ image: /assets/2020/wechaty-electron/header.png
 
 ## 功能
 
-🌙基于electron的主要原因是为了可视化配置wechaty设置
+🌙 基于 electron 的主要原因是为了可视化配置 wechaty 设置
 
-⭐可视化配置wechaty相关设置【token&bot_name等等】
+⭐ 可视化配置 wechaty 相关设置【token&bot_name 等等】
 
-⭐可视化配置推送相关设置【关键词&推送时间段等】
+⭐ 可视化配置推送相关设置【关键词&推送时间段等】
 
-🌙利用electron自动生成资讯内容图片
+🌙 利用 electron 自动生成资讯内容图片
 
-⭐自动生成推送内容图片，无须二次跳转访问链接
+⭐ 自动生成推送内容图片，无须二次跳转访问链接
 
 ## 逻辑
 
-- 通过electron生成的桌面程序启动&管理wechaty
+- 通过 electron 生成的桌面程序启动&管理 wechaty
 - 可视化配置推送关键字及时间段等相关设置
 - 获取到相关资讯信息后自动生成内容图片并保存到本地
-- 通过wechaty推送已生成的资讯精要信息和内容图片
+- 通过 wechaty 推送已生成的资讯精要信息和内容图片
 
 ## 依赖
 
-- wechaty：wechaty核心库
-- wechaty-puppet-padplus：wechaty iPad协议
-- electron: 基于Web技术创建原生程序的框架
+- wechaty：wechaty 核心库
+- wechaty-puppet-padplus：wechaty iPad 协议
+- electron: 基于 Web 技术创建原生程序的框架
 - react+antd: 框架+UI
 
 ## 运行
@@ -84,10 +85,10 @@ yarn run dev
 
 ## 效果图
 
-- ![截图](/assets/2020/wechaty-electron/pic01.jpg)
-- ![截图](/assets/2020/wechaty-electron/pic02.jpg)
+- ![截图](/assets/2020/wechaty-electron/pic01.webp)
+- ![截图](/assets/2020/wechaty-electron/pic02.webp)
 
 ## 致谢
 
-🙏感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
-🙏感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token
+🙏 感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人 SDK  
+🙏 感谢[句子互动](https://www.juzibot.com/)提供的 iPad 协议版 token

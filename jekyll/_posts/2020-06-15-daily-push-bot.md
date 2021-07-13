@@ -6,8 +6,7 @@ tags:
   - python
   - padplus
   - media
-image: /assets/2020/daily-push-wechat-robot/fake-robot.jpg
-
+image: /assets/2020/daily-push-wechat-robot/fake-robot.webp
 ---
 
 > 作者: [IvanEvan](https://github.com/IvanEvan/)
@@ -20,7 +19,7 @@ image: /assets/2020/daily-push-wechat-robot/fake-robot.jpg
 
 工作后慢慢发现，学习的成本越来越低，真正困难的是没有“空闲时间”学习，如何利用这有限的时间创造更大的价值变得尤为重要。
 
-以 AI 领域的微信公众号为例，每天都在产出最前沿的资讯，以及对经典问题的沉淀，文章篇幅也都不会太长，方便读者阅读，但是假设用户关注了100个这样类型的公众号，每次想看文章都要从100个公众号下逐个审查，这也是一个耗时的过程，那是否可以定时或指令性的自动筛选和推送文章给到用户呢？
+以 AI 领域的微信公众号为例，每天都在产出最前沿的资讯，以及对经典问题的沉淀，文章篇幅也都不会太长，方便读者阅读，但是假设用户关注了 100 个这样类型的公众号，每次想看文章都要从 100 个公众号下逐个审查，这也是一个耗时的过程，那是否可以定时或指令性的自动筛选和推送文章给到用户呢？
 
 没错，这就是这个机器人要解决的问题。
 
@@ -56,7 +55,7 @@ image: /assets/2020/daily-push-wechat-robot/fake-robot.jpg
 
 ### 2. 群外聊天（好友私聊）
 
-2.1 功能1全部具备
+2.1 功能 1 全部具备
 
 2.2 自动回复文本消息
 
@@ -126,9 +125,9 @@ image: /assets/2020/daily-push-wechat-robot/fake-robot.jpg
 
 ## 部分功能展示
 
-![群内推送](/assets/2020/daily-push-wechat-robot/push-inroom.png)
-![私聊推送](/assets/2020/daily-push-wechat-robot/push-per.png)
-![自我介绍](/assets/2020/daily-push-wechat-robot/intro.png)
-![非文本回复颜文字](/assets/2020/daily-push-wechat-robot/emoji.png)
+![群内推送](/assets/2020/daily-push-wechat-robot/push-inroom.webp)
+![私聊推送](/assets/2020/daily-push-wechat-robot/push-per.webp)
+![自我介绍](/assets/2020/daily-push-wechat-robot/intro.webp)
+![非文本回复颜文字](/assets/2020/daily-push-wechat-robot/emoji.webp)
 
-![天气查询](/assets/2020/daily-push-wechat-robot/whether.png)
+![天气查询](/assets/2020/daily-push-wechat-robot/whether.webp)

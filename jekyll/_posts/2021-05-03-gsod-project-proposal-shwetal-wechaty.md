@@ -1,5 +1,5 @@
 ---
-title:  "Shwetal Soni: GSOD'21 project proposal for wechaty"
+title: "Shwetal Soni: GSOD'21 project proposal for wechaty"
 author: shwetalsoni
 categories: gsod
 tags:
@@ -8,7 +8,7 @@ tags:
   - introduction
   - project
   - proposal
-image: /assets/2021/05-gsod-project-proposal-shwetal-wechaty/profilepic.jpeg
+image: /assets/2021/05-gsod-project-proposal-shwetal-wechaty/profilepic.webp
 ---
 
 ## GSOD21 Proposal for Wechaty
@@ -33,9 +33,9 @@ sonishwetal704@gmail.com
 
 ## Writing Samples
 
-* [Tutorial for writing Smart Contracts on Tezos](https://shwetalsoni.medium.com/building-your-first-dapp-on-tezos-part-1-writing-smart-contract-on-smartpy-d7cdf27476f9)
+- [Tutorial for writing Smart Contracts on Tezos](https://shwetalsoni.medium.com/building-your-first-dapp-on-tezos-part-1-writing-smart-contract-on-smartpy-d7cdf27476f9)
 
-* [Getting over Imposter Syndrome](https://shwetalsoni.medium.com/getting-over-imposter-syndrome-ccafb14aee12)
+- [Getting over Imposter Syndrome](https://shwetalsoni.medium.com/getting-over-imposter-syndrome-ccafb14aee12)
 
 ## My Resume
 
@@ -58,23 +58,23 @@ Create easy to learn tutorials for beginner users of Wechaty
 Tutorials are lessons that take the reader by the hand through a series of steps to complete running Wechaty code. They are what our project needs in order to show a beginner that they can achieve something with it. They are wholly learning-oriented, and specifically, they are oriented towards learning 'how' rather than learning 'what'. Tutorials need to be useful for the beginner, easy to follow, meaningful, extremely robust, and kept up-to-date.
 The Tutorial project should:
 
-* Allow the user to learn by doing
+- Allow the user to learn by doing
 
-* Get the user started
+- Get the user started
 
-* Make sure that the tutorial works all the time
+- Make sure that the tutorial works all the time
 
-* Ensure the user sees results immediately
+- Ensure the user sees results immediately
 
-* Make the tutorial repeatable
+- Make the tutorial repeatable
 
-* Focus on concrete steps, not abstract concepts
+- Focus on concrete steps, not abstract concepts
 
-* Provide the minimum necessary explanation
+- Provide the minimum necessary explanation
 
-* Focus only on the steps the user needs to take
+- Focus only on the steps the user needs to take
 
-* Work with the contributor team to update the documentation on the Wechaty site.
+- Work with the contributor team to update the documentation on the Wechaty site.
 
 ## Current Situation
 
@@ -86,73 +86,74 @@ Being a new user to wechaty I encountered a lot of problems while running Ding D
 
 **Following are the problems I have found out with the tutorials**<br>
 
-* Quick Start is a place where most of the beginners will head over to and should be mentioned at the top of tutorials unlike now it is inside a `Getting Started` dropdown.
+- Quick Start is a place where most of the beginners will head over to and should be mentioned at the top of tutorials unlike now it is inside a `Getting Started` dropdown.
 
-* Don't mention something a learner doesn't need to know in order to complete the tutorial. Inside Quick Start under the first heading `In Next 10 min,` I found out that the points written there about getting QR Code for wechaty and QR Code for WhatsApp are useless and even misleading. It messed me up when clicking on `WeChat` QR Code it didn't open and later found out that it has nothing to do with the tutorial.
+- Don't mention something a learner doesn't need to know in order to complete the tutorial. Inside Quick Start under the first heading `In Next 10 min,` I found out that the points written there about getting QR Code for wechaty and QR Code for WhatsApp are useless and even misleading. It messed me up when clicking on `WeChat` QR Code it didn't open and later found out that it has nothing to do with the tutorial.
 
-* Tutorials overview didn't have necessary info on what are the ways in which users can get started. In many good documentations, I have found out that they provide the main link on the overview page so that users can head over from there directly.
+- Tutorials overview didn't have necessary info on what are the ways in which users can get started. In many good documentations, I have found out that they provide the main link on the overview page so that users can head over from there directly.
 
-* Tutorials should always be working but Usage with Heroku is not working.
+- Tutorials should always be working but Usage with Heroku is not working.
 
-* Video Tutorials are like icing on the cake and should be provided in a language that is widely spoken other than Chinese. I even found a comment on youtube requesting for English video.
+- Video Tutorials are like icing on the cake and should be provided in a language that is widely spoken other than Chinese. I even found a comment on youtube requesting for English video.
 
-* There is a link [Getting started without leaving your browser](https://wechaty.js.org/2021/02/06/wechaty-getting-started-without-leave-your-browser/) after `Let's run your first Ding Dong Bot`  given in the read more section by `Huan Li`. It is very well written and should be mentioned separately in the sidebar under the Gitpod option.
+- There is a link [Getting started without leaving your browser](https://wechaty.js.org/2021/02/06/wechaty-getting-started-without-leave-your-browser/) after `Let's run your first Ding Dong Bot` given in the read more section by `Huan Li`. It is very well written and should be mentioned separately in the sidebar under the Gitpod option.
 
-* Currently Tutorials only teach the user to set up wechaty but a tutorial should also give the user an experience of working with the features of wechaty.<br>
+- Currently Tutorials only teach the user to set up wechaty but a tutorial should also give the user an experience of working with the features of wechaty.<br>
 
 <div style="page-break-after: always"></div>
 
 ## Based on the above analysis I propose the following structure
 
-  Getting Started with Wechaty
-  |- Overview
-  |  -> Beginner Level
-  |     -> Running on Gitpod
-  |     -> Running on Google Cloud Shell
-  |     -> Running Locally
-  |     -> Creating your first bot from scratch
-  |  -> Intermediate and Advanced Level
-  |     -> Usage with Docker
-  |     -> Using with Heroku
-  |     -> Using Plugin with wechaty
-  |     -> Using Redux  with wechaty
-  |     -> Using Vorpal with wechaty
-  |- Quick Start
-  |  |- Running on Gitpod
-  |  |- Running on Google Cloud Shell
-  |  |- Running Locally
-  |- Tutorial Series(Creating your first bot from scratch)
-  |  |- From Scratch
-  |  |  |- Overview
-  |  |  |- Installation
-  |  |- Tutorial
-  |  |  |- Create a bot
-  |  |  |- Dealing with messages
-  |  |  |- Processing files
-  |  |  |- Writing tests
-  |- Video Tutorials
-  |  -> Chinese Tutorials
-  |  -> Other than Chinese Tutorials
-  |- Advanced Topics
-  |  |  |- Usage with Docker
-  |  |  |- Using with Heroku
-  |  |  |- Using Plugin with wechaty
-  |  |  |- Using Redux  with wechaty
-  |  |  |- Using Vorpal with wechaty
+Getting Started with Wechaty
+|- Overview
+| -> Beginner Level
+| -> Running on Gitpod
+| -> Running on Google Cloud Shell
+| -> Running Locally
+| -> Creating your first bot from scratch
+| -> Intermediate and Advanced Level
+| -> Usage with Docker
+| -> Using with Heroku
+| -> Using Plugin with wechaty
+| -> Using Redux with wechaty
+| -> Using Vorpal with wechaty
+|- Quick Start
+| |- Running on Gitpod
+| |- Running on Google Cloud Shell
+| |- Running Locally
+|- Tutorial Series(Creating your first bot from scratch)
+| |- From Scratch
+| | |- Overview
+| | |- Installation
+| |- Tutorial
+| | |- Create a bot
+| | |- Dealing with messages
+| | |- Processing files
+| | |- Writing tests
+|- Video Tutorials
+| -> Chinese Tutorials
+| -> Other than Chinese Tutorials
+|- Advanced Topics
+| | |- Usage with Docker
+| | |- Using with Heroku
+| | |- Using Plugin with wechaty
+| | |- Using Redux with wechaty
+| | |- Using Vorpal with wechaty
 
-* The above structure is well organized from beginner to advanced level.
+- The above structure is well organized from beginner to advanced level.
 
-* **The overview section**  should give a complete overview of the topics. If a person is a beginner he can either simply run the app using any of the following options `Running on Gitpod`, `Running on Google Cloud Shell`, `Running locally` by clicking on the given links here.
-  * Also the link for `Tutorial Series (Creating your first bot from scratch)` will also be given in case a user want to follow up with steps creating their own chatbot.
-  * If a user has prior knowledge about wechaty, they can go to the advanced topics by clicking on the links given for respective topics `Usage with Docker`, `Using with Heroku`, etc.
+- **The overview section** should give a complete overview of the topics. If a person is a beginner he can either simply run the app using any of the following options `Running on Gitpod`, `Running on Google Cloud Shell`, `Running locally` by clicking on the given links here.
 
-* **Quick Start** should be divided into sections. If a user wants to run the app using Gitpod, there should be a separate page for that. Similarly for the remaining two options also. This will enable proper step-wise step tutorial for every option unlike now `Running with Gitpod` and `Running with Google Cloud Shell` are both on the same page messing it up and leading to skipping of some important points.
+  - Also the link for `Tutorial Series (Creating your first bot from scratch)` will also be given in case a user want to follow up with steps creating their own chatbot.
+  - If a user has prior knowledge about wechaty, they can go to the advanced topics by clicking on the links given for respective topics `Usage with Docker`, `Using with Heroku`, etc.
 
-* **Tutorial Series(Creating your first bot from scratch)** is the most important part of this tutorial as this will allow the user to create their own chatbot from scratch and then playing around with the features provided by wechaty. It should be well equiped with code snippets with proper explanation and screenshots of how the result will look after running a given code/command. This will make sure that they learn by doing and will definitely gather interest of more users.
+- **Quick Start** should be divided into sections. If a user wants to run the app using Gitpod, there should be a separate page for that. Similarly for the remaining two options also. This will enable proper step-wise step tutorial for every option unlike now `Running with Gitpod` and `Running with Google Cloud Shell` are both on the same page messing it up and leading to skipping of some important points.
 
-* **Video Tutorial** plays a great role in providing a better understanding and should be available in the language which is widely spoken.
+- **Tutorial Series(Creating your first bot from scratch)** is the most important part of this tutorial as this will allow the user to create their own chatbot from scratch and then playing around with the features provided by wechaty. It should be well equiped with code snippets with proper explanation and screenshots of how the result will look after running a given code/command. This will make sure that they learn by doing and will definitely gather interest of more users.
 
-* **Advanced Topics** At the end, if a user has gone through the easy concepts they can dive into intermediate and advanced concepts.<br>
+- **Video Tutorial** plays a great role in providing a better understanding and should be available in the language which is widely spoken.
+
+- **Advanced Topics** At the end, if a user has gone through the easy concepts they can dive into intermediate and advanced concepts.<br>
 
 ### Why is my proposed tutorial better?
 
@@ -164,10 +165,10 @@ From last year I have building many personal projects and also writing Readme fo
 
 ## Proposed Timeline
 
-* **2 weeks** -> Information Gathering
-* **3 weeks** -> Restructuring the tutorials. Organizing and presenting the content in a better way.
-* **5 weeks** -> Creating a tutorial series.
-* **2 weeks** -> Improvising and publication.<br>
+- **2 weeks** -> Information Gathering
+- **3 weeks** -> Restructuring the tutorials. Organizing and presenting the content in a better way.
+- **5 weeks** -> Creating a tutorial series.
+- **2 weeks** -> Improvising and publication.<br>
 
 ## Proposed Budget
 

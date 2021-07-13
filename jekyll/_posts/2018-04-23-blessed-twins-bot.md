@@ -5,15 +5,15 @@ categories: feature
 tags:
   - code
   - news
-image: /assets/2018/blessed-twins-bot.png
+image: /assets/2018/blessed-twins-bot.webp
 ---
 
-![blessed twins bot](/assets/2018/blessed-twins-bot.png)
+![blessed twins bot](/assets/2018/blessed-twins-bot.webp)
 
 Wechaty v0.16 is working in progress.
 
-* **Good news**: We will be able to run as many as Wechaty instances than only one singleton before!
-* **Bad news**: ~~BREAKING CHANGES were introduced.~~ This enhancement has no BC any more!
+- **Good news**: We will be able to run as many as Wechaty instances than only one singleton before!
+- **Bad news**: ~~BREAKING CHANGES were introduced.~~ This enhancement has no BC any more!
 
 Wechaty could only be able to instantiate once before. This comes for one reason: I'm lazy at the beginning.
 
@@ -30,11 +30,11 @@ To make it work, we designed a strange pattern: clone the `Contact` class and us
 Talk is cheap, show me the code.
 
 ```ts
-const bot1 = new Wechaty({ profile: 'bot1' })
-const bot2 = new Wechaty({ profile: 'bot2' })
+const bot1 = new Wechaty({ profile: "bot1" });
+const bot2 = new Wechaty({ profile: "bot2" });
 
-const room1 = await bot1.Room.find('my room')
-const room2 = await bot2.Room.find('my room')
+const room1 = await bot1.Room.find("my room");
+const room2 = await bot2.Room.find("my room");
 ```
 
 That's all. Instead of `Wechaty.instance()`, we now support instanciated Wechaty directly, without any limitations.
@@ -58,7 +58,7 @@ I write four versions of Proof of Concept Code to store and hide the `puppet`.
 The first PoC is to use ES6 Proxy. It's very straightforward just to wrap the original class and set the puppet when it is being called.
 
 ```ts
-const Bot1Contact = new Proxy(Contact, handlerFactory(puppet1))
+const Bot1Contact = new Proxy(Contact, handlerFactory(puppet1));
 ```
 
 But we need a new class is `instanceof` the original class, which means `Bot1Contact instanceof Contact` should be true. `Proxy` cannot meet this goal.
@@ -70,7 +70,7 @@ Full ES6 Proxy PoC source code is at <https://github.com/wechaty/wechaty/issues/
 The second PoC is to bind the Class to a new context object by using `Contact.bind({})`
 
 ```ts
-const Bot1Contact = Contact.bind({})
+const Bot1Contact = Contact.bind({});
 ```
 
 By doing this, we can get a branding new `Bot1Contact` which we can set static properties on, and `Bot1Contact instanceof Contact` will be `true`.
@@ -84,7 +84,7 @@ Full `Class.bind({})` source code is at: <https://github.com/wechaty/wechaty/iss
 How about creating a new class by `eval` the source code from original class?
 
 ```ts
-const Bot1Contact  = Function('return ' + Contact.toString())
+const Bot1Contact = Function("return " + Contact.toString());
 ```
 
 It works like a charm, and it will be qualified if we can set the `Bot1.Contact.prototype` to the `Object.create(Contact.prototype)`, which could make `instanceof` works.
@@ -107,7 +107,7 @@ By this technic, the code is very clean, the `instanceof` work as expected, ever
 
 After all the work, I modulized this part of the code as my new npm module: `clone-class` at <https://github.com/huan/node-clone-class>, with automatic unit tests and deploy to NPM by CI/CD.
 
-![Hello Mr. Anderson](/assets/2018/agent-smith-clone-anderson.jpg)
+![Hello Mr. Anderson](/assets/2018/agent-smith-clone-anderson.webp)
 
 And finally, I can create as many bots as I need than before!
 

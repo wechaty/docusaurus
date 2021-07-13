@@ -10,7 +10,7 @@ tags:
   - docs
   - project
   - proposal
-image: /assets/2021/05-sajen-sarvajith-blog-post/profile-pic.jpeg
+image: /assets/2021/05-sajen-sarvajith-blog-post/profile-pic.webp
 ---
 
 ## Biographical Information
@@ -111,7 +111,7 @@ Below explanation regarding the significant steps for this interactive and easy 
 - User can edit the code and rerun the cell for a different output this will work exactly like how terminal works but it works directly from our website with a modern look and extremely improved UI of the page so by this user can understand in a efficient way and the wechaty will also run accordingly with the new updates as user gives so they can interact and see how it works.
 - All these beginner tutorials have the basic code to get started with wechaty as well as explanation which explains and makes users to understand the wechaty in an easy and interactive way.
 
-**Note:-**  **All the upcoming tutorials regarding overview, quick start, running locally, Money Bot, Assistant Bot, Coaxer Bot, using plugin, using redox and others will be made into an interactive way of learning tutorial in a step by step manner. These can be run directly in the website and users can edit the code and learn about the wechaty directly by doing it in our wechaty website. This approach that I have said above will help wechaty to run in the website itself. All these will be implemented as explained in the Quick Start Guide Section. I think this method will be more effective than a static website with a video tutorial because by this interactive learning tutorial users get the experience by doing it.**
+**Note:-** **All the upcoming tutorials regarding overview, quick start, running locally, Money Bot, Assistant Bot, Coaxer Bot, using plugin, using redox and others will be made into an interactive way of learning tutorial in a step by step manner. These can be run directly in the website and users can edit the code and learn about the wechaty directly by doing it in our wechaty website. This approach that I have said above will help wechaty to run in the website itself. All these will be implemented as explained in the Quick Start Guide Section. I think this method will be more effective than a static website with a video tutorial because by this interactive learning tutorial users get the experience by doing it.**
 
 **Conclusion:**
 
@@ -134,12 +134,14 @@ Below explanation regarding the significant steps for this interactive and easy 
 
   - This new tutorial establishes an interaction between users and the content. This interaction allows wechaty users to have a more personalized experience beyond just a static tutorial
   - Not only does interactivity provide a better user experience, these interactions can also be measured. Using the data collected, we can see where/when/how users are clicking, and make adjustments to give them a more personalized experience. We can direct users to exactly what they are looking for and create more relevant tutorials for further visitors.
+
 - This tutorial increases user engagement. This website tutorial allows users to interact and automate each visitor&#39;s experience.
 - This website creates positive experience for our users
 - It increases conversions
 
   - This is done when we allow our visitors to do something and get a unique response back in regards to what was triggered.
   - This tutorial attracts more visitors and to be more engaged with the website. As they become more engaged, their trust and interest grows.
+
 - It invokes engagement and action. The thing that makes a website interactive is the ability for the user to actively engage with the content and various elements. This tutorial will break past one-way form of communication to start a two-way conversation with the user.
 - This tutorial can be extremely beneficial to both users and the wechaty community by providing individual and robust platforms for beginner tutorials.
 
@@ -152,7 +154,7 @@ Below explanation regarding the significant steps for this interactive and easy 
 - Before the project timeline begins I will set up my development environment so that I will start the project as soon as possible this helps me to provide a professional tutorial
 - In this will I will complete the work of making the overview interactive tutorial for the first section of wechaty which explains about the wechaty in general
 - Create the log file for getting the user review in the webpage as mentioned in the
-implementation
+  implementation
 
 **Week 2 (May 25 - May 31):**
 

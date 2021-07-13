@@ -5,7 +5,7 @@ categories: announcement
 tags:
   - release
   - news
-image: /assets/2017/huan-wechaty-new-version-0.9.0.png
+image: /assets/2017/huan-wechaty-new-version-0.9.0.webp
 ---
 
 ![wechaty-release-0.9.0][wechaty-release-0.9.0]
@@ -32,7 +32,7 @@ Creator of Wechaty
 - Support hot-reload for Wechaty events listeners [\#820](https://github.com/wechaty/wechaty/issues/820)
 - Add Transpond Message [\#726](https://github.com/wechaty/wechaty/issues/726)
 - \[Feature request\] @mention support? [\#153](https://github.com/wechaty/wechaty/issues/153)
-- Support Message Type of Image/Video  [\#4](https://github.com/wechaty/wechaty/issues/4)
+- Support Message Type of Image/Video [\#4](https://github.com/wechaty/wechaty/issues/4)
 - \[new feature\] add function message.mention\(\) [\#216](https://github.com/wechaty/wechaty/issues/216)
 - \[feature request\] fire `room-join` when someone joins from a QR Code [\#155](https://github.com/wechaty/wechaty/issues/155)
 - \#4 send image/video [\#337](https://github.com/wechaty/wechaty/pull/337) ([mukaiu](https://github.com/mukaiu))
@@ -49,16 +49,16 @@ Creator of Wechaty
 - \[enhancement\] Add pdf, docx etc support to MediaMessage\(now only picture is supported\) [\#538](https://github.com/wechaty/wechaty/issues/538)
 - Send\(upload\) an image twice will cause error. [\#422](https://github.com/wechaty/wechaty/issues/422)
 - Cannot send image after restart [\#777](https://github.com/wechaty/wechaty/issues/777)
-- Room.alias\(\) should return null if we have not set the alias in the room  [\#283](https://github.com/wechaty/wechaty/issues/283)
+- Room.alias\(\) should return null if we have not set the alias in the room [\#283](https://github.com/wechaty/wechaty/issues/283)
 - Fix chrome driver path problem in Windows [\#416](https://github.com/wechaty/wechaty/pull/416) ([xjchengo](https://github.com/xjchengo))
 - fix upload media url error [\#415](https://github.com/wechaty/wechaty/pull/415) ([mukaiu](https://github.com/mukaiu))
 - Add missing %s content for leaver not found error [\#388](https://github.com/wechaty/wechaty/pull/388) ([xinbenlv](https://github.com/xinbenlv))
 - fix jsdoc flush issue \#378 and minor fix on the doc examples [\#380](https://github.com/wechaty/wechaty/pull/380) ([ax4](https://github.com/ax4))
-- fix\_function\_room.member\_\#173 [\#211](https://github.com/wechaty/wechaty/pull/211) ([lijiarui](https://github.com/lijiarui))
+- fix_function_room.member\_\#173 [\#211](https://github.com/wechaty/wechaty/pull/211) ([lijiarui](https://github.com/lijiarui))
 - \[bug\]Cannot read property 'getUserName' of undefined [\#772](https://github.com/wechaty/wechaty/issues/772)
 - Cannot send pdf file using MediaMessage [\#710](https://github.com/wechaty/wechaty/issues/710)
 - Click Web Wechat `Switch Account` Automatically to get qrcode immediately when bot logout [\#636](https://github.com/wechaty/wechaty/issues/636)
-- Concat.avatar\(\)  faild ,when hostname changed from <https://wx.qq.com> to <https://wx2.qq.com> [\#418](https://github.com/wechaty/wechaty/issues/418)
+- Concat.avatar\(\) faild ,when hostname changed from <https://wx.qq.com> to <https://wx2.qq.com> [\#418](https://github.com/wechaty/wechaty/issues/418)
 - it seems RECALLED: 10002 message dose't trigger on\\('message'\\) event [\#8](https://github.com/wechaty/wechaty/issues/8)
 
 #### ENHANCEMENTS
@@ -70,7 +70,7 @@ Creator of Wechaty
 - \[Docker\] add a `onbuild` image to Wechaty [\#147](https://github.com/wechaty/wechaty/issues/147)
 - add `room-bot-leave` event [\#250](https://github.com/wechaty/wechaty/issues/250)
 - Limit video file size [\#421](https://github.com/wechaty/wechaty/pull/421) ([mukaiu](https://github.com/mukaiu))
-- support brand checking of contact  [\#404](https://github.com/wechaty/wechaty/pull/404) ([JasLin](https://github.com/JasLin))
+- support brand checking of contact [\#404](https://github.com/wechaty/wechaty/pull/404) ([JasLin](https://github.com/JasLin))
 - Limit the size of the sending file [\#376](https://github.com/wechaty/wechaty/pull/376) ([mukaiu](https://github.com/mukaiu))
 - room.memberAll\(\) & change room.member\(\) query to 3 types [\#364](https://github.com/wechaty/wechaty/pull/364) ([lijiarui](https://github.com/lijiarui))
 - Printout entire error trace when unhandledRejection was caught [\#361](https://github.com/wechaty/wechaty/pull/361) ([xinbenlv](https://github.com/xinbenlv))
@@ -87,7 +87,7 @@ Creator of Wechaty
 - \[doc\] To Embed Document in Wechaty Code for Generating Automaticly [\#73](https://github.com/wechaty/wechaty/issues/73)
 - Promote StateMonitor to a solo NPM module: StateSwitch [\#466](https://github.com/wechaty/wechaty/issues/466)
 - Lazy to create a stream [\#470](https://github.com/wechaty/wechaty/pull/470) ([mukaiu](https://github.com/mukaiu))
-- add magic code for room.say\(\)  when `@bot` happen [\#440](https://github.com/wechaty/wechaty/pull/440) ([lijiarui](https://github.com/lijiarui))
+- add magic code for room.say\(\) when `@bot` happen [\#440](https://github.com/wechaty/wechaty/pull/440) ([lijiarui](https://github.com/lijiarui))
 - first item of memberList as owner is confusion [\#358](https://github.com/wechaty/wechaty/pull/358) ([JasLin](https://github.com/JasLin))
 - Add JsDoc for Class Contact [\#321](https://github.com/wechaty/wechaty/pull/321) ([lijiarui](https://github.com/lijiarui))
 - Add print nodejs version [\#280](https://github.com/wechaty/wechaty/pull/280) ([xinbenlv](https://github.com/xinbenlv))
@@ -120,4 +120,4 @@ Thank you all contributors, Wechaty could not release version 0.9 without your h
 1. @[ax4](https://github.com/ax4): [\#380](https://github.com/wechaty/wechaty/pull/380)
 1. @[Gcaufy](https://github.com/Gcaufy): [\#310](https://github.com/wechaty/wechaty/pull/310)
 
-[wechaty-release-0.9.0]: /assets/2017/huan-wechaty-new-version-0.9.0.png
+[wechaty-release-0.9.0]: /assets/2017/huan-wechaty-new-version-0.9.0.webp

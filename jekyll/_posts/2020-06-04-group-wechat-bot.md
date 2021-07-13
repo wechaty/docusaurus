@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - real-estate
-image: /assets/2020/group-wechat-bot/2020-06-04-group-wechat-bot.png
+image: /assets/2020/group-wechat-bot/2020-06-04-group-wechat-bot.webp
 ---
 
 > 作者: [Sam](https://github.com/PXingwei/)
@@ -17,7 +17,7 @@ image: /assets/2020/group-wechat-bot/2020-06-04-group-wechat-bot.png
 
 ## 具体实现
 
-1. 代码repository
+1. 代码 repository
 
 ```bash
 git clone git@github.com:isnl/wechat-robot.git
@@ -41,31 +41,36 @@ git clone git@github.com:isnl/wechat-robot.git
 
 ### 扫描二维码登录
 
-这个功能主要依赖qrcode-terminal，代码实现如下：
+这个功能主要依赖 qrcode-terminal，代码实现如下：
 
 ```js
 function onScan(qrcode, status) {
   if (status === ScanStatus.Waiting || status === ScanStatus.Timeout) {
-    require('qrcode-terminal').generate(qrcode, {
-      small: true
-    }) // show qrcode on console
+    require("qrcode-terminal").generate(qrcode, {
+      small: true,
+    }); // show qrcode on console
 
     const qrcodeImageUrl = [
-      'https://api.qrserver.com/v1/create-qr-code/?data=',
+      "https://api.qrserver.com/v1/create-qr-code/?data=",
       encodeURIComponent(qrcode),
-    ].join('')
+    ].join("");
 
-    log.info('StarterBot', 'onScan: %s(%s) - %s', ScanStatus[status], status, qrcodeImageUrl)
-
+    log.info(
+      "StarterBot",
+      "onScan: %s(%s) - %s",
+      ScanStatus[status],
+      status,
+      qrcodeImageUrl
+    );
   } else {
-    log.info('StarterBot', 'onScan: %s(%s)', ScanStatus[status], status)
+    log.info("StarterBot", "onScan: %s(%s)", ScanStatus[status], status);
   }
 }
 ```
 
 ### 定时发送消息的功能
 
-主要是依赖node-schedule，通过修改schedule的format可以指定在每天的什么时候发送消息。
+主要是依赖 node-schedule，通过修改 schedule 的 format 可以指定在每天的什么时候发送消息。
 
 ```js
 // *    *    *    *    *    *
@@ -87,4 +92,4 @@ node bot.js
 
 ## 测试效果
 
-![avatar](/assets/2020/group-wechat-bot/2020-06-04-group-wechat-bot.png)
+![avatar](/assets/2020/group-wechat-bot/2020-06-04-group-wechat-bot.webp)

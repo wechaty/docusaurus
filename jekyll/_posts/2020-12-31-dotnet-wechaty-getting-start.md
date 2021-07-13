@@ -6,14 +6,14 @@ tags:
   - dotnet
   - csharp
   - getting-started
-image: /assets/2020/12-dotnet-wechaty/dotnet-wechaty.png
+image: /assets/2020/12-dotnet-wechaty/dotnet-wechaty.webp
 ---
 
-## .NET Wechaty框架介绍
+## .NET Wechaty 框架介绍
 
-.NET Wechaty 是使用.Net Core对TS版本Wechaty的翻译。
+.NET Wechaty 是使用.Net Core 对 TS 版本 Wechaty 的翻译。
 
-.Net Core 支持跨平台，因此.NET Wechaty同样也支持跨平台,目前在Windows,Centos,Ubuntu 下已测试通过，Mac未测试，如果有Mac系统的欢迎测试，ARM架构的目前只测试Raspberry，但是GRPC连接有问题，问题待排查。
+.Net Core 支持跨平台，因此.NET Wechaty 同样也支持跨平台,目前在 Windows,Centos,Ubuntu 下已测试通过，Mac 未测试，如果有 Mac 系统的欢迎测试，ARM 架构的目前只测试 Raspberry，但是 GRPC 连接有问题，问题待排查。
 
 [.NET Wechaty](https://github.com/wechaty/dotnet-wechaty)
 
@@ -25,15 +25,15 @@ image: /assets/2020/12-dotnet-wechaty/dotnet-wechaty.png
 
 新建一个.Net Core 3.1 控制台程序
 
-![创建console控制台程序](/assets/2020/12-dotnet-wechaty/console-project.png)
+![创建console控制台程序](/assets/2020/12-dotnet-wechaty/console-project.webp)
 
-### 添加Nuget包
+### 添加 Nuget 包
 
-只需要引用Wechaty一个Nuget包即可，其他相关包会自动引入
+只需要引用 Wechaty 一个 Nuget 包即可，其他相关包会自动引入
 
-![添加Wechaty Nuget包](/assets/2020/12-dotnet-wechaty/add-wechaty-nuget.png)
+![添加Wechaty Nuget包](/assets/2020/12-dotnet-wechaty/add-wechaty-nuget.webp)
 
-### 6行代码运行一个Bot
+### 6 行代码运行一个 Bot
 
 ```csharp
 // 初始化一个bot
@@ -53,7 +53,7 @@ var bot = new Wechaty.Wechaty(new PuppetOptions()
   .Start();
 ```
 
-### 实现ding dong 最简单的功能
+### 实现 ding dong 最简单的功能
 
 ```csharp
  await bot
@@ -134,9 +134,9 @@ namespace dotnet_wechaty_getting_start
 :octocat: <https://github.com/Wechaty/wechaty>  
 :beetle: <https://github.com/Wechaty/wechaty/issues>  
 :book: <https://github.com/Wechaty/wechaty/wiki>  
-:whale: <https://hub.docker.com/r/wechaty/wechaty>  
+:whale: <https://hub.docker.com/r/wechaty/wechaty>
 
-### 多语言Wechaty
+### 多语言 Wechaty
 
 [![Python Wechaty](https://img.shields.io/badge/Wechaty-Python-blue)](https://github.com/wechaty/python-wechaty)
 [![Go Wechaty](https://img.shields.io/badge/Wechaty-Go-7de)](https://github.com/wechaty/go-wechaty)
@@ -155,12 +155,12 @@ namespace dotnet_wechaty_getting_start
 
 ## Join Wechaty
 
-![Wechaty Friday.BOT QR Code](https://wechaty.js.org/img/friday-qrcode.svg)  
+![Wechaty Friday.BOT QR Code](https://wechaty.js.org/img/friday-qrcode.svg)
 
 口令：`wechaty`
 
 ## .NET Wechaty Contributors 招募
 
-如果您对.NET 感兴趣，对Wechaty感兴趣欢迎加入.NET Wechaty Tearm
+如果您对.NET 感兴趣，对 Wechaty 感兴趣欢迎加入.NET Wechaty Tearm
 [#pr-24](https://github.com/wechaty/dotnet-wechaty/issues/24)
-有任何关于.NET Wechaty的开发问题，可以在该issue下提问
+有任何关于.NET Wechaty 的开发问题，可以在该 issue 下提问

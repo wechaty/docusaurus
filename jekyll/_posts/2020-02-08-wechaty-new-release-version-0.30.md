@@ -5,12 +5,12 @@ categories: announcement
 tags:
   - release
   - news
-image: /assets/2017/wechaty-sticker.jpg
+image: /assets/2017/wechaty-sticker.webp
 ---
 
 > Author: [Huan LI](https://github.com/huan), A Homebody ...
 
-![Wechaty](/assets/2017/wechaty-sticker.jpg)
+![Wechaty](/assets/2017/wechaty-sticker.webp)
 
 Wechaty v0.30 Released! We have lots of new features added and bugs fixed!
 
@@ -51,15 +51,15 @@ Wechaty v0.30 Released! We have lots of new features added and bugs fixed!
 - 启动官方学习项目报错 [\#1898](https://github.com/wechaty/wechaty/issues/1898)
 - 延期通过好友 [\#1890](https://github.com/wechaty/wechaty/issues/1890)
 - I want wechaty puppet padpro token to create a wechat bot [\#1882](https://github.com/wechaty/wechaty/issues/1882)
-- msg.mentionSelf\(\)方法不对，始终返回false [\#1877](https://github.com/wechaty/wechaty/issues/1877)
-- 需要取到Contactid或者微信号 [\#1873](https://github.com/wechaty/wechaty/issues/1873)
+- msg.mentionSelf\(\)方法不对，始终返回 false [\#1877](https://github.com/wechaty/wechaty/issues/1877)
+- 需要取到 Contactid 或者微信号 [\#1873](https://github.com/wechaty/wechaty/issues/1873)
 - Function message `toContact\(\)` should to be implemented. [\#1855](https://github.com/wechaty/wechaty/issues/1855)
 - install error [\#1853](https://github.com/wechaty/wechaty/issues/1853)
 - wechaty-puppet can not install in electron [\#1851](https://github.com/wechaty/wechaty/issues/1851)
 - wechaty-puppet-macpro alpha test [\#1846](https://github.com/wechaty/wechaty/issues/1846)
 - Action required: Greenkeeper could not be activated 🚨 [\#1781](https://github.com/wechaty/wechaty/issues/1781)
 - 登陆二维码无法识别 [\#1753](https://github.com/wechaty/wechaty/issues/1753)
-- 经常报以下warning [\#1634](https://github.com/wechaty/wechaty/issues/1634)
+- 经常报以下 warning [\#1634](https://github.com/wechaty/wechaty/issues/1634)
 - Doesn't work with UK Android account/device [\#1556](https://github.com/wechaty/wechaty/issues/1556)
 
 **Merged pull requests:**

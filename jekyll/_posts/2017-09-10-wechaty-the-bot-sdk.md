@@ -6,7 +6,7 @@ tags:
   - api
   - unofficial
   - news
-image: /assets/2017/dcsan-dashbot.jpg
+image: /assets/2017/dcsan-dashbot.webp
 ---
 
 Recently I was in San Francisco talking to a lot of my friends in the Chatbot community, and realized how the Wechaty community is becoming central to Chatbot development in China.
@@ -39,19 +39,19 @@ They compare the Bot-to-bot vs traditional APIs:
 
 Bot to Bot
 
-* Connect bots without coding skills
-* Bots are generally flexible and fault tolerant
-* Bots are asynchronous, enable more possibilities
-* Bots can do bi-directional messaging
-* Bots can talk to bots and humans alike
+- Connect bots without coding skills
+- Bots are generally flexible and fault tolerant
+- Bots are asynchronous, enable more possibilities
+- Bots can do bi-directional messaging
+- Bots can talk to bots and humans alike
 
 APIs
 
-* Integrating APIs requires coding skills
-* APIs are fragile; they break with input errors
-* APIs are synchronous; they don't like delays
-* APIs are uni-directional
-* APIs are meant for computers alone
+- Integrating APIs requires coding skills
+- APIs are fragile; they break with input errors
+- APIs are synchronous; they don't like delays
+- APIs are uni-directional
+- APIs are meant for computers alone
 
 There are some [fascinating ideas here for a language to compose bots](https://www.interbot.cc/docs)
 
@@ -61,7 +61,7 @@ There are some [fascinating ideas here for a language to compose bots](https://w
 
 ## Analytics for Bots
 
-![Dennis and Socks](/assets/2017/dcsan-dashbot.jpg)
+![Dennis and Socks](/assets/2017/dcsan-dashbot.webp)
 
 One of those from overseas who works with the Wechaty team is Dennis Yang from [Dashbot.io](https://www.dashbot.io/), one of the leading analytics providers purely for 'bots. The 'bot industry outside of China is at this established stage where the ecosystem is growing enough to have all types of companies from authoring to analytics to AI.
 
@@ -90,6 +90,6 @@ Wechaty is used in many ChatBot projects by hundreds of developers. If you want 
 
 Wechaty Developers' Home
 
-![shanghai wechaty peeps](https://wechaty.github.io/wechaty/images/bot-qr-code.png)
+![shanghai wechaty peeps](https://wechaty.github.io/wechaty/images/bot-qr-code.webp)
 
 Scan now, because other Wechaty developers want to talk with you too! (secret code: wechaty)

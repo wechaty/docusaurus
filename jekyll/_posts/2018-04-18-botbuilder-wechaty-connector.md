@@ -5,10 +5,10 @@ categories: npm
 tags:
   - botbuilder
   - featured
-image: /assets/2018/botframework.jpg
+image: /assets/2018/botframework.webp
 ---
 
-![BotFramework](/assets/2018/botframework.jpg)
+![BotFramework](/assets/2018/botframework.webp)
 
 [Microsoft BotFramework](https://dev.botframework.com/) is a robust platform that supports almost all kinds of the instance messengers like Facebook messenger, Skype, Slack, and backed by the powerful Cognitive Services like LUIS.ai, QnAMaker.ai, Azure Machine Learning. BotBuilder is a powerful SDK provides all we need when we are developing a ChatBot. I started learning them about 18 months ago, and I love them very much.
 
@@ -37,36 +37,36 @@ The following code simple setup a connector between BotBuilder and Wechat, ask a
 1. How are you, ${your name}
 
 ```ts
-import * as builder from 'botbuilder'
+import * as builder from "botbuilder";
 
-import { WechatyConnector } from 'botbuilder-wechaty-connector'
+import { WechatyConnector } from "botbuilder-wechaty-connector";
 
 // Create wechat personal account connector
-const wechatyConnector = new WechatyConnector()
+const wechatyConnector = new WechatyConnector();
 
-const bot = new builder.UniversalBot(wechatyConnector)
+const bot = new builder.UniversalBot(wechatyConnector);
 
 // Bot dialogs
-bot.dialog('/', [
+bot.dialog("/", [
   function (session) {
-      if (session.userData && session.userData.name) {
-        session.send('How are you, ' + session.userData.name)
-      } else {
-        builder.Prompts.text(session, 'Whats your name?')
-      }
+    if (session.userData && session.userData.name) {
+      session.send("How are you, " + session.userData.name);
+    } else {
+      builder.Prompts.text(session, "Whats your name?");
+    }
   },
   function (session, results) {
-      session.userData.name = results.response
-      session.send('OK, ' + session.userData.name)
-      builder.Prompts.text(session, 'Whats your age?')
+    session.userData.name = results.response;
+    session.send("OK, " + session.userData.name);
+    builder.Prompts.text(session, "Whats your age?");
   },
   function (session, results) {
-      session.userData.age = results.response
-      session.send('All right, ' + results.response)
+    session.userData.age = results.response;
+    session.send("All right, " + results.response);
   },
-])
+]);
 
-wechatyConnector.listen()
+wechatyConnector.listen();
 ```
 
 > The above example is borrowed from `botbuilder-wechat-connector`.

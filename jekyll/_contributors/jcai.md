@@ -2,10 +2,11 @@
 name: Jcai
 site: https://github.com/jcai
 bio: 自由职业者
-avatar: /assets/contributors/jcai/avatar.png
+avatar: /assets/contributors/jcai/avatar.webp
 email: jcai@ganshane.com
 ---
-scala-wechaty 作者,基于wechaty-puppet-service新provider,，自由职业者,scala狂热爱好者！
+
+scala-wechaty 作者,基于 wechaty-puppet-service 新 provider,，自由职业者,scala 狂热爱好者！
 
 ## 联系我
 

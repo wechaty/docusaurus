@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - ecommerce
-image: /assets/2020/wechat-robot-seller/chat.jpeg
+image: /assets/2020/wechat-robot-seller/chat.webp
 ---
 
 > 作者: [PeterZhang](https://github.com/zhangchunsheng/)
@@ -16,9 +16,9 @@ image: /assets/2020/wechat-robot-seller/chat.jpeg
 
 ## 背景
 
-疫情期间基于淘宝客的接口写了一个网站烙馍省钱<https://tb-m.luomor.com/> ，而推广对于程序员来说很难实施，现在有很多基于社区的推广微信群，因此想做一个带货机器人，之前接触过wechaty，只是之前基于web协议，昨天试了一下微信不让在web页面登录了
+疫情期间基于淘宝客的接口写了一个网站烙馍省钱<https://tb-m.luomor.com/> ，而推广对于程序员来说很难实施，现在有很多基于社区的推广微信群，因此想做一个带货机器人，之前接触过 wechaty，只是之前基于 web 协议，昨天试了一下微信不让在 web 页面登录了
 
-通过一番学习之后，看到了新的ipad协议，有C#版本的但是很久没有人维护了，看到wechaty的puppet-padplus，基于RPC实现的版本，将ipad协议封装到了server端，还是很方便的
+通过一番学习之后，看到了新的 ipad 协议，有 C#版本的但是很久没有人维护了，看到 wechaty 的 puppet-padplus，基于 RPC 实现的版本，将 ipad 协议封装到了 server 端，还是很方便的
 
 ## 功能
 
@@ -28,39 +28,40 @@ image: /assets/2020/wechat-robot-seller/chat.jpeg
 
 ## 实现逻辑
 
-wechaty具体有如下模块：
+wechaty 具体有如下模块：
 
 - FriendShip：主要处理好友请求
 - Message：处理消息模块
 - Contact：好友管理
-- 当wechaty实例监听到某一事件触发时，会去执行对应的消息监听逻辑。
-- 这样看来，其实主要的操作逻辑在于消息模块，也就是message事件触发时，处理消息内容，根据用户消息内容，返回关键字检索URL地址。
+- 当 wechaty 实例监听到某一事件触发时，会去执行对应的消息监听逻辑。
+- 这样看来，其实主要的操作逻辑在于消息模块，也就是 message 事件触发时，处理消息内容，根据用户消息内容，返回关键字检索 URL 地址。
 
 ## 依赖
 
-- wechaty：wechaty核心库
-- wechaty-puppet-padplus：wechaty的ipad协议实现
+- wechaty：wechaty 核心库
+- wechaty-puppet-padplus：wechaty 的 ipad 协议实现
 
 ## 实现过程
 
 ```javascript
-if(msgText.trim() !== "") {
-    var room;
-    var url = "https://tb-m.luomor.com/#/searchlist/" + msgText;
-    //https://docs.chatie.io/api/message
-    const urlLink = new UrlLink({
-        description: '烙馍省钱[' + msgText + ']',
-        thumbnailUrl: 'https://img.alicdn.com/imgextra/i4/790237325/O1CN01hY4aU523ytm2F4HxA_!!790237325.jpg?t=1586059949000',
-        title: '烙馍省钱',
-        url: url,
-    });
-    for(let roomId of CouponRooms) {
-        room = await bot.Room.load(roomId);
-        room.say(urlLink);
-    }
+if (msgText.trim() !== "") {
+  var room;
+  var url = "https://tb-m.luomor.com/#/searchlist/" + msgText;
+  //https://docs.chatie.io/api/message
+  const urlLink = new UrlLink({
+    description: "烙馍省钱[" + msgText + "]",
+    thumbnailUrl:
+      "https://img.alicdn.com/imgextra/i4/790237325/O1CN01hY4aU523ytm2F4HxA_!!790237325.webp?t=1586059949000",
+    title: "烙馍省钱",
+    url: url,
+  });
+  for (let roomId of CouponRooms) {
+    room = await bot.Room.load(roomId);
+    room.say(urlLink);
+  }
 }
 
-<a name="OFtbO"></a>
+<a name="OFtbO"></a>;
 ```
 
 ## 本地运行
@@ -86,9 +87,9 @@ node bot.js
 
 ## 效果图
 
-![效果图](/assets/2020/wechat-robot-seller/chat.jpeg)
+![效果图](/assets/2020/wechat-robot-seller/chat.webp)
 
 ## 致谢
 
-- 感谢[Wechaty](https://wechaty.github.io)团队提供微信机器人SDK，让开发者可以专注于业务代码。
-- 感谢[句子互动](https://www.juzibot.com)提供的pad协议版token，看到很多基于dll的实现，太费时就没有研究了
+- 感谢[Wechaty](https://wechaty.github.io)团队提供微信机器人 SDK，让开发者可以专注于业务代码。
+- 感谢[句子互动](https://www.juzibot.com)提供的 pad 协议版 token，看到很多基于 dll 的实现，太费时就没有研究了

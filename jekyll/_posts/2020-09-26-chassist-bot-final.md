@@ -2,23 +2,24 @@
 title: "暑期2020 [基于python-wechaty的群聊助手机器人] 结项成果展示"
 author: kxz18
 categories: project
-image: /assets/2020/chassist-final/logo.png
+image: /assets/2020/chassist-final/logo.webp
 tags:
   - python
   - summer-of-wechaty
   - summer-2020
   - entertainment
 ---
+
 > Author: [@kxz18](https://github.com/kxz18)
 > Code: [@kxz18/CHAssisT](https://github.com/kxz18/CHAssisT)
 
-## 暑期2020
+## 暑期 2020
 
-“开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
+“开源软件供应链点亮计划-暑期 2020”（以下简称 暑期 2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
-根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。
+根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期 2020”活动奖金和奖杯。
 官网：[https://isrc.iscas.ac.cn/summer2020](https://isrc.iscas.ac.cn/summer2020) 官方新闻：[http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html](http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html)
-本项目 [基于python-wechaty的群聊助手机器人] 系 暑期2020 支持的开源项目。
+本项目 [基于 python-wechaty 的群聊助手机器人] 系 暑期 2020 支持的开源项目。
 
 ## 一、项目信息
 
@@ -28,11 +29,11 @@ tags:
 
 - 学生：孔祥哲
 
-- 项目名称：基于python-wechaty的群聊助手机器人
+- 项目名称：基于 python-wechaty 的群聊助手机器人
 
 ### 1.2 方案描述：
 
-本项目需要基于python-wechaty实现一个群聊助手机器人。该机器人主要由四个插件组成。第一个插件是群聊消息打标插件，通过群成员引用重要消息回复机器人的方式记录重要信息，以便之后以问答的方式进行查找。在基本功能开发完成之后将用深度学习的方法优化问答的容错性，从而提升交互水平。第二个插件是定时消息插件，用于定时消息的发放。第三个插件是群成员的管理插件，当有新人进群时进行欢迎，当一定人数群成员对某位群成员言行表示不适时自动从群聊中删除该位群成员。第四个插件用于提升交互，为帮助系统插件，提供自定义的功能文档，辅助前三个插件工作。四个插件中第一个插件是项目的基本要求。
+本项目需要基于 python-wechaty 实现一个群聊助手机器人。该机器人主要由四个插件组成。第一个插件是群聊消息打标插件，通过群成员引用重要消息回复机器人的方式记录重要信息，以便之后以问答的方式进行查找。在基本功能开发完成之后将用深度学习的方法优化问答的容错性，从而提升交互水平。第二个插件是定时消息插件，用于定时消息的发放。第三个插件是群成员的管理插件，当有新人进群时进行欢迎，当一定人数群成员对某位群成员言行表示不适时自动从群聊中删除该位群成员。第四个插件用于提升交互，为帮助系统插件，提供自定义的功能文档，辅助前三个插件工作。四个插件中第一个插件是项目的基本要求。
 
 项目主要分为三个阶段进行。第一阶段是基本功能的实现，也就是群聊消息打标插件的实现。第二阶段是扩展功能的实现，主要实现定时消息插件和群成员的管理插件。第三阶段优化交互性能，实现帮助系统插件，利用深度学习对消息打标插件的问答系统进行优化。
 
@@ -48,7 +49,7 @@ tags:
   - 扩展功能
 - 群成员管理插件
   - 7.27 - 8.2
-  - 进行踢人和进群欢迎的管理，踢人要求3位以上群成员对某人表示不满（群成员总共只有3人以下或4人时分别需要1人和2人表示不满）。此插件需要机器人拥有相关的权限。
+  - 进行踢人和进群欢迎的管理，踢人要求 3 位以上群成员对某人表示不满（群成员总共只有 3 人以下或 4 人时分别需要 1 人和 2 人表示不满）。此插件需要机器人拥有相关的权限。
   - 扩展功能
 - 对前几个模块的交互方面进行提升
   - 8.3 - 9.24
@@ -59,27 +60,29 @@ tags:
 
 ### 2.1 项目成果
 
-目前三阶段的任务已经完成，需求的功能已经实现，相应的单元测试也已经实现，并且配置了 github 的 CI 流程，用于代码提交的检测。同时为项目的 github 项目提供了 readme 进行使用说明，也设计了项目 Logo 和项目名称，项目名称为CHAssisT，寓意为 chat + assistant，即聊天助手。Logo 设计如下图：
+目前三阶段的任务已经完成，需求的功能已经实现，相应的单元测试也已经实现，并且配置了 github 的 CI 流程，用于代码提交的检测。同时为项目的 github 项目提供了 readme 进行使用说明，也设计了项目 Logo 和项目名称，项目名称为 CHAssisT，寓意为 chat + assistant，即聊天助手。Logo 设计如下图：
 
-<img src="/assets/2020/chassist-final/logo.png" alt="logo" style="zoom: 33%;" />
+<img src="/assets/2020/chassist-final/logo.webp" alt="logo" style="zoom: 33%;" />
 
 整体的机器人插件由四个独立的插件整合而成，如果想使用某个独立的插件，也可以单独使用。具体的使用方法可以参考项目 github 中的 readme：
 
 [https://github.com/kxz18/CHAssisT](https://github.com/kxz18/CHAssisT)。
 
-由于中期考核前已经将项目的功能都完成了，因此中期的 presentation 中对项目的功能和结构进行了简单讲解，如果对项目架构比较感兴趣，可以参考这个视频：  
+由于中期考核前已经将项目的功能都完成了，因此中期的 presentation 中对项目的功能和结构进行了简单讲解，如果对项目架构比较感兴趣，可以参考这个视频：
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WlxClO3C_Sc" frameborder="0" allowfullscreen></iframe>
 
 中期之后主要进行了一些深度学习上的实验尝试，并对于机器人的交互进行了一定优化，在后阶段的 presentation 中对此进行了阐述：
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BCQx_g8t9l4" frameborder="0"  allowfullscreen></iframe>
 
-在bilibili也进行了视频上传：[https://www.bilibili.com/video/BV1zz4y1Z7iJ/](https://www.bilibili.com/video/BV1zz4y1Z7iJ/)
+在 bilibili 也进行了视频上传：[https://www.bilibili.com/video/BV1zz4y1Z7iJ/](https://www.bilibili.com/video/BV1zz4y1Z7iJ/)
 
-为了能更好地展示项目成果，也按照社区要求对已经实现的功能进行了live coding演示，演示内容见：
+为了能更好地展示项目成果，也按照社区要求对已经实现的功能进行了 live coding 演示，演示内容见：
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uqBwzAckhzk" frameborder="0" allowfullscreen></iframe>
 
-在bilibili也进行了视频上传：[https://www.bilibili.com/video/BV1iz4y1Z74S/](https://www.bilibili.com/video/BV1iz4y1Z74S/)
+在 bilibili 也进行了视频上传：[https://www.bilibili.com/video/BV1iz4y1Z74S/](https://www.bilibili.com/video/BV1iz4y1Z74S/)
 
 ### 2.2 项目心得
 
@@ -89,7 +92,7 @@ tags:
 
 之后是进行软件架构，因为需求比较多，显然如果直接动手写的话可能会导致无从下手、重复代码多、可维护性差、拓展性差等问题，所以在进行实际的代码书写之前先根据功能进行了模块的划分，用 uml 图的方式进行了结构的确立。这样的方式可以把庞大的需求分解成一个个子任务，同时可以将普适的结构抽象成接口，方便实现的同时也可以享有较规整的代码结构带来的益处。这一步需要花费的精力通常会比实际写代码花费的精力还多，因为好的架构可以事半功倍，反之亦然。当然，在动工前想出的架构一定不会是完美的，在动工后可能会（最后也的确是）出现各种各样的问题，此时也需要自行或咨询导师进行架构的调整。
 
-![uml](/assets/2020/chassist-final/uml.png)
+![uml](/assets/2020/chassist-final/uml.webp)
 
 最后也就是代码实现，在实际实现的过程中时常会遇到一些第三方库使用的问题。由于“不懂就问”的方式其实效率比较低下，因此在导师的建议下，在遇到问题时如果是 wechaty 框架的问题就先自行翻阅相关代码，直接阅读代码通常能解决大部分因为不知道如何使用接口或者不知道函数作用而引起的问题；如果是其他第三方库的问题则可以通过 github issue、documentary、google 等方式尝试自行解决。如果自行解决无果则将问题记录下来，当无法解决的问题达到一定数量时再与导师进行会议沟通。这样的问题解决方式确实比较高效，无论对自己还是对导师而言节省了大量时间。
 
@@ -101,7 +104,7 @@ tags:
 
 - 项目完成度：
 
-  该同学能够按照原定计划完成要求中的每一个功能，且完成度非常好，效率也是非常高，经仔细对比，完成度为100%；
+  该同学能够按照原定计划完成要求中的每一个功能，且完成度非常好，效率也是非常高，经仔细对比，完成度为 100%；
 
 - 学生参与度：
 

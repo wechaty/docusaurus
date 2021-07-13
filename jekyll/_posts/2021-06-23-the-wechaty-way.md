@@ -7,20 +7,20 @@ tags:
   - wechaty-way
   - news
   - guide
-image: /assets/2021/06-the-wechaty-way/teaser.png
+image: /assets/2021/06-the-wechaty-way/teaser.webp
 ---
 
-Wechaty (Conversational RPA SDK) 2016 年发布于 GitHub，是一个基于 Apache-2.0 许可证的开源项目。经过5年多的发展，现在 Wechaty 开源社区已经拥有数十位 Committers，百余位 Contributors ，并被超过一万名 GitHub 开发者 Star。目前，使用 Wechaty 的开发者已覆盖数万人，并拥有基于微信群的数千人活跃开发者群。
+Wechaty (Conversational RPA SDK) 2016 年发布于 GitHub，是一个基于 Apache-2.0 许可证的开源项目。经过 5 年多的发展，现在 Wechaty 开源社区已经拥有数十位 Committers，百余位 Contributors ，并被超过一万名 GitHub 开发者 Star。目前，使用 Wechaty 的开发者已覆盖数万人，并拥有基于微信群的数千人活跃开发者群。
 
 Wechaty 社区的 Contributors 遍布全球多个国家地区，和各大互联网公司，职业背景从程序员到设计师，从大学教授到创业者，非常多样化。GitHub 上有千余个开源项目基于 Wechaty 构建了聊天机器人，这些开发者用户也极大地促进了社区的活跃和发展。
 
-Wechaty自身对代码质量的管理，使用了 GitHub Actions 的 DevOps 工具完成了 CI/CD 工作流，从自动化单元测试到自动打包集成测试，从自动发布 NPM 包到自动构建和发布对应版本的 Docker Image ，实现了全自动的社区代码发布，极大的提高了社区的协同效率。
+Wechaty 自身对代码质量的管理，使用了 GitHub Actions 的 DevOps 工具完成了 CI/CD 工作流，从自动化单元测试到自动打包集成测试，从自动发布 NPM 包到自动构建和发布对应版本的 Docker Image ，实现了全自动的社区代码发布，极大的提高了社区的协同效率。
 
-在开源社区管理上，Wechaty 遵循 The Apache Way ，拥有 PMC / Committer 管理制度，和完善的 Issue / PR / Release 等管理制度。截止2021年，Wechaty 已经有近百万次 NPM 安装下载，并由社区自发推动了 Python, Go, Java, Scala, .NET, PHP, Rust 等语言的适配和发布，是国内最活跃的 Conversational AI Chatbot 开发者社区。
+在开源社区管理上，Wechaty 遵循 The Apache Way ，拥有 PMC / Committer 管理制度，和完善的 Issue / PR / Release 等管理制度。截止 2021 年，Wechaty 已经有近百万次 NPM 安装下载，并由社区自发推动了 Python, Go, Java, Scala, .NET, PHP, Rust 等语言的适配和发布，是国内最活跃的 Conversational AI Chatbot 开发者社区。
 
 ## Wechaty 介绍 PPT：
 
-通过阅读下面3个PPT，你可以对Wechaty及其发展历程有一个基础的了解。
+通过阅读下面 3 个 PPT，你可以对 Wechaty 及其发展历程有一个基础的了解。
 
 - 2016: [Wechaty 101: from v0.0 to v0.7](https://docs.google.com/presentation/d/13oUOIEnzdLWO6KZWztD_pMuu22AQ3SIMjk2wp8f-f18/edit#slide=id.g194ee6e600_0_51)
 - 2016-2020: [Open-source Wechaty: 2016 to 2020](https://docs.google.com/presentation/d/1eRNrKnCpdnsmplTwtZzmtGZgrPoNCmOnitmHKVc6iVU/edit#slide=id.g8568e8a985_3_8)
@@ -37,7 +37,7 @@ Wechaty 社区持续秉承信息开放透明：
 
 - [Gitter](https://gitter.im/wechaty/wechaty)
 - Mailing List：发送邮件给 wechaty@googlegroups.com 即可加入
-- [WeChat Room: WeChaty Developers' Home](https://github.com/wechaty/wechaty#raising_hand-join-us)  
+- [WeChat Room: WeChaty Developers' Home](https://github.com/wechaty/wechaty#raising_hand-join-us)
 - [Discussion](https://github.com/wechaty/wechaty/discussions)
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/wechaty)
 - [Telegram](https://t.me/wechaty)
@@ -70,16 +70,16 @@ Meeting Notes 有以下几个价值：
 
 这是 Meeting Notes 的模板内容(可以在 Meeting Notes 最底部拿到文字版，我这里放了图片方便看格式)：
 
-![meeting-notes](/assets/2021/06-the-wechaty-way/meeting-notes.png)
+![meeting-notes](/assets/2021/06-the-wechaty-way/meeting-notes.webp)
 
 具体使用规范：
 
 1. 组织者在开会之前来 [Meeting Notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.64c95c3y2l4v) 写好会议地点和时间，通常情况下，会议都是公开的，任何人都可以通过 Meeting Notes 中的 Zoom 链接视频参会。
 1. 参会者要在 **Attendees** 中注册自己的信息，包括：
-    1. 姓名
-    1. 一句话介绍
-    1. 邮箱（非常重要，因为主持人后续可能会发送邮件到这个邮箱）
-    1. 时区（Wechaty 作为一个国际型社区，经常会有海外的参会者）
+   1. 姓名
+   1. 一句话介绍
+   1. 邮箱（非常重要，因为主持人后续可能会发送邮件到这个邮箱）
+   1. 时区（Wechaty 作为一个国际型社区，经常会有海外的参会者）
 1. 开会之前，参会者要在 Agenda 中写下你的议题，以 **[姓名] 内容** 的方式写进去，这样可以让参会者知道哪些人有哪些不同的议题
 1. 除了会议议题外，你也可以在 Question 的版块写下你的问题，问题同样也可以被其他人评论，填写格式依然是 **[姓名] 内容**
 1. 任何人在都可以任何时候都可以评论其他人的议题，评论方式是在内容下一行，缩进斜体的方式以 **[姓名] 内容** 的方式填写进去。
@@ -88,10 +88,10 @@ Meeting Notes 有以下几个价值：
 
 ### Zoom 会议
 
-社区在条件允许的情况下，尽可能保证每一次会议都可以线上参与，参与的方式是使用 Zoom 会议，每次zoom会议都会进行视频录制，这样没有参会的人也可以看会议的视频回放。
+社区在条件允许的情况下，尽可能保证每一次会议都可以线上参与，参与的方式是使用 Zoom 会议，每次 zoom 会议都会进行视频录制，这样没有参会的人也可以看会议的视频回放。
 
 - Zoom 下载地址：[Download](https://zoom.us/download#client_4meeting)
-- 参会链接：<https://zoom.us/j/6505033788>  
+- 参会链接：<https://zoom.us/j/6505033788>
 - 参会密码：huan
 
 ### 会议视频
@@ -105,7 +105,7 @@ Meeting Notes 有以下几个价值：
 
 [Wechaty ❤️ Google Season of Docs: Kick-off meeting with 20 Technical Writers!](https://www.youtube.com/watch?v=hTkM_XPpFfU&list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&index=43) 就是一个很好的示例。因为一次会议的时间很长，其他人看视频的时候就可以很容易根据下图介绍知道 **视频中 0:01:41 的时候讲的内容是 Introducing the Meeting Agenda**， 同时点击 **0:01:41** 可以快速跳转到视频播放的地方。
 
-![youtube-example](/assets/2021/06-the-wechaty-way/youtube-example.jpg)
+![youtube-example](/assets/2021/06-the-wechaty-way/youtube-example.webp)
 
 上传视频以后，主持人要去社区发布一个会议的博客，并嵌入视频内容，这样就能保证这次会议进行了存档并可以共享个社区的任何开发者。
 
@@ -117,7 +117,7 @@ Meeting Notes 有以下几个价值：
 - 会议合影
 - 参会人
 - Zoom 会议视频
-- 会议议程（不要把Meeting Notes 的会议议程粘进去，而是用 Youtube 中做好的视频切割链接，这样方便读者可以快速的看自己关注的会议内容）
+- 会议议程（不要把 Meeting Notes 的会议议程粘进去，而是用 Youtube 中做好的视频切割链接，这样方便读者可以快速的看自己关注的会议内容）
 
 #### 会议博客例子
 
@@ -134,7 +134,7 @@ Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hell
 
 ### 在博客中插入视频
 
-下面是在会议博客中嵌入视频的代码的简单案例，作为`include`标签的src参数传入视频链接即可。
+下面是在会议博客中嵌入视频的代码的简单案例，作为`include`标签的 src 参数传入视频链接即可。
 
 {% raw %}
 
@@ -144,11 +144,11 @@ Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hell
 
 {% endraw %}
 
-[univerone](https://wechaty.js.org/contributors/univerone/) 写了一篇非常详细的博客[使用jekyll include在wechaty博客中快速插入视频](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)，介绍了如何优雅的在博客中插入视频，有兴趣的同学也可以深入博客研究。
+[univerone](https://wechaty.js.org/contributors/univerone/) 写了一篇非常详细的博客[使用 jekyll include 在 wechaty 博客中快速插入视频](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)，介绍了如何优雅的在博客中插入视频，有兴趣的同学也可以深入博客研究。
 
 ### 小白入门发布博客
 
-如果你是完全小白，可以参考 [atorber](https://wechaty.js.org/contributors/atorber/) 的这篇博客: [入门：小白如何在wechaty社区发布自己的第一篇博客（一）](https://wechaty.js.org/2021/04/22/how-to-publish-blog-on-wechaty/) 通过大量的截图一步一步告诉你如何发布Wechaty博客。
+如果你是完全小白，可以参考 [atorber](https://wechaty.js.org/contributors/atorber/) 的这篇博客: [入门：小白如何在 wechaty 社区发布自己的第一篇博客（一）](https://wechaty.js.org/2021/04/22/how-to-publish-blog-on-wechaty/) 通过大量的截图一步一步告诉你如何发布 Wechaty 博客。
 
 ## Wechaty Issue 发布规范
 
@@ -158,16 +158,16 @@ Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hell
 
 当然，在发布 issue 之前，也强烈建议你在 issue 列表中进行搜索，看这个 issue 是不是别人已经提过了，甚至已经有人给出了很好的解决办法。
 
-发布 issue 的时候，建议按照 issue 模板发布 issue， 这样方便社区里的人更好的为你提供帮助。issue 分为3个类别：
+发布 issue 的时候，建议按照 issue 模板发布 issue， 这样方便社区里的人更好的为你提供帮助。issue 分为 3 个类别：
 
 ### 1. 报 Bug
 
 模板内容见：[Bug Report](https://github.com/wechaty/wechaty/blob/master/.github/ISSUE_TEMPLATE/wechaty-bug-report.md)
 
-报 Bug 最重要的事情是**复现**，只有可复现的bug，才可被解决。具体来讲，至少需要你给出以下的信息：
+报 Bug 最重要的事情是**复现**，只有可复现的 bug，才可被解决。具体来讲，至少需要你给出以下的信息：
 
 - Wechaty 版本号、使用了哪一个 wechaty puppet、node 的版本和操作系统
-- 详细的描述这个bug
+- 详细的描述这个 bug
 - 明确的复现步骤
 - 按照你的步骤操作后，期待出现的现象
 - 按照你的步骤操作后，实际出现的现象
@@ -185,7 +185,7 @@ Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hell
 
 社区不希望你在 issue 中提问，最好的方式是去 [StackOverflow](https://stackoverflow.com/questions/tagged/wechaty) 上提问。
 
-Wechaty 的 Contributor [xpt](https://stackoverflow.com/users/2125837/xpt) 在 StackOverflow 有超过 10K 的 reputation, 他专门为 wechaty 创建了 tag，所以你在 StackOverflow 上通过搜索 wechaty 是能看到所有关于wechaty的问题的。同时，也建议开发者去  [StackOverflow](https://stackoverflow.com/questions/tagged/wechaty) 提问并打上 wechaty 的标签，方便其他开发者搜索相关问题。
+Wechaty 的 Contributor [xpt](https://stackoverflow.com/users/2125837/xpt) 在 StackOverflow 有超过 10K 的 reputation, 他专门为 wechaty 创建了 tag，所以你在 StackOverflow 上通过搜索 wechaty 是能看到所有关于 wechaty 的问题的。同时，也建议开发者去 [StackOverflow](https://stackoverflow.com/questions/tagged/wechaty) 提问并打上 wechaty 的标签，方便其他开发者搜索相关问题。
 
 ## Wechaty PR 发布规范
 
@@ -193,13 +193,13 @@ Wechaty 的 Contributor [xpt](https://stackoverflow.com/users/2125837/xpt) 在 S
 
 此外，开发者在提交 PR 之前一定要按照 PR 模板的要求：
 
-- 明确这是一个新功能开发还是一个bug修复
+- 明确这是一个新功能开发还是一个 bug 修复
 - 为这次提交的内容增加了测试用例
 - 通过 CI 测试，展示形式是 Github Action 变绿了
 - 完成 CLA 的签署
 - 关联相关的 Issue 链接
 
-![pr](/assets/2021/06-the-wechaty-way/pr.png)
+![pr](/assets/2021/06-the-wechaty-way/pr.webp)
 
 ## Wechaty RFC
 
@@ -207,7 +207,7 @@ Wechaty 的 Contributor [xpt](https://stackoverflow.com/users/2125837/xpt) 在 S
 
 如这是 Wechaty Commiter [高原](https://wechaty.js.org/contributors/windmemory/) 发布的[提案](https://github.com/wechaty/wechaty/issues/1776)：
 
-![rfc](/assets/2021/06-the-wechaty-way/rfc.png)
+![rfc](/assets/2021/06-the-wechaty-way/rfc.webp)
 
 ## 进阶，了解 Apache Way，知道如何更好的参与开源项目
 
@@ -224,5 +224,5 @@ Wechaty 的 Contributor [xpt](https://stackoverflow.com/users/2125837/xpt) 在 S
 - [什么是 Apache Way，Apache Way 是指 Apache 管理和运营项目的方法](http://apache.org/theapacheway/)
 - [什么是 Incubator PMC](http://incubator.apache.org/whoweare.html#the_incubator_project_management_commitee_pmc)
 - [什么是 Infrastructure Team](https://selfserve.apache.org/)
-- [视频-ASF是如何运营的以及他的价值](https://www.youtube.com/watch?v=TQwrH0PlpZg)
+- [视频-ASF 是如何运营的以及他的价值](https://www.youtube.com/watch?v=TQwrH0PlpZg)
 - [视频-如何高效管理开源项目](https://www.youtube.com/watch?v=hpAv54KIgK8)

@@ -7,7 +7,7 @@ tags:
   - project
   - productivity
   - hospitality
-image: /assets/2020/wechat-roommessage-bot/teaser.png
+image: /assets/2020/wechat-roommessage-bot/teaser.webp
 ---
 
 > 作者: [sidny](https://github.com/sidny/)
@@ -24,7 +24,7 @@ image: /assets/2020/wechat-roommessage-bot/teaser.png
 3 很多微信群管理起来很麻烦
 
 于是有了这个需求的模型：
-1 机器人存在于多个群组中 ，例如 散户1群 ，囧东出差群，渣浪出差群，企鹅出差群，。。。。（排名不分先后）
+1 机器人存在于多个群组中 ，例如 散户 1 群 ，囧东出差群，渣浪出差群，企鹅出差群，。。。。（排名不分先后）
 2 有个管理群组，只有房东及工作人员在其中
 3 租户在自己的群中@机器人，提出自己的问题， 机器人会将内容转发至 管理群
 4 房东接受问题，或将问题处理完后，可以回复相应信息，机器人会在对应的群众转发房东的回复并@租户
@@ -48,12 +48,12 @@ image: /assets/2020/wechat-roommessage-bot/teaser.png
 
 ## 依赖
 
-wechaty：wechaty核心库
-wechaty-puppet-padplus：wechaty的ipad协议实现
+wechaty：wechaty 核心库
+wechaty-puppet-padplus：wechaty 的 ipad 协议实现
 
 ## 实现过程
 
-具体代码可以上github参看 [Github](https://github.com/sidny/wxbot)
+具体代码可以上 github 参看 [Github](https://github.com/sidny/wxbot)
 
 ## 本地运行
 
@@ -78,18 +78,18 @@ npm run serve
 ## 效果图
 
 - 咨询
-  ![咨询](/assets/2020/wechat-roommessage-bot/query.png)
+  ![咨询](/assets/2020/wechat-roommessage-bot/query.webp)
 
 - 回复
-  ![回复](/assets/2020/wechat-roommessage-bot/answer.png)
+  ![回复](/assets/2020/wechat-roommessage-bot/answer.webp)
 
 - 公告
-  ![公告](/assets/2020/wechat-roommessage-bot/notice.png)
+  ![公告](/assets/2020/wechat-roommessage-bot/notice.webp)
 
 ## 致谢
 
-非常感谢 [Wechaty](https://wechaty.github.io/) 团队提供微信机器人SDK，让开发者可以专注于业务代码。
-感谢 [句子互动](https://www.juzibot.com/) 提供的pad协议版token。
+非常感谢 [Wechaty](https://wechaty.github.io/) 团队提供微信机器人 SDK，让开发者可以专注于业务代码。
+感谢 [句子互动](https://www.juzibot.com/) 提供的 pad 协议版 token。
 
 wechaty：[https://wechaty.github.io/](https://wechaty.github.io/)
 句子互动：[https://www.juzibot.com/](https://www.juzibot.com/)

@@ -7,7 +7,7 @@ tags:
   - project
   - twitter
   - utility
-image: /assets/2020/wechaty-twitter2wechat/wechaty-twitter2wechat-header.jpg
+image: /assets/2020/wechaty-twitter2wechat/wechaty-twitter2wechat-header.webp
 ---
 
 > Author: [afterever](https://github.com/afterever)
@@ -21,18 +21,18 @@ image: /assets/2020/wechaty-twitter2wechat/wechaty-twitter2wechat-header.jpg
 ## Twitter2Wechat
 
 当前，[IFTTT](https://ifttt.com)应用相当广泛，连接了很多日常的应用，但是微信由于各种原因，尚不能接入。
-感恩Wechaty API的出现，这个Twitter2Wechat 通过监听Twitter，在探测到有新Tweet发布后，会同步到预设的微信群里。
-一个实际的应用是，我们有一个实况足球的小联盟[PESNALeague](https://www.pesnaleague.com)。如果有玩家在YouTube或Twitch上直播比赛对战的话，通过预设的IFTTT, 直播的URL会在Twitter发布。
-之后，通过这个wechaty机器人，实现了在微信群的通告功能。
+感恩 Wechaty API 的出现，这个 Twitter2Wechat 通过监听 Twitter，在探测到有新 Tweet 发布后，会同步到预设的微信群里。
+一个实际的应用是，我们有一个实况足球的小联盟[PESNALeague](https://www.pesnaleague.com)。如果有玩家在 YouTube 或 Twitch 上直播比赛对战的话，通过预设的 IFTTT, 直播的 URL 会在 Twitter 发布。
+之后，通过这个 wechaty 机器人，实现了在微信群的通告功能。
 
 ## 效果预览
 
-![Header Picture](/assets/2020/wechaty-twitter2wechat/wechaty-twitter2wechat-header.jpg)
+![Header Picture](/assets/2020/wechaty-twitter2wechat/wechaty-twitter2wechat-header.webp)
 
 ## 项目说明
 
-本项目是基于[wechaty](https://github.com/wechaty/wechaty)的个人开源项目，更多关于`wechaty`项目说明及api文档可以移步：[wechaty介绍](https://wechaty.js.org/v/zh/)
-如果你拥有了[wechaty](https://github.com/wechaty/wechaty)发放的Padplus token，那么也可以直接使用本项目 （[PadPlus token 申请地址](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)）
+本项目是基于[wechaty](https://github.com/wechaty/wechaty)的个人开源项目，更多关于`wechaty`项目说明及 api 文档可以移步：[wechaty 介绍](https://wechaty.js.org/v/zh/)
+如果你拥有了[wechaty](https://github.com/wechaty/wechaty)发放的 Padplus token，那么也可以直接使用本项目 （[PadPlus token 申请地址](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)）
 
 ## 程序结构
 
@@ -48,7 +48,7 @@ image: /assets/2020/wechaty-twitter2wechat/wechaty-twitter2wechat-header.jpg
 
 ## 配置
 
-我们提供了credentials_example.js，如下所示。请移步[申请Twitter Developer API](https://developer.twitter.com/en/docs/basics/authentication/overview)四个token填入即可运行。
+我们提供了 credentials_example.js，如下所示。请移步[申请 Twitter Developer API](https://developer.twitter.com/en/docs/basics/authentication/overview)四个 token 填入即可运行。
 
 ```shell script
 module.exports = {
@@ -70,9 +70,9 @@ module.exports = {
 
 ## 核心代码
 
-首先，感谢[Monitor Twitter](https://github.com/matthewpalmer/monitor-twitter)的开发者，我们发展了他们的主程序，实现了对Twitter账号的监听，具体的实现请参考twitter_monitor.js文件。
-核心的程序如下图，在每30秒poll一次Twitter的情况下，如果检测到有新Tweet发布，我们抓取Tweet的text()，然后同步发布到微信Wechat预设的房间内。
-![Core Code](/assets/2020/wechaty-twitter2wechat/core-code.jpg)
+首先，感谢[Monitor Twitter](https://github.com/matthewpalmer/monitor-twitter)的开发者，我们发展了他们的主程序，实现了对 Twitter 账号的监听，具体的实现请参考 twitter_monitor.js 文件。
+核心的程序如下图，在每 30 秒 poll 一次 Twitter 的情况下，如果检测到有新 Tweet 发布，我们抓取 Tweet 的 text()，然后同步发布到微信 Wechat 预设的房间内。
+![Core Code](/assets/2020/wechaty-twitter2wechat/core-code.webp)
 
 ## 运行
 
@@ -80,12 +80,12 @@ module.exports = {
 第一步 `npm install`
 第二步 `node index.js`
 
-## 服务器Heroku 部署 (推荐)
+## 服务器 Heroku 部署 (推荐)
 
-代码写完了，我们需要一个服务器24/7运行，且最好是免费的:)
-Wechaty的主要开发者Huan LI (李卓桓)写过一篇[博客文章](https://wechaty.github.io/heroku-deploy-button-for-wechaty-starter-template/)，且附带有[Heroku+Wechaty Getting Started例程](https://github.com/wechaty/heroku-wechaty-getting-started)，对我们的帮助很大。
-Heroku免费提供每月500小时的服务器时间，分配到每天，几乎是20小时了，基本上够用了。他们提供的[Node.js Tutorial教程](https://devcenter.heroku.com/articles/getting-started-with-nodejs?singlepage=true)做，也写的非常详尽，一步步照着做完，也就学会了。
-在他们的服务器上部署后，只要修改Procfile就可以带参数的运行了。
+代码写完了，我们需要一个服务器 24/7 运行，且最好是免费的:)
+Wechaty 的主要开发者 Huan LI (李卓桓)写过一篇[博客文章](https://wechaty.github.io/heroku-deploy-button-for-wechaty-starter-template/)，且附带有[Heroku+Wechaty Getting Started 例程](https://github.com/wechaty/heroku-wechaty-getting-started)，对我们的帮助很大。
+Heroku 免费提供每月 500 小时的服务器时间，分配到每天，几乎是 20 小时了，基本上够用了。他们提供的[Node.js Tutorial 教程](https://devcenter.heroku.com/articles/getting-started-with-nodejs?singlepage=true)做，也写的非常详尽，一步步照着做完，也就学会了。
+在他们的服务器上部署后，只要修改 Procfile 就可以带参数的运行了。
 
 ## 延展与将来
 
@@ -98,5 +98,5 @@ Heroku免费提供每月500小时的服务器时间，分配到每天，几乎�
 
 ### 致谢
 
-感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK，让开发者可以专注于业务代码
-感谢[句子互动juzibot](https://www.juzibot.com/)提供的iPad协议版token
+感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人 SDK，让开发者可以专注于业务代码
+感谢[句子互动 juzibot](https://www.juzibot.com/)提供的 iPad 协议版 token
