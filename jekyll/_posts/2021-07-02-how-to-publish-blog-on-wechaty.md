@@ -73,6 +73,7 @@ image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.png
     ![branch1](/assets/2021/07-how-to-publish-blog-on-wechaty/branch1.png)
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     ![branch2](/assets/2021/07-how-to-publish-blog-on-wechaty/branch2.png)
 
     ![branch3](/assets/2021/07-how-to-publish-blog-on-wechaty/branch3.png)
@@ -80,6 +81,11 @@ image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.png
     ![branch2](/assets/2021/07-how-to-publish-blog-on-wechaty/branch1.png)
 
     ![branch3](/assets/2021/07-how-to-publish-blog-on-wechaty/branch1.png)
+>>>>>>> Stashed changes
+=======
+    ![branch2](/assets/2021/07-how-to-publish-blog-on-wechaty/branch2.png)
+
+    ![branch3](/assets/2021/07-how-to-publish-blog-on-wechaty/branch3.png)
 >>>>>>> Stashed changes
 
 5. **签署CLA**
@@ -123,9 +129,13 @@ image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.png
 10. 本地预览
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     当然我们发表了PR之后，我们就是contributor了，之后我们就可以在本地运行Jekyll来预览博客。
 =======
     在本地运行Jekyll来预览博客。
+>>>>>>> Stashed changes
+=======
+    当然我们发表了PR之后，我们就是contributor了，之后我们就可以在本地运行Jekyll来预览博客。
 >>>>>>> Stashed changes
     本地写好了代码以后提交到github上，运行: ssh -L 4000:127.0.0.1:4000 gangena@dev.chatie.io
     如果需要输入密码，输入本机密码就可以了。进入到服务器里面，输入：cd wechaty.js.org/jekyll
@@ -133,9 +143,12 @@ image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.png
     拉代码: git pull
     运行： make serve
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     当看到命令行中出现 Server address:<http://127.0.0.1:4000>的时候，在浏览器中输入地址<http://127.0.0.1:4000>即可
     ![preview](/assets/2021/07-how-to-publish-blog-on-wechaty/preview.png)
 =======
+=======
+>>>>>>> Stashed changes
     当看到命令行中出现 Server address: <http://127.0.0.1:4000> 的时候，在浏览器中输入地址 <http://127.0.0.1:4000> 即可
     ![preview](/assets/2021/07-how-to-publish-blog-on-wechaty/preview.png)
 
@@ -235,4 +248,7 @@ TODO:
 > 历史文章
 
 - [Wechaty+微信小程序实现群内活动报名](https://wechaty.js.org/2021/03/17/node-wechaty-and-wechaty-puppet-padlocal/)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
