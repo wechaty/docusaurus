@@ -1,7 +1,7 @@
 ---
 name: zzzyer
 site: https://github.com/zzzyer
-avatar: /assets/contributors/zzzyer/avatar.png
+avatar: /assets/contributors/zzzyer/avatar.jpg
 bio: I want to be a professional Front End Engineer!
 email: 906012317@qq.com
 ---
