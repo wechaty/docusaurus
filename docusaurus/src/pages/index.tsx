@@ -64,7 +64,7 @@ function Home () {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Conversational SDK for Chatbot Makers.">
+      description="RPA SDK for Chatbot Makers.">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>

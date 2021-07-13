@@ -1,12 +1,12 @@
 ---
 title: Deploy Wechaty in AWS ec2
 author: charles-wu-chen
-date: 2020-08-28
 image: /assets/2020/deploy-wechaty-in-aws/wechaty-aws.png
+categories: project
 tags:
-  - wechaty
   - nodejs
   - aws
+  - devops
 ---
 
 This article is about to deploy wechaty node.js application into AWS EC2 steps by steps.

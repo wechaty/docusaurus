@@ -1,9 +1,8 @@
 ---
 title: "Wechaty插件系统发布，让你的机器人快速接入复杂管理和智能对话能力"
 author: rickyyin98
-categories: project
+categories: announcement
 tags:
-  - wechaty
   - plugin
 image: /assets/2020/wechaty-plugin-milestone/plugin.png
 ---

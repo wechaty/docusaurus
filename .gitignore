@@ -4,6 +4,11 @@ t.*
 
 .idea
 .DS_Store
+*/.DS_Store
+
+package-lock.json
 
 new-gh-pages/
 tmp/
+
+hash.file

@@ -1,8 +1,13 @@
+/**
+ * Support sidebar.ts in TypeScript
+ */
+require('ts-node/register')
+
 const path = require('path')
 
 module.exports = {
   title: 'Wechaty',
-  tagline: 'Conversational SDK for Chatbot Makers',
+  tagline: 'Conversational RPA SDK for Chatbot Makers',
   url: 'https://wechaty.js.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -26,36 +31,23 @@ module.exports = {
       textColor: '#091E42', // Defaults to `#000`.
     },
     navbar: {
-      title: '',
+      title: '',  // Huan(202104): need to be empty. title will be displayed after the logo.
       logo: { alt: 'Wechaty Logo', src: 'img/wechaty-logo.svg' },
       hideOnScroll: true,
       items: [
         { label: 'News',            href: 'https://wechaty.js.org/news/',         position: 'right', target: '_self' },
         { label: 'Blog',            href: 'https://wechaty.js.org/blog/',         position: 'right', target: '_self' },
-        { label: 'Developers',      href: 'https://wechaty.js.org/developers/',   position: 'right' },
+        { label: 'Contributors',    href: 'https://wechaty.js.org/contributors/', position: 'right' },
 
         { label: 'Docs',            to: 'docs/', position: 'right', activeBasePath: 'docs',
           items: [
-            { label: 'Introduction',    to: 'docs/introduction/' },
-            { label: 'Getting Started', to: 'docs/getting-started/' },
-            { label: 'Tutorial',        to: 'docs/tutorials/' },
-            { label: 'Recipe',          to: 'docs/recipes/' },
-            { label: 'Case Study',      to: 'docs/case-study/' },
-            { label: 'API',             to: 'docs/api/' },
-            { label: 'FAQ',             to: 'docs/faq/' },
-            { label: 'Troubleshooting', to: 'docs/troubleshooting' },
+            { label: 'Introduction',  to: 'docs/wechaty' },
+            { label: 'Tutorials',     to: 'docs/tutorials/' },
+            { label: 'How-to Guides', to: 'docs/howto/' },
+            { label: 'References',    to: 'docs/references/' },
+            { label: 'Explainations', to: 'docs/explainations/' },
           ],
         },
-
-        // { label: 'Docs',            to:   'docs/introduction/',    position: 'right' },
-        // { label: 'Getting Started', to:   'docs/getting-started',  position: 'right' },
-        // { label: 'Tutorial',        to:   'docs/tutorials/',       position: 'right' },
-        // { label: 'Recipes',         to:   'docs/recipes/',         position: 'right' },
-        // { label: 'Case Study',      to:   'docs/case-study/',      position: 'right' },
-        // { label: 'API',             to:   'docs/api/',             position: 'right' },
-        // { label: 'FAQ',             to:   'docs/faq/',             position: 'right' },
-        // { label: 'Troubleshooting', to:   'docs/troubleshooting',  position: 'right' },
-
         { label: 'GitHub',          href: 'https://github.com/wechaty/wechaty#readme',   position: 'right' },
       ],
     },
@@ -65,29 +57,34 @@ module.exports = {
         {
           title: 'Docs',
           items: [
-            { label: 'Getting Started', to: 'docs/getting-started/' },
-            { label: 'Tutorial',        to: 'docs/tutorials/' },
-            { label: 'FAQ',             to: 'docs/faq/' },
-            { label: 'API Reference',   to: 'docs/api/' },
+            { label: 'Introduction',  to: 'docs/' },
+            { label: 'Tutorials',     to: 'docs/tutorials/' },
+            { label: 'Explainations', to: 'docs/explainations/' },
+            { label: 'References',    to: 'docs/references/' },
+            { label: 'Howto Guides',  to: 'docs/howto/' },
           ],
         },
         {
           title: 'Community',
           items: [
-            { label: 'Stack Overflow',  href: 'https://stackoverflow.com/questions/tagged/wechaty' },
             { label: 'Gitter',          href: 'https://gitter.im/wechaty/wechaty' },
+            { label: 'Discussion',      href: 'https://github.com/wechaty/wechaty/discussions' },
+            { label: 'Stack Overflow',  href: 'https://stackoverflow.com/questions/tagged/wechaty' },
             { label: 'Telegram',        href: 'https://t.me/wechaty' },
             { label: 'Twitter',         href: 'https://twitter.com/chatieio' },
-            { label: 'YouTube',         href: 'https://www.youtube.com/playlist?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh' },
-            { label: 'OpenCollective',  href: 'https://opencollective.com/wechaty' },
+            { label: 'YouTube',         href: 'https://bit.ly/3aoLE86' },
+            { label: 'Open Collective', href: 'https://opencollective.com/wechaty' },
+            { label: 'Google Drive',    href: 'https://bit.ly/33Dfkuf' },
+            { label: 'Photo Album',     href: 'https://photos.app.goo.gl/LkmYMWypGoJdyvEJ6' },
             { label: 'Meeting Notes',   href: 'https://bit.ly/2zpi2XG' },
+            { label: "Hall of Fame",    href: 'https://bit.ly/2J6ziXa' },
           ],
         },
         {
           title: 'More',
           items: [
             { label: 'Blog',      href: 'https://wechaty.js.org/blog/' },
-            { label: 'Book',      href: 'http://www.bot5.club/blogs/chatbot-0-1/' },
+            { label: 'Book',      href: 'http://www.bot5.ml/blogs/chatbot-0-1/' },
             { label: 'Branding',  to:   'branding' },
             { label: 'Press',     to:   'press' },
             { label: 'GitHub',    href: 'https://github.com/wechaty/wechaty#readme' },
@@ -100,21 +97,26 @@ module.exports = {
         src  : 'img/wechaty-logo.svg',
         href : 'https://wechaty.js.org/',
       },
-      copyright: `Copyright © 2016-${new Date().getFullYear()} Wechaty Contributors`,
+      copyright: `Copyright © 2016-${ new Date().getFullYear() } Wechaty Contributors`,
     },
     algolia: {
       apiKey           : 'cd8ca324c447a803e8a196a5c8fa22dd',
       indexName        : 'wechaty',
       searchParameters : {},                                   // Optional (if provided by Algolia)
     },
-    googleAnalytics: {
-      trackingID: 'UA-88739146-3',
+    tagManager: {
+      trackingID: 'GTM-PD2PL84',
     },
     prism: {
       additionalLanguages: [
-        'csharp',
+        'python',
+        'go',
+        'java',
         'kotlin',
         'scala',
+        'php',
+        'csharp',
+        'rust',
       ],
     },
   },
@@ -123,7 +125,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./sidebars.ts'),
           // Please change this to your repo.
           editUrl: 'https://github.com/wechaty/wechaty.js.org/edit/master/docusaurus/',
           // Equivalent to `enableUpdateBy`.
@@ -144,6 +146,7 @@ module.exports = {
     ],
   ],
   plugins: [
+    '@ionic-internal/docusaurus-plugin-tag-manager',
     require.resolve('./src/plugins/qrcode'),
   ],
 }

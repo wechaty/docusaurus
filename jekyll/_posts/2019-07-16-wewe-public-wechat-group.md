@@ -5,12 +5,14 @@ categories: project
 tags:
   - startup
   - featured
+  - social
+  - utility
 image: /assets/2019/wewe-screenshot.png
 ---
 
 > Author: [@timqian](https://github.com/timqian) Building transparent products at [t9t.io](https://t9t.io)
 
-[![wewe]({{ '/assets/2019/wewe-screenshot.png' | relative_url }})](https://wewe.t9t.io)
+[![wewe](/assets/2019/wewe-screenshot.png)](https://wewe.t9t.io)
 
 ## 背景
 

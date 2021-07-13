@@ -6,7 +6,7 @@ wechaty.js.org/ | Repo Folder
 :--- | :---
 [News] | [_posts](_posts/) (with `news` tag)
 [Blog] | [_posts](_posts/)
-[Developers] | [_developers/](_developers/)
+[Contributors] | [_contributors/](_contributors/)
 
 ## YAML front matter
 
@@ -16,6 +16,10 @@ wechaty.js.org/ | Repo Folder
 ## Serve from local
 
 Run the Jekyll at localhost for blog preview.
+
+### 0 Prerequisites
+
+Follow in the official instruction to install jekyll in your local [jekyll quickstart](https://jekyllrb.com/docs/)
 
 ### 1 Use Docker
 

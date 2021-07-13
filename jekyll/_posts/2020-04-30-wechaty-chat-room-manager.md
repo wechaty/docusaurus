@@ -1,8 +1,9 @@
 ---
 title: "微信群管辅助"
 author: tianyugeng
+categories: project
 tags:
-   - wechaty
+   - utility
 image: /assets/2020/room-manager/bio-photo.png
 ---
 
@@ -14,7 +15,7 @@ image: /assets/2020/room-manager/bio-photo.png
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/wechaty/wechaty)
 
-[![Node.js CI](https://github.com/wechaty/wechaty-getting-started/workflows/Node.js%20CI/badge.svg)](https://github.com/wechaty/wechaty-getting-started/actions?query=workflow%3A%22Node.js+CI%22)
+[![Node.js CI](https://github.com/wechaty/wechaty-getting-started/workflows/Node.js CI/badge.svg)](https://github.com/wechaty/wechaty-getting-started/actions?query=workflow%3A%22Node.js+CI%22)
 ![Node.js v10](https://img.shields.io/badge/node-%3E%3D10-green.svg)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-blue.svg)](https://www.typescriptlang.org/)
 

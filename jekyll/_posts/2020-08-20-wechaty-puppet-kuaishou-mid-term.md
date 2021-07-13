@@ -6,8 +6,9 @@ image: /assets/2020/wechaty-puppet-kuaishou-mid-term/wechaty-puppet-kuaishou-mid
 tags:
   - kuaishou
   - puppet
-  - soc
-  - soc2020
+  - summer-of-wechaty
+  - summer-2020
+  - ecosystem
 ---
 
 ## 暑期2020
@@ -61,3 +62,8 @@ tags:
 ### Live Code视频
 
 {% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1ei4y1g7og" %}
+
+### 项目地址
+
+- 项目链接：[https://github.com/bikaiqiao/kuaishou-auto](https://github.com/bikaiqiao/kuaishou-auto) / [https://github.com/bikaiqiao/kuaishouPuppet.git](https://github.com/bikaiqiao/kuaishouPuppet.git)
+- 联系方式：+86 13943110476 | 358461417@qq.com

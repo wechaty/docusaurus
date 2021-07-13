@@ -3,12 +3,12 @@ title: "用 Wechaty 实现微信诗歌搜索机器人（wechat poem robot）"
 author: ray7551
 categories: project
 tags:
-  - wechaty
-  - wechaty-puppet-padplus
+  - padplus
   - wechat-robot
   - regex
   - regex101
   - featured
+  - entertainment
 image: /assets/2020/wechat-poem-robot/chat.png
 ---
 

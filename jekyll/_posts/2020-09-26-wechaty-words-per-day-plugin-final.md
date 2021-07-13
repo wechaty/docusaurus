@@ -3,10 +3,10 @@ title: "暑期2020 [编写一个“每日一句”插件] 结项报告"
 author: univerone
 categories: project
 tags:
-  - wechaty
   - plugins
-  - soc
-  - soc2020
+  - summer-of-wechaty
+  - summer-2020
+  - entertainment
 image: /assets/2020/wechaty-words-per-day-plugin-final/logo.png
 ---
 

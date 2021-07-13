@@ -3,7 +3,7 @@ title: New DevOps Toolset for @Chatie Organization
 author: huan
 categories: npm
 tags:
-  - open source
+  - open-source
   - devops
   - npm
   - news
@@ -11,8 +11,6 @@ image: /assets/2019/chatie-devops-toolset.gif
 ---
 
 > Author: [huan](https://github.com/huan/), A DevOps fan.
-
-![chatie devops toolset](/assets/2019/chatie-devops-toolset.gif)
 
 The powerful and easy to use Chatie DevOps Toolset:
 

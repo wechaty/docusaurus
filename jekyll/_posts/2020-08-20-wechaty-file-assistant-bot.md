@@ -3,9 +3,9 @@ title: "基于wechaty-puppet-padplus的微信文件传输助手"
 author: przzl
 categories: project
 tags:
-  - wechaty
   - nodejs
-  - wechaty-puppet-padplus
+  - padplus
+  - productivity
 image: /assets/2020/file-assistant-bot/file-assistant-bot-img.png
 ---
 

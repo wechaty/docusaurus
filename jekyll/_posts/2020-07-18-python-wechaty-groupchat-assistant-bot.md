@@ -5,8 +5,9 @@ categories: project
 image: /assets/2020/groupchat-assistant-bot/header.jpeg
 tags:
   - python
-  - soc2020
-  - soc
+  - summer-2020
+  - summer-of-wechaty
+  - utility
 ---
 > Author: [@kxz18](https://github.com/kxz18)
 > Code: [@kxz18/python-wechaty-groupchat-bot](https://github.com/kxz18/python-wechaty-groupchat-bot)

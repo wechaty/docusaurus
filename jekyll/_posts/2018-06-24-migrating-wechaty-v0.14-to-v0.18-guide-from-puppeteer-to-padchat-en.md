@@ -18,7 +18,7 @@ This blog introduces how to porting code from wechaty puppeteer to padchat.
 
 **Puppet System** means to connect Wechaty API to any kinds of Puppets, including Web, iPad, Android, Windows Hook and ios. Different implements of these puppets are totally different, without the puppet, using one API to bridge all implement is very difficult, so we had Puppet System.
 
-![Puppet](https://github.com/wechaty/wechaty/wiki/image/abstract-info.png)
+![Puppet](/assets/2018/abstract-info.png)
 
 - Puppeteer: a solution based on Web Wechat
 - Padchat: a solution based on Ipad Wechat

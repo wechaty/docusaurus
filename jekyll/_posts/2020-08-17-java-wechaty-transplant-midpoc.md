@@ -1,15 +1,13 @@
 ---
 title: Wechaty Java 移植组件开发
-date: 2020-08-17 09:00 +0800
 author: cunkoulaocai
 categories: project
 tags:
- - wechaty
- - java
- - soc
- - soc2020
- - java-wechaty
-image: assets/2020/java-wechaty-transplant-midpoc/java-wechaty-transplant-midpoc.jpg
+  - java
+  - soc
+  - soc2020
+  - ecosystem
+image: /assets/2020/java-wechaty-transplant-midpoc/java-wechaty-transplant-midpoc.jpg
 ---
 
 ## 暑期2020

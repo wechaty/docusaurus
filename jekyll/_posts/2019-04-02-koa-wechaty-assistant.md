@@ -1,13 +1,14 @@
 ---
 title: "使用koa2+wechaty打造个人微信小秘书"
-author: leo_chen
+author: leochen-g
 categories: project
 tags:
   - code
+  - productivity
 image: /assets/2019/koa-wechaty.jpg
 ---
 
-> 作者: [Leo_chen](https://github.com/gengchen528/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [使用koa2+wechaty打造个人微信小秘书](https://juejin.im/post/5ca1dd846fb9a05e6c77b72f?utm_source=gold_browser_extension)
+> 作者: [Leo_chen](https://github.com/leochen-g/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [使用koa2+wechaty打造个人微信小秘书](https://juejin.im/post/5ca1dd846fb9a05e6c77b72f?utm_source=gold_browser_extension)
 
 ![koa2](/assets/2019/koa-wechaty.jpg)
 
@@ -52,11 +53,11 @@ github:[https://github.com/gengchen528/wechat-assistant](https://github.com/geng
 
 提醒自己
 
-![image](/assets/2019/koa-wechaty-1.jpg)
+![image](/assets/2019/koa-wechaty-1.jpeg)
 
 委托提醒（前提是你和你想要提醒的人都是小秘书的好友，采用的是昵称查找用户，不是备注要注意）
 
-![image](/assets/2019/koa-wechaty-2.jpg)
+![image](/assets/2019/koa-wechaty-2.jpeg)
 
 数据库中已添加任务
 

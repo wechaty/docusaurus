@@ -1,13 +1,16 @@
 # Site
 name: Wechaty
-description: Conversational SDK for Chatbot Makers
+description: Conversational RPA SDK for Chatbot Makers
 logo: assets/images/logo.png
 favicon: assets/images/favicon.ico
 url: https://wechaty.js.org
 baseurl:
 disqus: wechaty
-email: wechaty@chatie.io
+email: wechaty@googlegroups.com
 mailchimp-list: https://zixia.us4.list-manage.com/subscribe/post?u=a8584b55dea5aa8bbc14bd1a0&amp;id=d9899f0d70
+google:
+  tag_manager:
+    container_id: GTM-PD2PL84
 
 include: ["_pages"]
 permalink: /:year/:month/:day/:title/
@@ -29,7 +32,7 @@ defaults:
       layout: post
       comments: true
       author: wechaty
-      avatar: /assets/developers/wechaty/icon.png
+      avatar: /assets/contributors/wechaty/icon.png
 
   # all pages
   - scope:
@@ -37,9 +40,9 @@ defaults:
     values:
       layout: page
   - scope:
-      path: _developers
+      path: _contributors
     values:
-      layout: developer
+      layout: contributor
       comments: true
 
 # Syntax
@@ -57,6 +60,6 @@ exclude:
   - node_modules
 
 collections:
-  developers:
+  contributors:
     output: true
     permalink: /:collection/:path/

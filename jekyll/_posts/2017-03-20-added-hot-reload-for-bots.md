@@ -4,7 +4,6 @@ author: gcaufy
 categories: feature
 tags:
   - code
-  - featured
 image: /assets/2017/gcaufy-hot-reload-screencast.gif
 ---
 

@@ -6,11 +6,8 @@ tags:
   - code
   - startup
   - featured
+  - real-estate
 ---
-
-![avatar](https://avatars0.githubusercontent.com/u/640325?v=3&s=88)
-
-作者: [@xinbenlv](https://github.com/xinbenlv), Google, [Chatie Contributor](https://github.com/orgs/Chatie/teams/contributor)
 
 为了帮助新来硅谷的朋友找室友和租房，我们在所在地区组建了若干微信群。
 我们对这个项目的基本理念是简单专注，用完即走。
@@ -65,7 +62,7 @@ let maybeAddToHsyGroups = async function(m:Message):Promise<Boolean> {
   const room = m.room();
   let groupType:HsyGroupEnum;
   // only to me or entry group
-  if (WeChatyApiX.isTalkingToMePrivately(m) || /好室友.*入口群/.test(m.room().topic())) {
+  if (WechatyApiX.isTalkingToMePrivately(m) || /好室友.*入口群/.test(m.room().topic())) {
     let groupToAdd:HsyGroupEnum = null;
     if (/加群/.test(content)) {
       await m.say(greetingsMsg);
@@ -117,7 +114,7 @@ let maybeDownsizeKeyRoom = async function(keyRoom: Room, c:Contact) {
     for (let i = 0; i < keyRoom.memberList().length - newComerSize/* never newComer */; i++) {
       let c:Contact = cList[i];
       if (c.self()) continue; // never does anything with haoshiyou-admin itself.
-      let groupNickName = WeChatyApiX.getGroupNickNameFromContact(c);
+      let groupNickName = WechatyApiX.getGroupNickNameFromContact(c);
       if (/^(管|介|群主)-/.test(groupNickName) || /管理员/.test(c.alias())) {
         // pass, never remove
       } else if (/^(招|求)租/.test(groupNickName)) {
@@ -165,7 +162,7 @@ let maybeBlacklistUser = async function(m: Message):Promise<Boolean> {
     return false; // Not an admin
   }
   let admin = m.from();
-  if(WeChatyApiX.isTalkingToMePrivately(m)
+  if(WechatyApiX.isTalkingToMePrivately(m)
       && /加黑名单/.test(m.content())) {
     // find the last one being marked blacklist by this admin
     let blackListObj = GLOBAL_blackListCandidates[admin.alias()];
@@ -195,11 +192,11 @@ let maybeBlacklistUser = async function(m: Message):Promise<Boolean> {
       for (let i = 0; i < foundUsers.length; i++) {
         let candidate = foundUsers[i];
         buffer += `${i}. 昵称:${candidate.name()}, 备注:${candidate.alias()}, ` +
-            `群昵称: ${WeChatyApiX.getGroupNickNameFromContact(candidate)} \n`;
+            `群昵称: ${WechatyApiX.getGroupNickNameFromContact(candidate)} \n`;
       }
       buffer += `请问要不要把这个用户加黑名单？五分钟内回复 "加黑名单[数字编号]"\n`;
       buffer += `例如 "加黑名单0"，将会把${foundUsers[1]} ` +
-          `加入黑名单:${WeChatyApiX.contactToStringLong(foundUsers[0])}`;
+          `加入黑名单:${WechatyApiX.contactToStringLong(foundUsers[0])}`;
       await m.from().say(buffer);
       GLOBAL_blackListCandidates[m.from().alias()] = {
         time: Date.now(),

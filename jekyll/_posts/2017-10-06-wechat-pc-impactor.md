@@ -1,7 +1,7 @@
 ---
 title: 关于对微信PC版Hook的一点研究分享
 author: h4dex
-categories: hack
+categories: hacking
 tags:
   - code
   - hook

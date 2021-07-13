@@ -1,13 +1,13 @@
 ---
 title: "暑期2020 [Go-wechaty Github Action optimization] 计划书"
-date: 2020-07-30 16:00 +0800
-author: tangguangbin
+author: nebell
 categories: project
 image: /assets/2020/go-wechaty-github-action-optimization-poc/header.jpg
 tags:
-  - go-wechaty
-  - soc
-  - soc2020
+  - go
+  - summer-of-wechaty
+  - summer-2020
+  - devops
 ---
 
 > 作者: [TangGuangbin](https://github.com/Nebell/)

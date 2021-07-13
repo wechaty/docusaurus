@@ -3,8 +3,8 @@ title: "一个简单的微信群组「关键字」回答机器人"
 author: techial1042
 categories: project
 tags:
-  - wechaty
-  - wechaty-puppet-padplus
+  - padplus
+  - productivity
 image: /assets/2020/wechat-bot/header.jpg
 ---
 

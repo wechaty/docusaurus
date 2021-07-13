@@ -3,9 +3,8 @@ title: "Cps demo of wechat bot with wechaty"
 author: shuangjie
 categories: project
 tags:
-  - wechaty
   - cps
-
+  - ecommerce
 image: /assets/2020/cps-bot/qrcode.jpg
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "女生科技体验节，Wechaty杂货铺"
-author: tingyinelen
+author: tingyinhelen
 categories: tutorial
 tags:
   - datagirls

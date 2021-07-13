@@ -1,10 +1,10 @@
 ---
 title: "用「Wechaty」和「微信对话开放平台」做个助理"
 author: windmemory
+categories: tutorial
 tags: 
   - openai
   - talk
-  - sticky
   - featured
 image: /assets/2020/wechaty-weixin-openai/teaser-image.png
 ---
@@ -14,6 +14,8 @@ image: /assets/2020/wechaty-weixin-openai/teaser-image.png
 > Code: [wwc-wechaty](https://github.com/windmemory/wwc-wechaty)
 
 应 [WWC(Women Who Code)](#women-who-code) 邀请，我在线上分享了如何用「Wechaty」和「微信对话开放平台」做个助理帮助回答常见问题。
+
+活动介绍: [https://mp.weixin.qq.com/s/6HyEZlwWbuRGY9T_KotXEw](WWC在线分享: 如何用 Wechaty 和 微信对话开放平台 创建你的个人助理)
 
 ![wechaty-weixin-openai][teaser]
 
@@ -68,7 +70,7 @@ bot.start()
 19:27:48 INFO WechatyPluginContrib EventLogger scan: http://weixin.qq.com/x/QfsfuToGOs-EVGgaa-gn,2,
 
 19:27:48 INFO WechatyPluginContrib QRCodeTerminal Login QR Code Status: Waiting(2)
-QR Code Image URL: https://wechaty.github.io/qrcode/http%3A%2F%2Fweixin.qq.com%2Fx%2FQfsfuToGOs-EVGgaa-gn
+QR Code Image URL: https://wechaty.js.org/qrcode/http%3A%2F%2Fweixin.qq.com%2Fx%2FQfsfuToGOs-EVGgaa-gn
 19:27:55 INFO PadplusManager
             =================================================
             QRCODE_SCAN MSG : 已扫码，请在手机端确认登陆...
@@ -320,28 +322,9 @@ PS：在现场演示过程中，我们的测试了很多种的负面情绪的消
 
 ## Live Coding
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe
-  src="https://www.youtube.com/embed/PYFg8wYZbvI"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/embed/PYFg8wYZbvI" %}
 
-- Bilibili: <https://www.bilibili.com/video/BV1LV411r756/>
+> Bilibili: <https://www.bilibili.com/video/BV1LV411r756/>
 
 ## 微信对话开放平台
 

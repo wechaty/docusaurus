@@ -4,9 +4,10 @@ author: zlh
 categories: project
 image: /assets/2020/wx-group-assistant-bot/wx-bot.jpg
 tags:
-  - wechaty
   - nodejs
-  - wechaty-puppet-padplus
+  - padplus
+  - project
+  - ecommerce
 ---
 
 ## 背景与需求分析

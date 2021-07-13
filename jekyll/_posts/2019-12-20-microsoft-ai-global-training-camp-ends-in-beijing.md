@@ -1,17 +1,20 @@
 ---
-title: "年末最硬核！微软AI全球训练营北京站落幕"
-published: false
-author: 句子互动
+title: 年末最硬核！微软AI全球训练营北京站落幕
+author: lijiarui
+categories: event
 tags:
   - event
+  - microsoft
+  - ai
   - news
 ---
-
- > Author: 句子互动
 
 ## 年末最硬核！微软AI全球训练营北京站落幕
 
 Global AI Bootcamp是微软发起的全球AI开发者训练营活动，旨在凝聚全球的开发者共同学习交流，共同推进人工智能行业快速发展。在2019年12月14日同一天内，全球几十个国家，130个城市，上万人共同参与了这场AI人的狂欢盛会。当日18点30分，AI Bootcamp北京站也在宇宙中心五道口PNP创业孵化器内如期开幕，近百名中国AI开发者参与活动，聆听八位业内专家倾囊分享。
+
+- Global AI Bootcamp: <https://globalai.community/global-ai-bootcamp>
+- Global AI Bootcamp Beijing: <https://globalai.community/global-ai-bootcamp/china-beijing>
 
 ![global-bootcamp](/assets/2019/microsoft-ai-global-training-camp/image-1.png)
 

@@ -4,8 +4,8 @@ author: wj-mcat
 categories: tutorial
 tags:
   - news
-  - wechaty
-  - wechaty-puppet-official-account
+  - puppet-provider
+  - official-account
 image: /assets/2020/official-account/wechaty-puppet-official-account.png
 ---
 

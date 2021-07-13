@@ -4,7 +4,6 @@ author: lmacode
 categories: event
 tags:
   - bot
-  - wechaty
   - job
   - intern
 image: /assets/2020/early-bird-chatbot/bird.png
@@ -54,7 +53,7 @@ image: /assets/2020/early-bird-chatbot/bird.png
 示例：
 回复序号或关键字获取对应服务
 
-1. 加入WeChaty群聊（或其他已配置的群聊）
+1. 加入Wechaty群聊（或其他已配置的群聊）
 2. 求职信息
 3. 海外疫情
 

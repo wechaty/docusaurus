@@ -4,6 +4,7 @@ author: leinue
 categories: project
 tags:
   - code
+  - media
 image: /assets/2017/leinue-bot.jpg
 ---
 

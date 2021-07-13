@@ -1,13 +1,14 @@
 ---
 title: "Wechaty Workshop for Puppet Makers: How to make a Puppet for Wechaty"
 author: rickyyin98
-categories: events
+categories: event
 tags:
-  - wechaty
   - puppet
   - news
-  - sticky
   - workshop
+  - tutorial
+  - puppet-provider
+  - official-account
 image: /assets/2020/wechaty-puppet-maker/puppet.png
 ---
 
@@ -25,15 +26,7 @@ Wechaty 的每一种接入方式，都以 Puppet 的形式进行封装，目前�
 
 为了帮助社区开发者更快了解 Puppet 的更多细节、实现 Puppet 开发的从零到一，Wechaty 社区邀请到几位最核心的 Puppet 开发者介绍Puppet是什么、如何完成 Puppet 开发的第一步、如何实现一个商用级的 Puppet。
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fbTedVcEEEI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{% include iframe.html src="https://www.youtube.com/embed/fbTedVcEEEI" %}
 
 ![Wechaty Puppet活动](/assets/2020/wechaty-puppet-maker/puppet.png)
 

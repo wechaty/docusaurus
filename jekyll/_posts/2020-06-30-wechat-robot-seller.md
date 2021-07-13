@@ -1,10 +1,10 @@
 ---
 title: "带货机器人（wechat robot seller）"
-author: peterzhang
+author: zhangchunsheng
 categories: project
 tags:
-  - wechaty
-  - wechaty-puppet-padplus
+  - padplus
+  - ecommerce
 image: /assets/2020/wechat-robot-seller/chat.jpeg
 ---
 

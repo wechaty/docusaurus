@@ -1,11 +1,12 @@
 ---
 title: "暑期2020 [Go-wechaty Github Action optimization] 结项 POC"
-author: tangguangbin
+author: nebell
 categories: project
 tags:
-  - soc
-  - soc2020
-  - go-wechaty
+  - summer-of-wechaty
+  - summer-2020
+  - go
+  - devops
 image: /assets/2020/go-wechaty-gh-actions-optimization-final-poc/header.png
 ---
 

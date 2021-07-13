@@ -1,14 +1,15 @@
 ---
 title: "三步教你用Node做一个微信脱单神器，小白可上手"
-author: leo_chen
+author: leochen-g
 categories: project
 tags:
   - code
   - featured
+  - entertainment
 image: /assets/2019/everyday-header.png
 ---
 
-> 作者: [Leo_chen](https://github.com/gengchen528/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [三步教你用Node做一个微信哄女友(基友)神器，小白可上手](https://juejin.im/post/5d09fa9f51882508bd2065f4)
+> 作者: [Leo_chen](https://github.com/leochen-g/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [三步教你用Node做一个微信哄女友(基友)神器，小白可上手](https://juejin.im/post/5d09fa9f51882508bd2065f4)
 
 ![image](/assets/2019/everyday-header.png)
 三步教你用Node做一个微信脱单神器，小白可上手！也可以用来哄女友，哄女(男\基)友我们程序猿(媛)是认真的
@@ -47,13 +48,7 @@ github: [https://github.com/gengchen528/wechatBot](https://github.com/gengchen52
 
 ## 视频教程
 
-<iframe width="560" height="315" src="//player.bilibili.com/player.html?aid=56077628&cid=98021463&page=1" frameborder="0" allowfullscreen="true" style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:560;
-    height:315;
-"></iframe></div>
+{% include iframe.html src="//www.bilibili.com/video/av56077628" %}
 
 ## 三步走教程
 

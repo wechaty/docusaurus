@@ -3,10 +3,10 @@ title: "SpringBoot搭建wechaty智能聊天机器"
 author: smwsk
 categories: project
 tags:
-  - wechaty
-  - SpringBoot
-  - Java
-  - 微信对话开发平台
+  - springboot
+  - java
+  - weixin-openai
+  - entertainment
 image: /assets/2020/smwsk-java-wechaty-bot/home.jpg
 ---
 

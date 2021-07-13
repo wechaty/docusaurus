@@ -2,15 +2,15 @@
 title: Gitter.im is supported by Wechaty now!
 author: huan
 image: /assets/2020/08-gitter/wechaty-gitter.png
+categories: announcement
 tags:
   - news
-  - wechaty
   - puppet
   - gitter
-  - wechaty-puppet-gitter
+  - puppet-provider
 ---
 
-Wechaty is a Conversational SDK for Chatbot Makers. It mainly works with WeChat accounts (both [individual](https://github.com/wechaty/wechaty-puppet-puppeteer) and [official](https://github.com/wechaty/wechaty-puppet-official-account)), and now we have published Gitter support for wechaty, which can make us easy to build a chatbot on Gitter.im, and sync the room between the Gitter.im and WeChat!
+Wechaty is a RPA SDK for Chatbot Makers. It mainly works with WeChat accounts (both [individual](https://github.com/wechaty/wechaty-puppet-puppeteer) and [official](https://github.com/wechaty/wechaty-puppet-official-account)), and now we have published Gitter support for wechaty, which can make us easy to build a chatbot on Gitter.im, and sync the room between the Gitter.im and WeChat!
 
 ![Gitter + Wechaty](/assets/2020/08-gitter/gitter.png)
 
@@ -89,7 +89,7 @@ To learn the details about the above 3 steps, you can read the source code for N
 
 ### 3. Use Wechaty with Gitter Image Message
 
-As I'm writing all of those codes for my [wechaty-puppet-gitter](https://github.com/wechaty/wechaty-puppet-gitter), which is the plugin for our conversational SDK [Wechaty](https://github.com/wechaty/wechaty), so I'd like to share the Wechaty way to do this.
+As I'm writing all of those codes for my [wechaty-puppet-gitter](https://github.com/wechaty/wechaty-puppet-gitter), which is the plugin for our [Wechaty](https://github.com/wechaty/wechaty), so I'd like to share the Wechaty way to do this.
 
 Here's the demo source code for sending an image message to a Gitter room with Wechaty:
 

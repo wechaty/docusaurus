@@ -6,7 +6,6 @@ tags:
   - release
   - event
   - news
-  - sticky
 image: /assets/2020/multi-language-wechaty-beta-released/multi-language-teaser.png
 ---
 
@@ -596,7 +595,7 @@ Blog Post: [Wonderful Wechaty devops toolset](https://wechaty.github.io/2020/06/
 
 To review our first multiple language Wechaty meeting
 
-1. Meeting Minutes: [BOT5.Club: Multi-language Wechaty](https://www.bot5.club/events/seminar-minutes-2020-07/) at April 17, 2020:
+1. Meeting Minutes: [BOT5 Club: Multi-language Wechaty](https://www.bot5.ml/events/seminar-minutes-2020-07/) at April 17, 2020:
 1. Meeting Notes: [![Multi-language Wechaty Kickoff Meeting](/assets/2020/multi-language-wechaty-beta-released/agenda-1.png)](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.s1pqhlt89eea)
 
 | Time | Topic | Speaker |
@@ -609,3 +608,5 @@ To review our first multiple language Wechaty meeting
 | 9:15 - 9:30 | Golang里的EventEmitter | 李博杰，@SilkageNet |
 | 9:30 - 9:45 | Discussion: Prize for DingDongBot | 李卓桓，@huan |
 | 9:45 - 10:00 | Q/A & Free Talk | |
+
+> Related Issue [Wechaty is All You Need: Python, Go, and Java Translation Project #1927](https://github.com/wechaty/wechaty/discussions/1927)
