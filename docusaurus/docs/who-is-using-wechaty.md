@@ -29,5 +29,5 @@ Some of the companies that are currently using Wechaty include:
 - [Plug And Play](https://www.plugandplaytechcenter.com/) - is the world's largest early-stage investor, accelerator, and corporate innovation platform
 - [Y Combinator](https://www.ycombinator.com/) - is a venture capitalist that provides seed funding for startups
 
-If you are interested in using Wechaty, you are welcome to join our [community](#link) of users and developers. We are an inclusive and welcoming community.
+If you are interested in using Wechaty, you are welcome to join our [community](https://gitter.im/wechaty/wechaty) of users and [developers](https://github.com/wechaty/wechaty#yum-voice-of-developers). We are an inclusive and welcoming community.
 If you are still not sure whether Wechaty can solve your problem or challenge, take a look at [what you can do with Wechaty](#link) section. Wechaty is evolving very fast. New Wechaty [puppets](#link-to-puppets) and [plugins](#link-to-plugins) are being added by our dedicated community of developers. Feel free to ask. We shall be happy to help you.
