@@ -1,10 +1,10 @@
 ---
 name: 芦苇
-site:
+site: 
 bio: Beyi makes me happy
 avatar: /assets/contributors/luweicn/avatar.webp
 email: 1280380446@qq.com
-twitter:
+twitter: 
 ---
 
 Beyi makes me happy

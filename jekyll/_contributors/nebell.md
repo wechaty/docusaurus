@@ -3,8 +3,8 @@ name: Tang Guangbin
 site: https://github.com/nebell
 avatar: /assets/contributors/nebell/avatar.webp
 bio: A student.
-email:
-twitter:
+email: 
+twitter: 
 ---
 
 A student interested in OS.

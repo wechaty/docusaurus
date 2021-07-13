@@ -3,8 +3,8 @@ name: leijiahang
 site: https://github.com/leijiahang
 avatar: /assets/contributors/leijiahang/avatar.webp
 bio: I am a baby coder
-email:
-twitter:
+email: 
+twitter: 
 ---
 
 I am a baby coder

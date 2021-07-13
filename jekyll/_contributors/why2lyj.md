@@ -4,7 +4,7 @@ site: https://github.com/why2lyj
 avatar: /assets/contributors/why2lyj/avatar.webp
 bio: PM from H3C, worked in HP and Motorola
 email: mailto:admin@farseer.vip
-twitter:
+twitter: 
 ---
 
 PM from H3C, worked in HP and Motorola

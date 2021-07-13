@@ -4,7 +4,7 @@ site: https://github.com/chianquan
 avatar: /assets/contributors/chianquan/avatar.webp
 bio: Imagine that.
 email: chianquan@qq.com
-twitter:
+twitter: 
 ---
 
 Imagine that.

@@ -3,8 +3,8 @@ name: shevyan
 site: https://github.com/shevyan
 avatar: /assets/contributors/shevyan/avatar.webp
 bio: Dong YAN，Founder&CEO of GhostCloud
-email:
-twitter:
+email: 
+twitter: 
 ---
 
 Dong YAN，Founder&CEO of GhostCloud

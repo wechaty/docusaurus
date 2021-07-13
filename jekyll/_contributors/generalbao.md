@@ -3,11 +3,11 @@ name: generalbao
 site: https://github.com/generalbao
 avatar: /assets/contributors/generalbao/avatar.webp
 bio: php工程师,拍片哥
-email:
-twitter:
+email: 
+twitter: 
 ---
 
-php 工程师,拍片哥
+php工程师,拍片哥
 
 ## Contact me
 

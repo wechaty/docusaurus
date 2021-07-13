@@ -7,7 +7,7 @@ email: 419516477@qq.com
 Zhihu: https://www.zhihu.com/people/wangjini521
 ---
 
-一个立志做 NLP 算法工程师的伪图像算法工程师
+一个立志做NLP算法工程师的伪图像算法工程师
 
 ## Contact me
 

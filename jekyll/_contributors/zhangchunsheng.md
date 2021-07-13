@@ -4,7 +4,7 @@ site: https://github.com/zhangchunsheng
 avatar: /assets/contributors/zhangchunsheng/avatar.webp
 bio: I am a full-stack Software Engineer in Beijing.
 email: mailto:1097692918@qq.com
-twitter:
+twitter: 
 ---
 
 I am a full-stack Software Engineer in Beijing.

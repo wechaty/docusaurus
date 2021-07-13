@@ -1,6 +1,6 @@
 ---
 name: Darren
-bio: .NET Wechaty Author
+bio:  .NET Wechaty Author
 site: https://github.com/jesn
 avatar: /assets/contributors/jesn/avatar.webp
 email: jesn2013@hotmail.com

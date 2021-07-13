@@ -3,8 +3,8 @@ name: sidny
 site: https://github.com/sidny
 avatar: /assets/contributors/sidny/avatar.webp
 bio: you been watched
-email:
-twitter:
+email: 
+twitter: 
 ---
 
 you been watched

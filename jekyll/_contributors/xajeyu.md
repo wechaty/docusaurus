@@ -1,7 +1,7 @@
 ---
 name: xajeyu
 site: https://github.com/xajeyu
-bio: 究极无敌切图仔
+bio: 究极无敌切图仔 
 avatar: /assets/contributors/xajeyu/avatar.webp
 email: xajeyu@gmail.com
 twitter: https://www.weibo.com/u/5059307505

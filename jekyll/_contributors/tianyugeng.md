@@ -3,8 +3,8 @@ name: tianyugeng
 site: https://github.com/tianyugeng
 avatar: /assets/contributors/tianyugeng/avatar.webp
 bio: 前端开发工程师(自称)
-email:
-twitter:
+email: 
+twitter: 
 ---
 
 前端开发工程师(自称)

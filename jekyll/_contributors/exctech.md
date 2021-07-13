@@ -2,10 +2,11 @@
 name: exctech
 site: https://github.com/exctech
 avatar: /assets/contributors/exctech/avatar.webp
-bio:
-email:
-twitter:
+bio: 
+email: 
+twitter: 
 ---
+
 
 ## Contact me
 

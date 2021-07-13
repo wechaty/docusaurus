@@ -3,8 +3,8 @@ name: sking
 site: https://github.com/shijianzhong
 avatar: /assets/contributors/sking/avatar.webp
 bio: A lazy full stack developer
-email:
-twitter:
+email: 
+twitter: 
 ---
 
 A lazy full stack developer

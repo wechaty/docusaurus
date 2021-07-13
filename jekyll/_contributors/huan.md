@@ -19,4 +19,4 @@ twitter: https://twitter.com/huan_us
 
 > I focus on helping Artificial Intelligence Startups  
 > to use the State-of-the-art Machine Learning Algorithms  
-> to solve the Real-world Problem.
+> to solve the Real-world Problem.  

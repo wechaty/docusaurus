@@ -4,7 +4,7 @@ site: https://github.com/cixingguangming55555
 avatar: /assets/contributors/cixingguangming55555/avatar.webp
 bio: good good study,day day up.
 email: mailto:13551376550@139.com
-twitter:
+twitter: 
 ---
 
 Be honest rather clever.

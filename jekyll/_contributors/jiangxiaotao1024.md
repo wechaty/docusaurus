@@ -2,9 +2,9 @@
 name: Yoke
 site: https://github.com/jiangxiaotao1024
 avatar: /assets/contributors/jiangxiaotao1024/avatar.webp
-bio:
+bio: 
 email: 1024186209@qq.com
-twitter:
+twitter: 
 ---
 
 everything can be ctrl+c ctrl+v

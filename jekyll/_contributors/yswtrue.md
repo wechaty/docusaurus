@@ -3,8 +3,8 @@ name: yswtrue
 site: https://blog.yswtrue.com
 avatar: /assets/contributors/yswtrue/avatar.webp
 bio: 无聊就喜欢瞎折腾
-email:
-twitter:
+email: 
+twitter: 
 ---
 
 无聊就喜欢瞎折腾

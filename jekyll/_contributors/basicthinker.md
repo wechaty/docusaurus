@@ -2,9 +2,9 @@
 name: Jinglei Ren
 site: https://persper.org
 avatar: /assets/contributors/basicthinker/avatar.webp
-bio:
+bio: 
 email: jinglei@persper.org
-twitter:
+twitter: 
 ---
 
 everything can be ctrl+c ctrl+v
@@ -14,3 +14,4 @@ everything can be ctrl+c ctrl+v
 - Github: <https://github.com/alienfist>
 - Email：<mailto:alienfist@gmail.com>
 - Website: <>
+  

@@ -3,8 +3,8 @@ name: JasLin
 site: https://github.com/jaslin
 avatar: /assets/contributors/jaslin/avatar.webp
 bio: CTO of BotWave
-email:
-twitter:
+email: 
+twitter: 
 ---
 
 CTO of BotWave

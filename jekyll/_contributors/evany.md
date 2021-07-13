@@ -3,8 +3,8 @@ name: Evany
 site: https://github.com/IvanEvan
 avatar: /assets/contributors/evany/avatar.webp
 bio: 烫头程序员
-email:
-twitter:
+email: 
+twitter: 
 ---
 
 烫头程序员

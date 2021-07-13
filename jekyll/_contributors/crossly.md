@@ -2,9 +2,9 @@
 name: lemonsx
 site: https://github.com/crossly
 avatar: /assets/contributors/crossly/avatar.webp
-bio:
-email:
-twitter:
+bio: 
+email: 
+twitter: 
 ---
 
 ## Contact me

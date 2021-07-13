@@ -3,8 +3,8 @@ name: DoubleJack
 site: https://github.com/shuangjie
 avatar: /assets/contributors/shuangjie/avatar.webp
 bio: a noob developer
-email:
-twitter:
+email: 
+twitter: 
 ---
 
 a noob developer
