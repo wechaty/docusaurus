@@ -40,7 +40,7 @@ You should have `Node.js` installed on your system. If you do not have `Node.js`
 
 :::
 
-The Ding Dong bot is a part of the **Wechaty Getting Started repository**, you can learn how to run this bot locally from [here](../docs/getting-started/hard-way.mdx).
+The Ding Dong bot is a part of the **Wechaty Getting Started repository**, you can learn how to run this bot locally from [here](../docs/getting-started/running-locally.mdx).
 
 ## Bot demonstration
 
