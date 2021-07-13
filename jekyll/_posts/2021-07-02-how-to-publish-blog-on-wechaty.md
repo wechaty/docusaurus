@@ -72,9 +72,15 @@ image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.png
 
     ![branch1](/assets/2021/07-how-to-publish-blog-on-wechaty/branch1.png)
 
+<<<<<<< Updated upstream
     ![branch2](/assets/2021/07-how-to-publish-blog-on-wechaty/branch2.png)
 
     ![branch3](/assets/2021/07-how-to-publish-blog-on-wechaty/branch3.png)
+=======
+    ![branch2](/assets/2021/07-how-to-publish-blog-on-wechaty/branch1.png)
+
+    ![branch3](/assets/2021/07-how-to-publish-blog-on-wechaty/branch1.png)
+>>>>>>> Stashed changes
 
 5. **签署CLA**
 
@@ -116,11 +122,117 @@ image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.png
 
 10. 本地预览
 
+<<<<<<< Updated upstream
     当然我们发表了PR之后，我们就是contributor了，之后我们就可以在本地运行Jekyll来预览博客。
+=======
+    在本地运行Jekyll来预览博客。
+>>>>>>> Stashed changes
     本地写好了代码以后提交到github上，运行: ssh -L 4000:127.0.0.1:4000 gangena@dev.chatie.io
     如果需要输入密码，输入本机密码就可以了。进入到服务器里面，输入：cd wechaty.js.org/jekyll
     切换到你的分支: git checkout XXXX
     拉代码: git pull
     运行： make serve
+<<<<<<< Updated upstream
     当看到命令行中出现 Server address:<http://127.0.0.1:4000>的时候，在浏览器中输入地址<http://127.0.0.1:4000>即可
     ![preview](/assets/2021/07-how-to-publish-blog-on-wechaty/preview.png)
+=======
+    当看到命令行中出现 Server address: <http://127.0.0.1:4000> 的时候，在浏览器中输入地址 <http://127.0.0.1:4000> 即可
+    ![preview](/assets/2021/07-how-to-publish-blog-on-wechaty/preview.png)
+
+11. 签署CLA
+
+    什么CLA？后边说，到自动检查的步骤会提示，首次签署时刘毅页面提示，超哥因为之前已经签署过了，暂时没办法操作截图，后边不上
+
+12. 等待传递GitHub操作CI，或者修复任何东西以确保CI变为绿色
+
+    Wait for pass the GitHub Action CI, or fix whatever to make sure CI turns green，百度直译，超哥也没搞太清楚，后边说
+
+13. 等待@wechaty的管理员审核
+
+就这些!就这些？就这些...
+
+### 贡献准则
+
+需要特别注意的几个点：
+
+#### 1. markdown格式规范化校验
+
+  在文件命名正确、文件存放位置正确的情况下，大部分自动校验不通过的原因是正文markwown格式存在错误，原因是系统对格式进行了严格校验，尤其是对之前会使用markdown但对使用不规范的同学来说，需要认真学习一下了，可参考文档 <https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md>
+
+#### 2. 只提交相关的文件
+
+  请勿提交博客不相关的文件
+
+#### 3. 添加视频或pdf
+
+  示例：
+
+  ```html
+  {% include iframe.html src="https://www.youtube.com/watch?v=3eq8wJfCAWs" %}
+  ```
+
+  或者
+
+  ```html
+  {% include iframe.html src="/assets/2020/qijibot/final.pdf" %}
+  ```
+
+  更多： [将iframe添加到wechaty博客](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)
+
+### 测试（进阶内容，可以了解下）
+
+为了确保一切（文件名、文件大小等）都正常，可以在“git push”之前运行以下命令检查它们。
+
+```sh
+npm install
+npm test
+```
+
+### 预览
+
+在本地运行Jekyll来预览博客。
+
+——什么是Jekyll，自定百度
+
+#### 0. 依赖
+
+  按照官方指示在本地安装jekyll [jekyll quickstart](https://jekyllrb.com/docs/)
+
+#### 1. 手动安装Jekyll
+
+  在本地运行Jekyll进行博客预览(对于熟悉Ruby语言的同学更容易一些。）
+
+  ```sh
+  make install
+  cd jekyll
+  make serve
+  ```
+
+#### 2. 预览博客
+
+  访问 <http://127.0.0.1:4000/blog/> 可以预览博客!
+
+#### 3. 总结
+
+  安装Jekyll的过程有些小复杂了，略过吧
+
+## 最后
+
+真正在写这篇博客时才发现，试图通过几篇博客教会0基础读者和0基础读者希望通过几篇博客成功发布自己的内容一样困难，无论如何，希望这些内容能给大家带来一些帮助。
+
+TODO:
+
+结合以上内容发布一个视频教程，或许是更好的选择，期待后续有时间或其他贡献者一起制作
+
+## 常见问题
+
+1. macOS下报错`jekyll/assets/.DS_Store does not match /\/[0-9\-a-z_]+\./!？`
+
+    mac下烦人的`.DS_Store`文件，运行`sudo find / -name ".DS_Store" -depth -exec rm {} \;`，然后，等几分钟和碰运气...
+
+更多问题后续会根据反馈继续补充
+
+> 历史文章
+
+- [Wechaty+微信小程序实现群内活动报名](https://wechaty.js.org/2021/03/17/node-wechaty-and-wechaty-puppet-padlocal/)
+>>>>>>> Stashed changes
