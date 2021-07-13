@@ -1,10 +1,10 @@
 ---
 name: Yoke
 site: https://github.com/jiangxiaotao1024
-avatar: /assets/contributors/jiangxiaotao1024/avatar.png
-bio: 
+avatar: /assets/contributors/jiangxiaotao1024/avatar.webp
+bio:
 email: 1024186209@qq.com
-twitter: 
+twitter:
 ---
 
 everything can be ctrl+c ctrl+v

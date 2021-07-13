@@ -2,9 +2,9 @@
 name: Sapio S
 site: https://github.com/https://github.com/Sapio-S
 bio: 持续探索新世界。
-avatar: /assets/contributors/sapio-s/avatar.jpg
+avatar: /assets/contributors/sapio-s/avatar.webp
 email: 1205402283@qq.com
-twitter: 
+twitter:
 ---
 
 编程练习生。修行两年，码力不算强，但是一直在进步。喜欢捣鼓一些奇奇怪怪的小项目，但是想法很多落地很少。

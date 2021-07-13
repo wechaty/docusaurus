@@ -1,10 +1,10 @@
 ---
 name: Yang BAI
 site: https://github.com/antonia0912
-avatar: /assets/contributors/antonia0912/avatar.png
+avatar: /assets/contributors/antonia0912/avatar.webp
 bio: formal community manager at JueJin(Chinese Hacker News)
-email: 
-twitter: 
+email:
+twitter:
 ---
 
 formal community manager at JueJin(Chinese Hacker News)

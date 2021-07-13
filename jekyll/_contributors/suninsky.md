@@ -1,10 +1,10 @@
 ---
 name: Suninsky
 site: https://github.com/suninsky
-avatar: /assets/contributors/suninsky/avatar.png
+avatar: /assets/contributors/suninsky/avatar.webp
 bio: just for fun
 email: suninsky@foxmail.com
-twitter: 
+twitter:
 ---
 
 He like coding and singing.

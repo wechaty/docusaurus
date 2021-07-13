@@ -1,9 +1,9 @@
 ---
 name: hain
 site: https://github.com/hailiang-wang
-avatar: /assets/contributors/hailiang-wang/avatar.png
+avatar: /assets/contributors/hailiang-wang/avatar.webp
 bio: You know, for chatbot.
-twitter: 
+twitter:
 ---
 
 Chatbot operator, co-found Chatopera Inc. I built Cloud, Mobile, Bizflow Applications at IBM China Development Lab from 2011. Since 2015, I have started work on chatbot, as chatbot is emerging as next paradigm shift.

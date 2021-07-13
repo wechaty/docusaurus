@@ -2,7 +2,7 @@
 name: itingle
 site: https://github.com/itingle
 bio: go on coder
-avatar: /assets/contributors/itingle/avatar.png
+avatar: /assets/contributors/itingle/avatar.webp
 email: yibumuxue@sina.com
 csdn: https://blog.csdn.net/tophighmi
 ---

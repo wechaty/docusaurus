@@ -1,7 +1,7 @@
 ---
 name: sajen sarvajith
-avatar: /assets/contributors/sajenjeshan1222/avatar.jpeg
-bio: Machine learning | Deep learning | Techinical Writer 
+avatar: /assets/contributors/sajenjeshan1222/avatar.webp
+bio: Machine learning | Deep learning | Techinical Writer
 email: sajenjeshan1222@gmail.com
 twitter: https://twitter.com/sajen_k
 ---
