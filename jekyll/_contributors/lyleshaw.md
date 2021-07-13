@@ -9,11 +9,10 @@ twitter:
 
 HDU undergraduate.
 Intern at BotBay.
-Passion about back-end developing and object detection. 
+Passion about back-end developing and object detection.
 
 ## Contact Me
 
 - Github: <https://github.com/lyleshaw>
 - Email：<mailto:lyle@hdu.edu.cn>
 - Website: <https://lyleshaw.com/>
-  
