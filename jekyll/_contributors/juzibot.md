@@ -2,11 +2,7 @@
 name: juzibot（句子互动）
 site: https://github.com/gangena
 bio: 北京句子互动科技有限公司
-<<<<<<< Updated upstream
-avatar: /assets/contributors/juzibot/juzibot.jpg
-=======
 avatar: /assets/contributors/juzibot/juzibot.webp
->>>>>>> Stashed changes
 ---
 
 句子互动是一家人工智能技术与服务提供商，主营业务是基于微信生态，为客户提供集销售、市场和售后于一体的智能机器人客服系统，通过智能对话，客服系统和数据分析帮助企业快速获客，增加用户粘性并提高转化。
