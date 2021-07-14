@@ -50,9 +50,8 @@ Here are some rules that a Wechaty Puppet should follow:
 1. **Emit Self Messages**: when the bot says anything, the bot should receive a message said by itself. (and the `message.self()` will return true for this message)
 2. **Perfect Logout**: `logout` method should clean all the user session data from the puppet service, and the status of the App on the phone should display correctly (not log in on any devices).
 3. **State-less Session Management** (with MemoryCard support): the puppet service should save the user session data to the memory card, and can be restored from the memory card.
-4. **MIME File Name Extension Convention**: FileBoxChunk.name must be able to convert to a MIME type and visa versa. The puppet needs to set the name with the right extension (.jpg, .pdf, etc) to the name of the file box. See: <https://github.com/wechaty/wechaty-puppet-hostie/discussions/115>,
-
-See: <https://github.com/wechaty/puppet-services/discussions/54>
+4. **MIME File Name Extension Convention**: FileBoxChunk.name must be able to convert to a MIME type and visa versa. The puppet needs to set the name with the right extension (.jpg, .pdf, etc) to the name of the file box. [See](https://github.com/wechaty/wechaty-puppet-hostie/discussions/115),
+[See](https://github.com/wechaty/puppet-services/discussions/54)
 
 ## MemoryCard
 
@@ -85,7 +84,7 @@ The order of events before the bot starts is very important and this section exp
 3. Then the `ready-ed` event is generated.The ievent is just before the `ready` event.
 4. Then lastly the `ready` event is generated.
 
-For a more robust Wechaty system, we can consider saving the `ready` event if the `login` event is not emitted in Wechaty and when we emit the `login` event in Wechaty, we can check if the puppet has already `ready-ed`, and if so, it can emit the `ready` event right after the `login` event.See: <https://github.com/wechaty/puppet-services/issues/31>
+For a more robust Wechaty system, we can consider saving the `ready` event if the `login` event is not emitted in Wechaty and when we emit the `login` event in Wechaty, we can check if the puppet has already `ready-ed`, and if so, it can emit the `ready` event right after the `login` event.[See](https://github.com/wechaty/puppet-services/issues/31)
 
 ## Event: `ready`
 
@@ -93,7 +92,7 @@ Need to fire `ready` event after the bot logined and all data has been synced.
 
 > For example, after we re-installed the WeChat app on our phone, it has to load contacts/rooms from the server for a long time.
 
-See: <https://github.com/wechaty/wechaty-puppet-service/issues/18>
+[check](https://github.com/wechaty/wechaty-puppet-service/issues/18)
 
 ## Event: `heartbeat`
 
@@ -103,7 +102,7 @@ Puppet must emit heartbeats to provide a health check signal.
 
 Here are the details:
 
-1. Wechaty Puppet is designed to emit at least one event in 60 seconds. If we do not have any events to emit, then we need to emit a `heartbeat` event so that it can prove itself as alive and healthy. See: <https://github.com/wechaty/wechaty-puppet/blob/bab9e29c088c33fa8bc6e148d9bdadbd453fd138/src/puppet.ts#L253-L254>
+1. Wechaty Puppet is designed to emit at least one event in 60 seconds. If we do not have any events to emit, then we need to emit a `heartbeat` event so that it can prove itself as alive and healthy. [See](https://github.com/wechaty/wechaty-puppet/blob/bab9e29c088c33fa8bc6e148d9bdadbd453fd138/src/puppet.ts#L253-L254)
 2. It seems that the PadLocal does not have any `heartbeat` event to emit when there are no other events, so if your bot idle for more than 60 seconds, then the Wechaty Puppet system will think the puppet provider is dead, so it will call `reset` to try to recover the puppet.
 
 A leaking of `heartbeat` example logs:
@@ -138,7 +137,7 @@ A leaking of `heartbeat` example logs:
 
 Here's an [example](https://github.com/wechaty/wechaty-puppet-puppeteer/blob/07f6260b3784c65bcee24bd003aac5d2968a9efc/src/wechaty-bro.js#L103-L112) from our puppeteer puppet, which emits heartbeats in the browser, so if the browser dead, we will get to know because the heartbeat will be lost.
 
-See: <https://github.com/wechaty/puppet-services/issues/85#issuecomment-769967606>
+(Check the link)(https://github.com/wechaty/puppet-services/issues/85#issuecomment-769967606)
 
 ### Wechaty Puppet Message Processing Flow
 
