@@ -17,7 +17,7 @@ Python-wechaty is a Python programming language client derived from the Wechaty 
 * This has a  powerful sample code library for robots.
 * It is very easy to implement.
 
-You can find more information on Python-Wechaty [here](https://github.com/wechaty/python-wechaty-getting-started).The following diagram illustrates on how the Python-Wechaty can be implemented on the already existing TypeScript Wechaty ecosystem.
+You can find more information on Python-Wechaty [here](https://github.com/wechaty/python-wechaty-getting-started).The [General Architecture Diagram](https://wechaty.js.org/docs/polyglot/diy/) illustrates on how the Python-Wechaty can be implemented on the already existing TypeScript Wechaty ecosystem.
 
 ## Getting Started
 
