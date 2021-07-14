@@ -121,7 +121,6 @@ const quickStart: SubMenuData = {
   label: 'Quick Start',
   items: [
     'quick-start/running-on-google-cloud-shell',
-    'quick-start/running-on-gitpod',
   ],
 }
 
