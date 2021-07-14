@@ -96,9 +96,12 @@ Meeting Notes 有以下几个价值：
 
 ### 会议视频
 
-为了保证会议的沉淀，重大线上会议会要求的主持者在会议结束后将会议视频上传到 [Youtube](https://www.youtube.com/playlist?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh) 并添加到 wechaty 的 playlist 中，主持人若没有添加权限，可以找 [Huan](https://wechaty.js.org/contributors/huan/) 申请。
+为了保证会议的沉淀，重大线上会议会要求的主持者在会议结束后将会议视频上传到 [Youtube](https://www.youtube.com/playlist?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh) 同时完成以下内容：
 
-上传到 Youtube 的同时，需要写好描述，同时需要在视频进度条上添加视频章节，章节会将的视频拆分为多个部分，每个部分均有单独的预览。这些章节可为观看者提供更多信息和背景介绍，以便观看者重新观看视频的不同部分，只需要增加时间在描述里面就可以了，但是注意要从 00:00 开始， 具体可以看： [Youtube 如何在进度条上添加章节](https://support.google.com/youtube/answer/9884579?hl=zh-Hans)
+- 在**公开范围**里设置成 `公开`
+- 添加到 wechaty 的 playlist 中（主持人若没有添加权限，可以找 [Huan](https://wechaty.js.org/contributors/huan/) 申请）
+- 撰写视频说明
+- 在视频说明中，通过添加 `00:00` 等时间的方式，在视频进度条上添加视频章节，具体可以参考：[Youtube 如何在进度条上添加章节](https://support.google.com/youtube/answer/9884579?hl=zh-Hans) 章节会将视频拆分为多个部分，方便观看者快速跳转到视频的不同部分。
 
 [Wechaty ❤️ Google Season of Docs: Kick-off meeting with 20 Technical Writers!](https://www.youtube.com/watch?v=hTkM_XPpFfU&list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&index=43) 就是一个很好的示例。因为一次会议的时间很长，其他人看视频的时候就可以很容易根据下图介绍知道 **视频中 0:01:41 的时候讲的内容是 Introducing the Meeting Agenda**， 同时点击 **0:01:41** 可以快速跳转到视频播放的地方。
 
