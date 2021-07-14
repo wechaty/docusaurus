@@ -8,7 +8,7 @@ This section explains the main concepts in Wechaty. If you are new to software o
 
 - **Bot**
 
-  A bot is a software application that is programmed to perform specific tasks. Bots usually imitate human behavior and perform certain repetitive tasks faster. Bots are automated therefore do not need to be started manually by a human being.
+  A bot is a software application that is programmed to perform specific tasks. Bots usually imitate human behavior and perform certain repetitive tasks faster. Bots are automated therefore, do not need to be started manually by a human being.
 
 - **Chatbot**
 
@@ -20,7 +20,7 @@ This section explains the main concepts in Wechaty. If you are new to software o
 
 - **Puppet provider**
 
-  Wechaty puppet provider refers to [RPA](#placeholder-link) module used for connecting Wechaty API to the corresponding Instant Messaging platform bot account. Each supported Instant Messaging system has its Puppet provider. See [Puppet Providers](#placeholder-link) section for a complete list of puppet providers.
+  Wechaty puppet provider refers to [RPA](#placeholder-link) module used for connecting Wechaty API to the corresponding Instant Messaging platform bot account. Each supported Instant Messaging system has its own Puppet provider. See [Puppet Providers](#placeholder-link) section for a complete list of puppet providers.
 
 - **Puppet service provider**
 
@@ -32,7 +32,7 @@ This section explains the main concepts in Wechaty. If you are new to software o
 
 - **Robotic process automation**
 
-  Robotic process automation (RPA) refers to technology that allows users to configure software robots to execute business processes and automate repetitive tasks across applications and systems without human intervention.
+  Robotic process automation (RPA) refers to the technology that allows users to configure software robots to execute business processes and automate repetitive tasks across applications and systems without human intervention.
 
 - **Software Development Kit**
 
