@@ -1,8 +1,8 @@
 ---
 name: Lyle Shaw
 site: https://github.com/lyleshaw
-avatar: /assets/contributors/lyleshaw/avatar.png
-bio: The Best Or Nothing.
+avatar: /assets/contributors/lyleshaw/avatar.webp
+bio: Just a student.
 email: mailto:lyle@hdu.edu.cn
 twitter: 
 ---
