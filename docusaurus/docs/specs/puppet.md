@@ -137,7 +137,7 @@ A leaking of `heartbeat` example logs:
 
 Here's an [example](https://github.com/wechaty/wechaty-puppet-puppeteer/blob/07f6260b3784c65bcee24bd003aac5d2968a9efc/src/wechaty-bro.js#L103-L112) from our puppeteer puppet, which emits heartbeats in the browser, so if the browser dead, we will get to know because the heartbeat will be lost.
 
-(Check the link)(https://github.com/wechaty/puppet-services/issues/85#issuecomment-769967606)
+[Check the link](https://github.com/wechaty/puppet-services/issues/85#issuecomment-769967606)
 
 ### Wechaty Puppet Message Processing Flow
 
