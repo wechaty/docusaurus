@@ -108,7 +108,7 @@ image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.png
 
     大功告成！
 
-10. 本地预览
+9. 本地预览
 
     当然我们发表了PR之后，我们就是contributor了，之后我们就可以在本地运行Jekyll来预览博客。
     本地写好了代码以后提交到github上，运行: ssh -L 4000:127.0.0.1:4000 gangena@dev.chatie.io
