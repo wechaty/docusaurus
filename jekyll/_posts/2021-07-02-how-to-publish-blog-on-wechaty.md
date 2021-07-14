@@ -6,7 +6,7 @@ tags:
   - blog
   - study
   - introduction
-image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.png
+image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.webp
 ---
 
 > 作者: [juzibot](https://github.com/juzibot/)，句子互动
@@ -49,58 +49,58 @@ image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.png
 
     写完博客之后在本地进行本地测试，在本地排查一下错误，首先打开终端,如图
 
-    ![test](/assets/2021/07-how-to-publish-blog-on-wechaty/test.png)
+    ![test](/assets/2021/07-how-to-publish-blog-on-wechaty/test.webp)
 
 2. **本地测试运行**
 
     切换到博客目录，通过 git checkout XXX 切换不同的分支（XXX：是你的分支名字），通过npm run test来运行。之后可能会出现这种情况：
 
-    ![run](/assets/2021/07-how-to-publish-blog-on-wechaty/run.png)
+    ![run](/assets/2021/07-how-to-publish-blog-on-wechaty/run.webp)
 
 3. **删除所有.DS_Store的文件**
 
     mac会出现讨厌的带有.DS_Store的文件，我们需要删除它。
     方法：写入 “rm -rf XXX” 的命令(XXX：要删除的文件)。例如，在我的分支里面运行npm run test之后出现了图中这样的情况，写着OK的不用看，写着not ok的可以按照他写的错误进行修改，第一次看到这么多密密麻麻的错误我很害怕，但是你读一读就知道都是最基础的英文，描述也比较清楚详细。
 
-    ![result](/assets/2021/07-how-to-publish-blog-on-wechaty/result.png)
+    ![result](/assets/2021/07-how-to-publish-blog-on-wechaty/result.webp)
 
 4. **上传到自己的分支**
 
     方法如图，按照顺序点击
 
-    ![branch](/assets/2021/07-how-to-publish-blog-on-wechaty/branch.png)
+    ![branch](/assets/2021/07-how-to-publish-blog-on-wechaty/branch.webp)
 
-    ![branch1](/assets/2021/07-how-to-publish-blog-on-wechaty/branch1.png)
+    ![branch1](/assets/2021/07-how-to-publish-blog-on-wechaty/branch1.webp)
 
-    ![branch2](/assets/2021/07-how-to-publish-blog-on-wechaty/branch2.png)
+    ![branch2](/assets/2021/07-how-to-publish-blog-on-wechaty/branch2.webp)
 
-    ![branch3](/assets/2021/07-how-to-publish-blog-on-wechaty/branch3.png)
+    ![branch3](/assets/2021/07-how-to-publish-blog-on-wechaty/branch3.webp)
 
 5. **签署CLA**
 
     很多开源社区，都会要求贡献者签署CLA，只有签署了CLA的贡献者提供的内容才能被接受。从开源社区角度看，如果没签署CLA，会有风险。
 
-    ![cla](/assets/2021/07-how-to-publish-blog-on-wechaty/cla.png)
+    ![cla](/assets/2021/07-how-to-publish-blog-on-wechaty/cla.webp)
 
 6. **等待审核**
 
     等待@wechaty的管理员审核，不久管理员就会邮件通知你结果
 
-    ![check1](/assets/2021/07-how-to-publish-blog-on-wechaty/check1.png)
+    ![check1](/assets/2021/07-how-to-publish-blog-on-wechaty/check1.webp)
 
 7. **修改**
 
     还是在这里查看
 
-    ![check2](/assets/2021/07-how-to-publish-blog-on-wechaty/check2.png)
+    ![check2](/assets/2021/07-how-to-publish-blog-on-wechaty/check2.webp)
 
     这里，找到自己刚刚上传的，可能会出现这种情况（一般本地测试过之后，不会再出现这种情况了）
 
-    ![check3](/assets/2021/07-how-to-publish-blog-on-wechaty/check3.png)
+    ![check3](/assets/2021/07-how-to-publish-blog-on-wechaty/check3.webp)
 
     还是按照他写的去修改就好
 
-    ![check4](/assets/2021/07-how-to-publish-blog-on-wechaty/check4.png)
+    ![check4](/assets/2021/07-how-to-publish-blog-on-wechaty/check4.webp)
 
     在你认为一切都改好以后，可以再本地测试一下，再上传PR（pull request）。再等待管理员审核，一切成功之后，就可以看到自己写的博客发布在wechaty了。
 
@@ -117,6 +117,6 @@ image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.png
     拉代码: git pull
     运行： make serve
     当看到命令行中出现 Server address:<http://127.0.0.1:4000>的时候，在浏览器中输入地址<http://127.0.0.1:4000>即可
-    ![preview](/assets/2021/07-how-to-publish-blog-on-wechaty/preview.png)
+    ![preview](/assets/2021/07-how-to-publish-blog-on-wechaty/preview.webp)
     当看到命令行中出现 Server address: <http://127.0.0.1:4000> 的时候，在浏览器中输入地址 <http://127.0.0.1:4000> 即可
-    ![preview](/assets/2021/07-how-to-publish-blog-on-wechaty/preview.png)
+    ![preview](/assets/2021/07-how-to-publish-blog-on-wechaty/preview.webp)
