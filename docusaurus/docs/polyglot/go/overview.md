@@ -35,5 +35,5 @@ Check out the links below for Beta releases of Go-Wechaty.
 
 ## Maintainers
 
-- [@dingdayu](https://github.com/dingdayu)
-- [@dchaofei](https://wechaty.js.org/contributors/dchaofei)
+* [@dingdayu](https://github.com/dingdayu)
+* [@dchaofei](https://wechaty.js.org/contributors/dchaofei)
