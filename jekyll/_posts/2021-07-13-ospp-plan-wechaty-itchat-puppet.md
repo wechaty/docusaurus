@@ -4,7 +4,7 @@ author: lyleshaw
 categories:
   - project
   - ospp
-image: /assets/2021/07-summer-wechaty-itchat-puppet/python-wechaty-puppet-itchat.webp
+image: /assets/2021/07-ospp-plan-wechaty-itchat-puppet/python-wechaty-puppet-itchat.webp
 tags:
   - itchat
   - puppet
