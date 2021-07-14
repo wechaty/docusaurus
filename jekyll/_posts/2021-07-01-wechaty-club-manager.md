@@ -20,6 +20,5 @@
   * 预计完成时间：9月30日
   * 计划描述：实践自设定功能，收集程序运行中出现的问题，针对问题完善程序功能，小程序整体优化升级（着重用户数据处理）。
 * 联系方式：1017137803@qq.com
-* 进度报告：[开发基于 Wechaty 实现微俱乐部会员&活动管理的微信小程序 #78 · wechaty/summer-of-code](https://github.com/wechaty)
-
-[summer-of-wechaty] [summer-2021] [club]
+* 进度报告：[开发基于 Wechaty 实现微俱乐部会员&活动管理的微信小程序 #78 · wechaty/summer-of-code](https://github.com/wechaty/summer-of-wechaty/issues/78)
+* 作者：[mangguo188] ( https://github.com/mangguo188/ )，华理学子
