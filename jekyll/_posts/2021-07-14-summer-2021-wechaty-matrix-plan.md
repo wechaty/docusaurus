@@ -4,10 +4,11 @@ author: Rhyme,zrn-fight
 categories:
   - project
   - ospp
-image: /assets/2021/07-summer-2021-wechaty-matrix-plan/wechaty-matrix-plan.png
+image: /assets/2021/07-summer-2021-wechaty-matrix-plan/wechaty-matrix-plan.webp
 tags:
   - matrix
   - summer-of-wechaty
+  - ecosystem
   - summer-2021
   - ospp
   - ospp-2021

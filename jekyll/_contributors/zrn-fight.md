@@ -1,7 +1,7 @@
 ---
 name: 张瑞宁
 site: https://github.com/zrn-fight
-avatar: /assets/contributors/zrn-fight/zrn-fight.jpg
+avatar: /assets/contributors/zrn-fight/zrn-fight.webp
 bio: 
 email: 3134191406@qq.com
 ---
