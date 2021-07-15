@@ -12,12 +12,12 @@ Python-wechaty is a Python programming language client derived from the Wechaty 
 
 * Send and receive messages.
 * Accept friendship from contact.
-* Creation of room, member invitation.
-* Can also use the Wechaty-plugin system.
-* This has a  powerful sample code library for robots.
-* It is very easy to implement.
+* Create rooms and invites members.
+* Support Wechaty-plugin system.
+* Provides powerful sample code library for robots.
+* Easy to implement.
 
-You can find more information on Python-Wechaty [here](https://github.com/wechaty/python-wechaty-getting-started).The [General Architecture Diagram](https://wechaty.js.org/docs/polyglot/diy/) illustrates on how the Python-Wechaty can be implemented on the already existing TypeScript Wechaty ecosystem.
+You can find more information on [Python-Wechaty-getting started](https://github.com/wechaty/python-wechaty-getting-started).The [General Architecture Diagram](https://wechaty.js.org/docs/polyglot/diy/) illustrates on how the Python-Wechaty can be implemented on the existing TypeScript Wechaty ecosystem.
 
 ## Getting Started
 
@@ -32,7 +32,7 @@ make bot
 
 ## Translation of TypeScript to Python
 
-As the basic ecosystem of wechaty is in TypeScript we only need to translate it to Python .There is a hundred (100) lines of code in  class named `Image` in charge of downloading the WeChat image to different sizes.
+As the basic ecosystem of Wechaty is in TypeScript, we only need to translate it to Python. There is a hundred (100) lines of code in class named Image in charge of downloading the WeChat image to different sizes.
 Below are the links to `Image` class for both TypeScript and Python for better understanding of the code and the translation.
 
 * TypeScript: <https://github.com/wechaty/wechaty/blob/master/src/user/image.ts>
@@ -40,7 +40,7 @@ Below are the links to `Image` class for both TypeScript and Python for better u
 
 ## History
 
-For more information on the Python-Wechaty releases and its history the below link can be visited.
+For more information on the Python-Wechaty releases and history, visit the link below.
 
 * [Python Wechaty Beta Released: A Simple Bot, wj-Mcat, Jun 17, 2020](https://wechaty.js.org/2020/06/17/python-wechaty-beta-released/)
 
