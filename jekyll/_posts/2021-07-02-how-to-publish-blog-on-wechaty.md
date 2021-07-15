@@ -60,6 +60,7 @@ image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.webp
 
     mac会出现讨厌的带有.DS_Store的文件，我们需要删除它。
     方法：写入 “rm -rf XXX” 的命令(XXX：要删除的文件)。例如，在我的分支里面运行npm run test之后出现了图中这样的情况，写着OK的不用看，写着not ok的可以按照他写的错误进行修改，第一次看到这么多密密麻麻的错误我很害怕，但是你读一读就知道都是最基础的英文，描述也比较清楚详细。
+    如果这个方法无效的话，可是尝试命令：sudo find / -name ".DS_Store" -depth -exec rm {} \;
 
     ![result](/assets/2021/07-how-to-publish-blog-on-wechaty/result.webp)
 
