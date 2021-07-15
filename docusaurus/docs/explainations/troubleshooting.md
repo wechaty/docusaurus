@@ -55,7 +55,7 @@ git push
 
 ### I am submitting a blog post for publication but the tests are failing
 
-We have a set of [guidelines](https://github.com/wechaty/wechaty.js.org) that you must follow when writing a blog post for publication. If the tests are failing after creating a pull request, it is most likely because you missed something or did not follow the required writing style. We recommed that you read through the [How to post a blog post](https://github.com/wechaty/wechaty.js.org) section of the [wechaty.js.org repository README](https://github.com/wechaty/wechaty.js.org) one more time.
+We have a set of [guidelines](https://github.com/wechaty/wechaty.js.org#readme) that you must follow when writing a blog post for publication. If the tests are failing after creating a pull request, it is most likely because you missed something or did not follow the required writing style. We recommed that you read through the [How to post a blog](https://github.com/wechaty/wechaty.js.org#how-to-post-a-blog) section of the [wechaty.js.org repository README](https://github.com/wechaty/wechaty.js.org#readme) one more time.
 
 You can also reach out to us on the [Wechaty Gitter channel](https://gitter.im/wechaty/wechaty) if you fail to make the tests pass. We shall be happy to help.
 
