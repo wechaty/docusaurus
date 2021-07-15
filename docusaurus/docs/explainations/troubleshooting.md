@@ -6,10 +6,22 @@ title: Troubleshooting
 
 The Troubleshooting section discusses the most common problems that you will encounter while creating a chatbot using Wechaty, contributing to Wechaty codebase, contributing to Wechaty documentation, or developing Wechaty puppet and how to fix them.
 
+<!-- 🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵 -->
+# End users or contributors
+
 ## I cannot log in with my Wechat account
 
-Wechat accounts registered after 2017 can't log in via Web API because this is a limitation. Click [this issue](https://github.com/wechaty/wechaty/issues/872) for more information.
+Wechat accounts registered after 2017 cannot log in via Web API because this is a limitation. Click [this issue](https://github.com/wechaty/wechaty/issues/872) for more information.
 However, Wechaty supports protocols other than Web API, such as Pad. Learn more about it [in this issue](https://github.com/wechaty/wechaty/issues/1296).
+
+## I am submitting a blog post for publication but the tests are failing
+
+We have a set of [guidelines](https://github.com/wechaty/wechaty.js.org) that you must follow when writing a blog post for publication. If the tests are failing after creating a pull request, it is most likely because you missed something or did not follow the required writing style. We recommed that you read through the [How to post a blog post](https://github.com/wechaty/wechaty.js.org) section of the [wechaty.js.org repository README](https://github.com/wechaty/wechaty.js.org) one more time.
+
+You can also reach out to us on the [Wechaty Gitter channel](https://gitter.im/wechaty/wechaty) if you fail to make the tests pass. We shall be happy to help.
+
+<!-- 🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵 -->
+# Developers
 
 ## Nothing happens when I dispatch an action when using Wechaty with Redux
 
@@ -17,13 +29,8 @@ Redux is a state management library you can use with Wechaty. It has the concept
 
 ## Ding dong bot displays error after scanning QR code
 
-When running the ding dong bot using [wechaty-getting-started repository](https://github.com/wechaty/wechaty-getting-started), on [Gitpod](#placeholder-link) or [Google cloud shell](#placeholder-link), the default Instant Messaging platform is [Wechat](#placeholder-link). Scanning QR codes for other Instant messaging platforms won't work unless you explicitly set the value of the`WECHATY_PUPPET` environment variable to the puppet service provider name as described in the [wechaty-getting-started README page](https://github.com/wechaty/wechaty-getting-started/issues).
+When running the ding dong bot using [wechaty-getting-started repository](https://github.com/wechaty/wechaty-getting-started), on [Gitpod](#placeholder-link) or [Google cloud shell](#placeholder-link), the default Instant Messaging platform is [Wechat](https://www.wechat.com/en/). Scanning QR codes for other Instant messaging platforms will not work unless you explicitly set the value of the`WECHATY_PUPPET` environment variable to the puppet service provider name as described in the [wechaty-getting-started README page](https://github.com/wechaty/wechaty-getting-started/issues).
 
-## I am submitting a blog post for publication but the tests are failing
-
-We have a set of [guidelines](https://github.com/wechaty/wechaty.js.org) that you must follow when writing a blog post for publication. If the tests are failing after creating a pull request, it is most likely because you missed something or did not follow the required writing style. We recommed that you read through the [How to post a blog post](https://github.com/wechaty/wechaty.js.org) section of the [wechaty.js.org repository README](https://github.com/wechaty/wechaty.js.org) one more time.
-
-You can also reach out to us on the [Wechaty Gitter channel](https://gitter.im/wechaty/wechaty) if you fail to make the tests pass. We shall be happy to help.
 
 ## I am getting `Failed to exec pre-push hook script` error when I try to push my changes to GitHub
 
@@ -33,7 +40,7 @@ If you see `Failed to exec pre-push hook script` message with `Git push succeed`
 
 ![pre-push error](../../static/img/docs/troubleshooting.webp)
 
-On the other hand, you may encounter `Failed to exec pre-push hook script` error without `Git push succeed` message. If it is your first time pushing the current branch to remote or you haven't set the current local branch to track the remote, try temporarily disabling the `pre-push` hook by prepending `NO_HOOK=1` to the `git push` command and then push with `-u` or `--set-upstream` flag so that the local branch will start tracking the remote.
+On the other hand, you may encounter `Failed to exec pre-push hook script` error without `Git push succeed` message. If it is your first time pushing the current branch to remote or you have not set the current local branch to track the remote, try temporarily disabling the `pre-push` hook by prepending `NO_HOOK=1` to the `git push` command and then push with `-u` or `--set-upstream` flag so that the local branch will start tracking the remote.
 
 ```sh
 # for Linux & Mac
