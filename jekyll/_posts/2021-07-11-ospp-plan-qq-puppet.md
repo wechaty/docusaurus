@@ -4,7 +4,7 @@ author: anaivebird
 categories:
   - project
   - ospp
-image: /assets/2021/07-summer-wechaty-qq-puppet/wechaty-qq-puppet-logo.webp
+image: /assets/2021/07-ospp-plan-qq-puppet/wechaty-qq-puppet-logo.webp
 tags:
   - qq
   - puppet
