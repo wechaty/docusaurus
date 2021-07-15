@@ -71,7 +71,7 @@ tags:
 
   - 张瑞宁：3134191406@qq.com
 
-    邵琦：shaoqichn@qq.com
+  - 邵琦：shaoqichn@qq.com
 
 - 分工合作:
 
