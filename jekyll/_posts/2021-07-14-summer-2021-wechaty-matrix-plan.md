@@ -1,6 +1,6 @@
 ---
 title: "OSPP 2021-期初报告-基于 Matrix AppService Wechaty 项目的用户、群与消息等基础功能的完善"
-author: Rhyme,zrn-fight
+author: zrn-fight
 categories:
   - project
   - ospp
