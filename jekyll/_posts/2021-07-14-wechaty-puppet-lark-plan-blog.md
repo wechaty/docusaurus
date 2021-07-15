@@ -43,7 +43,7 @@
 
   - 熟悉wechaty
     - 7.14 - 7.17
-    - 使用wecharty
+    - 使用wechaty
     - 了解飞书api
   - 更新api版本
     - 7.18 - 7.24
