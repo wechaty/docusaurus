@@ -27,7 +27,13 @@ You can also reach out to us on the [Wechaty Gitter channel](https://gitter.im/w
 
 ## I am getting `Failed to exec pre-push hook script` error when I try to push my changes to GitHub
 
-There is a [pre-push hook](https://github.com/Chatie/git-scripts#readme) that has been configured to run `npm run lint` and then `npm version patch` before `git push` for better code quality and version management. If it is your first time pushing the current branch to remote or you haven't set the current local branch to track the remote and you encounter the `Failed to exec pre-push hook script` error, try temporarily disabling the `pre-push` hook by prepending `NO_HOOK=1` to the `git push` command and then push with `-u`  or `--set-upstream` flag so that the local branch will start tracking the remote.
+There is a [pre-push hook](https://github.com/Chatie/git-scripts#readme) that has been configured to run `npm run lint` and then `npm version patch` before `git push` for better code quality and version management.
+
+If you see `Failed to exec pre-push hook script` message with `Git push succeed` message like in the image below, then you can ignore the error message. Your changes have been successfully pushed to GitHub.
+
+![pre-push error](../../static/img/docs/troubleshooting.webp)
+
+On the other hand, you may encounter `Failed to exec pre-push hook script` error without `Git push succeed` message. If it is your first time pushing the current branch to remote or you haven't set the current local branch to track the remote, try temporarily disabling the `pre-push` hook by prepending `NO_HOOK=1` to the `git push` command and then push with `-u` or `--set-upstream` flag so that the local branch will start tracking the remote.
 
 ```sh
 # for Linux & Mac
@@ -37,17 +43,21 @@ NO_HOOK=1 git push -u remote-repository branch-name
 set NO_HOOK=1  git push -u remote-repository branch-name
 ```
 
-If you used the above command and the local branch is tracking the remote, you can simply run `git push` without `NO_HOOK=1` in the subsequent push.
+You can also push with `--no-verify` flag instead of prepending `NO_HOOK=1`.
+
+```sh
+git push -u remote-repository branch-name --no-verify
+```
+
+If you used the above command successfully and the local branch is tracking the remote, you can run `git push` the next time you push your changes to GitHub without prepending `NO_HOOK=1` to `git push`. Your changes will be successfully pushed to GitHub.
 
 ```sh
 git push
 ```
 
-You can also push with `--no-verify` flag instead of prepending `NO_HOOK=1`.
+## `npm run build` or `npx docusaurus start` throws an error
 
-```sh
-git push remote-repository branch-name --no-verify
-```
+You might have used docusaurus before and therefore used certain commands for starting the development server, triggering build process and deploying docusaurus project among others. For the wechaty documentation, check the `package.json` file for all the scripts you can run.
 
 ## My problem has not been discussed here
 
