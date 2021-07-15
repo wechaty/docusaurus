@@ -20,7 +20,7 @@
 
 官网：[https://summer.iscas.ac.cn](https://summer.iscas.ac.cn/)
 
-往期回顾：https://wechaty.js.org/2020/07/20/wechaty-soc-kick-off-meeting
+往期回顾：[https://wechaty.js.org/2020/07/20/wechaty-soc-kick-off-meeting](https://wechaty.js.org/2020/07/20/wechaty-soc-kick-off-meeting)
 
 本项目 [基于开放 API 封装 Wechaty 接口下的飞书聊天机器人] 系 暑期2021 支持的开源项目。
 
@@ -52,16 +52,15 @@
     - 分两阶段完成，期间注重与导师交流
   - 连接Contact、Message、Room等类
     - 8.9 - 8.21
-  -  撰写文档，examples
-    - 8.22 - 8.28 
+  - 撰写文档，examples
+    - 8.22 - 8.28
   - 项目完善
-    - 8.29 - 9.5 
+    - 8.29 - 9.5
     - 代码重构
     - 发布npm包
 
 - 项目链接：
 
-  https://github.com/remember00000/wechaty-puppet-lark
+  [https://github.com/remember00000/wechaty-puppet-lark](https://github.com/remember00000/wechaty-puppet-lark)
 
 - 联系方式：+86 18660817606|email：2741102314@qq.com
-
