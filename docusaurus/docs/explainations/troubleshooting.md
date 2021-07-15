@@ -15,11 +15,11 @@ However, Wechaty supports protocols other than Web API, such as Pad. Learn more 
 
 ### Nothing happens when I dispatch an action when using Wechaty with Redux
 
-Redux is a state management library you can use with Wechaty. It has the concept of [immutability](#placeholder-link). Sometimes, you can dispatch an action that correctly updates the state in the redux store but your view does not update. One of the reasons for that happening is because you are mutating the existing state instead of returning the new state. Therefore never mutate state when using Redux with Wechaty even if it is tempting to do so.
+Redux is a state management library you can use with Wechaty. It has the concept of [immutability](https://redux.js.org/faq/immutable-data). Sometimes, you can dispatch an action that correctly updates the state in the redux store but your view does not update. One of the reasons for that happening is because you are mutating the existing state instead of returning the new state. Therefore never mutate state when using Redux with Wechaty even if it is tempting to do so.
 
 ### Ding dong bot displays error after scanning QR code
 
-When running the ding dong bot using [wechaty-getting-started repository](https://github.com/wechaty/wechaty-getting-started), on [Gitpod](#placeholder-link) or [Google cloud shell](#placeholder-link), the default Instant Messaging platform is [Wechat](https://www.wechat.com/en/). Scanning QR codes for other Instant messaging platforms will not work unless you explicitly set the value of the`WECHATY_PUPPET` environment variable to the puppet service provider name as described in the [wechaty-getting-started README page](https://github.com/wechaty/wechaty-getting-started/issues).
+When running the ding dong bot using [wechaty-getting-started repository](https://github.com/wechaty/wechaty-getting-started), on [Gitpod](getting-started/running-on-gitpod.md) or [Google cloud shell](getting-started/quick-start.mdx), the default Instant Messaging platform is [Wechat](https://www.wechat.com/en/). Scanning QR codes for other Instant messaging platforms will not work unless you explicitly set the value of the`WECHATY_PUPPET` environment variable to the puppet service provider name as described in the [wechaty-getting-started README page](https://github.com/wechaty/wechaty.js.org#readme).
 
 ## Wechaty documentation
 
