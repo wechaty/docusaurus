@@ -27,7 +27,7 @@ You can also reach out to us on the [Wechaty Gitter channel](https://gitter.im/w
 
 ## I am getting `Failed to exec pre-push hook script` error when I try to push my changes to GitHub
 
-There is a [pre-push hook](https://github.com/Chatie/git-scripts#readme) that has been configured to run `npm run lint` and then `npm version patch` before `git push` for better code quality and version management. If you encounter the `Failed to exec pre-push hook script` error, try pushing with `-u` flag so that the local branch will start tracking the remote. Something like:
+There is a [pre-push hook](https://github.com/Chatie/git-scripts#readme) that has been configured to run `npm run lint` and then `npm version patch` before `git push` for better code quality and version management. If you encounter the `Failed to exec pre-push hook script` error, try pushing with `-u` flag so that the local branch will start tracking the remote if you haven't set it to track the remote branch. Something like:
 
 ```sh
 git push -u remote-repository branch-name
