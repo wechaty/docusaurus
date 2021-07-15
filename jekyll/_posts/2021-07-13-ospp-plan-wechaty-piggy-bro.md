@@ -4,7 +4,7 @@ author: reikohaku
 categories:
   - project
   - ospp
-image: /assets/2021/07-summer-wechaty-piggy-bro/wechaty-logo.webp
+image: /assets/2021/07-ospp-plan-wechaty-piggy-bro/wechaty-logo.webp
 tags:
   - chat
   - summer-of-wechaty
