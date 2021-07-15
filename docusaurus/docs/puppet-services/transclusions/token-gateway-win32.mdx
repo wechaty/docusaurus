@@ -1,0 +1,49 @@
+```sh
+#
+# Huan(202006): To be fixed for Win32
+#
+
+# Step 1
+docker pull wechaty/wechaty
+
+# Step 2
+#   here we are using wechaty-puppet-wechat for example
+#   replace it to fit your needs
+set WECHATY_PUPPET=wechaty-puppet-wechat
+
+# Step 3
+set WECHATY_TOKEN=$(curl -s https://www.uuidgenerator.net/api/version4)
+echo "WECHATY_TOKEN=%WECHATY_TOKEN%"
+
+# Step 4
+set WECHATY_PUPPET_SERVER_PORT=8788
+
+# Step 5
+set WECHATY_LOG="verbose"
+
+# Step 6
+docker run \
+  -d \
+  -ti \
+  --name wechaty_puppet_service_token_gateway \
+  --rm \
+  --privileged \
+  --network=host \
+  -e WECHATY_LOG \
+  -e WECHATY_PUPPET \
+  -e WECHATY_PUPPET_SERVER_PORT \
+  -e WECHATY_TOKEN \
+  wechaty/wechaty
+
+# Step 7
+set HTTP_CODE=$(curl -s -o /dev/null -w '%{http_code}' https://api.chatie.io/v0/hosties/${WECHATY_TOKEN})
+if [ "$HTTP_CODE" == 200 ]; then
+  echo "Wechaty Puppet Service TOKEN ${WECHATY_TOKEN} online status:"
+  curl https://api.chatie.io/v0/hosties/${WECHATY_TOKEN}
+  echo
+else
+  >&2 echo "ERROR: Wechaty Puppet Service TOKEN ${WECHATY_TOKEN} out of service"
+fi
+
+# Step 8 🎉
+```

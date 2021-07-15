@@ -1,13 +1,13 @@
 ---
-title: 'Hello Wechaty GSoD’21 Technical Writers!'
+title: "Hello Wechaty GSoD’21 Technical Writers!"
 author: huan
 categories:
   - gsod
   - announcement
-  - milestone
 tags:
   - google
   - gsod
+  - gsod-2021
   - event
   - 2021
   - zoom
@@ -60,24 +60,7 @@ for the Wechaty GSoD'21 program:
 As well as we will have two volunteer for helping mentors
 to manage the project and make sure everything is on track.
 
-## The Zoom Meeting
-
-We have great conversations with our GSoD'21 participants,
-and after the deadline of receiving proposals April 30,
-we organized a zoom meeting with all our technical writers.
-
-In this meeting,
-all the GSoD'21 participants introduceed theirselves
-and presented their proposals
-for the projects that they applied.
-[Huan](https://wechaty.js.org/contributors/huan/)
-and [Rui](https://wechaty.js.org/contributors/rui)
-introduced the Wechaty project and community to the writer team.
-
-The following YouTube video is the 3 hours recording
-of our great kick-off meeting of Wechaty GSoD'21 program:
-
-{% include iframe.html src="https://www.youtube.com/watch?v=hTkM_XPpFfU" %}
+![Google Season of Docs 2021: Wechaty GSoD'21 Group Photo](/assets/2021/05-gsod-2021-selected-technical-writers/group-photo.webp)
 
 ### Attendees
 
@@ -104,7 +87,24 @@ There are total 20 attendees on our meeting. They are:
 1. Arnab Saha,GSod’21 participant(landing pages)
 1. Rajiv Ranjan Singh, Interested in Volunteering for GSoD '21, IST (UTC +5:30)
 
-![Google Season of Docs 2021: Wechaty GSoD'21 Group Photo](/assets/2021/05-gsod-2021-selected-technical-writers/group-photo.webp)
+## The Zoom Meeting
+
+We have great conversations with our GSoD'21 participants,
+and after the deadline of receiving proposals April 30,
+we organized a zoom meeting with all our technical writers.
+
+In this meeting,
+all the GSoD'21 participants introduceed theirselves
+and presented their proposals
+for the projects that they applied.
+[Huan](https://wechaty.js.org/contributors/huan/)
+and [Rui](https://wechaty.js.org/contributors/rui)
+introduced the Wechaty project and community to the writer team.
+
+The following YouTube video is the 3 hours recording
+of our great kick-off meeting of Wechaty GSoD'21 program:
+
+{% include iframe.html src="https://www.youtube.com/watch?v=hTkM_XPpFfU" %}
 
 ### Agendas
 
@@ -336,7 +336,7 @@ The base grants will be the 80% of the each grant.
 The performance grants will be the 20% of the each grant.
 
 It will be voted by the writer themselves (who is in the same team)
-and the vollunteers after the project has been finished.
+with the volunteers after the project has been finished.
 The rule is that everyone has 10 points
 which can be used to vote for the performance grant.
 
@@ -369,7 +369,7 @@ In our practice we need to add C and D which is our volunteers, that's it!
 
 The "Thank-you bonus" is for those GSoD'21 technical writers
 who has not been selected in the year 2021
-and meet one of the following requirements:
+and meet the following requirements:
 
 1. has submitted qualified proposal before the deadline (May 1st)
 1. has submitted PR for improving the Wechaty docs and has been merged.
