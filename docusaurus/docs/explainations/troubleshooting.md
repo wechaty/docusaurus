@@ -27,24 +27,23 @@ You can also reach out to us on the [Wechaty Gitter channel](https://gitter.im/w
 
 ## I am getting `Failed to exec pre-push hook script` error when I try to push my changes to GitHub
 
-There is a [pre-push hook](https://github.com/Chatie/git-scripts#readme) that has been configured to run `npm run lint` and then `npm version patch` before `git push` for better code quality and version management. If you encounter the `Failed to exec pre-push hook script` error, try pushing with `-u` flag so that the local branch will start tracking the remote if you haven't set it to track the remote branch. Something like:
-
-```sh
-git push -u remote-repository branch-name
-```
-
-If the above doesn't work, you can temporarily disable the `pre-push` hook by prepending `NO_HOOK=1` to the `git push` command.
+There is a [pre-push hook](https://github.com/Chatie/git-scripts#readme) that has been configured to run `npm run lint` and then `npm version patch` before `git push` for better code quality and version management. If it is your first time pushing the current branch to remote or you haven't set the current local branch to track the remote and you encounter the `Failed to exec pre-push hook script` error, try temporarily disabling the `pre-push` hook by prepending `NO_HOOK=1` to the `git push` command and then push with `-u` flag so that the local branch will start tracking the remote.
 
 ```sh
 # for Linux & Mac
-NO_HOOK=1 git push
+NO_HOOK=1 git push -u remote-repository branch-name
 
 # for Windows
-
-set NO_HOOK=1 git push
+set NO_HOOK=1  git push -u remote-repository branch-name
 ```
 
-You can also push with `--no-verify` flag.
+If you used the above command and the local branch is tracking the remote, you can simply run `git push` without `NO_HOOK=1` in the subsequent push.
+
+```sh
+git push
+```
+
+You can also push with `--no-verify` flag instead of prepending `NO_HOOK=1`.
 
 ```sh
 git push remote-repository branch-name --no-verify
