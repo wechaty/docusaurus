@@ -19,6 +19,37 @@ Redux is a state management library you can use with Wechaty. It has the concept
 
 When running the ding dong bot using [wechaty-getting-started repository](https://github.com/wechaty/wechaty-getting-started), on [Gitpod](#placeholder-link) or [Google cloud shell](#placeholder-link), the default Instant Messaging platform is [Wechat](#placeholder-link). Scanning QR codes for other Instant messaging platforms won't work unless you explicitly set the value of the`WECHATY_PUPPET` environment variable to the puppet service provider name as described in the [wechaty-getting-started README page](https://github.com/wechaty/wechaty-getting-started/issues).
 
+## I am submitting a blog post for publication but the tests are failing
+
+We have a set of [guidelines](https://github.com/wechaty/wechaty.js.org) that you must follow when writing a blog post for publication. If the tests are failing after creating a pull request, it is most likely because you missed something or did not follow the required writing style. We recommed that you read through the [How to post a blog post](https://github.com/wechaty/wechaty.js.org) section of the [wechaty.js.org repository README](https://github.com/wechaty/wechaty.js.org) one more time.
+
+You can also reach out to us on the [Wechaty Gitter channel](https://gitter.im/wechaty/wechaty) if you fail to make the tests pass. We shall be happy to help.
+
+## I am getting `Failed to exec pre-push hook script` error when I try to push my changes to GitHub
+
+There is a [pre-push hook](https://github.com/Chatie/git-scripts#readme) that has been configured to run `npm run lint` and then `npm version patch` before `git push` for better code quality and version management. If you encounter the `Failed to exec pre-push hook script` error, try pushing with `-u` flag so that the local branch will start tracking the remote. Something like:
+
+```sh
+git push -u remote-repository branch-name
+```
+
+If the above doesn't work, you can temporarily disable the `pre-push` hook by prepending `NO_HOOK=1` to the `git push` command.
+
+```sh
+# for Linux & Mac
+NO_HOOK=1 git push
+
+# for Windows
+
+set NO_HOOK=1 git push
+```
+
+You can also push with `--no-verify` flag.
+
+```sh
+git push remote-repository branch-name --no-verify
+```
+
 ## My problem has not been discussed here
 
 If your problem is not covered here, you can chat with us on [Wechaty Gitter](https://gitter.im/wechaty/wechaty) or you may create an issue on [Wechaty issues](https://github.com/wechaty/wechaty/issues). Please update this page once you have found a solution. Someone else might face the same problem in the future.
