@@ -10,7 +10,7 @@ Scala Wechaty is a Scala programming client derived from the Wechaty ecosystem. 
 
 ## Features of Scala-Wechaty
 
-* Stable interaction with back-end GRPC, continuous and stable operation for many days.
+* Stable interaction with back-end gRPC, continuous and stable operation.
 * The front end implements some functions of `Contact` and `Message`.
 
 ## Getting Started
