@@ -41,7 +41,7 @@ For better understanding we have classified the bots under three categories taki
 
 - [World's Shortest Chatbot](examples/basic/the-worlds-shortest-chatbot-code-in-6-lines.md): The very first wechaty example showcasing how easy it is to get started
 - [Ding Dong bot](examples/basic/ding-dong-bot.md): Practical example demonstrating how to do message handling
-- [Contact bot](examples/basic/contact-bot.md): List all contacts by Wechat ID & Name
+- [Contact bot](examples/basic/contact-bot.mdx): List all contacts by Wechat ID & Name
 
 ### Advanced
 
