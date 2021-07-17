@@ -25,7 +25,7 @@ Below is an architectural diagram of Wechaty Puppet.
 | Puppet Name     | Description                                                                                                                                                                                           |
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | PuppetPuppeteer | A web solution to connect WeChat, Wechaty init  is implemented by web WeChat, which injects JavaScript code into chrome.                                                                                         |
-| PuppetMock      | A mock function to connect WeChat, not a real implement, for testing other connectors to connect with Wechaty. This is used for further to connect other solutions, such as iPad, Xposed, iOS and windows client |
+| PuppetMock      | A mock function to connect WeChat, not a real implementation, for testing other connectors to connect with Wechaty. This is used to further to connect other solutions, such as iPad, Xposed, iOS and windows client, |
 | PuppetPadLocal  | An iPad solution to connect WeChat.                                                                                                                                                                            |
 | PuppetService   | It is a gRPC solution.                                                                                                                                                                                  |
 
@@ -73,15 +73,15 @@ The [memory card](https://github.com/huan/memory-card) is a module designed to s
 4. memory card will be saved to file or network storage for future reuse.
 
 By saving the user login session secret data to memory card, the Wechaty system can save the state to local, so that it can make the puppet service provider stateless.
-Currently neither of the Donut, WXWork, Rock, PadLocal have support to this stateless feature, nor the Wechaty system is ready for it.
+Currently neither of the Donut, WXWork, Rock, PadLocal have support for this stateless feature, nor the Wechaty system is ready for it.
 
 ## Event Order
 
 The order of events before the bot starts is very important and this section explains it in a a detailed manner:
 
 1. When you first start the bot, the `login` event is first  generated.
-2. However, the Wechaty system needs to load the contact payload of the `userSelf` before it emits the `login` event because the login event of Wechaty needs to take a `userSelf` instance..So there will be some delay before the Wechaty emit the `login` event after it received the `login` event from its puppet.
-3. Then the `ready-ed` event is generated.The ievent is just before the `ready` event.
+2. However, the Wechaty system needs to load the contact payload of the `userSelf` before it emits the `login` event because the login event of Wechaty needs to take a `userSelf` instance.So there will be some delay before the Wechaty emit the `login` event after it received the `login` event from its puppet.
+3. Then the `ready-ed` event is generated.The event is generated just before the `ready` event.
 4. Then lastly the `ready` event is generated.
 
 For a more robust Wechaty system, we can consider saving the `ready` event if the `login` event is not emitted in Wechaty and when we emit the `login` event in Wechaty, we can check if the puppet has already `ready-ed`, and if so, it can emit the `ready` event right after the `login` event.[See](https://github.com/wechaty/puppet-services/issues/31)
@@ -141,7 +141,7 @@ Here's an [example](https://github.com/wechaty/wechaty-puppet-puppeteer/blob/07f
 
 ### Wechaty Puppet Message Processing Flow
 
-1. The Webhook get called by the Tencent Server.
+1. The Webhook gets called by the Tencent Server.
 2. The message **event** will be propagated from the `Webhook` class to the `OfficialAccount` class:
 
     <https://github.com/wechaty/wechaty-puppet-official-account/blob/381ffb820fcc63e4b89a99c433b696e790e06b7a/src/official-account/official-account.ts#L116-L119>
