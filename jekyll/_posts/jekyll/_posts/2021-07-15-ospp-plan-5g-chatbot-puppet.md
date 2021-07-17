@@ -4,17 +4,16 @@ author: sqcn
 categories:
   - project
   - ospp
-image: /assets/2021/07-5g-chatbot-plan/5g-chatbot-ospp.png
+image: /assets/2021/07-ospp-plan-5g-chatbot-puppet/5g-chatbot-ospp.webp
 tags:
   - 5g
   - chatbot
+  - ecosystem
   - summer-of-wechaty
   - summer-2021
   - ospp
   - ospp-2021
   - plan
-
-
 ---
 
 > Author: [@zrn-fight](https://github.com/zrn-fight)[@Sochy](https://github.com/sqcn)
@@ -35,18 +34,18 @@ tags:
 
 - 模块列表 
 
-  - 使用5g Chatbot接口，把收发消息测通 
-  - 使用 https://github.com/wechaty/wechaty-puppet-official-account 项目作为模版，将其中的微信公众平台调用全部封装为RCS模块的调用 
-  - 发布 Git Repo wechaty-puppet-5g-msg，实现文本消息的发送和接收 
+  - 使用5g Chatbot接口，把收发消息测通
+  - 使用 https://github.com/wechaty/wechaty-puppet-official-account 项目作为模版，将其中的微信公众平台调用全部封装为RCS模块的调用
+  - 发布 Git Repo wechaty-puppet-5g-msg，实现文本消息的发送和接收
   - 进行测试，完善项目文档
   - 配置 GitHub Actions 实现自动化测试（可选）
 
 - 计划安排：
 
-  - 使用5g Chatbot接口，把收发消息测通 
-    - 7/12 - 7/18 
+  - 使用5g Chatbot接口，把收发消息测通
+    - 7/12 - 7/18
     - 配置好服务器，测通相关接口
-  - 使用 https://github.com/wechaty/wechaty-puppet-official-account 项目作为模版，将其中的微信公众平台调用全部封装为RCS模块的调用 
+  - 使用 https://github.com/wechaty/wechaty-puppet-official-account 项目作为模版，将其中的微信公众平台调用全部封装为RCS模块的调用
     - 7/19 - 8/10
     - 学习现有源码，学习RCS的相关知识。
     - 接入wechaty，进行代码整合，提高代码质量。
