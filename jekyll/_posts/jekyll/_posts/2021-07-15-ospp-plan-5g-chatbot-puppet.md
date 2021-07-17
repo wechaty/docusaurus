@@ -45,7 +45,7 @@ tags:
 
   - 使用5g Chatbot接口，把收发消息测通 
     - 7/12 - 7/18 
-    - 配置好服务器，测通相关接口 
+    - 配置好服务器，测通相关接口
   - 使用 https://github.com/wechaty/wechaty-puppet-official-account 项目作为模版，将其中的微信公众平台调用全部封装为RCS模块的调用 
     - 7/19 - 8/10
     - 学习现有源码，学习RCS的相关知识。
