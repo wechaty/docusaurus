@@ -2,7 +2,7 @@
 name: Tianhui Ma (马田慧)
 site: https://github.com/remember00000
 bio: SDUCS在读
-avatar: /assets/contributors/remember00000/avatar.jpg
+avatar: /assets/contributors/remember00000/avatar.webp
 email: tianhuima01@gmail.com
 ---
 

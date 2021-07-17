@@ -8,7 +8,7 @@
   - lark
   - summer-of-wechaty
   - ecosystem
- image: /assets/2021/07-wechaty-puppet-lark-plan-blog/wechaty-lark.png
+ image: /assets/2021/07-wechaty-puppet-lark-plan-blog/wechaty-lark.webp
 ---
 
 > Author: [@remember00000](https://github.com/remember00000)
