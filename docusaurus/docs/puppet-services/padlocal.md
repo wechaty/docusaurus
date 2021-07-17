@@ -5,22 +5,15 @@ sidebar_label: PadLocal
 
 [![Wechaty Puppet Service PadLocal](https://img.shields.io/badge/Service-PadLocal-blue)](padlocal.md)
 
-- Repo: <https://github.com/padlocal/wechaty-puppet-padlocal>
-- Provider: [PadLocal](https://github.com/padlocal)
-
 ## How to buy(apply)
 
-👉🏻 [pad-local.com](http://pad-local.com/) 👈🏻, get **FREE** trail token for **7** days.
-
-A preliminary study of Python-wechaty & wechaty-puppet-padlocal
+Go to [pad-local.com](http://pad-local.com/) to avail a **FREE** trail token for **7** days.
 
 ## Running wechaty-puppet-padlocal on cloud
 
 ### Precautions
 
-1. ```wechaty-puppet-padlocal``` currently can only use the domestic public network IP - Fixed at 2021-03-16
-2. Newly registered Wechat account will not be able to log in- Fixed at 2021-03-10
-3. Update cmd in step1 docker run.
+1. Update cmd in step1 docker run.
 
 ### Test Date
 
@@ -35,7 +28,7 @@ A preliminary study of Python-wechaty & wechaty-puppet-padlocal
 
 ## Architecture
 
-![Architecture](../../static/img/docs/references/padlocal/architecture.png)
+![Architecture](../../static/img/docs/references/padlocal/architecture.webp)
 
 ### Steps
 
@@ -48,7 +41,7 @@ A preliminary study of Python-wechaty & wechaty-puppet-padlocal
 
 You will need a domestic public network IP+Token (please register with the administrator) to make wechaty-puppet take effect in the virtual machine part. For the trial or free plan, you can choose Alibaba Cloud or Huawei Cloud or GCP. It is a pity that Google does not have a domestic IP. , Or you can also play gcp's k8s by the way, suggest that you still use domestic resources.
 
-![Step 1](../../static/img/docs/references/padlocal/step-1.png)
+![Step 1](../../static/img/docs/references/padlocal/step-1.webp)
 
 Just register a ubuntu20.04, pay attention to the security group to release port 8788.
 Run the following command in ubuntu cmdline.
@@ -80,7 +73,7 @@ netstat -ntlp
 docker container ls
 ```
 
-![Step 1-terminal](../../static/img/docs/references/padlocal/step-1-terminal.png)
+![Step 1-terminal](../../static/img/docs/references/padlocal/step-1-terminal.webp)
 
 You can telnet the virtual machine IP: 8788, simple debugging will not work.
 (Optional) You can change docker run to docker-compose by running, and the virtual machine can grow up automatically after it crashes.
@@ -115,7 +108,7 @@ Just wait for the QR code to appear
 
 ### QRcode
 
-![QRCode](../../static/img/docs/references/padlocal/qrcode.png)
+![QRCode](../../static/img/docs/references/padlocal/qrcode.webp)
 
 ### Step 4 : WeChat scan code
 
@@ -142,6 +135,8 @@ Read more blogs with the `padlocal` tag at <https://wechaty.js.org/tags.html#pad
 
 ## More Info
 
+- Repo: <https://github.com/padlocal/wechaty-puppet-padlocal>
+- Provider: [PadLocal](https://github.com/padlocal)
 - Support & Feedback: <https://github.com/padlocal/wechaty-puppet-padlocal/issues>
 - Term of Service (ToS): To-be-added
 - Privacy Policy: To-be-added

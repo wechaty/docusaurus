@@ -5,7 +5,7 @@ sidebar_label: WXWork
 
 [![Wechaty Puppet Service WXWork](https://img.shields.io/badge/Service-WXWork-blue)](wxwork.md)
 
-```wechaty-puppet-wxwork``` is a **WeCom**(original WeChat Work) solution. Currently it supports following features:
+```wechaty-puppet-wxwork``` is a **WeCom**(original WeChat Work) solution. Currently it supports the following features:
 
 - Send / Receive Text, Image, Video, File, UrlLink, MiniProgram messages
 - Get Corporation and Individual contacts
@@ -13,7 +13,7 @@ sidebar_label: WXWork
 - Modify alias, phone, corporation and description on a contact
 - Add / Remove members to / from room
 - Modify room topic
-- Room events(join, leave, topic)
+- Room events (join, leave, topic)
 
 ## Github repository
 
@@ -26,7 +26,7 @@ Register via WeCom at [jukebox](https://qiwei.juzibot.com/user/login?isWechaty=t
 
 ## Known Issues
 
-1. Change company of the account will cause unknown bug to wxwork [wechaty/puppet-services#100](https://github.com/wechaty/puppet-services/issues/100#issuecomment-803709545)
+1. Change company of the account will cause unknown bug to wxwork. See [wechaty/puppet-services#100](https://github.com/wechaty/puppet-services/issues/100#issuecomment-803709545)
 
 ## Questions
 
@@ -45,10 +45,7 @@ Register via WeCom at [jukebox](https://qiwei.juzibot.com/user/login?isWechaty=t
 ## More Info
 
 - Support & Feedback: <https://github.com/juzibot/wxwork-tester/issues>
-- Term of Service (ToS): To-be-added
-- Privacy Policy: To-be-added
-- Service Level Agreement (SLA): To-be-added
 
 ## Blogs
 
-Read blogs with the `wxwork` tag at <https://wechaty.js.org/tags.html#wxwork>
+Check out blogs with the `wxwork` tag at <https://wechaty.js.org/tags.html#wxwork>
