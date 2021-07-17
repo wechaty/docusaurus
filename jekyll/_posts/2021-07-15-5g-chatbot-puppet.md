@@ -1,6 +1,6 @@
 ---
 title: "开发支持电信运营商5G Chatbot/RCS的 Wechaty接入Puppet模块"
-author: zrn-fight,Sochy
+author: sqcn
 categories:
   - project
   - ospp
