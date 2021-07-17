@@ -1,6 +1,5 @@
 ---
-Chinese Name: 邵琦
-English Name: Sochy
+Name: 邵琦
 site: https://github.com/sqcn
 bio: Committer of PaddlePaddle. NLP & Chatbot Researcher, an undergraduate student at Harbin Engineering University of Automation.
 email: shaoqichn@qq.com
