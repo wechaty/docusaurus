@@ -6,7 +6,7 @@ sidebar_label: 'Puppet Services: FAQ'
 
 ## What is _"Wechaty Puppet"_, _"Wechaty Puppet Provider"_, _"Wechaty Puppet Service"_?
 
-We have a great blog post to explain those term in detail. Please read: [Introducing Wechaty Puppet Service](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/)
+We have a great blog post to explain those terms in detail. Please read: [Introducing Wechaty Puppet Service](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/)
 
 ## How To Become a Wechaty Puppet Service Provider
 

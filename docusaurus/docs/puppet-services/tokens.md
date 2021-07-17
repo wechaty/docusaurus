@@ -52,7 +52,7 @@ Paid TOKEN is the easiest one to getting started with the Wechaty Puppet Service
 
 Select a Wechaty Puppet Service from the list below and follow the steps in its page, then contact the Puppet Service Provider to buy one.
 
-If you want to buy more than 10 at a time, or you need consulting servcies, please contact us in Gitter room at <https://gitter.im/wechaty/wechaty>.
+If you want to buy more than 10 at a time, or you need consulting services, please contact us in Gitter room at <https://gitter.im/wechaty/wechaty>.
 
 ## Wechaty Puppet Services
 
