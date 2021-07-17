@@ -1,6 +1,6 @@
 ---
 title: "开发支持电信运营商5G Chatbot/RCS的 Wechaty接入Puppet模块"
-author: zrn-fight,Sochy
+author: sqcn
 categories:
   - project
   - ospp
@@ -70,9 +70,8 @@ tags:
 - 联系方式：
 
   - 张瑞宁：3134191406@qq.com
-
-    邵琦：shaoqichn@qq.com
-
+  - 邵琦：shaoqichn@qq.com
+  
 - 分工合作:
 
   - 分工：张瑞宁同学需主要负责代码实现和gitlab项目维护，邵琦主要同学负责代码审查和gitlab项目维护。共同撰写中英文文档。
