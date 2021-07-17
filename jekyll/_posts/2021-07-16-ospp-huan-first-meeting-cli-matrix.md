@@ -13,6 +13,13 @@ tags:
   - meeting
 ---
 
+## Attendees
+
+1. Huan, mentor of [wechaty/summer-of-wechaty#80](https://github.com/wechaty/summer-of-wechaty/issues/80) and [wechaty/summer-of-wechaty#59](https://github.com/wechaty/summer-of-wechaty/issues/59)
+1. 刘靖，student of blessed-based wechaty-cli, <liuchinggg@gmail.com>
+1. 林宇靖, student applying for Matrix AppService Wechaty, <545641826@qq.com>, +8
+1. 张瑞宁, student applying for Matrix AppService Wechaty, <3134191406@qq.com>
+
 ## Meeting zoom recording playback
 
 {% include iframe.html src="https://youtu.be/waFht2BeKb0" %}
@@ -25,13 +32,6 @@ tags:
 1. 54:00 Group photo
 
 > [Meeting Notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.c7zo1ifjarho)
-
-## Attendees
-
-1. Huan, mentor of [wechaty/summer-of-wechaty#80](https://github.com/wechaty/summer-of-wechaty/issues/80) and [wechaty/summer-of-wechaty#59](https://github.com/wechaty/summer-of-wechaty/issues/59)
-1. 刘靖，student of blessed-based wechaty-cli, <liuchinggg@gmail.com>
-1. 林宇靖, student applying for Matrix AppService Wechaty, <545641826@qq.com>, +8
-1. 张瑞宁, student applying for Matrix AppService Wechaty, <3134191406@qq.com>
 
 ## 关于开源软件供应链点亮计划：暑期2021
 
