@@ -1,6 +1,7 @@
 ---
 name: 邵琦
 site: https://github.com/sqcn
+avatar: /assets/contributors/sqcn/avatar.webp
 bio: Committer of PaddlePaddle. NLP & Chatbot Researcher, an undergraduate student at Harbin Engineering University of Automation.
 email: shaoqichn@qq.com
 twitter: https://twitter.com/Shao_Qi_cn
