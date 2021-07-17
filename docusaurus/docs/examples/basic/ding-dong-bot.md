@@ -5,7 +5,7 @@ title: Ding Dong Bot
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-blue.svg)](https://www.typescriptlang.org/)
 
-Wechaty **Ding Dong bot** is a simple bot which replies with a `ding` whenever it recieves a `dong`.
+Wechaty **Ding Dong bot** is a simple bot which replies with a `dong` whenever it recieves a `ding`.
 
 ## Try out the bot
 
