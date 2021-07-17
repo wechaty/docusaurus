@@ -32,10 +32,10 @@ tags:
 
 - 学生：张瑞宁,邵琦
 
-- 模块列表 
+- 模块列表
 
   - 使用5g Chatbot接口，把收发消息测通
-  - 使用 https://github.com/wechaty/wechaty-puppet-official-account 项目作为模版，将其中的微信公众平台调用全部封装为RCS模块的调用
+  - 使用 <https://github.com/wechaty/wechaty-puppet-official-account> 项目作为模版，将其中的微信公众平台调用全部封装为RCS模块的调用
   - 发布 Git Repo wechaty-puppet-5g-msg，实现文本消息的发送和接收
   - 进行测试，完善项目文档
   - 配置 GitHub Actions 实现自动化测试（可选）
@@ -45,7 +45,7 @@ tags:
   - 使用5g Chatbot接口，把收发消息测通
     - 7/12 - 7/18
     - 配置好服务器，测通相关接口
-  - 使用 https://github.com/wechaty/wechaty-puppet-official-account 项目作为模版，将其中的微信公众平台调用全部封装为RCS模块的调用
+  - 使用 <https://github.com/wechaty/wechaty-puppet-official-account> 项目作为模版，将其中的微信公众平台调用全部封装为RCS模块的调用
     - 7/19 - 8/10
     - 学习现有源码，学习RCS的相关知识。
     - 接入wechaty，进行代码整合，提高代码质量。
@@ -69,14 +69,8 @@ tags:
 - 联系方式：
 
   - 张瑞宁：3134191406@qq.com
-<<<<<<< HEAD
-  - 邵琦：shaoqichn@qq.com
-  
-=======
-
   - 邵琦：shaoqichn@qq.com
 
->>>>>>> 17db503917fabfe176162ff74fde9dc0bbb07f1b
 - 分工合作:
 
   - 分工：张瑞宁同学需主要负责代码实现和gitlab项目维护，邵琦主要同学负责代码审查和gitlab项目维护。共同撰写中英文文档。
