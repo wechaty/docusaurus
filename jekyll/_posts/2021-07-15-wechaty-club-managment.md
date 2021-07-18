@@ -4,6 +4,7 @@ author: mangguo188
 categories:
   - project
   - ospp
+image:/assets/contributors/mangguo188/avatar.png
 tags:
   - summer-of-wechaty
   - summer-2021
