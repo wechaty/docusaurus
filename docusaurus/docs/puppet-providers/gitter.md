@@ -10,7 +10,7 @@ sidebar_label: Gitter
 [![NPM Version](https://badge.fury.io/js/wechaty-puppet-gitter.svg)](https://badge.fury.io/js/wechaty-puppet-gitter)
 [![npm (tag)](https://img.shields.io/npm/v/wechaty-puppet-gitter/next.svg)](https://www.npmjs.com/package/wechaty-puppet-gitter?activeTab=versions)
 
-Gitter support for wechaty makes it easy to build a chatbot on Gitter.im, and sync the room between the Gitter.im and WeChat! This will be useful to you if you want to connect your Gitter room to WeChat room and sync messages between them. 
+Gitter support for wechaty makes it easy to build a chatbot on Gitter.im, and sync the room between the Gitter.im and WeChat! This will be useful to you if you want to connect your Gitter room to WeChat room and sync messages between them.
 
 To support Gitter.im, the core component is the NPM module wechaty-puppet-gitter, which brings the power of Gitter.im to Wechaty.
 
@@ -64,7 +64,7 @@ npm start
 </TabItem>
 </Tabs>
 
-To get to know the details about how it works, please feel free to read the source code of our chatbot, it has been open-sourced at https://github.com/wechaty/friday/, and here are some entries that good to start with:
+To get to know the details about how it works, please feel free to read the source code of our chatbot, it has been open-sourced [here](https://github.com/wechaty/friday/), and here are some entries that good to start with:
 
 - [Create a Wechaty instance with Gitter Puppet](https://github.com/wechaty/friday/blob/c73f0647f7a03c5e10ee5745fc4bc2d818456e85/src/bots/gitter/bot.ts#L14-L21)
 - [Create a Wechaty instance with Donut Puppet](https://github.com/wechaty/friday/blob/c73f0647f7a03c5e10ee5745fc4bc2d818456e85/src/friday/bot.ts#L23-L26)
@@ -125,7 +125,6 @@ main().catch(console.error)
 ## Blogs
 
 - [Gitter.im is supported by Wechaty now, Huan, Aug 23, 2020](https://wechaty.js.org/2020/08/23/wechaty-puppet-gitter/)
-
 
 ## Maintainers
 
