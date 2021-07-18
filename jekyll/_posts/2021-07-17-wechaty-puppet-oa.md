@@ -43,7 +43,7 @@ tags:
 - 架设 [wechaty-puppet-official-account](https://github.com/wechaty/wechaty-puppet-official-account/) 并可以进行微信公众账号的正常文本消息收发
 
 - 对 Wechaty Puppet Official Account 的功能进行试用，分析其当前的功能，然后列出需要完善的功能列表，以及欠缺的功能列表，并作出开发计划。
- 
+
 在初期开发中，能够实现图片消息的接收和发送，即可完成原型验证 POC。
 
 ## 项目开发时间计划
