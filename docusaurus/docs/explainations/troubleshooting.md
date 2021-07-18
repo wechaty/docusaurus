@@ -19,7 +19,7 @@ Redux is a state management library you can use with Wechaty. It has the concept
 
 ### Ding dong bot displays error after scanning QR code
 
-When running the ding dong bot using [wechaty-getting-started repository](https://github.com/wechaty/wechaty-getting-started), on [Gitpod](#placeholder-link) or [Google cloud shell](getting-started/quick-start.mdx), the default Instant Messaging platform is [Wechat](https://www.wechat.com/en/). Scanning QR codes for other Instant messaging platforms will not work unless you explicitly set the value of the`WECHATY_PUPPET` environment variable to the puppet service provider name as described in the [wechaty-getting-started README page](https://github.com/wechaty/wechaty.js.org#readme).
+When running the ding dong bot using [wechaty-getting-started repository](https://github.com/wechaty/wechaty-getting-started), on [Gitpod](quick-start/running-on-gitpod.md) or [Google cloud shell](quick-start/running-on-google-cloud-shell.md), the default Instant Messaging platform is [Wechat](https://www.wechat.com/en/). Scanning QR codes for other Instant messaging platforms will not work unless you explicitly set the value of the`WECHATY_PUPPET` environment variable to the puppet service provider name as described in the [wechaty-getting-started README page](https://github.com/wechaty/wechaty.js.org#readme).
 
 ## Wechaty documentation
 
