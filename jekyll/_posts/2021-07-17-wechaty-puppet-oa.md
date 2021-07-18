@@ -4,11 +4,12 @@ author: zzzyer
 categories:
   - project
   - ospp
-image: /assets/2021/07-summer-wechaty-puppet-oa/wechaty-puppet-official-account.png
+image: /assets/2021/07-summer-wechaty-puppet-oa/wechaty-puppet-official-account.webp
 tags:
   - puppet
   - summer-of-wechaty
   - summer-2021
+  - ecosystem
   - ospp
   - ospp-2021
   - plan
