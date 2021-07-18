@@ -33,25 +33,41 @@ tags:
 - 模块列表
   - [ ] 文本消息收发模块
   - [ ] 图片消息收发模块
-  - [ ] 推送事件 
+  - [ ] 推送事件
 - 项目链接：[https://github.com/wechaty/summer-of-wechaty/issues/82](https://github.com/wechaty/summer-of-wechaty/issues/82)
 
 ## 需求介绍
- - 申请开发专用测试公众账号 
- - 架设 [wechaty-puppet-official-account](https://github.com/wechaty/wechaty-puppet-official-account/) 并可以进行微信公众账号的正常文本消息收发 
- - 对 Wechaty Puppet Official Account 的功能进行试用，分析其当前的功能，然后列出需要完善的功能列表，以及欠缺的功能列表，并作出开发计划。 
+
+- 申请开发专用测试公众账号
+
+- 架设 [wechaty-puppet-official-account](https://github.com/wechaty/wechaty-puppet-official-account/) 并可以进行微信公众账号的正常文本消息收发
+
+- 对 Wechaty Puppet Official Account 的功能进行试用，分析其当前的功能，然后列出需要完善的功能列表，以及欠缺的功能列表，并作出开发计划。
  
- 在初期开发中，能够实现图片消息的接收和发送，即可完成原型验证 POC 。
+在初期开发中，能够实现图片消息的接收和发送，即可完成原型验证 POC。
+
 ## 项目开发时间计划
+
 ### 时间：2021.07.01-2021.07.21
+
 - 申请微信公众平台测试账号
+
 - 阅读Wechaty Puppet Official Account代码
+
 - 成功运行Wechaty Puppet Official Account相关样例（ding-dong-bot）
+
 - 与导师讨论得出要开发的功能模块
+
 ### 时间：2021.07.21-2021.08.15
+
 - 完成文本消息收发的功能完善
+
 - 完成图片消息的简单收发
+
 ### 时间：2021.08.15-2021.09.15
+
 - 完善中期开发之前的功能模块
+
 - 优化代码结构
+
 - 如有时间，可与导师商定对功能进行扩展
