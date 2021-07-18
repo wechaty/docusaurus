@@ -1,8 +1,13 @@
 ---
  title: "基于开放 API 封装 Wechaty 接口下的飞书聊天机器人:期初具体计划"
  author: remember00000
- categories: project
+ categories:
+  - project
+  - ospp
  tags:
+  - ospp
+  - ospp-2021
+  - plan
   - summer-2021
   - puppet-provider
   - lark
@@ -31,6 +36,8 @@
 - 导师：范蕊
 
 - 学生：马田慧
+
+- 项目链接：[wechaty/summer-of-wechaty#38](https://github.com/wechaty/summer-of-wechaty/issues/38)
 
 - 模块列表
   - [ ] 更新api版本，熟悉飞书api和wechaty。
