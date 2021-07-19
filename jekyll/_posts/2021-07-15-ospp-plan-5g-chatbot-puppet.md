@@ -28,9 +28,11 @@ tags:
 
 ## 开发支持电信运营商5G Chatbot/RCS的 Wechaty接入Puppet模块
 
-- 导师：李佳芮,康嘉
+- 导师：李佳芮,康嘉,李卓桓
 
 - 学生：张瑞宁,邵琦
+
+- 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/74>
 
 - 模块列表
 
@@ -52,19 +54,15 @@ tags:
   - 项目中期总结
     - 8/11 - 8/15
     - 实现阶段性目标，总结项目阶段性成果。
-    - 无
   - 发布 Git Repo wechaty-puppet-5g-msg，实现文本消息的发送和接收
     - 8/16 - 8/31
     - 提供一个 examples/ding-dong-bot.ts ，完成“接收到文字消息ding时，自动回复消息dong"的功能
-    - 无
   - 项目完善优化
     - 9/1 - 9/15
     - 撰写整个项目过程的总结博客。配置 GitHub Actions 实现自动化测试，增加单元测试等。
-    - 无
   - 项目结项
     - 9/16 - 9/30
     - 总结项目成果，项目经验，准备结项材料。
-    - 无
 
 - 联系方式：
 
