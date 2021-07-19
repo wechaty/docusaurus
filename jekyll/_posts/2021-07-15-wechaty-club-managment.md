@@ -4,7 +4,7 @@ author: mangguo188
 categories:
   - project
   - ospp
-image:/assets/contributors/mangguo188/avatar.png
+image:/assets/2021/07-wechaty-club-managment/rare-book.jpeg
 tags:
   - summer-of-wechaty
   - summer-2021
@@ -12,7 +12,6 @@ tags:
   - ospp-2021
   - plan
 ---
-
 
 > Author:[@mangguo188](https://github.com/mangguo188)
 
