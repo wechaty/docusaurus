@@ -4,7 +4,7 @@ author: zzzyer
 categories:
   - project
   - ospp
-image: /assets/2021/07-wechaty-puppet-oa/wechaty-puppet-official-account.webp
+image: /assets/2021/07-ospp-plan-wechaty-puppet-oa/wechaty-puppet-official-account.webp
 tags:
   - puppet
   - summer-of-wechaty
