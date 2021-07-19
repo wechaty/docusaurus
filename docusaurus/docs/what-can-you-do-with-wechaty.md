@@ -2,8 +2,6 @@
 title: What can you do with Wechaty
 ---
 
-![Wechaty: Conversational RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
-
 Wechaty is designed to help users implement their chatbots with straightforward business logic, without the complexities found in the realm of chatbot programming. As a developer or a non-technical user, users will be able to create a chatbot that can run on almost all popular instant messaging (IM) applications ([Wechat/Weixin](https://www.wechat.com/en/), [WhatsApp](https://www.whatsapp.com/), [WeCom](https://play.google.com/store/apps/details?id=com.tencent.wework&hl=en&gl=US), [Gitter](https://gitter.im/home/explore), and [Lark](https://www.larksuite.com/), among others).
 
 With a few lines of code from popular programming languages (Java, Python, PHP, .NET, Kotlin, OpenAPI, JavaScript, Go, Scala, C#, and Rust), users will be able to create a customized chatbot to suit their business needs. On top of that, users can add their own code and configure the chatbot effortlessly. Also, with its intelligent dialogue management system, handling simple and complex user conversations would be easier.
