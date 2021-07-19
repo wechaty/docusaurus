@@ -4,15 +4,15 @@ author: mangguo188
 categories:
   - project
   - ospp
-image:/assets/contributors/mangguo188/avatar.png
+image: /assets/2021/07-wechaty-club-managment/rare-book.webp
 tags:
   - summer-of-wechaty
   - summer-2021
   - ospp
   - ospp-2021
   - plan
+  - other
 ---
-
 
 > Author:[@mangguo188](https://github.com/mangguo188)
 
@@ -22,7 +22,7 @@ tags:
 
 官网：<https://summer.iscas.ac.cn/#/homepage>
 
-本项目 [开发基于微信实现微俱乐部会员&活动管理的微信小程序] 系 暑期2021 支持的开源项目。
+本项目 [开发基于微信实现微俱乐部会员&活动管理的微信小程序] 系暑期2021支持的开源项目。
 
 ## 项目信息
 
