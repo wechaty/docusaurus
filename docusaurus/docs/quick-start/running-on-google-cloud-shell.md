@@ -18,15 +18,15 @@ You can follow the steps below to get started smoothly.
 
 3. **Trust** the git repository and click **Confirm**.
 
-   ![Google Cloud Shell: Trust repo](../../static/img/docs/quick-start/trust_the_repo.webp)
+   ![Google Cloud Shell: Trust repo](../../static/img/docs/quick-start/running-on-google-cloud-shell/trust_the_repo.webp)
 
 4. Wait for the cloud shell provisioning to complete.
 
-   ![Google Cloud Shell: Wait for provisioning](../../static/img/docs/quick-start/wait_for_provisioning_to_complete.webp)
+   ![Google Cloud Shell: Wait for provisioning](../../static/img/docs/quick-start/running-on-google-cloud-shell/wait_for_provisioning_to_complete.webp)
 
 5. After that you will see the **Cloud Shell Editor**, on the right panel is your step-by-step **guide**, and on the bottom you have the **terminal window**.
 
-   ![Google Cloud Shell: Editor](../../static/img/docs/quick-start/cloud_shell_editor.webp)
+   ![Google Cloud Shell: Editor](../../static/img/docs/quick-start/running-on-google-cloud-shell/cloud_shell_editor.webp)
 
 Now, you can follow the tutorial inside the cloud shell.
 
