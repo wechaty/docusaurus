@@ -1,5 +1,5 @@
 ---
- title: "基于开放 API 封装 Wechaty 接口下的飞书聊天机器人:期初具体计划"
+ title: "OSPP 2021-期初报告-基于开放 API 封装 Wechaty 接口下的飞书聊天机器人"
  author: remember00000
  categories:
   - project
