@@ -11,6 +11,7 @@ tags:
   - ospp
   - ospp-2021
   - plan
+  - other
 ---
 
 > Author:[@mangguo188](https://github.com/mangguo188)
