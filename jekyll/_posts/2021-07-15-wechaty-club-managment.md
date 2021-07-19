@@ -1,7 +1,7 @@
 ---
 title: "开发基于微信实现微俱乐部会员&活动管理的微信小程序"
 author: mangguo188
-categories:
+categories: 
   - project
   - ospp
 image: /assets/2021/07-wechaty-club-managment/rare-book.webp
