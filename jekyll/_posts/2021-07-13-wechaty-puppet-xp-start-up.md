@@ -1,7 +1,7 @@
 ---
 title: "全新的Windows puppet项目wechaty-puppet-xp启动"
 author: atorber
-image: /assets/2021/07-wechaty-puppet-xp-start-up/aa48l-pk0e4.webp
+image: /assets/2021/07-wechaty-puppet-xp-start-up/ad3tu-yqj3u.webp
 categories: story
 tags:
   - meetup
@@ -25,6 +25,12 @@ tags:
 2. [@huan](https://github.com/huan)介绍了wechaty-puppet的技术实现及演示了基于老张的chat-bot结合wechaty实现ding-dong-bot的demo。
 
 3. 大家进一步聊了新的puppet的规划和发展，并群策群力为我们的“wechaty-puppet-laozhang”取了一个全新的名字wechaty-puppet-xp，未来将由老张主导开启xp项目的完善。
+
+    ![rare-book.jpeg](/assets/2021/07-wechaty-puppet-xp-start-up/awjiy-xpvlz.webp)
+
+4. 最后大家把酒言欢畅谈技术、生活。
+
+    ![rare-book.jpeg](/assets/2021/07-wechaty-puppet-xp-start-up/athob-fx113.webp)
 
 这里也预告一下，第一个版本的wechaty-puppet-xp将于近期发布，让大家尽快体验。
 
