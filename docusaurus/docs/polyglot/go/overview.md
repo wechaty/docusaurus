@@ -12,7 +12,7 @@ The [Polyglot Architecture Diagram](https://wechaty.js.org/docs/polyglot/diy/) i
 
 ## Getting Started
 
-You can run the below commands for starting the Go-Wechaty.
+You can run the below commands for starting the Go-Wechaty.Also for more information you can check the [Go-Wechaty getting started](<https://github.com/wechaty/go-wechaty-getting-started>).
 
 ```sh
 git clone git@github.com:wechaty/go-wechaty-getting-started.git
