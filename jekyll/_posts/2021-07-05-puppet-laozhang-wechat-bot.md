@@ -9,7 +9,7 @@ tags:
 image: /assets/2021/07-puppet-laozhang-wechat-bot/wechat_bot.png
 ---
 
-> 作者: [atorber](https://github.com/atorber/)，一个不务正业的产品经理
+> 作者: [atorber](https://github.com/atorber/)，爱好编码的的产品经理
 
 继”wechaty免费版web协议重放荣光“之后，很高兴向大家预告Wechaty免费版Windows协议即将与大家见面，如果之前苦于web协议不能获取准确的wxid、roomid等问题，那么这个更新将会解决你的困扰。
 

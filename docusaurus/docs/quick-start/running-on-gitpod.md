@@ -17,15 +17,15 @@ Follow the steps below to get started:
 
 1. If you have never used gitpod before, you will be required to login using your gitHub account.
 
-  ![sign in](../../static/img/docs/getting-started/quick-start/gitpod/gitpod-signin.png)
+  ![sign in](../../static/img/docs/quick-start/running-on-gitpod/gitpod-signin.webp)
 
 1. After logging in with your github account, you have to create a workspace by clicking on **New Workspace** button.
 
-  ![create-workspace](../../static/img/docs/getting-started/quick-start/gitpod/create-workspace.png)
+  ![create-workspace](../../static/img/docs/quick-start/running-on-gitpod/create-workspace.webp)
 
 1. As the workspace loads, within no time it runs the ding dong bot.
 
-  ![loaded](../../static/img/docs/getting-started/quick-start/gitpod/gitpod-loaded.png)
+  ![loaded](../../static/img/docs/quick-start/running-on-gitpod/gitpod-loaded.webp)
 
 1. Scan the generated QR code using **Wechat**.
 
@@ -37,6 +37,6 @@ Follow the steps below to get started:
 
 1. Scan the generated QR code using **WhatsApp web** and test it with whatsapp. If it recieves a message ding, it replies with a dong as shown below.
 
-  ![output](../../static/img/docs/getting-started/quick-start/gitpod/ding-dong-output.png)
+  ![output](../../static/img/docs/quick-start/running-on-gitpod/ding-dong-output.webp)
 
 1. The code for the ding-dong-bot is given inside `examples/ding-dong-bot.ts`. You can play more with the bot by editting `onMessage` function.
