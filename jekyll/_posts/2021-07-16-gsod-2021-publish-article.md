@@ -37,6 +37,7 @@ GSOD是[Google Season of Docs](https://developers.google.com/season-of-docs)的�
 - 微信GSoD’21技术写作在谷歌于4月16日正式宣布微信GSoD’21后，我们联系了23位技术作家。令人惊讶的是，他们中有15人提交了提案，几乎所有的提案都在详细规划，并深刻洞察如何改进微信文档。感谢来自GSoD’21的以下技术作者：您的建议对微信社区非常有价值，我们希望在接下来的夏季几个月内对大部分进行实现。
 
 - 感谢他们和他们伟大的提议～
+
 1. [Abhishek Jaiswal](https://06412355400643469324.googlegroups.com/attach/2696b2e901464/GSoD%202021%20Project%20Proposal(Abhishek%20Jaiswal).pdf?part=0.1&view=1&vt=ANaJVrH3pZ3BlMcLvPB0Hkmb5a0UOwzTxgIx35I_eiVuC-derjfLADp6bOkSNSplVMvJjxPvaSkAPmq-uhcbTI4yJfGY6tKzbegUoN3mwGlnY-7X-cuZUCU)
 1. [Ahmed Essam](https://docs.google.com/document/d/1GLxVZSUNDq_jf_OvZc82ZwjVK1ECB1srkBf2IyRYtGc/edit#heading=h.wu5oliio4h1o)
 1. [Anirudh TPVS](https://groups.google.com/group/wechaty/attach/1f2bde59e72d6/Wechaty%20GSOD%202021.docx?part=0.1&view=1)
@@ -54,7 +55,8 @@ GSOD是[Google Season of Docs](https://developers.google.com/season-of-docs)的�
 1. [Souvik Biswas](https://docs.google.com/document/d/1MD9CwO6BoB664J67ozfygBJUaawazay7dDpcXB3jJcY/edit)
 
 ### 一个好消息
-- 要和大家分享一下，Wechaty已经与GSOD达成合作，我们请求的预算9500美元也已经被批准！分配如下：
+
+- 和大家分享一下，Wechaty已经与GSOD达成合作，我们请求的预算9500美元也已经被批准！分配如下：
 
 1. 微信教程:5000(分拆给2位作者)
 2. 用价值主张重建微信登陆页面（主页）：1000美元
@@ -77,13 +79,13 @@ GSOD是[Google Season of Docs](https://developers.google.com/season-of-docs)的�
 
 5.5月9日：宣布微信GSoD’21技术作者评选结果
 
-6.5月16日：GSOD第一周会议https://wechaty.js.org/2021/05/16/gsod-2021-week1-meeting/
+6.5月16日：GSOD第一周会议[相关博客](https://wechaty.js.org/2021/05/16/gsod-2021-week1-meeting/)
 
 ![1st](/assets/2021/gsod&wechaty/1st.webp)
 
 你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.o69fqys8gbda)
 
-7.5月23日GSOD第二周会议[相关博客]]https://wechaty.js.org/2021/05/23/gsod-2021-second-meeting/
+7.5月23日GSOD第二周会议[相关博客](https://wechaty.js.org/2021/05/23/gsod-2021-second-meeting/)
 你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.3ly9biu8mtyy)
 
 ![2nd](/assets/2021/gsod&wechaty/2nd.webp)
@@ -98,7 +100,7 @@ GSOD是[Google Season of Docs](https://developers.google.com/season-of-docs)的�
 
 ![4th](/assets/2021/gsod&wechaty/4th.webp)
 
-10.7月4日GSOD第五周会议 [相关博客](https://wechaty.js.org/2021/07/06/gsod-2021-fifth-meeting/)
+10.7月4日GSOD第五周会议[相关博客](https://wechaty.js.org/2021/07/06/gsod-2021-fifth-meeting/)
 你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.s6s37xc2auay)
 
 ![5th](/assets/2021/gsod&wechaty/5th.webp)
