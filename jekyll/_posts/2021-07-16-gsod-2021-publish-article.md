@@ -36,7 +36,9 @@ image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
 - 多年来调查表明，良好的文档在开发人员如何选择和使用开源方面很重要。
 在2019年首届GSoD项目中，该计划收到了近450份技术作家申请，接受了50多名技术作家。
 - 微信GSoD’21技术写作在谷歌于4月16日正式宣布微信GSoD’21后，我们联系了23位技术作家。令人惊讶的是，他们中有15人提交了提案，几乎所有的提案都在详细规划，并深刻研究如何改进Wechaty社区。感谢来自GSoD’21的以下技术作者：您的建议对Wechaty社区非常有价值，我们希望在接下来的夏季几个月内对其中的大部分进行实现。
+
 - 感谢他们和他们的提议～
+
 1. [Abhishek Jaiswal](https://06412355400643469324.googlegroups.com/attach/2696b2e901464/GSoD%202021%20Project%20Proposal(Abhishek%20Jaiswal).pdf?part=0.1&view=1&vt=ANaJVrH3pZ3BlMcLvPB0Hkmb5a0UOwzTxgIx35I_eiVuC-derjfLADp6bOkSNSplVMvJjxPvaSkAPmq-uhcbTI4yJfGY6tKzbegUoN3mwGlnY-7X-cuZUCU)
 1. [Ahmed Essam](https://docs.google.com/document/d/1GLxVZSUNDq_jf_OvZc82ZwjVK1ECB1srkBf2IyRYtGc/edit#heading=h.wu5oliio4h1o)
 1. [Anirudh TPVS](https://groups.google.com/group/wechaty/attach/1f2bde59e72d6/Wechaty%20GSOD%202021.docx?part=0.1&view=1)
