@@ -1,5 +1,5 @@
 ---
-title: 2021GSOD&Wechaty
+title: 2021GSoD&Wechaty
 author: juzibot
 categories: gsod
 tags:
