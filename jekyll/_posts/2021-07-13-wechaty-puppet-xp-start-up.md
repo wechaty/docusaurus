@@ -8,8 +8,6 @@ tags:
   - xp
 ---
 
-<!--more-->
-
 7月13日，周二，我们组织了一个小范围的 Wechaty Contributor 线下聚会。
 
 之前预告的[《喜讯：使用Windows微信桌面版协议登录，wechaty免费版协议即将登场》](https://wechaty.js.org/2021/07/05/puppet-laozhang-wechat-bot/)主角诗人老张飞临北京，期待已久的聚会终能成行。
