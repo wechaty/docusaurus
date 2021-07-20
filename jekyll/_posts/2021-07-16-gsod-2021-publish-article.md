@@ -9,7 +9,7 @@ tags:
   - gsod-2021
   - 2021
   - docs
-image: /assets/2021/07-gsod-wechaty/gsod&wechaty.webp
+image: /assets/2021/07-gsod-wechaty/gsodandwechaty.webp
 ---
 
 ## GSOD
