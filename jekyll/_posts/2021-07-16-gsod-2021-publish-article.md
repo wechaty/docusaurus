@@ -82,28 +82,19 @@ image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
 
    5月9日：宣布微信GSoD’21技术作者评选结果
 
-   5月16日：我们线上进行了GSOD第一周会议[相关博客](https://wechaty.js.org/2021/05/16/gsod-2021-week1-meeting/)你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.o69fqys8gbda)
-
+   5月16日：我们线上进行了GSOD第一周会议,你也可以了解更多的[相关博客](https://wechaty.js.org/2021/05/16/gsod-2021-week1-meeting/)和[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.o69fqys8gbda)
      ![1st](/assets/2021/07-gsod-2021-publish-article/1st.webp)
 
-   5月23日：进行了GSOD第二周会议[相关博客](https://wechaty.js.org/2021/05/23/gsod-2021-second-meeting/)
-   你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.3ly9biu8mtyy)
-
+   5月23日：进行了GSOD第二周会议，你也可以了解更多的[相关博客](https://wechaty.js.org/2021/05/23/gsod-2021-second-meeting/)和[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.3ly9biu8mtyy)
      ![2nd](/assets/2021/07-gsod-2021-publish-article/2nd.webp)
 
-   6月6日：进行了GSOD第三周会议[相关博客](https://wechaty.js.org/2021/06/06/gsod-2021-third-meeting/)
-   你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.lmf3j0zgmymr)
-
+   6月6日：进行了GSOD第三周会议，你也可以了解更多的[相关博客](https://wechaty.js.org/2021/06/06/gsod-2021-third-meeting/)和[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.lmf3j0zgmymr)
      ![3rd](/assets/2021/07-gsod-2021-publish-article/3rd.webp)
 
-   6月20日：进行了GSOD第四周会议[相关博客](https://wechaty.js.org/2021/06/22/gsod-2021-fourth-meeting/)
-   你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.3am6kd2l4v24)
-
+   6月20日：进行了GSOD第四周会议，你也可以了解更多的[相关博客](https://wechaty.js.org/2021/06/22/gsod-2021-fourth-meeting/)和[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.3am6kd2l4v24)
      ![4th](/assets/2021/07-gsod-2021-publish-article/4th.webp)
 
-   7月4日：进行了GSOD第五周会议[相关博客](https://wechaty.js.org/2021/07/06/gsod-2021-fifth-meeting/)
-   你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.s6s37xc2auay)
-
+   7月4日：进行了GSOD第五周会议，你也可以了解更多的[相关博客](https://wechaty.js.org/2021/07/06/gsod-2021-fifth-meeting/)和[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.s6s37xc2auay)
      ![5th](/assets/2021/07-gsod-2021-publish-article/5th.webp)
 
    7月18日：进行了GSOD第六次会议
