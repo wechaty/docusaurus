@@ -17,7 +17,7 @@ image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
 
  ![gsod](/assets/2021/07-gsod-2021-publish-article/gsod.webp)
 
-## 了解GSOD
+## 了解GSoD
 
 - GSOD是[Google Season of Docs](https://developers.google.com/season-of-docs)的简称，是由谷歌组织的年度活动，目的是将技术作家和开源组织聚集到一块，在开源这个空间中共同促进和改善开源的发展。
 谷歌的这个活动具有重大意义，因为开源项目为用户提供的不仅仅是理解学习项目的平台，同样也是一个能够为开源项目做贡献的渠道。
@@ -31,7 +31,7 @@ image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
 - Wechaty作为[30](https://developers.google.com/season-of-docs/docs/participants)个[伟大的开源组织](https://developers.google.com/season-of-docs/docs/participants)之一，我们非常希望在伟大的技术作者的帮助下，把我们的文档改进的更加完善！
 - 我们在2月份的时候就开始着手准备2021年的GSoD，如果你刚刚接触，非常建议你先看一看[初学者易于学习的教程](https://wechaty.js.org/docs/gsod/2021/)。
 
-### GSOD的发展情况
+### GSoD的发展情况
 
 - 多年来调查表明，良好的文档在开发人员如何选择和使用开源方面很重要。
 在2019年首届GSoD项目中，该计划收到了近450份技术作家申请，接受了50多名技术作家。
@@ -57,56 +57,56 @@ image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
 
 ### 一个好消息
 
-- 和大家分享一下，Wechaty已经与GSOD达成合作，我们请求的预算9500美元也已经被批准！分配如下：
+- 和大家分享一下，Wechaty已经与GSoD达成合作，我们请求的预算9500美元也已经被批准！分配如下：
    1. 微信教程:5000美元(分拆给2位作者)
-   2. 用价值主张重建微信登陆页面（主页）：1000美元
+   2. 重建微信登陆页面（主页）：1000美元
    3. 简介：1000美元
    4. 参考资料：1000美元
    5. 志愿者津贴：500美元
-   6. 作家津贴尚未选定，但已提交有效提案或公关：1000美元
+   6. 技术作家津贴尚未选定，但已提交有效提案或公关：1000美元
 
-- 后续我们也会组织会议，一起探讨一下我们怎样协作，让Wechaty发展得更好。希望通过互相学习和交流，能够让大家都在Wechaty享受其中。
+- 后续我们也会组织会议，一起探讨一下我们怎样协作，让Wechaty发展得更好。希望通过互相学习和交流，能够让大家都在Wechaty社区享受其中。
 
 ### 目前的进程
 
 - 下面是按时间进行的进程汇总：
 
-   我们已经向我们的微信邮件列表发送了一封公告:[微信GSoD’21技术作家注册表已开放](https://groups.google.com/g/wechaty/c/C7r1_GMRRa0)
+   我们已经向微信邮件列表发送了一封公告:[微信GSoD’21技术作家注册表已开放](https://groups.google.com/g/wechaty/c/C7r1_GMRRa0)
 
    5月3日:向技术作家发送[谷歌表格](https://forms.gle/2LDqrX5GUs6j9fJR9)
 
-   5月5日:准备在线会议:我们将在[会议记录](https://bit.ly/3gWBI9m)中为所有技术作者创建议程，以添加议程
+   5月5日:准备在线会议，我们将在[会议记录](https://bit.ly/3gWBI9m)中为所有技术作者创建议程，以添加议程
 
-   5月8日:进行了在线会议，在最终技术作者评选之前进行了最后一次讨论。欢迎所有技术作家加入[Hello Wechaty GSoD’21 Technical Writers!](https://wechaty.js.org/2021/05/08/gsod-2021-selected-technical-writers/)
+   5月8日:进行了在线会议，在宣布最终技术作者评选结果之前进行了最后一次讨论。欢迎所有技术作家加入[Hello Wechaty GSoD’21 Technical Writers!](https://wechaty.js.org/2021/05/08/gsod-2021-selected-technical-writers/)
       你也可以了解[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.edr3nzd8l43b)
       ![zero](/assets/2021/07-gsod-2021-publish-article/zero.webp)
 
-   5月9日：宣布微信GSoD’21技术作者评选结果
+   5月9日：宣布了微信GSoD’21技术作者评选结果。
 
-   5月16日：进行了GSOD第一周会议,在这次会议上，我们首先讨论确定了未来会议的日期和时间，每个与会者都做了一周的总结，并向我们介绍了他们下一周的计划。之后，我们讨论了是否应该延长主要项目的时间表，Simin介绍了文档结构和样式。后来我们进行了一个问答环节，最后我们拍了一张可爱的合影。
+   5月16日：进行了GSoD第一周会议,在这次会议上，我们首先讨论确定了未来会议的日期和时间，每个与会者都做了一周的总结，并向我们介绍了他们下一周的计划。之后，我们讨论了是否应该延长主要项目的时间表，Simin介绍了文档结构和样式。后来我们进行了一个问答环节，最后我们拍了一张可爱的合影。
      你也可以了解[相关博客](https://wechaty.js.org/2021/05/16/gsod-2021-week1-meeting/)和[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.o69fqys8gbda)
      ![1st](/assets/2021/07-gsod-2021-publish-article/1st.webp)
 
-   5月23日：进行了GSOD第二周会议，在本次会议上，每位与会者首先给出了自己的一周总结，并向社区报告了他们下一周的计划。我们讨论了一下Wechaty的未来愿景，Simin就PRs中经常出现的风格错误进行了讨论，接下来她向我们介绍了一个后续检查清单。最后我们进行了一个问答环节，下面是我们的合影。
+   5月23日：进行了GSoD第二周会议，在本次会议上，每位与会者首先给出了自己的一周总结，并向社区报告了他们下一周的计划。一起讨论了一下Wechaty的未来愿景，Simin就PRs中经常出现的错误进行了讨论，接下来她向我们介绍了一个后续检查清单。最后我们进行了一个问答环节，下面是我们的合影。
      你也可以了解[相关博客](https://wechaty.js.org/2021/05/23/gsod-2021-second-meeting/)和[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.3ly9biu8mtyy)
      ![2nd](/assets/2021/07-gsod-2021-publish-article/2nd.webp)
 
-   6月6日：进行了GSOD第三周会议，在本次会议上，每位与会者首先做了一周的总结，并向社区汇报了他们下一周的计划，提出了对大型PRs的关注，讨论了PRs的范围和规模，对于缺乏每周跟进的团队解释了各自的原因。Simin说明了需要注意的相关事项并向大家进行了演示。最后我们进行了一个问答环节，并合影留念。
+   6月6日：进行了GSoD第三周会议，在本次会议上，每位与会者首先做了一周的总结，并向社区汇报了他们下一周的计划，提出了对大型PRs的关注，讨论了PRs的范围和规模，对于缺乏每周跟进的团队解释了各自的原因。Simin说明了需要注意的相关事项并向大家进行了演示。最后我们进行了一个问答环节，并合影留念。
      你也可以了解[相关博客](https://wechaty.js.org/2021/06/06/gsod-2021-third-meeting/)和[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.lmf3j0zgmymr)
      ![3rd](/assets/2021/07-gsod-2021-publish-article/3rd.webp)
 
-   6月20日：进行了GSOD第四周会议，在本次会议上，首先每位参与者都做了一周的总结，并向社区汇报了他们下一周的计划，志愿者和技术作家们在进行一周总结的同时进行了讨论。最后大家进行了问答环节，并拍了一张可爱的合影。
+   6月20日：进行了GSoD第四周会议，在本次会议上，首先每位参与者都做了一周的总结，并向社区汇报了他们下一周的计划，志愿者和技术作家们在进行一周总结的同时进行了讨论。最后大家进行了问答环节，并拍了一张可爱的合影。
      你也可以了解[相关博客](https://wechaty.js.org/2021/06/22/gsod-2021-fourth-meeting/)和[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.3am6kd2l4v24)
      ![4th](/assets/2021/07-gsod-2021-publish-article/4th.webp)
 
-   7月4日：进行了GSOD第五周会议，首先，每个参与者都进行了一周总结计划了下一周的工作，志愿者和技术作者们进行了讨论。Simin分享了一些关于Wechaty后续活动的信息，最后我们合影留念。
+   7月4日：进行了GSoD第五周会议，首先，每个参与者都进行了一周总结计划了下一周的工作，志愿者和技术作者们进行了讨论。Simin分享了一些关于Wechaty后续活动的信息，最后我们合影留念。
      你也可以了解[相关博客](https://wechaty.js.org/2021/07/06/gsod-2021-fifth-meeting/)和[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.s6s37xc2auay)
      ![5th](/assets/2021/07-gsod-2021-publish-article/5th.webp)
 
-   7月18日：进行了GSOD第六次会议，同样，每个参与者都进行了一周总结与下一周的计划，志愿者和技术作者进行了讨论，并进行了问答环节，讨论和解决了大家存在的问题。
+   7月18日：进行了GSoD第六次会议，同样，每个参与者都进行了一周总结与下一周的计划，志愿者和技术作者进行了讨论，并进行了问答环节，讨论和解决了大家存在的问题。
      你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.i4kw5zu3yk32)
      ![6th](/assets/2021/07-gsod-2021-publish-article/6th.webp)
 
 ### Welcome
 
-很高兴有你们都加入我们的项目，更欢迎更多的技术作家加入我们，一起加油！
+非常高兴有你们都加入我们的团队，更欢迎更多的技术作家加入我们，共同学习共同建设Wechaty社区！
