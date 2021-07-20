@@ -9,12 +9,12 @@ tags:
   - gsod-2021
   - 2021
   - docs
-image: /assets/2021/gsod&wechaty/gsod&wechaty.webp
+image: /assets/2021/07-gsod-wechaty/gsod&wechaty.webp
 ---
 
 ## GSOD
 
-![gsod](/assets/2021/gsod&wechaty/gsod.webp)
+![gsod](/assets/2021/gsod-wechaty/gsod.webp)
 
 GSOD是[Google Season of Docs](https://developers.google.com/season-of-docs)的简称，是由谷歌组织的年度活动，目的是将技术作家和开源组织聚集到一块，在开源这个空间中共同促进和改善开源的发展。
 谷歌的这个举措非常重要，因为开源项目为用户提供的不仅仅是理解项目的平台，而是一个能够为项目做贡献的渠道。
@@ -22,7 +22,7 @@ GSOD是[Google Season of Docs](https://developers.google.com/season-of-docs)的�
 
 ### 什么是wechaty
 
-![wechaty](/assets/2021/gsod&wechaty/wechaty.webp)
+![wechaty](/assets/2021/gsod-wechaty/wechaty.webp)
 
 - Wechaty是帮助聊天机器人开发者快速搭建聊天机器人的框架，并且支持多个系统平台。Wechaty的使命：给聊天机器人的开发者提供一个最好的开源sdk，不断优化sdk，给开发者最好的体验。帮助开发者更多关注于逻辑应用，而不是与平台的底部对接上，只需关乎自己写上层应用的代码就可以了。
 - Wechaty作为[30](https://developers.google.com/season-of-docs/docs/participants)个[伟大的开源组织](https://developers.google.com/season-of-docs/docs/participants)之一，我们非常希望在伟大的技术作者的帮助下，把我们的文档改进的更加完善！
@@ -81,29 +81,33 @@ GSOD是[Google Season of Docs](https://developers.google.com/season-of-docs)的�
 
 6.5月16日：GSOD第一周会议[相关博客](https://wechaty.js.org/2021/05/16/gsod-2021-week1-meeting/)
 
-![1st](/assets/2021/gsod&wechaty/1st.webp)
+![1st](/assets/2021/gsod-wechaty/1st.webp)
 
 你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.o69fqys8gbda)
 
 7.5月23日GSOD第二周会议[相关博客](https://wechaty.js.org/2021/05/23/gsod-2021-second-meeting/)
 你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.3ly9biu8mtyy)
 
-![2nd](/assets/2021/gsod&wechaty/2nd.webp)
+![2nd](/assets/2021/gsod-wechaty/2nd.webp)
 
 8.6月6日GSOD第三周会议[相关博客](https://wechaty.js.org/2021/06/06/gsod-2021-third-meeting/)
 你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.lmf3j0zgmymr)
 
-![3rd](/assets/2021/gsod&wechaty/3rd.webp)
+![3rd](/assets/2021/gsod-wechaty/3rd.webp)
 
 9.6月20日GSOD第四周会议[相关博客](https://wechaty.js.org/2021/06/22/gsod-2021-fourth-meeting/)
 你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.3am6kd2l4v24)
 
-![4th](/assets/2021/gsod&wechaty/4th.webp)
+![4th](/assets/2021/gsod-wechaty/4th.webp)
 
 10.7月4日GSOD第五周会议[相关博客](https://wechaty.js.org/2021/07/06/gsod-2021-fifth-meeting/)
 你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.s6s37xc2auay)
 
-![5th](/assets/2021/gsod&wechaty/5th.webp)
+![5th](/assets/2021/gsod-wechaty/5th.webp)
 
 11.7月18日GSOD第六次会议
 你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.6t69cjoyal0l)
+
+## Welcome
+
+很高兴有你们都加入我们的项目，更欢迎更多的技术作家加入我们，一起加油！
