@@ -71,44 +71,45 @@ image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
 
 - 下面是近期会议的汇总：
 
-1. 我们已经向我们的微信邮件列表发送了一封公告:[微信GSoD’21技术作家注册表已开放](https://groups.google.com/g/wechaty/c/C7r1_GMRRa0)
+ 我们已经向我们的微信邮件列表发送了一封公告:[微信GSoD’21技术作家注册表已开放](https://groups.google.com/g/wechaty/c/C7r1_GMRRa0)
 
-2. 5月3日:向技术作家发送[谷歌表格](https://forms.gle/2LDqrX5GUs6j9fJR9)
+ 5月3日:向技术作家发送[谷歌表格](https://forms.gle/2LDqrX5GUs6j9fJR9)
 
-3. 5月5日:准备缩放会议:我们将在[会议记录](https://bit.ly/3gWBI9m)中为所有技术作者创建议程，以添加议程
+ 5月5日:准备缩放会议:我们将在[会议记录](https://bit.ly/3gWBI9m)中为所有技术作者创建议程，以添加议程
 
-4. 5月7日:在线缩放会议:最终选择之前的最后一次讨论。欢迎所有技术作家加入，欢迎大家加入[Hello Wechaty GSoD’21 Technical Writers!](https://wechaty.js.org/2021/05/08/gsod-2021-selected-technical-writers/)你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.edr3nzd8l43b)
+ 5月7日:在线缩放会议:最终选择之前的最后一次讨论。欢迎所有技术作家加入，欢迎大家加入[Hello Wechaty GSoD’21 Technical Writers!](https://wechaty.js.org/2021/05/08/gsod-2021-selected-technical-writers/)
+你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.edr3nzd8l43b)
 
-5. 5月9日：宣布微信GSoD’21技术作者评选结果
+ 5月9日：宣布微信GSoD’21技术作者评选结果
 
-6. 5月16日：我们线上进行了GSOD第一周会议[相关博客](https://wechaty.js.org/2021/05/16/gsod-2021-week1-meeting/)
+ 5月16日：我们线上进行了GSOD第一周会议[相关博客](https://wechaty.js.org/2021/05/16/gsod-2021-week1-meeting/)
 
- ![1st](/assets/2021/07-gsod-2021-publish-article/1st.webp)
+   ![1st](/assets/2021/07-gsod-2021-publish-article/1st.webp)
 
- 你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.o69fqys8gbda)
+   你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.o69fqys8gbda)
 
-7. 5月23日：进行了GSOD第二周会议[相关博客](https://wechaty.js.org/2021/05/23/gsod-2021-second-meeting/)
- 你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.3ly9biu8mtyy)
+ 5月23日：进行了GSOD第二周会议[相关博客](https://wechaty.js.org/2021/05/23/gsod-2021-second-meeting/)
+   你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.3ly9biu8mtyy)
 
- ![2nd](/assets/2021/07-gsod-2021-publish-article/2nd.webp)
+   ![2nd](/assets/2021/07-gsod-2021-publish-article/2nd.webp)
 
-8. 6月6日：进行了GSOD第三周会议[相关博客](https://wechaty.js.org/2021/06/06/gsod-2021-third-meeting/)
- 你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.lmf3j0zgmymr)
+ 6月6日：进行了GSOD第三周会议[相关博客](https://wechaty.js.org/2021/06/06/gsod-2021-third-meeting/)
+   你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.lmf3j0zgmymr)
 
- ![3rd](/assets/2021/07-gsod-2021-publish-article/3rd.webp)
+   ![3rd](/assets/2021/07-gsod-2021-publish-article/3rd.webp)
 
-9. 6月20日：进行了GSOD第四周会议[相关博客](https://wechaty.js.org/2021/06/22/gsod-2021-fourth-meeting/)
- 你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.3am6kd2l4v24)
+ 6月20日：进行了GSOD第四周会议[相关博客](https://wechaty.js.org/2021/06/22/gsod-2021-fourth-meeting/)
+   你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.3am6kd2l4v24)
 
- ![4th](/assets/2021/07-gsod-2021-publish-article/4th.webp)
+   ![4th](/assets/2021/07-gsod-2021-publish-article/4th.webp)
 
-10. 7月4日：进行了GSOD第五周会议[相关博客](https://wechaty.js.org/2021/07/06/gsod-2021-fifth-meeting/)
- 你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.s6s37xc2auay)
+ 7月4日：进行了GSOD第五周会议[相关博客](https://wechaty.js.org/2021/07/06/gsod-2021-fifth-meeting/)
+   你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.s6s37xc2auay)
 
- ![5th](/assets/2021/07-gsod-2021-publish-article/5th.webp)
+   ![5th](/assets/2021/07-gsod-2021-publish-article/5th.webp)
 
-11. 7月18日：进行了GSOD第六次会议
- 你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.6t69cjoyal0l)
+ 7月18日：进行了GSOD第六次会议
+   你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.6t69cjoyal0l)
 
 ## Welcome
 
