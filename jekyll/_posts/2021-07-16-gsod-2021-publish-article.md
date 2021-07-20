@@ -15,9 +15,11 @@ image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
 > 感谢点进我的博客，非常荣幸能够和你分享2021GSoD与Wechaty的相关发展情况。
   今年，Wechaty已经被Google Season of Docs计划接受，我们很荣幸参加2021GSoD！
 
- ![gsod](/assets/2021/07-gsod-2021-publish-article/gsod.webp)
+ ![gsod](/assets/2021/07-gsod-2021-publish-article/gsodandwechaty1.webp)
 
 ## 了解GSoD
+
+![gsod](/assets/2021/07-gsod-2021-publish-article/gsod.webp)
 
 - GSOD是[Google Season of Docs](https://developers.google.com/season-of-docs)的简称，是由谷歌组织的年度活动，目的是将技术作家和开源组织聚集到一块，在开源这个空间中共同促进和改善开源的发展。
 谷歌的这个活动具有重大意义，因为开源项目为用户提供的不仅仅是理解学习项目的平台，同样也是一个能够为开源项目做贡献的渠道。
