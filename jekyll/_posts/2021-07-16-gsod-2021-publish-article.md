@@ -12,6 +12,9 @@ tags:
 image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
 ---
 
+> 感谢点进我的博客，非常荣幸能够和你分享2021GSoD与Wechaty的相关发展情况。
+  今年，Wechaty已经被Google Season of Docs计划接受，我们很荣幸参加GSoD'21！
+
 ## 了解GSOD
 
 ![gsod](/assets/2021/07-gsod-2021-publish-article/gsod.webp)
@@ -58,12 +61,12 @@ image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
 
 - 和大家分享一下，Wechaty已经与GSOD达成合作，我们请求的预算9500美元也已经被批准！分配如下：
 
- 1. 微信教程:5000(分拆给2位作者)
- 2. 用价值主张重建微信登陆页面（主页）：1000美元
- 3. 简介：1000美元
- 4. 参考资料：1000美元
- 5. 志愿者津贴：500美元
- 6. 作家津贴尚未选定，但已提交有效提案或合并公关：1000美元
+   1. 微信教程:5000(分拆给2位作者)
+   2. 用价值主张重建微信登陆页面（主页）：1000美元
+   3. 简介：1000美元
+   4. 参考资料：1000美元
+   5. 志愿者津贴：500美元
+   6. 作家津贴尚未选定，但已提交有效提案或合并公关：1000美元
 
 - 后续我们也会组织会议，一起探讨一下我们怎样协作，让Wechaty发展得更好。希望通过互相学习和交流，能够让大家都在Wechaty享受其中。
 
@@ -82,11 +85,9 @@ image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
 
  5月9日：宣布微信GSoD’21技术作者评选结果
 
- 5月16日：我们线上进行了GSOD第一周会议[相关博客](https://wechaty.js.org/2021/05/16/gsod-2021-week1-meeting/)
+ 5月16日：我们线上进行了GSOD第一周会议[相关博客](https://wechaty.js.org/2021/05/16/gsod-2021-week1-meeting/)你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.o69fqys8gbda)
 
    ![1st](/assets/2021/07-gsod-2021-publish-article/1st.webp)
-
-   你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.o69fqys8gbda)
 
  5月23日：进行了GSOD第二周会议[相关博客](https://wechaty.js.org/2021/05/23/gsod-2021-second-meeting/)
    你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.3ly9biu8mtyy)
