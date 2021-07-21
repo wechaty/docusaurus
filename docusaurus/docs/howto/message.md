@@ -20,11 +20,11 @@ Automation of messages can be done easily  with wechaty onMessage function. This
 
 See [Running our first ding-dong bot](https://wechaty.js.org/docs/getting-started/quick-start).
 
-The below function needs a basic scipt that can help run the bot. The basic script starts by importing the code from [Github/Friend-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/friend-bot.ts).Integrate the below code, for this action to work.
+The below function needs a basic script that can help run the bot. The basic script starts by importing the code from [Github/Friend-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/friend-bot.ts).Integrate the below code, for this action to work.
 
 ## Mention
 
-Use this Mention feature to send a (@ mention) to others in the room.This function works if the message recieved by the onMessage function belongs to a room.
+Use this Mention feature to send a (@ mention) to others in the room.This function works if the message received by the onMessage function belongs to a room.
 
 <Tabs
   groupId="programming-languages"
@@ -161,7 +161,7 @@ The expected output of the JavaScript code is:
 
 ## Self message
 
-Use this Self message feature to reply to the bot.This function works if the message recieved by the onMessage function has been sent by the bot to itself.
+Use this Self message feature to reply to the bot.This function works if the message received by the onMessage function has been sent by the bot to itself.
 
 <Tabs
   groupId="programming-languages"
