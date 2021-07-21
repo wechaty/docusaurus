@@ -16,18 +16,18 @@ This is a sample deploy with Heroku button for the Wechaty Heroku starter projec
 
 ### Setting up a Deploy to Heroku Button
 
-This guide demonstrates setting up a Deploy to Heroku Button with [Wechaty Starter Repository](https://github.com/wechaty/wechaty-getting-started)
+This guide demonstrates setting up a Deploy to Heroku Button with [Wechaty Starter Repository](https://github.com/wechaty/wechaty-getting-started).
 <ol>
 <li> Fork the <a href ="https://github.com/wechaty/wechaty-getting-started">Wechaty Starter Repositor</a>.</li>
 <li> Create a branch <b>feature</b> in the forked repository.</li>
-<li> On branch feature, create an app.json file in the root directory.Add in fields such as name, description, logo, etc. If you want to know how an app.js file looks like check <a href="https://github.com/wechaty/heroku-wechaty-getting-started/blob/master/app.json">this link</a>.</li>
-<li>In the Readme.md file add the following code snippet
+<li>On branch feature, create an app.json file in the root directory. Add items including name, description, logo in the fields. If you want to know how an app.json file looks like, check out <a href="https://github.com/wechaty/heroku-wechaty-getting-started/blob/master/app.json">this template</a>.</li>
+<li>In the Readme.md file, add the following code snippet:
 
 `[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)`
 </li>
 <li> The deploy with heroku button is now set up.
 
-![Heroku button](../../static/img/howto/heroku/heroku.png)
+![Heroku button](../../static/img/howto/heroku/heroku.webp)
 </li>
 </ol>
 
@@ -68,8 +68,8 @@ Write the following code in the file:
 Remember to replace user-name with your Github username.
 </li>
 <li>Add the necessary details and click on deploy app button.</li>
-<img src="../../static/img/howto/heroku/heroku1.png"></img>
-<img src="../../static/img/howto/heroku/heroku2.png"></img>
+<img src="../../static/img/howto/heroku/heroku1.webp"></img>
+<img src="../../static/img/howto/heroku/heroku2.webp"></img>
 
 <li>After the app has been successfully created, open the terminal and add the heroku remote to your local github repository.
 
@@ -87,7 +87,7 @@ Here wechaty-test-123 is the name of the app, created in the previous step. You 
 ### Running the bot
 
 To run the Bot on the Heroku CLI use the command `heroku local web` on your terminal. The ding-dong starter bot  is now successfully running.
-![Heroku button](../../static/img/howto/heroku/heroku3.png)
+![Heroku button](../../static/img/howto/heroku/heroku3.webp)
 
 ## Use Cases
 
