@@ -12,7 +12,7 @@ This section explains the main concepts in Wechaty. If you are new to software o
 
 - **Chatbot**
 
-  These are bots that are designed for interacting with humans in voice or text-based conversation. Chatbots simulate human conversation by responding to certain phrases or words with programmed responses. Wechaty is a software program for developing chatbots for Instant Messaging services such as Wechat and Whatsapp. You can check our [Introduction section](#placeholder-link) for a list of all the supported Instant Messaging systems.
+  These are bots that are designed for interacting with humans in voice or text-based conversation. Chatbots simulate human conversation by responding to certain phrases or words with programmed responses. Wechaty is a software program for developing chatbots for Instant Messaging services such as Wechat and Whatsapp. You can check our [Introduction section](overview.mdx) for a list of all the supported Instant Messaging systems.
 
 - **Wechaty Puppet**
 
@@ -20,15 +20,19 @@ This section explains the main concepts in Wechaty. If you are new to software o
 
 - **Puppet provider**
 
-  Wechaty puppet provider refers to [RPA](#placeholder-link) module used for connecting Wechaty API to the corresponding Instant Messaging platform bot account. Each supported Instant Messaging system has its own Puppet provider. See [Puppet Providers](#placeholder-link) section for a complete list of puppet providers.
+  Wechaty puppet provider refers to RPA module used for connecting Wechaty API to the corresponding Instant Messaging platform(Wechat, Whatsapp and Tiktok) bot account. Each supported Instant Messaging system has its own Puppet provider. The Puppet Provider for WeChat is [wechaty-puppet-wechat](https://github.com/wechaty/wechaty-puppet-wechat), for Whatsapp is [wechaty-puppet-whatsapp](https://github.com/wechaty/wechaty-puppet-whatsapp), and the one for Lark is [wechaty-puppet-lark](https://github.com/wechaty/wechaty-puppet-lark). See [Puppet Providers](puppet-providers/overview.mdx) section for a complete list of puppet providers.
 
 - **Puppet service provider**
 
-  Puppet service providers refer to Wechaty developers who have developed puppets for the different Instant Messaging systems.
+  Puppet service providers refer to Wechaty developers who provide puppet cloud services for the different Instant Messaging systems.
 
-- **Wechaty service token**
+- **Puppet service**
 
-  This is a unique key for authorizing Wechaty puppet service access. This token is issued by Puppet service providers.
+  Wechaty Puppet Service is gRPC for Wechaty Puppet Provider. For example, we can cloudify the Wechaty Puppet Provider wechaty-puppet-padlocal to a Wechaty Puppet Service by running Wechaty Puppet Service Token Gateway.
+
+- **Wechaty Puppet Service Token**
+
+  This is a unique key for authorizing the service from Wechaty Puppet Service Provider access. This token is issued by Puppet service providers.
 
 - **Robotic process automation**
 
