@@ -35,6 +35,16 @@ You should have `Node.js` installed on your system. If you do not have `Node.js`
 
 <ShortestChatbots />
 
+For building a bot with Wechaty, you have to follow the steps below:
+
+1. Import wechaty.
+1. Create a function `main` and initialize a bot by providing it a name.
+1. Assign proper functions to call when an event is triggered.
+    - When `scan` is triggered, it generates QR code.
+    - `login` will display `{user} logged in` if the user has logged in.
+    - `message` will display message on console.
+1. Finally, start the bot with `bot.start`.
+
 ## Reference
 
 [Wechaty Getting Started Github Repository](https://github.com/wechaty/wechaty-getting-started/tree/master/examples)
