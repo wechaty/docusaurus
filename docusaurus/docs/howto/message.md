@@ -6,6 +6,7 @@ import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
 ## Messages
+
 Automation of messages can be done easily  with wechaty onMessage function. This guide will give you a step by step overview of how to respond to self messages or messages in a room.
 
 ## Prerequisites
