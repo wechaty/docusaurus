@@ -41,3 +41,7 @@ This section explains the main concepts in Wechaty. If you are new to software o
 - **Software Development Kit**
 
   Software development kit (SDK) is a toolkit used by developers to create applications for a specific platform, operating system or device. A great example would be **Wechaty**, wherein it is called a **_conversational RPA SDK_** that is used by developers to create customized chatbots.
+
+- **Wechaty gRPC**
+
+  Initially, Wechaty was built using TypeScript. Support for other languages such as Python, Go, Java, PHP, .NET, and Scala was later introduced in 2020 so that chatbot makers can build chatbots in their preferred language. This version of Wechaty which offers multi-language support is referred to as **Wechaty polyglot**. The introduction of Wechaty polyglot however came with its challenges because all Wechaty puppet providers were built using TypeScript and delivered via npm. Translating all of them to the languages supported by Wechaty polyglot was a monumental challenge. To solve this problem, Wechaty gRPC was created. The goal of Wechaty RPC is to _cloudify_ Wechaty Puppet Providers. It ensures we can use the Wechaty Puppet Providers remotely via network and Polyglot Wechaty can use the Wechaty Puppet API from the TypeScript ecosystem.
