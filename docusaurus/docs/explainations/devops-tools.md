@@ -8,7 +8,7 @@ The DevOps model is all the rage for most software teams because of the immense 
 
 ## [@chatie/semver](https://www.npmjs.com/package/@chatie/semver)
 
-This is a very simple npm package. [@chatie/semver](https://www.npmjs.com/package/@chatie/semver) is a wrapper for [semver](https://www.npmjs.com/package/semver) package. You can use it to check whether the current package version is the stable or the development version. It also provides typescript support.
+This is a very simple npm package. [@chatie/semver](https://www.npmjs.com/package/@chatie/semver) is a wrapper for [semver](https://www.npmjs.com/package/semver) package. You can use it to check whether the current package version is the stable or the development version. It also provides TypeScript support.
 
 ## [@chatie/git-scripts](https://npmjs.com/package/@chatie/git-scripts)
 
@@ -48,6 +48,6 @@ This package is for centralized management of all Wechaty project `tsconfig.json
 
 You can configure a tool as part of your DevOps continuous integration pipeline to detect and fix problems in your codebase. Since [`tslint`](https://www.npmjs.com/package/tslint) is not supported, you can use [`eslint`](https://eslint.org/) instead to detect and fix problems. [`@chatie/eslint-config`](https://www.npmjs.com/package/@chatie/eslint-config) is a handy npm package you can use for configuring [`eslint`](https://eslint.org/). It can effectively manage Wechaty `eslintrc.js` files.
 
-## [Wechaty with docker](#placeholder-link)
+## [Wechaty with Docker](#placeholder-link)
 
-Wechaty is fully dockerized. You can integrate Docker as part of your DevOps model by running Wechaty as a microservice in a [docker](https://www.docker.com/) container. To get a taste of Wechaty and docker, there is a [docker-wechaty-getting-started repository](https://github.com/wechaty/docker-wechaty-getting-started) which you can clone and run on your machine with zero configuration.
+Wechaty is fully dockerized. You can integrate Docker as part of your DevOps model by running Wechaty as a microservice in a [docker](https://www.docker.com/) container. To get a taste of Wechaty and Docker, there is a [docker-wechaty-getting-started repository](https://github.com/wechaty/docker-wechaty-getting-started) which you can clone and run on your machine with zero configuration.
