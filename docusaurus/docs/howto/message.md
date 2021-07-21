@@ -5,7 +5,21 @@ title: 'Dealing with message'
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
+## Messages
 Automation of messages can be done easily  with wechaty onMessage function. This guide will give you a step by step overview of how to respond to self messages or messages in a room.
+
+## Prerequisites
+
+* Your system must have [Node.js](https://nodejs.org/en/download/package-manager/) installed (version >= 12).
+* Your system must have [Wechaty](https://github.com/wechaty/wechaty) (version >= 0.40).
+* You need to be familiar with the basics of Wechaty platform. If not, follow our [tutorials](https://wechaty.js.org/docs/tutorials/) section.
+* You need to have at least a minimal application ready to work, follow one of our [Example/Friend-Bot](https://wechaty.js.org/docs/examples/advanced/friend-bot/).
+
+### If you don't know where to start from
+
+See [Running our first ding-dong bot](https://wechaty.js.org/docs/getting-started/quick-start).
+
+The below function needs a basic scipt that can help run the bot. The basic script starts by importing the code from [Github/Friend-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/friend-bot.ts).Integrate the below code, for this action to work.
 
 ## Mention
 
@@ -142,7 +156,7 @@ class MyBot(Wechaty):
 </Tabs>
 
 The expected output of the JavaScript code is:
-![Message](../../static/img/docs/howto/message/message1.png)
+![Message](../../static/img/docs/howto/message/message1.webp)
 
 ## Self message
 
@@ -271,4 +285,4 @@ class MyBot(Wechaty):
 </Tabs>
 
 The expected output of the JavaScript code is:
-![Message](../../static/img/docs/howto/message/message.png)
+![Message](../../static/img/docs/howto/message/message.webp)
