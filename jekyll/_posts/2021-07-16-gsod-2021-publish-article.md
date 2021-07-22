@@ -12,7 +12,6 @@ tags:
 image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
 ---
 
-> 作者: [juzibot](https://github.com/juzibot/)
 > 感谢点进我的博客，非常荣幸能够和你分享2021GSoD与Wechaty的相关发展情况。
   今年，Wechaty已经与GSoD达成合作，请求的预算9500美元也已经被批准。
  ![gsodandwechaty1](/assets/2021/07-gsod-2021-publish-article/gsodandwechaty1.webp)
