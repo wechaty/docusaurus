@@ -144,9 +144,6 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
-The expected output of the JavaScript code is:
-![All contacts](../../static/img/docs/howto/contact/all-contact.png)
-
 ## Search in contacts - define how to search within contacts
 
 This guide help you find your contact from the list of contacts from the Instant messaging platform you choose to intergrate this bot.
@@ -278,5 +275,7 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
-The expected output of the JavaScript code is:
-![Contact Search](../../static/img/docs/howto/contact/contact-find.png)
+## References
+
+* [Wechaty Getting Started GitHub repository](https://github.com/wechaty/wechaty-getting-started).
+* [Wechaty Bot Example](https://github.com/wechaty/wechaty/tree/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples).
