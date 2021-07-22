@@ -7,7 +7,7 @@ import TabItem from '@theme/TabItem'
 
 Use the guide to help you integrate additional functions to an existing project which is present at [Github/Media Bot](https://github.com/wechaty/wechaty-getting-started/blob/master/examples/advanced/media-file-bot.js) or check that your existing local system will run on Wechaty. If, you wish to learn on how to build the bot on your own, please visit one of our [Building the bot](https://wechaty.js.org/docs/examples/advanced/media-file-bot) section.
 
-The steps outlined here mainly focus on working with Javascript, but user are free to switch between any languages. All wechaty contacts are encapsulated as a Contact.
+The steps outlined here mainly focus on working with Javascript, but the user is free to switch between any languages. All wechaty contacts are encapsulated as a Contact.
 
 ## Prerequisites
 
