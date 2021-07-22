@@ -9,8 +9,6 @@ tags:
 image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg
 ---
 
-> 作者: [atorber](https://github.com/atorber/)，一个不务正业的产品经理
-
 ## 谁是这篇博客读者
 
 很高兴能执笔这篇博客，第一次使用github向wechaty社区提交博客时Q到了@huan（提交了十几次才最终通过），因此也被印象深刻了。今天和大家分享一下零基础或有那么一丢丢基础的小白如何从0到1的在wechaty发布博客（成为一个贡献者）。
@@ -76,7 +74,7 @@ image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg
 
 5. **添加你的博客文件到`jekyll/_post`文件夹**
 
-    打开下载下来的代码，整个博客的书写仅需要在jekyll这个目录下操作，不要动也不要管其他目录，正文放在jekyll/_post`下，其他文件下边会说，一下以当前这篇博客为例讲解，个人认为学习此类知识最好的方式就是Copy and Modify（俗称临摹）。
+    打开下载下来的代码，整个博客的书写仅需要在jekyll这个目录下操作，不要动也不要管其他目录，正文放在jekyll/_post`下，其他文件下边会说，一下以当前这篇博客为例讲解，个人认为学习此类知识最好的方式就是Copy and Modify（如同小学生写作为一样临摹，复制、粘贴、重命名、改内容，四部曲）。
 
     例如本文正文,是在`jekyll/_post`目录下创建名为`2021-04-22-how-to-publish-blog-on-wechaty.md`的文件并在里边写正文内容。
 
@@ -161,7 +159,7 @@ image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg
 
 11. 签署CLA
 
-    什么CLA？后边说，到自动检查的步骤会提示，首次签署时刘毅页面提示，超哥因为之前已经签署过了，暂时没办法操作截图，后边不上
+    什么CLA？后边说，到自动检查的步骤会提示，首次签署时留意页面提示，超哥因为之前已经签署过了，暂时没办法操作截图，后边补上
 
 12. 等待传递GitHub操作CI，或者修复任何东西以确保CI变为绿色
 
@@ -199,20 +197,20 @@ image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg
 
   更多： [将iframe添加到wechaty博客](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)
 
-### 测试（进阶内容，可以了解下）
+### 测试（进阶内容，可以了解下，在本地npm完整的jekyll）
 
 为了确保一切（文件名、文件大小等）都正常，可以在“git push”之前运行以下命令检查它们。
 
 ```sh
 npm install
-npm test
+npm run test
 ```
 
 ### 预览
 
 在本地运行Jekyll来预览博客。
 
-——什么是Jekyll，自定百度
+——什么是Jekyll，自行百度
 
 #### 0. 依赖
 
