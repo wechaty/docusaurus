@@ -2,7 +2,7 @@
 title: Deploy in WeChat
 ---
 
-With all-in-one system and massive audience base, deploying WeChaty in WeChat can prove to be a good choice.In this how to guide, you will learn how to deploy the bot in WeChat locally.
+With all-in-one system and massive audience base, deploying WeChaty in WeChat can prove to be a good choice.In this how to guide, you will learn how to deploy the bot in WeChat locally and integrate bot from the list of example present in [starter templete](https://github.com/wechaty/wechaty-getting-started).
 
 ![Deploy in WeChat](../../static/img/docs/howto/IM_platform/deploy-wechat.webp)
 
@@ -13,6 +13,8 @@ With all-in-one system and massive audience base, deploying WeChaty in WeChat ca
 3. You must be familiar with [Wechaty Plugins](https://www.npmjs.com/package/wechaty-plugin-contrib).
 
 ## Deployment
+
+Run `wechaty-puppet-wechat`:
 
 <!-- MDX import -->
 import Tabs from '@theme/Tabs'
@@ -57,9 +59,9 @@ npm start
 </TabItem>
 </Tabs>
 
-## Example
+## Integration
 
-Let's take up an example on how to integrate bot from [starter templete](https://github.com/wechaty/wechaty-getting-started) to WeChat.The steps are similar for all other bots as well.
+Let's take up an example on how to integrate bot from [starter templete](https://github.com/wechaty/wechaty-getting-started) to WeChat. The step is similar for all other bots as well.
 
 ### Prerequisite
 
@@ -68,7 +70,7 @@ Let's take up an example on how to integrate bot from [starter templete](https:/
 
 You can follow up the steps mentioned below:
 
-<ol><li> Initialise the project by creating a new folder `my-bot`.</li>
+<ol><li> Initialize the project by creating a new folder `my-bot`.</li>
 
 ```bash
 mkdir my-bot
@@ -128,3 +130,8 @@ You can deploy the bot with popular container solutions as well such as:
 
 * Find out some more information about puppet from [docs/puppet-providers](https://wechaty.js.org/docs/puppet-providers/).
 * Find out the more bot repository from [wechaty-getting-started](https://github.com/wechaty/wechaty-getting-started).
+
+## Blogs
+
+* [Teach you to use python-wecahty and web protocol to develop robots](https://wechaty.js.org/2021/04/17/python-wechaty-use-web/).
+* [Teach you to use go-wecahty and web protocol to develop robots](https://wechaty.js.org/2021/04/16/go-wechaty-use-web/).
