@@ -2,7 +2,7 @@
 title: Deploy in Lark
 ---
 
-Lark provides highly-productive collaboration experience for optimal team efficiency and features like messenger, calendar, docs, mail, workplace and more. In this how to guide, you will learn how to deploy the bot in Lark locally.
+Lark provides highly-productive collaboration experience for optimal team efficiency and features like messenger, calendar, docs, mail, workplace and more. In this how to guide, you will learn how to deploy the bot in Lark locally and integrate bot from the list of example present in [starter templete](https://github.com/wechaty/wechaty-getting-started).
 
 ![Deploy in Lark](../../static/img/docs/howto/IM_platform/deploy-lark.webp)
 
@@ -10,7 +10,7 @@ Lark provides highly-productive collaboration experience for optimal team effici
 
 1. Your system must have [Node.js](https://nodejs.org/en/download/package-manager/) installed (version >= 12).
 2. Your system must have [Wechaty](https://github.com/wechaty/wechaty) (version >= 0.40).
-3. You must be familiar with [Wechaty Plugins](https://www.npmjs.com/package/wechaty-plugin-contrib).
+3. You must be familiar with [Wechaty puppet lark](https://www.npmjs.com/package/wechaty-puppet-lark).
 
 ## Deployment
 
@@ -57,9 +57,9 @@ npm start
 </TabItem>
 </Tabs>
 
-## Example
+## Integration
 
-Let's take up an example on how to integrate bot from [starter templete](https://github.com/wechaty/wechaty-getting-started) to Lark. The steps are similar for all other bots as well.
+Let's take up an example on how to integrate bot from [starter templete](https://github.com/wechaty/wechaty-getting-started) to Lark. The step is similar for all other bots as well.
 
 ### Prerequisite
 
@@ -72,7 +72,7 @@ Let's take up an example on how to integrate bot from [starter templete](https:/
 
 You can follow up the steps mentioned below:
 
-<ol><li> Initialise the project by creating a new folder `my-bot`.</li>
+<ol><li> Initialize the project by creating a new folder `my-bot`.</li>
 
 ```bash
 mkdir my-bot
