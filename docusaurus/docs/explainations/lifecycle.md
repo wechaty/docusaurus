@@ -7,6 +7,10 @@ title: Wechaty Chatbot development lifecycle
 Wechaty is an exciting SDK for developing chatbots for popular Instant Messaging systems such as Wechat, Whatsapp, and Gitter. It provides developers with the unique capability of building chatbots that meet their needs and requirements. If you are thinking of building a chatbot using Wechaty, careful planning is recommended to increase your chances of success just like in any other software project. Below is an end-to-end process worth looking into when using Wechaty to build a chatbot:
 
 <!-- Insert the lifecycle diagram here -->
+![image](https://user-images.githubusercontent.com/82779784/126644162-fc5cc70c-7ca9-4e8e-b716-4b3a29c207de.png)
+
+
+
 
 - **Articulate business requirements**
 
