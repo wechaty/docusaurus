@@ -10,11 +10,9 @@ With all-in-one system and massive audience base, deploying WeChaty in WeChat ca
 
 1. Your system must have [Node.js](https://nodejs.org/en/download/package-manager/) installed (version >= 12).
 2. Your system must have [Wechaty](https://github.com/wechaty/wechaty) (version >= 0.40).
-3. You must be familiar with [Wechaty Plugins](https://www.npmjs.com/package/wechaty-plugin-contrib).
+3. You must be familiar with [wechaty puppet wechat](https://www.npmjs.com/package/wechaty-puppet-wechat).
 
 ## Deployment
-
-Run `wechaty-puppet-wechat`:
 
 <!-- MDX import -->
 import Tabs from '@theme/Tabs'
