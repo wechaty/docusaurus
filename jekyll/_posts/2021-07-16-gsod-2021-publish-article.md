@@ -84,7 +84,7 @@ image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
       你也可以了解[相关博客](https://wechaty.js.org/2021/07/06/gsod-2021-fifth-meeting/)和[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.s6s37xc2auay)
      ![5th](/assets/2021/07-gsod-2021-publish-article/5th.webp)
 
-   7月18日：进行了GSoD第六次会议，同样，每个参与者都进行了一周总结与下一周的计划，志愿者和技术文档撰写工程师进行了讨论，并进行了问答环节，讨论和解决了大家存在的问题。     
+   7月18日：进行了GSoD第六次会议，同样，每个参与者都进行了一周总结与下一周的计划，志愿者和技术文档撰写工程师进行了讨论，并进行了问答环节，讨论和解决了大家存在的问题。
      你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.i4kw5zu3yk32)
      ![6th](/assets/2021/07-gsod-2021-publish-article/6th.webp)
 
