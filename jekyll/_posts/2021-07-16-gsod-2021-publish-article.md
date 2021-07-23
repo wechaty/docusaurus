@@ -72,7 +72,7 @@ image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
      你也可以了解[相关博客](https://wechaty.js.org/2021/05/23/gsod-2021-second-meeting/)和[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.3ly9biu8mtyy)
      ![2nd](/assets/2021/07-gsod-2021-publish-article/2nd.webp)
 
-   6月6日：进行了GSoD第三周会议，每位与会者首先做了一周的总结，并向社区汇报了他们下一周的计划，提出了对大型PRs的关注，讨论了PRs的范围和规模，对于缺乏每周跟进的团队分别解释了原因。Simin说明了需要注意的相关事项并向大家进行了演示。最后进行问答环节，并合影留念。
+   6月6日：进行了GSoD第三周会议，每位与会者首先做了一周的总结，并向社区汇报了他们下一周的计划，提出了对大型PRs的关注，讨论了PRs的范围和规模，对于缺乏每周跟进的团队分别解释了原因。Simin说明了需要注意的相关事项并向大家进行了演示。进行问答环节，并合影留念。
      你也可以了解[相关博客](https://wechaty.js.org/2021/06/06/gsod-2021-third-meeting/)和[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.lmf3j0zgmymr)
      ![3rd](/assets/2021/07-gsod-2021-publish-article/3rd.webp)
 
