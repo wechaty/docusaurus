@@ -14,8 +14,27 @@ import TabItem from '@theme/TabItem'
 [![NPM Version](https://badge.fury.io/js/wechaty-puppet-lark.svg)](https://badge.fury.io/js/wechaty-puppet-lark)
 [![npm (tag)](https://img.shields.io/npm/v/wechaty-puppet-lark/next.svg)](https://www.npmjs.com/package/wechaty-puppet-lark?activeTab=versions)
 
-- Repo: <https://github.com/wechaty/wechaty-puppet-lark>
-- Support & Feedback: <https://github.com/wechaty/wechaty-puppet-lark/issues>
+Operation method
+
+Configure system environment variables
+
+- WECHATY_PUPPET_LARK_APPID: App ID of Feishu application
+- WECHATY_PUPPET_LARK_APPSECRET: App Secret of Feishu application
+- WECHATY_PUPPET_LARK_TOKEN: Verification Token provided by Feishu event subscription platform
+
+Installation dependencies
+
+Clone the code to the local, execute npm install
+Feishu platform configuration
+
+To obtain functional permissions on Feishu platform, please refer to: Feishu Open Platform-Application Permission.
+Run the sample code
+
+```sh
+ts-node .\examples\ding-dong-bot.ts
+```
+
+Follow the prompts to complete the URL configuration, you can run the example robot.
 
 ## Features
 
@@ -62,13 +81,14 @@ npm start
 </TabItem>
 </Tabs>
 
-## Roadmap
-
-- to be added
-
 ## History
 
 - [基于开放 API 封装 Wechaty 接口下的飞书聊天机器人, 范蕊, Sep 30, 2020](https://wechaty.js.org/2020/09/30/wechaty-puppet-lark-final-blog/)
+
+## Important Links
+
+- Repo: <https://github.com/wechaty/wechaty-puppet-lark>
+- Support & Feedback: <https://github.com/wechaty/wechaty-puppet-lark/issues>
 
 ## Maintainers
 

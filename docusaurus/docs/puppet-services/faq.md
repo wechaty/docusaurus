@@ -10,12 +10,10 @@ We have a great blog post to explain those terms in detail. Please read: [Introd
 
 ## How To Become a Wechaty Puppet Service Provider
 
-To be written.
+If you want to become a Wechaty Puppet Service Provider, please do not hesitate to file an issue to introduce yourself in this repository, then contact rui@chatie.io!
 
 Please feel free to list yourself to our list at [Wechaty Puppet Provider Repo](https://github.com/wechaty/puppet-services/), and add your introduction in this README by submitting a Pull Request!
 
-If you want to become a Wechaty Puppet Service Provider, please do not hesitate to file an issue to introduce yourself in this repository, then contact rui@chatie.io!
-
-Learn more about the Wechaty Puppet Service Providers from:
+## Learn More
 
 More Puppet Service Providers are welcomed, please learn more from [here](https://github.com/wechaty/puppet-services) and feel free to contact us by joining our Gitter network if you aren’t already a member.
