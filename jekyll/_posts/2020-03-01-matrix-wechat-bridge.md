@@ -10,7 +10,7 @@ image: /assets/2020/matrix-wechaty/2020-03-matrix-appservice-wechaty.png
 
 > 作者: [立音](https://github.com/cubesky)，个人开发者。首发于博客: [使用 Matrix 接收微信消息](https://liyin.date/2020/03/01/matrix-wechat-bridge/) 遵循 CC BY-NC-SA 3.0 CN
 
-[![Wechaty AppService Bridge for [Matrix]](/assets/2020/matrix-wechaty/2020-03-matrix-appservice-wechaty.png)](https://github.com/chatie/matrix-appservice-wechaty)
+[![Wechaty AppService Bridge for [Matrix]](/assets/2020/matrix-wechaty/2020-03-matrix-appservice-wechaty.png)](https://github.com/wechaty/matrix-appservice-wechaty)
 
 <!-- more -->
 
@@ -44,7 +44,7 @@ nvm install v10.18.0
 
 ## 使用 Yarn
 
-虽然 [matrix-appservice-wechaty](https://github.com/chatie/matrix-appservice-wechaty) 的 README 上写着使用 `npm install -g matrix-appservice-wechaty` 进行安装，但在我安装的过程中，反复遇到在安装 grpc 时执行 node-pre-gyp 失败的问题，经过多方查找发现，使用 Yarn 管理器就可以快速解决这个问题，所以我们先安装 Yarn。  
+虽然 [matrix-appservice-wechaty](https://github.com/wechaty/matrix-appservice-wechaty) 的 README 上写着使用 `npm install -g matrix-appservice-wechaty` 进行安装，但在我安装的过程中，反复遇到在安装 grpc 时执行 node-pre-gyp 失败的问题，经过多方查找发现，使用 Yarn 管理器就可以快速解决这个问题，所以我们先安装 Yarn。  
 
 ```bash
 npm install -g yarn
@@ -71,7 +71,7 @@ yarn global add wechaty-puppet-后端名
 
 ## 创建配置文件
 
-先复制 [config.sample.yaml](https://github.com/chatie/matrix-appservice-wechaty/blob/master/config/config.sample.yaml)  到 config.yaml ，我建议单独为它创建一个文件夹，方便之后将所有的数据文件都放在这一个文件夹里。  
+先复制 [config.sample.yaml](https://github.com/wechaty/matrix-appservice-wechaty/blob/master/config/config.sample.yaml)  到 config.yaml ，我建议单独为它创建一个文件夹，方便之后将所有的数据文件都放在这一个文件夹里。  
 
 ```yml
 domain: chatie.io
