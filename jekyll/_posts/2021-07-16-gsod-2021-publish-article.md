@@ -34,7 +34,7 @@ image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
 - Wechaty的使命：给聊天机器人的开发者提供一个最好的开源sdk，给开发者最好的体验。帮助开发者能够更多关注于逻辑应用，把精力集中于编写上层应用的代码，而不是把时间花在与平台的底部对接上。
 - Wechaty在2月份的时候就开始着手准备2021年的GSoD。在Wechaty于4月16日正式宣布加入2021GSoD后，联系了多位技术文档撰写工程师，几乎所有的提案都在详细规划和深刻研究。
 
-### 为什么选择Wechaty
+### 为何选择Wechaty
 
 - 五年技术沉淀：Wechaty (Conversational RPA SDK) 2016 年发布于 GitHub，是一个基于 Apache-2.0 许可证的开源项目。经过5年多的发展，现在 Wechaty 开源社区已经拥有数十位 Committers，百余位 Contributors ，并被超过一万名 GitHub 开发者 Star。目前，使用 Wechaty 的开发者已覆盖数万人，并拥有基于微信群的数千人活跃开发者群。
 - 用户遍布全球：Wechaty 社区的 Contributors 遍布全球多个国家地区，和各大互联网公司，职业背景从程序员到设计师，从大学教授到创业者。GitHub 上有千余个开源项目基于 Wechaty 构建了聊天机器人，这些开发者用户也极大地促进了社区的活跃和发展。
