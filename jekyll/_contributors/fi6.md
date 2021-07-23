@@ -1,7 +1,7 @@
 ---
 name: FlappyIce (Elvis Niu)
 site: https://github.com/fi6
-avatar: 
+avatar: /assets/contributors/fi6/avatar.jpeg
 bio: NEU MS Robotics, 做自己喜欢的事，做对社会有贡献的事
 email: flappyice73@outlook.com
 ---
