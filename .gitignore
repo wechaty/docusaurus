@@ -12,3 +12,5 @@ new-gh-pages/
 tmp/
 
 hash.file
+*.md
+*.png
