@@ -2,7 +2,7 @@
 name: mangguo188
 site: <https://github.com/mangguo188>
 bio: 华理学子
-avatar: /assets/contributors/magguo188/avatar.webp
+avatar: /assets/contributors/mangguo188/avatar.webp
 email: 1017137803@qq.com
 
 ---
