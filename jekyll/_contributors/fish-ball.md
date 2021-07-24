@@ -1,7 +1,7 @@
 ---
 name: fish-ball
 site: https://github.com/fish-ball
-avatar: /assets/contributors/fish-ball/avatar.png
+avatar: /assets/contributors/fish-ball/avatar.webp
 bio: 分母为零的斜杠大龄青年程序员
 email: 
 twitter: 
