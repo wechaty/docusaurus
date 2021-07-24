@@ -2,7 +2,7 @@
 title: Deploy in Lark
 ---
 
-Lark provides highly-productive collaboration experience for optimal team efficiency and features like messenger, calendar, docs, mail, workplace and more. In this how to guide, you will learn how to deploy the bot in Lark locally and integrate bot from the list of example present in [starter templete](https://github.com/wechaty/wechaty-getting-started).
+Lark provides highly-productive collaboration experience for optimal team efficiency and features like messenger, calendar, docs, mail, workplace and more. In this how to guide, you will learn how to deploy the bot in Lark locally and integrate bot from the list of examples present in [starter templete](https://github.com/wechaty/wechaty-getting-started).
 
 ![Deploy in Lark](../../static/img/docs/howto/IM_platform/deploy-lark.webp)
 
@@ -72,26 +72,26 @@ Let's take up an example on how to integrate bot from [starter templete](https:/
 
 You can follow up the steps mentioned below:
 
-<ol><li> Initialize the project by creating a new folder `my-bot`.</li>
+1. Initialize the project by creating a new folder `my-bot`:
 
 ```bash
 mkdir my-bot
 cd my-bot
 ```
 
-<li> Install the dependencies using the following commands:</li>
+2. Install the dependencies using the following commands:
 
 ```bash
 npm install wechaty
 ```
 
-<li> Add the dependencies for using the bot with Lark.</li>
+3. Add the dependencies for using the bot with Lark:
 
 ```bash
 npm install wechaty-puppet-lark
 ```
 
-<li> Create a new folder `src` and add a file `my-bot.js`. Add any of the functions from <a href="#"> add functionality to the bot</a> section to the snippet below:</li>
+4. Create a new folder `src` and add a file `my-bot.js`. Add any of the functions from <a href="#"> add functionality to the bot</a> section to the snippet below:
 
 ```bash
 const {
@@ -110,9 +110,9 @@ const bot = new Wechaty()
  */
 ```
 
-<li> Obtain youur functional permissions on Feishu platform from <a href="https://open.feishu.cn/document/ukTMukTMukTM/uQjN3QjL0YzN04CN2cDN"> Feishu Open Platform-Application Permission.</a></li>
+5. Obtain youur functional permissions on Feishu platform from [Feishu Open Platform-Application Permission](https://open.feishu.cn/document/ukTMukTMukTM/uQjN3QjL0YzN04CN2cDN).
 
-<li> After you are done with the file, you can run the bot using the following commands:</li></ol>
+6. After you are done with the file, you can run the bot using the following commands:
 
 ```bash
 export WECHATY_LOG=verbose
