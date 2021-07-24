@@ -1,7 +1,7 @@
 ---
 name: gileswong
 site: https://github.com/gileswong
-avatar: /assets/contributors/gileswong/avatar.png
+avatar: /assets/contributors/gileswong/avatar.webp
 bio: For a better me
 email: i.wg@foxmail.com
 ---

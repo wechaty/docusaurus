@@ -1,7 +1,7 @@
 ---
 name: xinbenlv
 site: https://github.com/xinbenlv
-avatar: /assets/contributors/xinbenlv/avatar.png
+avatar: /assets/contributors/xinbenlv/avatar.webp
 bio: Google Engineer, Founder of HaoShiYou. HaoShiYou has many 500 people Wechat groups, which is a massive work for human.
 email: 
 twitter: 

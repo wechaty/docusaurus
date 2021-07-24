@@ -1,7 +1,7 @@
 ---
 name: Li Ming
 site: https://github.com/limingth
-avatar: /assets/contributors/limingth/avatar.png
+avatar: /assets/contributors/limingth/avatar.webp
 bio: Founder of Maodou
 email: 
 twitter: 
