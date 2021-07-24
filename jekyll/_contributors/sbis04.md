@@ -1,7 +1,7 @@
 ---
 name: Souvik Biswas
 site: https://github.com/sbis04
-avatar: /assets/contributors/sbis04/avatar.jpg
+avatar: /assets/contributors/sbis04/avatar.webp
 bio: Passionate mobile app developer, Freelance technical writer @ Codemagic
 email: sbis1999@gmail.com
 twitter: https://twitter.com/sbis04

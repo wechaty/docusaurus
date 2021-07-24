@@ -1,7 +1,7 @@
 ---
 name: Rosheen Naeem
 site: https://roshnaeem.github.io/
-avatar: /assets/contributors/roshnaeem/avatar.jpg
+avatar: /assets/contributors/roshnaeem/avatar.webp
 bio: Nothing hard comes easy
 email: rosheennaeem4@gmail.com
 twitter: https://twitter.com/RosheenNaeem

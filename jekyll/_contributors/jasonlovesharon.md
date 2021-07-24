@@ -1,7 +1,7 @@
 ---
 name: jasonlovesharon
 site: https://github.com/jasonlovesharon
-avatar: /assets/contributors/jasonlovesharon/avatar.png
+avatar: /assets/contributors/jasonlovesharon/avatar.webp
 bio: python developer
 email: 54027901@163.com
 ---
