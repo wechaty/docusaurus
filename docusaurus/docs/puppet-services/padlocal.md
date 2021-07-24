@@ -23,7 +23,7 @@ Go to [pad-local.com](http://pad-local.com/) to avail a **FREE** trail token for
 ### Environment
 
 - Local mobile phone (iPad or mobile phone is fine)
-- PC (Mac is used in this article)
+- PC (Mac is used here)
 - Virtual machine for puppet on Alibaba Cloud
 
 ## Architecture
