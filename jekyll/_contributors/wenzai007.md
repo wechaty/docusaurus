@@ -1,7 +1,7 @@
 ---
 name: wenzai007
 site: https://github.com/wenzai007
-avatar: /assets/contributors/wenzai007/avatar.png
+avatar: /assets/contributors/wenzai007/avatar.webp
 bio: No step, no mile
 email: zwzistheking@gmail.com
 twitter: 

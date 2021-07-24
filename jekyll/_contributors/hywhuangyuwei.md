@@ -1,7 +1,7 @@
 ---
 name: hywhuangyuwei
 site: https://github.com/hywhuangyuwei
-avatar: /assets/contributors/hywhuangyuwei/avatar.jpg
+avatar: /assets/contributors/hywhuangyuwei/avatar.webp
 bio: Major in software engineering in BUAA
 email: hywhuangyuwei@163.com
 ---
