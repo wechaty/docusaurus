@@ -193,9 +193,9 @@ const { Wechaty, log } = require("wechaty");
 
 const qrTerm = require("qrcode-terminal");
 
-const bot = new Wechaty(
+const bot = new Wechaty({
   name: "busy-bot",
-);
+})
 ```
 
 Assigning proper functions to call when an event is triggered.
