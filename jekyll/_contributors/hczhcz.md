@@ -1,7 +1,7 @@
 ---
 name: hczhcz
 site: https://github.com/hczhcz
-avatar: /assets/contributors/hczhcz/avatar.png
+avatar: /assets/contributors/hczhcz/avatar.webp
 bio: An open source coder and fan of the TOAD
 email: 
 twitter: 

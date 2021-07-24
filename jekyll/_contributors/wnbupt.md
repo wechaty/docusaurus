@@ -1,7 +1,7 @@
 ---
 name: wangning
 site: https://github.com/wnbupt
-avatar: /assets/contributors/wnbupt/avatar.png
+avatar: /assets/contributors/wnbupt/avatar.webp
 bio: a postgraduate student at BUPT, a frontend full stack engineer, with rich Machine Learning/NLP/Image project experiences.
 email: 
 twitter: 
