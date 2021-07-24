@@ -1,7 +1,7 @@
 ---
 name: yinizhilian
 site: https://github.com/yinizhilian
-avatar: /assets/contributors/yinizhilian/avatar.png
+avatar: /assets/contributors/yinizhilian/avatar.webp
 bio: a little coder && we media
 email: 419516477@qq.com
 Zhihu: https://www.zhihu.com/people/wangjini521
