@@ -38,7 +38,7 @@ There is a `TODO` where you have to specify one of your friends' name (the CodeS
 
 ## Getting Started
 
-Before getting started make sure you have `Node` installed on your system. If you do not have `Node.js` installed (or have a version below 12),
+Before getting started make sure you have `Node.js` installed on your system. If you do not have `Node.js` installed (or have a version below 12),
 then you need to install the latest version of `Node.js` by following the links below:
 
 :::note Node.js installation docs
@@ -126,7 +126,7 @@ This will generate a QR code. Scan it using **Wechat/Whatsapp** and you are read
 
 Let's get started with building **room-bot** using Wechaty.
 
-### 1. Initialise project
+### 1. Initializse project
 
 Create a new folder called `room-bot` and move into that directory.
 
@@ -135,7 +135,7 @@ mkdir room-bot
 cd room-bot
 ```
 
-Use the following command to initialise an npm project
+Use the following command to initialize an npm project
 
 ```bash
 npm init -y
@@ -270,7 +270,7 @@ async function manageDingRoom() {
 
 **checkRoomJoin**
 
-This function checks who can send an invitation and who can't. If the invitation is sent by the owner, then a person can join room otherwise the invitation is cancelled and person has to resend `ding` to owner so that he can send him the new valid invitation.
+This function checks who can send an invitation and who can't. If the invitation is sent by the owner, then the person could join the room. Otherwise, the invitation will be cancelled and the person has to resend ding to the owner so that the owner can send him/her a new valid invitation.
 
 ```js
 async function checkRoomJoin(room, inviteeList, inviter) {
@@ -398,7 +398,7 @@ async function createDingRoom(contact) {
 }
 ```
 
-Now initialising the bot by providing the name.
+Now initializing the bot by providing the name.
 
 ```js
 const bot = new Wechaty({
