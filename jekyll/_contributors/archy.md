@@ -2,7 +2,7 @@
 name: Archy Will He (何魏奇)
 site: https://0a.io
 bio: creator of lo.fish
-avatar: /assets/contributors/archy/avatar.png
+avatar: /assets/contributors/archy/avatar.webp
 email: a@0a.io
 twitter: https://twitter.com/Al2CHY
 ---

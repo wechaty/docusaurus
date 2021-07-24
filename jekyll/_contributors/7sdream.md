@@ -1,7 +1,7 @@
 ---
 name: 7sDream
 site: https://7sdre.am/
-avatar: /assets/contributors/7sdream/avatar.png
+avatar: /assets/contributors/7sdream/avatar.webp
 bio: Backend engigneer using Golang/NodeJS/C++ in Tencent, Rustaceans in life.
 email: wechaty@7sdre.am
 twitter: https://twitter.com/7sDream
