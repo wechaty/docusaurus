@@ -92,7 +92,7 @@ To send an image message to your Gitter room, three API calls are required:
 
 Here’s the demo source code for sending an image message to a Gitter room with Wechaty:
 
-```sh
+```ts
 const { Wechaty, FileBox } from 'wechaty'
 
 const wechaty = new Wechaty({
