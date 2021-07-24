@@ -2,7 +2,7 @@
 name: CoderLIYI (李艺)
 site: https://yishulun.com
 bio: 日行一课联合创始人兼CTO，腾讯云TVP，《小程序从0到1》作者，PBL实践者
-avatar: /assets/contributors/rixingyike/avatar.png
+avatar: /assets/contributors/rixingyike/avatar.webp
 email: 9830131@qq.com
 twitter: https://weibo.com/ixiaochengxu
 ---

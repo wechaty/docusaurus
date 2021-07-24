@@ -1,7 +1,7 @@
 ---
 name: Jinglei Ren
 site: https://persper.org
-avatar: /assets/contributors/basicthinker/avatar.jpg
+avatar: /assets/contributors/basicthinker/avatar.webp
 bio: 
 email: jinglei@persper.org
 twitter: 
