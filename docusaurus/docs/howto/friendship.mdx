@@ -22,7 +22,7 @@ The steps outlined here mainly focuses on working with Javascript, but user are 
 
 See [Running our first ding-dong bot](https://wechaty.js.org/docs/getting-started/quick-start).
 
-The below function needs a basic scipt that can help run the bot. The basic script starts by importing the code from [Github/Friend-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/friend-bot.ts).Integrate the below code, for this action to work.
+The below function needs a basic script that can help run the bot. The basic script starts by importing the code from [Github/Friend-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/friend-bot.ts).Integrate the below code, for this action to work.
 
 ## Send Request - define how to send a friend request
 
@@ -140,9 +140,6 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
-The expected output of the JavaScript code is:
-![Send Request](../../static/img/docs/howto/friendship/send-request.png)
-
 ## Receive Request - define how to accept the friend request
 
 When someone sends you the request, you choose whether to have the friend connection or to reject the connection. This section elaborates on how to accept friend requests. When someone sends you the request, the `friendship.contact()` helps you list down all the contacts with a hello message from `friendship.hello()` and then when the user accepts the request, it prints out with a confirmation message using `friendship.contact().name()`.
@@ -256,6 +253,3 @@ class MyBot(Wechaty):
 
 </TabItem>
 </Tabs>
-
-The expected output of the JavaScript code is:
-![Recieve Request](../../static/img/docs/howto/friendship/receive-request.png)
