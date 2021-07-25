@@ -1,7 +1,7 @@
 ---
 name: Xiaoyao Li
 site: https://github.com/mrwis
-avatar: /assets/contributors/mrwis/avatar.png
+avatar: /assets/contributors/mrwis/avatar.webp
 bio: I am learning program with python
 email: mailto:mrwis.com@gmail.com
 twitter: https://twitter.com/andyli1991
