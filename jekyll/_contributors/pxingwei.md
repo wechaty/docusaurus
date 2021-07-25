@@ -1,7 +1,7 @@
 ---
 name: Sam
 site: https://github.com/PXingwei
-avatar: /assets/contributors/pxingwei/avatar.png
+avatar: /assets/contributors/pxingwei/avatar.webp
 bio: 乐于接受挑战
 email: 
 twitter: 

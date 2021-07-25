@@ -1,7 +1,7 @@
 ---
 name: Yoke
 site: https://github.com/jiangxiaotao1024
-avatar: /assets/contributors/jiangxiaotao1024/avatar.png
+avatar: /assets/contributors/jiangxiaotao1024/avatar.webp
 bio: 
 email: 1024186209@qq.com
 twitter: 
