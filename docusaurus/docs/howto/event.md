@@ -55,7 +55,7 @@ The <i>PUPPET-PROVIDER</i> represents the messaging platform you want to integra
 
 `"start": "node bot.js"`
 
-<img src="../../static/img/docs/howto/event/package-json.png"></img>
+<img src="../../static/img/docs/howto/event/package-json.webp"></img>
 
 <li> In the terminal, type the following commands:</li>
 
