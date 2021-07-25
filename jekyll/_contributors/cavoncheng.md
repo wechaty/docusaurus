@@ -2,7 +2,7 @@
 name: CavonCheng (程树)
 site: https://github.com/CavonCheng
 bio: 保险管理行业从业者，Java攻城狮，python数据分析师，nodejs全栈修炼者
-avatar: /assets/contributors/cavoncheng/avatar.jpg
+avatar: /assets/contributors/cavoncheng/avatar.webp
 email: 853115343@qq.com
 twitter: https://weibo.com/u/1817428161
 ---

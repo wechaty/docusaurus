@@ -1,7 +1,7 @@
 ---
 name: SuperChang
 site: https://github.com/su-chang
-avatar: /assets/contributors/su-chang/avatar.png
+avatar: /assets/contributors/su-chang/avatar.webp
 bio: Node.js全栈工程师
 email: 
 twitter: 

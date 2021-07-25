@@ -1,7 +1,7 @@
 ---
 name: Abhishek Jaiswal
 site: https://github.com/abhishek-iiit
-avatar: /assets/contributors/abhishek/avatar.png
+avatar: /assets/contributors/abhishek/avatar.webp
 bio: Love to contribute to open source projects 
 email: mailto:abhishek.iiitbbsr@gmail.com
 twitter: https://twitter.com/abhishek__iiit
