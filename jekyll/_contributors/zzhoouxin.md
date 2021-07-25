@@ -1,7 +1,7 @@
 ---
 name: zzhoouxin
 site: https://github.com/zzhoouxin
-avatar: /assets/contributors/zzhoouxin/avatar.png
+avatar: /assets/contributors/zzhoouxin/avatar.webp
 bio: A boy who loves to play
 email: 
 twitter: 
