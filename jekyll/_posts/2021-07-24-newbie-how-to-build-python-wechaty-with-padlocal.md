@@ -22,14 +22,14 @@ image: /assets/2021/07-newbie-how-to-build-python-wechaty-with-padlocal/rare-boo
 
 - 本文阅读的难度不大，按照文中的标准操作，大概率会能够自主的搭建相应的应用服务环境，并完成一个基本功能的实现。但本文要求读者必须具备基本的编程技能，在服务端领域能够知道RPC（Remote Procedure Call)、Docker的相关基本知识，如果对这方面内容不了解，可以查阅 Reference 的相关部分。
 
-- 在执行本文中提供的 Gateway 服务脚本时，需要提前确保执行机上的 Docker Daemon 是否正常启动，否则shell脚本执行失败。 
+- 在执行本文中提供的 Gateway 服务脚本时，需要提前确保执行机上的 Docker Daemon 是否正常启动，否则shell脚本执行失败。
 
 ## 试验环境
 
 - macOS Ver:11.5
 - Python 3.8
 - Docker desktop (latest)
- 
+
 ## 内容介绍
 
 本篇Blog会从以下三个方面内容来描述如何快速的能够完成一个最简单的Python-Wechaty应用的搭建，同时对一些过程中可能遇到的问题，进行及时的处理。
@@ -45,6 +45,7 @@ image: /assets/2021/07-newbie-how-to-build-python-wechaty-with-padlocal/rare-boo
 ![基本结构](/assets/2021/07-newbie-how-to-build-python-wechaty-with-padlocal/wechaty-architecture.jpg)
 
 这个结构图例很好的阐述了Wechaty的生态环境架构：
+
  1. 底层是各个IM工具的通讯协议层，未来可以支持更多IM工具的消息传输，并在这个层级上进行相应的扩充即可。
  1. Wechaty Puppet Service Provider 是作为对底层IM协议层的操作控制层作用而设计存在，可以在使用 "Wechaty Puppet Abstract" 通用接口层的设计基础上，忽略底层协议及IM的个性化，提炼共性的操作内容，暴露统一的操作接口给外部调用者。
  1. Wechaty （Python、NodeJS等），是基于gRPC框架基础上，在"Wechaty Puppet Abstract"的接口定义约束条件下，通过gRPC的Stub程序完成对底层Provider的掉用。
@@ -98,13 +99,14 @@ docker run -ti \
   wechaty/wechaty
 
 ```
+
 以上shell脚本编写完成后，可以直接在本地的Term或Console中进行执行，如果过程中遇到有关docker的问题，请自行"谷歌"寻找相应的解决方法。
 
 - 结果检查
 
 1. 通过执行 ``` netstat -an |grep 8788 ``` 命令检查相应脚本中8788端口是否已经被监听
 
-2. 访问 https://api.chatie.io/v0/hosties/${uuid4} 地址（注意：${uuid4} 是一个占位符，实际访问的时候，需要将该位置替换为shell脚本中"WECHATY_TOKEN"环境变量使用的uuid字符串），如果服务**正常**，可以看到类似 
+1. 访问 https://api.chatie.io/v0/hosties/${uuid4} 地址（注意：${uuid4} 是一个占位符，实际访问的时候，需要将该位置替换为shell脚本中"WECHATY_TOKEN"环境变量使用的uuid字符串），如果服务**正常**，可以看到类似
 
 ``` json
 {
@@ -115,7 +117,7 @@ docker run -ti \
 
 的显示内容。
 
-3. 查看服务启动日志信息
+1. 查看服务启动日志信息
 
 ![Gateway启动日志](/assets/2021/07-newbie-how-to-build-python-wechaty-with-padlocal/gateway-service-1.jpg)
 
@@ -123,7 +125,9 @@ docker run -ti \
 
 经过上面几步的检查，如果没有其他问题，你当前的服务已经启动成功，并完成token的服务注册，可以正常接受业务层传递的操作信息。如果此时查看gateway的日志，找到类似
 
-``` Online QR Code Image: https://wechaty.js.org/qrcode/http%3A%2F%2Fweixin.qq.com%2Fx%2FgYEttTm04jj2_EtvmXmq```
+``` 
+Online QR Code Image: https://wechaty.js.org/qrcode/http%3A%2F%2Fweixin.qq.com%2Fx%2FgYEttTm04jj2_EtvmXmq 
+```
 
 信息时，可以直接访问对应的链接，扫码后即可完成微信账号的Pad登录，并且在微信中，可以看到如下图的登录状态显示。
 
@@ -245,7 +249,7 @@ asyncio.run(main())
 
 - 微信名：秋客
 - 微信名：Wyx
- 
+
 ## Reference
 
 1. [RPC科普](https://zhuanlan.zhihu.com/p/187560185)
