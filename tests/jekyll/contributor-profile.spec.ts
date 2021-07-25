@@ -8,7 +8,10 @@ import util         from 'util'
 import fs     from 'fs'
 import globCB from 'glob'
 import { loadFront } from 'yaml-front-matter'
-import { chunk } from 'lodash'
+import {
+  chunk,
+  shuffle,
+}               from 'lodash'
 
 import {
   JEKYLL_FOLDER,
@@ -104,13 +107,24 @@ test('developer profile name must be GitHub username', async t => {
     since: '1 week ago',
   })
 
+  const needToBeChecked = (file: string) => changedFileList.includes(file)
+
   // console.info('changedFileList', changedFileList)
   // console.info('allContributorsFileList', allContributorsFileList)
 
-  const urlList = allContributorsFileList
-    .filter(file => changedFileList.includes(file))
+  let urlList = allContributorsFileList
+    .filter(needToBeChecked)
     .map(contributorFilenameToUsername)
     .map(name => `https://github.com/${name}`)
+
+  /**
+   * Huan(202107): Only check part of them because of the limitation of GitHub API
+   */
+  const MAX_NUM = 50
+  if (urlList.length > MAX_NUM) {
+    urlList = shuffle(urlList)
+      .slice(0, MAX_NUM)
+  }
 
   // console.info(urlList)
 
