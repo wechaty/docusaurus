@@ -1,7 +1,7 @@
 ---
 name: smwsk
 site: https://github.com/smwsk
-avatar: /assets/contributors/smwsk/avatar.jpg
+avatar: /assets/contributors/smwsk/avatar.webp
 bio: JAVA 攻城狮
 email: 357531851@qq.com
 twitter: 

@@ -1,7 +1,7 @@
 ---
 name: RaymondKevin
 site: https://github.com/raymondjiangkw
-avatar: /assets/contributors/raymondjiangkw/avatar.jpg
+avatar: /assets/contributors/raymondjiangkw/avatar.webp
 bio: RaymondKevin
 email: 
 twitter: 

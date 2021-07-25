@@ -1,7 +1,7 @@
 ---
 name: Seabook
 site: https://github.com/kungfu-software
-avatar: /assets/contributors/kungfu-software/avatar.png
+avatar: /assets/contributors/kungfu-software/avatar.webp
 bio: Founder of [Kungfu Software](http://kungfusoftware.net)
 email: 
 twitter: 

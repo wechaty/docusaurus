@@ -2,7 +2,7 @@
 name: jiucl
 site: https://github.com/jiucl
 bio: 热爱生活，热爱一切
-avatar: /assets/contributors/jiucl/avatar.png
+avatar: /assets/contributors/jiucl/avatar.webp
 email: jiucl@outlook.com
 twitter: 
 ---

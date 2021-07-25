@@ -1,7 +1,7 @@
 ---
 name: wangnima
 site: https://github.com/wanglei158
-avatar: /assets/contributors/wanglei158/timo.jpg
+avatar: /assets/contributors/wanglei158/timo.webp
 bio: 萨瓦迪卡
 email: 1140153859@qq.com
 twitter: 

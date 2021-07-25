@@ -1,7 +1,7 @@
 ---
 name: MrZilinXiao
 site: https://github.com/MrZilinXiao
-avatar: /assets/contributors/godkillerxiao/avatar.png
+avatar: /assets/contributors/godkillerxiao/avatar.webp
 bio: Maybe an AI researcher
 email: mailto:me@mrxiao.net
 twitter: 
