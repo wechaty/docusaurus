@@ -13,6 +13,15 @@ tags:
   - meeting
 ---
 
+## 关于开源软件供应链点亮计划：暑期2021
+
+开源软件供应链点亮计划-暑期2021（以下简称 暑期2021）是由 中国科学院软件研究所 与 openEuler 社区 共同举办的一项面向高校学生的暑期活动，旨在鼓励在校学生积极参与开源软件的开发维护，促进优秀开源软件社区的蓬勃发展。该活动将联合各大开源社区，针对重要开源软件的开发与维护提供项目，并向全球高校学生开放报名。
+
+学生可自主选择感兴趣的项目进行申请，并在中选后获得该软件资深维护者（社区导师）亲自指导的机会。根据项目的难易程度和完成情况，参与者还将获取 开源软件供应链点亮计划-暑期2021 活动奖杯和奖金。
+
+- 官网：<https://summer.iscas.ac.cn/>
+- Wechaty OSPP'21: <https://wechaty.js.org/docs/ospp/2021>
+
 ## 基于 Matrix AppService Wechaty 项目的用户、群与消息等基础功能的完善 #59
 
 [Matrix](https://matrix.org/blog/index) 是一个 open network for secure, decentralized communication, like [Pidgin](http://pidgin.im) on your Phone.
@@ -50,15 +59,6 @@ tags:
 1. 54:00 Group photo
 
 > [Meeting Notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.c7zo1ifjarho)
-
-## 关于开源软件供应链点亮计划：暑期2021
-
-开源软件供应链点亮计划-暑期2021（以下简称 暑期2021）是由 中国科学院软件研究所 与 openEuler 社区 共同举办的一项面向高校学生的暑期活动，旨在鼓励在校学生积极参与开源软件的开发维护，促进优秀开源软件社区的蓬勃发展。该活动将联合各大开源社区，针对重要开源软件的开发与维护提供项目，并向全球高校学生开放报名。
-
-学生可自主选择感兴趣的项目进行申请，并在中选后获得该软件资深维护者（社区导师）亲自指导的机会。根据项目的难易程度和完成情况，参与者还将获取 开源软件供应链点亮计划-暑期2021 活动奖杯和奖金。
-
-- 官网：<https://summer.iscas.ac.cn/>
-- Wechaty OSPP'21: <https://wechaty.js.org/docs/ospp/2021>
 
 ## 关于 Wechaty 社区
 

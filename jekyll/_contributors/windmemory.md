@@ -2,7 +2,7 @@
 name: Yuan GAO (高原)
 site: https://github.com/windmemory
 bio: Committer of Wechaty. Author of several wechaty-puppets. Co-founder & CTO of JuziBot
-avatar: /assets/contributors/windmemory/avatar.jpg
+avatar: /assets/contributors/windmemory/avatar.webp
 email: wind.memory.cn@gmail.com
 twitter: https://www.weibo.com/u/2166731327
 github: https://github.com/windmemory
@@ -18,8 +18,8 @@ github: https://github.com/windmemory
 
 Chair in the forest
 
-![chair-in-the-forest](https://pre-angel.com/assets/peoples/yuan-gao/chair-in-the-forest.jpg)
+![chair-in-the-forest](https://pre-angel.com/assets/peoples/yuan-gao/chair-in-the-forest.webp)
 
 Seattle night
 
-![seattle-night](https://pre-angel.com/assets/peoples/yuan-gao/seattle-night.jpg)
+![seattle-night](https://pre-angel.com/assets/peoples/yuan-gao/seattle-night.webp)
