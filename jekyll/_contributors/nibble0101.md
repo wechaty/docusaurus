@@ -1,7 +1,7 @@
 ---
 name: Joseph Mawa
 site: https://github.com/nibble0101
-avatar: /assets/contributors/nibble0101/avatar.jpeg
+avatar: /assets/contributors/nibble0101/avatar.webp
 bio: Technical writer and open source contributor
 email: mailto:mjm.mawa@gmail.com
 twitter: https://twitter.com/MJMAWA

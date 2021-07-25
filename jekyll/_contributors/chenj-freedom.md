@@ -1,7 +1,7 @@
 ---
 name: chenj-freedom
 site: https://github.com/chenj-freedom
-avatar: /assets/contributors/chenj-freedom/avatar.png
+avatar: /assets/contributors/chenj-freedom/avatar.webp
 bio: none
 email: mailto:chenj_freedom@qq.com
 twitter: none
