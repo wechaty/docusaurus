@@ -1,11 +1,11 @@
 ---
-title: 'Making friends'
+title: 'Send and receive files'
 ---
 
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
-## Sending Request
+## Sending File
 
 <Tabs
   groupId="programming-languages"
@@ -26,52 +26,30 @@ import TabItem from '@theme/TabItem'
 <TabItem value="ts">
 
 ```ts
-async function onReady () {
-  const weixin  = 'FridayBOT' // weixin id
-  const contact = await bot.Friendship.search({ weixin })
+import { FileBox } from 'wechaty'
 
-  if (contact) {
-    console.info('Sending friend request...')
-    await bot.Friendship.add(contact)
-  } else {
-    console.info('Friendship.search: not found')
-  }
-}
-
-bot.on('ready', onReady)
+const fileBox = FileBox.fromUrl('https://wechaty.js.org/img/icon.png')
+await bot.say(fileBox)
 ```
 
 </TabItem>
 <TabItem value="js">
 
 ```js
-async function onReady () {
-  const weixin  = 'FridayBOT' // weixin id
-  const contact = await bot.Friendship.search({ weixin })
+const { FileBox } = require('wechaty')
 
-  if (contact) {
-    console.info('Sending friend request...')
-    await bot.Friendship.add(contact)
-  } else {
-    console.info('Friendship.search: not found')
-  }
-}
-
-bot.on('ready', onReady)
+const fileBox = FileBox.fromUrl('https://wechaty.js.org/img/icon.png')
+await bot.say(fileBox)
 ```
 
 </TabItem>
 <TabItem value="py">
 
 ```py
-from typing import Optional
-from wechaty import Wechaty, Contact
+from wechaty import FileBox
 
-class MyBot(Wechaty):
-    async def on_ready(self, _):
-        contact: Optional[Contact] = await self.Friendship.search(phone='phone-of-someone')
-        if contact:
-            self.Friendship.add(contact)
+fileBox = FileBox.from_url('https://wechaty.js.org/img/icon.png')
+await bot.say(fileBox)
 ```
 
 </TabItem>
@@ -119,7 +97,7 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
-## Receiving Request
+## Receiving File
 
 <Tabs
   groupId="programming-languages"
@@ -140,50 +118,61 @@ class MyBot(Wechaty):
 <TabItem value="ts">
 
 ```ts
-import { Friendship } from 'wechaty'
+import { Message } from 'wechaty'
 
-async function onFriendship (friendship: Friendship) {
-  if (friendship.type() === Friendship.Type.Receive) {
-    console.info('New requrest from', friendship.contact())
-    console.info('Hello message:', friendship.hello())
-    await friendship.accept()
-  } else if (friendship.type() === Friendship.Type.Confirm) {
-    console.info('New request confirmed with', friendship.contact().name())
+async function onMessage (message: Message) {
+  const fileTypeList = [
+    Message.Type.Attachment,
+    Message.Type.Audio,
+    Message.Type.Image,
+    Message.Type.Video,
+  ]
+  if (fileTypeList.includes(message.type())) {
+    const fileBox = await message.toFileBox()
+    console.info(`Saving file {$fileBox.name}...`)
+    await fileBox.toFile()
   }
 }
 
-bot.on('friendship', onFriendship)
+bot.on('message', onMessage)
 ```
 
 </TabItem>
 <TabItem value="js">
 
 ```js
-import { Friendship } from 'wechaty'
+const { Message } = require('wechaty')
 
-async function onFriendship (friendship) {
-  if (friendship.type() === Friendship.Type.Receive) {
-    console.info('New requrest from', friendship.contact())
-    console.info('Hello message:', friendship.hello())
-    await friendship.accept()
-  } else if (friendship.type() === Friendship.Type.Confirm) {
-    console.info('New request confirmed with', friendship.contact().name())
+async function onMessage (message) {
+  const fileTypeList = [
+    Message.Type.Attachment,
+    Message.Type.Audio,
+    Message.Type.Image,
+    Message.Type.Video,
+  ]
+  if (fileTypeList.includes(message.type())) {
+    const fileBox = await message.toFileBox()
+    console.info(`Saving file {$fileBox.name}...`)
+    await fileBox.toFile()
   }
 }
 
-bot.on('friendship', onFriendship)
+bot.on('message', onMessage)
 ```
 
 </TabItem>
 <TabItem value="py">
 
 ```py
-from wechaty import Wechaty, Friendship, FriendshipType
+from wechaty_puppet import FileBox
+from wechaty import Wechaty, Contact, Message
 
 class MyBot(Wechaty):
-    async def on_friendship(self, friendship: Friendship):
-        if friendship.type() == FriendshipType.FRIENDSHIP_TYPE_RECEIVE:
-            await friendship.accept()
+    async def on_message(self, msg: Message):
+        if msg.type() == MessageType.MESSAGE_TYPE_IMAGE:
+            image_file_box = await msg.to_file_box()
+            print(f'saving file<{image_file_box.name}>')
+            await image_file_box.to_file('/path/to/local/file')
 ```
 
 </TabItem>
@@ -230,3 +219,7 @@ class MyBot(Wechaty):
 
 </TabItem>
 </Tabs>
+
+## About `FileBox`
+
+Learn more about how to use `FileBox` module by reading its document at <https://github.com/huan/file-box>

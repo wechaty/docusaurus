@@ -281,6 +281,43 @@ const gettingStarted: SubMenuData = {
   ],
 }
 
+const addevents: SubMenuData = {
+  label: 'Add events to the bot',
+  items: [
+    'howto/event',
+  ],
+}
+
+const addfunctionalities: SubMenuData = {
+  label: 'Add functionality to the bot',
+  items: [
+    'howto/message',
+    'howto/contact',
+    'howto/room',
+    'howto/friendship',
+    'howto/file-box',
+  ],
+}
+
+const deployonim: SubMenuData = {
+  label: 'Deploy on IM platform',
+  items: [
+    'howto/deploy-wechat',
+    'howto/deploy-whatsapp',
+    'howto/deploy-lark',
+    'howto/deploy-gitter',
+    'howto/wechat-offical',
+  ],
+}
+
+const deploycontainer: SubMenuData = {
+  label: 'Deploy with containers',
+  items: [
+    'howto/heroku',
+    'howto/howto_docker',
+  ],
+}
+
 const tutorials = {
   label: 'Tutorials',
   items: [
@@ -302,15 +339,10 @@ const howtos = {
   label: 'How-to Guides',
   items: [
     'howto/overview',
-    'howto/install',
-    'howto/wechaty',
-    'howto/event',
-    'howto/message',
-    'howto/contact',
-    'howto/room',
-    'howto/friendship',
-    'howto/file-box',
-    'howto/testing',
+    subMenu(addevents),
+    subMenu(addfunctionalities),
+    subMenu(deployonim),
+    subMenu(deploycontainer),
   ],
 }
 

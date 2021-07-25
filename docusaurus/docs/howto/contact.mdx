@@ -1,13 +1,11 @@
 ---
-title: 'Dealing with message'
+title: 'Manage contacts'
 ---
 
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
-## Mention
-
-Only a message in the room can mention(@) others.
+## List all contacts
 
 <Tabs
   groupId="programming-languages"
@@ -28,56 +26,44 @@ Only a message in the room can mention(@) others.
 <TabItem value="ts">
 
 ```ts
-import { Message } from 'wechaty'
+import { Contact } from 'wechaty'
 
-async function onMessage(message: Message): Promise<void> {
-  if (await message.mentionSelf()) {
-    const room = message.room()
-    if (!room) {
-      throw new Error('Should never reach here: a mention message must in a room')
-    }
+async function onReady () {
+  const contactList = await bot.Contact.findAll()
+  console.info('Total number of contacts:', contactList.length)
 
-    console.info(message.text())
-    // "@bot Hello"
-    console.info(await message.mentionList())
-    // [bot]
-    console.info(await message.mentionText())
-    // "Hello"
+  for (const contact of contactList) {
+    console.info('Id:',   contact.id)
+    console.info('Name:', contact.name())
 
-    const talker = room.talker()
-    await room.say`Thanks for mention me! ${talker}`
+    const type = contact.type()
+    console.info('Type:', Contact.Type[type])
   }
 }
 
-bot.on('message', onMessage)
+bot.on('ready', onReady)
 ```
 
 </TabItem>
 <TabItem value="js">
 
 ```js
-const { Message } = require('wechaty')
+const { Contact } from 'wechaty'
 
-async function onMessage(message) {
-  if (await message.mentionSelf()) {
-    const room = message.room()
-    if (!room) {
-      throw new Error('Should never reach here: a mention message must in a room')
-    }
+async function onReady () {
+  const contactList = await bot.Contact.findAll()
+  console.info('Total number of contacts:', contactList.length)
 
-    console.info(message.text())
-    // "@bot Hello"
-    console.info(await message.mentionList())
-    // [bot]
-    console.info(await message.mentionText())
-    // "Hello"
-
-    const talker = room.talker()
-    await room.say`Thanks for mention me! ${talker}`
+  for (const contact of contactList) {
+    console.info('Id:',   contact.id)
+    console.info('Name:', contact.name())
+    
+    const type = contact.type()
+    console.info('Type:', Contact.Type[type])
   }
 }
 
-bot.on('message', onMessage)
+bot.on('ready', onReady)
 ```
 
 </TabItem>
@@ -139,7 +125,9 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
-## Self message
+## Search in contacts
+
+`Contact.find` and `Contact.findAll` supports search by `id`, `name`, `alias`, `weixin`.
 
 <Tabs
   groupId="programming-languages"
@@ -160,36 +148,42 @@ class MyBot(Wechaty):
 <TabItem value="ts">
 
 ```ts
-import { Message } from 'wechaty'
+async function onReady () {
+  // find by id:
+  const filehelper = await bot.Contact.find('filehelper')
+  console.info('filehelper:', filehelper)
 
-async function onMessage(message: Message): Promise<void> {
-  if (message.self()) {
-    const talker = message.talker()
-    const bot = message.wechaty.userSelf()
-    assert(talker === bot, 'Message is sent from bot')
-    console.info('Message is sent from bot')
+  // find by name:
+  const nameContainsJList = await bot.Contact.findAll({ name: /j/i })
+  console.info('Total number of contacts:', nameContainsJList.length)
+
+  for (const contact of nameContainsJList) {
+    console.info('contact:', contact)
   }
 }
 
-bot.on('message', onMessage)
+bot.on('ready', onReady)
 ```
 
 </TabItem>
 <TabItem value="js">
 
 ```js
-const { Message } = require('wechaty')
+async function onReady () {
+  // find by id:
+  const filehelper = await bot.Contact.find('filehelper')
+  console.info('filehelper:', filehelper)
 
-async function onMessage(message) {
-  if (message.self()) {
-    const talker = message.talker()
-    const bot = message.wechaty.userSelf()
-    assert(talker === bot, 'Message is sent from bot')
-    console.info('Message is sent from bot')
+  // find by name:
+  const nameContainsJList = await bot.Contact.findAll({ name: /j/i })
+  console.info('Total number of contacts:', nameContainsJList.length)
+
+  for (const contact of nameContainsJList) {
+    console.info('contact:', contact)
   }
 }
 
-bot.on('message', onMessage)
+bot.on('ready', onReady)
 ```
 
 </TabItem>

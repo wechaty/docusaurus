@@ -1,11 +1,13 @@
 ---
-title: 'Managing contacts'
+title: 'Deal with messages'
 ---
 
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
-## List all contacts
+## Mention
+
+Only a message in the room can mention(@) others.
 
 <Tabs
   groupId="programming-languages"
@@ -26,44 +28,56 @@ import TabItem from '@theme/TabItem'
 <TabItem value="ts">
 
 ```ts
-import { Contact } from 'wechaty'
+import { Message } from 'wechaty'
 
-async function onReady () {
-  const contactList = await bot.Contact.findAll()
-  console.info('Total number of contacts:', contactList.length)
+async function onMessage(message: Message): Promise<void> {
+  if (await message.mentionSelf()) {
+    const room = message.room()
+    if (!room) {
+      throw new Error('Should never reach here: a mention message must in a room')
+    }
 
-  for (const contact of contactList) {
-    console.info('Id:',   contact.id)
-    console.info('Name:', contact.name())
+    console.info(message.text())
+    // "@bot Hello"
+    console.info(await message.mentionList())
+    // [bot]
+    console.info(await message.mentionText())
+    // "Hello"
 
-    const type = contact.type()
-    console.info('Type:', Contact.Type[type])
+    const talker = room.talker()
+    await room.say`Thanks for mention me! ${talker}`
   }
 }
 
-bot.on('ready', onReady)
+bot.on('message', onMessage)
 ```
 
 </TabItem>
 <TabItem value="js">
 
 ```js
-const { Contact } from 'wechaty'
+const { Message } = require('wechaty')
 
-async function onReady () {
-  const contactList = await bot.Contact.findAll()
-  console.info('Total number of contacts:', contactList.length)
+async function onMessage(message) {
+  if (await message.mentionSelf()) {
+    const room = message.room()
+    if (!room) {
+      throw new Error('Should never reach here: a mention message must in a room')
+    }
 
-  for (const contact of contactList) {
-    console.info('Id:',   contact.id)
-    console.info('Name:', contact.name())
-    
-    const type = contact.type()
-    console.info('Type:', Contact.Type[type])
+    console.info(message.text())
+    // "@bot Hello"
+    console.info(await message.mentionList())
+    // [bot]
+    console.info(await message.mentionText())
+    // "Hello"
+
+    const talker = room.talker()
+    await room.say`Thanks for mention me! ${talker}`
   }
 }
 
-bot.on('ready', onReady)
+bot.on('message', onMessage)
 ```
 
 </TabItem>
@@ -125,9 +139,7 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
-## Search in contacts
-
-`Contact.find` and `Contact.findAll` supports search by `id`, `name`, `alias`, `weixin`.
+## Self message
 
 <Tabs
   groupId="programming-languages"
@@ -148,42 +160,36 @@ class MyBot(Wechaty):
 <TabItem value="ts">
 
 ```ts
-async function onReady () {
-  // find by id:
-  const filehelper = await bot.Contact.find('filehelper')
-  console.info('filehelper:', filehelper)
+import { Message } from 'wechaty'
 
-  // find by name:
-  const nameContainsJList = await bot.Contact.findAll({ name: /j/i })
-  console.info('Total number of contacts:', nameContainsJList.length)
-
-  for (const contact of nameContainsJList) {
-    console.info('contact:', contact)
+async function onMessage(message: Message): Promise<void> {
+  if (message.self()) {
+    const talker = message.talker()
+    const bot = message.wechaty.userSelf()
+    assert(talker === bot, 'Message is sent from bot')
+    console.info('Message is sent from bot')
   }
 }
 
-bot.on('ready', onReady)
+bot.on('message', onMessage)
 ```
 
 </TabItem>
 <TabItem value="js">
 
 ```js
-async function onReady () {
-  // find by id:
-  const filehelper = await bot.Contact.find('filehelper')
-  console.info('filehelper:', filehelper)
+const { Message } = require('wechaty')
 
-  // find by name:
-  const nameContainsJList = await bot.Contact.findAll({ name: /j/i })
-  console.info('Total number of contacts:', nameContainsJList.length)
-
-  for (const contact of nameContainsJList) {
-    console.info('contact:', contact)
+async function onMessage(message) {
+  if (message.self()) {
+    const talker = message.talker()
+    const bot = message.wechaty.userSelf()
+    assert(talker === bot, 'Message is sent from bot')
+    console.info('Message is sent from bot')
   }
 }
 
-bot.on('ready', onReady)
+bot.on('message', onMessage)
 ```
 
 </TabItem>

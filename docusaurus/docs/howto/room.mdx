@@ -1,5 +1,5 @@
 ---
-title: 'Managing rooms'
+title: 'Manage rooms'
 ---
 
 import Tabs from '@theme/Tabs'
