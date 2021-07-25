@@ -127,6 +127,8 @@ test('developer profile name must be GitHub username', async t => {
 
   const SLEEP_SECONDS_BETWEEN_CHUNKS = 2
 
+  const allUrlNum = urlList.length
+
   if (urlList.length > MAX_NUM) {
     urlList = shuffle(urlList)
       .slice(0, MAX_NUM)
@@ -156,5 +158,5 @@ test('developer profile name must be GitHub username', async t => {
 
   process.stdout.write('\n')
 
-  t.pass(`${urlList.length} contributors profile names checked`)
+  t.pass(`${urlList.length}/${allUrlNum} contributors profile names checked`)
 })
