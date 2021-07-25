@@ -122,7 +122,7 @@ test('developer profile name must be GitHub username', async t => {
    *
    *  Question: what is the maximum number for the following code?
    */
-  const MAX_NUM   = 70
+  const MAX_NUM   = 50
   const CHUNK_NUM = 10
 
   const SLEEP_SECONDS_BETWEEN_CHUNKS = 2
