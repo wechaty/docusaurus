@@ -1,7 +1,7 @@
 ---
 name: univerone
 site: https://github.com/univerone
-avatar: /assets/contributors/univerone/avatar.png
+avatar: /assets/contributors/univerone/avatar.webp
 bio: I am new to computer science,and I want to be a professional researcher.
 email: mailto:univerone@outlook.com
 twitter: 

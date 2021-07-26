@@ -1,7 +1,7 @@
 ---
 name: 陈小胖
 site: https://github.com/chengaopan
-avatar: /assets/contributors/chengaopan/avatar.png
+avatar: /assets/contributors/chengaopan/avatar.webp
 bio: java/PHP工程师，偶尔写写python nodejs项目
 email: 
 twitter: 

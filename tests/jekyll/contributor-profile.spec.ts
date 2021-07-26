@@ -8,7 +8,10 @@ import util         from 'util'
 import fs     from 'fs'
 import globCB from 'glob'
 import { loadFront } from 'yaml-front-matter'
-import { chunk } from 'lodash'
+import {
+  chunk,
+  shuffle,
+}               from 'lodash'
 
 import {
   JEKYLL_FOLDER,
@@ -104,17 +107,36 @@ test('developer profile name must be GitHub username', async t => {
     since: '1 week ago',
   })
 
+  const needToBeChecked = (file: string) => changedFileList.includes(file)
+
   // console.info('changedFileList', changedFileList)
   // console.info('allContributorsFileList', allContributorsFileList)
 
-  const urlList = allContributorsFileList
-    .filter(file => changedFileList.includes(file))
+  let urlList = allContributorsFileList
+    .filter(needToBeChecked)
     .map(contributorFilenameToUsername)
     .map(name => `https://github.com/${name}`)
 
+  /**
+   * Huan(202107): Only check part of them because of the limitation of GitHub API
+   *
+   *  Question: what is the maximum number for the following code?
+   */
+  const MAX_NUM   = 50
+  const CHUNK_NUM = 10
+
+  const SLEEP_SECONDS_BETWEEN_CHUNKS = 2
+
+  const allUrlNum = urlList.length
+
+  if (urlList.length > MAX_NUM) {
+    urlList = shuffle(urlList)
+      .slice(0, MAX_NUM)
+  }
+
   // console.info(urlList)
 
-  const nameListChunk = chunk(urlList, 10)
+  const nameListChunk = chunk(urlList, CHUNK_NUM)
 
   for (const chunk of nameListChunk) {
     process.stdout.write(Array(chunk.length + 1).join('.'))
@@ -122,7 +144,7 @@ test('developer profile name must be GitHub username', async t => {
       chunk.map(isUrlExist)
     )
 
-    // await new Promise(resolve => setTimeout(resolve, 5000))
+    await new Promise(resolve => setTimeout(resolve, SLEEP_SECONDS_BETWEEN_CHUNKS))
 
     for (const [i, isExist] of resultList.entries()) {
       if (!isExist) {
@@ -136,5 +158,5 @@ test('developer profile name must be GitHub username', async t => {
 
   process.stdout.write('\n')
 
-  t.pass(`${urlList.length} contributors profile names checked`)
+  t.pass(`${urlList.length}/${allUrlNum} contributors profile names checked`)
 })
