@@ -307,6 +307,8 @@ const deployonim: SubMenuData = {
     'howto/deploy-lark',
     'howto/deploy-gitter',
     'howto/wechat-offical',
+    'howto/deploy-padlocal',
+    'howto/deploy-wechat4u',
   ],
 }
 
