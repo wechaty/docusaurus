@@ -1,5 +1,5 @@
 ---
-title: 揭秘：2021GSoD为何选择Wechaty
+title: 揭秘：2021Google Season of Docs为何选择Wechaty
 author: juzibot
 categories: gsod
 tags:
@@ -12,8 +12,8 @@ tags:
 image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
 ---
 
-> 感谢点进我的博客，非常荣幸能够和你分享2021GSoD与Wechaty的相关发展情况。
-  今年，Wechaty已经与GSoD达成合作，请求的预算9500美元也已经被批准。
+> 感谢点进我的博客，非常荣幸能够和你分享2021Google Season of Docs与Wechaty的相关发展情况。
+  今年，Wechaty已经与Google Season of Docs达成合作，请求的预算9500美元也已经被批准。
  ![gsodandwechaty1](/assets/2021/07-gsod-2021-publish-article/gsodandwechaty1.webp)
 
 ## GSoD简介
@@ -28,13 +28,13 @@ image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
 
 ![wechaty](/assets/2021/07-gsod-2021-publish-article/wechaty.webp)
 
-- Wechaty 是一个开源的的 个人号 微信机器人接口，是一个使用 Typescript 构建的 Node.js 应用。支持多种微信接入方案，包括网页，ipad，ios，windows， android 等。同时支持Linux, OSX, Win32 和 Docker 等多个平台。
+- Wechaty 是一个开源的的个人号微信机器人接口，是一个使用 Typescript 构建的 Node.js 应用。支持多种微信接入方案，包括网页，ipad，ios，windows， android 等。同时支持Linux, OSX, Win32 和 Docker 等多个平台。
 - 多年来调查表明，良好的文档对于开发人员如何使用开源方面很重要。
 - Wechaty作为[30](https://developers.google.com/season-of-docs/docs/participants)个[伟大的开源组织](https://developers.google.com/season-of-docs/docs/participants)之一，帮助聊天机器人开发者快速搭建聊天机器人的框架，并且支持多个系统平台。
 - Wechaty的使命：给聊天机器人的开发者提供一个最好的开源sdk，给开发者最好的体验。帮助开发者能够更多关注于逻辑应用，把精力集中于编写上层应用的代码，而不是把时间花在与平台的底部对接上。
-- Wechaty在2月份的时候就开始着手准备2021年的GSoD。在Wechaty于4月16日正式宣布加入2021GSoD后，联系了多位技术文档撰写工程师，几乎所有的提案都在详细规划和深刻研究。
+- Wechaty在2月份的时候就开始着手准备2021年的Google Season of Docs。在Wechaty于4月16日正式宣布加入2021Google Season of Docs后，联系了多位技术文档撰写工程师，几乎所有的提案都在详细规划和深刻研究。
 
-### 为何选择Wechaty
+### 为什么选择Wechaty
 
 - 五年技术沉淀：Wechaty (Conversational RPA SDK) 2016 年发布于 GitHub，是一个基于 Apache-2.0 许可证的开源项目。经过5年多的发展，现在 Wechaty 开源社区已经拥有数十位 Committers，百余位 Contributors ，并被超过一万名 GitHub 开发者 Star。目前，使用 Wechaty 的开发者已覆盖数万人，并拥有基于微信群的数千人活跃开发者群。
 - 用户遍布全球：Wechaty 社区的 Contributors 遍布全球多个国家地区，和各大互联网公司，职业背景从程序员到设计师，从大学教授到创业者。GitHub 上有千余个开源项目基于 Wechaty 构建了聊天机器人，这些开发者用户也极大地促进了社区的活跃和发展。
@@ -62,29 +62,29 @@ image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
       你也可以了解[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.edr3nzd8l43b)
       ![zero](/assets/2021/07-gsod-2021-publish-article/zero.webp)
 
-   5月9日：宣布了微信GSoD’21技术文档撰写工程师评选结果。
+   5月9日：宣布了微信Google Season of Docs’21技术文档撰写工程师评选结果。
 
-   5月16日：进行了GSoD第一周会议,讨论了未来会议日期，做了一周工作总结，介绍下一周计划，并讨论了是否应该延长主要项目的时间表，Simin介绍了文档结构和样式。后来我们进行了一个问答环节。
+   5月16日：进行了Google Season of Docs第一周会议,讨论了未来会议日期，做了一周工作总结，介绍下一周计划，并讨论了是否应该延长主要项目的时间表，Simin介绍了文档结构和样式。后来我们进行了一个问答环节。
      你也可以了解[相关博客](https://wechaty.js.org/2021/05/16/gsod-2021-week1-meeting/)和[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.o69fqys8gbda)
      ![1st](/assets/2021/07-gsod-2021-publish-article/1st.webp)
 
-   5月23日：进行了GSoD第二周会议，每位与会者首先给出了自己的一周总结，报告了他们下一周的计划。一起讨论了一下Wechaty的未来愿景，Simin就PRs中经常出现的错误进行了讨论。
+   5月23日：进行了Google Season of Docs第二周会议，每位与会者首先给出了自己的一周总结，报告了他们下一周的计划。一起讨论了一下Wechaty的未来愿景，Simin就PRs中经常出现的错误进行了讨论。
      你也可以了解[相关博客](https://wechaty.js.org/2021/05/23/gsod-2021-second-meeting/)和[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.3ly9biu8mtyy)
      ![2nd](/assets/2021/07-gsod-2021-publish-article/2nd.webp)
 
-   6月6日：进行了GSoD第三周会议，每位与会者首先做了一周的总结，并向社区汇报了他们下一周的计划，提出了对大型PRs的关注，讨论了PRs的范围和规模，对于缺乏每周跟进的团队分别解释了原因。Simin说明了需要注意的相关事项并向大家进行了演示。进行问答环节，并合影留念。
+   6月6日：进行了Google Season of Docs第三周会议，每位与会者首先做了一周的总结，并向社区汇报了他们下一周的计划，提出了对大型PRs的关注，讨论了PRs的范围和规模，对于缺乏每周跟进的团队分别解释了原因。Simin说明了需要注意的相关事项并向大家进行了演示。进行问答环节，并合影留念。
      你也可以了解[相关博客](https://wechaty.js.org/2021/06/06/gsod-2021-third-meeting/)和[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.lmf3j0zgmymr)
      ![3rd](/assets/2021/07-gsod-2021-publish-article/3rd.webp)
 
-   6月20日：进行了GSoD第四周会议，首先每位参与者都做了一周的总结，并向社区汇报了他们下一周的计划，志愿者和技术作家们在进行一周总结的同时进行了讨论。最后大家进行了问答环节，并拍了一张可爱的合影。
+   6月20日：进行了Google Season of Docs第四周会议，首先每位参与者都做了一周的总结，并向社区汇报了他们下一周的计划，志愿者和技术作家们在进行一周总结的同时进行了讨论。最后大家进行了问答环节，并拍了一张可爱的合影。
      你也可以了解[相关博客](https://wechaty.js.org/2021/06/22/gsod-2021-fourth-meeting/)和[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.3am6kd2l4v24)
      ![4th](/assets/2021/07-gsod-2021-publish-article/4th.webp)
 
-   7月4日：进行了GSoD第五周会议，每个参与者都进行了一周总结计划了下一周的工作，志愿者和技术文档撰写工程师们进行了讨论。
+   7月4日：进行了Google Season of Docs第五周会议，每个参与者都进行了一周总结计划了下一周的工作，志愿者和技术文档撰写工程师们进行了讨论。
       你也可以了解[相关博客](https://wechaty.js.org/2021/07/06/gsod-2021-fifth-meeting/)和[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.s6s37xc2auay)
      ![5th](/assets/2021/07-gsod-2021-publish-article/5th.webp)
 
-   7月18日：进行了GSoD第六次会议，同样，每个参与者都进行了一周总结与下一周的计划，志愿者和技术文档撰写工程师进行了讨论，并进行了问答环节，讨论和解决了大家存在的问题。
+   7月18日：进行了Google Season of Docs第六次会议，同样，每个参与者都对本周工作进行了总结，并对计划了下一周的工作，志愿者和技术文档撰写工程师进行了讨论，最后进行了问答环节，讨论和解决了大家存在的问题。
      你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.i4kw5zu3yk32)
      ![6th](/assets/2021/07-gsod-2021-publish-article/6th.webp)
 
