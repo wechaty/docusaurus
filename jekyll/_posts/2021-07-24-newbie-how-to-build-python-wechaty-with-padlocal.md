@@ -106,7 +106,7 @@ docker run -ti \
 
 1. 通过执行 ``` netstat -an |grep 8788 ``` 命令检查相应脚本中8788端口是否已经被监听
 
-1. 访问 https://api.chatie.io/v0/hosties/${uuid4} 地址（注意：${uuid4} 是一个占位符，实际访问的时候，需要将该位置替换为shell脚本中"WECHATY_TOKEN"环境变量使用的uuid字符串），如果服务**正常**，可以看到类似
+1. 访问 <https://api.chatie.io/v0/hosties/${uuid4}> 地址（注意：${uuid4} 是一个占位符，实际访问的时候，需要将该位置替换为shell脚本中"WECHATY_TOKEN"环境变量使用的uuid字符串），如果服务**正常**，可以看到类似
 
 ``` json
 {
@@ -125,8 +125,8 @@ docker run -ti \
 
 经过上面几步的检查，如果没有其他问题，你当前的服务已经启动成功，并完成token的服务注册，可以正常接受业务层传递的操作信息。如果此时查看gateway的日志，找到类似
 
-``` 
-Online QR Code Image: https://wechaty.js.org/qrcode/http%3A%2F%2Fweixin.qq.com%2Fx%2FgYEttTm04jj2_EtvmXmq 
+```shell script
+Online QR Code Image: https://wechaty.js.org/qrcode/http%3A%2F%2Fweixin.qq.com%2Fx%2FgYEttTm04jj2_EtvmXmq
 ```
 
 信息时，可以直接访问对应的链接，扫码后即可完成微信账号的Pad登录，并且在微信中，可以看到如下图的登录状态显示。
