@@ -14,7 +14,7 @@ test('getFrontmatterAvatarList', async t => {
     'huan.md',
   )
   const EXPECTED_AVATAR_NUM = 1
-  const EXPECTED_AVATAR_PATH = '/assets/contributors/huan/avatar.jpg'
+  const EXPECTED_AVATAR_PATH = '/assets/contributors/huan/avatar.webp'
 
   const imageList = getFrontmatterAvatarList(FILE)
 
