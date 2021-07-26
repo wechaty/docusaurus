@@ -26,10 +26,13 @@ Docker allows you to create virtualized sandboxes to run and deploy software. Us
 
 The quick and easy way to install Docker is to get the script from [get.docker.com](https://get.docker.com/) and runs it to install the latest stable release of Docker on your system.
 
-```shell
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
-```
+:::note Docker installation docs
+
+* [Windows](https://docs.docker.com/docker-for-windows/install/)
+* [Linux\(Debian/Ubuntu\)](https://docs.docker.com/engine/install/ubuntu/)
+* [macOS](https://docs.docker.com/docker-for-mac/install/)
+
+:::
 
 * To install Docker using the repository, visit [How to install using repository](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository).
 * To install Docker from a package, visit [How to install using a package](https://docs.docker.com/engine/install/ubuntu/#install-from-a-package).
@@ -38,9 +41,13 @@ sudo sh get-docker.sh
 
 To get familiar with the Docker Environment, you can try [Running hello-world under 3 minutes with Docker](https://docs.docker.com/get-started/).
 
-You can confirm that you have downloaded `wechaty/wechaty` image successfully by running `docker pull wechaty/wechaty`, and this command also help you to upgrade the image to the latest version.
+1. Run the below command to pull Wechaty in docker:
 
-The best practice of using Wechaty Docker is like the following:
+```shell
+docker pull wechaty/wechaty
+```
+
+The best practice of using Wechaty Docker is as follows:
 
 ```bash
 $ cat > mybot.ts <<'EOF'
@@ -86,11 +93,11 @@ See Also: [Dockerize Wechaty for easy start #66](https://github.com/wechaty/wech
 
 ### Examples
 
-Get started with various [Examples](https://wechaty.js.org/docs/examples/overview) written in TypeScript. Run example ChatBot is as easy as run hello world example above, as long as you are using Docker:
+Get started with various [Examples](https://wechaty.js.org/docs/examples/overview) written in JavaScript. Run example ChatBot is as easy as run hello world example above, as long as you are using Docker:
 
 ```shell
 cd example
-wechaty media-file-bot.ts
+wechaty ding-dong-bot.js
 ```
 
 ### Run Wechaty as a Hostie
@@ -115,8 +122,8 @@ FROM wechaty/onbuild
 This image makes building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM wechaty/onbuild` will be enough to create a stand-alone image for your project.
 
 1. The `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time)
-1. This `onbuild` variant will only install npm packages according to the `package.json`
-1. The npm installs devDependencies by default, which is undesirable if you're building a production image. To avoid this pass NODE_ENV as a build argument i.e. `docker build --build-arg NODE_ENV=production …`.
+2. This `onbuild` variant will only install npm packages according to the `package.json`
+3. The npm installs devDependencies by default, which is undesirable if you're building a production image. To avoid this pass NODE_ENV as a build argument i.e. `docker build --build-arg NODE_ENV=production …`.
 
 ### Build
 
