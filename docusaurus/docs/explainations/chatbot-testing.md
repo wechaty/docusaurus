@@ -1,5 +1,5 @@
 ---
-title: Wechaty Chatbot Testing
+title: Wechaty Testing
 ---
 
 ![Wechaty: Conversational RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
