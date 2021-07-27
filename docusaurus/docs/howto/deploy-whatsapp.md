@@ -2,7 +2,7 @@
 title: Deploy in Whatsapp
 ---
 
-Whatsapp  is the most popular IM platform, so this how to guide focusses to deploy the bot in Whatsapp locally.
+Whatsapp  is the most popular IM platform, so this how to guide focuses on deploying the bot in Whatsapp locally.You will learn how to deploy the bot in Whatsapp locally and integrate bot from the list of examples present in the [starter templete](https://github.com/wechaty/wechaty-getting-started).
 
 ![Deploy in WeChat](../../static/img/docs/howto/IM_platform/deploy-whatsapp.webp)
 
@@ -13,6 +13,8 @@ Whatsapp  is the most popular IM platform, so this how to guide focusses to depl
 3. You must be familiar with [Wechaty Plugins](https://www.npmjs.com/package/wechaty-plugin-contrib).
 
 ## Deployment
+
+Run `wechaty-puppet-whatsapp`:
 
 <!-- MDX import -->
 import Tabs from '@theme/Tabs'
@@ -57,9 +59,11 @@ npm start
 </TabItem>
 </Tabs>
 
-## Example
+## Integrating a Bot to Whatsapp
 
-Let's take up an example on how to integrate bot from [starter templete](https://github.com/wechaty/wechaty-getting-started) to Whatsapp.The steps are similar for all other bots as well.
+Let's take up an example on how to integrate bot from [starter templete](https://github.com/wechaty/wechaty-getting-started) to Whatsapp.
+
+The steps are similar for all other bots as well.
 
 ### Prerequisite
 
@@ -68,7 +72,7 @@ Let's take up an example on how to integrate bot from [starter templete](https:/
 
 You can follow up the steps mentioned below:
 
-<ol><li> Initialise the project by creating a new folder `my-bot`.</li>
+<ol><li> Initialize the project by creating a new folder `my-bot`.</li>
 
 ```bash
 mkdir my-bot
