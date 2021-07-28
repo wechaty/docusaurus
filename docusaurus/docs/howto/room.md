@@ -131,7 +131,47 @@ class MyBot(Wechaty):
 <TabItem value="ts">
 
 ```ts
-// TODO: Pull Request is welcome!
+import {
+  Contact,
+  Wechaty,
+  log,
+  Room,
+} from 'wechaty'
+
+//helper function
+async function putPersonIntoRoom(person: Contact, room: Room) {
+  //Add a log
+  log.info("Bot", 'putPersonIntoRoom("%s", "%s")', contact.name(), await room.topic());
+
+  try {
+    //Try put the person into the room
+    await room.add(person);
+  } catch (e) {
+    //any error will be here
+    log.error("Bot", "putPersonIntoRoom() exception: " + e.stack);
+  }
+}
+
+//in the main code
+//If the secrete code is ZhiMaKaiMen
+if (msg.text() === 'ZhiMaKaiMen') {
+  //get the Person/Contact
+  const from = msg.talker();
+
+  //find the targetRoom from the bot's room list
+  //Option1: by group id
+  //set the targetRoomId
+  const tagetRoomId = '12345678910@chatroom'
+  const targetRoom = await bot.Room.find({id: tagetRoomId})
+  //Option2: by group name
+  // const tagetRoomTopic =  'ceshiqun'
+  // const targetRoom = await bot.Room.find({topic:tagetRoomTopic})
+  if (targetRoom instanceof Room) {
+    await putInRoom(from, targetRoom);
+  } else {
+    log.info('Cannot find room, unable to put the person into the room')
+  }
+}
 ```
 
 </TabItem>
@@ -342,7 +382,37 @@ class MyBot(Wechaty):
 <TabItem value="ts">
 
 ```ts
-// TODO: Pull Request is welcome!
+import {
+  Wechaty,
+  log,
+  Room,
+} from 'wechaty'
+//helper function
+async function changeRoomTopic(room: Room) {
+  log.info("Bot", 'changing room topic for group', await room.topic());
+  const newName ="newName"
+  try {
+    await room.topic(newName);
+    
+  } catch (e) {
+    log.error("Bot", "changeRoomTopic() exception: " + e.stack);
+  }
+
+  //Option1: by group id
+  //set the targetRoomId
+  const tagetRoomId = '12345678910@chatroom'
+  const targetRoom = await bot.Room.find({id: tagetRoomId})
+  //Option2: by group name
+  // const tagetRoomTopic = 'ceshiqun'
+  // const targetRoom = await bot.Room.find({topic:tagetRoomTopic})
+  if (targetRoom instanceof Room) {
+    await changeRoomTopic(targetRoom);
+  } else {
+    log.info('cannot find room, unable to changeRoomTopic')
+  }
+  
+}
+
 ```
 
 </TabItem>
