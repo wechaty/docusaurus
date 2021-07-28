@@ -72,36 +72,36 @@ image: /assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/00.web
 需求分析就是过去去做网站的需求分析的方法，多了一些需要确定chatbot的边界，形象，搭建之前要告诉用户能做什么，如果你抬高了预期的话，bot不能满足用户的预期，他会觉得这个bot非常不智能，非常傻，所以在需求分析阶段，要分清bot哪些能做，哪些不能做。
 
 二、流程设计
-1 对话流程设计的原则
+1. 对话流程设计的原则
 	1.1 不能保证 Chatbot 成功的因素
 	1.2 影响 Chatbot 成功的因素
-2 梳理业务要素
-3 抽取对话流程，绘制流程图
+2. 梳理业务要素
+3. 抽取对话流程，绘制流程图
 	3.1 绘制基础业务流程图
 	3.2 绘制跨职能流程图
 	3.3 进行业务线合并
 在流程设计阶段，要明确哪些是能保证chatbot成功的，哪些是能影响chatbot成功的因素，并且把整个chatbot业务要素进行梳理，抽取些对话流程，绘制相关流程图，并把业务线的部分进行合并。
 
 三、数据处理
-1 数据收集
-2 数据扩充
-3 数据清理
-4 数据标注
+1. 数据收集
+2. 数据扩充
+3. 数据清理
+4. 数据标注
 收集后如果想要系统更好的进行预处理，需要做一些数据的扩充，比如数据的处理和标注。
 
 四、对话脚本撰写
 这一点是比较重要的，与以前搭建app不一样，因为是零UI，对话脚本很重要，怎么去引导用户去完成对话，有十条设计原则：
-1 简洁明了
-2 对话语句要自然
-3 区别新老用户
-4 使用问候语和结束语
-5 确认策略
-6 随机策略
-7 使用对话式标识
-8 设计延迟话术
-9 主动学习
-10 持续跟踪上下文
-简单介绍10条的是原则，控制对话流：首次互动要说清楚，能做哪些事，不能做哪些事，应该怎样做命令，都可以在首次互动时说清楚，持续的跟用户说一些内容，引导用户到正确的轨道上，包括一些中断，
+1. 简洁明了
+2. 对话语句要自然
+3. 区别新老用户
+4. 使用问候语和结束语
+5. 确认策略
+6. 随机策略
+7. 使用对话式标识
+8. 设计延迟话术
+9. 主动学习
+10. 持续跟踪上下文
+- 简单介绍10条的是原则，控制对话流：首次互动要说清楚，能做哪些事，不能做哪些事，应该怎样做命令，都可以在首次互动时说清楚，持续的跟用户说一些内容，引导用户到正确的轨道上，包括一些中断，
 虽然做bot是零UI，但实际上它是有一个隐形的UI在的，在过去搭建app和网站的时候，我们有相关的设计导航，有相关的目录，其实在对话脚本的撰写里面也有隐形的存在，但是要设计好，在不同的时候召回出来，当用户要求进行步骤转换，其实都是需要脚本去进行的。
 
 五、对话系统搭建
@@ -127,13 +127,14 @@ image: /assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/00.web
 ![intro](/assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/17.webp)
 在GitHub上面已经有8k的star，是一个基于微信个人号的WeChat RPA框架，能够帮助你去搭建你的微信机器人，开发者遍布全球，美国欧洲澳洲，
 ![intro](/assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/18.webp)
-最后一个模块，luis搭建实操搭建chatbot【图十六】
-LUIS(Language Understanding Intelligent Service，https://www.luis.ai) 是微软发布的面向开发者的自然语言语义理解模块开发服务。LUIS的使命是让非NLP专业的开发者能够轻松地创建和维护高质量的自然语言理解模型，并无缝对接到相关的智能应用当中。
+最后一个模块，luis搭建实操搭建chatbot
+[LUIS](https://www.luis.ai) 是微软发布的面向开发者的自然语言语义理解模块开发服务。LUIS的使命是让非NLP专业的开发者能够轻松地创建和维护高质量的自然语言理解模型，并无缝对接到相关的智能应用当中。
 LUIS的开发流程更像是一个教学过程：开发者是老师，LUIS App是学生。老师通过不停地告知学生正确的语义解析结果来完成教学。一个好的教学过程是一个“训练+实践”的闭环：标注一定量的起始数据；训练得到语义理解模型；对模型进行必要的测试；发布模型并应用到真实用户场景；甄选应用日志中的语句；继续标注并更新模型。这个过程周而复始，通过不停地迭代开发，不停地改善理解模型，使其越来越接近人类的理解能力。
 ![intro](/assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/19.webp)
 大厂开发出来的服务，我们使用的过程更像一个教学的过程，开发者是老师，luis是学生，老师不停告诉学生正确的结果，并不停教他来完成整个训练，老师会教他，什么是实体和意图，然后去模型训练，最后发布，持续的学习，系统会越来越智能，走到正向的反馈循环中去。
 
 ## 实操介绍
+
 任务1：发布LUIS版本
 - 点击LUIS的Publish获取APPID和KEY
 ![intro](/assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/20.webp)
@@ -149,7 +150,7 @@ LUIS的开发流程更像是一个教学过程：开发者是老师，LUIS App�
 - 根据已有的LUIS 配置写示例代码
 ![intro](/assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/25.webp)
 任务3：运行代码
-- 输入命令git clone https://github.com/lijiarui/chatbot-zero-to-one
+- 输入命令[git clone](https://github.com/lijiarui/chatbot-zero-to-one)
 ![intro](/assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/26.webp)
 任务4：运行代码
 - 运行 npm run start
@@ -158,6 +159,7 @@ LUIS的开发流程更像是一个教学过程：开发者是老师，LUIS App�
 ![intro](/assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/28.webp)
 
 ### Welcome
+
 Bot Friday Club 报名方法
 ![intro](/assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/29.webp)
 ![intro](/assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/30.webp)
