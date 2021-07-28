@@ -77,8 +77,7 @@ image: /assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/00.web
 收集后如果想要系统更好的进行预处理，需要做一些数据的扩充，比如数据的处理和标注。
 
 四、对话脚本撰写
-这一点是比较重要的，与以前搭建app不一样，因为是零UI，对话脚本很重要，怎么去引导用户去完成对话，有十条设计原则：简洁明了、对话语句要自然、区别新老用户、使用问候语和结束语、确认策略、随机策略、使用对话式标识、设计延迟话术、主动学习、持续跟踪上下文。
-- 简单介绍10条的是原则，控制对话流：首次互动要说清楚，能做哪些事，不能做哪些事，应该怎样做命令，都可以在首次互动时说清楚，持续的跟用户说一些内容，引导用户到正确的轨道上，包括一些中断，
+这一点是比较重要的，与以前搭建app不一样，因为是零UI，对话脚本很重要，怎么去引导用户去完成对话，有十条设计原则：简洁明了、对话语句要自然、区别新老用户、使用问候语和结束语、确认策略、随机策略、使用对话式标识、设计延迟话术、主动学习、持续跟踪上下文。简单介绍10条的是原则，控制对话流：首次互动要说清楚，能做哪些事，不能做哪些事，应该怎样做命令，都可以在首次互动时说清楚，持续的跟用户说一些内容，引导用户到正确的轨道上，包括一些中断，
 虽然做bot是零UI，但实际上它是有一个隐形的UI在的，在过去搭建app和网站的时候，我们有相关的设计导航，有相关的目录，其实在对话脚本的撰写里面也有隐形的存在，但是要设计好，在不同的时候召回出来，当用户要求进行步骤转换，其实都是需要脚本去进行的。
 
 五、对话系统搭建
@@ -112,25 +111,31 @@ LUIS的开发流程更像是一个教学过程：开发者是老师，LUIS App�
 
 ## 实操介绍
 
-任务1：发布LUIS版本
-- 点击LUIS的Publish获取APPID和KEY
+- 任务1：发布LUIS版本
+
+点击LUIS的Publish获取APPID和KEY
 ![intro](/assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/20.webp)
-- 发布成功后，可以看到绿色的成功提示，点击Refer to the list of endpoints切换到管理页面：
+发布成功后，可以看到绿色的成功提示，点击Refer to the list of endpoints切换到管理页面：
 ![intro](/assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/21.webp)
-- 获取Authoring Key
+获取Authoring Key
 ![intro](/assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/22.webp)
-- 点击 Application Information, 获取APP ID
+点击 Application Information, 获取APP ID
 ![intro](/assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/23.webp)
-任务2 - 将LUIS RESTFUL API 接入wechaty
-- 安装官方的’luis-sdk’,并将获取的key 和 Application ID 填入：
+
+- 任务2 - 将LUIS RESTFUL API 接入wechaty
+安装官方的’luis-sdk’,并将获取的key 和 Application ID 填入：
 ![intro](/assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/24.webp)
-- 根据已有的LUIS 配置写示例代码
+根据已有的LUIS 配置写示例代码
 ![intro](/assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/25.webp)
-任务3：运行代码
-- 输入命令[git clone](https://github.com/lijiarui/chatbot-zero-to-one)
+
+- 任务3：运行代码
+
+输入命令[git clone](https://github.com/lijiarui/chatbot-zero-to-one)
 ![intro](/assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/26.webp)
-任务4：运行代码
-- 运行 npm run start
+
+- 任务4：运行代码
+
+运行 npm run start
 ![intro](/assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/27.webp)
 用户发送，即可得到测试回复
 ![intro](/assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/28.webp)
