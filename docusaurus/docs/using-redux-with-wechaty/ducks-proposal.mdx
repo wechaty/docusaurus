@@ -155,33 +155,56 @@ For building the bot, you will require the following dependencies:
 You can install these dependencies by running the following command:
 
 ```bash
-npm install wechaty wechaty-redux ducks ts-node
+npm install wechaty
+npm install wechaty-redux ducks ts-node
 ```
 
 You will also need to add dependencies for using any [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/) which helps to integrate Wechaty with various **instant messaging (IM) systems** (such as WeChat, Whatsapp, and Gitter):
 
-1. If you want to use **WhatsApp**, install `wechaty-puppet-whatsapp`:
+1. If you want to use **[WhatsApp](https://www.whatsapp.com/)**, install `wechaty-puppet-whatsapp`:
 
   ```bash
   npm install wechaty-puppet-whatsapp
   ```
-2. If you want to use **WeChat**, install `wechaty-puppet-wechat`:
+
+2. If you want to use **[WeChat](https://www.wechat.com/)**, you can try the following puppets:
+
+   * **Web Protocol:** Install `wechaty-puppet-wechat`:
+
+     ```bash
+     npm install wechaty-puppet-wechat
+     ```
+
+   * **iPad Protocol:**
+     * padlocal: Install `wechaty-puppet-padlocal`:
+
+       ```bash
+       npm install wechaty-puppet-padlocal
+       ```
+
+       Then get a token like `puppet_padlocal_XXX`, know more about puppet service padlocal [here](http://wechaty.js.org/docs/puppet-services/padlocal).
+
+     * paimon: Install `wechaty-puppet-service`:
+
+       ```bash
+       npm install wechaty-puppet-service
+       ```
+
+       Then get a token like `puppet_paimon_XXX`, know more about puppet service paimon [here](http://wechaty.js.org/docs/puppet-services/paimon).
+
+3. If you want to use **[WeCom](https://work.weixin.qq.com/)**, install `wechaty-puppet-service`:
 
   ```bash
-  npm install wechaty-puppet-wechat
+  npm install wechaty-puppet-service
   ```
 
-3. If you want to use **Wecom**, install `wechaty-puppet-wxwork`:
-
-  ```bash
-  npm install wechaty-puppet-wxwork
-  ```
+  Then get a token like `puppet_wxwork_XXXXX`, more about puppet service wxwork [here](https://wechaty.js.org/docs/puppet-services/wxwork/).
 
 > You can find more information about the puppets [here](https://wechaty.js.org/docs/puppet-providers/).
 
 ### 3. Write code for bot
 
-Start by creating a new folder called `src`, and add a file `redux-bot.ts`. We will be writing the code here.
+Start by creating a new file `redux-bot.ts`. We will be writing the code here.
 
 Follow the steps below to build the bot:
 
@@ -256,6 +279,13 @@ In order to run the bot, first you have to **export/set** an environment variabl
 ```bash
 export WECHATY_LOG=verbose
 export WECHATY_PUPPET=wechaty-puppet-wechat
+
+# For using WhatsApp:
+# export WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# export WECHATY_PUPPET=wechaty-puppet-service
+# export WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
 ```
 
 </TabItem>
@@ -264,6 +294,13 @@ export WECHATY_PUPPET=wechaty-puppet-wechat
 ```bash
 export WECHATY_LOG=verbose
 export WECHATY_PUPPET=wechaty-puppet-wechat
+
+# For using WhatsApp:
+# export WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# export WECHATY_PUPPET=wechaty-puppet-service
+# export WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
 ```
 
 </TabItem>
@@ -272,15 +309,24 @@ export WECHATY_PUPPET=wechaty-puppet-wechat
 ```bash
 set WECHATY_LOG=verbose
 set WECHATY_PUPPET=wechaty-puppet-wechat
+
+# For using WhatsApp:
+# set WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# set WECHATY_PUPPET=wechaty-puppet-service
+# set WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
 ```
 
 </TabItem>
 </Tabs>
 
+> If you are using WeCom, you can get token from [puppet service wxwork](http://wechaty.js.org/docs/puppet-services/wxwork).
+
 Run the bot using the following command:
 
 ```sh
-npx ts-node src/redux-bot.ts
+ts-node redux-bot.ts
 ```
 
 ## References
