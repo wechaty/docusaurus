@@ -1,5 +1,5 @@
 ---
-title: "How to build a chatbot from zero to one on WeChat"
+title: "如何从0到1搭建微信聊天机器人"
 author: juzibot
 categories: announcement
 tags:
