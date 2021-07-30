@@ -2,8 +2,6 @@
 title: Troubleshooting
 ---
 
-![Wechaty: Conversational RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
-
 The Troubleshooting section discusses the most common problems that you will encounter while creating a chatbot using Wechaty, contributing to Wechaty codebase, contributing to Wechaty documentation, or developing Wechaty puppet and how to fix them.
 
 ## Chatbot developers
