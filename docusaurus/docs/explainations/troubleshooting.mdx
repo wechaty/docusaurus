@@ -2,6 +2,11 @@
 title: Troubleshooting
 ---
 
+<!-- MDX import -->
+
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+
 The Troubleshooting section discusses the most common problems that you will encounter while creating a chatbot using Wechaty, contributing to Wechaty codebase, contributing to Wechaty documentation, or developing Wechaty puppet and how to fix them.
 
 ## Chatbot developers
@@ -31,13 +36,38 @@ If you see `Failed to exec pre-push hook script` message with `Git push succeed`
 
 On the other hand, you may encounter `Failed to exec pre-push hook script` error without `Git push succeed` message. If it is your first time pushing the current branch to remote or you have not set the current local branch to track the remote, try temporarily disabling the `pre-push` hook by prepending `NO_HOOK=1` to the `git push` command and then push with `-u` or `--set-upstream` flag so that the local branch will start tracking the remote.
 
-```sh
-# for Linux & Mac
-NO_HOOK=1 git push -u remote-repository branch-name
+<Tabs
+groupId="operating-systems"
+defaultValue="linux"
+values={[
+{ label: 'Linux', value: 'linux', },
+{ label: 'macOS', value: 'mac', },
+{ label: 'Windows', value: 'windows', },
+]
+}>
 
-# for Windows
+<TabItem value="linux">
+
+```sh
+NO_HOOK=1 git push -u remote-repository branch-name
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```sh
+NO_HOOK=1 git push -u remote-repository branch-name
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```sh
 set NO_HOOK=1  git push -u remote-repository branch-name
 ```
+
+</TabItem>
+</Tabs>
 
 You can also push with `--no-verify` flag instead of prepending `NO_HOOK=1`.
 
