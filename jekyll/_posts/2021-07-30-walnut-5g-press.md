@@ -3,7 +3,7 @@ title: 'Wechaty 社区 & 硬核桃社区：大学生玩转5G消息？So Easy！'
 author: lijiarui
 categories:
   - ospp
-image: /assets/2021/07-walnut-5g-press/walnut-wechaty.webp
+image: /assets/2021/07-walnut-5g-press/teaser.webp
 tags:
   - sticky
   - ospp
