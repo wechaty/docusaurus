@@ -2,8 +2,6 @@
 title: Who is using Wechaty
 ---
 
-![Wechaty: Conversational RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
-
 ## Users of Wechaty
 
 We have a diverse community of Wechaty contributors and users. The Wechaty users in our community mainly comprise of:
@@ -57,5 +55,5 @@ Some of the companies that are currently using Wechaty include:
 
 See more at [Wiki:Voice Of Developer](https://github.com/Wechaty/wechaty/wiki/Voice%20Of%20Developer)
 
-If you are interested in using Wechaty, you are welcome to join our [community](https://gitter.im/wechaty/wechaty) of users and [developers](https://github.com/wechaty/wechaty#yum-voice-of-developers). We are an inclusive and welcoming community.
+If you are interested in using Wechaty, you are welcome to join our [community](https://gitter.im/wechaty/wechaty) of users and [developers](https://wechaty.js.org/contributors/). We are an inclusive and welcoming community.
 If you are still not sure whether Wechaty can solve your problem or challenge, take a look at [what you can do with Wechaty](#link) section. Wechaty is evolving very fast. New Wechaty [puppets](puppet-services/overview.mdx) and [plugins](using-plugin-with-wechaty/overview.mdx) are being added by our dedicated community of developers. Feel free to ask. We shall be happy to help you.
