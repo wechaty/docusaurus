@@ -15,6 +15,7 @@ image: /assets/2020/08-wechaty-soc-midterm-demo-day/midterm-demo-day.webp
 > 作者: [juzibot](https://github.com/juzibot/)
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ## 关于暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与openEuler社区共同举办的一项面向高校学生的暑期活动。
@@ -29,6 +30,15 @@ OSS.Chat项目的任务是将微信和其他社交平台（未来）以及GitHub
 官网：<https://isrc.iscas.ac.cn/summer2020>
 
 官方新闻：<http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html>
+=======
+## 关于OSS.Chat
+
+OSSChat 是一个机器人工具，用于桥接 IM 应用（如微信）与 Apache 社区工具（如邮件列表、Jira），OSS.Chat项目的任务是将微信和其他社交平台（未来）以及GitHub出现的问题和邮件列表之间的三方沟通和翻译障碍发送给开源开发社区，使ASF的文化、技术和协作流程能够更高效、更容易被接受。
+
+我们于2020年12月13日，收到此评估申请。我们作为Apache Local Community北京成员，很高兴为中国本土开源项目进行Apache孵化器适配度评估。
+
+Github Repo：<https://github.com/kaiyuanshe/OSSChat>
+>>>>>>> Stashed changes
 
 ## Wechaty 暑期2020宣讲会
 
