@@ -7,7 +7,7 @@ tags:
   - newbie
   - howto
   - python
-image: /assets/2021/07-newbie-how-to-build-python-wechaty-with-padlocal/rare-book.jpeg
+image: /assets/2021/07-newbie-how-to-build-python-wechaty-with-padlocal/rare-book.webp
 ---
 
 > 写在前面：本HowTo系列用来记录个人在Wechaty的学习和研究过程中的点滴经验，希望能帮助更多人避免我踩过的坑，快速熟悉Wechaty这个工具
@@ -42,7 +42,7 @@ image: /assets/2021/07-newbie-how-to-build-python-wechaty-with-padlocal/rare-boo
 
 - Wechaty的基本结构
 
-![基本结构](/assets/2021/07-newbie-how-to-build-python-wechaty-with-padlocal/wechaty-architecture.jpg)
+![基本结构](/assets/2021/07-newbie-how-to-build-python-wechaty-with-padlocal/wechaty-architecture.webp)
 
 这个结构图例很好的阐述了Wechaty的生态环境架构：
 
@@ -55,7 +55,7 @@ image: /assets/2021/07-newbie-how-to-build-python-wechaty-with-padlocal/rare-boo
 Wechaty 对于底层IM消息解析和处理，是通过Service Provider 控制的协议层程序来完成相关处理，所以对应不同IM的不同协议内容（如：微信的Pad协议、web协议、mac协议等），需要使用配套的Service Provider来完成对底层IM消息的处理。
 目前已经实现的Service Provider有如下几种：
 
-![Service Provider](/assets/2021/07-newbie-how-to-build-python-wechaty-with-padlocal/service-provider.jpg)
+![Service Provider](/assets/2021/07-newbie-how-to-build-python-wechaty-with-padlocal/service-provider.webp)
 
 具体的Service Provider的内容，可以持续关注 [provider docs](https://wechaty.js.org/docs/puppet-providers/) 的最新情况。
 
@@ -119,7 +119,7 @@ docker run -ti \
 
 1. 查看服务启动日志信息
 
-![Gateway启动日志](/assets/2021/07-newbie-how-to-build-python-wechaty-with-padlocal/gateway-service-1.jpg)
+![Gateway启动日志](/assets/2021/07-newbie-how-to-build-python-wechaty-with-padlocal/gateway-service-1.webp)
 
 正如上面的截图，是首次正确启动service gateway的时候的服务日志，尤其关注截图中红框部分，如果看到 ```PuppetServer start()```以及```[PuppetPadlocal] start login with type: QrLogin```，说明服务已经正常启动。
 
@@ -131,7 +131,7 @@ Online QR Code Image: https://wechaty.js.org/qrcode/http%3A%2F%2Fweixin.qq.com%2
 
 信息时，可以直接访问对应的链接，扫码后即可完成微信账号的Pad登录，并且在微信中，可以看到如下图的登录状态显示。
 
-![微信登录设备列表](/assets/2021/07-newbie-how-to-build-python-wechaty-with-padlocal/wechat-logged-device-list.jpeg)
+![微信登录设备列表](/assets/2021/07-newbie-how-to-build-python-wechaty-with-padlocal/wechat-logged-device-list.webp)
 
 ### Ding-Dong 代码编写
 
@@ -192,8 +192,8 @@ class MyBot(Wechaty):
             await conversation.say('[自动回复] dong')
             file_box = FileBox.from_url(
                 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/'
-                'u=1116676390,2305043183&fm=26&gp=0.jpg',
-                name='ding-dong.jpg')
+                'u=1116676390,2305043183&fm=26&gp=0.webp',
+                name='ding-dong.webp')
             await conversation.say(file_box)
 
 
@@ -239,7 +239,7 @@ asyncio.run(main())
 
 在一开始的尝试过程中，由于本人习惯于系统开机后就自动架梯，以实现随时随地的科学上网需求，所以也没做过太多网络层的关注和检查，在启动Gateway Service时，发现 Wechaty Puppet Service 始终无法完成初始化，无法看到日志中的登录二维码链接地址或用户登录成功的信息，取而代之的是一系列心跳检查和服务状态的切换，情况如下图所示：
 
-![微信登录设备列表](/assets/2021/07-newbie-how-to-build-python-wechaty-with-padlocal/gateway-firewall-issue.jpg)
+![微信登录设备列表](/assets/2021/07-newbie-how-to-build-python-wechaty-with-padlocal/gateway-firewall-issue.webp)
 
 过程中，始终只是有心跳检查的日志信息，但没有其他登录成功信息或者初次登录时的扫码信息，所以怀疑是网络层的问题导致部分数据没有正常发送和处理造成，同时联想到以前自己在手机上安装代理软件进行网络抓包时很多应用基于SSL安全双向校验的问题，会导致应用网络请求失败的案例，猜测是否是本机的网络代理设置导致 gateway 与 微信服务 之间的pad协议请求无法正常处理，导致微信服务操作异常，随后关闭本地的代理服务后重新启动gateway服务以及python代码，问题解除。
 
