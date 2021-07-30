@@ -59,6 +59,7 @@ const puppetProviders: SubMenuData = {
     'puppet-providers/lark',
     'puppet-providers/padlocal',
     'puppet-providers/wechat4u',
+    'puppet-providers/xp',
     'puppet-providers/service',
     'puppet-providers/mock',
     'puppet-providers/diy',
