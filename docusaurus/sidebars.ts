@@ -59,6 +59,7 @@ const puppetProviders: SubMenuData = {
     'puppet-providers/lark',
     'puppet-providers/padlocal',
     'puppet-providers/wechat4u',
+    'puppet-providers/xp',
     'puppet-providers/service',
     'puppet-providers/mock',
     'puppet-providers/diy',
@@ -121,6 +122,7 @@ const quickStart: SubMenuData = {
   label: 'Quick Start',
   items: [
     'quick-start/running-on-google-cloud-shell',
+    'quick-start/running-on-gitpod',
   ],
 }
 

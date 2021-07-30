@@ -1,7 +1,7 @@
 ---
 name: heygum
 site: https://github.com/heygum
-avatar: /assets/contributors/heygum/avatar.png
+avatar: /assets/contributors/heygum/avatar.webp
 bio: 在读IT留学生
 email: 
 twitter: 
