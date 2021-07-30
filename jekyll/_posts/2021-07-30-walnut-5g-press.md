@@ -62,7 +62,7 @@ tags:
 
 “**我们认为5G消息具有广阔的应用前景，所以共同选择了这个项目。** 5G消息是5G时代的生态级应用，基于GSMA RCS和UP标准构建，具备富媒体化、轻量化、交互化等特质。**5G消息实现原生消息界面一站式线上业务体验，能形成更高效益的引流转化，是一种集成程度更高、可代替App的全新人机交互服务模式**，将给企业客户带来极高的服务价值。”学生邵琦说。
 
-03.未来，更多的开发者活动
+## 03.未来，更多的开发者活动
 
 ![future](/assets/2021/07-walnut-5g-press/future.webp)
 
@@ -84,5 +84,5 @@ tags:
 
 注：5G Chatbot项目，[开发支持电信运营商 5G Chatbot/RCS 的 Wechaty 接入 Puppet 模块](https://wechaty.js.org/2021/07/15/ospp-plan-5g-chatbot-puppet/)，简称 5G Chatbot项目，项目ID：210220088
 
-> 编辑：硬核桃社区
+> 编辑：硬核桃社区  
 > Source: [硬核桃 Walnut Hardcore](https://mp.weixin.qq.com/s/31qVyvmbHm4wHjeZNovvMg)
