@@ -144,7 +144,6 @@ Wechaty 合计发布了11个项目，共收到来自清华大学、北京大学�
 
 多功能想做的事情，原来写一个功能可能需要大家一起来写，可能每个功能需要几十行或者是几百行代码，
 
-
 ### 基于python-wechaty的群聊助手机器人 <https://github.com/wechaty/summer-of-code/issues/6>
 
 - 导师：吴京京：Wechaty Committer，Python Wechaty Author（ 1435130236@qq.com）
@@ -168,5 +167,5 @@ Wechaty 合计发布了11个项目，共收到来自清华大学、北京大学�
 
 ## 欢迎正在阅读的你参与其中
 
-- 社区官网链接：https://wechaty.js.org
+- 社区官网链接：<https://wechaty.js.org>
 - 社区运营微信： FridayBot
