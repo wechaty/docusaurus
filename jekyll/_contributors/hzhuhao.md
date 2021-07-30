@@ -1,7 +1,7 @@
 ---
 name: hzhuhao
 site: https://huhao.me/
-avatar: /assets/contributors/hzhuhao/avatar.jpg
+avatar: /assets/contributors/hzhuhao/avatar.webp
 bio: Focus on web development.
 email: hzhuhao@163.com
 twitter: https://twitter.com/hzhuhao
