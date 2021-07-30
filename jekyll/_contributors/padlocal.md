@@ -1,7 +1,7 @@
 ---
 name: padlocal
 site: https://github.com/padlocal
-avatar: /assets/contributors/padlocal/avatar.png
+avatar: /assets/contributors/padlocal/avatar.webp
 bio: Everything is ok.
 email: oxddoxdd@gmail.com
 ---
