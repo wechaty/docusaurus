@@ -29,7 +29,7 @@ image: /assets/2020/06-wechaty-summer-of-code-2020-talk/00.wepb
 ![Wechaty SoC破冰会现场合影](/assets/2020/wechaty-soc-kick-off-meeting/group-photo.png)
 
 Wechaty 作为中国最大的聊天机器人开源项目，与其他数十个中国顶级开源项目一起参与“暑期2020”。
-Wechaty 合计发布了11个项目，共收到来自清华大学、北京大学、中国科学院大学、南开大学、四川大学等高校的数十份申请，并由Wechaty社区的资深Contributor作为导师，选出了11位同学进行项目开发。
+Wechaty合计发布了11个项目，共收到来自清华大学、北京大学、中国科学院大学、南开大学、四川大学等高校的数十份申请，并由Wechaty社区的资深Contributor作为导师，选出了11位同学进行项目开发。
 此次 Wechaty 发布的11个项目涉及多语言、多平台、多功能三个核心主题，来自Wechaty社区的导师将和来自高校的学生开发者们一起，在三个月的时间里完成对应的开源项目。
 
 ## Wechaty 暑期2020宣讲会
