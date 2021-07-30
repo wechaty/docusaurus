@@ -1,7 +1,7 @@
 ---
 name: iivveess
 site: https://github.com/iivveess
-avatar: /assets/contributors/iivveess/avatar.png
+avatar: /assets/contributors/iivveess/avatar.webp
 bio: Work hard, play hard
 email: 
 twitter: 

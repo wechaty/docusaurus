@@ -1,7 +1,7 @@
 ---
 name: yeojongki
 site: https://github.com/yeojongki
-avatar: /assets/contributors/yeojongki/avatar.png
+avatar: /assets/contributors/yeojongki/avatar.webp
 bio: FE Developer.
 email: 
 twitter: 
