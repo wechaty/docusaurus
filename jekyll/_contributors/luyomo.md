@@ -1,6 +1,6 @@
 ---
 name: luyomo
-avatar: /assets/contributors/luyomo/luyomo.png
+avatar: /assets/contributors/luyomo/luyomo.webp
 email: syunka.tyo@gmail.com
 ---
 
