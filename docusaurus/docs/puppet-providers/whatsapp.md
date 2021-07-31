@@ -12,10 +12,17 @@ sidebar_label: Whatsapp
 
 WhatsApp is the most popular Instance Messaging service in many parts of the world. With the WhatsApp Wechaty Puppet Provider, you can reach more than 1.5 billion WhatsApp users. You can send notifications, have two-way conversations, by building chatbots. If you're trying to reach and better converse with users in the west world, you need to consider using WhatsApp.
 
+With the introduction of wechaty puppet and the growth of the wechaty ecosystem and community, we’re happy to introduce wechaty-puppet-whatsapp which connects Wechaty API, the conversational RPA SDK for chatbot makers, and WhatsApp, a free, multi-platform messaging app.
+
 The WhatsApp Wechaty Puppet Provider is now available in alpha stage, to allow developers to start building and prototyping in your developing environments.
+
+As a developer, you can use wechaty-puppet-whatsapp to build your own WhatsApp chatbot with a few lines of code, which can send and receive WhatsApp messages with wechaty API.
 
 - Repo: <https://github.com/wechaty/wechaty-puppet-whatsapp>
 - Support & Feedback: <https://github.com/wechaty/wechaty-puppet-whatsapp/issues>
+- npm package: <https://npmjs.com/package/wechaty-puppet-whatsapp>
+
+Wechaty Puppet Whatsapp is built on top of whatsapp-web.js, which is A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app, created by Pedro S. Lopez, @pedroslopez
 
 ## Features
 
@@ -66,9 +73,67 @@ npm start
 </TabItem>
 </Tabs>
 
-## Roadmap
+## Getting started
 
-- to be added
+First, you should install the package :
+
+```sh
+npm i wechaty-puppet-whatsapp
+npm i wechaty
+```
+
+To enable the display of QR code in the terminal, qrcode-terminal should also be installed.
+
+```sh
+npm i qrcode-terminal
+```
+
+Then, you can implement your bot in a few lines of code, here is an basic demo:
+
+```ts
+const { Wechaty, log} = require("wechaty");
+const qrterminal = require('qrcode-terminal');
+const { PuppetWhatsapp} = require("wechaty-puppet-whatsapp");
+
+const puppet  = new PuppetWhatsapp()
+const bot = new Wechaty({ puppet })
+
+bot
+  .on('scan', qrcode => qrterminal.generate(qrcode, { small: true }))
+  .on('login', user => log.info(`User ${user} logged in`))
+  .on('message', message => log.info(`Message: ${message}`))
+
+bot.start()
+  .then(() => log.info('StarterBot', 'Starter Bot Started.'))
+  .catch(e => log.error('StarterBot', e))
+```
+
+After scanning a WhatsApp QR code and logging in, you can view the received messages in the terminal, feel free to implement your own function over the messages based on your need.
+
+As always, feel free to file an issue on the github repo for any feedback.
+
+wechaty-puppet-whatsapp is an open-source project. If you’re interested in contributing to this project, check out the contribution guidelines to learn more, and welcome to join the Wechaty Developers’ Home or our Gitter network https://gitter.im/wechaty/wechaty to join our community.
+
+## Features to be implemented
+
+Here are some features to be implemented :
+
+Feature |	Status
+---|---
+Send and Receive text messages |	✅
+Send media (images/audio/documents) |	❌
+Send video |	❌
+Receive Video |	❌
+Receive media (images/audio/video/documents) |	❌
+Send contact cards |	❌
+Get invite for group |	❌
+Modify group subject |	❌
+Add group participants |	❌
+Kick group participants |	❌
+Mention users |	❌
+Get contact info |	❌
+Get profile pictures |	❌
+Set user status message |	❌
 
 ## History
 
