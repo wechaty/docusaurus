@@ -122,7 +122,7 @@ pm2 logs koa  //后台查看运行程序  首次会显示扫码日志
 
 ### 更多问题
 
-关于`wechaty`的相关接口，请[参考wechaty官网文档](https://wechaty.js.org/v/zh/)，如果以上还没有解决你的问题，请先往`wechaty`的项目[issues](https://github.com/Chatie/wechaty/issues)中查找是否存在相同的问题，由于本项目是依赖`wechaty`开发，所以启动时遇到的问题大部分是`wechaty`的。
+关于`wechaty`的相关接口，请[参考wechaty官网文档](https://wechaty.js.org/v/zh/)，如果以上还没有解决你的问题，请先往`wechaty`的项目[issues](https://github.com/wechaty/wechaty/issues)中查找是否存在相同的问题，由于本项目是依赖`wechaty`开发，所以启动时遇到的问题大部分是`wechaty`的。
 
 事实上, 如果需要一些其他自定义功能, 也可以很方便的在项目里修改哦！
 

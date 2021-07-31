@@ -1,9 +1,13 @@
 ---
 title: Applying the documentation system to Wechaty docs
 author: huan
-categories: announcement
+categories: 
+  - announcement
+  - gsod
 tags:
   - gsod
+  - google
+  - gsod-2021
   - docs
   - news
   - documentation

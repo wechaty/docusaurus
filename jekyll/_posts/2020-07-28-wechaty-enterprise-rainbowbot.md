@@ -14,7 +14,7 @@ image: /assets/2020/wechaty-rainbowbot/rainbow.jpg
 > Author: [@CavonCheng](https://github.com/CavonCheng)
 > Code: [@rainbow-bot](https://github.com/CavonCheng/rainbow-bot)
 
-[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/chatie/wechaty)
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ## 背景
