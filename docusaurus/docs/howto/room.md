@@ -122,6 +122,8 @@ class MyBot(Wechaty):
 
 ## Adding contact to room
 
+`add` accepts 'Contact' as an argument. You can get the Contact by using `msg.talker()`.
+
 <Tabs
   groupId="programming-languages"
   defaultValue="ts"
@@ -372,6 +374,9 @@ class MyBot(Wechaty):
 </Tabs>
 
 ## Changing topic of the room
+  
+`topic` accepts a `String` as an argument.
+ You can find the `Room` by either room name (a `String`) or room id (format '12345678910@chatroom')
 
 <Tabs
   groupId="programming-languages"
