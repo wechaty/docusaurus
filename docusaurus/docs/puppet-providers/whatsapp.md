@@ -110,34 +110,36 @@ bot.start()
 
 After scanning a WhatsApp QR code and logging in, you can view the received messages in the terminal, feel free to implement your own function over the messages based on your need.
 
-As always, feel free to file an issue on the github repo for any feedback.
-
-wechaty-puppet-whatsapp is an open-source project. If you’re interested in contributing to this project, check out the contribution guidelines to learn more, and welcome to join the Wechaty Developers’ Home or our Gitter network https://gitter.im/wechaty/wechaty to join our community.
-
 ## Features to be implemented
 
 Here are some features to be implemented :
 
-Feature |	Status
+Feature|Status
 ---|---
-Send and Receive text messages |	✅
-Send media (images/audio/documents) |	❌
-Send video |	❌
-Receive Video |	❌
-Receive media (images/audio/video/documents) |	❌
-Send contact cards |	❌
-Get invite for group |	❌
-Modify group subject |	❌
-Add group participants |	❌
-Kick group participants |	❌
-Mention users |	❌
-Get contact info |	❌
-Get profile pictures |	❌
-Set user status message |	❌
+Send and Receive text messages|✅
+Send media (images/audio/documents)|❌
+Send video|❌
+Receive Video|❌
+Receive media (images/audio/video/documents)|❌
+Send contact cards|❌
+Get invite for group|❌
+Modify group subject|❌
+Add group participants|❌
+Kick group participants|❌
+Mention users|❌
+Get contact info|❌
+Get profile pictures|❌
+Set user status message|❌
 
 ## History
 
 - [Wechaty Puppet Whatsapp Has been Published, Shan, Feb 15, 2021](https://wechaty.js.org/2021/02/15/publishment-of-wechaty-whatapp-puppet/)
+
+## Contributing
+
+Feel free to file an issue on the github repo for any feedback.
+
+wechaty-puppet-whatsapp is an open-source project. If you’re interested in contributing to this project, check out the contribution guidelines to learn more, and welcome to join the Wechaty Developers’ Home or our Gitter network <https://gitter.im/wechaty/wechaty> to join our community.
 
 ## Maintainers
 
