@@ -2,6 +2,16 @@
 title: 'Managing rooms'
 ---
 
+Managing room is one of the important features in WeChaty. The word "room" here refers to Wechat rooms (also called groups).
+You can instruct the bot to create a new room, change the topic (or name) of the room, add a contact to a specific room, remove a contact from a room, and mention(@) someone in the room.
+
+:::tip
+
+A Room can be identified by either groupId or room topic (room name)
+
+:::
+
+---
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
