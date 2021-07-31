@@ -76,12 +76,12 @@ npm start
 
 "Open Source Software Supply Chain Lighting Plan-Summer 2020" (thereafter referred to as Summer 2020) is a summer event for college students jointly organized by the Software Institute of the Chinese Academy of Sciences and the openEuler community. It aims to encourage students in school to actively participate in the development and maintenance of open source software, and promote the vigorous development of excellent open source software communities in China. According to the degree of difficulty and completion of the project, participants can also receive bonuses and trophies for the "Open Source Software Supply Chain Lighting Plan-Summer 2020" event.
 
-* Official website: https://isrc.iscas.ac.cn/summer2020
-* Official news: http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html
+- [Official website](https://isrc.iscas.ac.cn/summer2020)
+- [Official news](http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html)
 
 This project [based on the open API package under the Wechaty interface Feishu Chatbot] is an open source project supported by Summer 2020.
 
-### [Encapsulation of Feishu chat robot under Wechaty interface based on open API] Information :
+### Information on encapsulation of Feishu chat robot under Wechaty interface based on open API
 
 - Instructor: Gao Gao Wu Jingjing
   - Student: Fan Rui
@@ -114,13 +114,9 @@ This project [based on the open API package under the Wechaty interface Feishu C
       - Refactoring
         - 9.8-9.20
       - Write usage documents
-          - 9.21-9.30
+        - 9.21-9.30
 
-### Project summary
-
-Project outcome:  The project warehouse is located at: https://github.com/Roxanne718/wechaty-puppet-lark
-
-### Problems encountered and solutions:
+### Problems encountered and solutions
 
 When using Ngrox for intranet penetration, the subdomain name will change every time it is restarted. Under the advice and guidance of the teacher, localtunnel was finally used to solve this problem.
 
@@ -129,13 +125,14 @@ Due to the incomplete understanding of TypeScript and HTTP requests, some messag
 Although the basic functions have been completed, the project had not reached the release level.
 
 If you want to develop Feishu robots like wechaty in WeChat, you need to complete the following things:
-  - Encapsulation of contact class, room class, etc.
-  - Encapsulation and processing of other payload messages
-  - Encapsulate puppet into wechaty
 
-## Blog
+- Encapsulation of contact class, room class, etc.
+- Encapsulation and processing of other payload messages
+- Encapsulate puppet into wechaty
 
-- [基于开放 API 封装 Wechaty 接口下的飞书聊天机器人, 范蕊, Sep 30, 2020](https://wechaty.js.org/2020/09/30/wechaty-puppet-lark-final-blog/)
+## Blog links
+
+1. [基于开放 API 封装 Wechaty 接口下的飞书聊天机器人, 范蕊, Sep 30, 2020](https://wechaty.js.org/2020/09/30/wechaty-puppet-lark-final-blog/)
 
 ## Maintainers
 
