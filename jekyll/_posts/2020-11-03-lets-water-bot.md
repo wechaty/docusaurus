@@ -10,7 +10,7 @@ image: /assets/2020/11-lets-water/letswater.png
 
 ## let's water wechaty-bot<水群机器人>
 
-[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/chatie/wechaty)
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 > 背景：微信机器人，用于管理水群 提醒水友们（程序员）到点喝水 && 提醒我自己一些时间点，比如4点半抢券
