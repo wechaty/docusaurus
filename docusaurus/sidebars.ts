@@ -59,6 +59,7 @@ const puppetProviders: SubMenuData = {
     'puppet-providers/lark',
     'puppet-providers/padlocal',
     'puppet-providers/wechat4u',
+    'puppet-providers/xp',
     'puppet-providers/service',
     'puppet-providers/mock',
     'puppet-providers/diy',
@@ -230,6 +231,7 @@ const introduction = {
  const basic = {
   label: 'Basic',
   items: [
+    'examples/basic/starter-bot',
     'examples/basic/the-worlds-shortest-chatbot-code-in-6-lines',
     'examples/basic/ding-dong-bot',
     'examples/basic/contact-bot',
