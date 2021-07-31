@@ -15,6 +15,8 @@ image: /assets/2020/wechaty-weixin-openai/teaser-image.png
 
 应 [WWC(Women Who Code)](#women-who-code) 邀请，我在线上分享了如何用「Wechaty」和「微信对话开放平台」做个助理帮助回答常见问题。
 
+活动介绍: [https://mp.weixin.qq.com/s/6HyEZlwWbuRGY9T_KotXEw](WWC在线分享: 如何用 Wechaty 和 微信对话开放平台 创建你的个人助理)
+
 ![wechaty-weixin-openai][teaser]
 
 随着社会节奏的不断变快，每天，我都有越来越多的微信消息需要回复，其中不乏很多重复的问题反复找到我。作为一个程序员，都是不愿意在重复的工作中浪费自己宝贵的时间的。这次，将给大家分享如何用 Wechaty 和 OpenAI 创建一个属于你的个人助理，帮助你来处理那些重复的问题，解放你的时间。

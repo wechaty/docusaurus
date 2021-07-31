@@ -21,7 +21,7 @@ image: /assets/2021/01-wechaty-charbot-lite/1.png
 
   [Wechaty](https://wechaty.github.io/) 是适用于微信个人帐户的Bot SDK，可以帮助您创建6行JavaScript的机器人，并具有包括[Linux](https://travis-ci.com/wechaty/wechaty)，[Windows](https://ci.appveyor.com/project/wechaty/wechaty)，[Darwin（OSX / Mac）](https://travis-ci.com/Wechaty/wechaty)和[Docker](https://app.shippable.com/github/Wechaty/wechaty)在内的跨平台支持。
 
-- [Powered by Wechaty](https://github.com/chatie/wechaty)
+- [Powered by Wechaty](https://github.com/wechaty/wechaty)
 - [Wechaty开源激励计划](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 ### 全球最短的ChatBot代码：6行JavaScript

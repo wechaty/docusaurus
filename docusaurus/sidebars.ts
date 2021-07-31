@@ -1,7 +1,7 @@
 /**
  * Docusaurus Sidebar
  */
-interface SubMenuData {
+ interface SubMenuData {
   label: string,
   items: (SubMenuData | string)[],
   type?: string,
@@ -119,13 +119,31 @@ const caseStudy: SubMenuData = {
   ],
 }
 
-const gettingStarted: SubMenuData = {
-  label: 'Getting Started',
+const quickStart: SubMenuData = {
+  label: 'Quick Start',
   items: [
-    'getting-started/overview',
-    'getting-started/quick-start',
-    'getting-started/hard-way',
+    'quick-start/running-on-google-cloud-shell',
+    'quick-start/running-on-gitpod',
   ],
+}
+
+const usingReduxWithWechaty: SubMenuData = {
+  label: 'Using Redux with Wechaty',
+  items: [
+    'using-redux-with-wechaty/overview',
+    'using-redux-with-wechaty/vannila-redux',
+    'using-redux-with-wechaty/ducks-proposal',
+  ]
+}
+
+const usingPluginWithWechaty: SubMenuData = {
+  label: 'Using Plugin with Wechaty',
+  items: [
+    'using-plugin-with-wechaty/overview',
+    'using-plugin-with-wechaty/event-logger',
+    'using-plugin-with-wechaty/qr-code-terminal',
+    'using-plugin-with-wechaty/heartbeat',
+  ]
 }
 
 const community: SubMenuData = {
@@ -256,17 +274,27 @@ const professional = {
   ],
 }
 
+const gettingStarted: SubMenuData = {
+  label: 'Getting Started',
+  items: [
+    'getting-started/overview',
+    subMenu(quickStart),
+    'getting-started/running-locally',
+  ],
+}
+
 const tutorials = {
   label: 'Tutorials',
   items: [
     'tutorials/overview',
+    'tutorials/installation',
     subMenu(gettingStarted),
     'tutorials/video-tutorial',
     'tutorials/docker',
     'tutorials/usage-with-heroku',
-    'tutorials/using-plugin-with-wechaty',
+    subMenu(usingPluginWithWechaty),
     'tutorials/using-vorpal-with-wechaty',
-    'tutorials/using-redux-with-wechaty',
+    subMenu(usingReduxWithWechaty),
     'tutorials/cheatsheet',
     subMenu(examples),
   ],

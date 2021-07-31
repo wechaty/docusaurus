@@ -4,7 +4,7 @@ import test from 'tstest'
 
 import path from 'path'
 
-import { JEKYLL_FOLDER } from './jekyll-folder'
+import { JEKYLL_FOLDER } from './folders'
 
 import { getFrontmatterAvatarList } from './get-frontmatter-avatar-list'
 
