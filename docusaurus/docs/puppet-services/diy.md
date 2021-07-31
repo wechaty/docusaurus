@@ -6,6 +6,9 @@ title: 'Puppet Service: DIY'
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
+import TokenGatewayUnix   from './transclusions/token-gateway-unix.mdx'
+import TokenGatewayWin32  from './transclusions/token-gateway-win32.mdx'
+
 [![Wechaty Puppet Service DIY](https://img.shields.io/badge/Service-DIY-blue)](diy.md)
 
 :::note Do It Yourself
@@ -30,13 +33,15 @@ docker pull wechaty/wechaty
 
 We need to choice which [Wechaty Puppet Provider](puppet-providers/overview.mdx) we want to use by setting the `WECHATY_PUPPET` environment variable.
 
-For example, you can choose [wechaty-puppet-padlocal](puppet-providers/padlocal.md) by setting `WECHATY_PUPPET=wechaty-puppet-padlocal`, add an additional PadLocal token `WECHATY_PUPPET_PADLOCAL_TOKEN=puppet_padlocal__TOKEN__` which is required by PadLocal.
+For example, you can choose [wechaty-puppet-wechat](puppet-providers/wechat.md) by setting `WECHATY_PUPPET=wechaty-puppet-wechat`.
 
 :::note Wechaty Puppet Providers
 
 Learn all [Wechaty Puppet Providers](puppet-providers/overview.mdx)
 
 You need to set all environment variables which requires from a specific provider.
+
+For example, an additional token will be required by `PadLocal`: `WECHATY_PUPPET_PADLOCAL_TOKEN=puppet_padlocal__TOKEN__`
 
 :::
 
@@ -53,30 +58,27 @@ You need to set all environment variables which requires from a specific provide
 <TabItem value="linux">
 
 ```sh
-export WECHATY_PUPPET="wechaty-puppet-padlocal"
-export WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal__TOKEN__"
+export WECHATY_PUPPET="wechaty-puppet-wechat"
 ```
 
 </TabItem>
 <TabItem value="mac">
 
 ```sh
-export WECHATY_PUPPET="wechaty-puppet-padlocal"
-export WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal__TOKEN__"
+export WECHATY_PUPPET="wechaty-puppet-wechat"
 ```
 
 </TabItem>
 <TabItem value="windows">
 
 ```sh
-set WECHATY_PUPPET="wechaty-puppet-padlocal"
-set WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal__TOKEN__"
+set WECHATY_PUPPET="wechaty-puppet-wechat"
 ```
 
 </TabItem>
 </Tabs>
 
-### 3. Set Wechaty Puppet Service TOKEN
+### 3. Create your own Wechaty Puppet Service TOKEN
 
 In order to provide [Wechaty Puppet Service](specs/service.md), you need to specify a [TOKEN](specs/token.md) for authorization.
 
@@ -124,7 +126,7 @@ set WECHATY_TOKEN="__UUIDv4__"
 </TabItem>
 </Tabs>
 
-### 4. Set Wechaty Puppet Service Port
+### 4. Set Wechaty Puppet Service port
 
 The port for your [Wechaty Puppet Service](specs/service.md) need to be specified. Make sure it's free on your server.
 
@@ -225,7 +227,6 @@ docker run -ti \
   --network=host \
   -e WECHATY_LOG \
   -e WECHATY_PUPPET \
-  -e WECHATY_PUPPET_PADLOCAL_TOKEN \
   -e WECHATY_PUPPET_SERVER_PORT \
   -e WECHATY_TOKEN \
   wechaty/wechaty
@@ -303,12 +304,6 @@ Your Wechaty Puppet Service will be ready to service for [Polyglot Wechaty](poly
 
 For use Wechaty Token Gateway with ease, you can copy/paste the following code (with modifications for your need) in your bash shell:
 
-:::note modify before use
-
-We are using PadLocal as the example. Remember to modify `WECHATY_PUPPET_PADLOCAL_TOKEN` by replacing `puppet_padlocal__TOKEN__` with yours.
-
-:::
-
 <Tabs
   groupId="operating-systems"
   defaultValue="linux"
@@ -319,115 +314,18 @@ We are using PadLocal as the example. Remember to modify `WECHATY_PUPPET_PADLOCA
   ]
 }>
 
-<TabItem value="linux">
+  <TabItem value="linux">
+    <TokenGatewayUnix />
+  </TabItem>
 
-```sh
-# Step 1
-docker pull wechaty/wechaty
+  <TabItem value="mac">
+    <TokenGatewayUnix />
+  </TabItem>
 
-# Step 2
-#   here we are using padlocal for example
-#   replace it to fit your needs
-export WECHATY_PUPPET=wechaty-puppet-padlocal
-export WECHATY_PUPPET_PADLOCAL_TOKEN=puppet_padlocal__TOKEN__
+  <TabItem value="windows">
+    <TokenGatewayWin32 />
+  </TabItem>
 
-# Step 3
-export WECHATY_TOKEN=$(curl -s https://www.uuidgenerator.net/api/version4)
-echo "WECHATY_TOKEN=$WECHATY_TOKEN"
-
-# Step 4
-export WECHATY_PUPPET_SERVER_PORT=8788
-
-# Step 5
-export WECHATY_LOG="verbose"
-
-# Step 6
-docker run \
-  -d \
-  -ti \
-  --name wechaty_puppet_service_token_gateway \
-  --rm \
-  --privileged \
-  --network=host \
-  -e WECHATY_LOG \
-  -e WECHATY_PUPPET \
-  -e WECHATY_PUPPET_PADLOCAL_TOKEN \
-  -e WECHATY_PUPPET_SERVER_PORT \
-  -e WECHATY_TOKEN \
-  wechaty/wechaty
-
-# Step 7
-export HTTP_CODE=$(curl -s -o /dev/null -w '%{http_code}' https://api.chatie.io/v0/hosties/${WECHATY_TOKEN})
-if [ "$HTTP_CODE" == 200 ]; then
-  echo "Wechaty Puppet Service TOKEN ${WECHATY_TOKEN} online status:"
-  curl https://api.chatie.io/v0/hosties/${WECHATY_TOKEN}
-  echo
-else
-  >&2 echo "ERROR: Wechaty Puppet Service TOKEN ${WECHATY_TOKEN} out of service"
-fi
-
-# Step 8 🎉
-```
-
-</TabItem>
-<TabItem value="mac">
-
-```sh
-# Step 1
-docker pull wechaty/wechaty
-
-# Step 2
-#   here we are using padlocal for example
-#   replace it to fit your needs
-export WECHATY_PUPPET=wechaty-puppet-padlocal
-export WECHATY_PUPPET_PADLOCAL_TOKEN=puppet_padlocal__TOKEN__
-
-# Step 3
-export WECHATY_TOKEN=$(curl -s https://www.uuidgenerator.net/api/version4)
-echo "WECHATY_TOKEN=$WECHATY_TOKEN"
-
-# Step 4
-export WECHATY_PUPPET_SERVER_PORT=8788
-
-# Step 5
-export WECHATY_LOG="verbose"
-
-# Step 6
-docker run \
-  -d \
-  -ti \
-  --name wechaty_puppet_service_token_gateway \
-  --rm \
-  --privileged \
-  --network=host \
-  -e WECHATY_LOG \
-  -e WECHATY_PUPPET \
-  -e WECHATY_PUPPET_PADLOCAL_TOKEN \
-  -e WECHATY_PUPPET_SERVER_PORT \
-  -e WECHATY_TOKEN \
-  wechaty/wechaty
-
-# Step 7
-export HTTP_CODE=$(curl -s -o /dev/null -w '%{http_code}' https://api.chatie.io/v0/hosties/${WECHATY_TOKEN})
-if [ "$HTTP_CODE" == 200 ]; then
-  echo "Wechaty Puppet Service TOKEN ${WECHATY_TOKEN} online status:"
-  curl https://api.chatie.io/v0/hosties/${WECHATY_TOKEN}
-  echo
-else
-  >&2 echo "ERROR: Wechaty Puppet Service TOKEN ${WECHATY_TOKEN} out of service"
-fi
-
-# Step 8 🎉
-```
-
-</TabItem>
-<TabItem value="windows">
-
-```sh
-# To be add
-```
-
-</TabItem>
 </Tabs>
 
 I hope you enjoy it!

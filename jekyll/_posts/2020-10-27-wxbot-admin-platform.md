@@ -268,7 +268,7 @@ pm2 start pm2.config.js
 
 ## 感谢
 
-[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/chatie/wechaty)
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
 - 感谢 [beclass](https://github.com/beclass) 的开源项目 [`wxbot`](https://github.com/beclass/wxbot)，这是一套优秀的微信机器人平台。

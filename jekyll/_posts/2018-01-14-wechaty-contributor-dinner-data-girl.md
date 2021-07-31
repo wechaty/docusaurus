@@ -8,8 +8,6 @@ tags:
 image: /assets/2018/wechaty-contributor-dinner-data-girl.jpg
 ---
 
-![Wechaty Contributors][contributors-image]
-
 > This Wechaty Contributors Dinner is sponsored by Data Girl.
 
 The above contributors are:
@@ -41,5 +39,3 @@ The above contributors are:
     width:100%;
     height:100%;
 "></iframe></div>
-
-[contributors-image]: /assets/2018/wechaty-contributor-dinner-data-girl.jpg
