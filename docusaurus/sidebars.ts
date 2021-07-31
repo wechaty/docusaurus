@@ -21,15 +21,15 @@ const showcases: SubMenuData = {
 const wechatyapi: SubMenuData = {
   label: 'wechaty-api',
   items: [    
-    'api/wechaty-api/wechaty-api-overview',
-    'api/wechaty-api/classes',
-    'api/wechaty-api/typedefs',
-    'api/wechaty-api/wechaty-start',
-    'api/wechaty-api/wechaty-on',
-    'api/wechaty-api/wechaty-logout',
-    'api/wechaty-api/wechaty-logonoff',
-    'api/wechaty-api/wechaty-options',
-    'api/wechaty-api/wechaty-eventfunction',
+    'api/wechaty/wechaty-api-overview',
+    'api/wechaty/classes',
+    'api/wechaty/typedefs',
+    'api/wechaty/wechaty-start',
+    'api/wechaty/wechaty-on',
+    'api/wechaty/wechaty-logout',
+    'api/wechaty/wechaty-logonoff',
+    'api/wechaty/wechaty-options',
+    'api/wechaty/wechaty-eventfunction',
   ],
 } 
 
