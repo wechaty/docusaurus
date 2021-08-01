@@ -205,9 +205,9 @@ You will also need to add dependencies for using any [Wechaty Puppet](https://we
 
 > You can find more information about the puppets [here](https://wechaty.js.org/docs/puppet-providers/).
 
-Now, you are ready to write main code for bot.
+Now, you are ready to write the main code for the bot.
 
-### 3. Writing code for bot
+### 3. Writing code for the bot
 
 Create a new file `room-bot.js`. You will be writing code here.
 
@@ -226,7 +226,7 @@ Now, we will write some functions which will be required for handling different 
 
 **manageDingRoom**
 
-This function will help you find a room, join it, leave it and to change the topic of the room.
+This function will help you find a room, join it, leave it, and change the topic of the room.
 
 ```js
 async function manageDingRoom() {
@@ -289,7 +289,7 @@ async function manageDingRoom() {
 
 **checkRoomJoin**
 
-This function checks who can send an invitation and who can't. If the invitation is sent by the owner, then the person could join the room. Otherwise, the invitation will be cancelled and the person has to resend ding to the owner so that the owner can send him/her a new valid invitation.
+This function checks who can send an invitation and who can't. If the invitation is sent by the owner, then the person could join the room. Otherwise, the invitation will be canceled and the person has to resend ding to the owner so that the owner can send him/her a new valid invitation.
 
 ```js
 async function checkRoomJoin(room, inviteeList, inviter) {
@@ -307,11 +307,11 @@ async function checkRoomJoin(room, inviteeList, inviter) {
 
     if (inviter.id !== userSelf.id) {
       await room.say(
-        "RULE1: Invitation is limited to me, the owner only. Please do not invit people without notify me.",
+        "RULE1: Invitation is limited to me, the owner only. Please do not invite people without notifying me.",
         inviter
       );
       await room.say(
-        'Please contact me: by send "ding" to me, I will re-send you a invitation. Now I will remove you out, sorry.',
+        'Please contact me: by send "ding" to me, I will re-send you an invitation. Now I will remove you out, sorry.',
         inviteeList
       );
 
@@ -443,7 +443,7 @@ bot
 
 **Global Event: login**
 
-This event gets the `user` and display the login status of the user. After that, it displays the `msg` saying `setting to manageDingRoom() after 3 seconds ... ` which means it will call `manageDingRoom` function after 3 seconds.
+This event gets the `user` and displays the login status of the user. After that, it displays the `msg` saying `setting to manageDingRoom() after 3 seconds ... ` which means it will call `manageDingRoom` function after 3 seconds.
 
 ```js
 .on("login", async function (user) {
@@ -462,7 +462,7 @@ This event gets the `user` and display the login status of the user. After that,
 
 **Global Event: room-join**
 
-`room-join` event lets people to join a respective room.
+`room-join` event lets people join a respective room.
 
 ```js
 .on("room-join", async function (room, inviteeList, inviter) {
@@ -481,7 +481,7 @@ This event gets the `user` and display the login status of the user. After that,
 
 **Global Event: room-leave**
 
-This event removes people from room.
+This event removes people from the room.
 
 ```js
 .on("room-leave", async function (room, leaverList) {
@@ -523,7 +523,7 @@ Using this event, you can change the topic of the room.
 
 **Global Event: message**
 
-This event handles entry and exit in the room. If you send `ding` first time, then you will get an invitation but saying `ding` in a room leads to exiting the room. Similarly, if you say `dong` it will quit the room.
+This event handles entry and exit in the room. If you send `ding` the first time, then you will get an invitation but saying `ding` in a room leads to exiting the room. Similarly, if you say `dong` it will quit the room.
 
 ```js
 .on("message", async function (msg) {
@@ -675,7 +675,7 @@ bot.start()
 
 ### 4. Running the bot
 
-In order to run the bot, you have to export/set environment variables with the type of puppet you want to use.
+To run the bot, you have to export/set environment variables with the type of puppet you want to use.
 
 <Tabs
   groupId="operating-systems"
