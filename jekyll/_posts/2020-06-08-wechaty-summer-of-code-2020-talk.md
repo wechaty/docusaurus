@@ -146,22 +146,22 @@ Wechaty合计发布了11个项目，共收到来自清华大学、北京大学�
 
 ### 基于python-wechaty的群聊助手机器人 <https://github.com/wechaty/summer-of-code/issues/6>
 
-- 导师：吴京京：Wechaty Committer，Python Wechaty Author（ 1435130236@qq.com）
-- 学生开发者：孔祥哲，清华大学本科生（15068701650@163.com）
+- 导师：吴京京：Wechaty Committer，Python Wechaty Author<1435130236@qq.com>
+- 学生开发者：孔祥哲，清华大学本科生<15068701650@163.com>
 
 ![18](/assets/2020/06-wechaty-summer-of-code-2020-talk/18.webp)
 
 ### 编写一个“每日一句”插件 <https://github.com/wechaty/summer-of-code/issues/10>
 
-- 导师：Gcaufy，20000+Star小程序框架Wepy作者、Wechaty Plugin系统设计师（gcaufy@gmail.com）
-- 学生开发者：江姗姗，北京大学二学位本科生（univerone@outlook.com）
+- 导师：Gcaufy，20000+Star小程序框架Wepy作者、Wechaty Plugin系统设计师,<gcaufy@gmail.com>
+- 学生开发者：江姗姗，北京大学二学位本科生<univerone@outlook.com>
 
 ![19](/assets/2020/06-wechaty-summer-of-code-2020-talk/19.webp)
 
 ### 基于Python-wechaty建立一个斗图机器人 <https://github.com/wechaty/summer-of-code/issues/7>
 
-- 导师：黄纯洪，python-wechaty contributor（huangaszaq@gmail.com）
-- 学生开发者：肖子霖，四川大学本科生（me@mrxiao.net）
+- 导师：黄纯洪，python-wechaty contributor<huangaszaq@gmail.com>
+- 学生开发者：肖子霖，四川大学本科生<me@mrxiao.net>
 
 ![20](/assets/2020/06-wechaty-summer-of-code-2020-talk/20.webp)
 
