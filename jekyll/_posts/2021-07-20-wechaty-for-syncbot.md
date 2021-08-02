@@ -19,10 +19,9 @@ image: /assets/2021/07-wechaty-with-milvus/background.png
 
 ---
 
- > 作者: [shiyu22](https://github.com/shiyu22)， 程序媛
+> 作者: [shiyu22](https://github.com/shiyu22)， 程序媛
 
-
-# Wechaty 实现 Milvus 社区群消息同步
+## Wechaty 实现 Milvus 社区群消息同步
 
 ## 背景
 
@@ -44,7 +43,6 @@ image: /assets/2021/07-wechaty-with-milvus/background.png
 基于 Wechaty 部署的机器人可以同步十个群的消息，效果展示如下面的截图，机器人负责转发其他群的消息，保证每个群可以同步，用户交流群的人就可以跨群交流了。接下来将介绍如何用 Wechaty 部署消息同步的机器人。
 
 <img src="../assets/2021/07-wechaty-with-milvus/syncbot1.png" width = "300" height = "500" alt="图片名称" align=center />
-
 
 ## Wechaty 的具体实现
 
