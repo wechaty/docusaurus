@@ -342,7 +342,7 @@ const explainations = {
     'explainations/lifecycle',
     'explainations/alternatives',
     'explainations/glossary',
-    'explainations/chatbot-testing',
+    'explainations/testing',
     'explainations/faq',
     'explainations/troubleshooting',
     subMenu(docusaurus),
