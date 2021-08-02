@@ -1,8 +1,6 @@
 ---
-title: Wechaty DevOps tools
+title: DevOps tools
 ---
-
-![Wechaty: Conversational RPA SDK for Chatbot Makers](/img/wechaty-logo.svg)
 
 The DevOps model is all the rage for most software teams because of the immense benefits it delivers in terms of efficiency over the traditional software development and management processes. Like in any other software project, there are several DevOps toolsets you can use to automate and streamline your Wechaty chatbot building process. You can integrate them as part of your workflow whether you are developing a chatbot or Wechaty puppet. These tools can help improve your efficiency and code quality. Below are some of the tools you can use to automate your workflow in addition to the traditional DevOps tools.
 
@@ -48,6 +46,15 @@ This package is for centralized management of all Wechaty project `tsconfig.json
 
 You can configure a tool as part of your DevOps continuous integration pipeline to detect and fix problems in your codebase. Since [`tslint`](https://www.npmjs.com/package/tslint) is not supported, you can use [`eslint`](https://eslint.org/) instead to detect and fix problems. [`@chatie/eslint-config`](https://www.npmjs.com/package/@chatie/eslint-config) is a handy npm package you can use for configuring [`eslint`](https://eslint.org/). It can effectively manage Wechaty `eslintrc.js` files.
 
+## [pkg-jq](https://www.npmjs.com/package/pkg-jq)
+
+This tool, which is distributed as npm package, by default searches for `package.json` file in the current and the parent directories. It then uses `jq` syntax to manipulate the `json` file. It is powered by [node-jq](https://npmjs.com/package/node-jq).
+
 ## [Wechaty with Docker](#placeholder-link)
 
 Wechaty is fully dockerized. You can integrate Docker as part of your DevOps model by running Wechaty as a microservice in a [docker](https://www.docker.com/) container. To get a taste of Wechaty and Docker, there is a [docker-wechaty-getting-started repository](https://github.com/wechaty/docker-wechaty-getting-started) which you can clone and run on your machine with zero configuration.
+
+For more about DevOps tools in the Wechaty ecosystem, you can read the following blog posts.
+
+- [Chatie DevOps toolset](https://wechaty.js.org/2019/06/12/chatie-devops-toolset/)
+- [Wonderful Wechaty DevOps tools](https://wechaty.js.org/2020/06/20/wonderful-wechaty-devops-tools/)
