@@ -2,7 +2,7 @@
 name: Lovely-Pig
 site: https://github.com/Lovely-Pig
 bio: 一只努力学习的可爱小猪
-avatar: /assets/contributors/lovely-pig/avatar.png
+avatar: /assets/contributors/lovely-pig/avatar.webp
 email: 1607806186@qq.com
 ---
 

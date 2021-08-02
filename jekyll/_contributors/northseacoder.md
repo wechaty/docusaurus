@@ -2,7 +2,7 @@
 name: north-sea-coder
 site: http://www.nsc.best
 bio: enjoying
-avatar: /assets/contributors/northseacoder/avatar.jpg
+avatar: /assets/contributors/northseacoder/avatar.webp
 email: 646388689@qq.com
 ---
 
