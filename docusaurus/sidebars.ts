@@ -211,7 +211,7 @@ const introduction = {
   label: 'Introduction',
   items: [
     'overview',
-    'what-is-wechaty',
+    'wechaty',
     subMenu(showcases),
     subMenu(caseStudy),
     subMenu(community),
