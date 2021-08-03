@@ -15,7 +15,7 @@ tags:
 
 - syncbot
 
-image: /assets/2021/07-wechaty-with-milvus/background.png
+image: /assets/2021/07-wechaty-with-milvus/background.webp
 
 ---
 
@@ -42,7 +42,7 @@ image: /assets/2021/07-wechaty-with-milvus/background.png
 针对前面提到的问题，社区计划实现一个可以同步群消息的机器人，之前了解到 [Wechaty](https://github.com/wechaty/wechaty) 可以实现这个功能，并且 Wechaty 的社区也部署了同步群消息的机器人。Wechaty 是一个开源的的对话机器人 SDK，它是一个使用 Typescript 构建的Node.js 应用。支持多种微信接入方案，包括网页，ipad，ios，windows， android 等。
 基于 Wechaty 部署的机器人可以同步十个群的消息，效果展示如下面的截图，机器人负责转发其他群的消息，保证每个群可以同步，用户交流群的人就可以跨群交流了。接下来将介绍如何用 Wechaty 部署消息同步的机器人。
 
-<img src="../assets/2021/07-wechaty-with-milvus/syncbot1.png" width = "300" height = "500" alt="图片名称" align=center />
+<img src="../assets/2021/07-wechaty-with-milvus/syncbot1.webp" width = "300" height = "500" alt="图片名称" align=center />
 
 ## Wechaty 的具体实现
 
