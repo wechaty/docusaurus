@@ -21,7 +21,7 @@ image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
 ![gsod](/assets/2021/07-gsod-2021-publish-article/gsod.webp)
 
 - GSoD是[Google Season of Docs](https://developers.google.com/season-of-docs)的简称，是由谷歌组织的年度活动，目的是将技术文档撰写工程师和开源组织聚集到一块，在开源这个空间中共同促进和改善开源的发展。
-- 谷歌的这个活动具有重大意义，因为开源项目为用户提供的不仅仅是理解学习项目的平台，同样也是一个能够为开源项目做贡献的渠道。
+- 谷歌的这个活动具有重大意义，开源项目为用户提供的不仅仅是理解学习项目的平台，同样也是一个能够为开源项目做贡献的渠道。
 在该计划期间，技术文档撰写工程师们花了3-5个月时间构建一个新的文档，改进现有文档的结构，开发急需的教程，改进开源组织的贡献流程和指南。
 
 ## Wechaty简介
