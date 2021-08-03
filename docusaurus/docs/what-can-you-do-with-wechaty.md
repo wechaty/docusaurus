@@ -2,9 +2,9 @@
 title: What can you do with Wechaty
 ---
 
-Wechaty is designed to help users implement their chatbots with straightforward business logic, without the complexities found in the realm of chatbot programming. As a developer or a non-technical user, users will be able to create a chatbot that can run on almost all popular instant messaging (IM) applications ([Wechat/Weixin](https://www.wechat.com/en/), [WhatsApp](https://www.whatsapp.com/), [WeCom](https://play.google.com/store/apps/details?id=com.tencent.wework&hl=en&gl=US), [Gitter](https://gitter.im/home/explore), and [Lark](https://www.larksuite.com/), among others).
+Wechaty helps users implement their chatbots with straightforward business logic without the complexities of chatbot programming. As a developer, you will be able to create a chatbot that can run on almost all popular instant messaging (IM) applications ([Wechat/Weixin](https://www.wechat.com/en/), [WhatsApp](https://www.whatsapp.com/), [WeCom](https://play.google.com/store/apps/details?id=com.tencent.wework&hl=en&gl=US), [Gitter](https://gitter.im/home/explore), and [Lark](https://www.larksuite.com/), among others).
 
-With a few lines of code from popular programming languages (Java, Python, PHP, .NET, Kotlin, OpenAPI, JavaScript, Go, Scala, C#, and Rust), users will be able to create a customized chatbot to suit their business needs. On top of that, users can add their own code and configure the chatbot effortlessly. Also, with its intelligent dialogue management system, handling simple and complex user conversations would be easier.
+With a few lines of code in any of the popular programming languages (Java, Python, PHP, .NET, Kotlin, OpenAPI, JavaScript, Go, Scala, C#, and Rust), you can create a customized chatbot to suit your business needs. With Wechaty's intelligent dialogue management system, handling complex user conversations becomes a lot easier.
 
 Here are some of the things that users and businesses can do with Wechaty:
 
@@ -20,9 +20,19 @@ Here are some of the things that users and businesses can do with Wechaty:
 
 ## A brief history of Wechaty
 
-Back in 2014, Wechaty creator Huan Li's daily life depended too much on Wechat, which was dubbed as China's famous messaging app that is capable of payment processing and other mini applications such as friendship management. Also at the time, adding friends in Wechat is possible but restricts a total number of friends to 5,000 only. Not to mention, the app has more than 400 rooms with more than 400 members each, and room management poses a big challenge. Aside from these issues, Wechat does not offer any tool or service for businesses to manage their customers which is essential for any business to thrive in China. In China, Wechat seems to be the nation's internet and it is crucial for businesses to grow their yield and to communicate with their customers who live their lives on Wechat.
+Back in 2014, Wechaty creator [Huan Li](https://github.com/huan)'s daily life depended too much on Wechat, which was dubbed as China's famous messaging app that is capable of payment processing and other mini applications such as friendship management. Also at the time, adding friends in Wechat is possible but restricts a total number of friends to 5,000 only. Not to mention, the app has more than 400 rooms with more than 400 members each, and room management poses a big challenge. Aside from these issues, Wechat does not offer any tool or service for businesses to manage their customers which is essential for any business to thrive in China. In China, Wechat seems to be the nation's internet and it is crucial for businesses to grow their yield and to communicate with their customers who live their lives on Wechat.
 
-Thus, Huan decided to build Wechaty and landed its first set of [clients](https://github.com/nibble0101/wechaty-documentation-draft/blob/main/01-introduction/04-who-is-using-wechaty.md) in 2017. Wechaty's chatbot can also function as a **_customer management tool_** that helps companies deal with some business challenges such as acquiring, engaging, and retaining customers. Wechaty is built as the _tireless bot_ that can work 24/7, can filter the most important messages, can highlight discussions that contain the **keywords** that users would want to search and follow, and can monitor chatbot and user actions seamlessly.
+Thus, Huan decided to build Wechaty and landed its first set of clients in 2017. After that, Wechaty Co-creator [Rui Li](https://github.com/lijiarui) found that Wechaty can help companies build relationships with their customers. Then she used Wechaty to create [JuziBot](https://juzi.bot/) as a **customer management tool** that helps companies deal with business challenges such as acquiring, engaging, and retaining customers.
+
+## What are companies doing with Wechaty
+
+We have profiled how some companies use Wechaty to deliver solutions to their clients in the sections below.
+
+### [JuziBot](https://juzi.bot/)
+
+[JuziBot](https://juzi.bot/) is one of the startups that heavily relies on Wechaty to provide smart marketing and sales services for customers on WeChat and WeCom platforms.
+
+JuziBot is able to help companies build secure and stable Private Traffic, as well as helps corporate clients with customer acquisition and sales conversion. JuziBot currently serves customers in education, consumer, healthcare, and a few other industries. Some of the clients include Meituan Dianping, JingDong, and L'Oréal among others. JuziBot's products have been known to improve the sales experience for one million sales professionals daily.
 
 ## Motivation
 
