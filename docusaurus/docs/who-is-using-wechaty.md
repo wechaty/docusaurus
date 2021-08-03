@@ -10,8 +10,9 @@ We have a diverse community of Wechaty contributors and users. The Wechaty users
 - Machine learning researchers
 - Freelancers who are building chatbots for their clients
 - Companies that are building commercial services on top of conversational automation
-
-![Wechaty users and contributors](../static/img/docs/wechaty-contributors.webp)
+- Google，Tencent, ByteDance engineers and entrepreneurs
+  
+![Wechaty users](../static/img/docs/wechaty-users.webp)
 
 ## Companies using Wechaty
 
@@ -30,10 +31,10 @@ Some of the companies that are currently using Wechaty include:
 - **[58 Tongcheng](https://by.58.com/)** - is China's leading life service platform which provides different types of services such as recruitment, domestic, and rental services
 - **[Plug And Play](https://www.plugandplaytechcenter.com/)** - is the world's largest early-stage investor, accelerator, and corporate innovation platform
 - **[Y Combinator](https://www.ycombinator.com/)** - is a venture capitalist that provides seed funding for startups
-- **Google，Tencent, ByteDance engineers and entrepreneurs**
-  ![Wechaty users](../static/img/docs/wechaty-users.webp)
 
 ## Voice of developers
+
+![Wechaty users and contributors](../static/img/docs/wechaty-contributors.webp)
 
 > "Wechaty is a great solution, I believe there would be much more users recognize it." [link](https://github.com/Wechaty/wechaty/pull/310#issuecomment-285574472)  
 > &mdash; <cite>@Gcaufy, Tencent Engineer, Author of [WePY](https://github.com/Tencent/wepy)</cite>
