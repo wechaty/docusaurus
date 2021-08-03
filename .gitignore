@@ -12,9 +12,4 @@ new-gh-pages/
 tmp/
 
 hash.file
-<<<<<<< Updated upstream
-*.md
-*.png
-=======
 jekyll/_posts/2020-12-31-osschat-a-bridge-to-the-apache-way-in-china.md
->>>>>>> Stashed changes
