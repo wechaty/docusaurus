@@ -212,6 +212,8 @@ const introduction = {
   items: [
     'overview',
     'wechaty',
+    'getting-started-with-wechaty',
+    'main-concepts-in-wechaty',
     subMenu(showcases),
     subMenu(caseStudy),
     subMenu(community),
