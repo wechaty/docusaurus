@@ -9,7 +9,7 @@ tags:
   - news
   - meetup
   - featured
-image: /assets/2020/06-wechaty-summer-of-code-2020-talk/01.wepb
+image: /assets/2020/06-wechaty-summer-of-code-2020-talk/homepage.webp
 ---
 
 > 作者: [juzibot](https://github.com/juzibot/)
