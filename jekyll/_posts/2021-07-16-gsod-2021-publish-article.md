@@ -88,6 +88,23 @@ image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
      你也可以了解更多的[会议详情](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.i4kw5zu3yk32)
      ![6th](/assets/2021/07-gsod-2021-publish-article/6th.webp)
 
+### 参与者
+
+总共有12个参与者，他们是：
+
+1. Rohitesh Jain, Volunteer (UTC + 5:30)
+2. Sajen Sarvajith, Reconstruct Landing page writer (UTC + 5:30)
+3. Abhishek Jaiswal, How-to-guide section writer (UTC + 05:30)
+4. Simin Liao, Volunteer (+8:00)
+5. Mukosa Joseph Mawa, Introductions and Explanations section writer (UTC +03:00)
+6. Rajiv Ranjan Singh, Improve the gRPC and OpenAPI ecosystem writer, rajivperfect007@gmail.com, IST (UTC +5:30)
+7. Souvik Biswas, Create easy to learn tutorials for beginner users writer, sbis1999@gmail.com (UTC +05:30)
+8. Shraddha, Improve References section writer (UTC + 5:30)
+9. Shwetal Soni, Create easy to learn tutorials for beginners users writer (UTC +05:30)
+10. Vasvi Sood, How to guides, contactvasvisood@gmail.com writer (UTC + 5:30)
+11. Arnab Saha, Reconstruction of Landing page with value propositions writer (UTC + 5:30)
+12. Chris Estepa,  Introduction and Explanations sections writer (UTC +08:00)
+
 ### Welcome
 
 非常高兴有你们都加入Wechaty，更欢迎更多的技术文档撰写工程师加入我们，共同学习共同建设Wechaty社区！
