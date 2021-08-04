@@ -47,7 +47,7 @@ image: /assets/2020/04-open-source-wechaty-in-python-go-and-java/001.webp
 
 - [0:10:00](https://www.youtube.com/watch?v=ZX_Pb9fRwS4&list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&index=8&t=600s) later: Q/A & Free Talk
 
-##  多语言Wechaty项目
+## 多语言Wechaty项目
 
 ### Python Wechaty, <https://github.com/wechaty/python-wechaty>
 
