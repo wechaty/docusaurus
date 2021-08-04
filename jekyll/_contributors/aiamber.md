@@ -1,9 +1,9 @@
 ---
-name: 李仁杰
-site: https://github.com/AIAmber
-avatar: /assets/contributors/aiamber/avatar.webp
-bio: 合肥工业大学本科，RichAI（睿企科技）Java工程师：Docker/K8S/Java后端/数据分析/NLP。
-email: lzlrjok@vip.qq.com
+name: AIAmber
+site: https://github.com/AIAmber
+avatar: /assets/contributors/aiamber/avatar.webp
+bio: 合肥工业大学本科，RichAI（睿企科技）Java工程师：Docker/K8S/Java后端/数据分析/NLP。
+email: lzlrjok@vip.qq.com
 ---
 
 合肥工业大学本科，RichAI（睿企科技）Java工程师：Docker/K8S/Java后端/数据分析/NLP。
