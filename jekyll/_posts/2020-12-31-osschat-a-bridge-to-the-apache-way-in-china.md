@@ -27,7 +27,7 @@ OSSChat 是一个机器人工具，用于桥接 IM 应用（如微信）与 Apac
 
 {% include iframe.html src="https://youtu.be/KWS4V86heh0?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh" %}
 
-你想了解更多，可以查看[OSSChat会议记录](https://shimo.im/docs/wGHydDxvWGjWKgDK)
+这里是[OSSChat会议记录](https://shimo.im/docs/wGHydDxvWGjWKgDK)
 
 ### 怎样使用OSS.Chat
 
