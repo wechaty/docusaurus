@@ -43,6 +43,7 @@ Npm install: [1,000,000+](https://npm-stat.com/charts.html?package=wechaty&from=
 Issue/PR: [2,190+]
 
 ### 开发者群体：
+
 微信群：5,000+
 被开源项目所使用：800+
 国际 Contributor：20+
@@ -73,11 +74,12 @@ Blog/Post: 260+
 - [00:00:05](https://youtu.be/6VhrXaT7clQ?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh) Huan introducing everyone.
 - [00:17:10](https://youtu.be/6VhrXaT7clQ?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&t=1038) Wujingjing Log/Exception/Interface Design
 - [00:50:10](https://youtu.be/6VhrXaT7clQ?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&t=3010) Xilidou introduce kotlin-wechaty progress
-- [01:22:23](https://youtu.be/6VhrXaT7clQ?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&t=4943) Huan import wechaty-puppet schemas from auto-generated GRPC code for non-TS languages. 
+- [01:22:23](https://youtu.be/6VhrXaT7clQ?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&t=4943) Huan import wechaty-puppet schemas from auto-generated GRPC code for non-TS languages.
 
 ## 欢迎正在阅读的你参与其中
 
 想要了解更多或者想联系我们：
+
 - Gitter Channel:<https://gitter.im/wechaty/wechaty>
 - Mail list:<wechaty@googlegroups.com>(web archive)
 - Website:<https://wechaty.js.org>
