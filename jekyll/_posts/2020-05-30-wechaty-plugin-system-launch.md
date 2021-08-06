@@ -14,11 +14,11 @@ image: /assets/2020/05-30-wechaty-plugin-system-launch/001.webp
 
 > 作者:[windmemory](https://github.com/juzibot)
 
-### 如果你不了解Wechaty，一句话快速了解
+## 如果你不了解Wechaty，一句话快速了解
 
 - Wechaty 是一个开源聊天机器人框架SDK，在Github上已有8000 Star的高度封装、高可用、多语言的聊天机器人框架。
 
-### 现在，再看三句话，了解我们的新进展
+## 现在，再看三句话，了解我们的新进展
 
 ![002](/assets/2020/05-30-wechaty-plugin-system-launch/002.webp)
 
