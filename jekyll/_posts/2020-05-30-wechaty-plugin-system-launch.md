@@ -3,7 +3,6 @@ title: "Wechaty Plugin 插件系统发布会：5月30日等你来"
 author: juzibot
 categories: announcement
 tags:
-  - wechaty
   - talk
   - news
   - meetup
