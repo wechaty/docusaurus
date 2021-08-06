@@ -23,7 +23,7 @@ image: /assets/2018/2018-08-05-build-wechaty-chatbot-at-opensource-factory/000.w
 - [00:11:33](https://youtu.be/Zgn2QDBENXk?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&t=693) 解释机器人代码
 - [00:17:46](https://youtu.be/Zgn2QDBENXk?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&t=1066) 机器人实现的原理
 
-### app与chatbot的利弊
+### App与Chatbot的利弊
 
 ![001](/assets/2018/08-build-wechaty-chatbot-at-opensource-factory/001.webp)
 
@@ -44,7 +44,9 @@ image: /assets/2018/2018-08-05-build-wechaty-chatbot-at-opensource-factory/000.w
 1. 网络抓包
 2. 分析协议
 3. 模拟协议
+
 代码已经开源了，详情可以在<https://github.com/TingYinHelen>查看
+
 ### 为什么会选择Wechaty
 
 Wechaty是一个把个人微信账号做成机器人的框架，为什么会选择wechaty呢：首先我是一个前端程序员，比如有接收消息，好友请求这个类，API设计的很人性化，同时还提供了一些事件，可以直接通过监听这些事件调用它接口提供的方法来做一些操作。
