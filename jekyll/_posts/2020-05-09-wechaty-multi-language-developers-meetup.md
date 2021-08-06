@@ -27,29 +27,26 @@ Wechaty 帮助开发者实现一个让用户无感知的在IM平台与接入的�
 ![003](/assets/2020/05-wechaty-multi-language-developers-meetup/003.webp)
 多加一行代码,就能拥有复杂对话能力
 
-- 荣誉
- - [Google Season of Docs](https://developers.google.com/season-of-docs) 支持的[30个全球顶级开源项目](https://developers.google.com/season-of-docs/docs/participants)之一。
+### 荣誉
 
- - 被国内顶级开源组织[中国开源云联盟](https://www.coscl.org.cn/)评为[优秀开源项目](https://wechaty.js.org/2020/12/31/open-source-award-wechaty/)
+- [Google Season of Docs](https://developers.google.com/season-of-docs)支持的[30个全球顶级开源项目](https://developers.google.com/season-of-docs/docs/participants)之一。
+- 被国内顶级开源组织[中国开源云联盟](https://www.coscl.org.cn/)评为[优秀开源项目](https://wechaty.js.org/2020/12/31/open-source-award-wechaty/)
+- 开源项目作者[李卓桓](https://wechaty.js.org/contributors/huan/)入选[“中国开源先锋33人”](https://wechaty.js.org/2020/12/23/open-source-pioneer-huan/)
+- 连续入选[2020](https://wechaty.js.org/docs/ospp/2020)、[2021](https://wechaty.js.org/docs/ospp/2021)年度[开源软件供应链点亮计划](https://summer.iscas.ac.cn/#/?lang=en)
+- 多次在 Google、Microsoft、百度大会上进行技术布道
 
- - 开源项目作者[李卓桓](https://wechaty.js.org/contributors/huan/)入选[“中国开源先锋33人”](https://wechaty.js.org/2020/12/23/open-source-pioneer-huan/)
+### 相关数据
 
- - 连续入选[2020](https://wechaty.js.org/docs/ospp/2020)、[2021](https://wechaty.js.org/docs/ospp/2021)年度[开源软件供应链点亮计划](https://summer.iscas.ac.cn/#/?lang=en)
+Github Stars: [11,000+](https://starchart.cc/wechaty/wechaty)
+Github Fork: [1,500+]
+Npm install: [1,000,000+](https://npm-stat.com/charts.html?package=wechaty&from=2016-05-01&to=2021-03-23)
+Issue/PR: [2,190+]
 
- - 多次在 Google、Microsoft、百度大会上进行技术布道
-
-- 相关数据
-
- Github Stars: [11,000+](https://starchart.cc/wechaty/wechaty)
- Github Fork: [1,500+]
- Npm install: [1,000,000+](https://npm-stat.com/charts.html?package=wechaty&from=2016-05-01&to=2021-03-23)
- Issue/PR: [2,190+]
-
-- 开发者群体：
- 微信群：5,000+
- 被开源项目所使用：800+
- 国际 Contributor：20+
- Blog/Post: 260+
+### 开发者群体：
+微信群：5,000+
+被开源项目所使用：800+
+国际 Contributor：20+
+Blog/Post: 260+
 
 ## Wechaty Multi-language Developers Meetup 会议实录
 
