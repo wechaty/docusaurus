@@ -3,8 +3,7 @@ title: "Wechaty Plugin 插件系统发布会：5月30日等你来"
 author: juzibot
 categories: announcement
 tags:
-  - summer-of-wechaty
-  - summer-2020
+  - wechaty
   - talk
   - news
   - meetup
