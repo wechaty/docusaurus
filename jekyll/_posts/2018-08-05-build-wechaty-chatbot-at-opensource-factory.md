@@ -6,7 +6,7 @@ tags:
   - release
   - event
   - news
-image: /assets/2018/2018-08-05-build-wechaty-chatbot-at-opensource-factory/000.webp
+image: /assets/2018/08-build-wechaty-chatbot-at-opensource-factory/000.webp
 ---
 
 ## 尹婷：动手实现微信聊天机器人
