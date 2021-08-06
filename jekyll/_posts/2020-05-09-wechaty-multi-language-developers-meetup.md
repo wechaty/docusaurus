@@ -29,9 +29,13 @@ Wechaty 帮助开发者实现一个让用户无感知的在IM平台与接入的�
 
 - 荣誉
  - [Google Season of Docs](https://developers.google.com/season-of-docs) 支持的[30个全球顶级开源项目](https://developers.google.com/season-of-docs/docs/participants)之一。
+
  - 被国内顶级开源组织[中国开源云联盟](https://www.coscl.org.cn/)评为[优秀开源项目](https://wechaty.js.org/2020/12/31/open-source-award-wechaty/)
+
  - 开源项目作者[李卓桓](https://wechaty.js.org/contributors/huan/)入选[“中国开源先锋33人”](https://wechaty.js.org/2020/12/23/open-source-pioneer-huan/)
+
  - 连续入选[2020](https://wechaty.js.org/docs/ospp/2020)、[2021](https://wechaty.js.org/docs/ospp/2021)年度[开源软件供应链点亮计划](https://summer.iscas.ac.cn/#/?lang=en)
+ 
  - 多次在 Google、Microsoft、百度大会上进行技术布道
 
 - 相关数据
