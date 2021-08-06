@@ -35,7 +35,7 @@ Wechaty 帮助开发者实现一个让用户无感知的在IM平台与接入的�
  - 开源项目作者[李卓桓](https://wechaty.js.org/contributors/huan/)入选[“中国开源先锋33人”](https://wechaty.js.org/2020/12/23/open-source-pioneer-huan/)
 
  - 连续入选[2020](https://wechaty.js.org/docs/ospp/2020)、[2021](https://wechaty.js.org/docs/ospp/2021)年度[开源软件供应链点亮计划](https://summer.iscas.ac.cn/#/?lang=en)
- 
+
  - 多次在 Google、Microsoft、百度大会上进行技术布道
 
 - 相关数据
@@ -61,15 +61,15 @@ Wechaty 帮助开发者实现一个让用户无感知的在IM平台与接入的�
 
 ![004](/assets/2021/06-summer-2021-open-source/004.webp)
 
-- Huan, Tencent TVP of Chatbot, huan@chatie.io, CST
-- Simple, Java Developer, CST
-- Rui，Founder of JuziBot, rui@chatie.io, CST
-- wj-Mcat NLP Researcher, CST
-- ax4, reads update about Wechaty since 2017, CST
-- dchaofei, Go Developer, CST
-- Yuan, Co-founder of JuziBot, CST
-- Xilidou, Java Developer,CST
-- Chunhong HUANG, Python contributor, CST
+1. Huan, Tencent TVP of Chatbot, huan@chatie.io, CST
+2. Simple, Java Developer, CST
+3. Rui，Founder of JuziBot, rui@chatie.io, CST
+4. wj-Mcat NLP Researcher, CST
+5. ax4, reads update about Wechaty since 2017, CST
+6. dchaofei, Go Developer, CST
+7. Yuan, Co-founder of JuziBot, CST
+8. Xilidou, Java Developer,CST
+9. Chunhong HUANG, Python contributor, CST
 
 ### Agenda
 
