@@ -15,7 +15,7 @@ tags:
   - plan
 ---
 
-> Author:[@Rhyme](https://github.com/545641826) [@zrn-fight](https://github.com/zrn-fight)
+> Author:[@Rhyme](https://github.com/lprintf) [@zrn-fight](https://github.com/zrn-fight)
 
 ## 暑期2021
 
