@@ -1,5 +1,5 @@
 ---
-title: "Wechaty SoC Midterm Demo Day"
+title: "Wechaty Multi-language Developers Meetup"
 author: juzibot
 categories: announcement
 tags:
@@ -9,26 +9,53 @@ tags:
   - news
   - meetup
   - featured
-image: /assets/2020/08-wechaty-soc-midterm-demo-day/midterm-demo-day.webp
+image: /assets/2020/05-wechaty-multi-language-developers-meetup/000.webp
 ---
 
 > 作者: [juzibot](https://github.com/juzibot/)
 
 ## 关于Wechaty
 
-![intro](/assets/2021/06-summer-2021-open-source/003.webp)
-[Wechaty](https://github.com/wechaty)是一个开源的的 个人号 微信机器人接口，是一个使用Typescript 构建的Node.js 应用。支持多种微信接入方案，包括网页，ipad，ios，windows， android 等。同时支持Linux, OSX, Win32 和 Docker 等多个平台。
-支持微信个人号接入的第三方类库，在GitHub上可以找到很多，其中大多都是基于Web Wechat的API来实现的，如基于Python的WeixinBot，基于Node.js的Wechaty等。少数支持非Web协议的库，大多是商业私有闭源的，Wechaty是少有的开源项目支持非Web协议的类库。
+Wechaty 帮助开发者实现一个让用户无感知的在IM平台与接入的机器人对话或交互。开发者在 IM 平台扫码接入，自由选择底层并设计应用层，最终实现智能对话。官网：<https://wechaty.js.org>
 
-## Wechaty Multi-language Developers Meetup
+![001](/assets/2020/05-wechaty-multi-language-developers-meetup/001.webp)
+只切换一个变量，其他代码不变就能登录新IM
 
-Meeting Notes:<https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#>
+![002](/assets/2020/05-wechaty-multi-language-developers-meetup/002.webp)
+支持常见流行编程语言，API定义跨编程语言保持一致
+
+![003](/assets/2020/05-wechaty-multi-language-developers-meetup/003.webp)
+多加一行代码,就能拥有复杂对话能力
+
+- 荣誉
+ - [Google Season of Docs](https://developers.google.com/season-of-docs) 支持的[30个全球顶级开源项目](https://developers.google.com/season-of-docs/docs/participants)之一。
+ - 被国内顶级开源组织[中国开源云联盟](https://www.coscl.org.cn/)评为[优秀开源项目](https://wechaty.js.org/2020/12/31/open-source-award-wechaty/)
+ - 开源项目作者[李卓桓](https://wechaty.js.org/contributors/huan/)入选[“中国开源先锋33人”](https://wechaty.js.org/2020/12/23/open-source-pioneer-huan/)
+ - 连续入选[2020](https://wechaty.js.org/docs/ospp/2020)、[2021](https://wechaty.js.org/docs/ospp/2021)年度[开源软件供应链点亮计划](https://summer.iscas.ac.cn/#/?lang=en)
+ - 多次在 Google、Microsoft、百度大会上进行技术布道
+
+- 相关数据
+
+ Github Stars: [11,000+](https://starchart.cc/wechaty/wechaty)
+ Github Fork: [1,500+]
+ Npm install: [1,000,000+](https://npm-stat.com/charts.html?package=wechaty&from=2016-05-01&to=2021-03-23)
+ Issue/PR: [2,190+]
+
+- 开发者群体：
+ 微信群：5,000+
+ 被开源项目所使用：800+
+ 国际 Contributor：20+
+ Blog/Post: 260+
+
+## Wechaty Multi-language Developers Meetup 会议实录
+
+会议记录Meeting Notes:<https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#>
 
 {% include iframe.html src="https://youtu.be/6VhrXaT7clQ?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh" %}
 
 ### Attendees
 
-![intro](/assets/2021/06-summer-2021-open-source/003.webp)
+![004](/assets/2021/06-summer-2021-open-source/004.webp)
 
 - Huan, Tencent TVP of Chatbot, huan@chatie.io, CST
 - Simple, Java Developer, CST
@@ -49,6 +76,7 @@ Meeting Notes:<https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPU
 
 ## 欢迎正在阅读的你参与其中
 
+想要了解更多或者想联系我们：
 - Gitter Channel:<https://gitter.im/wechaty/wechaty>
 - Mail list:<wechaty@googlegroups.com>(web archive)
 - Website:<https://wechaty.js.org>
