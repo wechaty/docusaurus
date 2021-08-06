@@ -12,7 +12,7 @@ tags:
 image: /assets/2020/05-30-wechaty-plugin-system-launch/001.webp
 ---
 
-> 作者:[windmemory](https://github.com/juzibot)
+> 作者:[juzibot](https://github.com/juzibot)
 
 ## 如果你不了解Wechaty，一句话快速了解
 
