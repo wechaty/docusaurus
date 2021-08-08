@@ -17,7 +17,7 @@ image: /assets/2021/08-vscode-debug-nodejs/debug.webp
 
 「暑期 2021」活动中，我为 Wechaty 开发命令行环境下的客户端 [wechaty-cli](https://github.com/wechaty/cli)，使用 [blessed](https://github.com/chjj/blessed) 这个终端图形化组件库可以轻松做出炫酷的仿 IRC 聊天软件，原以为只需调库即可完成任务，但事情远没有那么简单...
 
-[error](/assets/2021/08-vscode-debug-nodejs/error.webp)
+![error](/assets/2021/08-vscode-debug-nodejs/error.webp)
 
 在我点击联系人列表时，应用瞬间崩溃，终端上只留下 npm 的常规报错，翻看对应日志也没有任何有效信息，这意味着没有明确的错误关键字可以一步到位地搜索，针对这种问题，我尝试按以下步骤解决：
 
@@ -131,7 +131,7 @@ at List.focus (cli/node_modules/blessed/lib/widgets/element.js:329:30)
 
 一下子就找到了问题的根源，应用本身的代码应该没有问题，而是在 blessed 库内部的代码中产生了无限循环，那么就可以在相应位置设下断点，观察代码执行顺序和变量值的变化，耐心地分析无限循环产生的原因。
 
-[debug](/assets/2021/08-vscode-debug-nodejs/debug.webp)
+![debug](/assets/2021/08-vscode-debug-nodejs/debug.webp)
 
 如图所示，在 `tree.js` 的 `Tree.prototye.render` 这一函数中 `if (this.screen.focused === this.rows) this.rows.focus();` 这一语句可能导致 `Tree.render()` 会调用 `this.rows.focus()`，将鼠标悬浮至 `this.screen.focused` 发现与 `this.rows` 为同一对象，这是无限循环上的一个环节，如果注释掉此行再运行便不再有崩溃了。不过此行代码或许起着必要的作用，不敢轻易删除，最终还是更改了应用的代码，在另一处上破坏了循环继续的条件，详情可见 [wechaty/cli#13](https://github.com/wechaty/cli/pull/13)。
 
