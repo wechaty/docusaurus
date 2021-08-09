@@ -10,28 +10,26 @@ tags:
 image: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/python-wechaty-logo9.png
 ---
 
-## Python-wechaty & wechaty-puppet-padlocal的初探 ##
-
 本文为本地运行python-wechaty + 云上虚拟机运行wechaty-puppet-padlocal的简易教学  
 
-## 注意事项 ##
+## 注意事项
 
 1. wechaty-puppet-padlocal~~目前只能用**国内公网IP**~~ Fixed at 2021-03-16
 2. ~~**新注册**的wechat小号会无法登入~~ Fixed at 2021-03-10
 3. Update cmd in step1 docker run
 
-## Test Date ##
+## Test Date
 
 * March 01, 2021
 * March 16, 2021
 
-## 环境 ##
+## 环境
 
 1. 本地的手机(iPad or 手机都可以)
 2. PC(本文用Mac)
 3. 阿里云上的虚拟机 for puppet
 
-## 架构 ##
+## 架构
 
 ![Arch]
 
@@ -40,7 +38,7 @@ image: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/python-wechaty
 3. 运行本地python-wechaty-getting-started
 4. 扫码登入
 
-## Step 1 wechaty-puppet-padlocal ##
+## Step 1 wechaty-puppet-padlocal
 
 你会需要一个国内的公网IP+Token(请向[管理员注册](https://wechaty.js.org/docs/puppet-services/#1-free-token-short-term))来让wechaty-puppet生效
 虚拟机部分,试用or免费方案你可以选用阿里云or华为云的or~~GCP~~
@@ -83,7 +81,7 @@ docker container ls
 你可以telnet 虚拟机IP:8788 简易debug一下通不通  
 (Optional)你可以運行將docker run改為docker-compose，虛擬機當機後可以自動長起來
 
-## Step 2 验证hostie token ##
+## Step 2 验证hostie token
 
 访问
 [https://api.chatie.io/v0/hosties/puppet_padlocal_xxxxxxxx](https://api.chatie.io/v0/hosties/puppet_padlocal_xxxxxxxx)  
@@ -94,7 +92,7 @@ Good:
 No Good:  
 `{"ip":"0.0.0.0","port":0}`
 
-## Step 3 本地运行python ##
+## Step 3 本地运行python
 
 python-wechaty-getting-started你需要Python3.7+  
 运行以下cmd
@@ -111,7 +109,7 @@ python3 examples/ding-dong-bot.py
  坐等QR code出现扫码就好  
 ![qrcode]
 
-## Step 4 微信扫码 ##
+## Step 4 微信扫码
 
 ~~目前用**新注册帐号会失败**~~ Fixed  
 扫完后就登入了

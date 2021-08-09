@@ -12,8 +12,6 @@ Wechaty Contributor 北京聚餐
 
 ![Photo][wechaty-beijing-meetup-photo]
 
-<!--more-->
-
 正值清明节，我们组织了一个小范围的 Wechaty Contributor 线下聚会。
 说起来有些唐突，因为事先并没有预约，由我临时起意问大家有没有空，毕竟 PadLocal 发布以来还没有和社区大佬们见过面。
 缘分就在于，也可能因为放假的缘故，刚好大家又能抽出时间，于是聚会才得以成行。

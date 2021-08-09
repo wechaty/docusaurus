@@ -9,10 +9,6 @@ tags:
   - summer-2020
   - entertainment
 ---
-> Author: [@kxz18](https://github.com/kxz18)
-> Code: [@kxz18/CHAssisT](https://github.com/kxz18/CHAssisT)
-
-## 暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
@@ -125,3 +121,6 @@ tags:
 
 - 项目链接：[https://github.com/kxz18/CHAssisT](https://github.com/kxz18/CHAssisT)
 - 联系方式：+86 15068701650 | e: 15068701650@163.com
+
+> Author: [@kxz18](https://github.com/kxz18)
+> Code: [@kxz18/CHAssisT](https://github.com/kxz18/CHAssisT)

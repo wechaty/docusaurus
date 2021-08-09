@@ -9,8 +9,6 @@ tags:
 image: /assets/2018/country-wide-developer-conference.jpg
 ---
 
-> Author: [李佳芮](https://github.com/lijiarui/)，Founder of BotOrange。
-
 ![Wechaty Contributors][contributors-image]
 
 > The above contributors as follows, sort by the order of the contributor in the photo:

@@ -8,9 +8,7 @@ tags:
   - restful
   - ecosystem
 image: /assets/2021/01-wechaty-api-1/luyomo.png
-
 ---
-## wechaty restful api
 
 This article will explain why I started to use wechaty, made the restful api wrapping the bot and what I would do as the next step.
 

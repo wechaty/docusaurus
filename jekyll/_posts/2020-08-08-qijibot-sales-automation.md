@@ -10,10 +10,6 @@ tags:
 image: /assets/2020/qijibot/qijibot.jpg
 ---
 
-> 作者: [Yinbohao](https://github.com/rickyyin98/)
-
-## 摘要
-
 - 除了媒体上的曝光，通过人进行深度触达是好的获客方式
 - 对于团队来说，需要保证所有人的触达标准化
 - 对于个人来说，需要努力提升触达过程的效率
@@ -116,3 +112,5 @@ image: /assets/2020/qijibot/qijibot.jpg
 ![句客宝](/assets/2020/qijibot/jukebao.jpeg)
 这是另外一个很长的、还没有结束的故事……
 如果你对于如何借助工具打造销售体系感兴趣，欢迎你与我聊聊（微信：bohao-YIN），也许会是我们下一篇博客内容的起点。
+
+> 作者: [Yinbohao](https://github.com/rickyyin98/)

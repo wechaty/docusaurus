@@ -10,10 +10,6 @@ tags:
 image: /assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/cover.jpg
 ---
 
-> 作者: [Lovely-Pig](https://github.com/Lovely-Pig/)，一只努力学习的可爱小猪
-
-## 前言
-
 这绝对是全网最细教程，没有之一
 
 ### 项目展示
@@ -472,3 +468,5 @@ asyncio.run(main())
 - python-wechaty: [https://github.com/wechaty/python-wechaty](https://github.com/wechaty/python-wechaty)
 - python-wechaty-getting-started: [https://github.com/wechaty/python-wechaty-getting-started](https://github.com/wechaty/python-wechaty-getting-started)
 - [教你用python-wechaty和web协议开发机器人](https://wechaty.js.org/2021/04/17/python-wechaty-use-web/)
+
+> 作者: [Lovely-Pig](https://github.com/Lovely-Pig/)，一只努力学习的可爱小猪

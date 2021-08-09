@@ -9,12 +9,6 @@ tags:
 image: /assets/2020/ms-lijiarui-interview/teaser.png
 ---
 
-> 作者: [李佳芮](https://github.com/lijiarui)，Microsoft AI MVP, Co-founder of Juzibot, Author of [Chatbot Zero to One](https://item.jd.com/12630213.html)
-
-<!-- more -->
-
-![intro](/assets/2020/ms-lijiarui-interview/intro.jpg)
-
 ## 看点
 
 1. 最贴心的、完善的程序员成长路径
@@ -22,6 +16,8 @@ image: /assets/2020/ms-lijiarui-interview/teaser.png
 3. 全球人工智能技术的实践落地情况
 
 ## 内容
+
+![intro](/assets/2020/ms-lijiarui-interview/intro.jpg)
 
 ### 1. 自我介绍
 

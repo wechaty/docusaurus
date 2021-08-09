@@ -8,10 +8,6 @@ tags:
 image: /assets/2019/remind-eat-1.jpg
 ---
 
-> Author: [犀利豆](https://xilidou.com/) 北邮本科，University of Leicester EE 研究生，Java后端开发，目前就职知乎。
->
-> [原文地址](https://xilidou.com/2019/05/07/wx-bot/#more)
-
 居然有人忘记吃饭？？？
 
 ![image](/assets/2019/remind-eat-1.jpg)
@@ -64,3 +60,7 @@ node remindEat.js
 当对方按照指定的话术服务短信的时候，我们只需要调用每分钟提醒一次的 `schedule cancel()` 方法。
 
 希望每一个人都能按时吃饭，谢谢大家。
+
+> Author: [犀利豆](https://xilidou.com/) 北邮本科，University of Leicester EE 研究生，Java后端开发，目前就职知乎。
+>
+> [原文地址](https://xilidou.com/2019/05/07/wx-bot/#more)

@@ -15,10 +15,6 @@ tags:
   - plan
 ---
 
-> Author:[@Rhyme](https://github.com/lprintf) [@zrn-fight](https://github.com/zrn-fight)
-
-## 暑期2021
-
 “开源软件供应链点亮计划-暑期2021”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2021”活动奖金和奖杯。
 
 官网：<https://summer.iscas.ac.cn/#/homepage>
@@ -80,3 +76,5 @@ tags:
   - 分工：林宇靖同学需主要负责项目功能实现和gitlab项目维护，张瑞宁主要同学负责代码审查和gitlab项目维护。共同撰写中英文文档
   - 证书：保证张瑞宁同学证书署名的情况下，尽量加上林宇靖同学的名字
   - 津贴分配：林宇靖同学:张瑞宁同学=3:1
+
+> Author:[@Rhyme](https://github.com/lprintf) [@zrn-fight](https://github.com/zrn-fight)
