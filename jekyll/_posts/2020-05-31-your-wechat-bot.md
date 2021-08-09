@@ -18,7 +18,7 @@ image: /assets/2020/your-wechat-bot/banner.png
 
 github 上找到了 wechaty ，看到了希望。
 
-### 克隆代码
+## 克隆代码
 
 ```bash
 git clone git@github.com:isnl/wechat-robot.git

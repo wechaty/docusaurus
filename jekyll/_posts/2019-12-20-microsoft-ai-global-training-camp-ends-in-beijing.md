@@ -28,7 +28,7 @@ Global AI Bootcamp是微软发起的全球AI开发者训练营活动，旨在凝
 
 ![image-3](/assets/2019/microsoft-ai-global-training-camp/image-3.png)
 
-### 活动签到
+## 活动签到
 
 Wish you were here.
 

@@ -10,7 +10,7 @@ image: /assets/2020/rae-oa-wechaty/schecdule.png
 
 之前公司web组组长有个微信机器人每周催我们交周报,私信发过去会自动更新到公司内部wiki上,一度惊为天人,后来看到公共号以及掘金上突然有好多人推荐wechaty,据说是6行代码完成一个微信聊天机器人,正好老婆那边想要个能辅助她工作的系统,就是这么巧~
 
-### 致谢
+## 致谢
 
 感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
 感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token  
