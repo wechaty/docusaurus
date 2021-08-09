@@ -65,8 +65,7 @@ image: /assets/2020/04-open-source-wechaty-in-python-go-and-java/001.webp
 
 最后，欢迎大家加入wechaty的社区，项目、文档、博客的地址。
 
-项目：<https://github.com/wechaty/wechaty>
-文档：<https://wechaty.js.org/v/zh/>
+项目：<http://wechaty.js.org/>
 博客：<https://wechaty.github.io/>
 
 ## 欢迎正在阅读的你参与其中
