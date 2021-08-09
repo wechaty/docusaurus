@@ -25,26 +25,7 @@ Azure Show 是由微软最有价值专家、微软技术社区区域总监卢建
 
 在下面 20 分钟的这个视频中，由 Microsoft Regional Director, AI MVP, Wechaty 作者李卓桓，为大家系统性的对 Wechaty 开源项目进行了介绍。希望大家可以通过这 20 分钟了解 Wechaty ，并在未来有机会参与 Wechaty 开源社区建设！
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe
-  src="https://www.youtube.com/embed/YZ130iwcNSE"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=YZ130iwcNSE" %}
 
 - Bilibili: <https://www.bilibili.com/video/BV1vQ4y1A7W2>
 
