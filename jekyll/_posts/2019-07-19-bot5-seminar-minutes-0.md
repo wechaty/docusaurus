@@ -50,7 +50,7 @@ image: /assets/2019/bot5-seminar-0/group-photo.jpg
 
 #### Slides
 
-{% include iframe.html src="/assets/2019/bot5-seminar-0/rasa-core-qhduan.pdf' %}
+{% include iframe.html src="/assets/2019/bot5-seminar-0/rasa-core-qhduan.pdf" %}
 
 #### Video
 
