@@ -42,7 +42,7 @@ CNCF（Cloud Native ComputingFoundation）是成立于2015年的非营利组织�
 
 ### 李佳芮--基于docker构建微信脸盲机器人
 
-![002](/assets/2017/11-kubernetes-meetup/004.webp)
+![002](/assets/2017/11-kubernetes-meetup/002.webp)
 
 - 李佳芮：北京桔子互动科技有限公司创始人&CEO
 
