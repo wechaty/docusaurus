@@ -33,15 +33,8 @@ Wechaty.instance() // Global Instance
 ## 关于插件系统的一切
 
 为了更好地让插件系统为大家所用，Wechaty 社区邀请到Wechaty 作者李卓桓、Wechaty Plugin设计师Gcaufy、Wechaty Puppet Donut/Padplus作者高原、Wechaty Plugin 开发者王墨炱分别就 Wechaty 开发生态、插件开发完整指南、插件的商业化可能等领域进行深度分享。
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tfGZXoe_aA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+
+{% include iframe.html src="https://www.youtube.com/watch?v=tfGZXoe_aA4" %}
 
 ![Wechaty Plugin活动](/assets/2020/wechaty-plugin-milestone/plugin.png)
 
@@ -72,29 +65,8 @@ Wechaty.instance() // Global Instance
 ### 插件系统开发历程及应用
 
 [Wechaty Plugin 设计师，腾讯微信小程序框架开源项目Wepy 作者 Gcaufy 插件系统开发历程及应用](https://www.bilibili.com/video/BV1Et4y1y7Gc)
-<div class="zoom-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <iframe
-    src='{{ '/assets/js/viewer-js/#/assets/2020/wechaty-plugin-milestone/gcaufy.pdf' | relative_url }}'
-    width='560'
-    height='315'
-    allowfullscreen
-    webkitallowfullscreen
-    frameborder="0"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    "
-  ></iframe>
-</div>
+
+{% include iframe.html src="/assets/2020/wechaty-plugin-milestone/gcaufy.pdf" %}
 
 ![Gcaufy-1](/assets/2020/wechaty-plugin-milestone/gcaufy1.jpg)
 
@@ -105,29 +77,8 @@ Wechaty.instance() // Global Instance
 ### Wechaty 插件的商业化落地展望
 
 [15:00 - 15:30 Wechaty Puppet Donut/Padplus 作者 高原 Wechaty 插件的商业化落地展望](https://www.bilibili.com/video/BV13T4y1J7Ta)
-<div class="zoom-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <iframe
-    src='{{ '/assets/js/viewer-js/#/assets/2020/wechaty-plugin-milestone/yuan.pdf' | relative_url }}'
-    width='560'
-    height='315'
-    allowfullscreen
-    webkitallowfullscreen
-    frameborder="0"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    "
-  ></iframe>
-</div>
+
+{% include iframe.html src="/assets/2020/wechaty-plugin-milestone/yuan.pdf" %}
 
 ![Yuan-1](/assets/2020/wechaty-plugin-milestone/yuan1.jpg)
 

@@ -25,26 +25,7 @@ Azure Show 是由微软最有价值专家、微软技术社区区域总监卢建
 
 Wechaty 联合作者李佳芮，用 20 分钟教会你如何用 Azure Cognitive Service QnAMaker.ai 来构建一个能够自动回答投资人问题的 Chatbot !
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe
-  src="https://www.youtube.com/embed/ZYjYAT2g-1Q"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=ZYjYAT2g-1Q" %}
 
 - Bilibili: <https://www.bilibili.com/video/BV1az411q79A>
 

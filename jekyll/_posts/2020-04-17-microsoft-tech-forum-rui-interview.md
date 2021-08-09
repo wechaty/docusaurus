@@ -91,20 +91,7 @@ Chatbot 的智能程度取决于它能够给理解的意图和实体的数量和
 
 本次直播内容的部分视频内容，感谢微软MVP的负责人，来自微软的@康康全称截屏~
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VnI2jl71-Y8" frameborder="0" allowfullscreen="" style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=VnI2jl71-Y8" %}
 
 看 YouTube 有障碍的同学，可以移步到 [腾讯视频](https://v.qq.com/x/page/v0952wieqwl.html)
 

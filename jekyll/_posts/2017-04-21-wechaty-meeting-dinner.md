@@ -34,21 +34,7 @@ It is such an honor to meet all these guys and I really appreciate for their sha
 
 Here is the video.
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3eq8wJfCAWs" frameborder="0" allowfullscreen="" style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe>
-</div>
+{% include iframe.html src="https://www.youtube.com/watch?v=3eq8wJfCAWs" %}
 
 Here is the Chinese version.
 
