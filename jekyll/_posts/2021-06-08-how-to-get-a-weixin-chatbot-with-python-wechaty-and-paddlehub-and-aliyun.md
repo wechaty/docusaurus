@@ -12,7 +12,7 @@ image: /assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddl
 
 这绝对是全网最细教程，没有之一
 
-### 项目展示
+## 项目展示
 
 ![0](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/0.jpg)
 

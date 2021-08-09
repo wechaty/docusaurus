@@ -421,5 +421,4 @@ ts-node index.ts
 ```
 
 > **若出现错误提示**，请在模块 wechaty 及 wechaty-puppet-padpro 中重新执行 `npm link` 操作。
-
 > 作者: [Su Chang](https://github.com/su-chang)，Node.js全栈工程师
