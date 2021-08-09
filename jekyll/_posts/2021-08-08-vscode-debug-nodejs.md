@@ -11,10 +11,6 @@ tags:
 image: /assets/2021/08-vscode-debug-nodejs/debug.webp
 ---
 
-> Author:[@chinggg](https://github.com/chinggg)
-
-## 为什么要学会调试
-
 「暑期 2021」活动中，我为 Wechaty 开发命令行环境下的客户端 [wechaty-cli](https://github.com/wechaty/cli)，使用 [blessed](https://github.com/chjj/blessed) 这个终端图形化组件库可以轻松做出炫酷的仿 IRC 聊天软件，原以为只需调库即可完成任务，但事情远没有那么简单...
 
 ![error](/assets/2021/08-vscode-debug-nodejs/error.webp)
@@ -141,3 +137,5 @@ at List.focus (cli/node_modules/blessed/lib/widgets/element.js:329:30)
 2. [VSCode 调试中 launch.json 配置不完全指南](https://www.barretlee.com/blog/2019/03/18/debugging-in-vscode-tutorial/)
 3. [NodeJS的代码调试和性能调优](https://www.barretlee.com/blog/2015/10/07/debug-nodejs-in-command-line/)
 4. [写 Node.js 代码，从学会调试开始](https://mp.weixin.qq.com/s/7PNE3nBhpQOTN4stChvWzQ)
+
+> Author:[@chinggg](https://github.com/chinggg)

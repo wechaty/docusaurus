@@ -7,9 +7,6 @@ tags:
   - featured
 image: /assets/2021/02-matrix-with-wechaty/2020-03-matrix-appservice-wechaty.png
 ---
-> 作者: [Roy](https://blog.yswtrue.com)。首发于博客: [用Matrix和wechaty来聊微信](https://blog.yswtrue.com/yong-matrix/)
-
-## 用Matrix和wechaty来聊微信
 
 [Matrix chat](https://matrix.org/)是一个很不错的聊天软件，它支持了多种聊天协议和聊天机器人。并且支持通过[matrix-appservice-wechaty](https://github.com/wechaty/matrix-appservice-wechaty)来支持微信聊天。
 现在我来梳理一下matrix-appservice-wechaty的部署方法。
@@ -147,3 +144,5 @@ I had enabled it for you ;-)` 就再发送一遍
 1. [](https://github.com/spantaleev/matrix-docker-ansible-deploy)
 2. [](https://wechaty.js.org/2021/01/28/csharp-wechaty-for-padlocal-puppet-service/)
 3. [](https://github.com/wechaty/wechaty-puppet-puppeteer)
+
+> 作者: [Roy](https://blog.yswtrue.com)。首发于博客: [用Matrix和wechaty来聊微信](https://blog.yswtrue.com/yong-matrix/)

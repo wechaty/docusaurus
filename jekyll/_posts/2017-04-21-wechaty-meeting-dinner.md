@@ -8,8 +8,6 @@ tags:
 image: /assets/2017/wechat-meeting.jpg
 ---
 
-Author: [Yang BAI](https://github.com/antonia0912), formal community manager at [JueJin](https://juejin.im/)(Chinese Hacker News)
-
 ![Photo][antonia-video-photo]
 
 With the development of science and technology, the progress of the society is related to create something useful. And to a certain extent,  the software developers are capable of changing the world.  Last Friday, I was lucky for having an enjoyable conversation with several coders together.
@@ -64,3 +62,5 @@ Here is the Chinese version.
 
 [dinner-photo]: /assets/2017/wechat-meeting.jpg
 [antonia-video-photo]: /assets/2017/antonia0912-issue-4-seminar.jpg
+
+Author: [Yang BAI](https://github.com/antonia0912), formal community manager at [JueJin](https://juejin.im/)(Chinese Hacker News)

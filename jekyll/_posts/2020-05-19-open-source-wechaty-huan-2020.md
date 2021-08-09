@@ -9,8 +9,6 @@ tags:
 image: /assets/2020/azure-show/azure-show-huan.png
 ---
 
-> Author: [Huan LI](https://github.com/huan), Microsoft Regional Director, AI MVP, Author of Wechaty
-
 欢迎来到AzureShow的开源故事，第一期的嘉宾 Huan Li，中文首本 Conversational User Interface 畅销书《Chatbot从0到1》联合作者，GitHub 8k Stars 开源 Chatbot 项目 Wechaty 作者，长期从事 Chatbot 领域的 Conversational AI 算法研究与行业应用落地相关方向。现为 PreAngel 合伙人，关注种子阶段的技术类创业项目。清华大学本科，中欧国际商学院 EMBA。
 
 ![Azure Show](/assets/2020/azure-show/azure-show.png)

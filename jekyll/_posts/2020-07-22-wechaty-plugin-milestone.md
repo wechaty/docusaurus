@@ -7,12 +7,6 @@ tags:
 image: /assets/2020/wechaty-plugin-milestone/plugin.png
 ---
 
-> 作者: [Yinbohao](https://github.com/rickyyin98/)
-
-![Wechaty Plugin活动](/assets/2020/wechaty-plugin-milestone/plugin.png)
-
-## Wechaty 与插件系统
-
 Wechaty 的故事开始于用RPA的方式模拟登录微信，在过去的几年里，服务了数万名开发者，收获了 Github 的 8000 Star。  
 <https://github.com/wechaty/wechaty>
 我们将过去对于绝大多数人难以想象的工作量，通过数万行代码封装成了最短六行代码就可以模拟登录微信的npm包。  
@@ -150,3 +144,5 @@ Wechaty 社区欢迎你使用插件、将你的机器人能力封装成插件、
 - 直接在[Wechaty插件库](https://github.com/wechaty/wechaty-plugin-contrib)中寻找合适的插件并使用。
 - 参与Wechaty开源激励计划[Everything about Wechaty](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)，生产一个有价值的插件，Wechaty社区将为你提供一个长期有效的Token。
 - 在[Wechaty插件库](https://github.com/wechaty/wechaty-plugin-contrib)中更新你的插件，让更多开发者直接使用。
+
+> 作者: [Yinbohao](https://github.com/rickyyin98/)

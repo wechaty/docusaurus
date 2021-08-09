@@ -9,8 +9,6 @@ tags:
   - summer-of-wechaty
   - utility
 ---
-> Author: [@kxz18](https://github.com/kxz18)
-> Code: [@kxz18/python-wechaty-groupchat-bot](https://github.com/kxz18/python-wechaty-groupchat-bot)
 
 ## 暑期2020
 
@@ -52,3 +50,6 @@ tags:
     - 选做内容
 - 项目链接：[https://github.com/kxz18/python-wechaty-groupchat-bot](https://github.com/kxz18/python-wechaty-groupchat-bot)
 - 联系方式：+86 15068701650 | e: 15068701650@163.com
+
+> Author: [@kxz18](https://github.com/kxz18)
+> Code: [@kxz18/python-wechaty-groupchat-bot](https://github.com/kxz18/python-wechaty-groupchat-bot)
