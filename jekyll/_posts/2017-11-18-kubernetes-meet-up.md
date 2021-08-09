@@ -7,12 +7,12 @@ tags:
   - news
   - meetup
   - featured
-image: /assets/2017/2017-11-18-kubernetes-meetup/000.webp
+image: /assets/2017/11-kubernetes-meet-up/000.webp
 ---
 
 > 作者: [juzibot](https://github.com/juzibot/)
 
-![001](/assets/2017/2017-11-18-kubernetes-meetup/001.webp)
+![001](/assets/2017/11-kubernetes-meet-up/001.webp)
 
 继上月在成都举办“Kubernetes Meetup ”活动获得巨大反响后，Ghostcloud精灵云这次把舞台搬到了北京。将继续与技术发烧友以及各行业的精英一起，围绕全球顶级开源项目Kubernetes的特性解析、系统架构、案例实践等话题，进行分享交流。
 
@@ -42,7 +42,7 @@ CNCF（Cloud Native ComputingFoundation）是成立于2015年的非营利组织�
 
 ### 李佳芮--基于docker构建微信脸盲机器人
 
-![002](/assets/2017/2017-11-18-kubernetes-meetup/002.webp)
+![002](/assets/2017/11-kubernetes-meet-up/002.webp)
 
 - 李佳芮：北京桔子互动科技有限公司创始人&CEO
 
@@ -50,43 +50,43 @@ CNCF（Cloud Native ComputingFoundation）是成立于2015年的非营利组织�
 
 - 桔子互动是一家专注于智能对话服务的创业公司，致力于以会话代替传统网页，为用户提供更加个性化、精炼化的智能服务。近两年AI大潮方兴未艾，在出行行业对话服务机器人也引起了各家旅行APP、甚至航空公司的注意，然而目前市面上的订票类机器人发展并不完善，仍然存在搞不清用户需求、时间长、步骤多、环节繁琐等弊端，专为差旅用户提供智能人机对话服务的桔小秘就是在这种情况下应运而生的。
 
-![003](/assets/2017/2017-11-18-kubernetes-meetup/003.webp)
+![003](/assets/2017/11-kubernetes-meet-up/003.webp)
 
 - 除了自身产品的开发与研究，桔子互动创始人李佳芮对如何优化部署，减少时间成本和人力成本也有独到的见解。李佳芮表示，Docker就像是一个集装箱帮助开发者自动化完成所有配置，安装。只需要在首次部署的时候构建docker 镜像，而未来再次部署时只需要直接拉取镜像就可以实现“一次构建，到处部署。”Docker对开发的影响不大，但对于部署来说，是场革命。可以极大的减少部署的时间成本和人力成本。此外，李佳芮还对如何使用docker，玩转人脸识别、TensorFlow、深度学习，如何使用[Docker 玩转微信机器人框架]<https://chunrui.juzi.bot/presentation/2017-11-17-docker.html>进行了分享。
 
 ### 何津--Kubernetes的企业化实践
 
-![005](/assets/2017/2017-11-18-kubernetes-meetup/005.webp)
+![005](/assets/2017/11-kubernetes-meet-up/005.webp)
 
 - 何津：精灵云高级架构师
 
 曾任华为技术有限公司技术支援经理、服务交付经理，12年软件服务与集成经验，4年海外工作经历，全球化团队管理，拥有极强的产品规划与交付能力，负责印度格局市场管理交付，负责中国移动、Vodafone、 TATA、 ET等全球Top10运营商整体解决方案交付和支撑。
 
-![006](/assets/2017/2017-11-18-kubernetes-meetup/006.webp)
+![006](/assets/2017/11-kubernetes-meet-up/006.webp)
 
 - 从理论到实践，以及讲到了精灵云科技在容器云技术研发的历程，精灵云科技从作为早期的阿里云Docker服务商到目前国内技术和服务领先的企业级容器云管理平台，都离不开对容器云技术的深耕研发，以及用开放的态度拥抱技术。
 
 ### 李志伟--kubernetes容器云在互联网企业的实践
 
-![007](/assets/2017/2017-11-18-kubernetes-meetup/007.webp)
+![007](/assets/2017/11-kubernetes-meet-up/007.webp)
 
 - 李志伟：当当网数字业务事业部技术总监
 
 曾担任17k小说网的技术总监，主导17k技术平台向kubernetes容器云以及微服务架构改造工作。历任搜狐游戏技术中心高级经理，IT168技术总监。2016年加入当当网，负责当当读书产品整体技术工作，致力于推广Kubernetes在研发实践中的应用。
 
-![008](/assets/2017/2017-11-18-kubernetes-meetup/008.webp)
+![008](/assets/2017/11-kubernetes-meet-up/008.webp)
 
 - 他的分享也是干货满满，对当前存在的技术需求和问题提出了非常具有建设性的观点。
 
 ### 杜卫普--海量数据驱动下的智能运维
 
-![009](/assets/2017/2017-11-18-kubernetes-meetup/009.webp)
+![009](/assets/2017/11-kubernetes-meet-up/009.webp)
 
 - 杜卫普：日志易技术总监
 
 十六年运维、安全领域经验，曾任职务Symantec 高级工程师，负责过多家中大型银行、银河证券、移动、中石化等项目，深入了解防火墙、防病毒、漏洞扫描等多种安全产品。
 
-![010](/assets/2017/2017-11-18-kubernetes-meetup/010.webp)
+![010](/assets/2017/11-kubernetes-meet-up/010.webp)
 
 - 他带来的话题同样也精彩纷呈，赢来阵阵掌声。
 
