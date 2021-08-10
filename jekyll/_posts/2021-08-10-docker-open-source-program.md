@@ -34,7 +34,7 @@ The Wechaty open-source project is very glad to announce that we has been accept
 
 > Welcome to the Docker Open Source Program!  We are very excited to have you as a part of our great community.  We have allow-listed your namespace "Wechaty" and this should come into effect in the next week or so. With this allowed-listing, the Docker data pull rate policies that went into effect last November, will not apply to the users pulling images from your namespace.  
 >  
-> - Aurelien Suarez, Docker Marketing Team.
+> — Aurelien Suarez, Docker Marketing Team.
 
 Through this program, Docker remains committed to providing a platform where the non-commercial open source developers can continue collaborating, innovating and pushing this industry into new directions.
 
