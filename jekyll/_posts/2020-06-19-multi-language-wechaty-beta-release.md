@@ -47,26 +47,7 @@ Multi-language Wechaty Beta Released! We have Python, Go, Java, and Scala releas
 
 Before the meeting, every speaker introduced themselves!
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe
-  src="https://www.youtube.com/embed/fluenDIHZec?start=210"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=fluenDIHZec?start=210" %}
 
 ## Talk 1: Multi-language Wechaty Roadmap, Rui (李佳芮), ([@lijiarui](https://github.com/lijiarui))
 
@@ -90,26 +71,7 @@ At the last, Rui showed our gifts for our Wechaty Community Contributors, it's s
 
 ### Talk 1: Video (@lijiarui)
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe
-  src="https://www.youtube.com/embed/fluenDIHZec?start=364"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=fluenDIHZec?start=364" %}
 
 ## Python Wechaty
 
@@ -159,26 +121,7 @@ Contributors:
 - [Slides](https://docs.google.com/presentation/d/1cGBzq3eIRklBB_C5a58NTdjPZFz6inSuYlpLy42HCdk/edit?usp=sharing)
 - Blog Post [simple bot : python-wechaty](https://wechaty.github.io/2020/06/17/python-wechaty/)
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe
-  src="https://www.youtube.com/embed/fluenDIHZec?start=1772"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=fluenDIHZec?start=1772" %}
 
 ## Java Wechaty
 
@@ -250,26 +193,7 @@ Contributors:
 
 Blog Post: [终于有一个 Java 可以用的微信机器人了](https://wechaty.github.io/2020/06/15/java-wechaty/)
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe
-  src="https://www.youtube.com/embed/fluenDIHZec?start=2477"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=fluenDIHZec?start=2477" %}
 
 ### Talk 4: puppet manager 的实现，任筱雅, ([@redmaple1](https://github.com/redmaple1))
 
@@ -295,26 +219,7 @@ Blog Post: [终于有一个 Java 可以用的微信机器人了](https://wechaty
 
 Blog Post: [简单聊聊java版Puppet Manager的实现](https://wechaty.github.io/2020/06/16/java-puppet-manager/)
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe
-  src="https://www.youtube.com/embed/fluenDIHZec?start=3163"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=fluenDIHZec?start=3163" %}
 
 ## Go Wechaty
 
@@ -371,26 +276,7 @@ Contributors:
 
 Blog Post: [go 语言可用的 wechaty 框架](https://wechaty.github.io/2020/09/18/go-wechaty/)
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe
-  src="https://www.youtube.com/embed/fluenDIHZec?start=3678"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=fluenDIHZec?start=3678" %}
 
 ## Scala Wechaty
 
@@ -440,26 +326,7 @@ Contributors:
 
 #### Talk 6: Video (@jcai)
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe
-  src="https://www.youtube.com/embed/znMn1NgnngE"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=znMn1NgnngE" %}
 
 ## Talk 7: Wonderful Wechaty DevOps Toolset，高原, ([@windmemory](https://github.com/windmemory))
 
@@ -517,26 +384,7 @@ Contributors:
 
 Blog Post: [Wonderful Wechaty devops toolset](https://wechaty.github.io/2020/06/20/wonderful-wechaty-devops-tools/)
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe
-  src="https://www.youtube.com/embed/fluenDIHZec?start=4445"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=fluenDIHZec?start=4445" %}
 
 ## Talk 8: How to getting started with Multi-language Wechaty，李卓桓, ([@huan](https://github.com/huan))
 
@@ -568,26 +416,7 @@ Blog Post: [Wonderful Wechaty devops toolset](https://wechaty.github.io/2020/06/
 
 ### Talk 8: Video (@huan)
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe
-  src="https://www.youtube.com/embed/fluenDIHZec?start=6170"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=fluenDIHZec?start=6170" %}
 
 ## Group Photo
 

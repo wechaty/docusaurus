@@ -7,8 +7,6 @@ tags:
   - news
 ---
 
-> From: <https://www.techinasia.com/wechat-unofficial-bots> by [Eva Xiao](https://www.techinasia.com/profile/evaxiao)
-
 Chatbots rocketed into the limelight last year, bolstered by the enthusiasm of Facebook and Microsoft, though the technology wasn’t mature yet.
 
 In China, however, the response was more muted. While Facebook was busy pushing its new Messenger app – boasting when it hit 11,000 bots – Tencent, the maker of WeChat, quietly let millions of accounts develop AI-powered bots of their own, keeping a wary eye out for abuse. Accounts like Cara, for example, are shut down, as Tencent wants to confine bots to customer service-related functions within brand accounts.
@@ -56,3 +54,5 @@ Urbem sees friendly chatbots as a way to generate leads from the various food gr
 “Eventually, we would convert them to our WeChat account, so they can pay to be a member. That’s how we generate revenue,” he says.
 
 Given Tencent’s unforgiving stance towards rogue bots leaping into your messages, it’s uncertain how these bots, even those that have a positive impact or fulfill legitimate needs, will develop on the social network. Allowing unofficial bots to thrive on WeChat opens a Pandora’s box of possibilities, including AI of the Cara ilk. For now, bot developers will have to work hard to build increasingly human-like and believable messaging bots to slip under Tencent’s radar.
+
+> From: <https://www.techinasia.com/wechat-unofficial-bots> by [Eva Xiao](https://www.techinasia.com/profile/evaxiao)

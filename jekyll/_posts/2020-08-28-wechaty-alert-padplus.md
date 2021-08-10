@@ -8,8 +8,6 @@ tags:
   - utility
 ---
 
-## ---wechaty-alert-padplus---
-
 ## 微信机器人 - 实时转发预警信息
 
 ### 使用须知

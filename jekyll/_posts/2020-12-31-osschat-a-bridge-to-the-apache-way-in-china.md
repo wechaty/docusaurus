@@ -23,7 +23,7 @@ OSSChat 是一个机器人工具，用于桥接 IM 应用（如微信）与 Apac
 特别是，归档和向社区提供公开信息是我们认为非常有意义的事情之一。
 通过OSS.Chat项目，我们希望进一步促进、传播甚至优化Apache项目社区的文化、技术和协作。
 
-### OSSChat会议
+## OSSChat会议
 
 {% include iframe.html src="https://youtu.be/KWS4V86heh0?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh" %}
 
