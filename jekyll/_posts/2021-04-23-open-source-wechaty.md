@@ -91,7 +91,7 @@ The Founders Lunch是Startup Grind Beijing为当地Startup生态系统中的创�
  与产品运营比较相关，对于对话异常的分析，可以通过判断机器人说“我不知道这个问题”的回答的次数，选择在什么时候调用，大概率出错的位置，需要把对话系统再次优化，就是整个的运营反馈。
 
 - 如何实操搭建一个聊天机器人
- - 任务1：发布LUIS版本
+- 任务1：发布LUIS版本
    点击LUIS的Publish获取APPID和KEY
    ![intro](/assets/2021/04-open-source-wechaty/20.webp)
    发布成功后，可以看到绿色的成功提示，点击Refer to the list of endpoints切换到管理页面：
@@ -100,15 +100,15 @@ The Founders Lunch是Startup Grind Beijing为当地Startup生态系统中的创�
    ![intro](/assets/2021/04-open-source-wechaty/22.webp)
    点击 Application Information, 获取APP ID
    ![intro](/assets/2021/04-open-source-wechaty/23.webp)
- - 任务2 - 将LUIS RESTFUL API 接入wechaty
+- 任务2 - 将LUIS RESTFUL API 接入wechaty
    安装官方的’luis-sdk’,并将获取的key 和 Application ID 填入：
    ![intro](/assets/2021/04-open-source-wechaty/24.webp)
    根据已有的LUIS 配置写示例代码
    ![intro](/assets/2021/04-open-source-wechaty/25.webp)
- - 任务3：运行代码
+- 任务3：运行代码
    输入命令[git clone](https://github.com/lijiarui/chatbot-zero-to-one)
    ![intro](/assets/2021/04-open-source-wechaty/26.webp)
- - 任务4：运行代码
+- 任务4：运行代码
    运行 npm run start
    ![intro](/assets/2021/04-open-source-wechaty/27.webp)
    用户发送，即可得到测试回复
