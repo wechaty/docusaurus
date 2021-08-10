@@ -7,7 +7,6 @@ tags:
   - wechaty-puppet-wechat
   - web-protocol
   - news
-  - sticky
 image: /assets/2021/04-wechaty-uos-web/wechaty-puppet-wechat.png
 ---
 
