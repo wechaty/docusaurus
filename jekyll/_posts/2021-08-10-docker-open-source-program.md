@@ -3,7 +3,7 @@ title: Docker Open Source Program ❤️ Wechaty
 author: huan
 categories:
   - announcement
-image: /assets/2021/08-docker-open-source-program/docker-osp.webp
+image: /assets/2021/08-docker-open-source-program/docker-wechaty-osp.webp
 tags:
   - docker
   - program
@@ -18,7 +18,7 @@ In November, 2020, Docker announced the launch of a special program to expand ou
 To qualify for the Open Source Program status, all the repos within the Publisher’s Docker namespace must:
 
 - Be public and non-commercial
-- Meet the Open Source Initiative (OSI) definition (shown [here](https://opensource.org/docs/osd)), including definitions for free distribution, source code, derived works, integrity of source code, licensing and no tolerance for discrimination 
+- Meet the Open Source Initiative (OSI) definition (shown [here](https://opensource.org/docs/osd)), including definitions for free distribution, source code, derived works, integrity of source code, licensing and no tolerance for discrimination
 - Distribute images under [OSI approved open source license](https://opensource.org/licenses/alphabetical)
 - Produce Docker images used to run applications
 
