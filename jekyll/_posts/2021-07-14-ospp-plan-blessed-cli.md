@@ -14,10 +14,6 @@ tags:
   - plan
 ---
 
-> Author:[@chinggg](https://github.com/chinggg)
-
-## 暑期2021
-
 「开源软件供应链点亮计划-暑期2021」（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动，旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
 根据项目的难易程度和完成情况，参与者还可获取「开源软件供应链点亮计划-暑期2021」活动奖金和奖杯。
 官网：[https://summer.iscas.ac.cn/](https://summer.iscas.ac.cn/)
@@ -80,3 +76,5 @@ tags:
 
 - 10月及以后
 继续维护并优化代码，实现新功能。
+
+> Author:[@chinggg](https://github.com/chinggg)
