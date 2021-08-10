@@ -23,7 +23,7 @@ image: /assets/2021/04-open-source-wechaty/000.webp
 
 北京（10000）五道口地区
 
-- 关于Startup Grind 
+- 关于Startup Grind
 
 Startup Grind 成立于 2010 年，是世界上最大的初创公司、创始人、创新者和创造者社区。创始人德里克·安德森 (Derek Andersen) 召集了一些朋友和企业家同行，以解决他们所创办公司面临的日益严峻的挑战。他们的聚会很快吸引了来自各个行业的创始人和专家，他们齐聚一堂，分享他们对早期创业者的建议和灵感。最终，充满活力的 Startup Grind 社区开始在洛杉矶、特拉维夫、伦敦、纽约、北京等地发展。
 
@@ -58,7 +58,6 @@ The Founders Lunch是Startup Grind Beijing为当地Startup生态系统中的创�
 - 但其实不是这样的，我们完全可以站在巨头的肩膀上去做更多上层应用层的事情，目前有很多模型都已经被上百上千种算法工程师的建设好了，存在很多现成的预设模型，我们完全可以在这些模型基础上搭建自己的应用。
 
 - 搭建chatbot的正确姿势
-
 举个例子我们可以用微软的Microsoft Bot Framework,它有非常多的组件可以直接来用，例如语音识别、语音转文字、文字转语音或在中间搭建对话系统等。
 
 ![intro](/assets/2021/04-open-source-wechaty/11.webp)
@@ -71,30 +70,21 @@ The Founders Lunch是Startup Grind Beijing为当地Startup生态系统中的创�
 
  - 流程设计
  在流程设计阶段，要明确哪些是能保证chatbot成功的，哪些是能影响chatbot成功的因素，并且把整个chatbot业务要素进行梳理，抽取对话流程，绘制相关流程图，并把业务线部分进行合并。
-
  - 数据处理
  收集后如果想要系统更好的进行预处理，需要做一些数据的扩充，比如数据的处理和标注。
-
  - 对话脚本撰写
  与以前搭建app不一样，零UI的对话脚本很重要，怎么去引导用户去完成对话，有十条设计原则：简洁明了、对话语句要自然、区别新老用户、使用问候语和结束语、确认策略、随机策略、使用对话式标识、设计延迟话术、主动学习、持续跟踪上下文。
-
  - 对话系统搭建
  简单来说就是把人说的话翻译成机器能听懂的话，就把自然语言翻译成一些机器语言，到了对话管理模块，有两个小的模块，一个是对话状态追踪，一个是对话策略优化。整个过程概括下来就是机器说一句话，翻译成人能听懂的话，送到机器的大脑，机器的大脑再说一句话，翻译成人能懂的，完成一次交互，就是对话系统的搭建。
-
  - 对话任务测评
  不同的bot有不同的测评方式，简单来说，任务型bot和问答型bot说得越短，轮次越少越好，而闲聊型bot则是轮次越多越好，代表越来越智能。
-
  - 平台渠道集成
  ![intro](/assets/2021/04-open-source-wechaty/16.webp)
  把bot集成到不同的IM里面，例如微信等。
-
  - 运营反馈
  与产品运营比较相关，对于对话异常的分析，可以通过判断机器人说“我不知道这个问题”的回答的次数，选择在什么时候调用，大概率出错的位置，需要把对话系统再次优化，就是整个的运营反馈。
-
 - 如何实操搭建一个聊天机器人
-
  - 任务1：发布LUIS版本
-
    点击LUIS的Publish获取APPID和KEY
    ![intro](/assets/2021/04-open-source-wechaty/20.webp)
    发布成功后，可以看到绿色的成功提示，点击Refer to the list of endpoints切换到管理页面：
@@ -103,20 +93,15 @@ The Founders Lunch是Startup Grind Beijing为当地Startup生态系统中的创�
    ![intro](/assets/2021/04-open-source-wechaty/22.webp)
    点击 Application Information, 获取APP ID
    ![intro](/assets/2021/04-open-source-wechaty/23.webp)
-
  - 任务2 - 将LUIS RESTFUL API 接入wechaty
    安装官方的’luis-sdk’,并将获取的key 和 Application ID 填入：
    ![intro](/assets/2021/04-open-source-wechaty/24.webp)
    根据已有的LUIS 配置写示例代码
    ![intro](/assets/2021/04-open-source-wechaty/25.webp)
-
  - 任务3：运行代码
-
    输入命令[git clone](https://github.com/lijiarui/chatbot-zero-to-one)
    ![intro](/assets/2021/04-open-source-wechaty/26.webp)
-
  - 任务4：运行代码
-
    运行 npm run start
    ![intro](/assets/2021/04-open-source-wechaty/27.webp)
    用户发送，即可得到测试回复
