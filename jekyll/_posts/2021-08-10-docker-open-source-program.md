@@ -7,6 +7,7 @@ image: /assets/2021/08-docker-open-source-program/docker-wechaty-osp.webp
 tags:
   - docker
   - program
+  - news
 ---
 
 In November, 2020, Docker announced the launch of a special program to expand our support for Open Source projects that use Docker. The eligible projects that meet the program’s requirements (ie. they must be open source and non-commercial) can request to have their respective OSS namespaces allowlisted and see their data-storage and data-egress restrictions lifted.

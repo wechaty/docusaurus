@@ -5,7 +5,6 @@ categories:
   - announcement
 tags:
   - wechaty-way
-  - news
   - guide
 image: /assets/2021/06-the-wechaty-way/teaser.webp
 ---
