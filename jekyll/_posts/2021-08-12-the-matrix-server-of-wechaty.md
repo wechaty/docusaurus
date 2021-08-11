@@ -8,8 +8,6 @@ tags:
   - matrix
 ---
 
-> Author:[@Rhyme](https://github.com/lprintf)
-
 ## 社区Matrix服务器的上线
 
 感谢Eric Migicovsky(the founder of [Beeper.com](https://www.beeper.com/))的赞助，Wechaty社区的Matrix服务器已在2021年8月12号正式上线，主要供社区成员及wechaty使用者线上交流沟通使用。
