@@ -8,6 +8,8 @@ tags:
   - matrix
 ---
 
+[Matrix](https://matrix.org/)是一套安全的分布式的开源聊天网络，可以为我们提供和大多数社交软件类似的通讯功能，拥有完善的消息加密，身份认证等安全功能，支持跨服务器通讯；同时Matrix社区还提供了多套客户端，以及视频、语音聊天，第三方登录，系统监控，用户管理等插件。可以说Matrix是一套功能强大的开源社交服务器，很适合作为开源社区的通讯工具。
+
 ## 社区Matrix服务器的上线
 
 感谢Eric Migicovsky(the founder of [Beeper.com](https://www.beeper.com/))的赞助，Wechaty社区的Matrix服务器已在2021年8月12号正式上线，主要供社区成员及wechaty使用者线上交流沟通使用。
