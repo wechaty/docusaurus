@@ -68,7 +68,7 @@ Friends details|✅
 Log in to WeChat|✅
 Scan code status|✅
 Exit WeChat|✅
-Dependency Agreement|iPad 
+Dependency Agreement|iPad
 
 ## Usage
 
@@ -133,6 +133,7 @@ In 2019 to 2020, the padlocal development team started making community-related 
 When the developer of Padlocal was working on a crawler system a few years ago, he came into contact with Wechaty. This project needed to regularly push the status information of the crawler and actively query related content crawled. At that time, there was a very popular saying: "Dialogue is a service", so he wondered whether these functions can be realized through WeChat? With the help of Wechaty, all functions were quickly realized, and the final effect was also very good.
 
 ### PadLocal: Wechaty puppet service provider
+
 The puppet in the community was not perfect at that time. There were some gaps in the process of using it. Moreover, the life cycle of puppet is not particularly stable, and it may not be maintained after a period of time. They were worried that this uncertainty would affect their business, so they had the idea of ​​developing a puppet themselves.
 
 So unpacking from the App, using IDA to decompile WeChat, started a long reverse road. Before doing this, the team expected this process to be difficult and encounter all kinds of difficult roadblocks, but never expected it to be so difficult. The initial stage wass quite pleasant, because we could easily see our growth every step of the way, and every time we fought a monster, we felt that we had risen to a level. But on going deeper, a lot of really hard roadblocks turned up. They even considered ​​giving up, but they were not reconciled, and persevered. Here are a few moments of those hardships:
@@ -149,6 +150,7 @@ So unpacking from the App, using IDA to decompile WeChat, started a long reverse
 After experiencing several difficulties and successfully solving them, the team had a lot of confidence. Even after encountering moments of frustration, the team believed that the challenge could be completed. The journey was one step at a time.
 
 In the end, fully implemented puppet called PadLocal was developed. There were a few reasons why the name was decided to be "PadLocal". The next section will explain the overall design of the puppet and how it differs from other puppets. The biggest features of PadLocal are:
+
 - Managing account status
 - Communication with WeChatServer
 
