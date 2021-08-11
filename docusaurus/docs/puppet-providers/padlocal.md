@@ -20,11 +20,11 @@ PadLocal is a full-featured Wechaty Puppet Provider.
 
 Function | padlocal
 ---|---
-**<Message>**|
+**Message**|
 Send and receive text|✅
 Send and receive personal business cards|✅
 Send and receive graphic links|✅
-Send pictures, files|✅
+Send pictures and files|✅
 Receive pictures and files|✅
 Send video|✅
 Receive video|✅
@@ -41,7 +41,7 @@ Forward the video|✅
 Forward file|✅
 Forward GIF|❌
 Forwarding applet|✅
-**<Group>**|
+**Group**|
 Create group chat|✅
 Set group announcement|✅
 Get group announcement|✅
@@ -57,14 +57,14 @@ Group name change event|✅
 Group list|✅
 Group member list|✅
 Group details|✅
-**<Contact>**|
+**Contact**|
 Modification notes|✅
 Add friends|✅
 Pass friends automatically|✅
 Add friends|✅
 Friends list|✅
 Friends details|✅
-**<Other>**|
+**Other**|
 Log in to WeChat|✅
 Scan code status|✅
 Exit WeChat|✅
@@ -148,13 +148,13 @@ So unpacking from the App, using IDA to decompile WeChat, started a long reverse
 
 After experiencing several difficulties and successfully solving them, the team had a lot of confidence. Even after encountering moments of frustration, the team believed that the challenge could be completed. The journey was one step at a time.
 
-In the end, fully implemented puppet called PadLocal was developed. There were a few reasons why the name was decided to be "PadLocal". The next section will talk about the overall design of the puppet and how it differs from other puppets. The biggest feature of PadLocal is:
-- How to manage account status
+In the end, fully implemented puppet called PadLocal was developed. There were a few reasons why the name was decided to be "PadLocal". The next section will explain the overall design of the puppet and how it differs from other puppets. The biggest features of PadLocal are:
+- Managing account status
 - Communication with WeChatServer
 
 When designing puppet, firstly investigated other puppets in the community were investigated and their implementation principles were studied in great detail. It was observed that most other puppet design ideas were like this: the puppet server manages and maintains the status of the hosting account. All requests are completed through the link puppet -> puppet server -> WeChatServer. In the message push part, a long connection is established between puppet and puppet server, and a corresponding long connection is also established between puppet server and WeChatServer. When a new message is pushed, it reaches the puppet end through the link WeChatServer -> puppet server -> puppet. In this design, the puppet server acts as a stateful proxy, and all traffic is forwarded by the server. In our opinion, such a design may have several potential disadvantages:
 
-1. Because the puppet server ultimately communicates with WeChatServer. If multiple accounts are hosted on a puppet server, and no proxy policy is configured for each account, then these accounts will share the IP of the puppet server. From the perspective of risk control, risks are prone to arise. Moreover, once some of the accounts have a relatively high risk level, it is easy to pollute other accounts in the same IP pool and harm the innocent.
+1. Because the puppet server ultimately communicates with WeChatServer, if multiple accounts are hosted on a puppet server, and no proxy policy is configured for each account, then these accounts will share the IP of the puppet server. From the perspective of risk control, risks are prone to arise. Moreover, once some of the accounts have a relatively high risk level, it is easy to pollute other accounts in the same IP pool and harm the innocent.
 2. All traffic is forwarded through the puppet server, which puts a lot of pressure on its bandwidth, especially when a large number of multimedia resources such as pictures and videos are generated in the hosting account.
 3. Since the puppet server maintains the status of the hosting account, the puppet server is stateful. From the perspective of system architecture, stateful servers have considerable challenges in terms of system stability, availability, and capacity planning. If some servers in the cluster are down, and the design of the standby switch mechanism is not perfect, some accounts are likely to be in an unavailable state.
 4. In order to ensure better usability and experience of puppet, the puppet server usually caches (not necessarily permanently saves) certain data (such as chat data). In other words, the server inevitably needs to touch the business data of the hosting account. This requires puppet providers to maintain extremely high industry self-discipline and ensure the security of customer data through adequate mechanisms.
