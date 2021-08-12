@@ -30,7 +30,7 @@ tags:
 
 ## About Matrix
 
-[Matrix](https://matrix.org/) is a secure and distributed open source chat network that can provide us with communication functions similar to most social software. With complete message encryption, identity authentication and other security functions , Matrix also supports cross-server communication; At the same time, the Matrix community also provides multiple sets of clients, as well as plug-ins such as video chat, voice chat, SSO, system monitor, and user management. Matrix is a powerful open source social server, which is very suitable as a communication tool for the open source community or other people with similar temperament.
+[Matrix](https://matrix.org/) is a secure and distributed open source chat network that can provide us with communication functions similar to most social software. With complete message encryption, identity authentication and other security functions , Matrix also supports cross-server communication; At the same time, the Matrix community also provides multiple sets of clients, as well as plug-ins such as video chat, voice chat, SSO, system monitor, and user management. Matrix is a powerful open source social server, which is very suitable as a communication tool for the open source community.
 
 ## The community matrix server is online
 
