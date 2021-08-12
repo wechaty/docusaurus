@@ -10,7 +10,6 @@ tags:
   - adapter
   - botbuilder
   - botframework
-  - wechaty
 image: /assets/2019/08-bot-builder-adapter-for-wechat-Individual-account/000.webp
 ---
 
