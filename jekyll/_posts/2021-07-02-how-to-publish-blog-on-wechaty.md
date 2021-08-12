@@ -9,15 +9,7 @@ tags:
 image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.webp
 ---
 
-<<<<<<< Updated upstream
-> 作者: [juzibot](https://github.com/juzibot/)，句子互动
-
-## 背景
-
-很开心过去10天里面接触了wechaty社区，两次使用GitHub向wechaty社区提交了博客（虽然提交了很多次才最终通过），但也因此对于书写博客时出现的问题比较了解，对许多问题记忆犹新。今天就和大家分享一下我自己的经验，零基础或有那么一丢丢基础的小白如何在wechaty社区发布自己的第一篇博客。
-=======
 很开心过去10天里面接触了 Wechaty 社区，两次使用 GitHub 向 Wechaty 社区提交了博客（虽然提交了很多次才最终通过），但也因此对于书写博客时出现的问题比较了解，对许多问题记忆犹新。今天就和大家分享一下我自己的经验，零基础或有那么一丢丢基础的小白如何在 Wechaty 社区发布自己的第一篇博客。
->>>>>>> Stashed changes
 
 今天和大家分享一下两个内容：
 
