@@ -8,7 +8,9 @@ tags:
   - matrix
 ---
 
-[Matrix](https://matrix.org/)是一套安全的分布式的开源聊天网络，可以为我们提供和大多数社交软件类似的通讯功能，拥有完善的消息加密，身份认证等安全功能，支持跨服务器通讯；同时Matrix社区还提供了多套客户端，以及视频、语音聊天，第三方登录，系统监控，用户管理等插件。可以说Matrix是一套功能强大的开源社交服务器，很适合作为开源社区的通讯工具。
+## Matrix简介
+
+[Matrix](https://matrix.org/)是一套安全的分布式的开源聊天网络，可以为我们提供和大多数社交软件类似的通讯功能，拥有完善的消息加密，身份认证等安全功能，支持跨服务器通讯；同时Matrix社区还提供了多套客户端，以及视频、语音聊天，第三方登录，系统监控，用户管理等插件。Matrix是一套功能强大的开源社交服务器，很适合作为开源社区的通讯工具。
 
 ## 社区Matrix服务器的上线
 
@@ -25,6 +27,10 @@ tags:
 - 为方便境内网络环境访问，该服务器未开启Google人类验证，请勿使用机器人频繁请求；
 - 该服务器禁止用于非法用途，社区保留对未加密聊天室的监控权利；
 - 社区会对违规用户进行警告或封号处理。
+
+## About Matrix
+
+[Matrix](https://matrix.org/) is a secure and distributed open source chat network that can provide us with communication functions similar to most social software. With complete message encryption, identity authentication and other security functions , Matrix also supports cross-server communication; At the same time, the Matrix community also provides multiple sets of clients, as well as plug-ins such as video chat, voice chat, SSO, system monitor, and user management. Matrix is a powerful open source social server, which is very suitable as a communication tool for the open source community or other people with similar temperament.
 
 ## The community matrix server is online
 
