@@ -10,7 +10,7 @@ tags:
   - adapter
   - botbuilder
   - botframework
-image: /assets/2019/08-bot-builder-adapter-for-wechat-Individual-account/000.webp
+image: /assets/2019/08-bot-builder-adapter/000.webp
 ---
 
 ## 适用于微信个人帐户的Microsoft Bot Framework v4 适配器
@@ -99,11 +99,11 @@ console.info('> Say "quit" to end.\n')
 ## Bot Friday 会议
 
 - [Bot Friday 第六次会议纪要](http://bot5.ml/events/seminar-minutes-6/)
-![006](/assets/2019/08-bot-builder-adapter-for-wechat-Individual-account/006.webp)
+![006](/assets/2019/08-bot-builder-adapter/006.webp)
 - [Bot Friday 第五次会议纪要](http://bot5.ml/events/seminar-minutes-5/)
-![005](/assets/2019/08-bot-builder-adapter-for-wechat-Individual-account/005.webp)
+![005](/assets/2019/08-bot-builder-adapter/005.webp)
 - [Bot Friday 第四次会议纪要](http://bot5.ml/events/seminar-minutes-4/)
-![004](/assets/2019/08-bot-builder-adapter-for-wechat-Individual-account/004.webp)
+![004](/assets/2019/08-bot-builder-adapter/004.webp)
 - [Bot Friday 第三次会议纪要](http://bot5.ml/events/seminar-minutes-3/)
-![003](/assets/2019/08-bot-builder-adapter-for-wechat-Individual-account/003.webp)
+![003](/assets/2019/08-bot-builder-adapter/003.webp)
 - [Bot Friday 第二次会议纪要](http://bot5.ml/events/seminar-minutes-2/)
