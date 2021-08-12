@@ -24,6 +24,7 @@ Welcome everyone to pay attention to the [matrix-appservice-wechaty project](htt
 
 ## Matters needing attention
 
+- The home room of the wechaty community is `#home:wechaty.tk`, welcome the users from other matrix server to join it;
 - The server does not enable Google human verification, please do not use robots to frequently request;
 - The server is prohibited from being used for illegal purposes, and the community reserves the right to monitor unencrypted chat rooms;
 - The community will warn or ban users who violate the rules.
@@ -44,6 +45,7 @@ Welcome everyone to pay attention to the [matrix-appservice-wechaty project](htt
 
 ## 注意事项
 
+- 社区公共聊天室账号是`#home:wechaty.tk`，欢迎其他matrix服务器的用户加入我们；
 - 为方便境内网络环境访问，该服务器未开启Google人类验证，请勿使用机器人频繁请求；
 - 该服务器禁止用于非法用途，社区保留对未加密聊天室的监控权利；
 - 社区会对违规用户进行警告或封号处理。
