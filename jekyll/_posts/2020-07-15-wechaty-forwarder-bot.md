@@ -8,10 +8,6 @@ tags:
   - social
 image: /assets/2020/wechaty-forwardbot/header.png
 ---
-> Author: [xiaok](https://github.com/22528850)
-> Code: [Github](https://github.com/22528850/wechaty-forwardbot)
-
-## 背景
 
 运营群需要有价值的内容，才能把用户留住。但是自己又懒得搞这些内容  
 所以最好就是,直接把别人群有价值的内容转发到自己群  
@@ -90,3 +86,6 @@ node index.js
 
 感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
 感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token
+
+> Author: [xiaok](https://github.com/22528850)
+> Code: [Github](https://github.com/22528850/wechaty-forwardbot)
