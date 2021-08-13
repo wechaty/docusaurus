@@ -24,7 +24,7 @@ Wechaty 人像转换插件，让你的 Wechaty 机器人实现照片卡通化，
 
 ## 效果展示
 
-<img src="/assets/2021/08-wechaty-face-carton/picall.wepb"/>
+![效果展示](/assets/2021/08-wechaty-face-carton/picall.webp)
 
 ## 准备腾讯云账号
 
@@ -32,7 +32,7 @@ Wechaty 人像转换插件，让你的 Wechaty 机器人实现照片卡通化，
 
 登录[腾讯云](https://curl.qcloud.com/ZtRitpvH)账号，没有就直接 QQ 登录，直接点击管理控制台开通即可，不用付费，也不用选资源包，开通后自动有每个月 1000 次的免费额度，如果自己和朋友玩完全足够了。如果你是想活跃社群或者土豪，就随便充值了
 
-<img src="/assets/2021/08-wechaty-face-carton/tencent.wepb" height="200px"/>
+![腾讯云](/assets/2021/08-wechaty-face-carton/tencent.webp)
 
 ### 获取腾讯的 secretid 和 secretkey
 
