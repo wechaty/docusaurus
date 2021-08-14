@@ -59,6 +59,6 @@ For better understanding we have classified the bots under three categories taki
 - [Monster bot](examples/professional/monster-bot.md): Demo that tried to include everything -- message, room, HMR & signal handling, with each handler in separated files
 - [Api ai bot](examples/professional/api-ai-bot.md): Wechaty bot that uses ApiAi.com brain
 - [Speech to text bot](examples/professional/speech-to-text-bot.md): Bot that uses baidu speech
-- [Tuling 123 bot](examples/professional/tuling123-bot.md): Connect to *[tuling123](http://www.turingapi.com/)* chatbot
+- [Tuling 123 bot](examples/professional/tuling123-bot.mdx): Connect to *[tuling123](http://www.turingapi.com/)* chatbot
 - [Telegram roger bot](examples/professional/telegram-roger-bot.md): Single bot that runs under/for both Telegram and WeChaty
 - [Blessed twins bot](examples/professional/blessed-twins-bot.md): Wechaty multi-instance support (v0.16+) demo
