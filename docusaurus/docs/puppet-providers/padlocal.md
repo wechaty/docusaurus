@@ -18,9 +18,9 @@ sidebar_label: PadLocal
 
 PadLocal is a full-featured Wechaty Puppet Provider.
 
-Function | padlocal
----|---
-**Message**|
+Function | 功能 | padlocal
+---|---|---
+**Message**|**<消息>**
 Send and receive text|✅
 Send and receive personal business cards|✅
 Send and receive graphic links|✅
@@ -172,7 +172,7 @@ PadLocal server will not save any business data, and there is no risk of data se
 
 The topology diagram of the overall architecture is as follows:
 
-![Topology diagram](../../static/img/docs/puppet-services/padlocal-topological-graph.png)
+![Topology diagram](../../static/img/docs/puppet-providers/padlocal-topological-graph.webp)
 
 By implementing a puppet, the team gained a lot of things ourselves. They now have a more in-depth understanding of Wechaty, and can understand the original intention of the designer and the trade-offs among them. The fact that Wechaty is so easy to use is the result of careful design. Secondly, creating a Wechaty puppet is a very challenging thing, of course it is full of accomplishment to be able to complete such a thing. Furthermore, from an internal perspective, a more in-depth and comprehensive understanding of the WeChat terminal Operating mechanism and design ideas can be had. As a national-level communication software, WeChat's design is excellent. Various mechanisms and design concepts can fully serve as industry standards. It is worthy of being the absolute king in this field.
 
