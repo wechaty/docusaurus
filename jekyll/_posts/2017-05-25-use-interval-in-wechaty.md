@@ -8,8 +8,6 @@ tags:
 ---
 ![avatars2](https://avatars2.githubusercontent.com/u/700550?v=3&s=88)
 
-Author: Seabook, [@kungfu-software](https://github.com/kungfu-software), Founder of [Kungfu Software](http://kungfusoftware.net)
-
 Hello, first of all, thanks for inviting me to write a knowledge sharing post in Wechaty. I am just starting to learn Wechaty and immediately fall in love with it. It's really easy to get started to make your own wechatbot. :-)
 
 I am currently exploring all the examples from the Wechaty and try to customize it to make my own requirements happening. Everyday I try to think of a user case that I can use wechaty to make it happen.
@@ -135,3 +133,5 @@ Hopefully this article helps.
 
 Thanks
 Seabook
+
+Author: Seabook, [@kungfu-software](https://github.com/kungfu-software), Founder of [Kungfu Software](http://kungfusoftware.net)

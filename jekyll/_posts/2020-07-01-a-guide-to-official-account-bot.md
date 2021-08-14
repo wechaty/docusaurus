@@ -9,11 +9,6 @@ tags:
   - social
 ---
 
-> Author: [@your_github_username](https://github.com/sl1673495) front-end developer
-> Code: [@wechaty-bot](https://github.com/sl1673495/wechaty-bot)
-
-## 前言
-
 作为公众号的号主，有粉丝加微信想要进群是一件很开心的事情，但是久了以后会发现通过好友、改备注、拉群这些事情耗费太多精力了。还好有幸发现了 `wechaty` 这个项目。昨天试了一下，真的大大解放了我的双手，这篇博客就以公众号号主的角度，来看看怎么用 `wechaty` 来开发一个机器人小助手的。
 
 其实挺早之前就看见过 `wechaty` 网页 web 版微信机器人的支持，但是目前支持 web 登录的微信号应该是越来越少了，我的微信号自然也是不能登录。本来都快放弃希望了，但是最近朋友推荐说 `wechaty` 其实可以绕过 web 这个限制，改用 ipad 协议登录，本文就来一探究竟。
@@ -207,3 +202,6 @@ async function addContactToRoom(contact: Contact) {
 ## 总结
 
 有了这个机器人以后，可以把更多的时间用来写优质的文章回馈社区了，真的太棒了！希望这篇文章能对正在做公众号的你有所帮助哦。
+
+> Author: [@your_github_username](https://github.com/sl1673495) front-end developer
+> Code: [@wechaty-bot](https://github.com/sl1673495/wechaty-bot)

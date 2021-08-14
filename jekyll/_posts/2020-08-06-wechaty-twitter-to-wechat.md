@@ -10,9 +10,6 @@ tags:
 image: /assets/2020/wechaty-twitter2wechat/wechaty-twitter2wechat-header.jpg
 ---
 
-> Author: [afterever](https://github.com/afterever)
-> Code: [twitter2wechat](https://github.com/afterever/twitter2wechat)
-
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-blue.svg)](https://github.com/wechaty/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 [![node version](https://img.shields.io/badge/node-%3E%3D10-blue.svg)](http://nodejs.cn/download/)
@@ -100,3 +97,6 @@ Heroku免费提供每月500小时的服务器时间，分配到每天，几乎�
 
 感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK，让开发者可以专注于业务代码
 感谢[句子互动juzibot](https://www.juzibot.com/)提供的iPad协议版token
+
+> Author: [afterever](https://github.com/afterever)
+> Code: [twitter2wechat](https://github.com/afterever/twitter2wechat)
