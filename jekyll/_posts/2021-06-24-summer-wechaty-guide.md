@@ -3,15 +3,16 @@ title: "开源之夏 2021 指导手册"
 author: lijiarui
 categories:
   - announcement
+  - ospp
 tags:
   - event
   - 2021
   - summer-2021
   - summer-of-wechaty
-  - news
   - guide
   - ospp
   - ospp-2021
+  - news
 image: /assets/2021/06-summer-wechaty-guide/teaser.png
 ---
 
@@ -74,7 +75,7 @@ XXX
 
 ## 阶段性工作
 
-期初、期中和期末三篇报告要**以博客的方式提交到 [wechaty.js.org](https://github.com/wechaty/wechaty.js.org) Repo** 中，在提交报告之前，可以先阅读 [Wechaty 社区规范](https://wechaty.js.org/2021/06/23/the-wechaty-way/), 至少了解下面内容：
+期初、期中和期末三篇报告要**以博客的方式提交到[ [wechaty.js.org](https://github.com/wechaty/wechaty.js.org) Repo** ]中，在提交报告之前，可以先阅读 [Wechaty 社区规范](https://wechaty.js.org/2021/06/23/the-wechaty-way/), 至少了解下面内容：
 
 1. Wechaty 的介绍
 1. 社区沟通渠道
@@ -100,7 +101,7 @@ XXX
 
 - 标题： `OSPP 2021-期初报告-你的标题`
 - 文件名： `2021-XX-XX-ospp-plan-XX`
-- 报告 category 为：`project`
+- 报告 category 为：`project`, `ospp`
 - 报告 tag 至少包括：`summer-of-wechaty`,`summer-2021`,`ospp`,`ospp-2021`,`plan`
 - 报告内容至少包括：
   - 项目名称
@@ -109,7 +110,7 @@ XXX
   - 项目介绍
   - 项目计划
 
-### 3. OSPP 2020 学生期初报告参考：
+#### 3. OSPP 2020 学生期初报告参考：
 
 - [暑期2020 为 go-wechaty 设计实现插件体系 计划书](https://wechaty.js.org/2020/07/19/go-wechaty-plugin-dev-plan/)
 - [基于python-wechaty的群聊助手机器人](https://wechaty.js.org/2020/07/18/python-wechaty-groupchat-assistant-bot/)
@@ -141,7 +142,7 @@ XXX
 
 - 标题： `OSPP 2021-期中报告-你的标题`
 - 文件名： `2021-XX-XX-ospp-mid-term-XX`
-- 报告 category 为：`project`
+- 报告 category 为：`project`, `ospp`
 - 报告 tag 至少包括：`summer-of-wechaty`,`summer-2021`,`ospp`,`ospp-2021`,`mid-term`，`ospp`
 - 报告内容至少包括：
   - 项目信息
@@ -156,7 +157,7 @@ XXX
     - 期中汇报的视频，可以参考 [使用jekyll include在wechaty博客中快速插入视频](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)
     - Live Coding/Demo 视频
 
-### 3. OSPP 2020 学生期中报告参考：
+#### 3. OSPP 2020 学生期中报告参考：
 
 - [暑期2020 基于python-wechaty的群聊助手机器人 POC 成果展示](https://wechaty.js.org/2020/08/14/python-wechaty-groupchat-assistant-bot-poc/)
 - [基于开放 API 封装 Wechaty 接口下的飞书聊天机器人：期中](https://wechaty.js.org/2020/08/19/wechaty-puppet-lark-mid-term-blog/)
@@ -180,7 +181,7 @@ XXX
 
 - 标题： `OSPP 2021-结项报告-你的标题`
 - 文件名： `2021-XX-XX-ospp-final-XX`
-- 报告 category 为：`project`
+- 报告 category 为：`project`, `ospp`
 - 报告 tag 至少包括：`summer-of-wechaty`,`summer-2021`,`ospp`,`ospp-2021`,`final`
 - 报告内容至少包括：
   - 项目信息
@@ -196,7 +197,7 @@ XXX
     - 评审对象
     - 评审结果
 
-### 3. OSPP 2020 学生期中报告参考：
+#### 3. OSPP 2020 学生期中报告参考：
 
 - [暑期2020 为 go-wechaty 设计实现插件体系 结项报告](https://wechaty.js.org/2020/09/27/go-wechaty-plugin/)
 - [暑期2020 基于python-wechaty的群聊助手机器人 结项成果展示](https://wechaty.js.org/2020/09/26/chassist-bot-final/)
