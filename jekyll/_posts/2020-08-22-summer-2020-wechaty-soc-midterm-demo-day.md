@@ -12,11 +12,7 @@ tags:
 image: /assets/2020/08-wechaty-soc-midterm-demo-day/midterm-demo-day.webp
 ---
 
-> 作者: [juzibot](https://github.com/juzibot/)
-
-## 关于暑期2020
-
-“开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与openEuler社区共同举办的一项面向高校学生的暑期活动。
+“开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与openEuler 社区共同举办的一项面向高校学生的暑期活动。
 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。
 
@@ -156,3 +152,5 @@ You can learn more from our [meeting_notes](https://docs.google.com/document/d/1
 - 时刻跟进Wechaty SoC项目的每周例行更新Issue，并直接与相关负责导师和学生开发者取得联系，和他们交流相关进展。
 - 在 Wechaty 开发者群内，为学生开发者们的Plan Blog、POC Blog和Finished Blog点赞和提出想法。
 - 直接参与已经完成部分工作的项目开发，为学生开发者们负责的复杂项目添砖加瓦。
+
+> 作者: [juzibot](https://github.com/juzibot/)

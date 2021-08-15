@@ -7,8 +7,6 @@ tags:
 image: /assets/2019/wechaty-ricepo/logo.png
 ---
 
-> 作者: [RICEPO LLC](https://github.com/ricepo)
-
 ## 内容纲要
 
 * RICEPO简介
@@ -91,3 +89,5 @@ RICEPO的wechaty使用的是[wechaty-puppet-padplus](https://github.com/botorang
 饭店群公告功能也节省了大量客服与餐馆沟通成本，
 下一步我们将着手开始实现更多功能，包括自动机器应答，自动事件提醒等，都能再次提高各部门效率。
 感谢Wechaty给我们带来的变革。期待在未来看到在RICEPO平台更多的应用场景。
+
+> 作者: [RICEPO LLC](https://github.com/ricepo)
