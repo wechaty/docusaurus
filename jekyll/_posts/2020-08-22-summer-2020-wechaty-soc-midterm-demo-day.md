@@ -24,7 +24,7 @@ Wechaty 作为中国最大的聊天机器人开源项目，合计发布了11个�
 
 项目列表: <https://github.com/wechaty/summer/issues/3>
 
-## Wechaty 中期路演日（Mid-Term Demo Day）会议纪实
+## 中期路演日（Mid-Term Demo Day）会议纪实
 
 {% include iframe.html src="https://www.youtube.com/watch?v=cNSlZez5oY4"%}
 
