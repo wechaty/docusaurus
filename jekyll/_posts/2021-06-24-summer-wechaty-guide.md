@@ -211,7 +211,7 @@ XXX
 
 ## 项目成果
 
-- 项目仓库: <https://github.com/XX/XX>  
+项目仓库: <https://github.com/XX/XX>  
 
 ### live coding视频:
 {% raw %} 
