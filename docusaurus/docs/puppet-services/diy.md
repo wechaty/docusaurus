@@ -288,7 +288,7 @@ If you want to remove the `--privileged`, you need to add:
 
 :::
 
-### 7. Check your TOKEN service
+### 8. Check your TOKEN service
 
 :::note wait for token gateway getting full started
 
