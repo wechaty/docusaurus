@@ -113,7 +113,7 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 - 学生开发者：毕凯乔，长春工业大学本科生<358461417@qq.com>
 - 项目介绍：<https://github.com/wechaty/summer-of-code/issues/14>
 
-{% include iframe.html src="https://www.youtube.com/watch?v=cNSlZez5oY4&t=4340s" %}
+{% include iframe.html src="https://youtu.be/cNSlZez5oY4?t=4340s" %}
 
 ### 多平台：基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人
 
@@ -121,7 +121,7 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 - 学生开发者：谢昱清，清华大学本科生<1205402283@qq.com>
 - 项目介绍：<https://github.com/wechaty/summer-of-code/issues/2>
 
-{% include iframe.html src="https://www.youtube.com/watch?v=cNSlZez5oY4&t=2223s" %}
+{% include iframe.html src="https://youtu.be/cNSlZez5oY4?t=2223s" %}
 
 ### 多语言：为 go-wechaty 设计实现插件体系
 
