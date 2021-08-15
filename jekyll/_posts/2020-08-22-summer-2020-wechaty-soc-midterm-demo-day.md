@@ -12,10 +12,7 @@ tags:
 image: /assets/2020/08-wechaty-soc-midterm-demo-day/midterm-demo-day.webp
 ---
 
-“开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动，旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
-
-- 官网：<https://isrc.iscas.ac.cn/summer2020>
-- 官方新闻：<http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html>
+“[开源软件供应链点亮计划-暑期2020](https://isrc.iscas.ac.cn/summer2020)”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动，旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展，[点击查看官方新闻](http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html)。
 
 Wechaty 作为中国最大的聊天机器人开源项目，合计发布了11个项目，由Wechaty社区的资深Contributor作为导师，选出了11位同学进行项目开发。
 
@@ -25,7 +22,7 @@ Wechaty 作为中国最大的聊天机器人开源项目，合计发布了11个�
 
 此外，开发者们可以在路演日中找到自己感兴趣的项目，并在路演日结束后，与对应的开发者取得联系并在后续共同开发。
 
-开发者和项目地址: <https://wechaty.github.io/wechaty-soc-kick-off-meeting/>
+项目列表: <https://github.com/wechaty/summer/issues/3>
 
 ## Wechaty 中期路演日（Mid-Term Demo Day）会议纪实
 
@@ -52,7 +49,7 @@ You can learn more from our [meeting_notes](https://docs.google.com/document/d/1
 Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 项任务，并通过 issue 的方式进行每周的更新。
 如果你有看到感兴趣的项目，可以直接在对应 issue 下面找到负责对应任务的开发者。
 
-你可以在查看[开发者和项目地址](https://wechaty.github.io/wechaty-soc-kick-off-meeting/)
+你可以在查看[首次KickOff博客](https://wechaty.js.org/2020/07/20/wechaty-soc-kick-off-meeting/)了解更多信息。
 
 ### 多功能：编写一个“每日一句”插件
 
