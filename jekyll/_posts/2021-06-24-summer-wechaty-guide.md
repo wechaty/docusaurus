@@ -12,6 +12,7 @@ tags:
   - guide
   - ospp
   - ospp-2021
+  - news
 image: /assets/2021/06-summer-wechaty-guide/teaser.png
 ---
 
