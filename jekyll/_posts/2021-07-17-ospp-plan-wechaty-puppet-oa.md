@@ -22,7 +22,7 @@ tags:
   - [ ] 文本消息收发模块
   - [ ] 图片消息收发模块
   - [ ] 推送事件
-- 项目链接：[https://github.com/wechaty/summer-of-wechaty/issues/82](https://github.com/wechaty/summer-of-wechaty/issues/82)
+- 项目介绍：[https://github.com/wechaty/summer-of-wechaty/issues/82](https://github.com/wechaty/summer-of-wechaty/issues/82)
 
 ## 需求介绍
 
