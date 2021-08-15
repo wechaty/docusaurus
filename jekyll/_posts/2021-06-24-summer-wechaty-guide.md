@@ -145,7 +145,7 @@ XXX
 
 ##### 学生开发者
 
-1. 期中 Demo Day 视频
+###### 1. 期中 Demo Day 视频
 
 每位开发者需要进行中期的展示，视频将添加至博客、提交到组委会中，并剪辑成完成的路演日视频，向全社区展示，吸引更多的开发者参与到对应的项目中：
 
@@ -162,7 +162,7 @@ XXX
 - [期中汇报视频](https://www.bilibili.com/video/BV1vT4y157x5/)
 - [Live Coding 视频](https://www.bilibili.com/video/BV1ih411d75h)
 
-1. 期中报告
+###### 2. 期中报告
 
 在8月30日前，以Pull Requests形式在[wechaty.js.org Repo](https://github.com/wechaty/wechaty.js.org)中提交博客。
 
@@ -224,7 +224,7 @@ XXX
 - 联系方式：
 ```
 
-1. OSPP 2020 学生期中报告参考：
+###### 3. OSPP 2020 学生期中报告参考：
 
 - [基于开放 API 封装 Wechaty 接口下的飞书聊天机器人：期中](https://wechaty.js.org/2020/08/19/wechaty-puppet-lark-mid-term-blog/)
 - [暑期2020 编写一个“每日一句”插件 POC 成果展示](https://wechaty.js.org/2020/08/15/wechaty-words-per-day-plugin-mid-term/)
