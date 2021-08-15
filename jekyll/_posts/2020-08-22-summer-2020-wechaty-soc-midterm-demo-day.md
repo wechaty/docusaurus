@@ -107,6 +107,22 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 
 {% include iframe.html src="https://www.bilibili.com/video/BV1kZ4y1M7F6" %}
 
+### 多平台：基于 RPA 封装 Wechaty 接口下的快手聊天机器人
+
+- 导师：尹伯昊，连续创业者，句子互动CMO<yinbohao@juzi.bot>
+- 学生开发者：毕凯乔，长春工业大学本科生<358461417@qq.com>
+- 项目介绍：<https://github.com/wechaty/summer-of-code/issues/14>
+
+{% include iframe.html src="https://www.youtube.com/watch?v=cNSlZez5oY4&t=4340s" %}
+
+### 多平台：基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人
+
+- 导师：高原，句子互动CTO、前亚马逊工程师<gaoyuan@juzi.bot>；李佳芮，句子互动CEO、专注微信生态近10年<rui@juzi.bot>
+- 学生开发者：谢昱清，清华大学本科生<1205402283@qq.com>
+- 项目介绍：<https://github.com/wechaty/summer-of-code/issues/2>
+
+{% include iframe.html src="https://www.youtube.com/watch?v=cNSlZez5oY4&t=2223s" %}
+
 ### 多语言：为 go-wechaty 设计实现插件体系
 
 - 导师：丁小雨<614422099@qq.com>，丁超飞<dchaofei@163.com>，李博杰<silkage@silkage.net>
@@ -118,18 +134,6 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 - 导师：丁小雨<614422099@qq.com>，丁超飞<dchaofei@163.com>，李博杰<silkage@silkage.net>
 - 学生开发者：唐光彬，华南农业大学本科生<Tang.Packet@outlook.com>
 - 项目介绍： <https://github.com/wechaty/summer-of-code/issues/8>
-
-### 多平台：基于 RPA 封装 Wechaty 接口下的快手聊天机器人
-
-- 导师：尹伯昊，连续创业者，句子互动CMO<yinbohao@juzi.bot>
-- 学生开发者：毕凯乔，长春工业大学本科生<358461417@qq.com>
-- 项目介绍：<https://github.com/wechaty/summer-of-code/issues/14>
-
-### 多平台：基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人
-
-- 导师：高原，句子互动CTO、前亚马逊工程师<gaoyuan@juzi.bot>；李佳芮，句子互动CEO、专注微信生态近10年<rui@juzi.bot>
-- 学生开发者：谢昱清，清华大学本科生<1205402283@qq.com>
-- 项目介绍：<https://github.com/wechaty/summer-of-code/issues/2>
 
 ## 暑期2020 开发计划
 
