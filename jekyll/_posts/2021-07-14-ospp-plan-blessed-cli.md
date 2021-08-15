@@ -25,7 +25,7 @@ tags:
   - [ ] 未读新消息数量展示与联系人智能排序
   - [ ] 私聊与群聊消息的发送
   - [ ] 细粒度的联系人、群和对话管理
-- 项目链接：[https://github.com/wechaty/summer-of-wechaty/issues/81](https://github.com/wechaty/summer-of-wechaty/issues/81)
+- 项目链接：[https://github.com/wechaty/summer-of-wechaty/issues/80](https://github.com/wechaty/summer-of-wechaty/issues/81)
   
 ## 详细方案
 
