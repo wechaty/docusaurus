@@ -1,5 +1,5 @@
 ---
-title: "开发支持电信运营商5G Chatbot/RCS的 Wechaty接入Puppet模块"
+title: "OSPP 2021-期初报告-开发支持电信运营商5G Chatbot/RCS的 Wechaty接入Puppet模块"
 author: sqcn
 categories:
   - project
