@@ -20,6 +20,7 @@ tags:
 - 导师：吴京京、李卓桓
 - 学生：肖良玉
 - 项目链接：[https://github.com/lyleshaw/python-wechaty-puppet-itchat](https://github.com/lyleshaw/python-wechaty-puppet-itchat)
+- 项目介绍: <https://github.com/wechaty/summer/issues/75>
   
 ## 详细方案
 
