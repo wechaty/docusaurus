@@ -9,8 +9,6 @@ tags:
 image: /assets/2021/07-puppet-laozhang-wechat-bot/wechat_bot.png
 ---
 
-> 作者: [atorber](https://github.com/atorber/)，一个不务正业的产品经理
-
 继”wechaty免费版web协议重放荣光“之后，很高兴向大家预告Wechaty免费版Windows协议即将与大家见面，如果之前苦于web协议不能获取准确的wxid、roomid等问题，那么这个更新将会解决你的困扰。
 
 wechaty社区即将迎来一个全新的puppet——wechaty-puppet-laozhang（老张牌puppet，或许后续会更新一个不这么响亮的名字），将支持使用Windows微信桌面版协议登录。
