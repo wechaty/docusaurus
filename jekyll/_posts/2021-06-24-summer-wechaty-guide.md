@@ -212,11 +212,17 @@ XXX
 ## 项目成果
 - 项目仓库: <https://github.com/XX/XX>  
 - live coding视频:
-{% include iframe.html src="视频链接" %}
+{% raw %}
+`{% include iframe.html src="视频链接" %}`
+{% endraw %}
 - PPT展示视频:
-{% include iframe.html src="视频链接" %}
+{% raw %}
+`{% include iframe.html src="视频链接" %}`
+{% endraw %}
 - PPT:
-{% include iframe.html src="pdf链接" %}
+{% raw %}
+`{% include iframe.html src="pdf链接" %}`
+{% endraw %}
 
 ## 联系我们
 
@@ -234,7 +240,8 @@ XXX
 
 ##### 社区导师
 
-1. Wechaty 社区中期博客评审
+###### 1. Wechaty 社区中期博客评审
+
 在8月30日前以Pull Requests形式在wechaty.github.io的学生对应博客下，补充评审结果的相关信息。
 
 可以完整复制本文对应的Markdown作为博客内容模板，但也可添加更多的补充信息。
@@ -254,7 +261,8 @@ XXX
 - 最终评审结果：“通过” 或者 “不通过” （“不通过” 意为着项目终止，且学生将无法获得相应的奖金）
 ```
 
-1. “暑期2021”评审报告
+###### 2. “暑期2021”评审报告
+
 08月16日 - 08月22日期间，将评审报告在组委会的 Gitlab 上的 Issue 中提交，并配合组委会进行中期审核。
 
 #### 期末报告
