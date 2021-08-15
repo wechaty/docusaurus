@@ -1,7 +1,7 @@
 ---
 name: 郭英旭
 site: https://github.com/guoyingxu
-avatar: /assets/contributors/guoyingxu/avatar.png
+avatar: /assets/contributors/guoyingxu/avatar.webp
 bio: 
 email: 
 twitter: 
