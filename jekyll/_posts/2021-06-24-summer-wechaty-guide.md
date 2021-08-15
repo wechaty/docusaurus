@@ -141,7 +141,7 @@ XXX
 
 #### 期中报告
 
-期中报告提交之前会有一个 OSPP 的 Mid-term Demo Day， 导师和学生会在线上进行期中汇报。提交的期中报告包括 Mid-term Demo Day 的视频和期中报告内容总结
+期中报告提交之前会有一个 OSPP 的 Mid-term Demo Day， 导师和学生会在线上进行期中汇报。提交的期中报告包括 Mid-term Demo Day 的视频和期中报告内容总结。[点击这里查看暑期2020中期路演日（Mid-Term Demo Day）会议实况](https://wechaty.js.org/2020/08/22/summer-2020-wechaty-soc-midterm-demo-day/)
 
 ##### 学生开发者
 
