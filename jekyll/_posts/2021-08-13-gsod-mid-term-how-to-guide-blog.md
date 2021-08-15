@@ -98,6 +98,10 @@ Working with Wechaty under Google Season of Docs has been an amazing and rewardi
 
 1. Became more familiar with Git, Github and open source culture and software development in general. Also learnt several md, mdx commands and their best practices.
 
+2. Routine code submission, discussion and review by mentors helped to complete the task in short time and in directed manner.
+
+3. We learned a great deal about working with the Docusaurus documentation system.
+
 ## Follow-up work
 
 In the next half, we will be looking for the:
