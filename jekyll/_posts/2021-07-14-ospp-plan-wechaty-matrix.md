@@ -21,6 +21,8 @@ tags:
 
 - 学生：林宇靖，张瑞宁
 
+- 项目介绍： <https://github.com/wechaty/summer/issues/59>
+
 - 模块列表
   - 架设一套自己的 Matrix 系统
   - 架设 [matrix-appservice-wechaty](https://github.com/wechaty/matrix-appservice-wechaty/) 并整合到 Matrix 系统中

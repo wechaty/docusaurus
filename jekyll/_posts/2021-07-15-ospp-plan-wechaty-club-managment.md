@@ -18,6 +18,7 @@ tags:
 
 - 导师：鲁玉超
 - 学生：陈婧
+- 项目地址: <https://github.com/wechaty/summer/issues/78>
 
 ## 项目详情
 
