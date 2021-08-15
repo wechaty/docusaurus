@@ -2,7 +2,7 @@
 title: Deploy in Whatsapp
 ---
 
-Whatsapp  is the most popular IM platform, so this how to guide focuses on deploying the bot in Whatsapp locally.You will learn how to deploy the bot in Whatsapp locally and integrate bot from the list of examples present in the [starter templete](https://github.com/wechaty/wechaty-getting-started).
+Whatsapp  is the most popular IM platform, so this how to guide focuses on deploying the bot in Whatsapp locally. You will learn how to deploy the bot in Whatsapp locally and integrate bot from the list of examples present in the [starter templete](https://github.com/wechaty/wechaty-getting-started).
 
 ![Deploy in WeChat](../../static/img/docs/howto/IM_platform/deploy-whatsapp.webp)
 
