@@ -30,7 +30,7 @@ Wechaty 作为中国最大的聊天机器人开源项目，合计发布了11个�
 
 ### Agendas议程
 
-- [0:01:41](https://www.youtube.com/watch?v=hTkM_XPpFfU&t=101s) 1.介绍会议议程
+- [0:00:00](https://youtu.be/cNSlZez5oY4) 1.介绍会议议程
 - [0:02:07](https://youtu.be/cNSlZez5oY4?t=127) 2.孔祥哲：基于python-wechaty的群聊助手机器人
 - [0:10:00](https://youtu.be/cNSlZez5oY4?t=599) 3.肖子霖:基于Python-wechaty建立一个斗图机器人
 - [0:23:57](https://youtu.be/cNSlZez5oY4?t=1433) 4.江珊珊:编写一个“每日一句”插件
