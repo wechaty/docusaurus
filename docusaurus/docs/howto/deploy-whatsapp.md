@@ -132,3 +132,7 @@ You can deploy the bot with popular container solutions as well such as:
 
 * Find out some more information about puppet from [docs/puppet-providers](https://wechaty.js.org/docs/puppet-providers/).
 * Get the starter template from [wechaty-getting-started](https://github.com/wechaty/wechaty-getting-started).
+
+## Blogs
+
+* [wechaty-puppet-whatsapp](https://wechaty.js.org/2021/02/15/publishment-of-wechaty-whatsapp-puppet)
