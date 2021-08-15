@@ -25,7 +25,7 @@ tags:
   - [ ] puppet for qq wrapper
   - [ ] 滑块登陆
   - [ ] 设备信息存储
-- 项目链接：[https://github.com/wechaty/summer-of-wechaty/issues/81](https://github.com/wechaty/summer-of-wechaty/issues/81)
+- 项目介绍：[https://github.com/wechaty/summer-of-wechaty/issues/81](https://github.com/wechaty/summer-of-wechaty/issues/81)
   
 ## 详细方案
 
