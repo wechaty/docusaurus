@@ -21,54 +21,54 @@ PadLocal is a full-featured Wechaty Puppet Provider.
 Function | 功能 | padlocal
 ---|---|---
 **Message**|**<消息>**
-Send and receive text|✅
-Send and receive personal business cards|✅
-Send and receive graphic links|✅
-Send pictures and files|✅
-Receive pictures and files|✅
-Send video|✅
-Receive video|✅
-Send Mini Program|✅
-Receive GIF|✅
-Send GIF|✅
-Receive voice message|✅
-Send voice message|✅
-Forward text|✅
-Forward the picture|✅
-Forward graphic link|✅
-Forward audio|✅
-Forward the video|✅
-Forward file|✅
-Forward GIF|❌
-Forwarding applet|✅
-**Group**|
-Create group chat|✅
-Set group announcement|✅
-Get group announcement|✅
-Group QR Code|✅
-Pull people into the group|✅
-Kick out of the group|✅
-Exit group chat|✅
-Change group name|✅
-Group entry event|✅
-Outliers|✅
-Group name change event|✅
-@群员|✅
-Group list|✅
-Group member list|✅
-Group details|✅
-**Contact**|
-Modification notes|✅
-Add friends|✅
-Pass friends automatically|✅
-Add friends|✅
-Friends list|✅
-Friends details|✅
-**Other**|
-Log in to WeChat|✅
-Scan code status|✅
-Exit WeChat|✅
-Dependency Agreement|iPad
+Send and receive text|收发文本|✅
+Send and receive personal business cards|收发个人名片|✅
+Send and receive graphic links|收发图文链接|✅
+Send pictures and files|发送图片、文件|✅
+Receive pictures and files|接收图片、文件|✅
+Send video|发送视频|✅
+Receive video|接收视频|✅
+Send Mini Program|发送小程序|✅
+Receive GIF|接收动图|✅
+Send GIF|发送动图|✅
+Receive voice message|接收语音消息|✅
+Send voice message|发送语音消息|✅
+Forward text|转发文本|✅
+Forward the picture|转发图片|✅
+Forward graphic link|转发图文链接|✅
+Forward audio|转发音频|✅
+Forward the video|转发视频|✅
+Forward file|转发文件|✅
+Forward GIF|转发动图|❌
+Forwarding applet|转发小程序|✅
+**Group**|**<群组>**|
+Create group chat|创建群聊|✅
+Set group announcement|设置群公告|✅
+Get group announcement|获取群公告|✅
+Group QR Code|群二维码|✅
+Pull people into the group|拉人进群|✅
+Kick out of the group|踢人出群|✅
+Exit group chat|退出群聊|✅
+Change group name|改群名称|✅
+Group entry event|入群事件|✅
+Outliers|离群事件|✅
+Group name change event|群名称变更事件|✅
+@群员||✅
+Group list|群列表|✅
+Group member list|群成员列表|✅
+Group details|群详情|✅
+**Contact**|**<联系人>**|
+Modification notes|修改备注|✅
+Add friends|添加好友|✅
+Pass friends automatically|自动通过好友|✅
+Add friends|添加好友|✅
+Friends list|好友列表|✅
+Friends details|好友详情|✅
+**Other**|**<其他>**|
+Log in to WeChat|登录微信|✅
+Scan code status|扫码状态|✅
+Exit WeChat|退出微信|✅
+Dependency Agreement|依赖协议|iPad
 
 ## Usage
 
