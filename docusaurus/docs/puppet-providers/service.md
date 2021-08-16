@@ -17,17 +17,17 @@ sidebar_label: Service
 
 Wechaty Puppet Service is a Wechaty Puppet for providing/consuming gRPC Puppet API. To use a Wechaty Puppet Service, you need a TOKEN for that service, and pass it to Wechaty, then you will be able to use that Puppet Service.
 
-If you want to learn more about the concepts behind TOKEN, please read our blog post: [Introducing Wechaty Puppet Service](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/)
+For example, you can cloudify the Wechaty Puppet Provider wechaty-puppet-padlocal to a Wechaty Puppet Service by running our Wechaty Puppet Service Token Gateway.
 
-Learn all service provided by the Wechaty Community at [here](puppet-services/overview.mdx)
+Wechaty Puppet Service Token Gateway is a gateway for converting the Wechaty Puppet Provider to a Wechaty Puppet Service. Read more about tokens and usage [here](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/).
+
+Learn about all puppet services provided by the Wechaty Community at [here](puppet-services/overview.mdx).
 
 ## Usage
 
 :::tip TOKEN required
 
 Wechaty Puppet Service need a token for authorization.
-
-Learn about [Wechaty Puppet Service](puppet-services/overview.mdx) for all services our community currently supported now.
 
 :::
 
@@ -76,10 +76,6 @@ npm start
 
 </TabItem>
 </Tabs>
-
-## Roadmap
-
-- to be added
 
 ## History
 
