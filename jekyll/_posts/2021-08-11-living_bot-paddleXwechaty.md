@@ -1,18 +1,40 @@
 ---
-layout:     post
-title:      "『PaddlePaddle X Wechaty』有颜又有才的Living_Bot"
-subtitle:   "本项目基于Wechaty开源微信SDK，以微信为深度学习落地应用平台，融合PaddleClas、PaddleGan、PaddleHub等多个飞桨开发工具，集成笔者前期开源的多个项目([【Mural_Gan】壁画不止在莫高窟可以看到](https://aistudio.baidu.com/aistudio/projectdetail/2231359)、[垃圾分类](https://aistudio.baidu.com/aistudio/projectdetail/1752787)以及**中医问答**),致力于打造微信个人专属生活小助手，不止让您的生活更便捷，也让您的生活更加丰富多彩！"
-date:       2021-08-11 12:00:00
-author:     "thomas-yanxin"
-tags: [technology]
-
+title: 『PaddlePaddle X Wechaty』有颜又有才的Living_Bot
+author: thomas-yanxin
+categories: project
+tags:
+  - python
+  - paddlepaddle
+  - wechaty
 ---
 
 
 # 『PaddlePaddle X Wechaty』有颜又有才的Living_Bot
 
 ## 视频奉上先
-[BiliBili视频](https://www.bilibili.com/video/BV1pf4y1V7G8/)
+
+<div class="video-container" style="
+    position: relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+">
+<iframe
+  src="https://www.bilibili.com/video/BV1pf4y1V7G8/"
+  width="560"
+  height="315"
+  frameborder="0"
+  allowfullscreen=""
+  style="
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+">
+</iframe>
+</div>
 [AIStudio地址（本项目全部相关文件放在此地址中可供下载）](https://aistudio.baidu.com/aistudio/projectdetail/2272396)
 ## wechaty介绍
 ![](https://img-blog.csdnimg.cn/img_convert/da820e713203830cc13cbc3ef6eb1d7d.png)
