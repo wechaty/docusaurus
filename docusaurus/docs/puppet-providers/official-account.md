@@ -90,7 +90,9 @@ In the third step, the upper layer interface of wechaty is used to develop the c
 
 There are some details about the development of WeChat official account using wechaty. Next we will see how to quickly get the official account chatbot with a few lines of code :
 
-  1. **Configure Internet address** : The official account of WeChat requires the address of the service provider to be external network address, supporting HTTP and HTTPS, and the ports supported respectively are: 80, 443. Therefore, it is very important to have an external IP address in the development phase. Here, we recommend several intranet penetration tools:
+#### Configure Internet address
+
+The official account of WeChat requires the address of the service provider to be external network address, supporting HTTP and HTTPS, and the ports supported respectively are: 80, 443. Therefore, it is very important to have an external IP address in the development phase. Here, we recommend several intranet penetration tools:
 
   - Localtunel : Temporary Internet address can be created, which will be invalid after a certain period of time, but this is in line with the requirements of development stage. The steps are also very simple:
 
@@ -100,74 +102,79 @@ There are some details about the development of WeChat official account using we
 
   - [ngrok](https://www.npmjs.com/package/ngrok) : It can create permanent external network addresses, free address numbers and limited bandwidth, but this is enough for WeChats official account development with very small dialogue.
 
-  2. **Initialization of WeChat official account chatbot** : Using wechaty to develop corresponding platform's chatbot, we need to use the corresponding platform puppet, and the WeChat official account corresponds to puppet: `wechaty-puppet-official-account`. The installation tutorial is as follows:
+#### Initialization of WeChat official account chatbot
 
-  ```sh
-  npm install wechaty-puppet-official-account
-  ```
-  Next is initialization, and WeChat official account requires configuration information such as appId, appSecret, token, etc. The sample code is as follows:
+Using wechaty to develop corresponding platform's chatbot, we need to use the corresponding platform puppet, and the WeChat official account corresponds to puppet: `wechaty-puppet-official-account`. The installation tutorial is as follows:
 
-  ```js
-  import { PuppetOA } from 'wechaty-puppet-official-account'
+```sh
+npm install wechaty-puppet-official-account
+```
 
-  const puppet = new PuppetOA({
+Next is initialization, and WeChat official account requires configuration information such as appId, appSecret, token, etc. The sample code is as follows:
+
+```js
+import { PuppetOA } from 'wechaty-puppet-official-account'
+
+const puppet = new PuppetOA({
+  appId: "wxbd801c28fbe1bbbd",
+  appSecret: "6959408a3ba1c82db1a11d941df65764",
+  token: "token",
+  port: 8080
+})
+```
+Next, you need to configure it to wechaty. The example code is as follows:
+
+```js
+const bot = new Wechaty({
+  puppet: puppet
+})
+```
+
+The initialization of wechaty has been completed. The next step is to develop the dialogue logic code of wechaty core.
+
+#### Chatbot Core Logic
+
+In this part, we see the simple message reply function, which is enough to show developers how to develop customized chat robots. The following is the overall sample code:
+
+```js
+import {
+  Contact,
+  Message,
+  Wechaty,
+  log,
+} from 'wechaty'
+import { MessageType } from 'wechaty-puppet'
+
+async function onMessage(msg: Message) {
+  log.info('StarterBot', msg.toString())
+
+  if (msg.text() === 'ding') {
+    await msg.say(`Welcome to wechaty Official Account\n refer to  ： http://www.wechaty.js.org 😄😄😄`)
+  }
+  if (msg.type() == MessageType.Image) {
+    const fileBox = await msg.toFileBox()
+    // send message to talker
+    await msg.say(fileBox)
+  } else {
+    // I am a repeater ~_~~
+    await msg.say(msg.text())
+  }
+}
+
+const bot = new Wechaty({
+  name: 'ding-dong-bot',
+  puppet: new PuppetOA({
     appId: "wxbd801c28fbe1bbbd",
     appSecret: "6959408a3ba1c82db1a11d941df65764",
     token: "token",
-    port: 8080
+    port: 80
   })
-  ```
-  Next, you need to configure it to wechaty. The example code is as follows:
+})
 
-  ```js
-  const bot = new Wechaty({
-    puppet: puppet
-  })
-  ```
-
-  The initialization of wechaty has been completed. The next step is to develop the dialogue logic code of wechaty core.
-
-  3. **Chatbot Core Logic** : In this part, we see the simple message reply function, which is enough to show developers how to develop customized chat robots. The following is the overall sample code:
-
-  ```js
-  import {
-    Contact,
-    Message,
-    Wechaty,
-    log,
-  } from 'wechaty'
-  import { MessageType } from 'wechaty-puppet'
-
-  async function onMessage(msg: Message) {
-    log.info('StarterBot', msg.toString())
-
-    if (msg.text() === 'ding') {
-      await msg.say(`Welcome to wechaty Official Account\n refer to  ： http://www.wechaty.js.org 😄😄😄`)
-    }
-    if (msg.type() == MessageType.Image) {
-      const fileBox = await msg.toFileBox()
-      // send message to talker
-      await msg.say(fileBox)
-    } else {
-      // I am a repeater ~_~~
-      await msg.say(msg.text())
-    }
-  }
-
-  const bot = new Wechaty({
-    name: 'ding-dong-bot',
-    puppet: new PuppetOA({
-      appId: "wxbd801c28fbe1bbbd",
-      appSecret: "6959408a3ba1c82db1a11d941df65764",
-      token: "token",
-      port: 80
-    })
-  })
-
-  bot.on('message', onMessage).start()
-    .then(() => log.info('StarterBot', 'Starter Bot Started.'))
-    .catch(e => log.error('StarterBot', e))
-  ```
+bot.on('message', onMessage).start()
+  .then(() => log.info('StarterBot', 'Starter Bot Started.'))
+  .catch(e => log.error('StarterBot', e))
+```
 
 ## Contributing
 
