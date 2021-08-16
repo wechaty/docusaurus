@@ -94,13 +94,13 @@ There are some details about the development of WeChat official account using we
 
 The official account of WeChat requires the address of the service provider to be external network address, supporting HTTP and HTTPS, and the ports supported respectively are: 80, 443. Therefore, it is very important to have an external IP address in the development phase. Here, we recommend several intranet penetration tools:
 
-  - Localtunel : Temporary Internet address can be created, which will be invalid after a certain period of time, but this is in line with the requirements of development stage. The steps are also very simple:
+- Localtunel : Temporary Internet address can be created, which will be invalid after a certain period of time, but this is in line with the requirements of development stage. The steps are also very simple:
 
-  ```sh
-  npm install -g localtunnel lt –port 80
-  ```
+```sh
+npm install -g localtunnel lt –port 80
+```
 
-  - [ngrok](https://www.npmjs.com/package/ngrok) : It can create permanent external network addresses, free address numbers and limited bandwidth, but this is enough for WeChats official account development with very small dialogue.
+- [ngrok](https://www.npmjs.com/package/ngrok) : It can create permanent external network addresses, free address numbers and limited bandwidth, but this is enough for WeChats official account development with very small dialogue.
 
 #### Initialization of WeChat official account chatbot
 
@@ -122,6 +122,7 @@ const puppet = new PuppetOA({
   port: 8080
 })
 ```
+
 Next, you need to configure it to wechaty. The example code is as follows:
 
 ```js
