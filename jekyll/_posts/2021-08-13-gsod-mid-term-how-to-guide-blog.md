@@ -78,7 +78,7 @@ The detailed structure for the timeline can be found [here](#a). Below are the s
 
 ## Proposal Mid-term Video Presentation
 
-{% include iframe.html src="#" %}
+{% include iframe.html src="https://www.youtube.com/watch?v=2yDwsntWTQc" %}
 
 ## Work Done
 
