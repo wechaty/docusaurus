@@ -19,6 +19,8 @@ sidebar_label: Official Account
 
 ## Usage
 
+Run wechaty-puppet-official-account :
+
 <!-- MDX import -->
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
