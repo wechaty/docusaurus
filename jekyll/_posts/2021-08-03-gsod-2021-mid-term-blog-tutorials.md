@@ -1,7 +1,7 @@
 ---
 title: "Google Season of Docs 2021 Mid Term Blog: Tutorials"
 author: shwetalsoni
-categories: tutorial
+categories: gsod
 tags:
   - google
   - gsod
