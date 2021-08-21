@@ -13,9 +13,6 @@ tags:
 image: /assets/2020/wxbot/qrcode.png 
 ---
 
-> 作者: [lwp](https://github.com/beclass)
-> Code: [Github](https://github.com/beclass/wxbot)
-
 ## 前言
 
 曾几何时，我加了一个微信，给它发送"加群"，然后就自动进到开发群了，随之在群聊里问问题，接着那个微信就会@我，引用我的问题并附上解答和参考链接。每天上下班的时候，它还会来一句温馨提示，出于对这种技术的强烈兴趣，开始了微信机器人研究之旅。
@@ -241,3 +238,6 @@ pm2 start pm2.config.js
 ![0](/assets/2020/wxbot/wx0.jpg)
 ![1](/assets/2020/wxbot/wx1.jpg)
 ![2](/assets/2020/wxbot/wx2.jpg)
+
+> 作者: [lwp](https://github.com/beclass)
+> Code: [Github](https://github.com/beclass/wxbot)
