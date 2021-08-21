@@ -7,10 +7,6 @@ tags:
   - ecommerce
 ---
 
-> Author: [@wss793062366](https://github.com/wss793062366) your one-line bio at here
-> Code: [@my-padplus-bot](https://github.com/wss793062366/my-padplus-bot)
-
----
 tips: 使用微信群，推广电商商品及优惠券，机器人使用 wechaty-puppet-padplus.
 
 ## 简介
@@ -309,3 +305,6 @@ npm run start
 项目链接
 
 <https://github.com/wss793062366/my-padplus-bot>
+
+> Author: [@wss793062366](https://github.com/wss793062366) your one-line bio at here
+> Code: [@my-padplus-bot](https://github.com/wss793062366/my-padplus-bot)
