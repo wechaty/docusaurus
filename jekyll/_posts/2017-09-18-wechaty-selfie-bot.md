@@ -10,8 +10,6 @@ tags:
 image: /assets/2017/wechaty-selfie-pear.jpg
 ---
 
-> Author: [@huyingxi](https://github.com/huyingxi/wechaty_selfie) enjoying ML&Wechaty at BUPT
-
 Recently I found a fun and easy middleware to use for WeChat, called [Wechaty](https://github.com/wechaty/wechaty).
 
 Wechaty can help developers quickly build applications based on Wechat, and it was born with a huge number of Potential users.
@@ -67,3 +65,5 @@ I strongly recommend that you now click on the link below, there are surprises w
 * [What a Deep Neural Network thinks about your #selfie](https://karpathy.github.io/2015/10/25/selfie/)
 
 And more details about my selfie bot, you can find in my github repository at: [wechaty_selfie](https://github.com/huyingxi/wechaty_selfie)
+
+> Author: [@huyingxi](https://github.com/huyingxi/wechaty_selfie) enjoying ML&Wechaty at BUPT
