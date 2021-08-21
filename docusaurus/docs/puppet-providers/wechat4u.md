@@ -10,7 +10,7 @@ sidebar_label: WeChat4U
 [![NPM Version](https://badge.fury.io/js/wechaty-puppet-wechat4u.svg)](https://badge.fury.io/js/wechaty-puppet-wechat4u)
 [![npm (tag)](https://img.shields.io/npm/v/wechaty-puppet-wechat4u/next.svg)](https://www.npmjs.com/package/wechaty-puppet-wechat4u?activeTab=versions)
 
-Wechat4U is an excellent wechat bot framework that supports both Node.js & Browser, with rich features and an active community of experienced contributors. PuppetWechat4U will let wechaty users have the second way to use wechaty, not only by Browser Hook but also by Server API Call.
+Wechat4U is an excellent wechat bot framework that supports both Node.js and Browser, with rich features and an active community of experienced contributors. PuppetWechat4U will let wechaty users have the second way to use wechaty, not only by Browser Hook but also by Server API Call.
 
 - Repo: <https://github.com/wechaty/wechaty-puppet-wechat4u>
 - Support & Feedback: <https://github.com/wechaty/wechaty-puppet-wechat4u/issues>
