@@ -42,7 +42,7 @@ The tutorial for **Vannila Redux with Wechaty Redux Plugin** is available [here]
 
 Ducks offers a method of handling redux module packaging, installing, and running with your Redux store with middleware support.
 
-The tutorial for **Ducks Proposal Style for Wechaty Redux Plugin** is available [here](using-redux-with-wechaty/ducks-proposal.md).
+The tutorial for **Ducks Proposal Style for Wechaty Redux Plugin** is available [here](using-redux-with-wechaty/ducks-proposal.mdx).
 
 ## References
 

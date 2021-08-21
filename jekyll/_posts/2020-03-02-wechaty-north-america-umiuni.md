@@ -7,8 +7,6 @@ tags:
 image: /assets/2020/umiuni/icon.png
 ---
 
-> 作者: [SuperCharlesZhu](https://github.com/SuperCharlesZhu)
-
 ## 内容简介
 
 * UmiUni -- 北美留学生自己的校园生活圈子
@@ -161,3 +159,5 @@ async function putInRoom (contact: Contact, room: Room) {
 4. nodjs chatbot grpc call python service, send chat message to a python for model processing. Service crash, session logout -> send a notification to 管理员群。
 5. 校友问答。校友在群中，或者私聊中提问 (e.g. 有没有二手自行车?），1)先搜索[北美校内网](https://umiuni.com)数据库找匹配 2)搜索网络；有match后查看score。
 6. 工友问答。Package details, Layoff news, etc.
+
+> 作者: [SuperCharlesZhu](https://github.com/SuperCharlesZhu)
