@@ -1,7 +1,7 @@
 ---
 name: 林宇靖
-site: https://github.com/545641826
-avatar: /assets/contributors/545641826/545641826.webp
+site: https://github.com/lprintf
+avatar: /assets/contributors/lprintf/lprintf.webp
 bio: 
 email: 545641826@qq.com
 ---
@@ -12,5 +12,5 @@ I have a great idea and I just need two programmers right now.
 
 ## Contact me
 
-- Github: <https://github.com/545641826>
+- Github: <https://github.com/lprintf>
 - Email：545641826@qq.com

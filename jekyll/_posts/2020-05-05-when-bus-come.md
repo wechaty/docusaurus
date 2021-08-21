@@ -8,9 +8,6 @@ tags:
 image: /assets/2020/when-bus-come/teaser.jpg
 ---
 
-> 作者: [ershing](https://github.com/ershing) Node.js developer
-> Code: [Github](https://github.com/ershing/when-bus-come)
-
 ## 需求
 
 我们很多时候需要到某个公交站，但是不知道公交什么时候来，导致等来很久才到，浪费来太多的时间，如果可以提前知道车什么时候来，就可以准时出门，不用在车站等这么久的时间，特别这么炎热的天气。当然，已经有很多小程序可以做到这个查询的工作，这里的仓库也是用来广州公交行讯通小程序的接口，或许你觉得多此一举，但是我觉得这个只是其中一个小功能集成在某个机器人的问答交互功能当中，后面扩展起来还是有很多可以做的工作。
@@ -168,3 +165,6 @@ image: /assets/2020/when-bus-come/teaser.jpg
 ## 致谢
 
 感谢 `Wechaty` 开源项目及 `JuziBot` 公司提供的 token，为开发者带来极大便利！
+
+> 作者: [ershing](https://github.com/ershing) Node.js developer
+> Code: [Github](https://github.com/ershing/when-bus-come)
