@@ -8,9 +8,6 @@ tags:
 image: /assets/2020/cps-bot/qrcode.jpg
 ---
 
-> 作者: [shuangjie](https://github.com/shuangjie), a noob developer
-> Code: [Github](https://github.com/shuangjie/cps-bot)
-
 tips: if you try to use wechaty web version, you will be know it can't work, so this post show you how to use ipad version to make bot work, if you never use wechaty any version, this post also pass the web version, because it's pointless
 
 ## What is it
@@ -274,3 +271,6 @@ done
 The above code may be updated in the future, the latest code is located at:
 
 <https://github.com/shuangjie/cps-bot>
+
+> 作者: [shuangjie](https://github.com/shuangjie), a noob developer
+> Code: [Github](https://github.com/shuangjie/cps-bot)
