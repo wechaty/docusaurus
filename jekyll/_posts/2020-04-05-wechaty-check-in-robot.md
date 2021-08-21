@@ -9,12 +9,6 @@ tags:
 image: /assets/2020/wechaty-check-in-robot/notice.png
 ---
 
-> 作者: [yeojongki](https://github.com/yeojongki) 前端开发工程师
-
-[![wechaty-check-in-robot](/assets/2020/wechaty-check-in-robot/notice.png)](https://github.com/yeojongki/wechaty-check-in-robot)
-
-<!-- more -->
-
 ## 1. 开发背景
 
 女朋友(逃)建了一个学习打卡的微信群，邀请了一些同学进群进行每日打卡学习，三天没有打卡就会被踢出群聊。于是需要记录每个用户的打卡时间，并进行相关的结算。之前看到过开发微信机器人，于是就想到可以做一个机器人代替手动记录以节省时间。本项目用的是 [wechaty](https://github.com/wechaty/wechaty) 的 [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus) 协议进行开发。
@@ -101,3 +95,5 @@ yarn build
 - 机器人判定打卡功能很粗糙，有待完善
 - 将业务功能抽离处理
 - 开发更多功能
+
+> 作者: [yeojongki](https://github.com/yeojongki) 前端开发工程师
