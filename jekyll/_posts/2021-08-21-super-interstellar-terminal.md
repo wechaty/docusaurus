@@ -160,14 +160,14 @@ PaddleSeg训练了一个在cityscapes数据集上SOTA的模型。却很低调，
 
 - 目录结构（单独使用本模块，只需修改`CityscapesModule.py`中的 im_path ）：
 
-  ```bash
+```bash
   .
   ├── CityscapesModule.py
   └── PetModel
       ├── modelCityscape.pdparams
       ├── pretrainedCityscape.pdparams
       └──mscale_ocr_cityscapes_autolabel_mapillary_ms_val.yml
-  ```
+```
 
 `pretrainedCityscape.pdparams`下载地址：[https://bj.bcebos.com/paddleseg/dygraph/cityscapes/ocrnet_hrnetw48_mapillary/pretrained.pdparams](https://bj.bcebos.com/paddleseg/dygraph/cityscapes/ocrnet_hrnetw48_mapillary/pretrained.pdparams)
 
@@ -375,7 +375,7 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：[https://g
 
 - 我们也可以通过Y通道融合亮度，保留外星的U,V通道，即保留其颜色。当两个图片融合时，通过调节融合的Y通道的权重，控制合成出来的颜色亮度。
 
-  ```python
+```python
   # 把图片style，content转到yuv空间
   yuv = cv2.cvtColor(np.float32(style), cv2.COLOR_BGR2YUV)
   y, u, v = cv2.split(yuv)
@@ -389,7 +389,7 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：[https://g
   # 两张图进行合成
   content = np.dstack((hy, u, v))
   content = cv2.cvtColor(np.float32(content), cv2.COLOR_YUV2BGR)
-  ```
+```
 
 ### C.6 寻找被外星人隐藏起来的外星建筑——sandModule.py
 
@@ -418,7 +418,7 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
 
 - 初始化函数定义各个模型文件夹及图片素材的位置
 
-  ```python
+```python
     imgGenerator = ImgGenerator(
       debug=False,
       ymlPathSeg='PetModel/mscale_ocr_cityscapes_autolabel_mapillary_ms_val.yml',    #cityscapes分割模型的yml
@@ -428,13 +428,13 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
       picPathPet='PetPic/',    #外星生物素材
       picPathVeg='VegPic'    #外星植物及外星建筑素材
   )
-  ```
+```
 
 - 调用函数生成
 
   输入是图片路径：
 
-  ```python
+```python
     rc, img, des = imgGenerator.run(
       dstPath,
       alienHeadIndex=0,
@@ -442,11 +442,11 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
       environmentIndex=0,
       alienPetIndex=0
   )
-  ```
+```
 
   输入直接是图片：
 
-  ```python
+```python
     rc, img, des = imgGenerator.runImg(
       img,
       alienHeadIndex=0,
@@ -454,7 +454,7 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
       environmentIndex=0,
       alienPetIndex=0
   )
-  ```
+```
 
 - 参数说明
 
@@ -588,7 +588,7 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
 
 - 本项目用到了阿里云的云数据库RDS MySQL版，链接: [云数据库RDS MySQL版](https://www.aliyun.com/product/rds)
 
-- 购买实例后登录[控制台](https://rds.console.aliyun.com)，创建一个数据库，名为`super-interstellar-terminal`
+- 购买实例后登录[控制台](https://rds.console.aliyun.com)，创建一个数据库，名为 `super-interstellar-terminal` .
 
 - 创建一个普通账号，授权数据库填写`super-interstellar-terminal`，权限为读写（DDL+DML），记住**用户名**和**密码**
 
@@ -602,15 +602,15 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
 
 - 本项目用到了阿里云的对象存储OSS，链接: [对象存储OSS](https://www.aliyun.com/product/oss)
 
-- 开通后登录[控制台](https://oss.console.aliyun.com)，创建一个Bucket，名为`super-interstellar-terminal`
+- 开通后登录[控制台](https://oss.console.aliyun.com)，创建一个Bucket，名为`super-interstellar-terminal`.
 
-- 登录[RAM控制台](https://ram.console.aliyun.com)，创建一个用户，访问方式选择**编程访问**，记住`AccessKey ID`和`AccessKey Secret`
+- 登录[RAM控制台](https://ram.console.aliyun.com)，创建一个用户，访问方式选择**编程访问**，记住`AccessKey ID`和`AccessKey Secret`.
 
 - 有任何不明白的请访问: [云存储OSS官方文档](https://help.aliyun.com/product/31815.html)
 
 6. 开启数据库server
 
-  ```bash
+```bash
   # 以任何一种你喜欢❤的方式远程登陆到阿里云的云服务器
   
   # 克隆本代码仓库
@@ -621,52 +621,52 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
   $ sudo apt install mysql-client-core-8.0
   
   # 开启数据库server
-  $ cd ~/SuperInterstellarTerminal/bot/
-  $ python3 -m pip install -r requirements.txt
-  $ nohup python3 server/database.py >/dev/null 2>&1 &
-  ```
+    cd ~/SuperInterstellarTerminal/bot/
+    python3 -m pip install -r requirements.txt
+    nohup python3 server/database.py >/dev/null 2>&1 &
+```
 
 7. 开启图像处理server
 
-  ```bash
+```bash
   # 远程登陆到一台很牛逼的服务器（不是阿里云的云服务器）
   
   # 克隆本代码仓库
-  $ cd ~/
-  $ git clone https://github.com/kevinfu1717/SuperInterstellarTerminal.git
+    cd ~/
+    git clone https://github.com/kevinfu1717/SuperInterstellarTerminal.git
   
   # 开启图像处理server
-  $ cd ~/SuperInterstellarTerminal/
-  $ python3 -m pip install -r requirements.txt
-  $ nohup python3 app.py >/dev/null 2>&1 &
-  ```
+    cd ~/SuperInterstellarTerminal/
+    python3 -m pip install -r requirements.txt
+    nohup python3 app.py >/dev/null 2>&1 &
+```
 
 8. 设置环境变量
 
    `OSS_ENDPOINT`的设置可参考: [访问域名（Endpoint）](https://help.aliyun.com/document_detail/31837.html?spm=a2c4g.11186623.6.611.554e6d13isyAAt)
 
-  ```bash
-  $ export WECHATY_PUPPET="wechaty-puppet-service"
-  $ export WECHATY_PUPPET_SERVICE_TOKEN="<your wechaty token>"    # wechaty的token
-  $ export DB_USER="<your database user name>"    # 云数据库账号的用户名
-  $ export DB_PASSWORD="<your database password>"    # 云数据库账号的密码
-  $ export DB_DATABASE="<your database name>"    # 云数据库的数据库名，填写为super-interstellar-terminal
-  $ export DB_SERVER_HOST="<your database server host>"    # 开启数据库server的服务器地址，一般是云服务器的公网IP
-  $ export ACCESS_KEY_ID="<your AccessKey ID>"    # RAM用户的AccessKey ID
-  $ export ACCESS_KEY_SECRET="<your AccessKey Secret>"    # RAM用户的AccessKey Secret
-  $ export OSS_BUCKET_NAME="<your oss bucket name>"    # 云存储的Bucket，填写为super-interstellar-terminal
-  $ export OSS_ENDPOINT="<your oss endpoint>"    # 云存储的访问域名
-  $ export IMG_SERVER_HOST="<your img server host>"    # 开启图像处理server的服务器地址
-  $ export DEVELOPERS="<your developer cipher>"    # 给予开发者特权的暗号
-  ```
+```bash
+    export WECHATY_PUPPET="wechaty-puppet-service"
+    export WECHATY_PUPPET_SERVICE_TOKEN="<your wechaty token>"    # wechaty的token
+    export DB_USER="<your database user name>"    # 云数据库账号的用户名
+    export DB_PASSWORD="<your database password>"    # 云数据库账号的密码
+    export DB_DATABASE="<your database name>"    # 云数据库的数据库名，填写为super-interstellar-terminal
+    export DB_SERVER_HOST="<your database server host>"    # 开启数据库server的服务器地址，一般是云服务器的公网IP
+    export ACCESS_KEY_ID="<your AccessKey ID>"    # RAM用户的AccessKey ID
+    export ACCESS_KEY_SECRET="<your AccessKey Secret>"    # RAM用户的AccessKey Secret
+    export OSS_BUCKET_NAME="<your oss bucket name>"    # 云存储的Bucket，填写为super-interstellar-terminal
+    export OSS_ENDPOINT="<your oss endpoint>"    # 云存储的访问域名
+    export IMG_SERVER_HOST="<your img server host>"    # 开启图像处理server的服务器地址
+    export DEVELOPERS="<your developer cipher>"    # 给予开发者特权的暗号
+```
 
 9. 运行bot
 
-  ```bash
-  $ cd ~/super-interstellar-terminal/bot/
-  $ python3 -m pip install -r requirements.txt
-  $ nohup python3 bot.py &
-  ```
+```bash
+    cd ~/super-interstellar-terminal/bot/
+    python3 -m pip install -r requirements.txt
+    nohup python3 bot.py &
+```
 
 ## E. 总结
 
