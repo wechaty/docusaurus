@@ -1,5 +1,5 @@
 ---
-title: "<x世纪星际终端>基于wechaty的AR+LBS漂流瓶轻社交游戏Super Interstellar Terminal (A Wechat Social Game with AR and LBS)"
+title: "<x 世纪星际终端>基于 wechaty 的 AR+LBS 漂流瓶轻社交游戏"
 author: kevinFu
 categories: article
 tags:
@@ -15,37 +15,38 @@ image: /assets/2021/08-super-interstellar-terminal/title.jpg
 ## A. 项目介绍
 
 ### A.1 项目模块：
+
 > 项目由下面的模块组成，每个模块都可以单独使用，也可组合使用，如：直接按需就调用图像生成外星人、外星生物、外星植物、外星建筑
 
 | 简要 | 具体描述 | 项目中的代码及模型 |
 | -------- | -------- | -------- |
-| **1.基于LSGAN的外星生物生成**，利用爬虫与GAN生成我们想要的东西的过程 | 请跳转到本页中的C.1 | Train.zip |
-| **2.快速调用PaddleSeg的cityscapes模型**，进行18类常见物体的分割 |请跳转到本页中的C.2 | CityscapesModule.py +PetModel文件夹|
-| **3.OpenCV的seamlessClone实现图像融合**，呈现各种AR效果,遮挡关系等 |请跳转到本页中的C.3  | alienPetModule.py|
-| **4.外星人换脸**，外星人脸与地球人脸融合效果的优化 |请跳转到本页中的C.4  | alienHeadModule.py|
-| **5.YUV颜色空间实现颜色图案迁移**，基于CV技术生成外星植物|请跳转到本页中的C.5  | vegetateModule.py|
-| **6.PaddleHub的msgnet实现图像迁移**，基于深度学习生成类流沙或沙画效果 |请跳转到本页中的C.6  | sandModule.py + msgnet文件夹|
+| **1.基于 LSGAN 的外星生物生成**，利用爬虫与 GAN 生成我们想要的东西的过程 | 请跳转到本页中的 C.1 | Train.zip |
+| **2.快速调用PaddleSeg的cityscapes模型**，进行18类常见物体的分割 |请跳转到本页中的 C.2 | CityscapesModule.py +PetModel文件夹|
+| **3.OpenCV的seamlessClone实现图像融合**，呈现各种AR效果,遮挡关系等 |请跳转到本页中的 C.3  | alienPetModule.py|
+| **4.外星人换脸**，外星人脸与地球人脸融合效果的优化 |请跳转到本页中的 C.4  | alienHeadModule.py|
+| **5.YUV颜色空间实现颜色图案迁移**，基于CV技术生成外星植物|请跳转到本页中的 C.5  | vegetateModule.py|
+| **6.PaddleHub的msgnet实现图像迁移**，基于深度学习生成类流沙或沙画效果 |请跳转到本页中的 C.6  | sandModule.py + msgnet文件夹|
 | **7.Wechaty漂流瓶游戏**，微信漂流瓶及通过开发者模式控制整个流程 |请跳转到本页中的D | bot文件夹|
 
 ![4front](/assets/2021/08-super-interstellar-terminal/4front.jpg)
 
- ### A.2 太空漂流信息
+### A.2 太空漂流信息
 
 > **你可能收到来自一个未知星域发过来的漂流瓶，你也可以把你想抒发的情感发向星际中**
 
- - 嗨，别来无恙啊，此刻的你是否有些孤独，别怕，此时此刻，在浩瀚宇宙中，总有与你相似的灵魂，你们或许来自不同的星球，有着不同的文明，但你们仍然可以通过太空漂流瓶去表达内心的情感，快来开启你的太空漂流瓶之旅吧......
+- 嗨，别来无恙啊，此刻的你是否有些孤独，别怕，此时此刻，在浩瀚宇宙中，总有与你相似的灵魂，你们或许来自不同的星球，有着不同的文明，但你们仍然可以通过太空漂流瓶去表达内心的情感，快来开启你的太空漂流瓶之旅吧。
 
- - 用户可以在加本官方微信好友后，向本官方微信发出包含文本与图片的漂流瓶。也可以主动接收漂流瓶。
+- 用户可以在加本官方微信好友后，向本官方微信发出包含文本与图片的漂流瓶。也可以主动接收漂流瓶。
 
- - 甚至，在一个你意想不到的时刻会收到想象之外的漂流瓶信息。发送与接收漂流瓶都可以提升等级噢！
+- 甚至，在一个你意想不到的时刻会收到想象之外的漂流瓶信息。发送与接收漂流瓶都可以提升等级噢！
 
 ### A.3 增强现实技术（AR）+位置服务（LBS）的游戏
 
 > **接收漂流瓶任务，或主动出击，寻找身边潜藏的外星人、外星生物（宠物）、外星植物、外星建筑**
 
- - 基于微信聊天中的图片及文本聊天。通过文本接受到任务或主动触发。
+- 基于微信聊天中的图片及文本聊天。通过文本接受到任务或主动触发。
 
- - 可能是让用户帮忙寻找它丢失的某个外星宠物（外星生物），或者帮它找到急需用于治疗的外星植物，也可能是让你帮忙找到正在被通缉的外星人囚犯。
+- 可能是让用户帮忙寻找它丢失的某个外星宠物（外星生物），或者帮它找到急需用于治疗的外星植物，也可能是让你帮忙找到正在被通缉的外星人囚犯。
 
 ### A.4 体验视频：（建议全屏观看）
 
@@ -81,11 +82,11 @@ image: /assets/2021/08-super-interstellar-terminal/title.jpg
 
 ## B. 故事背景
 
- - **地球并不只是人类的天下，其实有数万名外星人及其外星低等生物生活在我们当中，他们有的因为母星被毁有的因为星际战乱而选择到地球避难。**
+- **地球并不只是人类的天下，其实有数万名外星人及其外星低等生物生活在我们当中，他们有的因为母星被毁有的因为星际战乱而选择到地球避难。**
 
- - **银河星际移民局则管理并协调着他们在地球的生活。借助超高级科技，他们隐藏原来的外观，装扮成是普通地球人，我们根本分辨不出来，说不定，站在你旁边的就是一位外星友人。**
+- **银河星际移民局则管理并协调着他们在地球的生活。借助超高级科技，他们隐藏原来的外观，装扮成是普通地球人，我们根本分辨不出来，说不定，站在你旁边的就是一位外星友人。**
 
- - **同时，他们也带来了外星的低等生物及外星植物，通过超科技把他们隐藏起来，装扮成地球物种或我们完全看不到。**
+- **同时，他们也带来了外星的低等生物及外星植物，通过超科技把他们隐藏起来，装扮成地球物种或我们完全看不到。**
 
 ![bg](/assets/2021/08-super-interstellar-terminal/bg.gif)
 
@@ -101,33 +102,33 @@ image: /assets/2021/08-super-interstellar-terminal/title.jpg
 
 #### a. 训练素材
 
- - 从百度爬取“外星人”的图片，但因为外星人搜出来的图太杂乱。所以改变思路，用关键词“外星人 矢量”来进行搜索爬取。搜出来的外星人图片相对没那么杂乱。勉强可以用来训练。勉强是有1/5左右是白底，有1/5左右是PS中那种透明图的格子底图或水印的，有1/5是背景各种颜色的图，还有1/5是多个外星元素组成的图。大概数据见下图：
+- 从百度爬取“外星人”的图片，但因为外星人搜出来的图太杂乱。所以改变思路，用关键词“外星人 矢量”来进行搜索爬取。搜出来的外星人图片相对没那么杂乱。勉强可以用来训练。勉强是有1/5左右是白底，有1/5左右是PS中那种透明图的格子底图或水印的，有1/5是背景各种颜色的图，还有1/5是多个外星元素组成的图。大概数据见下图：
 
   ![pets2](/assets/2021/08-super-interstellar-terminal/pets2.jpg)
 
 #### b. 数据处理与增广
 
- - 尝试过用midars模型或CV来提取单个外星生物，但效果都不是很好。所以，最终只使用水平翻转，增加了一倍的数量。尽管可以爬取来增加这个数量，但越到后面，爬取的图片质量越差。所以还是通过水平翻转来处理。
+- 尝试过用midars模型或CV来提取单个外星生物，但效果都不是很好。所以，最终只使用水平翻转，增加了一倍的数量。尽管可以爬取来增加这个数量，但越到后面，爬取的图片质量越差。所以还是通过水平翻转来处理。
 
 #### c. 模型
 
- - 训练文件： 见项目中 Train压缩包下 `TrainAlienPet.ipynb`
+- 训练文件：见项目中 Train压缩包下 `TrainAlienPet.ipynb`
 
- - 模型文件： 见项目中 Train压缩包下 `generator0725.params`
+- 模型文件：见项目中 Train压缩包下 `generator0725.params`
 
  - 搜索了一下GAN的模型，结合可训练性与生成效果，选择了LSGAN。基于项目aistudio上“独楼望天涯”大佬的项目 [https://aistudio.baidu.com/aistudio/projectdetail/1936908]进行修改。
 
- - 在其基础上，每个epoch执行更多的Generation，以及修改了超参数（ 偶尔判别器loss高时，会有些完全不像的图）。
+- 在其基础上，每个epoch执行更多的Generation，以及修改了超参数（ 偶尔判别器loss高时，会有些完全不像的图）。
 
- - 训练过程：**Epoch 0 ~ Epoch 999** 的LOSS及效果见下面动图：
+- 训练过程：**Epoch 0 ~ Epoch 999** 的LOSS及效果见下面动图：
 
  ![loss](/assets/2021/08-super-interstellar-terminal/loss.gif)
 
- - **具体训练项目地址见：**
+- **具体训练项目地址见：**
 
 [Paddle2.0-通过LSGAN让我们看看AI预测的外星人长什么样子](https://aistudio.baidu.com/aistudio/projectdetail/2210138)
 
- - 不足：
+- 不足：
 
 1. 大概在200epochs就已经差不多，再训练到1000epochs反而效果还下降了。loss方面，判别器可以达到0.02，但生成器只能到0.8。这方面还可以优化
 
@@ -139,9 +140,9 @@ image: /assets/2021/08-super-interstellar-terminal/title.jpg
 
 #### d. 后处理
 
- - 在叠加到现实图像中做AR效果时，使用cv处理优化这部分（具体见3-d中的描述）
+- 在叠加到现实图像中做AR效果时，使用cv处理优化这部分（具体见3-d中的描述）
 
- - 为外星生物配上背景介绍，定义他们出现的位置，建立外星生物图鉴
+- 为外星生物配上背景介绍，定义他们出现的位置，建立外星生物图鉴
 
 > **生物图鉴：AI生成的外星生物**
 
@@ -151,7 +152,7 @@ image: /assets/2021/08-super-interstellar-terminal/title.jpg
 
 #### a. 模型
 
-**PaddleSeg 中基于cityscapes数据集的SOTA模型**
+PaddleSeg 中基于cityscapes数据集的SOTA模型
 
 PaddleSeg训练了一个在cityscapes数据集上SOTA的模型。却很低调，只是放在contrib中，仅有个英文的介绍。里面的介绍还主要针对训练的，如果只是想要体验SOTA的cityscapes的效果是怎样的却很麻烦。本项目中化简了相关的代码，一行代码体验cityscapes分割。效果真的对得起SOTA的！
 
@@ -189,7 +190,7 @@ PaddleSeg训练了一个在cityscapes数据集上SOTA的模型。却很低调，
 - 可以拿这个二维数组作为mask，例如用`np.where(mask == index, 1, 0)`来截取自己感兴趣的区域，index取值为上表中`实际返回ID` ,也即 `trainID -1`。
 
 - `CityscapesModule.py`中把`pred ×10`后保存成图片，见右下图（图片像素的灰度值从0~180）。
- 
+
 ![cityscapes](/assets/2021/08-super-interstellar-terminal/cityscapes.jpg)
 
 ### C.3 寻找隐藏在环境中的外星生物（外星宠物）——alienPetModule.py
@@ -242,15 +243,15 @@ cv2.seamlessClone(src, dst, src_mask, center, cv2.MONOCHROME_TRANSFER)
 
 ![complexClone](/assets/2021/08-super-interstellar-terminal/complexClone.jpg)
 
-**效果好坏于背景图dst及前景图src都有关系**
+效果好坏于背景图dst及前景图src都有关系
 
-##### d.2 结合mask的优化版seamlesClone图像合成效果——代码见alienPetModule.py中的maskOfWhiteBG() ，roiAreaCheck()
+##### d.2 结合mask的优化版seamlesClone图像合成效果——代码见alienPetModule.py中的maskOfWhiteBG()，roiAreaCheck()
 
  步骤 | 步骤 | 说明 | 备注 |
  -------- | -------- | -------- |-------- |
  1    |  把src的外星生物图转成HSV格式，<br>通过V通道，V大于200得到二值化的mask| HSV的V分量可以当作是亮度，在本次LSGAN生成的外星人中<br>基本都是白色底的，可以抠处白色底     | |
  2    |二值化的图进行开运算|<div style="width: 150pt">去除LSGAN中生成的一些彩色噪声点，得到外星生物的mask，宁愿漏也不要去多了。<br>因为合成时有个渐变，自然就把杂点淡化了 </div> |![binary](/assets/2021/08-super-interstellar-terminal/binary.jpg) |
- 3    |把2中的二值化图进行边缘裁切，<br>使mask图的四个边都有白色区域接触| 这可能是seamlessClone的一个bug，若白色区域不接触图像边缘，<br>**其合成时的位置是按白色区域的中心点位置，不是mask图像的中心点位置**，切记！！！  | |
+ 3    |把2中的二值化图进行边缘裁切，<br>使mask图的四个边都有白色区域接触| 这可能是seamlessClone的一个bug，若白色区域不接触图像边缘，<br>**其合成时的位置是按白色区域的中心点位置，不是mask图像的中心点位置**，切记！  | |
  4    | 根据裁切后的mask，重新计算中心点<br>左边center=(x,y)| seamlessClone的center参数是src的中心点在dst图中的位置 | |
 
 ##### d.3 结合cityScapes分割的AR定位——代码见alienPetModule.py中的erode2LeftTop（），leftTop2Center()
@@ -272,13 +273,13 @@ cv2.seamlessClone(src, dst, src_mask, center, cv2.MONOCHROME_TRANSFER)
 
   【伪代码】 np.where(mask=天空的index, 已叠加飞船的图，原图）
 
-  ![sky](/assets/2021/08-super-interstellar-terminal/sky.jpg) 
+  ![sky](/assets/2021/08-super-interstellar-terminal/sky.jpg)
 
 ### C.4 外星人显形——alienHeadModule.py
 
 #### a. 模型
 
-**Paddlehub landmark模型**
+Paddlehub landmark模型
 
 landmark的68个人脸关键点模型具体介绍请见官方介绍：[https://gitee.com/PaddlePaddle/PaddleHub/tree/release/v2.1/modules/image/keypoint](https://gitee.com/PaddlePaddle/PaddleHub/tree/release/v2.1/modules/image/keypoint_detection/face_landmark_localization)
 
@@ -294,7 +295,7 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：[https://g
 |   |        |  2 我们需要手动用labelme的keypoint为其标上68个关键点，大概就好，不用太精确。landmark数据按labelme格式保存到json中。     |
 |   |        |  3 配置外星人的人脸参数到`ConfigHead.py`中。   |
 
-![alien1](/assets/2021/08-super-interstellar-terminal/alien1.jpg) 
+![alien1](/assets/2021/08-super-interstellar-terminal/alien1.jpg)
 
 | 序号 | 步骤 | 操作|
 | -------- | -------- | -------- |
@@ -303,7 +304,7 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：[https://g
 | C   |  融合粘贴   |1. 截取外星人人脸，生成一个上到下的渐透明的遮罩图。用`cv2.seamlessCloned`的NORMAL_CLONE复制到原人脸位置，但因为seamlessClone没法调参数的，外星人形象融在背景里面，不太明显不清晰。   |
 |    |     |2. 截取外星人人脸及颈部及上半身，生成一个上到下的渐透明的遮罩图。用`cv2.addWeight`把外星人脸与1中所述的人脸进行透明度融合   |
 
-![alien2](/assets/2021/08-super-interstellar-terminal/alien2.jpg) 
+![alien2](/assets/2021/08-super-interstellar-terminal/alien2.jpg)
 
 #### d. 关键技术点
 
@@ -409,7 +410,6 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：[https://g
 | 1  |   定位     |   基于分割模型得到的mask区域，定位areaIndex==2,即building的区域。    |
 | 2  |   图像迁移     |  把建筑转成灰度图，然后用msgnet迁移成流沙的风格.  |
 
-
 ### C.7 使用ImgGenerateModule 建立Alien Server或直接调用
 
 #### a. 直接调用函数
@@ -435,7 +435,7 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
   输入是图片路径：
 
   ```python
-	rc, img, des = imgGenerator.run(
+    rc, img, des = imgGenerator.run(
       dstPath,
       alienHeadIndex=0,
       vegetateIndex=0,
@@ -447,7 +447,7 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
   输入直接是图片：
 
   ```python
-	rc, img, des = imgGenerator.runImg(
+    rc, img, des = imgGenerator.runImg(
       img,
       alienHeadIndex=0,
       vegetateIndex=0,
@@ -462,9 +462,9 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
   |:----    |:---|:----- |-----   |
   |img/dstPath |是  |string |待处理图片或待处理图片的地址   |
   |alienHeadIndex |否  |int | 是否进行换外星人头，-1为不处理，0为随机，>0为指定index为该值的外星人    |
-  |vegetateIndex     |否  |int | 	是否添加外星植物，-1为不处理，0为随机，>0为指定index为该值的外星植物    |
-  |environmentIndex |否  |int | 	是否生成外星建筑外墙，-1为不处理，>0为生成    |
-  |alienPetIndex     |否  |int | 	是否进行添加外星生物，-1为不处理，0为随机，>0为指定index为该值的外星生物   |
+  |vegetateIndex     |否  |int | 是否添加外星植物，-1为不处理，0为随机，>0为指定index为该值的外星植物    |
+  |environmentIndex |否  |int | 是否生成外星建筑外墙，-1为不处理，>0为生成    |
+  |alienPetIndex     |否  |int | 是否进行添加外星生物，-1为不处理，0为随机，>0为指定index为该值的外星生物   |
 
 - 返回说明
 
@@ -562,7 +562,6 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
 
   或者去Gitee：`git clone https://gitee.com/PaddlePaddle/PaddleSeg`
 
-
 - 生成外星人矢量图模型（非必需，若要自己新增生成外星生物才需要）
 
   AI Studio数据页：[https://aistudio.baidu.com/aistudio/datasetdetail/103316](https://aistudio.baidu.com/aistudio/datasetdetail/103316)
@@ -579,35 +578,35 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
 
 3. 云服务器
 
- - 本项目用到了阿里云的云服务器ECS，链接: [云服务器ECS](https://www.aliyun.com/product/ecs)
+- 本项目用到了阿里云的云服务器ECS，链接: [云服务器ECS](https://www.aliyun.com/product/ecs)
 
- - 购买实例后登录[控制台](https://ecs.console.aliyun.com)，实例名称和主机名可以自行更改，记住**公网IP**
+- 购买实例后登录[控制台](https://ecs.console.aliyun.com)，实例名称和主机名可以自行更改，记住**公网IP**
 
- - 有任何不明白的请访问: [云服务器ECS官方文档](https://help.aliyun.com/product/25365.html)
+- 有任何不明白的请访问: [云服务器ECS官方文档](https://help.aliyun.com/product/25365.html)
 
 4. 云数据库
 
- - 本项目用到了阿里云的云数据库RDS MySQL版，链接: [云数据库RDS MySQL版](https://www.aliyun.com/product/rds)
+- 本项目用到了阿里云的云数据库RDS MySQL版，链接: [云数据库RDS MySQL版](https://www.aliyun.com/product/rds)
 
- - 购买实例后登录[控制台](https://rds.console.aliyun.com)，创建一个数据库，名为`super-interstellar-terminal`
+- 购买实例后登录[控制台](https://rds.console.aliyun.com)，创建一个数据库，名为`super-interstellar-terminal`
 
- - 创建一个普通账号，授权数据库填写`super-interstellar-terminal`，权限为读写（DDL+DML），记住**用户名**和**密码**
+- 创建一个普通账号，授权数据库填写`super-interstellar-terminal`，权限为读写（DDL+DML），记住**用户名**和**密码**
 
- - 在左侧**数据库连接**处找到外网地址，小本本记下来
+- 在左侧**数据库连接**处找到外网地址，小本本记下来
 
- - 设置白名单，将云服务器实例的**公网IP**加入白名单
+- 设置白名单，将云服务器实例的**公网IP**加入白名单
 
- - 有任何不明白的请访问: [云数据库RDS官方文档](https://help.aliyun.com/product/26090.html)
+- 有任何不明白的请访问: [云数据库RDS官方文档](https://help.aliyun.com/product/26090.html)
 
 5. 云存储
 
- - 本项目用到了阿里云的对象存储OSS，链接: [对象存储OSS](https://www.aliyun.com/product/oss)
+- 本项目用到了阿里云的对象存储OSS，链接: [对象存储OSS](https://www.aliyun.com/product/oss)
 
- - 开通后登录[控制台](https://oss.console.aliyun.com)，创建一个Bucket，名为`super-interstellar-terminal`
+- 开通后登录[控制台](https://oss.console.aliyun.com)，创建一个Bucket，名为`super-interstellar-terminal`
 
- - 登录[RAM控制台](https://ram.console.aliyun.com)，创建一个用户，访问方式选择**编程访问**，记住`AccessKey ID`和`AccessKey Secret`
+- 登录[RAM控制台](https://ram.console.aliyun.com)，创建一个用户，访问方式选择**编程访问**，记住`AccessKey ID`和`AccessKey Secret`
 
- - 有任何不明白的请访问: [云存储OSS官方文档](https://help.aliyun.com/product/31815.html)
+- 有任何不明白的请访问: [云存储OSS官方文档](https://help.aliyun.com/product/31815.html)
 
 6. 开启数据库server
 
@@ -640,6 +639,7 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
   $ cd ~/SuperInterstellarTerminal/
   $ python3 -m pip install -r requirements.txt
   $ nohup python3 app.py >/dev/null 2>&1 &
+  ```
 
 8. 设置环境变量
 
