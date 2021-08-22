@@ -1,11 +1,13 @@
 /**
+ * @type {Partial<import('@docusaurus/types').DocusaurusConfig>}
+ */
+
+/**
  * Support sidebar.ts in TypeScript
  */
 require('ts-node/register')
 
-const path = require('path')
-
-module.exports = {
+const config = {
   title: 'Wechaty',
   tagline: 'Conversational RPA SDK for Chatbot Makers',
   url: 'https://wechaty.js.org',
@@ -144,9 +146,34 @@ module.exports = {
         },
       },
     ],
+    [
+      "redocusaurus",
+      {
+        specs: [
+          {
+            routePath: "/openapi/",
+            specUrl: "https://cdn.jsdelivr.net/npm/wechaty-grpc/dist/generated/wechaty/puppet.swagger.json",
+          },
+          {
+            routePath: "/openapi@latest",
+            specUrl: "https://cdn.jsdelivr.net/npm/wechaty-grpc@latest/dist/generated/wechaty/puppet.swagger.json",
+          },
+          {
+            routePath: "/openapi@next",
+            specUrl: "https://cdn.jsdelivr.net/npm/wechaty-grpc@next/dist/generated/wechaty/puppet.swagger.json",
+          },
+        ],
+        theme: {
+          primaryColor: '#1890ff',
+          redocOptions: { hideDownloadButton: false },
+        },
+      },
+    ],
   ],
   plugins: [
     '@ionic-internal/docusaurus-plugin-tag-manager',
     require.resolve('./src/plugins/qrcode'),
   ],
 }
+
+module.exports = config

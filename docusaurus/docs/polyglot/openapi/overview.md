@@ -20,6 +20,19 @@ make install
 make bot
 ```
 
+## References
+
+You can find [Wechaty OpenAPI Specification Docs](/openapi) from our website:
+
+1. <https://wechaty.js.org/openapi> for the latest version
+1. <https://wechaty.js.org/openapi@next> for the next version
+
+### Powered by
+
+1. [Redocaurus](https://rohit.page/blog/projects/openapi-for-docusaurus/): OpenAPI for Docusaurus v2 with Redoc ([facebook/docusaurus#638](https://github.com/facebook/docusaurus/issues/638#issuecomment-762502498))
+1. [Redoc](https://github.com/Redocly/redoc): 📘 OpenAPI/Swagger-generated API Reference Documentation
+OpenAPI/Swagger-generated API Reference Documentation
+
 ## Blogs
 
 Read blogs with the `openapi` tag at <https://wechaty.js.org/tags.html#openapi>
