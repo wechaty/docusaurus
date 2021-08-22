@@ -7,7 +7,7 @@ tags:
   - wechaty
   - study
   - introduction
-image: /assets/2021/08-super-interstellar-terminal/ppt.jpg
+image: /assets/2021/08-super-interstellar-terminal/title.jpg
 ---
 
 基于**微信聊天的 结合增强现实技术（AR）+LBS(暂时基于图像）** 的**星际漂流瓶** 的轻社交游戏。重新认识你身边的世界，或许我们早已与外星生命共同生活着。
