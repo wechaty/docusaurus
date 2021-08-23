@@ -7,8 +7,6 @@ tags:
 image: /assets/2016/jaslin-case-study.jpg
 ---
 
-Author: @[JasLin](https://github.com/jaslin/), BotWave CTO, Wechaty Contributor
-
 ## Usercase of using wechat robot with Wechaty
 
 ![Case Study][jaslin-case]
@@ -42,6 +40,8 @@ lucky, after that, i found wechaty, it's what i need exactly :). i rewrite the c
 thanks for wechaty!
 
 Jas, 3/12/2016
+
+> Author: @[JasLin](https://github.com/jaslin/), BotWave CTO, Wechaty Contributor
 
 [jaslin-case]: /assets/2016/jaslin-case-study.jpg
 [jaslin-record]: /assets/2016/jaslin-use-case-record.jpg
