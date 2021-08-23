@@ -8,9 +8,6 @@ tags:
 image: /assets/2020/wechaty-daily/daily.png
 ---
 
-> 作者: [zzhoouxin](https://github.com/zzhoouxin/)
-> Code: [Github](https://github.com/zzhoouxin/wechaty-bot)
-
 [![Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![Wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
@@ -256,3 +253,6 @@ async function collectUserContent() {
 ## 总结
 
 相信很多公司都有发送日报的要求,以上代码实现也是依赖了自己所需业务场景进行实现。通过 wechaty 改变了我们传统的工作流程。大大的提高了工作效率。避免很多重复行为。当然还有更多好玩有趣的功能区可以加入。希望自己可以和团队进行沟通，提高我们流程。大家可以参考以上流程。
+
+> 作者: [zzhoouxin](https://github.com/zzhoouxin/)
+> Code: [Github](https://github.com/zzhoouxin/wechaty-bot)

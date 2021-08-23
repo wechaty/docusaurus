@@ -5,11 +5,10 @@ categories: tutorial
 tags:
   - code
 ---
-> 作者: [Su Chang](https://github.com/su-chang)，Node.js全栈工程师
 
-总结 wechaty 的基础用法；
-介绍 wechaty 与 puppet 及 padpro 模块之间的关系、数据流向、事件监听机制等；
-详细介绍合作开发的本地环境配置。
+1. 总结 wechaty 的基础用法；
+1. 介绍 wechaty 与 puppet 及 padpro 模块之间的关系、数据流向、事件监听机制等；
+1. 详细介绍合作开发的本地环境配置。
 
 ## 简介
 
@@ -422,3 +421,4 @@ ts-node index.ts
 ```
 
 > **若出现错误提示**，请在模块 wechaty 及 wechaty-puppet-padpro 中重新执行 `npm link` 操作。
+> 作者: [Su Chang](https://github.com/su-chang)，Node.js全栈工程师
