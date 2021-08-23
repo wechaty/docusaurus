@@ -270,7 +270,6 @@ const professional = {
  const examples = {
   label: 'Examples',
   items: [
-    'examples/overview',
     subMenu(basic),
     subMenu(advanced),
     subMenu(professional),
@@ -344,6 +343,7 @@ const explainations = {
     'explainations/lifecycle',
     'explainations/alternatives',
     'explainations/glossary',
+    'explainations/testing',
     'explainations/faq',
     'explainations/troubleshooting',
     subMenu(docusaurus),
