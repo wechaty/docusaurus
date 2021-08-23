@@ -319,7 +319,7 @@ const deploycontainer: SubMenuData = {
   label: 'Deploy with containers',
   items: [
     'howto/heroku',
-    'howto/howto_docker',
+    'howto/docker',
   ],
 }
 
