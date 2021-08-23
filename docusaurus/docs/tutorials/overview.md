@@ -39,7 +39,6 @@ For better understanding we have classified the bots under three categories taki
 
 ### Basic
 
-
 - [World's Shortest Chatbot](examples/basic/the-worlds-shortest-chatbot-code-in-6-lines.mdx): The very first wechaty example showcasing how easy it is to get started
 - [Starter Bot](examples/basic/starter-bot.mdx): Most basic bot built using wechaty which can be used as a template for creating advanced bots.
 - [Ding Dong bot](examples/basic/ding-dong-bot.md): Practical example demonstrating how to do message handling
