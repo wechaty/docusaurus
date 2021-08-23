@@ -9,16 +9,9 @@ tags:
 image: /assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.jpg
 ---
 
-> 作者: [Tom](https://github.com/quantumFlame)
-代码: [MetaPuppetForPython](https://github.com/quantumFlame/MetaPuppetForPython)
-首发于博客: [用Python写Wechaty程序](https://wechaty.github.io/meta-puppet-for-python/)
-文本协议: CC BY-NC-SA 3.0 CN
+一个支持Wechaty调用的Python框架
 
 [![MetaPuppetForPython](/assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.jpg)](https://github.com/quantumFlame/MetaPuppetForPython)  
-
-<!-- more -->
-
-简介：一个支持Wechaty调用的Python框架
 
 特征：
 
@@ -573,3 +566,8 @@ python example/hello_word.py
 * Compile your management tasks as `async_foo()` and call with `run_coroutine_in_new_thread()`.
 
 * If you don't like async, you can also run the sync version functions in new thread (see more details in `example/hello_world.py`).
+
+> 作者: [Tom](https://github.com/quantumFlame)
+代码: [MetaPuppetForPython](https://github.com/quantumFlame/MetaPuppetForPython)
+首发于博客: [用Python写Wechaty程序](https://wechaty.github.io/meta-puppet-for-python/)
+文本协议: CC BY-NC-SA 3.0 CN

@@ -9,11 +9,6 @@ tags:
 image: /assets/2020/go-wechaty/2020-06-29-go-wechaty.png
 ---
 
-> Author: [@dchaofei](https://github.com/dchaofei) The author of go-wechaty
-> Code: [@go-wechaty](https://github.com/wechaty/go-wechaty)
-
-## go-wechaty
-
 go-wechaty 是 wechaty 多语言版本中的 golang 语言实现,目的是方便 go 语言开发者更容易的去使用 wechaty。
 
 ## 目前状态
@@ -129,3 +124,6 @@ func (c *ContactFactory) Load(id string) _interface.IContact {
 ## 最后
 
 期待更多的小伙伴加入 go-wechaty，一起优化 go-wechaty。
+
+> Author: [@dchaofei](https://github.com/dchaofei) The author of go-wechaty
+> Code: [@go-wechaty](https://github.com/wechaty/go-wechaty)

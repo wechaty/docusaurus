@@ -59,6 +59,7 @@ const puppetProviders: SubMenuData = {
     'puppet-providers/lark',
     'puppet-providers/padlocal',
     'puppet-providers/wechat4u',
+    'puppet-providers/xp',
     'puppet-providers/service',
     'puppet-providers/mock',
     'puppet-providers/diy',
@@ -211,6 +212,8 @@ const introduction = {
   items: [
     'overview',
     'wechaty',
+    'getting-started-with-wechaty',
+    'main-concepts-in-wechaty',
     subMenu(showcases),
     subMenu(caseStudy),
     subMenu(community),
@@ -230,6 +233,7 @@ const introduction = {
  const basic = {
   label: 'Basic',
   items: [
+    'examples/basic/starter-bot',
     'examples/basic/the-worlds-shortest-chatbot-code-in-6-lines',
     'examples/basic/ding-dong-bot',
     'examples/basic/contact-bot',
@@ -265,7 +269,6 @@ const professional = {
  const examples = {
   label: 'Examples',
   items: [
-    'examples/overview',
     subMenu(basic),
     subMenu(advanced),
     subMenu(professional),
@@ -340,6 +343,7 @@ const explainations = {
     'explainations/lifecycle',
     'explainations/alternatives',
     'explainations/glossary',
+    'explainations/testing',
     'explainations/faq',
     'explainations/troubleshooting',
     subMenu(docusaurus),
