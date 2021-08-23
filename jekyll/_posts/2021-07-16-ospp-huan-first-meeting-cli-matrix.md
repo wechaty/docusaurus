@@ -51,7 +51,11 @@ tags:
 
 > [Meeting Notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.c7zo1ifjarho)
 
-## 关于开源软件供应链点亮计划：暑期2021
+## 关于 Wechaty 社区
+
+Wechaty 社区目前已经支持微信、Whatsapp、企业微信、飞书等常见流行即时通讯工具，并且能够通过多语言 SDK （比如 Python Wechaty） 进行调用。
+
+## 关于暑期2021
 
 开源软件供应链点亮计划-暑期2021（以下简称 暑期2021）是由 中国科学院软件研究所 与 openEuler 社区 共同举办的一项面向高校学生的暑期活动，旨在鼓励在校学生积极参与开源软件的开发维护，促进优秀开源软件社区的蓬勃发展。该活动将联合各大开源社区，针对重要开源软件的开发与维护提供项目，并向全球高校学生开放报名。
 
@@ -59,7 +63,3 @@ tags:
 
 - 官网：<https://summer.iscas.ac.cn/>
 - Wechaty OSPP'21: <https://wechaty.js.org/docs/ospp/2021>
-
-## 关于 Wechaty 社区
-
-Wechaty 社区目前已经支持微信、Whatsapp、企业微信、飞书等常见流行即时通讯工具，并且能够通过多语言 SDK （比如 Python Wechaty） 进行调用。

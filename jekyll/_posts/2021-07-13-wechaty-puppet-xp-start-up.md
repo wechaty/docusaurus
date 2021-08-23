@@ -8,10 +8,6 @@ tags:
   - xp
 ---
 
-> 作者: [atorber](https://github.com/atorber/)，酷爱编码的的产品经理
-
-<!--more-->
-
 7月13日，周二，我们组织了一个小范围的 Wechaty Contributor 线下聚会。
 
 之前预告的[《喜讯：使用Windows微信桌面版协议登录，wechaty免费版协议即将登场》](https://wechaty.js.org/2021/07/05/puppet-laozhang-wechat-bot/)主角诗人老张飞临北京，期待已久的聚会终能成行。
@@ -32,18 +28,18 @@ tags:
 
     ![rare-book.jpeg](/assets/2021/07-wechaty-puppet-xp-start-up/athob-fx113.webp)
 
-这里也预告一下，第一个版本的wechaty-puppet-xp将于近期发布，让大家尽快体验。
+这里也预告一下，第一个版本的wechaty-puppet-xp将于近期发布，让大家尽快能够体验。
 
-同时也请感兴趣的开发者关注和加入[wechaty-puppet-xp](https://github.com/wechaty/wechaty-puppet-xp)项目。
+同时也欢迎感兴趣的开发者关注和加入[wechaty-puppet-xp](https://github.com/wechaty/wechaty-puppet-xp)项目。
 
 与会者介绍:
 
-[@huan](https://github.com/huan), [Huan LI](https://wechaty.js.org/contributors/huan), Tencent TVP of Chatbot, \<zixia@zixia.net\>
+[@huan](https://github.com/huan), [Huan LI](https://wechaty.js.org/contributors/huan), Creator of Wechaty, Tencent TVP of Chatbot
 
 [@lijiarui](https://github.com/lijiarui): Full stack developer, serial entrepreneur, Founder & CEO of JuziBot
 
 [@gaoyuan](https://github.com/windmemory): Founder & CTO of JuziBot
 
-[@cixingguangming55555](https://github.com/cixingguangming55555): Wechaty Padlocal xp
+[@cixingguangming55555](https://github.com/cixingguangming55555): Wechaty puppet xp
 
 [@atorber](https://github.com/atorber): Groupmaster Wechat Miniprogram
