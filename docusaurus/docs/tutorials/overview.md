@@ -49,7 +49,7 @@ For better understanding we have classified the bots under three categories taki
 - [Demo in tutorial](examples/advanced/demo-in-tutorial.md): The demo bot from tutorial
 - [Busy bot](examples/advanced/busy-bot.mdx): Auto response `busy` message for you when you are busy
 - [Media file bot](examples/advanced/media-file-bot.md): Save media attachment in message to local files
-- [Room bot](examples/advanced/room-bot.md): Practical examples illustrating how to do room handling
+- [Room bot](examples/advanced/room-bot.mdx): Practical examples illustrating how to do room handling
 - [Friend bot](examples/advanced/friend-bot.md): Practical example illustrating how to do friend handling
 - [Gist bot](examples/advanced/gist-bot.md): Best template for bigger modules, with each handler in separated files
 
