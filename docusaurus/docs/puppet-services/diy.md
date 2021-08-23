@@ -215,7 +215,51 @@ set WECHATY_LOG="verbose"
 </TabItem>
 </Tabs>
 
-### 6. Start your Wechaty Token Gate Server
+### 6. Config SSL for Wechaty Puppet Service (optional)
+
+From [Wechaty version 0.67](https://github.com/wechaty/wechaty/issues/2231), the Puppet Service will enable SSL by default. (See [wechaty/wechaty-puppet-service#160](https://github.com/wechaty/wechaty-puppet-service/issues/160))
+
+You can enable/disable the SSL by setting environment variables to fullfil your needs.
+
+For example, if you need to provide a Wechaty Puppet Service token without SSL support, then you can set `WECHATY_PUPPET_SERVICE_NO_SSL_UNSAFE_CLIENT=true` to disable SSL.
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```sh
+# set to "true" to disable SSL (not recommanded)
+export WECHATY_PUPPET_SERVICE_NO_SSL_UNSAFE_CLIENT="false"
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```sh
+# set to "true" to disable SSL (not recommanded)
+export WECHATY_PUPPET_SERVICE_NO_SSL_UNSAFE_CLIENT="false"
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```sh
+# set to "true" to disable SSL (not recommanded)
+set WECHATY_PUPPET_SERVICE_NO_SSL_UNSAFE_CLIENT="false"
+```
+
+</TabItem>
+</Tabs>
+
+### 7. Start your Wechaty Token Gate Server
 
 After finish config all the above settings, start the token gate server with the following docker command:
 
@@ -228,6 +272,7 @@ docker run -ti \
   -e WECHATY_LOG \
   -e WECHATY_PUPPET \
   -e WECHATY_PUPPET_SERVER_PORT \
+  -e WECHATY_PUPPET_SERVICE_NO_SSL_UNSAFE_CLIENT \
   -e WECHATY_TOKEN \
   wechaty/wechaty
 ```
@@ -243,7 +288,7 @@ If you want to remove the `--privileged`, you need to add:
 
 :::
 
-### 7. Check your TOKEN service
+### 8. Check your TOKEN service
 
 :::note wait for token gateway getting full started
 
@@ -293,6 +338,33 @@ echo HTTP/$(curl -s -o /dev/null -w '%{http_code}' https://api.chatie.io/v0/host
 1. Fail: `HTTP/404` means the TOKEN is not registered successfully.
 
 If you get `HTTP/404`, then you need to check the previous steps and troubleshoot which part has problems. If you find anything need to be reported, please feel free to submit an issue at [here](https://github.com/wechaty/puppet-services/issues)
+
+#### Using `wechaty-token` CLI
+
+You can use `wechaty-token` CLI command to check the TOKEN status.
+
+```sh
+$ npm install --global wechaty-token
++ wechaty-token@0.4.3
+updated 1 package in 2.654s
+
+$ wechaty-token --help
+wechaty-token <subcommand>
+> Wechaty utility for discovering and generating tokens
+
+where <subcommand> can be one of:
+
+- generate - Generate a new Wechaty Token
+- discover - Wechaty TOKEN Service Discovery
+
+For more help, try running `wechaty-token <subcommand> --help`
+
+$ wechaty-token discover puppet_not_exist_token
+NotFound
+
+$ wechaty-token discover ${WECHATY_TOKEN}
+{ host: '1.2.3.4', port: 5678 }
+```
 
 Learn more about the TOKEN from [Wechaty Puppet Service TOKEN Specification](specs/token.md).
 
