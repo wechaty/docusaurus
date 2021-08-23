@@ -8,9 +8,6 @@ tags:
 image: /assets/2020/nio-bot/bio-photo.jpg
 ---
 
-> 作者: [Leons828](https://github.com/Leons828) web developer
-> Code: [Github](https://github.com/Leons828/nio-bot)
-
 ## 需求
 
 一个车主群成员过多, 为有效识别成员, 需要成员以固定格式修改群昵称. 若每个人都需要管理员依次进行提醒并检查, 将会产生大量的重复性工作.
@@ -110,3 +107,6 @@ function generateAdvice () {
 ## 实际效果
 
 ![Welcome](/assets/2020/nio-bot/welcome.jpeg)
+
+> 作者: [Leons828](https://github.com/Leons828) web developer
+> Code: [Github](https://github.com/Leons828/nio-bot)
