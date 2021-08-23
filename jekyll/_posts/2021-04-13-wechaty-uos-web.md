@@ -116,7 +116,7 @@ client-version' = '2.0.0',
 
 ## 快速体验
 
-如果想快速体验Wechay的完整功能，以及可视化配置功能，可以关注我的 [《微信每日说》](https://github.com/gengchen528/wechatBot)  和  [《智能微秘书》](https://github.com/gengchen528/wechat-assistant-pro) 项目，以上项目均已更新最新版web协议，全部支持web登录。
+如果想快速体验Wechaty的完整功能，以及可视化配置功能，可以关注我的 [《微信每日说》](https://github.com/gengchen528/wechatBot)  和  [《智能微秘书》](https://github.com/gengchen528/wechat-assistant-pro) 项目，以上项目均已更新最新版web协议，全部支持web登录。
 
 > 历史文章
 
