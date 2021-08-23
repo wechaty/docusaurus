@@ -22,10 +22,10 @@ make bot
 
 ## References
 
-You can find [Wechaty OpenAPI Specification Docs](/openapi) from our website:
+You can find [Wechaty OpenAPI Specification Docs](/docs/openapi) from our website:
 
-1. <https://wechaty.js.org/openapi> for the latest version
-1. <https://wechaty.js.org/openapi@next> for the next version
+1. <https://wechaty.js.org/docs/openapi> for the latest version
+1. <https://wechaty.js.org/docs/openapi@next> for the next version
 
 ### Powered by
 
