@@ -76,7 +76,7 @@ image: /assets/2021/08-super-interstellar-terminal/title.jpg
 
 - **欢迎小伙伴推荐地点及地点图片或直接加入本项目，可以先star或Fork跟踪更新进度**
 
-  github地址：[https://github.com/kevinfu1717/SuperInterstellarTerminal](https://github.com/kevinfu1717/SuperInterstellarTerminal)
+  github地址：<https://github.com/kevinfu1717/SuperInterstellarTerminal>
 
 - **扫码加群，按群公告操作即可体验**      ![qrCode](/assets/2021/08-super-interstellar-terminal/qrCode.jpg)
 
@@ -88,7 +88,7 @@ image: /assets/2021/08-super-interstellar-terminal/title.jpg
 
 - **同时，他们也带来了外星的低等生物及外星植物，通过超科技把他们隐藏起来，装扮成地球物种或我们完全看不到。**
 
-![bg](/assets/2021/08-super-interstellar-terminal/bg.gif)
+  ![bg](/assets/2021/08-super-interstellar-terminal/bg.gif)
 
 ## C. 项目中的技术功能介绍
 
@@ -116,27 +116,27 @@ image: /assets/2021/08-super-interstellar-terminal/title.jpg
 
 - 模型文件：见项目中 Train压缩包下 `generator0725.params`
 
- - 搜索了一下GAN的模型，结合可训练性与生成效果，选择了LSGAN。基于项目aistudio上“独楼望天涯”大佬的项目 [https://aistudio.baidu.com/aistudio/projectdetail/1936908]进行修改。
+- 搜索了一下GAN的模型，结合可训练性与生成效果，选择了LSGAN。基于项目aistudio上“独楼望天涯”大佬的项目 <https://aistudio.baidu.com/aistudio/projectdetail/1936908>进行修改。
 
 - 在其基础上，每个epoch执行更多的Generation，以及修改了超参数（ 偶尔判别器loss高时，会有些完全不像的图）。
 
 - 训练过程：**Epoch 0 ~ Epoch 999** 的LOSS及效果见下面动图：
 
- ![loss](/assets/2021/08-super-interstellar-terminal/loss.gif)
+  ![loss](/assets/2021/08-super-interstellar-terminal/loss.gif)
 
 - **具体训练项目地址见：**
 
-[Paddle2.0-通过LSGAN让我们看看AI预测的外星人长什么样子](https://aistudio.baidu.com/aistudio/projectdetail/2210138)
+  [Paddle2.0-通过LSGAN让我们看看AI预测的外星人长什么样子](https://aistudio.baidu.com/aistudio/projectdetail/2210138)
 
 - 不足：
 
-1. 大概在200epochs就已经差不多，再训练到1000epochs反而效果还下降了。loss方面，判别器可以达到0.02，但生成器只能到0.8。这方面还可以优化
+  1. 大概在200epochs就已经差不多，再训练到1000epochs反而效果还下降了。loss方面，判别器可以达到0.02，但生成器只能到0.8。这方面还可以优化
 
-2. 最终会有不少彩色的杂点
+  2. 最终会有不少彩色的杂点
 
-3. 生成的外星生物矢量图有些还保留训练图的方格背景之类的。
+  3. 生成的外星生物矢量图有些还保留训练图的方格背景之类的。
 
-4. 生成的外星生物可能有部分过拟合，为有些很向原来的。
+  4. 生成的外星生物可能有部分过拟合，为有些很向原来的。
 
 #### d. 后处理
 
@@ -160,20 +160,20 @@ PaddleSeg训练了一个在cityscapes数据集上SOTA的模型。却很低调，
 
 - 目录结构（单独使用本模块，只需修改`CityscapesModule.py`中的 im_path ）：
 
-```bash
+  ```bash
   .
   ├── CityscapesModule.py
   └── PetModel
       ├── modelCityscape.pdparams
       ├── pretrainedCityscape.pdparams
       └──mscale_ocr_cityscapes_autolabel_mapillary_ms_val.yml
-```
+  ```
 
-`pretrainedCityscape.pdparams`下载地址：[https://bj.bcebos.com/paddleseg/dygraph/cityscapes/ocrnet_hrnetw48_mapillary/pretrained.pdparams](https://bj.bcebos.com/paddleseg/dygraph/cityscapes/ocrnet_hrnetw48_mapillary/pretrained.pdparams)
+- `pretrainedCityscape.pdparams`下载地址：<https://bj.bcebos.com/paddleseg/dygraph/cityscapes/ocrnet_hrnetw48_mapillary/pretrained.pdparams>
 
-`modelCityscape.pdparams`下载地址：[https://bj.bcebos.com/paddleseg/dygraph/cityscapes/mscale_ocr_hrnetw48_cityscapes_autolabel_mapillary/model.pdparams](https://bj.bcebos.com/paddleseg/dygraph/cityscapes/mscale_ocr_hrnetw48_cityscapes_autolabel_mapillary/model.pdparams)
+- `modelCityscape.pdparams`下载地址：<https://bj.bcebos.com/paddleseg/dygraph/cityscapes/mscale_ocr_hrnetw48_cityscapes_autolabel_mapillary/model.pdparams>
 
-`mscale_ocr_cityscapes_autolabel_mapillary_ms_val.yml` 为PaddleSeg模型的yml文件
+- `mscale_ocr_cityscapes_autolabel_mapillary_ms_val.yml` 为PaddleSeg模型的yml文件
 
 #### c. 功能/作用
 
@@ -191,7 +191,7 @@ PaddleSeg训练了一个在cityscapes数据集上SOTA的模型。却很低调，
 
 - `CityscapesModule.py`中把`pred ×10`后保存成图片，见右下图（图片像素的灰度值从0~180）。
 
-![cityscapes](/assets/2021/08-super-interstellar-terminal/cityscapes.jpg)
+  ![cityscapes](/assets/2021/08-super-interstellar-terminal/cityscapes.jpg)
 
 ### C.3 寻找隐藏在环境中的外星生物（外星宠物）——alienPetModule.py
 
@@ -247,12 +247,12 @@ cv2.seamlessClone(src, dst, src_mask, center, cv2.MONOCHROME_TRANSFER)
 
 ##### d.2 结合mask的优化版seamlesClone图像合成效果——代码见alienPetModule.py中的maskOfWhiteBG()，roiAreaCheck()
 
- 步骤 | 步骤 | 说明 | 备注 |
- -------- | -------- | -------- |-------- |
- 1    |  把src的外星生物图转成HSV格式，<br>通过V通道，V大于200得到二值化的mask| HSV的V分量可以当作是亮度，在本次LSGAN生成的外星人中<br>基本都是白色底的，可以抠处白色底     | |
- 2    |二值化的图进行开运算|<div style="width: 150pt">去除LSGAN中生成的一些彩色噪声点，得到外星生物的mask，宁愿漏也不要去多了。<br>因为合成时有个渐变，自然就把杂点淡化了 </div> |![binary](/assets/2021/08-super-interstellar-terminal/binary.jpg) |
- 3    |把2中的二值化图进行边缘裁切，<br>使mask图的四个边都有白色区域接触| 这可能是seamlessClone的一个bug，若白色区域不接触图像边缘，<br>**其合成时的位置是按白色区域的中心点位置，不是mask图像的中心点位置**，切记！  | |
- 4    | 根据裁切后的mask，重新计算中心点<br>左边center=(x,y)| seamlessClone的center参数是src的中心点在dst图中的位置 | |
+| 步骤 | 步骤 | 说明 | 备注 |
+| -------- | -------- | -------- |-------- |
+| 1    |  把src的外星生物图转成HSV格式，<br>通过V通道，V大于200得到二值化的mask| HSV的V分量可以当作是亮度，在本次LSGAN生成的外星人中<br>基本都是白色底的，可以抠处白色底     | |
+| 2    |二值化的图进行开运算|<div style="width: 150pt">去除LSGAN中生成的一些彩色噪声点，得到外星生物的mask，宁愿漏也不要去多了。<br>因为合成时有个渐变，自然就把杂点淡化了 </div> |![binary](/assets/2021/08-super-interstellar-terminal/binary.jpg) |
+| 3    |把2中的二值化图进行边缘裁切，<br>使mask图的四个边都有白色区域接触| 这可能是seamlessClone的一个bug，若白色区域不接触图像边缘，<br>**其合成时的位置是按白色区域的中心点位置，不是mask图像的中心点位置**，切记！  | |
+| 4    | 根据裁切后的mask，重新计算中心点<br>左边center=(x,y)| seamlessClone的center参数是src的中心点在dst图中的位置 | |
 
 ##### d.3 结合cityScapes分割的AR定位——代码见alienPetModule.py中的erode2LeftTop（），leftTop2Center()
 
@@ -281,7 +281,7 @@ cv2.seamlessClone(src, dst, src_mask, center, cv2.MONOCHROME_TRANSFER)
 
 Paddlehub landmark模型
 
-landmark的68个人脸关键点模型具体介绍请见官方介绍：[https://gitee.com/PaddlePaddle/PaddleHub/tree/release/v2.1/modules/image/keypoint](https://gitee.com/PaddlePaddle/PaddleHub/tree/release/v2.1/modules/image/keypoint_detection/face_landmark_localization)
+landmark的68个人脸关键点模型具体介绍请见官方介绍：<https://gitee.com/PaddlePaddle/PaddleHub/tree/release/v2.1/modules/image/keypoint>
 
 #### b. 作用
 
@@ -369,13 +369,13 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：[https://g
 
 - 我们使用CV的方法进行处理时，通常不会再RGB颜色空间处理，而是转到HLS/HSV 也有 YUV颜色空间进行处理。这样作的好处是 其中的H 通道在一定程度上可以表示其颜色。通过这样来选择特定的颜色，S代表饱和度，V代表亮度。而YUV中 Y是亮度，U,V分别是 蓝 红 通道。
 
-- YUV具体介绍可见：[https://zhuanlan.zhihu.com/p/95952096](https://zhuanlan.zhihu.com/p/95952096)
+- YUV具体介绍可见：<https://zhuanlan.zhihu.com/p/95952096>
 
 ##### d.2 YUV颜色融合
 
 - 我们也可以通过Y通道融合亮度，保留外星的U,V通道，即保留其颜色。当两个图片融合时，通过调节融合的Y通道的权重，控制合成出来的颜色亮度。
 
-```python
+  ```python
   # 把图片style，content转到yuv空间
   yuv = cv2.cvtColor(np.float32(style), cv2.COLOR_BGR2YUV)
   y, u, v = cv2.split(yuv)
@@ -389,7 +389,7 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：[https://g
   # 两张图进行合成
   content = np.dstack((hy, u, v))
   content = cv2.cvtColor(np.float32(content), cv2.COLOR_YUV2BGR)
-```
+  ```
 
 ### C.6 寻找被外星人隐藏起来的外星建筑——sandModule.py
 
@@ -418,8 +418,8 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
 
 - 初始化函数定义各个模型文件夹及图片素材的位置
 
-```python
-    imgGenerator = ImgGenerator(
+  ```python
+  imgGenerator = ImgGenerator(
       debug=False,
       ymlPathSeg='PetModel/mscale_ocr_cityscapes_autolabel_mapillary_ms_val.yml',    #cityscapes分割模型的yml
       modelPathSeg='PetModel/modelCityscape.pdparams',    #cityscapes分割模型文件
@@ -428,33 +428,33 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
       picPathPet='PetPic/',    #外星生物素材
       picPathVeg='VegPic'    #外星植物及外星建筑素材
   )
-```
+  ```
 
 - 调用函数生成
 
   输入是图片路径：
 
-```python
-    rc, img, des = imgGenerator.run(
+  ```python
+  rc, img, des = imgGenerator.run(
       dstPath,
       alienHeadIndex=0,
       vegetateIndex=0,
       environmentIndex=0,
       alienPetIndex=0
   )
-```
+  ```
 
   输入直接是图片：
 
-```python
-    rc, img, des = imgGenerator.runImg(
+  ```python
+  rc, img, des = imgGenerator.runImg(
       img,
       alienHeadIndex=0,
       vegetateIndex=0,
       environmentIndex=0,
       alienPetIndex=0
   )
-```
+  ```
 
 - 参数说明
 
@@ -480,7 +480,7 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
 
 - 接口代码见：项目中的`app.py`脚本
 
-- 接口文档说明见showdoc：[https://www.showdoc.com.cn/1525661816374166/7370335053618085](https://www.showdoc.com.cn/1525661816374166/7370335053618085)
+- 接口文档说明见showdoc：<https://www.showdoc.com.cn/1525661816374166/7370335053618085>
 
 - 并发问题：flask接口默认允许并发，即可能很短时间内或同一时间调用里面的函数的，但鉴于我们的运算都是GPU的，不支持并发调用。所以，使用了gevent来设置阻塞的服务。即会一个处理完再调用处理下一个，中间还没处理的会等待。
 
@@ -500,7 +500,7 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
 
 - EXIF的详细介绍可见，这里不详细叙述了:
 
-  [http://www.360doc.com/content/18/0303/07/7793103_733844932.shtml](http://www.360doc.com/content/18/0303/07/7793103_733844932.shtml)
+  <http://www.360doc.com/content/18/0303/07/7793103_733844932.shtml>
 
 #### c. 获取经纬度——exifModule.py
 
@@ -524,7 +524,7 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
   | 2    | 新建应用     | 按默认点确定即可     |
   | 3    | 复制那个应用的key进行调用     | 调用代码见`geoModule.py`，请使用自己的gaode_key测试 |
 
-- 详细图文描述可见：[https://zhuanlan.zhihu.com/p/371682461](https://zhuanlan.zhihu.com/p/371682461)
+- 详细图文描述可见：<https://zhuanlan.zhihu.com/p/371682461>
 
 ## D. 上手及部署指南
 
@@ -548,15 +548,15 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
 
 - 简化后的PadlleSeg的cityscapes的SOTA模型（`CityscapesModule.py`需要）
 
-  AI Studio数据页：[https://aistudio.baidu.com/aistudio/datasetdetail/102892](https://aistudio.baidu.com/aistudio/datasetdetail/102892)
+  AI Studio数据页：<https://aistudio.baidu.com/aistudio/datasetdetail/102892>
 
 - 流沙效果/沙画效果模型（`sandModule.py`需要）
 
-  AI Studio数据页：[https://aistudio.baidu.com/aistudio/datasetdetail/102698](https://aistudio.baidu.com/aistudio/datasetdetail/102698)
+  AI Studio数据页：<https://aistudio.baidu.com/aistudio/datasetdetail/102698>
 
 - PaddleSeg（`CityscapesModule.py`需要）
 
-  AI Studio数据页：[https://aistudio.baidu.com/aistudio/datasetdetail/102136](https://aistudio.baidu.com/aistudio/datasetdetail/102136)
+  AI Studio数据页：<https://aistudio.baidu.com/aistudio/datasetdetail/102136>
 
   或直接去GitHub：`git clone https://github.com/PaddlePaddle/PaddleSeg`
 
@@ -564,7 +564,7 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
 
 - 生成外星人矢量图模型（非必需，若要自己新增生成外星生物才需要）
 
-  AI Studio数据页：[https://aistudio.baidu.com/aistudio/datasetdetail/103316](https://aistudio.baidu.com/aistudio/datasetdetail/103316)
+  AI Studio数据页：<https://aistudio.baidu.com/aistudio/datasetdetail/103316>
 
 ### D.4 部署过程
 
@@ -578,95 +578,95 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
 
 3. 云服务器
 
-- 本项目用到了阿里云的云服务器ECS，链接: [云服务器ECS](https://www.aliyun.com/product/ecs)
+   - 本项目用到了阿里云的云服务器ECS，链接: [云服务器ECS](https://www.aliyun.com/product/ecs)
 
-- 购买实例后登录[控制台](https://ecs.console.aliyun.com)，实例名称和主机名可以自行更改，记住**公网IP**
+   - 购买实例后登录[控制台](https://ecs.console.aliyun.com)，实例名称和主机名可以自行更改，记住**公网IP**
 
-- 有任何不明白的请访问: [云服务器ECS官方文档](https://help.aliyun.com/product/25365.html)
+   - 有任何不明白的请访问: [云服务器ECS官方文档](https://help.aliyun.com/product/25365.html)
 
 4. 云数据库
 
-- 本项目用到了阿里云的云数据库RDS MySQL版，链接: [云数据库RDS MySQL版](https://www.aliyun.com/product/rds)
+   - 本项目用到了阿里云的云数据库RDS MySQL版，链接: [云数据库RDS MySQL版](https://www.aliyun.com/product/rds)
 
-- 购买实例后登录[控制台](https://rds.console.aliyun.com)，创建一个数据库，名为 `super-interstellar-terminal` .
+   - 购买实例后登录[控制台](https://rds.console.aliyun.com)，创建一个数据库，名为 `super-interstellar-terminal` .
 
-- 创建一个普通账号，授权数据库填写`super-interstellar-terminal`，权限为读写（DDL+DML），记住**用户名**和**密码**
+   - 创建一个普通账号，授权数据库填写`super-interstellar-terminal`，权限为读写（DDL+DML），记住**用户名**和**密码**
 
-- 在左侧**数据库连接**处找到外网地址，小本本记下来
+   - 在左侧**数据库连接**处找到外网地址，小本本记下来
 
-- 设置白名单，将云服务器实例的**公网IP**加入白名单
+   - 设置白名单，将云服务器实例的**公网IP**加入白名单
 
-- 有任何不明白的请访问: [云数据库RDS官方文档](https://help.aliyun.com/product/26090.html)
+   - 有任何不明白的请访问: [云数据库RDS官方文档](https://help.aliyun.com/product/26090.html)
 
 5. 云存储
 
-- 本项目用到了阿里云的对象存储OSS，链接: [对象存储OSS](https://www.aliyun.com/product/oss)
+   - 本项目用到了阿里云的对象存储OSS，链接: [对象存储OSS](https://www.aliyun.com/product/oss)
 
-- 开通后登录[控制台](https://oss.console.aliyun.com)，创建一个Bucket，名为`super-interstellar-terminal`.
+   - 开通后登录[控制台](https://oss.console.aliyun.com)，创建一个Bucket，名为`super-interstellar-terminal`.
 
-- 登录[RAM控制台](https://ram.console.aliyun.com)，创建一个用户，访问方式选择**编程访问**，记住`AccessKey ID`和`AccessKey Secret`.
+   - 登录[RAM控制台](https://ram.console.aliyun.com)，创建一个用户，访问方式选择**编程访问**，记住`AccessKey ID`和`AccessKey Secret`.
 
-- 有任何不明白的请访问: [云存储OSS官方文档](https://help.aliyun.com/product/31815.html)
+   - 有任何不明白的请访问: [云存储OSS官方文档](https://help.aliyun.com/product/31815.html)
 
 6. 开启数据库server
 
-```bash
-  # 以任何一种你喜欢❤的方式远程登陆到阿里云的云服务器
-  
-  # 克隆本代码仓库
-  $ cd ~/
-  $ git clone https://github.com/kevinfu1717/SuperInterstellarTerminal.git
-  
-  # 安装MySQL客户端
-  $ sudo apt install mysql-client-core-8.0
-  
-  # 开启数据库server
-    cd ~/SuperInterstellarTerminal/bot/
-    python3 -m pip install -r requirements.txt
-    nohup python3 server/database.py >/dev/null 2>&1 &
-```
+   ```bash
+   # 以任何一种你喜欢❤的方式远程登陆到阿里云的云服务器
+
+   # 克隆本代码仓库
+   cd ~/
+   git clone https://github.com/kevinfu1717/SuperInterstellarTerminal.git
+
+   # 安装MySQL客户端
+   sudo apt install mysql-client-core-8.0
+
+   # 开启数据库server
+   cd ~/SuperInterstellarTerminal/bot/
+   python3 -m pip install -r requirements.txt
+   nohup python3 server/database.py >/dev/null 2>&1 &
+   ```
 
 7. 开启图像处理server
 
-```bash
-  # 远程登陆到一台很牛逼的服务器（不是阿里云的云服务器）
-  
-  # 克隆本代码仓库
-    cd ~/
-    git clone https://github.com/kevinfu1717/SuperInterstellarTerminal.git
-  
-  # 开启图像处理server
-    cd ~/SuperInterstellarTerminal/
-    python3 -m pip install -r requirements.txt
-    nohup python3 app.py >/dev/null 2>&1 &
-```
+   ```bash
+   # 远程登陆到一台很牛逼的服务器（不是阿里云的云服务器）
+
+   # 克隆本代码仓库
+   cd ~/
+   git clone https://github.com/kevinfu1717/SuperInterstellarTerminal.git
+
+   # 开启图像处理server
+   cd ~/SuperInterstellarTerminal/
+   python3 -m pip install -r requirements.txt
+   nohup python3 app.py >/dev/null 2>&1 &
+   ```
 
 8. 设置环境变量
 
    `OSS_ENDPOINT`的设置可参考: [访问域名（Endpoint）](https://help.aliyun.com/document_detail/31837.html?spm=a2c4g.11186623.6.611.554e6d13isyAAt)
 
-```bash
-    export WECHATY_PUPPET="wechaty-puppet-service"
-    export WECHATY_PUPPET_SERVICE_TOKEN="<your wechaty token>"    # wechaty的token
-    export DB_USER="<your database user name>"    # 云数据库账号的用户名
-    export DB_PASSWORD="<your database password>"    # 云数据库账号的密码
-    export DB_DATABASE="<your database name>"    # 云数据库的数据库名，填写为super-interstellar-terminal
-    export DB_SERVER_HOST="<your database server host>"    # 开启数据库server的服务器地址，一般是云服务器的公网IP
-    export ACCESS_KEY_ID="<your AccessKey ID>"    # RAM用户的AccessKey ID
-    export ACCESS_KEY_SECRET="<your AccessKey Secret>"    # RAM用户的AccessKey Secret
-    export OSS_BUCKET_NAME="<your oss bucket name>"    # 云存储的Bucket，填写为super-interstellar-terminal
-    export OSS_ENDPOINT="<your oss endpoint>"    # 云存储的访问域名
-    export IMG_SERVER_HOST="<your img server host>"    # 开启图像处理server的服务器地址
-    export DEVELOPERS="<your developer cipher>"    # 给予开发者特权的暗号
-```
+   ```bash
+   export WECHATY_PUPPET="wechaty-puppet-service"
+   export WECHATY_PUPPET_SERVICE_TOKEN="<your wechaty token>"    # wechaty的token
+   export DB_USER="<your database user name>"    # 云数据库账号的用户名
+   export DB_PASSWORD="<your database password>"    # 云数据库账号的密码
+   export DB_DATABASE="<your database name>"    # 云数据库的数据库名，填写为super-interstellar-terminal
+   export DB_SERVER_HOST="<your database server host>"    # 开启数据库server的服务器地址，一般是云服务器的公网IP
+   export ACCESS_KEY_ID="<your AccessKey ID>"    # RAM用户的AccessKey ID
+   export ACCESS_KEY_SECRET="<your AccessKey Secret>"    # RAM用户的AccessKey Secret
+   export OSS_BUCKET_NAME="<your oss bucket name>"    # 云存储的Bucket，填写为super-interstellar-terminal
+   export OSS_ENDPOINT="<your oss endpoint>"    # 云存储的访问域名
+   export IMG_SERVER_HOST="<your img server host>"    # 开启图像处理server的服务器地址
+   export DEVELOPERS="<your developer cipher>"    # 给予开发者特权的暗号
+   ```
 
 9. 运行bot
 
-```bash
-    cd ~/super-interstellar-terminal/bot/
-    python3 -m pip install -r requirements.txt
-    nohup python3 bot.py &
-```
+   ```bash
+   cd ~/super-interstellar-terminal/bot/
+   python3 -m pip install -r requirements.txt
+   nohup python3 bot.py &
+   ```
 
 ## E. 总结
 
