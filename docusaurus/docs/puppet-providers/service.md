@@ -25,6 +25,8 @@ Learn more about all puppet services provided by the Wechaty Community in [puppe
 
 ## Usage
 
+Run ```wechaty-puppet-service```.
+
 :::tip TOKEN required
 
 Wechaty Puppet Service need a token for authorization.
