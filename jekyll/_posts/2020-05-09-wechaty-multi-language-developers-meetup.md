@@ -12,8 +12,6 @@ tags:
 image: /assets/2020/05-wechaty-multi-language-developers-meetup/000.webp
 ---
 
-> 作者: [juzibot](https://github.com/juzibot/)
-
 ## 关于Wechaty
 
 Wechaty 帮助开发者实现一个让用户无感知的在IM平台与接入的机器人对话或交互。开发者在 IM 平台扫码接入，自由选择底层并设计应用层，最终实现智能对话。官网：<https://wechaty.js.org>

@@ -10,8 +10,6 @@ tags:
 image: /assets/2020/05-30-wechaty-plugin-system-launch/001.webp
 ---
 
-> 作者:[juzibot](https://github.com/juzibot)
-
 ## 如果你不了解Wechaty，一句话快速了解
 
 - Wechaty 是一个开源聊天机器人框架SDK，在Github上已有8000 Star的高度封装、高可用、多语言的聊天机器人框架。

@@ -11,10 +11,6 @@ tags:
 image: /assets/2020/12-osschat-a-bridge-to-the-apache-way-in-china/homepage.webp
 ---
 
-> 作者: [juzibot](https://github.com/juzibot/)
-
-## 关于OSS.Chat
-
 OSSChat 是一个机器人工具，用于桥接 IM 应用（如微信）与 Apache 社区工具（如邮件列表、Jira），OSS.Chat项目的任务是将微信和其他社交平台（未来）以及GitHub出现的问题和邮件列表之间的三方沟通和翻译障碍发送给开源开发社区，使ASF的文化、技术和协作流程能够更高效、更容易被接受。
 
 我们于2020年12月13日，收到此评估申请。我们作为Apache Local Community北京成员，很高兴为中国本土开源项目进行Apache孵化器适配度评估。
@@ -23,7 +19,7 @@ OSSChat 是一个机器人工具，用于桥接 IM 应用（如微信）与 Apac
 特别是，归档和向社区提供公开信息是我们认为非常有意义的事情之一。
 通过OSS.Chat项目，我们希望进一步促进、传播甚至优化Apache项目社区的文化、技术和协作。
 
-### OSSChat会议
+## OSSChat会议
 
 {% include iframe.html src="https://youtu.be/KWS4V86heh0?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh" %}
 
@@ -81,3 +77,5 @@ Introducing OSS Bot: Sync GitHub Issues with WeChat Groups for Open-source Proje
 Dashboard：<https://oss.chat>
 GitHub:<https://github.com/kaiyuanshe/osschat>
 [开源社](https://kaiyuanshe.cn/), 由 CSDN、GitCafe、GNOME.Asia、微软开放技术公司、优麒麟社区联合创始，由国内外支持开源的企业、社区及个人，依“贡献、共识、共治”原则，所组织的开源联盟，旨在共创健康可持续发展的开源生态体系，并推动中国开源社区成为全球开源软件的积极参与及贡献者。
+
+> 作者: [juzibot](https://github.com/juzibot/)
