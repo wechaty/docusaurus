@@ -9,8 +9,6 @@ tags:
 image: /assets/2019/wechaty-pay-paypic.png
 ---
 
-> 作者: [Shawn](https://mugglepay.com)，全栈创业狗，致力于利用技术提升支付领域效率。
-
 ## Wechaty - 让线上没有难做的生意
 
 ### TLDR
@@ -102,3 +100,5 @@ function sendPayment (priceAmount, timestamp) {
 继续交流技术产品探讨可以添加👇微信。本文仅供技术产品交流参考，建议使用官方认证接口。请勿使用此项目做违反微信、支付宝规定或者其他违法事情！
 
 ![微信](/assets/2019/wechaty-pay-wechat.jpeg)
+
+> 作者: [Shawn](https://mugglepay.com)，全栈创业狗，致力于利用技术提升支付领域效率。
