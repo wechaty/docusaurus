@@ -1,6 +1,6 @@
 ---
 title: "We are Hosting Jiarui Li at Startup Grind Beijing"
-author: juzibot
+author: lijiarui
 categories: announcement
 tags:
   - release
@@ -11,7 +11,7 @@ tags:
 image: /assets/2021/04-open-source-wechaty/000.webp
 ---
 
-> 作者: [juzibot](https://github.com/juzibot/)
+> 作者: [juzibot](https://github.com/lijiarui/)
 
 ## See we are hosting Jiarui Li at Startup Grind Beijing
 
