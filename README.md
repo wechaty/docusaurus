@@ -159,6 +159,25 @@ At the same time, we also meet up offline all over the world. Here are some acti
 
 To get to know all our writers, see <https://github.com/wechaty/wechaty.js.org/graphs/contributors>
 
+## History
+
+### main v0.9 (Aug 23, 2021)
+
+1. Add OpenAPI Specification docs at <https://wechaty.js.org/openapi/> ([#1218](https://github.com/wechaty/wechaty.js.org/issues/1218))
+
+### v0.5 (Aug 12, 2020)
+
+1. Using docusaurus for docs
+1. Rename chatie to wechaty
+
+### v0.3 (Mar 9, 2017)
+
+Rename wechaty to chatie
+
+### v0.0.1 (Dec 4, 2016)
+
+Init version
+
 ## Maintainers
 
 1. [@lijiarui](https://github.com/lijiarui), [Rui LI](https://wechaty.js.org/contributors/lijiarui), Microsoft AI MVP, Founder & CEO of Juzi.BOT (YC W19 Alumni)
