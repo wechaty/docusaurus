@@ -3,8 +3,9 @@ title: "Open-source Wechaty in Python, Go, and Java"
 author: juzibot
 categories: announcement
 tags:
-  - summer-of-wechaty
-  - summer-2021
+  - go
+  - java
+  - python
   - talk
   - news
   - meetup
@@ -30,8 +31,6 @@ image: /assets/2020/04-open-source-wechaty-in-python-go-and-java/001.webp
 {% include iframe.html src="https://youtu.be/ZX_Pb9fRwS4?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh" %}
 
 ### Agendas议程
-
-- [0:08:00](https://www.youtube.com/watch?v=ZX_Pb9fRwS4&list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&index=8&t=480s)  Introduction & Warm-up 李卓桓，@huan
 
 - [0:08:15](https://www.youtube.com/watch?v=ZX_Pb9fRwS4&list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&index=8&t=495s) Just 0.1% of the Python Wechaty 吴京京，@wj-Mcat
 
