@@ -21,7 +21,7 @@ For example, you can cloudify the Wechaty Puppet Provider wechaty-puppet-padloca
 
 Wechaty Puppet Service Token Gateway is a gateway for converting the Wechaty Puppet Provider to a Wechaty Puppet Service. Read more about tokens and usage [here](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/).
 
-Learn about all puppet services provided by the Wechaty Community [here](puppet-services/overview.mdx).
+Learn more about all puppet services provided by the Wechaty Community in [puppet service overview](puppet-services/overview.mdx).
 
 ## Usage
 
