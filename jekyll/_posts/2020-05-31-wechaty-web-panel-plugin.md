@@ -11,10 +11,6 @@ tags:
 image: /assets/2020/web-panel-plugin/web-head.png
 ---
 
-> 作者: [Leo_chen](https://github.com/leochen-g/)，高级前端工程师，喜欢使用node做各种项目
-
-<!-- more -->
-
 ## 背景介绍
 
 对，又是那个写[《微信每日说》](https://github.com/gengchen528/wechatBot)的家伙来搞事情了。周末在参加了《Wechaty插件系统发布分享会》后，看到大家在群里讨有说到要是有一个可视化的面板插件就好了，
@@ -174,3 +170,5 @@ ode mybot.js
 ## 致谢
 
 感谢Wechaty团队提供这么好的一个工具，同时还开发出这么赞的插件系统。希望能够有更多的人参与进来，来继续扩大wechaty插件的生态圈
+
+> 作者: [Leo_chen](https://github.com/leochen-g/)，高级前端工程师，喜欢使用node做各种项目

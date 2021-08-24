@@ -1,7 +1,7 @@
 ---
 name: zlh
 site: https://github.com/mathsyouth
-avatar: /assets/contributors/zlh/avatar.png
+avatar: /assets/contributors/zlh/avatar.webp
 bio: I am Linghui. I love coding and open source.
 email: lh.zeng@hotmail.com
 twitter: 

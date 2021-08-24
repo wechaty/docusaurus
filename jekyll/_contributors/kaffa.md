@@ -1,7 +1,7 @@
 ---
 name: kaffa
 site: https://github.com/kaffa
-avatar: /assets/contributors/kaffa/avatar.png
+avatar: /assets/contributors/kaffa/avatar.webp
 bio: a life-long learner / a Psychology, Astrology, Ancient Egyptian culture lover, also a coffee mocha lover.
 email: 
 twitter: 
