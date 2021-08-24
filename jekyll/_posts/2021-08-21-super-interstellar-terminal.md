@@ -1,13 +1,13 @@
 ---
 title: "<x 世纪星际终端>基于 wechaty 的 AR+LBS 漂流瓶轻社交游戏"
-author: kevinFu
+author: kevinfu1717
 categories: article
 tags:
   - blog
-  - wechaty
-  - study
+  - AR
+  - game
   - introduction
-image: /assets/2021/08-super-interstellar-terminal/title.jpg
+image: /assets/2021/08-super-interstellar-terminal/title.webp
 ---
 
 基于**微信聊天的 结合增强现实技术（AR）+LBS(暂时基于图像）** 的**星际漂流瓶** 的轻社交游戏。重新认识你身边的世界，或许我们早已与外星生命共同生活着。
@@ -28,7 +28,7 @@ image: /assets/2021/08-super-interstellar-terminal/title.jpg
 | **6.PaddleHub的msgnet实现图像迁移**，基于深度学习生成类流沙或沙画效果 |请跳转到本页中的 C.6  | sandModule.py + msgnet文件夹|
 | **7.Wechaty漂流瓶游戏**，微信漂流瓶及通过开发者模式控制整个流程 |请跳转到本页中的D | bot文件夹|
 
-![4front](/assets/2021/08-super-interstellar-terminal/4front.jpg)
+![4front](/assets/2021/08-super-interstellar-terminal/4front.webp)
 
 ### A.2 太空漂流信息
 
@@ -78,7 +78,7 @@ image: /assets/2021/08-super-interstellar-terminal/title.jpg
 
   github地址：<https://github.com/kevinfu1717/SuperInterstellarTerminal>
 
-- **扫码加群，按群公告操作即可体验**      ![qr-code](/assets/2021/08-super-interstellar-terminal/qr-code.jpg)
+- **扫码加群，按群公告操作即可体验**      ![qr-code](/assets/2021/08-super-interstellar-terminal/qr-code.webp)
 
 ## B. 故事背景
 
@@ -98,13 +98,13 @@ image: /assets/2021/08-super-interstellar-terminal/title.jpg
 
 **先看一下AI预测的外星生物矢量图：**
 
-![pets](/assets/2021/08-super-interstellar-terminal/pets.jpg)
+![pets](/assets/2021/08-super-interstellar-terminal/pets.webp)
 
 #### a. 训练素材
 
 - 从百度爬取“外星人”的图片，但因为外星人搜出来的图太杂乱。所以改变思路，用关键词“外星人 矢量”来进行搜索爬取。搜出来的外星人图片相对没那么杂乱。勉强可以用来训练。勉强是有1/5左右是白底，有1/5左右是PS中那种透明图的格子底图或水印的，有1/5是背景各种颜色的图，还有1/5是多个外星元素组成的图。大概数据见下图：
 
-  ![pets2](/assets/2021/08-super-interstellar-terminal/pets2.jpg)
+  ![pets2](/assets/2021/08-super-interstellar-terminal/pets2.webp)
 
 #### b. 数据处理与增广
 
@@ -122,7 +122,7 @@ image: /assets/2021/08-super-interstellar-terminal/title.jpg
 
 - 训练过程：**Epoch 0 ~ Epoch 999** 的LOSS及效果见下面动图：
 
-  ![loss](/assets/2021/08-super-interstellar-terminal/loss.gif)
+  ![loss](/assets/2021/08-super-interstellar-terminal/loss.webp)
 
 - **具体训练项目地址见：**
 
@@ -146,7 +146,7 @@ image: /assets/2021/08-super-interstellar-terminal/title.jpg
 
 > **生物图鉴：AI生成的外星生物**
 
-![tujian](/assets/2021/08-super-interstellar-terminal/tujian.gif)
+![tujian](/assets/2021/08-super-interstellar-terminal/tujian.webp)
 
 ### C.2 识别现场环境——CityscapesModule.py
 
@@ -191,11 +191,11 @@ PaddleSeg训练了一个在cityscapes数据集上SOTA的模型。却很低调，
 
 - `CityscapesModule.py`中把`pred ×10`后保存成图片，见右下图（图片像素的灰度值从0~180）。
 
-  ![cityscapes](/assets/2021/08-super-interstellar-terminal/cityscapes.jpg)
+  ![cityscapes](/assets/2021/08-super-interstellar-terminal/cityscapes.webp)
 
 ### C.3 寻找隐藏在环境中的外星生物（外星宠物）——alienPetModule.py
 
-![pets3](/assets/2021/08-super-interstellar-terminal/pets3.gif)
+![pets3](/assets/2021/08-super-interstellar-terminal/pets3.webp)
 
 #### a. 准备
 
@@ -237,11 +237,11 @@ cv2.seamlessClone(src, dst, src_mask, center, cv2.MONOCHROME_TRANSFER)
 
 **简单背景：**
 
-![simple-clone](/assets/2021/08-super-interstellar-terminal/simple-clone.jpg)
+![simple-clone](/assets/2021/08-super-interstellar-terminal/simple-clone.webp)
 
 **复杂背景：**
 
-![complex-clone](/assets/2021/08-super-interstellar-terminal/complex-clone.jpg)
+![complex-clone](/assets/2021/08-super-interstellar-terminal/complex-clone.webp)
 
 效果好坏于背景图dst及前景图src都有关系
 
@@ -250,7 +250,7 @@ cv2.seamlessClone(src, dst, src_mask, center, cv2.MONOCHROME_TRANSFER)
 | 步骤 | 步骤 | 说明 | 备注 |
 | -------- | -------- | -------- |-------- |
 | 1    |  把src的外星生物图转成HSV格式，<br>通过V通道，V大于200得到二值化的mask| HSV的V分量可以当作是亮度，在本次LSGAN生成的外星人中<br>基本都是白色底的，可以抠处白色底     | |
-| 2    |二值化的图进行开运算|<div style="width: 150pt">去除LSGAN中生成的一些彩色噪声点，得到外星生物的mask，宁愿漏也不要去多了。<br>因为合成时有个渐变，自然就把杂点淡化了 </div> |![binary](/assets/2021/08-super-interstellar-terminal/binary.jpg) |
+| 2    |二值化的图进行开运算|<div style="width: 150pt">去除LSGAN中生成的一些彩色噪声点，得到外星生物的mask，宁愿漏也不要去多了。<br>因为合成时有个渐变，自然就把杂点淡化了 </div> |![binary](/assets/2021/08-super-interstellar-terminal/binary.webp) |
 | 3    |把2中的二值化图进行边缘裁切，<br>使mask图的四个边都有白色区域接触| 这可能是seamlessClone的一个bug，若白色区域不接触图像边缘，<br>**其合成时的位置是按白色区域的中心点位置，不是mask图像的中心点位置**，切记！  | |
 | 4    | 根据裁切后的mask，重新计算中心点<br>左边center=(x,y)| seamlessClone的center参数是src的中心点在dst图中的位置 | |
 
@@ -261,7 +261,7 @@ cv2.seamlessClone(src, dst, src_mask, center, cv2.MONOCHROME_TRANSFER)
 | 1    | 利用cityScapes返回的pred图中，获取画面中某个物品的mask| 利用`np.where(pred==areaIndex, 1, 0)`生成二值化mask |  <img width=300/>|
 | 2    | 根据用户图片dst的大小，及外星宠物的scaleRatio参数，调整外星<br>宠物图片的大小| 大小设置为dst图像长边scaleRatio，再有一个（0.8~1）倍的随机    |  |
 | 3    | 对二值化mask图4个边缘的值都设置0| 相当于mask图边缘多了一个黑色的框，方便待会腐蚀时，可以<br>从边缘也腐蚀。否则，贴着边缘值为1的点待会都不会倍腐蚀  | |
-| 4    | 以调整后的外星宠物图像的边长d，对二值化mask图像进行opencv的<br>腐蚀操作。腐蚀后，值为1的点则为可选的外星<br>宠物图像进行seamlessClone的center点| 腐蚀相当于我们的卷积，当该点腐蚀后仍为1，则证明其腐蚀前周围值<br>为1的点能组成一个d×d的形状 | ![corrosion](/assets/2021/08-super-interstellar-terminal/corrosion.jpg)|
+| 4    | 以调整后的外星宠物图像的边长d，对二值化mask图像进行opencv的<br>腐蚀操作。腐蚀后，值为1的点则为可选的外星<br>宠物图像进行seamlessClone的center点| 腐蚀相当于我们的卷积，当该点腐蚀后仍为1，则证明其腐蚀前周围值<br>为1的点能组成一个d×d的形状 | ![corrosion](/assets/2021/08-super-interstellar-terminal/corrosion.webp)|
 | 5    | 若腐蚀后，mask图都为0，则缩小腐蚀的kernel为原来的0.6，<br>再重复4的步骤| 步骤4完成后没能找到mask中为1的点则证明，没有足够位置完全把外星宠物<br>图像放进去，我们缩小要求，要求某区域只要有60%的外星宠物<br>的大小则继续融合进去 | |
 | 6    | 若4或5步骤后，mask中有值为1的点，则满足条件,可进行图像合成|  | |
 
@@ -273,7 +273,7 @@ cv2.seamlessClone(src, dst, src_mask, center, cv2.MONOCHROME_TRANSFER)
 
   【伪代码】 np.where(mask=天空的index, 已叠加飞船的图，原图）
 
-  ![sky](/assets/2021/08-super-interstellar-terminal/sky.jpg)
+  ![sky](/assets/2021/08-super-interstellar-terminal/sky.webp)
 
 ### C.4 外星人显形——alienHeadModule.py
 
@@ -295,7 +295,7 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：<https://g
 |   |        |  2 我们需要手动用labelme的keypoint为其标上68个关键点，大概就好，不用太精确。landmark数据按labelme格式保存到json中。     |
 |   |        |  3 配置外星人的人脸参数到`ConfigHead.py`中。   |
 
-![alien1](/assets/2021/08-super-interstellar-terminal/alien1.jpg)
+![alien1](/assets/2021/08-super-interstellar-terminal/alien1.webp)
 
 | 序号 | 步骤 | 操作|
 | -------- | -------- | -------- |
@@ -304,7 +304,7 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：<https://g
 | C   |  融合粘贴   |1. 截取外星人人脸，生成一个上到下的渐透明的遮罩图。用`cv2.seamlessCloned`的NORMAL_CLONE复制到原人脸位置，但因为seamlessClone没法调参数的，外星人形象融在背景里面，不太明显不清晰。   |
 |    |     |2. 截取外星人人脸及颈部及上半身，生成一个上到下的渐透明的遮罩图。用`cv2.addWeight`把外星人脸与1中所述的人脸进行透明度融合   |
 
-![alien2](/assets/2021/08-super-interstellar-terminal/alien2.jpg)
+![alien2](/assets/2021/08-super-interstellar-terminal/alien2.webp)
 
 #### d. 关键技术点
 
@@ -316,7 +316,7 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：<https://g
 
 使用从上到下的遮罩，可以有效渐变过度到身体。上到下的渐变mask生成见`CVTools.py`中的gradientMask()。只用上到下的渐变，是因为外星人头会比正常人头大，本身过渡要求不高，所以上，左，右方向的融合过渡，依靠seamlessClone则可较好处理。剩下 下 这个方向是连接颈部或身体的需要渐变遮罩过渡。（见下图）
 
-![alien3](/assets/2021/08-super-interstellar-terminal/alien1.jpg)
+![alien3](/assets/2021/08-super-interstellar-terminal/alien1.webp)
 
 ##### d.3 双重图片叠加融合
 
@@ -326,7 +326,7 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：<https://g
 
 - `cv2.seamlessClone`没有参数调节，使得整个外星人头的颜色都变了。见下图左。   双重图片叠加融合，效果见下图右。
 
-  ![alien5](/assets/2021/08-super-interstellar-terminal/alien5.jpg)
+  ![alien5](/assets/2021/08-super-interstellar-terminal/alien5.webp)
 
 - 双重图片叠加融合步骤：（具体代码为项目中：`alienHeadModule.py`)
 
@@ -340,13 +340,13 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：<https://g
 
 ### C.5 寻找生长在地球的外星植物——vegetateModule.py
 
-![vegetate1](/assets/2021/08-super-interstellar-terminal/vegetate1.jpg)
+![vegetate1](/assets/2021/08-super-interstellar-terminal/vegetate1.webp)
 
 #### a. 准备
 
 找一些外星植物的图片，实现非深度学习的基于**图像技术**的颜色纹理迁移。也可以是一些想要的风格的图，如下图中的任意一种
 
-![vegetate2](/assets/2021/08-super-interstellar-terminal/vegetate2.jpg)
+![vegetate2](/assets/2021/08-super-interstellar-terminal/vegetate2.webp)
 
 #### b. 作用
 
@@ -393,7 +393,7 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：<https://g
 
 ### C.6 寻找被外星人隐藏起来的外星建筑——sandModule.py
 
-![sand1](/assets/2021/08-super-interstellar-terminal/sand1.jpg)
+![sand1](/assets/2021/08-super-interstellar-terminal/sand1.webp)
 
 #### a. 准备
 
@@ -496,7 +496,7 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
 
 - 若用户满足上述2条件，则保存的照片里将含有exif信息。该EXIF信息，可在Windows中图片的属性中看到，GPS，拍照日期等信息：
 
-  ![location1](/assets/2021/08-super-interstellar-terminal/location1.jpg)
+  ![location1](/assets/2021/08-super-interstellar-terminal/location1.webp)
 
 - EXIF的详细介绍可见，这里不详细叙述了:
 
@@ -682,7 +682,7 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
 
 起码**普通伊布是不应该在水面出现的噢 @任天堂**。
 
-![last1](/assets/2021/08-super-interstellar-terminal/last1.jpg)
+![last1](/assets/2021/08-super-interstellar-terminal/last1.webp)
 
 看到这个项目，要不要也一起合作来把AI融到游戏里啊 @任天堂 （JUST JOKING. DON'T TAKE IT SERIOUSELY.)
 
