@@ -15,7 +15,7 @@ tags:
 
 - syncbot
 
-image: /assets/2021/07-wechaty-for-syncbot/background.webp
+image: /assets/2021/07-milvus-for-syncbot/background.webp
 
 ---
 
