@@ -78,7 +78,7 @@ image: /assets/2021/08-super-interstellar-terminal/title.jpg
 
   github地址：<https://github.com/kevinfu1717/SuperInterstellarTerminal>
 
-- **扫码加群，按群公告操作即可体验**      ![qrCode](/assets/2021/08-super-interstellar-terminal/qrCode.jpg)
+- **扫码加群，按群公告操作即可体验**      ![qr-code](/assets/2021/08-super-interstellar-terminal/qr-code.jpg)
 
 ## B. 故事背景
 
@@ -237,11 +237,11 @@ cv2.seamlessClone(src, dst, src_mask, center, cv2.MONOCHROME_TRANSFER)
 
 **简单背景：**
 
-![simpleClone](/assets/2021/08-super-interstellar-terminal/simpleClone.jpg)
+![simple-clone](/assets/2021/08-super-interstellar-terminal/simple-clone.jpg)
 
 **复杂背景：**
 
-![complexClone](/assets/2021/08-super-interstellar-terminal/complexClone.jpg)
+![complex-clone](/assets/2021/08-super-interstellar-terminal/complex-clone.jpg)
 
 效果好坏于背景图dst及前景图src都有关系
 
