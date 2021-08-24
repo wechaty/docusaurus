@@ -10,6 +10,6 @@ email: kevinsun17@126.com
 
 ## Contact me
 
-- Github: <https://github.com/kevinfu1717
+- Github: <https://github.com/kevinfu1717>
 - AI Studio: <https://aistudio.baidu.com/aistudio/personalcenter/thirdview/56902>
 - Email：<kevinsun17@126.com>
