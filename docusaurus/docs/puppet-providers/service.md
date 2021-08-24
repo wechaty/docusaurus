@@ -19,7 +19,7 @@ Wechaty Puppet Service is a Wechaty Puppet for providing/consuming gRPC Puppet A
 
 For example, you can cloudify the Wechaty Puppet Provider wechaty-puppet-padlocal to a Wechaty Puppet Service by running our Wechaty Puppet Service Token Gateway.
 
-Wechaty Puppet Service Token Gateway is a gateway for converting the Wechaty Puppet Provider to a Wechaty Puppet Service. Read more about tokens and usage [here](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/).
+Wechaty Puppet Service Token Gateway is a gateway for converting the Wechaty Puppet Provider to a Wechaty Puppet Service. Read more about tokens and usage in [Introducing Wechaty Puppet Service (Providers)](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/).
 
 Learn more about all puppet services provided by the Wechaty Community in [puppet service overview](puppet-services/overview.mdx).
 
