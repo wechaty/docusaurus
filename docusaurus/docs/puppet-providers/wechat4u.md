@@ -21,6 +21,8 @@ This is a full-featured Wechaty Puppet.
 
 ## Usage
 
+Run wechaty-puppet-wechat4u.
+
 <!-- MDX import -->
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
