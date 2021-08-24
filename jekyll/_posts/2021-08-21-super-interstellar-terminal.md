@@ -4,7 +4,7 @@ author: kevinfu1717
 categories: article
 tags:
   - blog
-  - AR
+  - ar
   - game
   - introduction
 image: /assets/2021/08-super-interstellar-terminal/title.webp
@@ -88,7 +88,7 @@ image: /assets/2021/08-super-interstellar-terminal/title.webp
 
 - **同时，他们也带来了外星的低等生物及外星植物，通过超科技把他们隐藏起来，装扮成地球物种或我们完全看不到。**
 
-  ![bg](/assets/2021/08-super-interstellar-terminal/bg.gif)
+  ![bg](/assets/2021/08-super-interstellar-terminal/bg.webp)
 
 ## C. 项目中的技术功能介绍
 
@@ -181,7 +181,7 @@ PaddleSeg训练了一个在cityscapes数据集上SOTA的模型。却很低调，
 
 (**PS:注意真实返回的ID是从0开始的，所以是trainId-1**，如sky实际返回的id是10 not 11）：
 
-![sheet](/assets/2021/08-super-interstellar-terminal/sheet.png)
+![sheet](/assets/2021/08-super-interstellar-terminal/sheet.webp)
 
 #### d. 使用
 
@@ -322,7 +322,7 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：<https://g
 
 - 只是使用seamlessClone融合，会因为seamlessClone算法影响，把贴上去的外星人图颜色变得较多，算法只为让其融合到附近环境。原图是这样的：
 
-  ![alien4](/assets/2021/08-super-interstellar-terminal/alien4.png)
+  ![alien4](/assets/2021/08-super-interstellar-terminal/alien4.webp)
 
 - `cv2.seamlessClone`没有参数调节，使得整个外星人头的颜色都变了。见下图左。   双重图片叠加融合，效果见下图右。
 
