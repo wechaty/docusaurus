@@ -15,8 +15,8 @@ sidebar_label: Mock
 
 ## Features
 
-1. Help to test Wechaty framework with a mock puppet
-1. Using as a starter template for write your own puppet provider
+1. Helps to test Wechaty framework with a mock puppet.
+2. Can be used as a starter template for writing your own puppet provider.
 
 ## Usage
 
@@ -83,7 +83,7 @@ wechaty.start()
 // The Mocker will start perform the SimpleEnvironment...
 ```
 
-See: [SimpleEnvironment](https://github.com/wechaty/wechaty-puppet-mock/blob/master/src/mock/environment.ts)
+See: [SimpleEnvironment](https://github.com/wechaty/wechaty-puppet-mock/blob/master/src/mock/environment.ts).
 
 ## API Reference
 
@@ -122,13 +122,30 @@ contact.say('World').to(user)
 
 You can read the unit testing script at: <https://github.com/wechaty/wechaty-vorpal-contrib/blob/master/src/contrib/math_master/math_master.spec.ts>
 
-## Roadmap
-
-- to be added
-
 ## History
 
-See: [Project README](https://github.com/wechaty/wechaty-puppet-mock#history)
+**Milestones for master branch:**
+
+### v0.25 (July 13, 2020)
+
+1. Rename MockXXX to XXXMock for keep the consistent naming style with PuppetMock.
+2. Export mock namespace and move all related modules under it.
+
+### v0.22 (June 4, 2020)
+
+Mocker Released. Mocker is a manager for controlling the behavior of the Puppet activities.
+
+1. Add MockContact, MockRoom, and MockMessage for Mockers
+2. Add MockEnvironment for mocking the server behaviors.
+3. Support Wechaty#Contact.find() from the mocker.createContacts().
+4. Support Wechaty#Room.find() from the mocker.createRooms().
+5. Support message event for talker, listener, and room of MockMessage.
+
+### v0.0.1 (Jun 27, 2018)
+
+Initial version.
+
+`PuppetMock` is a skelton Puppet without do anything, it will make testing easy when developing Wechaty.
 
 ## Maintainers
 
