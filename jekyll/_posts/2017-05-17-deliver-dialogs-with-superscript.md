@@ -7,8 +7,6 @@ tags:
   - news
 ---
 
-Author: [@hain](http://blog.chatbot.io/webcv/), Lead of [Rockq Community](https://github.com/rockq-org/node-party), [Wechaty Contributor](https://github.com/orgs/Chatie/teams/contributor)
-
 > Hailiang WANG is Lead of Rockq Community and also a software developer. He used to work in IBM China Innovation Center and IBM China Development Lab. Since last year, he has focused on deep learning technologies, NLP, chatbot and conversational UIs.
 
 现在时间是7点半，8点下班回家，在这半个小时，让我们来聊聊SuperScript 和 Wechaty 结合带来的巨大前景。
@@ -140,3 +138,5 @@ scripts/start-docker-compose.sh
 现在是8:03分了，bye. 下期再见！
 
 [Click here to get the repo](https://github.com/samurais/ss-wechaty)
+
+Author: [@hain](http://blog.chatbot.io/webcv/), Lead of [Rockq Community](https://github.com/rockq-org/node-party), [Wechaty Contributor](https://github.com/orgs/Chatie/teams/contributor)
