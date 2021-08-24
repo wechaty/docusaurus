@@ -8,12 +8,7 @@ tags:
   - healthcare
 ---
 
-> Author: [@zjacai](https://github.com/zjacai) enjoying ML&Wechaty at BUPT  
-代码: [nCoV2019](https://github.com/zjacai/nCoV2019)
-
-## 开始 ##
-
- 之前用pywx尝试玩过wxbot，我这种完全属于自嗨，但后来众所周知，web版被限制了，在github上瞎逛发现了wechaty这么个神奇玩意儿，真的太棒了。疫情播报的代码1月就已经在使用了，只可惜是py写的，这次借wechaty，改写成nodejs，也算是一次新语言的挑战。
+之前用pywx尝试玩过wxbot，我这种完全属于自嗨，但后来众所周知，web版被限制了，在github上瞎逛发现了wechaty这么个神奇玩意儿，真的太棒了。疫情播报的代码1月就已经在使用了，只可惜是py写的，这次借wechaty，改写成nodejs，也算是一次新语言的挑战。
 
 ## 环境 ##
 
@@ -57,3 +52,6 @@ centos安装docker还是挺简单的，一条命令即可：yum install -y docke
 很简单的一个例子，也没多少代码量，适合初学者，大佬轻喷。对于写代码，我就是一只弱鸡，python略懂，nodejs更是现学现卖。若代码执行有问题，欢迎沟通交流。
 
 有wechaty这个神器，其实可以做很多有趣好玩的事情，如自己关注的股票信息推送等。
+
+> Author: [@zjacai](https://github.com/zjacai) enjoying ML&Wechaty at BUPT  
+代码: [nCoV2019](https://github.com/zjacai/nCoV2019)
