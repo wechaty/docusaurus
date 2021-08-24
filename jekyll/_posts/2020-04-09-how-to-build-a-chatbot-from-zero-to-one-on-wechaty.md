@@ -4,7 +4,7 @@ author: lijiarui
 categories: announcement
 tags:
   - chatbot
-  - globalAI
+  - globalai
   - talk
   - news
   - meetup
