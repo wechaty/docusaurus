@@ -16,16 +16,6 @@
  image: /assets/2021/07-ospp-plan-wechaty-puppet-lark/wechaty-lark.webp
 ---
 
-“开源软件供应链点亮计划-暑期2021”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。活动联合各大开源社区，针对重要开源软件的开发与维护提供项目，并向全球高校学生开放报名。 学生可自主选择感兴趣的项目进行申请，并在中选后获得该软件资深维护者（社区导师）亲自指导的机会。 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2021”活动奖金和奖杯。
-
-官网：[https://summer.iscas.ac.cn](https://summer.iscas.ac.cn/)
-
-往期回顾：[https://wechaty.js.org/2020/07/20/wechaty-soc-kick-off-meeting](https://wechaty.js.org/2020/07/20/wechaty-soc-kick-off-meeting)
-
-本项目 [基于开放 API 封装 Wechaty 接口下的飞书聊天机器人] 系 暑期2021 支持的开源项目。
-
-<!--more-->
-
 ## [基于开放 API 封装 Wechaty 接口下的飞书聊天机器人]具体计划
 
 - 导师：范蕊
@@ -69,3 +59,13 @@
 
 > Author: [@remember00000](https://github.com/remember00000)
 > Code: [wechaty-puppet-lark](https://github.com/remember00000/wechaty-puppet-lark)
+
+## 关于暑期2021
+
+“开源软件供应链点亮计划-暑期2021”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。活动联合各大开源社区，针对重要开源软件的开发与维护提供项目，并向全球高校学生开放报名。 学生可自主选择感兴趣的项目进行申请，并在中选后获得该软件资深维护者（社区导师）亲自指导的机会。 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2021”活动奖金和奖杯。
+
+官网：[https://summer.iscas.ac.cn](https://summer.iscas.ac.cn/)
+
+往期回顾：[https://wechaty.js.org/2020/07/20/wechaty-soc-kick-off-meeting](https://wechaty.js.org/2020/07/20/wechaty-soc-kick-off-meeting)
+
+本项目 [基于开放 API 封装 Wechaty 接口下的飞书聊天机器人] 系 暑期2021 支持的开源项目。
