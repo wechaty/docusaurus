@@ -14,18 +14,6 @@ tags:
   - plan
 ---
 
-> Author:[@chinggg](https://github.com/chinggg)
-
-## 暑期2021
-
-「开源软件供应链点亮计划-暑期2021」（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动，旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
-根据项目的难易程度和完成情况，参与者还可获取「开源软件供应链点亮计划-暑期2021」活动奖金和奖杯。
-官网：[https://summer.iscas.ac.cn/](https://summer.iscas.ac.cn/)
-
-本项目 [基于 Blessed 的 Wechaty 命令行文本客户端软件] 系 暑期2021 支持的开源项目。
-
-## 项目介绍
-
 - 项目名称：基于 Blessed 的 Wechaty 命令行文本客户端软件
 - 导师：李卓桓
 - 学生：刘靖
@@ -37,7 +25,7 @@ tags:
   - [ ] 未读新消息数量展示与联系人智能排序
   - [ ] 私聊与群聊消息的发送
   - [ ] 细粒度的联系人、群和对话管理
-- 项目链接：[https://github.com/wechaty/summer-of-wechaty/issues/81](https://github.com/wechaty/summer-of-wechaty/issues/81)
+- 项目介绍：[https://github.com/wechaty/summer-of-wechaty/issues/80](https://github.com/wechaty/summer-of-wechaty/issues/81)
   
 ## 详细方案
 
@@ -80,3 +68,13 @@ tags:
 
 - 10月及以后
 继续维护并优化代码，实现新功能。
+
+> Author:[@chinggg](https://github.com/chinggg)
+
+## 关于暑期2021
+
+「开源软件供应链点亮计划-暑期2021」（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动，旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
+根据项目的难易程度和完成情况，参与者还可获取「开源软件供应链点亮计划-暑期2021」活动奖金和奖杯。
+官网：[https://summer.iscas.ac.cn/](https://summer.iscas.ac.cn/)
+
+本项目 [基于 Blessed 的 Wechaty 命令行文本客户端软件] 系 暑期2021 支持的开源项目。
