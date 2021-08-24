@@ -7,12 +7,6 @@ tags:
 image: /assets/2020/sqlite-wechat/2020-03-sqlite-wechat-assistant.jpeg
 ---
 
-> 作者: [moderncrazy](https://github.com/moderncrazy)，个人开发者。首发于博客: [使用 SQLite 和 pullword 实现简易的业务助手](https://wechaty.github.io/sqlite-wechat-assistant/) 遵循 CC BY-NC-SA 3.0 CN
-
-[![WechatAssistant](/assets/2020/sqlite-wechat/2020-03-sqlite-wechat-assistant.jpeg)](https://github.com/moderncrazy/wechat_assistant)
-
-<!-- more -->
-
 需求之初是，希望有一个机器人能够替我们完成各种机械式的操作，来提高我们的工作效率。
 
 业务背景是客户需要一个消息中心系统，对接多种第三方推送平台，内部系统通过我们发送通知，一边是三方平台一边是内部系统，两边的对接需要提供各种文档和脚本，还需要配合QA测试及查询发送状态，有时有3-4个群同时@我们，工作效率严重下降。
@@ -211,3 +205,7 @@ async queryStatus(bot, message, msgData) {
 ## 感谢
 
 在最后我们要感谢所有为我们提供工具和服务的团队和个人。特别感谢开源项目[Wechaty](https://github.com/wechaty/wechaty)团队和免费提供服务的[Pullword](http://api.pullword.com/)团队。
+
+> 作者: [moderncrazy](https://github.com/moderncrazy)，个人开发者。首发于博客: [使用 SQLite 和 pullword 实现简易的业务助手](https://wechaty.github.io/sqlite-wechat-assistant/) 遵循 CC BY-NC-SA 3.0 CN
+
+[![WechatAssistant](/assets/2020/sqlite-wechat/2020-03-sqlite-wechat-assistant.jpeg)](https://github.com/moderncrazy/wechat_assistant)

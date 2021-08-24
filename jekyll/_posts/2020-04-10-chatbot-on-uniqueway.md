@@ -7,9 +7,6 @@ tags:
 image: /assets/2020/chatbot-on-uniqueway/teaser.jpg
 ---
 
-> 作者: [李恺](https://github.com/tlikai)，无二之旅研发总监、资深后端工程师。
-<!-- more -->
-
 ## 一、定制旅游介绍
 
 * 按需定制行程，不用自己做旅游攻略
@@ -80,3 +77,5 @@ image: /assets/2020/chatbot-on-uniqueway/teaser.jpg
 
 ![减少客户差评和赔付](/assets/2020/chatbot-on-uniqueway/slide-13.jpg)
 ![减少客户差评和赔付](/assets/2020/chatbot-on-uniqueway/slide-14.jpg)
+
+> 作者: [李恺](https://github.com/tlikai)，无二之旅研发总监、资深后端工程师。
