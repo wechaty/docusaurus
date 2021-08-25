@@ -8,5 +8,4 @@ email: sunyuqian1997@163.com
 
 ## Contact me
 
-- Github: https://github.com/chelys-cheng
-
+- Github: <https://github.com/chelys-cheng>
