@@ -8,8 +8,6 @@ tags:
 image: /assets/2016/ruirui-dance.jpg
 ---
 
-作者：@[lijiarui](https://github.com/lijiarui), Entrepreneur, [Wechaty Author](https://github.com/orgs/wechaty/teams/pmc)
-
 我一直和我的小伙伴在业余时间拍摄舞蹈教学视频，叫“舞哩”，原创了几百个视频，近千万的播放，所以就建了微信群来和粉丝交流。
 
 ![RuiRui][ruirui-dance-image]
