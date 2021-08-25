@@ -297,6 +297,7 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：<https://g
 ![alien1](/assets/2021/08-super-interstellar-terminal/alien1.webp)
 
 ##### c.2. 对齐
+
 - 对用户发来的图片，利用PaddleHub的landmark模型获取图片中的人脸特征点。
 
 - 正脸使用正脸的外星人照片的，侧脸用侧脸的预处理照片。若角度太偏则不进行处理。然后，使用landmark中脸颊的特征点求中点进行人脸图像位置上的对齐。并根据用户图片的人脸对外星人人脸进行大小调整
@@ -333,15 +334,15 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：<https://g
 
 - 双重图片叠加融合步骤：（具体代码为项目中：`alienHeadModule.py`)
 
-   - 1. 生成head的渐变mask。使用d2所述的方法生成头部的渐变遮罩。
+  - 1. 生成head的渐变mask。使用d2所述的方法生成头部的渐变遮罩。
 
-   - 2. hard paste head。使用直接粘贴替换的方式，把外星人的head粘贴到用户的图的适当位置。
+  - 2. hard paste head。使用直接粘贴替换的方式，把外星人的head粘贴到用户的图的适当位置。
 
-   - 3. 生成Body的渐变mask。把外星人头及颈部或身体上半部 对齐head的位置，使用d2所述的方法生成mask。
+  - 3. 生成Body的渐变mask。把外星人头及颈部或身体上半部 对齐head的位置，使用d2所述的方法生成mask。
 
-   - 4. seamlessClone Body。使用3所述的mask图，把外星人身体上半部seamlessClone到用户的图中，需要保证粘贴后头的位置是跟步骤2一样的。
+  - 4. seamlessClone Body。使用3所述的mask图，把外星人身体上半部seamlessClone到用户的图中，需要保证粘贴后头的位置是跟步骤2一样的。
 
-   - 5. 合成。使用`cv2.addWeight`实现透明度叠加步骤2与步骤4的图。 `cv2.addWeighted(src1, alpha, src2, beta, gamma)`，根据不同外星人的皮肤深浅调节alpha，beta。最终效果见上图。
+  - 5. 合成。使用`cv2.addWeight`实现透明度叠加步骤2与步骤4的图。 `cv2.addWeighted(src1, alpha, src2, beta, gamma)`，根据不同外星人的皮肤深浅调节alpha，beta。最终效果见上图。
 
 ### C.5 寻找生长在地球的外星植物——vegetateModule.py
 
