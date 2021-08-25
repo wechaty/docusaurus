@@ -20,13 +20,13 @@ image: /assets/2021/08-super-interstellar-terminal/title.webp
 
 | 简要 | 具体描述 | 项目中的代码及模型 |
 | -------- | -------- | -------- |
-| **1.基于 LSGAN 的外星生物生成**，利用爬虫与 GAN 生成我们想要的东西的过程 | 请跳转到本页中的 C.1 | Train.zip |
-| **2.快速调用PaddleSeg的cityscapes模型**，进行18类常见物体的分割 |请跳转到本页中的 C.2 | CityscapesModule.py +PetModel文件夹|
-| **3.OpenCV的seamlessClone实现图像融合**，呈现各种AR效果,遮挡关系等 |请跳转到本页中的 C.3  | alienPetModule.py|
-| **4.外星人换脸**，外星人脸与地球人脸融合效果的优化 |请跳转到本页中的 C.4  | alienHeadModule.py|
-| **5.YUV颜色空间实现颜色图案迁移**，基于CV技术生成外星植物|请跳转到本页中的 C.5  | vegetateModule.py|
-| **6.PaddleHub的msgnet实现图像迁移**，基于深度学习生成类流沙或沙画效果 |请跳转到本页中的 C.6  | sandModule.py + msgnet文件夹|
-| **7.Wechaty漂流瓶游戏**，微信漂流瓶及通过开发者模式控制整个流程 |请跳转到本页中的D | bot文件夹|
+| **1.基于 LSGAN 的外星生物生成**，利用爬虫与 GAN 生成我们想要的东西的过程 |请跳转到本页中的 C.1 | Train.zip |
+| **2.快速调用PaddleSeg的cityscapes模型**，进行18类常见物体的分割          |请跳转到本页中的 C.2 | CityscapesModule.py +PetModel文件夹|
+| **3.OpenCV的seamlessClone实现图像融合**，呈现各种AR效果,遮挡关系等       |请跳转到本页中的 C.3 | alienPetModule.py|
+| **4.外星人换脸**，外星人脸与地球人脸融合效果的优化                       |请跳转到本页中的 C.4 | alienHeadModule.py|
+| **5.YUV颜色空间实现颜色图案迁移**，基于CV技术生成外星植物                |请跳转到本页中的 C.5 | vegetateModule.py|
+| **6.PaddleHub的msgnet实现图像迁移**，基于深度学习生成类流沙或沙画效果    |请跳转到本页中的 C.6 | sandModule.py + msgnet文件夹|
+| **7.Wechaty漂流瓶游戏**，微信漂流瓶及通过开发者模式控制整个流程          |请跳转到本页中的 D   | bot文件夹|
 
 ![4front](/assets/2021/08-super-interstellar-terminal/4front.webp)
 
@@ -50,29 +50,7 @@ image: /assets/2021/08-super-interstellar-terminal/title.webp
 
 ### A.4 体验视频：（建议全屏观看）
 
-<div style="
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <iframe
-    src='https://www.bilibili.com/video/BV1hL411E79M?p=1&share_source=copy_web'
-    allowfullscreen
-    webkitallowfullscreen
-    frameborder="0"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    "
-  >
-</iframe>
-
-</div>
+{% include iframe.html src="https://player.bilibili.com/player.html?bvid=BV1hL411E79M" %}
 
 - **欢迎小伙伴推荐地点及地点图片或直接加入本项目，可以先star或Fork跟踪更新进度**
 
@@ -211,12 +189,21 @@ PaddleSeg训练了一个在cityscapes数据集上SOTA的模型。却很低调，
 
 #### c. 步骤
 
-| 序号 | 步骤 | 操作|
-| -------- | -------- | -------- |
-| A   | 准备     | 基于LSGAN生成的外星生物矢量图。配置其参数，如：名字、大小、常出现的位置，习性描述、是否需要遮罩等|
-| A   | 选择     | 先判断alienIndex是0（随机生成），还是-1（不生成），或者是>0（生成id等于alienIndex的外星生物）。|
-| B  |   定位     |  基于分割模型得到的mask区域，按照外星生物可存在的位置判断是否出现外星生物，及其出现位置。具体见关键技术点说明.|
-| C  |   合成     |  根据外星生物的特性使用`cv2.seamleClone`，参数选用`MIXED_CLONE`或`NORMAL_CLONE`。具体见关键技术点说明.|
+##### c.1. 准备
+
+基于LSGAN生成的外星生物矢量图。配置其参数，如：名字、大小、常出现的位置，习性描述、是否需要遮罩等。
+
+##### c.2. 选择
+
+先判断alienIndex是0（随机生成），还是-1（不生成），或者是>0（生成id等于alienIndex的外星生物）。
+
+##### c.3. 定位
+
+基于分割模型得到的mask区域，按照外星生物可存在的位置判断是否出现外星生物，及其出现位置。具体见关键技术点说明。
+
+##### c.4. 合成
+
+根据外星生物的特性使用`cv2.seamleClone`，参数选用`MIXED_CLONE`或`NORMAL_CLONE`。具体见关键技术点说明。
 
 #### d. 关键技术点
 
@@ -247,23 +234,33 @@ cv2.seamlessClone(src, dst, src_mask, center, cv2.MONOCHROME_TRANSFER)
 
 ##### d.2 结合mask的优化版seamlesClone图像合成效果——代码见alienPetModule.py中的maskOfWhiteBG()，roiAreaCheck()
 
-| 步骤 | 步骤 | 说明 | 备注 |
-| -------- | -------- | -------- |-------- |
-| 1    |  把src的外星生物图转成HSV格式，<br>通过V通道，V大于200得到二值化的mask| HSV的V分量可以当作是亮度，在本次LSGAN生成的外星人中<br>基本都是白色底的，可以抠处白色底     | |
-| 2    |二值化的图进行开运算|<div style="width: 150pt">去除LSGAN中生成的一些彩色噪声点，得到外星生物的mask，宁愿漏也不要去多了。<br>因为合成时有个渐变，自然就把杂点淡化了 </div> |![binary](/assets/2021/08-super-interstellar-terminal/binary.webp) |
-| 3    |把2中的二值化图进行边缘裁切，<br>使mask图的四个边都有白色区域接触| 这可能是seamlessClone的一个bug，若白色区域不接触图像边缘，<br>**其合成时的位置是按白色区域的中心点位置，不是mask图像的中心点位置**，切记！  | |
-| 4    | 根据裁切后的mask，重新计算中心点<br>左边center=(x,y)| seamlessClone的center参数是src的中心点在dst图中的位置 | |
+- 1. 把src的外星生物图转成HSV格式，通过V通道，V大于200得到二值化的mask。HSV的V分量可以当作是亮度，在本次LSGAN生成的外星人中基本都是白色底的，可以抠处白色底
+
+- 2. 二值化的图进行开运算。去除LSGAN中生成的一些彩色噪声点，得到外星生物的mask，宁愿漏也不要去多了。因为合成时有个渐变，自然就把杂点淡化了。
+
+![binary](/assets/2021/08-super-interstellar-terminal/binary.webp)
+
+- 3. 把2中的二值化图进行边缘裁切，使mask图的四个边都有白色区域接触。这可能是seamlessClone的一个bug，若白色区域不接触图像边缘，**其合成时的位置是按白色区域的中心点位置，不是mask图像的中心点位置**，切记！
+
+- 4. 根据裁切后的mask，重新计算中心点左边center=(x,y)。seamlessClone的center参数是src的中心点在dst图中的位置。
 
 ##### d.3 结合cityScapes分割的AR定位——代码见alienPetModule.py中的erode2LeftTop（），leftTop2Center()
 
-| 序号 | 步骤 | 说明 | 备注 |
-| -------- | ----- | -------- |-------- |
-| 1    | 利用cityScapes返回的pred图中，获取画面中某个物品的mask| 利用`np.where(pred==areaIndex, 1, 0)`生成二值化mask |  <img width=300/>|
-| 2    | 根据用户图片dst的大小，及外星宠物的scaleRatio参数，调整外星<br>宠物图片的大小| 大小设置为dst图像长边scaleRatio，再有一个（0.8~1）倍的随机    |  |
-| 3    | 对二值化mask图4个边缘的值都设置0| 相当于mask图边缘多了一个黑色的框，方便待会腐蚀时，可以<br>从边缘也腐蚀。否则，贴着边缘值为1的点待会都不会倍腐蚀  | |
-| 4    | 以调整后的外星宠物图像的边长d，对二值化mask图像进行opencv的<br>腐蚀操作。腐蚀后，值为1的点则为可选的外星<br>宠物图像进行seamlessClone的center点| 腐蚀相当于我们的卷积，当该点腐蚀后仍为1，则证明其腐蚀前周围值<br>为1的点能组成一个d×d的形状 | ![corrosion](/assets/2021/08-super-interstellar-terminal/corrosion.webp)|
-| 5    | 若腐蚀后，mask图都为0，则缩小腐蚀的kernel为原来的0.6，<br>再重复4的步骤| 步骤4完成后没能找到mask中为1的点则证明，没有足够位置完全把外星宠物<br>图像放进去，我们缩小要求，要求某区域只要有60%的外星宠物<br>的大小则继续融合进去 | |
-| 6    | 若4或5步骤后，mask中有值为1的点，则满足条件,可进行图像合成|  | |
+- 1. 利用cityScapes返回的pred图中，获取画面中某个物品的mask。利用`np.where(pred==areaIndex, 1, 0)`生成二值化mask。
+
+<img width=300/>
+
+- 2. 根据用户图片dst的大小，及外星宠物的scaleRatio参数，调整外星宠物图片的大小。大小设置为dst图像长边scaleRatio，再有一个（0.8~1）倍的随机
+
+- 3. 对二值化mask图4个边缘的值都设置0。相当于mask图边缘多了一个黑色的框，方便待会腐蚀时，可以从边缘也腐蚀。否则，贴着边缘值为1的点待会都不会倍腐蚀
+
+- 4. 以调整后的外星宠物图像的边长d，对二值化mask图像进行opencv的腐蚀操作。腐蚀后，值为1的点则为可选的外星宠物图像进行seamlessClone的center点。腐蚀相当于我们的卷积，当该点腐蚀后仍为1，则证明其腐蚀前周围值为1的点能组成一个d×d的形状
+
+![corrosion](/assets/2021/08-super-interstellar-terminal/corrosion.webp)
+
+- 5. 若腐蚀后，mask图都为0，则缩小腐蚀的kernel为原来的0.6，再重复4的步骤。步骤4完成后没能找到mask中为1的点则证明，没有足够位置完全把外星宠物图像放进去，我们缩小要求，要求某区域只要有60%的外星宠物的大小则继续融合进去
+
+- 6. 若4或5步骤后，mask中有值为1的点，则满足条件,可进行图像合成
 
 ##### d.4 前后关系
 
@@ -289,20 +286,26 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：<https://g
 
 #### c. 步骤
 
-| 序号 | 步骤 | 操作|
-| -------- | -------- | -------- |
-| A   | 准备     | 1 找到一张外星人正面的照片与侧面的照片，扣出其形象保存图片。   |
-|   |        |  2 我们需要手动用labelme的keypoint为其标上68个关键点，大概就好，不用太精确。landmark数据按labelme格式保存到json中。     |
-|   |        |  3 配置外星人的人脸参数到`ConfigHead.py`中。   |
+##### c.1. 准备
+
+- 找到一张外星人正面的照片与侧面的照片，扣出其形象保存图片。
+
+- 我们需要手动用labelme的keypoint为其标上68个关键点，大概就好，不用太精确。landmark数据按labelme格式保存到json中。
+
+- 配置外星人的人脸参数到`ConfigHead.py`中。
 
 ![alien1](/assets/2021/08-super-interstellar-terminal/alien1.webp)
 
-| 序号 | 步骤 | 操作|
-| -------- | -------- | -------- |
-| B   | 对齐     | 1 对用户发来的图片，利用PaddleHub的landmark模型获取图片中的人脸特征点。   |
-|   |        |  2 正脸使用正脸的外星人照片的，侧脸用侧脸的预处理照片。若角度太偏则不进行处理。然后，使用landmark中脸颊的特征点求中点进行人脸图像位置上的对齐。并根据用户图片的人脸对外星人人脸进行大小调整     |
-| C   |  融合粘贴   |1. 截取外星人人脸，生成一个上到下的渐透明的遮罩图。用`cv2.seamlessCloned`的NORMAL_CLONE复制到原人脸位置，但因为seamlessClone没法调参数的，外星人形象融在背景里面，不太明显不清晰。   |
-|    |     |2. 截取外星人人脸及颈部及上半身，生成一个上到下的渐透明的遮罩图。用`cv2.addWeight`把外星人脸与1中所述的人脸进行透明度融合   |
+##### c.2. 对齐
+- 对用户发来的图片，利用PaddleHub的landmark模型获取图片中的人脸特征点。
+
+- 正脸使用正脸的外星人照片的，侧脸用侧脸的预处理照片。若角度太偏则不进行处理。然后，使用landmark中脸颊的特征点求中点进行人脸图像位置上的对齐。并根据用户图片的人脸对外星人人脸进行大小调整
+
+##### c.3. 融合粘贴
+
+- 截取外星人人脸，生成一个上到下的渐透明的遮罩图。用`cv2.seamlessCloned`的NORMAL_CLONE复制到原人脸位置，但因为seamlessClone没法调参数的，外星人形象融在背景里面，不太明显不清晰。
+
+- 截取外星人人脸及颈部及上半身，生成一个上到下的渐透明的遮罩图。用`cv2.addWeight`把外星人脸与1中所述的人脸进行透明度融合。
 
 ![alien2](/assets/2021/08-super-interstellar-terminal/alien2.webp)
 
@@ -330,13 +333,15 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：<https://g
 
 - 双重图片叠加融合步骤：（具体代码为项目中：`alienHeadModule.py`)
 
-  | 序号 | 步骤 | 操作|
-  | -------- | -------- | -------- |
-  |1   | 生成head的渐变mask   | 使用d2所述的方法生成头部的渐变遮罩）   |
-  |2   | hard paste head   | 使用直接粘贴替换的方式，把外星人的head粘贴到用户的图的适当位置   |
-  |3   |   生成Body的渐变mask    |  把外星人头及颈部或身体上半部 对齐head的位置，使用d2所述的方法生成mask |
-  |4   |   seamlessClone Body    |  使用3所述的mask图，把外星人身体上半部seamlessClone到用户的图中，需要保证粘贴后头的位置是跟步骤2一样的 |
-  |5   |   合成     | 使用`cv2.addWeight`实现透明度叠加步骤2与步骤4的图。 `cv2.addWeighted(src1, alpha, src2, beta, gamma)`，根据不同外星人的皮肤深浅调节alpha，beta。最终效果见上图中 |
+   - 1. 生成head的渐变mask。使用d2所述的方法生成头部的渐变遮罩。
+
+   - 2. hard paste head。使用直接粘贴替换的方式，把外星人的head粘贴到用户的图的适当位置。
+
+   - 3. 生成Body的渐变mask。把外星人头及颈部或身体上半部 对齐head的位置，使用d2所述的方法生成mask。
+
+   - 4. seamlessClone Body。使用3所述的mask图，把外星人身体上半部seamlessClone到用户的图中，需要保证粘贴后头的位置是跟步骤2一样的。
+
+   - 5. 合成。使用`cv2.addWeight`实现透明度叠加步骤2与步骤4的图。 `cv2.addWeighted(src1, alpha, src2, beta, gamma)`，根据不同外星人的皮肤深浅调节alpha，beta。最终效果见上图。
 
 ### C.5 寻找生长在地球的外星植物——vegetateModule.py
 
@@ -345,7 +350,6 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：<https://g
 #### a. 准备
 
 找一些外星植物的图片，实现非深度学习的基于**图像技术**的颜色纹理迁移。也可以是一些想要的风格的图，如下图中的任意一种
-
 ![vegetate2](/assets/2021/08-super-interstellar-terminal/vegetate2.webp)
 
 #### b. 作用
@@ -354,12 +358,21 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：<https://g
 
 #### c. 步骤
 
-| 序号 | 步骤 | 操作|
-| -------- | -------- | -------- |
-| A   | 准备     |  基于这些外星植物，在`ConfigVegetae.py`中配置其参数，如：名字、常出现的位置，习性描述等  |
-| A   | 选择     |  先判断vegetateIndex是0（随机生成），还是-1（不生成），或者是>0（生成id等于vegetateIndex是0的外星植物）。   |
-| B  |   定位     |   基于分割模型得到的mask区域，按照外星生物可存在的位置判断是否出现该外星植物，及其出现位置。    |
-| C  |   合成     |   根据外星植物的特性使用yuv颜色通道合成。具体见关键技术点说明.  |
+##### c.1. 准备
+
+基于这些外星植物，在`ConfigVegetae.py`中配置其参数，如：名字、常出现的位置，习性描述等
+
+##### c.2. 选择
+
+先判断vegetateIndex是0（随机生成），还是-1（不生成），或者是>0（生成id等于vegetateIndex是0的外星植物）。
+
+##### c.3. 定位
+
+基于分割模型得到的mask区域，按照外星生物可存在的位置判断是否出现该外星植物，及其出现位置。
+
+##### c.4. 合成
+
+根据外星植物的特性使用yuv颜色通道合成。具体见关键技术点说明。
 
 #### d. 关键技术点
 
@@ -405,10 +418,13 @@ landmark的68个人脸关键点模型具体介绍请见官方介绍：<https://g
 
 #### c. 步骤
 
-| 序号 | 步骤 | 操作|
-| -------- | -------- | -------- |
-| 1  |   定位     |   基于分割模型得到的mask区域，定位areaIndex==2,即building的区域。    |
-| 2  |   图像迁移     |  把建筑转成灰度图，然后用msgnet迁移成流沙的风格.  |
+##### c.1. 定位
+
+基于分割模型得到的mask区域，定位areaIndex==2,即building的区域。
+
+##### c.2. 图像迁移
+
+把建筑转成灰度图，然后用msgnet迁移成流沙的风格。
 
 ### C.7 使用ImgGenerateModule 建立Alien Server或直接调用
 
@@ -460,11 +476,11 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
 
   |参数名|必选|类型|说明|
   |:----    |:---|:----- |-----   |
-  |img/dstPath |是  |string |待处理图片或待处理图片的地址   |
-  |alienHeadIndex |否  |int | 是否进行换外星人头，-1为不处理，0为随机，>0为指定index为该值的外星人    |
-  |vegetateIndex     |否  |int | 是否添加外星植物，-1为不处理，0为随机，>0为指定index为该值的外星植物    |
-  |environmentIndex |否  |int | 是否生成外星建筑外墙，-1为不处理，>0为生成    |
-  |alienPetIndex     |否  |int | 是否进行添加外星生物，-1为不处理，0为随机，>0为指定index为该值的外星生物   |
+  |img/dstPath      |是  |string |待处理图片或待处理图片的地址   |
+  |alienHeadIndex   |否  |int    | 是否进行换外星人头，-1为不处理，0为随机，>0为指定index为该值的外星人    |
+  |vegetateIndex    |否  |int    | 是否添加外星植物，-1为不处理，0为随机，>0为指定index为该值的外星植物    |
+  |environmentIndex |否  |int    | 是否生成外星建筑外墙，-1为不处理，>0为生成    |
+  |alienPetIndex    |否  |int    | 是否进行添加外星生物，-1为不处理，0为随机，>0为指定index为该值的外星生物   |
 
 - 返回说明
 
@@ -520,8 +536,8 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
 
   | 序号 | 高德流程 | 备注|
   | -------- | -------- | -------- |
-  | 1    | 注册     | 需要支付宝扫码实名     |
-  | 2    | 新建应用     | 按默认点确定即可     |
+  | 1    | 注册                          | 需要支付宝扫码实名                                  |
+  | 2    | 新建应用                      | 按默认点确定即可                                    |
   | 3    | 复制那个应用的key进行调用     | 调用代码见`geoModule.py`，请使用自己的gaode_key测试 |
 
 - 详细图文描述可见：<https://zhuanlan.zhihu.com/p/371682461>
@@ -714,7 +730,6 @@ ImgGenerateModule可以单独使用或`app.py`也可单独建立flask的图像�
 
 ### E.4 致谢
 
-- 感谢比赛的相关人员
 - 感谢百度爸爸的算力及技术支持
 - 感谢Wechaty与Mixlabs
 - 感谢Reference中列到的所有作者
