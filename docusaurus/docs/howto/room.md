@@ -2,7 +2,7 @@
 title: 'Managing rooms'
 ---
 
-Managing room is one of the important features in WeChaty. The word "room" here refers to Wechat rooms (also called groups).
+Managing room is one of the important features in Wechaty. The word "room" here refers to Wechat rooms (also called groups).
 You can instruct the bot to create a new room, change the topic (or name) of the room, add a contact to a specific room, remove a contact from a room, and mention(@) someone in the room.
 
 :::tip
@@ -151,22 +151,22 @@ import {
 } from 'wechaty'
 
 //helper function
-async function putPersonIntoRoom(person: Contact, room: Room) {
+async function putInRoom(person: Contact, room: Room) {
   //Add a log
-  log.info("Bot", 'putPersonIntoRoom("%s", "%s")', contact.name(), await room.topic());
+  log.info("Bot", 'putInRoom("%s", "%s")', contact.name(), await room.topic());
 
   try {
     //Try put the person into the room
     await room.add(person);
   } catch (e) {
     //any error will be here
-    log.error("Bot", "putPersonIntoRoom() exception: " + e.stack);
+    log.error("Bot", "putInRoom() exception: " + e.stack);
   }
 }
 
 //in the main code
-//If the secrete code is ZhiMaKaiMen
-if (msg.text() === 'ZhiMaKaiMen') {
+//If the secrete code is ding
+if (msg.text() === 'ding') {
   //get the Person/Contact
   const from = msg.talker();
 
@@ -176,7 +176,7 @@ if (msg.text() === 'ZhiMaKaiMen') {
   const tagetRoomId = '12345678910@chatroom'
   const targetRoom = await bot.Room.find({id: tagetRoomId})
   //Option2: by group name
-  // const tagetRoomTopic =  'ceshiqun'
+  // const tagetRoomTopic =  'testGroup'
   // const targetRoom = await bot.Room.find({topic:tagetRoomTopic})
   if (targetRoom instanceof Room) {
     await putInRoom(from, targetRoom);
