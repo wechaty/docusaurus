@@ -30,7 +30,7 @@ Here in this section are some of the blogs related to Go-Wechaty.
 
 * [Go-Wechaty and web protocol to develop robots, @dchaofei, Apr 16, 2021](https://wechaty.js.org/2021/04/16/go-wechaty-use-web/)
 
-## History 
+## History
 
 Check out the links below for Beta releases of Go-Wechaty also for more information on the .
 
