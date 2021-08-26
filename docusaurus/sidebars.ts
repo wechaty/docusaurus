@@ -20,10 +20,7 @@ const showcases: SubMenuData = {
 
 const wechatyapi: SubMenuData = {
   label: 'wechaty-api',
-  items: [    
-    'api/wechaty/wechaty-api-overview',
-    'api/wechaty/classes',
-    'api/wechaty/typedefs',
+  items: [ 
     'api/wechaty/wechaty-start',
     'api/wechaty/wechaty-on',
     'api/wechaty/wechaty-logout',
