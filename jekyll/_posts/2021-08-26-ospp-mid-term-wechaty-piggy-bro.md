@@ -8,7 +8,8 @@ image: /assets/2021/08-ospp-mid-term-wechaty-piggy-bro/piggy-bro-logo.webp
 tags:
   - chat
   - summer-of-wechaty
-  - summer-2021
+  - summer-2021、
+  - ecosystem
   - ospp
   - ospp-2021
   - mid-term
