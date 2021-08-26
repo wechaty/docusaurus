@@ -211,6 +211,8 @@ const introduction = {
   items: [
     'overview',
     'wechaty',
+    'getting-started-with-wechaty',
+    'main-concepts-in-wechaty',
     subMenu(showcases),
     subMenu(caseStudy),
     subMenu(community),
@@ -230,6 +232,7 @@ const introduction = {
 const basic = {
   label: 'Basic',
   items: [
+    'examples/basic/starter-bot',
     'examples/basic/the-worlds-shortest-chatbot-code-in-6-lines',
     'examples/basic/ding-dong-bot',
     'examples/basic/contact-bot',
