@@ -15,10 +15,12 @@ sidebar_label: Mock
 
 ## Features
 
-1. Help to test Wechaty framework with a mock puppet.
+1. Helps to test Wechaty framework with a mock puppet.
 2. Can be used as a starter template for writing your own puppet provider.
 
 ## Usage
+
+Run `wechaty-puppet-mock`.
 
 <!-- MDX import -->
 import Tabs from '@theme/Tabs'
@@ -63,7 +65,7 @@ npm start
 </TabItem>
 </Tabs>
 
-## Mocker & Environment
+## Mocker and Environment
 
 ```ts
 import {
@@ -113,6 +115,31 @@ const room = mocker.createRoom()
 user.say('Hello').to(contact)
 contact.say('World').to(user)
 ```
+
+## Helper Utilities
+
+### StateSwitch
+
+```ts
+this.state.on('pending')
+this.state.on(true)
+this.state.off('pending')
+this.state.off(true)
+
+await this.state.ready('on')
+await this.state.ready('off')
+
+```
+
+### MemoryCard
+
+```ts
+await memory.set('config', { id: 1, key: 'xxx' })
+const config = await memory.get('config')
+console.log(config)
+// Output: { id: 1, key: 'xxx' }
+```
+
 
 ## Example: unit testing for `math_master` game
 
