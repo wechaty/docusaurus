@@ -15,7 +15,7 @@ sidebar_label: Mock
 
 ## Features
 
-1. Helps to test Wechaty framework with a mock puppet.
+1. Help to test Wechaty framework with a mock puppet.
 2. Can be used as a starter template for writing your own puppet provider.
 
 ## Usage
