@@ -16,11 +16,7 @@ image: /assets/2020/04-how-to-build-a-chatbot-from-zero-to-one-on-wechaty/homepa
 
 ## 李佳芮
 
-<<<<<<< Updated upstream
-句子互动的创始人，GitHub上开源项目Wechaty上面的联合作者，Wechaty在github上面有超过1万star，并搭建了一个覆盖全球的微信平台开发者社区，微软的 AI MVP，出版书：《Chatbot从0到1》，已经在京东上架，欢迎大家阅读，本次分享里面会简单介绍书中的内容，如何从0到1搭建一个聊天机器人，
-=======
 句子互动的创始人，微软的 AI MVP，GitHub开源项目的联合作者，搭建了一个覆盖全球的微信平台开发者社区 Wechaty ，在 github 上面有超过1万 star；出版书[《Chatbot从0到1》](https://item.jd.com/12630213.html),正在京东上架，欢迎大家阅读，本次分享里面会简单介绍书中的内容，如何从0到1搭建一个聊天机器人。
->>>>>>> Stashed changes
 
 ## How to build a chatbot from zero to one on WeChat - 李佳芮(Jiarui Li)
 
