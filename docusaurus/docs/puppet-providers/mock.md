@@ -140,7 +140,6 @@ console.log(config)
 // Output: { id: 1, key: 'xxx' }
 ```
 
-
 ## Example: unit testing for `math_master` game
 
 `math_master` is a [Wechaty Vorpal Contrib](https://github.com/wechaty/wechaty-vorpal-contrib) command which is a simple game for answering math questions that asked by a Wechaty bot.
