@@ -21,7 +21,7 @@ make bot
 
 ## Blogs
 
-Read blogs with the `rust` tag at [here](https://wechaty.js.org/tags.html#rust).
+Read blogs with the `rust` tag [here](https://wechaty.js.org/tags.html#rust).
 
 ## History
 
