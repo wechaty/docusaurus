@@ -47,6 +47,7 @@ pip install sentencepiece=0.1.92
 只运行`world.py`，可以用命令行测试对话效果
 
 
+
 ```sh
 python world.py
 ```
