@@ -7,7 +7,7 @@ sidebar_label: PHP
 [![PHP Wechaty](https://img.shields.io/badge/Wechaty-PHP-7de)](https://github.com/wechaty/php-wechaty)
 
 PHP-Wechaty is a PHP programming client derived from the Wechaty ecosystem.PHP is a server scripting language and a powerful tool for making dynamic and interactive Web pages. You can find more information on PHP-Wechaty [here](https://github.com/wechaty/php-wechaty). The [General Architecture Diagram](https://wechaty.js.org/docs/polyglot/diy/) illustrates how the PHP-Wechaty can be implemented on the already existing TypeScript Wechaty ecosystem.
-The World's shortest PHP chatbot is PHP-Wechaty, which can be very easily implemented and used as shown below.
+The World's shortest PHP chatbot is PHP-Wechaty, which can be very easily implemented and used as shown below:
 
 ```php
 $wechaty = \IO\Github\Wechaty\Wechaty::getInstance($token, $endPoint);
@@ -22,7 +22,7 @@ $wechaty->onScan(function($qrcode, $status, $data) {
 
 ## Getting Started
 
-Run the below commands for starting the PHP-Wechaty bot. For further information also you can visit [Template repo](https://github.com/wechaty/php-wechaty-getting-started)
+Run the below commands for starting the PHP-Wechaty bot. For further information, also you can visit [Template repo](https://github.com/wechaty/php-wechaty-getting-started).
 
 ```sh
 # Install php 7.4+
