@@ -7,13 +7,13 @@ email: jiaqianjing@gmail.com
 twitter: 
 ---
 HowlerBot DEMO:
-* https://github.com/jiaqianjing/HowlerBot
+https://github.com/jiaqianjing/HowlerBot
 
-Wechaty PR: 
-* https://github.com/wechaty/python-wechaty/pull/251
+Wechaty PR:
+https://github.com/wechaty/python-wechaty/pull/251
 
 ## Contact me
 
 - Github: <https://github.com/jiaqianjing>
-- Email：<jiaqianjing@gmail.com>
-- Website: <>
+- Email：<>
+- Website: <
