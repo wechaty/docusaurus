@@ -1,8 +1,13 @@
+---
+title: 对话故事生成，创造自己的无限世界
+author: Tju-LMc
+categories: article
+tags:
+  - story generation
+  - paddlepaddle
+image: /assets/2021/08-story-generation/title.png
+---
 # 对话故事生成，创造自己的无限世界
-
-[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://wechaty.js.org)
-[![Wechaty Contributor Program](https://img.shields.io/badge/Wechaty-Contributor%20Program-green.svg)](https://wechaty.js.org/docs/contributor-program)
-[![Juzi.BOT Developer Program](https://img.shields.io/badge/Wechaty%Contributor%20Program-Juzi.BOT-orange.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty/)
 
 
 如果可以，你最想穿越到哪部电影，小说里？
