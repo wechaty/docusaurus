@@ -30,7 +30,7 @@ image: /assets/2021/08-story-generation/title.png
 
 * [B站链接](https://www.bilibili.com/video/BV1Kg411E7PH)
 
-![动图1](./imgs/img_1.gif) ![动图2](./imgs/img_2.gif)
+![动图1](../assets/2021/08-story-generation/img_1.gif) ![动图2](../assets/2021/08-story-generation/img_2.gif)
 
 ## 安装依赖
 
