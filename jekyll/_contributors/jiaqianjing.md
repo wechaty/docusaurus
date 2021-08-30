@@ -6,12 +6,11 @@ bio: Native Clouder or NLPer orzzzzzz. Be interested in anything.
 email: jiaqianjing@gmail.com
 twitter: 
 ---
-https://github.com/jiaqianjing/HowlerBot
+HowlerBot: <https://github.com/jiaqianjing/HowlerBot>
 
-https://github.com/wechaty/python-wechaty/pull/251
+python-wechaty PR: <https://github.com/wechaty/python-wechaty/pull/251>
 
 ## Contact me
 
 - Github: <https://github.com/jiaqianjing>
-- Email：<>
-- Website: <
+- Email：<jiaqianjing@gmail.com>
