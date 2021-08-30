@@ -90,5 +90,3 @@ tags:
 ### PPT
 
 {% include iframe.html src="../assets/2021/08-ospp-mid-term-wechaty-puppet-oa/wechaty-puppet-oa-midterm-ppt.pdf" %}
-
-> Author:[@zzzyer](https://github.com/zzzyer)
