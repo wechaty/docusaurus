@@ -38,24 +38,7 @@ Wechaty 作者李卓桓（谷歌机器学习开发者专家）将通过社区说
 
 ## Slides
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <iframe width="560" height="315" src="https://docs.google.com/presentation/d/e/2PACX-1vQV8hJWS97ga10fhfaC3wwEmwBWRoC9csmv3tQOspRzBFb-PAwfEC6azXubXabBZ8gb4SkzQHMg40ba/embed?start=true&loop=true&delayms=3000"
-    frameborder="0"
-    allowfullscreen="true"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-  "></iframe>
-</div>
+{% include iframe.html src="https://docs.google.com/presentation/d/e/2PACX-1vQV8hJWS97ga10fhfaC3wwEmwBWRoC9csmv3tQOspRzBFb-PAwfEC6azXubXabBZ8gb4SkzQHMg40ba/embed?start=true&loop=true&delayms=3000" %}
 
 _Wechaty Google Season of Docs_ Slides is hosted on Google Slides(Docs) at [here](https://docs.google.com/presentation/d/119WsvvWP9ERFtkAqHLzEFquDsR073Mlh-j_JsOyVHPE)
 
