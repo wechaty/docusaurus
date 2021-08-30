@@ -6,6 +6,7 @@ tags:
   - gsod
   - google
   - gdg
+  - news
 image: /assets/2021/08-gdg-community-talk-google-season-of-docs/gdg-community-talk-gsod-wechaty.webp
 ---
 
@@ -27,6 +28,8 @@ Wechaty 作者李卓桓（谷歌机器学习开发者专家）将通过社区说
 
 {% include iframe.html src="https://youtu.be/6sTGgH9qsl0" %}
 
+> YouTube: <https://youtu.be/6sTGgH9qsl0>
+
 - 0:00 社区说活动开场：GDG 主持人袁衮衮介绍
 - 5:10 Huan 自我介绍
 - 7:54 Wechaty 对话式交互SDK简介
@@ -42,10 +45,16 @@ Wechaty 作者李卓桓（谷歌机器学习开发者专家）将通过社区说
 
 _Wechaty Google Season of Docs_ Slides is hosted on Google Slides(Docs) at [here](https://docs.google.com/presentation/d/119WsvvWP9ERFtkAqHLzEFquDsR073Mlh-j_JsOyVHPE)
 
+## Blogs
+
+- [Hello Wechaty GSoD’21 Technical Writers!, @huan, May 08, 2021](https://wechaty.js.org/2021/05/08/gsod-2021-selected-technical-writers/)
+- [Google Season of Docs ❤️ Wechaty, @huan, Apr 30, 2021](https://wechaty.js.org/2021/04/30/google-season-of-docs/)
+- [Google Season of Docs 2021 proposal](https://wechaty.js.org/docs/gsod/2021/)
+
 ## 关于社区说
 
 「社区说」是由谷歌开发者社区 (Google Developer Group) 与谷歌开发者专家计划 (Google Developer Expert) 联合推出的社区项目。每周四晚 8 点到 9 点，与热爱技术的开发者们一同交流技术，进行代码直播、讨论产品、分享心得的小型线上会议。
 
 活动将由不同的谷歌开发者社区举办并邀请来自国内的不同技术方向的谷歌开发者专家以及对技术有热情、愿意分享的嘉宾，一起来聊一聊最近做的项目，最近写的代码，或者三五技术好友互相探讨聊天。
 
-> Source: [今晚直播 | 听 Google Season of Docs 入选项目谈文档协作](https://mp.weixin.qq.com/s/uBOhGXdJIXZ_5_Cu0gUq-Q)
+> Source: [听 Google Season of Docs 入选项目谈文档协作](https://mp.weixin.qq.com/s/uBOhGXdJIXZ_5_Cu0gUq-Q)
