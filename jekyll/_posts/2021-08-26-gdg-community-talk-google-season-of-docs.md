@@ -45,6 +45,12 @@ Wechaty 作者李卓桓（谷歌机器学习开发者专家）将通过社区说
 
 _Wechaty Google Season of Docs_ Slides is hosted on Google Slides(Docs) at [here](https://docs.google.com/presentation/d/119WsvvWP9ERFtkAqHLzEFquDsR073Mlh-j_JsOyVHPE)
 
+## Blogs
+
+- [Hello Wechaty GSoD’21 Technical Writers!, @huan, May 08, 2021](https://wechaty.js.org/2021/05/08/gsod-2021-selected-technical-writers/)
+- [Google Season of Docs ❤️ Wechaty, @huan, Apr 30, 2021](https://wechaty.js.org/2021/04/30/google-season-of-docs/)
+- [Google Season of Docs 2021 proposal](https://wechaty.js.org/docs/gsod/2021/)
+
 ## 关于社区说
 
 「社区说」是由谷歌开发者社区 (Google Developer Group) 与谷歌开发者专家计划 (Google Developer Expert) 联合推出的社区项目。每周四晚 8 点到 9 点，与热爱技术的开发者们一同交流技术，进行代码直播、讨论产品、分享心得的小型线上会议。
