@@ -11,6 +11,7 @@ image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.webp
 
 很开心过去10天里面接触了 Wechaty 社区，两次使用 GitHub 向 Wechaty 社区提交了博客（虽然提交了很多次才最终通过），但也因此对于书写博客时出现的问题比较了解，对许多问题记忆犹新。今天就和大家分享一下我自己的经验，零基础或有那么一丢丢基础的小白如何在 Wechaty 社区发布自己的第一篇博客。
 
+
 今天和大家分享一下两个内容：
 
 - 在wechaty发布博客的准备工作
@@ -120,3 +121,5 @@ image: /assets/2021/07-how-to-publish-blog-on-wechaty/homepage.webp
     也就是test&build,他能够能够帮你完成工作的功能，测试你的代码是否有问题；
     如果有错误，会出现红色的叉，并提示你哪里出错，只需要根据他的提示更改代码，再提交，重复上面的步骤，知道变成绿色对勾就好啦。
      ![ci](/assets/2021/07-how-to-publish-blog-on-wechaty/ci.webp)
+
+> 作者: [juzibot](https://github.com/juzibot/)，句子互动

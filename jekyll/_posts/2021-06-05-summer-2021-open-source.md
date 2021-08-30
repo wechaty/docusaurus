@@ -12,14 +12,11 @@ tags:
 image: /assets/2021/06-summer-2021-open-source/001.webp
 ---
 
-> 作者:[windmemory](https://github.com/windmemory)
-
-<!-- more -->
-![intro](/assets/2021/06-summer-2021-open-source/002.webp)
-
 ## 自我介绍
 
 高原：句子互动联合创始人&CTO，开源项目Wechaty commiter，前亚马逊，Expedia工程师，Bot Friday联合发起人。
+
+![intro](/assets/2021/06-summer-2021-open-source/002.webp)
 
 ## Wechaty开源之路直播纪实
 
@@ -93,28 +90,6 @@ start()
 ```
 
 - 一个简单的叮咚的机器人：有人说叮，机器人会说咚
-
-```yaml
----
-bot
-on('login',user => console.log(`Login: ${user}`))
-on('scan',qrcode => QRCodeTerminal.generate(qrcode, { small: true }))
-on('message', async (message: Message) => {
-  console.log(`Message:${message}`)
-  const room = message.room();
-  if (room){
-    const topic = await room.topic();
-    if (topic == 'Wechaty开源之路Demo'){
-      const contact = message.from();
-      const content = message.text();
-      if (content === 'ding'){ const contact: Contact
-      await room.say('dong',contact);
-      }
-    }
-  })
-start()
----
-```
 
 大家可以去实现自己想要的任何逻辑，进行不同操作，获取消息后，对消息做不同的指令，做自己想要的逻辑，感兴趣的可以自己下载，随意玩一玩。
 
@@ -196,3 +171,5 @@ Wechaty始于chatbot爱好者：李卓桓，他是一个很懒又聪明的人，
 
 如果有人有兴趣一起加入，一起来在企业级的scrm软件上面为营销过程提效的话，欢迎大家联系我，我们一起聊一聊能否一起合作。
 ![intro](/assets/2021/06-summer-2021-open-source/008.webp)
+
+> 作者:[windmemory](https://github.com/windmemory)

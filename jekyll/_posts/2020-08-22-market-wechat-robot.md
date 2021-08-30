@@ -10,9 +10,6 @@ tags:
   - finance
 ---
 
-> Author: [@exctech](https://github.com/exctech)
-> Code: [@exctech/](https://github.com/exctech/market-wechat-robot)
-
 使用Wechaty开发的行情播报微信机器人，为微信群组用户提供实时行情信息播报服务。用户可以通过添加管理员微信，然后自动加入播报群组。
 机器人将采用行情早晚报和事件播报的形式在群组中进行行情播报。
 
@@ -84,7 +81,7 @@ docker run \
 访问`https://api.chatie.io/v0/hosties/TOKEN`，其中`TOKEN`为前面设置的`WECHATY_TOKEN`。如果返回结果中包含前面设置的IP和端口，则服务正常开启。如果返回结果为：
 
 ```sh
-{"ip":"0.0.0.0","port":0}
+{"host":"0.0.0.0","port":0}
 ```
 
 则服务没有正常开启，需要按照上面的步骤重新检查。
@@ -104,3 +101,6 @@ git clone https://github.com/exctech/market-wechat-robot.git
 ```sh
 python market-robot.py
 ```
+
+> Author: [@exctech](https://github.com/exctech)
+> Code: [@exctech/](https://github.com/exctech/market-wechat-robot)

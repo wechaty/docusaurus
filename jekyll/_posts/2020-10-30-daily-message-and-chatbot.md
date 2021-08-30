@@ -10,8 +10,6 @@ tags:
   - social
 ---
 
-## 前言
-
 - 自从2017年微信web端API限制以后，itchat等一大批bot歇菜了，一直都在找一款合适的替品
 - 目前来看，大部分都是针对windows微信客户端，基于HOOK的dll注入实现对微信的操控，有一定的封号风险，只能用固定的版本，部署在linux服务器端比较困难，意味着只能一直开着电- -wechaty，支持IPAD,,MAC等多种协议，不用去调用WEB网页API,并且可以布署在服务器，满足我所有需求。[项目地址](https://github.com/wechaty/wechaty)
 - 看完官方文档后（[token官方介绍](https://github.com/juzibot/welcome/wiki/everything-about-wechaty)）， 发现需要申请Token,并且python版本的Token是要付费的，但没有学过typescript，有点想放弃，浏览了一下ding-dong-bot的Example,似乎可以看懂，那就边学习边摸索吧。（ps:后来偶然见发现了另一篇可以使用将token转变一下实现python版wechaty,但此时已经基本用TS写完了,如果想用Python等其他语言可以参考[官方文档](https://github.com/wechaty/wechaty/issues/1985)。）

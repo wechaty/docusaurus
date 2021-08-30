@@ -120,14 +120,25 @@ At the same time, we also meet up offline all over the world. Here are some acti
 - [Wechaty Country Wide Developer Conference](https://wechaty.js.org/2018/09/15/country-wide-developer-conference/)
 - .....
 
+### How to Run Locally
+
+1. Clone this repository: `git clone "https://github.com/wechaty/wechaty.js.org"`
+2. On the terminal navigate to the root directory `cd wechaty.js.org`
+3. Run the commands :
+    1. `npm install`
+    2. `npm run docusaurus:build`
+    3. `npm run docusaurus:serve`
+4. The site will be running locally on `http://localhost:3000`
+
 ### How To Contribute To the Documentation
 
-- Fork this repository
-- Create your documentation branch: `git checkout -b branch-name`
-- Make changes to the documentation in markdown
-- Commit your changes using the command `git commit -am 'commit message'`
-- Push your changes to gitHub
-- Create new Pull Request
+1. Fork this repository
+2. Create your documentation branch: `git checkout -b branch-name`
+3. Make changes to the documentation in markdown
+4. Add changes to the staging area `git add .`
+5. Commit your changes using the command `git commit -m 'commit message'`
+6. Push your changes to gitHub `git push origin branch-name`
+7. Create new Pull Request
 
 ## Resources
 
@@ -147,6 +158,25 @@ At the same time, we also meet up offline all over the world. Here are some acti
 [![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/images/7)](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/links/7)
 
 To get to know all our writers, see <https://github.com/wechaty/wechaty.js.org/graphs/contributors>
+
+## History
+
+### main v0.9 (Aug 23, 2021)
+
+1. Add OpenAPI Specification docs at <https://wechaty.js.org/openapi/> ([#1218](https://github.com/wechaty/wechaty.js.org/issues/1218))
+
+### v0.5 (Aug 12, 2020)
+
+1. Using docusaurus for docs
+1. Rename chatie to wechaty
+
+### v0.3 (Mar 9, 2017)
+
+Rename wechaty to chatie
+
+### v0.0.1 (Dec 4, 2016)
+
+Init version
 
 ## Maintainers
 
