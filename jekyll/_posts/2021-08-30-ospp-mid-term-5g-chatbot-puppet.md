@@ -75,15 +75,15 @@ tags:
 
 项目仓库: <https://github.com/zrn-fight/wechaty-puppet-walnut>  
 
-### live coding视频:
+### live coding视频：
 
 {% include iframe.html src="https://youtu.be/qGl0zXtDL4s" %}
 
-### PPT展示视频:
+### PPT展示视频：
 
 {% include iframe.html src="https://youtu.be/vCV0ijD0R9g" %}
 
-### 项目PPT:
+### 项目PPT：
 
 {% include iframe.html src="https://maiimg.com/free/?e=dwYyE0y.U6nYo6" %}
 
