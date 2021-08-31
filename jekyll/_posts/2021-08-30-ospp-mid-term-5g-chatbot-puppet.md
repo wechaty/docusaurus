@@ -23,7 +23,7 @@ tags:
 
 - 导师：[李佳芮  康嘉  李卓桓]  
 - 学生：[张瑞宁  邵琦]  
-- 项目介绍：[https://github.com/wechaty/summer/issues/74]  
+- 项目介绍：<https://github.com/wechaty/summer/issues/74>
 - 项目名称：  开发支持电信运营商 5G Chatbot / RCS 的 Wechaty 接入 Puppet 模块
 - 方案描述：
   - 使用5g Chatbot接口，把收发消息测通
@@ -86,11 +86,12 @@ tags:
 
 ### 项目PPT：
 
-{% include iframe.html src="../assets/2021/08-ospp-mid-term-5g-chatbot-puppet/5g-chatbot-ppt.pdf" %}
+{% include iframe.html src="/assets/2021/08-ospp-mid-term-5g-chatbot-puppet/5g-chatbot-ppt.pdf" %}
 
 ## 联系我们
 
-- 项目链接：[https://github.com/wechaty/summer/issues/74]  
+- 项目链接：<https://github.com/wechaty/summer/issues/74>
 - 联系方式：
   - 张瑞宁：3134191406@qq.com
   - 邵琦：shaoqichn@qq.com
+
