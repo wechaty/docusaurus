@@ -29,7 +29,7 @@
 
 - 导师：范蕊  
 - 学生：马田慧  
-- 项目介绍：https://github.com/wechaty/summer/issues/38  
+- 项目介绍：[https://github.com/wechaty/summer/issues/38](https://github.com/wechaty/summer/issues/38)  
 - 项目名称：基于开放 API 封装 Wechaty 接口下的飞书聊天机器人  
 - 方案描述：
 目前，飞书 Puppet 已经完成了初步开发，目前主要实现的功能有:消息收发（文字、文件、图片）,部分群组相关操作（创建群、修改群名、删除群成员等），部分企业相关操作（查看企业内成员等），接下来需要对照飞书开放平台和 Wechaty 接口，完善该项目。  
@@ -59,7 +59,7 @@
   - [x] 实现之前未实现的函数
   - [ ] 连接Contact、Message、Room等类，尝试实现复用
   - [ ] 撰写文档、example
-  - [ ] 发布npm包 
+  - [ ] 发布npm包
 - 遇到的问题及解决方案：
   在环境配置上出现版本不匹配等问题，通过搜索+与导师沟通解决；在撰写相关文档提交时，出现格式不匹配问题，通过熟读规范与多次修正得到解决；
   一个大的项目往往规范是很重要的，wechaty-puppet构建了良好的生态，我从学习到了专业性与规范性，感谢在这里遇到的导师和小伙伴，他们的耐心与认真给了我很深的印象。
@@ -70,19 +70,19 @@
 
 项目仓库: [https://github.com/remember00000/wechaty-puppet-lark](https://github.com/remember00000/wechaty-puppet-lark)  
 
-### live coding视频:
+### live coding视频
 
 {% include iframe.html src="https://youtu.be/fAIZS9lgxjo" %}
 
-### PPT展示视频:
+### PPT展示视频
 
 {% include iframe.html src="https://youtu.be/IwMA8VJZZqE" %}
 
-### 项目PPT:
+### 项目PPT
 
 {% include iframe.html src="\assets\2021\08-ospp-mid-term-wechaty-puppet-lark\mid-term-ppt.pdf" %}
 
 ## 联系我们
 
-- 项目链接：https://github.com/remember00000/wechaty-puppet-lark  
+- 项目链接：[https://github.com/remember00000/wechaty-puppet-lark](https://github.com/remember00000/wechaty-puppet-lark)  
 - 联系方式：+86 18660817606|email：2741102314@qq.com
