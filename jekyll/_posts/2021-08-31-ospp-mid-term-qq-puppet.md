@@ -5,7 +5,7 @@ categories:
   - project
   - ospp
 
-image: /assets/2021/07-summer-wechaty-qq-puppet/wechaty-qq-puppet-logo.webp
+image: /assets/2021/08-ospp-mid-term-qq-puppet/wechaty-qq-puppet-logo.webp
 tags:
   - summer-of-wechaty
   - summer-2021
