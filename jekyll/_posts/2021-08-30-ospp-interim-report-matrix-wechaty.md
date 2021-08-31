@@ -56,7 +56,7 @@ tags:
 
 ### 项目PPT
 
-{% include iframe.html src="https://maiimg.com/free/?e=dw3J5SuZ2sdxc6" %}
+{% include iframe.html src="/assets/2021/08-ospp-interim-report-matrix-wechaty/report-ppt.pdf" %}
 
 ## 联系我们
 
