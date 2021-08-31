@@ -14,7 +14,7 @@
   - lark
   - summer-of-wechaty
   - ecosystem
- image: \assets\2021\08-wechaty-larkpuppet-ospp-mid-term-blog\wechaty-lark.webp
+ image: /assets/2021/08-wechaty-larkpuppet-ospp-mid-term-blog/wechaty-lark.webp
 
 ---
 
@@ -80,7 +80,7 @@
 
 ### 项目PPT
 
-{% include iframe.html src="\assets\2021\08-wechaty-larkpuppet-ospp-mid-term-blog\mid-term-ppt.pdf" %}
+{% include iframe.html src="/assets/2021/08-wechaty-larkpuppet-ospp-mid-term-blog/mid-term-ppt.pdf" %}
 
 ## 联系我们
 
