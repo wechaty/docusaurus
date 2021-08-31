@@ -1,5 +1,5 @@
 ---
-title: "Mid Term blog of OSPP 2021: 5gChatbot"
+title: "OSPP 2021-期中报告-开发支持电信运营商 5G Chatbot / RCS 的 Wechaty 接入 Puppet 模块"
 author: zrn-fight
 categories:
   - project
@@ -11,6 +11,7 @@ tags:
   - ospp
   - ospp-2021
   - plan
+  - mid-term
   - other
 ---
 
@@ -85,7 +86,7 @@ tags:
 
 ### 项目PPT：
 
-{% include iframe.html src="https://maiimg.com/free/?e=dwYyE0y.U6nYo6" %}
+{% include iframe.html src="../assets/2021/08-ospp-mid-term-5g-chatbot-puppet/5g-chatbot-ppt.pdf" %}
 
 ## 联系我们
 
