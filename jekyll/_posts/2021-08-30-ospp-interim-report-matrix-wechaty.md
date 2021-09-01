@@ -1,5 +1,5 @@
 ---
-title: "OSPP 2021-中期报告-基于 Matrix AppService Wechaty 项目的用户、群与消息等基础功能的完善"
+title: "OSPP 2021-期中报告-基于 Matrix AppService Wechaty 项目的用户、群与消息等基础功能的完善"
 author: lprintf
 categories:
   - project
