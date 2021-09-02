@@ -23,7 +23,8 @@ image: /assets/2021/08-story-generation/title.png
 ### 灵感来源
 
 1. 无限恐怖
-2. [AI Dungeon](https://play.aidungeon.io/main/home): 在地牢2中，玩家将接触到一个完全自由的虚拟世界。整个游戏世界，都将围绕着玩家的输入展开与续写，可谓真正的 Everything is in my hands 。
+2. [AI Dungeon] (https://play.aidungeon.io/main/home): 在地牢2中，玩家将接触到一个完全自由的虚拟世界。整个游戏世界，都将围绕着玩家的输入展开与续写，可谓真正的 Everything is in my hands 。
+
 ### 效果展示
 
 * [AIStudio链接](https://aistudio.baidu.com/aistudio/projectdetail/2235967)
@@ -42,7 +43,8 @@ pip install sentencepiece=0.1.92
 ```
 
 ### 注意事项
-本 github 中代码直接使用了 `paddlenlp` 提供的预训练模型 `gpt-cpm-small-cn-distill `
+
+本 github 中代码直接使用了 `paddlenlp` 提供的预训练模型 `gpt-cpm-small-cn-distill`
 
 在 AI Studio 中按照教安装 `paddlenlp==2.0.0rc14` 然后引入  `gpt2-base-cn` 可以体验更好的生成效果。
 
@@ -51,8 +53,6 @@ pip install sentencepiece=0.1.92
 ## 测试对话系统
 
 只运行`world.py`，可以用命令行测试对话效果
-
-
 
 ```sh
 python world.py
@@ -69,9 +69,10 @@ docker pull wechaty/wechaty
 # 确保gateway.sh中是自己的token， 服务器对外开放相关端口
 sudo ./gateway.sh
 ```
+
 如果 token 是其他类型， 可以直接跳过上面步骤， 访问此链接返回ip地址和端口，确认启动成功
 
-https://api.chatie.io/v0/hosties/xxx你的token
+"https://api.chatie.io/v0/hosties/xxx你的token"
 
 ## 启动wechaty
 
@@ -93,15 +94,12 @@ enjoy it ！
 
 **欢迎对我们的研究方向感兴趣的同学加入我们的天津大学灵媒研究小组（LMc, Language and Mind computing)，一起用智能技术探寻语言和心灵的奥秘！**
 
-**主页：** http://cic.tju.edu.cn/faculty/wangbo/index.htm
+**主页：** "http://cic.tju.edu.cn/faculty/wangbo/index.htm"
 
 **研究方向：**
 
-+ 智能对话与心理计算（人机对话基础技术，聊天机器人在心理测量与干预、个性化推荐和智能客服等领域的应用；基于计算方法的人物及群体性格与心理画像及干预）
+1.智能对话与心理计算（人机对话基础技术，聊天机器人在心理测量与干预、个性化推荐和智能客服等领域的应用；基于计算方法的人物及群体性格与心理画像及干预）
 
-+ 个性化推荐（面向信息、人物和对象的多类型个性化推荐技术研究与应用）
+2.个性化推荐（面向信息、人物和对象的多类型个性化推荐技术研究与应用）
 
-+ 自然语言处理（社会场景下的语义与观点自动化分析，基于语言的心理及社会关系自动化分析）
-
-
-
+3. 自然语言处理（社会场景下的语义与观点自动化分析，基于语言的心理及社会关系自动化分析）
