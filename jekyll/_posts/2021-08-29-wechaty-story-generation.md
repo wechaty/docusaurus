@@ -10,7 +10,6 @@ image: /assets/2021/08-story-generation/title.png
 
 ## 对话故事生成，创造自己的无限世界
 
-
 如果可以，你最想穿越到哪部电影，小说里？
 
 这次利用 paddlenlp 中提供的 GPT2 和 wechaty 库展开对话故事续写，与 AI 互动共同创造剧情
@@ -20,6 +19,7 @@ image: /assets/2021/08-story-generation/title.png
 ![问号](../assets/2021/08-story-generation/imgs_q.png)
 
 ## 项目介绍
+
 ### 灵感来源
 
 1. 无限恐怖
