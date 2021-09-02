@@ -23,7 +23,7 @@ image: /assets/2021/08-story-generation/title.png
 ### 灵感来源
 
 1. 无限恐怖
-2. [AI Dungeon] (https://play.aidungeon.io/main/home): 在地牢2中，玩家将接触到一个完全自由的虚拟世界。整个游戏世界，都将围绕着玩家的输入展开与续写，可谓真正的 Everything is in my hands 。
+2. [AI Dungeon] (<https://play.aidungeon.io/main/home>): 在地牢2中，玩家将接触到一个完全自由的虚拟世界。整个游戏世界，都将围绕着玩家的输入展开与续写，可谓真正的 Everything is in my hands 。
 
 ### 效果展示
 
