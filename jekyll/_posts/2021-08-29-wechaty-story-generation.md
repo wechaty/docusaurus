@@ -3,7 +3,7 @@ title: 对话故事生成，创造自己的无限世界
 author: Tju-LMc
 categories: article
 tags:
-  - story generation
+  - story_generation
   - paddlepaddle
 image: /assets/2021/08-wechaty-story-generation/title.webp
 ---
