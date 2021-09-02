@@ -16,7 +16,7 @@ image: /assets/2021/08-wechaty-story-generation/title.webp
 
 预先设置你想交互的世界场景，比如面对三体人的进攻，发挥你的脑洞输入你想到的任何动作或者剧情大纲，模型的续写保证让你赞(hei)不(ren)绝(wen)口(hao)
 
-![问号](../assets/2021/08-wechaty-story-generation/imgs_q.webp)
+![问号](/assets/2021/08-wechaty-story-generation/imgs_q.webp)
 
 ## 项目介绍
 
