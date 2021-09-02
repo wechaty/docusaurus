@@ -88,9 +88,13 @@ tags:
 
 ### live coding视频
 
+> 国内链接：[https://www.bilibili.com/video/BV15P4y1p7JN/](https://www.bilibili.com/video/BV15P4y1p7JN/)
+
 {% include iframe.html src="https://youtu.be/hce3c4WZylo" %}
 
 ### PPT展示视频
+
+> 国内链接：[https://www.bilibili.com/video/BV1Ef4y1G7hE](https://www.bilibili.com/video/BV1Ef4y1G7hE)
 
 {% include iframe.html src="https://youtu.be/gjg1EW30pOw" %}
 
