@@ -12,7 +12,7 @@ tags:
   - ecosystem
   - ospp
   - ospp-2021
-  - midterm
+  - mid-term
 ---
 ## 暑期2021
 
@@ -89,4 +89,4 @@ tags:
 
 ### PPT
 
-{% include iframe.html src="../assets/2021/08-ospp-mid-term-wechaty-puppet-oa/wechaty-puppet-oa-midterm-ppt.pdf" %}
+{% include iframe.html src="/assets/2021/08-ospp-mid-term-wechaty-puppet-oa/wechaty-puppet-oa-midterm-ppt.pdf" %}
