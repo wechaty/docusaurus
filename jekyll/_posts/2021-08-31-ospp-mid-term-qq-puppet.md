@@ -11,7 +11,6 @@ tags:
   - summer-2021
   - ospp
   - ospp-2021
-  - plan
   - mid-term
   - other
 ---
@@ -52,16 +51,16 @@ QQ 是国内和微信并列的两大聊天软件。我们在本次 Summer 2021 �
 
   - 7.11-8.15（已如期完成）
 
-        开始正式进行代码的prototyping，先完成基础的功能，完成通过 Wechaty 加载 wechaty-puppet-5g-qq 模块，并通过oicq项目实现的qq协议，实现文本消息的收发功能。每周协同导师进行功能的开发和完善
+        开始正式进行代码的prototyping，先完成基础的功能，完成通过 Wechaty 加载 wechaty-puppet-oicq 模块，并通过oicq项目实现的qq协议，实现文本消息的收发功能。每周协同导师进行功能的开发和完善
 
 - 第二阶段（8月-10月）
 
     在现有基础上，滑动验证码登陆、设备锁、qq登陆风控等问题进行调研和排查
-  - 8.16-9.30（即将完成）
+  - 8.16-8.30
 
-        将CI（持续集成）的测试跑通，如果时间充足，可以尝试完成一下配置 GitHub Actions 实现自动化测试的任务。
+        完成期中 Demo Day 视频和wechaty.js.org上的中期报告
 
-  - 10.1-10.30（即将完成）
+  - 9.1-10.30（即将完成）
 
         继续完善功能，将消息接收，扩展到群聊天消息、图片消息等领域。
 
@@ -93,3 +92,15 @@ QQ 是国内和微信并列的两大聊天软件。我们在本次 Summer 2021 �
 ### 后续工作安排
 
     按照原计划继续进行，并且尽可能对图片消息、语音消息等增加支持，使wechaty-puppet-oicq成为事件和API支持非常详细的机器人协议提供端。",
+
+### live coding视频：
+
+{% include iframe.html src="https://youtu.be/FY4U2JPZjxE" %}
+
+### PPT展示视频：
+
+{% include iframe.html src="https://youtu.be/pT16CnFhTPQ" %}
+
+### 项目PPT：
+
+{% include iframe.html src="/assets/2021/08-ospp-mid-term-qq-puppet/qq-puppet.pdf" %}
