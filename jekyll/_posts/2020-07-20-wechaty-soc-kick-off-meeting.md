@@ -12,10 +12,6 @@ tags:
 image: /assets/2020/wechaty-soc-kick-off-meeting/soc.png
 ---
 
-> 作者: [Yinbohao](https://github.com/rickyyin98/)
-
-## 关于暑期2020
-
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。
@@ -34,15 +30,7 @@ Wechaty 合计发布了11个项目，共收到来自清华大学、北京大学�
 
 ## Wechaty 暑期2020宣讲会
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fMFzCexnDsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{% include iframe.html src="https://www.youtube.com/watch?v=fMFzCexnDsY" %}
 
 你可以在Bilibili上查看[暑期2020宣讲会视频](//player.bilibili.com/player.html?aid=625978692&bvid=BV1et4y1y7a2&cid=199810616&page=13)
 
@@ -111,15 +99,7 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 
 ## SoC破冰会会议纪实
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Irfj7W4RYlI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=Irfj7W4RYlI" %}
 
 ## 暑期2020 开发计划
 
@@ -145,3 +125,5 @@ Wechaty 在多语言、多平台、多功能三条主线上，共发布了 11 �
 - 时刻跟进Wechaty SoC项目的每周例行更新 Issue，并直接与相关负责导师和学生开发者取得联系，和他们交流相关进展。
 - 在 Wechaty 开发者群内，为学生开发者们的Plan Blog、POC Blog和Finished Blog点赞和提出想法。
 - 直接参与已经完成部分工作的项目开发，为学生开发者们负责的复杂项目添砖加瓦。
+
+> 作者: [Yinbohao](https://github.com/rickyyin98/)
