@@ -1,6 +1,6 @@
 ---
 title: 对话故事生成，创造自己的无限世界
-author: tju-lmc
+author: Tju-LMc
 categories: article
 tags:
   - nlp
