@@ -6,6 +6,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './styles.module.css'
 
+import { DocusaurusConfig } from '@docusaurus/types'
+
 const features = [
   {
     description: (
@@ -58,7 +60,7 @@ function Feature ({ key, imageUrl, title, description }) {
 
 function Home () {
   const context = useDocusaurusContext()
-  const { siteConfig = {} } = context
+  const { siteConfig = {} as Partial<DocusaurusConfig> } = context
   return (
     <Layout
       title='Press and Media'
