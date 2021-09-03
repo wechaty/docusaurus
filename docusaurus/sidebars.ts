@@ -212,6 +212,8 @@ const introduction = {
   items: [
     'overview',
     'wechaty',
+    'who-is-using-wechaty',
+    'getting-started-with-wechaty',
     'main-concepts-in-wechaty',
     subMenu(showcases),
     subMenu(caseStudy),
@@ -268,7 +270,6 @@ const professional = {
  const examples = {
   label: 'Examples',
   items: [
-    'examples/overview',
     subMenu(basic),
     subMenu(advanced),
     subMenu(professional),
@@ -343,6 +344,7 @@ const explainations = {
     'explainations/alternatives',
     'explainations/glossary',
     'explainations/devops-tools',
+    'explainations/testing',
     'explainations/faq',
     'explainations/troubleshooting',
     subMenu(docusaurus),

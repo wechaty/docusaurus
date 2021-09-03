@@ -7,6 +7,7 @@ image: /assets/2021/07-gdg-shanghai-wechaty/community-wechaty.webp
 tags:
   - gdg
   - google
+  - news
 ---
 
 在本周四晚 8 点的《社区说》中，上海 GDG 社区邀请嘉宾李卓桓（Huan）老师在 B 站直播间与伙伴们畅聊他的聊天机器人SDK：Wechaty
