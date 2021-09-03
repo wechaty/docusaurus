@@ -1,0 +1,3332 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* .navbar {
+  position: fixed;
+  width: 100%;
+  height: 140px;
+  background: #ffffff;
+  z-index: 2;
+  overflow-y: hidden;
+}
+
+.wechatyLogo {
+  position: absolute;
+  width: 280px;
+  height: 55px;
+  left: 3%;
+  top: 10%;
+}
+
+.navbarText {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #44a838;
+}
+
+.getStartedButton {
+  position: absolute;
+  width: 15%;
+  height: 35.5%;
+  left: 80%;
+  top: 20px;
+  background: #e9ffe6;
+  border-radius: 150px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  letter-spacing: 2px;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+  cursor: pointer;
+}
+
+.getStartedButton:hover {
+  color: #44a838;
+}
+
+.getStartedButton:active {
+  color: black;
+}
+
+.navbarLinks {
+  margin-left: 8%;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.newsLink {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  letter-spacing: 2px;
+  cursor: pointer;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+  cursor: pointer;
+}
+
+.newsLink:hover {
+  color: #44a838;
+}
+
+.newsLink:active {
+  color: black;
+}
+
+.blogsLink {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  letter-spacing: 2px;
+  cursor: pointer;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+  cursor: pointer;
+}
+
+.blogsLink:hover {
+  color: #44a838;
+}
+
+.blogsLink:active {
+  color: black;
+}
+
+.contributorsLink {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  letter-spacing: 2px;
+  cursor: pointer;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+  cursor: pointer;
+}
+
+.contributorsLink:hover {
+  color: #44a838;
+}
+
+.contributorsLink:active {
+  color: black;
+}
+
+.docsLink {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  letter-spacing: 2px;
+  cursor: pointer;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+  cursor: pointer;
+}
+
+.docsLink:hover {
+  color: #44a838;
+}
+
+.docsLink:active {
+  color: black;
+}
+
+.githubLink {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  letter-spacing: 2px;
+  cursor: pointer;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+  cursor: pointer;
+}
+
+.githubLink:hover {
+  color: #44a838;
+}
+
+.githubLink:active {
+  color: black;
+}
+
+.searchBar {
+  float: right;
+  top: -30px;
+  margin-right: 8%;
+  position: relative;
+  width: 26%;
+  height: 35px;
+  background: #e9ffe6;
+  border-radius: 50px;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: left;
+  text-align: left;
+  letter-spacing: 2px;
+  border: none;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+::-webkit-input-placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: left;
+  letter-spacing: 2px;
+  padding-left: 2%;
+}
+
+:-ms-input-placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(0, 0, 0, 0.5);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: left;
+  letter-spacing: 2px;
+  padding-left: 2%;
+}
+
+::-ms-input-placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(0, 0, 0, 0.5);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: left;
+  letter-spacing: 2px;
+  padding-left: 2%;
+}
+
+::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: left;
+  letter-spacing: 2px;
+  padding-left: 2%;
+} */
+
+.heroSection {
+  position: relative;
+  left: 0px;
+  mix-blend-mode: normal;
+  overflow-y: hidden;
+}
+
+.heroTagLine {
+  height: 200px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 80px;
+  margin-left: 6%;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.heroTagLineWrapper {
+  position: absolute;
+  margin: 240px 0 0 15px;
+  width: 59.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.heroTagLineEmphasis1 {
+  font-family: "Montserrat";
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 60px;
+  color: black;
+  letter-spacing: 4px;
+  height: 60px;
+  width: 500px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.heroTagLineEmphasis1 a {
+  color: #44a838;
+}
+
+.heroSlogan {
+  position: relative;
+  margin-left: 1%;
+  width: 60%;
+  height: 85px;
+  top: 300px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.heroChatbotImage {
+  float: right;
+  overflow-x: hidden;
+  margin-top: -180px;
+  z-index: 1;
+}
+
+.heroImageMobile {
+  visibility: hidden;
+}
+
+.letsDiveInButton {
+  background-color: #d2ffca;
+  margin-left: 15.8%;
+  border-radius: 50px;
+  height: 50px;
+  width: 30%;
+  margin-top: 400px;
+  border: none;
+  overflow-y: hidden;
+  font-family: "Montserrat";
+  line-height: normal;
+  color: black;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 4px;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+  cursor: pointer;
+}
+
+.letsDiveInButton:hover {
+  color: #44a838;
+}
+
+.letsDiveInButton:active {
+  color: black;
+}
+
+.featuresSection {
+  margin-top: -320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.featuresSectionHeadlineWrapper {
+  margin-bottom: 40px;
+  position: relative;
+  left: 10%;
+}
+
+.featuresSectionRectangle {
+  width: 400px;
+  height: 20px;
+  background-color: #d2ffca;
+  border-radius: 50px;
+  position: absolute;
+  top: 35px;
+}
+
+.featuresSectionHeadline {
+  width: 100%;
+  font-family: "Montserrat";
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 60px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  letter-spacing: 4px;
+}
+
+.featuresSectionUpperWrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.checkCircleWrapper {
+  margin-right: 32px;
+  padding: 7px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.checkCircle {
+  margin-bottom: 20px;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.vector {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.featuresListingWrapper {
+  margin-right: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-top: -25px;
+}
+
+.featuresListing {
+  overflow-y: hidden;
+  line-height: 30px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 0px;
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
+
+.videoPlaceholder {
+  width: 620px;
+  height: 380px;
+  background-color: honeydew;
+  border-radius: 10px;
+  margin-top: -5px;
+}
+
+.featuresSectionLowerWrapper {
+  background-color: honeydew;
+  border-radius: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  overflow-y: hidden;
+  width: 88vw;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 6%;
+}
+
+.featuresNumberWrapper {
+  position: relative;
+  overflow-y: hidden;
+  margin-bottom: 30px;
+  overflow-x: hidden;
+}
+
+.featuresText {
+  margin-top: 30px;
+  overflow-y: hidden;
+  height: 3%;
+  width: 90%;
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+  color: black;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-left: 5%;
+}
+
+.featuresText a {
+  color: #44a838;
+  font-weight: 800;
+}
+
+.numberWrapperOne {
+  padding: 0 0 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  overflow-y: hidden;
+}
+
+.number100 {
+  height: 60px;
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-left: 0%;
+  letter-spacing: 4px;
+  margin-top: 10px;
+  letter-spacing: 0.1em;
+}
+
+.number100Two {
+  height: 60px;
+  width: 150px;
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-top: 10px;
+  margin-right: 39%;
+  letter-spacing: 0.1em;
+}
+
+.numberWrapperTwo {
+  padding: 0 0 0 28%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  overflow-y: hidden;
+}
+
+.number10000 {
+  height: 60px;
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-top: 0px;
+  letter-spacing: 0.1em;
+}
+
+.number9600 {
+  height: 60px;
+  width: 250px;
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-top: 0px;
+  letter-spacing: 0.1em;
+  margin-right: 9%;
+}
+
+.stars {
+  height: 55px;
+  width: 180px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #44a838;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  left: 33%;
+  bottom: -30px;
+  letter-spacing: 0.1em;
+}
+
+.contributors {
+  height: 55px;
+  width: 160px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #44a838;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  right: 36%;
+  bottom: 50px;
+  letter-spacing: 0.1em;
+}
+
+.developerFans {
+  height: 90px;
+  width: 215px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #44a838;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  right: 10%;
+  bottom: -50px;
+  letter-spacing: 0.1em;
+}
+
+.projects {
+  height: 60px;
+  width: 120px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #44a838;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  position: absolute;
+  left: 10%;
+  bottom: 40px;
+  letter-spacing: 0.1em;
+}
+
+.featuresCatchyText {
+  height: 44px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: normal;
+  color: black;
+  margin-top: 10px;
+  letter-spacing: 0.1em;
+}
+
+.developersPortalHeadlineWrapper {
+  margin-top: 150px;
+  margin-bottom: 69px;
+  left: 10%;
+  position: relative;
+}
+
+.developersPortalRectangle {
+  width: 200px;
+  height: 20px;
+  background-color: #d2ffca;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 80px;
+}
+
+.developersPortalHeadline {
+  height: 90px;
+  width: 500px;
+  font-family: "Montserrat";
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 60px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  letter-spacing: 4px;
+  letter-spacing: 0.1em;
+  bottom: 60px;
+}
+
+.developersPortalSectionWrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  margin-top: -100px;
+}
+
+.tutorialsWrapper {
+  position: relative;
+}
+
+.contentWrapperOne {
+  background-color: honeydew;
+  border-radius: 50px;
+  padding: 40px 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 60px;
+}
+
+.tutorialsHeadline {
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 45px;
+  color: black;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-bottom: 11px;
+  letter-spacing: 2.8px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.developersPortalContent {
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  width: 325px;
+}
+
+.takeMeThereLinkButtonTwo {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.takeMeThereLinkButtonThree {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.takeMeThereLink {
+  width: 100%;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  color: black;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+  cursor: pointer;
+}
+
+.takeMeThereLink:hover {
+  color: #44a838;
+}
+
+.takeMeThereLink:active {
+  color: black;
+}
+
+.tutorialsImage {
+  width: 300px;
+  height: 200px;
+}
+
+.contentWrapperTwo {
+  background-color: honeydew;
+  border-radius: 50px;
+  padding: 40px 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.howToGuidesImage {
+  width: 300px;
+  height: 200px;
+}
+
+.howToGuidesHeadline {
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 75px;
+  color: black;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: -2px;
+  letter-spacing: 2.8px;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.contentWrapperThree {
+  background-color: honeydew;
+  border-radius: 50px;
+  padding: 40px 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 60px;
+}
+
+.referencesImage {
+  width: 300px;
+  height: 200px;
+}
+
+.refrencesHeadline {
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 45px;
+  color: black;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  letter-spacing: 2.8px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.talksSectionWrapper {
+  background-color: white;
+  border-radius: 0px;
+  padding: 30px 0px 60px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.talksRectangle {
+  width: 80px;
+  height: 20px;
+  background-color: #d2ffca;
+  border-radius: 50px;
+  position: relative;
+  top: 55px;
+  left: 10%;
+}
+
+.talksHeadline {
+  height: 90px;
+  width: 140px;
+  font-family: "Montserrat";
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 60px;
+  color: black;
+  letter-spacing: 4px;
+  position: relative;
+  z-index: 1;
+  left: 10%;
+}
+
+.talksBothWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.talksWrapper {
+  background-color: honeydew;
+  border-radius: 70px 20px 20px;
+  padding: 20px 20px 0px 40px;
+}
+
+.talksUpperWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.talksImage {
+  width: 275px;
+  height: 160px;
+  margin-top: 5px;
+  margin-right: 25px;
+  border-radius: 10px;
+}
+
+.talksDetail {
+  height: 120px;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  color: black;
+  overflow-y: hidden;
+}
+
+.talksContentHeadline {
+  overflow-y: hidden;
+  height: 80px;
+  width: 430px;
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 35px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  letter-spacing: 2.2px;
+}
+
+.talksContent {
+  height: 150px;
+  width: 430px;
+  top: -10px;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: justify;
+  position: relative;
+  letter-spacing: 2px;
+}
+
+.readMoreLink {
+  width: 95%;
+  height: 20px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: normal;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  letter-spacing: 2px;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+  cursor: pointer;
+  top: -15px;
+}
+
+.readMoreLink:hover {
+  color: #44a838;
+}
+
+.readMoreLink:active {
+  color: black;
+}
+
+.honorsAndAwardsSection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  margin-bottom: -60px;
+}
+
+.honorsAndAwardsHeadlineWrapper {
+  margin-bottom: 51px;
+  left: 10%;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.honorsAndAwardsRectangle {
+  width: 200px;
+  height: 20px;
+  background-color: #d2ffca;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.honorsAndAwardsHeadline {
+  height: 90px;
+  width: 515px;
+  font-family: "Montserrat";
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 60px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  letter-spacing: 4px;
+  margin-bottom: -20px;
+  margin-top: -20px;
+}
+
+.honorsAndAwardsFirstWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.honorsAndAwardsFirstHeadline {
+  overflow-y: hidden;
+  height: 70px;
+  width: 520px;
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 35px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: justify;
+  margin-left: 25px;
+  letter-spacing: 2.2px;
+}
+
+.honorsAndAwardsFirstContentWrapper {
+  background-position: center;
+  background-image: url("https://static.overlay-tech.com/assets/8b71a728-84ff-4edf-9e69-98ad56b18555.svg");
+  padding: 10px 50px 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.honorsAndAwardsFirstContent {
+  overflow-y: hidden;
+  height: 185px;
+  width: 250px;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
+  margin-right: 100px;
+  letter-spacing: 1.5px;
+}
+
+.awardImageOne {
+  width: 230px;
+  height: 160px;
+  position: relative;
+  left: 311px;
+  bottom: 220px;
+  border-radius: 15px;
+}
+
+.learnMoreButtonOne {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  color: black;
+  margin-top: 185px;
+  letter-spacing: 1.5px;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+  cursor: pointer;
+}
+
+.learnMoreButtonOne:hover {
+  color: #44a838;
+}
+
+.learnMoreButtonOne:active {
+  color: black;
+}
+
+.honorsAndAwardsSecondWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.honorsAndAwardsSecondHeadline {
+  overflow-y: hidden;
+  height: 70px;
+  width: 520px;
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 35px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: justify;
+  margin-left: 25px;
+  letter-spacing: 2.2px;
+}
+
+.honorsAndAwardsSecondContentWrapper {
+  background-position: center;
+  background-image: url("https://static.overlay-tech.com/assets/8b71a728-84ff-4edf-9e69-98ad56b18555.svg");
+  padding: 10px 50px 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.honorsAndAwardsSecondContent {
+  overflow-y: hidden;
+  height: 185px;
+  width: 250px;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
+  margin-right: 100px;
+  letter-spacing: 1.5px;
+}
+
+.awardImageTwo {
+  width: 230px;
+  height: 160px;
+  position: relative;
+  left: 311px;
+  bottom: 220px;
+  border-radius: 15px;
+}
+
+.learnMoreButtonTwo {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  color: black;
+  margin-top: 185px;
+  letter-spacing: 1.5px;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+  cursor: pointer;
+}
+
+.learnMoreButtonTwo:hover {
+  color: #44a838;
+}
+
+.learnMoreButtonTwo:active {
+  color: black;
+}
+
+.voiceOfDevelopersHeadline {
+  position: relative;
+  margin-left: 10%;
+  top: -40px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.voiceOfDevelopersRectangle {
+  position: relative;
+  width: 250px;
+  height: 20px;
+  background-color: #d2ffca;
+  border-radius: 50px;
+  margin-left: 10%;
+  top: 10px;
+}
+
+.voiceOfDevelopersAllWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.voiceOfDevelopersOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  margin-top: 0px;
+  background: honeydew;
+  border-radius: 200px;
+  margin-left: 5%;
+}
+
+.voiceOfDevelopersTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  margin-top: 0px;
+  background: honeydew;
+  border-radius: 200px;
+}
+
+.voiceOfDevelopersThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  margin-top: 0px;
+  background: honeydew;
+  border-radius: 200px;
+  margin-right: 5%;
+}
+
+.voiceOfDevelopersImageOne {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  background: url(https://static.overlay-tech.com/assets/39ed31d8-bfcc-4c2f-98cc-7f86022ee490.png);
+  border-radius: 100000px;
+}
+
+.voiceOfDevelopersImageTwo {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  background: url(https://static.overlay-tech.com/assets/39ed31d8-bfcc-4c2f-98cc-7f86022ee490.png);
+  border-radius: 100000px;
+}
+
+.voiceOfDevelopersImageThree {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  background: url(https://static.overlay-tech.com/assets/39ed31d8-bfcc-4c2f-98cc-7f86022ee490.png);
+  border-radius: 100000px;
+}
+
+.voiceOfDevelopersText {
+  position: relative;
+  width: 80%;
+  height: 157px;
+  top: 125px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.ourContributorsButtonWrapper {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.ourContributorsButton {
+  overflow-y: hidden;
+  width: 400px;
+  height: 50px;
+  margin-top: 50px;
+  background: #d2ffca;
+  border-radius: 100px;
+  border: none;
+  bottom: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 50px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  letter-spacing: 2px;
+  color: black;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+  cursor: pointer;
+}
+
+.ourContributorsButton:hover {
+  color: #44a838;
+}
+
+.ourContributorsButton:active {
+  color: black;
+}
+
+.sponsorsHeadline {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  left: 10%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin-top: 0px;
+}
+
+.sponsorsRectangle {
+  position: relative;
+  width: 160px;
+  height: 20px;
+  background-color: #d2ffca;
+  border-radius: 50px;
+  left: 10%;
+  top: 125px;
+}
+
+.sponsorsSectionWrapper {
+  width: 100%;
+  margin-top: 220px;
+}
+
+.sponsorsFirstSection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  height: 200px;
+  overflow-y: hidden;
+}
+
+.sponsorsSecondSection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  height: 200px;
+  margin: 0 9%;
+  overflow-y: hidden;
+}
+
+.sponsorsOne {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 150px;
+  height: 150px;
+  background: #f4fff2;
+  border-radius: 20px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.sponsorsTwo {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 150px;
+  height: 150px;
+  background: #f4fff2;
+  border-radius: 20px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.sponsorsThree {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 150px;
+  height: 150px;
+  background: #f4fff2;
+  border-radius: 20px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.sponsorsFour {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 150px;
+  height: 150px;
+  background: #f4fff2;
+  border-radius: 20px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.sponsorsFive {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 150px;
+  height: 150px;
+  background: #f4fff2;
+  border-radius: 20px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.sponsorsSix {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 150px;
+  height: 150px;
+  background: #f4fff2;
+  border-radius: 20px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin: 0 18% 0 0;
+}
+
+.sponsorsSeven {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 150px;
+  height: 150px;
+  background: #f4fff2;
+  border-radius: 20px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.sponsorsOneImage {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  left: 20%;
+  bottom: -17%;
+  width: 62%;
+}
+
+.sponsorsTwoImage {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  left: 18%;
+  bottom: -16%;
+}
+
+.sponsorsThreeImage {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  left: -5%;
+  bottom: -39%;
+}
+
+.sponsorsFourImage {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  border-radius: 682%;
+}
+
+.sponsorsFiveImage {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  left: 13%;
+  bottom: -16%;
+}
+
+.sponsorsSixImage {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  left: -4%;
+  bottom: -41%;
+}
+
+.sponsorsSevenImage {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  left: 13%;
+  bottom: -16%;
+}
+
+.footer {
+  margin-top: 120px;
+  background-color: #d2ffca;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.footerUpper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.footerColumnEmphasis {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 32px;
+  color: black;
+  letter-spacing: 4px;
+  margin-top: 50px;
+}
+
+.footerColumnOne {
+  height: 600px;
+  display: inline-block;
+  width: 300px;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 35px;
+  color: black;
+  letter-spacing: 2px;
+}
+
+.footerColumnOne a:hover {
+  color: #44a838;
+  cursor: pointer;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+}
+
+.footerColumnOne a:active {
+  color: black;
+}
+
+.footerColumnTwo {
+  height: 600px;
+  display: inline-block;
+  width: 300px;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 35px;
+  color: black;
+  letter-spacing: 2px;
+}
+
+.footerColumnTwo a:hover {
+  color: #44a838;
+  cursor: pointer;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+}
+
+.footerColumnTwo a:active {
+  color: black;
+}
+
+.footerColumnThree {
+  height: 600px;
+  display: inline-block;
+  width: 300px;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 35px;
+  color: black;
+  letter-spacing: 2px;
+}
+
+.footerColumnThree a:hover {
+  color: #44a838;
+  cursor: pointer;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+}
+
+.footerColumnThree a:active {
+  color: black;
+}
+
+.scannerWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: -100px;
+}
+
+.scanner {
+  width: 210px;
+  height: 210px;
+  padding: 0px 10px 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.scannerText {
+  height: 280px;
+  width: 380px;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 33px;
+  color: black;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+.wechatyLogoFooter {
+  margin-top: -140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.codeOfConductText {
+  height: 15px;
+  margin-top: 20px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+}
+
+.codeOfConductText a:hover {
+  color: #44a838;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+  cursor: pointer;
+}
+
+.codeOfConductText a:active {
+  color: black;
+}
+
+.copyrightText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 25px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  color: black;
+  letter-spacing: 2px;
+  margin-top: -5px;
+  overflow-y: hidden;
+}
+
+a {
+  color: #000000;
+}
+
+@media only screen and (max-width: 700px) {
+  /* .navbar {
+    height: 100px;
+  }
+  .wechatyLogo {
+    width: 150px;
+    height: 55px;
+    left: 8%;
+    top: 4px;
+  }
+  .navbarText {
+    visibility: hidden;
+  }
+  .getStartedButton {
+    width: 35%;
+    height: 35px;
+    left: 58%;
+    top: 15px;
+    font-size: 12px;
+  }
+  .searchBar {
+    visibility: hidden;
+  }
+  .navbarLinks {
+    margin-top: -30px;
+    width: 82%;
+    margin-left: 9%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .newsLink {
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .blogsLink {
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .contributorsLink {
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .docsLink {
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .githubLink {
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 1px;
+  } */
+
+  .heroSection {
+    top: 0px;
+    height: 95vh;
+  }
+
+  .heroTagLine {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 4px;
+    height: 200px;
+    width: 85%;
+    margin-left: 8%;
+    top: 0px;
+  }
+
+  .heroTagLineWrapper {
+    margin: 160px 0 0 0px;
+    width: 100%;
+  }
+
+  .heroTagLineEmphasis1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .heroSlogan {
+    margin-left: 0;
+    width: 100%;
+    top: 180px;
+    font-size: 12px;
+  }
+
+  .heroChatbotImage {
+    visibility: hidden;
+  }
+
+  .heroImageMobile {
+    position: absolute;
+    top: 270px;
+    left: 15%;
+    width: 70%;
+    max-width: 320px;
+    visibility: visible;
+  }
+
+  .letsDiveInButton {
+    height: 40px;
+    width: 75%;
+    margin-top: 180px;
+    font-size: 22px;
+    margin-left: 12.5%;
+  }
+
+  .featuresSection {
+    margin-top: 50px;
+  }
+
+  .featuresSectionRectangle {
+    width: 200px;
+    height: 12px;
+    top: 20px;
+  }
+
+  .featuresSectionHeadline {
+    width: 84%;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 40px;
+  }
+
+  .featuresSectionUpperWrapper {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 40px;
+  }
+
+  .checkCircleWrapper {
+    margin-right: 20px;
+  }
+
+  .checkCircle {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    margin-bottom: 15px;
+    padding: 0px;
+  }
+
+  .featuresListingWrapper {
+    margin-right: 0px;
+  }
+
+  .featuresListing {
+    overflow-y: hidden;
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  .videoPlaceholder {
+    width: 350px;
+    height: 200px;
+    margin-bottom: 50px;
+  }
+
+  .featuresSectionLowerWrapper {
+    border-radius: 70px;
+  }
+
+  .featuresText {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  .featuresText a {
+    color: #44a838;
+    font-weight: 800;
+  }
+
+  .numberWrapperOne {
+    width: 100%;
+    padding: 0 0 0 10%;
+  }
+
+  .number100 {
+    font-size: 25px;
+    margin-left: 5%;
+  }
+
+  .number100Two {
+    font-size: 25px;
+    margin-right: -10%;
+  }
+
+  .numberWrapperTwo {
+    padding: 0 0 0 10%;
+    width: 100%;
+  }
+
+  .number10000 {
+    font-size: 25px;
+  }
+
+  .number9600 {
+    width: 175px;
+    font-size: 25px;
+    margin-right: -12%;
+  }
+
+  .stars {
+    font-size: 14px;
+    left: 18%;
+    bottom: -20px;
+  }
+
+  .contributors {
+    font-size: 14px;
+    right: -5%;
+    bottom: 60px;
+  }
+
+  .developerFans {
+    font-size: 14px;
+    right: -15%;
+    bottom: -40px;
+  }
+
+  .projects {
+    font-size: 14px;
+    left: 14%;
+    bottom: 55px;
+  }
+
+  .featuresCatchyText {
+    height: 40px;
+    font-size: 10px;
+    font-weight: 900;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
+  .developersPortalHeadlineWrapper {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    left: 10%;
+  }
+
+  .developersPortalSectionWrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .developersPortalRectangle {
+    width: 120px;
+    height: 12px;
+    bottom: 95px;
+  }
+
+  .developersPortalHeadline {
+    height: 100px;
+    font-size: 24px;
+  }
+
+  .tutorialsHeadline {
+    font-size: 20px;
+  }
+
+  .contentWrapperOne {
+    padding: 50px 40px 30px;
+    margin: 0px 6% 6% 6%;
+  }
+
+  .developersPortalContent {
+    font-size: 12px;
+    line-height: 20px;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .takeMeThereLink {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 10px;
+  }
+
+  .takeMeThereLinkButtonTwo {
+    margin-top: 0px;
+    padding-bottom: 25px;
+  }
+
+  .takeMeThereLinkButtonThree {
+    margin-top: 0px;
+    padding-bottom: 25px;
+  }
+
+  .tutorialsImage {
+    width: 250px;
+    height: 150px;
+  }
+
+  .contentWrapperTwo {
+    padding: 40px 40px 0px;
+    margin: 0px 6% 6% 6%;
+  }
+
+  .howToGuidesImage {
+    width: 250px;
+    height: 150px;
+  }
+
+  .howToGuidesHeadline {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+
+  .contentWrapperThree {
+    padding: 40px 40px 0px;
+    margin: 0px 6% 6% 6%;
+  }
+
+  .referencesImage {
+    width: 250px;
+    height: 150px;
+  }
+
+  .refrencesHeadline {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .talksSectionWrapper {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .talksRectangle {
+    width: 60px;
+    height: 15px;
+    top: 55px;
+    left: 10%;
+  }
+
+  .talksHeadline {
+    height: 70px;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+
+  .talksBothWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: -30px;
+  }
+
+  .talksWrapper {
+    margin: 5% 5% 1%;
+  }
+
+  .talksImage {
+    width: 180px;
+    height: 100px;
+    margin-top: 20px;
+  }
+
+  .talksDetail {
+    margin-top: 15px;
+    height: 110px;
+    width: 180px;
+    font-size: 10px;
+    overflow-y: hidden;
+  }
+
+  .talksContentHeadline {
+    font-size: 16px;
+    line-height: 30px;
+    width: 100%;
+  }
+
+  .talksContent {
+    height: 200px;
+    width: 95%;
+    font-size: 12px;
+    line-height: 20px;
+    top: -30px;
+  }
+
+  .readMoreLink {
+    font-size: 12px;
+    top: -60px;
+    line-height: 10px;
+    margin-bottom: -40px;
+  }
+
+  .honorsAndAwardsSection {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .honorsAndAwardsHeadlineWrapper {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    overflow-x: hidden;
+  }
+
+  .honorsAndAwardsRectangle {
+    width: 160px;
+    height: 15px;
+    bottom: 10px;
+  }
+
+  .honorsAndAwardsHeadline {
+    font-size: 24px;
+  }
+
+  .honorsAndAwardsFirstHeadline {
+    height: 80px;
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 10%;
+  }
+
+  .honorsAndAwardsFirstContentWrapper {
+    width: 80%;
+    padding: 10px 20px 0px 20px;
+    margin: 5%;
+    border-radius: 20px;
+    margin-bottom: -40px;
+  }
+
+  .honorsAndAwardsFirstContent {
+    width: 75%;
+    font-size: 10px;
+    line-height: 20px;
+    margin-right: 20px;
+  }
+
+  .awardImageOne {
+    width: 120px;
+    height: 90px;
+    left: 58%;
+    bottom: 150px;
+  }
+
+  .learnMoreButtonOne {
+    width: 100px;
+    font-family: "Montserrat";
+    font-size: 10px;
+    margin-top: 160px;
+  }
+
+  .honorsAndAwardsSecondHeadline {
+    height: 80px;
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 10%;
+  }
+
+  .honorsAndAwardsSecondContentWrapper {
+    width: 80%;
+    padding: 10px 20px 0px 20px;
+    margin: 5%;
+    border-radius: 20px;
+  }
+
+  .honorsAndAwardsSecondContent {
+    width: 75%;
+    font-size: 10px;
+    line-height: 20px;
+    margin-right: 20px;
+  }
+
+  .awardImageTwo {
+    width: 120px;
+    height: 90px;
+    left: 58%;
+    bottom: 210px;
+  }
+
+  .learnMoreButtonTwo {
+    width: 100px;
+    font-family: "Montserrat";
+    margin-top: 160px;
+    font-size: 10px;
+  }
+
+  .voiceOfDevelopersHeadline {
+    top: -5px;
+    font-size: 24px;
+  }
+
+  .voiceOfDevelopersRectangle {
+    width: 160px;
+    height: 15px;
+    top: 30px;
+  }
+
+  .voiceOfDevelopersAllWrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .voiceOfDevelopersOne {
+    overflow-y: hidden;
+    height: 250px;
+    border-radius: 100px;
+    margin: 5% 5% 1% 5%;
+  }
+
+  .voiceOfDevelopersTwo {
+    overflow-y: hidden;
+    height: 250px;
+    border-radius: 100px;
+    margin: 5% 5% 1% 5%;
+  }
+  .voiceOfDevelopersThree {
+    overflow-y: hidden;
+    height: 250px;
+    border-radius: 100px;
+    margin: 5% 5% 1% 5%;
+  }
+  .voiceOfDevelopersImageOne {
+    width: 120px;
+    height: 110px;
+  }
+  .voiceOfDevelopersImageTwo {
+    width: 120px;
+    height: 110px;
+  }
+  .voiceOfDevelopersImageThree {
+    width: 120px;
+    height: 110px;
+  }
+  .voiceOfDevelopersText {
+    top: 90px;
+    font-size: 12px;
+  }
+  .ourContributorsButtonWrapper {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .ourContributorsButton {
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+  }
+  .sponsorsHeadline {
+    font-size: 24px;
+    margin-top: -20px;
+  }
+  .sponsorsRectangle {
+    position: relative;
+    width: 160px;
+    height: 15px;
+    top: 95px;
+  }
+  .sponsorsSectionWrapper {
+    margin-top: 150px;
+  }
+  .sponsorsFirstSection {
+    height: 90px;
+  }
+  .sponsorsSecondSection {
+    height: 90px;
+  }
+  .sponsorsOne {
+    width: 70px;
+    height: 70px;
+  }
+  .sponsorsTwo {
+    width: 70px;
+    height: 70px;
+  }
+  .sponsorsThree {
+    width: 70px;
+    height: 70px;
+  }
+  .sponsorsFour {
+    width: 70px;
+    height: 70px;
+  }
+  .sponsorsFive {
+    width: 70px;
+    height: 70px;
+  }
+  .sponsorsSix {
+    width: 70px;
+    height: 70px;
+    margin: 0 18% 0 0;
+  }
+  .sponsorsSeven {
+    width: 70px;
+    height: 70px;
+  }
+  .sponsorsTwoImage {
+    width: 45px;
+  }
+  .sponsorsFiveImage {
+    width: 55px;
+  }
+  .sponsorsSevenImage {
+    width: 55px;
+  }
+  .footerUpper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .footerColumnEmphasis {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .footerColumnOne {
+    font-size: 12px;
+    line-height: 30px;
+    width: 170px;
+    height: 330px;
+  }
+  .footerColumnTwo {
+    font-size: 12px;
+    line-height: 30px;
+    width: 140px;
+    height: 330px;
+  }
+  .footerColumnEmphasisFirst {
+    font-size: 16px;
+    line-height: 30px;
+    position: absolute;
+    top: 260px;
+    width: 200px;
+    right: 38%;
+  }
+  .footerColumnThree {
+    font-size: 12px;
+    line-height: 30px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 350px;
+    right: 38%;
+  }
+  .scannerWrapper {
+    margin-left: 0%;
+  }
+  .scanner {
+    width: 150px;
+    margin: 120px 0 -40px 0;
+  }
+  .scannerText {
+    font-size: 12px;
+    line-height: 30px;
+    width: 320px;
+  }
+  .wechatyLogoFooter {
+    margin-top: -60px;
+    width: 50%;
+  }
+  .codeOfConductText {
+    font-size: 15px;
+  }
+  .copyrightText {
+    font-size: 10px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
+  /* .navbar {
+    height: 120px;
+  }
+  .wechatyLogo {
+    width: 18%;
+    left: 3%;
+    top: 8px;
+  }
+  .navbarText {
+    font-size: 15px;
+  }
+  .navbarLinks {
+    width: 50%;
+  }
+  .getStartedButton {
+    height: 34%;
+    left: 82%;
+    top: 20px;
+    font-size: 15px;
+  }
+  .newsLink {
+    font-size: 15px;
+  }
+  .blogsLink {
+    font-size: 15px;
+  }
+  .contributorsLink {
+    font-size: 15px;
+  }
+  .docsLink {
+    font-size: 15px;
+  }
+  .githubLink {
+    font-size: 15px;
+  }
+  .searchBar {
+    margin-right: 9%;
+    width: 22%;
+    height: 32px;
+    font-size: 15px;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 12px;
+    margin-top: 0;
+    top: 0;
+    padding-top: -10px;
+  }
+  :-ms-input-placeholder {
+    font-size: 12px;
+    margin-top: 0;
+    top: 0;
+    padding-top: -10px;
+  }
+  ::-ms-input-placeholder {
+    font-size: 12px;
+    margin-top: 0;
+    top: 0;
+    padding-top: -10px;
+  }
+  ::placeholder {
+    font-size: 12px;
+    margin-top: 0;
+    top: 0;
+    padding-top: -10px;
+  } */
+
+  .heroSection {
+    overflow-x: hidden;
+  }
+
+  .heroTagLine {
+    top: 0px;
+    margin-left: 6%;
+    font-size: 25px;
+    line-height: 50px;
+  }
+
+  .heroTagLineWrapper {
+    margin: 150px 0 0 15px;
+  }
+
+  .heroTagLineEmphasis1 {
+    font-size: 50px;
+  }
+
+  .heroSlogan {
+    font-size: 18px;
+    height: 85px;
+    top: 210px;
+  }
+
+  .heroChatbotImage {
+    float: right;
+    overflow-x: hidden;
+    margin-top: -170px;
+    width: 450px;
+    margin-right: -40px;
+  }
+
+  .letsDiveInButton {
+    height: 45px;
+    margin-top: 260px;
+    font-size: 22px;
+  }
+
+  .featuresSection {
+    margin-top: -400px;
+  }
+
+  .featuresSectionRectangle {
+    width: 300px;
+    height: 18px;
+  }
+
+  .featuresSectionHeadline {
+    font-size: 28px;
+    line-height: 70px;
+  }
+
+  .checkCircleWrapper {
+    margin-right: 25px;
+    margin-left: 40px;
+    padding-top: 0;
+  }
+
+  .checkCircle {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    padding-top: 0px;
+    margin-bottom: 8px;
+  }
+
+  .featuresListingWrapper {
+    margin-right: 40px;
+  }
+
+  .featuresListing {
+    line-height: 25px;
+    font-size: 16px;
+    margin-top: 2%;
+    height: 22px;
+  }
+
+  .videoPlaceholder {
+    width: 420px;
+    height: 250px;
+    margin-right: 40px;
+  }
+
+  .featuresText {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .number100 {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+
+  .number100Two {
+    font-size: 30px;
+    margin-right: 30%;
+    margin-bottom: 35px;
+  }
+
+  .number10000 {
+    font-size: 30px;
+  }
+
+  .number9600 {
+    font-size: 30px;
+    margin-right: 0%;
+  }
+
+  .stars {
+    font-size: 15px;
+  }
+
+  .contributors {
+    font-size: 15px;
+    margin-right: -8%;
+    margin-bottom: 35px;
+  }
+
+  .developerFans {
+    font-size: 15px;
+    margin-right: -5%;
+  }
+
+  .projects {
+    font-size: 15px;
+    margin-bottom: 35px;
+  }
+
+  .featuresCatchyText {
+    font-size: 22px;
+  }
+
+  .developersPortalHeadlineWrapper {
+    margin-top: 100px;
+    margin-bottom: 70px;
+  }
+
+  .developersPortalRectangle {
+    width: 160px;
+    height: 18px;
+  }
+
+  .developersPortalHeadline {
+    font-size: 28px;
+  }
+
+  .developersPortalSectionWrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    margin-top: -100px;
+  }
+
+.developersPortalContent {
+  width: 275px;
+}
+
+  .contentWrapperOne {
+    padding: 30px 20px 20px;
+    margin-left: 40px;
+  }
+
+  .tutorialsHeadline {
+    font-size: 18px;
+  }
+
+  .developersPortalContent {
+    font-size: 14px;
+  }
+
+  .takeMeThereLink {
+    font-size: 14px;
+  }
+
+.takeMeThereLinkButtonTwo {
+  margin-top: 15px;
+}
+
+.takeMeThereLinkButtonThree {
+  margin-top: 15px;
+}
+
+  .tutorialsImage {
+    width: 250px;
+    height: 150px;
+  }
+
+  .contentWrapperTwo {
+    padding: 30px 20px 20px;
+    margin-left: 10px;
+  }
+
+  .howToGuidesImage {
+    width: 250px;
+    height: 150px;
+  }
+
+  .howToGuidesHeadline {
+    font-size: 18px;
+  }
+
+  .contentWrapperThree {
+    padding: 30px 20px 20px;
+    margin-right: 40px;
+    margin-left: 10px;
+  }
+
+  .referencesImage {
+    width: 250px;
+    height: 150px;
+  }
+
+  .refrencesHeadline {
+    font-size: 18px;
+  }
+
+  .talksRectangle {
+    width: 60px;
+    height: 18px;
+    top: 50px;
+  }
+
+  .talksHeadline {
+    font-size: 28px;
+  }
+
+  .talksWrapper {
+    padding: 10px 0px 0px 20px;
+  }
+
+  .talksImage {
+    margin-top: 3%;
+    width: 200px;
+    height: 120px;
+  }
+
+  .talksDetail {
+    font-size: 15px;
+    overflow-y: hidden;
+    margin-top: 10px;
+  }
+
+  .talksContentHeadline {
+    height: 60px;
+    width: 360px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .talksContent {
+    height: 160px;
+    width: 350px;
+    font-size: 12px;
+  }
+
+  .readMoreLink {
+    font-size: 12px;
+  }
+
+  .honorsAndAwardsHeadlineWrapper {
+    margin-bottom: 0px;
+  }
+
+  .honorsAndAwardsRectangle {
+    width: 160px;
+    height: 18px;
+  }
+
+  .honorsAndAwardsHeadline {
+    height: 75px;
+    width: 515px;
+    font-size: 28px;
+  }
+
+  .honorsAndAwardsFirstHeadline {
+    height: 150px;
+    width: 350px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 80px;
+  margin-bottom: -20px;
+  margin-top: 40px;
+  }
+
+  .honorsAndAwardsFirstContentWrapper {
+    width: 80%;
+    padding: 0px 0px 0px 20px;
+    margin-left: 60px;
+  }
+
+  .honorsAndAwardsFirstContent {
+    width: 250px;
+    font-size: 12px;
+    line-height: 20px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    margin-top:20px;
+  }
+
+  .awardImageOne {
+    width: 100px;
+    height: 80px;
+    left: 280px;
+    bottom: 190px;
+  }
+
+  .learnMoreButtonOne {
+    font-size: 12px;
+    line-height: 20px;
+    width: 150px;
+    margin-top: 150px;
+  }
+
+  .honorsAndAwardsSecondWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .honorsAndAwardsSecondHeadline {
+    height: 150px;
+    width: 350px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 50px;
+  margin-bottom: -20px;
+  margin-top: 40px;
+  }
+
+  .honorsAndAwardsSecondContentWrapper {
+    width: 80%;
+    padding: 0px 0px 0px 20px;
+    margin-left: 30px;
+  }
+
+  .honorsAndAwardsSecondContent {
+    width: 250px;
+    font-size: 12px;
+    line-height: 20px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    margin-top:20px;
+  }
+
+  .awardImageTwo {
+    width: 100px;
+    height: 80px;
+    left: 280px;
+    bottom: 190px;
+  }
+
+  .learnMoreButtonTwo {
+    font-size: 12px;
+    line-height: 20px;
+    width: 150px;
+    margin-top: 150px;
+  }
+
+  .voiceOfDevelopersHeadline {
+    top: 40px;
+    font-size: 28px;
+  }
+
+  .voiceOfDevelopersRectangle {
+    width: 200px;
+    height: 18px;
+    top: 80px;
+  }
+
+  .voiceOfDevelopersAllWrapper {
+    margin-top: 100px;
+  }
+
+  .voiceOfDevelopersOne {
+    margin-right: 2%;
+    height: 300px;
+    margin-left: 2%;
+  }
+
+  .voiceOfDevelopersTwo {
+    margin-right: 2%;
+    height: 300px;
+  }
+
+  .voiceOfDevelopersThree {
+    margin-right: 2%;
+    height: 300px;
+  }
+
+  .voiceOfDevelopersImageOne {
+    width: 120px;
+    height: 120px;
+  }
+
+  .voiceOfDevelopersImageTwo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .voiceOfDevelopersImageThree {
+    width: 120px;
+    height: 120px;
+  }
+
+  .voiceOfDevelopersText {
+    font-size: 12px;
+    top: 110px;
+  }
+
+  .ourContributorsButton {
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 40px;
+  }
+
+  .sponsorsHeadline {
+    font-size: 28px;
+  }
+
+  .sponsorsRectangle {
+    top: 120px;
+    width: 140px;
+    height: 18px;
+  }
+
+  .sponsorsSectionWrapper {
+    margin-top: 190px;
+  }
+
+  .sponsorsOne {
+    width: 120px;
+    height: 120px;
+  }
+
+  .sponsorsTwo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .sponsorsThree {
+    width: 120px;
+    height: 120px;
+  }
+
+  .sponsorsFour {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .sponsorsFive {
+    width: 120px;
+    height: 120px;
+  }
+
+  .sponsorsSix {
+    width: 120px;
+    height: 120px;
+  }
+
+  .sponsorsSeven {
+    width: 120px;
+    height: 120px;
+  }
+
+  .sponsorsTwoImage {
+    width: 80px;
+  }
+
+  .sponsorsFiveImage {
+    width: 90px;
+  }
+
+  .sponsorsSevenImage {
+    width: 90px;
+  }
+  
+  .footerColumnEmphasis {
+    font-size: 18px;
+  }
+
+  .footerColumnOne {
+    font-size: 14px;
+  width: 220px;
+  }
+
+  .footerColumnTwo {
+    font-size: 14px;
+  width: 220px;
+  }
+
+  .footerColumnThree {
+    font-size: 14px;
+  width: 220px;
+  }
+
+  .scanner {
+    width: 190px;
+  }
+
+  .scannerText {
+    font-size: 14px;
+  }
+
+  .codeOfConductText {
+    font-size: 18px;
+  }
+
+  .copyrightText {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1860px) {
+  .featuresSection {
+    margin-top: 150px;
+  }
+}
