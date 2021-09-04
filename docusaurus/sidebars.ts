@@ -289,7 +289,6 @@ const tutorials = {
     subMenu(usingPluginWithWechaty),
     'tutorials/using-vorpal-with-wechaty',
     subMenu(usingReduxWithWechaty),
-    'tutorials/cheatsheet',
     subMenu(examples),
   ],
 }
