@@ -16,7 +16,6 @@ import ShortestChatbotRust        from '../rust/transclusions/shortest-chatbot.m
   groupId="programming-languages"
   defaultValue="ts"
   values={[
-    { label: 'OpenAPI',     value: 'openapi', },
     { label: 'TypeScript',  value: 'ts', },
     { label: 'JavaScript',  value: 'js', },
     { label: 'Python',      value: 'py', },
@@ -26,12 +25,9 @@ import ShortestChatbotRust        from '../rust/transclusions/shortest-chatbot.m
     { label: 'Scala',       value: 'scala', },
     { label: 'C#',          value: 'csharp', },
     { label: 'Rust',        value: 'rust', },
+    { label: 'OpenAPI',     value: 'openapi', },
   ]}
 >
-
-<TabItem value="openapi">
-  <ShortestChatbotOpenApi />
-</TabItem>
 
 <TabItem value="ts">
   <ShortestChatbotTypeScript />
@@ -67,6 +63,10 @@ import ShortestChatbotRust        from '../rust/transclusions/shortest-chatbot.m
 
 <TabItem value="rust">
   <ShortestChatbotRust />
+</TabItem>
+
+<TabItem value="openapi">
+  <ShortestChatbotOpenApi />
 </TabItem>
 
 </Tabs>
