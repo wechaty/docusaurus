@@ -77,7 +77,7 @@ tags:
 
 ## 项目成果
 
-项目仓库: <https://github.com/zzzyer/wechaty-puppet-official-account>  
+项目仓库: <https://github.com/wechaty/wechaty-puppet-official-account>  
 
 ### live coding视频
 
