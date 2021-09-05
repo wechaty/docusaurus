@@ -2,6 +2,16 @@
 title: 'Managing rooms'
 ---
 
+Managing room is one of the important features in Wechaty. The word "room" here refers to Wechat rooms (also called groups).
+You can instruct the bot to create a new room, change the topic (or name) of the room, add a contact to a specific room, remove a contact from a room, and mention(@) someone in the room.
+
+:::tip
+
+A Room can be identified by either groupId or room topic (room name)
+
+:::
+
+---
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
@@ -112,6 +122,8 @@ class MyBot(Wechaty):
 
 ## Adding contact to room
 
+`add` accepts 'Contact' as an argument. You can get the Contact by using `msg.talker()`.
+
 <Tabs
   groupId="programming-languages"
   defaultValue="ts"
@@ -131,7 +143,47 @@ class MyBot(Wechaty):
 <TabItem value="ts">
 
 ```ts
-// TODO: Pull Request is welcome!
+import {
+  Contact,
+  Wechaty,
+  log,
+  Room,
+} from 'wechaty'
+
+//helper function
+async function putInRoom(person: Contact, room: Room) {
+  //Add a log
+  log.info("Bot", 'putInRoom("%s", "%s")', contact.name(), await room.topic());
+
+  try {
+    //Try put the person into the room
+    await room.add(person);
+  } catch (e) {
+    //any error will be here
+    log.error("Bot", "putInRoom() exception: " + e.stack);
+  }
+}
+
+//in the main code
+//If the secrete code is ding
+if (msg.text() === 'ding') {
+  //get the Person/Contact
+  const from = msg.talker();
+
+  //find the targetRoom from the bot's room list
+  //Option1: by group id
+  //set the targetRoomId
+  const tagetRoomId = '12345678910@chatroom'
+  const targetRoom = await bot.Room.find({id: tagetRoomId})
+  //Option2: by group name
+  // const tagetRoomTopic =  'testGroup'
+  // const targetRoom = await bot.Room.find({topic:tagetRoomTopic})
+  if (targetRoom instanceof Room) {
+    await putInRoom(from, targetRoom);
+  } else {
+    log.info('Cannot find room, unable to put the person into the room')
+  }
+}
 ```
 
 </TabItem>
@@ -322,6 +374,9 @@ class MyBot(Wechaty):
 </Tabs>
 
 ## Changing topic of the room
+  
+`topic` accepts a `String` as an argument.
+ You can find the `Room` by either room name (a `String`) or room id (format '12345678910@chatroom')
 
 <Tabs
   groupId="programming-languages"
@@ -342,7 +397,37 @@ class MyBot(Wechaty):
 <TabItem value="ts">
 
 ```ts
-// TODO: Pull Request is welcome!
+import {
+  Wechaty,
+  log,
+  Room,
+} from 'wechaty'
+//helper function
+async function changeRoomTopic(room: Room) {
+  log.info("Bot", 'changing room topic for group', await room.topic());
+  const newName ="newName"
+  try {
+    await room.topic(newName);
+    
+  } catch (e) {
+    log.error("Bot", "changeRoomTopic() exception: " + e.stack);
+  }
+
+  //Option1: by group id
+  //set the targetRoomId
+  const tagetRoomId = '12345678910@chatroom'
+  const targetRoom = await bot.Room.find({id: tagetRoomId})
+  //Option2: by group name
+  // const tagetRoomTopic = 'ceshiqun'
+  // const targetRoom = await bot.Room.find({topic:tagetRoomTopic})
+  if (targetRoom instanceof Room) {
+    await changeRoomTopic(targetRoom);
+  } else {
+    log.info('cannot find room, unable to changeRoomTopic')
+  }
+  
+}
+
 ```
 
 </TabItem>
