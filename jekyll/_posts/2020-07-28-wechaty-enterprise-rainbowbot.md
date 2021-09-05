@@ -11,9 +11,6 @@ tags:
 image: /assets/2020/wechaty-rainbowbot/rainbow.jpg
 ---
 
-> Author: [@CavonCheng](https://github.com/CavonCheng)
-> Code: [@rainbow-bot](https://github.com/CavonCheng/rainbow-bot)
-
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
@@ -159,3 +156,6 @@ node app
 ## 感谢
 
 感谢[@beclass](https://github.com/beclass/beclass)的开源项目[`wxbot`](https://github.com/beclass/wxbot)，这是一套优秀的BS版微信robot后台管理系统，让我这枚nodejs全栈初级修炼者学习到了很多，受益匪浅。感谢[Wechaty](https://wechaty.github.io/)团队提供微信机器人SDK，让开发者可以专注于业务代码。 感谢[句子互动](https://www.juzibot.com)提供的pad协议版token。
+
+> Author: [@CavonCheng](https://github.com/CavonCheng)
+> Code: [@rainbow-bot](https://github.com/CavonCheng/rainbow-bot)

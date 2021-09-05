@@ -7,7 +7,6 @@ tags:
   - ai
   - chatbot
   - paddle
-  - sticky
 image: /assets/2021/04-ai-chatbot-paddlehub/banner.png
 ---
 

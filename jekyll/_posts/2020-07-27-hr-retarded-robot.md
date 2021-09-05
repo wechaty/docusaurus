@@ -8,9 +8,6 @@ tags:
   - productivity
 ---
 
-> Author: [xajeyu](https://github.com/xajeyu)
-> Code: [retarded-robot](https://github.com/xajeyu/retarded-robot)
-
 ## 内容列表
 
 - [背景](#背景)
@@ -68,3 +65,6 @@ npm start or yarn start
 
 感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
 感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token
+
+> Author: [xajeyu](https://github.com/xajeyu)
+> Code: [retarded-robot](https://github.com/xajeyu/retarded-robot)

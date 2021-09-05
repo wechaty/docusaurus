@@ -9,10 +9,6 @@ tags:
   - summer-2020
   - entertainment
 ---
-> Author: [@kxz18](https://github.com/kxz18)
-> Code: [@kxz18/CHAssisT](https://github.com/kxz18/CHAssisT)
-
-## 暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
@@ -68,16 +64,18 @@ tags:
 [https://github.com/kxz18/CHAssisT](https://github.com/kxz18/CHAssisT)。
 
 由于中期考核前已经将项目的功能都完成了，因此中期的 presentation 中对项目的功能和结构进行了简单讲解，如果对项目架构比较感兴趣，可以参考这个视频：  
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WlxClO3C_Sc" frameborder="0" allowfullscreen></iframe>
+
+{% include iframe.html src="https://www.youtube.com/embed/WlxClO3C_Sc" %}
 
 中期之后主要进行了一些深度学习上的实验尝试，并对于机器人的交互进行了一定优化，在后阶段的 presentation 中对此进行了阐述：
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BCQx_g8t9l4" frameborder="0"  allowfullscreen></iframe>
+
+{% include iframe.html src="https://www.youtube.com/embed/BCQx_g8t9l4" %}
 
 在bilibili也进行了视频上传：[https://www.bilibili.com/video/BV1zz4y1Z7iJ/](https://www.bilibili.com/video/BV1zz4y1Z7iJ/)
 
 为了能更好地展示项目成果，也按照社区要求对已经实现的功能进行了live coding演示，演示内容见：
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uqBwzAckhzk" frameborder="0" allowfullscreen></iframe>
+{% include iframe.html src="https://www.youtube.com/embed/uqBwzAckhzk" %}
 
 在bilibili也进行了视频上传：[https://www.bilibili.com/video/BV1iz4y1Z74S/](https://www.bilibili.com/video/BV1iz4y1Z74S/)
 
@@ -123,3 +121,6 @@ tags:
 
 - 项目链接：[https://github.com/kxz18/CHAssisT](https://github.com/kxz18/CHAssisT)
 - 联系方式：+86 15068701650 | e: 15068701650@163.com
+
+> Author: [@kxz18](https://github.com/kxz18)
+> Code: [@kxz18/CHAssisT](https://github.com/kxz18/CHAssisT)
