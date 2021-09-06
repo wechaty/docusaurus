@@ -2,13 +2,13 @@
 title: DevOps tools
 ---
 
-![Devops tools](../../static/img/docs/devops-tools/chatie-devops-toolset.gif)
+![Devops tools](../../static/img/docs/devops-tools/chatie-devops-toolset.webp)
 
 The DevOps model is all the rage for most software teams because of the immense benefits it delivers in terms of efficiency over the traditional software development and management processes. Like in any other software project, there are several DevOps toolsets you can use to automate and streamline your Wechaty chatbot building process. You can integrate them as part of your workflow whether you are developing a chatbot or Wechaty puppet. These tools can help improve your efficiency and code quality. Below are some of the tools you can use to automate your workflow in addition to the traditional DevOps tools.
 
 ## [@chatie/semver](https://www.npmjs.com/package/@chatie/semver)
 
-![Devops tools](../../static/img/docs/devops-tools/chatie-semver.png)
+![Devops tools](../../static/img/docs/devops-tools/chatie-semver.webp)
 
 [@chatie/semver](https://www.npmjs.com/package/@chatie/semver) is a simple npm package that provides CLI utility for identifying whether a package VERSION is for production(stable) or development. It is a wrapper for [semver](https://www.npmjs.com/package/semver) package. It also provides TypeScript support.
 
@@ -33,7 +33,7 @@ Numbering rule:
 
 ## [@chatie/git-scripts](https://npmjs.com/package/@chatie/git-scripts)
 
-![Devops tools](../../static/img/docs/devops-tools/chatie-git-scripts.gif)
+![Devops tools](../../static/img/docs/devops-tools/chatie-git-scripts.webp)
 
 This npm package is a wrapper for the [git-scripts](https://www.npmjs.com/package/git-scripts) package. It provides githooks integration for chatie projects. In addition to the features that come with [git-scripts](https://www.npmjs.com/package/git-scripts) package, the `pre-push hook` has been configured to run `npm run lint` followed by `npm version patch` before `git push` for better code quality and version management. You can learn more about `git-scripts` package from its [GitHub home page](https://github.com/nkzawa/git-scripts).
 
@@ -75,7 +75,7 @@ To permanently disable the pre-push git hook, you can delete the related setting
 
 ## [@chatie/tsconfig](https://npmjs.com/package/@chatie/tsconfig)
 
-![Devops tools](../../static/img/docs/devops-tools/chatie-tsconfig.jpg)
+![Devops tools](../../static/img/docs/devops-tools/chatie-tsconfig.webp)
 
 This package is for centralized management of all Wechaty project `tsconfig.json` files created. It provides reusable TypeScript configuration files for you to extend from. You can use it to extend `@chatie/tsconfig` from your `tsconfig.json` file to have the chatie version of the TypeScript configuration.
 
@@ -106,7 +106,7 @@ After installation using the command `npm install @chatie/tsconfig`, it automati
 
 ## [@chatie/eslint-config](https://www.npmjs.com/package/@chatie/eslint-config)
 
-![Devops tools](../../static/img/docs/devops-tools/chatie-eslint-config.jpg)
+![Devops tools](../../static/img/docs/devops-tools/chatie-eslint-config.webp)
 
 You can configure a tool as part of your DevOps continuous integration pipeline to detect and fix problems in your codebase. Since [`tslint`](https://www.npmjs.com/package/tslint) is not supported, you can use [`eslint`](https://eslint.org/) instead to detect and fix problems. [`@chatie/eslint-config`](https://www.npmjs.com/package/@chatie/eslint-config) is a handy npm package you can use for configuring [`eslint`](https://eslint.org/). It can effectively manage Wechaty `eslintrc.js` files.
 
@@ -120,7 +120,7 @@ module.exports = {
 
 ## [pkg-jq](https://www.npmjs.com/package/pkg-jq)
 
-![Devops tools](../../static/img/docs/devops-tools/pkg-jq.gif)
+![Devops tools](../../static/img/docs/devops-tools/pkg-jq.webp)
 
 This tool, which is distributed as npm package, by default searches for `package.json` file in the current and the parent directories. It then uses `jq` syntax to manipulate the `json` file. It is powered by [node-jq](https://npmjs.com/package/node-jq).
 
@@ -132,7 +132,7 @@ The features of `pkg-jq`:
 
 ## [tstest](https://www.npmjs.com/package/tstest)
 
-![Devops tools](../../static/img/docs/devops-tools/tstest.png)
+![Devops tools](../../static/img/docs/devops-tools/tstest.webp)
 
 [pytest](https://docs.pytest.org/en/6.2.x/) in TypeScript. This module was meant to be a TypeScript version of pytest however currently, it’s only a wrapper of `blue-tape` and `@types/blue-tape`.
 
