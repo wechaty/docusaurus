@@ -8,16 +8,6 @@ tags:
 image: /assets/2019/maodou-ketang-demo.png
 ---
 
-> 作者: [limingth](https://github.com/limingth)，[zhaoic](https://github.com/zhaoic) 毛豆网
-
-## 内容纲要
-
-* 毛豆课堂项目背景介绍  
-* 如何用PadPro实现发送微信小程序  
-* 进一步需要完成的工作  
-
-## 毛豆课堂项目背景介绍
-
 3个月前，也就是2019.4.18，我们公司启动了一个小程序项目 -- **毛豆课堂**。这个项目是依托[毛豆网](https://maodou.io)的音视频互动直播技术，搭建一个专注少儿素质课程的在线教育平台。
 
 目前这个小程序的MVP已经通过微信审核上线，初步实现了家长（例如孩子妈妈）给孩子的课程设定时间提醒，提醒的方式包括小程序消息，短信，电话，邮件等四种常用通知方式。转发这个课程还可以邀请和课程有关的人（例如孩子爸爸，同学家长和课程老师等）也加入这个课程提醒，未来计划还会开发一些类似家长朋友圈的社交功能。有兴趣体验的朋友，可以扫这个[毛豆课堂小程序二维码](/assets/2019/maodou-ketang-invite-qrcode.png)。
@@ -41,6 +31,12 @@ image: /assets/2019/maodou-ketang-demo.png
 * <https://github.com/botorange/wechaty-puppet-padpro/pull/172/files>
 
 下面，我就重点介绍一下我们是如何实现发送微信小程序的。
+
+## 内容纲要
+
+* 毛豆课堂项目背景介绍  
+* 如何用PadPro实现发送微信小程序  
+* 进一步需要完成的工作  
 
 ## 如何用PadPro实现发送微信小程序
 
@@ -488,3 +484,5 @@ padpro中想要发送一个小程序需要先打开调试开关`PADPRO_LOG='sill
 * **苏畅** 写的本地开发环境搭建的文档，为我们本地跑通开发环境节省了时间，同时在代码修改过程中也提供了热心的帮助，更重要的是人还长得帅。
 * 还要感谢微信PR群里的 @高原ོ 和 @杉木，帮我们确认了CDNManager可以解决未完成工作里的thumbnailUrl，期待以后能够一起再完善这部分的代码。
 * 最后感谢Wechaty团队提供这么好的一个工具，感谢李卓桓，李佳芮前期做了那么多奠基性的工作，也很高兴通过这个项目认识了正在做[Teamin群协作](https://www.teamin.cc/)的李云军，这么多姓李的，在一起搞事情很开心！:P
+
+> 作者: [limingth](https://github.com/limingth)，[zhaoic](https://github.com/zhaoic) 毛豆网
