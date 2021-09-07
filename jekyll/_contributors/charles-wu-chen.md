@@ -1,7 +1,7 @@
 ---
 name: charleswu
 site: https://github.com/Charles-Wu-Chen
-avatar: /assets/contributors/charles-wu-chen/avatar.jpeg
+avatar: /assets/contributors/charles-wu-chen/avatar.webp
 bio: keep learning keep growing
 email: wuchen2010@gmail.com
 twitter:
