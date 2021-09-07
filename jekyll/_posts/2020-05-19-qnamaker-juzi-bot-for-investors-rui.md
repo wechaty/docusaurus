@@ -9,8 +9,6 @@ tags:
 image: /assets/2020/azure-show/azure-show-rui.png
 ---
 
-> Author: [Rui LI](https://github.com/lijiarui), Microsoft AI MVP, Co-author of Wechaty
-
 欢迎来到 Azure Show 的从零开始，第一期的嘉宾 Rui Li，李佳芮句子互动创始人，连续创业者，微软人工智能最有价值专家（AI MVP），GitHub 7000+ Stars开源项目Wechaty作者，创建并管理了覆盖全球的微信聊天机器人开发者社区，《Chatbot从0到1：对话式交互设计指南》作者。句子互动围绕微信生态为客户提供智能营销和销售服务，帮助企业引流并实现转化，客户覆盖教育、保险、大健康等多个领域。曾入选百度AI加速器，获得PreAngel、Plug and Play，Y Combination, TSVC和阿尔法公社多家中美机构投资。
 
 ![Azure Show](/assets/2020/azure-show/azure-show.png)
@@ -25,26 +23,7 @@ Azure Show 是由微软最有价值专家、微软技术社区区域总监卢建
 
 Wechaty 联合作者李佳芮，用 20 分钟教会你如何用 Azure Cognitive Service QnAMaker.ai 来构建一个能够自动回答投资人问题的 Chatbot !
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe
-  src="https://www.youtube.com/embed/ZYjYAT2g-1Q"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=ZYjYAT2g-1Q" %}
 
 - Bilibili: <https://www.bilibili.com/video/BV1az411q79A>
 

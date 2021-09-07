@@ -24,7 +24,7 @@ In the previous blog, we have deployed [wechaty bot with node.js to aws](https:/
 
 ``` json
 {
-"ip": "xxx.xxx.xxx.xxx",
+"host": "xxx.xxx.xxx.xxx",
 "port": 8788
 }
 ```
