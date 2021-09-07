@@ -7,11 +7,7 @@ categories: article
 image: /assets/2020/java-puppet-manager/java-wechaty-logo.png
 ---
 
-> 作者: [redmaple1](https://github.com/redmaple1/)
-> Code: [Github](https://github.com/wechaty/java-wechaty)
-
-&ensp;&ensp;&ensp;&ensp;我们来简单聊一聊java-wechaty中Puppet Manager的实现。  
-<!-- more -->
+我们来简单聊一聊java-wechaty中Puppet Manager的实现。  
 
 ## 前言
 
@@ -93,3 +89,5 @@ class PuppetManager {
 
 >redmaple1's blog
 [简单聊聊Puppet Manager的实现](http://redmapleren.com/2020/06/16/%E7%AE%80%E5%8D%95%E8%81%8A%E8%81%8APuppet%20Manager%E7%9A%84%E5%AE%9E%E7%8E%B0/#more)
+> 作者: [redmaple1](https://github.com/redmaple1/)
+> Code: [Github](https://github.com/wechaty/java-wechaty)

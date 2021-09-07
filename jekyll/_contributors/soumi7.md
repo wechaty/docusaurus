@@ -1,7 +1,7 @@
 ---
 name: Soumi Bardhan
 site: https://github.com/Soumi7
-avatar: /assets/contributors/soumi7/avatar.jpeg
+avatar: /assets/contributors/soumi7/avatar.webp
 bio: Member @SymPy,technical writer
 email: soumibardhan10@gmail.com
 twitter: https://twitter.com/MsBardhan

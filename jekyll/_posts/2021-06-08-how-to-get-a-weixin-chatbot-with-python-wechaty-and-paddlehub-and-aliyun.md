@@ -10,13 +10,9 @@ tags:
 image: /assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/cover.jpg
 ---
 
-> 作者: [Lovely-Pig](https://github.com/Lovely-Pig/)，一只努力学习的可爱小猪
-
-## 前言
-
 这绝对是全网最细教程，没有之一
 
-### 项目展示
+## 项目展示
 
 ![0](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/0.jpg)
 
@@ -129,7 +125,7 @@ image: /assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddl
 ### 1.19 检查是否运行成功
 
 - 输入网址: <https://api.chatie.io/v0/hosties/your_token_at_here>，例如我输入的地址就是这个: <https://api.chatie.io/v0/hosties/puppet_padlocal_ef0c112ddf9b49fdaa8242b87b83b030>
-- 如果返回了服务器的ip地址以及端口号，比如{"ip":"121.43.228.90","port":8080}，就说明运行成功了，如果返回的是{"ip":"0.0.0.0","port":0}，就说明没有运行成功
+- 如果返回了服务器的ip地址以及端口号，比如{"host":"121.43.228.90","port":8080}，就说明运行成功了，如果返回的是{"host":"0.0.0.0","port":0}，就说明没有运行成功
 ![1-19](/assets/2021/06-how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/1-19.png)
 
 ### 1.20 运行后会输出一大堆东西，这时候我们找到一个Online QR Code的地址点击进去
@@ -472,3 +468,5 @@ asyncio.run(main())
 - python-wechaty: [https://github.com/wechaty/python-wechaty](https://github.com/wechaty/python-wechaty)
 - python-wechaty-getting-started: [https://github.com/wechaty/python-wechaty-getting-started](https://github.com/wechaty/python-wechaty-getting-started)
 - [教你用python-wechaty和web协议开发机器人](https://wechaty.js.org/2021/04/17/python-wechaty-use-web/)
+
+> 作者: [Lovely-Pig](https://github.com/Lovely-Pig/)，一只努力学习的可爱小猪
