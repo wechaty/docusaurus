@@ -14,7 +14,7 @@ Wechaty Puppet Service is gRPC for Wechaty Puppet. To use a Wechaty Puppet Servi
 
 ```sh
 export WECHATY_PUPPET=wechaty-puppet-service
-export WECHATY_PUPPET_SERVICE_TOKEN="__TOKEN__"
+export WECHATY_PUPPET_SERVICE_TOKEN="${TOKEN}"
 ```
 
 > You can switch between different Wechaty Puppet Services by changing your TOKEN. All your source code should work between different tokens without any changes.
@@ -80,25 +80,26 @@ TOKEN is a unique string for authorizing Wechaty Puppet Service.
 
 Here's some TOKEN examples:
 
-1. `puppet_wxwork_7ce4cf8a1ab789166c39c6`: WXWork TOKEN
-1. `puppet_padlocal_7ce48a1ab789166c39c6`: PadLocal TOKEN
-1. `puppet_paimon_7ce4cf8a1ab789166c39c6`: Paimon TOKEN
-1. `puppet_donut_e7ce4cf8a1ab789166c39c6`: Donut TOKEN
-1. `56945fa4-7ce8-4cf8-a1a9-b789166c39c6`: UUIDv4 TOKEN
+1. `wxwork_7ce4cf8a1ab789166c39c6`: WXWork TOKEN
+1. `padlocal_7ce48a1ab789166c39c6`: PadLocal TOKEN
+1. `paimon_7ce4cf8a1ab789166c39c6`: Paimon TOKEN
+1. `donut_e7ce4cf8a1ab789166c39c6`: Donut TOKEN
+1. `uuid_56945fa4-7ce8-4cf8-a1a9-b789166c39c6`: UUIDv4 TOKEN
+1. `insecure_56945fa4-7ce8-4cf8-a1a9-b789166c39c6`: Insecure TOKEN ([Non-TLS](https://github.com/wechaty/wechaty-puppet-service/issues/160) / [World-Readable-Private-Key](https://github.com/wechaty/wechaty-puppet-service/blob/632ffc577958dbb029754ce0fe1138a945864d98/src/auth/ca.ts#L47-L89))
 
 When you are using a Wechaty Puppet Service, you need to provide TOKEN to it so that it can serve you correctly.
 
 The following shell commands demonstrated how to use it under Linux/macOS:
 
 ```shell
-export WECHATY_PUPPET_SERVICE_TOKEN=__TOKEN__
+export WECHATY_PUPPET_SERVICE_TOKEN=${TOKEN}
 
 ts-node bot.ts
 // or: node bot.js
 // or: make bot
 ```
 
-> `__TOKEN__` is your TOKEN
+> `${TOKEN}` is your TOKEN
 
 ### How To Become a Wechaty Puppet Service Provider
 
