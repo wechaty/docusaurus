@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.heroSection {
+  position: relative;
+  left: 0px;
+  mix-blend-mode: normal;
+  overflow-y: hidden;
+}
+
+.heroTagLine {
+  height: 200px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 80px;
+  margin-left: 6%;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.heroTagLineWrapper {
+  position: absolute;
+  margin: 240px 0 0 15px;
+  width: 59.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.heroTagLineEmphasis1 {
+  font-family: "Montserrat";
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 60px;
+  color: black;
+  letter-spacing: 4px;
+  height: 60px;
+  width: 500px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.heroTagLineEmphasis1 a {
+  color: #44a838;
+}
+
+.heroSlogan {
+  position: relative;
+  margin-left: 1%;
+  width: 60%;
+  height: 85px;
+  top: 300px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.heroChatbotImage {
+  float: right;
+  overflow-x: hidden;
+  margin-top: -180px;
+  z-index: 1;
+}
+
+.heroImageMobile {
+  visibility: hidden;
+}
+
+.letsDiveInButton {
+  background-color: #d2ffca;
+  margin-left: 15.8%;
+  border-radius: 50px;
+  height: 50px;
+  width: 30%;
+  margin-top: 400px;
+  border: none;
+  overflow-y: hidden;
+  font-family: "Montserrat";
+  line-height: normal;
+  color: black;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 4px;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+  cursor: pointer;
+}
+
+.letsDiveInButton:hover {
+  color: #44a838;
+}
+
+.letsDiveInButton:active {
+  color: black;
+}
+
+@media only screen and (max-width: 700px) {
+  
+  .heroSection {
+    top: 0px;
+    height: 95vh;
+  }
+
+  .heroTagLine {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 4px;
+    height: 200px;
+    width: 85%;
+    margin-left: 8%;
+    top: 0px;
+  }
+
+  .heroTagLineWrapper {
+    margin: 160px 0 0 0px;
+    width: 100%;
+  }
+
+  .heroTagLineEmphasis1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .heroSlogan {
+    margin-left: 0;
+    width: 100%;
+    top: 180px;
+    font-size: 12px;
+  }
+
+  .heroChatbotImage {
+    visibility: hidden;
+  }
+
+  .heroImageMobile {
+    position: absolute;
+    top: 270px;
+    left: 15%;
+    width: 70%;
+    max-width: 320px;
+    visibility: visible;
+  }
+
+  .letsDiveInButton {
+    height: 40px;
+    width: 75%;
+    margin-top: 180px;
+    font-size: 22px;
+    margin-left: 12.5%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
+  
+  .heroSection {
+    overflow-x: hidden;
+  }
+
+  .heroTagLine {
+    top: 0px;
+    margin-left: 6%;
+    font-size: 25px;
+    line-height: 50px;
+  }
+
+  .heroTagLineWrapper {
+    margin: 150px 0 0 15px;
+  }
+
+  .heroTagLineEmphasis1 {
+    font-size: 50px;
+  }
+
+  .heroSlogan {
+    font-size: 18px;
+    height: 85px;
+    top: 210px;
+  }
+
+  .heroChatbotImage {
+    float: right;
+    overflow-x: hidden;
+    margin-top: -170px;
+    width: 450px;
+    margin-right: -40px;
+  }
+
+  .letsDiveInButton {
+    height: 45px;
+    margin-top: 260px;
+    font-size: 22px;
+  }
+}
