@@ -1,21 +1,14 @@
 ---
 title: "重磅：使用UOS微信桌面版协议登录，wechaty免费版web协议重放荣光"
-author: gengchen528
+author: leochen-g
 categories: article
 tags:
   - code
   - wechaty-puppet-wechat
-  - web协议
+  - web-protocol
   - news
-  - sticky
 image: /assets/2021/04-wechaty-uos-web/wechaty-puppet-wechat.png
 ---
-
-> 作者: [Leo_chen](https://github.com/gengchen528/)，高级前端工程师，喜欢使用node做各种项目
-
-<!-- more -->
-
-## 重磅通知
 
 很高兴能够写这篇文章通知大家Wechaty的web协议又能大放光彩了，如果之前你的微信提示不能登录web端，那么这个更新将会是你的福音。因为现在的`wechaty-puppet-wechat`已经支持使用UOS微信桌面版协议登录，赶快来尝试一下吧。
 
@@ -123,9 +116,11 @@ client-version' = '2.0.0',
 
 ## 快速体验
 
-如果想快速体验Wechay的完整功能，以及可视化配置功能，可以关注我的 [《微信每日说》](https://github.com/gengchen528/wechatBot)  和  [《智能微秘书》](https://github.com/gengchen528/wechat-assistant-pro) 项目，以上项目均已更新最新版web协议，全部支持web登录。
+如果想快速体验Wechaty的完整功能，以及可视化配置功能，可以关注我的 [《微信每日说》](https://github.com/gengchen528/wechatBot)  和  [《智能微秘书》](https://github.com/gengchen528/wechat-assistant-pro) 项目，以上项目均已更新最新版web协议，全部支持web登录。
 
 > 历史文章
 
 * [wechaty-web-panel可视化插件](https://wechaty.js.org/2020/05/31/wechaty-web-panel-plugin/)
 * [三步教你用Node做一个微信脱单神器，小白可上手](https://wechaty.js.org/2019/06/21/three-step-get-girlfriend/)
+
+> 作者: [Leo_chen](https://github.com/leochen-g/)，高级前端工程师，喜欢使用node做各种项目
