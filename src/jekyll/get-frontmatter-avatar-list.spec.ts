@@ -4,7 +4,7 @@ import test from 'tstest'
 
 import path from 'path'
 
-import { JEKYLL_FOLDER } from './jekyll-folder'
+import { JEKYLL_FOLDER } from './folders'
 
 import { getFrontmatterAvatarList } from './get-frontmatter-avatar-list'
 
@@ -14,7 +14,7 @@ test('getFrontmatterAvatarList', async t => {
     'huan.md',
   )
   const EXPECTED_AVATAR_NUM = 1
-  const EXPECTED_AVATAR_PATH = '/assets/contributors/huan/avatar.jpg'
+  const EXPECTED_AVATAR_PATH = '/assets/contributors/huan/avatar.webp'
 
   const imageList = getFrontmatterAvatarList(FILE)
 
