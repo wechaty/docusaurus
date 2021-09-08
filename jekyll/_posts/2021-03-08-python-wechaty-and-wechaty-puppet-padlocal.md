@@ -89,10 +89,10 @@ docker container ls
 [https://api.chatie.io/v0/hosties/puppet_padlocal_xxxxxxxx](https://api.chatie.io/v0/hosties/puppet_padlocal_xxxxxxxx)  
 去检验你的token是否成功注册,如果不行请回到step1去检查。  
 Good:  
-`{"ip":"47.119.129.29","port":8788}`  
+`{"host":"47.119.129.29","port":8788}`  
 
 No Good:  
-`{"ip":"0.0.0.0","port":0}`
+`{"host":"0.0.0.0","port":0}`
 
 ## Step 3 本地运行python ##
 

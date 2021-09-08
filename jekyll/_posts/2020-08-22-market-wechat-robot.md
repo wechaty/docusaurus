@@ -84,7 +84,7 @@ docker run \
 访问`https://api.chatie.io/v0/hosties/TOKEN`，其中`TOKEN`为前面设置的`WECHATY_TOKEN`。如果返回结果中包含前面设置的IP和端口，则服务正常开启。如果返回结果为：
 
 ```sh
-{"ip":"0.0.0.0","port":0}
+{"host":"0.0.0.0","port":0}
 ```
 
 则服务没有正常开启，需要按照上面的步骤重新检查。
