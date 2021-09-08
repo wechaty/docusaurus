@@ -8,11 +8,6 @@ tags:
 image: /assets/2016/ghostcloud-banner.jpg
 ---
 
-* 本文作者：@[shevyan](https://github.com/shevyan) 晏东，[精灵云GhostCloud](https://www.ghostcloud.cn/)创始人&CEO
-* 原文地址：<http://mp.weixin.qq.com/s/o-4VMcAMz0K8yJVdNaUXow>
-
-![GhostCloud Banner][ghostcloud-banner]
-
 Wechaty(<https://github.com/wechaty/wechaty>)是一款开源的微信SDK，它基于微信公开的API，对接口进行了一系列的封装，提供一系列简单的接口，然后开发者可以在其之上进行微信机器人的开发。在跟作者沟通试用以后，发现其中有着非常多的应用场景，比如：
 
 1. 如果你的好友众多，如何管理和维护好友分组；
@@ -20,6 +15,11 @@ Wechaty(<https://github.com/wechaty/wechaty>)是一款开源的微信SDK，它�
 1. 如何处理海量的聊天组，特别是微信可以任意建组，长期以后会出现非常多的聊天组；
 1. 能否可以自动智能地进行聊天回复
 1. ……
+
+* 本文作者：@[shevyan](https://github.com/shevyan) 晏东，[精灵云GhostCloud](https://www.ghostcloud.cn/)创始人&CEO
+* 原文地址：<http://mp.weixin.qq.com/s/o-4VMcAMz0K8yJVdNaUXow>
+
+![GhostCloud Banner][ghostcloud-banner]
 
 ## 1 快速上手
 

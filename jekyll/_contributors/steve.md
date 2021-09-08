@@ -2,7 +2,7 @@
 name: Steve
 site: https://www.pesnaleague.com
 bio: a Web developer looking to expand IFTTT via Wechaty
-avatar: /assets/contributors/steve/steve-avatar.png
+avatar: /assets/contributors/steve/steve-avatar.webp
 email: pesnaleague@gmail.com
 twitter: https://www.twitter.com/pesnaleague
 ---
