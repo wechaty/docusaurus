@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.honorsAndAwardsSection {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    margin-bottom: -60px;
+  }
+  
+  .honorsAndAwardsHeadlineWrapper {
+    margin-bottom: 51px;
+    left: 10%;
+    position: relative;
+    overflow-y: hidden;
+  }
+  
+  .honorsAndAwardsRectangle {
+    width: 200px;
+    height: 20px;
+    background-color: #d2ffca;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 0px;
+  }
+  
+  .honorsAndAwardsHeadline {
+    height: 90px;
+    width: 515px;
+    font-family: "Montserrat";
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 60px;
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    letter-spacing: 4px;
+    margin-bottom: -20px;
+    margin-top: -20px;
+  }
+  
+  .honorsAndAwardsFirstWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  .honorsAndAwardsFirstHeadline {
+    overflow-y: hidden;
+    height: 70px;
+    width: 520px;
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 35px;
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: justify;
+    margin-left: 25px;
+    letter-spacing: 2.2px;
+  }
+  
+  .honorsAndAwardsFirstContentWrapper {
+    background-position: center;
+    background-image: url("https://static.overlay-tech.com/assets/8b71a728-84ff-4edf-9e69-98ad56b18555.svg");
+    padding: 10px 50px 10px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  
+  .honorsAndAwardsFirstContent {
+    overflow-y: hidden;
+    height: 185px;
+    width: 250px;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: justify;
+    margin-right: 100px;
+    letter-spacing: 1.5px;
+  }
+  
+  .awardImageOne {
+    width: 230px;
+    height: 160px;
+    position: relative;
+    left: 311px;
+    bottom: 220px;
+    border-radius: 15px;
+  }
+  
+  .learnMoreButtonOne {
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    color: black;
+    margin-top: 185px;
+    letter-spacing: 1.5px;
+    -webkit-transition: color 500ms;
+    transition: color 500ms;
+    cursor: pointer;
+  }
+  
+  .learnMoreButtonOne:hover {
+    color: #44a838;
+  }
+  
+  .learnMoreButtonOne:active {
+    color: black;
+  }
+  
+  .honorsAndAwardsSecondWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  .honorsAndAwardsSecondHeadline {
+    overflow-y: hidden;
+    height: 70px;
+    width: 520px;
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 35px;
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: justify;
+    margin-left: 25px;
+    letter-spacing: 2.2px;
+  }
+  
+  .honorsAndAwardsSecondContentWrapper {
+    background-position: center;
+    background-image: url("https://static.overlay-tech.com/assets/8b71a728-84ff-4edf-9e69-98ad56b18555.svg");
+    padding: 10px 50px 10px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  
+  .honorsAndAwardsSecondContent {
+    overflow-y: hidden;
+    height: 185px;
+    width: 250px;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: justify;
+    margin-right: 100px;
+    letter-spacing: 1.5px;
+  }
+  
+  .awardImageTwo {
+    width: 230px;
+    height: 160px;
+    position: relative;
+    left: 311px;
+    bottom: 220px;
+    border-radius: 15px;
+  }
+  
+  .learnMoreButtonTwo {
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    color: black;
+    margin-top: 185px;
+    letter-spacing: 1.5px;
+    -webkit-transition: color 500ms;
+    transition: color 500ms;
+    cursor: pointer;
+  }
+  
+  .learnMoreButtonTwo:hover {
+    color: #44a838;
+  }
+  
+  .learnMoreButtonTwo:active {
+    color: black;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .honorsAndAwardsSection {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+    
+      .honorsAndAwardsHeadlineWrapper {
+        margin-top: 0px;
+        margin-bottom: 40px;
+        overflow-x: hidden;
+      }
+    
+      .honorsAndAwardsRectangle {
+        width: 160px;
+        height: 15px;
+        bottom: 10px;
+      }
+    
+      .honorsAndAwardsHeadline {
+        font-size: 24px;
+      }
+    
+      .honorsAndAwardsFirstHeadline {
+        height: 80px;
+        width: 80%;
+        font-size: 18px;
+        line-height: 30px;
+        margin-left: 10%;
+      }
+    
+      .honorsAndAwardsFirstContentWrapper {
+        width: 80%;
+        padding: 10px 20px 0px 20px;
+        margin: 5%;
+        border-radius: 20px;
+        margin-bottom: -40px;
+      }
+    
+      .honorsAndAwardsFirstContent {
+        width: 75%;
+        font-size: 10px;
+        line-height: 20px;
+        margin-right: 20px;
+      }
+    
+      .awardImageOne {
+        width: 120px;
+        height: 90px;
+        left: 58%;
+        bottom: 150px;
+      }
+    
+      .learnMoreButtonOne {
+        width: 100px;
+        font-family: "Montserrat";
+        font-size: 10px;
+        margin-top: 160px;
+      }
+    
+      .honorsAndAwardsSecondHeadline {
+        height: 80px;
+        width: 80%;
+        font-size: 18px;
+        line-height: 30px;
+        margin-left: 10%;
+      }
+    
+      .honorsAndAwardsSecondContentWrapper {
+        width: 80%;
+        padding: 10px 20px 0px 20px;
+        margin: 5%;
+        border-radius: 20px;
+      }
+    
+      .honorsAndAwardsSecondContent {
+        width: 75%;
+        font-size: 10px;
+        line-height: 20px;
+        margin-right: 20px;
+      }
+    
+      .awardImageTwo {
+        width: 120px;
+        height: 90px;
+        left: 58%;
+        bottom: 210px;
+      }
+    
+      .learnMoreButtonTwo {
+        width: 100px;
+        font-family: "Montserrat";
+        margin-top: 160px;
+        font-size: 10px;
+      }
+    }
+
+    @media only screen and (max-width: 1200px) and (min-width: 700px) {
+        .honorsAndAwardsHeadlineWrapper {
+            margin-bottom: 0px;
+          }
+        
+          .honorsAndAwardsRectangle {
+            width: 160px;
+            height: 18px;
+          }
+        
+          .honorsAndAwardsHeadline {
+            height: 75px;
+            width: 515px;
+            font-size: 28px;
+          }
+        
+          .honorsAndAwardsFirstHeadline {
+            height: 150px;
+            width: 350px;
+            font-size: 18px;
+            line-height: 30px;
+            margin-left: 80px;
+          margin-bottom: -20px;
+          margin-top: 40px;
+          }
+        
+          .honorsAndAwardsFirstContentWrapper {
+            width: 80%;
+            padding: 0px 0px 0px 20px;
+            margin-left: 60px;
+          }
+        
+          .honorsAndAwardsFirstContent {
+            width: 250px;
+            font-size: 12px;
+            line-height: 20px;
+            margin-right: 30px;
+            margin-bottom: 0px;
+            margin-top:20px;
+          }
+        
+          .awardImageOne {
+            width: 100px;
+            height: 80px;
+            left: 280px;
+            bottom: 190px;
+          }
+        
+          .learnMoreButtonOne {
+            font-size: 12px;
+            line-height: 20px;
+            width: 150px;
+            margin-top: 150px;
+          }
+        
+          .honorsAndAwardsSecondWrapper {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+          }
+        
+          .honorsAndAwardsSecondHeadline {
+            height: 150px;
+            width: 350px;
+            font-size: 18px;
+            line-height: 30px;
+            margin-left: 50px;
+          margin-bottom: -20px;
+          margin-top: 40px;
+          }
+        
+          .honorsAndAwardsSecondContentWrapper {
+            width: 80%;
+            padding: 0px 0px 0px 20px;
+            margin-left: 30px;
+          }
+        
+          .honorsAndAwardsSecondContent {
+            width: 250px;
+            font-size: 12px;
+            line-height: 20px;
+            margin-right: 30px;
+            margin-bottom: 0px;
+            margin-top:20px;
+          }
+        
+          .awardImageTwo {
+            width: 100px;
+            height: 80px;
+            left: 280px;
+            bottom: 190px;
+          }
+        
+          .learnMoreButtonTwo {
+            font-size: 12px;
+            line-height: 20px;
+            width: 150px;
+            margin-top: 150px;
+          }
+    }
