@@ -28,6 +28,8 @@ After the docker image has been created, use a docker command  to start the Wech
   \
   -e WECHATY_LOG \
   \
+  -e WECHATY_PUPPET_SERVICE_NO_TLS_INSECURE_SERVER \
+  \
   -p "$WECHATY_PUPPET_SERVER_PORT:$WECHATY_PUPPET_SERVER_PORT” \
   wechaty/wechaty:0.56
 ```
