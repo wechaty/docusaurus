@@ -7,10 +7,6 @@ tags:
 image: /assets/2020/room-manager/bio-photo.png
 ---
 
-> 作者: [tianyugeng](https://github.com/tianyugeng) 前端开发工程师(自称)
-
-<!-- more -->
-
 ## 微信群管辅助
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/wechaty/wechaty)
@@ -122,3 +118,5 @@ node examples/ding-dong-bot.ts
 虽然官网的示例中提供了js和ts两种方式可供选择，但实际使用时发现用js进行开发会发生许多莫名其妙的错误。
 调试修改到烦之后换到ts发现可以运行启动。估计是我没怎么用过node，有哪个配置项没有找到的缘故吧。
 所以虽然我没有删除js，但本项目的所有内容均使用ts完成。
+
+> 作者: [tianyugeng](https://github.com/tianyugeng) 前端开发工程师(自称)

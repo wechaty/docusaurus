@@ -1,6 +1,6 @@
 ---
 title: "wechaty Web Panel的plugin诞生"
-author: gengchen528
+author: leochen-g
 categories: project
 tags:
   - code
@@ -10,10 +10,6 @@ tags:
   - ecosystem
 image: /assets/2020/web-panel-plugin/web-head.png
 ---
-
-> 作者: [Leo_chen](https://github.com/gengchen528/)，高级前端工程师，喜欢使用node做各种项目
-
-<!-- more -->
 
 ## 背景介绍
 
@@ -174,3 +170,5 @@ ode mybot.js
 ## 致谢
 
 感谢Wechaty团队提供这么好的一个工具，同时还开发出这么赞的插件系统。希望能够有更多的人参与进来，来继续扩大wechaty插件的生态圈
+
+> 作者: [Leo_chen](https://github.com/leochen-g/)，高级前端工程师，喜欢使用node做各种项目

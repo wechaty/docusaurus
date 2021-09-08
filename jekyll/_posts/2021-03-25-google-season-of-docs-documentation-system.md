@@ -1,12 +1,15 @@
 ---
 title: Applying the documentation system to Wechaty docs
 author: huan
-categories: announcement
+categories: 
+  - announcement
+  - gsod
 tags:
   - gsod
+  - google
+  - gsod-2021
   - docs
   - news
-  - sticky
   - documentation
 image: /assets/2021/03-google-season-of-docs-documentation-system/doc-sys-overview.png
 ---

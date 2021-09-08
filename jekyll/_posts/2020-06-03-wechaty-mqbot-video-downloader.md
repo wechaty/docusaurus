@@ -11,11 +11,6 @@ tags:
 image: /assets/2020/mqbot/qrcode.png 
 ---
 
-> 作者: [remainsu](https://github.com/remainsu)
-> Code: [Github](https://github.com/remainsu/qmrobot)
-
-## 项目背景
-
 20年初开始接触到Tiktok(国际版抖音)，一直尝试做到今天，收获很多。同时也维护起了自己的一个圈子，圈子内很多人吐槽“短视频去水印工具”，这个比较常用的就是微信小程序，但是大多数都是一堆堆的广告，反应速度大多被作者故意设置了延时（这样可以多看几秒广告）
 
 于是就想着是不是可以自己做一个这样的工具，同时也可以通过这种方式进行引流。
@@ -95,3 +90,6 @@ node dtot.js
 欢迎扫码加我的机器人，验证填写 “tiktok”，也欢迎将我推荐给需要的朋友，无水印下载就是这么简单。
 
 ![演示图片](/assets/2020/mqbot/ewm1.jpeg)
+
+> 作者: [remainsu](https://github.com/remainsu)
+> Code: [Github](https://github.com/remainsu/qmrobot)

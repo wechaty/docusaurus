@@ -9,11 +9,9 @@ tags:
 image: /assets/2020/wechaty-weixin-openai/teaser-image.png
 ---
 
-> Author: [@windmemory](https://github.com/windmemory) Wechaty contributor, author of [wechaty-puppet-padchat](https://github.com/wechaty/wechaty-puppet-padchat), [wechaty-puppet-padpro](https://github.com/wechaty/wechaty-puppet-padpro), [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus). CTO of [Juzi.Bot](https://pre-angel.com/portfolios/juzibot/)
->
-> Code: [wwc-wechaty](https://github.com/windmemory/wwc-wechaty)
-
 应 [WWC(Women Who Code)](#women-who-code) 邀请，我在线上分享了如何用「Wechaty」和「微信对话开放平台」做个助理帮助回答常见问题。
+
+活动介绍: [https://mp.weixin.qq.com/s/6HyEZlwWbuRGY9T_KotXEw](WWC在线分享: 如何用 Wechaty 和 微信对话开放平台 创建你的个人助理)
 
 ![wechaty-weixin-openai][teaser]
 
@@ -341,3 +339,7 @@ PS：在现场演示过程中，我们的测试了很多种的负面情绪的消
 [openai-config]: /assets/2020/wechaty-weixin-openai/openai-config.jpg
 [openai-banner]: /assets/2020/wechaty-weixin-openai/openai-banner.jpg
 [final-screenshot]: /assets/2020/wechaty-weixin-openai/final-screenshot.jpg
+
+> Author: [@windmemory](https://github.com/windmemory) Wechaty contributor, author of [wechaty-puppet-padchat](https://github.com/wechaty/wechaty-puppet-padchat), [wechaty-puppet-padpro](https://github.com/wechaty/wechaty-puppet-padpro), [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus). CTO of [Juzi.Bot](https://pre-angel.com/portfolios/juzibot/)
+>
+> Code: [wwc-wechaty](https://github.com/windmemory/wwc-wechaty)
