@@ -6,6 +6,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './styles.module.css'
 
+import { DocusaurusConfig } from '@docusaurus/types'
+
 const features = [
   {
     description: (
@@ -58,7 +60,7 @@ function Feature ({ key, imageUrl, title, description }) {
 
 function Home () {
   const context = useDocusaurusContext()
-  const { siteConfig = {} } = context
+  const { siteConfig = {} as Partial<DocusaurusConfig> } = context
   return (
     <Layout
       title='Press and Media'
@@ -66,7 +68,7 @@ function Home () {
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">For inquiries, please contact us at:</p>
+          <p className="hero__subtitle">{'For inquiries, please contact us at:'}</p>
           <div className={styles.buttons}>
             <Link
               className={clsx(
@@ -74,11 +76,11 @@ function Home () {
                 styles.getStarted,
               )}
               to={useBaseUrl('/press')}>
-              wechaty@googlegroups.com
+              {'wechaty@googlegroups.com'}
             </Link>
           </div>
           <br /><br />
-          <p className="hero__subtitle">We can’t wait to see what you build.</p>
+          <p className="hero__subtitle">{'We can’t wait to see what you build.'}</p>
         </div>
       </header>
       <main>

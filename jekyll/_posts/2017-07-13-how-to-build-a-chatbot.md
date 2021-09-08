@@ -8,8 +8,7 @@ tags:
 image: /assets/2017/itdakashuo-how-to-build-a-chatbot-7.jpg
 ---
 
-> 摘要:
-> Chatbot，聊天机器人，用于和人类用户聊天的电脑程序。它是场交互革命，也是一个多技术融合的平台。桔子互动创始人根据自己的经验告诉大家，> 该如何来编写微信聊天机器人。
+> Chatbot，聊天机器人，用于和人类用户聊天的电脑程序。它是场交互革命，也是一个多技术融合的平台。桔子互动创始人根据自己的经验告诉大家，该如何来编写微信聊天机器人。
 
 ## What are chatbots and why the hype
 
