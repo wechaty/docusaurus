@@ -1,7 +1,7 @@
 ---
 name: zjacai
 site: https://github.com/zjacai
-avatar: /assets/contributors/zjacai/avatar.png
+avatar: /assets/contributors/zjacai/avatar.webp
 bio: 网站服务器运维
 email: 
 twitter: 
