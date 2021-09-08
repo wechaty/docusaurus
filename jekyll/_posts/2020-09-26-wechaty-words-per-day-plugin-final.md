@@ -10,8 +10,6 @@ tags:
 image: /assets/2020/wechaty-words-per-day-plugin-final/logo.png
 ---
 
-## 项目信息
-
 - 项目名称：编写一个“每日一句”插件
 - 方案描述：
   - 制作可以被 wechaty 调用的插件，能够使用内置的语料接口
