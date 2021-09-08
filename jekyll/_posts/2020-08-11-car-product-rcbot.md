@@ -9,10 +9,6 @@ tags:
 image: /assets/2020/rcbot/rcbot.jpg
 ---
 
-> 作者: [jiucl](https://github.com/jiucl/)
-> 项目地址：[rcbot](https://github.com/jiucl/rcbot)
-<!--more-->
-
 ## 现状与目标：我是谁？我要做什么？
 
 * 汽车配件行业
@@ -197,3 +193,6 @@ bot.on('scan', (qrcode, status) => {
 感谢 [Wechaty](https://wechaty.js.org/) 提供的微信机器人SDK
 
 感谢 [句子互动](https://www.juzibot.com/) 提供的ipad协议版token
+
+> 作者: [jiucl](https://github.com/jiucl/)
+> 项目地址：[rcbot](https://github.com/jiucl/rcbot)

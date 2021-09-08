@@ -125,6 +125,20 @@ Need to fire `ready` event after the bot logined and all data has been synced.
 
 See: <https://github.com/wechaty/wechaty-puppet-service/issues/18>
 
+## Payload Cache Management
+
+1. If the low-level puppet wants to dirty a payload, emit a `dirty` event. The payload will be the `type` and the `id` of the paload
+1. If the high-level puppet wants to dirty a payload, call `dirtyPayload(type, id)` method, what it does (and only does) is to make the low-level puppet emit a `dirty` event.
+1. Each puppet should listen to the `dirty` event, and call `XXXPayloadDirty(id)` to purge the internal cache of the specific payload inside itself
+
+Huan(202109): That's all, I hope the above 3 points can make it clear.
+
+Related issues
+
+- [Specification for dirty event, dirtyPayload(), and `XXXPayloadDirty() to puppet abstraction, puppet implementation, puppet server, and puppet client. wechaty/wechaty-puppet-service#164](https://github.com/wechaty/wechaty-puppet-service/issues/164)
+- [No contactPayloadDirty method in puppet-implementation. wechaty/wechaty-puppet-service#43](https://github.com/wechaty/wechaty-puppet-service/issues/43)
+- [add dirty rpc function definition for sync data wechaty/grpc#79](https://github.com/wechaty/grpc/pull/79)
+
 ## NPM Publication
 
 - [ ] `wechaty-puppet` must not a dependency. It should be put in devDependencies and peerDependencies
