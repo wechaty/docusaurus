@@ -4,6 +4,7 @@ import styles from "./honors-and-awards-section.module.css";
 const honorsAndAwards = () => {
     
     return(
+        <React.Fragment>
         <div className={styles.honorsAndAwardsHeadlineWrapper}>
         <div className={styles.honorsAndAwardsRectangle} />
         <p className={styles.honorsAndAwardsHeadline}>Honors &amp; Awards</p>
@@ -46,6 +47,7 @@ const honorsAndAwards = () => {
           />
         </div>
       </div>
+      </React.Fragment>
 
     );
 };
