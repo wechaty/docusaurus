@@ -108,7 +108,7 @@ bot
 
 ### message.text\(\) ⇒ `string`
 
-The method returns the text content of the message.
+This method returns the text context for the message.
 
 ### Example
 
@@ -150,7 +150,7 @@ bot
 
 ### message.say\(textOrContactOrFileOrUrlLinkOrMiniProgram\) ⇒ `Promise <void>`
 
-By using `message.say` you can reply a Text, Contact Card, Media File or Link message to the sender.The method takes in 5 types of parameter ,the more details is given below :
+By using `message.say` you can reply a Text, Contact Card, Media File or Link message to the sender.The method takes in 5 types of parameters,more details is given below :
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
@@ -231,7 +231,7 @@ bot
 
 ### message.type\(\) ⇒ `MessageType`
 
-The method gets the type of the  wechat message.The different method type supported are listed below:
+This method gets the type of the wechat message. The different method types supported are listed below:
 
 | Message Type           |
 |------------------------|
