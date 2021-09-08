@@ -8,12 +8,8 @@ tags:
   - productivity
 ---
 
-## 十分钟实现一个智能问答微信聊天机器人
-
-[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/chatie/wechaty)
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
-
-## 背景
 
 最近开始写自己的公众号《前端布朗熊》了，注意到有的的公众号有微信机器人可以实现拉人进群、踢人等自动化操作，也想给自己的公众号开发一个机器人来帮我处理一些自动化的重复任务。因此就对微信机器人技术进行了调研，发现了以下几个情况：
 
