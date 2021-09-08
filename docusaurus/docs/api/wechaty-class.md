@@ -2,7 +2,7 @@
 title: Wechaty Classes
 ---
 
-### Wechaty
+## Wechaty
 
 Wechaty is the main bot class.
 
