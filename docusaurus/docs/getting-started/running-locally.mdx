@@ -178,13 +178,36 @@ You are ready to play with the bot.
 
 Let's get started with building the Ding Dong bot using Wechaty.
 
-### 1. Initialise project
+### 1. Initialize project
 
 Create a new folder called `ding-dong-bot` and move into that directory.
 
 ```bash
 mkdir ding-dong-bot
 cd ding-dong-bot
+```
+
+Use the following command to initialize an npm project:
+
+```bash
+npm init -y
+```
+
+This will generate the `package.json` file containing these:
+
+```json
+{
+  "name": "ding-dong-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
 ```
 
 ### 2. Install dependencies
@@ -316,7 +339,7 @@ async function onMessage (msg: Message) {
 }
 ```
 
-Now initialising the bot by providing a name.
+Now initializing the bot by providing a name.
 
 ```ts
 const bot = new Wechaty({
