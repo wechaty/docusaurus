@@ -1,7 +1,7 @@
 ---
 name: FINCTIVE
 site: https://github.com/fintcive
-avatar: /assets/contributors/finctive/avatar.png
+avatar: /assets/contributors/finctive/avatar.webp
 bio: 
 email: 
 twitter: 
