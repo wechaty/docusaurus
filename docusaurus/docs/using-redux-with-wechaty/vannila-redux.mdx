@@ -1,0 +1,332 @@
+---
+title: Vanilla Redux with Wechaty Redux Plugin
+sidebar_label: Vanilla Redux
+---
+
+
+<!-- MDX import -->
+import Tabs     from '@theme/Tabs'
+import TabItem  from '@theme/TabItem'
+
+import ShortestChatbots from '../polyglot/transclusions/shortest-chatbots.mdx'
+
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
+[![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-blue.svg)](https://www.typescriptlang.org/)
+
+Vanilla Redux means using plain Redux without any additional libraries like Ducks and  for using vanilla-redux with wechaty, [Wechaty Redux](https://www.npmjs.com/package/wechaty-redux) plugin is required.
+
+In this tutorial, you will learn how to use `vanilla-redux` with Wechaty.
+
+## Requirements
+
+1. [Node.js](https://nodejs.org/en/download) v12+
+2. [Wechaty](https://github.com/wechaty/wechaty) v0.40+
+3. [Wechaty Redux](https://github.com/wechaty/wechaty-redux)
+
+## Getting started
+
+Before getting started, make sure you have `Node.js` installed on your system. If you do not have `Node.js` installed (or have a version below 12), then you need to install the latest version of `Node.js` by following the links below:
+
+:::note Node.js installation docs
+
+* [Windows](https://nodejs.org/en/download/package-manager/#windows)
+* [Linux\(Debian/Ubuntu\)](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+* [macOS](https://nodejs.org/en/download/package-manager/#macos)
+
+> Installation guide for `Node.js` on other platforms can be found [here](https://nodejs.org/en/download/package-manager/).
+
+:::
+
+You can head over to the [Building the bot](#building-the-bot) section to learn how to build the bot on your own.
+
+Otherwise, if you just want to try out the bot on your local system, follow the steps below:
+
+### 1. Clone the repository
+
+Use the following commands to clone the [GitHub repository](https://github.com/wechaty/wechaty-redux) and navigate to the directory:
+
+```bash
+git clone https://github.com/wechaty/wechaty-redux.git
+cd wechaty-redux
+```
+
+### 2. Install dependencies
+
+You can install the `npm` packages required for running the bot, using this command:
+
+```sh
+npm install
+```
+
+### 3. Run the bot
+
+First, you have to `export/set` the environment variables:
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-mock
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-mock
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```bash
+set WECHATY_LOG=verbose
+set WECHATY_PUPPET=wechaty-puppet-mock
+```
+
+</TabItem>
+</Tabs>
+
+Run the bot using the following command:
+
+```sh
+npx ts-node examples/vanilla-redux.ts
+```
+
+> There are various **Wechaty puppets** available, you can know more about them [here](https://github.com/wechaty/wechaty-getting-started#working-with-different-puppets).
+
+## Building the bot
+
+Let's get started with building the **Wechaty Redux bot** using vanilla-redux.
+
+### 1. Initialize project
+
+Create a new folder called `redux-bot` and move into that directory:
+
+```bash
+mkdir redux-bot
+cd redux-bot
+```
+
+Use the following command to initialize an npm project:
+
+```bash
+npm init -y
+```
+
+### 2. Install dependencies
+
+For building the bot, you will require the following dependencies:
+
+* [wechaty](https://www.npmjs.com/package/wechaty): Official Wechaty package
+* [redux](https://www.npmjs.com/package/redux): A predictable state container for JavaScript apps.
+* [wechaty-redux](https://www.npmjs.com/package/wechaty-redux): Wechaty wrapper with Redux Actions & Reducers
+* [redux-observable](https://www.npmjs.com/package/redux-observable): RxJS-based middleware for Redux. 
+* [ts-node](https://www.npmjs.com/package/ts-node): For running TypeScript file
+
+You can install these dependencies by running the following command:
+
+```bash
+npm install wechaty
+npm install redux wechaty-redux redux-observable ts-node
+```
+
+You will also need to add dependencies for using any [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/) which helps to integrate Wechaty with various **instant messaging (IM) systems** (such as WeChat, Whatsapp, and Gitter):
+
+1. If you want to use **[WhatsApp](https://www.whatsapp.com/)**, install `wechaty-puppet-whatsapp`:
+
+  ```bash
+  npm install wechaty-puppet-whatsapp
+  ```
+
+2. If you want to use **[WeChat](https://www.wechat.com/)**, you can try the following puppets:
+
+   * **Web Protocol:** Install `wechaty-puppet-wechat`:
+
+     ```bash
+     npm install wechaty-puppet-wechat
+     ```
+
+   * **iPad Protocol:**
+     * padlocal: Install `wechaty-puppet-padlocal`:
+
+       ```bash
+       npm install wechaty-puppet-padlocal
+       ```
+
+       Then get a token like `puppet_padlocal_XXX`, know more about puppet service padlocal [here](http://wechaty.js.org/docs/puppet-services/padlocal).
+
+     * paimon: Install `wechaty-puppet-service`:
+
+       ```bash
+       npm install wechaty-puppet-service
+       ```
+
+       Then get a token like `puppet_paimon_XXX`, know more about puppet service paimon [here](http://wechaty.js.org/docs/puppet-services/paimon).
+
+3. If you want to use **[WeCom](https://work.weixin.qq.com/)**, install `wechaty-puppet-service`:
+
+  ```bash
+  npm install wechaty-puppet-service
+  ```
+
+  Then get a token like `puppet_wxwork_XXXXX`, more about puppet service wxwork [here](https://wechaty.js.org/docs/puppet-services/wxwork/).
+
+> You can find more information about the puppets [here](https://wechaty.js.org/docs/puppet-providers/).
+
+### 3. Write code for bot
+
+Start by creating a new file `redux-bot.ts`. You will be writing the code here.
+
+Follow the steps below to build the bot:
+
+1. Import the required packages in the **redux-bot.ts** file:
+
+  ```ts
+  import {
+    createStore,
+    applyMiddleware,
+  }                           from 'redux'
+  import {
+    createEpicMiddleware,
+    combineEpics,
+  } from 'redux-observable'
+  import { Wechaty }          from 'wechaty'
+  import {
+    WechatyRedux,
+    Duck,
+  }                           from 'wechaty-redux'
+  ```
+
+2. Define an asynchronous `main()` function, and call it. You will be adding code for the bot in this function.
+
+  ```ts
+  async function main() {
+      // Add code here
+  }
+
+  main()
+    .catch(console.error)
+  ```
+
+3. Configure Store with RxJS Epic Middleware for Wechaty Ducks API:
+
+  ```ts
+  const epicMiddleware = createEpicMiddleware()
+
+  const store = createStore(
+    Duck.default,
+    applyMiddleware(epicMiddleware),
+  )
+
+  const rootEpic = combineEpics(...Object.values(Duck.epics))
+  epicMiddleware.run(rootEpic)
+  ```
+
+4. Instantiate Wechaty and Install Redux Plugin:
+
+  ```ts
+  const bot = Wechaty.instance({ puppet: 'wechaty-puppet-mock' })
+  bot.use(WechatyRedux({ store }))
+  ```
+
+5. Start the bot:
+
+  ```ts
+  await bot.start()
+  console.info('Wechaty has started with Redux enabled.')
+  ```
+
+6. Using Redux Store with Wechaty Ducks API:
+
+  ```ts
+  store.subscribe(() => console.info(store.getState()))
+
+  store.dispatch(Duck.actions.ding(bot.id, 'dispatch a ding action'))
+  // The above code 👆 is exactly do the same thing with the following code 👇 :
+  // Duck.operations.ding(store.dispatch)(bot.id, 'call ding from operations')
+  ```
+
+## Running the bot
+
+In order to run the bot, first you have to **export/set** an environment variable with the type of puppet to use:
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+
+# For using WhatsApp:
+# export WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# export WECHATY_PUPPET=wechaty-puppet-service
+# export WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+
+# For using WhatsApp:
+# export WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# export WECHATY_PUPPET=wechaty-puppet-service
+# export WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```bash
+set WECHATY_LOG=verbose
+set WECHATY_PUPPET=wechaty-puppet-wechat
+
+# For using WhatsApp:
+# set WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# set WECHATY_PUPPET=wechaty-puppet-service
+# set WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
+```
+
+</TabItem>
+</Tabs>
+
+> If you are using WeCom, you can get token from [puppet service wxwork](http://wechaty.js.org/docs/puppet-services/wxwork).
+
+Run the bot using the following command:
+
+```sh
+ts-node redux-bot.ts
+```
+
+## References
+
+* [Wechaty Redux plugin](https://github.com/wechaty/wechaty-redux)

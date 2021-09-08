@@ -56,7 +56,6 @@ The proposed How to Guide page will be structured to improve and ensure efficien
 ## Proposed Changes
 
 * **No overview section**: It is theoretical and can get boring for the users to go through an entire page just containing an Overview.
-* **Create a Bot**: A simple step by step guide to create a bot using Wechaty. (Installing the bot will be covered in this section only)
 * **Add events to your bot**: Explaining what an event is, emphasising how it can add more value to the bot functionality (adding various use cases as well)
 * **Add more functionality to your bot** (All the  work that can be automated with the bot):
 
@@ -72,6 +71,10 @@ The proposed How to Guide page will be structured to improve and ensure efficien
 1. Wechat
 2. Whatsapp
 3. TikTok
+
+* Deploy with Docker
+* Deploy with Heroku
+* **FAQ**: Answer to all those questions that might hinder users from using its functionalities
 
 ## Project Goals
 
@@ -94,7 +97,6 @@ The proposed How to Guide page will be structured to improve and ensure efficien
 
 ### Week 2
 
-* Create a Bot: It will contain code snippets along with examples on setting up a bot by the user.
 * Install Wechaty: It will link to Wechaty’s starter github template and will have a step by step guide on cloning and running instructions.
 * Add the missing parts (TBW) to different programming languages.
 * Add Related Image to each section to make it more interactive and more engaging.
@@ -148,6 +150,8 @@ The proposed How to Guide page will be structured to improve and ensure efficien
 2. Whatsapp
 3. TikTok
 
+* Deploy with Docker
+* Deploy with Heroku
 * Add Related Image to each subsection to make it more interactive and more engaging.
 * Add the missing parts (TBW) to different programming language
 * Verify working of the code to each programming language
@@ -156,6 +160,7 @@ The proposed How to Guide page will be structured to improve and ensure efficien
 
 ### Week 8
 
+* FAQ : Answer to all those questions that might hinder users from using its functionalities.
 * Proofreading the existing tutorials.
 * Fixing typos and making minor changes to the documentation, if required.
 * Work on improving the existing topics if required.
