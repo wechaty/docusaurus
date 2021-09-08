@@ -99,7 +99,7 @@ import TabItem from '@theme/TabItem'
 ```sh
 npm install wechaty-puppet-padlocal
 export WECHATY_PUPPET=wechaty-puppet-padlocal
-export WECHATY_PUPPET_PADLOCAL_TOKEN=__TOKEN__
+export WECHATY_PUPPET_PADLOCAL_TOKEN=${TOKEN}
 npm start
 ```
 
@@ -109,7 +109,7 @@ npm start
 ```sh
 npm install wechaty-puppet-padlocal
 export WECHATY_PUPPET=wechaty-puppet-padlocal
-export WECHATY_PUPPET_PADLOCAL_TOKEN=__TOKEN__
+export WECHATY_PUPPET_PADLOCAL_TOKEN=${TOKEN}
 npm start
 ```
 
@@ -119,7 +119,7 @@ npm start
 ```sh
 npm install wechaty-puppet-padlocal
 set WECHATY_PUPPET=wechaty-puppet-padlocal
-set WECHATY_PUPPET_PADLOCAL_TOKEN=__TOKEN__
+set WECHATY_PUPPET_PADLOCAL_TOKEN=${TOKEN}
 npm start
 ```
 
