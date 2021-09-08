@@ -13,28 +13,8 @@ tags:
 
 ## 视频奉上先
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe
-  src="https://www.bilibili.com/video/BV1pf4y1V7G8/"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-">
-</iframe>
-</div>
+{% include iframe.html src="https://www.bilibili.com/video/BV1pf4y1V7G8/" %}
+
 [AIStudio地址（本项目全部相关文件放在此地址中可供下载）](https://aistudio.baidu.com/aistudio/projectdetail/2272396)
 ## wechaty介绍
 ![](https://img-blog.csdnimg.cn/img_convert/da820e713203830cc13cbc3ef6eb1d7d.png)
