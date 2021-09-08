@@ -8,10 +8,6 @@ tags:
 image: /assets/2020/runwechatyonpi/head.png
 ---
 
-> 作者: [cr4fun](https://github.com/cr4fun)，极客、物联网专家，SDK产品经理。
-
-<!-- more -->
-
 ## 一、介绍
 
 1、wechaty是迄今为止最易于使用的开源微信机器人框架
@@ -166,3 +162,5 @@ function on_msg(message){
 ## 视频演示
 
 <https://www.bilibili.com/video/BV1bz411B7XG?seid=14179117841102771483>
+
+> 作者: [cr4fun](https://github.com/cr4fun)，极客、物联网专家，SDK产品经理。

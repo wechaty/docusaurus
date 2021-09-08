@@ -1,7 +1,7 @@
 ---
 name: simplepad
 site: https://github.com/chatrbot/wechaty-puppet-simplepad
-avatar: /assets/contributors/simplepad/avatar.png
+avatar: /assets/contributors/simplepad/avatar.webp
 email: chatrbot@163.com
 ---
 

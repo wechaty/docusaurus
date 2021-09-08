@@ -7,9 +7,6 @@ tags:
 image: /assets/2020/tiny-bot/teaser.jpeg
 ---
 
-> Author: [@secreter](https://github.com/secreter) 公众号redream
-> Code: [@tiny-bot](https://github.com/secreter/tiny-bot)
-
 一个可以OCR 打卡并生成统计方块图的机器人。
 
 ![打卡图片](/assets/2020/tiny-bot/teaser.jpeg)
@@ -117,3 +114,6 @@ image: /assets/2020/tiny-bot/teaser.jpeg
 也欢迎大家添加我的机器人张三进行体验。
 
 ![机器人二维码](/assets/2020/tiny-bot/qr.jpeg)
+
+> Author: [@secreter](https://github.com/secreter) 公众号redream
+> Code: [@tiny-bot](https://github.com/secreter/tiny-bot)
