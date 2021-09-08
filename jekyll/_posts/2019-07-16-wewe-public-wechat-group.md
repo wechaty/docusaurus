@@ -10,12 +10,6 @@ tags:
 image: /assets/2019/wewe-screenshot.png
 ---
 
-> Author: [@timqian](https://github.com/timqian) Building transparent products at [t9t.io](https://t9t.io)
-
-[![wewe](/assets/2019/wewe-screenshot.png)](https://wewe.t9t.io)
-
-## 背景
-
 几周前, 我在几个论坛分享了 [透明创业实验](https://blog.t9t.io/transparent-startup-experiment-2019-05-20/), 并且建了一个微信群方便交流.
 
 没想到有超过 500 人加入, 在群里了也出现了很多有意思的讨论.
@@ -58,3 +52,5 @@ image: /assets/2019/wewe-screenshot.png
 - **如何收费**: wewe 仍在开发阶段, 并且因为网站使用 serverless 方式开发(aws lambda & dynamodb & s3), 维护和服务器成本比较低, 对前 30 个加入的群免费提供服务, 之后的收费模式仍在思考当中
 
 ### wewe 还是一个正在开发中的项目, 欢迎留言交流你对它的看法
+
+> Author: [@timqian](https://github.com/timqian) Building transparent products at [t9t.io](https://t9t.io)
