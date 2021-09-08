@@ -15,7 +15,7 @@ Wechaty Puppet Service Token (TOKEN), is ... (tbw)
 In-service / Out-service check:
 
 ```sh
-curl https://api.chatie.io/v0/hosties/__TOKEN__
+curl https://api.chatie.io/v0/hosties/${TOKEN}
 ```
 
 1. `HTTP/200`: In-service
