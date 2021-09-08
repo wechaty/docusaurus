@@ -1,6 +1,6 @@
 ---
 title: "三步教你用Node做一个微信脱单神器，小白可上手"
-author: gengchen528
+author: leochen-g
 categories: project
 tags:
   - code
@@ -9,9 +9,6 @@ tags:
 image: /assets/2019/everyday-header.png
 ---
 
-> 作者: [Leo_chen](https://github.com/gengchen528/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [三步教你用Node做一个微信哄女友(基友)神器，小白可上手](https://juejin.im/post/5d09fa9f51882508bd2065f4)
-
-![image](/assets/2019/everyday-header.png)
 三步教你用Node做一个微信脱单神器，小白可上手！也可以用来哄女友，哄女(男\基)友我们程序猿(媛)是认真的
 
 ## 前言
@@ -179,3 +176,5 @@ module.exports = {
 另外我的公众号已经接入微软小冰，关注后发语音会有小姐姐的声音陪你聊天，也可以和她文字聊天，有兴趣可以试试看，单身的欢迎来撩
 
 ![image](/assets/2019/everyday-17.png)
+
+> 作者: [Leo_chen](https://github.com/leochen-g/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [三步教你用Node做一个微信哄女友(基友)神器，小白可上手](https://juejin.im/post/5d09fa9f51882508bd2065f4)

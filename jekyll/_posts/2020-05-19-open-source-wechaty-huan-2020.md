@@ -9,9 +9,7 @@ tags:
 image: /assets/2020/azure-show/azure-show-huan.png
 ---
 
-> Author: [Huan LI](https://github.com/huan), Microsoft Regional Director, AI MVP, Author of Wechaty
-
-欢迎来到AzureShow的开源故事，第一期的嘉宾 Huan Li，中文首本 Conversational User Interface 畅销书《Chatbot从0到1》联合作者，GitHub 8k Stars 开源 Chatbot 项目 Wechaty 作者，长期从事 Chatbot 领域的 Conversational AI 算法研究与行业应用落地相关方向。现为 PreAngel 合伙人，关注种子阶段的技术类创业项目。清华大学本科，中欧国际商学院 EMBA，北京邮电大学计算机博士（在读）。
+欢迎来到AzureShow的开源故事，第一期的嘉宾 Huan Li，中文首本 Conversational User Interface 畅销书《Chatbot从0到1》联合作者，GitHub 8k Stars 开源 Chatbot 项目 Wechaty 作者，长期从事 Chatbot 领域的 Conversational AI 算法研究与行业应用落地相关方向。现为 PreAngel 合伙人，关注种子阶段的技术类创业项目。清华大学本科，中欧国际商学院 EMBA。
 
 ![Azure Show](/assets/2020/azure-show/azure-show.png)
 
@@ -25,26 +23,7 @@ Azure Show 是由微软最有价值专家、微软技术社区区域总监卢建
 
 在下面 20 分钟的这个视频中，由 Microsoft Regional Director, AI MVP, Wechaty 作者李卓桓，为大家系统性的对 Wechaty 开源项目进行了介绍。希望大家可以通过这 20 分钟了解 Wechaty ，并在未来有机会参与 Wechaty 开源社区建设！
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe
-  src="https://www.youtube.com/embed/YZ130iwcNSE"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen=""
-  style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=YZ130iwcNSE" %}
 
 - Bilibili: <https://www.bilibili.com/video/BV1vQ4y1A7W2>
 
