@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./hero-section.module.css";
-import heroChatbotImage from "./hero-chatbot-image.webp";
-import heroImageMobile from "./hero-image-mobile.webp";
 
 const HeroSection = () => {
   return (
@@ -24,13 +22,13 @@ const HeroSection = () => {
         <img
           alt="Chatbot"
           className={styles.heroChatbotImage}
-          src={heroChatbotImage}
+          src="https://user-images.githubusercontent.com/31739964/132517171-4eb33791-30ea-4f17-91ee-e3b170e8ef19.png"
         />
         <button className={styles.letsDiveInButton}> Let’s Dive In </button>
         <img
           alt="Chatbot"
           className={styles.heroImageMobile}
-          src={heroImageMobile}
+          src="https://user-images.githubusercontent.com/31739964/132517179-5802f6c3-1209-41d7-b993-3f2b197adc2d.png"
         />
       </div>
     </div>
