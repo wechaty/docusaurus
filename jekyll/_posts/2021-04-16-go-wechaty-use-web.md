@@ -5,14 +5,10 @@ categories: article
 tags:
   - code
   - wechaty-puppet-wechat
-  - web协议
+  - web-protocol
   - go
 image: /assets/2021/04-go-wechaty-use-web/struct.png
 ---
-
-> 作者: [dchaofei](https://github.com/dchaofei)，go开发工程师，go-wechaty 作者
-
-<!-- more -->
 
 写这篇文章的原因: 最近发现 web 协议以某种方式又复活了，所以想让 go-wechaty 的小伙伴也能使用 web 协议。
 
@@ -109,3 +105,5 @@ var bot = wechaty.NewWechaty(wechaty.WithPuppetOption(wp.Option{
 - web协议复活: [https://wechaty.js.org/2021/04/13/wechaty-uos-web/](https://wechaty.js.org/2021/04/13/wechaty-uos-web/)
 - Go Wechaty Getting Started: [https://wechaty.js.org/docs/polyglot/go/](https://wechaty.js.org/docs/polyglot/go/)
 - puppet-providers: [https://wechaty.js.org/docs/puppet-providers/wechat](https://wechaty.js.org/docs/puppet-providers/wechat)
+
+> 作者: [dchaofei](https://github.com/dchaofei)，go开发工程师，go-wechaty 作者

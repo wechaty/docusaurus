@@ -75,8 +75,8 @@ test('all remote images linked from the post should be exist.', async t => {
       chunk.map(isUrlExist)
     )
 
-    // sleep 1 seconds before next check
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    // sleep 3 seconds before next check
+    await new Promise(resolve => setTimeout(resolve, 3000))
 
     for (const [i, result] of resultList.entries()) {
       if (!result) {
