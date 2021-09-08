@@ -8,12 +8,6 @@ tags:
 image: /assets/2020/matrix-wechaty/2020-03-matrix-appservice-wechaty.png
 ---
 
-> 作者: [立音](https://github.com/cubesky)，个人开发者。首发于博客: [使用 Matrix 接收微信消息](https://liyin.date/2020/03/01/matrix-wechat-bridge/) 遵循 CC BY-NC-SA 3.0 CN
-
-[![Wechaty AppService Bridge for [Matrix]](/assets/2020/matrix-wechaty/2020-03-matrix-appservice-wechaty.png)](https://github.com/wechaty/matrix-appservice-wechaty)
-
-<!-- more -->
-
 我周围的人都知道我很讨厌微信————臃肿、慢速、开放性低而且还极其费电，于是呢我当然发挥裁剪流氓软件的能力，直接把微信的后台打了个半残，所以我周围的人一直说我微信经常找不到我，那是当然的，微信连后台都没了，能实时找得到我就怪了。  
 
 所以用其他聊天软件代收微信消息就显得很重要了，之前我用过 EH Forwarder Bot 将微信的消息转发到 Telegram，用了一段时间之后我发现它比较麻烦，在登录之后所有消息都是被 Bot 账号发送给你，而且如果你想将一个微信群组单独连接，就得自己创建群组，拉入 Bot，然后再选择连接。而且因为微信这个协议连接的问题，经常会出现突然就收不到消息，或者突然掉线的问题，所以后来我就不再使用 EH Forwarder Bot 了。（当然也是由于我那个时候买了第二台手机..）  
@@ -188,3 +182,5 @@ You are not enable matrix-appservice-wechaty yet.
 非常感谢 [huan](https://github.com/huan) 开发的 [Wechaty](https://github.com/wechaty/wechaty)，让微信桥接和微信机器人有更多可能！
 
 同时我也推荐一下他开发的 [Docker-Wechat](https://github.com/huan/docker-wechat) ，用 Docker 解决了使用 Linux 微信比较麻烦的问题。想了想我用 CrossOver 安装微信，然后用起来还有一堆的 bug 就感觉这个真的非常好。
+
+> 作者: [立音](https://github.com/cubesky)，个人开发者。首发于博客: [使用 Matrix 接收微信消息](https://liyin.date/2020/03/01/matrix-wechat-bridge/) 遵循 CC BY-NC-SA 3.0 CN

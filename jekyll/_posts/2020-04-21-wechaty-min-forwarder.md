@@ -9,9 +9,6 @@ tags:
   - productivity
 ---
 
-> 作者: [hzzzzzz](https://github.com/hzzzzzz) Node.js developer
-> Code: [Github](https://github.com/hzzzzzz/wechaty-forwarder)
-
 ## 需求
 
 我们每天需要向数百个微信群批量转发信息，目前使用手动操作，需要耗费大量时间和精力，且很容易遗漏、出错。如果有一可自动化、程序化群发消息的工具，则可大大减轻负担，提高效率。
@@ -58,3 +55,6 @@ tags:
 ## 致谢
 
 感谢 `Wechaty` 开源项目及 `JuziBot` 公司提供的 token，为开发者带来极大便利！
+
+> 作者: [hzzzzzz](https://github.com/hzzzzzz) Node.js developer
+> Code: [Github](https://github.com/hzzzzzz/wechaty-forwarder)
