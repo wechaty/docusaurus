@@ -9,8 +9,6 @@ tags:
   - news
 ---
 
-## 年末最硬核！微软AI全球训练营北京站落幕
-
 Global AI Bootcamp是微软发起的全球AI开发者训练营活动，旨在凝聚全球的开发者共同学习交流，共同推进人工智能行业快速发展。在2019年12月14日同一天内，全球几十个国家，130个城市，上万人共同参与了这场AI人的狂欢盛会。当日18点30分，AI Bootcamp北京站也在宇宙中心五道口PNP创业孵化器内如期开幕，近百名中国AI开发者参与活动，聆听八位业内专家倾囊分享。
 
 - Global AI Bootcamp: <https://globalai.community/global-ai-bootcamp>
@@ -30,7 +28,7 @@ Global AI Bootcamp是微软发起的全球AI开发者训练营活动，旨在凝
 
 ![image-3](/assets/2019/microsoft-ai-global-training-camp/image-3.png)
 
-### 活动签到
+## 活动签到
 
 Wish you were here.
 
@@ -121,19 +119,6 @@ PreAngel是一支专注于人工智能技术创业项目的天使基金，核心
 
 附最后的彩蛋，北京站直播视频回放地址，各位童鞋认真学习起来吧！
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jKbMFxDw0T4?start=210" frameborder="0" allowfullscreen="" style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=jKbMFxDw0T4?start=210" %}
 
 附录： [国内用户，B站地址](https://www.bilibili.com/video/av80153181/)

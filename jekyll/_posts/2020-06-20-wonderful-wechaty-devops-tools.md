@@ -11,9 +11,6 @@ tags:
 image: /assets/2020/wonderful-wechaty-devops-tools/teaser-image.png
 ---
 
-> Author: [@windmemory](https://github.com/windmemory) Wechaty contributor, author of [wechaty-puppet-padchat](https://github.com/wechaty/wechaty-puppet-padchat), [wechaty-puppet-padpro](https://github.com/wechaty/wechaty-puppet-padpro), [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus). CTO of [Juzi.Bot](https://pre-angel.com/portfolios/juzibot/)
-> Code: [@chatie/semver](https://github.com/chatie/semver), [@chatie/git-scripts](https://github.com/chatie/git-scripts), [@chatie/tsconfig](https://github.com/chatie/tsconfig), [@chatie/eslint-config](https://github.com/chatie/eslint-config)
-
 Wechaty 的代码质量，是大家公认的比较高的水准。而在整个项目的搭建和发展的过程中，DevOps 工具是 Wechaty 代码质量的重要保证，这里，就和大家一起聊聊关于 Wechaty DevOps Toolset。
 
 ## Wechaty DevOps family
@@ -152,3 +149,6 @@ git push -u origin very-sexy-code-change
 [git-push-error]: /assets/2020/wonderful-wechaty-devops-tools/git-push-error.jpg
 [question-face]: /assets/2020/wonderful-wechaty-devops-tools/question-face.png
 [git-hooks-explain]: /assets/2020/wonderful-wechaty-devops-tools/git-hooks-explain.png
+
+> Author: [@windmemory](https://github.com/windmemory) Wechaty contributor, author of [wechaty-puppet-padchat](https://github.com/wechaty/wechaty-puppet-padchat), [wechaty-puppet-padpro](https://github.com/wechaty/wechaty-puppet-padpro), [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus). CTO of [Juzi.Bot](https://pre-angel.com/portfolios/juzibot/)
+> Code: [@chatie/semver](https://github.com/chatie/semver), [@chatie/git-scripts](https://github.com/chatie/git-scripts), [@chatie/tsconfig](https://github.com/chatie/tsconfig), [@chatie/eslint-config](https://github.com/chatie/eslint-config)
