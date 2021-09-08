@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./wechatyLandingPageStylingSheet.module.css";
-import heroChatbotImage from "./heroChatbotImage.png";
-import heroImageMobile from "./heroImageMobile.png";
+import styles from "./header-section.module.css";
+import heroChatbotImage from "./hero-chatbot-image.png";
+import heroImageMobile from "./hero-image-mobile.png";
 
 const WechatyLandingPage = () => {
   return (
