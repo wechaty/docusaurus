@@ -23,7 +23,7 @@ echo "fit-image: $DST is directory"
 pushd ${DST}
 
 # FILES=$(git ls-files --exclude-standard --others *.jpg)
-FILE_LIST=($(find . -type f -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' -o -name '*.gif' -o -name '*.webp'))
+FILE_LIST=($(find docusaurus jekyll -type f -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' -o -name '*.gif' -o -name '*.webp'))
 
 for FILE in "${FILE_LIST[@]}"; do
   echo "checking $FILE ..."

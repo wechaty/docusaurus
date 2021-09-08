@@ -3,7 +3,7 @@ title: How to install Wechaty
 sidebar_label: Install Wechaty
 ---
 
-We have a Wechaty starter repository for beginners with the simplest setting. It will be **just work** out-of-the-box after you `clone` & `npm install` & `npm start`.
+We have a Wechaty [starter repository](https://github.com/wechaty/wechaty-getting-started) for beginners with the simplest setting. It will be **just work** out-of-the-box after you `clone`, run `npm install` in the terminal, followed by `npm start`.
 
 ## Requirements
 
