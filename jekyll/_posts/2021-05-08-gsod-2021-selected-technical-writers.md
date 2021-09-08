@@ -7,6 +7,7 @@ categories:
 tags:
   - google
   - gsod
+  - gsod-2021
   - event
   - 2021
   - zoom
@@ -59,24 +60,7 @@ for the Wechaty GSoD'21 program:
 As well as we will have two volunteer for helping mentors
 to manage the project and make sure everything is on track.
 
-## The Zoom Meeting
-
-We have great conversations with our GSoD'21 participants,
-and after the deadline of receiving proposals April 30,
-we organized a zoom meeting with all our technical writers.
-
-In this meeting,
-all the GSoD'21 participants introduceed theirselves
-and presented their proposals
-for the projects that they applied.
-[Huan](https://wechaty.js.org/contributors/huan/)
-and [Rui](https://wechaty.js.org/contributors/rui)
-introduced the Wechaty project and community to the writer team.
-
-The following YouTube video is the 3 hours recording
-of our great kick-off meeting of Wechaty GSoD'21 program:
-
-{% include iframe.html src="https://www.youtube.com/watch?v=hTkM_XPpFfU" %}
+![Google Season of Docs 2021: Wechaty GSoD'21 Group Photo](/assets/2021/05-gsod-2021-selected-technical-writers/group-photo.webp)
 
 ### Attendees
 
@@ -103,7 +87,24 @@ There are total 20 attendees on our meeting. They are:
 1. Arnab Saha,GSod’21 participant(landing pages)
 1. Rajiv Ranjan Singh, Interested in Volunteering for GSoD '21, IST (UTC +5:30)
 
-![Google Season of Docs 2021: Wechaty GSoD'21 Group Photo](/assets/2021/05-gsod-2021-selected-technical-writers/group-photo.webp)
+## The Zoom Meeting
+
+We have great conversations with our GSoD'21 participants,
+and after the deadline of receiving proposals April 30,
+we organized a zoom meeting with all our technical writers.
+
+In this meeting,
+all the GSoD'21 participants introduceed theirselves
+and presented their proposals
+for the projects that they applied.
+[Huan](https://wechaty.js.org/contributors/huan/)
+and [Rui](https://wechaty.js.org/contributors/rui)
+introduced the Wechaty project and community to the writer team.
+
+The following YouTube video is the 3 hours recording
+of our great kick-off meeting of Wechaty GSoD'21 program:
+
+{% include iframe.html src="https://www.youtube.com/watch?v=hTkM_XPpFfU" %}
 
 ### Agendas
 

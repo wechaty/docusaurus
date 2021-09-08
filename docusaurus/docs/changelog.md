@@ -365,7 +365,7 @@ title: Changelog
 - docs: Fixed FriendshipType enum typo [\#1620](https://github.com/wechaty/wechaty/pull/1620) ([Gcaufy](https://github.com/Gcaufy))
 - README typo [\#1615](https://github.com/wechaty/wechaty/pull/1615) ([lijiarui](https://github.com/lijiarui))
 - Contribute [\#1614](https://github.com/wechaty/wechaty/pull/1614) ([lijiarui](https://github.com/lijiarui))
-- fix: room mention contact should using roomAlias https://github.com/Chatie/wechaty/issues/1604 [\#1607](https://github.com/wechaty/wechaty/pull/1607) ([kis87988](https://github.com/kis87988))
+- fix: room mention contact should using roomAlias https://github.com/wechaty/wechaty/issues/1604 [\#1607](https://github.com/wechaty/wechaty/pull/1607) ([kis87988](https://github.com/kis87988))
 - Greenkeeper/monorepo.babel7 7.0.1 [\#1597](https://github.com/wechaty/wechaty/pull/1597) ([huan](https://github.com/huan))
 - add the methods' doc link [\#1583](https://github.com/wechaty/wechaty/pull/1583) ([TbhT](https://github.com/TbhT))
 - update readme doc [\#1582](https://github.com/wechaty/wechaty/pull/1582) ([TbhT](https://github.com/TbhT))

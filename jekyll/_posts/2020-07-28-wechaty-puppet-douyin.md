@@ -10,11 +10,6 @@ tags:
   - ecosystem
 ---
 
-> Author: [@gavinwang23](https://github.com/gavinwang23)
-> Code: [@gavinwang23/wechaty-puppet-douyin](https://github.com/gavinwang23/wechaty-puppet-douyin)
-
-## 暑期2020
-
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
 
 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
@@ -57,3 +52,6 @@ tags:
     - 编写文档
 - 项目链接：[https://github.com/gavinwang23/wechaty-puppet-douyin](https://github.com/gavinwang23/wechaty-puppet-douyin)
 - 联系方式：+86 15205733272 | email: 863445607@qq.com
+
+> Author: [@gavinwang23](https://github.com/gavinwang23)
+> Code: [@gavinwang23/wechaty-puppet-douyin](https://github.com/gavinwang23/wechaty-puppet-douyin)

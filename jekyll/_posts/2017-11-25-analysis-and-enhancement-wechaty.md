@@ -40,7 +40,7 @@ image: /assets/2017/binsee-wechaty-structure.png
 
 ### WebWxApp
 
-WebWxApp是基于angular开发，使用webpack打包的前端项目，可在Chatie的`webwx-app-tracker`项目查看其[格式化过的代码](https://github.com/Chatie/webwx-app-tracker/blob/master/formatted/webwxApp.js)。
+WebWxApp是基于angular开发，使用webpack打包的前端项目，可在Chatie的`webwx-app-tracker`项目查看其[格式化过的代码](https://github.com/wechaty/webwx-app-tracker/blob/master/formatted/webwxApp.js)。
 
 WebWxApp内定义了一些功能模块，下面列举一些涉及主要功能的:
 

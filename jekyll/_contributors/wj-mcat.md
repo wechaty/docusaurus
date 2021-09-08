@@ -1,7 +1,7 @@
 ---
 name: 吴京京
 site: https://github.com/wj-Mcat
-avatar: /assets/contributors/wj-mcat/avatar.png
+avatar: /assets/contributors/wj-mcat/avatar.webp
 bio: Committer of Python-Wechaty. NLP & Chatbot Researcher, a graduate student at Beijing University of Posts and Telecommunications.
 email: 1435130236@qq.com
 twitter: https://weibo.com/u/3877178684
@@ -13,14 +13,14 @@ twitter: https://weibo.com/u/3877178684
 
 爱好唱歌，旅游，写代码。
 
-![happy to say hello to the world](/assets/contributors/wj-mcat/hello.jpeg)
+![happy to say hello to the world](/assets/contributors/wj-mcat/hello.webp)
 
-![love to see beautiful scenery](/assets/contributors/wj-mcat/scenery.jpeg)
+![love to see beautiful scenery](/assets/contributors/wj-mcat/scenery.webp)
 
 ## Contact me
 
 - Github: [https://www.github.com/wj-Mcat](https://www.github.com/wj-Mcat)
-- Wechat: [pure-_--love](/imgs/weixin.jpeg)
+- Wechat: [pure-_--love](/imgs/weixin.webp)
 - WeiBo: [猫神战](https://weibo.com/u/3877178684)
 - Email: 1435130236@qq.com
 - Zhihu: [wjmcat](https://www.zhihu.com/people/wjmcat)
