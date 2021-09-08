@@ -12,8 +12,6 @@ image: /assets/2021/03-wechaty-cryptocurrency-websocket/wechaty-btc.jpg
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://wechaty.js.org)
 
-> 作者: [r-hou](https://github.com/r-hou)，学生，加密货币爱好者。
-
 [![Wechaty-Cryptocurrency-Notification](/assets/2021/03-wechaty-cryptocurrency-websocket/wechaty-btc.jpg)](https://github.com/r-hou/wechaty-cryptocurrency-websocket)
 
 <!-- more -->
@@ -487,3 +485,5 @@ if __name__ == '__main__':
 ## 感谢
 
 在最后我们要感谢所有为我们提供工具和服务的团队和个人。特别感谢开源项目[Wechaty](https://github.com/wechaty/wechaty)团队和免费提供服务的padLocal团队。
+
+> 作者: [r-hou](https://github.com/r-hou)，学生，加密货币爱好者。

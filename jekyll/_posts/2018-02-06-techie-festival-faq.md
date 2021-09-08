@@ -6,13 +6,6 @@ tags:
   - datagirls
 ---
 
-![a](https://avatars2.githubusercontent.com/u/14006826?v=3&s=88)
->
-> 作者: [@Helen](https://github.com/TingYinHelen), Lenovo
->
-> 女生科技体验节的志愿者助教。
->
-
 这篇文章主要针对女生科技体验节Wechaty专场，同学们问的问题的汇总。因为很多同学没有太多编程基础，所以这篇文章讲解会比较基础。
 
 故事从哪里说起呢？通过这次女生科技体验节活动，同学们遇到的问题主要来自三方面，第一，是docker安装方面的问题；第二，是对一些专有名词的不理解；第三，是程序运行和代码编写方面的问题。那么，我会把重心放在，程序编写和运行中遇到的问题，和对同学们来说比较陌生的专业术语的解释上。因为，安装的问题五花八门，安装好以后大家都就可以随心所欲的写自己的机器人了，遇到更多的是程序代码上的问题。还有，我对安装真的不是特别在行。。。。
@@ -190,3 +183,10 @@ Security->Virtualization->Intel(R)Virtualization Technology From Disabled->Enabl
 
 下载下面提供的链接，然后安装。
 <https://github.com/boot2docker/boot2docker/releases/download/v18.01.0-ce/boot2docker.iso>
+
+![a](https://avatars2.githubusercontent.com/u/14006826?v=3&s=88)
+>
+> 作者: [@Helen](https://github.com/TingYinHelen), Lenovo
+>
+> 女生科技体验节的志愿者助教。
+>
