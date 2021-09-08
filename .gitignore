@@ -4,6 +4,7 @@ t.*
 
 .idea
 .DS_Store
+*/.DS_Store
 
 package-lock.json
 
@@ -11,3 +12,4 @@ new-gh-pages/
 tmp/
 
 hash.file
+jekyll/_posts/2020-12-31-osschat-a-bridge-to-the-apache-way-in-china.md

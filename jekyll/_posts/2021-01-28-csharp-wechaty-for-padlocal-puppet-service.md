@@ -4,7 +4,6 @@ author: jesn
 tags:
   - dotnet
   - csharp
-  - sticky
   - puppet-service
 categories: tutorial
 image: /assets/2021/01-csharp-wechaty-for-padlocal-puppet-service/dotnet-wechaty.png

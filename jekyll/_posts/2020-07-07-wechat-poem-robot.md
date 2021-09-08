@@ -12,8 +12,6 @@ tags:
 image: /assets/2020/wechat-poem-robot/chat.png
 ---
 
-> 作者: [ray7551](https://github.com/ray7551/)
-
 [![Wechaty Badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![Everything about Wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
@@ -340,3 +338,5 @@ Redis 开发者 [Salvatore Sanfilippo](http://invece.org/) 在[这篇文章](htt
 在我看来，好的技术博文不应只有细节，还要有对细节的思考，对开发过程本身的观察，试图提炼出让开发过程更顺畅的经验。这些经验，甚至可以拓展到其它日常事务的处理过程中去。
 
 互联网每天产生和复制那么多技术博文，能有多少是可以在多年之后仍然给人启发的呢？
+
+> 作者: [ray7551](https://github.com/ray7551/)
