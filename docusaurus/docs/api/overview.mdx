@@ -1,6 +1,6 @@
 ---
 slug: /api/
-title: Wechaty API reference overview
+title: Wechaty API 
 sidebar_label: 'API: Overview'
 ---
 
@@ -10,38 +10,21 @@ export const Toc = () => <TOCInline toc={toc} />
 <!-- Curious Beginner: API reference - Details all elements in an API. -->
 <!-- Active User: API Guide - Contains far greater detail (including edge cases) than a tutorial or Codelab. -->
 
-The Wechaty API surface is tiny. Wechaty defines a set of easy to use classes for you.
+## Wechaty API
 
-This section documents the complete Wechaty API.
+API- Application programming interface is a software interface that offers services to other software services. Wechaty API is a very tiny and easy to import API that allows users to use all the functionalities of Wechaty to its best. The API offers a variety of user classes, typedefs, functions, methods, and many more features. This section is an overview of the Wechaty API.
 
-## Top-level Exports
+## Importing the Wechaty API
 
-Every class described below is a top-level export.
+You can import the Wechaty API as shown below:
 
-### Wechaty Class
-
-- [Class Wechaty](./wechaty)
-
-### User Classes
-
-- [Class Message](./message)
-- [Class Contact](./contact)
-  - [Class ContactSelf](./contact-self)
-- [Class Room](./room)
-  - [Class RoomInvitation](./room-invitation)
-- [Class Friendship](./friendship)
-
-## Importing
-
-You can import any of them like this:
-
-### ES6/TypeScript
+## ES6/TypeScript
 
 ```js
 import { Wechaty } from 'wechaty'
 ```
 
-### ES5 (CommonJS)
+## Javascript
 
 ```js
 var Wechaty = require('wechaty').Wechaty
