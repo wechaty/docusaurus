@@ -67,29 +67,7 @@ NLP技术到底哪家强？
 
 #### 1.3 Slides
 
-<div class="zoom-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <iframe
-    src='/assets/js/viewer-js/#/assets/2019/bot5-seminar-2/chatbot-experience-limingth.pdf'
-    width='560'
-    height='315'
-    allowfullscreen
-    webkitallowfullscreen
-    frameborder="0"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    "
-  ></iframe>
-</div>
+{% include iframe.html src="/assets/2019/bot5-seminar-2/chatbot-experience-limingth.pdf" %}
 
 ### 2. Talk2 - 脸盲助手-基于微信社交的Chatbot人脸识别应用探索
 
@@ -106,29 +84,7 @@ NLP技术到底哪家强？
 
 #### 2.3 Slides
 
-<div class="zoom-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <iframe
-    src='/assets/js/viewer-js/#/assets/2019/bot5-seminar-2/find-my-face-creatorkuang.pdf'
-    width='560'
-    height='315'
-    allowfullscreen
-    webkitallowfullscreen
-    frameborder="0"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    "
-  ></iframe>
-</div>
+{% include iframe.html src="/assets/2019/bot5-seminar-2/find-my-face-creatorkuang.pdf" %}
 
 ### 3. 分享视频回顾
 

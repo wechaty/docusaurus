@@ -1,6 +1,6 @@
 ---
 title: "wechaty Web Panel的构思与实现"
-author: gengchen528
+author: leochen-g
 categories: project
 tags:
   - code
@@ -9,10 +9,6 @@ tags:
   - ecosystem
 image: /assets/2020/web-panel/web-head.png
 ---
-
-> 作者: [Leo_chen](https://github.com/gengchen528/)，高级前端工程师，喜欢使用node做各种项目
-
-<!-- more -->
 
 ## 平台构思
 
@@ -305,3 +301,5 @@ docker run -v 绝对路径/env.js:/home/app/env.js -d  aibotk/wechat-assistant
 添加我的小助手来体验智能化的小秘书服务
 
 ![8](/assets/2020/web-panel/qr.png)
+
+> 作者: [Leo_chen](https://github.com/leochen-g/)，高级前端工程师，喜欢使用node做各种项目

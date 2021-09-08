@@ -10,10 +10,6 @@ tags:
 image: /assets/2019/chatie-devops-toolset.gif
 ---
 
-> Author: [huan](https://github.com/huan/), A DevOps fan.
-
-![chatie devops toolset](/assets/2019/chatie-devops-toolset.gif)
-
 The powerful and easy to use Chatie DevOps Toolset:
 
 1. [@chatie/tsconfig](https://github.com/chatie/tsconfig): Enables other module to inheritance tsconfig.json via Node.js packages
@@ -298,3 +294,5 @@ npm install --save-dev \
 npx pkg-jq -i '.publishConfig.tag="next"'
 
 ```
+
+> Author: [huan](https://github.com/huan/), A DevOps fan.
