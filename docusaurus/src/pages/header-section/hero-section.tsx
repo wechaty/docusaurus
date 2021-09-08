@@ -1,13 +1,11 @@
 import React from "react";
-import styles from "./header-section.module.css";
-import heroChatbotImage from "./hero-chatbot-image.png";
-import heroImageMobile from "./hero-image-mobile.png";
+import styles from "./hero-section.module.css";
+import heroChatbotImage from "./hero-chatbot-image.webp";
+import heroImageMobile from "./hero-image-mobile.webp";
 
-const WechatyLandingPage = () => {
+const HeroSection = () => {
   return (
     <div className={styles.body}>
-      {/* Hero Section Starts */}
-
       <div className={styles.heroSection}>
         <p className={styles.heroTagLine}>
           In just a few lines of code, you can have a fully featured
@@ -35,10 +33,8 @@ const WechatyLandingPage = () => {
           src={heroImageMobile}
         />
       </div>
-
-      {/* Hero Section Ends */}
     </div>
   );
 };
 
-export default WechatyLandingPage;
+export default HeroSection;
