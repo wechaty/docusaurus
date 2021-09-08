@@ -17,11 +17,7 @@ The mechanism behind is the **Puppet Service Discovery**, which can resolve the 
 1. make a GET request to the URL, and expect to get the following json object:
 
     ```json
-<<<<<<< HEAD
     {"host":"1.2.3.4","port":5678}
-=======
-    {"host":"1.2.3.4","port":1234}
->>>>>>> 1d0a225de20694c2e0be5396043c50bd556b42b9
     ```
 
 1. the above `1.2.3.4` will be the gRPC server, and the port `5678` is the gRPC port.
