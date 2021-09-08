@@ -1,7 +1,7 @@
 ---
 name: Sine Liu (刘思尧)
 site: https://github.com/ssine
-avatar: /assets/contributors/ssine/avatar.png
+avatar: /assets/contributors/ssine/avatar.webp
 bio: Computer Science Bachelor @BUPT, Master @UCSD. Intern @MicrosoftResearch, @Bytedance.
 email: liu.siyao@qq.com
 twitter: SiyaoLiu4

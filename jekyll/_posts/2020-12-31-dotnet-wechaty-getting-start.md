@@ -9,8 +9,6 @@ tags:
 image: /assets/2020/12-dotnet-wechaty/dotnet-wechaty.png
 ---
 
-## .NET Wechaty框架介绍
-
 .NET Wechaty 是使用.Net Core对TS版本Wechaty的翻译。
 
 .Net Core 支持跨平台，因此.NET Wechaty同样也支持跨平台,目前在Windows,Centos,Ubuntu 下已测试通过，Mac未测试，如果有Mac系统的欢迎测试，ARM架构的目前只测试Raspberry，但是GRPC连接有问题，问题待排查。

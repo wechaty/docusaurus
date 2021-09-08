@@ -7,11 +7,6 @@ tags:
 image: /assets/2020/promote-bot/banner.png
 ---
 
-> 作者: [LegendaryJesse](https://github.com/JesseWeb)，悦享推广联合创始人，半路出家的程序员。
-> Code: [promote-bot](https://github.com/JesseWeb/promote-bot)
-
- <!-- more -->
-
 ## 一、项目背景
 
 与美团饿了么等线上消费平台合作，以商家提供优惠券、我们以平台与用户合作推广的方式帮助这些平台完成销售指标，从中抽取佣金的一种模式。
@@ -63,3 +58,6 @@ image: /assets/2020/promote-bot/banner.png
 感谢[@huan](https://github.com/huan) 提供的代码思路以及编码风格。
 
 感谢[osschat](https://github.com/kaiyuanshe/osschat)提供的issue => wechat持续追踪。
+
+> 作者: [LegendaryJesse](https://github.com/JesseWeb)，悦享推广联合创始人，半路出家的程序员。
+> Code: [promote-bot](https://github.com/JesseWeb/promote-bot)
