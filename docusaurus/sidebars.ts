@@ -22,8 +22,8 @@ const api: SubMenuData = {
   label: 'API',
   items: [
     'api/overview',
-    'api/wechaty',
-    'api/message',
+    'api/wechaty-class',
+    'api/wechaty-message',
     'api/contact',
     'api/room',
     'api/room-invitation',
@@ -87,7 +87,7 @@ const specs: SubMenuData = {
     'specs/plugin',
     'specs/puppet',
     'specs/service',
-    'specs/token',
+    'specs/gateway',
   ],
 }
 
