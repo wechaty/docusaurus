@@ -51,7 +51,7 @@ wechaty
 
 export WECHATY_LOG="verbose"
 export WECHATY_PUPPET="wechaty-puppet-padlocal"
-export WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal__TOKEN__"
+export WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal${TOKEN}"
 
 export WECHATY_PUPPET_SERVER_PORT="9001"
 export WECHATY_TOKEN=$(curl -s https://www.uuidgenerator.net/api/version4)

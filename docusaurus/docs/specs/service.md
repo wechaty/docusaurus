@@ -31,7 +31,7 @@ That's the Wechaty Puppet Service Discovery.
 
 For the Wechaty SDK, we should support the following environment variables so that the users can switch between different languages without any changes:
 
-1. `export WECHATY_PUPPET_SERVICE_TOKEN=__TOKEN__`
+1. `export WECHATY_PUPPET_SERVICE_TOKEN=${TOKEN}`
 
 ## The Registration
 
