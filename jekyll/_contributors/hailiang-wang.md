@@ -1,7 +1,7 @@
 ---
 name: hain
 site: https://github.com/hailiang-wang
-avatar: /assets/contributors/hailiang-wang/avatar.png
+avatar: /assets/contributors/hailiang-wang/avatar.webp
 bio: You know, for chatbot.
 twitter: 
 ---

@@ -1,0 +1,107 @@
+---
+title: Wechaty Plugin Overview
+sidebar_label: Overview
+---
+
+[![Wechaty Plugin Contrib](https://img.shields.io/badge/Wechaty%20Plugin-Contrib-brightgreen.svg)](https://github.com/wechaty/wechaty-plugin-contrib)
+[![NPM Version](https://img.shields.io/npm/v/wechaty-plugin-contrib?color=brightgreen)](https://www.npmjs.com/package/wechaty-plugin-contrib)
+[![NPM](https://github.com/wechaty/wechaty-plugin-contrib/workflows/NPM/badge.svg)](https://github.com/wechaty/wechaty-plugin-contrib/actions?query=workflow%3ANPM)
+
+**Wechaty Plugin** is a JavaScript function that accepts a Wechaty instance and helps to avoid repetitive code.
+
+Wechaty has great support for various plugins both in-house and contributed by the community. They can be imported as a NPM package, and can be accessed by calling `Wechaty.use(WechatyPlugin())`.
+
+The first Wechaty Plugin system was design by our Wechaty Committer [@gcaufy](https://github.com/gcaufy), you can get more information about it [here](https://github.com/wechaty/wechaty/pull/1946).
+
+![Wechaty Plugin](https://wechaty.github.io/wechaty-plugin-contrib/images/plugin.png)
+
+> Image Credit: [What is Plugin](https://www.computerhope.com/jargon/p/plugin.htm)
+
+## Requirements
+
+1. [Node.js](https://nodejs.org/en/download) v12+
+2. [Wechaty](https://github.com/wechaty/wechaty) v0.40+
+
+## Plugins Contrib
+
+The most popular Wechaty plugins are available as a [npm package](https://www.npmjs.com/package/wechaty-plugin-contrib) that can be imported in your project easily. The package consists of the following plugins:
+
+| # | Plugin | Author | Feature |
+| :--- | :--- | :--- | :--- |
+| 1 | DingDong | @huan | Reply `dong` if bot receives a `ding` message. |
+| 2 | EventLogger | @huan | Log Wechaty Events for `'scan' \| 'login' \| 'message'` ... etc. |
+| 3 | QRCodeTerminal | @huan | Show QR Code for Scan in Terminal |
+| 4 | Heartbeat | @huan | Send emoji periodically |
+| 5 | ChatOps | @huan | Forward DM & Mention messages to a room |
+| 6 | RoomConnector | @huan | Connect rooms together with `1:N`, `M:1`, and `M:N` modes |
+| 7 | FriendshipAccepter | @huan | Accept friendship automatically, and say/do something for greeting. |
+| 8 | RoomInviter | @huan | Invite user to rooms by keyword |
+| 9 | EventHotHandler | @huan | Hot reloading event handler module files |
+| 10 | RoomInvitationAccepter | @huan | Automatically accepting any room invitations |
+| 11 | MessageAwaiter | @ssine | Wait for a particular message using `await` syntax [#13](https://github.com/wechaty/wechaty-plugin-contrib/issues/13) |
+
+You can get more information about these plugins in the **References** section of the documentation. We have created tutorials for some of the plugins to provide you a basic understanding of how to use them in your project.
+
+The plugin **tutorials** are available in the respective links:
+
+* [Event Logger plugin](./event-logger)
+* [QR Code Terminal plugin](./qr-code-terminal)
+* [Heartbeat plugin](./heartbeat)
+
+## Wechaty Plugin Directory
+
+There are various great Wechaty Plugins that not be included in the contrib because they are too powerful. They are published as a NPM by itself. A list of those plugins are available below:
+
+1. [**VoteOut Plugin**](https://github.com/Gcaufy/wechaty-voteout) by [@gcaufy](https://github.com/gcaufy) - help you to have a vote and kick out feature for you room.
+1. [**Schedule**](https://github.com/Gcaufy/wechaty-schedule) by [@gcaufy](https://github.com/gcaufy) - easily schedule jobs for your Wechaty bots.
+1. [**GotKicked**](https://github.com/wechaty/wechaty-got-kicked-out) by [@JesseWeb](https://github.com/JesseWeb) - monitor whether your bot got kicked out of group chat. Just few line of code to implement this instead fussy judging.
+1. [**WebPanel**](https://github.com/gengchen528/wechaty-web-panel) by [@Leo_chen](https://github.com/leochen-g) - help you quickly access the web panel
+1. [**Intercom**](https://github.com/wechaty/wechaty-plugin-intercom) by [@huan](https://github.com/huan) - helps you to manage your customers/leads/users in the WeChat Room, with the power of the Intercom service.
+1. [**Wechaty Vorpal**](https://github.com/wechaty/wechaty-vorpal) by [@huan](https://github.com/huan) - CLI for Chatbot - Extensible Commands for ChatOps, Powered by Vorpal.
+1. [**Freshdesk**](https://github.com/wechaty/wechaty-freshdesk) by [@huan](https://github.com/huan) - Managing Conversations in WeChat Rooms by Freshdesk.
+1. [**QnAMaker**](https://github.com/wechaty/wechaty-plugin-qnamaker) by [@huan](https://github.com/huan) - Wechaty QnAMaker Plugin helps you to answer questions in WeChat with the power of <https://QnAMaker.ai>.
+1. [**Weixin OpenAI**](https://github.com/wechaty/wechaty-weixin-openai) by [@windmemory](https://github.com/windmemory) - Wechaty Weixin OpenAI Plugin helps you to answer questions in WeChat with the power of <https://openai.weixin.qq.com>.
+1. [**YouDao Translate**](https://github.com/chs97/wechaty-plugin-youdao) by [@Chs97](https://github.com/chs97) - Wechaty YouDao Translate Plugin helps you to translate word in WeChat with the power of <https://ai.youdao.com/>.
+1. [**Log Monitor**](https://github.com/archywillhe/wechaty-log-monitor) by [@ArchyWillHe](https://github.com/archywillhe) - For log-related DevOps using only WeChat! Fully functional! Very loose coupling! Pretty much pure (other than side effects in I.O.)! Also contains features like QR Rescue (aka 掉线给码) for 2 Wechaties to rescue one another when one is disconnected from the grpc server.
+1. [**Wechaty Xyao**](https://github.com/watertao/wechaty-plugin-xyao) by [@watertao](https://github.com/watertao) - Wechaty Xyao Plugin gives bot ability to execute instruction with distributed brain module.
+1. [**Wechaty-fanli**](https://github.com/gengchen528/wechaty-fanli) by [@Leo_chen](https://github.com/gengchen528) - help you quickly access the rebate robot about taobao
+
+## Plugin launch video
+
+<div style={{
+    position: 'relative',
+    paddingBottom: '56.25%',
+    paddingTop:'30px',
+    height:0,
+    overflow:'hidden',
+  }}>
+  <iframe
+    src='https://www.youtube.com/embed/tfGZXoe_aA4'
+    allowFullScreen
+    webkitallowfullscreen="true"
+    frameBorder="0"
+    style={{
+      position: 'absolute',
+      top:0,
+      left:0,
+      width:'100%',
+      height:'100%',
+    }}
+  >
+  </iframe>
+</div>
+
+### Agenda
+
+- [14:00](https://www.youtube.com/watch?v=tfGZXoe_aA4&t=840s) Wechaty Community Team, "Plugin Open Source Month" event opening and agenda introduction
+- [14:05](https://www.youtube.com/watch?v=tfGZXoe_aA4&t=845s) Wechaty Creator [Huan](https://github.com/huan) ,Introduction and community ecology of Wechaty
+- [14:25](https://www.youtube.com/watch?v=tfGZXoe_aA4&t=865s) Wechaty Plugin Designer，Creator of [Wepy](https://github.com/tencent/wepy)(Wepy is Tencent mini-app opensource framework) [Gcaufy](https://github.com/Gcaufy), Development process and application of plugin system
+- [14:55](https://www.youtube.com/watch?v=tfGZXoe_aA4&t=895s) TeaBreak
+- [15:00](https://www.youtube.com/watch?v=tfGZXoe_aA4&t=900s) Wechaty Puppet Creator, Co-Founder of Juzi.Bot [Yuan Gao](https://github.com/windmemory),  Prospects for the commercialization of Wechaty plugins
+- [15:30](https://www.youtube.com/watch?v=tfGZXoe_aA4&t=930s) Wechaty Plugin Contributor [JesseWeb](https://github.com/JesseWeb), How to build with Wechaty Plugin
+
+## References
+
+* [GitHub repository of Wechaty Plugin Contrib](https://github.com/wechaty/wechaty-plugin-contrib)
+* [NPM package of Wechaty Plugin Contrib](https://www.npmjs.com/package/wechaty-plugin-contrib)
+* [Why we build Wechaty Plugin Contrib](https://mp.weixin.qq.com/s/8ISuUUGO1rZMYOJmpRpKUQ)

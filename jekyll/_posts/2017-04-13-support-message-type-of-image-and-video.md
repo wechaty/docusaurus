@@ -7,10 +7,6 @@ tags:
 image: /assets/2017/mukaiu-ding-code.jpg
 ---
 
-![avatars2](https://avatars2.githubusercontent.com/u/7746790?v=3&s=88)
-
-作者：@[mukaiu](https://github.com/mukaiu), [Wechaty Contributor](https://github.com/orgs/Chatie/teams/contributor)
-
 公司活动，需要对入群用户进行管理和自动回复。前期在Node Party Beijing上接触到 @huan 的分享，Wechaty刚好能支持该活动，支持Docker部署，是一个很棒的Bot Framework。
 
 开发过程中发现，[#4 Support Message Type of Image/Video](https://github.com/wechaty/wechaty/issues/4)此功能还未实现，决定完成该项特征。
@@ -163,5 +159,9 @@ Room.say(mediaMessage: MediaMessage)
 可以通过在ding-dong-bot里回复code来收到一张图片二维码。
 
 ![ding-code][mukaiu-ding-code]
+
+作者：@[mukaiu](https://github.com/mukaiu), [Wechaty Contributor](https://github.com/orgs/Chatie/teams/contributor)
+
+![avatars2](https://avatars2.githubusercontent.com/u/7746790?v=3&s=88)
 
 [mukaiu-ding-code]: /assets/2017/mukaiu-ding-code.jpg
