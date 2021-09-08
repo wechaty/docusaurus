@@ -14,7 +14,7 @@ Wechaty Puppet Service is gRPC for Wechaty Puppet. To use a Wechaty Puppet Servi
 
 ```sh
 export WECHATY_PUPPET=wechaty-puppet-service
-export WECHATY_PUPPET_SERVICE_TOKEN="__TOKEN__"
+export WECHATY_PUPPET_SERVICE_TOKEN="${TOKEN}"
 ```
 
 > You can switch between different Wechaty Puppet Services by changing your TOKEN. All your source code should work between different tokens without any changes.
@@ -37,7 +37,7 @@ TODO: list a easy to follow steps how to apply free token
 
 - Paimon: Register [here](http://175.27.139.176/)
 - wxwork/donut: Using **WeCom Account**(Not WeChat) with administrator rights [here](https://qiwei.juzibot.com/user/login?isWechaty=true)
-- Padlocal: [👉🏻 Get Free PadLocal Token 👈🏻](http://pad-local.com/) 
+- Padlocal: [👉🏻 Get Free PadLocal Token 👈🏻](http://pad-local.com/)
 
 ### 2. Free TOKEN (Long-term)
 
@@ -91,14 +91,14 @@ When you are using a Wechaty Puppet Service, you need to provide TOKEN to it so 
 The following shell commands demonstrated how to use it under Linux/macOS:
 
 ```shell
-export WECHATY_PUPPET_SERVICE_TOKEN=__TOKEN__
+export WECHATY_PUPPET_SERVICE_TOKEN=${TOKEN}
 
 ts-node bot.ts
 // or: node bot.js
 // or: make bot
 ```
 
-> `__TOKEN__` is your TOKEN
+> `${TOKEN}` is your TOKEN
 
 ### How To Become a Wechaty Puppet Service Provider
 
