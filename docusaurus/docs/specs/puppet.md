@@ -91,8 +91,25 @@ For a more robust Wechaty system, we can consider saving the `ready` event if th
 Need to fire `ready` event after the bot logined and all data has been synced.
 
 > For example, after we re-installed the WeChat app on our phone, it has to load contacts/rooms from the server for a long time.
-
 [check](https://github.com/wechaty/wechaty-puppet-service/issues/18)
+
+## Payload Cache Management
+
+1. If the low-level puppet wants to dirty a payload, emit a `dirty` event. The payload will be the `type` and the `id` of the paload
+1. If the high-level puppet wants to dirty a payload, call `dirtyPayload(type, id)` method, what it does (and only does) is to make the low-level puppet emit a `dirty` event.
+1. Each puppet should listen to the `dirty` event, and call `XXXPayloadDirty(id)` to purge the internal cache of the specific payload inside itself
+Related issues
+
+- [Specification for dirty event, dirtyPayload(), and `XXXPayloadDirty() to puppet abstraction, puppet implementation, puppet server, and puppet client. wechaty/wechaty-puppet-service#164](https://github.com/wechaty/wechaty-puppet-service/issues/164)
+- [No contactPayloadDirty method in puppet-implementation. wechaty/wechaty-puppet-service#43](https://github.com/wechaty/wechaty-puppet-service/issues/43)
+- [add dirty rpc function definition for sync data wechaty/grpc#79](https://github.com/wechaty/grpc/pull/79)
+
+## NPM Publication
+
+- [ ] `wechaty-puppet` must not a dependency. It should be put in devDependencies and peerDependencies
+- [ ] `wechaty` must not a dependency. It should be put in devDependencies and peerDependencies
+- [ ] must exist `examples/ding-dong-bot.ts` to implement the ding/dong logic, use puppet api only.
+
 
 ## Event: `heartbeat`
 

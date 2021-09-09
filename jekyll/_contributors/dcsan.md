@@ -1,7 +1,7 @@
 ---
 name: David 'DC' Collier
 site: https://github.com/dcsan
-avatar: /assets/contributors/dcsan/avatar.png
+avatar: /assets/contributors/dcsan/avatar.webp
 bio: Serial Entrepreneur, Game designer and developer. Making chatbots at RIKAI Labs
 email: 
 twitter: 

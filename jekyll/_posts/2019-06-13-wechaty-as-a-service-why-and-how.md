@@ -9,8 +9,6 @@ tags:
   - utility
 ---
 
-> Author: [qhduan](https://github.com/qhduan/), A Deamer.
-
 [代码](https://github.com/deepdialog/Wechaty-as-a-service)
 
 这里作者分享一下为什么要做这个Wechaty-As-A-Service的东东，它如何将Wechaty服务化，在什么场景下应用的。
@@ -474,3 +472,5 @@ if __name__ == '__main__':
 容错需要考虑错误的传播路径，好做但是比较繁琐。
 
 未来还是期待Wechaty推出gRPC功能，真正实现Wechaty-As-A-Service
+
+> Author: [qhduan](https://github.com/qhduan/), A Deamer.

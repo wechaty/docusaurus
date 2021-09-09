@@ -7,8 +7,6 @@ tags:
   - news
 ---
 
-> 作者: [庄表伟](https://github.com/zhuangbiaowei/)，[开源社](http://www.kaiyuanshe.cn/)理事/执行长。首发于简书: [微信机器人能够做些什么事？](https://www.jianshu.com/p/9698395511e0)
-
 作为一个会写代码的产品经理，我最近自己在玩一个微信机器人的开源框架：[wechaty](https://github.com/wechaty/wechaty)，因为上手特别简单，通过修改hello world，我也写出了自己的微信机器人，所以引发了很多的联想，打算和朋友们聊聊这些想法。
 
 只要是用微信客户端，人类可以完成的事情，**微信机器人**理论上可以做任何事。当然，以下一些限制，还是存在的？
@@ -102,3 +100,5 @@ tags:
 先聊到这里，后续的想法，也欢迎大家一起来讨论。二维码是“开源社-bot”，欢迎添加。功能还很弱，大家轻拍 :)
 
 ![开源社](/assets/2018/kaiyuanshe.png)
+
+> 作者: [庄表伟](https://github.com/zhuangbiaowei/)，[开源社](http://www.kaiyuanshe.cn/)理事/执行长。首发于简书: [微信机器人能够做些什么事？](https://www.jianshu.com/p/9698395511e0)
