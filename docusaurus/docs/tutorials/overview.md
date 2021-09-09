@@ -86,4 +86,3 @@ For better understanding we have classified the bots under three categories taki
 - [Tuling 123 bot](examples/professional/tuling123-bot.md): Connect to *[tuling123](http://www.turingapi.com/)* chatbot
 - [Telegram roger bot](https://github.com/wechaty/wechaty-getting-started/blob/main/examples/professional/telegram-roger-bot.js): Single bot that runs under/for both Telegram and WeChaty
 - [Blessed twins bot](https://github.com/wechaty/wechaty-getting-started/tree/main/examples/professional/blessed-twins-bot): Wechaty multi-instance support (v0.16+) demo
-
