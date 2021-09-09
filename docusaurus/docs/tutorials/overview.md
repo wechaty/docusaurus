@@ -21,6 +21,29 @@ If you are a total begginer then we recommend using [Gitpod](https://gitpod.io/#
 
 Once you get basic idea of ding-dong bot, you can try out building it from scratch by following our [Running Locally](getting-started/running-locally.mdx) tutorial.
 
+<div style={{
+    position: 'relative',
+    paddingBottom: '56.25%',
+    paddingTop:'30px',
+    height:0,
+    overflow:'hidden',
+  }}>
+  <iframe
+    src='https://www.youtube.com/embed/LHT49Q_x5D8'
+    allowFullScreen
+    webkitallowfullscreen="true"
+    frameBorder="0"
+    style={{
+      position: 'absolute',
+      top:0,
+      left:0,
+      width:'100%',
+      height:'100%',
+    }}
+  >
+  </iframe>
+</div>
+
 ## Advanced Tutorials (Using plugins with wechaty)
 
 If you have some experience with Wechaty or Chatbot application development, we have intermediate to advanced tutorials on the following topics as well.
