@@ -14,7 +14,6 @@ Room Invitation is a  global class that accepts room invitation.This section giv
 | date\(\)    | `Promise` (Date)   |
 | age\(\)    | `Promise` (Number)   |
 
-
 ### roomInvitation.accept\(\) ⇒ `Promise <void>`
 
 This method accepts the room invitation.See the following example:
