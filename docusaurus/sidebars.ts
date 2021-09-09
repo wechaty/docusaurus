@@ -212,6 +212,7 @@ const introduction = {
   items: [
     'overview',
     'wechaty',
+    'what-can-you-do-with-wechaty',
     'who-is-using-wechaty',
     'getting-started-with-wechaty',
     'main-concepts-in-wechaty',
@@ -244,26 +245,18 @@ const introduction = {
 const advanced = {
   label: 'Advanced',
   items: [
-    'examples/advanced/demo-in-tutorial',
     'examples/advanced/busy-bot',
     'examples/advanced/media-file-bot',
     'examples/advanced/room-bot',
     'examples/advanced/friend-bot',
-    'examples/advanced/gist-bot',
   ],
 }
 
 const professional = {
   label: 'Professional',
   items: [
-    'examples/professional/hot-import-bot',
     'examples/professional/ctrl-c-signal-bot',
-    'examples/professional/monster-bot',
-    'examples/professional/api-ai-bot',
-    'examples/professional/speech-to-text-bot',
     'examples/professional/tuling123-bot',
-    'examples/professional/telegram-roger-bot',
-    'examples/professional/blessed-twins-bot',
   ],
 }
 
@@ -297,7 +290,6 @@ const tutorials = {
     subMenu(usingPluginWithWechaty),
     'tutorials/using-vorpal-with-wechaty',
     subMenu(usingReduxWithWechaty),
-    'tutorials/cheatsheet',
     subMenu(examples),
   ],
 }
