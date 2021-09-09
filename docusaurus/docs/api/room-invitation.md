@@ -16,7 +16,7 @@ Room Invitation is a global class that accepts room invitation. This section des
 
 ### roomInvitation.accept\(\) ⇒ `Promise <void>`
 
-This method accepts the room invitation.See the following example:
+This method accepts the room invitation. See the following example:
 
 #### Example
 
