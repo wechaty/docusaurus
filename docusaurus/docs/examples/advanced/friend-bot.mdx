@@ -1,0 +1,433 @@
+---
+title: Friend Bot
+---
+
+<!-- MDX import -->
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+import ShortestChatbots from "../../polyglot/transclusions/shortest-chatbots.mdx";
+
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
+[![JavaScript](https://img.shields.io/badge/%3C%2F%3E-JavaScript-blue.svg)](https://www.javascript.com/)
+
+Wechaty **Friend bot** illustrates how to handle friend requests.
+
+In this tutorial, you will get step-by-step instructions for building the Wechaty Friend bot having the following functionalities:
+
+1. Send friend request
+2. Accept friend request
+3. Recognize & verify message
+
+## Try out the bot
+
+[![Edit wechaty-friend-bot](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/sbis04/wechaty-friend-bot/tree/main/?fontsize=12&hidenavigation=1&module=%2Ffriend-bot.js&theme=dark)
+
+You can try out the Wechaty Friend bot using this interactive CodeSandbox.
+
+Just scan the generated QR code with **WeChat** app, and you are ready to play with the bot!
+
+<iframe
+  class="codesandbox"
+  src="https://codesandbox.io/embed/github/sbis04/wechaty-friend-bot/tree/main/?fontsize=12&hidenavigation=1&module=%2Ffriend-bot.js&theme=dark"
+  title="wechaty-friend-bot"
+  sandbox="allow-forms allow-modals allow-popups allow-same-origin allow-scripts"
+></iframe>
+
+## Requirements
+
+1. [Node.js](https://nodejs.org/en/download) v12+
+2. [Wechaty](https://github.com/wechaty/wechaty) v0.40+
+
+## Getting started
+
+You should have `Node.js` installed on your system. If you do not have `Node.js` installed (or have a version below 12), then you need to install the latest version of `Node.js` by following the links below:
+
+:::note Node.js installation docs
+
+- [Windows](https://nodejs.org/en/download/package-manager/#windows)
+- [Linux\(Debian/Ubuntu\)](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+- [macOS](https://nodejs.org/en/download/package-manager/#macos)
+
+> Installation guide for `Node.js` on other platforms can be found [here](https://nodejs.org/en/download/package-manager/).
+
+:::
+
+You can head over to the [Building the bot](#building-the-bot) section to learn how to build the bot on your own.
+
+Otherwise, if you just want to try out the bot on your local system, follow the steps below:
+
+### 1. Clone the repository
+
+Use the following commands to clone the [GitHub repository](https://github.com/wechaty/wechaty-getting-started) and navigate to the directory:
+
+```bash
+git clone https://github.com/wechaty/wechaty-getting-started.git
+cd wechaty-getting-started
+```
+
+### 2. Install dependencies
+
+You can install the `npm` packages required for running the bot, using this command:
+
+```sh
+npm install
+```
+
+### 3. Run the bot
+
+You have to `export/set` the environment variables:
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```bash
+set WECHATY_LOG=verbose
+set WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+</Tabs>
+
+> There are various **Wechaty puppets** available, you can know more about them [here](https://github.com/wechaty/wechaty-getting-started#working-with-different-puppets).
+
+Run the bot by using the following command:
+
+```bash
+node examples/advanced/friend-bot.js
+```
+
+It will generate a QR code, scan it using **WeChat** or **WhatsApp** (according to the puppet you have used), and you are ready to play with the bot.
+
+## Building the bot
+
+Let's get started with building the Wechaty Friend bot.
+
+### 1. Initialize project
+
+Create a new folder called `friend-bot` and move into that directory:
+
+```bash
+mkdir friend-bot
+cd friend-bot
+```
+
+Use the following command to initialize an npm project:
+
+```bash
+npm init -y
+```
+
+This will generate the `package.json` file containing these:
+
+```json
+{
+  "name": "friend-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+```
+
+### 2. Install dependencies
+
+You will need the `wechaty` NPM package for building this bot & `qrcode-terminal` for displaying the QR code that can be scanned for using the bot. Install them using the following commands:
+
+```sh
+npm install wechaty
+npm install qrcode-terminal
+```
+
+You will also need to add dependencies for using any [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/) which helps to integrate Wechaty with various **instant messaging (IM) systems** (such as WeChat, WhatsApp, and WeCom):
+
+1. If you want to use **[WhatsApp](https://www.whatsapp.com/)**, install `wechaty-puppet-whatsapp`:
+
+  ```bash
+  npm install wechaty-puppet-whatsapp
+  ```
+2. If you want to use **[WeChat](https://www.wechat.com/)**, you can try the following puppets:
+
+   * **Web Protocol:** Install `wechaty-puppet-wechat`:
+
+     ```bash
+     npm install wechaty-puppet-wechat
+     ```
+
+   * **iPad Protocol:**
+     * padlocal: Install `wechaty-puppet-padlocal`:
+
+       ```bash
+       npm install wechaty-puppet-padlocal
+       ```
+
+       Then get a token like `puppet_padlocal_XXX`, know more about puppet service padlocal [here](http://wechaty.js.org/docs/puppet-services/padlocal).
+
+     * paimon: Install `wechaty-puppet-service`:
+
+       ```bash
+       npm install wechaty-puppet-service
+       ```
+
+       Then get a token like `puppet_paimon_XXX`, know more about puppet service paimon [here](http://wechaty.js.org/docs/puppet-services/paimon).
+
+3. If you want to use **[WeCom](https://work.weixin.qq.com/)**, install `wechaty-puppet-service`:
+
+  ```bash
+  npm install wechaty-puppet-service
+  ```
+
+  Then get a token like `puppet_wxwork_XXXXX`, more about puppet service wxwork [here](https://wechaty.js.org/docs/puppet-services/wxwork/).
+
+> You can find more information about the puppets [here](https://wechaty.js.org/docs/puppet-providers/).
+
+### 3. Write code for bot
+
+Start by creating a new file `friend-bot.js`. We will be writing the code here.
+
+Let's import the required packages in the JavaScript file:
+
+```js
+const qrTerm = require("qrcode-terminal");
+const { log, Wechaty, Friendship } = require("wechaty");
+```
+
+Define some functions required for handling different events returned by the Wechaty bot:
+
+- **onLogin**
+
+  This will print a log message when the user logs in to the bot.
+
+  ```js
+  function onLogin(user) {
+    log.info("Bot", `${user.name()} logged in`);
+  }
+  ```
+
+- **onLogout**
+
+  This will print a log message when the user logs out of the bot.
+
+  ```js
+  function onLogout(user) {
+    log.info("Bot", `${user.name()} logged out`);
+  }
+  ```
+
+- **onError**
+
+  This is for printing an error message to the console.
+
+  ```js
+  function onError(e) {
+    log.info("Bot", "error: %s", e);
+  }
+  ```
+
+- **onScan**
+
+  This function will be used for generating the **QR code** for the puppet specified, and display it on the console with a log message.
+
+  ```js
+  function onScan(qrcode, status) {
+    qrTerm.generate(qrcode, { small: true });
+    console.log(`${qrcode}\n[${status}] Scan QR Code in above url to login: `);
+  }
+  ```
+
+- **onFriendship**
+
+  This function will be used for handling the friendship events.
+
+  ```js
+  async function onFriendship(friendship) {
+    let logMsg;
+    const fileHelper = bot.Contact.load("filehelper");
+
+    try {
+      logMsg = "received `friend` event from " + friendship.contact().name();
+      await fileHelper.say(logMsg);
+      console.log(logMsg);
+
+      switch (friendship.type()) {
+        case Friendship.Type.Receive:
+          // Handle the received friendship request event
+          break;
+
+        case Friendship.Type.Confirm:
+          // Handle the confirmed friendship event
+          break;
+
+        default:
+          break;
+      }
+    } catch (e) {
+      logMsg = e.message;
+    }
+
+    console.log(logMsg);
+    await fileHelper.say(logMsg);
+  }
+  ```
+
+  We have first loaded the contact, and then trying the get the friendship type to see if it is a **receive** or **confirm** event. Add the following to the switch case to handle the friendship type:
+
+  ```js
+  switch (friendship.type()) {
+    case Friendship.Type.Receive:
+      if (friendship.hello() === "ding") {
+        logMsg = 'accepted automatically because verify message is "ding"';
+        console.log("before accept");
+        await friendship.accept();
+
+        await new Promise((r) => setTimeout(r, 1000));
+        await friendship.contact().say("hello from Wechaty");
+        console.log("after accept");
+      } else {
+        logMsg =
+          "not auto accepted, because verify message is: " + friendship.hello();
+      }
+      break;
+
+    case Friendship.Type.Confirm:
+      logMsg = "friendship confirmed with " + friendship.contact().name();
+      break;
+
+    default:
+      break;
+  }
+  ```
+
+  If the friendship type is **receive**, then check if the message is "ding". If it is, then accept the friendship request, otherwise print a message to the console.
+
+You have completed defining all the functions required for handling various bot events. Now, provide a name to initialize the Wechaty bot:
+
+```js
+const bot = new Wechaty({
+  name: "friend-bot",
+});
+```
+
+Assign proper function to call when an event is triggered by the bot:
+
+```js
+bot.on("login", onLogin);
+bot.on("logout", onLogout);
+bot.on("error", onError);
+bot.on("scan", onScan);
+bot.on("friendship", onFriendship);
+```
+
+Use the following to start the bot:
+
+```js
+bot.start().catch(console.error);
+```
+
+## Running the bot
+
+In order to run the bot, first you have to **export/set** an environment variable with the type of puppet to use:
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+
+# For using WhatsApp:
+# export WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# export WECHATY_PUPPET=wechaty-puppet-service
+# export WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+
+# For using WhatsApp:
+# export WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# export WECHATY_PUPPET=wechaty-puppet-service
+# export WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```bash
+set WECHATY_LOG=verbose
+set WECHATY_PUPPET=wechaty-puppet-wechat
+
+# For using WhatsApp:
+# set WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# set WECHATY_PUPPET=wechaty-puppet-service
+# set WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
+```
+
+</TabItem>
+</Tabs>
+
+> If you are using WeCom, you can get token from [puppet service wxwork](http://wechaty.js.org/docs/puppet-services/wxwork).
+
+Run the bot using the following command:
+
+```bash
+node friend-bot.js
+```
+
+This will start the bot and generate a QR code.
+
+Scan it using your **WeChat/WhatsApp** as per the puppet you have selected, and you are ready to play with the bot!
+
+## References
+
+* [Wechaty Getting Started GitHub repository](https://github.com/wechaty/wechaty-getting-started)
