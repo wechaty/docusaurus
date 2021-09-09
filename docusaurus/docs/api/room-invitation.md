@@ -35,7 +35,7 @@ bot.on('room-invite', async roomInvitation => {
 
 ### roomInvitation.inviter\(\) ⇒ `Promise <Contact>`
 
-This method gets the inviter from the room invitation. Check the following example below :
+This method gets the inviter from the room invitation. Check the following example:
 
 #### Example
 
