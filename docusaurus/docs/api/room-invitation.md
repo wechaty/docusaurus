@@ -4,7 +4,7 @@ title: Room Invitation
 
 ## Room Invitation
 
-Room Invitation is a  global class that accepts room invitation.This section gives a description of the methods of the Room Invitation class.
+Room Invitation is a global class that accepts room invitation. This section describes the methods of the Room Invitation class.
 
 | Instance Methods | Return type |
 |----------------|---------------|
