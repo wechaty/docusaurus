@@ -80,12 +80,12 @@ npm start
 
 ## Blogs
 
-- [教你用python-wecahty和web协议开发机器人 (Tutorial on python-wechaty usage and web protocol to develop robots), @wj-Mcat, Apr 17, 2021](https://wechaty.js.org/2021/04/17/python-wechaty-use-web/)
-- [教你用go-wecahty和web协议开发机器人 (Tutorial on go-wecahty usage and web protocol to develop robots), @dchaofei, Apr 16, 2021](https://wechaty.js.org/2021/04/16/go-wechaty-use-web/)
+- [Tutorial on python-wechaty usage and web protocol to develop robots, @wj-Mcat, Apr 17, 2021](https://wechaty.js.org/2021/04/17/python-wechaty-use-web/)
+- [Tutorial on go-wecahty usage and web protocol to develop robots, @dchaofei, Apr 16, 2021](https://wechaty.js.org/2021/04/16/go-wechaty-use-web/)
 
 ## History
 
-- [重磅：使用UOS微信桌面版协议登录，wechaty免费版web协议重放荣光 ( Use UOS WeChat desktop version protocol to log in, wechaty free version web protocol) , @gengchen528, Apr 13, 2021](https://wechaty.js.org/2021/04/13/wechaty-uos-web/)
+- [Use UOS WeChat desktop version protocol to log in, wechaty free version web protocol , @gengchen528, Apr 13, 2021](https://wechaty.js.org/2021/04/13/wechaty-uos-web/)
 - [Wechaty New Version 0.16(BETA, with super power) Released, @huan, Jun 21, 2018](https://wechaty.js.org/2018/06/21/wechaty-new-release-version-0.16/)
 
 ## Maintainers
