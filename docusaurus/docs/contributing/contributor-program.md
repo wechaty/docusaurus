@@ -29,7 +29,7 @@ Learn more about Wechaty Puppet Services from our [document](../puppet-services/
 
 ## 2. Support the Wechaty Project
 
-You can help the project by supporting this project as becoming a backer.  [![Backers on Open Collective](https://opencollective.com/wechaty/backers/badge.svg)](#backers)
+You can help the project by supporting this project as becoming a backer. [![Backers on Open Collective](https://opencollective.com/wechaty/backers/badge.svg)](#backers)
 
 The following are our existing backers. Thank you to everyone! 🙏 [[Become a backer](https://opencollective.com/wechaty#backer)]
 
@@ -39,7 +39,7 @@ The following are our existing backers. Thank you to everyone! 🙏 [[Become a b
 
 [![Wechaty Contributor Program](https://img.shields.io/badge/Wechaty-Contributor%20Program-green.svg)](https://wechaty.js.org/docs/contributing/)
 
-You need to add the __Wechaty Contributor Program__ badge after you join this program.
+You need to add the **Wechaty Contributor Program** badge after you join this program.
 
 ```md
 [![Wechaty Contributor Program](https://img.shields.io/badge/Wechaty-Contributor%20Program-green.svg)](https://wechaty.js.org/docs/contributing/)

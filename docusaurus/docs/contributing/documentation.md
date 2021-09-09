@@ -20,7 +20,7 @@ in the most useful and least error-prone ways.
 
 Though Wechaty's documentation is intended to be read as HTML at
 <https://wechaty.js.org/docs/>, we edit it as a collection of markdown files for
-maximum flexibility. These files live in the top-level ``docusaurus/docs/``
+maximum flexibility. These files live in the top-level `docusaurus/docs/`
 directory at Wechaty Website repository at <https://github.com/wechaty/wechaty.js.org>.
 
 If you'd like to start contributing to our docs, get the latest version of
@@ -46,8 +46,7 @@ Then build the website:
 npm run docusaurus:start
 ```
 
-To get started contributing, you'll want to read the :ref:`reStructuredText
-reference <sphinx:rst-index>`.
+To get started contributing, you'll want to read the :ref:`reStructuredText reference <sphinx:rst-index>`.
 
 Your locally-built documentation will be themed differently than the
 documentation at [Docusaurus docs introduction](https://docusaurus.io/docs/docs-introduction).
@@ -182,7 +181,7 @@ documentation:
   ### Three
 
   #### Four
-    
+
   ##### Five
   ```
 
