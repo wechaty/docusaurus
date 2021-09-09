@@ -23,7 +23,7 @@ const api: SubMenuData = {
   items: [
     'api/overview',
     'api/wechaty-class',
-    'api/wechaty-message',
+    'api/message',
     'api/contact',
     'api/room',
     'api/room-invitation',
