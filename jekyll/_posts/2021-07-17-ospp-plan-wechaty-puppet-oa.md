@@ -15,15 +15,6 @@ tags:
   - plan
 ---
 
-“开源软件供应链点亮计划-暑期2021”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
-旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
-根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2021”活动奖金和奖杯。
-官网：[https://summer.iscas.ac.cn/](https://summer.iscas.ac.cn/)
-
-本项目 [基于 Wechaty Puppet Official Account 项目的用户与消息等基础功能的完善] 系 暑期2021 支持的开源项目。
-
-## 项目介绍
-
 - 项目名称：基于 Wechaty Puppet Official Account 项目的用户与消息等基础功能的完善
 - 导师：吴京京
 - 学生：zzzyer
@@ -31,7 +22,7 @@ tags:
   - [ ] 文本消息收发模块
   - [ ] 图片消息收发模块
   - [ ] 推送事件
-- 项目链接：[https://github.com/wechaty/summer-of-wechaty/issues/82](https://github.com/wechaty/summer-of-wechaty/issues/82)
+- 项目介绍：[https://github.com/wechaty/summer-of-wechaty/issues/82](https://github.com/wechaty/summer-of-wechaty/issues/82)
 
 ## 需求介绍
 
@@ -70,3 +61,10 @@ tags:
 - 如有时间，可与导师商定对功能进行扩展
 
 > Author:[@zzzyer](https://github.com/zzzyer)
+
+“开源软件供应链点亮计划-暑期2021”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
+旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
+根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2021”活动奖金和奖杯。
+官网：[https://summer.iscas.ac.cn/](https://summer.iscas.ac.cn/)
+
+本项目 [基于 Wechaty Puppet Official Account 项目的用户与消息等基础功能的完善] 系 暑期2021 支持的开源项目。

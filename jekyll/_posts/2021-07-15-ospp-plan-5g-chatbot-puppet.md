@@ -1,5 +1,5 @@
 ---
-title: "开发支持电信运营商5G Chatbot/RCS的 Wechaty接入Puppet模块"
+title: "OSPP 2021-期初报告-开发支持电信运营商5G Chatbot/RCS的 Wechaty接入Puppet模块"
 author: sqcn
 categories:
   - project
@@ -15,12 +15,6 @@ tags:
   - ospp-2021
   - plan
 ---
-
-“开源软件供应链点亮计划-暑期2021”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2021”活动奖金和奖杯。
-
-官网：<https://summer.iscas.ac.cn/#/homepage>
-
-本项目 [开发支持电信运营商5G Chatbot/RCS的 Wechaty接入Puppet模块] 系暑期2021支持的开源项目。
 
 ## 开发支持电信运营商5G Chatbot/RCS的 Wechaty接入Puppet模块
 
@@ -71,3 +65,11 @@ tags:
   - 津贴分配：邵琦同学：张瑞宁同学=1:1
 
 > Author: [@zrn-fight](https://github.com/zrn-fight)[@Sochy](https://github.com/sqcn)
+
+## 关于暑期2021
+
+“开源软件供应链点亮计划-暑期2021”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2021”活动奖金和奖杯。
+
+官网：<https://summer.iscas.ac.cn/#/homepage>
+
+本项目 [开发支持电信运营商5G Chatbot/RCS的 Wechaty接入Puppet模块] 系暑期2021支持的开源项目。
