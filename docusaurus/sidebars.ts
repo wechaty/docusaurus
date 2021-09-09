@@ -87,6 +87,7 @@ const specs: SubMenuData = {
     'specs/plugin',
     'specs/puppet',
     'specs/service',
+    'specs/token',
     'specs/gateway',
   ],
 }
