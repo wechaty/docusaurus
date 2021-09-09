@@ -44,7 +44,7 @@ relevant as the framework evolves.
 
 - Fix typos in documentation
 - Translate documentation to your local language
-- Write tutorials and blog posts, see more: https://github.com/wechaty/wechaty.js.org/tree/master/jekyll/_posts
+- Write tutorials and blog posts, see more: <https://github.com/wechaty/wechaty.js.org/tree/master/jekyll/_posts>
 - Answer questions on the Wechaty Developers Home or Github issues
 - Organize Wechaty meetups or user groups in your area
 
@@ -93,17 +93,17 @@ Fork with [GitHub Codespaces](https://github.com/features/codespaces):
 
 - [Fork, edit, and preview](https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/creating-a-codespace) using [GitHub Codespaces](https://github.com/features/codespaces) without having to install and run the project locally.
 
-##### Open a pull request
+#### Open a pull request
 
 When you're done making changes and you'd like to propose them for review, use the pull request template to open your PR (pull request).
 
-##### Submit your PR & get it reviewed
+#### Submit your PR & get it reviewed
 
 - Once you submit your PR, others from the Docs community will review it with you. The first thing you're going to want to do is a [self-review](#self-review).
 - After that, we may have questions, check back on your PR to keep up with the conversation.
 - Did you have an issue, like a merge conflict? Check out our [git tutorial](https://lab.github.com/githubtraining/managing-merge-conflicts) on how to resolve merge conflicts and other issues.
 
-##### Your PR is merged
+#### Your PR is merged
 
 Congratulations! The whole GitHub community thanks you. :sparkles:
 
