@@ -1,11 +1,13 @@
 ---
 title: 『PaddlePaddle X Wechaty』有颜又有才的Living_Bot
 author: thomas-yanxin
-categories: project
+categories: 
+  - project
 tags:
   - python
   - paddlepaddle
   - wechaty
+  - paddlehub
 ---
 
 
@@ -17,7 +19,8 @@ tags:
 
 [AIStudio地址（本项目全部相关文件放在此地址中可供下载）](https://aistudio.baidu.com/aistudio/projectdetail/2272396)
 ## wechaty介绍
-![](https://img-blog.csdnimg.cn/img_convert/da820e713203830cc13cbc3ef6eb1d7d.png)
+
+![wechaty](https://img-blog.csdnimg.cn/img_convert/da820e713203830cc13cbc3ef6eb1d7d.png)
 
 **[Wechaty](https://github.com/wechaty/wechaty)** 是一款开源的微信SDK，它基于微信公开的API，对接口进行了一系列的封装，提供一系列简单的接口，然后开发者可以在其之上进行微信机器人的开发。在跟作者沟通试用以后，发现其中有着非常多的应用场景，比如：
 
@@ -33,6 +36,7 @@ tags:
 
 
 ## 项目介绍
+
 本项目基于Wechaty开源微信SDK，以微信为深度学习落地应用平台，融合PaddleClas、PaddleGan、PaddleHub等多个飞桨开发工具，集成笔者前期开源的多个项目([【Mural_Gan】壁画不止在莫高窟可以看到](https://aistudio.baidu.com/aistudio/projectdetail/2231359)、[垃圾分类](https://aistudio.baidu.com/aistudio/projectdetail/1752787)以及**中医问答**),致力于打造微信个人专属生活小助手，不止让您的生活更便捷，也让您的生活更加丰富多彩！  
 
 目前本项目处于0-1阶段，后期将基于此持续添加：
@@ -65,6 +69,7 @@ $ docker run -ti --name wechaty_puppet_service_token_gateway --rm -e WECHATY_LOG
 ```
 
 #### 【Step2：检查是否运行成功】
+
 当完成docker下载及相关配置后，需检查是否运行成功，可采用如下方法：
 1. 输入网址: https://api.chatie.io/v0/hosties/xxxxxx (后面的xxxxxx就是你的token)；  
 
@@ -74,19 +79,22 @@ $ docker run -ti --name wechaty_puppet_service_token_gateway --rm -e WECHATY_LOG
 
 ![](https://img-blog.csdnimg.cn/img_convert/edd7b01175da7bb8322ca6ca5033f858.png)
 
-#### 【Step3：登录附载微信】
+#### 【Step3：登录附载微信】  
+
 运行成功后会输出很多东西，此时我们需要找到一个Online QR Code: 的地址点击进去：
 ![](https://img-blog.csdnimg.cn/img_convert/fe5734e8fcb337d8a68a0482b057039f.png) 
 然后扫码登陆即可！
 
 
 #### 【Step4_Way 1：本地开发运行】
+
 - 将本项目挂在的数据集下载到本地并解
 - 更改ding-dong-bot.py内的**WECHATY_PUPPET_SERVICE_ENDPOINT** 和 **WECHATY_PUPPET_SERVICE_TOKEN**；   
 - 更改ding-dong-bot.py内的相关文件地址为实际具体地址；
 - 运行ding-dong-bot.py。
 
 #### 【Step4_Way 2：AIStudio脚本运行】
+
 具体的和【本地开发运行】差别不大，可参考[教你用AI Studio+wechaty+阿里云白嫖一个智能微信机器人](https://aistudio.baidu.com/aistudio/projectdetail/1836012?channelType=0&channel=0)
 
 
@@ -98,6 +106,7 @@ $ docker run -ti --name wechaty_puppet_service_token_gateway --rm -e WECHATY_LOG
 ```
 
 ## 后记
+
 越来越觉得微信可以作为深度学习应用落地的平台，可凭借其巨大的日活和强劲的便捷度为深度学习应用带去流量加持，例如微信小程序。而现在有了wechaty的加持，使得我们可以以微信为应用平台，通过机器人来完成一些机械性的问答工作，也可以在闲暇时和智能机器人进行对话，他们的出现让生活变得更丰富多彩。
 
 ### 更多功能
@@ -113,9 +122,9 @@ $ docker run -ti --name wechaty_puppet_service_token_gateway --rm -e WECHATY_LOG
 
 觉得不错的话给我一个Star哦🎉🎉🎉
 
-参考资料
+## 参考资料
 
-  
+
 [python-wechaty](https://github.com/wechaty/python-wechaty)  
 
 [python-wechaty-getting-started](https://github.com/wechaty/python-wechaty-getting-started)  
