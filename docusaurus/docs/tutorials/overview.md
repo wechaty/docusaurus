@@ -83,6 +83,6 @@ For better understanding we have classified the bots under three categories taki
 - [Monster bot](https://github.com/wechaty/wechaty-getting-started/tree/main/examples/professional/monster-bot): Demo that tried to include everything -- message, room, HMR & signal handling, with each handler in separated files
 - [Api ai bot](https://github.com/wechaty/wechaty-getting-started/blob/main/examples/professional/api-ai-bot.ts): Wechaty bot that uses ApiAi.com brain
 - [Speech to text bot](https://github.com/wechaty/wechaty-getting-started/blob/main/examples/professional/speech-to-text-bot.ts): Bot that uses baidu speech
-- [Tuling 123 bot](examples/professional/tuling123-bot.md): Connect to *[tuling123](http://www.turingapi.com/)* chatbot
+- [Tuling 123 bot](examples/professional/tuling123-bot.mdx): Connect to *[tuling123](http://www.turingapi.com/)* chatbot
 - [Telegram roger bot](https://github.com/wechaty/wechaty-getting-started/blob/main/examples/professional/telegram-roger-bot.js): Single bot that runs under/for both Telegram and WeChaty
 - [Blessed twins bot](https://github.com/wechaty/wechaty-getting-started/tree/main/examples/professional/blessed-twins-bot): Wechaty multi-instance support (v0.16+) demo
