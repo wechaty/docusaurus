@@ -3,7 +3,7 @@ slug: /contributing/
 title: Contributing to Wechaty
 ---
 
-# Guidelines for Contributing
+## Guidelines for Contributing
 
 Thank you for your time on Wechaty.
 
@@ -103,7 +103,7 @@ When you're done making changes and you'd like to propose them for review, use t
 - After that, we may have questions, check back on your PR to keep up with the conversation.
 - Did you have an issue, like a merge conflict? Check out our [git tutorial](https://lab.github.com/githubtraining/managing-merge-conflicts) on how to resolve merge conflicts and other issues.
 
-##### Your PR is merged!
+##### Your PR is merged
 
 Congratulations! The whole GitHub community thanks you. :sparkles:
 
@@ -139,7 +139,7 @@ Wechaty community and others to maintain a great ecosystem to work in:
 
 We're looking forward to working with you. Welcome aboard! ⛵️
 
-We built wechaty with pleasure because it can help others. help from you for wechaty will be very appreciated by the community.
+We built wechaty with pleasure because it can help others. Help from you for wechaty will be very much appreciated by the community.
 
 Cheers!
 
