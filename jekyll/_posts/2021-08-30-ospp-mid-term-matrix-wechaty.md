@@ -4,7 +4,7 @@ author: lprintf
 categories:
   - project
   - ospp
-image: /assets/2021/08-ospp-interim-report-matrix-wechaty/wechaty-matrix.webp
+image: /assets/2021/08-ospp-mid-term-matrix-wechaty/wechaty-matrix.webp
 tags:
   - matrix
   - mid-term
@@ -50,13 +50,13 @@ tags:
 
 {% include iframe.html src="https://youtu.be/qFqrAqmSrQ8" %}
 
-> 国内链接：https://www.bilibili.com/video/BV12A411c7Nz/
+> 国内链接：<https://www.bilibili.com/video/BV12A411c7Nz/>
 
 ### PPT展示视频
 
 {% include iframe.html src="https://youtu.be/FgGFc_f_-oM" %}
 
-> 国内链接：https://www.bilibili.com/video/BV1q3411B7qi/
+> 国内链接：<https://www.bilibili.com/video/BV1q3411B7qi/>
 
 ### 项目PPT
 
