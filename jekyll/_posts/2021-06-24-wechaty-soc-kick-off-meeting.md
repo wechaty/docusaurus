@@ -1,7 +1,9 @@
 ---
 title: "Wechaty Open Source Promotion Plan 2021 Kickoff Meeting"
 author: ninetailskim
-categories: announcement
+categories: 
+  - announcement
+  - ospp
 tags:
   - summer-of-wechaty
   - summer-2021
@@ -11,10 +13,6 @@ tags:
   - featured
 image: /assets/2021/06-wechaty-soc-kick-off-meeting/group-photo.webp
 ---
-
-> 作者: [ninetailskim](https://wechaty.js.org/contributors/ninetailskim/)
-
-## 开源软件供应链点亮计划-暑期2021 是什么活动
 
 “开源软件供应链点亮计划-暑期2021”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。活动联合各大开源社区，针对重要开源软件的开发与维护提供项目，并向全球高校学生开放报名。
 学生可自主选择感兴趣的项目进行申请，并在中选后获得该软件资深维护者（社区导师）亲自指导的机会。
@@ -127,3 +125,5 @@ Wechaty 在多平台、多功能多个维度上，共发布了 10项任务，并
 - 时刻跟进Wechaty SoC项目的每周例行更新 Issue，并直接与相关负责导师和学生开发者取得联系，和他们交流相关进展。
 - 在 Wechaty 开发者群内，为学生开发者们的Plan Blog、POC Blog和Finished Blog点赞和提出想法。
 - 直接参与已经完成部分工作的项目开发，为学生开发者们负责的复杂项目添砖加瓦。
+
+> 作者: [ninetailskim](https://wechaty.js.org/contributors/ninetailskim/)
