@@ -79,9 +79,13 @@ tags:
 
 {% include iframe.html src="https://www.youtube.com/watch?v=1U0ONeHV7z8" %}
 
+> 国内链接：<https://www.bilibili.com/video/BV1L3411q72g/>
+
 ### PPT展示视频
 
 {% include iframe.html src="https://www.youtube.com/watch?v=xPsAwLglVdM" %}
+
+> 国内链接：<https://www.bilibili.com/video/BV1PQ4y1a7pM/>
 
 ### 项目PPT
 
