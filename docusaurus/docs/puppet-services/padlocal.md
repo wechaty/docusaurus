@@ -108,7 +108,7 @@ Just wait for the QR code to appear
 
 ### QRcode
 
-![QRCode](../../static/img/docs/references/padlocal/qrcode.webp)
+![QRCode](../../static/img/docs/puppet-services/padlocal/qrcode.webp)
 
 ### Step 4 : WeChat scan code
 

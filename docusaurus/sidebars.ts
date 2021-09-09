@@ -214,14 +214,6 @@ const introduction = {
  *
  *  Issue #704 - https://github.com/wechaty/wechaty.js.org/issues/704
  ****************************************************************************/
- const compatibility: SubMenuData = {
-  label: 'Compatibility',
-  items: [
-    'puppet-services/compatibility',
-    'puppet-services/compatibility-english',
-  ],
-}
-
  const puppetServices = {
   label: 'Puppet Services',
   items: [
@@ -231,7 +223,7 @@ const introduction = {
     'puppet-services/padlocal',
     'puppet-services/paimon',
     'puppet-services/donut',
-    subMenu(compatibility),
+    'puppet-services/compatibility',
     'puppet-services/diy',
   ]
 }
