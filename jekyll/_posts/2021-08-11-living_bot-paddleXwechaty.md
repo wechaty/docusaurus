@@ -10,7 +10,6 @@ tags:
   - paddlehub
 ---
 
-
 # 『PaddlePaddle X Wechaty』有颜又有才的Living_Bot
 
 ## 视频奉上先
@@ -34,7 +33,6 @@ tags:
 
 - ……
 
-
 ## 项目介绍
 
 本项目基于Wechaty开源微信SDK，以微信为深度学习落地应用平台，融合PaddleClas、PaddleGan、PaddleHub等多个飞桨开发工具，集成笔者前期开源的多个项目([【Mural_Gan】壁画不止在莫高窟可以看到](https://aistudio.baidu.com/aistudio/projectdetail/2231359)、[垃圾分类](https://aistudio.baidu.com/aistudio/projectdetail/1752787)以及**中医问答**),致力于打造微信个人专属生活小助手，不止让您的生活更便捷，也让您的生活更加丰富多彩！  
@@ -55,7 +53,6 @@ tags:
 
 云服务器部分的详细过程，可参考上面给出的参考项目，本项目不做赘述，阿里云、百度云、腾讯云、华为云均有相关活动及福利，可供各位读者选择。  
 搞定云服务器后，需要下载docker并进行相关配置，可执行如下代码，其中：WECHATY_TOKEN的具体内容需换成自己的token，具体的token获取方式可见[wechaty官网](https://wechaty.js.org/)。此外，参加AIStudio与Wechaty的比赛亦可获得（报名已结束）。
-
 
 ```python
 $ apt update
@@ -85,7 +82,6 @@ $ docker run -ti --name wechaty_puppet_service_token_gateway --rm -e WECHATY_LOG
 ![](https://img-blog.csdnimg.cn/img_convert/fe5734e8fcb337d8a68a0482b057039f.png) 
 然后扫码登陆即可！
 
-
 #### 【Step4_Way 1：本地开发运行】
 
 - 将本项目挂在的数据集下载到本地并解
@@ -96,7 +92,6 @@ $ docker run -ti --name wechaty_puppet_service_token_gateway --rm -e WECHATY_LOG
 #### 【Step4_Way 2：AIStudio脚本运行】
 
 具体的和【本地开发运行】差别不大，可参考[教你用AI Studio+wechaty+阿里云白嫖一个智能微信机器人](https://aistudio.baidu.com/aistudio/projectdetail/1836012?channelType=0&channel=0)
-
 
 ```python
 !unzip -oq /home/aistudio/data/data103863/garbage.zip -d garbage
@@ -123,7 +118,6 @@ $ docker run -ti --name wechaty_puppet_service_token_gateway --rm -e WECHATY_LOG
 觉得不错的话给我一个Star哦🎉🎉🎉
 
 ## 参考资料
-
 
 [python-wechaty](https://github.com/wechaty/python-wechaty)  
 
