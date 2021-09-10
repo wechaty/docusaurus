@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.body {
+
+#body {
   max-width: 100%;
   overflow-x: hidden;
 }
 
-.featuresSection {
-  /* margin-top: -320px; */
+#featuresSection {
+  margin-top: -320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,13 +20,13 @@
   position: relative;
 }
 
-.featuresSectionHeadlineWrapper {
+#featuresSectionHeadlineWrapper {
   margin-bottom: 40px;
   position: relative;
   left: 10%;
 }
 
-.featuresSectionRectangle {
+#featuresSectionRectangle {
   width: 400px;
   height: 20px;
   background-color: #d2ffca;
@@ -34,7 +35,7 @@
   top: 35px;
 }
 
-.featuresSectionHeadline {
+#featuresSectionHeadline {
   width: 100%;
   font-family: "Montserrat";
   font-size: 35px;
@@ -51,7 +52,7 @@
   letter-spacing: 4px;
 }
 
-.featuresSectionUpperWrapper {
+#featuresSectionUpperWrapper {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,7 +66,7 @@
   margin-bottom: 80px;
 }
 
-.checkCircleWrapper {
+#checkCircleWrapper {
   margin-right: 32px;
   padding: 7px 0 0;
   display: -webkit-box;
@@ -80,7 +81,7 @@
   align-items: flex-start;
 }
 
-.checkCircle {
+#checkCircle {
   margin-bottom: 20px;
   padding: 2px;
   display: -webkit-box;
@@ -91,7 +92,7 @@
   align-items: center;
 }
 
-.vector {
+#vector {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -102,7 +103,7 @@
   object-fit: cover;
 }
 
-.featuresListingWrapper {
+#featuresListingWrapper {
   margin-right: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,7 +118,7 @@
   margin-top: -25px;
 }
 
-.featuresListing {
+#featuresListing {
   overflow-y: hidden;
   line-height: 30px;
   font-family: "Montserrat";
@@ -129,7 +130,7 @@
   letter-spacing: 2px;
 }
 
-.videoPlaceholder {
+#videoPlaceholder {
   width: 620px;
   height: 380px;
   background-color: honeydew;
@@ -137,7 +138,7 @@
   margin-top: -5px;
 }
 
-.featuresSectionLowerWrapper {
+#featuresSectionLowerWrapper {
   background-color: honeydew;
   border-radius: 150px;
   display: -webkit-box;
@@ -158,14 +159,14 @@
   margin-left: 6%;
 }
 
-.featuresNumberWrapper {
+#featuresNumberWrapper {
   position: relative;
   overflow-y: hidden;
   margin-bottom: 30px;
   overflow-x: hidden;
 }
 
-.featuresText {
+#featuresText {
   margin-top: 30px;
   overflow-y: hidden;
   height: 3%;
@@ -181,12 +182,12 @@
   margin-left: 5%;
 }
 
-.featuresText a {
+#featuresText a {
   color: #44a838;
   font-weight: 800;
 }
 
-.numberWrapperOne {
+#numberWrapperOne {
   padding: 0 0 0 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,7 +202,7 @@
   overflow-x: hidden;
 }
 
-.number100 {
+#number100 {
   height: 60px;
   font-family: "Montserrat";
   font-size: 40px;
@@ -218,7 +219,7 @@
   letter-spacing: 0.1em;
 }
 
-.number100Two {
+#number100Two {
   height: 60px;
   width: 150px;
   font-family: "Montserrat";
@@ -236,7 +237,7 @@
   letter-spacing: 0.1em;
 }
 
-.numberWrapperTwo {
+#numberWrapperTwo {
   padding: 0 0 0 28%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,9 +249,10 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-.number10000 {
+#number10000 {
   height: 60px;
   font-family: "Montserrat";
   font-size: 40px;
@@ -266,7 +268,7 @@
   letter-spacing: 0.1em;
 }
 
-.number9600 {
+#number9600 {
   height: 60px;
   width: 250px;
   font-family: "Montserrat";
@@ -284,7 +286,7 @@
   margin-right: 9%;
 }
 
-.stars {
+#stars {
   height: 55px;
   width: 180px;
   font-family: "Montserrat";
@@ -305,7 +307,7 @@
   letter-spacing: 0.1em;
 }
 
-.contributors {
+#contributors {
   height: 55px;
   width: 160px;
   font-family: "Montserrat";
@@ -326,7 +328,7 @@
   letter-spacing: 0.1em;
 }
 
-.developerFans {
+#developerFans {
   height: 90px;
   width: 215px;
   font-family: "Montserrat";
@@ -347,7 +349,7 @@
   letter-spacing: 0.1em;
 }
 
-.projects {
+#projects {
   height: 60px;
   width: 120px;
   font-family: "Montserrat";
@@ -365,7 +367,7 @@
   letter-spacing: 0.1em;
 }
 
-.featuresCatchyText {
+#featuresCatchyText {
   height: 44px;
   width: 100%;
   display: -webkit-box;
@@ -388,126 +390,126 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .featuresSection{
+  #featuresSection {
     margin-top: 50px;
   }
 
-  .featuresSectionRectangle {
+  #featuresSectionRectangle {
     width: 200px;
     height: 12px;
     top: 20px;
   }
 
-  .featuresSectionHeadline {
+  #featuresSectionHeadline {
     width: 84%;
     font-size: 25px;
     font-weight: 800;
     line-height: 40px;
   }
 
-  .featuresSectionUpperWrapper {
+  #featuresSectionUpperWrapper {
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
     margin-bottom: 40px;
   }
 
-  .checkCircleWrapper {
+  #checkCircleWrapper {
     margin-right: 20px;
   }
 
-  .checkCircle {
+  #checkCircle {
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
     margin-bottom: 15px;
     padding: 0px;
   }
 
-  .featuresListingWrapper {
+  #featuresListingWrapper {
     margin-right: 0px;
   }
 
-  .featuresListing {
+  #featuresListing {
     overflow-y: hidden;
     line-height: 20px;
     font-size: 14px;
   }
 
-  .videoPlaceholder {
+  #videoPlaceholder {
     width: 350px;
     height: 200px;
     margin-bottom: 50px;
   }
 
-  .featuresSectionLowerWrapper {
+  #featuresSectionLowerWrapper {
     border-radius: 70px;
   }
 
-  .featuresText {
+  #featuresText {
     font-size: 18px;
     font-weight: 600;
     line-height: 30px;
   }
 
-  .featuresText a {
+  #featuresText a {
     color: #44a838;
     font-weight: 800;
   }
 
-  .numberWrapperOne {
+  #numberWrapperOne {
     width: 100%;
     padding: 0 0 0 10%;
   }
 
-  .number100 {
+  #number100 {
     font-size: 25px;
     margin-left: 5%;
   }
 
-  .number100Two {
+  #number100Two {
     font-size: 25px;
     margin-right: -10%;
   }
 
-  .numberWrapperTwo {
+  #numberWrapperTwo {
     padding: 0 0 0 10%;
     width: 100%;
   }
 
-  .number10000 {
+  #number10000 {
     font-size: 25px;
   }
 
-  .number9600 {
+  #number9600 {
     width: 175px;
     font-size: 25px;
     margin-right: -12%;
   }
 
-  .stars {
+  #stars {
     font-size: 14px;
     left: 18%;
     bottom: -20px;
   }
 
-  .contributors {
+  #contributors {
     font-size: 14px;
     right: -5%;
     bottom: 60px;
   }
 
-  .developerFans {
+  #developerFans {
     font-size: 14px;
     right: -15%;
     bottom: -40px;
   }
 
-  .projects {
+  #projects {
     font-size: 14px;
     left: 14%;
     bottom: 55px;
   }
 
-  .featuresCatchyText {
+  #featuresCatchyText {
     height: 40px;
     font-size: 10px;
     font-weight: 900;
@@ -517,103 +519,102 @@
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 700px) {
-
-  .featuresSection {
+  #featuresSection {
     margin-top: -400px;
   }
 
-  .featuresSectionRectangle {
+  #featuresSectionRectangle {
     width: 300px;
     height: 18px;
   }
 
-  .featuresSectionHeadline {
+  #featuresSectionHeadline {
     font-size: 28px;
     line-height: 70px;
   }
 
-  .checkCircleWrapper {
+  #checkCircleWrapper {
     margin-right: 25px;
     margin-left: 40px;
     padding-top: 0;
   }
 
-  .checkCircle {
+  #checkCircle {
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
     padding-top: 0px;
     margin-bottom: 8px;
   }
 
-  .featuresListingWrapper {
+  #featuresListingWrapper {
     margin-right: 40px;
   }
 
-  .featuresListing {
+  #featuresListing {
     line-height: 25px;
     font-size: 16px;
     margin-top: 2%;
     height: 22px;
   }
 
-  .videoPlaceholder {
+  #videoPlaceholder {
     width: 420px;
     height: 250px;
     margin-right: 40px;
   }
 
-  .featuresText {
+  #featuresText {
     font-size: 20px;
     line-height: 30px;
   }
 
-  .number100 {
+  #number100 {
     font-size: 30px;
     margin-bottom: 35px;
   }
 
-  .number100Two {
+  #number100Two {
     font-size: 30px;
     margin-right: 30%;
     margin-bottom: 35px;
   }
 
-  .number10000 {
+  #number10000 {
     font-size: 30px;
   }
 
-  .number9600 {
+  #number9600 {
     font-size: 30px;
     margin-right: 0%;
   }
 
-  .stars {
+  #stars {
     font-size: 15px;
   }
 
-  .contributors {
+  #contributors {
     font-size: 15px;
     margin-right: -8%;
     margin-bottom: 35px;
   }
 
-  .developerFans {
+  #developerFans {
     font-size: 15px;
     margin-right: -5%;
   }
 
-  .projects {
+  #projects {
     font-size: 15px;
     margin-bottom: 35px;
   }
 
-  .featuresCatchyText {
+  #featuresCatchyText {
     font-size: 22px;
   }
 }
 
 @media only screen and (min-width: 1860px) {
-  .featuresSection {
-    margin-top: 150px;
+  #featuresSection {
+    margin-top: -250px;
   }
 }
