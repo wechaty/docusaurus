@@ -16,18 +16,17 @@ The mechanism behind is the **Puppet Service Discovery**, which can resolve the 
     ```json
     {"host":"1.2.3.4","port":1234}
     ```
-
+    
 **the above `1.2.3.4` will be the gRPC server, and the port `1234` is the gRPC port.**
 
 3. if the token is not registered, then the GET request will get a HTTP 404 with the below object:
 
     ```json
-    {"ip":"0.0.0.0","port":0}
+    {"host":"0.0.0.0","port":0}
     ```
 
 For the Wechaty SDK, we support the following environment variables so that the users can switch between different languages without any changes:
-
-4. `export WECHATY_PUPPET_SERVICE_TOKEN=__TOKEN__`
+`export WECHATY_PUPPET_SERVICE_TOKEN=${TOKEN}`
 
 ## The Registration
 
