@@ -10,6 +10,7 @@ tags:
   - machine-learning
   - competition
   - sticky
+  - news
   - game
 ---
 
