@@ -1,5 +1,5 @@
 ---
-title: Baidu Paddle ❤️ Wechaty ML Chatbot 大赛作品推荐
+title: Baidu Paddle ❤️ Wechaty & Mixlab ML Chatbot 大赛作品推荐
 author: huan
 categories:
   - project
@@ -12,9 +12,9 @@ tags:
   - game
 ---
 
-> 由Wechaty、PaddlePaddle和Mixlab联合主办，未来事务管理局作为媒体支持的「AI创造营 ：Metaverse启动机之重构现世」硬核 Machine Learning (ML) Chatbot 创意赛的项目提交阶段已经结束，共收回33个项目，相比第一、二期创意赛(21个和24个)有了明显提高！
+由 Wechaty、PaddlePaddle 和 Mixlab 联合主办，未来事务管理局作为媒体支持的「AI创造营 ：Metaverse启动机之重构现世」硬核 Machine Learning (ML) Chatbot 创意赛的项目提交阶段已经结束，共收回33个项目，相比第一、二期创意赛(21个和24个)有了明显提高！
 
-&mdash; [AI Chatbot Competition -- Metaverse启动机之重构现世！, @valerieeeee, Jul 07, 2021](https://wechaty.js.org/2021/07/07/wechaty-with-paddlepaddle/)
+> 大赛启动博客：[AI Chatbot Competition -- Metaverse启动机之重构现世！, @valerieeeee, Jul 07, 2021](https://wechaty.js.org/2021/07/07/wechaty-with-paddlepaddle/)
 
 我今天在打分评审过程中，顺便分享这些项目给大家，希望能够帮助大家在这个阶段的创意赛中获得更多的创意！
 
