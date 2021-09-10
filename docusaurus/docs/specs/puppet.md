@@ -100,9 +100,9 @@ Need to fire `ready` event after the bot logined and all data has been synced.
 1. Each puppet should listen to the `dirty` event, and call `XXXPayloadDirty(id)` to purge the internal cache of the specific payload inside itself
 Related issues:
 
-* [Specification for dirty event, dirtyPayload(), and `XXXPayloadDirty() to puppet abstraction, puppet implementation, puppet server, and puppet client. wechaty/wechaty-puppet-service#164](https://github.com/wechaty/wechaty-puppet-service/issues/164)
-*  [No contactPayloadDirty method in puppet-implementation. wechaty/wechaty-puppet-service#43](https://github.com/wechaty/wechaty-puppet-service/issues/43)
-*  [add dirty rpc function definition for sync data wechaty/grpc#79](https://github.com/wechaty/grpc/pull/79)
+- [Specification for dirty event, dirtyPayload(), and `XXXPayloadDirty() to puppet abstraction, puppet implementation, puppet server, and puppet client. wechaty/wechaty-puppet-service#164](https://github.com/wechaty/wechaty-puppet-service/issues/164)
+- [No contactPayloadDirty method in puppet-implementation. wechaty/wechaty-puppet-service#43](https://github.com/wechaty/wechaty-puppet-service/issues/43)
+- [add dirty rpc function definition for sync data wechaty/grpc#79](https://github.com/wechaty/grpc/pull/79)
 
 ## Event: `heartbeat`
 
@@ -153,9 +153,9 @@ Here's an [example](https://github.com/wechaty/wechaty-puppet-puppeteer/blob/07f
 
 Please refer to the below links for more information on different methods of Message class:
 
-* [message material in official-account](https://developers.weixin.qq.com/doc/offiaccount/Asset_Management/New_temporary_materials.html)
-* [sendFile method](https://github.com/wechaty/wechaty-puppet-official-account/blob/master/src/official-account/official-account.ts#L299)
-* [messageSend method](https://github.com/wechaty/wechaty-puppet-official-account/blob/master/src/puppet-oa.ts#L495)
+- [message material in official-account](https://developers.weixin.qq.com/doc/offiaccount/Asset_Management/New_temporary_materials.html)
+- [sendFile method](https://github.com/wechaty/wechaty-puppet-official-account/blob/master/src/official-account/official-account.ts#L299)
+- [messageSend method](https://github.com/wechaty/wechaty-puppet-official-account/blob/master/src/puppet-oa.ts#L495)
 
 Wechaty now support very limited Message types for more information [check here](https://github.com/wechaty/wechaty-puppet-official-account/blob/381ffb820fcc63e4b89a99c433b696e790e06b7a/src/official-account/webhook.ts#L241-L244)
 In order to support receiving more message types, like audio, [look here](https://github.com/wechaty/wechaty-puppet-official-account/blob/381ffb820fcc63e4b89a99c433b696e790e06b7a/src/official-account/webhook.ts#L247-L252)
