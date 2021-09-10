@@ -7,9 +7,9 @@ const FeaturesSection = () => {
       <section id="featuresSection">
         <div id="featuresSectionHeadlineWrapper">
           <div id="featuresSectionRectangle" />
-          <headline id="featuresSectionHeadline">
+          <p id="featuresSectionHeadline">
             Why you would love to use this ?
-          </headline>
+          </p>
         </div>
         <div id="featuresSectionUpperWrapper">
           <div id="checkCircleWrapper">
