@@ -1,7 +1,7 @@
 ---
 name: darkli(李云军)
 site: https://github.com/darkli
-avatar: /assets/contributors/darkli/avatar.png
+avatar: /assets/contributors/darkli/avatar.webp
 bio: 人机对话在任务协作领域的探索者
 email: mailto:lyj@teamin.cc
 twitter: 

@@ -9,12 +9,6 @@ tags:
 image: /assets/2017/helen-screenshot-testing.jpg
 ---
 
-![avatar](https://avatars2.githubusercontent.com/u/14006826?v=3&s=88)
-
-> Author: [@Helen](https://github.com/TingYinHelen), Lenovo
->
-> Helen is a full stack engineer living in Chengdu, familiar with D3. When not coding, she loves dancing, sings and play Erhu.
-
 Thanks for inviting me to write this article that give me a chance to share my story for each other. And Wechaty is a very awesome library that is powerful and easy to use. The most important point is that is interesting for Wechat  users and developers.
 Last week, I want to help my friend to make a chat bot. Because she is a manager of a technic community and she is also a owner of a chat group. In her daily life, many people add her to be the bunny on wechat. Then she needs add these persons into wechat group. It is a manual work, right? So I want to help her to lessen workload. So I ready to use wechaty.
 
@@ -136,3 +130,9 @@ Finally, I want to thank our teammate [@拖拉机](https://github.com/dianwuone)
 
 [screenshot-test]: /assets/2017/helen-screenshot-testing.jpg
 [screenshot-doc]: /assets/2017/helen-screenshot-doc.png
+
+![avatar](https://avatars2.githubusercontent.com/u/14006826?v=3&s=88)
+
+> Author: [@Helen](https://github.com/TingYinHelen), Lenovo
+>
+> Helen is a full stack engineer living in Chengdu, familiar with D3. When not coding, she loves dancing, sings and play Erhu.

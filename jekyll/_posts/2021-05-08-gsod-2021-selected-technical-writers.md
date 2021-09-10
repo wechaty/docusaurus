@@ -7,6 +7,7 @@ categories:
 tags:
   - google
   - gsod
+  - gsod-2021
   - event
   - 2021
   - zoom

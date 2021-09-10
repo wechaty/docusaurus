@@ -12,8 +12,6 @@ tags:
 image: /assets/2020/wechaty-teamin-chatbot/home-01.jpg
 ---
 
-> 作者: [darkli](https://github.com/darkli)
-
 [![PoweredBy](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![Wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
@@ -102,3 +100,5 @@ Wechaty的出现让我们进行类似这样的尝试有了新的机会，还是�
 大家也可以加我们的小助手为好友，体验一下对话任务协作的功能，多多给我们提建议哦。  
 
 ![小助手二维码](/assets/2020/wechaty-teamin-chatbot/teamin-assistant.png)
+
+> 作者: [darkli](https://github.com/darkli)
