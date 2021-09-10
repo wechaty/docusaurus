@@ -98,18 +98,11 @@ Need to fire `ready` event after the bot logined and all data has been synced.
 1. If the low-level puppet wants to dirty a payload, emit a `dirty` event. The payload will be the `type` and the `id` of the paload
 1. If the high-level puppet wants to dirty a payload, call `dirtyPayload(type, id)` method, what it does (and only does) is to make the low-level puppet emit a `dirty` event.
 1. Each puppet should listen to the `dirty` event, and call `XXXPayloadDirty(id)` to purge the internal cache of the specific payload inside itself
-Related issues
+Related issues:
 
-- [Specification for dirty event, dirtyPayload(), and `XXXPayloadDirty() to puppet abstraction, puppet implementation, puppet server, and puppet client. wechaty/wechaty-puppet-service#164](https://github.com/wechaty/wechaty-puppet-service/issues/164)
-- [No contactPayloadDirty method in puppet-implementation. wechaty/wechaty-puppet-service#43](https://github.com/wechaty/wechaty-puppet-service/issues/43)
-- [add dirty rpc function definition for sync data wechaty/grpc#79](https://github.com/wechaty/grpc/pull/79)
-
-## NPM Publication
-
-- [ ] `wechaty-puppet` must not a dependency. It should be put in devDependencies and peerDependencies
-- [ ] `wechaty` must not a dependency. It should be put in devDependencies and peerDependencies
-- [ ] must exist `examples/ding-dong-bot.ts` to implement the ding/dong logic, use puppet api only.
-
+* [Specification for dirty event, dirtyPayload(), and `XXXPayloadDirty() to puppet abstraction, puppet implementation, puppet server, and puppet client. wechaty/wechaty-puppet-service#164](https://github.com/wechaty/wechaty-puppet-service/issues/164)
+*  [No contactPayloadDirty method in puppet-implementation. wechaty/wechaty-puppet-service#43](https://github.com/wechaty/wechaty-puppet-service/issues/43)
+*  [add dirty rpc function definition for sync data wechaty/grpc#79](https://github.com/wechaty/grpc/pull/79)
 
 ## Event: `heartbeat`
 
@@ -152,9 +145,21 @@ A leaking of `heartbeat` example logs:
 
 ### `heartbeat` Example
 
-Here's an [example](https://github.com/wechaty/wechaty-puppet-puppeteer/blob/07f6260b3784c65bcee24bd003aac5d2968a9efc/src/wechaty-bro.js#L103-L112) from our puppeteer puppet, which emits heartbeats in the browser, so if the browser dead, we will get to know because the heartbeat will be lost.
+Here's an [example](https://github.com/wechaty/wechaty-puppet-puppeteer/blob/07f6260b3784c65bcee24bd003aac5d2968a9efc/src/wechaty-bro.js#L103-L112) from our puppeteer puppet, which emits heartbeats in the browser, so if the browser dead, we will get to know because the heartbeat will be lost.Also check out the docs on [Heartbeat Plugin](https://wechaty.js.org/docs/using-plugin-with-wechaty/heartbeat).
 
-[Check the link](https://github.com/wechaty/puppet-services/issues/85#issuecomment-769967606)
+[Check the link](https://github.com/wechaty/puppet-services/issues/85#issuecomment-769967606).
+
+### Important Links
+
+Please refer to the below links for more information on different methods of Message class:
+
+* [message material in official-account](https://developers.weixin.qq.com/doc/offiaccount/Asset_Management/New_temporary_materials.html)
+* [sendFile method](https://github.com/wechaty/wechaty-puppet-official-account/blob/master/src/official-account/official-account.ts#L299)
+* [messageSend method](https://github.com/wechaty/wechaty-puppet-official-account/blob/master/src/puppet-oa.ts#L495)
+
+Wechaty now support very limited Message types for more information [check here](https://github.com/wechaty/wechaty-puppet-official-account/blob/381ffb820fcc63e4b89a99c433b696e790e06b7a/src/official-account/webhook.ts#L241-L244)
+In order to support receiving more message types, like audio, [look here](https://github.com/wechaty/wechaty-puppet-official-account/blob/381ffb820fcc63e4b89a99c433b696e790e06b7a/src/official-account/webhook.ts#L247-L252)
+> Also note that **Video** type Message is not supported right now by Wechaty.
 
 ### Wechaty Puppet Message Processing Flow
 
@@ -176,6 +181,27 @@ Here's an [example](https://github.com/wechaty/wechaty-puppet-puppeteer/blob/07f
 
 [![Flowchart] Link to be added later
 
-## Learn More
+### Future Enhancements
+
+ Futute enhancements can be to  add more types of Message that Wechaty can support by implementing the `messageRawPayload` methods, which can be [found here](https://github.com/wechaty/wechaty-puppet-official-account/blob/381ffb820fcc63e4b89a99c433b696e790e06b7a/src/puppet-oa.ts#L456-L478) and also check out this [link](https://github.com/wechaty/wechaty-puppet-official-account/issues/19) for more information.
+
+### Wechaty Puppet Uses
+
+#### `Ding`/`Dong` Protocol
+
+Ding dong protocol is a rule built using the Puppet which has a API named `ding(data: string): void`, and the Puppet has the following functionality:
+
+1. emit a `dong` event when the `ding()` method has been called
+2. the payload of the `dong` event might contains a `data` key with the value exactly match the `data` when calling the `ding()` method.
+
+For further information about the  uses Ding dong protocol check out [Ding Dong Bot](https://wechaty.js.org/docs/examples/basic/ding-dong-bot)
+
+### Learn More
 
 - Puppet Related Links: [https://github.com/wechaty/wechaty-puppet/wiki/Links](https://github.com/wechaty/wechaty-puppet/wiki/Links)
+
+## Important Tips
+
+- [ ] `wechaty-puppet` is not a dependency. It should be put in devDependencies and peerDependencies
+- [ ] `wechaty` is not a dependency. It should be put in devDependencies and peerDependencies
+- [ ] must exist `examples/ding-dong-bot.ts` to implement the ding/dong logic, use puppet API only.
