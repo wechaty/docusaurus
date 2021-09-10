@@ -59,24 +59,10 @@ const puppetProviders: SubMenuData = {
     'puppet-providers/lark',
     'puppet-providers/padlocal',
     'puppet-providers/wechat4u',
-    'puppet-providers/xp',
     'puppet-providers/service',
     'puppet-providers/mock',
     'puppet-providers/diy',
   ],
-}
-
-const puppetServices: SubMenuData = {
-  label: 'Puppet Services',
-  items: [
-    'puppet-services/overview',
-    'puppet-services/wxwork',
-    'puppet-services/padlocal',
-    'puppet-services/paimon',
-    'puppet-services/donut',
-    'puppet-services/compatibility',
-    'puppet-services/diy',
-  ]
 }
 
 const specs: SubMenuData = {
@@ -212,9 +198,6 @@ const introduction = {
   items: [
     'overview',
     'wechaty',
-    'who-is-using-wechaty',
-    'getting-started-with-wechaty',
-    'main-concepts-in-wechaty',
     subMenu(showcases),
     subMenu(caseStudy),
     subMenu(community),
@@ -231,10 +214,23 @@ const introduction = {
  *
  *  Issue #704 - https://github.com/wechaty/wechaty.js.org/issues/704
  ****************************************************************************/
+ const puppetServices = {
+  label: 'Puppet Services',
+  items: [
+    'puppet-services/overview',
+    'puppet-services/tokens',
+    'puppet-services/wxwork',
+    'puppet-services/padlocal',
+    'puppet-services/paimon',
+    'puppet-services/donut',
+    'puppet-services/compatibility',
+    'puppet-services/diy',
+  ]
+}
+
  const basic = {
   label: 'Basic',
   items: [
-    'examples/basic/starter-bot',
     'examples/basic/the-worlds-shortest-chatbot-code-in-6-lines',
     'examples/basic/ding-dong-bot',
     'examples/basic/contact-bot',
@@ -270,6 +266,7 @@ const professional = {
  const examples = {
   label: 'Examples',
   items: [
+    'examples/overview',
     subMenu(basic),
     subMenu(advanced),
     subMenu(professional),
@@ -343,7 +340,6 @@ const explainations = {
     'explainations/lifecycle',
     'explainations/alternatives',
     'explainations/glossary',
-    'explainations/testing',
     'explainations/faq',
     'explainations/troubleshooting',
     subMenu(docusaurus),
