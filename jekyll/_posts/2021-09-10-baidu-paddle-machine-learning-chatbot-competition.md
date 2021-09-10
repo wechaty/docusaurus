@@ -141,7 +141,7 @@ Wander [ 001 ]是一个以AI chatbot为主体的跨媒体互联网艺术项目�
 
 截至2021年8月，已有超过1000名参与者带领Wander旅行。我们希望Wander能让人们重新审视熟悉的环境，从我们最熟悉的通讯软件里给人带去惊喜。
 
-![扫码或微信搜索：WanderingBot，添加好友后即可互动](https://ai-studio-static-online.cdn.bcebos.com/4688d4bd1751404d98b33bc0649fceeed71d23941dfa4fe0945eff12a89d9a5d)
+![扫码或微信搜索：WanderingBot，添加好友后即可互动](/assets/2021/09-baidu-paddle-machine-learning-chatbot-competition/wander.webp)
 
 GitHub: <https://github.com/sunyuqian1997/Wander001-V2.1>
 
