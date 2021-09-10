@@ -28,7 +28,7 @@ Go to [pad-local.com](http://pad-local.com/) to avail a **FREE** trail token for
 
 ## Architecture
 
-![Architecture](../../static/img/docs/references/padlocal/architecture.webp)
+![Architecture](../../static/img/docs/references/puppet-services/padlocal/architecture.webp)
 
 ### Steps
 
@@ -41,7 +41,7 @@ Go to [pad-local.com](http://pad-local.com/) to avail a **FREE** trail token for
 
 You will need a domestic public network IP+Token (please register with the administrator) to make wechaty-puppet take effect in the virtual machine part. For the trial or free plan, you can choose Alibaba Cloud or Huawei Cloud or GCP. It is a pity that Google does not have a domestic IP. , Or you can also play gcp's k8s by the way, suggest that you still use domestic resources.
 
-![Step 1](../../static/img/docs/references/padlocal/step-1.webp)
+![Step 1](../../static/img/docs/references/puppet-services/padlocal/step-1.webp)
 
 Just register a ubuntu20.04, pay attention to the security group to release port 8788.
 Run the following command in ubuntu cmdline.
@@ -73,7 +73,7 @@ netstat -ntlp
 docker container ls
 ```
 
-![Step 1-terminal](../../static/img/docs/references/padlocal/step-1-terminal.webp)
+![Step 1-terminal](../../static/img/docs/references/puppet-services/padlocal/step-1-terminal.webp)
 
 You can telnet the virtual machine IP: 8788, simple debugging will not work.
 (Optional) You can change docker run to docker-compose by running, and the virtual machine can grow up automatically after it crashes.
@@ -108,7 +108,7 @@ Just wait for the QR code to appear
 
 ### QRcode
 
-![QRCode](../../static/img/docs/puppet-services/padlocal/qrcode.webp)
+![QRCode](../../static/img/docs/references/puppet-services/padlocal/qrcode.webp)
 
 ### Step 4 : WeChat scan code
 
