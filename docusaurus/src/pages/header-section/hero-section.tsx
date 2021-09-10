@@ -5,9 +5,9 @@ const HeroSection = () => {
   return (
     <main id="body">
       <section id="heroSection">
-        <headline id="heroTagLine">
+        <p id="heroTagLine">
           In just a few lines of code, you can have a fully featured
-        </headline>
+        </p>
         <div id="heroTagLineWrapper">
           <p id="heroTagLineEmphasis1">
             <a target="_blank"> Chatbot </a> &nbsp;!
