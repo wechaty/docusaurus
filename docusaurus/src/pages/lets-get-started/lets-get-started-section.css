@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.body {
+
+#body {
   max-width: 100%;
   overflow-x: hidden;
 }
 
-.developersPortalHeadlineWrapper {
+#developersPortalHeadlineWrapper {
   margin-top: 150px;
   margin-bottom: 69px;
   left: 10%;
   position: relative;
 }
 
-.developersPortalRectangle {
+#developersPortalRectangle {
   width: 200px;
   height: 20px;
   background-color: #d2ffca;
@@ -20,7 +21,7 @@
   bottom: 80px;
 }
 
-.developersPortalHeadline {
+#developersPortalHeadline {
   height: 90px;
   width: 500px;
   font-family: "Montserrat";
@@ -40,7 +41,7 @@
   bottom: 60px;
 }
 
-.developersPortalSectionWrapper {
+#developersPortalSectionWrapper {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,13 +53,14 @@
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   margin-top: -100px;
+  margin-bottom: 80px;
 }
 
-.tutorialsWrapper {
+#tutorialsWrapper {
   position: relative;
 }
 
-.contentWrapperOne {
+#contentWrapperOne {
   background-color: honeydew;
   border-radius: 50px;
   padding: 40px 40px 40px;
@@ -78,7 +80,7 @@
   margin-left: 60px;
 }
 
-.tutorialsHeadline {
+#tutorialsHeadline {
   font-family: "Montserrat";
   font-size: 28px;
   font-weight: 800;
@@ -98,7 +100,7 @@
   margin-top: 25px;
 }
 
-.developersPortalContent {
+#developersPortalContent {
   font-family: "Montserrat";
   font-size: 15px;
   font-weight: 500;
@@ -123,7 +125,7 @@
   width: 325px;
 }
 
-.takeMeThereLinkButtonTwo {
+#takeMeThereLinkButtonTwo {
   margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,7 +135,7 @@
   align-items: center;
 }
 
-.takeMeThereLinkButtonThree {
+#takeMeThereLinkButtonThree {
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,7 +145,7 @@
   align-items: center;
 }
 
-.takeMeThereLink {
+#takeMeThereLink {
   width: 100%;
   font-family: "Montserrat";
   font-size: 16px;
@@ -165,20 +167,20 @@
   cursor: pointer;
 }
 
-.takeMeThereLink:hover {
+#takeMeThereLink:hover {
   color: #44a838;
 }
 
-.takeMeThereLink:active {
+#takeMeThereLink:active {
   color: black;
 }
 
-.tutorialsImage {
+#tutorialsImage {
   width: 300px;
   height: 200px;
 }
 
-.contentWrapperTwo {
+#contentWrapperTwo {
   background-color: honeydew;
   border-radius: 50px;
   padding: 40px 40px 40px;
@@ -197,12 +199,12 @@
   justify-content: center;
 }
 
-.howToGuidesImage {
+#howToGuidesImage {
   width: 300px;
   height: 200px;
 }
 
-.howToGuidesHeadline {
+#howToGuidesHeadline {
   font-family: "Montserrat";
   font-size: 28px;
   font-weight: 800;
@@ -225,7 +227,7 @@
   justify-content: center;
 }
 
-.contentWrapperThree {
+#contentWrapperThree {
   background-color: honeydew;
   border-radius: 50px;
   padding: 40px 40px 40px;
@@ -245,12 +247,12 @@
   margin-right: 60px;
 }
 
-.referencesImage {
+#referencesImage {
   width: 300px;
   height: 200px;
 }
 
-.refrencesHeadline {
+#refrencesHeadline {
   font-family: "Montserrat";
   font-size: 28px;
   font-weight: 800;
@@ -271,114 +273,112 @@
 }
 
 @media only screen and (max-width: 700px) {
-  
-  .developersPortalHeadlineWrapper {
-    margin-top: 70px;
+  #developersPortalHeadlineWrapper {
+    margin-top: 110px;
     margin-bottom: 30px;
     left: 10%;
   }
 
-  .developersPortalSectionWrapper {
+  #developersPortalSectionWrapper {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
-  .developersPortalRectangle {
+  #developersPortalRectangle {
     width: 120px;
     height: 12px;
     bottom: 95px;
   }
 
-  .developersPortalHeadline {
+  #developersPortalHeadline {
     height: 100px;
     font-size: 24px;
   }
 
-  .tutorialsHeadline {
+  #tutorialsHeadline {
     font-size: 20px;
   }
 
-  .contentWrapperOne {
+  #contentWrapperOne {
     padding: 50px 40px 30px;
     margin: 0px 6% 6% 6%;
   }
 
-  .developersPortalContent {
+  #developersPortalContent {
     font-size: 12px;
     line-height: 20px;
     width: 100%;
     margin-top: 0px;
   }
 
-  .takeMeThereLink {
+  #takeMeThereLink {
     font-size: 12px;
     line-height: 15px;
     margin-top: 10px;
   }
 
-  .takeMeThereLinkButtonTwo {
+  #takeMeThereLinkButtonTwo {
     margin-top: 0px;
     padding-bottom: 25px;
   }
 
-  .takeMeThereLinkButtonThree {
+  #takeMeThereLinkButtonThree {
     margin-top: 0px;
     padding-bottom: 25px;
   }
 
-  .tutorialsImage {
+  #tutorialsImage {
     width: 250px;
     height: 150px;
   }
 
-  .contentWrapperTwo {
+  #contentWrapperTwo {
     padding: 40px 40px 0px;
     margin: 0px 6% 6% 6%;
   }
 
-  .howToGuidesImage {
+  #howToGuidesImage {
     width: 250px;
     height: 150px;
   }
 
-  .howToGuidesHeadline {
+  #howToGuidesHeadline {
     font-size: 20px;
     margin-bottom: 0px;
   }
 
-  .contentWrapperThree {
+  #contentWrapperThree {
     padding: 40px 40px 0px;
     margin: 0px 6% 6% 6%;
   }
 
-  .referencesImage {
+  #referencesImage {
     width: 250px;
     height: 150px;
   }
 
-  .refrencesHeadline {
+  #refrencesHeadline {
     font-size: 20px;
     margin-bottom: 10px;
   }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 700px) {
-  
-  .developersPortalHeadlineWrapper {
+  #developersPortalHeadlineWrapper {
     margin-top: 100px;
     margin-bottom: 70px;
   }
 
-  .developersPortalRectangle {
+  #developersPortalRectangle {
     width: 160px;
     height: 18px;
   }
 
-  .developersPortalHeadline {
+  #developersPortalHeadline {
     font-size: 28px;
   }
 
-  .developersPortalSectionWrapper {
+  #developersPortalSectionWrapper {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -392,66 +392,66 @@
     margin-top: -100px;
   }
 
-.developersPortalContent {
-  width: 275px;
-}
+  #developersPortalContent {
+    width: 275px;
+  }
 
-  .contentWrapperOne {
+  #contentWrapperOne {
     padding: 30px 20px 20px;
     margin-left: 40px;
   }
 
-  .tutorialsHeadline {
+  #tutorialsHeadline {
     font-size: 18px;
   }
 
-  .developersPortalContent {
+  #developersPortalContent {
     font-size: 14px;
   }
 
-  .takeMeThereLink {
+  #takeMeThereLink {
     font-size: 14px;
   }
 
-.takeMeThereLinkButtonTwo {
-  margin-top: 15px;
-}
+  #takeMeThereLinkButtonTwo {
+    margin-top: 15px;
+  }
 
-.takeMeThereLinkButtonThree {
-  margin-top: 15px;
-}
+  #takeMeThereLinkButtonThree {
+    margin-top: 15px;
+  }
 
-  .tutorialsImage {
+  #tutorialsImage {
     width: 250px;
     height: 150px;
   }
 
-  .contentWrapperTwo {
+  #contentWrapperTwo {
     padding: 30px 20px 20px;
     margin-left: 10px;
   }
 
-  .howToGuidesImage {
+  #howToGuidesImage {
     width: 250px;
     height: 150px;
   }
 
-  .howToGuidesHeadline {
+  #howToGuidesHeadline {
     font-size: 18px;
   }
 
-  .contentWrapperThree {
+  #contentWrapperThree {
     padding: 30px 20px 20px;
     margin-right: 40px;
     margin-left: 10px;
   }
 
-  .referencesImage {
+  #referencesImage {
     width: 250px;
     height: 150px;
   }
 
-  .refrencesHeadline {
+  #refrencesHeadline {
     font-size: 18px;
   }
 }
