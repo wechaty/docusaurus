@@ -11,20 +11,20 @@ When a Wechaty user is using a **token** with Wechaty, the Wechaty will use that
 The mechanism behind is the **Puppet Service Discovery**, which can resolve the IP of gGRPC service by the token, is implemented by the following steps:
 
 1. construct a URL: `https://api.chatie.io/v0/hosties/${TOKEN}`
-2. make a GET request to the URL, and expect to get the following json object:
+1. make a GET request to the URL, and expect to get the following json object:
 
-    ```json
-    {"host":"1.2.3.4","port":1234}
-    ```
+```json
+{"host":"1.2.3.4","port":1234}
+```
 
 **the above `1.2.3.4` will be the gRPC server, and the port `1234` is the gRPC port.**
-3. if the token is not registered, then the GET request will get a HTTP 404 with the below object:
+1. if the token is not registered, then the GET request will get a HTTP 404 with the below object:
 
-    ```json
-    {"host":"0.0.0.0","port":0}
-    ```
+```json
+{"host":"0.0.0.0","port":0}
+```
 
-4. For the Wechaty SDK, we support the following environment variables so that the users can switch between different languages without any changes:
+1. For the Wechaty SDK, we support the following environment variables so that the users can switch between different languages without any changes:
 `export WECHATY_PUPPET_SERVICE_TOKEN=${TOKEN}`
 
 ## The Registration
