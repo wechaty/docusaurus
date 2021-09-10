@@ -54,7 +54,7 @@ tags:
 
 详情可见[教你用AI Studio+wechaty+阿里云白嫖一个智能微信机器人](https://aistudio.baidu.com/aistudio/projectdetail/1836012?channelType=0&channel=0)
 
-**【Step1：搞定服务器，并完成docker下载及配置】**
+【Step1：搞定服务器，并完成docker下载及配置】
 
 云服务器部分的详细过程，可参考上面给出的参考项目，本项目不做赘述，阿里云、百度云、腾讯云、华为云均有相关活动及福利，可供各位读者选择。  
 搞定云服务器后，需要下载docker并进行相关配置，可执行如下代码，其中：WECHATY_TOKEN的具体内容需换成自己的token，具体的token获取方式可见[wechaty官网](https://wechaty.js.org/)。此外，参加AIStudio与Wechaty的比赛亦可获得（报名已结束）。
@@ -70,11 +70,11 @@ export WECHATY_TOKEN="puppet_padlocal_xxxxxx" # 这里输入你自己的token
 docker run -ti --name wechaty_puppet_service_token_gateway --rm -e WECHATY_LOG -e WECHATY_PUPPET -e WECHATY_TOKEN -e WECHATY_PUPPET_SERVER_PORT -p "$WECHATY_PUPPET_SERVER_PORT:$WECHATY_PUPPET_SERVER_PORT" wechaty/wechaty:latest
 ```
 
-**【Step2：检查是否运行成功】**
+【Step2：检查是否运行成功】
 
 当完成docker下载及相关配置后，需检查是否运行成功，可采用如下方法：
 
-1. 输入网址: <https://api.chatie.io/v0/hosties/xxxxxx >(后面的xxxxxx就是你的token)；
+1. 输入网址: <https://api.chatie.io/v0/hosties/xxxxxx>(后面的xxxxxx就是你的token)；
 
 2. 如果返回了服务器的ip地址以及端口号，如下图，即说明运行成功；
 
@@ -82,13 +82,13 @@ docker run -ti --name wechaty_puppet_service_token_gateway --rm -e WECHATY_LOG -
 
 ![检查是否运行成功](https://img-blog.csdnimg.cn/img_convert/edd7b01175da7bb8322ca6ca5033f858.png)
 
-**【Step3：登录附载微信】**
+【Step3：登录附载微信】
 
 运行成功后会输出很多东西，此时我们需要找到一个Online QR Code: 的地址点击进去：
-![Online QR Code](https://img-blog.csdnimg.cn/img_convert/fe5734e8fcb337d8a68a0482b057039f.png) 
+![Online QR Code](https://img-blog.csdnimg.cn/img_convert/fe5734e8fcb337d8a68a0482b057039f.png)
 然后扫码登陆即可！
 
-**【Step4_Way 1：本地开发运行】**
+【Step4_Way 1：本地开发运行】
 
 - 将本项目挂在的数据集下载到本地并解压;
 
@@ -98,7 +98,7 @@ docker run -ti --name wechaty_puppet_service_token_gateway --rm -e WECHATY_LOG -
 
 - 运行ding-dong-bot.py.
 
-**【Step4_Way 2：AIStudio脚本运行】**
+【Step4_Way 2：AIStudio脚本运行】
 
 具体的和【本地开发运行】差别不大，可参考[教你用AI Studio+wechaty+阿里云白嫖一个智能微信机器人](https://aistudio.baidu.com/aistudio/projectdetail/1836012?channelType=0&channel=0)
 
@@ -140,5 +140,3 @@ docker run -ti --name wechaty_puppet_service_token_gateway --rm -e WECHATY_LOG -
 [【Mural_Gan】壁画不止在莫高窟可以看到！](https://aistudio.baidu.com/aistudio/projectdetail/2231359)
 
 [垃圾分类](https://aistudio.baidu.com/aistudio/projectdetail/1752787)
-
-
