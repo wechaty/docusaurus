@@ -3,7 +3,7 @@ title: Baidu Paddle ❤️ Wechaty ML Chatbot 大赛作品推荐
 author: huan
 categories:
   - project
-image: /assets/2021/09-baidu-paddle-machine-learning-chatbot-competition/wechaty-cpu.webp
+image: /assets/2021/09-baidu-paddle-machine-learning-chatbot-competition/baidu-wechaty.webp
 tags:
   - baidu
   - paddle
