@@ -284,3 +284,27 @@ GitHub: <https://github.com/liang1433223/paddleGAN-wechaty>
 {% include iframe.html src="https://www.bilibili.com/video/BV1nA41157i2" %}
 
 GitHub: <https://github.com/kevinfu1717/multimediaChatbot>
+
+## 关于WeChaty
+
+Wechaty 是一个开源聊天机器人框架SDK，具有多平台、多语言和多插件的特性，支持Python, Go, Java, Scala, .NET, PHP, Rust 等多语言版本，通过几行代码即可创建一个聊天机器人。经过5年多的发展，现在Wechaty开源社区已拥有数十位Committers，百余位Contributors，并被万名GitHub开发者Star。目前，Wechaty的开发者已遍布全球多个国家和地区，覆盖数万人，是国内活跃的Conversational AI Chatbot 开发者社区。
+
+## 关于MixLab
+
+MixLab是容纳了多元学科人才的跨界创新社区，目前已汇集5w+科技和设计等多元领域的跨学科人才，并拥有上海、北京、深圳、苏州分会，以期通过去中⼼化的方式，探索新知识、新领域，产生跨领域交汇的新方向。
+
+- 微信公众号： mixlab无界社区、Mixlab and ibrandup人物
+- GitHub: <https://github.com/MixlabPro>
+
+## 关于未来事务管理局
+
+未来事务管理局是中国科幻文化的领军品牌。致力于以专业能力推动科幻产业发展，在科幻领域挖掘新的产品与价值，打造中国科幻的真正黄金时代。
+
+未来局以科幻创作培育和内容开发为核心，覆盖影视、游戏、广告等业务，线下开展科幻创作工作坊、写作营，为科幻产业持续供给人才与内容。并在每年举办另一颗星球科幻大会APSFcon等大型活动，拥有国内泛科幻领域最具影响力的垂直媒体矩阵。
+
+## 关于PaddleNLP
+
+PaddleNLP是飞桨生态文本领域的核心开发库，具备简洁易用的文本领域全流程API、多场景的应用示例、非常丰富的预训练模型，深度适配飞桨框架2.x版。
+只有你想不到，没有PaddleNLP做不到！
+
+客服、闲聊、“凡尔赛”，对诗、写作、彩虹屁，起名、对联、码代码，参考官方示例，解锁更多超能力！
