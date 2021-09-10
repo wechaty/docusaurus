@@ -117,7 +117,7 @@ GitHub: <https://github.com/jhcgt4869/gugua_helps>
 那么请使用它~
 它就是你的证件照小助手！
 
-{% include iframe.html src="https://www.bilibili.com/video/bv1jq4y1Q7NJ" %}
+{% include iframe.html src="https://www.bilibili.com/video/BV1jq4y1Q7NJ" %}
 
 GitHub: <https://github.com/ITerydh/AImaker-paddleMakePhoto>
 
@@ -225,7 +225,7 @@ GitHub: <https://github.com/27182812/Paddle_Story_Generation>
 
 12星座若穿越科幻剧，会拥有什么超能力呢？快来迎接你的专属超能力吧！
 
-{% include iframe.html src="https://www.bilibili.com/video/bv1PL4y1v7nf" %}
+{% include iframe.html src="https://www.bilibili.com/video/BV1PL4y1v7nf" %}
 
 GitHub: <https://github.com/27182812/paddle-wechaty-Zodiac>
 
