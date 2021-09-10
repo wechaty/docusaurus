@@ -46,7 +46,7 @@ docker run -ti \
 
 ```shell
 curl https://api.chatie.io/v0/hosties/$WECHATY_TOKEN (个人随机token)
-{"ip":"36.7.XXX.XXX","port":9001}
+{"host":"36.7.XXX.XXX","port":9001}
 ```
 
 ## python-Wechaty对接GateWay
