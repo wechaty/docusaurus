@@ -4,19 +4,9 @@ title: Wechaty OpenAPI
 sidebar_label: OpenAPI Wechaty
 ---
 
-export const Highlight = ({ children, color }) => (
-  <span
-    style={{
-      color: color,
-    }}
-  >
-    {children}
-  </span>
-);
-
 [![Wechaty OpenAPI](https://img.shields.io/badge/Wechaty-OpenAPI-6a4)](https://github.com/wechaty/openapi)
 
-<img src="../../../static/img/docs/openapi/1.webp" />
+![openapi-logo](../../../static/img/docs/polyglot/openapi/openapi-logo.webp)
 
 - GitHub Repo <https://github.com/wechaty/openapi>
 
@@ -93,7 +83,7 @@ OpenAPI Specification (formerly Swagger Specification) is an API description for
 
 An OpenAPI file allows you to describe your entire API, including:
 
-- The available endpoints (<Highlight color="#e83e8c">/users</Highlight>) and operations on each endpoint (<Highlight color="#e83e8c">GET /users</Highlight>, <Highlight color="#e83e8c">POST /users</Highlight>).
+- The available endpoints (/users) and operations on each endpoint (GET /users, POST /users).
 - The operation parameters Input and Output for each operation
   Authentication methods.
 - The contact information, license, terms of use, and other information.
@@ -148,7 +138,7 @@ Wechaty Puppet Service is the RESTful API for Wechaty API, built on top of the W
 
 [WechatyPuppet](https://app.swaggerhub.com/apis/zixia/WechatyPuppet/0.20.16)
 
-<img src="../../../static/img/docs/openapi/2.webp" />
+![swagger-dashboard](../../../static/img/docs/polyglot/openapi/swagger-dashboard.webp)
 
 ## Blogs
 
