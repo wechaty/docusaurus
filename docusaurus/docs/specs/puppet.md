@@ -179,7 +179,7 @@ In order to support receiving more message types, like audio, [look here](https:
     const payload    = await this.messageRawPayloadParser(rawPayload)
  ````
 
-[![Flowchart] Link to be added later
+Image Link to be added later
 
 ### Future Enhancements
 
