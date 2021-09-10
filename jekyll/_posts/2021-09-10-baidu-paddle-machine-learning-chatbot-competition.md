@@ -9,6 +9,7 @@ tags:
   - paddle
   - machine-learning
   - competition
+  - sticky
   - game
 ---
 
