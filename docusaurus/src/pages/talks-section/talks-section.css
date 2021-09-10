@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.body {
+
+#body {
   max-width: 100%;
   overflow-x: hidden;
 }
 
-.talksSectionWrapper {
-  background-color: white;
-  border-radius: 0px;
+#talksSectionWrapper {
+  background-color: honeydew;
+  border-radius: 150px;
   padding: 30px 0px 60px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,12 +16,13 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: 100%;
-  margin-bottom: 50px;
+  max-width: 90%;
+  margin-bottom: 80px;
   margin-top: 50px;
+  margin-left: 5%;
 }
 
-.talksRectangle {
+#talksRectangle {
   width: 80px;
   height: 20px;
   background-color: #d2ffca;
@@ -30,7 +32,7 @@
   left: 10%;
 }
 
-.talksHeadline {
+#talksHeadline {
   height: 90px;
   width: 140px;
   font-family: "Montserrat";
@@ -44,7 +46,7 @@
   left: 10%;
 }
 
-.talksBothWrapper {
+#talksBothWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,13 +58,13 @@
   justify-content: space-evenly;
 }
 
-.talksWrapper {
-  background-color: honeydew;
-  border-radius: 70px 20px 20px;
+#talksWrapper {
+  background-color: white;
+  border-radius: 70px 70px 70px;
   padding: 20px 20px 0px 40px;
 }
 
-.talksUpperWrapper {
+#talksUpperWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,7 +73,7 @@
   align-items: flex-start;
 }
 
-.talksImage {
+#talksImage {
   width: 275px;
   height: 160px;
   margin-top: 5px;
@@ -79,7 +81,7 @@
   border-radius: 10px;
 }
 
-.talksDetail {
+#talksDetail {
   height: 120px;
   width: 150px;
   display: -webkit-box;
@@ -96,7 +98,7 @@
   overflow-y: hidden;
 }
 
-.talksContentHeadline {
+#talksContentHeadline {
   overflow-y: hidden;
   height: 80px;
   width: 430px;
@@ -115,7 +117,7 @@
   letter-spacing: 2.2px;
 }
 
-.talksContent {
+#talksContent {
   height: 150px;
   width: 430px;
   top: -10px;
@@ -135,7 +137,7 @@
   letter-spacing: 2px;
 }
 
-.readMoreLink {
+#readMoreLink {
   width: 95%;
   height: 20px;
   font-family: "Montserrat";
@@ -160,35 +162,38 @@
   top: -15px;
 }
 
-.readMoreLink:hover {
+#readMoreLink:hover {
   color: #44a838;
 }
 
-.readMoreLink:active {
+#readMoreLink:active {
   color: black;
 }
 
 @media only screen and (max-width: 700px) {
-  
-  .talksSectionWrapper {
-    margin: 0px 0px 0px 0px;
+  #talksSectionWrapper {
+    margin: -30px 0 80px 5%;
+    border-radius: 50px;
+    padding-bottom: 30px;
+    padding-top: 20px;
   }
 
-  .talksRectangle {
+  #talksRectangle {
     width: 60px;
     height: 15px;
-    top: 55px;
+    top: 45px;
     left: 10%;
   }
 
-  .talksHeadline {
+  #talksHeadline {
     height: 70px;
     font-size: 24px;
     font-weight: 800;
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
   }
 
-  .talksBothWrapper {
+  #talksBothWrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -203,17 +208,17 @@
     margin-top: -30px;
   }
 
-  .talksWrapper {
+  #talksWrapper {
     margin: 5% 5% 1%;
   }
 
-  .talksImage {
+  #talksImage {
     width: 180px;
     height: 100px;
     margin-top: 20px;
   }
 
-  .talksDetail {
+  #talksDetail {
     margin-top: 15px;
     height: 110px;
     width: 180px;
@@ -221,13 +226,13 @@
     overflow-y: hidden;
   }
 
-  .talksContentHeadline {
-    font-size: 16px;
+  #talksContentHeadline {
+    font-size: 15px;
     line-height: 30px;
     width: 100%;
   }
 
-  .talksContent {
+  #talksContent {
     height: 200px;
     width: 95%;
     font-size: 12px;
@@ -235,7 +240,7 @@
     top: -30px;
   }
 
-  .readMoreLink {
+  #readMoreLink {
     font-size: 12px;
     top: -60px;
     line-height: 10px;
@@ -244,47 +249,46 @@
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 700px) {
-  
-  .talksRectangle {
+  #talksRectangle {
     width: 60px;
     height: 18px;
     top: 50px;
   }
 
-  .talksHeadline {
+  #talksHeadline {
     font-size: 28px;
   }
 
-  .talksWrapper {
+  #talksWrapper {
     padding: 10px 0px 0px 20px;
   }
 
-  .talksImage {
+  #talksImage {
     margin-top: 3%;
     width: 200px;
     height: 120px;
   }
 
-  .talksDetail {
+  #talksDetail {
     font-size: 15px;
     overflow-y: hidden;
     margin-top: 10px;
   }
 
-  .talksContentHeadline {
+  #talksContentHeadline {
     height: 60px;
     width: 360px;
     font-size: 18px;
     line-height: 30px;
   }
 
-  .talksContent {
+  #talksContent {
     height: 160px;
     width: 350px;
     font-size: 12px;
   }
 
-  .readMoreLink {
+  #readMoreLink {
     font-size: 12px;
   }
 }
