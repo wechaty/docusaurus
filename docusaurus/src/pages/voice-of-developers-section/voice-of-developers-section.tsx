@@ -7,7 +7,7 @@ const voiceOfDevelopers = () => {
       <main id="body">
       <section id="voiceOfDevelopersWrapper">
       <div id="voiceOfDevelopersRectangle" />
-      <headline id="voiceOfDevelopersHeadline">Voice of Developers</headline>
+      <p id="voiceOfDevelopersHeadline">Voice of Developers</p>
       <div id="voiceOfDevelopersAllWrapper">
         <div id="voiceOfDevelopersOne">
           <img id="voiceOfDevelopersImageOne" />
