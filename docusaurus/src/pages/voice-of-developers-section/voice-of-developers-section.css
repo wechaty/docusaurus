@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+#body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#voiceOfDevelopersHeadline {
+  position: relative;
+  margin-left: 10%;
+  top: -40px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+#voiceOfDevelopersRectangle {
+  position: relative;
+  width: 250px;
+  height: 20px;
+  background-color: #d2ffca;
+  border-radius: 50px;
+  margin-left: 10%;
+  top: 10px;
+}
+
+#voiceOfDevelopersWrapper {
+  background-color: honeydew;
+  border-radius: 150px;
+  padding: 70px 0px 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 90%;
+  margin-left: 5%;
+}
+
+#voiceOfDevelopersAllWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+#voiceOfDevelopersOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 320px;
+  height: 320px;
+  margin-top: 30px;
+  background: white;
+  border-radius: 50px;
+  margin-left: 5%;
+}
+
+#voiceOfDevelopersTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 320px;
+  height: 320px;
+  margin-top: 30px;
+  background: white;
+  border-radius: 50px;
+}
+
+#voiceOfDevelopersThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 320px;
+  height: 320px;
+  margin-top: 30px;
+  background: white;
+  border-radius: 50px;
+  margin-right: 5%;
+}
+
+#voiceOfDevelopersImageOne {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  background: url(https://static.overlay-tech.com/assets/39ed31d8-bfcc-4c2f-98cc-7f86022ee490.png);
+  border-radius: 100000px;
+}
+
+#voiceOfDevelopersImageTwo {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  background: url(https://static.overlay-tech.com/assets/39ed31d8-bfcc-4c2f-98cc-7f86022ee490.png);
+  border-radius: 100000px;
+}
+
+#voiceOfDevelopersImageThree {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  background: url(https://static.overlay-tech.com/assets/39ed31d8-bfcc-4c2f-98cc-7f86022ee490.png);
+  border-radius: 100000px;
+}
+
+#voiceOfDevelopersText {
+  position: relative;
+  width: 80%;
+  height: 157px;
+  top: 125px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#ourContributorsButtonWrapper {
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#ourContributorsButton {
+  overflow-y: hidden;
+  width: 400px;
+  height: 50px;
+  margin-top: 50px;
+  background: #d2ffca;
+  border-radius: 100px;
+  border: none;
+  bottom: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 50px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  letter-spacing: 2px;
+  color: black;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+  cursor: pointer;
+}
+
+#ourContributorsButton:hover {
+  color: #44a838;
+}
+
+#ourContributorsButton:active {
+  color: black;
+}
+@media only screen and (max-width: 700px) {
+  #voiceOfDevelopersWrapper {
+    background-color: honeydew;
+    border-radius: 50px;
+    padding: 30px 0px 30px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-top: 40px;
+  }
+
+  #voiceOfDevelopersHeadline {
+    top: -5px;
+    font-size: 24px;
+  }
+
+  #voiceOfDevelopersRectangle {
+    width: 160px;
+    height: 15px;
+    top: 30px;
+  }
+
+  #voiceOfDevelopersAllWrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  #voiceOfDevelopersOne {
+    overflow-y: hidden;
+    height: 250px;
+    border-radius: 100px;
+    margin: 10% 5% 1% 5%;
+  }
+
+  #voiceOfDevelopersTwo {
+    overflow-y: hidden;
+    height: 250px;
+    border-radius: 100px;
+    margin: 5% 5% 1% 5%;
+  }
+  #voiceOfDevelopersThree {
+    overflow-y: hidden;
+    height: 250px;
+    border-radius: 100px;
+    margin: 5% 5% 1% 5%;
+  }
+  #voiceOfDevelopersImageOne {
+    width: 120px;
+    height: 110px;
+  }
+  #voiceOfDevelopersImageTwo {
+    width: 120px;
+    height: 110px;
+  }
+  #voiceOfDevelopersImageThree {
+    width: 120px;
+    height: 110px;
+  }
+  #voiceOfDevelopersText {
+    top: 90px;
+    font-size: 12px;
+  }
+  #ourContributorsButtonWrapper {
+    width: 90vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  #ourContributorsButton {
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
+  #voiceOfDevelopersHeadline {
+    top: 40px;
+    font-size: 28px;
+  }
+
+  #voiceOfDevelopersRectangle {
+    width: 200px;
+    height: 18px;
+    top: 80px;
+  }
+
+  #voiceOfDevelopersAllWrapper {
+    margin-top: 100px;
+  }
+
+  #voiceOfDevelopersOne {
+    margin-right: 2%;
+    height: 300px;
+    margin-left: 2%;
+  }
+
+  #voiceOfDevelopersTwo {
+    margin-right: 2%;
+    height: 300px;
+  }
+
+  #voiceOfDevelopersThree {
+    margin-right: 2%;
+    height: 300px;
+  }
+
+  #voiceOfDevelopersImageOne {
+    width: 120px;
+    height: 120px;
+  }
+
+  #voiceOfDevelopersImageTwo {
+    width: 120px;
+    height: 120px;
+  }
+
+  #voiceOfDevelopersImageThree {
+    width: 120px;
+    height: 120px;
+  }
+
+  #voiceOfDevelopersText {
+    font-size: 12px;
+    top: 110px;
+  }
+
+  #ourContributorsButton {
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 40px;
+  }
+}
