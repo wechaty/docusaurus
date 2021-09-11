@@ -76,7 +76,7 @@ The documentation is organized into several categories:
   Explain the nature of the problem we're solving, so that the reader understands what we're trying to achieve. Don't feel that you need to begin with explainations of how things work - what matters is what the reader does,
   not what you explain. It can be helpful to refer back to what you've done and explain afterward.
 
-- [Explainations](explainations/overview.mdx) aim to explain a concept or subject at a
+- [Explainations](explanations/overview.mdx) aim to explain a concept or subject at a
   fairly high level.
 
   Link to reference material rather than repeat it. Use examples and don't be
