@@ -144,6 +144,8 @@ Wechaty Puppet Service is the RESTful API for Wechaty API, built on top of the W
 
 Read blogs with the `openapi` tag at <https://wechaty.js.org/tags.html#openapi>
 
+Also, you can try reading [Design and document APIs with Swagger](https://wechaty.js.org/2021/06/08/design-and-document-apis-with-swagger/) to get a better understanding of the Swagger.
+
 ## Learning Resources
 
 To learn more about Open PI and Swagger you can find other learning resources and links below.
