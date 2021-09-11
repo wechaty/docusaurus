@@ -7,9 +7,11 @@ title: Contributing to Wechaty
 
 Thank you for your time on Wechaty.
 
-Wechaty is a community that lives on its volunteers. As it keeps growing, we
-always need more people to help others. You can contribute in many ways, either
-to the framework itself or in the wider ecosystem.
+This document explains the process of contributing to the Wechaty project.
+
+First of all please follow the [Wechaty Community Code of Conduct](code-of-conduct.md) in all your interactions within the project.
+
+Wechaty is a community that lives on its volunteers. As it keeps growing, we always need more people to help others. You can contribute in many ways, either to the framework itself or in the wider ecosystem.
 
 ### Why contribute
 
@@ -61,6 +63,23 @@ to help maintain and increase IMs that the Wechaty ecosystem should support.
 See [creating your puppet providers](../puppet-providers/diy.md)
 to help expand the RPA for Wechaty.
 
+**Tips:**
+If you want to add new features or change the API, please submit an issue first to make sure no one else is already working on the same thing and discuss the implementation and API details with maintainers and users by creating an issue. When everything is settled down, you can submit a pull request.
+
+Make sure to add tests for your features and bug fixes and update the documentation (see below) before submitting your code!
+
+### Contribute Support
+
+If you spot something new, open an issue using a [template](https://github.com/wechaty/openapi/issues/new/choose). We'll use the issue to have a conversation about the problem you want to fix.
+
+- Fix typos in documentation
+- Translate documentation to your local language
+- Write tutorials and blog posts, see more: https://github.com/wechaty/wechaty.js.org/tree/master/jekyll/_posts
+- Answer questions on the Wechaty Developers Home or Github issues
+- Organize Wechaty meetups or user groups in your area
+
+Contact rui@Wechaty.io to learn more
+
 If you think working _with_ Wechaty is fun, wait until you start working _on_
 it. Really, **ANYONE** can do something to help make Wechaty better and greater!
 
@@ -72,11 +91,6 @@ Wechaty chatbot framework. Browse the following sections to find out how:
 - [Writing code](coding.md)
 - [Writing documentation](documentation.md)
 - [Committing code](pulls.md)
-
-**Tips:**
-If you want to add new features or change the API, please submit an issue first to make sure no one else is already working on the same thing and discuss the implementation and API details with maintainers and users by creating an issue. When everything is settled down, you can submit a pull request.
-
-Make sure to add tests for your features and bug fixes and update the documentation (see below) before submitting your code!
 
 ### Ready to make a change? Fork the repo
 
@@ -137,9 +151,11 @@ Wechaty community and others to maintain a great ecosystem to work in:
 - Contribute to open-source Wechaty projects, write some documentation, or release your code as an open-source pluggable application. The ecosystem of pluggable applications is a big strength of Wechaty, help us
   build it!
 
+**NOTE:** If you need any help, you can find related information in [Getting Help doc](getting-help.md)
+.
 We're looking forward to working with you. Welcome aboard! ⛵️
 
-We built wechaty with pleasure because it can help others. Help from you for wechaty will be very much appreciated by the community.
+We built wechaty with pleasure because it can help others. Help from your contributions for wechaty will be very much appreciated by the community.
 
 Cheers!
 

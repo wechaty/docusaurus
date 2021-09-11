@@ -6,11 +6,11 @@ sidebar_label: Contributor program
 
 The _Wechaty Contributor Program_ provides valuable supports for qualified contributors.
 
-> Our Mission: build the most easy to use conversational SDK across all messaging platforms for chatbot makers.
+> Our Mission: build the most easy-to-use conversational SDK across all messaging platforms for chatbot makers.
 
-It takes a community to design, build, and ship great chatbot.
+It takes a community to design, build, and ship a great chatbot.
 
-Building an chatbot that on top of Wechaty? Apply for our Contributor Program! The possibilities are endless, and you enjoy the kudos.
+Building a chatbot that is on top of Wechaty? Apply for our Contributor Program! The possibilities are endless, and you enjoy the kudos.
 
 ## Table of Contents
 
@@ -82,7 +82,7 @@ Add this Wechaty badge to your README:
 
 Then add it to the list at [Project using Wechaty](http://wechaty.js.org/docs/case-study/projects-using-wechaty)
 
-## Third Party Supports for Wechaty Contributors
+## Third-Party Supports for Wechaty Contributors
 
 ### Juzi.BOT
 
