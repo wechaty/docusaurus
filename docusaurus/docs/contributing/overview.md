@@ -40,7 +40,7 @@ Start from the [writing code docs](coding.md).
 
 ### Writing documentation ✍️
 
-What's documentation is one of its key strengths? It's informative
+Wechaty's documentation is one of its key strengths. It's informative
 and thorough. You can help to improve the documentation and keep it
 relevant as the framework evolves.
 
