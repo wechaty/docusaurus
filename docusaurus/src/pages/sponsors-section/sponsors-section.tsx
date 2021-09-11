@@ -1,21 +1,20 @@
 import React from "react";
 import "./sponsors-section.css";
-import sponsorsOneImage from "./sponsorOne.png";
-import sponsorsTwoImage from "./sponsorTwo.png";
-import sponsorsThreeImage from "./sponsorThree.png";
+
+
 
 const sponsors = () => {
     return (
       <main id="body">
 <section>
         <div id="sponsorsRectangle" />
-        <headline id="sponsorsHeadline">Our Sponsors</headline>
+        <p id="sponsorsHeadline">Our Sponsors</p>
         <div id="sponsorsSectionWrapper">
           <div id="sponsorsFirstSection">
             <div id="sponsorsOne">
               <img
                 alt="Sponsor Image One"
-                src={sponsorsThreeImage}
+                src="https://user-images.githubusercontent.com/31739964/132944541-57c8cbe0-1b3b-4292-820e-cdcd1b19ea90.png"
                 id="sponsorsOneImage"
               ></img>
             </div>
@@ -29,7 +28,7 @@ const sponsors = () => {
             <div id="sponsorsFive">
               <img
                 alt="Sponsor Image Five"
-                src={sponsorsTwoImage}
+                src="https://user-images.githubusercontent.com/31739964/132944564-6fe38a21-6416-4f0b-8199-ce983cdf7b7c.png"
                 id="sponsorsFiveImage"
               ></img>
             </div>
@@ -52,7 +51,7 @@ const sponsors = () => {
             <div id="sponsorsFour">
               <img
                 alt="Sponsor Image Four"
-                src={sponsorsOneImage}
+                src="https://user-images.githubusercontent.com/31739964/132944612-fdaac727-35e4-4bc2-a468-312617e72460.png"
                 id="sponsorsFourImage"
               ></img>
             </div>
