@@ -1,6 +1,6 @@
 ---
 title: Baidu Paddle ❤️ Wechaty & Mixlab ML Chatbot 大赛作品推荐
-author: huan
+author: valerieeeee
 categories:
   - project
 image: /assets/2021/09-baidu-paddle-machine-learning-chatbot-competition/baidu-wechaty.webp
@@ -18,7 +18,7 @@ tags:
 
 > 大赛启动博客：[AI Chatbot Competition -- Metaverse启动机之重构现世！, @valerieeeee, Jul 07, 2021](https://wechaty.js.org/2021/07/07/wechaty-with-paddlepaddle/)
 
-我今天在打分评审过程中，顺便分享这些项目给大家，希望能够帮助大家在这个阶段的创意赛中获得更多的创意！
+Wechaty 社区评委们在打分评审过程中，将优秀的项目分享给大家，希望能够帮助大家未来发挥出更多的创意！
 
 ## 一只能看懂表格图片的数据助手
 
