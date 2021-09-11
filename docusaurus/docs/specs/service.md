@@ -61,7 +61,7 @@ The current process can be described as the following steps:
 3. You can learn more about the registration protocol via this discussion: [Support rock puppet service provider. #98](https://github.com/wechaty/wechaty-puppet-service/issues/98)
 The following is a pictorial representation that describes the process above.
 
-[![Sequence Diagram](Link to be added later)
+![Sequence Diagram](../../static/img/docs/wechaty-sequence-diagram.webp "Registration Protocol")
 
 ## Registration Process Discussion
 
