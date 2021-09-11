@@ -325,21 +325,21 @@ const references = {
   ]
 }
 
-const explainations = {
-  label: 'Explainations',
+const explanations = {
+  label: 'explanations',
   items: [
-    'explainations/overview',
-    'explainations/conversational',
-    'explainations/rpa',
-    'explainations/motivations',
-    'explainations/concepts',
-    'explainations/architecture',
-    'explainations/lifecycle',
-    'explainations/alternatives',
-    'explainations/glossary',
-    'explainations/testing',
-    'explainations/faq',
-    'explainations/troubleshooting',
+    'explanations/overview',
+    'explanations/conversational',
+    'explanations/rpa',
+    'explanations/motivations',
+    'explanations/concepts',
+    'explanations/architecture',
+    'explanations/lifecycle',
+    'explanations/alternatives',
+    'explanations/glossary',
+    'explanations/testing',
+    'explanations/faq',
+    'explanations/troubleshooting',
     subMenu(docusaurus),
   ],
 }
@@ -349,7 +349,7 @@ const docs = {
   [tutorials.label]     : [...tutorials.items],
   [howtos.label]        : [...howtos.items],
   [references.label]    : [...references.items],
-  [explainations.label] : [...explainations.items],
+  [explanations.label] : [...explanations.items],
 }
 
 export { docs }
