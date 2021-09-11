@@ -74,7 +74,7 @@ If you spot something new, open an issue using a [template](https://github.com/w
 
 - Fix typos in documentation
 - Translate documentation to your local language
-- Write tutorials and blog posts, see more: https://github.com/wechaty/wechaty.js.org/tree/master/jekyll/_posts
+- Write tutorials and blog posts, see more: <https://github.com/wechaty/wechaty.js.org/tree/master/jekyll/_posts>
 - Answer questions on the Wechaty Developers Home or Github issues
 - Organize Wechaty meetups or user groups in your area
 
