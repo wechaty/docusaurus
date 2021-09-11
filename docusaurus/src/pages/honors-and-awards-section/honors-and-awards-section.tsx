@@ -8,14 +8,14 @@ const honorsAndAwards = () => {
       <section>
               <div id="honorsAndAwardsHeadlineWrapper">
                 <div id="honorsAndAwardsRectangle" />
-                <headline id="honorsAndAwardsHeadline">Honors &amp; Awards</headline>
+                <p id="honorsAndAwardsHeadline">Honors &amp; Awards</p>
               </div>
               <div id="honorsAndAwardsSection">
                 <div id="honorsAndAwardsFirstWrapper">
-                  <headline id="honorsAndAwardsFirstHeadline">
+                  <p id="honorsAndAwardsFirstHeadline">
                     Wechaty won the award from the top domestic open source
                     organization
-                  </headline>
+                  </p>
                   <div id="honorsAndAwardsFirstContentWrapper">
                     <p id="honorsAndAwardsFirstContent">
                       On December 30, Wechaty won important honours at the &#34;Tenth
@@ -31,9 +31,9 @@ const honorsAndAwards = () => {
                   />
                 </div>
                 <div id="honorsAndAwardsSecondWrapper">
-                  <headline id="honorsAndAwardsSecondHeadline">
+                  <p id="honorsAndAwardsSecondHeadline">
                     Wechaty, was selected as &#34;33 Chinese Open Source Pioneers&#34;
-                  </headline>
+                  </p>
                   <div id="honorsAndAwardsSecondContentWrapper">
                     <p id="honorsAndAwardsSecondContent">
                       Wechaty creator, BOT5 Club Chair, Tencent Chatbot TVP, and
