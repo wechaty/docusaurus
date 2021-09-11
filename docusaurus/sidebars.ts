@@ -213,6 +213,7 @@ const introduction = {
   items: [
     'overview',
     'wechaty',
+    'what-can-you-do-with-wechaty',
     'who-is-using-wechaty',
     'getting-started-with-wechaty',
     'main-concepts-in-wechaty',
@@ -245,26 +246,18 @@ const introduction = {
 const advanced = {
   label: 'Advanced',
   items: [
-    'examples/advanced/demo-in-tutorial',
     'examples/advanced/busy-bot',
     'examples/advanced/media-file-bot',
     'examples/advanced/room-bot',
     'examples/advanced/friend-bot',
-    'examples/advanced/gist-bot',
   ],
 }
 
 const professional = {
   label: 'Professional',
   items: [
-    'examples/professional/hot-import-bot',
     'examples/professional/ctrl-c-signal-bot',
-    'examples/professional/monster-bot',
-    'examples/professional/api-ai-bot',
-    'examples/professional/speech-to-text-bot',
     'examples/professional/tuling123-bot',
-    'examples/professional/telegram-roger-bot',
-    'examples/professional/blessed-twins-bot',
   ],
 }
 
@@ -298,7 +291,6 @@ const tutorials = {
     subMenu(usingPluginWithWechaty),
     'tutorials/using-vorpal-with-wechaty',
     subMenu(usingReduxWithWechaty),
-    'tutorials/cheatsheet',
     subMenu(examples),
   ],
 }
@@ -332,21 +324,21 @@ const references = {
   ]
 }
 
-const explainations = {
-  label: 'Explainations',
+const explanations = {
+  label: 'explanations',
   items: [
-    'explainations/overview',
-    'explainations/conversational',
-    'explainations/rpa',
-    'explainations/motivations',
-    'explainations/concepts',
-    'explainations/architecture',
-    'explainations/lifecycle',
-    'explainations/alternatives',
-    'explainations/glossary',
-    'explainations/testing',
-    'explainations/faq',
-    'explainations/troubleshooting',
+    'explanations/overview',
+    'explanations/conversational',
+    'explanations/rpa',
+    'explanations/motivations',
+    'explanations/concepts',
+    'explanations/architecture',
+    'explanations/lifecycle',
+    'explanations/alternatives',
+    'explanations/glossary',
+    'explanations/testing',
+    'explanations/faq',
+    'explanations/troubleshooting',
     subMenu(docusaurus),
   ],
 }
@@ -356,7 +348,7 @@ const docs = {
   [tutorials.label]     : [...tutorials.items],
   [howtos.label]        : [...howtos.items],
   [references.label]    : [...references.items],
-  [explainations.label] : [...explainations.items],
+  [explanations.label] : [...explanations.items],
 }
 
 export { docs }
