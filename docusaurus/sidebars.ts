@@ -76,6 +76,7 @@ const puppetServices: SubMenuData = {
     'puppet-services/donut',
     'puppet-services/compatibility',
     'puppet-services/diy',
+    'puppet-services/faq',
   ]
 }
 
