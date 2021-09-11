@@ -1,6 +1,7 @@
 ---
 name: thomas-yanxin (颜鑫)
 site: https://thomas-yanxin.github.io/
+avatar: /assets/contributors/thomas-yanxin/avatar.webp
 title: PPDE
 email: yx20001210@163.com
 ---

@@ -1,26 +1,21 @@
 ---
 title: 『PaddlePaddle X Wechaty』有颜又有才的Living_Bot
 author: thomas-yanxin
-categories: 
-  - project
+categories: project
 tags:
-  - python
   - paddlepaddle
-  - wechaty
   - paddlehub
+  - utility
+image: /assets/2021/08-livingbot-paddlepaddle-wechaty/wechaty.jpg
 ---
 
 ## 『PaddlePaddle X Wechaty』有颜又有才的Living_Bot
-
-### 视频奉上先
-
-{% include iframe.html src="https://www.bilibili.com/video/BV1pf4y1V7G8/" %}
 
 [AIStudio地址（本项目全部相关文件放在此地址中可供下载）](https://aistudio.baidu.com/aistudio/projectdetail/2272396)
 
 ### wechaty介绍
 
-![wechaty](https://img-blog.csdnimg.cn/img_convert/da820e713203830cc13cbc3ef6eb1d7d.png)
+![wechaty](/assets/2021/08-livingbot-paddlepaddle-wechaty/wechaty.jpg)
 
 **[Wechaty](https://github.com/wechaty/wechaty)** 是一款开源的微信SDK，它基于微信公开的API，对接口进行了一系列的封装，提供一系列简单的接口，然后开发者可以在其之上进行微信机器人的开发。在跟作者沟通试用以后，发现其中有着非常多的应用场景，比如：
 
@@ -80,12 +75,12 @@ docker run -ti --name wechaty_puppet_service_token_gateway --rm -e WECHATY_LOG -
 
 3. 如果返回的是{"ip":"0.0.0.0","port":0}，就说明没有运行成功。
 
-![检查是否运行成功](https://img-blog.csdnimg.cn/img_convert/edd7b01175da7bb8322ca6ca5033f858.png)
+![检查是否运行成功](/assets/2021/08-livingbot-paddlepaddle-wechaty/check.png)
 
 【**Step3**：登录附载微信】
 
 运行成功后会输出很多东西，此时我们需要找到一个Online QR Code: 的地址点击进去：
-![Online QR Code](https://img-blog.csdnimg.cn/img_convert/fe5734e8fcb337d8a68a0482b057039f.png)
+![Online QR Code](/assets/2021/08-livingbot-paddlepaddle-wechaty/QR-code.png)
 然后扫码登陆即可！
 
 【**Step4_Way 1**：本地开发运行】
