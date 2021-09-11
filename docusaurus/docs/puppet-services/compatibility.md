@@ -1,9 +1,11 @@
 ---
 title: 'Puppet Service Compatibility'
-sidebar_label:'Puppet Service: 'Compatibility'
+sidebar_label : Compatibility
 ---
 
 ## Compatibility
+
+The below table mentions features and their availability for the different puppet service providers :
 
 Service|donut|wxwork|paimon|padlocal
 :---|:---:|:---:|:---:|:---:
