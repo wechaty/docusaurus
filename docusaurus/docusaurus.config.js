@@ -47,7 +47,7 @@ const config = {
             { label: 'Tutorials',     to: 'docs/tutorials/' },
             { label: 'How-to Guides', to: 'docs/howto/' },
             { label: 'References',    to: 'docs/references/' },
-            { label: 'Explainations', to: 'docs/explainations/' },
+            { label: 'explanations', to: 'docs/explanations/' },
           ],
         },
         { label: 'GitHub',          href: 'https://github.com/wechaty/wechaty#readme',   position: 'right' },
@@ -61,7 +61,7 @@ const config = {
           items: [
             { label: 'Introduction',  to: 'docs/' },
             { label: 'Tutorials',     to: 'docs/tutorials/' },
-            { label: 'Explainations', to: 'docs/explainations/' },
+            { label: 'explanations', to: 'docs/explanations/' },
             { label: 'References',    to: 'docs/references/' },
             { label: 'Howto Guides',  to: 'docs/howto/' },
           ],
@@ -173,6 +173,34 @@ const config = {
   plugins: [
     '@ionic-internal/docusaurus-plugin-tag-manager',
     require.resolve('./src/plugins/qrcode'),
+    [
+    '@docusaurus/plugin-pwa',
+      {
+        debug: true,
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'standalone',
+          'queryString',
+        ],
+        pwaHead: [
+          {
+            tagName: 'link',
+            rel: 'icon',
+            href: '/img/icon.png',
+          },
+          {
+            tagName: 'link',
+            rel: 'manifest',
+            href: '/manifest.json', // your PWA manifest
+          },
+          {
+            tagName: 'meta',
+            name: 'theme-color',
+            content: 'rgb(8, 168, 56)',
+          },
+        ],
+      },
+    ],
   ],
 }
 
