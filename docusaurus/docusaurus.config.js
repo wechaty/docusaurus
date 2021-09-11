@@ -1,11 +1,13 @@
 /**
+ * @type {Partial<import('@docusaurus/types').DocusaurusConfig>}
+ */
+
+/**
  * Support sidebar.ts in TypeScript
  */
 require('ts-node/register')
 
-const path = require('path')
-
-module.exports = {
+const config = {
   title: 'Wechaty',
   tagline: 'Conversational RPA SDK for Chatbot Makers',
   url: 'https://wechaty.js.org',
@@ -45,7 +47,7 @@ module.exports = {
             { label: 'Tutorials',     to: 'docs/tutorials/' },
             { label: 'How-to Guides', to: 'docs/howto/' },
             { label: 'References',    to: 'docs/references/' },
-            { label: 'Explainations', to: 'docs/explainations/' },
+            { label: 'explanations', to: 'docs/explanations/' },
           ],
         },
         { label: 'GitHub',          href: 'https://github.com/wechaty/wechaty#readme',   position: 'right' },
@@ -59,7 +61,7 @@ module.exports = {
           items: [
             { label: 'Introduction',  to: 'docs/' },
             { label: 'Tutorials',     to: 'docs/tutorials/' },
-            { label: 'Explainations', to: 'docs/explainations/' },
+            { label: 'explanations', to: 'docs/explanations/' },
             { label: 'References',    to: 'docs/references/' },
             { label: 'Howto Guides',  to: 'docs/howto/' },
           ],
@@ -144,9 +146,34 @@ module.exports = {
         },
       },
     ],
+    [
+      "redocusaurus",
+      {
+        specs: [
+          {
+            routePath: "/docs/openapi/",
+            specUrl: "https://cdn.jsdelivr.net/npm/wechaty-grpc/dist/generated/wechaty/puppet.swagger.json",
+          },
+          {
+            routePath: "/docs/openapi@latest",
+            specUrl: "https://cdn.jsdelivr.net/npm/wechaty-grpc@latest/dist/generated/wechaty/puppet.swagger.json",
+          },
+          {
+            routePath: "/docs/openapi@next",
+            specUrl: "https://cdn.jsdelivr.net/npm/wechaty-grpc@next/dist/generated/wechaty/puppet.swagger.json",
+          },
+        ],
+        theme: {
+          primaryColor: '#1890ff',
+          redocOptions: { hideDownloadButton: false },
+        },
+      },
+    ],
   ],
   plugins: [
     '@ionic-internal/docusaurus-plugin-tag-manager',
     require.resolve('./src/plugins/qrcode'),
   ],
 }
+
+module.exports = config

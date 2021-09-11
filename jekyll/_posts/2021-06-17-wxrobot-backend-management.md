@@ -13,11 +13,6 @@ tags:
 image: /assets/2021/06-wxrobot-backend-management/admin.png
 ---
 
-> 作者: [zwl](https://github.com/zhang704)
-> Code: [Github](https://github.com/zhang704/wxrobot)
-
-## 准备
-
 微信机器人开源库调研，[GitHub](https://github.com/) 找到以下 3 个开源作品：
 
 - [itchat](https://github.com/littlecodersh/ItChat)
@@ -272,3 +267,6 @@ pm2 start pm2.config.js --env production
 - 感谢 [beclass](https://github.com/beclass) 的开源项目 [`wxbot`](https://github.com/beclass/wxbot)，这是一套优秀的微信机器人平台。
 - 感谢 [Wechaty](https://wechaty.js.org) 团队提供微信机器人 `SDK`，让开发者可以专注于业务代码。
 - 感谢 [句子互动](https://www.juzibot.com) 提供的 `pad` 协议版 `token`。
+
+> 作者: [zwl](https://github.com/zhang704)
+> Code: [Github](https://github.com/zhang704/wxrobot)
