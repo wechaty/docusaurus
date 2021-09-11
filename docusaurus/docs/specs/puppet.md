@@ -179,7 +179,7 @@ In order to support receiving more message types, like audio, [look here](https:
     const rawPayload = await this.messageRawPayload(messageId)
     const payload    = await this.messageRawPayloadParser(rawPayload)
  ````
- 
+
 ![Message Processing flow](../../static/img/docs/messageprocess-flow.webp "Message processing flow")
 
 ### Future Enhancements
