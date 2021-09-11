@@ -141,4 +141,3 @@ Read more blogs with the `padlocal` tag at <https://wechaty.js.org/tags.html#pad
 - Term of Service (ToS): To-be-added
 - Privacy Policy: To-be-added
 - Service Level Agreement (SLA): To-be-added
-s
