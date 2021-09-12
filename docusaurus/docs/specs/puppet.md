@@ -201,7 +201,7 @@ For further information about the  uses Ding dong protocol check out [Ding Dong 
 
 - Puppet Related Links: [https://github.com/wechaty/wechaty-puppet/wiki/Links](https://github.com/wechaty/wechaty-puppet/wiki/Links)
 
-## Important Tips
+## NPM publications
 
 - [ ] `wechaty-puppet` is not a dependency. It should be put in devDependencies and peerDependencies
 - [ ] `wechaty` is not a dependency. It should be put in devDependencies and peerDependencies
