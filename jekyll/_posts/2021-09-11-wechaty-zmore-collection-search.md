@@ -14,7 +14,7 @@ image: /assets/2021/09-wechaty-zmore-collection-search/zmore-d2.webp
 
 随时转发，随时收藏，随时查找
 
-## ZMore
+## ZMore  
   
 ```text
 
@@ -24,7 +24,7 @@ ZMore，纸墨收藏，根据[wechaty](https://github.com/wechaty/wechaty)消息
 
 ```
 
-## Story
+## Story  
   
 ```text
 
@@ -37,7 +37,7 @@ ZMore，纸墨收藏，根据[wechaty](https://github.com/wechaty/wechaty)消息
 
 ```
 
-## SourceCode
+## SourceCode  
   
 ```text
 
@@ -45,7 +45,7 @@ https://github.com/zacard-orc/zmore
 
 ```
 
-## How to use
+## How to use  
   
 ```text
 
@@ -55,7 +55,7 @@ node dist/zmore.production.min.js
 
 ```
 
-## How to develop
+## How to develop  
   
 ```text
 
@@ -68,22 +68,24 @@ yarn ms
 
 ![Demo](/assets/2021/09-wechaty-zmore-collection-search/zmore-d1.webp)
 
+## Support Site  
 
-## Support Site
 - Wechat MP（微信公众号）
 - Zhihu (知乎)
 - Tiktok (抖音，Tiktok)
 - Juejin (掘金)
 - Jianshu (简书)
 
-## Calendar
+## Calendar  
+
 - 2021.8 Use Wechaty Lib
 - 2021.9 Apply Server Enviorment
 - 2021.10 Develop & Publish Search Main Site
 - 2021.12+ Commercial Use
 - 2022.1+ Support More Message Type Or Content Site
 
-## BaseTech
+## BaseTech  
+
 - Wechaty
 - Typescript
 - TSDX
@@ -93,14 +95,13 @@ yarn ms
 - Babel
 - Day.js
 
-## Author
+## Author  
+
 ```text
 
 林磊胤，野生前端，Base 上海
 工作联系Wechat：llysonylin2012  / 13816025562 
 
 ```
- 
 
-
-enjoy it ！
+enjoy it !
