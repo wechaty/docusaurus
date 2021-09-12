@@ -7,74 +7,36 @@ const FeaturesSection = () => {
       <section id="featuresSection">
         <div id="featuresSectionHeadlineWrapper">
           <div id="featuresSectionRectangle" />
-          <p id="featuresSectionHeadline">
-            Why you would love to use this ?
-          </p>
+          <p id="featuresSectionHeadline">Why you would love to use this ?</p>
         </div>
         <div id="featuresSectionUpperWrapper">
           <div id="checkCircleWrapper">
             <div id="checkCircle">
-              <img
-                alt="Check Circle Vector"
-                id="vector"
-                src="https://static.overlay-tech.com/assets/a633a787-7bc5-4b36-abe7-fbc1a8a48f1f.svg"
-              />
+              <img alt="Check Circle Vector" id="vector" src="tick-mark.webp" />
             </div>
             <div id="checkCircle">
-              <img
-                alt="Check Circle Vector"
-                id="vector"
-                src="https://static.overlay-tech.com/assets/a4da0ed6-796d-474e-bdad-f3ce523e2737.svg"
-              />
+              <img alt="Check Circle Vector" id="vector" src="tick-mark.webp" />
             </div>
             <div id="checkCircle">
-              <img
-                alt="Check Circle Vector"
-                id="vector"
-                src="https://static.overlay-tech.com/assets/d503de93-8cbe-4f59-b9f8-a4e8d035244d.svg"
-              />
+              <img alt="Check Circle Vector" id="vector" src="tick-mark.webp" />
             </div>
             <div id="checkCircle">
-              <img
-                alt="Check Circle Vector"
-                id="vector"
-                src="https://static.overlay-tech.com/assets/6dcdf1af-421f-4aaf-9e73-6dbe852d256b.svg"
-              />
+              <img alt="Check Circle Vector" id="vector" src="tick-mark.webp" />
             </div>
             <div id="checkCircle">
-              <img
-                alt="Check Circle Vector"
-                id="vector"
-                src="https://static.overlay-tech.com/assets/f11608f7-b084-4ce6-8a82-5312c0d0bacb.svg"
-              />
+              <img alt="Check Circle Vector" id="vector" src="tick-mark.webp" />
             </div>
             <div id="checkCircle">
-              <img
-                alt="Check Circle Vector"
-                id="vector"
-                src="https://static.overlay-tech.com/assets/888ea73b-cd14-485f-bbf2-4b7ddfd832e9.svg"
-              />
+              <img alt="Check Circle Vector" id="vector" src="tick-mark.webp" />
             </div>
             <div id="checkCircle">
-              <img
-                alt="Check Circle Vector"
-                id="vector"
-                src="https://static.overlay-tech.com/assets/3af373a9-ea0d-4933-9fc7-633f424f249a.svg"
-              />
+              <img alt="Check Circle Vector" id="vector" src="tick-mark.webp" />
             </div>
             <div id="checkCircle">
-              <img
-                alt="Check Circle Vector"
-                id="vector"
-                src="https://static.overlay-tech.com/assets/7b6f8977-382c-440b-b3f6-f83cc2cde17e.svg"
-              />
+              <img alt="Check Circle Vector" id="vector" src="tick-mark.webp" />
             </div>
             <div id="checkCircle">
-              <img
-                alt="Check Circle Vector"
-                id="vector"
-                src="https://static.overlay-tech.com/assets/60c6282c-1bef-43c5-a36b-52cbfcaf6041.svg"
-              />
+              <img alt="Check Circle Vector" id="vector" src="tick-mark.webp" />
             </div>
           </div>
           <div id="featuresListingWrapper">

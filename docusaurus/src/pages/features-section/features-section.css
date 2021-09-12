@@ -6,7 +6,7 @@
 }
 
 #featuresSection {
-  margin-top: -320px;
+  margin-top: -220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,6 +101,8 @@
   align-self: stretch;
   -o-object-fit: cover;
   object-fit: cover;
+  width: 20px;
+  height: 20px;
 }
 
 #featuresListingWrapper {
@@ -390,6 +392,7 @@
 }
 
 @media only screen and (max-width: 700px) {
+  
   #featuresSection {
     margin-top: 50px;
   }
@@ -519,8 +522,9 @@
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 700px) {
+ 
   #featuresSection {
-    margin-top: -400px;
+    margin-top: -300px;
   }
 
   #featuresSectionRectangle {
@@ -543,7 +547,7 @@
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
     padding-top: 0px;
-    margin-bottom: 8px;
+    margin-bottom: 7px;
   }
 
   #featuresListingWrapper {
@@ -615,6 +619,6 @@
 
 @media only screen and (min-width: 1860px) {
   #featuresSection {
-    margin-top: -250px;
+    margin-top: 80px;
   }
 }
