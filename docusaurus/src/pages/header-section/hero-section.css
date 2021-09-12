@@ -99,10 +99,12 @@
   overflow-x: hidden;
   margin-top: -180px;
   z-index: 1;
+  width: 611px; 
 }
 
 #heroImageMobile {
   visibility: hidden;
+  width: 395px; 
 }
 
 #letsDiveInButton {
@@ -133,7 +135,9 @@
 #letsDiveInButton:active {
   color: black;
 }
+
 @media only screen and (max-width: 700px) {
+  
   #heroSection {
     top: 0px;
     height: 95vh;
@@ -174,9 +178,9 @@
   #heroImageMobile {
     position: absolute;
     top: 270px;
-    left: 15%;
-    width: 70%;
-    max-width: 320px;
+    left: 18%;
+    width: 65%;
+    max-width: 350px;
     visibility: visible;
   }
 
@@ -190,6 +194,7 @@
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 700px) {
+ 
   #heroSection {
     overflow-x: hidden;
   }
