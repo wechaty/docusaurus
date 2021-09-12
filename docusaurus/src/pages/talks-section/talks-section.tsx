@@ -13,7 +13,7 @@ const WechatyLandingPage = () => {
               <img
                 alt="Award Image"
                 id="talksImage"
-                src="https://static.overlay-tech.com/assets/b52ac311-3f89-49c2-8fb4-4a6bb700f86f.png"
+                src="talks-image-one.webp"
               />
               <p id="talksDetail">
                 Speaker -
@@ -36,7 +36,12 @@ const WechatyLandingPage = () => {
                 Interface best-selling book "Chatbot from 0 to 1" in Chinese,
                 the author of Wechaty.
               </p>
-              <a id="readMoreLink">Read More</a>
+              <a
+                href="https://wechaty.js.org/2020/05/19/open-source-wechaty-huan-2020/"
+                id="readMoreLink"
+              >
+                Read More
+              </a>
             </div>
           </div>
           <div id="talksWrapper">
@@ -44,7 +49,7 @@ const WechatyLandingPage = () => {
               <img
                 alt="Award Image Two"
                 id="talksImage"
-                src="https://static.overlay-tech.com/assets/d1a2bfce-b571-4607-a668-4a271328f987.png"
+                src="talks-image-two.webp"
               />
               <p id="talksDetail">
                 Speaker -
@@ -58,9 +63,7 @@ const WechatyLandingPage = () => {
               </p>
             </div>
             <div id="talksContentWrapper">
-              <p id="talksContentHeadline">
-                Wechaty 101: from v0.0 to v0.7
-              </p>
+              <p id="talksContentHeadline">Wechaty 101: from v0.0 to v0.7</p>
               <p id="talksContent">
                 This talk was presented at Node Party Beijing #18 Dec 2016, all
                 about ChatBots.
@@ -73,7 +76,12 @@ const WechatyLandingPage = () => {
                 <br />
                 what’s in it for me?
               </p>
-              <a id="readMoreLink">Read More</a>
+              <a
+                href="https://wechaty.js.org/2017/01/06/wechaty-101-presentation/"
+                id="readMoreLink"
+              >
+                Read More
+              </a>
             </div>
           </div>
         </div>
