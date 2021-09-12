@@ -88,7 +88,7 @@
   
   #honorsAndAwardsFirstContentWrapper {
     background-position: center;
-    background-image: url("https://static.overlay-tech.com/assets/8b71a728-84ff-4edf-9e69-98ad56b18555.svg");
+    background-image: url(./background.webp);
     padding: 10px 50px 10px 20px;
     display: -webkit-box;
     display: -ms-flexbox;
