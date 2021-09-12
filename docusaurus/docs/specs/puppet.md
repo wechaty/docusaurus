@@ -19,7 +19,7 @@ For better understanding of the Puppet below are some links listed down:
 For a deeper understanding of the Puppet in Wechaty, you can read its documentation from <https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html> and source code if you like at <https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts>
 Below is an architectural diagram of Wechaty Puppet.
 
-![abstract puppet](./img/docs/architecture.png)
+![abstract puppet](../../static/img/docs/architecture.png)
 
 ### Important Puppets
 
