@@ -22,7 +22,7 @@ const honorsAndAwards = () => {
                       China Cloud Computing Standards and Application Conference&#34;
                       organized by the China Open Source Cloud Alliance.
                     </p>
-                    <a id="learnMoreButtonOne">Learn more</a>
+                    <a href="https://wechaty.js.org/2020/12/31/open-source-award-wechaty/" id="learnMoreButtonOne">Learn more</a>
                   </div>
                   <img
                     alt="Award One Image"
@@ -41,7 +41,7 @@ const honorsAndAwards = () => {
                       SegmentFault&#039;s 2nd annual list of 33 Chinese Open Source
                       Pioneers.&#34;
                     </p>
-                    <a id="learnMoreButtonTwo">Learn more</a>
+                    <a href="https://wechaty.js.org/2020/12/23/open-source-pioneer-huan/" id="learnMoreButtonTwo">Learn more</a>
                   </div>
                   <img
                     alt="Award Two Image"
