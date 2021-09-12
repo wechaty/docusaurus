@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+#body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#footer {
+    margin-top: 120px;
+    background-color: #d2ffca;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  #footerUpper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  #footerColumnEmphasis {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 32px;
+    color: black;
+    letter-spacing: 4px;
+    margin-top: 50px;
+  }
+  
+  #footerColumnOne {
+    height: 600px;
+    display: inline-block;
+    width: 300px;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 35px;
+    color: black;
+    letter-spacing: 2px;
+  }
+  
+  #footerColumnOne a:hover {
+    color: #44a838;
+    cursor: pointer;
+    -webkit-transition: color 500ms;
+    transition: color 500ms;
+  }
+  
+  #footerColumnOne a:active {
+    color: black;
+  }
+  
+  #footerColumnTwo {
+    height: 600px;
+    display: inline-block;
+    width: 300px;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 35px;
+    color: black;
+    letter-spacing: 2px;
+  }
+  
+  #footerColumnTwo a:hover {
+    color: #44a838;
+    cursor: pointer;
+    -webkit-transition: color 500ms;
+    transition: color 500ms;
+  }
+  
+  #footerColumnTwo a:active {
+    color: black;
+  }
+  
+  #footerColumnThree {
+    height: 600px;
+    display: inline-block;
+    width: 300px;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 35px;
+    color: black;
+    letter-spacing: 2px;
+  }
+  
+  #footerColumnThree a:hover {
+    color: #44a838;
+    cursor: pointer;
+    -webkit-transition: color 500ms;
+    transition: color 500ms;
+  }
+  
+  #footerColumnThree a:active {
+    color: black;
+  }
+  
+  #scannerWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: -100px;
+  }
+  
+  #scanner {
+    width: 210px;
+    height: 210px;
+    padding: 0px 10px 0px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  #scannerText {
+    height: 280px;
+    width: 380px;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 33px;
+    color: black;
+    letter-spacing: 2px;
+    margin-top: 20px;
+  }
+  
+  #wechatyLogoFooter {
+    margin-top: -140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  #codeOfConductText {
+    height: 15px;
+    margin-top: 20px;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 300px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: color 500ms;
+    transition: color 500ms;
+  }
+  
+  #codeOfConductText a:hover {
+    color: #44a838;
+    -webkit-transition: color 500ms;
+    transition: color 500ms;
+    cursor: pointer;
+  }
+  
+  #codeOfConductText a:active {
+    color: black;
+  }
+  
+  #copyrightText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 25px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    color: black;
+    letter-spacing: 2px;
+    margin-top: -5px;
+    overflow-y: hidden;
+  }
+  
+  a {
+    color: #000000;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    #footerUpper {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+      #footerColumnEmphasis {
+        font-size: 16px;
+        line-height: 30px;
+      }
+      #footerColumnOne {
+        font-size: 12px;
+        line-height: 30px;
+        width: 170px;
+        height: 330px;
+      }
+      #footerColumnTwo {
+        font-size: 12px;
+        line-height: 30px;
+        width: 140px;
+        height: 330px;
+      }
+      #footerColumnEmphasisFirst {
+        font-size: 16px;
+        line-height: 30px;
+        position: absolute;
+        top: 260px;
+        width: 200px;
+        right: 38%;
+      }
+      #footerColumnThree {
+        font-size: 12px;
+        line-height: 30px;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 350px;
+        right: 38%;
+      }
+      #scannerWrapper {
+        margin-left: 0%;
+      }
+      #scanner {
+        width: 150px;
+        margin: 120px 0 -40px 0;
+      }
+      #scannerText {
+        font-size: 12px;
+        line-height: 30px;
+        width: 320px;
+      }
+      #wechatyLogoFooter {
+        margin-top: -60px;
+        width: 50%;
+      }
+      #codeOfConductText {
+        font-size: 15px;
+      }
+      #copyrightText {
+        font-size: 10px;
+        width: 100%;
+      }
+  }
+  @media only screen and (max-width: 1200px) and (min-width: 700px) {
+    #footerColumnEmphasis {
+        font-size: 18px;
+      }
+    
+      #footerColumnOne {
+        font-size: 14px;
+        width: 220px;
+      }
+    
+      #footerColumnTwo {
+        font-size: 14px;
+        width: 220px;
+      }
+    
+      #footerColumnThree {
+        font-size: 14px;
+        width: 220px;
+      }
+    
+      #scanner {
+        width: 190px;
+      }
+    
+      #scannerText {
+        font-size: 14px;
+      }
+    
+      #codeOfConductText {
+        font-size: 18px;
+      }
+    
+      #copyrightText {
+        font-size: 14px;
+      }
+  }
