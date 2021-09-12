@@ -103,7 +103,7 @@
   position: absolute;
   width: 125px;
   height: 125px;
-  background: url(https://static.overlay-tech.com/assets/39ed31d8-bfcc-4c2f-98cc-7f86022ee490.png);
+  background: url(./devOne.webp);
   border-radius: 100000px;
 }
 
@@ -111,7 +111,7 @@
   position: absolute;
   width: 125px;
   height: 125px;
-  background: url(https://static.overlay-tech.com/assets/39ed31d8-bfcc-4c2f-98cc-7f86022ee490.png);
+  background: url(./devTwo.webp);
   border-radius: 100000px;
 }
 
@@ -119,7 +119,7 @@
   position: absolute;
   width: 125px;
   height: 125px;
-  background: url(https://static.overlay-tech.com/assets/39ed31d8-bfcc-4c2f-98cc-7f86022ee490.png);
+  background: url(./devThree.webp);
   border-radius: 100000px;
 }
 

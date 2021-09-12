@@ -29,7 +29,9 @@ const voiceOfDevelopers = () => {
         </div>
       </div>
       <div id="ourContributorsButtonWrapper">
+        <a href="https://wechaty.js.org/contributors/">
         <button id="ourContributorsButton">Meet our Contributors</button>
+        </a>
       </div>
     </section>
     </main>
