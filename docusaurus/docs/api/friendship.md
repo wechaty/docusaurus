@@ -32,7 +32,7 @@ The Friendship class allows you to do the following fuctionalities.
 ### friendship.accept\(\) ⇒ `Promise <void>`
 
 The method accepts friend request.Check the example below for implementation
- 
+
 #### Example
 
 ```javascript
@@ -108,7 +108,7 @@ The method returns the friendship type.Check the below example for implementatio
 > * FriendshipType.Confirm
 > * FriendshipType.Receive
 > * FriendshipType.Verify
- 
+
 ### Example _\(If request content is \`ding\`, then accept the friendship\)_
 
 ```javascript
