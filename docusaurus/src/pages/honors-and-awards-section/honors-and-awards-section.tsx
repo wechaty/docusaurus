@@ -27,7 +27,7 @@ const honorsAndAwards = () => {
                   <img
                     alt="Award One Image"
                     id="awardImageOne"
-                    src="https://static.overlay-tech.com/assets/6e34fc8d-8492-4328-b867-cb16a3507b53.png"
+                    src="awardOne.webp"
                   />
                 </div>
                 <div id="honorsAndAwardsSecondWrapper">
@@ -46,7 +46,7 @@ const honorsAndAwards = () => {
                   <img
                     alt="Award Two Image"
                     id="awardImageTwo"
-                    src="https://static.overlay-tech.com/assets/b3ff4dd1-cc78-4275-b428-fa17968ee60d.png"
+                    src="awardTwo.webp"
                   />
                 </div>
               </div>
