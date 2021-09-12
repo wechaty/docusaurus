@@ -121,6 +121,11 @@ const config = {
         'rust',
       ],
     },
+    //  Refer to https://docusaurus.io/docs/configuration#site-metadata,
+    // and https://docusaurus.io/docs/api/themes/configuration#metadatas
+    // know more about Metadata configuration.
+    image: 'img/wechaty-logo.svg',
+    metadatas: [{name: 'twitter:card', content: 'summary_large_image'}, {name: 'twitter:image', content: 'img/wechaty-icon.png'}, {name: 'twitter:title', content: 'Wechaty'}, {name: 'twitter:description', content: 'Wechaty Official Website for News, Blogs, Contributor Profiles, and Documentations.'}],
   },
   presets: [
     [
@@ -173,6 +178,34 @@ const config = {
   plugins: [
     '@ionic-internal/docusaurus-plugin-tag-manager',
     require.resolve('./src/plugins/qrcode'),
+    [
+    '@docusaurus/plugin-pwa',
+      {
+        debug: true,
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'standalone',
+          'queryString',
+        ],
+        pwaHead: [
+          {
+            tagName: 'link',
+            rel: 'icon',
+            href: '/img/icon.png',
+          },
+          {
+            tagName: 'link',
+            rel: 'manifest',
+            href: '/manifest.json', // your PWA manifest
+          },
+          {
+            tagName: 'meta',
+            name: 'theme-color',
+            content: 'rgb(8, 168, 56)',
+          },
+        ],
+      },
+    ],
   ],
 }
 
