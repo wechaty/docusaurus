@@ -165,6 +165,7 @@
   -webkit-transition: color 500ms;
   transition: color 500ms;
   cursor: pointer;
+  text-decoration: none;
 }
 
 #takeMeThereLink:hover {
@@ -273,6 +274,7 @@
 }
 
 @media only screen and (max-width: 700px) {
+ 
   #developersPortalHeadlineWrapper {
     margin-top: 110px;
     margin-bottom: 30px;
@@ -302,6 +304,7 @@
   #contentWrapperOne {
     padding: 50px 40px 30px;
     margin: 0px 6% 6% 6%;
+    border-radius: 60px;
   }
 
   #developersPortalContent {
@@ -335,6 +338,7 @@
   #contentWrapperTwo {
     padding: 40px 40px 0px;
     margin: 0px 6% 6% 6%;
+    border-radius: 60px;
   }
 
   #howToGuidesImage {
@@ -350,6 +354,7 @@
   #contentWrapperThree {
     padding: 40px 40px 0px;
     margin: 0px 6% 6% 6%;
+    border-radius: 60px;
   }
 
   #referencesImage {
@@ -364,6 +369,7 @@
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 700px) {
+  
   #developersPortalHeadlineWrapper {
     margin-top: 100px;
     margin-bottom: 70px;

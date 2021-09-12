@@ -15,7 +15,7 @@ const LetsGetStarted = () => {
               <img
                 alt="Web Tutorials Image"
                 id="tutorialsImage"
-                src="https://user-images.githubusercontent.com/31739964/132522682-ca83fa36-8fbc-43c6-b2e2-e10946568e14.png"
+                src="tutorials.webp"
               />
               <p id="tutorialsHeadline">Tutorials</p>
               <p id="developersPortalContent">
@@ -24,7 +24,12 @@ const LetsGetStarted = () => {
                 tutorials.
               </p>
               <div id="takeMeThereLinkButtonOne">
-                <a id="takeMeThereLink">Take me there</a>
+                <a
+                  href="https://wechaty.js.org/docs/tutorials/"
+                  id="takeMeThereLink"
+                >
+                  Take me there
+                </a>
               </div>
             </div>
           </div>
@@ -32,7 +37,7 @@ const LetsGetStarted = () => {
             <img
               alt="Question Mark on a piece of Code"
               id="howToGuidesImage"
-              src="https://user-images.githubusercontent.com/31739964/132522672-59232488-7912-4898-bf3e-2cf5b1a205f0.png"
+              src="how-to-guides.webp"
             />
             <p id="howToGuidesHeadline">How-to Guides</p>
             <p id="developersPortalContent">
@@ -40,12 +45,14 @@ const LetsGetStarted = () => {
               is required of how Wechaty works.
             </p>
             <div id="takeMeThereLinkButtonTwo">
-              <a id="takeMeThereLink">Take me there</a>
+              <a href="https://wechaty.js.org/docs/howto/" id="takeMeThereLink">
+                Take me there
+              </a>
             </div>
           </div>
           <div id="contentWrapperThree">
             <img
-              src="https://user-images.githubusercontent.com/31739964/132522680-7f2b20b3-2b91-4a0b-8f02-89ddaae651b0.png"
+              src="references.webp"
               id="referencesImage"
               alt="Reference Book Image"
             />
@@ -55,7 +62,12 @@ const LetsGetStarted = () => {
               of Wechaty&#039;s machinery.
             </p>
             <div id="takeMeThereLinkButtonThree">
-              <a id="takeMeThereLink">Take me there</a>
+              <a
+                href="https://wechaty.js.org/docs/references/"
+                id="takeMeThereLink"
+              >
+                Take me there
+              </a>
             </div>
           </div>
         </div>
