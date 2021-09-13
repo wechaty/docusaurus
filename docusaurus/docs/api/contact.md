@@ -6,20 +6,22 @@ All wechat contacts(friend) will be encapsulated as a Contact.
 
 ## Classes
 
-All wechat contacts\(friend\) will be encapsulated as a Contact. 
+All wechat contacts\(friend\) will be encapsulated as a Contact.
 [Examples/Contact-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/contact-bot.ts)
 
 ## Contact
 
 All wechat contacts\(friend\) will be encapsulated as a Contact.
 
-**Properties**
+### Properties
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | id | `string` | Get Contact id. This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table) |
 
 ## Global Class `Contact`
+
+### Instance Methods
 
 | Instance Methods                     | Return type                                                           |
 |--------------------------------------|-----------------------------------------------------------------------|
@@ -34,9 +36,13 @@ All wechat contacts\(friend\) will be encapsulated as a Contact.
 | avatar()                             | `Promise`                                                             |
 | sync()                               | `Promise`                                                             |
 | self()                               | `Boolean`                                                             |
-  * _static_
-    * [.find\(query\)](contact.md#Contact.find) ⇒ `Promise <Contact | null>`
-    * [.findAll\(\[queryArg\]\)](contact.md#Contact.findAll) ⇒ `Promise <Contact []>`
+
+### Static Methods
+
+| Static Methods            | Return Type                 |
+|---------------------------|-----------------------------|
+| find(query)               | `Promise <Contact \| null>` |
+| findAll(Query Arguements) | `Promise <Contact []>`      |
 
 ### contact.say\(textOrContactOrFileOrUrlLinkOrMiniProgram\) ⇒ `Promise <void>`
 
@@ -245,7 +251,8 @@ The method checks if contact is self.It returns `boolean` - True for contact is 
 ```javascript
 const isSelf = contact.self()
 ```
-## Static Methods 
+
+## Static Methods
 
 ### Contact.find\(query\) ⇒ `Promise <Contact | null>`
 
@@ -293,7 +300,7 @@ const contactList = await bot.Contact.findAll({ alias: 'lijiarui' }) // find all
 
 It is a  global `typedef` used to search contacts.
 
-**Properties**
+### Properties
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
