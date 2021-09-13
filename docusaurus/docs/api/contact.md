@@ -199,7 +199,7 @@ const gender = contact.gender() === bot.Contact.Gender.Male
 
 ### Contact.province\(\) ⇒ `string` \| `null`
 
-the method gets the region 'province' from a contact.Check the below example for implementation.
+This method gets the region 'province' from a contact.Check the below example for implementation.
 
 ### Example
 
@@ -209,7 +209,7 @@ const province = contact.province()
 
 ### Contact.city\(\) ⇒ `string` \| `null`
 
-The method gets the region 'city' from a contact.Check the below example for implementation.
+This method gets the region 'city' from a contact.Check the below example for implementation.
 
 ### Example
 
@@ -273,7 +273,7 @@ const contactFindByAlias = await bot.Contact.find({ alias:"lijiarui"} )
 
 ### Contact.findAll\(\[queryArg\]\) ⇒ `Promise <Contact []>`
 
-The method finds contact by `name` or `alias`.If  you use Contact.findAll\(\) get the contact list of the bot. Include the contacts from bot's rooms.
+This method finds contact by `name` or `alias`.If  you use Contact.findAll\(\) get the contact list of the bot. Include the contacts from bot's rooms.
 
 #### Definition
 
