@@ -28,7 +28,7 @@ image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
 
 ![wechaty](/assets/2021/07-gsod-2021-publish-article/wechaty.webp)
 
-- Wechaty 是一个开源的的个人号微信机器人接口，是一个使用 Typescript 构建的 Node.js 应用。支持多种微信接入方案，包括网页，ipad，ios，windows， android 等。同时支持Linux, OSX, Win32 和 Docker 等多个平台。
+- Wechaty 是一个开源的的个人号微信机器人接口，一个使用 Typescript 构建的 Node.js 应用。支持多种微信接入方案，包括网页，ipad，ios，windows， android 等。同时支持Linux, OSX, Win32 和 Docker 等多个平台。
 - 多年来调查表明，良好的文档对于开发人员如何使用开源方面很重要。
 - Wechaty作为[30](https://developers.google.com/season-of-docs/docs/participants)个[伟大的开源组织](https://developers.google.com/season-of-docs/docs/participants)之一，帮助聊天机器人开发者快速搭建聊天机器人的框架，并且支持多个系统平台。
 - Wechaty的使命：给聊天机器人的开发者提供一个最好的开源sdk，给开发者最好的体验。帮助开发者能够更多关注于逻辑应用，把精力集中于编写上层应用的代码，而不是把时间花在与平台的底部对接上。
