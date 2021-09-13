@@ -294,9 +294,9 @@ const contactList = await bot.Contact.findAll({ name: 'ruirui' })    // find all
 const contactList = await bot.Contact.findAll({ alias: 'lijiarui' }) // find all of the contacts whose alias is 'lijiarui'
 ```
 
-# Typedefs
+## Typedefs
 
-## ContactQueryFilter
+### ContactQueryFilter
 
 It is a  global `typedef` used to search contacts.
 
