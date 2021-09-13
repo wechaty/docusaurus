@@ -484,7 +484,7 @@ The method gets room's avatar.Check the below example for implementation.
 const owner = room.avatar()
 ```
 
-## Static Methods 
+## Static Methods
 
 ### Room.create\(contactList, \[topic\]\) ⇒ [`Promise <Room>`](room.md#Room)
 
