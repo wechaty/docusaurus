@@ -26,7 +26,7 @@ and the Wechaty Puppet Service Client will use this token for service discovery.
 For example, the following shows that Wechaty started with a token:
 
 ```sh
-export WECHATY_PUPPET_SERVICE_TOKEN=__token__
+export WECHATY_PUPPET_SERVICE_TOKEN=${TOKEN}
 make bot
 ```
 

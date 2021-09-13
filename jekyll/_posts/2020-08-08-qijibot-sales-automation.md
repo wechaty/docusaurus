@@ -10,10 +10,6 @@ tags:
 image: /assets/2020/qijibot/qijibot.jpg
 ---
 
-> 作者: [Yinbohao](https://github.com/rickyyin98/)
-
-## 摘要
-
 - 除了媒体上的曝光，通过人进行深度触达是好的获客方式
 - 对于团队来说，需要保证所有人的触达标准化
 - 对于个人来说，需要努力提升触达过程的效率
@@ -67,29 +63,8 @@ image: /assets/2020/qijibot/qijibot.jpg
 就在那周，我收到了句子互动创始人佳芮的书稿，《Chatbot从0到1》，成为了我聊天机器人的启蒙。
 后来，我在BOT Friday上认识了大量的创业者、工程师和聊天机器人从业者，并通过几次“看起来是分享实际上是请大家帮我答疑”的BOT Friday活动，逐渐迈入聊天机器人行业。
 ![我的第一次分享](/assets/2020/qijibot/talk1.jpg)
-<div class="zoom-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <iframe
-    src='{{ '/assets/js/viewer-js/#/assets/2020/qijibot/talk2.pdf' | relative_url }}'
-    width='560'
-    height='315'
-    allowfullscreen
-    webkitallowfullscreen
-    frameborder="0"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    "
-  ></iframe>
-</div>
+
+{% include iframe.html src="/assets/2020/qijibot/talk2.pdf" %}
 
 ## 三、如何做出一个可用的聊天机器人系统？
 
@@ -97,29 +72,9 @@ image: /assets/2020/qijibot/qijibot.jpg
 
 在我开始尝试设计一个帮助奇绩创坛进行沟通的聊天机器人的时候，我模糊地觉得我应该先把可能的话术对整理出来，
 我反复阅读和回顾我和之前创业者们的聊天记录，沉淀出了一套一万字的“剧本”，其中明确列出了if-else式的推进流。
-<div class="zoom-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <iframe
-    src='{{ '/assets/js/viewer-js/#/assets/2020/qijibot/method.pdf' | relative_url }}'
-    width='560'
-    height='315'
-    allowfullscreen
-    webkitallowfullscreen
-    frameborder="0"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    "
-  ></iframe>
-</div>
+
+{% include iframe.html src="/assets/2020/qijibot/method.pdf" %}
+
 当我写完“剧本”、技术开发又没有完成时，我基于这套“剧本”在一周时间里与300人进行了沟通，全程几乎不需要进行任何的思考，仿佛机器就应该如此运行一样。
 基于这套剧本，我成功地在人肉沟通环节，把每名创业者的沟通时间缩短到5分钟以内，并真正直接转化了其中数十位创业者报名。
 那个时候，我意识到，是时候将其变成更通用的系统了。
@@ -134,29 +89,8 @@ image: /assets/2020/qijibot/qijibot.jpg
 
 在全自动化的尝试显著的失败之后，我开始探索真正能够解决问题的路径——不迷恋机器完成所有事情，那么机器完成90%的事情，然后人来做最后的决策如何？
 这个时候，我开始意识到，应该做一套人机耦合的辅助坐席。
-<div class="zoom-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <iframe
-    src='{{ '/assets/js/viewer-js/#/assets/2020/qijibot/final.pdf' | relative_url }}'
-    width='560'
-    height='315'
-    allowfullscreen
-    webkitallowfullscreen
-    frameborder="0"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    "
-  ></iframe>
-</div>
+
+{% include iframe.html src="/assets/2020/qijibot/final.pdf" %}
 
 在产品层面我又进行了几个维度的思考：
 
@@ -178,3 +112,5 @@ image: /assets/2020/qijibot/qijibot.jpg
 ![句客宝](/assets/2020/qijibot/jukebao.jpeg)
 这是另外一个很长的、还没有结束的故事……
 如果你对于如何借助工具打造销售体系感兴趣，欢迎你与我聊聊（微信：bohao-YIN），也许会是我们下一篇博客内容的起点。
+
+> 作者: [Yinbohao](https://github.com/rickyyin98/)
