@@ -1,25 +1,53 @@
 ---
 slug: /howto/
-title: Wechaty How-to guides overview
-sidebar_label: 'How-to Guides: Overview'
+title: Overview
+sidebar_label: 'Overview'
 ---
 
 <!-- how-to/cookbook - Explains how to accomplish a specific task. -->
 
-How-to guides are recipes. They guide you through the steps involved in addressing key problems and use-cases. They are more advanced than tutorials and assume some knowledge of how Wechaty works.
+How-to guides are like recipes when you are cooking. Equipped with basic knowledge about Wechaty, you can find key problems and use-cases at [Wechaty Examples](https://wechaty.js.org/docs/examples/overview). If you are a total beginner, you can go to [Wechaty getting started](https://wechaty.js.org/docs/getting-started/) first.
 
-These are some use cases and code snippets to get you started with Redux in a real app. They assume you understand the topics in [basic](#b) and [advanced](#a) tutorials.
+<!-- These are some use cases and code snippets to get you started with Redux in a real app. They assume you understand the topics in [basic](#b) and [advanced](#a) tutorials. They are more advanced than tutorials and assume some knowledge of how Wechaty works. -->
 
-- [Start wechaty](howto/wechaty.md)
-- [Listening events](howto/event.md)
-- [Dealing with messages](howto/message.md)
-- [Managing contacts](howto/contact.md)
-- [Managing rooms](howto/room.md)
-- [Making friends](howto/friendship.md)
-- [Processing files](howto/file-box.md)
-- [Deploy with Docker](howto/docker.mdx)
+## Add events to the bot
 
-## Using Puppets with Wechaty (How to switch between puppets)
+Prepare your bot to add events
+
+- [Add events and customise a bot](howto/event.md)
+
+## Add functionality to the bot
+
+Use one of our quickstart repositories to add functionalities to the bot in a few minutes.
+
+- [Deal with messages](howto/message.md)
+- [Manage contacts](howto/contact.md)
+- [Manage rooms](howto/room.md)
+- [Send and accept friend requests](howto/friendship.md)
+- [Send and receive files](howto/file-box.md)
+
+## Deploy on IM platform
+
+Deploy the bot on various instant messaging platform
+
+- [Deploy in WeChat](howto/deploy-wechat.mdx)
+- [Deploy in Whatsapp](#)
+- [Deploy in Lark](#)
+- [Deploy in Gitter](howto/deploy-gitter.mdx)
+- [Deploy in Official Account](howto/wechat-offical.mdx)
+- [Deploy in PadLocal](#)
+- [Deploy in WeChat4U](howto/deploy-wechat4u.mdx)
+
+## Deploy with containers
+
+Deploy the bot with highly popular container solutions
+
+- [Deploy with Heroku](howto/heroku.md)
+- [Deploy with Docker](#)
+
+## Additional
+
+### Using Puppets with Wechaty (How to switch between puppets)
 
 For different instant messaging (IM) systems (such as WeChat, Whatsapp, and TikTok), the Wechaty community builds separate RPA (Robotic Process Automation) modules for each, and we call those modules [Wechaty Puppet](https://github.com/wechaty/wechaty-puppet).
 
@@ -27,7 +55,7 @@ Wechaty Puppet Service is gRPC for Wechaty Puppet. To use a Wechaty Puppet Servi
 
 ```sh
 export WECHATY_PUPPET=wechaty-puppet-service
-export WECHATY_PUPPET_SERVICE_TOKEN="__TOKEN__"
+export WECHATY_PUPPET_SERVICE_TOKEN="${TOKEN}"
 ```
 
 > You can switch between different Wechaty Puppet Services by changing your TOKEN. The source code works same irrespective of the token you used.
@@ -36,4 +64,4 @@ To learn how to generate TOKEN and switch between puppets , you can visit [Puppe
 
 ## Use Cases
 
-You can learn more from [Wechaty cases study](case-study/overview.md)
+[Wechaty cases study](case-study/overview.md)
