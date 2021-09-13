@@ -59,6 +59,7 @@ const puppetProviders: SubMenuData = {
     'puppet-providers/lark',
     'puppet-providers/padlocal',
     'puppet-providers/wechat4u',
+    'puppet-providers/xp',
     'puppet-providers/service',
     'puppet-providers/mock',
     'puppet-providers/diy',
@@ -120,13 +121,10 @@ const caseStudy: SubMenuData = {
 const quickStart: SubMenuData = {
   label: 'Quick Start',
   items: [
-    'getting-started/overview',
-    'getting-started/quick-start',
-    'getting-started/running-locally',
-    'getting-started/running-on-gitpod',
+    'quick-start/running-on-google-cloud-shell',
+    'quick-start/running-on-gitpod',
   ],
 }
-
 
 const usingReduxWithWechaty: SubMenuData = {
   label: 'Using Redux with Wechaty',
@@ -214,6 +212,10 @@ const introduction = {
   items: [
     'overview',
     'wechaty',
+    'what-can-you-do-with-wechaty',
+    'who-is-using-wechaty',
+    'getting-started-with-wechaty',
+    'main-concepts-in-wechaty',
     subMenu(showcases),
     subMenu(caseStudy),
     subMenu(community),
@@ -233,6 +235,7 @@ const introduction = {
  const basic = {
   label: 'Basic',
   items: [
+    'examples/basic/starter-bot',
     'examples/basic/the-worlds-shortest-chatbot-code-in-6-lines',
     'examples/basic/ding-dong-bot',
     'examples/basic/contact-bot',
@@ -242,33 +245,24 @@ const introduction = {
 const advanced = {
   label: 'Advanced',
   items: [
-    'examples/advanced/demo-in-tutorial',
     'examples/advanced/busy-bot',
     'examples/advanced/media-file-bot',
     'examples/advanced/room-bot',
     'examples/advanced/friend-bot',
-    'examples/advanced/gist-bot',
   ],
 }
 
 const professional = {
   label: 'Professional',
   items: [
-    'examples/professional/hot-import-bot',
     'examples/professional/ctrl-c-signal-bot',
-    'examples/professional/monster-bot',
-    'examples/professional/api-ai-bot',
-    'examples/professional/speech-to-text-bot',
     'examples/professional/tuling123-bot',
-    'examples/professional/telegram-roger-bot',
-    'examples/professional/blessed-twins-bot',
   ],
 }
 
  const examples = {
   label: 'Examples',
   items: [
-    'examples/overview',
     subMenu(basic),
     subMenu(advanced),
     subMenu(professional),
@@ -280,6 +274,7 @@ const gettingStarted: SubMenuData = {
   items: [
     'getting-started/overview',
     subMenu(quickStart),
+    'getting-started/running-locally',
   ],
 }
 
@@ -295,7 +290,6 @@ const tutorials = {
     subMenu(usingPluginWithWechaty),
     'tutorials/using-vorpal-with-wechaty',
     subMenu(usingReduxWithWechaty),
-    'tutorials/cheatsheet',
     subMenu(examples),
   ],
 }
@@ -329,20 +323,21 @@ const references = {
   ]
 }
 
-const explainations = {
-  label: 'Explainations',
+const explanations = {
+  label: 'explanations',
   items: [
-    'explainations/overview',
-    'explainations/conversational',
-    'explainations/rpa',
-    'explainations/motivations',
-    'explainations/concepts',
-    'explainations/architecture',
-    'explainations/lifecycle',
-    'explainations/alternatives',
-    'explainations/glossary',
-    'explainations/faq',
-    'explainations/troubleshooting',
+    'explanations/overview',
+    'explanations/conversational',
+    'explanations/rpa',
+    'explanations/motivations',
+    'explanations/concepts',
+    'explanations/architecture',
+    'explanations/lifecycle',
+    'explanations/alternatives',
+    'explanations/glossary',
+    'explanations/testing',
+    'explanations/faq',
+    'explanations/troubleshooting',
     subMenu(docusaurus),
   ],
 }
@@ -352,7 +347,7 @@ const docs = {
   [tutorials.label]     : [...tutorials.items],
   [howtos.label]        : [...howtos.items],
   [references.label]    : [...references.items],
-  [explainations.label] : [...explainations.items],
+  [explanations.label] : [...explanations.items],
 }
 
 export { docs }
