@@ -8,11 +8,6 @@ tags:
 image: /assets/2020/manage-ur-customers/2020-0517-wechat.jpeg
 ---
 
-> 作者: [Kylin93CN](https://github.com/Kylin93CN)
-> Code: [Github](https://github.com/Kylin93CN/wechaty-bot-XueMiEr)
-
-## 需求
-
 作为一个店面开了十多年个体工商户，积攒了很多的客户。希望能够减少人为的操作，去解决一些常见的问题，比如：
 
 - 群人数超过一定限额，群二维码失效，需要手动拉人
@@ -40,3 +35,6 @@ image: /assets/2020/manage-ur-customers/2020-0517-wechat.jpeg
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
+
+> 作者: [Kylin93CN](https://github.com/Kylin93CN)
+> Code: [Github](https://github.com/Kylin93CN/wechaty-bot-XueMiEr)
