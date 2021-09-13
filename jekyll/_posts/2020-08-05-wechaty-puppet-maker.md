@@ -26,7 +26,7 @@ Wechaty 的每一种接入方式，都以 Puppet 的形式进行封装，目前�
 
 为了帮助社区开发者更快了解 Puppet 的更多细节、实现 Puppet 开发的从零到一，Wechaty 社区邀请到几位最核心的 Puppet 开发者介绍Puppet是什么、如何完成 Puppet 开发的第一步、如何实现一个商用级的 Puppet。
 
-{% include iframe.html src="https://www.youtube.com/embed/fbTedVcEEEI" %}
+{% include iframe.html src="https://www.youtube.com/watch?v=fbTedVcEEEI" %}
 
 ![Wechaty Puppet活动](/assets/2020/wechaty-puppet-maker/puppet.png)
 
@@ -34,29 +34,7 @@ Wechaty 的每一种接入方式，都以 Puppet 的形式进行封装，目前�
 
 分享人：句子互动CMO 尹伯昊
 
-<div class="zoom-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <iframe
-    src='{{ '/assets/js/viewer-js/#/assets/2020/wechaty-puppet-maker/bohao.pdf' | relative_url }}'
-    width='560'
-    height='315'
-    allowfullscreen
-    webkitallowfullscreen
-    frameborder="0"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    "
-  ></iframe>
-</div>
+{% include iframe.html src="/assets/2020/wechaty-puppet-maker/bohao.pdf" %}
 
 ![尹伯昊-1](/assets/2020/wechaty-puppet-maker/bohao1.jpg)
 
@@ -66,29 +44,7 @@ Wechaty 的每一种接入方式，都以 Puppet 的形式进行封装，目前�
 
 分享人：Wechaty Puppet Padplus&Donut Creator 高原
 
-<div class="zoom-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <iframe
-    src='{{ '/assets/js/viewer-js/#/assets/2020/wechaty-puppet-maker/yuan.pdf' | relative_url }}'
-    width='560'
-    height='315'
-    allowfullscreen
-    webkitallowfullscreen
-    frameborder="0"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    "
-  ></iframe>
-</div>
+{% include iframe.html src="/assets/2020/wechaty-puppet-maker/yuan.pdf" %}
 
 ![高原-1](/assets/2020/wechaty-puppet-maker/yuan1.jpg)
 
@@ -128,29 +84,7 @@ Wechaty 的每一种接入方式，都以 Puppet 的形式进行封装，目前�
 
 分享人：句子互动高级工程师 苏畅
 
-<div class="zoom-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <iframe
-    src='{{ '/assets/js/viewer-js/#/assets/2020/wechaty-puppet-maker/suchang.pdf' | relative_url }}'
-    width='560'
-    height='315'
-    allowfullscreen
-    webkitallowfullscreen
-    frameborder="0"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    "
-  ></iframe>
-</div>
+{% include iframe.html src="/assets/2020/wechaty-puppet-maker/suchang.pdf" %}
 
 ![苏畅-1](/assets/2020/wechaty-puppet-maker/suchang1.jpg)
 

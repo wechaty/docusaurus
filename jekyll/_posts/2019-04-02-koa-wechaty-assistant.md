@@ -8,10 +8,6 @@ tags:
 image: /assets/2019/koa-wechaty.jpg
 ---
 
-> 作者: [Leo_chen](https://github.com/leochen-g/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [使用koa2+wechaty打造个人微信小秘书](https://juejin.im/post/5ca1dd846fb9a05e6c77b72f?utm_source=gold_browser_extension)
-
-![koa2](/assets/2019/koa-wechaty.jpg)
-
 * 你是不是有闲置的微信号?
 * 你想不想有个小秘书定时提醒你将要做的事情？
 * 你是否为忘记一些纪念日而懊恼？
@@ -551,3 +547,5 @@ github:[https://github.com/gengchen528/wechat-assistant](https://github.com/geng
 另外我的公众号已经接入微软小冰，关注后发语音会有小姐姐的声音陪你聊天，也可以和她文字聊天，有兴趣可以试试看，单身的欢迎来撩
 
 ![image](/assets/2019/koa-wechaty-10.jpeg)
+
+> 作者: [Leo_chen](https://github.com/leochen-g/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [使用koa2+wechaty打造个人微信小秘书](https://juejin.im/post/5ca1dd846fb9a05e6c77b72f?utm_source=gold_browser_extension)
