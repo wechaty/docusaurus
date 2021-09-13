@@ -8,13 +8,11 @@ tags:
 image: /assets/2020/issue-feedback-room-monitor/way.jpg
 ---
 
-## 背景
-
 因为我们的用户都喜欢通过微信群讨论的方式进行产品问题反馈，这无疑给日常的线上问题处理的效率带来极大的影响。曾经尝试对用户习惯进行线上填写方式的引导，但最终以失败告终。无奈下看看弄一个微信群监控机器人是否可行。
 
 在之前公司我曾经用python通过itchat弄过一个群播报BI数据的机器人，但因为itcaht采用的是微信web协议，微信监控特别严，很多号都不能使用，即使登录上去了还会经常莫名掉线，极不稳定。因此这回肯定不能再通过web协议的方式来弄了。于是带着一点点期盼发现了Wechaty这个支持微信ipad协议的SDK。
 
-### Wechaty官方定义：
+## Wechaty官方定义：
 
 > Wechaty是一个开源的的个人号微信机器人接口，使用Typescript构建的Node.js应用。支持多种微信接入方案，包括网页，ipad，ios，windows，android 等。同时支持 Linux, Windows, Darwin(OSX/Mac) 和 Docker 多个平台。
 
