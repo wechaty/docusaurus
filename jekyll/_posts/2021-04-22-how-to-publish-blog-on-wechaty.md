@@ -9,8 +9,6 @@ tags:
 image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg
 ---
 
-## 谁是这篇博客读者
-
 很高兴能执笔这篇博客，第一次使用github向wechaty社区提交博客时Q到了@huan（提交了十几次才最终通过），因此也被印象深刻了。今天和大家分享一下零基础或有那么一丢丢基础的小白如何从0到1的在wechaty发布博客（成为一个贡献者）。
 
 作为系列博客的第一篇，今天首先和大家分享一下两个内容：
