@@ -4,7 +4,7 @@ title: Deploy in WeChat Official Account
 
 WeChat Official Account is a perfect enforcement of the concept of SoLoMo(Social, Local, Mobile) Marketing and has tonnes of features to interact with the audience. In this how to guide, you will learn how to deploy the bot in WeChat Official Account locally and integrate bot from the list of examples present in [starter templete](https://github.com/wechaty/wechaty-getting-started).
 
-![Deploy in Lark](../../static/img/docs/howto/IM_platform/wechaty-official-account.webp)
+![Deploy in Lark](../../static/img/docs/howto/wechat-offical/wechaty-official-account.webp)
 
 ## Requirements
 
@@ -71,39 +71,39 @@ You can follow up the steps mentioned below:
 
 1. Initialize the project by creating a new folder `my-bot`.
 
-```bash
+```ts
 mkdir my-bot
 cd my-bot
 ```
 
 2. Install the dependencies using the following commands:
 
-```bash
+```ts
 npm install wechaty
 ```
 
 3. Develop temporary internet address as follows:
 
-```bash
+```ts
 npm install -g localtunnel lt –port 80
 ```
 
 4. Add the dependencies for using the bot with WeChat Official Account:
 
-```bash
+```ts
 npm install wechaty-puppet-official-account
 ```
 
 5. Create a new folder `src` and add a file `my-bot.js`. Add any of the functions from <a href="#"> add functionality to the bot</a> section to the snippet below:
 
-```bash
-const {
+```ts
+import {
   Contact,
   Message,
   ScanStatus,
   Wechaty,
   log,
-}= require('wechaty')
+} from 'wechaty'
 console.log(welcome)
 const bot = new Wechaty()
 /*
@@ -113,7 +113,7 @@ const bot = new Wechaty()
 
 6. Configure your `appId`, `appSecret`, `token`, `port` as follows:
 
-```bash
+```ts
 const bot = new Wechaty({
     name: '<your bot name>',
   puppet: new PuppetOA({
@@ -127,7 +127,7 @@ const bot = new Wechaty({
 
 7. After you are done with the file, you can run the bot using the following commands:
 
-```bash
+```ts
 export WECHATY_LOG=verbose
 export WECHATY_PUPPET=wechaty-puppet-official-account
 node src/my-bot.js
