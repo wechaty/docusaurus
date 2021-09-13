@@ -74,15 +74,15 @@ You can follow up the steps mentioned below:
 
 2. From the root directory install the necessary dependencies using the following commands:
 
-```bash
+```ts
 npm install wechaty
 npm install wechaty-puppet-gitter
 ```
 
 3. To pass the token, add the snippets below to the head of examples/ding-dong-bot.ts file:
 
-```bash
-import { Wechaty }   from 'wechaty'
+```ts
+import { Wechaty } from 'wechaty'
 /**
  * Personal Access Token: this token can be used to access the Gitter API.
  *  https://developer.gitter.im/apps
@@ -100,7 +100,7 @@ All necessary functions like onLogout, onLogin, onError, and onMessage are prede
 
 5. Now you can run the bot using the following commands:
 
-```bash
+```ts
 WECHATY_LOG=verbose
 export WECHATY_PUPPET=wechaty-puppet-gitter
 npm start
