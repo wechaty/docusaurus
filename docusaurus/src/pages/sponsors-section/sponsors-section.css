@@ -72,7 +72,7 @@
   overflow-y: hidden;
 }
 
-#sponsorsOne {
+#microsoft {
   overflow-x: hidden;
   overflow-y: hidden;
   width: 150px;
@@ -83,7 +83,7 @@
   transform: rotate(-45deg);
 }
 
-#sponsorsTwo {
+#tensorflow {
   overflow-x: hidden;
   overflow-y: hidden;
   width: 150px;
@@ -94,7 +94,7 @@
   transform: rotate(-45deg);
 }
 
-#sponsorsThree {
+#tencent {
   overflow-x: hidden;
   overflow-y: hidden;
   width: 150px;
@@ -105,7 +105,7 @@
   transform: rotate(-45deg);
 }
 
-#sponsorsFour {
+#iscas {
   overflow-x: hidden;
   overflow-y: hidden;
   width: 150px;
@@ -116,7 +116,7 @@
   transform: rotate(-45deg);
 }
 
-#sponsorsFive {
+#juzi {
   overflow-x: hidden;
   overflow-y: hidden;
   width: 150px;
@@ -127,7 +127,7 @@
   transform: rotate(-45deg);
 }
 
-#sponsorsSix {
+#sujitech {
   overflow-x: hidden;
   overflow-y: hidden;
   width: 150px;
@@ -139,7 +139,7 @@
   margin: 0 18% 0 0;
 }
 
-#sponsorsSeven {
+#gsod {
   overflow-x: hidden;
   overflow-y: hidden;
   width: 150px;
@@ -150,7 +150,7 @@
   transform: rotate(-45deg);
 }
 
-#sponsorsOneImage {
+#microsoftImage {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: relative;
@@ -159,7 +159,7 @@
   width: 62%;
 }
 
-#sponsorsTwoImage {
+#tensorflowImage {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: relative;
@@ -167,7 +167,7 @@
   bottom: -16%;
 }
 
-#sponsorsThreeImage {
+#tencentImage {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: relative;
@@ -175,14 +175,14 @@
   bottom: -39%;
 }
 
-#sponsorsFourImage {
+#iscasImage {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: relative;
   border-radius: 682%;
 }
 
-#sponsorsFiveImage {
+#juziImage {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: relative;
@@ -190,7 +190,7 @@
   bottom: -16%;
 }
 
-#sponsorsSixImage {
+#sujitechImage {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: relative;
@@ -198,7 +198,7 @@
   bottom: -41%;
 }
 
-#sponsorsSevenImage {
+#gsodImage {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: relative;
@@ -225,42 +225,42 @@
   #sponsorsSecondSection {
     height: 90px;
   }
-  #sponsorsOne {
+  #microsoft {
     width: 70px;
     height: 70px;
   }
-  #sponsorsTwo {
+  #tensorflow {
     width: 70px;
     height: 70px;
   }
-  #sponsorsThree {
+  #tencent {
     width: 70px;
     height: 70px;
   }
-  #sponsorsFour {
+  #iscas {
     width: 70px;
     height: 70px;
   }
-  #sponsorsFive {
+  #juzi {
     width: 70px;
     height: 70px;
   }
-  #sponsorsSix {
+  #sujitech {
     width: 70px;
     height: 70px;
     margin: 0 18% 0 0;
   }
-  #sponsorsSeven {
+  #gsod {
     width: 70px;
     height: 70px;
   }
-  #sponsorsTwoImage {
+  #tensorflowImage {
     width: 45px;
   }
-  #sponsorsFiveImage {
+  #juziImage {
     width: 55px;
   }
-  #sponsorsSevenImage {
+  #gsodImage {
     width: 55px;
   }
 }
@@ -280,50 +280,50 @@
     margin-top: 190px;
   }
 
-  #sponsorsOne {
+  #microsoft {
     width: 120px;
     height: 120px;
   }
 
-  #sponsorsTwo {
+  #tensorflow {
     width: 120px;
     height: 120px;
   }
 
-  #sponsorsThree {
+  #tencent {
     width: 120px;
     height: 120px;
   }
 
-  #sponsorsFour {
+  #iscas {
     width: 120px;
     height: 120px;
   }
 
-  #sponsorsFive {
+  #juzi {
     width: 120px;
     height: 120px;
   }
 
-  #sponsorsSix {
+  #sujitech {
     width: 120px;
     height: 120px;
   }
 
-  #sponsorsSeven {
+  #gsod {
     width: 120px;
     height: 120px;
   }
 
-  #sponsorsTwoImage {
+  #tensorflowImage {
     width: 80px;
   }
 
-  #sponsorsFiveImage {
+  #juziImage {
     width: 90px;
   }
 
-  #sponsorsSevenImage {
+  #gsodImage {
     width: 90px;
   }
 }

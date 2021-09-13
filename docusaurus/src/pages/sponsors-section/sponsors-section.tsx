@@ -11,55 +11,55 @@ const sponsors = () => {
         <p id="sponsorsHeadline">Our Sponsors</p>
         <div id="sponsorsSectionWrapper">
           <div id="sponsorsFirstSection">
-            <div id="sponsorsOne">
+            <div id="microsoft">
               <img
                 alt="Sponsor Image One"
                 src="microsoft.webp"
-                id="sponsorsOneImage"
+                id="microsoftImage"
               ></img>
             </div>
-            <div id="sponsorsThree">
+            <div id="tencent">
               <img
                 alt="Sponsor Image Three"
                 src="tencent.webp"
-                id="sponsorsThreeImage"
+                id="tencentImage"
               ></img>
             </div>
-            <div id="sponsorsFive">
+            <div id="juzi">
               <img
                 alt="Sponsor Image Five"
                 src="juzi.webp"
-                id="sponsorsFiveImage"
+                id="juziImage"
               ></img>
             </div>
-            <div id="sponsorsSeven">
+            <div id="gsod">
               <img
                 alt="Sponsor Image Seven"
                 src="gsod.webp"
-                id="sponsorsSevenImage"
+                id="gsodImage"
               ></img>
             </div>
           </div>
           <div id="sponsorsSecondSection">
-            <div id="sponsorsTwo">
+            <div id="tensorflow">
               <img
                 alt="Sponsor Image Two"
                 src="tensorflow.webp"
-                id="sponsorsTwoImage"
+                id="tensorflowImage"
               ></img>
             </div>
-            <div id="sponsorsFour">
+            <div id="iscas">
               <img
                 alt="Sponsor Image Four"
                 src="iscas.webp"
-                id="sponsorsFourImage"
+                id="iscasImage"
               ></img>
             </div>
-            <div id="sponsorsSix">
+            <div id="sujitech">
               <img
                 alt="Sponsor Image Six"
                 src="sujitech.webp"
-                id="sponsorsSixImage"
+                id="sujitechImage"
               ></img>
             </div>
           </div>
