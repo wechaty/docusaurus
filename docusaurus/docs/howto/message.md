@@ -203,12 +203,11 @@ bot.on('message', onMessage)
 const { Message } = require('wechaty')
 
 async function onMessage (msg) {
-  
   log.info('StarterBot', msg.toString())
   const contact = msg.talker() 
-   console.log(contact);
+  console.log(contact);
   console.log("message self",msg.self());
-   if (msg.self()) {
+  if (msg.self()) {
     const b = msg.wechaty.userSelf()
     assert(talker === b, 'Message is sent from bot')
     console.info('Message is sent from bot')
