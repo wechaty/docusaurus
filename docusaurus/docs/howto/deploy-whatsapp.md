@@ -94,7 +94,7 @@ npm install wechaty-puppet-whatsapp
 
 <li> Create a new folder `src` and add a file `my-bot.js`. Add your custom functions to the code snippet below:</li>
 
-```bash
+```ts
 const {
   Contact,
   Message,
