@@ -8,7 +8,7 @@ Wechaty bot allows you to make friends via its global class called `Friendship`.
 
 ## Global class Friendship
 
-The Friendship class allows you to do the following fuctionalities.
+The Friendship class allows you to do the following functionalities.
 
 1. send friend requests
 2. receive friend requests \(in friend event\)
