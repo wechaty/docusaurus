@@ -4,7 +4,7 @@ title: Deploy in WeChat4U
 
 WeChat4U is an excellent wechat bot framework that supports both Node.js and Browser, with rich features and an active community of experienced contributors. In this how to guide, you will learn how to deploy the bot in WeChat4U locally and integrate bot from the list of examples present in [starter templete](https://github.com/wechaty/wechaty-getting-started).
 
-![Deploy in WeChat4U](../../static/img/docs/howto/IM_platform/wechat4u.webp)
+![Deploy in WeChat4U](../../static/img/docs/howto/deploy-wechat4u/wechat4u.webp)
 
 ## Requirements
 
@@ -72,43 +72,43 @@ You can follow up the steps mentioned below:
 
 1. Initialize the project by creating a new folder `my-bot`:
 
-```bash
+```ts
 mkdir my-bot
 cd my-bot
 ```
 
 2. Install the dependencies using the following commands:
 
-```bash
+```ts
 npm install wechaty
 npm install qrcode-terminal
 ```
 
 3. Install the puppet using the following commands:
 
-```bash
+```ts
 npm install --save wechat4u@latest
 npm install wechaty-puppet-wechat4u
 ```
 
 4. Create a new folder `src` and add a file `my-bot.js`. Add any of the functions from <a href="#"> add functionality to the bot</a> section to the snippet below:
 
-```bash
-const Wechat = require('wechat4u')
-const {
+```ts
+import { Wechat } from 'wechat4u'
+import {
   Contact,
   Message,
   ScanStatus,
   Wechaty,
   log,
-}= require('wechaty')
+} from 'wechaty'
 
-const qrTerm = require('qrcode-terminal')
+import { qrTerm } from 'qrcode-terminal'
 
 console.log(welcome)
 const bot = new Wechaty()
 // or use the core API
-// const WechatCore = require('wechat4u/lib/core')
+// import { WechatCore } from 'wechat4u/lib/core'
 /*
  *Your function goes here
  */
@@ -116,7 +116,7 @@ const bot = new Wechaty()
 
 5. After you are done with the file, you can run the bot using the following commands:
 
-```bash
+```ts
 export WECHATY_LOG=verbose
 export WECHATY_PUPPET=wechaty-puppet-wechat4u
 node src/my-bot.js
