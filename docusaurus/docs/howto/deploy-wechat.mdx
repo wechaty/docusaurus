@@ -4,7 +4,7 @@ title: Deploy in WeChat
 
 With all-in-one system and massive audience base, deploying WeChaty in WeChat can prove to be a good choice.In this how to guide, you will learn how to deploy the bot in WeChat locally and integrate bot from the list of examples present in [starter templete](https://github.com/wechaty/wechaty-getting-started).
 
-![Deploy in WeChat](../../static/img/docs/howto/IM_platform/deploy-wechat.webp)
+![Deploy in WeChat](../../static/img/docs/howto/deploy-wechat/deploy-wechat.webp)
 
 ## Requirements
 
@@ -70,36 +70,36 @@ You can follow up the steps mentioned below:
 
 1. Initialize the project by creating a new folder `my-bot`:
 
-```bash
+```ts
 mkdir my-bot
 cd my-bot
 ```
 
 2. Install the dependencies using the following commands:
 
-```bash
+```ts
 npm install wechaty
 npm install qrcode-terminal
 ```
 
 3. Add the dependencies for using the bot with WeChat:
 
-```bash
+```ts
 npm install wechaty-puppet-wechat
 ```
 
 4. Create a new folder `src` and add a file `my-bot.js`. Add your functions to the snippet below:
 
-```bash
-const {
+```ts
+import {
   Contact,
   Message,
   ScanStatus,
   Wechaty,
   log,
-}= require('wechaty')
+} from 'wechaty'
 
-const qrTerm = require('qrcode-terminal')
+import { qrTerm } = from 'qrcode-terminal'
 
 console.log(welcome)
 const bot = new Wechaty()
@@ -111,7 +111,7 @@ const bot = new Wechaty()
 
 5. After you are done with the file, you can run the bot using the following commands:
 
-```bash
+```ts
 export WECHATY_LOG=verbose
 export WECHATY_PUPPET=wechaty-puppet-wechat
 node src/my-bot.js
