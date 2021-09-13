@@ -9,8 +9,6 @@ tags:
   - finance
 image: /assets/2020/wechaty-stock-bot/header.jpg
 ---
-> Author: [wengcan](https://github.com/wengcan)
-> Code: [stock-bot](https://github.com/wengcan/stock-bot)
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
@@ -81,3 +79,6 @@ npm start
 
 🙏感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
 🙏感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token
+
+> Author: [wengcan](https://github.com/wengcan)
+> Code: [stock-bot](https://github.com/wengcan/stock-bot)

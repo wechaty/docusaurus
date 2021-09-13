@@ -1,45 +1,47 @@
 ---
 title: Message
 ---
-
-All wechat messages will be encapsulated as a Message.
-
-## Message
-
-All wechat messages will be encapsulated as a Message.
+This section gives the clear description of the Message Class ,its methods and their uses.
+All wechat messages will be encapsulated as a `Message`.
 
 [Examples/Ding-Dong-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/ding-dong-bot.ts)
 
-**Kind**: global class
+## Global Class `Message`
 
-* [Message](message.md#Message)
-  * _instance_
-    * [.from\(\)](message.md#Message+from) ⇒ `Contact` \| `null`
-    * [.to\(\)](message.md#Message+to) ⇒ `Contact` \| `null`
-    * [.room\(\)](message.md#Message+room) ⇒ `Room` \| `null`
-    * [~~.content\(\)~~](message.md#Message+content)
-    * [.text\(\)](message.md#Message+text) ⇒ `string`
-    * [.say\(textOrContactOrFile\)](message.md#Message+say) ⇒ `Promise <void>`
-    * [.type\(\)](message.md#Message+type) ⇒ `MessageType`
-    * [.self\(\)](message.md#Message+self) ⇒ `boolean`
-    * [.mention\(\)](message.md#Message+mention) ⇒ `Promise <Contact []>`
-    * [.mentionSelf\(\)](message.md#Message+mentionSelf) ⇒ `Promise <boolean>`
-    * [.forward\(to\)](message.md#Message+forward) ⇒ `Promise <void>`
-    * [.date\(\)](message.md#Message+date) ⇒ `Date`
-    * [.age\(\)](message.md#Message+age) ⇒ `number`
-    * [~~.file\(\)~~](message.md#Message+file)
-    * [.toFileBox\(\)](message.md#Message+toFileBox) ⇒ `Promise <FileBox>`
-    * [.toContact\(\)](message.md#Message+toContact) ⇒ `Promise <Contact>`
-    * [.toUrlLink\(\)](message.md#Message+toUrlLink) ⇒ `Promise <UrlLink>`
-  * _static_
-    * [.find\(\)](message.md#Message.find) ⇒ `Promise <Message>`
-    * [.findAll\(\)](message.md#Message.findAll) ⇒ `Promise <Message []>`
+### Instance Methods
+
+| Instance methods               | Return type         |
+|--------------------------------|---------------------|
+| from\(\)                       | `Contact` or `null` |
+| to\(\)                         | `Contact` or `null` |
+| room\(\)                       | `Room` or `null`    |
+| text\(\)                       | `string`            |
+| say\(text Or Contact Or File\) | `Promise`           |
+| type\(\)                       | `MessageType`       |
+| self\(\)                       | `boolean`           |
+| mention\(\)                    | `Promise`           |
+| mentionSelf\(\)                | `Promise`           |
+| forward\(to\)                  | `Promise`           |
+| date\(\)                       | `Date`              |
+| age\(\)                        | `Number`            |
+| toFileBox\(\)                  | `Promise`           |
+| toContact\(\)                  | `Promise`           |
+| toUrlLink\(\)                  | `Promise`           |
+
+### Static Method
+
+| Static Methods | Return type |
+|----------------|-------------|
+| find\(\)       | `Promise`   |
+| findAll\(\)    | `Promise`   |
+
+## Instance Methods
 
 ### message.from\(\) ⇒ `Contact | null`
 
-Get the sender from a message.
+By using message.from, you will receive the sender name from the message. If the method could not find the sender, it will return `null`. See the following example of instance method of class `Message`:
 
-**Kind**: instance method of [`Message`](message.md#Message) **Example**
+### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -60,11 +62,9 @@ bot
 
 ### message.to\(\) ⇒ `Contact` \| `null`
 
-Get the destination of the message Message.to\(\) will return null if a message is in a room, use Message.room\(\) to get the room.
+The method gets the destination of the message Message.to\(\) will return `null` if a message is in a room, use Message.room\(\) to get the room.The method is also  an instance method of class `Message`.Here is an example below:
 
-**Kind**: instance method of [`Message`](message.md#Message)
-
-#### Example
+### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -85,11 +85,9 @@ bot
 
 ### message.room\(\) ⇒ `Room` \| `null`
 
-Get the room from the message. If the message is not in a room, then will return `null`
+By using the `message.room` you get the room from the message.If that particular message is not in a room, then will return `null`.
 
-**Kind**: instance method of [`Message`](message.md#Message)
-
-#### Example
+### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -108,19 +106,11 @@ bot
 .start()
 ```
 
-### ~~message.content\(\)~~
-
-_**Deprecated**_
-
-use [text](message.md#Message+text) instead
-
-**Kind**: instance method of [`Message`](message.md#Message)
-
 ### message.text\(\) ⇒ `string`
 
-Get the text content of the message
+This method returns the text context for the message.
 
-**Kind**: instance method of [`Message`](message.md#Message) **Example**
+### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -141,9 +131,10 @@ bot
 
 ### message.toRecalled\(\) ⇒ `Promise <Message | null>`
 
-Get the text content of the recalled message
+By using `message.toRecalled`, you will get the text content of the recalled message.
+Here is an example:
 
-**Kind**: instance method of [`Message`](message.md#message) **Example**
+### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -159,17 +150,18 @@ bot
 
 ### message.say\(textOrContactOrFileOrUrlLinkOrMiniProgram\) ⇒ `Promise <void>`
 
-Reply a Text, Contact Card, Media File or Link message to the sender.
-
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
-
-**Kind**: instance method of [`Message`](message.md#Message) **See**: [Examples/ding-dong-bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/ding-dong-bot.ts)
+By using `message.say` you can reply a Text, Contact Card, Media File or Link message to the sender.The method takes in 5 types of parameters,more details is given below :
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
-| textOrContactOrFileOrUrlLinkOrMiniProgram | `string` \| `Contact` \| `FileBox` \| `UrlLink` \| `MiniProgram` | send text, Contact, UrlLink, MiniProgram or file to bot.   You can use [FileBox](https://www.npmjs.com/package/file-box) to send file |
+| text Or Contact Or File Or UrlLink Or MiniProgram | `string` \| `Contact` \| `FileBox` \| `UrlLink` \| `MiniProgram` | send text, Contact, UrlLink, MiniProgram or file to bot.   You can use [FileBox](https://www.npmjs.com/package/file-box) to send file |
 
-#### Example
+> Tips: This function depends on the Puppet Implementation.
+ **See 🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
+
+**See🏻**: [Examples/ding-dong-bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/ding-dong-bot.ts)
+
+### Example
 
 ```javascript
 import { FileBox }  from 'file-box'
@@ -227,7 +219,6 @@ bot
       appid              : 'gh_0aa444a25adc',
       title              : '我正在使用Authing认证身份，你也来试试吧',
       pagePath           : 'routes/explore.html',
-      description        : '身份管家',
       thumbUrl           : '30590201000452305002010002041092541302033d0af802040b30feb602045df0c2c5042b777875706c6f61645f31373533353339353230344063686174726f6f6d3131355f313537363035393538390204010400030201000400',
       thumbKey           : '42f8609e62817ae45cf7d8fefb532e83',
     });
@@ -240,21 +231,21 @@ bot
 
 ### message.type\(\) ⇒ `MessageType`
 
-Get the type from the message.
+This method gets the type of the wechat message. The different method types supported are listed below:
 
-> Tips: MessageType is Enum here. &lt;/br&gt;
->
-> * MessageType.Unknown
-> * MessageType.Attachment
-> * MessageType.Audio
-> * MessageType.Contact
-> * MessageType.Emoticon
-> * MessageType.Image
-> * MessageType.Text
-> * MessageType.Video
-> * MessageType.Url
+| Message Type           |
+|------------------------|
+| MessageType.Unknown    |
+| MessageType.Attachment |
+| MessageType.Audio      |
+| MessageType.Contact    |
+| MessageType.Emoticon   |
+| MessageType.Image      |
+| MessageType.Text       |
+| MessageType.Video      |
+| MessageType.Url        |
 
-**Kind**: instance method of [`Message`](message.md#Message) **Example**
+### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -265,9 +256,9 @@ if (message.type() === bot.Message.Type.Text) {
 
 ### message.self\(\) ⇒ `boolean`
 
-Check if a message is sent by self.
+This method returns `true` if message is sent from self or else it returns `false`.
 
-**Kind**: instance method of [`Message`](message.md#Message) **Returns**: `boolean` - - Return `true` for send from self, `false` for send from others. **Example**
+### Example
 
 ```javascript
 if (message.self()) {
@@ -277,9 +268,7 @@ if (message.self()) {
 
 ### message.mention\(\) ⇒ `Promise <Contact []>`
 
-Get message mentioned contactList.
-
-Message event table as follows
+The method gets you the message mentioned contactList and returns `Promise <Contact []>` - > message mentioned contactList.
 
 |  | Web | Mac PC Client | iOS Mobile | android Mobile |
 | :--- | :---: | :---: | :---: | :---: |
@@ -288,7 +277,7 @@ Message event table as follows
 | Identify magic code \(8197\) by programming | ✘ | ✘ | ✘ | ✘ |
 | Identify two contacts with the same roomAlias by \[You were  mentioned\] tip | ✘ | ✘ | √ | √ |
 
-**Kind**: instance method of [`Message`](message.md#Message) **Returns**: `Promise <Contact []>` - - Return message mentioned contactList **Example**
+### Example
 
 ```javascript
 const contactList = await message.mention()
@@ -297,9 +286,9 @@ console.log(contactList)
 
 ### message.mentionSelf\(\) ⇒ `Promise <boolean>`
 
-Check if a message is mention self.
+The method checks if a message is a self mention.It returns `true` for self mention messages.Here is an example:
 
-**Kind**: instance method of [`Message`](message.md#Message) **Returns**: `Promise <boolean>` - - Return `true` for mention me. **Example**
+### Example
 
 ```javascript
 if (await message.mentionSelf()) {
@@ -309,15 +298,13 @@ if (await message.mentionSelf()) {
 
 ### message.forward\(to\) ⇒ `Promise <void>`
 
-Forward the received message. This action doesn't trigger the on-message events.
-
-**Kind**: instance method of [`Message`](message.md#Message)
+By using this method you can forward the received message. This action doesn't trigger the on-message events.
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
-| to | `Sayable` \| `Array` | Room or Contact The recipient of the message, the room, or the contact |
+| to (Recipient) | `Sayable` \| `Array` | Room or Contact The recipient of the message, the room, or the contact |
 
-#### Example
+### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -334,58 +321,35 @@ bot
 
 ### message.date\(\) ⇒ `Date`
 
-Message sent date
-
-**Kind**: instance method of [`Message`](message.md#Message)
+The method returns the message sent date.
 
 ### message.age\(\) ⇒ `number`
 
-Returns the message age in seconds.
-
-For example, the message is sent at time `8:43:01`, and when we received it in Wechaty, the time is `8:43:15`, then the age\(\) will return `8:43:15 - 8:43:01 = 14 (seconds)`
-
-**Kind**: instance method of [`Message`](message.md#Message)
-
-### ~~message.file\(\)~~
-
-_**Deprecated**_
-
-use [toFileBox](message.md#Message+toFileBox) instead
-
-**Kind**: instance method of [`Message`](message.md#Message)
+The method returns the age of the  message  in seconds.For example, the message is sent at time `8:43:01`, and when we received it in Wechaty, the time is `8:43:15`, then the age\(\) will return `8:43:15 - 8:43:01 = 14 (seconds)`.
 
 ### message.toFileBox\(\) ⇒ `Promise <FileBox>`
 
-Extract the Media File from the Message, and put it into the FileBox.
+This method extracts the Media file from the Message, and puts it into the FileBox.
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
-
-**Kind**: instance method of [`Message`](message.md#Message)
+> Tips: This function is depending on the Puppet Implementation, **see🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 ### message.toContact\(\) ⇒ `Promise <Contact>`
 
-Get Share Card of the Message Extract the Contact Card from the Message, and encapsulate it into Contact class
+The method gets share card of the Message Extract  and the contact card from the Message, and encapsulates it into Contact class.
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
-
-**Kind**: instance method of [`Message`](message.md#Message)
+> Tips: This function is depending on the Puppet Implementation, **see 🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 ### message.toUrlLink\(\) ⇒ `Promise <UrlLink>`
 
-Get Url Link of the Message Extract the Url Link from the Message, and encapsulate it into UrlLink class
+The method extracts the Url Link from the Message, and encapsulate it into UrlLink class.
+Tips: This function is depending on the Puppet Implementation, **see 🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
-
-**Kind**: instance method of [`Message`](message.md#Message)
+## Static Methods
 
 ### Message.find\(\) ⇒ `Promise <Message | null>`
 
-Find message in cache
-
-**Kind**: static method of [`Message`](message.md#Message)
+By using `message.find` you can find the messages in cache.
 
 ### Message.findAll\(\) ⇒ `Promise <Message []>`
 
-Find messages in cache
-
-**Kind**: static method of [`Message`](message.md#Message)
+By using `message.findAll`  you can find the messages in cache.
