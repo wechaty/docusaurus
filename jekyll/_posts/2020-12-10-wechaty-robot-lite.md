@@ -7,10 +7,6 @@ tags:
 image: /assets/2020/12-wechaty-robot-lite/example-1.png
 ---
 
-## 介绍
-
-### 前言
-
 最近在dy上看到有相关wx机器人（SCRM）在进行相关推广，而之前学习的时候，用基于python开发的itchat玩过一段时间，后来，某一天突然发现微信登不上了，官方的微信网页版也不能登陆了（至于是啥原因，咱也不知道，也不敢去研究）。
 
 最近又在捣鼓捣鼓这个小助手，遂捡起了之前看过的wechaty。对！！！就是他！！！他来了~~
@@ -20,7 +16,7 @@ image: /assets/2020/12-wechaty-robot-lite/example-1.png
 
 老规矩，先撩姐（????）
 
-### 简介：
+## 简介：
 
 * [官方（git）](https://github.com/wechaty)
 * 语言：node(TypeScript )，python，java（项目多是支持node，一些是开源了python和java；看issues说是node项目支持的更完美~~咱也没细究）
@@ -30,7 +26,7 @@ image: /assets/2020/12-wechaty-robot-lite/example-1.png
 * 收费：官方发布是200￥/号/月，具体→[传送门(点它)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty#3%E4%BB%98%E8%B4%B9Token%E7%9B%B4%E6%8E%A5%E5%92%A8%E8%AF%A2%E5%95%86%E5%8A%A1%E8%B4%AD%E4%B9%B0)
 * 说明：官方声明，一个token原则上只能同时在线一个微信号，这里的意思就有意味了。这个token不会绑定你的微信号，但是呢，只能同时在线一个微信，你要是想做n个微信的私域，那就需要n个token
 
-### 学习：
+## 学习：
 
 * 我这里的项目是基于[wechaty-puppet-service](https://github.com/wechaty/wechaty-puppet-service)
 * [官方API文档](https://wechaty.js.org/docs/api/)（很重要！！！一定要先看文档再下手，如果要基于这个开发，一定要把它当作手册）
@@ -57,7 +53,7 @@ image: /assets/2020/12-wechaty-robot-lite/example-1.png
   * [wechaty-puppet-padplus](https://www.lizenghai.com/goto/?url=https://github.com/wechaty/wechaty-puppet-padplus)：基于ipad协议的微信机器人
   * [wechaty-puppet-service](https://github.com/wechaty/wechaty-puppet-service)：基于windows协议的机器人
 
-### 初步需求：
+## 初步需求：
 
 * 关键字自动通过好友验证
   * 当有人添加机器人时，判断验证消息关键字后通过或直接通过
@@ -78,7 +74,7 @@ image: /assets/2020/12-wechaty-robot-lite/example-1.png
   * 通过socket实时向前台推送还有消息
   * 实现前台向好友发送消息
 
-### 项目结构：
+## 项目结构：
 
 ```bash
 |--bin/
