@@ -10,6 +10,7 @@ tags:
   - puppet-provider
   - puppet-service
 ---
+
 大家好,我是[SimplePad](https://github.com/chatrbot/wechaty-puppet-simplepad)的开发者,也是之前[小丸子](https://github.com/chatrbot/chatbot)项目的开发者,群里的"银河飞车".
 
 之前也在我们Wechaty群内宣传(~~搔扰~~)过几次大家,可能有些同学已经见过或者使用过了.
