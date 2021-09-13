@@ -2,9 +2,9 @@
 title: Room
 ---
 
-# Class
+## Class
 
-## Room
+### Room
 
 The `Room` ia a global class.All wechat rooms\(groups\) will be encapsulated as a Room.
 
@@ -227,7 +227,7 @@ if (room) {
 The method deletes a contact from the room .It works only when the bot is the owner of the room.Check the below example for implementation.
 
 > Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
-
+>
 > see [Web version of WeChat closed group interface](https://github.com/wechaty/wechaty/issues/1441)
 
 | Param | Type |
@@ -266,7 +266,6 @@ await room.quit()
 ### room.topic\(\[newTopic\]\) ⇒ `Promise <void | string>`
 
 The method sets or gets topic from the room.Check the below example for implementation.
-
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
@@ -491,8 +490,6 @@ const owner = room.avatar()
 
 The method creates a new room.Check the below example for implementation.
 
-
-
 | Param | Type |
 | :--- | :--- |
 | contactList | `Array` |
@@ -546,6 +543,7 @@ await bot.start()
 const roomList = await bot.Room.find()
 const roomList = await bot.Room.find({topic: 'wechaty'})
 ```
+
 ## Typedefs
 
 There are many Typedefs supported by `Room` and details about each of the typedefs are given below :
