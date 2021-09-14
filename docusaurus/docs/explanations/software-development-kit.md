@@ -1,5 +1,5 @@
 ---
-title: Software Development Kit, Robotic Process Automation, and Conversational Interfaces
+title: SDK, RPA, and Conversational Interfaces
 ---
 
 ## What is an SDK
