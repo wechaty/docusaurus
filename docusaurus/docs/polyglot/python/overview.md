@@ -35,7 +35,7 @@ make bot
 As the basic ecosystem of Wechaty is in TypeScript, we only need to translate it to Python. There is a hundred (100) lines of code in class named Image in charge of downloading the WeChat image to different sizes.
 Below are the links to `Image` class for both TypeScript and Python for better understanding of the code and the translation.
 
-* TypeScript: <https://github.com/wechaty/wechaty/blob/master/src/user/image.ts>
+* TypeScript: <https://github.com/wechaty/wechaty/blob/main/src/user/image.ts>
 * Python: <https://github.com/wechaty/python-wechaty/blob/master/src/wechaty/user/image.py>
 
 ## History

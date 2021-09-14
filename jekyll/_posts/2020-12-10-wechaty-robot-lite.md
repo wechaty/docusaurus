@@ -1000,7 +1000,7 @@ io.sockets.on('connection', function (socket) {});
 * 关于socketio，和nodejs结合在一起，体验nodejs的异步非阻塞，简直要起了飞；
 * 环境
   * 系统：win7、centos7.6成功运行
-  * nodejs版本：windows下调试：v12.16.2；centos：v10.16.0；（wechaty对node版本有要求，不同协议版本最低要求不一致，大家自行参考开源说明和官方文档）
+  * nodejs版本：windows下调试：v16.16.2；centos：v10.16.0；（wechaty对node版本有要求，不同协议版本最低要求不一致，大家自行参考开源说明和官方文档）
 * 代码
   * 主要是抽空码出来的，没有太多时间优化
   * 有一些业务代码写好了，但是并没有接入使用，欢迎大家补充
