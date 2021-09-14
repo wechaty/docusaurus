@@ -325,7 +325,7 @@ const references = {
 }
 
 const explanations = {
-  label: 'explanations',
+  label: 'Explanations',
   items: [
     'explanations/overview',
     'explanations/conversational',
