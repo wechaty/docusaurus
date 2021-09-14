@@ -204,7 +204,7 @@
   overflow-x: hidden;
 }
 
-#number100 {
+#projectsNumber {
   height: 60px;
   font-family: "Montserrat";
   font-size: 40px;
@@ -221,7 +221,7 @@
   letter-spacing: 0.1em;
 }
 
-#number100Two {
+#contributorsNumber {
   height: 60px;
   width: 150px;
   font-family: "Montserrat";
@@ -254,7 +254,7 @@
   overflow-x: hidden;
 }
 
-#number10000 {
+#starsNumber {
   height: 60px;
   font-family: "Montserrat";
   font-size: 40px;
@@ -270,7 +270,7 @@
   letter-spacing: 0.1em;
 }
 
-#number9600 {
+#developerFansNumber {
   height: 60px;
   width: 250px;
   font-family: "Montserrat";
@@ -463,12 +463,12 @@
     padding: 0 0 0 10%;
   }
 
-  #number100 {
+  #projectsNumber {
     font-size: 25px;
     margin-left: 5%;
   }
 
-  #number100Two {
+  #contributorsNumber {
     font-size: 25px;
     margin-right: -10%;
   }
@@ -478,11 +478,11 @@
     width: 100%;
   }
 
-  #number10000 {
+  #starsNumber {
     font-size: 25px;
   }
 
-  #number9600 {
+  #developerFansNumber {
     width: 175px;
     font-size: 25px;
     margin-right: -12%;
@@ -572,22 +572,22 @@
     line-height: 30px;
   }
 
-  #number100 {
+  #projectsNumber {
     font-size: 30px;
     margin-bottom: 35px;
   }
 
-  #number100Two {
+  #contributorsNumber {
     font-size: 30px;
     margin-right: 30%;
     margin-bottom: 35px;
   }
 
-  #number10000 {
+  #starsNumber {
     font-size: 30px;
   }
 
-  #number9600 {
+  #developerFansNumber {
     font-size: 30px;
     margin-right: 0%;
   }

@@ -61,12 +61,12 @@ const FeaturesSection = () => {
               <a target="_blank"> 6 lines of code.</a>
             </p>
             <div id="numberWrapperOne">
-              <p id="number100">100&#43;</p>
-              <p id="number100Two">100&#43;</p>
+              <p id="projectsNumber">100&#43;</p>
+              <p id="contributorsNumber">100&#43;</p>
             </div>
             <div id="numberWrapperTwo">
-              <p id="number10000">10,000&#43;</p>
-              <p id="number9600">9,600&#43;</p>
+              <p id="starsNumber">10,000&#43;</p>
+              <p id="developerFansNumber">9,600&#43;</p>
             </div>
             <p id="stars">stars</p>
             <p id="contributors">Contributors</p>
