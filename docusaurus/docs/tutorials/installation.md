@@ -2,13 +2,13 @@
 title: 'Installation'
 ---
 
-Before diving into the tutorials, you will need to install a few build tools. This guide will show you complete installation process of the minimum tools required to start building your own bots. If you have already installed `Node.js` **16.0** or higher, then go to [Install Wechaty](#install-wechaty).
+Before diving into the tutorials, you will need to install a few build tools. This guide will show you complete installation process of the minimum tools required to start building your own bots. If you have already installed `Node.js` version **16** or higher, then go to [Install Wechaty](#install-wechaty).
 
 ## Install Node.js
 
 Wechaty being a JavaScript based SDK, it requires a JavaScript runtime environment provided by [Node.js](https://nodejs.org/), and [npm](https://www.npmjs.com/) which is a package manager for JavaScript. You don't need to download `npm` separately, as you install `Node.js` you automatically get `npm` installed on your system.
 
-> Wechaty requires `Node.js` version higher than **16.0**
+> Wechaty requires `Node.js` version higher than **16**
 
 You can install the latest version of `Node.js` on your system by following the links below as per the operating system (OS) you are running:
 
@@ -34,7 +34,11 @@ You can check your `npm` version by using:
 npm -v
 ```
 
+<<<<<<< HEAD
 If your `Node.js` version is not **16.0** or greater, you can update `Node.js` and `npm` to their latest stable version by following instructions in the links below:
+=======
+If your `Node.js` version is not **16** or greater, you can update `Node.js` and `npm` to their latest stable version by following instructions in the links below:
+>>>>>>> 4bbd99cb1dfa61a764bb25a8805a455c0dc695d1
 
 * [Get the latest stable version of node](https://docs.npmjs.com/try-the-latest-stable-version-of-node)
 * [Get the latest stable version of npm](https://docs.npmjs.com/try-the-latest-stable-version-of-npm)
