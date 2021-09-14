@@ -22,7 +22,7 @@ For running Ding Dong Bot, you can setup your own server for running locally. Ju
 
 ## Try out the bot
 
-[![Edit wechaty-getting-started](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/sbis04/wechaty-ding-dong/tree/main/?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit wechaty-ding-dong-bot](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/wechaty/wechaty-getting-started/tree/main/examples/third-parties/codesandbox?hidenavigation=1&module=%2Fding-dong-bot.ts&theme=dark)
 
 You can try out Ding Dong Bot using this interactive CodeSandbox.
 
@@ -30,13 +30,13 @@ Just scan the generated QR code with **WeChat** app and you are ready to go.
 
 <iframe
   class="codesandbox"
-  src="https://codesandbox.io/embed/github/sbis04/wechaty-ding-dong/tree/main?fontsize=12&hidenavigation=1&module=%2Fding-dong-bot.ts&theme=dark"
+  src="https://codesandbox.io/embed/github/wechaty/wechaty-getting-started/tree/main/examples/third-parties/codesandbox?fontsize=12&hidenavigation=1&module=%2Fding-dong-bot.ts&theme=dark"
   sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
 ></iframe>
 
 ## Requirements
 
-1. [Node.js](https://nodejs.dev/) v12+
+1. [Node.js](https://nodejs.dev/) v16+
 1. [Wechaty Puppet Service TOKEN](https://wechaty.js.org/docs/puppet-services/) (if you want to use RPA protocols other than Web)
 
 ## Usage
@@ -173,7 +173,7 @@ make bot
 
 > There are various **Wechaty puppets** available, you can know more about them [here](https://github.com/wechaty/wechaty-getting-started#working-with-different-puppets).
 
-This will generate a QR code. Scan it using Wechat or WhatsApp depending upon the puppet used. 
+This will generate a QR code. Scan it using Wechat or WhatsApp depending upon the puppet used.
 
 You are ready to play with the bot.
 
@@ -234,7 +234,7 @@ npm install wechaty
 npm install qrcode-terminal
 ```
 
-You will also need to add dependencies for using any [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/) 
+You will also need to add dependencies for using any [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/)
 which helps to integrate Wechaty with various **instant messaging (IM) systems** (such as WeChat, Whatsapp, and Gitter):
 
 1. If you want to use **[WhatsApp](https://www.whatsapp.com/)**, install `wechaty-puppet-whatsapp`:
@@ -293,7 +293,7 @@ import {
   Wechaty,
   log,
 }from 'wechaty'
-  
+
 import { generate } from 'qrcode-terminal'
 
 require('dotenv').config()
@@ -323,7 +323,7 @@ function onScan (qrcode: string, status: ScanStatus) {
 ```
 **1.**  If `status` is **Waiting** or **Timeout** then function `onScan` will generate qrcode
 
-**2.**  `qrcodeImageUrl` is used for reading the generated `qrcode`. `encodeURIComponent(qrcode)` encodes a URI (string that refers to a resource ie. qrcode) by replacing each instance of certain characters by UTF-8 encoding of characters. 
+**2.**  `qrcodeImageUrl` is used for reading the generated `qrcode`. `encodeURIComponent(qrcode)` encodes a URI (string that refers to a resource ie. qrcode) by replacing each instance of certain characters by UTF-8 encoding of characters.
 
 **3.**  After reading the `qrcode` it return `ScanStatus`.
 
