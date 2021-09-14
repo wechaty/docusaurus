@@ -34,11 +34,7 @@ You can check your `npm` version by using:
 npm -v
 ```
 
-<<<<<<< HEAD
-If your `Node.js` version is not **16.0** or greater, you can update `Node.js` and `npm` to their latest stable version by following instructions in the links below:
-=======
 If your `Node.js` version is not **16** or greater, you can update `Node.js` and `npm` to their latest stable version by following instructions in the links below:
->>>>>>> 4bbd99cb1dfa61a764bb25a8805a455c0dc695d1
 
 * [Get the latest stable version of node](https://docs.npmjs.com/try-the-latest-stable-version-of-node)
 * [Get the latest stable version of npm](https://docs.npmjs.com/try-the-latest-stable-version-of-npm)
