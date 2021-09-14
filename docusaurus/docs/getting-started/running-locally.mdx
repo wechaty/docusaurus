@@ -33,7 +33,7 @@ Just scan the generated QR code with **WeChat** app and you are ready to go.
 
 ## Requirements
 
-1. [Node.js](https://nodejs.dev/) v12+
+1. [Node.js](https://nodejs.dev/) v16+
 1. [Wechaty Puppet Service TOKEN](https://wechaty.js.org/docs/puppet-services/) (if you want to use RPA protocols other than Web)
 
 ## Usage
@@ -170,7 +170,7 @@ make bot
 
 > There are various **Wechaty puppets** available, you can know more about them [here](https://github.com/wechaty/wechaty-getting-started#working-with-different-puppets).
 
-This will generate a QR code. Scan it using Wechat or WhatsApp depending upon the puppet used. 
+This will generate a QR code. Scan it using Wechat or WhatsApp depending upon the puppet used.
 
 You are ready to play with the bot.
 
@@ -231,7 +231,7 @@ npm install wechaty
 npm install qrcode-terminal
 ```
 
-You will also need to add dependencies for using any [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/) 
+You will also need to add dependencies for using any [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/)
 which helps to integrate Wechaty with various **instant messaging (IM) systems** (such as WeChat, Whatsapp, and Gitter):
 
 You can install wechaty-puppet as you like when using wechaty:
@@ -271,7 +271,7 @@ import {
   Wechaty,
   log,
 }from 'wechaty'
-  
+
 import { generate } from 'qrcode-terminal'
 
 require('dotenv').config()
@@ -301,7 +301,7 @@ function onScan (qrcode: string, status: ScanStatus) {
 ```
 **1.**  If `status` is **Waiting** or **Timeout** then function `onScan` will generate qrcode
 
-**2.**  `qrcodeImageUrl` is used for reading the generated `qrcode`. `encodeURIComponent(qrcode)` encodes a URI (string that refers to a resource ie. qrcode) by replacing each instance of certain characters by UTF-8 encoding of characters. 
+**2.**  `qrcodeImageUrl` is used for reading the generated `qrcode`. `encodeURIComponent(qrcode)` encodes a URI (string that refers to a resource ie. qrcode) by replacing each instance of certain characters by UTF-8 encoding of characters.
 
 **3.**  After reading the `qrcode` it return `ScanStatus`.
 
@@ -421,7 +421,7 @@ Scan it using your **WeChat/WhatsApp** as per the puppet you have selected, and 
 
 ![bot-demo](../../static/img/docs/getting-started/running-locally/bot-demo.png)
 
-## Conclusion 
+## Conclusion
 
 You have learnt to make a ding dong bot.
 
