@@ -307,6 +307,7 @@ const howtos = {
     'howto/friendship',
     'howto/file-box',
     'howto/testing',
+    'howto/docker',
   ],
 }
 

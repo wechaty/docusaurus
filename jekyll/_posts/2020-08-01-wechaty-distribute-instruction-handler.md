@@ -46,7 +46,7 @@ wechaty-plugin-xyao 插件可以让你的 wechaty bot 具备以分布式模块�
 
 ## Requirements
 
-1. Node.js v12+
+1. Node.js v16+
 1. Wechaty v0.40+
 1. This Plugin
 1. Redis server

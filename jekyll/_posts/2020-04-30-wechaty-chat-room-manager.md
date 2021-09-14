@@ -54,9 +54,9 @@ image: /assets/2020/room-manager/bio-photo.png
 - Linux （centos7）
 
 ```sh
-wget https://npm.taobao.org/mirrors/node/v12.2.0/node-v12.2.0-linux-x64.tar.xz
-tar -xvf node-v12.2.0-linux-x64.tar.xz
-mv node-v12.2.0-linux-x64 /opt/node
+wget https://npm.taobao.org/mirrors/node/v16.2.0/node-v16.2.0-linux-x64.tar.xz
+tar -xvf node-v16.2.0-linux-x64.tar.xz
+mv node-v16.2.0-linux-x64 /opt/node
 tee /etc/profile << EOF
   export NODE_HOME=/opt/node
   export PATH=$NODE_HOME/bin:$PATH
