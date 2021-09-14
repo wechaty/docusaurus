@@ -335,7 +335,7 @@ const explanations = {
     'explanations/lifecycle',
     'explanations/alternatives',
     'explanations/glossary',
-    'explanations/devops-tools',
+    'explanations/devops-toolset',
     'explanations/testing',
     'explanations/faq',
     'explanations/troubleshooting',
