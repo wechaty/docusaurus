@@ -41,7 +41,7 @@
   margin-top: 220px;
 }
 
-#sponsorsFirstSection {
+#sponsorsFirstSection { /* Styling of the first sub sponsors section (microsoft, tencent, juzi and gsod) */ 
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,7 +56,7 @@
   overflow-y: hidden;
 }
 
-#sponsorsSecondSection {
+#sponsorsSecondSection { /* Styling of the second sub sponsors section (tensorflow, iscas and sujitech) */
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
