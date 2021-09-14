@@ -47,7 +47,7 @@ const config = {
             { label: 'Tutorials',     to: 'docs/tutorials/' },
             { label: 'How-to Guides', to: 'docs/howto/' },
             { label: 'References',    to: 'docs/references/' },
-            { label: 'explanations', to: 'docs/explanations/' },
+            { label: 'Explanations', to: 'docs/explanations/' },
           ],
         },
         { label: 'GitHub',          href: 'https://github.com/wechaty/wechaty#readme',   position: 'right' },
