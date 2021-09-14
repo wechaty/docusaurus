@@ -7,7 +7,7 @@ We have a Wechaty [starter repository](https://github.com/wechaty/wechaty-gettin
 
 ## Requirements
 
-1. Node.js v12
+1. Node.js v16
 1. `sudo apt-get install build-essential && sudo snap install shellcheck`
 
 ## The World's Shortest ChatBot Code: 6 lines of JavaScript
