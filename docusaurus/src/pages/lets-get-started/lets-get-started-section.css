@@ -60,7 +60,7 @@
   position: relative;
 }
 
-#contentWrapperOne {
+#tutorialsContentWrapper {
   background-color: honeydew;
   border-radius: 50px;
   padding: 40px 40px 40px;
@@ -125,7 +125,7 @@
   width: 325px;
 }
 
-#takeMeThereLinkButtonTwo {
+#howToGuidesTakeMeThereLinkButton {
   margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,7 +135,7 @@
   align-items: center;
 }
 
-#takeMeThereLinkButtonThree {
+#refrencesTakeMeThereLinkButton {
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,7 +181,7 @@
   height: 200px;
 }
 
-#contentWrapperTwo {
+#howToGuidesContentWrapper {
   background-color: honeydew;
   border-radius: 50px;
   padding: 40px 40px 40px;
@@ -228,7 +228,7 @@
   justify-content: center;
 }
 
-#contentWrapperThree {
+#refrencesContentWrapper {
   background-color: honeydew;
   border-radius: 50px;
   padding: 40px 40px 40px;
@@ -301,7 +301,7 @@
     font-size: 20px;
   }
 
-  #contentWrapperOne {
+  #tutorialsContentWrapper {
     padding: 50px 40px 30px;
     margin: 0px 6% 6% 6%;
     border-radius: 60px;
@@ -320,12 +320,12 @@
     margin-top: 10px;
   }
 
-  #takeMeThereLinkButtonTwo {
+  #howToGuidesTakeMeThereLinkButton {
     margin-top: 0px;
     padding-bottom: 25px;
   }
 
-  #takeMeThereLinkButtonThree {
+  #refrencesTakeMeThereLinkButton {
     margin-top: 0px;
     padding-bottom: 25px;
   }
@@ -335,7 +335,7 @@
     height: 150px;
   }
 
-  #contentWrapperTwo {
+  #howToGuidesContentWrapper {
     padding: 40px 40px 0px;
     margin: 0px 6% 6% 6%;
     border-radius: 60px;
@@ -351,7 +351,7 @@
     margin-bottom: 0px;
   }
 
-  #contentWrapperThree {
+  #refrencesContentWrapper {
     padding: 40px 40px 0px;
     margin: 0px 6% 6% 6%;
     border-radius: 60px;
@@ -402,7 +402,7 @@
     width: 275px;
   }
 
-  #contentWrapperOne {
+  #tutorialsContentWrapper {
     padding: 30px 20px 20px;
     margin-left: 40px;
   }
@@ -419,11 +419,11 @@
     font-size: 14px;
   }
 
-  #takeMeThereLinkButtonTwo {
+  #howToGuidesTakeMeThereLinkButton {
     margin-top: 15px;
   }
 
-  #takeMeThereLinkButtonThree {
+  #refrencesTakeMeThereLinkButton {
     margin-top: 15px;
   }
 
@@ -432,7 +432,7 @@
     height: 150px;
   }
 
-  #contentWrapperTwo {
+  #howToGuidesContentWrapper {
     padding: 30px 20px 20px;
     margin-left: 10px;
   }
@@ -446,7 +446,7 @@
     font-size: 18px;
   }
 
-  #contentWrapperThree {
+  #refrencesContentWrapper {
     padding: 30px 20px 20px;
     margin-right: 40px;
     margin-left: 10px;

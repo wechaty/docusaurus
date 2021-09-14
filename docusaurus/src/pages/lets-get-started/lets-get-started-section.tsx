@@ -11,7 +11,7 @@ const LetsGetStarted = () => {
         </div>
         <div id="developersPortalSectionWrapper">
           <div id="tutorialsWrapper">
-            <div id="contentWrapperOne">
+            <div id="tutorialsContentWrapper">
               <img
                 alt="Web Tutorials Image"
                 id="tutorialsImage"
@@ -23,7 +23,7 @@ const LetsGetStarted = () => {
                 development in general, we recommend you start from the
                 tutorials.
               </p>
-              <div id="takeMeThereLinkButtonOne">
+              <div id="tutorialsTakeMeThereLinkButton">
                 <a
                   href="https://wechaty.js.org/docs/tutorials/"
                   id="takeMeThereLink"
@@ -33,7 +33,7 @@ const LetsGetStarted = () => {
               </div>
             </div>
           </div>
-          <div id="contentWrapperTwo">
+          <div id="howToGuidesContentWrapper">
             <img
               alt="Question Mark on a piece of Code"
               id="howToGuidesImage"
@@ -44,13 +44,13 @@ const LetsGetStarted = () => {
               They are more advanced than tutorials and pre requisite knowledge
               is required of how Wechaty works.
             </p>
-            <div id="takeMeThereLinkButtonTwo">
+            <div id="howToGuidesTakeMeThereLinkButton">
               <a href="https://wechaty.js.org/docs/howto/" id="takeMeThereLink">
                 Take me there
               </a>
             </div>
           </div>
-          <div id="contentWrapperThree">
+          <div id="refrencesContentWrapper">
             <img
               src="references.webp"
               id="referencesImage"
@@ -61,7 +61,7 @@ const LetsGetStarted = () => {
               References contain technical reference for APIs and other aspects
               of Wechaty&#039;s machinery.
             </p>
-            <div id="takeMeThereLinkButtonThree">
+            <div id="refrencesTakeMeThereLinkButton">
               <a
                 href="https://wechaty.js.org/docs/references/"
                 id="takeMeThereLink"
