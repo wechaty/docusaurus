@@ -47,9 +47,9 @@ Wechaty是对接微信的工具，这个工具在今天已经很成熟，也有�
 首先`bot-worker.js`的实现代码类似这样：
 
 ```JavaScript
-const process = require('process')
-const { Wechaty } = require('Wechaty')
-const { parentPort } = require('worker_threads');
+import process  from 'process'
+import { Wechaty }  from 'Wechaty'
+import { parentPort }  from 'worker_threads';
 
 // bot实例
 const bot = Wechaty.instance({profile: 'Wechaty-bot'}) // Global Instance
@@ -177,12 +177,12 @@ bot
 主线程代码
 
 ```JavaScript
-const process = require('process')
-const Koa = require('koa')
-const Router = require('koa-trie-router')
-const bodyParser = require('koa-bodyparser')
-const { Worker } = require('worker_threads')
-const _ = require('lodash')
+import process  from 'process'
+import Koa  from 'koa'
+import Router  from 'koa-trie-router'
+import bodyParser  from 'koa-bodyparser'
+import { Worker }  from 'worker_threads'
+import _  from 'lodash'
 
 
 // 保存bot状态，以便被client轮询

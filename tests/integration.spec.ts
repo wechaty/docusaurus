@@ -4,7 +4,7 @@ import test  from 'tstest'
 
 import { prNumberToTitle } from '../src/pr-number-to-title'
 
-const isPR = require('is-pr')
+import isPR  from 'is-pr'
 
 test.skip('pull request title', async t => {
   if (isPR) {
