@@ -1,6 +1,6 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test  from 'tstest'
+import { test } from 'tstest'
 
 import fs   from 'fs'
 import path from 'path'
@@ -10,7 +10,7 @@ import globCB         from 'glob'
 
 import {
   JEKYLL_FOLDER,
-}                             from '../../src/jekyll/mod'
+}                             from '../../src/jekyll/mod.js'
 
 const glob = util.promisify(globCB)
 
@@ -44,7 +44,7 @@ test('{% include iframe.html src=... %} should exist in assets/ folder', async t
 
     let matches = REGEXP.exec(content)
     while (matches != null) {
-      fileList.push(matches[1])
+      fileList.push(matches[1]!)
       matches = REGEXP.exec(content)
     }
 

@@ -5,7 +5,7 @@ const getFrontmatterCategoryList = (filename: string): string[] => {
   const content = fs.readFileSync(filename)
   const front   = loadFront(content)
 
-  let categoryList  = front.categories
+  let categoryList  = front['categories']
   if (!Array.isArray(categoryList)) {
     categoryList = categoryList
       ? [categoryList]

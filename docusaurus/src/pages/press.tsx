@@ -6,7 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './styles.module.css'
 
-import { DocusaurusConfig } from '@docusaurus/types'
+import type { DocusaurusConfig } from '@docusaurus/types'
 
 const features = [
   {

@@ -1,6 +1,6 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test  from 'tstest'
+import { test } from 'tstest'
 
 import fs   from 'fs'
 import path from 'path'
@@ -14,7 +14,7 @@ import {
   isUrlExist,
   getAllImageList,
   JEKYLL_FOLDER,
-}                             from '../../src/jekyll/mod'
+}                             from '../../src/jekyll/mod.js'
 
 const not = (func: (...args: any[]) => boolean) => (...args: any) => !func(...args)
 

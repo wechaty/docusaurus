@@ -1,6 +1,6 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test   from 'tstest'
+import { test } from 'tstest'
 
 import path         from 'path'
 import util         from 'util'
@@ -18,11 +18,11 @@ import {
   isUrlExist,
   getChangedFileList,
   contributorFilenameToUsername,
-}                                 from '../../src/jekyll/mod'
+}                                 from '../../src/jekyll/mod.js'
 
 import {
   stripRepoRoot,
-}                             from '../../src/repo-root'
+}                             from '../../src/repo-root.js'
 
 const glob = util.promisify(globCB)
 
@@ -32,7 +32,7 @@ test('front matter key `author` should has a value exist in jekyll/_contributors
   for (const file of postsFileList) {
     const content = fs.readFileSync(file)
     const front = loadFront(content)
-    const author = front.author
+    const author = front['author']
     if (!author) {
       t.fail(`"${stripRepoRoot(file)}" author should set to ${author}`)
     }
@@ -70,25 +70,25 @@ test('developer project avatar should be put under assets/contributors/ folder',
     const content = fs.readFileSync(file)
     const front   = loadFront(content)
 
-    if (!front.avatar) {
-      t.fail(`"${stripRepoRoot(file)}" should have avatar("${front.avatar}")`)
+    if (!front['avatar']) {
+      t.fail(`"${stripRepoRoot(file)}" should have avatar("${front['avatar']}")`)
     }
 
-    const startWithSlash = /^\//.test(front.avatar)
+    const startWithSlash = /^\//.test(front['avatar'])
     if (!startWithSlash) {
-      t.fail(`"${front.avatar}" should start with '/'`)
+      t.fail(`"${front['avatar']}" should start with '/'`)
     }
 
     const userName = contributorFilenameToUsername(file)
     const userNameRe = new RegExp(`/contributors/${userName}/`)
-    if (!userNameRe.test(front.avatar)) {
-      t.fail(`avatar "${front.avatar}" must be saved to folder "assets/contributors/${userName}"`)
+    if (!userNameRe.test(front['avatar'])) {
+      t.fail(`avatar "${front['avatar']}" must be saved to folder "assets/contributors/${userName}"`)
     }
 
-    if (/^http/i.test(front.avatar)) {
+    if (/^http/i.test(front['avatar'])) {
       t.fail(`${stripRepoRoot(file)} should put avatar files to local repo instead of using URL`)
     } else {
-      const filename = path.join(JEKYLL_FOLDER.root, front.avatar)
+      const filename = path.join(JEKYLL_FOLDER.root, front['avatar'])
       const good = fs.existsSync(filename)
       if (!good) {
         t.fail(`${stripRepoRoot(filename)} should exist`)

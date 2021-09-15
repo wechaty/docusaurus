@@ -1,6 +1,6 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test  from 'tstest'
+import { test } from 'tstest'
 
 import util from 'util'
 import path from 'path'
@@ -13,11 +13,11 @@ import {
   getYearMonth,
   isNotWhiteListedRemoteUrl,
   JEKYLL_FOLDER,
-}                             from '../../src/jekyll/mod'
+}                             from '../../src/jekyll/mod.js'
 
 import {
   stripRepoRoot,
-}                             from '../../src/repo-root'
+}                             from '../../src/repo-root.js'
 
 const glob = util.promisify(globCB)
 
@@ -30,7 +30,7 @@ test('all asset files should be put into folder `/assets/YYYY/MM-slug-...-slug/`
     /**
      * Huan(202101): do not check paths before 2021
      */
-    if (parseInt(year) < 2021) {
+    if (parseInt(year || '0') < 2021) {
       continue
     }
 
@@ -48,7 +48,7 @@ test('all asset files should be put into folder `/assets/YYYY/MM-slug-...-slug/`
     const slugs = getSlugs(filename)
     const expectedFolder = path.join(
       'assets',
-      year,
+      year || 'UNKNOWN_YEAR',
       `${month}-${slugs}`,
     )
 
@@ -68,6 +68,6 @@ test('all asset files should be put into folder `/assets/YYYY/MM-slug-...-slug/`
     if (!matches) {
       throw new Error(`${filename} parse slugs fail`)
     }
-    return matches[1]
+    return matches[1]!
   }
 })
