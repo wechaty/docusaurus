@@ -40,7 +40,7 @@ Just scan the generated QR code with **WeChat** app, and you are ready to play w
 
 ## Requirements
 
-1. [Node.js](https://nodejs.org/en/download) v12+
+1. [Node.js](https://nodejs.org/en/download) v16+
 2. [Wechaty](https://github.com/wechaty/wechaty) v0.40+
 3. [WechatyVorpal](https://github.com/wechaty/wechaty-vorpal) v0.2+
 
@@ -254,9 +254,9 @@ Now, you have to define some functions that will help you to handle the differen
   Function used for generating **QR code** for the puppet specified, and display it on the console.
 
   Follow the steps below:
-  
+
   1. Check for the `status` of the QR code scanning process:
-  
+
      ```ts
      function onScan(qrcode: string, status: ScanStatus) {
          if (status === ScanStatus.Waiting || status === ScanStatus.Timeout) {
@@ -266,22 +266,22 @@ Now, you have to define some functions that will help you to handle the differen
          }
      }
      ```
-  
+
      If the **status** is `Waiting` or `Timeout` then proceed with the QR code generation, otherwise print the scan status on console.
-  
+
   2. Generate QR code:
-  
+
      ```ts
      generate(qrcode, { small: true })
-  
+
      const qrcodeImageUrl = [
        'https://wechaty.js.org/qrcode/',
        encodeURIComponent(qrcode),
      ].join('')
      ```
-  
+
   3. Display QR code on console along with the status:
-  
+
      ```ts
      log.info('VorpalBot:', 'onScan: %s(%s) - %s', ScanStatus[status], status, qrcodeImageUrl)
      ```

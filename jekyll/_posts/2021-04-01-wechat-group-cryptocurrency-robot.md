@@ -16,7 +16,7 @@ image: /assets/2021/04-wechat-group-cryptocurrency-robot/header.jpg
 
 ## 部署环境
 
-Node.js12+ (目前不要上15的车)
+Node.js16+ (目前不要上15的车)
 
 TypeScript
 
