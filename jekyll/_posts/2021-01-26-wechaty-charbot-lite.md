@@ -43,7 +43,7 @@ Wechaty.instance()
 1. ### 安装Node.js
 
    node官网：<https://nodejs.org/zh-cn/>
-   Wechaty 要求Node.js版本10或以上，本环境使用的版本是nodev12.20.0 npm6.14.8。
+   Wechaty 要求Node.js版本10或以上，本环境使用的版本是nodev16.20.0 npm6.14.8。
 
 2. ### 运行Wechaty
 
