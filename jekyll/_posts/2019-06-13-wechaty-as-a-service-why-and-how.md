@@ -182,7 +182,7 @@ import Koa  from 'koa'
 import Router  from 'koa-trie-router'
 import bodyParser  from 'koa-bodyparser'
 import { Worker }  from 'worker_threads'
-import _  from 'lodash'
+import lodash  from 'lodash'
 
 
 // 保存bot状态，以便被client轮询
@@ -296,14 +296,14 @@ router
         }
         return
     }
-    if (!_.isString(ctx.request.body.name) && !_.isString(ctx.request.body.topic)) {
+    if (!lodash.isString(ctx.request.body.name) && !lodash.isString(ctx.request.body.topic)) {
         ctx.body = {
             ok: false,
             error: 'Invalid name or topic, must have one of them'
         }
         return
     }
-    if (!_.isString(ctx.request.body.text)) {
+    if (!lodash.isString(ctx.request.body.text)) {
         ctx.body = {
             ok: false,
             error: 'Invalid text'

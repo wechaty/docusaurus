@@ -6,7 +6,7 @@ import util   from 'util'
 import fs     from 'fs'
 import globCB from 'glob'
 
-import { loadFront } from 'yaml-front-matter'
+import yfm from 'yaml-front-matter'
 
 import {
   getYearMonth,
@@ -36,7 +36,7 @@ test('front matter key `image` must has a value to define the teaser image', asy
     }
 
     const content = fs.readFileSync(file)
-    const front = loadFront(content)
+    const front = yfm.loadFront(content)
     const image = front['image']
 
     if (!image) {

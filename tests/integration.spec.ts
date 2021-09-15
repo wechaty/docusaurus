@@ -4,10 +4,11 @@ import { test } from 'tstest'
 
 import { prNumberToTitle } from '../src/pr-number-to-title.js'
 
-import isPR  from 'is-pr'
+import '../src/config.js'
+import ciInfo  from 'ci-info'
 
 test.skip('pull request title', async t => {
-  if (isPR) {
+  if (ciInfo.isPR) {
     const prNum = parseInt(process.env['TRAVIS_PULL_REQUEST'] as string)
     const prTitle = await prNumberToTitle('bupt', 'ai-ml.club', prNum)
 

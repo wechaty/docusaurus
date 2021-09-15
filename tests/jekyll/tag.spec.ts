@@ -6,7 +6,7 @@ import util   from 'util'
 import fs     from 'fs'
 import globCB from 'glob'
 
-import { loadFront } from 'yaml-front-matter'
+import yfm from 'yaml-front-matter'
 
 import {
   JEKYLL_FOLDER,
@@ -26,7 +26,7 @@ const getFileToTagsMap = async () => {
 
   for (const file of postsFileList) {
     const content = fs.readFileSync(file)
-    const front = loadFront(content)
+    const front = yfm.loadFront(content)
 
     let tagList  = front['tags']
     if (!Array.isArray(tagList)) {

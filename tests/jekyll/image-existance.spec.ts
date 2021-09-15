@@ -4,10 +4,7 @@ import { test } from 'tstest'
 
 import fs   from 'fs'
 import path from 'path'
-import {
-  chunk,
-  shuffle,
-}               from 'lodash'
+import lodash   from 'lodash'
 
 import {
   isWhiteListedRemoteUrl,
@@ -45,7 +42,7 @@ test('all remote images linked from the post should be exist.', async t => {
 
   // console.info('remoteImageList', remoteImageList)
 
-  remoteImageList = shuffle(
+  remoteImageList = lodash.shuffle(
     Array.from(
       new Set(
         remoteImageList
@@ -59,7 +56,7 @@ test('all remote images linked from the post should be exist.', async t => {
 
   const CHUNK_SIZE = 10
 
-  const chunkList = chunk(
+  const chunkList = lodash.chunk(
     remoteImageList,
     CHUNK_SIZE,
   )
