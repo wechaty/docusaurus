@@ -137,8 +137,8 @@ Create config file `tslint.json`
 
 I suggest to refer wechaty config about `tslint` and `tsconfig`
 
-- [tslint config file in wechaty](https://github.com/wechaty/wechaty/blob/master/tslint.json)
-- [tsconfig config file in wechaty](https://github.com/wechaty/wechaty/blob/master/tsconfig.json)
+- [tslint config file in wechaty](https://github.com/wechaty/wechaty/blob/main/tslint.json)
+- [tsconfig config file in wechaty](https://github.com/wechaty/wechaty/blob/main/tsconfig.json)
 
 Here are some tips about wehcaty config:
 
@@ -189,11 +189,11 @@ Search `tslint` and install a plugin for vscode. It is enabled by default.
 
 I also recommend another plugin in vscode: `editorconfig`: EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. see more: [Official EditorConfig Website](https://editorconfig.org/)
 
-You can find wechaty editorconfig in [.editorconfig](https://github.com/wechaty/wechaty/blob/master/.editorconfig)
+You can find wechaty editorconfig in [.editorconfig](https://github.com/wechaty/wechaty/blob/main/.editorconfig)
 
 ## 4. BREAKING CHANGES
 
-After upgrade wechaty, see more in[blog](https://wechaty.github.io/wechaty-new-release-version-0.16/). Although we are trying to minimize API changes, there are some breaking changes. I really suggest you reading [CHANGE LOG](https://github.com/wechaty/wechaty/blob/master/CHANGELOG.md). Also, I list some important changes here:
+After upgrade wechaty, see more in[blog](https://wechaty.github.io/wechaty-new-release-version-0.16/). Although we are trying to minimize API changes, there are some breaking changes. I really suggest you reading [CHANGE LOG](https://github.com/wechaty/wechaty/blob/main/CHANGELOG.md). Also, I list some important changes here:
 
 ### bot.init() change to  bot.start()
 
@@ -233,7 +233,7 @@ wechaty.on('friendship', request => {
 
 Related link:
 
-- [friend-bot.ts](https://github.com/wechaty/wechaty/blob/master/examples/friend-bot.ts)
+- [friend-bot.ts](https://github.com/wechaty/wechaty/blob/main/examples/friend-bot.ts)
 - [BREAKING CHANGE: v0.16 on('friend`) arguments changed!](https://github.com/wechaty/wechaty/issues/1196)
 - [BREAKING CHANGES v0.16: FriendRequest class will be replaced with Friendship](https://github.com/wechaty/wechaty/issues/1312)
 
