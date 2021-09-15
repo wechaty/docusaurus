@@ -35,7 +35,7 @@ Numbering rule:
 
 ![Devops Toolset](../../static/img/docs/explanations/devops-toolset/chatie-git-scripts.webp)
 
-This npm package is a wrapper for the [git-scripts](https://github.com/chatie/git-scripts) package. It provides githooks integration for chatie projects. In addition to the features that come with git-scripts package, the `pre-push hook` has been configured to run `npm run lint` followed by `npm version patch` before `git push` for better code quality and version management. You can learn more about `git-scripts` package from its [GitHub home page](https://github.com/nkzawa/git-scripts).
+This npm package is a wrapper for the [git-scripts](https://github.com/chatie/git-scripts) package. It provides githooks integration for chatie projects. In addition to the features that come with git-scripts package, the `pre-push hook` has been configured to run `npm run lint` followed by `npm version patch` before `git push` for better code quality and version management. You can learn more about `git-scripts` package from its [GitHub home page](https://github.com/chatie/git-scripts).
 
 You can add the following to the `package.json` file to configure `@chatie/git-scripts` after installation.
 
