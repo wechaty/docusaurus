@@ -24,7 +24,7 @@
     "build:docusaurus": "npm run docusaurus:build",
     "jekyll:build": "cd jekyll && make build",
     "docusaurus:start": "cd docusaurus && docusaurus start",
-    "docusaurus:build": "cd docusaurus && docusaurus build",
+    "docusaurus:build": "cd docusaurus && npm run build",
     "docusaurus:swizzle": "cd docusaurus && docusaurus swizzle",
     "docusaurus:deploy": "cd docusaurus && docusaurus deploy",
     "docusaurus:serve": "cd docusaurus && docusaurus serve"
