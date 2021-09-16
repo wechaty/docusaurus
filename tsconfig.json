@@ -2,7 +2,7 @@
   "extends": "@chatie/tsconfig",
   "compilerOptions": {
     "outDir": "dist",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "lib": [
       "DOM",
       "ESNext"
