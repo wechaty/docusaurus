@@ -80,13 +80,13 @@ module.exports = {
  * wechaty-puppet-padplus index
  */
 
-const { Wechaty } = require("wechaty")
-const { PuppetPadplus } = require("wechaty-puppet-padplus")
-const config = require("./config")
+import { Wechaty }  from 'wechaty'
+import { PuppetPadplus }  from 'wechaty-puppet-padplus'
+import config  from './config'
 
-const onScan = require("./onScan") // monitor the callback when scanning the QR code
-const onMessage = require("./onMessage") // Message listening callback
-const onFriendShip = require("./onFriendShip") // Friends add monitoring callback
+import onScan  from './onScan' // monitor the callback when scanning the QR code
+import onMessage  from './onMessage' // Message listening callback
+import onFriendShip  from './onFriendShip' // Friends add monitoring callback
 
 // init
 const bot = new Wechaty({
@@ -113,8 +113,8 @@ Friends add monitoring callback
  * Friends add monitoring callback
  */
 
-const { Friendship } = require("wechaty")
-const config = require("./config")
+import { Friendship }  from 'wechaty'
+import config  from './config'
 // Friends add verification message to automatically agree to keywords
 const addFriendKeyword = "cps" //if need more , use array
 
@@ -159,11 +159,11 @@ module.exports = async function onFriendShip(friendship) {
 /**
  * Message listening callback
  */
-const { Message } = require("wechaty")
+import { Message }  from 'wechaty'
 // node-request
-const request = require("request")
-const urlencode = require("urlencode")
-const config = require("./config")
+import request  from 'request'
+import urlencode  from 'urlencode'
+import config  from './config'
 // bot name
 const name = config.name
 
@@ -233,7 +233,7 @@ function requestApi(info) {
 /**
  * monitor the callback when scanning the QR code
  */
-const Qrterminal = require("qrcode-terminal")
+import Qrterminal  from 'qrcode-terminal'
 
 module.exports = function onScan(qrcode, status) {
   Qrterminal.generate(qrcode, { small: true })

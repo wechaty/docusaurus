@@ -41,7 +41,7 @@ Learn all [Wechaty Puppet Providers](puppet-providers/overview.mdx)
 
 You need to set all environment variables which requires from a specific provider.
 
-For example, an additional token will be required by `PadLocal`: `WECHATY_PUPPET_PADLOCAL_TOKEN=puppet_padlocal__TOKEN__`
+For example, an additional token will be required by `PadLocal`: `WECHATY_PUPPET_PADLOCAL_TOKEN=puppet_padlocal${TOKEN}`
 
 :::
 
@@ -215,13 +215,13 @@ set WECHATY_LOG="verbose"
 </TabItem>
 </Tabs>
 
-### 6. Config SSL for Wechaty Puppet Service (optional)
+### 6. Config TLS(SSL) for Wechaty Puppet Service (optional)
 
-From [Wechaty version 0.67](https://github.com/wechaty/wechaty/issues/2231), the Puppet Service will enable SSL by default. (See [wechaty/wechaty-puppet-service#160](https://github.com/wechaty/wechaty-puppet-service/issues/160))
+From [Wechaty version 0.67](https://github.com/wechaty/wechaty/issues/2231), the Puppet Service will enable TLS(SSL) by default. (See [wechaty/wechaty-puppet-service#160](https://github.com/wechaty/wechaty-puppet-service/issues/160))
 
-You can enable/disable the SSL by setting environment variables to fullfil your needs.
+You can enable/disable the TLS by setting environment variables to fullfil your needs.
 
-For example, if you need to provide a Wechaty Puppet Service token without SSL support, then you can set `WECHATY_PUPPET_SERVICE_NO_SSL_UNSAFE_CLIENT=true` to disable SSL.
+For example, if you need to provide a Wechaty Puppet Service token without TLS, then you can set `WECHATY_PUPPET_SERVICE_NO_TLS_INSECURE_SERVER=true` to disable TLS.
 
 <Tabs
   groupId="operating-systems"
@@ -236,24 +236,24 @@ For example, if you need to provide a Wechaty Puppet Service token without SSL s
 <TabItem value="linux">
 
 ```sh
-# set to "true" to disable SSL (not recommanded)
-export WECHATY_PUPPET_SERVICE_NO_SSL_UNSAFE_CLIENT="false"
+# set to "true" to disable TLS (not recommanded)
+export WECHATY_PUPPET_SERVICE_NO_TLS_INSECURE_SERVER="false"
 ```
 
 </TabItem>
 <TabItem value="mac">
 
 ```sh
-# set to "true" to disable SSL (not recommanded)
-export WECHATY_PUPPET_SERVICE_NO_SSL_UNSAFE_CLIENT="false"
+# set to "true" to disable TLS (not recommanded)
+export WECHATY_PUPPET_SERVICE_NO_TLS_INSECURE_SERVER="false"
 ```
 
 </TabItem>
 <TabItem value="windows">
 
 ```sh
-# set to "true" to disable SSL (not recommanded)
-set WECHATY_PUPPET_SERVICE_NO_SSL_UNSAFE_CLIENT="false"
+# set to "true" to disable TLS (not recommanded)
+set WECHATY_PUPPET_SERVICE_NO_TLS_INSECURE_SERVER="false"
 ```
 
 </TabItem>
@@ -272,7 +272,7 @@ docker run -ti \
   -e WECHATY_LOG \
   -e WECHATY_PUPPET \
   -e WECHATY_PUPPET_SERVER_PORT \
-  -e WECHATY_PUPPET_SERVICE_NO_SSL_UNSAFE_CLIENT \
+  -e WECHATY_PUPPET_SERVICE_NO_TLS_INSECURE_SERVER \
   -e WECHATY_TOKEN \
   wechaty/wechaty
 ```
