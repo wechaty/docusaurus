@@ -22,7 +22,7 @@ image: /assets/2021/01-wechaty-charbot-lite/1.png
 ### 全球最短的ChatBot代码：6行JavaScript
 
 ```javascript
-const { Wechaty } = require('wechaty')
+import { Wechaty }  from 'wechaty'
 Wechaty.instance()
   .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrcode
   )}`))
@@ -43,7 +43,7 @@ Wechaty.instance()
 1. ### 安装Node.js
 
    node官网：<https://nodejs.org/zh-cn/>
-   Wechaty 要求Node.js版本10或以上，本环境使用的版本是nodev12.20.0 npm6.14.8。
+   Wechaty 要求Node.js版本10或以上，本环境使用的版本是nodev16.20.0 npm6.14.8。
 
 2. ### 运行Wechaty
 
