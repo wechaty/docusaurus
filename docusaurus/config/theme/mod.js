@@ -1,15 +1,11 @@
+const lightCodeTheme  = require('prism-react-renderer/themes/github')
+const darkCodeTheme   = require('prism-react-renderer/themes/dracula')
+
 const navbar = require('./navbar')
 const footer = require('./footer')
 
+/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 const themeConfig = {
-  image: 'img/wechaty-icon.png',
-  announcementBar: {
-    id: 'support_us', // Any value that will identify this message.
-    content:
-      'We are looking to revamp our website, please comment on <a target="_blank" href="https://github.com/wechaty/wechaty.js.org/issues/440">this issue</a>',
-    backgroundColor: '#fafbfc', // Defaults to `#fff`.
-    textColor: '#091E42', // Defaults to `#000`.
-  },
   navbar,
   footer,
   algolia: {
@@ -31,12 +27,19 @@ const themeConfig = {
       'csharp',
       'rust',
     ],
+    darkTheme : darkCodeTheme,
+    theme     : lightCodeTheme,
   },
   //  Refer to https://docusaurus.io/docs/configuration#site-metadata,
   // and https://docusaurus.io/docs/api/themes/configuration#metadatas
   // know more about Metadata configuration.
   image: 'img/wechaty-logo.svg',
-  metadatas: [{name: 'twitter:card', content: 'summary_large_image'}, {name: 'twitter:image', content: 'img/wechaty-icon.png'}, {name: 'twitter:title', content: 'Wechaty'}, {name: 'twitter:description', content: 'Wechaty Official Website for News, Blogs, Contributor Profiles, and Documentations.'}],
+  metadatas: [
+    {name: 'twitter:card', content: 'summary_large_image'},
+    {name: 'twitter:image', content: 'img/wechaty-icon.png'},
+    {name: 'twitter:title', content: 'Wechaty'},
+    {name: 'twitter:description', content: 'Wechaty Official Website for News, Blogs, Contributor Profiles, and Documentations.'},
+  ],
 }
 
 module.exports = themeConfig

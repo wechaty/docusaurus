@@ -1,5 +1,6 @@
 const presetClassic = [
   '@docusaurus/preset-classic',
+  /** @type {import('@docusaurus/preset-classic').Options} */
   {
     docs: {
       sidebarPath: require.resolve('../../sidebars.ts'),

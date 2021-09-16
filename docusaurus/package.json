@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "2.0.0-beta.6",
+    "@ionic-internal/docusaurus-plugin-tag-manager": "github:ionic-team/docusaurus-plugin-tag-manager",
     "@tsconfig/docusaurus": "^1.0.4",
     "@types/react": "^17.0.14",
     "@types/react-helmet": "^6.1.2",

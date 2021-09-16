@@ -1,6 +1,5 @@
-/**
- * @type {Partial<import('@docusaurus/types').DocusaurusConfig>}
- */
+// With JSDoc @type annotations, IDEs can provide config autocompletion
+/** @type {import('@docusaurus/types').DocusaurusConfig} */
 
 /**
  * Support sidebar.ts in TypeScript
@@ -19,6 +18,7 @@ const config = {
   url: 'https://wechaty.js.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'wechaty',    // Usually your GitHub org/user name.
   projectName: 'wechaty.js.org',  // Usually your repo name.
