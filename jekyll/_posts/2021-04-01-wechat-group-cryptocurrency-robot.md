@@ -10,15 +10,13 @@ image: /assets/2021/04-wechat-group-cryptocurrency-robot/header.jpg
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://wechaty.js.org)
 
-> 作者: [heygum](https://github.com/heygum)
-
 ## 背景
 
 当今正时大牛市 (或者牛快结束了), 在很多时候并没有办法打开App软件看币价, 比如在上课的时候, 在上班摸鱼的时候, 在地铁上的时候, 所以在微信群中,查询自己所需要的币的价格是很有必要的.
 
 ## 部署环境
 
-Node.js12+ (目前不要上15的车)
+Node.js16+ (目前不要上15的车)
 
 TypeScript
 
@@ -110,7 +108,7 @@ bot.start().then(() => {
 
     async function coinBot(s1){
     var result;
-    const rp = require('request-promise');
+    import rp  from 'request-promise';
     const requestOptions = {
     method: 'GET',
     uri: 'https://fxhapi.feixiaohao.com/public/v1/ticker', // 这里使用的非小号的API
@@ -144,3 +142,5 @@ bot.start().then(() => {
 ## 致谢
 
 谢谢Wechaty团队‘好大’的指导.
+
+> 作者: [heygum](https://github.com/heygum)

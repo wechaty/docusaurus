@@ -10,8 +10,6 @@ tags:
 image: /assets/2020/meeting-notes/07-05-head-picture.jpg
 ---
 
-> 作者: [wj-Mcat](https://github.com/wj-Mcat/)
-
 ## 漫长的会议
 
 昨晚（7.5）的会议开了接近三个小时，即使如此，大家热情依然饱满，几乎忘却了时间，全身心投入到技术主题讨论中。满载而归的我必须要发一篇博客来分享一下昨晚的成果。
@@ -118,3 +116,5 @@ image: /assets/2020/meeting-notes/07-05-head-picture.jpg
 这次会议讨论的主题虽然不多，可针对于具体的解决方案有非常深入的讨论，也让加深了对`wechaty`生态的理解。
 
 欢迎大家参与`wechaty`社区相关的活动以及成为`Contributor`，感谢大家的参与，我们下次再见。
+
+> 作者: [wj-Mcat](https://github.com/wj-Mcat/)
