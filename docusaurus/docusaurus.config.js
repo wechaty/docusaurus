@@ -7,9 +7,11 @@
  */
 require('ts-node/register')
 
-const plugins     = require('./config/plugins')
-const themeConfig = require('./config/theme')
-const presets     = require('./config/presets')
+const {
+  plugins,
+  themeConfig,
+  presets,
+}               = require('./config/mod.js')
 
 const config = {
   title: 'Wechaty',
