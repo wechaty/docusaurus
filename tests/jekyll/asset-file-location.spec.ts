@@ -21,6 +21,14 @@ import {
 
 const glob = util.promisify(globCB)
 
+function getSlugs (filename: string): string {
+  const matches = filename.match(/\/\d\d\d\d-\d\d-\d\d-(.+)\.md$/)
+  if (!matches) {
+    throw new Error(`${filename} parse slugs fail`)
+  }
+  return matches[1]!
+}
+
 test('all asset files should be put into folder `/assets/YYYY/MM-slug-...-slug/` (slugs should be the same as the post)', async t => {
   const postsFileList = await glob(`${JEKYLL_FOLDER.posts}/**/*`)
 
@@ -62,12 +70,4 @@ test('all asset files should be put into folder `/assets/YYYY/MM-slug-...-slug/`
   }
 
   t.pass(`total ${postsFileList.length} files checked.`)
-
-  function getSlugs (filename: string): string {
-    const matches = filename.match(/\/\d\d\d\d-\d\d-\d\d-(.+)\.md$/)
-    if (!matches) {
-      throw new Error(`${filename} parse slugs fail`)
-    }
-    return matches[1]!
-  }
 })
