@@ -1,6 +1,6 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test  from 'tstest'
+import { test } from 'tstest'
 
 import fs from 'fs'
 import util from 'util'
@@ -10,20 +10,20 @@ import globCB         from 'glob'
 
 import {
   JEKYLL_FOLDER,
-}                             from '../src/jekyll/mod'
+}                             from '../src/jekyll/mod.js'
 import {
   DOCUSAURUS_FOLDER,
-}                             from '../src/docusaurus/mod'
+}                             from '../src/docusaurus/mod.js'
 
 import {
   stripRepoRoot,
-}                             from '../src/repo-root'
+}                             from '../src/repo-root.js'
 
 import {
   NOT_WEBP_TO_BE_FIXED_FILE_LIST,
   BIG_SIZE_TO_BE_FIXED_FILE_LIST,
   inList,
-}                                   from './workaround'
+}                                   from './workaround.js'
 
 const glob = util.promisify(globCB)
 

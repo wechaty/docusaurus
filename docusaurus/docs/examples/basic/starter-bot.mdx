@@ -1,0 +1,217 @@
+---
+title: Starter Bot
+---
+
+<!-- MDX import -->
+import Tabs     from '@theme/Tabs'
+import TabItem  from '@theme/TabItem'
+
+import ShortestChatbots from '../../polyglot/transclusions/shortest-chatbots.mdx'
+
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
+[![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-blue.svg)](https://www.typescriptlang.org/)
+
+**Starter bot** is the most basic bot that you can build using Wechaty. You can use this bot as a template for creating an advanced version of the bot by doing further customizations.
+
+In this tutorial, you will get step-by-step instructions for creating the Starter bot.
+
+## Requirements
+
+1. [Node.js](https://nodejs.org/en/download) v16+
+2. [Wechaty](https://github.com/wechaty/wechaty) v0.40+
+
+## Getting started
+
+You should have `Node.js` installed on your system. If you do not have `Node.js` installed (or have a version below 12), then you need to install the latest version of `Node.js` by following the links below:
+
+:::note Node.js installation docs
+
+* [Windows](https://nodejs.org/en/download/package-manager/#windows)
+* [Linux\(Debian/Ubuntu\)](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+* [macOS](https://nodejs.org/en/download/package-manager/#macos)
+
+> Installation guide for `Node.js` on other platforms can be found [here](https://nodejs.org/en/download/package-manager/).
+
+:::
+
+## Building the bot
+
+Let's get started with building the Starter bot using Wechaty.
+
+### 1. Initialize project
+
+Create a new folder called `starter-bot` and move into the directory:
+
+```sh
+mkdir starter-bot
+cd starter-bot
+```
+
+Use the following command to initialize a NPM project:
+
+```sh
+npm init -y
+```
+
+This will generate a `package.json` file containing these:
+
+```json
+{
+  "name": "starter-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+```
+
+### 2. Install dependencies
+
+You will need the `wechaty` NPM package for building this bot & `ts-node` for running the TypeScript file of the bot. Install them using the following commands:
+
+```sh
+npm install wechaty
+npm install ts-node
+```
+
+You will also need to add dependencies for using any [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/) which helps to integrate Wechaty with various **instant messaging (IM) systems** (such as WeChat, WhatsApp, and WeCom):
+
+1. If you want to use **[WhatsApp](https://www.whatsapp.com/)**, install `wechaty-puppet-whatsapp`:
+
+  ```bash
+  npm install wechaty-puppet-whatsapp
+  ```
+2. If you want to use **[WeChat](https://www.wechat.com/)**, you can try the following puppets:
+
+   * **Web Protocol:** Install `wechaty-puppet-wechat`:
+
+     ```bash
+     npm install wechaty-puppet-wechat
+     ```
+
+   * **iPad Protocol:**
+     * padlocal: Install `wechaty-puppet-padlocal`:
+
+       ```bash
+       npm install wechaty-puppet-padlocal
+       ```
+
+       Then get a token like `puppet_padlocal_XXX`, know more about puppet service padlocal [here](http://wechaty.js.org/docs/puppet-services/padlocal).
+
+     * paimon: Install `wechaty-puppet-service`:
+
+       ```bash
+       npm install wechaty-puppet-service
+       ```
+
+       Then get a token like `puppet_paimon_XXX`, know more about puppet service paimon [here](http://wechaty.js.org/docs/puppet-services/paimon).
+
+3. If you want to use **[WeCom](https://work.weixin.qq.com/)**, install `wechaty-puppet-service`:
+
+  ```bash
+  npm install wechaty-puppet-service
+  ```
+
+  Then get a token like `puppet_wxwork_XXXXX`, more about puppet service wxwork [here](https://wechaty.js.org/docs/puppet-services/wxwork/).
+
+> You can find more information about the puppets [here](https://wechaty.js.org/docs/puppet-providers/).
+
+### 3. Write code for bot
+
+Create a new file called `starter-bot.ts` in the root project directory. Add the following to the file:
+
+```ts
+// Importing the Wechaty npm package
+import { Wechaty } from 'wechaty'
+
+// Initializing the bot
+const bot = new Wechaty({
+    name: 'starter-bot',
+})
+
+// Starting the bot
+bot
+.on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://wechaty.js.org/qrcode/${encodeURIComponent(qrcode)}`))
+.on('login',            user => console.log(`User ${user} logged in`))
+.on('message',       message => console.log(`Message: ${message}`))
+.start()
+```
+
+## Running the bot
+
+You have to **export/set** an environment variable with the type of puppet to use:
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+
+# For using WhatsApp:
+# export WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# export WECHATY_PUPPET=wechaty-puppet-service
+# export WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+
+# For using WhatsApp:
+# export WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# export WECHATY_PUPPET=wechaty-puppet-service
+# export WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```bash
+set WECHATY_LOG=verbose
+set WECHATY_PUPPET=wechaty-puppet-wechat
+
+# For using WhatsApp:
+# set WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# set WECHATY_PUPPET=wechaty-puppet-service
+# set WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
+```
+
+</TabItem>
+</Tabs>
+
+> If you are using WeCom, you can get token from [puppet service wxwork](http://wechaty.js.org/docs/puppet-services/wxwork).
+
+Run the bot using the following command:
+
+```sh
+ts-node src/starter-bot.ts
+```
+
+## References
+
+* [Wechaty plugins](../../using-plugin-with-wechaty/overview) to integrate with the bot.
+* [Wechaty Getting Started GitHub repository](https://github.com/wechaty/wechaty-getting-started)

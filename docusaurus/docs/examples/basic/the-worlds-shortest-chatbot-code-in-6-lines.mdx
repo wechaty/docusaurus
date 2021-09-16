@@ -1,0 +1,50 @@
+---
+title: World's Shortest Chatbot
+---
+
+<!-- MDX import -->
+import Tabs     from '@theme/Tabs'
+import TabItem  from '@theme/TabItem'
+
+import ShortestChatbots from '../../polyglot/transclusions/shortest-chatbots.mdx'
+
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
+[![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-blue.svg)](https://www.typescriptlang.org/)
+
+**World's Shortest Chatbot** is the very first example showcasing how easy it is to get started with Wechaty in minimum 6 lines of code.
+
+## Requirements
+
+1. [Node.js](https://nodejs.org/en/download) v16+
+2. [Wechaty](https://github.com/wechaty/wechaty) v0.40+
+
+## Getting started
+
+You should have `Node.js` installed on your system. If you do not have `Node.js` installed (or have a version below 12), then you need to install the latest version of `Node.js` by following the links below:
+
+:::note Node.js installation docs
+
+* [Windows](https://nodejs.org/en/download/package-manager/#windows)
+* [Linux\(Debian/Ubuntu\)](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+* [macOS](https://nodejs.org/en/download/package-manager/#macos)
+
+> Installation guide for `Node.js` on other platforms can be found [here](https://nodejs.org/en/download/package-manager/).
+:::
+
+## Usage
+
+<ShortestChatbots />
+
+For building a bot with Wechaty, you have to follow the steps below:
+
+1. Import wechaty.
+1. Create a function `main` and initialize a bot by providing it a name.
+1. Assign proper functions to call when an event is triggered.
+    - When `scan` is triggered, it generates QR code.
+    - `login` will display `{user} logged in` if the user has logged in.
+    - `message` will display message on console.
+1. Finally, start the bot with `bot.start`.
+
+## Reference
+
+[Wechaty Getting Started Github Repository](https://github.com/wechaty/wechaty-getting-started/tree/master/examples)

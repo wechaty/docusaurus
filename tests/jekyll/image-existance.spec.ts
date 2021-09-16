@@ -1,20 +1,17 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test  from 'tstest'
+import { test } from 'tstest'
 
 import fs   from 'fs'
 import path from 'path'
-import {
-  chunk,
-  shuffle,
-}               from 'lodash'
+import lodash   from 'lodash'
 
 import {
   isWhiteListedRemoteUrl,
   isUrlExist,
   getAllImageList,
   JEKYLL_FOLDER,
-}                             from '../../src/jekyll/mod'
+}                             from '../../src/jekyll/mod.js'
 
 const not = (func: (...args: any[]) => boolean) => (...args: any) => !func(...args)
 
@@ -45,7 +42,7 @@ test('all remote images linked from the post should be exist.', async t => {
 
   // console.info('remoteImageList', remoteImageList)
 
-  remoteImageList = shuffle(
+  remoteImageList = lodash.shuffle(
     Array.from(
       new Set(
         remoteImageList
@@ -59,7 +56,7 @@ test('all remote images linked from the post should be exist.', async t => {
 
   const CHUNK_SIZE = 10
 
-  const chunkList = chunk(
+  const chunkList = lodash.chunk(
     remoteImageList,
     CHUNK_SIZE,
   )
@@ -75,8 +72,8 @@ test('all remote images linked from the post should be exist.', async t => {
       chunk.map(isUrlExist)
     )
 
-    // sleep 1 seconds before next check
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    // sleep 3 seconds before next check
+    await new Promise(resolve => setTimeout(resolve, 3000))
 
     for (const [i, result] of resultList.entries()) {
       if (!result) {
