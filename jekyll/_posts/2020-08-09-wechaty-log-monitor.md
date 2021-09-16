@@ -8,15 +8,7 @@ tags:
   - featured
 image: /assets/2020/wechaty-log-monitor/demo.jpeg
 excerpt: 为了能让（营业中的）小助手可以有更棒的 readily availability，我写了这个wechaty-log-monitor插件来给在production跑的Wechaty做日志相关的devops。
-
 ---
-
-> 作者: [Archy Will He 何魏奇](https://github.com/archywillhe/)，functional programmer, interested in computational semantics，目前在全职做[吖奇说(ARCHY.SH)](https://archy.sh)这个项目。Working with GPT-2 (and hopefully with 3 soon!)
->
-> Github Repo: [wechaty-log-monitor plugin](https://github.com/archywillhe/wechaty-log-monitor)
->
-> [![flair](https://camo.githubusercontent.com/c551a231a6cda28e59291fa091ddcb7b9899f6ec/68747470733a2f2f737461636b65786368616e67652e636f6d2f75736572732f666c6169722f313334303435332e706e67)](https://stackoverflow.com/users/2041954/%E5%90%96%E5%A5%87%E8%AF%B4-%E4%BD%95%E9%AD%8F%E5%A5%87archy-will-he)
->
 
 最近基于Wechaty[做的一个学中文小助手ARCHY开始营业了](https://mp.weixin.qq.com/s/FcgaOOnZNPUuMSihmMs_lw)🤖🤖🍜～
 
@@ -212,3 +204,10 @@ export enum WechatyLogOperationSecurityRule {
 若pragmatically，『chatbot变成一个更简易的terminal』这件事真的行得通，那另一个非常有意思的发展方向就是结合[OpenAI最近提及到GPT3的一个很有意思的应用：Natural Language Shell](https://beta.openai.com/?app=productivity&example=4_2_0) - 运用自然语言去做执行unix等命令。
 
 ![gtp3](/assets/2020/wechaty-log-monitor/gtp3.jpeg)
+
+> 作者: [Archy Will He 何魏奇](https://github.com/archywillhe/)，functional programmer, interested in computational semantics，目前在全职做[吖奇说(ARCHY.SH)](https://archy.sh)这个项目。Working with GPT-2 (and hopefully with 3 soon!)
+>
+> Github Repo: [wechaty-log-monitor plugin](https://github.com/archywillhe/wechaty-log-monitor)
+>
+> [![flair](https://camo.githubusercontent.com/c551a231a6cda28e59291fa091ddcb7b9899f6ec/68747470733a2f2f737461636b65786368616e67652e636f6d2f75736572732f666c6169722f313334303435332e706e67)](https://stackoverflow.com/users/2041954/%E5%90%96%E5%A5%87%E8%AF%B4-%E4%BD%95%E9%AD%8F%E5%A5%87archy-will-he)
+>

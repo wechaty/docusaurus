@@ -1,7 +1,7 @@
 ---
 name: 高宇
 site: https://github.com/zhihuifanqiechaodan
-avatar: /assets/contributors/zhihuifanqiechaodan/avatar.jpg
+avatar: /assets/contributors/zhihuifanqiechaodan/avatar.webp
 bio: web前端开发工程师 
 email: 673395239@qq.com
 twitter: 
