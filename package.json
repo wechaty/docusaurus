@@ -15,7 +15,7 @@
     "lint": "npm-run-all lint:es lint:ts lint:md lint:fn lint:yml",
     "lint:es": "eslint \"src/**/*.ts\" \"tests/**/*.spec.ts\" --ignore-pattern tests/fixtures/",
     "lint:ts": "tsc --isolatedModules --noEmit",
-    "lint:md": "markdownlint --ignore _site/ --ignore node_modules/ '**/*.md'",
+    "lint:md": "markdownlint --ignore _site/ --ignore node_modules/ --ignore docusaurus/node_modules/ \"**/*.md\"",
     "lint:fn": "file-name-linter .file-name-linter.json",
     "lint:yml": "true || yamllint jekyll/_data/*.yml",
     "test": "npm run lint test:unit",
