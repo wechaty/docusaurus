@@ -8,9 +8,6 @@ tags:
 image: /assets/2020/wechaty-daily/daily.png
 ---
 
-> 作者: [zzhoouxin](https://github.com/zzhoouxin/)
-> Code: [Github](https://github.com/zzhoouxin/wechaty-bot)
-
 [![Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![Wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
@@ -62,13 +59,13 @@ github:[https://github.com/zzhoouxin/wechaty-bot](https://github.com/zzhoouxin/w
 ## 1.index.js -- wechaty 启动入口
 
 ```js
-const {Wechaty} = require('wechaty')
-const {PuppetPadplus} = require("wechaty-puppet-padplus");
-const config = require('./config')
-const onScan = require('./bot/onScan')
-const onLogin = require('./bot/onLogin')
-const onMessage = require('./bot/onMessage')
-const onLogout = require('./bot/onLogout')
+import {Wechaty}  from 'wechaty'
+import {PuppetPadplus}  from 'wechaty-puppet-padplus';
+import config  from './config'
+import onScan  from './bot/onScan'
+import onLogin  from './bot/onLogin'
+import onMessage  from './bot/onMessage'
+import onLogout  from './bot/onLogout'
 const bot = new Wechaty({
     puppet: new PuppetPadplus({
         token: config.TOKEN
@@ -118,8 +115,8 @@ module.exports = {
 ## 3.1 首页我们在 wechaty 的 onlogin 事件里面加入定时任务
 
 ```js
-const dailyRemind = require('../schedule/dailyRemind')
-const collectContent = require('../schedule/collectContent')
+import dailyRemind  from '../schedule/dailyRemind'
+import collectContent  from '../schedule/collectContent'
 /**
  * 扫码登录
  * @param qrcode
@@ -139,9 +136,9 @@ module.exports = bot => {
 - 在使用 [announce](https://wechaty.js.org/v/zh/api/room#room-announce-text-promise-less-than-void-or-string-greater-than) 创建群公告 @所有人 即可做到提醒
 
 ```js
-const schedule = require('./index');
-const config = require('../config');
-const utils = require('../tool/utils')
+import schedule  from './index';
+import config  from '../config';
+import utils  from '../tool/utils'
 module.exports =async  function dailyRemind(bot) {
     schedule.setSchedule(config.WITHDRAWA_DATE, async () => {
         if(!utils.judgeIsJob()){ //周末的话，不做提醒
@@ -166,8 +163,8 @@ module.exports =async  function dailyRemind(bot) {
 
 ```js
 // 监听对话
-const { Message } = require('wechaty');
-const config = require('../config');
+import { Message }  from 'wechaty';
+import config  from '../config';
 module.exports = (bot) => {
   return async function onMessage(msg) {
     const contact = msg.from(); // 发消息人
@@ -256,3 +253,6 @@ async function collectUserContent() {
 ## 总结
 
 相信很多公司都有发送日报的要求,以上代码实现也是依赖了自己所需业务场景进行实现。通过 wechaty 改变了我们传统的工作流程。大大的提高了工作效率。避免很多重复行为。当然还有更多好玩有趣的功能区可以加入。希望自己可以和团队进行沟通，提高我们流程。大家可以参考以上流程。
+
+> 作者: [zzhoouxin](https://github.com/zzhoouxin/)
+> Code: [Github](https://github.com/zzhoouxin/wechaty-bot)

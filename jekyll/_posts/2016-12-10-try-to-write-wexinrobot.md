@@ -8,8 +8,6 @@ tags:
 image: /assets/2016/ruirui-dance.jpg
 ---
 
-作者：@[lijiarui](https://github.com/lijiarui), Entrepreneur, [Wechaty Author](https://github.com/orgs/wechaty/teams/pmc)
-
 我一直和我的小伙伴在业余时间拍摄舞蹈教学视频，叫“舞哩”，原创了几百个视频，近千万的播放，所以就建了微信群来和粉丝交流。
 
 ![RuiRui][ruirui-dance-image]
@@ -109,7 +107,7 @@ Wechaty依赖的很多包都在墙外，建议使用国外的VPS，我使用的�
 环境部署好以后下面6行代码，就可以成功的实现基础的bot功能：将微信机器人收到的所有消息打印出来：
 
 ```shell
-const { Wechaty } = require('wechaty')
+import { Wechaty }  from 'wechaty'
 
 Wechaty.instance()
 .on('scan', (url, code) => console.log(`Scan QR Code to login: ${code}\n${url}`))

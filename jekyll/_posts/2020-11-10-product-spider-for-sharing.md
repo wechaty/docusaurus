@@ -184,7 +184,7 @@ import { PuppetPadplus } from 'wechaty-puppet-padplus'
 
 // You can safely ignore the next line because it is using for CodeSandbox
 require('./.code-sandbox.js')
-const fs = require('fs')
+import fs  from 'fs'
 
 const token = 'puppet_padplus_xxxxxx'
 const puppet = new PuppetPadplus({
