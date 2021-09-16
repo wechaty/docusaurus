@@ -95,7 +95,7 @@ import {
     UrlLink,
     MiniProgram,
 } from 'wechaty'
-const request = require('request');
+import request  from 'request';
 const puppet = new PuppetPadlocal({
     token: "----------"
 })

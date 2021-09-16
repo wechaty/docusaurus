@@ -1,6 +1,6 @@
 import path from 'path'
 
-import { REPO_ROOT } from '../repo-root'
+import { REPO_ROOT } from '../repo-root.js'
 
 const root = path.join(REPO_ROOT, 'docusaurus')
 
