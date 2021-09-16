@@ -22,7 +22,7 @@ image: /assets/2021/01-wechaty-charbot-lite/1.png
 ### 全球最短的ChatBot代码：6行JavaScript
 
 ```javascript
-const { Wechaty } = require('wechaty')
+import { Wechaty }  from 'wechaty'
 Wechaty.instance()
   .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrcode
   )}`))
