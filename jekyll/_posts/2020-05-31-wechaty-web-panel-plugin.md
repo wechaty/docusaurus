@@ -120,8 +120,8 @@ $ vim wechat-config.json
 ```sh
 $ vim mybot.js
 
-const { Wechaty } = require('wechaty');
-const WechatyWebPanelPlugin = require('wechaty-web-panel');
+import { Wechaty }  from 'wechaty';
+import WechatyWebPanelPlugin  from 'wechaty-web-panel';
 const bot = Wechaty.instance({ profile: "WECHATY_PROFILE" });
 
 bot

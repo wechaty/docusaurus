@@ -10,6 +10,9 @@ import ShortestChatbots from '../polyglot/transclusions/shortest-chatbots.mdx'
 
 <!-- Pushes a curious reader through the first few minutes of use. -->
 
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
+[![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-blue.svg)](https://www.typescriptlang.org/)
+
 For running Ding Dong Bot, you can setup your own server for running locally. Just follow the steps below:
 
 1. Getting Started
@@ -19,7 +22,7 @@ For running Ding Dong Bot, you can setup your own server for running locally. Ju
 
 ## Try out the bot
 
-[![Edit wechaty-ding-dong-bot](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/wechaty/wechaty-getting-started/tree/master/examples/third-parties/codesandbox?hidenavigation=1&module=%2Fding-dong-bot.ts&theme=dark)
+[![Edit wechaty-ding-dong-bot](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/wechaty/wechaty-getting-started/tree/main/examples/third-parties/codesandbox?hidenavigation=1&module=%2Fding-dong-bot.ts&theme=dark)
 
 You can try out Ding Dong Bot using this interactive CodeSandbox.
 
@@ -27,13 +30,13 @@ Just scan the generated QR code with **WeChat** app and you are ready to go.
 
 <iframe
   class="codesandbox"
-  src="https://codesandbox.io/embed/github/wechaty/wechaty-getting-started/tree/master/examples/third-parties/codesandbox?fontsize=12&hidenavigation=1&module=%2Fding-dong-bot.ts&theme=dark"
+  src="https://codesandbox.io/embed/github/wechaty/wechaty-getting-started/tree/main/examples/third-parties/codesandbox?fontsize=12&hidenavigation=1&module=%2Fding-dong-bot.ts&theme=dark"
   sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
 ></iframe>
 
 ## Requirements
 
-1. [Node.js](https://nodejs.dev/) v12+
+1. [Node.js](https://nodejs.dev/) v16+
 1. [Wechaty Puppet Service TOKEN](https://wechaty.js.org/docs/puppet-services/) (if you want to use RPA protocols other than Web)
 
 ## Usage
@@ -170,7 +173,7 @@ make bot
 
 > There are various **Wechaty puppets** available, you can know more about them [here](https://github.com/wechaty/wechaty-getting-started#working-with-different-puppets).
 
-This will generate a QR code. Scan it using Wechat or WhatsApp depending upon the puppet used. 
+This will generate a QR code. Scan it using Wechat or WhatsApp depending upon the puppet used.
 
 You are ready to play with the bot.
 
@@ -231,37 +234,56 @@ npm install wechaty
 npm install qrcode-terminal
 ```
 
-You will also need to add dependencies for using any [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/) 
+You will also need to add dependencies for using any [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/)
 which helps to integrate Wechaty with various **instant messaging (IM) systems** (such as WeChat, Whatsapp, and Gitter):
 
-You can install wechaty-puppet as you like when using wechaty:
+1. If you want to use **[WhatsApp](https://www.whatsapp.com/)**, install `wechaty-puppet-whatsapp`:
 
-1. If you want to use whatsapp,you can install wechaty-puppet-whatsapp
+  ```bash
+  npm install wechaty-puppet-whatsapp
+  ```
+2. If you want to use **[WeChat](https://www.wechat.com/)**, you can try the following puppets:
 
-```bash
-npm install wechaty-puppet-whatsapp
-```
-2. If you want to use wechat, you can install wechaty-puppet-wechat
+   * **Web Protocol:** Install `wechaty-puppet-wechat`:
 
-```bash
-npm install wechaty-puppet-wechat
-```
+     ```bash
+     npm install wechaty-puppet-wechat
+     ```
 
-3. If you want to use wecom, you can install wechaty-puppet-wxwork
+   * **iPad Protocol:**
+     * padlocal: Install `wechaty-puppet-padlocal`:
 
-```bash
-npm install wechaty-puppet-wxwork
-```
+       ```bash
+       npm install wechaty-puppet-padlocal
+       ```
 
-You can find more puppet information here: https://wechaty.js.org/docs/puppet-providers/
+       Then get a token like `puppet_padlocal_XXX`, know more about puppet service padlocal [here](http://wechaty.js.org/docs/puppet-services/padlocal).
 
-Now, you are ready to write main code for bot
+     * paimon: Install `wechaty-puppet-service`:
+
+       ```bash
+       npm install wechaty-puppet-service
+       ```
+
+       Then get a token like `puppet_paimon_XXX`, know more about puppet service paimon [here](http://wechaty.js.org/docs/puppet-services/paimon).
+
+3. If you want to use **[WeCom](https://work.weixin.qq.com/)**, install `wechaty-puppet-service`:
+
+  ```bash
+  npm install wechaty-puppet-service
+  ```
+
+  Then get a token like `puppet_wxwork_XXXXX`, more about puppet service wxwork [here](https://wechaty.js.org/docs/puppet-services/wxwork/).
+
+> You can find more information about the puppets [here](https://wechaty.js.org/docs/puppet-providers/).
+
+Now, you are ready to write the main code for the bot.
 
 ### 3. Writing code for bot
 
-Create a new folder called `src`, and add a file `ding-dong-bot.ts`. We will be writing the code here.
+Create a new file `ding-dong-bot.ts`. We will be writing the code here.
 
-Let's import the required packages in the `ding-dong-bot.ts` file:
+Let's import the required packages in this file:
 
 ```ts
 import {
@@ -271,7 +293,7 @@ import {
   Wechaty,
   log,
 }from 'wechaty'
-  
+
 import { generate } from 'qrcode-terminal'
 
 require('dotenv').config()
@@ -301,7 +323,7 @@ function onScan (qrcode: string, status: ScanStatus) {
 ```
 **1.**  If `status` is **Waiting** or **Timeout** then function `onScan` will generate qrcode
 
-**2.**  `qrcodeImageUrl` is used for reading the generated `qrcode`. `encodeURIComponent(qrcode)` encodes a URI (string that refers to a resource ie. qrcode) by replacing each instance of certain characters by UTF-8 encoding of characters. 
+**2.**  `qrcodeImageUrl` is used for reading the generated `qrcode`. `encodeURIComponent(qrcode)` encodes a URI (string that refers to a resource ie. qrcode) by replacing each instance of certain characters by UTF-8 encoding of characters.
 
 **3.**  After reading the `qrcode` it return `ScanStatus`.
 
@@ -366,8 +388,7 @@ bot.start()
 
 ## Running the bot
 
-In order to run the bot, first you have to **export/set** an environment variable with the type of puppet to use and then run the bot:
-
+You have to **export/set** an environment variable with the type of puppet to use:
 
 <Tabs
   groupId="operating-systems"
@@ -385,7 +406,12 @@ In order to run the bot, first you have to **export/set** an environment variabl
 export WECHATY_LOG=verbose
 export WECHATY_PUPPET=wechaty-puppet-wechat
 
-npx ts-node src/ding-dong-bot.ts
+# For using WhatsApp:
+# export WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# export WECHATY_PUPPET=wechaty-puppet-service
+# export WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
 ```
 
 </TabItem>
@@ -395,7 +421,12 @@ npx ts-node src/ding-dong-bot.ts
 export WECHATY_LOG=verbose
 export WECHATY_PUPPET=wechaty-puppet-wechat
 
-ts-node src/ding-dong-bot.ts
+# For using WhatsApp:
+# export WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# export WECHATY_PUPPET=wechaty-puppet-service
+# export WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
 ```
 
 </TabItem>
@@ -405,27 +436,39 @@ ts-node src/ding-dong-bot.ts
 set WECHATY_LOG=verbose
 set WECHATY_PUPPET=wechaty-puppet-wechat
 
-npx ts-node src/ding-dong-bot.ts
+# For using WhatsApp:
+# set WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# set WECHATY_PUPPET=wechaty-puppet-service
+# set WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
 ```
 
 </TabItem>
 </Tabs>
 
+> If you are using WeCom, you can get token from [puppet service wxwork](http://wechaty.js.org/docs/puppet-services/wxwork).
+
+Run the bot using the following command:
+
+```sh
+ts-node ding-dong-bot.ts
+```
+
 This will start bot and generate QR code like this:
 
-![hard-way](../../static/img/docs/getting-started/running-locally/hard-way.png)
+![hard-way](../../static/img/docs/getting-started/running-locally/hard-way.webp)
 
 Scan it using your **WeChat/WhatsApp** as per the puppet you have selected, and you are ready to play with the bot!
 
 ## Bot demonstration
 
-![bot-demo](../../static/img/docs/getting-started/running-locally/bot-demo.png)
+![bot-demo](../../static/img/docs/getting-started/running-locally/bot-demo.webp)
 
-## Conclusion 
+## Conclusion
 
 You have learnt to make a ding dong bot.
 
 ## References
 
-**[wechaty-getting-started](https://github.com/wechaty/wechaty-getting-started)**
-
+* [Wechaty Getting Started GitHub repository](https://github.com/wechaty/wechaty-getting-started)
