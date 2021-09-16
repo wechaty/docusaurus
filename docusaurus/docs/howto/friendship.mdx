@@ -163,7 +163,7 @@ When someone sends you the request, you choose whether to have the friend connec
 <TabItem value="ts">
 
 ```ts
-const { Friendship } = require('wechaty')
+import { Friendship } from 'wechaty'
 
 async function onFriendship (friendship: Friendship) {
   if (friendship.type() === Friendship.Type.Receive) {
@@ -182,7 +182,7 @@ bot.on('friendship', onFriendship)
 <TabItem value="js">
 
 ```js
-const { Friendship } = require('wechaty')
+import { Friendship } from 'wechaty'
 
 async function onFriendship (friendship) {
   if (friendship.type() === Friendship.Type.Receive) {
