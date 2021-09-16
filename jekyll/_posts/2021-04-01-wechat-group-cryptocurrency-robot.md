@@ -108,7 +108,7 @@ bot.start().then(() => {
 
     async function coinBot(s1){
     var result;
-    const rp = require('request-promise');
+    import rp  from 'request-promise';
     const requestOptions = {
     method: 'GET',
     uri: 'https://fxhapi.feixiaohao.com/public/v1/ticker', // 这里使用的非小号的API

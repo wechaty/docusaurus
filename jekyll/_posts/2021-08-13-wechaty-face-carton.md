@@ -63,8 +63,8 @@ npm install wechaty wechaty-face-carton wechaty-puppet-wechat --save
 index.js
 
 ```javascript
-const { Wechaty } = require('wechaty')
-const WechatyFaceCartonPlugin = require('wechaty-face-carton')
+import { Wechaty }  from 'wechaty'
+import WechatyFaceCartonPlugin  from 'wechaty-face-carton'
 const name = 'wechat-carton'
 const bot = new Wechaty({ name, puppet: 'wechaty-puppet-wechat' })
 bot
