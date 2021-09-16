@@ -1,0 +1,393 @@
+---
+title: Tuling 123 Bot
+---
+
+<!-- MDX import -->
+import Tabs     from '@theme/Tabs'
+import TabItem  from '@theme/TabItem'
+
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
+[![JavaScript](https://img.shields.io/badge/%3C%2F%3E-JavaScript-blue.svg)](https://www.javascript.com/)
+
+Tuling bot is a bot which can talk with you using [Tuling123.com](http://www.turingapi.com/).
+
+This tutorial is a demonstration of how to use this bot.
+
+## Try out the bot
+
+[![Edit wechaty-tuling123-bot](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/sbis04/wechaty-tuling123-bot/tree/main/?fontsize=14&hidenavigation=1&theme=dark)
+
+You can try out the Tuling123 bot using this interactive CodeSandbox.
+
+Just scan the generated QR code with **WeChat** app, and you are ready to play with the bot!
+
+<iframe
+class="codesandbox"
+src="https://codesandbox.io/embed/github/sbis04/wechaty-tuling123-bot/tree/main/?fontsize=12&hidenavigation=1&module=%2Ftuling123-bot.js&theme=dark"
+title="tuling123-bot"
+sandbox="allow-forms allow-modals allow-popups allow-same-origin allow-scripts"
+></iframe>
+
+## Requirements
+
+1. [Node.js](https://nodejs.org/en/download) v16+
+2. [Wechaty](https://github.com/wechaty/wechaty) v0.40+
+
+## Getting started
+
+You should have `Node.js` installed on your system. If you do not have `Node.js` installed (or have a version below 12), then you need to install the latest version of `Node.js` by following the links below:
+
+:::note Node.js installation docs
+
+* [Windows](https://nodejs.org/en/download/package-manager/#windows)
+* [Linux\(Debian/Ubuntu\)](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+* [macOS](https://nodejs.org/en/download/package-manager/#macos)
+
+> Installation guide for `Node.js` on other platforms can be found [here](https://nodejs.org/en/download/package-manager/).
+
+:::
+
+You can head over to the [Building the bot](#building-the-bot) section to learn how to build the bot on your own.
+
+Otherwise, if you just want to try out the bot on your local system, follow the steps below:
+
+### 1. Clone the repository
+
+Use the following commands to clone the [GitHub repository](https://github.com/wechaty/wechaty-getting-started) and navigate to the directory:
+
+```bash
+git clone https://github.com/wechaty/wechaty-getting-started.git
+cd wechaty-getting-started
+```
+
+### 2. Install dependencies
+
+You can install the `npm` packages required for running the bot, using this command:
+
+```sh
+npm install
+```
+
+### 3. Run the bot
+
+You have to `export/set` the environment variables:
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```bash
+set WECHATY_LOG=verbose
+set WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+</Tabs>
+
+> There are various **Wechaty puppets** available, you can know more about them [here](https://github.com/wechaty/wechaty-getting-started#working-with-different-puppets).
+
+Run the bot by using the following command:
+
+```bash
+node examples/professional/tuling123-bot.js
+```
+
+It will generate a QR code, scan it using **WeChat** or **WhatsApp** (according to the puppet you have used), and you are ready to play with the bot.
+
+## Building the bot
+
+Let's get started with building the Tuling bot using Wechaty.
+
+### 1. Initialize project
+
+Create a new folder called `tuling-bot` and move into that directory:
+
+```bash
+mkdir tuling-bot
+cd tuling-bot
+```
+
+Use the following command to initialize an npm project:
+
+```bash
+npm init -y
+```
+
+### 2. Install dependencies
+
+You will need the `wechaty` NPM package for building this bot, `qrcode-terminal` for displaying the QR code that can be scanned for using the bot and `tuling123-client` for connecting to tuling bot. Install them using the following command:
+
+```sh
+npm install wechaty
+npm install qrcode-terminal tuling123-client
+```
+
+You will also need to add dependencies for using any [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/) which helps to integrate Wechaty with various **instant messaging (IM) systems** (such as WeChat, WhatsApp, and WeCom):
+
+1. If you want to use **[WhatsApp](https://www.whatsapp.com/)**, install `wechaty-puppet-whatsapp`:
+
+  ```bash
+  npm install wechaty-puppet-whatsapp
+  ```
+2. If you want to use **[WeChat](https://www.wechat.com/)**, you can try the following puppets:
+
+* **Web Protocol:** Install `wechaty-puppet-wechat`:
+
+  ```bash
+  npm install wechaty-puppet-wechat
+  ```
+
+* **iPad Protocol:**
+  * padlocal: Install `wechaty-puppet-padlocal`:
+
+  ```bash
+  npm install wechaty-puppet-padlocal
+  ```
+
+  Then get a token like `puppet_padlocal_XXX`, know more about puppet service padlocal [here](http://wechaty.js.org/docs/puppet-services/padlocal).
+
+  * paimon: Install `wechaty-puppet-service`:
+
+  ```bash
+  npm install wechaty-puppet-service
+  ```
+
+  Then get a token like `puppet_paimon_XXX`, know more about puppet service paimon [here](http://wechaty.js.org/docs/puppet-services/paimon).
+
+3. If you want to use **[WeCom](https://work.weixin.qq.com/)**, install `wechaty-puppet-service`:
+
+  ```bash
+  npm install wechaty-puppet-service
+  ```
+
+  Then get a token like `puppet_wxwork_XXXXX`, more about puppet service wxwork [here](https://wechaty.js.org/docs/puppet-services/wxwork/).
+
+> You can find more information about the puppets [here](https://wechaty.js.org/docs/puppet-providers/).
+
+### 3. Write code for bot
+
+Start by creating a new file `tuling-bot.js`. We will be writing the code here.
+
+Let's import the required packages in the JavaScript file:
+
+```js
+import qrTerm  from 'qrcode-terminal'
+import Tuling123  from 'tuling123-client'
+
+const {
+  Wechaty,
+  Message,
+} = require('wechaty')
+
+const welcome = `
+=============== Powered by Wechaty ===============
+-------- https://github.com/Chatie/wechaty --------
+
+I can talk with you using Tuling123.com
+Apply your own tuling123.com API_KEY
+at: http://www.tuling123.com/html/doc/api.html
+
+__________________________________________________
+
+Please wait... I'm trying to login in...
+`
+
+console.log(welcome)
+```
+
+Apply Your Own Tuling123 Developer API_KEY at [tuling123.com](http://www.tuling123.com)
+
+```js
+const TULING123_API_KEY = '18f25157e0446df58ade098479f74b21'
+const tuling = new Tuling123(TULING123_API_KEY)
+```
+
+Initializing the bot by providing it a name
+
+```js
+const bot = new Wechaty()
+```
+
+Assigning proper functions to call when an event is triggered by the bot:
+
+```js
+bot.on('scan',    onScan)
+bot.on('login',   onLogin)
+bot.on('logout',  onLogout)
+bot.on('message', onMessage)
+bot.on('error',   onError)
+```
+
+Specify some functions that you will require for handling different events returned by the tuling bot.
+
+* **onScan**
+
+  This function will be used for generating the **QR code** for the puppet specified, and display it on the console.
+
+  ```js
+  function onScan (qrcode, status) {
+  qrTerm.generate(qrcode, { small: true })  // show qrcode on console
+  }
+  ```
+
+* **onLogin**
+
+  This will print a log message when an user logs in to the bot.
+
+  ```js
+  function onLogin (user) {
+    console.log(`${user} login`)
+  }
+  ```
+
+* **onLogout**
+
+  This will print a log message when an user logs out of the bot.
+
+  ```js
+  function onLogout (user) {
+    console.log(`${user} logout`)
+  }
+  ```
+
+* **onError**
+
+  This is for printing an error message to the console.
+
+  ```js
+  function onError (e) {
+    console.error(e)
+  }
+  ```
+
+* **onMessage**
+
+  This is the main function which will handle the messaging service.
+
+  ```js
+  async function onMessage (msg) {
+    // Skip message from self, or inside a room
+    if (msg.self() || msg.room() || msg.from().name() === '微信团队' || msg.type() !== Message.Type.Text) return
+
+    console.log('Bot', 'talk: %s'  , msg.text())
+
+    try {
+      const {text: reply} = await tuling.ask(msg.text(), {userid: msg.from()})
+      console.log('Tuling123', 'Talker reply:"%s" for "%s" ',
+                            reply,
+                            msg.text(),
+              )
+      await msg.say(reply)
+    } catch (e) {
+      console.error('Bot', 'on message tuling.ask() exception: %s' , e && e.message || e)
+    }
+  }
+  ```
+
+Finally, for starting the bot
+
+```js
+bot.start()
+.catch(console.error)
+```
+
+## Running the bot
+
+In order to run the bot, first you have to **export/set** an environment variable with the type of puppet to use:
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+
+# For using WhatsApp:
+# export WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# export WECHATY_PUPPET=wechaty-puppet-service
+# export WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+
+# For using WhatsApp:
+# export WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# export WECHATY_PUPPET=wechaty-puppet-service
+# export WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```bash
+set WECHATY_LOG=verbose
+set WECHATY_PUPPET=wechaty-puppet-wechat
+
+# For using WhatsApp:
+# set WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# set WECHATY_PUPPET=wechaty-puppet-service
+# set WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
+```
+
+</TabItem>
+</Tabs>
+
+> If you are using WeCom, you can get token from [puppet service wxwork](http://wechaty.js.org/docs/puppet-services/wxwork).
+
+Run the bot using the following command:
+
+```bash
+npx ts-node tuling-bot.js
+```
+
+This will start the bot and generate a QR code.
+
+Scan it using your **WeChat/WhatsApp** as per the puppet you have selected, and you are ready to play with the bot!
+
+## References
+
+* [Wechaty Getting Started GitHub repository](https://github.com/wechaty/wechaty-getting-started)

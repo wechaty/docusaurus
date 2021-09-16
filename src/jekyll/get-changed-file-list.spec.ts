@@ -1,12 +1,12 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test from 'tstest'
+import { test } from 'tstest'
 
 // import path from 'path'
 
-// import { JEKYLL_FOLDER } from './jekyll-folder'
+// import { JEKYLL_FOLDER } from './jekyll-folder.js'
 
-import { getChangedFileList } from './get-changed-file-list'
+import { getChangedFileList } from './get-changed-file-list.js'
 
 const TOTAL_REPO_FILE_NUM = 4105  // 20210218
 
