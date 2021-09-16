@@ -76,6 +76,7 @@
     "@types/yaml-front-matter": "^4.1.0",
     "abort-controller": "^3.0.0",
     "clsx": "^1.1.1",
+    "cross-env": "^7.0.3",
     "file-box": "^0.16.8",
     "git-scripts": "^0.4.3",
     "glob": "^7.1.7",
