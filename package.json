@@ -18,7 +18,7 @@
     "lint:md": "markdownlint --ignore _site/ --ignore node_modules/ --ignore docusaurus/node_modules/ \"**/*.md\"",
     "lint:fn": "file-name-linter .file-name-linter.json",
     "lint:yml": "true || yamllint jekyll/_data/*.yml",
-    "test": "npm run lint test:unit",
+    "test": "npm-run-all lint test:unit",
     "test:unit": "tap --node-arg=--loader=ts-node/esm --node-arg=--no-warnings \"src/**/*.spec.ts\" \"tests/**/*.spec.ts\"",
     "build": "npm-run-all docusaurus:build jekyll:build",
     "build:docusaurus": "npm run docusaurus:build",
