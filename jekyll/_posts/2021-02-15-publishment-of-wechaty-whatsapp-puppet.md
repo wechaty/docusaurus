@@ -35,9 +35,9 @@ npm i qrcode-terminal
 Then, you can implement your bot in a few lines of code, here is an basic demo:
 
 ```javascript
-const { Wechaty, log} = require("wechaty");
-const qrterminal = require('qrcode-terminal');
-const { PuppetWhatsapp} = require("wechaty-puppet-whatsapp");
+import { Wechaty, log}  from 'wechaty';
+import qrterminal  from 'qrcode-terminal';
+import { PuppetWhatsapp}  from 'wechaty-puppet-whatsapp';
 
 const puppet  = new PuppetWhatsapp()
 const bot = new Wechaty({ puppet })
