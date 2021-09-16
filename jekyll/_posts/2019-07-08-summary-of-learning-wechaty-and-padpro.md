@@ -39,7 +39,7 @@ tags:
 #### 快速创建`微信机器人`
 
 ```ts
-const { Wechaty } = require('wechaty')
+import { Wechaty }  from 'wechaty'
 
 Wechaty.instance() // Singleton
 .on('scan', (qrcode, status)  => console.log(`Scan QR Code to login: ${status}\nhttps://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrcode)}`))
