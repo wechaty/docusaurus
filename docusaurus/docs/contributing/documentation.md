@@ -70,7 +70,7 @@ The documentation is organized into several categories:
   not what you explain. It can be helpful to refer back to what you've done and
   explain afterwards.
 
-- [Explainations](explainations/overview.mdx) aim to explain a concept or subject at a
+- [explanations](explanations/overview.mdx) aim to explain a concept or subject at a
   fairly high level.
 
   Link to reference material rather than repeat it. Use examples and don't be
