@@ -5,11 +5,15 @@
 all: build
 
 .PHONY: install
-install: jekyll-install npm-install
+install: jekyll-install npm-install docusaurus-install
 
 .PHONY: jekyll-install
 jekyll-install:
 	cd jekyll && sudo make install
+
+.PHONY: docusaurus-install
+docusaurus-install:
+	cd docusaurus && npm install
 
 .PHONY: npm-install
 install:
