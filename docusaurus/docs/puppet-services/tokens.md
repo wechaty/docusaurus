@@ -40,7 +40,7 @@ TODO: list a easy to follow steps how to apply free token
 
 ### 2. Free TOKEN (Long-term)
 
-Long-term TOKEN is for those developers who has joined our [Wechaty Contributor Program](contributing/contributor-program.md).
+Long-term TOKEN is for those developers who have joined our [Wechaty Contributor Program](contributing/contributor-program.md).
 
 Anyone who has a merged PR to our GitHub repos will be welcome to join.
 
