@@ -69,7 +69,7 @@ const {
     log,
   }               = require('wechaty')
 
-const { PuppetPadplus } = require("wechaty-puppet-padplus")
+import { PuppetPadplus }  from 'wechaty-puppet-padplus'
 
 function onScan (qrcode, status) {
     if (status === ScanStatus.Waiting || status === ScanStatus.Timeout) {

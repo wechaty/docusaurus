@@ -96,19 +96,19 @@ npm i --save qr-image
 //引入必须的包
 var express = require("express");
 var qrImg = require('qr-image');
-const { Wechaty } = require("wechaty") // Wechaty核心包
-const { PuppetPadplus } = require("wechaty-puppet-padplus") // padplus协议包
-const { Friendship } = require("wechaty")
-const config = require("./src/config") // 配置文件
+import { Wechaty }  from 'wechaty' // Wechaty核心包
+import { PuppetPadplus }  from 'wechaty-puppet-padplus' // padplus协议包
+import { Friendship }  from 'wechaty'
+import config  from './src/config' // 配置文件
 //引入定时任务
-const schedule = require('node-schedule');
+import schedule  from 'node-schedule';
 var fs = require('fs');
 var request = require('request');
 //连接mysql数据库
-const conn = require('./src/mysqlconfig');
+import conn  from './src/mysqlconfig';
 const connectionmysql = conn();
 //创建腾讯闲聊机器人
-const tencentcloud = require("tencentcloud-sdk-nodejs");
+import tencentcloud  from 'tencentcloud-sdk-nodejs';
 const NlpClient = tencentcloud.nlp.v20190408.Client;
 
 var app = express();
