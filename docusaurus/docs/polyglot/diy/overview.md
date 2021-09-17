@@ -12,7 +12,7 @@ Wechaty already has an ecosystem in TypeScript, so you will not have to implemen
 ## Architecture
 
 The following diagram shows out that we can reuse almost everything in TypeScript, and what we need to do is only the block located at the top right of the diagram: `Wechaty (Polyglot)`.
-![Polyglot Architecture](../../static/img/polyglot-architecure.webp)
+![Polyglot Architecture](/img/polyglot-architecure.webp)
 
 ## Check-list
 
