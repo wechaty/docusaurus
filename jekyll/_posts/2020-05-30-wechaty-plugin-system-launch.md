@@ -24,7 +24,7 @@ image: /assets/2020/05-30-wechaty-plugin-system-launch/001.webp
 
 回溯漫长的过去，软件系统的发展史就是逐层封装的进化史。
 从汇编语言到高级语言、从命令行到图形界面……
-毫无疑问，“封装”让用户视角的计算机变得极其可用。
+毫无疑问，“封装” 让用户视角的计算机变得极其可用。
 同样的故事在小的落点中同样成立：在已经封装好的项目中，针对常见操作的代码段进行更深度的“封装”，用一行代码就能实现一个完整功能，将是效率的新的指数级提升。
 
 ![003](/assets/2020/05-30-wechaty-plugin-system-launch/003.webp)
@@ -35,7 +35,7 @@ Wechaty 的故事开始于用RPA的方式模拟登录微信，在过去的几年
 我们将过去对于绝大多数人难以想象的工作量，通过数万行代码封装成了最短六行代码就可以模拟登录微信的npm包。
 
 ```sh
-const { Wechaty } = require('wechaty') // import { Wechaty } from 'wechaty'
+import { Wechaty }  from 'wechaty' // import { Wechaty } from 'wechaty'
 Wechaty.instance() // Global Instance
 .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrcode)}`))
 .on('login',            user => console.log(`User ${user} logined`))
