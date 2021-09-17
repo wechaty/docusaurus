@@ -1,6 +1,6 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test  from 'tstest'
+import { test } from 'tstest'
 
 import path from 'path'
 import fs   from 'fs'
@@ -11,7 +11,7 @@ import globCB         from 'glob'
 import {
   REPO_ROOT,
   stripRepoRoot,
-}                     from '../../src/repo-root'
+}                     from '../../src/repo-root.js'
 
 const glob = util.promisify(globCB)
 

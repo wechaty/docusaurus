@@ -37,7 +37,7 @@ index.js
 
 ```javascript
 
-const { Wechaty } = require('wechaty');
+import { Wechaty }  from 'wechaty';
 
 const name = 'wechat-puppet-wechat';
 let bot = '';

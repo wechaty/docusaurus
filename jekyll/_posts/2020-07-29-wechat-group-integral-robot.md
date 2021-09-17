@@ -56,13 +56,13 @@ wechaty-puppet-padplus：wechaty的ipad协议实现
 ## 代码介绍
 
 ```javascript
-const { Wechaty } = require("wechaty") // Wechaty核心包
-const { PuppetPadplus } = require("wechaty-puppet-padplus") // padplus协议包
-const config = require("./config/config") // 配置文件
-const onScan = require("./src/onScan") // 机器人需要扫描二维码时监听回调
-const onRoomJoin = require("./src/onRoomJoin") // 加入房间监听回调
-const onMessage = require("./src/onMessage") // 消息监听回调
-const onFriendShip = require("./src/onFriendShip") // 好友添加监听回调
+import { Wechaty }  from 'wechaty' // Wechaty核心包
+import { PuppetPadplus }  from 'wechaty-puppet-padplus' // padplus协议包
+import config  from './config/config' // 配置文件
+import onScan  from './src/onScan' // 机器人需要扫描二维码时监听回调
+import onRoomJoin  from './src/onRoomJoin' // 加入房间监听回调
+import onMessage  from './src/onMessage' // 消息监听回调
+import onFriendShip  from './src/onFriendShip' // 好友添加监听回调
 
 // 初始化
 const bot = new Wechaty({
