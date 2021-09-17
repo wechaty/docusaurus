@@ -60,7 +60,7 @@ tags:
 
 ### 项目PPT
 
-{% include iframe.html src="/assets/2021/08-ospp-interim-report-matrix-wechaty/report-ppt.pdf" %}
+{% include iframe.html src="/assets/2021/08-ospp-mid-term-matrix-wechaty/report-ppt.pdf" %}
 
 ## 联系我们
 
