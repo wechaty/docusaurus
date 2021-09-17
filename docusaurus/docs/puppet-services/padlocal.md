@@ -80,8 +80,7 @@ You can telnet the virtual machine IP: 8788, simple debugging will not work.
 
 ### Step 2 : verify hostie token
 
-Visit [this link](https://api.chatie.io/v0/hosties/puppet_padlocal_xxxxxxxx).
-To check whether your token is successfully registered, if not, please go back to step 1 to check.
+Visit [this link](https://api.chatie.io/v0/hosties/puppet_padlocal_xxxxxxxx) to check whether your token is successfully registered, if not, please go back to step 1.
 
 Good:
 {"ip":"47.119.129.29","port":8788}
