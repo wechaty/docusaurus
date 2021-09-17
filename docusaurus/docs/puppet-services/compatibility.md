@@ -36,8 +36,8 @@ Create group chat|✅|✅|✅|✅
 Set group announcement|✅|✅|✅|✅
 Get group announcement|❌|❌|✅|✅
 Group QR Code|❌|❌|✅|✅
-Pull people into the group|✅|✅|✅|✅
-Kick out of the group|✅|✅|✅|✅
+Add people in the group|✅|✅|✅|✅
+Remove people from the group|✅|✅|✅|✅
 Exit group chat|✅|❌|✅|✅
 Change group name|✅|✅|✅|✅
 Group entry event|✅|✅|✅|✅
@@ -48,9 +48,9 @@ Group list|✅|✅|✅|✅
 Group member list|✅|✅|✅|✅
 Group details|✅|✅|✅|✅
 **3. Contact**|
-Modification notes|✅|✅|✅|✅
+Revise notes|✅|✅|✅|✅
 Add friends|✅|✅|✅|✅
-Pass friends automatically|✅|✅|✅|✅
+Automatically add friends|✅|✅|✅|✅
 Friends list|✅|✅|✅|✅
 Friends details|✅|✅|✅|✅
 **4. Other**|
