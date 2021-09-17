@@ -1,21 +1,21 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test  from 'tstest'
+import { test } from 'tstest'
 
 import util   from 'util'
 import fs     from 'fs'
 import globCB from 'glob'
 
-import { loadFront } from 'yaml-front-matter'
+import yfm from 'yaml-front-matter'
 
 import {
   getYearMonth,
   JEKYLL_FOLDER,
-}                             from '../../src/jekyll/mod'
+}                             from '../../src/jekyll/mod.js'
 
 import {
   stripRepoRoot,
-}                             from '../../src/repo-root'
+}                             from '../../src/repo-root.js'
 
 const glob = util.promisify(globCB)
 
@@ -31,13 +31,13 @@ test('front matter key `image` must has a value to define the teaser image', asy
     /**
      * Huan(202101): We leave the posts before 2021 as it is
      */
-    if (parseInt(year) < 2021) {
+    if (parseInt(year || '0') < 2021) {
       continue
     }
 
     const content = fs.readFileSync(file)
-    const front = loadFront(content)
-    const image = front.image
+    const front = yfm.loadFront(content)
+    const image = front['image']
 
     if (!image) {
       t.fail(`"${stripRepoRoot(file)}" 'frontmatter.image' should set to a beautiful teaser image`)

@@ -103,7 +103,7 @@ const {
   log,
 }= require('wechaty')
 
-const qrTerm = require('qrcode-terminal')
+import qrTerm  from 'qrcode-terminal'
 
 console.log(welcome)
 const bot = new Wechaty()
