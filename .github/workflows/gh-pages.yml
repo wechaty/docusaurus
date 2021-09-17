@@ -45,6 +45,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0  # https://github.com/facebook/docusaurus/issues/2798#issuecomment-636602951
+
     - name: Bundle Cache Config
       run: |
         sudo gem install bundler

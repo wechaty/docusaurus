@@ -1,21 +1,21 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test  from 'tstest'
+import { test } from 'tstest'
 
 import util   from 'util'
 import fs     from 'fs'
 import globCB from 'glob'
 
-import { loadFront } from 'yaml-front-matter'
+import yfm from 'yaml-front-matter'
 
 import {
   JEKYLL_FOLDER,
-}                             from '../../src/jekyll/mod'
+}                             from '../../src/jekyll/mod.js'
 
 import {
   stripRepoRoot,
-}                             from '../../src/repo-root'
-import { getFrontmatterCategoryList } from '../../src/jekyll/get-frontmatter-category-list'
+}                             from '../../src/repo-root.js'
+import { getFrontmatterCategoryList } from '../../src/jekyll/get-frontmatter-category-list.js'
 
 const glob = util.promisify(globCB)
 
@@ -26,9 +26,9 @@ const getFileToTagsMap = async () => {
 
   for (const file of postsFileList) {
     const content = fs.readFileSync(file)
-    const front = loadFront(content)
+    const front = yfm.loadFront(content)
 
-    let tagList  = front.tags
+    let tagList  = front['tags']
     if (!Array.isArray(tagList)) {
       tagList = tagList
         ? [tagList]
@@ -192,7 +192,7 @@ test('tags for project category', async t => {
 
   for (const file of postsFileList) {
     const categoryList  = getFrontmatterCategoryList(file)
-    const tagList = tagMap[file]
+    const tagList = tagMap[file]!
 
     if (tagList?.length <= 0) {
       continue
