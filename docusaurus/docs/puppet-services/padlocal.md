@@ -34,7 +34,7 @@ Go to [pad-local.com](http://pad-local.com/) to avail a **FREE** trail token for
 
 1. Run wechaty-puppet on a virtual machine
 2. Verify that the API is successfully registered
-3. Run local python-wechaty-getting-started
+3. Run local `python-wechaty-getting-started`
 4. Scan code login
 
 ### Step 1 : run wechaty-puppet-padlocal
