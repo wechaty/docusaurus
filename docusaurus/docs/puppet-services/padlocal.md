@@ -39,7 +39,7 @@ Go to [pad-local.com](http://pad-local.com/) to avail a **FREE** trail token for
 
 ### Step 1 : wechaty-puppet-padlocal
 
-You will need a domestic public network IP+Token (please register with the administrator) to make wechaty-puppet take effect in the virtual machine part. For the trial or free plan, you can choose Alibaba Cloud or Huawei Cloud or GCP. It is a pity that Google does not have a domestic IP. , Or you can also play gcp's k8s by the way, suggest that you still use domestic resources.
+You will need a domestic public network IP+Token (please register with the administrator) to make wechaty-puppet take effect in the virtual machine part. For the trial or free plan, you can choose Alibaba Cloud or Huawei Cloud or GCP. It is a pity that Google does not have a domestic IP. , or you can also play gcp's k8s by the way, suggest that you still use domestic resources.
 
 ![Step 1](../../static/img/docs/references/puppet-services/padlocal/step-1.webp)
 
