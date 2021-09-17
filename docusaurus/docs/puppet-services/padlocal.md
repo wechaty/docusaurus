@@ -32,12 +32,12 @@ Go to [pad-local.com](http://pad-local.com/) to avail a **FREE** trail token for
 
 ### Steps
 
-1. Run wechaty-puppet on a virtual machine
+1. Run `wechaty-puppet-padlocal` on a virtual machine
 2. Verify that the API is successfully registered
 3. Run local `python-wechaty-getting-started`
 4. Scan code login
 
-### Step 1 : run wechaty-puppet-padlocal
+### Step 1 : Run wechaty-puppet-padlocal
 
 You will need a domestic public network IP+Token (please register with the administrator) to make wechaty-puppet take effect in the virtual machine part. For the trial or free plan, you can choose Alibaba Cloud or Huawei Cloud or GCP. It is a pity that Google does not have a domestic IP. , or you can also play gcp's k8s by the way, suggest that you still use domestic resources.
 
