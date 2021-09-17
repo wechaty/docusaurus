@@ -38,8 +38,6 @@ The following diagram shows out that we can reuse almost everything in TypeScrip
 
 ### Wechaty External Modules
 
-Listed below are External modules of Wechaty-
-
 1. **Class FileBox** TS SLOC(638): <https://github.com/huan/file-box/blob/master/src/file-box.ts>
 1. **Class MemoryCard** TS SLOC(376): <https://github.com/huan/memory-card/blob/master/src/memory-card.ts>
 1. **Class WechatyPuppet** TS SLOC(1115): <https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts>  

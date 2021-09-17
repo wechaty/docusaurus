@@ -31,7 +31,7 @@ scala examples/ding-dong-bot.scala
 
 There is a hundred (100) lines class named `Image` in charge of downloading the WeChat image to different sizes. Below are the links to the Image class for both TypeScript and Scala for a better understanding of the code and the translation.
 
-* [TypeScript](https://github.com/wechaty/wechaty/blob/master/src/user/image.ts)
+* [TypeScript](https://github.com/wechaty/wechaty/blob/main/src/user/image.ts)
 * [Scala](https://github.com/wechaty/scala-wechaty/blob/master/wechaty/src/main/scala/wechaty/user/Image.scala)
 
 ## Blogs and links
