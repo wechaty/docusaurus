@@ -1,28 +1,25 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test   from 'tstest'
+import { test } from 'tstest'
 
 import path         from 'path'
 import util         from 'util'
 
 import fs     from 'fs'
 import globCB from 'glob'
-import { loadFront } from 'yaml-front-matter'
-import {
-  chunk,
-  shuffle,
-}               from 'lodash'
+import yfm from 'yaml-front-matter'
+import lodash from 'lodash'
 
 import {
   JEKYLL_FOLDER,
   isUrlExist,
   getChangedFileList,
   contributorFilenameToUsername,
-}                                 from '../../src/jekyll/mod'
+}                                 from '../../src/jekyll/mod.js'
 
 import {
   stripRepoRoot,
-}                             from '../../src/repo-root'
+}                             from '../../src/repo-root.js'
 
 const glob = util.promisify(globCB)
 
@@ -31,8 +28,8 @@ test('front matter key `author` should has a value exist in jekyll/_contributors
 
   for (const file of postsFileList) {
     const content = fs.readFileSync(file)
-    const front = loadFront(content)
-    const author = front.author
+    const front = yfm.loadFront(content)
+    const author = front['author']
     if (!author) {
       t.fail(`"${stripRepoRoot(file)}" author should set to ${author}`)
     }
@@ -68,27 +65,27 @@ test('developer project avatar should be put under assets/contributors/ folder',
 
   for (const file of contributorsFileList) {
     const content = fs.readFileSync(file)
-    const front   = loadFront(content)
+    const front   = yfm.loadFront(content)
 
-    if (!front.avatar) {
-      t.fail(`"${stripRepoRoot(file)}" should have avatar("${front.avatar}")`)
+    if (!front['avatar']) {
+      t.fail(`"${stripRepoRoot(file)}" should have avatar("${front['avatar']}")`)
     }
 
-    const startWithSlash = /^\//.test(front.avatar)
+    const startWithSlash = /^\//.test(front['avatar'])
     if (!startWithSlash) {
-      t.fail(`"${front.avatar}" should start with '/'`)
+      t.fail(`"${front['avatar']}" should start with '/'`)
     }
 
     const userName = contributorFilenameToUsername(file)
     const userNameRe = new RegExp(`/contributors/${userName}/`)
-    if (!userNameRe.test(front.avatar)) {
-      t.fail(`avatar "${front.avatar}" must be saved to folder "assets/contributors/${userName}"`)
+    if (!userNameRe.test(front['avatar'])) {
+      t.fail(`avatar "${front['avatar']}" must be saved to folder "assets/contributors/${userName}"`)
     }
 
-    if (/^http/i.test(front.avatar)) {
+    if (/^http/i.test(front['avatar'])) {
       t.fail(`${stripRepoRoot(file)} should put avatar files to local repo instead of using URL`)
     } else {
-      const filename = path.join(JEKYLL_FOLDER.root, front.avatar)
+      const filename = path.join(JEKYLL_FOLDER.root, front['avatar'])
       const good = fs.existsSync(filename)
       if (!good) {
         t.fail(`${stripRepoRoot(filename)} should exist`)
@@ -130,13 +127,13 @@ test('developer profile name must be GitHub username', async t => {
   const allUrlNum = urlList.length
 
   if (urlList.length > MAX_NUM) {
-    urlList = shuffle(urlList)
+    urlList = lodash.shuffle(urlList)
       .slice(0, MAX_NUM)
   }
 
   // console.info(urlList)
 
-  const nameListChunk = chunk(urlList, CHUNK_NUM)
+  const nameListChunk = lodash.chunk(urlList, CHUNK_NUM)
 
   for (const chunk of nameListChunk) {
     process.stdout.write(Array(chunk.length + 1).join('.'))
