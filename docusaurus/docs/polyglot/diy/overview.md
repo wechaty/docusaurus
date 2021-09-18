@@ -7,12 +7,47 @@ title: 'Polyglot: DIY'
 
 Wechaty is mainly built on TypeScript,  it is not very hard to translate the TypeScript(TS) to other programming languages [wechaty](https://github.com/wechaty/wechaty) has only 3,000 lines of the TS code, that are well designed and de-coupled by the [wechaty-puppet](https://github.com/wechaty/wechaty-puppet/) abstraction. So after translation of those 3,000 lines of TypeScript code, Wechaty can be used in any programming language.
 
-Wechaty already has an ecosystem in TypeScript, so you will not have to implement everything in other languages, especially since, in Feb 2020, Wechaty finished the [wechaty_grpc](https://github.com/wechaty/grpc) service abstracting module with the [wechaty-puppet-service](https://github.com/wechaty/wechaty-puppet-service) implementation.
+Wechaty already has an ecosystem in TypeScript, so you will not have to implement everything in other languages, especially since, in Feb 2020, Wechaty finished the [wechaty-grpc](https://github.com/wechaty/grpc) service abstracting module with the [wechaty-puppet-service](https://github.com/wechaty/wechaty-puppet-service) implementation.
 
 ## Architecture
 
 The following diagram shows out that we can reuse almost everything in TypeScript, and what we need to do is only the block located at the top right of the diagram: `Wechaty (Polyglot)`.
 ![Polyglot Architecture](/img/polyglot-architecure.webp)
+
+```ascii
+  +--------------------------+ +--------------------------+
+  |                          | |                          |
+  |   Wechaty (TypeScript)   | |    Wechaty(Polyglot)     |
+  |                          | |  Python, Go, Java, etc.  |
+  +--------------------------+ +--------------------------+
+
+  +-------------------------------------------------------+
+  |                 Wechaty Puppet Servuce                |
+  |                                                       |
+  |                (wechaty-puppet-service)               |
+  +-------------------------------------------------------+
+
++---------------------  wechaty_grpc  ----------------------+
+
+  +-------------------------------------------------------+
+  |                Wechaty Puppet Abstract                |
+  |                                                       |
+  |                   (wechaty-puppet)                    |
+  +-------------------------------------------------------+
+
+  +--------------------------+ +--------------------------+
+  |      Pad Protocol        | |      Web Protocol        |
+  |                          | |                          |
+  | wechaty-puppet-padlocal  | |  (wechaty-puppet-wechat) |
+  +--------------------------+ +--------------------------+
+  +--------------------------+ +--------------------------+
+  |     Windows Protocol     | |       WhatsApp Protocol  |
+  |                          | |                          |
+  |  (wechaty-puppet-xp)     | | (wechaty-puppet-whatsapp)|
+  +--------------------------+ +--------------------------+
+```
+
+> Chart made by [AsciiFlow](http://asciiflow.com/)
 
 ## Check-list
 
