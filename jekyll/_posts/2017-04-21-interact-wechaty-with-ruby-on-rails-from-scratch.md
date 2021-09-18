@@ -88,7 +88,7 @@ npm i --save wechaty chromedriver request
 Then create a new file named `bot.js` with this code base:
 
 ```javascript
-const { Wechaty } = require('wechaty');
+import { Wechaty }  from 'wechaty';
 
 function startBot() {
     const bot = Wechaty.instance({ profile: 'chatieme' });
@@ -104,7 +104,7 @@ startBot();
 Since we'd like to send the message to Rails app, we have to build a JSON object:
 
 ```javascript
-const { Wechaty } = require('wechaty');
+import { Wechaty }  from 'wechaty';
 
 function startBot() {
     const bot = Wechaty.instance({ profile: 'chatieme' });
@@ -338,8 +338,8 @@ We can test the API provided by Rails app using `curl`:
 We could take advantages of the library [request](https://github.com/request/request), posting the data to Rails:
 
 ```javascript
-const { Wechaty } = require('wechaty');
-const request = require('request');
+import { Wechaty }  from 'wechaty';
+import request  from 'request';
 
 function startBot() {
     const bot = Wechaty.instance({ profile: 'chatieme' });

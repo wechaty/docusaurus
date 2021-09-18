@@ -99,7 +99,7 @@ cnpm start //npm start
 
 底层 api 基于 [wechaty](https://github.com/wechaty/wechaty)
 
-更多微信消息、群消息、好友、对话等相关 api 可查阅官方文档 [wechaty 官方文档](https://github.com/wechaty/wechaty/blob/master/docs/index.md)
+更多微信消息、群消息、好友、对话等相关 api 可查阅官方文档 [wechaty 官方文档](https://github.com/wechaty/wechaty/blob/main/docs/index.md)
 
 > 作者: [peanut](https://github.com/isnl/)
 > Code: [Github](https://github.com/isnl/wechat-robot)
