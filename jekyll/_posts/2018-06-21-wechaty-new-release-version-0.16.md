@@ -98,7 +98,7 @@ There will be a **migration guide from v0.14 to v0.16** will be published on our
 
 Learn more between version at:
 
-- [Full Changelog](https://github.com/wechaty/wechaty/blob/master/CHANGELOG.md)
+- [Full Changelog](https://github.com/wechaty/wechaty/blob/main/CHANGELOG.md)
 - [Source Code of Wechaty v0.16](https://github.com/wechaty/wechaty/tree/v0.16.0) (2018-06-21)
 - [Commits Between v0.14 and v0.16](https://github.com/wechaty/wechaty/compare/v0.14.0...v0.16.0)
 
