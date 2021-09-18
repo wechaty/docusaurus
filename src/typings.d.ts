@@ -1,3 +1,3 @@
 declare module 'glob-promise'
-declare module 'is-pr'
+declare module 'ci-ifo'
 declare module 'probe-image-size'
