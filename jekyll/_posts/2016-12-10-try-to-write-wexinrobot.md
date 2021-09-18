@@ -107,7 +107,7 @@ Wechaty依赖的很多包都在墙外，建议使用国外的VPS，我使用的�
 环境部署好以后下面6行代码，就可以成功的实现基础的bot功能：将微信机器人收到的所有消息打印出来：
 
 ```shell
-const { Wechaty } = require('wechaty')
+import { Wechaty }  from 'wechaty'
 
 Wechaty.instance()
 .on('scan', (url, code) => console.log(`Scan QR Code to login: ${code}\n${url}`))

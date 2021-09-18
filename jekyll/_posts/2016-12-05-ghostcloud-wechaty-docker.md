@@ -28,7 +28,7 @@ wechaty使用node编写，所以支持几乎所有的平台，wechaty的hello-wo
 Step 1: 新建一个mybot.js，内容如下：
 
 ```javascript
-const { Wechaty } = require('wechaty')
+import { Wechaty }  from 'wechaty'
 
 Wechaty.instance() // Singleton
 .on('scan', (url, code) => console.log(`Scan QR Code to login: ${code}\n${url}`))
