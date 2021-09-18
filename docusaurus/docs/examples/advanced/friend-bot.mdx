@@ -37,7 +37,7 @@ Just scan the generated QR code with **WeChat** app, and you are ready to play w
 
 ## Requirements
 
-1. [Node.js](https://nodejs.org/en/download) v12+
+1. [Node.js](https://nodejs.org/en/download) v16+
 2. [Wechaty](https://github.com/wechaty/wechaty) v0.40+
 
 ## Getting started
@@ -219,8 +219,8 @@ Start by creating a new file `friend-bot.js`. We will be writing the code here.
 Let's import the required packages in the JavaScript file:
 
 ```js
-const qrTerm = require("qrcode-terminal");
-const { log, Wechaty, Friendship } = require("wechaty");
+import qrTerm  from 'qrcode-terminal';
+import { log, Wechaty, Friendship }  from 'wechaty';
 ```
 
 Define some functions required for handling different events returned by the Wechaty bot:
