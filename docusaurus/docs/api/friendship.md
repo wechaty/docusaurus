@@ -1,36 +1,37 @@
 ---
-title: Friendship
+title: Friendship 
 ---
 
-Send, receive friend request, and friend confirmation events.
+Wechaty bot allows you to make friends via its global class called `Friendship`.This section is completely about the `Frienship` class.
 
-## Friendship
+[Examples or Friend-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/friend-bot.ts)
 
-Send, receive friend request, and friend confirmation events.
+## Global class Friendship
 
-1. send request
-2. receive request\(in friend event\)
-3. confirmation friendship\(friend event\)
+The Friendship class allows you to do the following functionalities.
 
-[Examples/Friend-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/friend-bot.ts)
+1. send friend requests
+2. receive friend requests \(in friend event\)
+3. confirmation of friendship\( in friend event\)
 
-**Kind**: global class
+### Instance Method
 
-* [Friendship](friendship.md#Friendship)
-  * _instance_
-    * [.accept\(\)](friendship.md#Friendship+accept) ⇒ `Promise <void>`
-    * [.hello\(\)](friendship.md#Friendship+hello) ⇒ `string`
-    * [.contact\(\)](friendship.md#Friendship+contact) ⇒ `Contact`
-    * [.type\(\)](friendship.md#Friendship+type) ⇒ `FriendshipType`
-  * _static_
-    * [~~.send\(\)~~](friendship.md#Friendship.send)
-    * [.add\(contact, hello\)](friendship.md#Friendship.add) ⇒ `Promise <void>`
+| Instance Methods | Return Type      |
+|------------------|------------------|
+| accept()         | `Promise (void)` |
+| hello()          | `string`         |
+| contact()        | `contact`        |
+| type()           | `Frienshiptype`  |
+
+### Static Method
+
+| Static Methods | Return Type      |
+|----------------|------------------|
+| add()          | `Promise (void)` |
 
 ### friendship.accept\(\) ⇒ `Promise <void>`
 
-Accept Friend Request
-
-**Kind**: instance method of [`Friendship`](friendship.md#Friendship)  
+The method accepts friend request.Check the example below for implementation
 
 #### Example
 
@@ -62,9 +63,8 @@ bot.on('friendship', async friendship => {
 
 ### friendship.hello\(\) ⇒ `string`
 
-Get verify message from
+The method verifies message.Check the example below for implementation.
 
-**Kind**: instance method of [`Friendship`](friendship.md#Friendship)  
 **Example** _\(If request content is \`ding\`, then accept the friendship\)_
 
 ```javascript
@@ -84,9 +84,7 @@ bot.on('friendship', async friendship => {
 
 ### friendship.contact\(\) ⇒ `Contact`
 
-Get the contact from friendship
-
-**Kind**: instance method of [`Friendship`](friendship.md#Friendship)  
+The method gets the contact from friendship.Below is an example for implementation.
 
 #### Example
 
@@ -102,7 +100,7 @@ bot.on('friendship', friendship => {
 
 ### friendship.type\(\) ⇒ `FriendshipType`
 
-Return the Friendship Type
+The method returns the friendship type.Check the below example for implementation.
 
 > Tips: FriendshipType is enum here. &lt;/br&gt;
 >
@@ -111,8 +109,7 @@ Return the Friendship Type
 > * FriendshipType.Receive
 > * FriendshipType.Verify
 
-**Kind**: instance method of [`Friendship`](friendship.md#Friendship)  
-**Example** _\(If request content is \`ding\`, then accept the friendship\)_
+### Example _\(If request content is \`ding\`, then accept the friendship\)_
 
 ```javascript
 const bot = new Wechaty()
@@ -128,21 +125,9 @@ bot.on('friendship', async friendship => {
 .start()
 ```
 
-### ~~Friendship.send\(\)~~
-
-_**Deprecated**_
-
-use [Friendship\#add](friendship.md#friendship-add-contact-hello-promise) instead
-
-**Kind**: static method of [`Friendship`](friendship.md#Friendship)
-
 ### Friendship.add\(contact, hello\) ⇒ `Promise <void>`
 
-Send a Friend Request to a `contact` with message `hello`.
-
-The best practice is to send friend request once per minute. Remeber not to do this too frequently, or your account may be blocked.
-
-**Kind**: static method of [`Friendship`](friendship.md#Friendship)
+The method sends a Friend Request to a `contact` with message `hello`.The best practice is to send friend request once per minute. Remember not to do this too frequently, or your account may be blocked.
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
