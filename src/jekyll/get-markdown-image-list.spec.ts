@@ -1,12 +1,12 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test from 'tstest'
+import { test } from 'tstest'
 
 import path from 'path'
 
-import { JEKYLL_FOLDER } from './folders'
+import { JEKYLL_FOLDER } from './folders.js'
 
-import { getMarkdownImageList } from './get-markdown-image-list'
+import { getMarkdownImageList } from './get-markdown-image-list.js'
 
 test('getMarkdownImageList', async t => {
   const FILE = path.join(
