@@ -70,7 +70,7 @@ Generates markdown API documentation from jsdoc annotated source code. Useful fo
 
 When you document your code using valid jscode comments and run jsdoc command (e.g. `jsdoc2md example.js`), then you can get a markdown output easily.
 
-At first, I just write all of jsdoc in the code and link [wechaty/docs/index.md](https://github.com/wechaty/wechaty/blob/master/docs/index.md) to the users, but I cannot sync `README.md` file with the code and make readme as simple as it can, so I have to do some else.
+At first, I just write all of jsdoc in the code and link [wechaty/docs/index.md](https://github.com/wechaty/wechaty/blob/main/docs/index.md) to the users, but I cannot sync `README.md` file with the code and make readme as simple as it can, so I have to do some else.
 
 First, I should know how jsdoc2md works.
 
@@ -124,17 +124,17 @@ For the convenience of developers, our doc guideline as follows:
 2. Embedded doc insert in TypeScript
 3. Compile TypeScript into JavaScript, using `npm run dist`
 4. Run jsdoc / jsdoc2md, using `npm run doc`
-5. Get the final doc, in [index.md](https://github.com/wechaty/wechaty/blob/master/docs/index.md), config it to [wechaty.github.io/wechaty](http://wechaty.github.io/wechaty)
+5. Get the final doc, in [index.md](https://github.com/wechaty/wechaty/blob/main/docs/index.md), config it to [wechaty.github.io/wechaty](http://wechaty.github.io/wechaty)
 
 ### Wechaty Jsdoc file
 
 We embed doc into the following file:
 
-* [src/wechaty.ts](https://github.com/wechaty/wechaty/blob/master/src/wechaty.ts)
-* [src/message.ts](https://github.com/wechaty/wechaty/blob/master/src/message.ts)
-* [src/room.ts](https://github.com/wechaty/wechaty/blob/master/src/room.ts)
-* [src/contact.ts](https://github.com/wechaty/wechaty/blob/master/src/contact.ts)
-* [src/friend-request.ts](https://github.com/wechaty/wechaty/blob/master/src/friend-request.ts)
+* [src/wechaty.ts](https://github.com/wechaty/wechaty/blob/main/src/wechaty.ts)
+* [src/message.ts](https://github.com/wechaty/wechaty/blob/main/src/message.ts)
+* [src/room.ts](https://github.com/wechaty/wechaty/blob/main/src/room.ts)
+* [src/contact.ts](https://github.com/wechaty/wechaty/blob/main/src/contact.ts)
+* [src/friend-request.ts](https://github.com/wechaty/wechaty/blob/main/src/friend-request.ts)
 
 ### Wechaty jsdoc2md progress
 
@@ -194,6 +194,6 @@ function foo() {
 npm run doc
 ```
 
-Then you can find the generated jsdoc here: [wechaty/docs/index.md](https://github.com/wechaty/wechaty/blob/master/docs/index.md)
+Then you can find the generated jsdoc here: [wechaty/docs/index.md](https://github.com/wechaty/wechaty/blob/main/docs/index.md)
 
 Cheers!
