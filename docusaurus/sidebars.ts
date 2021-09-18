@@ -74,8 +74,10 @@ const puppetServices: SubMenuData = {
     'puppet-services/padlocal',
     'puppet-services/paimon',
     'puppet-services/donut',
+    'puppet-services/tokens',
     'puppet-services/compatibility',
     'puppet-services/diy',
+    'puppet-services/faq',
   ]
 }
 
