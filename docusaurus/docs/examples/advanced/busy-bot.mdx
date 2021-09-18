@@ -208,9 +208,9 @@ Create a new file `busy-bot.js`. You will be writing code here.
 Let's import required packages in `busy-bot.js` and initialize the bot by providing it a name and puppet to be used.
 
 ```js
-const { Wechaty, log } = require("wechaty");
+import { Wechaty, log }  from 'wechaty';
 
-const qrTerm = require("qrcode-terminal");
+import qrTerm  from 'qrcode-terminal';
 
 const bot = new Wechaty({
   name: "busy-bot",
