@@ -44,7 +44,7 @@ github：[https://github.com/hurely/wechaty-wangke](https://github.com/hurely/we
 1.src/index.js --wechaty 启动的入口文件
 
 ```js
-const config = require("../config/config")
+import config  from '../config/config'
 
 const {
   Wechaty,
@@ -52,9 +52,9 @@ const {
   log,
 }   = require('wechaty')
 
-const { PuppetPadplus } = require("wechaty-puppet-padplus")
+import { PuppetPadplus }  from 'wechaty-puppet-padplus'
 
-const replyToAMessage = require("./utils/reply")
+import replyToAMessage  from './utils/reply'
 
 function onScan (qrcode, status) {
   if (status === ScanStatus.Waiting || status === ScanStatus.Timeout) {
@@ -131,12 +131,12 @@ module.exports = {
 3.src/utils/reply.js 根据关键字，回复内容
 
 ```js
-const axios = require("axios");
+import axios  from 'axios';
 const {
   FileBox
 } = require("file-box") const {
   log
-} = require('wechaty') const config = require("../../config/config") const {
+} = require('wechaty') import config  from '../../config/config' const {
   pareMiniProgramMsg,
   pareseXmlToJson
 } = require("../utils/utils")

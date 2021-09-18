@@ -148,7 +148,7 @@ pm2配置
 `wechaty`有一个`heartbeat`事件，可以推送当前客户端登录的状态，所以实现起来也是很方便的
 
 ```ts
-const {sendHeartBeat} = require('../proxy/aibotk')
+import {sendHeartBeat}  from '../proxy/aibotk'
 
 async function onHeartBeat(str) {
     if (!str) {
