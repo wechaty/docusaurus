@@ -26,8 +26,8 @@ tags:
 
 ```javascript
 // ./index.js
-const tokenJSON = require("./token.json")
-const infoJSON = require("./package.json")
+import tokenJSON  from './token.json'
+import infoJSON  from './package.json'
 console.log(`Running LazyBot ${infoJSON.version}...`)
 console.log(`Trying to detect 'token' from './token.json'`)
 if (!tokenJSON.token) {
@@ -35,7 +35,7 @@ if (!tokenJSON.token) {
     return
 }
 console.log(`Detect 'token' from './token.json': ${tokenJSON.token}`)
-const main = require("./main.js")
+import main  from './main.js'
 main(tokenJSON.token, './bot-settings.json')
 ```
 
@@ -50,11 +50,11 @@ module.exports = function(token, botSettingFile) {
     // ...
     // Import Settings
     // ...
-    const botSettings = require("./bot-settings.json");
-    const schedule = require("node-schedule");
+    import botSettings  from './bot-settings.json';
+    import schedule  from 'node-schedule';
     // Import Command System
-    const commandUnits = require("./commands.js");
-    const utils = require("./utils.js");
+    import commandUnits  from './commands.js';
+    import utils  from './utils.js';
     // Construct Puppet
     const puppet = new PuppetPadplus({ token });
     const name = "LazyBot";
