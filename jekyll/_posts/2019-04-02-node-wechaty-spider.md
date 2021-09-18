@@ -78,12 +78,12 @@ index.js
      * WechatBot
      *  - https://github.com/gengchen528/wechatBot
      */
-    const {Wechaty,Friendship} = require('wechaty')
-    const schedule = require('./schedule/index')
-    const config = require('./config/index')
-    const untils = require('./untils/index')
-    const superagent = require('./superagent/index')
-    const {FileBox} = require('file-box') //文件读取模块
+    import {Wechaty,Friendship}  from 'wechaty'
+    import schedule  from './schedule/index'
+    import config  from './config/index'
+    import untils  from './untils/index'
+    import superagent  from './superagent/index'
+    import {FileBox}  from 'file-box' //文件读取模块
     //  二维码生成
     function onScan (qrcode, status) {
       require('qrcode-terminal').generate(qrcode)  // 在console端显示二维码
@@ -207,9 +207,9 @@ index.js
 superagent/index.js
 
 ```js
-    const superagent = require('../config/superagent')
-    const config = require('../config/index')
-    const cheerio = require('cheerio')
+    import superagent  from '../config/superagent'
+    import config  from '../config/index'
+    import cheerio  from 'cheerio'
 
     async function getOne() { // 获取每日一句
       let res = await superagent.req(config.ONE,'GET')
