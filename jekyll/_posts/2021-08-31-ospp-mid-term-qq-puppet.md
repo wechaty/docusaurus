@@ -63,7 +63,7 @@ QQ 是国内和微信并列的两大聊天软件。我们在本次 Summer 2021 �
     完成期中 Demo Day 视频和wechaty.js.org上的中期报告
 
   - 9.1-10.30（即将完成）
-  
+
     继续完善功能，将消息接收，扩展到群聊天消息、图片消息等领域。
 
 ## 项目进度
@@ -97,19 +97,19 @@ QQ 是国内和微信并列的两大聊天软件。我们在本次 Summer 2021 �
 
 ## 项目成果
 
-项目仓库: <https://github.com/anaivebird/wechaty-puppet-oicq>
+项目仓库: <https://github.com/wechaty/wechaty-puppet-oicq>
 
 ### live coding视频：
 
-> 国际版： <https://youtu.be/FY4U2JPZjxE>
->
-> 国内版： <http://www.iqiyi.com/v_gqyz7g94fw.html>
+{% include iframe.html src="https://youtu.be/FY4U2JPZjxE" %}
+
+{% include iframe.html src="http://www.iqiyi.com/v_gqyz7g94fw.html" %}
 
 ### PPT展示视频：
 
-> 国际版： <https://youtu.be/pT16CnFhTPQ>
->
-> 国内版： <http://www.iqiyi.com/v_1ixjchyr7yw.html>
+{% include iframe.html src="https://youtu.be/pT16CnFhTPQ" %}
+
+{% include iframe.html src="http://www.iqiyi.com/v_1ixjchyr7yw.html" %}
 
 ### 项目PPT：
 
