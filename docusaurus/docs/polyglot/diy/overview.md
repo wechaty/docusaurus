@@ -62,72 +62,72 @@ The following diagram shows out that we can reuse almost everything in TypeScrip
 ### Wechaty Internal Modules
 
 1. [ ] Class Wechaty @wj-mCat
-    - TS SLOC(1160): <https://github.com/wechaty/wechaty/blob/master/src/wechaty.ts>
+    - TS SLOC(1160): <https://github.com/wechaty/wechaty/blob/main/src/wechaty.ts>
     - [ ] Code
     - [ ] Unit Tests
     - [ ] Documentation
 1. [ ] Class Contact
-    - TS SLOC(804): <https://github.com/wechaty/wechaty/blob/master/src/user/contact.ts>
+    - TS SLOC(804): <https://github.com/wechaty/wechaty/blob/main/src/user/contact.ts>
     - [ ] Code
     - [ ] Unit Tests
     - [ ] Documentation
 1. [ ] Class ContactSelf
-    - TS SLOC(199): <https://github.com/wechaty/wechaty/blob/master/src/user/contact-self.ts>
+    - TS SLOC(199): <https://github.com/wechaty/wechaty/blob/main/src/user/contact-self.ts>
     - [ ] Code
     - [ ] Unit Tests
     - [ ] Documentation
 1. [ ] Class Message
-    - TS SLOC(1054): <https://github.com/wechaty/wechaty/blob/master/src/user/message.ts>
+    - TS SLOC(1054): <https://github.com/wechaty/wechaty/blob/main/src/user/message.ts>
     - [ ] Code
     - [ ] Unit Tests
     - [ ] Documentation
 1. [ ] Class Room
-    - TS SLOC(1194): <https://github.com/wechaty/wechaty/blob/master/src/user/room.ts>
+    - TS SLOC(1194): <https://github.com/wechaty/wechaty/blob/main/src/user/room.ts>
     - [ ] Code
     - [ ] Unit Tests
     - [ ] Documentation
 1. [ ] Class Image @wj-mCat
-    - TS SLOC(60): <https://github.com/wechaty/wechaty/blob/master/src/user/image.ts>
+    - TS SLOC(60): <https://github.com/wechaty/wechaty/blob/main/src/user/image.ts>
     - [ ] Code
     - [ ] Unit Tests
     - [ ] Documentation
 1. [ ] Class Accessory @huan
-    - TS SLOC(179): <https://github.com/wechaty/wechaty/blob/master/src/accessory.ts>
+    - TS SLOC(179): <https://github.com/wechaty/wechaty/blob/main/src/accessory.ts>
     - [ ] Code
     - [ ] Unit Tests
     - [ ] Documentation
 1. [ ] Class Config @wj-mCat
-    - TS SLOC(187): <https://github.com/wechaty/wechaty/blob/master/src/config.ts>
+    - TS SLOC(187): <https://github.com/wechaty/wechaty/blob/main/src/config.ts>
     - [ ] Code
     - [ ] Unit Tests
     - [ ] Documentation
 1. [ ] Class Favorite
-    - TS SLOC(52): <https://github.com/wechaty/wechaty/blob/master/src/user/favorite.ts>
+    - TS SLOC(52): <https://github.com/wechaty/wechaty/blob/main/src/user/favorite.ts>
     - [ ] Code
     - [ ] Unit Tests
     - [ ] Documentation
 1. [ ] Class Friendship
-    - TS SLOC(417): <https://github.com/wechaty/wechaty/blob/master/src/user/friendship.ts>
+    - TS SLOC(417): <https://github.com/wechaty/wechaty/blob/main/src/user/friendship.ts>
     - [ ] Code
     - [ ] Unit Tests
     - [ ] Documentation
 1. [ ] Class MiniProgram
-    - TS SLOC(70): <https://github.com/wechaty/wechaty/blob/master/src/user/mini-program.ts>
+    - TS SLOC(70): <https://github.com/wechaty/wechaty/blob/main/src/user/mini-program.ts>
     - [ ] Code
     - [ ] Unit Tests
     - [ ] Documentation
 1. [ ] Class RoomInvitation
-    - TS SLOC(317): <https://github.com/wechaty/wechaty/blob/master/src/user/room-invitation.ts>
+    - TS SLOC(317): <https://github.com/wechaty/wechaty/blob/main/src/user/room-invitation.ts>
     - [ ] Code
     - [ ] Unit Tests
     - [ ] Documentation
 1. [ ] Class Tag
-    - TS SLOC(190): <https://github.com/wechaty/wechaty/blob/master/src/user/tag.ts>
+    - TS SLOC(190): <https://github.com/wechaty/wechaty/blob/main/src/user/tag.ts>
     - [ ] Code
     - [ ] Unit Tests
     - [ ] Documentation
 1. [ ] Class UrlLink
-    - TS SLOC(107): <https://github.com/wechaty/wechaty/blob/master/src/user/url-link.ts>
+    - TS SLOC(107): <https://github.com/wechaty/wechaty/blob/main/src/user/url-link.ts>
     - [ ] Code
     - [ ] Unit Tests
     - [ ] Documentation
@@ -145,7 +145,7 @@ The following diagram shows out that we can reuse almost everything in TypeScrip
     - [ ] Unit Tests
     - [ ] Documentation
 1. [ ] Class WechatyPuppet
-    - TS SLOC(1115): <https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts>
+    - TS SLOC(1115): <https://github.com/wechaty/wechaty-puppet/blob/main/src/puppet.ts>
     - [ ] Code
     - [ ] Unit Tests
     - [ ] Documentation
@@ -163,7 +163,7 @@ It is a great example for demonstrating how do we translate the TypeScript to Py
 
 ### Image Class Source Code
 
-- TypeScript: <https://github.com/wechaty/wechaty/blob/master/src/user/image.ts>
+- TypeScript: <https://github.com/wechaty/wechaty/blob/main/src/user/image.ts>
 - Python: <https://github.com/wechaty/python-wechaty/blob/master/src/wechaty/user/image.py>
 
 If you are interested in the translation and want to look at how it works, it will be a good start from reading and comparing those two `Image` class files in TypeScript and Python at the same time.
