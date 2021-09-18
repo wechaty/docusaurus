@@ -13,6 +13,8 @@ tags:
   - ospp-2021
   - mid-term
   - other
+  - puppet
+  - qq
 ---
 
 “[开源软件供应链点亮计划-暑期2021](https://summer.iscas.ac.cn)”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。活动联合各大开源社区，针对重要开源软件的开发与维护提供项目，并向全球高校学生开放报名。 学生可自主选择感兴趣的项目进行申请，并在中选后获得该软件资深维护者（社区导师）亲自指导的机会。 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2021”活动奖金和奖杯。
@@ -47,22 +49,22 @@ QQ 是国内和微信并列的两大聊天软件。我们在本次 Summer 2021 �
 - 第一阶段（7月-8月）
   - 7.1-7.10（已如期完成）
 
-        先和导师沟通，并观看Wechaty Puppet Provider 的 workshop 视频，熟悉Wechaty Puppet Provider的业务流程，并对自己目前还没有掌握的nodejs、npm、typescript等内容进行快速的了解和学习，对时间安排做好具体的规划
+    先和导师沟通，并观看Wechaty Puppet Provider 的 workshop 视频，熟悉Wechaty Puppet Provider的业务流程，并对自己目前还没有掌握的nodejs、npm、typescript等内容进行快速的了解和学习，对时间安排做好具体的规划
 
   - 7.11-8.15（已如期完成）
 
-        开始正式进行代码的prototyping，先完成基础的功能，完成通过 Wechaty 加载 wechaty-puppet-oicq 模块，并通过oicq项目实现的qq协议，实现文本消息的收发功能。每周协同导师进行功能的开发和完善
+    开始正式进行代码的prototyping，先完成基础的功能，完成通过 Wechaty 加载 wechaty-puppet-oicq 模块，并通过oicq项目实现的qq协议，实现文本消息的收发功能。每周协同导师进行功能的开发和完善
 
 - 第二阶段（8月-10月）
 
     在现有基础上，滑动验证码登陆、设备锁、qq登陆风控等问题进行调研和排查
   - 8.16-8.30
 
-        完成期中 Demo Day 视频和wechaty.js.org上的中期报告
+    完成期中 Demo Day 视频和wechaty.js.org上的中期报告
 
   - 9.1-10.30（即将完成）
-
-        继续完善功能，将消息接收，扩展到群聊天消息、图片消息等领域。
+  
+    继续完善功能，将消息接收，扩展到群聊天消息、图片消息等领域。
 
 ## 项目进度
 
@@ -93,13 +95,21 @@ QQ 是国内和微信并列的两大聊天软件。我们在本次 Summer 2021 �
 
     按照原计划继续进行，并且尽可能对图片消息、语音消息等增加支持，使wechaty-puppet-oicq成为事件和API支持非常详细的机器人协议提供端。",
 
+## 项目成果
+
+项目仓库: <https://github.com/anaivebird/wechaty-puppet-oicq>
+
 ### live coding视频：
 
-{% include iframe.html src="https://youtu.be/FY4U2JPZjxE" %}
+> 国际版： <https://youtu.be/FY4U2JPZjxE>
+>
+> 国内版： <http://www.iqiyi.com/v_gqyz7g94fw.html>
 
 ### PPT展示视频：
 
-{% include iframe.html src="https://youtu.be/pT16CnFhTPQ" %}
+> 国际版： <https://youtu.be/pT16CnFhTPQ>
+>
+> 国内版： <http://www.iqiyi.com/v_1ixjchyr7yw.html>
 
 ### 项目PPT：
 
