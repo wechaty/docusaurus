@@ -83,66 +83,66 @@ Let's take up an example on how to integrate bot from [starter templete](https:/
 1. Offical Wechaty package: [package/wechaty](https://www.npmjs.com/package/wechaty).
 2. Configure your system environment variables as below:
 
-* `WECHATY_PUPPET_LARK_APPID`: for the app ID of Feishu application.
-* `WECHATY_PUPPET_LARK_APPSECRET`: for the app secret of Feishu App.
-* `WECHATY_PUPPET_LARK_TOKEN`: for the verification token provided by Feishu Event Subscription Platform.
+- `WECHATY_PUPPET_LARK_APPID`: for the app ID of Feishu application.
+- `WECHATY_PUPPET_LARK_APPSECRET`: for the app secret of Feishu App.
+- `WECHATY_PUPPET_LARK_TOKEN`: for the verification token provided by Feishu Event Subscription Platform.
 
 You can follow up the steps mentioned below:
 
-1. Initialize the project by creating a new folder `my-bot`:
+  1. Initialize the project by creating a new folder `my-bot`:
 
-```ts
-mkdir my-bot
-cd my-bot
-```
+  ```ts
+  mkdir my-bot
+  cd my-bot
+  ```
 
-2. Install the dependencies using the following commands:
+  2. Install the dependencies using the following commands:
 
-```ts
-npm install wechaty
-```
+  ```ts
+  npm install wechaty
+  ```
 
-3. Add the dependencies for using the bot with Lark:
+  3. Add the dependencies for using the bot with Lark:
 
-```ts
-npm install wechaty-puppet-lark
-```
+  ```ts
+  npm install wechaty-puppet-lark
+  ```
 
-4. Create a new folder `src` and add a file `my-bot.js`. Add any of the functions from <a href="#"> add functionality to the bot</a> section to the snippet below:
+  4. Create a new folder `src` and add a file `my-bot.js`. Add any of the functions from <a href="#"> add functionality to the bot</a> section to the snippet below:
 
-```ts
-import {
+  ```ts
+  import {
   Contact,
   Message,
   ScanStatus,
   Wechaty,
   log,
-} from 'wechaty'
+  } from 'wechaty'
 
-console.log(welcome)
-const bot = new Wechaty()
+  console.log(welcome)
+  const bot = new Wechaty()
 
-/*
- *Your function goes here
- */
-```
+  /*
+  *Your function goes here
+  */
+  ```
 
-5. Obtain your functional permissions on Feishu platform from [Feishu Open Platform-Application Permission](https://open.feishu.cn/document/ukTMukTMukTM/uQjN3QjL0YzN04CN2cDN).
+  5. Obtain your functional permissions on Feishu platform from [Feishu Open Platform-Application Permission](https://open.feishu.cn/document/ukTMukTMukTM/uQjN3QjL0YzN04CN2cDN).
 
-6. After you are done with the file, you can run the bot using the following commands:
+  6. After you are done with the file, you can run the bot using the following commands:
 
-```ts
-export WECHATY_LOG=verbose
-export WECHATY_PUPPET=wechaty-puppet-lark
-node src/my-bot.js
-```
+  ```ts
+  export WECHATY_LOG=verbose
+  export WECHATY_PUPPET=wechaty-puppet-lark
+  node src/my-bot.js
+  ```
 
 Copy the generated code to Lark and you are ready to play with the bot!
 
 You can deploy the bot with popular container solutions as well such as:
 
-* Heroku
-* Docker
+- Heroku
+- Docker
 
 ## Videos
 
