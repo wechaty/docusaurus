@@ -82,7 +82,6 @@ Let's take up an example on how to integrate bot from [starter templete](https:/
 
 1. Offical Wechaty package: [package/wechaty](https://www.npmjs.com/package/wechaty).
 2. Configure your system environment variables as below:
-
   - `WECHATY_PUPPET_LARK_APPID`: for the app ID of Feishu application.
   - `WECHATY_PUPPET_LARK_APPSECRET`: for the app secret of Feishu App.
   - `WECHATY_PUPPET_LARK_TOKEN`: for the verification token provided by Feishu Event Subscription Platform.
