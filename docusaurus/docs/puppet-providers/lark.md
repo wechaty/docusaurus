@@ -82,32 +82,32 @@ Let's take up an example on how to integrate bot from [starter templete](https:/
 
 1. Offical Wechaty package: [package/wechaty](https://www.npmjs.com/package/wechaty).
 2. Configure your system environment variables as below:
-  - `WECHATY_PUPPET_LARK_APPID`: for the app ID of Feishu application.
-  - `WECHATY_PUPPET_LARK_APPSECRET`: for the app secret of Feishu App.
-  - `WECHATY_PUPPET_LARK_TOKEN`: for the verification token provided by Feishu Event Subscription Platform.
+- `WECHATY_PUPPET_LARK_APPID`: for the app ID of Feishu application.
+- `WECHATY_PUPPET_LARK_APPSECRET`: for the app secret of Feishu App.
+- `WECHATY_PUPPET_LARK_TOKEN`: for the verification token provided by Feishu Event Subscription Platform.
 
 You can follow up the steps mentioned below:
 
-1. Initialize the project by creating a new folder `my-bot`:
+- Initialize the project by creating a new folder `my-bot`:
 
 ```ts
 mkdir my-bot
 cd my-bot
 ```
 
-2. Install the dependencies using the following commands:
+- Install the dependencies using the following commands:
 
 ```ts
 npm install wechaty
 ```
 
-3. Add the dependencies for using the bot with Lark:
+- Add the dependencies for using the bot with Lark:
 
 ```ts
 npm install wechaty-puppet-lark
 ```
 
-4. Create a new folder `src` and add a file `my-bot.js`. Add any of the functions from <a href="#"> add functionality to the bot</a> section to the snippet below:
+- Create a new folder `src` and add a file `my-bot.js`. Add any of the functions from <a href="#"> add functionality to the bot</a> section to the snippet below:
 
 ```ts
 import {
@@ -126,9 +126,9 @@ const bot = new Wechaty()
 */
 ```
 
-5. Obtain your functional permissions on Feishu platform from [Feishu Open Platform-Application Permission](https://open.feishu.cn/document/ukTMukTMukTM/uQjN3QjL0YzN04CN2cDN).
+- Obtain your functional permissions on Feishu platform from [Feishu Open Platform-Application Permission](https://open.feishu.cn/document/ukTMukTMukTM/uQjN3QjL0YzN04CN2cDN).
 
-6. After you are done with the file, you can run the bot using the following commands:
+- After you are done with the file, you can run the bot using the following commands:
 
 ```ts
 export WECHATY_LOG=verbose
