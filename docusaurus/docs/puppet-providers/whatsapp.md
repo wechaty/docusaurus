@@ -147,8 +147,8 @@ Scan it using your Whatsapp and you are ready to play with the bot!
 
 You can deploy the bot with popular container solutions as well such as:
 
-* Heroku
-* Docker
+- Heroku
+- Docker
 
 ## Features to be implemented
 
