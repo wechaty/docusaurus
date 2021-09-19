@@ -119,6 +119,37 @@ npm install wechaty-puppet-whatsapp
 ```
 
 <li> Create a new folder `src` and add a file `my-bot.js`. Add your custom functions to the code snippet below:</li>
+```ts
+const {
+  Contact,
+  Message,
+  ScanStatus,
+  Wechaty,
+  log,
+}= require('wechaty')
+const qrTerm = require('qrcode-terminal')
+console.log(welcome)
+const bot = new Wechaty()
+/*
+ *Your function goes here
+ */
+```
+
+<li> After you are done with the file, you can run the bot using the following commands:</li></ol>
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-whatsapp
+node src/my-bot.js
+```
+
+Scan it using your Whatsapp and you are ready to play with the bot!
+
+You can deploy the bot with popular container solutions as well such as:
+
+* [Heroku](#a)
+* [Docker](#b)
+
 
 ## Features to be implemented
 
@@ -154,4 +185,4 @@ wechaty-puppet-whatsapp is an open-source project. If you’re interested in con
 ## Maintainers
 
 - [@univerone](https://wechaty.js.org/contributors/univerone)
-- [@huan] Huan LI <zixia@zixia.net>
+- [@huan](https://github.com/huan) [Huan LI](http://linkedin.com/in/zixia) \<zixia@zixia.net\>
