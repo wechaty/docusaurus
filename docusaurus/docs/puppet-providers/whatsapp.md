@@ -32,6 +32,16 @@ Wechaty Puppet Whatsapp is built on top of whatsapp-web.js, which is A WhatsApp 
 
 ## Usage
 
+### Requirements
+
+1. Your system must have [Node.js](https://nodejs.org/en/download/package-manager/) installed (version >= 12).
+2. Your system must have [Wechaty](https://github.com/wechaty/wechaty) (version >= 0.40).
+3. You must be familiar with [Wechaty Plugins](https://www.npmjs.com/package/wechaty-plugin-contrib).
+
+### Deployment
+
+Run `wechaty-puppet-whatsapp`:
+
 <!-- MDX import -->
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
@@ -75,42 +85,40 @@ npm start
 </TabItem>
 </Tabs>
 
-## Getting started
+### Integrating a Bot to Whatsapp
 
-First, you should install the package :
+Let's take up an example on how to integrate bot from [starter templete](https://github.com/wechaty/wechaty-getting-started) to Whatsapp.
 
-```sh
-npm i wechaty-puppet-whatsapp
-npm i wechaty
+The steps are similar for all other bots as well.
+
+#### Prerequisite
+
+1. Offical Wechaty package: [package/wechaty](https://www.npmjs.com/package/wechaty).
+2. QRCode terminal edition: [package/qrcode-terminal](https://www.npmjs.com/package/qrcode-terminal).
+
+You can follow up the steps mentioned below:
+
+<ol><li> Initialize the project by creating a new folder `my-bot`.</li>
+
+```bash
+mkdir my-bot
+cd my-bot
 ```
 
-To enable the display of QR code in the terminal, qrcode-terminal should also be installed.
+<li> Install the dependencies using the following commands:</li>
 
-```sh
-npm i qrcode-terminal
+```bash
+npm install wechaty
+npm install qrcode-terminal
 ```
 
-Then, you can implement your bot in a few lines of code, here is an basic demo:
+<li> Add the dependencies for using the bot with Whatsapp.</li>
 
-```ts
-const { Wechaty, log} = require("wechaty");
-const qrterminal = require('qrcode-terminal');
-const { PuppetWhatsapp} = require("wechaty-puppet-whatsapp");
-
-const puppet  = new PuppetWhatsapp()
-const bot = new Wechaty({ puppet })
-
-bot
-  .on('scan', qrcode => qrterminal.generate(qrcode, { small: true }))
-  .on('login', user => log.info(`User ${user} logged in`))
-  .on('message', message => log.info(`Message: ${message}`))
-
-bot.start()
-  .then(() => log.info('StarterBot', 'Starter Bot Started.'))
-  .catch(e => log.error('StarterBot', e))
+```bash
+npm install wechaty-puppet-whatsapp
 ```
 
-After scanning a WhatsApp QR code and logging in, you can view the received messages in the terminal, feel free to implement your own function over the messages based on your need.
+<li> Create a new folder `src` and add a file `my-bot.js`. Add your custom functions to the code snippet below:</li>
 
 ## Features to be implemented
 
