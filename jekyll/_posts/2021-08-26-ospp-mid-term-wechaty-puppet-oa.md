@@ -83,13 +83,13 @@ tags:
 
 {% include iframe.html src="https://youtu.be/acEAgTdApQc" %}
 
-{% include iframe.html src="https://www.bilibili.com/video/BV1zv411w7w6/" %}
+Bilibili link: <https://www.bilibili.com/video/BV1zv411w7w6/>
 
 ### PPT展示视频
 
 {% include iframe.html src="https://youtu.be/iazpyB54PwU" %}
 
-{% include iframe.html src="https://www.bilibili.com/video/BV1L44y1h7RR/" %}
+Bilibili link：<https://www.bilibili.com/video/BV1L44y1h7RR/>
 
 ### PPT
 
