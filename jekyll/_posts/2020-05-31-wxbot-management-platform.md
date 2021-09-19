@@ -44,7 +44,7 @@ image: /assets/2020/wxbot/qrcode.png
 6行js创建一个机器人，实在简洁
 
 ```javascript
-const { Wechaty } = require('wechaty')
+import { Wechaty }  from 'wechaty'
 const bot = new Wechaty()
 bot.on('scan',    (qrcode, status) => console.log(['https://api.qrserver.com/v1/create-qr-code/?data=',encodeURIComponent(qrcode),'&size=220x220&margin=20',].join('')))
 bot.on('login',   user => console.log(`User ${user} logined`))
