@@ -30,15 +30,13 @@ Wechaty Puppet Whatsapp is built on top of whatsapp-web.js, which is A WhatsApp 
 
 1. Send & receive messages
 
-## Usage
-
-### Requirements
+## Requirements
 
 1. Your system must have [Node.js](https://nodejs.org/en/download/package-manager/) installed (version >= 12).
 2. Your system must have [Wechaty](https://github.com/wechaty/wechaty) (version >= 0.40).
 3. You must be familiar with [Wechaty Plugins](https://www.npmjs.com/package/wechaty-plugin-contrib).
 
-### Deployment
+## Deployment
 
 Run `wechaty-puppet-whatsapp`:
 
@@ -85,13 +83,13 @@ npm start
 </TabItem>
 </Tabs>
 
-### Integrating a Bot to Whatsapp
+## Integrating a Bot to Whatsapp
 
 Let's take up an example on how to integrate bot from [starter templete](https://github.com/wechaty/wechaty-getting-started) to Whatsapp.
 
 The steps are similar for all other bots as well.
 
-#### Prerequisite
+### Prerequisite
 
 1. Offical Wechaty package: [package/wechaty](https://www.npmjs.com/package/wechaty).
 2. QRCode terminal edition: [package/qrcode-terminal](https://www.npmjs.com/package/qrcode-terminal).
@@ -119,6 +117,7 @@ npm install wechaty-puppet-whatsapp
 ```
 
 <li> Create a new folder `src` and add a file `my-bot.js`. Add your custom functions to the code snippet below:</li>
+
 ```ts
 const {
   Contact,
@@ -127,9 +126,12 @@ const {
   Wechaty,
   log,
 }= require('wechaty')
+
 const qrTerm = require('qrcode-terminal')
+
 console.log(welcome)
 const bot = new Wechaty()
+
 /*
  *Your function goes here
  */
