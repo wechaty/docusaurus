@@ -21,7 +21,7 @@ Wechaty is a easy to use **ChatBot Framework** which can help you write **the wo
 The following 6 lines javascript code example will show you how does Wechaty work:
 
 ```javascript
-const { Wechaty } = require('wechaty')
+import { Wechaty }  from 'wechaty'
 
 Wechaty.instance() // Singleton
 .on('scan', (url, code) => console.log(`Scan QR Code to login: ${code}\n${url}`))
