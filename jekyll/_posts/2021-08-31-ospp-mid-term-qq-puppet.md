@@ -93,7 +93,7 @@ QQ 是国内和微信并列的两大聊天软件。我们在本次 Summer 2021 �
 
 ### 后续工作安排
 
-    按照原计划继续进行，并且尽可能对图片消息、语音消息等增加支持，使wechaty-puppet-oicq成为事件和API支持非常详细的机器人协议提供端。",
+  按照原计划继续进行，并且尽可能对图片消息、语音消息等增加支持，使wechaty-puppet-oicq成为事件和API支持非常详细的机器人协议提供端。
 
 ## 项目成果
 
@@ -114,3 +114,9 @@ QQ 是国内和微信并列的两大聊天软件。我们在本次 Summer 2021 �
 ### 项目PPT：
 
 {% include iframe.html src="/assets/2021/08-ospp-mid-term-qq-puppet/qq-puppet.pdf" %}
+
+## 联系我们
+
+- 导师：李佳芮: Wechaty co-creator, Founder & CEO of Juzi.BOT (rui@chatie.io)
+- 学生：naivebird(github)：20210240029@fudan.edu.cn
+- 项目链接：<https://github.com/wechaty/summer/issues/81>
