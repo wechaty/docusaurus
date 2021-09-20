@@ -49,7 +49,7 @@ async function onMessage(msg) {
 接下来实现searchNews方法的业务逻辑。我们只要传入消息中的关键词，调用小理的新闻搜索API，对结果进行处理后返回即可：
 
 ```javascript
-const fetch = require('node-fetch')
+import fetch  from 'node-fetch'
 /**
  * query xiaoli's api for news related to the keyword
  * @param keyword: search keyword
@@ -225,7 +225,7 @@ function makeDailyResponseText(json_obj) {
 接下来我们让机器人登录后定时调用```sendDaily```函数即可。这里我们用第三方模块[node-schedule](https://www.npmjs.com/package/node-schedule):
 
 ```javascript
-const schedule = require('node-schedule')
+import schedule  from 'node-schedule'
 
 bot.on('login', onLogin)
 
