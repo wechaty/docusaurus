@@ -1,1 +1,1 @@
-export { DOCUSAURUS_FOLDER }  from './folders'
+export { DOCUSAURUS_FOLDER }  from './folders.js'

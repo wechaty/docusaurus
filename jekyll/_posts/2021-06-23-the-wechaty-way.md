@@ -161,7 +161,7 @@ Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hell
 
 ### 1. 报 Bug
 
-模板内容见：[Bug Report](https://github.com/wechaty/wechaty/blob/master/.github/ISSUE_TEMPLATE/wechaty-bug-report.md)
+模板内容见：[Bug Report](https://github.com/wechaty/wechaty/blob/main/.github/ISSUE_TEMPLATE/wechaty-bug-report.md)
 
 报 Bug 最重要的事情是**复现**，只有可复现的bug，才可被解决。具体来讲，至少需要你给出以下的信息：
 
@@ -174,13 +174,13 @@ Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hell
 
 ### 2. 提新需求
 
-模板内容见：[Feature Request](https://github.com/wechaty/wechaty/blob/master/.github/ISSUE_TEMPLATE/wechaty-feature-request.md)
+模板内容见：[Feature Request](https://github.com/wechaty/wechaty/blob/main/.github/ISSUE_TEMPLATE/wechaty-feature-request.md)
 
 当你提出希望社区增加一个新的功能的时候，你需要详细的描述出为什么需要，以及你期待的这个需求具体的样子。你描述的越详细，越容易得到其他开发者的支持。被其他开发者支持的多的需求，越容易被提到更高的优先级上。
 
 ### 3. 问问题
 
-模板内容见：[Question](https://github.com/wechaty/wechaty/blob/master/.github/ISSUE_TEMPLATE/wechaty-question.md)
+模板内容见：[Question](https://github.com/wechaty/wechaty/blob/main/.github/ISSUE_TEMPLATE/wechaty-question.md)
 
 社区不希望你在 issue 中提问，最好的方式是去 [StackOverflow](https://stackoverflow.com/questions/tagged/wechaty) 上提问。
 

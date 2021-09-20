@@ -79,9 +79,9 @@ module.exports = {
  * wechaty-puppet-padplus index
  */
 
-const { Wechaty } = require("wechaty")
-const { PuppetPadplus } = require("wechaty-puppet-padplus")
-const config = require("../config/config")
+import { Wechaty }  from 'wechaty'
+import { PuppetPadplus }  from 'wechaty-puppet-padplus'
+import config  from '../config/config'
 
 // init
 const bot = new Wechaty({

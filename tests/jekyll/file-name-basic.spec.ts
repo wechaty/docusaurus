@@ -1,17 +1,17 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test  from 'tstest'
+import { test } from 'tstest'
 
 import util   from 'util'
 import globCB from 'glob'
 
 import {
   JEKYLL_FOLDER,
-}                             from '../../src/jekyll/mod'
+}                             from '../../src/jekyll/mod.js'
 
 import {
   stripRepoRoot,
-}                             from '../../src/repo-root'
+}                             from '../../src/repo-root.js'
 
 const glob = util.promisify(globCB)
 

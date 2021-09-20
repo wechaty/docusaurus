@@ -40,7 +40,7 @@ image: /assets/2020/info-subtotal/head.jpeg
 附上部分逻辑代码说明。
 
 ```javascript
-const api1 = require('../../server/api')
+import api1  from '../../server/api'
 const one = ['车寻人', '车找人', '找人', '寻人', '满人', '满车', '车满', '人满'];
 const two = ['人寻车', '人找车', '找车', '寻车', '找个车']
 class dealMsg {
