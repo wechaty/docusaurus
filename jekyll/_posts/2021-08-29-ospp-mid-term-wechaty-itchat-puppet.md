@@ -64,10 +64,10 @@ tags:
 ## 项目进度
 
 - 已完成工作：  
-  - L0阶段：已完成（PR：[init code by python wechaty puppet service #1](https://github.com/lyleshaw/python-wechaty-puppet-itchat/pull/1)）；
-  - L1阶段：已完成对收发消息接口的封装，可以正常发出文字或图片消息， Puppet 已经可以收到消息，但 Wechaty 层由于部分原因，在事件触发上还存在问题（PR：[添加scan/login事件 #4](https://github.com/lyleshaw/python-wechaty-puppet-itchat/pull/4) 和 [Debug emit problem #6](https://github.com/lyleshaw/python-wechaty-puppet-itchat/pull/6)）；
-  - L2阶段：已完成 CI/CD 配置（PR：[Add CI/CD #7](https://github.com/lyleshaw/python-wechaty-puppet-itchat/pull/7)）和 PyPi 打包发布：[https://pypi.org/project/wechaty-puppet-itchat/](https://pypi.org/project/wechaty-puppet-itchat/)；
-  - L3阶段：已完成对获取联系人列表和获取群列表接口的封装，剩余接口的封装工作待二期完成（PR：[Debug emit problem #6](https://github.com/lyleshaw/python-wechaty-puppet-itchat/pull/6)）；
+  - L0阶段：已完成（PR：[init code by python wechaty puppet service #1](https://github.com/wechaty/python-wechaty-puppet-itchat/pull/1)）；
+  - L1阶段：已完成对收发消息接口的封装，可以正常发出文字或图片消息， Puppet 已经可以收到消息，但 Wechaty 层由于部分原因，在事件触发上还存在问题（PR：[添加scan/login事件 #4](https://github.com/wechaty/python-wechaty-puppet-itchat/pull/4) 和 [Debug emit problem #6](https://github.com/wechaty/python-wechaty-puppet-itchat/pull/6)）；
+  - L2阶段：已完成 CI/CD 配置（PR：[Add CI/CD #7](https://github.com/wechaty/python-wechaty-puppet-itchat/pull/7)）和 PyPi 打包发布：[https://pypi.org/project/wechaty-puppet-itchat/](https://pypi.org/project/wechaty-puppet-itchat/)；
+  - L3阶段：已完成对获取联系人列表和获取群列表接口的封装，剩余接口的封装工作待二期完成（PR：[Debug emit problem #6](https://github.com/wechaty/python-wechaty-puppet-itchat/pull/6)）；
 
 - 遇到的问题及解决方案：  
   - 困难1：对 CI/CD 中的各项工具不熟悉，推代码时遇到困难。
@@ -84,7 +84,7 @@ tags:
 
 ## 项目成果
 
-项目仓库: <https://github.com/lyleshaw/python-wechaty-puppet-itchat>  
+项目仓库: <https://github.com/wechaty/python-wechaty-puppet-itchat>  
 
 ### live coding视频
 
@@ -100,7 +100,7 @@ tags:
 
 ### 项目PPT
 
-{% include iframe.html src="https://github.com/wechaty/summer/files/7072385/itchat.pdf" %}
+{% include iframe.html src="/assets/2021/08-ospp-mid-term-wechaty-itchat-puppet/itchat.pdf" %}
 
 ## 联系我们
 
