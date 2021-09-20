@@ -1,16 +1,18 @@
 ---
 slug: /puppet-providers/
 title: Wechaty Puppet Providers
-sidebar_label: 'Puppet Providers: Index'
+sidebar_label: 'Puppet Providers: Overview'
 ---
 
 import Badges from './transclusions/badges.mdx'
 
 <Badges />
 
-For different instant messaging (IM) systems (such as WeChat, Whatsapp, and TikTok), the Wechaty community builds separate RPA modules for each, and we call those modules [Wechaty Puppet](https://github.com/wechaty/wechaty-puppet).
+The Wechaty community builds separate RPA modules for for different instant messaging (IM) systems (such as WeChat, Whatsapp, and TikTok). These modules are called [Wechaty Puppet](https://github.com/wechaty/wechaty-puppet).
 
-Wechaty Puppet Provider is an NPM module for a specific IM protocol Wechaty Puppet.
+The Wechaty Puppet Provider which is supporting WeChat is named wechaty-puppet-wechat. The puppet provider supporting Whatsapp is named wechaty-puppet-whatsapp, and supporting Lark is named wechaty-puppet-lark.
+
+Wechaty Puppet Provider is an NPM module for a specific IM protocol Wechaty Puppet. Run specific Wechaty puppet using the following command :
 
 ```sh
 npm install wechaty-puppet-NAME
@@ -22,7 +24,7 @@ npm start
 
 ## Wechaty Puppet Providers
 
-Now, we have the following Wechaty Puppet Providers:
+Presently, we have the following Wechaty Puppet Providers:
 
 | Name | Platform | Protocol | Stable |
 | :---: | :---: | :---: | :---: |
@@ -37,6 +39,61 @@ Now, we have the following Wechaty Puppet Providers:
 | [Service](service.md) | Universal | gRPC | Beta |
 | [Mock](mock.md) | Universal | Mock | Beta |
 
+## Using Wechaty Puppet Providers
+
+Let’s see a code example (in TypeScript) of how to change Wechaty Puppet Providers.
+
+We have the following six lines code, which is the world’s shortest chatbot:
+
+```sh
+// bot.ts
+import { Wechaty } from 'wechaty'
+
+Wechaty.instance() // Global Instance
+.on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://wechaty.js.org/qrcode/${encodeURIComponent(qrcode)}`))
+.on('login',            user => console.log(`User ${user} logged in`))
+.on('message',       message => console.log(`Message: ${message}`))
+.start()
+```
+The above code will use the default Wechaty Puppet Provider (which is wechaty-puppet-wechat) because we have not specified manually.
+
+If we want this bot to serve on Whatsapp, we need to specify a Wechaty Puppet Provider for Whatsapp.
+
+We have two methods to specify Wechaty Puppet Providers for our program:
+
+  1. Using the WECHATY_PUPPET environment variable.
+  2. Import the Wechaty Puppet manually in code.
+
+### Using the WECHATY_PUPPET environment variable
+
+The WECHATY_PUPPET environment will be used as the Wechaty Puppet Provider NPM name, and then you are all set.
+
+```sh
+export WECHATY_PUPPET=wechaty-puppet-whatsapp
+ts-node bot.ts
+```
+
+The above shell commands set the ```wechaty-puppet-whatsapp``` to the environment variable ```WECHATY_PUPPET``` and our Wechaty system will use it.
+
+### Importing the Wechaty Puppet manually in code
+
+On the other hand, you can import the Wechaty Puppet Provider NPM module directly in your code and then add an option when instantiating the Wechaty with the object name puppet:
+
+```sh
+// bot.ts
+import { Wechaty } from 'wechaty'
++ import { PuppetWhatsapp } from 'wechaty-puppet-whatsapp'
+
+- Wechaty.instance() // Global Instance
++ Wechaty.instance({ puppet: new PuppetWhatsapp() })
+.on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://wechaty.js.org/qrcode/${encodeURIComponent(qrcode)}`))
+.on('login',            user => console.log(`User ${user} logged in`))
+.on('message',       message => console.log(`Message: ${message}`))
+.start()
+```
+
+In the above code, Wechaty will use PuppetWhatsapp from the wechaty-puppet-whatsapp module.
+
 ## History
 
 1. [Wechaty Puppet Providers Trends, Huan, Mar 4, 2021](https://wechaty.js.org/2021/03/04/wechaty-puppet-providers-trends/)
@@ -49,7 +106,7 @@ If you want to learn more about the concepts behind Wechaty Puppet Provider, you
 1. [Wechaty Puppet Specification](specs/puppet.md)
 1. [Introducing Wechaty Puppet Service (Providers), @huan, Jan 14, 2021](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/)
 
-For a deeper understanding of the Puppet in Wechaty, you can read its source code from <https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts>
+For a deeper understanding of the Puppet in Wechaty, you can read its source code from <https://github.com/wechaty/wechaty-puppet/blob/main/src/puppet.ts>
 
 ## Blogs
 
