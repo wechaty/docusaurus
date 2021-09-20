@@ -12,7 +12,7 @@ Wechaty 的故事开始于用RPA的方式模拟登录微信，在过去的几年
 我们将过去对于绝大多数人难以想象的工作量，通过数万行代码封装成了最短六行代码就可以模拟登录微信的npm包。  
 
 ```javascript
-const { Wechaty } = require('wechaty') // import { Wechaty } from 'wechaty'
+import { Wechaty }  from 'wechaty' // import { Wechaty } from 'wechaty'
 Wechaty.instance() // Global Instance
 .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrcode)}`))
 .on('login',            user => console.log(`User ${user} logined`))
