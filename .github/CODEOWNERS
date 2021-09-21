@@ -2,5 +2,5 @@
 # https://help.github.com/articles/about-codeowners/
 #
 
-* @wechaty/editors
+jekyll/* @wechaty/editors
 docusaurus/* @wechaty/writers
