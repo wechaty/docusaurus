@@ -3,6 +3,7 @@ title: "OSPP 2021-期中报告-基于 Itchat 为 Python Wechaty 实现社区首�
 author: lyleshaw
 categories:
   - project
+  - ospp
 image: /assets/2021/08-ospp-mid-term-wechaty-itchat-puppet/python-wechaty-puppet-itchat.webp
 tags:
   - itchat
