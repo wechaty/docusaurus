@@ -14,7 +14,7 @@
   - lark
   - summer-of-wechaty
   - ecosystem
- image: /assets/2021/08-wechaty-larkpuppet-ospp-mid-term-blog/wechaty-lark.webp
+ image: /assets/2021/08-ospp-mid-term-wechaty-puppet-lark/wechaty-lark.webp
 
 ---
 
