@@ -74,8 +74,10 @@ const puppetServices: SubMenuData = {
     'puppet-services/padlocal',
     'puppet-services/paimon',
     'puppet-services/donut',
+    'puppet-services/tokens',
     'puppet-services/compatibility',
     'puppet-services/diy',
+    'puppet-services/faq',
   ]
 }
 
@@ -95,6 +97,7 @@ const contributing: SubMenuData = {
   label: 'Contributing',
   items: [
     'contributing/overview',
+    'contributing/code-of-conduct',
     'contributing/new-contributors',
     'contributing/documentation',
     'contributing/contributor-program',
@@ -102,6 +105,7 @@ const contributing: SubMenuData = {
     'contributing/pulls',
     'contributing/blog',
     'contributing/coding',
+    'contributing/getting-help',
     'contributing/git',
     'contributing/issues',
     'contributing/testing',
