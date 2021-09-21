@@ -67,7 +67,7 @@
 
 ## 项目成果
 
-项目仓库: [https://github.com/remember00000/wechaty-puppet-lark](https://github.com/wechaty/wechaty-puppet-lark)  
+项目仓库: [https://github.com/wechaty/wechaty-puppet-lark](https://github.com/wechaty/wechaty-puppet-lark)  
 
 ### live coding视频
 
@@ -77,6 +77,7 @@
 ### PPT展示视频
 
 {% include iframe.html src="https://youtu.be/IwMA8VJZZqE" %}
+国内链接: [https://v.qq.com/x/page/r3271wjg08q.html](https://v.qq.com/x/page/r3271wjg08q.html)
 
 ### 项目PPT
 
@@ -84,5 +85,5 @@
 
 ## 联系我们
 
-- 项目链接：[https://github.com/remember00000/wechaty-puppet-lark](https://github.com/remember00000/wechaty-puppet-lark)  
+- 项目链接：[https://github.com/wechaty/wechaty-puppet-lark](https://github.com/wechaty/wechaty-puppet-lark)  
 - 联系方式：+86 18660817606|email：2741102314@qq.com
