@@ -6,7 +6,7 @@ tags:
   - blog
   - study
   - python
-image: /assets/2021/09-how-to-get-an-automatic-message-forwarding-weixin-chatbot-with-python-wechaty-aliyun/cover.jpg
+image: /assets/2021/09-how-to-get-an-automatic-message-forwarding-weixin-chatbot-with-python-wechaty-aliyun/cover.webp
 ---
 
 [![Wechaty Contributor Program](https://img.shields.io/badge/Wechaty-Contributor%20Program-green.svg)](https://wechaty.js.org/docs/contributing/)
