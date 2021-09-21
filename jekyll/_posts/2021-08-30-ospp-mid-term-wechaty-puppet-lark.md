@@ -18,8 +18,7 @@
 
 ---
 
-> Author: [@remember00000](https://github.com/remember00000)
-> Code: [wechaty-puppet-lark](https://github.com/remember00000/wechaty-puppet-lark)
+> Code: [wechaty-puppet-lark](https://github.com/wechaty/wechaty-puppet-lark)
 
 “[开源软件供应链点亮计划-暑期2021](https://summer.iscas.ac.cn)”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。活动联合各大开源社区，针对重要开源软件的开发与维护提供项目，并向全球高校学生开放报名。 学生可自主选择感兴趣的项目进行申请，并在中选后获得该软件资深维护者（社区导师）亲自指导的机会。 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2021”活动奖金和奖杯。
 
@@ -68,11 +67,12 @@
 
 ## 项目成果
 
-项目仓库: [https://github.com/remember00000/wechaty-puppet-lark](https://github.com/remember00000/wechaty-puppet-lark)  
+项目仓库: [https://github.com/remember00000/wechaty-puppet-lark](https://github.com/wechaty/wechaty-puppet-lark)  
 
 ### live coding视频
 
 {% include iframe.html src="https://youtu.be/fAIZS9lgxjo" %}
+国内链接：https://v.qq.com/x/page/j32711k0nfg.html
 
 ### PPT展示视频
 
