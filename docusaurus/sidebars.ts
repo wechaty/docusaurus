@@ -340,6 +340,7 @@ const explanations = {
     'explanations/lifecycle',
     'explanations/alternatives',
     'explanations/glossary',
+    'explanations/sdk-cui',
     'explanations/testing',
     'explanations/faq',
     'explanations/troubleshooting',
