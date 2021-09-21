@@ -1233,6 +1233,7 @@ const NOT_WEBP_TO_BE_FIXED_FILE_LIST = [
  * Huan(202107): we forgot to check the limit of gif files before... -_-b
  */
 const BIG_SIZE_TO_BE_FIXED_FILE_LIST = [
+  // Images
   'jekyll/assets/2018/birthday-cake-chickens.gif',
   'jekyll/assets/2018/techiefestival-24.gif',
   'jekyll/assets/2020/wechaty-log-monitor/archy-demo.gif',
@@ -1242,6 +1243,9 @@ const BIG_SIZE_TO_BE_FIXED_FILE_LIST = [
   'jekyll/assets/2021/07-wechaty-with-paddlepaddle/panda_emoji.gif',
   'jekyll/assets/2021/07-wechaty-with-paddlepaddle/pic_mask.gif',
   'jekyll/assets/2021/07-wechaty-with-paddlepaddle/wanderer.gif',
+  // PDFs
+  'jekyll/assets/2019/bot5-seminar-2/chatbot-experience-limingth.pdf',
+  'jekyll/assets/2020/wechaty-plugin-milestone/yuan.pdf',
 ]
 
 /**
