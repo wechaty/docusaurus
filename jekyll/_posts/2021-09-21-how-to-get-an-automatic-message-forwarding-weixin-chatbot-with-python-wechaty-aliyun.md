@@ -73,7 +73,7 @@ export WECHATY_TOKEN=your_token
 >>> export
 ```
 
-![1-1](/assets/2021/09-how-to-get-an-automatic-message-forwarding-weixin-chatbot-with-python-wechaty-aliyun/1-1.png)
+![1-1](/assets/2021/09-how-to-get-an-automatic-message-forwarding-weixin-chatbot-with-python-wechaty-aliyun/1-1.webp)
 
 （四）可以运行机器人了
 
