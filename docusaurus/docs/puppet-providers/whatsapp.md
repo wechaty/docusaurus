@@ -1,6 +1,6 @@
 ---
-title: 'Puppet Provider: Whatsapp'
-sidebar_label: Whatsapp
+title: 'Puppet Provider: WhatsApp'
+sidebar_label: WhatsApp
 ---
 
 [![Wechaty Puppet Whatsapp](https://img.shields.io/badge/Puppet-Whatsapp-blueviolet)](whatsapp)
@@ -146,4 +146,4 @@ wechaty-puppet-whatsapp is an open-source project. If you’re interested in con
 ## Maintainers
 
 - [@univerone](https://wechaty.js.org/contributors/univerone)
-- [@huan](https://github.com/huan) [Huan LI](http://linkedin.com/in/zixia) \<zixia@zixia.net\>
+- [@huan](https://github.com/huan) [Huan LI](http://linkedin.com/in/zixia) <zixia@zixia.net>
