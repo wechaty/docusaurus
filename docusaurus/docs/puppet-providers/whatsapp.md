@@ -21,8 +21,8 @@ As a developer, you can use wechaty-puppet-whatsapp to build your own WhatsApp c
 - Repo: <https://github.com/wechaty/wechaty-puppet-whatsapp>
 - Support & Feedback: <https://github.com/wechaty/wechaty-puppet-whatsapp/issues>
 - npm package: <https://npmjs.com/package/wechaty-puppet-whatsapp>
-- [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js)
-- [@pedroslopez](https://github.com/pedroslopez)
+- Build on top of(A WhatsApp client library for NodeJS): [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js)
+- [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js) Creator: [@pedroslopez](https://github.com/pedroslopez)
 
 Wechaty Puppet Whatsapp is built on top of whatsapp-web.js, which is A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app, created by Pedro S. Lopez, @pedroslopez
 
@@ -135,15 +135,15 @@ Set user status message|❌
 
 ## History
 
-- [Wechaty Puppet Whatsapp Has been Published, Shan, Feb 15, 2021](https://wechaty.js.org/2021/02/15/publishment-of-wechaty-whatapp-puppet/)
+- [Wechaty Puppet Whatsapp Has been Published, Shan, Feb 15, 2021](https://wechaty.js.org/2021/02/15/publishment-of-wechaty-whatsapp-puppet/)
 
 ## Contributing
 
 Feel free to file an issue on the github repo for any feedback.
 
-wechaty-puppet-whatsapp is an open-source project. If you’re interested in contributing to this project, check out the contribution guidelines to learn more, and welcome to join the Wechaty Developers’ Home or our Gitter network <https://gitter.im/wechaty/wechaty> to join our community.
+wechaty-puppet-whatsapp is an open-source project. If you’re interested in contributing to this project, check out the contribution guidelines to learn more, and welcome to join the Wechaty Developers’ Home or our [Gitter network](https://gitter.im/wechaty/wechaty) to join our community.
 
 ## Maintainers
 
 - [@univerone](https://wechaty.js.org/contributors/univerone)
-- [@huan] Huan LI <zixia@zixia.net>
+- [@huan](https://github.com/huan) [Huan LI](http://linkedin.com/in/zixia) \<zixia@zixia.net\>
