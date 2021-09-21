@@ -17,7 +17,7 @@ tags:
   - qq
 ---
 
-本项目通过 Wechaty Puppet 的接口，可以将 QQ 进行 RPA 封装，使其成为 wechaty-puppet-qq 供 Wechaty 开发者方便接入 QQ 平台，使其成为 Wechaty 可以使用的社区生态模块。
+本项目通过 Wechaty Puppet 的接口，可以将 QQ 进行 RPA 封装，使其成为 wechaty-puppet-oicq 供 Wechaty 开发者方便接入 QQ 平台，使其成为 Wechaty 可以使用的社区生态模块。
 
 “[开源软件供应链点亮计划-暑期2021](https://summer.iscas.ac.cn)”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。活动联合各大开源社区，针对重要开源软件的开发与维护提供项目，并向全球高校学生开放报名。 学生可自主选择感兴趣的项目进行申请，并在中选后获得该软件资深维护者（社区导师）亲自指导的机会。 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2021”活动奖金和奖杯。
 
@@ -30,7 +30,7 @@ tags:
 Wechaty 社区目前已经支持微信、Whatsapp、企业微信、飞书等常见流行即时通讯工
 具，并且能够通过多语言 SDK (比如 Python Wechaty) 进行调用。
 QQ 是国内和微信并列的两大聊天软件。我们在本次 Summer 2021 的项目中，Wechaty
-希望可以实现对 QQ Chatbot 的支持。通过 Wechaty Puppet 的接口，可以将 QQ 进行 RPA 封装，使其成为 wechaty-puppet-qq 供 Wechaty 开发者方便接入 QQ 平台，使其成
+希望可以实现对 QQ Chatbot 的支持。通过 Wechaty Puppet 的接口，可以将 QQ 进行 RPA 封装，使其成为 wechaty-puppet-oicq 供 Wechaty 开发者方便接入 QQ 平台，使其成
 为 Wechaty 可以使用的社区生态模块。
 
 ### 方案描述
@@ -119,6 +119,7 @@ QQ 是国内和微信并列的两大聊天软件。我们在本次 Summer 2021 �
 
 ## 联系我们
 
-- 导师：李佳芮: Wechaty co-creator, Founder & CEO of Juzi.BOT (rui@chatie.io)
+- 导师：李佳芮 Wechaty co-creator, Founder & CEO of Juzi.BOT (rui@chatie.io)
+- 导师：李卓桓 Wechaty creator, Tencent TVP of Chatbot (huan@chatie.io)
 - 学生：naivebird(github)：20210240029@fudan.edu.cn
 - 项目链接：<https://github.com/wechaty/summer/issues/81>
