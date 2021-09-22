@@ -61,9 +61,9 @@ test('PDF size should be fit for the web (no more than 3MB)', async t => {
 
     if (size > MAX_SIZE) {
       console.error([
-        'TIP 1: use "https://www.ilovepdf.com/compress_pdf" to adjust it to fit;',
-        'Tip 2: embedding a google slide presentation with {% include iframe.html src="..." %},',
+        'Tip 1: upload your slides to google slides then embed it by `{% include iframe.html src="..." %}`,',
         '  see: https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/',
+        'TIP 2 (not recommended): use "https://www.ilovepdf.com/compress_pdf" to adjust it to fit;',
       ].join('\n'))
       t.fail(`"${stripRepoRoot(file)}" (size: ${size}) exceed the maximum limitation: size<=${MAX_SIZE}`)
     }
