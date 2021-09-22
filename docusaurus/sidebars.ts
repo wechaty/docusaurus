@@ -341,6 +341,7 @@ const explanations = {
     'explanations/lifecycle',
     'explanations/alternatives',
     'explanations/glossary',
+    'explanations/devops-toolset',
     'explanations/sdk-cui',
     'explanations/testing',
     'explanations/faq',
