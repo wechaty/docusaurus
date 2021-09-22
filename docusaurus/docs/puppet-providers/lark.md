@@ -25,10 +25,6 @@ import TabItem from '@theme/TabItem'
 
 Run `wechaty-puppet-lark`:
 
-<!-- MDX import -->
-import Tabs from '@theme/Tabs'
-import TabItem from '@theme/TabItem'
-
 <Tabs
   groupId="operating-systems"
   defaultValue="linux"
