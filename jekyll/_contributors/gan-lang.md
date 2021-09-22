@@ -1,7 +1,6 @@
 ---
 name: gan-lang
-author：gan-lang
-site: <https://github.com/Gan-lang>
+site: <https://github.com/gan-lang>
 avatar: /assets/contributors/gan-lang/avatar.webp
 bio: a student
 email: 8002118335@email.ncu.edu.cn

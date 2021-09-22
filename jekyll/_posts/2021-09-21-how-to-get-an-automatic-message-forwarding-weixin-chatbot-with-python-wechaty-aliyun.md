@@ -1,6 +1,6 @@
 ---
 title: "如何使用python-wechaty来搭建一个自动转发消息的微信机器人"
-author: Gan-lang
+author: gan-lang
 categories: article
 tags:
   - blog
