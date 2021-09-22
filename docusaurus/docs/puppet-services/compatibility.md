@@ -40,8 +40,8 @@ Add people in the group|✅|✅|✅|✅
 Remove people from the group|✅|✅|✅|✅
 Exit group chat|✅|❌|✅|✅
 Change group name|✅|✅|✅|✅
-Group entry event|✅|✅|✅|✅
-Outliers|✅|✅|✅|✅
+Join group request|✅|✅|✅|✅
+Leave group event|✅|✅|✅|✅
 Group name change event|✅|✅|✅|✅
 @Group member |✅|✅|✅|✅
 Group list|✅|✅|✅|✅
