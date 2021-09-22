@@ -88,7 +88,7 @@ Wechaty本身是使用的Typescript编写。我们在编写机器人的时候，
 
 有同学问，不想通过所有的好友请求，怎么办呢？
 
-这里可以参考这个示例：<https://github.com/wechaty/wechaty/blob/master/example/friend-bot.ts>
+这里可以参考这个示例：<https://github.com/wechaty/wechaty/blob/main/example/friend-bot.ts>
 和`friend Event` API：
 <https://wechaty.github.io/wechaty/#Wechaty+on>
 
