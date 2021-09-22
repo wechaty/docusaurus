@@ -9,6 +9,7 @@ tags:
 image: /assets/2021/07-milvus-sync-bot/background.webp
 ---
 > 作者: [shiyu22](https://github.com/shiyu22)， 程序媛
+
 ## Wechaty 实现 Milvus 社区群消息同步
 
 ## 背景
@@ -19,11 +20,13 @@ image: /assets/2021/07-milvus-sync-bot/background.webp
 - 社区重复发布新闻等消息：当产品发布新版本时，社区会发布新闻，这时需要在十个群里手动转发。
 - 技术交流覆盖不广泛：当一个群里交流技术难题，其他群的小伙伴无法参与或查看。
 基于以上的这些问题，社区考虑做一个企业微信群间消息同步的机器人，开发群内的消息同步功能，方便群里用户的沟通与交流。
+
 ## 效果展示
 
 针对前面提到的问题，社区计划实现一个可以同步群消息的机器人，之前了解到 [Wechaty](https://github.com/wechaty/wechaty) 可以实现这个功能，并且 Wechaty 的社区也部署了同步群消息的机器人。Wechaty 是一个开源的的对话机器人 SDK，它是一个使用 Typescript 构建的Node.js 应用。支持多种微信接入方案，包括网页，ipad，ios，windows， android 等。
 基于 Wechaty 部署的机器人可以同步十个群的消息，效果展示如下面的截图，机器人负责转发其他群的消息，保证每个群可以同步，用户交流群的人就可以跨群交流了。接下来将介绍如何用 Wechaty 部署消息同步的机器人。
 ![效果展示](/assets/2021/07-milvus-sync-bot/syncbot1.webp)
+
 ## Wechaty 的具体实现
 
 - 获取 Milvus 用户交流群的列表
@@ -79,6 +82,7 @@ else:
         send_text = '[{}@{}]:  {}'.format(contact, group[-3:], text)
         await community.say(send_text)
 ```
+
 ## 总结
 
 最后，十分感谢 Wechaty 开源的 Python SDK 以及开源激励计划，可以十分方便的使用 Token 进行开发。而 Milvus 特征向量数据库同为开源项目，计划在下一版本中利用 Milvus 智能判断广告消息，预防非技术交流人员在群里发布广告等消息，期待下一版本的更新！
