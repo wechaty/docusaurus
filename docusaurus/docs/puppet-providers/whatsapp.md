@@ -21,10 +21,8 @@ As a developer, you can use wechaty-puppet-whatsapp to build your own WhatsApp c
 - Repo: <https://github.com/wechaty/wechaty-puppet-whatsapp>
 - Support & Feedback: <https://github.com/wechaty/wechaty-puppet-whatsapp/issues>
 - npm package: <https://npmjs.com/package/wechaty-puppet-whatsapp>
-- Build on top of(A WhatsApp client library for NodeJS): [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js)
-- [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js) Creator: [@pedroslopez](https://github.com/pedroslopez)
-
-Wechaty Puppet Whatsapp is built on top of whatsapp-web.js, which is A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app, created by Pedro S. Lopez, @pedroslopez
+- Built on top of [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js), which is a WhatsApp client library for NodeJS.
+- Creator of [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js) is [@pedroslopez](https://github.com/pedroslopez).
 
 ## Features
 
