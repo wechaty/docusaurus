@@ -19,7 +19,8 @@ import TabItem from '@theme/TabItem'
 
 ## Features
 
-1. Send & receive messages
+1. Send & Receive Messages (Text, Image, Video, File)
+2. Get Contact List
 
 ## Usage
 
