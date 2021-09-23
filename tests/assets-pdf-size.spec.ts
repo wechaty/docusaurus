@@ -46,7 +46,7 @@ const allPdfList = async () => {
 
 test('PDF size should be fit for the web (no more than 3MB)', async t => {
 
-  const MAX_SIZE  = 3 * 1024 * 1024  // 3MB
+  const MAX_SIZE  = 1 * 1024 * 1024  // 3MB
 
   const fileList = await allPdfList()
 
@@ -60,7 +60,11 @@ test('PDF size should be fit for the web (no more than 3MB)', async t => {
     const size  = fs.statSync(file).size
 
     if (size > MAX_SIZE) {
-      console.error('\n\nTIP: use "https://www.ilovepdf.com/compress_pdf" to adjust it to fit\n\n')
+      console.error([
+        'Tip 1: upload your slides to google slides then embed it by `{% include iframe.html src="..." %}`,',
+        '  see: https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/',
+        'TIP 2 (not recommended): use "https://www.ilovepdf.com/compress_pdf" to adjust it to fit;',
+      ].join('\n'))
       t.fail(`"${stripRepoRoot(file)}" (size: ${size}) exceed the maximum limitation: size<=${MAX_SIZE}`)
     }
   }
