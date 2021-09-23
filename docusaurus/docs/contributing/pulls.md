@@ -25,11 +25,10 @@ alias will be helpful:
     pr = !sh -c \"git fetch upstream pull/${1}/head:pr/${1} && git checkout pr/${1}\"
 ```
 
-Add it to your ``~/.gitconfig``, and set ``upstream`` to be ``wechaty/wechaty``.
-Then you can run ``git pr ####`` to checkout the corresponding pull request.
+Add it to your `~/.gitconfig`, and set `upstream` to be `wechaty/wechaty`.
+Then you can run `git pr ####` to checkout the corresponding pull request.
 
-At this point, you can work on the code. Use ``git rebase -i`` and ``git
-commit --amend`` to make sure the commits have the expected level of quality.
+At this point, you can work on the code. Use `git rebase -i` and `git commit --amend` to make sure the commits have the expected level of quality.
 Once you're ready:
 
 ```sh
@@ -92,7 +91,7 @@ community, getting work done, and having a usable commit history.
 In addition, please follow the following guidelines when committing code to
 Wechaty's Git repository:
 
-- Never change the published history of ``wechaty/wechaty`` branches by force
+- Never change the published history of `wechaty/wechaty` branches by force
   pushing. If you absolutely must (for security reasons for example), first
   discuss the situation with the team.
 
@@ -126,9 +125,9 @@ Wechaty's Git repository:
   ```
 
   Credit the contributors in the commit message: "Thanks A for the report and B
-  for review." Use git's [Co-Authored-By][Co-Authored-By] as appropriate.
+  for review." Use git's [Co-Authored-By][co-authored-by] as appropriate.
 
-  [Co-Authored-By]: https://help.github.com/articles/creating-a-commit-with-multiple-authors/
+  [co-authored-by]: https://help.github.com/articles/creating-a-commit-with-multiple-authors/
 
 - For commits to a branch, prefix the commit message with the branch name.
   For example: "[1.4.x] Fixed #xxxxx -- Added support for mind reading."
@@ -188,9 +187,9 @@ When a mistaken commit is discovered, please follow these guidelines:
 - The release branch maintainer may back out commits to the release
   branch without permission if the commit breaks the release branch.
 
-- If you mistakenly push a topic branch to ``wechaty/wechaty``, delete it.
-  For instance, if you did: ``git push upstream feature_antigravity``,
-  do a reverse push: ``git push upstream :feature_antigravity``.
+- If you mistakenly push a topic branch to `wechaty/wechaty`, delete it.
+  For instance, if you did: `git push upstream feature_antigravity`,
+  do a reverse push: `git push upstream :feature_antigravity`.
 
 ## Special Thanks
 
