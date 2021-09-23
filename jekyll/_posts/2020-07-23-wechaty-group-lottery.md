@@ -56,9 +56,9 @@ npm run serve
 ## 开发
 
 ```javascript
-const { Message } = require("wechaty")
+import { Message }  from 'wechaty'
     // 配置文件
-const config = require("./config")
+import config  from './config'
     // 机器人名字
 const name = config.name
 

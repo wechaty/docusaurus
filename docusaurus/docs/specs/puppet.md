@@ -16,7 +16,7 @@ For better understanding of the Puppet below are some links listed down:
 
 ## Show me the code
 
-For a deeper understanding of the Puppet in Wechaty, you can read its documentation from <https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html> and source code if you like at <https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts>
+For a deeper understanding of the Puppet in Wechaty, you can read its documentation from <https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html> and source code if you like at <https://github.com/wechaty/wechaty-puppet/blob/main/src/puppet.ts>
 Below is an architectural diagram of Wechaty Puppet.
 
 ![abstract puppet](../../static/img/docs/architecture.png)
@@ -32,13 +32,13 @@ Below is an architectural diagram of Wechaty Puppet.
 
 ## Using Puppet with Wechaty Examples
 
-1. Using [wechaty-puppet-mock](https://www.npmjs.com/package/wechaty-puppet-mock) to run [ding-dong-bot](https://github.com/wechaty/wechaty/blob/master/examples/ding-dong-bot.ts)
+1. Using [wechaty-puppet-mock](https://www.npmjs.com/package/wechaty-puppet-mock) to run [ding-dong-bot](https://github.com/wechaty/wechaty/blob/main/examples/ding-dong-bot.ts)
 
     ```sh
     WECHATY_PUPPET=wechaty-puppet-mock npm start
     ```
 
-1. Using [wechaty-puppet-padpro](https://www.npmjs.com/package/wechaty-puppet-padpro) to run [ding-dong-bot](https://github.com/wechaty/wechaty/blob/master/examples/ding-dong-bot.ts)
+1. Using [wechaty-puppet-padpro](https://www.npmjs.com/package/wechaty-puppet-padpro) to run [ding-dong-bot](https://github.com/wechaty/wechaty/blob/main/examples/ding-dong-bot.ts)
 
     ```sh
     WECHATY_PUPPET=wechaty-puppet-padpro npm start
