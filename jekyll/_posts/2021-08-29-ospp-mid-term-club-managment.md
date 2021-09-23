@@ -11,10 +11,7 @@ tags:
   - ospp
   - ospp-2021
   - mid-term
-  - other
 ---
-
-> Author:[@mangguo188](https://github.com/mangguo188)
 
 ## 暑期2021
 
