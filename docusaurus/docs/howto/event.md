@@ -131,7 +131,7 @@ await bot.start()
 <TabItem value="js">
 
 ```ts
-const { Wechaty,ScanStatus,log } = require('wechaty')
+import { Wechaty,ScanStatus,log }  from 'wechaty'
 
 async function onScan (qrcode,status)
  {

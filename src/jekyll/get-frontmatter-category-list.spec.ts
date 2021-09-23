@@ -1,12 +1,12 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test from 'tstest'
+import { test } from 'tstest'
 
 import path from 'path'
 
-import { JEKYLL_FOLDER } from './folders'
+import { JEKYLL_FOLDER } from './folders.js'
 
-import { getFrontmatterCategoryList } from './get-frontmatter-category-list'
+import { getFrontmatterCategoryList } from './get-frontmatter-category-list.js'
 
 test('getFrontmatterCategoryList', async t => {
   const FILE = path.join(
