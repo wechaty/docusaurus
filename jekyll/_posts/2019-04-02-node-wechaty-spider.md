@@ -10,9 +10,6 @@ tags:
 image: /assets/2019/node-wechaty-1.jpeg
 ---
 
-> 作者: [Leo_chen](https://github.com/leochen-g/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [用Node+wechaty写一个爬虫脚本每天定时给女(男)朋友发微信暖心话](https://juejin.im/post/5c77c6bef265da2de6611cff)
-
-![koa2](/assets/2019/node-wechaty-1.jpeg)
 微信每日说，每日自动发送微信消息给你心爱的人。
 
 ## 项目介绍
@@ -81,12 +78,12 @@ index.js
      * WechatBot
      *  - https://github.com/gengchen528/wechatBot
      */
-    const {Wechaty,Friendship} = require('wechaty')
-    const schedule = require('./schedule/index')
-    const config = require('./config/index')
-    const untils = require('./untils/index')
-    const superagent = require('./superagent/index')
-    const {FileBox} = require('file-box') //文件读取模块
+    import {Wechaty,Friendship}  from 'wechaty'
+    import schedule  from './schedule/index'
+    import config  from './config/index'
+    import untils  from './untils/index'
+    import superagent  from './superagent/index'
+    import {FileBox}  from 'file-box' //文件读取模块
     //  二维码生成
     function onScan (qrcode, status) {
       require('qrcode-terminal').generate(qrcode)  // 在console端显示二维码
@@ -210,9 +207,9 @@ index.js
 superagent/index.js
 
 ```js
-    const superagent = require('../config/superagent')
-    const config = require('../config/index')
-    const cheerio = require('cheerio')
+    import superagent  from '../config/superagent'
+    import config  from '../config/index'
+    import cheerio  from 'cheerio'
 
     async function getOne() { // 获取每日一句
       let res = await superagent.req(config.ONE,'GET')
@@ -396,3 +393,5 @@ github:[https://github.com/gengchen528/wechatBot](https://github.com/gengchen528
 另外我的公众号已经接入微软小冰，关注后发语音会有小姐姐的声音陪你聊天，也可以和她文字聊天，有兴趣可以试试看，单身的欢迎来撩
 
 ![image](/assets/2019/koa-wechaty-10.jpeg)
+
+> 作者: [Leo_chen](https://github.com/leochen-g/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [用Node+wechaty写一个爬虫脚本每天定时给女(男)朋友发微信暖心话](https://juejin.im/post/5c77c6bef265da2de6611cff)

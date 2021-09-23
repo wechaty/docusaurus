@@ -8,8 +8,6 @@ tags:
   - entertainment
 image: /assets/2020/wechaty-lottery/lottery-header.jpg
 ---
-> Author: [csjuXYZ](https://github.com/csjuXYZ)
-> Code: [wechaty_lottery](https://github.com/csjuXYZ/wechaty_lottery)
 
 ## 背景
 
@@ -58,9 +56,9 @@ npm run serve
 ## 开发
 
 ```javascript
-const { Message } = require("wechaty")
+import { Message }  from 'wechaty'
     // 配置文件
-const config = require("./config")
+import config  from './config'
     // 机器人名字
 const name = config.name
 
@@ -139,3 +137,6 @@ async function lottery(msg) {
 
 感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
 感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token
+
+> Author: [csjuXYZ](https://github.com/csjuXYZ)
+> Code: [wechaty_lottery](https://github.com/csjuXYZ/wechaty_lottery)

@@ -70,7 +70,7 @@ some advice to make your work on Wechaty more useful and rewarding.
   When reading Issue, you need to take into account who says things, and when
   they were said. Support for an idea two years ago doesn't necessarily mean
   that the idea will still have support. You also need to pay attention to who
-  *hasn't* spoken -- for example, if an experienced contributor hasn't been
+  _hasn't_ spoken -- for example, if an experienced contributor hasn't been
   recently involved in a discussion, then a ticket may not have the support
   required to get into Wechaty.
 
@@ -97,7 +97,7 @@ some advice to make your work on Wechaty more useful and rewarding.
 - **Err on the side of caution when marking things Ready For Check-in**
 
   If you're really not certain if a ticket is ready, don't mark it as
-  such. Leave a comment instead, letting others know your thoughts.  If you're
+  such. Leave a comment instead, letting others know your thoughts. If you're
   mostly certain, but not completely certain, you might also try asking on Gitter
   to see if someone else can confirm your suspicions.
 

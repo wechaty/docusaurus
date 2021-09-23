@@ -11,9 +11,6 @@ tags:
 image: /assets/2020/wechaty-plugin-xyao/arc.png
 ---
 
-> 作者: [watertao](https://github.com/watertao/)
-> Code: [Github](https://github.com/watertao/wechaty-plugin-xyao)
-
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
@@ -49,7 +46,7 @@ wechaty-plugin-xyao 插件可以让你的 wechaty bot 具备以分布式模块�
 
 ## Requirements
 
-1. Node.js v12+
+1. Node.js v16+
 1. Wechaty v0.40+
 1. This Plugin
 1. Redis server
@@ -292,3 +289,6 @@ public class RandomHandler extends AbstractInstructionHandler {
 ## Copyright & License
 
 1. Code released under the Apache-2.0 License
+
+> 作者: [watertao](https://github.com/watertao/)
+> Code: [Github](https://github.com/watertao/wechaty-plugin-xyao)

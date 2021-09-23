@@ -7,11 +7,6 @@ tags:
 image: /assets/2020/wechaty-subscription-bot/teaser.png
 ---
 
-> 作者: [工画师](https://github.com/fish-ball)，分母为零的斜杠大龄青年程序员。
-<!-- more -->
-
-项目链接：[![wechaty-subsbot](https://img.shields.io/badge/GitHub-wechaty--subsbot-green)](https://github.com/fish-ball/wechaty-subsbot)
-
 ## 项目背景
 
 我是一个主 Python 的全栈工程师，偶然发现了 Wechaty 这个如此惊艳的项目，顿时爱了，然后毫不犹豫申请了开发者号。
@@ -295,3 +290,7 @@ bot.on('message', async msg => {
 
 微信号: huangwenchao1987
 email: huangwc@easecloud.cn
+
+> 作者: [工画师](https://github.com/fish-ball)，分母为零的斜杠大龄青年程序员。
+
+项目链接：[![wechaty-subsbot](https://img.shields.io/badge/GitHub-wechaty--subsbot-green)](https://github.com/fish-ball/wechaty-subsbot)

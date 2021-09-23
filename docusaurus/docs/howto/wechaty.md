@@ -47,7 +47,7 @@ main()
 <TabItem value="js">
 
 ```js
-const { Wechaty } = require('wechaty')
+import { Wechaty }  from 'wechaty'
 
 async function main () {
   const bot = new Wechaty()

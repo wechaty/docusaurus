@@ -7,18 +7,12 @@ tags:
 image: /assets/2020/wechaty-plugin-milestone/plugin.png
 ---
 
-> 作者: [Yinbohao](https://github.com/rickyyin98/)
-
-![Wechaty Plugin活动](/assets/2020/wechaty-plugin-milestone/plugin.png)
-
-## Wechaty 与插件系统
-
 Wechaty 的故事开始于用RPA的方式模拟登录微信，在过去的几年里，服务了数万名开发者，收获了 Github 的 8000 Star。  
 <https://github.com/wechaty/wechaty>
 我们将过去对于绝大多数人难以想象的工作量，通过数万行代码封装成了最短六行代码就可以模拟登录微信的npm包。  
 
 ```javascript
-const { Wechaty } = require('wechaty') // import { Wechaty } from 'wechaty'
+import { Wechaty }  from 'wechaty' // import { Wechaty } from 'wechaty'
 Wechaty.instance() // Global Instance
 .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrcode)}`))
 .on('login',            user => console.log(`User ${user} logined`))
@@ -33,15 +27,8 @@ Wechaty.instance() // Global Instance
 ## 关于插件系统的一切
 
 为了更好地让插件系统为大家所用，Wechaty 社区邀请到Wechaty 作者李卓桓、Wechaty Plugin设计师Gcaufy、Wechaty Puppet Donut/Padplus作者高原、Wechaty Plugin 开发者王墨炱分别就 Wechaty 开发生态、插件开发完整指南、插件的商业化可能等领域进行深度分享。
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tfGZXoe_aA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+
+{% include iframe.html src="https://www.youtube.com/watch?v=tfGZXoe_aA4" %}
 
 ![Wechaty Plugin活动](/assets/2020/wechaty-plugin-milestone/plugin.png)
 
@@ -72,29 +59,8 @@ Wechaty.instance() // Global Instance
 ### 插件系统开发历程及应用
 
 [Wechaty Plugin 设计师，腾讯微信小程序框架开源项目Wepy 作者 Gcaufy 插件系统开发历程及应用](https://www.bilibili.com/video/BV1Et4y1y7Gc)
-<div class="zoom-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <iframe
-    src='{{ '/assets/js/viewer-js/#/assets/2020/wechaty-plugin-milestone/gcaufy.pdf' | relative_url }}'
-    width='560'
-    height='315'
-    allowfullscreen
-    webkitallowfullscreen
-    frameborder="0"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    "
-  ></iframe>
-</div>
+
+{% include iframe.html src="/assets/2020/wechaty-plugin-milestone/gcaufy.pdf" %}
 
 ![Gcaufy-1](/assets/2020/wechaty-plugin-milestone/gcaufy1.jpg)
 
@@ -105,29 +71,8 @@ Wechaty.instance() // Global Instance
 ### Wechaty 插件的商业化落地展望
 
 [15:00 - 15:30 Wechaty Puppet Donut/Padplus 作者 高原 Wechaty 插件的商业化落地展望](https://www.bilibili.com/video/BV13T4y1J7Ta)
-<div class="zoom-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <iframe
-    src='{{ '/assets/js/viewer-js/#/assets/2020/wechaty-plugin-milestone/yuan.pdf' | relative_url }}'
-    width='560'
-    height='315'
-    allowfullscreen
-    webkitallowfullscreen
-    frameborder="0"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    "
-  ></iframe>
-</div>
+
+{% include iframe.html src="/assets/2020/wechaty-plugin-milestone/yuan.pdf" %}
 
 ![Yuan-1](/assets/2020/wechaty-plugin-milestone/yuan1.jpg)
 
@@ -199,3 +144,5 @@ Wechaty 社区欢迎你使用插件、将你的机器人能力封装成插件、
 - 直接在[Wechaty插件库](https://github.com/wechaty/wechaty-plugin-contrib)中寻找合适的插件并使用。
 - 参与Wechaty开源激励计划[Everything about Wechaty](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)，生产一个有价值的插件，Wechaty社区将为你提供一个长期有效的Token。
 - 在[Wechaty插件库](https://github.com/wechaty/wechaty-plugin-contrib)中更新你的插件，让更多开发者直接使用。
+
+> 作者: [Yinbohao](https://github.com/rickyyin98/)
