@@ -8,11 +8,6 @@ tags:
 image: /assets/2016/ghostcloud-banner.jpg
 ---
 
-* 本文作者：@[shevyan](https://github.com/shevyan) 晏东，[精灵云GhostCloud](https://www.ghostcloud.cn/)创始人&CEO
-* 原文地址：<http://mp.weixin.qq.com/s/o-4VMcAMz0K8yJVdNaUXow>
-
-![GhostCloud Banner][ghostcloud-banner]
-
 Wechaty(<https://github.com/wechaty/wechaty>)是一款开源的微信SDK，它基于微信公开的API，对接口进行了一系列的封装，提供一系列简单的接口，然后开发者可以在其之上进行微信机器人的开发。在跟作者沟通试用以后，发现其中有着非常多的应用场景，比如：
 
 1. 如果你的好友众多，如何管理和维护好友分组；
@@ -21,6 +16,11 @@ Wechaty(<https://github.com/wechaty/wechaty>)是一款开源的微信SDK，它�
 1. 能否可以自动智能地进行聊天回复
 1. ……
 
+* 本文作者：@[shevyan](https://github.com/shevyan) 晏东，[精灵云GhostCloud](https://www.ghostcloud.cn/)创始人&CEO
+* 原文地址：<http://mp.weixin.qq.com/s/o-4VMcAMz0K8yJVdNaUXow>
+
+![GhostCloud Banner][ghostcloud-banner]
+
 ## 1 快速上手
 
 wechaty使用node编写，所以支持几乎所有的平台，wechaty的hello-world只需要6行代码即可实现聊天记录的动态收集。为了使用方便作者还进行了docker化的封装，结合docker绝对是一个不错的选择。
@@ -28,7 +28,7 @@ wechaty使用node编写，所以支持几乎所有的平台，wechaty的hello-wo
 Step 1: 新建一个mybot.js，内容如下：
 
 ```javascript
-const { Wechaty } = require('wechaty')
+import { Wechaty }  from 'wechaty'
 
 Wechaty.instance() // Singleton
 .on('scan', (url, code) => console.log(`Scan QR Code to login: ${code}\n${url}`))

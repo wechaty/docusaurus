@@ -7,12 +7,12 @@ categories:
 tags:
   - google
   - gsod
+  - gsod-2021
   - event
   - 2021
   - zoom
   - news
   - featured
-  - sticky
   - docs
 image: /assets/2021/05-gsod-2021-selected-technical-writers/gsod-meeting-teasor.webp 
 ---

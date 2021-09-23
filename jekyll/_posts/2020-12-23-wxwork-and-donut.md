@@ -8,10 +8,6 @@ tags:
 image: /assets/2020/12-07-wxwork/wecom.png
 ---
 
-> 作者: [zhihuifanqiechaodan](https://github.com/zhihuifanqiechaodan) 前端开发工程师
-
-## wechaty
-
 GitHub 上搜了一圈，看到了挺多微信 bot 的方案，后面决定使用 wechaty，因为感觉设计得很优雅，6 行代码就可以轻松构建一个 wxbot。
 
 - [官方文档](https://wechaty.js.org/docs/)
@@ -100,23 +96,23 @@ Wechaty 是一个开源的的对话机器人 SDK，支持 个人号 微信。它
 src/main.js
 
 ```js
-const { Wechaty } = require("wechaty"); // 机器人木偶
+import { Wechaty }  from 'wechaty'; // 机器人木偶
 
-const { onScan } = require("../service/bot-service/scan-service"); // 当机器人需要扫码登陆的时候会触发这个事件。
-const { onLogin } = require("../service/bot-service/login-service"); // 当机器人成功登陆后，会触发事件，并会在事件中传递当前登陆机器人的信息
-const { onLogout } = require("../service/bot-service/logout-service"); // 当机器人检测到登出的时候，会触发事件，并会在事件中传递机器人的信息。
-const { onReady } = require("../service/bot-service/ready-service"); // 当所有数据加载完成后，会触发这个事件。在wechaty-puppet-padchat 中，它意味着已经加载完成Contact 和Room 的信息。
-const { onMessage } = require("../service/bot-service/message-service"); // 当机器人收到消息的时候会触发这个事件。
-const { onRoomInvite } = require("../service/bot-service/room-invite-service"); // 当收到群邀请的时候，会触发这个事件。
-const { onRoomTopic } = require("../service/bot-service/room-topic-service"); // 当有人修改群名称的时候会触发这个事件。
-const { onRoomJoin } = require("../service/bot-service/room-join-service"); // 当有人进入微信群的时候会触发这个事件。机器人主动进入某个微信群，那个样会触发这个事件。
-const { onRoomleave } = require("../service/bot-service/room-leave-service"); // 当机器人把群里某个用户移出群聊的时候会触发这个时间。用户主动退群是无法检测到的。
-const { onFriendship } = require("../service/bot-service/friendship-service"); // 当有人给机器人发好友请求的时候会触发这个事件。
-const { onHeartbeat } = require("../service/bot-service/heartbeat-service"); // 获取机器人的心跳。
-const { onError } = require("../service/bot-service/error-service"); // 当机器人内部出错的时候会触发error 事件。
+import { onScan }  from '../service/bot-service/scan-service'; // 当机器人需要扫码登陆的时候会触发这个事件。
+import { onLogin }  from '../service/bot-service/login-service'; // 当机器人成功登陆后，会触发事件，并会在事件中传递当前登陆机器人的信息
+import { onLogout }  from '../service/bot-service/logout-service'; // 当机器人检测到登出的时候，会触发事件，并会在事件中传递机器人的信息。
+import { onReady }  from '../service/bot-service/ready-service'; // 当所有数据加载完成后，会触发这个事件。在wechaty-puppet-padchat 中，它意味着已经加载完成Contact 和Room 的信息。
+import { onMessage }  from '../service/bot-service/message-service'; // 当机器人收到消息的时候会触发这个事件。
+import { onRoomInvite }  from '../service/bot-service/room-invite-service'; // 当收到群邀请的时候，会触发这个事件。
+import { onRoomTopic }  from '../service/bot-service/room-topic-service'; // 当有人修改群名称的时候会触发这个事件。
+import { onRoomJoin }  from '../service/bot-service/room-join-service'; // 当有人进入微信群的时候会触发这个事件。机器人主动进入某个微信群，那个样会触发这个事件。
+import { onRoomleave }  from '../service/bot-service/room-leave-service'; // 当机器人把群里某个用户移出群聊的时候会触发这个时间。用户主动退群是无法检测到的。
+import { onFriendship }  from '../service/bot-service/friendship-service'; // 当有人给机器人发好友请求的时候会触发这个事件。
+import { onHeartbeat }  from '../service/bot-service/heartbeat-service'; // 获取机器人的心跳。
+import { onError }  from '../service/bot-service/error-service'; // 当机器人内部出错的时候会触发error 事件。
 
-const { wechatyToken } = require("../config/index"); // 机器人token
-const { globalData } = require("../store/index"); // 全局对象
+import { wechatyToken }  from '../config/index'; // 机器人token
+import { globalData }  from '../store/index'; // 全局对象
 
 globalData.bot = new Wechaty({
   puppet: "wechaty-puppet-service",
@@ -147,8 +143,8 @@ globalData.bot
   通过 node 启动后，触发 onScan 事件，将登录二维码打印在控制台，扫码登录
 
 ```js
-const QrcodeTerminal = require("qrcode-terminal");
-const { ScanStatus } = require("wechaty-puppet");
+import QrcodeTerminal  from 'qrcode-terminal';
+import { ScanStatus }  from 'wechaty-puppet';
 
 /**
  * @method onScan 当机器人需要扫码登陆的时候会触发这个事件。 建议你安装 qrcode-terminal(运行 npm install qrcode-terminal) 这个包，这样你可以在命令行中直接看到二维码。
@@ -180,8 +176,8 @@ module.exports = { onScan };
 const {
   notificationLoginInformation,
 } = require("../../common-service/ding-service");
-const { updateBotInfo } = require("./function-service");
-const { globalData } = require("../../../store/index");
+import { updateBotInfo }  from './function-service';
+import { globalData }  from '../../../store/index';
 
 /**
  * @method onLogin 当机器人成功登陆后，会触发事件，并会在事件中传递当前登陆机器人的信息
@@ -214,7 +210,7 @@ module.exports = { onLogin };
 const {
   notificationLoginInformation,
 } = require("../common-service//ding-service");
-const { globalData } = require("../../store/index");
+import { globalData }  from '../../store/index';
 
 /**
  * @method onLogout 当机器人检测到登出的时候，会触发事件，并会在事件中传递机器人的信息。
@@ -250,8 +246,8 @@ module.exports = { onLogout };
   当微信接收到新的消息时候会触发 onMessage 事件，通过事件内对消息的判断，群内消息还是私聊消息等做出不同的逻辑处理。从而实现业务需求。部分代码如下
 
 ```js
-const dayjs = require("dayjs");
-const { say } = require("../../common-service/chatbot-service");
+import dayjs  from 'dayjs';
+import { say }  from '../../common-service/chatbot-service';
 const {
   isCanSay,
   roomIdentifyVin,
@@ -266,8 +262,8 @@ const {
   roomMessageFeedback,
   contactMessageFeedback,
 } = require("../../common-service/ding-service");
-const { globalData } = require("../../../store/index");
-const { Message } = require("wechaty");
+import { globalData }  from '../../../store/index';
+import { Message }  from 'wechaty';
 
 /**
  * @method onMessage 当机器人收到消息的时候会触发这个事件。
@@ -334,9 +330,9 @@ module.exports = { onMessage };
 因为 say()方法会在多处调用，并且要根据不同的消息类型发送的内容做出不同的数据处理。大家以后也会遇到，因此这里将我封装的一个 say 方法展示给大家用于参考
 
 ```js
-const { MiniProgram, UrlLink, FileBox } = require("wechaty");
-const dayjs = require("dayjs");
-const { DelayQueueExector } = require("rx-queue");
+import { MiniProgram, UrlLink, FileBox }  from 'wechaty';
+import dayjs  from 'dayjs';
+import { DelayQueueExector }  from 'rx-queue';
 const {
   redisHexists,
   redisHset,
@@ -344,7 +340,7 @@ const {
   redisSet,
   redisLpush,
 } = require("../redis-service/index");
-const { globalData } = require("../../store/index");
+import { globalData }  from '../../store/index';
 
 const delay = new DelayQueueExector(10000);
 
@@ -663,3 +659,5 @@ async function messageProcessing(message) {
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
+
+> 作者: [zhihuifanqiechaodan](https://github.com/zhihuifanqiechaodan) 前端开发工程师

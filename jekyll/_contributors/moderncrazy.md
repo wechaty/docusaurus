@@ -1,7 +1,7 @@
 ---
 name: moderncrazy
 site: https://github.com/moderncrazy
-avatar: /assets/contributors/moderncrazy/avatar.png
+avatar: /assets/contributors/moderncrazy/avatar.webp
 bio: 
 email: 
 twitter: 
