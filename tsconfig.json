@@ -2,16 +2,6 @@
   "extends": "@chatie/tsconfig",
   "compilerOptions": {
     "outDir": "dist",
-
-    "allowJs": true,
-    "esModuleInterop": true,
-    "jsx": "react",
-    "lib": [
-      "DOM",
-      "ESNext"
-    ],
-    "noEmit": true,
-    "noImplicitAny": false
   },
   "exclude": [
     "node_modules/",
@@ -19,7 +9,6 @@
     "tests/fixtures/",
   ],
   "include": [
-    "docusaurus/src/",
     "bin/*.ts",
     "scripts/**/*.ts",
     "src/**/*.ts",

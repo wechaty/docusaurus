@@ -8,10 +8,6 @@ tags:
 image: /assets/2020/runwechatyonpi/head.png
 ---
 
-> 作者: [cr4fun](https://github.com/cr4fun)，极客、物联网专家，SDK产品经理。
-
-<!-- more -->
-
 ## 一、介绍
 
 1、wechaty是迄今为止最易于使用的开源微信机器人框架
@@ -19,7 +15,7 @@ image: /assets/2020/runwechatyonpi/head.png
 只要会写JavaScript就可以开发微信机器人，示例只有7行代码：
 
 ```javascript
-const { Wechaty } = require('wechaty') // import { Wechaty } from 'wechaty'
+import { Wechaty }  from 'wechaty' // import { Wechaty } from 'wechaty'
 Wechaty.instance() // Global Instance
 .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrcode)}`))
 .on('login',            user => console.log(`User ${user} logined`))
@@ -79,7 +75,7 @@ npm install utf-8-validate@^5.0.2
 5、创建 bot.js 文件
 
 ```javascript
-const { Wechaty } = require('wechaty') // import { Wechaty } from 'wechaty'
+import { Wechaty }  from 'wechaty' // import { Wechaty } from 'wechaty'
 Wechaty.instance() // Global Instance
 .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrcode)}`))
 .on('login',            user => console.log(`User ${user} logined`))
@@ -110,7 +106,7 @@ WECHATY_PUPPET=wechaty-puppet-service WECHATY_PUPPET_SERVICE_TOKEN=token node bo
 树莓派操作硬件，只需要引入相应的GPIO库，操作GPIO，只需要对某个针脚执行高电平或低电平：
 
 ```javascript
-const Gpio = require('onoff').Gpio;//引入GPIO库
+import Gpio  from 'onoff'.Gpio;//引入GPIO库
 ```
 
 设置针脚17为输出针脚，用于连接继电器
@@ -134,8 +130,8 @@ led.writeSync(0);//低电平关灯
 ### 全部代码
 
 ```javascript
-const { Wechaty } = require('wechaty') // import { Wechaty } from 'wechaty'
-const Gpio = require('onoff').Gpio;
+import { Wechaty }  from 'wechaty' // import { Wechaty } from 'wechaty'
+import Gpio  from 'onoff'.Gpio;
 const led = new Gpio(17, 'out');
 Wechaty.instance() // Global Instance
 .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrcode)}`))
@@ -166,3 +162,5 @@ function on_msg(message){
 ## 视频演示
 
 <https://www.bilibili.com/video/BV1bz411B7XG?seid=14179117841102771483>
+
+> 作者: [cr4fun](https://github.com/cr4fun)，极客、物联网专家，SDK产品经理。

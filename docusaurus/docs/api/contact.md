@@ -1,59 +1,58 @@
 ---
-title: Contact
+title: Contact Class
 ---
 
 All wechat contacts(friend) will be encapsulated as a Contact.
 
 ## Classes
 
-[Contact](contact.md#Contact)
-
-All wechat contacts\(friend\) will be encapsulated as a Contact. [Examples/Contact-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/contact-bot.ts)
-
-## Typedefs
-
-[ContactQueryFilter](contact.md#ContactQueryFilter)
-
-The way to search Contact
+All wechat contacts\(friend\) will be encapsulated as a Contact.
+[Examples/Contact-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/contact-bot.ts)
 
 ## Contact
 
-All wechat contacts\(friend\) will be encapsulated as a Contact. [Examples/Contact-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/contact-bot.ts)
+All wechat contacts\(friend\) will be encapsulated as a Contact.
 
-**Kind**: global class **Properties**
+### Properties
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | id | `string` | Get Contact id. This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table) |
 
-* [Contact](contact.md#Contact)
-  * _instance_
-    * [.say\(textOrContactOrFileOrUrl\)](contact.md#Contact+say) ⇒ `Promise <void>`
-    * [.name\(\)](contact.md#Contact+name) ⇒ `string`
-    * [.alias\(newAlias\)](contact.md#Contact+alias) ⇒ `Promise <null | string | void>`
-    * [.friend\(\)](contact.md#Contact+friend) ⇒ `boolean` \| `null`
-    * [.type\(\)](contact.md#Contact+type) ⇒ `ContactType.Unknown` \| `ContactType.Personal` \| `ContactType.Official`
-    * [.gender\(\)](contact.md#Contact+gender) ⇒ `ContactGender.Unknown` \| `ContactGender.Male` \| `ContactGender.Female`
-    * [.province\(\)](contact.md#Contact+province) ⇒ `string` \| `null`
-    * [.city\(\)](contact.md#Contact+city) ⇒ `string` \| `null`
-    * [.avatar\(\)](contact.md#Contact+avatar) ⇒ `Promise <FileBox>`
-    * [.sync\(\)](contact.md#Contact+sync) ⇒ `Promise <void>`
-    * [.self\(\)](contact.md#Contact+self) ⇒ `boolean`
-  * _static_
-    * [.find\(query\)](contact.md#Contact.find) ⇒ `Promise <Contact | null>`
-    * [.findAll\(\[queryArg\]\)](contact.md#Contact.findAll) ⇒ `Promise <Contact []>`
+## Global Class `Contact`
+
+### Instance Methods
+
+| Instance Methods                     | Return type                                                           |
+|--------------------------------------|-----------------------------------------------------------------------|
+| say(text Or Contact Or File Or Url)  | `Promise`                                                             |
+| name()                               | `String`                                                              |
+| alias(newAlias)                      | `Promise`                                                             |
+| friend()                             | `Boolean or null`                                                     |
+| type()                               | `ContactType.Unknown or ContactType.Personal or ContactType.Official` |
+| gender()                             | `ContactGender.Unknown or ContactGender.Male or ContactGender.Female` |
+| province()                           | `String or null`                                                      |
+| city()                               | `String or null`                                                      |
+| avatar()                             | `Promise`                                                             |
+| sync()                               | `Promise`                                                             |
+| self()                               | `Boolean`                                                             |
+
+### Static Methods
+
+| Static Methods            | Return Type                 |
+|---------------------------|-----------------------------|
+| find(query)               | `Promise <Contact \| null>` |
+| findAll(Query Arguements) | `Promise <Contact []>`      |
 
 ### contact.say\(textOrContactOrFileOrUrlLinkOrMiniProgram\) ⇒ `Promise <void>`
 
 > Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
-**Kind**: instance method of [`Contact`](contact.md#Contact)
-
 | Param | Type | Description |
 | :--- | :--- | :--- |
 | textOrContactOrFileOrUrlLinkOrMiniProgram | `string` \| [`Contact`](contact.md#Contact) \| `FileBox` \| `UrlLink` \| `MiniProgram` | send text, Contact, file or UrlLink to contact.   You can use [FileBox](https://www.npmjs.com/package/file-box) to send file |
 
-#### Example
+### Example
 
 ```javascript
 import { FileBox }  from 'file-box'
@@ -110,9 +109,9 @@ await contact.say(miniProgram);
 
 ### contact.name\(\) ⇒ `string`
 
-Get the name from a contact
+The method gets the name from a contact.Check the below illustation for implementation.
 
-**Kind**: instance method of [`Contact`](contact.md#Contact) **Example**
+### Example
 
 ```javascript
 const name = contact.name()
@@ -120,17 +119,13 @@ const name = contact.name()
 
 ### contact.alias\(newAlias\) ⇒ `Promise <null | string | void>`
 
-GET / SET / DELETE the alias for a contact
-
-Tests show it will failed if set alias too frequently\(60 times in one minute\).
-
-**Kind**: instance method of [`Contact`](contact.md#Contact)
+The method gets or sets or deletes the alias for a contact.Tests show it will failed if set alias too frequently\(60 times in one minute\).
 
 | Param | Type |
 | :--- | :--- |
 | newAlias | `none` \| `string` \| `null` |
 
-**Example** _\( GET the alias for a contact, return {\(Promise&lt;string \| null&gt;\)}\)_
+### Example \( GET the alias for a contact, return {\(Promise&lt;string \| null&gt;\)}\)
 
 ```javascript
 const alias = await contact.alias()
@@ -141,7 +136,7 @@ if (alias === null) {
 }
 ```
 
-**Example** _\(SET the alias for a contact\)_
+### Example \(SET the alias for a contact\)
 
 ```javascript
 try {
@@ -152,7 +147,7 @@ try {
 }
 ```
 
-**Example** _\(DELETE the alias for a contact\)_
+### Example \(DELETE the alias for a contact\)
 
 ```javascript
 try {
@@ -164,25 +159,25 @@ try {
 }
 ```
 
-### contact.friend\(\) ⇒ `boolean` \| `null`
+### Contact.friend\(\) ⇒ `boolean` \| `null`
 
-Check if contact is friend
+The method checks if contact is friend.It returns `true` for friend of the bot and  `false` for not friend of the bot, `null` for unknown.
 
 > Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
-**Kind**: instance method of [`Contact`](contact.md#Contact) **Returns**: `boolean` \| `null` - True for friend of the bot False for not friend of the bot, null for unknown. **Example**
+### Example
 
 ```javascript
 const isFriend = contact.friend()
 ```
 
-### contact.type\(\) ⇒ `ContactType.Unknown` \| `ContactType.Personal` \| `ContactType.Official`
+### Contact.type\(\) ⇒ `ContactType.Unknown` \| `ContactType.Personal` \| `ContactType.Official`
 
-Return the type of the Contact
+This method returns the type of the Contact.Check the example below for implementation.
 
 > Tips: ContactType is enum here.
 
-**Kind**: instance method of [`Contact`](contact.md#Contact) **Example**
+### Example
 
 ```javascript
 const bot = new Wechaty()
@@ -192,41 +187,41 @@ const isOfficial = contact.type() === bot.Contact.Type.Official
 
 ### contact.gender\(\) ⇒ `ContactGender.Unknown` \| `ContactGender.Male` \| `ContactGender.Female`
 
-Contact gender
+The method gets the Contact gender.Check the below example for implementation.
 
 > Tips: ContactGender is enum here.
 
-**Kind**: instance method of [`Contact`](contact.md#Contact) **Example**
+### Example
 
 ```javascript
 const gender = contact.gender() === bot.Contact.Gender.Male
 ```
 
-### contact.province\(\) ⇒ `string` \| `null`
+### Contact.province\(\) ⇒ `string` \| `null`
 
-Get the region 'province' from a contact
+This method gets the region 'province' from a contact.Check the below example for implementation.
 
-**Kind**: instance method of [`Contact`](contact.md#Contact) **Example**
+### Example
 
 ```javascript
 const province = contact.province()
 ```
 
-### contact.city\(\) ⇒ `string` \| `null`
+### Contact.city\(\) ⇒ `string` \| `null`
 
-Get the region 'city' from a contact
+This method gets the region 'city' from a contact.Check the below example for implementation.
 
-**Kind**: instance method of [`Contact`](contact.md#Contact) **Example**
+### Example
 
 ```javascript
 const city = contact.city()
 ```
 
-### contact.avatar\(\) ⇒ `Promise <FileBox>`
+### Contact.avatar\(\) ⇒ `Promise <FileBox>`
 
-Get avatar picture file stream
+This method gets avatar picture from file stream.Check the below example for implementation.
 
-**Kind**: instance method of [`Contact`](contact.md#Contact) **Example**
+### Example
 
 ```javascript
 // Save avatar to local file like `1-name.jpg`
@@ -237,33 +232,31 @@ await file.toFile(name, true)
 console.log(`Contact: ${contact.name()} with avatar file: ${name}`)
 ```
 
-### contact.sync\(\) ⇒ `Promise <void>`
+### Contact.sync\(\) ⇒ `Promise <void>`
 
-Force reload data for Contact, Sync data from lowlevel API again.
+The method force reload of data for Contact, Sync data from lowlevel API again.Check the below example for implementation.
 
-**Kind**: instance method of [`Contact`](contact.md#Contact) **Example**
+### Example
 
 ```javascript
 await contact.sync()
 ```
 
-### contact.self\(\) ⇒ `boolean`
+### Contact.self\(\) ⇒ `boolean`
 
-Check if contact is self
+The method checks if contact is self.It returns `boolean` - True for contact is self, False for contact is others.Check the below example for implementation.
 
-**Kind**: instance method of [`Contact`](contact.md#Contact) **Returns**: `boolean` - True for contact is self, False for contact is others **Example**
+### Example
 
 ```javascript
 const isSelf = contact.self()
 ```
 
+## Static Methods
+
 ### Contact.find\(query\) ⇒ `Promise <Contact | null>`
 
-Try to find a contact by filter: {name: string \| RegExp} / {alias: string \| RegExp}
-
-Find contact by name or alias, if the result more than one, return the first one.
-
-**Kind**: static method of [`Contact`](contact.md#Contact) **Returns**: `Promise.` - If can find the contact, return Contact, or return null
+The method finds the contact by name or alias, if the result more than one, return the first one.Try to find a contact by filter: {name: string \| RegExp} / {alias: string \| RegExp}.The returns `Promise.` - If it can find the contact,or return `null`.
 
 | Param | Type |
 | :--- | :--- |
@@ -280,16 +273,12 @@ const contactFindByAlias = await bot.Contact.find({ alias:"lijiarui"} )
 
 ### Contact.findAll\(\[queryArg\]\) ⇒ `Promise <Contact []>`
 
-Find contact by `name` or `alias`
+This method finds contact by `name` or `alias`.If  you use Contact.findAll\(\) get the contact list of the bot. Include the contacts from bot's rooms.
 
-If use Contact.findAll\(\) get the contact list of the bot. Include the contacts from bot's rooms.
-
-#### definition
+#### Definition
 
 * `name`   the name-string set by user-self, should be called name
 * `alias`  the name-string set by bot for others, should be called alias
-
-**Kind**: static method of [`Contact`](contact.md#Contact)
 
 | Param | Type |
 | :--- | :--- |
@@ -305,11 +294,13 @@ const contactList = await bot.Contact.findAll({ name: 'ruirui' })    // find all
 const contactList = await bot.Contact.findAll({ alias: 'lijiarui' }) // find all of the contacts whose alias is 'lijiarui'
 ```
 
-## ContactQueryFilter
+## Typedefs
 
-The way to search Contact
+### ContactQueryFilter
 
-**Kind**: global typedef **Properties**
+It is a  global `typedef` used to search contacts.
+
+### Properties
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
