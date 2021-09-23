@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import HeaderSection from "./header-section/wechatyLandingPage";
+import HeaderSection from "./header-section/hero-section";
 import { DocusaurusConfig } from "@docusaurus/types";
 
 // one-pager - Encapsulates the essence of a technology onto a single page.
