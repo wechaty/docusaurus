@@ -88,7 +88,7 @@ QQ 是国内和微信并列的两大聊天软件。我们在本次 Summer 2021 �
 
 - wechaty消息处理链路相对复杂，难以理解`
 
-    通过咨询项目导师和wechaty飞书机器人负责人等途径，观看社区livecoding视频，对消息处理进行快速学习，并通过编码实践，最终成功将oicq的事件和消息格式转换为了wechaty的messageRawPay，也加深了对框架架构设计的理解。
+    通过咨询项目导师和wechaty飞书机器人负责人等途径，观看社区livecoding视频，对消息处理进行快速学习，并通过编码实践，最终成功将oicq的事件和消息格式转换为了wechaty的messageRawPayload，也加深了对框架架构设计的理解。
 
 - 遇到QQ风控
     通过途径弄到了一些QQ小号方便测试。
