@@ -82,7 +82,7 @@ tags:
 
 ### 项目PPT：
 
-{% include iframe.html src="/assets/2021/08-ospp-mid-term-club-managment/mid-term.pptx" %}
+{% include iframe.html src="/assets/2021/08-ospp-mid-term-club-managment/mid-term-ppt.pdf" %}
 
 ## 联系我们
 
