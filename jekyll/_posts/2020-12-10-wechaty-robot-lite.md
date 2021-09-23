@@ -212,7 +212,7 @@ socket服务**socketio.js**文件
 ```javascript
 
 var socketio = {};
-const common = require('./common');
+import common  from './common';
 
 // 获取io
 
@@ -301,7 +301,7 @@ donut服务**donut.js**文件
 
 ```javascript
 
-const { FileBox } = require("wechaty");
+import { FileBox }  from 'wechaty';
 
 var puppet_donut = {};
 
@@ -368,16 +368,16 @@ puppet_donut.sendMiniProgramMsgToContact = async function(friendName, username, 
 //初始化调用
 puppet_donut.run = function(){
 
-    const { Wechaty } = require('wechaty');
-    const { ScanStatus } = require('wechaty-puppet');
-    const QrcodeTerminal = require('qrcode-terminal');
-    const io = require('./socketio');
-    const config = require("./config");
+    import { Wechaty }  from 'wechaty';
+    import { ScanStatus }  from 'wechaty-puppet';
+    import QrcodeTerminal  from 'qrcode-terminal';
+    import io  from './socketio';
+    import config  from './config';
 
-    const onRoomJoin = require("./wechaty/onRoomJoin");     // 加入房间监听回调
-    const onRoomLeave = require("./wechaty/onRoomLeave");   // 退出房间监听回调
-    const onMessage = require("./wechaty/onMessage");       // 消息监听回调
-    const onFriendShip = require("./wechaty/onFriendShip"); // 好友添加监听回调
+    import onRoomJoin  from './wechaty/onRoomJoin';     // 加入房间监听回调
+    import onRoomLeave  from './wechaty/onRoomLeave';   // 退出房间监听回调
+    import onMessage  from './wechaty/onMessage';       // 消息监听回调
+    import onFriendShip  from './wechaty/onFriendShip'; // 好友添加监听回调
 
     const token = config.token;
 
@@ -497,7 +497,7 @@ puppet_donut.sendTextMsgToContact = async function(friendName, text){
 这里代码较简单，意思是前面通过
 
 ```javascript
-const QrcodeTerminal = require('qrcode-terminal');
+import QrcodeTerminal  from 'qrcode-terminal';
 ```
 
 引用qrcode-terminal模块，用于在终端进行二维码输出，方便我们测试扫码；
@@ -525,10 +525,10 @@ const QrcodeTerminal = require('qrcode-terminal');
 这里我看了官方文档，可实现的业务很多，大家可参考官方api进行更多业务拓展！！！
 
 ```javascript
-const { Friendship } = require("wechaty");
+import { Friendship }  from 'wechaty';
 // 配置文件
-const config = require("../config");
-const io = require('../socketio');
+import config  from '../config';
+import io  from '../socketio';
 // 好友添加验证消息自动同意关键字数组
 const addFriendKeywords = config.personal.addFriendKeywords;
 
@@ -576,8 +576,8 @@ module.exports = async function onFriendShip(friendship) {
 
 ```javascript
 // 配置文件
-const config = require("../config");
-const io = require('../socketio');
+import config  from '../config';
+import io  from '../socketio';
 // 加入房间回复
 const roomJoinReply = config.room.roomJoinReply;
 // 管理群组列表
@@ -627,7 +627,7 @@ module.exports = async function onRoomJoin(room, inviteeList, inviter) {
 监听用户退出群聊
 
 ```javascript
-const io = require('../socketio');
+import io  from '../socketio';
 // 进入房间监听回调 room-群聊 leaver-退群者
 module.exports = async function onRoomLeave(room, leaver) {
     console.log("群-【" + room.name + "】：" + leaver + " 退群");
@@ -1000,7 +1000,7 @@ io.sockets.on('connection', function (socket) {});
 * 关于socketio，和nodejs结合在一起，体验nodejs的异步非阻塞，简直要起了飞；
 * 环境
   * 系统：win7、centos7.6成功运行
-  * nodejs版本：windows下调试：v12.16.2；centos：v10.16.0；（wechaty对node版本有要求，不同协议版本最低要求不一致，大家自行参考开源说明和官方文档）
+  * nodejs版本：windows下调试：v16.16.2；centos：v10.16.0；（wechaty对node版本有要求，不同协议版本最低要求不一致，大家自行参考开源说明和官方文档）
 * 代码
   * 主要是抽空码出来的，没有太多时间优化
   * 有一些业务代码写好了，但是并没有接入使用，欢迎大家补充
