@@ -1,11 +1,11 @@
 import fs from 'fs'
 
-import { loadFront }  from 'yaml-front-matter'
+import yfm from 'yaml-front-matter'
 
 const getFrontmatterAvatarList = (file: string): string[] => {
-  const front = loadFront(fs.readFileSync(file))
-  if (front.avatar) {
-    return [front.avatar]
+  const front = yfm.loadFront(fs.readFileSync(file))
+  if (front['avatar']) {
+    return [front['avatar']]
   }
   return []
 }

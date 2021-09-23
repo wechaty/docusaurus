@@ -8,10 +8,6 @@ tags:
 image: /assets/2019/koa-wechaty.jpg
 ---
 
-> 作者: [Leo_chen](https://github.com/leochen-g/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [使用koa2+wechaty打造个人微信小秘书](https://juejin.im/post/5ca1dd846fb9a05e6c77b72f?utm_source=gold_browser_extension)
-
-![koa2](/assets/2019/koa-wechaty.jpg)
-
 * 你是不是有闲置的微信号?
 * 你想不想有个小秘书定时提醒你将要做的事情？
 * 你是否为忘记一些纪念日而懊恼？
@@ -84,12 +80,12 @@ index.js
 微信登录，定时任务初始化，小秘书具体实现的主要文件。接口`getScheduleList`在每次登陆后会从数据库拉取未执行的定时任务并进行初始化，防止意外掉线后无法恢复定时任务。同时每次设置定时任务，接口`addSchedule`会直接向数据库中插入一条任务记录并把任务添加到定时任务列表中。每次任务执行完毕后，接口`updateSchedule`都会更新数据库中指定任务的状态，防止任务重复执行。
 
 ```js
-    const { Wechaty, Friendship } = require('wechaty')
-    const schedule = require('./config/schedule')
-    const { FileBox } = require('file-box')
-    const Qrterminal = require('qrcode-terminal')
-    const { request } = require('./config/superagent')
-    const untils = require('./untils/index')
+    import { Wechaty, Friendship }  from 'wechaty'
+    import schedule  from './config/schedule'
+    import { FileBox }  from 'file-box'
+    import Qrterminal  from 'qrcode-terminal'
+    import { request }  from './config/superagent'
+    import untils  from './untils/index'
     const host = 'http://127.0.0.1:3008/api'
 
     // 每次登录初始化定时任务
@@ -291,10 +287,10 @@ koa服务默认使用3008端口，如果修改的话，需要在index.js中修�
 config/koa.js
 
 ```js
-    const Koa = require("koa")
-    const Router = require("koa-router")
-    const bodyParser = require('koa-bodyparser')
-    const model = require("../mongodb/model")
+    import Koa  from 'koa'
+    import Router  from 'koa-router'
+    import bodyParser  from 'koa-bodyparser'
+    import model  from '../mongodb/model'
 
     const app = new Koa()
     const router = new Router()
@@ -353,7 +349,7 @@ mongodb/config.js
 这里主要是MongoDB的主要配置文件，使用了mongoose链接MongoDB数据库，默认端口27017，创建了一个名为`wechatAssitant`的库
 
 ```ts
-    const mongoose = require("mongoose")
+    import mongoose  from 'mongoose'
 
     const db_url = 'mongodb://localhost:27017/wechatAssitant'
     let db = mongoose.connect(db_url, { useNewUrlParser: true })
@@ -381,7 +377,7 @@ mongodb/schema.js
 在Mongoose里一切都是从Schema开始的，每一个Schema都会映射到MongoDB的一个collection上。Schema定义了collection里documents的模板（或者说是框架）,如下代码定义了定时任务的Schema：
 
 ```ts
-    const mongoose = require('./config')
+    import mongoose  from './config'
     const Schema = mongoose.Schema
 
     let assistant = new Schema({
@@ -402,7 +398,7 @@ mongodb/model.js
 为了使用定义好的Schema，我们需要把Schema转换成我们可以使用的model(其实是把Schema编译成model，所以对于Schema的一切定义都要在compile之前完成)。也就是说model才是我们可以进行操作的handle，具体实现代码`mongoose.model('Assistant', assistant)`，这里我们已经在schema.js文件中直接导出，直接在model.js中引用
 
 ```ts
-    const Assistant = require('./schema')
+    import Assistant  from './schema'
 
     module.exports = {
         insert: (conditions) => { // 添加定时任务
@@ -551,3 +547,5 @@ github:[https://github.com/gengchen528/wechat-assistant](https://github.com/geng
 另外我的公众号已经接入微软小冰，关注后发语音会有小姐姐的声音陪你聊天，也可以和她文字聊天，有兴趣可以试试看，单身的欢迎来撩
 
 ![image](/assets/2019/koa-wechaty-10.jpeg)
+
+> 作者: [Leo_chen](https://github.com/leochen-g/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [使用koa2+wechaty打造个人微信小秘书](https://juejin.im/post/5ca1dd846fb9a05e6c77b72f?utm_source=gold_browser_extension)

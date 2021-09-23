@@ -6,6 +6,7 @@ image: /assets/2020/08-zizz/zizz.png
 tags:
   - fun
 ---
+
 ![Gcaufy Wechaty zizz](/assets/2020/08-zizz/zizz-discussion.jpg)
 
 > 这个是 阿兹纳莫曲线

@@ -8,13 +8,11 @@ tags:
 image: /assets/2020/issue-feedback-room-monitor/way.jpg
 ---
 
-## 背景
-
 因为我们的用户都喜欢通过微信群讨论的方式进行产品问题反馈，这无疑给日常的线上问题处理的效率带来极大的影响。曾经尝试对用户习惯进行线上填写方式的引导，但最终以失败告终。无奈下看看弄一个微信群监控机器人是否可行。
 
 在之前公司我曾经用python通过itchat弄过一个群播报BI数据的机器人，但因为itcaht采用的是微信web协议，微信监控特别严，很多号都不能使用，即使登录上去了还会经常莫名掉线，极不稳定。因此这回肯定不能再通过web协议的方式来弄了。于是带着一点点期盼发现了Wechaty这个支持微信ipad协议的SDK。
 
-### Wechaty官方定义：
+## Wechaty官方定义：
 
 > Wechaty是一个开源的的个人号微信机器人接口，使用Typescript构建的Node.js应用。支持多种微信接入方案，包括网页，ipad，ios，windows，android 等。同时支持 Linux, Windows, Darwin(OSX/Mac) 和 Docker 多个平台。
 
@@ -123,9 +121,9 @@ qrcode_png: "xxxxxxx.png"
 **2、入口文件（ `src/index.js`）：**
 
 ```javascript
-const { Wechaty } = require("wechaty") // Wechaty核心包  
-const { PuppetPadplus } = require("wechaty-puppet-padplus") // padplus协议包  
-const config = require("./config") // 配置文件
+import { Wechaty }  from 'wechaty' // Wechaty核心包  
+import { PuppetPadplus }  from 'wechaty-puppet-padplus' // padplus协议包  
+import config  from './config' // 配置文件
 
 //初始化bot
 const bot = new Wechaty({  
@@ -136,10 +134,10 @@ const bot = new Wechaty({
 })
 
 //调用，监听，启动
-const onScan = require("./onScan")  
-const onRoomJoin = require("./onRoomJoin")  
-const onMessage = require("./onMessage")  
-const onFriendShip = require("./onFriendShip")  
+import onScan  from './onScan'  
+import onRoomJoin  from './onRoomJoin'  
+import onMessage  from './onMessage'  
+import onFriendShip  from './onFriendShip'  
 bot  
  .on("scan", onScan) // 机器人需要扫描二维码时监听  
  .on("room-join", onRoomJoin) // 加入房间监听  
@@ -153,12 +151,12 @@ bot
 当机器人掉线的时候，很多开源项目都是将二维码生成到程序log中，供扫描使用。但是一般情况当机器人放到服务器的时候，扫描二维码就会变得非常不方便，因此这里结合企业微信群机器人API实现了一旦掉线就把登陆二维码推送到企业微信群中，这样随时随地都可以进行扫描登陆操作了。同时也考虑基本上机器人都是后半夜会发生掉线情况，因此这里设置了有效推送时间段，以防止干扰正常休息。
 
 ```javascript
-const Qrterminal = require("qrcode-terminal");
-const qrimage = require('qr-image')
-const fs = require('fs')
-const wechat_bot = require('./onEnterpriseWechatBot') // 企业微信机器人群发
-const config = require("./config")
-const path =require('path');
+import Qrterminal  from 'qrcode-terminal';
+import qrimage  from 'qr-image'
+import fs  from 'fs'
+import wechat_bot  from './onEnterpriseWechatBot' // 企业微信机器人群发
+import config  from './config'
+import path  from 'path';
 const defpath=path.join(__dirname,'../');
 const qrcode_png_path = path.join(defpath,config.qrcode_png)
 const weboot_key = config.webhook_key
@@ -201,10 +199,10 @@ module.exports = function onScan(qrcode, status) {
 主要实现对群消息进行监听，将监听到聊天消息写入mysql中。
 
 ```javascript
-const { Message } = require("wechaty")
-const config = require("./config") // 配置文件
+import { Message }  from 'wechaty'
+import config  from './config' // 配置文件
 const name = config.name // 机器人名字
-const mysqldb = require("./onDatabaseOperation") // 连接MySQL数据库
+import mysqldb  from './onDatabaseOperation' // 连接MySQL数据库
 
 // 消息监听回调
 module.exports = bot => {

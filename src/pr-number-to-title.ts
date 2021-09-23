@@ -36,6 +36,6 @@ export async function prNumberToTitle (
   if (!matches) {
     throw new Error('no matches for pr title')
   }
-  const prTitle = matches[1]
+  const prTitle = matches[1]!
   return prTitle
 }

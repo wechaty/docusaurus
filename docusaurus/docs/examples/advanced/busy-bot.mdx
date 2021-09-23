@@ -1,0 +1,384 @@
+---
+title: Busy Bot
+---
+
+<!-- MDX import -->
+import Tabs     from '@theme/Tabs'
+import TabItem  from '@theme/TabItem'
+
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
+[![JavaScript](https://img.shields.io/badge/%3C%2F%3E-JavaScript-blue.svg)](https://www.javascript.com/)
+
+Busy bot sends an auto response message for you when you are busy.
+
+## Try out the bot
+
+[![Edit wechaty-busy-bot](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/sbis04/wechaty-busy-bot/tree/main/?fontsize=12&hidenavigation=1&module=%2Fbusy-bot.js&theme=dark)
+
+You can try out the **Wechaty Busy bot** using this interactive CodeSandbox.
+
+Just scan the generated QR code with **WeChat** app, and you are ready to play with the bot!
+
+<iframe
+  class="codesandbox"
+  src="https://codesandbox.io/embed/github/sbis04/wechaty-busy-bot/tree/main/?fontsize=12&hidenavigation=1&module=%2Fbusy-bot.js&theme=dark"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+></iframe>
+
+## Requirements
+
+1. [Node.js](https://nodejs.dev/) v16+
+1. [Wechaty Puppet Service TOKEN](https://wechaty.js.org/docs/puppet-services/) (if you want to use RPA protocols other than Web)
+
+## Getting Started
+
+Before getting started make sure you have `Node` installed on your system. If you do not have `Node.js` installed (or have a version below 12),
+then you need to install the latest version of `Node.js` by following the links below:
+
+:::note Node.js installation docs
+
+* [Windows](https://nodejs.org/en/download/package-manager/#windows)
+* [Linux\(Debian/Ubuntu\)](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+* [macOS](https://nodejs.org/en/download/package-manager/#macos)
+
+> Installation guide for `Node.js` in other platforms can be found [here](https://nodejs.org/en/download/package-manager/).
+
+:::
+
+You can head over to [Building the bot](#building-the-bot) section to learn how to build the bot on your own.
+
+Otherwise if you want to try out the bot on your local system, follow the steps below:
+
+### 1. Clone the repository
+
+Use the following command to clone the [Github repository](https://github.com/wechaty/wechaty-getting-started) and navigate to the directory.
+
+```bash
+git clone https://github.com/wechaty/wechaty-getting-started.git
+cd wechaty-getting-started
+```
+
+### 2. Install dependencies
+
+Install the `npm` packages required for running the bot using the following command:
+
+```bash
+npm install
+```
+
+### 3. Run the bot
+
+You have to export/set environment variables.
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```bash
+set WECHATY_LOG=verbose
+set WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+</Tabs>
+
+> There are various Wechaty puppets available, you can know more about them [here](https://github.com/wechaty/wechaty-getting-started#working-with-different-puppets)
+
+For running the bot, use the following command:
+
+```bash
+npx ts-node examples/advanced/busy-bot.js
+```
+
+This will generate a QR code. Scan it using **Wechat/Whatsapp** and you are ready to go.
+
+## Building the bot
+
+Let's get started with building **busy-bot** using Wechaty.
+
+### 1. Initialize project
+
+Create a new folder called `busy-bot` and move into that directory.
+
+```bash
+mkdir busy-bot
+cd busy-bot
+```
+
+Use the following command to initialize an npm project
+
+```bash
+npm init -y
+```
+
+### 2. Install dependencies
+
+For building the busy bot, you will require these dependencies:
+
+* [wechaty](https://www.npmjs.com/package/wechaty): Official Wechaty package
+* [qrcode-terminal](https://www.npmjs.com/package/qrcode-terminal): Displays the QR code
+
+For installing these dependencies run the following commands:
+
+- **For installing wechaty**
+
+```bash
+npm install wechaty
+```
+
+- **For installing qrcode-terminal**
+
+```bash
+npm install qrcode-terminal
+```
+
+You will also need to add dependencies for using any [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/) which helps to integrate Wechaty with various **instant messaging (IM) systems** (such as WeChat, WhatsApp, and WeCom):
+
+1. If you want to use **[WhatsApp](https://www.whatsapp.com/)**, install `wechaty-puppet-whatsapp`:
+
+  ```bash
+  npm install wechaty-puppet-whatsapp
+  ```
+
+2. If you want to use **[WeChat](https://www.wechat.com/)**, you can try the following puppets:
+
+   * **Web Protocol:** Install `wechaty-puppet-wechat`:
+
+     ```bash
+     npm install wechaty-puppet-wechat
+     ```
+
+   * **iPad Protocol:**
+     * padlocal: Install `wechaty-puppet-padlocal`:
+
+       ```bash
+       npm install wechaty-puppet-padlocal
+       ```
+
+       Then get a token like `puppet_padlocal_XXX`, know more about puppet service padlocal [here](http://wechaty.js.org/docs/puppet-services/padlocal).
+
+     * paimon: Install `wechaty-puppet-service`:
+
+       ```bash
+       npm install wechaty-puppet-service
+       ```
+
+       Then get a token like `puppet_paimon_XXX`, know more about puppet service paimon [here](http://wechaty.js.org/docs/puppet-services/paimon).
+
+3. If you want to use **[WeCom](https://work.weixin.qq.com/)**, install `wechaty-puppet-service`:
+
+  ```bash
+  npm install wechaty-puppet-service
+  ```
+
+  Then get a token like `puppet_wxwork_XXXXX`, more about puppet service wxwork [here](https://wechaty.js.org/docs/puppet-services/wxwork/).
+
+> You can find more information about the puppets [here](https://wechaty.js.org/docs/puppet-providers/).
+
+Now, you are ready to write main code for bot.
+
+### 3. Writing code for bot
+
+Create a new file `busy-bot.js`. You will be writing code here.
+
+Let's import required packages in `busy-bot.js` and initialize the bot by providing it a name and puppet to be used.
+
+```js
+import { Wechaty, log }  from 'wechaty';
+
+import qrTerm  from 'qrcode-terminal';
+
+const bot = new Wechaty({
+  name: "busy-bot",
+})
+```
+
+Assigning proper functions to call when an event is triggered.
+
+```js
+bot
+  .on("scan", (qrcode, status) => {
+    qrTerm.generate(qrcode, { small: true });
+    console.log(`${status}: ${qrcode} - Scan QR Code of the url to login:`);
+  })
+  .on("logout", (user) => log.info("Bot", `${user.name()} logouted`))
+  .on("error", (e) => log.info("Bot", "error: %s", e))
+
+  .on("login", async function (user) {
+    const msg = `${user.name()} logined`;
+
+    log.info("Bot", msg);
+    await this.say(msg);
+  });
+```
+
+- When `scan` is triggered, it generates QR code.
+- `logout` will display the name of the user along with the status `logouted`.
+- `error` is used to notify if the bot encounters an error.
+- `login` will display status logined if a user has logged in.
+
+**Global Event: message**
+
+This event handles auto response for you depending on the text `filehelper` has recieved. You have to do the following configurations for the filehelper:
+
+ - '#busy' - set busy mode ON
+ - '#busy I'm busy' - set busy mode ON and set a Auto Reply Message
+ - '#free' - set busy mode OFF
+ - '#status' - check the current Busy Mode and Auto Reply Message.
+
+```js
+
+let busyIndicator = false;
+let busyAnnouncement = `Automatic Reply: I cannot read your message because I'm busy now, will talk to you when I get back.`;
+
+bot.on("message", async function (msg) {
+  log.info("Bot", "(message) %s", msg);
+
+  const filehelper = bot.Contact.load("filehelper");
+
+  const sender = msg.from();
+  const receiver = msg.to();
+  const text = msg.text();
+  const room = msg.room();
+
+  if (!sender || !receiver) {
+    return;
+  }
+
+  if (receiver.id === "filehelper") {
+    if (text === "#status") {
+      await filehelper.say("in busy mode: " + busyIndicator);
+      await filehelper.say("auto reply: " + busyAnnouncement);
+    } else if (text === "#free") {
+      busyIndicator = false;
+      await filehelper.say("auto reply stopped.");
+    } else if (/^#busy/i.test(text)) {
+      busyIndicator = true;
+      await filehelper.say("in busy mode: ON");
+
+      const matches = text.match(/^#busy (.+)$/i);
+      if (!matches || !matches[1]) {
+        await filehelper.say('auto reply message: "' + busyAnnouncement + '"');
+      } else {
+        busyAnnouncement = matches[1];
+        await filehelper.say('set auto reply to: "' + busyAnnouncement + '"');
+      }
+    }
+
+    return;
+  }
+
+  if (sender.type() !== bot.Contact.Type.Personal) {
+    return;
+  }
+
+  if (!busyIndicator) {
+    return; // free
+  }
+
+  if (msg.self()) {
+    return;
+  }
+
+  /**
+   * 1. Send busy anoncement to contact
+   */
+  if (!room) {
+    await msg.say(busyAnnouncement);
+    return;
+  }
+
+  /**
+   * 2. If there's someone mentioned me in a room,
+   *  then send busy announcement to room and mention the contact who mentioned me.
+   */
+  const contactList = await msg.mention();
+  const contactIdList = contactList.map((c) => c.id);
+  if (contactIdList.includes(this.userSelf().id)) {
+    await msg.say(busyAnnouncement, sender);
+  }
+});
+```
+
+Use the following for starting the bot:
+
+```js
+bot.start().catch((e) => console.error(e));
+```
+
+### 4. Running the bot
+
+In order to run the bot, you have to export/set environment variables with the type of puppet you want to use.
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```bash
+set WECHATY_LOG=verbose
+set WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+</Tabs>
+
+
+Run the bot using the following command.
+
+```bash
+npx ts-node busy-bot.js
+```
+
+Scan the generated QR code with **Wechat** app and you are ready to play with the bot.
+
+## References
+
+- [Wechaty Getting started Github repository](https://github.com/wechaty/wechaty-getting-started)

@@ -1,18 +1,18 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test  from 'tstest'
+import { test } from 'tstest'
 
 import util   from 'util'
 import globCB from 'glob'
 
 import {
   JEKYLL_FOLDER,
-}                             from '../../src/jekyll/mod'
+}                             from '../../src/jekyll/mod.js'
 
 import {
   stripRepoRoot,
-}                             from '../../src/repo-root'
-import { getFrontmatterCategoryList } from '../../src/jekyll/get-frontmatter-category-list'
+}                             from '../../src/repo-root.js'
+import { getFrontmatterCategoryList } from '../../src/jekyll/get-frontmatter-category-list.js'
 
 const glob = util.promisify(globCB)
 
@@ -34,6 +34,7 @@ test('front matter key `categories` must contains at lease one preset category',
     'proposal',
     'shop',
     'story',
+    'talk',
     'tutorial',
   ]
   const isPreset = (category: string) => PRESET_CATEGORIES_LIST.includes(category)
