@@ -33,7 +33,7 @@ tags:
 - 项目介绍：<https://github.com/wechaty/summer/issues/78>
 
 - 项目名称：开发基于微信实现微俱乐部会员&活动管理的微信小程序  
-- 方案描述
+- 方案描述:本项目需要基于wechaty开发一个能进行会员和活动管理的小程序。小程序的核心内容为报名服务，WeChat机器人作为服务之一完成接收信息，并响应入库的工作。本程序意在为使用者提供更方便快捷的管理成员及管理活动的功能。
 
 - 时间规划：
   - 阶段一
@@ -74,11 +74,11 @@ tags:
 
 ### live coding视频：
 
-{% include iframe.html src="https://b23.tv/qMkDPK" %}
+{% include iframe.html src="https://youtu.be/MoNLKnT2rJ8" %}
 
 ### PPT展示视频：
 
-{% include iframe.html src="https://b23.tv/R6npFU" %}
+{% include iframe.html src="https://youtu.be/oYcoOLfbgdE" %}
 
 ### 项目PPT：
 
