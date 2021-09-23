@@ -19,14 +19,14 @@ const HeroSection = () => {
           {" "}
           &#123; Code less works more, that's wechaty ! &#125;{" "}
         </p>
-        <img alt="Chatbot" id="heroChatbotImage" src="chatbot-image.webp" />
+        <img alt="Chatbot" id="heroChatbotImage" src="img/chatbot-image.webp" />
         <a href="https://wechaty.js.org/docs/">
           <button id="letsDiveInButton"> Let’s Dive In</button>
         </a>
         <img
           alt="Chatbot"
           id="heroImageMobile"
-          src="chatbot-image-mobile.webp"
+          src="img/chatbot-image-mobile.webp"
         />
       </section>
     </main>
