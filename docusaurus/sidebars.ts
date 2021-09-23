@@ -90,6 +90,7 @@ const specs: SubMenuData = {
     'specs/puppet',
     'specs/service',
     'specs/token',
+    'specs/gateway',
   ],
 }
 
@@ -329,7 +330,7 @@ const references = {
 }
 
 const explanations = {
-  label: 'explanations',
+  label: 'Explanations',
   items: [
     'explanations/overview',
     'explanations/conversational',
@@ -340,6 +341,8 @@ const explanations = {
     'explanations/lifecycle',
     'explanations/alternatives',
     'explanations/glossary',
+    'explanations/devops-toolset',
+    'explanations/sdk-cui',
     'explanations/testing',
     'explanations/faq',
     'explanations/troubleshooting',
