@@ -33,7 +33,7 @@ There is a `TODO` where you have to specify one of your friends' name (the CodeS
 
 ## Requirements
 
-1. [Node.js](https://nodejs.dev/) v12+
+1. [Node.js](https://nodejs.dev/) v16+
 1. [Wechaty Puppet Service TOKEN](https://wechaty.js.org/docs/puppet-services/) (if you want to use RPA protocols other than Web)
 
 ## Getting Started
@@ -218,9 +218,9 @@ Let's import required packages in `room-bot.js` file and create a `HELPER_CONTAC
 // or room create function will not work.
 const HELPER_CONTACT_NAME = "huan";
 
-const qrTerm = require("qrcode-terminal");
+import qrTerm  from 'qrcode-terminal';
 
-const { Wechaty, log } = require("wechaty");
+import { Wechaty, log }  from 'wechaty';
 ```
 Now, we will write some functions which will be required for handling different events returned by bot.
 

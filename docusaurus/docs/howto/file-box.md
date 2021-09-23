@@ -36,7 +36,7 @@ await bot.say(fileBox)
 <TabItem value="js">
 
 ```js
-const { FileBox } = require('wechaty')
+import { FileBox }  from 'wechaty'
 
 const fileBox = FileBox.fromUrl('https://wechaty.js.org/img/icon.png')
 await bot.say(fileBox)
@@ -141,7 +141,7 @@ bot.on('message', onMessage)
 <TabItem value="js">
 
 ```js
-const { Message } = require('wechaty')
+import { Message }  from 'wechaty'
 
 async function onMessage (message) {
   const fileTypeList = [
