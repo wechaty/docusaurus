@@ -25,7 +25,7 @@ Metaverse元宇宙的奥秘，等你来揭晓！
 
 ## ✨ 更多比赛福利!✨
 
-- 报名即送GPU算力+wechaty token
+- 报名即送GPU算力+wechaty token [由PadLocal-Wechaty puppet service provider提供](https://wechaty.js.org/docs/puppet-providers/padlocal/)
 - 优秀项目官方送你出道
 - Paddle & Wechaty工程师1对1指导
 - PPDE(飞桨开发者技术专家)绿色通道
