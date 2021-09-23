@@ -137,13 +137,7 @@ export WECHATY_PUPPET=wechaty-puppet-whatsapp
 node src/my-bot.js
 ```
 
-Scan it using your Whatsapp and you are ready to play with the bot!
-
-You can deploy the bot with popular container solutions as well such as:
-
-* [Heroku](#a)
-* [Docker](#b)
-You can read about deploying a whatsapp puppet [here](https://github.com/wechaty/wechaty.js.org/pull/1106).
+Scan it using your Whatsapp and you are ready to play with the bot! You can read more about deploying a whatsapp puppet [here](https://github.com/wechaty/wechaty.js.org/pull/1106).
 
 ## Features to be implemented
 
