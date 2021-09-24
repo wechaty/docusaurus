@@ -9,14 +9,14 @@ Wechaty Room is a group of Contacts. This section will teach you how to make a n
 
 ## Requirements
 
-1. [Node.js](https://nodejs.org/en/download) v12+
+1. [Node.js](https://nodejs.org/en/download) v16+
 2. [Wechaty](https://www.npmjs.com/package/wechaty) v0.40+
 
 ## Prerequisites
 
 ### 1. Getting Started
 
-This guide assumes that you have node installed and have set up a basic  Wechaty **Starter Bot**. You call follow the instructions on the **Starter Bot** page to create a foundation for this tutorial. Before continuing, make sure you've first created the onScan, onLogin, onLogout, and onMessage functions from the Starter file.
+This guide assumes that you have node installed and are familiar with Wechaty **Starter Bot**. The below function needs a basic script that can help run the bot. The basic script starts by importing the code from [Github/Room-Bot](https://github.com/wechaty/wechaty-getting-started/blob/main/examples/advanced/room-bot.js).
 
 ### 2. Install dependency
 
