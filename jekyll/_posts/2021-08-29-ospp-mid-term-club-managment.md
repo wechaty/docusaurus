@@ -11,6 +11,7 @@ tags:
   - ospp
   - ospp-2021
   - mid-term
+  - other
 ---
 
 ## 暑期2021
