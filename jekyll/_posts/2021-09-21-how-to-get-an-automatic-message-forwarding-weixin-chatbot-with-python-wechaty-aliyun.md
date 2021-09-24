@@ -3,7 +3,6 @@ title: "如何使用python-wechaty来搭建一个自动转发消息的微信机�
 author: gan-lang
 categories: article
 tags:
-  - blog
   - study
   - python
 image: /assets/2021/09-how-to-get-an-automatic-message-forwarding-weixin-chatbot-with-python-wechaty-aliyun/cover.webp
@@ -13,7 +12,7 @@ image: /assets/2021/09-how-to-get-an-automatic-message-forwarding-weixin-chatbot
 
 ## 前言
 
-先前在本社区看到一篇关于怎么使用 `python`-`wechaty`+`paddlehub`+阿里云白嫖一个智能微信机器人，
+先前在本社区看到一篇关于怎么使用 `python`-`wechaty`+`paddlehub`+阿里云白嫖一个智能微信机器人，出自[https://wechaty.js.org/2021/06/08/how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun]
 
 本人先尝试了一遍，但是因为使用免费Web协议被封和不能登陆的情况经常出现，
 
@@ -49,7 +48,7 @@ image: /assets/2021/09-how-to-get-an-automatic-message-forwarding-weixin-chatbot
 
   打开`.bashrc`，在其末尾编辑以下内容配置环境变量，保存并退出
 
-`WECHATY_PUPPET`：这里填 `Ipad` 协议
+`WECHATY_PUPPET`：这里填 `"wechaty-puppet-padlocal"`
 
 `WECHATY_PUPPET_PADLOCAL_TOKEN` ：填写你自己刚刚申请的 token
 
@@ -83,7 +82,7 @@ export WECHATY_TOKEN=your_token
 
 （五）检查是否运行成功
 
-- 输入网址: <https://api.chatie.io/v0/hosties/your_token_at_here>，例如我输入的地址就是这个: <https://api.chatie.io/v0/hosties/puppet_padlocal_210c112ddf9b49fdaa8242b87b83b0eb>
+- 输入网址: <https://api.chatie.io/v0/hosties/your_token_at_here>，例如我输入的地址就是这个: <https://api.chatie.io/v0/hosties/puppet_padlocal_XXXXX>
 - 如果返回了服务器的ip地址以及端口号，比如{"host":"121.43.228.90","port":8080}，就说明运行成功了，如果返回的是{"host":"0.0.0.0","port":0}，就说明没有运行成功
 
 ## 2. 搞定 python 代码部分

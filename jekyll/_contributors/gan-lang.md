@@ -8,7 +8,7 @@ twitter:
 github: https://github.com/Gan-lang
 ---
 
-a student
+目前是学生，来自南昌大学。喜欢历史、追剧、美食、旅行。
 
 ## Contact me
 
