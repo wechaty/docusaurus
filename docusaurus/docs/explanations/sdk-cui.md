@@ -17,3 +17,6 @@ In order to create an application, developers need a software development kit, w
 ## Why conversational RPA SDK
 
 Wechaty is an SDK that provides chatbot services to different IM platforms. Powered by artificial intelligence and natural language processing, Wechaty is able to provide great conversational user interaction interfaces to its users. The combination of conversational AI and robotic process automation makes Wechaty a robust **conversational RPA SDK** for developers to create customized chatbots.
+
+### Related page
+- [Introducing Chatbot's User Interaction Interface (CUI)](https://wechaty.js.org/2021/01/20/chatbot-conversational-user-interface/)
