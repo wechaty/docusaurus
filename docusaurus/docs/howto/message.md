@@ -11,7 +11,7 @@ Automation of messages can be done easily  with wechaty onMessage function. This
 
 ## Prerequisites
 
-* Your system must have [Node.js](https://nodejs.org/en/download/package-manager/) installed (version >= 12).
+* Your system must have [Node.js](https://nodejs.org/en/download/package-manager/) installed (version >= 16).
 * Your system must have [Wechaty](https://github.com/wechaty/wechaty) (version >= 0.40).
 * You need to be familiar with the basics of Wechaty platform. If not, follow our [tutorials](https://wechaty.js.org/docs/tutorials/) section.
 * You need to have at least a minimal application ready to work, follow one of our [Example/Friend-Bot](https://wechaty.js.org/docs/examples/advanced/friend-bot/).
@@ -20,7 +20,7 @@ Automation of messages can be done easily  with wechaty onMessage function. This
 
 See [Running our first ding-dong bot](https://wechaty.js.org/docs/getting-started/quick-start).
 
-The below function needs a basic script that can help run the bot. The basic script starts by importing the code from [Github/Friend-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/friend-bot.ts).Integrate the below code, for this action to work.
+The below function needs a basic script that can help run the bot. The basic script starts by importing the code from [Github/Friend-Bot](https://github.com/wechaty/wechaty-getting-started/blob/main/examples/advanced/friend-bot.js).Integrate the below code, for this action to work.
 
 ## Mention
 
