@@ -88,5 +88,5 @@ tags:
 
 ## 联系我们
 
-- 项目链接：<https://github.com/wechaty/summer/issues/1090>  
+- 项目链接：<https://github.com/mangguo188/wechaty-club-management>  
 - 联系方式：1017137803@qq.com
