@@ -12,7 +12,7 @@ image: /assets/2021/09-how-to-get-an-automatic-message-forwarding-weixin-chatbot
 
 ## 前言
 
-先前在本社区看到一篇关于怎么使用 `python`-`wechaty`+`paddlehub`+阿里云白嫖一个智能微信机器人，出自[https://wechaty.js.org/2021/06/08/how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun]
+[用python-wechaty+paddlehub+阿里云白嫖一个智能微信机器人](https://wechaty.js.org/2021/06/08/how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun/)
 
 本人先尝试了一遍，但是因为使用免费Web协议被封和不能登陆的情况经常出现，
 
@@ -162,9 +162,9 @@ elif msg.type() == MessageType.MESSAGE_TYPE_IMAGE:
 
 ### 参考资料
 
-- PaddleHub官网：[https://www.paddlepaddle.org.cn/hub](https://www.paddlepaddle.org.cn/hub)
-- python-wechaty: [https://github.com/wechaty/python-wechaty](https://github.com/wechaty/python-wechaty)
-- python-wechaty-getting-started: [https://github.com/wechaty/python-wechaty-getting-started]
-- [https://wechaty.js.org/2021/06/08/how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun]
+- [PaddleHub官网](https://www.paddlepaddle.org.cn/hub)
+- [python-wechaty](https://github.com/wechaty/python-wechaty)
+- [python-wechaty-getting-started](https://github.com/wechaty/python-wechaty-getting-started)
+- [手把手教你用python-wechaty+paddlehub+阿里云白嫖一个智能微信机器人](https://wechaty.js.org/2021/06/08/how-to-get-a-weixin-chatbot-with-python-wechaty-and-paddlehub-and-aliyun)
 
 > 作者: `Gan-lang`
