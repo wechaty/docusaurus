@@ -12,6 +12,7 @@ Just another coder. Currently work at Juzi.bot.
 为wechaty-puppet贡献代码，贡献内容:
 
 - [fix cross platform shell command difference](https://github.com/wechaty/wechaty-puppet/pull/151)。
+
 ## Contact
 
 - Homepage: <https://github.com/hcfw007>
