@@ -41,7 +41,7 @@ Learn all [Wechaty Puppet Providers](puppet-providers/overview.mdx)
 
 You need to set all environment variables which requires from a specific provider.
 
-For example, an additional token will be required by `PadLocal`: `WECHATY_PUPPET_PADLOCAL_TOKEN=puppet_padlocal__TOKEN__`
+For example, an additional token will be required by `PadLocal`: `WECHATY_PUPPET_PADLOCAL_TOKEN=puppet_padlocal${TOKEN}`
 
 :::
 

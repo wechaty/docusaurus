@@ -98,8 +98,8 @@ Write a simple bot which send all the messages regardless those in groups to the
 
 ```js
 // bot.js
-const { Wechaty, MsgType } = require('wechaty');
-const request = require('request');
+import { Wechaty, MsgType }  from 'wechaty';
+import request  from 'request';
 
 const bot = Wechaty.instance({ profile: 'tensorflow' });
 
