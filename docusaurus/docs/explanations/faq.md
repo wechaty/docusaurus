@@ -4,69 +4,60 @@ title: FAQ
 
 ## Table of Contents
 
-- **General**
-  - [Cannot login](#11-i-can-not-login-with-my-wechat-account)
-  - [What wechaty cannot do on wechat](#a)
+- **General Info**
+  - [Cannot log in using WeChat account](#11-i-can-not-login-with-my-wechat-account)
+  - [What Wechaty cannot do on WeChat?](#a)
 - **Others**
-  - [Can wechaty send url rich media message?](#b)
-  - [I don't know wechaty support for personal account of wechat official account?](#c)
+  - [Can Wechaty send url rich media message?](#b)
+  - Does Wechaty provide support for official WeChat personal account?
 
-## General
+## General Info
 
-### I can not login with my Wechat account
+### I cannot log in with my WeChat account
 
-Wechat account that registered after 2017 will not be able to login via Web API. Learn more at [https://github.com/wechaty/wechaty/issues/872](https://github.com/wechaty/wechaty/issues/872)
+- WeChat accounts that are registered after 2017 will not be able to login via Web API. Learn more about it [here](https://github.com/wechaty/wechaty/issues/872).
+- Wechaty also supports protocols other than Web APIs, such as **PadChat**. Learn more about it [here](https://github.com/wechaty/wechaty/issues/1296). 
 
-Solution: Wechaty support protocols other than Web API, such as pad. Learn more at [https://github.com/wechaty/wechaty/issues/1296](https://github.com/wechaty/wechaty/issues/1296)
+### Does Wechaty support Red Envelope and can transfer money at the moment?
 
-### Does wechaty support Red envelope, transfer money, moment?
+Short answer is **NO** and here are the reasons why:
+- **Payment**: We do not support this because this is related to property security.
+- **@ someone in the room**: We plan to support this in the future and provide solutions other than Web API.
+- **Send Contact Card**: We support this in iPad solution.
+- **Send Share Card**: We plan to support this in the future and provide solutions other than Web API.
+- **Send Voice**: We plan to support this in the future and provide solutions other than Web API.
+- **At the moment**: We haven't decided yet whether to support such functions.
 
-Short answer: NO
+### Can Wechaty send url rich media message?
+Not at the moment but we plan to provide support in the future.
 
-Long answer:
-
-- Payment: we won't support this because this related to property security
-- @ someone in the room: we will support this in the future in solutions other than Web API.
-- Send Contact Card: we support this in ipad solution.
-- Send Share Card: we will support this in the future in solutions other than Web API.
-- Send Voice: we will support this in the future in solutions other than Web API.
-- Moment: we haven't decide yet whether to support this function
-
-### Can wechaty send url rich media message?
-
-Not yet at this moment, will support later
-
-Related Issue：
-
+**Related Issues**
 - [Add support for send url rich media message](https://github.com/wechaty/wechaty/issues/718)
-- [can wechaty send share card msg](https://github.com/wechaty/wechaty/issues/824)
+- [Can Wechaty send share card msg?](https://github.com/wechaty/wechaty/issues/824)
 
-### I don't know wechaty support for personal account of wechat official account
+### Does Wechaty provide support for official WeChat personal account?
+Currently, Wechaty only supports personal account created in Wechaty.
 
-At this moment, wechaty only support personal account
-
-Related Issue:
-
-- [Using wechaty to start a wechatOA account](https://github.com/wechaty/wechaty/issues/1016)
+**Related Issue**
+- [Using Wechaty to start a wechatOA account](https://github.com/wechaty/wechaty/issues/1016)
 
 ### What is a `Puppet` in Wechaty
 
-The term `Puppet` in Wechaty is an Abstract Class for implementing protocol plugins. The plugins are the component that helps Wechaty to control the Wechat\(that's the reason we call it puppet\).
+The term `Puppet` in Wechaty is an Abstract Class for implementing protocol plugins. The plugins are the components that help Wechaty to control Wechat\(that's the reason we call it a puppet\).
 
-The plugins are named `XXXPuppet`, like `PuppetPuppeteer` is using the chrome puppeteer to control the WeChat Web API via a chrome browser, `PuppetPadchat` is using the WebSocket protocol to connect with a Protocol Server for controlling the iPad Wechat program.
+The plugins are named `XXXPuppet`; like `PuppetPuppeteer` is using the Chrome puppeteer to control the WeChat Web API via the Chrome browser; `PuppetPadchat` is using the WebSocket protocol to connect with a Protocol Server for controlling the iPad WeChat program.
 
 ### Wechaty & Queue
 
-In order not blocked by wechat, we add queue in wechaty, see more: [rx-queue](https://github.com/zixia/rx-queue)
+In order **not** to be blocked by wechat, we add a queue in Wechaty. For more information, refer to [rx-queue](https://github.com/zixia/rx-queue).
 
-### What's the difference between wechaty and wechat4u?
+### What's the difference between Wechaty and WeChat4U?
 
-Wechaty can implement many wechat protocol plughins. The plugins are the component that helps Wechaty to control the Wechat. Wechaty provide same API in web, ipad, ios solutions. [wechat4u](https://github.com/nodeWechat/wechat4u) is [SPACELAN](https://github.com/spacelan) write as a web solution on github. Wechaty can use wechaty API call wechat 4u API
+Wechaty can implement many wechat protocol plugins. The plugins are the components that help Wechaty to control Wechat. Wechaty provides the same APIs in web, iPad, and iOS solutions. [WeChat4U](https://github.com/nodeWechat/wechat4u) is [SPACELAN](https://github.com/spacelan) written as a web solution on GitHub. Wechaty can use the Wechaty API to call the WeChat4U API.
 
-> Is this right: wechaty has All api in wechat4u, but wechat 4u don't have all api wechaty has.
+> Is this correct: Wechaty has all APIs in WeChat4U, but WeChat4U does not have all APIs that Wechaty has?
+No. Wechaty only uses its own APIs for WeChat4U. Wechaty and WeChat4U are totally two (2) different entities and do not own each others' APIs.
 
-No, wechaty use wechaty itself API for wechat4u. They are totally 2 different project and no one contains another.
+### How to ask questions the smart way?
+For more information, read these [tips](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md). 
 
-### How To Ask Questions The Smart Way
-
-<https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md>
