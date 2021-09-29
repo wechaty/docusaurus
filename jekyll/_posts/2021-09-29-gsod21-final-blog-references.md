@@ -58,10 +58,11 @@ Include all the puppet services offered by Wechaty.
 ## Pull Requests/Commits
 
 You can find all PRs done by us in the links below:
+
 * [Soumi's PRs](https://github.com/wechaty/wechaty.js.org/pulls?q=is%3Apr+author%3Asoumi7)
 * [Shraddha's PRs](https://github.com/wechaty/wechaty.js.org/pulls?q=is%3Apr+author%3Ashraddhavp+)
 
-### Work Done 
+### Work Done
 
 This repository contains the details of all the work done by our team in the tenure of Google Season of Docs 2021.
 
