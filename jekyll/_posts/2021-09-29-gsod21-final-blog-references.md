@@ -11,7 +11,7 @@ tags:
   - evaluation
   - 2021
   - docs
-image: /assets/2021/09-final-gsod-2021-references/final-gsod-2021.webp
+image: /assets/2021/09-gsod21-final-blog-references/final-gsod-2021.webp
 ---
 
 After four months of immense learning, we come to the end of Google Season of Docs 2021, here is the final blog of the References team.
