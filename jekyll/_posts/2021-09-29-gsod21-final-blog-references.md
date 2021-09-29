@@ -6,7 +6,6 @@ tags:
   - google
   - gsod-2021
   - gsod
-  - Wechaty
   - end-term
   - evaluation
   - 2021
