@@ -1233,7 +1233,9 @@ const NOT_WEBP_TO_BE_FIXED_FILE_LIST = [
  * Huan(202107): we forgot to check the limit of gif files before... -_-b
  */
 const BIG_SIZE_TO_BE_FIXED_FILE_LIST = [
-  // Images
+  /**
+   * Images
+   */
   'jekyll/assets/2018/birthday-cake-chickens.gif',
   'jekyll/assets/2018/techiefestival-24.gif',
   'jekyll/assets/2020/wechaty-log-monitor/archy-demo.gif',
@@ -1243,9 +1245,20 @@ const BIG_SIZE_TO_BE_FIXED_FILE_LIST = [
   'jekyll/assets/2021/07-wechaty-with-paddlepaddle/panda_emoji.gif',
   'jekyll/assets/2021/07-wechaty-with-paddlepaddle/pic_mask.gif',
   'jekyll/assets/2021/07-wechaty-with-paddlepaddle/wanderer.gif',
-  // PDFs
+  /**
+   * PDFs
+   */
   'jekyll/assets/2019/bot5-seminar-2/chatbot-experience-limingth.pdf',
+  'jekyll/assets/2020/11-summer-2020-wechaty/wechaty-summer-2020-introduction.pdf',
+  'jekyll/assets/2020/qijibot/final.pdf',
+  'jekyll/assets/2020/qijibot/talk2.pdf',
+  'jekyll/assets/2020/wechaty-plugin-milestone/gcaufy.pdf',
   'jekyll/assets/2020/wechaty-plugin-milestone/yuan.pdf',
+  'jekyll/assets/2020/wechaty-words-per-day-plugin-final/presentation.pdf',
+  'jekyll/assets/2021/02-summer-wechaty-nanjing-summit-journey/slides.pdf',
+  'jekyll/assets/2021/07-gdg-shanghai-wechaty/wechaty-community-talk-live-demo.pdf',
+  'jekyll/assets/2021/08-ospp-mid-term-wechaty-itchat-puppet/itchat.pdf',
+  'jekyll/assets/2021/08-ospp-mid-term-wechaty-puppet-oa/wechaty-puppet-oa-midterm-ppt.pdf',
 ]
 
 /**
