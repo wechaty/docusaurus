@@ -74,13 +74,11 @@ tags:
 
 {% include iframe.html src="https://youtu.be/5LZ08re5YR8" %}
 
-
 > 国内链接：<https://www.bilibili.com/video/BV1hR4y1n7AH/>
 
 ### PPT展示视频：
 
 {% include iframe.html src="https://youtu.be/eSgaD32njVw" %}
-
 
 > 国内链接：<https://www.bilibili.com/video/BV1uP4y187T9/>
 
@@ -92,4 +90,3 @@ tags:
 
 - 项目链接：<https://github.com/mangguo188/wechaty-club-management>  
 - 联系方式：1017137803@qq.com
-
