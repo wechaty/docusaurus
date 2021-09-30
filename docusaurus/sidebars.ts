@@ -90,6 +90,7 @@ const specs: SubMenuData = {
     'specs/puppet',
     'specs/service',
     'specs/token',
+    'specs/gateway',
   ],
 }
 
@@ -324,7 +325,7 @@ const references = {
     subMenu(puppetProviders),
     subMenu(puppetServices),
     subMenu(specs),
-    'references/deprecations',
+    'references/breaking-changes',
   ]
 }
 
@@ -340,6 +341,7 @@ const explanations = {
     'explanations/lifecycle',
     'explanations/alternatives',
     'explanations/glossary',
+    'explanations/devops-toolset',
     'explanations/sdk-cui',
     'explanations/testing',
     'explanations/faq',
