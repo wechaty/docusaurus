@@ -37,6 +37,9 @@ const getLocalImageList = async () => {
 
 test('all remote images linked from the post should be exist.', async t => {
 
+  // Increase the timeout because we might need to wait network io for a long time.
+  t.setTimeout(60 * 1000)
+
   // Get rid of duplicated urls
   let remoteImageList = await getRecentRemoteImageList()
 
