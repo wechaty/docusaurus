@@ -7,7 +7,7 @@ tags:
   - devops
   - npm
   - news
-image: /assets/2019/chatie-devops-toolset.gif
+image: /assets/2019/chatie-devops-toolset.webp
 ---
 
 The powerful and easy to use Chatie DevOps Toolset:
@@ -91,7 +91,7 @@ Then you are all set. `./node_modules/.bin/eslint` will work and follow the @cha
 
 ## 3. [@chatie/git-scripts](https://github.com/chatie/git-scripts)
 
-![@chatie/git-scripts](/assets/2019/chatie-git-scripts.gif)
+![@chatie/git-scripts](/assets/2019/chatie-git-scripts.webp)
 
 Git Hooks Integration for Chatie Projects.
 
@@ -156,7 +156,7 @@ However, currently, it's only a wrapper of [blue-tape](https://github.com/spion/
 
 ## 6. [pkg-jq](https://github.com/huan/pkg-jq)
 
-![pkg-jq](/assets/2019/pkg-jq.gif)
+![pkg-jq](/assets/2019/pkg-jq.webp)
 
 Find the nearest package.json then deal with jq syntax on it. (in-line edit supported!)
 

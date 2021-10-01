@@ -128,7 +128,7 @@ If you are interested in the development of this project feel free to follow Arc
 
 Also please feel free to fork my repo, deploy your own bot, or just do anything with the code, or open issues if there are any! Thanks!
 
-![nyan](/assets/2020/archyshuo-anki-assistant/cat.gif)
+![nyan](/assets/2020/archyshuo-anki-assistant/cat.webp)
 
 p.s. 写中文写到中间有些累与懒🥴「吖奇说记忆卡片」小程序上线后更多关于未来的去向（中+英）会在公众号有的看～ 感兴趣的朋友可以关注我的公众号与抖音@吖奇说～
 

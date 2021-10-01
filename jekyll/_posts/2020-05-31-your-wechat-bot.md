@@ -95,7 +95,7 @@ cnpm start //npm start
 - 自动同意好友请求
 - 发送加群指令自动邀请好友进群。
 
-![演示图片](/assets/2020/your-wechat-bot/demo.gif)
+![演示图片](/assets/2020/your-wechat-bot/demo.webp)
 
 底层 api 基于 [wechaty](https://github.com/wechaty/wechaty)
 

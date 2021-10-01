@@ -12,7 +12,7 @@ excerpt: 为了能让（营业中的）小助手可以有更棒的 readily avail
 
 最近基于Wechaty[做的一个学中文小助手ARCHY开始营业了](https://mp.weixin.qq.com/s/FcgaOOnZNPUuMSihmMs_lw)🤖🤖🍜～
 
-![gif-demo](/assets/2020/wechaty-log-monitor/archy-demo.gif)
+![gif-demo](/assets/2020/wechaty-log-monitor/archy-demo.webp)
 
 为了能让小助手可以有更棒的 readily availability，我写了这个[wechaty-log-monitor插件](https://github.com/archywillhe/wechaty-log-monitor)来给在production跑的Wechaty做日志相关的devops。这是一个建立于两个chatbots的二重奏。
 
