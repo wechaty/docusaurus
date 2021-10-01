@@ -4,7 +4,7 @@ author: tianyugeng
 categories: project
 tags:
    - utility
-image: /assets/2020/room-manager/bio-photo.png
+image: /assets/2020/room-manager/bio-photo.webp
 ---
 
 ## 微信群管辅助

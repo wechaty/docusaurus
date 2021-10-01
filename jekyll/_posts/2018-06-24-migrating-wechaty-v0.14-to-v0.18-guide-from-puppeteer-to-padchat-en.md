@@ -5,20 +5,20 @@ categories: migration
 tags:
   - code
   - news
-image: /assets/2018/code-migration-en.png
+image: /assets/2018/code-migration-en.webp
 ---
 
 Wechaty has been updated to version 0.16(BETA) these days and begin to support all kinds of wechat solutions including web, ipad, ios, etc. My product based on wechaty has to migration from wechaty solution based on web to ipad solution.
 
 This blog introduces how to porting code from wechaty puppeteer to padchat.
 
-![code](/assets/2018/code-migration-en.png)
+![code](/assets/2018/code-migration-en.webp)
 
 ## 1. Puppeteer VS Padchat
 
 **Puppet System** means to connect Wechaty API to any kinds of Puppets, including Web, iPad, Android, Windows Hook and ios. Different implements of these puppets are totally different, without the puppet, using one API to bridge all implement is very difficult, so we had Puppet System.
 
-![Puppet](/assets/2018/abstract-info.png)
+![Puppet](/assets/2018/abstract-info.webp)
 
 - Puppeteer: a solution based on Web Wechat
 - Padchat: a solution based on Ipad Wechat

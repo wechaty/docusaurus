@@ -5,7 +5,7 @@ categories: announcement
 tags:
   - release
   - news
-image: /assets/2018/huan-wechaty-new-version-0.16.png
+image: /assets/2018/huan-wechaty-new-version-0.16.webp
 ---
 
 ![wechaty-release-0.16][wechaty-release-0.16]
@@ -127,4 +127,4 @@ Thank you all contributors, Wechaty could not release version 0.16 without your 
 1. @[cherry-geqi](https://github.com/cherry-geqi): [\#97](https://github.com/wechaty/wechaty/pull/97)
 1. @[lpmi-13](https://github.com/lpmi-13): [\#681](https://github.com/wechaty/wechaty/pull/681)
 
-[wechaty-release-0.16]: /assets/2018/huan-wechaty-new-version-0.16.png
+[wechaty-release-0.16]: /assets/2018/huan-wechaty-new-version-0.16.webp

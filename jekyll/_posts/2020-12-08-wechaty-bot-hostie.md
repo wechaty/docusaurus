@@ -6,7 +6,7 @@ tags:
   - nodejs
   - donut
   - social
-image: /assets/2020/wechaty-bot-hostie/img-func.jpeg
+image: /assets/2020/wechaty-bot-hostie/img-func.webp
 ---
 
 GitHub上搜了一圈，看到了挺多微信bot的方案，后面决定使用wechaty，因为感觉设计得很优雅，6行代码就可以轻松构建一个wxbot。

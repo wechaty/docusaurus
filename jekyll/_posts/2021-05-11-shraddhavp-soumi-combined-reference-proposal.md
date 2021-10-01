@@ -9,7 +9,7 @@ tags:
   - project
   - proposal
   - team-proposal
-image: /assets/2021/05-shraddhavp-soumi-combined-reference-proposal/gsod_s.png
+image: /assets/2021/05-shraddhavp-soumi-combined-reference-proposal/gsod_s.webp
 ---
 
 ## PROPOSAL STATEMENT

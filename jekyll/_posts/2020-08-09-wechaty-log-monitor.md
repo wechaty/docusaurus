@@ -6,25 +6,25 @@ tags:
   - plugin
   - devops
   - featured
-image: /assets/2020/wechaty-log-monitor/demo.jpeg
+image: /assets/2020/wechaty-log-monitor/demo.webp
 excerpt: 为了能让（营业中的）小助手可以有更棒的 readily availability，我写了这个wechaty-log-monitor插件来给在production跑的Wechaty做日志相关的devops。
 ---
 
 最近基于Wechaty[做的一个学中文小助手ARCHY开始营业了](https://mp.weixin.qq.com/s/FcgaOOnZNPUuMSihmMs_lw)🤖🤖🍜～
 
-![gif-demo](/assets/2020/wechaty-log-monitor/archy-demo.gif)
+![gif-demo](/assets/2020/wechaty-log-monitor/archy-demo.webp)
 
 为了能让小助手可以有更棒的 readily availability，我写了这个[wechaty-log-monitor插件](https://github.com/archywillhe/wechaty-log-monitor)来给在production跑的Wechaty做日志相关的devops。这是一个建立于两个chatbots的二重奏。
 
 目前插件的主要功能是「掉线给码」：一个Wechaty掉线了，另一个Wechaty会发QR码给这个Wechaty的微信号来重新登陆。
 
-![qr-rescue](/assets/2020/wechaty-log-monitor/demo2.jpeg)
+![qr-rescue](/assets/2020/wechaty-log-monitor/demo2.webp)
 
 这样掉线了就不用`ssh`到production服务器，然后`sudo su git`+`pm2 logs --lines 100`来进行扫码重登了。
 
 现在不管在吃饭、野外、还是地铁上，掉线了便可立马扫码重登。
 
-![thumbup](/assets/2020/wechaty-log-monitor/thumbup.jpeg)
+![thumbup](/assets/2020/wechaty-log-monitor/thumbup.webp)
 
 ## 一、如何「掉线给码」
 
@@ -64,7 +64,7 @@ botBob.use(WechatyLogMonitor({
 
 p.s. 掉线后，bot发一个二维码就不会再发给你了。如果你想要最新的登陆二维码，发「qr」给bot就行。
 
-![qr](/assets/2020/wechaty-log-monitor/qr.jpeg)
+![qr](/assets/2020/wechaty-log-monitor/qr.webp)
 
 ## 二、`WechatyLogMonitor`的内部
 
@@ -174,7 +174,7 @@ export const restartPM2 = (config: WechatyLogOperationConfig, parameter:{pm2Id:n
 }
 ```
 
-![restart](/assets/2020/wechaty-log-monitor/restart.jpeg)
+![restart](/assets/2020/wechaty-log-monitor/restart.webp)
 
 ## 五、待开发的Auth、GTP3功能
 
@@ -203,7 +203,7 @@ export enum WechatyLogOperationSecurityRule {
 
 若pragmatically，『chatbot变成一个更简易的terminal』这件事真的行得通，那另一个非常有意思的发展方向就是结合[OpenAI最近提及到GPT3的一个很有意思的应用：Natural Language Shell](https://beta.openai.com/?app=productivity&example=4_2_0) - 运用自然语言去做执行unix等命令。
 
-![gtp3](/assets/2020/wechaty-log-monitor/gtp3.jpeg)
+![gtp3](/assets/2020/wechaty-log-monitor/gtp3.webp)
 
 > 作者: [Archy Will He 何魏奇](https://github.com/archywillhe/)，functional programmer, interested in computational semantics，目前在全职做[吖奇说(ARCHY.SH)](https://archy.sh)这个项目。Working with GPT-2 (and hopefully with 3 soon!)
 >

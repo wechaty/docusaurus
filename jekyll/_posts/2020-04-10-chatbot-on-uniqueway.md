@@ -4,7 +4,7 @@ author: likai
 categories: tutorial
 tags:
   - travel
-image: /assets/2020/chatbot-on-uniqueway/teaser.jpg
+image: /assets/2020/chatbot-on-uniqueway/teaser.webp
 ---
 
 ## 一、定制旅游介绍
@@ -16,7 +16,7 @@ image: /assets/2020/chatbot-on-uniqueway/teaser.jpg
 
 ## 二、定制旅游业务流程
 
-![定制旅游业务流程](/assets/2020/chatbot-on-uniqueway/slide-2.jpg)
+![定制旅游业务流程](/assets/2020/chatbot-on-uniqueway/slide-2.webp)
 
 ## 三、Chatbot在定制旅游行业中的运用
 
@@ -33,10 +33,10 @@ image: /assets/2020/chatbot-on-uniqueway/teaser.jpg
 * 思路: 通过 Wechaty 主动添加客人微信，收集意向需求， 计算优先级，分配销售人员
 * 成果: 呼叫中心提效40%(有些渠道拿不到手机号)
 
-![减少导流流失](/assets/2020/chatbot-on-uniqueway/slide-3.jpg)
-![减少导流流失](/assets/2020/chatbot-on-uniqueway/slide-4.jpg)
-![减少导流流失](/assets/2020/chatbot-on-uniqueway/slide-5.jpg)
-![减少导流流失](/assets/2020/chatbot-on-uniqueway/slide-6.jpg)
+![减少导流流失](/assets/2020/chatbot-on-uniqueway/slide-3.webp)
+![减少导流流失](/assets/2020/chatbot-on-uniqueway/slide-4.webp)
+![减少导流流失](/assets/2020/chatbot-on-uniqueway/slide-5.webp)
+![减少导流流失](/assets/2020/chatbot-on-uniqueway/slide-6.webp)
 
 ### 提高销售签约率
 
@@ -45,9 +45,9 @@ image: /assets/2020/chatbot-on-uniqueway/teaser.jpg
 * 思路: 梳理高转化率人员的销售沟通策略，利用 Wechaty 进行消息推送
 * 成果: 销售签约率提高5.69%
 
-![提高销售签约率](/assets/2020/chatbot-on-uniqueway/slide-7.jpg)
-![提高销售签约率](/assets/2020/chatbot-on-uniqueway/slide-8.jpg)
-![提高销售签约率](/assets/2020/chatbot-on-uniqueway/slide-9.jpg)
+![提高销售签约率](/assets/2020/chatbot-on-uniqueway/slide-7.webp)
+![提高销售签约率](/assets/2020/chatbot-on-uniqueway/slide-8.webp)
+![提高销售签约率](/assets/2020/chatbot-on-uniqueway/slide-9.webp)
 
 ### 提高售后服务效率
 
@@ -56,7 +56,7 @@ image: /assets/2020/chatbot-on-uniqueway/teaser.jpg
 * 思路: 整理这些重复工作，结合客户数据和行程数据将通 过 Wechaty 做消息推送和收集
 * 成果: 售后服务效率提升15.6%
 
-![提高销售签约率](/assets/2020/chatbot-on-uniqueway/slide-10.jpg)
+![提高销售签约率](/assets/2020/chatbot-on-uniqueway/slide-10.webp)
 
 ### 减少客户差评和赔付
 
@@ -65,8 +65,8 @@ image: /assets/2020/chatbot-on-uniqueway/teaser.jpg
 * 思路: 在客户爆炸前发现并解决，基于百度AI做实时聊天内容的情感分析，及时发现并 告知管理人员跟进了解情况，避免客户爆炸
 * 成果: 公开渠道差评下降45%
 
-![减少客户差评和赔付](/assets/2020/chatbot-on-uniqueway/slide-11.jpg)
-![减少客户差评和赔付](/assets/2020/chatbot-on-uniqueway/slide-12.jpg)
+![减少客户差评和赔付](/assets/2020/chatbot-on-uniqueway/slide-11.webp)
+![减少客户差评和赔付](/assets/2020/chatbot-on-uniqueway/slide-12.webp)
 
 ### 提高微信沟通效率
 
@@ -75,7 +75,7 @@ image: /assets/2020/chatbot-on-uniqueway/teaser.jpg
 * 思路: 打通PC端微信和内部系统
 * 成果: 智能推荐回复话术(基于百度UNIT和预设规则)、实现自动关联微信对话和工单、根据聊天内容分析成交意向
 
-![减少客户差评和赔付](/assets/2020/chatbot-on-uniqueway/slide-13.jpg)
-![减少客户差评和赔付](/assets/2020/chatbot-on-uniqueway/slide-14.jpg)
+![减少客户差评和赔付](/assets/2020/chatbot-on-uniqueway/slide-13.webp)
+![减少客户差评和赔付](/assets/2020/chatbot-on-uniqueway/slide-14.webp)
 
 > 作者: [李恺](https://github.com/tlikai)，无二之旅研发总监、资深后端工程师。

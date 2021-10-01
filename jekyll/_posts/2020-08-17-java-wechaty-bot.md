@@ -7,7 +7,7 @@ tags:
   - java
   - weixin-openai
   - entertainment
-image: /assets/2020/smwsk-java-wechaty-bot/home.jpg
+image: /assets/2020/smwsk-java-wechaty-bot/home.webp
 ---
 
 > 本项目是基础wechaty项目实现微信的聊天功能、通过微信对话开放平台提供的API进行智能的应答、实现了微信的智能聊天、最后非常感谢wechaty的无私奉献。
@@ -26,7 +26,7 @@ image: /assets/2020/smwsk-java-wechaty-bot/home.jpg
 
 ## 微信机器人头像
 
-![微信二维码](/assets/2020/smwsk-java-wechaty-bot/code.jpg)
+![微信二维码](/assets/2020/smwsk-java-wechaty-bot/code.webp)
 
 ## 准备工作
 
@@ -40,11 +40,11 @@ image: /assets/2020/smwsk-java-wechaty-bot/home.jpg
 
 ## 项目成果
 
-<img src="/assets/2020/smwsk-java-wechaty-bot/results-1.jpg" width="300" alt="讲笑话-听歌"/>
+<img src="/assets/2020/smwsk-java-wechaty-bot/results-1.webp" width="300" alt="讲笑话-听歌"/>
 
-<img src="/assets/2020/smwsk-java-wechaty-bot/results-2.jpg" width="300" alt="新闻-成语接龙"/>
+<img src="/assets/2020/smwsk-java-wechaty-bot/results-2.webp" width="300" alt="新闻-成语接龙"/>
 
-<img src="/assets/2020/smwsk-java-wechaty-bot/results-3.jpg" width="300" alt="心理年龄测试"/>
+<img src="/assets/2020/smwsk-java-wechaty-bot/results-3.webp" width="300" alt="心理年龄测试"/>
 
 ## 待完善功能
 

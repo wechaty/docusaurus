@@ -7,14 +7,14 @@ tags:
   - honor
   - open-source
   - news
-image: /assets/2020/12-open-source-pioneer-huan/pioneer.png
+image: /assets/2020/12-open-source-pioneer-huan/pioneer.webp
 ---
 
 > 2020 年 12 月 23 日，由 SegmentFault 思否发起的第二届“中国技术先锋”年度评选结果揭晓，Wechaty 作者，BOT5 Club Chair，腾讯 Chatbot TVP，PreAngel Partner 李卓桓入选 2020 “中国开源先锋33人”年度榜单。
 
 12 月 23 日，「SegmentFault 思否」联合「开源社」重磅推出《2020 中国开源先锋 33 人》榜单。Wechaty 作者李卓桓入选“心”尖上的开源人物。
 
-![心尖上的开源人物：李卓桓 Huan](/assets/2020/12-open-source-pioneer-huan/segmentfault-oss-award-huan.jpg)
+![心尖上的开源人物：李卓桓 Huan](/assets/2020/12-open-source-pioneer-huan/segmentfault-oss-award-huan.webp)
 
 近年来，开源一直是技术圈非常火热的话题。SegmentFault 思否基于对开源领域的重点观察与实践，联合长期耕耘与推广开源文化的开源社展开了第二届“中国技术先锋”年度评选。本次评选历时 1 个月，共收到近百份自主申报表，结合部分评委提名人选，依托各科技企业和个人在国内技术领域的行为、影响力指标，最终评选产生这份《2020 中国开源先锋 33 人》榜单。本次与李卓桓同登榜单的还有开放原子开源基金会 TOC 主席堵俊平、PingCAP 联合创始人兼 CTO 黄东旭、VS Code 中文社区创始人韩骏等。
 

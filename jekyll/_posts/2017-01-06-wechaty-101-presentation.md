@@ -5,7 +5,7 @@ categories: announcement
 tags:
   - talk
   - news
-image: /assets/2017/wechaty-connect-chatbots.jpg
+image: /assets/2017/wechaty-connect-chatbots.webp
 ---
 
 This talk was presented at [Node Party Beijing](https://github.com/rockq-org/node-party) #18 Dec 2016, all about ChatBots.

@@ -13,7 +13,7 @@ tags:
   - ospp
   - ospp-2021
   - news
-image: /assets/2021/06-summer-wechaty-guide/teaser.png
+image: /assets/2021/06-summer-wechaty-guide/teaser.webp
 ---
 
 开源软件供应链点亮计划-暑期 2021 的见面会在 [ninetailskim](https://wechaty.js.org/contributors/ninetailskim/)的主持下圆满完成，关于开源软件供应链点亮计划的详细内容，详见 [Wechaty Summer of Code 2021 Kickoff Meeting](https://wechaty.js.org/2021/06/24/wechaty-soc-kick-off-meeting/)
