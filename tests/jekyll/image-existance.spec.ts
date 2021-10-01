@@ -1,6 +1,6 @@
 #!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import { test } from 'tstest'
+import tap from 'tap'
 
 import fs   from 'fs'
 import path from 'path'
@@ -35,10 +35,10 @@ const getLocalImageList = async () => {
   return localImageList
 }
 
-test('all remote images linked from the post should be exist.', async t => {
+// Increase the timeout because we might need to wait network io for a long time.
+tap.setTimeout(60 * 1000)
 
-  // Increase the timeout because we might need to wait network io for a long time.
-  t.setTimeout(60 * 1000)
+void tap.test('all remote images linked from the post should be exist.', async t => {
 
   // Get rid of duplicated urls
   let remoteImageList = await getRecentRemoteImageList()
@@ -90,7 +90,7 @@ test('all remote images linked from the post should be exist.', async t => {
   t.pass(`total ${remoteImageList.length} remote image urls checked`)
 })
 
-test('all local images linked from the post should be exist.', async t => {
+void tap.test('all local images linked from the post should be exist.', async t => {
   const localImageList = await getLocalImageList()
   for (const imagePath of localImageList) {
     if (/^http/i.test(imagePath)) {
