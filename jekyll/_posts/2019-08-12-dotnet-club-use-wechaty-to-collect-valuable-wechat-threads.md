@@ -12,13 +12,13 @@ tags:
 
 幸而在互联网高度发达、信息传播充分高效的今天，通常当我们在技术上遇到问题时，不再需要花费数年之久来参悟。一般来说，现实压力也通常不会允许要花这么久，不然我们连 [996 的福报](https://github.com/996icu/996.ICU)也没有资格享受了。所以，人们通常从搜索引擎上查找已经遇到过类似问题的人所发布的讨论和分享，从开源网站上参考其他人的示例方法，大部分的问题也就能够快速得到解答了。另一方面说，这几乎足以说明不少技术人员的工作内容都是相同、至少是类似的。
 
-![Copying and Pasting from Stack Overflow](/assets/2019/dotnetclub-chaty/copy-paste-from-so.jpg)
+![Copying and Pasting from Stack Overflow](/assets/2019/dotnetclub-chaty/copy-paste-from-so.webp)
 
 如果在搜索引擎上找不到现成的分享，这时就要考虑以某种其他方式来获得解答了。比如，去一些问答网站上发贴求救，或者去一些在线群聊里讨论。一般来说，如果说的不够清楚，就会被管理员一顿批评，大意是“哪里来的菜鸟，问题都不会提！”，或者“扯那么多废话干嘛，先上代码！”如果确实是遇到了群组和社区大佬亲临指点，我们基本上就愉快地忍了，然后速速地按照指点把代码呈上一份、听候进一步的指点。
 
 如果这是一个没有出现过的问题，就会引发大家的围观和讨论，最后问题在讨论中被淹没或者解决。如果这个问题经常出现、太初级，就会被大佬和大家鄙视一番，并被要求回去看书。这时，情况就有点尴尬了。毕竟，我怎么知道该去看哪本书，哪部分？而且，本来这个问题就是在线等的很着急，这会儿我还等着下班呢……
 
-![表情：给你下跪](/assets/2019/dotnetclub-chaty/on-my-knees.jpg)
+![表情：给你下跪](/assets/2019/dotnetclub-chaty/on-my-knees.webp)
 
 ## 如果时光能倒流
 
@@ -28,7 +28,7 @@ tags:
 
 所谓大隐隐于市，高手在民间。在日常互联网上，很多即兴对话里蕴含着很多知识，他们当时给围观者带来了帮助，却又很快消失在人们眼中。当不断再度有人谈到时，高手们不再有耐心来解答，低手们也就不再能够获得解答了。他们又绝望地回到了搜索引擎上……无意中有的人却搜到了这个：
 
-![从放弃百度开始](/assets/2019/dotnetclub-chaty/quit-baidu.png)
+![从放弃百度开始](/assets/2019/dotnetclub-chaty/quit-baidu.webp)
 
 情何以堪！
 
@@ -44,29 +44,29 @@ tags:
 
 整体流程如下图：
 
-![对话转换流程图](/assets/2019/dotnetclub-chaty/convert-flow-large.jpg)
+![对话转换流程图](/assets/2019/dotnetclub-chaty/convert-flow-large.webp)
 
 其中最为关键的就是右上角的“Wechaty 自动转换客服” club-chaty 项目，它能将收到的微信“消息记录”类型的消息导出为 JSON 格式，同时解析并下载其中包含的多媒体消息，包括链接、文件和图片视频等。
 
 之所以它能将微信消息提取到微信之外，这得益于微信消息解析 SDK。club-chaty 开发之初，在选用微信 SDK 的时候，发现社区中的微信 SDK 很多，琳琅满目到处都是，一时之间，难分伯仲。然而，club-chaty 要求能够解析“消息记录”类型的消息，这一硬性要求很快便将绝大多数 SDK 排除在外了。只有 [Wechaty](https://github.com/wechaty/wechaty) 才能完美地提供这些功能。
 
-![Wechaty Logo](/assets/2019/dotnetclub-chaty/wechaty.jpg)
+![Wechaty Logo](/assets/2019/dotnetclub-chaty/wechaty.webp)
 
 Wechaty 是由[句子互动](https://www.juzi.bot/)发布的开源微信 SDK，它直接为微信个人账号赋予编程接口，将个人账号变成自动化应答程序。最重要的是，它能以结构化的方式解析“消息记录”类型的消息。除了解析消息本身，Wechaty 还提供相关的 API 可以下载消息中包含的多媒体内容。这些功能都完美地满足了 club-chaty 的需求。
 
 时不我待，club-chaty 很快就开始了基于 Wechaty 的开发，并在 dotnet club 主站中集成了相关的对话导入流程。作为 dotnet club 网站的一部分，club-chaty 并没有独立地提供线上的网站服务。不过它作为一个软件项目，它的代码与 dotnet club 主站的开发是相互独立的，因此可以单独使用这部分代码。
 
-![表情：搬转](/assets/2019/dotnetclub-chaty/brick-carrier.jpg)
+![表情：搬转](/assets/2019/dotnetclub-chaty/brick-carrier.webp)
 
 ## club-chaty 如何防止隐私泄漏
 
 随着了解 club-chaty 这项功能的人越来越多，逐渐有人关注到它可能带来隐私泄露的风险。比如，张三正跟李四在微信里聊起了他对哪个姑娘刚刚萌生的情愫之后，李四改天就用 club-chaty 这款神器把张三的想法公之于众，页面上还有张三的头像和名字，这还得了。鉴于这种考量，dotnet club 在使用由 club-chaty 导入的数据时，会对对话的内容进行一系列“脱敏”处理。比如，隐去微信对话参与者的原始昵称和头像，换用随机生成的昵称和对话；必须由实名制账号导入对话，并接受原对话参与者的认领和删除等。
 
-![表情：隐私泄漏](/assets/2019/dotnetclub-chaty/privacy-leak.jpg)
+![表情：隐私泄漏](/assets/2019/dotnetclub-chaty/privacy-leak.webp)
 
 在 club-chaty 这种智能导入工具之前，人们如果要留存聊天记录，就需要一张张截图，并利用一些拼图软件将多张图拼到一起作为一个整体进行保存了。相信大家都以这种方式吃过不少大瓜，吃的时候很过瘾，但要么是事后再也找不到了，要么是被吃瓜的当事人信息被泄漏。
 
-![聊天记录示例图](/assets/2019/dotnetclub-chaty/chat-history.jpg)
+![聊天记录示例图](/assets/2019/dotnetclub-chaty/chat-history.webp)
 
 而用 club-chaty 导入的聊天记录与截图相比，有诸多好处和优势：
 
