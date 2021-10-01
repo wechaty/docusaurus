@@ -44,39 +44,39 @@ image: /assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/grouupmaster.web
 
 - 打开「群组大师」，找到群列表
 
-![bot_step1.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step1.jpeg)
+![bot_step1.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step1.webp)
 
 - 进入群主页
 
-![bot_step2.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step2.jpeg)
+![bot_step2.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step2.webp)
 
 - 发布活动
 
-![bot_step3.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step3.jpeg)
+![bot_step3.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step3.webp)
 
 - 提交并发布
 
-![bot_step4.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step4.jpeg)
+![bot_step4.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step4.webp)
 
 - 发布成功进入活动详情
 
-![bot_step5.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step5.jpeg)
+![bot_step5.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step5.webp)
 
 - 在对应微信群内使用指令进行活动报名，首次使用可发送 帮助 获取全部指令列表
 
-![bot_step6.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step6.jpeg)
+![bot_step6.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step6.webp)
 
 - 发送 活动 查看群内活动详情，发送 报名 即可立即报名活动
 
-![bot_step7.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step7.jpeg)
+![bot_step7.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step7.webp)
 
 - 发送 取消，取消活动报名
 
-![bot_step8.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step8.jpeg)
+![bot_step8.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step8.webp)
 
 - 在「群组大师」小程序中可查看活动报名详情
 
-![bot_step9.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step9.jpeg)
+![bot_step9.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step9.webp)
 
 ## demo源码：
 

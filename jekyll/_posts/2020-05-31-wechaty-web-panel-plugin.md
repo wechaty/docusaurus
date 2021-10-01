@@ -153,11 +153,11 @@ ode mybot.js
 
 ## 功能预览
 
-![news](/assets/2020/web-panel-plugin/news.jpeg)
+![news](/assets/2020/web-panel-plugin/news.webp)
 
 个人定时与群定时任务
 
-![func](/assets/2020/web-panel-plugin/func.jpeg)
+![func](/assets/2020/web-panel-plugin/func.webp)
 
 功能一览
 

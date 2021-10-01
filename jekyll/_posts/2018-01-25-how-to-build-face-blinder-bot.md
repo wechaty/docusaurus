@@ -154,7 +154,7 @@ docker run -d --restart=always --volume=/workdir:/workdir -e WECHATY_TOKEN=TOKEN
 
 ## 最后，感谢Google 办了这么一场有趣的活动
 
-![wechaty](/assets/2018/wechaty-blinder-17.jpeg)
+![wechaty](/assets/2018/wechaty-blinder-17.webp)
 
 本次活动邀请到了来自海内外数十位资深工程师，除了 Google的研发专家团队，还邀请到了JetBrains团队，这也是 JetBrains 团队在中国大陆首次针对Kotlin的官方分享。另外，该活动还邀请到了国内诸多一线研发团队，滴滴、Strikingly、百度、集智社区，桔子互动等公司，带来他们近期的一线研发经验。
 

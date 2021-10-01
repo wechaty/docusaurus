@@ -5,7 +5,7 @@ categories: event
 tags:
   - talk
   - news
-image: /assets/2018/microsoft-hol-chatbot.jpeg
+image: /assets/2018/microsoft-hol-chatbot.webp
 ---
 
 这是我在[2018微软技术暨生态大会](https://mp.weixin.qq.com/s/Hm2tc_V4b3EKOlBx4PxEuA) 动手实验室的分享，2018微软技术暨生态大会10月24日在上海世博中心如约而至。 作为微软最负盛名的技术峰会，此次大会将带领参会者深入领略技术精髓，感受微软黑科技的魅力，探讨在云计算、物联网、移动互联网、大数据和人工智能的发展洪流中，如何洞察新技术与新变革，聚焦解决问题与创造价值，如何开启企业数字化转型之旅。

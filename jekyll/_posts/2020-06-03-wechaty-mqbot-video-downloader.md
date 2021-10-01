@@ -89,7 +89,7 @@ node dtot.js
 
 欢迎扫码加我的机器人，验证填写 “tiktok”，也欢迎将我推荐给需要的朋友，无水印下载就是这么简单。
 
-![演示图片](/assets/2020/mqbot/ewm1.jpeg)
+![演示图片](/assets/2020/mqbot/ewm1.webp)
 
 > 作者: [remainsu](https://github.com/remainsu)
 > Code: [Github](https://github.com/remainsu/qmrobot)

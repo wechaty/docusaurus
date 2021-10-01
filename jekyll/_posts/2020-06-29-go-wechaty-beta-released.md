@@ -105,7 +105,7 @@ func (c *ContactFactory) Load(id string) _interface.IContact {
 
 为了验证 go-wechaty 是否可用，在端午节最后一天的下午我写了一个机器人, 功能就是每天定时提醒群里人打卡, 如果不想收到提醒，回复 #打卡, 机器人就认为你今天已经打卡了。
 
-![image1](/assets/2020/go-wechaty/2020-06-29-image1.jpeg)
+![image1](/assets/2020/go-wechaty/2020-06-29-image1.webp)
 
 项目地址: <https://github.com/dchaofei/wechat-remind-bot>
 

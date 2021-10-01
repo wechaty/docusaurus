@@ -16,7 +16,7 @@ As soon as I learn how to use 6 lines of JavaScript to achieve a simple chatbot 
 
 For example, my binding email address is 346786495@qq.com
 
-![wechaty-email](/assets/2017/wechaty-email-demo.jpeg)
+![wechaty-email](/assets/2017/wechaty-email-demo.webp)
 
 ## How to use Wechaty-Mail?
 

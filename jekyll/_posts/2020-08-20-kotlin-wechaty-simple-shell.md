@@ -6,7 +6,7 @@ tags:
   - serverchen
   - shell
   - utility
-image: /assets/2020/kotlin-wechaty-simple-shell/home.jpeg
+image: /assets/2020/kotlin-wechaty-simple-shell/home.webp
 ---
 
 这个项目是基于SpringBoot和SpringMVC的，语言是kotlin，构建工具是maven。

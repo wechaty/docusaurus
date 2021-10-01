@@ -85,7 +85,7 @@ User 微信昵称 logined
 ```
 
 然后我们向机器人发送一个 ding, 机器人就会回复一个 dong
-![ding-dong](/assets/2021/04-go-wechaty-use-web/ding.jpeg)
+![ding-dong](/assets/2021/04-go-wechaty-use-web/ding.webp)
 
 如果启动机器人不想依赖环境变量，也可以写在代码里
 

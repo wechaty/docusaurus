@@ -49,15 +49,15 @@ github:[https://github.com/gengchen528/wechat-assistant](https://github.com/geng
 
 提醒自己
 
-![image](/assets/2019/koa-wechaty-1.jpeg)
+![image](/assets/2019/koa-wechaty-1.webp)
 
 委托提醒（前提是你和你想要提醒的人都是小秘书的好友，采用的是昵称查找用户，不是备注要注意）
 
-![image](/assets/2019/koa-wechaty-2.jpeg)
+![image](/assets/2019/koa-wechaty-2.webp)
 
 数据库中已添加任务
 
-![image](/assets/2019/koa-wechaty-3.jpeg)
+![image](/assets/2019/koa-wechaty-3.webp)
 
 ## 准备工作
 
@@ -67,7 +67,7 @@ github:[https://github.com/gengchen528/wechat-assistant](https://github.com/geng
 
 ### 目录结构
 
-![image](/assets/2019/koa-wechaty-4.jpeg)
+![image](/assets/2019/koa-wechaty-4.webp)
 
 * config: koa,定时任务器，superagent的配置目录
 * mongodb: mongodb连接相关配置文件,schema设计与model的主要目录
@@ -280,7 +280,7 @@ untils/index.js
 
 koa就不用多说了，TJ大神继express后的又一神作，很轻量，而且摆脱了“回调地狱”的问题，放一张大神头像镇楼（发型很帅啊，哈哈）
 
-![image](/assets/2019/koa-wechaty-5.jpeg)
+![image](/assets/2019/koa-wechaty-5.webp)
 
 koa服务默认使用3008端口，如果修改的话，需要在index.js中修改host的地址。这里目前写了三个接口，分别是添加定时任务，获取定时任务列表和更新任务列表，对应的数据库curd操作均在`mongodb/model.js`中完成
 
@@ -472,7 +472,7 @@ npm run start
 
 1、如果需要在服务器中部署，需要先扫描二维码登录一次，生成微信维持登录状态的json文件，如下图：
 
-![image](/assets/2019/koa-wechaty-6.jpeg)
+![image](/assets/2019/koa-wechaty-6.webp)
 2、生成此文件后，可以使用pm2工具进行进程守护。由于为了方便，本地开发的时候，我设置的`npm run start`同时执行了两条命令，所以在服务器端部署的时候，建议先启动`koa.js`后再启动`index.js`
 
 ## 常见问题
@@ -491,7 +491,7 @@ npm run start
 
 Centos7下部署出现以下问题
 
-![image](/assets/2019/koa-wechaty-7.jpeg)
+![image](/assets/2019/koa-wechaty-7.webp)
 
 问题原因: [https://segmentfault.com/a/1190000011382062](https://segmentfault.com/a/1190000011382062)
 
@@ -511,7 +511,7 @@ yum install ipa-gothic-fonts xorg-x11-fonts-100dpi xorg-x11-fonts-75dpi xorg-x11
 提取码：0mrz
 
 把下载的文件放到如下图路径，并解压到当前文件夹中即可
-![image](/assets/2019/koa-wechaty-8.jpeg)
+![image](/assets/2019/koa-wechaty-8.webp)
 
 1. 支持 红包、转账、朋友圈… 吗
 
@@ -538,7 +538,7 @@ yum install ipa-gothic-fonts xorg-x11-fonts-100dpi xorg-x11-fonts-75dpi xorg-x11
 
 我的小秘书已经学会了自动加好友功能，所以有兴趣的小伙伴可以加我的微信进行测试，她也可以是你的私人小秘书😆（注意别发太多信息，会把她玩坏的）
 
- ![image](/assets/2019/koa-wechaty-9.jpeg)
+ ![image](/assets/2019/koa-wechaty-9.webp)
 
 赶快亲自试一试吧，相信你会挖掘出更多好玩的功能
 
@@ -546,6 +546,6 @@ github:[https://github.com/gengchen528/wechat-assistant](https://github.com/geng
 
 另外我的公众号已经接入微软小冰，关注后发语音会有小姐姐的声音陪你聊天，也可以和她文字聊天，有兴趣可以试试看，单身的欢迎来撩
 
-![image](/assets/2019/koa-wechaty-10.jpeg)
+![image](/assets/2019/koa-wechaty-10.webp)
 
 > 作者: [Leo_chen](https://github.com/leochen-g/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [使用koa2+wechaty打造个人微信小秘书](https://juejin.im/post/5ca1dd846fb9a05e6c77b72f?utm_source=gold_browser_extension)
