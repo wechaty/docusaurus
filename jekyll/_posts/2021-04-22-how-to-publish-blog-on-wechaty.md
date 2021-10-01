@@ -6,7 +6,7 @@ tags:
   - blog
   - study
   - introduction
-image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg
+image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.webp
 ---
 
 很高兴能执笔这篇博客，第一次使用github向wechaty社区提交博客时Q到了@huan（提交了十几次才最终通过），因此也被印象深刻了。今天和大家分享一下零基础或有那么一丢丢基础的小白如何从0到1的在wechaty发布博客（成为一个贡献者）。
@@ -54,7 +54,7 @@ image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg
 
     不知道什么是fork？总之很复杂，网上说的也不是很明白，简单点理解就是copy一份，到wechaty的github项目页面<https://github.com/wechaty/wechaty.js.org>，然后看图操作
 
-    ![fork](/assets/2021/04-how-to-publish-blog-on-wechaty/04.png)
+    ![fork](/assets/2021/04-how-to-publish-blog-on-wechaty/04.webp)
 
 2. **同步你的分支**
 
@@ -64,7 +64,7 @@ image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg
 
     使用git把github上的代码下载下来，看图操作复制地址，然后在你要存放文件的目录运行`git clone https://github.com/wechaty/wechaty.js.org.git`
 
-    ![clone](/assets/2021/04-how-to-publish-blog-on-wechaty/05.png)
+    ![clone](/assets/2021/04-how-to-publish-blog-on-wechaty/05.webp)
 
 4. **使用markdown书写你的博客**
 
@@ -76,11 +76,11 @@ image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg
 
     例如本文正文,是在`jekyll/_post`目录下创建名为`2021-04-22-how-to-publish-blog-on-wechaty.md`的文件并在里边写正文内容。
 
-    ![根目录](/assets/2021/04-how-to-publish-blog-on-wechaty/01.png)
+    ![根目录](/assets/2021/04-how-to-publish-blog-on-wechaty/01.webp)
 
-    ![jekyll目录](/assets/2021/04-how-to-publish-blog-on-wechaty/02.png)
+    ![jekyll目录](/assets/2021/04-how-to-publish-blog-on-wechaty/02.webp)
 
-    ![2021-04-22-how-to-publish-blog-on-wechaty.md](/assets/2021/04-how-to-publish-blog-on-wechaty/03.png)
+    ![2021-04-22-how-to-publish-blog-on-wechaty.md](/assets/2021/04-how-to-publish-blog-on-wechaty/03.webp)
 
     正文内容书写规范：
 
@@ -98,7 +98,7 @@ image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg
       - wechaty
       - study
       - introduction
-    image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare_book.jpeg
+    image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare_book.webp
     ---
 
     > 作者: [atorber](https://github.com/atorber/)，不务正业的产品经理
@@ -110,11 +110,11 @@ image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg
 
     - 选择合适的图片可以使博客看起来更漂亮。例如本文背景图：
 
-    ![rare-book.jpeg](/assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg)
+    ![rare-book.jpeg](/assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.webp)
 
 6. **添加文档中的插图到 `jekyll/assets` 文件夹，在文件夹下当前年份下建立一个以"月份+博客文件名"为名称的文件夹来存放相关图片**
 
-    在发布之前插入图片和视频，需要将所有图片、视频文件保存在博客专属的文件夹中，文件夹的位置和命名方式 `/jekyll/assets/文章标标题/`。例如本文图片存放文件夹：`jekyll/assets/2021/04-how-to-publish-blog-on-wechaty`，本文背景图的完整路径`jekyll/assets/2021/04-how-to-publish-blog-on-wechaty/rare_book.jpeg`
+    在发布之前插入图片和视频，需要将所有图片、视频文件保存在博客专属的文件夹中，文件夹的位置和命名方式 `/jekyll/assets/文章标标题/`。例如本文图片存放文件夹：`jekyll/assets/2021/04-how-to-publish-blog-on-wechaty`，本文背景图的完整路径`jekyll/assets/2021/04-how-to-publish-blog-on-wechaty/rare_book.webp`
 
 7. **添加你的个人信息到`jekyll/_contributors/your_github_id.md`**
 
@@ -153,7 +153,7 @@ image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg
 
     这一步在github界面操作（也可能可以直接推送到wechaty，超哥没有get到方法）
 
-    ![pull request](/assets/2021/04-how-to-publish-blog-on-wechaty/06.png)
+    ![pull request](/assets/2021/04-how-to-publish-blog-on-wechaty/06.webp)
 
 11. 签署CLA
 

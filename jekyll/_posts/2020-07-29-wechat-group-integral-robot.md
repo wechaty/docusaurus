@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - ecommerce
-image: /assets/2020/wechat-group-integral-robot/header.jpg
+image: /assets/2020/wechat-group-integral-robot/header.webp
 ---
 
 [![Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
@@ -23,7 +23,7 @@ image: /assets/2020/wechat-group-integral-robot/header.jpg
 
 当用户在群里发好评时，@该用户会给用户添加自定义积分。
 
-![效果图](/assets/2020/wechat-group-integral-robot/wxscreen.png)
+![效果图](/assets/2020/wechat-group-integral-robot/wxscreen.webp)
 
 ### 结构
 

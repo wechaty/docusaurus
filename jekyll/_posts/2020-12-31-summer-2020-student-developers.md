@@ -7,14 +7,14 @@ tags:
   - summer-2020
   - summer-of-wechaty
   - featured
-image: /assets/2020/12-summer-2020-student-developers/award.png
+image: /assets/2020/12-summer-2020-student-developers/award.webp
 ---
 
 今夏， Wechaty 社区诞生了 9 位后浪贡献者：毕凯乔、王俊伟、谢昱清、范蕊、江姗姗、林昊翰、唐光彬、肖梓霖与孔祥哲。他们都还是正在就读本科与研究所的学生。
 
 9 位后浪贡献者与 Wechaty 的故事要从今年中科院软件所和华为 openEuler 项目共同举办的“开源软件供应链点亮计划——暑期 2020” 说起。
 
-![summer 2020](/assets/2020/12-summer-2020-student-developers/summer-2020.png)
+![summer 2020](/assets/2020/12-summer-2020-student-developers/summer-2020.webp)
 
 ## 故事的开始
 
