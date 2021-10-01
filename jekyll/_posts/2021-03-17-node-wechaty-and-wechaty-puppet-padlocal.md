@@ -5,7 +5,7 @@ categories: article
 tags:
   - node
   - padlocal
-image: /assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/grouupmaster.png
+image: /assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/grouupmaster.webp
 ---
 
 超哥之前开发了一个叫做「群组大师」的小程序，听名字就知道，是用来管理群组的，管理群组的什么呢？

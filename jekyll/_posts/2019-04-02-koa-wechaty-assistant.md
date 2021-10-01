@@ -5,7 +5,7 @@ categories: project
 tags:
   - code
   - productivity
-image: /assets/2019/koa-wechaty.jpg
+image: /assets/2019/koa-wechaty.webp
 ---
 
 * 你是不是有闲置的微信号?

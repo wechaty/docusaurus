@@ -7,7 +7,7 @@ tags:
   - qiji
   - productivity
   - social
-image: /assets/2020/qijibot/qijibot.jpg
+image: /assets/2020/qijibot/qijibot.webp
 ---
 
 - 除了媒体上的曝光，通过人进行深度触达是好的获客方式
@@ -62,7 +62,7 @@ image: /assets/2020/qijibot/qijibot.jpg
 
 就在那周，我收到了句子互动创始人佳芮的书稿，《Chatbot从0到1》，成为了我聊天机器人的启蒙。
 后来，我在BOT Friday上认识了大量的创业者、工程师和聊天机器人从业者，并通过几次“看起来是分享实际上是请大家帮我答疑”的BOT Friday活动，逐渐迈入聊天机器人行业。
-![我的第一次分享](/assets/2020/qijibot/talk1.jpg)
+![我的第一次分享](/assets/2020/qijibot/talk1.webp)
 
 {% include iframe.html src="/assets/2020/qijibot/talk2.pdf" %}
 
@@ -103,7 +103,7 @@ image: /assets/2020/qijibot/qijibot.jpg
 - 用户只需要点击按钮就能把对方提出的问题进行回复，并完成一些必要的操作。
 - 机器永远不自作主张地进行回复，永远需要人进行一次确认。
 
-![最终产品](/assets/2020/qijibot/qijibot.jpg)
+![最终产品](/assets/2020/qijibot/qijibot.webp)
 
 ## 四、帮更多企业在微信上做好私域销售
 

@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - social
-image: /assets/2020/your-wechat-bot/banner.png
+image: /assets/2020/your-wechat-bot/banner.webp
 ---
 
 我有一个三百多人的前端开发群，每天都有很多个好友请求，让我添加他们进前端开发群。

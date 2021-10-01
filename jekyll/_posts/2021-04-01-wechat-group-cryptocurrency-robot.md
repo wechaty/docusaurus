@@ -5,7 +5,7 @@ categories: tutorial
 tags:
   - cryptocurrency
   - padplus
-image: /assets/2021/04-wechat-group-cryptocurrency-robot/header.jpg
+image: /assets/2021/04-wechat-group-cryptocurrency-robot/header.webp
 ---
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://wechaty.js.org)
@@ -137,7 +137,7 @@ bot.start().then(() => {
 
 ## 运行效果
 
-![效果图](/assets/2021/04-wechat-group-cryptocurrency-robot/result.png)
+![效果图](/assets/2021/04-wechat-group-cryptocurrency-robot/result.webp)
 
 ## 致谢
 

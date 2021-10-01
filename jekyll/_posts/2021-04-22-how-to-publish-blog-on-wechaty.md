@@ -54,7 +54,7 @@ image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg
 
     不知道什么是fork？总之很复杂，网上说的也不是很明白，简单点理解就是copy一份，到wechaty的github项目页面<https://github.com/wechaty/wechaty.js.org>，然后看图操作
 
-    ![fork](/assets/2021/04-how-to-publish-blog-on-wechaty/04.png)
+    ![fork](/assets/2021/04-how-to-publish-blog-on-wechaty/04.webp)
 
 2. **同步你的分支**
 
@@ -64,7 +64,7 @@ image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg
 
     使用git把github上的代码下载下来，看图操作复制地址，然后在你要存放文件的目录运行`git clone https://github.com/wechaty/wechaty.js.org.git`
 
-    ![clone](/assets/2021/04-how-to-publish-blog-on-wechaty/05.png)
+    ![clone](/assets/2021/04-how-to-publish-blog-on-wechaty/05.webp)
 
 4. **使用markdown书写你的博客**
 
@@ -76,11 +76,11 @@ image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg
 
     例如本文正文,是在`jekyll/_post`目录下创建名为`2021-04-22-how-to-publish-blog-on-wechaty.md`的文件并在里边写正文内容。
 
-    ![根目录](/assets/2021/04-how-to-publish-blog-on-wechaty/01.png)
+    ![根目录](/assets/2021/04-how-to-publish-blog-on-wechaty/01.webp)
 
-    ![jekyll目录](/assets/2021/04-how-to-publish-blog-on-wechaty/02.png)
+    ![jekyll目录](/assets/2021/04-how-to-publish-blog-on-wechaty/02.webp)
 
-    ![2021-04-22-how-to-publish-blog-on-wechaty.md](/assets/2021/04-how-to-publish-blog-on-wechaty/03.png)
+    ![2021-04-22-how-to-publish-blog-on-wechaty.md](/assets/2021/04-how-to-publish-blog-on-wechaty/03.webp)
 
     正文内容书写规范：
 
@@ -153,7 +153,7 @@ image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare-book.jpeg
 
     这一步在github界面操作（也可能可以直接推送到wechaty，超哥没有get到方法）
 
-    ![pull request](/assets/2021/04-how-to-publish-blog-on-wechaty/06.png)
+    ![pull request](/assets/2021/04-how-to-publish-blog-on-wechaty/06.webp)
 
 11. 签署CLA
 

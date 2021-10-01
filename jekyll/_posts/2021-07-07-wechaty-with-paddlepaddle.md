@@ -9,7 +9,7 @@ tags:
   - featured
   - chatbot
   - competition
-image: /assets/2021/07-wechaty-with-paddlepaddle/header.png
+image: /assets/2021/07-wechaty-with-paddlepaddle/header.webp
 ---
 
 硬核ML Chatbot 大赛重磅来袭!
@@ -21,7 +21,7 @@ Metaverse元宇宙的奥秘，等你来揭晓！
 
 ## 🌟 惊喜奖品大揭秘!🌟
 
-![prize](/assets/2021/07-wechaty-with-paddlepaddle/prize.png)
+![prize](/assets/2021/07-wechaty-with-paddlepaddle/prize.webp)
 
 ## ✨ 更多比赛福利!✨
 
@@ -30,7 +30,7 @@ Metaverse元宇宙的奥秘，等你来揭晓！
 - Paddle & Wechaty工程师1对1指导
 - PPDE(飞桨开发者技术专家)绿色通道
 
-![qr](/assets/2021/07-wechaty-with-paddlepaddle/qr.png)
+![qr](/assets/2021/07-wechaty-with-paddlepaddle/qr.webp)
 
 扫码报名，马上获取比赛福利!
 
@@ -60,4 +60,4 @@ Metaverse元宇宙的奥秘，等你来揭晓！
 - 7月25日：北京场线下脑暴会
 
 现场名额有限，赶快入群获取报名链接吧！
-![qrcode](/assets/2021/07-wechaty-with-paddlepaddle/qrcode.png)
+![qrcode](/assets/2021/07-wechaty-with-paddlepaddle/qrcode.webp)

@@ -8,7 +8,7 @@ tags:
   - padplus
   - productivity
   - nuxt
-image: /assets/2020/mqbot/qrcode.png 
+image: /assets/2020/mqbot/qrcode.webp 
 ---
 
 20年初开始接触到Tiktok(国际版抖音)，一直尝试做到今天，收获很多。同时也维护起了自己的一个圈子，圈子内很多人吐槽“短视频去水印工具”，这个比较常用的就是微信小程序，但是大多数都是一堆堆的广告，反应速度大多被作者故意设置了延时（这样可以多看几秒广告）
@@ -63,7 +63,7 @@ node dtot.js
 ```
 
 效果如图，扫码后即可完成登录
-![演示图片](/assets/2020/mqbot/denglu1.png)
+![演示图片](/assets/2020/mqbot/denglu1.webp)
 
 ## 主要功能
 
@@ -75,11 +75,11 @@ node dtot.js
 
 ### 1. 发送复制链接
 
-![演示图片](/assets/2020/mqbot/fasong1.jpg)
+![演示图片](/assets/2020/mqbot/fasong1.webp)
 
 ### 2. 发送给机器人，会得到及时的返回结果，复制到浏览器即可下载
 
-![演示图片](/assets/2020/mqbot/wancheng1.jpg)
+![演示图片](/assets/2020/mqbot/wancheng1.webp)
 
 ## 最后
 

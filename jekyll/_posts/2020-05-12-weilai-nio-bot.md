@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - automotive
-image: /assets/2020/nio-bot/bio-photo.jpg
+image: /assets/2020/nio-bot/bio-photo.webp
 ---
 
 ## 需求

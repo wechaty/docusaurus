@@ -120,15 +120,15 @@ image: /assets/2021/01-carpool-bot-with-wechaty-1/4.jpeg
 
 - 用户填写WechatId的界面。（因小程序不提供用户wechatId，需要用户手动填写）
 
-  ![Pic-1](/assets/2021/01-carpool-bot-with-wechaty-1/2.jpg)
+  ![Pic-1](/assets/2021/01-carpool-bot-with-wechaty-1/2.webp)
 
 - 用户发布拼车与加入拼车的界面：
 
-  ![Pic-1](/assets/2021/01-carpool-bot-with-wechaty-1/1.jpg)
+  ![Pic-1](/assets/2021/01-carpool-bot-with-wechaty-1/1.webp)
 
 - 用户进行「加入群聊」后，Bot将用户拉入群聊（bot视角）：
 
-  ![Pic-1](/assets/2021/01-carpool-bot-with-wechaty-1/3.jpg)
+  ![Pic-1](/assets/2021/01-carpool-bot-with-wechaty-1/3.webp)
 
 ### 项目相关
 

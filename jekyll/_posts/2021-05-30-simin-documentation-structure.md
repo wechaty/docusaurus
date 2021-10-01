@@ -5,7 +5,7 @@
  tags:
    - introduction
    - gsod
- image: /assets/2021/05-simin-documentation-structure/cover_photo.png
+ image: /assets/2021/05-simin-documentation-structure/cover_photo.webp
 ---
 
 ## Documentation Structure
@@ -30,7 +30,7 @@ According to the table, the first two sections (tutorials and how-to guide) focu
 
 Tutorials teach users how to implement the software step by step. The target audience are those with no experience to the software. The users are passive, and they are waiting for you to feed them the knowledge they need to know when they are trying to use the software.
 
-![tutorials](/assets/2021/05-simin-documentation-structure/tutorials.png)
+![tutorials](/assets/2021/05-simin-documentation-structure/tutorials.webp)
 
 From the picture above, the left side with bulleted points is detailed guidance for documenting tutorials. By following the notice, you can avoid writing out of scope. The right side is the drafted structure proposed by team tutorials (Souvik Biswas and Shwetal Soni) in week 1. The topics that need to further discussed are highlighted in red.
 
@@ -42,7 +42,7 @@ For the five highlighted topics under *Advanced Usage*, they more or less contra
 
 The how-to guides is like a general Q&A. It acts as a supporting role, so each topic in this section is independent. The target audience are not expected to follow the sequence and should have enough knowledge to look for the guides they need.
 
-![how-to_guides](/assets/2021/05-simin-documentation-structure/how-to_guides.png)
+![how-to_guides](/assets/2021/05-simin-documentation-structure/how-to_guides.webp)
 
 You can see the picture above. The left side with bulleted points provides information on how to write better how-to guides. With special emphasis on addressing a specific question or problem, topics in how-to guides can avoid overlapping with other sections, especially tutorials and reference. The right side is the drafted structure proposed by team how-to guides (Vasvi Sood and Abhishek Jaiswal) in week 1. The topics that need further discussion are highlighted in red.
 
@@ -54,7 +54,7 @@ The rest of the topics highlighted in red are similar to the first two topics: t
 
 You can view the reference guides as an encyclopaedia, or wiki. The users will not follow everything in the contents, and will only look for what they need. Therefore, the organization and accuracy of reference guides become very important. You need to make sure that users can easily find the information themselves quickly, and will not get bored and give up during searching.
 
-![reference_guides](/assets/2021/05-simin-documentation-structure/reference_guides.png)
+![reference_guides](/assets/2021/05-simin-documentation-structure/reference_guides.webp)
 
 You can see the picture above. Same as the previous two sections, the left part with bulleted points tells you how to better construct reference guides, and avoid duplicated information with other sections. The right side is the drafted structure proposed by team reference guides (Shraddha Vasant Prasad and Soumi Bardhan) in week 1. The topics that need to pay more attentions are highlighted in red.
 
@@ -64,7 +64,7 @@ The highlighted topics under *API reference* should be careful when you are docu
 
 Explanation provides the background information of the software. The topics in here are not directly related with Wechaty, but are very helpful if you want to really master this software.
 
-![explanation](/assets/2021/05-simin-documentation-structure/explanation.png)
+![explanation](/assets/2021/05-simin-documentation-structure/explanation.webp)
 
 Just like the previous three sections, the guidelines of documenting explanation are listed in bulleted points on the left part. Focusing on providing the context, explanation section helps users to better understand what Wechaty is and the concepts of it. With the help of this section, users can not only know what they are doing, and also why they are doing.
 

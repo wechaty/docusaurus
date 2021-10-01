@@ -152,4 +152,4 @@ java -jar wechat-bot-1.0.jar --wechat-bot.token=YOUR_TOKEN  --server-chan.token=
 
 ## 例子
 
-![example](/assets/2020/kotlin-wechaty-simple-shell/example.png)
+![example](/assets/2020/kotlin-wechaty-simple-shell/example.webp)
