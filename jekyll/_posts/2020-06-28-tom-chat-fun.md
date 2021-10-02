@@ -2,18 +2,13 @@
 title: "TomChat-为生活增趣味"
 author: zophyr
 excerpt: "A chatbot by wechaty.You can learn about today in history, current weather and chat with Tom."
-image: /assets/2020/tom-chat/zelda.jpg 
+image: /assets/2020/tom-chat/zelda.webp 
 categories: project
 tags:
   - assistant
   - productivity
   - entertainment
 ---
-
-> 作者: [Zophyr](https://github.com/Zophyr)
-> 源码: [Github](https://github.com/Zophyr/TomChat)
-
-## 想法
 
 在规律平凡的生活中，希望可以有一个小管家来帮自己完成日常的任务，比如天气汇报、消息记录、随叫随到的聊天打发时间，因此 TomChat 应运而生。它可以为你提供天气查询，给予穿衣意见、运动建议；也可以为你述说历史上的今天，可做今日与同事好友的聊天话题；也可以在不愿打扰别人的时候，和它聊天，博君一笑。
 
@@ -113,3 +108,6 @@ async function onMessage(msg) {
 2. npm run
 3. 扫码登陆微信
 4. enjoy！
+
+> 作者: [Zophyr](https://github.com/Zophyr)
+> 源码: [Github](https://github.com/Zophyr/TomChat)

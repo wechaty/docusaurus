@@ -5,13 +5,8 @@ categories: project
 tags:
   - padplus
   - productivity
-image: /assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot0.jpg 
+image: /assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot0.webp 
 ---
-
-> 作者: [suruozhong](https://github.com/suruozhong)
-> Code: [Github](https://github.com/suruozhong/wechaty-team-robot)
-
-## 需求背景
 
 之前跟一个律师的朋友聊天了解到，他们很多保全的业务，如果忘记保全，标的大的话损失就严重了，非常需要一个提醒的功能，而这个提醒可以通知团队里的多个同事。如果能以微信的方式通知是最好不过，通过微信和小程序模版消息来做通知的话，无法通知到每一个团队成员。用微信机器人来实现的话是再好不过了。于是在Github找了很多开源的产品，经多方面了解，wechaty是目前市场上最好的机器人
 --Wechaty是适用于微信个人的Bot SDK ，可以使用6行 js 创建一个机器人
@@ -218,10 +213,10 @@ exports.taskSendMessage = async function(bot){
 
 ## 效果图
 
-![1](/assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot1.jpg)
-![2](/assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot2.jpg)
-![3](/assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot3.jpg)
-![4](/assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot4.jpg)
+![1](/assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot1.webp)
+![2](/assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot2.webp)
+![3](/assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot3.webp)
+![4](/assets/2020/wechaty-team-robot/2020-05-20-wechaty-team-robot4.webp)
 
 ## 待实现需求
 
@@ -234,3 +229,6 @@ wechaty-team-robot 还是一个正在开发中的项目, 欢迎留言交流你�
 ## 感谢
 
 [Wechaty](https://wechaty.github.io/)开源项目及[JuziBot](https://www.juzibot.com)公司提供的接口和token，为开发者带来极大便利！
+
+> 作者: [suruozhong](https://github.com/suruozhong)
+> Code: [Github](https://github.com/suruozhong/wechaty-team-robot)

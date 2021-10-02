@@ -7,14 +7,12 @@ tags:
   - cryptocurrency
   - binance
   - devops
-image: /assets/2021/03-wechaty-cryptocurrency-websocket/wechaty-btc.jpg
+image: /assets/2021/03-wechaty-cryptocurrency-websocket/wechaty-btc.webp
 ---
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://wechaty.js.org)
 
-> 作者: [r-hou](https://github.com/r-hou)，学生，加密货币爱好者。
-
-[![Wechaty-Cryptocurrency-Notification](/assets/2021/03-wechaty-cryptocurrency-websocket/wechaty-btc.jpg)](https://github.com/r-hou/wechaty-cryptocurrency-websocket)
+[![Wechaty-Cryptocurrency-Notification](/assets/2021/03-wechaty-cryptocurrency-websocket/wechaty-btc.webp)](https://github.com/r-hou/wechaty-cryptocurrency-websocket)
 
 <!-- more -->
 从2020年3月份以来，加密货币市场随着疫情导致的全球大放水而飞速扩张，BTC的价格从低点\$3800涨到了最高\$60000， 十几倍的涨幅吸引了全球越来越多的个人和机构投资者参与到这个市场。 这个7x24小时的市场瞬息万变，上下几个点甚至几十个点的波动常常在十几分钟甚至几分钟之内就能完成，这么大的波动在给投资者带来丰厚回报的同时也伴随着巨大的风险。作为一名个人投资者，非常希望能够及时得到虚拟货币价格的变动情况而进行交易。
@@ -51,7 +49,7 @@ wechaty
 
 export WECHATY_LOG="verbose"
 export WECHATY_PUPPET="wechaty-puppet-padlocal"
-export WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal__TOKEN__"
+export WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal${TOKEN}"
 
 export WECHATY_PUPPET_SERVER_PORT="9001"
 export WECHATY_TOKEN=$(curl -s https://www.uuidgenerator.net/api/version4)
@@ -482,8 +480,10 @@ if __name__ == '__main__':
 
 ## 运行效果
 
-![效果](/assets/2021/03-wechaty-cryptocurrency-websocket/result.jpg)
+![效果](/assets/2021/03-wechaty-cryptocurrency-websocket/result.webp)
 
 ## 感谢
 
 在最后我们要感谢所有为我们提供工具和服务的团队和个人。特别感谢开源项目[Wechaty](https://github.com/wechaty/wechaty)团队和免费提供服务的padLocal团队。
+
+> 作者: [r-hou](https://github.com/r-hou)，学生，加密货币爱好者。

@@ -10,13 +10,8 @@ tags:
   - nuxt
   - feature
   - utility
-image: /assets/2020/wxbot-admin/screenshot.png
+image: /assets/2020/wxbot-admin/screenshot.webp
 ---
-
-> 作者: [Skyvow](https://github.com/skyvow) 前端开发工程师，WuxUI 作者
-> Code: [Github](https://github.com/wux-weapp/wxbot) 微信机器人，个人微信号小助手平台
-
-## 准备
 
 微信机器人开源库调研，[GitHub](https://github.com/) 找到以下 3 个开源作品：
 
@@ -138,7 +133,7 @@ Wechaty.instance()
   - 低智商对话
   - 成语接龙，查天气，查酒店，歇后语...
 
-![admin](/assets/2020/wxbot-admin/admin.png)
+![admin](/assets/2020/wxbot-admin/admin.webp)
 
 ### 技术构成
 
@@ -274,3 +269,6 @@ pm2 start pm2.config.js
 - 感谢 [beclass](https://github.com/beclass) 的开源项目 [`wxbot`](https://github.com/beclass/wxbot)，这是一套优秀的微信机器人平台。
 - 感谢 [Wechaty](https://wechaty.github.io/) 团队提供微信机器人 `SDK`，让开发者可以专注于业务代码。
 - 感谢 [句子互动](https://www.juzibot.com) 提供的 `pad` 协议版 `token`。
+
+> 作者: [Skyvow](https://github.com/skyvow) 前端开发工程师，WuxUI 作者
+> Code: [Github](https://github.com/wux-weapp/wxbot) 微信机器人，个人微信号小助手平台

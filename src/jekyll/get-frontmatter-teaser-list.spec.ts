@@ -1,12 +1,12 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test from 'tstest'
+import { test } from 'tstest'
 
 import path from 'path'
 
-import { JEKYLL_FOLDER } from './jekyll-folder'
+import { JEKYLL_FOLDER } from './folders.js'
 
-import { getFrontmatterTeaserList } from './get-frontmatter-teaser-list'
+import { getFrontmatterTeaserList } from './get-frontmatter-teaser-list.js'
 
 test('getFrontmatterTeaserList', async t => {
   const FILE = path.join(
@@ -14,7 +14,7 @@ test('getFrontmatterTeaserList', async t => {
     '2021-01-15-carpool-bot-with-wechaty-1.md',
   )
   const EXPECTED_TEASER_NUM = 1
-  const EXPECTED_TEASER_URL = '/assets/2021/01-carpool-bot-with-wechaty-1/4.jpeg'
+  const EXPECTED_TEASER_URL = '/assets/2021/01-carpool-bot-with-wechaty-1/4.webp'
 
   const imageList = getFrontmatterTeaserList(FILE)
 

@@ -10,7 +10,7 @@ tags:
   - introduction
   - project
   - proposal
-image: /assets/2021/05-gsod-2021-applicant-sbis04/wechaty_contributor_gsod_2021.png
+image: /assets/2021/05-gsod-2021-applicant-sbis04/wechaty_contributor_gsod_2021.webp
 ---
 
 I am [Souvik Biswas](https://www.souvikbiswas.com/), currently pursuing a Bachelor of Technology degree (2018 - 2022) in Computer Science & Engineering from the Indian Institute of Information Technology Kalyani. Also, a freelance technical writer of Codemagic and LogRocket Blog, and a passionate mobile app developer.

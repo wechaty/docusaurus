@@ -5,15 +5,13 @@ categories: event
 tags:
   - meetup
   - news
-image: /assets/2017/dcsan-shanghai-meetup.jpg
+image: /assets/2017/dcsan-shanghai-meetup.webp
 ---
-
-> Author: [@dcsan](https://github.com/dcsan), making Chatbots at [RIKAI Labs](http://RIK.ai)
 
 Most of the Wechaty core team are in Beijing, but there are a few of us here in Shanghai too.
 [@lijiarui](https://github.com/lijiarui) was in town for a few days and so we had a small get together!
 
-![shanghai wechaty peeps](/assets/2017/dcsan-shanghai-meetup.jpg)
+![shanghai wechaty peeps](/assets/2017/dcsan-shanghai-meetup.webp)
 
 We talked devops, chatbot games, NLP and more!
 
@@ -68,3 +66,5 @@ Wechaty is used in many ChatBot projects by hundreds of developers. If you want 
 ![qrcode](https://wechaty.github.io/wechaty/images/bot-qr-code.png)
 
 Scan now, because other Wechaty developers want to talk with you too! (secret code: wechaty)
+
+> Author: [@dcsan](https://github.com/dcsan), making Chatbots at [RIKAI Labs](http://RIK.ai)

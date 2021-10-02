@@ -13,7 +13,7 @@ tags:
   - propositions
   - proposal
   - team-proposal
-image: /assets/2021/05-gsod-2021-reconstruct-landing-page-team-proposal/gsod-reconstruct-lp.png
+image: /assets/2021/05-gsod-2021-reconstruct-landing-page-team-proposal/gsod-reconstruct-lp.webp
 ---
 
 ## Team Members
@@ -75,7 +75,7 @@ This project aims to improve/reconstruct the wechaty homepage completely with va
 
 This is an example design for Wechaty Landing Page (as per available insights and can be changed based on mentor and community suggestions)
 
-![Example Design](/assets/2021/05-gsod-2021-reconstruct-landing-page-team-proposal/example-lp.png)
+![Example Design](/assets/2021/05-gsod-2021-reconstruct-landing-page-team-proposal/example-lp.webp)
 
 **Complete Design can be viewed** [**here**](https://www.figma.com/file/4mW0KnuJoBOdf5sFZ15kha/Wechaty?node-id=1%3A2)
 

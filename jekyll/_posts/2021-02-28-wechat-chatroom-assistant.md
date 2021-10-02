@@ -6,11 +6,8 @@ tags:
   - python
   - padlocal
   - productivity
-image: /assets/2021/02-wechat-chatroom-assistant/header.jpg
+image: /assets/2021/02-wechat-chatroom-assistant/header.webp
 ---
-
-> 作者: [paulhybryant](https://github.com/paulhybryant/)
-> Code: [Github](https://github.com/paulhybryant/wechat-bot)
 
 [![Wechaty Badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![Everything about Wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
@@ -123,9 +120,12 @@ python3 chatroom_assistant.py
 
 ## 效果图
 
-![效果图](/assets/2021/02-wechat-chatroom-assistant/demo.jpg)
+![效果图](/assets/2021/02-wechat-chatroom-assistant/demo.webp)
 
 ## 致谢
 
 感谢[Wechaty](https://wechaty.js.org/)团队提供微信机器人SDK，让开发者可以专注于业务代码。
 感谢[句子互动](https://www.juzibot.com)提供的pad协议版token。
+
+> 作者: [paulhybryant](https://github.com/paulhybryant/)
+> Code: [Github](https://github.com/paulhybryant/wechat-bot)

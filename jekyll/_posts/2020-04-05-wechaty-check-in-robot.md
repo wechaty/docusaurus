@@ -6,14 +6,8 @@ tags:
   - checkin
   - social
   - game
-image: /assets/2020/wechaty-check-in-robot/notice.png
+image: /assets/2020/wechaty-check-in-robot/notice.webp
 ---
-
-> 作者: [yeojongki](https://github.com/yeojongki) 前端开发工程师
-
-[![wechaty-check-in-robot](/assets/2020/wechaty-check-in-robot/notice.png)](https://github.com/yeojongki/wechaty-check-in-robot)
-
-<!-- more -->
 
 ## 1. 开发背景
 
@@ -101,3 +95,5 @@ yarn build
 - 机器人判定打卡功能很粗糙，有待完善
 - 将业务功能抽离处理
 - 开发更多功能
+
+> 作者: [yeojongki](https://github.com/yeojongki) 前端开发工程师

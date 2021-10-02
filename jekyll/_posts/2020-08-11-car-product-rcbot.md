@@ -6,12 +6,8 @@ tags:
   - bot
   - car
   - automotive
-image: /assets/2020/rcbot/rcbot.jpg
+image: /assets/2020/rcbot/rcbot.webp
 ---
-
-> 作者: [jiucl](https://github.com/jiucl/)
-> 项目地址：[rcbot](https://github.com/jiucl/rcbot)
-<!--more-->
 
 ## 现状与目标：我是谁？我要做什么？
 
@@ -55,7 +51,7 @@ import {MessageType, ScanStatus} from 'wechaty-puppet'
 import {PuppetPadplus} from 'wechaty-puppet-padplus'
 import QrcodeTerminal from 'qrcode-terminal'
 // 导入JS库
-const fs = require("fs");
+import fs  from 'fs';
 let log4js = require('log4js');
 // 初始化日志库
 log4js.configure({
@@ -197,3 +193,6 @@ bot.on('scan', (qrcode, status) => {
 感谢 [Wechaty](https://wechaty.js.org/) 提供的微信机器人SDK
 
 感谢 [句子互动](https://www.juzibot.com/) 提供的ipad协议版token
+
+> 作者: [jiucl](https://github.com/jiucl/)
+> 项目地址：[rcbot](https://github.com/jiucl/rcbot)

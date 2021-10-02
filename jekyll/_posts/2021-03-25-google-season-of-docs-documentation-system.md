@@ -1,13 +1,17 @@
 ---
 title: Applying the documentation system to Wechaty docs
 author: huan
-categories: announcement
+categories: 
+  - announcement
+  - gsod
 tags:
   - gsod
+  - google
+  - gsod-2021
   - docs
   - news
   - documentation
-image: /assets/2021/03-google-season-of-docs-documentation-system/doc-sys-overview.png
+image: /assets/2021/03-google-season-of-docs-documentation-system/doc-sys-overview.webp
 ---
 
 This year, Wechaty organization is applying the [Google Season of Docs](https://developers.google.com/season-of-docs) program because we want to improve our documentation for the community.
@@ -36,7 +40,7 @@ In the above video, Daniele "_using real-life examples I'll draw out the key fun
 
 The most important concept is the following diagram:
 
-![The Documentation System](/assets/2021/03-google-season-of-docs-documentation-system/doc-sys-overview.png)
+![The Documentation System](/assets/2021/03-google-season-of-docs-documentation-system/doc-sys-overview.webp)
 
 > Credit: [Documentation System](https://documentation.divio.com/)
 
@@ -50,7 +54,7 @@ The goal of the Good Docs Project is to improve open source software documentati
 
 The following diagram illustrated the lifecycle of the documentation:
 
-![The Good Docs Project](/assets/2021/03-google-season-of-docs-documentation-system/doctypes.png)
+![The Good Docs Project](/assets/2021/03-google-season-of-docs-documentation-system/doctypes.webp)
 
 > Each document type serves a different purpose and has differing requirements
   &mdash; [The Good Docs Project](https://thegooddocsproject.dev)

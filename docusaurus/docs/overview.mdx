@@ -1,6 +1,6 @@
 ---
 slug: /
-title: Wechaty Documentation
+title: Overview of Wechaty Documentation
 sidebar_label: Overview
 ---
 
@@ -8,99 +8,57 @@ sidebar_label: Overview
 
 [![DIVIO documentation system](https://img.shields.io/badge/DIVIO-Documentation%20System-blue)](https://documentation.divio.com/)
 
-Everything you need to know about Wechaty.
+## Overview of Wechaty Documentation
 
-## First steps {#first-steps}
+This section is a high-level overview of how the Wechaty Documentation is structured. It will help you use the documentation more effectively by guiding you on where to look for specific information.
 
-Are you new to Wechaty or to programming? This is the place to start!
+The Wechaty Documentation covers everything you need to know about Wechaty. It comprises of five broad sections and these sections are:
 
-- **From scratch**: [Quick start](getting-started/quick-start.mdx) | [Installation](howto/install.md)
-- **Tutorial**: [Live coding for beginners](tutorials/video-tutorial.md) | [Use Docker with Wechaty](tutorials/docker.md)
-- **Advanced tutorials**: [Getting started with Wechaty the hard way](getting-started/hard-way.mdx)
+- [Introduction section](/overview.mdx)
+- [Tutorials section](getting-started/overview.mdx)
+- [How to Guides section](howto/overview.mdx)
+- [References section](references/overview.mdx)
+- [Explanations section](explanations/overview.mdx)
 
-## Getting help
+## [Introduction](/overview.mdx)
 
-Having trouble? We'd like to help!
+The Introduction section provides an in-depth introduction to Wechaty, Wechaty community, and the Wechaty ecosystem. It has been tailored for both beginners and experienced Chatbot makers. This section comprehensively covers the following:
 
-- Try the [FAQ](explainations/faq.md) - it's got answers to many common questions.
-- Looking for specific information? Try the [Google search](https://www.google.com/search?q=site%3Awechaty.js.org) or [Bing search](https://www.bing.com/search?q=site%3Awechaty.js.org)!
-- Not found anything? See [FAQ: Getting help](explainations/faq.md) for information on getting support and asking questions to the community.
-- Report bugs with Wechaty in our [GitHub issues](https://github.com/wechaty/wechaty/issues/)
+- [Introduction to Wechaty](#placeholder)
+- [What can you do with Wechaty](#placeholder)
+- [The users of Wechaty](#placeholder)
+- [Getting started with Wechaty](#placeholder)
+- [The main concepts in Wechaty](#placeholder)
+- [Contributing to Wechaty](#placeholder)
 
-## How the documentation is organized
+## [Tutorials](getting-started/overview.mdx)
 
-Wechaty has a lot of documentation. A high-level overview of how it's organized will help you know where to look for certain things:
+> Note: If you are an absolute beginner, we recommend you to start with the [Introduction](/overview.mdx) to familiarize yourself with Wechaty, Wechaty community, and the Wechaty ecosystem
 
-- [Tutorials](tutorials/overview.md) take you by the hand through a series of steps to create a Chatbot application. Start here if you are new to Wechaty or Chatbot application development. Also look at the "[First steps](#first-steps)".
-- [Explainations](explainations/overview.mdx) discuss key topics and concepts at a fairly high level and provide useful background information and explanation.
-- [Reference guides](references/overview.mdx) contain technical reference for APIs and other aspects of Wechaty's machinery. They describe how it works and how to use it but assume that you have a basic understanding of key concepts.
-- [How-to guides](howto/overview.mdx) are recipes. They guide you through the steps involved in addressing key problems and use-cases. They are more advanced than tutorials and assume some knowledge of how Wechaty works.
 
-## The Wechaty Layer
+This is a learning-oriented section which consists of two levels of tutorials:
+- Beginner tutorials
+- Advanced tutorials
 
-Wechaty provides an abstraction layer for structuring and manipulating the data of your Chatbot application. Learn more about it below:
+**[Beginner tutorials](getting-started/overview.mdx)**
 
-- **Wechaty** [Wechaty](api/wechaty.md)
-- **User Classes** [Message](api/message.md) | [Contact](api/contact.md) | [ContactSelf](api/contact-self.md) | [Room](api/room.md) | [Friendship](api/friendship.md) | [FileBox](https://github.com/huan/file-box) | [RoomInvitation](api/room-invitation.md)
+The beginner tutorials will take you by the hand and teach you how to build a Chatbot application from scratch through a series of steps. Familiarity with [Wechaty](/) or Chatbot application development in general is not a prerequisite for you to complete the beginner tutorials.
 
-## The Puppet Layer
+**[Advanced tutorials](#placeholder)**
 
-Wechaty has the concept of "[Puppet](specs/puppet.md)" to encapsulate the logic responsible for processing a IM's request and for returning the responses. Find all you need to know about puppets via the links below:
+The advanced tutorials require you to have at least intermediate to advanced knowledge of Wechaty and chatbot development. If you are an experienced Wechaty developer, you can go ahead and explore the other sections of the documentation like [How to Guides](howto/overview.mdx), [Reference Guides](references/overview.mdx), and the [Explanation section](explanations/overview.mdx) as well to gain more insights about Wechaty.
 
-- **The basics**:[Puppet specification](specs/puppet.md) | [Providers](puppet-providers/overview.mdx)
-- **Providers**: [WeChat](puppet-providers/wechat.md) | [Whatsapp](puppet-providers/whatsapp.md) | [Lark](puppet-providers/lark.md) | [WeChat Official Account](puppet-providers/official-account.md) | etc
-- **Advanced**: [Do-it-yourself: Create your Wechaty Puppet Provider](puppet-providers/diy.md)
 
-## The Service Layer
+## [How to Guides](howto/overview.mdx)
 
-The service layer provides a multi-language frinedly way for re-using the source code across the programming languages. Learn how this service can be used by users and how it can be extended by programmers:
+This section comprises of guides that will take you through series of steps involved in addressing key problems and use-cases in Wechaty. It requires intermediate to advanced knowledge of how Wechaty works. If you are an absolute beginner, it is recommended you start from the [Introduction](/overview.mdx) and [Tutorials](getting-started/overview.mdx) sections before going to the [How to Guides](howto/overview.mdx).
 
-- **The basics**: [Service specification](specs/service.md) | [Services](puppet-services/overview.mdx)
-- **Services**: [WeWork](puppet-services/wxwork.md) | [PadLocal](puppet-services/padlocal.md) | [Paimon](puppet-services/paimon.md) | [Donut](puppet-services/donut.md)
-- **Advanced**: [Do-it-yourself: Create your Wechaty Puppet Service](puppet-services/diy.md)
+## [Reference Guides](references/overview.mdx)
 
-## Multi programming language SDKs
+> Prerequisite: You should have basic understanding of Wechaty and familiarity with the key concepts in Wechaty and Chatbot application development in general.
 
-Wechaty provides SDK in lots of programming languages, developed from the community, to the community, and for the community!
+The Reference Guide contains technical references for Wechaty APIs and other aspects of Wechaty's machinery. It describes the various functionalities provided by Wechaty. You can always refer to this section to learn more about classes, functions, modules, and other aspects of Wechaty's machinery you come across.
 
-- **The overview**: [Polyglot Wechaty](polyglot/overview.mdx)
-- **Programming Languages**: [OpenAPI](polyglot/openapi/) | [TypeScript](polyglot/typescript/) | [Python](polyglot/python/) | [Go](polyglot/go/) | [Java](polyglot/java/) | [Scala](polyglot/scala/) | [PHP](polyglot/php/) ｜ [.NET](polyglot/dotnet/) ｜ [Rust](polyglot/rust/)
+## [Explanations](explanations/overview.mdx)
 
-## The development process
-
-Learn about the various components and tools to help you in the development and testing of Wechaty chatbot applications:
-
-<!--
-- **Settings**: [Overview]() | [Full list of settings]()
-- **Chatbot applications**: [Overview]()
-- **Exceptions**: [Overview]()
--->
-
-- **Testing**: [Mock](puppet-providers/mock.md) | [Writting and running tests](https://github.com/wechaty/wechaty-vorpal-contrib/blob/master/src/contrib/math_master/math_master.spec.ts)
-- **Deloyment**: [Docker](tutorials/docker.md) | [Heroku](https://github.com/wechaty/heroku-wechaty-getting-started)
-
-## Common Chatbot application tools
-
-- [FileBox](https://github.com/huan/file-box): helper module for easy processing files between the local filesystem and the network.
-- [Brolog](https://github.com/huan/brolog): helper module for easy logging between the Node.js and the Browser environments. (Angular Dependency Injection supported)
-- [FlashStore](https://github.com/huan/flash-store): helper module for key-value persistant storage in both Node.js local filesystem and Browser(tbw). Follows the [ES6 Map API](https://github.com/huan/async-map-like#readme).
-- [MemoryCard](https://github.com/huan/memory-card): help module for key-value persistant storage in cloud. (should be a cloud native module in the future). Follows the [ES6 Map API](https://github.com/huan/async-map-like#readme).
-
-## Other core functionalities
-
-Learn about some other core functionalities of the Wechaty:
-
-- [TOKEN specification](specs/token.md)
-- [Puppet specification](specs/puppet.md)
-
-## The Wechaty open-source project
-
-Learn about the development process for the Wechaty project itself and about how you can contribute:
-
-- **Commmunity**: [How to get involved](contributing/overview.md) | [Team organization](https://github.com/wechaty/PMC) | [The Wechaty source code repository](https://github.com/wechaty/wechaty) | [Mailing lists](https://groups.google.com/g/wechaty) | [Gitter.im channel](https://gitter.im/wechaty/wechaty) | [Wechaty contributor program](contributing/contributor-program.md)
-- **Documentation**: [About this documentation](contributing/documentation.md)
-- Wechaty over time: [Release notes](https://github.com/wechaty/wechaty/releases)
-
-## Contact Us
-
-You can [join our Gitter](https://gitter.im/wechaty/wechaty) network if you aren’t already a member.
+The Explanation section discusses key topics and concepts at a fairly high level and provides useful explanations to expand your knowledge of Wechaty. It requires atleast basic to intermediate knowledge of Wechaty or Chatbot application development in general. If you are an absolute beginner, we recommend you start from the [Introduction](/overview.mdx) and [Tutorials](getting-started/overview.mdx) sections of the documentation.

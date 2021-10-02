@@ -2,17 +2,13 @@
 title: "暑期2020 [Go-wechaty Github Action optimization] 计划书"
 author: nebell
 categories: project
-image: /assets/2020/go-wechaty-github-action-optimization-poc/header.jpg
+image: /assets/2020/go-wechaty-github-action-optimization-poc/header.webp
 tags:
   - go
   - summer-of-wechaty
   - summer-2020
   - devops
 ---
-
-> 作者: [TangGuangbin](https://github.com/Nebell/)
-
-## 暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
@@ -47,3 +43,5 @@ tags:
     - 备注：需要提供 Docker Image 的命名格式
 - 项目链接：[wechaty/go-wechaty-getting-started](https://github.com/wechaty/go-wechaty-getting-started)
 - 联系方式：tang.packet@outlook.com
+
+> 作者: [TangGuangbin](https://github.com/Nebell/)

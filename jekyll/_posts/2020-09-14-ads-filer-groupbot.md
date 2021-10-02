@@ -4,11 +4,8 @@ author: garyboygo
 categories: npm
 tags:
   - ads-monitor
-image: /assets/2020/ads-filter-groupbot/ads-filter-groupbot.jpeg
+image: /assets/2020/ads-filter-groupbot/ads-filter-groupbot.webp
 ---
-
-> 作者: [garyboygo](https://github.com/garyboygo/)
-> Code: [Github](https://github.com/garyboygo/WeChatGroupBot)
 
 [![badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![badge](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
@@ -41,4 +38,7 @@ image: /assets/2020/ads-filter-groupbot/ads-filter-groupbot.jpeg
 
 ## 最终效果
 
-![avatar](/assets/2020/ads-filter-groupbot/ads-filter-groupbot.jpeg)
+![avatar](/assets/2020/ads-filter-groupbot/ads-filter-groupbot.webp)
+
+> 作者: [garyboygo](https://github.com/garyboygo/)
+> Code: [Github](https://github.com/garyboygo/WeChatGroupBot)

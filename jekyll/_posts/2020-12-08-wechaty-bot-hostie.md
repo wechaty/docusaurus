@@ -6,13 +6,8 @@ tags:
   - nodejs
   - donut
   - social
-image: /assets/2020/wechaty-bot-hostie/img-func.jpeg
+image: /assets/2020/wechaty-bot-hostie/img-func.webp
 ---
-
-> 作者: [Penley](https://github.com/mumup) 前端开发工程师
-> Code: [Github](https://github.com/mumup/cat-room) 微信机器人，群聊小助手
-
-## wechaty
 
 GitHub上搜了一圈，看到了挺多微信bot的方案，后面决定使用wechaty，因为感觉设计得很优雅，6行代码就可以轻松构建一个wxbot。
 
@@ -103,3 +98,6 @@ npm install
 ```sh
 npm run main
 ```
+
+> 作者: [Penley](https://github.com/mumup) 前端开发工程师
+> Code: [Github](https://github.com/mumup/cat-room) 微信机器人，群聊小助手

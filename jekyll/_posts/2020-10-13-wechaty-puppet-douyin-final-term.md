@@ -2,15 +2,13 @@
 title: "基于RPA封装的Wechaty接口下的抖音聊天机器人结项报告"
 author: wangjunwei
 categories: project
-image: /assets/2020/wechaty-puppet-douyin/wechaty-puppet-douyin-logo.jpg
+image: /assets/2020/wechaty-puppet-douyin/wechaty-puppet-douyin-logo.webp
 tags:
   - douyin
   - summer-of-wechaty
   - summer-2020
   - ecosystem
 ---
-
-## 暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
 

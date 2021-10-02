@@ -7,10 +7,8 @@ tags:
   - project
   - stock
   - finance
-image: /assets/2020/wechaty-stock-bot/header.jpg
+image: /assets/2020/wechaty-stock-bot/header.webp
 ---
-> Author: [wengcan](https://github.com/wengcan)
-> Code: [stock-bot](https://github.com/wengcan/stock-bot)
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
@@ -74,10 +72,13 @@ npm start
 
 ### 效果图
 
-- ![截图](/assets/2020/wechaty-stock-bot/pic01.png)
-- ![截图](/assets/2020/wechaty-stock-bot/pic02.png)
+- ![截图](/assets/2020/wechaty-stock-bot/pic01.webp)
+- ![截图](/assets/2020/wechaty-stock-bot/pic02.webp)
 
 ### 致谢
 
 🙏感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
 🙏感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token
+
+> Author: [wengcan](https://github.com/wengcan)
+> Code: [stock-bot](https://github.com/wengcan/stock-bot)

@@ -10,13 +10,8 @@ tags:
   - sqlite
   - knex
   - featured
-image: /assets/2020/im-game-robot/qrcat.jpg 
+image: /assets/2020/im-game-robot/qrcat.webp 
 ---
-
-> 作者: [osindex](https://github.com/osindex)
-> Code: [Github](https://github.com/osindex/im-robot)
-
-## 前言
 
 几年前大家开始通过微信拜年，基于vbot折腾过机器人，想要给所有alias不为空的好友发送定制问候，在发送不到10人消息之后，自己微信的WEB端口被封。无奈尝下没有技术和被墙的泪水。
 
@@ -172,7 +167,10 @@ npm start
 
 ### 谁是卧底小游戏
 
-![Image text](/assets/2020/im-game-robot/a.png)
-![Image text](/assets/2020/im-game-robot/b.png)
-![Image text](/assets/2020/im-game-robot/c.png)
-![Image text](/assets/2020/im-game-robot/qrbread.jpg)
+![Image text](/assets/2020/im-game-robot/a.webp)
+![Image text](/assets/2020/im-game-robot/b.webp)
+![Image text](/assets/2020/im-game-robot/c.webp)
+![Image text](/assets/2020/im-game-robot/qrbread.webp)
+
+> 作者: [osindex](https://github.com/osindex)
+> Code: [Github](https://github.com/osindex/im-robot)

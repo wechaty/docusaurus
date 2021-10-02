@@ -2,6 +2,16 @@
 title: 'Managing rooms'
 ---
 
+Managing room is one of the important features in Wechaty. The word "room" here refers to Wechat rooms (also called groups).
+You can instruct the bot to create a new room, change the topic (or name) of the room, add a contact to a specific room, remove a contact from a room, and mention(@) someone in the room.
+
+:::tip
+
+A Room can be identified by either groupId or room topic (room name)
+
+:::
+
+---
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
@@ -50,6 +60,8 @@ const contactList=[];
 <li> The onMessage function should be defined as follows:</li>
 </ol>
 
+`add` accepts 'Contact' as an argument. You can get the Contact by using `msg.talker()`.
+
 <Tabs
   groupId="programming-languages"
   defaultValue="ts"
@@ -69,7 +81,47 @@ const contactList=[];
 <TabItem value="ts">
 
 ```ts
-// TODO: Pull Request is welcome!
+import {
+  Contact,
+  Wechaty,
+  log,
+  Room,
+} from 'wechaty'
+
+//helper function
+async function putInRoom(person: Contact, room: Room) {
+  //Add a log
+  log.info("Bot", 'putInRoom("%s", "%s")', contact.name(), await room.topic());
+
+  try {
+    //Try put the person into the room
+    await room.add(person);
+  } catch (e) {
+    //any error will be here
+    log.error("Bot", "putInRoom() exception: " + e.stack);
+  }
+}
+
+//in the main code
+//If the secrete code is ding
+if (msg.text() === 'ding') {
+  //get the Person/Contact
+  const from = msg.talker();
+
+  //find the targetRoom from the bot's room list
+  //Option1: by group id
+  //set the targetRoomId
+  const tagetRoomId = '12345678910@chatroom'
+  const targetRoom = await bot.Room.find({id: tagetRoomId})
+  //Option2: by group name
+  // const tagetRoomTopic =  'testGroup'
+  // const targetRoom = await bot.Room.find({topic:tagetRoomTopic})
+  if (targetRoom instanceof Room) {
+    await putInRoom(from, targetRoom);
+  } else {
+    log.info('Cannot find room, unable to put the person into the room')
+  }
+}
 ```
 
 </TabItem>
@@ -167,6 +219,7 @@ class MyBot(Wechaty):
 
 </TabItem>
 </Tabs>
+
 
 When a new message is received, the onMessage function is called. The sender will be added to a contactList array. A room called ding will be created once ten senders have been registered.
 

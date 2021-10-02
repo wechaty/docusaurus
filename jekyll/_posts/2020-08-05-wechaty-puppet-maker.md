@@ -9,14 +9,14 @@ tags:
   - tutorial
   - puppet-provider
   - official-account
-image: /assets/2020/wechaty-puppet-maker/puppet.png
+image: /assets/2020/wechaty-puppet-maker/puppet.webp
 ---
 
 Wechaty 通过精妙的代码设计，实现了基于一套应用层代码，自由切换不同的接入方式，帮助开发者以最大程度的易用性，快速实现多个平台的聊天机器人接入。  
 
 ## Wechaty Puppet
 
-![Wechaty 代码结构](/assets/2020/wechaty-puppet-maker/architecture.png)
+![Wechaty 代码结构](/assets/2020/wechaty-puppet-maker/architecture.webp)
 
 Wechaty 的每一种接入方式，都以 Puppet 的形式进行封装，目前已经上线的 Puppet 包括Puppeteer、Padplus、Hostie等多种方式的微信个人号接入，微信公众平台的接入等。  
 
@@ -26,75 +26,31 @@ Wechaty 的每一种接入方式，都以 Puppet 的形式进行封装，目前�
 
 为了帮助社区开发者更快了解 Puppet 的更多细节、实现 Puppet 开发的从零到一，Wechaty 社区邀请到几位最核心的 Puppet 开发者介绍Puppet是什么、如何完成 Puppet 开发的第一步、如何实现一个商用级的 Puppet。
 
-{% include iframe.html src="https://www.youtube.com/embed/fbTedVcEEEI" %}
+{% include iframe.html src="https://www.youtube.com/watch?v=fbTedVcEEEI" %}
 
-![Wechaty Puppet活动](/assets/2020/wechaty-puppet-maker/puppet.png)
+![Wechaty Puppet活动](/assets/2020/wechaty-puppet-maker/puppet.webp)
 
 ### Puppet的商业化前景展望
 
 分享人：句子互动CMO 尹伯昊
 
-<div class="zoom-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <iframe
-    src='{{ '/assets/js/viewer-js/#/assets/2020/wechaty-puppet-maker/bohao.pdf' | relative_url }}'
-    width='560'
-    height='315'
-    allowfullscreen
-    webkitallowfullscreen
-    frameborder="0"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    "
-  ></iframe>
-</div>
+{% include iframe.html src="/assets/2020/wechaty-puppet-maker/bohao.pdf" %}
 
-![尹伯昊-1](/assets/2020/wechaty-puppet-maker/bohao1.jpg)
+![尹伯昊-1](/assets/2020/wechaty-puppet-maker/bohao1.webp)
 
-![尹伯昊-2](/assets/2020/wechaty-puppet-maker/bohao2.jpg)
+![尹伯昊-2](/assets/2020/wechaty-puppet-maker/bohao2.webp)
 
 ### Wechaty 项目架构
 
 分享人：Wechaty Puppet Padplus&Donut Creator 高原
 
-<div class="zoom-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <iframe
-    src='{{ '/assets/js/viewer-js/#/assets/2020/wechaty-puppet-maker/yuan.pdf' | relative_url }}'
-    width='560'
-    height='315'
-    allowfullscreen
-    webkitallowfullscreen
-    frameborder="0"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    "
-  ></iframe>
-</div>
+{% include iframe.html src="/assets/2020/wechaty-puppet-maker/yuan.pdf" %}
 
-![高原-1](/assets/2020/wechaty-puppet-maker/yuan1.jpg)
+![高原-1](/assets/2020/wechaty-puppet-maker/yuan1.webp)
 
-![高原-2](/assets/2020/wechaty-puppet-maker/yuan2.jpg)
+![高原-2](/assets/2020/wechaty-puppet-maker/yuan2.webp)
 
-![高原-3](/assets/2020/wechaty-puppet-maker/yuan3.jpg)
+![高原-3](/assets/2020/wechaty-puppet-maker/yuan3.webp)
 
 ### Wechaty Puppet Ding-Dong
 
@@ -116,45 +72,23 @@ Wechaty 的每一种接入方式，都以 Puppet 的形式进行封装，目前�
   "></iframe>
 </div>
 
-![李卓桓-1](/assets/2020/wechaty-puppet-maker/huan1.png)
+![李卓桓-1](/assets/2020/wechaty-puppet-maker/huan1.webp)
 
-![李卓桓-2](/assets/2020/wechaty-puppet-maker/huan2.png)
+![李卓桓-2](/assets/2020/wechaty-puppet-maker/huan2.webp)
 
-![李卓桓-3](/assets/2020/wechaty-puppet-maker/huan3.png)
+![李卓桓-3](/assets/2020/wechaty-puppet-maker/huan3.webp)
 
-![李卓桓-4](/assets/2020/wechaty-puppet-maker/huan4.png)
+![李卓桓-4](/assets/2020/wechaty-puppet-maker/huan4.webp)
 
 ### Puppet Padplus开发要点分析
 
 分享人：句子互动高级工程师 苏畅
 
-<div class="zoom-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-  <iframe
-    src='{{ '/assets/js/viewer-js/#/assets/2020/wechaty-puppet-maker/suchang.pdf' | relative_url }}'
-    width='560'
-    height='315'
-    allowfullscreen
-    webkitallowfullscreen
-    frameborder="0"
-    style="
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    "
-  ></iframe>
-</div>
+{% include iframe.html src="/assets/2020/wechaty-puppet-maker/suchang.pdf" %}
 
-![苏畅-1](/assets/2020/wechaty-puppet-maker/suchang1.jpg)
+![苏畅-1](/assets/2020/wechaty-puppet-maker/suchang1.webp)
 
-![苏畅-2](/assets/2020/wechaty-puppet-maker/suchang2.jpg)
+![苏畅-2](/assets/2020/wechaty-puppet-maker/suchang2.webp)
 
 ## 暑期2020 与 Puppet开发
 

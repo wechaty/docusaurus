@@ -5,11 +5,8 @@ categories: project
 tags:
   - padplus
   - automotive
-image: /assets/2020/nio-bot/bio-photo.jpg
+image: /assets/2020/nio-bot/bio-photo.webp
 ---
-
-> 作者: [Leons828](https://github.com/Leons828) web developer
-> Code: [Github](https://github.com/Leons828/nio-bot)
 
 ## 需求
 
@@ -109,4 +106,7 @@ function generateAdvice () {
 
 ## 实际效果
 
-![Welcome](/assets/2020/nio-bot/welcome.jpeg)
+![Welcome](/assets/2020/nio-bot/welcome.webp)
+
+> 作者: [Leons828](https://github.com/Leons828) web developer
+> Code: [Github](https://github.com/Leons828/nio-bot)

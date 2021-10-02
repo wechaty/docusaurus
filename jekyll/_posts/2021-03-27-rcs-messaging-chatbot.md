@@ -5,7 +5,7 @@ categories: article
 tags:
   - news
   - rcs
-image: /assets/2021/03-rcs-messaging-chatbot/rcs-bot.jpg
+image: /assets/2021/03-rcs-messaging-chatbot/rcs-bot.webp
 ---
 
 > Rich Communication Services (RCS) is a communication protocol between mobile-telephone carriers and between phone and carrier, aiming at replacing SMS messages with a text-message system that is richer, provides phonebook polling (for service discovery), and can transmit in-call multimedia. It is part of the broader IP Multimedia Subsystem.
@@ -14,7 +14,7 @@ image: /assets/2021/03-rcs-messaging-chatbot/rcs-bot.jpg
 
 In China, the telecom operators call the RCS a **5G Chatbot**. (See: [Chinese operators make major RCS commitment: Whitepaper, April 9, 2020](https://www.gsma.com/futurenetworks/latest-news/china-operators-make-major-rcs-commitment-whitepaper/))
 
-![RCS business messaging](/assets/2021/03-rcs-messaging-chatbot/rcs-screen.png)
+![RCS business messaging](/assets/2021/03-rcs-messaging-chatbot/rcs-screen.webp)
 
 > Source: [What is RCS Messaging? Rich Communication Services and Chatbots](https://nativemsg.com/blog/what-is-rcs-messaging-rich-communication-services-and-chatbots/)
 

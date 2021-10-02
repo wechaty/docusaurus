@@ -2,7 +2,7 @@
 title: "暑期2020[基于 RPA 封装 Wechaty 接口下的快手聊天机器人]计划书"
 author: bikaiqiao
 categories: project
-image: /assets/2020/wechaty-puppet-kuaishou/wechaty-puppet-kuaishou-logo.jpeg
+image: /assets/2020/wechaty-puppet-kuaishou/wechaty-puppet-kuaishou-logo.webp
 tags:
   - kuaishou
   - puppet
@@ -10,10 +10,6 @@ tags:
   - summer-2020
   - ecosystem
 ---
-
-> Author:[@bikaiqiao](https://github.com/bikaiqiao)
-
-## 暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
@@ -46,3 +42,5 @@ tags:
     - 花更多的时间寻找合适的RPA操作方式，包括网络上一些已经有一些雏形的。尽可能地移植到wechaty
 - 项目链接：[https://github.com/bikaiqiao/kuaishou-auto](https://github.com/bikaiqiao/kuaishou-auto) / [https://github.com/bikaiqiao/kuaishouPuppet.git](https://github.com/bikaiqiao/kuaishouPuppet.git)
 - 联系方式：+86 13943110476 | 358461417@qq.com
+
+> Author:[@bikaiqiao](https://github.com/bikaiqiao)

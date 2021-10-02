@@ -1,7 +1,7 @@
 ---
 name: Binsee
 site: https://github.com/binsee
-avatar: /assets/contributors/binsee/avatar.png
+avatar: /assets/contributors/binsee/avatar.webp
 bio: 野路子的修炼者
 email: 
 twitter: 

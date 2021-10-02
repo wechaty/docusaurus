@@ -6,14 +6,8 @@ tags:
   - microsoft
   - chatbot
   - news
-image: /assets/2020/ms-lijiarui-interview/teaser.png
+image: /assets/2020/ms-lijiarui-interview/teaser.webp
 ---
-
-> 作者: [李佳芮](https://github.com/lijiarui)，Microsoft AI MVP, Co-founder of Juzibot, Author of [Chatbot Zero to One](https://item.jd.com/12630213.html)
-
-<!-- more -->
-
-![intro](/assets/2020/ms-lijiarui-interview/intro.jpg)
 
 ## 看点
 
@@ -22,6 +16,8 @@ image: /assets/2020/ms-lijiarui-interview/teaser.png
 3. 全球人工智能技术的实践落地情况
 
 ## 内容
+
+![intro](/assets/2020/ms-lijiarui-interview/intro.webp)
 
 ### 1. 自我介绍
 
@@ -91,20 +87,7 @@ Chatbot 的智能程度取决于它能够给理解的意图和实体的数量和
 
 本次直播内容的部分视频内容，感谢微软MVP的负责人，来自微软的@康康全称截屏~
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VnI2jl71-Y8" frameborder="0" allowfullscreen="" style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=VnI2jl71-Y8" %}
 
 看 YouTube 有障碍的同学，可以移步到 [腾讯视频](https://v.qq.com/x/page/v0952wieqwl.html)
 
@@ -112,8 +95,8 @@ Chatbot 的智能程度取决于它能够给理解的意图和实体的数量和
 
 下面是在后台和微软中国 CTO 韦青老师的合影，为我的新书 [《Chatbot从0到1：对话式交互设计实践指南》](https://item.jd.com/12630213.html) 打call~
 
-![weiqing](/assets/2020/ms-lijiarui-interview/weiqing.jpg)
+![weiqing](/assets/2020/ms-lijiarui-interview/weiqing.webp)
 
 现场很多小伙伴发了额 wechaty 弹幕，开心~~
 
-![wechaty](/assets/2020/ms-lijiarui-interview/wechaty.jpg)
+![wechaty](/assets/2020/ms-lijiarui-interview/wechaty.webp)

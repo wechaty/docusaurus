@@ -7,12 +7,9 @@ tags:
   - featured
   - social
   - entertainment
-image: /assets/2019/node-wechaty-1.jpeg
+image: /assets/2019/node-wechaty-1.webp
 ---
 
-> 作者: [Leo_chen](https://github.com/leochen-g/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [用Node+wechaty写一个爬虫脚本每天定时给女(男)朋友发微信暖心话](https://juejin.im/post/5c77c6bef265da2de6611cff)
-
-![koa2](/assets/2019/node-wechaty-1.jpeg)
 微信每日说，每日自动发送微信消息给你心爱的人。
 
 ## 项目介绍
@@ -55,15 +52,15 @@ github:[https://github.com/gengchen528/wechatBot](https://github.com/gengchen528
 
 由于是微信定时发送消息，较邮件来说，微信无法把图片和文字放在同一消息框中，所以美观度来说可能没有邮件好，不过文字进行排版后还是可以的，由于时间仓促，所以文字比较少，后续会继续增加内容；
 
-![koa2](/assets/2019/node-wechaty-2.jpeg)
+![koa2](/assets/2019/node-wechaty-2.webp)
 
-![koa2](/assets/2019/node-wechaty-1.jpeg)
+![koa2](/assets/2019/node-wechaty-1.webp)
 
 ## 代码说明
 
 ### 目录结构
 
-![koa2](/assets/2019/node-wechaty-3.jpeg)
+![koa2](/assets/2019/node-wechaty-3.webp)
 
 * config: 存放公共变量和superagent的配置
 * schedule: 任务调度的配置
@@ -81,12 +78,12 @@ index.js
      * WechatBot
      *  - https://github.com/gengchen528/wechatBot
      */
-    const {Wechaty,Friendship} = require('wechaty')
-    const schedule = require('./schedule/index')
-    const config = require('./config/index')
-    const untils = require('./untils/index')
-    const superagent = require('./superagent/index')
-    const {FileBox} = require('file-box') //文件读取模块
+    import {Wechaty,Friendship}  from 'wechaty'
+    import schedule  from './schedule/index'
+    import config  from './config/index'
+    import untils  from './untils/index'
+    import superagent  from './superagent/index'
+    import {FileBox}  from 'file-box' //文件读取模块
     //  二维码生成
     function onScan (qrcode, status) {
       require('qrcode-terminal').generate(qrcode)  // 在console端显示二维码
@@ -210,9 +207,9 @@ index.js
 superagent/index.js
 
 ```js
-    const superagent = require('../config/superagent')
-    const config = require('../config/index')
-    const cheerio = require('cheerio')
+    import superagent  from '../config/superagent'
+    import config  from '../config/index'
+    import cheerio  from 'cheerio'
 
     async function getOne() { // 获取每日一句
       let res = await superagent.req(config.ONE,'GET')
@@ -338,7 +335,7 @@ npm run start
 
 Centos7下部署出现以下问题
 
-![image](/assets/2019/koa-wechaty-7.jpeg)
+![image](/assets/2019/koa-wechaty-7.webp)
 
 问题原因:[https://segmentfault.com/a/1190000011382062](https://segmentfault.com/a/1190000011382062)
 
@@ -359,7 +356,7 @@ yum install ipa-gothic-fonts xorg-x11-fonts-100dpi xorg-x11-fonts-75dpi xorg-x11
 链接：<https://pan.baidu.com/s/1YF09nELpO-4KZh3D2nAOhA>  
 提取码：0mrz  
 把下载的文件放到如下图路径，并解压到当前文件夹中即可  
-![image](/assets/2019/koa-wechaty-8.jpeg)
+![image](/assets/2019/koa-wechaty-8.webp)
 
 1. 支持 红包、转账、朋友圈… 吗
 
@@ -387,7 +384,7 @@ yum install ipa-gothic-fonts xorg-x11-fonts-100dpi xorg-x11-fonts-75dpi xorg-x11
 
 **注意** 加好友请在验证中填写 `微信每日说`  才可以自动加好友
 
-![image](/assets/2019/koa-wechaty-9.jpeg)
+![image](/assets/2019/koa-wechaty-9.webp)
 
 赶快亲自试一试吧，相信你会挖掘出更多好玩的功能
 
@@ -395,4 +392,6 @@ github:[https://github.com/gengchen528/wechatBot](https://github.com/gengchen528
 
 另外我的公众号已经接入微软小冰，关注后发语音会有小姐姐的声音陪你聊天，也可以和她文字聊天，有兴趣可以试试看，单身的欢迎来撩
 
-![image](/assets/2019/koa-wechaty-10.jpeg)
+![image](/assets/2019/koa-wechaty-10.webp)
+
+> 作者: [Leo_chen](https://github.com/leochen-g/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [用Node+wechaty写一个爬虫脚本每天定时给女(男)朋友发微信暖心话](https://juejin.im/post/5c77c6bef265da2de6611cff)
