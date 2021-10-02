@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - real-estate
-image: /assets/2020/group-wechat-bot/2020-06-04-group-wechat-bot.png
+image: /assets/2020/group-wechat-bot/2020-06-04-group-wechat-bot.webp
 ---
 
 我们设计了一个租房平台的微信小程序，为了方便推广，针对每个地区开设了一个或多个微信群，每天会在群里发文字和小程序的二维码来推广小程序和阐述群规定。因为所开的群太多，如果是人工发送这些东西，会很浪费时间。因为发的东西都是固定的，所以考虑使用微信机器人。
@@ -82,7 +82,7 @@ node bot.js
 
 ## 测试效果
 
-![avatar](/assets/2020/group-wechat-bot/2020-06-04-group-wechat-bot.png)
+![avatar](/assets/2020/group-wechat-bot/2020-06-04-group-wechat-bot.webp)
 
 > 作者: [Sam](https://github.com/PXingwei/)
 > Code: [Github](https://github.com/PXingwei/GroupWechatBot)

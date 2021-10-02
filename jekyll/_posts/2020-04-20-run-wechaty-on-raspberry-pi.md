@@ -5,7 +5,7 @@ categories: tutorial
 tags:
   - iot
   - raspberrypi
-image: /assets/2020/runwechatyonpi/head.png
+image: /assets/2020/runwechatyonpi/head.webp
 ---
 
 ## 一、介绍
@@ -25,7 +25,7 @@ Wechaty.instance() // Global Instance
 
 2、树莓派是一个具备硬件接口的廉价卡片电脑
 
-![RICEPO](/assets/2020/runwechatyonpi/pi.jpg)
+![RICEPO](/assets/2020/runwechatyonpi/pi.webp)
 
 树莓派能运行完整的linux系统，可通过读写GPIO文件的方式实现与硬件交互。树莓派降低了开发硬件的难度，可使用开发软件的方式开发硬件。
 
@@ -91,11 +91,11 @@ wechaty-puppet-service用的是windows微信协议，该协议需要使用token�
 WECHATY_PUPPET=wechaty-puppet-service WECHATY_PUPPET_SERVICE_TOKEN=token node bot.js
 ```
 
-![RICEPO](/assets/2020/runwechatyonpi/run.jpg)
+![RICEPO](/assets/2020/runwechatyonpi/run.webp)
 
 7、终端上会出现一个url，复制粘贴到浏览器上，会出现一个二维码。
 
-![RICEPO](/assets/2020/runwechatyonpi/qrcode.jpg)
+![RICEPO](/assets/2020/runwechatyonpi/qrcode.webp)
 
 使用微信扫码登陆，微信机器人就上线了。
 

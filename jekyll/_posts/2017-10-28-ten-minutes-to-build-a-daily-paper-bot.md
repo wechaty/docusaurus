@@ -5,7 +5,7 @@ categories: project
 tags:
   - code
   - media
-image: /assets/2017/leinue-bot.jpg
+image: /assets/2017/leinue-bot.webp
 ---
 
 I built a bot to deliver the daily paper about machine learning and fintech to the users.Considering the development of lowest cost, I chose wechaty. It's so awesome that it only took me **10 mintues** to make the bot work.
@@ -38,7 +38,7 @@ I also added some functions such as automatic reply to the bot, which made our u
 
 Finally, I like wechaty, thanks to all the contributors of wechaty!
 
-  [1]: /assets/2017/leinue-bot.jpg
-  [2]: /assets/2017/leinue-screenshot.png
+  [1]: /assets/2017/leinue-bot.webp
+  [2]: /assets/2017/leinue-screenshot.webp
   [3]: https://wechaty.github.io/guide/2017/01/01/getting-started-wechaty.html
   [4]: https://github.com/wechaty/wechaty/wiki/Docker
