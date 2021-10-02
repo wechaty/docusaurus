@@ -5,6 +5,8 @@ categories: gsod
 tags:
   - gsod
   - 2021
+  - gsod-2021
+  - google
   - news
   - featured
   - marketing
@@ -21,7 +23,7 @@ image: /assets/2021/05-landing-page-value-proposition/value.webp
   than similar offerings from your competition.
   &mdash; [How to Crack the Google Season of Docs, Edidiong Asikpo, 2020](https://www.freecodecamp.org/news/cracking-google-season-of-docs-2020/)
 
-![Value creating process](/assets/2021/05-landing-page-value-proposition/value-creation-process.png)
+![Value creating process](/assets/2021/05-landing-page-value-proposition/value-creation-process.webp)
 
 The phrase(term) "value proposition" was first used in the paper [A Business is a Value Delivery System, Michael Lanning and Edward Michaels, 1988](http://www.dpvgroup.com/wp-content/uploads/2009/11/1988-A-Business-is-a-VDS-McK-Staff-Ppr.pdf) for the consulting firm McKinsey.
 

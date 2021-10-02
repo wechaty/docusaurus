@@ -1,0 +1,727 @@
+---
+title: Room Bot
+---
+
+<!-- MDX import -->
+import Tabs     from '@theme/Tabs'
+import TabItem  from '@theme/TabItem'
+
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
+[![JavaScript](https://img.shields.io/badge/%3C%2F%3E-JavaScript-blue.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+Room bot is a practical example which illustrates how to do room handling. With room bot you can do the following:
+
+- Find a room
+- Add people to the room
+- Delete people from the room
+- Change the room topic
+- Monitor room events
+
+## Try out the bot
+
+[![Edit wechaty-room-bot](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/sbis04/wechaty-room-bot/tree/main/?fontsize=12&hidenavigation=1&module=%2Froom-bot.js&theme=dark)
+
+You can try out the **Wechaty Room bot** using this interactive CodeSandbox.
+
+There is a `TODO` where you have to specify one of your friends' name (the CodeSandbox can be edited by using the above button). After that just scan the generated QR code with the **WeChat** app, and you are ready to play with the bot!
+
+<iframe
+  class="codesandbox"
+  src="https://codesandbox.io/embed/github/sbis04/wechaty-room-bot/tree/main/?fontsize=12&hidenavigation=1&module=%2Froom-bot.js&theme=dark"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+></iframe>
+
+## Requirements
+
+1. [Node.js](https://nodejs.dev/) v16+
+1. [Wechaty Puppet Service TOKEN](https://wechaty.js.org/docs/puppet-services/) (if you want to use RPA protocols other than Web)
+
+## Getting Started
+
+Before getting started make sure you have `Node.js` installed on your system. If you do not have `Node.js` installed (or have a version below 12),
+then you need to install the latest version of `Node.js` by following the links below:
+
+:::note Node.js installation docs
+
+* [Windows](https://nodejs.org/en/download/package-manager/#windows)
+* [Linux\(Debian/Ubuntu\)](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+* [macOS](https://nodejs.org/en/download/package-manager/#macos)
+
+> Installation guide for `Node.js` in other platforms can be found [here](https://nodejs.org/en/download/package-manager/).
+
+:::
+
+You can head over to [Building the bot](#building-the-bot) section to learn how to build the bot on your own.
+
+Otherwise if you want to try out the bot on your local system, follow the steps below:
+
+### 1. Clone the repository
+
+Use the following command to clone the [Github repository](https://github.com/wechaty/wechaty-getting-started) and navigate to the directory.
+
+```bash
+git clone https://github.com/wechaty/wechaty-getting-started.git
+cd wechaty-getting-started
+```
+
+### 2. Install dependencies
+
+Install the `npm` packages required for running the bot using the following command:
+
+```bash
+npm install
+```
+
+### 3. Run the bot
+
+You have to export/set environment variables.
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```bash
+set WECHATY_LOG=verbose
+set WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+</Tabs>
+
+> There are various Wechaty puppets available, you can know more about them [here](https://github.com/wechaty/wechaty-getting-started#working-with-different-puppets)
+
+For running the bot, use the following command:
+
+```bash
+npx ts-node examples/advanced/room-bot.js
+```
+
+This will generate a QR code. Scan it using **Wechat/Whatsapp** and you are ready to go.
+
+## Building the bot
+
+Let's get started with building **room-bot** using Wechaty.
+
+### 1. Initializse project
+
+Create a new folder called `room-bot` and move into that directory.
+
+```bash
+mkdir room-bot
+cd room-bot
+```
+
+Use the following command to initialize an npm project
+
+```bash
+npm init -y
+```
+
+### 2. Install dependencies
+
+For building the room bot, you will require these dependencies:
+
+* [wechaty](https://www.npmjs.com/package/wechaty): Official Wechaty package
+* [qrcode-terminal](https://www.npmjs.com/package/qrcode-terminal): Displays the QR code
+
+For installing these dependencies run the following commands:
+
+- **For installing wechaty**
+
+```bash
+npm install wechaty
+```
+
+- **For installing qrcode-terminal**
+
+```bash
+npm install qrcode-terminal
+```
+
+You will also need to add dependencies for using any [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/) which helps to integrate Wechaty with various **instant messaging (IM) systems** (such as WeChat, WhatsApp, and WeCom):
+
+1. If you want to use **[WhatsApp](https://www.whatsapp.com/)**, install `wechaty-puppet-whatsapp`:
+
+  ```bash
+  npm install wechaty-puppet-whatsapp
+  ```
+
+2. If you want to use **[WeChat](https://www.wechat.com/)**, you can try the following puppets:
+
+   * **Web Protocol:** Install `wechaty-puppet-wechat`:
+
+     ```bash
+     npm install wechaty-puppet-wechat
+     ```
+
+   * **iPad Protocol:**
+     * padlocal: Install `wechaty-puppet-padlocal`:
+
+       ```bash
+       npm install wechaty-puppet-padlocal
+       ```
+
+       Then get a token like `puppet_padlocal_XXX`, know more about puppet service padlocal [here](http://wechaty.js.org/docs/puppet-services/padlocal).
+
+     * paimon: Install `wechaty-puppet-service`:
+
+       ```bash
+       npm install wechaty-puppet-service
+       ```
+
+       Then get a token like `puppet_paimon_XXX`, know more about puppet service paimon [here](http://wechaty.js.org/docs/puppet-services/paimon).
+
+3. If you want to use **[WeCom](https://work.weixin.qq.com/)**, install `wechaty-puppet-service`:
+
+  ```bash
+  npm install wechaty-puppet-service
+  ```
+
+  Then get a token like `puppet_wxwork_XXXXX`, more about puppet service wxwork [here](https://wechaty.js.org/docs/puppet-services/wxwork/).
+
+> You can find more information about the puppets [here](https://wechaty.js.org/docs/puppet-providers/).
+
+Now, you are ready to write the main code for the bot.
+
+### 3. Writing code for the bot
+
+Create a new file `room-bot.js`. You will be writing code here.
+
+Let's import required packages in `room-bot.js` file and create a `HELPER_CONTACT_NAME` variable which will be used to create a room.
+
+```js
+// TODO: Put the name of one of your friend here,
+// or room create function will not work.
+const HELPER_CONTACT_NAME = "huan";
+
+import qrTerm  from 'qrcode-terminal';
+
+import { Wechaty, log }  from 'wechaty';
+```
+Now, we will write some functions which will be required for handling different events returned by bot.
+
+**manageDingRoom**
+
+This function will help you find a room, join it, leave it, and change the topic of the room.
+
+```js
+async function manageDingRoom() {
+  log.info("Bot", "manageDingRoom()");
+
+  /**
+   * Find Room
+   */
+  try {
+    const room = await bot.Room.find({ topic: /^ding/i });
+    if (!room) {
+      log.warn("Bot", "there is no room topic ding(yet)");
+      return;
+    }
+    log.info("Bot", 'start monitor "ding" room join/leave/topic event');
+
+    /**
+     * Event: Join
+     */
+    room.on("join", function (inviteeList, inviter) {
+      log.verbose(
+        "Bot",
+        'Room EVENT: join - "%s", "%s"',
+        inviteeList.map((c) => c.name()).join(", "),
+        inviter.name()
+      );
+      console.log("room.on(join) id:", this.id);
+      checkRoomJoin.call(this, room, inviteeList, inviter);
+    });
+
+    /**
+     * Event: Leave
+     */
+    room.on("leave", (leaverList, remover) => {
+      log.info(
+        "Bot",
+        'Room EVENT: leave - "%s" leave(remover "%s"), byebye',
+        leaverList.join(","),
+        remover || "unknown"
+      );
+    });
+
+    /**
+     * Event: Topic Change
+     */
+    room.on("topic", (topic, oldTopic, changer) => {
+      log.info(
+        "Bot",
+        'Room EVENT: topic - changed from "%s" to "%s" by member "%s"',
+        oldTopic,
+        topic,
+        changer.name()
+      );
+    });
+  } catch (e) {
+    log.warn("Bot", 'Room.find rejected: "%s"', e.stack);
+  }
+}
+```
+
+**checkRoomJoin**
+
+This function checks who can send an invitation and who can't. If the invitation is sent by the owner, then the person could join the room. Otherwise, the invitation will be canceled and the person has to resend ding to the owner so that the owner can send him/her a new valid invitation.
+
+```js
+async function checkRoomJoin(room, inviteeList, inviter) {
+  log.info(
+    "Bot",
+    'checkRoomJoin("%s", "%s", "%s")',
+    await room.topic(),
+    inviteeList.map((c) => c.name()).join(","),
+    inviter.name()
+  );
+
+  try {
+    // let to, content
+    const userSelf = bot.userSelf();
+
+    if (inviter.id !== userSelf.id) {
+      await room.say(
+        "RULE1: Invitation is limited to me, the owner only. Please do not invite people without notifying me.",
+        inviter
+      );
+      await room.say(
+        'Please contact me: by send "ding" to me, I will re-send you an invitation. Now I will remove you out, sorry.',
+        inviteeList
+      );
+
+      await room.topic("ding - warn " + inviter.name());
+      setTimeout((_) => inviteeList.forEach((c) => room.del(c)), 10 * 1000);
+    } else {
+      await room.say("Welcome to my room! :)");
+
+      let welcomeTopic;
+      welcomeTopic = inviteeList.map((c) => c.name()).join(", ");
+      await room.topic("ding - welcome " + welcomeTopic);
+    }
+  } catch (e) {
+    log.error("Bot", "checkRoomJoin() exception: %s", e.stack);
+  }
+}
+```
+
+**putInRoom**
+
+This function adds people to the room.
+
+```js
+async function putInRoom(contact, room) {
+  log.info("Bot", 'putInRoom("%s", "%s")', contact.name(), await room.topic());
+
+  try {
+    await room.add(contact);
+    setTimeout((_) => room.say("Welcome ", contact), 10 * 1000);
+  } catch (e) {
+    log.error("Bot", "putInRoom() exception: " + e.stack);
+  }
+}
+```
+
+**getOutRoom**
+
+This function removes people from room, if they said `ding` inside a room.
+
+```js
+async function getOutRoom(contact, room) {
+  log.info("Bot", 'getOutRoom("%s", "%s")', contact, room);
+
+  try {
+    await room.say('You said "ding" in my room, I will remove you out.');
+    await room.del(contact);
+  } catch (e) {
+    log.error("Bot", "getOutRoom() exception: " + e.stack);
+  }
+}
+```
+
+**getHelperContact**
+
+This function returns a *Helper contact* that you defined in the beginning.
+
+```js
+function getHelperContact() {
+  log.info("Bot", "getHelperContact()");
+
+  // create a new room at least need 3 contacts
+  return bot.Contact.find({ name: HELPER_CONTACT_NAME });
+}
+```
+
+**createDingRoom**
+
+This function is used to create a room but if *Helper contact* is not found, then it asks you to set it first.
+
+```js
+async function createDingRoom(contact) {
+  log.info("Bot", 'createDingRoom("%s")', contact);
+
+  try {
+    const helperContact = await getHelperContact();
+
+    if (!helperContact) {
+      log.warn("Bot", "getHelperContact() found nobody");
+      await contact.say(`You don't have a friend called "${HELPER_CONTACT_NAME}",
+                         because create a new room at least need 3 contacts, please set [HELPER_CONTACT_NAME] in the code first!`);
+      return;
+    }
+
+    log.info("Bot", 'getHelperContact() ok. got: "%s"', helperContact.name());
+
+    const contactList = [contact, helperContact];
+    log.verbose("Bot", 'contactList: "%s"', contactList.join(","));
+
+    await contact.say(
+      `There isn't ding room. I'm trying to create a room with "${helperContact.name()}" and you`
+    );
+    const room = await bot.Room.create(contactList, "ding");
+    log.info("Bot", 'createDingRoom() new ding room created: "%s"', room);
+
+    await room.topic("ding - created");
+    await room.say("ding - created");
+
+    return room;
+  } catch (e) {
+    log.error("Bot", "getHelperContact() exception:", e.stack);
+    throw e;
+  }
+}
+```
+
+Now initializing the bot by providing the name.
+
+```js
+const bot = new Wechaty({
+  name: "room-bot",
+})
+```
+
+Assigning proper functions to call when an event is triggered.
+
+```js
+bot
+  .on("scan", (qrcode, status) => {
+    qrTerm.generate(qrcode, { small: true });
+    console.log(`${qrcode}\n[${status}] Scan QR Code in above url to login: `);
+  })
+  .on("logout", (user) => log.info("Bot", `"${user.name()}" logouted`))
+  .on("error", (e) => log.info("Bot", "error: %s", e))
+```
+
+- When `scan` is triggered, it generates QR code.
+- `logout` will display the name of the user along with the status `logouted`.
+- `error` is used to notify if the bot encounters an error.
+
+**Global Event: login**
+
+This event gets the `user` and displays the login status of the user. After that, it displays the `msg` saying `setting to manageDingRoom() after 3 seconds ... ` which means it will call `manageDingRoom` function after 3 seconds.
+
+```js
+.on("login", async function (user) {
+    let msg = `${user.name()} logined`;
+
+    log.info("Bot", msg);
+    await this.say(msg);
+
+    msg = `setting to manageDingRoom() after 3 seconds ... `;
+    log.info("Bot", msg);
+    await this.say(msg);
+
+    setTimeout(manageDingRoom.bind(this), 3000);
+  })
+```
+
+**Global Event: room-join**
+
+`room-join` event lets people join a respective room.
+
+```js
+.on("room-join", async function (room, inviteeList, inviter) {
+    log.info(
+      "Bot",
+      'EVENT: room-join - Room "%s" got new member "%s", invited by "%s"',
+      await room.topic(),
+      inviteeList.map((c) => c.name()).join(","),
+      inviter.name()
+    );
+    console.log("bot room-join room id:", room.id);
+    const topic = await room.topic();
+    await room.say(`welcome to "${topic}"!`, inviteeList[0]);
+  })
+```
+
+**Global Event: room-leave**
+
+This event removes people from the room.
+
+```js
+.on("room-leave", async function (room, leaverList) {
+    log.info(
+      "Bot",
+      'EVENT: room-leave - Room "%s" lost member "%s"',
+      await room.topic(),
+      leaverList.map((c) => c.name()).join(",")
+    );
+    const topic = await room.topic();
+    const name = leaverList[0] ? leaverList[0].name() : "no contact!";
+    await room.say(`kick off "${name}" from "${topic}"!`);
+  })
+```
+
+**Global Event: room-topic**
+
+Using this event, you can change the topic of the room.
+
+```js
+.on("room-topic", async function (room, topic, oldTopic, changer) {
+    try {
+      log.info(
+        "Bot",
+        'EVENT: room-topic - Room "%s" change topic from "%s" to "%s" by member "%s"',
+        room,
+        oldTopic,
+        topic,
+        changer
+      );
+      await room.say(
+        `room-topic - change topic from "${oldTopic}" to "${topic}" by member "${changer.name()}"`
+      );
+    } catch (e) {
+      log.error("Bot", "room-topic event exception: %s", e.stack);
+    }
+  })
+```
+
+**Global Event: message**
+
+This event handles entry and exit in the room. If you send `ding` the first time, then you will get an invitation but saying `ding` in a room leads to exiting the room. Similarly, if you say `dong` it will quit the room.
+
+```js
+.on("message", async function (msg) {
+    if (msg.age() > 3 * 60) {
+      log.info(
+        "Bot",
+        'on(message) skip age("%d") > 3 * 60 seconds: "%s"',
+        msg.age(),
+        msg
+      );
+      return;
+    }
+
+    const room = msg.room();
+    const from = msg.from();
+    const text = msg.text();
+
+    if (!from) {
+      return;
+    }
+
+    console.log(
+      (room ? "[" + (await room.topic()) + "]" : "") +
+        "<" +
+        from.name() +
+        ">" +
+        ":" +
+        msg
+    );
+
+    if (msg.self()) {
+      return; // skip self
+    }
+
+    /**
+     * `dong` will be the magic(toggle) word:
+     *  bot will quit current room by herself.
+     */
+    if (/^dong$/i.test(text)) {
+      if (room) {
+        await room.say(
+          "You said dong in the room, I will quit by myself!",
+          from
+        );
+        await room.quit();
+      } else {
+        await from.say(
+          'Nothing to do. If you say "dong" in a room, I will quit from the room.'
+        );
+      }
+      return;
+    }
+
+    /**
+     * `ding` will be the magic(toggle) word:
+     *  1. say ding first time, will got a room invitation
+     *  2. say ding in room, will be removed out
+     */
+    if (/^ding$/i.test(text)) {
+      /**
+       *  in-room message
+       */
+      if (room) {
+        if (/^ding/i.test(await room.topic())) {
+          /**
+           * move contact out of room
+           */
+          await getOutRoom(from, room);
+        }
+
+        /**
+         * peer to peer message
+         */
+      } else {
+        /**
+         * find room name start with "ding"
+         */
+        try {
+          const dingRoom = await this.Room.find({ topic: /^ding/i });
+          if (dingRoom) {
+            /**
+             * room found
+             */
+            log.info(
+              "Bot",
+              'onMessage: got dingRoom: "%s"',
+              await dingRoom.topic()
+            );
+
+            if (await dingRoom.has(from)) {
+              /**
+               * speaker is already in room
+               */
+              const topic = await dingRoom.topic();
+              log.info("Bot", "onMessage: sender has already in dingRoom");
+              await dingRoom.say(
+                `I found you have joined in room "${topic}"!`,
+                from
+              );
+              await from.say(
+                `no need to ding again, because you are already in room: "${topic}"`
+              );
+              // sendMessage({
+              //   content: 'no need to ding again, because you are already in ding room'
+              //   , to: sender
+              // })
+            } else {
+              /**
+               * put speaker into room
+               */
+              log.info(
+                "Bot",
+                'onMessage: add sender("%s") to dingRoom("%s")',
+                from.name(),
+                dingRoom.topic()
+              );
+              await from.say("ok, I will put you in ding room!");
+              await putInRoom(from, dingRoom);
+            }
+          } else {
+            /**
+             * room not found
+             */
+            log.info("Bot", "onMessage: dingRoom not found, try to create one");
+            /**
+             * create the ding room
+             */
+            const newRoom = await createDingRoom(from);
+            console.log("createDingRoom id:", newRoom.id);
+            /**
+             * listen events from ding room
+             */
+            await manageDingRoom();
+          }
+        } catch (e) {
+          log.error(e);
+        }
+      }
+    }
+  })
+```
+
+Now, finally for starting the bot
+
+```js
+bot.start()
+  .catch((e) => console.error(e));
+```
+
+### 4. Running the bot
+
+To run the bot, you have to export/set environment variables with the type of puppet you want to use.
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```bash
+set WECHATY_LOG=verbose
+set WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+</Tabs>
+
+
+Run the bot using the following command.
+
+```bash
+npx ts-node room-bot.js
+```
+
+Scan the generated QR code with **Wechat** app and you are ready to play with the bot.
+
+## References
+
+- [Wechaty Getting started Github repository](https://github.com/wechaty/wechaty-getting-started)

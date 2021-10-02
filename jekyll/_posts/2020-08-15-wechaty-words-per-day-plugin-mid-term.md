@@ -7,10 +7,8 @@ tags:
   - summer-of-wechaty
   - summer-2020
   - entertainment
-image: /assets/2020/wechaty-words-per-day-plugin-mid-term/header.png
+image: /assets/2020/wechaty-words-per-day-plugin-mid-term/header.webp
 ---
-
-## 暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。

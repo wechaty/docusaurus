@@ -1,12 +1,12 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test from 'tstest'
+import { test } from 'tstest'
 
 import path from 'path'
 
-import { JEKYLL_FOLDER } from './jekyll-folder'
+import { JEKYLL_FOLDER } from './folders.js'
 
-import { getFrontmatterAvatarList } from './get-frontmatter-avatar-list'
+import { getFrontmatterAvatarList } from './get-frontmatter-avatar-list.js'
 
 test('getFrontmatterAvatarList', async t => {
   const FILE = path.join(
@@ -14,7 +14,7 @@ test('getFrontmatterAvatarList', async t => {
     'huan.md',
   )
   const EXPECTED_AVATAR_NUM = 1
-  const EXPECTED_AVATAR_PATH = '/assets/contributors/huan/avatar.jpg'
+  const EXPECTED_AVATAR_PATH = '/assets/contributors/huan/avatar.webp'
 
   const imageList = getFrontmatterAvatarList(FILE)
 

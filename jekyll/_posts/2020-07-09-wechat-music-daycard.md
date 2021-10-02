@@ -5,11 +5,8 @@ categories: project
 tags:
   - padplus
   - entertainment
-image: /assets/2020/wechat-daycard/header.png
+image: /assets/2020/wechat-daycard/header.webp
 ---
-
-> 作者: [leijiahang](https://github.com/leijiahang/)
-> Code: [Github](https://github.com/leijiahang/wechat-daycard)
 
 [![wechaty badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![everything about wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
@@ -65,9 +62,12 @@ node app.js
 
 ## 效果图
 
-![效果图](/assets/2020/wechat-daycard/demo.jpg)
+![效果图](/assets/2020/wechat-daycard/demo.webp)
 
 ## 致谢
 
 非常感谢[Wechaty](https://wechaty.github.io/)团队提供微信机器人SDK，让开发者可以专注于业务代码。  
 感谢[句子互动](https://www.juzibot.com)提供的pad协议版token。
+
+> 作者: [leijiahang](https://github.com/leijiahang/)
+> Code: [Github](https://github.com/leijiahang/wechat-daycard)

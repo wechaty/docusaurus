@@ -2,16 +2,12 @@
 title: "基于开放 API 封装 Wechaty 接口下的钉钉聊天机器人"
 author: jihuayu
 categories: project
-image: /assets/2020/wechaty-puppet-dingtalk/logo.png
+image: /assets/2020/wechaty-puppet-dingtalk/logo.webp
 tags:
   - summer-of-wechaty
   - summer-2020
   - ecosystem
 ---
-> Author: [@jihuayu](https://github.com/jihuayu)
-> Code: [@jihuayu/wechaty-puppet-dingtalk](https://github.com/jihuayu/wechaty-puppet-dingtalk)
-
-## 暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。
@@ -57,3 +53,6 @@ tags:
     - 完善代码，视情况增加新功能
 - 项目链接：[https://github.com/jihuayu/wechaty-puppet-dingtalk](https://github.com/jihuayu/wechaty-puppet-dingtalk)
 - 联系方式：+86 13705936598 | email: 8042833@qq.com
+
+> Author: [@jihuayu](https://github.com/jihuayu)
+> Code: [@jihuayu/wechaty-puppet-dingtalk](https://github.com/jihuayu/wechaty-puppet-dingtalk)

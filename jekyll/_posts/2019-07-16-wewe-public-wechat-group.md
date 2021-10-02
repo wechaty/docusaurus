@@ -7,14 +7,8 @@ tags:
   - featured
   - social
   - utility
-image: /assets/2019/wewe-screenshot.png
+image: /assets/2019/wewe-screenshot.webp
 ---
-
-> Author: [@timqian](https://github.com/timqian) Building transparent products at [t9t.io](https://t9t.io)
-
-[![wewe](/assets/2019/wewe-screenshot.png)](https://wewe.t9t.io)
-
-## 背景
 
 几周前, 我在几个论坛分享了 [透明创业实验](https://blog.t9t.io/transparent-startup-experiment-2019-05-20/), 并且建了一个微信群方便交流.
 
@@ -49,7 +43,7 @@ image: /assets/2019/wewe-screenshot.png
 
 加入方式
 
-- 微信: 加 [timbot](../assets/2019/wewe-timbot.jpg) 为好友, 备注 "join wewe", 然后将机器人拉入群聊即可, 如果内容适合公开, 我就会开始收集
+- 微信: 加 [timbot](../assets/2019/wewe-timbot.webp) 为好友, 备注 "join wewe", 然后将机器人拉入群聊即可, 如果内容适合公开, 我就会开始收集
 - slack: 加入[t9t.io slack 群](https://join.slack.com/t/t9tio/shared_invite/enQtNjgzMzkwMDM0NTE3LTE5ZTUzYjU4Y2I0YzRiZjNkYTkzMzE1ZmM0NDdmYzRlZmMxNGY1MzZlN2EwYjYyNWVlMWY0Nzk2MDBhNWZlY2I)
 
 ## FAQ
@@ -58,3 +52,5 @@ image: /assets/2019/wewe-screenshot.png
 - **如何收费**: wewe 仍在开发阶段, 并且因为网站使用 serverless 方式开发(aws lambda & dynamodb & s3), 维护和服务器成本比较低, 对前 30 个加入的群免费提供服务, 之后的收费模式仍在思考当中
 
 ### wewe 还是一个正在开发中的项目, 欢迎留言交流你对它的看法
+
+> Author: [@timqian](https://github.com/timqian) Building transparent products at [t9t.io](https://t9t.io)

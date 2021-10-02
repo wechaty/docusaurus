@@ -7,12 +7,8 @@ tags:
   - web-panel
   - feature
   - ecosystem
-image: /assets/2020/web-panel/web-head.png
+image: /assets/2020/web-panel/web-head.webp
 ---
-
-> 作者: [Leo_chen](https://github.com/leochen-g/)，高级前端工程师，喜欢使用node做各种项目
-
-<!-- more -->
 
 ## 平台构思
 
@@ -107,13 +103,13 @@ image: /assets/2020/web-panel/web-head.png
 
 这一块实现起来也很容易，所有的配置信息都写入到数据库中，每次客户端启动的时候去服务器拉取一下最新的配置信息即可，对于每次改动，需要用户使用另一个微信发送重启命令来拉取最新的配置文件。包含基础信息配置，每日说定时任务配置，群咨询，群消息定时任务，以及关键词自动回复，关键字事件等配置
 
-![1](/assets/2020/web-panel/panel-1.png)
+![1](/assets/2020/web-panel/panel-1.webp)
 
-![2](/assets/2020/web-panel/panel-2.png)
+![2](/assets/2020/web-panel/panel-2.webp)
 
-![3](/assets/2020/web-panel/panel-3.png)
+![3](/assets/2020/web-panel/panel-3.webp)
 
-![4](/assets/2020/web-panel/panel-4.png)
+![4](/assets/2020/web-panel/panel-4.webp)
 
 ### 远程重启项目
 
@@ -152,7 +148,7 @@ pm2配置
 `wechaty`有一个`heartbeat`事件，可以推送当前客户端登录的状态，所以实现起来也是很方便的
 
 ```ts
-const {sendHeartBeat} = require('../proxy/aibotk')
+import {sendHeartBeat}  from '../proxy/aibotk'
 
 async function onHeartBeat(str) {
     if (!str) {
@@ -166,19 +162,19 @@ async function onHeartBeat(str) {
 module.exports = onHeartBeat
 ```
 
-![5](/assets/2020/web-panel/panel-5.png)
+![5](/assets/2020/web-panel/panel-5.webp)
 
 ### 平台与客户端的对接
 
 这里参考了开放api接口平台的模式，使用`apikey`和`apisecret`来确保通信的安全（把所有的请求参数排序后和apisecretkey做hash生成一个签名sign参数，服务器后台只需要按照规则做一次签名计算，然后和请求的签名做比较，如果相等验证通过，不相等就不通过）key与secret在注册的时候自动生成，在个人中心查看
 
-![6](/assets/2020/web-panel/panel-6.png)
+![6](/assets/2020/web-panel/panel-6.webp)
 
 ### 素材库
 
 素材库的作用是统一管理所有的文字与文件，方便不同场景下的复用。文件支持常用的图片，office等。目前是直接上传到七牛云之中
 
-![7](/assets/2020/web-panel/panel-7.png)
+![7](/assets/2020/web-panel/panel-7.webp)
 
 ### 客户端多平台通用(docker)
 
@@ -304,4 +300,6 @@ docker run -v 绝对路径/env.js:/home/app/env.js -d  aibotk/wechat-assistant
 
 添加我的小助手来体验智能化的小秘书服务
 
-![8](/assets/2020/web-panel/qr.png)
+![8](/assets/2020/web-panel/qr.webp)
+
+> 作者: [Leo_chen](https://github.com/leochen-g/)，高级前端工程师，喜欢使用node做各种项目

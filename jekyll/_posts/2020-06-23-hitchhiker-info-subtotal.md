@@ -7,13 +7,8 @@ tags:
   - padplus
   - travel
   - mysql
-image: /assets/2020/info-subtotal/head.jpeg 
+image: /assets/2020/info-subtotal/head.webp 
 ---
-
-> 作者: [sking](https://github.com/shijianzhong)
-> Code: [Github](https://github.com/shijianzhong/wechatserve)
-
-## 前言
 
 北京的房价涨幅对于北漂的工资涨幅来说永远都是高不可攀的；有很多人到了成家立业的年纪，又不想回到老家，所以距离北京近，房价可以接受的北京周边就是就是一个不错的选择，但是在环京买了房，工作还是在北京，由此衍生出了一批跨城上下班的圈子。
 由于北京车牌限制，限行策略，堵车等问题，所以导致很多人不能愉快的自驾上下班，坐公共交通工具又不是特别方便，所以大家会选择和邻居或是朋友拼车上下班，既方便了大家通勤，也节省了路上的开销成本。
@@ -45,7 +40,7 @@ image: /assets/2020/info-subtotal/head.jpeg
 附上部分逻辑代码说明。
 
 ```javascript
-const api1 = require('../../server/api')
+import api1  from '../../server/api'
 const one = ['车寻人', '车找人', '找人', '寻人', '满人', '满车', '车满', '人满'];
 const two = ['人寻车', '人找车', '找车', '寻车', '找个车']
 class dealMsg {
@@ -123,3 +118,6 @@ module.exports = dealMsg
 npm install
 npm start
 ```
+
+> 作者: [sking](https://github.com/shijianzhong)
+> Code: [Github](https://github.com/shijianzhong/wechatserve)

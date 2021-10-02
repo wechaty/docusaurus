@@ -5,14 +5,14 @@ categories: migration
 tags:
   - code
   - news
-image: /assets/2018/code-migration-zh.png
+image: /assets/2018/code-migration-zh.webp
 ---
 
 Wechaty 近期有了很大的升级，从0.14版本之后，开始陆续支持各类非Web 版本的解决方案。我的业务逻辑代码重度依赖于wechaty，所以自从wechaty release 了0.15 版本以后，我开始将我们的业务逻辑代码陆续从Web版本迁移到了非Web版本上来。
 
 本篇博客主要介绍了我是如何将业务逻辑代码，从Puppeteer 迁移到 Padchat上的。
 
-![code](/assets/2018/code-migration-zh.png)
+![code](/assets/2018/code-migration-zh.webp)
 
 ## 1. Puppeteer VS Padchat
 
@@ -22,7 +22,7 @@ Wechaty 近期有了很大的升级，从0.14版本之后，开始陆续支持�
 
 现在再来介绍Puppeteer 和 Padchat 就会比较清楚了:
 
-![image](/assets/2018/abstract-info.png)
+![image](/assets/2018/abstract-info.webp)
 
 - Puppeteer: 基于网页微信的实现，通过puppet连接到Wechaty API。
 - Padchat: 基于ipad 协议的实现，通过puppet 连接到Wechaty API。
@@ -141,8 +141,8 @@ npm install tslint-config-standard
 
 tslint 和tsconfig 建议参考wechaty 的配置：
 
-- [tslint 配置文件](https://github.com/wechaty/wechaty/blob/master/tslint.json)
-- [tsconfig 配置文件](https://github.com/wechaty/wechaty/blob/master/tsconfig.json)
+- [tslint 配置文件](https://github.com/wechaty/wechaty/blob/main/tslint.json)
+- [tsconfig 配置文件](https://github.com/wechaty/wechaty/blob/main/tsconfig.json)
 
 这里针对wechaty 的一些配置进行说明
 
@@ -191,11 +191,11 @@ tslint 和tsconfig 建议参考wechaty 的配置：
 
 唔。。。这里再赠送一个VSCode 插件彩蛋：editorconfig : 让使用不同编辑器的开发者在共同开发一个项目时“无痛”地遵循编码规范。更多说明见[editorconfig官网](https://editorconfig.org/)
 
-wechaty 的配置见 [.editorconfig](https://github.com/wechaty/wechaty/blob/master/.editorconfig)
+wechaty 的配置见 [.editorconfig](https://github.com/wechaty/wechaty/blob/main/.editorconfig)
 
 ## 4. BREAKING CHANGES
 
-wechaty 升级版本后(参考[博客](https://wechaty.github.io/wechaty-new-release-version-0.16/))，虽然尽可能的减少接口变动，但是为了适配padchat， 还是会有一些接口有了不同程度的变化。因此在进行代码迁移的时候，我们也需要修改原来的部分代码，我把相关内容列在下面了，更多内容，建议仔细阅读[CHANGE LOG](https://github.com/wechaty/wechaty/blob/master/CHANGELOG.md)
+wechaty 升级版本后(参考[博客](https://wechaty.github.io/wechaty-new-release-version-0.16/))，虽然尽可能的减少接口变动，但是为了适配padchat， 还是会有一些接口有了不同程度的变化。因此在进行代码迁移的时候，我们也需要修改原来的部分代码，我把相关内容列在下面了，更多内容，建议仔细阅读[CHANGE LOG](https://github.com/wechaty/wechaty/blob/main/CHANGELOG.md)
 
 ### bot.init() 变成了 bot.start()
 
@@ -233,7 +233,7 @@ wechaty.on('friendship', request => {
 })
 ```
 
-建议仔细看代码[friend-bot.ts](https://github.com/wechaty/wechaty/blob/master/examples/friend-bot.ts)
+建议仔细看代码[friend-bot.ts](https://github.com/wechaty/wechaty/blob/main/examples/friend-bot.ts)
 
 相关issue:
 

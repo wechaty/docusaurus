@@ -1,7 +1,7 @@
 /**
  * Docusaurus Sidebar
  */
-interface SubMenuData {
+ interface SubMenuData {
   label: string,
   items: (SubMenuData | string)[],
   type?: string,
@@ -59,6 +59,7 @@ const puppetProviders: SubMenuData = {
     'puppet-providers/lark',
     'puppet-providers/padlocal',
     'puppet-providers/wechat4u',
+    'puppet-providers/xp',
     'puppet-providers/service',
     'puppet-providers/mock',
     'puppet-providers/diy',
@@ -73,8 +74,10 @@ const puppetServices: SubMenuData = {
     'puppet-services/padlocal',
     'puppet-services/paimon',
     'puppet-services/donut',
+    'puppet-services/tokens',
     'puppet-services/compatibility',
     'puppet-services/diy',
+    'puppet-services/faq',
   ]
 }
 
@@ -87,6 +90,7 @@ const specs: SubMenuData = {
     'specs/puppet',
     'specs/service',
     'specs/token',
+    'specs/gateway',
   ],
 }
 
@@ -94,6 +98,7 @@ const contributing: SubMenuData = {
   label: 'Contributing',
   items: [
     'contributing/overview',
+    'contributing/code-of-conduct',
     'contributing/new-contributors',
     'contributing/documentation',
     'contributing/contributor-program',
@@ -101,6 +106,7 @@ const contributing: SubMenuData = {
     'contributing/pulls',
     'contributing/blog',
     'contributing/coding',
+    'contributing/getting-help',
     'contributing/git',
     'contributing/issues',
     'contributing/testing',
@@ -117,13 +123,31 @@ const caseStudy: SubMenuData = {
   ],
 }
 
-const gettingStarted: SubMenuData = {
-  label: 'Getting Started',
+const quickStart: SubMenuData = {
+  label: 'Quick Start',
   items: [
-    'getting-started/overview',
-    'getting-started/quick-start',
-    'getting-started/hard-way',
+    'quick-start/running-on-google-cloud-shell',
+    'quick-start/running-on-gitpod',
   ],
+}
+
+const usingReduxWithWechaty: SubMenuData = {
+  label: 'Using Redux with Wechaty',
+  items: [
+    'using-redux-with-wechaty/overview',
+    'using-redux-with-wechaty/vannila-redux',
+    'using-redux-with-wechaty/ducks-proposal',
+  ]
+}
+
+const usingPluginWithWechaty: SubMenuData = {
+  label: 'Using Plugin with Wechaty',
+  items: [
+    'using-plugin-with-wechaty/overview',
+    'using-plugin-with-wechaty/event-logger',
+    'using-plugin-with-wechaty/qr-code-terminal',
+    'using-plugin-with-wechaty/heartbeat',
+  ]
 }
 
 const community: SubMenuData = {
@@ -193,6 +217,10 @@ const introduction = {
   items: [
     'overview',
     'wechaty',
+    'what-can-you-do-with-wechaty',
+    'who-is-using-wechaty',
+    'getting-started-with-wechaty',
+    'main-concepts-in-wechaty',
     subMenu(showcases),
     subMenu(caseStudy),
     subMenu(community),
@@ -212,6 +240,7 @@ const introduction = {
  const basic = {
   label: 'Basic',
   items: [
+    'examples/basic/starter-bot',
     'examples/basic/the-worlds-shortest-chatbot-code-in-6-lines',
     'examples/basic/ding-dong-bot',
     'examples/basic/contact-bot',
@@ -221,36 +250,36 @@ const introduction = {
 const advanced = {
   label: 'Advanced',
   items: [
-    'examples/advanced/demo-in-tutorial',
     'examples/advanced/busy-bot',
     'examples/advanced/media-file-bot',
     'examples/advanced/room-bot',
     'examples/advanced/friend-bot',
-    'examples/advanced/gist-bot',
   ],
 }
 
 const professional = {
   label: 'Professional',
   items: [
-    'examples/professional/hot-import-bot',
     'examples/professional/ctrl-c-signal-bot',
-    'examples/professional/monster-bot',
-    'examples/professional/api-ai-bot',
-    'examples/professional/speech-to-text-bot',
     'examples/professional/tuling123-bot',
-    'examples/professional/telegram-roger-bot',
-    'examples/professional/blessed-twins-bot',
   ],
 }
 
  const examples = {
   label: 'Examples',
   items: [
-    'examples/overview',
     subMenu(basic),
     subMenu(advanced),
     subMenu(professional),
+  ],
+}
+
+const gettingStarted: SubMenuData = {
+  label: 'Getting Started',
+  items: [
+    'getting-started/overview',
+    subMenu(quickStart),
+    'getting-started/running-locally',
   ],
 }
 
@@ -258,14 +287,14 @@ const tutorials = {
   label: 'Tutorials',
   items: [
     'tutorials/overview',
+    'tutorials/installation',
     subMenu(gettingStarted),
     'tutorials/video-tutorial',
     'tutorials/docker',
     'tutorials/usage-with-heroku',
-    'tutorials/using-plugin-with-wechaty',
+    subMenu(usingPluginWithWechaty),
     'tutorials/using-vorpal-with-wechaty',
-    'tutorials/using-redux-with-wechaty',
-    'tutorials/cheatsheet',
+    subMenu(usingReduxWithWechaty),
     subMenu(examples),
   ],
 }
@@ -283,6 +312,7 @@ const howtos = {
     'howto/friendship',
     'howto/file-box',
     'howto/testing',
+    'howto/docker',
   ],
 }
 
@@ -295,34 +325,41 @@ const references = {
     subMenu(puppetProviders),
     subMenu(puppetServices),
     subMenu(specs),
-    'references/deprecations',
+    'references/breaking-changes',
   ]
 }
 
-const explainations = {
-  label: 'Explainations',
+const explanations = {
+  label: 'Explanations',
   items: [
-    'explainations/overview',
-    'explainations/conversational',
-    'explainations/rpa',
-    'explainations/motivations',
-    'explainations/concepts',
-    'explainations/architecture',
-    'explainations/lifecycle',
-    'explainations/alternatives',
-    'explainations/glossary',
-    'explainations/faq',
-    'explainations/troubleshooting',
+    'explanations/overview',
+    'explanations/conversational',
+    'explanations/rpa',
+    'explanations/motivations',
+    'explanations/concepts',
+    'explanations/architecture',
+    'explanations/lifecycle',
+    'explanations/alternatives',
+    'explanations/glossary',
+    'explanations/devops-toolset',
+    'explanations/sdk-cui',
+    'explanations/testing',
+    'explanations/faq',
+    'explanations/troubleshooting',
     subMenu(docusaurus),
   ],
 }
 
 const docs = {
+  // By default, Docusaurus generates a sidebar from the docs folder structure
+  // tutorialSidebar: [{type: 'autogenerated', dirName: '.'}],
+
+  // But you can create a sidebar manually
   [introduction.label]  : [...introduction.items],
   [tutorials.label]     : [...tutorials.items],
   [howtos.label]        : [...howtos.items],
   [references.label]    : [...references.items],
-  [explainations.label] : [...explainations.items],
+  [explanations.label] : [...explanations.items],
 }
 
 export { docs }

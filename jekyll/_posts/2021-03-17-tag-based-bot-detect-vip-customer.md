@@ -5,10 +5,8 @@ categories: project
 tags:
   - mysql
   - social
-image: /assets/2021/03-tag-based-bot-detect-vip-customer/archetecture.png
+image: /assets/2021/03-tag-based-bot-detect-vip-customer/archetecture.webp
 ---
-
-<h2>基于标签的多功能服务系统&检测你身边的VIP用户</h2>
 
 随着时间的推移，我们在不断的认识新的朋友，不断加新的好友， 在我们的微信里， 好友列表会有很多，甚至上千人，有的时候我们自己也理不清哪些好友是我们的客户，哪些好友是我们的朋友同学，哪些好友是我们在某次活动相识，甚至哪些好友只是萍水相逢但是实际上却极有可能是我们很好的潜在客户或者未来的合作伙伴，而因为平时的忽视可能就这样错过。
 
@@ -23,7 +21,7 @@ image: /assets/2021/03-tag-based-bot-detect-vip-customer/archetecture.png
 
 <font size=5>系统整体架构简化图</font>
 
-![archetecture.png](/assets/2021/03-tag-based-bot-detect-vip-customer/archetecture.png)
+![archetecture.png](/assets/2021/03-tag-based-bot-detect-vip-customer/archetecture.webp)
 
 相关服务和框架:
 > Typeorm
@@ -38,9 +36,9 @@ image: /assets/2021/03-tag-based-bot-detect-vip-customer/archetecture.png
 
 这里我们的两个标签分别取名为btc和company.
 
-![tag-btc.png](/assets/2021/03-tag-based-bot-detect-vip-customer/tag-btc.png)
+![tag-btc.png](/assets/2021/03-tag-based-bot-detect-vip-customer/tag-btc.webp)
 
-![tag-unicorn.png](/assets/2021/03-tag-based-bot-detect-vip-customer/tag-unicorn.png)
+![tag-unicorn.png](/assets/2021/03-tag-based-bot-detect-vip-customer/tag-unicorn.webp)
 
 对于不同tag的user, 我们回复不同的autoReploy Message
 
@@ -65,7 +63,7 @@ export class TagCatalog {
 
 > 可以看到标签为btc的用户发来一条信息，首先通过wechatY的bot 发送自动回复消息告知我们的service.  
 
-![btc-autoreply.png](/assets/2021/03-tag-based-bot-detect-vip-customer/btc-autoreply.png)
+![btc-autoreply.png](/assets/2021/03-tag-based-bot-detect-vip-customer/btc-autoreply.webp)
 
 > 当用户选择1时，我们返回最新的当日BTC价格以及实时价格。这里后台的BTC service 会实时的更新MySQL 数据库，我们通过wechatY的bot 读取MySQL来返回最新的BTC价格
 
@@ -94,7 +92,7 @@ async function sayCurrentPrice(fromPersion: Contact){
 
 > 标签为company的用户发来信息，我们告知其service.
 
-![unicorn-autoreply.png](/assets/2021/03-tag-based-bot-detect-vip-customer/unicorn-autoreply.png)
+![unicorn-autoreply.png](/assets/2021/03-tag-based-bot-detect-vip-customer/unicorn-autoreply.webp)
 
 > 用户选择1,返回实时市值最高的5个独角兽公司。这里后台的UniCorn service 会实时的更新MySQL 数据库，我们通过wechatY的bot 读取MySQL来返回当前市值最高的5个独角兽公司。
 

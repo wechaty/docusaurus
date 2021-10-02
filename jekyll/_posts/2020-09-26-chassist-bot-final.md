@@ -2,17 +2,13 @@
 title: "暑期2020 [基于python-wechaty的群聊助手机器人] 结项成果展示"
 author: kxz18
 categories: project
-image: /assets/2020/chassist-final/logo.png
+image: /assets/2020/chassist-final/logo.webp
 tags:
   - python
   - summer-of-wechaty
   - summer-2020
   - entertainment
 ---
-> Author: [@kxz18](https://github.com/kxz18)
-> Code: [@kxz18/CHAssisT](https://github.com/kxz18/CHAssisT)
-
-## 暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
@@ -61,23 +57,25 @@ tags:
 
 目前三阶段的任务已经完成，需求的功能已经实现，相应的单元测试也已经实现，并且配置了 github 的 CI 流程，用于代码提交的检测。同时为项目的 github 项目提供了 readme 进行使用说明，也设计了项目 Logo 和项目名称，项目名称为CHAssisT，寓意为 chat + assistant，即聊天助手。Logo 设计如下图：
 
-<img src="/assets/2020/chassist-final/logo.png" alt="logo" style="zoom: 33%;" />
+<img src="/assets/2020/chassist-final/logo.webp" alt="logo" style="zoom: 33%;" />
 
 整体的机器人插件由四个独立的插件整合而成，如果想使用某个独立的插件，也可以单独使用。具体的使用方法可以参考项目 github 中的 readme：
 
 [https://github.com/kxz18/CHAssisT](https://github.com/kxz18/CHAssisT)。
 
 由于中期考核前已经将项目的功能都完成了，因此中期的 presentation 中对项目的功能和结构进行了简单讲解，如果对项目架构比较感兴趣，可以参考这个视频：  
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WlxClO3C_Sc" frameborder="0" allowfullscreen></iframe>
+
+{% include iframe.html src="https://www.youtube.com/embed/WlxClO3C_Sc" %}
 
 中期之后主要进行了一些深度学习上的实验尝试，并对于机器人的交互进行了一定优化，在后阶段的 presentation 中对此进行了阐述：
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BCQx_g8t9l4" frameborder="0"  allowfullscreen></iframe>
+
+{% include iframe.html src="https://www.youtube.com/embed/BCQx_g8t9l4" %}
 
 在bilibili也进行了视频上传：[https://www.bilibili.com/video/BV1zz4y1Z7iJ/](https://www.bilibili.com/video/BV1zz4y1Z7iJ/)
 
 为了能更好地展示项目成果，也按照社区要求对已经实现的功能进行了live coding演示，演示内容见：
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uqBwzAckhzk" frameborder="0" allowfullscreen></iframe>
+{% include iframe.html src="https://www.youtube.com/embed/uqBwzAckhzk" %}
 
 在bilibili也进行了视频上传：[https://www.bilibili.com/video/BV1iz4y1Z74S/](https://www.bilibili.com/video/BV1iz4y1Z74S/)
 
@@ -89,7 +87,7 @@ tags:
 
 之后是进行软件架构，因为需求比较多，显然如果直接动手写的话可能会导致无从下手、重复代码多、可维护性差、拓展性差等问题，所以在进行实际的代码书写之前先根据功能进行了模块的划分，用 uml 图的方式进行了结构的确立。这样的方式可以把庞大的需求分解成一个个子任务，同时可以将普适的结构抽象成接口，方便实现的同时也可以享有较规整的代码结构带来的益处。这一步需要花费的精力通常会比实际写代码花费的精力还多，因为好的架构可以事半功倍，反之亦然。当然，在动工前想出的架构一定不会是完美的，在动工后可能会（最后也的确是）出现各种各样的问题，此时也需要自行或咨询导师进行架构的调整。
 
-![uml](/assets/2020/chassist-final/uml.png)
+![uml](/assets/2020/chassist-final/uml.webp)
 
 最后也就是代码实现，在实际实现的过程中时常会遇到一些第三方库使用的问题。由于“不懂就问”的方式其实效率比较低下，因此在导师的建议下，在遇到问题时如果是 wechaty 框架的问题就先自行翻阅相关代码，直接阅读代码通常能解决大部分因为不知道如何使用接口或者不知道函数作用而引起的问题；如果是其他第三方库的问题则可以通过 github issue、documentary、google 等方式尝试自行解决。如果自行解决无果则将问题记录下来，当无法解决的问题达到一定数量时再与导师进行会议沟通。这样的问题解决方式确实比较高效，无论对自己还是对导师而言节省了大量时间。
 
@@ -123,3 +121,6 @@ tags:
 
 - 项目链接：[https://github.com/kxz18/CHAssisT](https://github.com/kxz18/CHAssisT)
 - 联系方式：+86 15068701650 | e: 15068701650@163.com
+
+> Author: [@kxz18](https://github.com/kxz18)
+> Code: [@kxz18/CHAssisT](https://github.com/kxz18/CHAssisT)

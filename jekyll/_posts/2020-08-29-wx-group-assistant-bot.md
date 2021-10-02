@@ -2,15 +2,13 @@
 title: "微信营销群机器人客服"
 author: zlh
 categories: project
-image: /assets/2020/wx-group-assistant-bot/wx-bot.jpg
+image: /assets/2020/wx-group-assistant-bot/wx-bot.webp
 tags:
   - nodejs
   - padplus
   - project
   - ecommerce
 ---
-
-## 背景与需求分析
 
 几乎人人都有微信，对于电商客服来说，通过微信群的方式管理好自己的客户是维护好客户关系很重要的方式。由于电商客服工作繁忙，他们急需一款机器人帮他们处理日常微信群管理中繁重的工作。
 

@@ -6,11 +6,11 @@ sidebar_label: Contributor program
 
 The _Wechaty Contributor Program_ provides valuable supports for qualified contributors.
 
-> Our Mission: build the most easy to use conversational SDK across all messaging platforms for chatbot makers.
+> Our Mission: build the most easy-to-use conversational SDK across all messaging platforms for chatbot makers.
 
-It takes a community to design, build, and ship great chatbot.
+It takes a community to design, build, and ship a great chatbot.
 
-Building an chatbot that on top of Wechaty? Apply for our Contributor Program! The possibilities are endless, and you enjoy the kudos.
+Building a chatbot that is on top of Wechaty? Apply for our Contributor Program! The possibilities are endless, and you enjoy the kudos.
 
 ## Table of Contents
 
@@ -29,7 +29,7 @@ Learn more about Wechaty Puppet Services from our [document](../puppet-services/
 
 ## 2. Support the Wechaty Project
 
-You can help the project by supporting this project as becoming a backer.  [![Backers on Open Collective](https://opencollective.com/wechaty/backers/badge.svg)](#backers)
+You can help the project by supporting this project as becoming a backer. [![Backers on Open Collective](https://opencollective.com/wechaty/backers/badge.svg)](#backers)
 
 The following are our existing backers. Thank you to everyone! 🙏 [[Become a backer](https://opencollective.com/wechaty#backer)]
 
@@ -39,7 +39,7 @@ The following are our existing backers. Thank you to everyone! 🙏 [[Become a b
 
 [![Wechaty Contributor Program](https://img.shields.io/badge/Wechaty-Contributor%20Program-green.svg)](https://wechaty.js.org/docs/contributing/)
 
-You need to add the __Wechaty Contributor Program__ badge after you join this program.
+You need to add the **Wechaty Contributor Program** badge after you join this program.
 
 ```md
 [![Wechaty Contributor Program](https://img.shields.io/badge/Wechaty-Contributor%20Program-green.svg)](https://wechaty.js.org/docs/contributing/)
@@ -82,7 +82,7 @@ Add this Wechaty badge to your README:
 
 Then add it to the list at [Project using Wechaty](http://wechaty.js.org/docs/case-study/projects-using-wechaty)
 
-## Third Party Supports for Wechaty Contributors
+## Third-Party Supports for Wechaty Contributors
 
 ### Juzi.BOT
 

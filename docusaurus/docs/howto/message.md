@@ -73,7 +73,7 @@ bot.on('message', onMessage)
 <TabItem value="js">
 
 ```js
-const { Message } = require('wechaty')
+import { Message }  from 'wechaty'
 
 async function onMessage(message) {
   if (await message.mentionSelf()) {
@@ -200,7 +200,7 @@ bot.on('message', onMessage)
 <TabItem value="js">
 
 ```js
-import { Message } from 'wechaty'
+import { Message }  from 'wechaty'
 
 async function onMessage (msg) {
   log.info('StarterBot', msg.toString())

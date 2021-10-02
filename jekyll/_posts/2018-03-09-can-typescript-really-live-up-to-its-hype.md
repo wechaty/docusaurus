@@ -4,10 +4,10 @@ author: suntong
 categories: article
 tags:
   - typescript
-image: /assets/2018/typescript-logo.png
+image: /assets/2018/typescript-logo.webp
 ---
 
-![TypeScript](/assets/2018/typescript-logo.png)
+![TypeScript](/assets/2018/typescript-logo.webp)
 
 Big companies or organizations push forward adopting of Typescript for a reason, mostly to prevent some dummies to shoot their own feet really easily -- The (almost only) advantage of Typescript is to point out, at the compile time, that the following usage is wrong:
 

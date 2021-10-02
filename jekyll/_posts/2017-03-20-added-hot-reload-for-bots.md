@@ -4,12 +4,10 @@ author: gcaufy
 categories: feature
 tags:
   - code
-image: /assets/2017/gcaufy-hot-reload-screencast.gif
+image: /assets/2017/gcaufy-hot-reload-screencast.webp
 ---
 
 ![avatars](https://avatars3.githubusercontent.com/u/2182004?v=3&s=88)
-
-作者：@[Gcaufy](https://github.com/gcaufy), Tencent, [Wechaty Contributor](https://github.com/orgs/Chatie/teams/contributor)
 
 Wechaty解决了很多我在使用微信运营过程中的痛点问题，这里就不再一一赘述了。同时Wechaty的API设计简洁优雅，部署方便也是另外一个吸引我的地方。
 
@@ -30,7 +28,7 @@ Wechaty解决了很多我在使用微信运营过程中的痛点问题，这里�
 也就是说设置一个profile就可以记住登录态，避免重启时的重复扫码动作。
 扫码问题可以得到解决，那么30-60s的启动时间是否还可以进一步优化呢？那就得弄清楚这30s的时间里，程序都在做什么。
 
-通过查看源代码 [browser-driver.ts](https://github.com/wechaty/wechaty/blob/master/src/puppet-web/browser-driver.ts) 发现，在执行init时，程序会启动一个driver，可以看作是打开了一个浏览器，然后获取浏览器 session，重复尝试三次直到失败。这里是Wechaty运行的基础，我们没有办法从这里去避免这30s的时间开销。只能从另外的方面去思考。
+通过查看源代码 [browser-driver.ts](https://github.com/wechaty/wechaty/blob/main/src/puppet-web/browser-driver.ts) 发现，在执行init时，程序会启动一个driver，可以看作是打开了一个浏览器，然后获取浏览器 session，重复尝试三次直到失败。这里是Wechaty运行的基础，我们没有办法从这里去避免这30s的时间开销。只能从另外的方面去思考。
 
 ## 2. Node.js 热重启
 
@@ -193,4 +191,6 @@ docker run -ti -e NODE_ENV=production --rm --volume="$(pwd)":/bot zixia/wechaty 
 
 到这里就基本介绍完了本篇文章的全部内容了，可以使用[example代码](https://github.com/wechaty/wechaty/tree/master/example/hot-reload-bot)来体验。
 
-[gcaufy-hot-reload]: /assets/2017/gcaufy-hot-reload-screencast.gif
+作者：@[Gcaufy](https://github.com/gcaufy), Tencent, [Wechaty Contributor](https://github.com/orgs/Chatie/teams/contributor)
+
+[gcaufy-hot-reload]: /assets/2017/gcaufy-hot-reload-screencast.webp

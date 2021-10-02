@@ -5,13 +5,8 @@ categories: project
 tags:
   - padplus
   - utility
-image: /assets/2020/repe-assistant/2020-05-16-repe-assistant.png
+image: /assets/2020/repe-assistant/2020-05-16-repe-assistant.webp
 ---
-
-> Author: [@xiaogan18](https://github.com/xiaogan18) Full stack developer,specialized golang and blockchain.
-> Code: [@Github](https://github.com/xiaogan18/repe-wechat-assistant)
-
-## 介绍
 
 repe社群助手主要是为了提高社群活跃度以及群活动管理而设计。管理员使用后台web发起一系列活动并设置动态的参与口令，群成员只需要发送对应口令即可参与活动，并且能够结合积分系统做一些约束和奖励。
 
@@ -160,3 +155,6 @@ http://localhost/example/1/actv
 ## 致谢
 
 repe bot机器人基于wechaty框架实现，十分感谢wechaty团队提供的技术让repe需求得以实现，wechaty对开源社区的贡献让人致敬。
+
+> Author: [@xiaogan18](https://github.com/xiaogan18) Full stack developer,specialized golang and blockchain.
+> Code: [@Github](https://github.com/xiaogan18/repe-wechat-assistant)

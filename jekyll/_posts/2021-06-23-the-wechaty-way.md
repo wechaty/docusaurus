@@ -1,13 +1,12 @@
 ---
-title: "Wechaty 社区贡献规范"
+title: "Wechaty 社区开源协作最佳实践指南"
 author: lijiarui
 categories:
   - announcement
 tags:
   - wechaty-way
-  - news
   - guide
-image: /assets/2021/06-the-wechaty-way/teaser.png
+image: /assets/2021/06-the-wechaty-way/teaser.webp
 ---
 
 Wechaty (Conversational RPA SDK) 2016 年发布于 GitHub，是一个基于 Apache-2.0 许可证的开源项目。经过5年多的发展，现在 Wechaty 开源社区已经拥有数十位 Committers，百余位 Contributors ，并被超过一万名 GitHub 开发者 Star。目前，使用 Wechaty 的开发者已覆盖数万人，并拥有基于微信群的数千人活跃开发者群。
@@ -57,9 +56,9 @@ Wechaty 社区持续秉承信息开放透明：
 - [Photo Album](https://photos.google.com/share/AF1QipOWKUfUkjw-VzE0skrjmCwbwIWwuBiI7Li4UCbdXH62n8iH2ITnvDbPTsx4eBl8dw?key=cy1NdWFoUGpXanVmczVHSm84TVg1LXJWeW5HTDhR)：Wechaty 活动的精选照片
 - [Hall of Fame](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.64c95c3y2l4v)：了解 Wechaty 名人堂
 
-## Wechaty 会议规范
+## Wechaty 会议流程最佳实践指南
 
-Wechaty 社区希望每一次会议尽可能让所有参与者都能专注参与，并且获得正向产出，保证会议简洁高效和社区透明，Wechaty 的会议有以下三个重要工具及使用规范。
+Wechaty 社区希望每一次会议尽可能让所有参与者都能专注参与，并且获得正向产出，保证会议简洁高效和社区透明，Wechaty 的会议有以下三个重要工具及使用指南。
 
 ### 1. Wechaty Meeting Notes
 
@@ -70,9 +69,9 @@ Meeting Notes 有以下几个价值：
 
 这是 Meeting Notes 的模板内容(可以在 Meeting Notes 最底部拿到文字版，我这里放了图片方便看格式)：
 
-![meeting-notes](/assets/2021/06-the-wechaty-way/meeting-notes.png)
+![meeting-notes](/assets/2021/06-the-wechaty-way/meeting-notes.webp)
 
-具体使用规范：
+具体使用流程指南：
 
 1. 组织者在开会之前来 [Meeting Notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.64c95c3y2l4v) 写好会议地点和时间，通常情况下，会议都是公开的，任何人都可以通过 Meeting Notes 中的 Zoom 链接视频参会。
 1. 参会者要在 **Attendees** 中注册自己的信息，包括：
@@ -105,7 +104,7 @@ Meeting Notes 有以下几个价值：
 
 [Wechaty ❤️ Google Season of Docs: Kick-off meeting with 20 Technical Writers!](https://www.youtube.com/watch?v=hTkM_XPpFfU&list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&index=43) 就是一个很好的示例。因为一次会议的时间很长，其他人看视频的时候就可以很容易根据下图介绍知道 **视频中 0:01:41 的时候讲的内容是 Introducing the Meeting Agenda**， 同时点击 **0:01:41** 可以快速跳转到视频播放的地方。
 
-![youtube-example](/assets/2021/06-the-wechaty-way/youtube-example.jpg)
+![youtube-example](/assets/2021/06-the-wechaty-way/youtube-example.webp)
 
 上传视频以后，主持人要去社区发布一个会议的博客，并嵌入视频内容，这样就能保证这次会议进行了存档并可以共享个社区的任何开发者。
 
@@ -123,12 +122,12 @@ Meeting Notes 有以下几个价值：
 
 Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hello Wechaty GSoD’21 Technical Writers](https://wechaty.js.org/2021/05/08/gsod-2021-selected-technical-writers/) 是一个很好的会议博客案例，完整的包含了上面的要求，建议第一次写会议博客的人先来看下这个案例。
 
-## Wechaty 博客发布规范
+## Wechaty 博客发布流程指南
 
 任何人都可以通过在 [wechaty.js.org](https://github.com/wechaty/wechaty.js.org) Repo 下面通过发布 PR 的方式发布博客。
 
 - [如何发布一篇 Wechaty 博客](https://github.com/wechaty/wechaty.js.org#how-to-post-a-blog)
-- [Wechaty 博客的撰写规范](https://github.com/wechaty/wechaty.js.org#guidelines-for-writing-a-blog-post)
+- [Wechaty 博客的撰写指南](https://github.com/wechaty/wechaty.js.org#guidelines-for-writing-a-blog-post)
 - [本地测试保证博客内容没有问题](https://github.com/wechaty/wechaty.js.org#how-to-run-tests)
 - [本地预览](https://github.com/wechaty/wechaty.js.org#how-to-preview-your-changes)
 
@@ -150,7 +149,7 @@ Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hell
 
 如果你是完全小白，可以参考 [atorber](https://wechaty.js.org/contributors/atorber/) 的这篇博客: [入门：小白如何在wechaty社区发布自己的第一篇博客（一）](https://wechaty.js.org/2021/04/22/how-to-publish-blog-on-wechaty/) 通过大量的截图一步一步告诉你如何发布Wechaty博客。
 
-## Wechaty Issue 发布规范
+## Wechaty Issue 发布流程指南
 
 社区希望遇到任何代码问题，都通过 issue 进行交流。
 
@@ -162,7 +161,7 @@ Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hell
 
 ### 1. 报 Bug
 
-模板内容见：[Bug Report](https://github.com/wechaty/wechaty/blob/master/.github/ISSUE_TEMPLATE/wechaty-bug-report.md)
+模板内容见：[Bug Report](https://github.com/wechaty/wechaty/blob/main/.github/ISSUE_TEMPLATE/wechaty-bug-report.md)
 
 报 Bug 最重要的事情是**复现**，只有可复现的bug，才可被解决。具体来讲，至少需要你给出以下的信息：
 
@@ -175,19 +174,19 @@ Wechaty 社区组织 Google Season Of Docs 的 Tech Writer 的会议博客 [Hell
 
 ### 2. 提新需求
 
-模板内容见：[Feature Request](https://github.com/wechaty/wechaty/blob/master/.github/ISSUE_TEMPLATE/wechaty-feature-request.md)
+模板内容见：[Feature Request](https://github.com/wechaty/wechaty/blob/main/.github/ISSUE_TEMPLATE/wechaty-feature-request.md)
 
 当你提出希望社区增加一个新的功能的时候，你需要详细的描述出为什么需要，以及你期待的这个需求具体的样子。你描述的越详细，越容易得到其他开发者的支持。被其他开发者支持的多的需求，越容易被提到更高的优先级上。
 
 ### 3. 问问题
 
-模板内容见：[Question](https://github.com/wechaty/wechaty/blob/master/.github/ISSUE_TEMPLATE/wechaty-question.md)
+模板内容见：[Question](https://github.com/wechaty/wechaty/blob/main/.github/ISSUE_TEMPLATE/wechaty-question.md)
 
 社区不希望你在 issue 中提问，最好的方式是去 [StackOverflow](https://stackoverflow.com/questions/tagged/wechaty) 上提问。
 
 Wechaty 的 Contributor [xpt](https://stackoverflow.com/users/2125837/xpt) 在 StackOverflow 有超过 10K 的 reputation, 他专门为 wechaty 创建了 tag，所以你在 StackOverflow 上通过搜索 wechaty 是能看到所有关于wechaty的问题的。同时，也建议开发者去  [StackOverflow](https://stackoverflow.com/questions/tagged/wechaty) 提问并打上 wechaty 的标签，方便其他开发者搜索相关问题。
 
-## Wechaty PR 发布规范
+## Wechaty PR 发布流程指南
 
 如果你不是 PR 一个博客，在 wechaty PR 之前一定要新建一个 issue，说清楚你要解决的问题，然后再发一个 PR， 并在这个 PR 中关联对应的 issue 链接，这样做的目的是明确告诉大家你提这个 PR 在解决什么问题，而不是只是提交一堆代码。
 
@@ -199,7 +198,7 @@ Wechaty 的 Contributor [xpt](https://stackoverflow.com/users/2125837/xpt) 在 S
 - 完成 CLA 的签署
 - 关联相关的 Issue 链接
 
-![pr](/assets/2021/06-the-wechaty-way/pr.png)
+![pr](/assets/2021/06-the-wechaty-way/pr.webp)
 
 ## Wechaty RFC
 
@@ -207,7 +206,7 @@ Wechaty 的 Contributor [xpt](https://stackoverflow.com/users/2125837/xpt) 在 S
 
 如这是 Wechaty Commiter [高原](https://wechaty.js.org/contributors/windmemory/) 发布的[提案](https://github.com/wechaty/wechaty/issues/1776)：
 
-![rfc](/assets/2021/06-the-wechaty-way/rfc.png)
+![rfc](/assets/2021/06-the-wechaty-way/rfc.webp)
 
 ## 进阶，了解 Apache Way，知道如何更好的参与开源项目
 

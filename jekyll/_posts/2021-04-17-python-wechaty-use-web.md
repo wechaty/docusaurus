@@ -8,13 +8,8 @@ tags:
   - web-protocol
   - python
   - featured
-  - sticky
-image: /assets/2021/04-python-wechaty-use-web/wechaty-love-wechaty-desktop.png
+image: /assets/2021/04-python-wechaty-use-web/wechaty-love-wechaty-desktop.webp
 ---
-
-> 作者: [wj-mcat](https://github.com/wj-Mcat) 自然语言处理算法工程师，python-wechaty 作者
-
-<!-- more -->
 
 写这篇文章的原因: go-wechaty作者[dchaofei](https://github.com/dchaofei)抢先写了[web协议复活的博客](https://wechaty.js.org/2021/04/16/go-wechaty-use-web/)，作为[python-wechaty](http://github.com/wechaty/python-wechaty)的作者我也需要给大家更加详细的介绍如何使用[python-wechaty](http://github.com/wechaty/python-wechaty)来登陆web版本的微信。
 
@@ -101,3 +96,5 @@ python-wechaty是一个非常简单的聊天机器人框架，理论上能够对
 * [web协议复活](https://wechaty.js.org/2021/04/13/wechaty-uos-web/)
 * [Python Wechaty Getting Started](https://wechaty.js.org/docs/polyglot/python/)
 * [puppet-providers](https://wechaty.js.org/docs/puppet-providers/wechat)
+
+> 作者: [wj-mcat](https://github.com/wj-Mcat) 自然语言处理算法工程师，python-wechaty 作者

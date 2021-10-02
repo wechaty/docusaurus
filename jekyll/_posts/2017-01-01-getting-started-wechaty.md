@@ -5,23 +5,10 @@ categories: tutorial
 tags:
   - code
   - news
-image: /assets/2017/lijiarui-speech-nodejs.jpg
+image: /assets/2017/lijiarui-speech-nodejs.webp
 ---
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IUDuxHaV9bQ?start=85" frameborder="0" allowfullscreen="" style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=IUDuxHaV9bQ?t=85" %}
 
 Wechaty is super easy to use, especially when you are using Docker.
 
@@ -106,4 +93,4 @@ docker run -ti --volume="$(pwd)":/bot --rm zixia/wechaty mybot.ts
 
 [Click here to get the repo](https://github.com/lijiarui/Getting-Started-with-Wechaty---Live-Coding-Tutorial "Click here to get the repo")
 
-[ruirui-speech-nodejs-image]: /assets/2017/lijiarui-speech-nodejs.jpg
+[ruirui-speech-nodejs-image]: /assets/2017/lijiarui-speech-nodejs.webp

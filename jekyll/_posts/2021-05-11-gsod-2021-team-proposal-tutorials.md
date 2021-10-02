@@ -11,7 +11,7 @@ tags:
   - project
   - proposal
   - team-proposal
-image: /assets/2021/05-gsod-2021-team-proposal-tutorials/wechaty-tutorials-proposal.png
+image: /assets/2021/05-gsod-2021-team-proposal-tutorials/wechaty-tutorials-proposal.webp
 ---
 
 This is the project proposal for creating and improving the **Wechaty Tutorials** documentation on which we will be working as a part of Google Season of Docs 2021. We are looking forward to completing this work during a span of **12 weeks** (or, 3 months).
@@ -70,6 +70,10 @@ The overall structure of the Tutorials will be as follows:
 * **Overview**
   
   Here we can have all the links for each of the pages present in the Tutorials section along with a brief description. This will help the user to easily navigate through the Docs.
+
+* **Installation**
+  
+  A guide for installing the development tools required for running Wechaty bot on any user system.
 
 * **Quick start**
   * Overview (containing a brief introduction to each of the sub pages)
@@ -159,73 +163,89 @@ A proposed structure of the tutorial documentation is as follows:
 * Try out the bot (**CodeSandbox** - already added: [#779](https://github.com/wechaty/wechaty.js.org/pull/779))
 * Update the step-by-step guide to have more technical details on how to build the bot, adding brief explanation of each function used
 * Add a **CodeSandbox** at the end with the TODO (as explained above)
-* Structure the tutorial properly as per the proposed structure given above
 
 ### Week 2
 
+* Structure the tutorial properly as per the proposed structure given above
+* Add an **Installation** page for guiding the users to install the tools required for running the Wechaty bot on their local system.
 * Update the [Tutorials: Overview](https://wechaty.js.org/docs/tutorials/) page by adding information about what are the different types of tutorial available that then can go through (keep updating this as new tutorials are added to the docs)
 * In the [Getting started overview](https://wechaty.js.org/docs/getting-started/) page add information about what are the different ways that can get started with Wechaty bots.
-* Include the **CodeSandbox** of the Ding Dong bot to the [Quick start](https://wechaty.js.org/docs/getting-started/quick-start) page, so that users can try out the bot directly.
-* Short videos may be included for running the Ding Dong bot using GitPod and Google Cloud Shell.
-* Update the page with screenshots or GIF of the Ding Dong bot running on a device (WeChat / WhatsApp).
-* Splitting Quick Start into two different pages, separate page for Running on Gitpod and same for Running on Cloudshell. (Removing the unnecessary information)
 
 ### Week 3
 
-* Add getting started examples for [Polyglot Wechaty](https://wechaty.js.org/docs/polyglot/) (multi-language) as per the conversation [here](https://github.com/wechaty/wechaty.js.org/pull/763#discussion_r619794643).
-* Update the page structure and include **CodeSandbox** for the bot (if necessary).
-* Add screenshots / GIFs to this page.
-* Device screenshots / GIF after running the bot.
+* Include the **CodeSandbox** of the Ding Dong bot to the [Quick start](https://wechaty.js.org/docs/getting-started/quick-start) page, so that users can try out the bot directly.
+* Short videos may be included for running the Ding Dong bot using GitPod and Google Cloud Shell.
+* Update the page with screenshots or GIF of the Ding Dong bot running on a device (WeChat / WhatsApp).
 
 ### Week 4
 
-* Check any improvements that can be made to the [Usage with Docker](https://wechaty.js.org/docs/tutorials/docker) page, and add any missing section (if required).
-* Verify the examples run properly on Wechaty Docker.
-* Make the page consistent and follow the proposed structure.
-* Add screenshots / GIF of the running Docker instance (if required)
+* Splitting Quick Start into two different pages, separate page for Running on Gitpod and same for Running on Cloudshell. (Removing the unnecessary information)
+* Create a subtopic under **Tutorials** called "**Deploying Wechaty**".
+* Keep the [Usage with Docker](https://wechaty.js.org/docs/tutorials/docker) page and the [Usage with Heroku](https://wechaty.js.org/docs/tutorials/usage-with-heroku) page as sub sections.
+
+  > NOTE: The Deploying Wechaty section may be included to the How-to guides section
+
+* If the Docker and Heroku page is included in the How-to guides then add respective links to the page.
 
 ### Week 5
 
-* Add instructions to the [Usage with Heroku](https://wechaty.js.org/docs/tutorials/usage-with-heroku) page.
-* Structure this page correctly.
-* Add screenshots while updating the instructions.
+* The [Using Plugin with Wechaty](https://wechaty.js.org/docs/tutorials/using-plugin-with-wechaty) page can be divided into several sub-sections each consisting of a tutorial for one Wechaty Plugin Contrib Package.
+* Adding information and step-by-step tutorial for each plugin.
 
 ### Week 6
 
-* The [Using Plugin with Wechaty](https://wechaty.js.org/docs/tutorials/using-plugin-with-wechaty) page can be divided into several sub-sections each consisting of a tutorial for one Wechaty Plugin Contrib Package.
-* Adding information and step-by-step tutorial for each plugin.
-* Include a **CodeSandbox** to try out the bot.
+* Include a **CodeSandbox** in order to try out the bot to the [Using Plugin with Wechaty](https://wechaty.js.org/docs/tutorials/using-plugin-with-wechaty) page.
 * Add screenshots and GIFs where necessary.
 
 ### Week 7
 
-* Continue with creating separate pages for each plugin.
-* Make each page follow the proposed structure
-* Adding information and step-by-step tutorial for each plugin.
-* Include a **CodeSandbox** to try out the bot.
-* Adding screenshots and GIFs where necessary.
+* Add proper introduction to the [Using Redux with Wechaty](https://wechaty.js.org/docs/tutorials/using-redux-with-wechaty) along with a defined goal for following this tutorial.
+* Structure the page properly
 
 ### Week 8
 
-* Add proper introduction to the [Using Redux with Wechaty](https://wechaty.js.org/docs/tutorials/using-redux-with-wechaty) along with a defined goal for following this tutorial.
-* Structure the page properly
-* Include code explanation and interactive **CodeSandbox**.
+* Include code explanation and interactive **CodeSandbox** to [Using Redux with Wechaty](https://wechaty.js.org/docs/tutorials/using-redux-with-wechaty).
 * Add screenshots or GIFs (if necessary)
 
 ### Week 9
 
-* Create tutorial pages for some of the bots mentioned on the [Showcases](https://wechaty.js.org/docs/showcases/) page (need feedback from the community members).
-* Build tutorial for [OSSChat](https://wechaty.js.org/docs/showcases/osschat-bot) bot (if approved by community members).
-* Add **CodeSandbox** and code explanation.
-* Add screenshots or GIFs (if necessary)
+* Work on the **[Examples](https://wechaty.js.org/docs/tutorials/examples) Basic** section
+* Update content of the Examples: **Overview** section.
+* Improve the bots that are already added: **Ding Dong bot** & **Contact bot**
+* Add content to the **World's shortest Chatbot** page.
 
 ### Week 10
 
-* Work on creating tutorials for using the [RuiBot](https://wechaty.js.org/docs/showcases/rui-bot) & [Friday BOT](https://wechaty.js.org/docs/showcases/friday-bot)
-* Include step-by-step guide and **CodeSandbox**
-* Add screenshots or GIFs (if necessary)
+* Work on the **[Examples](https://wechaty.js.org/docs/tutorials/examples) Advanced** section
+* Add content to the **Room bot**, **Busy bot**, **Friend bot**
+* Include **CodeSandBox** to these pages
+* Fix sandbox QR code of Friend bot
 
 ### Week 11
+
+* Work on the **[Examples](https://wechaty.js.org/docs/tutorials/examples) Advanced** section
+* Add content to the **Demo bot**, **Media file bot**, **Gist bot**
+* Include **CodeSandBox** to these pages
+
+### Week 12
+
+* Work on the **[Examples](https://wechaty.js.org/docs/tutorials/examples) Professional** section
+* Add content to the **Hot-import bot**, **Ctrl-C bot**, **Monster bot**
+* Include **CodeSandBox** to these pages
+
+### Week 13
+
+* Work on the **[Examples](https://wechaty.js.org/docs/tutorials/examples) Professional** section
+* Add content to the **API AI bot**, **Speech-to-text bot**, **Tuling bot**
+* Include **CodeSandBox** to these pages
+
+### Week 14
+
+* Work on the **[Examples](https://wechaty.js.org/docs/tutorials/examples) Professional** section
+* Add content to the **Telegram Roger bot**, **Blessed Twins bot**
+* Include **CodeSandBox** to these pages
+
+### Week 15
 
 * Start working on the [Cheat Sheet](https://wechaty.js.org/docs/tutorials/cheatsheet) which would consist of the following:
   * Brief description of a bot
@@ -236,11 +256,18 @@ A proposed structure of the tutorial documentation is as follows:
 
 Creating the cheat sheet will take time (most probably two weeks).
 
-### Week 12
+### Week 16
 
 * Continue with the cheat sheet.
 * Create short video tutorials for some of the most used bots (if necessary).
-* Decide what are the things to be included to the [Examples](https://wechaty.js.org/docs/tutorials/examples) page.
+* Create tutorial pages for some of the bots mentioned on the [Showcases](https://wechaty.js.org/docs/showcases/) page (need feedback from the community members).
+
+### Week 17
+
+* Add getting started examples for [Polyglot Wechaty](https://wechaty.js.org/docs/polyglot/) (multi-language) as per the conversation [here](https://github.com/wechaty/wechaty.js.org/pull/763#discussion_r619794643).
+* Update the page structure and include **CodeSandbox** for the bot (if necessary).
+* Add screenshots / GIFs to this page.
+* Device screenshots / GIF after running the bot.
 
 This is an estimated project goal, changes might be done if suggested by mentors and community members.
 

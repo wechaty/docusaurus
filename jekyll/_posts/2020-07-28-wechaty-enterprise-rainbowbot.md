@@ -8,11 +8,8 @@ tags:
   - koa
   - weixin-openai
   - productivity
-image: /assets/2020/wechaty-rainbowbot/rainbow.jpg
+image: /assets/2020/wechaty-rainbowbot/rainbow.webp
 ---
-
-> Author: [@CavonCheng](https://github.com/CavonCheng)
-> Code: [@rainbow-bot](https://github.com/CavonCheng/rainbow-bot)
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
 [![Wechaty开源激励计划](https://img.shields.io/badge/Wechaty-开源激励计划-green.svg)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
@@ -57,7 +54,7 @@ image: /assets/2020/wechaty-rainbowbot/rainbow.jpg
 
 为了避免重复制造轮子，我翻阅了不少已有的Wechaty项目，有基于爬虫+定时任务来实现外部系统与微信端通信的应用，但这与我的需求还是有区别的。我希望实现的是（理论上）任意时间点，外部系统主动调用接口与微信之间进行通信。最后决定自己动手搞起来，理论模型已经很清晰，一个最简单的实现结构是这样的：
 
-![结构图](/assets/2020/wechaty-rainbowbot/pic1.png)
+![结构图](/assets/2020/wechaty-rainbowbot/pic1.webp)
 
 RainbowBot作为中间通信桥梁，就像一弯`彩虹`，连接起远在天边的两个独立系统。
 
@@ -159,3 +156,6 @@ node app
 ## 感谢
 
 感谢[@beclass](https://github.com/beclass/beclass)的开源项目[`wxbot`](https://github.com/beclass/wxbot)，这是一套优秀的BS版微信robot后台管理系统，让我这枚nodejs全栈初级修炼者学习到了很多，受益匪浅。感谢[Wechaty](https://wechaty.github.io/)团队提供微信机器人SDK，让开发者可以专注于业务代码。 感谢[句子互动](https://www.juzibot.com)提供的pad协议版token。
+
+> Author: [@CavonCheng](https://github.com/CavonCheng)
+> Code: [@rainbow-bot](https://github.com/CavonCheng/rainbow-bot)

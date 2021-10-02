@@ -4,12 +4,8 @@ author: crossly
 categories: tutorial
 tags:
   - financial
-image: /assets/2020/financial-marketing/2020-03-30-wechaty-bond-bot.png
+image: /assets/2020/financial-marketing/2020-03-30-wechaty-bond-bot.webp
 ---
-
-> 作者: lemonsx(柠檬x)，证券从业者，前平台产品经理
-
-<!-- more -->
 
 首先，先为我拙劣的代码道个歉。临时野生程序员JS为现学，各种不规范请见谅。
 
@@ -92,16 +88,16 @@ BOT启动时，加载定时任务。每天早上主动往管理的群推送打�
  */
 async function onReady(){
     try {
-        const CronJob = require('cron').CronJob;
-        const isHoliday = require("../functions/holiday")
-        const moment = require('moment');
+        import CronJob  from 'cron'.CronJob;
+        import isHoliday  from '../functions/holiday'
+        import moment  from 'moment';
         const bot = this
         const job = new CronJob('15 9 * * *', async function() {
         // const job = new CronJob('*/1 * * * *', async function() {
           //  if (isHoliday(moment().format("YYYY-MM-DD"))){
             //    return
            // }
-            const config = require('../config')
+            import config  from '../config'
             console.log(new Date().toLocaleDateString()+'Tick Tick Tick');
             for (x in config.PushGroups){
                 const room = await bot.Room.find({topic: config.PushGroups[x]})
@@ -180,8 +176,8 @@ module.exports = onRoomJoin
 module.exports = {
     syncGroupMembers: async function(topic, members) {
         try {
-            const low = require('lowdb')
-            const FileSync = require('lowdb/adapters/FileSync')
+            import low  from 'lowdb'
+            import FileSync  from 'lowdb/adapters/FileSync'
             const adapter = new FileSync('./db/db.json')
             const db = low(adapter)
             if (db.get('groups')
@@ -205,8 +201,8 @@ module.exports = {
     },
     getGroupMember: async function(topic) {
         try {
-            const low = require('lowdb')
-            const FileSync = require('lowdb/adapters/FileSync')
+            import low  from 'lowdb'
+            import FileSync  from 'lowdb/adapters/FileSync'
             const adapter = new FileSync('./db/db.json')
             const db = low(adapter)
             const data =  db.get('groups')
@@ -247,4 +243,6 @@ module.exports = {
 
 对了，如果您想要体验我的机器人，或者对可转债套利有兴趣。您都可以扫描我的机器人进行体验。
 
-![Maple's financial bot](/assets/2020/financial-marketing/2020-03-30-wechat-bot-demo.jpg)
+![Maple's financial bot](/assets/2020/financial-marketing/2020-03-30-wechat-bot-demo.webp)
+
+> 作者: lemonsx(柠檬x)，证券从业者，前平台产品经理

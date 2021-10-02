@@ -5,11 +5,8 @@ categories: project
 tags:
   - padplus
   - ecommerce
-image: /assets/2020/wechat-group-integral-robot/header.jpg
+image: /assets/2020/wechat-group-integral-robot/header.webp
 ---
-
-> 作者: [Hzhuhao](https://github.com/hzhuhao/)
-> Code: [Github](https://github.com/hzhuhao/wechaty-integral-robot)
 
 [![Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![开源激励计划](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
@@ -26,7 +23,7 @@ image: /assets/2020/wechat-group-integral-robot/header.jpg
 
 当用户在群里发好评时，@该用户会给用户添加自定义积分。
 
-![效果图](/assets/2020/wechat-group-integral-robot/wxscreen.png)
+![效果图](/assets/2020/wechat-group-integral-robot/wxscreen.webp)
 
 ### 结构
 
@@ -59,13 +56,13 @@ wechaty-puppet-padplus：wechaty的ipad协议实现
 ## 代码介绍
 
 ```javascript
-const { Wechaty } = require("wechaty") // Wechaty核心包
-const { PuppetPadplus } = require("wechaty-puppet-padplus") // padplus协议包
-const config = require("./config/config") // 配置文件
-const onScan = require("./src/onScan") // 机器人需要扫描二维码时监听回调
-const onRoomJoin = require("./src/onRoomJoin") // 加入房间监听回调
-const onMessage = require("./src/onMessage") // 消息监听回调
-const onFriendShip = require("./src/onFriendShip") // 好友添加监听回调
+import { Wechaty }  from 'wechaty' // Wechaty核心包
+import { PuppetPadplus }  from 'wechaty-puppet-padplus' // padplus协议包
+import config  from './config/config' // 配置文件
+import onScan  from './src/onScan' // 机器人需要扫描二维码时监听回调
+import onRoomJoin  from './src/onRoomJoin' // 加入房间监听回调
+import onMessage  from './src/onMessage' // 消息监听回调
+import onFriendShip  from './src/onFriendShip' // 好友添加监听回调
 
 // 初始化
 const bot = new Wechaty({
@@ -131,3 +128,6 @@ npm start
 感谢句子互动提供的pad协议版token。  
 wechaty: <https://wechaty.github.io/>  
 juzibot: <https://www.juzibot.com>
+
+> 作者: [Hzhuhao](https://github.com/hzhuhao/)
+> Code: [Github](https://github.com/hzhuhao/wechaty-integral-robot)

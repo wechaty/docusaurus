@@ -1,7 +1,7 @@
 ---
 title: "New Wechaty Puppet Service: PadLocal"
 author: padlocal
-image: /assets/2020/padlocal/logo.png
+image: /assets/2020/padlocal/logo.webp
 categories: announcement
 tags:
   - news
@@ -53,7 +53,7 @@ tags:
 
 整体架构的拓扑图就如下所示：
 
-![拓扑图](/assets/2020/padlocal/topological-graph.png)
+![拓扑图](/assets/2020/padlocal/topological-graph.webp)
 
 再回过头来看，通过实现一个 puppet，我们自身也收获了非常多的东西。首先对 Wechaty 有了更加深入的了解，能更真切体会设计者的初衷，以及其中的权衡取舍。Wechaty 能够如此易用，都是精心设计后的结果。这是一个美妙的旅程；其次实现一个 Wechaty puppet 是一件十分有挑战的事情，能够完成这样一件事情当然成就感满满；再者可以从内部视角，比较深入和全面的了解微信端上的运行机制和设计思想。作为国民级的通信软件，微信的设计十分出色，各种各样机制、设计理念完全可以担当行业标准，无愧是这个领域绝对的王者。
 

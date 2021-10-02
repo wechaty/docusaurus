@@ -6,10 +6,8 @@ tags:
   - puppet-service
   - padlocal
 categories: tutorial
-image: /assets/2021/02-python-wechaty-for-padlocal-puppet-service/python-wechaty-logo.png
+image: /assets/2021/02-python-wechaty-for-padlocal-puppet-service/python-wechaty-logo.webp
 ---
-
-## Python Wechaty如何使用PadLocal Puppet Service
 
 本文描述Python语言下如何使用iPad协议的PadLocal Token。其他Wechaty多语言开发也能做参考。
 
@@ -48,7 +46,7 @@ docker run -ti \
 
 ```shell
 curl https://api.chatie.io/v0/hosties/$WECHATY_TOKEN (个人随机token)
-{"ip":"36.7.XXX.XXX","port":9001}
+{"host":"36.7.XXX.XXX","port":9001}
 ```
 
 ## python-Wechaty对接GateWay

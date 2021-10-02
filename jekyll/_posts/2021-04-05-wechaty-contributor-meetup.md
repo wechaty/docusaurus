@@ -1,7 +1,7 @@
 ---
 title: "Wechaty Contributor Beijing Meetup 2020/04"
 author: padlocal
-image: /assets/2021/04-wechaty-contributor-meetup/cheers.jpg
+image: /assets/2021/04-wechaty-contributor-meetup/cheers.webp
 categories: story
 tags:
   - meetup
@@ -11,8 +11,6 @@ tags:
 Wechaty Contributor 北京聚餐
 
 ![Photo][wechaty-beijing-meetup-photo]
-
-<!--more-->
 
 正值清明节，我们组织了一个小范围的 Wechaty Contributor 线下聚会。
 说起来有些唐突，因为事先并没有预约，由我临时起意问大家有没有空，毕竟 PadLocal 发布以来还没有和社区大佬们见过面。
@@ -43,4 +41,4 @@ Wechaty Contributor 北京聚餐
 
 [@padlocal](https://github.com/padlocal): Wechaty Padlocal puppet
 
-[wechaty-beijing-meetup-photo]: /assets/2021/04-wechaty-contributor-meetup/cheers.jpg
+[wechaty-beijing-meetup-photo]: /assets/2021/04-wechaty-contributor-meetup/cheers.webp
