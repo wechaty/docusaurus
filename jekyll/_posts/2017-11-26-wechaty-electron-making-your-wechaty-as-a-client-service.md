@@ -6,7 +6,7 @@ tags:
   - code
   - featured
   - utility
-image: /assets/2017/wechaty-electron-making-your-wachaty-as-a-client-service1.jpg
+image: /assets/2017/wechaty-electron-making-your-wachaty-as-a-client-service1.webp
 ---
 
 ## 初识wechaty
@@ -118,10 +118,10 @@ app.on('ready', () => {
 
 ps: 这几天听闻微信网页端要封的消息，尚不知真假。不过，技术本身更加吸引我。倘若web端被封杀，肯定会涌现出新的解决方案，对技术本身而言，也不算一件坏事情。
 
-  [1]: /assets/2017/wechaty-electron-making-your-wachaty-as-a-client-service1.jpg
-  [2]: /assets/2017/wechaty-electron-making-your-wechaty-as-a-client-service2.jpg
-  [3]: /assets/2017/wechaty-electron-making-your-wachaty-as-a-client-service3.jpg
-  [4]: /assets/2017/wechaty-electron-making-your-wechaty-as-a-client-service4.jpg
+  [1]: /assets/2017/wechaty-electron-making-your-wachaty-as-a-client-service1.webp
+  [2]: /assets/2017/wechaty-electron-making-your-wechaty-as-a-client-service2.webp
+  [3]: /assets/2017/wechaty-electron-making-your-wachaty-as-a-client-service3.webp
+  [4]: /assets/2017/wechaty-electron-making-your-wechaty-as-a-client-service4.webp
 
 ![a](https://avatars1.githubusercontent.com/u/33899027?s=88&v=3)
 

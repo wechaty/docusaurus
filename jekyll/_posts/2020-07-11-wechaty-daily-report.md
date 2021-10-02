@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - productivity
-image: /assets/2020/wechaty-daily/daily.png
+image: /assets/2020/wechaty-daily/daily.webp
 ---
 
 [![Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
@@ -40,15 +40,15 @@ github:[https://github.com/zzhoouxin/wechaty-bot](https://github.com/zzhoouxin/w
 ## 项目成果
 
 - 日常提醒
-    ![效果图](/assets/2020/wechaty-daily/daily.png)
+    ![效果图](/assets/2020/wechaty-daily/daily.webp)
 - 定时发送日报
-    ![效果图](/assets/2020/wechaty-daily/daily2.png)
+    ![效果图](/assets/2020/wechaty-daily/daily2.webp)
 - 根据关键字发送日报内容
-    ![image.png](/assets/2020/wechaty-daily/daily3.png)
+    ![image.png](/assets/2020/wechaty-daily/daily3.webp)
 
 ## 1.项目结构
 
-![image.png](/assets/2020/wechaty-daily/daily4.png)
+![image.png](/assets/2020/wechaty-daily/daily4.webp)
 
 - bot 存放 wechaty 每个状态的回调函数
 - schecdule 定时任务-获取日报并发送
@@ -102,7 +102,7 @@ module.exports = {
 };
 ```
 
-![image.png](/assets/2020/wechaty-daily/daily5.png)
+![image.png](/assets/2020/wechaty-daily/daily5.webp)
 
 里面的 wiki_url 是我们自己平常填写日报的 wiki 地址。如果您使用其他方式-那就具体情况具体分析
 
@@ -203,7 +203,7 @@ module.exports = (bot) => {
 
 2个依赖库-主要用到请求我们日报地址 并且获取所需要的内容
 
-![image.png](/assets/2020/wechaty-daily/daily5.png)
+![image.png](/assets/2020/wechaty-daily/daily5.webp)
 
 这个是我们 wiki 文档的项目结构-我们首先需求通过 superagent 请求访问该页面-并且通过 cheero 获取内容。当然这 2 个依赖库使用。建议先熟悉一下官方文档。下文代码做了一些兼容--
 

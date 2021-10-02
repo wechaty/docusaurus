@@ -2,7 +2,7 @@
 title: "基于开放 API 封装 Wechaty 接口下的飞书聊天机器人：期末"
 author: roxanne718
 categories: project
-image: /assets/2020/lark-puppet/wechaty-lark-final.png
+image: /assets/2020/lark-puppet/wechaty-lark-final.webp
 tags:
   - featured
   - summer-2020

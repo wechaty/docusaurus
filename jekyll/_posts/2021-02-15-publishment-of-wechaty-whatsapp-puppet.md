@@ -7,7 +7,7 @@ tags:
   - release
   - puppet-provider
   - whatsapp
-image: /assets/2021/02-publishment-of-wechaty-whatsapp-puppet/logo.png
+image: /assets/2021/02-publishment-of-wechaty-whatsapp-puppet/logo.webp
 ---
 
 With the introduction of wechaty puppet and the growth of the wechaty ecosystem and community, we're happy to introduce `wechaty-puppet-whatsapp` which connects Wechaty API, the conversational RPA SDK for chatbot makers, and WhatsApp, a free, multi-platform messaging app.
@@ -54,7 +54,7 @@ bot.start()
 
 After scanning a WhatsApp QR code and logging in, you can view the received messages in the terminal, feel free to implement your own function over the messages based on your need.
 
-![basic demo](/assets/2021/02-publishment-of-wechaty-whatsapp-puppet/wechaty-puppet-whatsapp-demo.png)
+![basic demo](/assets/2021/02-publishment-of-wechaty-whatsapp-puppet/wechaty-puppet-whatsapp-demo.webp)
 
 ## Next Steps
 
