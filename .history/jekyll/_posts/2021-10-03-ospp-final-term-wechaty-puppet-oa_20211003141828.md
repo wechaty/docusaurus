@@ -4,7 +4,7 @@ author: zzzyer
 categories:
   - project
   - ospp
-image: /assets/2021/10-ospp-final-term-wechaty-puppet-oa/wechaty-puppet-official-account.webp
+image: /assets/2021/09-ospp-final-term-wechaty-puppet-oa/wechaty-puppet-official-account.webp
 tags:
   - puppet
   - summer-of-wechaty
@@ -93,4 +93,4 @@ Bilibili link: <https://www.bilibili.com/video/BV1344y1t7aU/>
 
 ### 项目PPT
 
-{% include iframe.html src="/assets/2021/10-ospp-final-term-wechaty-puppet-oa/final-term-ppt.pdf" %}
+{% include iframe.html src="/assets/2021/09-ospp-final-term-wechaty-puppet-oa/final-term-ppt.pptx" %}
