@@ -67,15 +67,15 @@ tags:
 
 ### live coding视频
 
-<!-- {% include iframe.html src="https://youtu.be/qFqrAqmSrQ8" %}
+{% include iframe.html src="https://youtu.be/qtbExkN0uoI" %}
 
-> 国内链接：<https://www.bilibili.com/video/BV12A411c7Nz/> -->
+> 国内链接：<https://www.bilibili.com/video/BV1Eq4y1Z7Ya/>
 
 ### PPT展示视频
 
-<!-- {% include iframe.html src="https://youtu.be/FgGFc_f_-oM" %}
+{% include iframe.html src="https://youtu.be/3j3BGRnoVtE" %}
 
-> 国内链接：<https://www.bilibili.com/video/BV1q3411B7qi/> -->
+> 国内链接：<https://www.bilibili.com/video/BV1QR4y1p7Hd/>
 
 ### 项目PPT
 
