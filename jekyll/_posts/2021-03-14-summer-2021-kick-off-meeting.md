@@ -2,7 +2,7 @@
 title: "Summer of Wechaty, 我们来啦"
 author: roxanne718
 categories: event
-image: /assets/2021/03-summer-2021-kick-off-meeting/summer2021.png
+image: /assets/2021/03-summer-2021-kick-off-meeting/summer2021.webp
 tags:
   - summer-2021
   - summer-of-wechaty

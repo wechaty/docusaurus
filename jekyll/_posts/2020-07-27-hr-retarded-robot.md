@@ -57,9 +57,9 @@ npm start or yarn start
 
 ## 功能截图
 
-![管理员配置端](/assets/2020/retarded-robot/private-menu.png)
-![管理员配置端-1](/assets/2020/retarded-robot/private-feat.png)
-![群里工作信息查询](/assets/2020/retarded-robot/room-feat.png)
+![管理员配置端](/assets/2020/retarded-robot/private-menu.webp)
+![管理员配置端-1](/assets/2020/retarded-robot/private-feat.webp)
+![群里工作信息查询](/assets/2020/retarded-robot/room-feat.webp)
 
 ## 致谢
 

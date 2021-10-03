@@ -7,12 +7,12 @@ tags:
   - honor
   - open-source
   - news
-image: /assets/2020/12-open-source-award-wechaty/oss-award-rui.jpg 
+image: /assets/2020/12-open-source-award-wechaty/oss-award-rui.webp 
 ---
 
 ​​12月30日，Wechaty开源社区再度拿下重要荣誉，由中国开源云联盟举办的《第十届中国云计算标准和应用大会》上，Wechaty与阿里、小米、华为等巨头并列，入选中国优秀开源项目。
 
-![中国开源云联盟 - 2020优秀开源项目 - Wechaty](/assets/2020/12-open-source-award-wechaty/oss-honor.jpg)
+![中国开源云联盟 - 2020优秀开源项目 - Wechaty](/assets/2020/12-open-source-award-wechaty/oss-honor.webp)
 
 中国开源云联盟（COSCL）成立于2012年8月，是我国最顶级开源组织之一，现有我国180余家开源生态圈产、学、研、用成员单位，致力于联合国内开源产业界相关方，在中国共同推动开源生态系统搭建、技术社区建设、开源项目培育、开源团体标准研制、开源技术推广应用等工作。
 
