@@ -73,17 +73,17 @@
 
 ### live coding视频
 
-{% include iframe.html src="https://youtu.be/fAIZS9lgxjo" %}
-国内链接：[xxx](xxx)
+{% include iframe.html src="https://youtu.be/lH3giTpdOtM" %}
+国内链接：[https://v.qq.com/x/page/h3280a7pbwi.html](https://v.qq.com/x/page/h3280a7pbwi.html)
 
 ### PPT展示视频
 
-{% include iframe.html src="https://youtu.be/IwMA8VJZZqE" %}
-国内链接: [xxx](xxx)
+{% include iframe.html src="https://youtu.be/-HOF0LV1d54" %}
+国内链接: [https://v.qq.com/x/page/h3280md1b6i.html](https://v.qq.com/x/page/h3280md1b6i.html)
 
 ### 项目PPT
 
-{% include iframe.html src="/assets/2021/08-ospp-mid-term-wechaty-puppet-lark/mid-term-ppt.pdf" %}
+{% include iframe.html src="/assets/2021/09-ospp-final-term-wechaty-puppet-lark/final-term-ppt.pdf" %}
 
 ## 联系我们
 
