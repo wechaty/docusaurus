@@ -4,7 +4,7 @@ author: mukaiu
 categories: feature
 tags:
   - code
-image: /assets/2017/mukaiu-ding-code.jpg
+image: /assets/2017/mukaiu-ding-code.webp
 ---
 
 公司活动，需要对入群用户进行管理和自动回复。前期在Node Party Beijing上接触到 @huan 的分享，Wechaty刚好能支持该活动，支持Docker部署，是一个很棒的Bot Framework。
@@ -164,4 +164,4 @@ Room.say(mediaMessage: MediaMessage)
 
 ![avatars2](https://avatars2.githubusercontent.com/u/7746790?v=3&s=88)
 
-[mukaiu-ding-code]: /assets/2017/mukaiu-ding-code.jpg
+[mukaiu-ding-code]: /assets/2017/mukaiu-ding-code.webp
