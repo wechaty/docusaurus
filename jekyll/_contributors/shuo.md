@@ -1,6 +1,6 @@
 ---
 name: 田鼠
-avatar: /assets/contributors/shuo/avatar.jpg
+avatar: /assets/contributors/shuo/avatar.webp
 bio: 可能是世界上最无聊的人 
 ---
 
