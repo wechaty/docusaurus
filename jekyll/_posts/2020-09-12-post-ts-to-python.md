@@ -1,7 +1,7 @@
 ---
 title: "Wechaty 将 TS 转发到 Python 的探索实践"
 author: jcq15
-image: /assets/2020/post-ts-to-python/screenshot.jpg
+image: /assets/2020/post-ts-to-python/screenshot.webp
 categories: project
 tags:
   - padplus

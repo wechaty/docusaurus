@@ -7,7 +7,7 @@ tags:
   - talk
   - meetup
   - news
-image: /assets/2019/bot5-seminar-0/group-photo.jpg
+image: /assets/2019/bot5-seminar-0/group-photo.webp
 ---
 
 << 本次活动通知: [腾讯+句子互动=碰撞思想，点燃科技](https://mp.weixin.qq.com/s?__biz=MzU3OTk2MzA1Nw==&mid=2247485197&idx=1&sn=404c319ad11b9e12515d127dfabf7efd) <<
@@ -155,11 +155,11 @@ Our Vision: Became the hottest place for a Friday night out with the chatbots! T
 
 ### 5 集体合影
 
-![合照](/assets/2019/bot5-seminar-0/group-photo.jpg)
+![合照](/assets/2019/bot5-seminar-0/group-photo.webp)
 
 ## After Party 🍻
 
-![After Party](/assets/2019/bot5-seminar-0/after-party.jpg)
+![After Party](/assets/2019/bot5-seminar-0/after-party.webp)
 
 Bot Friday Zero 主场活动结束后，意(ji)犹(chang)未(lu)尽(lu)的三个人前往第三极大厦十字路口对面的管氏串吧继续补充能量，大家一起头脑风暴了活动的参加人员、可持续性发展、讨论主题，以及活动名称等，并成功的消灭了4L鲜啤。
 

@@ -5,7 +5,7 @@ categories: event
 tags:
   - talk
   - news
-image: /assets/2016/nodeparty-banner.jpg
+image: /assets/2016/nodeparty-banner.webp
 ---
 
 ![Node Party Banner][nodeparty-banner]
@@ -79,6 +79,6 @@ image: /assets/2016/nodeparty-banner.jpg
 主办
 Rockq社区
 
-[nodeparty-banner]: /assets/2016/nodeparty-banner.jpg
-[nodeparty-speaker]: /assets/2016/nodeparty-speaker.jpg
-[nodeparty-speaker2]: /assets/2016/nodeparty-speaker2.jpg
+[nodeparty-banner]: /assets/2016/nodeparty-banner.webp
+[nodeparty-speaker]: /assets/2016/nodeparty-speaker.webp
+[nodeparty-speaker2]: /assets/2016/nodeparty-speaker2.webp
