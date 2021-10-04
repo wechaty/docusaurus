@@ -1,6 +1,6 @@
 ---
 title: "人类的本质是复读机 - 可能是世界上最无聊的机器人"
-author: shuo
+author: burgerburglar
 categories: project
 tags:
   - typescript
@@ -121,7 +121,7 @@ image: /assets/2021/09-the-stupidest-bot-ever-created/640px-internet-meme-about-
 
 ![mention-me](/assets/2021/09-the-stupidest-bot-ever-created/mention-me.webp)
 
-![mention-me-nsfw](/assets/2021/09-the-stupidest-bot-ever-created/135126423-675472a8-f86c-450c-a20e-54106782655b.webp)
+![mention-me-nsfw](/assets/2021/09-the-stupidest-bot-ever-created/mention-me-nsfw.webp)
 
 ## 让川普举牌子
 
