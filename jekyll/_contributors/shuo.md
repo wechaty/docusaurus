@@ -1,5 +1,5 @@
 ---
-name: 田鼠
+name: burgerburglar
 avatar: /assets/contributors/shuo/avatar.webp
 bio: 可能是世界上最无聊的人 
 ---
