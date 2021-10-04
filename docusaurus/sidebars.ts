@@ -334,7 +334,6 @@ const explanations = {
   items: [
     'explanations/overview',
     'explanations/rpa',
-    'explanations/motivations',
     'explanations/concepts',
     'explanations/architecture',
     'explanations/alternatives',
