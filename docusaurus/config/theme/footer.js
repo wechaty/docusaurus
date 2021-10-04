@@ -8,7 +8,7 @@ const footer = {
         { label: 'Tutorials',     to: 'docs/tutorials/' },
         { label: 'Explanations', to: 'docs/explanations/' },
         { label: 'References',    to: 'docs/references/' },
-        { label: 'Howto Guides',  to: 'docs/howto/' },
+        { label: 'How-to Guides',  to: 'docs/howto/' },
       ],
     },
     {
