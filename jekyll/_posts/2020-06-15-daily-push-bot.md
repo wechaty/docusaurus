@@ -6,7 +6,7 @@ tags:
   - python
   - padplus
   - media
-image: /assets/2020/daily-push-wechat-robot/fake-robot.jpg
+image: /assets/2020/daily-push-wechat-robot/fake-robot.webp
 
 ---
 
@@ -123,12 +123,12 @@ image: /assets/2020/daily-push-wechat-robot/fake-robot.jpg
 
 ## 部分功能展示
 
-![群内推送](/assets/2020/daily-push-wechat-robot/push-inroom.png)
-![私聊推送](/assets/2020/daily-push-wechat-robot/push-per.png)
-![自我介绍](/assets/2020/daily-push-wechat-robot/intro.png)
-![非文本回复颜文字](/assets/2020/daily-push-wechat-robot/emoji.png)
+![群内推送](/assets/2020/daily-push-wechat-robot/push-inroom.webp)
+![私聊推送](/assets/2020/daily-push-wechat-robot/push-per.webp)
+![自我介绍](/assets/2020/daily-push-wechat-robot/intro.webp)
+![非文本回复颜文字](/assets/2020/daily-push-wechat-robot/emoji.webp)
 
-![天气查询](/assets/2020/daily-push-wechat-robot/whether.png)
+![天气查询](/assets/2020/daily-push-wechat-robot/whether.webp)
 
 > 作者: [IvanEvan](https://github.com/IvanEvan/)
 > Code: [Github](https://github.com/IvanEvan/daily-push-wechat-robot)

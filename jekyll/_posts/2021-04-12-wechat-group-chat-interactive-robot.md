@@ -5,7 +5,7 @@ categories: tutorial
 tags:
   - golang
   - padplus
-image: /assets/2021/04-wechat-group-chat-interactive-robot/header.png
+image: /assets/2021/04-wechat-group-chat-interactive-robot/header.webp
 ---
 
 公司小程序的相关通知需要及时、定时推送到相关的群，由于微信web网页登录基本全部被封建，所有在查阅了大量微信机器人的资料后，选择了wechaty进行机器人开发，
@@ -49,8 +49,8 @@ cd ../bin
 
 ## 运行效果
 
-![启动效果图](/assets/2021/04-wechat-group-chat-interactive-robot/start.png)
-![指令效果图](/assets/2021/04-wechat-group-chat-interactive-robot/bind.png)
+![启动效果图](/assets/2021/04-wechat-group-chat-interactive-robot/start.webp)
+![指令效果图](/assets/2021/04-wechat-group-chat-interactive-robot/bind.webp)
 
 ## 其他Tips
 

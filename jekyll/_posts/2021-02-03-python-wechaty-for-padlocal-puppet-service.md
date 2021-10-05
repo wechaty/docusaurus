@@ -6,7 +6,7 @@ tags:
   - puppet-service
   - padlocal
 categories: tutorial
-image: /assets/2021/02-python-wechaty-for-padlocal-puppet-service/python-wechaty-logo.png
+image: /assets/2021/02-python-wechaty-for-padlocal-puppet-service/python-wechaty-logo.webp
 ---
 
 本文描述Python语言下如何使用iPad协议的PadLocal Token。其他Wechaty多语言开发也能做参考。
