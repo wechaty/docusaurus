@@ -1,7 +1,7 @@
 ---
 title: "基于Wechaty打造定时多功能机器人(一)"
 author: slx1997
-image: /assets/2020/wetchat-bot-chat/demo.jpg
+image: /assets/2020/wetchat-bot-chat/demo.webp
 email: shiliux@foxmail.com
 site: https://github.com/slx1997
 categories: project

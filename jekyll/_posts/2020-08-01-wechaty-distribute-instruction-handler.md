@@ -8,7 +8,7 @@ tags:
   - chatbot
   - cli
   - plugin
-image: /assets/2020/wechaty-plugin-xyao/arc.png
+image: /assets/2020/wechaty-plugin-xyao/arc.webp
 ---
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
@@ -28,7 +28,7 @@ wechaty-plugin-xyao 插件可以让你的 wechaty bot 具备以分布式模块�
 
 ## demo
 
-![sample](/assets/2020/wechaty-plugin-xyao/interaction-sample.png)
+![sample](/assets/2020/wechaty-plugin-xyao/interaction-sample.webp)
 
 上例中， bot 将 `fin:` 前缀的指令通过队列交给 fin 关联的模块处理，而 `x:` 前缀的指令交给 x 对应的模块。那些无法被识别
 为指令的消息（比如 `你好` `午饭吃什么`），则统一交给某个指定模块处理（通常是一个具备智能闲聊能力的处理模块，比如 百度 unit）。
@@ -105,7 +105,7 @@ bot.start()
 
 ## 部署架构参考
 
-![architecture](/assets/2020/wechaty-plugin-xyao/arc.png)
+![architecture](/assets/2020/wechaty-plugin-xyao/arc.webp)
 
 bot 在收到消息后，先尝试识别指令，识别为指令后，按前缀通过队列分发给指定的 brain 模块去处理。
 

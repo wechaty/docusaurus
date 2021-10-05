@@ -10,7 +10,7 @@ tags:
   - meetup
   - interview
   - news
-image: /assets/2021/05-wechaty-local-forums-and-past-events/community-events.jpeg
+image: /assets/2021/05-wechaty-local-forums-and-past-events/community-events.webp
 ---
 
 ## Timeline
