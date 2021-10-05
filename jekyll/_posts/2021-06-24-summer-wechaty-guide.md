@@ -33,6 +33,9 @@ image: /assets/2021/06-summer-wechaty-guide/teaser.webp
 
 ## Wechaty 社区工作
 
+Wechaty 的项目 Issue 作为本次同学和导师通知的主要渠道，请所有同学在入选后，务必完成第一件事：
+**在项目清单 Issue 下面，把所有同学和导师需要完成的工作，以 checklist 的形式回复到 Issue 下面，方便后续同学和导师完成相关工作，完成后在 Comment 中打钩确认**
+
 Wechaty 社区秉持开源开放的的原则，所有会议记录、在线会议、阶段性报告等视频、文档资料都会对社区完全开放。对自己的视频、文档资料介意开放的同学，请谨慎考虑加入。
 
 参与项目的同学和导师需要分别完成 **日常工作** 和 **阶段性工作**：
@@ -352,6 +355,7 @@ XXX
     - [Summer of Wechaty, 我们来啦](http://wechaty.js.org/2021/03/14/summer-2021-kick-off-meeting/)
     - [OSPP 2021 Project Status](http://wechaty.js.org/2021/06/11/ospp-startup-discussion/)
 1. 完成当年的 OSPP 指导手册，并发布博客，参考 [OSPP（开源之夏）指导手册 - 2021](https://wechaty.js.org/2021/06/24/summer-wechaty-guide/)
+1. 在项目清单 Issue 下面，把所有 Org Admin 需要完成的工作，以 checklist 的形式复制回复到 Issue 下面，方便后续 Wechaty Org Admin 完成相关工作，完成后在 Comment 中打钩确认
 
 ### 1. 期初见面会
 
