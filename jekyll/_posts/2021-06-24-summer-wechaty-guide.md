@@ -403,7 +403,7 @@ XXX
     例 姓名/项目简称/Issue#
     ```
 
-1. 推进所有同学提交社区的期中报告博客，并在当年<u>**OSPP 项目通知**</u>的 issue 下面同步期中博客完成进度，参考 [2021 年 OSPP 期中博客进度完成情况](https://github.com/wechaty/summer/issues/79#issuecomment-899023310)
+1. 推进所有同学提交社区的期中报告博客，并在当年<u>OSPP 项目通知</u>的 issue 下面同步期中博客完成进度，参考 [2021 年 OSPP 期中博客进度完成情况](https://github.com/wechaty/summer/issues/79#issuecomment-899023310)
 1. 确认所有同学完成 Wechaty 社区要求的两个视频，并在 Wechaty OSPP 的官方微信群中 （`Summer of Wechaty - SoW`）发起接龙，已在 Issue 下回复完视频链接的同学完成接龙，接龙内容参考：
 
     ```txt
