@@ -335,7 +335,7 @@ XXX
 ### 工具包：
 
 1. 社区 Repo: <https://github.com/wechaty/summer>
-1. 社区通知 Issue：<https://github.com/wechaty/summer/issues/79>
+1. 社区通知 Issue：<https://github.com/wechaty/summer/issues/筹备会中完成后确认的项目清单链接>
 1. 社区微信群：***Summer of Wechaty - SoW***
 1. 社区 Org Admin 组委会群：***Summer of Wechaty Org Admin |SoW***
 1. Wechaty Contributor 群：***Wechaty Contributors***
