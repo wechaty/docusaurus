@@ -25,7 +25,7 @@ the GSoD program helps Wechaty organization to start collaborating
 with many great technical writers all over the world
 for improving the documentation of Wechaty project.
 
-![Google Season of Docs 2021](/assets/2021/05-gsod-2021-selected-technical-writers/gsod-banner.png)
+![Google Season of Docs 2021](/assets/2021/05-gsod-2021-selected-technical-writers/gsod-banner.webp)
 
 If you have read our blog post
 [Google Season of Docs ❤️ Wechaty, @huan, Apr 30, 2021](https://wechaty.js.org/2021/04/30/google-season-of-docs/),
@@ -151,7 +151,7 @@ We should always follow the documentation system by strictly aligning our docs t
 
 ![Documentation System: Tutorials, How-to Guides, Reference, Explanation][documentation_system_chart]
 
-[documentation_system_chart]: /assets/2021/05-gsod-2021-selected-technical-writers/doc-sys-overview.png
+[documentation_system_chart]: /assets/2021/05-gsod-2021-selected-technical-writers/doc-sys-overview.webp
 
 Learn more from:
 
@@ -166,7 +166,7 @@ The project 1-4 is strictly defined by the documentation system, and they must f
 
 > Credit: [Documentation system: Introduction](https://documentation.divio.com/introduction/)
 
-[do-not-go-out-of-scope]: /assets/2021/05-gsod-2021-selected-technical-writers/do-not-go-out-of-scope.png
+[do-not-go-out-of-scope]: /assets/2021/05-gsod-2021-selected-technical-writers/do-not-go-out-of-scope.webp
 
 #### Project 1: Tutorials
 

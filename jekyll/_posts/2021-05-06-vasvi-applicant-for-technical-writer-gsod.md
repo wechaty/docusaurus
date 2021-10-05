@@ -8,7 +8,7 @@ tags:
   - 2021
   - project
   - proposal
-image: /assets/2021/05-vasvi-applicant-for-technical-writer-gsod/vasvi.png
+image: /assets/2021/05-vasvi-applicant-for-technical-writer-gsod/vasvi.webp
 ---
 
 Sophomore,NIT Hamirpur

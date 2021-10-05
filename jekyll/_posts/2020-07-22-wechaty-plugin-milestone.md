@@ -4,7 +4,7 @@ author: rickyyin98
 categories: announcement
 tags:
   - plugin
-image: /assets/2020/wechaty-plugin-milestone/plugin.png
+image: /assets/2020/wechaty-plugin-milestone/plugin.webp
 ---
 
 Wechaty 的故事开始于用RPA的方式模拟登录微信，在过去的几年里，服务了数万名开发者，收获了 Github 的 8000 Star。  
@@ -30,7 +30,7 @@ Wechaty.instance() // Global Instance
 
 {% include iframe.html src="https://www.youtube.com/watch?v=tfGZXoe_aA4" %}
 
-![Wechaty Plugin活动](/assets/2020/wechaty-plugin-milestone/plugin.png)
+![Wechaty Plugin活动](/assets/2020/wechaty-plugin-milestone/plugin.webp)
 
 ### Wechaty项目和社区生态介绍
 
@@ -52,9 +52,9 @@ Wechaty.instance() // Global Instance
   "></iframe>
 </div>
 
-![李卓桓-1](/assets/2020/wechaty-plugin-milestone/huan1.png)
+![李卓桓-1](/assets/2020/wechaty-plugin-milestone/huan1.webp)
 
-![李卓桓-2](/assets/2020/wechaty-plugin-milestone/huan2.png)
+![李卓桓-2](/assets/2020/wechaty-plugin-milestone/huan2.webp)
 
 ### 插件系统开发历程及应用
 
@@ -62,11 +62,11 @@ Wechaty.instance() // Global Instance
 
 {% include iframe.html src="/assets/2020/wechaty-plugin-milestone/gcaufy.pdf" %}
 
-![Gcaufy-1](/assets/2020/wechaty-plugin-milestone/gcaufy1.jpg)
+![Gcaufy-1](/assets/2020/wechaty-plugin-milestone/gcaufy1.webp)
 
-![Gcaufy-2](/assets/2020/wechaty-plugin-milestone/gcaufy2.jpg)
+![Gcaufy-2](/assets/2020/wechaty-plugin-milestone/gcaufy2.webp)
 
-![Gcaufy-3](/assets/2020/wechaty-plugin-milestone/gcaufy3.jpg)
+![Gcaufy-3](/assets/2020/wechaty-plugin-milestone/gcaufy3.webp)
 
 ### Wechaty 插件的商业化落地展望
 
@@ -74,18 +74,18 @@ Wechaty.instance() // Global Instance
 
 {% include iframe.html src="/assets/2020/wechaty-plugin-milestone/yuan.pdf" %}
 
-![Yuan-1](/assets/2020/wechaty-plugin-milestone/yuan1.jpg)
+![Yuan-1](/assets/2020/wechaty-plugin-milestone/yuan1.webp)
 
-![Yuan-2](/assets/2020/wechaty-plugin-milestone/yuan2.jpg)
+![Yuan-2](/assets/2020/wechaty-plugin-milestone/yuan2.webp)
 
 ### 基于插件的Wechaty开发
 
 [15:30 - 16:00 Wechaty Plugin开发者 王墨炱 基于插件的Wechaty开发](https://www.bilibili.com/video/BV1sz4y1973D)
 [Live Code Demo: Invite to Room](https://github.com/JesseWeb/invite2room_demo)
 
-![Jessie-1](/assets/2020/wechaty-plugin-milestone/jessie1.jpg)
+![Jessie-1](/assets/2020/wechaty-plugin-milestone/jessie1.webp)
 
-![Jessie-2](/assets/2020/wechaty-plugin-milestone/jessie2.jpg)
+![Jessie-2](/assets/2020/wechaty-plugin-milestone/jessie2.webp)
 
 ## Wechaty 插件库
 
