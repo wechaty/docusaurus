@@ -356,7 +356,7 @@ XXX
 ### 1. 期初见面会
 
 1. 在 `Summer of Wechaty Org Admin |SoW` 群中和所有 Org Admin 确认期初见面会的时间，并给所有参与的 Org Admin 期初见面会的日历邀请。
-1. 组织导师和同学完成见面会，引导同学在 [Meeting Notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit) 中完成注册，**注意要填写姓名、一句话介绍和邮箱，一定要有邮箱！**，参考 2021 年的会议信息： [Kick off OSPP First Meeting with Students](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.ufupcyw9mp0h), 同时在见面会中向社区同步至少以下三项信息：
+1. 组织导师和同学完成见面会，在 [Meeting Notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit) 中创建见面会的会议，并引导同学完成注册，**注意要填写姓名、一句话介绍和邮箱，一定要有邮箱！**，参考 2021 年的会议信息： [Kick off OSPP First Meeting with Students](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.ufupcyw9mp0h), 同时在见面会中向社区同步至少以下三项信息：
     - 当年的关键时间点，包括组委会报告提交、社区博客提交、社区答辩时间等
     - [OSPP（开源之夏）指导手册](https://wechaty.js.org/2021/06/24/summer-wechaty-guide/)
     - [Wechaty 社区开源协作最佳实践指南](https://wechaty.js.org/2021/06/23/the-wechaty-way/)
@@ -425,7 +425,7 @@ XXX
     1. 姓名/项目简介/Issue#
     ```
 
-1. 组织导师和同学完成期中答辩，引导同学在 [Meeting Notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit) 中完成注册，**注意要填写姓名、一句话介绍和邮箱，一定要有邮箱！**，参考 2021 年的会议信息： [Wechaty OSPP(开源之夏) Midterm Demo Day](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.5ztnno5qivcb), 同时在 Agenda 中列出每个同学的答辩内容，参考如下：
+1. 组织导师和同学完成期中答辩，在 [Meeting Notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit) 中创建期中答辩会议，并引导同学完成注册，**注意要填写姓名、一句话介绍和邮箱，一定要有邮箱！**，参考 2021 年的会议信息： [Wechaty OSPP(开源之夏) Midterm Demo Day](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.5ztnno5qivcb), 同时在 Agenda 中列出每个同学的答辩内容，参考如下：
     - [同学姓名] 项目名称
       - 答辩视频：https://答辩视频链接
       - Live Coding 视频：https://在线 Live Coding视频链接
