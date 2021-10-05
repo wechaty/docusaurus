@@ -368,7 +368,7 @@ XXX
 1. 在 Wechaty OSPP 的官方微信群中 （`Summer of Wechaty - SoW`）发布公告，往届参与者也可以旁听期初见面会，了解当年项目。
 1. 把所有入选的同学邀请到 Wechaty OSPP 的官方微信群中： `Summer of Wechaty - SoW`
 1. 在期初见面会结束之后发布期初博客，参考 [Wechaty Open Source Promotion Plan 2021 Kickoff Meeting](http://wechaty.js.org/2021/06/24/wechaty-soc-kick-off-meeting/)
-1. 推进所有同学提交社区的期初报告博客，并在当年<u>**OSPP 项目通知**</u>的 issue 下面同步期初博客完成进度，参考 [2021 年 OSPP 期初博客进度完成情况](https://github.com/wechaty/summer/issues/79#issuecomment-882059181)。同时可以在对应的微信群中向同学发起接龙。
+1. 推进所有同学提交社区的期初报告博客，并在当年<u>OSPP 项目通知</u>的 issue 下面同步期初博客完成进度，参考 [2021 年 OSPP 期初博客进度完成情况](https://github.com/wechaty/summer/issues/79#issuecomment-882059181)。同时可以在对应的微信群中向同学发起接龙。
 
 ### 2. 期中答辩（Mid-term Demo Day）
 
