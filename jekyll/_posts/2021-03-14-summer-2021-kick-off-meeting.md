@@ -6,6 +6,8 @@ image: /assets/2021/03-summer-2021-kick-off-meeting/summer2021.webp
 tags:
   - summer-2021
   - summer-of-wechaty
+  - ospp
+  - ospp-admin
 ---
 
 去年夏天，Wechaty 社区参与了“开源软件供应链点亮计划-暑期2020”（以下简称暑期2020）活动，在为期三个月的开发结束后，多位同学顺利完成开发，为 Wechaty 社区实现多平台、多语言、多功能贡献了智慧和力量。[点此了解更多](https://wechaty.js.org/2020/12/31/summer-2020-student-developers/)。
