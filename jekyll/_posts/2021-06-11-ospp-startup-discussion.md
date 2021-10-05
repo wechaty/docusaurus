@@ -5,6 +5,9 @@ image: /assets/2021/06-ospp-startup-discussion/ospp-meeting-image.webp
 categories: event
 tags:
   - ospp
+  - ospp-admin
+  - summer-of-wechaty
+  - summer-2021
 ---
 
 临近OSPP2021项目最终审核，需要与各位导师确定一下项目的状态以及安排接下来两周的任务，故有了此次的线上会议。
