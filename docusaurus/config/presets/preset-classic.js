@@ -9,7 +9,7 @@
   {
     docs: {
       sidebarPath: require.resolve('../../sidebars.ts'),
-      editUrl: 'https://github.com/wechaty/wechaty.js.org/edit/master/docusaurus/',
+      editUrl: 'https://github.com/wechaty/wechaty.js.org/edit/main/docusaurus/',
       showLastUpdateAuthor: true,
       showLastUpdateTime: true,
     },
