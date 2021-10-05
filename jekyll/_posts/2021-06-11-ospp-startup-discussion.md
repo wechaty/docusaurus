@@ -5,6 +5,7 @@ image: /assets/2021/06-ospp-startup-discussion/ospp-meeting-image.webp
 categories: event
 tags:
   - ospp
+  - ospp-2021
   - ospp-admin
   - summer-of-wechaty
   - summer-2021
