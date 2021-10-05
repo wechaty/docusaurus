@@ -11,7 +11,7 @@ tags:
   - project
   - proposal
   - team-proposal
-image: /assets/2021/05-gsod-2021-improve-introduction-and-explanation-project-joint-proposal/introduction-and-explanation.png
+image: /assets/2021/05-gsod-2021-improve-introduction-and-explanation-project-joint-proposal/introduction-and-explanation.webp
 ---
 
 This is the joint project proposal for **Improve the Introduction and Explanations** secondary project under Google Season of Docs 2021. It is estimated that this project will take approximately **06 weeks**.

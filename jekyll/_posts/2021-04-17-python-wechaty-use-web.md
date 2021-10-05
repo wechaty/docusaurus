@@ -8,7 +8,7 @@ tags:
   - web-protocol
   - python
   - featured
-image: /assets/2021/04-python-wechaty-use-web/wechaty-love-wechaty-desktop.png
+image: /assets/2021/04-python-wechaty-use-web/wechaty-love-wechaty-desktop.webp
 ---
 
 写这篇文章的原因: go-wechaty作者[dchaofei](https://github.com/dchaofei)抢先写了[web协议复活的博客](https://wechaty.js.org/2021/04/16/go-wechaty-use-web/)，作为[python-wechaty](http://github.com/wechaty/python-wechaty)的作者我也需要给大家更加详细的介绍如何使用[python-wechaty](http://github.com/wechaty/python-wechaty)来登陆web版本的微信。

@@ -11,6 +11,8 @@ tags:
   - news
   - meetup
   - featured
+  - ospp
+  - ospp-admin
 image: /assets/2021/06-wechaty-soc-kick-off-meeting/group-photo.webp
 ---
 

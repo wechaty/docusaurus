@@ -6,7 +6,7 @@ tags:
   - dotnet
   - csharp
   - getting-started
-image: /assets/2020/12-dotnet-wechaty/dotnet-wechaty.png
+image: /assets/2020/12-dotnet-wechaty/dotnet-wechaty.webp
 ---
 
 .NET Wechaty 是使用.Net Core对TS版本Wechaty的翻译。
@@ -23,13 +23,13 @@ image: /assets/2020/12-dotnet-wechaty/dotnet-wechaty.png
 
 新建一个.Net Core 3.1 控制台程序
 
-![创建console控制台程序](/assets/2020/12-dotnet-wechaty/console-project.png)
+![创建console控制台程序](/assets/2020/12-dotnet-wechaty/console-project.webp)
 
 ### 添加Nuget包
 
 只需要引用Wechaty一个Nuget包即可，其他相关包会自动引入
 
-![添加Wechaty Nuget包](/assets/2020/12-dotnet-wechaty/add-wechaty-nuget.png)
+![添加Wechaty Nuget包](/assets/2020/12-dotnet-wechaty/add-wechaty-nuget.webp)
 
 ### 6行代码运行一个Bot
 
