@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - ecommerce
-image: /assets/2020/wechat-purchasing-robot/header.jpg
+image: /assets/2020/wechat-purchasing-robot/header.webp
 ---
 
 [![Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
@@ -25,7 +25,7 @@ image: /assets/2020/wechat-purchasing-robot/header.jpg
 
 在有人咨询商品信息的时候，比如发送有关于【香水】的话题，便自动回复有在售出的香水商品列表，包含了商品不同尺寸下的价格。
 
-![效果图](/assets/2020/wechat-purchasing-robot/sell.png)
+![效果图](/assets/2020/wechat-purchasing-robot/sell.webp)
 
 ### 结构
 
@@ -105,7 +105,7 @@ npm run serve
 
 ## 其他功能效果
 
-![效果图](/assets/2020/wechat-purchasing-robot/chat.png)
+![效果图](/assets/2020/wechat-purchasing-robot/chat.webp)
 
 ## 致谢
 

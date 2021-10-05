@@ -6,7 +6,7 @@ tags:
   - bot
   - car
   - automotive
-image: /assets/2020/rcbot/rcbot.jpg
+image: /assets/2020/rcbot/rcbot.webp
 ---
 
 ## 现状与目标：我是谁？我要做什么？
