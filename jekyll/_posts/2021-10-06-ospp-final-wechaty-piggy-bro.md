@@ -9,6 +9,7 @@ tags:
   - chat
   - summer-of-wechaty
   - summer-2021
+  - ecosystem
   - ospp
   - ospp-2021
   - final
