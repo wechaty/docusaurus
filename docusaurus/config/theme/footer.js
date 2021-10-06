@@ -6,9 +6,9 @@ const footer = {
       items: [
         { label: 'Introduction',  to: 'docs/' },
         { label: 'Tutorials',     to: 'docs/tutorials/' },
-        { label: 'explanations', to: 'docs/explanations/' },
+        { label: 'Explanations', to: 'docs/explanations/' },
         { label: 'References',    to: 'docs/references/' },
-        { label: 'Howto Guides',  to: 'docs/howto/' },
+        { label: 'How-to Guides',  to: 'docs/howto/' },
       ],
     },
     {
