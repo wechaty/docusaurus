@@ -7,7 +7,7 @@ tags:
   - down
   - heroku
   - cloudflare
-image: /assets/2021/04-chatie-api-server-down/system-down.jpeg
+image: /assets/2021/04-chatie-api-server-down/system-down.webp
 ---
 
 The [Wechaty Puppet Service](https://wechaty.js.org/docs/puppet-services)

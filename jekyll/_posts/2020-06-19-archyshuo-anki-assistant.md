@@ -8,7 +8,7 @@ tags:
   - nlp
   - anki
   - productivity
-image: /assets/2020/archyshuo-anki-assistant/archybots.jpg
+image: /assets/2020/archyshuo-anki-assistant/archybots.webp
 excerpt: a chatbot that can extract difficult Chinese words from WeChat 公众号 articles, annotate them with Pinyin and definitions, and generate Anki notes.
 ---
 
@@ -64,7 +64,7 @@ And [Archy the Anki Bot 0.0.1](https://github.com/archywillhe/archy-the-anki-bot
 
 ## Design & Implementation & Demo  设计与履行与演示
 
-![Informal UML](/assets/2020/archyshuo-anki-assistant/informal-uml.png)
+![Informal UML](/assets/2020/archyshuo-anki-assistant/informal-uml.webp)
 
 Basically we would have an `ArticleAnalysor`, a `TextAnalysor`, a `Lexicographer`, and an `AnkiDeckGenerator`. And we would integrate everything in main.ts where we handle Wechaty callbacks.
 
@@ -78,13 +78,13 @@ For the current use cases, we would use the `ArticleAnalysor` to extract text fr
 
 [函数式地把所有东西粘起来](https://github.com/archywillhe/archy-the-anki-bot/blob/master/src/main.ts)，即可得出：
 
-![demo](/assets/2020/archyshuo-anki-assistant/demo.jpg)
+![demo](/assets/2020/archyshuo-anki-assistant/demo.webp)
 
-![demo2](/assets/2020/archyshuo-anki-assistant/demo2.png)
+![demo2](/assets/2020/archyshuo-anki-assistant/demo2.webp)
 
-![demo3](/assets/2020/archyshuo-anki-assistant/demo3.png)
+![demo3](/assets/2020/archyshuo-anki-assistant/demo3.webp)
 
-![demo3.5](/assets/2020/archyshuo-anki-assistant/demo3.5.png)
+![demo3.5](/assets/2020/archyshuo-anki-assistant/demo3.5.webp)
 
 ## What’s Next? 接下来呢？
 
@@ -123,12 +123,12 @@ Huge thanks to
 
 If you are interested in the development of this project feel free to follow Archy.sh on WeChat and TikTok or [join our mailing list](https://mailing-list.xn--nqr.xn--fiqs8s/) =)
 
-![wechat-qr](/assets/2020/archyshuo-anki-assistant/wx.jpg)
-![tiktok-qr](/assets/2020/archyshuo-anki-assistant/tt.jpg)
+![wechat-qr](/assets/2020/archyshuo-anki-assistant/wx.webp)
+![tiktok-qr](/assets/2020/archyshuo-anki-assistant/tt.webp)
 
 Also please feel free to fork my repo, deploy your own bot, or just do anything with the code, or open issues if there are any! Thanks!
 
-![nyan](/assets/2020/archyshuo-anki-assistant/cat.gif)
+![nyan](/assets/2020/archyshuo-anki-assistant/cat.webp)
 
 p.s. 写中文写到中间有些累与懒🥴「吖奇说记忆卡片」小程序上线后更多关于未来的去向（中+英）会在公众号有的看～ 感兴趣的朋友可以关注我的公众号与抖音@吖奇说～
 

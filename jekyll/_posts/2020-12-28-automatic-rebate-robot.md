@@ -4,7 +4,7 @@ author: jiangxiaotao1024
 categories: project
 tags:
   - ecommerce
-image: /assets/2020/rebate-robot/taokouling.png
+image: /assets/2020/rebate-robot/taokouling.webp
 ---
 
 ## 实现的功能：
@@ -30,11 +30,11 @@ image: /assets/2020/rebate-robot/taokouling.png
 
 对收到的文本信息进行解析返回对应的信息，如果调用api无法识别商品id则不返回返利链接;如果识别到商品id，但没有优惠信息返回无优惠;如果有优惠信息返回返利链接；
 
-![help](/assets/2020/rebate-robot/help.png)
-![chaxun](/assets/2020/rebate-robot/chaxun.png)
-![tixian](/assets/2020/rebate-robot/tixian.png)
-![zhuanqian](/assets/2020/rebate-robot/zhuanqian.jpg)
-![taokouling](/assets/2020/rebate-robot/taokouling.png)
+![help](/assets/2020/rebate-robot/help.webp)
+![chaxun](/assets/2020/rebate-robot/chaxun.webp)
+![tixian](/assets/2020/rebate-robot/tixian.webp)
+![zhuanqian](/assets/2020/rebate-robot/zhuanqian.webp)
+![taokouling](/assets/2020/rebate-robot/taokouling.webp)
 
 ## 订单查询模块：
 
