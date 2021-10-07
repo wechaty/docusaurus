@@ -33,6 +33,9 @@ image: /assets/2021/06-summer-wechaty-guide/teaser.webp
 
 ## Wechaty 社区工作
 
+Wechaty 的项目 Issue 作为本次同学和导师通知的主要渠道，请所有同学在入选后，务必完成第一件事：
+**在项目清单 Issue 下面，把所有同学和导师需要完成的工作，以 checklist 的形式回复到 Issue 下面，方便后续同学和导师完成相关工作，完成后在 Comment 中打钩确认**
+
 Wechaty 社区秉持开源开放的的原则，所有会议记录、在线会议、阶段性报告等视频、文档资料都会对社区完全开放。对自己的视频、文档资料介意开放的同学，请谨慎考虑加入。
 
 参与项目的同学和导师需要分别完成 **日常工作** 和 **阶段性工作**：
@@ -106,7 +109,9 @@ XXX
 
 #### 期初报告
 
-##### 1. 个人介绍
+##### 学生开发者
+
+###### 1. 个人介绍
 
 请将自己的介绍以 markdown 的方式提交到 [wechaty.js.org](https://github.com/wechaty/wechaty.js.org) Repo 的 `jekyll/_contributors` 目录下。
 
@@ -115,7 +120,7 @@ XXX
 - [吴京京, wj-mcat, Creator of python-wechaty](https://raw.githubusercontent.com/wechaty/wechaty.js.org/master/jekyll/_contributors/wj-mcat.md)
 - [江姗姗, univerone, OSPP 2020的优秀学生突出贡献奖获得者](https://raw.githubusercontent.com/wechaty/wechaty.js.org/master/jekyll/_contributors/univerone.md)
 
-##### 2. 期初报告
+###### 2. 期初报告
 
 - 标题： `OSPP 2021-期初报告-你的标题`
 - 文件名： `2021-XX-XX-ospp-plan-XX`
@@ -128,9 +133,9 @@ XXX
   - 项目介绍
   - 项目计划
 
-**提交PR时请注意：为这个 PR 打上 `ospp` 的标签，方便组委会进行审核。**
+**提交PR时请注意：为这个 PR 打上 `ospp` 的标签，并在 PR 中填写自己项目的 GitHub Issue 链接，方便组委会进行审核。**
 
-##### 3. OSPP 2020 学生期初报告参考：
+###### 3. OSPP 2020 学生期初报告参考：
 
 - [暑期2020 为 go-wechaty 设计实现插件体系 计划书](https://wechaty.js.org/2020/07/19/go-wechaty-plugin-dev-plan/)
 - [基于python-wechaty的群聊助手机器人](https://wechaty.js.org/2020/07/18/python-wechaty-groupchat-assistant-bot/)
@@ -143,6 +148,10 @@ XXX
 - [暑期2020 Go-wechaty Github Action optimization 计划书](https://wechaty.js.org/2020/07/30/go-wechaty-gh-optimization-poc/)
 - [Wechaty Java 移植组件开发](https://wechaty.js.org/2020/07/27/java-wechaty-transplant/)
 - [基于开放 API 封装 Wechaty 接口下的钉钉聊天机器人 具体计划](https://wechaty.js.org/2020/07/19/wechaty-puppet-dingtalk/)
+
+##### 社区导师
+
+按照社区博客提交规范，对学生提交的博客进行审核，审核通过后，在 GitHub **Approve** 这个 PR，然后交由 Wechaty PMC 进行博客审核。注意，社区导师一定要**提前、优先 Approve** 自己同学的 PR。
 
 #### 期中报告
 
@@ -188,7 +197,7 @@ XXX
     - 期中汇报的视频，可以参考 [使用jekyll include在wechaty博客中快速插入视频](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)
     - Live Coding/Demo 视频
 
-**提交PR时请注意：为这个 PR 打上 `ospp` 的标签，方便组委会进行审核。**
+**提交PR时请注意：为这个 PR 打上 `ospp` 的标签，并在 PR 中填写自己项目的 GitHub Issue 链接，方便组委会进行审核。**
 
 可以完整复制本文对应的Markdown作为博客内容模板，但也可添加更多的补充信息。
 
@@ -254,7 +263,9 @@ XXX
 
 ###### 2. Wechaty 社区中期博客评审
 
-在8月30日前以Pull Requests形式在wechaty.github.io的学生对应博客下，补充评审结果的相关信息。
+在8月30日前以Pull Requests形式在 [wechaty.js.org](https://github.com/wechaty/wechaty.js.org) Repo 的学生对应博客下，补充评审结果的相关信息。
+
+同时，按照社区博客提交规范，对学生提交的博客进行审核，审核通过后，在 GitHub **Approve** 这个 PR，然后交由 Wechaty PMC 进行博客审核。注意，社区导师一定要**提前、优先 Approve** 自己同学的 PR。
 
 可以完整复制本文对应的Markdown作为博客内容模板，但也可添加更多的补充信息。
 
@@ -275,7 +286,9 @@ XXX
 
 #### 期末报告
 
-##### 1. 期末视频
+##### 学生开发者
+
+###### 1. 期末视频
 
 - 视频需要上传到 youtube 中，并联系 [Huan](https://wechaty.js.org/contributors/huan/) 添加到 wechaty 的 playlist 中。
 - 考虑到国内用户，可以上传到 bilibili 或者腾讯视频中
@@ -285,7 +298,7 @@ XXX
 - [SOC-基于开放 API 封装 Wechaty 接口下的飞书聊天机器人-结项汇报](https://www.youtube.com/watch?v=eutz5EMlJCI)
 - [SOC-基于开放 API 封装 Wechaty 接口下的飞书聊天机器人-Demo演示](https://www.youtube.com/watch?v=_y5DktHdL9U)
 
-##### 2. 期末报告
+###### 2. 期末报告
 
 - 标题： `OSPP 2021-结项报告-你的标题`
 - 文件名： `2021-XX-XX-ospp-final-XX`
@@ -305,9 +318,9 @@ XXX
     - 评审对象
     - 评审结果
 
-**提交PR时请注意：为这个 PR 打上 `ospp` 的标签，方便组委会进行审核。**
+**提交PR时请注意：为这个 PR 打上 `ospp` 的标签，并在 PR 中填写自己项目的 GitHub Issue 链接，方便组委会进行审核。**
 
-##### 3. OSPP 2020 学生期末报告参考：
+###### 3. OSPP 2020 学生期末报告参考：
 
 - [暑期2020 为 go-wechaty 设计实现插件体系 结项报告](https://wechaty.js.org/2020/09/27/go-wechaty-plugin/)
 - [暑期2020 基于python-wechaty的群聊助手机器人 结项成果展示](https://wechaty.js.org/2020/09/26/chassist-bot-final/)
@@ -316,6 +329,35 @@ XXX
 - [暑期2020 编写一个“每日一句”插件 结项报告](https://wechaty.js.org/2020/09/26/wechaty-words-per-day-plugin-final/)
 - [基于RPA封装的Wechaty接口下的抖音聊天机器人结项报告](https://wechaty.js.org/2020/10/13/wechaty-puppet-douyin-final-term/)
 - [暑期2020 基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人 终结成果展示](https://wechaty.js.org/2020/09/28/puppet-work-final/)
+
+##### 社区导师
+
+###### 1. “暑期2021”组委会评审报告
+
+10月1日 - 10月14日期间，将评审报告在组委会的 Gitlab 上的 Issue 中提交，并配合组委会进行结项审核。
+
+###### 2. Wechaty 社区期末博客评审
+
+在10月14日前以Pull Requests形式在 [wechaty.js.org](https://github.com/wechaty/wechaty.js.org) Repo 的学生对应博客下，补充评审结果的相关信息。
+
+同时，按照社区博客提交规范，对学生提交的博客进行审核，审核通过后，在 GitHub **Approve** 这个 PR，然后交由 Wechaty PMC 进行博客审核。注意，社区导师一定要**提前、优先 Approve** 自己同学的 PR。
+
+可以完整复制本文对应的Markdown作为博客内容模板，但也可添加更多的补充信息。
+
+```markdown
+## 评审对象
+
+- 评审内容：*结项报告*
+- 提交人：*学生姓名*
+
+## 评审结果
+
+- 项目完成度：*评价学生是否按照原定方案实施项目，以及完成情况如何*
+- 学生参与度：*评价学生在项目实施过程中是否积极参与*
+- 代码贡献量：*评价学生在该项目中，为开源项目贡献的代码量*
+- 综合评价及建议：*总结性评价，并给出改进建议*
+- 最终评审结果：“通过” 或者 “不通过” （“不通过” 意为着项目终止，且学生将无法获得相应的奖金）
+```
 
 ## OSPP 2020 更多内容介绍
 
@@ -332,9 +374,9 @@ XXX
 ### 工具包：
 
 1. 社区 Repo: <https://github.com/wechaty/summer>
-1. 社区通知 Issue：<https://github.com/wechaty/summer/issues/79>
+1. 社区通知 Issue：<https://github.com/wechaty/summer/issues/筹备会中完成后确认的项目清单链接>
 1. 社区微信群：***Summer of Wechaty - SoW***
-1. 社区 Org Admin 组委会群：***Summer of Wechaty Org Admin |SoW***
+1. 社区 Org Admin 组委会群：***Summer of Wechaty Org Admin SoW***
 1. Wechaty Contributor 群：***Wechaty Contributors***
 1. 所有发布到 Wechaty 的博客需要打上如下标签：
     - ospp-admin
@@ -352,6 +394,7 @@ XXX
     - [Summer of Wechaty, 我们来啦](http://wechaty.js.org/2021/03/14/summer-2021-kick-off-meeting/)
     - [OSPP 2021 Project Status](http://wechaty.js.org/2021/06/11/ospp-startup-discussion/)
 1. 完成当年的 OSPP 指导手册，并发布博客，参考 [OSPP（开源之夏）指导手册 - 2021](https://wechaty.js.org/2021/06/24/summer-wechaty-guide/)
+1. 在项目清单 Issue 下面，把所有 Org Admin 需要完成的工作，以 checklist 的形式复制回复到 Issue 下面，方便后续 Wechaty Org Admin 完成相关工作，完成后在 Comment 中打钩确认
 
 ### 1. 期初见面会
 
@@ -364,7 +407,7 @@ XXX
 1. 在 Wechaty OSPP 的官方微信群中 （`Summer of Wechaty - SoW`）发布公告，往届参与者也可以旁听期初见面会，了解当年项目。
 1. 把所有入选的同学邀请到 Wechaty OSPP 的官方微信群中： `Summer of Wechaty - SoW`
 1. 在期初见面会结束之后发布期初博客，参考 [Wechaty Open Source Promotion Plan 2021 Kickoff Meeting](http://wechaty.js.org/2021/06/24/wechaty-soc-kick-off-meeting/)
-1. 推进所有同学提交社区的期初报告博客，并在当年<u>**OSPP 项目通知**</u>的 issue 下面同步期初博客完成进度，参考 [2021 年 OSPP 期初博客进度完成情况](https://github.com/wechaty/summer/issues/79#issuecomment-882059181)。同时可以在对应的微信群中向同学发起接龙。
+1. 推进所有同学提交社区的期初报告博客，并在当年<u>OSPP 项目通知</u>的 issue 下面同步期初博客完成进度，参考 [2021 年 OSPP 期初博客进度完成情况](https://github.com/wechaty/summer/issues/79#issuecomment-882059181)。同时可以在对应的微信群中向同学发起接龙。
 
 ### 2. 期中答辩（Mid-term Demo Day）
 
@@ -399,7 +442,7 @@ XXX
     例 姓名/项目简称/Issue#
     ```
 
-1. 推进所有同学提交社区的期中报告博客，并在当年<u>**OSPP 项目通知**</u>的 issue 下面同步期中博客完成进度，参考 [2021 年 OSPP 期中博客进度完成情况](https://github.com/wechaty/summer/issues/79#issuecomment-899023310)
+1. 推进所有同学提交社区的期中报告博客，并在当年<u>OSPP 项目通知</u>的 issue 下面同步期中博客完成进度，参考 [2021 年 OSPP 期中博客进度完成情况](https://github.com/wechaty/summer/issues/79#issuecomment-899023310)
 1. 确认所有同学完成 Wechaty 社区要求的两个视频，并在 Wechaty OSPP 的官方微信群中 （`Summer of Wechaty - SoW`）发起接龙，已在 Issue 下回复完视频链接的同学完成接龙，接龙内容参考：
 
     ```txt
