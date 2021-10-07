@@ -53,6 +53,7 @@ Here are some rules that a Wechaty Puppet should follow:
 3. **State-less Session Management** (with MemoryCard support): the puppet service should save the user session data to the memory card, and can be restored from the memory card.
 4. **MIME File Name Extension Convention**: FileBoxChunk.name must be able to convert to a MIME type and visa versa. The puppet needs to set the name with the right extension (.jpg, .pdf, etc) to the name of the file box. [See](https://github.com/wechaty/wechaty-puppet-hostie/discussions/115),
 [See](https://github.com/wechaty/puppet-services/discussions/54)
+5. **Perfect Restart**: the puppet should be able to restart at least 3 times in the unit tests, and do not leave any timer in the event loop after the testings. (i.e. [this unit test](https://github.com/wechaty/wechaty-puppet-service/blob/7d7fb5815b1288b2e7c31f6e67d3edfe57c7c277/src/client/puppet-service.spec.ts#L18-L30))
 
 ## MemoryCard
 

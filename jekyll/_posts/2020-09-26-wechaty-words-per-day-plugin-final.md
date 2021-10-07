@@ -7,7 +7,7 @@ tags:
   - summer-of-wechaty
   - summer-2020
   - entertainment
-image: /assets/2020/wechaty-words-per-day-plugin-final/logo.png
+image: /assets/2020/wechaty-words-per-day-plugin-final/logo.webp
 ---
 
 - 项目名称：编写一个“每日一句”插件

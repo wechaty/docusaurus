@@ -6,7 +6,7 @@ tags:
   - code
   - featured
   - ecommerce
-image: /assets/2019/wechaty-pay-paypic.png
+image: /assets/2019/wechaty-pay-paypic.webp
 ---
 
 ## Wechaty - 让线上没有难做的生意
@@ -17,13 +17,13 @@ image: /assets/2019/wechaty-pay-paypic.png
 
 自从使用了Wechaty，资金及时到账，收款后立即通知。即开即用，高并发，超稳定不掉单。
 
-![让线上没有难做的生意](/assets/2019/wechaty-pay-paypic.png)
+![让线上没有难做的生意](/assets/2019/wechaty-pay-paypic.webp)
 
 ### 背景
 
 随处可见微信和支付宝的支付二维码，已经让超市水果店和煎饼果子摊贩没有难做的生意。然而在线支付可就没那么容易了。接口大部分需要企业资质认证，或者需要备案域名以及开通权限，对于中小型商户门槛非常高。大部分人会在收到款后，手动确认订单，经常出现订单延误或者遗漏。然而市面上的解决方案都差强人意。那么这个线上支付的流程如何利用Wechaty优化一下呢？
 
-![各种支付方案对比](/assets/2019/wechaty-pay-paycompare.png)
+![各种支付方案对比](/assets/2019/wechaty-pay-paycompare.webp)
 
 ### 技术实现
 
@@ -84,7 +84,7 @@ function sendPayment (priceAmount, timestamp) {
 
 终于可以一站式的管理所有微信和支付宝的订单了！每笔订单的时间，金额，还有每天收入统计一览无余。
 
-![后台订单管理](/assets/2019/wechaty-pay-paymentsx.jpg)
+![后台订单管理](/assets/2019/wechaty-pay-paymentsx.webp)
 
 ### 产品实现
 
@@ -95,10 +95,10 @@ function sendPayment (priceAmount, timestamp) {
 * 保障安全性，不记录个人账户密码
 * 资金实时到账，不经过第三方
 
-![桔子互动](/assets/2019/wechaty-pay-botorange.png)
+![桔子互动](/assets/2019/wechaty-pay-botorange.webp)
 
 继续交流技术产品探讨可以添加👇微信。本文仅供技术产品交流参考，建议使用官方认证接口。请勿使用此项目做违反微信、支付宝规定或者其他违法事情！
 
-![微信](/assets/2019/wechaty-pay-wechat.jpeg)
+![微信](/assets/2019/wechaty-pay-wechat.webp)
 
 > 作者: [Shawn](https://mugglepay.com)，全栈创业狗，致力于利用技术提升支付领域效率。

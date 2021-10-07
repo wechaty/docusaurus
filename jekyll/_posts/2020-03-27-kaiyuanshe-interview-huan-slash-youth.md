@@ -5,7 +5,7 @@ categories: story
 tags:
   - news
   - interview
-image: /assets/2020/03-slash-huan-kaiyuanshe/slash-huan.png
+image: /assets/2020/03-slash-huan-kaiyuanshe/slash-huan.webp
 ---
 
 近年来非常流行“SLASH（斜杠）青年”一词，指的是不再满足“专一职业”的生活方式，而选择拥有多重职业和身份的多元生活的青年。
@@ -58,7 +58,7 @@ image: /assets/2020/03-slash-huan-kaiyuanshe/slash-huan.png
 
 我发布的开源项目，合计 Stars 数量超过一万，模块被其他代码库引用数量数千，每月模块下载量 3 万余次，Docker Pull 总计百万余次。
 
-![Huan GitHub](/assets/2020/03-slash-huan-kaiyuanshe/huan-github.png)
+![Huan GitHub](/assets/2020/03-slash-huan-kaiyuanshe/huan-github.webp)
 
 同时，我还在 GitHub 上被其他开源组织、作者邀请为 Owner 和 Maintainer 。
 
@@ -76,7 +76,7 @@ image: /assets/2020/03-slash-huan-kaiyuanshe/slash-huan.png
 
 网站：<http://www.aka.net.cn> （2003年版）
 
-![AKA Website](/assets/2020/03-slash-huan-kaiyuanshe/aka.png)
+![AKA Website](/assets/2020/03-slash-huan-kaiyuanshe/aka.webp)
 
 > 1998 年 10 月阿卡组织的杂志第一期：<http://www.aka.net.cn/Magazine/Aka1/aka1-cover.html>  
 > 应该是国内最早翻译《大教堂和集市》这篇文章的了 <http://www.aka.net.cn/Magazine/Aka1/c&b.html>

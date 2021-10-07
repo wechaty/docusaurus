@@ -6,7 +6,7 @@ tags:
   - padplus
   - productivity
   - social
-image: /assets/2020/wechaty-forwardbot/header.png
+image: /assets/2020/wechaty-forwardbot/header.webp
 ---
 
 运营群需要有价值的内容，才能把用户留住。但是自己又懒得搞这些内容  

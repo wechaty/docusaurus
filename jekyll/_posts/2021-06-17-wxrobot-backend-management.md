@@ -10,7 +10,7 @@ tags:
   - nuxt
   - feature
   - utility
-image: /assets/2021/06-wxrobot-backend-management/admin.png
+image: /assets/2021/06-wxrobot-backend-management/admin.webp
 ---
 
 微信机器人开源库调研，[GitHub](https://github.com/) 找到以下 3 个开源作品：
@@ -111,7 +111,7 @@ Wechaty.instance()
   - 低智商对话
   - 成语接龙，查天气，查酒店，歇后语...
 
-![admin](/assets/2021/06-wxrobot-backend-management/admin.png)
+![admin](/assets/2021/06-wxrobot-backend-management/admin.webp)
 
 ### 技术构成
 
