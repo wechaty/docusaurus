@@ -102,19 +102,19 @@ tags:
 
 ### live coding视频
 
-> 国内链接：[Waiting for update](Waiting for update)
+> 国内链接：[https://www.bilibili.com/video/BV1sP4y187Vj/](https://www.bilibili.com/video/BV1sP4y187Vj/)
 
-{% include iframe.html src="Waiting for update" %}
+{% include iframe.html src="https://youtu.be/SKhgnRaljzk" %}
 
 ### PPT展示视频
 
-> 国内链接：[Waiting for update](Waiting for update)
+> 国内链接：[https://www.bilibili.com/video/BV1z34y1U7MR/](https://www.bilibili.com/video/BV1z34y1U7MR/)
 
-{% include iframe.html src="Waiting for update" %}
+{% include iframe.html src="https://youtu.be/fGjEd5O97lQ" %}
 
 ### 项目PPT
 
-{% include iframe.html src="/assets/2021/08-ospp-mid-term-wechaty-itchat-puppet/itchat.pdf" %}
+{% include iframe.html src="/assets/2021/10-ospp-final-term-wechaty-itchat-puppet/itchat.pdf" %}
 
 ## 联系我们
 
