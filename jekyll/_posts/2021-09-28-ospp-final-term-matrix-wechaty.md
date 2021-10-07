@@ -15,9 +15,7 @@ tags:
   - ecosystem
 ---
 
-“[开源软件供应链点亮计划-暑期2021](https://summer.iscas.ac.cn)”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。活动联合各大开源社区，针对重要开源软件的开发与维护提供项目，并向全球高校学生开放报名。 学生可自主选择感兴趣的项目进行申请，并在中选后获得该软件资深维护者（社区导师）亲自指导的机会。 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2021”活动奖金和奖杯。
-
-本项目 [Matrix AppService Wechaty](https://github.com/wechaty/matrix-appservice-wechaty) 系 暑期2021 支持的开源项目。
+Matrix AppService Wechaty 是一个 Matrix 应用服务（ AppService ），它可以把 Wechaty 支持的应用桥接到 Matrix 服务器中，帮助我们在 Matrix 客户端收发微信，飞书等通讯平台的消息。本项目基于 Matrix AppService Wechaty 完善了消息收发，用户信息展示，部署和开发流程优化等功能。
 
 ## [Matrix AppService Wechaty](https://github.com/wechaty/matrix-appservice-wechaty)项目信息
 
@@ -87,3 +85,7 @@ tags:
 - 联系方式：
   - 林宇靖：lprintf@qq.com
   - 张瑞宁：3134191406@qq.com
+
+“[开源软件供应链点亮计划-暑期2021](https://summer.iscas.ac.cn)”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。活动联合各大开源社区，针对重要开源软件的开发与维护提供项目，并向全球高校学生开放报名。 学生可自主选择感兴趣的项目进行申请，并在中选后获得该软件资深维护者（社区导师）亲自指导的机会。 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2021”活动奖金和奖杯。
+
+本项目 [Matrix AppService Wechaty](https://github.com/wechaty/matrix-appservice-wechaty) 系 暑期2021 支持的开源项目。
