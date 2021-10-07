@@ -4,7 +4,7 @@ author: chinggg
 categories:
   - project
   - ospp
-image: /assets/2021/08-ospp-mid-term-cli/terminal-wechaty.webp
+image: /assets/2021/09-ospp-final-cli/terminal-wechaty.webp
 tags:
   - summer-of-wechaty
   - summer-2021
