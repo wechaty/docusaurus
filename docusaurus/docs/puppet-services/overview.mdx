@@ -1,0 +1,57 @@
+---
+title: Wechaty Puppet Services
+sidebar_label: 'Overview'
+---
+
+import Badges from './transclusions/badges.mdx'
+
+<Badges />
+
+For different instant messaging (IM) systems (such as WeChat, Whatsapp, and TikTok), the Wechaty community builds separate RPA modules for each, and we call those modules [Wechaty Puppet](https://github.com/wechaty/wechaty-puppet).
+
+Wechaty Puppet Service is gRPC for Wechaty Puppet. To use a Wechaty Puppet Service, you need a TOKEN for that service, and pass it to Wechaty, then you will be able to use that Puppet Service.
+
+```sh
+export WECHATY_PUPPET=wechaty-puppet-service
+export WECHATY_PUPPET_SERVICE_TOKEN="${TOKEN}"
+```
+
+> You can switch between different Wechaty Puppet Services by changing your TOKEN. All your source code should work between different tokens without any changes.
+
+## What is Wechaty Puppet Service?
+
+With the power of Wechaty Puppet Service Token Gateway, any Wechaty Puppet Provider can be converted to Wechaty Puppet Service by yourself.
+
+Here is why you may need a ready-to-use Wechaty Puppet Service :
+
+- You are a Polyglot Wechaty developer, but you do not want to run another docker container in your system.
+- You are a TpyeScript Wechaty developer, but the Wechaty Puppet Provider needs a complicated system setup, like an X11 System, Wine, or Android Emulator.
+
+Another issue is that the Wechaty Puppet Provider is closed source, which means you will not be able to install it, but only can use it as a Wechaty Puppet Service.
+
+## Introducing Wechaty Puppet Service Provider
+
+Our Wechaty Community now has **serval Wechaty Puppet Services** which works out-of-the-box. All you need is to get a Wechaty Puppet Service Token, then use wechaty-puppet-service with that token.
+
+For now, the Wechaty community has four official Wechaty Puppet Services:
+
+| Name | Platform | Protocol | Life Cycle |
+| :---: | :---: | :---: | :---: |
+| [WXWork](wxwork.md) | WeCom | Windows | Beta |
+| [Paimon](paimon.md)| WeChat | Pad | Beta |
+| [PadLocal](padlocal.md) | WeChat | Pad | Beta |
+| [Donut](donut.md) | WeChat | Windows | Deprecated |
+
+[Introducing Wechaty Puppet Service](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/)
+
+1. [The relationship between Wechaty OSS Project and the Commercial Puppet Service Provider (CPSP) #11](https://github.com/wechaty/PMC/issues/11)
+
+## Useful Links
+
+1. [Wechaty OSS Project and the Commercial Puppet Service Provider (CPSP)](https://github.com/wechaty/PMC/issues/11)
+2. [Wechaty Starter Project Template that works out-of-the-box](https://github.com/wechaty/wechaty-getting-started)
+3. [How to create your own Wechaty Puppet Service Token with the Web Protocol](https://github.com/wechaty/wechaty/issues/1986)
+
+## Blogs
+
+1. [Introducing Wechaty Puppet Service (Providers), @huan, Jan 14, 2021](https://wechaty.js.org/2021/01/14/wechaty-puppet-service/)

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{% assign item_type = page.type       %}
+{% assign items     = site[page.type] %}
+
+<div class="container">
+  {{ content }}
+
+  <h4 class="font-weight-bold spanborder"><span>{{page.title}}</span></h4>
+    <div class="row gap-y listrecent listauthor">
+
+      {% for item in items %}
+      {% include main-loop-card-item.html %}
+      {% endfor %}
+
+    </div>
+  </div>
+</div>

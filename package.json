@@ -1,47 +1,74 @@
 {
-  "name": "@chatie/blog",
-  "version": "0.2.15",
-  "description": "Chatie Blog",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
+  "name": "wechaty.js.org",
+  "version": "0.10.22",
+  "description": "Wechaty Official Website for News, Blogs, Contributor Profiles, and Documentations",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=14"
   },
   "scripts": {
     "fit-image": "./scripts/fit-image.sh",
-    "lint": "npm run lint:es && npm run lint:ts && npm run lint:md && npm run lint:fn",
-    "lint:es": "eslint 'src/**/*.ts' 'tests/**/*.spec.ts' --ignore-pattern tests/fixtures/",
-    "lint:ts": "tsc --noEmit",
-    "lint:md": "markdownlint README.md 'docs/**/*.md'",
+    "lint": "npm-run-all lint:es lint:ts lint:md lint:fn lint:yml",
+    "lint:es": "eslint \"src/**/*.ts\" \"tests/**/*.spec.ts\" --ignore-pattern tests/fixtures/",
+    "lint:ts": "tsc --isolatedModules --noEmit",
+    "lint:md": "markdownlint --ignore _site/ --ignore node_modules/ --ignore docusaurus/node_modules/ \"**/*.md\"",
     "lint:fn": "file-name-linter .file-name-linter.json",
-    "test": "npm run lint && npm run test:unit",
-    "test:unit": "ts-node --files ./node_modules/.bin/blue-tape 'src/**/*.spec.ts' 'tests/**/*.spec.ts'"
+    "lint:yml": "true || yamllint jekyll/_data/*.yml",
+    "test": "npm-run-all lint test:unit",
+    "test:unit": "cross-env TAP_TIMEOUT=60 NODE_OPTIONS=\"--no-warnings --loader=ts-node/esm\" tap \"src/**/*.spec.ts\" \"tests/**/*.spec.ts\"",
+    "build": "npm-run-all build:docusaurus build:jekyll",
+    "build:jekyll": "cd jekyll && make build",
+    "build:docusaurus": "cd docusaurus && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chatie/blog.git"
+    "url": "git+https://github.com/wechaty/wechaty.js.org.git"
   },
   "keywords": [
+    "wechaty",
+    "document",
+    "homepage",
+    "Docusaurus",
     "Minimal Mistakes",
     "Jekyll"
   ],
   "author": "Huan LI <zixia@zixia.net>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/chatie/blog/issues"
+    "url": "https://github.com/wechaty/wechaty.js.org/issues"
   },
-  "homepage": "https://github.com/chatie/blog#readme",
+  "homepage": "https://github.com/wechaty/wechaty.js.org#readme",
   "devDependencies": {
-    "@chatie/eslint-config": "^0.6.13",
-    "@chatie/git-scripts": "^0.2.5",
-    "@chatie/tsconfig": "^0.6.1",
-    "@types/glob": "^7.1.1",
-    "@types/image-size": "^0.7.0",
-    "file-box": "^0.8.27",
-    "glob": "^7.1.4",
-    "image-size": "^0.7.4",
-    "is-pr": "^1.1.0",
-    "probe-image-size": "^4.0.0",
-    "tstest": "^0.4.2"
+    "@chatie/eslint-config": "^0.14.1",
+    "@chatie/git-scripts": "^0.6.2",
+    "@chatie/tsconfig": "^0.20.2",
+    "@types/glob": "^7.1.4",
+    "@types/lodash": "^4.14.172",
+    "@types/marked": "^2.0.4",
+    "@types/node-fetch": "^2.5.12",
+    "@types/probe-image-size": "^7.0.1",
+    "@types/yaml-front-matter": "^4.1.0",
+    "abort-controller": "^3.0.0",
+    "clsx": "^1.1.1",
+    "cross-env": "^7.0.3",
+    "file-box": "^0.16.8",
+    "git-scripts": "^0.4.3",
+    "glob": "^7.1.7",
+    "image-size": "^1.0.0",
+    "is-pr": "^2.0.0",
+    "lodash": "^4.17.21",
+    "markdownlint-cli": "^0.28.1",
+    "marked": "^3.0.0",
+    "node-fetch": "^2.6.1",
+    "npm-run-all": "^4.1.5",
+    "probe-image-size": "^7.2.1",
+    "tstest": "^0.7.3",
+    "typescript": "^4.4.3",
+    "uuid": "^8.3.2",
+    "yaml": "^1.10.2",
+    "yaml-front-matter": "^4.1.1",
+    "yaml-lint": "^1.2.4"
   },
   "git": {
     "scripts": {

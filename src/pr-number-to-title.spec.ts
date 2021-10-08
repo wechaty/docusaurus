@@ -1,10 +1,10 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test  from 'tstest'
+import { test } from 'tstest'
 
-import { prNumberToTitle } from './pr-number-to-title'
+import { prNumberToTitle } from './pr-number-to-title.js'
 
-test('pr number to title', async t => {
+test.skip('pr number to title', async t => {
   const ORG = 'bupt'
   const REPO = 'ai-ml.club'
   const PR = 141

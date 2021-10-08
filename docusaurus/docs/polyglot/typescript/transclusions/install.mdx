@@ -1,0 +1,75 @@
+import Tabs     from '@theme/Tabs'
+import TabItem  from '@theme/TabItem'
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+nvm install node
+nvm use node
+
+# Install build tools
+sudo apt-get install build-essential
+```
+
+:::note See Also
+
+1. [Node Version Manager](http://nvm.sh/)
+1. [Installing Node.js via package manager](https://nodejs.org/en/download/package-manager/)
+
+:::
+
+</TabItem>
+<TabItem value="mac">
+
+```sh
+brew install node
+# Build tools
+brew install make
+```
+
+:::note See Also
+
+1. [Download the Node.js](https://nodejs.org/en/download/)
+
+:::
+
+</TabItem>
+<TabItem value="windows">
+
+```sh
+choco install nodejs
+
+# Install build tools
+choco install make
+npm install --global windows-build-tools
+```
+
+:::note See Also
+
+1. [Download the Node.js](https://nodejs.org/en/download/)
+2. [Windows-Build-Tools](https://github.com/felixrieseberg/windows-build-tools#readme)
+
+:::
+
+</TabItem>
+</Tabs>
+
+### Verify
+
+```sh
+node --version
+// Output: v16.16.3 (or above)
+npm --version
+// Output: 6.14.4 (or above)
+```

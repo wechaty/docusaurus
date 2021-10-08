@@ -1,0 +1,93 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: GitHub Pages CI
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  test:
+    name: Test & Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # https://github.community/t/solved-workflows-and-git-logs/121289
+      - name: Bundle Config
+        run: |
+          sudo gem install bundler
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: 'npm'
+          cache-dependency-path: package.json
+      - name: NPM Install
+        run: npm install
+      - name: Debug
+        run: |
+          git log --since="1 week ago" --name-only --pretty=format: | sort | uniq
+          git log --since="1 week ago" --name-only --pretty=format: | sort | uniq | wc -l
+      - name: NPM Test
+        run: npm test
+      - name: Install Dependencies
+        run: make install
+      - name: Build
+        run: npm run build
+
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    name: Deploy GitHub Pages
+    needs:
+      - test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0  # https://github.com/facebook/docusaurus/issues/2798#issuecomment-636602951
+
+    - name: Bundle Cache Config
+      run: |
+        sudo gem install bundler
+        # bundle config path ~/.npm/bundle
+
+    - uses: actions/setup-node@v2
+      with:
+        node-version: 16
+        cache: 'npm'
+        cache-dependency-path: package.json
+
+    - name: Config Git
+      run: |
+        git config --global user.name 'Huan @ GitHub Action'
+        git config --global user.email 'zixia@zixia.net'
+    - name: Create orphan branch for gh-pages
+      run: |
+        git checkout --orphan gh-pages
+        git reset --hard
+        git commit --allow-empty -m "Orphan init"
+        git checkout main
+    - name: Install dependencies
+      run: |
+        make install
+    - name: Bind git worktree with new-gh-pages folder and gh-pages branch
+      run: |
+        rm -fr new-gh-pages
+        git worktree add new-gh-pages gh-pages
+    - name: Build and copy all homepage files to new-gh-pages/ together
+      run: |
+        bash -x ./scripts/build-all.sh new-gh-pages
+    - name: Deploy new-gh-pages
+      run: |
+        pushd new-gh-pages
+        git add --all
+        git commit -m "$(jq -r .version ../package.json)"
+        git push -f origin gh-pages
+        popd
+    - name: Unbind new-gh-pages folder from gh-pages branch
+      run: |
+        git worktree remove new-gh-pages
+        git branch -D gh-pages
+        rm -fr new-gh-pages

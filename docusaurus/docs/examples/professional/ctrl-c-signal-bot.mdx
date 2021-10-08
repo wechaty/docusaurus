@@ -1,0 +1,455 @@
+---
+title: Ctrl C Signal Bot
+---
+
+<!-- MDX import -->
+import Tabs     from '@theme/Tabs'
+import TabItem  from '@theme/TabItem'
+
+import ShortestChatbots from '../../polyglot/transclusions/shortest-chatbots.mdx'
+
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
+[![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-blue.svg)](https://www.typescriptlang.org/)
+
+Wechaty **Ctrl C Signal Bot** helps in sending a message when the node process ends using the [finis](https://www.npmjs.com/package/finis) NPM package.
+
+In this tutorial, you will get step-by-step instructions for building the Wechaty Ctrl C Signal Bot from scratch.
+
+## Try out the bot
+
+[![Edit wechaty-ctrl-c-bot](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/sbis04/wechaty-ctrl-c-bot/tree/main/?fontsize=14&hidenavigation=1&theme=dark)
+
+You can try out the Wechaty Ctrl C Signal Bot using this interactive CodeSandbox.
+
+Just scan the generated QR code with **WeChat** app, and you are ready to play with the bot!
+
+<iframe
+class="codesandbox"
+src="https://codesandbox.io/embed/github/sbis04/wechaty-ctrl-c-bot/tree/main/?fontsize=12&hidenavigation=1&module=%2Fctrl-c-bot.ts&theme=dark"
+title="ctrl-c-bot"
+sandbox="allow-forms allow-modals allow-popups allow-same-origin allow-scripts"
+></iframe>
+
+## Requirements
+
+1. [Node.js](https://nodejs.org/en/download) v16+
+2. [Wechaty](https://github.com/wechaty/wechaty) v0.40+
+
+## Getting started
+
+You should have `Node.js` installed on your system. If you do not have `Node.js` installed (or have a version below 12), then you need to install the latest version of `Node.js` by following the links below:
+
+:::note Node.js installation docs
+
+* [Windows](https://nodejs.org/en/download/package-manager/#windows)
+* [Linux\(Debian/Ubuntu\)](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+* [macOS](https://nodejs.org/en/download/package-manager/#macos)
+
+> Installation guide for `Node.js` on other platforms can be found [here](https://nodejs.org/en/download/package-manager/).
+
+:::
+
+You can head over to the [Building the bot](#building-the-bot) section to learn how to build the bot on your own.
+
+Otherwise, if you just want to try out the bot on your local system, follow the steps below:
+
+### 1. Clone the repository
+
+Use the following commands to clone the [GitHub repository](https://github.com/wechaty/wechaty-getting-started) and navigate to the directory:
+
+```bash
+git clone https://github.com/wechaty/wechaty-getting-started.git
+cd wechaty-getting-started
+```
+
+### 2. Install dependencies
+
+You can install the `npm` packages required for running the bot, using this command:
+
+```sh
+npm install
+```
+
+### 3. Run the bot
+You have to `export/set` the environment variables:
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```bash
+set WECHATY_LOG=verbose
+set WECHATY_PUPPET=wechaty-puppet-wechat
+```
+
+</TabItem>
+</Tabs>
+
+> There are various **Wechaty puppets** available, you can know more about them [here](https://github.com/wechaty/wechaty-getting-started#working-with-different-puppets).
+
+Run the bot by using the following command:
+
+```bash
+ts-node examples/professional/ctrl-c-signal-bot.ts
+```
+
+It will generate a QR code, scan it using **WeChat** or **WhatsApp** (according to the puppet you have used), and you are ready to play with the bot.
+
+## Building the bot
+
+Let's get started with building the Wechaty Ctrl C Signal Bot using Wechaty.
+
+### 1. Initialize project
+
+Create a new folder called `ctrl-c-bot` and move into that directory:
+
+```bash
+mkdir ctrl-c-bot
+cd ctrl-c-bot
+```
+
+Use the following command to initialize an npm project:
+
+```bash
+npm init -y
+```
+
+This will generate the `package.json` file containing these:
+
+```json
+{
+  "name": "ctrl-c-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+```
+
+### 2. Install dependencies
+
+The dependencies that you will need for building this bot are:
+
+* [wechaty](https://www.npmjs.com/package/wechaty)
+* [qrcode-terminal](https://www.npmjs.com/package/qrcode-terminal) for displaying the QR code
+* [finis](https://www.npmjs.com/package/finis) for sending a message when the node process ends
+
+Install them using the following commands:
+
+```sh
+npm install wechaty
+npm install qrcode-terminal
+npm install finis
+```
+
+You will also need to add dependencies for using any [Wechaty Puppet](https://wechaty.js.org/docs/puppet-providers/) which helps to integrate Wechaty with various **instant messaging (IM) systems** (such as WeChat, WhatsApp, and WeCom):
+
+1. If you want to use **[WhatsApp](https://www.whatsapp.com/)**, install `wechaty-puppet-whatsapp`:
+
+  ```bash
+  npm install wechaty-puppet-whatsapp
+  ```
+
+2. If you want to use **[WeChat](https://www.wechat.com/)**, you can try the following puppets:
+
+   * **Web Protocol:** Install `wechaty-puppet-wechat`:
+
+    ```bash
+    npm install wechaty-puppet-wechat
+    ```
+
+   * **iPad Protocol:**
+    * padlocal: Install `wechaty-puppet-padlocal`:
+
+      ```bash
+      npm install wechaty-puppet-padlocal
+      ```
+
+      Then get a token like `puppet_padlocal_XXX`, know more about puppet service padlocal [here](http://wechaty.js.org/docs/puppet-services/padlocal).
+
+    * paimon: Install `wechaty-puppet-service`:
+
+      ```bash
+      npm install wechaty-puppet-service
+      ```
+
+      Then get a token like `puppet_paimon_XXX`, know more about puppet service paimon [here](http://wechaty.js.org/docs/puppet-services/paimon).
+
+3. If you want to use **[WeCom](https://work.weixin.qq.com/)**, install `wechaty-puppet-service`:
+
+  ```bash
+  npm install wechaty-puppet-service
+  ```
+
+  Then get a token like `puppet_wxwork_XXXXX`, more about puppet service wxwork [here](https://wechaty.js.org/docs/puppet-services/wxwork/).
+
+> You can find more information about the puppets [here](https://wechaty.js.org/docs/puppet-providers/).
+
+### 3. Write code for bot
+
+Start by creating a new file `ctrl-c-bot.ts`. We will be writing the code here.
+
+Let's import the required packages in the TypeScript file:
+
+```ts
+import { generate } from 'qrcode-terminal'
+import { finis } from 'finis'
+import { Wechaty, log, qrcodeValueToImageUrl } from 'wechaty'
+```
+
+Now we will write some functions which will be required for handling different events of the bot.
+
+**onLogin**
+
+This function will print message when a user logs into the bot and also send a message about it to the user.
+
+```ts
+function onLogin(user: Contact) {
+  log.info('Bot', `${user.name()} login`)
+  bot.say('Wechaty login').catch(console.error)
+}
+```
+
+**onScan**
+
+This function will be required for generating a QR code for the puppet specified and display it on console.
+
+```ts
+function onScan(qrcode: string, status: ScanStatus, data: Boolean) {
+  generate(qrcode, { small: true })
+  if (data) {
+    console.log(data)
+  }
+  console.log(qrcodeValueToImageUrl(qrcode))
+  console.log('^^^ Online QR Code Image URL ^^^ ')
+  console.log(`[${status}] ${qrcode} Scan QR Code above url to log in: `)
+}
+```
+
+**onMessage**
+
+This will retrieve the message sent by someone to your account and print it on the console.
+
+```ts
+async function onMessage(msg: Message) {
+  console.log(msg.toString())
+  console.log('Please press Ctrl+C to kill me!')
+  console.log(`Then I'll send my last word to myself, check it out on your Wechat!`)
+}
+```
+
+**onError**
+
+This will print the error message on console and if the bot is logged in then say it as a message to the user.
+
+```ts
+async function onError(e: Error) {
+  log.error('Bot', 'error: %s', e)
+  if (bot.logonoff()) {
+    await bot.say('Wechaty error: ' + e.message).catch(console.error)
+  }
+}
+```
+
+Initialize the bot by providing a name.
+
+```ts
+const bot = new Wechaty({
+  name: 'ctrl-c-bot',
+})
+```
+
+Assigning proper functions to call when an event is triggered.
+
+```ts
+bot
+  .on('login', onLogin)
+  .on('scan', onScan)
+  .on('message', onMessage)
+  .on('error', onError)
+```
+
+Declare two variables, `killChrome` of type `NodeJS.SignalsListener` and `quitting` of type `Boolean`:
+
+```ts
+let killChrome: NodeJS.SignalsListener
+let quitting = false
+```
+
+For starting the bot, you can use the following:
+
+```ts
+bot.start()
+  .then(() => {
+    const listenerList = process.listeners('SIGINT')
+    for (const listener of listenerList) {
+      if (listener.name === 'killChrome') {
+        process.removeListener('SIGINT', listener)
+        killChrome = listener
+      }
+    }
+  })
+  .catch(async e => {
+    log.error('Bot', 'start() fail: %s', e)
+    await bot.stop()
+    process.exit(-1)
+  })
+```
+
+Define the `finis` callback function to handle the `SIGINT` signals:
+
+```ts
+finis(async (code, signal) => {
+  log.info('Bot', 'finis(%s, %s)', code, signal)
+
+  if (!bot.logonoff()) {
+    log.info('Bot', 'finis() bot had been already stopped')
+    doExit(code)
+  }
+
+  if (quitting) {
+    log.warn('Bot', 'finis() already quitting... return and wait...')
+    return
+  }
+
+  quitting = true
+  let done = false
+
+  const exitMsg = `Wechaty will exit ${code} because of ${signal} `
+
+  log.info('Bot', 'finis() broadcast quitting message for bot')
+  await bot.say(exitMsg)
+    .catch(e => log.error('Bot', 'finis() catch rejection: %s', e))
+    .then(() => done = true)
+
+  setImmediate(checkForExit)
+
+  function checkForExit() {
+    log.info('Bot', 'finis() checkForExit() checking done: %s', done)
+    if (done) {
+      log.info('Bot', 'finis() checkForExit() done!')
+      setTimeout(() => doExit(code), 1000)  // delay 1 second
+      return
+    }
+    setTimeout(checkForExit, 100)
+  }
+})
+```
+
+The `doExit` function is used to exit the Node.js process:
+
+```ts
+function doExit(code: number): void {
+  log.info('Bot', 'doExit(%d)', code)
+  if (killChrome) {
+    killChrome('SIGINT')
+  }
+  process.exit(code)
+}
+```
+
+## Running the bot
+
+In order to run the bot, first you have to **export/set** an environment variable with the type of puppet to use:
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+   { label: 'Linux',   value: 'linux', },
+   { label: 'macOS',   value: 'mac', },
+   { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+
+# For using WhatsApp:
+# export WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# export WECHATY_PUPPET=wechaty-puppet-service
+# export WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat
+
+# For using WhatsApp:
+# export WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# export WECHATY_PUPPET=wechaty-puppet-service
+# export WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```bash
+set WECHATY_LOG=verbose
+set WECHATY_PUPPET=wechaty-puppet-wechat
+
+# For using WhatsApp:
+# set WECHATY_PUPPET=wechaty-puppet-whatsapp
+
+# For using WeCom:
+# set WECHATY_PUPPET=wechaty-puppet-service
+# set WECHATY_PUPPET_SERVICE_TOKEN="puppet_wxwork_XXXXX"
+```
+
+</TabItem>
+</Tabs>
+
+> If you are using WeCom, you can get token from [puppet service wxwork](http://wechaty.js.org/docs/puppet-services/wxwork).
+
+Run the bot using the following command:
+
+```bash
+ts-node ctrl-c-bot.ts
+```
+
+This will start the bot and generate a QR code.
+
+Scan it using your **WeChat/WhatsApp** as per the puppet you have selected, and you are ready to play with the bot!
+
+## References
+
+* [Wechaty Getting Started GitHub repository](https://github.com/wechaty/wechaty-getting-started)

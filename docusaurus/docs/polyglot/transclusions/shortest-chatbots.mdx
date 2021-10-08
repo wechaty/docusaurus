@@ -1,0 +1,72 @@
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+
+import ShortestChatbotTypeScript  from '../typescript/transclusions/shortest-chatbot.mdx'
+import ShortestChatbotOpenApi     from '../openapi/transclusions/shortest-chatbot.mdx'
+import ShortestChatbotJavaScript  from '../typescript/transclusions/shortest-chatbot-js.mdx'
+import ShortestChatbotPython      from '../python/transclusions/shortest-chatbot.mdx'
+import ShortestChatbotGo          from '../go/transclusions/shortest-chatbot.mdx'
+import ShortestChatbotJava        from '../java/transclusions/shortest-chatbot.mdx'
+import ShortestChatbotPhp         from '../php/transclusions/shortest-chatbot.mdx'
+import ShortestChatbotScala       from '../scala/transclusions/shortest-chatbot.mdx'
+import ShortestChatbotDotnet      from '../dotnet/transclusions/shortest-chatbot.mdx'
+import ShortestChatbotRust        from '../rust/transclusions/shortest-chatbot.mdx'
+
+<Tabs
+  groupId="programming-languages"
+  defaultValue="ts"
+  values={[
+    { label: 'TypeScript',  value: 'ts', },
+    { label: 'JavaScript',  value: 'js', },
+    { label: 'Python',      value: 'py', },
+    { label: 'Go',          value: 'go', },
+    { label: 'Java',        value: 'java', },
+    { label: 'PHP',         value: 'php', },
+    { label: 'Scala',       value: 'scala', },
+    { label: 'C#',          value: 'csharp', },
+    { label: 'Rust',        value: 'rust', },
+    { label: 'OpenAPI',     value: 'openapi', },
+  ]}
+>
+
+<TabItem value="ts">
+  <ShortestChatbotTypeScript />
+</TabItem>
+
+<TabItem value="js">
+  <ShortestChatbotJavaScript />
+</TabItem>
+
+<TabItem value="py">
+  <ShortestChatbotPython />
+</TabItem>
+
+<TabItem value="go">
+  <ShortestChatbotGo />
+</TabItem>
+
+<TabItem value="java">
+  <ShortestChatbotJava />
+</TabItem>
+
+<TabItem value="php">
+  <ShortestChatbotPhp />
+</TabItem>
+
+<TabItem value="scala">
+  <ShortestChatbotScala />
+</TabItem>
+
+<TabItem value="csharp">
+  <ShortestChatbotDotnet />
+</TabItem>
+
+<TabItem value="rust">
+  <ShortestChatbotRust />
+</TabItem>
+
+<TabItem value="openapi">
+  <ShortestChatbotOpenApi />
+</TabItem>
+
+</Tabs>

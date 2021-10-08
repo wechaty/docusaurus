@@ -1,0 +1,67 @@
+---
+slug: /howto/
+title: Overview
+sidebar_label: 'Overview'
+---
+
+<!-- how-to/cookbook - Explains how to accomplish a specific task. -->
+
+How-to guides are like recipes when you are cooking. Equipped with basic knowledge about Wechaty, you can find key problems and use-cases at [Wechaty Examples](https://wechaty.js.org/docs/examples/overview). If you are a total beginner, you can go to [Wechaty getting started](https://wechaty.js.org/docs/getting-started/) first.
+
+<!-- These are some use cases and code snippets to get you started with Redux in a real app. They assume you understand the topics in [basic](#b) and [advanced](#a) tutorials. They are more advanced than tutorials and assume some knowledge of how Wechaty works. -->
+
+## Add events to the bot
+
+Prepare your bot to add events
+
+- [Add events and customise a bot](howto/event.md)
+
+## Add functionality to the bot
+
+Use one of our quickstart repositories to add functionalities to the bot in a few minutes.
+
+- [Deal with messages](howto/message.md)
+- [Manage contacts](howto/contact.mdx)
+- [Manage rooms](howto/room.md)
+- [Send and accept friend requests](howto/friendship.md)
+- [Send and receive files](howto/file-box.mdx)
+
+## Deploy on IM platform
+
+Deploy the bot on various instant messaging platform
+
+- [Deploy in WeChat](howto/deploy-wechat.mdx)
+- [Deploy in Whatsapp](#)
+- [Deploy in Lark](#)
+- [Deploy in Gitter](howto/deploy-gitter.mdx)
+- [Deploy in Official Account](howto/wechat-offical.mdx)
+- [Deploy in PadLocal](#)
+- [Deploy in WeChat4U](howto/deploy-wechat4u.mdx)
+
+## Deploy with containers
+
+Deploy the bot with highly popular container solutions
+
+- [Deploy with Heroku](howto/heroku.md)
+- [Deploy with Docker](howto/docker.mdx)
+
+## Additional
+
+### Using Puppets with Wechaty (How to switch between puppets)
+
+For different instant messaging (IM) systems (such as WeChat, Whatsapp, and TikTok), the Wechaty community builds separate RPA (Robotic Process Automation) modules for each, and we call those modules [Wechaty Puppet](https://github.com/wechaty/wechaty-puppet).
+
+Wechaty Puppet Service is gRPC for Wechaty Puppet. To use a Wechaty Puppet Service, you need a TOKEN for that service, and pass it to Wechaty, then you will be able to use that Puppet Service.
+
+```sh
+export WECHATY_PUPPET=wechaty-puppet-service
+export WECHATY_PUPPET_SERVICE_TOKEN="${TOKEN}"
+```
+
+> You can switch between different Wechaty Puppet Services by changing your TOKEN. The source code works same irrespective of the token you used.
+
+To learn how to generate TOKEN and switch between puppets , you can visit [Puppet Services](https://wechaty.js.org/docs/puppet-services/).
+
+## Use Cases
+
+[Wechaty cases study](case-study/overview.md)

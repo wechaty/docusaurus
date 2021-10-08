@@ -1,0 +1,80 @@
+# Site
+name: Wechaty
+description: Conversational RPA SDK for Chatbot Makers
+logo: assets/images/logo.png
+favicon: assets/images/favicon.ico
+url: https://wechaty.js.org
+baseurl:
+disqus: wechaty
+email: wechaty@googlegroups.com
+mailchimp-list: https://zixia.us4.list-manage.com/subscribe/post?u=a8584b55dea5aa8bbc14bd1a0&amp;id=d9899f0d70
+google:
+  tag_manager:
+    container_id: GTM-PD2PL84
+
+include: ["_pages"]
+permalink: /:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-pwa-plugin
+
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: _posts
+    values:
+      layout: post
+      comments: true
+      author: wechaty
+      avatar: /assets/contributors/wechaty/icon.png
+
+  # all pages
+  - scope:
+      path: _pages
+    values:
+      layout: page
+  - scope:
+      path: _contributors
+    values:
+      layout: contributor
+      comments: true
+
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Paginate
+paginate: 30
+paginate_path: /blog/page:num/
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude:
+  - package.json
+  - _site
+  - node_modules
+
+collections:
+  contributors:
+    output: true
+    permalink: /:collection/:path/
+
+pwa:
+  enabled: true # Optional
+  sw_src_filepath: service-worker.js # Optional
+  sw_dest_filename: service-worker.js # Optional
+  dest_js_directory: assets/js # Required
+  precache_recent_posts_num: 5 # Optional
+  precache_glob_directory: / # Optional
+  precache_glob_patterns: # Optional
+    - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
+    - index.html
+  precache_glob_ignores: # Optional
+    - sw-register.js
+    - "fonts/**/*"

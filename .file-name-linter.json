@@ -1,18 +1,19 @@
 {
   "rules": {
-    "docs/_posts": [
-      "^docs/_posts/",
+    "jekyll/_posts": [
       "/[0-9\\-a-z]+\\.",
       "\\.md$"
     ],
-    "docs/assets": [
-      "^docs/assets/",
-      "/[0-9\\-a-z]+\\.",
-      "\\.(jpg|jpeg|png|gif|zip|pdf)$"
+    "jekyll/assets": [
+      "/[0-9\\-a-z_]+\\.",
+      "\\.(webp|pdf|zip)$"
     ]
   },
   "ignore": [
-    "docs/assets/js/viewer-js",
+    "jekyll/assets/js",
+    "jekyll/assets/css",
+    "jekyll/assets/images",
+    "jekyll/assets/contributors/wechaty",
     "tests/fixtures"
   ]
 }
