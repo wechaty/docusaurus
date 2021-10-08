@@ -12,7 +12,6 @@ tags:
   - ospp-2021
   - plan
   - final-term
-  - other
 
 ---
 
