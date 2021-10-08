@@ -39,6 +39,9 @@ Committer of some puppet
 
   ...
 
+### grpc
+- [Location message](https://github.com/wechaty/grpc/pull/153)
+
 ## Contact me
 
 - Github: <https://github.com/su-chang>
