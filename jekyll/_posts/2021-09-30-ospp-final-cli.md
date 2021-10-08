@@ -14,17 +14,14 @@ tags:
   - ecosystem
 ---
 
-“[开源软件供应链点亮计划-暑期2021](https://summer.iscas.ac.cn)”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。活动联合各大开源社区，针对重要开源软件的开发与维护提供项目，并向全球高校学生开放报名。 学生可自主选择感兴趣的项目进行申请，并在中选后获得该软件资深维护者（社区导师）亲自指导的机会。 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2021”活动奖金和奖杯。
-
-本项目 [基于 Blessed 的 Wechaty 命令行文本客户端软件] 系 暑期2021 支持的开源项目。
+本项目基于 blessed 为 wechaty 开发了一个命令行文本客户端，让用户可以使用键盘在终端里聊天，也方便开发者实时观察机器人的行为。
 
 ## [基于 Blessed 的 Wechaty 命令行文本客户端软件]信息
 
 - 导师：李卓桓
 - 学生：刘靖
-- 项目介绍：[https://github.com/wechaty/summer/issues/80](https://github.com/wechaty/summer/issues/80)
-
 - 项目名称：基于 Blessed 的 Wechaty 命令行文本客户端软件
+- 项目介绍：[https://github.com/wechaty/summer/issues/80](https://github.com/wechaty/summer/issues/80)
 - 方案描述：
   - 仿照 Linux 命令行终端的 IRC 文本客户端，实现一个基于 Wechaty 的即时通讯客户端，通过 Wechaty 支持所有现有的 [Wechaty Puppet Providers](https://wechaty.js.org/docs/puppet-providers/)，比如微信、企业微信、飞书、Whatsapp 等。  
   - 利用 [Blessed](https://github.com/chjj/blessed) 和 [blesssed-contrib](https://github.com/yaronn/blessed-contrib) 提供的组件，绘制终端图形界面程序
@@ -88,3 +85,7 @@ tags:
 
 - 项目链接：[https://github.com/wechaty/cli]  
 - 联系方式：liuchinggg@gmail.com
+
+“[开源软件供应链点亮计划-暑期2021](https://summer.iscas.ac.cn)”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。活动联合各大开源社区，针对重要开源软件的开发与维护提供项目，并向全球高校学生开放报名。 学生可自主选择感兴趣的项目进行申请，并在中选后获得该软件资深维护者（社区导师）亲自指导的机会。 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2021”活动奖金和奖杯。
+
+本项目 [基于 Blessed 的 Wechaty 命令行文本客户端软件] 系 暑期2021 支持的开源项目。
