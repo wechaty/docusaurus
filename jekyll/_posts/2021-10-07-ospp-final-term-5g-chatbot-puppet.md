@@ -4,7 +4,7 @@ author: zrn-fight
 categories:
   - project
   - ospp
-image: /assets/2021/08-ospp-final-term-5g-chatbot-puppet/walnut-wechaty.webp
+image: /assets/2021/10-ospp-final-term-5g-chatbot-puppet/walnut-wechaty.webp
 tags:
   - summer-of-wechaty
   - summer-2021
@@ -73,15 +73,19 @@ tags:
 
 ### live coding视频：
 
-{% include iframe.html src="https://www.bilibili.com/video/BV1b44y1t7vz/" %}
+{% include iframe.html src="https://www.youtube.com/watch?v=4-0lW0kvelE" %}
+
+> 国内版：<https://www.bilibili.com/video/BV1b44y1t7vz>
 
 ### PPT展示视频：
 
-{% include iframe.html src="https://www.bilibili.com/video/BV12L4y1z7sQ/" %}
+{% include iframe.html src="https://www.youtube.com/watch?v=cQydTnaym7Y" %}
+
+> 国内版：<https://www.bilibili.com/video/BV12L4y1z7sQ>
 
 ### 项目PPT：
 
-{% include iframe.html src="/assets/2021/08-ospp-final-term-5g-chatbot-puppet/5g-chatbot-ppt.pdf" %}
+{% include iframe.html src="/assets/2021/10-ospp-final-term-5g-chatbot-puppet/5g-chatbot-ppt.pdf" %}
 
 ## 联系我们
 
