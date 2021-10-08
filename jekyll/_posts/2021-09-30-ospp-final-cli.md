@@ -73,13 +73,21 @@ tags:
   - 考虑到 blessed 和终端的特性，一般聊天软件的设计（如新对话置顶）可能无法照搬
   - 在保证可用性的情况下，使用 React 和 Redux 重构项目
 
-### 期末汇报视频
+### live coding视频
 
-{% include iframe.html src="https://www.youtube.com/watch?v=1" %}
+{% include iframe.html src="https://youtu.be/D5QbX183kb8" %}
+
+> 国内链接：<https://www.bilibili.com/video/BV1444y1t7So/>
+
+### PPT展示视频
+
+{% include iframe.html src="https://youtu.be/PssH9epe0tU" %}
+
+> 国内链接：<https://www.bilibili.com/video/BV1Wg411F7Gh/>
 
 ### 项目PPT
 
-{% include iframe.html src="/assets/2021/08-ospp-mid-term-cli/mid-slides.pdf" %}
+{% include iframe.html src="/assets/2021/09-ospp-final-cli/final-slides.pdf" %}
 
 ## 联系我们
 
