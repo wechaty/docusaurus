@@ -9,17 +9,13 @@ twitter:
 
 Node.js Full Stack Engineer
 
-Committer of some puppet
+Committer of following puppets
 
 - `wechaty-puppet-padpro` (deprecate)
 
 - `wechaty-puppet-padplus` (deprecate)
 
 - `wechaty-puppet-macpro` (deprecate)
-
-- `wechaty-puppet-donut`
-
-- `wechaty-puppet-wxwork`
 
 ## Pull Request List
 
