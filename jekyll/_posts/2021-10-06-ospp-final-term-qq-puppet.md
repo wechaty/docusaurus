@@ -12,6 +12,7 @@ tags:
   - ospp
   - ospp-2021
   - final-term
+  - ecosystem
   - puppet
   - qq
 ---
