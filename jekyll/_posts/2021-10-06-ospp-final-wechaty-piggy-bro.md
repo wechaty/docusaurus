@@ -82,14 +82,13 @@ tags:
 
 {% include iframe.html src="https://www.youtube.com/embed/51EwCNB_Y90" %}
 
-国内链接：https://v.qq.com/x/page/t3300psc439.html
-
+国内链接：[https://v.qq.com/x/page/t3300psc439.html](https://v.qq.com/x/page/t3300psc439.html)
 
 ### PPT展示视频
 
 {% include iframe.html src="https://www.youtube.com/embed/Na9pGdf_6oY" %}
 
-国内链接：https://v.qq.com/x/page/m3300a8rnft.html
+国内链接：[https://v.qq.com/x/page/m3300a8rnft.html](https://v.qq.com/x/page/m3300a8rnft.html)
 
 ### 项目PPT
 
