@@ -15,8 +15,6 @@ tags:
   - final
 ---
 
-> Author: [@ReiKohaku](https://github.com/ReiKohaku)
-
 ## 暑期2021
 
 “开源软件供应链点亮计划-暑期2021”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
@@ -84,9 +82,14 @@ tags:
 
 {% include iframe.html src="https://www.youtube.com/embed/51EwCNB_Y90" %}
 
+国内链接：https://v.qq.com/x/page/t3300psc439.html
+
+
 ### PPT展示视频
 
 {% include iframe.html src="https://www.youtube.com/embed/Na9pGdf_6oY" %}
+
+国内链接：https://v.qq.com/x/page/m3300a8rnft.html
 
 ### 项目PPT
 
