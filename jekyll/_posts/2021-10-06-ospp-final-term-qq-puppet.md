@@ -12,7 +12,6 @@ tags:
   - ospp
   - ospp-2021
   - final-term
-  - other
   - puppet
   - qq
 ---
@@ -98,6 +97,8 @@ QQ 是国内和微信并列的两大聊天软件。我们在本次 Summer 2021 �
 ## 项目成果
 
 项目仓库: <https://github.com/wechaty/wechaty-puppet-oicq>
+
+npm包：<https://www.npmjs.com/package/wechaty-puppet-oicq>
 
 ### live coding视频：
 
