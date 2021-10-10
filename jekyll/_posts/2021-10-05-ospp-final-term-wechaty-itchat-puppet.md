@@ -98,19 +98,21 @@ tags:
 
 ## 项目成果
 
-项目仓库: <https://github.com/wechaty/python-wechaty-puppet-itchat>  
+项目仓库: <https://github.com/wechaty/python-wechaty-puppet-itchat> 
+
+PyPi 包：<https://pypi.org/project/wechaty-puppet-itchat/>
 
 ### live coding视频
 
 > 国内链接：[https://www.bilibili.com/video/BV1sP4y187Vj/](https://www.bilibili.com/video/BV1sP4y187Vj/)
 
-{% include iframe.html src="https://youtu.be/SKhgnRaljzk" %}
+{% include iframe.html src="https://youtu.be/fGjEd5O97lQ" %}
 
 ### PPT展示视频
 
 > 国内链接：[https://www.bilibili.com/video/BV1z34y1U7MR/](https://www.bilibili.com/video/BV1z34y1U7MR/)
 
-{% include iframe.html src="https://youtu.be/fGjEd5O97lQ" %}
+{% include iframe.html src="https://youtu.be/SKhgnRaljzk" %}
 
 ### 项目PPT
 
