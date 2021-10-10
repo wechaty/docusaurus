@@ -11,7 +11,6 @@ tags:
   - ospp
   - ecosystem
   - ospp-2021
-  - plan
   - final-term
 
 ---
@@ -66,7 +65,7 @@ tags:
 
 ## 项目成果
 
-项目仓库: <https://github.com/zrn-fight/wechaty-puppet-walnut>  
+项目仓库: <https://github.com/wechaty/wechaty-puppet-walnut>  
 
 ### live coding视频：
 
