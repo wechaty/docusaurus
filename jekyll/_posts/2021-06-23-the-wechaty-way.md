@@ -6,6 +6,8 @@ categories:
 tags:
   - wechaty-way
   - guide
+  - ospp
+  - ospp-admin
 image: /assets/2021/06-the-wechaty-way/teaser.webp
 ---
 
