@@ -98,7 +98,7 @@ tags:
 
 ## 项目成果
 
-项目仓库: <https://github.com/wechaty/python-wechaty-puppet-itchat> 
+项目仓库: <https://github.com/wechaty/python-wechaty-puppet-itchat>
 
 PyPi 包：<https://pypi.org/project/wechaty-puppet-itchat/>
 
