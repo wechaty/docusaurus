@@ -9,3 +9,9 @@ email: yip.zong@gmail.com
 ## Contact me
 
 - Email：<yip.zong@gmail.com>
+
+## My Contributions
+
+- <https://github.com/wechaty/wechaty.js.org/pull/1143>
+- <https://github.com/wechaty/wechaty-puppet-wechat/pull/14>
+- <https://github.com/wechaty/scala-wechaty-getting-started/issues/1>
