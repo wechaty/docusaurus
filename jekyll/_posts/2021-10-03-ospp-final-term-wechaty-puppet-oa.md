@@ -71,7 +71,7 @@ tags:
 
   Q&A2：在进行图片消息收发的时候，对整个数据的上传下载过程不了解，通过仔细阅读微信公众平台的接口文档了解整个交互机制。
 
-  Q&A2：在进行音频消息收发的时候，我们采用的FileBox模块并不能识别出语音文件的amr后缀名，这样就会导致在后续根据后缀名进行mimetype判断时只能得到undefined的值。为了解决这一问题，我们在得到用户发送的语音文件时，直接将气文件名指定为'message.amr'而不是用路径作为文件名的方法，这样就可以识别出消息类型了。
+  Q&A2：在进行音频消息收发的时候，我们采用的FileBox模块并不能识别出语音文件的amr后缀名，这样就会导致在后续根据后缀名进行mimetype判断时只能得到undefined的值。为了解决这一问题，我们在得到用户发送的语音文件时，直接将文件名指定为'message.amr'而不是用路径作为文件名的方法，这样就可以识别出消息类型了。
 
   Q&A4:在开发小程序发送功能时，经过查阅资料发现公众号只有绑定了小程序的appid才能进行正常的收发，耳测试公众号是没有绑定小程序功能的，所以暂时我只写好了小程序的功能代码，还没有进行测试。为了弥补功能的多样性，我多开发了一个link消息的收发功能。
 
@@ -93,4 +93,9 @@ Bilibili link: <https://www.bilibili.com/video/BV1344y1t7aU/>
 
 ### 项目PPT
 
-{% raw %} {% include iframe.html src="/assets/2021/10-ospp-final-term-wechaty-puppet-oa/final-term-ppt.pdf" %} {% endraw %}
+{% include iframe.html src="/assets/2021/10-ospp-final-term-wechaty-puppet-oa/final-term-ppt.pdf" %}
+
+## 联系我们
+
+- 项目链接：<https://github.com/wechaty/wechaty-puppet-official-account/issues/26>
+- 联系方式：<zuoyanru@mail.ustc.edu.cn>
