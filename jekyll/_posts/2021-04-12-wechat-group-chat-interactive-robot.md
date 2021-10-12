@@ -21,7 +21,7 @@ Go 1.14.6 darwin/amd64、Mysql 5.7、Redis 6.0
 
 ## 购买Token
 
-[chatTools平台]购买Token(175.27.139.176/#/order)
+[chatTools平台]购买Token(http://120.55.60.194/)
 
 ## 下载代码
 
