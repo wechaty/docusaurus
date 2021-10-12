@@ -4,12 +4,12 @@ author: lijiarui
 categories: announcement
 tags:
   - document
-image: /assets/2017/add-wechaty-jsdoc-automate-all-the-things.jpg
+image: /assets/2017/add-wechaty-jsdoc-automate-all-the-things.webp
 ---
 
 In order to sync the doc with the latest code, it's best to use [jsdoc](https://github.com/jsdoc3/jsdoc) to describe the API and use [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown) to generate markdown format documents to the docs directory.
 
-![automate all the things](/assets/2017/add-wechaty-jsdoc-automate-all-the-things.jpg)
+![automate all the things](/assets/2017/add-wechaty-jsdoc-automate-all-the-things.webp)
 
 Yes, we planned to do this for nearly a year...
 

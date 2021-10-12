@@ -4,12 +4,12 @@ author: secreter
 categories: tutorial
 tags:
   - assistant
-image: /assets/2020/tiny-bot/teaser.jpeg
+image: /assets/2020/tiny-bot/teaser.webp
 ---
 
 一个可以OCR 打卡并生成统计方块图的机器人。
 
-![打卡图片](/assets/2020/tiny-bot/teaser.jpeg)
+![打卡图片](/assets/2020/tiny-bot/teaser.webp)
 
 ## 项目背景
 
@@ -77,7 +77,7 @@ image: /assets/2020/tiny-bot/teaser.jpeg
 
 ```
 
-其中listeners 目录对消息类型进行了分类，这样，需要添加特定消息的业务逻辑时，就可以很清晰的添加。config.js 中提供了项目中的所有动态配置项，tpl/ 目录里，存放了代码的打卡模板，可以[点击查看效果](http://images.redream.cn/upic/2019/20200629184711-punch.html?data=[{"count":1,"timestamp":1593097495015},{"count":1,"timestamp":1593270295015},{"count":1,"timestamp":1593339046223},{"count":1,"timestamp":1593427696584},{"count":1,"timestamp":1593521084178},{"count":1,"timestamp":1593574357851},{"count":1,"timestamp":1593688908645},{"count":1,"timestamp":1593705938358}]&avatar=https://github.com/wechaty/wechaty.github.io/raw/master/assets/2020/tiny-bot/qr.jpeg&name=@2020&&h=450&w=375&x=0&y=0)（手机版）
+其中listeners 目录对消息类型进行了分类，这样，需要添加特定消息的业务逻辑时，就可以很清晰的添加。config.js 中提供了项目中的所有动态配置项，tpl/ 目录里，存放了代码的打卡模板，可以[点击查看效果](http://images.redream.cn/upic/2019/20200629184711-punch.html?data=[{"count":1,"timestamp":1593097495015},{"count":1,"timestamp":1593270295015},{"count":1,"timestamp":1593339046223},{"count":1,"timestamp":1593427696584},{"count":1,"timestamp":1593521084178},{"count":1,"timestamp":1593574357851},{"count":1,"timestamp":1593688908645},{"count":1,"timestamp":1593705938358}]&avatar=https://github.com/wechaty/wechaty.github.io/raw/master/assets/2020/tiny-bot/qr.webp&name=@2020&&h=450&w=375&x=0&y=0)（手机版）
 
 ### 打卡模板实现
 
@@ -87,15 +87,15 @@ image: /assets/2020/tiny-bot/teaser.jpeg
 
 图片生成是在服务端实现的，主要是用到了无头浏览器[puppeteer](https://try-puppeteer.appspot.com/)的截图功能。相当于浏览器访问tpl.html地址，将生成的页面进行截图，再通过File-box 返回给用户，即实现了打卡生成图片的功能。
 
-![打卡图片](/assets/2020/tiny-bot/teaser.jpeg)
+![打卡图片](/assets/2020/tiny-bot/teaser.webp)
 
 ### OCR打卡
 
 手动输入打卡关键字打卡，对于有的比较懒的同学，还是比较麻烦的。OCR 技术能实现无感知打卡，当用户将keep 运动的截图发送到群聊的时候，就可以通过OCR 技术识别关键字，进行打卡。这里主要调用的接口是[腾讯的AI 开放平台](https://ai.qq.com/)的通用识图技术。
 
-![打卡图片](/assets/2020/tiny-bot/ocr.jpeg)
+![打卡图片](/assets/2020/tiny-bot/ocr.webp)
 
-![打卡图片](/assets/2020/tiny-bot/menu.jpeg)
+![打卡图片](/assets/2020/tiny-bot/menu.webp)
 
 ## 功能增强
 
@@ -113,7 +113,7 @@ image: /assets/2020/tiny-bot/teaser.jpeg
 
 也欢迎大家添加我的机器人张三进行体验。
 
-![机器人二维码](/assets/2020/tiny-bot/qr.jpeg)
+![机器人二维码](/assets/2020/tiny-bot/qr.webp)
 
 > Author: [@secreter](https://github.com/secreter) 公众号redream
 > Code: [@tiny-bot](https://github.com/secreter/tiny-bot)

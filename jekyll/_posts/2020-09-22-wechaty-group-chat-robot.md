@@ -1,7 +1,7 @@
 ---
 title: "基于Wechaty打造智能聊天机器人(一)"
 author: evilbt
-image: /assets/2020/wechaty-group-chat-robot/demo.jpg
+image: /assets/2020/wechaty-group-chat-robot/demo.webp
 categories: project
 tags:
   - padplus
