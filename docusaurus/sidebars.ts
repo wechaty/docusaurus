@@ -325,7 +325,7 @@ const references = {
     subMenu(puppetProviders),
     subMenu(puppetServices),
     subMenu(specs),
-    'references/deprecations',
+    'references/breaking-changes',
   ]
 }
 

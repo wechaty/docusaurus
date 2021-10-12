@@ -9,7 +9,7 @@ tags:
   - regex101
   - featured
   - entertainment
-image: /assets/2020/wechat-poem-robot/chat.png
+image: /assets/2020/wechat-poem-robot/chat.webp
 ---
 
 [![Wechaty Badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
@@ -55,9 +55,9 @@ image: /assets/2020/wechat-poem-robot/chat.png
 
 Windows 平台下，我用过 RegexBuddy。我发现了一个更好的 Web 平台正则调试工具 [regex101](https://regex101.com/)。它不仅能清楚标注匹配结果，还能展现正则一步步匹配的过程，这对于调试来说至关重要。
 
-![regex101](/assets/2020/wechat-poem-robot/regex101.png)
+![regex101](/assets/2020/wechat-poem-robot/regex101.webp)
 
-![regex101-debug](/assets/2020/wechat-poem-robot/regex101-debug.png)
+![regex101-debug](/assets/2020/wechat-poem-robot/regex101-debug.webp)
 
 除了用正则提取诗歌各字段，还需要匹配各种可能句式中的关键词。测试用例如下：
 
@@ -306,11 +306,11 @@ module.exports = {
 然后命令行执行 `pm2 start pm2.config.js`。
 搭配其监控面板服务 PM2+，不仅可以在浏览器中控制任务运行状态，还能查看实时日志：
 
-![PM2](/assets/2020/wechat-poem-robot/pm2.png)
+![PM2](/assets/2020/wechat-poem-robot/pm2.webp)
 
 目标达成：
 
-![chat](/assets/2020/wechat-poem-robot/chat.png)
+![chat](/assets/2020/wechat-poem-robot/chat.webp)
 
 ## 结论（~~以及广告~~）
 

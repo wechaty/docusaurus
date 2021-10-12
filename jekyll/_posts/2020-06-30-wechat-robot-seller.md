@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - ecommerce
-image: /assets/2020/wechat-robot-seller/chat.jpeg
+image: /assets/2020/wechat-robot-seller/chat.webp
 ---
 
 [![Wechaty Badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
@@ -83,7 +83,7 @@ node bot.js
 
 ## 效果图
 
-![效果图](/assets/2020/wechat-robot-seller/chat.jpeg)
+![效果图](/assets/2020/wechat-robot-seller/chat.webp)
 
 ## 致谢
 
