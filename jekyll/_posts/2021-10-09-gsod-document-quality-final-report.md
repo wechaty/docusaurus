@@ -9,7 +9,7 @@ tags:
   - docs
   - volunteer
   - project
-image: /jekyll/assets/10-gsod-document-quality-final-report/background.webp
+image: /assets/10-gsod-document-quality-final-report/background.webp
 ---
 
 It's a great honor to be part of Wechaty family in Google Season of Docs 2021. This report demonstrates the improvement of document quality.
@@ -26,7 +26,7 @@ Before we started the GSoD project, the existing documentation of Wechaty had so
 
 For the reasons above, we set the Wechaty documentation structure as the table below, which [Divio.com](https://documentation.divio.com/introduction/) proposed. The team paired up in groups based on the following divisions, and I worked as a final reviewer.
 
-![chart](/jekyll/assets/10-gsod-document-quality-final-report/chart.webp)
+![chart](/assets/10-gsod-document-quality-final-report/chart.webp)
 
 After we had finalized the structure, it was time to determine the content inside. I analyzed the overlaps and topics inside each section in [Documentation structure](https://wechaty.js.org/2021/05/30/simin-documentation-structure/). In the article, I had each team propose their frameworks first and then compare theirs with other groups’. As there were going to be four sections for the same software Wechaty, one of my jobs was to collect all the documents together and ensure no missing topics or overlaps. The first approach I took was to identify the classifications again. Rather than adding as much content as possible, each subject should focus on the goal they would like to achieve. We should provide a clear boundary of each section for user-friendliness and document maintenance in the future. Later in the meeting, I had the teams talk about their respective proposals and discuss the distribution with similar topics in other groups.
 
@@ -40,7 +40,7 @@ For documents like tutorials and how-to guides, these instruction-based document
 
 Here is an example of how I modified the structure of the content in how-to guides. Originally it was formatted as topic, introduction, and then listed down two functions. See the following picture.
 
-![manage_contact](/jekyll/assets/10-gsod-document-quality-final-report/manage_contact.webp)
+![manage_contact](/assets/10-gsod-document-quality-final-report/manage_contact.webp)
 
 The original one was ok for API reference documents but wasn’t suitable for how-to guides as it provided no instructions but information only. The updated version published as [Manage contact](https://wechaty.js.org/docs/howto/contact) is more user-friendly if they ask a specific question, “how to manage contact?”
 
