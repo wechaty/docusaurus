@@ -6,7 +6,7 @@ tags:
   - bot
   - job
   - intern
-image: /assets/2020/early-bird-chatbot/bird.png
+image: /assets/2020/early-bird-chatbot/bird.webp
 ---
 
 早鸟平台是一群硅谷在职的工程师创建的平台。受全球疫情的影响，今年的求职季变得很特殊，对于企业来说，缩减招聘需求成了一段时间的常态。对于求职者来说面试周期拉长、求职压力倍增。而早鸟作为专业的求职交流公益平台，在全球疫情蔓延，经济低迷的情况下，更应该助广大毕业生或求职者一臂之力。
@@ -56,8 +56,8 @@ image: /assets/2020/early-bird-chatbot/bird.png
 
 如图：
 
-![1](/assets/2020/early-bird-chatbot/job.png)
-![2](/assets/2020/early-bird-chatbot/covid.png)
+![1](/assets/2020/early-bird-chatbot/job.webp)
+![2](/assets/2020/early-bird-chatbot/covid.webp)
 
 ## 目录结构
 

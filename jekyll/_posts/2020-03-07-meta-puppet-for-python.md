@@ -6,12 +6,12 @@ tags:
   - python
   - socket
   - puppet
-image: /assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.jpg
+image: /assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.webp
 ---
 
 一个支持Wechaty调用的Python框架
 
-[![MetaPuppetForPython](/assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.jpg)](https://github.com/quantumFlame/MetaPuppetForPython)  
+[![MetaPuppetForPython](/assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.webp)](https://github.com/quantumFlame/MetaPuppetForPython)  
 
 特征：
 
@@ -499,7 +499,7 @@ a_webgui.run()
 
 ## 原理
 
-[![MetaPuppetForPython](/assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.jpg)](https://github.com/quantumFlame/MetaPuppetForPython)  
+[![MetaPuppetForPython](/assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.webp)](https://github.com/quantumFlame/MetaPuppetForPython)  
 `MetaPuppetForPython`的核心是通过socket双向通信，实现业务逻辑(server)与第三方业务(client)的交互，包括信息的收发以及接口的调用等。
 所以，在这个框架下，与`Wechaty`的架构类比，server是`Wechaty`的TS代码，client是`Wechaty`调用的各个puppet。
 `MetaPuppetForPython`默认包括完全的server和运行`Wechaty`的client代码，针对其他app(weibo, qq, web, etc.)的client需要自定义。

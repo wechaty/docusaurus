@@ -5,7 +5,7 @@ categories: tutorial
 tags:
   - jekyll
   - plugin
-image: /assets/2020/add-video-to-wechaty-blog/header.png
+image: /assets/2020/add-video-to-wechaty-blog/header.webp
 ---
 
 撰写暑期2020中期POC博客的时候，遇到了在博文中插入视频、PPT等iframe的需求，可以在markdown文档中直接使用bilibili等视频网站提供的视频嵌入代码，然而这样视频的样式不够美观，iframe没有铺满整个宽度并保持一定宽高比。
