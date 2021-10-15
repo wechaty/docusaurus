@@ -1,7 +1,7 @@
 import React from "react";
 import "./honors-and-awards-section.css";
 
-const honorsAndAwards = () => {
+const HonorsAndAwards = () => {
     
     return(
       <main id="body">
@@ -54,4 +54,4 @@ const honorsAndAwards = () => {
             </main>
     );
 };
-export default honorsAndAwards;
+export default HonorsAndAwards;
