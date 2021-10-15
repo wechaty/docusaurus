@@ -1,7 +1,7 @@
 import React from "react";
 import "./voice-of-developers-section.css";
 
-const voiceOfDevelopers = () => {
+const VoiceOfDevelopers = () => {
 
     return (
       <main id="body">
@@ -42,4 +42,4 @@ const voiceOfDevelopers = () => {
     );
 
 };
-export default voiceOfDevelopers;
+export default VoiceOfDevelopers;
