@@ -4,7 +4,7 @@ author: proudofsimin
 categories: gsod
 tags:
   - proposal
-image: /assets/2021/05-gsod21-simin-proposal/profile.jpg
+image: /assets/2021/05-gsod21-simin-proposal/profile.webp
 ---
 
 ## Google Season of Docs 2021 Volunteering Proposal

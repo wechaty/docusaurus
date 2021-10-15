@@ -1,11 +1,6 @@
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 
-/**
- * Support sidebar.ts in TypeScript
- */
-require('ts-node/register')
-
 const {
   plugins,
   themeConfig,

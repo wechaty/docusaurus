@@ -9,19 +9,19 @@ tags:
   - featured
   - chatbot
   - competition
-image: /assets/2021/04-wechaty-with-paddlepaddle/wechaty-cpu.png
+image: /assets/2021/04-wechaty-with-paddlepaddle/wechaty-cpu.webp
 ---
 
 人工智能时代的ChatBot需要具备哪些能力？它是智能小管家，帮你整理所有“码了就等于看了”的资料？它是斗图大师，分分钟帮你p好好友的鬼畜表情包？它是无情的夸人机器，每天都能自动生成新的彩虹屁？
 
-![logs](/assets/2021/04-wechaty-with-paddlepaddle/header.png)
+![logs](/assets/2021/04-wechaty-with-paddlepaddle/header.webp)
 
 ✨ 实用的、有趣的、鬼畜的… 不知大侠有何高见？快来组队实现吧！PaddlePaddle融合Wechaty能 spark 出怎样的inspiration？我们欢迎所有关于ChatBot的创意项目！只要你的项目够优秀，官方送你出道！
 
 - 比赛报名入口：[AI ChatBot 创意赛](https://aistudio.baidu.com/aistudio/competition/detail/79)
 - 比赛时间：2021/04/12 - 2021/05/31
 
-![eliza](/assets/2021/04-wechaty-with-paddlepaddle/eliza.png)
+![eliza](/assets/2021/04-wechaty-with-paddlepaddle/eliza.webp)
 
 1950年，艾伦·麦席森·图灵以一篇划时代的文章扣开了人工智能的大门。与此同时，机器能否让大批人类失误？怎样的智能才能匹配时代发展的脚步？未来的世界又该如何突破图灵测试的桎梏？接踵而至的问题让人们对AI充满了期待。
 
@@ -53,13 +53,13 @@ Wechaty的优势在于对代码质量地管理，开发者可以使用了Github 
 
 目前，在Github上已有千余个开源项目基于Wechaty构建了聊天机器人。另外，Wechaty统一了即时通讯软件平台的对话接口，仅需要一套代码即可运行在多个平台之上，目前已成熟高效地推动了包括社群管理、数据运维、办公、资讯、广告、营销等多个领域不同实用场景的落地。比如OSS.Chat能够打通Github开发者社区，让开源社区获得即时动态；YanBot辅助管理相关的多个微信讨论群The R-fMRI Journal Club，并对用户对领域内文献的讨论和相关脑影像技术问题进行桥接；以及python-Wechaty斗图机器人能够与联系人趣聊斗图。
 
-![wechaty-structure](/assets/2021/04-wechaty-with-paddlepaddle/wechaty-structure.png)
+![wechaty-structure](/assets/2021/04-wechaty-with-paddlepaddle/wechaty-structure.webp)
 
 ### 几行代码融合Wechaty和PaddleHub
 
 通过Wechaty的官方教程在本地搭建并运行Pyhton版本的Wechaty，使用Paddlehub预训练的文本生成模型与Wechaty的自动回复消息进行结合，实现了通过微信输入文字返回情话的功能。
 
-![wechaty-paddlehub](/assets/2021/04-wechaty-with-paddlepaddle/wechaty-paddlehub.png)
+![wechaty-paddlehub](/assets/2021/04-wechaty-with-paddlepaddle/wechaty-paddlehub.webp)
 
 > Python 3.8 / Pip 20.1.1 / PaddleHub 2.0.4 / PaddlePaddle 2.0.2
 
@@ -117,7 +117,7 @@ Wechaty的优势在于对代码质量地管理，开发者可以使用了Github 
   （4）选手名及队伍名的设定不得违反中国法律法规或社会公序良俗，且参赛队伍命名中不可出现“百度官方”，“飞桨官方”，“paddle官方”，“官方baseline”等字样。若命名违规的队伍在收到比赛主办方警告后仍未修改队伍名称，比赛主办方有权解散该队伍 ；
   （5） 赛事交流群：微信扫码添加飞桨小哥哥，回复“创意赛”即可入群。
 
-![qrcode](/assets/2021/04-wechaty-with-paddlepaddle/qrcode.png)
+![qrcode](/assets/2021/04-wechaty-with-paddlepaddle/qrcode.webp)
 
 参赛须知补充
 

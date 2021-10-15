@@ -6,7 +6,7 @@ tags:
   - typescript
   - entertainment
   - case-study
-image: /assets/2020/yibot/1.jpg
+image: /assets/2020/yibot/1.webp
 ---
 
 写这个小东西，本就是想玩耍一下，发现很有意思！ 面临人生重大抉择犹豫不定，头脑乱成浆糊的时候，鄙人会问卦，根据卦象客观分析当前的局势。但是从来不问命，只是借用卦象来让自己以一种不含感情的分析方式重新认识当前面临的形势。朋友中有一两个有类似爱好的，对易经有些兴趣，我们几个谈论的时候，其他人就会要求我们给他们解卦。
@@ -75,7 +75,7 @@ async function onMessage (msg) {
 
 ## 截图
 
-![效果图 @4x](/assets/2020/yibot/1.jpg)
+![效果图 @4x](/assets/2020/yibot/1.webp)
 
 ## 其他
 
