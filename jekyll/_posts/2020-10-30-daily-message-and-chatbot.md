@@ -358,10 +358,10 @@ function formatDate(date) {
 export { getDay, formatDate }
 ```
 
-![关键字触发消息](/assets/2020/daily-message-and-chatbot/keyword-push.png)
-![无法回答推送名片](/assets/2020/daily-message-and-chatbot/push-contact.png)
-![定时推送消息](/assets/2020/daily-message-and-chatbot/daily-message.png)
-![智能聊天](/assets/2020/daily-message-and-chatbot/talk-to-bot.png)
+![关键字触发消息](/assets/2020/daily-message-and-chatbot/keyword-push.webp)
+![无法回答推送名片](/assets/2020/daily-message-and-chatbot/push-contact.webp)
+![定时推送消息](/assets/2020/daily-message-and-chatbot/daily-message.webp)
+![智能聊天](/assets/2020/daily-message-and-chatbot/talk-to-bot.webp)
 
 ## 后记
 

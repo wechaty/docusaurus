@@ -1,7 +1,7 @@
 ---
 title: 基于Wechaty-IPAD协议的预警消息转发机器人
 author: songbingjun
-image: /assets/2020/alter-padplus/login.png
+image: /assets/2020/alter-padplus/login.webp
 categories: project
 tags:
   - padplus
@@ -58,7 +58,7 @@ git clone `https://github.com/Songbingjun/wechat-alert-padplus.git`  //参考git
 
 前台示例图片如下:
 
-![前台登陆后](/assets/2020/alter-padplus/login.png)
+![前台登陆后](/assets/2020/alter-padplus/login.webp)
 
 ### 后台方式启动导航  
 

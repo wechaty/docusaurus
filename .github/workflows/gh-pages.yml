@@ -38,7 +38,7 @@ jobs:
         run: npm run build
 
   deploy:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     name: Deploy GitHub Pages
     needs:
       - test
@@ -68,7 +68,7 @@ jobs:
         git checkout --orphan gh-pages
         git reset --hard
         git commit --allow-empty -m "Orphan init"
-        git checkout master
+        git checkout main
     - name: Install dependencies
       run: |
         make install

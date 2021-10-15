@@ -5,7 +5,7 @@ categories: project
 tags:
   - nodejs
   - productivity
-image: /assets/2020/12-07-wxwork/wecom.png
+image: /assets/2020/12-07-wxwork/wecom.webp
 ---
 
 GitHub 上搜了一圈，看到了挺多微信 bot 的方案，后面决定使用 wechaty，因为感觉设计得很优雅，6 行代码就可以轻松构建一个 wxbot。
