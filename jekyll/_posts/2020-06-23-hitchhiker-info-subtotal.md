@@ -7,7 +7,7 @@ tags:
   - padplus
   - travel
   - mysql
-image: /assets/2020/info-subtotal/head.jpeg 
+image: /assets/2020/info-subtotal/head.webp 
 ---
 
 北京的房价涨幅对于北漂的工资涨幅来说永远都是高不可攀的；有很多人到了成家立业的年纪，又不想回到老家，所以距离北京近，房价可以接受的北京周边就是就是一个不错的选择，但是在环京买了房，工作还是在北京，由此衍生出了一批跨城上下班的圈子。

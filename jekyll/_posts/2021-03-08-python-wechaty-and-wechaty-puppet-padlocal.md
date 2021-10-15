@@ -7,7 +7,7 @@ tags:
   - python
   - padlocal
   - puppet-service
-image: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/python-wechaty-logo9.png
+image: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/python-wechaty-logo9.webp
 ---
 
 本文为本地运行python-wechaty + 云上虚拟机运行wechaty-puppet-padlocal的简易教学  
@@ -120,7 +120,7 @@ python3 examples/ding-dong-bot.py
 大家有空就翻翻看。
 Happy hacking!
 
-[Arch]: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/arch.png
-[cloud]: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/cloud-virtual-machine.png
-[qrcode]: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/qrcode.png
-[testing]: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/testing.png
+[Arch]: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/arch.webp
+[cloud]: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/cloud-virtual-machine.webp
+[qrcode]: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/qrcode.webp
+[testing]: /assets/2021/03-python-wechaty-and-wechaty-puppet-padlocal/testing.webp

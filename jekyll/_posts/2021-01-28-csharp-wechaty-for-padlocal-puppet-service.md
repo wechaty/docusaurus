@@ -6,7 +6,7 @@ tags:
   - csharp
   - puppet-service
 categories: tutorial
-image: /assets/2021/01-csharp-wechaty-for-padlocal-puppet-service/dotnet-wechaty.png
+image: /assets/2021/01-csharp-wechaty-for-padlocal-puppet-service/dotnet-wechaty.webp
 ---
 
 ## .NET Wechaty 如何使用 PadLocal Puppet Service

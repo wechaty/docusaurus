@@ -11,7 +11,7 @@ tags:
 
 现在时间是7点半，8点下班回家，在这半个小时，让我们来聊聊SuperScript 和 Wechaty 结合带来的巨大前景。
 
-![Blue and Red pill](/assets/2017/samurais-the-matrix.jpg)
+![Blue and Red pill](/assets/2017/samurais-the-matrix.webp)
 
 Wechaty就像是连到母体的管道，当我们还在思考着是吃红药片还是蓝药片的时候，pia，[zixia](https://github.com/huan)就把Wechaty给做出来。然后呢？！
 
@@ -21,7 +21,7 @@ Wechaty就像是连到母体的管道，当我们还在思考着是吃红药片�
 
 SuperScript是一个开源的对话引擎。使用SuperScript定义的语法，书写脚本文件，然后使用编译工具，生成对话元数据。
 
-![ss](/assets/2017/samrais-ss-1.png)
+![ss](/assets/2017/samrais-ss-1.webp)
 
 ### 脚本
 
@@ -89,7 +89,7 @@ SuperScript是一个开源的对话引擎。使用SuperScript定义的语法，�
 
 ## SuperScript and Wechaty
 
-![ss](/assets/2017/samurias-hifive.jpg)
+![ss](/assets/2017/samurias-hifive.webp)
 
 ```sh
 git clone git@github.com:Samurais/ss-wechaty.git && cd ss-wechaty

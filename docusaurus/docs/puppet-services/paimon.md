@@ -13,7 +13,7 @@ sidebar_label: Paimon
 
 ## How to buy
 
-[Register and buy here](http://175.27.139.176/)
+[Register and buy here](http://120.55.60.194/)
 
 ## Contact
 

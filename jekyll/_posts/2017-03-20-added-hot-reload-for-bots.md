@@ -4,7 +4,7 @@ author: gcaufy
 categories: feature
 tags:
   - code
-image: /assets/2017/gcaufy-hot-reload-screencast.gif
+image: /assets/2017/gcaufy-hot-reload-screencast.webp
 ---
 
 ![avatars](https://avatars3.githubusercontent.com/u/2182004?v=3&s=88)
@@ -193,4 +193,4 @@ docker run -ti -e NODE_ENV=production --rm --volume="$(pwd)":/bot zixia/wechaty 
 
 作者：@[Gcaufy](https://github.com/gcaufy), Tencent, [Wechaty Contributor](https://github.com/orgs/Chatie/teams/contributor)
 
-[gcaufy-hot-reload]: /assets/2017/gcaufy-hot-reload-screencast.gif
+[gcaufy-hot-reload]: /assets/2017/gcaufy-hot-reload-screencast.webp
