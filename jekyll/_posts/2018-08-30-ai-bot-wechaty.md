@@ -4,12 +4,12 @@ author: lirobin1998
 categories: article
 tags:
   - ai
-image: /assets/2018/hi-ai.jpg
+image: /assets/2018/hi-ai.webp
 ---
 
 人工智能（AI：Artificial Intelligence）经历了六十年几起几落，终于在2016年因为阿尔法狗（AlphaGo）战胜围棋世界冠军而轰动全球，迎来了发展新机遇。2017年中国发布《新一代人工智能发展规划》，准备到2025年把中国建设成为全球最重要的AI创新中心之一。中国新一代AI的创新机会主要在弱AI的广泛应用和强AI的原始创新，而Bot（聊天机器人）是使用AI科技成果的一种最简洁形式。目前市场上具有“公众号+Bot+内容”这样的AI使用解决方案，支持大众以Bot形式使用AI科技成果。同时市场上也有像Wechaty这样的软件开源Bot项目，支持研发人员开发和集成各种各样的Bot引擎，支持Bot引擎的原始创新。显然，把AI、新一代AI、Bot、Wechaty这些概念和关系梳理清楚，有助于我们更好地推动中国AI的发展。
 
-![hiai](/assets/2018/hi-ai.jpg)
+![hiai](/assets/2018/hi-ai.webp)
 
 ## 一、对AI的思考
 

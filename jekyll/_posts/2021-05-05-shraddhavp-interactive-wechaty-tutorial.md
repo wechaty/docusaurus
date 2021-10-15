@@ -8,7 +8,7 @@ tags:
   - 2021
   - project
   - proposal
-image: /assets/2021/05-shraddhavp-interactive-wechaty-tutorial/shraddhapic.jpg
+image: /assets/2021/05-shraddhavp-interactive-wechaty-tutorial/shraddhapic.webp
 ---
 
 I am Shraddha Vasant Prasad, 2020 graduate and currntly working as a Software Engineer At American Express, I describe myself as "Developer in the making and a Blogger by passion"

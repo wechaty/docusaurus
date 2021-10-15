@@ -6,7 +6,7 @@ tags:
   - code
   - featured
   - social
-image: /assets/2017/helen-screenshot-testing.jpg
+image: /assets/2017/helen-screenshot-testing.webp
 ---
 
 Thanks for inviting me to write this article that give me a chance to share my story for each other. And Wechaty is a very awesome library that is powerful and easy to use. The most important point is that is interesting for Wechat  users and developers.
@@ -128,8 +128,8 @@ bot.on('scan', (url, code)=>{
 
 Finally, I want to thank our teammate [@拖拉机](https://github.com/dianwuone) [@姜姜姜](https://github.com/jiangyuzhen) [@glowd](https://github.com/Glowdable) [@myself](https://github.com/TingYinHelen)
 
-[screenshot-test]: /assets/2017/helen-screenshot-testing.jpg
-[screenshot-doc]: /assets/2017/helen-screenshot-doc.png
+[screenshot-test]: /assets/2017/helen-screenshot-testing.webp
+[screenshot-doc]: /assets/2017/helen-screenshot-doc.webp
 
 ![avatar](https://avatars2.githubusercontent.com/u/14006826?v=3&s=88)
 

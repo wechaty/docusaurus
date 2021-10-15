@@ -5,7 +5,7 @@ categories: event
 tags:
   - talk
   - news
-image: /assets/2018/helen-techie-festival.jpeg
+image: /assets/2018/helen-techie-festival.webp
 ---
 
 女孩子天生喜欢漂亮的衣服，衣柜里琳琅满目的首饰，化妆品。周末和闺蜜约会，逛街，喝下午茶。这似乎是众人眼中的姑娘们的标配。然而又有着这么一群女孩，她们喜欢编程，用代码改变着身边细小的事情，改变着世界。聪明，具有创造力，她们用行动诠释了新时代女性的性感。一个女孩的美丽不仅仅来自她的外表，更来自她的思想。2018年女生科技体验节，便是一道独有的风景线，讲师李佳芮带领女孩子们体验使用Wechaty制作自己的微信机器人。
@@ -133,12 +133,12 @@ Server酱，他是一个能从服务器推报警和日志到手机的工具，�
 
 文章最后还是提一下我自己的志向，我希望做一个面向女性和儿童的程序员社区，希望有更多的女性加入到编程行业，成为行业的引领者。同时大力提倡儿童编程，如果想跟我聊一聊的，下面是我的联系方式。
 
-![halen](/assets/2018/helen-weixin.jpg)
+![halen](/assets/2018/helen-weixin.webp)
 
-[techie-festival]: /assets/2018/helen-techie-festival.jpeg
-[docker-screenshot]: /assets/2018/helen-docker-screenshot.png
-[node-screenshot]: /assets/2018/helen-node-screenshot.png
-[run-ding]: /assets/2017/lijiarui-write-bot-run-ding.jpeg
+[techie-festival]: /assets/2018/helen-techie-festival.webp
+[docker-screenshot]: /assets/2018/helen-docker-screenshot.webp
+[node-screenshot]: /assets/2018/helen-node-screenshot.webp
+[run-ding]: /assets/2017/lijiarui-write-bot-run-ding.webp
 
 ![a](https://avatars2.githubusercontent.com/u/14006826?v=3&s=88)
 >

@@ -6,7 +6,7 @@ tags:
   - checkin
   - social
   - game
-image: /assets/2020/wechaty-check-in-robot/notice.png
+image: /assets/2020/wechaty-check-in-robot/notice.webp
 ---
 
 ## 1. 开发背景
