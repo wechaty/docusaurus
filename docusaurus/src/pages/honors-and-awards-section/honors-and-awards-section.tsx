@@ -27,7 +27,7 @@ const honorsAndAwards = () => {
                   <img
                     alt="Award One Image"
                     id="awardImageOne"
-                    src="awardOne.webp"
+                    src="img/awardOne.webp"
                   />
                 </div>
                 <div id="honorsAndAwardsSecondWrapper">
@@ -46,7 +46,7 @@ const honorsAndAwards = () => {
                   <img
                     alt="Award Two Image"
                     id="awardImageTwo"
-                    src="awardTwo.webp"
+                    src="img/awardTwo.webp"
                   />
                 </div>
               </div>
