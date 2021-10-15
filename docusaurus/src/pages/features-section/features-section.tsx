@@ -12,31 +12,67 @@ const FeaturesSection = () => {
         <div id="featuresSectionUpperWrapper">
           <div id="checkCircleWrapper">
             <div id="checkCircle">
-              <img alt="Check Circle Vector" id="vector" src="tick-mark.webp" />
+              <img
+                alt="Check Circle Vector"
+                id="vector"
+                src="img/features-section/tick-mark.webp"
+              />
             </div>
             <div id="checkCircle">
-              <img alt="Check Circle Vector" id="vector" src="tick-mark.webp" />
+              <img
+                alt="Check Circle Vector"
+                id="vector"
+                src="img/features-section/tick-mark.webp"
+              />
             </div>
             <div id="checkCircle">
-              <img alt="Check Circle Vector" id="vector" src="tick-mark.webp" />
+              <img
+                alt="Check Circle Vector"
+                id="vector"
+                src="img/features-section/tick-mark.webp"
+              />
             </div>
             <div id="checkCircle">
-              <img alt="Check Circle Vector" id="vector" src="tick-mark.webp" />
+              <img
+                alt="Check Circle Vector"
+                id="vector"
+                src="img/features-section/tick-mark.webp"
+              />
             </div>
             <div id="checkCircle">
-              <img alt="Check Circle Vector" id="vector" src="tick-mark.webp" />
+              <img
+                alt="Check Circle Vector"
+                id="vector"
+                src="img/features-section/tick-mark.webp"
+              />
             </div>
             <div id="checkCircle">
-              <img alt="Check Circle Vector" id="vector" src="tick-mark.webp" />
+              <img
+                alt="Check Circle Vector"
+                id="vector"
+                src="img/features-section/tick-mark.webp"
+              />
             </div>
             <div id="checkCircle">
-              <img alt="Check Circle Vector" id="vector" src="tick-mark.webp" />
+              <img
+                alt="Check Circle Vector"
+                id="vector"
+                src="img/features-section/tick-mark.webp"
+              />
             </div>
             <div id="checkCircle">
-              <img alt="Check Circle Vector" id="vector" src="tick-mark.webp" />
+              <img
+                alt="Check Circle Vector"
+                id="vector"
+                src="img/features-section/tick-mark.webp"
+              />
             </div>
             <div id="checkCircle">
-              <img alt="Check Circle Vector" id="vector" src="tick-mark.webp" />
+              <img
+                alt="Check Circle Vector"
+                id="vector"
+                src="img/features-section/tick-mark.webp"
+              />
             </div>
           </div>
           <div id="featuresListingWrapper">
