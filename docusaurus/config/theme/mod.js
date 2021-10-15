@@ -6,6 +6,10 @@ const footer = require('./footer')
 
 /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 const themeConfig = {
+  colorMode: {
+    defaultMode: 'light',
+    disableSwitch: true,
+  },
   navbar,
   footer,
   algolia: {

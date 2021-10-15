@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+#body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#sponsorsHeadline {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  left: 10%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin-top: 0px;
+}
+
+#sponsorsRectangle {
+  position: relative;
+  width: 160px;
+  height: 20px;
+  background-color: #d2ffca;
+  border-radius: 50px;
+  left: 10%;
+  top: 125px;
+}
+
+#sponsorsSectionWrapper {
+  width: 100%;
+  margin-top: 220px;
+}
+
+#sponsorsFirstSection { /* Styling of the first sub sponsors section (microsoft, tencent, juzi and gsod) */ 
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  height: 200px;
+  overflow-y: hidden;
+}
+
+#sponsorsSecondSection { /* Styling of the second sub sponsors section (tensorflow, iscas and sujitech) */
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  height: 200px;
+  margin: 0 9%;
+  overflow-y: hidden;
+}
+
+#microsoft {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 150px;
+  height: 150px;
+  background: #f4fff2;
+  border-radius: 20px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#tensorflow {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 150px;
+  height: 150px;
+  background: #f4fff2;
+  border-radius: 20px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#tencent {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 150px;
+  height: 150px;
+  background: #f4fff2;
+  border-radius: 20px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#iscas {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 150px;
+  height: 150px;
+  background: #f4fff2;
+  border-radius: 20px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#juzi {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 150px;
+  height: 150px;
+  background: #f4fff2;
+  border-radius: 20px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#sujitech {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 150px;
+  height: 150px;
+  background: #f4fff2;
+  border-radius: 20px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin: 0 18% 0 0;
+}
+
+#gsod {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 150px;
+  height: 150px;
+  background: #f4fff2;
+  border-radius: 20px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#microsoftImage {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  left: 20%;
+  bottom: -17%;
+  width: 62%;
+}
+
+#tensorflowImage {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  left: 18%;
+  bottom: -16%;
+}
+
+#tencentImage {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  left: -5%;
+  bottom: -39%;
+}
+
+#iscasImage {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  border-radius: 682%;
+}
+
+#juziImage {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  left: 13%;
+  bottom: -16%;
+}
+
+#sujitechImage {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  left: -4%;
+  bottom: -41%;
+}
+
+#gsodImage {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  left: 13%;
+  bottom: -16%;
+}
+@media only screen and (max-width: 700px) {
+  #sponsorsHeadline {
+    font-size: 24px;
+    margin-top: -20px;
+  }
+  #sponsorsRectangle {
+    position: relative;
+    width: 160px;
+    height: 15px;
+    top: 95px;
+  }
+  #sponsorsSectionWrapper {
+    margin-top: 150px;
+  }
+  #sponsorsFirstSection {
+    height: 90px;
+  }
+  #sponsorsSecondSection {
+    height: 90px;
+  }
+  #microsoft {
+    width: 70px;
+    height: 70px;
+  }
+  #tensorflow {
+    width: 70px;
+    height: 70px;
+  }
+  #tencent {
+    width: 70px;
+    height: 70px;
+  }
+  #iscas {
+    width: 70px;
+    height: 70px;
+  }
+  #juzi {
+    width: 70px;
+    height: 70px;
+  }
+  #sujitech {
+    width: 70px;
+    height: 70px;
+    margin: 0 18% 0 0;
+  }
+  #gsod {
+    width: 70px;
+    height: 70px;
+  }
+  #tensorflowImage {
+    width: 45px;
+  }
+  #juziImage {
+    width: 55px;
+  }
+  #gsodImage {
+    width: 55px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
+  #sponsorsHeadline {
+    font-size: 28px;
+  }
+
+  #sponsorsRectangle {
+    top: 120px;
+    width: 140px;
+    height: 18px;
+  }
+
+  #sponsorsSectionWrapper {
+    margin-top: 190px;
+  }
+
+  #microsoft {
+    width: 120px;
+    height: 120px;
+  }
+
+  #tensorflow {
+    width: 120px;
+    height: 120px;
+  }
+
+  #tencent {
+    width: 120px;
+    height: 120px;
+  }
+
+  #iscas {
+    width: 120px;
+    height: 120px;
+  }
+
+  #juzi {
+    width: 120px;
+    height: 120px;
+  }
+
+  #sujitech {
+    width: 120px;
+    height: 120px;
+  }
+
+  #gsod {
+    width: 120px;
+    height: 120px;
+  }
+
+  #tensorflowImage {
+    width: 80px;
+  }
+
+  #juziImage {
+    width: 90px;
+  }
+
+  #gsodImage {
+    width: 90px;
+  }
+}
