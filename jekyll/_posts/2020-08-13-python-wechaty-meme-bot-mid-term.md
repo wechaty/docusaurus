@@ -1,7 +1,7 @@
 ---
 title: "基于Python-wechaty建立一个斗图机器人 POC 成果展示"
 author: godkillerxiao
-image: /assets/2020/meme-bot/08-13-wechaty-meme-bot-mid-term.png
+image: /assets/2020/meme-bot/08-13-wechaty-meme-bot-mid-term.webp
 categories: project
 tags:
   - python
@@ -30,7 +30,7 @@ tags:
 
 - 方案描述：利用OCR、NLP等技术，提取出用户发送的表情包内容，并回复数据库中已有与之相关的表情；具体技术方案泳道图见下：
 
-  ![mid-term](/assets/2020/meme-bot/08-13-wechaty-meme-bot-mid-term.png)
+  ![mid-term](/assets/2020/meme-bot/08-13-wechaty-meme-bot-mid-term.webp)
 
   更多细节可参见[项目README](https://github.com/MrZilinXiao/python-wechaty-meme-bot/blob/master/README.md).
 

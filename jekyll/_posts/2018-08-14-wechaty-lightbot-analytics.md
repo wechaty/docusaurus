@@ -7,7 +7,7 @@ tags:
   - featured
   - utility
   - ecosystem
-image: /assets/2018/wechaty-lightbot-logo.jpg
+image: /assets/2018/wechaty-lightbot-logo.webp
 ---
 
 感谢 @lijiarui 邀请我分享我们的LIGHTBOT统计分析管理平台，希望能够帮助开发者使用wechaty提供更多的业务方向。
@@ -259,7 +259,7 @@ bot.on('message', async function (message) {
 
 ## 统计分析平台
 
-![登陆界面](/assets/2018/wechaty-lightbot-1.png)
+![登陆界面](/assets/2018/wechaty-lightbot-1.webp)
 
 ### 架构设计
 
@@ -287,12 +287,12 @@ bot.on('message', async function (message) {
 >
 > 支持查询条件筛选
 
-![敏感词管理](/assets/2018/wechaty-lightbot-2.png)
+![敏感词管理](/assets/2018/wechaty-lightbot-2.webp)
 
 #### 敏感词管理
 
 > 对敏感词的管理
-![敏感词管理](/assets/2018/wechaty-lightbot-3.png)
+![敏感词管理](/assets/2018/wechaty-lightbot-3.webp)
 
 #### 聊天管理
 
@@ -300,7 +300,7 @@ bot.on('message', async function (message) {
 
 > 根据群，用户角色和时间进行分页查询
 
-![聊天记录](/assets/2018/wechaty-lightbot-4.png)
+![聊天记录](/assets/2018/wechaty-lightbot-4.webp)
 
 ##### 对话模式
 
@@ -308,7 +308,7 @@ bot.on('message', async function (message) {
 >
 > 过滤掉多余人员的发言，只显示筛选用户的聊天记录
 
-![聊天记录](/assets/2018/wechaty-lightbot-5.png)
+![聊天记录](/assets/2018/wechaty-lightbot-5.webp)
 
 #### 用户管理
 
@@ -316,7 +316,7 @@ bot.on('message', async function (message) {
 >
 > 设置用户的角色（用户，水军，管理员），从而进行群活跃分析。
 
-![用户管理](/assets/2018/wechaty-lightbot-6.png)
+![用户管理](/assets/2018/wechaty-lightbot-6.webp)
 
 #### 群组管理
 
@@ -324,7 +324,7 @@ bot.on('message', async function (message) {
 >
 > 设置责任账户（这个是为了体现运营人员水平而设置的）
 
-![用户管理](/assets/2018/wechaty-lightbot-7.png)
+![用户管理](/assets/2018/wechaty-lightbot-7.webp)
 
 #### 统计分析
 

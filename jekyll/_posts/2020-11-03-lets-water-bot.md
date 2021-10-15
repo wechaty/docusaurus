@@ -5,7 +5,7 @@ categories: project
 tags:
   - water
   - productivity
-image: /assets/2020/11-lets-water/letswater.png
+image: /assets/2020/11-lets-water/letswater.webp
 ---
 
 ## let's water wechaty-bot<水群机器人>

@@ -34,7 +34,7 @@ Short-term TOKEN（7 days） is for those developers who want to test Wechaty Pu
 
 TODO: list a easy to follow steps how to apply free token
 
-- Paimon: Register [here](http://175.27.139.176/)
+- Paimon: Register [here](http://120.55.60.194/)
 - wxwork/donut: Using **WeCom Account**(Not WeChat) with administrator rights [here](https://qiwei.juzibot.com/user/login?isWechaty=true).
 - Padlocal: [👉🏻 Get Free PadLocal Token 👈🏻](http://pad-local.com/)
 

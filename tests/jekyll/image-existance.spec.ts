@@ -1,6 +1,9 @@
 #!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import { test } from 'tstest'
+import {
+  tap,
+  test,
+}           from 'tstest'
 
 import fs   from 'fs'
 import path from 'path'
@@ -34,6 +37,9 @@ const getLocalImageList = async () => {
   const localImageList  = allImageList.filter(not(isWhiteListedRemoteUrl))
   return localImageList
 }
+
+// Increase the timeout because we might need to wait network io for a long time.
+tap.setTimeout(60 * 1000)
 
 test('all remote images linked from the post should be exist.', async t => {
 
