@@ -12,19 +12,22 @@ const voiceOfDevelopers = () => {
         <div id="voiceOfDevelopersOne">
           <img id="voiceOfDevelopersImageOne" />
           <p id="voiceOfDevelopersText">
-            "This is an example text, voice of developers comes here"
+          "Wechaty is great". 
+           <br/>-- @Samurais, SnapLingo Director of Engineering
           </p>
         </div>
         <div id="voiceOfDevelopersTwo">
           <img id="voiceOfDevelopersImageTwo" />
           <p id="voiceOfDevelopersText">
-            "This is an example text, voice of developers comes here"
+          "Wechaty让运营人员更多的时间思考如何进行活动策划、留存用户，商业变现"
+            <br/>-- @lijiarui, Orange Interactive CEO.
           </p>
         </div>
         <div id="voiceOfDevelopersThree">
           <img id="voiceOfDevelopersImageThree" />
           <p id="voiceOfDevelopersText">
-            "This is an example text, voice of developers comes here"
+          "Wechaty is a great solution, I believe there would be much more users recognize it." 
+           <br/> -- @Gcaufy, Tencent Engineer, Author of WePY
           </p>
         </div>
       </div>
