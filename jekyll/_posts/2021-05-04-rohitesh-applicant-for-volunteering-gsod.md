@@ -6,7 +6,7 @@ tags:
   - introduction
   - volunteering
   - gsod
-image: /assets/2021/05-rohitesh-applicant-for-volunteering-gsod/rohitesh.jpeg
+image: /assets/2021/05-rohitesh-applicant-for-volunteering-gsod/rohitesh.webp
 ---
 
 ## GSoD’21 Project Proposal for Volunteering

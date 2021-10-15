@@ -6,7 +6,7 @@ tags:
   - padplus
   - productivity
   - entertainment
-image: /assets/2020/wechaty-lottery/lottery-header.jpg
+image: /assets/2020/wechaty-lottery/lottery-header.webp
 ---
 
 ## 背景
@@ -24,7 +24,7 @@ image: /assets/2020/wechaty-lottery/lottery-header.jpg
 - 通过"抽奖+空格"格式触发抽奖机器人,例如"抽奖 抱枕","抽奖 一等奖"等  
 - 机器人被触发后获取当前群内成员数组,并去除机器人和发奖人
 - 等概率随机抽取一人,在群内消息通知中奖信息并同时@发奖人和中奖人
-- ![截图](/assets/2020/wechaty-lottery/pic01.jpg)
+- ![截图](/assets/2020/wechaty-lottery/pic01.webp)
 
 ## 依赖
 

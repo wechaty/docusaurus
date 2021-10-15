@@ -5,7 +5,7 @@ categories: announcement
 tags:
   - okr
   - news
-image: /assets/2021/01-summer-2020-summit-okr/what-is-okr.png
+image: /assets/2021/01-summer-2020-summit-okr/what-is-okr.webp
 ---
 
 In Nov 14, 2020, The [Open Source Promotion Plan - Summer 2020 Summit](https://isrc.iscas.ac.cn/summer2020/#/summitmeeting) was held in Nanjing (thanks ISCAS & openEuler Community for the organizing!). As an open-source organization we enjoyed this program and we have four people: @univerone, @wj-Mcat, @rickyyin98, and @huan attended the Summit.
@@ -91,7 +91,7 @@ At last, `Key Results` must be **measurable**.
 
 The following OKR discussion is copy/pasted from [wechaty/summer-of-code - Wechaty Open Source Software Supply Chain 2020 Najing Summit OKR Review #26](https://github.com/wechaty/summer-of-code/issues/26)
 
-![Wechaty Goals](/assets/2021/01-summer-2020-summit-okr/goal.png)
+![Wechaty Goals](/assets/2021/01-summer-2020-summit-okr/goal.webp)
 
 In this open-source summit, we have the following **Ultimate Objectives** and **Key Results**:
 

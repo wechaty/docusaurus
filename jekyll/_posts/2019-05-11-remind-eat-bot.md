@@ -5,12 +5,12 @@ categories: project
 tags:
   - code
   - social
-image: /assets/2019/remind-eat-1.jpg
+image: /assets/2019/remind-eat-1.webp
 ---
 
 居然有人忘记吃饭？？？
 
-![image](/assets/2019/remind-eat-1.jpg)
+![image](/assets/2019/remind-eat-1.webp)
 
 为了解决这个问题，我写了一个微信机器人到点就提醒他吃饭。
 
@@ -46,7 +46,7 @@ node remindEat.js
 
 到时候对方应该不会忘记吃饭了。
 
-![image](/assets/2019/remind-eat-2.jpg)
+![image](/assets/2019/remind-eat-2.webp)
 
 ## 实现原理：
 

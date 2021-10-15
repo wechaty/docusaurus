@@ -10,7 +10,7 @@ tags:
   - introduction
   - project
   - proposal
-image: /assets/2021/05-gsod-2021-applicant-jaya2320/profile.jpg
+image: /assets/2021/05-gsod-2021-applicant-jaya2320/profile.webp
 ---
 
 My name is Jaya Gupta, I am a 3rd year Informational Technology Student currently persuing my B.Tech from HMRITM, Delhi. I have learned various programming languages such as C , C, PYTHON, DJANGO, Machine Learning, Deep Learning.

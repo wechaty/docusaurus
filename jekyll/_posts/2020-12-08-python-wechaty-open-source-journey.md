@@ -5,7 +5,7 @@ categories: story
 tags:
   - news
   - python
-image: /assets/2020/python-wechaty/wechaty-nanjing-picture.jpg
+image: /assets/2020/python-wechaty/wechaty-nanjing-picture.webp
 ---
 
 开源应该是每一个优秀程序员的必经之路
