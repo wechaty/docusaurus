@@ -14,7 +14,7 @@ test('getFrontmatterTeaserList', async t => {
     '2021-01-15-carpool-bot-with-wechaty-1.md',
   )
   const EXPECTED_TEASER_NUM = 1
-  const EXPECTED_TEASER_URL = '/assets/2021/01-carpool-bot-with-wechaty-1/4.jpeg'
+  const EXPECTED_TEASER_URL = '/assets/2021/01-carpool-bot-with-wechaty-1/4.webp'
 
   const imageList = getFrontmatterTeaserList(FILE)
 

@@ -1,14 +1,16 @@
-const presetClassic = [
+/**
+ * Support sidebar.ts in TypeScript
+ */
+ require('ts-node/register')
+
+ const presetClassic = [
   '@docusaurus/preset-classic',
   /** @type {import('@docusaurus/preset-classic').Options} */
   {
     docs: {
       sidebarPath: require.resolve('../../sidebars.ts'),
-      // Please change this to your repo.
-      editUrl: 'https://github.com/wechaty/wechaty.js.org/edit/master/docusaurus/',
-      // Equivalent to `enableUpdateBy`.
+      editUrl: 'https://github.com/wechaty/wechaty.js.org/edit/main/docusaurus/',
       showLastUpdateAuthor: true,
-      // Equivalent to `enableUpdateTime`.
       showLastUpdateTime: true,
     },
     // blog: {

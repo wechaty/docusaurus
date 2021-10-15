@@ -5,7 +5,7 @@ categories: tutorial
 tags:
   - matrix
   - featured
-image: /assets/2021/02-matrix-with-wechaty/2020-03-matrix-appservice-wechaty.png
+image: /assets/2021/02-matrix-with-wechaty/2020-03-matrix-appservice-wechaty.webp
 ---
 
 [Matrix chat](https://matrix.org/)是一个很不错的聊天软件，它支持了多种聊天协议和聊天机器人。并且支持通过[matrix-appservice-wechaty](https://github.com/wechaty/matrix-appservice-wechaty)来支持微信聊天。
