@@ -6,6 +6,7 @@
 }
 
 #featuresSection {
+  z-index: 2;
   margin-top: -220px;
   display: -webkit-box;
   display: -ms-flexbox;

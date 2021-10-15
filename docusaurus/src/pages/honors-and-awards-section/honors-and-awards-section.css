@@ -5,7 +5,14 @@
   overflow-x: hidden;
 }
 
+section{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 #honorsAndAwardsSection {
+  overflow-x: hidden;
+  overflow-y: hidden;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
