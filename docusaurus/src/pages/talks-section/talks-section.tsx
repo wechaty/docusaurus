@@ -1,7 +1,7 @@
 import React from "react";
 import "./talks-section.css";
 
-const WechatyLandingPage = () => {
+const TalksSection = () => {
   return (
     <main id="body">
       <section id="talksSectionWrapper">
@@ -90,4 +90,4 @@ const WechatyLandingPage = () => {
   );
 };
 
-export default WechatyLandingPage;
+export default TalksSection;
