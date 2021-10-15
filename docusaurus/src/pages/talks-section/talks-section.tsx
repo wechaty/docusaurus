@@ -13,7 +13,7 @@ const WechatyLandingPage = () => {
               <img
                 alt="Award Image"
                 id="talksImage"
-                src="talks-image-one.webp"
+                src="img/talks-section/talks-image-one.webp"
               />
               <p id="talksDetail">
                 Speaker -
@@ -49,7 +49,7 @@ const WechatyLandingPage = () => {
               <img
                 alt="Award Image Two"
                 id="talksImage"
-                src="talks-image-two.webp"
+                src="img/talks-section/talks-image-two.webp"
               />
               <p id="talksDetail">
                 Speaker -

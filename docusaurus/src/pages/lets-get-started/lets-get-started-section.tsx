@@ -15,7 +15,7 @@ const LetsGetStarted = () => {
               <img
                 alt="Web Tutorials Image"
                 id="tutorialsImage"
-                src="tutorials.webp"
+                src="img/lets-get-started-section/tutorials.webp"
               />
               <p id="tutorialsHeadline">Tutorials</p>
               <p id="developersPortalContent">
@@ -37,7 +37,7 @@ const LetsGetStarted = () => {
             <img
               alt="Question Mark on a piece of Code"
               id="howToGuidesImage"
-              src="how-to-guides.webp"
+              src="img/lets-get-started-section/how-to-guides.webp"
             />
             <p id="howToGuidesHeadline">How-to Guides</p>
             <p id="developersPortalContent">
@@ -52,7 +52,7 @@ const LetsGetStarted = () => {
           </div>
           <div id="refrencesContentWrapper">
             <img
-              src="references.webp"
+              src="img/lets-get-started-section/references.webp"
               id="referencesImage"
               alt="Reference Book Image"
             />
