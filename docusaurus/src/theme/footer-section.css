@@ -136,8 +136,7 @@
   }
   
   #scanner {
-    width: 210px;
-    height: 210px;
+    height: 190px;
     padding: 0px 10px 0px 10px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -168,7 +167,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 90%;
+    width: 80%;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -269,7 +268,7 @@
         margin-left: 0%;
       }
       #scanner {
-        width: 150px;
+        width: 190px;
         margin: 120px 0 -40px 0;
       }
       #scannerText {
