@@ -3,7 +3,7 @@ import "./sponsors-section.css";
 
 
 
-const sponsors = () => {
+const Sponsors = () => {
     return (
       <main id="body">
 <section>
@@ -68,4 +68,4 @@ const sponsors = () => {
     </main>
     );
 };
-export default sponsors;
+export default Sponsors;
