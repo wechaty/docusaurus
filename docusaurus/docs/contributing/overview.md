@@ -9,9 +9,7 @@ Thank you for your interest in contributing to Wechaty.
 
 This post explains the process of contributing to the Wechaty project.
 
-For all interactions within the project, kindly read and abide by the rules in [Wechaty Community Code of Conduct](code-of-conduct.md).
-
-Wechaty is a community that lives on its volunteers. As it keeps growing, we always need more people to help the users and the community. You can contribute in many ways, either to the framework itself or in the wider ecosystem.
+Wechaty is an open source software which is highly relied on volunteers to maintain. As we keep growing, we always welcome more people to join us. Please read through and abide by [Wechaty Community Code of Conduct](code-of-conduct.md).
 
 ### Why should you contribute?
 
@@ -32,16 +30,15 @@ code** in the next version of Wechaty!
 
 - Check out the GitHub issues with the tags `good first issue`, `pull request welcome`, or `help wanted`
 - Write code examples for documentation
-- Report a bug and work on resolving it
+- Report bugs and work on resolving it
 - Collaborate with others on building new features
+- Suggest enhancements and request features as GitHub issues
 
 Start from the [writing code docs](coding.md).
 
 ### Writing documentation ✍️
 
-Wechaty's documentation is one of its key strengths because it is informative
-and thorough. As the framework evolves, you can help to improve the documentation and keep it
-relevant from time to time.
+Documentation is one of the most important things that introduce Wechaty to general users. If you like teaching and sharing knowledge with other people, you are more than welcome to join our documentation project. Below are some ways you could contribute:
 
 - Fix typos in the documentation
 - Translate documentation to your local language
@@ -76,6 +73,7 @@ If you spot something new, open an issue using a [template](https://github.com/w
 - Write tutorials and blog posts, refer to <https://github.com/wechaty/wechaty.js.org/tree/master/jekyll/_posts>
 - Answer questions on the Wechaty Developers Home or GitHub issues
 - Organize Wechaty meetups or user groups in your area
+- Another way of contributing can be by following and sharing Wechaty content across social media platforms like YouTube, Gitter, etc.
 
 For more information, you may contact rui@Wechaty.io.
 
