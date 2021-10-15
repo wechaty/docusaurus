@@ -1,7 +1,7 @@
 import React from "react";
 import "./talks-section.css";
 
-const WechatyLandingPage = () => {
+const TalksSection = () => {
   return (
     <main id="body">
       <section id="talksSectionWrapper">
@@ -13,7 +13,7 @@ const WechatyLandingPage = () => {
               <img
                 alt="Award Image"
                 id="talksImage"
-                src="talks-image-one.webp"
+                src="img/talks-image-one.webp"
               />
               <p id="talksDetail">
                 Speaker -
@@ -49,7 +49,7 @@ const WechatyLandingPage = () => {
               <img
                 alt="Award Image Two"
                 id="talksImage"
-                src="talks-image-two.webp"
+                src="img/talks-image-two.webp"
               />
               <p id="talksDetail">
                 Speaker -
@@ -90,4 +90,4 @@ const WechatyLandingPage = () => {
   );
 };
 
-export default WechatyLandingPage;
+export default TalksSection;
