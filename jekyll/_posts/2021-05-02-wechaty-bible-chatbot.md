@@ -7,7 +7,7 @@ tags:
   - chatroom-tool
   - bible
   - other
-image: /assets/2021/05-wechaty-bible-chatbot/logo.png
+image: /assets/2021/05-wechaty-bible-chatbot/logo.webp
 ---
 
 笔者将从 开发意图、产品功能特性、技术方案、心得体会 等方面回顾总结 微信群机器人-读经助手 的产品开发历程，希望对其他开发者有所帮助。
@@ -38,31 +38,31 @@ image: /assets/2021/05-wechaty-bible-chatbot/logo.png
 
 ### 功能简介
 
-![image](/assets/2021/05-wechaty-bible-chatbot/03-01.jpg)
+![image](/assets/2021/05-wechaty-bible-chatbot/03-01.webp)
 
 ### 更多功能
 
-![image](/assets/2021/05-wechaty-bible-chatbot/03-02.jpg)
+![image](/assets/2021/05-wechaty-bible-chatbot/03-02.webp)
 
-[更多功能长图](/assets/2021/05-wechaty-bible-chatbot/03-03.jpg)
+[更多功能长图](/assets/2021/05-wechaty-bible-chatbot/03-03.webp)
 
 ### 文章推送
 
-![image](/assets/2021/05-wechaty-bible-chatbot/03-04.jpg)
+![image](/assets/2021/05-wechaty-bible-chatbot/03-04.webp)
 
-![image](/assets/2021/05-wechaty-bible-chatbot/03-05.jpg)
+![image](/assets/2021/05-wechaty-bible-chatbot/03-05.webp)
 
 ### 打卡统计
 
-![image](/assets/2021/05-wechaty-bible-chatbot/03-06.jpg)
+![image](/assets/2021/05-wechaty-bible-chatbot/03-06.webp)
 
-![image](/assets/2021/05-wechaty-bible-chatbot/03-07.jpg)
+![image](/assets/2021/05-wechaty-bible-chatbot/03-07.webp)
 
-![image](/assets/2021/05-wechaty-bible-chatbot/03-08.jpg)
+![image](/assets/2021/05-wechaty-bible-chatbot/03-08.webp)
 
 ### 搜文章内容
 
-![image](/assets/2021/05-wechaty-bible-chatbot/03-09.jpg)
+![image](/assets/2021/05-wechaty-bible-chatbot/03-09.webp)
 
 ## 四、技术实现
 
@@ -164,7 +164,7 @@ image: /assets/2021/05-wechaty-bible-chatbot/logo.png
 开发阶段，有次把机器人号，从测试群中主动踢出，发现 Provider Service 抛出了一个 Error，为了复现这个异常，我重复多次把这个号从测试群中踢出。然后过了一段时间，就收到了 微信风控通知，提示该号被 多人投诉、有骚扰用户的行为。 所以大家尽量不要将 机器人踢出群，最好采用主动退出的方式，以免被微信风控。
 
 换了新的微信号后，大概服务了 2 个月不到，发现被微信主动踢下线了，再次登录提示使用了 微信外挂、非官方客户端或模拟器。不清楚是, provider service 的方案，被大批检测出，还是仅仅是 笔者的微信号，被投诉导致。。
-(/assets/2021/05-wechaty-bible-chatbot/04-01.jpg)
+(/assets/2021/05-wechaty-bible-chatbot/04-01.webp)
 
 笔者开发机器人的初衷是希望解放人力，其实越多的微信群使用(免费使用)，对我来说，开发机器人的价值越高。但由于存在微信封号风险，是目前笔者不敢主动推广，仅靠群成员的口口相传。
 

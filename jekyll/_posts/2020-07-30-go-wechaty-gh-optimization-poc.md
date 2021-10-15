@@ -2,7 +2,7 @@
 title: "暑期2020 [Go-wechaty Github Action optimization] 计划书"
 author: nebell
 categories: project
-image: /assets/2020/go-wechaty-github-action-optimization-poc/header.jpg
+image: /assets/2020/go-wechaty-github-action-optimization-poc/header.webp
 tags:
   - go
   - summer-of-wechaty

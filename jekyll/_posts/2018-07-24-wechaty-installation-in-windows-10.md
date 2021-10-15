@@ -6,10 +6,10 @@ tags:
   - windows
   - install
   - news
-image: /assets/2018/wechaty-installation-in-windows.png
+image: /assets/2018/wechaty-installation-in-windows.webp
 ---
 
-![在 Windows 10 下安装 Wechaty](/assets/2018/wechaty-installation-in-windows.png)
+![在 Windows 10 下安装 Wechaty](/assets/2018/wechaty-installation-in-windows.webp)
 
 感谢 @huan @lijiarui 让我在此分享我在 Windows 10 Home 平台安装 Wechaty 的经历，希望我对安装过程的记录和分析能帮助在此平台下安装 Wechaty 的人。
 

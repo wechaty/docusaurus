@@ -2,7 +2,7 @@
 title: "暑期2020[基于 RPA 封装 Wechaty 接口下的快手聊天机器人]计划书"
 author: bikaiqiao
 categories: project
-image: /assets/2020/wechaty-puppet-kuaishou/wechaty-puppet-kuaishou-logo.jpeg
+image: /assets/2020/wechaty-puppet-kuaishou/wechaty-puppet-kuaishou-logo.webp
 tags:
   - kuaishou
   - puppet
