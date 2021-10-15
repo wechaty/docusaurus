@@ -6,7 +6,7 @@ tags:
   - nodejs
   - padplus
   - productivity
-image: /assets/2020/file-assistant-bot/file-assistant-bot-img.png
+image: /assets/2020/file-assistant-bot/file-assistant-bot-img.webp
 ---
 
 微信助手是很常见的运营工具，不仅能够给微信群带来活跃度，还能针对各种社群开发不同的玩法。

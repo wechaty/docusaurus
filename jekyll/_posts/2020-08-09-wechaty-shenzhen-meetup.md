@@ -5,7 +5,7 @@ categories: event
 tags:
   - meetup
   - news
-image: /assets/2020/wechaty-shenzhen-meetup/wechaty-shenzhen-meetup.jpg
+image: /assets/2020/wechaty-shenzhen-meetup/wechaty-shenzhen-meetup.webp
 ---
 
 8 月 5 日，周五晚上，大家按照约定时间到达吃饭地点，我与@lijiarui、@Gcaufy没有线下见过面，有一种见网友的感觉。好在很快就熟悉了。
@@ -36,5 +36,5 @@ image: /assets/2020/wechaty-shenzhen-meetup/wechaty-shenzhen-meetup.jpg
 
 [@dchaofei](https://github.com/dchaofei): Go/PHP Developer, the author of go-wechaty
 
-[wechaty-shenzhen-meetup-photo]: /assets/2020/wechaty-shenzhen-meetup/wechaty-shenzhen-meetup.jpg
-[wechaty-shenzhen-meetup-book]: /assets/2020/wechaty-shenzhen-meetup/book.jpg
+[wechaty-shenzhen-meetup-photo]: /assets/2020/wechaty-shenzhen-meetup/wechaty-shenzhen-meetup.webp
+[wechaty-shenzhen-meetup-book]: /assets/2020/wechaty-shenzhen-meetup/book.webp

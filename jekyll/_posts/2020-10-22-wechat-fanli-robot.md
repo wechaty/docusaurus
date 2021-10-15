@@ -1,7 +1,7 @@
 ---
 title: "基于wechaty实现的微信机器人，根据淘口令生成高佣转链接，并创建新的淘口令。"
 author: henryfanyiye
-image: /assets/2020/wechat-fanli-robot/weixin.png
+image: /assets/2020/wechat-fanli-robot/weixin.webp
 categories: project
 tags:
   - node.js
@@ -16,7 +16,7 @@ tags:
 - 自动同意好友申请
 - 淘宝优惠券查询
 
-![weixin](/assets/2020/wechat-fanli-robot/weixin.png)
+![weixin](/assets/2020/wechat-fanli-robot/weixin.webp)
 
 ## 实现微信机器人
 
@@ -27,17 +27,17 @@ tags:
 
 实现功能之前需要有一些前期准备，[申请成为淘宝联盟推广者](https://mos.m.taobao.com/union/pub/site/help?spm=a219t.11817172.0.d8067a02d.55c56a15rIqGt3)，新建媒体及推广位，这里遇到个坑，新增推广位的时候无响应，本人 Mac pro 使用 Chrome，不知道是不是只有我遇到这个问题，后来换成 Safari 就没有问题了。
 
-![meiti](/assets/2020/wechat-fanli-robot/meiti.png)
+![meiti](/assets/2020/wechat-fanli-robot/meiti.webp)
 
-![tuiguang](/assets/2020/wechat-fanli-robot/tuiguang.png)
+![tuiguang](/assets/2020/wechat-fanli-robot/tuiguang.webp)
 
 媒体创建成功后还需要申请 APPKEY，点击申请之后会跳转到淘宝开放平台，然后新建应用，新建的应用没有 API 权限，需要申请。
 
-![appkey](/assets/2020/wechat-fanli-robot/appkey.png)
+![appkey](/assets/2020/wechat-fanli-robot/appkey.webp)
 
-![yingyong](/assets/2020/wechat-fanli-robot/yingyong.png)
+![yingyong](/assets/2020/wechat-fanli-robot/yingyong.webp)
 
-![detail](/assets/2020/wechat-fanli-robot/detail.png)
+![detail](/assets/2020/wechat-fanli-robot/detail.webp)
 
 ## 具体实现
 
