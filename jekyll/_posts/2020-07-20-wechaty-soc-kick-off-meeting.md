@@ -9,7 +9,7 @@ tags:
   - news
   - meetup
   - featured
-image: /assets/2020/wechaty-soc-kick-off-meeting/soc.png
+image: /assets/2020/wechaty-soc-kick-off-meeting/soc.webp
 ---
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
@@ -22,7 +22,7 @@ image: /assets/2020/wechaty-soc-kick-off-meeting/soc.png
 
 ## Wechaty 与暑期2020
 
-![Wechaty SoC破冰会现场合影](/assets/2020/wechaty-soc-kick-off-meeting/group-photo.png)
+![Wechaty SoC破冰会现场合影](/assets/2020/wechaty-soc-kick-off-meeting/group-photo.webp)
 
 Wechaty 作为中国最大的聊天机器人开源项目，与其他数十个中国顶级开源项目一起参与“暑期2020”。
 Wechaty 合计发布了11个项目，共收到来自清华大学、北京大学、中国科学院大学、南开大学、四川大学等高校的数十份申请，并由Wechaty社区的资深Contributor作为导师，选出了11位同学进行项目开发。

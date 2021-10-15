@@ -7,7 +7,7 @@ tags:
   - talk
   - meetup
   - news
-image: /assets/2019/bot5-seminar-2/group-photo.png
+image: /assets/2019/bot5-seminar-2/group-photo.webp
 ---
 
 << 本次活动通知: [腾讯+句子互动第二弹，Chatbot Friday](https://mp.weixin.qq.com/s/fbY9BVLIqhy6Uwls0g4fRQ) <<
@@ -184,13 +184,13 @@ NLP技术到底哪家强？
 
 ## 集体合影
 
-![合照](/assets/2019/bot5-seminar-2/group-photo.png)
+![合照](/assets/2019/bot5-seminar-2/group-photo.webp)
 
-![所有人](/assets/2019/bot5-seminar-2/people.png)
+![所有人](/assets/2019/bot5-seminar-2/people.webp)
 
 ## After Party 🍻
 
-![After Party](/assets/2019/bot5-seminar-2/after-party.png)
+![After Party](/assets/2019/bot5-seminar-2/after-party.webp)
 
 主场活动结束后，六个人前往上次After Party的管氏串吧继续补充能量，大家讨论了创业，社区，技术，招聘等一系列问题，并成功的消灭了3炮鲜啤！
 

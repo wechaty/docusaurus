@@ -4,7 +4,7 @@ author: crossly
 categories: tutorial
 tags:
   - financial
-image: /assets/2020/financial-marketing/2020-03-30-wechaty-bond-bot.png
+image: /assets/2020/financial-marketing/2020-03-30-wechaty-bond-bot.webp
 ---
 
 首先，先为我拙劣的代码道个歉。临时野生程序员JS为现学，各种不规范请见谅。
@@ -243,6 +243,6 @@ module.exports = {
 
 对了，如果您想要体验我的机器人，或者对可转债套利有兴趣。您都可以扫描我的机器人进行体验。
 
-![Maple's financial bot](/assets/2020/financial-marketing/2020-03-30-wechat-bot-demo.jpg)
+![Maple's financial bot](/assets/2020/financial-marketing/2020-03-30-wechat-bot-demo.webp)
 
 > 作者: lemonsx(柠檬x)，证券从业者，前平台产品经理
