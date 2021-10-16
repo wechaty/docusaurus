@@ -10,6 +10,7 @@
   left: 0px;
   mix-blend-mode: normal;
   overflow-y: hidden;
+  height: 100vh;
 }
 
 #heroTagLine {
