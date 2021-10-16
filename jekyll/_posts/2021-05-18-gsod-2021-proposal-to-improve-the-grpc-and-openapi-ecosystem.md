@@ -6,7 +6,7 @@ tags:
   - grpc
   - gsod
   - openapi
-  - wechaty
+  - proposal
 image: /assets/2021/05-gsod-2021-proposal-to-improve-the-grpc-and-openapi-ecosystem/05-gsod-2021-proposal-to-improve-the-grpc-and-openapi-ecosystem.webp
 ---
 
