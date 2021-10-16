@@ -2,7 +2,7 @@
 title: "暑期2020 [基于开放 API 封装 Wechaty 接口下的企业微信聊天机器人] 终结成果展示"
 author: sapio-s
 categories: project
-image: /assets/2020/work-puppet/pic3.jpg
+image: /assets/2020/work-puppet/pic3.webp
 tags:
   - summer-2020
   - summer-of-wechaty
