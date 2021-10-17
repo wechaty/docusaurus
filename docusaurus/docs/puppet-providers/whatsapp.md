@@ -1,6 +1,6 @@
 ---
-title: 'Puppet Provider: Whatsapp'
-sidebar_label: Whatsapp
+title: 'Puppet Provider: WhatsApp'
+sidebar_label: WhatsApp
 ---
 
 [![Wechaty Puppet Whatsapp](https://img.shields.io/badge/Puppet-Whatsapp-blueviolet)](whatsapp)
@@ -12,16 +12,25 @@ sidebar_label: Whatsapp
 
 WhatsApp is the most popular Instance Messaging service in many parts of the world. With the WhatsApp Wechaty Puppet Provider, you can reach more than 1.5 billion WhatsApp users. You can send notifications, have two-way conversations, by building chatbots. If you're trying to reach and better converse with users in the west world, you need to consider using WhatsApp.
 
+With the introduction of wechaty puppet and the growth of the wechaty ecosystem and community, we’re happy to introduce wechaty-puppet-whatsapp which connects Wechaty API, the conversational RPA SDK for chatbot makers, and WhatsApp, a free, multi-platform messaging app.
+
 The WhatsApp Wechaty Puppet Provider is now available in alpha stage, to allow developers to start building and prototyping in your developing environments.
+
+As a developer, you can use wechaty-puppet-whatsapp to build your own WhatsApp chatbot with a few lines of code, which can send and receive WhatsApp messages with wechaty API.
 
 - Repo: <https://github.com/wechaty/wechaty-puppet-whatsapp>
 - Support & Feedback: <https://github.com/wechaty/wechaty-puppet-whatsapp/issues>
+- npm package: <https://npmjs.com/package/wechaty-puppet-whatsapp>
+- Built on top of [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js), which is a WhatsApp client library for NodeJS.
+- Creator of [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js) is [@pedroslopez](https://github.com/pedroslopez).
 
 ## Features
 
 1. Send & receive messages
 
-## Usage
+## Deployment
+
+Run `wechaty-puppet-whatsapp`:
 
 <!-- MDX import -->
 import Tabs from '@theme/Tabs'
@@ -66,14 +75,101 @@ npm start
 </TabItem>
 </Tabs>
 
-## Roadmap
+## Integrating a Bot to Whatsapp
 
-- to be added
+Let's take up an example on how to integrate bot from [starter templete](https://github.com/wechaty/wechaty-getting-started) to Whatsapp.
+
+The steps are similar for all other bots as well.
+
+### Prerequisite
+
+1. Offical Wechaty package: [package/wechaty](https://www.npmjs.com/package/wechaty).
+2. QRCode terminal edition: [package/qrcode-terminal](https://www.npmjs.com/package/qrcode-terminal).
+
+You can follow up the steps mentioned below:
+
+<ol><li> Initialize the project by creating a new folder `my-bot`.</li>
+
+```bash
+mkdir my-bot
+cd my-bot
+```
+
+<li> Install the dependencies using the following commands:</li>
+
+```bash
+npm install wechaty
+npm install qrcode-terminal
+```
+
+<li> Add the dependencies for using the bot with Whatsapp.</li>
+
+```bash
+npm install wechaty-puppet-whatsapp
+```
+
+<li> Create a new folder `src` and add a file `my-bot.js`. Add your custom functions to the code snippet below:</li>
+
+```ts
+  
+import {
+  Wechaty,
+  ScanStatus,
+  log,
+}               from 'wechaty'
+
+import qrcodeTerminal from 'qrcode-terminal'
+
+console.log(welcome)
+const bot = new Wechaty()
+
+/*
+ *Your function goes here
+ */
+```
+
+<li> After you are done with the file, you can run the bot using the following commands:</li></ol>
+
+```bash
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-whatsapp
+node src/my-bot.js
+```
+
+Scan it using your Whatsapp and you are ready to play with the bot! You can read more about deploying a whatsapp puppet [here](https://wechaty.js.org/docs/howto/deploy-whatsapp/).
+
+## Features to be implemented
+
+Here are some features to be implemented :
+
+Feature|Status
+---|---
+Send and Receive text messages|✅
+Send media (images/audio/documents)|❌
+Send video|❌
+Receive Video|❌
+Receive media (images/audio/video/documents)|❌
+Send contact cards|❌
+Get invite for group|❌
+Modify group subject|❌
+Add group participants|❌
+Kick group participants|❌
+Mention users|❌
+Get contact info|❌
+Get profile pictures|❌
+Set user status message|❌
 
 ## History
 
-- [Wechaty Puppet Whatsapp Has been Published, Shan, Feb 15, 2021](https://wechaty.js.org/2021/02/15/publishment-of-wechaty-whatapp-puppet/)
+- [Wechaty Puppet Whatsapp Has been Published, Shan, Feb 15, 2021](https://wechaty.js.org/2021/02/15/publishment-of-wechaty-whatsapp-puppet/)
+
+## Contributing
+
+Feel free to file an issue on the github repo for any feedback.
+
+wechaty-puppet-whatsapp is an open-source project. If you’re interested in contributing to this project, check out the contribution guidelines to learn more, and welcome to join the Wechaty Developers’ Home or our [Gitter network](https://gitter.im/wechaty/wechaty) to join our community.
 
 ## Maintainers
 
 - [@univerone](https://wechaty.js.org/contributors/univerone)
+- [@huan](https://github.com/huan) [Huan LI](http://linkedin.com/in/zixia) <zixia@zixia.net>
