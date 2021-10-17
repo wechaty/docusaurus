@@ -333,12 +333,9 @@ const explanations = {
   label: 'Explanations',
   items: [
     'explanations/overview',
-    'explanations/conversational',
     'explanations/rpa',
-    'explanations/motivations',
     'explanations/concepts',
     'explanations/architecture',
-    'explanations/lifecycle',
     'explanations/alternatives',
     'explanations/glossary',
     'explanations/devops-toolset',
