@@ -136,7 +136,7 @@ export WECHATY_PUPPET=wechaty-puppet-whatsapp
 node src/my-bot.js
 ```
 
-Scan it using your Whatsapp and you are ready to play with the bot! You can read more about deploying a whatsapp puppet [here](https://github.com/wechaty/wechaty.js.org/pull/1106).
+Scan it using your Whatsapp and you are ready to play with the bot! You can read more about deploying a whatsapp puppet [here](https://wechaty.js.org/docs/howto/deploy-whatsapp/).
 
 ## Features to be implemented
 
