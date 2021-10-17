@@ -1,29 +1,11 @@
 ---
-title: 'Send and receive files'
+title: 'Processing files'
 ---
 
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
-Use the guide to help you integrate additional functions to an existing project which is present at [Github/Media Bot](https://github.com/wechaty/wechaty-getting-started/blob/master/examples/advanced/media-file-bot.js) or check that your existing local system will run on Wechaty. If, you wish to learn on how to build the bot on your own, please visit one of our [Building the bot](https://wechaty.js.org/docs/examples/advanced/media-file-bot) section.
-
-The steps outlined here mainly focus on working with Javascript, but the user is free to switch between any languages. All wechaty contacts are encapsulated as a Contact.
-
-## Prerequisites
-
-* Your system must have [Node.js](https://nodejs.org/en/download/package-manager/) installed (version >= 12).
-* Your system must have [Wechaty](https://github.com/wechaty/wechaty) (version >= 0.40).
-* You need to be familiar with the basics of Wechaty platform. If not, follow our [tutorials](https://wechaty.js.org/docs/tutorials/) section.
-* You need to have at least a minimal application ready to work, follow one of our [Example/Media file bot](https://wechaty.js.org/docs/examples/advanced/media-file-bot).
-* You need to have some basic knowledge of [FileBox](https://github.com/huan/file-box) module.
-
-### If you don't know where to start from
-
-See [Running our first ding-dong bot](https://wechaty.js.org/docs/getting-started/quick-start).
-
-## Send File - defines how to send files
-
-This section helps you send files like Attachment, Audio, Image, Video to the desired user. Here, `FileBox.fromUrl` helps you send URL as a attachment to the user.
+## Sending File
 
 <Tabs
   groupId="programming-languages"
@@ -46,26 +28,18 @@ This section helps you send files like Attachment, Audio, Image, Video to the de
 ```ts
 import { FileBox } from 'wechaty'
 
-async function onMessage (message) {
-  const fileBox = FileBox.fromUrl('https://wechaty.js.org/img/icon.png')
-  await bot.say(fileBox)
-}
-
-bot.on('message', onMessage)
+const fileBox = FileBox.fromUrl('https://wechaty.js.org/img/icon.png')
+await bot.say(fileBox)
 ```
 
 </TabItem>
 <TabItem value="js">
 
 ```js
-const { FileBox } = require('wechaty')
+import { FileBox }  from 'wechaty'
 
-async function onMessage (message) {
-  const fileBox = FileBox.fromUrl('https://wechaty.js.org/img/icon.png')
-  await bot.say(fileBox)
-}
-
-bot.on('message', onMessage)
+const fileBox = FileBox.fromUrl('https://wechaty.js.org/img/icon.png')
+await bot.say(fileBox)
 ```
 
 </TabItem>
@@ -123,9 +97,7 @@ await bot.say(fileBox)
 </TabItem>
 </Tabs>
 
-## Receive File - defines how to receive files
-
-This section helps you receive files like Attachment, Audio, Image, Video. Here, `message.toFileBox` helps you save all the files to a specified location.
+## Receiving File
 
 <Tabs
   groupId="programming-languages"
@@ -169,7 +141,7 @@ bot.on('message', onMessage)
 <TabItem value="js">
 
 ```js
-const { Message } = require('wechaty')
+import { Message }  from 'wechaty'
 
 async function onMessage (message) {
   const fileTypeList = [
@@ -248,7 +220,6 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
-## References
+## About `FileBox`
 
-* [Wechaty Getting Started GitHub repository](https://github.com/wechaty/wechaty-getting-started).
-* [Wechaty Bot Example](https://github.com/wechaty/wechaty/tree/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples).
+Learn more about how to use `FileBox` module by reading its document at <https://github.com/huan/file-box>

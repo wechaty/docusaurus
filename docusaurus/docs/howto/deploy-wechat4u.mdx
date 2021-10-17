@@ -1,3 +1,141 @@
 ---
 title: Deploy in WeChat4U
 ---
+
+WeChat4U is an excellent wechat bot framework that supports both Node.js and Browser, with rich features and an active community of experienced contributors. In this how to guide, you will learn how to deploy the bot in WeChat4U locally and integrate bot from the list of examples present in [starter templete](https://github.com/wechaty/wechaty-getting-started).
+
+![Deploy in WeChat4U](../../static/img/docs/howto/deploy-wechat4u/wechat4u.webp)
+
+## Requirements
+
+1. Your system must have [Node.js](https://nodejs.org/en/download/package-manager/) installed (version >= 12).
+2. Your system must have [Wechaty](https://github.com/wechaty/wechaty) (version >= 0.40).
+3. You must be familiar with [wechaty-puppet-wechat4u](https://www.npmjs.com/package/wechaty-puppet-wechat4u).
+
+## Deployment
+
+Run `wechaty-puppet-wechat4u`:
+
+<!-- MDX import -->
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```sh
+npm install wechaty-puppet-wechat4u
+export WECHATY_PUPPET=wechaty-puppet-wechat4u
+npm start
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```sh
+npm install wechaty-puppet-wechat4u
+export WECHATY_PUPPET=wechaty-puppet-wechat4u
+npm start
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```sh
+npm install wechaty-puppet-wechat4u
+set WECHATY_PUPPET=wechaty-puppet-wechat4u
+npm start
+```
+
+</TabItem>
+</Tabs>
+
+## Integration
+
+Let's take up an example on how to integrate bot from [starter templete](https://github.com/wechaty/wechaty-getting-started) to WeChat4U. The step is similar for all other bots as well.
+
+### Prerequisite
+
+1. Official Wechaty package: [package/wechaty](https://www.npmjs.com/package/wechaty).
+2. QRCode terminal edition: [package/qrcode-terminal](https://www.npmjs.com/package/qrcode-terminal).
+
+You can follow up the steps mentioned below:
+
+1. Initialize the project by creating a new folder `my-bot`:
+
+```ts
+mkdir my-bot
+cd my-bot
+```
+
+2. Install the dependencies using the following commands:
+
+```ts
+npm install wechaty
+npm install qrcode-terminal
+```
+
+3. Install the puppet using the following commands:
+
+```ts
+npm install --save wechat4u@latest
+npm install wechaty-puppet-wechat4u
+```
+
+4. Create a new folder `src` and add a file `my-bot.js`. Add any of the functions from <a href="#"> add functionality to the bot</a> section to the snippet below:
+
+```ts
+import { Wechat } from 'wechat4u'
+import {
+  Contact,
+  Message,
+  ScanStatus,
+  Wechaty,
+  log,
+} from 'wechaty'
+
+import { qrTerm } from 'qrcode-terminal'
+
+console.log(welcome)
+const bot = new Wechaty()
+// or use the core API
+// import { WechatCore } from 'wechat4u/lib/core'
+/*
+ *Your function goes here
+ */
+```
+
+5. After you are done with the file, you can run the bot using the following commands:
+
+```ts
+export WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-wechat4u
+node src/my-bot.js
+```
+
+Now, you are ready to play with the bot!
+
+You can deploy the bot with popular container solutions as well such as:
+
+* [Deploy with Heroku](#a)
+* [Deploy with Docker](#b)
+
+## References
+
+* Find out some more information about puppet from [docs/puppet-providers](https://wechaty.js.org/docs/puppet-providers/).
+* Find out the more bot repository from [wechaty-getting-started](https://github.com/wechaty/wechaty-getting-started).
+* Find out WeChat4U repository at [wechaty-puppet-wechat4u](https://github.com/wechaty/wechaty-puppet-wechat4u).
+* Find out it usage at [PuppetWechat4u](https://github.com/nodeWechat/wechat4u).
+
+## Blogs
+
+To be Added
