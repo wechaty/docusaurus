@@ -86,7 +86,8 @@
 #tensorflow {
   overflow-x: hidden;
   overflow-y: hidden;
-  width: 100px;
+  width: 150px;
+  height: 150px;
   background: #f4fff2;
   border-radius: 20px;
   -webkit-transform: rotate(-45deg);
@@ -162,6 +163,7 @@
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: relative;
+  width: 100px;
   left: 18%;
   bottom: -16%;
 }

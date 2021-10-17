@@ -17,9 +17,9 @@ image: /assets/2021/04-google-season-of-docs/wechaty-gsod-2021.webp
 ---
 
 > What is [Google Season of Docs](https://developers.google.com/season-of-docs)?
-  Season of Docs is an annual program organised by Google.
-  Its goal is to bring technical writers and open source organisations together to foster collaboration and improvement of documentation in the Open Source space.
-  &mdash; [How to Crack the Google Season of Docs, Edidiong Asikpo, 2020](https://www.freecodecamp.org/news/cracking-google-season-of-docs-2020/)
+> Season of Docs is an annual program organised by Google.
+> Its goal is to bring technical writers and open source organisations together to foster collaboration and improvement of documentation in the Open Source space.
+> &mdash; [How to Crack the Google Season of Docs, Edidiong Asikpo, 2020](https://www.freecodecamp.org/news/cracking-google-season-of-docs-2020/)
 
 ![Wechaty Google Season of Docs 2021 - GSoD'21](/assets/2021/04-google-season-of-docs/google-season-of-docs-wechaty.webp)
 
@@ -45,13 +45,14 @@ Thanks for the following technical writers from GSoD'21: your proposal are very 
 
 > All names have been linked to their great proposals:
 
-1. [Abhishek Jaiswal](https://06412355400643469324.googlegroups.com/attach/2696b2e901464/GSoD%202021%20Project%20Proposal(Abhishek%20Jaiswal).pdf?part=0.1&view=1&vt=ANaJVrH3pZ3BlMcLvPB0Hkmb5a0UOwzTxgIx35I_eiVuC-derjfLADp6bOkSNSplVMvJjxPvaSkAPmq-uhcbTI4yJfGY6tKzbegUoN3mwGlnY-7X-cuZUCU)
+1. [Abhishek Jaiswal](<https://06412355400643469324.googlegroups.com/attach/2696b2e901464/GSoD%202021%20Project%20Proposal(Abhishek%20Jaiswal).pdf?part=0.1&view=1&vt=ANaJVrH3pZ3BlMcLvPB0Hkmb5a0UOwzTxgIx35I_eiVuC-derjfLADp6bOkSNSplVMvJjxPvaSkAPmq-uhcbTI4yJfGY6tKzbegUoN3mwGlnY-7X-cuZUCU>)
 1. [Ahmed Essam](https://docs.google.com/document/d/1GLxVZSUNDq_jf_OvZc82ZwjVK1ECB1srkBf2IyRYtGc/edit#heading=h.wu5oliio4h1o)
 1. [Anirudh TPVS](https://groups.google.com/group/wechaty/attach/1f2bde59e72d6/Wechaty%20GSOD%202021.docx?part=0.1&view=1)
 1. [Chris Estepa](https://docs.google.com/document/d/1KQHHFqXrxadsfELzYREjANdW4bgLq1v81OxJX7ujv3s/edit)
 1. [David Atanda](https://www.dropbox.com/scl/fi/99bghzgaxa6lr138s262w/GSoD-2021-Proposal_-Creating-Easy-to-learn-Tutorials-for-beginner-users-of-Wechaty.paper?dl=0&rlkey=idczdeprj5fz3padp7ttzg4g7)
 1. [Jaya Gupta](https://docs.google.com/document/d/1idLYEoqKcYoeID2jY-xufh3gRlDJhbmyy7MRhka38Q0/edit)
 1. [Mukosa Joseph Mawa](https://docs.google.com/document/d/1WizCc8Tg047ZTnYX0wMA8tp213HVDKbCozgeLdbaeI8/edit#)
+1. [Rajiv Ranjan Singh](https://github.com/iamrajiv/GSoD-2021/blob/main/GSoD_2021_Project_Proposal.md)
 1. [Rohitesh Kumar Jain](https://docs.google.com/document/d/1YnUrU2-7gxn2e3t4HevDQbUYg3CqKRvMp_l2HFOioug/edit#)
 1. [Rufai Mustapha](https://docs.google.com/document/d/1y_Gig1RTSKCAmzxiU-RHxLrDmtswLKn_ZdsEbPWm3Fg/edit)
 1. [Sajen Sarvajith k](https://docs.google.com/document/d/1szNLbHT8k6ty7xYE9aRvFW2QGrOeTKea5lfcUHLyPic/edit)
