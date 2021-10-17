@@ -6,8 +6,7 @@
 }
 
 #featuresSection {
-  z-index: 2;
-  margin-top: -220px;
+  margin-top: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,7 +524,7 @@
 @media only screen and (max-width: 1200px) and (min-width: 700px) {
  
   #featuresSection {
-    margin-top: -300px;
+    margin-top: 0px;
   }
 
   #featuresSectionRectangle {

@@ -137,7 +137,6 @@
   
   #scanner {
     height: 190px;
-    padding: 0px 10px 0px 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -167,7 +166,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 80%;
+    width: 20%;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
