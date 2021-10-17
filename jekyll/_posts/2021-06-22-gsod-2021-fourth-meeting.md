@@ -32,7 +32,7 @@ Total 11 attendees attended the meeting. They are:
 3. Abhishek Jaiswal, How-to-guide section writer (UTC + 05:30)
 4. Simin Liao, Volunteer (+8:00)
 5. Mukosa Joseph mawa, Introductions and Explanations section writer (UTC +03:00)
-6. Rajiv Ranjan Singh, Improve the gRPC and OpenAPI ecosystem writer, rajivperfect007@gmail.com, IST (UTC +5:30)
+6. Rajiv Ranjan Singh, Improve the gRPC and OpenAPI ecosystem writer, rajivperfect007@gmail.com, (UTC+05:30)
 7. Souvik Biswas, Create easy to learn tutorials for beginner users writer, sbis1999@gmail.com (UTC +05:30)
 8. Shraddha, Improve References section writer (UTC + 5:30)
 9. Shwetal Soni, Create easy to learn tutorials for beginners users writer (UTC +05:30)
