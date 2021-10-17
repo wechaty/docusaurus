@@ -111,15 +111,14 @@ npm install wechaty-puppet-whatsapp
 <li> Create a new folder `src` and add a file `my-bot.js`. Add your custom functions to the code snippet below:</li>
 
 ```ts
-const {
-  Contact,
-  Message,
-  ScanStatus,
+  
+import {
   Wechaty,
+  ScanStatus,
   log,
-}= require('wechaty')
+}               from 'wechaty'
 
-const qrTerm = require('qrcode-terminal')
+import qrcodeTerminal from 'qrcode-terminal'
 
 console.log(welcome)
 const bot = new Wechaty()
