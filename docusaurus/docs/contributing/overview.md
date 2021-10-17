@@ -46,7 +46,7 @@ Documentation is one of the most important things that introduce Wechaty to gene
 - Answer questions on the Wechaty Developers Home or GitHub issues
 - Organize Wechaty meetups or user groups in your area
 
-For more information, you may contact rui@Wechaty.io.
+For more information, you may contact wechaty@googlegroups.com.
 
 See [writing documentation](documentation.md) for more tips.
 
@@ -64,7 +64,7 @@ If you want to add new features or change the API, please submit an **issue** fi
 
 Make sure to add **tests** for your features and bug fixes, and update the documentation (see below) before submitting your code!
 
-### Contribute Support
+### Contribute Support 👐
 
 If you spot something new, open an issue using a [template](https://github.com/wechaty/openapi/issues/new/choose). We'll use the issue to have a conversation about the problem you want to fix.
 
@@ -75,7 +75,7 @@ If you spot something new, open an issue using a [template](https://github.com/w
 - Organize Wechaty meetups or user groups in your area
 - Another way of contributing can be by following and sharing Wechaty content across social media platforms like YouTube, Gitter, etc.
 
-For more information, you may contact rui@Wechaty.io.
+For more information, you may contact wechaty@googlegroups.com.
 
 If you think _working with Wechaty_ is fun, wait until you start working on it. Apparently, **ANYONE** can do something to help make Wechaty better and greater!
 
@@ -140,13 +140,31 @@ We are passionate about helping Wechaty users make the jump to become contributi
   the [community blogs](https://wechaty.js.org/blog);
   if you'd like to see your blog on that page, you can [register it here](blog.md).
 
+- Join the Wechaty Mailing List: Send an e-mail to wechaty@googlegroups.com and then, you are in!
+
+- Join the Wechaty WeChat Room: If you want to talk with other developers via WeChat, just scan the [QR Code](https://github.com/wechaty/wechaty#join-us) in WeChat with the secret code `wechaty` to join our Wechaty Developers' Home.
+
 - Contribute to open-source Wechaty projects, write some documentation, or release your code as an open-source pluggable application. The ecosystem of pluggable applications is a big strength of Wechaty, so help us build it!
+
+## Know more about Wechaty 📌
+
+- [Wechaty Blog](https://wechaty.js.org/blog/): Official blog for everything Wechaty
+- [Wechaty Contributors List](https://wechaty.js.org/contributors/): Get all Wechaty contributor profiles
+- [Meeting Notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.64c95c3y2l4v)： We use Wechaty Community Meeting Notes to record all of our meetings
+- [Branding Guides](https://wechaty.js.org/docs/marketing/branding/)： How to use the Wechaty logo and other materials
+- [YouTube](https://www.youtube.com/playlist?list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh)： Wechaty's video playlist
+- [Open Collective](https://opencollective.com/wechaty)： The only way to donate to Wechaty
+- [Google Drive](https://drive.google.com/drive/folders/1KTnB3EOZo3nFRFSWoFc2-7LM7MgKQLzM)： Wechaty's files
+- [Photo Album](https://photos.google.com/share/AF1QipOWKUfUkjw-VzE0skrjmCwbwIWwuBiI7Li4UCbdXH62n8iH2ITnvDbPTsx4eBl8dw?key=cy1NdWFoUGpXanVmczVHSm84TVg1LXJWeW5HTDhR)： Wechaty's photos
+- [Hall of Fame](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.64c95c3y2l4v): Know people in Wechaty
+
 
 **NOTE:** If you need any help, you can find related information in [Getting Help doc](getting-help.md)
 .
 We are looking forward to work with you. Welcome aboard! ⛵️
 
 We have built Wechaty with pleasure because it can help others. Your help and contributions to Wechaty are very much appreciated by the community.
+
 
 ## Special Thanks
 
