@@ -7,7 +7,7 @@ tags:
   - academic
   - padplus
   - healthcare
-image: /assets/2020/yanbot/yanbot.jpg 
+image: /assets/2020/yanbot/yanbot.webp 
 ---
 
 ## 备注

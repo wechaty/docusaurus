@@ -5,7 +5,7 @@ categories: tutorial
 tags:
   - iot
   - raspberrypi
-image: /assets/2020/runwechatyonpi/head.png
+image: /assets/2020/runwechatyonpi/head.webp
 ---
 
 ## 一、介绍
@@ -15,7 +15,7 @@ image: /assets/2020/runwechatyonpi/head.png
 只要会写JavaScript就可以开发微信机器人，示例只有7行代码：
 
 ```javascript
-const { Wechaty } = require('wechaty') // import { Wechaty } from 'wechaty'
+import { Wechaty }  from 'wechaty' // import { Wechaty } from 'wechaty'
 Wechaty.instance() // Global Instance
 .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrcode)}`))
 .on('login',            user => console.log(`User ${user} logined`))
@@ -25,7 +25,7 @@ Wechaty.instance() // Global Instance
 
 2、树莓派是一个具备硬件接口的廉价卡片电脑
 
-![RICEPO](/assets/2020/runwechatyonpi/pi.jpg)
+![RICEPO](/assets/2020/runwechatyonpi/pi.webp)
 
 树莓派能运行完整的linux系统，可通过读写GPIO文件的方式实现与硬件交互。树莓派降低了开发硬件的难度，可使用开发软件的方式开发硬件。
 
@@ -75,7 +75,7 @@ npm install utf-8-validate@^5.0.2
 5、创建 bot.js 文件
 
 ```javascript
-const { Wechaty } = require('wechaty') // import { Wechaty } from 'wechaty'
+import { Wechaty }  from 'wechaty' // import { Wechaty } from 'wechaty'
 Wechaty.instance() // Global Instance
 .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrcode)}`))
 .on('login',            user => console.log(`User ${user} logined`))
@@ -91,11 +91,11 @@ wechaty-puppet-service用的是windows微信协议，该协议需要使用token�
 WECHATY_PUPPET=wechaty-puppet-service WECHATY_PUPPET_SERVICE_TOKEN=token node bot.js
 ```
 
-![RICEPO](/assets/2020/runwechatyonpi/run.jpg)
+![RICEPO](/assets/2020/runwechatyonpi/run.webp)
 
 7、终端上会出现一个url，复制粘贴到浏览器上，会出现一个二维码。
 
-![RICEPO](/assets/2020/runwechatyonpi/qrcode.jpg)
+![RICEPO](/assets/2020/runwechatyonpi/qrcode.webp)
 
 使用微信扫码登陆，微信机器人就上线了。
 
@@ -106,7 +106,7 @@ WECHATY_PUPPET=wechaty-puppet-service WECHATY_PUPPET_SERVICE_TOKEN=token node bo
 树莓派操作硬件，只需要引入相应的GPIO库，操作GPIO，只需要对某个针脚执行高电平或低电平：
 
 ```javascript
-const Gpio = require('onoff').Gpio;//引入GPIO库
+import Gpio  from 'onoff'.Gpio;//引入GPIO库
 ```
 
 设置针脚17为输出针脚，用于连接继电器
@@ -130,8 +130,8 @@ led.writeSync(0);//低电平关灯
 ### 全部代码
 
 ```javascript
-const { Wechaty } = require('wechaty') // import { Wechaty } from 'wechaty'
-const Gpio = require('onoff').Gpio;
+import { Wechaty }  from 'wechaty' // import { Wechaty } from 'wechaty'
+import Gpio  from 'onoff'.Gpio;
 const led = new Gpio(17, 'out');
 Wechaty.instance() // Global Instance
 .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrcode)}`))

@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - social
-image: /assets/2020/manage-ur-customers/2020-0517-wechat.jpeg
+image: /assets/2020/manage-ur-customers/2020-0517-wechat.webp
 ---
 
 作为一个店面开了十多年个体工商户，积攒了很多的客户。希望能够减少人为的操作，去解决一些常见的问题，比如：

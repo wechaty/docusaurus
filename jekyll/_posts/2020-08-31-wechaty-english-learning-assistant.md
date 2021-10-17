@@ -7,7 +7,7 @@ tags:
   - project
   - sqlite3
   - education
-image: /assets/2020/wechaty-english-learning-assistant/header.jpg
+image: /assets/2020/wechaty-english-learning-assistant/header.webp
 ---
 
 针对英语学习社群，为提高群的活跃度，通过关键词触发，实现英文每日一句、中英文互译、励志话语推送，彩虹屁功能。
@@ -18,10 +18,10 @@ image: /assets/2020/wechaty-english-learning-assistant/header.jpg
 - 励志话语&彩虹屁，从互联网搜集整理共2783条数据
 - 中英文互译，采用百度翻译api实现
 - tts文本转语音（开发中，因padplus不支持语音）
-- ![功能截图](/assets/2020/wechaty-english-learning-assistant/pic01.jpg)
-- ![功能截图](/assets/2020/wechaty-english-learning-assistant/pic02.jpg)
-- ![功能截图](/assets/2020/wechaty-english-learning-assistant/pic03.jpg)
-- ![功能截图](/assets/2020/wechaty-english-learning-assistant/pic04.jpg)
+- ![功能截图](/assets/2020/wechaty-english-learning-assistant/pic01.webp)
+- ![功能截图](/assets/2020/wechaty-english-learning-assistant/pic02.webp)
+- ![功能截图](/assets/2020/wechaty-english-learning-assistant/pic03.webp)
+- ![功能截图](/assets/2020/wechaty-english-learning-assistant/pic04.webp)
 
 ## 配置
 

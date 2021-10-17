@@ -5,7 +5,7 @@ categories: tutorial
 tags:
   - code
   - featured
-image: /assets/2017/wildcat-rails-db-initial-structure.png
+image: /assets/2017/wildcat-rails-db-initial-structure.webp
 ---
 
 ![architecture2][wildcat-rails-architecture-2]
@@ -88,7 +88,7 @@ npm i --save wechaty chromedriver request
 Then create a new file named `bot.js` with this code base:
 
 ```javascript
-const { Wechaty } = require('wechaty');
+import { Wechaty }  from 'wechaty';
 
 function startBot() {
     const bot = Wechaty.instance({ profile: 'chatieme' });
@@ -104,7 +104,7 @@ startBot();
 Since we'd like to send the message to Rails app, we have to build a JSON object:
 
 ```javascript
-const { Wechaty } = require('wechaty');
+import { Wechaty }  from 'wechaty';
 
 function startBot() {
     const bot = Wechaty.instance({ profile: 'chatieme' });
@@ -338,8 +338,8 @@ We can test the API provided by Rails app using `curl`:
 We could take advantages of the library [request](https://github.com/request/request), posting the data to Rails:
 
 ```javascript
-const { Wechaty } = require('wechaty');
-const request = require('request');
+import { Wechaty }  from 'wechaty';
+import request  from 'request';
 
 function startBot() {
     const bot = Wechaty.instance({ profile: 'chatieme' });
@@ -424,9 +424,9 @@ Thanks for your reading. Feel free to drop any questions.
 [^3]: Read–eval–print loop - Wikipedia: [https://en.wikipedia.org/wiki/Read–eval–print_loop](https://en.wikipedia.org/wiki/Read–eval–print_loop)
 [^4]: Docker (software) - Wikipedia: [https://en.wikipedia.org/wiki/Docker_(software)](https://en.wikipedia.org/wiki/Docker_(software))
 
-[wildcat-rails-db-initial-structure]: /assets/2017/wildcat-rails-db-initial-structure.png
-[wildcat-rails-architecture-1]: /assets/2017/wildcat-rails-architecture-1.png
-[wildcat-rails-architecture-2]: /assets/2017/wildcat-rails-architecture-2.png
-[wildcat-rails-admin-panel]: /assets/2017/wildcat-rails-admin-panel.png
+[wildcat-rails-db-initial-structure]: /assets/2017/wildcat-rails-db-initial-structure.webp
+[wildcat-rails-architecture-1]: /assets/2017/wildcat-rails-architecture-1.webp
+[wildcat-rails-architecture-2]: /assets/2017/wildcat-rails-architecture-2.webp
+[wildcat-rails-admin-panel]: /assets/2017/wildcat-rails-admin-panel.webp
 
 Author: [@imWildCat](https://github.com/imWildCat), University of Portsmouth
