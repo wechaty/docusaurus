@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - productivity
-image: /assets/2020/910taobot/panda.jpg 
+image: /assets/2020/910taobot/panda.webp 
 ---
 
 1. 由于现在工作生活加了好多的微信群,并且这些群里的消息不一定每条都是你想看的，所以为了防止过多的消息提醒,所以会把群消息给屏蔽掉。但是这样有可能会错过一些@自己 或者需要自己回复的一些消息。因此想要弄一个微信机器人，潜伏在这些微信群。遇到有@设定人之后 把消息转发给自己。以达到提醒自己的目的。以防错过一些重要消息。

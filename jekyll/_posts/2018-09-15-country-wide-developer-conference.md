@@ -6,7 +6,7 @@ tags:
   - meetup
   - news
   - featured
-image: /assets/2018/country-wide-developer-conference.jpg
+image: /assets/2018/country-wide-developer-conference.webp
 ---
 
 ![Wechaty Contributors][contributors-image]
@@ -42,4 +42,4 @@ Here is their sharing:
 
 {% include iframe.html src="https://www.youtube.com/watch?v=QhQPO_2bD48" %}
 
-[contributors-image]: /assets/2018/country-wide-developer-conference.jpg
+[contributors-image]: /assets/2018/country-wide-developer-conference.webp

@@ -5,7 +5,7 @@ categories: npm
 tags:
   - plugins
   - featured
-image: /assets/2020/youdao-plugin/head.jpeg
+image: /assets/2020/youdao-plugin/head.webp
 ---
 
 [![badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
@@ -20,7 +20,7 @@ image: /assets/2020/youdao-plugin/head.jpeg
 提供翻译能力，通过微信发送待翻译文本，例如 `hello` 给机器人，机器人回复翻译的结果和发音音频。
 **发音音频需要应用绑定 语音合成服务**
 由于不支持 `Voice` 的消息类型，所以只能以 `UrlLink` 的形式回复发音音频。
-![效果图](/assets/2020/youdao-plugin/1.jpeg)
+![效果图](/assets/2020/youdao-plugin/1.webp)
 
 ## 具体实现
 
