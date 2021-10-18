@@ -299,20 +299,59 @@ const tutorials = {
   ],
 }
 
-const howtos = {
-  label: 'How-to Guides',
+/*********************************
+ *
+ * How-to-guide
+ *
+ */
+
+const AddEvents: SubMenuData = {
+  label: 'Add events to the bot',
   items: [
-    'howto/overview',
-    'howto/install',
-    'howto/wechaty',
     'howto/event',
+  ],
+}
+
+const AddFunctionality: SubMenuData = {
+  label: 'Add functionality to the bot',
+  items: [
     'howto/message',
     'howto/contact',
     'howto/room',
     'howto/friendship',
     'howto/file-box',
-    'howto/testing',
+  ],
+}
+
+const DeployIM: SubMenuData = {
+  label: 'Deploy on IM platform',
+  items: [
+    'howto/deploy-wechat',
+    'howto/deploy-whatsapp',
+    'howto/deploy-lark',
+    'howto/deploy-gitter',
+    'howto/wechat-official',
+    'howto/deploy-padlocal',
+    'howto/deploy-wechat4u',
+  ],
+}
+
+const DeployContainers: SubMenuData = {
+  label: 'Deploy with Containers',
+  items: [
+    'howto/heroku',
     'howto/docker',
+  ],
+}
+
+const howtos = {
+  label: 'How-to Guides',
+  items: [
+    'howto/overview',
+    subMenu(AddEvents),
+    subMenu(AddFunctionality),
+    subMenu(DeployIM),
+    subMenu(DeployContainers),
   ],
 }
 
