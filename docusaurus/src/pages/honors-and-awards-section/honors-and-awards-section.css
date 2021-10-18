@@ -95,7 +95,7 @@ section{
   
   #honorsAndAwardsFirstContentWrapper {
     background-position: center;
-    background-color: var(--ifm-footer-background-color);
+    background-color: var(--ifm-hero-background-color);
     padding: 10px 50px 10px 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -185,7 +185,7 @@ section{
   
   #honorsAndAwardsSecondContentWrapper {
     background-position: center;
-    background-color: var(--ifm-footer-background-color);
+    background-color: var(--ifm-hero-background-color);
     padding: 10px 50px 10px 20px;
     display: -webkit-box;
     display: -ms-flexbox;
