@@ -15,7 +15,7 @@
 #developersPortalRectangle {
   width: 200px;
   height: 20px;
-  background-color: #d2ffca;
+  background-color: var(--ifm-footer-background-color);
   border-radius: 50px;
   position: absolute;
   bottom: 80px;
@@ -28,7 +28,7 @@
   font-size: 35px;
   font-weight: 800;
   line-height: 60px;
-  color: black;
+  color: var(--ifm-hero-text-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,7 +61,7 @@
 }
 
 #tutorialsContentWrapper {
-  background-color: honeydew;
+  background-color: var(--ifm-hero-background-color);
   border-radius: 50px;
   padding: 40px 40px 40px;
   display: -webkit-box;
@@ -85,7 +85,7 @@
   font-size: 28px;
   font-weight: 800;
   line-height: 45px;
-  color: black;
+  color: var(--ifm-hero-text-color);
   -ms-flex-item-align: stretch;
   align-self: stretch;
   display: -webkit-box;
@@ -104,7 +104,7 @@
   font-family: "Montserrat";
   font-size: 15px;
   font-weight: 500;
-  color: black;
+  color: var(--ifm-hero-text-color);
   text-align: justify;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,7 +151,7 @@
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
-  color: black;
+  color: var(--ifm-hero-text-color);
   -ms-flex-item-align: stretch;
   align-self: stretch;
   display: -webkit-box;
@@ -173,7 +173,7 @@
 }
 
 #takeMeThereLink:active {
-  color: black;
+  color: var(--ifm-hero-text-color);
 }
 
 #tutorialsImage {
@@ -182,7 +182,7 @@
 }
 
 #howToGuidesContentWrapper {
-  background-color: honeydew;
+  background-color: var(--ifm-hero-background-color);
   border-radius: 50px;
   padding: 40px 40px 40px;
   display: -webkit-box;
@@ -210,7 +210,7 @@
   font-size: 28px;
   font-weight: 800;
   line-height: 75px;
-  color: black;
+  color: var(--ifm-hero-text-color);
   -ms-flex-item-align: stretch;
   align-self: stretch;
   display: -webkit-box;
@@ -229,7 +229,7 @@
 }
 
 #refrencesContentWrapper {
-  background-color: honeydew;
+  background-color: var(--ifm-hero-background-color);
   border-radius: 50px;
   padding: 40px 40px 40px;
   display: -webkit-box;
@@ -258,7 +258,7 @@
   font-size: 28px;
   font-weight: 800;
   line-height: 45px;
-  color: black;
+  color: var(--ifm-hero-text-color);
   -ms-flex-item-align: stretch;
   align-self: stretch;
   display: -webkit-box;
