@@ -304,6 +304,13 @@ const tutorials = {
  * How-to-guide
  *
  */
+ const WeChatPuppet: SubMenuData = {
+  label: 'Deploy in Wechat Puppet',
+  items: [
+    'howto/deploy-padlocal',
+    'howto/deploy-wechat4u',
+  ],
+}
 
 const AddEvents: SubMenuData = {
   label: 'Add events to the bot',
@@ -327,12 +334,11 @@ const DeployIM: SubMenuData = {
   label: 'Deploy on IM platform',
   items: [
     'howto/deploy-wechat',
+    subMenu(WeChatPuppet),
     'howto/deploy-whatsapp',
     'howto/deploy-lark',
     'howto/deploy-gitter',
     'howto/wechat-official',
-    'howto/deploy-padlocal',
-    'howto/deploy-wechat4u',
   ],
 }
 
