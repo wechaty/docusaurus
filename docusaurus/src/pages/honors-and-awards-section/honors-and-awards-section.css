@@ -241,9 +241,6 @@ section{
   #learnMoreButtonTwo:active {
     color: var(--ifm-hero-text-color);
   }
-  a {
-    color: #000000;
-  }
 
   @media only screen and (max-width: 700px) {
 
