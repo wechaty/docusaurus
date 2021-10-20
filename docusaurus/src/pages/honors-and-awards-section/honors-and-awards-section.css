@@ -36,7 +36,7 @@ section{
   #honorsAndAwardsRectangle {
     width: 200px;
     height: 20px;
-    background-color: #d2ffca;
+    background-color: var(--ifm-footer-background-color);
     border-radius: 50px;
     position: absolute;
     bottom: 0px;
@@ -49,7 +49,7 @@ section{
     font-size: 35px;
     font-weight: 800;
     line-height: 60px;
-    color: black;
+    color: var(--ifm-hero-text-color);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -80,7 +80,7 @@ section{
     font-size: 22px;
     font-weight: 700;
     line-height: 35px;
-    color: black;
+    color: var(--ifm-hero-text-color);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -95,7 +95,7 @@ section{
   
   #honorsAndAwardsFirstContentWrapper {
     background-position: center;
-    background-image: url(./background.webp);
+    background-color: var(--ifm-hero-background-color);
     padding: 10px 50px 10px 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -113,7 +113,7 @@ section{
     font-size: 15px;
     font-weight: 500;
     line-height: 24px;
-    color: black;
+    color: var(--ifm-hero-text-color);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -136,7 +136,7 @@ section{
     font-size: 16px;
     font-weight: 800;
     line-height: 24px;
-    color: black;
+    color: var(--ifm-hero-text-color);
     margin-top: 185px;
     letter-spacing: 1.5px;
     -webkit-transition: color 500ms;
@@ -149,7 +149,7 @@ section{
   }
   
   #learnMoreButtonOne:active {
-    color: black;
+    color: var(--ifm-hero-text-color);
   }
   
   #honorsAndAwardsSecondWrapper {
@@ -170,7 +170,7 @@ section{
     font-size: 22px;
     font-weight: 700;
     line-height: 35px;
-    color: black;
+    color: var(--ifm-hero-text-color);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -185,7 +185,7 @@ section{
   
   #honorsAndAwardsSecondContentWrapper {
     background-position: center;
-    background-image: url("https://static.overlay-tech.com/assets/8b71a728-84ff-4edf-9e69-98ad56b18555.svg");
+    background-color: var(--ifm-hero-background-color);
     padding: 10px 50px 10px 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -203,7 +203,7 @@ section{
     font-size: 15px;
     font-weight: 500;
     line-height: 24px;
-    color: black;
+    color: var(--ifm-hero-text-color);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -226,7 +226,7 @@ section{
     font-size: 16px;
     font-weight: 800;
     line-height: 24px;
-    color: black;
+    color: var(--ifm-hero-text-color);
     margin-top: 185px;
     letter-spacing: 1.5px;
     -webkit-transition: color 500ms;
@@ -239,7 +239,7 @@ section{
   }
   
   #learnMoreButtonTwo:active {
-    color: black;
+    color: var(--ifm-hero-text-color);
   }
 
   @media only screen and (max-width: 700px) {

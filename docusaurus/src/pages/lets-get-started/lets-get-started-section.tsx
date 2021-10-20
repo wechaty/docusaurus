@@ -56,7 +56,7 @@ const LetsGetStarted = () => {
               id="referencesImage"
               alt="Reference Book Image"
             />
-            <p id="refrencesHeadline">Refrences</p>
+            <p id="refrencesHeadline">References</p>
             <p id="developersPortalContent">
               References contain technical reference for APIs and other aspects
               of Wechaty&#039;s machinery.

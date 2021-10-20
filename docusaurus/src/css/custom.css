@@ -14,7 +14,16 @@
   --ifm-color-primary-light: rgb(70, 203, 174);
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-background-surface-color: honeydew;
+  --ifm-footer-background-color: #d2ffca;
+  --ifm-background-color: white;
   --ifm-code-font-size: 95%;
+}
+
+html[data-theme='dark'] {
+  --ifm-background-surface-color: rgb(32, 35, 39);
+  --ifm-footer-background-color: rgb(29, 36, 41);
+  --ifm-background-color: rgb(24, 25, 26);
 }
 
 .docusaurus-highlight-code-line {

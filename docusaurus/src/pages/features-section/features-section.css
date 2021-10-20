@@ -29,7 +29,7 @@
 #featuresSectionRectangle {
   width: 400px;
   height: 20px;
-  background-color: #d2ffca;
+  background-color: var(--ifm-footer-background-color);
   border-radius: 50px;
   position: absolute;
   top: 35px;
@@ -41,7 +41,7 @@
   font-size: 35px;
   font-weight: 800;
   line-height: 60px;
-  color: black;
+  color: var(--ifm-hero-text-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,7 +126,7 @@
   font-family: "Montserrat";
   font-size: 20px;
   font-weight: 700;
-  color: black;
+  color: var(--ifm-hero-text-color);
   margin-bottom: 0px;
   margin-top: 15px;
   letter-spacing: 2px;
@@ -135,13 +135,13 @@
 #videoPlaceholder {
   width: 620px;
   height: 380px;
-  background-color: honeydew;
+  background-color: var(--ifm-hero-background-color);
   border-radius: 10px;
   margin-top: -5px;
 }
 
 #featuresSectionLowerWrapper {
-  background-color: honeydew;
+  background-color: var(--ifm-hero-background-color);
   border-radius: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,7 +178,7 @@
   font-weight: 600;
   line-height: 48px;
   letter-spacing: 0.1em;
-  color: black;
+  color: var(--ifm-hero-text-color);
   text-align: center;
   letter-spacing: 0.1em;
   margin-left: 5%;
@@ -210,7 +210,7 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 60px;
-  color: black;
+  color: var(--ifm-hero-text-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,7 +228,7 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 60px;
-  color: black;
+  color: var(--ifm-hero-text-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,7 +260,7 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 60px;
-  color: black;
+  color: var(--ifm-hero-text-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,7 +277,7 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 60px;
-  color: black;
+  color: var(--ifm-hero-text-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,7 +386,7 @@
   font-size: 28px;
   font-weight: 700;
   line-height: normal;
-  color: black;
+  color: var(--ifm-hero-text-color);
   margin-top: 10px;
   letter-spacing: 0.1em;
 }
