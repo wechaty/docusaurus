@@ -62,7 +62,7 @@ We managed to complete all the GSoD tasks as per our initial proposal. In 17 wee
 
 We have also created a video tutorial for building the most basic Wechaty bot, called the [Ding Dong Bot](https://wechaty.js.org/docs/tutorials/#build-your-first-chatbot-with-wechaty), from scratch.
 
-![Coding Ding Dong Bot](../assets/2021/10-wechaty-tutorials-final-blog/wechaty-coding.webp)
+{% include iframe.html src="https://youtu.be/LHT49Q_x5D8" %}
 
 You can take a look at our contributions by going to the respective links present in this section.
 
