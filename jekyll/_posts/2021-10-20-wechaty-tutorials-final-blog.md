@@ -62,7 +62,7 @@ We managed to complete all the GSoD tasks as per our initial proposal. In 17 wee
 
 We have also created a video tutorial for building the most basic Wechaty bot, called the [Ding Dong Bot](https://wechaty.js.org/docs/tutorials/#build-your-first-chatbot-with-wechaty), from scratch.
 
-![Coding Ding Dong Bot](/assets/2021/10-wechaty-tutorials-final-blog/wechaty-coding.webp)
+![Coding Ding Dong Bot](../assets/2021/10-wechaty-tutorials-final-blog/wechaty-coding.webp)
 
 You can take a look at our contributions by going to the respective links present in this section.
 
@@ -73,41 +73,41 @@ You can find all PRs done by us in the links below:
 
 Here's a complete list of all the contributions that we have done during the GSoD season:
 
-| Week | Pull Requests  | Technical Writer  | Status |
-| --- | --- | --- | --- |
-| 1 | Add instructions and interactive sandbox for Vorpal [#779](https://github.com/wechaty/wechaty.js.org/pull/779) | [Souvik Biswas](https://github.com/sbis04) | ![779]
-| 1 | Update the Vorpal demo screenshot [#780](https://github.com/wechaty/wechaty.js.org/pull/780) | [Souvik Biswas](https://github.com/sbis04) | ![780]
-| 1 |  Improve Vorpal docs [#791](https://github.com/wechaty/wechaty.js.org/pull/791) | [Souvik Biswas](https://github.com/sbis04) | ![791]
-| 1 |  Improve and update Vorpal bot steps [#882](https://github.com/wechaty/wechaty.js.org/pull/882) | [Souvik Biswas](https://github.com/sbis04) | ![882]
-| 1 |  Runnning Locally (Ding Dong bot) [#888](https://github.com/wechaty/wechaty.js.org/pull/888) | [Shwetal Soni](https://github.com/shwetalsoni )| ![888]
-| 2 |  Getting Started Overview [#935](https://github.com/wechaty/wechaty.js.org/pull/935) | [Shwetal Soni](https://github.com/shwetalsoni )| ![935]
-| 2 |  Tutorials Overview [#934](https://github.com/wechaty/wechaty.js.org/pull/934) | [Shwetal Soni](https://github.com/shwetalsoni )| ![934]
-| 2 | Add installation page under tutorials [#905](https://github.com/wechaty/wechaty.js.org/pull/905) | [Souvik Biswas](https://github.com/sbis04) | ![905]
-| 3 | Add Google Cloud Shell tutorial [#922](https://github.com/wechaty/wechaty.js.org/pull/922) | [Souvik Biswas](https://github.com/sbis04) | ![922]
-| 3 | Running Ding Dong bot on gitpod [#923](https://github.com/wechaty/wechaty.js.org/pull/923) | [Shwetal Soni](https://github.com/shwetalsoni) | ![923]
-| 5 | Update Wechaty Plugin Overview page under Tutorials [#957](https://github.com/wechaty/wechaty.js.org/pull/957) | [Souvik Biswas](https://github.com/sbis04) | ![957]
-| 5 | Add tutorial for EventLogger plugin [#963](https://github.com/wechaty/wechaty.js.org/pull/963) | [Souvik Biswas](https://github.com/sbis04) | ![963]
-| 6 | Add tutorial for `QR code terminal plugin` [#969](https://github.com/wechaty/wechaty.js.org/pull/969) | [Shwetal Soni](https://github.com/shwetalsoni) | ![969]
-| 6 | Add tutorial for Heartbeat plugin [#985](https://github.com/wechaty/wechaty.js.org/pull/985) | [Souvik Biswas](https://github.com/sbis04) | ![985]
-| 7 | Using Redux with wechaty overview [#989](https://github.com/wechaty/wechaty.js.org/pull/989) | [Shwetal Soni](https://github.com/shwetalsoni) | ![989]
-| 8 | Add Redux: Ducks proposal style docs [#1126](https://github.com/wechaty/wechaty.js.org/pull/1126) | [Souvik Biswas](https://github.com/sbis04) | ![1126]
-| 9 | Add Starter Bot under Examples: Basic [#1076](https://github.com/wechaty/wechaty.js.org/pull/1076) | [Souvik Biswas](https://github.com/sbis04) | ![1076]
-| 9 | Improve the Contact Bot page [#1099](https://github.com/wechaty/wechaty.js.org/pull/1099) | [Souvik Biswas](https://github.com/sbis04) | ![1099]
-| 9 | Updated `ding dong bot` under examples [#1103](https://github.com/wechaty/wechaty.js.org/pull/1103) | [Shwetal Soni](https://github.com/shwetalsoni) | ![1103]
-| 9 | Updated `World's Shortest Chatbot` under examples [#1104](https://github.com/wechaty/wechaty.js.org/pull/1104) | [Shwetal Soni](https://github.com/shwetalsoni) | ![1104]
-| 10 | Created tutorial for room-bot [#1131](https://github.com/wechaty/wechaty.js.org/pull/1131) | [Shwetal Soni](https://github.com/shwetalsoni) | ![1131]
-| 10 | Tutorial for examples/advanced/busy-bot [#1134](https://github.com/wechaty/wechaty.js.org/pull/1134) | [Shwetal Soni](https://github.com/shwetalsoni) | ![1134]
-| 10 | Update the Friend bot page [#1138](https://github.com/wechaty/wechaty.js.org/pull/1138) | [Souvik Biswas](https://github.com/sbis04) | ![1138]
-| 11 | Add tutorial for Media File Bot [#1155](https://github.com/wechaty/wechaty.js.org/pull/1155) | [Souvik Biswas](https://github.com/sbis04) | ![1155]
-| 12 | Tutorial for using vanilla redux with wechaty [#1165](https://github.com/wechaty/wechaty.js.org/pull/1165) | [Shwetal Soni](https://github.com/shwetalsoni) | ![1165]
-| 12 | Add tutorial for Ctrl C Signal Bot [#1204](https://github.com/wechaty/wechaty.js.org/pull/1204) | [Souvik Biswas](https://github.com/sbis04) | ![1204]
-| 13 | Tutorial for Tuling123 Bot [#1207](https://github.com/wechaty/wechaty.js.org/pull/1207) | [Shwetal Soni](https://github.com/shwetalsoni) | ![1207]
-| 16 | Add video demo of ding ding bot [#1249](https://github.com/wechaty/wechaty.js.org/pull/1249) | [Souvik Biswas](https://github.com/sbis04) | ![1249]
-| 16 | Add missing badges to Event Logger plugin page [#1250](https://github.com/wechaty/wechaty.js.org/pull/1250) | [Souvik Biswas](https://github.com/sbis04) | ![1250]
-| 16 | Add missing badges to Heartbeat plugin page [#1251](https://github.com/wechaty/wechaty.js.org/pull/1251) | [Souvik Biswas](https://github.com/sbis04) | ![1251]
-| 16 | Updated links in tutorials overview page and removed empty pages from examples section [#1254](https://github.com/wechaty/wechaty.js.org/pull/1254) | [Shwetal Soni](https://github.com/shwetalsoni) | ![1254]
-| 16 | Added missing badges to QR code terminal plugin [#1253](https://github.com/wechaty/wechaty.js.org/pull/1253) | [Shwetal Soni](https://github.com/shwetalsoni) | ![1253]
-| 16 | Update order of language display [#1252](https://github.com/wechaty/wechaty.js.org/pull/1252) | [Shwetal Soni](https://github.com/shwetalsoni) | ![1252]
+| Week | Pull Requests  | Technical Writer  |
+| --- | --- | --- |
+| 1 | Add instructions and interactive sandbox for Vorpal [#779](https://github.com/wechaty/wechaty.js.org/pull/779) | [Souvik Biswas](https://github.com/sbis04)
+| 1 | Update the Vorpal demo screenshot [#780](https://github.com/wechaty/wechaty.js.org/pull/780) | [Souvik Biswas](https://github.com/sbis04)
+| 1 |  Improve Vorpal docs [#791](https://github.com/wechaty/wechaty.js.org/pull/791) | [Souvik Biswas](https://github.com/sbis04)
+| 1 |  Improve and update Vorpal bot steps [#882](https://github.com/wechaty/wechaty.js.org/pull/882) | [Souvik Biswas](https://github.com/sbis04)
+| 1 |  Runnning Locally (Ding Dong bot) [#888](https://github.com/wechaty/wechaty.js.org/pull/888) | [Shwetal Soni](https://github.com/shwetalsoni )|
+| 2 |  Getting Started Overview [#935](https://github.com/wechaty/wechaty.js.org/pull/935) | [Shwetal Soni](https://github.com/shwetalsoni )|
+| 2 |  Tutorials Overview [#934](https://github.com/wechaty/wechaty.js.org/pull/934) | [Shwetal Soni](https://github.com/shwetalsoni )|
+| 2 | Add installation page under tutorials [#905](https://github.com/wechaty/wechaty.js.org/pull/905) | [Souvik Biswas](https://github.com/sbis04)
+| 3 | Add Google Cloud Shell tutorial [#922](https://github.com/wechaty/wechaty.js.org/pull/922) | [Souvik Biswas](https://github.com/sbis04)
+| 3 | Running Ding Dong bot on gitpod [#923](https://github.com/wechaty/wechaty.js.org/pull/923) | [Shwetal Soni](https://github.com/shwetalsoni)
+| 5 | Update Wechaty Plugin Overview page under Tutorials [#957](https://github.com/wechaty/wechaty.js.org/pull/957) | [Souvik Biswas](https://github.com/sbis04)
+| 5 | Add tutorial for EventLogger plugin [#963](https://github.com/wechaty/wechaty.js.org/pull/963) | [Souvik Biswas](https://github.com/sbis04)
+| 6 | Add tutorial for `QR code terminal plugin` [#969](https://github.com/wechaty/wechaty.js.org/pull/969) | [Shwetal Soni](https://github.com/shwetalsoni)
+| 6 | Add tutorial for Heartbeat plugin [#985](https://github.com/wechaty/wechaty.js.org/pull/985) | [Souvik Biswas](https://github.com/sbis04)
+| 7 | Using Redux with wechaty overview [#989](https://github.com/wechaty/wechaty.js.org/pull/989) | [Shwetal Soni](https://github.com/shwetalsoni)
+| 8 | Add Redux: Ducks proposal style docs [#1126](https://github.com/wechaty/wechaty.js.org/pull/1126) | [Souvik Biswas](https://github.com/sbis04)
+| 9 | Add Starter Bot under Examples: Basic [#1076](https://github.com/wechaty/wechaty.js.org/pull/1076) | [Souvik Biswas](https://github.com/sbis04)
+| 9 | Improve the Contact Bot page [#1099](https://github.com/wechaty/wechaty.js.org/pull/1099) | [Souvik Biswas](https://github.com/sbis04)
+| 9 | Updated `ding dong bot` under examples [#1103](https://github.com/wechaty/wechaty.js.org/pull/1103) | [Shwetal Soni](https://github.com/shwetalsoni)
+| 9 | Updated `World's Shortest Chatbot` under examples [#1104](https://github.com/wechaty/wechaty.js.org/pull/1104) | [Shwetal Soni](https://github.com/shwetalsoni)
+| 10 | Created tutorial for room-bot [#1131](https://github.com/wechaty/wechaty.js.org/pull/1131) | [Shwetal Soni](https://github.com/shwetalsoni)
+| 10 | Tutorial for examples/advanced/busy-bot [#1134](https://github.com/wechaty/wechaty.js.org/pull/1134) | [Shwetal Soni](https://github.com/shwetalsoni)
+| 10 | Update the Friend bot page [#1138](https://github.com/wechaty/wechaty.js.org/pull/1138) | [Souvik Biswas](https://github.com/sbis04)
+| 11 | Add tutorial for Media File Bot [#1155](https://github.com/wechaty/wechaty.js.org/pull/1155) | [Souvik Biswas](https://github.com/sbis04)
+| 12 | Tutorial for using vanilla redux with wechaty [#1165](https://github.com/wechaty/wechaty.js.org/pull/1165) | [Shwetal Soni](https://github.com/shwetalsoni)
+| 12 | Add tutorial for Ctrl C Signal Bot [#1204](https://github.com/wechaty/wechaty.js.org/pull/1204) | [Souvik Biswas](https://github.com/sbis04)
+| 13 | Tutorial for Tuling123 Bot [#1207](https://github.com/wechaty/wechaty.js.org/pull/1207) | [Shwetal Soni](https://github.com/shwetalsoni)
+| 16 | Add video demo of ding ding bot [#1249](https://github.com/wechaty/wechaty.js.org/pull/1249) | [Souvik Biswas](https://github.com/sbis04)
+| 16 | Add missing badges to Event Logger plugin page [#1250](https://github.com/wechaty/wechaty.js.org/pull/1250) | [Souvik Biswas](https://github.com/sbis04)
+| 16 | Add missing badges to Heartbeat plugin page [#1251](https://github.com/wechaty/wechaty.js.org/pull/1251) | [Souvik Biswas](https://github.com/sbis04)
+| 16 | Updated links in tutorials overview page and removed empty pages from examples section [#1254](https://github.com/wechaty/wechaty.js.org/pull/1254) | [Shwetal Soni](https://github.com/shwetalsoni)
+| 16 | Added missing badges to QR code terminal plugin [#1253](https://github.com/wechaty/wechaty.js.org/pull/1253) | [Shwetal Soni](https://github.com/shwetalsoni)
+| 16 | Update order of language display [#1252](https://github.com/wechaty/wechaty.js.org/pull/1252) | [Shwetal Soni](https://github.com/shwetalsoni)
 
 <!--- Merge Status Badges --->
 <!--- they are linked to the above last columns of the table, 
