@@ -5,7 +5,7 @@ categories: announcement
 tags:
   - release
   - news
-image: /assets/2017/huan-wechaty-new-version-0.9.0.png
+image: /assets/2017/huan-wechaty-new-version-0.9.0.webp
 ---
 
 ![wechaty-release-0.9.0][wechaty-release-0.9.0]
@@ -120,4 +120,4 @@ Thank you all contributors, Wechaty could not release version 0.9 without your h
 1. @[ax4](https://github.com/ax4): [\#380](https://github.com/wechaty/wechaty/pull/380)
 1. @[Gcaufy](https://github.com/Gcaufy): [\#310](https://github.com/wechaty/wechaty/pull/310)
 
-[wechaty-release-0.9.0]: /assets/2017/huan-wechaty-new-version-0.9.0.png
+[wechaty-release-0.9.0]: /assets/2017/huan-wechaty-new-version-0.9.0.webp

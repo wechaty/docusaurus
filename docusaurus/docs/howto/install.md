@@ -14,7 +14,7 @@ We have a Wechaty [starter repository](https://github.com/wechaty/wechaty-gettin
 
 ```javascript
 
-const { Wechaty } = require('wechaty') // import { Wechaty } from 'wechaty'
+import { Wechaty }  from 'wechaty' // import { Wechaty } from 'wechaty'
 
 Wechaty.instance() // Global Instance
 .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://wechaty.js.org/qrcode/${encodeURIComponent(qrcode)}`))

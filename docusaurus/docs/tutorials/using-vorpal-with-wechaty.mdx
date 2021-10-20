@@ -49,7 +49,7 @@ Just scan the generated QR code with **WeChat** app, and you are ready to play w
 ```ts
 import { Wechaty }        from 'wechaty'
 import { WechatyVorpal }  from 'wechaty-vorpal'
-const hackerNews = require('vorpal-hacker-news')
+import hackerNews  from 'vorpal-hacker-news'
 
 const wechaty = new Wechaty()
 
@@ -244,7 +244,7 @@ import {
 
 import { WechatyVorpal } from 'wechaty-vorpal'
 import { generate } from 'qrcode-terminal'
-const hackerNews = require('vorpal-hacker-news')
+import hackerNews  from 'vorpal-hacker-news'
 ```
 
 Now, you have to define some functions that will help you to handle the different events returned by the Wechaty bot.

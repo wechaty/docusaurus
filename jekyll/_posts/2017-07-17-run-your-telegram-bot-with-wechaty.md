@@ -7,12 +7,12 @@ tags:
   - telegram
   - news
   - utility
-image: /assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-1.png
+image: /assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-1.webp
 ---
 
 Before introducing [Wechaty Telegram Bot Adaptor](https://github.com/hczhcz/wechaty-telegram), I would like to say something about Telegram chatbots. Recent days, I have a lot of fun playing chatbots on Telegram. After lynched hundreds of tanners in [Werewolf](http://www.tgwerewolf.com/) games, I realized that a chatbot can bring so much fun to users.
 
-![telegram](/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-1.png)
+![telegram](/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-1.webp)
 
 ## Playing Werewolf on Telegram
 
@@ -20,7 +20,7 @@ What are the differences between a chatbot and a game app? A chatbot is much mor
 
 In addition to games, chatbots can involve in one's daily life from many aspects. When I wake up in the morning, I can call a bot to add myself to the list of early-morning guys (even if I get up later than 10 a.m. XD). I can keep tracking the updates from GitHub via a bot. A bot can also get random XKCD comics, Konachan wallpapers or Wikipedia entries for me. There are some super funny chatbots. One of them would let you ban a user in a group for several seconds but you have a probability of 50% that gets yourself banned. Another will pair the parentheses you sent. For example, if you say something like "（逃", it will reply "） ○(￣^￣○)".
 
-![telegram](/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-2.jpg)
+![telegram](/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-2.webp)
 
 ## A Bot Involves in Your Daily Life (via Imgur)
 
@@ -46,11 +46,11 @@ WeChat is a great chatting application and it may be the most functional one. It
 
 Taking [MESE bot](https://github.com/hczhcz/mese-next-telegram) as an example, it is a Telegram chatbot of a business simulation game MESE. Several months ago, I ported it to WeChat because the majority of MESE players in China do not use Telegram. The idea is creating a mock Telegram chatbot library which provides Telegram's interface but interacts with WeChat internally. It is somewhat a dirty hack. The mock library processes text message only, and the user identification still works in WeChat's way. I slightly modified the code of MESE bot so that it works as expected. Since then, by writing the code once, the new feature of MESE bot will be deployed to both Telegram and WeChat.
 
-![telegram](/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-3.png)
+![telegram](/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-3.webp)
 
 ## Telegram MESE Bot
 
-![telegram](/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-4.png)
+![telegram](/assets/2017/hczhcz-run-your-telegram-bot-with-wechaty-4.webp)
 
 ## WeChat MESE Bot
 

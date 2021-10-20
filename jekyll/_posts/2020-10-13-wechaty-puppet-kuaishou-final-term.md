@@ -2,7 +2,7 @@
 title: "基于RPA封装的Wechaty接口下的快手聊天机器人结项报告"
 author: wangjunwei
 categories: project
-image: /assets/2020/wechaty-puppet-kuaishou-mid-term/wechaty-puppet-kuaishou-mid-term.jpeg
+image: /assets/2020/wechaty-puppet-kuaishou-mid-term/wechaty-puppet-kuaishou-mid-term.webp
 tags:
   - kuaishou
   - summer-of-wechaty

@@ -5,7 +5,7 @@ categories: tutorial
 tags:
   - python
   - plugin
-image: /assets/2020/python-wechaty/python-wechaty-logo.png
+image: /assets/2020/python-wechaty/python-wechaty-logo.webp
 ---
 
 经不可靠统计，大部分聊天机器人的初学者都是以：自动回复和关键字入群这两个基础功能上手，然后才会逐步开发更多更复杂的功能，在此我将介绍如何使用python-wechaty快速实现这两个功能。

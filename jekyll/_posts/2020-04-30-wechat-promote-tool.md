@@ -4,7 +4,7 @@ author: jesseweb
 categories: project
 tags:
    - ecommerce
-image: /assets/2020/promote-bot/banner.png
+image: /assets/2020/promote-bot/banner.webp
 ---
 
 ## 一、项目背景
@@ -41,9 +41,9 @@ image: /assets/2020/promote-bot/banner.png
 ## 测试效果
 
 * 机器人相关操作
-    ![INVITE](/assets/2020/promote-bot/result.jpg)
+    ![INVITE](/assets/2020/promote-bot/result.webp)
 * 测试发送效果
-    ![INVITE](/assets/2020/promote-bot/result1.png)
+    ![INVITE](/assets/2020/promote-bot/result1.webp)
 
 ## 后续计划
 

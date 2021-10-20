@@ -4,7 +4,7 @@ author: jaslin
 categories: story
 tags:
   - case
-image: /assets/2016/jaslin-case-study.jpg
+image: /assets/2016/jaslin-case-study.webp
 ---
 
 ## Usercase of using wechat robot with Wechaty
@@ -43,7 +43,7 @@ Jas, 3/12/2016
 
 > Author: @[JasLin](https://github.com/jaslin/), BotWave CTO, Wechaty Contributor
 
-[jaslin-case]: /assets/2016/jaslin-case-study.jpg
-[jaslin-record]: /assets/2016/jaslin-use-case-record.jpg
-[jaslin-send]: /assets/2016/jaslin-use-case-send.jpg
-[jaslin-statistics]: /assets/2016/jaslin-use-case-statistics.jpg
+[jaslin-case]: /assets/2016/jaslin-case-study.webp
+[jaslin-record]: /assets/2016/jaslin-use-case-record.webp
+[jaslin-send]: /assets/2016/jaslin-use-case-send.webp
+[jaslin-statistics]: /assets/2016/jaslin-use-case-statistics.webp

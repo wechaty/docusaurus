@@ -11,7 +11,7 @@ tags:
   - project
   - proposal
   - team-proposal
-image: /assets/2021/05-gsod-2021-team-proposal-tutorials/wechaty-tutorials-proposal.png
+image: /assets/2021/05-gsod-2021-team-proposal-tutorials/wechaty-tutorials-proposal.webp
 ---
 
 This is the project proposal for creating and improving the **Wechaty Tutorials** documentation on which we will be working as a part of Google Season of Docs 2021. We are looking forward to completing this work during a span of **12 weeks** (or, 3 months).

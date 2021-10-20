@@ -1,11 +1,11 @@
 import fs from 'fs'
-import { loadFront } from 'yaml-front-matter'
+import yfm from 'yaml-front-matter'
 
 const getFrontmatterCategoryList = (filename: string): string[] => {
   const content = fs.readFileSync(filename)
-  const front   = loadFront(content)
+  const front   = yfm.loadFront(content)
 
-  let categoryList  = front.categories
+  let categoryList  = front['categories']
   if (!Array.isArray(categoryList)) {
     categoryList = categoryList
       ? [categoryList]

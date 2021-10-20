@@ -7,7 +7,7 @@ tags:
   - getting-started
   - news
   - featured
-image: /assets/2021/02-google-cloud-shell-tutorials/google-cloud-platform.jpg
+image: /assets/2021/02-google-cloud-shell-tutorials/google-cloud-platform.webp
 ---
 
 Today, We have created a Google Cloud Shell Tutorial for easy getting started with Wechaty!
@@ -37,4 +37,4 @@ Please follow it to enjoy playing with our Wechaty ding-dong BOT!
 
 [shell_img]: https://gstatic.com/cloudssh/images/open-btn.svg
 [shell_link]: https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2Fwechaty%2Fwechaty-getting-started&cloudshell_open_in_editor=examples/ding-dong-bot.ts&cloudshell_workspace=.&cloudshell_tutorial=examples/tutorials/google-cloud-shell-tutorial.md
-[screenshot_img]: /assets/2021/02-google-cloud-shell-tutorials/wechaty-google-cloud-shell-tutorial.png
+[screenshot_img]: /assets/2021/02-google-cloud-shell-tutorials/wechaty-google-cloud-shell-tutorial.webp

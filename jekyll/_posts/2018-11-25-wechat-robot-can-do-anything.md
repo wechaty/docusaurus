@@ -99,6 +99,6 @@ tags:
 
 先聊到这里，后续的想法，也欢迎大家一起来讨论。二维码是“开源社-bot”，欢迎添加。功能还很弱，大家轻拍 :)
 
-![开源社](/assets/2018/kaiyuanshe.png)
+![开源社](/assets/2018/kaiyuanshe.webp)
 
 > 作者: [庄表伟](https://github.com/zhuangbiaowei/)，[开源社](http://www.kaiyuanshe.cn/)理事/执行长。首发于简书: [微信机器人能够做些什么事？](https://www.jianshu.com/p/9698395511e0)
