@@ -14,7 +14,7 @@ image: /assets/2021/10-wechaty-tutorials-final-blog/wechaty-tutorials-final-cove
 
 We have been a part of **Google Season of Docs 2021** for creating and improving the **Wechaty documentation**, specifically the [Tutorials](https://wechaty.js.org/docs/tutorials/) section. It was an amazing journey of **17 weeks** (roughly 4 months) contributing to the Wechaty documentation, during which we got an opportunity to try out and learn a lot about the Wechaty bots. When we initially started contributing to the Docs, we didn't have any idea about how Wechaty bots can be created that runs on various instant messaging (IM) systems like [WhatsApp](https://www.whatsapp.com/) and [Wechat](https://www.wechat.com/). But gradually we became comfortable with building the bots and started building the documentation.
 
-A brief introduction about us available below.
+A brief introduction about us is available below.
 
 ### Souvik Biswas
 > email: `sbis1999@gmail.com`
@@ -32,9 +32,9 @@ I am Shwetal Soni, currently pursuing B.Tech in Computer Science and Engineering
 
 ## Abstract
 
-Our main goal was to improve the Wechaty Tutorials documentation and make it easier to follow for the beginner users of Wechaty. We have added step by step guide for building each Wechaty bot from scratch and added interactive CodeSandboxes using which users can try out the bot directly from within the documentation page.
+Our main goal was to improve the Wechaty Tutorials documentation and make it easier to follow for beginner users of Wechaty. We have added step by step guide for building each Wechaty bot from scratch and added interactive CodeSandboxes using which users can try out the bot directly from within the documentation page.
 
-Here's an brief overview about about tasks:
+Here's a brief overview of our tasks:
 
 - Refactor the overall Tutorials documentation
 - Add / improve the step-by-step instructions
@@ -43,7 +43,7 @@ Here's an brief overview about about tasks:
 - Add various bots building tutorials to Examples
 - Create a video tutorial
 
-Earlier the tutorial pages lacked a proper structure, so it might not be easy to follow and build a bot for a user to is new to Wechaty. So, we have introduced a structure that is followed on every documentation page, more information about it below.
+Earlier the tutorial pages lacked a proper structure, so it might not be easy to follow and build a bot for a user to is new to Wechaty. So, we have introduced a structure that is followed on every documentation page, more information about it is below.
 
 ## Structure of tutorial pages
 
@@ -60,7 +60,7 @@ This is an overview of the final structure for each of the tutorial pages that w
 
 ## Project Goals
 
-We managed to completed all the GSoD tasks as per our initial proposal. In 17 weeks, we have done a total of **40 pull requests** which consist of 33 weekly PRs (addition or improvement of documentation pages that we had included in our initial proposal), and 7 miscellaneous PRs (fixes that we have done to some of the pages).
+We managed to complete all the GSoD tasks as per our initial proposal. In 17 weeks, we have done a total of **40 pull requests** which consist of 33 weekly PRs (addition or improvement of documentation pages that we had included in our initial proposal), and 7 miscellaneous PRs (fixes that we have done to some of the pages).
 
 We have also created a video tutorial for building the most basic Wechaty bot, called the [Ding Dong Bot](https://wechaty.js.org/docs/tutorials/#build-your-first-chatbot-with-wechaty), from scratch.
 
@@ -151,6 +151,6 @@ Here's a complete list of all the contributions that we have done during the GSo
 
 ## Conclusion
 
-The current version of [Wechaty documentation](https://wechaty.js.org/) consists a lot of easy to follow tutorial for building Wechaty bots from scratch. User will find relevant links to all the resources required for building the bot by themselves and can also run some of bots directly on the documentation page inside the CodeSandboxes that we have included.
+The current version of [Wechaty documentation](https://wechaty.js.org/) consists of a lot of easy-to-follow tutorials for building Wechaty bots from scratch. Users will find relevant links to all the resources required for building the bot by themselves and can also run some of the bots directly on the documentation page inside the CodeSandboxes that we have included.
 
 Thanks to all the mentors ([Huan](https://github.com/huan) & [Rui](https://github.com/lijiarui)) and volunteers ([Rohitesh](https://github.com/Rohitesh-Kumar-Jain) & [Simin](https://github.com/proudofsimin)) for helping us during the documentation period and making our GSoD 2021 season successful.
