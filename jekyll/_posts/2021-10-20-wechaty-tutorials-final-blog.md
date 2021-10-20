@@ -67,6 +67,7 @@ We have also created a video tutorial for building the most basic Wechaty bot, c
 You can take a look at our contributions by going to the respective links present in this section.
 
 You can find all PRs done by us in the links below:
+
 - [Shwetal's PRs](https://github.com/wechaty/wechaty.js.org/pulls?q=is%3Apr+author%3Ashwetalsoni)
 - [Souvik's PRs](https://github.com/wechaty/wechaty.js.org/pulls?q=is%3Apr+author%3Asbis04)
 
@@ -104,7 +105,7 @@ Here's a complete list of all the contributions that we have done during the GSo
 | 16 | Add video demo of ding ding bot [#1249](https://github.com/wechaty/wechaty.js.org/pull/1249) | [Souvik Biswas](https://github.com/sbis04) | ![1249]
 | 16 | Add missing badges to Event Logger plugin page [#1250](https://github.com/wechaty/wechaty.js.org/pull/1250) | [Souvik Biswas](https://github.com/sbis04) | ![1250]
 | 16 | Add missing badges to Heartbeat plugin page [#1251](https://github.com/wechaty/wechaty.js.org/pull/1251) | [Souvik Biswas](https://github.com/sbis04) | ![1251]
-| 16 | Updated links in tutorials overview page and removed empty pages from examples section [#1254 ](https://github.com/wechaty/wechaty.js.org/pull/1254) | [Shwetal Soni](https://github.com/shwetalsoni) | ![1254]
+| 16 | Updated links in tutorials overview page and removed empty pages from examples section [#1254](https://github.com/wechaty/wechaty.js.org/pull/1254) | [Shwetal Soni](https://github.com/shwetalsoni) | ![1254]
 | 16 | Added missing badges to QR code terminal plugin [#1253](https://github.com/wechaty/wechaty.js.org/pull/1253) | [Shwetal Soni](https://github.com/shwetalsoni) | ![1253]
 | 16 | Update order of language display [#1252](https://github.com/wechaty/wechaty.js.org/pull/1252) | [Shwetal Soni](https://github.com/shwetalsoni) | ![1252]
 
