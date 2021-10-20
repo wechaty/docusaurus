@@ -67,6 +67,8 @@ tags:
 
 项目仓库: <https://github.com/wechaty/wechaty-puppet-walnut>  
 
+npm包：<https://www.npmjs.com/package/wechaty-puppet-walnut>
+
 ### live coding视频：
 
 {% include iframe.html src="https://www.youtube.com/watch?v=4-0lW0kvelE" %}
