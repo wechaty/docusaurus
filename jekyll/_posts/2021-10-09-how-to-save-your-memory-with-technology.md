@@ -21,16 +21,17 @@
  但是这种方法的弊端很多，微信毕竟是聊天软件，聊天记录掺杂过多，检索起来费时费力等缺点，于是我就尝试着寻找解决方法，此时恰巧碰到 wechaty，简单了解后，它完全解决了我当前的痛点，简就是直万事俱备，只欠coding了，话不多说，说干就干。
 
 ## 项目目录
+
   本次主要介绍的是onMessage.js 中的内容
 
   ```shell
   memory-assistant
     |── src
-    |    |── index.js	          # 入口文件
-    |    |── config.js		  # 配置文件
-    |    |── onScan.js		  # 机器人需要扫描二维码时监听回调
-    |    |── onLogin.js		  # 监听登录
-    |    |── onMessage.js	      # 消息监听回调
+    |    |── index.js         # 入口文件
+    |    |── config.js  # 配置文件
+    |    |── onScan.js  # 机器人需要扫描二维码时监听回调
+    |    |── onLogin.js  # 监听登录
+    |    |── onMessage.js      # 消息监听回调
     |    └── storage-room.json  # 存储信息保存文件
     └── package.json            # 项目初始化文件
   ```
@@ -38,12 +39,12 @@
 ## 准备工作
 
 ### 技术需求
+
 由于本人刚接触，所以尽量以最少的代码量及技术栈来实现功能
 
 1. **wechaty**
 
     wechaty：用来接收微信发来的消息以及根据对应指令进行处理及响应
-
 
 2. **nodeJs 基本操作**
 
@@ -56,10 +57,13 @@
     本文默认读者已熟悉 js 基本知识，如数组遍历、字符串拼接等相关操作
 
 ## 开发过程
+
 ### 项目构建
+
 1. **wechaty 引入及协议配置**
 
     初始化项目文件夹，并安装以下依赖
+
     ```javascript
     // 链接转化二维码控制台输出
     cnpm i qrcode-terminal -D
@@ -72,11 +76,10 @@
     ```
 
    [wechaty官网](http://wechaty.js.org/)
-   
-   [token申请](http://pad-local.com/)
-   
-   如果没有 pad 协议 token 的可参考[web协议](http://wechaty.js.org/2021/04/13/wechaty-uos-web/)，感谢作者[@Leo chen](https://github.com/leochen-g)分享，需要注意的是web协议获取不到固定的id值以及部分接口无法使用，但是如果只针对一个人的话是可行的。
 
+   [token申请](http://pad-local.com/)
+
+   如果没有 pad 协议 token 的可参考[web协议](http://wechaty.js.org/2021/04/13/wechaty-uos-web/)，感谢作者[@Leo chen](https://github.com/leochen-g)分享，需要注意的是web协议获取不到固定的id值以及部分接口无法使用，但是如果只针对一个人的话是可行的。
 
 2. **入口文件 `index.js` 编写**
 
@@ -105,7 +108,9 @@
       .on("message", onMessage)
       .start();
     ```
+
 3. **消息处理文件 `onMessage.js` 文件之存东西**
+
     ```javascript
     // 发消息人
     const contact = msg.talker(); 
@@ -213,12 +218,9 @@
     }
     ```
 
+4. **消息处理文件 `onMessage.js` 文件之找东西**
 
-
-  4. **消息处理文件 `onMessage.js` 文件之找东西**
-  
       主要逻辑是读取仓库文件，遍历仓库当前存储的用户中有没有当前发起请求的用户，没有的话就开始新建，如果该用户已经存储过，则查看当前用户请求存储的物品有没有在仓库中存储过，如果之前存储过该物品，则进行位置更新，如果之前没存储过该物品，则进行新建。
-
 
       ```javascript
       // 因与 step3 在同一个文件内，相关变量来源课参考 step3 
@@ -283,9 +285,7 @@
       } 
       ```
 
-
-​      
-  5. **仓库存储文件`storage-room.json` 内容**
+5. **仓库存储文件`storage-room.json` 内容**
 
       ```javascript
        [
@@ -327,8 +327,7 @@
        ]
       ```
 
-
-  6. **消息处理流程示意图**
+6. **消息处理流程示意图**
 
       ```mermaid
       graph TD
@@ -353,6 +352,4 @@
           H --> | | Z
       ```
 
-
  > 作者: [stefan](https://github.com/stefan-ysh/)，流水线 coder，曾获得学习委员和尊师标兵荣誉称号。
-
