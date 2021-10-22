@@ -4,7 +4,6 @@
  categories: article
  tags:
    - blog
-   - wechaty
    - study
    - introduction
  image: /assets/2021/10-how-to-save-your-memory-with-technology/bgc.webp
@@ -351,5 +350,9 @@
           G --> | | Z
           H --> | | Z
       ```
+      
+6. **效果**
+
+ ![now](/assets/2021/10-how-to-save-your-memory-with-technology/now.webp)
 
  > 作者: [stefan](https://github.com/stefan-ysh/)，流水线 coder，曾获得学习委员和尊师标兵荣誉称号。
