@@ -350,8 +350,8 @@
           G --> | | Z
           H --> | | Z
       ```
-      
-6. **效果**
+
+7. **效果**
 
  ![now](/assets/2021/10-how-to-save-your-memory-with-technology/now.webp)
 
