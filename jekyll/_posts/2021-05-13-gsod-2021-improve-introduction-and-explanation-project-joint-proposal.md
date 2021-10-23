@@ -76,7 +76,7 @@ The explanation section of wechaty.js.org serves the following purposes:
 
 - Describe other concrete pieces of information which have not been covered in other areas of the documentation in an easy manner understood by all types of users esp. non-technical users.
 - Deepen and enrich users’ knowledge of Wechaty by providing alternative/contrary viewpoints and approaches than what has been presented in other sections of the documentation.
-- Educate users and arouse their interest by showing the technical, non-technical and business side of WeChaty which have not been covered in other sections of the documentation.
+- Educate users and arouse their interest by showing the technical, non-technical and business side of Wechaty which have not been covered in other sections of the documentation.
 
 ## Project approach
 
@@ -158,7 +158,7 @@ It is proposed that the following should be used as guide when writing the Expla
 
 - DevOps CI/CD
 
-  We can explain how WeChaty uses and benefits from DevOps and CI/CD processes. Some information is needed from the SMEs to expound this.
+  We can explain how Wechaty uses and benefits from DevOps and CI/CD processes. Some information is needed from the SMEs to expound this.
 
 - Software Development Kit (SDK)
 
