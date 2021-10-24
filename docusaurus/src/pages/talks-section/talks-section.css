@@ -6,7 +6,7 @@
 }
 
 #talksSectionWrapper {
-  background-color: honeydew;
+  background-color: var(--ifm-hero-background-color);
   border-radius: 150px;
   padding: 30px 0px 60px 0px;
   display: -webkit-box;
@@ -25,7 +25,7 @@
 #talksRectangle {
   width: 80px;
   height: 20px;
-  background-color: #d2ffca;
+  background-color: var(--ifm-footer-background-color);
   border-radius: 50px;
   position: relative;
   top: 55px;
@@ -39,7 +39,7 @@
   font-size: 35px;
   font-weight: 800;
   line-height: 60px;
-  color: black;
+  color: var(--ifm-hero-text-color);
   letter-spacing: 4px;
   position: relative;
   z-index: 1;
@@ -59,7 +59,7 @@
 }
 
 #talksWrapper {
-  background-color: white;
+  background-color: var(--ifm-background-color);
   border-radius: 70px 70px 70px;
   padding: 20px 20px 0px 40px;
 }
@@ -94,7 +94,7 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 25px;
-  color: black;
+  color: var(--ifm-hero-text-color);
   overflow-y: hidden;
 }
 
@@ -106,7 +106,7 @@
   font-size: 22px;
   font-weight: 700;
   line-height: 35px;
-  color: black;
+  color: var(--ifm-hero-text-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,7 +125,7 @@
   font-size: 15px;
   font-weight: 500;
   line-height: 24px;
-  color: black;
+  color: var(--ifm-hero-text-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,7 +144,7 @@
   font-size: 16px;
   font-weight: 800;
   line-height: normal;
-  color: black;
+  color: var(--ifm-hero-text-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,7 +168,7 @@
 }
 
 #readMoreLink:active {
-  color: black;
+  color: var(--ifm-hero-text-color);
 }
 
 @media only screen and (max-width: 700px) {
