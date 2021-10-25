@@ -9,7 +9,6 @@ tags:
   - paddle
   - machine-learning
   - competition
-  - sticky
   - news
   - game
 ---
