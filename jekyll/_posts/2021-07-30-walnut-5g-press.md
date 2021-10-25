@@ -10,7 +10,6 @@ tags:
   - wechaty-puppet-5g
   - ospp-2021
   - china-unicom
-  - news
 ---
 
 > 近期 硬核桃社区开展了一场面向在校大学生的开发者活动。
