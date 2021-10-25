@@ -4,13 +4,13 @@ author: chinggg
 categories:
   - project
   - ospp
-image: /assets/2021/09-ospp-final-cli/terminal-wechaty.webp
+image: /assets/2021/09-ospp-final-term-cli/terminal-wechaty.webp
 tags:
   - summer-of-wechaty
   - summer-2021
   - ospp
   - ospp-2021
-  - final
+  - final-term
   - ecosystem
 ---
 
@@ -59,7 +59,7 @@ tags:
   - 开源生态的完善：首先是开源协作的规范，开发过程通过有意义的 commit message 得以保存，在 issue 和 PR 中使用英语讨论技术细节也能让世界各地的开发者方便地检索和交流。为了提高开发效率，在 Wechaty 社区通用的一套 CI/CD 流程，并采用了 ESM 作为模块管理方式。为便于使用，除了 npm 安装外，还提供了 Docker 构建方式。
 
   部分效果图如下：
-  ![demo](/assets/2021/09-ospp-final-cli/final-demo.webp)
+  ![demo](/assets/2021/09-ospp-final-term-cli/final-demo.webp)
 
 - 遇到的问题及解决方案：
 
@@ -87,7 +87,7 @@ tags:
 
 ### 项目PPT
 
-{% include iframe.html src="/assets/2021/09-ospp-final-cli/final-slides.pdf" %}
+{% include iframe.html src="/assets/2021/09-ospp-final-term-cli/final-slides.pdf" %}
 
 ## 联系我们
 
