@@ -37,6 +37,7 @@ Wechaty 作为中国最大的聊天机器人开源项目，合计发布了9个�
 {% include iframe.html src="https://www.youtube.com/watch?v=xqJN3NmGukg"%}
 
 ### Agendas议程
+
 - [0:00:00](https://youtu.be/xqJN3NmGukg) 0.会议开始
 - [0:08:30](https://youtu.be/xqJN3NmGukg?t=510) 1.介绍会议议程
 - [0:10:30](https://youtu.be/xqJN3NmGukg?t=630) 2.陈婧：开发基于 Wechaty 实现微俱乐部会员&活动管理的微信小程序
@@ -65,7 +66,9 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 学生开发者：陈婧，华东理工大学本科生（1017137803@qq.com）
 - 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/78>
 - 期末报告：<https://wechaty.js.org/2021/09/29/final-term-club-managment/>
+
 #### 展示视频
+
 {% include iframe.html src="https://www.youtube.com/watch?v=eSgaD32njVw" %}
 
 ### 基于 Itchat 为 Python Wechaty 实现社区首个 Python 语言的本地 Puppet
@@ -74,7 +77,9 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 学生开发者：肖良玉，杭州电子科技大学本科生（x@lyleshaw.com）
 - 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/75>
 - 期末报告：<https://wechaty.js.org/2021/10/05/ospp-final-term-wechaty-itchat-puppet/>
+
 #### 展示视频
+
 {% include iframe.html src="https://www.youtube.com/watch?v=SKhgnRaljzk" %}
 
 ### 开发支持电信运营商 5G Chatbot / RCS 的 Wechaty 接入 Puppet 模块
@@ -83,7 +88,9 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 学生开发者：张瑞宁，长沙理工大学本科生（3134191406@qq.com）；邵琦（shaoqichn@qq.com）
 - 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/74>
 - 期末报告：<https://wechaty.js.org/2021/10/07/ospp-final-term-5g-chatbot-puppet/>
+
 #### 展示视频
+
 {% include iframe.html src="https://www.youtube.com/watch?v=cQydTnaym7Y" %}
 
 ### 基于开放API封装 Wechaty 接口下的飞书聊天机器人
@@ -92,7 +99,9 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 学生开发者：马田慧（tianhuima01@gmail.com）
 - 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/38>
 - 期末报告：<https://wechaty.js.org/2021/09/29/ospp-final-term-wechaty-puppet-lark/>
+
 #### 展示视频
+
 {% include iframe.html src="https://youtu.be/-HOF0LV1d54" %}
 
 ### 基于 Blessed 的 Wechaty 命令行文本客户端软件（仿IRC）
@@ -101,7 +110,9 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 学生开发者：刘靖，上海大学本科生（liuchinggg@gmail.com）
 - 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/80>
 - 期末报告：<https://wechaty.js.org/2021/09/30/ospp-final-cli/>
+
 #### 展示视频
+
 {% include iframe.html src="https://youtu.be/PssH9epe0tU" %}
 
 ### 基于 Matrix AppService Wechaty 项目的用户、群与消息等基础功能的完善
@@ -110,7 +121,9 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 学生开发者：林宇靖, 上海海洋大学本科生（545641826@qq.com）；张瑞宁, 长沙理工大学本科生（3134191406@qq.com）
 - 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/59>
 - 期末报告：<https://wechaty.js.org/2021/09/28/ospp-final-term-matrix-wechaty/>
+
 #### 展示视频
+
 {% include iframe.html src="https://www.youtube.com/watch?v=3j3BGRnoVtE" %}
 
 ### 开发支持 QQ 聊天软件的 Wechaty Puppet Provider 模块
@@ -119,7 +132,9 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 学生开发者：anaivebird（20210240029@fudan.edu.cn）
 - 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/81>
 - 期末报告：<https://wechaty.js.org/2021/10/06/ospp-final-term-qq-puppet/>
+
 #### 展示视频
+
 {% include iframe.html src="https://www.youtube.com/watch?v=Z2IIPe0FLA4" %}
 
 ### 基于 Wechaty Puppet Official Account 项目的用户与消息等基础功能的完善
@@ -128,7 +143,9 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 学生开发者：左雁茹，中国科学技术大学研究生（zuoyanru@mail.ustc.edu.cn）
 - 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/82>
 - 期末报告：<https://wechaty.js.org/2021/10/03/ospp-final-term-wechaty-puppet-oa/>
+
 #### 展示视频
+
 {% include iframe.html src="https://www.youtube.com/watch?v=ySxpkKjv018" %}
 
 ### 基于Wechaty 开发开源的二师兄社群逗乐机器人
@@ -137,7 +154,9 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 学生开发者：井维嘉，海南大学（hbsjzjwj@163.com）
 - 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/83>
 - 期末报告：<https://wechaty.js.org/2021/10/06/ospp-final-wechaty-piggy-bro/>
+
 #### 展示视频
+
 {% include iframe.html src="https://youtu.be/Na9pGdf_6oY" %}
 
 ## 欢迎正在阅读的你参与其中
@@ -148,4 +167,3 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 时刻跟进Wechaty SoC项目的每周例行更新Issue，并直接与相关负责导师和学生开发者取得联系，和他们交流相关进展。
 - 在 Wechaty 开发者群内，为学生开发者们的Plan Blog、POC Blog和Finished Blog点赞和提出想法。
 - 直接参与已经完成部分工作的项目开发，为学生开发者们负责的复杂项目添砖加瓦。
-
