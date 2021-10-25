@@ -287,7 +287,7 @@ GitHub: <https://github.com/liang1433223/paddleGAN-wechaty>
 
 GitHub: <https://github.com/kevinfu1717/multimediaChatbot>
 
-## 关于WeChaty
+## 关于Wechaty
 
 Wechaty 是一个开源聊天机器人框架SDK，具有多平台、多语言和多插件的特性，支持Python, Go, Java, Scala, .NET, PHP, Rust 等多语言版本，通过几行代码即可创建一个聊天机器人。经过5年多的发展，现在Wechaty开源社区已拥有数十位Committers，百余位Contributors，并被万名GitHub开发者Star。目前，Wechaty的开发者已遍布全球多个国家和地区，覆盖数万人，是国内活跃的Conversational AI Chatbot 开发者社区。
 

@@ -1,6 +1,10 @@
 {
   "name": "wechaty.js.org",
+<<<<<<< HEAD
   "version": "0.10.24",
+=======
+  "version": "0.10.27",
+>>>>>>> 1fe2e24d157f5e6c0696ea09f6f79f90d6dde785
   "description": "Wechaty Official Website for News, Blogs, Contributor Profiles, and Documentations",
   "private": true,
   "type": "module",

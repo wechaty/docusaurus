@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+#body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#developersPortalHeadlineWrapper {
+  margin-top: 150px;
+  margin-bottom: 69px;
+  left: 10%;
+  position: relative;
+}
+
+#developersPortalRectangle {
+  width: 200px;
+  height: 20px;
+  background-color: var(--ifm-footer-background-color);
+  border-radius: 50px;
+  position: absolute;
+  bottom: 80px;
+}
+
+#developersPortalHeadline {
+  height: 90px;
+  width: 500px;
+  font-family: "Montserrat";
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 60px;
+  color: var(--ifm-hero-text-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  letter-spacing: 4px;
+  letter-spacing: 0.1em;
+  bottom: 60px;
+}
+
+#developersPortalSectionWrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  margin-top: -100px;
+  margin-bottom: 80px;
+}
+
+#tutorialsWrapper {
+  position: relative;
+}
+
+#tutorialsContentWrapper {
+  background-color: var(--ifm-hero-background-color);
+  border-radius: 50px;
+  padding: 40px 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 60px;
+}
+
+#tutorialsHeadline {
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 45px;
+  color: var(--ifm-hero-text-color);
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-bottom: 11px;
+  letter-spacing: 2.8px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+#developersPortalContent {
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ifm-hero-text-color);
+  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  width: 325px;
+}
+
+#howToGuidesTakeMeThereLinkButton {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#refrencesTakeMeThereLinkButton {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#takeMeThereLink {
+  width: 100%;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  color: var(--ifm-hero-text-color);
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#takeMeThereLink:hover {
+  color: #44a838;
+}
+
+#takeMeThereLink:active {
+  color: var(--ifm-hero-text-color);
+}
+
+#tutorialsImage {
+  width: 300px;
+  height: 200px;
+}
+
+#howToGuidesContentWrapper {
+  background-color: var(--ifm-hero-background-color);
+  border-radius: 50px;
+  padding: 40px 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#howToGuidesImage {
+  width: 300px;
+  height: 200px;
+}
+
+#howToGuidesHeadline {
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 75px;
+  color: var(--ifm-hero-text-color);
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: -2px;
+  letter-spacing: 2.8px;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#refrencesContentWrapper {
+  background-color: var(--ifm-hero-background-color);
+  border-radius: 50px;
+  padding: 40px 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 60px;
+}
+
+#referencesImage {
+  width: 300px;
+  height: 200px;
+}
+
+#refrencesHeadline {
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 45px;
+  color: var(--ifm-hero-text-color);
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  letter-spacing: 2.8px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 700px) {
+ 
+  #developersPortalHeadlineWrapper {
+    margin-top: 110px;
+    margin-bottom: 30px;
+    left: 10%;
+  }
+
+  #developersPortalSectionWrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  #developersPortalRectangle {
+    width: 120px;
+    height: 12px;
+    bottom: 95px;
+  }
+
+  #developersPortalHeadline {
+    height: 100px;
+    font-size: 24px;
+  }
+
+  #tutorialsHeadline {
+    font-size: 20px;
+  }
+
+  #tutorialsContentWrapper {
+    padding: 50px 40px 30px;
+    margin: 0px 6% 6% 6%;
+    border-radius: 60px;
+  }
+
+  #developersPortalContent {
+    font-size: 12px;
+    line-height: 20px;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  #takeMeThereLink {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 10px;
+  }
+
+  #howToGuidesTakeMeThereLinkButton {
+    margin-top: 0px;
+    padding-bottom: 25px;
+  }
+
+  #refrencesTakeMeThereLinkButton {
+    margin-top: 0px;
+    padding-bottom: 25px;
+  }
+
+  #tutorialsImage {
+    width: 250px;
+    height: 150px;
+  }
+
+  #howToGuidesContentWrapper {
+    padding: 40px 40px 0px;
+    margin: 0px 6% 6% 6%;
+    border-radius: 60px;
+  }
+
+  #howToGuidesImage {
+    width: 250px;
+    height: 150px;
+  }
+
+  #howToGuidesHeadline {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+
+  #refrencesContentWrapper {
+    padding: 40px 40px 0px;
+    margin: 0px 6% 6% 6%;
+    border-radius: 60px;
+  }
+
+  #referencesImage {
+    width: 250px;
+    height: 150px;
+  }
+
+  #refrencesHeadline {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
+  
+  #developersPortalHeadlineWrapper {
+    margin-top: 100px;
+    margin-bottom: 70px;
+  }
+
+  #developersPortalRectangle {
+    width: 160px;
+    height: 18px;
+  }
+
+  #developersPortalHeadline {
+    font-size: 28px;
+  }
+
+  #developersPortalSectionWrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    margin-top: -100px;
+  }
+
+  #developersPortalContent {
+    width: 275px;
+  }
+
+  #tutorialsContentWrapper {
+    padding: 30px 20px 20px;
+    margin-left: 40px;
+  }
+
+  #tutorialsHeadline {
+    font-size: 18px;
+  }
+
+  #developersPortalContent {
+    font-size: 14px;
+  }
+
+  #takeMeThereLink {
+    font-size: 14px;
+  }
+
+  #howToGuidesTakeMeThereLinkButton {
+    margin-top: 15px;
+  }
+
+  #refrencesTakeMeThereLinkButton {
+    margin-top: 15px;
+  }
+
+  #tutorialsImage {
+    width: 250px;
+    height: 150px;
+  }
+
+  #howToGuidesContentWrapper {
+    padding: 30px 20px 20px;
+    margin-left: 10px;
+  }
+
+  #howToGuidesImage {
+    width: 250px;
+    height: 150px;
+  }
+
+  #howToGuidesHeadline {
+    font-size: 18px;
+  }
+
+  #refrencesContentWrapper {
+    padding: 30px 20px 20px;
+    margin-right: 40px;
+    margin-left: 10px;
+  }
+
+  #referencesImage {
+    width: 250px;
+    height: 150px;
+  }
+
+  #refrencesHeadline {
+    font-size: 18px;
+  }
+}
