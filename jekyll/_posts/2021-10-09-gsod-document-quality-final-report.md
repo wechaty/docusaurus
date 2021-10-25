@@ -9,6 +9,7 @@ tags:
   - docs
   - volunteer
   - project
+  - news
 image: /assets/2021/10-gsod-document-quality-final-report/background.webp
 ---
 
