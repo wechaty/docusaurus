@@ -8,6 +8,7 @@ tags:
   - guide
   - ospp
   - ospp-admin
+  - news
 image: /assets/2021/06-the-wechaty-way/teaser.webp
 ---
 

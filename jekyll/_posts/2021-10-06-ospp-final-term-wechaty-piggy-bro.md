@@ -12,7 +12,7 @@ tags:
   - ecosystem
   - ospp
   - ospp-2021
-  - final
+  - final-term
 ---
 
 ## 暑期2021

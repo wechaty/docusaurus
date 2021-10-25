@@ -10,7 +10,7 @@ tags:
   - summer-2021
   - ospp
   - ospp-2021
-  - final
+  - final-term
   - ecosystem
 ---
 
