@@ -325,7 +325,7 @@ const references = {
     subMenu(puppetProviders),
     subMenu(puppetServices),
     subMenu(specs),
-    'references/deprecations',
+    'references/breaking-changes',
   ]
 }
 
@@ -333,12 +333,9 @@ const explanations = {
   label: 'Explanations',
   items: [
     'explanations/overview',
-    'explanations/conversational',
     'explanations/rpa',
-    'explanations/motivations',
     'explanations/concepts',
     'explanations/architecture',
-    'explanations/lifecycle',
     'explanations/alternatives',
     'explanations/glossary',
     'explanations/devops-toolset',

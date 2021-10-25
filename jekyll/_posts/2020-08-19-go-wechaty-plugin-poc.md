@@ -8,7 +8,7 @@ tags:
   - summer-2020
   - go
   - ecosystem
-image: /assets/2020/go-wechaty-plugin-midterm/2020-08-19-go-wechaty.png
+image: /assets/2020/go-wechaty-plugin-midterm/2020-08-19-go-wechaty.webp
 ---
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。

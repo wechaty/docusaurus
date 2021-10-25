@@ -2,7 +2,7 @@
 title: "行情播报微信机器人"
 author: exctech
 categories: project
-image: /assets/2020/market-wechat-robot/teaser.jpeg
+image: /assets/2020/market-wechat-robot/teaser.webp
 tags:
   - market
   - oracle

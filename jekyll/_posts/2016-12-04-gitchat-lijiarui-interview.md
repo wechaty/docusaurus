@@ -5,7 +5,7 @@ categories: story
 tags:
   - interview
   - news
-image: /assets/2016/gitchat-lijiarui-interview.jpg
+image: /assets/2016/gitchat-lijiarui-interview.webp
 ---
 
 11月24日周四晚8点，GitChat团队开启了来自一位前端女技术工程师李佳芮的问答交流，以下是主持人小冰将交流过程重新整理，记录下了分享者和用户之间对微信机器人的交流精彩片段。

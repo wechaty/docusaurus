@@ -7,7 +7,7 @@ tags:
   - project
   - productivity
   - hospitality
-image: /assets/2020/wechat-roommessage-bot/teaser.png
+image: /assets/2020/wechat-roommessage-bot/teaser.webp
 ---
 
 [![wechaty/wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
@@ -75,13 +75,13 @@ npm run serve
 ## 效果图
 
 - 咨询
-  ![咨询](/assets/2020/wechat-roommessage-bot/query.png)
+  ![咨询](/assets/2020/wechat-roommessage-bot/query.webp)
 
 - 回复
-  ![回复](/assets/2020/wechat-roommessage-bot/answer.png)
+  ![回复](/assets/2020/wechat-roommessage-bot/answer.webp)
 
 - 公告
-  ![公告](/assets/2020/wechat-roommessage-bot/notice.png)
+  ![公告](/assets/2020/wechat-roommessage-bot/notice.webp)
 
 ## 致谢
 

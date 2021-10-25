@@ -6,7 +6,7 @@ tags:
   - serverchen
   - shell
   - utility
-image: /assets/2020/kotlin-wechaty-simple-shell/home.jpeg
+image: /assets/2020/kotlin-wechaty-simple-shell/home.webp
 ---
 
 这个项目是基于SpringBoot和SpringMVC的，语言是kotlin，构建工具是maven。
@@ -152,4 +152,4 @@ java -jar wechat-bot-1.0.jar --wechat-bot.token=YOUR_TOKEN  --server-chan.token=
 
 ## 例子
 
-![example](/assets/2020/kotlin-wechaty-simple-shell/example.png)
+![example](/assets/2020/kotlin-wechaty-simple-shell/example.webp)
