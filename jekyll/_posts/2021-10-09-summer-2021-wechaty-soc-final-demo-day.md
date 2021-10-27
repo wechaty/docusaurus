@@ -167,3 +167,4 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 时刻跟进Wechaty SoC项目的每周例行更新Issue，并直接与相关负责导师和学生开发者取得联系，和他们交流相关进展。
 - 在 Wechaty 开发者群内，为学生开发者们的Plan Blog、POC Blog和Finished Blog点赞和提出想法。
 - 直接参与已经完成部分工作的项目开发，为学生开发者们负责的复杂项目添砖加瓦。
+- [了解更多](https://github.com/wechaty/summer)
