@@ -7,20 +7,20 @@ import TabItem from '@theme/TabItem'
 
 ## Messages
 
-Automation of messages can be done easily  with wechaty onMessage function. This guide will give you a step by step overview of how to respond to self messages or messages in a room.
+Automation of messages can be done easily with wechaty onMessage function. This guide will give you a step by step overview of how to respond to self messages or messages in a room.
 
 ## Prerequisites
 
 * Your system must have [Node.js](https://nodejs.org/en/download/package-manager/) installed (version >= 16).
 * Your system must have [Wechaty](https://github.com/wechaty/wechaty) (version >= 0.40).
 * You need to be familiar with the basics of Wechaty platform. If not, follow our [tutorials](https://wechaty.js.org/docs/tutorials/) section.
-* You need to have at least a minimal application ready to work, follow one of our [Example/Friend-Bot](https://wechaty.js.org/docs/examples/advanced/friend-bot/).
+* You need to have at least a minimal application ready to work, follow one of our [Example/Ding-dong-bot](https://github.com/wechaty/getting-started/blob/main/examples/ding-dong-bot.js).
 
 ### If you don't know where to start from
 
-See [Running our first ding-dong bot](https://wechaty.js.org/docs/getting-started/quick-start).
+See [Running our first ding-dong bot](https://wechaty.js.org/docs/getting-started/quick-start/#run-ding-dong-bot).
 
-The below function needs a basic script that can help run the bot. The basic script starts by importing the code from [Github/Friend-Bot](https://github.com/wechaty/wechaty-getting-started/blob/main/examples/advanced/friend-bot.js).Integrate the below code, for this action to work.
+There are various message type such as `MessageType.Text`, `MessageType.Image`, `MessageType.Video`, `MessageType.Url`, `MessageType.Emotions`, `MessageType.Attachment`. Some of the function are mentioned below and require a basic script that can help run the bot. The basic script starts by importing the code from [Github/Ding-dong-bot](https://github.com/wechaty/getting-started/blob/main/examples/ding-dong-bot.js).Integrate the below code, for this action to work.
 
 ## Mention
 
