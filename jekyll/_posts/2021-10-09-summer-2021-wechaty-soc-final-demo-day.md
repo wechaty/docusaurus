@@ -65,7 +65,7 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 导师：鲁玉超 物联网行业产品经理、微信小程序群组大师开发者（atorber@163.com）
 - 学生开发者：陈婧，华东理工大学本科生（1017137803@qq.com）
 - 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/78>
-- 期末报告：<https://wechaty.js.org/2021/09/29/final-term-club-managment/>
+- [OSPP 2021-结项报告-开发基于Wechaty实现微俱乐部会员&活动管理的微信小程序](https://wechaty.js.org/2021/09/29/final-term-club-managment)
 
 #### 展示视频
 
@@ -76,7 +76,7 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 导师：吴京京 Python Wechaty creator，Wechaty committer （wjmcater@gmail.com）；李卓桓 Wechaty creator，Python Wechaty maintainer，Tencent TVP of Chatbot （zixia@zixia.net）
 - 学生开发者：肖良玉，杭州电子科技大学本科生（x@lyleshaw.com）
 - 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/75>
-- 期末报告：<https://wechaty.js.org/2021/10/05/ospp-final-term-wechaty-itchat-puppet/>
+- [OSPP 2021-结项报告-基于Itchat为Python Wechaty实现社区首个Python语言的本地Puppet](https://wechaty.js.org/2021/10/05/ospp-final-term-wechaty-itchat-puppet/)
 
 #### 展示视频
 
@@ -87,7 +87,7 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 导师：康嘉 硬核桃社区PM （sj-kangj@dimpt.com）；李佳芮 Wechaty co-creator，Founder & CEO of Juzi.BOT （rui@chatie.io）
 - 学生开发者：张瑞宁，长沙理工大学本科生（3134191406@qq.com）；邵琦（shaoqichn@qq.com）
 - 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/74>
-- 期末报告：<https://wechaty.js.org/2021/10/07/ospp-final-term-5g-chatbot-puppet/>
+- [OSPP 2021-结项报告-开发支持电信运营商 5G Chatbot / RCS 的 Wechaty 接入 Puppet 模块](https://wechaty.js.org/2021/10/07/ospp-final-term-5g-chatbot-puppet/)
 
 #### 展示视频
 
@@ -98,7 +98,7 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 导师： 范蕊 飞书Puppet作者 （froxanne1024@gmail.com）
 - 学生开发者：马田慧（tianhuima01@gmail.com）
 - 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/38>
-- 期末报告：<https://wechaty.js.org/2021/09/29/ospp-final-term-wechaty-puppet-lark/>
+- [OSPP 2021-结项报告-基于开放 API 封装 Wechaty 接口下的飞书聊天机器人](https://wechaty.js.org/2021/09/29/ospp-final-term-wechaty-puppet-lark/)
 
 #### 展示视频
 
@@ -109,7 +109,7 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 导师：李卓桓 Creator of Wechaty，Tencent TVP of Chatbot （zixia@zixia.net）
 - 学生开发者：刘靖，上海大学本科生（liuchinggg@gmail.com）
 - 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/80>
-- 期末报告：<https://wechaty.js.org/2021/09/30/ospp-final-cli/>
+- [OSPP 2021-结项报告-基于 Blessed 的 Wechaty 命令行文本客户端软件](https://wechaty.js.org/2021/09/30/ospp-final-term-cli/)
 
 #### 展示视频
 
@@ -120,7 +120,7 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 导师：yswtrue Wechaty contributor （yswtrue@gmail.com），李卓桓 Creator of Wechaty，Tencent TVP of Chatbot （zixia@zixia.net）
 - 学生开发者：林宇靖, 上海海洋大学本科生（545641826@qq.com）；张瑞宁, 长沙理工大学本科生（3134191406@qq.com）
 - 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/59>
-- 期末报告：<https://wechaty.js.org/2021/09/28/ospp-final-term-matrix-wechaty/>
+- [OSPP 2021-结项报告-基于 Matrix AppService Wechaty 项目的用户、群与消息等基础功能的完善](https://wechaty.js.org/2021/09/28/ospp-final-term-matrix-wechaty/)
 
 #### 展示视频
 
@@ -131,7 +131,7 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 导师：李佳芮 Wechaty co-creator，Founder & CEO of Juzi.BOT （rui@chatie.io）；李卓桓 Creator of Wechaty，Tencent TVP of Chatbot （zixia@zixia.net）
 - 学生开发者：anaivebird（20210240029@fudan.edu.cn）
 - 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/81>
-- 期末报告：<https://wechaty.js.org/2021/10/06/ospp-final-term-qq-puppet/>
+- [OSPP 2021-结项报告-开发支持 QQ 聊天软件的 Wechaty Puppet Provider 模块](https://wechaty.js.org/2021/10/06/ospp-final-term-qq-puppet/)
 
 #### 展示视频
 
@@ -142,7 +142,7 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 导师：吴京京 Python Wechaty creator，Wechaty committer （wjmcater@gmail.com）
 - 学生开发者：左雁茹，中国科学技术大学研究生（zuoyanru@mail.ustc.edu.cn）
 - 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/82>
-- 期末报告：<https://wechaty.js.org/2021/10/03/ospp-final-term-wechaty-puppet-oa/>
+- [OSPP 2021-结项报告-基于 Wechaty Puppet Official Account 项目的用户与消息等基础功能的完善](https://wechaty.js.org/2021/10/03/ospp-final-term-wechaty-puppet-oa/)
 
 #### 展示视频
 
@@ -153,7 +153,7 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 - 导师：王玉丹 Wechaty Contributor，AI Chatbot Wechaty x PaddleHub UP主，Wechaty社区大使 （valeriewyd@gmail.com）；鲁玉超 物联网行业产品经理、微信小程序群组大师开发者 （atorber@163.com）；韩磊 百度飞桨PPDE，飞桨上海领航团团长 （iregisteru@163.com）
 - 学生开发者：井维嘉，海南大学（hbsjzjwj@163.com）
 - 项目介绍：<https://github.com/wechaty/summer-of-wechaty/issues/83>
-- 期末报告：<https://wechaty.js.org/2021/10/06/ospp-final-wechaty-piggy-bro/>
+- [OSPP 2021-结项报告-基于 Wechaty 开发开源的二师兄社群逗乐机器人](https://wechaty.js.org/2021/10/06/ospp-final-term-wechaty-piggy-bro/)
 
 #### 展示视频
 
