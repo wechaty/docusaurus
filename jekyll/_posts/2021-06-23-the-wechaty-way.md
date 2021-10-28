@@ -8,6 +8,7 @@ tags:
   - guide
   - ospp
   - ospp-admin
+  - news
 image: /assets/2021/06-the-wechaty-way/teaser.webp
 ---
 
@@ -38,7 +39,7 @@ Wechaty 社区持续秉承信息开放透明：
 
 - [Gitter](https://gitter.im/wechaty/wechaty)
 - Mailing List：发送邮件给 wechaty@googlegroups.com 即可加入
-- [WeChat Room: WeChaty Developers' Home](https://github.com/wechaty/wechaty#raising_hand-join-us)  
+- [WeChat Room: Wechaty Developers' Home](https://github.com/wechaty/wechaty#raising_hand-join-us)  
 - [Discussion](https://github.com/wechaty/wechaty/discussions)
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/wechaty)
 - [Telegram](https://t.me/wechaty)

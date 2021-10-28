@@ -9,6 +9,7 @@ tags:
   - gsod-2021
   - 2021
   - docs
+  - news
 image: /assets/2021/07-gsod-2021-publish-article/gsodandwechaty.webp
 ---
 
