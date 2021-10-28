@@ -6,7 +6,7 @@ tags:
   - api
   - unofficial
   - news
-image: /assets/2017/dcsan-dashbot.jpg
+image: /assets/2017/dcsan-dashbot.webp
 ---
 
 Recently I was in San Francisco talking to a lot of my friends in the Chatbot community, and realized how the Wechaty community is becoming central to Chatbot development in China.
@@ -61,7 +61,7 @@ There are some [fascinating ideas here for a language to compose bots](https://w
 
 ## Analytics for Bots
 
-![Dennis and Socks](/assets/2017/dcsan-dashbot.jpg)
+![Dennis and Socks](/assets/2017/dcsan-dashbot.webp)
 
 One of those from overseas who works with the Wechaty team is Dennis Yang from [Dashbot.io](https://www.dashbot.io/), one of the leading analytics providers purely for 'bots. The 'bot industry outside of China is at this established stage where the ecosystem is growing enough to have all types of companies from authoring to analytics to AI.
 

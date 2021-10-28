@@ -1,6 +1,6 @@
 {
   "name": "wechaty.js.org",
-  "version": "0.10.15",
+  "version": "0.10.27",
   "description": "Wechaty Official Website for News, Blogs, Contributor Profiles, and Documentations",
   "private": true,
   "type": "module",
@@ -16,7 +16,7 @@
     "lint:fn": "file-name-linter .file-name-linter.json",
     "lint:yml": "true || yamllint jekyll/_data/*.yml",
     "test": "npm-run-all lint test:unit",
-    "test:unit": "tap --node-arg=--loader=ts-node/esm --node-arg=--no-warnings \"src/**/*.spec.ts\" \"tests/**/*.spec.ts\"",
+    "test:unit": "cross-env TAP_TIMEOUT=60 NODE_OPTIONS=\"--no-warnings --loader=ts-node/esm\" tap \"src/**/*.spec.ts\" \"tests/**/*.spec.ts\"",
     "build": "npm-run-all build:docusaurus build:jekyll",
     "build:jekyll": "cd jekyll && make build",
     "build:docusaurus": "cd docusaurus && npm run build"
@@ -63,7 +63,7 @@
     "node-fetch": "^2.6.1",
     "npm-run-all": "^4.1.5",
     "probe-image-size": "^7.2.1",
-    "tstest": "^0.5.16",
+    "tstest": "^0.7.3",
     "typescript": "^4.4.3",
     "uuid": "^8.3.2",
     "yaml": "^1.10.2",

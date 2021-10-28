@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+#body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#talksSectionWrapper {
+  background-color: var(--ifm-hero-background-color);
+  border-radius: 150px;
+  padding: 30px 0px 60px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 90%;
+  margin-bottom: 80px;
+  margin-top: 50px;
+  margin-left: 5%;
+}
+
+#talksRectangle {
+  width: 80px;
+  height: 20px;
+  background-color: var(--ifm-footer-background-color);
+  border-radius: 50px;
+  position: relative;
+  top: 55px;
+  left: 10%;
+}
+
+#talksHeadline {
+  height: 90px;
+  width: 140px;
+  font-family: "Montserrat";
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 60px;
+  color: var(--ifm-hero-text-color);
+  letter-spacing: 4px;
+  position: relative;
+  z-index: 1;
+  left: 10%;
+}
+
+#talksBothWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+#talksWrapper {
+  background-color: var(--ifm-background-color);
+  border-radius: 70px 70px 70px;
+  padding: 20px 20px 0px 40px;
+}
+
+#talksUpperWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+#talksImage {
+  width: 275px;
+  height: 160px;
+  margin-top: 5px;
+  margin-right: 25px;
+  border-radius: 10px;
+}
+
+#talksDetail {
+  height: 120px;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  color: var(--ifm-hero-text-color);
+  overflow-y: hidden;
+}
+
+#talksContentHeadline {
+  overflow-y: hidden;
+  height: 80px;
+  width: 430px;
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 35px;
+  color: var(--ifm-hero-text-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  letter-spacing: 2.2px;
+}
+
+#talksContent {
+  height: 150px;
+  width: 430px;
+  top: -10px;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--ifm-hero-text-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: justify;
+  position: relative;
+  letter-spacing: 2px;
+}
+
+#readMoreLink {
+  width: 95%;
+  height: 20px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: normal;
+  color: var(--ifm-hero-text-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  letter-spacing: 2px;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+  cursor: pointer;
+  top: -15px;
+  text-decoration: none;
+}
+
+#readMoreLink:hover {
+  color: #44a838;
+}
+
+#readMoreLink:active {
+  color: var(--ifm-hero-text-color);
+}
+
+@media only screen and (max-width: 700px) {
+  
+  #talksSectionWrapper {
+    margin: -30px 0 80px 5%;
+    border-radius: 60px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+
+  #talksRectangle {
+    width: 60px;
+    height: 15px;
+    top: 45px;
+    left: 10%;
+  }
+
+  #talksHeadline {
+    height: 70px;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  #talksBothWrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: -30px;
+  }
+
+  #talksWrapper {
+    margin: 5% 5% 1%;
+    border-radius: 60px;
+  }
+
+  #talksImage {
+    width: 180px;
+    height: 100px;
+    margin-top: 20px;
+  }
+
+  #talksDetail {
+    margin-top: 15px;
+    height: 110px;
+    width: 180px;
+    font-size: 10px;
+    overflow-y: hidden;
+    line-height: 15px;
+  }
+
+  #talksContentHeadline {
+    font-size: 15px;
+    line-height: 30px;
+    width: 100%;
+  }
+
+  #talksContent {
+    height: 200px;
+    width: 95%;
+    font-size: 12px;
+    line-height: 20px;
+    top: -30px;
+  }
+
+  #readMoreLink {
+    font-size: 12px;
+    top: -60px;
+    line-height: 10px;
+    margin-bottom: -40px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
+  
+ #talksSectionWrapper {
+    margin: -30px 0 80px 5%;
+    border-radius: 80px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+
+  #talksRectangle {
+    width: 60px;
+    height: 15px;
+    top: 45px;
+    left: 10%;
+  }
+
+  #talksHeadline {
+    height: 70px;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  #talksWrapper {
+    padding: 10px 0px 0px 20px;
+    border-radius: 50px;
+  }
+
+  #talksImage {
+    margin-top: 3%;
+    width: 200px;
+    height: 120px;
+  }
+
+  #talksDetail {
+    font-size: 15px;
+    overflow-y: hidden;
+    margin-top: 10px;
+  }
+
+  #talksContentHeadline {
+    height: 60px;
+    width: 360px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  #talksContent {
+    height: 160px;
+    width: 350px;
+    font-size: 12px;
+  }
+
+  #readMoreLink {
+    font-size: 14px;
+  }
+}

@@ -7,6 +7,7 @@ tags:
   - google
   - gdg
   - news
+  - sticky
 image: /assets/2021/08-gdg-community-talk-google-season-of-docs/gdg-community-talk-gsod-wechaty.webp
 ---
 

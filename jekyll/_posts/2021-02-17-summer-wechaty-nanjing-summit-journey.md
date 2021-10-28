@@ -7,7 +7,7 @@ tags:
   - summer-of-wechaty
   - open-source
   - talk
-image: /assets/2021/02-summer-wechaty-nanjing-summit-journey/front.jpg
+image: /assets/2021/02-summer-wechaty-nanjing-summit-journey/front.webp
 ---
 
 > 写在前面：本来此篇博文应该在去年完成，由于其它事情耽搁一直拖延到现在。
