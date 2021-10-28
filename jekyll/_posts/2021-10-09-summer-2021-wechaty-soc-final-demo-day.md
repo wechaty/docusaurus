@@ -71,6 +71,10 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 
 {% include iframe.html src="https://www.youtube.com/watch?v=eSgaD32njVw" %}
 
+#### Live Demo 视频
+
+{% include iframe.html src="https://www.youtube.com/watch?v=5LZ08re5YR8" %}
+
 ### 基于 Itchat 为 Python Wechaty 实现社区首个 Python 语言的本地 Puppet
 
 - 导师：吴京京 Python Wechaty creator，Wechaty committer （wjmcater@gmail.com）；李卓桓 Wechaty creator，Python Wechaty maintainer，Tencent TVP of Chatbot （zixia@zixia.net）
@@ -81,6 +85,10 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 #### 展示视频
 
 {% include iframe.html src="https://www.youtube.com/watch?v=SKhgnRaljzk" %}
+
+#### Live Demo 视频
+
+{% include iframe.html src="https://www.youtube.com/watch?v=fGjEd5O97lQ" %}
 
 ### 开发支持电信运营商 5G Chatbot / RCS 的 Wechaty 接入 Puppet 模块
 
@@ -93,6 +101,10 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 
 {% include iframe.html src="https://www.youtube.com/watch?v=cQydTnaym7Y" %}
 
+#### Live Demo 视频
+
+{% include iframe.html src="https://www.youtube.com/watch?v=4-0lW0kvelE" %}
+
 ### 基于开放API封装 Wechaty 接口下的飞书聊天机器人
 
 - 导师： 范蕊 飞书Puppet作者 （froxanne1024@gmail.com）
@@ -103,6 +115,10 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 #### 展示视频
 
 {% include iframe.html src="https://youtu.be/-HOF0LV1d54" %}
+
+#### Live Demo 视频
+
+{% include iframe.html src="https://youtu.be/lH3giTpdOtM" %}
 
 ### 基于 Blessed 的 Wechaty 命令行文本客户端软件（仿IRC）
 
@@ -115,6 +131,10 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 
 {% include iframe.html src="https://youtu.be/PssH9epe0tU" %}
 
+#### Live Demo 视频
+
+{% include iframe.html src="https://youtu.be/D5QbX183kb8" %}
+
 ### 基于 Matrix AppService Wechaty 项目的用户、群与消息等基础功能的完善
 
 - 导师：yswtrue Wechaty contributor （yswtrue@gmail.com），李卓桓 Creator of Wechaty，Tencent TVP of Chatbot （zixia@zixia.net）
@@ -125,6 +145,10 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 #### 展示视频
 
 {% include iframe.html src="https://www.youtube.com/watch?v=3j3BGRnoVtE" %}
+
+#### Live Demo 视频
+
+{% include iframe.html src="https://www.youtube.com/watch?v=qtbExkN0uoI" %}
 
 ### 开发支持 QQ 聊天软件的 Wechaty Puppet Provider 模块
 
@@ -137,6 +161,10 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 
 {% include iframe.html src="https://www.youtube.com/watch?v=Z2IIPe0FLA4" %}
 
+#### Live Demo 视频
+
+{% include iframe.html src="https://www.youtube.com/watch?v=TbIgFhSWVxI" %}
+
 ### 基于 Wechaty Puppet Official Account 项目的用户与消息等基础功能的完善
 
 - 导师：吴京京 Python Wechaty creator，Wechaty committer （wjmcater@gmail.com）
@@ -148,6 +176,10 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 
 {% include iframe.html src="https://www.youtube.com/watch?v=ySxpkKjv018" %}
 
+#### Live Demo 视频
+
+{% include iframe.html src="https://www.youtube.com/watch?v=iVyutBZMZRE" %}
+
 ### 基于Wechaty 开发开源的二师兄社群逗乐机器人
 
 - 导师：王玉丹 Wechaty Contributor，AI Chatbot Wechaty x PaddleHub UP主，Wechaty社区大使 （valeriewyd@gmail.com）；鲁玉超 物联网行业产品经理、微信小程序群组大师开发者 （atorber@163.com）；韩磊 百度飞桨PPDE，飞桨上海领航团团长 （iregisteru@163.com）
@@ -158,6 +190,10 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 #### 展示视频
 
 {% include iframe.html src="https://youtu.be/Na9pGdf_6oY" %}
+
+#### Live Demo 视频
+
+{% include iframe.html src="https://youtu.be/51EwCNB_Y90" %}
 
 ## 欢迎正在阅读的你参与其中
 
