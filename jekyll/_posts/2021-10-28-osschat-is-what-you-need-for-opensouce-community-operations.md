@@ -9,7 +9,7 @@ tags:
   - chatopera
   - github
   - utility
-image: /assets/2021/10-osschat-is-what-you-need/cover.webp
+image: /assets/2021/10-osschat-is-what-you-need-for-opensouce-community-operations/cover.webp
 ---
 
 大家好，我是[春松客服开源社区首席运营](http://github.com/chatopera/cskefu)，我们常常发现，微信群，尤其是人多的时候，超过 30 人，就变成了不能“谈事情”的地方，**很多想法匆匆而过**。一些是非常值得追踪下去的想法，背后有一个很有必要做的任务，可是微信群，或者在微信上，我们不专注。
@@ -26,7 +26,7 @@ image: /assets/2021/10-osschat-is-what-you-need/cover.webp
 
 另外一个问题是，**用户不喜欢开工单**。我们过着快节奏的生活，每个事情都在匆匆之间，Everything is in a rush. 并不是每个事情都值得开工单，有的时候就是闲聊，而当一个任务浮现，我们就需要一个工单，一个有状态有 Owner 的记录，可以流转、委派、跟踪、评论等等。工单意义重大，工单是一个承诺，工单是一个明确的需要输出的工作清单。我们可以容许工单开始写的不怎么样，但随后，我们就持续的跟进，这是工单的奇妙之处。以前我用 Wunderlist，现在使用微软 To-do，有了一个记录，执行力一下子就提升了。但是，在微信群，我们聊的热火朝天，口干舌燥，待到要创建一个任务，就突然艰巨了起来。
 
-![osschat-is-what-you-need 6](/assets/2021/10-osschat-is-what-you-need/screenshot-6.webp)
+![osschat-is-what-you-need 6](/assets/2021/10-osschat-is-what-you-need-for-opensouce-community-operations/screenshot-6.webp)
 
 从打开 GitHub Issue 到粘贴对话，到保存。动作很简单，但是只有少数人做这一步。相信我，只要开出工单，事情就会得到解决，甚至这个工单，后来发现，是一项不值得做的工作，那么这也是一项收获。**一方面，有了工单，对我们工作很有好处；一方面，很少有人去开工单。** 我们有一些惰性，我们甚至从文化上分析这个事情的合理性，多么荒谬。
 
@@ -46,7 +46,7 @@ image: /assets/2021/10-osschat-is-what-you-need/cover.webp
 
 8 年前，扎克伯克说经常的看微信，学习微信的创新，看看人家这劲头，汉语现在是呱呱流利，而现在，你知道吗？ Facebook Messenger 的创新，已经领先了微信一个产品世代！ Messenger 对 AR，Chatbot 等 Metaverse 元宇宙级别的场景做到了相当不错的体验。**微信不创新**，如果你体验了 Messenger 对 Chatbot 的交互的支持，你会和我有同感。
 
-![osschat-is-what-you-need 1](/assets/2021/10-osschat-is-what-you-need/screenshot-1.webp)
+![osschat-is-what-you-need 1](/assets/2021/10-osschat-is-what-you-need-for-opensouce-community-operations/screenshot-1.webp)
 
 **我们就像微信奴隶一样，将数据给了微信，微信挖掘这些价值来榨干我们。**
 
@@ -54,7 +54,7 @@ image: /assets/2021/10-osschat-is-what-you-need/cover.webp
 
 事情不会这样结束，历史的车轮滚滚向前，终于有一天，一些人觉醒了：**拿回我们的数据，我们要创新！**
 
-![osschat-is-what-you-need 2](/assets/2021/10-osschat-is-what-you-need/screenshot-2.webp)
+![osschat-is-what-you-need 2](/assets/2021/10-osschat-is-what-you-need-for-opensouce-community-operations/screenshot-2.webp)
 
 Wechaty，非常酷，使用 RPA 将微信变成了可编程微信，使用代码管理你的联系人、消息和微信群，对，你的，都是你的，中间那个微信是你的。然后是 Chatopera，非常酷，是定制机器人的大脑，做智能问答和对话流程。这样，我们就可以和 GitHub 集成了，让微信群和 Github 工单能自由的同步。
 
@@ -70,11 +70,11 @@ Wechaty，非常酷，使用 RPA 将微信变成了可编程微信，使用代�
 
 好的，继续说工作的事情，这个梦想，可以实现。非常的酷的想法，有点激动，这些目标可以使用 **Wechaty + Chatopera + 微信 + GitHub** 实现，但是工作量比较大，此处省略十万字。
 
-![osschat-is-what-you-need 3](/assets/2021/10-osschat-is-what-you-need/screenshot-3.webp)
+![osschat-is-what-you-need 3](/assets/2021/10-osschat-is-what-you-need-for-opensouce-community-operations/screenshot-3.webp)
 
 在二十多位贡献者的参与下，这个想法终于实现了。
 
-![osschat-is-what-you-need 4](/assets/2021/10-osschat-is-what-you-need/screenshot-4.webp)
+![osschat-is-what-you-need 4](/assets/2021/10-osschat-is-what-you-need-for-opensouce-community-operations/screenshot-4.webp)
 
 [https://github.com/kaiyuanshe/osschat](https://github.com/kaiyuanshe/osschat)
 
@@ -82,7 +82,7 @@ Wechaty，非常酷，使用 RPA 将微信变成了可编程微信，使用代�
 
 自 2020 年 3 月，OSSChat 云服务上线，但是直到 2021 年 10 月 14 日，OSSChat 的自动回复功能，才做好，因为工作量确实比较大。现在我们只需要在微信群里说：以上五条开工单，那么对应的 GitHub Issue 就会开出来发群里。
 
-![osschat-is-what-you-need 5](/assets/2021/10-osschat-is-what-you-need/screenshot-5.webp)
+![osschat-is-what-you-need 5](/assets/2021/10-osschat-is-what-you-need-for-opensouce-community-operations/screenshot-5.webp)
 
 这是我们在春松客服开发者群里的一个对话，一句话，GitHub Issue 就创建了，香不香？激动不激动？羡慕不羡慕？
 
@@ -112,4 +112,4 @@ For visiters come from China who can not visit YouTube.com, this video is also h
 
 {% include iframe.html src="https://youtu.be/qWxDnSaa29s" %}
 
-![osschat-is-what-you-need 7](/assets/2021/10-osschat-is-what-you-need/screenshot-7.webp)
+![osschat-is-what-you-need 7](/assets/2021/10-osschat-is-what-you-need-for-opensouce-community-operations/screenshot-7.webp)
