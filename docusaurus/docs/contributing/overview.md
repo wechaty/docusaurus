@@ -158,13 +158,11 @@ We are passionate about helping Wechaty users make the jump to become contributi
 - [Photo Album](https://photos.google.com/share/AF1QipOWKUfUkjw-VzE0skrjmCwbwIWwuBiI7Li4UCbdXH62n8iH2ITnvDbPTsx4eBl8dw?key=cy1NdWFoUGpXanVmczVHSm84TVg1LXJWeW5HTDhR)： Wechaty's photos
 - [Hall of Fame](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.64c95c3y2l4v): Know people in Wechaty
 
-
 **NOTE:** If you need any help, you can find related information in [Getting Help doc](getting-help.md)
 .
 We are looking forward to work with you. Welcome aboard! ⛵️
 
 We have built Wechaty with pleasure because it can help others. Your help and contributions to Wechaty are very much appreciated by the community.
-
 
 ## Special Thanks
 
