@@ -14,21 +14,21 @@
   font-weight: 800;
   font-size: 35px;
   letter-spacing: 0.1em;
-  color: #000000;
+  color: var(--ifm-hero-text-color);
 }
 
 #voiceOfDevelopersRectangle {
   position: relative;
   width: 250px;
   height: 20px;
-  background-color: #d2ffca;
+  background-color: var(--ifm-footer-background-color);
   border-radius: 50px;
   margin-left: 10%;
   top: 10px;
 }
 
 #voiceOfDevelopersWrapper {
-  background-color: honeydew;
+  background-color: var(--ifm-hero-background-color);
   border-radius: 150px;
   padding: 70px 0px 50px 0px;
   display: -webkit-box;
@@ -65,7 +65,7 @@
   width: 320px;
   height: 320px;
   margin-top: 30px;
-  background: white;
+  background-color: var(--ifm-background-color);
   border-radius: 50px;
   margin-left: 5%;
 }
@@ -80,7 +80,7 @@
   width: 320px;
   height: 320px;
   margin-top: 30px;
-  background: white;
+  background-color: var(--ifm-background-color);
   border-radius: 50px;
 }
 
@@ -94,7 +94,7 @@
   width: 320px;
   height: 320px;
   margin-top: 30px;
-  background: white;
+  background-color: var(--ifm-background-color);
   border-radius: 50px;
   margin-right: 5%;
 }
@@ -158,7 +158,7 @@
   width: 400px;
   height: 50px;
   margin-top: 50px;
-  background: #d2ffca;
+  background-color: var(--ifm-footer-background-color);
   border-radius: 100px;
   border: none;
   bottom: 0;
@@ -171,7 +171,7 @@
   -ms-flex-align: center;
   align-items: center;
   letter-spacing: 2px;
-  color: black;
+  color: var(--ifm-hero-text-color);
   -webkit-transition: color 500ms;
   transition: color 500ms;
   cursor: pointer;
@@ -182,11 +182,11 @@
 }
 
 #ourContributorsButton:active {
-  color: black;
+  color: var(--ifm-hero-text-color);
 }
 @media only screen and (max-width: 700px) {
   #voiceOfDevelopersWrapper {
-    background-color: honeydew;
+    background-color: var(--ifm-hero-background-color);
     border-radius: 50px;
     padding: 30px 0px 30px 0px;
     display: -webkit-box;
