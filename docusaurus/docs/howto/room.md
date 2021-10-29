@@ -41,10 +41,10 @@ npm i wechaty
 Add the dependencies at the head of the `bot.js` file:
 
 ```js
-const { 
+import { 
   Room,
   Wechaty, 
-}           = require('wechaty')
+}           = from 'wechaty'
 ```
 
 ## Creating a Room and adding Contacts
@@ -220,14 +220,341 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
-
 When a new message is received, the onMessage function is called. The sender will be added to a contactList array. A room called ding will be created once ten senders have been registered.
+
+## Remove contact from room
+
+To remove the contacts already added in the room, you can add the following function in your bot.js file.
+
+<Tabs
+  groupId="remove-contact"
+  defaultValue="ts"
+  values={[
+    { label: 'TypeScript',  value: 'ts', },
+    { label: 'JavaScript',  value: 'js', },
+    { label: 'Python',      value: 'py', },
+    { label: 'Go',          value: 'go', },
+    { label: 'Java',        value: 'java', },
+    { label: 'PHP',         value: 'php', },
+    { label: 'Scala',       value: 'scala', },
+    { label: 'C#',          value: 'csharp', },
+    { label: 'Rust',        value: 'rust', },
+  ]
+}>
+
+<TabItem value="ts">
+
+```ts
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="js">
+
+```js
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="py">
+
+```py
+from __future__ import annotations
+from typing import List
+from wechaty import (
+    Wechaty,
+    Contact,
+    Room,
+    Message
+)
+class MyBot(Wechaty):
+    async def on_message(self, msg: Message):
+        room: Room = await msg.room()
+        if room:
+            # func<is_dangerous_words> is to detect whether the content is dangerous
+            if is_dangerous_words(msg.text()):
+                talker: Contact = await msg.talker()
+                room.delete(talker)
+```
+
+</TabItem>
+<TabItem value="go">
+
+```go
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="java">
+
+```java
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="php">
+
+```php
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="scala">
+
+```scala
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="csharp">
+
+```csharp
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="rust">
+
+```rust
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+</Tabs>
+
+## Changing topic of the room
+
+Wechaty allows to change the room topic with ease using a simple function.`topic` accepts a `String` as an argument. You can find the `Room` by either room name (a `String`) or room id (format '12345678910@chatroom')
+
+<Tabs
+  groupId="topic-change"
+  defaultValue="ts"
+  values={[
+    { label: 'TypeScript',  value: 'ts', },
+    { label: 'JavaScript',  value: 'js', },
+    { label: 'Python',      value: 'py', },
+    { label: 'Go',          value: 'go', },
+    { label: 'Java',        value: 'java', },
+    { label: 'PHP',         value: 'php', },
+    { label: 'Scala',       value: 'scala', },
+    { label: 'C#',          value: 'csharp', },
+    { label: 'Rust',        value: 'rust', },
+  ]
+}>
+
+<TabItem value="ts">
+
+```ts
+import {
+  Wechaty,
+  log,
+  Room,
+} from 'wechaty'
+//helper function
+async function changeRoomTopic(room: Room) {
+  log.info("Bot", 'changing room topic for group', await room.topic());
+  const newName ="newName"
+  try {
+    await room.topic(newName);
+    
+  } catch (e) {
+    log.error("Bot", "changeRoomTopic() exception: " + e.stack);
+  }
+  //Option1: by group id
+  //set the targetRoomId
+  const tagetRoomId = '12345678910@chatroom'
+  const targetRoom = await bot.Room.find({id: tagetRoomId})
+  //Option2: by group name
+  // const tagetRoomTopic = 'ceshiqun'
+  // const targetRoom = await bot.Room.find({topic:tagetRoomTopic})
+  if (targetRoom instanceof Room) {
+    await changeRoomTopic(targetRoom);
+  } else {
+    log.info('cannot find room, unable to changeRoomTopic')
+  }
+  
+}
+```
+
+</TabItem>
+<TabItem value="js">
+
+```js
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="py">
+
+```py
+from __future__ import annotations
+from typing import List
+from wechaty import (
+    Wechaty,
+    Room,
+    Message
+)
+class MyBot(Wechaty):
+    async def on_message(self, msg: Message):
+        """change room topic by token"""
+        room: Room = await msg.room()
+        if not room:
+            return
+        text: str = await msg.text()
+        talker: Contact = await msg.talker()
+        keyword = 'new-topic:'
+        if talker.alias() == 'admin' and text.startswith(keyword):
+            new_topic: str = text[len(keyword):]
+            old_topic: str = await room.topic()
+            await room.say(f'ok, I will change old_topic<{old_topic}> to new_topic<{new_topic}>')
+            
+            # change the topic of room
+            await room.topic(new_topic)
+```
+
+</TabItem>
+<TabItem value="go">
+
+```go
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="java">
+
+```java
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="php">
+
+```php
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="scala">
+
+```scala
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="csharp">
+
+```csharp
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="rust">
+
+```rust
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+</Tabs>
+
+## Mention(@) others in the room
+
+To display a welcome message to the new contact in a room, add the following function in the bot.js file:
+
+<Tabs
+  groupId="mention"
+  defaultValue="ts"
+  values={[
+    { label: 'TypeScript',  value: 'ts', },
+    { label: 'JavaScript',  value: 'js', },
+    { label: 'Python',      value: 'py', },
+    { label: 'Go',          value: 'go', },
+    { label: 'Java',        value: 'java', },
+    { label: 'PHP',         value: 'php', },
+    { label: 'Scala',       value: 'scala', },
+    { label: 'C#',          value: 'csharp', },
+    { label: 'Rust',        value: 'rust', },
+  ]
+}>
+<TabItem value="ts">
+
+```ts
+await room.say`Hello, ${contact}`
+```
+
+</TabItem>
+<TabItem value="js">
+
+```js
+await room.say`Hello, ${contact}`
+```
+
+</TabItem>
+<TabItem value="py">
+
+```py
+# TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="go">
+
+```go
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="java">
+
+```java
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="php">
+
+```php
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="scala">
+
+```scala
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="csharp">
+
+```csharp
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="rust">
+
+```rust
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+</Tabs>
 
 ## Run the bot
 
 To run the bot, first you have to **export/set** an environment variable with the type of puppet to use, and then start the bot:
 
-### Linux/macOS
+<Tabs
+  groupId="environment"
+  defaultValue="limc"
+  values={[
+    { label: 'Linux/Mac',  value: 'limc', },
+    { label: 'Windows',  value: 'win', },
+  ]
+}>
+
+<TabItem value="limc">
 
 ```bash
 export WECHATY_LOG=verbose
@@ -237,7 +564,9 @@ export WECHATY_PUPPET=wechaty-puppet-whatsapp
 npm start
 ```
 
-### Windows
+</TabItem>
+
+<TabItem value="win">
 
 ```bash
 set WECHATY_LOG=verbose
@@ -247,13 +576,21 @@ set WECHATY_PUPPET=wechaty-puppet-whatsapp
 npm start
 ```
 
+</TabItem>
+
+</Tabs>
+
 After running the bot, it will generate a QR code for **WeChat** or **WhatsApp** (as per the puppet you have used), scan it with the appropriate app, and the bot will now be connected to the app. You will notice that the bot will create a new room with 10 contacts.
 
 ## Output
 
 The expected result will be:
-![Room output](../../static/img/howto/room/room.png)
+![Room output](../../static/img/howto/room/room.webp)
 
 ## Conclusion
 
 You can apply a similar concept to create a `Room` and add `contacts` to any of your Wechaty bots. You can also add predefined contacts to the contactList array and create a Wechaty room.
+
+## Blog
+
+[Room bot](https://github.com/wechaty/getting-started/blob/main/examples/advanced/room-bot.js)
