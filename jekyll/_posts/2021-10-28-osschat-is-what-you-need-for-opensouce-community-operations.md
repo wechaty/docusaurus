@@ -2,7 +2,6 @@
 title: "微信机器人上线自动回复，OSSChat 助力开源社区运营"
 author: hailiang-wang
 categories:
-  - article
   - project
 tags:
   - osschat
