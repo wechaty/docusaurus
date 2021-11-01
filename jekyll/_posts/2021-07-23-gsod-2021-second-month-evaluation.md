@@ -94,7 +94,7 @@ involving docs and pretty-printing the code have been reviewed by the volunteers
 
 Volunteers believe his work to be 90 % complete
 
-[follow-ups](https://docs.google.com/spreadsheets/d/1QglSl5JuZuVom84Or8yGhHb3_YbRMDBPgccxoMmnBa0/edit#gid=337461526)
+[follow-ups](https://github.com/wechaty/wechaty.js.org/issues/1012)
 
 ### How-to Guides team
 
