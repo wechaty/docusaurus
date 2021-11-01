@@ -122,7 +122,6 @@ async function onMessage (msg: Message) {
   }
 }
 
-
 ```
 
 #### 查询商品

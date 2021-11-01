@@ -209,7 +209,6 @@ import datetime
 
 app = Flask(__name__)
 
-
 # 全局变量
 name = '报时'
 model = r'淦！已经\h点\m分了！你今天学习了吗？'
@@ -249,7 +248,6 @@ def handle(data):
     else:
         return json.dumps({'type': 'null'})
 
-
 @app.route('/message', methods=['GET', 'POST'])
 def message():
     if request.method == 'POST':
@@ -260,7 +258,6 @@ def message():
             if len(roomtopic) >= 2 and roomtopic[0:2] == name:
                 return handle(data)
     return json.dumps({'type':'null'})
-
 
 # 返回当前报时内容
 @app.route('/clock', methods=['GET'])
