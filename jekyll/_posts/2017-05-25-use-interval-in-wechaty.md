@@ -87,9 +87,7 @@ exports = module.exports = async function onMessage (msg) {
         return;
     }
 
-
 }
-
 
 async function sendFriendRequest(room, msg) {
 

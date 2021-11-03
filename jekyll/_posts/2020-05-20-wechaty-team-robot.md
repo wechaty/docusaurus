@@ -146,7 +146,6 @@ const sendTimeMsg = setInterval(() => {
   }
 }, 60000);
 
-
 //查询待发送的任务消息
 exports.taskSendMessage = async function(bot){
     var ret = await api.list()

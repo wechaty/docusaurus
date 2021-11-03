@@ -294,7 +294,6 @@ config/index.js
       ONE:'http://wufazhuce.com/',////ONE的web版网站
       MOJI_HOST:'https://tianqi.moji.com/weather/china/', //中国墨迹天气url
 
-
       //高级功能配置项（非必填项）
       AUTOADDFRIEND:false,//自动加好友功能  默认关闭
       AUTOADDROOM:false,//自动拉群功能 默认关闭

@@ -93,7 +93,6 @@ class MyBot(RobotBase):
         }
         return return_msg
 
-
 if __name__ == '__main__':
     # init
     a_bot = MyBot(name='test')
@@ -487,7 +486,6 @@ class WebClient(object):
             'message',
             msg_to_send,
         )
-
 
 a_webgui = WebClient(
     config_path=os.path.join(os.path.dirname(__file__), '../config.json')
