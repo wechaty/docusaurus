@@ -62,7 +62,6 @@ var PuppetOptions = new Module.Puppet.Schemas.PuppetOptions()
     Token = "0c7b8f97-f3cc-40a5-a537-d492fd689801",
 };
 
-
 // GateWay部署在自己的服务器上
 var PuppetOptions = new Module.Puppet.Schemas.PuppetOptions()
 {

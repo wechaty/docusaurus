@@ -71,7 +71,7 @@ Sajen is very sincere and proactive. He is working really hard and has been acti
 
 His project is a bit intricate for volunteers to review, so PRs are yet to be reviewed. His projects involve both documentation and coding, probably he has churned more code than documentation. Considering that he is working alone on his project he is actually working very hard. He is doing extra work apart from his timeline that is appreciable. The concern is that he isn’t strictly following his timeline, and we would like him to suggest first deliver deliverables according to the timeline then work on other PRs.
 
-[follow-ups](https://docs.google.com/spreadsheets/d/1QglSl5JuZuVom84Or8yGhHb3_YbRMDBPgccxoMmnBa0/edit#gid=337461526)
+[follow-ups](https://github.com/wechaty/wechaty.js.org/issues/1012)
 
 ### How-to Guides team
 
