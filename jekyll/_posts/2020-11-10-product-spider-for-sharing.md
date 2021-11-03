@@ -138,7 +138,6 @@ async function main () {
   }, 1000* 10)
   setInterval(async function () {
 
-
       if(imagehref0 != '') {
         let fileBox0 = FileBox.fromUrl(imagehref0)
 
@@ -157,7 +156,6 @@ async function main () {
       }
     }, 1000 * 10)
 }
-
 
 ```
 
@@ -294,7 +292,6 @@ async function main () {
   )
   }, 1000* 10)
   setInterval(async function () {
-
 
       if(imagehref0 != '') {
         let fileBox0 = FileBox.fromUrl(imagehref0)

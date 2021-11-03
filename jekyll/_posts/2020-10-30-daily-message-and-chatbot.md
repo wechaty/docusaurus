@@ -175,7 +175,6 @@ async function onLogin(user) {
 
 bot.on('login', onLogin)
 
-
 bot.start()
   .then(() => log.info('StarterBot', 'Starter Bot Started.'))
   .catch(e => log.error('StarterBot', e))
@@ -284,7 +283,6 @@ async function getTXweather() {
     console.log('获取接口失败', err)
   }
 }
-
 
 async function getSweetWord() {
   // 获取土味情话

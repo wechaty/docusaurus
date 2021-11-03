@@ -18,8 +18,8 @@ image: /assets/2021/09-gsod-2021-tenth-meeting/gsod-tenth-meeting.webp
 ### Meeting Summary
 
 It was the tenth and the final meeting regarding the discussion of the GSoD’21 projects. Firstly every participant reported their
- progress in-terms of completion, volunteers and tech writers discussed while tech writers were giving report on the same.
-  Later we discussed comments and questions of the participants, and at last, we took a lovely group photo.
+progress in-terms of completion, volunteers and tech writers discussed while tech writers were giving report on the same.
+Later we discussed comments and questions of the participants, and at last, we took a lovely group photo.
 
 {% include iframe.html src="https://youtu.be/Yo9HRBPD83A" %}
 
@@ -36,7 +36,7 @@ Total 10 attendees attended the meeting. They are:
 7. Souvik Biswas, Create easy to learn tutorials for beginner users writer, sbis1999@gmail.com (UTC +05:30)
 8. Shraddha, Improve References section writer (UTC + 5:30)
 9. Arnab Saha, Reconstruction of Landing page with value propositions writer (UTC + 5:30)
-10. Chris Estepa,  Introduction and Explanations sections writer (UTC +08:00)
+10. Chris Estepa, Introduction and Explanations sections writer (UTC +08:00)
 
 Note: Meeting started on schedule and everyone attended this !
 

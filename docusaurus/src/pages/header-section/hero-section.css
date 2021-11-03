@@ -10,7 +10,7 @@
   left: 0px;
   mix-blend-mode: normal;
   overflow-y: hidden;
-  height: 100vh;
+  height: 90vh;
 }
 
 #heroTagLine {
@@ -34,7 +34,7 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.1em;
-  color: #000000;
+  color: var(--ifm-hero-text-color);
 }
 
 #heroTagLineWrapper {
@@ -55,7 +55,7 @@
   font-size: 60px;
   font-weight: 900;
   line-height: 60px;
-  color: black;
+  color: var(--ifm-hero-text-color);
   letter-spacing: 4px;
   height: 60px;
   width: 500px;
@@ -92,7 +92,7 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.1em;
-  color: #000000;
+  color: var(--ifm-hero-text-color);
 }
 
 #heroChatbotImage {
@@ -109,7 +109,7 @@
 }
 
 #letsDiveInButton {
-  background-color: #d2ffca;
+  background-color: var(--ifm-footer-background-color);
   margin-left: 15.8%;
   border-radius: 50px;
   height: 50px;
@@ -119,7 +119,7 @@
   overflow-y: hidden;
   font-family: "Montserrat";
   line-height: normal;
-  color: black;
+  color: var(--ifm-hero-text-color);
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
@@ -134,7 +134,7 @@
 }
 
 #letsDiveInButton:active {
-  color: black;
+  color: var(--ifm-hero-text-color);
 }
 
 @media only screen and (max-width: 700px) {
@@ -198,6 +198,7 @@
  
   #heroSection {
     overflow-x: hidden;
+    height: 85vh;
   }
 
   #heroTagLine {

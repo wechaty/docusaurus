@@ -6,6 +6,7 @@ categories: story
 tags:
   - meetup
   - xp
+  - news
 ---
 
 7月13日，周二，我们组织了一个小范围的 Wechaty Contributor 线下聚会。

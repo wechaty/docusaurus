@@ -12,7 +12,6 @@ image: /assets/2020/kuakua-wechaty/titleimage.webp
 [![Wechaty Badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![Everything about Wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
-<!--more-->
 &ensp;&ensp;&ensp;&ensp;疫情期间，记得微信加过一个朋友，给他发消息立马就能回复，后来才知道其中有一些是机器人回复的。特别好奇这是怎么做到的，因为之前了解到的就只有微信公众号可以做到。难道微信也可以？因为好奇，网上查询了相关资料才了解到了强大的wechaty。恰巧自己的研究方向是自然语言处理，前段时间公众号上的夸夸机器人很火，所以想着写一个微信版本的夸夸机器人吧。如果想体验可以加一下：AINLPER-BOT 。相关功能实现的方式不是很完美，还请各位大神勿喷~
 
 ## 夸夸机器人
