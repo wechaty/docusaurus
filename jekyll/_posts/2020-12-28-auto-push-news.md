@@ -100,7 +100,6 @@ class WechatyPlugins {
                             return
                         }
 
-
                         val room = message.room()
 
                         val text = if (room == null) {

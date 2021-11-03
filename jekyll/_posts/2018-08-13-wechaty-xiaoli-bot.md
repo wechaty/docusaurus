@@ -202,7 +202,6 @@ async function getDaily() {
     return resText
 }
 
-
 function makeDailyResponseText(json_obj) {
     let secList = json_obj.sections
     let newsText = '今日' + json_obj.title + '\n\n'

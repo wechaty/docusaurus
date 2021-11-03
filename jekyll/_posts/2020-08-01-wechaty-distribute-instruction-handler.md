@@ -24,8 +24,6 @@ wechaty-plugin-xyao 插件可以让你的 wechaty bot 具备以分布式模块�
 2. 独立出的业务处理模块可以采用任意适合该领域业务的语言（目前提供了一个基于 java springboot 的 brain 模块开发框架）。
 3. 由于采用了基于 pub/sub 的消息中间件作为机器人和 brain 的通讯，因此即使两者之间由于 NAT 无法提供基于固定公网 IP 的 RPC 服务，也可以通过这种方式打通交互。
 
-<!--more-->
-
 ## demo
 
 ![sample](/assets/2020/wechaty-plugin-xyao/interaction-sample.webp)
@@ -59,7 +57,6 @@ import { Wechaty } from 'wechaty';
 import { PuppetPadplus } from 'wechaty-puppet-padplus';
 import { Xyao } from '../src/mod';
 
-
 const token = 'your PAD-PLUS token';
 const puppet = new PuppetPadplus({ token });
 
@@ -80,7 +77,6 @@ const xyaoConfig = {
   log_file: '/data/wechaty-xyao/xyao.log',
   log_level: 'INFO'
 };
-
 
 bot.use(
     Xyao(xyaoConfig),

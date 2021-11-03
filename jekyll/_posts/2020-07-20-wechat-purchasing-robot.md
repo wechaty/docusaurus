@@ -65,7 +65,6 @@ bot.on('message', onMessage(bot)) // 消息监听
 bot.on('friendship', onFriendShip) // 添加好友监听
 bot.on('room-join', onRoomJoin) // 加入房间监听
 
-
 bot
   .start()
   .then(() => {

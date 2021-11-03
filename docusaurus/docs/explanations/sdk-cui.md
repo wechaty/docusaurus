@@ -39,3 +39,7 @@ Wechaty is an SDK that provides chatbot services to different IM platforms. Powe
 ## Contact Us
 
 You can [join our Gitter](https://gitter.im/wechaty/wechaty) network if you aren’t already a member.
+
+## Related page
+
+- [Introducing Chatbot's User Interaction Interface (CUI)](https://wechaty.js.org/2021/01/20/chatbot-conversational-user-interface/)
