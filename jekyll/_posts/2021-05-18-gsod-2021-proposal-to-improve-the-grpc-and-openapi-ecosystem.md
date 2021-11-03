@@ -14,14 +14,6 @@ image: /assets/2021/05-gsod-2021-proposal-to-improve-the-grpc-and-openapi-ecosys
 
 I considered myself a Polymath. I believe in rigorous and intuitive learning. Spend the majority of the time exploring different types of algorithms and contributing to open source. My interest lies in the fields of Algorithms, Computational Science, and Distributed Computing.
 
-I have completed Google Season of Docs 2020 with [gRPC-Gateway](https://grpc-ecosystem.github.io/grpc-gateway/), and my project was on **Refactoring the Existing Docs Site of gRPC-Gateway** of gRPC-Gateway.
-
-My Google Season of Docs 2020 work summary can be found in this repository [https://github.com/iamrajiv/GSoD-2020](https://github.com/iamrajiv/GSoD-2020).
-
-## Project Proposal Video Presentation
-
-{% include iframe.html src="https://youtu.be/bSnKbzZYDco" %}
-
 ## Introduction
 
 This is the project proposal for **Improve the gRPC and OpenAPI ecosystem** on which I will be working as a part of Google Season of Docs 2021. I have proposed my timeline to complete this work during a span of **9 weeks**.
@@ -65,7 +57,7 @@ However, the Wechaty user documentation for gRPC and OpenAPI is currently outdat
 ### Community Bonding (May 8 - May 17, 2021)
 
 - Zoom meeting schedule agreed.
-- Focus in the first two weeks before the start of the project will be on working through existing documentation and note gaps areas.
+- Focus in the first two weeks before the start of the project will be on working through existing documentation and noting gaps areas.
 
 ## Doc Development Phase
 
@@ -121,6 +113,6 @@ In [Polyglot/OpenAPI](http://wechaty.js.org/docs/polyglot/openapi/) documentatio
 
 ### Week 9 (July 12 - July 18, 2021)
 
-- Finalizing the project deliverables and refactor the code, if any, based on the feedback.
+- Finalizing the project deliverables and refactoring the code, if any, based on the feedback.
 - Making the project report.
 - Finalizing and submitting the project report.

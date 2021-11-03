@@ -100,7 +100,6 @@ module.exports = bot => {
                         if (await lottery(msg)) return
                     }
 
-
                 } else {
                     //私聊消息
                 }

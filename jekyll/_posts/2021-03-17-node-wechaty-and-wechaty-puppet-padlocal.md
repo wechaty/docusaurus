@@ -177,7 +177,6 @@ const bot = new Wechaty({
         // 群组大师小程序提供的活动查询和报名接口
         let url = 'http://test-958d13-1251176925.ap-shanghai.service.tcloudbase.com/test/groupmaster?action=wechaty' + '&data=' + datas_jsonstr
 
-
         request(encodeURI(url), function (error, response, body) {
             console.error('error:', error); // Print the error if one occurred
             console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
@@ -187,7 +186,6 @@ const bot = new Wechaty({
                 message.say(JSON.parse(body).data.content)
             }
         });
-
 
 
         // const toContact = message.to()
@@ -254,7 +252,6 @@ const bot = new Wechaty({
     .on("error", (error) => {
         log.error("TestBot", 'on error: ', error.stack);
     })
-
 
 bot.start().then(() => {
     log.info("TestBot", "started.");
