@@ -9,14 +9,14 @@ tags:
 image: assets/2021/10-osschat-is-what-you-need-for-opensouce-community-operations/cover.webp
 ---
 
-#  一、彩虹屁机器人     开心每一天
-## 1.主要功能
+##  一、彩虹屁机器人     开心每一天
+### 1.主要功能
 * 1.彩虹屁，不开心哄你开心
 * 2.舔狗日记，舔与被舔是不是都很开心啊哈哈
 * 3.毒鸡汤，兄弟干了这碗鸡汤还能熬
 * 4.带我去one，自动ps人像并动漫到one的每日美图美文中
 
-## 2.所用技术
+### 2.所用技术
 * 1.利用爬虫技术，爬取当天one优美句子、图片
 * 2.利用PaddlePaddle超能力扣取微信人像照片
 * 3.合并人像和one的图片
@@ -33,13 +33,13 @@ image: assets/2021/10-osschat-is-what-you-need-for-opensouce-community-operation
 
 
 
-# 二、wechaty配置
+##  二、wechaty配置
 具体配置可参看前面的项目： [https://aistudio.baidu.com/aistudio/projectdetail/2177502](https://aistudio.baidu.com/aistudio/projectdetail/2177502)
 
-# 三、代码
-## 0.基于wechaty-python库
-## 1.语言类对接天行API获取
-## 2.图片类对接天行api获取，同时应用paddlehub进行处理
+##  三、代码
+### 0.基于wechaty-python库
+### 1.语言类对接天行API获取
+### 2.图片类对接天行api获取，同时应用paddlehub进行处理
 
 
 ```python
