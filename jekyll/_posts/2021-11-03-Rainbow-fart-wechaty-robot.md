@@ -1,7 +1,7 @@
 ---
 title: 彩虹屁机器人  开心每一天
 author: Livingbody
-categories: article
+categories: project
 tags:
   - code
   - openapi
