@@ -26,11 +26,12 @@ image: assets/2021/10-osschat-is-what-you-need-for-opensouce-community-operation
 * 6.对接天行API，各种彩虹屁不停息
 
 <iframe width='1000', height='800' src="//player.bilibili.com/player.html?aid=291932794&bvid=BV19f4y157NL&cid=377824174&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-![](https://ai-studio-static-online.cdn.bcebos.com/df042d8661e2466ab923b30a224c4c6888443c9f600a451a964ddc8d28011428)
-![](https://ai-studio-static-online.cdn.bcebos.com/a7cc431a0f2244aea6e24213b238a15adbfbb5c0da204080b765b708bbf7987c)
 
-![](https://ai-studio-static-online.cdn.bcebos.com/6433c5be0f8a4a888fb792712e62abd0194fa91fd958473e9398697aa7c1ccaf)
-![](https://ai-studio-static-online.cdn.bcebos.com/1f8df8fd8ce6492d95f3eabf43b0b04a894a289714c64c178587f46c71bf1ecb)
+
+![](/assets/2021/11-Rainbow-fart-wechaty-robot/df042d8661e2466ab923b30a224c4c6888443c9f600a451a964ddc8d28011428.webp)
+![](/assets/2021/11-Rainbow-fart-wechaty-robot/a7cc431a0f2244aea6e24213b238a15adbfbb5c0da204080b765b708bbf7987c.webp)
+![](/assets/2021/11-Rainbow-fart-wechaty-robot/6433c5be0f8a4a888fb792712e62abd0194fa91fd958473e9398697aa7c1ccaf.webp)
+![](/assets/2021/11-Rainbow-fart-wechaty-robot/1f8df8fd8ce6492d95f3eabf43b0b04a894a289714c64c178587f46c71bf1ecb.webp)
 
 
 
