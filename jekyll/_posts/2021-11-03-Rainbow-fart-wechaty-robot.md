@@ -1,11 +1,12 @@
 ---
-title: 彩虹屁机器人     开心每一天
+title: 彩虹屁机器人  开心每一天
 author: Livingbody
 categories: article
 tags:
   - code
   - openapi
   - rainbow-fart
+  - python
 image: assets/2021/10-osschat-is-what-you-need-for-opensouce-community-operations/cover.webp
 ---
 
