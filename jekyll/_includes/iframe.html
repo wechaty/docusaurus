@@ -13,11 +13,15 @@ Blog: https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/
 {% assign ratio = '56.25%' %}
 {% if src contains '.pdf' %}
   {% assign type = 'pdf' %}
+{% else if src contans 'https://docs.google.com' %}
+  {% assign type = 'google-docs' %}
 {% else %}
   {% assign type = src | split: '//' | last | split: '/' | first %}
 {% endif %}
 
 {% case type %}
+  {% when 'google-docs' %}
+    {% assign src = 'src' %}
   {% when "pdf" %}
     {% assign src = '/assets/js/viewer-js/#' | append: src %}
   {% when 'www.bilibili.com' or 'player.bilibili.com' %}

@@ -25,7 +25,9 @@ Google Season of Docs （GSoD）是 Google 自 2019 年发起的一项面向全�
 
 ## Slides
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQV8hJWS97ga10fhfaC3wwEmwBWRoC9csmv3tQOspRzBFb-PAwfEC6azXubXabBZ8gb4SkzQHMg40ba/embed?start=false&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+{% include iframe.html src="https://docs.google.com/presentation/d/e/2PACX-1vQV8hJWS97ga10fhfaC3wwEmwBWRoC9csmv3tQOspRzBFb-PAwfEC6azXubXabBZ8gb4SkzQHMg40ba/embed?start=false&loop=true&delayms=3000" %}
+
+> [Wechaty 开源社区文档协作 Google Season of Docs 实践分享 - Google Slide Link](https://docs.google.com/presentation/d/119WsvvWP9ERFtkAqHLzEFquDsR073Mlh-j_JsOyVHPE/)
 
 ## 个人简介
 
