@@ -13,7 +13,7 @@ Blog: https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/
 {% assign ratio = '56.25%' %}
 {% if src contains '.pdf' %}
   {% assign type = 'pdf' %}
-{% else if src contans 'https://docs.google.com' %}
+{% elsif src contans 'https://docs.google.com' %}
   {% assign type = 'google-docs' %}
 {% else %}
   {% assign type = src | split: '//' | last | split: '/' | first %}
