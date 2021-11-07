@@ -195,7 +195,6 @@ class Impactor{
 
 }
 
-
 ```
 
 ### 自己信息获取        GetProfile.h
@@ -331,12 +330,10 @@ class GetContact{
 #include "GetProfile.h"
 #include "GetContact.h"
 
-
 using namespace std;
 int _tmain(int argc, _TCHAR* argv[]){
     hookInject::inst_VersionLib();
 }
-
 
 void hook_install(){
 

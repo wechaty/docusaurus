@@ -262,7 +262,6 @@ class HeartBeat(object):
         if task_id in self._tasks:
             self._tasks.pop(task_id)
 
-
 heartbeat = HeartBeat()
 
 ```
@@ -287,13 +286,11 @@ from websocketAPI import heartbeat, Websocket
 import logger
 
 
-
 WECHATY_PUPPET_SERVICE_TOKEN = 'acfbbe16-5f80-4a61-a755-85c27c3f5511'
 WECHATY_PUPPET = 'wechaty-puppet-service'
 
 os.environ['WECHATY_PUPPET_SERVICE_TOKEN'] = WECHATY_PUPPET_SERVICE_TOKEN
 os.environ['WECHATY_PUPPET'] = WECHATY_PUPPET
-
 
 
 class Binance(Websocket):
@@ -467,7 +464,6 @@ class Binance(Websocket):
         channel = "{x}@{y}".format(x=symbol.replace("/", "").lower(), y=channel_type)
         self._c_to_s[channel] = symbol
         return channel
-
 
 if __name__ == '__main__':
     binance_websocket = Binance(to_wechat_id='文件传输助手')

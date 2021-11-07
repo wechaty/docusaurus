@@ -59,7 +59,6 @@ from typing import Union
 from wechaty import Message, Contact, Room, FileBox
 from wechaty.plugin import WechatyPlugin
 
-
 class DingDongPlugin(WechatyPlugin):
     """basic ding-dong plugin"""
     @property
@@ -130,7 +129,6 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 from wechaty import Wechaty
 from wechaty.plugin import WechatyPlugin
-
 
 class DailyPlugin(WechatyPlugin):
     """
