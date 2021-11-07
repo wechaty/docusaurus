@@ -100,8 +100,9 @@ image: /assets/2021/11-how-to-develop-wechaty-puppet-module-supporting-5g-messag
             "description": "获取token"
             },
            "response": []
-         }
+    }
     ```
+   
 - 下行消息：
   
   - 获取token后，即可进行下行消息发送，即终端APP可收到chatbot所发送的消息。需要实现```https://{serverRoot}/bot/{apiVersion}/{chatbotId}/messages```接口。具体的请求方法，参照接口文档9.2部分。终端接收到短信示例，如图：
@@ -122,19 +123,19 @@ image: /assets/2021/11-how-to-develop-wechaty-puppet-module-supporting-5g-messag
 
 2. 把Chatbot的消息结构转换为puppet的消息结构,重写messageRawPayloadParser函数
 
-```typescript
-override async messageRawPayloadParser (smsPayload: any): Promise<MessagePayload> {
-    const payload: MessagePayload = {
-      fromId: smsPayload.senderAddress,
-      id: smsPayload.messageId,
-      text: smsPayload.messageList[0].contentText,
-      timestamp: Date.now(),
-      toId: smsPayload.destinationAddress[0],
-      type: MessageType.Text,
-    }
-    return payload
-  }
-```
+   ```typescript
+   override async messageRawPayloadParser (smsPayload: any): Promise<MessagePayload> {
+       const payload: MessagePayload = {
+         fromId: smsPayload.senderAddress,
+         id: smsPayload.messageId,
+         text: smsPayload.messageList[0].contentText,
+         timestamp: Date.now(),
+         toId: smsPayload.destinationAddress[0],
+         type: MessageType.Text,
+       }
+       return payload
+     }
+    ```
 
 3. 把chatbot要发送的消息连上puppet，将实现下行消息的逻辑在messageSend()函数中实现，可参考如下代码：
 
