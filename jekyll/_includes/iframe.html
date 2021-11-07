@@ -14,15 +14,11 @@ Blog: https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/
 
 {% if src contains '.pdf' %}
   {% assign type = 'pdf' %}
-{% elsif src contains 'https://docs.google.com' %}
-  {% assign type = 'google-docs' %}
 {% else %}
   {% assign type = src | split: '//' | last | split: '/' | first %}
 {% endif %}
 
 {% case type %}
-  {% when 'google-docs' %}
-    {% comment %} just use goodle-docs embedded src {% endcomment %}
   {% when "pdf" %}
     {% assign src = '/assets/js/viewer-js/#' | append: src %}
   {% when 'www.bilibili.com' or 'player.bilibili.com' %}
