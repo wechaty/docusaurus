@@ -15,14 +15,15 @@ image: /assets/2021/11-how-to-develop-wechaty-puppet-module-supporting-5g-messag
 ## 一、准备工作
 
 在开发之前，你需要准备以下工具：
+
 - postman：用来测试5G Chatbot的接口
 - [终端测试消息APP](https://www.5g-msg.com/#/bussinessInformation)：安装时设为默认短信应用
 - 服务器
 
 整体步骤分为两步：
 
-* 测通5G Chatbot的上下行接口
-* 将5G Chatbot接入wechaty puppet中
+- 测通5G Chatbot的上下行接口
+- 将5G Chatbot接入wechaty puppet中
 
 ## 二、测试5G Chatbot的接口
 
@@ -39,68 +40,67 @@ image: /assets/2021/11-how-to-develop-wechaty-puppet-module-supporting-5g-messag
   
   - 可将以下代码导入postman，修改sipID、appID、appKey和senderPhone，点击send按钮即可获取到token，可查看参考文档中6.1部分。
   
-    ```
+    ```json
     {
-    			"name": "get_token",
-    			"event": [
-    				{
-    					"listen": "prerequest",
-    					"script": {
-    						"exec": [
-    							"\r",
-    							"//////////skn环境测试 信息///////////////\r",
-    							"pm.globals.set(\"sipID\", \"你的chatbot的sipID\");\r",
-    							"pm.globals.set(\"appID\", \"你的chatbot的sipID\");   \r",
-    							"pm.globals.set(\"appKey\", \"你的chatbot的sipID\");\r",
-    							"\r",
-    							"pm.globals.set(\"senderPhone\", \"你的手机号码\");\r",
-    							"\r",
-    							"pm.globals.set(\"url\", \"maap.5g-msg.com:30001\");\r",
-    							""
-    						],
-    						"type": "text/javascript"
-    					}
-    				},
-    				{
-    					"listen": "test",
-    					"script": {
-    						"exec": [
-    							"var acquiretoken = JSON.parse(responseBody);\r",
-    							"pm.globals.set(\"accessToken\",acquiretoken.accessToken);"
-    						],
-    						"type": "text/javascript"
-    					}
-    				}
-    			],
-    			"request": {
-    				"method": "POST",
-    				"header": [],
-    				"body": {
-    					"mode": "raw",
-    					"raw": "{\"appId\":\"{{appID}}\",\"appKey\":\"{{appKey}}\"}",
-    					"options": {
-    						"raw": {
-    							"language": "json"
-    						}
-    					}
-    				},
-    				"url": {
-    					"raw": "http://{{url}}/bot/v1/sip:{{sipID}}@botplatform.rcs.chinaunicom.cn/accessToken",
-    					"protocol": "http",
-    					"host": [
-    						"{{url}}"
-    					],
-    					"path": [
-    						"bot",
-    						"v1",
-    						"sip:{{sipID}}@botplatform.rcs.chinaunicom.cn",
-    						"accessToken"
-    					]
-    				},
-    				"description": "获取token"
-    			},
-    			"response": []
-    		},
+       "name": "get_token",
+       "event": [{
+            "listen": "prerequest",
+            "script": {
+              "exec": [
+                  "\r",
+                  "//////////skn环境测试 信息///////////////\r",
+                  "pm.globals.set(\"sipID\", \"你的chatbot的sipID\");\r",
+                  "pm.globals.set(\"appID\", \"你的chatbot的appID\");   \r",
+                  "pm.globals.set(\"appKey\", \"你的chatbot的appKey\");\r",
+                  "\r",
+                  "pm.globals.set(\"senderPhone\", \"你的手机号码\");\r",
+                  "\r",
+                  "pm.globals.set(\"url\", \"maap.5g-msg.com:30001\");\r",
+                  ""
+                 ],
+             "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+              "exec": [
+                  "var acquiretoken = JSON.parse(responseBody);\r",
+                  "pm.globals.set(\"accessToken\",acquiretoken.accessToken);"
+                ],
+                "type": "text/javascript"
+               }
+             }
+           ],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"appId\":\"{{appID}}\",\"appKey\":\"{{appKey}}\"}",
+              "options": {
+              "raw": {
+              "language": "json"
+               }
+             }
+            },
+            "url": {
+              "raw": "http://{{url}}/bot/v1/sip:{{sipID}}@botplatform.rcs.chinaunicom.cn/accessToken",
+              "protocol": "http",
+              "host": [
+                "{{url}}"
+              ],
+             "path": [
+                "bot",
+                "v1",
+                "sip:{{sipID}}@botplatform.rcs.chinaunicom.cn",
+                "accessToken"
+              ]
+            },
+            "description": "获取token"
+            },
+           "response": []
+         }
     ```
 - 下行消息：
   
@@ -122,7 +122,7 @@ image: /assets/2021/11-how-to-develop-wechaty-puppet-module-supporting-5g-messag
 
 2. 把Chatbot的消息结构转换为puppet的消息结构,重写messageRawPayloadParser函数
 
-```
+```typescript
 override async messageRawPayloadParser (smsPayload: any): Promise<MessagePayload> {
     const payload: MessagePayload = {
       fromId: smsPayload.senderAddress,
@@ -139,7 +139,6 @@ override async messageRawPayloadParser (smsPayload: any): Promise<MessagePayload
 3. 把chatbot要发送的消息连上puppet，将实现下行消息的逻辑在messageSend()函数中实现，可参考如下代码：
 
    ![code2](/assets/2021/11-how-to-develop-wechaty-puppet-module-supporting-5g-messages/code2.webp)
-
 
 ## 参考资料
 
