@@ -10,7 +10,7 @@ tags:
 image: assets/2021/10-osschat-is-what-you-need-for-opensouce-community-operations/cover.webp
 ---
 
-##  一、彩虹屁机器人     开心每一天
+## 一、彩虹屁机器人     开心每一天
 
 ### 1.主要功能
 
@@ -38,11 +38,11 @@ image: assets/2021/10-osschat-is-what-you-need-for-opensouce-community-operation
 
 
 
-##  二、wechaty配置
+## 二、wechaty配置
 
 具体配置可参看前面的项目： [https://aistudio.baidu.com/aistudio/projectdetail/2177502](https://aistudio.baidu.com/aistudio/projectdetail/2177502)
 
-##  三、代码
+## 三、代码
 
 - 0.基于wechaty-python库
 - 1.语言类对接天行API获取
