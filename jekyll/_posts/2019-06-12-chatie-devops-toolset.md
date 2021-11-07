@@ -218,7 +218,6 @@ fi
 # package.json jq modification util
 npm install --save-dev pkg-jq
 
-
 #
 # @chatie/tsconfig
 #
@@ -232,7 +231,6 @@ npm uninstall \
   typescript \
 
 npm install --save-dev @chatie/tsconfig
-
 
 #
 # @chatie/eslint-config

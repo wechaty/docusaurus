@@ -565,7 +565,6 @@ public:
   string GetSyncKey();
   void SetSyncKey(string strSyncKey);
 
-
   static CAuthInfo *GetInstance();
 
   //获取短信验证码凭据
