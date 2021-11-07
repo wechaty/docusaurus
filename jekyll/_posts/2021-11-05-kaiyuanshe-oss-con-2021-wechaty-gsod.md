@@ -4,6 +4,7 @@ author: huan
 categories: talk
 tags:
   - coscon
+  - news
   - kaiyuanshe
   - gsod
 image: /assets/2021/11-kaiyuanshe-oss-con-2021-wechaty-gsod/huan-oss-con-2021.webp
