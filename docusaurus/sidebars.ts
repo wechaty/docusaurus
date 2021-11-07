@@ -310,7 +310,7 @@ const howtos = {
     'howto/contact',
     'howto/room',
     'howto/friendship',
-    'howto/file-box',
+    'howto/send-and-receive-files',
     'howto/testing',
     'howto/docker',
   ],
