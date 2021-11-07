@@ -136,7 +136,7 @@ image: /assets/2021/11-how-to-develop-wechaty-puppet-module-supporting-5g-messag
        return payload
      }
     ```
-
+   
 3. 把chatbot要发送的消息连上puppet，将实现下行消息的逻辑在messageSend()函数中实现，可参考如下代码：
 
    ![code2](/assets/2021/11-how-to-develop-wechaty-puppet-module-supporting-5g-messages/code2.webp)
