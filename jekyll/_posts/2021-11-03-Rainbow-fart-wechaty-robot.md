@@ -38,18 +38,15 @@ image: assets/2021/10-osschat-is-what-you-need-for-opensouce-community-operation
 
 ![img](/assets/2021/11-Rainbow-fart-wechaty-robot/1f8df8fd8ce6492d95f3eabf43b0b04a894a289714c64c178587f46c71bf1ecb.webp)
 
-
-
 ## 二、wechaty配置
 
 具体配置可参看前面的项目： [https://aistudio.baidu.com/aistudio/projectdetail/2177502](https://aistudio.baidu.com/aistudio/projectdetail/2177502)
 
 ## 三、代码
 
-- 0.基于wechaty-python库
-- 1.语言类对接天行API获取
-- 2.图片类对接天行api获取，同时应用paddlehub进行处理
-
+* 0.基于wechaty-python库
+* 1.语言类对接天行API获取
+* 2.图片类对接天行api获取，同时应用paddlehub进行处理
 
 ```python
 import os
