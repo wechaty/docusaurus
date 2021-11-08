@@ -13,8 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0  # https://github.community/t/solved-workflows-and-git-logs/121289
       - name: Bundle Config
         run: |
           sudo gem install bundler
