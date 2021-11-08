@@ -7,11 +7,11 @@ tags:
   - gsod
   - 2021
   - docs
-  - tutorials
+  - introduction
+  - explanations
   - project
-  - proposal
-  - team-proposal
-image: /assets/2021/05-gsod-2021-improve-introduction-and-explanation-project-joint-proposal/introduction-and-explanation.webp
+  - report
+image: /assets/2021/11-gsod-2021-improve-introduction-and-explanation-project-joint-report/introduction-and-explanation.webp
 ---
 
 This is the joint project report for **Improve the Introduction and Explanations** secondary project under Google Season of Docs 2021.
