@@ -105,7 +105,7 @@ image: /assets/2021/11-how-to-develop-wechaty-puppet-module-supporting-5g-messag
   
 - 下行消息：
   
-  - 获取token后，即可进行下行消息发送，即终端APP可收到chatbot所发送的消息。需要实现```https://{serverRoot}/bot/{apiVersion}/{chatbotId}/messages```接口。具体的请求方法，参照接口文档9.2部分。终端接收到短信示例，如图：
+  - 获取token后，即可进行下行消息发送，即终端APP可收到chatbot所发送的消息。需要实现`https://{serverRoot}/bot/{apiVersion}/{chatbotId}/messages`接口。具体的请求方法，参照接口文档9.2部分。终端接收到短信示例，如图：
   
   ![message1](/assets/2021/11-how-to-develop-wechaty-puppet-module-supporting-5g-messages/message1.webp)
 
