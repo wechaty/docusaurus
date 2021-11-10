@@ -9,9 +9,8 @@ wechat: livingbody
 
 Backend engigneer using python/java  in desert, PaddlePaddle in life.
 
-## Contact
+## Contact me
 
-- Homepage: https://github.com/livingbody
 - Github: <https://github.com/livingbody>
 - Wechat: <livingbody>
 - Email: <155203340@qq.com>
