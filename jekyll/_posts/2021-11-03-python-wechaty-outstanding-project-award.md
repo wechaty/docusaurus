@@ -23,4 +23,36 @@ Python-Wechaty所有的接口目前已稳定，可由于社区在开发新特性
 
 此项目基于Python语言，与深度学习拥有一定的程度上的粘性，未来也会尝试加入NLP部分能力，让python-wechaty拥有更多智能好玩的东西。
 
+如果你想将Rasa对接到wechaty当中，你仅仅需要以下代码即可：
+
+> from [python-wechaty-plugin-contrib](https://github.com/wechaty/python-wechaty-plugin-contrib)
+
+```python
+"""rasa plugin bot examples"""
+from __future__ import annotations
+
+import asyncio
+from wechaty import Wechaty
+
+from wechaty_plugin_contrib import (
+    RasaRestPlugin,
+    RasaRestPluginOptions
+)
+
+async def run() -> None:
+    """async run method"""
+    options = RasaRestPluginOptions(
+        endpoint='your-endpoint',
+        conversation_ids=['room-id', 'contact-id']
+    )
+    rasa_plugin = RasaRestPlugin(options)
+
+    bot = Wechaty().use(rasa_plugin)
+    await bot.start()
+
+asyncio.run(run())
+```
+
+未来python-wechaty将在chatbot领域做更多尝试 ......
+
 > 我们有一个小梦想
