@@ -5,7 +5,6 @@ categories:
   - ospp
 image: /assets/2021/07-walnut-5g-press/teaser.webp
 tags:
-  - sticky
   - ospp
   - wechaty-puppet-5g
   - ospp-2021
