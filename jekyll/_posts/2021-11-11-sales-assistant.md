@@ -1,3 +1,13 @@
+---
+title: sales-assistant
+author: kevintung
+tags:
+  - salesbot
+---
+Kevin Tung sales assistant initial report
+  
+![Wechaty Logo][wechaty-logo-image]
+
 # sales-assistant 项目期初报告
 
 > 部门：技术部门
