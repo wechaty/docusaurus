@@ -18,11 +18,11 @@ This is the joint project report for **Improve the Introduction and Explanations
 
 ## Technical writers
 
-### Mukosa Joseph Mawa
+### [Mukosa Joseph Mawa](https://ug.linkedin.com/in/joseph-mawa)
 
 I am a self-taught web developer and technical writer with a passion for open source software. I have published a number of beginner friendly technical articles on [dev.to](https://dev.to/nibble) and [freeCodeCamp](https://www.freecodecamp.org/news/author/joseph/). Before transitioning into tech, I was a high school teacher. One of my core responsibilities as a teacher was simplifying and sequencing text written in complex technical language for learners to easily understand. I have also been a frequent contributor to a couple of open source software. Notable ones are [ocaml.org](https://github.com/ocaml/ocaml.org) and [disease.sh](https://github.com/disease-sh/API).
 
-### Chris Estepa
+### [Chris Estepa](https://ph.linkedin.com/in/chrisestepa)
 
 Currently, I am a full-time technical writer supporting users how to use their applications by creating how-tos, video tutorials, training materials, FAQs, and requirement analysis documents, among others.
 
@@ -32,9 +32,12 @@ I love technical writing because it being a combination of communication and tec
 
 {% include iframe.html src="https://youtu.be/HghT9K8JNSI" %}
 
+## Final Report Video Presentation
+[Improve the Introduction and Explanation sections](https://www.youtube.com/watch?v=A1FlVWGWshw)
+
 ## Project title
 
-Improve the Introduction and Explanations sections of wechaty.js.org.
+Improve the Introduction and Explanations sections of [wechaty.js.org](https://ph.linkedin.com/in/chrisestepa).
 
 ## Project overview
 
@@ -112,7 +115,7 @@ The Explanation section was primarily for broadening the documentation’s cover
 | 2    | Introduction | Who are the users of Wechaty         | [900](https://github.com/wechaty/wechaty.js.org/pull/900) |
 | 2    | Introduction | Getting started with Wechaty         | [899](https://github.com/wechaty/wechaty.js.org/pull/899) |
 | 2    | Introduction | Main concepts in Wechaty             | [904](https://github.com/wechaty/wechaty.js.org/pull/904) |
-| 3    | Explanation  | Overview of the explanations section | [915](https://github.com/wechaty/wechaty.js.org/pull/915) |
+| 3    | Explanation  | Overview of the Explanation section | [915](https://github.com/wechaty/wechaty.js.org/pull/915) |
 | 4    | Explanation  | Software Development Kit             | [930](https://github.com/wechaty/wechaty.js.org/pull/930) |
 | 4    | Explanation  | Wechaty chatbot testing              | [936](https://github.com/wechaty/wechaty.js.org/pull/936) |
 | 5    | Explanation  | Wechaty DevOps Toolset               | [949](https://github.com/wechaty/wechaty.js.org/pull/949) |
@@ -133,21 +136,21 @@ The Explanation section was primarily for broadening the documentation’s cover
 
 As mentioned in the introduction, our overall goal was to improve the Introduction and Explanation sections of the Wechaty documentation. As per our proposal, we achieved nearly everything we had set out to do. The Introduction and Explanation sections are orders of magnitude much better than they were before the GSoD 2021.
 
-We reorganized and simplified the Introduction and explanation sections to be followed and understood by even absolute beginners to Wechaty. Overall it was an exciting project to work on and there was a lot to learn.
+We reorganized and simplified the Introduction and explanation sections to be followed and understood by even absolute beginners to Wechaty. Overall, it was an exciting project to work on and there was a lot to learn.
 
-We estimated the project to take approximately six weeks. Unfortunately it took us more than three months. This was mainly due to delays in the final stages of the code review process. we did not reorganize the Introduction and Explanation sections as we had planned.
+We estimated the project to take approximately six weeks. Unfortunately, it took us more than three months. This was mainly due to delays in the final stages of the code review process. We did not reorganize the Introduction and Explanation sections as we had planned.
 
-We believe sub-sections such as showcases, case study, community and contributing which are currently in the Introduction section make the documentation unnecessarily bloated and therefore should be relocated. They contain useful information and should be somewhere within the [wechaty.org](https://wechaty.js.org) site but not in the documentation.
+We believe sub-sections such as Showcases, Case study, Community and Contributing to Wechaty which are currently in the Introduction section make the documentation unnecessarily bloated and therefore, should be relocated. They contain useful information and should be somewhere within the [wechaty.org](https://wechaty.js.org) site but not in the documentation.
 
 ## Lessons learned
 
-- We learned alot about the DIVIO documentation system and the Google developer documentation style guide.
+- We learned a lot about the DIVIO documentation system and the Google developer documentation style guide.
 - We learned how to work and collaborate in a remote, distributed and largely multicultural team.
 - We also gained invaluable skills of contributing to open source projects.
 
 ## Acknowledgement
 
-We would like to thank the project mentors, Huan Li and Jiarui Li for the invaluable and constructive feddback throughout the GSoD period.
+We would like to thank the project mentors, Huan Li and Jiarui Li for the invaluable and constructive feedback throughout the GSoD period.
 
 We also like to thank the volunteers, Rohitesh Jain and Simin Liao, for timely reviewing all the pull requests and for providing constructive feedback. Your contributions have been invaluable.
 
