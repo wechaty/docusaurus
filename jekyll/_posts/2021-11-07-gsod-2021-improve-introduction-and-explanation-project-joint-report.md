@@ -30,14 +30,15 @@ I love technical writing because it being a combination of communication and tec
 
 ## Proposal Video Presentation
 
-{% include iframe.html src="https://youtu.be/HghT9K8JNSI" %}
+{% include iframe.html src="https://youtu.be/A1FlVWGWshw" %}
 
 ## Final Report Video Presentation
-[Improve the Introduction and Explanation sections](https://www.youtube.com/watch?v=A1FlVWGWshw)
+
+Improve the Introduction and Explanation sections
 
 ## Project title
 
-Improve the Introduction and Explanations sections of [wechaty.js.org](https://ph.linkedin.com/in/chrisestepa).
+Improve the Introduction and Explanations sections of wechaty.js.org.
 
 ## Project overview
 
@@ -81,7 +82,7 @@ We were guided by the following questions when writing the introduction section.
 
 ##### What can you do with Wechaty?
 
-- What problems can businesses/ individuals solve with Wechaty?
+- What problems can businesses/individuals solve with Wechaty?
 - What business problems have been solved by using Wechaty?
 - How has Wechaty solved the problems of people/businesses?
 
@@ -107,20 +108,20 @@ The Explanation section was primarily for broadening the documentation’s cover
 
 ### Main pull requests
 
-| Week | Section      | Sub-section                          | PR                                                        |
-| ---- | ------------ | ------------------------------------ | --------------------------------------------------------- |
-| 1    | Introduction | Overview of Wechaty documentation    | [870](https://github.com/wechaty/wechaty.js.org/pull/870) |
-| 1    | Introduction | What is Wechaty                      | [871](https://github.com/wechaty/wechaty.js.org/pull/871) |
-| 1    | Introduction | What can you do with Wechaty         | [873](https://github.com/wechaty/wechaty.js.org/pull/873) |
-| 2    | Introduction | Who are the users of Wechaty         | [900](https://github.com/wechaty/wechaty.js.org/pull/900) |
-| 2    | Introduction | Getting started with Wechaty         | [899](https://github.com/wechaty/wechaty.js.org/pull/899) |
-| 2    | Introduction | Main concepts in Wechaty             | [904](https://github.com/wechaty/wechaty.js.org/pull/904) |
+| Week | Section      | Sub-section                         | PR                                                        |
+| ---- | ------------ | ----------------------------------- | --------------------------------------------------------- |
+| 1    | Introduction | Overview of Wechaty documentation   | [870](https://github.com/wechaty/wechaty.js.org/pull/870) |
+| 1    | Introduction | What is Wechaty                     | [871](https://github.com/wechaty/wechaty.js.org/pull/871) |
+| 1    | Introduction | What can you do with Wechaty        | [873](https://github.com/wechaty/wechaty.js.org/pull/873) |
+| 2    | Introduction | Who are the users of Wechaty        | [900](https://github.com/wechaty/wechaty.js.org/pull/900) |
+| 2    | Introduction | Getting started with Wechaty        | [899](https://github.com/wechaty/wechaty.js.org/pull/899) |
+| 2    | Introduction | Main concepts in Wechaty            | [904](https://github.com/wechaty/wechaty.js.org/pull/904) |
 | 3    | Explanation  | Overview of the Explanation section | [915](https://github.com/wechaty/wechaty.js.org/pull/915) |
-| 4    | Explanation  | Software Development Kit             | [930](https://github.com/wechaty/wechaty.js.org/pull/930) |
-| 4    | Explanation  | Wechaty chatbot testing              | [936](https://github.com/wechaty/wechaty.js.org/pull/936) |
-| 5    | Explanation  | Wechaty DevOps Toolset               | [949](https://github.com/wechaty/wechaty.js.org/pull/949) |
-| 5    | Explanation  | Troubleshooting in Wechaty           | [950](https://github.com/wechaty/wechaty.js.org/pull/950) |
-| 6    | Explanation  | Wechaty chatbots architecture        | [977](https://github.com/wechaty/wechaty.js.org/pull/977) |
+| 4    | Explanation  | Software Development Kit            | [930](https://github.com/wechaty/wechaty.js.org/pull/930) |
+| 4    | Explanation  | Wechaty chatbot testing             | [936](https://github.com/wechaty/wechaty.js.org/pull/936) |
+| 5    | Explanation  | Wechaty DevOps Toolset              | [949](https://github.com/wechaty/wechaty.js.org/pull/949) |
+| 5    | Explanation  | Troubleshooting in Wechaty          | [950](https://github.com/wechaty/wechaty.js.org/pull/950) |
+| 6    | Explanation  | Wechaty chatbots architecture       | [977](https://github.com/wechaty/wechaty.js.org/pull/977) |
 
 ### Additional pull requests
 
@@ -156,4 +157,4 @@ We also like to thank the volunteers, Rohitesh Jain and Simin Liao, for timely r
 
 We would also love to extend our sincere gratitude to the all the members of the other teams. It was nice having your company for the entire GSoD period.
 
-Finally this wouldn't have been possible without the support of Google. Thank you so much for starting this initiative.
+Finally this wouldn't have been possible without the support of Google. Thank you so much for sponsoring this project.
