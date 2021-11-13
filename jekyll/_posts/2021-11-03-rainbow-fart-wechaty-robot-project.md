@@ -4,7 +4,7 @@ author: Livingbody
 categories: project
 tags:
   - code
-  - openapi
+  - entertainment
   - rainbow-fart
   - python
 image: assets/2021/10-osschat-is-what-you-need-for-opensouce-community-operations/cover.webp
