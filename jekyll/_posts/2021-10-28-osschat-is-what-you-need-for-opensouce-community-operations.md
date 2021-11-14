@@ -8,6 +8,7 @@ tags:
   - chatopera
   - github
   - utility
+  - sticky
 image: /assets/2021/10-osschat-is-what-you-need-for-opensouce-community-operations/cover.webp
 ---
 
