@@ -116,6 +116,19 @@ some advice to make your work on Wechaty more useful and rewarding.
   writing the very first tests for that feature, not that you get a pass from
   writing tests altogether.
 
+## At last: Use VSCode
+
+Wechaty community members are using VSCode to work on Wechaty. With VSCode, you can get linting hints when you edit the files, so it's strongly recommended to use it.
+
+For example, if you are creating fles for our official website:
+
+1. use vscode to open our wechaty.js.org repo
+1. install the `markdownlint` vscode extension (it will use [this config file](https://github.com/wechaty/wechaty.js.org/blob/main/.markdownlint.json) automatically)
+1. install the `editorconfig` vscode extension (it will use [this config file](https://github.com/wechaty/wechaty.js.org/blob/main/.editorconfig) automatically)
+1. You are set. VSCode will tell you everything about the linting.
+
+Make sure your markdown files and source code files can pass the linting before you push.
+
 ## FAQ
 
 1. **This issue I care about has been ignored for days/weeks/months! What can
