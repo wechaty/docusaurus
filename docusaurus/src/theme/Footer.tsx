@@ -13,11 +13,11 @@ const Footer = () => {
               <br />
               <a href="docs/tutorials/"> Tutorials </a>
               <br />
-              <a href="docs/howto/"> How to Guides </a>
+              <a href="docs/howto/"> How-to Guides </a>
               <br />
               <a href="docs/references/"> References </a>
               <br />
-              <a href="docs/explanations/"> Explainations </a>
+              <a href="docs/explanations/"> Explanations </a>
               <br />
             </p>
           </div>
