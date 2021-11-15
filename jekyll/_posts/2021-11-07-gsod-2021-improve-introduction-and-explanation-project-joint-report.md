@@ -34,7 +34,7 @@ I love technical writing because it being a combination of communication and tec
 
 ## Final Report Video Presentation
 
-Improve the Introduction and Explanation sections
+[Improve the Introduction and Explanation sections](https://youtu.be/j3RW6rhdZok)
 
 ## Project title
 
