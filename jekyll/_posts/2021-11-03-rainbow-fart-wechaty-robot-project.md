@@ -28,7 +28,7 @@ image: assets/2021/10-osschat-is-what-you-need-for-opensouce-community-operation
 * 5.利用图像处理超能力合并图像和语句
 * 6.对接天行API，各种彩虹屁不停息
 
-{% include iframe.html src="//player.bilibili.com/player.html?aid=291932794&bvid=BV19f4y157NL&cid=377824174&page=1" %} 
+{% include iframe.html src="https://player.bilibili.com/player.html?aid=291932794&bvid=BV19f4y157NL&cid=377824174&page=1" %}
 
 ![img](/assets/2021/11-rainbow-fart-wechaty-robot-project/phone-screenshot-1.webp)
 
