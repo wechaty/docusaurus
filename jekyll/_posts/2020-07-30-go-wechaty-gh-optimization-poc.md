@@ -20,8 +20,6 @@ tags:
 
 本项目 [Go-wechaty Github Action optimization] 系 暑期2020 支持的开源项目。
 
-<!--more-->
-
 ## [Go-wechaty Github Action optimization]具体计划
 
 - 导师：丁小雨

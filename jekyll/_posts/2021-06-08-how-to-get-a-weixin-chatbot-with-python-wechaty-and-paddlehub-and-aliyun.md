@@ -195,7 +195,6 @@ from wechaty.user import Message, Room
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
 
-
 class MyBot(Wechaty):
     """
     listen wechaty event with inherited functions, which is more friendly for
@@ -244,9 +243,7 @@ class MyBot(Wechaty):
         print(f'user <{contact}> scan status: {status.name} , '
               f'qr_code: {qr_code}')
 
-
 bot: Optional[MyBot] = None
-
 
 async def main():
     """doc"""
@@ -254,7 +251,6 @@ async def main():
     global bot
     bot = MyBot()
     await bot.start()
-
 
 asyncio.run(main())
 ```
@@ -353,7 +349,6 @@ def img_to_anime(img_name, img_path):
 
     return img_new_path
 
-
 class MyBot(Wechaty):
     """
     listen wechaty event with inherited functions, which is more friendly for
@@ -420,7 +415,6 @@ class MyBot(Wechaty):
 
                 await conversation.say(file_box_new)
 
-
     async def on_login(self, contact: Contact):
         print(f'user: {contact} has login')
 
@@ -430,9 +424,7 @@ class MyBot(Wechaty):
         print(f'user <{contact}> scan status: {status.name} , '
               f'qr_code: {qr_code}')
 
-
 bot: Optional[MyBot] = None
-
 
 async def main():
     """doc"""
@@ -440,7 +432,6 @@ async def main():
     global bot
     bot = MyBot()
     await bot.start()
-
 
 asyncio.run(main())
 ```

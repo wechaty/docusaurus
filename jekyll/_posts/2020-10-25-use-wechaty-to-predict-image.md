@@ -72,7 +72,6 @@ const puppet = new PuppetPadplus({
   token,
 })
 
-
 const name  = 'wechaty-torch'
 
 const bot = new Wechaty({
@@ -91,7 +90,6 @@ bot.on('scan', (qrcode, status) => {
     })
   }
 })
-
 
 bot.on('login'  , user => console.info('Bot', `bot login: ${user}`))
 ```
