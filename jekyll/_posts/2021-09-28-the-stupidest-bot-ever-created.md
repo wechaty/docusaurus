@@ -164,7 +164,7 @@ image: /assets/2021/09-the-stupidest-bot-ever-created/640px-internet-meme-about-
 
 ## 展望未来
 
-由于 UOS 关闭了 WeChat 用户的接口，机器人现在已经离开了我们 (R.I.P.)。如果能参加 WeChaty Contributor Program，我会用 Padlocal token 复活机器人，并增加一些功能：
+由于 UOS 关闭了 WeChat 用户的接口，机器人现在已经离开了我们 (R.I.P.)。如果能参加 Wechaty Contributor Program，我会用 Padlocal token 复活机器人，并增加一些功能：
 
 ### 点歌功能
 

@@ -15,7 +15,6 @@ image: /assets/2020/rae-oa-wechaty/schecdule.webp
 感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
 感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token  
 感谢[gengchen528](https://github.com/gengchen528/wechat-assistant),[isnl](https://github.com/isnl/wechat-robot-ipad),[shfshanyue](https://github.com/shfshanyue/wechat-bot)大佬们的开源代码
-<!--more-->
 
 ## 定位
 

@@ -22,7 +22,7 @@ To submit a blog post for publication on [wechaty.js.org](https://wechaty.js.org
 7. Add related images to [jekyll/assets](./jekyll/assets) folder under `$YEAR/$MONTH-your-blog-slug/` directory
 8. Add your info into `jekyll/_contributors/your_github_id.md`
 9. Commit your changes using the command `git commit -am "YOUR_BLOG_TITLE"`. `YOUR_BLOG_TITLE` is the title of your blog
-10. Push you branch to github using the command `git push origin name-of-blog-branch`.
+10. Push your branch to github using the command `git push origin name-of-blog-branch`.
 11. Create new Pull Request(PR)
 12. Sign the [CLA](https://en.wikipedia.org/wiki/Contributor_License_Agreement)
 13. Wait for the continuous integration workflow run to finish. If it is failing, fix whatever is making it to fail so that CI turns green
@@ -96,8 +96,7 @@ Run Jekyll at localhost to preview your blog post by running the commands below.
 
 ```sh
 make install
-cd jekyll
-make serve
+cd jekyll; make serve # or either run `./scripts/jekyll-serve.sh` for a fresh new start by cleaning cache
 ```
 
 ### 2. Preview the Blog
