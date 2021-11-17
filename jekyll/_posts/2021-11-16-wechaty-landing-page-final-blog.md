@@ -58,7 +58,7 @@ We separated the landing page into eight pieces and created each area as a separ
 **7)Sponsors Section:** This section contains a list of wecahty community sponsors.\
 ![Section7](/assets/2021/11-wechaty-landing-page-final-blog/sponsors-section.webp)\
 **8)Footer Section:** It is footer of the landing page and contains the required important links.\
-![Section8](/assets/2021/11-wechaty-landing-page-final-blog/footer-section.webp)\
+![Section8](/assets/2021/11-wechaty-landing-page-final-blog/footer-section.webp)
 
 ## Project Goals
 
