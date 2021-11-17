@@ -10,7 +10,7 @@ tags:
   - landing
   - page
   - project
-image: /assets/2021/05-gsod-2021-reconstruct-landing-page-team-proposal/gsod-reconstruct-lp.png
+image: /assets/2021/11-wechaty-landing-page-final-blog/gsod-reconstruct-lp.webp
 ---
 
 We have beenn a part of **Google Season of Docs 2021** for reconstruction of landing page with value propositions. It was an incredible trip with the Wechaty community through the GSoD 2021, and the landing page reconstruction has been completed and deployed, and you can visit the new landing page on the [Wechaty website](https://wechaty.js.org/).
