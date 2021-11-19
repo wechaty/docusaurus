@@ -12,8 +12,8 @@ const VoiceOfDevelopers = () => {
         <div id="voiceOfDevelopersOne">
           <img id="voiceOfDevelopersImageOne" />
           <p id="voiceOfDevelopersText">
-          "Wechaty is great". 
-           <br/>-- @Samurais, SnapLingo Director of Engineering
+          "Wechaty is great, plays more and more important role in the years to come."
+           <br/>-- @hailiang-wang, CEO, Chatopera
           </p>
         </div>
         <div id="voiceOfDevelopersTwo">
