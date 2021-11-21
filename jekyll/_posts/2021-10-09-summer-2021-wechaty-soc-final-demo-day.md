@@ -33,24 +33,24 @@ Wechaty 作为中国最大的聊天机器人开源项目，合计发布了9个�
 
 ## 结项汇报（Final-Term Demo Day）会议纪实
 
-{% include iframe.html src="https://www.youtube.com/watch?v=xqJN3NmGukg"%}
+{% include iframe.html src="https://v.qq.com/x/page/w3310hm4e7v.html"%}
 
 You can learn more from our [meeting_notes](https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.xdrnd37ekiek)
 
 ### Agendas议程
 
-- [0:00:00](https://youtu.be/xqJN3NmGukg) 0.会议开始
-- [0:08:30](https://youtu.be/xqJN3NmGukg?t=510) 1.介绍会议议程
-- [0:10:30](https://youtu.be/xqJN3NmGukg?t=630) 2.陈婧：开发基于 Wechaty 实现微俱乐部会员&活动管理的微信小程序
-- [0:29:40](https://youtu.be/xqJN3NmGukg?t=1780) 3.肖良玉:基于 Itchat为 Python Wechaty 实现社区首个 Python 语言的本地 Puppet  
-- [0:46:50](https://youtu.be/xqJN3NmGukg?t=2810) 4.张瑞宁,邵琦:开发支持电信运营商 5G Chatbot / RCS 的 Wechaty 接入 Puppet 模块
-- [1:05:00](https://youtu.be/xqJN3NmGukg?t=3900) 5.马田慧:基于开放 API 封装 Wechaty 接口下的飞书聊天机器人
-- [1:19:30](https://youtu.be/xqJN3NmGukg?t=4770) 6.刘靖:基于 Blessed 的 Wechaty 命令行文本客户端软件（仿IRC）
-- [1:34:00](https://youtu.be/xqJN3NmGukg?t=5640) 7.林宇靖，张瑞宁:基于 Matrix AppService Wechaty 项目的用户、群与消息等基础功能的完善
-- [1:51:00](https://youtu.be/xqJN3NmGukg?t=6660) 8.anaivebird:开发支持 QQ 聊天软件的 Wechaty Puppet Provider 模块
-- [2:21:30](https://youtu.be/xqJN3NmGukg?t=8490) 9.左雁茹:基于 Wechaty Puppet Official Account 项目的用户与消息等基础功能的完善
-- [2:42:40](https://youtu.be/xqJN3NmGukg?t=9760) 10.井维嘉: 基于Wechaty 开发开源的二师兄社群逗乐机器人
-- [3:09:56](https://youtu.be/xqJN3NmGukg?t=11396) 11.总结
+- 0:00:00 0.会议开始
+- 0:08:30 1.介绍会议议程
+- 0:10:30 2.陈婧：开发基于 Wechaty 实现微俱乐部会员&活动管理的微信小程序
+- 0:29:40 3.肖良玉:基于 Itchat为 Python Wechaty 实现社区首个 Python 语言的本地 Puppet
+- 0:46:50 4.张瑞宁,邵琦:开发支持电信运营商 5G Chatbot / RCS 的 Wechaty 接入 Puppet 模块
+- 1:05:00 5.马田慧:基于开放 API 封装 Wechaty 接口下的飞书聊天机器人
+- 1:19:30 6.刘靖:基于 Blessed 的 Wechaty 命令行文本客户端软件（仿IRC）
+- 1:34:00 7.林宇靖，张瑞宁:基于 Matrix AppService Wechaty 项目的用户、群与消息等基础功能的完善
+- 1:51:00 8.anaivebird:开发支持 QQ 聊天软件的 Wechaty Puppet Provider 模块
+- 2:21:30 9.左雁茹:基于 Wechaty Puppet Official Account 项目的用户与消息等基础功能的完善
+- 2:42:40 10.井维嘉: 基于Wechaty 开发开源的二师兄社群逗乐机器人
+- 3:09:56 11.总结
 
 ## Wechaty 期末项目列表
 
@@ -70,11 +70,11 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 
 #### 展示视频
 
-{% include iframe.html src="https://www.youtube.com/watch?v=eSgaD32njVw" %}
+{% include iframe.html src="https://v.qq.com/x/page/k3310fa8e2b.html" %}
 
 #### Live Demo 视频
 
-{% include iframe.html src="https://www.youtube.com/watch?v=5LZ08re5YR8" %}
+{% include iframe.html src="https://v.qq.com/x/page/a3310h36zeq.html" %}
 
 ### 基于 Itchat 为 Python Wechaty 实现社区首个 Python 语言的本地 Puppet
 
@@ -87,11 +87,11 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 
 #### 展示视频
 
-{% include iframe.html src="https://www.youtube.com/watch?v=SKhgnRaljzk" %}
+{% include iframe.html src="https://v.qq.com/x/page/h3310cv0fkt.html" %}
 
 #### Live Demo 视频
 
-{% include iframe.html src="https://www.youtube.com/watch?v=fGjEd5O97lQ" %}
+{% include iframe.html src="https://v.qq.com/x/page/r3310cu8z5p.html" %}
 
 ### 开发支持电信运营商 5G Chatbot / RCS 的 Wechaty 接入 Puppet 模块
 
@@ -104,11 +104,11 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 
 #### 展示视频
 
-{% include iframe.html src="https://www.youtube.com/watch?v=cQydTnaym7Y" %}
+{% include iframe.html src="https://v.qq.com/x/page/d33108u2qch.html" %}
 
 #### Live Demo 视频
 
-{% include iframe.html src="https://www.youtube.com/watch?v=4-0lW0kvelE" %}
+{% include iframe.html src="https://v.qq.com/x/page/f33108hywuy.html" %}
 
 ### 基于开放API封装 Wechaty 接口下的飞书聊天机器人
 
@@ -121,11 +121,11 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 
 #### 展示视频
 
-{% include iframe.html src="https://youtu.be/-HOF0LV1d54" %}
+{% include iframe.html src="https://v.qq.com/x/page/i3310q35f5z.html" %}
 
 #### Live Demo 视频
 
-{% include iframe.html src="https://youtu.be/lH3giTpdOtM" %}
+{% include iframe.html src="https://v.qq.com/x/page/y3310hos8va.html" %}
 
 ### 基于 Blessed 的 Wechaty 命令行文本客户端软件（仿IRC）
 
@@ -138,11 +138,11 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 
 #### 展示视频
 
-{% include iframe.html src="https://youtu.be/PssH9epe0tU" %}
+{% include iframe.html src="https://v.qq.com/x/page/y3310gsontd.html" %}
 
 #### Live Demo 视频
 
-{% include iframe.html src="https://youtu.be/D5QbX183kb8" %}
+{% include iframe.html src="https://v.qq.com/x/page/z3310zw17kd.html" %}
 
 ### 基于 Matrix AppService Wechaty 项目的用户、群与消息等基础功能的完善
 
@@ -155,11 +155,11 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 
 #### 展示视频
 
-{% include iframe.html src="https://www.youtube.com/watch?v=3j3BGRnoVtE" %}
+{% include iframe.html src="https://v.qq.com/x/page/f33102gsi6m.html" %}
 
 #### Live Demo 视频
 
-{% include iframe.html src="https://www.youtube.com/watch?v=qtbExkN0uoI" %}
+{% include iframe.html src="https://v.qq.com/x/page/m331018w169.html" %}
 
 ### 开发支持 QQ 聊天软件的 Wechaty Puppet Provider 模块
 
@@ -172,11 +172,11 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 
 #### 展示视频
 
-{% include iframe.html src="https://www.youtube.com/watch?v=Z2IIPe0FLA4" %}
+{% include iframe.html src="https://v.qq.com/x/page/n3310ev9kl4.html" %}
 
 #### Live Demo 视频
 
-{% include iframe.html src="https://www.youtube.com/watch?v=TbIgFhSWVxI" %}
+{% include iframe.html src="https://v.qq.com/x/page/g3310ns51o6.html" %}
 
 ### 基于 Wechaty Puppet Official Account 项目的用户与消息等基础功能的完善
 
@@ -189,11 +189,11 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 
 #### 展示视频
 
-{% include iframe.html src="https://www.youtube.com/watch?v=ySxpkKjv018" %}
+{% include iframe.html src="https://v.qq.com/x/page/b3310j4kg8y.html" %}
 
 #### Live Demo 视频
 
-{% include iframe.html src="https://www.youtube.com/watch?v=iVyutBZMZRE" %}
+{% include iframe.html src="https://v.qq.com/x/page/z3310lxhvbu.html" %}
 
 ### 基于Wechaty 开发开源的二师兄社群逗乐机器人
 
@@ -206,11 +206,11 @@ Wechaty 在多平台、多功能多个维度上，共发布了 9 项任务，并
 
 #### 展示视频
 
-{% include iframe.html src="https://youtu.be/Na9pGdf_6oY" %}
+{% include iframe.html src="https://v.qq.com/x/page/u3310br5o4k.html" %}
 
 #### Live Demo 视频
 
-{% include iframe.html src="https://youtu.be/51EwCNB_Y90" %}
+{% include iframe.html src="https://v.qq.com/x/page/g3310wbhou9.html" %}
 
 ## 欢迎报名开源之夏 2022！
 
