@@ -1,5 +1,5 @@
 ---
- title: "入门：小白如何在wechaty社区发布自己的第一篇博客"
+ title: "技术实习生期初报告"
  author: zuoyang
  categories: report
  tags:
