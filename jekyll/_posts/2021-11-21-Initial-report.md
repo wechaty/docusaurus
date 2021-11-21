@@ -6,7 +6,6 @@
    - report
    - wechaty
    - study
- image: /assets/2021/04-how-to-publish-blog-on-wechaty/rare_book.webp
 ---
 
 > 作者: [jiantongCode](https://github.com/jiantongCode)，一个学习中的实习生
