@@ -78,7 +78,7 @@ const mocker = new Mocker()
 mocker.use(SimpleEnvironment())
 
 const puppet = new PuppetMock({ mocker })
-const wechaty = new Wechaty({ puppet })
+const wechaty = WechatyBuilder.build({ puppet })
 
 wechaty.start()
 
@@ -100,7 +100,7 @@ import {
 
 const mocker = new mock.Mocker()
 const puppet = new PuppetMock({ mocker })
-const bot = new Wechaty({ puppet })
+const bot = WechatyBuilder.build({ puppet })
 
 await bot.start()
 

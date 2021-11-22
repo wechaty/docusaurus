@@ -36,7 +36,7 @@ The method accepts friend request.Check the example below for implementation
 #### Example
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot.on('friendship', async friendship => {
   try {
     console.log(`received friend event.`)
@@ -68,7 +68,7 @@ The method verifies message.Check the example below for implementation.
 **Example** _\(If request content is \`ding\`, then accept the friendship\)_
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot.on('friendship', async friendship => {
   try {
     console.log(`received friend event from ${friendship.contact().name()}`)
@@ -89,7 +89,7 @@ The method gets the contact from friendship.Below is an example for implementati
 #### Example
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot.on('friendship', friendship => {
   const contact = friendship.contact()
   const name = contact.name()
@@ -112,7 +112,7 @@ The method returns the friendship type.Check the below example for implementatio
 ### Example _\(If request content is \`ding\`, then accept the friendship\)_
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot.on('friendship', async friendship => {
   try {
     if (friendship.type() === bot.Friendship.Type.Receive && friendship.hello() === 'ding') {

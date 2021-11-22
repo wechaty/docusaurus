@@ -2,7 +2,7 @@ import React from "react";
 import "./honors-and-awards-section.css";
 
 const HonorsAndAwards = () => {
-    
+
     return(
       <main id="body">
       <section>
