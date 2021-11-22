@@ -72,12 +72,12 @@ The method sends message inside Room, if set mentionList, wechaty will mention t
 ```javascript
 import { FileBox }  from 'file-box'
 import {
-  Wechaty,
+  WechatyBuilder,
   UrlLink,
   MiniProgram,
 }  from 'wechaty'
 
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 await bot.start()
 // after logged in...
 const room = await bot.Room.find({topic: 'wechaty'})
@@ -140,7 +140,7 @@ The method returns: `this` - - Room for chain.
 #### Example  \(Event:join \)
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 await bot.start()
 // after logged in...
 const room = await bot.Room.find({topic: 'topic of your room'}) // change `event-room` to any room topic in your wechat
@@ -155,7 +155,7 @@ if (room) {
 #### Example \(Event:leave \)
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 await bot.start()
 // after logged in...
 const room = await bot.Room.find({topic: 'topic of your room'}) // change `event-room` to any room topic in your wechat
@@ -170,7 +170,7 @@ if (room) {
 #### Example \(Event:topic \)
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 await bot.start()
 // after logged in...
 const room = await bot.Room.find({topic: 'topic of your room'}) // change `event-room` to any room topic in your wechat
@@ -184,7 +184,7 @@ if (room) {
 #### Example \(Event:invite \)
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 await bot.start()
 // after logged in...
 const room = await bot.Room.find({topic: 'topic of your room'}) // change `event-room` to any room topic in your wechat
@@ -208,7 +208,7 @@ The method adds contact in a room.Check the below example for implementation.
 #### Example
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 await bot.start()
 // after logged in...
 const contact = await bot.Contact.find({name: 'lijiarui'}) // change 'lijiarui' to any contact in your wechat
@@ -237,7 +237,7 @@ The method deletes a contact from the room .It works only when the bot is the ow
 #### Example
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 await bot.start()
 // after logged in...
 const room = await bot.Room.find({topic: 'wechat'})          // change 'wechat' to any room topic in your wechat
@@ -274,7 +274,7 @@ The method sets or gets topic from the room.Check the below example for implemen
 #### Example \(When you say anything in a room, it will get room topic. \)
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot
 .on('message', async m => {
   const room = m.room()
@@ -289,7 +289,7 @@ bot
 #### Example _\(When you say anything in a room, it will change room topic. \)_
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot
 .on('message', async m => {
   const room = m.room()
@@ -317,7 +317,7 @@ The methos sets or gets announcement from the room.Check the below example for i
 #### Example  \(When you say anything in a room, it will get room announce. \)
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 await bot.start()
 // after logged in...
 const room = await bot.Room.find({topic: 'your room'})
@@ -328,7 +328,7 @@ console.log(`room announce is : ${announce}`)
 #### Example \(When you say anything in a room, it will change room announce. \)
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 await bot.start()
 // after logged in...
 const room = await bot.Room.find({topic: 'your room'})
@@ -354,7 +354,7 @@ The method gets the contact's roomAlias in the room.It returns  `Promise <string
 #### Example
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot
 .on('message', async m => {
   const room = m.room()
@@ -378,7 +378,7 @@ Check if the room has member `contact`, the return is a Promise and must be `awa
 #### Example _\(Check whether 'lijiarui' is in the room 'wechaty'\)_
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 await bot.start()
 // after logged in...
 const contact = await bot.Contact.find({name: 'lijiarui'})   // change 'lijiarui' to any of contact in your wechat
@@ -429,7 +429,7 @@ This method finds all contacts in a room, if it gets many, then first one is ret
 #### Example \(Find member by name\)
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 await bot.start()
 // after logged in...
 const room = await bot.Room.find({topic: 'wechaty'})           // change 'wechaty' to any room name in your wechat
@@ -446,7 +446,7 @@ if (room) {
 #### Example \(Find member by MemberQueryFilter\)
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 await bot.start()
 // after logged in...
 const room = await bot.Room.find({topic: 'wechaty'})          // change 'wechaty' to any room name in your wechat
@@ -519,7 +519,7 @@ The method finds the  room by by filter: {topic: string \| RegExp},  and returns
 #### Example
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 await bot.start()
 // after logged in
 const roomList = await bot.Room.findAll()                    // get the room list of the bot
@@ -537,7 +537,7 @@ Try to find a room by filter: {topic: string \| RegExp}. The method returns `Pro
 #### Example
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 await bot.start()
 // after logged in...
 const roomList = await bot.Room.find()

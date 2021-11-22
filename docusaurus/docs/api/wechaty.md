@@ -60,7 +60,7 @@ See more:
 **Kind**: global class
 
 * [Wechaty](wechaty.md#Wechaty)
-  * [new Wechaty\(\[options\]\)](wechaty.md#new_Wechaty_new)
+  * [WechatyBuilder.build\(\[options\]\)](wechaty.md#new_Wechaty_new)
   * _instance_
     * [.on\(event, listener\)](wechaty.md#Wechaty+on) ⇒ [`Wechaty`](wechaty.md#Wechaty)
     * [.start\(\)](wechaty.md#Wechaty+start) ⇒ `Promise <void>`
@@ -72,7 +72,7 @@ See more:
   * _static_
     * [.instance\(\[options\]\)](wechaty.md#Wechaty.instance)
 
-### new Wechaty\(\[options\]\)
+### WechatyBuilder.build\(\[options\]\)
 
 Creates an instance of Wechaty.
 
@@ -84,7 +84,7 @@ Creates an instance of Wechaty.
 
 ```javascript
 import { Wechaty }  from 'wechaty'
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot.on('scan',    (qrcode, status) => console.log(['https://api.qrserver.com/v1/create-qr-code/?data=',encodeURIComponent(qrcode),'&size=220x220&margin=20',].join('')))
 bot.on('login',   user => console.log(`User ${user} logined`))
 bot.on('message', message => console.log(`Message: ${message}`))
@@ -312,7 +312,7 @@ Send message to userSelf, in other words, bot send message to itself.
 #### Example
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 await bot.start()
 // after logged in
 
@@ -358,7 +358,7 @@ Get the global instance of Wechaty
 ```javascript
 import { Wechaty }  from 'wechaty'
 
-Wechaty.instance() // Global instance
+WechatyBuilder.build()
 .on('scan', (url, code) => console.log(`Scan QR Code to login: ${code}\n${url}`))
 .on('login',       user => console.log(`User ${user} logined`))
 .on('message',  message => console.log(`Message: ${message}`))
@@ -391,7 +391,7 @@ The option parameter to create a wechaty instance
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| profile | `string` | Wechaty Name.            When you set this:            `new Wechaty({profile: 'wechatyName'})`            it will generate a file called `wechatyName.memory-card.json`.            This file stores the bot's login information.            If the file is valid, the bot can auto login so you don't need to scan the qrcode to login again.            Also, you can set the environment variable for `WECHATY_PROFILE` to set this value when you start.            eg:  `WECHATY_PROFILE="your-cute-bot-name" node bot.js`. This field is deprecated, please use `name` instead. [see more](https://github.com/wechaty/wechaty/issues/2049) |
+| profile | `string` | Wechaty Name.            When you set this:            `WechatyBuilder.build({name: 'wechatyName'})`            it will generate a file called `wechatyName.memory-card.json`.            This file stores the bot's login information.            If the file is valid, the bot can auto login so you don't need to scan the qrcode to login again.            Also, you can set the environment variable for `WECHATY_NAME` to set this value when you start.            eg:  `WECHATY_NAME="your-cute-bot-name" node bot.js`. This field is deprecated, please use `name` instead. [see more](https://github.com/wechaty/wechaty/issues/2049) |
 | puppet | `PuppetModuleName` \| `Puppet` | Puppet name or instance |
 | puppetOptions | `Partial.` | Puppet TOKEN |
 | ioToken | `string` | Io TOKEN |

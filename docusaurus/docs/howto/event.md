@@ -139,7 +139,7 @@ async function onScan (qrcode,status)
   console.info('https://wechaty.js.org/qrcode/' + encodeURIComponent(qrcode))
 }
 
-const bot = new Wechaty({
+const bot = WechatyBuilder.build({
     name: 'bot-name',
   })
 
@@ -852,7 +852,7 @@ The `room-invite` event alerts you when there is a room invitation.
 <TabItem value="js">
 
 ```js
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot.on('room-invite', async roomInvitation => {
   try {
     console.log(`received room-invite event.`)

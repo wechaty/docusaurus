@@ -21,7 +21,7 @@ This method accepts the room invitation. See the following example:
 #### Example
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot.on('room-invite', async roomInvitation => {
   try {
     console.log(`received room-invite event.`)
@@ -40,7 +40,7 @@ This method gets the inviter from the room invitation. Check the following examp
 #### Example
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot.on('room-invite', async roomInvitation => {
   const inviter = await roomInvitation.inviter()
   const name = inviter.name()
@@ -56,7 +56,7 @@ The method gets the room topic from room invitation as shown in the below exampl
 #### Example
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot.on('room-invite', async roomInvitation => {
   const topic = await roomInvitation.topic()
   console.log(`received room invitation event from room ${topic}`)
