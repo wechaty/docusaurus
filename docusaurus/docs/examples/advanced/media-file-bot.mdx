@@ -283,7 +283,7 @@ Specify some functions that you will require for handling different events retur
 You have completed defining all the functions required for handling various bot events. Now, provide a name to initialize the Wechaty bot:
 
 ```js
-const bot = new Wechaty({
+const bot = WechatyBuilder.build({
   name: "media-file-bot",
 });
 ```

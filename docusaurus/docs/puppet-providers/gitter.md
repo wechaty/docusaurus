@@ -95,7 +95,7 @@ Here’s the demo source code for sending an image message to a Gitter room with
 ```ts
 const { Wechaty, FileBox } from 'wechaty'
 
-const wechaty = new Wechaty({
+const wechaty = WechatyBuilder.build({
   puppet: 'wechaty-puppet-gitter',
   puppetOptions: { token: 'your_gitter_token' },
 })

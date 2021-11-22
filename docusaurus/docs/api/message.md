@@ -44,7 +44,7 @@ By using message.from, you will receive the sender name from the message. If the
 ### Example
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot
 .on('message', async message => {
   const contact = message.from()
@@ -67,7 +67,7 @@ The method gets the destination of the message Message.to\(\) will return `null`
 ### Example
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot
 .on('message', async message => {
   const contact = message.from()
@@ -90,7 +90,7 @@ By using the `message.room` you get the room from the message.If that particular
 ### Example
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot
 .on('message', async message => {
   const contact = message.from()
@@ -113,7 +113,7 @@ This method returns the text context for the message.
 ### Example
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot
 .on('message', async message => {
   const contact = message.from()
@@ -137,7 +137,7 @@ Here is an example:
 ### Example
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot
 .on('message', async message => {
   if (message.type() === bot.Message.Type.Recalled) {
@@ -166,12 +166,12 @@ By using `message.say` you can reply a Text, Contact Card, Media File or Link me
 ```javascript
 import { FileBox }  from 'file-box'
 import {
-  Wechaty,
+  WechatyBuilder,
   UrlLink,
   MiniProgram,
 }  from 'wechaty'
 
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot
 .on('message', async message => {
 
@@ -248,7 +248,7 @@ This method gets the type of the wechat message. The different method types supp
 ### Example
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 if (message.type() === bot.Message.Type.Text) {
   console.log('This is a text message')
 }
@@ -307,7 +307,7 @@ By using this method you can forward the received message. This action doesn't t
 ### Example
 
 ```javascript
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 bot
 .on('message', async message => {
   const room = await bot.Room.find({topic: 'wechaty'})

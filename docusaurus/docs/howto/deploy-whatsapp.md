@@ -99,14 +99,14 @@ const {
   Contact,
   Message,
   ScanStatus,
-  Wechaty,
+  WechatyBuilder,
   log,
 }= require('wechaty')
 
 import qrTerm  from 'qrcode-terminal'
 
 console.log(welcome)
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 
 /*
  *Your function goes here

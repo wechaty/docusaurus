@@ -54,7 +54,7 @@ from __future__ import annotations
 from typing import List
 
 from wechaty import (
-    Wechaty,
+    WechatyBuilder,
     Contact,
     Room,
     Message
@@ -145,7 +145,7 @@ class MyBot(Wechaty):
 ```ts
 import {
   Contact,
-  Wechaty,
+  WechatyBuilder,
   log,
   Room,
 } from 'wechaty'
@@ -201,7 +201,7 @@ from __future__ import annotations
 from typing import List
 
 from wechaty import (
-    Wechaty,
+    WechatyBuilder,
     Contact,
     Room,
     Message
@@ -310,7 +310,7 @@ from __future__ import annotations
 from typing import List
 
 from wechaty import (
-    Wechaty,
+    WechatyBuilder,
     Contact,
     Room,
     Message
@@ -398,7 +398,7 @@ class MyBot(Wechaty):
 
 ```ts
 import {
-  Wechaty,
+  WechatyBuilder,
   log,
   Room,
 } from 'wechaty'
@@ -445,7 +445,7 @@ from __future__ import annotations
 from typing import List
 
 from wechaty import (
-    Wechaty,
+    WechatyBuilder,
     Room,
     Message
 )

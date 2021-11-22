@@ -211,7 +211,7 @@ Follow the steps below to build the bot:
 1. Import the required packages in the **TypeScript** file:
 
   ```ts
-  import { Wechaty } from 'wechaty'
+  import { WechatyBuilder } from 'wechaty'
   import { Ducks } from 'ducks'
   import {
       WechatyRedux,
@@ -240,7 +240,7 @@ Follow the steps below to build the bot:
 4. Instantiate Wechaty with Redux Plugin:
 
   ```ts
-  const bot = Wechaty.instance()
+  const bot = WechatyBuilder.build()
   bot.use(WechatyRedux({ store }))
   ```
 
