@@ -128,7 +128,7 @@ const puppet = new PuppetOA({
 Next, you need to configure it to wechaty. The example code is as follows:
 
 ```js
-const bot = new Wechaty({
+const bot = WechatyBuilder.build({
   puppet: puppet
 })
 ```
@@ -143,7 +143,7 @@ In this part, we see the simple message reply function, which is enough to show 
 import {
   Contact,
   Message,
-  Wechaty,
+  WechatyBuilder,
   log,
 } from 'wechaty'
 import { MessageType } from 'wechaty-puppet'
@@ -164,7 +164,7 @@ async function onMessage(msg: Message) {
   }
 }
 
-const bot = new Wechaty({
+const bot = WechatyBuilder.build({
   name: 'ding-dong-bot',
   puppet: new PuppetOA({
     appId: "wxbd801c28fbe1bbbd",

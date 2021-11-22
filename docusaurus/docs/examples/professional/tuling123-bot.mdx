@@ -199,7 +199,7 @@ import qrTerm  from 'qrcode-terminal'
 import Tuling123  from 'tuling123-client'
 
 const {
-  Wechaty,
+  WechatyBuilder,
   Message,
 } = require('wechaty')
 
@@ -229,7 +229,7 @@ const tuling = new Tuling123(TULING123_API_KEY)
 Initializing the bot by providing it a name
 
 ```js
-const bot = new Wechaty()
+const bot = WechatyBuilder.build()
 ```
 
 Assigning proper functions to call when an event is triggered by the bot:

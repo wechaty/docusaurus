@@ -161,7 +161,11 @@ To get to know all our writers, see <https://github.com/wechaty/wechaty.js.org/g
 
 ## History
 
-### main v0.9 (Aug 23, 2021)
+### main v1.0 (Nov 22, 2021)
+
+1. Update docs to Wechaty v1.x with `WechatyBuilder`, and other changes to make it more compatible with Wechaty v1.x
+
+### v0.9 (Aug 23, 2021)
 
 1. Add OpenAPI Specification docs at <https://wechaty.js.org/docs/openapi/> ([#1218](https://github.com/wechaty/wechaty.js.org/issues/1218))
 
