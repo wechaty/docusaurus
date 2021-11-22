@@ -1,6 +1,6 @@
 ---
- title: "技术实习生期初报告"
- author: zuoyang
+ title: "JuziBot 前端实现"
+ author: jiantongCode
  categories: report
  tags:
    - report
@@ -14,7 +14,8 @@
 
 ### 背景信息
 
-配合机器人相关业务，实现对应H5。
+我们在做一个基于wechaty的机器人，是一个可以在微信群聊以及私聊可以实现实时TODO，对常用文件进行储存等我们经常实现但微信没有做的很好的功能，目标是通过JuziBot去帮助用户解决自己的痛点，我主要负责对用户的TODO，File进行可视化管理的实现。
+我们通过wechaty机器人对信息就行收集，内部处理后做出相应回应。
 
 ### 期初目标
 
