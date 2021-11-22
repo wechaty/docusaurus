@@ -23,8 +23,8 @@ Kevin Tung sales assistant initial report
 > [項目连接](https://github.com/KevinTung/sales-assistant)
 
 <center class="half"><center/>
-  <img src="/Users/kevintung/workspace/juzi/asset/sales-Feishu.jpg" style="zoom: 21%;" />
-  <img src="/Users/kevintung/workspace/juzi/asset/sales-Wechat.jpg" alt="sales-Wechat" style="zoom:21%;" />
+  <img src="/Users/kevintung/workspace/juzi/asset/01.webp" style="zoom: 21%;" />
+  <img src="/Users/kevintung/workspace/juzi/asset/02.webp" alt="sales-Wechat" style="zoom:21%;" />
 </center>
 
 ## 项目背景
