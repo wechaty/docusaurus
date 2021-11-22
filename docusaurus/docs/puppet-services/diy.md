@@ -354,7 +354,7 @@ wechaty-token <subcommand>
 
 where <subcommand> can be one of:
 
-- generate - Generate a WechatyBuilder.build Token
+- generate - Generate a Wechaty Token
 - discover - Wechaty TOKEN Service Discovery
 
 For more help, try running `wechaty-token <subcommand> --help`

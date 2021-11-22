@@ -391,7 +391,7 @@ The option parameter to create a wechaty instance
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| profile | `string` | Wechaty Name.            When you set this:            `WechatyBuilder.build({profile: 'wechatyName'})`            it will generate a file called `wechatyName.memory-card.json`.            This file stores the bot's login information.            If the file is valid, the bot can auto login so you don't need to scan the qrcode to login again.            Also, you can set the environment variable for `WECHATY_PROFILE` to set this value when you start.            eg:  `WECHATY_PROFILE="your-cute-bot-name" node bot.js`. This field is deprecated, please use `name` instead. [see more](https://github.com/wechaty/wechaty/issues/2049) |
+| profile | `string` | Wechaty Name.            When you set this:            `WechatyBuilder.build({name: 'wechatyName'})`            it will generate a file called `wechatyName.memory-card.json`.            This file stores the bot's login information.            If the file is valid, the bot can auto login so you don't need to scan the qrcode to login again.            Also, you can set the environment variable for `WECHATY_NAME` to set this value when you start.            eg:  `WECHATY_NAME="your-cute-bot-name" node bot.js`. This field is deprecated, please use `name` instead. [see more](https://github.com/wechaty/wechaty/issues/2049) |
 | puppet | `PuppetModuleName` \| `Puppet` | Puppet name or instance |
 | puppetOptions | `Partial.` | Puppet TOKEN |
 | ioToken | `string` | Io TOKEN |

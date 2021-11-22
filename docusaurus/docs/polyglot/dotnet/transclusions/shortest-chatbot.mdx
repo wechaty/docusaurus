@@ -1,5 +1,5 @@
 ```csharp
-var wechaty = WechatyBuilder.build(options, logger).onScan((qrcode, status) => {
+var wechaty = Wechaty.instance(options, logger).onScan((qrcode, status) => {
   Console.WriteLine($"Scan QR Code to login: {status} https://wechaty.js.org/qrcode/{(qrcode)}`");
 }).OnLogin( user => {
   Console.WriteLine("User {user} logined");
