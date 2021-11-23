@@ -1,14 +1,14 @@
 ---
 title: "2021-技术实习生期初报告-基于5G消息的Wechaty Puppet模块的设计与实现"
 author: Bibabo-BUPT
-categories:article
+categories:
+  - article
 image: /assets/2021/07-ospp-plan-qq-puppet/wechaty-qq-puppet-logo.webp
 tags:
   - 5G message
   - puppet
   - plan
   - Wechaty
-
 
 ---
 
