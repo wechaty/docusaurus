@@ -17,9 +17,9 @@ tags:
 
 - 导师：段清华
 - 实习生：苏尧
-- 项目地址: <https://github.com/juzibot/intern/issues/5>
+- 项目地址: <https://github.com/deepdialog/JuziBot>
 
-简介：juzibot是基于wechaty的信息管理机器人，包括信息收集、管理、搜索、标签分析全文搜索等功能，
+简介：juzibot（[repo](https://github.com/deepdialog/JuziBot)）是基于wechaty的信息管理机器人，包括信息收集、管理、搜索、标签分析全文搜索等功能，
 目前已有Arxiv论文收集和下载、图片OCR识别、记录notes等功能，方便在微信群里将各种文件、笔记等收集，
 更加方便记录和检索。
 
