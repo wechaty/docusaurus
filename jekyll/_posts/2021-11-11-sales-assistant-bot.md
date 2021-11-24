@@ -1,26 +1,12 @@
 ---
 title: sales-assistant
 author: kevintung
-tags:
-  - salesbot
+categories: project
+tags: productivity
 ---
 Kevin Tung sales assistant initial report
   
 ![Wechaty Logo][wechaty-logo-image]
-
-> 部门：技术部门
->
-> 负责人： [童子铨](https://github.com/KevinTung)
->
-> 汇报人：段清华、李佳芮
->
-> 导师：段清华
->
-> 时间：11月1日
->
-> 用户：销售部门、HR部门、管理者
->
-> [項目连接](https://github.com/KevinTung/sales-assistant)
 
 <center class="half"><center/>
   <img src="/Users/kevintung/workspace/juzi/asset/01.webp" style="zoom: 21%;" />
