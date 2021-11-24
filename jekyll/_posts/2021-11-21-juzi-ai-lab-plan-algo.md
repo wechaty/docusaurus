@@ -26,15 +26,23 @@ tags:
 ## 项目详情
 
 - 阶段列表
-  - 熟悉机器人功能开发流程
-  - 开发数个额外功能模块
-  - Image Caption效果优化、提供置信度
-  - 实现功能的自动化测试
+  - 熟悉机器人功能开发流程；
+  - 开发数个额外功能模块；
+  - Image Caption效果优化、提供置信度等；
+  - 功能的开关控制，实现可定制的产品；
+  - 实现功能的自动化测试。
+
+- 当前进度
+  - 完成中文关键词提取的算法优化和库的开发GitHub - deepdialog/ZhKeyBERT: Minimal keyword extraction with BERT
+  - 提供了OCR、keyword extraction、object detection等功能的web api [OCR](https://github.com/deepdialog/docker-ocr-api)、[keyword extraction](https://github.com/deepdialog/docker-keywords-api)、[object detection](https://github.com/juzibot/object-detect-api)
+  - 每个具体功作为独立的api后端，分派到各自的容器中，wechaty作为前端解析微信消息的各种属性和意图，再通过前后端的交互实现具体功能，有利于功能扩展、快速相应
+  - 为Juzi Bot添加了识别arxiv链接并保存相应pdf文件以及爬取论文题目、摘要等信息的功能，并做了关键词抽取
+  - 对含有文本的图片自动做OCR识别，对笔记、文本文件自动做中/英文关键词抽取
 
 - 计划安排:
   - 阶段一
     - 完成时间：11月21日（已完成）
-    - 计划描述：通过OCR、arxiv论文获取等小功能对JuziBot的开发流程有个整体了解
+    - 计划描述：通过OCR、arxiv论文获取等小功能对JuziBot的开发流程有个整体了解，详情见**当前进度**
   - 阶段二
     - 完成时间：11月28日
     - 计划描述：研究关键词抽取、Image Captioning等NLP算法，将相应功能加入到机器人中
