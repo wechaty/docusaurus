@@ -5,7 +5,7 @@ categories:
   - project
 image: /assets/2021/07-ospp-plan-5g-chatbot-puppet/5g-chatbot-ospp.webp
 tags:
-  - 5g
+  - 5G
   - chatbot
   - ecosystem
   - plan
@@ -38,7 +38,5 @@ tags:
   - 阶段三
     1. 完善项目的构建和说明文档
     2. 项目进行部署和稳定性测试
-- 联系方式：
-  - 鲍耀龙：baoyaolong@gmail.com
 
 > Author: [@fabian](https://github.com/fabian4)
