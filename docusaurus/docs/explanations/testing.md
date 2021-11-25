@@ -25,7 +25,7 @@ test("Testing your chatbot", async () => {
    */
   const mocker = new mock.Mocker();
   const puppet = new PuppetMock({ mocker });
-  const bot = new Wechaty({ puppet });
+  const bot = WechatyBuilder.build({ puppet });
 
   /**
    * Start Wechaty Environment
