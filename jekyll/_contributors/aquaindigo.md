@@ -1,7 +1,7 @@
 ---
 name: Yao Su (苏尧)
 bio: 上海交通大学大四在读，句子互动算法实习生
-avatar: /jekyll/assets/contributors/AquaIndigo/avatar.png
+avatar: /assets/contributors/aquaindigo/avatar.webp
 email: 1092702101@qq.com
 ---
 

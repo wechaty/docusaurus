@@ -1,14 +1,12 @@
 ---
 title: "juzibot-期初报告-信息管理机器人-机器人与部分算法实现"
-author: AquaIndigo
-categories:
-  - project
-  - juzi-ai-lab
-image: /assets/2021/11-juzi-ai-lab-plan-algo/PinnaclesGalaxy.webp
+author: aquaindigo
+categories: project
+image: /assets/2021/11-juzi-ai-lab-plan-algo/pinnacles-galaxy.webp
 tags:
   - internship
   - juzi-ai-lab
-  - algorithm internship
+  - algorithm-internship
   - plan
   - other
 ---
