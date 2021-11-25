@@ -56,9 +56,9 @@ The best practice of using Wechaty Docker is like the following:
 
 ```bash
 $ cat > mybot.ts <<'EOF'
-import { Wechaty } from 'wechaty'
+import { WechatyBuilder } from 'wechaty'
 
-Wechaty.instance() // Singleton
+WechatyBuilder.build()
   .on('scan', (qrcode, status) => console.log(`Scan QrCode to login: ${status}\n${qrcode}`))
   .on('login',       user      => console.log(`User ${user} logined`))
   .on('message',  message      => console.log(`Message: ${message}`))

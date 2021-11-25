@@ -127,10 +127,10 @@ Create a new file called `starter-bot.ts` in the root project directory. Add the
 
 ```ts
 // Importing the Wechaty npm package
-import { Wechaty } from 'wechaty'
+import { WechatyBuilder } from 'wechaty'
 
 // Initializing the bot
-const bot = new Wechaty({
+const bot = WechatyBuilder.build({
     name: 'starter-bot',
 })
 

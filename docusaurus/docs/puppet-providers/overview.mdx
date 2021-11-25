@@ -47,9 +47,9 @@ We have the following six lines code, which is the world’s shortest chatbot:
 
 ```sh
 // bot.ts
-import { Wechaty } from 'wechaty'
+import { WechatyBuilder } from 'wechaty'
 
-Wechaty.instance() // Global Instance
+WechatyBuilder.build()
 .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://wechaty.js.org/qrcode/${encodeURIComponent(qrcode)}`))
 .on('login',            user => console.log(`User ${user} logged in`))
 .on('message',       message => console.log(`Message: ${message}`))
@@ -81,11 +81,10 @@ On the other hand, you can import the Wechaty Puppet Provider NPM module directl
 
 ```sh
 // bot.ts
-import { Wechaty } from 'wechaty'
-+ import { PuppetWhatsapp } from 'wechaty-puppet-whatsapp'
+import { WechatyBuilder } from 'wechaty'
+import { PuppetWhatsapp } from 'wechaty-puppet-whatsapp'
 
-- Wechaty.instance() // Global Instance
-+ Wechaty.instance({ puppet: new PuppetWhatsapp() })
+Wechaty.instance({ puppet: new PuppetWhatsapp() })
 .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://wechaty.js.org/qrcode/${encodeURIComponent(qrcode)}`))
 .on('login',            user => console.log(`User ${user} logged in`))
 .on('message',       message => console.log(`Message: ${message}`))
