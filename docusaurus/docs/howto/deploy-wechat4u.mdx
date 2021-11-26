@@ -99,14 +99,14 @@ import {
   Contact,
   Message,
   ScanStatus,
-  WechatyBuilder,
+  Wechaty,
   log,
 } from 'wechaty'
 
 import { qrTerm } from 'qrcode-terminal'
 
 console.log(welcome)
-const bot = WechatyBuilder.build()
+const bot = new Wechaty()
 // or use the core API
 // import { WechatCore } from 'wechat4u/lib/core'
 /*

@@ -29,7 +29,7 @@ import { Wechaty }   from 'wechaty'
 import { PuppetMock } from 'wechaty-puppet-mock'
 
 const puppet  = new PuppetMock()
-const wechaty = WechatyBuilder.build({ puppet })
+const wechaty = new Wechaty({ puppet })
 
 wechaty.start()
 ```
@@ -47,7 +47,7 @@ const mocker = new Mocker()
 mocker.use(SimpleEnvironment())
 
 const puppet = new PuppetMock({ mocker })
-const wechaty = WechatyBuilder.build({ puppet })
+const wechaty = new Wechaty({ puppet })
 
 wechaty.start()
 
@@ -64,7 +64,7 @@ import { PuppetMock, mock }   from 'wechaty-puppet-mock'
 
 const mocker = new mock.Mocker()
 const puppet = new PuppetMock({ mocker })
-const bot = WechatyBuilder.build({ puppet })
+const bot = new Wechaty({ puppet })
 
 await bot.start()
 
