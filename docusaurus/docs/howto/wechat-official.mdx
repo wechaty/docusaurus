@@ -8,7 +8,7 @@ WeChat Official Account is a perfect enforcement of the concept of SoLoMo(Social
 
 ## Requirements
 
-1. Your system must have [Node.js](https://nodejs.org/en/download/package-manager/) installed (version >= 12).
+1. Your system must have [Node.js](https://nodejs.org/en/download/package-manager/) installed (version >= 16).
 2. Your system must have [Wechaty](https://github.com/wechaty/wechaty) (version >= 0.40).
 3. You must be familiar with [Wechaty puppet official account](https://www.npmjs.com/package/wechaty-puppet-official-account).
 
@@ -101,11 +101,11 @@ import {
   Contact,
   Message,
   ScanStatus,
-  WechatyBuilder,
+  Wechaty,
   log,
 } from 'wechaty'
 console.log(welcome)
-const bot = WechatyBuilder.build()
+const bot = new Wechaty()
 /*
  *Your function goes here
  */
@@ -114,7 +114,7 @@ const bot = WechatyBuilder.build()
 6. Configure your `appId`, `appSecret`, `token`, `port` as follows:
 
 ```ts
-const bot = WechatyBuilder.build({
+const bot = new Wechaty({
     name: '<your bot name>',
   puppet: new PuppetOA({
     appId: "wxbd801c28fbe1bbbd",
