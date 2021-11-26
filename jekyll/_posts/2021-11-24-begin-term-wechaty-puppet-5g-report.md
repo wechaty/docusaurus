@@ -16,7 +16,7 @@ tags:
 - 项目名称：基于5G消息的Wechaty Puppet模块的设计与实现
 - 导师：苏畅
 - 学生：鲍耀龙
-- 项目介绍：<https://github.com/juzibot/intern/issues/1
+- 项目介绍：<https://github.com/juzibot/intern/issues/1>
 - 代码地址：<https://github.com/fabian4/puppet-5G>
 - 背景介绍
   - Wechaty 社区目前已经支持微信、Whatsapp、企业微信、飞书等常见流行即时通讯工具，并且能够通过多语言 SDK （比如 Python Wechaty） 进行调用。
@@ -41,3 +41,4 @@ tags:
     2. 项目进行部署和稳定性测试
 
 > Author: [@fabian](https://github.com/fabian4)
+
