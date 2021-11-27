@@ -75,9 +75,9 @@ The `buildx` seems to work perfectly, but the arm arch will take almost 10X time
 For `npm install`:
 
 ```sh
- => [linux/amd64  6/13] RUN  npm install   && rm -fr /tmp/* ~/.npm      185.1s
- => [linux/arm/v7  6/13] RUN  npm install   && rm -fr /tmp/* ~/.npm     1469.4s
- => [linux/arm64  6/13] RUN  npm install   && rm -fr /tmp/* ~/.npm      1473.2s
+ => [linux/amd64  6/13] RUN  npm install   && rm -fr /tmp/* ~/.npm  185.1s
+ => [linux/arm64  6/13] RUN  npm install   && rm -fr /tmp/* ~/.npm  1473.2s
+ => [linux/arm/v7 6/13] RUN  npm install   && rm -fr /tmp/* ~/.npm  1469.4s
 ```
 
 For `npm test`:
@@ -85,15 +85,15 @@ For `npm test`:
 ```sh
  => [linux/amd64  9/13] RUN  npm test   && npm run dist   && npm link   165.5s
  => [linux/arm64  9/13] RUN  npm test   && npm run dist   && npm link   1482.5s
- => [linux/arm/v7  9/13] RUN  npm test   && npm run dist   && npm link  1295.2s
+ => [linux/arm/v7 9/13] RUN  npm test   && npm run dist   && npm link   1295.2s
 ```
 
 For `puppet-install`:
 
 ```sh
- => [linux/amd64 10/13] RUN  npm run puppet-install   && sudo rm -fr /tmp/* ~/.npm      113.3s
- => [linux/arm64 10/13] RUN  npm run puppet-install   && sudo rm -fr /tmp/* ~/.npm      219.1s
- => [linux/arm/v7 10/13] RUN  npm run puppet-install   && sudo rm -fr /tmp/* ~/.npm     444.4s
+ => [linux/amd64  10/13] RUN  npm run puppet-install  113.3s
+ => [linux/arm64  10/13] RUN  npm run puppet-install  219.1s
+ => [linux/arm/v7 10/13] RUN  npm run puppet-install  444.4s
 ```
 
 So we have to increase the `TAP_TIMEOUT` from the `60` seconds (the default) to `600` seconds, to make sure the unit tests are finished in time.
@@ -107,8 +107,8 @@ $ docker pull wechaty/wechaty:1.11
 
 OS/ARCH         COMPRESSED SIZE 
 linux/amd64     958.55 MB
-linux/arm/v7    871.55 MB
 linux/arm64     667.1 MB
+linux/arm/v7    871.55 MB
 ```
 
 ## Related issues/links
