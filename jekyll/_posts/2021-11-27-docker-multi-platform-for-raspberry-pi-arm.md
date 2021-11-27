@@ -113,9 +113,9 @@ linux/arm64     667.1 MB
 
 ## Related issues/links
 
-- [Build & deploy Wechaty docker image with arm64 multi platform support wechaty/wechaty#2248](https://github.com/wechaty/wechaty/issues/2248)
 - [Build docker image on arm64, @Yc-Chen, wechaty/wechaty#2306](https://github.com/wechaty/wechaty/pull/2306)
-- https://github.com/huan/docker-simple-mail-forwarder/issues/76
+- [Build & deploy Wechaty docker image with arm64 multi platform support wechaty/wechaty#2248](https://github.com/wechaty/wechaty/issues/2248)
+- [Use docker buildx to add arm platform to our docker image huan/docker-simple-mail-forwarder#76](https://github.com/huan/docker-simple-mail-forwarder/issues/76)
 - [Running and Building ARM Docker Containers on x86](https://www.stereolabs.com/docs/docker/building-arm-container-on-x86/)
 - [Pull docker image for different architecture](https://stackoverflow.com/a/69917870/1123955)
 
