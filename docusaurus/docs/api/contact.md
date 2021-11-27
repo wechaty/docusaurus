@@ -57,12 +57,12 @@ All wechat contacts\(friend\) will be encapsulated as a Contact.
 ```javascript
 import { FileBox }  from 'file-box'
 import {
-  WechatyBuilder,
+  Wechaty,
   UrlLink,
   MiniProgram,
 }  from 'wechaty'
 
-const bot = WechatyBuilder.build()
+const bot = new Wechaty()
 await bot.start()
 const contact = await bot.Contact.find({name: 'lijiarui'})  // change 'lijiarui' to any of your contact name in wechat
 
@@ -180,7 +180,7 @@ This method returns the type of the Contact.Check the example below for implemen
 ### Example
 
 ```javascript
-const bot = WechatyBuilder.build()
+const bot = new Wechaty()
 await bot.start()
 const isOfficial = contact.type() === bot.Contact.Type.Official
 ```
@@ -265,7 +265,7 @@ The method finds the contact by name or alias, if the result more than one, retu
 #### Example
 
 ```javascript
-const bot = WechatyBuilder.build()
+const bot = new Wechaty()
 await bot.start()
 const contactFindByName = await bot.Contact.find({ name:"ruirui"} )
 const contactFindByAlias = await bot.Contact.find({ alias:"lijiarui"} )
@@ -287,7 +287,7 @@ This method finds contact by `name` or `alias`.If  you use Contact.findAll\(\) g
 #### Example
 
 ```javascript
-const bot = WechatyBuilder.build()
+const bot = new Wechaty()
 await bot.start()
 const contactList = await bot.Contact.findAll()                      // get the contact list of the bot
 const contactList = await bot.Contact.findAll({ name: 'ruirui' })    // find all of the contacts whose name is 'ruirui'

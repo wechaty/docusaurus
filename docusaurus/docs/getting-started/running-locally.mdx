@@ -290,7 +290,7 @@ import {
   Contact,
   Message,
   ScanStatus,
-  WechatyBuilder,
+  Wechaty,
   log,
 }from 'wechaty'
 
@@ -364,7 +364,7 @@ async function onMessage (msg: Message) {
 Now initializing the bot by providing a name.
 
 ```ts
-const bot = WechatyBuilder.build({
+const bot = new Wechaty({
   name: 'ding-dong-bot',
 })
 ```
