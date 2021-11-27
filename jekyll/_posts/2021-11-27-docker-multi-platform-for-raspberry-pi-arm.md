@@ -8,7 +8,7 @@ tags:
   - raspberry-pi
   - arm
   - news
-image: /assets/2021/docker-multi-platform-for-raspberry-pi-arm/docker-arm-amd.webp
+image: /assets/2021/11-docker-multi-platform-for-raspberry-pi-arm/docker-arm-amd.webp
 ---
 
 For a long time, wechaty docker image was build for platform amd64. Today, Wechaty is supporting new platform: Raspberry Pi (ARM)!
@@ -100,7 +100,7 @@ So we have to increase the `TAP_TIMEOUT` from the `60` seconds (the default) to 
 
 ## Published: Multi-arch enable Docker Image
 
-[![Docker Multi Arch: amd64 & arm64 & arm/v7](/assets/2021/docker-multi-platform-for-raspberry-pi-arm/docker-wechaty-multi-arch.webp)](https://hub.docker.com/r/wechaty/wechaty/tags)
+[![Docker Multi Arch: amd64 & arm64 & arm/v7](/assets/2021/11-docker-multi-platform-for-raspberry-pi-arm/docker-wechaty-multi-arch.webp)](https://hub.docker.com/r/wechaty/wechaty/tags)
 
 ```sh
 $ docker pull wechaty/wechaty:1.11
