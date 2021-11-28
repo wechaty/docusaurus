@@ -98,6 +98,10 @@ For `puppet-install`:
 
 So we have to increase the `TAP_TIMEOUT` from the `60` seconds (the default) to `600` seconds, to make sure the unit tests are finished in time.
 
+Total GitHub Action will take about 1.5 hours to finish building and pushing multi-platform docker image for Wechaty:
+
+> Deploy to DockerHub: 1h 38m 49s
+
 ## Published: Multi-arch enable Docker Image
 
 [![Docker Multi Arch: amd64 & arm64 & arm/v7](/assets/2021/11-docker-multi-platform-for-raspberry-pi-arm/docker-wechaty-multi-arch.webp)](https://hub.docker.com/r/wechaty/wechaty/tags)
