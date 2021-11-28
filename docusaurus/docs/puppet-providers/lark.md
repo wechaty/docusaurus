@@ -106,12 +106,12 @@ You can follow up the steps mentioned below:
       Contact,
       Message,
       ScanStatus,
-      WechatyBuilder,
+      Wechaty,
       log,
     } from 'wechaty'
 
     console.log(welcome)
-    const bot = WechatyBuilder.build()
+    const bot = new Wechaty()
 
     /*
      *Your function goes here

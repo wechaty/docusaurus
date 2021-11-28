@@ -1,5 +1,5 @@
 ---
-title: 'Add events and customise a bot'
+title: 'Listen to events'
 ---
 
 <!-- MDX import -->
@@ -139,7 +139,7 @@ async function onScan (qrcode,status)
   console.info('https://wechaty.js.org/qrcode/' + encodeURIComponent(qrcode))
 }
 
-const bot = WechatyBuilder.build({
+const bot = new Wechaty({
     name: 'bot-name',
   })
 
@@ -852,7 +852,7 @@ The `room-invite` event alerts you when there is a room invitation.
 <TabItem value="js">
 
 ```js
-const bot = WechatyBuilder.build()
+const bot = new Wechaty()
 bot.on('room-invite', async roomInvitation => {
   try {
     console.log(`received room-invite event.`)

@@ -82,13 +82,13 @@ npm install wechaty-puppet-gitter
 3. To pass the token, add the snippets below to the head of examples/ding-dong-bot.ts file:
 
 ```ts
-import { WechatyBuilder } from 'wechaty'
+import { Wechaty } from 'wechaty'
 /**
  * Personal Access Token: this token can be used to access the Gitter API.
  *  https://developer.gitter.im/apps
  */
 const puppet  = new PuppetGitter({ token: 'your_gitter_token' })
-const wechaty = WechatyBuilder.build({ puppet })
+const wechaty = new Wechaty({ puppet })
 
  wechaty.start()
 
