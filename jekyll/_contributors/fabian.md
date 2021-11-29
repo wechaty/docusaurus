@@ -2,7 +2,7 @@
 name: fabian
 site: https://fabian4.github.io/
 bio: a passionate learner
-avatar: /assets/contributors/fabian/avatar.png
+avatar: /assets/contributors/fabian/avatar.webp
 email: baoyaolong@gmail.com
 ---
 

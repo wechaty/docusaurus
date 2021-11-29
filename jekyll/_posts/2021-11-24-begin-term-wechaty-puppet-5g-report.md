@@ -3,9 +3,9 @@ title: "2021-期初报告-基于5G平台开发puppet模块接入wechaty"
 author: fabian
 categories:
   - project
-image: /assets/2021/07-ospp-plan-5g-chatbot-puppet/5g-chatbot-ospp.webp
+image: /assets/2021/11-begin-term-wechaty-puppet-5g-report/5g-chatbot-ospp.webp
 tags:
-  - 5G
+  - 5g
   - chatbot
   - ecosystem
   - plan
