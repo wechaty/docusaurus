@@ -1,18 +1,18 @@
 ---
-title: "2021-技术实习生期初报告-基于5G消息的Wechaty Puppet模块的设计与实现"
+title: "2021-技术实习生期初报告-基于5g消息的wechaty puppet模块的设计与实现"
 author: Bibabo-BUPT
 categories:
   - article
 image: /asset/2021/11-juzi-wechaty-5G/galaxy.webp
 tags:
-  - 5G message
+  - 5g message
   - puppet
   - plan
-  - Wechaty
+  - wechaty
 
 ---
 
-- 项目名称：基于5G消息的Wechaty Puppet模块的设计于实现
+- 项目名称：基于5g消息的Wechaty Puppet模块的设计于实现
 - 导师：苏畅
 - 学生：张嘉璐
 - 项目介绍：<https://github.com/juzibot/intern/issues/1>
