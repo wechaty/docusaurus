@@ -1,14 +1,7 @@
 ---
 name: Bibabo-BUPT
-site: https://github.com/bibabo-bupt
+site: https://github.com/Bibabo-BUPT
 bio: More than ordinary people
-avatar: /assets/contributors/bibabo-bupt/avatar.png
+avatar: /assets/contributors/bibabo-bupt/avatar.webp
 email: 745463206@qq.com
 ---
-
-## 联系我
-
-- Github: <https://github.com/bibabo-bupt>
-- 微信: Julia02200059
-- 邮箱: 745463206@qq.com
-- Phone: 13021985169
