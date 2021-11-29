@@ -11,7 +11,7 @@ This page will helps you to build a deeper understanding of the underlying techn
 The bot class that you always start with.
 
 ```ts
-const bot = WechatyBuilder.build()
+const bot = new Wechaty()
 await wechaty.start()
 ```
 

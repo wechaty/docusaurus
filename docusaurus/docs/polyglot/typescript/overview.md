@@ -51,9 +51,9 @@ Learn more from blog post: [Google Cloud Shell Tutorials for Wechaty](https://we
 6 lines of JavaScript/TypeScript:
 
 ```ts
-import { WechatyBuilder } from 'wechaty'
+import { Wechaty } from 'wechaty'
 
-WechatyBuilder.build()
+Wechaty.instance()
   .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://wechaty.js.org/qrcode/${encodeURIComponent(qrcode)}`))
   .on('login',            user => console.log(`User ${user} logged in`))
   .on('message',       message => console.log(`Message: ${message}`))
