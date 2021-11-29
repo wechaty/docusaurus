@@ -21,6 +21,10 @@ tags:
 目前已有Arxiv论文收集和下载、图片OCR识别、记录notes等功能，方便在微信群里将各种文件、笔记等收集，
 更加方便记录和检索。
 
+## Proposal Video
+
+{% include iframe.html src="https://www.youtube.com/watch?v=jX9B4IW1xbo" %}
+
 ## 项目详情
 
 - 阶段列表
