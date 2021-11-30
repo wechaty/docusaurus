@@ -1,5 +1,5 @@
 ---
- title: "基于wechaty秒回实现的互动机器人 JuziBot"
+ title: "基于wechaty实现的互动机器人 JuziBot"
  author: jiantong-code
  categories: article
  tags:
@@ -8,7 +8,7 @@
  image: /assets/2021/11-wechaty-juzibot-web/info.webp
 ---
 
-## 基于wechaty秒回实现的互动机器人 JuziBot
+## 基于wechaty实现的互动机器人 JuziBot
 
 ## 背景信息
 
