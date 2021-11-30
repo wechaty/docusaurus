@@ -8,7 +8,6 @@ tags:
   - juzi-ai-lab
   - algorithm-internship
   - plan
-  - other
 ---
 
 ## 项目信息
@@ -24,6 +23,8 @@ tags:
 ## Proposal Video
 
 {% include iframe.html src="https://www.youtube.com/watch?v=jX9B4IW1xbo" %}
+
+{% include iframe.html src="/assets/2021/11-juzi-ai-lab-plan-algo/proposal.pdf" %}
 
 ## 项目详情
 
