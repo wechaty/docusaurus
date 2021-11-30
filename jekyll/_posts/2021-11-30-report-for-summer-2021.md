@@ -39,7 +39,7 @@ image: /assets/2021/11-report-for-summer-2021/2.webp
 ![项目ID](/assets/2021/11-report-for-summer-2021/2.webp)
 
 我们的项目群也是非常壮大哦~
-![项目群](/assets/2021/11-report-for-summer-2021/message3.webp)
+![项目群](/assets/2021/11-report-for-summer-2021/3.webp)
 
 ## 不是结项，而是开始
 
