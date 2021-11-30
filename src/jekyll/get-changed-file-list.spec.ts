@@ -14,6 +14,7 @@ test('getChangedFileList()', async t => {
   const fileList = await getChangedFileList()
   t.true(fileList.length > TOTAL_REPO_FILE_NUM, 'should get all repo files')
 
+  t.true(fileList.includes('README.md'), 'should include README.md')
   t.true(fileList.includes('jekyll/_contributors/huan.md'), 'should include huan.md')
 })
 
