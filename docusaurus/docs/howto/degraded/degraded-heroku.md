@@ -27,7 +27,7 @@ This guide demonstrates setting up a Deploy to Heroku Button with [Wechaty Start
 </li>
 <li> The deploy with heroku button is now set up.
 
-![Heroku button](../../static/img/howto/heroku/heroku.webp)
+<!-- ![Heroku button](../../static/img/howto/heroku/heroku.webp) -->
 </li>
 </ol>
 
@@ -87,7 +87,7 @@ Here wechaty-test-123 is the name of the app, created in the previous step. You 
 ### Running the bot
 
 To run the Bot on the Heroku CLI use the command `heroku local web` on your terminal. The ding-dong starter bot  is now successfully running.
-![Heroku button](../../static/img/howto/heroku/heroku3.webp)
+<!-- ![Heroku button](../../static/img/howto/heroku/heroku3.webp) -->
 
 ## Use Cases
 

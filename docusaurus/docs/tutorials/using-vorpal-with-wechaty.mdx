@@ -51,7 +51,7 @@ import { Wechaty }        from 'wechaty'
 import { WechatyVorpal }  from 'wechaty-vorpal'
 import hackerNews  from 'vorpal-hacker-news'
 
-const wechaty = WechatyBuilder.build()
+const wechaty = new Wechaty()
 
 wechaty.use(
   WechatyVorpal({
@@ -238,7 +238,7 @@ import {
   Contact,
   Message,
   ScanStatus,
-  WechatyBuilder,
+  Wechaty,
   log,
 } from 'wechaty'
 
@@ -329,7 +329,7 @@ Now, you have to define some functions that will help you to handle the differen
 You have completed defining all the functions required for handling various bot events. Now, provide a name to initialize the Wechaty bot:
 
 ```ts
-const bot = WechatyBuilder.build({
+const bot = new Wechaty({
     name: "vorpal-bot",
 })
 ```
