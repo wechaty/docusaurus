@@ -12,9 +12,9 @@ tags:
   - plan
 ---
 
-## 基于5G平台开发puppet模块接入wechaty
+## 基于 5G 平台开发 puppet 模块接入 wechaty
 
-- 项目名称：基于5G消息的Wechaty Puppet模块的设计与实现
+- 项目名称：基于5G消息的 Wechaty Puppet 模块的设计与实现
 - 学生：鲍耀龙
 - 导师：苏畅
 - 项目介绍：<https://github.com/juzibot/intern/issues/1>
@@ -28,8 +28,8 @@ tags:
 
 ### 目标计划
 
-- 基于5G平台的开放api进行封装，实现简单的`ding-dong-bot`。
-- 丰富5G的消息模式，实现支持富文本、文件、css等多样消息格式的 puppet。
+- 基于 5G 平台的开放 api 进行封装，实现简单的`ding-dong-bot`。
+- 丰富 5G 的消息模式，实现支持富文本、文件、css等多样消息格式的 puppet。
 
 ### 项目进展
 
@@ -44,7 +44,7 @@ tags:
 ### 计划安排
 
 - 阶段一
-  1. 熟悉 wechaty 的 api，将5G消息和 wechaty 的丰富功能进行整合。
+  1. 熟悉 wechaty 的 api，将 5G 消息和 wechaty 的丰富功能进行整合。
   2. 封装 文本、文件、css等多样消息格式，简化调用模式。
 - 阶段二
   1. 完善消息和缓存模块、支持消息和联系人内容的缓存。
