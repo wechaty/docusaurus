@@ -5,9 +5,10 @@ categories:
   - article
 image: /assets/2021/11-wechaty-puppet-based-on-5g-message/galaxy.webp
 tags:
-  - 5g_message
+  - 5g
   - puppet
   - plan
+  - puppet-walnut
 
 ---
 
