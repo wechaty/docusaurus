@@ -30,10 +30,10 @@ import TabItem from '@theme/TabItem'
 <TabItem value="ts">
 
 ```ts
-import { WechatyBuilder } from 'wechaty'
+import { Wechaty } from 'wechaty'
 
 async function main () {
-  const bot = WechatyBuilder.build()
+  const bot = new Wechaty()
   // TODO: init your bot at here...
   // bot.on('scan', console.info)
   await bot.start()
@@ -50,7 +50,7 @@ main()
 import { Wechaty }  from 'wechaty'
 
 async function main () {
-  const bot = WechatyBuilder.build()
+  const bot = new Wechaty()
   // TODO: init your bot at here...
   // bot.on('scan', console.info)
   await bot.start()
@@ -102,7 +102,7 @@ package io.github.wechaty;
 
 class Bot{
   public static void main(String args[]){
-    Wechaty bot = WechatyBuilder.build()
+    Wechaty bot = new Wechaty()
     // TODO: init your bot at here...
     bot.start(true);
   }
@@ -126,7 +126,7 @@ package wechaty
 
 object DingDongBot {
   def main(args: Array[String]): Unit = {
-    bot = WechatyBuilder.build()
+    bot = new Wechaty()
     // TODO: init your bot at here
     bot.start()
     Thread.currentThread().join()
@@ -138,7 +138,7 @@ object DingDongBot {
 <TabItem value="csharp">
 
 ```csharp
-var bot = WechatyBuilder.build()
+var bot = new Wechaty()
 // TODO: init your bot at here...
 bot.Start();
 ```

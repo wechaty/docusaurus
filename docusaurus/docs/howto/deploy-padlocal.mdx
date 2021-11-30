@@ -103,7 +103,7 @@ import {Contact, Message, ScanStatus, Wechaty} from "wechaty";
 
 const token: string = ""            // padlocal token
 const puppet = new PuppetPadlocal({ token })
-const bot = WechatyBuilder.build({
+const bot = new Wechaty({
     name: "TestBot",
     puppet,
 })

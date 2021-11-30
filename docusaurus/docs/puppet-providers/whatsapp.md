@@ -113,7 +113,7 @@ npm install wechaty-puppet-whatsapp
 ```ts
   
 import {
-  WechatyBuilder,
+  Wechaty,
   ScanStatus,
   log,
 }               from 'wechaty'
@@ -121,7 +121,7 @@ import {
 import qrcodeTerminal from 'qrcode-terminal'
 
 console.log(welcome)
-const bot = WechatyBuilder.build()
+const bot = new Wechaty()
 
 /*
  *Your function goes here

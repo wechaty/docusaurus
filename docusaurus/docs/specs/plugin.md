@@ -51,7 +51,7 @@ const kickoutPlugin = (options = {}) => {
   }
 }
 
-const wechaty = WechatyBuilder.build()
+const wechaty = new Wechaty()
 wechaty.use(kickOffPlugin({ roomTopic: 'Test Room' }))
 ```
 
