@@ -1,6 +1,6 @@
 ---
 title: "成功结项！大学生的一小步，开发者的一大步"
-author: Iron-Conrad
+author: IronConrad
 categories: article
 tags:
   - blog
