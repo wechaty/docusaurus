@@ -34,34 +34,15 @@ image: /assets/2021/11-how-to-develop-wechaty-puppet-module-supporting-5g-messag
 在[5G消息开发者社区](https://www.5g-msg.com/)申请开发接口，填写Chatbot信息并准备一个回调地址，可以是服务器的公网IP和端口号构成，也可以是提前申请好的域名。
 
 ![config](/assets/2021/11-how-to-develop-wechaty-puppet-module-supporting-5g-messages/config.webp)
-
+  
 #### 获取token：
 
 - 首先要实现 `https://{notifyURL}/notifyPath` 这个接口进行身份鉴权并将代码部署到服务器上，其中`{notifyURL}`为申请Chatbot时所设置的回调地址。该接口的实现逻辑只需原样返回请求消息中的echoStr随机字符串和appId，如下面的这段验证示例所示，具体的实现不限语言。可参考 [中国电信-中国联通 5G 消息业务平台行业客户接入接口技术规范 V1.0.4文档](https://github.com/wechaty/puppet-walnut/blob/main/docs/5g-message-service-platform-industry-customer-access-interface-specification.pdf)（以下简称“接口文档”）中第6.2 部分。
-
-```typescript
-import Koa  from 'koa'
-import Router from 'koa-router'
-const app = new Koa()
-const router = new Router()
-app.use(async (ctx: any, next: any) => {
-      const start = Date.now()
-      const ms = Date.now() - start
-      log.verbose(`${ctx.method} ${ctx.url} - ${ms}ms`)
-      await next()
-    })
-router.get('/sms/notifyPath', async (ctx: any) => {
-      const echostr = ctx.request.header.echostr
-      ctx.body = {
-        msg: 'notifyPath',
-      }
-      ctx.set('appId', '你申请的chatbot的appId')
-      ctx.set('echoStr', echostr)
-    })
-```
-
+  
+[notify](/assets/2021/11-how-to-develop-wechaty-puppet-module-supporting-5g-messages/notify.webp)
+  
 - 将以下代码导入 postman，修改 sipID、appID、appKey 和 senderPhone，点击 send 按钮即可获取到 token，可查看参考[中国电信-中国联通 5G 消息业务平台行业客户接入接口技术规范 V1.0.4文档](https://github.com/wechaty/puppet-walnut/blob/main/docs/5g-message-service-platform-industry-customer-access-interface-specification.pdf) 中6.1部分。
-
+  
 ```json
 {
     "name": "get_token",
@@ -124,79 +105,26 @@ router.get('/sms/notifyPath', async (ctx: any) => {
         "response": []
 }
 ```
-
+  
 #### 下行消息：
-
+  
 获取 token 后，即可进行下行消息发送，即终端 APP 可收到 Chatbot 所发送的消息。需要实现 `https://{serverRoot}/bot/{apiVersion}/{chatbotId}/messages` 接口。具体的请求方法，参照[中国电信-中国联通 5G 消息业务平台行业客户接入接口技术规范 V1.0.4文档](https://github.com/wechaty/puppet-walnut/blob/main/docs/5g-message-service-platform-industry-customer-access-interface-specification.pdf) 的 9.2部分。
 
 终端接收到短信示例，如图：
-
+  
 ![message1](/assets/2021/11-how-to-develop-wechaty-puppet-module-supporting-5g-messages/message1.webp)
 
 ### 2.上行消息
 
 需要实现 `http://{notifyURL}/messageNotification/{chatbotId}/messages` 这个接口，具体的请求方法参照[中国电信-中国联通 5G 消息业务平台行业客户接入接口技术规范 V1.0.4文档](https://github.com/wechaty/puppet-walnut/blob/main/docs/5g-message-service-platform-industry-customer-access-interface-specification.pdf) 中的 11.1 部分，实现该接口后，终端即可向Chatbot发送消息，如下图所示：
 
-![message2](/assets/2021/11-how-to-develop-wechaty-puppet-module-supporting-5g-messages/message2.webp)
+[message2](/assets/2021/11-how-to-develop-wechaty-puppet-module-supporting-5g-messages/message2.webp)
 
 ## 三、将5G Chatbot接入wechaty puppet中
 
 1. 将上述身份鉴权和上行消息的业务逻辑在start()函数中实现,可参考如下代码：
 
-```typescript
-override async start (): Promise<void> {
-    if (this.state.on()) {
-      log.warn('PuppetWalnut', 'start() is called on a ON puppet. await ready(on) and return.')
-      await this.state.ready('on')
-      return
-    }
-    this.state.on('pending')
-
-    // Do some async initializing tasks
-
-    app.use(koaBody({
-      mltipart: true,
-    }))
-
-    app.use(async (ctx: any, next: any) => {
-      const start = Date.now()
-      const ms = Date.now() - start
-      log.verbose(`${ctx.method} ${ctx.url} - ${ms}ms`)
-      await next()
-    })
-
-    router.get('/sms/notifyPath', async (ctx: any) => {
-      const echostr = ctx.request.header.echostr
-      ctx.body = {
-        msg: 'notifyPath',
-      }
-      ctx.set('appId', this.appId)
-      ctx.set('echoStr', echostr)
-    })
-    
-    .post(`/sms/messageNotification/sip:${this.sipId}@botplatform.rcs.chinaunicom.cn/messages`, async (ctx: any) => {
-        const payload = ctx.request.body
-        this.messageStore[payload.messageId] = payload
-        this.emit('message', { messageId: payload.messageId })
-      })
-
-    app.use(router.routes())
-    app.use(router.allowedMethods())
-    this.server = app.listen(服务器端口号, () => {
-      log.verbose('服务开启在xxxx端口')
-    })
-
-    const succeed = await this.updateAccessToken()
-    if (!succeed) {
-      log.error('puppetWalnut', 'start() updateAccessToken() failed.')
-    }
-
-    const stopper = await this.startSyncingAccessToken()
-    this.stopperFnList.push(stopper)
-
-    this.state.on(true)
-  }
-```
+![code1](/assets/2021/11-how-to-develop-wechaty-puppet-module-supporting-5g-messages/code1.webp)
 
 1. 把Chatbot的消息结构转换为puppet的消息结构,重写messageRawPayloadParser函数
 
@@ -213,60 +141,10 @@ override async messageRawPayloadParser (smsPayload: any): Promise<MessagePayload
     return payload
   }
 ```
-
+  
 1. 把chatbot要发送的消息连上puppet，将实现下行消息的逻辑在messageSend()函数中实现，可参考如下代码：
 
-```typescript
-async #messageSend (
-    conversationId: string,
-    something: string | FileBox, // | Attachment
-  ): Promise<void> {
-    log.verbose('PuppetWalnut', 'messageSend(%s, %s)', conversationId, something)
-    if (typeof something !== 'string') {
-      return
-    }
-    const accessToken = 'accessToken ' + this.accessTokenPayload?.token
-    const URL = `http://${url}/bot/v1/sip:${this.sipId}@botplatform.rcs.chinaunicom.cn/messages`
-    const options = {
-      method: 'POST',
-      uri: URL,
-      headers: {
-        Authorization: accessToken,
-        'content-type': 'application/json',
-      },
-      body: {
-        contributionId: this.contributionId,
-        conversationId: this.conversationId,
-        messageId: this.smsid,
-        messageList: [
-          {
-            contentEncoding: 'UTF-8',
-            contentText: something,
-            contentType: 'text/plain',
-          },
-        ],
-        destinationAddress: [
-          this.phone,
-        ],
-        senderAddress: 'sip:20210401@botplatform.rcs.chinaunicom.cn',
-        serviceCapability: [
-          {
-            capabilityId: 'ChatbotSA',
-            version: '+g.gsma.rcs.botversion="#=1"',
-          },
-        ],
-      },
-      json: true,
-    }
-    await rp(options)
-      .then((res: any) => {
-        return res
-      })
-      .catch((err: any) => {
-        log.verbose(err)
-      })
-  }
-```
+![code2](/assets/2021/11-how-to-develop-wechaty-puppet-module-supporting-5g-messages/code2.webp)
 
 ## 参考资料
 
