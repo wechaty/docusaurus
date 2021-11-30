@@ -31,7 +31,6 @@ image: /assets/2021/11-report-for-summer-2021/2.webp
 
 经过导师们的认真辅导和学生们的努力开发，最终，学生们成功拿到了结项证书！
 
-
 ![结项证书](/assets/2021/11-report-for-summer-2021/1.webp)
 
 此开源项目，可以在开源之夏活动官网进行查看：
