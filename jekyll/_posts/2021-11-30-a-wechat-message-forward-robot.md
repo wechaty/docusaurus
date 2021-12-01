@@ -97,6 +97,7 @@ image: /assets/2021/11-a-wechat-message-forward-robot/cover.webp
 2. 修改config/basic.config.ts，将targetContactName改为你希望转发的目标微信名，将commanderContactName改为你希望的指令微信名，将allowedRooms改为微信群白名单数组。
 
 ## 实例截图
+
 ![示例1](/assets/2021/11-a-wechat-message-forward-robot/example1.webp)
 ![示例2](/assets/2021/11-a-wechat-message-forward-robot/example2.webp)
 
