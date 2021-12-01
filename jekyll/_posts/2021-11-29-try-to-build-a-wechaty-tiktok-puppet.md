@@ -11,6 +11,11 @@ image: /assets/2021/11-try-to-build-a-wechaty-tiktok-puppet/wechaty-tiktok-puppe
    
 ## Context
 
+author: Sihe Yu
+mentor：nan Wang
+For more detailed work progress and process, please refer to the following address：
+[https://github.com/juzibot/intern/issues/]
+
 We hope that our product can have more ability to access IM, Therefore, the first thing to bear the brunt is to enable wechaty to stably access more IM.
 
 Tiktok is a popular short video software all over the world, but in addition to short video, it also has strong social attributes and provides social functions including single chat and group chat.
@@ -35,21 +40,19 @@ intelligent tiktok robot based on the platform of shaking table, providing an in
 
 ## Project steps
 
-  1. implement dingdong based on tiktok development platform.
-  2. Encapsulate the logic flow into a puppet
-  3. Add our newly encapsulated puppet to wechaty
+1. implement dingdong based on tiktok development platform.
+2. Encapsulate the logic flow into a puppet
+3. Add our newly encapsulated puppet to wechaty
 
 ## Current progress
 
-  1. Achieve DingDong bot with TikTok Api
-PS:For more detailed work progress and process, please refer to the following address：
-[https://github.com/juzibot/intern/issues/]
+1. Achieve DingDong bot with TikTok Api
 
-## video
+## Proposal Video Presentation
 
 {% include iframe.html src="https://youtu.be/N-Yswi7BnG4" %}
 
-## Slides
+## Proposal Slides
 
 {% include iframe.html src="/assets/2021/11-try-to-build-a-wechaty-tiktok-puppet/mid-term-ppt.pdf" %}
 
@@ -57,10 +60,10 @@ PS:For more detailed work progress and process, please refer to the following ad
 
 ## * Recent plan
 
-  1. Read Puppet-Mock code and try to integrate DingDong into it.
-  2. (optional) base on that, implements room (group) control and message. (There is no room api in TikTok doc. I tried to consult the custom service but no result so far)
+1. Read Puppet-Mock code and try to integrate DingDong into it.
+2. (optional) base on that, implements room (group) control and message. (There is no room api in TikTok doc. I tried to consult the custom service but no result so far)
 
 ## * Long term plan
 
-  1. Encapsulate the logic flow into a puppet
-  2. Add our newly encapsulated puppet to wechaty
+1. Encapsulate the logic flow into a puppet
+2. Add our newly encapsulated puppet to wechaty
