@@ -6,7 +6,7 @@ tags:
   - puppet-tiktok
   - tiktok
   - automotive
-image: /assets/2021/11-try-to-build-a-wechaty-tiktok-puppet/ywechaty-tiktok-puppet.webp
+image: /assets/2021/11-try-to-build-a-wechaty-tiktok-puppet/wechaty-tiktok-puppet.webp
 ---
    
 ## Context
@@ -44,7 +44,6 @@ intelligent tiktok robot based on the platform of shaking table, providing an in
   1. Achieve DingDong bot with TikTok Api
 PS:For more detailed work progress and process, please refer to the following address：
 [https://github.com/juzibot/intern/issues/]
-
 
 ## video
 
