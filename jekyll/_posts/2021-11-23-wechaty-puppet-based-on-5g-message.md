@@ -12,7 +12,7 @@ tags:
 
 ---
 
-- 项目名称：基于5G消息的Wechaty Puppet模块的设计于实现
+- 项目名称：基于5G消息的Wechaty Puppet模块的设计与实现
 - 学生：张嘉璐
 - 导师：苏畅
 - 项目介绍：<https://github.com/juzibot/intern/issues/1>
