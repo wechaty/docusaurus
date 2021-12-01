@@ -35,7 +35,7 @@ intelligent tiktok robot based on the platform of shaking table, providing an in
 
 ## Project steps
 
-  1, implement dingdong based on tiktok development platform.
+  1. implement dingdong based on tiktok development platform.
   2. Encapsulate the logic flow into a puppet
   3. Add our newly encapsulated puppet to wechaty
 
@@ -45,10 +45,14 @@ intelligent tiktok robot based on the platform of shaking table, providing an in
 PS:For more detailed work progress and process, please refer to the following address：
 [https://github.com/juzibot/intern/issues/]
 
-## Related websites
 
-video:
+## video
+
 {% include iframe.html src="https://youtu.be/N-Yswi7BnG4" %}
+
+## Slides
+
+{% include iframe.html src="/assets/2021/11-try-to-build-a-wechaty-tiktok-puppet/余思荷 技术实习生  期初:期中答辩.pdf" %}
 
 ## Plans
 
