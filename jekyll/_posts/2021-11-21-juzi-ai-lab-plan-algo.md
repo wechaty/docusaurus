@@ -25,7 +25,7 @@ tags:
 
 {% include iframe.html src="https://www.youtube.com/watch?v=jX9B4IW1xbo" %}
 
-{% include iframe.html src="https://github.com/deepdialog/juzi-bot/releases/download/0.1/proposal.pdf" %}
+{% include iframe.html src="/assets/2021/11-juzi-ai-lab-plan-algo/proposal.pdf" %}
 
 ## 项目详情
 
