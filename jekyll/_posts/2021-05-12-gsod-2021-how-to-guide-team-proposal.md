@@ -11,7 +11,7 @@ tags:
   - gsod
   - 2021
   - docs
-image: /assets/2021/05-gsod-2021-how-to-guide-team-proposal/gsod.png
+image: /assets/2021/05-gsod-2021-how-to-guide-team-proposal/gsod.webp
 ---
 
 This is the project proposal for **Wechaty How-to-guide** documentation on which we will be working as a part of Google Season of Docs 2021. We have proposed our timeline so as to complete this work during a span of **09 weeks**.

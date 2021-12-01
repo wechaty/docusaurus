@@ -2,7 +2,7 @@
 title: "基于python-wechaty的群聊助手机器人"
 author: kxz18
 categories: project
-image: /assets/2020/groupchat-assistant-bot/header.jpeg
+image: /assets/2020/groupchat-assistant-bot/header.webp
 tags:
   - python
   - summer-2020

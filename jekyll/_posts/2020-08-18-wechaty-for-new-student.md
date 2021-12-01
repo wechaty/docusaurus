@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - productivity
-image: /assets/2020/wechat-bot/header.jpg
+image: /assets/2020/wechat-bot/header.webp
 ---
 
 基于 `wechaty` （包含 `wechaty-puppet-padplus` 插件）开发。

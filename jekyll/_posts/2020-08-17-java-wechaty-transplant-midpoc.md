@@ -7,7 +7,7 @@ tags:
   - soc
   - soc2020
   - ecosystem
-image: /assets/2020/java-wechaty-transplant-midpoc/java-wechaty-transplant-midpoc.jpg
+image: /assets/2020/java-wechaty-transplant-midpoc/java-wechaty-transplant-midpoc.webp
 ---
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
