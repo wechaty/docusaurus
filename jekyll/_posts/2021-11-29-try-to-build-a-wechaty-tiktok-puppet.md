@@ -14,7 +14,7 @@ image: /assets/2021/11-try-to-build-a-wechaty-tiktok-puppet/wechaty-tiktok-puppe
 author: Sihe Yu
 mentor：nan Wang
 For more detailed work progress and process, please refer to the following address：
-[https://github.com/juzibot/intern/issues/]
+[https://github.com/juzibot/intern/issues/3]
 
 We hope that our product can have more ability to access IM, Therefore, the first thing to bear the brunt is to enable wechaty to stably access more IM.
 
