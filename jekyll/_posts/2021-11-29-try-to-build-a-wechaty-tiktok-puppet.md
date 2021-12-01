@@ -1,13 +1,12 @@
 ---
 title: Design and implementation of wechaty puppet module based on Tiktok
 author: yusihe88
-Time: 27 / 09 / 2021 - 20 / 11 / 2021
 categories: project
 tags:
-  - typescript
+  - puppet-tiktok
   - tiktok
   - automotive
-image: /assets/2021/11-try-to-build-a-wechaty-tiktok-puppet/yusihe88-avatar.webp
+image: /assets/2021/11-try-to-build-a-wechaty-tiktok-puppet/ywechaty-tiktok-puppet.webp
 ---
    
 ## Context
@@ -36,27 +35,29 @@ intelligent tiktok robot based on the platform of shaking table, providing an in
 
 ## Project steps
 
-1, implement dingdong based on tiktok development platform.
-2. Encapsulate the logic flow into a puppet
-3. Add our newly encapsulated puppet to wechaty
+  1, implement dingdong based on tiktok development platform.
+  2. Encapsulate the logic flow into a puppet
+  3. Add our newly encapsulated puppet to wechaty
 
 ## Current progress
 
-1. Achieve DingDong bot with TikTok Api
-
-PS：For more detailed work progress and process, please refer to the following address：
+  1. Achieve DingDong bot with TikTok Api
+PS:For more detailed work progress and process, please refer to the following address：
 [https://github.com/juzibot/intern/issues/]
-(Learn more about how to embed file/url in the post by reading this []
-[https://youtu.be/N-Yswi7BnG4]
+
+## Related websites
+
+video:
+{% include iframe.html src="https://youtu.be/N-Yswi7BnG4" %}
 
 ## Plans
 
 ## * Recent plan
 
-1. Read Puppet-Mock code and try to integrate DingDong into it.
-2. (optional) base on that, implements room (group) control and message. (There is no room api in TikTok doc. I tried to consult the custom service but no result so far)
+  1. Read Puppet-Mock code and try to integrate DingDong into it.
+  2. (optional) base on that, implements room (group) control and message. (There is no room api in TikTok doc. I tried to consult the custom service but no result so far)
 
 ## * Long term plan
 
-1. Encapsulate the logic flow into a puppet
-2. Add our newly encapsulated puppet to wechaty
+  1. Encapsulate the logic flow into a puppet
+  2. Add our newly encapsulated puppet to wechaty
