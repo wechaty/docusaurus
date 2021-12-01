@@ -52,7 +52,7 @@ PS:For more detailed work progress and process, please refer to the following ad
 
 ## Slides
 
-{% include iframe.html src="/assets/2021/11-try-to-build-a-wechaty-tiktok-puppet/余思荷 技术实习生  期初:期中答辩.pdf" %}
+{% include iframe.html src="/assets/2021/11-try-to-build-a-wechaty-tiktok-puppet/mid-term-ppt.pdf" %}
 
 ## Plans
 
