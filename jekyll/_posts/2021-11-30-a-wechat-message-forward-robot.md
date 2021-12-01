@@ -1,6 +1,6 @@
 ---
 title: "使用WeChaty搭建一个可以用一个微信控制另一个微信的机器人"
-author: Wang-Nan
+author: wang-nan
 categories: article
 tags:
   - study
