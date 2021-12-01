@@ -1,5 +1,5 @@
 ---
-title: "使用WeChaty搭建一个可以用一个微信控制另一个微信的机器人"
+title: "使用Wechaty构建一个微信转发机器人"
 author: wang-nan
 categories: article
 tags:
@@ -95,6 +95,11 @@ image: /assets/2021/11-a-wechat-message-forward-robot/cover.webp
 
 1. 新建.env文件并配置DONUT_TOKEN为你所使用的service token
 2. 修改config/basic.config.ts，将targetContactName改为你希望转发的目标微信名，将commanderContactName改为你希望的指令微信名，将allowedRooms改为微信群白名单数组。
+
+## 实例截图
+
+![示例1](/assets/2021/11-a-wechat-message-forward-robot/example1.webp)
+![示例2](/assets/2021/11-a-wechat-message-forward-robot/example2.webp)
 
 ## 未来期望
 
