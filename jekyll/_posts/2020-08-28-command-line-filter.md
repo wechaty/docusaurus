@@ -1,7 +1,7 @@
 ---
 title: "简易命令行控制的「微信机器人」及群聊信息过滤实现"
 author: raymondjiangkw
-image: /assets/2020/commandline-filter/logo.png
+image: /assets/2020/commandline-filter/logo.webp
 categories: project
 tags:
   - javascript
@@ -277,7 +277,7 @@ function (commands, message, botSettings) {
 }), "Say Hi to Bot");
 ```
 
-<img src="/assets/2020/commandline-filter/1.jpg" width=500/>
+<img src="/assets/2020/commandline-filter/1.webp" width=500/>
 
 ```javascript
 // 让 Bot 识别 .register 指令， 以接受用户的注册。对注册过的用户，提示已经注册过，除非显式加入`--force`参数。
@@ -301,7 +301,7 @@ function (commands, message, botSettings) {
 }), "Register Account");
 ```
 
-<img src="/assets/2020/commandline-filter/0.jpg" width=500/>
+<img src="/assets/2020/commandline-filter/0.webp" width=500/>
 
 ### 实现群聊信息过滤
 
@@ -372,8 +372,8 @@ async function (commands, message, botSettings) {
 
 ### 示例
 
-<img src="/assets/2020/commandline-filter/2.jpg" width=500/>
-<img src="/assets/2020/commandline-filter/3.jpg" width=500/>
+<img src="/assets/2020/commandline-filter/2.webp" width=500/>
+<img src="/assets/2020/commandline-filter/3.webp" width=500/>
 
 ## 3. 已知问题
 

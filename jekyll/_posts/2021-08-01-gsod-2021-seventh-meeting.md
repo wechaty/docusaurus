@@ -18,9 +18,9 @@ image: /assets/2021/08-gsod-2021-seventh-meeting/gsod-seventh-meeting.webp
 ### Meeting Summary
 
 It was the seventh meeting of the GSoD’21 participants. Firstly every participant gave one's weekly summary and informed the community
- about their plans for the upcoming week, volunteers and tech writers discussed while tech writers were giving their week summaries.
- We discussed contrast levels in the new landing page, and Rajiv helped Sajen troubleshoot an issue. Later we discussed comments and
-  questions of the participants, and at last, we took a lovely group photo.
+about their plans for the upcoming week, volunteers and tech writers discussed while tech writers were giving their week summaries.
+We discussed contrast levels in the new landing page, and Rajiv helped Sajen troubleshoot an issue. Later we discussed comments and
+questions of the participants, and at last, we took a lovely group photo.
 
 {% include iframe.html src="https://youtu.be/gGSVsTww6e8" %}
 
@@ -38,7 +38,7 @@ Total 12 attendees attended the meeting. They are:
 8. Shraddha, Improve References section writer (UTC + 5:30)
 9. Shwetal Soni, Create easy to learn tutorials for beginners users writer (UTC +05:30)
 10. Arnab Saha, Reconstruction of Landing page with value propositions writer (UTC + 5:30)
-11. Chris Estepa,  Introduction and Explanations sections writer (UTC +08:00)
+11. Chris Estepa, Introduction and Explanations sections writer (UTC +08:00)
 12. Soumi Bardhan, Improve References section writer (UTC + 5:30)
 
 Note: Meeting started on schedule, Vasvi missed the meeting

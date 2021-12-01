@@ -8,7 +8,7 @@ tags:
   - introduction
   - project
   - proposal
-image: /assets/2021/05-gsod-project-proposal-shwetal-wechaty/profilepic.jpeg
+image: /assets/2021/05-gsod-project-proposal-shwetal-wechaty/profilepic.webp
 ---
 
 ## GSOD21 Proposal for Wechaty

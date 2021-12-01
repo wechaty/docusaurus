@@ -5,7 +5,7 @@ categories: project
 tags:
   - cps
   - ecommerce
-image: /assets/2020/cps-bot/qrcode.jpg
+image: /assets/2020/cps-bot/qrcode.webp
 ---
 
 tips: if you try to use wechaty web version, you will be know it can't work, so this post show you how to use ipad version to make bot work, if you never use wechaty any version, this post also pass the web version, because it's pointless

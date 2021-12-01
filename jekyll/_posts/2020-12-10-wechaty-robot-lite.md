@@ -4,7 +4,7 @@ author: itingle
 categories: tutorial
 tags:
   - assistant
-image: /assets/2020/12-wechaty-robot-lite/example-1.png
+image: /assets/2020/12-wechaty-robot-lite/example-1.webp
 ---
 
 最近在dy上看到有相关wx机器人（SCRM）在进行相关推广，而之前学习的时候，用基于python开发的itchat玩过一段时间，后来，某一天突然发现微信登不上了，官方的微信网页版也不能登陆了（至于是啥原因，咱也不知道，也不敢去研究）。
@@ -191,7 +191,6 @@ module.exports = {
 
 var io = require('../socketio');
 io.getSocketio(server);
-
 
 /**
  * Create puppet_donut server.
@@ -506,11 +505,11 @@ import QrcodeTerminal  from 'qrcode-terminal';
 
 这边有一个坑，在webstorm上打码的时候，在终端输出的二维码是这样的，
 
-![alt text](/assets/2020/12-wechaty-robot-lite/qrcode-login-error.png "qrcode-login-error")
+![alt text](/assets/2020/12-wechaty-robot-lite/qrcode-login-error.webp "qrcode-login-error")
 
 这时候我们需要把这些字符串复制到码农神器notepad++里，如下图
 
-![alt text](/assets/2020/12-wechaty-robot-lite/qrcode-login.png "qrcode-login")
+![alt text](/assets/2020/12-wechaty-robot-lite/qrcode-login.webp "qrcode-login")
 
 然后进行扫码登录；
 
@@ -908,7 +907,7 @@ function requestRobot(info) {
 
 这里为了体验下机器人的代入感，做了个前端demo（很简陋，这里别吐槽。。。就是为了和socket结合一起实时看效果；忽略右上角的红x...调试时中断服务的原因...）
 
-![alt text](/assets/2020/12-wechaty-robot-lite/web-example.png "web-example")
+![alt text](/assets/2020/12-wechaty-robot-lite/web-example.webp "web-example")
 
 这里简介下**nodejs express socketio**的一些使用
 
@@ -920,7 +919,7 @@ function requestRobot(info) {
 
 会直接调用接口/socket.io目录下的js文件，实际调用到modules目录下的文件
 
-![alt text](/assets/2020/12-wechaty-robot-lite/code-structure.png "code-structure")
+![alt text](/assets/2020/12-wechaty-robot-lite/code-structure.webp "code-structure")
 
 前端建立socket连接
 
@@ -1040,10 +1039,10 @@ io.sockets.on('connection', function (socket) {});
 
 ### 效果截图
 
-![alt text](/assets/2020/12-wechaty-robot-lite/example-1.png "example-1")
+![alt text](/assets/2020/12-wechaty-robot-lite/example-1.webp "example-1")
 
-![alt text](/assets/2020/12-wechaty-robot-lite/example-2.png "example-2")
+![alt text](/assets/2020/12-wechaty-robot-lite/example-2.webp "example-2")
 
-![alt text](/assets/2020/12-wechaty-robot-lite/example-3.png "example-3")
+![alt text](/assets/2020/12-wechaty-robot-lite/example-3.webp "example-3")
 
 待完结

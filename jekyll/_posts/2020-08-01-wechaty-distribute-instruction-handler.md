@@ -8,7 +8,7 @@ tags:
   - chatbot
   - cli
   - plugin
-image: /assets/2020/wechaty-plugin-xyao/arc.png
+image: /assets/2020/wechaty-plugin-xyao/arc.webp
 ---
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
@@ -24,11 +24,9 @@ wechaty-plugin-xyao 插件可以让你的 wechaty bot 具备以分布式模块�
 2. 独立出的业务处理模块可以采用任意适合该领域业务的语言（目前提供了一个基于 java springboot 的 brain 模块开发框架）。
 3. 由于采用了基于 pub/sub 的消息中间件作为机器人和 brain 的通讯，因此即使两者之间由于 NAT 无法提供基于固定公网 IP 的 RPC 服务，也可以通过这种方式打通交互。
 
-<!--more-->
-
 ## demo
 
-![sample](/assets/2020/wechaty-plugin-xyao/interaction-sample.png)
+![sample](/assets/2020/wechaty-plugin-xyao/interaction-sample.webp)
 
 上例中， bot 将 `fin:` 前缀的指令通过队列交给 fin 关联的模块处理，而 `x:` 前缀的指令交给 x 对应的模块。那些无法被识别
 为指令的消息（比如 `你好` `午饭吃什么`），则统一交给某个指定模块处理（通常是一个具备智能闲聊能力的处理模块，比如 百度 unit）。
@@ -59,7 +57,6 @@ import { Wechaty } from 'wechaty';
 import { PuppetPadplus } from 'wechaty-puppet-padplus';
 import { Xyao } from '../src/mod';
 
-
 const token = 'your PAD-PLUS token';
 const puppet = new PuppetPadplus({ token });
 
@@ -80,7 +77,6 @@ const xyaoConfig = {
   log_file: '/data/wechaty-xyao/xyao.log',
   log_level: 'INFO'
 };
-
 
 bot.use(
     Xyao(xyaoConfig),
@@ -105,7 +101,7 @@ bot.start()
 
 ## 部署架构参考
 
-![architecture](/assets/2020/wechaty-plugin-xyao/arc.png)
+![architecture](/assets/2020/wechaty-plugin-xyao/arc.webp)
 
 bot 在收到消息后，先尝试识别指令，识别为指令后，按前缀通过队列分发给指定的 brain 模块去处理。
 

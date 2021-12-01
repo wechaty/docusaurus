@@ -54,7 +54,6 @@ import { parentPort }  from 'worker_threads';
 // bot实例
 const bot = Wechaty.instance({profile: 'Wechaty-bot'}) // Global Instance
 
-
 // 这里几个函数是分别将Wechaty的几个类序列化（这里并不完全，只取了作者需要的信息）
 // 序列化Message类（消息）
 async function serializeMessage(message) {
@@ -126,7 +125,6 @@ parentPort.on('message', async message => {
     }
 })
 
-
 bot
 .on('scan', (qrcode, status) => {
     qrurl = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrcode)}`
@@ -183,7 +181,6 @@ import Router  from 'koa-trie-router'
 import bodyParser  from 'koa-bodyparser'
 import { Worker }  from 'worker_threads'
 import lodash  from 'lodash'
-
 
 // 保存bot状态，以便被client轮询
 const botStatus = {
@@ -334,9 +331,7 @@ import time
 import json
 import requests
 
-
 BOT_API = 'http://localhost:3010/api/'
-
 
 class WAAS(object):
     # 初始化bot，保存机器人服务api的地址
@@ -426,7 +421,6 @@ class WAAS(object):
 ```python
 from waas_client import WAAS
 
-
 # 消息回调函数
 def on_message(bot, msg):
     text = msg.get('text')  # 文本消息
@@ -437,7 +431,6 @@ def on_message(bot, msg):
     if text:
         # 发送信息
         bot.send_message(text, name=from_name, topic=room_topic)
-
 
 if __name__ == '__main__':
     """

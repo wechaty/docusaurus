@@ -2,12 +2,12 @@
 title: 阿兹纳莫曲线
 author: huan
 categories: fun
-image: /assets/2020/08-zizz/zizz.png
+image: /assets/2020/08-zizz/zizz.webp
 tags:
   - fun
 ---
 
-![Gcaufy Wechaty zizz](/assets/2020/08-zizz/zizz-discussion.jpg)
+![Gcaufy Wechaty zizz](/assets/2020/08-zizz/zizz-discussion.webp)
 
 > 这个是 阿兹纳莫曲线
 > &mdash; [@Gcaufy](/contributors/gcaufy/), Creator of [WePY](https://github.com/tencent/wepy), Wechaty Committer.

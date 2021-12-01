@@ -5,7 +5,7 @@ categories: tutorial
 tags:
   - issue
   - padplus
-image: /assets/2020/issue-feedback-room-monitor/way.jpg
+image: /assets/2020/issue-feedback-room-monitor/way.webp
 ---
 
 因为我们的用户都喜欢通过微信群讨论的方式进行产品问题反馈，这无疑给日常的线上问题处理的效率带来极大的影响。曾经尝试对用户习惯进行线上填写方式的引导，但最终以失败告终。无奈下看看弄一个微信群监控机器人是否可行。
@@ -192,7 +192,7 @@ module.exports = function onScan(qrcode, status) {
 
 功能实现截图：
 
- ![1](/assets/2020/issue-feedback-room-monitor/qrcode-push.png)
+ ![1](/assets/2020/issue-feedback-room-monitor/qrcode-push.webp)
 
 **4、消息监听回调（`src/onMessage.js`）**
 
@@ -298,13 +298,13 @@ module.exports = bot => {
 
 当在群里@机器人的时候，机器人会自动回复问题反馈的模版信息：  
 
-![2](/assets/2020/issue-feedback-room-monitor/feedback-template.jpg)  
+![2](/assets/2020/issue-feedback-room-monitor/feedback-template.webp)  
 
 这里由于时间问题，做的相对简单。如果时间充分完全可以做一个微服务，支撑机器人更好在群里与他人互动。
 
 消息入库示例：
 
-![3](/assets/2020/issue-feedback-room-monitor/chat-insert-into-db.jpg)
+![3](/assets/2020/issue-feedback-room-monitor/chat-insert-into-db.webp)
 
 这块目前只是实现了消息入库，但是对聊天中的图片、视频和音频文件的保存的功能部分还没有整合进去，相关部分还处于本地调试过程中。后续会在github上更新此部分代码。
 

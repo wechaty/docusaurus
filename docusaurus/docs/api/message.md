@@ -46,10 +46,10 @@ By using message.from, you will receive the sender name from the message. If the
 ```javascript
 const bot = new Wechaty()
 bot
-.on('message', async m => {
-  const contact = msg.from()
-  const text = msg.text()
-  const room = msg.room()
+.on('message', async message => {
+  const contact = message.from()
+  const text = message.text()
+  const room = message.room()
   if (room) {
     const topic = await room.topic()
     console.log(`Room: ${topic} Contact: ${contact.name()} Text: ${text}`)
@@ -69,7 +69,7 @@ The method gets the destination of the message Message.to\(\) will return `null`
 ```javascript
 const bot = new Wechaty()
 bot
-.on('message', async m => {
+.on('message', async message => {
   const contact = message.from()
   const text = message.text()
   const toContact = message.to()
@@ -92,10 +92,10 @@ By using the `message.room` you get the room from the message.If that particular
 ```javascript
 const bot = new Wechaty()
 bot
-.on('message', async m => {
-  const contact = msg.from()
-  const text = msg.text()
-  const room = msg.room()
+.on('message', async message => {
+  const contact = message.from()
+  const text = message.text()
+  const room = message.room()
   if (room) {
     const topic = await room.topic()
     console.log(`Room: ${topic} Contact: ${contact.name()} Text: ${text}`)
@@ -115,10 +115,10 @@ This method returns the text context for the message.
 ```javascript
 const bot = new Wechaty()
 bot
-.on('message', async m => {
-  const contact = msg.from()
-  const text = msg.text()
-  const room = msg.room()
+.on('message', async message => {
+  const contact = message.from()
+  const text = message.text()
+  const room = message.room()
   if (room) {
     const topic = await room.topic()
     console.log(`Room: ${topic} Contact: ${contact.name()} Text: ${text}`)
@@ -139,9 +139,9 @@ Here is an example:
 ```javascript
 const bot = new Wechaty()
 bot
-.on('message', async m => {
-  if (m.type() === bot.Message.Type.Recalled) {
-    const recalledMessage = await m.toRecalled()
+.on('message', async message => {
+  if (message.type() === bot.Message.Type.Recalled) {
+    const recalledMessage = await message.toRecalled()
     console.log(`Message: ${recalledMessage} has been recalled.`)
   }
 })
@@ -173,35 +173,35 @@ import {
 
 const bot = new Wechaty()
 bot
-.on('message', async m => {
+.on('message', async message => {
 
 // 1. send Image
 
-  if (/^ding$/i.test(m.text())) {
+  if (/^ding$/i.test(message.text())) {
     const fileBox = FileBox.fromUrl('https://wechaty.github.io/wechaty/images/bot-qr-code.png')
-    await msg.say(fileBox)
+    await message.say(fileBox)
   }
 
 // 2. send Text
 
-  if (/^dong$/i.test(m.text())) {
-    await msg.say('dingdingding')
+  if (/^dong$/i.test(message.text())) {
+    await message.say('dingdingding')
   }
 
 // 3. send Contact
 
-  if (/^lijiarui$/i.test(m.text())) {
+  if (/^lijiarui$/i.test(message.text())) {
     const contactCard = await bot.Contact.find({name: 'lijiarui'})
     if (!contactCard) {
       console.log('not found')
       return
     }
-    await msg.say(contactCard)
+    await message.say(contactCard)
   }
 
 // 4. send UrlLink
 
-  if (/^link$/i.test(m.text())) {
+  if (/^link$/i.test(message.text())) {
     const urlLink = new UrlLink({
       description: 'Wechaty is a Bot SDK for Wechat Individual Account which can help you create a bot in 6 lines of javascript, with cross-platform support including Linux, Windows, Darwin(OSX/Mac) and Docker.',
       thumbnailUrl: 'https://camo.githubusercontent.com/f310a2097d4aa79d6db2962fa42bb3bb2f6d43df/68747470733a2f2f6368617469652e696f2f776563686174792f696d616765732f776563686174792d6c6f676f2d656e2e706e67',
@@ -209,12 +209,12 @@ bot
       url: 'https://github.com/wechaty/wechaty',
     });
 
-    await msg.say(urlLink);
+    await message.say(urlLink);
   }
 
 // 5. send MiniProgram (only supported by `wechaty-puppet-macpro`)
 
-  if (/^mini-program$/i.test(m.text())) {
+  if (/^mini-program$/i.test(message.text())) {
     const miniProgram = new MiniProgram ({
       appid              : 'gh_0aa444a25adc',
       title              : '我正在使用Authing认证身份，你也来试试吧',
@@ -223,7 +223,7 @@ bot
       thumbKey           : '42f8609e62817ae45cf7d8fefb532e83',
     });
 
-    await msg.say(miniProgram);
+    await message.say(miniProgram);
   }
 })
 .start()
@@ -309,10 +309,10 @@ By using this method you can forward the received message. This action doesn't t
 ```javascript
 const bot = new Wechaty()
 bot
-.on('message', async m => {
+.on('message', async message => {
   const room = await bot.Room.find({topic: 'wechaty'})
   if (room) {
-    await m.forward(room)
+    await message.forward(room)
     console.log('forward this message to wechaty room!')
   }
 })

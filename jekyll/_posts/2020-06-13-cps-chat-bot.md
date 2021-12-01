@@ -1,7 +1,7 @@
 ---
 title: "CPS chat bot"
 author: wss793062366
-image: /assets/2020/cps-chat-bot/goodsmsg.jpeg
+image: /assets/2020/cps-chat-bot/goodsmsg.webp
 categories: project
 tags:
   - ecommerce
@@ -121,7 +121,6 @@ async function onMessage (msg: Message) {
     }
   }
 }
-
 
 ```
 
@@ -295,7 +294,7 @@ npm run start
 
 ### 效果图
 
-![效果图](/assets/2020/cps-chat-bot/goodsmsg.jpeg)
+![效果图](/assets/2020/cps-chat-bot/goodsmsg.webp)
 
 ### 致谢
 

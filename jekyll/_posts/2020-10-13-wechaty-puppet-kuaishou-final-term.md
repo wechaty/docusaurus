@@ -2,7 +2,7 @@
 title: "基于RPA封装的Wechaty接口下的快手聊天机器人结项报告"
 author: wangjunwei
 categories: project
-image: /assets/2020/wechaty-puppet-kuaishou-mid-term/wechaty-puppet-kuaishou-mid-term.jpeg
+image: /assets/2020/wechaty-puppet-kuaishou-mid-term/wechaty-puppet-kuaishou-mid-term.webp
 tags:
   - kuaishou
   - summer-of-wechaty
@@ -19,8 +19,6 @@ tags:
 官网：[https://isrc.iscas.ac.cn/summer2020](https://isrc.iscas.ac.cn/summer2020) 官方新闻：[http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html](http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html)
 
 本项目 [基于 RPA 封装 Wechaty 接口下的快手聊天机器人] 系 暑期2020 支持的开源项目。
-
-<!--more-->
 
 ## 结项报告：基于 RPA 封装 Wechaty 接口下的快手聊天机器人
 

@@ -7,7 +7,7 @@ tags:
   - project
   - stock
   - finance
-image: /assets/2020/wechaty-stock-bot/header.jpg
+image: /assets/2020/wechaty-stock-bot/header.webp
 ---
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
@@ -20,8 +20,6 @@ image: /assets/2020/wechaty-stock-bot/header.jpg
 ```shell
 股市有风险，投资需谨慎
 ```
-
-<!--more-->
 
 ### 功能
 
@@ -72,8 +70,8 @@ npm start
 
 ### 效果图
 
-- ![截图](/assets/2020/wechaty-stock-bot/pic01.png)
-- ![截图](/assets/2020/wechaty-stock-bot/pic02.png)
+- ![截图](/assets/2020/wechaty-stock-bot/pic01.webp)
+- ![截图](/assets/2020/wechaty-stock-bot/pic02.webp)
 
 ### 致谢
 
