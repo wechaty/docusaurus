@@ -13,8 +13,8 @@ tags:
 ---
 
 - 项目名称：基于5g消息的Wechaty Puppet模块的设计于实现
-- 导师：苏畅
 - 学生：张嘉璐
+- 导师：苏畅
 - 项目介绍：<https://github.com/juzibot/intern/issues/1>
   
 ## 项目详情
