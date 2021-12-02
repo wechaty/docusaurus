@@ -39,7 +39,7 @@ tags:
 
 ### 视频展示
 
-
+{% include iframe.html src="https://youtu.be/O9wj-7aXh7s" %}
 
 ### 计划安排
 
