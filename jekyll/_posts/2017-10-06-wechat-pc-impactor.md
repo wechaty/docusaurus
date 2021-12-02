@@ -6,10 +6,10 @@ tags:
   - code
   - hook
   - news
-image: /assets/2017/h4dex-inject.png
+image: /assets/2017/h4dex-inject.webp
 ---
 
-![Wechat Windows Impactor](/assets/2017/h4dex-inject.png)
+![Wechat Windows Impactor](/assets/2017/h4dex-inject.webp)
 
 因为易语言代码有的朋友们可能看起来怪怪的 如果没有接触过它，并不是那么通俗易懂。所以改成了cpp代码供审阅.  由于书写仓促 错误的部分希望大家指正，小弟在此多谢！
 
@@ -195,7 +195,6 @@ class Impactor{
 
 }
 
-
 ```
 
 ### 自己信息获取        GetProfile.h
@@ -331,12 +330,10 @@ class GetContact{
 #include "GetProfile.h"
 #include "GetContact.h"
 
-
 using namespace std;
 int _tmain(int argc, _TCHAR* argv[]){
     hookInject::inst_VersionLib();
 }
-
 
 void hook_install(){
 

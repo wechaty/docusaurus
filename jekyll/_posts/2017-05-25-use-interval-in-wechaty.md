@@ -74,7 +74,7 @@ asyncAwait();
 And I used same technics to finally make my `Send Friend Request` stable. Below is the full code. Bear in mind, I set the sleep time threshold to 2mins, which successfully send out 100 `Friend Requests` before web-wechat shut me down.  
 
 ```javascript
-const { Message, Room, FriendRequest, Wechaty } = require('wechaty');
+import { Message, Room, FriendRequest, Wechaty }  from 'wechaty';
 
 exports = module.exports = async function onMessage (msg) {
 
@@ -87,9 +87,7 @@ exports = module.exports = async function onMessage (msg) {
         return;
     }
 
-
 }
-
 
 async function sendFriendRequest(room, msg) {
 

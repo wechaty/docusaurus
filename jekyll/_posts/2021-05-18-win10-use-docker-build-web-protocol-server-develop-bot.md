@@ -7,7 +7,7 @@ tags:
   - study
   - web-protocol
   - python
-image: /assets/2021/05-win10-use-docker-build-web-protocol-server-develop-bot/ding-dong.jpg
+image: /assets/2021/05-win10-use-docker-build-web-protocol-server-develop-bot/ding-dong.webp
 ---
 
 ## 介绍
@@ -49,11 +49,11 @@ print(uuid.uuid4())
 
 这样我们就成功的启动了一个端口在30001的docker容器。启动后cmd立马可以看到如下：
 
-![docker-build-web](/assets/2021/05-win10-use-docker-build-web-protocol-server-develop-bot/docker-build-web.jpg)
+![docker-build-web](/assets/2021/05-win10-use-docker-build-web-protocol-server-develop-bot/docker-build-web.webp)
 
 打开docker也可以看到容器已经顺利启动。
 
-![docker-status](/assets/2021/05-win10-use-docker-build-web-protocol-server-develop-bot/docker-status.jpg)
+![docker-status](/assets/2021/05-win10-use-docker-build-web-protocol-server-develop-bot/docker-status.webp)
 
 ### 启动python脚本链接docker容器
 
@@ -102,15 +102,15 @@ asyncio.run(MyBot().start())
 
 代码写好后，执行代码，会出现一个二维码，要求我们扫码登录。
 
-![run-python](/assets/2021/05-win10-use-docker-build-web-protocol-server-develop-bot/run-python.jpg)
+![run-python](/assets/2021/05-win10-use-docker-build-web-protocol-server-develop-bot/run-python.webp)
 
 目前会有一个问题就是二维码太大了，无法扫描。不过官方很贴心的给了一个链接，点击链接就会跳转到一个可以扫描的二维码页面出了，扫码登录即可。
 
-![scan-qrcode](/assets/2021/05-win10-use-docker-build-web-protocol-server-develop-bot/scan-qrcode.jpg)
+![scan-qrcode](/assets/2021/05-win10-use-docker-build-web-protocol-server-develop-bot/scan-qrcode.webp)
 
 扫码登陆微信后就可以验证，发送ding，机器人会自动回复dong。
 
-![ding-dong](/assets/2021/05-win10-use-docker-build-web-protocol-server-develop-bot/ding-dong.jpg)
+![ding-dong](/assets/2021/05-win10-use-docker-build-web-protocol-server-develop-bot/ding-dong.webp)
 
 ## 补充内容
 
@@ -154,7 +154,7 @@ del e:\wsl2\docker\docker-desktop-data.tar
 
 然后启动docker容器，再启动python脚本，扫码登录后，测试结果如下：
 
-![multi-bot](/assets/2021/05-win10-use-docker-build-web-protocol-server-develop-bot/multi-bot.jpg)
+![multi-bot](/assets/2021/05-win10-use-docker-build-web-protocol-server-develop-bot/multi-bot.webp)
 
 #### 关闭睡眠状态，保持程序的持续运行
 

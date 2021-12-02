@@ -7,7 +7,7 @@ tags:
   - padplus
   - travel
   - mysql
-image: /assets/2020/info-subtotal/head.jpeg 
+image: /assets/2020/info-subtotal/head.webp 
 ---
 
 北京的房价涨幅对于北漂的工资涨幅来说永远都是高不可攀的；有很多人到了成家立业的年纪，又不想回到老家，所以距离北京近，房价可以接受的北京周边就是就是一个不错的选择，但是在环京买了房，工作还是在北京，由此衍生出了一批跨城上下班的圈子。
@@ -40,7 +40,7 @@ image: /assets/2020/info-subtotal/head.jpeg
 附上部分逻辑代码说明。
 
 ```javascript
-const api1 = require('../../server/api')
+import api1  from '../../server/api'
 const one = ['车寻人', '车找人', '找人', '寻人', '满人', '满车', '车满', '人满'];
 const two = ['人寻车', '人找车', '找车', '寻车', '找个车']
 class dealMsg {

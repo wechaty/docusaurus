@@ -6,7 +6,7 @@ tags:
   - meetup
   - news
   - featured
-image: /assets/2017/wechaty-wwdc.jpg
+image: /assets/2017/wechaty-wwdc.webp
 ---
 
 On June 6, 2017, 6 pm, we have a great first Wechaty World Wide Developer Conference (WWDC) at Su Shi Restaurant of Wudaokou, Beijing.

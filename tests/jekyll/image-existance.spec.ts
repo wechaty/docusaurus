@@ -1,20 +1,20 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import test  from 'tstest'
+import {
+  tap,
+  test,
+}           from 'tstest'
 
 import fs   from 'fs'
 import path from 'path'
-import {
-  chunk,
-  shuffle,
-}               from 'lodash'
+import lodash   from 'lodash'
 
 import {
   isWhiteListedRemoteUrl,
   isUrlExist,
   getAllImageList,
   JEKYLL_FOLDER,
-}                             from '../../src/jekyll/mod'
+}                             from '../../src/jekyll/mod.js'
 
 const not = (func: (...args: any[]) => boolean) => (...args: any) => !func(...args)
 
@@ -38,6 +38,9 @@ const getLocalImageList = async () => {
   return localImageList
 }
 
+// Increase the timeout because we might need to wait network io for a long time.
+tap.setTimeout(60 * 1000)
+
 test('all remote images linked from the post should be exist.', async t => {
 
   // Get rid of duplicated urls
@@ -45,7 +48,7 @@ test('all remote images linked from the post should be exist.', async t => {
 
   // console.info('remoteImageList', remoteImageList)
 
-  remoteImageList = shuffle(
+  remoteImageList = lodash.shuffle(
     Array.from(
       new Set(
         remoteImageList
@@ -59,7 +62,7 @@ test('all remote images linked from the post should be exist.', async t => {
 
   const CHUNK_SIZE = 10
 
-  const chunkList = chunk(
+  const chunkList = lodash.chunk(
     remoteImageList,
     CHUNK_SIZE,
   )

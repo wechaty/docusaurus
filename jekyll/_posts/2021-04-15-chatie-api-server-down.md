@@ -7,7 +7,7 @@ tags:
   - down
   - heroku
   - cloudflare
-image: /assets/2021/04-chatie-api-server-down/system-down.jpeg
+image: /assets/2021/04-chatie-api-server-down/system-down.webp
 ---
 
 The [Wechaty Puppet Service](https://wechaty.js.org/docs/puppet-services)
@@ -26,7 +26,7 @@ and the Wechaty Puppet Service Client will use this token for service discovery.
 For example, the following shows that Wechaty started with a token:
 
 ```sh
-export WECHATY_PUPPET_SERVICE_TOKEN=__token__
+export WECHATY_PUPPET_SERVICE_TOKEN=${TOKEN}
 make bot
 ```
 

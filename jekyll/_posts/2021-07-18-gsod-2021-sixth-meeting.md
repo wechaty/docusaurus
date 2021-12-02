@@ -18,9 +18,9 @@ image: /assets/2021/07-gsod-2021-sixth-meeting/gsod-sixth-meeting.webp
 ### Meeting Summary
 
 It was the sixth meeting of the GSoD’21 participants. Firstly every participant gave one's weekly summary and informed the community
- about their plans for the upcoming week, volunteers and tech writers discussed while tech writers were giving their week summaries.
- After that, information was given by volunteers regarding the mid and final blog posts, following a discussion was lead by Simin regarding
-  urgent PRs and new PR rules, later we discussed comments and questions of the participants, and at last, we took a lovely group photo.
+about their plans for the upcoming week, volunteers and tech writers discussed while tech writers were giving their week summaries.
+After that, information was given by volunteers regarding the mid and final blog posts, following a discussion was lead by Simin regarding
+urgent PRs and new PR rules, later we discussed comments and questions of the participants, and at last, we took a lovely group photo.
 
 {% include iframe.html src="https://youtu.be/pLjyGVOmI6M" %}
 
@@ -39,7 +39,7 @@ Total 13 attendees attended the meeting. They are:
 9. Shwetal Soni, Create easy to learn tutorials for beginners users writer (UTC +05:30)
 10. Vasvi Sood, How to guides, contactvasvisood@gmail.com writer (UTC + 5:30)
 11. Arnab Saha, Reconstruction of Landing page with value propositions writer (UTC + 5:30)
-12. Chris Estepa,  Introduction and Explanations sections writer (UTC +08:00)
+12. Chris Estepa, Introduction and Explanations sections writer (UTC +08:00)
 13. Soumi Bardhan, Improve References section writer (UTC + 5:30)
 
 Note: Meeting started on schedule and everyone attended this !
@@ -75,7 +75,7 @@ You can learn more from our [meeting notes][meeting_notes].
 
 - Merge PRs in this [list](https://github.com/wechaty/wechaty.js.org/issues/1056)
 - Help tutorials team, refer [#1044](https://github.com/wechaty/wechaty.js.org/issues/1044),
- and [#1043](https://github.com/wechaty/wechaty.js.org/issues/1043)
+  and [#1043](https://github.com/wechaty/wechaty.js.org/issues/1043)
 - Provide Shraddha more information regarding the Wechaty plugin [#890](https://github.com/wechaty/wechaty.js.org/issues/890)
 - Sajen requires help in the voice of the developers section [#912](https://github.com/wechaty/wechaty.js.org/issues/912)
 - We will be seeing Tutorial team's mid blog in the coming week
@@ -83,10 +83,10 @@ You can learn more from our [meeting notes][meeting_notes].
 ### Notable Meeting Comments
 
 - (Joseph) I will be reaching out to the other teams for more info about challenges they faced so that we add them to
- troubleshooting sub-section of the explanation
+  troubleshooting sub-section of the explanation
 
 ### Notable Meeting Questions
 
 - Q: (Rajeev) Can we add PRs in the merging list issues?
 - A: (Rohitesh) Rules for adding PRs in merging list are simple : 1) It should pass CI test 2) should have approvals
- of both the volunteers 3) your team mate should approve it as well. If your PR is matching this criteria feel free to add.
+  of both the volunteers 3) your team mate should approve it as well. If your PR is matching this criteria feel free to add.

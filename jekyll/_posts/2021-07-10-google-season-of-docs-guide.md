@@ -11,6 +11,7 @@ tags:
   - gsod-2021
   - docs
   - guide
+  - news
 image: /assets/2021/07-google-season-of-docs-guide/guide.webp
 ---
 
