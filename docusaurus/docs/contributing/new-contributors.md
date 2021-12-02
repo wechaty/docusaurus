@@ -70,7 +70,7 @@ some advice to make your work on Wechaty more useful and rewarding.
   When reading Issue, you need to take into account who says things, and when
   they were said. Support for an idea two years ago doesn't necessarily mean
   that the idea will still have support. You also need to pay attention to who
-  *hasn't* spoken -- for example, if an experienced contributor hasn't been
+  _hasn't_ spoken -- for example, if an experienced contributor hasn't been
   recently involved in a discussion, then a ticket may not have the support
   required to get into Wechaty.
 
@@ -97,7 +97,7 @@ some advice to make your work on Wechaty more useful and rewarding.
 - **Err on the side of caution when marking things Ready For Check-in**
 
   If you're really not certain if a ticket is ready, don't mark it as
-  such. Leave a comment instead, letting others know your thoughts.  If you're
+  such. Leave a comment instead, letting others know your thoughts. If you're
   mostly certain, but not completely certain, you might also try asking on Gitter
   to see if someone else can confirm your suspicions.
 
@@ -115,6 +115,19 @@ some advice to make your work on Wechaty more useful and rewarding.
   weight--while it may be true, that means you have the extra-important job of
   writing the very first tests for that feature, not that you get a pass from
   writing tests altogether.
+
+## At last: Use VSCode
+
+Wechaty community members are using VSCode to work on Wechaty. With VSCode, you can get linting hints when you edit the files, so it's strongly recommended to use it.
+
+For example, if you are creating fles for our official website:
+
+1. use vscode to open our wechaty.js.org repo
+1. install the `markdownlint` vscode extension (it will use [this config file](https://github.com/wechaty/wechaty.js.org/blob/main/.markdownlint.json) automatically)
+1. install the `editorconfig` vscode extension (it will use [this config file](https://github.com/wechaty/wechaty.js.org/blob/main/.editorconfig) automatically)
+1. You are set. VSCode will tell you everything about the linting.
+
+Make sure your markdown files and source code files can pass the linting before you push.
 
 ## FAQ
 

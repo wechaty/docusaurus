@@ -6,7 +6,7 @@ tags:
   - news
   - puppet-provider
   - official-account
-image: /assets/2020/official-account/wechaty-puppet-official-account.png
+image: /assets/2020/official-account/wechaty-puppet-official-account.webp
 ---
 
 定制化开发微信公众号是一个非常繁琐的过程，需要阅读大量的文档，特别是基于微信公众号开发一个具有自定义回复功能的机器人，而wechaty正是擅长于解决此类问题，于是就有了此puppet。

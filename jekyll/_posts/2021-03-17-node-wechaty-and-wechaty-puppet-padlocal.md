@@ -5,7 +5,7 @@ categories: article
 tags:
   - node
   - padlocal
-image: /assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/grouupmaster.png
+image: /assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/grouupmaster.webp
 ---
 
 超哥之前开发了一个叫做「群组大师」的小程序，听名字就知道，是用来管理群组的，管理群组的什么呢？
@@ -44,39 +44,39 @@ image: /assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/grouupmaster.png
 
 - 打开「群组大师」，找到群列表
 
-![bot_step1.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step1.jpeg)
+![bot_step1.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step1.webp)
 
 - 进入群主页
 
-![bot_step2.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step2.jpeg)
+![bot_step2.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step2.webp)
 
 - 发布活动
 
-![bot_step3.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step3.jpeg)
+![bot_step3.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step3.webp)
 
 - 提交并发布
 
-![bot_step4.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step4.jpeg)
+![bot_step4.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step4.webp)
 
 - 发布成功进入活动详情
 
-![bot_step5.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step5.jpeg)
+![bot_step5.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step5.webp)
 
 - 在对应微信群内使用指令进行活动报名，首次使用可发送 帮助 获取全部指令列表
 
-![bot_step6.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step6.jpeg)
+![bot_step6.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step6.webp)
 
 - 发送 活动 查看群内活动详情，发送 报名 即可立即报名活动
 
-![bot_step7.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step7.jpeg)
+![bot_step7.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step7.webp)
 
 - 发送 取消，取消活动报名
 
-![bot_step8.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step8.jpeg)
+![bot_step8.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step8.webp)
 
 - 在「群组大师」小程序中可查看活动报名详情
 
-![bot_step9.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step9.jpeg)
+![bot_step9.jpeg](/assets/2021/03-node-wechaty-and-wechaty-puppet-padlocal/bot_step9.webp)
 
 ## demo源码：
 
@@ -95,7 +95,7 @@ import {
     UrlLink,
     MiniProgram,
 } from 'wechaty'
-const request = require('request');
+import request  from 'request';
 const puppet = new PuppetPadlocal({
     token: "----------"
 })
@@ -177,7 +177,6 @@ const bot = new Wechaty({
         // 群组大师小程序提供的活动查询和报名接口
         let url = 'http://test-958d13-1251176925.ap-shanghai.service.tcloudbase.com/test/groupmaster?action=wechaty' + '&data=' + datas_jsonstr
 
-
         request(encodeURI(url), function (error, response, body) {
             console.error('error:', error); // Print the error if one occurred
             console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
@@ -187,7 +186,6 @@ const bot = new Wechaty({
                 message.say(JSON.parse(body).data.content)
             }
         });
-
 
 
         // const toContact = message.to()
@@ -254,7 +252,6 @@ const bot = new Wechaty({
     .on("error", (error) => {
         log.error("TestBot", 'on error: ', error.stack);
     })
-
 
 bot.start().then(() => {
     log.info("TestBot", "started.");

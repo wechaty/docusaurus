@@ -1,7 +1,7 @@
 ---
 title: "通过Wechaty使用深度学习模型预测图片类型"
 author: lyleshaw
-image: /assets/2020/10-use-wechaty-to-predict-image/screenshot.jpg
+image: /assets/2020/10-use-wechaty-to-predict-image/screenshot.webp
 categories: project
 tags:
   - python
@@ -72,7 +72,6 @@ const puppet = new PuppetPadplus({
   token,
 })
 
-
 const name  = 'wechaty-torch'
 
 const bot = new Wechaty({
@@ -91,7 +90,6 @@ bot.on('scan', (qrcode, status) => {
     })
   }
 })
-
 
 bot.on('login'  , user => console.info('Bot', `bot login: ${user}`))
 ```

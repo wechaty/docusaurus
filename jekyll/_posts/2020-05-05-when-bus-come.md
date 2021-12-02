@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - travel
-image: /assets/2020/when-bus-come/teaser.jpg
+image: /assets/2020/when-bus-come/teaser.webp
 ---
 
 ## 需求

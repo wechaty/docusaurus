@@ -6,7 +6,7 @@ tags:
   - csharp
   - puppet-service
 categories: tutorial
-image: /assets/2021/01-csharp-wechaty-for-padlocal-puppet-service/dotnet-wechaty.png
+image: /assets/2021/01-csharp-wechaty-for-padlocal-puppet-service/dotnet-wechaty.webp
 ---
 
 ## .NET Wechaty 如何使用 PadLocal Puppet Service
@@ -61,7 +61,6 @@ var PuppetOptions = new Module.Puppet.Schemas.PuppetOptions()
 {
     Token = "0c7b8f97-f3cc-40a5-a537-d492fd689801",
 };
-
 
 // GateWay部署在自己的服务器上
 var PuppetOptions = new Module.Puppet.Schemas.PuppetOptions()

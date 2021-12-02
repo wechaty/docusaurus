@@ -7,7 +7,7 @@ tags:
   - puppet-service
   - puppet-provider
   - wxwork
-image: /assets/2020/12-07-wxwork/wecom.png
+image: /assets/2020/12-07-wxwork/wecom.webp
 ---
 
 恭喜 WxWork 作为 Wechaty 社区新的 Puppet Service 正式进入 Beta 版！经过历时一个月的测试，WxWork 现在已经通过社区验证，可以正式售卖给社区的小伙伴了！

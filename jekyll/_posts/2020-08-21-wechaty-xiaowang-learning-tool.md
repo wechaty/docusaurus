@@ -1,7 +1,7 @@
 ---
 title: 基于Wechaty的群学习内容推送工具
 author: gileswong
-image: /assets/2020/wechaty-xiaowang-learning-tool/teaser.jpg
+image: /assets/2020/wechaty-xiaowang-learning-tool/teaser.webp
 categories: project
 tags:
   - typescript
@@ -28,8 +28,8 @@ tags:
 
 ## 功能示例
 
-![英语每日一题](/assets/2020/wechaty-xiaowang-learning-tool/img-4425.jpg)
-![每日早报](/assets/2020/wechaty-xiaowang-learning-tool/img-4418.jpg)
+![英语每日一题](/assets/2020/wechaty-xiaowang-learning-tool/img-4425.webp)
+![每日早报](/assets/2020/wechaty-xiaowang-learning-tool/img-4418.webp)
 
 ## 项目结构
 
@@ -78,7 +78,7 @@ tags:
 + 打开 [https://console.cloud.tencent.com/scf/index](https://console.cloud.tencent.com/scf/index) 注册并新建云函数
 + 新建时选择空白函数即可,然后选择目前要增加的函数的环境，之后点击下一步
   + Python 3.6
-  + Node.js 12.16
+  + Node.js 16.16
 + 在`提交方法`处，选择`上传文件夹`
 + 选择当前增加的函数的文件夹，上传即可
 + 新建完成后，返回云函数主页面，点击`函数服务`- `触发管理`

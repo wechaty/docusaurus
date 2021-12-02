@@ -2,7 +2,7 @@
 title: "基于开放 API 封装 Wechaty 接口下的飞书聊天机器人：期末"
 author: roxanne718
 categories: project
-image: /assets/2020/lark-puppet/wechaty-lark-final.png
+image: /assets/2020/lark-puppet/wechaty-lark-final.webp
 tags:
   - featured
   - summer-2020
@@ -15,8 +15,6 @@ tags:
 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2020”活动奖金和奖杯。
 官网：[https://isrc.iscas.ac.cn/summer2020](https://isrc.iscas.ac.cn/summer2020) 官方新闻：[http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html](http://www.iscas.ac.cn/xshd2016/xshy2016/202004/t20200426_5563484.html)
 本项目 [基于开放 API 封装 Wechaty 接口下的飞书聊天机器人] 系 暑期2020 支持的开源项目。
-
-<!--more-->
 
 ## [基于开放 API 封装 Wechaty 接口下的飞书聊天机器人]信息
 

@@ -1,0 +1,123 @@
+---
+title: Deploy in Gitter
+---
+
+Gitter is an open-source instant messaging and chat room system for developers and users of GitLab and GitHub repositories. In this how-to guide, you will learn how to deploy the ding-dong  bot in Gitter locally from the [Wechaty gitter template](https://github.com/wechaty/wechaty-puppet-gitter).
+
+![Deploy in Gitter](../../static/img/docs/howto/deploy-gitter/wechaty-puppet-gitter.webp)
+
+## Requirements
+
+1. Your system must have [Node.js](https://nodejs.org/en/download/package-manager/) installed (version >= 12).
+2. Your system must have [Wechaty](https://github.com/wechaty/wechaty) (version >= 0.40).
+
+## Deployment
+
+Run `wechaty-puppet-gitter`:
+
+<!-- MDX import -->
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="linux"
+  values={[
+    { label: 'Linux',   value: 'linux', },
+    { label: 'macOS',   value: 'mac', },
+    { label: 'Windows', value: 'windows', },
+  ]
+}>
+
+<TabItem value="linux">
+
+```sh
+npm install wechaty-puppet-gitter
+export WECHATY_PUPPET=wechaty-puppet-gitter
+npm start
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```sh
+npm install wechaty-puppet-gitter
+export WECHATY_PUPPET=wechaty-puppet-gitter
+npm start
+```
+
+</TabItem>
+<TabItem value="windows">
+
+```sh
+npm install wechaty-puppet-gitter
+set WECHATY_PUPPET=wechaty-puppet-gitter
+npm start
+```
+
+</TabItem>
+</Tabs>
+
+## Integration
+
+Let's take up an example on how to integrate the ding-dong bot from [Wechaty gitter template](https://github.com/wechaty/wechaty-puppet-gitter). The step is similar for all other bots as well.
+
+### Prerequisite
+
+1. Official Wechaty package: [package/wechaty](https://www.npmjs.com/package/wechaty).
+2. A TOKEN from gitter so that it can connect to the gitter.im service: [developer.gitter.im/docs/services](https://developer.gitter.im/docs/services).
+
+You can follow up the steps mentioned below:
+
+1. Git clone the [Wechaty gitter template](https://github.com/wechaty/wechaty-puppet-gitter).
+
+
+2. From the root directory install the necessary dependencies using the following commands:
+
+```ts
+npm install wechaty
+npm install wechaty-puppet-gitter
+```
+
+3. To pass the token, add the snippets below to the head of examples/ding-dong-bot.ts file:
+
+```ts
+import { Wechaty } from 'wechaty'
+/**
+ * Personal Access Token: this token can be used to access the Gitter API.
+ *  https://developer.gitter.im/apps
+ */
+const puppet  = new PuppetGitter({ token: 'your_gitter_token' })
+const wechaty = new Wechaty({ puppet })
+
+ wechaty.start()
+
+```
+
+All necessary functions like onLogout, onLogin, onError, and onMessage are predefined.
+
+4. Replace your_gitter_token with your 40 digits hexadecimal token id.To generate your own token id, navigate to [developer.gitter.im/docs/services](https://developer.gitter.im/docs/services) and login/signin your account.
+
+5. Now you can run the bot using the following commands:
+
+```ts
+WECHATY_LOG=verbose
+export WECHATY_PUPPET=wechaty-puppet-gitter
+npm start
+```
+You have successfully deployed the ding-dong with Gitter!
+
+You can deploy the bot with popular container solutions as well such as:
+
+* [Deploy with Heroku](#a)
+* [Deploy with Docker](#b)
+
+## References
+
+* Find out some more information about puppet from [docs/puppet-providers](https://wechaty.js.org/docs/puppet-providers/).
+* Get the starter template from [wechaty-getting-started](https://github.com/wechaty/wechaty-getting-started).
+
+
+## Blogs
+
+* [wechaty-puppet-gitter](https://wechaty.js.org/2020/08/23/wechaty-puppet-gitter)

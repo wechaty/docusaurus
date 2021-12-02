@@ -5,7 +5,7 @@ categories: event
 tags:
   - guangzhou
   - meetup
-image: /assets/2020/wechaty-guangzhou-gathering/pic1.jpg
+image: /assets/2020/wechaty-guangzhou-gathering/pic1.webp
 ---
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
@@ -23,22 +23,20 @@ image: /assets/2020/wechaty-guangzhou-gathering/pic1.jpg
 
 结果我抱着打酱油的心态接了龙，出乎所料的是，这次竟然成了我和佳芮老师，还有 Wechaty 的零号 Contributor 大神 @0 前辈的三人聚会。
 
-<!--more-->
-
 因为佳芮老师下午要在腾讯的广研开会，因此聚会约在珠江新城附近，中午的 11:30 附近吃个午饭，说回来只有 @0 前辈是广州本地人，比较熟悉地形，所以便安排好了地点。
 
 我到的时候比预定的时间晚了15分钟，下了五羊邨站地铁站之后走了有五分钟的路就到达了“食方缘素食”，@0 前辈和佳芮老师已经到了有一阵子了。
 
 这个地方是一个三楼的露台，不过用玻璃围起来做了一个小的包厢，还有空调。景观很不错，能够看到街上的行人和精致的绿植，非常惬意。
 
-![聚会图片](/assets/2020/wechaty-guangzhou-gathering/pic1.jpg)
+![聚会图片](/assets/2020/wechaty-guangzhou-gathering/pic1.webp)
 
 我到了之后，佳芮老师就热情地像我介绍了 @0 前辈，特别说到 @0 前辈的 Wechaty bot 用了三年居然还没有掉过线。然后佳芮老师还拿出来了精心为我们准备的小礼物 ——
 佳芮老师、卓桓老师和李云军老师的新发的书《Chatbot 从 0 到 1——对话式交互设计实践指南》，还写下了赠言和签名，以及有一些 Wechaty 的周边小贴纸。
 
-![聚会图片](/assets/2020/wechaty-guangzhou-gathering/pic2.jpg)
+![聚会图片](/assets/2020/wechaty-guangzhou-gathering/pic2.webp)
 
-![聚会图片](/assets/2020/wechaty-guangzhou-gathering/pic3.jpg)
+![聚会图片](/assets/2020/wechaty-guangzhou-gathering/pic3.webp)
 
 然后我们留了个合照，开始了这次的交流。对于我来说，其实这一次的会面更多的是作为一个学习者和旁观者的视角来参与的，在这次会面我了解了一些 wechaty
 项目的历史以及大佬们的创业经历，对我来说也是得到了很多的启发。
@@ -61,9 +59,9 @@ image: /assets/2020/wechaty-guangzhou-gathering/pic1.jpg
 就我自己而言，在加入 python-wechaty 小组至今不长的时间里，的确感受到了开源项目的魅力，也掌握了一些开源项目的工作流程，从技能上说，
 也从一些源自开源项目的优秀实践学到了很多，例如 GitHub Actions 的 CI，Makefile 的广泛使用等等，希望我自己能伴随着这个平台的发展越走越远吧！
 
-![聚会图片](/assets/2020/wechaty-guangzhou-gathering/pic4.jpg)
+![聚会图片](/assets/2020/wechaty-guangzhou-gathering/pic4.webp)
 
-![聚会图片](/assets/2020/wechaty-guangzhou-gathering/pic5.jpg)
+![聚会图片](/assets/2020/wechaty-guangzhou-gathering/pic5.webp)
 
 最后，回来之后仔细看了佳芮老师的书，的确是对话机器人这个领域的不可多得的理论和实践指南，在这里为佳芮老师带一下货，大家多多支持哦！也希望日后能有更多的机会参与开源项目的线下活动，Wechaty 越办越好！
 

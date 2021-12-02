@@ -13,12 +13,12 @@ be merged into Wechaty.
 
 ## Installing Git
 
-Wechaty uses [Git][Git] for its source control.
+Wechaty uses [Git][git] for its source control.
 You can [download](https://git-scm.com/download) Git,
 but it's often easier to install with
 your operating system's package manager.
 
-Wechaty's [Git repository][Git repository] is hosted on [GitHub][GitHub],
+Wechaty's [Git repository][git repository] is hosted on [GitHub][github],
 and it is recommended that you also work using GitHub.
 
 After installing Git, the first thing you should do is setup your name and
@@ -33,9 +33,9 @@ Note that `user.name` should be your real name, not your GitHub nick. GitHub
 should know the email you use in the `user.email` field, as this will be
 used to associate your commits with your GitHub account.
 
-[Git]: https://git-scm.com/
-[Git repository]: https://github.com/wechaty/wechaty/
-[GitHub]: https://github.com/
+[git]: https://git-scm.com/
+[git repository]: https://github.com/wechaty/wechaty/
+[github]: https://github.com/
 
 ## Setting up local repository
 
@@ -57,7 +57,7 @@ cd wechaty
 
 Your GitHub repository will be called "origin" in Git.
 
-You should also setup ``wechaty/wechaty`` as an "upstream" remote (that is, tell
+You should also setup `wechaty/wechaty` as an "upstream" remote (that is, tell
 git that the reference Wechaty repository was the source of your fork of it):
 
 ```sh
@@ -74,7 +74,7 @@ git remote add huan git@github.com:huan/wechaty.git
 ## Working on an issue
 
 When working on an issue, create a new branch for the work, and base that work
-on ``upstream/main``:
+on `upstream/main`:
 
 ```sh
 git checkout -b ticket_xxxxx upstream/main
@@ -129,8 +129,8 @@ their clone would become corrupt when you edit commits.
 
 There are also "public branches". These are branches other people are supposed
 to fork, so the history of these branches should never change. Good examples
-of public branches are the ``main`` and ``stable/A.B.x`` branches in the
-``wechaty/wechaty`` repository.
+of public branches are the `main` and `stable/A.B.x` branches in the
+`wechaty/wechaty` repository.
 
 When you think your work is ready to be pulled into Wechaty, you should create
 a pull request at GitHub. A good pull request means:
@@ -227,10 +227,10 @@ If there are merge conflicts, you will need to resolve them and then use
 `git rebase --continue`. At any point you can use `git rebase --abort`
 to return to the original state.
 
-Note that you want to *rebase* on upstream, not *merge* the upstream.
+Note that you want to _rebase_ on upstream, not _merge_ the upstream.
 
-The reason for this is that by rebasing, your commits will always be *on
-top of* the upstream's work, not *mixed in with* the changes in the upstream.
+The reason for this is that by rebasing, your commits will always be _on
+top of_ the upstream's work, not _mixed in with_ the changes in the upstream.
 This way your branch will contain only commits related to its topic, which
 makes squashing easier.
 
@@ -292,8 +292,8 @@ do to investigate the quality of the patch.
 - Announce your work on the issue by linking to your GitHub pull request.
 - When you have something ready, make a pull request.
 - Make your pull requests as good as you can.
-- When doing fixes to your work, use ``git rebase -i`` to squash the commits.
-- When upstream has changed, do ``git fetch upstream; git rebase``.
+- When doing fixes to your work, use `git rebase -i` to squash the commits.
+- When upstream has changed, do `git fetch upstream; git rebase`.
 
 ## Special Thanks
 

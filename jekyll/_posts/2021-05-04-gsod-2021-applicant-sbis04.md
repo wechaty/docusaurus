@@ -10,7 +10,7 @@ tags:
   - introduction
   - project
   - proposal
-image: /assets/2021/05-gsod-2021-applicant-sbis04/wechaty_contributor_gsod_2021.png
+image: /assets/2021/05-gsod-2021-applicant-sbis04/wechaty_contributor_gsod_2021.webp
 ---
 
 I am [Souvik Biswas](https://www.souvikbiswas.com/), currently pursuing a Bachelor of Technology degree (2018 - 2022) in Computer Science & Engineering from the Indian Institute of Information Technology Kalyani. Also, a freelance technical writer of Codemagic and LogRocket Blog, and a passionate mobile app developer.
@@ -106,7 +106,7 @@ These were some of the articles, you can find more [here](https://medium.com/@sb
 
 ### Abstract
 
-#### Current State of WeChaty Tutorials
+#### Current State of Wechaty Tutorials
 
 * Users come to Wechaty website seeking how to use Wechaty to build a chatbot application for solving their problems. Unfortunately, the learning curve is not friendly to our users, they always struggle with setting up with their development environment, can not get started with the simplest example source code, and find it hard to know what they can do with our API. This problem leads to us losing lots of new users, increased number of questions asked in the community, and lowered user satisfaction.
 

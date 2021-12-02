@@ -5,20 +5,20 @@ categories: migration
 tags:
   - code
   - news
-image: /assets/2018/code-migration-en.png
+image: /assets/2018/code-migration-en.webp
 ---
 
 Wechaty has been updated to version 0.16(BETA) these days and begin to support all kinds of wechat solutions including web, ipad, ios, etc. My product based on wechaty has to migration from wechaty solution based on web to ipad solution.
 
 This blog introduces how to porting code from wechaty puppeteer to padchat.
 
-![code](/assets/2018/code-migration-en.png)
+![code](/assets/2018/code-migration-en.webp)
 
 ## 1. Puppeteer VS Padchat
 
 **Puppet System** means to connect Wechaty API to any kinds of Puppets, including Web, iPad, Android, Windows Hook and ios. Different implements of these puppets are totally different, without the puppet, using one API to bridge all implement is very difficult, so we had Puppet System.
 
-![Puppet](/assets/2018/abstract-info.png)
+![Puppet](/assets/2018/abstract-info.webp)
 
 - Puppeteer: a solution based on Web Wechat
 - Padchat: a solution based on Ipad Wechat
@@ -137,8 +137,8 @@ Create config file `tslint.json`
 
 I suggest to refer wechaty config about `tslint` and `tsconfig`
 
-- [tslint config file in wechaty](https://github.com/wechaty/wechaty/blob/master/tslint.json)
-- [tsconfig config file in wechaty](https://github.com/wechaty/wechaty/blob/master/tsconfig.json)
+- [tslint config file in wechaty](https://github.com/wechaty/wechaty/blob/main/tslint.json)
+- [tsconfig config file in wechaty](https://github.com/wechaty/wechaty/blob/main/tsconfig.json)
 
 Here are some tips about wehcaty config:
 
@@ -189,11 +189,11 @@ Search `tslint` and install a plugin for vscode. It is enabled by default.
 
 I also recommend another plugin in vscode: `editorconfig`: EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. see more: [Official EditorConfig Website](https://editorconfig.org/)
 
-You can find wechaty editorconfig in [.editorconfig](https://github.com/wechaty/wechaty/blob/master/.editorconfig)
+You can find wechaty editorconfig in [.editorconfig](https://github.com/wechaty/wechaty/blob/main/.editorconfig)
 
 ## 4. BREAKING CHANGES
 
-After upgrade wechaty, see more in[blog](https://wechaty.github.io/wechaty-new-release-version-0.16/). Although we are trying to minimize API changes, there are some breaking changes. I really suggest you reading [CHANGE LOG](https://github.com/wechaty/wechaty/blob/master/CHANGELOG.md). Also, I list some important changes here:
+After upgrade wechaty, see more in[blog](https://wechaty.github.io/wechaty-new-release-version-0.16/). Although we are trying to minimize API changes, there are some breaking changes. I really suggest you reading [CHANGE LOG](https://github.com/wechaty/wechaty/blob/main/CHANGELOG.md). Also, I list some important changes here:
 
 ### bot.init() change to  bot.start()
 
@@ -233,7 +233,7 @@ wechaty.on('friendship', request => {
 
 Related link:
 
-- [friend-bot.ts](https://github.com/wechaty/wechaty/blob/master/examples/friend-bot.ts)
+- [friend-bot.ts](https://github.com/wechaty/wechaty/blob/main/examples/friend-bot.ts)
 - [BREAKING CHANGE: v0.16 on('friend`) arguments changed!](https://github.com/wechaty/wechaty/issues/1196)
 - [BREAKING CHANGES v0.16: FriendRequest class will be replaced with Friendship](https://github.com/wechaty/wechaty/issues/1312)
 
