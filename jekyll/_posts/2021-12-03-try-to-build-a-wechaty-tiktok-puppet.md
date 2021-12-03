@@ -6,13 +6,13 @@ tags:
   - puppet-tiktok
   - tiktok
   - automotive
-image: /assets/2021/12-try-to-build-a-wechaty-tiktok-puppet/wechaty-tiktok-puppet.webp\
+image: /assets/2021/12-try-to-build-a-wechaty-tiktok-puppet/wechaty-tiktok-puppet.webp
 
 ---
    
 ## Context
 
-* author: Sihe Yu 
+* author: Sihe Yu
 
 * mentor：nan Wang
 
