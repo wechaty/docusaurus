@@ -6,7 +6,7 @@ tags:
   - blog
   - study
   - wechaty-puppet-walnut
-  - 5g RCS
+  - 5g-RCS
   - ospp
   - ospp-2021
   - summer-of-wechaty
