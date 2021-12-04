@@ -5,8 +5,12 @@ categories: article
 tags:
   - blog
   - study
-  - introduction
   - wechaty-puppet-walnut
+  - 5g RCS
+  - ospp
+  - ospp-2021
+  - summer-of-wechaty
+  - summer-2021
 image: /assets/2021/11-report-for-summer-2021/2.webp
 ---
 
