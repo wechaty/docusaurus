@@ -1,6 +1,6 @@
 ---
 name: Iron Conrad(康嘉)
-site: https://www.5g-msg.com
+site: https://www.5g-msg.com https://github.com/IronConrad
 bio: 硬核桃社区COO，5G消息行业专家
 avatar: /assets/contributors/ironconrad/avatar.webp
 ---
