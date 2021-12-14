@@ -6,13 +6,8 @@ tags: productivity
 image: /assets/2021/11-sales-assistant/Sales-Meme.webp
 ---
 Kevin Tung sales assistant initial report
-
-![Wechaty Logo][wechaty-logo-image]
-
-<center class="half"><center/>
-  <img src="/Users/kevintung/workspace/juzi/asset/01.webp" style="zoom: 21%;" />
-  <img src="/Users/kevintung/workspace/juzi/asset/02.webp" alt="sales-Wechat" style="zoom:21%;" />
-</center>
+![01](/assets/2021/11-sales-assistant/01.webp)
+![02](/assets/2021/11-sales-assistant/02.webp)
 
 ## 项目背景
 
