@@ -1,7 +1,7 @@
 ---
 name: kevintung
 site: https://github.com/KevinTung
-avatar: /assets/contributors/kevintung/kevintung-avatar.jpeg
+avatar: /assets/contributors/kevintung/avatar.webp
 bio: hi~
 email: asd135441@gmail.com
 --- 
