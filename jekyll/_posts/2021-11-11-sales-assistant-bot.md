@@ -3,7 +3,7 @@ title: sales-assistant
 author: kevintung
 categories: project
 tags: productivity
-image: /assets/2021/11-sales-assistant/Sales-Meme.webp
+image: /assets/2021/11-sales-assistant/sales-meme.webp
 ---
 Kevin Tung sales assistant initial report
 ![01](/assets/2021/11-sales-assistant/01.webp)

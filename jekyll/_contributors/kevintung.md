@@ -6,6 +6,8 @@ bio: hi~
 email: asd135441@gmail.com
 --- 
 
+Jazz and Ideation lover
+
 ## Contact me
 
 - Github: <https://github.com/KevinTung>
