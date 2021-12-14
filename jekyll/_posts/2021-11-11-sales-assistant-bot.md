@@ -1,17 +1,19 @@
 ---
-title: sales-assistant
+title: sales-assistant 项目规划
 author: kevintung
 categories: project
 tags: productivity
 image: /assets/2021/11-sales-assistant/sales-meme.webp
 ---
-Kevin Tung sales assistant initial report
-![01](/assets/2021/11-sales-assistant/01.webp)
-![02](/assets/2021/11-sales-assistant/02.webp)
-
-## 项目背景
 
 销售在跟客户沟通的过程中，会出现回复客户不及时，以及回复时存在错别字和病句的现象。所以HR部门要利用机器人记录这种情况，用于计算销售人员的绩效。
+<!-- ![01](/assets/2021/11-sales-assistant/01.webp)
+![02](/assets/2021/11-sales-assistant/02.webp) -->
+
+<center class="half">
+  <img src="/assets/2021/11-sales-assistant/01.webp" style="zoom: 21%;" />
+  <img src="/assets/2021/11-sales-assistant/02.webp" alt="sales-Wechat" style="zoom:21%;" />
+</center>
 
 ## 项目目标
 
