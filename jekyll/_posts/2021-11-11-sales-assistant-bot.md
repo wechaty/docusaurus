@@ -3,9 +3,10 @@ title: sales-assistant
 author: kevintung
 categories: project
 tags: productivity
+image: /assets/2021/11-sales-assistant/Sales-Meme.webp
 ---
 Kevin Tung sales assistant initial report
-  
+
 ![Wechaty Logo][wechaty-logo-image]
 
 <center class="half"><center/>

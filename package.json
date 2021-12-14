@@ -74,5 +74,8 @@
     "scripts": {
       "pre-push": "npx git-scripts-pre-push"
     }
+  },
+  "dependencies": {
+    "file-name-linter": "^1.1.0"
   }
 }
