@@ -79,9 +79,9 @@ grpcClient 在接收到 PadLocalServer 的响应后，通过回调 及 事件订
 
 答案应该就是 gRPC, 笔者没有使用过 gRPC, 但在 PadLocal 作者的文章中，他提到 gRPC 具备双向通信机制，再结合这几处的源码
 
-- [PadLocalClientApi.login](https://github.com/padlocal/padlocal-client-ts/blob/master/src/PadLocalClientApi.ts#L24-L54)
-- [Request._onServerMessage](https://github.com/padlocal/padlocal-client-ts/blob/master/src/Request.ts#L233)
-- [Request._completePendingRequest](https://github.com/padlocal/padlocal-client-ts/blob/master/src/Request.ts#L214)
+- [PadLocalClientApi.login](https://github.com/padlocal/padlocal-client-ts/blob/7ba679d78d13aeacb67969f0d817dbabf64f9c36/src/PadLocalClientApi.ts#L24-L54)
+- [Request._onServerMessage](https://github.com/padlocal/padlocal-client-ts/blob/7ba679d78d13aeacb67969f0d817dbabf64f9c36/src/Request.ts#L233)
+- [Request._completePendingRequest](https://github.com/padlocal/padlocal-client-ts/blob/7ba679d78d13aeacb67969f0d817dbabf64f9c36/src/Request.ts#L214)
 
 笔者大胆猜测: 在发起 LoginRequest 的 gRPC 请求后，PadLocal 服务端会根据登录状态，持续向 Client 端响应消息，触发 Client 中的 登录相关的几个事件回调如 ```onQrCodeEvent```、```onLoginStart```、
   ```onLoginSuccess```，并会控制 Client 端 与 Wechat Server 完成长连接的建立。等到这些初始化都完成后，才会通过 gRPC 响应头中的 ack 字段，来结束这次 LoginRequest 的 gRPC 请求。
