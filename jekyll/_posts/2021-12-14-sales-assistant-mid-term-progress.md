@@ -82,27 +82,27 @@ image: /assets/2021/12-sales-assistant-mid-term-progress/sales-meme.webp
 Variables 
 roles :{sales,juzi-employee,customer} 
 sales_record : {
-	"name:Kevin" :{
-		 "criteria:late_reply": {
-				count: number
-				messages: [
-					msg_obj1,
-					msg_obj2,
-					... 
-				]
-			}, ... 
-			"criteria:low_replies": {
-				count: number
-				messages: [
-					msg_obj1,
-					msg_obj2,
-						... 
-				]
-			}
-	},
-	"name:Alice" :{
+   "name:Kevin" :{
+       "criteria:late_reply": {
+            count: number
+            messages: [
+               msg_obj1,
+               msg_obj2,
+               ... 
+            ]
+         }, ... 
+         "criteria:low_replies": {
+            count: number
+            messages: [
+               msg_obj1,
+               msg_obj2,
+                  ... 
+            ]
+         }
+   },
+   "name:Alice" :{
 
-	}, ... 
+   }, ... 
 }
 
 Logic 
@@ -121,7 +121,7 @@ wechaty 整体是基于非同步函数实现的，所以函数主体是写在onM
 
 ````js
 async function onMessage(msg) {
-	var room_name = await msg.room().topic(); //
+   var room_name = await msg.room().topic(); //
   var value = await client.get({ //get sales-customer tree
     id: doc_metric_id,
     index: index_metric
