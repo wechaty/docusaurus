@@ -2,11 +2,11 @@
 name: kevintung
 site: https://github.com/KevinTung
 avatar: /assets/contributors/kevintung/avatar.webp
-bio: hi~
+bio: THUCS, rock band vocalist, founder of Ideation
 email: asd135441@gmail.com
 --- 
 
-Jazz and Ideation lover
+THUCS, rock band vocalist, founder of Ideation
 
 ## Contact me
 
