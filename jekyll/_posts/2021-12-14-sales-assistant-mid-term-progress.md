@@ -22,6 +22,7 @@ image: /assets/2021/12-sales-assistant-mid-term-progress/sales-meme.webp
 ![03](/assets/2021/12-sales-assistant-mid-term-progress/3.webp)
 
 ### 群聊视角
+
 为了评估某个销售的表现，统计销售在所有负责群的指标
 ![04](/assets/2021/12-sales-assistant-mid-term-progress/4.webp)
 
