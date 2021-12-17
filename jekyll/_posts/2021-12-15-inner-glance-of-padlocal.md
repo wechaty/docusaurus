@@ -61,7 +61,7 @@ bot
 
 **第一条从上往下的 方法调用:**
 
-```wechaty.start()``` -> ```PuppetPadLocal.start()``` -> ```create = PadLocalClient.create()``` -> ```client.api.login({onQrCodeEvent，onLoginSuccess})```  -> ```client.request(pb.LoginRequest)``` -> ```grpc call``` -> ```PadLocalServer```
+```wechaty.start()``` -> ```PuppetPadLocal.start()``` -> ```client = PadLocalClient.create()``` -> ```client.api.login({onQrCodeEvent，onLoginSuccess})```  -> ```client.request(pb.LoginRequest)``` -> ```grpc call``` -> ```PadLocalServer```
 
 在 wechaty 的 start 流程中，通过底层依赖的层层调用，最终初始化请求，会变成一个 LoginRequest 通过 grpc 的方式发送至 PadLocalServer。
 
@@ -129,9 +129,9 @@ PadLocalServer 端应该会根据 Client 的请求类型SendTextMessageRequest�
 
 > PadLocal、PadLocalServer 在 Wechaty 整体架构中主要扮演什么角色？
 
-PadLocal 在整体架构中扮演一个 微信 iPad 端代理的角色，他会与 Wechat Server 建立长连接，进行收发消息操作。但 Wechaty SDK 在 PadLocal 上的所有主动方法调用，都需要先 通过 gRPC 的方式，请求到 PadLocalServer， 在收到 PadLocalServer 的响应指示后， PadLocal 才知道如何进行后续的操作处理(通过长/端连接，或是 Http请求 微信服务端)。并且所有的 消息的发送、接收 的加解密处理，都需要通过 PadLocalServer 进行。
+PadLocal 在整体架构中扮演一个 微信 iPad 端代理的角色，他会与 Wechat Server 建立长连接，进行收发消息操作。但 Wechaty SDK 在 PadLocal 上的所有主动方法调用，都需要先 通过 gRPC 的方式，请求到 PadLocalServer， 在收到 PadLocalServer 的响应指示后， PadLocal 才知道如何进行后续的操作处理(通过 长/短 连接，或是 HTTP 请求 微信服务端)。并且所有的 消息的发送、接收 的加解密处理，都需要通过 PadLocalServer 进行。
 
-> 有哪些类型的请求需要通过 grpc 的方式与 PadLocalServer 通信？
+> 有哪些类型的请求需要通过 gRPC 的方式与 PadLocalServer 通信？
 
 Wechaty SDK 上的所有主动方法调用，都会变成 client.api 的方法调用，最后变成 gRPC 请求到 PadLocalServer。再根据 gRPC 的响应指示，与 Wechat Server 进行交互。
 
