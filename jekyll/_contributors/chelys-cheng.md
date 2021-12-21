@@ -1,7 +1,7 @@
 ---
 name: chelys-cheng
 site: https://github.com/chelys-cheng
-avatar: /assets/contributors/chelys-cheng/chelys.jpeg
+avatar: /assets/contributors/chelys-cheng/chelys.webp
 bio: Generating...
 email: sunyuqian1997@163.com
 ---
