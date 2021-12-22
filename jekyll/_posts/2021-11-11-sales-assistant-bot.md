@@ -13,6 +13,10 @@ image: /assets/2021/11-sales-assistant-bot/sales-meme.webp
   <img src="/assets/2021/11-sales-assistant-bot/02.webp" alt="sales-Wechat" style="zoom:21%;" />
 </center>
 
+## 影片链接
+
+{% include iframe.html src="https://youtu.be/OHKxFKlIaIU" %}
+
 ## 项目目标
 
 1. 透过自动对销售群聊分析、可视化与提醒，优化销售与客户的互动
