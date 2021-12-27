@@ -6,7 +6,7 @@ tags:
   - puppet-tiktok
   - tiktok
   - automotive
-image: /assets/2021/12-try-to-build-a-wechaty-tiktok-puppet(2)/wechaty-tiktok-puppet.webp
+image: /assets/2021/12-try-to-build-a-wechaty-tiktok-puppet/wechaty-tiktok-puppet.webp
 
 ---
    
@@ -58,7 +58,7 @@ intelligent tiktok robot based on the platform of shaking table, providing an in
 
 ## Proposal Slides
 
-{% include iframe.html src="/assets/2021/12-try-to-build-a-wechaty-tiktok-puppet(2)/mid-term-ppt.pdf" %}
+{% include iframe.html src="/assets/2021/12-try-to-build-a-wechaty-tiktok-puppet/mid-term-ppt.pdf" %}
 
 ## Plans
 
