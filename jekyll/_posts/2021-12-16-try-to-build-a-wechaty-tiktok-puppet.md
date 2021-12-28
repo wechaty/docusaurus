@@ -62,7 +62,7 @@ intelligent tiktok robot based on the platform of shaking table, providing an in
 
 ## Plans
 
-1. It is expected that the open platform of Douyin will give a reply within three days
+1. It is expected that the open platform of Douyin will give a reply within this mounth
 Puppet's dingdong logic is expected to be implemented next week
 2. Improve the code, call as many available interfaces as possible, familiar with puppet source code
 3. Invoke puppet ding-dong logic using wechaty
