@@ -109,6 +109,21 @@ override async messageRawPayloadParser (rawPayload: WalnutMessagePayload): Promi
 // contactRawPayloadParser
 ~~~
 
+### 关于 5G
+
+1. 联系人模块
+
+   5G 方面，联系人的概念可能与我们平常其他 IM 中的不同。依托于运营商的缘故，我们只需要一个手机号码就可以去直接发送消息，免去了加好友之类繁琐的操作。**所以对应 Walnut 我们会对所有的发送过消息的联系人存入缓存，这样可以快速有效的积累我们的联系人。**
+
+2. 多媒体消息
+
+   依据 [接口文档](https://github.com/wechaty/puppet-walnut/blob/main/docs/api-documentation-for-5G-platform.md#18) 给出的信息，5G 这边支持多样的消息格式：
+
+   - 带菜单按钮的消息
+   - 文件等多媒体消息
+   - 地理位置回落信息
+   - 带CSS样式的富文本消息
+
 ### 视频展示
 
 {% include iframe.html src="https://youtu.be/i5UohqZ9uTs" %}
