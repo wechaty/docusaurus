@@ -30,11 +30,11 @@ I love technical writing because it being a combination of communication and tec
 
 ## Proposal Video Presentation
 
-{% include iframe.html src="https://youtu.be/A1FlVWGWshw" %}
+{% include iframe.html src="https://youtu.be/HghT9K8JNSI" %}
 
 ## Final Report Video Presentation
 
-[Improve the Introduction and Explanation sections](https://youtu.be/j3RW6rhdZok)
+{% include iframe.html src="https://youtu.be/j3RW6rhdZok" %}
 
 ## Project title
 
