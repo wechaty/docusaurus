@@ -1,3 +1,16 @@
+---
+title: 基于wechaty构建西安社区微信抗疫机器人
+author: elvisxiong
+categories: project
+tags:
+  - covid-2019
+  - xian
+  - 西安
+  - 疫情
+  - 微信
+image: /assets/2021/02-your-blog-slug/teaser.jpg
+---
+
 背景：
 
 2021年12月21日西安疫情爆发，西安执行了继武汉后第二个全市封城的内陆城市，1200万人的西安市民全部在家隔离，西安市政府执行了每天全民核酸检测，起初成百上千的人在小区内扎堆排队，经常需要排队1小时以上，而且有很大的感染风险。后来小区的业主自发成立了志愿者队伍，志愿者每楼每单元有一个楼管，通过微信群通知各楼层志愿者，这些志愿者分批次逐户敲门通知业主下楼检测。这种模式需要耗费大量志愿者，而在工作日，很多志愿者因为远程办公有心无力。
@@ -9,9 +22,9 @@
 2. 小区物业、楼长，志愿者，通过这个微信抗疫者机器人能发送腾讯云语音核酸检测语音短信提醒，送菜通知。
 3. 通过志愿者群里可通过向机器人发送指令，查每楼层每户接听核酸、取菜电话的结果。
 
-![image-20220107210335805](https://elvisxiong-1302375334.cos.ap-hongkong.myqcloud.com/robot.jpeg)
-![image-20220107210643181](https://elvisxiong-1302375334.cos.ap-hongkong.myqcloud.com/covid2019.jpeg)
-![image-20220107210706591](https://elvisxiong-1302375334.cos.ap-hongkong.myqcloud.com/buycai.JPG)
+![image-20220107210335805](https://elvisxiong-1302375334.cos.ap-hongkong.myqcloud.com/robot.jpeg){:height="100" width="100"}
+![image-20220107210643181](https://elvisxiong-1302375334.cos.ap-hongkong.myqcloud.com/covid2019.jpeg){:height="100" width="100"}
+![image-20220107210706591](https://elvisxiong-1302375334.cos.ap-hongkong.myqcloud.com/buycai.JPG){:height="100" width="100"}
 
 抗疫呼叫微信机器人(ForgetMe)特点：
 
@@ -22,3 +35,11 @@
 
 致谢：
 elvisxiong能在短短元旦1天半时间开发出这款应用，是因为基于强大的wechaty sdk，该SDK非常强大，仅需要很少量的代码即可以监听微信群消息，并进行回复、稳定可靠、非常好用。
+
+---
+name: Elvis Xiong
+site: https://github.com/yuther
+bio: 兜兜友 backend developer
+avatar: /jekyll/assets/contributors/elvisxiong/avatar.png
+email: yuther.xp@gmail.com
+---
