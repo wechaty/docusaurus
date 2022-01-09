@@ -1,12 +1,12 @@
 ---
-title: "北京GDG | 社区说｜聊天机器人与 Angular"
+title: "北京GDG|社区说｜NG+|聊天机器人与Angular"
 author: huan
 categories: talk
 tags:
   - angular
   - tensorflow.js
   - gdg
-image: /assets/2022/01/angular-tensorflow-js/ai-angular-tensorflow-js.webp
+image: /assets/2022/01-angular-tensorflow-js/ai-angular-tensorflow-js.webp
 ---
 
 > AI, Wechaty, Angular, and mix them altogether in JavaScript
@@ -41,17 +41,13 @@ GDE (Machine Learning) and AI MVP. PreAngel Partner, Plug and Play Venture Partn
 
 ## Presentation
 
-### Video
+### Slides
 
-{% include iframe.html src="https://youtu.be/SACugbTNQnc" %}
+{% include iframe.html src="https://docs.google.com/presentation/d/1Gd3D8bS6OifXDsdSe0x5i6XsP_uISX3W9tR8yBA0mYs/edit?usp=sharing" %}
 
 ### Source Code
 
 GitHub: <https://github.com/huan/ng-plus-wechaty>
-
-### Slides
-
-{% include iframe.html src="https://docs.google.com/presentation/d/1Gd3D8bS6OifXDsdSe0x5i6XsP_uISX3W9tR8yBA0mYs/edit?usp=sharing" %}
 
 ## Tutorials
 
@@ -157,7 +153,7 @@ npm install @tensorflow-models/toxicity
 ng generate service toxicity
 ```
 
-[![TensorFlow.js Toxicity Model](docs/images/toxicity.webp)](https://storage.googleapis.com/tfjs-models/demos/toxicity/index.html)
+[![TensorFlow.js Toxicity Model](/assets/2022/01-angular-tensorflow-js/toxicity.webp)](https://storage.googleapis.com/tfjs-models/demos/toxicity/index.html)
 
 Learn more:
 
@@ -179,15 +175,19 @@ The traffic light code is copy/pasted from this great tutorial: [Stop in the Nam
 
 Knowledge, ideas, and insights for the Next Generation.
 
-![NG2020 Conference Huan Wechaty Angular TensorFlow.js](/assets/2022/01/angular-tensorflow-js/huan-ng-2020.webp)
+{% include iframe.html src="https://youtu.be/SACugbTNQnc" %}
+
+![NG2020 Conference Huan Wechaty Angular TensorFlow.js](/assets/2022/01-angular-tensorflow-js/huan-ng-2020.webp)
 
 > Source: [NG+ Developers Conference](https://ng-plus.dev/#/conferences?year=2020)
 
 ## 关于社区说
 
+{% include iframe.html src="https://youtu.be/XGBBx3_pLdg" %}
+
 「社区说」是由谷歌开发者社区 (Google Developer Group)与谷歌开发者专家计划 (Google Developer Expert) 联合推出的，与热爱技术的开发者们交流技术，直播代码，讨论产品，分享心得的小型线上会议，每次时长45分钟到1小时。
 
-![GDG Community Talk Huan Wechaty Angular TensorFlow.js](/assets/2022/01/angular-tensorflow-js/huan-gdg-2021-community-talk.webp)
+![GDG Community Talk Huan Wechaty Angular TensorFlow.js](/assets/2022/01-angular-tensorflow-js/huan-gdg-2021-community-talk.webp)
 
 活动将由不同的谷歌开发者社区举办，并邀请国内相关技术方向的谷歌开发者专家以及对技术有热情、愿意分享的嘉宾，一起聊聊最近做的项目、写的代码，或者三五技术好友探讨聊天。
 
