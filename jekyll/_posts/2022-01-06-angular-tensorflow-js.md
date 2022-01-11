@@ -185,6 +185,8 @@ Knowledge, ideas, and insights for the Next Generation.
 
 {% include iframe.html src="https://youtu.be/XGBBx3_pLdg" %}
 
+> Bilibili: <https://www.bilibili.com/video/BV1Ha411q7RF>
+
 「社区说」是由谷歌开发者社区 (Google Developer Group)与谷歌开发者专家计划 (Google Developer Expert) 联合推出的，与热爱技术的开发者们交流技术，直播代码，讨论产品，分享心得的小型线上会议，每次时长45分钟到1小时。
 
 ![GDG Community Talk Huan Wechaty Angular TensorFlow.js](/assets/2022/01-angular-tensorflow-js/huan-gdg-2021-community-talk.webp)
