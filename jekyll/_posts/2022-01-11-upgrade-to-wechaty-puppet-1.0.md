@@ -34,7 +34,7 @@ class xxxPuppet implements Puppet {
     
   }
 
-  foo(message: EventMessagePayload) {
+  foo (message: EventMessagePayload) {
 
   }
 }
