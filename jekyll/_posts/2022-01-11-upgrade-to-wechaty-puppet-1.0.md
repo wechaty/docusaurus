@@ -51,7 +51,7 @@ class xxxPuppet implements Puppet {
 
   }
 
-  foo(message: payloads.EventMessage) {
+  foo (message: payloads.EventMessage) {
 
   }
 }
