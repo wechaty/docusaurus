@@ -74,6 +74,7 @@ this.state.inactive()
 ## 其他
 
 尽管在 wechaty-puppet@1.10 版本中，helpers 模块依旧提供了 file-box 的导出，但建议自己另行导入 file-box 等其他模块，这样如果需要使用 ```FileBoxTypes``` 类型枚举也能方便使用。
+同时如果 puppet 要配合 wechaty-io-client 和 puppet-service 来提供远程服务，需要注意新版本对 token 的生成有一些新的要求。token 需要以一个 Server Name Indication (SNI) 作为前缀，例如 SNI 为 somesni ，则token应为 somesni_xxxx-xxx 的格式。同时，要有一个签名认证的 CA ,否则无法建立 TLS 。（可以通过将 insecure 作为前缀来绕过这一检查，但正如其名，这是不安全的。）。参考 [TLS & SNI Problem: cannot connect to Puppet Server after Wechaty 1.0 migiration](https://github.com/wechaty/puppet-service/issues/190)
 
 ## 过渡方案
 
