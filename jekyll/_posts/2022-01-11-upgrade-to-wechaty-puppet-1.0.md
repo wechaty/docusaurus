@@ -43,7 +43,7 @@ class xxxPuppet implements Puppet {
 应该改为：
 
 ```ts
-import { payloads, types , Puppet } from 'wechaty-puppet'
+import { payloads, types, Puppet } from 'wechaty-puppet'
 
 class xxxPuppet implements Puppet {
   // ...
