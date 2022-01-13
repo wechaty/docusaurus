@@ -20,31 +20,45 @@ tags:
 ## 实现
 index.js
 ```javascript
-const {
-  Wechaty,
-  UrlLink,
+import {
+  WechatyBuilder,
   ScanStatus,
   log,
-}           = require('wechaty')
+} from 'wechaty'
 
-const { FileBox }  = require('file-box')
-const qrTerm = require('qrcode-terminal')
-
-
-//下面就是http用到的包
-const http = require('http');
-const querystring = require('querystring');
-//为了保护这个服务不被滥用，这里用了加密算法，token不一致的会被抛弃，不发送消息
-const enc = require('./encrypt.js')
+import qrTerm from 'qrcode-terminal'
+import * as querystring from 'querystring';
+import * as http from 'http';
+import * as enc from './encrypt.js';
 /**
  *
  * 1. Declare your Bot!
  *
  */
 
-const bot = new Wechaty({
-  name: 'myWechatyBot',
-})
+const options = {
+  name : 'ding-dong-bot',
+
+  /**
+   * You can specify different puppet for different IM protocols.
+   * Learn more from https://wechaty.js.org/docs/puppet-providers/
+   */
+  // puppet: 'wechaty-puppet-whatsapp'
+
+  /**
+   * You can use wechaty puppet provider 'wechaty-puppet-service'
+   *   which can connect to Wechaty Puppet Services
+   *   for using more powerful protocol.
+   * Learn more about services (and TOKEN)from https://wechaty.js.org/docs/puppet-services/
+   */
+  // puppet: 'wechaty-puppet-service'
+  // puppetOptions: {
+  //   token: 'xxx',
+  // }
+}
+
+const bot = WechatyBuilder.build(options)
+
 
 const hostname = '0.0.0.0';
 const port = 8081;
@@ -116,7 +130,7 @@ http.createServer(function (request, response) {
 启动docker的时候，监听指定端口，我这里使用的是8081，当然也可以通过-e，传入docker中供后面使用
 ```shell
 
- docker run -ti -d --name wechaty_http_service --rm -p "8081:8081" -e WECHATY_PUPPET_PADLOCAL_TOKEN="your puppet token" --mount type=bind,source="$(pwd)",target=/bot wechaty/wechaty:0.67 index.js
+ docker run -ti -d --name wechaty_http_service --rm -p "8081:8081" -e WECHATY_PUPPET_PADLOCAL_TOKEN="your puppet token" --mount type=bind,source="$(pwd)",target=/bot wechaty/wechaty:latest index.js
 
 ```
 http server 会随着wechaty启动，一起启动。大家可以在消息体中加入自己需要的各种信息，然后通过向该server发送各种请求发送消息。
