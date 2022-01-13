@@ -1,22 +1,14 @@
-source "https://rubygems.org"
-ruby RUBY_VERSION
+---
+name: stw666
+site: https://github.com/stw666
 
-# Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
-#
-#     bundle exec jekyll serve
-#
+bio:An undergraduate and future programmer
+email: stw23722@gmail.com
+---
 
-# If you have any plugins, put them here!
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-group :jekyll_plugins do
-    gem 'jekyll-feed'
-    gem 'jekyll-google-tag-manager'
-    gem 'jekyll-paginate'
-    gem 'jekyll-seo-tag'
-    gem 'jekyll-sitemap'
-    gem 'jekyll-pwa-plugin', "= 2.2.3" # https://github.com/lavas-project/jekyll-pwa
-end
+这是我第一次为开源社区贡献自己的力量，希望能从中学习
 
-gem "webrick", "~> 1.7"
+## Contact me
+
+- Github: <https://github.com/stw666>
+- Email：<stw23722@gmail.com>
