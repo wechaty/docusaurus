@@ -1,5 +1,5 @@
 ---
-title: "wechaty基于nodejs原生http包的服务"
+title: "wechaty 基于 nodejs 原生 http 包的服务"
 author: xiaowx2010
 categories: article
 tags:
@@ -8,18 +8,22 @@ tags:
   image: /assets/2022/01-wechaty-with-node-server/img.webp
 ---
 
-很开心加入了Wechaty社区，也在我的日常工作中提供了很多帮助。根据日常的工作需要，我自己加入了一些自己需要的功能。
+很开心加入了 Wechaty 社区，也在我的日常工作中提供了很多帮助。根据日常的工作需要，我自己加入了一些自己需要的功能。
 
 今天和大家分享一个内容：
-- 使用nodejs原生的http包来接收http请求
+
+- 使用 nodejs 原生的 http 包来接收 http 请求
 
 ## 使用背景
-我们单位在日常工作中需要将审批流中审批的详情发在微信的工作群中，并通知到相关的人员。此类需求在钉钉或者是企业微信都很容易做到。但是历史原因，我们还都是用微信来进行处理。也就产生了这个需求。
-因为我们用的是wechaty docker实现，所以就采用了nodejs原生的http模块进行开发。
+
+我们单位在日常工作中需要将审批流中审批的详情发在微信的工作群中，并通知到相关的人员。此类需求在钉钉或者是企业微信都很容易做到。但是历史原因，我们还都是用微信来进行处理。也就产生了这个需求。因为我们用的是 wechaty docker 实现，所以就采用了 nodejs 原生的 http 模块进行开发。
 
 ## 实现
+
 index.js
+
 ```javascript
+
 import {
   WechatyBuilder,
   ScanStatus,
@@ -127,22 +131,26 @@ http.createServer(function (request, response) {
 
 ```
 
-启动docker的时候，监听指定端口，我这里使用的是8081，当然也可以通过-e，传入docker中供后面使用
+启动 docker 的时候，监听指定端口，我这里使用的是 8081，当然也可以通过-e，传入 docker 中供后面使用
+
 ```shell
 
  docker run -ti -d --name wechaty_http_service --rm -p "8081:8081" -e WECHATY_PUPPET_PADLOCAL_TOKEN="your puppet token" --mount type=bind,source="$(pwd)",target=/bot wechaty/wechaty:latest index.js
 
 ```
-http server 会随着wechaty启动，一起启动。大家可以在消息体中加入自己需要的各种信息，然后通过向该server发送各种请求发送消息。
+
+http server 会随着 wechaty 启动，一起启动。大家可以在消息体中加入自己需要的各种信息，然后通过向该 server 发送各种请求发送消息。
 
 ## 常见问题
 
 1、为什么服务启动了，但是发送请求一直不成功？
 >请查看服务器该端口是否连通，是否被防火墙禁止访问
 
-2、服务器不允许在url后加端口访问怎么办？
->可以使用nginx,apache等进行转发。我这边用的是nginx,简单配置如下：
- ```bash
+2、服务器不允许在 url 后加端口访问怎么办？
+>可以使用 nginx,apache 等进行转发。我这边用的是 nginx,简单配置如下：
+
+```bash
+
 location /wechaty/ {
   proxy_set_header X-Real-IP $remote_addr;
   proxy_pass http://127.0.0.1:8081;
@@ -152,6 +160,7 @@ location /wechaty/ {
   proxy_set_header Host $host;
   proxy_cache_bypass $http_upgrade;
 }
+
 ```
 
 更多问题后续会根据反馈继续补充
@@ -159,4 +168,5 @@ location /wechaty/ {
 ## 联系方式
 
 - Email：xiaowx2000@qq.com
+
 > Author:[@xiaowx2010](https://github.com/xiaowx2010)
