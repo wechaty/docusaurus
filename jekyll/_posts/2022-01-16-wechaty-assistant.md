@@ -153,8 +153,7 @@ async function getAnswer(signature, userid, text) {
 
 ### 2.5 设置定时任务(可循环、可单次）
 
-- 定时发送群消息
-   - 登录时任务开始执行
+- 定时发送群消息，登录时任务开始执行
    
    ```js
    /**
@@ -180,12 +179,12 @@ async function getAnswer(signature, userid, text) {
    }
    ``` 
    
-   - 暂不支持指令设置群定时任务，只可通过修改源码
-   
 - 定时给个人发送消息
-   - ![image.png](/assets/2022/01-wechaty-assistant/schedule.webp)
-   - `2022年1月14日4点0分0秒`向备注为`樊庆元`的联系人发送`“我刚学完，早安”`
-   - 让卷王们感受恐惧吧！！！
+
+![image.png](/assets/2022/01-wechaty-assistant/schedule.webp)
+
+`2022年1月14日4点0分0秒`向备注为`樊庆元`的联系人发送`“我刚学完，早安”`
+让卷王们感受恐惧吧！！！
    
    ```js
    if ((await contact.alias()) === config.MYSELF) {
@@ -218,7 +217,8 @@ async function getAnswer(signature, userid, text) {
 该功能可用于记录**常用的冗长文本**，例如身份证号、银行卡号、购物时的好评模板等等。
 
 - 通过指令`map key value`可记录标签为`key`，内容为`value`的密码（在`password`目录下生成文件）
-   - ![image.png](/assets/2022/01-wechaty-assistant/map.webp)
+
+![image.png](/assets/2022/01-wechaty-assistant/map.webp)
 
 ```js
 else if (content.includes("map")) { // map key value
@@ -237,7 +237,8 @@ else if (content.includes("map")) { // map key value
 ```
 
 - 通过指令get key可以获取标签为key的密码
-   - ![image.png](/assets/2022/01-wechaty-assistant/get.webp)
+
+![image.png](/assets/2022/01-wechaty-assistant/get.webp)
 
 ```js
 else if (content.includes("get")) { // get key
@@ -254,7 +255,8 @@ else if (content.includes("get")) { // get key
 ```
 
 - 文件加密
-   - 文件名通过`md5`算法比对
+
+**文件名通过`md5`算法比对**
 
    ```js
    const crypto = require("crypto");
@@ -271,7 +273,8 @@ else if (content.includes("get")) { // get key
    };
    ``` 
 
-   - 文件内容通过`aes-128-cbc`算法加密
+**文件内容通过`aes-128-cbc`算法加密**
+
 ![image.png](/assets/2022/01-wechaty-assistant/encrypt1.webp)
 ![image.png](/assets/2022/01-wechaty-assistant/encrypt2.webp)
 
@@ -340,20 +343,24 @@ else if (content.includes("get")) { // get key
 
 需修改`config`配置，将里面的配置改为自己的。打开`config/index.js`文件， 操作如下：
 
-1. 修改接口配置 
-- 官网注册账号
-   - wechaty-puppet-padlocal供应商：[http://pad-local.com/](http://pad-local.com/)
-   - 天行数据官网：[https://www.tianapi.com/](https://tianapi.com/)  		
-   - 聚合数据官网：[https://www.juhe.cn/](https://www.juhe.cn/) 
-   - 微信对话开放平台：[https://openai.weixin.qq.com/](https://openai.weixin.qq.com/)
-- 注册成功后，申请以下接口： 
-   - 天行数据 
-   [每日英语一句话](https://www.tianapi.com/apiview/62)
-   [神回复](https://www.tianapi.com/apiview/39)
-   [全网热搜榜](https://www.tianapi.com/apiview/223)
-   - 聚合数据 
-   [天气预报](https://www.juhe.cn/docs/api/id/73)
-2. 注册后请打开`config/index.js`，将顶部`PUPPET_TOKEN`、`TXAPI_TOKEN`、`JUHEAPI_TOKEN`、`WXAI_TOKEN`改为自己的即可 
+**官网注册账号**
+
+wechaty-puppet-padlocal供应商：[http://pad-local.com/](http://pad-local.com/)
+天行数据官网：[https://www.tianapi.com/](https://tianapi.com/)  		
+聚合数据官网：[https://www.juhe.cn/](https://www.juhe.cn/) 
+微信对话开放平台：[https://openai.weixin.qq.com/](https://openai.weixin.qq.com/)
+
+**注册成功后，申请以下接口**
+
+天行数据
+[每日英语一句话](https://www.tianapi.com/apiview/62)
+[神回复](https://www.tianapi.com/apiview/39)
+[全网热搜榜](https://www.tianapi.com/apiview/223)
+
+聚合数据 
+[天气预报](https://www.juhe.cn/docs/api/id/73)
+
+注册后请打开`config/index.js`，将顶部`PUPPET_TOKEN`、`TXAPI_TOKEN`、`JUHEAPI_TOKEN`、`WXAI_TOKEN`改为自己的即可 
 
 其他免费接口可随意申请，也可以自行更换API服务商。
 
