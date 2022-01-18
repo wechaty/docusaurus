@@ -12,7 +12,7 @@ image: /assets/2022/01-wechaty-with-node-server/img.webp
 
 今天和大家分享一个内容：
 
-  - 使用 nodejs 原生的 http 包来接收 http 请求
+- 使用 nodejs 原生的 http 包来接收 http 请求
 
 ## 使用背景
 
