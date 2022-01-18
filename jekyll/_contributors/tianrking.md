@@ -2,12 +2,12 @@
 name: tianrking 
 site: https://github.com/tianrking
 avatar: /assets/contributors/tianrking/avatar.webp
-bio: 前端开发工程师(自称)
+bio: Although I may be ignorant, I am willing to learn
 email: 
 twitter: 
 ---
 
-前端开发工程师(自称)
+Although I may be ignorant, I am willing to learn
 
 ## Contact me
 
