@@ -60,7 +60,7 @@ tags:
   | sync()                       | `Promise`                                                    | ✅       |                       |
   | self()                       | `Boolean`                                                    | ✅       |                       |
 
-  > Default avatar 👉 https://raw.githubusercontent.com/wechaty/puppet-walnut/main/docs/images/avatar.webp
+  > Default avatar 👉 <https://raw.githubusercontent.com/wechaty/puppet-walnut/main/docs/images/avatar.webp>
 
 - #### [Static Methods](https://wechaty.js.org/docs/api/contact#static-methods)
 
