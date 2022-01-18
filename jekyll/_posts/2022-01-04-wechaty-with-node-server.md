@@ -4,7 +4,7 @@ author: xiaowx2010
 categories: article
 tags:
   - wechaty
-  - http-server 
+  - http-server
 image: /assets/2022/01-wechaty-with-node-server/img.webp
 ---
 
