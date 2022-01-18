@@ -1,7 +1,7 @@
 ---
 name: techial
 site: https://github.com/ZSC-COC
-avatar: /assets/contributors/techial/avatar.webp
+avatar: /assets/contributors/techial1042/avatar.webp
 bio: "Welcome to join ZSC"
 ---
 
@@ -9,6 +9,6 @@ bio: "Welcome to join ZSC"
 
 ## Contact me
 
-- Github: <https://github.com/techial>
+- Github: <https://github.com/techial1042>
 - Email：<>
 - Website: <>
