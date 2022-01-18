@@ -1,16 +1,16 @@
 ---
-name: tianrking
-site: https://me.w0x7ce.eu
+name: tianrking 
+site: https://github.com/tianrking
 avatar: /assets/contributors/tianrking/avatar.webp
-bio: Although I may be ignorant, I am willing to learn
-email: tian.r.king@gmail.com
+bio: 前端开发工程师(自称)
+email: 
 twitter: 
 ---
 
- w0x7ce 一个 略懂围棋 竹笛 金融 的自动化小菜鸡 想要成为区块链 人工智能方向的从业者
+前端开发工程师(自称)
 
 ## Contact me
 
 - Github: <https://github.com/tianrking>
-- Email：<me@w0x7ce.eu>
-- Website: <https://me.w0x7ce.eu>
+- Email：<>
+- Website: <>
