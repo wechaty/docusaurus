@@ -14,8 +14,6 @@ image: /assets/2022/01-wechaty-assistant/roll.webp
 
 [wechaty-assistant](https://github.com/yzh1255245824/wechat-bot-padlocal)
 
-
-
 ## 一、前言
 
 由于常年穿梭于诸多小众网盘的qq群，我接触到了社交软件机器人这个概念。初次接触，便觉得甚是有趣，因而在一番检索之后，寻访到了`wechaty`这一宝地。
@@ -26,32 +24,30 @@ image: /assets/2022/01-wechaty-assistant/roll.webp
 
 再次特别致谢`wechaty`社区一众开发者们的辛勤付出，感谢你们的创造。
 
-
-
 ## 二、主要功能
+
 ### 2.1 私聊消息处理：关键词回复，包括
+
 ![people-message](/assets/2022/01-wechaty-assistant/menu.webp)
 
 - 在线实时数据获取服务由API服务商提供
    - 毒鸡汤
-      - ![IMG_20220115_210015.jpg](/assets/2022/01-wechaty-assistant/poisonsoup.webp)
+![IMG_20220115_210015.jpg](/assets/2022/01-wechaty-assistant/poisonsoup.webp)
    - 神回复
-      - ![image.png](/assets/2022/01-wechaty-assistant/godreply.webp)
+![image.png](/assets/2022/01-wechaty-assistant/godreply.webp)
    - 每日英语
-      - ![IMG_20220115_205958.jpg](/assets/2022/01-wechaty-assistant/oneen.webp)
+![IMG_20220115_205958.jpg](/assets/2022/01-wechaty-assistant/oneen.webp)
    - 全网热点
-      - ![image.png](/assets/2022/01-wechaty-assistant/networkhots.webp)
+![image.png](/assets/2022/01-wechaty-assistant/networkhots.webp)
    - 城市天气
-      - ![IMG_20220115_210107.jpg](/assets/2022/01-wechaty-assistant/weather.webp)
+![IMG_20220115_210107.jpg](/assets/2022/01-wechaty-assistant/weather.webp)
    - 客服
-      - ![image.png](/assets/2022/01-wechaty-assistant/customerservice.webp)
+![image.png](/assets/2022/01-wechaty-assistant/customerservice.webp)
 - 文本处理功能由本地编写算法处理
    - 英文字符串转大/小写
-      - ![image.png](/assets/2022/01-wechaty-assistant/toupper.webp)
+![image.png](/assets/2022/01-wechaty-assistant/toupper.webp)
    - rgb`<=>`hex
-      - ![image.png](/assets/2022/01-wechaty-assistant/rgbtohex.webp)
-
-
+![image.png](/assets/2022/01-wechaty-assistant/rgbtohex.webp)
 
 ### 2.2 群管理
 
@@ -78,8 +74,6 @@ image: /assets/2022/01-wechaty-assistant/roll.webp
       }
     }
 ```
-
-
 
 - 检测群内非法`url`并`@`提醒对方
    - ![image.png](/assets/2022/01-wechaty-assistant/listenurl.webp)
@@ -108,19 +102,15 @@ const urlReg =
     }
 ```
 
-
-
 ### 2.3 自动处理好友请求
 
 - 自动通过好友请求
 - 可限制通过填写指定验证消息的好友
    - 避免陌生人添加好友
 
-
-
 ### 2.4 智能对话（接入微信对话开放平台）
 
-- 未被关键词捕获的消息将由**训练好的 AI **智能回复
+- 未被关键词捕获的消息将由**训练好的AI**智能回复
 
 ```javascript
 WXAI_TOKEN: "your token", // 微信对话开放平台token
@@ -161,8 +151,6 @@ async function getAnswer(signature, userid, text) {
 
 - 微信对话开放平台详细配置可去`四`中链接出查阅
 
-
-
 ### 2.5 设置定时任务(可循环、可单次）
 
 - 定时发送群消息
@@ -190,16 +178,14 @@ async function getAnswer(signature, userid, text) {
        }
      );
    }
-   ```
-   
-   
+   ``` 
    
    - 暂不支持指令设置群定时任务，只可通过修改源码
    
 - 定时给个人发送消息
    - ![image.png](/assets/2022/01-wechaty-assistant/schedule.webp)
    - `2022年1月14日4点0分0秒`向备注为`樊庆元`的联系人发送`“我刚学完，早安”`
-     - 让卷王们感受恐惧吧！！！
+   - 让卷王们感受恐惧吧！！！
    
    ```js
    if ((await contact.alias()) === config.MYSELF) {
@@ -227,8 +213,8 @@ async function getAnswer(signature, userid, text) {
    }
    ```
    
-   
 ### 2.6 密码簿
+
 该功能可用于记录**常用的冗长文本**，例如身份证号、银行卡号、购物时的好评模板等等。
 
 - 通过指令`map key value`可记录标签为`key`，内容为`value`的密码（在`password`目录下生成文件）
@@ -250,8 +236,6 @@ else if (content.includes("map")) { // map key value
 }
 ```
 
-
-
 - 通过指令get key可以获取标签为key的密码
    - ![image.png](/assets/2022/01-wechaty-assistant/get.webp)
 
@@ -269,8 +253,6 @@ else if (content.includes("get")) { // get key
 }
 ```
 
-
-
 - 文件加密
    - 文件名通过`md5`算法比对
 
@@ -287,13 +269,11 @@ else if (content.includes("get")) { // get key
      hash.update(str);
      return hash.digest("hex");
    };
-   ```
-
-   
+   ``` 
 
    - 文件内容通过`aes-128-cbc`算法加密
-     - ![image.png](/assets/2022/01-wechaty-assistant/encrypt1.webp)
-     - ![image.png](/assets/2022/01-wechaty-assistant/encrypt2.webp)
+![image.png](/assets/2022/01-wechaty-assistant/encrypt1.webp)
+![image.png](/assets/2022/01-wechaty-assistant/encrypt2.webp)
 
    ```js
    /**
@@ -340,54 +320,50 @@ else if (content.includes("get")) { // get key
    const unaes128 = function (data, key="123456789abcdefg", iv="123456789abcdefg") {
      return decrypt(key, iv, data);
    };
-   ```
-
-   
+   ``` 
 
 ## 三、目录结构
 
 - `config`文件夹存放公共配置文件以及`superagent`请求相关配置
 - `imgs`存放相关图片
 - `listeners`存放机器人初始化后一系列事件处理(分模块) 
-   - `on-friendship.js` 处理好友请求
-   - `on-login.js` 处理登录
-   - `on-message.js` 处理用户消息、群消息
-   - `on-scan.js` 处理登录二维码
-- `schedule` 对定时任务`node-schedule`库进行了封装
-- `superagent` 存放所有的数据请求、接口封装都在此
-- `utils` 公用方法的封装
-- `app.js` 入口文件
-
-
+   - `on-friendship.js`处理好友请求
+   - `on-login.js`处理登录
+   - `on-message.js`处理用户消息、群消息
+   - `on-scan.js`处理登录二维码
+- `schedule`对定时任务`node-schedule`库进行了封装
+- `superagent`存放所有的数据请求、接口封装都在此
+- `utils`公用方法的封装
+- `app.js`入口文件
 
 ## 四、如何本地化
-需修改`config`配置，将里面的配置改为自己的。打开`config/index.js` 文件， 操作如下：
+
+需修改`config`配置，将里面的配置改为自己的。打开`config/index.js`文件， 操作如下：
 
 1. 修改接口配置 
 - 官网注册账号
-   - wechaty-puppet-padlocal 供应商：[http://pad-local.com/](http://pad-local.com/)
-   - 天行数据官网 ：[https://www.tianapi.com/](https://tianapi.com/)  		
+   - wechaty-puppet-padlocal供应商：[http://pad-local.com/](http://pad-local.com/)
+   - 天行数据官网：[https://www.tianapi.com/](https://tianapi.com/)  		
    - 聚合数据官网：[https://www.juhe.cn/](https://www.juhe.cn/) 
    - 微信对话开放平台：[https://openai.weixin.qq.com/](https://openai.weixin.qq.com/)
 - 注册成功后，申请以下接口： 
    - 天行数据 
-      - [每日英语一句话](https://www.tianapi.com/apiview/62)
-      - [神回复](https://www.tianapi.com/apiview/39)
-      - [全网热搜榜](https://www.tianapi.com/apiview/223)
+   [每日英语一句话](https://www.tianapi.com/apiview/62)
+   [神回复](https://www.tianapi.com/apiview/39)
+   [全网热搜榜](https://www.tianapi.com/apiview/223)
    - 聚合数据 
-      -  [天气预报](https://www.juhe.cn/docs/api/id/73)
+   [天气预报](https://www.juhe.cn/docs/api/id/73)
 2. 注册后请打开`config/index.js`，将顶部`PUPPET_TOKEN`、`TXAPI_TOKEN`、`JUHEAPI_TOKEN`、`WXAI_TOKEN`改为自己的即可 
 
 其他免费接口可随意申请，也可以自行更换API服务商。
 
-
-
 ## 五、运行
+
 **记得安装依赖**
+
 ```bash
 cnpm install
 ```
-
 
 ```bash
 cnpm start
@@ -396,7 +372,5 @@ cnpm start
 终端会出现一个二维码，扫码登录即可。
 
 - 若二维码显示的很诡异，无法扫描，请更换终端（去微软商店下载`Windows Terminal`）。
-
----
 
 有问题可邮箱咨询 `01@yizhihang.club`
