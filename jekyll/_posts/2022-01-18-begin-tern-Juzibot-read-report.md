@@ -66,11 +66,11 @@ yarn.lock 存储着你的每个包的确切依赖版本，能确保从本地开�
 
 registry（可选）
 配置国内网络registry.
-npm config set registry https://registry.nlark.com
+npm config set registry <https://registry.nlark.com>
 配置完安装速度质的飞跃
 配置国外网络registry.
 当项目lock file包含国内地址时安装命令使用. 例如在github workflow
-npm install --registry=https://registry.npmjs.com
+npm install --registry=<https://registry.npmjs.com>
 
 ## cron
 
