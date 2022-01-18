@@ -1,6 +1,6 @@
 ---
 name: tianrking
-site: https://me.w0x7ce.eu
+site: https://me.w0x7ce.eu/
 avatar: 
 bio: 
 email: tian.r.king@gmail.com
