@@ -3,7 +3,7 @@ title: "2022-基于5G平台开发puppet模块接入wechaty"
 author: fabian
 categories:
   - project
-image: /assets/2022/01-18-monthly-wechaty-puppet-walnut-report/puppet-walnut.webp
+image: /assets/2022/01-monthly-wechaty-puppet-walnut-report/puppet-walnut.webp
 tags:
   - 5g
   - puppet-walnut
