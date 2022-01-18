@@ -7,7 +7,7 @@ tags:
   - wechat
   - improve-efficiency
   - against-involution
-image: /assets/2022/01-wechaty-assistant/roll.webp
+image: /assets/2022/01-wechaty-assistant-bot-opensource/roll.webp
 ---
 
 ## 项目地址
@@ -28,42 +28,42 @@ image: /assets/2022/01-wechaty-assistant/roll.webp
 
 ### 2.1 私聊消息处理：关键词回复，包括
 
-![people-message](/assets/2022/01-wechaty-assistant/menu.webp)
+![people-message](/assets/2022/01-wechaty-assistant-bot-opensource/menu.webp)
 
 在线实时数据获取服务由API服务商提供
 
 毒鸡汤
-![IMG_20220115_210015.jpg](/assets/2022/01-wechaty-assistant/poisonsoup.webp)
+![IMG_20220115_210015.jpg](/assets/2022/01-wechaty-assistant-bot-opensource/poisonsoup.webp)
 
 神回复
-![image.png](/assets/2022/01-wechaty-assistant/godreply.webp)
+![image.png](/assets/2022/01-wechaty-assistant-bot-opensource/godreply.webp)
 
 每日英语
-![IMG_20220115_205958.jpg](/assets/2022/01-wechaty-assistant/oneen.webp)
+![IMG_20220115_205958.jpg](/assets/2022/01-wechaty-assistant-bot-opensource/oneen.webp)
 
 全网热点
-![image.png](/assets/2022/01-wechaty-assistant/networkhots.webp)
+![image.png](/assets/2022/01-wechaty-assistant-bot-opensource/networkhots.webp)
 
 城市天气
-![IMG_20220115_210107.jpg](/assets/2022/01-wechaty-assistant/weather.webp)
+![IMG_20220115_210107.jpg](/assets/2022/01-wechaty-assistant-bot-opensource/weather.webp)
 
 客服
-![image.png](/assets/2022/01-wechaty-assistant/customerservice.webp)
+![image.png](/assets/2022/01-wechaty-assistant-bot-opensource/customerservice.webp)
 
 文本处理功能由本地编写算法处理
 
 英文字符串转大/小写
-![image.png](/assets/2022/01-wechaty-assistant/toupper.webp)
+![image.png](/assets/2022/01-wechaty-assistant-bot-opensource/toupper.webp)
 
 rgb`<=>`hex
-![image.png](/assets/2022/01-wechaty-assistant/rgbtohex.webp)
+![image.png](/assets/2022/01-wechaty-assistant-bot-opensource/rgbtohex.webp)
 
 ### 2.2 群管理
 
 通过私聊的快捷指令自动拉人入群
 `踢@用户名`快捷指令踢人
 
-![image.png](/assets/2022/01-wechaty-assistant/kicksb.webp)
+![image.png](/assets/2022/01-wechaty-assistant-bot-opensource/kicksb.webp)
 
 ```javascript
     /* 特权消息 */
@@ -85,7 +85,7 @@ rgb`<=>`hex
 
 检测群内非法`url`并`@`提醒对方
 
-![image.png](/assets/2022/01-wechaty-assistant/listenurl.webp)
+![image.png](/assets/2022/01-wechaty-assistant-bot-opensource/listenurl.webp)
 
 ```javascript
 const urlReg =
@@ -189,7 +189,7 @@ async function getAnswer(signature, userid, text) {
 
 定时给个人发送消息
 
-![image.png](/assets/2022/01-wechaty-assistant/schedule.webp)
+![image.png](/assets/2022/01-wechaty-assistant-bot-opensource/schedule.webp)
 
 `2022年1月14日4点0分0秒`向备注为`樊庆元`的联系人发送`“我刚学完，早安”`
 让卷王们感受恐惧吧！！！
@@ -226,7 +226,7 @@ async function getAnswer(signature, userid, text) {
 
 通过指令`map key value`可记录标签为`key`，内容为`value`的密码（在`password`目录下生成文件）
 
-![image.png](/assets/2022/01-wechaty-assistant/map.webp)
+![image.png](/assets/2022/01-wechaty-assistant-bot-opensource/map.webp)
 
 ```js
 else if (content.includes("map")) { // map key value
@@ -246,7 +246,7 @@ else if (content.includes("map")) { // map key value
 
 通过指令get key可以获取标签为key的密码
 
-![image.png](/assets/2022/01-wechaty-assistant/get.webp)
+![image.png](/assets/2022/01-wechaty-assistant-bot-opensource/get.webp)
 
 ```js
 else if (content.includes("get")) { // get key
@@ -283,8 +283,8 @@ else if (content.includes("get")) { // get key
 
 文件内容通过`aes-128-cbc`算法加密
 
-![image.png](/assets/2022/01-wechaty-assistant/encrypt1.webp)
-![image.png](/assets/2022/01-wechaty-assistant/encrypt2.webp)
+![image.png](/assets/2022/01-wechaty-assistant-bot-opensource/encrypt1.webp)
+![image.png](/assets/2022/01-wechaty-assistant-bot-opensource/encrypt2.webp)
 
 ```js
    /**
