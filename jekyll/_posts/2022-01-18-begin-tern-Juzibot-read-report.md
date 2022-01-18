@@ -89,7 +89,7 @@ mammoth.js 可以把 word .docx 文档转换成HTML、文本格式、Markdown格
 mammoth.js 在浏览器环境、Node.js都可以使用。
 可以在浏览器开发工具中查看 mammoth.js 解析 Word docx 文件的耗时、性能的详细信息
 
-开源地址 https://github.com/mwilliamson/mammoth.js
+开源地址 <https://github.com/mwilliamson/mammoth.js>
 
 #### API
 
