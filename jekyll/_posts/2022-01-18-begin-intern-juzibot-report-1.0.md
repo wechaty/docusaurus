@@ -4,7 +4,8 @@ author: tianrking
 categories: article
 tags:
   - juzibot
-  - wechaty
+image: /assets/2022/01-begin-intern-juzibot-report-1.0/cover.webp
+
 ---
 
 ## Juzibot 环境配置及其相关模块资料整理

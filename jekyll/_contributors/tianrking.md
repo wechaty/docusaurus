@@ -1,7 +1,7 @@
 ---
-name: tianyugeng
-site: https://github.com/tianyugeng
-avatar: /assets/contributors/tianyugeng/avatar.webp
+name: tianrking
+site: https://github.com/tianrking
+avatar: /assets/contributors/tianrking/avatar.webp
 bio: 前端开发工程师(自称)
 email: 
 twitter: 
