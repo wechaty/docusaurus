@@ -1,5 +1,5 @@
 ---
-title: "Juzibot 环境配置及其相关模块资料整理"
+title: "Juzibot环境配置及其相关模块资料整理"
 author: tianrking
 categories: article
 tags:
