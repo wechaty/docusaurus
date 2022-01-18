@@ -30,23 +30,32 @@ image: /assets/2022/01-wechaty-assistant/roll.webp
 
 ![people-message](/assets/2022/01-wechaty-assistant/menu.webp)
 
-- 在线实时数据获取服务由API服务商提供
-   - 毒鸡汤
+**在线实时数据获取服务由API服务商提供**
+
+毒鸡汤
 ![IMG_20220115_210015.jpg](/assets/2022/01-wechaty-assistant/poisonsoup.webp)
-   - 神回复
+
+神回复
 ![image.png](/assets/2022/01-wechaty-assistant/godreply.webp)
-   - 每日英语
+
+每日英语
 ![IMG_20220115_205958.jpg](/assets/2022/01-wechaty-assistant/oneen.webp)
-   - 全网热点
+
+全网热点
 ![image.png](/assets/2022/01-wechaty-assistant/networkhots.webp)
-   - 城市天气
+
+城市天气
 ![IMG_20220115_210107.jpg](/assets/2022/01-wechaty-assistant/weather.webp)
-   - 客服
+
+客服
 ![image.png](/assets/2022/01-wechaty-assistant/customerservice.webp)
-- 文本处理功能由本地编写算法处理
-   - 英文字符串转大/小写
+
+**文本处理功能由本地编写算法处理**
+
+英文字符串转大/小写
 ![image.png](/assets/2022/01-wechaty-assistant/toupper.webp)
-   - rgb`<=>`hex
+
+rgb`<=>`hex
 ![image.png](/assets/2022/01-wechaty-assistant/rgbtohex.webp)
 
 ### 2.2 群管理
@@ -55,7 +64,7 @@ image: /assets/2022/01-wechaty-assistant/roll.webp
    - 通过私聊的快捷指令
 - 快捷指令踢人
    - `踢@用户名`可快速踢出群聊  
-   - ![image.png](/assets/2022/01-wechaty-assistant/kicksb.webp)
+![image.png](/assets/2022/01-wechaty-assistant/kicksb.webp)
 
 ```javascript
     /* 特权消息 */
@@ -76,7 +85,7 @@ image: /assets/2022/01-wechaty-assistant/roll.webp
 ```
 
 - 检测群内非法`url`并`@`提醒对方
-   - ![image.png](/assets/2022/01-wechaty-assistant/listenurl.webp)
+![image.png](/assets/2022/01-wechaty-assistant/listenurl.webp)
 
 ```javascript
 const urlReg =
@@ -111,7 +120,6 @@ const urlReg =
 ### 2.4 智能对话（接入微信对话开放平台）
 
 - 未被关键词捕获的消息将由**训练好的AI**智能回复
-
 ```javascript
 WXAI_TOKEN: "your token", // 微信对话开放平台token
 ```
@@ -155,7 +163,7 @@ async function getAnswer(signature, userid, text) {
 
 - 定时发送群消息，登录时任务开始执行
    
-   ```js
+```js
    /**
     * @func 8点半定时给指定群发送消息
     */
@@ -177,7 +185,7 @@ async function getAnswer(signature, userid, text) {
        }
      );
    }
-   ``` 
+``` 
    
 - 定时给个人发送消息
 
@@ -185,8 +193,7 @@ async function getAnswer(signature, userid, text) {
 
 `2022年1月14日4点0分0秒`向备注为`樊庆元`的联系人发送`“我刚学完，早安”`
 让卷王们感受恐惧吧！！！
-   
-   ```js
+```js
    if ((await contact.alias()) === config.MYSELF) {
        if (content.includes("定时")) {
          console.log("定时");
@@ -210,7 +217,7 @@ async function getAnswer(signature, userid, text) {
          return true;
        }
    }
-   ```
+```
    
 ### 2.6 密码簿
 
@@ -258,7 +265,7 @@ else if (content.includes("get")) { // get key
 
 **文件名通过`md5`算法比对**
 
-   ```js
+```js
    const crypto = require("crypto");
    
    /**
@@ -271,14 +278,14 @@ else if (content.includes("get")) { // get key
      hash.update(str);
      return hash.digest("hex");
    };
-   ``` 
+``` 
 
 **文件内容通过`aes-128-cbc`算法加密**
 
 ![image.png](/assets/2022/01-wechaty-assistant/encrypt1.webp)
 ![image.png](/assets/2022/01-wechaty-assistant/encrypt2.webp)
 
-   ```js
+```js
    /**
     * @func aes-128-cbc加密算法封装
     * @param {密钥} key 
@@ -323,7 +330,7 @@ else if (content.includes("get")) { // get key
    const unaes128 = function (data, key="123456789abcdefg", iv="123456789abcdefg") {
      return decrypt(key, iv, data);
    };
-   ``` 
+``` 
 
 ## 三、目录结构
 
@@ -378,6 +385,6 @@ cnpm start
 
 终端会出现一个二维码，扫码登录即可。
 
-- 若二维码显示的很诡异，无法扫描，请更换终端（去微软商店下载`Windows Terminal`）。
+若二维码显示的很诡异，无法扫描，请更换终端（去微软商店下载`Windows Terminal`）。
 
 有问题可邮箱咨询 `01@yizhihang.club`
