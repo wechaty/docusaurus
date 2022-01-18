@@ -1,16 +1,15 @@
 ---
-name: tianrking 
-site: https://me.w0x7ce.eu/ 
-avatar: 
-bio: 
-email: tian.r.king@gmail.com 
-twitter: 
+name: tianrking
+site: https://github.com/ZSC-COC
+avatar: /assets/contributors/techial1042/avatar.webp
+bio: "Welcome to join ZSC"
 ---
 
-First PR
+开发工程师
 
 ## Contact me
 
-- Github: <https://github.com/tianrking>
+- Github: <https://github.com/techial1042>
 - Email：<>
 - Website: <>
+  
