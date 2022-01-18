@@ -30,7 +30,7 @@ image: /assets/2022/01-wechaty-assistant/roll.webp
 
 ![people-message](/assets/2022/01-wechaty-assistant/menu.webp)
 
-**在线实时数据获取服务由API服务商提供**
+在线实时数据获取服务由API服务商提供
 
 毒鸡汤
 ![IMG_20220115_210015.jpg](/assets/2022/01-wechaty-assistant/poisonsoup.webp)
@@ -50,7 +50,7 @@ image: /assets/2022/01-wechaty-assistant/roll.webp
 客服
 ![image.png](/assets/2022/01-wechaty-assistant/customerservice.webp)
 
-**文本处理功能由本地编写算法处理**
+文本处理功能由本地编写算法处理
 
 英文字符串转大/小写
 ![image.png](/assets/2022/01-wechaty-assistant/toupper.webp)
@@ -60,10 +60,9 @@ rgb`<=>`hex
 
 ### 2.2 群管理
 
-- 自动拉人入群
-   - 通过私聊的快捷指令
-- 快捷指令踢人
-   - `踢@用户名`可快速踢出群聊  
+通过私聊的快捷指令自动拉人入群
+`踢@用户名`快捷指令踢人
+
 ![image.png](/assets/2022/01-wechaty-assistant/kicksb.webp)
 
 ```javascript
@@ -84,7 +83,8 @@ rgb`<=>`hex
     }
 ```
 
-- 检测群内非法`url`并`@`提醒对方
+检测群内非法`url`并`@`提醒对方
+
 ![image.png](/assets/2022/01-wechaty-assistant/listenurl.webp)
 
 ```javascript
@@ -114,12 +114,12 @@ const urlReg =
 ### 2.3 自动处理好友请求
 
 - 自动通过好友请求
-- 可限制通过填写指定验证消息的好友
-   - 避免陌生人添加好友
+- 可限制通过填写指定验证消息的好友，避免陌生人添加好友
 
 ### 2.4 智能对话（接入微信对话开放平台）
 
-- 未被关键词捕获的消息将由**训练好的AI**智能回复
+未被关键词捕获的消息将由**训练好的AI**智能回复
+
 ```javascript
 WXAI_TOKEN: "your token", // 微信对话开放平台token
 ```
@@ -157,11 +157,11 @@ async function getAnswer(signature, userid, text) {
 }
 ```
 
-- 微信对话开放平台详细配置可去`四`中链接出查阅
+微信对话开放平台详细配置可去`四`中链接出查阅
 
 ### 2.5 设置定时任务(可循环、可单次）
 
-- 定时发送群消息，登录时任务开始执行
+定时发送群消息，登录时任务开始执行
    
 ```js
    /**
@@ -185,14 +185,15 @@ async function getAnswer(signature, userid, text) {
        }
      );
    }
-``` 
-   
-- 定时给个人发送消息
+```
+
+定时给个人发送消息
 
 ![image.png](/assets/2022/01-wechaty-assistant/schedule.webp)
 
 `2022年1月14日4点0分0秒`向备注为`樊庆元`的联系人发送`“我刚学完，早安”`
 让卷王们感受恐惧吧！！！
+
 ```js
    if ((await contact.alias()) === config.MYSELF) {
        if (content.includes("定时")) {
@@ -218,12 +219,12 @@ async function getAnswer(signature, userid, text) {
        }
    }
 ```
-   
+
 ### 2.6 密码簿
 
 该功能可用于记录**常用的冗长文本**，例如身份证号、银行卡号、购物时的好评模板等等。
 
-- 通过指令`map key value`可记录标签为`key`，内容为`value`的密码（在`password`目录下生成文件）
+通过指令`map key value`可记录标签为`key`，内容为`value`的密码（在`password`目录下生成文件）
 
 ![image.png](/assets/2022/01-wechaty-assistant/map.webp)
 
@@ -243,7 +244,7 @@ else if (content.includes("map")) { // map key value
 }
 ```
 
-- 通过指令get key可以获取标签为key的密码
+通过指令get key可以获取标签为key的密码
 
 ![image.png](/assets/2022/01-wechaty-assistant/get.webp)
 
@@ -261,9 +262,9 @@ else if (content.includes("get")) { // get key
 }
 ```
 
-- 文件加密
+文件加密
 
-**文件名通过`md5`算法比对**
+文件名通过`md5`算法比对
 
 ```js
    const crypto = require("crypto");
@@ -280,7 +281,7 @@ else if (content.includes("get")) { // get key
    };
 ``` 
 
-**文件内容通过`aes-128-cbc`算法加密**
+文件内容通过`aes-128-cbc`算法加密
 
 ![image.png](/assets/2022/01-wechaty-assistant/encrypt1.webp)
 ![image.png](/assets/2022/01-wechaty-assistant/encrypt2.webp)
@@ -334,30 +335,36 @@ else if (content.includes("get")) { // get key
 
 ## 三、目录结构
 
-- `config`文件夹存放公共配置文件以及`superagent`请求相关配置
-- `imgs`存放相关图片
-- `listeners`存放机器人初始化后一系列事件处理(分模块) 
-   - `on-friendship.js`处理好友请求
-   - `on-login.js`处理登录
-   - `on-message.js`处理用户消息、群消息
-   - `on-scan.js`处理登录二维码
-- `schedule`对定时任务`node-schedule`库进行了封装
-- `superagent`存放所有的数据请求、接口封装都在此
-- `utils`公用方法的封装
-- `app.js`入口文件
+`config`文件夹存放公共配置文件以及`superagent`请求相关配置
+
+`imgs`存放相关图片
+
+`listeners`存放机器人初始化后一系列事件处理(分模块) 
+`on-friendship.js`处理好友请求
+`on-login.js`处理登录
+`on-message.js`处理用户消息、群消息
+`on-scan.js`处理登录二维码
+
+`schedule`对定时任务`node-schedule`库进行了封装
+
+`superagent`存放所有的数据请求、接口封装都在此
+
+`utils`公用方法的封装
+
+`app.js`入口文件
 
 ## 四、如何本地化
 
 需修改`config`配置，将里面的配置改为自己的。打开`config/index.js`文件， 操作如下：
 
-**官网注册账号**
+官网注册账号
 
 wechaty-puppet-padlocal供应商：[http://pad-local.com/](http://pad-local.com/)
 天行数据官网：[https://www.tianapi.com/](https://tianapi.com/)  		
 聚合数据官网：[https://www.juhe.cn/](https://www.juhe.cn/) 
 微信对话开放平台：[https://openai.weixin.qq.com/](https://openai.weixin.qq.com/)
 
-**注册成功后，申请以下接口**
+注册成功后，申请以下接口
 
 天行数据
 [每日英语一句话](https://www.tianapi.com/apiview/62)
@@ -373,7 +380,7 @@ wechaty-puppet-padlocal供应商：[http://pad-local.com/](http://pad-local.com/
 
 ## 五、运行
 
-**记得安装依赖**
+记得安装依赖
 
 ```bash
 cnpm install
