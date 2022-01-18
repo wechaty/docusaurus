@@ -1,15 +1,15 @@
 ---
 name: tianrking
-site: https://github.com/ZSC-COC
+site: https://github.com/tianrking
 avatar: /assets/contributors/techial1042/avatar.webp
-bio: "Welcome to join ZSC"
+bio: "Hello world"
 ---
 
-开发工程师
+Hello world
 
 ## Contact me
 
-- Github: <https://github.com/techial1042>
+- Github: <https://github.com/tianrking>
 - Email：<>
 - Website: <>
   
