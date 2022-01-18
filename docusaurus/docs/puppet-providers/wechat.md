@@ -24,14 +24,11 @@ WeChat Accounts that are registered after 2017 might not be able to login Web We
 
 Few points to be kept in mind :
 
+1. [Can not login with UOS patch any more, Jan 1, 2022](https://github.com/wechaty/puppet-wechat/issues/192)
 1. Web API can not create room and invite members to room since 2018.
-2. The ID of contacts and rooms will change across sessions. [#1644](https://github.com/wechaty/wechaty/issues/1644)
+1. The ID of contacts and rooms will change across sessions. [#1644](https://github.com/wechaty/wechaty/issues/1644)
 
 If you want to break the above limitations, then you need consider to use a Wechaty Puppet other than Web. Learn them from [Wechaty Puppet Providers](puppet-providers/overview.mdx).
-
-## Fixed Issues
-
-1. Support UOS with puppeteer : [#127](https://github.com/wechaty/wechaty-puppet-wechat/issues/127)
 
 ## Usage
 
