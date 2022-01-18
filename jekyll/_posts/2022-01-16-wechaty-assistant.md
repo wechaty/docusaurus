@@ -162,7 +162,7 @@ async function getAnswer(signature, userid, text) {
 ### 2.5 设置定时任务(可循环、可单次）
 
 定时发送群消息，登录时任务开始执行
-   
+
 ```js
    /**
     * @func 8点半定时给指定群发送消息
@@ -279,7 +279,7 @@ else if (content.includes("get")) { // get key
      hash.update(str);
      return hash.digest("hex");
    };
-``` 
+```
 
 文件内容通过`aes-128-cbc`算法加密
 
@@ -331,7 +331,7 @@ else if (content.includes("get")) { // get key
    const unaes128 = function (data, key="123456789abcdefg", iv="123456789abcdefg") {
      return decrypt(key, iv, data);
    };
-``` 
+```
 
 ## 三、目录结构
 
@@ -339,7 +339,7 @@ else if (content.includes("get")) { // get key
 
 `imgs`存放相关图片
 
-`listeners`存放机器人初始化后一系列事件处理(分模块) 
+`listeners`存放机器人初始化后一系列事件处理(分模块)
 `on-friendship.js`处理好友请求
 `on-login.js`处理登录
 `on-message.js`处理用户消息、群消息
@@ -360,8 +360,8 @@ else if (content.includes("get")) { // get key
 官网注册账号
 
 wechaty-puppet-padlocal供应商：[http://pad-local.com/](http://pad-local.com/)
-天行数据官网：[https://www.tianapi.com/](https://tianapi.com/)  		
-聚合数据官网：[https://www.juhe.cn/](https://www.juhe.cn/) 
+天行数据官网：[https://www.tianapi.com/](https://tianapi.com/)
+聚合数据官网：[https://www.juhe.cn/](https://www.juhe.cn/)
 微信对话开放平台：[https://openai.weixin.qq.com/](https://openai.weixin.qq.com/)
 
 注册成功后，申请以下接口
@@ -371,10 +371,10 @@ wechaty-puppet-padlocal供应商：[http://pad-local.com/](http://pad-local.com/
 [神回复](https://www.tianapi.com/apiview/39)
 [全网热搜榜](https://www.tianapi.com/apiview/223)
 
-聚合数据 
+聚合数据
 [天气预报](https://www.juhe.cn/docs/api/id/73)
 
-注册后请打开`config/index.js`，将顶部`PUPPET_TOKEN`、`TXAPI_TOKEN`、`JUHEAPI_TOKEN`、`WXAI_TOKEN`改为自己的即可 
+注册后请打开`config/index.js`，将顶部`PUPPET_TOKEN`、`TXAPI_TOKEN`、`JUHEAPI_TOKEN`、`WXAI_TOKEN`改为自己的即可
 
 其他免费接口可随意申请，也可以自行更换API服务商。
 
