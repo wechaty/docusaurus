@@ -3,14 +3,15 @@ name: tianrking
 site: https://github.com/tianrking
 avatar: /assets/contributors/tianrking/avatar.webp
 bio: Although I may be ignorant, I am willing to learn
-email: 
+email: tian.r.king@gmail.com
 twitter: 
 ---
 
-Although I may be ignorant, I am willing to learn
+Although I may be ignorant, I am willing to learn.
+A noob trader , noob Electronics Enginner , interested in Blockchain ML and Fintech.
 
 ## Contact me
 
 - Github: <https://github.com/tianrking>
-- Email：<>
-- Website: <>
+- Email：<me@w0x7ce.eu>
+- Website: <https://me.w0x7ce.eu>

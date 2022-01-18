@@ -1,5 +1,5 @@
 ---
-title: "Juzibot环境配置及其相关模块资料整理"
+title: "2022寒假-王天睿-JuziBot项目开发-期初报告-智能的对话机器人"
 author: tianrking
 categories: article
 tags:
@@ -7,9 +7,17 @@ tags:
 image: /assets/2022/01-begin-intern-juzibot-report-1.0/cover.webp
 
 ---
+
+## 2022寒假-王天睿-JuziBot项目开发-期初报告-智能的对话机器人
+
+## 项目参与人
+
+- 段清华 (导师)  
+- 王天睿 (学生）
+
 ## 项目目标
 
-1. Juzibot让与客户的互动变得更加智能
+  Juzibot让与客户的互动变得更加智能
 
 ## 主要功能
 
@@ -111,6 +119,19 @@ image: /assets/2022/01-begin-intern-juzibot-report-1.0/cover.webp
 ### 多媒体-视频
 
 ### 链接
+
+### PPT展示视频
+
+{% include iframe.html src="视频链接" %}
+
+### 项目PPT
+
+{% include iframe.html src="pdf链接" %}
+
+## 联系我们
+
+- 项目链接：[https://github.com/deepdialog/xiaojuzi]  
+- 联系方式：@qozob on Telegram
 
 ## Juzibot 环境配置及其相关模块资料整理
 
