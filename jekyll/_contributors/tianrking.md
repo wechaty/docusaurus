@@ -1,7 +1,7 @@
 ---
 name: tianrking 
 site: https://github.com/tianrking
-avatar: /assets/contributors/tianrking/avatar.webp
+avatar: /assets/contributors/tianrking/trkcover.webp
 bio: Although I may be ignorant, I am willing to learn
 email: tian.r.king@gmail.com
 twitter: 
