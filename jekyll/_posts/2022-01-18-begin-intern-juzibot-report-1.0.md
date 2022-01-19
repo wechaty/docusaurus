@@ -4,7 +4,7 @@ author: tianrking
 categories: article
 tags:
   - juzibot
-image: /assets/2022/01-begin-intern-juzibot-report-1.0/cover.webp
+image: /assets/2022/01-begin-intern-juzibot-report-1.0/trkcover.webp
 
 ---
 
