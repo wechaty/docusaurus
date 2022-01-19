@@ -48,7 +48,7 @@ image: /assets/2022/01-begin-intern-juzibot-report-1.0/cover.webp
 | 01/13  | 学习 wechaty；跑通getting started 项目           | 成功部署dingdong bot到服務器           |
 | 01/14  | 使用juzibot 并初步学习nodejs | 成功在服务器上跑通并可以实现交互            |
 | 01/17  |  继续学习nodejs 简单修改juzibot自动回复代码     | 对Juzibot 有了大体的认识  简单修改代码实现关键词回复对应的语句 |
-| 01/18 | 第一次使用jektll 完整的尝试一次提交pr   | 谷歌了报错问题，并在段清华老师和同事的帮助下，解决了问题完成提交      |
+| 01/18 | 第一次使用jekyll 完整的尝试一次提交pr   | 谷歌了报错问题，并在段清华老师和同事的帮助下，解决了问题完成提交      |
 
 ### 模块测试列表
 
