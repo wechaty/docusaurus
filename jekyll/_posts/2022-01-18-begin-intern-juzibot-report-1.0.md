@@ -28,7 +28,7 @@ image: /assets/2022/01-begin-intern-juzibot-report-1.0/cover.webp
 
 2. TODO列表(已有）
 3. 搜索指令(部分)  
-4. 其他指令(待开发)
+4. 其他指令(待完善)
    - 例如
       1. 打开web/小程序管理界面
       2. 群文件
