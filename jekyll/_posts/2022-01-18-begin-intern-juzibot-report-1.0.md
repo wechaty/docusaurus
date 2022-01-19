@@ -4,7 +4,7 @@ author: tianrking
 categories: article
 tags:
   - juzibot
-image: /assets/2022/01-begin-intern-juzibot-report-1.0/cover.webp
+image: /assets/2022/01-begin-intern-juzibot-report-1.0/rcyx.webp
 
 ---
 
@@ -30,11 +30,11 @@ image: /assets/2022/01-begin-intern-juzibot-report-1.0/cover.webp
     - 服务器上运行juzibot，进行测试
     - 学习nodejs，并进行简单的语句回复修改尝试
   - 理解juzibot结构，进行开发文档撰写
-    - 01.17 - 01.22
+    - 01.17 - 01.19
     - 浏览对应模块 理解相互调用关系
     - 明确开发任务
   - 进行相应的开发与设计
-    - 01.23 - 02.04
+    - 01.20 - 02.04
     - 备忘录
     - Todo List
     - 搜索指令
