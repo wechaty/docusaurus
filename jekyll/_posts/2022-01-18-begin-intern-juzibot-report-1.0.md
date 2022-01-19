@@ -131,8 +131,8 @@ image: /assets/2022/01-begin-intern-juzibot-report-1.0/rcyx.webp
 ### 项目计划
 
 1. 01/13-01/13 : 成功运行dingdong bot
-2. 01/14-01/17 : 成功运行juzibot 初步了解juzibot 模块 并学习nodejs
-3. 01/18-01/25 : 深入了解juzibot对应模块功能并着手开发
+2. 01/14-01/19 : 成功运行juzibot 初步了解juzibot 模块 并学习nodejs 进行简单修改与测试
+3. 01/20-01/25 : 深入了解juzibot对应模块功能并着手开发
 4. 01/26-02/05 : 尽可能实现部分功能
 
 ### 项目进展
