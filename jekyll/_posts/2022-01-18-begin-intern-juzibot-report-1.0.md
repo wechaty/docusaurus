@@ -61,10 +61,6 @@ image: /assets/2022/01-begin-intern-juzibot-report-1.0/cover.webp
      - 搜索关键词（标签）返回相关文件、信息列表
      - 列表后每一条都有【打开】按钮（链接），点击按钮打开详细界面（web/小程序）
 
-具体说明：
-搜索关键词（标签）返回相关文件、信息列表
-列表后每一条都有【打开】按钮（链接），点击按钮打开详细界面（web/小程序）
-
 ### 其他指令
 
 1. 所有其他指令以：
@@ -119,19 +115,6 @@ image: /assets/2022/01-begin-intern-juzibot-report-1.0/cover.webp
 ### 多媒体-视频
 
 ### 链接
-
-### PPT展示视频
-
-{% include iframe.html src="视频链接" %}
-
-### 项目PPT
-
-{% include iframe.html src="pdf链接" %}
-
-## 联系我们
-
-- 项目链接：[https://github.com/deepdialog/xiaojuzi]  
-- 联系方式：@qozob on Telegram
 
 ## Juzibot 环境配置及其相关模块资料整理
 
