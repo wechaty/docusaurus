@@ -12,26 +12,18 @@ tags:
 
 ## 前言
 本文主要有两个目的：
-
 (一)使用python-wechaty实现一个英文取名机器人，用户输入中文名(输入格式：英文取名：XXX)，即可获取对应的英文名，
-
 扩展wechaty的应用场景。
-
 (二)关于WeChaty网上已经有很多教程了，但是大多数是关于Linux或MacOS系统的，对于没接触过的Windows新手难免会走些弯路，
-
 因此我把自己的搭建过程写成blog，以便大家参考。
-
 由于很多微信号不能通过web登录，所以本篇使用Padlocal协议来建立一个微信聊天机器人。
-
 搭建过程主要是参考[B站视频](https://www.bilibili.com/video/BV1BB4y1A714?from=search&seid=7669334820557139832&spm_id_from=333.337.0.0)，配合自己搜索的一些问题解决方案。
 
 ## 1、 连接远程服务
 ### 1.1 配置环境变量
 (一)使用Padlocal协议需要[申请token](http://pad-local.com/)，注册之后可以申请一个免费的7天token。
-
 (二)Windows系统需要先启用Hyper-V,然后下载Docker，具体过程可以参考[这里](https://www.runoob.com/docker/windows-docker-install.html)，需要注意的是Windows10 家庭版没有内置Hyper-V，
 要自己[手动安装](https://zhuanlan.zhihu.com/p/356396288)。
-
 (三)完成之后新建一个wechaty_test.sh文件，输入
 ```python
 export WECHATY_LOG="verbose"
