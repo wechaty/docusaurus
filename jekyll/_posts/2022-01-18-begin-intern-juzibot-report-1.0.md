@@ -77,7 +77,7 @@ image: /assets/2022/01-begin-intern-juzibot-report-1.0/rcyx.webp
 
 - 项目链接：[https://github.com/tianrking/xiaojuzi](https://github.com/tianrking/xiaojuzi)
 
-- 联系方式：Telegram @qozob |  Email: me@w0x7ce.eu
+- 联系方式：Telegram: @qozob |  Email: me@w0x7ce.eu
 
 > Author: [@tianrking](https://github.com/tianrking)
 > Code: [@tianrking/juzibot](https://github.com/tianrking/xiaojuzi)
