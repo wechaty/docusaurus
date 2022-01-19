@@ -4,6 +4,7 @@ author: sunyansong
 categories: article
 tags:
   - study
+  - CSC
 image: /assets/2022/01-sales-assistant-csc-task/avatar.webp
 ---
 
