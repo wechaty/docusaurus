@@ -3,7 +3,7 @@ title: "wechaty 基于 nodejs 原生 http 包的服务"
 author: xiaowx2010
 categories: article
 tags:
-  - wechaty
+  - restful-api
   - http-server
 image: /assets/2022/01-wechaty-with-node-server/img.webp
 ---
