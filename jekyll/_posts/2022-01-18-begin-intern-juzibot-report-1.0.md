@@ -34,14 +34,6 @@ image: /assets/2022/01-begin-intern-juzibot-report-1.0/cover.webp
       2. 群文件
       3. 我的文件
 
-### 项目过程
-
-1. 实现智能聊天交互
-2. 实现上述备忘录、todoList、搜索指令等功能
-3. 更加智能常用的回话场景语意解析
-4. 融入自己的idea并实现
-5. 测试、迭代、优化
-
 ### 项目计划
 
 1. 01/13-01/17 : 成功运行dingdong bot，运行juzibot 初步了解juzibot 模块 并学习nodejs
