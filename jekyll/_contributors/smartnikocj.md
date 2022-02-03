@@ -12,4 +12,4 @@ twitter:
 ## Contact
 
 - Github: <https://github.com/smartnikocj>
-- Email: <smartnikocj@gmail.com> 
+- Email: <smartnikocj@gmail.com>

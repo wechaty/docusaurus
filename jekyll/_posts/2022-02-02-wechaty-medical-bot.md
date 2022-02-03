@@ -91,4 +91,3 @@ image: /assets/2022/02-wechaty-medical-bot/title-image.webp
 ## 6. 致谢
 
 感谢[wechaty](https://wechaty.js.org/)社区开发者们的辛勤付出，感谢[Huan](https://github.com/huan)的宝贵建议。希望本项目可以持续发展下去。
-
