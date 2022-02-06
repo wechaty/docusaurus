@@ -1,9 +1,9 @@
 <div align="center">
-![Wechaty Docusaurus](docs/images/wechaty-docusaurus.png)
+<img src="https://github.com/wechaty/wechaty.js.org/blob/main/docs/images/wechaty-docusaurus.png" alt="wechaty logo" height ="auto" width="200" />
 <br />
 <h1>Wechaty Organization Website</h1>
 <p>
-Repository for the Wechaty Organization Website, a resource for the Wechaty Organization.[**Wechaty**](https://wechaty.js.org) It is the official Wechaty website for publishing latest news, blog posts, and documentation from our open source community.
+Repository for the Wechaty Organization Website, a resource for the Wechaty Organization. [**Wechaty**](https://wechaty.js.org) It is the official Wechaty website for publishing latest news, blog posts, and documentation from our open source community.
 </p>
 <p align="center">
 <a href="https://github.com/wechaty/wechaty.js.org" alt="GitHub contributors">
