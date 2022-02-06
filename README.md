@@ -3,7 +3,7 @@
 <br />
 <h1>Wechaty Organization Website</h1>
 <p>
-Repository for the Wechaty Organization Website, a resource for the Wechaty Organization.     [**Wechaty**](https://wechaty.js.org) It is the official Wechaty website for publishing latest news, blog posts, and documentation from our open source community.
+Repository for the Wechaty Organization Website, a resource for the Wechaty Organization. It is the official Wechaty website for publishing latest news, blog posts, and documentation from our open source community.
 </p>
 <p align="center">
 <a href="https://github.com/wechaty/wechaty.js.org" alt="GitHub contributors">
