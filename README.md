@@ -88,7 +88,7 @@ npm test
 
 ## How To Preview Your changes
 
-If you want to preview your blog post or changes on locahost, you need to have Jekyll installed in your machine. You can follow the [jekyll quickstart](https://jekyllrb.com/docs/) instructions to install jekyll.
+If you want to preview your blog post or changes on localhost, you need to have Jekyll installed in your machine. You can follow the [jekyll quickstart](https://jekyllrb.com/docs/) instructions to install jekyll.
 
 ### 1. Install Jekyll by Hand
 
