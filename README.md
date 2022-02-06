@@ -1,13 +1,25 @@
-## wechaty.js.org
+<div align="center">
+![Wechaty Docusaurus](docs/images/wechaty-docusaurus.png)
+<br />
+<h1>Wechaty Organization Website</h1>
+<p>
+Repository for the Wechaty Organization Website, a resource for the Wechaty Organization.[**Wechaty**](https://wechaty.js.org) It is the official Wechaty website for publishing latest news, blog posts, and documentation from our open source community.
+</p>
+<p align="center">
+<a href="https://github.com/wechaty/wechaty.js.org" alt="GitHub contributors">
+<img src="https://img.shields.io/github/contributors/wechaty/wechaty.js.org.svg" /></a>
+<a href="https://github.com/wechaty/wechaty.js.org" alt="GitHub issues by-label">
+<img src="https://img.shields.io/github/issues/wechaty/wechaty.js.org" /></a>
+<a href="https://gitter.im/wechaty/wechaty" alt="Gitter">
+<img src="https://img.shields.io/badge/Gitter-@layer5.svg?logo=slack" /></a>
+</p>
 
 [![GitHub Pages CI](https://github.com/wechaty/wechaty.js.org/workflows/GitHub%20Pages%20CI/badge.svg)](https://github.com/wechaty/wechaty.js.org/actions?query=workflow%3A%22GitHub+Pages+CI%22)
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
 [![DIVIO documentation system](https://img.shields.io/badge/DIVIO-Documentation%20System-blue)](https://documentation.divio.com/)
 [![ES Modules](https://img.shields.io/badge/ES-Modules-brightgreen)](https://github.com/Chatie/tsconfig/issues/16)
 
-![Wechaty Docusaurus](docs/images/wechaty-docusaurus.png)
-
-<https://wechaty.js.org> is the official Wechaty website for publishing latest news, blog posts, and documentation from our open source community.
+</div>
 
 ## How To Post a Blog
 
