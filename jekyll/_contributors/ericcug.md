@@ -8,8 +8,8 @@ email: eric.wong.cug@gmail.com
 
 DevOps, Guangxi Institute of Land Surveying and Mapping
 Tiny contribution to wechaty-puppet-xp
-https://github.com/wechaty/puppet-xp/pull/69
-https://github.com/wechaty/puppet-xp/pull/76
+<https://github.com/wechaty/puppet-xp/pull/69>
+<https://github.com/wechaty/puppet-xp/pull/76>
 
 ## Contact me
 
