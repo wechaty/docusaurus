@@ -1,5 +1,5 @@
 ---
-title: : 基于Wechaty的销售助理机器人 -- 项目规划
+title: 基于Wechaty的销售助理机器人--项目规划
 author: kevintung
 categories: project
 tags: productivity
