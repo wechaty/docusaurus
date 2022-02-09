@@ -32,9 +32,13 @@ image: /assets/2021/12-sales-assistant-mid-term-progress/sales-meme.webp
 
 ![05](/assets/2021/12-sales-assistant-mid-term-progress/5.webp)
 
-### 影片链接
+### 影片
 
 {% include iframe.html src="https://youtu.be/i45SQ4CrsdE" %}
+
+### 报告
+
+{% include iframe.html src="/assets/2021/12-sales-assistant-mid-term-progress/sales-assistant-to-final.pdf" %}
 
 ## 二、实现
 
