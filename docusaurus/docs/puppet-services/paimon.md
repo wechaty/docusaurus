@@ -49,7 +49,7 @@ const bot = new Wechaty({
     tls: {
       disable: true
     },
-    token: "puppet_paimon_928387cc-b904-4b22-bbfc-148d56ff2f72"
+    token: "puppet_paimon_YOUR_TOKEN" // !!!!! Please change it !!!!!
   }
 })
 
