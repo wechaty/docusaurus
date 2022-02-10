@@ -27,7 +27,7 @@ package.json
   "license": "Apache-2.0",
   "dependencies": {
     "qrcode-terminal": "^0.12.0",
-    "wechaty": "^1.0"
+    "wechaty": "^0.68"
   }
 }
 
@@ -39,10 +39,10 @@ bot.js
 const {
   log,
   ScanStatus,
-  WechatyBuilder,
+  Wechaty
 } = require('wechaty')
 
-const bot = WechatyBuilder.build({
+const bot = new Wechaty({
   name: 'ding-dong-bot',
   puppet: 'wechaty-puppet-service',
   puppetOptions: {
