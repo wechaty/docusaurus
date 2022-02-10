@@ -27,7 +27,7 @@ package.json
   "license": "Apache-2.0",
   "dependencies": {
     "qrcode-terminal": "^0.12.0",
-    "wechaty": "^1.0"
+    "wechaty": "^0.68"
   }
 }
 
