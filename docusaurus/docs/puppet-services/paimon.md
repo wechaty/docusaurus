@@ -53,19 +53,6 @@ const bot = new Wechaty({
   }
 })
 
-bot.on('scan', onScan)
-bot.on('login', onLogin)
-bot.on('logout', onLogout)
-bot.on('message', onMessage)
-
-bot.start()
-  .then(() => {
-    log.info('StarterBot', 'Starter Bot Started.');
-  })
-  .catch(e => {
-    log.error('StarterBot', e);
-  })
-
 function onScan(qrcode, status) {
   if (status === ScanStatus.Waiting && qrcode) {
     const qrcodeImageUrl = [
@@ -92,6 +79,18 @@ function onMessage(msg) {
   if (msg.self()) return;
 }
 
+bot.on('scan', onScan)
+bot.on('login', onLogin)
+bot.on('logout', onLogout)
+bot.on('message', onMessage)
+
+bot.start()
+  .then(() => {
+    log.info('StarterBot', 'Starter Bot Started.');
+  })
+  .catch(e => {
+    log.error('StarterBot', e);
+  })
 ```
 
 ```bash
