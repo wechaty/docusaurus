@@ -43,13 +43,13 @@ const {
 } = require('wechaty')
 
 const bot = new Wechaty({
-  name: 'first-paimon-bot',
+  name: 'ding-dong-bot',
   puppet: 'wechaty-puppet-service',
   puppetOptions: {
     tls: {
       disable: true
     },
-    token: "puppet_paimon_YOUR_TOKEN" // !!!!!!!!!please change there !!!!!!
+    token: "puppet_paimon_928387cc-b904-4b22-bbfc-148d56ff2f72"
   }
 })
 
@@ -90,25 +90,6 @@ function onLogout(user) {
 function onMessage(msg) {
   console.log(msg)
   if (msg.self()) return;
-}
-
-		log.info('StarterBot', 'onScan: %s(%s) - %s', ScanStatus[status], status, qrcodeImageUrl)
-	} else {
-		log.info('StarterBot', 'onScan: %s(%s)', ScanStatus[status], status)
-	}
-}
-
-function onLogin(user) {
-	log.info('StarterBot', '%s login', user);
-}
-
-function onLogout(user) {
-	log.info('StarterBot', '%s logout', user);
-}
-
-function onMessage(msg) {
-	console.log(msg)
-	if (msg.self()) return;
 }
 
 ```
