@@ -39,10 +39,10 @@ bot.js
 const {
   log,
   ScanStatus,
-  WechatyBuilder,
+  Wechaty
 } = require('wechaty')
 
-const bot = WechatyBuilder.build({
+const bot = new Wechaty({
   name: 'ding-dong-bot',
   puppet: 'wechaty-puppet-service',
   puppetOptions: {
