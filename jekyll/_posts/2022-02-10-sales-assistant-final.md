@@ -31,7 +31,7 @@ image: /assets/2022/02-sales-assistant-final/sales-meme.webp
    2. 超时 20，30，40 分钟推送橙、红、紫警报至飞书私人群与公共群
    3. 超出 40 分钟后，每隔10分钟推送灰色警报，直到超时1000分钟
 
-<img src="/Users/kevintung/workspace/juzi/wechaty.js.org/jekyll/assets/2022/02-sales-assistant-final/1.webp" style="zoom:50%;" />
+<img src="/assets/2022/02-sales-assistant-final/1.webp" style="zoom:50%;" />
 
 ### 功能模块2: 通过Vika表格进行交互式会话与绩效管理
 
@@ -46,12 +46,12 @@ image: /assets/2022/02-sales-assistant-final/sales-meme.webp
 #### 功能模块2-1: 群聊总表
 
 1. 在群聊总表-群聊总表内管理所有群聊的状态
-   ![2-1](/Users/kevintung/workspace/juzi/wechaty.js.org/jekyll/assets/2022/02-sales-assistant-final/2-1.webp)
+   ![2-1](/assets/2022/02-sales-assistant-final/2-1.webp)
 2. 销售交接售后时，将【负责人】改为售后名，将【群聊阶段】改为 after-sales，等待管理员确认
-![2-1.2](/Users/kevintung/workspace/juzi/wechaty.js.org/jekyll/assets/2022/02-sales-assistant-final/2-1.2.webp)
+![2-1.2](/assets/2022/02-sales-assistant-final/2-1.2.webp)
 3. (每日) 在群聊总表-待核准列表，勾选【核准进入售后阶段】核准群聊
 4. 在群聊总表-**无负责人群聊**列表内，在微信群查看是否没有负责人，并重新指派一个负责人与群聊阶段
-![2-1.3](/Users/kevintung/workspace/juzi/wechaty.js.org/jekyll/assets/2022/02-sales-assistant-final/2-1.3.webp)
+![2-1.3](/assets/2022/02-sales-assistant-final/2-1.3.webp)
 
 #### 功能模块2-2: 今日群聊
 
@@ -60,21 +60,21 @@ image: /assets/2022/02-sales-assistant-final/sales-meme.webp
 
 - 例如：看到超时88 分钟的群聊，且客户回复‘好的’，可勾选【消除未恢复记录】
 
-![2-2.1](/Users/kevintung/workspace/juzi/wechaty.js.org/jekyll/assets/2022/02-sales-assistant-final/2-2.1.webp)
+![2-2.1](/assets/2022/02-sales-assistant-final/2-2.1.webp)
 3. 等待1分钟内，系统将显示【已消除未回覆记录】，超时时间归零，飞书将中断推送该群超时提醒
 
-![2-2.2](/Users/kevintung/workspace/juzi/wechaty.js.org/jekyll/assets/2022/02-sales-assistant-final/2-2.2.webp)
+![2-2.2](/assets/2022/02-sales-assistant-final/2-2.2.webp)
 4. 可在末尾的参数处，查看该群的各种指标。公式为：总回复数= （售前+售后+顾客+其他员工） 的回复数
 
-![2-2.3](/Users/kevintung/workspace/juzi/wechaty.js.org/jekyll/assets/2022/02-sales-assistant-final/2-2.3.webp)
+![2-2.3](/assets/2022/02-sales-assistant-final/2-2.3.webp)
 
 ### 功能模块3: 伙伴云可视化
 
 从Vika下载生成的数据，从企业微信导入伙伴云，建立可视化图表，对每个销售的当日/当周回覆质量进行可视化。目前需要手动地导入、构建图表，还是需要花费比较多的时间。下一步将会透过API实时显示绩效表单出来。
 
-![image-20220212000332848](/Users/kevintung/workspace/juzi/wechaty.js.org/jekyll/assets/2022/02-sales-assistant-final/3-1.webp)
+![image-20220212000332848](/assets/2022/02-sales-assistant-final/3-1.webp)
 
-![image-20220212000104323](/Users/kevintung/workspace/juzi/wechaty.js.org/jekyll/assets/2022/02-sales-assistant-final/3-2.webp)
+![image-20220212000104323](/assets/2022/02-sales-assistant-final/3-2.webp)
 
 ## 二、实现
 
@@ -88,7 +88,7 @@ image: /assets/2022/02-sales-assistant-final/sales-meme.webp
 
 若要改變銷售名單，則由開發者改變 `default.json` ，再執行 `update-name.js`，即可。若管理者希望改變消息推送的頻率、超時時長與對應的警報，也可以直接修改 `default.json` 並重啟系統。此外還有系統的諸多配置，也是從這裡修改。
 
-![image-20220212011240626](/Users/kevintung/workspace/juzi/wechaty.js.org/jekyll/assets/2022/02-sales-assistant-final/structure.webp)
+![image-20220212011240626](/assets/2022/02-sales-assistant-final/structure.webp)
 
 ### 挑戰
 
@@ -100,11 +100,11 @@ image: /assets/2022/02-sales-assistant-final/sales-meme.webp
 
 在使用 wechaty 企業微信版本時，我在調用 API 後時偶爾會碰到這個 Bug，使得系統崩潰。這個問題很致命，因為當系統崩潰後，sales-bot 就無法收集新的群聊與消息，無法維護消息與房間的正確性。在後面的開發中，我在Vika 上顯示每個群聊與消息的狀態，使管理員可以捕捉到所有群聊的狀態，算是解決上述問題以及其他人為疏失所帶來的數據錯誤。但每日負責上千條消息的 sales-bot 若持續產生錯誤數據，必然會造成很大的人工成本，所以肯定需要有方法保證它能在崩潰後盡快上線。
 
-![crash](/Users/kevintung/workspace/juzi/wechaty.js.org/jekyll/assets/2022/02-sales-assistant-final/crash.webp)
+![crash](/assets/2022/02-sales-assistant-final/crash.webp)
 
 首先，我先使用 Js 自己的 error catching 方法來捕捉錯誤消息，並在結束程序前從飛書提醒我。
 
- ![image-20220211115312363](/Users/kevintung/workspace/juzi/wechaty.js.org/jekyll/assets/2022/02-sales-assistant-final/alert.webp)
+ ![image-20220211115312363](/assets/2022/02-sales-assistant-final/alert.webp)
 
 但這還是需要人力來做。一個人不可能隨時看飛書消息，就算看到也不見得能即時重啟。所以接下來我繼續找自動重啟的方法。首先我嘗試使用 forever.js , 但在跑了他的 example 後我短時間沒有試成功。後來我們就嘗試把這份代碼放到 docker 上跑，讓它來自動重啟崩潰的代碼。另外 dockerizing 還帶來了其他的好處，像是提供一個穩定的運行環境，幫助後續的規模化。
 
