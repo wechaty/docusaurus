@@ -18,7 +18,7 @@ This is the project report for **Improve the gRPC and OpenAPI ecosystem** which 
 
 ## Learnings
 
-I am very glad that I had the opportunity to take part in the Google Season of Docs program project. Participating in this program has helped me to:
+I am very glad that I had the opportunity to take part in the Google Season of Docs program. Participating in this program has helped me to:
 
 - Got involved with an amazing Wechaty community.
 - Got to know about Robotic Process Automation (RPA) SDK for Chatbot Makers.
