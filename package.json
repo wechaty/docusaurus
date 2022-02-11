@@ -74,5 +74,8 @@
     "scripts": {
       "pre-push": "npx git-scripts-pre-push"
     }
+  },
+  "dependencies": {
+    "net": "^1.0.2"
   }
 }
