@@ -5,6 +5,7 @@ import { test } from 'tstest'
 import { prNumberToTitle } from '../src/pr-number-to-title.js'
 
 import '../src/config.js'
+// @ts-ignore
 import ciInfo  from 'ci-info'
 
 test.skip('pull request title', async t => {
