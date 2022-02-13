@@ -131,7 +131,7 @@ of our great kick-off meeting of Wechaty GSoD'21 program:
 
 You can learn more from our [meeting notes][meeting_notes].
 
-[meeting_notes]: https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.edr3nzd8l43b
+[meeting_notes]: https://docs.google.com/document/d/13V0sUUwQrJbE-pyKEwdi3JnaqY-oZRhbLW8VcaQIdiE/edit#heading=h.edr3nzd8l43b
 
 ---
 
