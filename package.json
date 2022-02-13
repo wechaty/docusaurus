@@ -74,5 +74,8 @@
     "scripts": {
       "pre-push": "npx git-scripts-pre-push"
     }
+  },
+  "dependencies": {
+    "https-proxy-agent": "^5.0.0"
   }
 }

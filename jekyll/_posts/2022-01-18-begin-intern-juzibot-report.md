@@ -1,5 +1,5 @@
 ---
-title: "2022寒假-王天睿-JuziBot项目开发-期初报告-智能信息助理"
+title: "2022寒假-王天睿-JuziBot项目开发-期中报告-智能信息助理"
 author: tianrking
 categories: article
 tags:
@@ -8,7 +8,7 @@ image: /assets/2022/01-begin-intern-juzibot-report/cover.webp
 
 ---
 
-## 2022寒假-王天睿-JuziBot项目开发-期初报告-智能信息助理
+## 2022寒假-王天睿-JuziBot项目开发-期中报告-智能信息助理
 
 ### 项目参与人
 
