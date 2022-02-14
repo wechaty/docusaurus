@@ -21,6 +21,12 @@ image: /assets/2022/02-sales-assistant-final/sales-meme.webp
 
 ## 一、已实现功能说明
 
+### 總配置流程
+
+1. 【管理者】執行[【產品準備1】](https://k0auuqcihb.feishu.cn/docs/doccnKLFrlLJ7kcJIZHDdUhhWGx#jTI2lW)和[【產品準備2】](https://k0auuqcihb.feishu.cn/docs/doccnKLFrlLJ7kcJIZHDdUhhWGx#yKsQ0A)，得到【售前售後名單, 企業名稱，警報配置，2個Vika表單的ID】
+
+2. 【技術人員】根據【售前售後名單, 企業名稱，警報配置，2個Vika表單的ID】執行[【部署系統】](https://k0auuqcihb.feishu.cn/docs/doccnKLFrlLJ7kcJIZHDdUhhWGx#Ry88le)，使系統上線，通知【管理者】，正式運行
+
 ### 功能模块1: 消息警报机器人
 
 #### 功能描述
