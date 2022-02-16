@@ -10,7 +10,7 @@ email: kmvip8@163.com
 
 爱好：看书、科技数码
 
-PR Link：https://github.com/wechaty/wechaty.js.org/pull/1482
+PR Link：[https://github.com/wechaty/wechaty.js.org/pull/1482](https://github.com/wechaty/wechaty.js.org/pull/1482)
 
 ## Contact me
 
