@@ -9,7 +9,7 @@ email: kmvip8@163.com
 开源社区萌新一枚，对golang比较有兴趣，希望能够对社区做出自己的贡献.
 
 爱好：看书、科技数码
-
+PR Link：https://github.com/wechaty/wechaty.js.org/pull/1482
 ## Contact me
 
 - Github: <https://github.com/LittleSource>
