@@ -304,11 +304,11 @@ image: /assets/2022/02-second-intern-juzibot-report/cover.webp
 
 ### 视频展示
 
-{% include iframe.html src="https://youtu.be/FR00ixIftOk" %}
+{% include iframe.html src="https://youtu.be/TdCtdefyNm4" %}
 
 ### 答辩报告
 
-{% include iframe.html src="/assets/2022/02-second-intern-juzibot-report/juzibot_report_2_w0x7ce_compressed.pdf" %}
+{% include iframe.html src="/assets/2022/02-second-intern-juzibot-report/w0x7ce_gg.pdf" %}
 
 ### 项目链接
 
