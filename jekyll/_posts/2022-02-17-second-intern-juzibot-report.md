@@ -302,9 +302,13 @@ image: /assets/2022/02-second-intern-juzibot-report/cover.webp
 
     再用 json 提取 和 pandas 清洗就ok了
 
-### 视频链接
+### 视频展示
 
-[Youtube]("https://youtu.be/E1G7XWqRSHE")
+{% include iframe.html src="https://youtu.be/FR00ixIftOk" %}
+
+### 答辩报告
+
+{% include iframe.html src="/assets/2022/02-second-intern-juzibot-report/juzibot_report_2_w0x7ce_compressed.pdf" %}
 
 ### 项目链接
 
