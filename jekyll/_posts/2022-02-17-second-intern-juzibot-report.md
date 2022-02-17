@@ -304,7 +304,7 @@ image: /assets/2022/02-second-intern-juzibot-report/cover.webp
 
 ### 视频链接
 
-{% include iframe.html src="https://youtu.be/E1G7XWqRSHE" %}
+[Youtube]("https://youtu.be/E1G7XWqRSHE")
 
 ### 项目链接
 
