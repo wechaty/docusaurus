@@ -28,8 +28,8 @@ tags:
 
 ### 目标计划
 
-- 基于 5G 平台的开放 api 进行封装，实现简单的`ding-dong-bot`。
-- 丰富 5G 的消息模式，实现支持富文本、文件、css等多样消息格式的 puppet。
+- 基于 5G 平台的开放 api 进行封装，实现可以收发消息的机器人 bot。
+- 丰富机器人的扩展性功能，完善对于 Wechaty 的 api 适配。
 
 ### 项目进展
 
@@ -56,10 +56,9 @@ tags:
 
 {% include iframe.html src="/assets/2022/02-wechaty-puppet-walnut-final-report/wechaty-puppet-walnut-final-report" %}
 
-### 计划安排
+### 未来与展望
 
-- 完成图片和地理位置卡片消息的实现。
-- 封装和抽象消息模块的数据结构。
-- 优化项目结构，进行项目部署和稳定性测试。
+- 对 walnut 进行细节的补充和完善。
+- 尽可能增加对其他功能的支持、并且持序维护。
 
 > Author: [@fabian](https://github.com/fabian4)
