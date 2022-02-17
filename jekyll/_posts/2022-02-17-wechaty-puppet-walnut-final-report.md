@@ -1,0 +1,65 @@
+---
+title: "2022-基于5G平台开发puppet模块接入wechaty"
+author: fabian
+categories:
+  - project
+image: /assets/2022/02-wechaty-puppet-walnut-final-report/puppet-walnut.webp
+tags:
+  - 5g
+  - puppet-walnut
+  - chatbot
+  - ecosystem
+  - plan
+---
+
+## 基于 5G 平台开发 puppet 模块接入 wechaty
+
+- 项目名称：基于5G消息的 Wechaty Puppet 模块的设计与实现
+- 学生：鲍耀龙
+- 导师：苏畅
+- 项目介绍：<https://github.com/juzibot/intern/issues/1>
+- 代码地址：<https://github.com/wechaty/puppet-walnut>
+
+### 背景介绍
+
+- Wechaty 社区目前已经支持微信、Whatsapp、企业微信、飞书等常见流行即时通讯工具，并且能够通过多语言 SDK （比如 Python Wechaty） 进行调用。
+- [5G Chatbot (RCS)](https://wechaty.js.org/2021/03/27/rcs-messaging-chatbot/) 是近期中国电信运营商基于 5G 的消息战略落地平台，未来的 5G 手机将会内置 RCS 消息的处理能力。
+- [硬核桃社区](https://www.5g-msg.com/#/) 的 [电信运营商商5G Chatbot](https://wechaty.js.org/2021/03/27/rcs-messaging-chatbot/) 平台。
+
+### 目标计划
+
+- 基于 5G 平台的开放 api 进行封装，实现简单的`ding-dong-bot`。
+- 丰富 5G 的消息模式，实现支持富文本、文件、css等多样消息格式的 puppet。
+
+### 项目进展
+
+1. 完成图片、文件、音视频、联系人卡片消息的实现。
+2. 封装和抽象消息模块的数据结构。
+
+###  消息种类支持
+| 消息类型 | 从属(根据接口返回) | api                    | 接收 | 发送 | 群聊 |
+| -------- | ------------------ | ---------------------- | ---- | ---- | ---- |
+| 文本     | `text`             | `message.text`         | ✅    | ✅    | ❌    |
+| 图片     | `image`            | `message.toImage()`    | ✅    | ✅    | ❌    |
+| 视频     | `video`            | `message.toFilebox()`  | ✅    | ❌    | ❌    |
+| 音频     | `audio`            | `message.toFilebox()`  | ✅    | ❌    | ❌    |
+| 位置     | `location`         | `message.toLocation()` | ❌    | ❌    | ❌    |
+| 文件     | `other`            | `message.toFilebox()`  | ✅    | ❌    | ❌    |
+| 联系人   | `other`            | `message.toContact()`  | ✅    | ❌    | ❌    |
+
+
+### 视频展示
+
+{% include iframe.html src="https://youtu.be/gqR2Mbouc4E" %}
+
+### 答辩报告
+
+{% include iframe.html src="/assets/2022/02-wechaty-puppet-walnut-final-report/wechaty-puppet-walnut-final-report" %}
+
+### 计划安排
+
+- 完成图片和地理位置卡片消息的实现。
+- 封装和抽象消息模块的数据结构。
+- 优化项目结构，进行项目部署和稳定性测试。
+
+> Author: [@fabian](https://github.com/fabian4)
