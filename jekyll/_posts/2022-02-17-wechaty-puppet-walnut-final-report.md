@@ -36,9 +36,99 @@ tags:
 1. 完成图片、文件、音视频、联系人卡片消息的实现。
 2. 封装和抽象消息模块的数据结构。
 
+### 多种类消息的处理
+
+这里我们通过改善`messageRawPayloadParserz`这一个方法来进行实现
+
+~~~ts
+override async messageRawPayloadParser (rawPayload: WalnutMessagePayload): Promise<PUPPET.payloads.Message> {
+    const res = {
+      fromId: rawPayload.senderAddress.replace('tel:+86', ''),
+      id: rawPayload.messageId,
+      text: rawPayload.messageList[0]!.contentText.toString(),
+      timestamp: Date.parse(rawPayload.dateTime),
+      toId: rawPayload.destinationAddress,
+      type: PUPPET.types.Message.Text,
+    }
+    const file = rawPayload.messageList[0]?.contentText[0] as FileItem
+    // 通过 rawPayload.messageItem 字段来分析消息的类型
+    switch (rawPayload.messageItem) {
+      case MessageRawType.text:
+        break
+      case MessageRawType.image:
+        res.type = PUPPET.types.Message.Image
+        res.text = 'image'
+        break
+      case MessageRawType.video:
+        res.type = PUPPET.types.Message.Video
+        res.text = 'video'
+        break
+      case MessageRawType.audio:
+        res.type = PUPPET.types.Message.Audio
+        res.text = 'audio'
+        break
+      case MessageRawType.location:
+        res.type = PUPPET.types.Message.Location
+        res.text = 'location'
+        break
+      case MessageRawType.other:
+        res.type = PUPPET.types.Message.Attachment
+        res.text = 'file'
+        if (file.contentType === 'text/vcard') {
+          res.type = PUPPET.types.Message.Contact
+          res.text = 'contact'
+        }
+        break
+    }
+    return res
+  }
+~~~
+
+### Message Api 的实现
+
+这里我们实现了几个消息内容的拆箱方法
+
+~~~ts
+// 图片消息
+override async messageImage (messageId: string, imageType: ImageType) : Promise<FileBoxInterface> {
+    log.verbose('PuppetWalnut', 'messageImage(%s, %s)', messageId, imageType)
+    const messagePayload = await this.messageRawPayload(messageId)
+    let file = messagePayload?.messageList[0]?.contentText[1] as FileItem
+    if (imageType === PUPPET.types.Image.Thumbnail) {
+      file = messagePayload?.messageList[0]?.contentText[0] as FileItem
+    }
+    return FileBox.fromUrl(file.url)
+  }
+~~~
+
+~~~ts
+// 文件消息
+override async messageFile (messageId: string) : Promise<FileBoxInterface> {
+    log.verbose('PuppetWalnut', 'messageFile(%s)', messageId)
+    const messagePayload = await this.messageRawPayload(messageId)
+    let file = messagePayload?.messageList[0]?.contentText[0] as FileItem
+    if (messagePayload?.messageItem === MessageRawType.video) {
+      file = messagePayload.messageList[0]?.contentText[1] as FileItem
+    }
+    return FileBox.fromUrl(file.url)
+  }
+~~~
+
+~~~ts
+// 联系人卡片消息
+override async messageContact (messageId: string) : Promise<string> {
+    log.verbose('PuppetWalnut', 'messageContact(%s)', messageId)
+    const messagePayload = await this.messageRawPayload(messageId)
+    const file = messagePayload?.messageList[0]?.contentText[0] as FileItem
+    const contact = await FileBox.fromUrl(file.url).toBuffer()
+    const cards = parse(contact.toString())
+    return cards.TEL.value
+  }
+~~~
+
 ### 消息种类支持
 
-| 消息类型 | 从属(根据接口返回) | api                    | 接收 | 发送 | 群聊 |
+| 消息类型 | 从属(根据接口返回) | 获取方式               | 接收 | 发送 | 群聊 |
 | -------- | ------------------ | ---------------------- | ---- | ---- | ---- |
 | 文本     | `text`             | `message.text`         | ✅    | ✅    | ❌    |
 | 图片     | `image`            | `message.toImage()`    | ✅    | ✅    | ❌    |
