@@ -1,5 +1,4 @@
 ---
-slug: /puppet-services/
 title: FAQ - Wechaty Puppet Services
 sidebar_label: 'Puppet Services: FAQ'
 ---
