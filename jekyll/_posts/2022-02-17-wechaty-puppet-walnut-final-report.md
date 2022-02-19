@@ -96,30 +96,30 @@ tags:
 
    这里我们需要自己实现一个缓存模块，将 message 的具体内容存储进去，并且返回 id。
 
-   > 推荐李卓桓老师开发的缓存组件：**flash-store**。 https://github.com/huan/flash-store
+   > 推荐李卓桓老师开发的缓存组件：**flash-store**。 <https://github.com/huan/flash-store>
 
 2. 然后我们用 Puppet 触发一个 message 事件，把我们本地缓存的 id 传出去。
 
-   ~~~ts
+   ```ts
    this.emit('message', { messageId: messageId })
-   ~~~
+   ```
 
 3. 这时候 Wechaty 已经拿到我们消息的 id ，这个时候会根据一个需要我们实现的查询方法来获取本地缓存。
 
-   ~~~ts
+   ```ts
    override async messageRawPayload (messageId: string): Promise<WalnutMessagePayload | undefined> {
      log.verbose('PuppetWalnut', 'messageRawPayload(%s)', messageId)
      // 这里根据 id 去缓存中查出来刚刚存入的消息
    }
-   ~~~
+   ```
 
 4. 当查出具体的消息内容后，其实和我们 Wechaty 中预定义的消息结构可能不太一致，需要我们进行一个转换。
 
-   ~~~ts
+   ```ts
    override async messageRawPayloadParser (rawPayload: WalnutMessagePayload): Promise<PUPPET.payloads.Message> {
      // 这里实现转换规则：WalnutMessagePayload ===> PUPPET.payloads.Message
    }
-   ~~~
+   ```
 
 5. 不过这里要注意，在每次进行收发消息的时候 Wechaty 都会去加载一遍我们的联系人缓存。
    所以对应的联系人缓存的模块也需要实现：
