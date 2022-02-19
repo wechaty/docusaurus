@@ -33,100 +33,165 @@ tags:
 
 ### 项目进展
 
-1. 完成图片、文件、音视频、联系人卡片消息的实现。
-2. 封装和抽象消息模块的数据结构。
+- 基于 5G 平台的开放 api 进行封装，实现简单的`ding-dong-bot`。
+- 丰富 5G 的消息模式，实现支持富文本、文件、css等多样消息格式的 puppet。
 
-### 多种类消息的处理
+### 需求分析与设计
 
-这里我们通过改善`messageRawPayloadParserz`这一个方法来进行实现
+#### 1. `Wechaty`与`Puppet`的交互
 
-~~~ts
-override async messageRawPayloadParser (rawPayload: WalnutMessagePayload): Promise<PUPPET.payloads.Message> {
-    const res = {
-      fromId: rawPayload.senderAddress.replace('tel:+86', ''),
-      id: rawPayload.messageId,
-      text: rawPayload.messageList[0]!.contentText.toString(),
-      timestamp: Date.parse(rawPayload.dateTime),
-      toId: rawPayload.destinationAddress,
-      type: PUPPET.types.Message.Text,
-    }
-    const file = rawPayload.messageList[0]?.contentText[0] as FileItem
-    // 通过 rawPayload.messageItem 字段来分析消息的类型
-    switch (rawPayload.messageItem) {
-      case MessageRawType.text:
-        break
-      case MessageRawType.image:
-        res.type = PUPPET.types.Message.Image
-        res.text = 'image'
-        break
-      case MessageRawType.video:
-        res.type = PUPPET.types.Message.Video
-        res.text = 'video'
-        break
-      case MessageRawType.audio:
-        res.type = PUPPET.types.Message.Audio
-        res.text = 'audio'
-        break
-      case MessageRawType.location:
-        res.type = PUPPET.types.Message.Location
-        res.text = 'location'
-        break
-      case MessageRawType.other:
-        res.type = PUPPET.types.Message.Attachment
-        res.text = 'file'
-        if (file.contentType === 'text/vcard') {
-          res.type = PUPPET.types.Message.Contact
-          res.text = 'contact'
-        }
-        break
-    }
-    return res
-  }
-~~~
+![WechatyPuppetWalnut](assets/2022/02-wechaty-puppet-walnut-final-report/wechatypuppetwalnut.webp)
 
-### Message Api 的实现
+- 开发者通过`Wechaty`提供的 Api 来进行具体的交互操作。
+- `Wechaty`只需要具体调用**开发者指定的`Puppet`**即此处的`Walnut`来实现开发者需要的逻辑。
+- 我们的`Walnut`继承于抽象的`Puppet`父类，实现其预定义的抽象方法来实现具体的能力。
+- 具体的`Walnut`会和`5G`平台进行数据交互从而实现真正的 ChatBot。
 
-这里我们实现了几个消息内容的拆箱方法
+#### 2. 抽象方法的实现
 
-~~~ts
-// 图片消息
-override async messageImage (messageId: string, imageType: ImageType) : Promise<FileBoxInterface> {
-    log.verbose('PuppetWalnut', 'messageImage(%s, %s)', messageId, imageType)
-    const messagePayload = await this.messageRawPayload(messageId)
-    let file = messagePayload?.messageList[0]?.contentText[1] as FileItem
-    if (imageType === PUPPET.types.Image.Thumbnail) {
-      file = messagePayload?.messageList[0]?.contentText[0] as FileItem
-    }
-    return FileBox.fromUrl(file.url)
-  }
-~~~
+在继承了抽象父类之后，我们就可以按照自己需要去实现具体的方法。
 
-~~~ts
-// 文件消息
-override async messageFile (messageId: string) : Promise<FileBoxInterface> {
-    log.verbose('PuppetWalnut', 'messageFile(%s)', messageId)
-    const messagePayload = await this.messageRawPayload(messageId)
-    let file = messagePayload?.messageList[0]?.contentText[0] as FileItem
-    if (messagePayload?.messageItem === MessageRawType.video) {
-      file = messagePayload.messageList[0]?.contentText[1] as FileItem
-    }
-    return FileBox.fromUrl(file.url)
-  }
-~~~
+1. messageMixin: 消息相关的抽象方法
 
-~~~ts
-// 联系人卡片消息
-override async messageContact (messageId: string) : Promise<string> {
-    log.verbose('PuppetWalnut', 'messageContact(%s)', messageId)
-    const messagePayload = await this.messageRawPayload(messageId)
-    const file = messagePayload?.messageList[0]?.contentText[0] as FileItem
-    const contact = await FileBox.fromUrl(file.url).toBuffer()
-    const cards = parse(contact.toString())
-    return cards.TEL.value
-  }
-~~~
+   ```ts
+   abstract messageContact      (messageId: string)                       : Promise<string>
+   abstract messageFile         (messageId: string)                       : Promise<FileBoxInterface>
+   abstract messageImage        (messageId: string, imageType: ImageType) : Promise<FileBoxInterface>
+   abstract messageMiniProgram  (messageId: string)                       : Promise<MiniProgramPayload>
+   abstract messageUrl          (messageId: string)                       : Promise<UrlLinkPayload>
+   abstract messageLocation     (messageId: string)                       : Promise<LocationPayload>
+   
+   abstract messageForward         (conversationId: string, messageId: string,)                     : Promise<void | string>
+   abstract messageSendContact     (conversationId: string, contactId: string)                      : Promise<void | string>
+   abstract messageSendFile        (conversationId: string, file: FileBoxInterface)                 : Promise<void | string>
+   abstract messageSendMiniProgram (conversationId: string, miniProgramPayload: MiniProgramPayload) : Promise<void | string>
+   abstract messageSendText        (conversationId: string, text: string, mentionIdList?: string[]) : Promise<void | string>
+   abstract messageSendUrl         (conversationId: string, urlLinkPayload: UrlLinkPayload)         : Promise<void | string>
+   abstract messageSendLocation    (conversationId: string, locationPayload: LocationPayload)       : Promise<void | string>
+   
+   abstract messageRecall (messageId: string) : Promise<boolean>
+   ```
 
-### 消息种类支持
+2. contactMixin: 联系人相关的抽象方法
+
+   ```ts
+   abstract contactSelfName (name: string)           : Promise<void>
+   abstract contactSelfQRCode ()                     : Promise<string /* QR Code Value */>
+   abstract contactSelfSignature (signature: string) : Promise<void>
+   abstract contactAlias (contactId: string)                       : Promise<string>
+   abstract contactAlias (contactId: string, alias: string | null) : Promise<void>
+   abstract contactAvatar (contactId: string)                : Promise<FileBoxInterface>
+   abstract contactAvatar (contactId: string, file: FileBoxInterface) : Promise<void>
+   abstract contactPhone (contactId: string, phoneList: string[]) : Promise<void>
+   abstract contactCorporationRemark (contactId: string, corporationRemark: string | null): Promise<void>
+   abstract contactDescription (contactId: string, description: string | null): Promise<void>
+   abstract contactList (): Promise<string[]>
+   abstract contactRawPayload (contactId: string): Promise<any>
+   abstract contactRawPayloadParser (rawPayload: any) : Promise<ContactPayload>
+   ```
+
+#### 3. 缓存模块
+
+1. 当我们的 sever 监听到有用户发送消息，此时我们就需要去对消息的具体内容做一个缓存。
+
+   这里我们需要自己实现一个缓存模块，将 message 的具体内容存储进去，并且返回 id。
+
+   > 推荐李卓桓老师开发的缓存组件：**flash-store**。 https://github.com/huan/flash-store
+
+2. 然后我们用 Puppet 触发一个 message 事件，把我们本地缓存的 id 传出去。
+
+   ~~~ts
+   this.emit('message', { messageId: messageId })
+   ~~~
+
+3. 这时候 Wechaty 已经拿到我们消息的 id ，这个时候会根据一个需要我们实现的查询方法来获取本地缓存。
+
+   ~~~ts
+   override async messageRawPayload (messageId: string): Promise<WalnutMessagePayload | undefined> {
+     log.verbose('PuppetWalnut', 'messageRawPayload(%s)', messageId)
+     // 这里根据 id 去缓存中查出来刚刚存入的消息
+   }
+   ~~~
+
+4. 当查出具体的消息内容后，其实和我们 Wechaty 中预定义的消息结构可能不太一致，需要我们进行一个转换。
+
+   ~~~ts
+   override async messageRawPayloadParser (rawPayload: WalnutMessagePayload): Promise<PUPPET.payloads.Message> {
+     // 这里实现转换规则：WalnutMessagePayload ===> PUPPET.payloads.Message
+   }
+   ~~~
+
+5. 不过这里要注意，在每次进行收发消息的时候 Wechaty 都会去加载一遍我们的联系人缓存。
+   所以对应的联系人缓存的模块也需要实现：
+
+   - contactRawPayloa
+   - contactRawPayloadParser
+
+### 项目成果
+
+#### 1. Contact Api 支持
+
+- #### [Properties](https://wechaty.js.org/docs/api/contact#properties)
+
+  | Name | Type     | Description                                                  | Support | Details      |
+  | ---- | -------- | ------------------------------------------------------------ | ------- | ------------ |
+  | id   | `string` | Get Contact id. This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table) | ✅       | Phone number |
+
+- #### [Instance Methods](https://wechaty.js.org/docs/api/contact#instance-methods)
+
+  | Instance Methods             | Return type                                                  | Support | Details               |
+  | ---------------------------- | ------------------------------------------------------------ | ------- | --------------------- |
+  | say(text Or Contact Or File) | `Promise`                                                    | ✅       | ⚠Contact not Support  |
+  | name()                       | `String`                                                     | ✅       | Phone number          |
+  | alias(newAlias)              | `Promise`                                                    | ✅       |                       |
+  | friend()                     | `Boolean or null`                                            | ✅       | True                  |
+  | type()                       | `ContactType.Unknown or ContactType.Personal or ContactType.Official` | ✅       | ContactType.Personal  |
+  | gender()                     | `ContactGender.Unknown or ContactGender.Male or ContactGender.Female` | ✅       | ContactGender.Unknown |
+  | province()                   | `String or null`                                             | ❌       |                       |
+  | city()                       | `String or null`                                             | ❌       |                       |
+  | avatar()                     | `Promise`                                                    | ✅       | Default avatar        |
+  | sync()                       | `Promise`                                                    | ✅       |                       |
+  | self()                       | `Boolean`                                                    | ✅       |                       |
+
+  > Default avatar 👉 <https://raw.githubusercontent.com/wechaty/puppet-walnut/main/docs/images/avatar.webp>
+
+- #### [Static Methods](https://wechaty.js.org/docs/api/contact#static-methods)
+
+  | Static Methods            | Return Type                | Support | Detail |
+  | ------------------------- | -------------------------- | ------- | ------ |
+  | find(query)               | `Promise <Contact | null>` | ✅       |        |
+  | findAll(Query Arguements) | `Promise <Contact []>`     | ✅       |        |
+
+#### 2. Message Api 支持
+
+- #### [Instance Methods](https://wechaty.js.org/docs/api/message#instance-methods)
+
+  | Instance methods             | Return type         | Support | Detail               |
+  | ---------------------------- | ------------------- | ------- | -------------------- |
+  | from()                       | `Contact` or `null` | ✅       |                      |
+  | to()                         | `Contact` or `null` | ✅       |                      |
+  | room()                       | `Room` or `null`    | ✅       | null                 |
+  | text()                       | `string`            | ✅       |                      |
+  | say(text Or Contact Or File) | `Promise`           | ✅       | ⚠Contact not Support |
+  | type()                       | `MessageType`       | ✅       | Message.Text         |
+  | self()                       | `boolean`           | ✅       |                      |
+  | mention()                    | `Promise`           | ❌       |                      |
+  | mentionSelf()                | `Promise`           | ❌       |                      |
+  | forward(to)                  | `Promise`           | ✅       |                      |
+  | date()                       | `Date`              | ✅       |                      |
+  | age()                        | `Number`            | ✅       |                      |
+  | toFileBox()                  | `Promise`           | ✅       |                      |
+  | toContact()                  | `Promise`           | ✅       |                      |
+  | toUrlLink()                  | `Promise`           | ✅       |                      |
+
+- #### [Static Method](https://wechaty.js.org/docs/api/message#static-method)
+
+  | Static Methods | Return type | Support | Detail |
+  | -------------- | ----------- | ------- | ------ |
+  | find()         | `Promise`   | ✅       |        |
+  | findAll()      | `Promise`   | ✅       |        |
+
+#### 3. 消息格式支持
 
 | 消息类型 | 从属(根据接口返回) | 获取方式               | 接收 | 发送 | 群聊 |
 | -------- | ------------------ | ---------------------- | ---- | ---- | ---- |
