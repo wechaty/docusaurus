@@ -40,7 +40,7 @@ tags:
 
 #### 1. `Wechaty`与`Puppet`的交互
 
-![WechatyPuppetWalnut](assets/2022/02-wechaty-puppet-walnut-final-report/wechatypuppetwalnut.webp)
+![WechatyPuppetWalnut](/assets/2022/02-wechaty-puppet-walnut-final-report/wechatypuppetwalnut.webp)
 
 - 开发者通过`Wechaty`提供的 Api 来进行具体的交互操作。
 - `Wechaty`只需要具体调用**开发者指定的`Puppet`**即此处的`Walnut`来实现开发者需要的逻辑。
