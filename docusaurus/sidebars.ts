@@ -63,6 +63,7 @@ const puppetProviders: SubMenuData = {
     'puppet-providers/service',
     'puppet-providers/mock',
     'puppet-providers/diy',
+    'puppet-providers/simplepad',
   ],
 }
 
