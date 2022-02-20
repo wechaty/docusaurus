@@ -17,6 +17,7 @@ Wechaty is applying to join GSoC in 2021 as its first time.
 ## Iterations of Summer of Wechaty for GSoC
 
 - [2021](2021.md)
+- [2022](2022.md)
 
 ### Useful Links
 
