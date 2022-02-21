@@ -1,5 +1,5 @@
 ---
-title: 基于Wechaty的销售助理机器人--项目中期进展
+title: 基于Wechaty的销售助理机器人--项目结项报告
 author: kevintung
 categories: project
 tags: productivity
