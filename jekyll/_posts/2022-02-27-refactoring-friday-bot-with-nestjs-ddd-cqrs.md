@@ -41,16 +41,6 @@ Some of more advanced features are:
 
 With Friday BOT get more and more features, the code base is growing, and the community is growing.
 
-## NestJS
-
-![NestJS](/assets/2022/02-refactoring-friday-bot-with-nestjs-ddd-cqrs/nestjs.webp)
-
-> Nest ([NestJS](https://nestjs.com/)) is a framework for building efficient, scalable Node.js server-side applications. It uses progressive TypeScript and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).
->
-> Nest provides an out-of-the-box application architecture which allows developers and teams to create highly testable, scalable, loosely coupled, and easily maintainable applications. The architecture is heavily inspired by Angular.
-
-It has [Controlers](https://docs.nestjs.com/controllers) to handle the HTTP requests, [Providers](https://docs.nestjs.com/providers) to be injected as dependency (Inversify of Control, IOC), and [CQRS](https://docs.nestjs.com/recipes/cqrs) which works out-of-the-box.
-
 ## Domain-driven Design (DDD)
 
 ![Domain-driven Design easily explained](/assets/2022/02-refactoring-friday-bot-with-nestjs-ddd-cqrs/domain-driven-design-easily-explained.webp)
@@ -85,6 +75,16 @@ Some useful resources:
 > Source: [Introduction to CQRS and Event Sourcing](https://smartlabsblog.wordpress.com/2015/09/06/introduction-to-cqrs-and-event-sourcing-part-1/)
 
 [Command Query Responsibility Segregation (CQRS)](https://martinfowler.com/bliki/CQRS.html) is a software architecture pattern that separates the command(write) and query(read) layers.
+
+## NestJS
+
+![NestJS](/assets/2022/02-refactoring-friday-bot-with-nestjs-ddd-cqrs/nestjs.webp)
+
+> Nest ([NestJS](https://nestjs.com/)) is a framework for building efficient, scalable Node.js server-side applications. It uses progressive TypeScript and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).
+>
+> Nest provides an out-of-the-box application architecture which allows developers and teams to create highly testable, scalable, loosely coupled, and easily maintainable applications. The architecture is heavily inspired by Angular.
+
+It has [Controlers](https://docs.nestjs.com/controllers) to handle the HTTP requests, [Providers](https://docs.nestjs.com/providers) to be injected as dependency (Inversify of Control, IOC), and [CQRS](https://docs.nestjs.com/recipes/cqrs) which works out-of-the-box.
 
 ## The New Architecture of Friday BOT
 
@@ -224,7 +224,10 @@ sequenceDiagram
 1. Infrastructure: low-level supporting services, such as `EnvVar`, `finis`, etc.
 1. WechatyEvents: the Event-driven architecture of Wechaty, such as `PuppetMessageReceivedEvent`, `PuppetMessageSentEvent`, etc.
 1. WechatyRepository: provide the Wechaty instances.
+1. WechatySettings: provide the settings from pre-defined properties and environment variables.
 1. FridayModule: main module of Friday BOT, where the whole system is assembled.
+1. Sagas: using RxJS to convert `Event` to `Command`s
+1. Unit test: using `marble` to test the event streaming system
 
 All the above modules are in the `src/` folder, they are working under the Inverse of Control (IOC) pattern powered by NestJS.
 
