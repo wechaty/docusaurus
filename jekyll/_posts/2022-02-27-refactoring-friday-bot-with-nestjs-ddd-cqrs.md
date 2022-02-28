@@ -231,6 +231,11 @@ sequenceDiagram
 
 All the above modules are in the `src/` folder, they are working under the Inverse of Control (IOC) pattern powered by NestJS.
 
+## To-do List
+
+- [ ] Finish the Event-Driven Architecture (EDA) module for Wechaty, and publish it as `wechaty-actor` NPM module.
+- [ ] Publish a NestJS module `wechaty-nest` for easily integrating the `wechaty-actor` NPM module to NestJS
+
 ## Source Code
 
 The source code of Friday BOT is available on [GitHub](https://github.com/wechaty/friday)
