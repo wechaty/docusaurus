@@ -5,7 +5,7 @@ categories: announcement
 tags:
   - news
   - open-source
-image: /assets/2022/03-opensource-win-github-ranking-huan-007/cover.webp
+image: /assets/2022/03-opensource-win-github-ranking-huan-007/opensource-super-mario.webp
 ---
 
 “开源”是 2021 中国技术发展的年度热词，越来越多人关注开源、贡献开源。然而，谈到中国的开源盛况，却有人提出了不同的观点：
