@@ -56,6 +56,8 @@ Wechaty 创始人 [Huan(李卓桓)](https://opensource.win/huan) 排名全球 TO
 
 ## 合作伙伴
 
+![Open Source Wechaty](/assets/2022/03-opensource-win-github-ranking-huan-007/cover.webp)
+
 ![brands](/assets/2022/03-opensource-win-github-ranking-huan-007/brands.webp)
 
 > Source: [来自开源世界的超级码丽，中国开源码力榜权威发布, SegmentFault思否, Mar 1, 2022](https://segmentfault.com/a/1190000041478447)
