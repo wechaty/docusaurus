@@ -56,7 +56,7 @@ twitter: https://weibo.com/u/2175505900
 - [李诞脱口秀工作手册（李诞分享创作经验！创意是智力活儿，也是体力活儿，归根结底是苦力活儿！）](https://juzihudong.feishu.cn/file/boxcn9OMlk8a7NBN85LuuS0Ppsc)
 - [人人都是项目经理：如何做好一个项目](https://juzihudong.feishu.cn/docs/doccn29OD2Wog5uJhfHInTHT2kg)
 - [年薪翻倍的工作习惯](https://meta.feishu.cn/file/boxcnNvKryRyJngEqxdOl58Zjye)
-- [如何开展一项复杂的工作](https://m.igetget.com/share/note/detail/bEKVpvj7xB6LYGq3wo6Qm89gZOz6Nw)
+- [很多事情不是难，他只是很复杂：如何开展一项复杂的工作](https://m.igetget.com/share/note/detail/bEKVpvj7xB6LYGq3wo6Qm89gZOz6Nw)
 
 ## 联系我
 
