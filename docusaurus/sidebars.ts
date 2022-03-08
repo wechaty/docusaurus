@@ -60,10 +60,11 @@ const puppetProviders: SubMenuData = {
     'puppet-providers/padlocal',
     'puppet-providers/wechat4u',
     'puppet-providers/xp',
+    'puppet-providers/oicq',
+    'puppet-providers/simplepad',
     'puppet-providers/service',
     'puppet-providers/mock',
     'puppet-providers/diy',
-    'puppet-providers/simplepad',
   ],
 }
 
