@@ -13,9 +13,7 @@ image: /assets/2022/03-event-driven-wechaty-cqrs/cqrs-wechaty.webp
 > Command Query Responsibility Segregation (CQRS) is a software architecture pattern that separates the command(write) and query(read) layers.  
 > &mdash; [CQRS, Martin Fowler, 14 July 2011](https://martinfowler.com/bliki/CQRS.html)
 
-![Command Query Responsibility Segregation (CQRS) Pattern](/assets/2022/03-event-driven-wechaty-cqrs/cqrs-pattern.webp)
-
-> Image source: [CQRS (command query responsibility segregation)](https://www.techtarget.com/searchapparchitecture/definition/CQRS-command-query-responsibility-segregation)
+![CQRS Events Structure](/assets/2022/03-event-driven-wechaty-cqrs/cqrs-events-diagram.svg)
 
 ## Wechaty CQRS
 
@@ -98,9 +96,11 @@ Here's a video introduction for CQRS Wechaty with live demo, presented by Huan:
 The getting started [ding-dong-bot.ts](https://github.com/wechaty/getting-started/blob/main/examples/cqrs/ding-dong-bot.ts)
 in the video: <https://github.com/wechaty/getting-started/blob/main/examples/cqrs/ding-dong-bot.ts>
 
-## Diagrams
+## Architectures
 
-![CQRS Events Structure](/assets/2022/03-event-driven-wechaty-cqrs/cqrs-events-diagram.svg)
+![Command Query Responsibility Segregation (CQRS) Pattern](/assets/2022/03-event-driven-wechaty-cqrs/cqrs-pattern.webp)
+
+> Image source: [CQRS (command query responsibility segregation)](https://www.techtarget.com/searchapparchitecture/definition/CQRS-command-query-responsibility-segregation)
 
 ```mermaid
 graph LR

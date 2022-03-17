@@ -23,7 +23,7 @@ Huan is a serial entrepreneur, [active angel investor](http://pre-angel.com/peop
 > to use the State-of-the-art Machine Learning Algorithms  
 > to solve the Real-world Problem.  
 
-## Contact me
+## Contact
 
 - Github: <https://github.com/huan>
 - LinkedIn: <https://linkedin.com/in/zixia>
