@@ -6,7 +6,7 @@
     ],
     "jekyll/assets": [
       "/[0-9\\-a-z_]+\\.",
-      "\\.(webp|pdf|zip)$"
+      "\\.(webp|pdf|zip|svg)$"
     ]
   },
   "ignore": [
