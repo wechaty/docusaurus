@@ -7,13 +7,13 @@ tags:
   - cqrs
   - ddd
   - event-driven
-image: /assets/2022/03-event-driven-wechaty-cqrs/cqrs-wechaty.png
+image: /assets/2022/03-event-driven-wechaty-cqrs/cqrs-wechaty.webp
 ---
 
 > Command Query Responsibility Segregation (CQRS) is a software architecture pattern that separates the command(write) and query(read) layers.  
 > &mdash; [CQRS, Martin Fowler, 14 July 2011](https://martinfowler.com/bliki/CQRS.html)
 
-![Command Query Responsibility Segregation (CQRS) Pattern](/assets/2022/03-event-driven-wechaty-cqrs/cqrs-pattern.png)
+![Command Query Responsibility Segregation (CQRS) Pattern](/assets/2022/03-event-driven-wechaty-cqrs/cqrs-pattern.webp)
 
 > Image source: [CQRS (command query responsibility segregation)](https://www.techtarget.com/searchapparchitecture/definition/CQRS-command-query-responsibility-segregation)
 
