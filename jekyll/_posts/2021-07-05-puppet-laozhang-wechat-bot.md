@@ -6,6 +6,7 @@ tags:
   - blog
   - study
   - introduction
+  - news
 image: /assets/2021/07-puppet-laozhang-wechat-bot/wechat_bot.webp
 ---
 

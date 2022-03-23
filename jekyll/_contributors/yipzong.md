@@ -9,3 +9,9 @@ email: yip.zong@gmail.com
 ## Contact me
 
 - Email：<yip.zong@gmail.com>
+
+## My Contributions
+
+- [Add doc for add-contact-into-room, change roomTopic](<https://github.com/wechaty/wechaty.js.org/pull/1143>)
+- [Update puppeteer version to fix double Chromium download](<https://github.com/wechaty/wechaty-puppet-wechat/pull/145>)
+- [Add build.sbt for scala project](<https://github.com/wechaty/scala-wechaty-getting-started/pull/2>)

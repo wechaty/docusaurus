@@ -1,6 +1,6 @@
 {
   "name": "wechaty.js.org",
-  "version": "0.10.22",
+  "version": "0.10.80",
   "description": "Wechaty Official Website for News, Blogs, Contributor Profiles, and Documentations",
   "private": true,
   "type": "module",
@@ -43,6 +43,7 @@
     "@chatie/eslint-config": "^0.14.1",
     "@chatie/git-scripts": "^0.6.2",
     "@chatie/tsconfig": "^0.20.2",
+    "@types/ci-info": "^3.1.0",
     "@types/glob": "^7.1.4",
     "@types/lodash": "^4.14.172",
     "@types/marked": "^2.0.4",
@@ -75,5 +76,10 @@
     "scripts": {
       "pre-push": "npx git-scripts-pre-push"
     }
+  },
+  "dependencies": {
+    "https-proxy-agent": "^5.0.0",
+    "net": "^1.0.2",
+    "tls": "^0.0.1"
   }
 }

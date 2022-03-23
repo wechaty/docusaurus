@@ -169,7 +169,6 @@ async function onRoomJoin(room, inviteeList, inviter){
     }
 }
 
-
 module.exports = onRoomJoin
 
 //db-operations.js

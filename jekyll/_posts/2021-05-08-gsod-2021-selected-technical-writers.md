@@ -14,7 +14,7 @@ tags:
   - news
   - featured
   - docs
-image: /assets/2021/05-gsod-2021-selected-technical-writers/gsod-meeting-teasor.webp 
+image: /assets/2021/05-gsod-2021-selected-technical-writers/gsod-meeting-teasor.webp
 ---
 
 It's a great honor for Wechaty to participate in Google Season of Docs 2021
@@ -65,7 +65,7 @@ to manage the project and make sure everything is on track.
 
 There are total 20 attendees on our meeting. They are:
 
-1. Huan, Creator of Wechaty,  UTC+8
+1. Huan, Creator of Wechaty, UTC+8
 1. Rui, Co-creator of Wechaty, UTC+8
 1. Rohitesh, GSoD’20 participant & interested in Volunteering for GSoD’21, UTC +5:30
 1. Jaya Gupta
@@ -84,7 +84,7 @@ There are total 20 attendees on our meeting. They are:
 1. Chris Estepa, GSoD’21 participant, UTC +8
 1. David Atanda, GSoD’21 participant, UTC +1
 1. Arnab Saha,GSod’21 participant(landing pages)
-1. Rajiv Ranjan Singh, Interested in Volunteering for GSoD '21, IST (UTC +5:30)
+1. Rajiv Ranjan Singh, GSoD 2021 participant, (UTC+05:30)
 
 ## The Zoom Meeting
 
@@ -131,9 +131,9 @@ of our great kick-off meeting of Wechaty GSoD'21 program:
 
 You can learn more from our [meeting notes][meeting_notes].
 
-[meeting_notes]: https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.edr3nzd8l43b
+[meeting_notes]: https://docs.google.com/document/d/13V0sUUwQrJbE-pyKEwdi3JnaqY-oZRhbLW8VcaQIdiE/edit#heading=h.edr3nzd8l43b
 
------
+---
 
 ### Documentation style guide
 
@@ -173,7 +173,7 @@ The project 1-4 is strictly defined by the documentation system, and they must f
 Tutorials are _lessons_ that take the reader by the hand
 through a series of steps to complete a project of some kind.
 They are what your project needs in order to show a beginner that
-they can achieve something with it.  
+they can achieve something with it.
 
 They are wholly **learning-oriented**, and specifically,
 they are oriented towards _learning how_ rather than _learning that_.
@@ -294,11 +294,11 @@ Wechaty has two subsystems for providing the gRPC support: one is [wechaty/wecha
 What we are planning to do is:
 
 1. Improve all OpenAPI related documentation
-  from our docs website <https://wechaty.js.org/docs/>,
-  especially [Polyglot/OpenAPI](http://wechaty.js.org/docs/polyglot/openapi/).
+   from our docs website <https://wechaty.js.org/docs/>,
+   especially [Polyglot/OpenAPI](http://wechaty.js.org/docs/polyglot/openapi/).
 1. Improve READMEs from both
-  [wechaty/wechaty-grpc](https://github.com/wechaty/grpc)
-  and [wechaty/openapi](https://github.com/wechaty/openapi)
+   [wechaty/wechaty-grpc](https://github.com/wechaty/grpc)
+   and [wechaty/openapi](https://github.com/wechaty/openapi)
 1. Improve the code when necessary for improving the docs in the repository [wechaty/wechaty-grpc](https://github.com/wechaty/grpc) and [wechaty/openapi](https://github.com/wechaty/openapi)
 
 #### Project 7: Volunteering
@@ -343,12 +343,12 @@ which can be used to vote for the performance grant.
 
 Two writers A and B are working together share a $1k project.
 
-The base grants will be $1,000 * 80% = $800,
+The base grants will be $1,000 \* 80% = $800,
 A and B will share $800 equally,
 which means that A will get $400 and B will get $400 as well
 for their base grants.
 
-The performance grants will be $1,000 * 20% = $200.
+The performance grants will be $1,000 \* 20% = $200.
 According to the performance grants caculating formula,
 if we assuming the following vote result,
 then we will get the following distributing result:
@@ -356,11 +356,11 @@ then we will get the following distributing result:
 1. Vote from A: A:4 B:6
 1. Vote from B: A:7 B:3
 1. Final percentage result:
-    1. A: (4+7)/20 * 100% = 55%
-    1. B: (6+3)/20 * 100% = 45%
+   1. A: (4+7)/20 \* 100% = 55%
+   1. B: (6+3)/20 \* 100% = 45%
 1. Final distributing result:
-    1. A: 55% * $200 = $110
-    1. B: 45% * $200 = $90
+   1. A: 55% \* $200 = $110
+   1. B: 45% \* $200 = $90
 
 In our practice we need to add C and D which is our volunteers, that's it!
 
@@ -392,9 +392,9 @@ which is for everyone from our technical writer team!
 The rule is simple:
 
 1. Wechaty organization will make a budget of $1,000.00
-  for this performance bonus
+   for this performance bonus
 1. Everyone in our team will have 10 points
-  to vote other teams (skip their own team)
+   to vote other teams (skip their own team)
 1. Volunteers and mentors will vote with the same rule
 1. All team share $1,000.00 by the points they get
 
@@ -407,11 +407,11 @@ For example, we have two team A and B:
 1. Vote from Mentor 1: A:4 B:6
 1. Vote from Mentor 2: A:7 B:3
 1. Final percentage result:
-    1. A: (4+7+4+7+4+7)/60 * 100% = 55%
-    1. B: (6+3+6+3+6+3)/60 * 100% = 45%
+   1. A: (4+7+4+7+4+7)/60 \* 100% = 55%
+   1. B: (6+3+6+3+6+3)/60 \* 100% = 45%
 1. Final distributing result:
-    1. A: 55% * $1,000 = $550
-    1. B: 45% * $1,000 = $450
+   1. A: 55% \* $1,000 = $550
+   1. B: 45% \* $1,000 = $450
 
 In our practice we need to add C, D, and E
 which are all of our projects
@@ -428,7 +428,7 @@ Here we'd like to announce that the Wechaty GSoD'21 selected technical writers, 
 1. [Shraddha Vasant Prasad](https://wechaty.js.org/contributors/shraddhavp/) and [Soumi Bardhan](https://wechaty.js.org/contributors/soumi7/) for [Improve the References section](https://wechaty.js.org/2021/05/11/shraddhavp-soumi-combined-reference-proposal/) ([team proposal](https://docs.google.com/document/d/1ACh3weTzbuPeXG6Qr9Jq7ffRnA9Floz-qt-8nQ3bqLI/))
 1. [Mukosa Joseph Mawa](https://wechaty.js.org/contributors/nibble0101/) and Chris Estepa for [Improve the Explanations (and Introduction) sections](https://wechaty.js.org/2021/05/13/gsod-2021-improve-introduction-and-explanation-project-joint-proposal/) ([team proposal](https://docs.google.com/document/d/1VxIByga8Lui6raoyrosfvjQ8zelpwk-1ci7uk8mZ57M/edit#))
 1. [Sajen Sarvajith k](https://wechaty.js.org/contributors/sajenjeshan1222/) and Arnab Saha for [Reconstruct Wechaty homepage(landing page) with value proposition](https://wechaty.js.org/2021/05/12/gsod-2021-reconstruct-landing-page-team-proposal/) ([team proposal](https://docs.google.com/document/d/1Ri8MpSC5fJQCZN7txai_imLe16Qh4BcPF24ZNugxDuk/edit#))
-1. [Rajiv Singh](https://wechaty.js.org/contributors/iamrajiv/) for Improve the gRPC and OpenAPI ecosystem ([proposal](https://github.com/iamrajiv/GSoD-2021/blob/master/GSoD_2021_Project_Proposal.md))
+1. [Rajiv Ranjan Singh](https://wechaty.js.org/contributors/iamrajiv/) to Improve the gRPC and OpenAPI ecosystem ([proposal](https://github.com/iamrajiv/GSoD-2021/blob/main/GSoD_2021_Project_Proposal.md))
 1. [Rohitesh Kumar Jain](https://wechaty.js.org/contributors/rohitesh-kumar-jain/) and [Simin Liao (廖思閔)](https://wechaty.js.org/contributors/proudofsimin/) for [Volunteering](https://wechaty.js.org/2021/05/12/gsod-2021-volunteering-proposal/) ([team proposal](https://docs.google.com/document/d/1Twl2sMIcpaRLC38Hndbn73U-IzWt2pEdLgdnYjsoVF8/))
 
 Welcome the above 13 technical writers onboarding, it's so great to have you all in our Wechaty organization community, cheers!

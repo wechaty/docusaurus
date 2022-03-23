@@ -192,7 +192,6 @@ module.exports = {
 var io = require('../socketio');
 io.getSocketio(server);
 
-
 /**
  * Create puppet_donut server.
  */

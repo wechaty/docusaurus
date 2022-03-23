@@ -1,13 +1,25 @@
-## wechaty.js.org
+<div align="center">
+<img src="https://github.com/wechaty/wechaty.js.org/blob/main/docs/images/wechaty-docusaurus.png" alt="wechaty logo" height ="auto" width="800" />
+<br />
+<h1>Wechaty Organization Website</h1>
+<p>
+Repository for the Wechaty Organization Website, a resource for the Wechaty Organization. It is the official Wechaty website for publishing latest news, blog posts, and documentation from our open source community.
+</p>
+<p align="center">
+<a href="https://github.com/wechaty/wechaty.js.org" alt="GitHub contributors">
+<img src="https://img.shields.io/github/contributors/wechaty/wechaty.js.org.svg" /></a>
+<a href="https://github.com/wechaty/wechaty.js.org" alt="GitHub issues by-label">
+<img src="https://img.shields.io/github/issues/wechaty/wechaty.js.org" /></a>
+<a href="https://gitter.im/wechaty/wechaty" alt="Gitter">
+<img src="https://img.shields.io/badge/Gitter-@layer5.svg?logo=slack" /></a>
+</p>
 
 [![GitHub Pages CI](https://github.com/wechaty/wechaty.js.org/workflows/GitHub%20Pages%20CI/badge.svg)](https://github.com/wechaty/wechaty.js.org/actions?query=workflow%3A%22GitHub+Pages+CI%22)
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
 [![DIVIO documentation system](https://img.shields.io/badge/DIVIO-Documentation%20System-blue)](https://documentation.divio.com/)
 [![ES Modules](https://img.shields.io/badge/ES-Modules-brightgreen)](https://github.com/Chatie/tsconfig/issues/16)
 
-![Wechaty Docusaurus](docs/images/wechaty-docusaurus.png)
-
-<https://wechaty.js.org> is the official Wechaty website for publishing latest news, blog posts, and documentation from our open source community.
+</div>
 
 ## How To Post a Blog
 
@@ -22,7 +34,7 @@ To submit a blog post for publication on [wechaty.js.org](https://wechaty.js.org
 7. Add related images to [jekyll/assets](./jekyll/assets) folder under `$YEAR/$MONTH-your-blog-slug/` directory
 8. Add your info into `jekyll/_contributors/your_github_id.md`
 9. Commit your changes using the command `git commit -am "YOUR_BLOG_TITLE"`. `YOUR_BLOG_TITLE` is the title of your blog
-10. Push you branch to github using the command `git push origin name-of-blog-branch`.
+10. Push your branch to github using the command `git push origin name-of-blog-branch`.
 11. Create new Pull Request(PR)
 12. Sign the [CLA](https://en.wikipedia.org/wiki/Contributor_License_Agreement)
 13. Wait for the continuous integration workflow run to finish. If it is failing, fix whatever is making it to fail so that CI turns green
@@ -88,7 +100,7 @@ npm test
 
 ## How To Preview Your changes
 
-If you want to preview your blog post or changes on locahost, you need to have Jekyll installed in your machine. You can follow the [jekyll quickstart](https://jekyllrb.com/docs/) instructions to install jekyll.
+If you want to preview your blog post or changes on localhost, you need to have Jekyll installed in your machine. You can follow the [jekyll quickstart](https://jekyllrb.com/docs/) instructions to install jekyll.
 
 ### 1. Install Jekyll by Hand
 
@@ -96,8 +108,7 @@ Run Jekyll at localhost to preview your blog post by running the commands below.
 
 ```sh
 make install
-cd jekyll
-make serve
+cd jekyll; make serve # or either run `./scripts/jekyll-serve.sh` for a fresh new start by cleaning cache
 ```
 
 ### 2. Preview the Blog
