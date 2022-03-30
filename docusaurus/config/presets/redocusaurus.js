@@ -3,16 +3,16 @@ const redocusaurus = [
   {
     specs: [
       {
-        routePath: "/docs/openapi/",
-        specUrl: "https://cdn.jsdelivr.net/npm/wechaty-grpc/dist/generated/wechaty/puppet.swagger.json",
+        route: "/docs/openapi/",
+        spec: "https://cdn.jsdelivr.net/npm/wechaty-grpc/dist/esm/out/wechaty/puppet.swagger.json",
       },
       {
-        routePath: "/docs/openapi@latest",
-        specUrl: "https://cdn.jsdelivr.net/npm/wechaty-grpc@latest/dist/generated/wechaty/puppet.swagger.json",
+        route: "/docs/openapi@latest",
+        spec: "https://cdn.jsdelivr.net/npm/wechaty-grpc@latest/dist/esm/out/wechaty/puppet.swagger.json",
       },
       {
-        routePath: "/docs/openapi@next",
-        specUrl: "https://cdn.jsdelivr.net/npm/wechaty-grpc@next/dist/generated/wechaty/puppet.swagger.json",
+        route: "/docs/openapi@next",
+        spec: "https://cdn.jsdelivr.net/npm/wechaty-grpc@next/dist/esm/out/wechaty/puppet.swagger.json",
       },
     ],
     theme: {

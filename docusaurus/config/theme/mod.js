@@ -9,6 +9,7 @@ const themeConfig = {
   navbar,
   footer,
   algolia: {
+    appId            : 'BH4D9OD16A',
     apiKey           : 'cd8ca324c447a803e8a196a5c8fa22dd',
     indexName        : 'wechaty',
     searchParameters : {},                                   // Optional (if provided by Algolia)
@@ -34,7 +35,7 @@ const themeConfig = {
   // and https://docusaurus.io/docs/api/themes/configuration#metadatas
   // know more about Metadata configuration.
   image: 'img/wechaty-logo.svg',
-  metadatas: [
+  metaData: [
     {name: 'twitter:card', content: 'summary_large_image'},
     {name: 'twitter:image', content: 'img/wechaty-icon.png'},
     {name: 'twitter:title', content: 'Wechaty'},
