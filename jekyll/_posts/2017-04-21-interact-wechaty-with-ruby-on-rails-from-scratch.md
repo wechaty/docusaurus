@@ -5,12 +5,10 @@ categories: tutorial
 tags:
   - code
   - featured
-image: /assets/2017/wildcat-rails-db-initial-structure.png
+image: /assets/2017/wildcat-rails-db-initial-structure.webp
 ---
 
 ![architecture2][wildcat-rails-architecture-2]
-
-Author: [@imWildCat](https://github.com/imWildCat), University of Portsmouth
 
 > [Ruby on Rails](http://rubyonrails.org) is a extremely powerful web framework with a long history, which can simplify our development process, making it more enjoyable. As it known to all, many well-known sites are built on this framework, such as [GitHub](https://github.com), [Unsplash](https://unsplash.com), [Airbnb](http://airbnb.com), [Dribbble](https://dribbble.com) and [Product Hunt](https://www.producthunt.com)[^1]. For most developers without so much experience about Rails, setting up a development environment for this stack is not a easy task. This blog would introduce how to interact Wechaty with Rails with an example of a group message logger, trying to *Keep it simple, stupid* (the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle)).
 > Note: This blog will mainly illustrate the tutorial on macOS. The situations can be very different on other platforms such as Windows and Linux. Due to the limitations of this author's time, these topics cannot be covered. Moreover, the final version of code has been published on GitHub: [https://github.com/imWildCat/blog-post-interact-wechaty-with-rails-from-scratch](https://github.com/imWildCat/blog-post-interact-wechaty-with-rails-from-scratch)
@@ -90,7 +88,7 @@ npm i --save wechaty chromedriver request
 Then create a new file named `bot.js` with this code base:
 
 ```javascript
-const { Wechaty } = require('wechaty');
+import { Wechaty }  from 'wechaty';
 
 function startBot() {
     const bot = Wechaty.instance({ profile: 'chatieme' });
@@ -106,7 +104,7 @@ startBot();
 Since we'd like to send the message to Rails app, we have to build a JSON object:
 
 ```javascript
-const { Wechaty } = require('wechaty');
+import { Wechaty }  from 'wechaty';
 
 function startBot() {
     const bot = Wechaty.instance({ profile: 'chatieme' });
@@ -340,8 +338,8 @@ We can test the API provided by Rails app using `curl`:
 We could take advantages of the library [request](https://github.com/request/request), posting the data to Rails:
 
 ```javascript
-const { Wechaty } = require('wechaty');
-const request = require('request');
+import { Wechaty }  from 'wechaty';
+import request  from 'request';
 
 function startBot() {
     const bot = Wechaty.instance({ profile: 'chatieme' });
@@ -426,7 +424,9 @@ Thanks for your reading. Feel free to drop any questions.
 [^3]: Read–eval–print loop - Wikipedia: [https://en.wikipedia.org/wiki/Read–eval–print_loop](https://en.wikipedia.org/wiki/Read–eval–print_loop)
 [^4]: Docker (software) - Wikipedia: [https://en.wikipedia.org/wiki/Docker_(software)](https://en.wikipedia.org/wiki/Docker_(software))
 
-[wildcat-rails-db-initial-structure]: /assets/2017/wildcat-rails-db-initial-structure.png
-[wildcat-rails-architecture-1]: /assets/2017/wildcat-rails-architecture-1.png
-[wildcat-rails-architecture-2]: /assets/2017/wildcat-rails-architecture-2.png
-[wildcat-rails-admin-panel]: /assets/2017/wildcat-rails-admin-panel.png
+[wildcat-rails-db-initial-structure]: /assets/2017/wildcat-rails-db-initial-structure.webp
+[wildcat-rails-architecture-1]: /assets/2017/wildcat-rails-architecture-1.webp
+[wildcat-rails-architecture-2]: /assets/2017/wildcat-rails-architecture-2.webp
+[wildcat-rails-admin-panel]: /assets/2017/wildcat-rails-admin-panel.webp
+
+Author: [@imWildCat](https://github.com/imWildCat), University of Portsmouth

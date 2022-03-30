@@ -7,11 +7,8 @@ tags:
   - academic
   - padplus
   - healthcare
-image: /assets/2020/yanbot/yanbot.jpg 
+image: /assets/2020/yanbot/yanbot.webp 
 ---
-
-> Author: [Chaogan-Yan](https://github.com/Chaogan-Yan) Professor, Institute of Psychology, Chinese Academy of Sciences
-> Code: [Github](https://github.com/Chaogan-Yan/YanBot)
 
 ## 备注
 
@@ -52,3 +49,6 @@ map: async message => await message.room()?.alias(message.from()??bot.userSelf()
 will forward the nickname (RoomAlias) from one chatroom to another chatroom, thus people can talk across rooms more conveniently.
 
 Hope this tips helps for others!
+
+> Author: [Chaogan-Yan](https://github.com/Chaogan-Yan) Professor, Institute of Psychology, Chinese Academy of Sciences
+> Code: [Github](https://github.com/Chaogan-Yan/YanBot)

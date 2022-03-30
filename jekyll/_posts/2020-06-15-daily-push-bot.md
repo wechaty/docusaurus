@@ -6,12 +6,9 @@ tags:
   - python
   - padplus
   - media
-image: /assets/2020/daily-push-wechat-robot/fake-robot.jpg
+image: /assets/2020/daily-push-wechat-robot/fake-robot.webp
 
 ---
-
-> 作者: [IvanEvan](https://github.com/IvanEvan/)
-> Code: [Github](https://github.com/IvanEvan/daily-push-wechat-robot)
 
 [![Wechaty Badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![Everything about Wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
@@ -126,9 +123,12 @@ image: /assets/2020/daily-push-wechat-robot/fake-robot.jpg
 
 ## 部分功能展示
 
-![群内推送](/assets/2020/daily-push-wechat-robot/push-inroom.png)
-![私聊推送](/assets/2020/daily-push-wechat-robot/push-per.png)
-![自我介绍](/assets/2020/daily-push-wechat-robot/intro.png)
-![非文本回复颜文字](/assets/2020/daily-push-wechat-robot/emoji.png)
+![群内推送](/assets/2020/daily-push-wechat-robot/push-inroom.webp)
+![私聊推送](/assets/2020/daily-push-wechat-robot/push-per.webp)
+![自我介绍](/assets/2020/daily-push-wechat-robot/intro.webp)
+![非文本回复颜文字](/assets/2020/daily-push-wechat-robot/emoji.webp)
 
-![天气查询](/assets/2020/daily-push-wechat-robot/whether.png)
+![天气查询](/assets/2020/daily-push-wechat-robot/whether.webp)
+
+> 作者: [IvanEvan](https://github.com/IvanEvan/)
+> Code: [Github](https://github.com/IvanEvan/daily-push-wechat-robot)

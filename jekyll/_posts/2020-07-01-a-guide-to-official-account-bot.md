@@ -1,18 +1,13 @@
 ---
 title: "使用wechaty助力公众号主维护社群"
 author: sl1673495
-image: /assets/2020/wechat-official-helper/teaser.png
+image: /assets/2020/wechat-official-helper/teaser.webp
 categories: project
 tags:
   - official-account
   - productivity
   - social
 ---
-
-> Author: [@your_github_username](https://github.com/sl1673495) front-end developer
-> Code: [@wechaty-bot](https://github.com/sl1673495/wechaty-bot)
-
-## 前言
 
 作为公众号的号主，有粉丝加微信想要进群是一件很开心的事情，但是久了以后会发现通过好友、改备注、拉群这些事情耗费太多精力了。还好有幸发现了 `wechaty` 这个项目。昨天试了一下，真的大大解放了我的双手，这篇博客就以公众号号主的角度，来看看怎么用 `wechaty` 来开发一个机器人小助手的。
 
@@ -207,3 +202,6 @@ async function addContactToRoom(contact: Contact) {
 ## 总结
 
 有了这个机器人以后，可以把更多的时间用来写优质的文章回馈社区了，真的太棒了！希望这篇文章能对正在做公众号的你有所帮助哦。
+
+> Author: [@your_github_username](https://github.com/sl1673495) front-end developer
+> Code: [@wechaty-bot](https://github.com/sl1673495/wechaty-bot)

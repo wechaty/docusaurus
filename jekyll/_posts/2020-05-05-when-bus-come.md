@@ -5,11 +5,8 @@ categories: project
 tags:
   - padplus
   - travel
-image: /assets/2020/when-bus-come/teaser.jpg
+image: /assets/2020/when-bus-come/teaser.webp
 ---
-
-> 作者: [ershing](https://github.com/ershing) Node.js developer
-> Code: [Github](https://github.com/ershing/when-bus-come)
 
 ## 需求
 
@@ -168,3 +165,6 @@ image: /assets/2020/when-bus-come/teaser.jpg
 ## 致谢
 
 感谢 `Wechaty` 开源项目及 `JuziBot` 公司提供的 token，为开发者带来极大便利！
+
+> 作者: [ershing](https://github.com/ershing) Node.js developer
+> Code: [Github](https://github.com/ershing/when-bus-come)

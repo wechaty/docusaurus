@@ -1,12 +1,25 @@
-## wechaty.js.org
+<div align="center">
+<img src="https://github.com/wechaty/wechaty.js.org/blob/main/docs/images/wechaty-docusaurus.png" alt="wechaty logo" height ="auto" width="800" />
+<br />
+<h1>Wechaty Organization Website</h1>
+<p>
+Repository for the Wechaty Organization Website, a resource for the Wechaty Organization. It is the official Wechaty website for publishing latest news, blog posts, and documentation from our open source community.
+</p>
+<p align="center">
+<a href="https://github.com/wechaty/wechaty.js.org" alt="GitHub contributors">
+<img src="https://img.shields.io/github/contributors/wechaty/wechaty.js.org.svg" /></a>
+<a href="https://github.com/wechaty/wechaty.js.org" alt="GitHub issues by-label">
+<img src="https://img.shields.io/github/issues/wechaty/wechaty.js.org" /></a>
+<a href="https://gitter.im/wechaty/wechaty" alt="Gitter">
+<img src="https://img.shields.io/badge/Gitter-@layer5.svg?logo=slack" /></a>
+</p>
 
 [![GitHub Pages CI](https://github.com/wechaty/wechaty.js.org/workflows/GitHub%20Pages%20CI/badge.svg)](https://github.com/wechaty/wechaty.js.org/actions?query=workflow%3A%22GitHub+Pages+CI%22)
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
 [![DIVIO documentation system](https://img.shields.io/badge/DIVIO-Documentation%20System-blue)](https://documentation.divio.com/)
+[![ES Modules](https://img.shields.io/badge/ES-Modules-brightgreen)](https://github.com/Chatie/tsconfig/issues/16)
 
-![Wechaty Docusaurus](docs/images/wechaty-docusaurus.png)
-
-<https://wechaty.js.org> is the official Wechaty website for publishing latest news, blog posts, and documentation from our open source community.
+</div>
 
 ## How To Post a Blog
 
@@ -21,7 +34,7 @@ To submit a blog post for publication on [wechaty.js.org](https://wechaty.js.org
 7. Add related images to [jekyll/assets](./jekyll/assets) folder under `$YEAR/$MONTH-your-blog-slug/` directory
 8. Add your info into `jekyll/_contributors/your_github_id.md`
 9. Commit your changes using the command `git commit -am "YOUR_BLOG_TITLE"`. `YOUR_BLOG_TITLE` is the title of your blog
-10. Push you branch to github using the command `git push origin name-of-blog-branch`.
+10. Push your branch to github using the command `git push origin name-of-blog-branch`.
 11. Create new Pull Request(PR)
 12. Sign the [CLA](https://en.wikipedia.org/wiki/Contributor_License_Agreement)
 13. Wait for the continuous integration workflow run to finish. If it is failing, fix whatever is making it to fail so that CI turns green
@@ -87,7 +100,7 @@ npm test
 
 ## How To Preview Your changes
 
-If you want to preview your blog post or changes on locahost, you need to have Jekyll installed in your machine. You can follow the [jekyll quickstart](https://jekyllrb.com/docs/) instructions to install jekyll.
+If you want to preview your blog post or changes on localhost, you need to have Jekyll installed in your machine. You can follow the [jekyll quickstart](https://jekyllrb.com/docs/) instructions to install jekyll.
 
 ### 1. Install Jekyll by Hand
 
@@ -95,8 +108,7 @@ Run Jekyll at localhost to preview your blog post by running the commands below.
 
 ```sh
 make install
-cd jekyll
-make serve
+cd jekyll; make serve # or either run `./scripts/jekyll-serve.sh` for a fresh new start by cleaning cache
 ```
 
 ### 2. Preview the Blog
@@ -120,14 +132,25 @@ At the same time, we also meet up offline all over the world. Here are some acti
 - [Wechaty Country Wide Developer Conference](https://wechaty.js.org/2018/09/15/country-wide-developer-conference/)
 - .....
 
+### How to Run Locally
+
+1. Clone this repository: `git clone "https://github.com/wechaty/wechaty.js.org"`
+2. On the terminal navigate to the root directory `cd wechaty.js.org`
+3. Run the commands :
+    1. `npm install`
+    2. `npm run docusaurus:build`
+    3. `npm run docusaurus:serve`
+4. The site will be running locally on `http://localhost:3000`
+
 ### How To Contribute To the Documentation
 
-- Fork this repository
-- Create your documentation branch: `git checkout -b branch-name`
-- Make changes to the documentation in markdown
-- Commit your changes using the command `git commit -am 'commit message'`
-- Push your changes to gitHub
-- Create new Pull Request
+1. Fork this repository
+2. Create your documentation branch: `git checkout -b branch-name`
+3. Make changes to the documentation in markdown
+4. Add changes to the staging area `git add .`
+5. Commit your changes using the command `git commit -m 'commit message'`
+6. Push your changes to gitHub `git push origin branch-name`
+7. Create new Pull Request
 
 ## Resources
 
@@ -147,6 +170,25 @@ At the same time, we also meet up offline all over the world. Here are some acti
 [![contributor](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/images/7)](https://sourcerer.io/fame/huan/wechaty/wechaty.js.org/links/7)
 
 To get to know all our writers, see <https://github.com/wechaty/wechaty.js.org/graphs/contributors>
+
+## History
+
+### main v0.9 (Aug 23, 2021)
+
+1. Add OpenAPI Specification docs at <https://wechaty.js.org/docs/openapi/> ([#1218](https://github.com/wechaty/wechaty.js.org/issues/1218))
+
+### v0.5 (Aug 12, 2020)
+
+1. Using docusaurus for docs
+1. Rename chatie to wechaty
+
+### v0.3 (Mar 9, 2017)
+
+Rename wechaty to chatie
+
+### v0.0.1 (Dec 4, 2016)
+
+Init version
 
 ## Maintainers
 

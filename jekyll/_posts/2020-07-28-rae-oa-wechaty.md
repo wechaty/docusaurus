@@ -5,21 +5,16 @@ categories: project
 tags:
   - puppet-provider
   - productivity
-image: /assets/2020/rae-oa-wechaty/schecdule.png
+image: /assets/2020/rae-oa-wechaty/schecdule.webp
 ---
-> Author: [NorthSeacoder](https://github.com/NorthSeacoder)
-> Code: [rae-wechaty](https://github.com/NorthSeacoder/rae-wechaty)
-
-## 背景
 
 之前公司web组组长有个微信机器人每周催我们交周报,私信发过去会自动更新到公司内部wiki上,一度惊为天人,后来看到公共号以及掘金上突然有好多人推荐wechaty,据说是6行代码完成一个微信聊天机器人,正好老婆那边想要个能辅助她工作的系统,就是这么巧~
 
-### 致谢
+## 致谢
 
 感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
 感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token  
 感谢[gengchen528](https://github.com/gengchen528/wechat-assistant),[isnl](https://github.com/isnl/wechat-robot-ipad),[shfshanyue](https://github.com/shfshanyue/wechat-bot)大佬们的开源代码
-<!--more-->
 
 ## 定位
 
@@ -55,8 +50,8 @@ rae-wechaty是Rae-oa系统在微信上的辅助机器人,提供一切我老婆�
 [] 获取所有以支持的关键字  
 
 如图:  
-![1](/assets/2020/rae-oa-wechaty/birth.png)
-![2](/assets/2020/rae-oa-wechaty/daily.png)
+![1](/assets/2020/rae-oa-wechaty/birth.webp)
+![2](/assets/2020/rae-oa-wechaty/daily.webp)
 
 ## 依赖
 
@@ -108,7 +103,7 @@ npm run docker:clean
 
 ## 目录结构
 
-![目录](/assets/2020/rae-oa-wechaty/catalogue.png)
+![目录](/assets/2020/rae-oa-wechaty/catalogue.webp)
 
 - `bin`文件夹存放存放docker的运行脚本
 - `src`
@@ -117,3 +112,6 @@ npm run docker:clean
   - `message` 具体的处理逻辑函数
   - `schedule` 定时任务
 - `index.ts` 程序入口
+
+> Author: [NorthSeacoder](https://github.com/NorthSeacoder)
+> Code: [rae-wechaty](https://github.com/NorthSeacoder/rae-wechaty)

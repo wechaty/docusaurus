@@ -6,12 +6,8 @@ tags:
   - openai
   - talk
   - featured
-image: /assets/2020/wechaty-weixin-openai/teaser-image.png
+image: /assets/2020/wechaty-weixin-openai/teaser-image.webp
 ---
-
-> Author: [@windmemory](https://github.com/windmemory) Wechaty contributor, author of [wechaty-puppet-padchat](https://github.com/wechaty/wechaty-puppet-padchat), [wechaty-puppet-padpro](https://github.com/wechaty/wechaty-puppet-padpro), [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus). CTO of [Juzi.Bot](https://pre-angel.com/portfolios/juzibot/)
->
-> Code: [wwc-wechaty](https://github.com/windmemory/wwc-wechaty)
 
 应 [WWC(Women Who Code)](#women-who-code) 邀请，我在线上分享了如何用「Wechaty」和「微信对话开放平台」做个助理帮助回答常见问题。
 
@@ -336,10 +332,14 @@ PS：在现场演示过程中，我们的测试了很多种的负面情绪的消
 
 [Women Who Code Beijing](https://mp.weixin.qq.com/s?__biz=MzIyMzc0NDgzMg==&mid=100000001&idx=1&sn=2cb2c65673dd989cebac1e69abad5ccd&chksm=6818c72e5f6f4e386470525349192f23c8407a77e0a628cec7dbee3e75d9704223a2ef7f2d95) 于2015年10月在北京成立，希望能够帮助和鼓励在这个城市生活和工作的 女性工程师在职业发展的道路上顺利前行。我们相信IT行业也会因为有更多的女性的加入变得更有生产力和创造力。
 
-[teaser]: /assets/2020/wechaty-weixin-openai/teaser-image.png
-[mobile-screenshot-1]: /assets/2020/wechaty-weixin-openai/mobile-screenshot-1.jpg
-[openai-screenshot]: /assets/2020/wechaty-weixin-openai/openai-screenshot.jpg
-[openai-qna]: /assets/2020/wechaty-weixin-openai/openai-qna.jpg
-[openai-config]: /assets/2020/wechaty-weixin-openai/openai-config.jpg
-[openai-banner]: /assets/2020/wechaty-weixin-openai/openai-banner.jpg
-[final-screenshot]: /assets/2020/wechaty-weixin-openai/final-screenshot.jpg
+[teaser]: /assets/2020/wechaty-weixin-openai/teaser-image.webp
+[mobile-screenshot-1]: /assets/2020/wechaty-weixin-openai/mobile-screenshot-1.webp
+[openai-screenshot]: /assets/2020/wechaty-weixin-openai/openai-screenshot.webp
+[openai-qna]: /assets/2020/wechaty-weixin-openai/openai-qna.webp
+[openai-config]: /assets/2020/wechaty-weixin-openai/openai-config.webp
+[openai-banner]: /assets/2020/wechaty-weixin-openai/openai-banner.webp
+[final-screenshot]: /assets/2020/wechaty-weixin-openai/final-screenshot.webp
+
+> Author: [@windmemory](https://github.com/windmemory) Wechaty contributor, author of [wechaty-puppet-padchat](https://github.com/wechaty/wechaty-puppet-padchat), [wechaty-puppet-padpro](https://github.com/wechaty/wechaty-puppet-padpro), [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus). CTO of [Juzi.Bot](https://pre-angel.com/portfolios/juzibot/)
+>
+> Code: [wwc-wechaty](https://github.com/windmemory/wwc-wechaty)

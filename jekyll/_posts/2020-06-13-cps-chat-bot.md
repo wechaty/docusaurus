@@ -1,16 +1,12 @@
 ---
 title: "CPS chat bot"
 author: wss793062366
-image: /assets/2020/cps-chat-bot/goodsmsg.jpeg
+image: /assets/2020/cps-chat-bot/goodsmsg.webp
 categories: project
 tags:
   - ecommerce
 ---
 
-> Author: [@wss793062366](https://github.com/wss793062366) your one-line bio at here
-> Code: [@my-padplus-bot](https://github.com/wss793062366/my-padplus-bot)
-
----
 tips: 使用微信群，推广电商商品及优惠券，机器人使用 wechaty-puppet-padplus.
 
 ## 简介
@@ -83,9 +79,9 @@ module.exports = {
  * wechaty-puppet-padplus index
  */
 
-const { Wechaty } = require("wechaty")
-const { PuppetPadplus } = require("wechaty-puppet-padplus")
-const config = require("../config/config")
+import { Wechaty }  from 'wechaty'
+import { PuppetPadplus }  from 'wechaty-puppet-padplus'
+import config  from '../config/config'
 
 // init
 const bot = new Wechaty({
@@ -125,7 +121,6 @@ async function onMessage (msg: Message) {
     }
   }
 }
-
 
 ```
 
@@ -299,7 +294,7 @@ npm run start
 
 ### 效果图
 
-![效果图](/assets/2020/cps-chat-bot/goodsmsg.jpeg)
+![效果图](/assets/2020/cps-chat-bot/goodsmsg.webp)
 
 ### 致谢
 
@@ -309,3 +304,6 @@ npm run start
 项目链接
 
 <https://github.com/wss793062366/my-padplus-bot>
+
+> Author: [@wss793062366](https://github.com/wss793062366) your one-line bio at here
+> Code: [@my-padplus-bot](https://github.com/wss793062366/my-padplus-bot)

@@ -1,7 +1,7 @@
 ---
 title: "基于Python-wechaty建立一个斗图机器人"
 author: godkillerxiao
-image: /assets/2020/meme-bot/07-19-wechaty-meme-bot.png
+image: /assets/2020/meme-bot/07-19-wechaty-meme-bot.webp
 categories: project
 tags:
   - python
@@ -11,11 +11,6 @@ tags:
   - machine-learning
   - entertainment
 ---
-
-> Author: [@MrZilinXiao](https://github.com/MrZilinXiao) Always dedicated to learn something brand new.
-> Code: [@Fighting-Meme-python-wechaty](https://github.com/MrZilinXiao/Fighting-Meme-python-wechaty)
-
-## 暑期2020
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
 
@@ -33,7 +28,7 @@ tags:
 - 学生：肖子霖
 - 模块列表
 - 项目初步规划图（可能有调整）
-    ![plan](/assets/2020/meme-bot/07-19-wechaty-meme-bot.png)
+    ![plan](/assets/2020/meme-bot/07-19-wechaty-meme-bot.webp)
   - [x] 数据库管理
   - [ ] 针对静态表情包的特征提取模块调试与开发
   - [ ] 适配K-means算法
@@ -64,3 +59,6 @@ tags:
 
 - 项目链接：[@Fighting-Meme-python-wechaty](https://github.com/MrZilinXiao/Fighting-Meme-python-wechaty)
 - 联系方式：me#mrxiao.net  (# -> @)
+
+> Author: [@MrZilinXiao](https://github.com/MrZilinXiao) Always dedicated to learn something brand new.
+> Code: [@Fighting-Meme-python-wechaty](https://github.com/MrZilinXiao/Fighting-Meme-python-wechaty)

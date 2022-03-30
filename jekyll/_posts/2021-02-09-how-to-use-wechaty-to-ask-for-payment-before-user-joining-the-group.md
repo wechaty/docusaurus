@@ -9,10 +9,8 @@ tags:
   - case-study
   - ecommerce
   - productivity
-image: /assets/2021/02-how-to-use-wechaty-to-ask-for-payment-before-user-joining-the-group/paying-by-qrcode.png
+image: /assets/2021/02-how-to-use-wechaty-to-ask-for-payment-before-user-joining-the-group/paying-by-qrcode.webp
 ---
-
-> 作者: [程序员LIYI](https://yishulun.com)，首发于公众号: [一个小小智能机器人：帮我们自动拉人，自动核实付费，自动将收款转到个人银行卡](https://mp.weixin.qq.com/s/TUKmK7IgJElECt7hNq5QEA)。以下内容重发时有修改。
 
 一直以来在私域流量运营领域都有这样一个需求：自动通过好友，并在新好友支付一定的费用之后，依据新好友所发送的关键字，将其拉到对应的微信群。关键字与微信群对应，并且微信群满员以后可以自动扩建。
 
@@ -78,3 +76,5 @@ npm run serve
 {% include iframe.html src="https://youtu.be/Rujwzt0B9K8"%}
 
 2021年02月09日
+
+> 作者: [程序员LIYI](https://yishulun.com)，首发于公众号: [一个小小智能机器人：帮我们自动拉人，自动核实付费，自动将收款转到个人银行卡](https://mp.weixin.qq.com/s/TUKmK7IgJElECt7hNq5QEA)。以下内容重发时有修改。

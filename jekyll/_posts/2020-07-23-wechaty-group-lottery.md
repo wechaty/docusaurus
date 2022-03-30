@@ -6,10 +6,8 @@ tags:
   - padplus
   - productivity
   - entertainment
-image: /assets/2020/wechaty-lottery/lottery-header.jpg
+image: /assets/2020/wechaty-lottery/lottery-header.webp
 ---
-> Author: [csjuXYZ](https://github.com/csjuXYZ)
-> Code: [wechaty_lottery](https://github.com/csjuXYZ/wechaty_lottery)
 
 ## 背景
 
@@ -26,7 +24,7 @@ image: /assets/2020/wechaty-lottery/lottery-header.jpg
 - 通过"抽奖+空格"格式触发抽奖机器人,例如"抽奖 抱枕","抽奖 一等奖"等  
 - 机器人被触发后获取当前群内成员数组,并去除机器人和发奖人
 - 等概率随机抽取一人,在群内消息通知中奖信息并同时@发奖人和中奖人
-- ![截图](/assets/2020/wechaty-lottery/pic01.jpg)
+- ![截图](/assets/2020/wechaty-lottery/pic01.webp)
 
 ## 依赖
 
@@ -58,9 +56,9 @@ npm run serve
 ## 开发
 
 ```javascript
-const { Message } = require("wechaty")
+import { Message }  from 'wechaty'
     // 配置文件
-const config = require("./config")
+import config  from './config'
     // 机器人名字
 const name = config.name
 
@@ -102,7 +100,6 @@ module.exports = bot => {
                         if (await lottery(msg)) return
                     }
 
-
                 } else {
                     //私聊消息
                 }
@@ -139,3 +136,6 @@ async function lottery(msg) {
 
 感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
 感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token
+
+> Author: [csjuXYZ](https://github.com/csjuXYZ)
+> Code: [wechaty_lottery](https://github.com/csjuXYZ/wechaty_lottery)

@@ -5,10 +5,8 @@ categories: tutorial
 tags:
   - news
   - python
-image: /assets/2020/python-wechaty/live-coding.png
+image: /assets/2020/python-wechaty/live-coding.webp
 ---
-
-## Python-Wechaty
 
 Wechaty 作为一个对话SDK，拥有适配多平台的优秀能力，同时还具备多语言的特性，今天我们将以一个简单的视频来介绍如何开始使用[Python-Wechaty](https://github.com/wechaty/python-wechaty)编写一个最简单的聊天机器人。
 

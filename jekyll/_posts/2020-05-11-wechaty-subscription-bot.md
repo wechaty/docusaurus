@@ -4,13 +4,8 @@ author: fish-ball
 categories: tutorial
 tags:
   - subscribe
-image: /assets/2020/wechaty-subscription-bot/teaser.png
+image: /assets/2020/wechaty-subscription-bot/teaser.webp
 ---
-
-> 作者: [工画师](https://github.com/fish-ball)，分母为零的斜杠大龄青年程序员。
-<!-- more -->
-
-项目链接：[![wechaty-subsbot](https://img.shields.io/badge/GitHub-wechaty--subsbot-green)](https://github.com/fish-ball/wechaty-subsbot)
 
 ## 项目背景
 
@@ -289,9 +284,13 @@ bot.on('message', async msg => {
 
 测试机器人(wx_easecloud)：
 
-![逸云科技](/assets/2020/wechaty-subscription-bot/wx_easecloud.jpg)
+![逸云科技](/assets/2020/wechaty-subscription-bot/wx_easecloud.webp)
 
 联系作者：
 
 微信号: huangwenchao1987
 email: huangwc@easecloud.cn
+
+> 作者: [工画师](https://github.com/fish-ball)，分母为零的斜杠大龄青年程序员。
+
+项目链接：[![wechaty-subsbot](https://img.shields.io/badge/GitHub-wechaty--subsbot-green)](https://github.com/fish-ball/wechaty-subsbot)

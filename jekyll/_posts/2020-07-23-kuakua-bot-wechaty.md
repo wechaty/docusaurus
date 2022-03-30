@@ -6,16 +6,12 @@ tags:
   - padplus
   - entertainment
   - social
-image: /assets/2020/kuakua-wechaty/titleimage.png
+image: /assets/2020/kuakua-wechaty/titleimage.webp
 ---
-
-> Author:&ensp;[yinizhilian](https://github.com/yinizhilian/kuakua_wechaty)
-> Code:&ensp;[GitHub](https://github.com/yinizhilian/kuakua_wechaty)
 
 [![Wechaty Badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![Everything about Wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
 
-<!--more-->
 &ensp;&ensp;&ensp;&ensp;疫情期间，记得微信加过一个朋友，给他发消息立马就能回复，后来才知道其中有一些是机器人回复的。特别好奇这是怎么做到的，因为之前了解到的就只有微信公众号可以做到。难道微信也可以？因为好奇，网上查询了相关资料才了解到了强大的wechaty。恰巧自己的研究方向是自然语言处理，前段时间公众号上的夸夸机器人很火，所以想着写一个微信版本的夸夸机器人吧。如果想体验可以加一下：AINLPER-BOT 。相关功能实现的方式不是很完美，还请各位大神勿喷~
 
 ## 夸夸机器人
@@ -29,17 +25,17 @@ image: /assets/2020/kuakua-wechaty/titleimage.png
 ### 每日早安语
 
 &ensp;&ensp;&ensp;&ensp;该功能实现主要是通过爬取网络上的早安语，然后去重，并将其做成了json文件，供程序每天随机读取。为了防止出现重复，每天发完都会删除。我工程中data目录下面就有公布的部分数据，大概有个300条吧，也能够大家用快一年的了。效果截图如下：
-![goodmorning](/assets/2020/kuakua-wechaty/goodmorning.png)
+![goodmorning](/assets/2020/kuakua-wechaty/goodmorning.webp)
 
 ### 每日天气
 
 &ensp;&ensp;&ensp;&ensp;该功能会根据微信个人设置的地理位置实现天气的自动推送，本文工程设定是每天8点推送。该功能的实现主要是调用的第三方API接口，这里就不打广告了。因为第三方的接口个人感觉不好用，后面我计划采用个人爬取的方式获取天气结果，这样自主权更好一点。
-![weather](/assets/2020/kuakua-wechaty/weather.png)
+![weather](/assets/2020/kuakua-wechaty/weather.webp)
 
 ### 夸夸机器人
 
 &ensp;&ensp;&ensp;&ensp;终于到了最关键的功能了。夸夸机器人主要使用的是一份别人爬好的数据集，然后我对数据集做了一些清洗处理（去重、去无效词、去关键词等），处理后的数据集我也会放到我工程的目录下面。在问答处理上我采用的是key-value的方式，用到的最主要的匹配算法采用的是余弦cos计算相似度。这样好友在说一些话的时候，会自动的匹配出相关赞美的话。
-![kuakua](/assets/2020/kuakua-wechaty/kuakua.jpg)
+![kuakua](/assets/2020/kuakua-wechaty/kuakua.webp)
 
 ### 夸夸机器人的召唤和退出
 
@@ -60,3 +56,6 @@ image: /assets/2020/kuakua-wechaty/titleimage.png
 ## 感谢
 
 最后，真心的感谢Wechaty开源项目提供的 token。
+
+> Author:&ensp;[yinizhilian](https://github.com/yinizhilian/kuakua_wechaty)
+> Code:&ensp;[GitHub](https://github.com/yinizhilian/kuakua_wechaty)

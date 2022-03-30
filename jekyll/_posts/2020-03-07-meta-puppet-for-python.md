@@ -6,19 +6,12 @@ tags:
   - python
   - socket
   - puppet
-image: /assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.jpg
+image: /assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.webp
 ---
 
-> 作者: [Tom](https://github.com/quantumFlame)
-代码: [MetaPuppetForPython](https://github.com/quantumFlame/MetaPuppetForPython)
-首发于博客: [用Python写Wechaty程序](https://wechaty.github.io/meta-puppet-for-python/)
-文本协议: CC BY-NC-SA 3.0 CN
+一个支持Wechaty调用的Python框架
 
-[![MetaPuppetForPython](/assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.jpg)](https://github.com/quantumFlame/MetaPuppetForPython)  
-
-<!-- more -->
-
-简介：一个支持Wechaty调用的Python框架
+[![MetaPuppetForPython](/assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.webp)](https://github.com/quantumFlame/MetaPuppetForPython)  
 
 特征：
 
@@ -99,7 +92,6 @@ class MyBot(RobotBase):
             'path': 'Hello Human!',
         }
         return return_msg
-
 
 if __name__ == '__main__':
     # init
@@ -495,7 +487,6 @@ class WebClient(object):
             msg_to_send,
         )
 
-
 a_webgui = WebClient(
     config_path=os.path.join(os.path.dirname(__file__), '../config.json')
 )
@@ -506,7 +497,7 @@ a_webgui.run()
 
 ## 原理
 
-[![MetaPuppetForPython](/assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.jpg)](https://github.com/quantumFlame/MetaPuppetForPython)  
+[![MetaPuppetForPython](/assets/2020/meta-puppet-for-python/2020-03-meta-puppet-for-python.webp)](https://github.com/quantumFlame/MetaPuppetForPython)  
 `MetaPuppetForPython`的核心是通过socket双向通信，实现业务逻辑(server)与第三方业务(client)的交互，包括信息的收发以及接口的调用等。
 所以，在这个框架下，与`Wechaty`的架构类比，server是`Wechaty`的TS代码，client是`Wechaty`调用的各个puppet。
 `MetaPuppetForPython`默认包括完全的server和运行`Wechaty`的client代码，针对其他app(weibo, qq, web, etc.)的client需要自定义。
@@ -573,3 +564,8 @@ python example/hello_word.py
 * Compile your management tasks as `async_foo()` and call with `run_coroutine_in_new_thread()`.
 
 * If you don't like async, you can also run the sync version functions in new thread (see more details in `example/hello_world.py`).
+
+> 作者: [Tom](https://github.com/quantumFlame)
+代码: [MetaPuppetForPython](https://github.com/quantumFlame/MetaPuppetForPython)
+首发于博客: [用Python写Wechaty程序](https://wechaty.github.io/meta-puppet-for-python/)
+文本协议: CC BY-NC-SA 3.0 CN

@@ -8,9 +8,6 @@ tags:
   - productivity
 ---
 
-> Author: [xajeyu](https://github.com/xajeyu)
-> Code: [retarded-robot](https://github.com/xajeyu/retarded-robot)
-
 ## 内容列表
 
 - [背景](#背景)
@@ -60,11 +57,14 @@ npm start or yarn start
 
 ## 功能截图
 
-![管理员配置端](/assets/2020/retarded-robot/private-menu.png)
-![管理员配置端-1](/assets/2020/retarded-robot/private-feat.png)
-![群里工作信息查询](/assets/2020/retarded-robot/room-feat.png)
+![管理员配置端](/assets/2020/retarded-robot/private-menu.webp)
+![管理员配置端-1](/assets/2020/retarded-robot/private-feat.webp)
+![群里工作信息查询](/assets/2020/retarded-robot/room-feat.webp)
 
 ## 致谢
 
 感谢[wechaty](https://github.com/wechaty/wechaty)团队提供微信机器人SDK  
 感谢[句子互动](https://www.juzibot.com/)提供的iPad协议版token
+
+> Author: [xajeyu](https://github.com/xajeyu)
+> Code: [retarded-robot](https://github.com/xajeyu/retarded-robot)

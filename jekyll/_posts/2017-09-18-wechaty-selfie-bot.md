@@ -7,10 +7,8 @@ tags:
   - featured
   - machine-learning
   - game
-image: /assets/2017/wechaty-selfie-pear.jpg
+image: /assets/2017/wechaty-selfie-pear.webp
 ---
-
-> Author: [@huyingxi](https://github.com/huyingxi/wechaty_selfie) enjoying ML&Wechaty at BUPT
 
 Recently I found a fun and easy middleware to use for WeChat, called [Wechaty](https://github.com/wechaty/wechaty).
 
@@ -18,13 +16,13 @@ Wechaty can help developers quickly build applications based on Wechat, and it w
 
 So I build a fun application based on Wechaty, called [wechaty_selfie](https://github.com/huyingxi/wechaty_selfie), which is a ChatBot that can score self-portraits.
 
-![selfie pear](/assets/2017/wechaty-selfie-pear.jpg)
+![selfie pear](/assets/2017/wechaty-selfie-pear.webp)
 
 Say goodbye to your choice of difficulty!
 
 ## Screenshot of the application
 
-![selfie demo](/assets/2017/wechaty-selfie-demo-screenshoot.jpg)
+![selfie demo](/assets/2017/wechaty-selfie-demo-screenshoot.webp)
 
 ## Our development steps
 
@@ -67,3 +65,5 @@ I strongly recommend that you now click on the link below, there are surprises w
 * [What a Deep Neural Network thinks about your #selfie](https://karpathy.github.io/2015/10/25/selfie/)
 
 And more details about my selfie bot, you can find in my github repository at: [wechaty_selfie](https://github.com/huyingxi/wechaty_selfie)
+
+> Author: [@huyingxi](https://github.com/huyingxi/wechaty_selfie) enjoying ML&Wechaty at BUPT

@@ -6,10 +6,8 @@ tags:
   - meetup
   - news
   - featured
-image: /assets/2018/country-wide-developer-conference.jpg
+image: /assets/2018/country-wide-developer-conference.webp
 ---
-
-> Author: [李佳芮](https://github.com/lijiarui/)，Founder of BotOrange。
 
 ![Wechaty Contributors][contributors-image]
 
@@ -42,19 +40,6 @@ Here is their sharing:
 
 ## Introduction Video
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QhQPO_2bD48" frameborder="0" allowfullscreen="" style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=QhQPO_2bD48" %}
 
-[contributors-image]: /assets/2018/country-wide-developer-conference.jpg
+[contributors-image]: /assets/2018/country-wide-developer-conference.webp

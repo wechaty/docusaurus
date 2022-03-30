@@ -1,7 +1,7 @@
 ---
 title: "微信群过于频繁提醒功能"
 author: chianquan
-image: /assets/2020/wechaty-speaker-mention/speaker-mention.png
+image: /assets/2020/wechaty-speaker-mention/speaker-mention.webp
 categories: project
 tags:
   - nodejs
@@ -9,8 +9,6 @@ tags:
   - project
   - productivity
 ---
-
-## 背景
 
 自己在的知识讨论分享群里人数比较多，经常有人在群里闲聊，发言太多，导致有用的信息容易被淹没。
 
@@ -40,11 +38,11 @@ tags:
 
 ### 扫描二维码登录pad微信
 
-  ![登录扫码](/assets/2020/wechaty-speaker-mention/speaker-mention-scan.png)
+  ![登录扫码](/assets/2020/wechaty-speaker-mention/speaker-mention-scan.webp)
 
 ### 在需要生效的微信群中有发言时，日志中会打出该微信群的名称和id，从日志中获取对应微信群id
 
-  ![获取微信群id](/assets/2020/wechaty-speaker-mention/speaker-mention-get-wxg-id.png)
+  ![获取微信群id](/assets/2020/wechaty-speaker-mention/speaker-mention-get-wxg-id.webp)
 
 ### 关闭服务
 
@@ -76,7 +74,7 @@ MENTION_TEXT=不要过度发言
 
 ### 在微信群中发言效果
 
-   ![获取微信群id](/assets/2020/wechaty-speaker-mention/speaker-mention-result.png)
+   ![获取微信群id](/assets/2020/wechaty-speaker-mention/speaker-mention-result.webp)
 
 ## 结语
 

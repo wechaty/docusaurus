@@ -138,7 +138,6 @@ async function main () {
   }, 1000* 10)
   setInterval(async function () {
 
-
       if(imagehref0 != '') {
         let fileBox0 = FileBox.fromUrl(imagehref0)
 
@@ -157,7 +156,6 @@ async function main () {
       }
     }, 1000 * 10)
 }
-
 
 ```
 
@@ -184,7 +182,7 @@ import { PuppetPadplus } from 'wechaty-puppet-padplus'
 
 // You can safely ignore the next line because it is using for CodeSandbox
 require('./.code-sandbox.js')
-const fs = require('fs')
+import fs  from 'fs'
 
 const token = 'puppet_padplus_xxxxxx'
 const puppet = new PuppetPadplus({
@@ -294,7 +292,6 @@ async function main () {
   )
   }, 1000* 10)
   setInterval(async function () {
-
 
       if(imagehref0 != '') {
         let fileBox0 = FileBox.fromUrl(imagehref0)

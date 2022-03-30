@@ -7,12 +7,8 @@ tags:
   - wechaty-puppet-wechat
   - web-protocol
   - go
-image: /assets/2021/04-go-wechaty-use-web/struct.png
+image: /assets/2021/04-go-wechaty-use-web/struct.webp
 ---
-
-> 作者: [dchaofei](https://github.com/dchaofei)，go开发工程师，go-wechaty 作者
-
-<!-- more -->
 
 写这篇文章的原因: 最近发现 web 协议以某种方式又复活了，所以想让 go-wechaty 的小伙伴也能使用 web 协议。
 
@@ -25,7 +21,7 @@ image: /assets/2021/04-go-wechaty-use-web/struct.png
 `申请token` 或者`购买token`。
 
 go-wechaty 与 服务提供商的交互如下图
-![交互图](/assets/2021/04-go-wechaty-use-web/struct.png)
+![交互图](/assets/2021/04-go-wechaty-use-web/struct.webp)
 
 1. go-wecahty 首先会用之前我们购买或申请的 token 通过网关获取到服务提供商 token 所对应的服务器地址
 2. 然后用获取到的服务器地址与 puppet 服务进行直接连接
@@ -89,7 +85,7 @@ User 微信昵称 logined
 ```
 
 然后我们向机器人发送一个 ding, 机器人就会回复一个 dong
-![ding-dong](/assets/2021/04-go-wechaty-use-web/ding.jpeg)
+![ding-dong](/assets/2021/04-go-wechaty-use-web/ding.webp)
 
 如果启动机器人不想依赖环境变量，也可以写在代码里
 
@@ -109,3 +105,5 @@ var bot = wechaty.NewWechaty(wechaty.WithPuppetOption(wp.Option{
 - web协议复活: [https://wechaty.js.org/2021/04/13/wechaty-uos-web/](https://wechaty.js.org/2021/04/13/wechaty-uos-web/)
 - Go Wechaty Getting Started: [https://wechaty.js.org/docs/polyglot/go/](https://wechaty.js.org/docs/polyglot/go/)
 - puppet-providers: [https://wechaty.js.org/docs/puppet-providers/wechat](https://wechaty.js.org/docs/puppet-providers/wechat)
+
+> 作者: [dchaofei](https://github.com/dchaofei)，go开发工程师，go-wechaty 作者

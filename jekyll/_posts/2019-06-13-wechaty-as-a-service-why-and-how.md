@@ -9,8 +9,6 @@ tags:
   - utility
 ---
 
-> Author: [qhduan](https://github.com/qhduan/), A Deamer.
-
 [代码](https://github.com/deepdialog/Wechaty-as-a-service)
 
 这里作者分享一下为什么要做这个Wechaty-As-A-Service的东东，它如何将Wechaty服务化，在什么场景下应用的。
@@ -49,13 +47,12 @@ Wechaty是对接微信的工具，这个工具在今天已经很成熟，也有�
 首先`bot-worker.js`的实现代码类似这样：
 
 ```JavaScript
-const process = require('process')
-const { Wechaty } = require('Wechaty')
-const { parentPort } = require('worker_threads');
+import process  from 'process'
+import { Wechaty }  from 'Wechaty'
+import { parentPort }  from 'worker_threads';
 
 // bot实例
 const bot = Wechaty.instance({profile: 'Wechaty-bot'}) // Global Instance
-
 
 // 这里几个函数是分别将Wechaty的几个类序列化（这里并不完全，只取了作者需要的信息）
 // 序列化Message类（消息）
@@ -128,7 +125,6 @@ parentPort.on('message', async message => {
     }
 })
 
-
 bot
 .on('scan', (qrcode, status) => {
     qrurl = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrcode)}`
@@ -179,13 +175,12 @@ bot
 主线程代码
 
 ```JavaScript
-const process = require('process')
-const Koa = require('koa')
-const Router = require('koa-trie-router')
-const bodyParser = require('koa-bodyparser')
-const { Worker } = require('worker_threads')
-const _ = require('lodash')
-
+import process  from 'process'
+import Koa  from 'koa'
+import Router  from 'koa-trie-router'
+import bodyParser  from 'koa-bodyparser'
+import { Worker }  from 'worker_threads'
+import lodash  from 'lodash'
 
 // 保存bot状态，以便被client轮询
 const botStatus = {
@@ -298,14 +293,14 @@ router
         }
         return
     }
-    if (!_.isString(ctx.request.body.name) && !_.isString(ctx.request.body.topic)) {
+    if (!lodash.isString(ctx.request.body.name) && !lodash.isString(ctx.request.body.topic)) {
         ctx.body = {
             ok: false,
             error: 'Invalid name or topic, must have one of them'
         }
         return
     }
-    if (!_.isString(ctx.request.body.text)) {
+    if (!lodash.isString(ctx.request.body.text)) {
         ctx.body = {
             ok: false,
             error: 'Invalid text'
@@ -336,9 +331,7 @@ import time
 import json
 import requests
 
-
 BOT_API = 'http://localhost:3010/api/'
-
 
 class WAAS(object):
     # 初始化bot，保存机器人服务api的地址
@@ -428,7 +421,6 @@ class WAAS(object):
 ```python
 from waas_client import WAAS
 
-
 # 消息回调函数
 def on_message(bot, msg):
     text = msg.get('text')  # 文本消息
@@ -439,7 +431,6 @@ def on_message(bot, msg):
     if text:
         # 发送信息
         bot.send_message(text, name=from_name, topic=room_topic)
-
 
 if __name__ == '__main__':
     """
@@ -474,3 +465,5 @@ if __name__ == '__main__':
 容错需要考虑错误的传播路径，好做但是比较繁琐。
 
 未来还是期待Wechaty推出gRPC功能，真正实现Wechaty-As-A-Service
+
+> Author: [qhduan](https://github.com/qhduan/), A Deamer.

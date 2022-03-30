@@ -4,13 +4,8 @@ author: jesseweb
 categories: project
 tags:
    - ecommerce
-image: /assets/2020/promote-bot/banner.png
+image: /assets/2020/promote-bot/banner.webp
 ---
-
-> 作者: [LegendaryJesse](https://github.com/JesseWeb)，悦享推广联合创始人，半路出家的程序员。
-> Code: [promote-bot](https://github.com/JesseWeb/promote-bot)
-
- <!-- more -->
 
 ## 一、项目背景
 
@@ -46,9 +41,9 @@ image: /assets/2020/promote-bot/banner.png
 ## 测试效果
 
 * 机器人相关操作
-    ![INVITE](/assets/2020/promote-bot/result.jpg)
+    ![INVITE](/assets/2020/promote-bot/result.webp)
 * 测试发送效果
-    ![INVITE](/assets/2020/promote-bot/result1.png)
+    ![INVITE](/assets/2020/promote-bot/result1.webp)
 
 ## 后续计划
 
@@ -63,3 +58,6 @@ image: /assets/2020/promote-bot/banner.png
 感谢[@huan](https://github.com/huan) 提供的代码思路以及编码风格。
 
 感谢[osschat](https://github.com/kaiyuanshe/osschat)提供的issue => wechat持续追踪。
+
+> 作者: [LegendaryJesse](https://github.com/JesseWeb)，悦享推广联合创始人，半路出家的程序员。
+> Code: [promote-bot](https://github.com/JesseWeb/promote-bot)

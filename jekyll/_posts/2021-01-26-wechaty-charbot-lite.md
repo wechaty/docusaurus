@@ -5,17 +5,12 @@ tags:
   - wechaty-charbot
   - productivity
 categories: project
-image: /assets/2021/01-wechaty-charbot-lite/1.png
+image: /assets/2021/01-wechaty-charbot-lite/1.webp
 ---
 
-> Author: [@zhoujian1028](https://github.com/zhoujian1028)
-> Code: [@zhoujian1028/wechaty-charbot](https://github.com/zhoujian1028/wechaty-charbot)
-
-## 前言
-
-  如今运维人员都在强调自动化，降低运维成本。尽管现在搭建一套运维自动化体系架构并不难，然后有些工作还是必须需要运维手动工作，比如上线动作（上线的过程自动化，但是操作点由谁来操作，比如jenkins上谁去点击构建），或者开发找dba执行sql等日常操作，这些暂时都必须人为手动操作。次数多了，难免会想这些怎么去实现自动化，无需人为干预！针对这些运维痛点，目前已实现qq机器人实现上述自动化操作。其背后的逻辑是，当@机器人后，机器人自动往运维平台接口post数据，在运维平台接口里解析指令并处理相关逻辑，最终返回给用户。
+如今运维人员都在强调自动化，降低运维成本。尽管现在搭建一套运维自动化体系架构并不难，然后有些工作还是必须需要运维手动工作，比如上线动作（上线的过程自动化，但是操作点由谁来操作，比如jenkins上谁去点击构建），或者开发找dba执行sql等日常操作，这些暂时都必须人为手动操作。次数多了，难免会想这些怎么去实现自动化，无需人为干预！针对这些运维痛点，目前已实现qq机器人实现上述自动化操作。其背后的逻辑是，当@机器人后，机器人自动往运维平台接口post数据，在运维平台接口里解析指令并处理相关逻辑，最终返回给用户。
   
-  为了实现在微信上实现同等功能，便开始在github上寻找微信机器人，直到看到Wechaty解决方案，它是适用于微信个人及企业微信的BotSDK，提供微信机器人完美解决方案。
+为了实现在微信上实现同等功能，便开始在github上寻找微信机器人，直到看到Wechaty解决方案，它是适用于微信个人及企业微信的BotSDK，提供微信机器人完美解决方案。
 
 ## Wechaty
 
@@ -27,7 +22,7 @@ image: /assets/2021/01-wechaty-charbot-lite/1.png
 ### 全球最短的ChatBot代码：6行JavaScript
 
 ```javascript
-const { Wechaty } = require('wechaty')
+import { Wechaty }  from 'wechaty'
 Wechaty.instance()
   .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrcode
   )}`))
@@ -48,7 +43,7 @@ Wechaty.instance()
 1. ### 安装Node.js
 
    node官网：<https://nodejs.org/zh-cn/>
-   Wechaty 要求Node.js版本10或以上，本环境使用的版本是nodev12.20.0 npm6.14.8。
+   Wechaty 要求Node.js版本10或以上，本环境使用的版本是nodev16.20.0 npm6.14.8。
 
 2. ### 运行Wechaty
 
@@ -71,3 +66,6 @@ Wechaty.instance()
 ## 最后
 
 此项目开源仅供技术产品交流。对于开发者来说Wechaty是个很棒的产品，感谢Wechaty作者提供该解决方案。
+
+> Author: [@zhoujian1028](https://github.com/zhoujian1028)
+> Code: [@zhoujian1028/wechaty-charbot](https://github.com/zhoujian1028/wechaty-charbot)

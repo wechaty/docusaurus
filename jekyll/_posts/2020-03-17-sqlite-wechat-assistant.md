@@ -4,14 +4,8 @@ author: moderncrazy
 categories: tutorial
 tags:
   - sqlite
-image: /assets/2020/sqlite-wechat/2020-03-sqlite-wechat-assistant.jpeg
+image: /assets/2020/sqlite-wechat/2020-03-sqlite-wechat-assistant.webp
 ---
-
-> 作者: [moderncrazy](https://github.com/moderncrazy)，个人开发者。首发于博客: [使用 SQLite 和 pullword 实现简易的业务助手](https://wechaty.github.io/sqlite-wechat-assistant/) 遵循 CC BY-NC-SA 3.0 CN
-
-[![WechatAssistant](/assets/2020/sqlite-wechat/2020-03-sqlite-wechat-assistant.jpeg)](https://github.com/moderncrazy/wechat_assistant)
-
-<!-- more -->
 
 需求之初是，希望有一个机器人能够替我们完成各种机械式的操作，来提高我们的工作效率。
 
@@ -211,3 +205,7 @@ async queryStatus(bot, message, msgData) {
 ## 感谢
 
 在最后我们要感谢所有为我们提供工具和服务的团队和个人。特别感谢开源项目[Wechaty](https://github.com/wechaty/wechaty)团队和免费提供服务的[Pullword](http://api.pullword.com/)团队。
+
+> 作者: [moderncrazy](https://github.com/moderncrazy)，个人开发者。首发于博客: [使用 SQLite 和 pullword 实现简易的业务助手](https://wechaty.github.io/sqlite-wechat-assistant/) 遵循 CC BY-NC-SA 3.0 CN
+
+[![WechatAssistant](/assets/2020/sqlite-wechat/2020-03-sqlite-wechat-assistant.webp)](https://github.com/moderncrazy/wechat_assistant)

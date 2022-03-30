@@ -6,15 +6,10 @@ tags:
   - nodejs
   - code
   - travel
-image: /assets/2021/01-carpool-bot-with-wechaty-1/4.jpeg
+image: /assets/2021/01-carpool-bot-with-wechaty-1/4.webp
 ---
 
-> 作者: [Jelly](https://github.com/jellyZhang)
-> Code: [Github](https://github.com/JellyZhang/rw-helper-back)
-
-## 基于wechaty的拼车小程序（1）
-
-### 产品构想
+## 产品构想
 
 我的初步想法是：
 
@@ -125,15 +120,15 @@ image: /assets/2021/01-carpool-bot-with-wechaty-1/4.jpeg
 
 - 用户填写WechatId的界面。（因小程序不提供用户wechatId，需要用户手动填写）
 
-  ![Pic-1](/assets/2021/01-carpool-bot-with-wechaty-1/2.jpg)
+  ![Pic-1](/assets/2021/01-carpool-bot-with-wechaty-1/2.webp)
 
 - 用户发布拼车与加入拼车的界面：
 
-  ![Pic-1](/assets/2021/01-carpool-bot-with-wechaty-1/1.jpg)
+  ![Pic-1](/assets/2021/01-carpool-bot-with-wechaty-1/1.webp)
 
 - 用户进行「加入群聊」后，Bot将用户拉入群聊（bot视角）：
 
-  ![Pic-1](/assets/2021/01-carpool-bot-with-wechaty-1/3.jpg)
+  ![Pic-1](/assets/2021/01-carpool-bot-with-wechaty-1/3.webp)
 
 ### 项目相关
 
@@ -154,3 +149,6 @@ image: /assets/2021/01-carpool-bot-with-wechaty-1/4.jpeg
     - ……etc
 
   - 支持当用户发起「加入」时却未添加Bot未好友时，Bot能主动发起「好友请求」
+
+> 作者: [Jelly](https://github.com/jellyZhang)
+> Code: [Github](https://github.com/JellyZhang/rw-helper-back)

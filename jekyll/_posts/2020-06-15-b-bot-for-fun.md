@@ -5,11 +5,8 @@ categories: project
 tags:
   - padplus
   - social
-image: /assets/2020/paipiange-bot/1.png
+image: /assets/2020/paipiange-bot/1.webp
 ---
-
-> 作者: [generalbao](https://github.com/generalbao/)
-> Code: [Github](https://github.com/generalbao/paipiange-wechat-bot)
 
 [![Wechaty Badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
 [![Everything about Wechaty](https://img.shields.io/badge/Wechaty-%E5%BC%80%E6%BA%90%E6%BF%80%E5%8A%B1%E8%AE%A1%E5%88%92-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=134&status=done&style=none&width=134)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty)
@@ -130,11 +127,14 @@ yarn start
 
 ## 效果图
 
-![效果图](/assets/2020/paipiange-bot/1.png)
-![效果图](/assets/2020/paipiange-bot/2.png)
-![效果图](/assets/2020/paipiange-bot/4.png)
+![效果图](/assets/2020/paipiange-bot/1.webp)
+![效果图](/assets/2020/paipiange-bot/2.webp)
+![效果图](/assets/2020/paipiange-bot/4.webp)
 
 ## 致谢
 
 - 感谢[Wechaty](https://wechaty.github.io)团队提供这么好的一个工具，让我们开发者可以持续增强我们的国民级应用。希望能够有更多的人参与进来，来继续扩大wechaty的生态圈。
 - 感谢[juzibot](https://www.juzibot.com)提供的api-token
+
+> 作者: [generalbao](https://github.com/generalbao/)
+> Code: [Github](https://github.com/generalbao/paipiange-wechat-bot)

@@ -110,7 +110,7 @@ docker run -ti \
 
 ``` json
 {
-    "ip": "122.233.170.88",
+    "host": "122.233.170.88",
     "port": 8788
 }
 ```
@@ -158,7 +158,6 @@ os.environ['WECHATY_LOG_FILE_KEY'] = '一个日志文件的绝对路径'  # 如�
 LOG_FORMAT = "%(asctime)s - %(levelname)s - %(message)s"
 logging.basicConfig(filename='../logs/wechaty_run_server_error.log', format=LOG_FORMAT, level=logging.INFO )
 
-
 class MyBot(Wechaty):
 
     async def on_scan(self, qr_code: str, status: ScanStatus,
@@ -196,7 +195,6 @@ class MyBot(Wechaty):
                 name='ding-dong.webp')
             await conversation.say(file_box)
 
-
 class BotPlugin(WechatyPlugin):
     @property
     def name(self) -> str:
@@ -207,14 +205,12 @@ class BotPlugin(WechatyPlugin):
         """send message  plugin scheduler"""
         pass
 
-
     async def init_plugin(self, wechaty: Wechaty):
         """init plugin"""
         await super().init_plugin(wechaty)
         scheduler = AsyncIOScheduler()
         scheduler.add_job(self.tick, 'cron')
         scheduler.start()
-
 
 async def main():
     """

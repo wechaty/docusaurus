@@ -6,7 +6,7 @@ tags:
   - news
   - puppet-provider
   - official-account
-image: /assets/2020/official-account/wechaty-puppet-official-account.png
+image: /assets/2020/official-account/wechaty-puppet-official-account.webp
 ---
 
 Developing a customized WeChat official account is a complex process, which requires reading a lot of documents. Especially, developing a robot with a custom reply function based on WeChat official account, and wechaty is good at solving such problems, so we have this puppet.

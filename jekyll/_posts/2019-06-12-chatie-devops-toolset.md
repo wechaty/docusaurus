@@ -7,10 +7,8 @@ tags:
   - devops
   - npm
   - news
-image: /assets/2019/chatie-devops-toolset.gif
+image: /assets/2019/chatie-devops-toolset.webp
 ---
-
-> Author: [huan](https://github.com/huan/), A DevOps fan.
 
 The powerful and easy to use Chatie DevOps Toolset:
 
@@ -29,7 +27,7 @@ So, I'd like to introduce them to the community, and also it's a quick sheet to 
 
 ## 1. [@chatie/tsconfig](https://github.com/chatie/tsconfig)
 
-![@chatie/tsconfig](/assets/2019/chatie-tsconfig.jpg)
+![@chatie/tsconfig](/assets/2019/chatie-tsconfig.webp)
 
 This module enables other module to inheritance tsconfig.json via Node.js packages.
 
@@ -73,7 +71,7 @@ After extends from @chatie/tsconfig from your tsconfig.json, you will have the c
 
 ## 2. [@chatie/eslint-config](https://github.com/chatie/eslint-config)
 
-![@chatie/eslint-config](/assets/2019/chatie-eslint-config.jpg)
+![@chatie/eslint-config](/assets/2019/chatie-eslint-config.webp)
 
 ESLint Sharable Rules in TypeScript Standard Style.
 
@@ -93,7 +91,7 @@ Then you are all set. `./node_modules/.bin/eslint` will work and follow the @cha
 
 ## 3. [@chatie/git-scripts](https://github.com/chatie/git-scripts)
 
-![@chatie/git-scripts](/assets/2019/chatie-git-scripts.gif)
+![@chatie/git-scripts](/assets/2019/chatie-git-scripts.webp)
 
 Git Hooks Integration for Chatie Projects.
 
@@ -113,7 +111,7 @@ By adding the following json entrance to package.json:
 
 ## 4. [@chatie/semver](https://github.com/chatie/semver)
 
-![@chatie/semver](/assets/2019/chatie-semver.png)
+![@chatie/semver](/assets/2019/chatie-semver.webp)
 
 The Enhanced Semantic Versioner for NPM.
 
@@ -148,7 +146,7 @@ See also: <https://github.com/wechaty/wechaty/issues/905>
 
 ## 5. [tstest](https://github.com/huan/tstest)
 
-![tstest](/assets/2019/tstest.png)
+![tstest](/assets/2019/tstest.webp)
 
 A pytest in TypeScript
 
@@ -158,7 +156,7 @@ However, currently, it's only a wrapper of [blue-tape](https://github.com/spion/
 
 ## 6. [pkg-jq](https://github.com/huan/pkg-jq)
 
-![pkg-jq](/assets/2019/pkg-jq.gif)
+![pkg-jq](/assets/2019/pkg-jq.webp)
 
 Find the nearest package.json then deal with jq syntax on it. (in-line edit supported!)
 
@@ -220,7 +218,6 @@ fi
 # package.json jq modification util
 npm install --save-dev pkg-jq
 
-
 #
 # @chatie/tsconfig
 #
@@ -234,7 +231,6 @@ npm uninstall \
   typescript \
 
 npm install --save-dev @chatie/tsconfig
-
 
 #
 # @chatie/eslint-config
@@ -296,3 +292,5 @@ npm install --save-dev \
 npx pkg-jq -i '.publishConfig.tag="next"'
 
 ```
+
+> Author: [huan](https://github.com/huan/), A DevOps fan.

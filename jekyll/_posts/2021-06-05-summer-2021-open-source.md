@@ -9,17 +9,16 @@ tags:
   - news
   - meetup
   - featured
+  - ospp
+  - ospp-admin
 image: /assets/2021/06-summer-2021-open-source/001.webp
 ---
-
-> 作者:[windmemory](https://github.com/windmemory)
-
-<!-- more -->
-![intro](/assets/2021/06-summer-2021-open-source/002.webp)
 
 ## 自我介绍
 
 高原：句子互动联合创始人&CTO，开源项目Wechaty commiter，前亚马逊，Expedia工程师，Bot Friday联合发起人。
+
+![intro](/assets/2021/06-summer-2021-open-source/002.webp)
 
 ## Wechaty开源之路直播纪实
 
@@ -147,3 +146,5 @@ Puppet巨大的好处：不改动任何业务逻辑代码，切换环境变量�
 
 如果有人有兴趣一起加入，一起来在企业级的scrm软件上面为营销过程提效的话，欢迎大家联系我，我们一起聊一聊能否一起合作。
 ![intro](/assets/2021/06-summer-2021-open-source/008.webp)
+
+> 作者:[windmemory](https://github.com/windmemory)

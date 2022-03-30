@@ -4,12 +4,8 @@ author: itingle
 categories: tutorial
 tags:
   - assistant
-image: /assets/2020/12-wechaty-robot-lite/example-1.png
+image: /assets/2020/12-wechaty-robot-lite/example-1.webp
 ---
-
-## 介绍
-
-### 前言
 
 最近在dy上看到有相关wx机器人（SCRM）在进行相关推广，而之前学习的时候，用基于python开发的itchat玩过一段时间，后来，某一天突然发现微信登不上了，官方的微信网页版也不能登陆了（至于是啥原因，咱也不知道，也不敢去研究）。
 
@@ -20,7 +16,7 @@ image: /assets/2020/12-wechaty-robot-lite/example-1.png
 
 老规矩，先撩姐（????）
 
-### 简介：
+## 简介：
 
 * [官方（git）](https://github.com/wechaty)
 * 语言：node(TypeScript )，python，java（项目多是支持node，一些是开源了python和java；看issues说是node项目支持的更完美~~咱也没细究）
@@ -30,7 +26,7 @@ image: /assets/2020/12-wechaty-robot-lite/example-1.png
 * 收费：官方发布是200￥/号/月，具体→[传送门(点它)](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty#3%E4%BB%98%E8%B4%B9Token%E7%9B%B4%E6%8E%A5%E5%92%A8%E8%AF%A2%E5%95%86%E5%8A%A1%E8%B4%AD%E4%B9%B0)
 * 说明：官方声明，一个token原则上只能同时在线一个微信号，这里的意思就有意味了。这个token不会绑定你的微信号，但是呢，只能同时在线一个微信，你要是想做n个微信的私域，那就需要n个token
 
-### 学习：
+## 学习：
 
 * 我这里的项目是基于[wechaty-puppet-service](https://github.com/wechaty/wechaty-puppet-service)
 * [官方API文档](https://wechaty.js.org/docs/api/)（很重要！！！一定要先看文档再下手，如果要基于这个开发，一定要把它当作手册）
@@ -57,7 +53,7 @@ image: /assets/2020/12-wechaty-robot-lite/example-1.png
   * [wechaty-puppet-padplus](https://www.lizenghai.com/goto/?url=https://github.com/wechaty/wechaty-puppet-padplus)：基于ipad协议的微信机器人
   * [wechaty-puppet-service](https://github.com/wechaty/wechaty-puppet-service)：基于windows协议的机器人
 
-### 初步需求：
+## 初步需求：
 
 * 关键字自动通过好友验证
   * 当有人添加机器人时，判断验证消息关键字后通过或直接通过
@@ -78,7 +74,7 @@ image: /assets/2020/12-wechaty-robot-lite/example-1.png
   * 通过socket实时向前台推送还有消息
   * 实现前台向好友发送消息
 
-### 项目结构：
+## 项目结构：
 
 ```bash
 |--bin/
@@ -196,7 +192,6 @@ module.exports = {
 var io = require('../socketio');
 io.getSocketio(server);
 
-
 /**
  * Create puppet_donut server.
  */
@@ -216,7 +211,7 @@ socket服务**socketio.js**文件
 ```javascript
 
 var socketio = {};
-const common = require('./common');
+import common  from './common';
 
 // 获取io
 
@@ -305,7 +300,7 @@ donut服务**donut.js**文件
 
 ```javascript
 
-const { FileBox } = require("wechaty");
+import { FileBox }  from 'wechaty';
 
 var puppet_donut = {};
 
@@ -372,16 +367,16 @@ puppet_donut.sendMiniProgramMsgToContact = async function(friendName, username, 
 //初始化调用
 puppet_donut.run = function(){
 
-    const { Wechaty } = require('wechaty');
-    const { ScanStatus } = require('wechaty-puppet');
-    const QrcodeTerminal = require('qrcode-terminal');
-    const io = require('./socketio');
-    const config = require("./config");
+    import { Wechaty }  from 'wechaty';
+    import { ScanStatus }  from 'wechaty-puppet';
+    import QrcodeTerminal  from 'qrcode-terminal';
+    import io  from './socketio';
+    import config  from './config';
 
-    const onRoomJoin = require("./wechaty/onRoomJoin");     // 加入房间监听回调
-    const onRoomLeave = require("./wechaty/onRoomLeave");   // 退出房间监听回调
-    const onMessage = require("./wechaty/onMessage");       // 消息监听回调
-    const onFriendShip = require("./wechaty/onFriendShip"); // 好友添加监听回调
+    import onRoomJoin  from './wechaty/onRoomJoin';     // 加入房间监听回调
+    import onRoomLeave  from './wechaty/onRoomLeave';   // 退出房间监听回调
+    import onMessage  from './wechaty/onMessage';       // 消息监听回调
+    import onFriendShip  from './wechaty/onFriendShip'; // 好友添加监听回调
 
     const token = config.token;
 
@@ -501,7 +496,7 @@ puppet_donut.sendTextMsgToContact = async function(friendName, text){
 这里代码较简单，意思是前面通过
 
 ```javascript
-const QrcodeTerminal = require('qrcode-terminal');
+import QrcodeTerminal  from 'qrcode-terminal';
 ```
 
 引用qrcode-terminal模块，用于在终端进行二维码输出，方便我们测试扫码；
@@ -510,11 +505,11 @@ const QrcodeTerminal = require('qrcode-terminal');
 
 这边有一个坑，在webstorm上打码的时候，在终端输出的二维码是这样的，
 
-![alt text](/assets/2020/12-wechaty-robot-lite/qrcode-login-error.png "qrcode-login-error")
+![alt text](/assets/2020/12-wechaty-robot-lite/qrcode-login-error.webp "qrcode-login-error")
 
 这时候我们需要把这些字符串复制到码农神器notepad++里，如下图
 
-![alt text](/assets/2020/12-wechaty-robot-lite/qrcode-login.png "qrcode-login")
+![alt text](/assets/2020/12-wechaty-robot-lite/qrcode-login.webp "qrcode-login")
 
 然后进行扫码登录；
 
@@ -529,10 +524,10 @@ const QrcodeTerminal = require('qrcode-terminal');
 这里我看了官方文档，可实现的业务很多，大家可参考官方api进行更多业务拓展！！！
 
 ```javascript
-const { Friendship } = require("wechaty");
+import { Friendship }  from 'wechaty';
 // 配置文件
-const config = require("../config");
-const io = require('../socketio');
+import config  from '../config';
+import io  from '../socketio';
 // 好友添加验证消息自动同意关键字数组
 const addFriendKeywords = config.personal.addFriendKeywords;
 
@@ -580,8 +575,8 @@ module.exports = async function onFriendShip(friendship) {
 
 ```javascript
 // 配置文件
-const config = require("../config");
-const io = require('../socketio');
+import config  from '../config';
+import io  from '../socketio';
 // 加入房间回复
 const roomJoinReply = config.room.roomJoinReply;
 // 管理群组列表
@@ -631,7 +626,7 @@ module.exports = async function onRoomJoin(room, inviteeList, inviter) {
 监听用户退出群聊
 
 ```javascript
-const io = require('../socketio');
+import io  from '../socketio';
 // 进入房间监听回调 room-群聊 leaver-退群者
 module.exports = async function onRoomLeave(room, leaver) {
     console.log("群-【" + room.name + "】：" + leaver + " 退群");
@@ -912,7 +907,7 @@ function requestRobot(info) {
 
 这里为了体验下机器人的代入感，做了个前端demo（很简陋，这里别吐槽。。。就是为了和socket结合一起实时看效果；忽略右上角的红x...调试时中断服务的原因...）
 
-![alt text](/assets/2020/12-wechaty-robot-lite/web-example.png "web-example")
+![alt text](/assets/2020/12-wechaty-robot-lite/web-example.webp "web-example")
 
 这里简介下**nodejs express socketio**的一些使用
 
@@ -924,7 +919,7 @@ function requestRobot(info) {
 
 会直接调用接口/socket.io目录下的js文件，实际调用到modules目录下的文件
 
-![alt text](/assets/2020/12-wechaty-robot-lite/code-structure.png "code-structure")
+![alt text](/assets/2020/12-wechaty-robot-lite/code-structure.webp "code-structure")
 
 前端建立socket连接
 
@@ -1004,7 +999,7 @@ io.sockets.on('connection', function (socket) {});
 * 关于socketio，和nodejs结合在一起，体验nodejs的异步非阻塞，简直要起了飞；
 * 环境
   * 系统：win7、centos7.6成功运行
-  * nodejs版本：windows下调试：v12.16.2；centos：v10.16.0；（wechaty对node版本有要求，不同协议版本最低要求不一致，大家自行参考开源说明和官方文档）
+  * nodejs版本：windows下调试：v16.16.2；centos：v10.16.0；（wechaty对node版本有要求，不同协议版本最低要求不一致，大家自行参考开源说明和官方文档）
 * 代码
   * 主要是抽空码出来的，没有太多时间优化
   * 有一些业务代码写好了，但是并没有接入使用，欢迎大家补充
@@ -1044,10 +1039,10 @@ io.sockets.on('connection', function (socket) {});
 
 ### 效果截图
 
-![alt text](/assets/2020/12-wechaty-robot-lite/example-1.png "example-1")
+![alt text](/assets/2020/12-wechaty-robot-lite/example-1.webp "example-1")
 
-![alt text](/assets/2020/12-wechaty-robot-lite/example-2.png "example-2")
+![alt text](/assets/2020/12-wechaty-robot-lite/example-2.webp "example-2")
 
-![alt text](/assets/2020/12-wechaty-robot-lite/example-3.png "example-3")
+![alt text](/assets/2020/12-wechaty-robot-lite/example-3.webp "example-3")
 
 待完结

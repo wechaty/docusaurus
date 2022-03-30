@@ -6,10 +6,10 @@ tags:
   - windows
   - install
   - news
-image: /assets/2018/wechaty-installation-in-windows.png
+image: /assets/2018/wechaty-installation-in-windows.webp
 ---
 
-![在 Windows 10 下安装 Wechaty](/assets/2018/wechaty-installation-in-windows.png)
+![在 Windows 10 下安装 Wechaty](/assets/2018/wechaty-installation-in-windows.webp)
 
 感谢 @huan @lijiarui 让我在此分享我在 Windows 10 Home 平台安装 Wechaty 的经历，希望我对安装过程的记录和分析能帮助在此平台下安装 Wechaty 的人。
 
@@ -62,14 +62,12 @@ cd wechaty-getting-started
 Microsoft Windows [版本 10.0.16299.492]
 (c) 2017 Microsoft Corporation。保留所有权利。
 
-
 D:\code>cd wechaty-getting-started
 
 D:\code\wechaty-getting-started>npm install
 npm notice created a lockfile as package-lock.json. You should commit this file.
 added 134 packages from 94 contributors and audited 324 packages in 22.581s
 found 0 vulnerabilities
-
 
 D:\code\wechaty-getting-started>npm start
 
@@ -82,7 +80,6 @@ D:\code\wechaty-getting-started>npm start
 npm:
 > node-expat@2.3.16 install D:\code\wechaty-getting-started\node_modules\wechaty\node_modules\node-expat
 > node-gyp rebuild
-
 
 npm:
 D:\code\wechaty-getting-started\node_modules\wechaty\node_modules\node-expat>if not defined npm_config_node_gyp (node "D:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin\\..\..\node_modules\node-gyp\bin\node-gyp.js" rebuild )  else (node "D:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\bin\node-gyp.js" rebuild )
@@ -114,7 +111,6 @@ npm WARN wechaty-puppet-puppeteer@0.4.2 requires a peer of rx-queue@^0.4.26 but 
 npm WARN wechaty-puppet-puppeteer@0.4.2 requires a peer of state-switch@^0.6.2 but none is installed. You must install peer dependencies yourself.
 npm WARN wechaty-puppet-puppeteer@0.4.2 requires a peer of watchdog@^0.8.10 but none is installed. You must install peer dependencies yourself.
 npm WARN wechaty-puppet-puppeteer@0.4.2 requires a peer of wechaty-puppet@^0.6.4 but none is installed. You must install peer dependencies yourself.
-
 
 npm: npm ERR!
 npm:  code ELIFECYCLE

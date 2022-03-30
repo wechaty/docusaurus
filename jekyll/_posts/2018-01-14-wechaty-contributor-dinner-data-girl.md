@@ -5,7 +5,7 @@ categories: event
 tags:
   - meetup
   - news
-image: /assets/2018/wechaty-contributor-dinner-data-girl.jpg
+image: /assets/2018/wechaty-contributor-dinner-data-girl.webp
 ---
 
 > This Wechaty Contributors Dinner is sponsored by Data Girl.
@@ -25,17 +25,4 @@ The above contributors are:
 
 ## Introduction Video
 
-<div class="video-container" style="
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MrlO0gjDe-E" frameborder="0" allowfullscreen="" style="
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-"></iframe></div>
+{% include iframe.html src="https://www.youtube.com/watch?v=MrlO0gjDe-E" %}

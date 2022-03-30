@@ -60,6 +60,8 @@ const puppetProviders: SubMenuData = {
     'puppet-providers/padlocal',
     'puppet-providers/wechat4u',
     'puppet-providers/xp',
+    'puppet-providers/oicq',
+    'puppet-providers/simplepad',
     'puppet-providers/service',
     'puppet-providers/mock',
     'puppet-providers/diy',
@@ -74,8 +76,10 @@ const puppetServices: SubMenuData = {
     'puppet-services/padlocal',
     'puppet-services/paimon',
     'puppet-services/donut',
+    'puppet-services/tokens',
     'puppet-services/compatibility',
     'puppet-services/diy',
+    'puppet-services/faq',
   ]
 }
 
@@ -88,6 +92,7 @@ const specs: SubMenuData = {
     'specs/puppet',
     'specs/service',
     'specs/token',
+    'specs/gateway',
   ],
 }
 
@@ -95,6 +100,7 @@ const contributing: SubMenuData = {
   label: 'Contributing',
   items: [
     'contributing/overview',
+    'contributing/code-of-conduct',
     'contributing/new-contributors',
     'contributing/documentation',
     'contributing/contributor-program',
@@ -102,6 +108,7 @@ const contributing: SubMenuData = {
     'contributing/pulls',
     'contributing/blog',
     'contributing/coding',
+    'contributing/getting-help',
     'contributing/git',
     'contributing/issues',
     'contributing/testing',
@@ -212,6 +219,8 @@ const introduction = {
   items: [
     'overview',
     'wechaty',
+    'what-can-you-do-with-wechaty',
+    'who-is-using-wechaty',
     'getting-started-with-wechaty',
     'main-concepts-in-wechaty',
     subMenu(showcases),
@@ -243,33 +252,24 @@ const introduction = {
 const advanced = {
   label: 'Advanced',
   items: [
-    'examples/advanced/demo-in-tutorial',
     'examples/advanced/busy-bot',
     'examples/advanced/media-file-bot',
     'examples/advanced/room-bot',
     'examples/advanced/friend-bot',
-    'examples/advanced/gist-bot',
   ],
 }
 
 const professional = {
   label: 'Professional',
   items: [
-    'examples/professional/hot-import-bot',
     'examples/professional/ctrl-c-signal-bot',
-    'examples/professional/monster-bot',
-    'examples/professional/api-ai-bot',
-    'examples/professional/speech-to-text-bot',
     'examples/professional/tuling123-bot',
-    'examples/professional/telegram-roger-bot',
-    'examples/professional/blessed-twins-bot',
   ],
 }
 
  const examples = {
   label: 'Examples',
   items: [
-    'examples/overview',
     subMenu(basic),
     subMenu(advanced),
     subMenu(professional),
@@ -297,8 +297,58 @@ const tutorials = {
     subMenu(usingPluginWithWechaty),
     'tutorials/using-vorpal-with-wechaty',
     subMenu(usingReduxWithWechaty),
-    'tutorials/cheatsheet',
     subMenu(examples),
+  ],
+}
+
+/*********************************
+ *
+ * How-to-guide
+ *
+ */
+ const WeChatPuppet: SubMenuData = {
+  label: 'Deploy in Wechat Puppet',
+  items: [
+    'howto/deploy-padlocal',
+    'howto/deploy-wechat4u',
+  ],
+}
+
+const AddEvents: SubMenuData = {
+  label: 'Add events to the bot',
+  items: [
+    'howto/event',
+  ],
+}
+
+const AddFunctionality: SubMenuData = {
+  label: 'Add functionality to the bot',
+  items: [
+    'howto/message',
+    'howto/contact',
+    'howto/room',
+    'howto/friendship',
+    'howto/file-box',
+  ],
+}
+
+const DeployIM: SubMenuData = {
+  label: 'Deploy on IM platform',
+  items: [
+    'howto/deploy-wechat',
+    subMenu(WeChatPuppet),
+    'howto/deploy-whatsapp',
+    'howto/deploy-lark',
+    'howto/deploy-gitter',
+    'howto/wechat-official',
+  ],
+}
+
+const DeployContainers: SubMenuData = {
+  label: 'Deploy with Containers',
+  items: [
+    'howto/heroku',
+    'howto/docker',
   ],
 }
 
@@ -306,15 +356,10 @@ const howtos = {
   label: 'How-to Guides',
   items: [
     'howto/overview',
-    'howto/install',
-    'howto/wechaty',
-    'howto/event',
-    'howto/message',
-    'howto/contact',
-    'howto/room',
-    'howto/friendship',
-    'howto/file-box',
-    'howto/testing',
+    subMenu(AddEvents),
+    subMenu(AddFunctionality),
+    subMenu(DeployIM),
+    subMenu(DeployContainers),
   ],
 }
 
@@ -327,34 +372,38 @@ const references = {
     subMenu(puppetProviders),
     subMenu(puppetServices),
     subMenu(specs),
-    'references/deprecations',
+    'references/breaking-changes',
   ]
 }
 
-const explainations = {
-  label: 'Explainations',
+const explanations = {
+  label: 'Explanations',
   items: [
-    'explainations/overview',
-    'explainations/conversational',
-    'explainations/rpa',
-    'explainations/motivations',
-    'explainations/concepts',
-    'explainations/architecture',
-    'explainations/lifecycle',
-    'explainations/alternatives',
-    'explainations/glossary',
-    'explainations/faq',
-    'explainations/troubleshooting',
+    'explanations/overview',
+    'explanations/rpa',
+    'explanations/concepts',
+    'explanations/architecture',
+    'explanations/alternatives',
+    'explanations/glossary',
+    'explanations/devops-toolset',
+    'explanations/sdk-cui',
+    'explanations/testing',
+    'explanations/faq',
+    'explanations/troubleshooting',
     subMenu(docusaurus),
   ],
 }
 
 const docs = {
+  // By default, Docusaurus generates a sidebar from the docs folder structure
+  // tutorialSidebar: [{type: 'autogenerated', dirName: '.'}],
+
+  // But you can create a sidebar manually
   [introduction.label]  : [...introduction.items],
   [tutorials.label]     : [...tutorials.items],
   [howtos.label]        : [...howtos.items],
   [references.label]    : [...references.items],
-  [explainations.label] : [...explainations.items],
+  [explanations.label] : [...explanations.items],
 }
 
 export { docs }

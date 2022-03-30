@@ -6,17 +6,14 @@ tags:
   - news
   - java
   - featured
-image: /assets/2020/java-wechaty/2020-06-15-java-wechaty.png
+image: /assets/2020/java-wechaty/2020-06-15-java-wechaty.webp
 ---
-
-> Author: [@diaozxin007](https://github.com/diaozxin007) The author of Java-wechaty
-> Code: [@Java-wechaty](https://github.com/wechaty/java-wechaty)
 
 终于有一个 Java 版的微信机器人了。
 
 公众号很久没有更新了。主要两个原因，换了工作之后，第一，要花更多的时间去了解和学习新的业务。第二，我最近把几乎所有的业余时间都来写这个 Java 版的微信机器人了。
 
-![java-wechaty](/assets/2020/java-wechaty/2020-06-15-java-wechaty.png)
+![java-wechaty](/assets/2020/java-wechaty/2020-06-15-java-wechaty.webp)
 
 ## Wechaty 是什么
 
@@ -174,3 +171,6 @@ Wechaty 给学生们提供了很多有意思的题目，比如：
 ## 后记
 
 Java-wechaty [项目地址](https://github.com/wechaty/java-wechaty)。 加入我们你也可以六行代码写一个微信机器人。
+
+> Author: [@diaozxin007](https://github.com/diaozxin007) The author of Java-wechaty
+> Code: [@Java-wechaty](https://github.com/wechaty/java-wechaty)

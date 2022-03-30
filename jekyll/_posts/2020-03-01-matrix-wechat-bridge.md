@@ -5,14 +5,8 @@ categories: tutorial
 tags:
   - matrix
   - featured
-image: /assets/2020/matrix-wechaty/2020-03-matrix-appservice-wechaty.png
+image: /assets/2020/matrix-wechaty/2020-03-matrix-appservice-wechaty.webp
 ---
-
-> 作者: [立音](https://github.com/cubesky)，个人开发者。首发于博客: [使用 Matrix 接收微信消息](https://liyin.date/2020/03/01/matrix-wechat-bridge/) 遵循 CC BY-NC-SA 3.0 CN
-
-[![Wechaty AppService Bridge for [Matrix]](/assets/2020/matrix-wechaty/2020-03-matrix-appservice-wechaty.png)](https://github.com/wechaty/matrix-appservice-wechaty)
-
-<!-- more -->
 
 我周围的人都知道我很讨厌微信————臃肿、慢速、开放性低而且还极其费电，于是呢我当然发挥裁剪流氓软件的能力，直接把微信的后台打了个半残，所以我周围的人一直说我微信经常找不到我，那是当然的，微信连后台都没了，能实时找得到我就怪了。  
 
@@ -188,3 +182,5 @@ You are not enable matrix-appservice-wechaty yet.
 非常感谢 [huan](https://github.com/huan) 开发的 [Wechaty](https://github.com/wechaty/wechaty)，让微信桥接和微信机器人有更多可能！
 
 同时我也推荐一下他开发的 [Docker-Wechat](https://github.com/huan/docker-wechat) ，用 Docker 解决了使用 Linux 微信比较麻烦的问题。想了想我用 CrossOver 安装微信，然后用起来还有一堆的 bug 就感觉这个真的非常好。
+
+> 作者: [立音](https://github.com/cubesky)，个人开发者。首发于博客: [使用 Matrix 接收微信消息](https://liyin.date/2020/03/01/matrix-wechat-bridge/) 遵循 CC BY-NC-SA 3.0 CN

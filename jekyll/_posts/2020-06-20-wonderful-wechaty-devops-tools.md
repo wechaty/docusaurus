@@ -8,11 +8,8 @@ tags:
   - talk
   - news
   - featured
-image: /assets/2020/wonderful-wechaty-devops-tools/teaser-image.png
+image: /assets/2020/wonderful-wechaty-devops-tools/teaser-image.webp
 ---
-
-> Author: [@windmemory](https://github.com/windmemory) Wechaty contributor, author of [wechaty-puppet-padchat](https://github.com/wechaty/wechaty-puppet-padchat), [wechaty-puppet-padpro](https://github.com/wechaty/wechaty-puppet-padpro), [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus). CTO of [Juzi.Bot](https://pre-angel.com/portfolios/juzibot/)
-> Code: [@chatie/semver](https://github.com/chatie/semver), [@chatie/git-scripts](https://github.com/chatie/git-scripts), [@chatie/tsconfig](https://github.com/chatie/tsconfig), [@chatie/eslint-config](https://github.com/chatie/eslint-config)
 
 Wechaty 的代码质量，是大家公认的比较高的水准。而在整个项目的搭建和发展的过程中，DevOps 工具是 Wechaty 代码质量的重要保证，这里，就和大家一起聊聊关于 Wechaty DevOps Toolset。
 
@@ -148,7 +145,10 @@ git push -u origin very-sexy-code-change
 
 `Wechaty` 的 devops 还有另外的一个重要组成部分，那就是 `Github Actions`，这篇博客由于时间原因，没有时间准备完整的内容，后续会持续更新更多关于 `Wechaty DevOps` 相关的内容，也欢迎大家一起来了解学习 `Wechaty DevOps`。
 
-[version-intro]: /assets/2020/wonderful-wechaty-devops-tools/version-intro.png
-[git-push-error]: /assets/2020/wonderful-wechaty-devops-tools/git-push-error.jpg
-[question-face]: /assets/2020/wonderful-wechaty-devops-tools/question-face.png
-[git-hooks-explain]: /assets/2020/wonderful-wechaty-devops-tools/git-hooks-explain.png
+[version-intro]: /assets/2020/wonderful-wechaty-devops-tools/version-intro.webp
+[git-push-error]: /assets/2020/wonderful-wechaty-devops-tools/git-push-error.webp
+[question-face]: /assets/2020/wonderful-wechaty-devops-tools/question-face.webp
+[git-hooks-explain]: /assets/2020/wonderful-wechaty-devops-tools/git-hooks-explain.webp
+
+> Author: [@windmemory](https://github.com/windmemory) Wechaty contributor, author of [wechaty-puppet-padchat](https://github.com/wechaty/wechaty-puppet-padchat), [wechaty-puppet-padpro](https://github.com/wechaty/wechaty-puppet-padpro), [wechaty-puppet-padplus](https://github.com/wechaty/wechaty-puppet-padplus). CTO of [Juzi.Bot](https://pre-angel.com/portfolios/juzibot/)
+> Code: [@chatie/semver](https://github.com/chatie/semver), [@chatie/git-scripts](https://github.com/chatie/git-scripts), [@chatie/tsconfig](https://github.com/chatie/tsconfig), [@chatie/eslint-config](https://github.com/chatie/eslint-config)

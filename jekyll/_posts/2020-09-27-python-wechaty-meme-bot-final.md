@@ -1,7 +1,7 @@
 ---
 title: "基于Python-wechaty建立一个斗图机器人 POC 结项博客"
 author: godkillerxiao
-image: /assets/2020/meme-bot/09-27-wechaty-meme-bot-0001.png
+image: /assets/2020/meme-bot/09-27-wechaty-meme-bot-0001.webp
 categories: project
 tags:
   - python
@@ -11,10 +11,6 @@ tags:
   - machine-learning
   - social
 ---
-
-<!--more-->
-
-## 暑期2020 基于Python-wechaty建立一个斗图机器人 POC 成果展示
 
 “开源软件供应链点亮计划-暑期2020”（以下简称 暑期2020）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
 旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
@@ -34,7 +30,7 @@ tags:
 
   1. 提取用户所发送表情包的内容；
 
-  2. 将提取内容送入GPT2对话模型，并根据对话系统输出判断下一步回应：利用互相关Loss在候选回答中按互相关Loss升序排序选出最符合语义的回答，如果回答能匹配数据库中已有表情则回复对应表情，否则直接使用提取内容匹配数据库内容；具体技术方案泳道图见下：![flow-chart](/assets/2020/meme-bot/09-27-flow-chart.png)
+  2. 将提取内容送入GPT2对话模型，并根据对话系统输出判断下一步回应：利用互相关Loss在候选回答中按互相关Loss升序排序选出最符合语义的回答，如果回答能匹配数据库中已有表情则回复对应表情，否则直接使用提取内容匹配数据库内容；具体技术方案泳道图见下：![flow-chart](/assets/2020/meme-bot/09-27-flow-chart.webp)
 
     更多细节可参见[项目README](https://github.com/MrZilinXiao/python-wechaty-meme-bot/blob/master/README.md).
 
@@ -63,8 +59,8 @@ tags:
 
   具有代表性的对话参见：
 
-  ![wechaty-meme-bot-0002](/assets/2020/meme-bot/09-27-wechaty-meme-bot-0001.png)
-  ![wechaty-meme-bot-0001](/assets/2020/meme-bot/09-27-wechaty-meme-bot-0002.png)
+  ![wechaty-meme-bot-0002](/assets/2020/meme-bot/09-27-wechaty-meme-bot-0001.webp)
+  ![wechaty-meme-bot-0001](/assets/2020/meme-bot/09-27-wechaty-meme-bot-0002.webp)
 
 - 遇到的问题及解决方案：
 

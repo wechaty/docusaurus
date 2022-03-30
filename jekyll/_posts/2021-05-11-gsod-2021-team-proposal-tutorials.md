@@ -11,7 +11,7 @@ tags:
   - project
   - proposal
   - team-proposal
-image: /assets/2021/05-gsod-2021-team-proposal-tutorials/wechaty-tutorials-proposal.png
+image: /assets/2021/05-gsod-2021-team-proposal-tutorials/wechaty-tutorials-proposal.webp
 ---
 
 This is the project proposal for creating and improving the **Wechaty Tutorials** documentation on which we will be working as a part of Google Season of Docs 2021. We are looking forward to completing this work during a span of **12 weeks** (or, 3 months).
@@ -32,7 +32,7 @@ I am Shwetal Soni, currently pursuing B.Tech in Computer Science and Engineering
 
 ## Abstract
 
-### Current State of WeChaty Tutorials
+### Current State of Wechaty Tutorials
 
 * Users come to Wechaty website seeking how to use Wechaty to build a chatbot application for solving their problems. Unfortunately, the learning curve is not friendly to our users, they always struggle with setting up their development environment, can not get started with the simplest example source code, and find it hard to know what they can do with our API. This problem leads to us losing lots of new users, increased number of questions asked in the community, and lowered user satisfaction.
 * The current version of the [Wechaty Tutorials](https://wechaty.js.org/docs/tutorials/) is not properly structured.
