@@ -37,15 +37,26 @@ Wechaty Community 与硬核桃社区强强联手，推出 5G Chatbot 开源 SDK 
 - 议程：
   1. 通信企协领导致辞——李旦
   1. 大咖分享-卓桓：开发者经历，面向微信生态创建 Wechaty 的初心和历程，面向 5G消息生态的思考，以及给开发者的建议
-  1. 开发者分享-瑞宁：开发者经历+基于硬核桃+wechaty SDK Walnut
+  1. 开发者分享-瑞宁：开发者经历+基于硬核桃 + Wechaty SDK Walnut
   1. 开发者分享-杨洋：5G消息 Chatbot 应用
-  1. 专家分享-硬核桃架构师-谌铎：做一个 5G消息 Geeker（协议、云服务等）
+  1. 专家分享-硬核桃架构师-谌铎：做一个 5G 消息 Geeker（协议、云服务等）
 
 ## 视频回放
 
 {% include iframe.html src="https://youtu.be/07CTMnngYog" %}
 
 > [Bilibili](https://space.bilibili.com/1764229974/)
+
+## Wechaty Puppet Walnut
+
+Github Repository: <https://github.com/wechaty/puppet-walnut>
+
+Blogs:
+
+- [成功结项！大学生的一小步，开发者的一大步, @Iron Conrad(康嘉), Nov 30, 2021](https://wechaty.js.org/2021/11/30/report-for-summer-2021/)
+- [Wechaty 社区 & 硬核桃社区：大学生玩转5G消息？So Easy！@lijiarui, Jul 30, 2021](https://wechaty.js.org/2021/07/30/walnut-5g-press/)
+-[基于5G平台开发puppet模块接入 Wechaty, @fabian, Dec 21, 2021](https://wechaty.js.org/2021/12/21/mid-term-wechaty-puppet-walnut-report/)
+- [开发支持电信运营商 5G Chatbot / RCS 的 Wechaty 接入 Puppet 模块, @张瑞宁, Oct 07, 2021](https://wechaty.js.org/2021/10/07/ospp-final-term-5g-chatbot-puppet/)
 
 ## 硬核桃5G消息开发者社区
 
