@@ -6,7 +6,7 @@ tags:
   - code
   - featured
   - entertainment
-image: /assets/2019/everyday-header.png
+image: /assets/2019/everyday-header.webp
 ---
 
 三步教你用Node做一个微信脱单神器，小白可上手！也可以用来哄女友，哄女(男\基)友我们程序猿(媛)是认真的
@@ -35,9 +35,9 @@ github: [https://github.com/gengchen528/wechatBot](https://github.com/gengchen52
 
 在三步走教学之前，先放上效果看一下
 
-![image](/assets/2019/everyday-1.png)
+![image](/assets/2019/everyday-1.webp)
 
-![image](/assets/2019/everyday-2.png)
+![image](/assets/2019/everyday-2.webp)
 
 可以看到在指定的时间就会收到发送的消息，包括天气信息，天气提醒，还有你们在一起多少天了。当开启机器人后，女朋友就可以和小助手对话了，不过目前开源机器人的api都不是非常的智能，匹配的语义可能不是那么准确。所以有时候女朋友生气了，千万记得不要开启机器人，不然回答的不对是会被女朋友暴打的😨！
 
@@ -58,11 +58,11 @@ node官网：[https://nodejs.org/zh-cn/](https://nodejs.org/zh-cn/)
 > Mac下安装node详细步骤参考 [https://blog.csdn.net/qq_32407233/article/details/83758899](https://blog.csdn.net/qq_32407233/article/details/83758899)
 > Linux下安装node详细步骤参考 [https://www.cnblogs.com/liuqi/p/6483317.html](https://www.cnblogs.com/liuqi/p/6483317.html)
 
-![image](/assets/2019/everyday-3.png)
+![image](/assets/2019/everyday-3.webp)
 
 安装完成后，按住`键盘的shift+鼠标右键`，选择在此处打开命令窗口。在命令行执行`node -v`出现版本号说明安装成功
 
-![image](/assets/2019/everyday-4.png)
+![image](/assets/2019/everyday-4.webp)
 
 ### 二、下载代码并配置
 
@@ -70,26 +70,26 @@ node官网：[https://nodejs.org/zh-cn/](https://nodejs.org/zh-cn/)
 
 * 访问此地址，直接下载zip包到本地桌面，然后解压；
 
-![image](/assets/2019/everyday-5.png)
+![image](/assets/2019/everyday-5.webp)
 
 * 进到目录中，找到`config`目录下的`index.js`文件
 
-![image](/assets/2019/everyday-6.png)
+![image](/assets/2019/everyday-6.webp)
 
-![image](/assets/2019/everyday-7.png)
+![image](/assets/2019/everyday-7.webp)
 
 * 选中`index.js`文件，右击选择打开方式，没有安装代码编辑器的可以用记事本打开。有代码编辑器的直接用代码编辑器打开,建议非开发人员可以下载一个`notepad++`，下载链接链接:[https://pan.baidu.com/s/1mWdEOaTQ1D6kihQveN1JHw](https://pan.baidu.com/s/1mWdEOaTQ1D6kihQveN1JHw)  密码:fn9g，开发人员就各自发挥吧，相信每个人都有自己用的比较舒服的编辑器我就不推荐了
 
-![image](/assets/2019/everyday-8.png)
+![image](/assets/2019/everyday-8.webp)
 
 * 配置文件中需要修改的地方，女朋友的微信备注姓名`NAME`必须要换一下，不然你发给我就不好了😂，微信昵称`NICKNAME`最好也写一下，你和女朋友的纪念日`MEMORIAL_DAY`就不用说了，也要改一下。
 * 如果要发送天气信息，女朋友所在城市`CITY`肯定也是必须修改的，地区`LOCATION`不知道怎么拼写的话，我建议可以查一下墨迹的官网[https://tianqi.moji.com/weather/china/](https://tianqi.moji.com/weather/china/)
 
-![image](/assets/2019/everyday-9.png)
+![image](/assets/2019/everyday-9.webp)
 
 * 在墨迹天气找到对应地区的天气后，查看一下网页地址栏，绿色标记的拼音填入`CITY`，红色标记的拼音填入`LOCATION`
 
-![image](/assets/2019/everyday-10.png)
+![image](/assets/2019/everyday-10.webp)
 
 * 每天发送的时间`SENDDATE`，这里的规则可以参见`schedule`目录下的`index.js`文件。这里`0 06 8 * * *`代表的是每天的早上8点06分0秒，我们通常只需配置前三个就可以了。
 * 如果需要开启机器人聊天的话，需要把`AUTOREPLY`设置为`true`，这里我放弃了图灵机器人，原因上面也说了，改用了天行机器人，但是不要抱太大希望，它并不是那么智能😂。目前由于我自己账号的api次数还比较多，就在项目代码中开放给大家使用了，这里就不放出来，下载代码后只要修改一下`AUTOREPLY`就可以自动回复了。
@@ -118,17 +118,17 @@ module.exports = {
 
 配置完成好文件别忘记保存了，保存好就回到项目的主目录吧。这时候`win`系统的话就按住`键盘的shift+鼠标右键`，选择在此处打开命令窗口。
 
-![image](/assets/2019/everyday-11.png)
+![image](/assets/2019/everyday-11.webp)
 
 * 然后输入`npm install`。
 
-![image](/assets/2019/everyday-12.png)
+![image](/assets/2019/everyday-12.webp)
 
 * 等待安装完成后输入`npm run start`，这时会下载一个文件，因为比较大，所以要多等一下，等待出现二维码的时候就可以拿出手机微信扫一扫登录了。接下来就是一顿神对话了😆
 
-![image](/assets/2019/everyday-13.png)
+![image](/assets/2019/everyday-13.webp)
 
-![image](/assets/2019/everyday-14.png)
+![image](/assets/2019/everyday-14.webp)
 
 * 如果执行`npm run start`遇到失败的话，先执行`npm install wechaty-puppet-puppeteer@^0.17.14  --no-save`然后再执行`npm run start`
 
@@ -146,7 +146,7 @@ module.exports = {
     1. [新注册的微信号无法登陆](https://github.com/wechaty/wechaty/issues/872)
 1. 执行npm run start时无法安装puppet-puppeteer&&Chromium
 1. Centos7下部署出现以下问题
-    ![image](/assets/2019/everyday-15.png)
+    ![image](/assets/2019/everyday-15.webp)
     问题原因:[https://segmentfault.com/a/1190000011382062](https://segmentfault.com/a/1190000011382062)
     解决方案:
 
@@ -169,12 +169,12 @@ module.exports = {
 
 如果有微信号无法登录和有技术问题需要交流，可以加我的微信小助手后发送`加群`，会自动发送交流群的二维码，同时此小号有更多高级功能等待你的发现。（注：添加好友后会在20s内自动通过）
 
-![image](/assets/2019/everyday-16.png)
+![image](/assets/2019/everyday-16.webp)
 
 赶快亲自试一试吧，相信你会挖掘出更多好玩的功能
 
 另外我的公众号已经接入微软小冰，关注后发语音会有小姐姐的声音陪你聊天，也可以和她文字聊天，有兴趣可以试试看，单身的欢迎来撩
 
-![image](/assets/2019/everyday-17.png)
+![image](/assets/2019/everyday-17.webp)
 
 > 作者: [Leo_chen](https://github.com/leochen-g/)，前端工程师，喜欢使用node做各种小项目，就职于大数据公司。本篇文章首发于掘金: [三步教你用Node做一个微信哄女友(基友)神器，小白可上手](https://juejin.im/post/5d09fa9f51882508bd2065f4)

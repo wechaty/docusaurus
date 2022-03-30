@@ -39,11 +39,11 @@ digitalWrite(0, LOW);
 
 ## 如何用微信远程控制设备？
 
-![RICEPO](/assets/2020/juzi-iot/0.jpg)
+![RICEPO](/assets/2020/juzi-iot/0.webp)
 
 如上图所示，使用微信远程控制设备的关键，就是在设备上面跑一个微信客户端，并对消息进行判断，处理成高低电平。
 
-![RICEPO](/assets/2020/juzi-iot/1.jpg)
+![RICEPO](/assets/2020/juzi-iot/1.webp)
 
 以前有命令行的微信，可以直接通过命令方式调用。但是现在这种方法已经失去作用了。目前，wechaty是一个很优秀的微信机器人框架。只要在on message方法里写代码对消息进行处理，操作GPIO，就可以实现用微信去远程控制家里的设备。
 
@@ -51,15 +51,15 @@ digitalWrite(0, LOW);
 
 在句子秒回中，可以设置API回调接口。<https://wechat.botorange.com/>
 
-![RICEPO](/assets/2020/juzi-iot/4.jpg)
+![RICEPO](/assets/2020/juzi-iot/4.webp)
 
 因此可以构建一个回调API，根据获得的消息去操作硬件设备。因此，目前有2种方案可选，一种是在回调地址中，把获得的消息转成MQTT，即发布一个主题。
 
-![RICEPO](/assets/2020/juzi-iot/2.jpg)
+![RICEPO](/assets/2020/juzi-iot/2.webp)
 
 如上图所示，使用廉价的arduino，订阅主题，当微信发送消息时，句子秒回会把消息推到回调API。在回调API中，把获得的消息发布到一个MQTT主题。但这也需要额外配置一个MQTT broker服务器。
 
-![RICEPO](/assets/2020/juzi-iot/3.jpg)
+![RICEPO](/assets/2020/juzi-iot/3.webp)
 
 另一种方案是在回调API中，把消息存起来。通过另一个API可让设备轮询获得该消息。因轮询有时间间隔，因此它的速度没有MQTT快。
 

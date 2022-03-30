@@ -1,7 +1,7 @@
 ---
 title: "沟通后端系统和微信消息的桥梁"
 author: johnwang71
-image: /assets/2020/12-johnwang71/avartar.png
+image: /assets/2020/12-johnwang71/avartar.webp
 categories: project
 tags:
   - nodejs
@@ -17,7 +17,7 @@ tags:
 
 本来最熟悉Java，但wechaty是js的，正好也用nodejs在做其他工作，就从它开始吧。考虑到需要与其他系统集成，将wechaty封装成微信通讯网关，设计使用restful的双向调用，解耦网关和后端系统。虽然最近特别事杂，紧赶慢赶也终于在15天token有效期完成了最小化产品的提交，可以满足包括好友、微信群操作和文字类消息互动的全部商务需求，仅仅100行代码出头。
 运行也很简单，参考README即可：
-![安装](/assets/2020/12-johnwang71/wechaty-integration.png)
+![安装](/assets/2020/12-johnwang71/wechaty-integration.webp)
 
 感谢wechaty提供了很好的思路，感谢wechaty-puppet提供了良好的设计，让我能够站在巨人肩膀之上快速完成工作，感谢所有帮助过和感兴趣的小伙伴！
 

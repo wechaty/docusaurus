@@ -9,6 +9,8 @@ tags:
   - news
   - meetup
   - featured
+  - ospp
+  - ospp-admin
 image: /assets/2021/06-summer-2021-open-source/001.webp
 ---
 

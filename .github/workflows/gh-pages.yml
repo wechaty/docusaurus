@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0  # https://github.community/t/solved-workflows-and-git-logs/121289
+          fetch-depth: 0  # https://github.com/facebook/docusaurus/issues/2798#issuecomment-636602951
       - name: Bundle Config
         run: |
           sudo gem install bundler
@@ -38,13 +38,16 @@ jobs:
         run: npm run build
 
   deploy:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     name: Deploy GitHub Pages
     needs:
       - test
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0  # https://github.com/facebook/docusaurus/issues/2798#issuecomment-636602951
+
     - name: Bundle Cache Config
       run: |
         sudo gem install bundler
@@ -65,7 +68,7 @@ jobs:
         git checkout --orphan gh-pages
         git reset --hard
         git commit --allow-empty -m "Orphan init"
-        git checkout master
+        git checkout main
     - name: Install dependencies
       run: |
         make install

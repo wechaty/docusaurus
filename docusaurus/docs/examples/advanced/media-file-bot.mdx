@@ -32,7 +32,7 @@ sandbox="allow-forms allow-modals allow-popups allow-same-origin allow-scripts"
 
 ## Requirements
 
-1. [Node.js](https://nodejs.org/en/download) v12+
+1. [Node.js](https://nodejs.org/en/download) v16+
 2. [Wechaty](https://github.com/wechaty/wechaty) v0.40+
 
 ## Getting started
@@ -160,7 +160,7 @@ This will generate the `package.json` file containing these:
 You will need the `wechaty` NPM package for building this bot & `qrcode-terminal` for displaying the QR code that can be scanned for using the bot. Install them using the following command:
 
 ```sh
-npm install wechaty 
+npm install wechaty
 npm install qrcode-terminal
 ```
 
@@ -214,8 +214,8 @@ Start by creating a new file `media-file-bot.js`. We will be writing the code he
 Let's import the required packages in the JavaScript file:
 
 ```js
-const qrTerm = require("qrcode-terminal");
-const { Wechaty, Message } = require("wechaty");
+import qrTerm  from 'qrcode-terminal';
+import { Wechaty, Message }  from 'wechaty';
 ```
 
 Specify some functions that you will require for handling different events returned by the Wechaty bot.

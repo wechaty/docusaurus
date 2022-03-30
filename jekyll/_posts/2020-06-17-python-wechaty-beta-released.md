@@ -6,7 +6,7 @@ tags:
   - python
   - news
   - featured
-image: /assets/2020/python-wechaty/python-wechaty-logo.png
+image: /assets/2020/python-wechaty/python-wechaty-logo.webp
 ---
 
 Python-wechaty能够使用少量代码即可完成一个机器人，使用起来非常简单，基于OOP的设计思路能够很好监听和处理微信内部大量的事件，比如：自动回复消息，定时发送消息，拉人入群，好友申请同意等等。此外，目前的插件系统里面有很多拿来即用的工具，比如拉人入群等。当然开发一个自己的插件也是非常简单，无需很高深的概念，只需要你能够理解事件和OOP即可。
@@ -37,7 +37,7 @@ python-wechaty项目源于wechaty，甚至说很大程度上代码是直接从�
 
 使用python-wechaty能够很简单的开发一款Bot，特别是使用了一个插件系统之后，如下所示：
 
-![image-20200617105548475](/assets/2020/python-wechaty/simple-bot.png)
+![image-20200617105548475](/assets/2020/python-wechaty/simple-bot.webp)
 
 以上代码中实现了两个主要的功能：
 
@@ -58,7 +58,6 @@ from typing import Union
 
 from wechaty import Message, Contact, Room, FileBox
 from wechaty.plugin import WechatyPlugin
-
 
 class DingDongPlugin(WechatyPlugin):
     """basic ding-dong plugin"""
@@ -131,7 +130,6 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from wechaty import Wechaty
 from wechaty.plugin import WechatyPlugin
 
-
 class DailyPlugin(WechatyPlugin):
     """
     say something everyday, like `Daily Words`
@@ -174,7 +172,7 @@ asyncio.run(main())
 
 微信号：`pure-_--love`
 
-![image-20200617145659900](/assets/2020/python-wechaty/wujing-weixin.png)
+![image-20200617145659900](/assets/2020/python-wechaty/wujing-weixin.webp)
 
 > Author: [wj-Mcat](https://github.com/wj-Mcat)
 > Code: [python-wechaty](https://github.com/wechaty/python-wechaty)
