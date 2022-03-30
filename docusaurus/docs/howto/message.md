@@ -5,9 +5,26 @@ title: 'Dealing with message'
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
+## Messages
+
+Automation of messages can be done easily with wechaty onMessage function. This guide will give you a step by step overview of how to respond to self messages or messages in a room.
+
+## Prerequisites
+
+* Your system must have [Node.js](https://nodejs.org/en/download/package-manager/) installed (version >= 16).
+* Your system must have [Wechaty](https://github.com/wechaty/wechaty) (version >= 0.40).
+* You need to be familiar with the basics of Wechaty platform. If not, follow our [tutorials](https://wechaty.js.org/docs/tutorials/) section.
+* You need to have at least a minimal application ready to work, follow one of our [Example/Ding-dong-bot](https://github.com/wechaty/getting-started/blob/main/examples/ding-dong-bot.js).
+
+### If you don't know where to start from
+
+See [Running our first ding-dong bot](https://wechaty.js.org/docs/getting-started/quick-start/#run-ding-dong-bot).
+
+There are various message type such as `MessageType.Text`, `MessageType.Image`, `MessageType.Video`, `MessageType.Url`, `MessageType.Emotions`, `MessageType.Attachment`. Some of the function are mentioned below and require a basic script that can help run the bot. The basic script starts by importing the code from [Github/Ding-dong-bot](https://github.com/wechaty/getting-started/blob/main/examples/ding-dong-bot.js).Integrate the below code, for this action to work.
+
 ## Mention
 
-Only a message in the room can mention(@) others.
+Use this Mention feature to send a (@ mention) to others in the room.This function works if the message received by the onMessage function belongs to a room.
 
 <Tabs
   groupId="programming-languages"
@@ -73,7 +90,7 @@ async function onMessage(message) {
     // "Hello"
 
     const talker = room.talker()
-    await room.say`Thanks for mention me! ${talker}`
+    await room.say`Thanks for mentioning me! ${talker}`
   }
 }
 
@@ -139,7 +156,12 @@ class MyBot(Wechaty):
 </TabItem>
 </Tabs>
 
+The expected output of the JavaScript code is:
+![Message](../../static/img/docs/howto/message/message1.webp)
+
 ## Self message
+
+Use this Self message feature to reply to the bot.This function works if the message received by the onMessage function has been sent by the bot to itself.
 
 <Tabs
   groupId="programming-languages"
@@ -180,14 +202,16 @@ bot.on('message', onMessage)
 ```js
 import { Message }  from 'wechaty'
 
-async function onMessage(message) {
-  if (message.self()) {
-    const talker = message.talker()
-    const bot = message.wechaty.userSelf()
-    assert(talker === bot, 'Message is sent from bot')
+async function onMessage (msg) {
+  log.info('StarterBot', msg.toString())
+  const contact = msg.talker() 
+  console.log(contact);
+  console.log("message self",msg.self());
+  if (msg.self()) {
+    const b = msg.wechaty.userSelf()
+    assert(talker === b, 'Message is sent from bot')
     console.info('Message is sent from bot')
   }
-}
 
 bot.on('message', onMessage)
 ```
@@ -259,3 +283,6 @@ class MyBot(Wechaty):
 
 </TabItem>
 </Tabs>
+
+The expected output of the JavaScript code is:
+![Message](../../static/img/docs/howto/message/message.webp)
