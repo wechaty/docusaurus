@@ -1,5 +1,5 @@
 ---
-title: 核能沙龙 第六期 | 开发者！集结！
+title: 硬核桃 5G Chatbot 开源 SDK Wechaty | 核能沙龙 第六期
 author: huan
 categories: announcement
 tags:
@@ -43,7 +43,7 @@ Wechaty Community 与硬核桃社区强强联手，推出 5G Chatbot 开源 SDK 
 
 ## 视频回放
 
-TBD
+{% include iframe.html src="https://youtu.be/07CTMnngYog" %}
 
 > [Bilibili](https://space.bilibili.com/1764229974/)
 
