@@ -3,21 +3,15 @@ title: "Open-source Wechaty in Python, Go, and Java"
 author: juzibot
 categories: announcement
 tags:
-  - summer-of-wechaty
-  - summer-2021
-  - talk
+  - polyglot
   - news
   - meetup
-  - featured
 image: /assets/2020/04-open-source-wechaty-in-python-go-and-java/001.webp
 ---
 
-> 作者:[juzibot](https://github.com/juzibot)
-
-<!-- more -->
-![002](/assets/2020/04-open-source-wechaty-in-python-go-and-java/002.webp)
-
 五位核心开发人员和两位来自Wechaty的作者将用多种语言讨论Wechaty。共同正在推动多语言Wechaty项目向前发展。
+
+![002](/assets/2020/04-open-source-wechaty-in-python-go-and-java/002.webp)
 
 ## 主讲人：李卓桓 Huan Li
 
