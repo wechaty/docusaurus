@@ -1,0 +1,255 @@
+---
+title: 'Send and accept friend requests'
+---
+
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+
+Sending and accepting friend requests can easily be done using wechaty `onfriendship` function. This guide will help you send request, receive request(in friend event), confirm friendship(friend event) in a room.
+
+Use the guide to help you integrate additional functions to an existing project which is present at [Github/Friend-Bot](https://github.com/wechaty/wechaty-getting-started/blob/main/examples/advanced/friend-bot.js) or check that your existing local system will run on Wechaty. If, you wish to learn on how to build the bot on your own, please visit one of our [Building the bot](https://wechaty.js.org/docs/getting-started/running-locally) section.
+
+The steps outlined here mainly focuses on working with Javascript, but user are free to switch between any languages.This guide help you Send, receive friend request, and friend confirmation events.
+
+## Prerequisites
+
+* Your system must have [Node.js](https://nodejs.org/en/download/package-manager/) installed (version >= 16).
+* Your system must have [Wechaty](https://github.com/wechaty/wechaty) (version >= 0.40).
+* You need to be familiar with the basics of Wechaty platform. If not, follow our [tutorials](https://wechaty.js.org/docs/tutorials/) section.
+* You need to have at least a minimal application ready to work, follow one of our [Example/ding-dong-bot](https://github.com/wechaty/getting-started/blob/main/examples/ding-dong-bot.js).
+
+### If you don't know where to start from
+
+See [Running our first ding-dong bot](https://wechaty.js.org/docs/getting-started/quick-start/#run-ding-dong-bot).
+
+The below function needs a basic script that can help run the bot. The basic script starts by importing the code from [Github/Friend-Bot](https://github.com/wechaty/wechaty-getting-started/blob/main/examples/advanced/friend-bot.js).Integrate the below code, for this action to work.
+
+## Send Request - define how to send a friend request
+
+When you send the request, you try to make new friend connection. This section elaborates on how to send friend requests.`Friendship.search(<id>)` helps you search the contact, if found we get "Sending friend request..." as a response else "Friendship.search: not found" as a response.
+
+<Tabs
+  groupId="programming-languages"
+  defaultValue="ts"
+  values={[
+    { label: 'TypeScript',  value: 'ts', },
+    { label: 'JavaScript',  value: 'js', },
+    { label: 'Python',      value: 'py', },
+    { label: 'Go',          value: 'go', },
+    { label: 'Java',        value: 'java', },
+    { label: 'PHP',         value: 'php', },
+    { label: 'Scala',       value: 'scala', },
+    { label: 'C#',          value: 'csharp', },
+    { label: 'Rust',        value: 'rust', },
+  ]
+}>
+
+<TabItem value="ts">
+
+```ts
+async function onReady () {
+  const weixin  = 'FridayBOT' // weixin id
+  const contact = await bot.Friendship.search({ weixin })
+
+  if (contact) {
+    console.info('Sending friend request...')
+    await bot.Friendship.add(contact)
+  } else {
+    console.info('Friendship.search: not found')
+  }
+}
+
+bot.on('ready', onReady)
+```
+
+</TabItem>
+<TabItem value="js">
+
+```js
+async function onReady () {
+  const weixin  = 'FridayBOT' // weixin id
+  const contact = await bot.Friendship.search({ weixin })
+
+  if (contact) {
+    console.info('Sending friend request...')
+    await bot.Friendship.add(contact)
+  } else {
+    console.info('Friendship.search: not found')
+  }
+}
+
+bot.on('ready', onReady)
+```
+
+</TabItem>
+<TabItem value="py">
+
+```py
+from typing import Optional
+from wechaty import Wechaty, Contact
+
+class MyBot(Wechaty):
+    async def on_ready(self, _):
+        contact: Optional[Contact] = await self.Friendship.search(phone='phone-of-someone')
+        if contact:
+            self.Friendship.add(contact)
+```
+
+</TabItem>
+<TabItem value="go">
+
+```go
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="java">
+
+```java
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="php">
+
+```php
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="scala">
+
+```scala
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="csharp">
+
+```csharp
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="rust">
+
+```rust
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+</Tabs>
+
+## Receive Request - define how to accept the friend request
+
+When someone sends you the request, you choose whether to have the friend connection or to reject the connection. This section elaborates on how to accept friend requests. When someone sends you the request, the `friendship.contact()` helps you list down all the contacts with a hello message from `friendship.hello()` and then when the user accepts the request, it prints out with a confirmation message using `friendship.contact().name()`.
+
+<Tabs
+  groupId="programming-languages"
+  defaultValue="ts"
+  values={[
+    { label: 'TypeScript',  value: 'ts', },
+    { label: 'JavaScript',  value: 'js', },
+    { label: 'Python',      value: 'py', },
+    { label: 'Go',          value: 'go', },
+    { label: 'Java',        value: 'java', },
+    { label: 'PHP',         value: 'php', },
+    { label: 'Scala',       value: 'scala', },
+    { label: 'C#',          value: 'csharp', },
+    { label: 'Rust',        value: 'rust', },
+  ]
+}>
+
+<TabItem value="ts">
+
+```ts
+import { Friendship } from 'wechaty'
+
+async function onFriendship (friendship: Friendship) {
+  if (friendship.type() === Friendship.Type.Receive) {
+    console.info('New request from', friendship.contact())
+    console.info('Hello message:', friendship.hello())
+    await friendship.accept()
+  } else if (friendship.type() === Friendship.Type.Confirm) {
+    console.info('New request confirmed with', friendship.contact().name())
+  }
+}
+
+bot.on('friendship', onFriendship)
+```
+
+</TabItem>
+<TabItem value="js">
+
+```js
+import { Friendship } from 'wechaty'
+
+async function onFriendship (friendship) {
+  if (friendship.type() === Friendship.Type.Receive) {
+    console.info('New request from', friendship.contact())
+    console.info('Hello message:', friendship.hello())
+    await friendship.accept()
+  } else if (friendship.type() === Friendship.Type.Confirm) {
+    console.info('New request confirmed with', friendship.contact().name())
+  }
+}
+
+bot.on('friendship', onFriendship)
+```
+
+</TabItem>
+<TabItem value="py">
+
+```py
+from wechaty import Wechaty, Friendship, FriendshipType
+
+class MyBot(Wechaty):
+    async def on_friendship(self, friendship: Friendship):
+        if friendship.type() == FriendshipType.FRIENDSHIP_TYPE_RECEIVE:
+            await friendship.accept()
+```
+
+</TabItem>
+<TabItem value="go">
+
+```go
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="java">
+
+```java
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="php">
+
+```php
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="scala">
+
+```scala
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="csharp">
+
+```csharp
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+<TabItem value="rust">
+
+```rust
+// TODO: Pull Request is welcome!
+```
+
+</TabItem>
+</Tabs>

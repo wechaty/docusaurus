@@ -1,7 +1,7 @@
 ---
 title: Gitter.im is supported by Wechaty now!
 author: huan
-image: /assets/2020/08-gitter/wechaty-gitter.png
+image: /assets/2020/08-gitter/wechaty-gitter.webp
 categories: announcement
 tags:
   - news
@@ -12,7 +12,7 @@ tags:
 
 Wechaty is a RPA SDK for Chatbot Makers. It mainly works with WeChat accounts (both [individual](https://github.com/wechaty/wechaty-puppet-puppeteer) and [official](https://github.com/wechaty/wechaty-puppet-official-account)), and now we have published Gitter support for wechaty, which can make us easy to build a chatbot on Gitter.im, and sync the room between the Gitter.im and WeChat!
 
-![Gitter + Wechaty](/assets/2020/08-gitter/gitter.png)
+![Gitter + Wechaty](/assets/2020/08-gitter/gitter.webp)
 
 ## Wechaty + Gitter.im
 

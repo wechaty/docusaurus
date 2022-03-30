@@ -7,7 +7,7 @@ tags:
   - project
   - electron
   - ecommerce
-image: /assets/2020/wechaty-electron/header.png
+image: /assets/2020/wechaty-electron/header.webp
 ---
 
 作为一个爱逛二手闲置数码的程序员，怎么淘到自己喜欢且性价比高的设备是个技术活~
@@ -25,8 +25,6 @@ image: /assets/2020/wechaty-electron/header.png
 👌 wechaty消息推送实时到达很棒
 
 ☝️ 直接图文阅读无须二次跳转更快
-
-<!--more-->
 
 ## 功能
 
@@ -80,8 +78,8 @@ yarn run dev
 
 ## 效果图
 
-- ![截图](/assets/2020/wechaty-electron/pic01.jpg)
-- ![截图](/assets/2020/wechaty-electron/pic02.jpg)
+- ![截图](/assets/2020/wechaty-electron/pic01.webp)
+- ![截图](/assets/2020/wechaty-electron/pic02.webp)
 
 ## 致谢
 

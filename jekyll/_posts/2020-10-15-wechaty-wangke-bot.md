@@ -1,7 +1,7 @@
 ---
 title: "基于wechaty开发网课答案查询机器人"
 author: hurely
-image: /assets/2020/wanke-bot/banner.jpg
+image: /assets/2020/wanke-bot/banner.webp
 categories: project
 tags:
   - puppet
@@ -34,17 +34,17 @@ github：[https://github.com/hurely/wechaty-wangke](https://github.com/hurely/we
 ## 项目展示
 
 - 自动回复网课答案
-  ![回复网课答案](/assets/2020/wanke-bot/20201015105732.png)
+  ![回复网课答案](/assets/2020/wanke-bot/20201015105732.webp)
 
 - 接收小程序
-  ![接收小程序](/assets/2020/wanke-bot/20201015112724.png)
+  ![接收小程序](/assets/2020/wanke-bot/20201015112724.webp)
 
 ## 核心代码
 
 1.src/index.js --wechaty 启动的入口文件
 
 ```js
-const config = require("../config/config")
+import config  from '../config/config'
 
 const {
   Wechaty,
@@ -52,9 +52,9 @@ const {
   log,
 }   = require('wechaty')
 
-const { PuppetPadplus } = require("wechaty-puppet-padplus")
+import { PuppetPadplus }  from 'wechaty-puppet-padplus'
 
-const replyToAMessage = require("./utils/reply")
+import replyToAMessage  from './utils/reply'
 
 function onScan (qrcode, status) {
   if (status === ScanStatus.Waiting || status === ScanStatus.Timeout) {
@@ -131,12 +131,12 @@ module.exports = {
 3.src/utils/reply.js 根据关键字，回复内容
 
 ```js
-const axios = require("axios");
+import axios  from 'axios';
 const {
   FileBox
 } = require("file-box") const {
   log
-} = require('wechaty') const config = require("../../config/config") const {
+} = require('wechaty') import config  from '../../config/config' const {
   pareMiniProgramMsg,
   pareseXmlToJson
 } = require("../utils/utils")
@@ -206,7 +206,7 @@ module.exports = {
 
 ## 网课答案接口用法
 
-![网课答案接口](/assets/2020/wanke-bot/20201015141509.png)
+![网课答案接口](/assets/2020/wanke-bot/20201015141509.webp)
 
 1.访问[http://api.51aidian.com/index.php?id=kunggggyoyoyo](http://api.51aidian.com/index.php?id=kunggggyoyoyo)
 

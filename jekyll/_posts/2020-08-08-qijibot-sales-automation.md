@@ -7,7 +7,7 @@ tags:
   - qiji
   - productivity
   - social
-image: /assets/2020/qijibot/qijibot.jpg
+image: /assets/2020/qijibot/qijibot.webp
 ---
 
 - 除了媒体上的曝光，通过人进行深度触达是好的获客方式
@@ -62,7 +62,7 @@ image: /assets/2020/qijibot/qijibot.jpg
 
 就在那周，我收到了句子互动创始人佳芮的书稿，《Chatbot从0到1》，成为了我聊天机器人的启蒙。
 后来，我在BOT Friday上认识了大量的创业者、工程师和聊天机器人从业者，并通过几次“看起来是分享实际上是请大家帮我答疑”的BOT Friday活动，逐渐迈入聊天机器人行业。
-![我的第一次分享](/assets/2020/qijibot/talk1.jpg)
+![我的第一次分享](/assets/2020/qijibot/talk1.webp)
 
 {% include iframe.html src="/assets/2020/qijibot/talk2.pdf" %}
 
@@ -82,7 +82,7 @@ image: /assets/2020/qijibot/qijibot.jpg
 ### 3.2.一个全自动化的尝试
 
 没有人会拒绝一个全自动化的系统，这也是我完成剧本后第一件希望完成的工作。
-![一个全自动化的尝试](/assets/2020/qijibot/first.jpeg)
+![一个全自动化的尝试](/assets/2020/qijibot/first.webp)
 然而，它毫无疑问的失败了，理由甚至不用赘述，毕竟这已经是聊天机器人行业的共识——纯机器人很难完成人类的所有需求。
 
 ### 3.3.回归人机耦合的辅助坐席
@@ -103,13 +103,13 @@ image: /assets/2020/qijibot/qijibot.jpg
 - 用户只需要点击按钮就能把对方提出的问题进行回复，并完成一些必要的操作。
 - 机器永远不自作主张地进行回复，永远需要人进行一次确认。
 
-![最终产品](/assets/2020/qijibot/qijibot.jpg)
+![最终产品](/assets/2020/qijibot/qijibot.webp)
 
 ## 四、帮更多企业在微信上做好私域销售
 
 当然，Qijibot被投入的资源注定其只是一个非商业的尝试，距离成为人人可用的、真正改变企业销售体验的工具还有遥远的距离。  
 后来，我在2020年正式地加入句子互动，以CMO的身份，开始在企业微信生态上，去帮助企业做好“私域销售”，我们的产品[句客宝](qiwei.juzibot.com)已经上线。  
-![句客宝](/assets/2020/qijibot/jukebao.jpeg)
+![句客宝](/assets/2020/qijibot/jukebao.webp)
 这是另外一个很长的、还没有结束的故事……
 如果你对于如何借助工具打造销售体系感兴趣，欢迎你与我聊聊（微信：bohao-YIN），也许会是我们下一篇博客内容的起点。
 

@@ -8,7 +8,7 @@ tags:
   - koa
   - weixin-openai
   - productivity
-image: /assets/2020/wechaty-rainbowbot/rainbow.jpg
+image: /assets/2020/wechaty-rainbowbot/rainbow.webp
 ---
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg)](https://github.com/wechaty/wechaty)
@@ -17,8 +17,6 @@ image: /assets/2020/wechaty-rainbowbot/rainbow.jpg
 ## 背景
 
 据我所知，大部分中小型公司，甚至某些传统大型销售公司，对销售团队的管理工作几乎依赖于微信、微信群，本人所处的公司也不例外。公司已有内部的web端业务数据系统，但是通常情况下数据只有发送到下级营销管理团队的微信群或者一线业务员的微信群中，才能发挥出相应的营销作用。
-
-<!--more-->
 
 ### 典型的场景
 
@@ -54,7 +52,7 @@ image: /assets/2020/wechaty-rainbowbot/rainbow.jpg
 
 为了避免重复制造轮子，我翻阅了不少已有的Wechaty项目，有基于爬虫+定时任务来实现外部系统与微信端通信的应用，但这与我的需求还是有区别的。我希望实现的是（理论上）任意时间点，外部系统主动调用接口与微信之间进行通信。最后决定自己动手搞起来，理论模型已经很清晰，一个最简单的实现结构是这样的：
 
-![结构图](/assets/2020/wechaty-rainbowbot/pic1.png)
+![结构图](/assets/2020/wechaty-rainbowbot/pic1.webp)
 
 RainbowBot作为中间通信桥梁，就像一弯`彩虹`，连接起远在天边的两个独立系统。
 

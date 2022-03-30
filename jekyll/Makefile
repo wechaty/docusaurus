@@ -23,7 +23,7 @@ clean:
 
 .PHONY: build
 build:
-	bundle exec jekyll build
+	bundle exec jekyll build --trace
 
 .PHONY: serve
 serve:

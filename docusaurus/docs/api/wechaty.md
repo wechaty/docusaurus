@@ -83,7 +83,7 @@ Creates an instance of Wechaty.
 **Example** _\(The World's Shortest ChatBot Code: 6 lines of JavaScript\)_
 
 ```javascript
-const { Wechaty } = require('wechaty')
+import { Wechaty }  from 'wechaty'
 const bot = new Wechaty()
 bot.on('scan',    (qrcode, status) => console.log(['https://api.qrserver.com/v1/create-qr-code/?data=',encodeURIComponent(qrcode),'&size=220x220&margin=20',].join('')))
 bot.on('login',   user => console.log(`User ${user} logined`))
@@ -356,7 +356,7 @@ Get the global instance of Wechaty
 **Example** _\(The World's Shortest ChatBot Code: 6 lines of JavaScript\)_
 
 ```javascript
-const { Wechaty } = require('wechaty')
+import { Wechaty }  from 'wechaty'
 
 Wechaty.instance() // Global instance
 .on('scan', (url, code) => console.log(`Scan QR Code to login: ${code}\n${url}`))

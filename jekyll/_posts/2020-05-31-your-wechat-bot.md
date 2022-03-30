@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - social
-image: /assets/2020/your-wechat-bot/banner.png
+image: /assets/2020/your-wechat-bot/banner.webp
 ---
 
 我有一个三百多人的前端开发群，每天都有很多个好友请求，让我添加他们进前端开发群。
@@ -95,11 +95,11 @@ cnpm start //npm start
 - 自动同意好友请求
 - 发送加群指令自动邀请好友进群。
 
-![演示图片](/assets/2020/your-wechat-bot/demo.gif)
+![演示图片](/assets/2020/your-wechat-bot/demo.webp)
 
 底层 api 基于 [wechaty](https://github.com/wechaty/wechaty)
 
-更多微信消息、群消息、好友、对话等相关 api 可查阅官方文档 [wechaty 官方文档](https://github.com/wechaty/wechaty/blob/master/docs/index.md)
+更多微信消息、群消息、好友、对话等相关 api 可查阅官方文档 [wechaty 官方文档](https://github.com/wechaty/wechaty/blob/main/docs/index.md)
 
 > 作者: [peanut](https://github.com/isnl/)
 > Code: [Github](https://github.com/isnl/wechat-robot)

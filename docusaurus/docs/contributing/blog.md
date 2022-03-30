@@ -53,7 +53,7 @@ This is based on ImageMagick.
 
 Submit your blog by creating a Pull Request at <https://github.com/wechaty/wechaty.js.org/tree/master/jekyll/_posts>
 
-Please make sure the CI turns green, and if the CI fail, you need to check the error messages and fix all the problems before we can continue processing it.
+Please make sure the CI turns green, and if the CI fails, you need to check the error messages and fix all the problems before we can continue processing it.
 
 ## Support
 

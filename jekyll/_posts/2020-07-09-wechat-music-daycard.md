@@ -5,7 +5,7 @@ categories: project
 tags:
   - padplus
   - entertainment
-image: /assets/2020/wechat-daycard/header.png
+image: /assets/2020/wechat-daycard/header.webp
 ---
 
 [![wechaty badge](https://img.shields.io/badge/Powered%20By-Wechaty-green.svg#align=left&display=inline&height=20&margin=%5Bobject%20Object%5D&originHeight=20&originWidth=132&status=done&style=none&width=132)](https://github.com/wechaty/wechaty)
@@ -62,7 +62,7 @@ node app.js
 
 ## 效果图
 
-![效果图](/assets/2020/wechat-daycard/demo.jpg)
+![效果图](/assets/2020/wechat-daycard/demo.webp)
 
 ## 致谢
 

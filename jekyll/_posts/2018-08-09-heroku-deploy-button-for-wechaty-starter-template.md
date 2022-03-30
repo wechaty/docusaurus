@@ -6,7 +6,7 @@ tags:
   - heroku
   - deploy
   - news
-image: /assets/2018/08-heroku-deploy-button-for-wechaty-starter-template/heroku-wechaty.png
+image: /assets/2018/08-heroku-deploy-button-for-wechaty-starter-template/heroku-wechaty.webp
 ---
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/wechaty/heroku-wechaty-getting-started)
