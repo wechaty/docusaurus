@@ -8,9 +8,6 @@ import util from 'util'
 import globCB         from 'glob'
 
 import {
-  JEKYLL_FOLDER,
-}                             from '../src/jekyll/mod.js'
-import {
   DOCUSAURUS_FOLDER,
 }                             from '../src/docusaurus/mod.js'
 
@@ -33,7 +30,6 @@ const allPdfList = async () => {
   const extListStr = extList.join(',')
 
   const fileList = [
-    ...await glob(`${JEKYLL_FOLDER.assets}/**/*.{${extListStr}}`),
     ...await glob(`${DOCUSAURUS_FOLDER.static}/**/*.{${extListStr}}`),
   ]
 

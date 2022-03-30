@@ -11,7 +11,22 @@ package-lock.json
 new-gh-pages/
 tmp/
 
-hash.file
-jekyll/_posts/2020-12-31-osschat-a-bridge-to-the-apache-way-in-china.md
-
 .nyc_output/
+
+node_modules
+
+# Production
+build/
+
+# Generated files
+.docusaurus
+.cache-loader
+
+# Misc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+t/
+t.*

@@ -10,13 +10,6 @@ function buildDocusarus () {
   popd
 }
 
-function buildJekyll () {
-  pushd jekyll
-  make build
-  mv _site/sitemap.xml _site/sitemap-jekyll.xml
-  popd
-}
-
 function buildManifest () {
   FILE=$1
   VERSION=$(npx pkg-jq -r .version)
@@ -36,11 +29,8 @@ elif [ ! -d "$target" ]; then
 fi
 
 buildDocusarus
-buildJekyll
 
-cp -Rav docusaurus/build/* "$target"
 cp -Rav jekyll/_site/* "$target"
-cp -v config/sitemap.xml "$target"
 rm -f "$target"/README.md
 touch "$target"/.nojekyll
 buildManifest "$target"/manifest.json
