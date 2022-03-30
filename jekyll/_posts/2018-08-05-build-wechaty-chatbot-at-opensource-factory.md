@@ -1,6 +1,6 @@
 ---
 title: "Build Wechaty Chatbot at OpenSource Factory"
-author: juzibot
+author: tingyinhelen
 categories: announcement
 tags:
   - release
