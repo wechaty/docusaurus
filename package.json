@@ -69,7 +69,8 @@
     "uuid": "^8.3.2",
     "yaml": "^1.10.2",
     "yaml-front-matter": "^4.1.1",
-    "yaml-lint": "^1.2.4"
+    "yaml-lint": "^1.2.4",
+    "zero-md": "^2.1.1"
   },
   "git": {
     "scripts": {
