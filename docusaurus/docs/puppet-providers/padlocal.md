@@ -14,6 +14,16 @@ sidebar_label: PadLocal
 - Repo: <https://github.com/padlocal/wechaty-puppet-padlocal>
 - Support & Feedback: <https://github.com/padlocal/wechaty-puppet-padlocal/issues>
 
+## Known Issues
+
+1. `TypeError [ERR_INVALID_ARG_TYPE]: The "listener" argument must be of type function. Received undefined`
+
+The PadLocal version v0.4 can only be used with Wechaty version v0.x (below v1.0). You need to use Wechaty v0.x when you are using PadLocal v0.4.
+
+Related issues:
+
+- [can't use gateway padlocal/wechaty-puppet-padlocal#117](https://github.com/padlocal/wechaty-puppet-padlocal/issues/117#issuecomment-988773575)
+
 ## Features
 
 PadLocal is a full-featured Wechaty Puppet Provider.
