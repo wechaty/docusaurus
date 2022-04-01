@@ -1,6 +1,4 @@
 #
 # https://help.github.com/articles/about-codeowners/
 #
-
-jekyll/* @wechaty/editors
-docusaurus/* @wechaty/writers
+docusaurus/docs/* @wechaty/writers

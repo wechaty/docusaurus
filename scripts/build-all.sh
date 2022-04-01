@@ -30,7 +30,6 @@ fi
 
 buildDocusarus
 
-cp -Rav jekyll/_site/* "$target"
 rm -f "$target"/README.md
 touch "$target"/.nojekyll
 buildManifest "$target"/manifest.json
