@@ -15,10 +15,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0  # https://github.com/facebook/docusaurus/issues/2798#issuecomment-636602951
-      - name: Bundle Config
-        run: |
-          sudo gem install bundler
-
       - uses: actions/setup-node@v2
         with:
           node-version: 16
@@ -51,6 +47,8 @@ jobs:
         node-version: 16
         cache: 'npm'
         cache-dependency-path: package.json
+    - name: NPM Install
+      run: npm install
 
     - name: Config Git
       run: |
