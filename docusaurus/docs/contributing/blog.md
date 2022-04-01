@@ -2,6 +2,11 @@
 title: Publish blog
 ---
 
+## Tutorials
+
+1. [零基础小白在Wechaty社区发表自己的第一篇博客, @juzibot, Jul 02, 2021](https://wechaty.js.org/2021/07/02/how-to-publish-blog-on-wechaty/)
+2. [入门：小白如何在wechaty社区发布自己的第一篇博客（一）, @atorber, Apr 22, 2021](https://wechaty.js.org/2021/04/22/how-to-publish-blog-on-wechaty/)
+
 ## Tricks
 
 ### Hide A Post
