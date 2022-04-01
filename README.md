@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/wechaty/wechaty.js.org/blob/main/docs/images/wechaty-docusaurus.png" alt="wechaty logo" height ="auto" width="800" />
+<img src="https://github.com/wechaty/docusaurus/blob/main/docs/images/wechaty-docusaurus.png" alt="wechaty logo" height ="auto" width="800" />
 <br />
 <h1>Wechaty Organization Website</h1>
 <p>
@@ -90,7 +90,7 @@ Split docusaurus repo from the mixed repo with Jekyll ([Issue wechaty/wechaty.js
 
 ### v0.9 (Aug 23, 2021)
 
-1. Add OpenAPI Specification docs at <https://wechaty.js.org/docs/openapi/> ([#1218](https://github.com/wechaty/wechaty.js.org/issues/1218))
+1. Add OpenAPI Specification docs at <https://wechaty.js.org/docs/openapi/> ([#1218](https://github.com/wechaty/docusaurus/issues/1218))
 
 ### v0.5 (Aug 12, 2020)
 
