@@ -1,6 +1,6 @@
 {
   "name": "wechaty-docusaurus",
-  "version": "0.10.87",
+  "version": "0.10.88",
   "description": "Wechaty Official Website for Documentations",
   "private": true,
   "type": "module",
