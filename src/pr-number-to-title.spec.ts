@@ -2,7 +2,7 @@
 
 import { test } from 'tstest'
 
-import { prNumberToTitle } from '../src/pr-number-to-title.js'
+import { prNumberToTitle } from './pr-number-to-title.js'
 
 test.skip('pr number to title', async t => {
   const ORG = 'bupt'
