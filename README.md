@@ -84,7 +84,7 @@ To get to know all our writers, see <https://github.com/wechaty/wechaty.js.org/g
 
 ## History
 
-### main v0.10 (Apr 1, 2022)
+### main v0.11 (Apr 1, 2022)
 
 Split docusaurus repo from the mixed repo with Jekyll ([Issue wechaty/wechaty.js.org#1](https://github.com/wechaty/wechaty.js.org/issues/1))
 
