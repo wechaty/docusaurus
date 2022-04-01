@@ -5,7 +5,7 @@ const {
   plugins,
   themeConfig,
   presets,
-}               = require('./config/mod.js')
+}               = require('./docusaurus.config.d/mod.js')
 
 const config = {
   title: 'Wechaty',
