@@ -6,7 +6,7 @@ function buildDocusarus () {
   pushd docusaurus
   rm -fr build
   npm install
-  npx docusaurus build
+  npm run build
   mv build/sitemap.xml build/sitemap-docusaurus.xml
   popd
 }

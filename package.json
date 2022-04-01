@@ -18,8 +18,7 @@
     "lint:yml": "true || yamllint jekyll/_data/*.yml",
     "test": "npm-run-all lint test:unit",
     "test:unit": "cross-env TAP_TIMEOUT=60 NODE_OPTIONS=\"--no-warnings --loader=ts-node/esm\" tap \"src/**/*.spec.ts\" \"tests/**/*.spec.ts\"",
-    "build": "npm-run-all build:docusaurus",
-    "build:docusaurus": "cd docusaurus && npm run build"
+    "build": "cd docusaurus && npm install && npm run build"
   },
   "repository": {
     "type": "git",
