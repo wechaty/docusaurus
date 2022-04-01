@@ -11,7 +11,7 @@ export async function prNumberToTitleByApi (
     'pr.json',
     {
       'User-Agent': 'FileBox',
-    }
+    },
   )
   const prJsonText = (await fileBox.toBuffer()).toString()
   // console.log(prJsonText)

@@ -14,80 +14,12 @@ Repository for the Wechaty Organization Website, a resource for the Wechaty Orga
 <img src="https://img.shields.io/badge/Gitter-@layer5.svg?logo=slack" /></a>
 </p>
 
-[![GitHub Pages CI](https://github.com/wechaty/wechaty.js.org/workflows/GitHub%20Pages%20CI/badge.svg)](https://github.com/wechaty/wechaty.js.org/actions?query=workflow%3A%22GitHub+Pages+CI%22)
+[![GitHub Pages CI](https://github.com/wechaty/docusaurus/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/wechaty/docusaurus/actions/workflows/gh-pages.yml)
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
 [![DIVIO documentation system](https://img.shields.io/badge/DIVIO-Documentation%20System-blue)](https://documentation.divio.com/)
 [![ES Modules](https://img.shields.io/badge/ES-Modules-brightgreen)](https://github.com/Chatie/tsconfig/issues/16)
 
 </div>
-
-## How To Post a Blog
-
-To submit a blog post for publication on [wechaty.js.org](https://wechaty.js.org), you can follow the steps below.
-
-1. Fork this repository. If you don't know what is meant by forking a repository, read about it [here](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
-2. Clone the forked repository to your local machine. If you don't know how to do that, [this article](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) explains it well
-3. Make sure your forked repository is in sync with the main repository. If you don't know how to sync a forked repository,read about it in [this article](https://help.github.com/cn/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
-4. We prefer using [gitHub flow](https://guides.github.com/introduction/flow/). Therefore start by creating a branch for your blog using the command `git checkout -b name-of-blog-branch`. Give the branch a meaningful name
-5. Create a markdown file in [jekyll/\_posts](./jekyll/_posts) folder. The file name should follow the format `YYYY-MM-DD-your-blog-slug.md`. For example `2016-12-03-welcome-to-wechaty.md`
-6. Write your blog in markdown in the file you created in the previous step. If you are not familiar with markdown syntax, you can learn it [here](https://guides.github.com/features/mastering-markdown/)
-7. Add related images to [jekyll/assets](./jekyll/assets) folder under `$YEAR/$MONTH-your-blog-slug/` directory
-8. Add your info into `jekyll/_contributors/your_github_id.md`
-9. Commit your changes using the command `git commit -am "YOUR_BLOG_TITLE"`. `YOUR_BLOG_TITLE` is the title of your blog
-10. Push your branch to github using the command `git push origin name-of-blog-branch`.
-11. Create new Pull Request(PR)
-12. Sign the [CLA](https://en.wikipedia.org/wiki/Contributor_License_Agreement)
-13. Wait for the continuous integration workflow run to finish. If it is failing, fix whatever is making it to fail so that CI turns green
-14. Wait for @wechaty/editors to review your PR
-
-That's it!
-
-## Guidelines For Writing a Blog Post
-
-### 1. Your blog post should have a Header
-
-The header of your blog post should have a title, author and image.
-
-This is illustrated in the example below:
-
-```yaml
----
-title: "'Score Your Face Photo' a ML&Wechaty practice"
-author: your_github_username
-image: your_teaser_image_path
----
-<One line abstract for your blog post>
-
-<Your beautiful blog post contents...>
-```
-
-### 2. Writing Style
-
-- You should keep all filenames and URLs as lowercase. Use `-` character between words instead of space when creating a new file or directory. e.g. `2017-10-06-wechat-pc-impactor` instead of `2017-10-06-WeChat PC Impactor`. No Chinese should be used in any filename.
-- Find a good image for the blog to make it more beautiful.
-- You should embed photos and videos before publishing, save all external files to the `/jekyll/assets/${YEAR}/$MONTH-your-blog-slug/` directory.
-
-### 3. Do Not Commit Unrelated Files
-
-Please do not commit unrelated files. It will keep things tidy and make it easier to review your PR.
-
-### 4. How To Add Videos and PDFs To Your Blog Post
-
-You can add videos and PDFs to your blog post by using the syntax below.
-
-Example of how to add video or pdf
-
-```html
-{% include iframe.html src="https://www.youtube.com/watch?v=3eq8wJfCAWs" %}
-```
-
-or
-
-```html
-{% include iframe.html src="/assets/2020/qijibot/final.pdf" %}
-```
-
-You can read more at： [Add iframe to wechaty blog](https://wechaty.js.org/2020/08/24/add-video-to-wechaty-blog/)
 
 ## How To Run Tests
 
@@ -97,27 +29,6 @@ In order to make sure your changes have not broken anything, you can run the fol
 npm install
 npm test
 ```
-
-## How To Preview Your changes
-
-If you want to preview your blog post or changes on localhost, you need to have Jekyll installed in your machine. You can follow the [jekyll quickstart](https://jekyllrb.com/docs/) instructions to install jekyll.
-
-### 1. Install Jekyll by Hand
-
-Run Jekyll at localhost to preview your blog post by running the commands below.
-
-```sh
-make install
-cd jekyll; make serve # or either run `./scripts/jekyll-serve.sh` for a fresh new start by cleaning cache
-```
-
-### 2. Preview the Blog
-
-You can view the blog by navigating to <http://127.0.0.1:4000/blog/> in your browser
-
-## How To Make Other Contributions
-
-If you are not interested in writing a blog post but would still love to make a contribution, you are still welcome. We are delighted to have you around.
 
 ### Why contribute?
 
@@ -173,7 +84,11 @@ To get to know all our writers, see <https://github.com/wechaty/wechaty.js.org/g
 
 ## History
 
-### main v0.9 (Aug 23, 2021)
+### main v0.10 (Apr 1, 2022)
+
+Split docusaurus repo from the mixed repo with Jekyll ([Issue wechaty/wechaty.js.org#1](https://github.com/wechaty/wechaty.js.org/issues/1))
+
+### v0.9 (Aug 23, 2021)
 
 1. Add OpenAPI Specification docs at <https://wechaty.js.org/docs/openapi/> ([#1218](https://github.com/wechaty/wechaty.js.org/issues/1218))
 
@@ -194,7 +109,6 @@ Init version
 
 1. [@lijiarui](https://github.com/lijiarui), [Rui LI](https://wechaty.js.org/contributors/lijiarui), Microsoft AI MVP, Founder & CEO of Juzi.BOT (YC W19 Alumni)
 1. [@huan](https://github.com/huan), [Huan LI](https://wechaty.js.org/contributors/huan), Tencent TVP of Chatbot, \<zixia@zixia.net\>
-1. [@wj-Mcat](https://github.com/wj-Mcat), [Jingjing WU](https://wechaty.js.org/contributors/wj-mcat), Author of [Python Wechaty](https://github.com/wechaty/python-wechaty)
 
 And [wechaty/contributors](https://github.com/orgs/wechaty/teams/contributors/members)
 

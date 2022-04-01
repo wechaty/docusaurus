@@ -10,7 +10,7 @@ import globCB         from 'glob'
 
 import {
   DOCUSAURUS_FOLDER,
-}                             from '../src/docusaurus/mod.js'
+}                             from '../src/folders.js'
 
 import {
   stripRepoRoot,
@@ -20,7 +20,7 @@ import {
   NOT_WEBP_TO_BE_FIXED_FILE_LIST,
   BIG_SIZE_TO_BE_FIXED_FILE_LIST,
   inList,
-}                                   from './workaround.js'
+}                                   from '../src/workaround.js'
 
 const glob = util.promisify(globCB)
 

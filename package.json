@@ -1,11 +1,12 @@
 {
-  "name": "wechaty.js.org",
+  "name": "wechaty-docusaurus",
   "version": "0.10.86",
-  "description": "Wechaty Official Website for News, Blogs, Contributor Profiles, and Documentations",
+  "description": "Wechaty Official Website for Documentations",
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=14"
+    "node": ">=16",
+    "npm": ">=8"
   },
   "scripts": {
     "fit-image": "./scripts/fit-image.sh",
@@ -17,69 +18,64 @@
     "lint:yml": "true || yamllint jekyll/_data/*.yml",
     "test": "npm-run-all lint test:unit",
     "test:unit": "cross-env TAP_TIMEOUT=60 NODE_OPTIONS=\"--no-warnings --loader=ts-node/esm\" tap \"src/**/*.spec.ts\" \"tests/**/*.spec.ts\"",
-    "build": "npm-run-all build:docusaurus build:jekyll",
-    "build:jekyll": "cd jekyll && make build",
+    "build": "npm-run-all build:docusaurus",
     "build:docusaurus": "cd docusaurus && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wechaty/wechaty.js.org.git"
+    "url": "git+https://github.com/wechaty/docusaurus.git"
   },
   "keywords": [
     "wechaty",
     "document",
     "homepage",
-    "Docusaurus",
-    "Minimal Mistakes",
-    "Jekyll"
+    "Docusaurus"
   ],
   "author": "Huan LI <zixia@zixia.net>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/wechaty/wechaty.js.org/issues"
+    "url": "https://github.com/wechaty/docusaurus/issues"
   },
-  "homepage": "https://github.com/wechaty/wechaty.js.org#readme",
+  "homepage": "https://github.com/wechaty/docusaurus#readme",
   "devDependencies": {
-    "@chatie/eslint-config": "^0.14.1",
+    "@chatie/eslint-config": "^1.0.4",
     "@chatie/git-scripts": "^0.6.2",
-    "@chatie/tsconfig": "^0.20.2",
+    "@chatie/tsconfig": "^4.6.3",
     "@types/ci-info": "^3.1.0",
-    "@types/glob": "^7.1.4",
-    "@types/lodash": "^4.14.172",
-    "@types/marked": "^2.0.4",
-    "@types/node-fetch": "^2.5.12",
+    "@types/glob": "^7.2.0",
+    "@types/lodash": "^4.14.181",
+    "@types/marked": "^4.0.3",
+    "@types/node-fetch": "^2.6.1",
     "@types/probe-image-size": "^7.0.1",
     "@types/yaml-front-matter": "^4.1.0",
     "abort-controller": "^3.0.0",
     "clsx": "^1.1.1",
     "cross-env": "^7.0.3",
-    "file-box": "^0.16.8",
+    "file-box": "^1.4.15",
     "git-scripts": "^0.4.3",
-    "glob": "^7.1.7",
-    "image-size": "^1.0.0",
+    "glob": "^7.2.0",
+    "https-proxy-agent": "^5.0.0",
+    "image-size": "^1.0.1",
     "is-pr": "^2.0.0",
     "lodash": "^4.17.21",
-    "markdownlint-cli": "^0.28.1",
-    "marked": "^3.0.0",
-    "node-fetch": "^2.6.1",
+    "markdownlint-cli": "^0.31.1",
+    "marked": "^4.0.12",
+    "net": "^1.0.2",
+    "node-fetch": "^3.2.3",
     "npm-run-all": "^4.1.5",
-    "probe-image-size": "^7.2.1",
-    "tstest": "^0.7.3",
-    "typescript": "^4.4.3",
+    "probe-image-size": "^7.2.3",
+    "tls": "^0.0.1",
+    "tstest": "^1.2.8",
+    "typescript": "^4.6.3",
     "uuid": "^8.3.2",
     "yaml": "^1.10.2",
     "yaml-front-matter": "^4.1.1",
     "yaml-lint": "^1.2.4",
-    "zero-md": "^2.1.1"
+    "zero-md": "^2.3.4"
   },
   "git": {
     "scripts": {
       "pre-push": "npx git-scripts-pre-push"
     }
-  },
-  "dependencies": {
-    "https-proxy-agent": "^5.0.0",
-    "net": "^1.0.2",
-    "tls": "^0.0.1"
   }
 }

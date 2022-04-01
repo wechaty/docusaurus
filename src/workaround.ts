@@ -45,7 +45,7 @@ const BIG_SIZE_TO_BE_FIXED_FILE_LIST = [] as string[]
  *
  */
 const inList = (whitelist: string[]) => (fileName: string) => whitelist.some(
-  partial => fileName.includes(partial)
+  partial => fileName.includes(partial),
 )
 
 export {

@@ -1,19 +1,15 @@
 {
   "rules": {
-    "jekyll/_posts": [
+    "docusaurus/docs": [
       "/[0-9\\-a-z]+\\.",
-      "\\.md$"
+      "\\.md(x?)$"
     ],
-    "jekyll/assets": [
-      "/[0-9\\-a-z_]+\\.",
-      "\\.(webp|pdf|zip|svg)$"
+    "docusaurus/static": [
+      "^(\\.?)[0-9\\-a-z_]+(\\.?)",
+      "\\.(webp|pdf|zip|svg|css|ico|png|nojekyll|js|json)$"
     ]
   },
   "ignore": [
-    "jekyll/assets/js",
-    "jekyll/assets/css",
-    "jekyll/assets/images",
-    "jekyll/assets/contributors/wechaty",
     "tests/fixtures"
   ]
 }

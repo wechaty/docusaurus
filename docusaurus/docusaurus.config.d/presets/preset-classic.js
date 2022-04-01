@@ -9,7 +9,7 @@
   {
     docs: {
       sidebarPath: require.resolve('../../sidebars.ts'),
-      editUrl: 'https://github.com/wechaty/wechaty.js.org/edit/main/docusaurus/',
+      editUrl: 'https://github.com/wechaty/docusaurus/edit/main/docusaurus/',
       showLastUpdateAuthor: true,
       showLastUpdateTime: true,
     },
@@ -17,7 +17,7 @@
     //   showReadingTime: true,
     //   // Please change this to your repo.
     //   editUrl:
-    //     'https://github.com/wechaty/wechaty.js.org/edit/master/docusaurusblog/',
+    //     'https://github.com/wechaty/docusaurus/edit/master/docusaurus/blog/',
     // },
     theme: {
       customCss: require.resolve('../../src/css/custom.css'),
