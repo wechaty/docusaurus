@@ -5,6 +5,7 @@ set -eo pipefail
 function buildDocusarus () {
   pushd docusaurus
   rm -fr build
+  npm install
   npx docusaurus build
   mv build/sitemap.xml build/sitemap-docusaurus.xml
   popd

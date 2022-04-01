@@ -32,8 +32,6 @@ jobs:
           git log --since="1 week ago" --name-only --pretty=format: | sort | uniq | wc -l
       - name: NPM Test
         run: npm test
-      - name: Install Dependencies
-        run: make install
       - name: Build
         run: npm run build
 
@@ -47,11 +45,6 @@ jobs:
     - uses: actions/checkout@v2
       with:
         fetch-depth: 0  # https://github.com/facebook/docusaurus/issues/2798#issuecomment-636602951
-
-    - name: Bundle Cache Config
-      run: |
-        sudo gem install bundler
-        # bundle config path ~/.npm/bundle
 
     - uses: actions/setup-node@v2
       with:
@@ -69,9 +62,6 @@ jobs:
         git reset --hard
         git commit --allow-empty -m "Orphan init"
         git checkout main
-    - name: Install dependencies
-      run: |
-        make install
     - name: Bind git worktree with new-gh-pages folder and gh-pages branch
       run: |
         rm -fr new-gh-pages
