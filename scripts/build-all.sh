@@ -31,6 +31,7 @@ fi
 
 buildDocusarus
 
+cp -Rav docusaurus/build/* "$target"
 rm -f "$target"/README.md
 touch "$target"/.nojekyll
 buildManifest "$target"/manifest.json
