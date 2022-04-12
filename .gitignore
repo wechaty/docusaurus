@@ -5,6 +5,7 @@ t.*
 .idea
 .DS_Store
 */.DS_Store
+.history
 
 package-lock.json
 
