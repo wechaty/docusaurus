@@ -35,7 +35,8 @@ Short-term TOKEN（7 days） is for those developers who want to test Wechaty Pu
 TODO: list a easy to follow steps how to apply free token
 
 - Paimon: Register [here](http://120.55.60.194/)
-- wxwork/donut: Using **WeCom Account**(Not WeChat) with administrator rights [here](https://qiwei.juzibot.com/user/login?isWechaty=true).
+- WorkPro: contact [here](https://work.weixin.qq.com/kfid/kfcbfceaec6e8e30afe)
+- wxwork/donut: deprecated and no further service available.
 - Padlocal: [👉🏻 Get Free PadLocal Token 👈🏻](http://pad-local.com/)
 
 ### 2. Free TOKEN (Long-term)
@@ -60,7 +61,8 @@ Now, we have the following Wechaty Puppet Services:
 
 | Name | Platform | Protocol | Life Cycle |
 | :---: | :---: | :---: | :---: |
-| [WXWork](wxwork.md) | WeCom | Windows | Beta |
+| [WorkPro](workpro.md) | WeCom | Windows | Beta |
+| [WXWork](wxwork.md) | WeCom | Windows | Deprecated |
 | [Paimon](paimon.md)| WeChat | Pad | Beta |
 | [PadLocal](padlocal.md) | WeChat | Pad | Beta |
 | [Donut](donut.md) | WeChat | Windows | Deprecated |

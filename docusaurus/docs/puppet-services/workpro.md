@@ -1,6 +1,6 @@
 ---
 title: 'Puppet Service: WorkPro'
-sidebar_label: WXWork
+sidebar_label: WorkPro
 ---
 
 [![Wechaty Puppet Service WorkPro](https://img.shields.io/badge/Service-WorkPro-blue)](workpro.md)
