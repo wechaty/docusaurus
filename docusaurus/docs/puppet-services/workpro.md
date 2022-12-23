@@ -30,7 +30,7 @@ Please scan the following QRCode with wechat or wecom:
 
 ## Known Issues
 
-1. Room announce event will break current puppet-service(v1.19.8). Will be fixed soon. See: https://github.com/wechaty/puppet-service/issues/216
+1. Room announce event will break current puppet-service(v1.19.8). Will be fixed soon. See: [Issue 216](https://github.com/wechaty/puppet-service/issues/216)
 
 ## Questions
 
@@ -45,7 +45,6 @@ Please scan the following QRCode with wechat or wecom:
 
 Please scan the following QRCode with wechat or wecom:
 ![QrCode](../../static/img/docs/references/puppet-services/workpro/workpro-doc-qrcode.webp)
-
 
 ## Blogs
 
