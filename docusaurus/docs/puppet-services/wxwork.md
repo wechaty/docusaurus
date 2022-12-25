@@ -34,7 +34,7 @@ Register via WeCom at [jukebox](https://qiwei.juzibot.com/user/login?isWechaty=t
 
 ## Questions
 
-[Submit an issue here.](https://github.com/wechaty/puppet-services/issues/new?assignees=windmemory&labels=wxwork&template=wxwork.md&title=WXWork%3A+)
+[Submit an issue here.](https://github.com/wechaty/puppet-supports/issues/new?assignees=su-chang%2Chcfw007&labels=workpro&template=workpro.md&title=WXWork%3A+)
 
 ## History
 
