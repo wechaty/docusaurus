@@ -7,7 +7,7 @@ sidebar_label: WXWork
 
 ## Updates on 2022-12-24
 
-WxWork is deprecated and will not receive any updates. Please switch to our latest service: WorkPro.
+WxWork is deprecated and will not receive any updates. Please switch to our latest service: [WorkPro](https://wechaty.js.org/docs/puppet-services/workpro).
 
 ```wechaty-puppet-wxwork``` is a **WeCom**(original WeChat Work) solution. Currently it supports the following features:
 
