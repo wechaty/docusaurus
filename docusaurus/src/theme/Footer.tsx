@@ -71,7 +71,7 @@ const Footer = () => {
             <img
               alt="Wechaty QR Scanner"
               id="scanner"
-              src="/img/wechatyqrcode.webp"
+              src="/img/wechaty-qrcode.png"
             />
             <strong id="footerColumnEmphasis">
               Join our WeChat Room

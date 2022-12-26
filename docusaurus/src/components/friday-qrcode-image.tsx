@@ -4,6 +4,8 @@ void React
 
 export default function FridayQrCodeImage (_props: any) {
   return <img
-    src='/img/friday-qrcode.svg'
+    alt="Wechaty Developers' Home"
+    width="344"
+    src="/img/wechaty-qrcode.png"
   />
 }
