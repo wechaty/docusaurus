@@ -5,7 +5,9 @@ sidebar_label: WorkPro
 
 [![Wechaty Puppet Service WorkPro](https://img.shields.io/badge/Service-WorkPro-blue)](workpro.md)
 
-```wechaty-puppet-workpro``` is a **WeCom**(original WeChat Work) solution. Currently it supports the following features:
+```wechaty-puppet-workpro``` is a **WeCom**(original WeChat Work) solution. Provided by [@RPAChat](https://github.com/RPAChat).
+
+ Currently it supports the following features:
 
 - Send / Receive Text, Image, Video, File, UrlLink, MiniProgram, **Location**, **Channel**, **Voice** messages
 - Get Corporation and Individual contacts
@@ -17,11 +19,6 @@ sidebar_label: WorkPro
 - Tag events (add, delete, rename)
 - Contact events (friendship, tag)
 - **Moment Posting**
-
-## Github repository
-
-- Repo: <https://github.com/RPAChat/workpro-getting-started>
-- Provider: [@RPAChat](https://github.com/RPAChat)
 
 ## How to buy
 
