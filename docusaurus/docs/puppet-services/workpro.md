@@ -34,7 +34,7 @@ Please scan the following QRCode with wechat or wecom:
 
 ## Questions
 
-[Submit an issue here.](https://github.com/wechaty/puppet-supports/issues)
+[Submit an issue here.](https://github.com/wechaty/puppet-supports/issues/new?assignees=su-chang%2Chcfw007&labels=workpro&template=workpro_bug.md&title=%5BFEAT%5DWorkPro%3A)
 
 ## History
 
