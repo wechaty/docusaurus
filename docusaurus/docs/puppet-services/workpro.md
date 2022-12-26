@@ -26,6 +26,7 @@ sidebar_label: WorkPro
 ## How to buy
 
 Please scan the following QRCode with wechat or wecom:
+
 ![QrCode](../../static/img/docs/references/puppet-services/workpro/workpro-doc-qrcode.webp)
 
 ## Known Issues
@@ -43,6 +44,7 @@ Please scan the following QRCode with wechat or wecom:
 ## Contact
 
 Please scan the following QRCode with wechat or wecom:
+
 ![QrCode](../../static/img/docs/references/puppet-services/workpro/workpro-doc-qrcode.webp)
 
 ## Blogs
