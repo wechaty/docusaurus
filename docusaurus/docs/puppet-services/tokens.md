@@ -10,7 +10,7 @@ TOKEN is a unique string for authorizing Wechaty Puppet Service.
 
 ## Examples
 
-1. **WXWork TOKEN** : `puppet_wxwork_7ce4cf8a1ab789166c39c6`
+1. **WorkPro TOKEN** : `puppet_workpro_7ce4cf8a1ab789166c39c6`
 2. **PadLocal TOKEN** : `puppet_padlocal_7ce48a1ab789166c39c6`
 3. **Paimon TOKEN** : `puppet_paimon_7ce4cf8a1ab789166c39c6`
 4. **Donut TOKEN** : `puppet_donut_e7ce4cf8a1ab789166c39c6`
@@ -35,7 +35,7 @@ Short-term TOKEN（7 days） is for those developers who want to test Wechaty Pu
 TODO: list a easy to follow steps how to apply free token
 
 - Paimon: Register [here](http://120.55.60.194/)
-- WorkPro: contact [here](https://work.weixin.qq.com/kfid/kfcbfceaec6e8e30afe)
+- WorkPro: contact [here](../../static/img/docs/references/puppet-services/workpro/workpro-doc-qrcode.webp)
 - wxwork/donut: deprecated and no further service available.
 - Padlocal: [👉🏻 Get Free PadLocal Token 👈🏻](http://pad-local.com/)
 

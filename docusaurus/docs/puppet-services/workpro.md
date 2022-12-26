@@ -38,8 +38,7 @@ Please scan the following QRCode with wechat or wecom:
 
 ## History
 
-1. [🔥🔥🔥 Introducing new puppet-service: wechaty-puppet-workpro #2462
-](https://github.com/wechaty/wechaty/issues/2462)
+1. [🔥🔥🔥 Introducing new puppet-service: wechaty-puppet-workpro #2462](https://github.com/wechaty/wechaty/issues/2462)
 
 ## Contact
 
