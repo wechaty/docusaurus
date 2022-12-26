@@ -23,7 +23,7 @@ Just scan the generated QR code with **WeChat** app, and you are ready to play w
 
 ## Building the bot
 
-If you want to run `ding-dong bot` locally and build it from scratch you can refer [here](../docs/getting-started/running-locally.mdx).
+If you want to run `ding-dong bot` locally and build it from scratch you can refer [here](../../getting-started/running-locally.mdx).
 
 ## Bot demonstration
 
