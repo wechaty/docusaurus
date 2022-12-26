@@ -78,7 +78,7 @@ Wechaty Puppet Providers are **npm** packages that you can install by using the 
 npm install wechaty-puppet-NAME
 ```
 
-> You have to replace the `wechaty-puppet-NAME` with the puppet you want to use. There are various puppets available, you can choose from [here](./puppet-providers/overview.mdx).
+> You have to replace the `wechaty-puppet-NAME` with the puppet you want to use. There are various puppets available, you can choose from [here](../puppet-providers/overview.mdx).
 
 ## Good to go
 
