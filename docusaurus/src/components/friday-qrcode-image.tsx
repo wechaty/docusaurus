@@ -6,6 +6,6 @@ export default function FridayQrCodeImage (_props: any) {
   return <img
     alt="Wechaty Developers' Home"
     width="344"
-    src="/img/wechaty-qrcode.png"
+    src="/img/wechaty-qrcode.webp"
   />
 }
