@@ -16,7 +16,7 @@ sidebar_label: '点亮计划: Index'
 ## Wechaty 点亮计划
 
 - [Wechaty 暑期 2021](2021.md)
-- [回顾：Wechaty 暑期 2020](2020.md)
+- [回顾：Wechaty 暑期 2020](2020.mdx)
 
 ## 什么是开源软件供应链点亮计划
 
