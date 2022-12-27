@@ -1,4 +1,5 @@
 ---
+slug: /howto/degraded/degraded-room-md
 title: 'Managing rooms'
 ---
 

@@ -1,4 +1,5 @@
 ---
+slug: /howto/degraded/degraded-message-md
 title: 'Dealing with message'
 ---
 
