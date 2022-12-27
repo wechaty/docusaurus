@@ -5,6 +5,10 @@ sidebar_label: WXWork
 
 [![Wechaty Puppet Service WXWork](https://img.shields.io/badge/Service-WXWork-blue)](wxwork.md)
 
+## Updates on 2022-12-24
+
+WxWork is deprecated and will not receive any updates. Please switch to our latest service: [WorkPro](https://wechaty.js.org/docs/puppet-services/workpro).
+
 ```wechaty-puppet-wxwork``` is a **WeCom**(original WeChat Work) solution. Currently it supports the following features:
 
 - Send / Receive Text, Image, Video, File, UrlLink, MiniProgram messages
@@ -30,7 +34,7 @@ Register via WeCom at [jukebox](https://qiwei.juzibot.com/user/login?isWechaty=t
 
 ## Questions
 
-[Submit an issue here.](https://github.com/wechaty/puppet-services/issues/new?assignees=windmemory&labels=wxwork&template=wxwork.md&title=WXWork%3A+)
+[Submit an issue here.](https://github.com/wechaty/puppet-supports/issues/new?assignees=su-chang%2Chcfw007&labels=workpro&template=workpro.md&title=WXWork%3A+)
 
 ## History
 
