@@ -72,6 +72,7 @@ const puppetServices: SubMenuData = {
   label: 'Puppet Services',
   items: [
     'puppet-services/overview',
+    'puppet-services/workpro',
     'puppet-services/wxwork',
     'puppet-services/padlocal',
     'puppet-services/paimon',
