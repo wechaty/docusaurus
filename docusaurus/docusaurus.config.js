@@ -5,6 +5,7 @@ const {
   plugins,
   themeConfig,
   presets,
+  themes,
 }               = require('./docusaurus.config.d/mod.js')
 
 const config = {
@@ -27,6 +28,7 @@ const config = {
   themeConfig,
   presets,
   plugins,
+  themes,
 }
 
 module.exports = config
