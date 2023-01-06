@@ -151,15 +151,13 @@ The method sends a Friend Request to a `contact` with message `hello`.The best p
 | contact | `Contact` | Send friend request to contact |
 | options | `FriendshipAddOptions` | The friend request option |
 
-#### Example
-
-- add searched contact be friends
+#### Example \(add searched contact\)
 
 ```javascript
 await bot.Friendship.add(searchContact, { hello: 'Nice to meet you! I am wechaty bot!' })
 ```
 
-- add room member be friends
+#### Example \(add room member\)
 
 ```javascript
 const memberList = await room.memberList()
@@ -172,7 +170,7 @@ for (let i = 0; i < memberList.length; i++) {
 
 ```
 
-- add contact card be friends
+#### Example \(add contact card\)
 
 ```javascript
 if (message.type() === bot.Message.Type.Contact) {
