@@ -125,20 +125,65 @@ bot.on('friendship', async friendship => {
 .start()
 ```
 
-### Friendship.add\(contact, hello\) ⇒ `Promise <void>`
+### Friendship.search\(phone\) ⇒ `Promise <Contact>`
+
+The method search contact by phone number and get a `contact`. The best practice is to send friend request once per minute. Remember not to do this too frequently, or your account may be blocked.
+
+| Param | Type | Description |
+| :--- | :--- | :--- |
+| phone | `number` | search phone number |
+
+#### Example
+
+```javascript
+const phone = '131xxx1234'
+const searchContact = await bot.Friendship.search({
+  phone,
+})
+```
+
+### Friendship.add\(contact, options\) ⇒ `Promise <void>`
 
 The method sends a Friend Request to a `contact` with message `hello`.The best practice is to send friend request once per minute. Remember not to do this too frequently, or your account may be blocked.
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
 | contact | `Contact` | Send friend request to contact |
-| hello | `string` | The friend request content |
+| options | `FriendshipAddOptions` | The friend request option |
 
 #### Example
+
+- add searched contact be friends
+
+```javascript
+await bot.Friendship.add(searchContact, { hello: 'Nice to meet you! I am wechaty bot!' })
+```
+
+- add room member be friends
 
 ```javascript
 const memberList = await room.memberList()
 for (let i = 0; i < memberList.length; i++) {
-  await bot.Friendship.add(member, 'Nice to meet you! I am wechaty bot!')
+  await bot.Friendship.add(member, {
+    room: message.room(),
+    hello: 'Nice to meet you! I am wechaty bot!',
+  })
+}
+
+```
+
+- add contact card be friends
+
+```javascript
+if (message.type() === bot.Message.Type.Contact) {
+  const contact = await message.toContact()
+  const options = {
+    contact: message.talker(),
+    hello: 'Nice to meet you! I am wechaty bot!',
+  }
+  if (message.room()) {
+    options.room = message.room()
+  }
+  await bot.Friendship.add(contact, options)
 }
 ```
