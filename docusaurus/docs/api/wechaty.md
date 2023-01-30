@@ -22,6 +22,7 @@ Returns Wechaty instance.
 Create an instance of Wechaty based on option provided.
 
 example:
+
 ```ts
 import { WechatyBuilder } from 'wechaty'
 

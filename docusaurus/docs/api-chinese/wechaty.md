@@ -22,6 +22,7 @@ Wechaty 的构造类用于构造 Wechaty 实例。
 根据 option 构造一个 Wechaty 实例。
 
 示例:
+
 ```ts
 import { WechatyBuilder } from 'wechaty'
 
