@@ -13,19 +13,19 @@ title: Wechaty
 
 ## Class: WechatyBuilder
 
-Builder Class for Wechaty that creates Wechaty instance.
+Wechaty 的构造类用于构造 Wechaty 实例。
 
 ### Static method: WechatyBuilder.build(options?: WechatyOptions)
 
-Returns Wechaty instance.
+返回 Wechaty 实例。
 
-Create an instance of Wechaty based on option provided.
+根据 option 构造一个 Wechaty 实例。
 
-example:
+示例:
 ```ts
 import { WechatyBuilder } from 'wechaty'
 
-WechatyBuilder.build(options) // instance() for singleton mode
+WechatyBuilder.build(options) // 在单例模式使用 instance()
   .on('scan', (url, status) => console.log(`Scan QR Code to login: ${status}\n${url}`))
   .on('login',       user => console.log(`User ${user} logged in`))
   .on('message',  message => console.log(`Message: ${message}`))
@@ -34,30 +34,30 @@ WechatyBuilder.build(options) // instance() for singleton mode
 
 ### Static method: WechatyBuilder.singleton(options?: WechatyOptions)
 
-Returns Wechaty instance.
+返回 Wechaty 实例。
 
-Create an instance of Wechaty based on option provided in singleton mode.
+根据 option 构造一个单例模式的 Wechaty 实例。
 
 ### Static method: WechatyBuilder.valid(target: any)
 
-Returns whether the target is a wechaty instance.
+返回 target 是否是 Wechaty 实例。
 
 ## Class: Wechaty
 
-Main bot class.
+主要的 bot 类。
 
-A bot is an instance represents an IM, depends on whichever puppet you are using.
+一个 bot 是指一个代表了某个特定即时通讯软件的实力，根据使用的 puppet 不同而有所区别。
 
 ### wechaty.start()
 
-Start the bot.
+启动 bot 。
 
 ### wechaty.say(sayable: Sayable)
 
-Send message to the current user.
+对 bot 的当前用户发送消息。
 
 ### wechaty.publish(post: PostInterface)
 
-Returns PostInterface that has been published or void, depends on puppet.
+返回一个 postInterface 或者 void ，根据 puppet 不同有所区别。
 
-Publish a moment to timeline. For more detail please visit Post section. (WIP)
+发送一条朋友圈，详情请参考 Post 部分。（编写中）

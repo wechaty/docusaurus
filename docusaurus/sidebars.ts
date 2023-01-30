@@ -31,6 +31,13 @@ const api: SubMenuData = {
   ],
 }
 
+const apiChinese: SubMenuData = {
+  label: '接口文档',
+  items: [
+    'api-chinese/wechaty',
+  ],
+}
+
 const polyglot: SubMenuData = {
   label: 'Polyglot',
   items: [
@@ -369,6 +376,7 @@ const references = {
   items: [
     'references/overview',
     subMenu(api),
+    subMenu(apiChinese),
     subMenu(polyglot),
     subMenu(puppetProviders),
     subMenu(puppetServices),
