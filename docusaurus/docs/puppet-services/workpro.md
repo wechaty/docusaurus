@@ -26,9 +26,24 @@ Please scan the following QRCode with wechat or wecom:
 
 ![QrCode](../../static/img/docs/references/puppet-services/workpro/workpro-doc-qrcode.webp)
 
+## Frequently asked questions
+
+- 14 UNAVAILABLE: No connection established
+
+  This is often caused by TLS setting problem. You have to disable TLS to use WorkPro token. You can do this with code or environment variables.
+
+  - Code: add ```tls: {disable: true}``` into puppetOptions.
+  - Env: WECHATY_PUPPET_SERVICE_NO_TLS_INSECURE_CLIENT=true
+
+- Cannot find token
+
+  When you get your token, you'll also get the discovery service address of the token. (If not, please contact customer service.) If the address is not ```api.chatie.com```, then you have to set an environment variable to explicitly set it. You can do this by adding this to your environment variable list.
+
+  - Env: WECHATY_PUPPET_SERVICE_AUTHORITY={DISCOVER_ADDRESS} (Address is usually token-service-discovery-test.juzibot.com)
+
 ## Known Issues
 
-1. Room announce event will break current puppet-service(v1.19.8). Will be fixed soon. See: [Issue 216](https://github.com/wechaty/puppet-service/issues/216)
+1. Room announce event will break current puppet-service(v1.19.8). Fixed in latest puppet-service version.. See: [Issue 216](https://github.com/wechaty/puppet-service/issues/216)
 
 ## Questions
 
@@ -46,4 +61,7 @@ Please scan the following QRCode with wechat or wecom:
 
 ## Blogs
 
-Check out blogs with the `workpro` tag at <https://wechaty.js.org/tags.html#workpro>
+- [Wechaty Puppet Service WorkPro Launch Announcement](https://wechaty.js.org/2022/12/23/introducing-workpro-puppet/)
+- [Wechaty Puppet Service WorkPro Immigration Guide](https://wechaty.js.org/2023/01/18/workpro-immigration-guide/)
+
+Check out more blogs with the `workpro` tag at <https://wechaty.js.org/tags.html#workpro>
