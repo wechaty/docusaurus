@@ -22,10 +22,8 @@ const botDev: SubMenuData = {
   label: 'Bot Dev',
   items: [
     'bot-dev/overview',
-    'bot-dev/install',
     'bot-dev/helloworld',
-    'bot-dev/contact',
-    'bot-dev/message',
+    'bot-dev/user-module-message',
   ],
 }
 

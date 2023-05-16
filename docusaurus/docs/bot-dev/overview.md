@@ -23,7 +23,15 @@ async function main () {
 }
 ```
 
-This section will focus on Wechaty apis. It will not go deep into low level implementations like puppet.
+## How to install
+
+In most cases, you should install ```wechaty``` only. The package ```wechaty``` has ```wechaty-puppet```, ```wechaty-puppet-service``` in its dependencies, so you don't have install them by yourself. So all you have to is
+
+```bash
+npm install wechaty
+```
+
+If you wish to use a particular version of ```wechaty-puppet``` or ```wechaty-puppet-service```, you can install such package manully.
 
 ## Changelog
 
