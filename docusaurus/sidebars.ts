@@ -18,16 +18,14 @@ const showcases: SubMenuData = {
   ],
 }
 
-const api: SubMenuData = {
-  label: 'API',
+const botDev: SubMenuData = {
+  label: 'Bot Dev',
   items: [
-    'api/overview',
-    'api/wechaty',
-    'api/message',
-    'api/contact',
-    'api/room',
-    'api/room-invitation',
-    'api/friendship',
+    'bot-dev/overview',
+    'bot-dev/install',
+    'bot-dev/helloworld',
+    'bot-dev/contact',
+    'bot-dev/message',
   ],
 }
 
@@ -368,7 +366,7 @@ const references = {
   label: 'References',
   items: [
     'references/overview',
-    subMenu(api),
+    subMenu(botDev),
     subMenu(polyglot),
     subMenu(puppetProviders),
     subMenu(puppetServices),
