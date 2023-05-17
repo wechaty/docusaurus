@@ -190,7 +190,8 @@ Force reload data of the contact, useful when the info of the contact has been m
 ### readMark
 
 ```ts
-async readMark (hasRead?: boolean): Promise<void | boolean>
+async readMark (hasRead: boolean): Promise<void>
+async readMark (): Promise<boolean>
 ```
 
 Get or set the readmark condition of the contact. Readmark is the read dot in IM that marks new messages.
