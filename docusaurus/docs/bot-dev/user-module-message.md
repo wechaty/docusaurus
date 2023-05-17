@@ -14,7 +14,7 @@ If a message is recalled, it won't be removed. There will be two messages, the o
 You can call static methods from ```bot.Message```, e.g.
 
 ```ts
-bot.Message.find({id})
+const message = await bot.Message.find({id})
 ```
 
 ### find
@@ -86,7 +86,7 @@ If the message is not a recall message, an error will be thrown. Other wise it w
 ### say
 
 ```ts
-  async say (sayable: Sayable): Promise<void | MessageInterface>
+async say (sayable: Sayable): Promise<void | MessageInterface>
 ```
 
 Send a message to the talker. The following two code sections are the same. The new message will be returned.

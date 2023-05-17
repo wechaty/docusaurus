@@ -24,6 +24,7 @@ const botDev: SubMenuData = {
     'bot-dev/overview',
     'bot-dev/helloworld',
     'bot-dev/user-module-message',
+    'bot-dev/user-module-contact',
   ],
 }
 
