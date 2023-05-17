@@ -1,5 +1,4 @@
 ---
-slug: /bot-dev/
 title: Bot Development
 sidebar_label: 'Overview'
 ---

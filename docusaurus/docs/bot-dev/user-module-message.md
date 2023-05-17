@@ -1,5 +1,4 @@
 ---
-slug: /bot-dev/
 title: Message
 sidebar_label: 'User Module: Message'
 ---
