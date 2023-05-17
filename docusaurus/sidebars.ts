@@ -28,6 +28,7 @@ const botDev: SubMenuData = {
     'bot-dev/user-module-room',
     'bot-dev/user-module-friendship',
     'bot-dev/user-module-tag',
+    'bot-dev/user-module-post',
   ],
 }
 

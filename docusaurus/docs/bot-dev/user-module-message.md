@@ -3,7 +3,7 @@ title: Message
 sidebar_label: 'User Module: Message'
 ---
 
-## Message Class
+# Message Class
 
 Message is more than just a message in a conversation. It also represents any 'sayable'. For example, if your friend posted a moment with images. Each image is also an image. (In this case the talker and the receiver will both be the publisher of the moment.)
 

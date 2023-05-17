@@ -3,7 +3,7 @@ title: Friendship
 sidebar_label: 'User Module: Friendship'
 ---
 
-## Friendship Class
+# Friendship Class
 
 Friendship class is used only when you want to add new friends. Unlike most user modules that can be loaded with ```find``` or ```findAll```, friendship can created internally and passed as parameter in ```friendship``` event callback. It can also be serialized and deserialized to and from JSON.
 

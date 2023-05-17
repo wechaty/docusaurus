@@ -3,7 +3,7 @@ title: Tag
 sidebar_label: 'User Module: Tag'
 ---
 
-## Tag Class
+# Tag Class
 
 Tag represents the a tag on the contact. Current design did not implements features like tag ids, tag groups etc. There will be rework on tag soon.
 

@@ -3,7 +3,7 @@ title: Room
 sidebar_label: 'User Module: Room'
 ---
 
-## Room Class
+# Room Class
 
 Room, as the name indicates, represents a room in IM. The Room class provides many functions including getting properties, send messages, edit info, etc.
 
@@ -116,7 +116,7 @@ async topic (newTopic: string): Promise<void>
 
 Get or set the topic of the room.
 
-example:
+Example:
 
 ```ts
 const room = bot.Room.find({ topic: 'oldTopic' })

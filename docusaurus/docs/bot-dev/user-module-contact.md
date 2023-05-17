@@ -3,7 +3,7 @@ title: Contact
 sidebar_label: 'User Module: Contact'
 ---
 
-## Contact Class
+# Contact Class
 
 Contact, as the name indicates, represents a contact in IM. The Contact class provides many functions including getting properties, send messages, edit info, etc.
 

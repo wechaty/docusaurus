@@ -3,7 +3,7 @@ title: Bot Development
 sidebar_label: 'Overview'
 ---
 
-## Intro
+# Intro
 
 Wechaty is a Node.js library for building chatbots that work on WeChat, WhatsApp, and other messaging platforms. With Wechaty, you can build intelligent chatbots that automate tasks, engage with customers, and provide a personalized experience for your users.
 

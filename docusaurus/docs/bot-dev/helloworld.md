@@ -3,7 +3,7 @@ title: Bot Development
 sidebar_label: 'Hello World'
 ---
 
-## Hello World
+# Hello World
 
 In this section, we'll create a simple bot: Ding-Dong bot. When it receives a text message 'ding', it will reply with text 'dong'.
 
