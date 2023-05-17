@@ -5,7 +5,7 @@ sidebar_label: 'User Module: Contact'
 
 ## Contact Class
 
-Contact, as the name indicates, represents a contact in IM. The Contact class provides many function including getting properties, send messages, edit info, etc.
+Contact, as the name indicates, represents a contact in IM. The Contact class provides many functions including getting properties, send messages, edit info, etc.
 
 Note that a contact may not be a friend. They may just be a member in one of your rooms.
 
