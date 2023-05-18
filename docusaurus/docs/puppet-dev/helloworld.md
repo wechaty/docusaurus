@@ -44,7 +44,7 @@ export class PuppetOO extends Puppet {
 
     this.selfInfo = data
 
-    super.login(this.selfInfo.id)
+    this.login(this.selfInfo.id)
   }
 
   contactRawPayloadParser(payload: any) {
