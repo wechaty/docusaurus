@@ -38,6 +38,11 @@ const puppetDev: SubMenuData = {
   items: [
     'puppet-dev/overview',
     'puppet-dev/helloworld',
+    'puppet-dev/mixin-contact',
+    'puppet-dev/mixin-room',
+    'puppet-dev/mixin-friendship',
+    'puppet-dev/mixin-login',
+    'puppet-dev/mixin-message',
   ],
 }
 
