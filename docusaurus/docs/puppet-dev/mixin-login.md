@@ -7,7 +7,7 @@ sidebar_label: 'Mixin: Login'
 
 Unlike other mixins, login mixin contains no abstract methods. Instead it contains many useful properties and methods you can use when writing a puppet.
 
-## properties
+## Properties
 
 ### currentUserId
 
