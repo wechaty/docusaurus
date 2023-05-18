@@ -33,6 +33,14 @@ const botDev: SubMenuData = {
   ],
 }
 
+const puppetDev: SubMenuData = {
+  label: 'Puppet Dev',
+  items: [
+    'puppet-dev/overview',
+    'puppet-dev/helloworld',
+  ],
+}
+
 const polyglot: SubMenuData = {
   label: 'Polyglot',
   items: [
@@ -371,6 +379,7 @@ const references = {
   items: [
     'references/overview',
     subMenu(botDev),
+    subMenu(puppetDev),
     subMenu(polyglot),
     subMenu(puppetProviders),
     subMenu(puppetServices),

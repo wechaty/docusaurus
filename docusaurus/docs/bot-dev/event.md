@@ -29,7 +29,6 @@ bot.on('scan', (qrcode) => {
 
 ```ts
 type WechatyEventListenerLogin = (user: ContactSelfInterface) => void | Promise<void>
-
 ```
 
 After the bot login full successful, the event login will be emitted, with a Contact of current logged in user.
