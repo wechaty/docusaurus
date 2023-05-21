@@ -3,7 +3,7 @@ title: Tag
 sidebar_label: 'Tag'
 ---
 
-# Room Mixin
+# Tag Mixin
 
 ## Abstract Methods
 

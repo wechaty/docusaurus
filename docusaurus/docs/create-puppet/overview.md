@@ -13,7 +13,7 @@ Popular puppets includes ```wechaty-puppet-wechat4u```, ```wechaty-puppet-workpr
 
 # Mixins
 
-Puppet methods are categorized and defined in mixins. Mixins defines both abstract and implemented methods. This document will go through most mixins in later section.
+Puppet methods are categorized and defined in mixins. Mixins defines both abstract and implemented methods. This document will go through most mixins and introduce how you should implement the abstract methods in later section.
 
 It is perfectly normal that some methods are not implemented or even cannot be implemented (due to not supported). You can throw an error in that case.
 
