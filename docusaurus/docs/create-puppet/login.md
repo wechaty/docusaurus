@@ -43,7 +43,7 @@ login (userId: string): void
 
 Should be called by the puppet when logging in. This method will emit a ```login``` event, set ```currentUserId``` property so you should not do so in puppet implementation.
 
-### login
+### logout
 
 ```ts
 async logout (reason = 'logout()'): Promise<void>
