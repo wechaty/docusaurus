@@ -1,9 +1,9 @@
 ---
-title: Events
-sidebar_label: 'Events'
+title: Event
+sidebar_label: 'Event'
 ---
 
-# Events
+# Event
 
 Wechaty is driven by events. A puppet should emit different kinds of events on different occasions. Puppet events are different from wechaty events, though most of them are the same. For example, a puppet event heartbeat will not 
 

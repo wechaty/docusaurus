@@ -39,11 +39,15 @@ const createPuppet: SubMenuData = {
   items: [
     'create-puppet/overview',
     'create-puppet/helloworld',
+    'create-puppet/event',
     'create-puppet/contact',
     'create-puppet/room',
+    'create-puppet/roommember',
+    'create-puppet/roominvitation',
+    'create-puppet/message',
     'create-puppet/friendship',
     'create-puppet/login',
-    'create-puppet/message',
+
   ],
 }
 
