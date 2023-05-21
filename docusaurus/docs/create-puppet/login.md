@@ -1,11 +1,11 @@
 ---
 title: Login
-sidebar_label: 'Mixin: Login'
+sidebar_label: 'Login'
 ---
 
 # Login Mixin
 
-Unlike other mixins, login mixin contains no abstract methods. Instead it contains many useful properties and methods you can use when writing a puppet.
+Unlike other mixins, login mixin contains no abstract methods. Instead it contains many useful properties and methods you can use when writing a puppet. You don't have to implement any methods in this section, it's just an introduction about how things are done and how can you access to important properties in your puppet development process.
 
 ## Properties
 

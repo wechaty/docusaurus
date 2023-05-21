@@ -1,6 +1,6 @@
 ---
 title: Contact
-sidebar_label: 'Mixin: Contact'
+sidebar_label: 'Contact'
 ---
 
 # Contact Mixin

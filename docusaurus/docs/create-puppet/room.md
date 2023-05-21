@@ -1,6 +1,6 @@
 ---
 title: Room
-sidebar_label: 'Mixin: Room'
+sidebar_label: 'Room'
 ---
 
 # Room Mixin

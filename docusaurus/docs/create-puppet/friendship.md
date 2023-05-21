@@ -1,6 +1,6 @@
 ---
 title: Friendship
-sidebar_label: 'Mixin: Friendship'
+sidebar_label: 'Friendship'
 ---
 
 # Friendship Mixin

@@ -1,6 +1,6 @@
 ---
 title: Message
-sidebar_label: 'Mixin: Message'
+sidebar_label: 'Message'
 ---
 
 # Message Mixin
