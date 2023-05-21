@@ -37,4 +37,4 @@ bot.on('message', message => if (message.text() === 'ding') {
 })
 ```
 
-The message event will pass a ```MessageInterface``` instance to the callback. We can get the text content by calling ```message.text()```. If the message is 'ding', we reply with ```message.say()```. This is a shortcut for sending messages to the sender of the message. You can find detail info about it in [User-Module: Message](bot-dev/user-module-message.md) section.
+The message event will pass a ```MessageInterface``` instance to the callback. We can get the text content by calling ```message.text()```. If the message is 'ding', we reply with ```message.say()```. This is a shortcut for sending messages to the sender of the message. You can find detail info about it in [User-Module: Message](wechaty-api/message.md) section.

@@ -18,32 +18,32 @@ const showcases: SubMenuData = {
   ],
 }
 
-const botDev: SubMenuData = {
-  label: 'Bot Dev',
+const wechatyAPI: SubMenuData = {
+  label: 'Wechaty API',
   items: [
-    'bot-dev/overview',
-    'bot-dev/helloworld',
-    'bot-dev/event',
-    'bot-dev/sayable',
-    'bot-dev/message',
-    'bot-dev/contact',
-    'bot-dev/room',
-    'bot-dev/friendship',
-    'bot-dev/tag',
-    'bot-dev/post',
+    'wechaty-api/overview',
+    'wechaty-api/helloworld',
+    'wechaty-api/event',
+    'wechaty-api/sayable',
+    'wechaty-api/message',
+    'wechaty-api/contact',
+    'wechaty-api/room',
+    'wechaty-api/friendship',
+    'wechaty-api/tag',
+    'wechaty-api/post',
   ],
 }
 
-const puppetDev: SubMenuData = {
-  label: 'Puppet Dev',
+const createPuppet: SubMenuData = {
+  label: 'Create Puppet',
   items: [
-    'puppet-dev/overview',
-    'puppet-dev/helloworld',
-    'puppet-dev/mixin-contact',
-    'puppet-dev/mixin-room',
-    'puppet-dev/mixin-friendship',
-    'puppet-dev/mixin-login',
-    'puppet-dev/mixin-message',
+    'create-puppet/overview',
+    'create-puppet/helloworld',
+    'create-puppet/contact',
+    'create-puppet/room',
+    'create-puppet/friendship',
+    'create-puppet/login',
+    'create-puppet/message',
   ],
 }
 
@@ -384,8 +384,8 @@ const references = {
   label: 'References',
   items: [
     'references/overview',
-    subMenu(botDev),
-    subMenu(puppetDev),
+    subMenu(wechatyAPI),
+    subMenu(createPuppet),
     subMenu(polyglot),
     subMenu(puppetProviders),
     subMenu(puppetServices),
