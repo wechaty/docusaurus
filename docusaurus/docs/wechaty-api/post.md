@@ -1,6 +1,6 @@
 ---
 title: Post
-sidebar_label: 'User Module: Post'
+sidebar_label: ' Post'
 ---
 
 # Post Class

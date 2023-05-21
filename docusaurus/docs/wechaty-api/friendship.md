@@ -1,6 +1,6 @@
 ---
 title: Friendship
-sidebar_label: 'User Module: Friendship'
+sidebar_label: ' Friendship'
 ---
 
 # Friendship Class

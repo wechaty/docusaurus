@@ -1,6 +1,6 @@
 ---
 title: Room
-sidebar_label: 'User Module: Room'
+sidebar_label: ' Room'
 ---
 
 # Room Class

@@ -1,6 +1,6 @@
 ---
 title: Contact
-sidebar_label: 'User Module: Contact'
+sidebar_label: ' Contact'
 ---
 
 # Contact Class

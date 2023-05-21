@@ -1,6 +1,6 @@
 ---
 title: Message
-sidebar_label: 'User Module: Message'
+sidebar_label: ' Message'
 ---
 
 # Message Class

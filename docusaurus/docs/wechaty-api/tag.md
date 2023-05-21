@@ -1,6 +1,6 @@
 ---
 title: Tag
-sidebar_label: 'User Module: Tag'
+sidebar_label: ' Tag'
 ---
 
 # Tag Class
