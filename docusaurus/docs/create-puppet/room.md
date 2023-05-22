@@ -89,3 +89,18 @@ abstract roomAnnounce (roomId: string, text: string): Promise<void>
 ```
 
 Get or set the announcement of a room.
+
+### toString()
+
+```ts
+override toString (): string
+```
+
+Gets a string represents a room instance. Useful when debugging.
+
+Example:
+
+```ts
+const room = await bot.Room.find({id: 'roomId-21' })
+console.log(room) // Room<room-21>
+```

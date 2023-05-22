@@ -24,7 +24,7 @@ Search for a new contact. As we talked in contact section, a contact doesn't hav
 Example:
 
 ```ts
-const contact = await bot.Friendship.search({id: 'contactId-30'}) // Contact<contact-30>
+const contact = await bot.Friendship.search({id: 'contactId-31'}) // Contact<contact-31>
 ```
 
 ### add
@@ -74,8 +74,8 @@ bot.on('friendship', friendship: FriendshipInterface => {
   const jsonStr = friendship.toJSON()
   // {
   //   id: 'friendship-1',
-  //   contactId: 'contactId-34',
-  //   hello: 'hello from contact 34',
+  //   contactId: 'contactId-33',
+  //   hello: 'hello from contact 33',
   //   timestamp: 1684776502976
   // }
   const friendship2 = await bot.Friendship.fromJSON(jsonStr)
@@ -114,7 +114,7 @@ Example:
 
 ```ts
 bot.on('friendship', friendship: FriendshipInterface => {
-  const hello = friendship.hello() // hello from contact-34
+  const hello = friendship.hello() // hello from contact-35
 })
 ```
 
@@ -130,7 +130,7 @@ Example:
 
 ```ts
 bot.on('friendship', friendship: FriendshipInterface => {
-  const contact = friendship.contact() // Contact<contact-36>
+  const contact = friendship.contact() // Contact<contact-37>
 })
 ```
 

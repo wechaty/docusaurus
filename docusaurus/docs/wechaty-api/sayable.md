@@ -89,7 +89,7 @@ const location = new bot.Location({
   address   : '北京市北京市海淀区45号成府路',
   latitude  : 39.995120999999997,
   longitude : 116.334154,
-  name      : '东升镇人民政府',
+  name      : '东升镇',
 })
 
 await contact.say(location)
