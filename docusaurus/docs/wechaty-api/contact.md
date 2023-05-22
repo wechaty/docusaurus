@@ -46,7 +46,7 @@ Examples: Find contacts with names starts with 'contact9':
 ```ts
 const contacts = await bot.Contact.findAll({
   name: \^contact9[3-8]$\
-}) // [contact93, contact94, contact95, contact96, contact97, contact98]
+}) // [Contact<contact-93>, Contact<contact94>, Contact<contact95>, Contact<contact96>, Contact<contact97>, Contact<contact98>]
 ```
 
 ### tags
@@ -397,4 +397,19 @@ If the IM or the contact has no handle info, ```undefined``` will be returned.
 ```ts
 const contact = await bot.Contact.find({id: 'contactId-20' })
 const handle = await contact.handle() // handle-20
+```
+
+### toString()
+
+```ts
+override toString (): string
+```
+
+Gets a string represents a contact instance. Useful when debugging.
+
+Example:
+
+```ts
+const contact = await bot.Contact.find({id: 'contactId-21' })
+console.log(contact) // Contact<contact-21>
 ```

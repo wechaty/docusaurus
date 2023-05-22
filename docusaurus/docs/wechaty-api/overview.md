@@ -59,6 +59,8 @@ Contact info:
 }
 ```
 
+A contact instance with name contact-n will be stringified as ```Contact<contact-n>```.
+
 Room Info:
 ```ts
 {
