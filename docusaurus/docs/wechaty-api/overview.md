@@ -32,6 +32,39 @@ npm install wechaty
 
 If you wish to use a particular version of ```wechaty-puppet``` or ```wechaty-puppet-service```, you can install such package manully.
 
+## Code example mock data:
+
+Bot info: 
+```ts
+{
+  name: 'bot',
+  id: 'contactId-0',
+}
+```
+
+Contact info:
+```ts
+{
+  // n = 1 to 100
+  name: `contact-${n}`,
+  id: `contactId-${n}`,
+  alias: `alias-${n}`,
+  description: `description-${n}`,
+  isFriend: n % 2 == 0,
+  tags: [n % 10, Math.floor(n / 10)],
+  type: Contact.Individual,
+  gender: n % 2 == 0 ? ContactGender.Male : ContactGender.Female
+}
+```
+
+Room Info:
+```ts
+  // n = 1 to 100
+  topic: `room-${n}`,
+  id: `roomId-${n}`,
+  memberList: [contact(1-n)]
+```
+
 ## Changelog
 
 - v1.20.2 new doc online
