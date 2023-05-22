@@ -53,8 +53,9 @@ Contact info:
   isFriend: n % 2 === 0,
   tags: [n % 10, Math.floor(n / 10)],
   type: Contact.Individual,
-  gender: n % 2 == 0 ? ContactGender.Male : ContactGender.Female
-  avatar: FileBox.fromUrl(`https://www.cdn.com/image-${n}`)
+  gender: n % 2 == 0 ? ContactGender.Male : ContactGender.Female,
+  avatar: FileBox.fromUrl(`https://www.cdn.com/image-${n}`),
+  handle: `handle-${n}`,
 }
 ```
 

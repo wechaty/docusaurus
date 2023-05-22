@@ -370,12 +370,19 @@ await contact.readMark(true)
 ### self
 
 ```ts
-async self (): boolean
+self (): boolean
 ```
 
 Return whether the contact is bot self or not.
 
 Example:
+
+```ts
+const contact = await bot.Contact.find({id: 'contactId-19' })
+console.log(contact.self()) // false
+const contactSelf = await bot.Contact.find({id: 'contactId-0' })
+console.log(contactSelf.self()) // true
+```
 
 ### handle
 
@@ -386,3 +393,8 @@ async handle (): undefined | string
 Return the handle of the contact. This value depends on puppet implementation, usually represents an internal ID represents the contact in IM. e.g., A Twitter handle is the username that appears at the end of your unique Twitter URL.
 
 If the IM or the contact has no handle info, ```undefined``` will be returned.
+
+```ts
+const contact = await bot.Contact.find({id: 'contactId-20' })
+const handle = await contact.handle() // handle-20
+```
