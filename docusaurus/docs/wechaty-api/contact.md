@@ -27,7 +27,7 @@ static async find (query : string | PUPPET.filters.Contact): Promise<undefined |
 
 Try to find a contact in cache and then puppet. If no contact was found, ```undefined``` will be returned.
 
-Example: Find a contact with name 'friend'
+Example: Find a contact with name 'contact-2'
 
 ```ts
 const contact = await bot.Contact.find({ name: 'contact-2' }) // contact2
