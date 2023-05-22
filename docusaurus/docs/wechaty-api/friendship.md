@@ -21,6 +21,12 @@ Search for a new contact. As we talked in contact section, a contact doesn't hav
 
 ```Friendship.search``` is try to search for a new contact in IM scope.
 
+Example:
+
+```ts
+const contact = await bot.Friendship.search({id: 'contactId-30'}) // Contact<contact-30>
+```
+
 ### add
 
 ```ts
@@ -52,6 +58,31 @@ static async fromJSON (payload: string | PUPPET.payloads.Friendship): Promise<Fr
 
 Deserialized from a JSON string or object to a friendship instance.
 
+### toJSON
+
+```ts
+toJSON (): string
+```
+
+Get the JSON string of the friendship.
+
+
+Example: 
+
+```ts
+bot.on('friendship', friendship: FriendshipInterface => {
+  const jsonStr = friendship.toJSON()
+  // {
+  //   id: 'friendship-1',
+  //   contactId: 'contactId-34',
+  //   hello: 'hello from contact 34',
+  //   timestamp: 1684776502976
+  // }
+  const friendship2 = await bot.Friendship.fromJSON(jsonStr)
+  console.log(friendship === friendship2) // true. Although friendship interfaces are objects, they are loaded from a pool by wechaty. So two friendship instance with the same id will be the same object.
+})
+```
+
 ## Instance Methods
 
 ### accept
@@ -62,6 +93,15 @@ async accept (): Promise<void>
 
 Accepts this friendship request received.
 
+
+Example: 
+
+```ts
+bot.on('friendship', friendship: FriendshipInterface => {
+  await friendship.accept()
+})
+```
+
 ### hello
 
 ```ts
@@ -69,6 +109,14 @@ hello (): string
 ```
 
 Get the hello message from the friendship request.
+
+Example: 
+
+```ts
+bot.on('friendship', friendship: FriendshipInterface => {
+  const hello = friendship.hello() // hello from contact-34
+})
+```
 
 ### contact
 
@@ -78,6 +126,14 @@ contact (): ContactInterface
 
 Get the contact who send the friendship request.
 
+Example: 
+
+```ts
+bot.on('friendship', friendship: FriendshipInterface => {
+  const contact = friendship.contact() // Contact<contact-36>
+})
+```
+
 ### type
 
 ```ts
@@ -86,11 +142,11 @@ type (): PUPPET.types.Friendship
 
 Get the type of the friendship.
 
-### toJSON
+Example: 
 
 ```ts
-toJSON (): string
+bot.on('friendship', friendship: FriendshipInterface => {
+  const type = friendship.type() // PUPPET.types.Friendship.Confirm
+})
 ```
-
-Get the JSON string of the friendship.
 
