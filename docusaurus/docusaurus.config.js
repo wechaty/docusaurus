@@ -28,6 +28,7 @@ const config = {
   themeConfig,
   presets,
   plugins,
+  themes,
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'zh'],
