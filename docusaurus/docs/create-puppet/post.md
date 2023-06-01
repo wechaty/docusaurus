@@ -3,11 +3,11 @@ title: Post
 sidebar_label: 'Post'
 ---
 
-# Post Mixin
+## Post Mixin
 
-## Abstract Methods
+### Abstract Methods
 
-### postPublish
+#### postPublish
 
 ```ts
 abstract postPublish (payload: PostPayload): Promise<void | string>
@@ -15,7 +15,7 @@ abstract postPublish (payload: PostPayload): Promise<void | string>
 
 Publish a post as moment in the timeline.
 
-### postSearch
+#### postSearch
 
 ```ts
 abstract postSearch (
@@ -26,7 +26,7 @@ abstract postSearch (
 
 Search for post ids based on the filter.
 
-### postPayload
+#### postPayload
 
 ```ts
 abstract postRawPayload (friendshipId: string): Promise<any>

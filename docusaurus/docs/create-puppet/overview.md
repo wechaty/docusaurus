@@ -3,7 +3,7 @@ title: Puppet Development
 sidebar_label: 'Overview'
 ---
 
-# Intro
+## Intro
 
 Puppet is the deep lying layer that communicates with the IM. As its name indicates, Wechaty controls the puppet and wrap it into connivent apis.
 
@@ -11,7 +11,7 @@ The package, ```wechaty-puppet``` defines the puppet class together with corresp
 
 Popular puppets includes ```wechaty-puppet-wechat4u```, ```wechaty-puppet-workpro```, ```wechaty-puppet-whatsapp``` and more. Some puppets can be installed and run locally while others may requires a token and have to run with ```wechaty-puppet-service```. In this section, you'll learn the basic concepts of puppet and how to make your own puppet.
 
-# Mixins
+## Mixins
 
 Puppet methods are categorized and defined in mixins. Mixins defines both abstract and implemented methods. This document will go through most mixins and introduce how you should implement the abstract methods in later section.
 

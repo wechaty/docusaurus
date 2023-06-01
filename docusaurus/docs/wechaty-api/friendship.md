@@ -3,13 +3,13 @@ title: Friendship
 sidebar_label: ' Friendship'
 ---
 
-# Friendship Class
+## Friendship Class
 
 Friendship class is used only when you want to add new friends. Unlike most user modules that can be loaded with ```find``` or ```findAll```, friendship can created internally and passed as parameter in ```friendship``` event callback. It can also be serialized and deserialized to and from JSON.
 
-## Static Methods
+### Static Methods
 
-### search
+#### search
 
 ```ts
 static async search (queryFilter : PUPPET.filters.Friendship): Promise<undefined | ContactInterface>
@@ -27,7 +27,7 @@ Example:
 const contact = await bot.Friendship.search({id: 'contactId-31'}) // Contact<contact-31>
 ```
 
-### add
+#### add
 
 ```ts
 static async add (contact : ContactInterface, options: FriendshipAddOptions): Promise<void>
@@ -50,7 +50,7 @@ const contact = await bot.Friendship.search({ phone: '13812345678' })
 bot.Friendship.add(contact, { hello: 'Hi, this is Wechaty bot from phone search.'})
 ```
 
-### fromJSON
+#### fromJSON
 
 ```ts
 static async fromJSON (payload: string | PUPPET.payloads.Friendship): Promise<FriendshipInterface>
@@ -58,7 +58,7 @@ static async fromJSON (payload: string | PUPPET.payloads.Friendship): Promise<Fr
 
 Deserialized from a JSON string or object to a friendship instance.
 
-### toJSON
+#### toJSON
 
 ```ts
 toJSON (): string
@@ -82,9 +82,9 @@ bot.on('friendship', friendship: FriendshipInterface => {
 })
 ```
 
-## Instance Methods
+### Instance Methods
 
-### accept
+#### accept
 
 ```ts
 async accept (): Promise<void>
@@ -100,7 +100,7 @@ bot.on('friendship', friendship: FriendshipInterface => {
 })
 ```
 
-### hello
+#### hello
 
 ```ts
 hello (): string
@@ -116,7 +116,7 @@ bot.on('friendship', friendship: FriendshipInterface => {
 })
 ```
 
-### contact
+#### contact
 
 ```ts
 contact (): ContactInterface
@@ -132,7 +132,7 @@ bot.on('friendship', friendship: FriendshipInterface => {
 })
 ```
 
-### type
+#### type
 
 ```ts
 type (): PUPPET.types.Friendship

@@ -3,7 +3,7 @@ title: Bot Development
 sidebar_label: 'Hello World'
 ---
 
-# Hello World
+## Hello World
 
 In this section, we'll create a simple puppet with a hypothetical IM. To make the example, this IM does not requires scanning qrcode to login, instead you get the right token you can login.
 

@@ -3,11 +3,11 @@ title: Message
 sidebar_label: 'Message'
 ---
 
-# Message Mixin
+## Message Mixin
 
-## Abstract Methods
+### Abstract Methods
 
-### conversationReadMark
+#### conversationReadMark
 
 ```ts
 abstract conversationReadMark (conversationId: string, hasRead?: boolean) : Promise<void | boolean>
@@ -19,7 +19,7 @@ If the hasRead parameter is ```undefined```, the readmark status of the contact 
 
 If the hasRead is a valid boolean, the readmark should be set as the hasRead parameter and ```void``` should be returned.
 
-### messageContact
+#### messageContact
 
 ```ts
 abstract messageContact (messageId: string): Promise<string>
@@ -27,7 +27,7 @@ abstract messageContact (messageId: string): Promise<string>
 
 Extract the contact id from a business card message.
 
-### messageFile
+#### messageFile
 
 ```ts
 abstract messageFile (messageId: string): Promise<FileBoxInterface>
@@ -35,7 +35,7 @@ abstract messageFile (messageId: string): Promise<FileBoxInterface>
 
 Extract the file from a message with attachment, e.g. video, audio, image, etc.
 
-### messageImage
+#### messageImage
 
 ```ts
 abstract messageImage (messageId: string, imageType: ImageType): Promise<FileBoxInterface>
@@ -43,7 +43,7 @@ abstract messageImage (messageId: string, imageType: ImageType): Promise<FileBox
 
 Extract the image from an image message.
 
-### messageMiniProgram
+#### messageMiniProgram
 
 ```ts
 abstract messageMiniProgram (messageId: string): Promise<MiniProgramPayload>
@@ -51,7 +51,7 @@ abstract messageMiniProgram (messageId: string): Promise<MiniProgramPayload>
 
 Extract the mini program from a mini program message.
 
-### messageUrl
+#### messageUrl
 
 ```ts
 abstract messageUrl (messageId: string): Promise<UrlLinkPayload>
@@ -59,7 +59,7 @@ abstract messageUrl (messageId: string): Promise<UrlLinkPayload>
 
 Extract the url link from a url link message.
 
-### messageLocation
+#### messageLocation
 
 ```ts
 abstract messageLocation (messageId: string): Promise<LocationPayload>
@@ -67,7 +67,7 @@ abstract messageLocation (messageId: string): Promise<LocationPayload>
 
 Extract the location from a location message.
 
-### messageForward
+#### messageForward
 
 ```ts
 abstract messageForward (conversationId: string, messageId: string): Promise<void | string>
@@ -75,7 +75,7 @@ abstract messageForward (conversationId: string, messageId: string): Promise<voi
 
 Forward a message to another conversation.
 
-### messageSendContact
+#### messageSendContact
 
 ```ts
 abstract messageSendContact (conversationId: string, contactId: string): Promise<void | string>
@@ -83,7 +83,7 @@ abstract messageSendContact (conversationId: string, contactId: string): Promise
 
 Send a business card message.
 
-### messageSendFile
+#### messageSendFile
 
 ```ts
 abstract messageSendFile (conversationId: string, file: FileBoxInterface): Promise<void | string>
@@ -91,7 +91,7 @@ abstract messageSendFile (conversationId: string, file: FileBoxInterface): Promi
 
 Send a file message. All types of files should be sent with this method, including media message like video, audio and image.
 
-### messageSendLocation
+#### messageSendLocation
 
 ```ts
 abstract messageSendLocation (conversationId: string, locationPayload: LocationPayload): Promise<void | string>
@@ -99,7 +99,7 @@ abstract messageSendLocation (conversationId: string, locationPayload: LocationP
 
 Send a location message.
 
-### messageSendMiniProgram
+#### messageSendMiniProgram
 
 ```ts
 abstract messageSendMiniProgram (conversationId: string, miniProgramPayload: MiniProgramPayload): Promise<void | string>
@@ -107,7 +107,7 @@ abstract messageSendMiniProgram (conversationId: string, miniProgramPayload: Min
 
 Send a mini program message.
 
-### messageSendPost
+#### messageSendPost
 
 ```ts
 abstract messageSendPost (conversationId: string, postPayload: PostPayload): Promise<void | string>
@@ -115,7 +115,7 @@ abstract messageSendPost (conversationId: string, postPayload: PostPayload): Pro
 
 Send a post message. Usually post messages are quote messages or mixed messages (message with many sayables).
 
-### messageSendText
+#### messageSendText
 
 ```ts
 abstract messageSendText (conversationId: string, text: string, mentionIdList?: string[]): Promise<void | string>
@@ -123,7 +123,7 @@ abstract messageSendText (conversationId: string, text: string, mentionIdList?: 
 
 Send a text message. If the conversation is a room and ```mentionIdList``` is valid contact id list, that means the message should be sent while mentioning those contacts.
 
-### messageSendUrl
+#### messageSendUrl
 
 ```ts
 abstract messageSendUrl (conversationId: string, urlLinkPayload: UrlLinkPayload): Promise<void | string>
@@ -131,7 +131,7 @@ abstract messageSendUrl (conversationId: string, urlLinkPayload: UrlLinkPayload)
 
 Send a url link message.
 
-### messageRecall
+#### messageRecall
 
 ```ts
 abstract messageRecall (messageId: string): Promise<boolean>
@@ -139,7 +139,7 @@ abstract messageRecall (messageId: string): Promise<boolean>
 
 Recall a message.
 
-### messagePayload
+#### messagePayload
 
 ```ts
 abstract messageRawPayload (messageId: string): Promise<any>

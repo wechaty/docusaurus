@@ -3,17 +3,17 @@ title: Message
 sidebar_label: ' Message'
 ---
 
-# Message Class
+## Message Class
 
 Message is more than just a message in a conversation. It also represents any 'sayable'. For example, if your friend posted a moment with images. Each image is also an image. (In this case the talker and the receiver will both be the publisher of the moment.)
 
 If a message is recalled, it won't be removed. There will be two messages, the original message, and the recall message.
 
-## Static Methods
+### Static Methods
 
 You can call static methods from ```bot.Message```.
 
-### find
+#### find
 
 ```ts
 static async find (query : string | PUPPET.filters.Message): Promise<undefined | MessageInterface> 
@@ -27,7 +27,7 @@ Example: Load a message with id.
 const message = await bot.Message.find({id})
 ```
 
-### findAll
+#### findAll
 
 ```ts
 static async findAll (query? : PUPPET.filters.Message): Promise<MessageInterface[]>
@@ -41,9 +41,9 @@ Example: Find all messages from contact-50
 const message = await bot.Message.findAll({ fromId: 'contactId-50' })
 ```
 
-## Instance Methods
+### Instance Methods
 
-### conversation
+#### conversation
 
 ```ts
 conversation (): ContactInterface | RoomInterface
@@ -59,7 +59,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### talker
+#### talker
 
 ```ts
 talker (): ContactInterface 
@@ -75,7 +75,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### listener
+#### listener
 
 ```ts
 listener (): ContactInterface 
@@ -91,7 +91,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### room
+#### room
 
 ```ts
 room (): RoomInterface 
@@ -107,7 +107,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### text
+#### text
 
 ```ts
 text (): string
@@ -123,7 +123,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### toRecalled
+#### toRecalled
 
 ```ts
 async toRecalled (): Promise<undefined | MessageInterface>
@@ -139,7 +139,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### say
+#### say
 
 ```ts
 async say (sayable: Sayable): Promise<void | MessageInterface>
@@ -156,7 +156,7 @@ const contactOrRoom = await message.conversation()
 contactOrRoom.say(sayable)
 ```
 
-### recall
+#### recall
 
 ```ts
 async recall (): Promise<boolean>
@@ -172,7 +172,7 @@ const message = await contact.say('this message will be recalled')
 await message.recall()
 ```
 
-### type
+#### type
 
 ```ts
 type (): PUPPET.types.Message
@@ -188,7 +188,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### self
+#### self
 
 ```ts
 self (): boolean
@@ -204,7 +204,7 @@ const message = await contact.say('hello there')
 console.log(message.self()) // true
 ```
 
-### mentionList
+#### mentionList
 
 ```ts
 async mentionList (): Promise<ContactInterface[]>
@@ -220,7 +220,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### mentionText
+#### mentionText
 
 ```ts
 async mentionText (): Promise<string>
@@ -236,7 +236,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### mentionSelf
+#### mentionSelf
 
 ```ts
 mentionSelf (): boolean
@@ -252,7 +252,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### forward
+#### forward
 
 ```ts
 async forward (to: RoomInterface | ContactInterface): Promise<void | MessageInterface>
@@ -269,7 +269,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### date
+#### date
 
 ```ts
 date (): Date
@@ -285,7 +285,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### age
+#### age
 
 ```ts
 age (): number
@@ -301,7 +301,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### toFileBox
+#### toFileBox
 
 ```ts
 async toFileBox (): Promise<FileBoxInterface>
@@ -318,7 +318,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### toImage
+#### toImage
 
 ```ts
 async toImage (): Promise<ImageInterface>
@@ -338,7 +338,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### toContact
+#### toContact
 
 ```ts
 async toContact (): Promise<ContactInterface>
@@ -354,7 +354,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### toUrlLink
+#### toUrlLink
 
 ```ts
 async toUrlLink (): Promise<UrlLinkInterface>
@@ -370,7 +370,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### toMiniProgram
+#### toMiniProgram
 
 ```ts
 async toMiniProgram (): Promise<MiniProgramInterface>
@@ -386,7 +386,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### toLocation
+#### toLocation
 
 ```ts
 async toLocation (): Promise<LocationInterface>
@@ -402,7 +402,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### toPost
+#### toPost
 
 ```ts
 async toPost (): Promise<PostInterface>
@@ -418,7 +418,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### toSayable
+#### toSayable
 
 ```ts
 async toSayable (): Promise<undefined | Sayable>
@@ -434,7 +434,7 @@ bot.on('message', message: MessageInterface => {
 })
 ```
 
-### toString()
+#### toString()
 
 ```ts
 override toString (): string

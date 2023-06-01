@@ -3,11 +3,11 @@ title: Contact
 sidebar_label: 'Contact'
 ---
 
-# Contact Mixin
+## Contact Mixin
 
-## Abstract Methods
+### Abstract Methods
 
-### contactSelfName
+#### contactSelfName
 
 ```ts
 abstract contactSelfName(name: string): Promise<void>
@@ -15,7 +15,7 @@ abstract contactSelfName(name: string): Promise<void>
 
 Set the name of bot self.
 
-### contactSelfQRCode
+#### contactSelfQRCode
 
 ```ts
 abstract contactSelfQRCode(): Promise<string>
@@ -23,7 +23,7 @@ abstract contactSelfQRCode(): Promise<string>
 
 Get the qrcode of bot self.
 
-### contactSelfSignature
+#### contactSelfSignature
 
 ```ts
 abstract contactSelfSignature(signature: string): Promise<>
@@ -31,7 +31,7 @@ abstract contactSelfSignature(signature: string): Promise<>
 
 Set the signature of bot self.
 
-### contactAlias
+#### contactAlias
 
 ```ts
 abstract contactAlias (contactId: string): Promise<string>
@@ -40,7 +40,7 @@ abstract contactAlias (contactId: string, alias: string | null) : Promise<void>
 
 Set or get the alias of the contact.
 
-### contactAvatar
+#### contactAvatar
 
 ```ts
 abstract contactAvatar (contactId: string): Promise<FileBoxInterface>
@@ -49,7 +49,7 @@ abstract contactAvatar (contactId: string, file: FileBoxInterface): Promise<void
 
 Set or get the avatar of the contact.
 
-### contactPhone
+#### contactPhone
 
 ```ts
 abstract contactPhone (contactId: string, phoneList: string[]) : Promise<void>
@@ -58,7 +58,7 @@ abstract contactPhone (contactId: string, phoneList: string[]) : Promise<void>
 
 Set the phone list of the contact.
 
-### contactCorporationRemark
+#### contactCorporationRemark
 
 ```ts
 abstract contactCorporationRemark (contactId: string, corporationRemark: string | null): Promise<void>
@@ -66,7 +66,7 @@ abstract contactCorporationRemark (contactId: string, corporationRemark: string 
 
 Set the corporation remark of the contact.
 
-### contactDescription
+#### contactDescription
 
 ```ts
 abstract contactDescription (contactId: string, description: string | null): Promise<void>
@@ -74,7 +74,7 @@ abstract contactDescription (contactId: string, description: string | null): Pro
 
 Set the description of the contact.
 
-### contactList
+#### contactList
 
 ```ts
 abstract contactList(): Promise<string[]>
@@ -82,7 +82,7 @@ abstract contactList(): Promise<string[]>
 
 Get the list of contact ids.
 
-### contactPayload
+#### contactPayload
 
 ```ts
 abstract contactRawPayload (contactId: string): Promise<any>

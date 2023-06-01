@@ -3,11 +3,11 @@ title: Tag
 sidebar_label: 'Tag'
 ---
 
-# Tag Mixin
+## Tag Mixin
 
-## Abstract Methods
+### Abstract Methods
 
-### tagContactAdd
+#### tagContactAdd
 
 ```ts
 abstract tagContactAdd (tagId: string, contactId: string): Promise<void>
@@ -15,7 +15,7 @@ abstract tagContactAdd (tagId: string, contactId: string): Promise<void>
 
 Tag a contact. Should create the tag if the tag does not exist.
 
-### tagContactRemove
+#### tagContactRemove
 
 ```ts
 abstract tagContactRemove (tagId: string, contactId: string): Promise<void>
@@ -23,7 +23,7 @@ abstract tagContactRemove (tagId: string, contactId: string): Promise<void>
 
 Remove a tag from a contact.
 
-### tagContactDelete
+#### tagContactDelete
 
 ```ts
 abstract tagContactDelete (tagId: string): Promise<void>
@@ -31,7 +31,7 @@ abstract tagContactDelete (tagId: string): Promise<void>
 
 Delete a tag from the IM (not just remove from a contact.)
 
-### tagContactList
+#### tagContactList
 
 ```ts
 abstract tagContactList (): Promise<string[]>

@@ -3,11 +3,11 @@ title: Room Invitation
 sidebar_label: 'Room Invitation'
 ---
 
-# Room Invitation Mixin
+## Room Invitation Mixin
 
-## Abstract Methods
+### Abstract Methods
 
-### roomInvitationAccept
+#### roomInvitationAccept
 
 ```ts
 abstract roomInvitationAccept (roomInvitationId: string): Promise<void>

@@ -3,13 +3,13 @@ title: Event
 sidebar_label: 'Event'
 ---
 
-# Event
+## Event
 
 Events are key of Wechaty. As advertised, Wechaty is event-driven. You should listen to events and react accordingly so your bot can have various functionalities.
 
-## bot events
+### bot events
 
-### scan
+#### scan
 
 ```ts
 type WechatyEventListenerScan = (qrcode: string, status: PUPPET.types.ScanStatus, data?: string) => void | Promise<void>
@@ -25,7 +25,7 @@ bot.on('scan', (qrcode) => {
 })
 ```
 
-### login
+#### login
 
 ```ts
 type WechatyEventListenerLogin = (user: ContactSelfInterface) => void | Promise<void>
@@ -33,7 +33,7 @@ type WechatyEventListenerLogin = (user: ContactSelfInterface) => void | Promise<
 
 After the bot login full successful, the event login will be emitted, with a Contact of current logged in user.
 
-### ready
+#### ready
 
 ```ts
 type WechatyEventListenerReady = () => void | Promise<void>
@@ -41,7 +41,7 @@ type WechatyEventListenerReady = () => void | Promise<void>
 
 Emit when all data has load completed and your bot is ready to go. For most cases that means you can access your contacts and rooms now.
 
-### message
+#### message
 
 ```ts
 type WechatyEventListenerMessage = (message: MessageInterface) => void | Promise<void>

@@ -3,11 +3,11 @@ title: Room
 sidebar_label: ' Room'
 ---
 
-# Room Class
+## Room Class
 
 Room, as the name indicates, represents a room in IM. The Room class provides many functions including getting properties, send messages, edit info, etc.
 
-## Static Methods
+### Static Methods
 
 You can call static methods from ```bot.Room```, e.g.
 
@@ -15,7 +15,7 @@ You can call static methods from ```bot.Room```, e.g.
 const room = await bot.Room.find({id})
 ```
 
-### create
+#### create
 
 ```ts
 static async create (contactList: ContactInterface[],topic?: string): Promise<RoomInterface>
@@ -23,7 +23,7 @@ static async create (contactList: ContactInterface[],topic?: string): Promise<Ro
 
 Create a new room with contact list and topic provided. Returns the new room instance.
 
-### find
+#### find
 
 ```ts
 static async find (query : string | PUPPET.filters.Room): Promise<undefined | RoomInterface> 
@@ -38,7 +38,7 @@ const roomByName = await bot.Room.find({ topic: 'roomName' })
 const roomById = await bot.Room.find({ id: 'roomId' })
 ```
 
-### findAll
+#### findAll
 
 ```ts
 static async findAll (query? : PUPPET.filters.Room): Promise<RoomInterface[]>
@@ -54,9 +54,9 @@ const roomsByNameReg = await bot.Room.findAll({
 }) // [Room<room-13>, Room<room-14>, Room<room-15>]
 ```
 
-## Instance Methods
+### Instance Methods
 
-### sync
+#### sync
 
 ```ts
 async sync (): Promise<void>
@@ -75,7 +75,7 @@ await room.sync()
 console.log(await room.topic()) // newRoomTopic
 ```
 
-### isReady
+#### isReady
 
 ```ts
 async isReady (): Promise<void>
@@ -91,7 +91,7 @@ await room.isReady()
 const roomOwner = room.owner() // get the owner from the payload
 ```
 
-### handle
+#### handle
 
 ```ts
 async handle (): undefined | string
@@ -108,7 +108,7 @@ const room = await bot.Room.find({id: 'roomId' })
 const handle = await room.handle() // e.g. handle stand for chatId for Wecom
 ```
 
-### say
+#### say
 
 ```ts
 say (sayable: Sayable): Promise<void | MessageInterface>
@@ -132,7 +132,7 @@ await room.say('hello', memberA, memberB) // @memberA @memberB hello
 await room.say`hello ${memberA}, hola ${memberB}` // hello @memberA, hola @memberB
 ```
 
-### add
+#### add
 
 ```ts
 async add (contact: ContactInterface): Promise<void>
@@ -151,7 +151,7 @@ const room = await bot.Room.find({ topic: 'roomTopic' })
 await room.add(friend)
 ```
 
-### remove
+#### remove
 
 ```ts
 async remove (contact: ContactInterface): Promise<void>
@@ -167,7 +167,7 @@ const member = await room.memberAll({ name: 'memberName' })
 await room.remove(member)
 ```
 
-### quit
+#### quit
 
 ```ts
 async quit (): Promise<void>
@@ -182,7 +182,7 @@ const room = await bot.Room.find({ topic: 'roomTopic' })
 await room.quit()
 ```
 
-### topic
+#### topic
 
 ```ts
 async topic (): Promise<string>
@@ -200,7 +200,7 @@ await room.topic('newTopic')
 const newTopic = await room.topic() // newTopic
 ```
 
-## announce
+### announce
 
 ```ts
 async announce (): Promise<string>
@@ -218,7 +218,7 @@ const announceText = await room.announce() // get announcement
 await room.announce(`Update ${announceText}`) // set announcement
 ```
 
-### qrCode
+#### qrCode
 
 ```ts
 async qrCode (): Promise<string>
@@ -234,7 +234,7 @@ const room = await bot.Room.find({ topic: 'roomTopic' })
 await room.qrCode() // get QR code of this room
 ```
 
-### alias
+#### alias
 
 ```ts
 async alias (contact: ContactInterface): Promise<undefined | string>
@@ -251,7 +251,7 @@ const room = bot.Room.find({ topic: 'roomTopic' })
 const alias = await room.alias(member) // get alias of member
 ```
 
-### readMark
+#### readMark
 
 ```ts
 async readMark (hasRead: boolean): Promise<void>
@@ -274,7 +274,7 @@ await room.readMark(true) // set the read mark status as read
 await room.readMark(false) // set the read mark status as unread
 ```
 
-### has
+#### has
 
 ```ts
 async has (contact: ContactInterface): Promise<boolean>
@@ -290,7 +290,7 @@ const contact = await bot.Contact.find({ name: 'contactName' })
 const status = await room.has(contact) // the contact is a room member or not
 ```
 
-### memberAll
+#### memberAll
 
 ```ts
 async memberAll (): Promise<ContactInterface[]>
@@ -309,7 +309,7 @@ const memberListByName = await room.memberAll('memberName')
 const memberListByAlias = await room.memberAll({ roomAlias: 'memberAlias' })
 ```
 
-### member
+#### member
 
 ```ts
 async member (name: string): Promise<undefined | ContactInterface>
@@ -326,7 +326,7 @@ const memberByName = await room.member('memberName')
 const memberByAlias = await room.member({ roomAlias: 'memberAlias' })
 ```
 
-### owner
+#### owner
 
 ```ts
 owner (): undefined | ContactInterface
@@ -341,7 +341,7 @@ const room = await bot.Room.find({ topic: 'roomTopic'})
 const roomOwner = room.owner()
 ```
 
-### avatar
+#### avatar
 
 ```ts
 async avatar (): Promise<FileBoxInterface>

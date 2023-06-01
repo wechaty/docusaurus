@@ -3,11 +3,11 @@ title: Room Member
 sidebar_label: 'Room Member'
 ---
 
-# Room Member Mixin
+## Room Member Mixin
 
-## Abstract Methods
+### Abstract Methods
 
-### roomMemberList
+#### roomMemberList
 
 ```ts
 abstract roomMemberList (roomId: string): Promise<string[]>

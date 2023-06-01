@@ -3,11 +3,11 @@ title: Friendship
 sidebar_label: 'Friendship'
 ---
 
-# Friendship Mixin
+## Friendship Mixin
 
-## Abstract Methods
+### Abstract Methods
 
-### friendshipAccept
+#### friendshipAccept
 
 ```ts
 abstract friendshipAccept (friendshipId: string): Promise<void>
@@ -15,7 +15,7 @@ abstract friendshipAccept (friendshipId: string): Promise<void>
 
 Accept friendship by id.
 
-### friendshipAdd
+#### friendshipAdd
 
 ```ts
 abstract friendshipAdd (contactId: string, option?: FriendshipAddOptions): Promise<void>
@@ -33,7 +33,7 @@ export type FriendshipAddOptions = string | FriendshipAddOptionsObject
 
 Send friendship request to the contact by id.
 
-### friendshipSearchPhone
+#### friendshipSearchPhone
 
 ```ts
 abstract friendshipSearchPhone (phone: string): Promise<null | string>
@@ -41,7 +41,7 @@ abstract friendshipSearchPhone (phone: string): Promise<null | string>
 
 Search for a new contact by phone number.
 
-### friendshipSearchHandle
+#### friendshipSearchHandle
 
 ```ts
 abstract friendshipSearchHandle (phone: string): Promise<null | string>
@@ -49,7 +49,7 @@ abstract friendshipSearchHandle (phone: string): Promise<null | string>
 
 Search for a new contact by handle. Handle usually represents an internal ID represents the contact in IM. e.g., A Twitter handle is the username that appears at the end of your unique Twitter URL.
 
-### friendshipPayload
+#### friendshipPayload
 
 ```ts
 abstract friendshipRawPayload (friendshipId: string): Promise<any>

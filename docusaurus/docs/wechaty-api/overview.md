@@ -3,7 +3,7 @@ title: Bot Development
 sidebar_label: 'Overview'
 ---
 
-# Intro
+## Intro
 
 Wechaty is a Node.js library for building chatbots that work on WeChat, WhatsApp, and other messaging platforms. With Wechaty, you can build intelligent chatbots that automate tasks, engage with customers, and provide a personalized experience for your users.
 
@@ -22,7 +22,7 @@ async function main () {
 }
 ```
 
-## How to install
+### How to install
 
 In most cases, you should install ```wechaty``` only. The package ```wechaty``` has ```wechaty-puppet```, ```wechaty-puppet-service``` in its dependencies, so you don't have install them by yourself. So all you have to is
 
@@ -32,7 +32,7 @@ npm install wechaty
 
 If you wish to use a particular version of ```wechaty-puppet``` or ```wechaty-puppet-service```, you can install such package manully.
 
-## Code example mock data
+### Code example mock data
 
 Bot info:
 
@@ -74,6 +74,6 @@ Room Info:
 }
 ```
 
-## Changelog
+### Changelog
 
 - v1.20.2 new doc online

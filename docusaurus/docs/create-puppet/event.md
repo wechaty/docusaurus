@@ -3,11 +3,11 @@ title: Event
 sidebar_label: 'Event'
 ---
 
-# Event
+## Event
 
 Wechaty is driven by events. A puppet should emit different kinds of events on different occasions. Puppet events are different from wechaty events, though most of them are the same. For example, a puppet event heartbeat will not
 
-## Emit event
+### Emit event
 
 ```Puppet``` abstract class is an event emitter, so a puppet implementation extending puppet can just use
 
@@ -15,7 +15,7 @@ Wechaty is driven by events. A puppet should emit different kinds of events on d
 this.emit('ExampleEvent', ExampleEventPayload)
 ```
 
-## Event Types
+### Event Types
 
 ```ts
 interface PuppetEventListener {
@@ -40,9 +40,9 @@ interface PuppetEventListener {
 }
 ```
 
-## Events
+### Events
 
-### Event: Dirty
+#### Event: Dirty
 
 Puppet should emit a dirty event when the payload of a class expires.
 
@@ -72,7 +72,7 @@ this.emit('dirty', {
 })
 ```
 
-### Event: Dong
+#### Event: Dong
 
 Puppet should emit a dong event when receives the ding method called by wechaty.
 
@@ -94,7 +94,7 @@ export class PuppetExample extends Puppet {
 }
 ```
 
-### Event: Error
+#### Event: Error
 
 Emit when an error occurs. Usually async error that not captured by try catch.
 
@@ -104,7 +104,7 @@ export type EventErrorPayload = {
 }
 ```
 
-### Event: Friendship
+#### Event: Friendship
 
 Emit when receives friendship requests, friendship confirm, and verify message. The payload of this event is just the id, wechaty will get actual data with friendship payload method.
 
@@ -114,7 +114,7 @@ export interface EventFriendshipPayload {
 }
 ```
 
-### Event: Heartbeat
+#### Event: Heartbeat
 
 Puppet should emit a heartbeat event every few seconds. If wechaty does not receive any event for a period time (default: 120 seconds), it will regard the puppet has stuck and try to reset.
 
@@ -124,7 +124,7 @@ export interface EventHeartbeatPayload {
 }
 ```
 
-### Event: Login
+#### Event: Login
 
 Puppet should emit a log in event when the bot logs in.
 
@@ -134,7 +134,7 @@ export interface EventLoginPayload {
 }
 ```
 
-### Event: Logout
+#### Event: Logout
 
 Puppet should emit a log out event when the bot logs out.
 
@@ -145,7 +145,7 @@ export interface EventLogoutPayload {
 }
 ```
 
-### Event: Message
+#### Event: Message
 
 Puppet should emit a message event when receives a message.
 
@@ -155,7 +155,7 @@ export interface EventMessagePayload {
 }
 ```
 
-### Event: Ready
+#### Event: Ready
 
 Puppet should emit a ready event when it loads all the contact and room data.
 
@@ -165,7 +165,7 @@ export interface EventReadyPayload {
 }
 ```
 
-### Event: Reset
+#### Event: Reset
 
 Puppet should emit a reset event when it resets. However wechaty will not do anything when receives reset event, this is not a must.
 
@@ -175,7 +175,7 @@ export interface EventResetPayload {
 }
 ```
 
-### Event: Room Invite
+#### Event: Room Invite
 
 Puppet should emit a room invite event when receives room invitation. The payload of this event is just the id, wechaty will get actual data with room invitation payload method.
 
@@ -185,7 +185,7 @@ export interface EventRoomInvitePayload {
 }
 ```
 
-### Event: Room Join
+#### Event: Room Join
 
 Puppet should emit a room join event when someone joins a with bot in itt, or the bot joins a new room.
 
@@ -198,7 +198,7 @@ export interface EventRoomJoinPayload {
 }
 ```
 
-### Event: Room Leave
+#### Event: Room Leave
 
 Puppet should emit a room leave event when someone leaves a room with bot in it, or the bot leaves a room, or a room with bot in it is dismissed.
 
@@ -211,7 +211,7 @@ export interface EventRoomLeavePayload {
 }
 ```
 
-### Event: Room Topic
+#### Event: Room Topic
 
 Puppet should emit a room topic event when the topic of a room with bot in it changes.
 
@@ -225,7 +225,7 @@ export interface EventRoomTopicPayload {
 }
 ```
 
-### Event: Scan
+#### Event: Scan
 
 Puppet should emit a scan event when receiving a new qrcode, a qrcode expires, a qrcode is scanned or the login in confirmed.
 

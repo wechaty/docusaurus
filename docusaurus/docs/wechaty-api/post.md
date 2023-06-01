@@ -3,7 +3,7 @@ title: Post
 sidebar_label: ' Post'
 ---
 
-# Post Class
+## Post Class
 
 Post is a class for complicate messages in Wechaty, especially for those containing multiple sayable, or has a tree-like structure.
 
@@ -14,9 +14,9 @@ The differences between client post and server post is
 - Client post does not have a id, but server post does.
 - Sayables in client post are instances, while sayables in server post are just ids.
 
-## Static Methods
+### Static Methods
 
-### builder
+#### builder
 
 ```ts
 static builder (): PostBuilder
@@ -30,7 +30,7 @@ Example:
 const builder = await bot.Post.builder()
 ```
 
-### create
+#### create
 
 ```ts
 static create (payload: PUPPET.payloads.PostClient): PostInterface
@@ -44,7 +44,7 @@ Example:
 const post = bot.Post.create(payload)
 ```
 
-### find
+#### find
 
 ```ts
 static async find (filter: PUPPET.filters.Post): Promise<undefined | PostInterface>
@@ -58,7 +58,7 @@ Example:
 const post = await bot.Post.find({ id: 'postId-1' })
 ```
 
-### findAll
+#### findAll
 
 ```ts
 static async findAll (
@@ -84,9 +84,9 @@ bot.on('post', post: PostInterface => {
 })
 ```
 
-## Instance Methods
+### Instance Methods
 
-### counter
+#### counter
 
 ```ts
 counter (): PUPPET.payloads.PostServer['counter']
@@ -109,7 +109,7 @@ bot.on('post', post: PostInterface => {
 })
 ```
 
-### author
+#### author
 
 ```ts
 async author (): Promise<ContactInterface>
@@ -125,7 +125,7 @@ bot.on('post', post: PostInterface => {
 })
 ```
 
-### root
+#### root
 
 ```ts
 async root (): Promise<undefined | PostInterface>
@@ -141,7 +141,7 @@ bot.on('post', post: PostInterface => {
 })
 ```
 
-### parent
+#### parent
 
 ```ts
 async parent (): Promise<undefined | PostInterface>
@@ -157,7 +157,7 @@ bot.on('post', post: PostInterface => {
 })
 ```
 
-### sync
+#### sync
 
 ```ts
 async sync (): Promise<void>
@@ -173,7 +173,7 @@ bot.on('post', post: PostInterface => {
 })
 ```
 
-### [Symbol.asyncIterator]
+#### [Symbol.asyncIterator]
 
 ```ts
 async * [Symbol.asyncIterator] (): AsyncIterableIterator<Sayable>
@@ -197,7 +197,7 @@ for await (const sayable of publishedPost[Symbol.asyncIterator]()){
 }
 ```
 
-### children
+#### children
 
 ```ts
 async * children (filter: PUPPET.filters.Post = {}): AsyncIterableIterator<PostInterface>
@@ -213,7 +213,7 @@ for await (const post of publishedPost.children()){
 }
 ```
 
-### descendants
+#### descendants
 
 ```ts
 async * descendants (filter: PUPPET.filters.Post = {}): AsyncIterableIterator<PostInterface>
@@ -229,7 +229,7 @@ for await (const post of publishedPost.descendants()){
 }
 ```
 
-### likes
+#### likes
 
 ```ts
 async * likes (filter: PUPPET.filters.Post = {}): AsyncIterableIterator<TapInterface>
@@ -250,7 +250,7 @@ for await (const like of publishedPost.likes()){
 }
 ```
 
-### taps
+#### taps
 
 ```ts
 async * taps (filter: PUPPET.filters.Post = {}): AsyncIterableIterator<TapInterface>
@@ -271,7 +271,7 @@ for await (const tap of publishedPost.taps()){
 }
 ```
 
-### reply
+#### reply
 
 ```ts
 async reply (
@@ -300,7 +300,7 @@ bot.on('post', post: PostInterface => {
 })
 ```
 
-### like
+#### like
 
 ```ts
 async like (status: boolean): Promise<void>
@@ -319,7 +319,7 @@ bot.on('post', post: PostInterface => {
 })
 ```
 
-### tap
+#### tap
 
 ```ts
 async tap (type: PUPPET.types.Tap): Promise<boolean>
@@ -338,7 +338,7 @@ bot.on('post', post: PostInterface => {
 })
 ```
 
-### tapFind
+#### tapFind
 
 ```ts
 async tapFind (
@@ -360,13 +360,13 @@ bot.on('post', post: PostInterface => {
 })
 ```
 
-# PostBuilder Class
+## PostBuilder Class
 
 PostBuilder is a class for building post from scratch. It will build a client side post that can be published or sent.
 
-## Instance Methods
+### Instance Methods
 
-### add
+#### add
 
 ```ts
 add (sayable: Sayable): this
@@ -381,7 +381,7 @@ const builder = bot.Post.builder()
 builder.add('text content')
 ```
 
-### type
+#### type
 
 ```ts
 type (type: PUPPET.types.Post): this
@@ -396,7 +396,7 @@ const builder = bot.Post.builder()
 builder.type(Post.Moment)
 ```
 
-### reply
+#### reply
 
 ```ts
 reply (post: PostInterface): this
@@ -413,7 +413,7 @@ bot.on('post', post: PostInterface => {
 })
 ```
 
-### build
+#### build
 
 ```ts
 async build (): Promise<PostInterface>

@@ -3,13 +3,13 @@ title: Tag
 sidebar_label: ' Tag'
 ---
 
-# Tag Class
+## Tag Class
 
 Tag represents the a tag on the contact. Current design did not implements features like tag ids, tag groups etc. There will be rework on tag soon.
 
 ### Static Methods
 
-## get
+#### get
 
 ```ts
 static async get (tag: string): Promise<TagInterface>
@@ -17,7 +17,7 @@ static async get (tag: string): Promise<TagInterface>
 
 Get a Tag instance for the tag.
 
-## delete
+#### delete
 
 ```ts
 async delete (tag: TagInterface): Promise<void>
@@ -27,7 +27,7 @@ Delete a Tag IM-wise.
 
 ### Instance Methods
 
-## add
+#### add
 
 ```ts
 async add (to: ContactInterface | FavoriteInterface): Promise<void>
@@ -44,7 +44,7 @@ const tag = await bot.Tag.get('tag')
 await tag.add(contact)
 ```
 
-## remove
+#### remove
 
 ```ts
 async remove (from: ContactInterface | FavoriteInterface): Promise<void>

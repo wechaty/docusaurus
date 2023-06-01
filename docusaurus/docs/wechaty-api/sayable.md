@@ -3,7 +3,7 @@ title: Sayable
 sidebar_label: 'Sayable'
 ---
 
-# Sayable
+## Sayable
 
 Sayable is a very important concept in Wechaty. As the name indicates, it means anything you can send as a message through ```contact.say``` or ```room.say``` api.
 
@@ -25,7 +25,7 @@ type Sayable =
   | UrlLinkInterface
 ```
 
-## ContactInterface
+### ContactInterface
 
 ```ContactInterface``` represent a contact. You can find detail info in [contact section](./contact).
 
@@ -47,7 +47,7 @@ bot.on('login', contact: ContactInterface => {
 
 Say a ```ContactInterface``` means to send a business card message.
 
-## DelayInterface
+### DelayInterface
 
 ```DelayInterface``` is a special sayable. Say a ```DelayInterface``` will not send any message, instead it will wait for a while.
 
@@ -61,7 +61,7 @@ await contact.say(delay) // wait for 1000 ms
 await delay.wait() // wait for 1000 ms
 ```
 
-## FileBoxInterface
+### FileBoxInterface
 
 ```FileBoxInterface``` represents any attachments. Note that we do handle image differently in message (```toImage``` vs ```toFile```), we send file and image with the same api. The puppet implementation will check the file type and handle accordingly.
 
@@ -76,7 +76,7 @@ const file = FileBox.fromUrl('https://wechaty.js.org/img/wechaty-logo.svg')
 await contact.say(file)
 ```
 
-## LocationInterface
+### LocationInterface
 
 ```LocationInterface``` represents a Location.
 
@@ -95,7 +95,7 @@ const location = new bot.Location({
 await contact.say(location)
 ```
 
-## MessageInterface
+### MessageInterface
 
 This is the same as forwarding message.
 
@@ -130,15 +130,15 @@ const miniProgram = new bot.MiniProgram({
 })
 ```
 
-## number
+### number
 
 Number can be sent as regular string.
 
-## string
+### string
 
 String can be sent as it is.
 
-## PostInterface
+### PostInterface
 
 ```PostInterface``` is a special class. In message sending scenario, ```PostInterface``` represents a message with multiple sayables.
 
@@ -157,7 +157,7 @@ const post = await builder.build()
 await contact.say(post)
 ```
 
-##
+### UrlLinkInterface
 
 ```UrlLinkInterface``` represents a url link message. It is a link message with thumbnail and description.
 

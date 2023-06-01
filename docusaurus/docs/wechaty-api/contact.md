@@ -3,13 +3,13 @@ title: Contact
 sidebar_label: ' Contact'
 ---
 
-# Contact Class
+## Contact Class
 
 Contact, as the name indicates, represents a contact in IM. The Contact class provides many functions including getting properties, send messages, edit info, etc.
 
 Note that a contact may not be a friend. They may just be a member in one of your rooms.
 
-## Static Methods
+### Static Methods
 
 You can call static methods from ```bot.Contact```。
 
@@ -19,7 +19,7 @@ Example:
 const contact = await bot.Contact.find({id: 'contactId-1' }) // contact1
 ```
 
-### find
+#### find
 
 ```ts
 static async find (query : string | PUPPET.filters.Contact): Promise<undefined | ContactInterface> 
@@ -33,7 +33,7 @@ Example: Find a contact with name 'contact-2'
 const contact = await bot.Contact.find({ name: 'contact-2' }) // contact2
 ```
 
-### findAll
+#### findAll
 
 ```ts
 static async findAll (query? : PUPPET.filters.Contact): Promise<ContactInterface[]>
@@ -49,7 +49,7 @@ const contacts = await bot.Contact.findAll({
 }) // [Contact<contact-93>, Contact<contact94>, Contact<contact95>, Contact<contact96>, Contact<contact97>, Contact<contact98>]
 ```
 
-### tags
+#### tags
 
 ```ts
 static async tags (): Promise<TagInterface[]>
@@ -63,9 +63,9 @@ Example: Get all tags.
 const tags = await bot.Contact.tags() // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
-## Instance Methods
+### Instance Methods
 
-### say
+#### say
 
 ```ts
 async say (sayable: Sayable): Promise<void | MessageInterface>
@@ -80,7 +80,7 @@ const contact = await bot.Contact.find({id: 'contactId-1' })
 const message = await contact.say('hello contact1')
 ```
 
-### name
+#### name
 
 ```ts
 name (): string
@@ -95,7 +95,7 @@ const contact = await bot.Contact.find({id: 'contactId-1' })
 const name = contact.name() // contact-1
 ```
 
-### alias
+#### alias
 
 ```ts
 async alias (): Promise<undefined | string>
@@ -119,7 +119,7 @@ const newAlias = await contact.alias() // 'new-alias-5'
 await contact.alias(null) // clear alias
 ```
 
-### phone
+#### phone
 
 ```ts
 async phone (): Promise<string[]>
@@ -141,7 +141,7 @@ const newAlias = await contact.phone() // ['phone1', 'phone2']
 await contact.phone([]) // clear phone
 ```
 
-### corporation
+#### corporation
 
 ```ts
 async corporation (): Promise<undefined | string>
@@ -163,7 +163,7 @@ const newCorp = await contact.corporation() // 'corp-6'
 await contact.corporation(null) // clear corporation
 ```
 
-### description
+#### description
 
 ```ts
 async description (): Promise<undefined | string>
@@ -187,7 +187,7 @@ const newDescription = await contact.description() // 'new-description-7'
 await contact.description(null) // clear alias
 ```
 
-### title
+#### title
 
 ```ts
 async title (): string | null
@@ -202,7 +202,7 @@ const contact = await bot.Contact.find({id: 'contactId-8' })
 const title = contact.title() // null
 ```
 
-### friend
+#### friend
 
 ```ts
 friend (): undefined | boolean
@@ -219,7 +219,7 @@ console.log(contact9.friend()) // false
 console.log(contact10.friend()) // true
 ```
 
-### type
+#### type
 
 ```ts
 type (): PUPPET.types.Contact
@@ -234,7 +234,7 @@ const contact = await bot.Contact.find({id: 'contactId-10' })
 console.log(contact.type()) // 1 (Contact.Individual)
 ```
 
-### star
+#### star
 
 ```ts
 async star (): undefined | boolean
@@ -249,7 +249,7 @@ const contact = await bot.Contact.find({id: 'contactId-11' })
 console.log(contact.star()) // undefined
 ```
 
-### gender
+#### gender
 
 ```ts
 gender (): PUPPET.types.ContactGender
@@ -264,7 +264,7 @@ const contact = await bot.Contact.find({id: 'contactId-12' })
 console.log(contact.gender()) // ContactGender.Male
 ```
 
-### province
+#### province
 
 ```ts
 province (): undefined | string
@@ -279,7 +279,7 @@ const contact = await bot.Contact.find({id: 'contactId-13' })
 console.log(contact.province()) // undefined
 ```
 
-### city
+#### city
 
 ```ts
 city (): undefined | string
@@ -294,7 +294,7 @@ const contact = await bot.Contact.find({id: 'contactId-14' })
 console.log(contact.city()) // undefined
 ```
 
-### avatar
+#### avatar
 
 ```ts
 async avatar (): Promise<FileBoxInterface>
@@ -309,7 +309,7 @@ const file = await contact.avatar() // FileBox<https://www.cdn.com/image-15>
 
 Get the avatar of the contact.
 
-### tags
+#### tags
 
 ```ts
 async tags (): Promise<TagInterface[]>
@@ -324,7 +324,7 @@ const contact = await bot.Contact.find({id: 'contactId-16' })
 const tags = await contact.tags() // [1, 6]
 ```
 
-### sync
+#### sync
 
 ```ts
 async sync (): Promise<void>
@@ -343,7 +343,7 @@ await contact.sync()
 console.log(await contact.alias()) // new-alias-17
 ```
 
-### readMark
+#### readMark
 
 ```ts
 async readMark (hasRead: boolean): Promise<void>
@@ -363,7 +363,7 @@ const contact = await bot.Contact.find({id: 'contactId-18' })
 await contact.readMark(true)
 ```
 
-### self
+#### self
 
 ```ts
 self (): boolean
@@ -380,7 +380,7 @@ const contactSelf = await bot.Contact.find({id: 'contactId-0' })
 console.log(contactSelf.self()) // true
 ```
 
-### handle
+#### handle
 
 ```ts
 async handle (): undefined | string
@@ -395,7 +395,7 @@ const contact = await bot.Contact.find({id: 'contactId-20' })
 const handle = await contact.handle() // handle-20
 ```
 
-### toString()
+#### toString()
 
 ```ts
 override toString (): string
