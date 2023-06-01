@@ -51,7 +51,7 @@ Say a ```ContactInterface``` means to send a business card message.
 
 ```DelayInterface``` is a special sayable. Say a ```DelayInterface``` will not send any message, instead it will wait for a while.
 
-Example: 
+Example:
 
 ```ts
 const contact = await bot.Contact.find({ id })
@@ -113,7 +113,7 @@ bot.on('message', message: MessageInterfa.ce => {
 
 MiniProgramInterface
 
-```MiniProgramInterface``` represents a mini program. Mini program is a kind of built-in app in Wechat eco system. 
+```MiniProgramInterface``` represents a mini program. Mini program is a kind of built-in app in Wechat eco system.
 
 Example: Send a mini program message
 
@@ -140,7 +140,7 @@ String can be sent as it is.
 
 ## PostInterface
 
-```PostInterface``` is a special class. In message sending scenario, ```PostInterface``` represents a message with multiple sayables. 
+```PostInterface``` is a special class. In message sending scenario, ```PostInterface``` represents a message with multiple sayables.
 
 Example: Send a mixed message:
 
@@ -157,7 +157,7 @@ const post = await builder.build()
 await contact.say(post)
 ```
 
-## 
+##
 
 ```UrlLinkInterface``` represents a url link message. It is a link message with thumbnail and description.
 

@@ -32,9 +32,10 @@ npm install wechaty
 
 If you wish to use a particular version of ```wechaty-puppet``` or ```wechaty-puppet-service```, you can install such package manully.
 
-## Code example mock data:
+## Code example mock data
 
-Bot info: 
+Bot info:
+
 ```ts
 {
   name: 'bot',
@@ -43,6 +44,7 @@ Bot info:
 ```
 
 Contact info:
+
 ```ts
 {
   // n = 1 to 100
@@ -62,6 +64,7 @@ Contact info:
 A contact instance with name contact-n will be stringified as ```Contact<contact-n>```.
 
 Room Info:
+
 ```ts
 {
   // n = 1 to 100

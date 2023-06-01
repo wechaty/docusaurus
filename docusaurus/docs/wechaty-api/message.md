@@ -115,7 +115,6 @@ text (): string
 
 Get the text content of the messages. If the message is not a text message, for most cases it will return empty string (```''```).
 
-
 Example:
 
 ```ts
@@ -242,6 +241,7 @@ bot.on('message', message: MessageInterface => {
 ```ts
 mentionSelf (): boolean
 ```
+
 Returns whether the message mentions bot self or not.
 
 Example:
@@ -306,6 +306,7 @@ bot.on('message', message: MessageInterface => {
 ```ts
 async toFileBox (): Promise<FileBoxInterface>
 ```
+
 Extract the media file in the message. Check out filebox section for more detail.
 
 Example:

@@ -63,6 +63,7 @@ Set the phone list of the contact.
 ```ts
 abstract contactCorporationRemark (contactId: string, corporationRemark: string | null): Promise<void>
 ```
+
 Set the corporation remark of the contact.
 
 ### contactDescription
@@ -70,6 +71,7 @@ Set the corporation remark of the contact.
 ```ts
 abstract contactDescription (contactId: string, description: string | null): Promise<void>
 ```
+
 Set the description of the contact.
 
 ### contactList

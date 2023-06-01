@@ -182,6 +182,7 @@ async * [Symbol.asyncIterator] (): AsyncIterableIterator<Sayable>
 An async iterator to get the sayable of the post.
 
 Example:
+
 ```ts
 for await (const sayable of publishedPost[Symbol.asyncIterator]()){
     if (typeof sayable === 'string') {
@@ -205,6 +206,7 @@ async * children (filter: PUPPET.filters.Post = {}): AsyncIterableIterator<PostI
 An async iterator to get the children of the post.
 
 Example:
+
 ```ts
 for await (const post of publishedPost.children()){
   console.log(post) // child Post Interfaces
@@ -220,6 +222,7 @@ async * descendants (filter: PUPPET.filters.Post = {}): AsyncIterableIterator<Po
 An async iterator to get the descendants of the post.
 
 Example:
+
 ```ts
 for await (const post of publishedPost.descendants()){
   console.log(post) // descendants Post Interfaces

@@ -15,7 +15,7 @@ Friendship class is used only when you want to add new friends. Unlike most user
 static async search (queryFilter : PUPPET.filters.Friendship): Promise<undefined | ContactInterface>
 ```
 
-Search for a new contact. As we talked in contact section, a contact doesn't have to be a friend. 
+Search for a new contact. As we talked in contact section, a contact doesn't have to be a friend.
 
 ```Contact.find``` is to find a contact in current scope.
 
@@ -66,8 +66,7 @@ toJSON (): string
 
 Get the JSON string of the friendship.
 
-
-Example: 
+Example:
 
 ```ts
 bot.on('friendship', friendship: FriendshipInterface => {
@@ -93,8 +92,7 @@ async accept (): Promise<void>
 
 Accepts this friendship request received.
 
-
-Example: 
+Example:
 
 ```ts
 bot.on('friendship', friendship: FriendshipInterface => {
@@ -110,7 +108,7 @@ hello (): string
 
 Get the hello message from the friendship request.
 
-Example: 
+Example:
 
 ```ts
 bot.on('friendship', friendship: FriendshipInterface => {
@@ -126,7 +124,7 @@ contact (): ContactInterface
 
 Get the contact who send the friendship request.
 
-Example: 
+Example:
 
 ```ts
 bot.on('friendship', friendship: FriendshipInterface => {
@@ -142,11 +140,10 @@ type (): PUPPET.types.Friendship
 
 Get the type of the friendship.
 
-Example: 
+Example:
 
 ```ts
 bot.on('friendship', friendship: FriendshipInterface => {
   const type = friendship.type() // PUPPET.types.Friendship.Confirm
 })
 ```
-

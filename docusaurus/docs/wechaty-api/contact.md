@@ -95,7 +95,6 @@ const contact = await bot.Contact.find({id: 'contactId-1' })
 const name = contact.name() // contact-1
 ```
 
-
 ### alias
 
 ```ts
@@ -220,7 +219,6 @@ console.log(contact9.friend()) // false
 console.log(contact10.friend()) // true
 ```
 
-
 ### type
 
 ```ts
@@ -251,7 +249,6 @@ const contact = await bot.Contact.find({id: 'contactId-11' })
 console.log(contact.star()) // undefined
 ```
 
-
 ### gender
 
 ```ts
@@ -266,7 +263,6 @@ Example:
 const contact = await bot.Contact.find({id: 'contactId-12' })
 console.log(contact.gender()) // ContactGender.Male
 ```
-
 
 ### province
 

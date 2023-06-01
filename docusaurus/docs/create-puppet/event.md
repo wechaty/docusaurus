@@ -5,7 +5,7 @@ sidebar_label: 'Event'
 
 # Event
 
-Wechaty is driven by events. A puppet should emit different kinds of events on different occasions. Puppet events are different from wechaty events, though most of them are the same. For example, a puppet event heartbeat will not 
+Wechaty is driven by events. A puppet should emit different kinds of events on different occasions. Puppet events are different from wechaty events, though most of them are the same. For example, a puppet event heartbeat will not
 
 ## Emit event
 
@@ -44,7 +44,7 @@ interface PuppetEventListener {
 
 ### Event: Dirty
 
-Puppet should emit a dirty event when the payload of a class expires. 
+Puppet should emit a dirty event when the payload of a class expires.
 
 ```ts
 export interface EventDirtyPayload {
