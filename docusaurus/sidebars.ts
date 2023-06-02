@@ -27,6 +27,7 @@ const api: SubMenuData = {
     'api/sayable',
     'api/message',
     'api/contact',
+    'api/contact-self',
     'api/room',
     'api/friendship',
     'api/tag',

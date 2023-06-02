@@ -1,6 +1,6 @@
 ---
-title: Contact
-sidebar_label: ' Contact'
+title: Contact-Self
+sidebar_label: ' Contact-Self'
 ---
 
 ## Contact-Self Class
@@ -25,7 +25,7 @@ static async find (query : string | PUPPET.filters.Contact): Promise<undefined |
 
 Try to find the bot self contact. If the result is not bot self, an error will be thrown.
 
-Example: 
+Example:
 
 ```ts
 const contact = await bot.ContactSelf.find({ name: 'contactId-0' }) // contact0
@@ -42,7 +42,7 @@ public override async avatar (file: FileBoxInterface) : Promise<void>
 
 Get or set the avatar of bot self.
 
-Example: 
+Example:
 
 ```ts
 const contact = await bot.ContactSelf.find({ name: 'contactId-0' }) // contact0
