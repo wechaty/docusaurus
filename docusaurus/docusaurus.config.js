@@ -29,6 +29,18 @@ const config = {
   presets,
   plugins,
   themes,
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'zh'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-US',
+      },
+      zh: {
+        htmlLang: 'zh-CN',
+      },
+    },
+  },
 }
 
 module.exports = config

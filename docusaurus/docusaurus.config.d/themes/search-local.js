@@ -3,8 +3,7 @@ const searchLocal = [
   /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
   ({
     hashed: true,
-    highlightSearchTermsOnTargetPage: true,
-    language: ['en', 'zh'],
+    highlightSearchTermsOnTargetPage: true
   }),
 ]
 

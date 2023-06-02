@@ -16,6 +16,7 @@ const navbar = {
         { label: 'Explanations', to: 'docs/explanations/' },
       ],
     },
+    { type: 'localeDropdown', position: 'right' },
     { label: 'GitHub',          href: 'https://github.com/wechaty/wechaty#readme',   position: 'right' },
   ],
 }
