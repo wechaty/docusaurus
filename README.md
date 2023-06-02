@@ -70,6 +70,7 @@ At the same time, we also meet up offline all over the world. Here are some acti
 - [Markdown Linting Rules Documents](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md)
 
 ## Writers
+
 <a href="https://github.com/wechaty/docusaurus/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=wechaty/docusaurus" />
 </a>
