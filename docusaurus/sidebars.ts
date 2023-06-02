@@ -18,36 +18,37 @@ const showcases: SubMenuData = {
   ],
 }
 
-const wechatyAPI: SubMenuData = {
-  label: 'Wechaty API',
+const api: SubMenuData = {
+  label: 'API',
   items: [
-    'wechaty-api/overview',
-    'wechaty-api/helloworld',
-    'wechaty-api/event',
-    'wechaty-api/sayable',
-    'wechaty-api/message',
-    'wechaty-api/contact',
-    'wechaty-api/room',
-    'wechaty-api/friendship',
-    'wechaty-api/tag',
-    'wechaty-api/post',
+    'api/overview',
+    'api/helloworld',
+    'api/event',
+    'api/sayable',
+    'api/message',
+    'api/contact',
+    'api/room',
+    'api/friendship',
+    'api/tag',
+    'api/post',
   ],
 }
 
-const createPuppet: SubMenuData = {
-  label: 'Create Puppet',
+const puppetApi: SubMenuData = {
+  label: 'Puppet API',
   items: [
-    'create-puppet/overview',
-    'create-puppet/helloworld',
-    'create-puppet/event',
-    'create-puppet/contact',
-    'create-puppet/room',
-    'create-puppet/roommember',
-    'create-puppet/roominvitation',
-    'create-puppet/message',
-    'create-puppet/friendship',
-    'create-puppet/login',
-
+    'puppet-api/overview',
+    'puppet-api/helloworld',
+    'puppet-api/event',
+    'puppet-api/contact',
+    'puppet-api/room',
+    'puppet-api/roommember',
+    'puppet-api/roominvitation',
+    'puppet-api/message',
+    'puppet-api/friendship',
+    'puppet-api/login',
+    'puppet-api/tag',
+    'puppet-api/post',
   ],
 }
 
@@ -388,8 +389,8 @@ const references = {
   label: 'References',
   items: [
     'references/overview',
-    subMenu(wechatyAPI),
-    subMenu(createPuppet),
+    subMenu(api),
+    subMenu(puppetApi),
     subMenu(polyglot),
     subMenu(puppetProviders),
     subMenu(puppetServices),

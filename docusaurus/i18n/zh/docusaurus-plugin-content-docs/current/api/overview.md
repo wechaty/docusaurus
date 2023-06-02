@@ -1,13 +1,13 @@
 ---
-title: Bot Development
+title: API
 sidebar_label: 'Overview'
 ---
 
 ## Intro
 
-Wechaty is a Node.js library for building chatbots that work on WeChat, WhatsApp, and other messaging platforms. With Wechaty, you can build intelligent chatbots that automate tasks, engage with customers, and provide a personalized experience for your users.
+Wechaty 是一个能让你可以轻松在微信、WhatsApp以及各种其他即时通讯平台创建 chatbot 的 Node.js 库。在 Wechaty 的帮助下，你可以利用 chatbot 自动执行任务、与客户交流、提供个性化的服务体验。
 
-With the help of wechaty, you can build chatbots with 6 lines of code.
+你甚至可以只用6行代码就创造出一个最简单的 chatbot。
 
 ```ts
 import { WechatyBuilder } from 'wechaty'
@@ -22,19 +22,19 @@ async function main () {
 }
 ```
 
-### How to install
+### 如何安装
 
-In most cases, you should install ```wechaty``` only. The package ```wechaty``` has ```wechaty-puppet```, ```wechaty-puppet-service``` in its dependencies, so you don't have install them by yourself. So all you have to is
+在大多数情况下，你只需要安装 ```wechaty``` 包即可。 ```wechaty``` 包含了对 ```wechaty-puppet``` 和 ```wechaty-puppet-service``` 的依赖，因此你不需要单独安装他们。
 
 ```bash
 npm install wechaty
 ```
 
-If you wish to use a particular version of ```wechaty-puppet``` or ```wechaty-puppet-service```, you can install such package manully.
+对于进阶的使用者，则可以指定版本安装相关依赖以实现特殊需求。
 
-### Code example mock data
+### 实例代码中的模拟数据规范。
 
-Bot info:
+Bot 自身的信息：
 
 ```ts
 {
@@ -43,7 +43,7 @@ Bot info:
 }
 ```
 
-Contact info:
+联系人信息：
 
 ```ts
 {
@@ -61,9 +61,9 @@ Contact info:
 }
 ```
 
-A contact instance with name contact-n will be stringified as ```Contact<contact-n>```.
+一个名字叫做 ```contact-n``` 的联系人实例，可以被转换为 ```Contact<contact-n>``` 的字符串。
 
-Room Info:
+群信息：
 
 ```ts
 {
@@ -74,6 +74,6 @@ Room Info:
 }
 ```
 
-### Changelog
+### 版本历史
 
-- v1.20.2 new doc online
+- v1.20.2 全新文档上线

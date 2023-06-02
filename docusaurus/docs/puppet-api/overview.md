@@ -1,5 +1,5 @@
 ---
-title: Puppet Development
+title: Puppet API
 sidebar_label: 'Overview'
 ---
 
