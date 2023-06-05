@@ -58,7 +58,7 @@ static async fromJSON (payload: string | PUPPET.payloads.Friendship): Promise<Fr
 
 Deserialized from a JSON string or object to a friendship instance.
 
-#### toJSON
+#### toJSON (instance method)
 
 ```ts
 toJSON (): string

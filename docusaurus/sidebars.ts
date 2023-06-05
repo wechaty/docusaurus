@@ -30,6 +30,7 @@ const api: SubMenuData = {
     'api/contact-self',
     'api/room',
     'api/friendship',
+    'api/room-invitation',
     'api/tag',
     'api/post',
   ],
