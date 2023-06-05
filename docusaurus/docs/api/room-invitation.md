@@ -1,11 +1,11 @@
 ---
-title: Room-Invitation
-sidebar_label: ' Room-Invitation'
+title: RoomInvitation
+sidebar_label: ' RoomInvitation'
 ---
 
-## Room-Invitation Class
+## RoomInvitation Class
 
-Room-Invitation class is kind like Friendship class. It is used only when received a room invitation. Unlike most user modules that can be loaded with ```find``` or ```findAll```, friendship can created internally and passed as parameter in ```room-invitation``` event callback. It can also be serialized and deserialized to and from JSON.
+RoomInvitation class is kind like Friendship class. It is used only when received a room invitation. Unlike most user modules that can be loaded with ```find``` or ```findAll```, friendship can created internally and passed as parameter in ```room-invitation``` event callback. It can also be serialized and deserialized to and from JSON.
 
 ### Static Methods
 
