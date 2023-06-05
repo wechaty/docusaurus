@@ -1,11 +1,11 @@
 ---
-title: Contact-Self
-sidebar_label: ' Contact-Self'
+title: ContactSelf
+sidebar_label: ' ContactSelf'
 ---
 
-## Contact-Self Class
+## ContactSelf Class
 
-Contact-Self is a special kind of contact. It represents bot self. It has all methods and properties of a regular contact, and some more. Every method that returns a ```ContactInterface```, if the contact is bot self, a ```ContactSelfInterface``` will be returned instead.
+ContactSelf is a special kind of contact. It represents bot self. It has all methods and properties of a regular contact, and some more. Every method that returns a ```ContactInterface```, if the contact is bot self, a ```ContactSelfInterface``` will be returned instead.
 
 ### Static Methods
 
@@ -29,6 +29,16 @@ Example:
 
 ```ts
 const contact = await bot.ContactSelf.find({ name: 'contactId-0' }) // contact0
+```
+
+***Note*** : It is not recommended to use ```bot.ContactSelf.find```. ```bot.Contact.find``` will return ```ContactSelf``` instance if the result is bot self. The best practice of getting a ```ContactSelf``` instance is to monitor the login event and get it from the call back argument.
+
+Example:
+
+```ts
+bot.on('login', contact: ContactSelfInterface => {
+  const contactSelf = contact
+})
 ```
 
 ### Instance Methods
