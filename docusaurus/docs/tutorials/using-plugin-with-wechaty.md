@@ -230,7 +230,7 @@ Hot reloading event handler module files.
 import { EventHotHandler, EventHotHandlerConfig } from 'wechaty-plugin-contrib'
 const config: EventHotHandlerConfig = {
   login: './handlers/on-login',
-  logout: './handlers/on0-logout',
+  logout: './handlers/on-logout',
 }
 wechaty.use(EventHotHandler(config))
 ```
