@@ -1,74 +1,156 @@
 ---
-title: Room Invitation
+title: RoomInvitation
+sidebar_label: ' RoomInvitation'
 ---
 
-## Room Invitation
+## RoomInvitation Class
 
-Room Invitation is a global class that accepts room invitation. This section describes the methods of the Room Invitation class.
+RoomInvitation class is kind like Friendship class. It is used only when received a room invitation. Unlike most user modules that can be loaded with ```find``` or ```findAll```, friendship can created internally and passed as parameter in ```room-invitation``` event callback. It can also be serialized and deserialized to and from JSON.
 
-| Instance Methods | Return type |
-|----------------|---------------|
-| accept\(\)     | `Promise`   |
-| inviter\(\)    | `Promise`(Contact)   |
-| topic\(\)    | `Promise` (String)   |
-| date\(\)    | `Promise` (Date)   |
-| age\(\)    | `Promise` (Number)   |
+### Static Methods
 
-### roomInvitation.accept\(\) ⇒ `Promise <void>`
+#### fromJSON
 
-This method accepts the room invitation. See the following example:
-
-#### Example
-
-```javascript
-const bot = new Wechaty()
-bot.on('room-invite', async roomInvitation => {
-  try {
-    console.log(`received room-invite event.`)
-    await roomInvitation.accept()
-  } catch (e) {
-    console.error(e)
-  }
-})
-.start()
+```ts
+static async fromJSON (payload: string | PUPPET.payloads.RoomInvitation): Promise<RoomInvitationInterface>
 ```
 
-### roomInvitation.inviter\(\) ⇒ `Promise <Contact>`
+Deserialized from a JSON string or object to a friendship instance.
 
-This method gets the inviter from the room invitation. Check the following example:
+#### toJSON (instance method)
 
-#### Example
-
-```javascript
-const bot = new Wechaty()
-bot.on('room-invite', async roomInvitation => {
-  const inviter = await roomInvitation.inviter()
-  const name = inviter.name()
-  console.log(`received room invitation event from ${name}`)
-})
-.start()
+```ts
+toJSON (): string
 ```
 
-### roomInvitation.topic\(\) ⇒ `Promise <string>`
+Get the JSON string of the invitation.
 
-The method gets the room topic from room invitation as shown in the below example:
+Example:
 
-#### Example
+```ts
+bot.on('room-invitation', invitation: RoomInvitationInterface => {
+  const jsonStr = invitation.toJSON()
 
-```javascript
-const bot = new Wechaty()
-bot.on('room-invite', async roomInvitation => {
-  const topic = await roomInvitation.topic()
-  console.log(`received room invitation event from room ${topic}`)
+  const invitation2 = await bot.RoomInvitation.fromJSON(jsonStr)
+  console.log(invitation === invitation2) // false, different with friendship, room-invitation class is not poolified, which means every time you load a new invitation, it will be a new object.
+
+  await invitation.accept()
+
+  await invitation2.accept() // at this time, the invitation will be accepted already (since this two invitation objects represents the same invitation in IM). An error may be thrown (depend on puppet implementation).
 })
-.start()
 ```
 
-### roomInvitation.date\(\) ⇒ `Promise <Date>`
+### Instance Methods
 
-The method gets the invitation date and time.
+#### accept
 
-### roomInvitation.age\(\) ⇒ `Promise <number>`
+```ts
+async accept (): Promise<void>
+```
 
-The method returns the roopm invitation age in seconds.
-For example, the invitation is sent at time `8:43:01`, and when we received it in Wechaty, the time is `8:43:15`, then the age\(\) will return `8:43:15 - 8:43:01 = 14 (seconds)`
+Accepts this friendship request received.
+
+Example:
+
+```ts
+bot.on('room-invitation', invitation: RoomInvitationInterface => {
+  await invitation.accept()
+})
+```
+
+#### inviter
+
+```ts
+async inviter (): Promise<ContactInterface>
+```
+
+Get the contact that invited you to the room.
+
+Example:
+
+```ts
+bot.on('room-invitation', invitation: RoomInvitationInterface => {
+  const inviter = await invitation.inviter()
+  await inviter.say('thank you for inviting me!')
+})
+```
+
+#### topic
+
+```ts
+async topic (): Promise<string>
+```
+
+Get the topic of the room that you were invited to.
+
+Example:
+
+```ts
+bot.on('room-invitation', invitation: RoomInvitationInterface => {
+  const topic = await invitation.topic()
+})
+```
+
+#### memberCount
+
+```ts
+async memberCount (): Promise<number>
+```
+
+Get the count of members of the room that you were invited to.
+
+Example:
+
+```ts
+bot.on('room-invitation', invitation: RoomInvitationInterface => {
+  const roomMemberCount = await invitation.memberCount()
+})
+```
+
+#### memberList
+
+```ts
+async memberList (): Promise<ContactInterface[]>
+```
+
+Get the list of contacts of the room that you were invited to.
+
+Example:
+
+```ts
+bot.on('room-invitation', invitation: RoomInvitationInterface => {
+  const contactList = await invitation.memberList()
+})
+```
+
+#### date
+
+```ts
+date (): Date
+```
+
+Return the date (and time) of the invitation.
+
+Example:
+
+```ts
+bot.on('room-invitation', invitation: RoomInvitationInterface => {
+  console.log(invitation.date()) // 2023-05-22T15:44:21.298Z
+})
+```
+
+#### age
+
+```ts
+age (): number
+```
+
+Returns the age of the invitation in seconds.
+
+Example:
+
+```ts
+bot.on('room-invitation', invitation: RoomInvitationInterface => {
+  console.log(invitation.age()) // 120
+})
+```

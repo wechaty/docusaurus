@@ -1,355 +1,451 @@
 ---
 title: Message
+sidebar_label: ' Message'
 ---
-This section gives the clear description of the Message Class ,its methods and their uses.
-All wechat messages will be encapsulated as a `Message`.
 
-[Examples/Ding-Dong-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/ding-dong-bot.ts)
+## Message Class
 
-## Global Class `Message`
+Message is more than just a message in a conversation. It also represents any 'sayable'. For example, if your friend posted a moment with images. Each image is also an image. (In this case the talker and the receiver will both be the publisher of the moment.)
+
+If a message is recalled, it won't be removed. There will be two messages, the original message, and the recall message.
+
+### Static Methods
+
+You can call static methods from ```bot.Message```.
+
+#### find
+
+```ts
+static async find (query : string | PUPPET.filters.Message): Promise<undefined | MessageInterface> 
+```
+
+Try to find a message in cache and then puppet. If no message was found, ```undefined``` will be returned.
+
+Example: Load a message with id.
+
+```ts
+const message = await bot.Message.find({id})
+```
+
+#### findAll
+
+```ts
+static async findAll (query? : PUPPET.filters.Message): Promise<MessageInterface[]>
+```
+
+Try to find messages in puppet and then loaded them in cache and then puppet.
+
+Example: Find all messages from contact-50
+
+```ts
+const message = await bot.Message.findAll({ fromId: 'contactId-50' })
+```
 
 ### Instance Methods
 
-| Instance methods               | Return type         |
-|--------------------------------|---------------------|
-| from\(\)                       | `Contact` or `null` |
-| to\(\)                         | `Contact` or `null` |
-| room\(\)                       | `Room` or `null`    |
-| text\(\)                       | `string`            |
-| say\(text Or Contact Or File\) | `Promise`           |
-| type\(\)                       | `MessageType`       |
-| self\(\)                       | `boolean`           |
-| mention\(\)                    | `Promise`           |
-| mentionSelf\(\)                | `Promise`           |
-| forward\(to\)                  | `Promise`           |
-| date\(\)                       | `Date`              |
-| age\(\)                        | `Number`            |
-| toFileBox\(\)                  | `Promise`           |
-| toContact\(\)                  | `Promise`           |
-| toUrlLink\(\)                  | `Promise`           |
+#### conversation
 
-### Static Method
+```ts
+conversation (): ContactInterface | RoomInterface
+```
 
-| Static Methods | Return type |
-|----------------|-------------|
-| find\(\)       | `Promise`   |
-| findAll\(\)    | `Promise`   |
+Get the conversation (contact or room) of the message.
 
-## Instance Methods
+Example:
 
-### message.from\(\) ⇒ `Contact | null`
-
-By using message.from, you will receive the sender name from the message. If the method could not find the sender, it will return `null`. See the following example of instance method of class `Message`:
-
-### Example
-
-```javascript
-const bot = new Wechaty()
-bot
-.on('message', async message => {
-  const contact = message.from()
-  const text = message.text()
-  const room = message.room()
-  if (room) {
-    const topic = await room.topic()
-    console.log(`Room: ${topic} Contact: ${contact.name()} Text: ${text}`)
-  } else {
-    console.log(`Contact: ${contact.name()} Text: ${text}`)
-  }
+```ts
+bot.on('message', message: MessageInterface => {
+  const contact = message.conversation() // Contact<contact-52>
 })
-.start()
 ```
 
-### message.to\(\) ⇒ `Contact` \| `null`
+#### talker
 
-The method gets the destination of the message Message.to\(\) will return `null` if a message is in a room, use Message.room\(\) to get the room.The method is also  an instance method of class `Message`.Here is an example below:
+```ts
+talker (): ContactInterface 
+```
 
-### Example
+Get the sender of the message. If the message is from a contact, this is same with ```conversation()```. However if the message is in a room, ```talker()``` will return the contact sent the message, and ```conversation()``` will return the room.
 
-```javascript
-const bot = new Wechaty()
-bot
-.on('message', async message => {
-  const contact = message.from()
-  const text = message.text()
-  const toContact = message.to()
-  if (toContact) {
-    const name = toContact.name()
-    console.log(`toContact: ${name} Contact: ${contact.name()} Text: ${text}`)
-  } else {
-    console.log(`Contact: ${contact.name()} Text: ${text}`)
-  }
+Example:
+
+```ts
+bot.on('message', message: MessageInterface => {
+  const contact = message.talker() // Contact<contact-54>
 })
-.start()
 ```
 
-### message.room\(\) ⇒ `Room` \| `null`
+#### listener
 
-By using the `message.room` you get the room from the message.If that particular message is not in a room, then will return `null`.
+```ts
+listener (): ContactInterface 
+```
 
-### Example
+Get the listener of the message. If the message is from a room, it will return ```undefined```.
 
-```javascript
-const bot = new Wechaty()
-bot
-.on('message', async message => {
-  const contact = message.from()
-  const text = message.text()
-  const room = message.room()
-  if (room) {
-    const topic = await room.topic()
-    console.log(`Room: ${topic} Contact: ${contact.name()} Text: ${text}`)
-  } else {
-    console.log(`Contact: ${contact.name()} Text: ${text}`)
-  }
+Example:
+
+```ts
+bot.on('message', message: MessageInterface => {
+  const contact = message.listener() // Contact<contact-0> (self)
 })
-.start()
 ```
 
-### message.text\(\) ⇒ `string`
+#### room
 
-This method returns the text context for the message.
+```ts
+room (): RoomInterface 
+```
 
-### Example
+Get the room of the message. If the message is from a contact, it will return ```undefined```.
 
-```javascript
-const bot = new Wechaty()
-bot
-.on('message', async message => {
-  const contact = message.from()
-  const text = message.text()
-  const room = message.room()
-  if (room) {
-    const topic = await room.topic()
-    console.log(`Room: ${topic} Contact: ${contact.name()} Text: ${text}`)
-  } else {
-    console.log(`Contact: ${contact.name()} Text: ${text}`)
-  }
+Example:
+
+```ts
+bot.on('message', message: MessageInterface => {
+  const contact = message.room() // Room<room-1>
 })
-.start()
 ```
 
-### message.toRecalled\(\) ⇒ `Promise <Message | null>`
+#### text
 
-By using `message.toRecalled`, you will get the text content of the recalled message.
-Here is an example:
+```ts
+text (): string
+```
 
-### Example
+Get the text content of the messages. If the message is not a text message, for most cases it will return empty string (```''```).
 
-```javascript
-const bot = new Wechaty()
-bot
-.on('message', async message => {
-  if (message.type() === bot.Message.Type.Recalled) {
-    const recalledMessage = await message.toRecalled()
-    console.log(`Message: ${recalledMessage} has been recalled.`)
-  }
+Example:
+
+```ts
+bot.on('message', message: MessageInterface => {
+  const text = message.text() // 'hello wechaty'
 })
-.start()
 ```
 
-### message.say\(textOrContactOrFileOrUrlLinkOrMiniProgram\) ⇒ `Promise <void>`
+#### toRecalled
 
-By using `message.say` you can reply a Text, Contact Card, Media File or Link message to the sender.The method takes in 5 types of parameters,more details is given below :
+```ts
+async toRecalled (): Promise<undefined | MessageInterface>
+```
 
-| Param | Type | Description |
-| :--- | :--- | :--- |
-| text Or Contact Or File Or UrlLink Or MiniProgram | `string` \| `Contact` \| `FileBox` \| `UrlLink` \| `MiniProgram` | send text, Contact, UrlLink, MiniProgram or file to bot.   You can use [FileBox](https://www.npmjs.com/package/file-box) to send file |
+If the message is not a recall message, an error will be thrown. Other wise it will try to get the recalled message. If no messages is loaded, however there is an original message id (this usually is something wrong with the puppet), it will return ```undefined```.
 
-> Tips: This function depends on the Puppet Implementation.
- **See 🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
+Example:
 
-**See🏻**: [Examples/ding-dong-bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/ding-dong-bot.ts)
-
-### Example
-
-```javascript
-import { FileBox }  from 'file-box'
-import {
-  Wechaty,
-  UrlLink,
-  MiniProgram,
-}  from 'wechaty'
-
-const bot = new Wechaty()
-bot
-.on('message', async message => {
-
-// 1. send Image
-
-  if (/^ding$/i.test(message.text())) {
-    const fileBox = FileBox.fromUrl('https://wechaty.github.io/wechaty/images/bot-qr-code.png')
-    await message.say(fileBox)
-  }
-
-// 2. send Text
-
-  if (/^dong$/i.test(message.text())) {
-    await message.say('dingdingding')
-  }
-
-// 3. send Contact
-
-  if (/^lijiarui$/i.test(message.text())) {
-    const contactCard = await bot.Contact.find({name: 'lijiarui'})
-    if (!contactCard) {
-      console.log('not found')
-      return
-    }
-    await message.say(contactCard)
-  }
-
-// 4. send UrlLink
-
-  if (/^link$/i.test(message.text())) {
-    const urlLink = new UrlLink({
-      description: 'Wechaty is a Bot SDK for Wechat Individual Account which can help you create a bot in 6 lines of javascript, with cross-platform support including Linux, Windows, Darwin(OSX/Mac) and Docker.',
-      thumbnailUrl: 'https://camo.githubusercontent.com/f310a2097d4aa79d6db2962fa42bb3bb2f6d43df/68747470733a2f2f6368617469652e696f2f776563686174792f696d616765732f776563686174792d6c6f676f2d656e2e706e67',
-      title: 'Wechaty',
-      url: 'https://github.com/wechaty/wechaty',
-    });
-
-    await message.say(urlLink);
-  }
-
-// 5. send MiniProgram (only supported by `wechaty-puppet-macpro`)
-
-  if (/^mini-program$/i.test(message.text())) {
-    const miniProgram = new MiniProgram ({
-      appid              : 'gh_0aa444a25adc',
-      title              : '我正在使用Authing认证身份，你也来试试吧',
-      pagePath           : 'routes/explore.html',
-      thumbUrl           : '30590201000452305002010002041092541302033d0af802040b30feb602045df0c2c5042b777875706c6f61645f31373533353339353230344063686174726f6f6d3131355f313537363035393538390204010400030201000400',
-      thumbKey           : '42f8609e62817ae45cf7d8fefb532e83',
-    });
-
-    await message.say(miniProgram);
-  }
+```ts
+bot.on('message', message: MessageInterface => {
+  const originalMessage = message.toRecalled() // Message<message-0>
 })
-.start()
 ```
 
-### message.type\(\) ⇒ `MessageType`
+#### say
 
-This method gets the type of the wechat message. The different method types supported are listed below:
-
-| Message Type           |
-|------------------------|
-| MessageType.Unknown    |
-| MessageType.Attachment |
-| MessageType.Audio      |
-| MessageType.Contact    |
-| MessageType.Emoticon   |
-| MessageType.Image      |
-| MessageType.Text       |
-| MessageType.Video      |
-| MessageType.Url        |
-
-### Example
-
-```javascript
-const bot = new Wechaty()
-if (message.type() === bot.Message.Type.Text) {
-  console.log('This is a text message')
-}
+```ts
+async say (sayable: Sayable): Promise<void | MessageInterface>
 ```
 
-### message.self\(\) ⇒ `boolean`
+Send a message to the talker. The following two code sections are the same. The new message will be returned.
 
-This method returns `true` if message is sent from self or else it returns `false`.
-
-### Example
-
-```javascript
-if (message.self()) {
- console.log('this message is sent by myself!')
-}
+```ts
+message.say(sayable)
 ```
 
-### message.mention\(\) ⇒ `Promise <Contact []>`
-
-The method gets you the message mentioned contactList and returns `Promise <Contact []>` - > message mentioned contactList.
-
-|  | Web | Mac PC Client | iOS Mobile | android Mobile |
-| :--- | :---: | :---: | :---: | :---: |
-| \[You were mentioned\] tip \(\[有人@我\]的提示\) | ✘ | √ | √ | √ |
-| Identify magic code \(8197\) by copy & paste in mobile | ✘ | √ | √ | ✘ |
-| Identify magic code \(8197\) by programming | ✘ | ✘ | ✘ | ✘ |
-| Identify two contacts with the same roomAlias by \[You were  mentioned\] tip | ✘ | ✘ | √ | √ |
-
-### Example
-
-```javascript
-const contactList = await message.mention()
-console.log(contactList)
+```ts
+const contactOrRoom = await message.conversation()
+contactOrRoom.say(sayable)
 ```
 
-### message.mentionSelf\(\) ⇒ `Promise <boolean>`
+#### recall
 
-The method checks if a message is a self mention.It returns `true` for self mention messages.Here is an example:
-
-### Example
-
-```javascript
-if (await message.mentionSelf()) {
- console.log('this message were mentioned me! [You were mentioned] tip ([有人@我]的提示)')
-}
+```ts
+async recall (): Promise<boolean>
 ```
 
-### message.forward\(to\) ⇒ `Promise <void>`
+Recall the message. Return success or not.
 
-By using this method you can forward the received message. This action doesn't trigger the on-message events.
+Example:
 
-| Param | Type | Description |
-| :--- | :--- | :--- |
-| to (Recipient) | `Sayable` \| `Array` | Room or Contact The recipient of the message, the room, or the contact |
+```ts
+const contact = await bot.Contact.find({ id: 'contactId-54' })
+const message = await contact.say('this message will be recalled')
+await message.recall()
+```
 
-### Example
+#### type
 
-```javascript
-const bot = new Wechaty()
-bot
-.on('message', async message => {
-  const room = await bot.Room.find({topic: 'wechaty'})
-  if (room) {
-    await message.forward(room)
-    console.log('forward this message to wechaty room!')
-  }
+```ts
+type (): PUPPET.types.Message
+```
+
+Return the type of the message.
+
+Example:
+
+```ts
+bot.on('message', message: MessageInterface => {
+  const type = message.type() // PUPPET.types.Message.Text
 })
-.start()
 ```
 
-### message.date\(\) ⇒ `Date`
+#### self
 
-The method returns the message sent date.
+```ts
+self (): boolean
+```
 
-### message.age\(\) ⇒ `number`
+Returns whether the message is sent by bot self or not.
 
-The method returns the age of the  message  in seconds.For example, the message is sent at time `8:43:01`, and when we received it in Wechaty, the time is `8:43:15`, then the age\(\) will return `8:43:15 - 8:43:01 = 14 (seconds)`.
+Example:
 
-### message.toFileBox\(\) ⇒ `Promise <FileBox>`
+```ts
+const contact = await bot.Contact.find({ id: 'contactId-56' })
+const message = await contact.say('hello there')
+console.log(message.self()) // true
+```
 
-This method extracts the Media file from the Message, and puts it into the FileBox.
+#### mentionList
 
-> Tips: This function is depending on the Puppet Implementation, **see🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
+```ts
+async mentionList (): Promise<ContactInterface[]>
+```
 
-### message.toContact\(\) ⇒ `Promise <Contact>`
+Returns the contacts that were mentioned in this message.
 
-The method gets share card of the Message Extract  and the contact card from the Message, and encapsulates it into Contact class.
+Example:
 
-> Tips: This function is depending on the Puppet Implementation, **see 🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
+```ts
+bot.on('message', message: MessageInterface => {
+  const contacts = await message.mentionList() // [Contact<contact-0>, Contact<contact-1>]
+})
+```
 
-### message.toUrlLink\(\) ⇒ `Promise <UrlLink>`
+#### mentionText
 
-The method extracts the Url Link from the Message, and encapsulate it into UrlLink class.
-Tips: This function is depending on the Puppet Implementation, **see 🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
+```ts
+async mentionText (): Promise<string>
+```
 
-## Static Methods
+Returns text that removes all mention text fragments. e.g. 'Wechaty is awesome @A, @B' will be turned to 'Wechaty is awesome'.
 
-### Message.find\(\) ⇒ `Promise <Message | null>`
+Example:
 
-By using `message.find` you can find the messages in cache.
+```ts
+bot.on('message', message: MessageInterface => {
+  const text = await message.mentionText() // 'hello everyone'
+})
+```
 
-### Message.findAll\(\) ⇒ `Promise <Message []>`
+#### mentionSelf
 
-By using `message.findAll`  you can find the messages in cache.
+```ts
+mentionSelf (): boolean
+```
+
+Returns whether the message mentions bot self or not.
+
+Example:
+
+```ts
+bot.on('message', message: MessageInterface => {
+  const mentionSelf = message.mentionSelf() // true
+})
+```
+
+#### forward
+
+```ts
+async forward (to: RoomInterface | ContactInterface): Promise<void | MessageInterface>
+```
+
+Send the messages to another conversation.
+
+Example:
+
+```ts
+bot.on('message', message: MessageInterface => {
+  const contact = await bot.Contact.find({ id: 'contactId-40' })
+  await message.forward(contact)
+})
+```
+
+#### date
+
+```ts
+date (): Date
+```
+
+Return the date (and time) of the message.
+
+Example:
+
+```ts
+bot.on('message', message: MessageInterface => {
+  console.log(message.date()) // 2023-05-22T15:44:21.298Z
+})
+```
+
+#### age
+
+```ts
+age (): number
+```
+
+Returns the age of the message in seconds.
+
+Example:
+
+```ts
+bot.on('message', message: MessageInterface => {
+  console.log(message.age()) // 120
+})
+```
+
+#### toFileBox
+
+```ts
+async toFileBox (): Promise<FileBoxInterface>
+```
+
+Extract the media file in the message. Check out filebox section for more detail.
+
+Example:
+
+```ts
+bot.on('message', message: MessageInterface => {
+  const file = await message.toFileBox()
+  await file.toFile(pathToFile) // saved into hard disk
+})
+```
+
+#### toImage
+
+```ts
+async toImage (): Promise<ImageInterface>
+```
+
+Extract the image file in the message. Check out image section for more detail.
+
+Example:
+
+```ts
+bot.on('message', message: MessageInterface => {
+  const image = await message.Image()
+  const thumb = await image.thumbnail()
+  const hd = await image.hd()
+  await thumb.toFile(pathToThumbFile)
+  await hd.toFile(pathToHdFile)
+})
+```
+
+#### toContact
+
+```ts
+async toContact (): Promise<ContactInterface>
+```
+
+Get contact from contact card message.
+
+Example:
+
+```ts
+bot.on('message', message: MessageInterface => {
+  const contact = await message.toContact() // Contact<contact-60>
+})
+```
+
+#### toUrlLink
+
+```ts
+async toUrlLink (): Promise<UrlLinkInterface>
+```
+
+Get urlLink from urlLink message.
+
+Example:
+
+```ts
+bot.on('message', message: MessageInterface => {
+  const url = await message.urlLink() // UrlLink<https://www.baidu.com>
+})
+```
+
+#### toMiniProgram
+
+```ts
+async toMiniProgram (): Promise<MiniProgramInterface>
+```
+
+Get miniProgram from miniProgram message.
+
+Example:
+
+```ts
+bot.on('message', message: MessageInterface => {
+  const miniProgram = await message.toMiniProgram() // MiniProgram Interface. See sayable section. (cannot be stringified)
+})
+```
+
+#### toLocation
+
+```ts
+async toLocation (): Promise<LocationInterface>
+```
+
+Get location from location message.
+
+Example:
+
+```ts
+bot.on('message', message: MessageInterface => {
+  const location = await message.toLocation() // Location<东升镇>
+})
+```
+
+#### toPost
+
+```ts
+async toPost (): Promise<PostInterface>
+```
+
+Transfer the message into a post, for further process like quoting. Any message can be a transfer into a post.
+
+Example:
+
+```ts
+bot.on('message', message: MessageInterface => {
+  const post = await message.toPost() // Post Interface. See post and sayable section. (cannot be stringified)
+})
+```
+
+#### toSayable
+
+```ts
+async toSayable (): Promise<undefined | Sayable>
+```
+
+Transfer the message into a sayable, for further process like send to other conversations. A sayable represents any sendable content.
+
+Example:
+
+```ts
+bot.on('message', message: MessageInterface => {
+  const sayable = await message.toSayable() // Any sayable above, see sayable section.
+})
+```
+
+#### toString()
+
+```ts
+override toString (): string
+```
+
+Gets a string represents a message instance. Useful when debugging.
+
+Example:
+
+```ts
+bot.on('message', message: MessageInterface => {
+  const str = message.toString() // Message#Text[🗣contact-20]
+})
+```

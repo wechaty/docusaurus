@@ -1,187 +1,149 @@
 ---
-title: Friendship 
+title: Friendship
+sidebar_label: ' Friendship'
 ---
 
-Wechaty bot allows you to make friends via its global class called `Friendship`.This section is completely about the `Frienship` class.
+## Friendship Class
 
-[Examples or Friend-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/friend-bot.ts)
+Friendship class is used only when you want to add new friends. Unlike most user modules that can be loaded with ```find``` or ```findAll```, friendship can created internally and passed as parameter in ```friendship``` event callback. It can also be serialized and deserialized to and from JSON.
 
-## Global class Friendship
+### Static Methods
 
-The Friendship class allows you to do the following functionalities.
+#### search
 
-1. send friend requests
-2. receive friend requests \(in friend event\)
-3. confirmation of friendship\( in friend event\)
-
-### Instance Method
-
-| Instance Methods | Return Type      |
-|------------------|------------------|
-| accept()         | `Promise (void)` |
-| hello()          | `string`         |
-| contact()        | `contact`        |
-| type()           | `Frienshiptype`  |
-
-### Static Method
-
-| Static Methods | Return Type      |
-|----------------|------------------|
-| add()          | `Promise (void)` |
-
-### friendship.accept\(\) ⇒ `Promise <void>`
-
-The method accepts friend request.Check the example below for implementation
-
-#### Example
-
-```javascript
-const bot = new Wechaty()
-bot.on('friendship', async friendship => {
-  try {
-    console.log(`received friend event.`)
-    switch (friendship.type()) {
-
-    // 1. New Friend Request
-
-    case bot.Friendship.Type.Receive:
-      await friendship.accept()
-      break
-
-    // 2. Friend Ship Confirmed
-
-    case bot.Friendship.Type.Confirm:
-      console.log(`friend ship confirmed`)
-      break
-    }
-  } catch (e) {
-    console.error(e)
-  }
-})
-.start()
+```ts
+static async search (queryFilter : PUPPET.filters.Friendship): Promise<undefined | ContactInterface>
 ```
 
-### friendship.hello\(\) ⇒ `string`
+Search for a new contact. As we talked in contact section, a contact doesn't have to be a friend.
 
-The method verifies message.Check the example below for implementation.
+```Contact.find``` is to find a contact in current scope.
 
-**Example** _\(If request content is \`ding\`, then accept the friendship\)_
+```Friendship.search``` is try to search for a new contact in IM scope.
 
-```javascript
-const bot = new Wechaty()
-bot.on('friendship', async friendship => {
-  try {
-    console.log(`received friend event from ${friendship.contact().name()}`)
-    if (friendship.type() === bot.Friendship.Type.Receive && friendship.hello() === 'ding') {
-      await friendship.accept()
-    }
-  } catch (e) {
-    console.error(e)
-  }
-}
-.start()
+Example:
+
+```ts
+const contact = await bot.Friendship.search({id: 'contactId-31'}) // Contact<contact-31>
 ```
 
-### friendship.contact\(\) ⇒ `Contact`
+#### add
 
-The method gets the contact from friendship.Below is an example for implementation.
-
-#### Example
-
-```javascript
-const bot = new Wechaty()
-bot.on('friendship', friendship => {
-  const contact = friendship.contact()
-  const name = contact.name()
-  console.log(`received friend event from ${name}`)
-}
-.start()
+```ts
+static async add (contact : ContactInterface, options: FriendshipAddOptions): Promise<void>
 ```
 
-### friendship.type\(\) ⇒ `FriendshipType`
+Send a friendship request to the contact. The options indicates the hello message and the scenario when adding the contact to your friend list. This scenario may be useful for some IM (e.g. Wechat.)
 
-The method returns the friendship type.Check the below example for implementation.
+Example1: Add a contact from a room
 
-> Tips: FriendshipType is enum here. &lt;/br&gt;
->
-> * FriendshipType.Unknown
-> * FriendshipType.Confirm
-> * FriendshipType.Receive
-> * FriendshipType.Verify
-
-### Example _\(If request content is \`ding\`, then accept the friendship\)_
-
-```javascript
-const bot = new Wechaty()
-bot.on('friendship', async friendship => {
-  try {
-    if (friendship.type() === bot.Friendship.Type.Receive && friendship.hello() === 'ding') {
-      await friendship.accept()
-    }
-  } catch (e) {
-    console.error(e)
-  }
-}
-.start()
+```ts
+const room = await bot.Room.find({ topic: 'room' })
+const contact = await room.member({ name: 'roomMember' })
+bot.Friendship.add(contact, { room, hello: 'Hi, this is Wechaty bot from room.'})
 ```
 
-### Friendship.search\(phone\) ⇒ `Promise <Contact>`
+Example2: Add a contact from a room
 
-The method search contact by phone number and get a `contact`. The best practice is to send friend request once per minute. Remember not to do this too frequently, or your account may be blocked.
+```ts
+const contact = await bot.Friendship.search({ phone: '13812345678' })
+bot.Friendship.add(contact, { hello: 'Hi, this is Wechaty bot from phone search.'})
+```
 
-| Param | Type | Description |
-| :--- | :--- | :--- |
-| phone | `number` | search phone number |
+#### fromJSON
 
-#### Example
+```ts
+static async fromJSON (payload: string | PUPPET.payloads.Friendship): Promise<FriendshipInterface>
+```
 
-```javascript
-const phone = '131xxx1234'
-const searchContact = await bot.Friendship.search({
-  phone,
+Deserialized from a JSON string or object to a friendship instance.
+
+#### toJSON (instance method)
+
+```ts
+toJSON (): string
+```
+
+Get the JSON string of the friendship.
+
+Example:
+
+```ts
+bot.on('friendship', friendship: FriendshipInterface => {
+  const jsonStr = friendship.toJSON()
+  // {
+  //   id: 'friendship-1',
+  //   contactId: 'contactId-33',
+  //   hello: 'hello from contact 33',
+  //   timestamp: 1684776502976
+  // }
+  const friendship2 = await bot.Friendship.fromJSON(jsonStr)
+  console.log(friendship === friendship2) // true. Although friendship interfaces are objects, they are loaded from a pool by wechaty. So two friendship instance with the same id will be the same object.
 })
 ```
 
-### Friendship.add\(contact, options\) ⇒ `Promise <void>`
+### Instance Methods
 
-The method sends a Friend Request to a `contact` with message `hello`.The best practice is to send friend request once per minute. Remember not to do this too frequently, or your account may be blocked.
+#### accept
 
-| Param | Type | Description |
-| :--- | :--- | :--- |
-| contact | `Contact` | Send friend request to contact |
-| options | `FriendshipAddOptions` | The friend request option |
-
-#### Example \(add searched contact\)
-
-```javascript
-await bot.Friendship.add(searchContact, { hello: 'Nice to meet you! I am wechaty bot!' })
+```ts
+async accept (): Promise<void>
 ```
 
-#### Example \(add room member\)
+Accepts this friendship request received.
 
-```javascript
-const memberList = await room.memberList()
-for (let i = 0; i < memberList.length; i++) {
-  await bot.Friendship.add(member, {
-    room: message.room(),
-    hello: 'Nice to meet you! I am wechaty bot!',
-  })
-}
+Example:
 
+```ts
+bot.on('friendship', friendship: FriendshipInterface => {
+  await friendship.accept()
+})
 ```
 
-#### Example \(add contact card\)
+#### hello
 
-```javascript
-if (message.type() === bot.Message.Type.Contact) {
-  const contact = await message.toContact()
-  const options = {
-    contact: message.talker(),
-    hello: 'Nice to meet you! I am wechaty bot!',
-  }
-  if (message.room()) {
-    options.room = message.room()
-  }
-  await bot.Friendship.add(contact, options)
-}
+```ts
+hello (): string
+```
+
+Get the hello message from the friendship request.
+
+Example:
+
+```ts
+bot.on('friendship', friendship: FriendshipInterface => {
+  const hello = friendship.hello() // hello from contact-35
+})
+```
+
+#### contact
+
+```ts
+contact (): ContactInterface
+```
+
+Get the contact who send the friendship request.
+
+Example:
+
+```ts
+bot.on('friendship', friendship: FriendshipInterface => {
+  const contact = friendship.contact() // Contact<contact-37>
+})
+```
+
+#### type
+
+```ts
+type (): PUPPET.types.Friendship
+```
+
+Get the type of the friendship.
+
+Example:
+
+```ts
+bot.on('friendship', friendship: FriendshipInterface => {
+  const type = friendship.type() // PUPPET.types.Friendship.Confirm
+})
 ```

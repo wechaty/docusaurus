@@ -1,308 +1,411 @@
 ---
-title: Contact Class
+title: Contact
+sidebar_label: ' Contact'
 ---
 
-All wechat contacts(friend) will be encapsulated as a Contact.
+## Contact Class
 
-## Classes
+Contact, as the name indicates, represents a contact in IM. The Contact class provides many functions including getting properties, send messages, edit info, etc.
 
-All wechat contacts\(friend\) will be encapsulated as a Contact.
-[Examples/Contact-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/contact-bot.ts)
-
-## Contact
-
-All wechat contacts\(friend\) will be encapsulated as a Contact.
-
-### Properties
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| id | `string` | Get Contact id. This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table) |
-
-## Global Class `Contact`
-
-### Instance Methods
-
-| Instance Methods                     | Return type                                                           |
-|--------------------------------------|-----------------------------------------------------------------------|
-| say(text Or Contact Or File Or Url)  | `Promise`                                                             |
-| name()                               | `String`                                                              |
-| alias(newAlias)                      | `Promise`                                                             |
-| friend()                             | `Boolean or null`                                                     |
-| type()                               | `ContactType.Unknown or ContactType.Personal or ContactType.Official` |
-| gender()                             | `ContactGender.Unknown or ContactGender.Male or ContactGender.Female` |
-| province()                           | `String or null`                                                      |
-| city()                               | `String or null`                                                      |
-| avatar()                             | `Promise`                                                             |
-| sync()                               | `Promise`                                                             |
-| self()                               | `Boolean`                                                             |
+Note that a contact may not be a friend. They may just be a member in one of your rooms.
 
 ### Static Methods
 
-| Static Methods            | Return Type                 |
-|---------------------------|-----------------------------|
-| find(query)               | `Promise <Contact \| null>` |
-| findAll(Query Arguements) | `Promise <Contact []>`      |
+You can call static methods from ```bot.Contact```。
 
-### contact.say\(textOrContactOrFileOrUrlLinkOrMiniProgram\) ⇒ `Promise <void>`
+Example:
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
-
-| Param | Type | Description |
-| :--- | :--- | :--- |
-| textOrContactOrFileOrUrlLinkOrMiniProgram | `string` \| [`Contact`](contact.md#Contact) \| `FileBox` \| `UrlLink` \| `MiniProgram` | send text, Contact, file or UrlLink to contact.   You can use [FileBox](https://www.npmjs.com/package/file-box) to send file |
-
-### Example
-
-```javascript
-import { FileBox }  from 'file-box'
-import {
-  Wechaty,
-  UrlLink,
-  MiniProgram,
-}  from 'wechaty'
-
-const bot = new Wechaty()
-await bot.start()
-const contact = await bot.Contact.find({name: 'lijiarui'})  // change 'lijiarui' to any of your contact name in wechat
-
-// 1. send text to contact
-
-await contact.say('welcome to wechaty!')
-
-// 2. send media file to contact
-
-import { FileBox }  from 'file-box'
-const fileBox1 = FileBox.fromUrl('https://wechaty.github.io/wechaty/images/bot-qr-code.png')
-const fileBox2 = FileBox.fromFile('/tmp/text.txt')
-await contact.say(fileBox1)
-await contact.say(fileBox2)
-
-// 3. send contact card to contact
-
-const contactCard = bot.Contact.load('contactId')
-await contact.say(contactCard)
-
-// 4. send url link to contact
-
-const urlLink = new UrlLink({
-  description : 'WeChat Bot SDK for Individual Account, Powered by TypeScript, Docker, and Love',
-  thumbnailUrl: 'https://avatars0.githubusercontent.com/u/25162437?s=200&v=4',
-  title       : 'Welcome to Wechaty',
-  url         : 'https://github.com/wechaty/wechaty',
-})
-await contact.say(urlLink)
-
-// 5. send MiniProgram (only supported by `wechaty-puppet-macpro`)
-
-const miniProgram = new MiniProgram ({
-  appid              : 'gh_0aa444a25adc',
-  title              : '我正在使用Authing认证身份，你也来试试吧',
-  pagePath           : 'routes/explore.html',
-  description        : '身份管家',
-  thumbUrl           : '30590201000452305002010002041092541302033d0af802040b30feb602045df0c2c5042b777875706c6f61645f31373533353339353230344063686174726f6f6d3131355f313537363035393538390204010400030201000400',
-  thumbKey           : '42f8609e62817ae45cf7d8fefb532e83',
-});
-
-await contact.say(miniProgram);
+```ts
+const contact = await bot.Contact.find({id: 'contactId-1' }) // contact1
 ```
 
-### contact.name\(\) ⇒ `string`
+#### find
 
-The method gets the name from a contact.Check the below illustation for implementation.
-
-### Example
-
-```javascript
-const name = contact.name()
+```ts
+static async find (query : string | PUPPET.filters.Contact): Promise<undefined | ContactInterface> 
 ```
 
-### contact.alias\(newAlias\) ⇒ `Promise <null | string | void>`
+Try to find a contact in cache and then puppet. If no contact was found, ```undefined``` will be returned.
 
-The method gets or sets or deletes the alias for a contact.Tests show it will failed if set alias too frequently\(60 times in one minute\).
+Example: Find a contact with name 'contact-2'
 
-| Param | Type |
-| :--- | :--- |
-| newAlias | `none` \| `string` \| `null` |
-
-### Example \( GET the alias for a contact, return {\(Promise&lt;string \| null&gt;\)}\)
-
-```javascript
-const alias = await contact.alias()
-if (alias === null) {
-  console.log('You have not yet set any alias for contact ' + contact.name())
-} else {
-  console.log('You have already set an alias for contact ' + contact.name() + ':' + alias)
-}
+```ts
+const contact = await bot.Contact.find({ name: 'contact-2' }) // contact2
 ```
 
-### Example \(SET the alias for a contact\)
+#### findAll
 
-```javascript
-try {
-  await contact.alias('lijiarui')
-  console.log(`change ${contact.name()}'s alias successfully!`)
-} catch (e) {
-  console.log(`failed to change ${contact.name()} alias!`)
-}
+```ts
+static async findAll (query? : PUPPET.filters.Contact): Promise<ContactInterface[]>
 ```
 
-### Example \(DELETE the alias for a contact\)
+Try to find contacts in puppet and then loaded them in cache and then puppet.
 
-```javascript
-try {
-  const oldAlias = await contact.alias(null)
-  console.log(`delete ${contact.name()}'s alias successfully!`)
-  console.log(`old alias is ${oldAlias}`)
-} catch (e) {
-  console.log(`failed to delete ${contact.name()}'s alias!`)
-}
+Examples: Find contacts with names starts with 'contact9':
+
+```ts
+const contacts = await bot.Contact.findAll({
+  name: \^contact9[3-8]$\
+}) // [Contact<contact-93>, Contact<contact94>, Contact<contact95>, Contact<contact96>, Contact<contact97>, Contact<contact98>]
 ```
 
-### Contact.friend\(\) ⇒ `boolean` \| `null`
+#### tags
 
-The method checks if contact is friend.It returns `true` for friend of the bot and  `false` for not friend of the bot, `null` for unknown.
-
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
-
-### Example
-
-```javascript
-const isFriend = contact.friend()
+```ts
+static async tags (): Promise<TagInterface[]>
 ```
 
-### Contact.type\(\) ⇒ `ContactType.Unknown` \| `ContactType.Personal` \| `ContactType.Official`
+Get all contact tags.
 
-This method returns the type of the Contact.Check the example below for implementation.
+Example: Get all tags.
 
-> Tips: ContactType is enum here.
-
-### Example
-
-```javascript
-const bot = new Wechaty()
-await bot.start()
-const isOfficial = contact.type() === bot.Contact.Type.Official
+```ts
+const tags = await bot.Contact.tags() // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
-### contact.gender\(\) ⇒ `ContactGender.Unknown` \| `ContactGender.Male` \| `ContactGender.Female`
+### Instance Methods
 
-The method gets the Contact gender.Check the below example for implementation.
+#### say
 
-> Tips: ContactGender is enum here.
-
-### Example
-
-```javascript
-const gender = contact.gender() === bot.Contact.Gender.Male
+```ts
+async say (sayable: Sayable): Promise<void | MessageInterface>
 ```
 
-### Contact.province\(\) ⇒ `string` \| `null`
+Send a message to the contact.
 
-This method gets the region 'province' from a contact.Check the below example for implementation.
+Example:
 
-### Example
-
-```javascript
-const province = contact.province()
+```ts
+const contact = await bot.Contact.find({id: 'contactId-1' })
+const message = await contact.say('hello contact1')
 ```
 
-### Contact.city\(\) ⇒ `string` \| `null`
+#### name
 
-This method gets the region 'city' from a contact.Check the below example for implementation.
-
-### Example
-
-```javascript
-const city = contact.city()
+```ts
+name (): string
 ```
 
-### Contact.avatar\(\) ⇒ `Promise <FileBox>`
+Get the name of the contact.
 
-This method gets avatar picture from file stream.Check the below example for implementation.
+Example:
 
-### Example
-
-```javascript
-// Save avatar to local file like `1-name.jpg`
-
-const file = await contact.avatar()
-const name = file.name
-await file.toFile(name, true)
-console.log(`Contact: ${contact.name()} with avatar file: ${name}`)
+```ts
+const contact = await bot.Contact.find({id: 'contactId-1' })
+const name = contact.name() // contact-1
 ```
 
-### Contact.sync\(\) ⇒ `Promise <void>`
+#### alias
 
-The method force reload of data for Contact, Sync data from lowlevel API again.Check the below example for implementation.
+```ts
+async alias (): Promise<undefined | string>
+async alias (newAlias: string): Promise<void>
+async alias (empty: null): Promise<void>
+```
 
-### Example
+Get or set the alias of the contact.
 
-```javascript
+If the new alias parameter is ```undefined```, the alias of the contact will be returned.
+
+If the new alias is a valid string ('' is acceptable), the new alias will be set and ```void``` will be returned.
+
+Example:
+
+```ts
+const contact = await bot.Contact.find({id: 'contactId-5' })
+const oldAlias = await contact.alias() // 'alias-5'
+await contact.alias('new-alias-5')
+const newAlias = await contact.alias() // 'new-alias-5'
+await contact.alias(null) // clear alias
+```
+
+#### phone
+
+```ts
+async phone (): Promise<string[]>
+async phone (phoneList: string[]): Promise<void>
+async phone (phoneList?: string[]): Promise<string[] | void> 
+```
+
+Get or set the phone number list of the contact.
+
+If the new phone list parameter is ```undefined```, the list of the phone numbers of the contact will be returned.
+
+If the new phone list is a valid string array ([] is acceptable), the new phone list will be set and ```void``` will be returned.
+
+```ts
+const contact = await bot.Contact.find({id: 'contactId-4' })
+const oldList = await contact.phone() // []
+await contact.phone(['phone1', 'phone2'])
+const newAlias = await contact.phone() // ['phone1', 'phone2']
+await contact.phone([]) // clear phone
+```
+
+#### corporation
+
+```ts
+async corporation (): Promise<undefined | string>
+async corporation (remark: string | null): Promise<void>
+async corporation (remark?: string | null): Promise<void | undefined | string> 
+```
+
+Get or set the corporation of the contact.
+
+If the new corporation parameter is ```undefined```, the corporation of the contact will be returned.
+
+If the new corporation is a valid string ('' is acceptable), the new corporation will be set and ```void``` will be returned.
+
+```ts
+const contact = await bot.Contact.find({id: 'contactId-6' })
+const oldCorp = await contact.corporation() // ''
+await contact.corporation('corp-6')
+const newCorp = await contact.corporation() // 'corp-6'
+await contact.corporation(null) // clear corporation
+```
+
+#### description
+
+```ts
+async description (): Promise<undefined | string>
+async description (newDescription: string | null): Promise<void>
+async description (newDescription?: string | null): Promise<void | undefined | string>
+```
+
+Get or set the description of the contact.
+
+If the new description parameter is ```undefined```, the description of the contact will be returned.
+
+If the new description is a valid string ('' is acceptable), the new description will be set and ```void``` will be returned.
+
+Example:
+
+```ts
+const contact = await bot.Contact.find({id: 'contactId-7' })
+const oldDescription = await contact.description() // 'description-7'
+await contact.description('new-description-7')
+const newDescription = await contact.description() // 'new-description-7'
+await contact.description(null) // clear alias
+```
+
+#### title
+
+```ts
+async title (): string | null
+```
+
+Get the title of the contact. If the IM or the contact has no title info, ```null``` will be returned.
+
+Example:
+
+```ts
+const contact = await bot.Contact.find({id: 'contactId-8' })
+const title = contact.title() // null
+```
+
+#### friend
+
+```ts
+friend (): undefined | boolean
+```
+
+Return whether the contact is bot's friend or not. As not all contacts are friends.
+
+Example:
+
+```ts
+const contact9 = await bot.Contact.find({id: 'contactId-9' })
+const contact10 = await bot.Contact.find({id: 'contactId-10' })
+console.log(contact9.friend()) // false
+console.log(contact10.friend()) // true
+```
+
+#### type
+
+```ts
+type (): PUPPET.types.Contact
+```
+
+Return the type of the contact.
+
+Example:
+
+```ts
+const contact = await bot.Contact.find({id: 'contactId-10' })
+console.log(contact.type()) // 1 (Contact.Individual)
+```
+
+#### star
+
+```ts
+async star (): undefined | boolean
+```
+
+Return whether the contact is a start contact (a.k.a. favorite contact) or not.
+
+Example:
+
+```ts
+const contact = await bot.Contact.find({id: 'contactId-11' })
+console.log(contact.star()) // undefined
+```
+
+#### gender
+
+```ts
+gender (): PUPPET.types.ContactGender
+```
+
+Return the gender of the contact.
+
+Example:
+
+```ts
+const contact = await bot.Contact.find({id: 'contactId-12' })
+console.log(contact.gender()) // ContactGender.Male
+```
+
+#### province
+
+```ts
+province (): undefined | string
+```
+
+Get the province of the contact. If the IM or the contact has no province info, ```undefined``` will be returned.
+
+Example:
+
+```ts
+const contact = await bot.Contact.find({id: 'contactId-13' })
+console.log(contact.province()) // undefined
+```
+
+#### city
+
+```ts
+city (): undefined | string
+```
+
+Get the city of the contact. If the IM or the contact has no city info, ```undefined``` will be returned.
+
+Example:
+
+```ts
+const contact = await bot.Contact.find({id: 'contactId-14' })
+console.log(contact.city()) // undefined
+```
+
+#### avatar
+
+```ts
+async avatar (): Promise<FileBoxInterface>
+```
+
+Example:
+
+```ts
+const contact = await bot.Contact.find({id: 'contactId-15' })
+const file = await contact.avatar() // FileBox<https://www.cdn.com/image-15>
+```
+
+Get the avatar of the contact.
+
+#### tags
+
+```ts
+async tags (): Promise<TagInterface[]>
+```
+
+Get the tags of the contact.
+
+Example:
+
+```ts
+const contact = await bot.Contact.find({id: 'contactId-16' })
+const tags = await contact.tags() // [1, 6]
+```
+
+#### sync
+
+```ts
+async sync (): Promise<void>
+```
+
+Force reload data of the contact, useful when the info of the contact has been modified.
+
+Example:
+
+```ts
+const contact = await bot.Contact.find({id: 'contactId-17' })
+const alias = await contact.alias() // alias-17
+// edit alias on your phone to new-alias-17
+console.log(await contact.alias()) // alias-17
 await contact.sync()
+console.log(await contact.alias()) // new-alias-17
 ```
 
-### Contact.self\(\) ⇒ `boolean`
+#### readMark
 
-The method checks if contact is self.It returns `boolean` - True for contact is self, False for contact is others.Check the below example for implementation.
-
-### Example
-
-```javascript
-const isSelf = contact.self()
+```ts
+async readMark (hasRead: boolean): Promise<void>
+async readMark (): Promise<boolean>
 ```
 
-## Static Methods
+Get or set the readmark condition of the contact. Readmark is the read dot in IM that marks new messages.
 
-### Contact.find\(query\) ⇒ `Promise <Contact | null>`
+If the hasRead parameter is ```undefined```, the readmark status of the contact will be returned.
 
-The method finds the contact by name or alias, if the result more than one, return the first one.Try to find a contact by filter: {name: string \| RegExp} / {alias: string \| RegExp}.The returns `Promise.` - If it can find the contact,or return `null`.
+If the hasRead is a valid boolean, the readmark will be set as the hasRead parameter and ```void``` will be returned.
 
-| Param | Type |
-| :--- | :--- |
-| query | [`ContactQueryFilter`](contact.md#ContactQueryFilter) |
+Example:
 
-#### Example
-
-```javascript
-const bot = new Wechaty()
-await bot.start()
-const contactFindByName = await bot.Contact.find({ name:"ruirui"} )
-const contactFindByAlias = await bot.Contact.find({ alias:"lijiarui"} )
+```ts
+const contact = await bot.Contact.find({id: 'contactId-18' })
+await contact.readMark(true)
 ```
 
-### Contact.findAll\(\[queryArg\]\) ⇒ `Promise <Contact []>`
+#### self
 
-This method finds contact by `name` or `alias`.If  you use Contact.findAll\(\) get the contact list of the bot. Include the contacts from bot's rooms.
-
-#### Definition
-
-* `name`   the name-string set by user-self, should be called name
-* `alias`  the name-string set by bot for others, should be called alias
-
-| Param | Type |
-| :--- | :--- |
-| queryArg | [`ContactQueryFilter`](contact.md#ContactQueryFilter) |
-
-#### Example
-
-```javascript
-const bot = new Wechaty()
-await bot.start()
-const contactList = await bot.Contact.findAll()                      // get the contact list of the bot
-const contactList = await bot.Contact.findAll({ name: 'ruirui' })    // find all of the contacts whose name is 'ruirui'
-const contactList = await bot.Contact.findAll({ alias: 'lijiarui' }) // find all of the contacts whose alias is 'lijiarui'
+```ts
+self (): boolean
 ```
 
-## Typedefs
+Return whether the contact is bot self or not.
 
-### ContactQueryFilter
+Example:
 
-It is a  global `typedef` used to search contacts.
+```ts
+const contact = await bot.Contact.find({id: 'contactId-19' })
+console.log(contact.self()) // false
+const contactSelf = await bot.Contact.find({id: 'contactId-0' })
+console.log(contactSelf.self()) // true
+```
 
-### Properties
+#### handle
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| name | `string` | The name-string set by user-self, should be called name |
-| alias | `string` | The name-string set by bot for others, should be called alias [More Detail](https://github.com/wechaty/wechaty/issues/365) |
+```ts
+async handle (): undefined | string
+```
+
+Return the handle of the contact. This value depends on puppet implementation, usually represents an internal ID represents the contact in IM. e.g., A Twitter handle is the username that appears at the end of your unique Twitter URL.
+
+If the IM or the contact has no handle info, ```undefined``` will be returned.
+
+```ts
+const contact = await bot.Contact.find({id: 'contactId-20' })
+const handle = await contact.handle() // handle-20
+```
+
+#### toString()
+
+```ts
+override toString (): string
+```
+
+Gets a string represents a contact instance. Useful when debugging.
+
+Example:
+
+```ts
+const contact = await bot.Contact.find({id: 'contactId-21' })
+console.log(contact) // Contact<contact-21>
+```

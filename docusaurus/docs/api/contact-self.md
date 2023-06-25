@@ -1,121 +1,110 @@
 ---
 title: ContactSelf
+sidebar_label: ' ContactSelf'
 ---
 
-Bot itself will be encapsulated as a ContactSelf. This class is extends Contact.
+## ContactSelf Class
 
-## ContactSelf
+ContactSelf is a special kind of contact. It represents bot self. It has all methods and properties of a regular contact, and some more. Every method that returns a ```ContactInterface```, if the contact is bot self, a ```ContactSelfInterface``` will be returned instead.
 
-Bot itself will be encapsulated as a ContactSelf.
+### Static Methods
 
-> Tips: this class is extends Contact
+You can call static methods from ```bot.ContactSelf```。
 
-**Kind**: global class
+Example:
 
-* [ContactSelf](contact-self.md#contactself)
-  * [intance](contact-self.md#contactself)
-    * [contactSelf.avatar\(\[file\]\) ⇒ `Promise <void | FileBox>`](contact-self.md#contactselfavatarfile-⇒-promise)
-    * [contactSelf.qrcode\(\) ⇒ `Promise <string>`](contact-self.md#contactselfqrcode-⇒-promise)
-    * [contactSelf.signature\(signature\) ⇒ `Promise <string>`](contact-self.md#contactselfsignaturesignature)
-    * [contactSelf.name\(\[name\]\) ⇒ `Promise <void> | string`](contact-self.md#contactselfname-⇒-promisestring)
+```ts
+const contact = await bot.Contact.find({id: 'contactId-0' }) // contact0
+```
 
-### contactSelf.avatar\(\[file\]\) ⇒ `Promise <void | FileBox>`
+#### find
 
-GET / SET bot avatar
+```ts
+static async find (query : string | PUPPET.filters.Contact): Promise<undefined | ContactInterface> 
+```
 
-**Kind**: instance method of [`ContactSelf`](contact-self.md#ContactSelf)
+Try to find the bot self contact. If the result is not bot self, an error will be thrown.
 
-| Param | Type |
-| :--- | :--- |
-| \[file\] | `FileBox` |
+Example:
 
-**Example** _\( GET the avatar for bot, return {Promise&lt;FileBox&gt;}\)_
+```ts
+const contact = await bot.ContactSelf.find({ name: 'contactId-0' }) // contact0
+```
 
-```javascript
-// Save avatar to local file like `1-name.jpg`
+***Note*** : It is not recommended to use ```bot.ContactSelf.find```. ```bot.Contact.find``` will return ```ContactSelf``` instance if the result is bot self. The best practice of getting a ```ContactSelf``` instance is to monitor the login event and get it from the call back argument.
 
-bot.on('login', async user => {
-  console.log(`user ${user} login`)
-  const file = await user.avatar()
-  const name = file.name
-  await file.toFile(name, true)
-  console.log(`Save bot avatar: ${user.name()} with avatar file: ${name}`)
+Example:
+
+```ts
+bot.on('login', contact: ContactSelfInterface => {
+  const contactSelf = contact
 })
 ```
 
-**Example** _\(SET the avatar for a bot\)_
+### Instance Methods
 
-```javascript
-import { FileBox }  from 'file-box'
-bot.on('login', user => {
-  console.log(`user ${user} login`)
-  const fileBox = FileBox.fromUrl('https://wechaty.github.io/wechaty/images/bot-qr-code.png')
-  await user.avatar(fileBox)
-  console.log(`Change bot avatar successfully!`)
-})
+#### avatar
+
+```ts
+public override async avatar ()                       : Promise<FileBoxInterface>
+public override async avatar (file: FileBoxInterface) : Promise<void>
 ```
 
-### contactSelf.qrcode\(\) ⇒ `Promise <string>`
+Get or set the avatar of bot self.
 
-Get bot qrcode
+Example:
 
-**Kind**: instance method of [`ContactSelf`](contact-self.md#ContactSelf)
-
-#### Example
-
-```javascript
-import { generate } from 'qrcode-terminal'
-bot.on('login', async user => {
-  console.log(`user ${user} login`)
-  const qrcode = await user.qrcode()
-  console.log(`Following is the bot qrcode!`)
-  generate(qrcode, { small: true })
-})
+```ts
+const contact = await bot.ContactSelf.find({ name: 'contactId-0' }) // contact0
+const avatar = await contact.avatar() // filebox
+await contact.avatar(file)
+const newAvatar = await contact.avatar() // new file
 ```
 
-### contactSelf.signature\(signature\) ⇒ `Promise <void>`
+#### qrcode
 
-Change bot signature
-
-**Kind**: instance method of [`ContactSelf`](contact-self.md#ContactSelf)
-
-| Param | Description |
-| :--- | :--- |
-| signature | The new signature that the bot will change to |
-
-#### Example
-
-```javascript
-bot.on('login', async user => {
-  console.log(`user ${user} login`)
-  try {
-    await user.signature(`Signature changed by wechaty on ${new Date()}`)
-  } catch (e) {
-    console.error('change signature failed', e)
-  }
-})
+```ts
+public async qrcode (): Promise<string>
 ```
 
-### contactSelf.name\(\[name\]\) ⇒ `Promise<void> | string`
+Get the QRcode to add the bot to contact list.
 
-Get or change bot name.
+Example:
 
-**Kind**: instance method of [`ContactSelf`](contact-self.md#contactself)
+```ts
+const contact = await bot.ContactSelf.find({ name: 'contactId-0' }) // contact0
+const qrcode = await user.qrcode()
+console.log(`Following is the bot qrcode!`)
+generate(qrcode, { small: true }) // from qrcode-terminal package
+```
 
-| Param | Description |
-| :--- | :--- |
-| \[name\] | The new alias that the bot will change to |
+#### name
 
-#### Example
+```ts
+public override name (): string
+public override name (name: string): Promise<void>
+```
 
-```javascript
-bot.on('login', async user => {
-  console.log(`user ${user} login`)
-  const oldName = user.name() // get bot name
-  try {
-    await user.name(`${oldName}-${new Date().getTime()}`) // change bot name
-  } catch (e) {
-    console.error('change name failed', e)
-  }
-})
+Get or set the name of bot self.
+
+Example:
+
+```ts
+const contact = await bot.ContactSelf.find({ name: 'contactId-0' }) // contact0
+const name = contact.name() // bot
+await contact.name('newName')
+const newName = contact.name() // newName
+```
+
+#### signature
+
+```ts
+public async signature (signature: string): Promise<void> 
+```
+
+Set the signature of bot self.
+
+```ts
+const contact = await bot.ContactSelf.find({ name: 'contactId-0' }) // contact0
+await contact.signature('hello world')
 ```
