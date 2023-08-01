@@ -23,6 +23,7 @@ const config = {
   ],
   scripts: [
     '/js/gitter-sidecar.js',
+    '/js/baidu-statistics.js',
     { src: 'https://sidecar.gitter.im/dist/sidecar.v1.js', async: true },
   ],
   themeConfig,
