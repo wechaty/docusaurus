@@ -1,6 +1,6 @@
 ---
 slug: /api/
-title: Wechaty API 
+title: Wechaty API
 sidebar_label: 'API: Overview'
 ---
 
@@ -10,16 +10,33 @@ export const Toc = () => <TOCInline toc={toc} />
 <!-- Curious Beginner: API reference - Details all elements in an API. -->
 <!-- Active User: API Guide - Contains far greater detail (including edge cases) than a tutorial or Codelab. -->
 
-## Wechaty API
+## Intro
 
-API- Application programming interface is a software interface that offers services to other software services. Wechaty API is a very tiny and easy to import API that allows users to use all the functionalities of Wechaty to its best. The API offers a variety of user classes, typedefs, functions, methods, and many more features. This section is an overview of the Wechaty API.
+Wechaty is a Node.js library for building chatbots that work on WeChat, WhatsApp, and other messaging platforms. With Wechaty, you can build intelligent chatbots that automate tasks, engage with customers, and provide a personalized experience for your users.
 
-## Importing the Wechaty API
+With the help of wechaty, you can build chatbots with 6 lines of code.
 
-You can import the Wechaty API as shown below:
+### Install
 
-## ES6/TypeScript
+In most cases, you should install ```wechaty``` only. The package ```wechaty``` has ```wechaty-puppet```, ```wechaty-puppet-service``` in its dependencies, so you don't have install them by yourself. So all you have to is
 
-```js
+```bash
+npm install wechaty
+```
+
+If you wish to use a particular version of ```wechaty-puppet``` or ```wechaty-puppet-service```, you can install such package manually.
+
+### Run
+
+```ts
 import { WechatyBuilder } from 'wechaty'
+
+async function main () {
+  const bot = new WechatyBuilder.build()
+  bot
+    .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://wechaty.js.org/qrcode/${encodeURIComponent(qrcode)}`))
+    .on('login',            user => console.log(`User ${user} logged in`))
+    .on('message',       message => console.log(`Message: ${message}`))
+  await bot.start()
+}
 ```
