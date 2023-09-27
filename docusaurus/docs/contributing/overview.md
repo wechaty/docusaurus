@@ -42,7 +42,7 @@ Documentation is one of the most important things that introduce Wechaty to gene
 
 - Fix typos in the documentation
 - Translate documentation to your local language
-- Write tutorials and blog posts, refer to <https://github.com/wechaty/wechaty.js.org/tree/master/jekyll/_posts>
+- Write tutorials and blog posts, refer to <https://github.com/wechaty/jekyll>
 - Answer questions on the Wechaty Developers Home or GitHub issues
 - Organize Wechaty meetups or user groups in your area
 
