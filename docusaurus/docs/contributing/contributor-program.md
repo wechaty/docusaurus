@@ -20,7 +20,7 @@ Building a chatbot that is on top of Wechaty? Apply for our Contributor Program!
 
 ## 1 Free Puppet Service Token
 
-1. WXWork
+1. WorkPro
 1. PadLocal
 1. Paimon
 1. Donut
