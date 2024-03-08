@@ -42,7 +42,7 @@ title: Contact Class
 | 静态方法            | 返回类型                 |
 |---------------------------|-----------------------------|
 | find(query)               | `Promise <Contact \| null>` |
-| findAll(Query Arguements) | `Promise <Contact []>`      |
+| findAll(Query Arguments) | `Promise <Contact []>`      |
 
 ### contact.say\(textOrContactOrFileOrUrlLinkOrMiniProgram\) ⇒ `Promise <void>`
 
