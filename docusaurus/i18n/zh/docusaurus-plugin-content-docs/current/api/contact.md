@@ -17,7 +17,7 @@ title: Contact Class
 
 | 名称  | 类型 | 描述 |
 | :--- | :--- | :--- |
-| id | `string` | 获取联系人id，这个id 是否为永久唯一id 取决于您使用什么puppet, 参照 [puppet-compatible-table](https://wechaty.js.org/docs/specs/puppet/) |
+| id | `string` | 获取联系人ID，这个ID 是否为永久唯一ID 取决于您使用什么puppet, 参照 [puppet-compatible-table](https://wechaty.js.org/docs/specs/puppet/) |
 
 ## Global Class `Contact`
 
