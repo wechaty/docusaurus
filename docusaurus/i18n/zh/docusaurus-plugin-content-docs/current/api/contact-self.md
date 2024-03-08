@@ -37,19 +37,6 @@ bot.on('login', async user => {
   await file.toFile(name, true)
   console.log(`Save bot avatar: ${user.name()} with avatar file: ${name}`)
 })
-```
-
-**示例** _\(SET the avatar for a bot\)_
-
-```javascript
-import { FileBox }  from 'file-box'
-bot.on('login', user => {
-  console.log(`user ${user} login`)
-  const fileBox = FileBox.fromUrl('https://wechaty.github.io/wechaty/images/bot-qr-code.png')
-  await user.avatar(fileBox)
-  console.log(`Change bot avatar successfully!`)
-})
-```
 
 ### contactSelf.qrcode\(\) ⇒ `Promise <string>`
 

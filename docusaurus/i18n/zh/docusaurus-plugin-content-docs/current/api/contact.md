@@ -17,7 +17,7 @@ title: Contact Class
 
 | 名称  | 类型 | 描述 |
 | :--- | :--- | :--- |
-| id | `string` | 获取联系人id，这个id 是否为永久唯一id 取决于您使用什么puppet, 参照 [puppet-compatible-table](https://wechaty.js.org/docs/specs/puppet/) |
+| id | `string` | 获取联系人ID，这个ID 是否为永久唯一ID 取决于您使用什么puppet, 参照 [puppet-compatible-table](https://wechaty.js.org/docs/specs/puppet/) |
 
 ## Global Class `Contact`
 
@@ -25,7 +25,7 @@ title: Contact Class
 
 | 实例方法                    | 返回类型                                                           |
 |--------------------------------------|-----------------------------------------------------------------------|
-| say(text 或 Contact 或 File 或 Url)  | `Promise`                                                             |
+| say(text 或 Contact 或 File 或 URL)  | `Promise`                                                             |
 | name()                               | `String`                                                              |
 | alias(newAlias)                      | `Promise`                                                             |
 | friend()                             | `Boolean 或 null`                                                     |
@@ -42,7 +42,7 @@ title: Contact Class
 | 静态方法            | 返回类型                 |
 |---------------------------|-----------------------------|
 | find(query)               | `Promise <Contact \| null>` |
-| findAll(Query Arguements) | `Promise <Contact []>`      |
+| findAll(Query Arguments) | `Promise <Contact []>`      |
 
 ### contact.say\(textOrContactOrFileOrUrlLinkOrMiniProgram\) ⇒ `Promise <void>`
 
@@ -123,7 +123,7 @@ const name = contact.name()
 
 | Param | Type |
 | :--- | :--- |
-| newAlias | `none` \| `string` \| `null` |
+| newAlias | `undefined` \| `string` \| `null` |
 
 ### 示例 \( GET contact的备注, return {\(Promise&lt;string \| null&gt;\)}\)
 
