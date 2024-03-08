@@ -14,7 +14,7 @@ title: Room
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| id | `string` | 获取群id。这个id 是否是永久不变的id 取决于使用哪一个puppet，具体 查看puppet兼容性清单，参照 [puppet-compatible-table](https://wechaty.js.org/docs/specs/puppet/) |
+| id | `string` | 获取群ID。这个ID 是否是永久不变的ID 取决于使用哪一个puppet，具体 查看puppet兼容性清单，参照 [puppet-compatible-table](https://wechaty.js.org/docs/specs/puppet/) |
 
 ## Global class `Room`
 
