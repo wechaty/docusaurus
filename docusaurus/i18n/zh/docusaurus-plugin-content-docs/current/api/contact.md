@@ -123,7 +123,7 @@ const name = contact.name()
 
 | Param | Type |
 | :--- | :--- |
-| newAlias | `none` \| `string` \| `null` |
+| newAlias | `undefined` \| `string` \| `null` |
 
 ### 示例 \( GET contact的备注, return {\(Promise&lt;string \| null&gt;\)}\)
 
