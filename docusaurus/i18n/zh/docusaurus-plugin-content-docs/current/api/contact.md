@@ -25,7 +25,7 @@ title: Contact Class
 
 | 实例方法                    | 返回类型                                                           |
 |--------------------------------------|-----------------------------------------------------------------------|
-| say(text 或 Contact 或 File 或 Url)  | `Promise`                                                             |
+| say(text 或 Contact 或 File 或 URL)  | `Promise`                                                             |
 | name()                               | `String`                                                              |
 | alias(newAlias)                      | `Promise`                                                             |
 | friend()                             | `Boolean 或 null`                                                     |
