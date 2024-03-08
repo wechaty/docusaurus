@@ -21,7 +21,7 @@ Wechaty机器人允许你通过其名为`Friendship`的全球类结交朋友。�
 | accept()         | `Promise (void)` |
 | hello()          | `string`         |
 | contact()        | `Contact`        |
-| type()           | `Friendshiptype`  |
+| type()           | `FriendshipType`  |
 
 ### 静态方法
 
