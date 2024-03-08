@@ -293,7 +293,7 @@ await bot.say(linkPayload)
 | :--- | :--- | :--- |
 | \[options\] | [`WechatyOptions`](wechaty.md#WechatyOptions) | `{}` |
 
-**示例** 
+#### 示例
 
 ```javascript
 import { Wechaty }  from 'wechaty'

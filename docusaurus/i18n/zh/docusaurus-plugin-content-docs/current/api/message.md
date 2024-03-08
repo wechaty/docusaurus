@@ -151,7 +151,6 @@ bot
 
 回复多媒体、微信名片、文本或者链接给这条消息的发送者。
 
-
 | Param | Type | Description |
 | :--- | :--- | :--- |
 | text 或 Contact 或 File 或 UrlLink 或 MiniProgram | `string` \| `Contact` \| `FileBox` \| `UrlLink` \| `MiniProgram` | 发送文本、名片或者文件  可以使用 [FileBox](https://www.npmjs.com/package/file-box) 来发送文件 |
