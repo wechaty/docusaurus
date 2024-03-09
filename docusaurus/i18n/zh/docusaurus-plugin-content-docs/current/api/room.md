@@ -134,8 +134,8 @@ Return `this` - - Room for chain.
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
-| event | [`RoomEventName`](/zh/docs/api/room.md#RoomEventName) | 群内事件触发 |
-| listener | [`RoomEventFunction`](/zh/docs/api/room.md#RoomEventFunction) | 取决于是哪一个事件 |
+| event | `RoomEventName` | 群内事件触发 |
+| listener | `RoomEventFunction` | 取决于是哪一个事件 |
 
 #### 示例  \(Event:join \)
 
@@ -400,11 +400,11 @@ if (contact && room) {
 * `roomAlias`            微信联系人自己在群内设置的昵称
 * `contactAlias`         机器人给微信联系人设置的，等于`Contact.alias()`
 
-**Kind**: [`Room`](/zh/docs/api/room.md#Room)实例方法
+**Kind**: `Room`实例方法
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
-| \[query\] | [`RoomMemberQueryFilter`](room.md#RoomMemberQueryFilter) \| `string` | 1. RoomMemberQueryFilter 可通过 name, roomAlias, contactAlias 查找指定的群成员。 2. 当memberAll(name) 的参数为string 类型的时候, 返回所有找到的群成员。这里面的name 包括上面定义的name, roomAlias, contactAlias。 |
+| \[query\] | `RoomMemberQueryFilter` \| `string` | 1. RoomMemberQueryFilter 可通过 name, roomAlias, contactAlias 查找指定的群成员。 2. 当memberAll(name) 的参数为string 类型的时候, 返回所有找到的群成员。这里面的name 包括上面定义的name, roomAlias, contactAlias。 |
 
 #### 示例
 
@@ -484,7 +484,7 @@ const owner = room.avatar()
 
 ## 静态方法
 
-### Room.create\(contactList, \[topic\]\) ⇒ [`Promise <Room>`](/zh/docs/api/room.md#Room)
+### Room.create\(contactList, \[topic\]\) ⇒ `Promise <Room>`
 
 创建群聊。
 
@@ -512,7 +512,7 @@ await room.say('ding - created')
 
 | Param | Type |
 | :--- | :--- |
-| \[query\] | [`RoomQueryFilter`](/zh/docs/api/room.md#RoomQueryFilter) |
+| \[query\] | `RoomQueryFilter` |
 
 #### 示例
 

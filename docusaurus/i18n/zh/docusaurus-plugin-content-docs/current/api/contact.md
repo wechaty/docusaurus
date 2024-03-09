@@ -50,7 +50,7 @@ title: Contact Class
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
-| text或Contact或File或UrlLink或MiniProgram | `string` \| [`Contact`](/zh/docs/api/contact.md#Contact) \| `FileBox` \| `UrlLink` \| `MiniProgram` | 给微信好友发送文本，联系人名片，文件或者链接。你可以使用[FileBox](https://www.npmjs.com/package/file-box) 来发送文件。|
+| text或Contact或File或UrlLink或MiniProgram | `string` \| `Contact` \| `FileBox` \| `UrlLink` \| `MiniProgram` | 给微信好友发送文本，联系人名片，文件或者链接。你可以使用[FileBox](https://www.npmjs.com/package/file-box) 来发送文件。|
 
 ### 示例
 
@@ -259,7 +259,7 @@ const isSelf = contact.self()
 
 | Param | Type |
 | :--- | :--- |
-| query | [`ContactQueryFilter`](/zh/docs/api/contact.md#ContactQueryFilter) |
+| query | `ContactQueryFilter` |
 
 #### 示例
 
@@ -281,7 +281,7 @@ const contactFindByAlias = await bot.Contact.find({ alias:"lijiarui"} )
 
 | Param | Type |
 | :--- | :--- |
-| queryArg | [`ContactQueryFilter`](/zh/docs/api/contact.md#ContactQueryFilter) |
+| queryArg | `ContactQueryFilter` |
 
 #### 示例
 
