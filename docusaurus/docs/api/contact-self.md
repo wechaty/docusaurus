@@ -12,18 +12,18 @@ Bot itself will be encapsulated as a ContactSelf.
 
 **Kind**: global class
 
-* [ContactSelf](/zh/docs/api/contact-self.md#contactself)
-  * [intance](/zh/docs/api/contact-self.md#contactself)
-    * [contactSelf.avatar\(\[file\]\) ⇒ `Promise <void | FileBox>`](/zh/docs/api/contact-self.md#contactselfavatarfile-⇒-promise)
-    * [contactSelf.qrcode\(\) ⇒ `Promise <string>`](/zh/docs/api/contact-self.md#contactselfqrcode-⇒-promise)
-    * [contactSelf.signature\(signature\) ⇒ `Promise <string>`](/zh/docs/api/contact-self.md#contactselfsignaturesignature)
-    * [contactSelf.name\(\[name\]\) ⇒ `Promise <void> | string`](/zh/docs/api/contact-self.md#contactselfname-⇒-promisestring)
+* [ContactSelf](contact-self.md#contactself)
+  * [intance](contact-self.md#contactself)
+    * [contactSelf.avatar\(\[file\]\) ⇒ `Promise <void | FileBox>`](contact-self.md#contactselfavatarfile-⇒-promise)
+    * [contactSelf.qrcode\(\) ⇒ `Promise <string>`](contact-self.md#contactselfqrcode-⇒-promise)
+    * [contactSelf.signature\(signature\) ⇒ `Promise <string>`](contact-self.md#contactselfsignaturesignature)
+    * [contactSelf.name\(\[name\]\) ⇒ `Promise <void> | string`](contact-self.md#contactselfname-⇒-promisestring)
 
 ### contactSelf.avatar\(\[file\]\) ⇒ `Promise <void | FileBox>`
 
 GET / SET bot avatar
 
-**Kind**: instance method of [`ContactSelf`](/zh/docs/api/contact-self.md#ContactSelf)
+**Kind**: instance method of [`ContactSelf`](contact-self.md#ContactSelf)
 
 | Param | Type |
 | :--- | :--- |
@@ -59,7 +59,7 @@ bot.on('login', user => {
 
 Get bot qrcode
 
-**Kind**: instance method of [`ContactSelf`](/zh/docs/api/contact-self.md#ContactSelf)
+**Kind**: instance method of [`ContactSelf`](contact-self.md#ContactSelf)
 
 #### Example
 
@@ -77,7 +77,7 @@ bot.on('login', async user => {
 
 Change bot signature
 
-**Kind**: instance method of [`ContactSelf`](/zh/docs/api/contact-self.md#ContactSelf)
+**Kind**: instance method of [`ContactSelf`](contact-self.md#ContactSelf)
 
 | Param | Description |
 | :--- | :--- |
@@ -100,7 +100,7 @@ bot.on('login', async user => {
 
 Get or change bot name.
 
-**Kind**: instance method of [`ContactSelf`](/zh/docs/api/contact-self.md#contactself)
+**Kind**: instance method of [`ContactSelf`](contact-self.md#contactself)
 
 | Param | Description |
 | :--- | :--- |
