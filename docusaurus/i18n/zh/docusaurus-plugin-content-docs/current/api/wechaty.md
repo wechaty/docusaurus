@@ -18,23 +18,23 @@ title: Wechaty
 
 * [What is a Puppet in Wechaty](https://github.com/wechaty/wechaty-getting-started/wiki/FAQ-EN#31-what-is-a-puppet-in-wechaty)
 
-> 如果您想知道如何发送消息，请参阅 [Message](wechaty.md#Message)  
-> 如果您想了解如何获得联系，请参阅 [Contact](wechaty.md#Contact)
+> 如果您想知道如何发送消息，请参阅 [Message](/zh/docs/api/wechaty.md#Message)  
+> 如果您想了解如何获得联系，请参阅 [Contact](/zh/docs/api/wechaty.md#Contact)
 
 **Kind**: global class
 
-* [Wechaty](wechaty.md#Wechaty)
-  * [new Wechaty\(\[options\]\)](wechaty.md#new_Wechaty_new)
+* [Wechaty](/zh/docs/api/wechaty.md#Wechaty)
+  * [new Wechaty\(\[options\]\)](/zh/docs/api/wechaty.md#new_Wechaty_new)
   * _instance_
-    * [.on\(event, listener\)](wechaty.md#Wechaty+on) ⇒ [`Wechaty`](wechaty.md#Wechaty)
-    * [.start\(\)](wechaty.md#Wechaty+start) ⇒ `Promise <void>`
-    * [.stop\(\)](wechaty.md#Wechaty+stop) ⇒ `Promise <void>`
-    * [.logout\(\)](wechaty.md#Wechaty+logout) ⇒ `Promise <void>`
-    * [.logonoff\(\)](wechaty.md#Wechaty+logonoff) ⇒ `boolean`
-    * [.userSelf\(\)](wechaty.md#Wechaty+userSelf) ⇒ `ContactSelf`
-    * [.say\(textOrContactOrFileOrUrl\)](wechaty.md#Wechaty+say) ⇒ `Promise <void>`
+    * [.on\(event, listener\)](/zh/docs/api/wechaty.md#Wechaty+on) ⇒ [`Wechaty`](/zh/docs/api/wechaty.md#Wechaty)
+    * [.start\(\)](/zh/docs/api//zh/docs/api/wechaty.md#Wechaty+start) ⇒ `Promise <void>`
+    * [.stop\(\)](/zh/docs/api/wechaty.md#Wechaty+stop) ⇒ `Promise <void>`
+    * [.logout\(\)](/zh/docs/api/wechaty.md#Wechaty+logout) ⇒ `Promise <void>`
+    * [.logonoff\(\)](/zh/docs/api/wechaty.md#Wechaty+logonoff) ⇒ `boolean`
+    * [.userSelf\(\)](/zh/docs/api/wechaty.md#Wechaty+userSelf) ⇒ `ContactSelf`
+    * [.say\(textOrContactOrFileOrUrl\)](/zh/docs/api/wechaty.md#Wechaty+say) ⇒ `Promise <void>`
   * _static_
-    * [.instance\(\[options\]\)](wechaty.md#Wechaty.instance)
+    * [.instance\(\[options\]\)](/zh/docs/api/current/api/wechaty.md#Wechaty.instance)
 
 ### new Wechaty\(\[options\]\)
 
@@ -42,7 +42,7 @@ title: Wechaty
 
 | Param | Type | Default |
 | :--- | :--- | :--- |
-| \[options\] | [`WechatyOptions`](wechaty.md#WechatyOptions) | `{}` |
+| \[options\] | [`WechatyOptions`](/zh/docs/api/api/wechaty.md#WechatyOptions) | `{}` |
 
 **Example** _\(世界上最短的对话机器人代码\)_
 
@@ -55,7 +55,7 @@ bot.on('message', message => console.log(`Message: ${message}`))
 bot.start()
 ```
 
-### wechaty.on\(event, listener\) ⇒ [`Wechaty`](wechaty.md#Wechaty)
+### wechaty.on\(event, listener\) ⇒ [`Wechaty`](/zh/docs/api/wechaty.md#Wechaty)
 
 当机器人收到消息，会触发一个事件，一些简单的事件介绍如下：
 
@@ -64,15 +64,15 @@ bot.start()
 * **logout**: 当机器人退出登陆的时候，会触发到这个事件。
 * **message**: 当有新消息的时候会触发这个事件。
 
-更多在 [WechatyEventName](wechaty.md#WechatyEventName)
+更多在 [WechatyEventName](/zh/docs/api/wechaty.md#WechatyEventName)
 
-**Kind**: [`Wechaty`](wechaty.md#Wechaty)的实例方法
-**Returns**: [`Wechaty`](wechaty.md#Wechaty)
+**Kind**: [`Wechaty`](/zh/docs/api/wechaty.md#Wechaty)的实例方法
+**Returns**: [`Wechaty`](/zh/docs/api/wechaty.md#Wechaty)
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
-| event | [`WechatyEventName`](wechaty.md#WechatyEventName) | Emit WechatyEvent |
-| listener | [`WechatyEventFunction`](wechaty.md#WechatyEventFunction) | Depends on the WechatyEvent |
+| event | [`WechatyEventName`](/zh/docs/api/api/wechaty.md#WechatyEventName) | Emit WechatyEvent |
+| listener | [`WechatyEventFunction`](/zh/docs/api/wechaty.md#WechatyEventFunction) | Depends on the WechatyEvent |
 
 **示例** _\(Event:scan\)_
 
@@ -176,7 +176,7 @@ bot.on('error', (error) => {
 启动机器人
 > 备注：机器人所有的操作必须在这个函数执行完成之后。
 
-**Kind**: [`Wechaty`](wechaty.md#Wechaty)的实例方法
+**Kind**: [`Wechaty`](/zh/docs/api/wechaty.md#Wechaty)的实例方法
 
 #### 示例
 
@@ -188,7 +188,7 @@ await bot.start()
 
 停止机器人
 
-**Kind**: [`Wechaty`](wechaty.md#Wechaty)的实例方法
+**Kind**: [`Wechaty`](/zh/docs/api/wechaty.md#Wechaty)的实例方法
 
 #### 示例
 
@@ -200,7 +200,7 @@ await bot.stop()
 
 退出机器人
 
-**Kind**: [`Wechaty`](wechaty.md#Wechaty)的实例方法
+**Kind**: [`Wechaty`](/zh/docs/api/wechaty.md#Wechaty)的实例方法
 
 #### 示例
 
@@ -212,7 +212,7 @@ await bot.logout()
 
 获取机器人logon/logoff 的状态
 
-**Kind**: [`Wechaty`](wechaty.md#Wechaty)的实例方法
+**Kind**: [`Wechaty`](/zh/docs/api/wechaty.md#Wechaty)的实例方法
 
 #### 示例
 
@@ -228,7 +228,7 @@ if (bot.logonoff()) {
 
 获取当前机器人的所有信息
 
-**Kind**: [`Wechaty`](wechaty.md#Wechaty)的实例方法  
+**Kind**: [`Wechaty`](/zh/docs/api/wechaty.md#Wechaty)的实例方法  
 
 #### 示例
 
@@ -243,7 +243,7 @@ console.log(`Bot is ${contact.name()}`)
 
 > 备注: 这个方法是否能实现，取决于用的是什么Puppet, 参照 [puppet-compatible-table](https://wechaty.js.org/docs/specs/puppet/)
 
-**Kind**: [`Wechaty`](wechaty.md#Wechaty)的实例方法
+**Kind**: [`Wechaty`](/zh/docs/api/wechaty.md#Wechaty)的实例方法
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
@@ -287,11 +287,11 @@ await bot.say(linkPayload)
 
 获取Wechaty的全局实例。
 
-**Kind**: [`Wechaty`](wechaty.md#Wechaty)的静态方法
+**Kind**: [`Wechaty`](/zh/docs/api/wechaty.md#Wechaty)的静态方法
 
 | Param | Type | Default |
 | :--- | :--- | :--- |
-| \[options\] | [`WechatyOptions`](wechaty.md#WechatyOptions) | `{}` |
+| \[options\] | [`WechatyOptions`](/zh/docs/api/wechaty.md#WechatyOptions) | `{}` |
 
 #### 示例
 

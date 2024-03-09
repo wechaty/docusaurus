@@ -134,8 +134,8 @@ Return `this` - - Room for chain.
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
-| event | [`RoomEventName`](room.md#RoomEventName) | 群内事件触发 |
-| listener | [`RoomEventFunction`](room.md#RoomEventFunction) | 取决于是哪一个事件 |
+| event | [`RoomEventName`](/zh/docs/api/room.md#RoomEventName) | 群内事件触发 |
+| listener | [`RoomEventFunction`](/zh/docs/api/room.md#RoomEventFunction) | 取决于是哪一个事件 |
 
 #### 示例  \(Event:join \)
 
@@ -400,7 +400,7 @@ if (contact && room) {
 * `roomAlias`            微信联系人自己在群内设置的昵称
 * `contactAlias`         机器人给微信联系人设置的，等于`Contact.alias()`
 
-**Kind**: [`Room`](room.md#Room)实例方法
+**Kind**: [`Room`](/zh/docs/api/room.md#Room)实例方法
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
@@ -484,7 +484,7 @@ const owner = room.avatar()
 
 ## 静态方法
 
-### Room.create\(contactList, \[topic\]\) ⇒ [`Promise <Room>`](room.md#Room)
+### Room.create\(contactList, \[topic\]\) ⇒ [`Promise <Room>`](/zh/docs/api/room.md#Room)
 
 创建群聊。
 
@@ -493,7 +493,7 @@ const owner = room.avatar()
 | contactList | `Array` |
 | \[topic\] | `string` |
 
-#### 示例 _\(Creat a room with 'lijiarui' and 'juxiaomi', the room topic is 'ding - created'\)_
+#### 示例 _\(创造新群拉'lijiarui'和'juxiaomi', 群名称是 'ding - created'\)_
 
 ```javascript
 const helperContactA = await Contact.find({ name: 'lijiarui' })  // change 'lijiarui' to any contact in your wechat
@@ -512,7 +512,7 @@ await room.say('ding - created')
 
 | Param | Type |
 | :--- | :--- |
-| \[query\] | [`RoomQueryFilter`](room.md#RoomQueryFilter) |
+| \[query\] | [`RoomQueryFilter`](/zh/docs/api/room.md#RoomQueryFilter) |
 
 #### 示例
 

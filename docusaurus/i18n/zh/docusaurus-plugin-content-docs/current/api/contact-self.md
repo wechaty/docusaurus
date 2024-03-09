@@ -10,18 +10,18 @@ title: ContactSelf
 
 **Kind**: global class
 
-* [ContactSelf](contact-self.md#contactself)
-  * [intance](contact-self.md#contactself)
-    * [contactSelf.avatar\(\[file\]\) ⇒ `Promise <void | FileBox>`](contact-self.md#contactselfavatarfile-⇒-promise)
-    * [contactSelf.qrcode\(\) ⇒ `Promise <string>`](contact-self.md#contactselfqrcode-⇒-promise)
-    * [contactSelf.signature\(signature\) ⇒ `Promise <string>`](contact-self.md#contactselfsignaturesignature)
-    * [contactSelf.name\(\[name\]\) ⇒ `Promise <void> | string`](contact-self.md#contactselfname-⇒-promisestring)
+* [ContactSelf](/zh/docs/api/contact-self.md#contactself)
+  * [intance](/zh/docs/api/contact-self.md#contactself)
+    * [contactSelf.avatar\(\[file\]\) ⇒ `Promise <void | FileBox>`](/zh/docs/api/contact-self.md#contactselfavatarfile-⇒-promise)
+    * [contactSelf.qrcode\(\) ⇒ `Promise <string>`](/zh/docs/api/contact-self.md#contactselfqrcode-⇒-promise)
+    * [contactSelf.signature\(signature\) ⇒ `Promise <string>`](/zh/docs/api/contact-self.md#contactselfsignaturesignature)
+    * [contactSelf.name\(\[name\]\) ⇒ `Promise <void> | string`](/zh/docs/api/contact-self.md#contactselfname-⇒-promisestring)
 
 ### contactSelf.avatar\(\[file\]\) ⇒ `Promise <void | FileBox>`
 
 设置机器人的头像
 
-**Kind**: [`ContactSelf`](contact-self.md#ContactSelf)的实例方法
+**Kind**: [`ContactSelf`](/zh/docs/api/contact-self.md#ContactSelf)的实例方法
 
 | Param | Type |
 | :--- | :--- |
@@ -42,7 +42,7 @@ bot.on('login', async user => {
 
 获取机器人的二维码。
 
-**Kind**: [`ContactSelf`](contact-self.md#ContactSelf)的实例方法
+**Kind**: [`ContactSelf`](/zh/docs/api/contact-self.md#ContactSelf)的实例方法
 
 #### 示例
 
@@ -60,7 +60,7 @@ bot.on('login', async user => {
 
 修改机器人签名。
 
-**Kind**: [`ContactSelf`](contact-self.md#ContactSelf)的实例方法
+**Kind**: [`ContactSelf`](/zh/docs/api/contact-self.md#ContactSelf)的实例方法
 
 | Param | Description |
 | :--- | :--- |
@@ -83,7 +83,7 @@ bot.on('login', async user => {
 
 修改机器人昵称。
 
-**Kind**: [`ContactSelf`](contact-self.md#contactself)的实例方法
+**Kind**: [`ContactSelf`](/zh/docs/api/contact-self.md#contactself)的实例方法
 
 | Param | Description |
 | :--- | :--- |
