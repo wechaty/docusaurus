@@ -47,6 +47,7 @@
     "@types/node-fetch": "^2.6.1",
     "@types/probe-image-size": "^7.0.1",
     "@types/yaml-front-matter": "^4.1.0",
+    "@vue/cli-service": "^5.0.8",
     "abort-controller": "^3.0.0",
     "clsx": "^1.1.1",
     "cross-env": "^7.0.3",
@@ -76,5 +77,9 @@
     "scripts": {
       "pre-push": "npx git-scripts-pre-push"
     }
+  },
+  "dependencies": {
+    "docusaurus": "^1.14.7",
+    "serve": "^14.2.1"
   }
 }
