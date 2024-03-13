@@ -362,10 +362,7 @@ Now initializing the bot by providing a name.
 
 ```ts
 const bot = WechatyBuilder.build({
-bot.start()
-  .then(() => log.info('StarterBot', 'Starter Bot Started.'))
-  .catch(e => log.error('StarterBot', 'Failed to start the bot:', e))
-  name: 'ding-dong-bot',
+  name: 'ding-dong-bot'
 })
 ```
 
@@ -383,7 +380,7 @@ Finally for starting the bot
 ```ts
 bot.start()
   .then(() => log.info('StarterBot', 'Starter Bot Started.'))
-  .catch(e => log.error('StarterBot', e))
+  .catch(e => log.error('StarterBot', 'Failed to start the bot:', e))
 ```
 
 ## Running the bot
