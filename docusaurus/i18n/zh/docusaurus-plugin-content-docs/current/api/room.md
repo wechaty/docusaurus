@@ -137,13 +137,13 @@ Return `this` - - Room for chain.
 | event | `RoomEventName` | 群内事件触发 |
 | listener | `RoomEventFunction` | 取决于是哪一个事件 |
 
-#### 示例  \(Event:join \)
+#### 示例  \(Event:join\)
 
 ```javascript
 const bot = new Wechaty()
 await bot.start()
-// after logged in...
-const room = await bot.Room.find({topic: 'topic of your room'}) // change `event-room` to any room topic in your wechat
+// 登录后...
+const room = await bot.Room.find({topic: 'topic of your room'})
 if (room) {
   room.on('join', (room, inviteeList, inviter) => {
     const nameList = inviteeList.map(c => c.name()).join(',')
@@ -152,13 +152,13 @@ if (room) {
 }
 ```
 
-#### 示例 \(Event:leave \)
+#### 示例 \(Event:leave\)
 
 ```javascript
 const bot = new Wechaty()
 await bot.start()
-// after logged in...
-const room = await bot.Room.find({topic: 'topic of your room'}) // change `event-room` to any room topic in your wechat
+// 登录后...
+const room = await bot.Room.find({topic: 'topic of your room'})
 if (room) {
   room.on('leave', (room, leaverList) => {
     const nameList = leaverList.map(c => c.name()).join(',')
@@ -167,13 +167,13 @@ if (room) {
 }
 ```
 
-#### 示例 \(Event:topic \)
+#### 示例 \(Event:topic\)
 
 ```javascript
 const bot = new Wechaty()
 await bot.start()
-// after logged in...
-const room = await bot.Room.find({topic: 'topic of your room'}) // change `event-room` to any room topic in your wechat
+// 登录后...
+const room = await bot.Room.find({topic: 'topic of your room'})
 if (room) {
   room.on('topic', (room, topic, oldTopic, changer) => {
     console.log(`Room topic changed from ${oldTopic} to ${topic} by ${changer.name()}`)
@@ -181,13 +181,13 @@ if (room) {
 }
 ```
 
-#### 示例 \(Event:invite \)
+#### 示例 \(Event:invite\)
 
 ```javascript
 const bot = new Wechaty()
 await bot.start()
-// after logged in...
-const room = await bot.Room.find({topic: 'topic of your room'}) // change `event-room` to any room topic in your wechat
+// 登录后..
+const room = await bot.Room.find({topic: 'topic of your room'}) 
 if (room) {
   room.on('invite', roomInvitation => roomInvitation.accept())
 }
@@ -210,9 +210,9 @@ if (room) {
 ```javascript
 const bot = new Wechaty()
 await bot.start()
-// after logged in...
-const contact = await bot.Contact.find({name: 'lijiarui'}) // change 'lijiarui' to any contact in your wechat
-const room = await bot.Room.find({topic: 'wechat'})        // change 'wechat' to any room topic in your wechat
+// 登录后...
+const contact = await bot.Contact.find({name: 'lijiarui'}) 
+const room = await bot.Room.find({topic: 'wechat'}) 
 if (room) {
   try {
      await room.add(contact)
@@ -239,9 +239,9 @@ if (room) {
 ```javascript
 const bot = new Wechaty()
 await bot.start()
-// after logged in...
-const room = await bot.Room.find({topic: 'wechat'})          // change 'wechat' to any room topic in your wechat
-const contact = await bot.Contact.find({name: 'lijiarui'})   // change 'lijiarui' to any room member in the room you just set
+// 登录后...
+const room = await bot.Room.find({topic: 'wechat'}) 
+const contact = await bot.Contact.find({name: 'lijiarui'}) 
 if (room) {
   try {
      await room.del(contact)
@@ -317,7 +317,7 @@ bot
 ```javascript
 const bot = new Wechaty()
 await bot.start()
-// after logged in...
+// 登录后...
 const room = await bot.Room.find({topic: 'your room'})
 const announce = await room.announce()
 console.log(`room announce is : ${announce}`)
@@ -328,7 +328,7 @@ console.log(`room announce is : ${announce}`)
 ```javascript
 const bot = new Wechaty()
 await bot.start()
-// after logged in...
+// 登录后...
 const room = await bot.Room.find({topic: 'your room'})
 const oldAnnounce = await room.announce()
 await room.announce('change announce to wechaty!')
@@ -378,9 +378,9 @@ bot
 ```javascript
 const bot = new Wechaty()
 await bot.start()
-// after logged in...
-const contact = await bot.Contact.find({name: 'lijiarui'})   // change 'lijiarui' to any of contact in your wechat
-const room = await bot.Room.find({topic: 'wechaty'})         // change 'wechaty' to any of the room in your wechat
+// 登录后...
+const contact = await bot.Contact.find({name: 'lijiarui'}) 
+const room = await bot.Room.find({topic: 'wechaty'}) 
 if (contact && room) {
   if (await room.has(contact)) {
     console.log(`${contact.name()} is in the room wechaty!`)
@@ -429,10 +429,10 @@ console.log(`contact list with all name, room alias, alias are abc:`, memberCont
 ```javascript
 const bot = new Wechaty()
 await bot.start()
-// after logged in...
-const room = await bot.Room.find({topic: 'wechaty'})           // change 'wechaty' to any room name in your wechat
+// 登录后...
+const room = await bot.Room.find({topic: 'wechaty'}) 
 if (room) {
-  const member = await room.member('lijiarui')             // change 'lijiarui' to any room member in your wechat
+  const member = await room.member('lijiarui')
   if (member) {
     console.log(`wechaty room got the member: ${member.name()}`)
   } else {
@@ -446,10 +446,10 @@ if (room) {
 ```javascript
 const bot = new Wechaty()
 await bot.start()
-// after logged in...
-const room = await bot.Room.find({topic: 'wechaty'})          // change 'wechaty' to any room name in your wechat
+// 登录后...
+const room = await bot.Room.find({topic: 'wechaty'}) 
 if (room) {
-  const member = await room.member({name: 'lijiarui'})        // change 'lijiarui' to any room member in your wechat
+  const member = await room.member({name: 'lijiarui'})
   if (member) {
     console.log(`wechaty room got the member: ${member.name()}`)
   } else {
@@ -496,8 +496,8 @@ const owner = room.avatar()
 #### 示例 _\(创造新群拉'lijiarui'和'juxiaomi', 群名称是 'ding - created'\)_
 
 ```javascript
-const helperContactA = await Contact.find({ name: 'lijiarui' })  // change 'lijiarui' to any contact in your wechat
-const helperContactB = await Contact.find({ name: 'juxiaomi' })  // change 'juxiaomi' to any contact in your wechat
+const helperContactA = await Contact.find({ name: 'lijiarui' }) 
+const helperContactB = await Contact.find({ name: 'juxiaomi' }) 
 const contactList = [helperContactA, helperContactB]
 console.log('Bot', 'contactList: %s', contactList.join(','))
 const room = await Room.create(contactList, 'ding')
@@ -519,9 +519,9 @@ await room.say('ding - created')
 ```javascript
 const bot = new Wechaty()
 await bot.start()
-// after logged in
-const roomList = await bot.Room.findAll()                    // get the room list of the bot
-const roomList = await bot.Room.findAll({topic: 'wechaty'})  // find all of the rooms with name 'wechaty'
+// 登录后
+const roomList = await bot.Room.findAll() 
+const roomList = await bot.Room.findAll({topic: 'wechaty'}) 
 ```
 
 ### Room.find\(query\) ⇒ `Promise <Room>`
@@ -537,7 +537,7 @@ const roomList = await bot.Room.findAll({topic: 'wechaty'})  // find all of the 
 ```javascript
 const bot = new Wechaty()
 await bot.start()
-// after logged in...
+// 登录后...
 const roomList = await bot.Room.find()
 const roomList = await bot.Room.find({topic: 'wechaty'})
 ```

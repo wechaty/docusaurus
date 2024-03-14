@@ -223,7 +223,7 @@ const city = contact.city()
 ### 示例
 
 ```javascript
-// Save avatar to local file like `1-name.jpg`
+// 保存头像文件昵称`1-name.jpg`
 
 const file = await contact.avatar()
 const name = file.name
@@ -288,9 +288,9 @@ const contactFindByAlias = await bot.Contact.find({ alias:"lijiarui"} )
 ```javascript
 const bot = new Wechaty()
 await bot.start()
-const contactList = await bot.Contact.findAll()                      // get the contact list of the bot
-const contactList = await bot.Contact.findAll({ name: 'ruirui' })    // find all of the contacts whose name is 'ruirui'
-const contactList = await bot.Contact.findAll({ alias: 'lijiarui' }) // find all of the contacts whose alias is 'lijiarui'
+const contactList = await bot.Contact.findAll() 
+const contactList = await bot.Contact.findAll({ name: 'ruirui' }) 
+const contactList = await bot.Contact.findAll({ alias: 'lijiarui' }) 
 ```
 
 ## Typedefs

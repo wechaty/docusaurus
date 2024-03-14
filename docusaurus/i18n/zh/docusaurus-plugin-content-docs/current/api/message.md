@@ -157,7 +157,7 @@ bot
 
 备注: 这个方法是否能实现，取决于用的是什么Puppet, 参照 [puppet-compatible-table](https://wechaty.js.org/docs/specs/puppet/)
 
-**See🏻**: [Examples/ding-dong-bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/ding-dong-bot.ts)
+**See**: [Examples/ding-dong-bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/ding-dong-bot.ts)
 
 ### 示例
 
@@ -248,7 +248,7 @@ bot
 ```javascript
 const bot = new Wechaty()
 if (message.type() === bot.Message.Type.Text) {
-  console.log('This is a text message')
+  console.log('这是短信')
 }
 ```
 
@@ -261,7 +261,7 @@ message是自己发的，return `true`，是其他发的，return`false`
 
 ```javascript
 if (message.self()) {
- console.log('this message is sent by myself!')
+ console.log('短信是我发的!')
 }
 ```
 
@@ -271,7 +271,7 @@ if (message.self()) {
 
 |  | Web | Mac PC Client | iOS Mobile | android Mobile |
 | :--- | :---: | :---: | :---: | :---: |
-| \[You were mentioned\] tip \(\[有人@我\]的提示\) | ✘ | √ | √ | √ |
+| \[被@了\] tip \(\[有人@我\]的提示\) | ✘ | √ | √ | √ |
 | Identify magic code \(8197\) by copy & paste in mobile | ✘ | √ | √ | ✘ |
 | Identify magic code \(8197\) by programming | ✘ | ✘ | ✘ | ✘ |
 | Identify two contacts with the same roomAlias by \[You were  mentioned\] tip | ✘ | ✘ | √ | √ |
@@ -292,7 +292,7 @@ console.log(contactList)
 
 ```javascript
 if (await message.mentionSelf()) {
- console.log('this message were mentioned me! [You were mentioned] tip ([有人@我]的提示)')
+ console.log('你被@了! tip ([有人@我]的提示)')
 }
 ```
 
@@ -313,7 +313,7 @@ bot
   const room = await bot.Room.find({topic: 'wechaty'})
   if (room) {
     await message.forward(room)
-    console.log('forward this message to wechaty room!')
+    console.log('转发给 wechaty 群!')
   }
 })
 .start()

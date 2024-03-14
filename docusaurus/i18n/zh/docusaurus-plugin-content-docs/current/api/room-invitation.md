@@ -44,7 +44,7 @@ const bot = new Wechaty()
 bot.on('room-invite', async roomInvitation => {
   const inviter = await roomInvitation.inviter()
   const name = inviter.name()
-  console.log(`received room invitation event from ${name}`)
+  console.log(`收到了${name}的群聊邀请`)
 })
 .start()
 ```
@@ -59,7 +59,7 @@ bot.on('room-invite', async roomInvitation => {
 const bot = new Wechaty()
 bot.on('room-invite', async roomInvitation => {
   const topic = await roomInvitation.topic()
-  console.log(`received room invitation event from room ${topic}`)
+  console.log(`收到了${topic}的群聊邀请`)
 })
 .start()
 ```

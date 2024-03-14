@@ -4,7 +4,7 @@ title: Friendship
 
 Wechaty机器人允许你通过其名为`Friendship`的全球类结交朋友。本节完全是关于`Friendship`类的。
 
-[Examples or Friend-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/friend-bot.ts)
+[Examples of Friend-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/friend-bot.ts)
 
 ## Global class Friendship
 
@@ -39,7 +39,7 @@ Wechaty机器人允许你通过其名为`Friendship`的全球类结交朋友。�
 const bot = new Wechaty()
 bot.on('friendship', async friendship => {
   try {
-    console.log(`received friend event.`)
+    console.log(`收到好友请求`)
     switch (friendship.type()) {
 
     // 1. 新好友请求
@@ -51,7 +51,7 @@ bot.on('friendship', async friendship => {
     // 2. 好友请求接受
 
     case bot.Friendship.Type.Confirm:
-      console.log(`friend ship confirmed`)
+      console.log(`确认好友请求`)
       break
     }
   } catch (e) {
@@ -71,7 +71,7 @@ bot.on('friendship', async friendship => {
 const bot = new Wechaty()
 bot.on('friendship', async friendship => {
   try {
-    console.log(`received friend event from ${friendship.contact().name()}`)
+    console.log(`收到了 ${friendship.contact().name()}的好友请求`)
     if (friendship.type() === bot.Friendship.Type.Receive && friendship.hello() === 'ding') {
       await friendship.accept()
     }
@@ -93,7 +93,7 @@ const bot = new Wechaty()
 bot.on('friendship', friendship => {
   const contact = friendship.contact()
   const name = contact.name()
-  console.log(`received friend event from ${name}`)
+  console.log(`收到了${name}的好友请求`)
 }
 .start()
 ```
@@ -156,7 +156,7 @@ const searchContact = await bot.Friendship.search({
 #### 示例 \(Add搜索的contact\)
 
 ```javascript
-await bot.Friendship.add(searchContact, { hello: 'Nice to meet you! I am wechaty bot!' })
+await bot.Friendship.add(searchContact, { hello: '哈啰！我是 wechaty bot!' })
 ```
 
 #### 示例 \(add room member\)
@@ -166,7 +166,7 @@ const memberList = await room.memberList()
 for (let i = 0; i < memberList.length; i++) {
   await bot.Friendship.add(member, {
     room: message.room(),
-    hello: 'Nice to meet you! I am wechaty bot!',
+    hello: '哈啰！我是 wechaty bot!',
   })
 }
 
@@ -179,7 +179,7 @@ if (message.type() === bot.Message.Type.Contact) {
   const contact = await message.toContact()
   const options = {
     contact: message.talker(),
-    hello: 'Nice to meet you! I am wechaty bot!',
+    hello: '哈啰！我是 wechaty bot!',
   }
   if (message.room()) {
     options.room = message.room()
