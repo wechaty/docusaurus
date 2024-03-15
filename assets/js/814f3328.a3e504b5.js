@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwechaty_docusaurus=self.webpackChunkwechaty_docusaurus||[]).push([[7472],{55513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome","permalink":"/blog/welcome"},{"title":"Hello","permalink":"/blog/hello-world"},{"title":"Hola","permalink":"/blog/hola"}]}')}}]);
