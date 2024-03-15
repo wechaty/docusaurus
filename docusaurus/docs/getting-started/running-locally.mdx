@@ -290,7 +290,7 @@ import {
   Contact,
   Message,
   ScanStatus,
-  Wechaty,
+  WechatyBuilder,
   log,
 }from 'wechaty'
 
@@ -364,8 +364,8 @@ async function onMessage (msg: Message) {
 Now initializing the bot by providing a name.
 
 ```ts
-const bot = new Wechaty({
-  name: 'ding-dong-bot',
+const bot = WechatyBuilder.build({
+  name: 'ding-dong-bot'
 })
 ```
 
@@ -383,7 +383,7 @@ Finally for starting the bot
 ```ts
 bot.start()
   .then(() => log.info('StarterBot', 'Starter Bot Started.'))
-  .catch(e => log.error('StarterBot', e))
+  .catch(e => log.error('StarterBot', 'Failed to start the bot:', e))
 ```
 
 ## Running the bot
