@@ -2,7 +2,7 @@
 title: ContactSelf
 ---
 
-机器人自己的信息将会封装一个ContactSelf 类。这个类继承自 Contact。
+机器人自己的信息将会封装一个 ContactSelf 类。这个类继承自 Contact。
 
 ## ContactSelf
 
@@ -19,7 +19,7 @@ title: ContactSelf
 
 ### contactSelf.avatar\(\[file\]\) ⇒ `Promise <void | FileBox>`
 
-设置机器人的头像
+设置机器人的头像。
 
 **Kind**: `ContactSelf`的实例方法
 
@@ -27,7 +27,7 @@ title: ContactSelf
 | :--- | :--- |
 | \[file\] | `FileBox` |
 
-**示例** _\( GET the avatar for bot, return {Promise&lt;FileBox&gt;}\)_
+**示例** _\( 获取机器人的头像, 返回 {Promise&lt;FileBox&gt;}\)_
 
 ```javascript
 bot.on('login', async user => {
