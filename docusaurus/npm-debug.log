@@ -1,0 +1,2136 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/Users/zhjjuzi/.nvm/versions/node/v18.19.1/bin/node',
+1 verbose cli   '/Users/zhjjuzi/node_modules/.bin/npm',
+1 verbose cli   'install'
+1 verbose cli ]
+2 info using npm@2.15.12
+3 info using node@v18.19.1
+4 verbose readDependencies loading dependencies from /Users/zhjjuzi/annie_wechaty/docusaurus/docusaurus/package.json
+5 verbose install where, deps [
+5 verbose install   '/Users/zhjjuzi/annie_wechaty/docusaurus/docusaurus',
+5 verbose install   [
+5 verbose install     '@docusaurus/core',
+5 verbose install     '@docusaurus/preset-classic',
+5 verbose install     '@easyops-cn/docusaurus-search-local',
+5 verbose install     '@mdx-js/react',
+5 verbose install     '@svgr/webpack',
+5 verbose install     'clsx',
+5 verbose install     'prism-react-renderer',
+5 verbose install     'react',
+5 verbose install     'react-dom',
+5 verbose install     'react-copy-to-clipboard',
+5 verbose install     'react-qr-svg',
+5 verbose install     'redocusaurus',
+5 verbose install     '@docusaurus/module-type-aliases',
+5 verbose install     '@docusaurus/plugin-pwa',
+5 verbose install     '@ionic-internal/docusaurus-plugin-tag-manager',
+5 verbose install     '@tsconfig/docusaurus',
+5 verbose install     '@types/react',
+5 verbose install     '@types/react-helmet',
+5 verbose install     '@types/react-router-dom',
+5 verbose install     'typescript'
+5 verbose install   ]
+5 verbose install ]
+6 verbose install where, peers [ '/Users/zhjjuzi/annie_wechaty/docusaurus/docusaurus', [] ]
+7 verbose installManyTop reading for lifecycle /Users/zhjjuzi/annie_wechaty/docusaurus/docusaurus/package.json
+8 info preinstall wechaty-docusaurus@0.0.1
+9 verbose readDependencies loading dependencies from /Users/zhjjuzi/annie_wechaty/docusaurus/docusaurus/package.json
+10 silly cache add args [ '@docusaurus/core@^2.2.0', null ]
+11 verbose cache add spec @docusaurus/core@^2.2.0
+12 silly cache add parsed spec Result {
+12 silly cache add   raw: '@docusaurus/core@^2.2.0',
+12 silly cache add   scope: '@docusaurus',
+12 silly cache add   name: '@docusaurus/core',
+12 silly cache add   rawSpec: '^2.2.0',
+12 silly cache add   spec: '>=2.2.0 <3.0.0',
+12 silly cache add   type: 'range'
+12 silly cache add }
+13 silly addNamed @docusaurus/core@>=2.2.0 <3.0.0
+14 verbose addNamed ">=2.2.0 <3.0.0" is a valid semver range for @docusaurus/core
+15 silly addNameRange { name: '@docusaurus/core', range: '>=2.2.0 <3.0.0', hasData: false }
+16 silly mapToRegistry name @docusaurus/core
+17 silly mapToRegistry scope (from package name) @docusaurus
+18 verbose mapToRegistry no registry URL found in name for scope @docusaurus
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry data Result {
+21 silly mapToRegistry   raw: '@docusaurus/core',
+21 silly mapToRegistry   scope: '@docusaurus',
+21 silly mapToRegistry   name: '@docusaurus/core',
+21 silly mapToRegistry   rawSpec: '',
+21 silly mapToRegistry   spec: 'latest',
+21 silly mapToRegistry   type: 'tag'
+21 silly mapToRegistry }
+22 silly mapToRegistry uri https://registry.npmjs.org/@docusaurus%2fcore
+23 verbose addNameRange registry:https://registry.npmjs.org/@docusaurus%2fcore not in flight; fetching
+24 silly cache add args [ '@docusaurus/preset-classic@^2.2.0', null ]
+25 verbose cache add spec @docusaurus/preset-classic@^2.2.0
+26 silly cache add parsed spec Result {
+26 silly cache add   raw: '@docusaurus/preset-classic@^2.2.0',
+26 silly cache add   scope: '@docusaurus',
+26 silly cache add   name: '@docusaurus/preset-classic',
+26 silly cache add   rawSpec: '^2.2.0',
+26 silly cache add   spec: '>=2.2.0 <3.0.0',
+26 silly cache add   type: 'range'
+26 silly cache add }
+27 silly addNamed @docusaurus/preset-classic@>=2.2.0 <3.0.0
+28 verbose addNamed ">=2.2.0 <3.0.0" is a valid semver range for @docusaurus/preset-classic
+29 silly addNameRange {
+29 silly addNameRange   name: '@docusaurus/preset-classic',
+29 silly addNameRange   range: '>=2.2.0 <3.0.0',
+29 silly addNameRange   hasData: false
+29 silly addNameRange }
+30 silly mapToRegistry name @docusaurus/preset-classic
+31 silly mapToRegistry scope (from package name) @docusaurus
+32 verbose mapToRegistry no registry URL found in name for scope @docusaurus
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry data Result {
+35 silly mapToRegistry   raw: '@docusaurus/preset-classic',
+35 silly mapToRegistry   scope: '@docusaurus',
+35 silly mapToRegistry   name: '@docusaurus/preset-classic',
+35 silly mapToRegistry   rawSpec: '',
+35 silly mapToRegistry   spec: 'latest',
+35 silly mapToRegistry   type: 'tag'
+35 silly mapToRegistry }
+36 silly mapToRegistry uri https://registry.npmjs.org/@docusaurus%2fpreset-classic
+37 verbose addNameRange registry:https://registry.npmjs.org/@docusaurus%2fpreset-classic not in flight; fetching
+38 silly cache add args [ '@easyops-cn/docusaurus-search-local@^0.33.6', null ]
+39 verbose cache add spec @easyops-cn/docusaurus-search-local@^0.33.6
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: '@easyops-cn/docusaurus-search-local@^0.33.6',
+40 silly cache add   scope: '@easyops-cn',
+40 silly cache add   name: '@easyops-cn/docusaurus-search-local',
+40 silly cache add   rawSpec: '^0.33.6',
+40 silly cache add   spec: '>=0.33.6 <0.34.0',
+40 silly cache add   type: 'range'
+40 silly cache add }
+41 silly addNamed @easyops-cn/docusaurus-search-local@>=0.33.6 <0.34.0
+42 verbose addNamed ">=0.33.6 <0.34.0" is a valid semver range for @easyops-cn/docusaurus-search-local
+43 silly addNameRange {
+43 silly addNameRange   name: '@easyops-cn/docusaurus-search-local',
+43 silly addNameRange   range: '>=0.33.6 <0.34.0',
+43 silly addNameRange   hasData: false
+43 silly addNameRange }
+44 silly mapToRegistry name @easyops-cn/docusaurus-search-local
+45 silly mapToRegistry scope (from package name) @easyops-cn
+46 verbose mapToRegistry no registry URL found in name for scope @easyops-cn
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: '@easyops-cn/docusaurus-search-local',
+49 silly mapToRegistry   scope: '@easyops-cn',
+49 silly mapToRegistry   name: '@easyops-cn/docusaurus-search-local',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag'
+49 silly mapToRegistry }
+50 silly mapToRegistry uri https://registry.npmjs.org/@easyops-cn%2fdocusaurus-search-local
+51 verbose addNameRange registry:https://registry.npmjs.org/@easyops-cn%2fdocusaurus-search-local not in flight; fetching
+52 silly cache add args [ '@mdx-js/react@^1.6.22', null ]
+53 verbose cache add spec @mdx-js/react@^1.6.22
+54 silly cache add parsed spec Result {
+54 silly cache add   raw: '@mdx-js/react@^1.6.22',
+54 silly cache add   scope: '@mdx-js',
+54 silly cache add   name: '@mdx-js/react',
+54 silly cache add   rawSpec: '^1.6.22',
+54 silly cache add   spec: '>=1.6.22 <2.0.0',
+54 silly cache add   type: 'range'
+54 silly cache add }
+55 silly addNamed @mdx-js/react@>=1.6.22 <2.0.0
+56 verbose addNamed ">=1.6.22 <2.0.0" is a valid semver range for @mdx-js/react
+57 silly addNameRange { name: '@mdx-js/react', range: '>=1.6.22 <2.0.0', hasData: false }
+58 silly mapToRegistry name @mdx-js/react
+59 silly mapToRegistry scope (from package name) @mdx-js
+60 verbose mapToRegistry no registry URL found in name for scope @mdx-js
+61 silly mapToRegistry using default registry
+62 silly mapToRegistry registry https://registry.npmjs.org/
+63 silly mapToRegistry data Result {
+63 silly mapToRegistry   raw: '@mdx-js/react',
+63 silly mapToRegistry   scope: '@mdx-js',
+63 silly mapToRegistry   name: '@mdx-js/react',
+63 silly mapToRegistry   rawSpec: '',
+63 silly mapToRegistry   spec: 'latest',
+63 silly mapToRegistry   type: 'tag'
+63 silly mapToRegistry }
+64 silly mapToRegistry uri https://registry.npmjs.org/@mdx-js%2freact
+65 verbose addNameRange registry:https://registry.npmjs.org/@mdx-js%2freact not in flight; fetching
+66 silly cache add args [ '@svgr/webpack@^6.2.1', null ]
+67 verbose cache add spec @svgr/webpack@^6.2.1
+68 silly cache add parsed spec Result {
+68 silly cache add   raw: '@svgr/webpack@^6.2.1',
+68 silly cache add   scope: '@svgr',
+68 silly cache add   name: '@svgr/webpack',
+68 silly cache add   rawSpec: '^6.2.1',
+68 silly cache add   spec: '>=6.2.1 <7.0.0',
+68 silly cache add   type: 'range'
+68 silly cache add }
+69 silly addNamed @svgr/webpack@>=6.2.1 <7.0.0
+70 verbose addNamed ">=6.2.1 <7.0.0" is a valid semver range for @svgr/webpack
+71 silly addNameRange { name: '@svgr/webpack', range: '>=6.2.1 <7.0.0', hasData: false }
+72 silly mapToRegistry name @svgr/webpack
+73 silly mapToRegistry scope (from package name) @svgr
+74 verbose mapToRegistry no registry URL found in name for scope @svgr
+75 silly mapToRegistry using default registry
+76 silly mapToRegistry registry https://registry.npmjs.org/
+77 silly mapToRegistry data Result {
+77 silly mapToRegistry   raw: '@svgr/webpack',
+77 silly mapToRegistry   scope: '@svgr',
+77 silly mapToRegistry   name: '@svgr/webpack',
+77 silly mapToRegistry   rawSpec: '',
+77 silly mapToRegistry   spec: 'latest',
+77 silly mapToRegistry   type: 'tag'
+77 silly mapToRegistry }
+78 silly mapToRegistry uri https://registry.npmjs.org/@svgr%2fwebpack
+79 verbose addNameRange registry:https://registry.npmjs.org/@svgr%2fwebpack not in flight; fetching
+80 silly cache add args [ 'clsx@^1.1.1', null ]
+81 verbose cache add spec clsx@^1.1.1
+82 silly cache add parsed spec Result {
+82 silly cache add   raw: 'clsx@^1.1.1',
+82 silly cache add   scope: null,
+82 silly cache add   name: 'clsx',
+82 silly cache add   rawSpec: '^1.1.1',
+82 silly cache add   spec: '>=1.1.1 <2.0.0',
+82 silly cache add   type: 'range'
+82 silly cache add }
+83 silly addNamed clsx@>=1.1.1 <2.0.0
+84 verbose addNamed ">=1.1.1 <2.0.0" is a valid semver range for clsx
+85 silly addNameRange { name: 'clsx', range: '>=1.1.1 <2.0.0', hasData: false }
+86 silly mapToRegistry name clsx
+87 silly mapToRegistry using default registry
+88 silly mapToRegistry registry https://registry.npmjs.org/
+89 silly mapToRegistry data Result {
+89 silly mapToRegistry   raw: 'clsx',
+89 silly mapToRegistry   scope: null,
+89 silly mapToRegistry   name: 'clsx',
+89 silly mapToRegistry   rawSpec: '',
+89 silly mapToRegistry   spec: 'latest',
+89 silly mapToRegistry   type: 'tag'
+89 silly mapToRegistry }
+90 silly mapToRegistry uri https://registry.npmjs.org/clsx
+91 verbose addNameRange registry:https://registry.npmjs.org/clsx not in flight; fetching
+92 silly cache add args [ 'prism-react-renderer@^1.3.1', null ]
+93 verbose cache add spec prism-react-renderer@^1.3.1
+94 silly cache add parsed spec Result {
+94 silly cache add   raw: 'prism-react-renderer@^1.3.1',
+94 silly cache add   scope: null,
+94 silly cache add   name: 'prism-react-renderer',
+94 silly cache add   rawSpec: '^1.3.1',
+94 silly cache add   spec: '>=1.3.1 <2.0.0',
+94 silly cache add   type: 'range'
+94 silly cache add }
+95 silly addNamed prism-react-renderer@>=1.3.1 <2.0.0
+96 verbose addNamed ">=1.3.1 <2.0.0" is a valid semver range for prism-react-renderer
+97 silly addNameRange {
+97 silly addNameRange   name: 'prism-react-renderer',
+97 silly addNameRange   range: '>=1.3.1 <2.0.0',
+97 silly addNameRange   hasData: false
+97 silly addNameRange }
+98 silly mapToRegistry name prism-react-renderer
+99 silly mapToRegistry using default registry
+100 silly mapToRegistry registry https://registry.npmjs.org/
+101 silly mapToRegistry data Result {
+101 silly mapToRegistry   raw: 'prism-react-renderer',
+101 silly mapToRegistry   scope: null,
+101 silly mapToRegistry   name: 'prism-react-renderer',
+101 silly mapToRegistry   rawSpec: '',
+101 silly mapToRegistry   spec: 'latest',
+101 silly mapToRegistry   type: 'tag'
+101 silly mapToRegistry }
+102 silly mapToRegistry uri https://registry.npmjs.org/prism-react-renderer
+103 verbose addNameRange registry:https://registry.npmjs.org/prism-react-renderer not in flight; fetching
+104 silly cache add args [ 'react@^17.0.0', null ]
+105 verbose cache add spec react@^17.0.0
+106 silly cache add parsed spec Result {
+106 silly cache add   raw: 'react@^17.0.0',
+106 silly cache add   scope: null,
+106 silly cache add   name: 'react',
+106 silly cache add   rawSpec: '^17.0.0',
+106 silly cache add   spec: '>=17.0.0 <18.0.0',
+106 silly cache add   type: 'range'
+106 silly cache add }
+107 silly addNamed react@>=17.0.0 <18.0.0
+108 verbose addNamed ">=17.0.0 <18.0.0" is a valid semver range for react
+109 silly addNameRange { name: 'react', range: '>=17.0.0 <18.0.0', hasData: false }
+110 silly mapToRegistry name react
+111 silly mapToRegistry using default registry
+112 silly mapToRegistry registry https://registry.npmjs.org/
+113 silly mapToRegistry data Result {
+113 silly mapToRegistry   raw: 'react',
+113 silly mapToRegistry   scope: null,
+113 silly mapToRegistry   name: 'react',
+113 silly mapToRegistry   rawSpec: '',
+113 silly mapToRegistry   spec: 'latest',
+113 silly mapToRegistry   type: 'tag'
+113 silly mapToRegistry }
+114 silly mapToRegistry uri https://registry.npmjs.org/react
+115 verbose addNameRange registry:https://registry.npmjs.org/react not in flight; fetching
+116 silly cache add args [ 'react-dom@^17.0.0', null ]
+117 verbose cache add spec react-dom@^17.0.0
+118 silly cache add parsed spec Result {
+118 silly cache add   raw: 'react-dom@^17.0.0',
+118 silly cache add   scope: null,
+118 silly cache add   name: 'react-dom',
+118 silly cache add   rawSpec: '^17.0.0',
+118 silly cache add   spec: '>=17.0.0 <18.0.0',
+118 silly cache add   type: 'range'
+118 silly cache add }
+119 silly addNamed react-dom@>=17.0.0 <18.0.0
+120 verbose addNamed ">=17.0.0 <18.0.0" is a valid semver range for react-dom
+121 silly addNameRange { name: 'react-dom', range: '>=17.0.0 <18.0.0', hasData: false }
+122 silly mapToRegistry name react-dom
+123 silly mapToRegistry using default registry
+124 silly mapToRegistry registry https://registry.npmjs.org/
+125 silly mapToRegistry data Result {
+125 silly mapToRegistry   raw: 'react-dom',
+125 silly mapToRegistry   scope: null,
+125 silly mapToRegistry   name: 'react-dom',
+125 silly mapToRegistry   rawSpec: '',
+125 silly mapToRegistry   spec: 'latest',
+125 silly mapToRegistry   type: 'tag'
+125 silly mapToRegistry }
+126 silly mapToRegistry uri https://registry.npmjs.org/react-dom
+127 verbose addNameRange registry:https://registry.npmjs.org/react-dom not in flight; fetching
+128 silly cache add args [ 'react-copy-to-clipboard@^5.0.4', null ]
+129 verbose cache add spec react-copy-to-clipboard@^5.0.4
+130 silly cache add parsed spec Result {
+130 silly cache add   raw: 'react-copy-to-clipboard@^5.0.4',
+130 silly cache add   scope: null,
+130 silly cache add   name: 'react-copy-to-clipboard',
+130 silly cache add   rawSpec: '^5.0.4',
+130 silly cache add   spec: '>=5.0.4 <6.0.0',
+130 silly cache add   type: 'range'
+130 silly cache add }
+131 silly addNamed react-copy-to-clipboard@>=5.0.4 <6.0.0
+132 verbose addNamed ">=5.0.4 <6.0.0" is a valid semver range for react-copy-to-clipboard
+133 silly addNameRange {
+133 silly addNameRange   name: 'react-copy-to-clipboard',
+133 silly addNameRange   range: '>=5.0.4 <6.0.0',
+133 silly addNameRange   hasData: false
+133 silly addNameRange }
+134 silly mapToRegistry name react-copy-to-clipboard
+135 silly mapToRegistry using default registry
+136 silly mapToRegistry registry https://registry.npmjs.org/
+137 silly mapToRegistry data Result {
+137 silly mapToRegistry   raw: 'react-copy-to-clipboard',
+137 silly mapToRegistry   scope: null,
+137 silly mapToRegistry   name: 'react-copy-to-clipboard',
+137 silly mapToRegistry   rawSpec: '',
+137 silly mapToRegistry   spec: 'latest',
+137 silly mapToRegistry   type: 'tag'
+137 silly mapToRegistry }
+138 silly mapToRegistry uri https://registry.npmjs.org/react-copy-to-clipboard
+139 verbose addNameRange registry:https://registry.npmjs.org/react-copy-to-clipboard not in flight; fetching
+140 verbose request uri https://registry.npmjs.org/@easyops-cn%2fdocusaurus-search-local
+141 verbose request no auth needed
+142 info attempt registry request try #1 at 6:16:01 PM
+143 verbose request id e8d90cc2853bd1a7
+144 verbose etag W/"60fe3085f922dc572e2a923835e2c46e"
+145 verbose lastModified Sat, 23 Dec 2023 06:25:17 GMT
+146 http request GET https://registry.npmjs.org/@easyops-cn%2fdocusaurus-search-local
+147 silly cache add args [ 'react-qr-svg@^2.3.0', null ]
+148 verbose cache add spec react-qr-svg@^2.3.0
+149 silly cache add parsed spec Result {
+149 silly cache add   raw: 'react-qr-svg@^2.3.0',
+149 silly cache add   scope: null,
+149 silly cache add   name: 'react-qr-svg',
+149 silly cache add   rawSpec: '^2.3.0',
+149 silly cache add   spec: '>=2.3.0 <3.0.0',
+149 silly cache add   type: 'range'
+149 silly cache add }
+150 silly addNamed react-qr-svg@>=2.3.0 <3.0.0
+151 verbose addNamed ">=2.3.0 <3.0.0" is a valid semver range for react-qr-svg
+152 silly addNameRange { name: 'react-qr-svg', range: '>=2.3.0 <3.0.0', hasData: false }
+153 silly mapToRegistry name react-qr-svg
+154 silly mapToRegistry using default registry
+155 silly mapToRegistry registry https://registry.npmjs.org/
+156 silly mapToRegistry data Result {
+156 silly mapToRegistry   raw: 'react-qr-svg',
+156 silly mapToRegistry   scope: null,
+156 silly mapToRegistry   name: 'react-qr-svg',
+156 silly mapToRegistry   rawSpec: '',
+156 silly mapToRegistry   spec: 'latest',
+156 silly mapToRegistry   type: 'tag'
+156 silly mapToRegistry }
+157 silly mapToRegistry uri https://registry.npmjs.org/react-qr-svg
+158 verbose addNameRange registry:https://registry.npmjs.org/react-qr-svg not in flight; fetching
+159 silly cache add args [ 'redocusaurus@^1.0.1', null ]
+160 verbose cache add spec redocusaurus@^1.0.1
+161 silly cache add parsed spec Result {
+161 silly cache add   raw: 'redocusaurus@^1.0.1',
+161 silly cache add   scope: null,
+161 silly cache add   name: 'redocusaurus',
+161 silly cache add   rawSpec: '^1.0.1',
+161 silly cache add   spec: '>=1.0.1 <2.0.0',
+161 silly cache add   type: 'range'
+161 silly cache add }
+162 silly addNamed redocusaurus@>=1.0.1 <2.0.0
+163 verbose addNamed ">=1.0.1 <2.0.0" is a valid semver range for redocusaurus
+164 silly addNameRange { name: 'redocusaurus', range: '>=1.0.1 <2.0.0', hasData: false }
+165 silly mapToRegistry name redocusaurus
+166 silly mapToRegistry using default registry
+167 silly mapToRegistry registry https://registry.npmjs.org/
+168 silly mapToRegistry data Result {
+168 silly mapToRegistry   raw: 'redocusaurus',
+168 silly mapToRegistry   scope: null,
+168 silly mapToRegistry   name: 'redocusaurus',
+168 silly mapToRegistry   rawSpec: '',
+168 silly mapToRegistry   spec: 'latest',
+168 silly mapToRegistry   type: 'tag'
+168 silly mapToRegistry }
+169 silly mapToRegistry uri https://registry.npmjs.org/redocusaurus
+170 verbose addNameRange registry:https://registry.npmjs.org/redocusaurus not in flight; fetching
+171 silly cache add args [ '@docusaurus/module-type-aliases@^2.2.0', null ]
+172 verbose cache add spec @docusaurus/module-type-aliases@^2.2.0
+173 silly cache add parsed spec Result {
+173 silly cache add   raw: '@docusaurus/module-type-aliases@^2.2.0',
+173 silly cache add   scope: '@docusaurus',
+173 silly cache add   name: '@docusaurus/module-type-aliases',
+173 silly cache add   rawSpec: '^2.2.0',
+173 silly cache add   spec: '>=2.2.0 <3.0.0',
+173 silly cache add   type: 'range'
+173 silly cache add }
+174 silly addNamed @docusaurus/module-type-aliases@>=2.2.0 <3.0.0
+175 verbose addNamed ">=2.2.0 <3.0.0" is a valid semver range for @docusaurus/module-type-aliases
+176 silly addNameRange {
+176 silly addNameRange   name: '@docusaurus/module-type-aliases',
+176 silly addNameRange   range: '>=2.2.0 <3.0.0',
+176 silly addNameRange   hasData: false
+176 silly addNameRange }
+177 silly mapToRegistry name @docusaurus/module-type-aliases
+178 silly mapToRegistry scope (from package name) @docusaurus
+179 verbose mapToRegistry no registry URL found in name for scope @docusaurus
+180 silly mapToRegistry using default registry
+181 silly mapToRegistry registry https://registry.npmjs.org/
+182 silly mapToRegistry data Result {
+182 silly mapToRegistry   raw: '@docusaurus/module-type-aliases',
+182 silly mapToRegistry   scope: '@docusaurus',
+182 silly mapToRegistry   name: '@docusaurus/module-type-aliases',
+182 silly mapToRegistry   rawSpec: '',
+182 silly mapToRegistry   spec: 'latest',
+182 silly mapToRegistry   type: 'tag'
+182 silly mapToRegistry }
+183 silly mapToRegistry uri https://registry.npmjs.org/@docusaurus%2fmodule-type-aliases
+184 verbose addNameRange registry:https://registry.npmjs.org/@docusaurus%2fmodule-type-aliases not in flight; fetching
+185 silly cache add args [ '@docusaurus/plugin-pwa@^2.2.0', null ]
+186 verbose cache add spec @docusaurus/plugin-pwa@^2.2.0
+187 silly cache add parsed spec Result {
+187 silly cache add   raw: '@docusaurus/plugin-pwa@^2.2.0',
+187 silly cache add   scope: '@docusaurus',
+187 silly cache add   name: '@docusaurus/plugin-pwa',
+187 silly cache add   rawSpec: '^2.2.0',
+187 silly cache add   spec: '>=2.2.0 <3.0.0',
+187 silly cache add   type: 'range'
+187 silly cache add }
+188 silly addNamed @docusaurus/plugin-pwa@>=2.2.0 <3.0.0
+189 verbose addNamed ">=2.2.0 <3.0.0" is a valid semver range for @docusaurus/plugin-pwa
+190 silly addNameRange {
+190 silly addNameRange   name: '@docusaurus/plugin-pwa',
+190 silly addNameRange   range: '>=2.2.0 <3.0.0',
+190 silly addNameRange   hasData: false
+190 silly addNameRange }
+191 silly mapToRegistry name @docusaurus/plugin-pwa
+192 silly mapToRegistry scope (from package name) @docusaurus
+193 verbose mapToRegistry no registry URL found in name for scope @docusaurus
+194 silly mapToRegistry using default registry
+195 silly mapToRegistry registry https://registry.npmjs.org/
+196 silly mapToRegistry data Result {
+196 silly mapToRegistry   raw: '@docusaurus/plugin-pwa',
+196 silly mapToRegistry   scope: '@docusaurus',
+196 silly mapToRegistry   name: '@docusaurus/plugin-pwa',
+196 silly mapToRegistry   rawSpec: '',
+196 silly mapToRegistry   spec: 'latest',
+196 silly mapToRegistry   type: 'tag'
+196 silly mapToRegistry }
+197 silly mapToRegistry uri https://registry.npmjs.org/@docusaurus%2fplugin-pwa
+198 verbose addNameRange registry:https://registry.npmjs.org/@docusaurus%2fplugin-pwa not in flight; fetching
+199 silly cache add args [
+199 silly cache add   '@ionic-internal/docusaurus-plugin-tag-manager@github:ionic-team/docusaurus-plugin-tag-manager',
+199 silly cache add   null
+199 silly cache add ]
+200 verbose cache add spec @ionic-internal/docusaurus-plugin-tag-manager@github:ionic-team/docusaurus-plugin-tag-manager
+201 silly cache add args [ '@tsconfig/docusaurus@^1.0.5', null ]
+202 verbose cache add spec @tsconfig/docusaurus@^1.0.5
+203 silly cache add parsed spec Result {
+203 silly cache add   raw: '@tsconfig/docusaurus@^1.0.5',
+203 silly cache add   scope: '@tsconfig',
+203 silly cache add   name: '@tsconfig/docusaurus',
+203 silly cache add   rawSpec: '^1.0.5',
+203 silly cache add   spec: '>=1.0.5 <2.0.0',
+203 silly cache add   type: 'range'
+203 silly cache add }
+204 silly addNamed @tsconfig/docusaurus@>=1.0.5 <2.0.0
+205 verbose addNamed ">=1.0.5 <2.0.0" is a valid semver range for @tsconfig/docusaurus
+206 silly addNameRange {
+206 silly addNameRange   name: '@tsconfig/docusaurus',
+206 silly addNameRange   range: '>=1.0.5 <2.0.0',
+206 silly addNameRange   hasData: false
+206 silly addNameRange }
+207 silly mapToRegistry name @tsconfig/docusaurus
+208 silly mapToRegistry scope (from package name) @tsconfig
+209 verbose mapToRegistry no registry URL found in name for scope @tsconfig
+210 silly mapToRegistry using default registry
+211 silly mapToRegistry registry https://registry.npmjs.org/
+212 silly mapToRegistry data Result {
+212 silly mapToRegistry   raw: '@tsconfig/docusaurus',
+212 silly mapToRegistry   scope: '@tsconfig',
+212 silly mapToRegistry   name: '@tsconfig/docusaurus',
+212 silly mapToRegistry   rawSpec: '',
+212 silly mapToRegistry   spec: 'latest',
+212 silly mapToRegistry   type: 'tag'
+212 silly mapToRegistry }
+213 silly mapToRegistry uri https://registry.npmjs.org/@tsconfig%2fdocusaurus
+214 verbose addNameRange registry:https://registry.npmjs.org/@tsconfig%2fdocusaurus not in flight; fetching
+215 silly cache add args [ '@types/react@^17.0.43', null ]
+216 verbose cache add spec @types/react@^17.0.43
+217 silly cache add parsed spec Result {
+217 silly cache add   raw: '@types/react@^17.0.43',
+217 silly cache add   scope: '@types',
+217 silly cache add   name: '@types/react',
+217 silly cache add   rawSpec: '^17.0.43',
+217 silly cache add   spec: '>=17.0.43 <18.0.0',
+217 silly cache add   type: 'range'
+217 silly cache add }
+218 silly addNamed @types/react@>=17.0.43 <18.0.0
+219 verbose addNamed ">=17.0.43 <18.0.0" is a valid semver range for @types/react
+220 silly addNameRange { name: '@types/react', range: '>=17.0.43 <18.0.0', hasData: false }
+221 silly mapToRegistry name @types/react
+222 silly mapToRegistry scope (from package name) @types
+223 verbose mapToRegistry no registry URL found in name for scope @types
+224 silly mapToRegistry using default registry
+225 silly mapToRegistry registry https://registry.npmjs.org/
+226 silly mapToRegistry data Result {
+226 silly mapToRegistry   raw: '@types/react',
+226 silly mapToRegistry   scope: '@types',
+226 silly mapToRegistry   name: '@types/react',
+226 silly mapToRegistry   rawSpec: '',
+226 silly mapToRegistry   spec: 'latest',
+226 silly mapToRegistry   type: 'tag'
+226 silly mapToRegistry }
+227 silly mapToRegistry uri https://registry.npmjs.org/@types%2freact
+228 verbose addNameRange registry:https://registry.npmjs.org/@types%2freact not in flight; fetching
+229 silly cache add args [ '@types/react-helmet@^6.1.5', null ]
+230 verbose cache add spec @types/react-helmet@^6.1.5
+231 silly cache add parsed spec Result {
+231 silly cache add   raw: '@types/react-helmet@^6.1.5',
+231 silly cache add   scope: '@types',
+231 silly cache add   name: '@types/react-helmet',
+231 silly cache add   rawSpec: '^6.1.5',
+231 silly cache add   spec: '>=6.1.5 <7.0.0',
+231 silly cache add   type: 'range'
+231 silly cache add }
+232 silly addNamed @types/react-helmet@>=6.1.5 <7.0.0
+233 verbose addNamed ">=6.1.5 <7.0.0" is a valid semver range for @types/react-helmet
+234 silly addNameRange {
+234 silly addNameRange   name: '@types/react-helmet',
+234 silly addNameRange   range: '>=6.1.5 <7.0.0',
+234 silly addNameRange   hasData: false
+234 silly addNameRange }
+235 silly mapToRegistry name @types/react-helmet
+236 silly mapToRegistry scope (from package name) @types
+237 verbose mapToRegistry no registry URL found in name for scope @types
+238 silly mapToRegistry using default registry
+239 silly mapToRegistry registry https://registry.npmjs.org/
+240 silly mapToRegistry data Result {
+240 silly mapToRegistry   raw: '@types/react-helmet',
+240 silly mapToRegistry   scope: '@types',
+240 silly mapToRegistry   name: '@types/react-helmet',
+240 silly mapToRegistry   rawSpec: '',
+240 silly mapToRegistry   spec: 'latest',
+240 silly mapToRegistry   type: 'tag'
+240 silly mapToRegistry }
+241 silly mapToRegistry uri https://registry.npmjs.org/@types%2freact-helmet
+242 verbose addNameRange registry:https://registry.npmjs.org/@types%2freact-helmet not in flight; fetching
+243 silly cache add args [ '@types/react-router-dom@^5.3.3', null ]
+244 verbose cache add spec @types/react-router-dom@^5.3.3
+245 silly cache add parsed spec Result {
+245 silly cache add   raw: '@types/react-router-dom@^5.3.3',
+245 silly cache add   scope: '@types',
+245 silly cache add   name: '@types/react-router-dom',
+245 silly cache add   rawSpec: '^5.3.3',
+245 silly cache add   spec: '>=5.3.3 <6.0.0',
+245 silly cache add   type: 'range'
+245 silly cache add }
+246 silly addNamed @types/react-router-dom@>=5.3.3 <6.0.0
+247 verbose addNamed ">=5.3.3 <6.0.0" is a valid semver range for @types/react-router-dom
+248 silly addNameRange {
+248 silly addNameRange   name: '@types/react-router-dom',
+248 silly addNameRange   range: '>=5.3.3 <6.0.0',
+248 silly addNameRange   hasData: false
+248 silly addNameRange }
+249 silly mapToRegistry name @types/react-router-dom
+250 silly mapToRegistry scope (from package name) @types
+251 verbose mapToRegistry no registry URL found in name for scope @types
+252 silly mapToRegistry using default registry
+253 silly mapToRegistry registry https://registry.npmjs.org/
+254 silly mapToRegistry data Result {
+254 silly mapToRegistry   raw: '@types/react-router-dom',
+254 silly mapToRegistry   scope: '@types',
+254 silly mapToRegistry   name: '@types/react-router-dom',
+254 silly mapToRegistry   rawSpec: '',
+254 silly mapToRegistry   spec: 'latest',
+254 silly mapToRegistry   type: 'tag'
+254 silly mapToRegistry }
+255 silly mapToRegistry uri https://registry.npmjs.org/@types%2freact-router-dom
+256 verbose addNameRange registry:https://registry.npmjs.org/@types%2freact-router-dom not in flight; fetching
+257 silly cache add args [ 'typescript@^4.6.3', null ]
+258 verbose cache add spec typescript@^4.6.3
+259 silly cache add parsed spec Result {
+259 silly cache add   raw: 'typescript@^4.6.3',
+259 silly cache add   scope: null,
+259 silly cache add   name: 'typescript',
+259 silly cache add   rawSpec: '^4.6.3',
+259 silly cache add   spec: '>=4.6.3 <5.0.0',
+259 silly cache add   type: 'range'
+259 silly cache add }
+260 silly addNamed typescript@>=4.6.3 <5.0.0
+261 verbose addNamed ">=4.6.3 <5.0.0" is a valid semver range for typescript
+262 silly addNameRange { name: 'typescript', range: '>=4.6.3 <5.0.0', hasData: false }
+263 silly mapToRegistry name typescript
+264 silly mapToRegistry using default registry
+265 silly mapToRegistry registry https://registry.npmjs.org/
+266 silly mapToRegistry data Result {
+266 silly mapToRegistry   raw: 'typescript',
+266 silly mapToRegistry   scope: null,
+266 silly mapToRegistry   name: 'typescript',
+266 silly mapToRegistry   rawSpec: '',
+266 silly mapToRegistry   spec: 'latest',
+266 silly mapToRegistry   type: 'tag'
+266 silly mapToRegistry }
+267 silly mapToRegistry uri https://registry.npmjs.org/typescript
+268 verbose addNameRange registry:https://registry.npmjs.org/typescript not in flight; fetching
+269 verbose request uri https://registry.npmjs.org/@svgr%2fwebpack
+270 verbose request no auth needed
+271 info attempt registry request try #1 at 6:16:01 PM
+272 verbose etag W/"2df40ff087d1f06bf2adc293d4983455"
+273 verbose lastModified Tue, 15 Aug 2023 06:46:25 GMT
+274 http request GET https://registry.npmjs.org/@svgr%2fwebpack
+275 silly cache add parsed spec Result {
+275 silly cache add   raw: '@ionic-internal/docusaurus-plugin-tag-manager@github:ionic-team/docusaurus-plugin-tag-manager',
+275 silly cache add   scope: '@ionic-internal',
+275 silly cache add   name: '@ionic-internal/docusaurus-plugin-tag-manager',
+275 silly cache add   rawSpec: 'github:ionic-team/docusaurus-plugin-tag-manager',
+275 silly cache add   spec: 'github:ionic-team/docusaurus-plugin-tag-manager',
+275 silly cache add   type: 'hosted',
+275 silly cache add   hosted: {
+275 silly cache add     type: 'github',
+275 silly cache add     ssh: 'git@github.com:ionic-team/docusaurus-plugin-tag-manager.git',
+275 silly cache add     sshUrl: 'git+ssh://git@github.com/ionic-team/docusaurus-plugin-tag-manager.git',
+275 silly cache add     httpsUrl: 'git+https://github.com/ionic-team/docusaurus-plugin-tag-manager.git',
+275 silly cache add     gitUrl: 'git://github.com/ionic-team/docusaurus-plugin-tag-manager.git',
+275 silly cache add     shortcut: 'github:ionic-team/docusaurus-plugin-tag-manager',
+275 silly cache add     directUrl: 'https://raw.githubusercontent.com/ionic-team/docusaurus-plugin-tag-manager/master/package.json'
+275 silly cache add   }
+275 silly cache add }
+276 verbose addRemoteGit caching github:ionic-team/docusaurus-plugin-tag-manager
+277 verbose addRemoteGit ionic-team/docusaurus-plugin-tag-manager is a repository hosted by github
+278 silly tryGitProto attempting to clone git://github.com/ionic-team/docusaurus-plugin-tag-manager.git
+279 silly tryClone cloning ionic-team/docusaurus-plugin-tag-manager via git://github.com/ionic-team/docusaurus-plugin-tag-manager.git
+280 verbose tryClone git-github-com-ionic-team-docusaurus-plugin-tag-manager-git-8980817a not in flight; caching
+281 verbose correctMkdir /Users/zhjjuzi/.npm/_git-remotes correctMkdir not in flight; initializing
+282 verbose request uri https://registry.npmjs.org/@mdx-js%2freact
+283 verbose request no auth needed
+284 info attempt registry request try #1 at 6:16:01 PM
+285 verbose etag W/"8bca77ae612f50be113ad19d51f11722"
+286 verbose lastModified Mon, 12 Feb 2024 10:50:29 GMT
+287 http request GET https://registry.npmjs.org/@mdx-js%2freact
+288 verbose request uri https://registry.npmjs.org/prism-react-renderer
+289 verbose request no auth needed
+290 info attempt registry request try #1 at 6:16:01 PM
+291 verbose etag W/"c4f63942aae8b307a61d4cfc67a04bb8"
+292 verbose lastModified Tue, 02 Jan 2024 13:30:55 GMT
+293 http request GET https://registry.npmjs.org/prism-react-renderer
+294 verbose request uri https://registry.npmjs.org/clsx
+295 verbose request no auth needed
+296 info attempt registry request try #1 at 6:16:01 PM
+297 verbose etag W/"ce7265c215fc63ce307156c1197b5f8a"
+298 verbose lastModified Fri, 29 Dec 2023 20:34:40 GMT
+299 http request GET https://registry.npmjs.org/clsx
+300 verbose request uri https://registry.npmjs.org/react-copy-to-clipboard
+301 verbose request no auth needed
+302 info attempt registry request try #1 at 6:16:01 PM
+303 verbose etag W/"2e9809ddf1777701de277b9a549ff2f8"
+304 verbose lastModified Fri, 21 Jul 2023 15:49:33 GMT
+305 http request GET https://registry.npmjs.org/react-copy-to-clipboard
+306 verbose request uri https://registry.npmjs.org/react-qr-svg
+307 verbose request no auth needed
+308 info attempt registry request try #1 at 6:16:01 PM
+309 verbose etag W/"52b32b196e8a6630bd73925b0c2b7507"
+310 verbose lastModified Sun, 26 Jun 2022 07:44:28 GMT
+311 http request GET https://registry.npmjs.org/react-qr-svg
+312 verbose request uri https://registry.npmjs.org/redocusaurus
+313 verbose request no auth needed
+314 info attempt registry request try #1 at 6:16:01 PM
+315 verbose etag W/"d9e1f346de5c67ac0ac52e0a857f64b0"
+316 verbose lastModified Sat, 09 Mar 2024 00:16:51 GMT
+317 http request GET https://registry.npmjs.org/redocusaurus
+318 verbose request uri https://registry.npmjs.org/@tsconfig%2fdocusaurus
+319 verbose request no auth needed
+320 info attempt registry request try #1 at 6:16:01 PM
+321 verbose etag W/"36ea04eb327ef2d3ccf6a807b33f28d9"
+322 verbose lastModified Sun, 15 Oct 2023 04:10:37 GMT
+323 http request GET https://registry.npmjs.org/@tsconfig%2fdocusaurus
+324 verbose request uri https://registry.npmjs.org/@types%2freact-helmet
+325 verbose request no auth needed
+326 info attempt registry request try #1 at 6:16:01 PM
+327 verbose etag W/"0eda519237048449b177bcdf4a74c583"
+328 verbose lastModified Thu, 21 Dec 2023 21:36:03 GMT
+329 http request GET https://registry.npmjs.org/@types%2freact-helmet
+330 verbose request uri https://registry.npmjs.org/@types%2freact-router-dom
+331 verbose request no auth needed
+332 info attempt registry request try #1 at 6:16:01 PM
+333 verbose etag W/"1d546b30986fb7f6d6734432253533e7"
+334 verbose lastModified Mon, 06 Mar 2023 08:43:24 GMT
+335 http request GET https://registry.npmjs.org/@types%2freact-router-dom
+336 verbose request uri https://registry.npmjs.org/@types%2freact
+337 verbose request no auth needed
+338 info attempt registry request try #1 at 6:16:01 PM
+339 verbose etag W/"9ff785c64e989c6f32ef587d3c7a2062"
+340 verbose lastModified Wed, 06 Mar 2024 19:07:11 GMT
+341 http request GET https://registry.npmjs.org/@types%2freact
+342 verbose request uri https://registry.npmjs.org/@docusaurus%2fpreset-classic
+343 verbose request no auth needed
+344 info attempt registry request try #1 at 6:16:01 PM
+345 verbose etag W/"15db9bf795973a9396f1389c9b4397a0"
+346 verbose lastModified Fri, 08 Mar 2024 18:17:34 GMT
+347 http request GET https://registry.npmjs.org/@docusaurus%2fpreset-classic
+348 verbose request uri https://registry.npmjs.org/react
+349 verbose request no auth needed
+350 info attempt registry request try #1 at 6:16:01 PM
+351 verbose etag W/"54b1678d25e8432d7c7f8ea63efedc3f"
+352 verbose lastModified Sun, 10 Mar 2024 14:50:23 GMT
+353 http request GET https://registry.npmjs.org/react
+354 verbose request uri https://registry.npmjs.org/@docusaurus%2fmodule-type-aliases
+355 verbose request no auth needed
+356 info attempt registry request try #1 at 6:16:01 PM
+357 verbose etag W/"998f4e3ec5f4de63a4ad77f9524e8cfd"
+358 verbose lastModified Fri, 08 Mar 2024 18:16:40 GMT
+359 http request GET https://registry.npmjs.org/@docusaurus%2fmodule-type-aliases
+360 verbose request uri https://registry.npmjs.org/react-dom
+361 verbose request no auth needed
+362 info attempt registry request try #1 at 6:16:01 PM
+363 verbose etag W/"0bc438b700063ff8c5ac879533d2da1a"
+364 verbose lastModified Fri, 08 Mar 2024 16:16:09 GMT
+365 http request GET https://registry.npmjs.org/react-dom
+366 verbose request uri https://registry.npmjs.org/@docusaurus%2fplugin-pwa
+367 verbose request no auth needed
+368 info attempt registry request try #1 at 6:16:01 PM
+369 verbose etag W/"71777c5dbc528b688311f18f5da7dfbd"
+370 verbose lastModified Fri, 08 Mar 2024 18:17:24 GMT
+371 http request GET https://registry.npmjs.org/@docusaurus%2fplugin-pwa
+372 verbose request uri https://registry.npmjs.org/@docusaurus%2fcore
+373 verbose request no auth needed
+374 info attempt registry request try #1 at 6:16:01 PM
+375 verbose etag W/"38fd44d340d8a4e5ebe730281b9a8333"
+376 verbose lastModified Fri, 08 Mar 2024 18:17:00 GMT
+377 http request GET https://registry.npmjs.org/@docusaurus%2fcore
+378 info git [ 'config', '--get', 'remote.origin.url' ]
+379 warn addRemoteGit Error: Command failed: git config --get remote.origin.url
+379 warn addRemoteGit
+379 warn addRemoteGit     at ChildProcess.exithandler (node:child_process:422:12)
+379 warn addRemoteGit     at ChildProcess.emit (node:events:517:28)
+379 warn addRemoteGit     at maybeClose (node:internal/child_process:1098:16)
+379 warn addRemoteGit     at Socket.<anonymous> (node:internal/child_process:450:11)
+379 warn addRemoteGit     at Socket.emit (node:events:517:28)
+379 warn addRemoteGit     at Pipe.<anonymous> (node:net:350:12)
+379 warn addRemoteGit  ionic-team/docusaurus-plugin-tag-manager resetting remote /Users/zhjjuzi/.npm/_git-remotes/git-github-com-ionic-team-docusaurus-plugin-tag-manager-git-8980817a because of error: Error: Command failed: git config --get remote.origin.url
+379 warn addRemoteGit
+379 warn addRemoteGit     at ChildProcess.exithandler (node:child_process:422:12)
+379 warn addRemoteGit     at ChildProcess.emit (node:events:517:28)
+379 warn addRemoteGit     at maybeClose (node:internal/child_process:1098:16)
+379 warn addRemoteGit     at Socket.<anonymous> (node:internal/child_process:450:11)
+379 warn addRemoteGit     at Socket.emit (node:events:517:28)
+379 warn addRemoteGit     at Pipe.<anonymous> (node:net:350:12) {
+379 warn addRemoteGit   code: 1,
+379 warn addRemoteGit   killed: false,
+379 warn addRemoteGit   signal: null,
+379 warn addRemoteGit   cmd: 'git config --get remote.origin.url'
+379 warn addRemoteGit }
+380 info resetRemote resetting /Users/zhjjuzi/.npm/_git-remotes/git-github-com-ionic-team-docusaurus-plugin-tag-manager-git-8980817a for ionic-team/docusaurus-plugin-tag-manager
+381 silly gentlyRm /Users/zhjjuzi/.npm/_git-remotes/git-github-com-ionic-team-docusaurus-plugin-tag-manager-git-8980817a is being purged
+382 verbose gentlyRm don't care about contents; nuking /Users/zhjjuzi/.npm/_git-remotes/git-github-com-ionic-team-docusaurus-plugin-tag-manager-git-8980817a
+383 silly vacuum-fs purging /Users/zhjjuzi/.npm/_git-remotes/git-github-com-ionic-team-docusaurus-plugin-tag-manager-git-8980817a
+384 verbose request uri https://registry.npmjs.org/typescript
+385 verbose request no auth needed
+386 info attempt registry request try #1 at 6:16:01 PM
+387 verbose etag W/"bbfc07b33ec82f9abe832beadd90c9d9"
+388 verbose lastModified Mon, 11 Mar 2024 07:10:12 GMT
+389 http request GET https://registry.npmjs.org/typescript
+390 silly vacuum-fs quitting because other entries in /Users/zhjjuzi/.npm/_git-remotes
+391 info git [
+391 info git   'clone',
+391 info git   '--template=/Users/zhjjuzi/.npm/_git-remotes/_templates',
+391 info git   '--mirror',
+391 info git   'git://github.com/ionic-team/docusaurus-plugin-tag-manager.git',
+391 info git   '/Users/zhjjuzi/.npm/_git-remotes/git-github-com-ionic-team-docusaurus-plugin-tag-manager-git-8980817a'
+391 info git ]
+392 http 304 https://registry.npmjs.org/@types%2freact
+393 verbose headers {
+393 verbose headers   date: 'Mon, 11 Mar 2024 10:16:01 GMT',
+393 verbose headers   connection: 'keep-alive',
+393 verbose headers   'cf-ray': '862ac9641c7f2109-HKG',
+393 verbose headers   'cf-cache-status': 'HIT',
+393 verbose headers   age: '239',
+393 verbose headers   'cache-control': 'public, max-age=300',
+393 verbose headers   etag: '"9ff785c64e989c6f32ef587d3c7a2062"',
+393 verbose headers   'last-modified': 'Wed, 06 Mar 2024 19:07:11 GMT',
+393 verbose headers   vary: 'Accept-Encoding',
+393 verbose headers   server: 'cloudflare'
+393 verbose headers }
+394 silly get cb [
+394 silly get   304,
+394 silly get   {
+394 silly get     date: 'Mon, 11 Mar 2024 10:16:01 GMT',
+394 silly get     connection: 'keep-alive',
+394 silly get     'cf-ray': '862ac9641c7f2109-HKG',
+394 silly get     'cf-cache-status': 'HIT',
+394 silly get     age: '239',
+394 silly get     'cache-control': 'public, max-age=300',
+394 silly get     etag: '"9ff785c64e989c6f32ef587d3c7a2062"',
+394 silly get     'last-modified': 'Wed, 06 Mar 2024 19:07:11 GMT',
+394 silly get     vary: 'Accept-Encoding',
+394 silly get     server: 'cloudflare'
+394 silly get   }
+394 silly get ]
+395 verbose etag https://registry.npmjs.org/@types%2freact from cache
+396 verbose get saving @types/react to /Users/zhjjuzi/.npm/registry.npmjs.org/_40types_252freact/.cache.json
+397 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+398 http 304 https://registry.npmjs.org/react-copy-to-clipboard
+399 verbose headers {
+399 verbose headers   date: 'Mon, 11 Mar 2024 10:16:01 GMT',
+399 verbose headers   connection: 'keep-alive',
+399 verbose headers   'cf-ray': '862ac9644b9d1071-HKG',
+399 verbose headers   'cf-cache-status': 'HIT',
+399 verbose headers   age: '147',
+399 verbose headers   'cache-control': 'public, max-age=300',
+399 verbose headers   etag: '"2e9809ddf1777701de277b9a549ff2f8"',
+399 verbose headers   'last-modified': 'Fri, 21 Jul 2023 15:49:33 GMT',
+399 verbose headers   vary: 'Accept-Encoding',
+399 verbose headers   server: 'cloudflare'
+399 verbose headers }
+400 silly get cb [
+400 silly get   304,
+400 silly get   {
+400 silly get     date: 'Mon, 11 Mar 2024 10:16:01 GMT',
+400 silly get     connection: 'keep-alive',
+400 silly get     'cf-ray': '862ac9644b9d1071-HKG',
+400 silly get     'cf-cache-status': 'HIT',
+400 silly get     age: '147',
+400 silly get     'cache-control': 'public, max-age=300',
+400 silly get     etag: '"2e9809ddf1777701de277b9a549ff2f8"',
+400 silly get     'last-modified': 'Fri, 21 Jul 2023 15:49:33 GMT',
+400 silly get     vary: 'Accept-Encoding',
+400 silly get     server: 'cloudflare'
+400 silly get   }
+400 silly get ]
+401 verbose etag https://registry.npmjs.org/react-copy-to-clipboard from cache
+402 verbose get saving react-copy-to-clipboard to /Users/zhjjuzi/.npm/registry.npmjs.org/react-copy-to-clipboard/.cache.json
+403 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+404 http 304 https://registry.npmjs.org/prism-react-renderer
+405 verbose headers {
+405 verbose headers   date: 'Mon, 11 Mar 2024 10:16:01 GMT',
+405 verbose headers   connection: 'keep-alive',
+405 verbose headers   'cf-ray': '862ac9644e6c0976-HKG',
+405 verbose headers   'cf-cache-status': 'HIT',
+405 verbose headers   age: '135',
+405 verbose headers   'cache-control': 'public, max-age=300',
+405 verbose headers   etag: '"c4f63942aae8b307a61d4cfc67a04bb8"',
+405 verbose headers   'last-modified': 'Tue, 02 Jan 2024 13:30:55 GMT',
+405 verbose headers   vary: 'Accept-Encoding',
+405 verbose headers   server: 'cloudflare'
+405 verbose headers }
+406 silly get cb [
+406 silly get   304,
+406 silly get   {
+406 silly get     date: 'Mon, 11 Mar 2024 10:16:01 GMT',
+406 silly get     connection: 'keep-alive',
+406 silly get     'cf-ray': '862ac9644e6c0976-HKG',
+406 silly get     'cf-cache-status': 'HIT',
+406 silly get     age: '135',
+406 silly get     'cache-control': 'public, max-age=300',
+406 silly get     etag: '"c4f63942aae8b307a61d4cfc67a04bb8"',
+406 silly get     'last-modified': 'Tue, 02 Jan 2024 13:30:55 GMT',
+406 silly get     vary: 'Accept-Encoding',
+406 silly get     server: 'cloudflare'
+406 silly get   }
+406 silly get ]
+407 verbose etag https://registry.npmjs.org/prism-react-renderer from cache
+408 verbose get saving prism-react-renderer to /Users/zhjjuzi/.npm/registry.npmjs.org/prism-react-renderer/.cache.json
+409 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+410 http 304 https://registry.npmjs.org/@types%2freact-router-dom
+411 verbose headers {
+411 verbose headers   date: 'Mon, 11 Mar 2024 10:16:01 GMT',
+411 verbose headers   connection: 'keep-alive',
+411 verbose headers   'cf-ray': '862ac96439d20eb9-HKG',
+411 verbose headers   'cf-cache-status': 'HIT',
+411 verbose headers   age: '31',
+411 verbose headers   'cache-control': 'public, max-age=300',
+411 verbose headers   etag: '"1d546b30986fb7f6d6734432253533e7"',
+411 verbose headers   'last-modified': 'Mon, 06 Mar 2023 08:43:24 GMT',
+411 verbose headers   vary: 'Accept-Encoding',
+411 verbose headers   server: 'cloudflare'
+411 verbose headers }
+412 silly get cb [
+412 silly get   304,
+412 silly get   {
+412 silly get     date: 'Mon, 11 Mar 2024 10:16:01 GMT',
+412 silly get     connection: 'keep-alive',
+412 silly get     'cf-ray': '862ac96439d20eb9-HKG',
+412 silly get     'cf-cache-status': 'HIT',
+412 silly get     age: '31',
+412 silly get     'cache-control': 'public, max-age=300',
+412 silly get     etag: '"1d546b30986fb7f6d6734432253533e7"',
+412 silly get     'last-modified': 'Mon, 06 Mar 2023 08:43:24 GMT',
+412 silly get     vary: 'Accept-Encoding',
+412 silly get     server: 'cloudflare'
+412 silly get   }
+412 silly get ]
+413 verbose etag https://registry.npmjs.org/@types%2freact-router-dom from cache
+414 verbose get saving @types/react-router-dom to /Users/zhjjuzi/.npm/registry.npmjs.org/_40types_252freact-router-dom/.cache.json
+415 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+416 silly addNameRange number 2 {
+416 silly addNameRange   name: 'react-copy-to-clipboard',
+416 silly addNameRange   range: '>=5.0.4 <6.0.0',
+416 silly addNameRange   hasData: true
+416 silly addNameRange }
+417 silly addNameRange versions [
+417 silly addNameRange   'react-copy-to-clipboard',
+417 silly addNameRange   [
+417 silly addNameRange     '1.0.0', '1.0.1', '1.0.2',
+417 silly addNameRange     '1.0.3', '1.0.4', '2.0.0',
+417 silly addNameRange     '2.0.1', '3.0.0', '3.0.1',
+417 silly addNameRange     '3.0.2', '3.0.3', '3.0.4',
+417 silly addNameRange     '4.0.0', '4.0.1', '4.0.2',
+417 silly addNameRange     '4.1.0', '4.1.1', '4.2.0',
+417 silly addNameRange     '4.2.1', '4.2.2', '4.2.3',
+417 silly addNameRange     '4.3.0', '4.3.1', '5.0.0',
+417 silly addNameRange     '5.0.1', '5.0.2', '5.0.3',
+417 silly addNameRange     '5.0.4', '5.1.0'
+417 silly addNameRange   ]
+417 silly addNameRange ]
+418 silly addNamed react-copy-to-clipboard@5.1.0
+419 verbose addNamed "5.1.0" is a plain semver version for react-copy-to-clipboard
+420 silly addNameRange number 2 { name: '@types/react', range: '>=17.0.43 <18.0.0', hasData: true }
+421 silly addNameRange versions [
+421 silly addNameRange   '@types/react',
+421 silly addNameRange   [
+421 silly addNameRange     '0.14.14-alpha', '0.14.15-alpha', '0.14.20-alpha', '0.14.21-alpha',
+421 silly addNameRange     '0.14.22-alpha', '0.14.23-alpha', '0.14.24-alpha', '0.14.25-alpha',
+421 silly addNameRange     '0.14.26-alpha', '0.14.27',       '0.14.28',       '0.14.29',
+421 silly addNameRange     '0.14.30',       '0.14.31',       '0.14.32',       '0.14.33',
+421 silly addNameRange     '0.14.34',       '0.14.35',       '0.14.36',       '0.14.37',
+421 silly addNameRange     '0.14.38',       '0.14.39',       '0.14.40',       '0.14.41',
+421 silly addNameRange     '0.14.42',       '0.14.43',       '0.14.44',       '0.14.45',
+421 silly addNameRange     '0.14.46',       '0.14.47',       '0.14.48',       '0.14.49',
+421 silly addNameRange     '0.14.50',       '0.14.51',       '0.14.52',       '0.14.53',
+421 silly addNameRange     '0.14.54',       '0.14.55',       '0.14.56',       '0.14.57',
+421 silly addNameRange     '0.0.0',         '15.0.0',        '15.0.1',        '15.0.2',
+421 silly addNameRange     '15.0.3',        '15.0.4',        '15.0.5',        '15.0.6',
+421 silly addNameRange     '15.0.7',        '15.0.8',        '15.0.9',        '15.0.10',
+421 silly addNameRange     '15.0.11',       '15.0.12',       '15.0.13',       '15.0.14',
+421 silly addNameRange     '15.0.15',       '15.0.16',       '15.0.17',       '15.0.18',
+421 silly addNameRange     '15.0.19',       '15.0.20',       '15.0.21',       '15.0.22',
+421 silly addNameRange     '15.0.23',       '15.0.24',       '15.0.25',       '15.0.26',
+421 silly addNameRange     '15.0.27',       '15.0.28',       '15.0.29',       '15.0.30',
+421 silly addNameRange     '15.0.31',       '15.0.32',       '15.0.33',       '15.0.34',
+421 silly addNameRange     '15.0.35',       '15.0.36',       '15.0.37',       '15.0.38',
+421 silly addNameRange     '15.0.39',       '15.6.0',        '16.0.0',        '15.6.1',
+421 silly addNameRange     '16.0.1',        '16.0.2',        '16.0.3',        '16.0.4',
+421 silly addNameRange     '16.0.5',        '15.6.2',        '16.0.6',        '15.6.3',
+421 silly addNameRange     '15.6.4',        '16.0.7',        '16.0.8',        '16.0.9',
+421 silly addNameRange     '16.0.10',       '16.0.11',       '16.0.12',       '16.0.13',
+421 silly addNameRange     ... 470 more items
+421 silly addNameRange   ]
+421 silly addNameRange ]
+422 silly addNamed @types/react@17.0.76
+423 verbose addNamed "17.0.76" is a plain semver version for @types/react
+424 http 304 https://registry.npmjs.org/@types%2freact-helmet
+425 verbose headers {
+425 verbose headers   date: 'Mon, 11 Mar 2024 10:16:02 GMT',
+425 verbose headers   connection: 'keep-alive',
+425 verbose headers   'cf-ray': '862ac9642fd01081-HKG',
+425 verbose headers   'cf-cache-status': 'HIT',
+425 verbose headers   age: '193',
+425 verbose headers   'cache-control': 'public, max-age=300',
+425 verbose headers   etag: '"0eda519237048449b177bcdf4a74c583"',
+425 verbose headers   'last-modified': 'Thu, 21 Dec 2023 21:36:03 GMT',
+425 verbose headers   vary: 'Accept-Encoding',
+425 verbose headers   server: 'cloudflare'
+425 verbose headers }
+426 silly get cb [
+426 silly get   304,
+426 silly get   {
+426 silly get     date: 'Mon, 11 Mar 2024 10:16:02 GMT',
+426 silly get     connection: 'keep-alive',
+426 silly get     'cf-ray': '862ac9642fd01081-HKG',
+426 silly get     'cf-cache-status': 'HIT',
+426 silly get     age: '193',
+426 silly get     'cache-control': 'public, max-age=300',
+426 silly get     etag: '"0eda519237048449b177bcdf4a74c583"',
+426 silly get     'last-modified': 'Thu, 21 Dec 2023 21:36:03 GMT',
+426 silly get     vary: 'Accept-Encoding',
+426 silly get     server: 'cloudflare'
+426 silly get   }
+426 silly get ]
+427 verbose etag https://registry.npmjs.org/@types%2freact-helmet from cache
+428 verbose get saving @types/react-helmet to /Users/zhjjuzi/.npm/registry.npmjs.org/_40types_252freact-helmet/.cache.json
+429 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+430 http 304 https://registry.npmjs.org/clsx
+431 verbose headers {
+431 verbose headers   date: 'Mon, 11 Mar 2024 10:16:02 GMT',
+431 verbose headers   connection: 'keep-alive',
+431 verbose headers   'cf-ray': '862ac9645810b473-HKG',
+431 verbose headers   'cf-cache-status': 'HIT',
+431 verbose headers   age: '165',
+431 verbose headers   'cache-control': 'public, max-age=300',
+431 verbose headers   etag: '"ce7265c215fc63ce307156c1197b5f8a"',
+431 verbose headers   'last-modified': 'Fri, 29 Dec 2023 20:34:40 GMT',
+431 verbose headers   vary: 'Accept-Encoding',
+431 verbose headers   server: 'cloudflare'
+431 verbose headers }
+432 silly get cb [
+432 silly get   304,
+432 silly get   {
+432 silly get     date: 'Mon, 11 Mar 2024 10:16:02 GMT',
+432 silly get     connection: 'keep-alive',
+432 silly get     'cf-ray': '862ac9645810b473-HKG',
+432 silly get     'cf-cache-status': 'HIT',
+432 silly get     age: '165',
+432 silly get     'cache-control': 'public, max-age=300',
+432 silly get     etag: '"ce7265c215fc63ce307156c1197b5f8a"',
+432 silly get     'last-modified': 'Fri, 29 Dec 2023 20:34:40 GMT',
+432 silly get     vary: 'Accept-Encoding',
+432 silly get     server: 'cloudflare'
+432 silly get   }
+432 silly get ]
+433 verbose etag https://registry.npmjs.org/clsx from cache
+434 verbose get saving clsx to /Users/zhjjuzi/.npm/registry.npmjs.org/clsx/.cache.json
+435 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+436 http 304 https://registry.npmjs.org/react-dom
+437 verbose headers {
+437 verbose headers   date: 'Mon, 11 Mar 2024 10:16:02 GMT',
+437 verbose headers   connection: 'keep-alive',
+437 verbose headers   'cf-ray': '862ac9647b14b45b-HKG',
+437 verbose headers   'cf-cache-status': 'HIT',
+437 verbose headers   age: '105',
+437 verbose headers   'cache-control': 'public, max-age=300',
+437 verbose headers   etag: '"0bc438b700063ff8c5ac879533d2da1a"',
+437 verbose headers   'last-modified': 'Fri, 08 Mar 2024 16:16:09 GMT',
+437 verbose headers   vary: 'Accept-Encoding',
+437 verbose headers   server: 'cloudflare'
+437 verbose headers }
+438 silly get cb [
+438 silly get   304,
+438 silly get   {
+438 silly get     date: 'Mon, 11 Mar 2024 10:16:02 GMT',
+438 silly get     connection: 'keep-alive',
+438 silly get     'cf-ray': '862ac9647b14b45b-HKG',
+438 silly get     'cf-cache-status': 'HIT',
+438 silly get     age: '105',
+438 silly get     'cache-control': 'public, max-age=300',
+438 silly get     etag: '"0bc438b700063ff8c5ac879533d2da1a"',
+438 silly get     'last-modified': 'Fri, 08 Mar 2024 16:16:09 GMT',
+438 silly get     vary: 'Accept-Encoding',
+438 silly get     server: 'cloudflare'
+438 silly get   }
+438 silly get ]
+439 verbose etag https://registry.npmjs.org/react-dom from cache
+440 verbose get saving react-dom to /Users/zhjjuzi/.npm/registry.npmjs.org/react-dom/.cache.json
+441 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+442 silly addNameRange number 2 {
+442 silly addNameRange   name: 'prism-react-renderer',
+442 silly addNameRange   range: '>=1.3.1 <2.0.0',
+442 silly addNameRange   hasData: true
+442 silly addNameRange }
+443 silly addNameRange versions [
+443 silly addNameRange   'prism-react-renderer',
+443 silly addNameRange   [
+443 silly addNameRange     '0.0.1',       '0.0.2', '0.0.3',
+443 silly addNameRange     '0.1.0',       '0.1.1', '0.1.2',
+443 silly addNameRange     '0.1.3',       '0.1.4', '0.1.5',
+443 silly addNameRange     '0.1.6',       '0.1.7', '0.2.0-esm.0',
+443 silly addNameRange     '0.2.0-esm.1', '0.2.0', '1.0.0',
+443 silly addNameRange     '1.0.1',       '1.0.2', '1.1.0',
+443 silly addNameRange     '1.1.1',       '1.2.0', '1.2.1',
+443 silly addNameRange     '1.3.0',       '1.3.1', '1.3.2',
+443 silly addNameRange     '1.3.3',       '1.3.4', '1.3.5',
+443 silly addNameRange     '2.0.0',       '2.0.1', '2.0.2',
+443 silly addNameRange     '2.0.3',       '2.0.4', '2.0.5',
+443 silly addNameRange     '2.0.6',       '2.1.0', '2.2.0',
+443 silly addNameRange     '2.3.0',       '2.3.1'
+443 silly addNameRange   ]
+443 silly addNameRange ]
+444 silly addNamed prism-react-renderer@1.3.5
+445 verbose addNamed "1.3.5" is a plain semver version for prism-react-renderer
+446 silly addNameRange number 2 {
+446 silly addNameRange   name: '@types/react-router-dom',
+446 silly addNameRange   range: '>=5.3.3 <6.0.0',
+446 silly addNameRange   hasData: true
+446 silly addNameRange }
+447 silly addNameRange versions [
+447 silly addNameRange   '@types/react-router-dom',
+447 silly addNameRange   [
+447 silly addNameRange     '4.0.0', '4.0.1', '4.0.2', '4.0.3',
+447 silly addNameRange     '4.0.4', '4.0.5', '4.0.6', '4.0.7',
+447 silly addNameRange     '4.0.8', '4.2.0', '4.2.1', '4.2.2',
+447 silly addNameRange     '4.2.3', '4.2.4', '4.2.5', '4.2.6',
+447 silly addNameRange     '4.2.7', '4.3.0', '4.3.1', '4.3.2',
+447 silly addNameRange     '4.3.3', '4.3.4', '4.3.5', '5.1.0',
+447 silly addNameRange     '5.1.1', '5.1.2', '5.1.3', '5.1.4',
+447 silly addNameRange     '5.1.5', '5.1.6', '5.1.7', '5.1.8',
+447 silly addNameRange     '5.1.9', '5.3.0', '5.3.1', '5.3.2',
+447 silly addNameRange     '5.3.3'
+447 silly addNameRange   ]
+447 silly addNameRange ]
+448 silly addNamed @types/react-router-dom@5.3.3
+449 verbose addNamed "5.3.3" is a plain semver version for @types/react-router-dom
+450 silly cache afterAdd react-copy-to-clipboard@5.1.0
+451 verbose afterAdd /Users/zhjjuzi/.npm/react-copy-to-clipboard/5.1.0/package/package.json not in flight; writing
+452 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+453 http 304 https://registry.npmjs.org/@mdx-js%2freact
+454 verbose headers {
+454 verbose headers   date: 'Mon, 11 Mar 2024 10:16:02 GMT',
+454 verbose headers   connection: 'keep-alive',
+454 verbose headers   'cf-ray': '862ac9645a27850c-HKG',
+454 verbose headers   'cf-cache-status': 'HIT',
+454 verbose headers   age: '157',
+454 verbose headers   'cache-control': 'public, max-age=300',
+454 verbose headers   etag: '"8bca77ae612f50be113ad19d51f11722"',
+454 verbose headers   'last-modified': 'Mon, 12 Feb 2024 10:50:29 GMT',
+454 verbose headers   vary: 'Accept-Encoding',
+454 verbose headers   server: 'cloudflare'
+454 verbose headers }
+455 silly get cb [
+455 silly get   304,
+455 silly get   {
+455 silly get     date: 'Mon, 11 Mar 2024 10:16:02 GMT',
+455 silly get     connection: 'keep-alive',
+455 silly get     'cf-ray': '862ac9645a27850c-HKG',
+455 silly get     'cf-cache-status': 'HIT',
+455 silly get     age: '157',
+455 silly get     'cache-control': 'public, max-age=300',
+455 silly get     etag: '"8bca77ae612f50be113ad19d51f11722"',
+455 silly get     'last-modified': 'Mon, 12 Feb 2024 10:50:29 GMT',
+455 silly get     vary: 'Accept-Encoding',
+455 silly get     server: 'cloudflare'
+455 silly get   }
+455 silly get ]
+456 verbose etag https://registry.npmjs.org/@mdx-js%2freact from cache
+457 verbose get saving @mdx-js/react to /Users/zhjjuzi/.npm/registry.npmjs.org/_40mdx-js_252freact/.cache.json
+458 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+459 http 304 https://registry.npmjs.org/@svgr%2fwebpack
+460 verbose headers {
+460 verbose headers   date: 'Mon, 11 Mar 2024 10:16:02 GMT',
+460 verbose headers   connection: 'keep-alive',
+460 verbose headers   'cf-ray': '862ac96449708611-HKG',
+460 verbose headers   'cf-cache-status': 'HIT',
+460 verbose headers   age: '165',
+460 verbose headers   'cache-control': 'public, max-age=300',
+460 verbose headers   etag: '"2df40ff087d1f06bf2adc293d4983455"',
+460 verbose headers   'last-modified': 'Tue, 15 Aug 2023 06:46:25 GMT',
+460 verbose headers   vary: 'Accept-Encoding',
+460 verbose headers   server: 'cloudflare'
+460 verbose headers }
+461 silly get cb [
+461 silly get   304,
+461 silly get   {
+461 silly get     date: 'Mon, 11 Mar 2024 10:16:02 GMT',
+461 silly get     connection: 'keep-alive',
+461 silly get     'cf-ray': '862ac96449708611-HKG',
+461 silly get     'cf-cache-status': 'HIT',
+461 silly get     age: '165',
+461 silly get     'cache-control': 'public, max-age=300',
+461 silly get     etag: '"2df40ff087d1f06bf2adc293d4983455"',
+461 silly get     'last-modified': 'Tue, 15 Aug 2023 06:46:25 GMT',
+461 silly get     vary: 'Accept-Encoding',
+461 silly get     server: 'cloudflare'
+461 silly get   }
+461 silly get ]
+462 verbose etag https://registry.npmjs.org/@svgr%2fwebpack from cache
+463 verbose get saving @svgr/webpack to /Users/zhjjuzi/.npm/registry.npmjs.org/_40svgr_252fwebpack/.cache.json
+464 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+465 silly cache afterAdd @types/react@17.0.76
+466 verbose afterAdd /Users/zhjjuzi/.npm/@types/react/17.0.76/package/package.json not in flight; writing
+467 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+468 silly cache afterAdd @types/react-router-dom@5.3.3
+469 verbose afterAdd /Users/zhjjuzi/.npm/@types/react-router-dom/5.3.3/package/package.json not in flight; writing
+470 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+471 silly cache afterAdd prism-react-renderer@1.3.5
+472 verbose afterAdd /Users/zhjjuzi/.npm/prism-react-renderer/1.3.5/package/package.json not in flight; writing
+473 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+474 silly addNameRange number 2 { name: 'clsx', range: '>=1.1.1 <2.0.0', hasData: true }
+475 silly addNameRange versions [
+475 silly addNameRange   'clsx',
+475 silly addNameRange   [
+475 silly addNameRange     '0.0.1',        '1.0.0',
+475 silly addNameRange     '1.0.1',        '1.0.2',
+475 silly addNameRange     '1.0.3',        '1.0.4',
+475 silly addNameRange     '1.1.0',        '1.1.1',
+475 silly addNameRange     '1.2.0',        '1.2.1',
+475 silly addNameRange     '2.0.0-next.0', '2.0.0',
+475 silly addNameRange     '2.0.1',        '2.1.0'
+475 silly addNameRange   ]
+475 silly addNameRange ]
+476 silly addNamed clsx@1.2.1
+477 verbose addNamed "1.2.1" is a plain semver version for clsx
+478 silly addNameRange number 2 { name: '@types/react-helmet', range: '>=6.1.5 <7.0.0', hasData: true }
+479 silly addNameRange versions [
+479 silly addNameRange   '@types/react-helmet',
+479 silly addNameRange   [
+479 silly addNameRange     '0.0.5-alpha',  '0.0.6-alpha',  '0.0.11-alpha', '0.0.12-alpha',
+479 silly addNameRange     '0.0.13-alpha', '0.0.14-alpha', '0.0.15-alpha', '0.0.16-alpha',
+479 silly addNameRange     '0.0.17-alpha', '0.0.18-alpha', '0.0.19',       '0.0.20',
+479 silly addNameRange     '0.0.21',       '0.0.22',       '0.0.23',       '0.0.24',
+479 silly addNameRange     '0.0.25',       '0.0.26',       '0.0.27',       '0.0.28',
+479 silly addNameRange     '4.0.0',        '5.0.0',        '5.0.1',        '5.0.2',
+479 silly addNameRange     '4.0.1',        '5.0.3',        '4.0.2',        '5.0.4',
+479 silly addNameRange     '5.0.5',        '5.0.6',        '4.0.3',        '5.0.7',
+479 silly addNameRange     '4.0.4',        '5.0.8',        '5.0.9',        '5.0.10',
+479 silly addNameRange     '5.0.11',       '5.0.12',       '5.0.13',       '5.0.14',
+479 silly addNameRange     '5.0.15',       '6.0.0',        '5.0.16',       '6.1.0',
+479 silly addNameRange     '6.1.1',        '6.1.2',        '5.0.17',       '4.0.5',
+479 silly addNameRange     '6.1.3',        '5.0.18',       '4.0.6',        '6.1.4',
+479 silly addNameRange     '5.0.19',       '6.1.5',        '5.0.20',       '6.1.6',
+479 silly addNameRange     '5.0.21',       '6.1.7',        '5.0.22',       '6.1.8',
+479 silly addNameRange     '5.0.23',       '4.0.7',        '6.1.9',        '5.0.24',
+479 silly addNameRange     '4.0.8',        '5.0.25',       '4.0.9',        '6.1.10',
+479 silly addNameRange     '6.1.11',       '5.0.26',       '5.0.27'
+479 silly addNameRange   ]
+479 silly addNameRange ]
+480 silly addNamed @types/react-helmet@6.1.11
+481 verbose addNamed "6.1.11" is a plain semver version for @types/react-helmet
+482 verbose afterAdd /Users/zhjjuzi/.npm/react-copy-to-clipboard/5.1.0/package/package.json written
+483 silly addNameRange number 2 { name: 'react-dom', range: '>=17.0.0 <18.0.0', hasData: true }
+484 silly addNameRange versions [
+484 silly addNameRange   'react-dom',
+484 silly addNameRange   [
+484 silly addNameRange     '0.1.0',                '0.14.0-beta1',         '0.14.0-beta2',
+484 silly addNameRange     '0.14.0-beta3',         '0.14.0-rc1',           '0.14.0',
+484 silly addNameRange     '0.14.1',               '0.14.2',               '0.14.3',
+484 silly addNameRange     '0.14.4',               '0.14.5',               '0.14.6',
+484 silly addNameRange     '0.15.0-alpha.1',       '0.14.7',               '15.0.0-rc.1',
+484 silly addNameRange     '15.0.0-rc.2',          '0.14.8',               '15.0.0',
+484 silly addNameRange     '15.0.1',               '15.0.2-alpha.1',       '15.0.2-alpha.2',
+484 silly addNameRange     '15.0.2-alpha.3',       '15.0.2-alpha.4',       '15.0.2',
+484 silly addNameRange     '15.0.3-alpha.1',       '15.0.3-alpha.2',       '15.1.0-alpha.1',
+484 silly addNameRange     '15.1.0',               '15.2.0-rc.1',          '15.2.0-rc.2',
+484 silly addNameRange     '15.2.0',               '15.2.1',               '15.3.0-rc.1',
+484 silly addNameRange     '15.3.0-rc.2',          '15.3.0-rc.3',          '15.3.0',
+484 silly addNameRange     '15.3.1-rc.1',          '15.3.1-rc.2',          '15.3.1',
+484 silly addNameRange     '15.3.2-rc.1',          '15.3.2',               '15.4.0-rc.1',
+484 silly addNameRange     '15.4.0-rc.2',          '15.4.0-rc.3',          '15.4.0-rc.4',
+484 silly addNameRange     '15.4.0',               '15.4.1',               '15.4.2',
+484 silly addNameRange     '16.0.0-alpha',         '16.0.0-alpha.0',       '16.0.0-alpha.2',
+484 silly addNameRange     '16.0.0-alpha.3',       '16.0.0-alpha.4',       '16.0.0-alpha.5',
+484 silly addNameRange     '16.0.0-alpha.6',       '15.5.0-rc.1',          '16.0.0-alpha.7',
+484 silly addNameRange     '15.5.0-rc.2',          '16.0.0-alpha.8',       '15.5.0',
+484 silly addNameRange     '15.5.1',               '15.5.2',               '15.5.3',
+484 silly addNameRange     '15.5.4',               '16.0.0-alpha.9',       '0.14.9',
+484 silly addNameRange     '16.0.0-alpha.10',      '16.0.0-alpha.11',      '16.0.0-alpha.12',
+484 silly addNameRange     '15.6.0-rc.1',          '16.0.0-alpha.13',      '15.6.0',
+484 silly addNameRange     '15.6.1',               '16.0.0-beta.1',        '16.0.0-beta.2',
+484 silly addNameRange     '16.0.0-beta.3',        '16.0.0-beta.4',        '16.0.0-beta.5',
+484 silly addNameRange     '16.0.0-rc.1',          '16.0.0-rc.2',          '16.0.0-rc.3',
+484 silly addNameRange     '15.6.2',               '16.0.0',               '16.1.0-beta',
+484 silly addNameRange     '16.1.0-beta.1',        '16.1.0-rc',            '16.1.0',
+484 silly addNameRange     '16.1.1',               '16.2.0',               '16.3.0-alpha.0',
+484 silly addNameRange     '16.3.0-alpha.1',       '16.4.0-alpha.7926752', '16.4.0-alpha.3174632',
+484 silly addNameRange     '16.4.0-alpha.0911da3', '16.3.0-alpha.2',       '16.3.0-alpha.3',
+484 silly addNameRange     '16.3.0-rc.0',          '16.3.0',               '16.3.1',
+484 silly addNameRange     '16.3.2',
+484 silly addNameRange     ... 1537 more items
+484 silly addNameRange   ]
+484 silly addNameRange ]
+485 silly addNamed react-dom@17.0.2
+486 verbose addNamed "17.0.2" is a plain semver version for react-dom
+487 verbose afterAdd /Users/zhjjuzi/.npm/@types/react/17.0.76/package/package.json written
+488 silly addNameRange number 2 { name: '@mdx-js/react', range: '>=1.6.22 <2.0.0', hasData: true }
+489 silly addNameRange versions [
+489 silly addNameRange   '@mdx-js/react',
+489 silly addNameRange   [
+489 silly addNameRange     '1.0.0-alpha.12', '1.0.0-alpha.13', '1.0.0-alpha.16', '1.0.0-alpha.17',
+489 silly addNameRange     '1.0.0-rc.0',     '1.0.0-rc.2',     '1.0.0-ci.1',     '1.0.0-rc.3',
+489 silly addNameRange     '1.0.0-ci.0',     '1.0.0-rc.4',     '1.0.0-rc.5',     '1.0.1',
+489 silly addNameRange     '1.0.2',          '1.0.6',          '1.0.15-ci.0',    '1.0.15',
+489 silly addNameRange     '1.0.16-ci.0',    '1.0.16',         '1.0.20-ci.2',    '1.0.20',
+489 silly addNameRange     '1.0.21-ci.7',    '1.0.21',         '1.0.22-ci.5',    '1.0.22',
+489 silly addNameRange     '1.0.23',         '1.0.26',         '1.0.27',         '1.0.27-ci.0',
+489 silly addNameRange     '1.1.1-ci.1',     '1.1.1-ci.5',     '1.1.1',          '1.1.2',
+489 silly addNameRange     '1.1.4',          '1.1.5',          '1.1.6',          '1.2.0',
+489 silly addNameRange     '1.2.1',          '1.2.2',          '1.3.0',          '1.3.1',
+489 silly addNameRange     '1.3.2',          '1.4.0',          '1.4.1',          '1.4.2',
+489 silly addNameRange     '1.4.3',          '1.4.4',          '1.4.5',          '1.5.0',
+489 silly addNameRange     '1.5.1',          '1.5.2',          '1.5.3',          '1.5.4',
+489 silly addNameRange     '1.5.5',          '1.5.6-ci.0',     '1.5.6-alpha.0',  '1.5.6',
+489 silly addNameRange     '1.5.7-alpha.0',  '1.5.7',          '1.5.8-alpha.0',  '1.5.8',
+489 silly addNameRange     '1.5.9-ci.5',     '1.5.9',          '1.6.0',          '1.6.1',
+489 silly addNameRange     '1.6.2',          '1.6.3',          '2.0.0-next.0',   '1.6.4',
+489 silly addNameRange     '2.0.0-next.1',   '1.6.5',          '1.6.6',          '1.6.7',
+489 silly addNameRange     '1.6.8-ci.4',     '1.6.8',          '1.6.9',          '1.6.10',
+489 silly addNameRange     '1.6.11',         '2.0.0-next.3',   '1.6.12',         '1.6.13',
+489 silly addNameRange     '2.0.0-next.4',   '1.6.14',         '2.0.0-next.5',   '2.0.0-next.6',
+489 silly addNameRange     '1.6.15',         '1.6.16',         '2.0.0-next.7',   '1.6.17',
+489 silly addNameRange     '1.6.18',         '2.0.0-next.8',   '1.6.19',         '1.6.20',
+489 silly addNameRange     '1.6.21',         '1.6.22',         '2.0.0-next.9',   '2.0.0-ci.4',
+489 silly addNameRange     '2.0.0-ci.15',    '2.0.0-ci.18',    '2.0.0-ci.35',    '2.0.0-ci.42',
+489 silly addNameRange     ... 17 more items
+489 silly addNameRange   ]
+489 silly addNameRange ]
+490 silly addNamed @mdx-js/react@1.6.22
+491 verbose addNamed "1.6.22" is a plain semver version for @mdx-js/react
+492 silly addNameRange number 2 { name: '@svgr/webpack', range: '>=6.2.1 <7.0.0', hasData: true }
+493 silly addNameRange versions [
+493 silly addNameRange   '@svgr/webpack',
+493 silly addNameRange   [
+493 silly addNameRange     '2.0.0-alpha.26fa501a', '2.0.0',         '2.1.0',
+493 silly addNameRange     '2.1.1',                '2.2.0',         '2.2.1',
+493 silly addNameRange     '2.3.0',                '2.4.0',         '2.4.1',
+493 silly addNameRange     '3.0.0',                '3.1.0',         '4.0.0',
+493 silly addNameRange     '4.0.1',                '4.0.2',         '4.0.3',
+493 silly addNameRange     '4.0.4',                '4.1.0',         '4.2.0',
+493 silly addNameRange     '4.3.0',                '4.3.1',         '4.3.2',
+493 silly addNameRange     '4.3.3',                '5.0.0',         '5.0.1',
+493 silly addNameRange     '5.1.0',                '5.2.0',         '5.3.0',
+493 silly addNameRange     '5.3.1',                '5.4.0',         '5.5.0',
+493 silly addNameRange     '6.0.0-alpha.0',        '6.0.0-alpha.1', '6.0.0-alpha.2',
+493 silly addNameRange     '6.0.0-alpha.3',        '6.0.0-alpha.4', '6.0.0',
+493 silly addNameRange     '6.1.0',                '6.1.1',         '6.1.2',
+493 silly addNameRange     '6.2.0',                '6.2.1',         '6.3.0',
+493 silly addNameRange     '6.3.1',                '6.4.0',         '6.5.0',
+493 silly addNameRange     '6.5.1',                '7.0.0',         '8.0.0',
+493 silly addNameRange     '8.0.1',                '8.1.0'
+493 silly addNameRange   ]
+493 silly addNameRange ]
+494 silly addNamed @svgr/webpack@6.5.1
+495 verbose addNamed "6.5.1" is a plain semver version for @svgr/webpack
+496 verbose afterAdd /Users/zhjjuzi/.npm/prism-react-renderer/1.3.5/package/package.json written
+497 verbose afterAdd /Users/zhjjuzi/.npm/@types/react-router-dom/5.3.3/package/package.json written
+498 silly cache afterAdd clsx@1.2.1
+499 verbose afterAdd /Users/zhjjuzi/.npm/clsx/1.2.1/package/package.json not in flight; writing
+500 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+501 silly cache afterAdd @types/react-helmet@6.1.11
+502 verbose afterAdd /Users/zhjjuzi/.npm/@types/react-helmet/6.1.11/package/package.json not in flight; writing
+503 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+504 silly cache afterAdd react-dom@17.0.2
+505 verbose afterAdd /Users/zhjjuzi/.npm/react-dom/17.0.2/package/package.json not in flight; writing
+506 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+507 silly cache afterAdd @mdx-js/react@1.6.22
+508 verbose afterAdd /Users/zhjjuzi/.npm/@mdx-js/react/1.6.22/package/package.json not in flight; writing
+509 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+510 silly cache afterAdd @svgr/webpack@6.5.1
+511 verbose afterAdd /Users/zhjjuzi/.npm/@svgr/webpack/6.5.1/package/package.json not in flight; writing
+512 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+513 verbose afterAdd /Users/zhjjuzi/.npm/clsx/1.2.1/package/package.json written
+514 verbose afterAdd /Users/zhjjuzi/.npm/@types/react-helmet/6.1.11/package/package.json written
+515 verbose afterAdd /Users/zhjjuzi/.npm/react-dom/17.0.2/package/package.json written
+516 verbose afterAdd /Users/zhjjuzi/.npm/@mdx-js/react/1.6.22/package/package.json written
+517 verbose afterAdd /Users/zhjjuzi/.npm/@svgr/webpack/6.5.1/package/package.json written
+518 http 304 https://registry.npmjs.org/typescript
+519 verbose headers {
+519 verbose headers   date: 'Mon, 11 Mar 2024 10:16:02 GMT',
+519 verbose headers   connection: 'keep-alive',
+519 verbose headers   'cf-ray': '862ac9654ffe10a6-HKG',
+519 verbose headers   'cf-cache-status': 'HIT',
+519 verbose headers   age: '135',
+519 verbose headers   'cache-control': 'public, max-age=300',
+519 verbose headers   etag: '"bbfc07b33ec82f9abe832beadd90c9d9"',
+519 verbose headers   'last-modified': 'Mon, 11 Mar 2024 07:10:12 GMT',
+519 verbose headers   vary: 'Accept-Encoding',
+519 verbose headers   server: 'cloudflare'
+519 verbose headers }
+520 silly get cb [
+520 silly get   304,
+520 silly get   {
+520 silly get     date: 'Mon, 11 Mar 2024 10:16:02 GMT',
+520 silly get     connection: 'keep-alive',
+520 silly get     'cf-ray': '862ac9654ffe10a6-HKG',
+520 silly get     'cf-cache-status': 'HIT',
+520 silly get     age: '135',
+520 silly get     'cache-control': 'public, max-age=300',
+520 silly get     etag: '"bbfc07b33ec82f9abe832beadd90c9d9"',
+520 silly get     'last-modified': 'Mon, 11 Mar 2024 07:10:12 GMT',
+520 silly get     vary: 'Accept-Encoding',
+520 silly get     server: 'cloudflare'
+520 silly get   }
+520 silly get ]
+521 verbose etag https://registry.npmjs.org/typescript from cache
+522 verbose get saving typescript to /Users/zhjjuzi/.npm/registry.npmjs.org/typescript/.cache.json
+523 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+524 http 304 https://registry.npmjs.org/react-qr-svg
+525 verbose headers {
+525 verbose headers   date: 'Mon, 11 Mar 2024 10:16:02 GMT',
+525 verbose headers   connection: 'keep-alive',
+525 verbose headers   'cf-ray': '862ac96449d684a9-HKG',
+525 verbose headers   'cf-cache-status': 'REVALIDATED',
+525 verbose headers   'cache-control': 'public, max-age=300',
+525 verbose headers   etag: '"52b32b196e8a6630bd73925b0c2b7507"',
+525 verbose headers   'last-modified': 'Sun, 26 Jun 2022 07:44:28 GMT',
+525 verbose headers   vary: 'Accept-Encoding',
+525 verbose headers   server: 'cloudflare'
+525 verbose headers }
+526 silly get cb [
+526 silly get   304,
+526 silly get   {
+526 silly get     date: 'Mon, 11 Mar 2024 10:16:02 GMT',
+526 silly get     connection: 'keep-alive',
+526 silly get     'cf-ray': '862ac96449d684a9-HKG',
+526 silly get     'cf-cache-status': 'REVALIDATED',
+526 silly get     'cache-control': 'public, max-age=300',
+526 silly get     etag: '"52b32b196e8a6630bd73925b0c2b7507"',
+526 silly get     'last-modified': 'Sun, 26 Jun 2022 07:44:28 GMT',
+526 silly get     vary: 'Accept-Encoding',
+526 silly get     server: 'cloudflare'
+526 silly get   }
+526 silly get ]
+527 verbose etag https://registry.npmjs.org/react-qr-svg from cache
+528 verbose get saving react-qr-svg to /Users/zhjjuzi/.npm/registry.npmjs.org/react-qr-svg/.cache.json
+529 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+530 silly addNameRange number 2 { name: 'react-qr-svg', range: '>=2.3.0 <3.0.0', hasData: true }
+531 silly addNameRange versions [
+531 silly addNameRange   'react-qr-svg',
+531 silly addNameRange   [
+531 silly addNameRange     '1.0.0', '1.0.1', '1.0.2',
+531 silly addNameRange     '1.0.3', '1.1.0', '1.2.0',
+531 silly addNameRange     '2.0.0', '2.0.1', '2.0.2',
+531 silly addNameRange     '2.1.0', '2.2.0', '2.2.1',
+531 silly addNameRange     '2.2.2', '2.3.0', '2.4.0'
+531 silly addNameRange   ]
+531 silly addNameRange ]
+532 silly addNamed react-qr-svg@2.4.0
+533 verbose addNamed "2.4.0" is a plain semver version for react-qr-svg
+534 warn deprecated react-qr-svg@2.4.0: qrcode.react has SVG support now, please use it instead
+535 silly cache afterAdd react-qr-svg@2.4.0
+536 verbose afterAdd /Users/zhjjuzi/.npm/react-qr-svg/2.4.0/package/package.json not in flight; writing
+537 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+538 verbose afterAdd /Users/zhjjuzi/.npm/react-qr-svg/2.4.0/package/package.json written
+539 silly addNameRange number 2 { name: 'typescript', range: '>=4.6.3 <5.0.0', hasData: true }
+540 silly addNameRange versions [
+540 silly addNameRange   'typescript',
+540 silly addNameRange   [
+540 silly addNameRange     '0.8.0',              '0.8.1',                '0.8.1-1',
+540 silly addNameRange     '0.8.2',              '0.8.3',                '0.9.0',
+540 silly addNameRange     '0.9.0-1',            '0.9.1',                '0.9.1-1',
+540 silly addNameRange     '0.9.5',              '0.9.7',                '1.0.0',
+540 silly addNameRange     '1.0.1',              '1.1.0-1',              '1.3.0',
+540 silly addNameRange     '1.4.1',              '1.5.0-alpha',          '1.5.0-beta',
+540 silly addNameRange     '1.5.3',              '1.6.0-dev.20150722.1', '1.6.0-dev.20150723',
+540 silly addNameRange     '1.6.0-dev.20150724', '1.6.0-dev.20150725',   '1.6.0-dev.20150726',
+540 silly addNameRange     '1.6.0-dev.20150727', '1.6.0-dev.20150728',   '1.6.0-dev.20150729',
+540 silly addNameRange     '1.6.0-dev.20150730', '1.6.0-dev.20150731',   '1.6.0-dev.20150801',
+540 silly addNameRange     '1.6.0-dev.20150802', '1.6.0-dev.20150803',   '1.6.0-dev.20150804',
+540 silly addNameRange     '1.6.0-dev.20150805', '1.6.0-dev.20150806',   '1.6.0-dev.20150807',
+540 silly addNameRange     '1.6.0-dev.20150808', '1.6.0-dev.20150809',   '1.6.0-dev.20150810',
+540 silly addNameRange     '1.6.0-dev.20150811', '1.6.0-dev.20150812',   '1.6.0-dev.20150813',
+540 silly addNameRange     '1.6.0-dev.20150814', '1.6.0-dev.20150815',   '1.6.0-dev.20150816',
+540 silly addNameRange     '1.6.0-dev.20150817', '1.6.0-dev.20150818',   '1.6.0-dev.20150819',
+540 silly addNameRange     '1.6.0-dev.20150820', '1.6.0-dev.20150821',   '1.6.0-dev.20150822',
+540 silly addNameRange     '1.6.0-dev.20150823', '1.6.0-dev.20150824',   '1.6.0-dev.20150825',
+540 silly addNameRange     '1.7.0-dev.20150826', '1.7.0-dev.20150827',   '1.7.0-dev.20150828',
+540 silly addNameRange     '1.7.0-dev.20150829', '1.7.0-dev.20150830',   '1.7.0-dev.20150831',
+540 silly addNameRange     '1.7.0-dev.20150901', '1.7.0-dev.20150902',   '1.6.0-beta',
+540 silly addNameRange     '1.7.0-dev.20150903', '1.7.0-dev.20150904',   '1.6.0-dev.20150905',
+540 silly addNameRange     '1.6.0-dev.20150906', '1.6.0-dev.20150907',   '1.6.0-dev.20150908',
+540 silly addNameRange     '1.6.0-dev.20150909', '1.6.0-dev.20150910',   '1.6.0-dev.20150911',
+540 silly addNameRange     '1.6.0-dev.20150912', '1.6.0-dev.20150913',   '1.6.0-dev.20150914',
+540 silly addNameRange     '1.6.0-dev.20150915', '1.7.0-dev.20150916',   '1.6.2',
+540 silly addNameRange     '1.7.0-dev.20150917', '1.7.0-dev.20150918',   '1.7.0-dev.20150919',
+540 silly addNameRange     '1.7.0-dev.20150920', '1.7.0-dev.20150921',   '1.7.0-dev.20150922',
+540 silly addNameRange     '1.7.0-dev.20150923', '1.7.0-dev.20150924',   '1.7.0-dev.20150925',
+540 silly addNameRange     '1.7.0-dev.20150926', '1.7.0-dev.20150927',   '1.7.0-dev.20150928',
+540 silly addNameRange     '1.7.0-dev.20150929', '1.7.0-dev.20150930',   '1.7.0-dev.20151001',
+540 silly addNameRange     '1.7.0-dev.20151002', '1.7.0-dev.20151003',   '1.7.0-dev.20151004',
+540 silly addNameRange     '1.7.0-dev.20151005', '1.7.0-dev.20151006',   '1.7.0-dev.20151014',
+540 silly addNameRange     '1.7.0-dev.20151015',
+540 silly addNameRange     ... 2899 more items
+540 silly addNameRange   ]
+540 silly addNameRange ]
+541 silly addNamed typescript@4.9.5
+542 verbose addNamed "4.9.5" is a plain semver version for typescript
+543 silly cache afterAdd typescript@4.9.5
+544 verbose afterAdd /Users/zhjjuzi/.npm/typescript/4.9.5/package/package.json not in flight; writing
+545 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+546 verbose afterAdd /Users/zhjjuzi/.npm/typescript/4.9.5/package/package.json written
+547 http 304 https://registry.npmjs.org/react
+548 verbose headers {
+548 verbose headers   date: 'Mon, 11 Mar 2024 10:16:02 GMT',
+548 verbose headers   connection: 'keep-alive',
+548 verbose headers   'cf-ray': '862ac9646d998482-HKG',
+548 verbose headers   'cf-cache-status': 'REVALIDATED',
+548 verbose headers   'cache-control': 'public, max-age=300',
+548 verbose headers   etag: '"54b1678d25e8432d7c7f8ea63efedc3f"',
+548 verbose headers   'last-modified': 'Sun, 10 Mar 2024 14:50:23 GMT',
+548 verbose headers   vary: 'Accept-Encoding',
+548 verbose headers   server: 'cloudflare'
+548 verbose headers }
+549 silly get cb [
+549 silly get   304,
+549 silly get   {
+549 silly get     date: 'Mon, 11 Mar 2024 10:16:02 GMT',
+549 silly get     connection: 'keep-alive',
+549 silly get     'cf-ray': '862ac9646d998482-HKG',
+549 silly get     'cf-cache-status': 'REVALIDATED',
+549 silly get     'cache-control': 'public, max-age=300',
+549 silly get     etag: '"54b1678d25e8432d7c7f8ea63efedc3f"',
+549 silly get     'last-modified': 'Sun, 10 Mar 2024 14:50:23 GMT',
+549 silly get     vary: 'Accept-Encoding',
+549 silly get     server: 'cloudflare'
+549 silly get   }
+549 silly get ]
+550 verbose etag https://registry.npmjs.org/react from cache
+551 verbose get saving react to /Users/zhjjuzi/.npm/registry.npmjs.org/react/.cache.json
+552 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+553 http 304 https://registry.npmjs.org/redocusaurus
+554 verbose headers {
+554 verbose headers   date: 'Mon, 11 Mar 2024 10:16:02 GMT',
+554 verbose headers   connection: 'keep-alive',
+554 verbose headers   'cf-ray': '862ac9644e8d0f28-HKG',
+554 verbose headers   'cf-cache-status': 'REVALIDATED',
+554 verbose headers   'cache-control': 'public, max-age=300',
+554 verbose headers   etag: '"d9e1f346de5c67ac0ac52e0a857f64b0"',
+554 verbose headers   'last-modified': 'Sat, 09 Mar 2024 00:16:51 GMT',
+554 verbose headers   vary: 'Accept-Encoding',
+554 verbose headers   server: 'cloudflare'
+554 verbose headers }
+555 silly get cb [
+555 silly get   304,
+555 silly get   {
+555 silly get     date: 'Mon, 11 Mar 2024 10:16:02 GMT',
+555 silly get     connection: 'keep-alive',
+555 silly get     'cf-ray': '862ac9644e8d0f28-HKG',
+555 silly get     'cf-cache-status': 'REVALIDATED',
+555 silly get     'cache-control': 'public, max-age=300',
+555 silly get     etag: '"d9e1f346de5c67ac0ac52e0a857f64b0"',
+555 silly get     'last-modified': 'Sat, 09 Mar 2024 00:16:51 GMT',
+555 silly get     vary: 'Accept-Encoding',
+555 silly get     server: 'cloudflare'
+555 silly get   }
+555 silly get ]
+556 verbose etag https://registry.npmjs.org/redocusaurus from cache
+557 verbose get saving redocusaurus to /Users/zhjjuzi/.npm/registry.npmjs.org/redocusaurus/.cache.json
+558 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+559 silly addNameRange number 2 { name: 'redocusaurus', range: '>=1.0.1 <2.0.0', hasData: true }
+560 silly addNameRange versions [
+560 silly addNameRange   'redocusaurus',
+560 silly addNameRange   [
+560 silly addNameRange     '0.0.0',
+560 silly addNameRange     '0.1.0',
+560 silly addNameRange     '0.2.0',
+560 silly addNameRange     '0.2.1',
+560 silly addNameRange     '0.2.2',
+560 silly addNameRange     '0.3.0',
+560 silly addNameRange     '0.3.1',
+560 silly addNameRange     '0.3.2',
+560 silly addNameRange     '0.3.3',
+560 silly addNameRange     '0.3.4',
+560 silly addNameRange     '0.4.0-beta.0',
+560 silly addNameRange     '0.4.0',
+560 silly addNameRange     '0.4.1',
+560 silly addNameRange     '0.4.3',
+560 silly addNameRange     '0.4.4',
+560 silly addNameRange     '0.4.5',
+560 silly addNameRange     '0.4.6',
+560 silly addNameRange     '0.5.0-next.0',
+560 silly addNameRange     '0.5.0',
+560 silly addNameRange     '0.5.1',
+560 silly addNameRange     '0.6.0',
+560 silly addNameRange     '0.7.0',
+560 silly addNameRange     '0.8.0',
+560 silly addNameRange     '0.9.0',
+560 silly addNameRange     '0.9.1',
+560 silly addNameRange     '0.9.2',
+560 silly addNameRange     '0.0.0-beta-20220313063805',
+560 silly addNameRange     '0.0.0-beta-20220314034003',
+560 silly addNameRange     '0.0.0-beta-20220315034112',
+560 silly addNameRange     '0.0.0-beta-20220315035651',
+560 silly addNameRange     '1.0.0-beta-20220315035651',
+560 silly addNameRange     '1.0.0-beta-20220315043813',
+560 silly addNameRange     '1.0.0',
+560 silly addNameRange     '1.0.1',
+560 silly addNameRange     '1.0.2',
+560 silly addNameRange     '1.0.3',
+560 silly addNameRange     '1.0.4',
+560 silly addNameRange     '1.1.0',
+560 silly addNameRange     '1.1.1',
+560 silly addNameRange     '1.1.2',
+560 silly addNameRange     '1.1.3',
+560 silly addNameRange     '1.2.0',
+560 silly addNameRange     '1.2.1',
+560 silly addNameRange     '0.0.0-beta-20220617175847',
+560 silly addNameRange     '0.0.0-beta-20220617180235',
+560 silly addNameRange     '1.2.2',
+560 silly addNameRange     '0.0.0-test-20220617185806',
+560 silly addNameRange     '0.0.0-test-20220617190704',
+560 silly addNameRange     '0.0.0-test-20220711040249',
+560 silly addNameRange     '0.0.0-test-20220711040852',
+560 silly addNameRange     '1.2.3',
+560 silly addNameRange     '0.0.0-test-20220715175949',
+560 silly addNameRange     '1.3.0',
+560 silly addNameRange     '1.4.0',
+560 silly addNameRange     '0.0.0-test-20230209211755',
+560 silly addNameRange     '0.0.0-test-20230209230357',
+560 silly addNameRange     '0.0.0-test-20230209230633',
+560 silly addNameRange     '0.0.0-test-20230209233420',
+560 silly addNameRange     '0.0.0-test-20230209234843',
+560 silly addNameRange     '1.5.0',
+560 silly addNameRange     '0.0.0-test-20230210003204',
+560 silly addNameRange     '1.5.1',
+560 silly addNameRange     '0.0.0-test-20230210212834',
+560 silly addNameRange     '1.6.0',
+560 silly addNameRange     '1.6.1',
+560 silly addNameRange     '0.0.0-test-20230417215405',
+560 silly addNameRange     '1.6.2',
+560 silly addNameRange     '1.6.3',
+560 silly addNameRange     '1.6.4',
+560 silly addNameRange     '0.0.0-test-20231104142351',
+560 silly addNameRange     '0.0.0-test-20231104152746',
+560 silly addNameRange     '0.0.0-test-20231104164659',
+560 silly addNameRange     '2.0.0',
+560 silly addNameRange     '2.0.1',
+560 silly addNameRange     '0.0.0-test-20240307231728',
+560 silly addNameRange     '0.0.0-test-20240307232550',
+560 silly addNameRange     '0.0.0-test-20240307232721',
+560 silly addNameRange     '0.0.0-test-20240307235002',
+560 silly addNameRange     '0.0.0-test-20240307235136',
+560 silly addNameRange     '2.0.2',
+560 silly addNameRange     '0.0.0-test-20240308190745',
+560 silly addNameRange     '0.0.0-test-20240309000205',
+560 silly addNameRange     '0.0.0-test-20240309001640'
+560 silly addNameRange   ]
+560 silly addNameRange ]
+561 silly addNamed redocusaurus@1.6.4
+562 verbose addNamed "1.6.4" is a plain semver version for redocusaurus
+563 silly cache afterAdd redocusaurus@1.6.4
+564 verbose afterAdd /Users/zhjjuzi/.npm/redocusaurus/1.6.4/package/package.json not in flight; writing
+565 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+566 verbose afterAdd /Users/zhjjuzi/.npm/redocusaurus/1.6.4/package/package.json written
+567 silly addNameRange number 2 { name: 'react', range: '>=17.0.0 <18.0.0', hasData: true }
+568 silly addNameRange versions [
+568 silly addNameRange   'react',
+568 silly addNameRange   [
+568 silly addNameRange     '0.0.1',          '0.0.2',          '0.0.3',          '0.1.2',
+568 silly addNameRange     '0.2.0',          '0.2.1',          '0.2.2',          '0.2.3',
+568 silly addNameRange     '0.2.4',          '0.2.5',          '0.2.6',          '0.3.0',
+568 silly addNameRange     '0.3.4',          '0.3.5',          '0.5.0',          '0.5.1',
+568 silly addNameRange     '0.5.2',          '0.6.0',          '0.6.1',          '0.6.2',
+568 silly addNameRange     '0.6.3',          '0.7.0',          '0.7.1',          '0.8.0',
+568 silly addNameRange     '0.9.0-rc1',      '0.9.0',          '0.10.0-rc1',     '0.10.0',
+568 silly addNameRange     '0.11.0-rc1',     '0.11.0',         '0.11.1',         '0.11.2',
+568 silly addNameRange     '0.12.0-rc1',     '0.12.0',         '0.12.1',         '0.12.2',
+568 silly addNameRange     '0.13.0-alpha.1', '0.13.0-alpha.2', '0.13.0-beta.1',  '0.13.0-beta.2',
+568 silly addNameRange     '0.13.0-rc1',     '0.13.0-rc2',     '0.13.0',         '0.13.1',
+568 silly addNameRange     '0.13.2',         '0.13.3',         '0.14.0-alpha1',  '0.14.0-alpha2',
+568 silly addNameRange     '0.14.0-alpha3',  '0.14.0-beta1',   '0.14.0-beta2',   '0.14.0-beta3',
+568 silly addNameRange     '0.14.0-rc1',     '0.14.0',         '0.14.1',         '0.14.2',
+568 silly addNameRange     '0.14.3',         '0.14.4',         '0.14.5',         '0.14.6',
+568 silly addNameRange     '0.15.0-alpha.1', '0.14.7',         '15.0.0-rc.1',    '15.0.0-rc.2',
+568 silly addNameRange     '0.14.8',         '15.0.0',         '15.0.1',         '15.0.2-alpha.1',
+568 silly addNameRange     '15.0.2-alpha.2', '15.0.2-alpha.3', '15.0.2-alpha.4', '15.0.2',
+568 silly addNameRange     '15.0.3-alpha.1', '15.0.3-alpha.2', '15.1.0-alpha.1', '15.1.0',
+568 silly addNameRange     '15.2.0-rc.1',    '15.2.0-rc.2',    '15.2.0',         '15.2.1',
+568 silly addNameRange     '15.3.0-rc.1',    '15.3.0-rc.2',    '15.3.0-rc.3',    '15.3.0',
+568 silly addNameRange     '15.3.1-rc.1',    '15.3.1-rc.2',    '15.3.1',         '15.3.2-rc.1',
+568 silly addNameRange     '15.3.2',         '15.4.0-rc.1',    '15.4.0-rc.2',    '15.4.0-rc.3',
+568 silly addNameRange     '15.4.0-rc.4',    '15.4.0',         '15.4.1',         '15.4.2',
+568 silly addNameRange     '16.0.0-alpha',   '16.0.0-alpha.0', '16.0.0-alpha.2', '16.0.0-alpha.3',
+568 silly addNameRange     ... 1582 more items
+568 silly addNameRange   ]
+568 silly addNameRange ]
+569 silly addNamed react@17.0.2
+570 verbose addNamed "17.0.2" is a plain semver version for react
+571 silly cache afterAdd react@17.0.2
+572 verbose afterAdd /Users/zhjjuzi/.npm/react/17.0.2/package/package.json not in flight; writing
+573 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+574 verbose afterAdd /Users/zhjjuzi/.npm/react/17.0.2/package/package.json written
+575 http 304 https://registry.npmjs.org/@easyops-cn%2fdocusaurus-search-local
+576 verbose headers {
+576 verbose headers   date: 'Mon, 11 Mar 2024 10:16:03 GMT',
+576 verbose headers   connection: 'keep-alive',
+576 verbose headers   'cf-ray': '862ac96448ad1fc2-HKG',
+576 verbose headers   'cf-cache-status': 'REVALIDATED',
+576 verbose headers   'cache-control': 'public, max-age=300',
+576 verbose headers   etag: '"60fe3085f922dc572e2a923835e2c46e"',
+576 verbose headers   'last-modified': 'Sat, 23 Dec 2023 06:25:17 GMT',
+576 verbose headers   vary: 'Accept-Encoding',
+576 verbose headers   server: 'cloudflare'
+576 verbose headers }
+577 silly get cb [
+577 silly get   304,
+577 silly get   {
+577 silly get     date: 'Mon, 11 Mar 2024 10:16:03 GMT',
+577 silly get     connection: 'keep-alive',
+577 silly get     'cf-ray': '862ac96448ad1fc2-HKG',
+577 silly get     'cf-cache-status': 'REVALIDATED',
+577 silly get     'cache-control': 'public, max-age=300',
+577 silly get     etag: '"60fe3085f922dc572e2a923835e2c46e"',
+577 silly get     'last-modified': 'Sat, 23 Dec 2023 06:25:17 GMT',
+577 silly get     vary: 'Accept-Encoding',
+577 silly get     server: 'cloudflare'
+577 silly get   }
+577 silly get ]
+578 verbose etag https://registry.npmjs.org/@easyops-cn%2fdocusaurus-search-local from cache
+579 verbose get saving @easyops-cn/docusaurus-search-local to /Users/zhjjuzi/.npm/registry.npmjs.org/_40easyops-cn_252fdocusaurus-search-local/.cache.json
+580 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+581 http 304 https://registry.npmjs.org/@docusaurus%2fplugin-pwa
+582 verbose headers {
+582 verbose headers   date: 'Mon, 11 Mar 2024 10:16:03 GMT',
+582 verbose headers   connection: 'keep-alive',
+582 verbose headers   'cf-ray': '862ac9648c680999-HKG',
+582 verbose headers   'cf-cache-status': 'REVALIDATED',
+582 verbose headers   'cache-control': 'public, max-age=300',
+582 verbose headers   etag: '"71777c5dbc528b688311f18f5da7dfbd"',
+582 verbose headers   'last-modified': 'Fri, 08 Mar 2024 18:17:24 GMT',
+582 verbose headers   vary: 'Accept-Encoding',
+582 verbose headers   server: 'cloudflare'
+582 verbose headers }
+583 silly get cb [
+583 silly get   304,
+583 silly get   {
+583 silly get     date: 'Mon, 11 Mar 2024 10:16:03 GMT',
+583 silly get     connection: 'keep-alive',
+583 silly get     'cf-ray': '862ac9648c680999-HKG',
+583 silly get     'cf-cache-status': 'REVALIDATED',
+583 silly get     'cache-control': 'public, max-age=300',
+583 silly get     etag: '"71777c5dbc528b688311f18f5da7dfbd"',
+583 silly get     'last-modified': 'Fri, 08 Mar 2024 18:17:24 GMT',
+583 silly get     vary: 'Accept-Encoding',
+583 silly get     server: 'cloudflare'
+583 silly get   }
+583 silly get ]
+584 verbose etag https://registry.npmjs.org/@docusaurus%2fplugin-pwa from cache
+585 verbose get saving @docusaurus/plugin-pwa to /Users/zhjjuzi/.npm/registry.npmjs.org/_40docusaurus_252fplugin-pwa/.cache.json
+586 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+587 silly addNameRange number 2 {
+587 silly addNameRange   name: '@easyops-cn/docusaurus-search-local',
+587 silly addNameRange   range: '>=0.33.6 <0.34.0',
+587 silly addNameRange   hasData: true
+587 silly addNameRange }
+588 silly addNameRange versions [
+588 silly addNameRange   '@easyops-cn/docusaurus-search-local',
+588 silly addNameRange   [
+588 silly addNameRange     '0.4.0',          '0.4.1',          '0.4.2',  '0.4.3',
+588 silly addNameRange     '0.4.4',          '0.4.5',          '0.5.1',  '0.5.2',
+588 silly addNameRange     '0.5.3',          '0.6.0',          '0.6.1',  '0.6.2',
+588 silly addNameRange     '0.7.0',          '0.7.1',          '0.8.0',  '0.9.0',
+588 silly addNameRange     '0.9.2',          '0.9.3',          '0.9.4',  '0.10.0',
+588 silly addNameRange     '0.10.1',         '0.11.0',         '0.11.1', '0.11.2',
+588 silly addNameRange     '0.12.0',         '0.13.0',         '0.13.1', '0.14.0',
+588 silly addNameRange     '0.14.1',         '0.14.2',         '0.14.4', '0.15.0',
+588 silly addNameRange     '0.15.1',         '0.16.0',         '0.16.1', '0.16.2',
+588 silly addNameRange     '0.16.3',         '0.17.0',         '0.18.0', '0.18.1',
+588 silly addNameRange     '0.19.0',         '0.19.1',         '0.20.0', '0.21.0',
+588 silly addNameRange     '0.21.1',         '0.21.2',         '0.21.3', '0.21.4',
+588 silly addNameRange     '0.22.0',         '0.23.0',         '0.23.1', '0.23.2',
+588 silly addNameRange     '0.23.3',         '0.24.0',         '0.24.1', '0.25.0',
+588 silly addNameRange     '0.26.0',         '0.26.1',         '0.27.0', '0.27.1',
+588 silly addNameRange     '0.28.0-alpha.0', '0.28.0-alpha.1', '0.27.2', '0.28.0',
+588 silly addNameRange     '0.29.0',         '0.29.1',         '0.29.2', '0.29.3',
+588 silly addNameRange     '0.29.4',         '0.30.0',         '0.30.1', '0.30.2',
+588 silly addNameRange     '0.31.0',         '0.32.0',         '0.32.1', '0.33.0',
+588 silly addNameRange     '0.33.1',         '0.33.2',         '0.33.3', '0.33.4',
+588 silly addNameRange     '0.33.5',         '0.33.6',         '0.34.0', '0.35.0',
+588 silly addNameRange     '0.36.0',         '0.37.1',         '0.37.2', '0.37.3',
+588 silly addNameRange     '0.37.4',         '0.37.5',         '0.38.0', '0.38.1',
+588 silly addNameRange     '0.39.0',         '0.40.0',         '0.40.1'
+588 silly addNameRange   ]
+588 silly addNameRange ]
+589 silly addNamed @easyops-cn/docusaurus-search-local@0.33.6
+590 verbose addNamed "0.33.6" is a plain semver version for @easyops-cn/docusaurus-search-local
+591 silly cache afterAdd @easyops-cn/docusaurus-search-local@0.33.6
+592 verbose afterAdd /Users/zhjjuzi/.npm/@easyops-cn/docusaurus-search-local/0.33.6/package/package.json not in flight; writing
+593 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+594 verbose afterAdd /Users/zhjjuzi/.npm/@easyops-cn/docusaurus-search-local/0.33.6/package/package.json written
+595 silly addNameRange number 2 {
+595 silly addNameRange   name: '@docusaurus/plugin-pwa',
+595 silly addNameRange   range: '>=2.2.0 <3.0.0',
+595 silly addNameRange   hasData: true
+595 silly addNameRange }
+596 silly addNameRange versions [
+596 silly addNameRange   '@docusaurus/plugin-pwa',
+596 silly addNameRange   [
+596 silly addNameRange     '2.0.0-alpha.59',        '2.0.0-alpha.60',        '2.0.0-alpha.61',
+596 silly addNameRange     '2.0.0-alpha.62',        '2.0.0-alpha.63',        '2.0.0-alpha.64',
+596 silly addNameRange     '2.0.0-alpha.65',        '2.0.0-alpha.66',        '2.0.0-alpha.68',
+596 silly addNameRange     '2.0.0-alpha.69',        '2.0.0-alpha.bd62be93d', '2.0.0-alpha.378053ac5',
+596 silly addNameRange     '2.0.0-alpha.b20d016bc', '2.0.0-alpha.e90749c6f', '2.0.0-alpha.99e3ee796',
+596 silly addNameRange     '2.0.0-alpha.d61754b3d', '2.0.0-alpha.f37987f32', '2.0.0-alpha.9ad02ca46',
+596 silly addNameRange     '2.0.0-alpha.20114f5e0', '2.0.0-alpha.70dece09e', '2.0.0-alpha.415a7973f',
+596 silly addNameRange     '2.0.0-alpha.c4aeb1982', '2.0.0-alpha.ec297cead', '2.0.0-alpha.08f6734bf',
+596 silly addNameRange     '2.0.0-alpha.9fd8a3c69', '2.0.0-alpha.e00e54a69', '2.0.0-alpha.1f3f569f3',
+596 silly addNameRange     '2.0.0-alpha.3e12e951b', '2.0.0-alpha.b14b9c88f', '2.0.0-alpha.656c04e1d',
+596 silly addNameRange     '2.0.0-alpha.dd8f3257a', '2.0.0-alpha.0b0580659', '2.0.0-alpha.b11c24b75',
+596 silly addNameRange     '2.0.0-alpha.41ef333e4', '2.0.0-alpha.37c95e668', '2.0.0-alpha.3570aa06c',
+596 silly addNameRange     '2.0.0-alpha.aff656182', '2.0.0-alpha.1db0277d3', '2.0.0-alpha.b79568fff',
+596 silly addNameRange     '2.0.0-alpha.6703f8420', '2.0.0-alpha.df47c1770', '2.0.0-alpha.70',
+596 silly addNameRange     '2.0.0-alpha.3fc29f4b1', '2.0.0-alpha.ef49c2be7', '2.0.0-alpha.b133e2def',
+596 silly addNameRange     '2.0.0-alpha.2fb766ba7', '2.0.0-alpha.83a5240f5', '2.0.0-alpha.853e29dbd',
+596 silly addNameRange     '2.0.0-alpha.b5c46bd1d', '2.0.0-alpha.6ce1230c1', '2.0.0-alpha.41ac4468d',
+596 silly addNameRange     '2.0.0-alpha.601c8fe68', '2.0.0-alpha.88a6f5665', '2.0.0-alpha.141d062c3',
+596 silly addNameRange     '2.0.0-alpha.5944226eb', '2.0.0-alpha.9fdac1a0d', '2.0.0-alpha.1e1860681',
+596 silly addNameRange     '2.0.0-alpha.869e118e4', '2.0.0-alpha.0bb5e547b', '2.0.0-alpha.d2d287264',
+596 silly addNameRange     '2.0.0-alpha.f48d435ce', '2.0.0-alpha.8a9dfcf96', '2.0.0-alpha.5dfa66528',
+596 silly addNameRange     '2.0.0-alpha.c4cbe8ec7', '2.0.0-alpha.827de9a84', '2.0.0-alpha.2ba55b0f1',
+596 silly addNameRange     '2.0.0-alpha.a406a3c9a', '2.0.0-alpha.66cc7364c', '2.0.0-alpha.0252d01eb',
+596 silly addNameRange     '2.0.0-alpha.0a75ed5d4', '2.0.0-alpha.a8ee7fd3e', '2.0.0-alpha.d6d30a39f',
+596 silly addNameRange     '2.0.0-alpha.a36abd8a8', '2.0.0-alpha.869ebe7b5', '2.0.0-alpha.22e231904',
+596 silly addNameRange     '2.0.0-alpha.b49ff3241', '2.0.0-alpha.95f81d2a4', '2.0.0-alpha.6917eb950',
+596 silly addNameRange     '2.0.0-alpha.beddecb27', '2.0.0-alpha.3031c47c3', '2.0.0-alpha.15c50e2ec',
+596 silly addNameRange     '2.0.0-alpha.be7b5dca7', '2.0.0-alpha.9c4bf4e13', '2.0.0-alpha.140bfbfd9',
+596 silly addNameRange     '2.0.0-alpha.39edfe35a', '2.0.0-alpha.d801ce50f', '2.0.0-alpha.09284187f',
+596 silly addNameRange     '2.0.0-alpha.fd17476c3', '2.0.0-alpha.d22039c20', '2.0.0-alpha.3b64aa610',
+596 silly addNameRange     '2.0.0-alpha.f5494af21', '2.0.0-alpha.98453ebda', '2.0.0-alpha.d25e0f4d0',
+596 silly addNameRange     '2.0.0-alpha.3f6e04380', '2.0.0-alpha.823d0fe3c', '2.0.0-alpha.ab7951571',
+596 silly addNameRange     '2.0.0-alpha.d63a77d23', '2.0.0-alpha.dbfa256a7', '2.0.0-alpha.a6f771571',
+596 silly addNameRange     '2.0.0-alpha.5871d1b41',
+596 silly addNameRange     ... 1490 more items
+596 silly addNameRange   ]
+596 silly addNameRange ]
+597 silly addNamed @docusaurus/plugin-pwa@2.4.3
+598 verbose addNamed "2.4.3" is a plain semver version for @docusaurus/plugin-pwa
+599 silly cache afterAdd @docusaurus/plugin-pwa@2.4.3
+600 verbose afterAdd /Users/zhjjuzi/.npm/@docusaurus/plugin-pwa/2.4.3/package/package.json not in flight; writing
+601 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+602 verbose afterAdd /Users/zhjjuzi/.npm/@docusaurus/plugin-pwa/2.4.3/package/package.json written
+603 http 304 https://registry.npmjs.org/@docusaurus%2fmodule-type-aliases
+604 verbose headers {
+604 verbose headers   date: 'Mon, 11 Mar 2024 10:16:03 GMT',
+604 verbose headers   connection: 'keep-alive',
+604 verbose headers   'cf-ray': '862ac9644a9185f2-HKG',
+604 verbose headers   'cf-cache-status': 'REVALIDATED',
+604 verbose headers   'cache-control': 'public, max-age=300',
+604 verbose headers   etag: '"998f4e3ec5f4de63a4ad77f9524e8cfd"',
+604 verbose headers   'last-modified': 'Fri, 08 Mar 2024 18:16:40 GMT',
+604 verbose headers   vary: 'Accept-Encoding',
+604 verbose headers   server: 'cloudflare'
+604 verbose headers }
+605 silly get cb [
+605 silly get   304,
+605 silly get   {
+605 silly get     date: 'Mon, 11 Mar 2024 10:16:03 GMT',
+605 silly get     connection: 'keep-alive',
+605 silly get     'cf-ray': '862ac9644a9185f2-HKG',
+605 silly get     'cf-cache-status': 'REVALIDATED',
+605 silly get     'cache-control': 'public, max-age=300',
+605 silly get     etag: '"998f4e3ec5f4de63a4ad77f9524e8cfd"',
+605 silly get     'last-modified': 'Fri, 08 Mar 2024 18:16:40 GMT',
+605 silly get     vary: 'Accept-Encoding',
+605 silly get     server: 'cloudflare'
+605 silly get   }
+605 silly get ]
+606 verbose etag https://registry.npmjs.org/@docusaurus%2fmodule-type-aliases from cache
+607 verbose get saving @docusaurus/module-type-aliases to /Users/zhjjuzi/.npm/registry.npmjs.org/_40docusaurus_252fmodule-type-aliases/.cache.json
+608 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+609 silly addNameRange number 2 {
+609 silly addNameRange   name: '@docusaurus/module-type-aliases',
+609 silly addNameRange   range: '>=2.2.0 <3.0.0',
+609 silly addNameRange   hasData: true
+609 silly addNameRange }
+610 silly addNameRange versions [
+610 silly addNameRange   '@docusaurus/module-type-aliases',
+610 silly addNameRange   [
+610 silly addNameRange     '2.0.0-alpha.51',        '2.0.0-alpha.52',        '2.0.0-alpha.53',
+610 silly addNameRange     '2.0.0-alpha.54',        '2.0.0-alpha.55',        '2.0.0-alpha.56',
+610 silly addNameRange     '2.0.0-alpha.57',        '2.0.0-alpha.58',        '2.0.0-alpha.59',
+610 silly addNameRange     '2.0.0-alpha.60',        '2.0.0-alpha.61',        '2.0.0-alpha.62',
+610 silly addNameRange     '2.0.0-alpha.63',        '2.0.0-alpha.64',        '2.0.0-alpha.65',
+610 silly addNameRange     '2.0.0-alpha.66',        '2.0.0-alpha.67',        '2.0.0-alpha.68',
+610 silly addNameRange     '2.0.0-alpha.69',        '2.0.0-alpha.bd62be93d', '2.0.0-alpha.378053ac5',
+610 silly addNameRange     '2.0.0-alpha.b20d016bc', '2.0.0-alpha.e90749c6f', '2.0.0-alpha.99e3ee796',
+610 silly addNameRange     '2.0.0-alpha.d61754b3d', '2.0.0-alpha.f37987f32', '2.0.0-alpha.9ad02ca46',
+610 silly addNameRange     '2.0.0-alpha.20114f5e0', '2.0.0-alpha.70dece09e', '2.0.0-alpha.415a7973f',
+610 silly addNameRange     '2.0.0-alpha.c4aeb1982', '2.0.0-alpha.ec297cead', '2.0.0-alpha.08f6734bf',
+610 silly addNameRange     '2.0.0-alpha.9fd8a3c69', '2.0.0-alpha.e00e54a69', '2.0.0-alpha.1f3f569f3',
+610 silly addNameRange     '2.0.0-alpha.3e12e951b', '2.0.0-alpha.b14b9c88f', '2.0.0-alpha.656c04e1d',
+610 silly addNameRange     '2.0.0-alpha.dd8f3257a', '2.0.0-alpha.0b0580659', '2.0.0-alpha.b11c24b75',
+610 silly addNameRange     '2.0.0-alpha.41ef333e4', '2.0.0-alpha.37c95e668', '2.0.0-alpha.3570aa06c',
+610 silly addNameRange     '2.0.0-alpha.aff656182', '2.0.0-alpha.1db0277d3', '2.0.0-alpha.b79568fff',
+610 silly addNameRange     '2.0.0-alpha.6703f8420', '2.0.0-alpha.df47c1770', '2.0.0-alpha.70',
+610 silly addNameRange     '2.0.0-alpha.3fc29f4b1', '2.0.0-alpha.ef49c2be7', '2.0.0-alpha.b133e2def',
+610 silly addNameRange     '2.0.0-alpha.2fb766ba7', '2.0.0-alpha.83a5240f5', '2.0.0-alpha.853e29dbd',
+610 silly addNameRange     '2.0.0-alpha.b5c46bd1d', '2.0.0-alpha.6ce1230c1', '2.0.0-alpha.41ac4468d',
+610 silly addNameRange     '2.0.0-alpha.601c8fe68', '2.0.0-alpha.88a6f5665', '2.0.0-alpha.141d062c3',
+610 silly addNameRange     '2.0.0-alpha.5944226eb', '2.0.0-alpha.9fdac1a0d', '2.0.0-alpha.1e1860681',
+610 silly addNameRange     '2.0.0-alpha.869e118e4', '2.0.0-alpha.0bb5e547b', '2.0.0-alpha.d2d287264',
+610 silly addNameRange     '2.0.0-alpha.f48d435ce', '2.0.0-alpha.8a9dfcf96', '2.0.0-alpha.5dfa66528',
+610 silly addNameRange     '2.0.0-alpha.c4cbe8ec7', '2.0.0-alpha.827de9a84', '2.0.0-alpha.2ba55b0f1',
+610 silly addNameRange     '2.0.0-alpha.a406a3c9a', '2.0.0-alpha.66cc7364c', '2.0.0-alpha.0252d01eb',
+610 silly addNameRange     '2.0.0-alpha.0a75ed5d4', '2.0.0-alpha.a8ee7fd3e', '2.0.0-alpha.d6d30a39f',
+610 silly addNameRange     '2.0.0-alpha.a36abd8a8', '2.0.0-alpha.869ebe7b5', '2.0.0-alpha.22e231904',
+610 silly addNameRange     '2.0.0-alpha.b49ff3241', '2.0.0-alpha.95f81d2a4', '2.0.0-alpha.6917eb950',
+610 silly addNameRange     '2.0.0-alpha.beddecb27', '2.0.0-alpha.3031c47c3', '2.0.0-alpha.15c50e2ec',
+610 silly addNameRange     '2.0.0-alpha.be7b5dca7', '2.0.0-alpha.9c4bf4e13', '2.0.0-alpha.140bfbfd9',
+610 silly addNameRange     '2.0.0-alpha.39edfe35a', '2.0.0-alpha.d801ce50f', '2.0.0-alpha.09284187f',
+610 silly addNameRange     '2.0.0-alpha.fd17476c3', '2.0.0-alpha.d22039c20', '2.0.0-alpha.3b64aa610',
+610 silly addNameRange     '2.0.0-alpha.f5494af21',
+610 silly addNameRange     ... 1511 more items
+610 silly addNameRange   ]
+610 silly addNameRange ]
+611 silly addNamed @docusaurus/module-type-aliases@2.4.3
+612 verbose addNamed "2.4.3" is a plain semver version for @docusaurus/module-type-aliases
+613 http 304 https://registry.npmjs.org/@docusaurus%2fpreset-classic
+614 verbose headers {
+614 verbose headers   date: 'Mon, 11 Mar 2024 10:16:03 GMT',
+614 verbose headers   connection: 'keep-alive',
+614 verbose headers   'cf-ray': '862ac9644970715e-HKG',
+614 verbose headers   'cf-cache-status': 'REVALIDATED',
+614 verbose headers   'cache-control': 'public, max-age=300',
+614 verbose headers   etag: '"15db9bf795973a9396f1389c9b4397a0"',
+614 verbose headers   'last-modified': 'Fri, 08 Mar 2024 18:17:34 GMT',
+614 verbose headers   vary: 'Accept-Encoding',
+614 verbose headers   server: 'cloudflare'
+614 verbose headers }
+615 silly get cb [
+615 silly get   304,
+615 silly get   {
+615 silly get     date: 'Mon, 11 Mar 2024 10:16:03 GMT',
+615 silly get     connection: 'keep-alive',
+615 silly get     'cf-ray': '862ac9644970715e-HKG',
+615 silly get     'cf-cache-status': 'REVALIDATED',
+615 silly get     'cache-control': 'public, max-age=300',
+615 silly get     etag: '"15db9bf795973a9396f1389c9b4397a0"',
+615 silly get     'last-modified': 'Fri, 08 Mar 2024 18:17:34 GMT',
+615 silly get     vary: 'Accept-Encoding',
+615 silly get     server: 'cloudflare'
+615 silly get   }
+615 silly get ]
+616 verbose etag https://registry.npmjs.org/@docusaurus%2fpreset-classic from cache
+617 verbose get saving @docusaurus/preset-classic to /Users/zhjjuzi/.npm/registry.npmjs.org/_40docusaurus_252fpreset-classic/.cache.json
+618 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+619 http 304 https://registry.npmjs.org/@docusaurus%2fcore
+620 verbose headers {
+620 verbose headers   date: 'Mon, 11 Mar 2024 10:16:03 GMT',
+620 verbose headers   connection: 'keep-alive',
+620 verbose headers   'cf-ray': '862ac9649b080463-HKG',
+620 verbose headers   'cf-cache-status': 'REVALIDATED',
+620 verbose headers   'cache-control': 'public, max-age=300',
+620 verbose headers   etag: '"38fd44d340d8a4e5ebe730281b9a8333"',
+620 verbose headers   'last-modified': 'Fri, 08 Mar 2024 18:17:00 GMT',
+620 verbose headers   vary: 'Accept-Encoding',
+620 verbose headers   server: 'cloudflare'
+620 verbose headers }
+621 silly get cb [
+621 silly get   304,
+621 silly get   {
+621 silly get     date: 'Mon, 11 Mar 2024 10:16:03 GMT',
+621 silly get     connection: 'keep-alive',
+621 silly get     'cf-ray': '862ac9649b080463-HKG',
+621 silly get     'cf-cache-status': 'REVALIDATED',
+621 silly get     'cache-control': 'public, max-age=300',
+621 silly get     etag: '"38fd44d340d8a4e5ebe730281b9a8333"',
+621 silly get     'last-modified': 'Fri, 08 Mar 2024 18:17:00 GMT',
+621 silly get     vary: 'Accept-Encoding',
+621 silly get     server: 'cloudflare'
+621 silly get   }
+621 silly get ]
+622 verbose etag https://registry.npmjs.org/@docusaurus%2fcore from cache
+623 verbose get saving @docusaurus/core to /Users/zhjjuzi/.npm/registry.npmjs.org/_40docusaurus_252fcore/.cache.json
+624 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+625 silly cache afterAdd @docusaurus/module-type-aliases@2.4.3
+626 verbose afterAdd /Users/zhjjuzi/.npm/@docusaurus/module-type-aliases/2.4.3/package/package.json not in flight; writing
+627 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+628 silly addNameRange number 2 {
+628 silly addNameRange   name: '@docusaurus/preset-classic',
+628 silly addNameRange   range: '>=2.2.0 <3.0.0',
+628 silly addNameRange   hasData: true
+628 silly addNameRange }
+629 silly addNameRange versions [
+629 silly addNameRange   '@docusaurus/preset-classic',
+629 silly addNameRange   [
+629 silly addNameRange     '2.0.0-alpha.12',        '2.0.0-alpha.13',        '2.0.0-alpha.14',
+629 silly addNameRange     '2.0.0-alpha.15',        '2.0.0-alpha.16',        '2.0.0-alpha.17',
+629 silly addNameRange     '2.0.0-alpha.18',        '2.0.0-alpha.19',        '2.0.0-alpha.20',
+629 silly addNameRange     '2.0.0-alpha.21',        '2.0.0-alpha.22',        '2.0.0-alpha.23',
+629 silly addNameRange     '2.0.0-alpha.24',        '2.0.0-alpha.25',        '2.0.0-alpha.26',
+629 silly addNameRange     '2.0.0-alpha.27',        '2.0.0-alpha.28',        '2.0.0-alpha.29',
+629 silly addNameRange     '2.0.0-alpha.30',        '2.0.0-alpha.31',        '2.0.0-alpha.32',
+629 silly addNameRange     '2.0.0-alpha.33',        '2.0.0-alpha.34',        '2.0.0-alpha.35',
+629 silly addNameRange     '2.0.0-alpha.36',        '2.0.0-alpha.37',        '2.0.0-alpha.38',
+629 silly addNameRange     '2.0.0-alpha.39',        '2.0.0-alpha.40',        '2.0.0-alpha.41',
+629 silly addNameRange     '2.0.0-alpha.43',        '2.0.0-alpha.44',        '2.0.0-alpha.48',
+629 silly addNameRange     '2.0.0-alpha.49',        '2.0.0-alpha.50',        '2.0.0-alpha.51',
+629 silly addNameRange     '2.0.0-alpha.53',        '2.0.0-alpha.54',        '2.0.0-alpha.55',
+629 silly addNameRange     '2.0.0-alpha.56',        '2.0.0-alpha.58',        '2.0.0-alpha.59',
+629 silly addNameRange     '2.0.0-alpha.60',        '2.0.0-alpha.61',        '2.0.0-alpha.62',
+629 silly addNameRange     '2.0.0-alpha.63',        '2.0.0-alpha.64',        '2.0.0-alpha.65',
+629 silly addNameRange     '2.0.0-alpha.66',        '2.0.0-alpha.68',        '2.0.0-alpha.69',
+629 silly addNameRange     '2.0.0-alpha.bd62be93d', '2.0.0-alpha.378053ac5', '2.0.0-alpha.b20d016bc',
+629 silly addNameRange     '2.0.0-alpha.e90749c6f', '2.0.0-alpha.99e3ee796', '2.0.0-alpha.d61754b3d',
+629 silly addNameRange     '2.0.0-alpha.f37987f32', '2.0.0-alpha.9ad02ca46', '2.0.0-alpha.20114f5e0',
+629 silly addNameRange     '2.0.0-alpha.70dece09e', '2.0.0-alpha.415a7973f', '2.0.0-alpha.c4aeb1982',
+629 silly addNameRange     '2.0.0-alpha.ec297cead', '2.0.0-alpha.08f6734bf', '2.0.0-alpha.9fd8a3c69',
+629 silly addNameRange     '2.0.0-alpha.e00e54a69', '2.0.0-alpha.1f3f569f3', '2.0.0-alpha.3e12e951b',
+629 silly addNameRange     '2.0.0-alpha.b14b9c88f', '2.0.0-alpha.656c04e1d', '2.0.0-alpha.dd8f3257a',
+629 silly addNameRange     '2.0.0-alpha.0b0580659', '2.0.0-alpha.b11c24b75', '2.0.0-alpha.41ef333e4',
+629 silly addNameRange     '2.0.0-alpha.37c95e668', '2.0.0-alpha.3570aa06c', '2.0.0-alpha.aff656182',
+629 silly addNameRange     '2.0.0-alpha.1db0277d3', '2.0.0-alpha.b79568fff', '2.0.0-alpha.6703f8420',
+629 silly addNameRange     '2.0.0-alpha.df47c1770', '2.0.0-alpha.70',        '2.0.0-alpha.3fc29f4b1',
+629 silly addNameRange     '2.0.0-alpha.ef49c2be7', '2.0.0-alpha.b133e2def', '2.0.0-alpha.2fb766ba7',
+629 silly addNameRange     '2.0.0-alpha.83a5240f5', '2.0.0-alpha.853e29dbd', '2.0.0-alpha.b5c46bd1d',
+629 silly addNameRange     '2.0.0-alpha.6ce1230c1', '2.0.0-alpha.41ac4468d', '2.0.0-alpha.601c8fe68',
+629 silly addNameRange     '2.0.0-alpha.88a6f5665', '2.0.0-alpha.141d062c3', '2.0.0-alpha.5944226eb',
+629 silly addNameRange     '2.0.0-alpha.9fdac1a0d', '2.0.0-alpha.1e1860681', '2.0.0-alpha.869e118e4',
+629 silly addNameRange     '2.0.0-alpha.0bb5e547b',
+629 silly addNameRange     ... 1530 more items
+629 silly addNameRange   ]
+629 silly addNameRange ]
+630 silly addNamed @docusaurus/preset-classic@2.4.3
+631 verbose addNamed "2.4.3" is a plain semver version for @docusaurus/preset-classic
+632 verbose afterAdd /Users/zhjjuzi/.npm/@docusaurus/module-type-aliases/2.4.3/package/package.json written
+633 silly cache afterAdd @docusaurus/preset-classic@2.4.3
+634 verbose afterAdd /Users/zhjjuzi/.npm/@docusaurus/preset-classic/2.4.3/package/package.json not in flight; writing
+635 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+636 verbose afterAdd /Users/zhjjuzi/.npm/@docusaurus/preset-classic/2.4.3/package/package.json written
+637 silly addNameRange number 2 { name: '@docusaurus/core', range: '>=2.2.0 <3.0.0', hasData: true }
+638 silly addNameRange versions [
+638 silly addNameRange   '@docusaurus/core',
+638 silly addNameRange   [
+638 silly addNameRange     '2.0.0-alpha.0',         '2.0.0-alpha.1',         '2.0.0-alpha.5',
+638 silly addNameRange     '2.0.0-alpha.6',         '2.0.0-alpha.7',         '2.0.0-alpha.10',
+638 silly addNameRange     '2.0.0-alpha.11',        '2.0.0-alpha.12',        '2.0.0-alpha.13',
+638 silly addNameRange     '2.0.0-alpha.14',        '2.0.0-alpha.15',        '2.0.0-alpha.16',
+638 silly addNameRange     '2.0.0-alpha.17',        '2.0.0-alpha.18',        '2.0.0-alpha.19',
+638 silly addNameRange     '2.0.0-alpha.20',        '2.0.0-alpha.21',        '2.0.0-alpha.22',
+638 silly addNameRange     '2.0.0-alpha.23',        '2.0.0-alpha.24',        '2.0.0-alpha.25',
+638 silly addNameRange     '2.0.0-alpha.26',        '2.0.0-alpha.27',        '2.0.0-alpha.28',
+638 silly addNameRange     '2.0.0-alpha.29',        '2.0.0-alpha.30',        '2.0.0-alpha.31',
+638 silly addNameRange     '2.0.0-alpha.32',        '2.0.0-alpha.33',        '2.0.0-alpha.34',
+638 silly addNameRange     '2.0.0-alpha.35',        '2.0.0-alpha.36',        '2.0.0-alpha.37',
+638 silly addNameRange     '2.0.0-alpha.38',        '2.0.0-alpha.39',        '2.0.0-alpha.40',
+638 silly addNameRange     '2.0.0-alpha.41',        '2.0.0-alpha.43',        '2.0.0-alpha.44',
+638 silly addNameRange     '2.0.0-alpha.48',        '2.0.0-alpha.49',        '2.0.0-alpha.50',
+638 silly addNameRange     '2.0.0-alpha.51',        '2.0.0-alpha.53',        '2.0.0-alpha.54',
+638 silly addNameRange     '2.0.0-alpha.55',        '2.0.0-alpha.56',        '2.0.0-alpha.58',
+638 silly addNameRange     '2.0.0-alpha.59',        '2.0.0-alpha.60',        '2.0.0-alpha.61',
+638 silly addNameRange     '2.0.0-alpha.62',        '2.0.0-alpha.63',        '2.0.0-alpha.64',
+638 silly addNameRange     '2.0.0-alpha.65',        '2.0.0-alpha.66',        '2.0.0-alpha.68',
+638 silly addNameRange     '2.0.0-alpha.69',        '2.0.0-alpha.bd62be93d', '2.0.0-alpha.378053ac5',
+638 silly addNameRange     '2.0.0-alpha.b20d016bc', '2.0.0-alpha.e90749c6f', '2.0.0-alpha.99e3ee796',
+638 silly addNameRange     '2.0.0-alpha.d61754b3d', '2.0.0-alpha.f37987f32', '2.0.0-alpha.9ad02ca46',
+638 silly addNameRange     '2.0.0-alpha.20114f5e0', '2.0.0-alpha.70dece09e', '2.0.0-alpha.415a7973f',
+638 silly addNameRange     '2.0.0-alpha.c4aeb1982', '2.0.0-alpha.ec297cead', '2.0.0-alpha.08f6734bf',
+638 silly addNameRange     '2.0.0-alpha.9fd8a3c69', '2.0.0-alpha.e00e54a69', '2.0.0-alpha.1f3f569f3',
+638 silly addNameRange     '2.0.0-alpha.3e12e951b', '2.0.0-alpha.b14b9c88f', '2.0.0-alpha.656c04e1d',
+638 silly addNameRange     '2.0.0-alpha.dd8f3257a', '2.0.0-alpha.0b0580659', '2.0.0-alpha.b11c24b75',
+638 silly addNameRange     '2.0.0-alpha.41ef333e4', '2.0.0-alpha.37c95e668', '2.0.0-alpha.3570aa06c',
+638 silly addNameRange     '2.0.0-alpha.aff656182', '2.0.0-alpha.1db0277d3', '2.0.0-alpha.b79568fff',
+638 silly addNameRange     '2.0.0-alpha.6703f8420', '2.0.0-alpha.df47c1770', '2.0.0-alpha.70',
+638 silly addNameRange     '2.0.0-alpha.3fc29f4b1', '2.0.0-alpha.ef49c2be7', '2.0.0-alpha.b133e2def',
+638 silly addNameRange     '2.0.0-alpha.2fb766ba7', '2.0.0-alpha.83a5240f5', '2.0.0-alpha.853e29dbd',
+638 silly addNameRange     '2.0.0-alpha.b5c46bd1d', '2.0.0-alpha.6ce1230c1', '2.0.0-alpha.41ac4468d',
+638 silly addNameRange     '2.0.0-alpha.601c8fe68',
+638 silly addNameRange     ... 1543 more items
+638 silly addNameRange   ]
+638 silly addNameRange ]
+639 silly addNamed @docusaurus/core@2.4.3
+640 verbose addNamed "2.4.3" is a plain semver version for @docusaurus/core
+641 silly cache afterAdd @docusaurus/core@2.4.3
+642 verbose afterAdd /Users/zhjjuzi/.npm/@docusaurus/core/2.4.3/package/package.json not in flight; writing
+643 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+644 verbose afterAdd /Users/zhjjuzi/.npm/@docusaurus/core/2.4.3/package/package.json written
+645 http 304 https://registry.npmjs.org/@tsconfig%2fdocusaurus
+646 verbose headers {
+646 verbose headers   date: 'Mon, 11 Mar 2024 10:16:04 GMT',
+646 verbose headers   connection: 'keep-alive',
+646 verbose headers   'cf-ray': '862ac9645d5a84cd-HKG',
+646 verbose headers   'cf-cache-status': 'REVALIDATED',
+646 verbose headers   'cache-control': 'public, max-age=300',
+646 verbose headers   etag: '"36ea04eb327ef2d3ccf6a807b33f28d9"',
+646 verbose headers   'last-modified': 'Sun, 15 Oct 2023 04:10:37 GMT',
+646 verbose headers   vary: 'Accept-Encoding',
+646 verbose headers   server: 'cloudflare'
+646 verbose headers }
+647 silly get cb [
+647 silly get   304,
+647 silly get   {
+647 silly get     date: 'Mon, 11 Mar 2024 10:16:04 GMT',
+647 silly get     connection: 'keep-alive',
+647 silly get     'cf-ray': '862ac9645d5a84cd-HKG',
+647 silly get     'cf-cache-status': 'REVALIDATED',
+647 silly get     'cache-control': 'public, max-age=300',
+647 silly get     etag: '"36ea04eb327ef2d3ccf6a807b33f28d9"',
+647 silly get     'last-modified': 'Sun, 15 Oct 2023 04:10:37 GMT',
+647 silly get     vary: 'Accept-Encoding',
+647 silly get     server: 'cloudflare'
+647 silly get   }
+647 silly get ]
+648 verbose etag https://registry.npmjs.org/@tsconfig%2fdocusaurus from cache
+649 verbose get saving @tsconfig/docusaurus to /Users/zhjjuzi/.npm/registry.npmjs.org/_40tsconfig_252fdocusaurus/.cache.json
+650 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+651 silly addNameRange number 2 {
+651 silly addNameRange   name: '@tsconfig/docusaurus',
+651 silly addNameRange   range: '>=1.0.5 <2.0.0',
+651 silly addNameRange   hasData: true
+651 silly addNameRange }
+652 silly addNameRange versions [
+652 silly addNameRange   '@tsconfig/docusaurus',
+652 silly addNameRange   [
+652 silly addNameRange     '1.0.0', '1.0.1',
+652 silly addNameRange     '1.0.2', '1.0.3',
+652 silly addNameRange     '1.0.4', '1.0.5',
+652 silly addNameRange     '1.0.6', '1.0.7',
+652 silly addNameRange     '2.0.0', '2.0.1',
+652 silly addNameRange     '2.0.2'
+652 silly addNameRange   ]
+652 silly addNameRange ]
+653 silly addNamed @tsconfig/docusaurus@1.0.7
+654 verbose addNamed "1.0.7" is a plain semver version for @tsconfig/docusaurus
+655 silly cache afterAdd @tsconfig/docusaurus@1.0.7
+656 verbose afterAdd /Users/zhjjuzi/.npm/@tsconfig/docusaurus/1.0.7/package/package.json not in flight; writing
+657 verbose correctMkdir /Users/zhjjuzi/.npm correctMkdir not in flight; initializing
+658 verbose afterAdd /Users/zhjjuzi/.npm/@tsconfig/docusaurus/1.0.7/package/package.json written
+659 error git clone --template=/Users/zhjjuzi/.npm/_git-remotes/_templates --mirror git://github.com/ionic-team/docusaurus-plugin-tag-manager.git /Users/zhjjuzi/.npm/_git-remotes/git-github-com-ionic-team-docusaurus-plugin-tag-manager-git-8980817a: Cloning into bare repository '/Users/zhjjuzi/.npm/_git-remotes/git-github-com-ionic-team-docusaurus-plugin-tag-manager-git-8980817a'...
+659 error git clone --template=/Users/zhjjuzi/.npm/_git-remotes/_templates --mirror git://github.com/ionic-team/docusaurus-plugin-tag-manager.git /Users/zhjjuzi/.npm/_git-remotes/git-github-com-ionic-team-docusaurus-plugin-tag-manager-git-8980817a: fatal: read error: Connection reset by peer
+660 silly tryHTTPS attempting to clone git+https://github.com/ionic-team/docusaurus-plugin-tag-manager.git
+661 silly tryClone cloning ionic-team/docusaurus-plugin-tag-manager via git+https://github.com/ionic-team/docusaurus-plugin-tag-manager.git
+662 verbose tryClone https-github-com-ionic-team-docusaurus-plugin-tag-manager-git-8ad5d715 not in flight; caching
+663 verbose correctMkdir /Users/zhjjuzi/.npm/_git-remotes correctMkdir not in flight; initializing
+664 info git [ 'config', '--get', 'remote.origin.url' ]
+665 silly validateExistingRemote ionic-team/docusaurus-plugin-tag-manager remote.origin.url: https://github.com/ionic-team/docusaurus-plugin-tag-manager.git
+666 verbose validateExistingRemote ionic-team/docusaurus-plugin-tag-manager is updating existing cached remote /Users/zhjjuzi/.npm/_git-remotes/https-github-com-ionic-team-docusaurus-plugin-tag-manager-git-8ad5d715
+667 info git [ 'fetch', '-a', 'origin' ]
+668 verbose updateRemote git fetch -a origin (https://github.com/ionic-team/docusaurus-plugin-tag-manager.git)
+669 verbose correctMkdir /Users/zhjjuzi/.npm/_git-remotes correctMkdir not in flight; initializing
+670 verbose setPermissions ionic-team/docusaurus-plugin-tag-manager set permissions on /Users/zhjjuzi/.npm/_git-remotes/https-github-com-ionic-team-docusaurus-plugin-tag-manager-git-8ad5d715
+671 verbose resolveHead ionic-team/docusaurus-plugin-tag-manager original treeish: master
+672 info git [ 'rev-list', '-n1', 'master' ]
+673 error git rev-list -n1 master: fatal: ambiguous argument 'master': unknown revision or path not in the working tree.
+673 error git rev-list -n1 master: Use '--' to separate paths from revisions, like this:
+673 error git rev-list -n1 master: 'git <command> [<revision>...] -- [<file>...]'
+674 silly trySSH attempting to clone git@github.com:ionic-team/docusaurus-plugin-tag-manager.git
+675 silly tryClone cloning ionic-team/docusaurus-plugin-tag-manager via git@github.com:ionic-team/docusaurus-plugin-tag-manager.git
+676 verbose tryClone git-github-com-ionic-team-docusaurus-plugin-tag-manager-git-7456e4fb not in flight; caching
+677 verbose correctMkdir /Users/zhjjuzi/.npm/_git-remotes correctMkdir not in flight; initializing
+678 info git [ 'config', '--get', 'remote.origin.url' ]
+679 silly validateExistingRemote ionic-team/docusaurus-plugin-tag-manager remote.origin.url: git@github.com:ionic-team/docusaurus-plugin-tag-manager.git
+680 verbose validateExistingRemote ionic-team/docusaurus-plugin-tag-manager is updating existing cached remote /Users/zhjjuzi/.npm/_git-remotes/git-github-com-ionic-team-docusaurus-plugin-tag-manager-git-7456e4fb
+681 info git [ 'fetch', '-a', 'origin' ]
+682 verbose updateRemote git fetch -a origin (git@github.com:ionic-team/docusaurus-plugin-tag-manager.git)
+683 verbose correctMkdir /Users/zhjjuzi/.npm/_git-remotes correctMkdir not in flight; initializing
+684 verbose setPermissions ionic-team/docusaurus-plugin-tag-manager set permissions on /Users/zhjjuzi/.npm/_git-remotes/git-github-com-ionic-team-docusaurus-plugin-tag-manager-git-7456e4fb
+685 verbose resolveHead ionic-team/docusaurus-plugin-tag-manager original treeish: master
+686 info git [ 'rev-list', '-n1', 'master' ]
+687 error git rev-list -n1 master: fatal: ambiguous argument 'master': unknown revision or path not in the working tree.
+687 error git rev-list -n1 master: Use '--' to separate paths from revisions, like this:
+687 error git rev-list -n1 master: 'git <command> [<revision>...] -- [<file>...]'
+688 verbose stack Error: Command failed: git rev-list -n1 master
+688 verbose stack fatal: ambiguous argument 'master': unknown revision or path not in the working tree.
+688 verbose stack Use '--' to separate paths from revisions, like this:
+688 verbose stack 'git <command> [<revision>...] -- [<file>...]'
+688 verbose stack
+688 verbose stack     at ChildProcess.exithandler (node:child_process:422:12)
+688 verbose stack     at ChildProcess.emit (node:events:517:28)
+688 verbose stack     at maybeClose (node:internal/child_process:1098:16)
+688 verbose stack     at ChildProcess._handle.onexit (node:internal/child_process:303:5)
+689 verbose cwd /Users/zhjjuzi/annie_wechaty/docusaurus/docusaurus
+690 error Darwin 23.0.0
+691 error argv "/Users/zhjjuzi/.nvm/versions/node/v18.19.1/bin/node" "/Users/zhjjuzi/node_modules/.bin/npm" "install"
+692 error node v18.19.1
+693 error npm  v2.15.12
+694 error code 128
+695 error Command failed: git rev-list -n1 master
+695 error fatal: ambiguous argument 'master': unknown revision or path not in the working tree.
+695 error Use '--' to separate paths from revisions, like this:
+695 error 'git <command> [<revision>...] -- [<file>...]'
+696 error If you need help, you may report this error at:
+696 error     <https://github.com/npm/npm/issues>
+697 verbose exit [ 1, true ]

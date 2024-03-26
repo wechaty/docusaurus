@@ -2,63 +2,378 @@
 title: Wechaty
 ---
 
-- [Class: WechatyBuilder](#class-wechatybuilder)
-  - [Static method: WechatyBuilder.build(options?: WechatyOptions)](#static-method-wechatybuilderbuildoptions-wechatyoptions)
-  - [Static method: WechatyBuilder.singleton(options?: WechatyOptions)](#static-method-wechatybuildersingletonoptions-wechatyoptions)
-  - [Static method: WechatyBuilder.valid(target: any)](#static-method-wechatybuildervalidtarget-any)
-- [Class: Wechaty](#class-wechaty)
-  - [wechaty.start()](#wechatystart)
-  - [wechaty.say()](#wechatysaysayable-sayable)
-  - [wechaty.publish(post: PostInterface)](#wechatypublishpost-postinterface)
+一个Wechaty Bot代表着一个微信的客户端，他取决于你具体使用哪一个Puppet。
 
-## Class: WechatyBuilder
+## Classes
 
-Wechaty 的构造类用于构造 Wechaty 实例。
+一个Wechaty Bot代表着一个微信的客户端，他取决于你具体使用哪一个Puppet。
 
-### Static method: WechatyBuilder.build(options?: WechatyOptions)
+* **web-wechat** - 当使用Puppet-Puppeteer 或 Puppet-wechat4u  
+* **ipad-wechat** - 当使用Puppet-padchat
+* **ios-wechat** - 当使用Puppet-ioscat
 
-返回 Wechaty 实例。
+了解puppet及其用途，请访问以下链接-
 
-根据 option 构造一个 Wechaty 实例。
+* [What is a Puppet in Wechaty](https://github.com/wechaty/wechaty-getting-started/wiki/FAQ-EN#31-what-is-a-puppet-in-wechaty)
 
-示例:
+> 如果您想知道如何发送消息，请参阅Message
+> 如果您想了解如何获得联系，请参阅Contact
 
-```ts
-import { WechatyBuilder } from 'wechaty'
+**Kind**: global class
 
-WechatyBuilder.build(options) // 在单例模式使用 instance()
-  .on('scan', (url, status) => console.log(`Scan QR Code to login: ${status}\n${url}`))
-  .on('login',       user => console.log(`User ${user} logged in`))
-  .on('message',  message => console.log(`Message: ${message}`))
-  .start()
+* Wechaty
+  * new Wechaty\(\[options\]\)
+  * _实例_
+    * .on\(event, listener\) ⇒ `Wechaty`
+    * .start\(\) ⇒ `Promise <void>`
+    * .stop\(\) ⇒ `Promise <void>`
+    * .logout\(\) ⇒ `Promise <void>`
+    * .logonoff\(\) ⇒ `boolean`
+    * .userSelf\(\) ⇒ `ContactSelf`
+    * .say\(textOrContactOrFileOrUrl\) ⇒ `Promise <void>`
+  * _static_
+    * .instance\(\[options\]\)
+
+### new Wechaty\(\[options\]\)
+
+创建一个 Wechaty 的实例。
+
+| Param | Type | Default |
+| :--- | :--- | :--- |
+| \[options\] | `WechatyOptions` | `{}` |
+
+**Example** _\(世界上最短的对话机器人代码\)_
+
+```javascript
+import { Wechaty }  from 'wechaty'
+const bot = new Wechaty()
+bot.on('scan',    (qrcode, status) => console.log(['https://api.qrserver.com/v1/create-qr-code/?data=',encodeURIComponent(qrcode),'&size=220x220&margin=20',].join('')))
+bot.on('login',   user => console.log(`User ${user} logined`))
+bot.on('message', message => console.log(`Message: ${message}`))
+bot.start()
 ```
 
-### Static method: WechatyBuilder.singleton(options?: WechatyOptions)
+### wechaty.on\(event, listener\) ⇒ `Wechaty`
 
-返回 Wechaty 实例。
+当机器人收到消息，会触发一个事件，一些简单的事件介绍如下：
 
-根据 option 构造一个单例模式的 Wechaty 实例。
+* **scan**: 当机器人需要扫码登录的时候，会触发这个事件，当手机扫码登录后，机器人就可以登录进去了。
+* **login**: 当机器人登陆成功后，会触发这个事件。
+* **logout**: 当机器人退出登陆的时候，会触发到这个事件。
+* **message**: 当有新消息的时候会触发这个事件。
 
-### Static method: WechatyBuilder.valid(target: any)
+更多在 WechatyEventName
 
-返回 target 是否是 Wechaty 实例。
+**Kind**: `Wechaty`的实例方法
+**Returns**: `Wechaty`
 
-## Class: Wechaty
+| Param | Type | Description |
+| :--- | :--- | :--- |
+| event | `WechatyEventName` | Emit WechatyEvent |
+| listener | `WechatyEventFunction` | Depends on the WechatyEvent |
 
-主要的 bot 类。
+**示例** _\(Event:scan\)_
 
-一个 bot 是指一个代表了某个特定即时通讯软件的实力，根据使用的 puppet 不同而有所区别。
+```javascript
+bot.on('scan', (url, code) => {
+  console.log(`[${code}] Scan ${url} to login.` )
+})
+```
 
-### wechaty.start()
+**示例** _\(Event:login \)_
 
-启动 bot 。
+```javascript
+bot.on('login', (user) => {
+  console.log(`user ${user} login`)
+})
+```
 
-### wechaty.say(sayable: Sayable)
+**示例** _\(Event:logout \)_
 
-对 bot 的当前用户发送消息。
+```javascript
+bot.on('logout', (user) => {
+  console.log(`user ${user} logout`)
+})
+```
 
-### wechaty.publish(post: PostInterface)
+**示例** _\(Event:message \)_
 
-返回一个 postInterface 或者 void ，根据 puppet 不同有所区别。
+```javascript
+wechaty.on('message', (message) => {
+  console.log(`message ${message} received`)
+})
+```
 
-发送一条朋友圈，详情请参考 Post 部分。（编写中）
+**示例** _\(Event:friendship \)_
+
+```javascript
+bot.on('friendship', async (friendship) => {
+  const contact = friendship.contact()
+  if (friendship.type() === bot.Friendship.Type.Receive) { // 1.接收新友谊请求
+    let result = await friendship.accept()
+    if (result) {
+      console.log(`Request from ${contact.name()} is accept succesfully!`)
+    } else {
+      console.log(`Request from ${contact.name()} failed to accept!`)
+    }
+  } else if (friendship.type() === bot.Friendship.Type.Confirm) { // 2.确认友谊请求
+    console.log(`New friendship confirmed with ${contact.name()}`)
+  }
+})
+```
+
+**示例** _\(Event:room-join \)_
+
+```javascript
+bot.on('room-join', async (room, inviteeList, inviter) => {
+  const nameList = inviteeList.map(c => c.name()).join(',')
+  console.log(`Room ${await room.topic()} got new member ${nameList}, invited by ${inviter}`)
+})
+```
+
+**示例** _\(Event:room-leave \)_
+
+```javascript
+bot.on('room-leave', async (room, leaverList, remover) => {
+  const nameList = leaverList.map(c => c.name()).join(',')
+  console.log(`Room ${await room.topic()} lost member ${nameList}, the remover is: ${remover}`)
+})
+```
+
+**示例** _\(Event:room-topic \)_
+
+```javascript
+bot.on('room-topic', async (room, topic, oldTopic, changer) => {
+  console.log(`Room ${await room.topic()} topic changed from ${oldTopic} to ${topic} by ${changer.name()}`)
+})
+```
+
+**示例** _\(Event:room-invite \)_
+
+```javascript
+bot.on('room-invite', async roomInvitation => {
+  try {
+    console.log(`received room-invite event.`)
+    await roomInvitation.accept()
+  } catch (e) {
+    console.error(e)
+  }
+}
+```
+
+**示例** _\(Event:error \)_
+
+```javascript
+bot.on('error', (error) => {
+  console.error(error)
+})
+```
+
+### wechaty.start\(\) ⇒ `Promise <void>`
+
+启动机器人
+> 备注：机器人所有的操作必须在这个函数执行完成之后。
+
+**Kind**: `Wechaty`的实例方法
+
+#### 示例
+
+```javascript
+await bot.start()
+```
+
+### wechaty.stop\(\) ⇒ `Promise <void>`
+
+停止机器人
+
+**Kind**: `Wechaty`的实例方法
+
+#### 示例
+
+```javascript
+await bot.stop()
+```
+
+### wechaty.logout\(\) ⇒ `Promise <void>`
+
+退出机器人
+
+**Kind**: `Wechaty`的实例方法
+
+#### 示例
+
+```javascript
+await bot.logout()
+```
+
+### wechaty.logonoff\(\) ⇒ `boolean`
+
+获取机器人logon/logoff 的状态
+
+**Kind**: `Wechaty`的实例方法
+
+#### 示例
+
+```javascript
+if (bot.logonoff()) {
+  console.log('Bot logined')
+} else {
+  console.log('Bot not logined')
+}
+```
+
+### wechaty.userSelf\(\) ⇒ `ContactSelf`
+
+获取当前机器人的所有信息
+
+**Kind**: `Wechaty`的实例方法  
+
+#### 示例
+
+```javascript
+const contact = bot.userSelf()
+console.log(`Bot is ${contact.name()}`)
+```
+
+### wechaty.say\(text或Contact或File或Url\) ⇒ `Promise <void>`
+
+机器人自己给自己发消息。
+
+> 备注: 这个方法是否能实现，取决于用的是什么Puppet, 参照 [puppet-compatible-table](https://wechaty.js.org/docs/specs/puppet/)
+
+**Kind**: `Wechaty`的实例方法
+
+| Param | Type | Description |
+| :--- | :--- | :--- |
+| textOrContactOrFileOrUrl | `string` \| `Contact` \| `FileBox` \| `UrlLink` | 发送文本、联系人名片或者文件给机器人自己。可以使用 [FileBox](https://www.npmjs.com/package/file-box) 来发送文件 |
+
+#### 示例
+
+```javascript
+const bot = new Wechaty()
+await bot.start()
+// 登录后
+
+// 1. 机器人为自己发消息
+await bot.say('hello!')
+
+// 2. 机器人为自己发contact
+const contact = bot.Contact.load('contactId')
+await bot.say(contact)
+
+// 3. 机器人为自己发照片url
+import { FileBox }  from 'file-box'
+const fileBox = FileBox.fromUrl('https://wechaty.github.io/wechaty/images/bot-qr-code.png')
+await bot.say(fileBox)
+
+// 4. 机器人为自己发文件
+import { FileBox }  from 'file-box'
+const fileBox = FileBox.fromFile('/tmp/text.jpg')
+await bot.say(fileBox)
+
+// 5. 机器人为自己发链接
+const linkPayload = new UrlLink({
+  description : 'WeChat Bot SDK for Individual Account, Powered by TypeScript, Docker, and Love',
+  thumbnailUrl: 'https://avatars0.githubusercontent.com/u/25162437?s=200&v=4',
+  title       : 'Welcome to Wechaty',
+  url         : 'https://github.com/wechaty/wechaty',
+})
+await bot.say(linkPayload)
+```
+
+### Wechaty.instance\(\[options\]\)
+
+获取Wechaty的全局实例。
+
+**Kind**: `Wechaty`的静态方法
+
+| Param | Type | Default |
+| :--- | :--- | :--- |
+| \[options\] | `WechatyOptions` | `{}` |
+
+#### 示例
+
+```javascript
+import { Wechaty }  from 'wechaty'
+
+Wechaty.instance() // Global instance
+.on('scan', (url, code) => console.log(`Scan QR Code to login: ${code}\n${url}`))
+.on('login',       user => console.log(`User ${user} logined`))
+.on('message',  message => console.log(`Message: ${message}`))
+.start()
+```
+
+## PuppetName
+
+Wechaty中的Puppet是一个用于实现协议插件的抽象类。插件是帮助微信控制微信的组件\(这就是我们称之为puppet的原因\). 这些插件被命名为PuppetXXX，例如：
+
+* [PuppetPuppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer)
+* [PuppetPadchat](https://github.com/lijiarui/wechaty-puppet-padchat)
+
+**Kind**: global typedef  
+**Properties**
+
+| 名字 | 类型 | 描述 |
+| :--- | :--- | :--- |
+| wechat4u | `string` | 默认的puppet，使用 [wechat4u](https://github.com/nodeWechat/wechat4u) 来控制 [WeChat Web API](https://wx.qq.com/) |
+| padchat | `string` | 使用WebSocket 协议链接一个协议服务器，来控制iPad 微信。 |
+| puppeteer | `string` | 使用 [google puppeteer](https://github.com/GoogleChrome/puppeteer) 来控制 [WeChat Web API](https://wx.qq.com/) |
+| mock | `string` | 为单元测试提供模拟调用的Puppet |
+
+## WechatyOptions
+
+创建 Wechaty 实例的可选参数类型。
+
+**Kind**: global typedef  
+**Properties**
+
+| 名字 | 类型 | 描述 |
+| :--- | :--- | :--- |
+| profile | `string` | Wechaty 机器人的名称. 当你按照下面的方式设置的时候： `new Wechaty({profile: 'wechatyName'})` 他会自动生成一个叫做`wechatyName.memory-card.json`的文件 。这个文件会存储机器人的登陆信息。如果这个文件有效，启动wechaty的时候，你不需要扫码登陆就能自动登陆机器人\(只对wechaty-puppet-padchat有效\)。 这个名字在启动机器人的时候，是可以通过环境变量WECHATY_NAME设置的，如：`WECHATY_NAME="wechatyName" node bot.jsWechaty` [更多](https://github.com/wechaty/wechaty/issues/2049) |
+| puppet | `PuppetModuleName` \| `Puppet` | 使用puppet名称指定相关puppet或者直接传入puppet实例作为Wechaty底层插件， 了解更多puppet信息 |
+| puppetOptions | `Partial.` | Puppet TOKEN |
+| ioToken | `string` | Io TOKEN |
+
+## WechatyEventName
+
+Wechaty 事件的类型
+
+**Kind**: global typedef  
+**Properties**
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| error | `string` | 当机器人内部出错的时候会触发error 事件。 |
+| login | `string` | 当机器人成功登陆后，会触发login 事件，并会在事件中传递当前登陆机器人的信息。 |
+| logout | `string` | 当机器人检测到登出的时候，会触发logout 事件，并会在事件中传递机器人的信息。 |
+| heartbeat | `string` | 获取机器人的心跳。 |
+| friendship | `string` | 当有人给机器人发好友请求的时候会触发这个事件。 |
+| message | `string` | 当机器人收到消息的时候会触发这个事件。 |
+| ready | `string` | 当所有数据加载完成后，会触发这个事件。在wechaty-puppet-padchat 中，它意味着已经加载完成Contact 和Room 的信息。 |
+| room-join | `string` | 当有人进入微信群的时候会触发这个事件。机器人主动进入某个微信群，t那个样会触发这个事件。 |
+| room-topic | `string` | 当有人修改群名称的时候会触发这个事件。 |
+| room-leave | `string` | 当机器人把群里某个用户移出群聊的时候会触发这个时间。用户主动退群是无法检测到的。 |
+| room-invite | `string` | 当收到群邀请的时候，会触发这个事件。具体请RoomInvitation |
+| scan | `string` | 当机器人需要扫码登陆的时候会触发这个事件。 建议你安装 qrcode-terminal\(运行 npm install qrcode-terminal\)这个包，这样你可以在命令行中直接看到二维码。 |
+
+## WechatyEventFunction
+
+Wechaty 事件的函数
+
+**Kind**: global typedef  
+**Properties**
+
+| 名字 | 类型 | 描述 |
+| :--- | :--- | :--- |
+| error | `function` | \(this: Wechaty, error: Error\) =&gt; void callback function |
+| login | `function` | \(this: Wechaty, user: ContactSelf\)=&gt; void |
+| logout | `function` | \(this: Wechaty, user: ContactSelf\) =&gt; void |
+| scan | `function` | \(this: Wechaty, url: string, code: number\) =&gt; void |
+| heartbeat | `function` | \(this: Wechaty, data: any\) =&gt; void |
+| friendship | `function` | \(this: Wechaty, friendship: Friendship\) =&gt; void |
+| message | `function` | \(this: Wechaty, message: Message\) =&gt; void |
+| ready | `function` | \(this: Wechaty\) =&gt; void |
+| room-join | `function` | \(this: Wechaty, room: Room, inviteeList: Contact\[\],  inviter: Contact\) =&gt; void |
+| room-topic | `function` | \(this: Wechaty, room: Room, newTopic: string, oldTopic: string, changer: Contact\) =&gt; void |
+| room-leave | `function` | \(this: Wechaty, room: Room, leaverList: Contact\[\]\) =&gt; void |
+| room-invite | `function` | \(this: Wechaty, room: Room, leaverList: Contact\[\]\) =&gt; void |
