@@ -4,7 +4,7 @@ title: Room Invitation
 
 ## Room Invitation
 
-自动通过入群邀请。
+Room Invitation 是一个全局类，用于处理群聊邀请。本节描述了 Room Invitation 类的方法。
 
 | 实例方法 | 返回类型 |
 |----------------|---------------|
