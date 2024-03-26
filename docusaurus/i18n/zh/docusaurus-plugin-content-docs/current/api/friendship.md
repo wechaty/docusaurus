@@ -2,11 +2,11 @@
 title: Friendship 
 ---
 
-Wechaty机器人允许你通过其名为`Friendship`的全球类结交朋友。本节完全是关于`Friendship`类的。
+Wechaty机器人允许你通过其名为`Friendship`的全局类结交朋友。本节完全是关于`Friendship`类的。
 
 [Examples of Friend-Bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/friend-bot.ts)
 
-## Global class Friendship
+## 全局类Friendship
 
 发送，接受好友请求的Class，有以下三种:
 
@@ -48,7 +48,7 @@ bot.on('friendship', async friendship => {
       await friendship.accept()
       break
 
-    // 2. 好友请求接受
+    // 2. 接受好友请求
 
     case bot.Friendship.Type.Confirm:
       console.log(`确认好友请求`)
@@ -63,7 +63,7 @@ bot.on('friendship', async friendship => {
 
 ### friendship.hello\(\) ⇒ `string`
 
-获取对方发送好友请求的验证信息。
+获取对方发送好友请求的打招呼语。
 
 **示例** _\(如内容是 \`ding\`, 接受好友请求\)_
 
@@ -102,7 +102,7 @@ bot.on('friendship', friendship => {
 
 返回好友请求的类型。
 
-> 备注：在这里是enum:
+> 备注：在这里是枚举:
 >
 > * FriendshipType.Unknown
 > * FriendshipType.Confirm
@@ -145,7 +145,7 @@ const searchContact = await bot.Friendship.search({
 
 ### Friendship.add\(contact, options\) ⇒ `Promise <void>`
 
-发送好友请求给contact 发送的内容是 hello.
+以 hello() 作为打招呼语向联系人发送一条好友请求。
 > 最佳实践：每分钟加1次，如果发送的过于频繁，你可能会被封号，每天能添加的好友数量是有上限的。
 
 | Param | Type | Description |
