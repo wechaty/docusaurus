@@ -125,7 +125,7 @@ const name = contact.name()
 | :--- | :--- |
 | newAlias | `undefined` \| `string` \| `null` |
 
-### 示例 \( 获取contact的备注, return {\(Promise&lt;string \| null&gt;\)}\)
+### 示例 \( 获取contact的备注, 返回 {\(Promise&lt;string \| null&gt;\)}\)
 
 ```javascript
 const alias = await contact.alias()
@@ -161,7 +161,7 @@ try {
 
 ### Contact.friend\(\) ⇒ `boolean` \| `null`
 
-判断这个联系人是否为机器人的好友。Returns: `boolean` 或 `null`, 是friend, return`true`，不是friend, return`false`，`null`是unknown
+判断这个联系人是否为机器人的好友。返回类型: `boolean` 或 `null`, 是friend, 返回`true`，不是friend, 返回`false`，`null`是unknown
 
 > 备注: 这个方法是否能实现，取决于用的是什么Puppet, 参照 [puppet-compatible-table](https://wechaty.js.org/docs/specs/puppet/)
 
@@ -255,7 +255,7 @@ const isSelf = contact.self()
 
 ### Contact.find\(query\) ⇒ `Promise <Contact | null>`
 
-通过类似这样的命令查找联系人: {name: string \| RegExp} / {alias: string \| RegExp}。支持通过昵称或者备注查找。如果查到不止一个联系人，返回找到的第一个。能找contact, return `Promise`, 没有contact, return `null`.
+通过类似这样的命令查找联系人: {name: string \| RegExp} / {alias: string \| RegExp}。支持通过昵称或者备注查找。如果查到不止一个联系人，返回找到的第一个。能找contact, 返回 `Promise`, 没有contact, 返回 `null`.
 
 | Param | Type |
 | :--- | :--- |
