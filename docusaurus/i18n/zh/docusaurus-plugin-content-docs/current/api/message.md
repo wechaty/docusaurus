@@ -39,7 +39,7 @@ title: Message
 ### message.from\(\) ⇒ `Contact | null`
 
 获取发送消息的联系人。
-找不到发送的人，return `null`.
+找不到发送的人，返回`null`.
 
 ### 示例
 
@@ -62,7 +62,7 @@ bot
 
 ### message.to\(\) ⇒ `Contact` \| `null`
 
-获取消息发送的联系人。在room中， return `null`。 使用Message.room\(\) 获取room信息。
+获取消息发送的联系人。在room中， 返回`null`。 使用Message.room\(\) 获取room信息。
 
 ### 示例
 
@@ -173,20 +173,20 @@ const bot = new Wechaty()
 bot
 .on('message', async message => {
 
-// 1. 发照片
+// 1. 发图片
 
   if (/^ding$/i.test(message.text())) {
     const fileBox = FileBox.fromUrl('https://wechaty.github.io/wechaty/images/bot-qr-code.png')
     await message.say(fileBox)
   }
 
-// 2. 发短信
+// 2. 发文本
 
   if (/^dong$/i.test(message.text())) {
     await message.say('dingdingding')
   }
 
-// 3. 发contact
+// 3. 发联系人名片
 
   if (/^lijiarui$/i.test(message.text())) {
     const contactCard = await bot.Contact.find({name: 'lijiarui'})
@@ -248,14 +248,14 @@ bot
 ```javascript
 const bot = new Wechaty()
 if (message.type() === bot.Message.Type.Text) {
-  console.log('这是短信')
+  console.log('这是一条短信')
 }
 ```
 
 ### message.self\(\) ⇒ `boolean`
 
 查看这条消息是否为机器人发送的。
-message是自己发的，return `true`，是其他发的，return`false`
+message是自己发的，返回`true`，是其他发的，返回`false`
 
 ### 示例
 
@@ -286,7 +286,7 @@ console.log(contactList)
 ### message.mentionSelf\(\) ⇒ `Promise <boolean>`
 
 获取机器人是否在群里被@ 了。
-是被@了，return`true`
+是被@了，返回`true`
 
 ### 示例
 
@@ -325,24 +325,24 @@ bot
 
 ### message.age\(\) ⇒ `number`
 
-消息的时差。
+消息的年龄。
 例如： 消息在`8:43:01`发送的，当我们在wechaty 上收到消息的时候，时间是`8:43:15`,那么 age\(\) 为 `8:43:15 - 8:43:01 = 14 (seconds)`。
 
 ### message.toFileBox\(\) ⇒ `Promise <FileBox>`
 
-从消息中提取多媒体文件并把它 存入到FileBox 里面。
+从消息中提取多媒体文件并把它封装为 FileBox 类.
 
 > 备注: 这个方法是否能实现，取决于用的是什么Puppet, 参照 [puppet-compatible-table](https://wechaty.js.org/docs/specs/puppet/)
 
 ### message.toContact\(\) ⇒ `Promise <Contact>`
 
-提取转发的微信好友名片内容，并封装成Contact 类型。
+提取转发的微信好友名片内容，并封装成 Contact 类。
 
 > 备注: 这个方法是否能实现，取决于用的是什么Puppet, 参照 [puppet-compatible-table](https://wechaty.js.org/docs/specs/puppet/)
 
 ### message.toUrlLink\(\) ⇒ `Promise <UrlLink>`
 
-该方法从消息中提取Url链接，并将其封装到UrlLink类中。
+该方法从消息中提取Url链接，并将其封装到 UrlLink 类中。
 > 备注: 这个方法是否能实现，取决于用的是什么Puppet, 参照 [puppet-compatible-table](https://wechaty.js.org/docs/specs/puppet/)
 
 ## 静态方法
