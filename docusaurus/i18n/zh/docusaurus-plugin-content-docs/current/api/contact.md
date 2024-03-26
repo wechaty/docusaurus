@@ -125,7 +125,7 @@ const name = contact.name()
 | :--- | :--- |
 | newAlias | `undefined` \| `string` \| `null` |
 
-### 示例 \( GET contact的备注, return {\(Promise&lt;string \| null&gt;\)}\)
+### 示例 \( 获取contact的备注, return {\(Promise&lt;string \| null&gt;\)}\)
 
 ```javascript
 const alias = await contact.alias()
@@ -136,7 +136,7 @@ if (alias === null) {
 }
 ```
 
-### 示例 \(SET contact的备注\)
+### 示例 \(设置contact的备注\)
 
 ```javascript
 try {
@@ -147,7 +147,7 @@ try {
 }
 ```
 
-### 示例 \(DELETE contact的备注\)
+### 示例 \(删除contact的备注\)
 
 ```javascript
 try {
@@ -233,7 +233,7 @@ console.log(`Contact: ${contact.name()} with avatar file: ${name}`)
 
 ### Contact.sync\(\) ⇒ `Promise <void>`
 
-强制重新加载好友数据，会从低级别的 API 中重新同步一遍。
+强制重新加载好友数据，会从更底层的 API 中重新同步一遍。
 
 ### 示例
 
