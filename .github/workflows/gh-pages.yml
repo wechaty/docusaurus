@@ -12,12 +12,12 @@ jobs:
     name: Test & Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0  # https://github.com/facebook/docusaurus/issues/2798#issuecomment-636602951
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 20
           cache: 'npm'
           cache-dependency-path: package.json
       - name: NPM Install
@@ -38,13 +38,13 @@ jobs:
       - test
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         fetch-depth: 0  # https://github.com/facebook/docusaurus/issues/2798#issuecomment-636602951
 
-    - uses: actions/setup-node@v2
+    - uses: actions/setup-node@v4
       with:
-        node-version: 16
+        node-version: 20
         cache: 'npm'
         cache-dependency-path: package.json
     - name: NPM Install
