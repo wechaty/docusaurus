@@ -17,9 +17,9 @@ The fastest way to get started with Wechaty is to use a Cloud based IDE for **ru
 - [Gitpod](quick-start/running-on-gitpod.md)
 - [Google Cloud Shell](quick-start/running-on-google-cloud-shell.md)
 
-If you are a total begginer then we recommend using [Gitpod](https://gitpod.io/#https://github.com/wechaty/wechaty-getting-started).
+If you are a total beginner then we recommend using [Gitpod](https://gitpod.io/#https://github.com/wechaty/wechaty-getting-started).
 
-Once you get basic idea of ding-dong bot, you can try out building it from scratch by following our [Running Locally](getting-started/running-locally.mdx) tutorial.
+Once you get a basic idea of ding-dong bot, you can try out building it from scratch by following our [Running Locally](getting-started/running-locally.mdx) tutorial.
 
 <div style={{
     position: 'relative',
