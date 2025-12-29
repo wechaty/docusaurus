@@ -158,9 +158,9 @@ from typing import Optional
 import asyncio
 
 # method one
-def on_scan (qrcode, status):
-    print('Scan QR Code to login: {}\n'.format(staus))
-    print('https://wechaty.js.org/qrcode/{}'.format(qrcode))
+def on_scan (qr_code, status):
+    print('Scan QR Code to login: {}\n'.format(status))
+    print('https://wechaty.js.org/qrcode/{}'.format(qr_code))
 
 bot = Wechaty()
 bot.on('scan', on_scan)
@@ -170,8 +170,8 @@ asyncio.run(bot.start())
 class MyBot(Wechaty):
     async def on_scan(self, qr_code: str, status: ScanStatus, data: Optional[str]):
         """listen scan event"""
-        print('Scan QR Code to login: {}\n'.format(staus))
-        print('https://wechaty.js.org/qrcode/{}'.format(qrcode))
+        print('Scan QR Code to login: {}\n'.format(status))
+        print('https://wechaty.js.org/qrcode/{}'.format(qr_code))
 
 asyncio.run(MyBot().start())
 ```
