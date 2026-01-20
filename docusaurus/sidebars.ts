@@ -22,6 +22,7 @@ const api: SubMenuData = {
   label: 'API',
   items: [
     'api/overview',
+    'api/hello-world',
     'api/wechaty',
     'api/message',
     'api/contact',
