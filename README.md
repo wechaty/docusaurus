@@ -6,7 +6,7 @@
 Repository for the Wechaty Organization Website, a resource for the Wechaty Organization. It is the official Wechaty website for publishing latest news, blog posts, and documentation from our open source community.
 </p>
 <p align="center">
-<a href="https://github.com/wechaty/docusaurus" alt="GitHub contributors">
+<a href="https://github.com/wechaty/wechaty/graphs/contributors" alt="GitHub contributors">
 <img src="https://img.shields.io/github/contributors/wechaty/docusaurus.svg" /></a>
 <a href="https://github.com/wechaty/docusaurus" alt="GitHub issues by-label">
 <img src="https://img.shields.io/github/issues/wechaty/docusaurus" /></a>
@@ -105,7 +105,7 @@ Init version
 1. [@lijiarui](https://github.com/lijiarui), [Rui LI](https://wechaty.js.org/contributors/lijiarui), Microsoft AI MVP, Founder & CEO of Juzi.BOT (YC W19 Alumni)
 1. [@huan](https://github.com/huan), [Huan LI](https://wechaty.js.org/contributors/huan), Tencent TVP of Chatbot, \<zixia@zixia.net\>
 
-And [wechaty/contributors](https://github.com/orgs/wechaty/teams/contributors/members)
+And [wechaty/contributors](https://github.com/wechaty/wechaty/graphs/contributors)
 
 ## Copyright & License
 
